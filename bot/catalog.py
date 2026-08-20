@@ -131,6 +131,29 @@ NICKNAMES = {
     "devers": "rafael devers",
     "hader": "josh hader",
     "diaz": "edwin diaz",
+    "haaland": "erling haaland",
+    "bruno": "bruno fernandes",
+    "saka": "bukayo saka",
+    "palmer": "cole palmer",
+    "semenyo": "antoine semenyo",
+    "mbeumo": "bryan mbeumo",
+    "szobo": "dominik szoboszlai",
+    "joao pedro": "joao pedro",
+    "wirtz": "florian wirtz",
+    "isak": "alexander isak",
+    "vvd": "virgil van dijk",
+    "raya": "david raya",
+    "foden": "phil foden",
+    "salah": "mohamed salah",
+    "eze": "eberechi eze",
+    "kinsky": "antonin kinsky",
+    "calafiori": "riccardo calafiori",
+    "porro": "pedro porro",
+    "saliba": "william saliba",
+    "guehi": "marc guehi",
+    "watkins": "ollie watkins",
+    "szoboszlai": "dominik szoboszlai",
+    "thiago": "igor thiago",
 }
 
 MLB_ALIASES = {
@@ -257,6 +280,22 @@ class Catalog:
             "bbredraft": "bb_redraft",
             "bb_redraft": "bb_redraft",
             "bb redraft": "bb_redraft",
+            "pitch": "pl_pitch",
+            "the pitch": "pl_pitch",
+            "pl_pitch": "pl_pitch",
+            "plpitch": "pl_pitch",
+            "plfwd": "pl_fwd",
+            "attack": "pl_fwd",
+            "pl_fwd": "pl_fwd",
+            "plmid": "pl_mid",
+            "midfield": "pl_mid",
+            "pl_mid": "pl_mid",
+            "pldef": "pl_def",
+            "defence": "pl_def",
+            "pl_def": "pl_def",
+            "plgkp": "pl_gkp",
+            "keepers": "pl_gkp",
+            "pl_gkp": "pl_gkp",
         }.get((board or "keep").lower(), "keep")
         return self.raw.get(key) or []
 
@@ -267,12 +306,15 @@ class Catalog:
         scored = []
         football = list(self.players or self.raw.get("board") or [])
         baseball = list(self.raw.get("bb_players") or self.raw.get("bb_keep") or [])
+        soccer = list(self.raw.get("pl_players") or self.raw.get("pl_pitch") or [])
         if sport == "baseball":
             pool = baseball
         elif sport == "football":
             pool = football
+        elif sport in ("soccer", "premier", "pl", "fpl"):
+            pool = soccer
         else:
-            pool = football + baseball
+            pool = football + baseball + soccer
         for p in pool:
             key = p.get("key") or norm(p.get("name", ""))
             name = norm(p.get("name", ""))
@@ -289,6 +331,7 @@ class Catalog:
             x[0],
             (x[1].get("lists") or {}).get("The Keep")
             or (x[1].get("lists") or {}).get("BB Keep")
+            or (x[1].get("lists") or {}).get("The Pitch")
             or x[1].get("bk")
             or 999,
             x[1].get("name", ""),
@@ -333,6 +376,22 @@ class Catalog:
                         out.append(row)
                         if len(out) >= limit:
                             return out
+        if sport in (None, "soccer", "premier", "pl", "fpl"):
+            for board_key in ("pl_pitch", "pl_fwd", "pl_mid", "pl_def", "pl_gkp"):
+                for r in self.raw.get(board_key) or []:
+                    name = norm(r.get("name", ""))
+                    if not name:
+                        continue
+                    if q == name or name.startswith(q) or q in name:
+                        tag = "soccer:" + name
+                        if tag in seen:
+                            continue
+                        seen.add(tag)
+                        row = dict(r)
+                        row.setdefault("sport", "soccer")
+                        out.append(row)
+                        if len(out) >= limit:
+                            return out
         return out
 
     def one(self, query: str, sport: str | None = None) -> dict | None:
@@ -360,7 +419,15 @@ class Catalog:
             "bbsaves": "bb_saves",
             "bbsvh": "bb_svh",
         }
-        pick_pool = self.raw.get("bb_picks") if mode in bb_modes else self.raw.get("picks")
+        pl_mode_keys = {
+            "plpitch", "pitch250", "thepitch", "plfwd", "plmid", "pldef", "plgkp",
+        }
+        if mode in bb_modes:
+            pick_pool = self.raw.get("bb_picks")
+        elif mode in pl_mode_keys:
+            pick_pool = []
+        else:
+            pick_pool = self.raw.get("picks")
         exact_pick = None
         fuzzy_pick = None
         for p in pick_pool or []:
@@ -370,6 +437,15 @@ class Catalog:
                 break
             if want and (want in pn or pn in want) and len(want) >= 6:
                 fuzzy_pick = fuzzy_pick or {**p, "kind": "pick"}
+        pl_modes = {
+            "plpitch": "pl_pitch",
+            "pitch250": "pl_pitch",
+            "thepitch": "pl_pitch",
+            "plfwd": "pl_fwd",
+            "plmid": "pl_mid",
+            "pldef": "pl_def",
+            "plgkp": "pl_gkp",
+        }
         if exact_pick:
             return exact_pick
         if fuzzy_pick:
@@ -387,6 +463,20 @@ class Catalog:
                 "kind": "player",
                 "url": "",
                 "slug": "",
+            }
+        if mode in pl_modes:
+            row = self.board_row(t, mode) or self.one(t, sport="soccer")
+            if not row:
+                return None
+            return {
+                "name": row.get("name"),
+                "pos": row.get("pos") or "",
+                "team": row.get("team") or "",
+                "rank": row.get("bk"),
+                "value": int(row.get("value") or bk_value(row.get("bk") or 0)),
+                "kind": "player",
+                "url": row.get("url") or "",
+                "slug": row.get("slug") or "",
             }
         player = self.one(t, sport="football")
         if player and player.get("sport") == "baseball":
@@ -529,6 +619,12 @@ class Catalog:
             key = player.get("key") or norm(player.get("name", ""))
             p = self.by_key.get(key)
             yid = (p or {}).get("youtube_id")
+        if not yid:
+            want = player.get("key") or norm(player.get("name", ""))
+            for row in list(self.raw.get("pl_players") or []) + list(self.raw.get("bb_players") or []):
+                if (row.get("key") or "") == want or norm(row.get("name", "")) == want:
+                    yid = row.get("youtube_id")
+                    break
         return f"https://www.youtube.com/watch?v={yid}" if yid else None
 
 

@@ -29,6 +29,12 @@ CHANNELS = [
     ("bb-bullpen", "saves and sv+h relief lists"),
     ("bb-redraft", "baseball rest-of-season board"),
     ("bb-waivers", "dynasty stashes and the longer redraft wire"),
+    ("the-pitch", "premier league top 250"),
+    ("pl-attack", "fpl forwards"),
+    ("pl-midfield", "fpl midfield"),
+    ("pl-defence", "fpl defenders"),
+    ("pl-keepers", "fpl goalkeepers"),
+    ("pl-files", "pitchkeep player files with tape"),
 ]
 
 
@@ -102,8 +108,10 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "**Slash commands (work in every channel)**\n"
         "`/player` `/search` `/top` `/rank` `/pos` `/trade` `/deals` `/value` `/picks` `/formula` "
         "`/video` `/hot` `/cold` `/hottake` `/rookies` `/compare` `/keep-or-cut` `/start` "
-        "`/quiz` `/nfl` `/mlb` `/random` `/stack` `/desk` `/bbplayer` `/bbkeep` `/bbtrade` `/bbwire`\n\n"
-        "Try: `/player Josh Allen` · `/bbplayer Ohtani` · `/trade Superflex Allen, 2027 Mid 1st vs Bijan, Chase` · "
+        "`/quiz` `/nfl` `/mlb` `/random` `/stack` `/desk` `/bbplayer` `/bbkeep` `/bbtrade` `/bbwire` "
+        "`/plplayer` `/pitch` `/pltrade`\n\n"
+        "Try: `/player Josh Allen` · `/bbplayer Ohtani` · `/plplayer Haaland` · "
+        "`/trade Superflex Allen, 2027 Mid 1st vs Bijan, Chase` · "
         "`/video Drake Maye` · `who is JSN` · `trade Allen for Bijan`"
     )
     await note("Desk intro posted.")
@@ -240,6 +248,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         f"**Player files** · {len(files)} football names from The Keep 300, redraft, rookies, and Hot/Cold.\n"
         "Each message is a searchable file. `/player` is faster if you already know the name. "
         "Baseball files live on ballkeep.com/bb and `/bbplayer`."
+        " PitchKeep files live on ballkeep.com/pl and `/plplayer`."
     )
     for p in files:
         lists = p.get("lists") or {}
@@ -291,5 +300,47 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         title = "**Redraft wire** (longer, higher priority)" if i == 0 else "**Redraft wire** (cont.)"
         await channels["bb-waivers"].send(f"{title}\n{body[:1900]}")
         await asyncio.sleep(1.05)
-    await note("BaseBallKeep boards posted. Desk is live.")
+    await note("BaseBallKeep boards posted.")
+
+    await _wipe(channels["the-pitch"])
+    await _post_list(
+        channels["the-pitch"],
+        "PitchKeep — The Pitch (Premier League top 250)",
+        cat.raw.get("pl_pitch") or [],
+        cat,
+        "24-board FPL super-aggregate. Purple desk at https://ballkeep.com/pl/the-pitch.html",
+    )
+    await _wipe(channels["pl-attack"])
+    await _post_list(channels["pl-attack"], "Attack — FPL forwards", cat.raw.get("pl_fwd") or [], cat)
+    await _wipe(channels["pl-midfield"])
+    await _post_list(channels["pl-midfield"], "Midfield — FPL engine room", cat.raw.get("pl_mid") or [], cat)
+    await _wipe(channels["pl-defence"])
+    await _post_list(channels["pl-defence"], "Defence — FPL back line", cat.raw.get("pl_def") or [], cat)
+    await _wipe(channels["pl-keepers"])
+    await _post_list(channels["pl-keepers"], "Keepers — between the sticks", cat.raw.get("pl_gkp") or [], cat)
+    pl_files = cat.raw.get("pl_players") or []
+    await _wipe(channels["pl-files"], limit=400)
+    await channels["pl-files"].send(
+        f"**PitchKeep player files** · {len(pl_files)} names from The Pitch 250.\n"
+        "`/plplayer Haaland` is faster if you already know the name. "
+        "Site files live at https://ballkeep.com/pl/players/"
+    )
+    for p in pl_files:
+        lists = p.get("lists") or {}
+        chips = " · ".join(f"{k} #{v}" for k, v in lists.items())
+        plus = "; ".join(p.get("plus") or [])[:400]
+        minus = "; ".join(p.get("minus") or [])[:400]
+        yt = f"https://www.youtube.com/watch?v={p['youtube_id']}" if p.get("youtube_id") else "no clip yet"
+        graf = (p.get("grafs") or ["See the site file."])[0][:500]
+        msg = (
+            f"**{p['name']}** · {p.get('pos')} {p.get('team')} · {p.get('url')}\n"
+            f"{chips}\n"
+            f"Plus: {plus or '—'}\n"
+            f"Minus: {minus or '—'}\n"
+            f"{graf}\n"
+            f"Tape: {yt}"
+        )
+        await channels["pl-files"].send(msg[:1900])
+        await asyncio.sleep(1.05)
+    await note("PitchKeep boards posted. Desk is live.")
     return channels
