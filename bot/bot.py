@@ -48,7 +48,7 @@ QUIPS = [
     "Publish the desk once. Search Discord forever.",
     "BaseBallKeep is the other door. Navy, cream, 23 boards.",
     "Saves and SV+H are different sports. Use the right bullpen page.",
-    "PitchKeep is the third door. Purple, pitch green, The Pitch 400 on Sleeper BPL points.",
+    "PitchKeep is the third door. Purple, pitch green, The Premier hybrid 400.",
     "Haaland scores. Bruno creates. Sleeper pays both. The rest of the 400 is who you own.",
 ]
 
@@ -83,7 +83,7 @@ desk = Desk()
 def player_embed(discord, p: dict):
     lists = p.get("lists") or {}
     baseball = p.get("sport") == "baseball" or "BB Keep" in lists
-    soccer = p.get("sport") == "soccer" or "The Pitch" in lists
+    soccer = p.get("sport") == "soccer" or "The Pitch" in lists or "The Premier" in lists
     if soccer:
         keep = lists.get("The Pitch") or p.get("bk")
     elif baseball:
@@ -103,7 +103,12 @@ def player_embed(discord, p: dict):
     emb = discord.Embed(title=title, description=desc, color=color, url=p.get("url") or "https://ballkeep.com")
     if soccer and keep:
         price = f" · £{p['price']}m" if p.get("price") else ""
-        emb.add_field(name="The Pitch", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK{price}", inline=True)
+        prem = lists.get("The Premier")
+        label = "The Premier" if prem else "The Pitch"
+        shown = prem or keep
+        emb.add_field(name=label, value=f"#{shown} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK{price}", inline=True)
+        if prem and keep and prem != keep:
+            emb.add_field(name="The Pitch", value=f"#{keep}", inline=True)
     elif baseball and keep:
         emb.add_field(name="BB Keep", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK", inline=True)
     elif keep:
@@ -272,13 +277,15 @@ def build_bot():
         app_commands.Choice(name="Bullpen SV+H", value="bbsvh"),
     ]
     PL_BOARDS = [
-        app_commands.Choice(name="The Pitch (overall 400, Sleeper BPL)", value="pitch"),
+        app_commands.Choice(name="The Premier (hybrid 400)", value="premier"),
+        app_commands.Choice(name="The Pitch (Sleeper BPL 2025)", value="pitch"),
         app_commands.Choice(name="Attack", value="attack"),
         app_commands.Choice(name="Midfield", value="midfield"),
         app_commands.Choice(name="Defence", value="defence"),
         app_commands.Choice(name="Keepers", value="keepers"),
     ]
     PL_MODES = [
+        app_commands.Choice(name="The Premier", value="plpremier"),
         app_commands.Choice(name="The Pitch", value="plpitch"),
         app_commands.Choice(name="Attack", value="plfwd"),
         app_commands.Choice(name="Midfield", value="plmid"),
@@ -806,7 +813,7 @@ def build_bot():
             emb.add_field(name="More", value=body[4000:5000] or "Full list on the site.", inline=False)
         await interaction.response.send_message(embed=emb)
 
-    @bot.tree.command(name="plplayer", description="PitchKeep file: The Pitch 400, Sleeper BPL 2025, tape")
+    @bot.tree.command(name="plplayer", description="PitchKeep file: The Premier hybrid 400, Sleeper BPL 2025, tape")
     @app_commands.describe(name="Premier League player (Haaland, Bruno, Saka, Semenyo…)")
     @app_commands.autocomplete(name=ac_pl)
     async def plplayer_cmd(interaction: discord.Interaction, name: str):
@@ -819,7 +826,7 @@ def build_bot():
         rich = {**rich, "sport": "soccer"}
         await interaction.response.send_message(embed=player_embed(discord, rich))
 
-    @bot.tree.command(name="pitch", description="A PitchKeep board: The Pitch, Attack, Midfield, Defence, Keepers")
+    @bot.tree.command(name="pitch", description="A PitchKeep board: The Premier, The Pitch, Attack, Midfield, Defence, Keepers")
     @app_commands.describe(board="Which Premier League list", count="How many names (default 15, max 25)")
     @app_commands.choices(board=PL_BOARDS)
     async def pitch_cmd(interaction: discord.Interaction, board: app_commands.Choice[str], count: int = 15):

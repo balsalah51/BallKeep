@@ -69,6 +69,15 @@ def main():
     assert len(pitch) == 400, f"pitch {len(pitch)}"
     assert pitch[0]["name"] == "Erling Haaland"
     assert pitch[1]["name"] == "Bruno Fernandes"
+    premier = cat.raw.get("pl_premier") or []
+    assert len(premier) == 400, f"premier {len(premier)}"
+    assert premier[0]["name"] == "Erling Haaland"
+    assert premier[1]["name"] == "Bruno Fernandes"
+    assert premier[2]["name"] == "Antoine Semenyo"
+    files = cat.raw.get("pl_players") or []
+    haaland = next(p for p in files if p["name"] == "Erling Haaland")
+    assert len(haaland.get("grafs") or []) >= 5, "premier files need five grafs"
+    assert haaland.get("image"), "Haaland needs a photo"
     assert cat.one("haaland", sport="soccer")["name"] == "Erling Haaland"
     assert cat.one("bruno", sport="soccer")["name"] == "Bruno Fernandes"
     assert cat.one("saka", sport="soccer")["name"] == "Bukayo Saka"
@@ -79,9 +88,12 @@ def main():
     assert len(cat.raw.get("pl_mid") or []) == 150
     assert len(cat.raw.get("pl_def") or []) == 120
     assert len(cat.raw.get("pl_gkp") or []) >= 30
-    assert len(cat.raw.get("pl_players") or []) == 400
+    assert 400 <= len(cat.raw.get("pl_players") or []) <= 420
     tpl = cat.trade("plpitch", "Bruno Fernandes", "Erling Haaland")
     assert tpl["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
+    tprem = cat.trade("plpremier", "Bruno Fernandes", "Erling Haaland")
+    assert tprem["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
+    assert not tprem["missing"], tprem["missing"]
     assert tpl["total_a"] and tpl["total_b"]
     assert not tpl["missing"], tpl["missing"]
     print("ok", cat.updated, "players", len(cat.players), "keep", len(cat.raw["keep"]), "bb", len(bb), "pitch", len(pitch))
