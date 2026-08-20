@@ -105,26 +105,44 @@ def bb_page(title, path, body, extra_js="", depth=1):
 """
 
 
+def _rank_th(label):
+    cls = ""
+    if label == "BK Value":
+        cls = "c-val"
+    elif label not in ("BK", "Player", "Pos", "Team"):
+        cls = "desk-only"
+    attr = f' class="{cls}"' if cls else ""
+    return f"<th{attr}>{esc(label)}</th>"
+
+
 def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix=""):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
-    head = "".join(f"<th>{esc(h)}</th>" for h in ["BK", "Player", "Pos", "Team"] + extra_headers)
+    head = "".join(_rank_th(h) for h in ["BK", "Player", "Pos", "Team"] + extra_headers)
     body = []
     for r in rows:
         pos = r.get("pos") or ""
         pos0 = pos.split("/")[0]
+        team = r.get("team") or ""
         slug = slugify(r["name"])
         href = f"{player_prefix}players/{slug}.html"
+        meta = (
+            f'<div class="row-meta"><span class="pos {esc(pos0)}">{esc(pos)}</span>'
+            f" · {esc(team)}</div>"
+        )
         body.append(
             f'<tr data-pos="{esc(pos0)}" data-group="{esc(r.get("group") or "")}">'
-            f'<td class="rk">{r.get("bk","")}</td>'
-            f'<td><a class="player-link" href="{esc(href)}"><strong>{esc(r["name"])}</strong></a></td>'
-            f'<td><span class="pos {esc(pos.split("/")[0])}">{esc(pos)}</span></td>'
-            f'<td>{esc(r.get("team",""))}</td>'
+            f'<td class="rk c-rank">{r.get("bk","")}</td>'
+            f'<td class="c-name"><a class="player-link" href="{esc(href)}"><strong>{esc(r["name"])}</strong></a>{meta}</td>'
+            f'<td class="c-pos"><span class="pos {esc(pos0)}">{esc(pos)}</span></td>'
+            f'<td class="c-team">{esc(team)}</td>'
             f"{extra_cells(r)}"
             "</tr>"
         )
-    return f"<table><thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table>"
+    return (
+        f'<div class="table-wrap"><table class="rank-table">'
+        f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
+    )
 
 
 def sources_panel():
@@ -144,7 +162,11 @@ def sources_panel():
 
 
 def val_cell(r):
-    return f'<td>{r["avg"]}</td><td>{r["n"]}</td><td class="val">{int(r["value"]):,}</td>'
+    return (
+        f'<td class="desk-only">{r["avg"]}</td>'
+        f'<td class="desk-only">{r["n"]}</td>'
+        f'<td class="c-val val">{int(r["value"]):,}</td>'
+    )
 
 
 def filter_js(groups):
@@ -281,6 +303,12 @@ def facts_table(media, r):
         items.append(("Draft", media["draft"]))
     if media.get("mlb_id"):
         items.append(("MLB ID", media["mlb_id"]))
+    if r.get("avg") is not None:
+        items.append(("Keep avg", r["avg"]))
+    if r.get("n"):
+        items.append(("# Boards", r["n"]))
+    if r.get("value"):
+        items.append(("BK Value", f"{int(r['value']):,}"))
     if not items:
         return ""
     cells = "".join(
@@ -325,25 +353,25 @@ def season_box(media):
     parts = []
     if hit_rows:
         parts.append(
-            '<div class="panel season">'
+        '<div class="panel season">'
             '<p class="kicker">Hitting</p>'
-            "<table><thead><tr>"
+            '<div class="table-wrap"><table><thead><tr>'
             "<th>Year</th><th>G</th><th>AB</th><th>R</th><th>H</th><th>2B</th>"
             "<th>HR</th><th>RBI</th><th>SB</th><th>BB</th><th>SO</th>"
             "<th>AVG</th><th>OBP</th><th>SLG</th><th>OPS</th>"
             "</tr></thead><tbody>"
-            f"{hit_rows}</tbody></table></div>"
+            f"{hit_rows}</tbody></table></div></div>"
         )
     if pit_rows:
         parts.append(
             '<div class="panel season">'
             '<p class="kicker">Pitching</p>'
-            "<table><thead><tr>"
+            '<div class="table-wrap"><table><thead><tr>'
             "<th>Year</th><th>G</th><th>GS</th><th>W</th><th>L</th><th>SV</th>"
             "<th>HLD</th><th>IP</th><th>K</th><th>BB</th><th>HR</th>"
             "<th>ERA</th><th>WHIP</th><th>K/9</th>"
             "</tr></thead><tbody>"
-            f"{pit_rows}</tbody></table></div>"
+            f"{pit_rows}</tbody></table></div></div>"
         )
     if not parts:
         return (
@@ -388,8 +416,8 @@ def boards_table(ranks):
         '<section class="panel">'
         '<p class="kicker">Every Board</p>'
         f"<h3>Spread {lo}–{hi} · {len(rows)} sources</h3>"
-        f'<table class="boards"><thead><tr><th>Source</th><th>Rank</th></tr></thead>'
-        f"<tbody>{''.join(body)}</tbody></table></section>"
+        f'<div class="table-wrap"><table class="boards"><thead><tr><th>Source</th><th>Rank</th></tr></thead>'
+        f"<tbody>{''.join(body)}</tbody></table></div></section>"
     )
 
 
@@ -532,8 +560,34 @@ def bb_grafs(r, lists=None, media=None):
         f"The 23-board average is {r.get('avg')} on {n} lists that actually ranked him — unranked sources are skipped, never treated as 999. "
         + (f"High {min(ranks.values())}, low {max(ranks.values())}." if ranks else "Short tape."),
         "Dynasty pays the next five years. Redraft pays September. If those two ranks diverge, that is the instruction: hold the kid or cash the veteran.",
-        "Flags fly forever. We will refresh this file with The Keep. September baseball is a proving ground, not a coronation.",
     ]
+    if g == "SP" and keep and keep <= 40:
+        grafs.append(
+            "How to use him: start him every turn. The IL risk is already in the rank. Do not sit an ace for a two-start dart unless the calculator says plus-8%."
+        )
+    elif g == "RP":
+        grafs.append(
+            "How to use him: roster for the category, not the name. If the ninth moves, so does this file. Check the Wire before you burn a claim on a setup man."
+        )
+    elif keep and keep <= 25:
+        grafs.append(
+            "How to use him: foundation. Untouchable unless the calculator is plus-8%. You do not shop a Keep first-rounder for a September stream."
+        )
+    elif lists.get("BB Redraft") and keep and lists["BB Redraft"] + 20 < keep:
+        grafs.append(
+            "How to use him: play him now. The dynasty slot is the hold; the redraft slot is the instruction for September."
+        )
+    elif not media.get("mlb_id"):
+        grafs.append(
+            "How to use him: taxi / stash. The rank is the projection. Do not burn a streaming slot on a prospect box score that does not exist yet."
+        )
+    else:
+        grafs.append(
+            "How to use him: hold unless a contender overpays. The Keep is a five-year price, not a streaming nudge. Run the calculator before you send a first."
+        )
+    grafs.append(
+        "Flags fly forever. We will refresh this file with The Keep. September baseball is a proving ground, not a coronation."
+    )
     return plus[:7], minus[:7], grafs
 
 
@@ -803,7 +857,7 @@ def write_baseball_site():
     <h2>BK's Bullpen — Saves</h2>
     {banner("bb-bullpen.jpg", "Bullpen mound at twilight")}
     <p class="note">Top 100 relief pitchers for traditional saves leagues. Chart mix: FantasyPros closer report (Aug 20), ESPN reliever depth chart, and RPs who survive the overall Keep. Bryan Baker has the MLB lead. Diaz is leaking. Scott is the add.</p>
-    <div class="panel">{rank_table(saves, ["BK Value"], lambda r: f'<td class="val">{int(r["value"]):,}</td>')}</div>
+    <div class="panel">{rank_table(saves, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {sources_panel()}
     """
     write("bb/bullpen.html", bb_page("Bullpen Saves", "bullpen.html", sv_body))
@@ -813,7 +867,7 @@ def write_baseball_site():
     <h2>BK's Bullpen — SV+H</h2>
     {banner("bb-bullpen.jpg", "Bullpen mound at twilight")}
     <p class="note">Same bullpen, different sport. FantasyPros Week 21 SV+H board (Baker / Miller / Varland) plus setup men the ESPN chart actually uses. If your league counts holds, this is the page. The saves page is the other one.</p>
-    <div class="panel">{rank_table(svh, ["BK Value"], lambda r: f'<td class="val">{int(r["value"]):,}</td>')}</div>
+    <div class="panel">{rank_table(svh, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {sources_panel()}
     """
     write("bb/bullpen-holds.html", bb_page("Bullpen SV+H", "bullpen-holds.html", svh_body))
@@ -824,7 +878,7 @@ def write_baseball_site():
     <h2>Redraft</h2>
     <p class="note">One-year board. We start from the dynasty mix, then tax kids who are not helping this month and boost veterans who still count. Relievers slide — unless you are in a saves crunch, use the wire.</p>
     {rd_flt}
-    <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td>{r["avg"]}</td><td class="val">{int(r["value"]):,}</td>')}</div>
+    <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {sources_panel()}
     """
     write("bb/redraft.html", bb_page("Redraft", "redraft.html", rd_body, rd_js))

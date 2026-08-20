@@ -617,23 +617,43 @@ def page(title, path, body, extra_js="", depth=0):
 """
 
 
+def _rank_th(label):
+    cls = ""
+    if label == "BK Value":
+        cls = "c-val"
+    elif label == "£":
+        cls = "c-price"
+    elif label not in ("BK", "PK", "Player", "Pos", "Team", "Club"):
+        cls = "desk-only"
+    attr = f' class="{cls}"' if cls else ""
+    return f"<th{attr}>{esc(label)}</th>"
+
+
 def rank_table(rows, extra_headers=None, extra_cells=None, depth=0):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
-    head = "".join(f"<th>{esc(h)}</th>" for h in ["BK", "Player", "Pos", "Team"] + extra_headers)
+    head = "".join(_rank_th(h) for h in ["BK", "Player", "Pos", "Team"] + extra_headers)
     body = []
     for r in rows:
         pos = r.get("pos") or ""
+        team = r.get("team") or ""
+        meta = (
+            f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
+            f" · {esc(team)}</div>"
+        )
         body.append(
             f'<tr data-pos="{esc(pos)}">'
-            f'<td class="rk">{r.get("bk","")}</td>'
-            f"<td>{player_anchor(r['name'], depth)}</td>"
-            f'<td><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
-            f"<td>{esc(r.get('team',''))}</td>"
+            f'<td class="rk c-rank">{r.get("bk","")}</td>'
+            f'<td class="c-name">{player_anchor(r["name"], depth)}{meta}</td>'
+            f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
+            f'<td class="c-team">{esc(team)}</td>'
             f"{extra_cells(r)}"
             "</tr>"
         )
-    return f"<table><thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table>"
+    return (
+        f'<div class="table-wrap"><table class="rank-table">'
+        f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
+    )
 
 
 def write(path, html_doc):
@@ -746,6 +766,181 @@ def auto_plus_minus(p):
     return plus, minus
 
 
+def _fact_cells(items):
+    cells = "".join(
+        f'<div class="fact"><small>{esc(k)}</small><strong>{esc(v)}</strong></div>'
+        for k, v in items if v not in (None, "", "—")
+    )
+    return f'<div class="facts">{cells}</div>' if cells else ""
+
+
+def ff_facts(p, college, is_rook):
+    lists = p.get("lists") or {}
+    items = [("Pos", p.get("pos") or ""), ("Team", p.get("team") or "")]
+    if p.get("age"):
+        items.append(("Age", p["age"]))
+    if college:
+        items.append(("College", college))
+    if is_rook:
+        items.append(("Class", "2026 rookie"))
+    if p.get("keep_avg") is not None:
+        items.append(("Keep avg", p["keep_avg"]))
+    if p.get("keep_n"):
+        items.append(("# Boards", p["keep_n"]))
+    keep = lists.get("The Keep")
+    if keep:
+        items.append(("BK Value", f"{bk_value(keep):,}"))
+    return _fact_cells(items)
+
+
+def ff_rank_cards(p):
+    lists = p.get("lists") or {}
+    items = [
+        ("The Keep", lists.get("The Keep")),
+        ("The Board", lists.get("The Board")),
+        ("PPR", lists.get("Redraft PPR")),
+        ("STD", lists.get("Redraft Standard")),
+        ("Rookies", lists.get("2026 Rookies")),
+    ]
+    cards = []
+    for label, rank in items:
+        if not rank:
+            continue
+        cards.append(
+            f'<div class="rank-card"><small>{esc(label)}</small>'
+            f"<strong>#{rank}</strong><span>BK {bk_value(rank):,}</span></div>"
+        )
+    return f'<div class="rank-grid">{"".join(cards)}</div>' if cards else ""
+
+
+def ff_boards_table(p):
+    ranks = p.get("ranks") or {}
+    if not ranks:
+        return ""
+    rows = sorted(ranks.items(), key=lambda kv: kv[1])
+    vals = [v for _s, v in rows]
+    lo, hi = min(vals), max(vals)
+    body = []
+    for src, rk in rows:
+        cls = "hi" if rk == lo else ("lo" if rk == hi and hi != lo else "")
+        body.append(f'<tr class="{cls}"><td>{esc(src)}</td><td class="rk">{rk}</td></tr>')
+    return (
+        '<section class="panel">'
+        '<p class="kicker">Every Board</p>'
+        f"<h3>Spread {lo}–{hi} · {len(rows)} Superflex sources</h3>"
+        '<p class="note">Unranked on a source is a blank — never a fake 999.</p>'
+        '<div class="table-wrap"><table class="boards">'
+        "<thead><tr><th>Source</th><th>Rank</th></tr></thead>"
+        f"<tbody>{''.join(body)}</tbody></table></div></section>"
+    )
+
+
+def ff_neighbors(profiles, p):
+    if "The Keep" not in (p.get("lists") or {}):
+        return ""
+    keepers = [x for x in profiles if "The Keep" in (x.get("lists") or {})]
+    keepers.sort(key=lambda x: x["lists"]["The Keep"])
+    idx = next((i for i, x in enumerate(keepers) if x["key"] == p["key"]), None)
+    if idx is None:
+        return ""
+    window = keepers[max(0, idx - 2) : idx] + keepers[idx + 1 : idx + 3]
+    if not window:
+        return ""
+    links = " · ".join(
+        f'{player_anchor(x["name"], 1)} (#{x["lists"]["The Keep"]})' for x in window
+    )
+    return f'<p class="note" style="margin-top:18px"><strong>On The Keep nearby</strong> — {links}</p>'
+
+
+def ff_extra_grafs(p, college, is_rook):
+    name = p["name"]
+    pos = p.get("pos") or ""
+    team = p.get("team") or "his club"
+    lists = p.get("lists") or {}
+    ranks = p.get("ranks") or {}
+    keep = lists.get("The Keep")
+    ppr = lists.get("Redraft PPR")
+    std = lists.get("Redraft Standard")
+    board = lists.get("The Board")
+    rook = lists.get("2026 Rookies")
+    grafs = []
+    if keep:
+        n = p.get("keep_n") or 0
+        avg = p.get("keep_avg")
+        grafs.append(
+            f"{name} is #{keep} on The Keep, Ball Keep's Superflex dynasty keystone. "
+            f"The number is the average of every board that ranked him"
+            + (f" ({avg} across {n} sources)" if avg is not None else "")
+            + f". He is a {pos} for {team}. BK Value on this slot is {bk_value(keep):,}, "
+            "the same decaying curve as baseball and PitchKeep: 12,000 at 1.01."
+        )
+    if keep and ppr:
+        if ppr + 20 < keep:
+            grafs.append(
+                f"Redraft PPR #{ppr} is hotter than Keep #{keep}. That is a 2026 win-now name "
+                "more than a 2029 chip — cash him in Superflex if a contender overpays, start him "
+                "in 1QB redraft without a speech."
+            )
+        elif keep + 20 < ppr:
+            grafs.append(
+                f"Keep #{keep} vs PPR #{ppr}: dynasty is buying the years redraft will not pay for. "
+                "Do not let a one-year board talk you into selling the age curve."
+            )
+        else:
+            grafs.append(
+                f"Keep #{keep} and PPR #{ppr} sit in the same neighborhood. Superflex and 1QB are "
+                "not fighting over him this week — the rank is the instruction."
+            )
+    elif keep and std and not ppr:
+        grafs.append(
+            f"Standard redraft has him #{std}. Catch-optional scoring still wants the {pos} production; "
+            "the Keep number is the five-year price."
+        )
+    if ranks and len(ranks) >= 2:
+        hi_src, hi = min(ranks.items(), key=lambda kv: kv[1])
+        lo_src, lo = max(ranks.items(), key=lambda kv: kv[1])
+        grafs.append(
+            f"The Superflex dump: {hi_src} has him {hi}, {lo_src} has him {lo}. "
+            f"Spread {hi}–{lo} on {len(ranks)} boards. Unranked sources are skipped — never a fake 999."
+        )
+    if is_rook and college:
+        rook_bit = f" The 2026 rookie board has him #{rook}." if rook else ""
+        grafs.append(
+            f"College tape is {college}.{rook_bit} Startup and rookie-draft language is not salary-cap "
+            "dollars — it is where he goes relative to Love / Mendoza / Tate and the rest of the class."
+        )
+    if board and keep and abs(board - keep) >= 15:
+        grafs.append(
+            f"The Board (long proprietary aggregate) has him #{board} against Keep #{keep}. "
+            "Short expert lists and the full 300 do not always agree; that gap is the argument."
+        )
+    if keep and keep <= 12:
+        grafs.append(
+            "How to use him: you do not trade this chip unless the calculator is plus-8% or you are "
+            "collecting a 1.01. Foundation capital. Start him, stack him, stop shopping him."
+        )
+    elif "Hot" in lists:
+        grafs.append(
+            "How to use him: the Hot board is a buy window. Pay the Keep number, not last month's slack."
+        )
+    elif "Cold" in lists:
+        grafs.append(
+            "How to use him: the Cold board is a sell window if a win-now owner still has last year's "
+            "price in the chat. Do not panic-drop him for a dart."
+        )
+    elif keep and keep >= 180:
+        grafs.append(
+            "How to use him: taxi squad / deep Superflex more than a starting chip. The 300 is long on "
+            "purpose — this is a name you know, not a name you build around."
+        )
+    elif keep:
+        grafs.append(
+            "How to use him: hold unless a contender overpays. The Keep is a five-year price, not a "
+            "weekly streaming nudge. Run the calculator before you send a first."
+        )
+    return grafs[:5]
+
+
 def render_player_pages(profiles):
     media = {}
     media_path = ROOT / "data" / "player_media.json"
@@ -802,7 +997,7 @@ def render_player_pages(profiles):
         if p.get("ranks"):
             bits = "".join(
                 f"<div><small>{esc(s)}</small> {v}</div>"
-                for s, v in sorted(p["ranks"].items(), key=lambda kv: kv[1])
+                for s, v in sorted(p["ranks"].items(), key=lambda kv: kv[1])[:6]
             )
             rank_bits = f'<div class="note" style="margin-top:10px"><strong>Superflex boards</strong>{bits}</div>'
 
@@ -812,7 +1007,17 @@ def render_player_pages(profiles):
             f"{p['name']} is on the Ball Keep desk because The Keep, a redraft board, the rookie sheet, or Hot/Cold has him. The plus/minus above aggregates those list comments.",
             "Refresh this page with The Keep. Film and ranks move; the format split between Superflex dynasty and 1QB redraft does not.",
         ]
-        analysis = "".join(f"<p>{esc(g)}</p>" for g in grafs)
+        grafs = list(grafs) + ff_extra_grafs(p, college, is_rook)
+        # Keep the custom take first, then the extra file detail, without repeating the opener.
+        seen = set()
+        deduped = []
+        for g in grafs:
+            key = g[:80]
+            if key in seen:
+                continue
+            seen.add(key)
+            deduped.append(g)
+        analysis = "".join(f"<p>{esc(g)}</p>" for g in deduped)
 
         video = ""
         if yt:
@@ -847,6 +1052,8 @@ def render_player_pages(profiles):
         {rank_bits}
       </div>
     </div>
+    {ff_facts(p, college, is_rook)}
+    {ff_rank_cards(p)}
     <div class="plusminus">
       <div class="pm plus"><h3>Plus</h3><ul>{plus_li}</ul></div>
       <div class="pm minus"><h3>Minus</h3><ul>{minus_li}</ul></div>
@@ -855,8 +1062,10 @@ def render_player_pages(profiles):
       <p class="kicker">Ball Keep Take</p>
       {analysis}
     </section>
+    {ff_boards_table(p)}
     {video}
     {related}
+    {ff_neighbors(profiles, p)}
     <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../recent-trades.html?q={esc(p["name"])}">Recent deals</a> · <a href="../hot-n-cold.html">Hot 'n' Cold</a></p>
     """
         write(f"players/{p['slug']}.html", page(p["name"], f"players/{p['slug']}.html", body, depth=1))
@@ -872,7 +1081,7 @@ def render_player_pages(profiles):
     hub = f"""
     <p class="kicker">Depth Chart · {UPDATED}</p>
     <h2>Player Pages</h2>
-    <p class="note">Every name in The Keep top 300, plus redraft top 50, the 2026 rookie sheet, and Hot 'n' Cold. Each file aggregates list comments into plus/minus, adds a few paragraphs on the Superflex vs Redraft split, and embeds a 2025 NFL play when we have the tape — or college tape for 2026 draftees.</p>
+    <p class="note">Every name in The Keep top 300, plus redraft top 50, the 2026 rookie sheet, and Hot 'n' Cold. Each file has the rank cards, every Superflex board, a longer take on the dynasty vs redraft split, plus/minus, and a 2025 NFL play when we have the tape — or college tape for 2026 draftees.</p>
     <p class="note">Position</p>
     <div class="filters" id="hub-pos"><button type="button" class="active" data-pos="all">All</button>
       <button type="button" data-pos="QB">QB</button>
@@ -1208,7 +1417,11 @@ def main():
 
     # THE KEEP
     def keep_extra(r):
-        return f'<td>{r["avg"]}</td><td>{r["n"]}</td><td class="val">{fmt_val(r["value"])}</td>'
+        return (
+            f'<td class="desk-only">{r["avg"]}</td>'
+            f'<td class="desk-only">{r["n"]}</td>'
+            f'<td class="c-val val">{fmt_val(r["value"])}</td>'
+        )
     keep_body = f"""
     <p class="kicker">Keystone · Superflex Dynasty</p>
     <h2>The Keep</h2>
@@ -1239,7 +1452,12 @@ def main():
 
     # REDRAFT
     def ppr_extra(r):
-        return f'<td>{r["yates"]}</td><td>{r["fp"]}</td><td>{r["karabell"]}</td><td class="val">{fmt_val(r["value"])}</td>'
+        return (
+            f'<td class="desk-only">{r["yates"]}</td>'
+            f'<td class="desk-only">{r["fp"]}</td>'
+            f'<td class="desk-only">{r["karabell"]}</td>'
+            f'<td class="c-val val">{fmt_val(r["value"])}</td>'
+        )
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR</p>
     <h2>Redraft PPR</h2>
@@ -1253,7 +1471,7 @@ def main():
     <p class="kicker">2026 Redraft · Standard</p>
     <h2>Redraft Standard</h2>
     <p class="note">Standard (no extra point per catch) is a different sport than PPR. We start from the PPR consensus above, then apply Ball Keep positional taxes used across major STD vs PPR deltas: running backs −4.5 ranks, receivers +3, tight ends +2, quarterbacks +0.5. Result: Bijan / Gibbs / CMC / Henry / Taylor climb; Chase / Puka / JSN still go early but not as automatic 1.01s.</p>
-    <div class="panel">{rank_table(std, ["Adj. Score", "BK Value"], lambda r: f'<td>{r["avg"]}</td><td class="val">{fmt_val(r["value"])}</td>')}</div>
+    <div class="panel">{rank_table(std, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(PPR_SOURCES + [("Ball Keep Standard Tax", "", "RB −4.5 ranks, WR +3, TE +2, QB +0.5 applied to the PPR consensus.")])}
     """
     write("redraft-standard.html", page("Redraft Standard", "redraft-standard.html", std_body))
@@ -1272,7 +1490,7 @@ def main():
     <p class="kicker">2026 NFL Draft Class</p>
     <h2>Notable Drafted Rookies</h2>
     <p class="note">Superflex rookie consensus from Dynasty Dealer (13-analyst team board, July 30), FantasyPros Superflex Rookie ECR (August), and PFF's Superflex rookie column (Love / Mendoza / Tate locked 1-2-3). BK Value uses this rookie-board rank on the same curve as The Keep. The note is startup / rookie-draft language, not salary-cap dollars.</p>
-    <div class="panel">{rank_table(rook_rows, ["Avg", "Dealer", "FP", "PFF", "BK Value", "Note"], lambda r: f'<td>{r["avg"]}</td><td>{r["dd"]}</td><td>{r["fp"]}</td><td>{r["pff"]}</td><td class="val">{fmt_val(r["value"])}</td><td class="note">{esc(r["blurb"])}</td>')}</div>
+    <div class="panel">{rank_table(rook_rows, ["Avg", "Dealer", "FP", "PFF", "BK Value", "Note"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["dd"]}</td><td class="desk-only">{r["fp"]}</td><td class="desk-only">{r["pff"]}</td><td class="c-val val">{fmt_val(r["value"])}</td><td class="note desk-only">{esc(r["blurb"])}</td>')}</div>
     {sources_panel(ROOKIE_SOURCES)}
     """
     write("rookies-2026.html", page("2026 Rookies", "rookies-2026.html", rook_body))
@@ -1313,7 +1531,11 @@ def main():
 
     # LONG BOARD
     def board_extra(r):
-        return f'<td>{r["avg"]}</td><td>{r["n"]}</td><td class="val">{fmt_val(r["value"])}</td>'
+        return (
+            f'<td class="desk-only">{r["avg"]}</td>'
+            f'<td class="desk-only">{r["n"]}</td>'
+            f'<td class="c-val val">{fmt_val(r["value"])}</td>'
+        )
     board_body = f"""
     <p class="kicker">Proprietary Aggregate</p>
     <h2>The Board</h2>
@@ -1339,7 +1561,7 @@ def main():
     <div class="filters" id="weeks"><button type="button" class="active" data-week="all">All</button>{week_btns}</div>
     <p class="note">Teams</p>
     <div class="filters" id="teams"><button type="button" class="active" data-team="all">All clubs</button>{team_btns}</div>
-    <div class="panel" id="games"></div>
+    <div class="panel table-wrap" id="games"></div>
     """
     nfl_js = f"""<script>
     const GAMES = {nfl_js_games};
@@ -1400,7 +1622,7 @@ def main():
     <h2>Baseball Schedules</h2>
     <p class="note">Today is Aug. 20, 2026 — the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027–2031 heavier than this month's box score; redraft baseball is only this month.</p>
     <div class="filters" id="mlb-teams"><button type="button" class="active" data-team="all">All clubs</button>{mlb_btns}</div>
-    <div class="panel" id="mlb-games"></div>
+    <div class="panel table-wrap" id="mlb-games"></div>
     """
     mlb_js = f"""<script>
     const MLB = {json.dumps(mlb_games)};

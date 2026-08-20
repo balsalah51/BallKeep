@@ -104,31 +104,54 @@ def pl_page(title, path, body, extra_js="", depth=1):
 """
 
 
+def _rank_th(label):
+    cls = ""
+    if label == "BK Value":
+        cls = "c-val"
+    elif label == "£":
+        cls = "c-price"
+    elif label not in ("PK", "Player", "Pos", "Club"):
+        cls = "desk-only"
+    attr = f' class="{cls}"' if cls else ""
+    return f"<th{attr}>{esc(label)}</th>"
+
+
 def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix=""):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
-    head = "".join(f"<th>{esc(h)}</th>" for h in ["PK", "Player", "Pos", "Club"] + extra_headers)
+    head = "".join(_rank_th(h) for h in ["PK", "Player", "Pos", "Club"] + extra_headers)
     body = []
     for r in rows:
         pos = r.get("pos") or ""
+        team = r.get("team") or ""
+        price = r.get("price")
         slug = slugify(r["name"])
         href = f"{player_prefix}players/{slug}.html"
+        price_bit = f" · £{price}" if price not in (None, "") else ""
+        meta = (
+            f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
+            f" · {esc(team)}{esc(price_bit)}</div>"
+        )
         body.append(
             f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or pos)}">'
-            f'<td class="rk">{r.get("bk","")}</td>'
-            f'<td><a class="player-link" href="{esc(href)}"><strong>{esc(r["name"])}</strong></a></td>'
-            f'<td><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
-            f'<td>{esc(r.get("team") or "")}</td>'
+            f'<td class="rk c-rank">{r.get("bk","")}</td>'
+            f'<td class="c-name"><a class="player-link" href="{esc(href)}"><strong>{esc(r["name"])}</strong></a>{meta}</td>'
+            f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
+            f'<td class="c-team">{esc(team)}</td>'
             f"{extra_cells(r)}</tr>"
         )
-    return f"<table><thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table>"
+    return (
+        f'<div class="table-wrap"><table class="rank-table">'
+        f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
+    )
 
 
 def val_cell(r):
     return (
-        f'<td>{r.get("avg")}</td><td>{r.get("n")}</td>'
-        f'<td>£{r.get("price") or "—"}</td>'
-        f'<td class="val">{int(r.get("value") or 0):,}</td>'
+        f'<td class="desk-only">{r.get("avg")}</td>'
+        f'<td class="desk-only">{r.get("n")}</td>'
+        f'<td class="c-price">£{r.get("price") or "—"}</td>'
+        f'<td class="c-val val">{int(r.get("value") or 0):,}</td>'
     )
 
 
@@ -191,16 +214,48 @@ def facts_table(r, media):
         items.append(("FPL £", f"£{r['price']}m"))
     if r.get("sel") not in (None, ""):
         items.append(("Owned", f"{r['sel']}%"))
+    if r.get("sel_rank"):
+        items.append(("Sel. rank", f"#{r['sel_rank']}"))
     if r.get("pts") not in (None, ""):
         items.append(("25/26 pts", r["pts"]))
+    if r.get("ppg") not in (None, "", 0, 0.0):
+        items.append(("PPG", r["ppg"]))
+    if r.get("starts") not in (None, "", 0):
+        items.append(("Starts", r["starts"]))
     if r.get("ict") not in (None, ""):
         items.append(("ICT", r["ict"]))
     if r.get("xgi") not in (None, ""):
         items.append(("xGI", r["xgi"]))
+    if r.get("xg") not in (None, "", 0, 0.0):
+        items.append(("xG", r["xg"]))
+    if r.get("xa") not in (None, "", 0, 0.0):
+        items.append(("xA", r["xa"]))
+    if r.get("bonus") not in (None, "", 0):
+        items.append(("Bonus", r["bonus"]))
+    if r.get("bps") not in (None, "", 0):
+        items.append(("BPS", r["bps"]))
+    if r.get("yc") not in (None, "", 0):
+        items.append(("YC", r["yc"]))
+    if r.get("rc") not in (None, "", 0):
+        items.append(("RC", r["rc"]))
     if r.get("birth"):
         items.append(("Born", str(r["birth"])[:10]))
     if r.get("pens") == 1:
         items.append(("Pens", "1st choice"))
+    elif r.get("pens"):
+        items.append(("Pens", f"#{r['pens']}"))
+    if r.get("corners") == 1:
+        items.append(("Corners", "1st choice"))
+    elif r.get("corners"):
+        items.append(("Corners", f"#{r['corners']}"))
+    if r.get("dfk") == 1:
+        items.append(("Direct FK", "1st choice"))
+    elif r.get("dfk"):
+        items.append(("Direct FK", f"#{r['dfk']}"))
+    status = r.get("status") or "a"
+    if status and status != "a":
+        label = {"d": "Doubtful", "i": "Injured", "s": "Suspended", "u": "Unavailable", "n": "Not in squad"}.get(status, status)
+        items.append(("Status", label))
     if not items:
         return ""
     cells = "".join(
@@ -216,9 +271,14 @@ def stat_pills(r):
         ("G", r.get("gls")),
         ("A", r.get("ast")),
         ("Min", r.get("minutes")),
+        ("Starts", r.get("starts")),
         ("CS", r.get("cs")),
         ("Saves", r.get("saves") if r.get("pos") == "GKP" else None),
+        ("xG", r.get("xg")),
+        ("xA", r.get("xa")),
         ("xGI", r.get("xgi")),
+        ("Bonus", r.get("bonus")),
+        ("PPG", r.get("ppg")),
         ("Form", r.get("form")),
         ("EP", r.get("ep")),
     ]
@@ -227,9 +287,64 @@ def stat_pills(r):
         return ""
     cells = "".join(
         f'<div class="stat-pill"><small>{esc(k)}</small><strong>{esc(v)}</strong></div>'
-        for k, v in pills[:8]
+        for k, v in pills[:10]
     )
     return f'<div class="stat-strip">{cells}</div>'
+
+
+def season_box(r):
+    if not (r.get("minutes") or r.get("pts") or r.get("starts")):
+        return ""
+    cells = [
+        "2025/26",
+        r.get("starts") if r.get("starts") not in (None, "") else "—",
+        r.get("minutes") if r.get("minutes") not in (None, "") else "—",
+        r.get("gls") if r.get("gls") not in (None, "") else "—",
+        r.get("ast") if r.get("ast") not in (None, "") else "—",
+        r.get("xg") if r.get("xg") not in (None, "") else "—",
+        r.get("xa") if r.get("xa") not in (None, "") else "—",
+        r.get("cs") if r.get("cs") not in (None, "") else "—",
+        r.get("gc") if r.get("gc") not in (None, "") else "—",
+        r.get("bonus") if r.get("bonus") not in (None, "") else "—",
+        r.get("yc") if r.get("yc") not in (None, "") else "—",
+        r.get("pts") if r.get("pts") not in (None, "") else "—",
+        r.get("ppg") if r.get("ppg") not in (None, "") else "—",
+    ]
+    if r.get("pos") == "GKP":
+        cells[8] = r.get("saves") if r.get("saves") not in (None, "") else "—"
+        gc_label = "Saves"
+    else:
+        gc_label = "GC"
+    row = "<tr>" + "".join(f"<td>{esc(c)}</td>" for c in cells) + "</tr>"
+    return (
+        '<div class="panel season">'
+        '<p class="kicker">2025/26 Premier League</p>'
+        '<div class="table-wrap"><table><thead><tr>'
+        "<th>Year</th><th>Starts</th><th>Min</th><th>G</th><th>A</th>"
+        "<th>xG</th><th>xA</th><th>CS</th>"
+        f"<th>{gc_label}</th><th>Bonus</th><th>YC</th><th>Pts</th><th>PPG</th>"
+        f"</tr></thead><tbody>{row}</tbody></table></div></div>"
+    )
+
+
+def news_flag(r):
+    news = (r.get("news") or "").strip()
+    status = r.get("status") or "a"
+    if not news and status == "a":
+        return ""
+    label = {"d": "Doubtful", "i": "Injured", "s": "Suspended", "u": "Unavailable", "n": "Not in squad"}.get(status, "")
+    bits = []
+    if label:
+        bits.append(f"<strong>{esc(label)}</strong>")
+    if news:
+        bits.append(esc(news))
+    if r.get("chance") not in (None, ""):
+        bits.append(f"Chance of playing: {esc(r['chance'])}%")
+    return (
+        '<section class="panel news-flag">'
+        '<p class="kicker">FPL news</p>'
+        f"<p>{' — '.join(bits)}</p></section>"
+    )
 
 
 def boards_table(ranks):
@@ -246,8 +361,8 @@ def boards_table(ranks):
         '<section class="panel">'
         '<p class="kicker">Every Board</p>'
         f"<h3>Spread {lo}–{hi} · {len(rows)} sources</h3>"
-        f'<table class="boards"><thead><tr><th>Source</th><th>Rank</th></tr></thead>'
-        f"<tbody>{''.join(body)}</tbody></table></section>"
+        f'<div class="table-wrap"><table class="boards"><thead><tr><th>Source</th><th>Rank</th></tr></thead>'
+        f"<tbody>{''.join(body)}</tbody></table></div></section>"
     )
 
 
@@ -382,6 +497,73 @@ def pl_grafs(r, lists, media):
         f"we rebuild The Keep: more boards when they exist, honest about compiled expert slices, "
         f"and never pretending a podcast XI is a 250-man sheet."
     )
+    xg = r.get("xg") or 0
+    xa = r.get("xa") or 0
+    starts = r.get("starts") or 0
+    ppg = r.get("ppg") or 0
+    bonus = r.get("bonus") or 0
+    yc = r.get("yc") or 0
+    sel_rank = r.get("sel_rank")
+    corners = r.get("corners")
+    dfk = r.get("dfk")
+    under = (xg and gls is not None and xg - gls >= 4)
+    over = (xg and gls is not None and gls - xg >= 4)
+    g6_bits = []
+    if starts:
+        g6_bits.append(f"{starts} starts")
+    if ppg:
+        g6_bits.append(f"{ppg} points per game")
+    if bonus:
+        g6_bits.append(f"{bonus} bonus")
+    if yc:
+        g6_bits.append(f"{yc} yellows")
+    line = ", ".join(g6_bits) if g6_bits else "the 2025/26 FPL line"
+    xg_bit = ""
+    if xg or xa:
+        xg_bit = f" Expected: {xg} xG and {xa} xA."
+        if under:
+            xg_bit += f" He scored {gls} on {xg} xG — the finishing luck ran cold, which is a buy note if the minutes hold."
+        elif over:
+            xg_bit += f" He scored {gls} on {xg} xG — the finishing ran hot. Price that as last year's tape, not a lock."
+    set_bit = ""
+    roles = []
+    if pens:
+        roles.append("penalties")
+    if corners == 1:
+        roles.append("corners")
+    elif corners:
+        roles.append(f"corners (#{corners})")
+    if dfk == 1:
+        roles.append("direct free-kicks")
+    elif dfk:
+        roles.append(f"direct free-kicks (#{dfk})")
+    if roles:
+        set_bit = " Set-piece order: " + ", ".join(roles) + "."
+    sel_bit = f" Selected rank #{sel_rank} among all FPL names." if sel_rank else ""
+    g6 = (
+        f"The rest of the 2025/26 box: {line}.{xg_bit}{set_bit}{sel_bit} "
+        "That is FPL's own counting, not a scout's adjective."
+    )
+    if keep and keep <= 15:
+        g7 = (
+            "How to use him: template. Captain when the fixtures smile, do not get cute and bench him "
+            "for a 4.5m dart. If the calculator is plus-8% you can talk; otherwise he stays."
+        )
+    elif price and price <= 6.0:
+        g7 = (
+            f"How to use him: enabler at £{price}m. The point of the cheap minutes is to fund the "
+            "£10m+ shirts. Start him when he starts; do not captain him hoping for a hail mary."
+        )
+    elif pos == "GKP":
+        g7 = (
+            "How to use him: set and forget unless the fixture swing is violent. Saves and clean sheets "
+            "are the product; rotation is the tax. Check the FPL news line before you wildcard."
+        )
+    else:
+        g7 = (
+            "How to use him: hold through the first international break unless the news flag is real. "
+            "The Pitch is a season-long price. A blank Gameweek 1 is not a sell."
+        )
     plus, minus = [], []
     if keep and keep <= 10:
         plus.append(f"Pitch #{keep} — template capital. You do not need a hot take to start him.")
@@ -413,7 +595,13 @@ def pl_grafs(r, lists, media):
         plus.append(f"{pos} {r.get('team')} sits on The Pitch at #{keep}.")
     if not minus:
         minus.append("The rank is the comment until the next international break.")
-    return plus[:7], minus[:7], [g1, g2, g3, g4, g5]
+    if under:
+        plus.append(f"{gls} goals on {xg} xG — finishing ran cold. Buy the minutes if they hold.")
+    if over:
+        minus.append(f"{gls} goals on {xg} xG — finishing ran hot. Do not pay last year's conversion.")
+    if r.get("corners") == 1 or r.get("dfk") == 1:
+        plus.append("First-choice set pieces. That is a ranking event of its own.")
+    return plus[:7], minus[:7], [g1, g2, g3, g4, g5, g6, g7]
 
 
 def list_cards(lists, r):
@@ -492,6 +680,8 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
     </div>
     {facts_table(r, media)}
     {stat_pills(r)}
+    {season_box(r)}
+    {news_flag(r)}
     {list_cards(lists, r)}
     <div class="plusminus">
       <div class="pm"><h3>Plus</h3><ul>{''.join(f'<li>{esc(x)}</li>' for x in plus)}</ul></div>
@@ -547,7 +737,7 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
     hub = f"""
     <p class="kicker">Player Files</p>
     <h2>The Pitch, one name at a time</h2>
-    <p class="note">Every name in the Premier League Pitch top 250. Headshot, 2025/26 line, long take, every board, tape, BK Value. Filter the grid. Click a face.</p>
+    <p class="note">Every name in the Premier League Pitch top 250. Headshot, 2025/26 line, set-piece roles, long take, every board, tape, BK Value. Filter the grid. Click a face.</p>
     {flt}
     <div class="player-grid" id="pl-cards">{''.join(cards)}</div>
     """
