@@ -106,7 +106,14 @@ tr:hover td { background: rgba(200,16,46,0.04); }
 .hot { background: #fff5f5; }
 .cold { background: #f3f8ff; }
 .badge { font-size: 11px; font-weight: 800; color: #fff; background: var(--red); border-radius: 999px; padding: 2px 8px; }
-footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+.sport-switch {
+  display: inline-block; margin: 18px 6px 0; padding: 12px 22px; border-radius: 999px;
+  font-weight: 800; text-decoration: none; letter-spacing: 0.04em;
+}
+.sport-switch.bb {
+  background: #0b1f3a; color: #f4ebd0; border: 3px solid #1f6b3a;
+}
+.sport-switch.bb:hover { background: #1f6b3a; color: #fff; }
 .discord-hero { text-align: center; padding: 36px 16px; }
 .discord-hero img { width: 180px; height: 180px; border-radius: 50%; border: 6px solid var(--red); object-fit: cover; }
 .cta { display: inline-block; margin-top: 16px; background: var(--red); color: #fff; text-decoration: none; font-weight: 800; padding: 12px 18px; border-radius: 999px; }

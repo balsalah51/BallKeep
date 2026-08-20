@@ -19,6 +19,7 @@ Powder-blue ranks. Red ink. Nicknames, spoilers, and a theatrical keep-or-cut bu
 | `/hot` `/cold` `/hottake` `/rookies` | Market tape, a random buy/sell, the 2026 class |
 | `/compare` `/keep-or-cut` `/start` `/quiz` `/random` `/stack` | Fun desk tools |
 | `/nfl` `/mlb` | Full 2026 NFL slate and September baseball (`bills`, `yankees` work) |
+| `/bbplayer` `/bbkeep` `/bbtrade` `/bbwire` | BaseBallKeep files, boards, calculator, and waiver wires |
 | `/sources` | The ten Superflex boards inside The Keep |
 | `/publish` | **Admin.** Creates a **BALL KEEP DESK** category and posts every list, every player file, every clip, every NFL week, and the September MLB slate so native Discord search works |
 | `/reload` | Admin. Reload the catalog after a site rebuild |
