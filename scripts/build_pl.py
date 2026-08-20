@@ -76,7 +76,7 @@ def pl_page(title, path, body, extra_js="", depth=1):
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{esc(title)} — PitchKeep</title>
-  <meta name="description" content="PitchKeep Premier League rankings. The Pitch top 250, super-aggregated FPL boards, player files with tape." />
+  <meta name="description" content="PitchKeep Premier League rankings. The Pitch top 400, ranked on Sleeper BPL 2025 points." />
   <link rel="stylesheet" href="{prefix}css/pl.css" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
@@ -148,8 +148,13 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix=""):
 
 def val_cell(r):
     return (
-        f'<td class="desk-only">{r.get("avg")}</td>'
-        f'<td class="desk-only">{r.get("n")}</td>'
+        f'<td class="desk-only">{r.get("sleeper_pts") if r.get("sleeper_pts") not in (None, "") else "—"}</td>'
+        f'<td class="desk-only">{r.get("pts") if r.get("pts") not in (None, "") else "—"}</td>'
+        f'<td class="desk-only">{r.get("gls") if r.get("gls") not in (None, "") else "—"}</td>'
+        f'<td class="desk-only">{r.get("ast") if r.get("ast") not in (None, "") else "—"}</td>'
+        f'<td class="desk-only">{r.get("minutes") if r.get("minutes") not in (None, "") else "—"}</td>'
+        f'<td class="desk-only">{r.get("cs") if r.get("cs") not in (None, "") else "—"}</td>'
+        f'<td class="desk-only">{r.get("tackles") if r.get("tackles") not in (None, "") else "—"}</td>'
         f'<td class="c-price">£{r.get("price") or "—"}</td>'
         f'<td class="c-val val">{int(r.get("value") or 0):,}</td>'
     )
@@ -182,7 +187,7 @@ def sources_panel():
         items.append(f"<li>{label} — {esc(note)}</li>")
     return (
         '<section class="panel sources-box"><p class="kicker">Sources</p>'
-        "<h3>Twenty-four boards. Unranked is skipped, never 999.</h3>"
+        "<h3>Sleeper BPL 2025 is The Pitch. Extra boards sit on the player file. Unranked is skipped, never 999.</h3>"
         f"<ol>{''.join(items)}</ol></section>"
     )
 
@@ -218,6 +223,10 @@ def facts_table(r, media):
     items = []
     if r.get("number") or media.get("number"):
         items.append(("No.", f"#{r.get('number') or media.get('number')}"))
+    if r.get("sleeper_pts") not in (None, "", 0, 0.0):
+        items.append(("Sleeper BPL", r["sleeper_pts"]))
+    if r.get("sleeper_rank"):
+        items.append(("Sleeper rk", f"#{r['sleeper_rank']}"))
     if r.get("price"):
         items.append(("FPL £", f"£{r['price']}m"))
     if r.get("sel") not in (None, ""):
@@ -249,6 +258,10 @@ def facts_table(r, media):
     if status and status != "a":
         label = {"d": "Doubtful", "i": "Injured", "s": "Suspended", "u": "Unavailable", "n": "Not in squad"}.get(status, status)
         items.append(("Status", label))
+    if r.get("tackles"):
+        items.append(("Tackles", r["tackles"]))
+    if r.get("cbi"):
+        items.append(("CBI", r["cbi"]))
     if r.get("ict") not in (None, "", 0, 0.0):
         items.append(("ICT", r["ict"]))
     if r.get("form") not in (None, "", 0, 0.0):
@@ -266,12 +279,15 @@ def facts_table(r, media):
 
 def stat_pills(r):
     pills = [
-        ("Pts", r.get("pts")),
+        ("Sleeper", r.get("sleeper_pts")),
+        ("FPL", r.get("pts")),
         ("G", r.get("gls")),
         ("A", r.get("ast")),
         ("Min", r.get("minutes")),
         ("Starts", r.get("starts")),
         ("CS", r.get("cs")),
+        ("Tck", r.get("tackles")),
+        ("CBI", r.get("cbi")),
         ("Saves", r.get("saves") if r.get("pos") == "GKP" else None),
         ("xG", r.get("xg")),
         ("xA", r.get("xa")),
@@ -306,8 +322,8 @@ def season_box(r):
         r.get("gc") if r.get("gc") not in (None, "") else "—",
         r.get("bonus") if r.get("bonus") not in (None, "") else "—",
         r.get("yc") if r.get("yc") not in (None, "") else "—",
+        r.get("sleeper_pts") if r.get("sleeper_pts") not in (None, "") else "—",
         r.get("pts") if r.get("pts") not in (None, "") else "—",
-        r.get("ppg") if r.get("ppg") not in (None, "") else "—",
     ]
     if r.get("pos") == "GKP":
         cells[8] = r.get("saves") if r.get("saves") not in (None, "") else "—"
@@ -321,7 +337,7 @@ def season_box(r):
         '<div class="table-wrap"><table><thead><tr>'
         "<th>Year</th><th>Starts</th><th>Min</th><th>G</th><th>A</th>"
         "<th>xG</th><th>xA</th><th>CS</th>"
-        f"<th>{gc_label}</th><th>Bonus</th><th>YC</th><th>Pts</th><th>PPG</th>"
+        f"<th>{gc_label}</th><th>Bonus</th><th>YC</th><th>Sleeper</th><th>FPL</th>"
         f"</tr></thead><tbody>{row}</tbody></table></div></div>"
     )
 
@@ -386,7 +402,7 @@ def same_pos(pitch, r, limit=6):
         f'<a class="player-link" href="{slugify(p["name"])}.html">{esc(p["name"])}</a> #{p["bk"]}'
         for p in others
     )
-    return f'<p class="note"><strong>Same position on the 250</strong> — {links}</p>'
+    return f'<p class="note"><strong>Same position on the 400</strong> — {links}</p>'
 
 
 def video_block(media, name):
@@ -431,6 +447,8 @@ def pl_grafs(r, lists, media):
     if xg and gls is not None and gls - xg >= 4:
         minus.append(f"{gls} G on {xg} xG — finishing ran hot.")
     bits = []
+    if r.get("sleeper_pts") not in (None, "", 0, 0.0):
+        bits.append(f"{r['sleeper_pts']} Sleeper")
     if keep:
         bits.append(f"Pitch #{keep}")
     if avg is not None:
@@ -483,6 +501,7 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
     media_all = load_pl_media()
     cards, urls, files = [], [], []
     used_slugs = set()
+    keep_html = {"index.html"}
     for i, r in enumerate(pitch):
         slug = slugify(r["name"])
         if slug in used_slugs:
@@ -530,6 +549,7 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
     <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-pitch.html">The Pitch</a> · <a href="../trade.html">Calculator</a></p>
     """
         write(f"pl/players/{slug}.html", pl_page(r["name"], f"players/{slug}.html", body, depth=2))
+        keep_html.add(f"{slug}.html")
         cards.append(
             f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}" data-group="{esc(r.get("group") or "")}">'
             f'<img src="../../{esc(img)}" alt="" />'
@@ -562,6 +582,7 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
             "price": r.get("price"),
             "sel": r.get("sel"),
             "pts": r.get("pts"),
+            "sleeper_pts": r.get("sleeper_pts"),
             "gls": r.get("gls"),
             "ast": r.get("ast"),
         })
@@ -569,12 +590,16 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
     hub = f"""
     <p class="kicker">Player Files</p>
     <h2>The Pitch, one name at a time</h2>
-    <p class="note">The Pitch top 250. 2025/26 line, ranks, every board, tape. Filter the grid.</p>
+    <p class="note">The Pitch top 400. Sleeper BPL 2025 points, 2025/26 line, every board, tape. Filter the grid.</p>
     {flt}
     <div class="player-grid" id="pl-cards">{''.join(cards)}</div>
     """
     hub_js = js.replace("tbody tr", "#pl-cards .tile")
     write("pl/players/index.html", pl_page("Players", "players/index.html", hub, hub_js, depth=2))
+    dest = ROOT / "pl" / "players"
+    for old in dest.glob("*.html"):
+        if old.name not in keep_html:
+            old.unlink()
     return urls, files
 
 
@@ -625,27 +650,27 @@ def write_pitch_site():
     pitch, fwd, mid, defence, gkp = u["pitch"], u["fwd"], u["mid"], u["def"], u["gkp"]
 
     tiles = [
-        ("the-pitch.html", "The Pitch", "Premier League top 250. 24-board FPL super-aggregate."),
-        ("attack.html", "Attack", "Forwards only, re-ranked among the No. 9s."),
-        ("midfield.html", "Midfield", "The FPL engine room. Saka, Bruno, Semenyo."),
-        ("defence.html", "Defence", "Clean sheets plus the new attacking CB."),
-        ("keepers.html", "Keepers", "The £4.5m question and the Raya tax."),
+        ("the-pitch.html", "The Pitch", "Premier League top 400. Ranked on Sleeper BPL 2025 points."),
+        ("attack.html", "Attack", "Forwards only, re-ranked on Sleeper BPL points."),
+        ("midfield.html", "Midfield", "The engine room. Bruno, Semenyo, Rice, still Sleeper-scored."),
+        ("defence.html", "Defence", "Clean sheets pay on Sleeper. Gabriel lives here."),
+        ("keepers.html", "Keepers", "Saves plus the clean-sheet tax."),
         ("trade.html", "Trade Calculators", "Pitch, Attack, Midfield, Defence, Keepers."),
-        ("players/index.html", "Player Files", "250 faces, long takes, tape."),
+        ("players/index.html", "Player Files", "400 faces, 2025/26 line, Sleeper points, tape."),
     ]
     home = f"""
     <section class="hero" style="background-image:url('../img/pl-hero.jpg')">
       <div class="hero-card">
         <p class="kicker" style="color:#e8c547">Updated {UPDATED}</p>
         <h2>{wordmark()}</h2>
-        <p>A purple-and-pitch desk for the Premier League. Twenty-four FPL boards. One Pitch. Football and baseball still next door.</p>
+        <p>A purple-and-pitch desk for the Premier League. The Pitch is Sleeper BPL 2025 points. Football and baseball still next door.</p>
       </div>
     </section>
     <section class="panel">
       <p class="kicker">What This Desk Is</p>
-      <h2>Pick the shirts that still score in May.</h2>
-      <p class="note"><strong>Fantasy Premier League</strong> is a £100m squad, a Friday deadline, and a captain you live with for 38 Gameweeks. <strong>Season-long / draft FPL</strong> is the same league without the price cap — last year's 180-point midfielder is a first-rounder even if he costs £8m in the official game.</p>
-      <p class="note">The Pitch is an overall Premier League top 250 aggregated from 24 public boards, led by official FPL 2025/26 points, 2026/27 prices, Gameweek 1 ownership, ICT and xGI, then compiled expert slices from Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, and the usual content desks. Bruno and Haaland are the argument at the top. The rest of the 250 is who you actually own.</p>
+      <h2>Rank the shirts the way Sleeper scored them last year.</h2>
+      <p class="note"><strong>Sleeper BPL</strong> is draft fantasy, not the £100m FPL app. Default scoring pays 9 for a forward/midfielder goal, 10 for a defender/keeper goal, 6/7 for an assist, 8 for a keeper clean sheet, 2 a save, and real defensive events. We ran that table across every 2025/26 Premier League counting line in the official FPL dump. That ranking <em>is</em> The Pitch — 400 names, not a 24-board FPL mash.</p>
+      <p class="note">FPL price, ownership, ICT, xGI, and the short expert tapes still sit on every player file so you can see where Sleeper and the official game disagree. Unranked sources are skipped, never treated as 999. BK Value uses Pitch rank on the same curve as football (12,000 at 1.01).</p>
     </section>
     <p class="note" style="margin-top:18px"><img src="../img/pl-stitch.jpg" alt="Soccer ball on wet Premier League grass" style="width:100%;border-radius:16px" /></p>
     <div class="grid-3" style="margin-top:16px">
@@ -656,26 +681,31 @@ def write_pitch_site():
 
     flt, js = filter_js(["FWD", "MID", "DEF", "GKP"])
     pitch_body = f"""
-    <p class="kicker">Keystone · Premier League</p>
+    <p class="kicker">Keystone · Sleeper BPL 2025</p>
     <h2>The Pitch</h2>
-    <p class="note">Top 250 for 2026/27 FPL and season-long drafts, rebuilt {UPDATED}. PitchKeep rank is the average of every source that ranked the player — 24 boards, five of them the entire FPL universe. BK Value uses the same decaying curve as football (12,000 at 1.01). Gameweek 1 deadline: Friday 21 August, 18:30 BST.</p>
+    <p class="note">Top 400, rebuilt {UPDATED}. Order is default Sleeper soccer scoring on 2025/26 Premier League counting stats — goals, assists, clean sheets, goals against, cards, saves, penalties, tackles, and a CBI blend. That is a different sport than official FPL points: Haaland's 27 goals pay, Bruno's 24 assists pay, and keepers are real because saves and clean sheets stack. BK Value uses this rank on the same curve as football (12,000 at 1.01).</p>
+    <section class="panel">
+      <p class="kicker">Sleeper default table</p>
+      <h3>What last year's box score is worth here</h3>
+      <p class="note">FWD/MID goal 9, DEF/GKP goal 10. Assist 6 / 7. Clean sheet 0 / 1 / 6 / 8. Save 2. Yellow −2, red −7, own goal −5, missed penalty −4. DEF/GKP goals against −2. Tackles 1. FPL CBI × 0.4. Shots on target and key passes are not in the public FPL dump, so they are omitted rather than guessed.</p>
+    </section>
     {flt}
-    <div class="panel">{rank_table(pitch, ["Avg", "# Boards", "£", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(pitch, ["Sleeper", "FPL", "G", "A", "Min", "CS", "Tck", "£", "BK Value"], val_cell)}</div>
     {sources_panel()}
     """
     write("pl/the-pitch.html", pl_page("The Pitch", "the-pitch.html", pitch_body, js))
 
     for path, title, kicker, note, rows in [
-        ("attack.html", "Attack", "Forwards", "No. 9s only. Haaland is the tax. João Pedro is the template argument.", fwd),
-        ("midfield.html", "Midfield", "The Engine Room", "FPL is won in midfield. Bruno, Semenyo, Saka, Rice, Szoboszlai.", mid),
-        ("defence.html", "Defence", "The Back Line", "Clean sheets, plus the new FPL world where Gabriel outscores half the midfield.", defence),
-        ("keepers.html", "Keepers", "Between the Sticks", "Raya money versus Kinsky money. That is the whole page.", gkp),
+        ("attack.html", "Attack", "Forwards", "No. 9s only, re-ranked on Sleeper BPL 2025. Haaland is the tax. Igor Thiago and João Pedro are the volume argument.", fwd),
+        ("midfield.html", "Midfield", "The Engine Room", "Sleeper pays assists. Bruno, Semenyo, Rice, Gibbs-White — this is the 150.", mid),
+        ("defence.html", "Defence", "The Back Line", "Clean sheets are 6 points and goals against are −2. Gabriel outscores half the midfield on this table.", defence),
+        ("keepers.html", "Keepers", "Between the Sticks", "Saves at 2 and clean sheets at 8. Kelleher / Raya / Donnarumma is the real fight.", gkp),
     ]:
         body = f"""
     <p class="kicker">{esc(kicker)}</p>
     <h2>{esc(title)}</h2>
     <p class="note">{esc(note)}</p>
-    <div class="panel">{rank_table(rows, ["Avg", "# Boards", "£", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(rows, ["Sleeper", "FPL", "G", "A", "Min", "CS", "Tck", "£", "BK Value"], val_cell)}</div>
     {sources_panel()}
     """
         write("pl/" + path, pl_page(title, path, body))
