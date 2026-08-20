@@ -200,46 +200,39 @@ def nz(v, dash="—"):
     return v
 
 
+def plusminus_html(plus, minus):
+    if not plus and not minus:
+        return ""
+    left = (
+        f'<div class="pm"><h3>Plus</h3><ul>{"".join(f"<li>{esc(x)}</li>" for x in plus)}</ul></div>'
+        if plus else ""
+    )
+    right = (
+        f'<div class="pm"><h3>Minus</h3><ul>{"".join(f"<li>{esc(x)}</li>" for x in minus)}</ul></div>'
+        if minus else ""
+    )
+    return f'<div class="plusminus">{left}{right}</div>'
+
+
 def facts_table(r, media):
     items = []
     if r.get("number") or media.get("number"):
         items.append(("No.", f"#{r.get('number') or media.get('number')}"))
-    if r.get("pos"):
-        items.append(("Pos", r["pos"]))
-    if r.get("team_name") or r.get("team"):
-        items.append(("Club", r.get("team_name") or r.get("team")))
-    if r.get("age"):
-        items.append(("Age", r["age"]))
     if r.get("price"):
         items.append(("FPL £", f"£{r['price']}m"))
     if r.get("sel") not in (None, ""):
         items.append(("Owned", f"{r['sel']}%"))
     if r.get("sel_rank"):
         items.append(("Sel. rank", f"#{r['sel_rank']}"))
-    if r.get("pts") not in (None, ""):
-        items.append(("25/26 pts", r["pts"]))
-    if r.get("ppg") not in (None, "", 0, 0.0):
-        items.append(("PPG", r["ppg"]))
-    if r.get("starts") not in (None, "", 0):
-        items.append(("Starts", r["starts"]))
-    if r.get("ict") not in (None, ""):
-        items.append(("ICT", r["ict"]))
-    if r.get("xgi") not in (None, ""):
-        items.append(("xGI", r["xgi"]))
-    if r.get("xg") not in (None, "", 0, 0.0):
-        items.append(("xG", r["xg"]))
-    if r.get("xa") not in (None, "", 0, 0.0):
-        items.append(("xA", r["xa"]))
-    if r.get("bonus") not in (None, "", 0):
-        items.append(("Bonus", r["bonus"]))
-    if r.get("bps") not in (None, "", 0):
-        items.append(("BPS", r["bps"]))
-    if r.get("yc") not in (None, "", 0):
-        items.append(("YC", r["yc"]))
-    if r.get("rc") not in (None, "", 0):
-        items.append(("RC", r["rc"]))
-    if r.get("birth"):
-        items.append(("Born", str(r["birth"])[:10]))
+    if r.get("avg") is not None:
+        items.append(("Pitch avg", r["avg"]))
+    if r.get("n"):
+        items.append(("# Boards", r["n"]))
+    if r.get("value"):
+        items.append(("BK Value", f"{int(r['value']):,}"))
+    ranks = r.get("ranks") or {}
+    if ranks:
+        items.append(("Spread", f"{min(ranks.values())}–{max(ranks.values())}"))
     if r.get("pens") == 1:
         items.append(("Pens", "1st choice"))
     elif r.get("pens"):
@@ -256,6 +249,12 @@ def facts_table(r, media):
     if status and status != "a":
         label = {"d": "Doubtful", "i": "Injured", "s": "Suspended", "u": "Unavailable", "n": "Not in squad"}.get(status, status)
         items.append(("Status", label))
+    if r.get("ict") not in (None, "", 0, 0.0):
+        items.append(("ICT", r["ict"]))
+    if r.get("form") not in (None, "", 0, 0.0):
+        items.append(("Form", r["form"]))
+    if r.get("ep") not in (None, "", 0, 0.0):
+        items.append(("EP next", r["ep"]))
     if not items:
         return ""
     cells = "".join(
@@ -401,7 +400,6 @@ def video_block(media, name):
     return f"""
     <p class="kicker" style="margin-top:22px">Tape · 2025/26 Premier League</p>
     <h3>{esc(title)}</h3>
-    <p class="note">Best available public clip. Not affiliated with the Premier League, the club, or the posting channel.</p>
     <div class="video-wrap">
       <iframe src="https://www.youtube-nocookie.com/embed/{esc(yt)}" title="{esc(title)}"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -411,9 +409,6 @@ def video_block(media, name):
 
 
 def pl_grafs(r, lists, media):
-    name = r["name"]
-    pos = r.get("pos") or ""
-    team = r.get("team_name") or r.get("team") or "his club"
     keep = r.get("bk")
     n = r.get("n") or 0
     avg = r.get("avg")
@@ -424,184 +419,40 @@ def pl_grafs(r, lists, media):
     gls = r.get("gls") or 0
     ast = r.get("ast") or 0
     minutes = r.get("minutes") or 0
-    xgi = r.get("xgi") or 0
-    ict = r.get("ict") or 0
-    age = r.get("age") or ""
-    news = (r.get("news") or "").strip()
-    pens = r.get("pens") == 1
-    value = int(r.get("value") or 0)
-    hi = min(ranks.values()) if ranks else None
-    lo = max(ranks.values()) if ranks else None
-
-    role = {
-        "FWD": "a centre-forward you captain when the fixtures smile",
-        "MID": "a midfielder who scores FPL points from the middle of the pitch, not just the box",
-        "DEF": "a defender in the new FPL world where attacking full-backs and set-piece centre-halves print",
-        "GKP": "a goalkeeper whose clean sheets and save points still decide mini-leagues",
-    }.get(pos, "a Premier League name")
-
-    g1 = (
-        f"{name} is #{keep} on PitchKeep's The Pitch — a 24-source Premier League super-aggregate "
-        f"built for 2026/27 FPL and for anyone who still argues about who actually belongs in a "
-        f"season-long XI. He is {role} at {team}. The number is not a vibe. It is the average of "
-        f"every board that ranked him ({n} of 24), led by official FPL 2025/26 points, 2026/27 price, "
-        f"Gameweek 1 ownership, ICT, xGI, and the August expert tapes from Premier League Scout, "
-        f"Fantasy Football Fix, Yahoo, and the rest of the public desk. Unranked sources are skipped. "
-        f"We do not invent a 999 to punish a name the Athletic did not print."
-    )
-    g2 = (
-        f"Last season's counting stats are the floor: {pts} FPL points, {gls} goals, {ast} assists, "
-        f"{minutes} minutes, ICT {ict}, xGI {xgi}. That is the 2025/26 tape, not a projection dressed "
-        f"up as a memory. The 2026/27 market then reprices him at £{price}m with {sel}% ownership "
-        f"into the Friday 18:30 BST Gameweek 1 deadline. If those two stories diverge — cheap with "
-        f"a monster year, or expensive off a quiet one — The Pitch is the place the split shows up "
-        f"as a rank instead of a tweet. BK Value on this slot is {value:,}, the same decaying curve "
-        f"as football and baseball: 12,000 at 1.01, a late-board name a fraction of that."
-    )
-    spread = (
-        f"High {hi}, low {lo} — that gap is the argument."
-        if hi is not None
-        else "Short tape this week."
-    )
-    g3 = (
-        f"The 24-board average is {avg}. {spread} Premium desks (price, Hub, Sky) stuff the "
-        f"£9m+ names because FPL is a constrained budget game and those shirts are the ones "
-        f"everyone else already owns. Value desks (Scout lean, Faithful gems, Yahoo enablers) "
-        f"try to find the £4.5m–£6.5m minutes that let you afford Haaland and Bruno in the same "
-        f"XI. If {name} is climbing one of those and falling off the other, you are not confused. "
-        f"You are looking at two sports that happen to share a fixture list."
-    )
-    age_bit = f" He is {age}, which still matters when the World Cup summer just emptied the legs." if age else ""
-    pens_bit = (
-        " First-choice penalties are a ranking event of their own — one spot on the order list is worth "
-        "a midfielder's worth of projected returns."
-        if pens
-        else ""
-    )
-    news_bit = (
-        f" The FPL news line right now: {news} That is a minutes flag, not a character study."
-        if news
-        else " No injury flag on the FPL ticker this morning, which is the whole scouting report until Saturday."
-    )
-    g4 = (
-        f"The Pitch is not FIFA overall and it is not a beauty contest.{age_bit}{pens_bit} "
-        f"It is who you would actually pick in a 15-man FPL squad and who you would actually keep "
-        f"in a season-long draft if the £100m cap vanished. Those two games disagree at the edges — "
-        f"draft loves 180-point midfielders even at £8m; classic FPL sometimes prefers the £5.5m "
-        f"enabler so the rest of the money can sit on Haaland's shoulders. {news_bit}"
-    )
-    g5 = (
-        f"Watch the clip. Then look at the board dump. If the film is a 1.01 and The Pitch has him "
-        f"in the thirties, somebody is late or you are early. Refresh this file with the next "
-        f"Gameweek. Flags fly forever; FPL ranks do not. We will rebuild The Pitch the same way "
-        f"we rebuild The Keep: more boards when they exist, honest about compiled expert slices, "
-        f"and never pretending a podcast XI is a 250-man sheet."
-    )
+    starts = r.get("starts") or 0
     xg = r.get("xg") or 0
     xa = r.get("xa") or 0
-    starts = r.get("starts") or 0
-    ppg = r.get("ppg") or 0
-    bonus = r.get("bonus") or 0
-    yc = r.get("yc") or 0
-    sel_rank = r.get("sel_rank")
-    corners = r.get("corners")
-    dfk = r.get("dfk")
-    under = (xg and gls is not None and xg - gls >= 4)
-    over = (xg and gls is not None and gls - xg >= 4)
-    g6_bits = []
-    if starts:
-        g6_bits.append(f"{starts} starts")
-    if ppg:
-        g6_bits.append(f"{ppg} points per game")
-    if bonus:
-        g6_bits.append(f"{bonus} bonus")
-    if yc:
-        g6_bits.append(f"{yc} yellows")
-    line = ", ".join(g6_bits) if g6_bits else "the 2025/26 FPL line"
-    xg_bit = ""
-    if xg or xa:
-        xg_bit = f" Expected: {xg} xG and {xa} xA."
-        if under:
-            xg_bit += f" He scored {gls} on {xg} xG — the finishing luck ran cold, which is a buy note if the minutes hold."
-        elif over:
-            xg_bit += f" He scored {gls} on {xg} xG — the finishing ran hot. Price that as last year's tape, not a lock."
-    set_bit = ""
-    roles = []
-    if pens:
-        roles.append("penalties")
-    if corners == 1:
-        roles.append("corners")
-    elif corners:
-        roles.append(f"corners (#{corners})")
-    if dfk == 1:
-        roles.append("direct free-kicks")
-    elif dfk:
-        roles.append(f"direct free-kicks (#{dfk})")
-    if roles:
-        set_bit = " Set-piece order: " + ", ".join(roles) + "."
-    sel_bit = f" Selected rank #{sel_rank} among all FPL names." if sel_rank else ""
-    g6 = (
-        f"The rest of the 2025/26 box: {line}.{xg_bit}{set_bit}{sel_bit} "
-        "That is FPL's own counting, not a scout's adjective."
-    )
-    if keep and keep <= 15:
-        g7 = (
-            "How to use him: template. Captain when the fixtures smile, do not get cute and bench him "
-            "for a 4.5m dart. If the calculator is plus-8% you can talk; otherwise he stays."
-        )
-    elif price and price <= 6.0:
-        g7 = (
-            f"How to use him: enabler at £{price}m. The point of the cheap minutes is to fund the "
-            "£10m+ shirts. Start him when he starts; do not captain him hoping for a hail mary."
-        )
-    elif pos == "GKP":
-        g7 = (
-            "How to use him: set and forget unless the fixture swing is violent. Saves and clean sheets "
-            "are the product; rotation is the tax. Check the FPL news line before you wildcard."
-        )
-    else:
-        g7 = (
-            "How to use him: hold through the first international break unless the news flag is real. "
-            "The Pitch is a season-long price. A blank Gameweek 1 is not a sell."
-        )
+    news = (r.get("news") or "").strip()
     plus, minus = [], []
-    if keep and keep <= 10:
-        plus.append(f"Pitch #{keep} — template capital. You do not need a hot take to start him.")
-    elif keep and keep <= 40:
-        plus.append(f"Pitch #{keep} is still a core 250 name, not a bench dart.")
-    if n >= 18:
-        plus.append(f"On {n} boards. That is a consensus shirt, not a one-list meme.")
-    if sel and sel >= 30:
-        plus.append(f"{sel}% owned. The template already voted.")
-    if pts >= 160:
-        plus.append(f"{pts} FPL points last season. The floor is real.")
-    if price and price <= 6.5 and (pts or 0) >= 120:
-        plus.append(f"£{price}m after a {pts}-point year — this is how mini-leagues get broken.")
-    if pens:
-        plus.append("Pens. The rank should already have that baked in; if a rival does not, take it.")
-    if age and int(age) <= 24:
-        plus.append(f"Age {age}. The next three FPL seasons still like him.")
-    if keep and keep >= 180:
-        minus.append(f"Pitch #{keep} is the deep end of the 250. Streamer / bench / draft-only.")
     if news:
-        minus.append("FPL has a news flag. Minutes first, points later.")
-    if sel and sel >= 50 and keep and keep >= 15:
-        minus.append(f"{sel}% owned and Pitch #{keep} — the public may be ahead of the aggregate, or trapped.")
-    if price and price >= 10:
-        minus.append(f"£{price}m is a structural cost. You are paying two mid-board names to own him.")
-    if ranks and hi and lo and (lo - hi) >= 40:
-        minus.append(f"Spread {hi}–{lo}. You are picking a camp, not a unanimous board.")
-    if not plus:
-        plus.append(f"{pos} {r.get('team')} sits on The Pitch at #{keep}.")
-    if not minus:
-        minus.append("The rank is the comment until the next international break.")
-    if under:
-        plus.append(f"{gls} goals on {xg} xG — finishing ran cold. Buy the minutes if they hold.")
-    if over:
-        minus.append(f"{gls} goals on {xg} xG — finishing ran hot. Do not pay last year's conversion.")
-    if r.get("corners") == 1 or r.get("dfk") == 1:
-        plus.append("First-choice set pieces. That is a ranking event of its own.")
-    return plus[:7], minus[:7], [g1, g2, g3, g4, g5, g6, g7]
+        minus.append(news)
+    if xg and gls is not None and xg - gls >= 4:
+        plus.append(f"{gls} G on {xg} xG — finishing ran cold.")
+    if xg and gls is not None and gls - xg >= 4:
+        minus.append(f"{gls} G on {xg} xG — finishing ran hot.")
+    bits = []
+    if keep:
+        bits.append(f"Pitch #{keep}")
+    if avg is not None:
+        bits.append(f"avg {avg}")
+    if n:
+        bits.append(f"{n} boards")
+    if price not in (None, ""):
+        bits.append(f"£{price}m")
+    if sel not in (None, ""):
+        bits.append(f"{sel}% owned")
+    if pts:
+        bits.append(f"{pts} pts")
+    if gls or ast:
+        bits.append(f"{gls}G {ast}A")
+    if starts:
+        bits.append(f"{starts} starts")
+    if minutes:
+        bits.append(f"{minutes} min")
+    if xg or xa:
+        bits.append(f"{xg} xG / {xa} xA")
+    graf = " · ".join(str(b) for b in bits)
+    return plus[:4], minus[:4], [graf] if graf else []
 
 
 def list_cards(lists, r):
@@ -648,15 +499,6 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
         if r["key"] in gm:
             lists["Keepers"] = gm[r["key"]]["bk"]
         plus, minus, grafs = pl_grafs(r, lists, media)
-        chips = [
-            f'<span class="chip">Pitch #{r["bk"]}</span>',
-            f'<span class="chip">BK {int(r.get("value") or 0):,}</span>',
-            f'<span class="chip">£{r.get("price") or "—"}m</span>',
-        ]
-        if r.get("age"):
-            chips.append(f'<span class="chip">Age {esc(r["age"])}</span>')
-        if r.get("sel") not in (None, ""):
-            chips.append(f'<span class="chip">{r["sel"]}% owned</span>')
         img = media.get("image") or "img/pl-logo.jpg"
         img_src = "../../" + img
         bio = " · ".join(
@@ -675,26 +517,16 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
       <div>
         <h2>{esc(r["name"])}</h2>
         <p class="note">{esc(bio)}</p>
-        <div class="chips">{''.join(chips)}</div>
       </div>
     </div>
     {facts_table(r, media)}
-    {stat_pills(r)}
     {season_box(r)}
     {news_flag(r)}
     {list_cards(lists, r)}
-    <div class="plusminus">
-      <div class="pm"><h3>Plus</h3><ul>{''.join(f'<li>{esc(x)}</li>' for x in plus)}</ul></div>
-      <div class="pm"><h3>Minus</h3><ul>{''.join(f'<li>{esc(x)}</li>' for x in minus)}</ul></div>
-    </div>
-    <section class="panel analysis">
-      <p class="kicker">PitchKeep Take</p>
-      {''.join(f'<p>{esc(g)}</p>' for g in grafs)}
-    </section>
+    {plusminus_html(plus, minus)}
     {video_block(media, r["name"])}
     {boards_table(r.get("ranks") or {})}
     {neighbors(pitch, i)}
-    {same_pos(pitch, r)}
     <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-pitch.html">The Pitch</a> · <a href="../trade.html">Calculator</a></p>
     """
         write(f"pl/players/{slug}.html", pl_page(r["name"], f"players/{slug}.html", body, depth=2))
@@ -737,7 +569,7 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
     hub = f"""
     <p class="kicker">Player Files</p>
     <h2>The Pitch, one name at a time</h2>
-    <p class="note">Every name in the Premier League Pitch top 250. Headshot, 2025/26 line, set-piece roles, long take, every board, tape, BK Value. Filter the grid. Click a face.</p>
+    <p class="note">The Pitch top 250. 2025/26 line, ranks, every board, tape. Filter the grid.</p>
     {flt}
     <div class="player-grid" id="pl-cards">{''.join(cards)}</div>
     """

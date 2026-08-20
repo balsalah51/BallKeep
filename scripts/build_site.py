@@ -728,42 +728,40 @@ def collect_profiles(keep, board, ppr, std):
 def auto_plus_minus(p):
     plus, minus = [], []
     lists = p["lists"]
-    if "The Keep" in lists and lists["The Keep"] <= 15:
-        plus.append(f"Superflex first-rounder on The Keep (#{lists['The Keep']}).")
-    if "The Keep" in lists and lists["The Keep"] >= 150:
-        minus.append(f"Keep #{lists['The Keep']} — still on the 300, but the long-term case is thinner than the names above.")
     if "Hot" in lists:
         plus.append(next((n for n in p["notes"] if n.startswith("Hot")), "On the BK Hot board as a buy."))
     if "Cold" in lists:
         minus.append(next((n for n in p["notes"] if n.startswith("Cold")), "On the BK Cold board as a sell."))
     if "2026 Rookies" in lists and lists["2026 Rookies"] <= 5:
         plus.append(next((n for n in p["notes"] if n in [x["value"] for x in ROOKIES]), "Top-five name in the 2026 rookie class."))
-    if len(lists) >= 4:
-        plus.append("Shows up on four-plus Ball Keep lists — not a one-board meme.")
     if "The Keep" not in lists and ("Redraft PPR" in lists or "Redraft Standard" in lists):
-        minus.append("A 2026 redraft name more than a 2029 Keep name — missing The Keep top 300.")
-    if p.get("age") not in ("", None):
-        try:
-            age = int(p["age"])
-            if p["pos"] == "RB" and age >= 27:
-                minus.append(f"Age {age} at running back is a dynasty tax even when 2026 looks huge.")
-            if p["pos"] == "WR" and age >= 30:
-                minus.append(f"Age {age} at receiver is why win-now boards love him and The Keep is colder.")
-            if p["pos"] == "QB" and age >= 30:
-                minus.append(f"Age {age} at quarterback: still a starter, no longer a five-year 1.01 without a discount.")
-            if age <= 24 and p["pos"] in ("QB", "WR", "TE", "RB"):
-                plus.append(f"Age {age} — still on the right side of the dynasty curve.")
-        except (TypeError, ValueError):
-            pass
-    ranks = p.get("ranks") or {}
-    if ranks:
-        vals = list(ranks.values())
-        if max(vals) - min(vals) >= 15:
-            spread = ", ".join(f"{s} {v}" for s, v in sorted(ranks.items(), key=lambda kv: kv[1])[:4])
-            minus.append(f"Expert spread is wide ({spread}…). You are betting with one camp, not a unanimous tape.")
-        if len(ranks) >= 6:
-            plus.append(f"Ranked on {len(ranks)} Superflex sources — not a one-list darling.")
+        minus.append("On the 2026 redraft board, not The Keep top 300.")
     return plus, minus
+
+
+def plusminus_html(plus, minus):
+    if not plus and not minus:
+        return ""
+    left = (
+        f'<div class="pm plus"><h3>Plus</h3><ul>{"".join(f"<li>{esc(x)}</li>" for x in plus)}</ul></div>'
+        if plus else ""
+    )
+    right = (
+        f'<div class="pm minus"><h3>Minus</h3><ul>{"".join(f"<li>{esc(x)}</li>" for x in minus)}</ul></div>'
+        if minus else ""
+    )
+    return f'<div class="plusminus">{left}{right}</div>'
+
+
+def take_html(kicker, grafs, limit=2):
+    grafs = [g for g in (grafs or []) if g]
+    if not grafs:
+        return ""
+    return (
+        f'<section class="panel analysis"><p class="kicker">{esc(kicker)}</p>'
+        + "".join(f"<p>{esc(g)}</p>" for g in grafs[:limit])
+        + "</section>"
+    )
 
 
 def _fact_cells(items):
@@ -776,11 +774,7 @@ def _fact_cells(items):
 
 def ff_facts(p, college, is_rook):
     lists = p.get("lists") or {}
-    items = [("Pos", p.get("pos") or ""), ("Team", p.get("team") or "")]
-    if p.get("age"):
-        items.append(("Age", p["age"]))
-    if college:
-        items.append(("College", college))
+    items = []
     if is_rook:
         items.append(("Class", "2026 rookie"))
     if p.get("keep_avg") is not None:
@@ -790,7 +784,32 @@ def ff_facts(p, college, is_rook):
     keep = lists.get("The Keep")
     if keep:
         items.append(("BK Value", f"{bk_value(keep):,}"))
+    hi, lo = None, None
+    ranks = p.get("ranks") or {}
+    if ranks:
+        hi, lo = min(ranks.values()), max(ranks.values())
+        items.append(("Spread", f"{hi}–{lo}"))
     return _fact_cells(items)
+
+
+def ff_stat_line(p):
+    lists = p.get("lists") or {}
+    bits = []
+    if lists.get("The Keep"):
+        bits.append(f"Keep #{lists['The Keep']}")
+    if p.get("keep_avg") is not None:
+        bits.append(f"avg {p['keep_avg']}")
+    if p.get("keep_n"):
+        bits.append(f"{p['keep_n']} boards")
+    if lists.get("The Keep"):
+        bits.append(f"BK {bk_value(lists['The Keep']):,}")
+    if lists.get("Redraft PPR"):
+        bits.append(f"PPR #{lists['Redraft PPR']}")
+    if lists.get("Redraft Standard"):
+        bits.append(f"STD #{lists['Redraft Standard']}")
+    if lists.get("2026 Rookies"):
+        bits.append(f"Rookie #{lists['2026 Rookies']}")
+    return " · ".join(bits)
 
 
 def ff_rank_cards(p):
@@ -827,8 +846,7 @@ def ff_boards_table(p):
     return (
         '<section class="panel">'
         '<p class="kicker">Every Board</p>'
-        f"<h3>Spread {lo}–{hi} · {len(rows)} Superflex sources</h3>"
-        '<p class="note">Unranked on a source is a blank — never a fake 999.</p>'
+        f"<h3>Spread {lo}–{hi} · {len(rows)} sources</h3>"
         '<div class="table-wrap"><table class="boards">'
         "<thead><tr><th>Source</th><th>Rank</th></tr></thead>"
         f"<tbody>{''.join(body)}</tbody></table></div></section>"
@@ -850,95 +868,6 @@ def ff_neighbors(profiles, p):
         f'{player_anchor(x["name"], 1)} (#{x["lists"]["The Keep"]})' for x in window
     )
     return f'<p class="note" style="margin-top:18px"><strong>On The Keep nearby</strong> — {links}</p>'
-
-
-def ff_extra_grafs(p, college, is_rook):
-    name = p["name"]
-    pos = p.get("pos") or ""
-    team = p.get("team") or "his club"
-    lists = p.get("lists") or {}
-    ranks = p.get("ranks") or {}
-    keep = lists.get("The Keep")
-    ppr = lists.get("Redraft PPR")
-    std = lists.get("Redraft Standard")
-    board = lists.get("The Board")
-    rook = lists.get("2026 Rookies")
-    grafs = []
-    if keep:
-        n = p.get("keep_n") or 0
-        avg = p.get("keep_avg")
-        grafs.append(
-            f"{name} is #{keep} on The Keep, Ball Keep's Superflex dynasty keystone. "
-            f"The number is the average of every board that ranked him"
-            + (f" ({avg} across {n} sources)" if avg is not None else "")
-            + f". He is a {pos} for {team}. BK Value on this slot is {bk_value(keep):,}, "
-            "the same decaying curve as baseball and PitchKeep: 12,000 at 1.01."
-        )
-    if keep and ppr:
-        if ppr + 20 < keep:
-            grafs.append(
-                f"Redraft PPR #{ppr} is hotter than Keep #{keep}. That is a 2026 win-now name "
-                "more than a 2029 chip — cash him in Superflex if a contender overpays, start him "
-                "in 1QB redraft without a speech."
-            )
-        elif keep + 20 < ppr:
-            grafs.append(
-                f"Keep #{keep} vs PPR #{ppr}: dynasty is buying the years redraft will not pay for. "
-                "Do not let a one-year board talk you into selling the age curve."
-            )
-        else:
-            grafs.append(
-                f"Keep #{keep} and PPR #{ppr} sit in the same neighborhood. Superflex and 1QB are "
-                "not fighting over him this week — the rank is the instruction."
-            )
-    elif keep and std and not ppr:
-        grafs.append(
-            f"Standard redraft has him #{std}. Catch-optional scoring still wants the {pos} production; "
-            "the Keep number is the five-year price."
-        )
-    if ranks and len(ranks) >= 2:
-        hi_src, hi = min(ranks.items(), key=lambda kv: kv[1])
-        lo_src, lo = max(ranks.items(), key=lambda kv: kv[1])
-        grafs.append(
-            f"The Superflex dump: {hi_src} has him {hi}, {lo_src} has him {lo}. "
-            f"Spread {hi}–{lo} on {len(ranks)} boards. Unranked sources are skipped — never a fake 999."
-        )
-    if is_rook and college:
-        rook_bit = f" The 2026 rookie board has him #{rook}." if rook else ""
-        grafs.append(
-            f"College tape is {college}.{rook_bit} Startup and rookie-draft language is not salary-cap "
-            "dollars — it is where he goes relative to Love / Mendoza / Tate and the rest of the class."
-        )
-    if board and keep and abs(board - keep) >= 15:
-        grafs.append(
-            f"The Board (long proprietary aggregate) has him #{board} against Keep #{keep}. "
-            "Short expert lists and the full 300 do not always agree; that gap is the argument."
-        )
-    if keep and keep <= 12:
-        grafs.append(
-            "How to use him: you do not trade this chip unless the calculator is plus-8% or you are "
-            "collecting a 1.01. Foundation capital. Start him, stack him, stop shopping him."
-        )
-    elif "Hot" in lists:
-        grafs.append(
-            "How to use him: the Hot board is a buy window. Pay the Keep number, not last month's slack."
-        )
-    elif "Cold" in lists:
-        grafs.append(
-            "How to use him: the Cold board is a sell window if a win-now owner still has last year's "
-            "price in the chat. Do not panic-drop him for a dart."
-        )
-    elif keep and keep >= 180:
-        grafs.append(
-            "How to use him: taxi squad / deep Superflex more than a starting chip. The 300 is long on "
-            "purpose — this is a name you know, not a name you build around."
-        )
-    elif keep:
-        grafs.append(
-            "How to use him: hold unless a contender overpays. The Keep is a five-year price, not a "
-            "weekly streaming nudge. Run the calculator before you send a first."
-        )
-    return grafs[:5]
 
 
 def render_player_pages(profiles):
@@ -963,29 +892,14 @@ def render_player_pages(profiles):
         is_rook = bool(med.get("is_rookie")) or "2026 Rookies" in p["lists"]
 
         auto_p, auto_m = auto_plus_minus(p)
-        plus = list(dict.fromkeys((copy.get("plus") or []) + auto_p))
-        minus = list(dict.fromkeys((copy.get("minus") or []) + auto_m))
-        # Keep unique-ish, cap
-        plus = plus[:6]
-        minus = minus[:6]
-
+        plus = list(dict.fromkeys((copy.get("plus") or []) + auto_p))[:5]
+        minus = list(dict.fromkeys((copy.get("minus") or []) + auto_m))[:5]
         chips = []
-        for label, key in (
-            ("The Keep", "The Keep"),
-            ("Board", "The Board"),
-            ("PPR", "Redraft PPR"),
-            ("STD", "Redraft Standard"),
-            ("Rookie", "2026 Rookies"),
-            ("Hot", "Hot"),
-            ("Cold", "Cold"),
-        ):
+        for label, key in (("Hot", "Hot"), ("Cold", "Cold")):
             if key in p["lists"]:
-                cls = " hot" if key == "Hot" else " cold" if key == "Cold" else ""
+                cls = " hot" if key == "Hot" else " cold"
                 chips.append(f'<span class="chip{cls}">{esc(label)} #{p["lists"][key]}</span>')
-        if p.get("age"):
-            chips.append(f'<span class="chip">Age {esc(p["age"])}</span>')
-        if college and is_rook:
-            chips.append(f'<span class="chip">{esc(college)}</span>')
+        chip_html = f'<div class="chips">{"".join(chips)}</div>' if chips else ""
 
         photo = ""
         if img:
@@ -993,53 +907,17 @@ def render_player_pages(profiles):
         else:
             photo = f'<img src="{asset("img/logo.jpg", 1)}" alt="" />'
 
-        rank_bits = ""
-        if p.get("ranks"):
-            bits = "".join(
-                f"<div><small>{esc(s)}</small> {v}</div>"
-                for s, v in sorted(p["ranks"].items(), key=lambda kv: kv[1])[:6]
-            )
-            rank_bits = f'<div class="note" style="margin-top:10px"><strong>Superflex boards</strong>{bits}</div>'
-
-        plus_li = "".join(f"<li>{esc(x)}</li>" for x in plus) or "<li>See the boards this player appears on.</li>"
-        minus_li = "".join(f"<li>{esc(x)}</li>" for x in minus) or "<li>No loud sell notes on our tape — the rank is the comment.</li>"
-        grafs = copy.get("grafs") or [
-            f"{p['name']} is on the Ball Keep desk because The Keep, a redraft board, the rookie sheet, or Hot/Cold has him. The plus/minus above aggregates those list comments.",
-            "Refresh this page with The Keep. Film and ranks move; the format split between Superflex dynasty and 1QB redraft does not.",
-        ]
-        grafs = list(grafs) + ff_extra_grafs(p, college, is_rook)
-        # Keep the custom take first, then the extra file detail, without repeating the opener.
-        seen = set()
-        deduped = []
-        for g in grafs:
-            key = g[:80]
-            if key in seen:
-                continue
-            seen.add(key)
-            deduped.append(g)
-        analysis = "".join(f"<p>{esc(g)}</p>" for g in deduped)
-
         video = ""
         if yt:
             kind = "college" if is_rook else "2025 season"
             video = f"""
     <p class="kicker" style="margin-top:22px">Tape · {esc(kind)}</p>
     <h3>{esc(yt_title)}</h3>
-    <p class="note">Best available public clip of a 2025 {"college" if is_rook else "NFL"} play. Not affiliated with the NFL, NCAA, or the posting channel.</p>
     <div class="video-wrap">
       <iframe src="https://www.youtube-nocookie.com/embed/{esc(yt)}" title="{esc(yt_title)}"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen loading="lazy"></iframe>
     </div>"""
-
-        same_pos = [x for x in profiles if x["pos"] == p["pos"] and x["key"] != p["key"]][:6]
-        related = ""
-        if same_pos:
-            related = (
-                '<p class="kicker" style="margin-top:22px">Same Position on This Hub</p><p>'
-                + " · ".join(player_anchor(x["name"], 1) for x in same_pos)
-                + "</p>"
-            )
 
         body = f"""
     <p class="kicker">Player File · {esc(p["pos"])} {esc(p["team"])}</p>
@@ -1047,26 +925,17 @@ def render_player_pages(profiles):
       {photo}
       <div>
         <h2>{esc(p["name"])}</h2>
-        <p class="note">{esc(p["pos"])} · {esc(p["team"])}{" · " + esc(str(p["age"])) if p.get("age") else ""}{" · " + esc(college) if college and is_rook else ""}</p>
-        <div class="chips">{''.join(chips)}</div>
-        {rank_bits}
+        <p class="note">{esc(p["pos"])} · {esc(p["team"])}{" · " + esc(str(p["age"])) if p.get("age") else ""}{" · " + esc(college) if college else ""}</p>
+        {chip_html}
       </div>
     </div>
     {ff_facts(p, college, is_rook)}
     {ff_rank_cards(p)}
-    <div class="plusminus">
-      <div class="pm plus"><h3>Plus</h3><ul>{plus_li}</ul></div>
-      <div class="pm minus"><h3>Minus</h3><ul>{minus_li}</ul></div>
-    </div>
-    <section class="panel analysis">
-      <p class="kicker">Ball Keep Take</p>
-      {analysis}
-    </section>
+    {plusminus_html(plus, minus)}
     {ff_boards_table(p)}
     {video}
-    {related}
     {ff_neighbors(profiles, p)}
-    <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../recent-trades.html?q={esc(p["name"])}">Recent deals</a> · <a href="../hot-n-cold.html">Hot 'n' Cold</a></p>
+    <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../recent-trades.html?q={esc(p["name"])}">Recent deals</a></p>
     """
         write(f"players/{p['slug']}.html", page(p["name"], f"players/{p['slug']}.html", body, depth=1))
 
@@ -1081,7 +950,7 @@ def render_player_pages(profiles):
     hub = f"""
     <p class="kicker">Depth Chart · {UPDATED}</p>
     <h2>Player Pages</h2>
-    <p class="note">Every name in The Keep top 300, plus redraft top 50, the 2026 rookie sheet, and Hot 'n' Cold. Each file has the rank cards, every Superflex board, a longer take on the dynasty vs redraft split, plus/minus, and a 2025 NFL play when we have the tape — or college tape for 2026 draftees.</p>
+    <p class="note">The Keep top 300, redraft top 50, 2026 rookies, and Hot 'n' Cold. Ranks, board dump, tape. Filter by position.</p>
     <p class="note">Position</p>
     <div class="filters" id="hub-pos"><button type="button" class="active" data-pos="all">All</button>
       <button type="button" data-pos="QB">QB</button>
@@ -1749,7 +1618,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
             "keep_n": p.get("keep_n"),
             "plus": copy.get("plus") or [],
             "minus": copy.get("minus") or [],
-            "grafs": copy.get("grafs") or [],
+            "grafs": copy.get("grafs") or ([ff_stat_line(p)] if ff_stat_line(p) else []),
             "image": med.get("image") or "",
             "youtube_id": med.get("youtube_id") or "",
             "youtube_title": med.get("youtube_title") or "",
