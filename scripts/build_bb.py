@@ -5,6 +5,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import unicodedata
 from datetime import date
 from pathlib import Path
 
@@ -25,7 +26,9 @@ def esc(s):
 
 
 def slugify(name: str) -> str:
-    s = re.sub(r"[^a-z0-9]+", "-", (name or "").lower())
+    s = unicodedata.normalize("NFKD", name or "")
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = re.sub(r"[^a-z0-9]+", "-", s.lower())
     return s.strip("-")
 
 

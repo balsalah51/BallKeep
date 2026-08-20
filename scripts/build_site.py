@@ -497,7 +497,10 @@ PLAYER_PAGES = {}  # key -> slug
 
 
 def slugify(name: str) -> str:
-    s = re.sub(r"[^a-z0-9]+", "-", norm_name(name))
+    import unicodedata
+    s = unicodedata.normalize("NFKD", norm_name(name))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = re.sub(r"[^a-z0-9]+", "-", s)
     return s.strip("-")
 
 

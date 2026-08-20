@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def bb_norm(name: str) -> str:
-    n = (name or "").lower()
+    n = clean_name(name or "").lower()
     n = re.sub(r"[\u3131-\u318E\uAC00-\uD7A3\u3040-\u30ff\u4e00-\u9fff]+", "", n)
     n = n.replace(".", " ").replace("'", "").replace("’", "")
     n = re.sub(r"\b(jr|sr|iii|ii|iv)\b", "", n)
@@ -79,7 +79,7 @@ def build_meta(rg, tdg):
         pos = r.get("pos") or ""
         meta[k] = {
             "key": k,
-            "name": r["name"],
+            "name": clean_name(r["name"]),
             "pos": pos.split("/")[0] if pos else "",
             "pos_full": pos,
             "age": _age(r.get("age")),
@@ -93,7 +93,7 @@ def build_meta(rg, tdg):
         if k not in meta:
             meta[k] = {
                 "key": k,
-                "name": r["name"],
+                "name": clean_name(r["name"]),
                 "pos": pos.split("/")[0] if pos else "",
                 "pos_full": pos,
                 "age": _age(r.get("age")),
@@ -110,13 +110,19 @@ def build_meta(rg, tdg):
             if not meta[k]["age"]:
                 meta[k]["age"] = _age(r.get("age"))
             # Prefer TDG display name (cleaner, no CJK leftovers)
-            if r["name"] and len(r["name"]) <= len(meta[k]["name"]):
-                meta[k]["name"] = r["name"]
+            if r["name"] and len(clean_name(r["name"])) <= len(meta[k]["name"]):
+                meta[k]["name"] = clean_name(r["name"])
     # Two-way
     if "shohei ohtani" in meta:
         meta["shohei ohtani"]["group"] = "UT"
         meta["shohei ohtani"]["pos"] = "DH/SP"
     return meta
+
+
+def clean_name(name: str) -> str:
+    n = re.sub(r"\s*\(([A-Z]{2,4}|was|lad)\)\s*$", "", name or "", flags=re.I)
+    n = re.sub(r"\s+", " ", n).strip()
+    return n
 
 
 def _age(v):
