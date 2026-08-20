@@ -540,7 +540,7 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
                     "<li class=\"source-row\">"
                     f'<a href="{esc(src.get("url") or "#")}" rel="noopener noreferrer">{esc(src.get("title") or pub or "Source")}</a>'
                     f'<span class="news-meta">{esc(pub)}{" · " + esc(when) if when else ""}</span>'
-                    f'{f"<p class=\\"note\\">{esc(snip)}</p>" if snip else ""}'
+                    f'{f"<p class=\"note\">{esc(snip)}</p>" if snip else ""}'
                     "</li>"
                 )
             blocks.append(f"<h3>{esc(heading)}</h3><ul class=\"source-list\">{''.join(lis)}</ul>")
