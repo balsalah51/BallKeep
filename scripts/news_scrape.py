@@ -10,8 +10,7 @@ Efficiency:
   5. Hash every item; skip URLs already in data/news/state.json.
   6. Cluster leftover items into stories and merge into the existing sport JSON.
 
-Football is published to the site. Baseball uses the same pipeline but is held
-from the public nav until PUBLISH_BASEBALL_NEWS is flipped in build_site.py.
+Football publishes at /news.html. Baseball publishes on BaseBallKeep at /bb/news.html.
 """
 from __future__ import annotations
 
@@ -43,6 +42,7 @@ from news_algo import (  # noqa: E402
     prune_seen,
     prune_stories,
     publisher_from_url,
+    rematch_stories,
     source_kind,
     split_google_title,
     strip_tags,
@@ -225,12 +225,37 @@ def save_json(path: Path, payload) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
 
 
-def load_roster() -> list[dict]:
-    path = ROOT / "data" / "player_roster.json"
+def slugify_name(name: str) -> str:
+    s = re.sub(r"[^a-z0-9]+", "-", (name or "").lower())
+    return s.strip("-")
+
+
+def load_roster(sport: str) -> list[dict]:
+    if sport == "football":
+        path = ROOT / "data" / "player_roster.json"
+        if not path.exists():
+            return []
+        data = json.loads(path.read_text())
+        return data if isinstance(data, list) else []
+    path = ROOT / "data" / "bb-keep.json"
     if not path.exists():
         return []
-    data = json.loads(path.read_text())
-    return data if isinstance(data, list) else []
+    try:
+        data = json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return []
+    rows = []
+    for r in data.get("keep") or []:
+        name = r.get("name") or ""
+        rows.append({
+            "key": r.get("key") or "",
+            "name": name,
+            "slug": slugify_name(name),
+            "pos": r.get("pos") or "",
+            "team": r.get("team") or "",
+            "lists": {"The Keep": r.get("bk")},
+        })
+    return rows
 
 
 def enrich_item(raw: dict, index: dict, sport: str) -> dict:
@@ -262,7 +287,7 @@ def collect_sport(
     now: datetime | None = None,
 ) -> list[dict]:
     now = now or utcnow()
-    index = build_player_index(roster if sport == "football" else [])
+    index = build_player_index(roster)
     seen = state.setdefault("seen", {}).setdefault(sport, {})
     feeds = FOOTBALL_FEEDS if sport == "football" else BASEBALL_FEEDS
     topics = FOOTBALL_TOPICS if sport == "football" else BASEBALL_TOPICS
@@ -276,10 +301,12 @@ def collect_sport(
         jobs.append((f"x:{q}", google_news_url(q)))
     for q in vq:
         jobs.append((f"video:{q}", google_news_url(q)))
-    if sport == "football":
-        for p in player_query_slice(roster, now, size=8):
+    for p in player_query_slice(roster, now, size=8):
+        if sport == "football":
             q = f'"{p["name"]}" NFL (injury OR roster OR coach OR IR OR practice)'
-            jobs.append((f"player:{p['name']}", google_news_url(q)))
+        else:
+            q = f'"{p["name"]}" MLB (injury OR IL OR DFA OR roster OR trade)'
+        jobs.append((f"player:{p['name']}", google_news_url(q)))
 
     fresh = []
     for i, (label, url) in enumerate(jobs):
@@ -342,14 +369,15 @@ def fold_into_stories(sport: str, fresh: list[dict], previous: list[dict]) -> li
 def run(sport: str, fetch: Fetcher = default_fetch, sleep_s: float = 0.35) -> dict:
     NEWS_DIR.mkdir(parents=True, exist_ok=True)
     state = load_json(STATE_PATH, {"seen": {}, "runs": {}})
-    roster = load_roster() if sport == "football" else []
+    roster = load_roster(sport)
     dest = NEWS_DIR / f"{sport}.json"
     prev_doc = load_json(dest, {"sport": sport, "updated": "", "stories": []})
-    previous = prev_doc.get("stories") or []
+    index = build_player_index(roster)
+    previous = rematch_stories(prev_doc.get("stories") or [], index)
 
     print(f"BK News scrape: {sport}")
     fresh = collect_sport(sport, roster, state, fetch, sleep_s=sleep_s)
-    stories = fold_into_stories(sport, fresh, previous)
+    stories = rematch_stories(fold_into_stories(sport, fresh, previous), index)
     doc = {
         "sport": sport,
         "updated": iso(utcnow()),

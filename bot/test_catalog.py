@@ -47,7 +47,25 @@ def main():
     assert all(any("Smith-Njigba" in n or "Jaxon" in n for n in d["names"]) for d in jsn_deals)
     assert cat.deals_for("sun god") or cat.deals_for("st brown")
     assert len(cat.deals_for("")) >= 20
-    print("ok", cat.updated, "players", len(cat.players), "keep", len(cat.raw["keep"]))
+    assert len(cat.raw["keep"]) == 300
+    bb = cat.raw.get("bb_keep") or []
+    assert len(bb) == 300, f"bb keep {len(bb)}"
+    assert cat.one("ohtani", sport="baseball")["name"] == "Shohei Ohtani"
+    assert cat.one("caminero", sport="baseball")["name"] == "Junior Caminero"
+    assert cat.one("pca", sport="baseball")["name"].startswith("Pete Crow")
+    assert len(cat.raw.get("bb_pitchers") or []) == 100
+    assert len(cat.raw.get("bb_saves") or []) == 100
+    assert len(cat.raw.get("bb_svh") or []) == 100
+    assert len(cat.raw.get("bb_lineup") or []) == 300
+    assert len(cat.raw.get("bb_redraft") or []) == 300
+    assert len(cat.raw.get("bb_waivers_dynasty") or []) == 15
+    assert len(cat.raw.get("bb_waivers_redraft") or []) == 50
+    assert cat.raw.get("news"), "expected football BK News in the catalog"
+    tbb = cat.trade("bbkeep", "Shohei Ohtani", "Junior Caminero")
+    assert tbb["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
+    assert tbb["total_a"] and tbb["total_b"]
+    assert not tbb["missing"], tbb["missing"]
+    print("ok", cat.updated, "players", len(cat.players), "keep", len(cat.raw["keep"]), "bb", len(bb))
     print("trade", t2["label"], t2["total_a"], "vs", t2["total_b"])
     print("norm jsn", norm("JSN"))
     print("picks", len(cat.raw["picks"]), "nfl", len(cat.raw["nfl"]), "mlb", len(cat.raw["mlb"]))

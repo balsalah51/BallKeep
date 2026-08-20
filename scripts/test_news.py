@@ -16,6 +16,7 @@ from news_algo import (  # noqa: E402
     merge_story,
     normalize_title,
     player_query_slice,
+    rematch_stories,
     source_kind,
     split_google_title,
     story_slug,
@@ -45,6 +46,8 @@ def test_categorize():
     assert categorize("Jets waived a running back and signed a veteran") == "roster"
     assert categorize("Sean Payton told reporters the scheme is changing") == "coach"
     assert categorize("Bills acquired a wideout in a trade") == "trade"
+    assert categorize("Aaron Judge placed on the 10-day IL with an elbow injury") == "injury"
+    assert categorize("Red Sox DFA a reliever and called up a prospect") == "roster"
 
 
 def test_match_full_name_not_ambiguous_brown():
@@ -203,6 +206,24 @@ def test_jaccard_and_slug():
     slug = story_slug("Christian McCaffrey calf strain", "injury")
     assert slug.startswith("christian-mccaffrey")
     assert normalize_title("Hello — World") == "hello world"
+
+
+def test_rematch_fills_baseball_players():
+    roster = [{
+        "key": "aaron judge", "name": "Aaron Judge", "slug": "aaron-judge",
+        "pos": "OF", "team": "NYY", "lists": {"The Keep": 6},
+    }]
+    idx = build_player_index(roster)
+    stories = [{
+        "headline": "Aaron Judge exits with an elbow injury",
+        "blurb": "",
+        "summary": "",
+        "sources": [],
+        "players": [],
+    }]
+    out = rematch_stories(stories, idx)
+    assert out[0]["players"][0]["key"] == "aaron judge"
+    assert out[0]["players"][0]["slug"] == "aaron-judge"
 
 
 def main():

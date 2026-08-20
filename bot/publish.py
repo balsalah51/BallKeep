@@ -10,7 +10,7 @@ from catalog import Catalog
 CATEGORY = "BALL KEEP DESK"
 CHANNELS = [
     ("desk", "how to search the desk and what BK Value means"),
-    ("the-keep", "superflex dynasty top 100"),
+    ("the-keep", "superflex dynasty top 300"),
     ("the-board", "long proprietary aggregate"),
     ("redraft-ppr", "2026 full-PPR board"),
     ("redraft-std", "2026 standard board"),
@@ -22,7 +22,13 @@ CHANNELS = [
     ("nfl-slate", "2026 nfl schedule, every week"),
     ("mlb-slate", "september baseball, every club"),
     ("sources", "the ten superflex boards inside the keep"),
-    ("player-files", "every player page, plus/minus, and ranks"),
+    ("player-files", "every football player page, plus/minus, and ranks"),
+    ("bb-keep", "baseball dynasty top 300"),
+    ("bb-lineup", "dynasty hitters only"),
+    ("bb-pitchers", "top 100 dynasty pitchers"),
+    ("bb-bullpen", "saves and sv+h relief lists"),
+    ("bb-redraft", "baseball rest-of-season board"),
+    ("bb-waivers", "dynasty stashes and the longer redraft wire"),
 ]
 
 
@@ -96,8 +102,8 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "**Slash commands (work in every channel)**\n"
         "`/player` `/search` `/top` `/rank` `/pos` `/trade` `/deals` `/value` `/picks` `/formula` "
         "`/video` `/hot` `/cold` `/hottake` `/rookies` `/compare` `/keep-or-cut` `/start` "
-        "`/quiz` `/nfl` `/mlb` `/random` `/stack` `/desk`\n\n"
-        "Try: `/player Josh Allen` · `/trade Superflex Allen, 2027 Mid 1st vs Bijan, Chase` · "
+        "`/quiz` `/nfl` `/mlb` `/random` `/stack` `/desk` `/bbplayer` `/bbkeep` `/bbtrade` `/bbwire`\n\n"
+        "Try: `/player Josh Allen` · `/bbplayer Ohtani` · `/trade Superflex Allen, 2027 Mid 1st vs Bijan, Chase` · "
         "`/video Drake Maye` · `who is JSN` · `trade Allen for Bijan`"
     )
     await note("Desk intro posted.")
@@ -105,10 +111,10 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-keep"])
     await _post_list(
         channels["the-keep"],
-        "The Keep — Superflex Dynasty Top 100",
+        "The Keep — Superflex Dynasty Top 300",
         cat.raw["keep"],
         cat,
-        "Keystone board. Average of 10 Superflex sources.",
+        "Keystone board. Average of 10 Superflex sources. Top 300.",
     )
     await note("The Keep posted.")
 
@@ -228,13 +234,14 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "Same boards, same order, same numbers as ballkeep.com."
     )
 
-    files = channels["player-files"]
-    await _wipe(files, limit=300)
-    await files.send(
-        f"**Player files** · {len(cat.players)} names from the top-50 union, rookies, and Hot/Cold.\n"
-        "Each message is a searchable file. `/player` is faster if you already know the name."
+    files = [p for p in cat.players if p.get("sport") != "baseball"]
+    await _wipe(files_ch := channels["player-files"], limit=400)
+    await files_ch.send(
+        f"**Player files** · {len(files)} football names from The Keep 300, redraft, rookies, and Hot/Cold.\n"
+        "Each message is a searchable file. `/player` is faster if you already know the name. "
+        "Baseball files live on ballkeep.com/bb and `/bbplayer`."
     )
-    for p in cat.players:
+    for p in files:
         lists = p.get("lists") or {}
         chips = " · ".join(f"{k} #{v}" for k, v in lists.items())
         plus = "; ".join(p.get("plus") or [])[:400]
@@ -249,7 +256,40 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
             f"{graf}\n"
             f"Tape: {yt}"
         )
-        await files.send(msg[:1900])
+        await files_ch.send(msg[:1900])
         await asyncio.sleep(1.05)
-    await note("Player files posted. Desk is live.")
+
+    await _wipe(channels["bb-keep"])
+    await _post_list(
+        channels["bb-keep"],
+        "BaseBallKeep — The Keep (dynasty 300)",
+        cat.raw.get("bb_keep") or [],
+        cat,
+        "23-board baseball aggregate. Navy desk at https://ballkeep.com/bb/the-keep.html",
+    )
+    await _wipe(channels["bb-lineup"])
+    await _post_list(channels["bb-lineup"], "The Lineup — dynasty hitters", cat.raw.get("bb_lineup") or [], cat)
+    await _wipe(channels["bb-pitchers"])
+    await _post_list(channels["bb-pitchers"], "BK's Pitchers — top 100", cat.raw.get("bb_pitchers") or [], cat)
+    await _wipe(channels["bb-bullpen"])
+    await channels["bb-bullpen"].send("**BK's Bullpen** · Saves first, then SV+H. Different sport.")
+    await _post_list(channels["bb-bullpen"], "Saves", cat.raw.get("bb_saves") or [], cat)
+    await _post_list(channels["bb-bullpen"], "Saves + Holds", cat.raw.get("bb_svh") or [], cat)
+    await _wipe(channels["bb-redraft"])
+    await _post_list(channels["bb-redraft"], "Baseball redraft ROS", cat.raw.get("bb_redraft") or [], cat)
+    await _wipe(channels["bb-waivers"])
+    dyn = "\n".join(
+        f"**P{x['pri']}. {x['name']}** ({x.get('pos')} {x.get('team')}) — {x.get('why')}"
+        for x in (cat.raw.get("bb_waivers_dynasty") or [])
+    )
+    await channels["bb-waivers"].send(f"**Dynasty wire** (short on purpose)\n{dyn[:1900]}")
+    for i, chunk in enumerate(_chunks(cat.raw.get("bb_waivers_redraft") or [], 12)):
+        body = "\n".join(
+            f"**P{x['pri']}. {x['name']}** ({x.get('pos')} {x.get('team')}) — {x.get('why')}"
+            for x in chunk
+        )
+        title = "**Redraft wire** (longer, higher priority)" if i == 0 else "**Redraft wire** (cont.)"
+        await channels["bb-waivers"].send(f"{title}\n{body[:1900]}")
+        await asyncio.sleep(1.05)
+    await note("BaseBallKeep boards posted. Desk is live.")
     return channels

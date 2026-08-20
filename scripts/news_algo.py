@@ -2,16 +2,20 @@
 
 The scrape job (news_scrape.py) pulls cheap RSS + a rotating slice of
 player Google News queries every hour. This module turns those raw items
-into clustered stories with player-page links. Football and baseball share
-the same pipeline; publishing baseball to the site is a separate flag.
+into clustered stories with player-page links. Football publishes at
+/news.html; baseball publishes on BaseBallKeep at /bb/news.html.
 """
 from __future__ import annotations
 
 import hashlib
 import html
+import json
 import re
 from datetime import datetime, timezone
+from pathlib import Path
 from urllib.parse import urlparse
+
+ROOT = Path(__file__).resolve().parents[1]
 
 STOP = {
     "a", "an", "the", "and", "or", "to", "of", "in", "on", "for", "at", "by",
@@ -28,19 +32,22 @@ INJURY_RE = re.compile(
     r"\b(injur(?:y|ies|ed)|questionable|doubtful|out for|dnp|limited|"
     r"hamstring|ankle|knee|concussion|calf|groin|shoulder|wrist|acl|"
     r"achilles|protocol|illness|rest day|inactive|active/inactive|"
-    r"injured reserve|\bir\b|pup|designated to return)\b",
+    r"injured reserve|\bir\b|pup|designated to return|"
+    r"injured list|\bil\b|10-day|15-day|60-day)\b",
     re.I,
 )
 ROSTER_RE = re.compile(
     r"\b(waiv(?:e|ed|es)|cut|released|signed|claimed|activated|roster|"
     r"practice squad|elevat(?:e|ed)|designated|returned to|added to|"
-    r"dropped|re-sign(?:ed)?|contract|extension)\b",
+    r"dropped|re-sign(?:ed)?|contract|extension|"
+    r"dfa|designated for assignment|optioned|called up|recalled|"
+    r"outrighted|sent down)\b",
     re.I,
 )
 COACH_RE = re.compile(
     r"\b(coach|head coach|\bhc\b|\boc\b|\bdc\b|presser|press conference|"
     r"told reporters|said (monday|tuesday|wednesday|thursday|friday)|"
-    r"scheme|play-caller|coordinator)\b",
+    r"scheme|play-caller|coordinator|manager|skipper)\b",
     re.I,
 )
 TRADE_RE = re.compile(r"\b(trade[ds]?|dealt|acquired|sent to|in exchange)\b", re.I)
@@ -169,6 +176,62 @@ CATEGORY_LABEL = {
     "practice": "Practice",
     "wire": "Wire",
 }
+
+
+def load_news_stories(sport: str, root: Path | None = None) -> list:
+    path = (root or ROOT) / "data" / "news" / f"{sport}.json"
+    if not path.exists():
+        return []
+    try:
+        doc = json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return []
+    stories = []
+    for s in doc.get("stories") or []:
+        s = dict(s)
+        for k in ("headline", "blurb", "summary"):
+            s[k] = html.unescape(s.get(k) or "")
+        for src in s.get("sources") or []:
+            src["title"] = html.unescape(src.get("title") or "")
+            src["snippet"] = html.unescape(src.get("snippet") or "")
+        stories.append(s)
+    cleaned = []
+    for s in stories:
+        blob = f"{s.get('headline')} {s.get('blurb')}".lower()
+        if sport == "football" and re.search(r"\b(mlb|baseball)\b", blob) and not re.search(r"\bnfl\b", blob):
+            continue
+        if sport == "baseball" and "nfl" in blob and "mlb" not in blob:
+            continue
+        cleaned.append(s)
+    return cleaned
+
+
+def news_when(iso_s: str) -> str:
+    dt = parse_dt(iso_s)
+    if not dt:
+        return iso_s or ""
+    return dt.strftime("%b %d, %Y · %H:%M UTC")
+
+
+def rematch_stories(stories: list[dict], index: dict) -> list[dict]:
+    """Fill player links on existing clusters once a Keep roster is available."""
+    if not index or not index.get("names"):
+        return stories
+    out = []
+    for s in stories:
+        s = dict(s)
+        blob_parts = [s.get("headline") or "", s.get("blurb") or "", s.get("summary") or ""]
+        for src in s.get("sources") or []:
+            blob_parts.append(src.get("title") or "")
+            blob_parts.append(src.get("snippet") or "")
+        hits = match_players(" ".join(blob_parts), index)
+        if hits:
+            by_key = {p.get("key"): p for p in (s.get("players") or []) if p.get("key")}
+            for h in hits:
+                by_key[h["key"]] = h
+            s["players"] = list(by_key.values())
+        out.append(s)
+    return out
 
 
 def source_kind(url: str, title: str = "", publisher: str = "") -> str:
@@ -532,9 +595,12 @@ def is_publishable(story: dict) -> bool:
         return False
     if re.search(r"call/?text\s*->", title, re.I):
         return False
+    blob = f"{title} {story.get('blurb') or ''}".lower()
     if story.get("sport") == "football":
-        blob = f"{title} {story.get('blurb') or ''}".lower()
         if re.search(r"\b(mlb|baseball)\b", blob) and not re.search(r"\bnfl\b", blob):
+            return False
+    if story.get("sport") == "baseball":
+        if "nfl" in blob and "mlb" not in blob:
             return False
     if "article" in kinds or "video" in kinds:
         return True

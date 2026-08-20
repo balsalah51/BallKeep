@@ -21,13 +21,10 @@ from extra_ranks import (  # noqa: E402
     ROTOWIRE_SF,
     as_ranks,
 )
-from news_algo import CATEGORY_LABEL, parse_dt  # noqa: E402
+from news_algo import CATEGORY_LABEL, load_news_stories, news_when  # noqa: E402
 from player_copy import get_copy  # noqa: E402
 from recent_trades import enrich_deals  # noqa: E402
-
-# Baseball uses the same scrape pipeline (data/news/baseball.json) but stays
-# off the public nav until the desk is ready.
-PUBLISH_BASEBALL_NEWS = False
+from build_bb import write_baseball_site  # noqa: E402
 
 
 def esc(s):
@@ -502,7 +499,10 @@ PLAYER_PAGES = {}  # key -> slug
 
 
 def slugify(name: str) -> str:
-    s = re.sub(r"[^a-z0-9]+", "-", norm_name(name))
+    import unicodedata
+    s = unicodedata.normalize("NFKD", norm_name(name))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = re.sub(r"[^a-z0-9]+", "-", s)
     return s.strip("-")
 
 
@@ -610,7 +610,10 @@ def page(title, path, body, extra_js="", depth=0):
       <nav>{''.join(links)}</nav>
     </header>
     {body}
-    <footer>© {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL or MLB.</footer>
+    <footer>
+      © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL or MLB.
+      <div><a class="sport-switch bb" href="{nav_href('bb/index.html', depth)}">BaseBallKeep</a></div>
+    </footer>
   </div>
   {extra_js}
 </body>
@@ -626,7 +629,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0):
     for r in rows:
         pos = r.get("pos") or ""
         body.append(
-            "<tr>"
+            f'<tr data-pos="{esc(pos)}">'
             f'<td class="rk">{r.get("bk","")}</td>'
             f"<td>{player_anchor(r['name'], depth)}</td>"
             f'<td><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
@@ -641,41 +644,6 @@ def write(path, html_doc):
     dest = ROOT / path.lstrip("/")
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(html_doc)
-
-
-def load_news_stories(sport: str) -> list:
-    path = ROOT / "data" / "news" / f"{sport}.json"
-    if not path.exists():
-        return []
-    try:
-        doc = json.loads(path.read_text())
-    except json.JSONDecodeError:
-        return []
-    stories = []
-    for s in doc.get("stories") or []:
-        s = dict(s)
-        for k in ("headline", "blurb", "summary"):
-            s[k] = html.unescape(s.get(k) or "")
-        for src in s.get("sources") or []:
-            src["title"] = html.unescape(src.get("title") or "")
-            src["snippet"] = html.unescape(src.get("snippet") or "")
-        stories.append(s)
-    if sport == "football":
-        stories = [
-            s for s in stories
-            if not (
-                re.search(r"\b(mlb|baseball)\b", f"{s.get('headline')} {s.get('blurb')}".lower())
-                and not re.search(r"\bnfl\b", f"{s.get('headline')} {s.get('blurb')}".lower())
-            )
-        ]
-    return stories
-
-
-def news_when(iso_s: str) -> str:
-    dt = parse_dt(iso_s)
-    if not dt:
-        return iso_s or ""
-    return dt.strftime("%b %d, %Y · %H:%M UTC")
 
 
 def news_player_href(player: dict, depth: int = 0) -> str | None:
@@ -722,7 +690,7 @@ def news_card(story: dict, depth: int = 0) -> str:
 
 
 def render_news_pages():
-    """Football BK News hub + story files. Baseball JSON is not published yet."""
+    """Football BK News hub + story files. Baseball lives on BaseBallKeep."""
     stories = load_news_stories("football")
     (ROOT / "news").mkdir(parents=True, exist_ok=True)
     keep = {f"{s['slug']}.html" for s in stories if s.get("slug")}
@@ -747,12 +715,6 @@ def render_news_pages():
         chips.append(f'<button type="button" data-cat="{esc(k)}"{cls}>{esc(lab)}</button>')
     filters = "".join(chips)
     updated = stories[0].get("updated") if stories else ""
-    hold = ""
-    if not PUBLISH_BASEBALL_NEWS:
-        hold = (
-            '<p class="note">Football first. The baseball (MLB) news desk is being scraped on a '
-            "separate hourly wire and will not publish here until that desk is ready.</p>"
-        )
     items_json = json.dumps([
         {
             "slug": s.get("slug"),
@@ -777,8 +739,7 @@ def render_news_pages():
     body = f"""
     <p class="kicker">BK News · Football · Hourly wire</p>
     <h2>BK News</h2>
-    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour.</p>
-    {hold}
+    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball BK News lives on <a href="bb/news.html">BaseBallKeep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{filters}</div>
     <div class="news-list" id="news-list">{cards}</div>
@@ -848,7 +809,7 @@ def render_news_pages():
 
 
 def collect_profiles(keep, board, ppr, std):
-    """Union of top 50 from every ranking list, plus all rookies and Hot/Cold."""
+    """Union of The Keep top 300, redraft top 50, rookies, and Hot/Cold."""
     players = OrderedDict()
 
     def add(name, pos, team, list_name, rank=None, extra=None, ranks=None, avg=None, n=None, age=None):
@@ -884,11 +845,11 @@ def collect_profiles(keep, board, ppr, std):
         if extra:
             p["notes"].append(extra)
 
-    for r in keep[:50]:
+    for r in keep[:300]:
         add(r["name"], r["pos"], r["team"], "The Keep", r["bk"],
             f"The Keep #{r['bk']} · average {r['avg']} across {r['n']} Superflex boards",
             ranks=r["ranks"], avg=r["avg"], n=r["n"], age=r.get("age"))
-    for r in board[:50]:
+    for r in board[:300]:
         add(r["name"], r["pos"], r["team"], "The Board", r["bk"],
             f"The Board #{r['bk']} on the long proprietary aggregate")
     for r in ppr[:50]:
@@ -915,8 +876,8 @@ def auto_plus_minus(p):
     lists = p["lists"]
     if "The Keep" in lists and lists["The Keep"] <= 15:
         plus.append(f"Superflex first-rounder on The Keep (#{lists['The Keep']}).")
-    if "The Keep" in lists and lists["The Keep"] >= 40:
-        minus.append(f"Keep #{lists['The Keep']} — still in the top 50, but the long-term case is thinner than the names above.")
+    if "The Keep" in lists and lists["The Keep"] >= 150:
+        minus.append(f"Keep #{lists['The Keep']} — still on the 300, but the long-term case is thinner than the names above.")
     if "Hot" in lists:
         plus.append(next((n for n in p["notes"] if n.startswith("Hot")), "On the BK Hot board as a buy."))
     if "Cold" in lists:
@@ -926,7 +887,7 @@ def auto_plus_minus(p):
     if len(lists) >= 4:
         plus.append("Shows up on four-plus Ball Keep lists — not a one-board meme.")
     if "The Keep" not in lists and ("Redraft PPR" in lists or "Redraft Standard" in lists):
-        minus.append("A 2026 redraft name more than a 2029 Keep name — missing The Keep top 50.")
+        minus.append("A 2026 redraft name more than a 2029 Keep name — missing The Keep top 300.")
     if p.get("age") not in ("", None):
         try:
             age = int(p["age"])
@@ -1020,7 +981,7 @@ def render_player_pages(profiles):
         plus_li = "".join(f"<li>{esc(x)}</li>" for x in plus) or "<li>See the boards this player appears on.</li>"
         minus_li = "".join(f"<li>{esc(x)}</li>" for x in minus) or "<li>No loud sell notes on our tape — the rank is the comment.</li>"
         grafs = copy.get("grafs") or [
-            f"{p['name']} is in the Ball Keep top 50 union because at least one of our boards has him there. The plus/minus above aggregates those list comments.",
+            f"{p['name']} is on the Ball Keep desk because The Keep, a redraft board, the rookie sheet, or Hot/Cold has him. The plus/minus above aggregates those list comments.",
             "Refresh this page with The Keep. Film and ranks move; the format split between Superflex dynasty and 1QB redraft does not.",
         ]
         analysis = "".join(f"<p>{esc(g)}</p>" for g in grafs)
@@ -1089,7 +1050,7 @@ def render_player_pages(profiles):
 
         thumb = asset(img, 1) if img else asset("img/logo.jpg", 1)
         cards.append(
-            f'<a class="tile player-card" href="{p["slug"]}.html">'
+            f'<a class="tile player-card" href="{p["slug"]}.html" data-pos="{esc(p.get("pos") or "")}">'
             f'<img src="{thumb}" alt="" />'
             f'<h3>{esc(p["name"])}</h3>'
             f'<p class="note">{esc(p["pos"])} {esc(p["team"])}</p></a>'
@@ -1098,16 +1059,35 @@ def render_player_pages(profiles):
     hub = f"""
     <p class="kicker">Depth Chart · {UPDATED}</p>
     <h2>Player Pages</h2>
-    <p class="note">Every name in the top 50 of The Keep, The Board, Redraft PPR, and Redraft Standard, plus the full 2026 rookie sheet and every Hot 'n' Cold name. Each file aggregates those list comments into plus/minus, adds a few paragraphs on the Superflex vs Redraft split, and embeds a 2025 NFL play — or the college tape if they are a 2026 draftee.</p>
+    <p class="note">Every name in The Keep top 300, plus redraft top 50, the 2026 rookie sheet, and Hot 'n' Cold. Each file aggregates list comments into plus/minus, adds a few paragraphs on the Superflex vs Redraft split, and embeds a 2025 NFL play when we have the tape — or college tape for 2026 draftees.</p>
+    <p class="note">Position</p>
+    <div class="filters" id="hub-pos"><button type="button" class="active" data-pos="all">All</button>
+      <button type="button" data-pos="QB">QB</button>
+      <button type="button" data-pos="RB">RB</button>
+      <button type="button" data-pos="WR">WR</button>
+      <button type="button" data-pos="TE">TE</button>
+    </div>
     <div class="player-grid">{''.join(cards)}</div>
     """
-    write("players/index.html", page("Players", "players/index.html", hub, depth=1))
+    hub_js = """<script>
+    const box = document.getElementById('hub-pos');
+    if (box) box.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      const p = b.dataset.pos;
+      document.querySelectorAll('.player-grid .player-card').forEach(card => {
+        card.style.display = (p === 'all' || card.dataset.pos === p) ? '' : 'none';
+      });
+    });
+    </script>"""
+    write("players/index.html", page("Players", "players/index.html", hub, hub_js, depth=1))
 
     urls = ["https://ballkeep.com/players/"] + [
         f"https://ballkeep.com/players/{p['slug']}.html" for p in profiles
     ]
     if missing_copy:
-        print("missing copy", len(missing_copy), missing_copy)
+        print("missing copy", len(missing_copy), "(generic plus/minus used)")
     return urls
 
 
@@ -1359,7 +1339,7 @@ def main():
     pfn = parse_pfn(ROOT / "data/pfn-dynasty.txt")
     nfl = parse_nfl_schedule(ROOT / "data/nfl-schedule.txt")
     board, sources = aggregate(pfn)
-    keep = board[:100]
+    keep = board[:300]
     ppr, std = redraft_lists()
     profiles = collect_profiles(keep, board, ppr, std)
     (ROOT / "data" / "player_roster.json").write_text(json.dumps(profiles, indent=2))
@@ -1377,7 +1357,7 @@ def main():
 
     # HOME
     tiles = [
-        ("the-keep.html", "The Keep", "Daily Superflex dynasty top 100. Our keystone board."),
+        ("the-keep.html", "The Keep", "Daily Superflex dynasty top 300. Our keystone board."),
         ("news.html", "BK News", "Hourly injury, roster, and coach tape. Click a story for the aggregate and the sources."),
         ("trade.html", "Trade Calculators", "Four calculators. Rank becomes BK Value. Add two sides."),
         ("recent-trades.html", "Recent Deals", "Type a name. See the Superflex packages he actually moved in."),
@@ -1386,7 +1366,7 @@ def main():
         ("rookies-2026.html", "2026 Rookies", "Drafted class consensus ranks and Superflex values."),
         ("hot-n-cold.html", "BK Hot 'n' Cold", "Buys and sells scraped from dynasty desks and film shows."),
         ("board.html", "The Board", "The long proprietary aggregate — every ranked name we pulled."),
-        ("players/index.html", "Player Pages", "Top-50 names from every board: plus/minus, tape, and a 2025 or college clip."),
+        ("players/index.html", "Player Pages", "Keep top 300: plus/minus, tape, and a 2025 or college clip."),
         ("nfl-schedule.html", "NFL Schedules", "2026 week-by-week slate and all 32 team pages."),
         ("mlb-schedule.html", "MLB Schedules", "September stretch run, filterable by club."),
         ("discord.html", "Discord", "The circular mark plus a bot that searches ranks, runs the calculator, drops tape, and can publish the whole site into a server."),
@@ -1417,7 +1397,7 @@ def main():
       <h2>Keep the guys who still matter in 2029.</h2>
       <p class="note"><strong>Fantasy Football</strong> is a one-year contest: you draft, you stream, you chase weekly points. <strong>Dynasty Football</strong> is a roster you keep. Young quarterbacks, incoming rookies, and contract years all change the price. Superflex (a second QB slot) makes passers first-round assets instead of round-eight afterthoughts.</p>
       <p class="note"><strong>Fantasy Baseball</strong> is the same split. Redraft/roto is this summer's counting stats. <strong>Dynasty Baseball</strong> prices the next five years — peak age, service time, and whether a 22-year-old shortstop is still a shortstop in 2030. ESPN's current dynasty formula weights 2027–2030 at 80% of value.</p>
-      <p class="note">Ball Keep aggregates public expert boards (FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN Karabell, Draft Sharks, RotoWire, plus X ranks from Brown / Erickson / Fitzmaurice) into one number, then turns that rank into BK Value for the trade calculators. We do not pretend a podcast hot take is a 300-player sheet. Sources sit at the bottom of each board.</p>
+      <p class="note">Ball Keep aggregates public expert boards (FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN Karabell, Draft Sharks, RotoWire, plus X ranks from Brown / Erickson / Fitzmaurice) into one number, then turns that rank into BK Value for the trade calculators. We do not pretend a podcast hot take is a 300-player sheet. Sources sit at the bottom of each board. Baseball lives in <a href="bb/index.html">BaseBallKeep</a> — navy, cream, and a 23-board Keep of its own.</p>
     </section>
     {latest_html}
     <div class="grid-3" style="margin-top:16px">
@@ -1432,11 +1412,30 @@ def main():
     keep_body = f"""
     <p class="kicker">Keystone · Superflex Dynasty</p>
     <h2>The Keep</h2>
-    <p class="note">Top 100 for Superflex dynasty leagues, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player. BK Value is that rank on a decaying curve (12,000 at 1.01). Per-source ranks used to live in this table; they now live in the source list at the bottom of the page so the board stays readable.</p>
+    <p class="note">Top 300 for Superflex dynasty leagues, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player. BK Value is that rank on a decaying curve (12,000 at 1.01). Filter by position. Per-source ranks live in the source list at the bottom so the board stays readable.</p>
+    <p class="note">Position</p>
+    <div class="filters" id="keep-pos"><button type="button" class="active" data-pos="all">All</button>
+      <button type="button" data-pos="QB">QB</button>
+      <button type="button" data-pos="RB">RB</button>
+      <button type="button" data-pos="WR">WR</button>
+      <button type="button" data-pos="TE">TE</button>
+    </div>
     <div class="panel">{rank_table(keep, ["Avg", "# Boards", "BK Value"], keep_extra)}</div>
     {sources_panel(KEEP_SOURCES)}
     """
-    write("the-keep.html", page("The Keep", "the-keep.html", keep_body))
+    keep_js = """<script>
+    const box = document.getElementById('keep-pos');
+    box.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      const p = b.dataset.pos;
+      document.querySelectorAll('tbody tr').forEach(tr => {
+        tr.style.display = (p === 'all' || tr.dataset.pos === p) ? '' : 'none';
+      });
+    });
+    </script>"""
+    write("the-keep.html", page("The Keep", "the-keep.html", keep_body, keep_js))
 
     # REDRAFT
     def ppr_extra(r):
@@ -1632,7 +1631,7 @@ def main():
     <section class="panel" style="margin-top:16px">
       <p class="kicker">Slash Commands</p>
       <h2>Talk to the desk.</h2>
-      <p class="note"><code>/player Josh Allen</code> pulls The Keep rank, BK Value, plus/minus, the 2025 clip, and the player page. <code>/trade</code> is the Superflex / 1QB / PPR / Standard calculator. <code>/deals JSN</code> pulls every recent package on the desk tape. <code>/video</code> drops the tape. <code>/quiz</code> hides a Keep rank behind a spoiler. <code>/publish</code> writes the whole site into Discord channels so native search works.</p>
+      <p class="note"><code>/player Josh Allen</code> pulls The Keep rank, BK Value, plus/minus, the 2025 clip, and the player page. <code>/trade</code> is the Superflex / 1QB / PPR / Standard calculator. <code>/deals JSN</code> pulls every recent package on the desk tape. <code>/bbplayer Ohtani</code> is the same file on the baseball desk. <code>/video</code> drops the tape. <code>/quiz</code> hides a Keep rank behind a spoiler. <code>/publish</code> writes the whole site into Discord channels so native search works.</p>
       <div class="grid" style="margin-top:14px">
         <article class="tile"><h3>/player</h3><p>Full file: ranks, value, plus/minus, tape, link.</p></article>
         <article class="tile"><h3>/trade</h3><p>Two sides. Same BK Value curve as the site.</p></article>
@@ -1642,7 +1641,8 @@ def main():
         <article class="tile"><h3>/top + /pos</h3><p>Leaderboards, or just the QBs / RBs / WRs / TEs.</p></article>
         <article class="tile"><h3>/quiz + /hottake</h3><p>Guess a Keep rank. Draw a random buy or sell.</p></article>
         <article class="tile"><h3>/start + /picks</h3><p>Redraft start/sit, plus every future-pick value.</p></article>
-        <article class="tile"><h3>/publish</h3><p>Admin: stamp Keep, Board, tape, NFL, MLB, and every player file into the server.</p></article>
+        <article class="tile"><h3>/bbplayer</h3><p>BaseBallKeep file: Keep 300, Lineup, Pitchers, redraft.</p></article>
+        <article class="tile"><h3>/bbkeep + /bbwire</h3><p>Diamond boards and the longer redraft waiver list.</p></article>
       </div>
     </section>
     """
@@ -1669,6 +1669,8 @@ def main():
         "https://ballkeep.com/mlb-schedule.html",
         "https://ballkeep.com/discord.html",
     ] + news_urls[1:] + player_urls
+    bb = write_baseball_site()
+    sitemap.extend(bb.get("urls") or [])
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1676,8 +1678,12 @@ def main():
         + "</urlset>\n"
     )
 
-    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals)
-    print(f"Keep {len(keep)} Board {len(board)} NFL games {len(nfl)} MLB {len(mlb_games)} Players {len(profiles)} News {len(news_urls) - 1} Catalog {cat.name}")
+    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb)
+    print(
+        f"Keep {len(keep)} Board {len(board)} NFL games {len(nfl)} MLB {len(mlb_games)} "
+        f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
+        f"BB News {bb.get('n_news', 0)} Catalog {cat.name}"
+    )
 
 
 def slim_row(r, extra=()):
@@ -1696,7 +1702,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -1727,6 +1733,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
             "youtube_channel": med.get("youtube_channel") or "",
             "college": med.get("college") or "",
             "is_rookie": bool(med.get("is_rookie")),
+            "sport": "football",
             "url": f"https://ballkeep.com/players/{p['slug']}.html",
         })
     news_pack = []
@@ -1767,6 +1774,35 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         "mlb": mlb_games,
         "news": news_pack,
     }
+    bb = bb or {}
+    catalog["bb_keep"] = [slim_row(r, ("age", "group")) for r in bb.get("keep") or []]
+    catalog["bb_lineup"] = [slim_row(r, ("age", "group")) for r in bb.get("lineup") or []]
+    catalog["bb_pitchers"] = [slim_row(r, ("age", "group")) for r in bb.get("pitchers") or []]
+    catalog["bb_saves"] = [slim_row(r) for r in bb.get("saves") or []]
+    catalog["bb_svh"] = [slim_row(r) for r in bb.get("svh") or []]
+    catalog["bb_redraft"] = [slim_row(r, ("age", "group")) for r in bb.get("redraft") or []]
+    catalog["bb_picks"] = bb.get("picks") or []
+    catalog["bb_players"] = bb.get("files") or []
+    catalog["bb_waivers_dynasty"] = bb.get("dynasty_waivers") or []
+    catalog["bb_waivers_redraft"] = bb.get("redraft_waivers") or []
+    catalog["bb_sources"] = bb.get("source_names") or []
+    bb_news = []
+    for s in bb.get("news") or []:
+        bb_news.append({
+            "headline": s.get("headline"),
+            "slug": s.get("slug"),
+            "blurb": s.get("blurb"),
+            "summary": s.get("summary"),
+            "category": s.get("category"),
+            "updated": s.get("updated"),
+            "url": f"https://ballkeep.com/bb/news/{s.get('slug')}.html",
+            "players": s.get("players") or [],
+            "sources": [
+                {"title": src.get("title"), "url": src.get("url"), "kind": src.get("kind"), "publisher": src.get("publisher")}
+                for src in (s.get("sources") or [])
+            ],
+        })
+    catalog["bb_news"] = bb_news
     dest = ROOT / "data/discord-catalog.json"
     dest.write_text(json.dumps(catalog, indent=2, default=str))
     return dest

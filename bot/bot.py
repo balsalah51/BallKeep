@@ -31,6 +31,7 @@ BLUE = 0x1E8FC2
 RED = 0xC8102E
 GREEN = 0x157A3A
 INK = 0x102033
+NAVY = 0x0B1F3A
 
 QUIPS = [
     "Keep the guys who still matter in 2029.",
@@ -44,6 +45,8 @@ QUIPS = [
     "Nicknames work. JSN, CMC, Sun God, BTJ, TLaw. You're welcome.",
     "The Keep is a 10-board average. One tweet is not a board.",
     "Publish the desk once. Search Discord forever.",
+    "BaseBallKeep is the other door. Navy, cream, 23 boards.",
+    "Saves and SV+H are different sports. Use the right bullpen page.",
 ]
 
 
@@ -76,16 +79,28 @@ desk = Desk()
 
 def player_embed(discord, p: dict):
     lists = p.get("lists") or {}
-    keep = lists.get("The Keep") or p.get("bk")
+    baseball = p.get("sport") == "baseball" or "BB Keep" in lists
+    keep = lists.get("BB Keep") if baseball else (lists.get("The Keep") or p.get("bk"))
     value = p.get("value") or (bk_value(keep) if keep else None)
-    color = {"QB": RED, "RB": GREEN, "WR": BLUE, "TE": 0xC9A227, "PICK": 0x888888}.get(p.get("pos"), INK)
+    if baseball:
+        color = NAVY
+    else:
+        color = {"QB": RED, "RB": GREEN, "WR": BLUE, "TE": 0xC9A227, "PICK": 0x888888}.get(p.get("pos"), INK)
     bits = [x for x in (p.get("pos") or "", p.get("team") or "", f"age {p['age']}" if p.get("age") else "", p.get("college") or "") if x]
     title = f"{p.get('name')} · {' · '.join(bits)}"
     desc = (p.get("grafs") or [random.choice(QUIPS)])[0][:400]
     emb = discord.Embed(title=title, description=desc, color=color, url=p.get("url") or "https://ballkeep.com")
-    if keep:
+    if baseball and keep:
+        emb.add_field(name="BB Keep", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK", inline=True)
+    elif keep:
         emb.add_field(name="The Keep", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK", inline=True)
-    if lists.get("The Board") or (p.get("bk") and not keep):
+    if lists.get("The Lineup"):
+        emb.add_field(name="The Lineup", value=f"#{lists['The Lineup']}", inline=True)
+    if lists.get("BK Pitchers"):
+        emb.add_field(name="Pitchers", value=f"#{lists['BK Pitchers']}", inline=True)
+    if lists.get("BB Redraft"):
+        emb.add_field(name="BB Redraft", value=f"#{lists['BB Redraft']}", inline=True)
+    if lists.get("The Board") or (p.get("bk") and not keep and not baseball):
         board_rk = lists.get("The Board") or p.get("bk")
         emb.add_field(name="The Board", value=f"#{board_rk}", inline=True)
     if lists.get("Redraft PPR"):
@@ -181,13 +196,37 @@ def build_bot():
         app_commands.Choice(name="Wide Receiver", value="WR"),
         app_commands.Choice(name="Tight End", value="TE"),
     ]
+    BB_BOARDS = [
+        app_commands.Choice(name="The Keep (overall dynasty 300)", value="bbkeep"),
+        app_commands.Choice(name="The Lineup (hitters)", value="lineup"),
+        app_commands.Choice(name="BK's Pitchers", value="pitchers"),
+        app_commands.Choice(name="Bullpen Saves", value="saves"),
+        app_commands.Choice(name="Bullpen SV+H", value="svh"),
+        app_commands.Choice(name="Redraft ROS", value="bbredraft"),
+    ]
+    BB_MODES = [
+        app_commands.Choice(name="Dynasty Overall", value="bbkeep"),
+        app_commands.Choice(name="Dynasty Lineup", value="bblineup"),
+        app_commands.Choice(name="Dynasty Pitchers", value="bbpitchers"),
+        app_commands.Choice(name="Redraft", value="bbredraft"),
+        app_commands.Choice(name="Bullpen Saves", value="bbsaves"),
+        app_commands.Choice(name="Bullpen SV+H", value="bbsvh"),
+    ]
 
     async def ac_player(interaction: discord.Interaction, current: str):
         q = current.strip() if current else ""
         if len(q) < 1:
             rows = desk.cat.raw.get("keep") or []
             return [app_commands.Choice(name=r["name"], value=r["name"]) for r in rows[:20]]
-        hits = desk.cat.find(q, limit=20)
+        hits = desk.cat.find(q, limit=20, sport="football")
+        return [app_commands.Choice(name=h["name"], value=h["name"]) for h in hits if h.get("name")]
+
+    async def ac_bb(interaction: discord.Interaction, current: str):
+        q = current.strip() if current else ""
+        if len(q) < 1:
+            rows = desk.cat.raw.get("bb_keep") or []
+            return [app_commands.Choice(name=r["name"], value=r["name"]) for r in rows[:20]]
+        hits = desk.cat.find(q, limit=20, sport="baseball")
         return [app_commands.Choice(name=h["name"], value=h["name"]) for h in hits if h.get("name")]
 
     @bot.event
@@ -226,6 +265,11 @@ def build_bot():
             value="`/video` `/hot` `/cold` `/hottake` `/rookies` `/keep-or-cut` `/start` `/nfl` `/mlb` `/publish`",
             inline=False,
         )
+        emb.add_field(
+            name="BaseBallKeep",
+            value="`/bbplayer Ohtani` `/bbkeep` `/bbtrade` `/bbwire` · navy desk at ballkeep.com/bb",
+            inline=False,
+        )
         emb.set_thumbnail(url="https://ballkeep.com/img/logo.jpg")
         emb.set_footer(text=f"Updated {desk.cat.updated} · ballkeep.com")
         await interaction.response.send_message(embed=emb)
@@ -234,14 +278,10 @@ def build_bot():
     @app_commands.describe(name="Player name or nickname (JSN, CMC, Sun God, BTJ…)")
     @app_commands.autocomplete(name=ac_player)
     async def player_cmd(interaction: discord.Interaction, name: str):
-        p = desk.cat.one(name)
-        if not p or not p.get("url"):
-            # board-only
-            p = desk.cat.one(name) or desk.cat.board_row(name, "board")
+        p = desk.cat.one(name, sport="football") or desk.cat.one(name)
         if not p:
-            await interaction.response.send_message(f"Not on the desk: **{name}**. Try `/search`.", ephemeral=True)
+            await interaction.response.send_message(f"Not on the desk: **{name}**. Try `/search` or `/bbplayer`.", ephemeral=True)
             return
-        # prefer rich player file
         rich = desk.cat.by_key.get(p.get("key") or norm(p.get("name", "")))
         await interaction.response.send_message(embed=player_embed(discord, rich or p))
 
@@ -621,6 +661,63 @@ def build_bot():
             color=INK,
         )
         emb.set_footer(text=desk.cat.updated)
+        await interaction.response.send_message(embed=emb)
+
+    @bot.tree.command(name="bbplayer", description="BaseBallKeep file: Keep 300, Lineup, Pitchers, redraft")
+    @app_commands.describe(name="Baseball player (Ohtani, Judge, PCA, Skenes…)")
+    @app_commands.autocomplete(name=ac_bb)
+    async def bbplayer_cmd(interaction: discord.Interaction, name: str):
+        p = desk.cat.one(name, sport="baseball")
+        if not p:
+            await interaction.response.send_message(f"Not on BaseBallKeep: **{name}**.", ephemeral=True)
+            return
+        files = {norm(x.get("name", "")): x for x in desk.cat.raw.get("bb_players") or []}
+        rich = files.get(norm(p.get("name", ""))) or p
+        rich = {**rich, "sport": "baseball"}
+        await interaction.response.send_message(embed=player_embed(discord, rich))
+
+    @bot.tree.command(name="bbkeep", description="A BaseBallKeep board: Keep, Lineup, Pitchers, bullpen, redraft")
+    @app_commands.describe(board="Which diamond list", count="How many names (default 15, max 25)")
+    @app_commands.choices(board=BB_BOARDS)
+    async def bbkeep_cmd(interaction: discord.Interaction, board: app_commands.Choice[str], count: int = 15):
+        rows = desk.cat.list_for(board.value)[: max(1, min(count, 25))]
+        if not rows:
+            await interaction.response.send_message("That baseball board is empty. Rebuild the site catalog.", ephemeral=True)
+            return
+        await interaction.response.send_message(embed=list_embed(discord, f"BaseBallKeep · {board.name}", rows, NAVY))
+
+    @bot.tree.command(name="bbtrade", description="BaseBallKeep trade calculator — same BK Value curve")
+    @app_commands.describe(mode="Which diamond calculator", side_a="Names, comma-separated", side_b="Names, comma-separated")
+    @app_commands.choices(mode=BB_MODES)
+    async def bbtrade_cmd(interaction: discord.Interaction, mode: app_commands.Choice[str], side_a: str, side_b: str):
+        result = desk.cat.trade(mode.value, side_a, side_b)
+        emb = trade_embed(discord, result)
+        emb.set_footer(text="Fair = within 8% · same curve as ballkeep.com/bb/trade.html")
+        await interaction.response.send_message(embed=emb)
+
+    @bot.tree.command(name="bbwire", description="BaseBallKeep waiver adds — dynasty stash vs the longer redraft wire")
+    @app_commands.describe(kind="Dynasty (short) or redraft (longer, higher priority)")
+    @app_commands.choices(kind=[
+        app_commands.Choice(name="Dynasty stashes", value="dynasty"),
+        app_commands.Choice(name="Redraft priority 1–50", value="redraft"),
+    ])
+    async def bbwire_cmd(interaction: discord.Interaction, kind: app_commands.Choice[str]):
+        key = "bb_waivers_redraft" if kind.value == "redraft" else "bb_waivers_dynasty"
+        rows = desk.cat.raw.get(key) or []
+        if not rows:
+            await interaction.response.send_message("Waiver lists missing. Rebuild the catalog.", ephemeral=True)
+            return
+        lines = [f"**P{x['pri']}. {x['name']}** · {x.get('pos','')} {x.get('team','')} — {x.get('why')}" for x in rows]
+        # Discord field limit; split into chunks
+        body = "\n\n".join(lines)
+        emb = discord.Embed(
+            title=f"BaseBallKeep Wire · {kind.name}",
+            description=body[:4000],
+            color=NAVY if kind.value == "dynasty" else 0xC8102E,
+            url="https://ballkeep.com/bb/waivers-redraft.html" if kind.value == "redraft" else "https://ballkeep.com/bb/waivers-dynasty.html",
+        )
+        if len(body) > 4000:
+            emb.add_field(name="More", value=body[4000:5000] or "Full list on the site.", inline=False)
         await interaction.response.send_message(embed=emb)
 
     @bot.tree.command(name="reload", description="Reload discord-catalog.json after a site rebuild (admin)")

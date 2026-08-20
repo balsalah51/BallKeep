@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       sport:
-        description: "football, baseball, or both (baseball JSON is stored, not published)"
+        description: "football, baseball, or both"
         default: both
         type: choice
         options:
