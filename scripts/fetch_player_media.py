@@ -372,17 +372,6 @@ def main():
                 urls.append(f"https://a.espncdn.com/i/headshots/nfl/players/full/{rec['espn_id']}.png")
             if rec.get("sleeper_id"):
                 urls.append(f"https://sleepercdn.com/content/nfl/players/{rec['sleeper_id']}.jpg")
-            espn = espn_search_headshot(name)
-            if espn:
-                urls.append(espn)
-            wiki = wiki_thumb(name)
-            if wiki:
-                urls.append(wiki)
-            if key in COLLEGE:
-                for title in (f"{name} (American football)", f"{name} football"):
-                    wiki2 = wiki_thumb(title)
-                    if wiki2:
-                        urls.append(wiki2)
             saved = False
             for u in urls:
                 ext = ".png" if ".png" in u.split("?")[0].lower() else ".jpg"
@@ -393,6 +382,28 @@ def main():
                     n_img += 1
                     print("img", name, u[:80])
                     break
+            if not saved:
+                extras = []
+                espn = espn_search_headshot(name)
+                if espn:
+                    extras.append(espn)
+                wiki = wiki_thumb(name)
+                if wiki:
+                    extras.append(wiki)
+                if key in COLLEGE:
+                    for title in (f"{name} (American football)", f"{name} football"):
+                        wiki2 = wiki_thumb(title)
+                        if wiki2:
+                            extras.append(wiki2)
+                for u in extras:
+                    ext = ".png" if ".png" in u.split("?")[0].lower() else ".jpg"
+                    target = IMG / f"{slug}{ext}"
+                    if download_image(u, target):
+                        rec["image"] = f"img/players/{slug}{ext}"
+                        saved = True
+                        n_img += 1
+                        print("img", name, u[:80])
+                        break
             if not saved:
                 rec["image"] = rec.get("image") or ""
                 n_miss += 1
