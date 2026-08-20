@@ -35,6 +35,9 @@ jobs:
       - name: Test news algorithm
         run: python3 scripts/test_news.py
 
+      - name: Test SEO tags
+        run: python3 scripts/test_seo.py
+
       - name: Scrape wires
         run: python3 scripts/news_scrape.py --sport "${{ github.event.inputs.sport || 'both' }}"
 

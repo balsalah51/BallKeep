@@ -51,7 +51,17 @@ python3 scripts/refresh_ranks.py
 python3 scripts/news_scrape.py --sport both
 python3 scripts/build_site.py
 python3 bot/test_catalog.py
+python3 scripts/test_seo.py
 ```
+
+## Analytics and ads
+Optional. Edit `data/site.json` then rebuild:
+
+- `ga_measurement_id` — GA4 id (`G-XXXX`) so you can see which player files and calculators actually get used.
+- `adsense_client` — AdSense publisher id (`ca-pub-XXXX`) to turn on Auto ads once the site is approved. Do not turn ads on before Search Console shows real traffic.
+- `twitter_handle` — `@yourhandle` for Twitter card attribution after you create the account.
+
+Leave the strings empty to keep the site clean.
 
 ## BK News
 Football news is live at `news.html`. Baseball news is live at `bb/news.html`. Each hour GitHub Actions runs `scripts/news_scrape.py`:

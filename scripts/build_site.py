@@ -29,6 +29,19 @@ from player_copy import get_copy  # noqa: E402
 from recent_trades import enrich_deals  # noqa: E402
 from build_bb import write_baseball_site  # noqa: E402
 from build_pl import write_pitch_site  # noqa: E402
+from seo import (  # noqa: E402
+    SHARE_JS,
+    abs_asset,
+    canonical,
+    clip_desc,
+    head_tags,
+    news_ld,
+    page_meta,
+    person_ld,
+    player_description,
+    share_bar,
+    sitemap_url,
+)
 
 
 def esc(s):
@@ -671,22 +684,32 @@ ROOKIE_SOURCES = [
 ]
 
 
-def page(title, path, body, extra_js="", depth=0):
+def page(title, path, body, extra_js="", depth=0, *, description=None, image=None, og_type="website", json_ld=None, published=None):
     links = []
     news_here = path == "news.html" or path.startswith("news/")
     for href, label in NAV:
         on = href == path or (href == "news.html" and news_here)
         cur = ' aria-current="page"' if on else ""
         links.append(f'<a href="{nav_href(href, depth)}"{cur}>{esc(label)}</a>')
+    head = head_tags(
+        desk="fb",
+        path=path,
+        fallback_title=title,
+        css_href=asset("css/site.css", depth),
+        icon_href=asset("img/logo.jpg", depth),
+        description=description,
+        image=image,
+        og_type=og_type,
+        json_ld=json_ld,
+        published=published,
+    )
+    full_title, _ = page_meta(path, "fb", title)
+    share = share_bar(canonical(path, "fb"), full_title)
+    js = (extra_js or "") + SHARE_JS
     return f"""<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{esc(title)} — Ball Keep</title>
-  <meta name="description" content="Ball Keep dynasty and redraft rankings, trade calculators, schedules, and market notes." />
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}" />
-  <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
+  {head}
 </head>
 <body>
   <div class="wrap">
@@ -700,6 +723,7 @@ def page(title, path, body, extra_js="", depth=0):
       </a>
       <nav>{''.join(links)}</nav>
     </header>
+    {share}
     {body}
     <footer>
       © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL, MLB, or Premier League.
@@ -707,7 +731,7 @@ def page(title, path, body, extra_js="", depth=0):
       <a class="sport-switch pl" href="{nav_href('pl/index.html', depth)}">PitchKeep</a></div>
     </footer>
   </div>
-  {extra_js}
+  {js}
 </body>
 </html>
 """
@@ -928,8 +952,24 @@ def render_news_pages():
     </section>
     <p class="note" style="margin-top:18px"><a href="../news.html">All BK News</a> · <a href="../players/index.html">Player pages</a></p>
     """
-        write(f"news/{slug}.html", page(s.get("headline") or "BK News", f"news/{slug}.html", story_body, depth=1))
-        urls.append(f"https://ballkeep.com/news/{slug}.html")
+        headline = s.get("headline") or "BK News"
+        desc = clip_desc(s.get("blurb") or s.get("summary") or headline)
+        news_url = canonical(f"news/{slug}.html")
+        when = s.get("published") or s.get("updated")
+        write(
+            f"news/{slug}.html",
+            page(
+                headline,
+                f"news/{slug}.html",
+                story_body,
+                depth=1,
+                description=desc,
+                og_type="article",
+                published=when,
+                json_ld=news_ld(headline, news_url, desc, when),
+            ),
+        )
+        urls.append(news_url)
     return urls
 
 
@@ -1232,7 +1272,22 @@ def render_player_pages(profiles):
     {ff_neighbors(profiles, p)}
     <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../recent-trades.html?q={esc(p["name"])}">Recent deals</a> · <a href="../hot-n-cold.html">Hot 'n' Cold</a> · <a href="../news.html">BK News</a></p>
     """
-        write(f"players/{p['slug']}.html", page(p["name"], f"players/{p['slug']}.html", body, depth=1))
+        keep_rk = (p.get("lists") or {}).get("The Keep")
+        og_img = img or "img/logo.jpg"
+        player_url = canonical(f"players/{p['slug']}.html")
+        write(
+            f"players/{p['slug']}.html",
+            page(
+                p["name"],
+                f"players/{p['slug']}.html",
+                body,
+                depth=1,
+                description=player_description(p["name"], p.get("pos") or "", p.get("team") or "", keep_rk, "football"),
+                image=og_img,
+                og_type="profile",
+                json_ld=person_ld(p["name"], player_url, abs_asset(og_img), {"jobTitle": p.get("pos") or "NFL player"}),
+            ),
+        )
         keep_html.add(f"{p['slug']}.html")
 
         thumb = asset(img, 1) if img else asset("img/logo.jpg", 1)
@@ -1851,9 +1906,14 @@ def main():
       <img src="img/discord.jpg" alt="Ball Keep circular Discord logo" />
       <p class="kicker">Community</p>
       <h2>Ball Keep on Discord</h2>
-      <p class="note">Red primary. White BK. Black ring. The bot is the desk in the server: every Keep rank, every player file, every highlight, and the trade calculator — searchable in Discord the same way they are on the site.</p>
+      <p class="note">Red primary. White BK. Black ring. The bot is the desk in the server: every Keep rank, every player file, every highlight, and the trade calculator — searchable in Discord the same way they are on the site. Add it to your league server so every trade argument has a number and a link back to ballkeep.com.</p>
       <a class="cta" href="https://github.com/balsalah51/BallKeep/tree/main/bot">Run the Ball Keep bot</a>
     </div>
+    <section class="panel" style="margin-top:16px">
+      <p class="kicker">How leagues find the desk</p>
+      <h2>Put Ball Keep in the chat.</h2>
+      <p class="note">The fastest traffic is a commissioner who pastes a Keep rank or a trade result into Slack/Discord/GroupMe. Invite the bot, run <code>/publish</code> once, and native Discord search becomes a second copy of the site. Then drop a player-file or calculator link when someone asks &quot;what is JSN worth?&quot;</p>
+    </section>
     <section class="panel" style="margin-top:16px">
       <p class="kicker">Slash Commands</p>
       <h2>Talk to the desk.</h2>
@@ -1878,33 +1938,39 @@ def main():
 
     player_urls = render_player_pages(profiles)
     news_urls = render_news_pages()
-    sitemap = [
-        "https://ballkeep.com/",
-        "https://ballkeep.com/the-keep.html",
-        "https://ballkeep.com/news.html",
-        "https://ballkeep.com/trade.html",
-        "https://ballkeep.com/recent-trades.html",
-        "https://ballkeep.com/trade-superflex.html",
-        "https://ballkeep.com/trade-1qb.html",
-        "https://ballkeep.com/trade-ppr.html",
-        "https://ballkeep.com/trade-standard.html",
-        "https://ballkeep.com/redraft-ppr.html",
-        "https://ballkeep.com/redraft-standard.html",
-        "https://ballkeep.com/rookies-2026.html",
-        "https://ballkeep.com/hot-n-cold.html",
-        "https://ballkeep.com/board.html",
-        "https://ballkeep.com/nfl-schedule.html",
-        "https://ballkeep.com/mlb-schedule.html",
-        "https://ballkeep.com/discord.html",
-    ] + news_urls[1:] + player_urls
+    today = date.today().isoformat()
+    def sitemap_row(url, priority=None, changefreq=None):
+        return sitemap_url(url, lastmod=today, priority=priority, changefreq=changefreq)
+
+    sitemap_rows = [
+        sitemap_row("https://ballkeep.com/", "1.0", "daily"),
+        sitemap_row("https://ballkeep.com/the-keep.html", "0.9", "daily"),
+        sitemap_row("https://ballkeep.com/news.html", "0.9", "hourly"),
+        sitemap_row("https://ballkeep.com/trade.html", "0.9", "weekly"),
+        sitemap_row("https://ballkeep.com/recent-trades.html", "0.8", "weekly"),
+        sitemap_row("https://ballkeep.com/trade-superflex.html", "0.8", "weekly"),
+        sitemap_row("https://ballkeep.com/trade-1qb.html", "0.8", "weekly"),
+        sitemap_row("https://ballkeep.com/trade-ppr.html", "0.7", "weekly"),
+        sitemap_row("https://ballkeep.com/trade-standard.html", "0.7", "weekly"),
+        sitemap_row("https://ballkeep.com/redraft-ppr.html", "0.8", "weekly"),
+        sitemap_row("https://ballkeep.com/redraft-standard.html", "0.7", "weekly"),
+        sitemap_row("https://ballkeep.com/rookies-2026.html", "0.8", "weekly"),
+        sitemap_row("https://ballkeep.com/hot-n-cold.html", "0.7", "weekly"),
+        sitemap_row("https://ballkeep.com/board.html", "0.7", "weekly"),
+        sitemap_row("https://ballkeep.com/nfl-schedule.html", "0.6", "weekly"),
+        sitemap_row("https://ballkeep.com/mlb-schedule.html", "0.5", "weekly"),
+        sitemap_row("https://ballkeep.com/discord.html", "0.6", "monthly"),
+    ]
+    sitemap_rows.extend(sitemap_row(u, "0.6", "hourly") for u in news_urls[1:])
+    sitemap_rows.extend(sitemap_row(u, "0.7", "weekly") for u in player_urls)
     bb = write_baseball_site()
-    sitemap.extend(bb.get("urls") or [])
+    sitemap_rows.extend(sitemap_row(u, "0.7", "weekly") for u in (bb.get("urls") or []))
     pl = write_pitch_site()
-    sitemap.extend(pl.get("urls") or [])
+    sitemap_rows.extend(sitemap_row(u, "0.7", "weekly") for u in (pl.get("urls") or []))
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"  <url><loc>{u}</loc></url>\n" for u in sitemap)
+        + "".join(sitemap_rows)
         + "</urlset>\n"
     )
 

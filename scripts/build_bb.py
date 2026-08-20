@@ -29,6 +29,18 @@ from news_algo import (  # noqa: E402
     news_when,
     rematch_stories,
 )
+from seo import (  # noqa: E402
+    SHARE_JS,
+    abs_asset,
+    canonical,
+    clip_desc,
+    head_tags,
+    news_ld,
+    page_meta,
+    person_ld,
+    player_description,
+    share_bar,
+)
 
 
 def esc(s):
@@ -85,7 +97,7 @@ def bb_nav_current(href: str, path: str) -> bool:
     return False
 
 
-def bb_page(title, path, body, extra_js="", depth=1):
+def bb_page(title, path, body, extra_js="", depth=1, *, description=None, image=None, og_type="website", json_ld=None, published=None):
     prefix = "../" * depth
     links = []
     for href, label in BB_NAV:
@@ -93,15 +105,25 @@ def bb_page(title, path, body, extra_js="", depth=1):
         target = bb_nav_target(href, path, depth)
         links.append(f'<a href="{esc(target)}"{cur}>{esc(label)}</a>')
     fb = f"{prefix}index.html"
+    head = head_tags(
+        desk="bb",
+        path=path,
+        fallback_title=title,
+        css_href=f"{prefix}css/bb.css",
+        icon_href=f"{prefix}img/bb-logo.jpg",
+        description=description,
+        image=image,
+        og_type=og_type,
+        json_ld=json_ld,
+        published=published,
+    )
+    full_title, _ = page_meta(path, "bb", title)
+    share = share_bar(canonical(path, "bb"), full_title)
+    js = (extra_js or "") + SHARE_JS
     return f"""<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{esc(title)} — BaseBallKeep</title>
-  <meta name="description" content="BaseBallKeep dynasty and redraft baseball rankings, trade calculators, and waiver wires." />
-  <link rel="stylesheet" href="{prefix}css/bb.css" />
-  <link rel="icon" href="{prefix}img/bb-logo.jpg" />
+  {head}
 </head>
 <body>
   <div class="wrap">
@@ -115,6 +137,7 @@ def bb_page(title, path, body, extra_js="", depth=1):
       </a>
       <nav>{''.join(links)}</nav>
     </header>
+    {share}
     {body}
     <footer>
       © {date.today().year} BaseBallKeep · ballkeep.com/bb · Rankings aggregated {UPDATED}. Not affiliated with MLB.
@@ -122,7 +145,7 @@ def bb_page(title, path, body, extra_js="", depth=1):
       <a class="sport-switch pl" href="{prefix}pl/index.html">PitchKeep</a></div>
     </footer>
   </div>
-  {extra_js}
+  {js}
 </body>
 </html>
 """
@@ -789,7 +812,22 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     {neighbors(keep, i)}
     <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-keep.html">The Keep</a> · <a href="../news.html">BK News</a> · <a href="../the-lineup.html">The Lineup</a> · <a href="../pitchers.html">Pitchers</a> · <a href="../trade-keep.html">Calculator</a></p>
     """
-        write(f"bb/players/{slug}.html", bb_page(r["name"], f"players/{slug}.html", body, depth=2))
+        player_url = canonical(f"players/{slug}.html", "bb")
+        write(
+            f"bb/players/{slug}.html",
+            bb_page(
+                r["name"],
+                f"players/{slug}.html",
+                body,
+                depth=2,
+                description=player_description(
+                    r["name"], r.get("pos") or "", r.get("team") or "", r.get("bk"), "baseball"
+                ),
+                image=img,
+                og_type="profile",
+                json_ld=person_ld(r["name"], player_url, abs_asset(img), {"jobTitle": r.get("pos") or "MLB player"}),
+            ),
+        )
         keep_html.add(f"{slug}.html")
         cards.append(
             f'<a class="tile player-card" href="{slug}.html" data-pos="{esc((r.get("pos") or "").split("/")[0])}" data-group="{esc(r.get("group") or "")}">'
@@ -1073,8 +1111,24 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
     </section>
     <p class="note" style="margin-top:18px"><a href="../news.html">All BK News</a> · <a href="../players/index.html">Player pages</a></p>
     """
-        write(f"bb/news/{slug}.html", bb_page(s.get("headline") or "BK News", f"news/{slug}.html", story_body, depth=2))
-        urls.append(f"https://ballkeep.com/bb/news/{slug}.html")
+        headline = s.get("headline") or "BK News"
+        desc = clip_desc(s.get("blurb") or s.get("summary") or headline)
+        news_url = canonical(f"news/{slug}.html", "bb")
+        when = s.get("published") or s.get("updated")
+        write(
+            f"bb/news/{slug}.html",
+            bb_page(
+                headline,
+                f"news/{slug}.html",
+                story_body,
+                depth=2,
+                description=desc,
+                og_type="article",
+                published=when,
+                json_ld=news_ld(headline, news_url, desc, when, abs_asset("img/bb-logo.jpg")),
+            ),
+        )
+        urls.append(news_url)
     return urls
 
 

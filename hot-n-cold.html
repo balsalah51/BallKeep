@@ -3,8 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Hot &#x27;n&#x27; Cold — Ball Keep</title>
-  <meta name="description" content="Ball Keep dynasty and redraft rankings, trade calculators, schedules, and market notes." />
+  <title>Dynasty Buys and Sells — BK Hot &#x27;n&#x27; Cold | Ball Keep</title>
+  <meta name="description" content="Dynasty buys and sells scraped from public desks and film shows. Hot names to acquire, cold names to move." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ballkeep.com/hot-n-cold.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ball Keep" />
+  <meta property="og:title" content="Dynasty Buys and Sells — BK Hot &#x27;n&#x27; Cold | Ball Keep" />
+  <meta property="og:description" content="Dynasty buys and sells scraped from public desks and film shows. Hot names to acquire, cold names to move." />
+  <meta property="og:url" content="https://ballkeep.com/hot-n-cold.html" />
+  <meta property="og:image" content="https://ballkeep.com/img/logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dynasty Buys and Sells — BK Hot &#x27;n&#x27; Cold | Ball Keep" />
+  <meta name="twitter:description" content="Dynasty buys and sells scraped from public desks and film shows. Hot names to acquire, cold names to move." />
+  <meta name="twitter:image" content="https://ballkeep.com/img/logo.jpg" />
   <link rel="stylesheet" href="css/site.css" />
   <link rel="icon" href="img/logo.jpg" />
 </head>
@@ -20,6 +32,7 @@
       </a>
       <nav><a href="index.html">Home</a><a href="the-keep.html">The Keep</a><a href="news.html">News</a><a href="trade.html">Trade</a><a href="recent-trades.html">Deals</a><a href="redraft-ppr.html">Redraft PPR</a><a href="redraft-standard.html">Redraft STD</a><a href="rookies-2026.html">2026 Rookies</a><a href="hot-n-cold.html" aria-current="page">Hot &#x27;n&#x27; Cold</a><a href="board.html">The Board</a><a href="players/index.html">Players</a><a href="nfl-schedule.html">NFL</a><a href="mlb-schedule.html">MLB</a><a href="discord.html">Discord</a></nav>
     </header>
+    <p class="share" data-url="https://ballkeep.com/hot-n-cold.html"><span>Share</span><a href="https://www.reddit.com/submit?url=https%3A%2F%2Fballkeep.com%2Fhot-n-cold.html&amp;title=Dynasty%20Buys%20and%20Sells%20%E2%80%94%20BK%20Hot%20%27n%27%20Cold%20%7C%20Ball%20Keep" target="_blank" rel="noopener noreferrer">Reddit</a><a href="https://x.com/intent/tweet?url=https%3A%2F%2Fballkeep.com%2Fhot-n-cold.html&amp;text=Dynasty%20Buys%20and%20Sells%20%E2%80%94%20BK%20Hot%20%27n%27%20Cold%20%7C%20Ball%20Keep" target="_blank" rel="noopener noreferrer">X</a><button type="button" class="share-copy">Copy link</button></p>
     
     <p class="kicker">Market Tape · August 20, 2026</p>
     <h2>BK Hot 'n' Cold</h2>
@@ -42,6 +55,19 @@
       <a class="sport-switch pl" href="pl/index.html">PitchKeep</a></div>
     </footer>
   </div>
-  
+  <script>
+(function(){
+  document.querySelectorAll('.share-copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var box = btn.closest('.share');
+      var url = (box && box.getAttribute('data-url')) || location.href;
+      function done(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy link'; }, 1600); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done).catch(function(){ window.prompt('Copy this link', url); });
+      } else { window.prompt('Copy this link', url); }
+    });
+  });
+})();
+</script>
 </body>
 </html>

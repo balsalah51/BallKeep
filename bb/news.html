@@ -3,8 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BK News — BaseBallKeep</title>
-  <meta name="description" content="BaseBallKeep dynasty and redraft baseball rankings, trade calculators, and waiver wires." />
+  <title>BK News Baseball — IL, Roster &amp; Manager Wire | BaseBallKeep</title>
+  <meta name="description" content="Hourly MLB injury, roster, DFA/call-up, and manager tape clustered into short stories with player-file links." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ballkeep.com/bb/news.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BaseBallKeep" />
+  <meta property="og:title" content="BK News Baseball — IL, Roster &amp; Manager Wire | BaseBallKeep" />
+  <meta property="og:description" content="Hourly MLB injury, roster, DFA/call-up, and manager tape clustered into short stories with player-file links." />
+  <meta property="og:url" content="https://ballkeep.com/bb/news.html" />
+  <meta property="og:image" content="https://ballkeep.com/img/bb-logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BK News Baseball — IL, Roster &amp; Manager Wire | BaseBallKeep" />
+  <meta name="twitter:description" content="Hourly MLB injury, roster, DFA/call-up, and manager tape clustered into short stories with player-file links." />
+  <meta name="twitter:image" content="https://ballkeep.com/img/bb-logo.jpg" />
   <link rel="stylesheet" href="../css/bb.css" />
   <link rel="icon" href="../img/bb-logo.jpg" />
 </head>
@@ -20,6 +32,7 @@
       </a>
       <nav><a href="index.html">Home</a><a href="the-keep.html">The Keep</a><a href="news.html" aria-current="page">News</a><a href="the-lineup.html">The Lineup</a><a href="pitchers.html">BK&#x27;s Pitchers</a><a href="bullpen.html">Bullpen SV</a><a href="bullpen-holds.html">SV + Holds</a><a href="redraft.html">Redraft</a><a href="trade.html">Trade</a><a href="waivers-dynasty.html">Dynasty Wire</a><a href="waivers-redraft.html">Redraft Wire</a><a href="players/index.html">Players</a></nav>
     </header>
+    <p class="share" data-url="https://ballkeep.com/bb/news.html"><span>Share</span><a href="https://www.reddit.com/submit?url=https%3A%2F%2Fballkeep.com%2Fbb%2Fnews.html&amp;title=BK%20News%20Baseball%20%E2%80%94%20IL%2C%20Roster%20%26%20Manager%20Wire%20%7C%20BaseBallKeep" target="_blank" rel="noopener noreferrer">Reddit</a><a href="https://x.com/intent/tweet?url=https%3A%2F%2Fballkeep.com%2Fbb%2Fnews.html&amp;text=BK%20News%20Baseball%20%E2%80%94%20IL%2C%20Roster%20%26%20Manager%20Wire%20%7C%20BaseBallKeep" target="_blank" rel="noopener noreferrer">X</a><button type="button" class="share-copy">Copy link</button></p>
     
     <p class="kicker">BK News · Baseball · Hourly wire</p>
     <h2>BK News</h2>
@@ -46,6 +59,19 @@
       document.querySelectorAll('#news-filters button').forEach(x => x.classList.remove('active'));
       b.classList.add('active'); show(b.dataset.cat);
     });
-    </script>
+    </script><script>
+(function(){
+  document.querySelectorAll('.share-copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var box = btn.closest('.share');
+      var url = (box && box.getAttribute('data-url')) || location.href;
+      function done(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy link'; }, 1600); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done).catch(function(){ window.prompt('Copy this link', url); });
+      } else { window.prompt('Copy this link', url); }
+    });
+  });
+})();
+</script>
 </body>
 </html>

@@ -3,8 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Discord — Ball Keep</title>
-  <meta name="description" content="Ball Keep dynasty and redraft rankings, trade calculators, schedules, and market notes." />
+  <title>Ball Keep Discord Bot — Ranks, Trades &amp; Tape</title>
+  <meta name="description" content="Add the Ball Keep bot to a league Discord: Keep ranks, trade calculator, recent deals, highlights, and player files." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ballkeep.com/discord.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ball Keep" />
+  <meta property="og:title" content="Ball Keep Discord Bot — Ranks, Trades &amp; Tape" />
+  <meta property="og:description" content="Add the Ball Keep bot to a league Discord: Keep ranks, trade calculator, recent deals, highlights, and player files." />
+  <meta property="og:url" content="https://ballkeep.com/discord.html" />
+  <meta property="og:image" content="https://ballkeep.com/img/logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ball Keep Discord Bot — Ranks, Trades &amp; Tape" />
+  <meta name="twitter:description" content="Add the Ball Keep bot to a league Discord: Keep ranks, trade calculator, recent deals, highlights, and player files." />
+  <meta name="twitter:image" content="https://ballkeep.com/img/logo.jpg" />
   <link rel="stylesheet" href="css/site.css" />
   <link rel="icon" href="img/logo.jpg" />
 </head>
@@ -20,14 +32,20 @@
       </a>
       <nav><a href="index.html">Home</a><a href="the-keep.html">The Keep</a><a href="news.html">News</a><a href="trade.html">Trade</a><a href="recent-trades.html">Deals</a><a href="redraft-ppr.html">Redraft PPR</a><a href="redraft-standard.html">Redraft STD</a><a href="rookies-2026.html">2026 Rookies</a><a href="hot-n-cold.html">Hot &#x27;n&#x27; Cold</a><a href="board.html">The Board</a><a href="players/index.html">Players</a><a href="nfl-schedule.html">NFL</a><a href="mlb-schedule.html">MLB</a><a href="discord.html" aria-current="page">Discord</a></nav>
     </header>
+    <p class="share" data-url="https://ballkeep.com/discord.html"><span>Share</span><a href="https://www.reddit.com/submit?url=https%3A%2F%2Fballkeep.com%2Fdiscord.html&amp;title=Ball%20Keep%20Discord%20Bot%20%E2%80%94%20Ranks%2C%20Trades%20%26%20Tape" target="_blank" rel="noopener noreferrer">Reddit</a><a href="https://x.com/intent/tweet?url=https%3A%2F%2Fballkeep.com%2Fdiscord.html&amp;text=Ball%20Keep%20Discord%20Bot%20%E2%80%94%20Ranks%2C%20Trades%20%26%20Tape" target="_blank" rel="noopener noreferrer">X</a><button type="button" class="share-copy">Copy link</button></p>
     
     <div class="panel discord-hero">
       <img src="img/discord.jpg" alt="Ball Keep circular Discord logo" />
       <p class="kicker">Community</p>
       <h2>Ball Keep on Discord</h2>
-      <p class="note">Red primary. White BK. Black ring. The bot is the desk in the server: every Keep rank, every player file, every highlight, and the trade calculator — searchable in Discord the same way they are on the site.</p>
+      <p class="note">Red primary. White BK. Black ring. The bot is the desk in the server: every Keep rank, every player file, every highlight, and the trade calculator — searchable in Discord the same way they are on the site. Add it to your league server so every trade argument has a number and a link back to ballkeep.com.</p>
       <a class="cta" href="https://github.com/balsalah51/BallKeep/tree/main/bot">Run the Ball Keep bot</a>
     </div>
+    <section class="panel" style="margin-top:16px">
+      <p class="kicker">How leagues find the desk</p>
+      <h2>Put Ball Keep in the chat.</h2>
+      <p class="note">The fastest traffic is a commissioner who pastes a Keep rank or a trade result into Slack/Discord/GroupMe. Invite the bot, run <code>/publish</code> once, and native Discord search becomes a second copy of the site. Then drop a player-file or calculator link when someone asks &quot;what is JSN worth?&quot;</p>
+    </section>
     <section class="panel" style="margin-top:16px">
       <p class="kicker">Slash Commands</p>
       <h2>Talk to the desk.</h2>
@@ -54,6 +72,19 @@
       <a class="sport-switch pl" href="pl/index.html">PitchKeep</a></div>
     </footer>
   </div>
-  
+  <script>
+(function(){
+  document.querySelectorAll('.share-copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var box = btn.closest('.share');
+      var url = (box && box.getAttribute('data-url')) || location.href;
+      function done(){ btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = 'Copy link'; }, 1600); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done).catch(function(){ window.prompt('Copy this link', url); });
+      } else { window.prompt('Copy this link', url); }
+    });
+  });
+})();
+</script>
 </body>
 </html>

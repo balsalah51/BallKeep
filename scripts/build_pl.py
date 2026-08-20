@@ -14,6 +14,16 @@ UPDATED = "August 20, 2026"
 
 from pl_data import PL_SOURCES, bk_value, load_universe  # noqa: E402
 from pl_copy import get_pl_copy  # noqa: E402
+from seo import (  # noqa: E402
+    SHARE_JS,
+    abs_asset,
+    canonical,
+    head_tags,
+    page_meta,
+    person_ld,
+    player_description,
+    share_bar,
+)
 
 
 def esc(s):
@@ -60,7 +70,7 @@ def sport_footer(depth=1):
     )
 
 
-def pl_page(title, path, body, extra_js="", depth=1):
+def pl_page(title, path, body, extra_js="", depth=1, *, description=None, image=None, og_type="website", json_ld=None, published=None):
     prefix = "../" * depth
     links = []
     for href, label in PL_NAV:
@@ -72,15 +82,25 @@ def pl_page(title, path, body, extra_js="", depth=1):
         else:
             target = href
         links.append(f'<a href="{esc(target)}"{cur}>{esc(label)}</a>')
+    head = head_tags(
+        desk="pl",
+        path=path,
+        fallback_title=title,
+        css_href=f"{prefix}css/pl.css",
+        icon_href=f"{prefix}img/pl-logo.jpg",
+        description=description,
+        image=image,
+        og_type=og_type,
+        json_ld=json_ld,
+        published=published,
+    )
+    full_title, _ = page_meta(path, "pl", title)
+    share = share_bar(canonical(path, "pl"), full_title)
+    js = (extra_js or "") + SHARE_JS
     return f"""<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{esc(title)} — PitchKeep</title>
-  <meta name="description" content="PitchKeep Premier League rankings. The Premier hybrid 400, Sleeper BPL 2025, and 24-board consensus." />
-  <link rel="stylesheet" href="{prefix}css/pl.css" />
-  <link rel="icon" href="{prefix}img/pl-logo.jpg" />
+  {head}
 </head>
 <body>
   <div class="wrap">
@@ -94,13 +114,14 @@ def pl_page(title, path, body, extra_js="", depth=1):
       </a>
       <nav>{''.join(links)}</nav>
     </header>
+    {share}
     {body}
     <footer>
       © {date.today().year} PitchKeep · ballkeep.com/pl · Rankings aggregated {UPDATED}. Not affiliated with the Premier League or FPL.
       {sport_footer(depth)}
     </footer>
   </div>
-  {extra_js}
+  {js}
 </body>
 </html>
 """
@@ -630,7 +651,22 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp):
     {neighbors(ordered, i, "On The Premier nearby")}
     <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-premier.html">The Premier</a> · <a href="../the-pitch.html">The Pitch</a> · <a href="../trade.html">Calculator</a></p>
     """
-        write(f"pl/players/{slug}.html", pl_page(label, f"players/{slug}.html", body, depth=2))
+        player_url = canonical(f"players/{slug}.html", "pl")
+        write(
+            f"pl/players/{slug}.html",
+            pl_page(
+                label,
+                f"players/{slug}.html",
+                body,
+                depth=2,
+                description=player_description(
+                    label, r.get("pos") or "", r.get("team") or "", prem_rk, "soccer"
+                ),
+                image=img,
+                og_type="profile",
+                json_ld=person_ld(label, player_url, abs_asset(img), {"jobTitle": r.get("pos") or "Footballer"}),
+            ),
+        )
         keep_html.add(f"{slug}.html")
         cards.append(
             f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}" data-group="{esc(r.get("group") or "")}">'
