@@ -75,6 +75,9 @@ def norm_name(name: str) -> str:
         "harold fannin jr": "harold fannin",
         "de zhaun stribling": "dezhaun stribling",
         "kc concepcion": "kc concepcion",
+        "d j moore": "dj moore",
+        "chigoziem okonkwo": "chig okonkwo",
+        "hollywood brown": "marquise brown",
     }
     return aliases.get(n, n)
 
@@ -335,17 +338,19 @@ def main():
 
         sp = sleep_idx.get(key)
         if not sp:
-            # last-name + team fallback among sleeper rows
+            sp = sleep_idx.get(norm_name(name))
+        if not sp:
             last = key.split()[-1] if key else ""
             team = (p.get("team") or "").upper()
-            hits = [
-                v for v in sleep_idx.values()
-                if last and last in (v.get("name") or "").lower()
-                and (not team or (v.get("team") or "").upper() == team)
-                and (v.get("pos") or "") == (p.get("pos") or "")
-            ]
-            if len(hits) == 1:
-                sp = hits[0]
+            if last not in {"brown", "smith", "johnson", "williams", "jones", "davis", "miller", "wilson", "moore"}:
+                hits = [
+                    v for v in sleep_idx.values()
+                    if last and last in (v.get("name") or "").lower()
+                    and (not team or (v.get("team") or "").upper() == team)
+                    and (v.get("pos") or "") == (p.get("pos") or "")
+                ]
+                if len(hits) == 1:
+                    sp = hits[0]
         if sp:
             rec["sleeper_id"] = sp["sleeper_id"]
             rec["espn_id"] = sp.get("espn_id") or rec.get("espn_id") or ""

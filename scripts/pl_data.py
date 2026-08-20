@@ -477,6 +477,7 @@ def aggregate(sources, by_key, min_n=2):
         rows.append({
             "key": k,
             "name": info.get("name") or k.title(),
+            "full_name": info.get("full_name") or info.get("name") or k.title(),
             "web_name": info.get("web_name") or "",
             "pos": info.get("pos") or "",
             "team": info.get("team") or "",
@@ -590,6 +591,7 @@ def load_universe():
         rec.update({
             "key": p["key"],
             "name": p.get("name"),
+            "full_name": p.get("full_name") or p.get("name"),
             "web_name": p.get("web_name") or "",
             "pos": p.get("pos") or "",
             "team": p.get("team") or "",

@@ -83,6 +83,7 @@ def main():
     assert haaland.get("full_name")
     assert haaland.get("age")
     assert cat.raw["keep"][0].get("age"), "Football The Keep needs age"
+    assert sum(1 for r in cat.raw["keep"] if r.get("age")) == 400, "Football The Keep needs age on every row"
     assert cat.raw["bb_keep"][0].get("age"), "Baseball The Keep needs age"
     assert sum(1 for r in cat.raw["bb_keep"] if r.get("age")) == 400
     assert cat.one("haaland", sport="soccer")["name"] == "Erling Haaland"
