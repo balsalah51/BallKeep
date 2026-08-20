@@ -663,6 +663,20 @@ COPY = {
         "Superflex rebuilders can stash him on a taxi if the cost is a late third. Contenders should not roster a hope. Redraft should not draft a hope. The market near RB26 is the trap — it feels cheap relative to 2024 ADP and expensive relative to two ACLs.",
         "If the other manager will pay RB26, sell. If they will pay a late third, you can hold the lottery ticket. Lottery tickets are fine. They are not running backs you start. Not yet. Maybe not ever. That is the Cold board's job: to say the last sentence before you have to.",
     ),
+    "dak prescott": C(
+        ["Cowboys still throw; Karabell has him as a top-20 Superflex name.", "When healthy he is a locked weekly QB1 in Superflex and a fine QB2 in 1QB."],
+        ["Age 33 and a Keep average that only climbs because short boards love the volume.", "The long boards (PFN, Dynasty Nerds) have him around 50 — that is the five-year price."],
+        "Dak Prescott is on The Keep because Superflex still pays for a high-volume Cowboys passer, not because we are pretending he is Maye. Eric Karabell has him 17th. RotoWire is in the 30s. The long boards sit near 50. The average lands in the late 30s, which is honest: you start him, you do not build a 2029 roster around him.",
+        "1QB leagues should treat him as a mid QB1 this year and a fading asset after that. Superflex can hold him as QB2/QB3 behind a young stack. Do not pay a 2027 first to 'get the Cowboys quarterback.' Pay a late first if you are competing and the other manager still thinks Dak is a top-12 dynasty quarterback.",
+        "The age tax is the ranking. If Dallas's passing volume holds, the 2026 weekly floor is real. If it doesn't, you are holding a 33-year-old with no rushing cushion. That is a fine Superflex piece. It is not a Keep cornerstone.",
+    ),
+    "tee higgins": C(
+        ["Burrow's 1A/1B partner when both are healthy; PPR weeks still look like a WR1.", "Contract-year and target-share seasons have paid in the past; the talent is not the question."],
+        ["Chase is still the alpha in Cincinnati, and Burrow's health is a weekly tax on both.", "Keep average in the 50s is a WR2/WR3 — do not pay WR1 to get him."],
+        "Tee Higgins is the Bengals receiver people keep trying to promote into Chase. He is not Chase. He is a very good WR2 who can post WR1 weeks when Burrow is upright and the looks are there. Our re-aggregated Superflex board parks him just outside the top 50, which is the right neighborhood: startable, tradable, not a foundation chip.",
+        "Redraft PPR will take him earlier than dynasty will, because this year's targets do not care about 2029. Dynasty Superflex should only pay up if you are competing and the other manager will take a mid-2nd. If they want a first, you keep the pick and you live with JSN's teammates instead.",
+        "The minus is the same as Chase's minus with less ceiling: quarterback health, plus a depth chart that already has a true alpha. Higgins is a piece. Treat him like a piece.",
+    ),
 }
 
 
