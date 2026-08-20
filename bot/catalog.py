@@ -322,12 +322,13 @@ class Catalog:
         for p in pool:
             key = p.get("key") or norm(p.get("name", ""))
             name = norm(p.get("name", ""))
-            hay = f"{name} {p.get('pos','')} {p.get('team','')} {p.get('slug','')}"
-            if q == key or q == name:
+            full = norm(p.get("full_name") or "")
+            hay = f"{name} {full} {p.get('pos','')} {p.get('team','')} {p.get('slug','')}"
+            if q == key or q == name or (full and q == full):
                 scored.append((0, p))
-            elif name.startswith(q) or key.startswith(q):
+            elif name.startswith(q) or key.startswith(q) or (full and full.startswith(q)):
                 scored.append((1, p))
-            elif q in name or q in key:
+            elif q in name or q in key or (full and q in full):
                 scored.append((2, p))
             elif all(tok in hay for tok in q.split()):
                 scored.append((3, p))

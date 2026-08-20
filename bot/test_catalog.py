@@ -65,6 +65,16 @@ def main():
     assert tbb["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
     assert tbb["total_a"] and tbb["total_b"]
     assert not tbb["missing"], tbb["missing"]
+    root = Path(__file__).resolve().parents[1]
+    ohtani_html = (root / "bb/players/shohei-ohtani.html").read_text()
+    assert "Starcast" in ohtani_html
+    assert "baseballsavant.mlb.com" in ohtani_html
+    assert "spray" in ohtani_html.lower()
+    assert "Pitch chart" in ohtani_html
+    caminero_html = (root / "bb/players/junior-caminero.html").read_text()
+    assert "Hits spray chart" in caminero_html
+    skenes_html = (root / "bb/players/paul-skenes.html").read_text()
+    assert "Pitch chart" in skenes_html
     pitch = cat.raw.get("pl_pitch") or []
     assert len(pitch) == 400, f"pitch {len(pitch)}"
     assert pitch[0]["name"] == "Erling Haaland"
@@ -74,10 +84,18 @@ def main():
     assert premier[0]["name"] == "Erling Haaland"
     assert premier[1]["name"] == "Bruno Fernandes"
     assert premier[2]["name"] == "Antoine Semenyo"
+    assert premier[0].get("age"), "Premier list needs ages"
+    assert "Haaland" in (premier[0].get("full_name") or "")
     files = cat.raw.get("pl_players") or []
     haaland = next(p for p in files if p["name"] == "Erling Haaland")
     assert len(haaland.get("grafs") or []) >= 5, "premier files need five grafs"
     assert haaland.get("image"), "Haaland needs a photo"
+    assert haaland.get("full_name")
+    assert haaland.get("age")
+    assert cat.raw["keep"][0].get("age"), "Football The Keep needs age"
+    assert sum(1 for r in cat.raw["keep"] if r.get("age")) == 400, "Football The Keep needs age on every row"
+    assert cat.raw["bb_keep"][0].get("age"), "Baseball The Keep needs age"
+    assert sum(1 for r in cat.raw["bb_keep"] if r.get("age")) == 400
     assert cat.one("haaland", sport="soccer")["name"] == "Erling Haaland"
     assert cat.one("bruno", sport="soccer")["name"] == "Bruno Fernandes"
     assert cat.one("saka", sport="soccer")["name"] == "Bukayo Saka"

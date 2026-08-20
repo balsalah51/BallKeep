@@ -58,7 +58,9 @@ img.face {
   border: 2px solid var(--purple); background: var(--purple); flex: 0 0 44px;
   vertical-align: middle; margin-right: 10px;
 }
+.name-stack { min-width: 0; flex: 1; display: block; }
 table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
+.c-age { font-variant-numeric: tabular-nums; font-weight: 700; width: 48px; }
 .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 16px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .tile { display: block; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px; text-decoration: none; color: inherit; }
@@ -197,7 +199,7 @@ table.boards tr.lo td { background: rgba(200,16,46,0.08); }
   table.rank-table.faces img.face { width: 40px; height: 40px; margin-right: 0; flex: 0 0 40px; }
   table.rank-table.faces .c-name a { min-width: 0; }
   table.rank-table .row-meta { display: block; font-size: 13px; color: var(--muted); font-weight: 700; margin-top: 2px; }
-  table.rank-table .c-pos, table.rank-table .c-team { display: none !important; }
+  table.rank-table .c-pos, table.rank-table .c-team, table.rank-table .c-age { display: none !important; }
   table.rank-table .c-val {
     grid-column: 3; grid-row: 1 / span 2; align-self: center;
     text-align: right; white-space: nowrap; font-size: 14px;

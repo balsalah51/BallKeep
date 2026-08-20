@@ -263,6 +263,7 @@ def index_people(people, teams):
 
 
 def main():
+    missing_only = "--missing-only" in sys.argv
     universe = load_universe()
     keep = universe["keep"]
     print("keep", len(keep))
@@ -286,6 +287,9 @@ def main():
         key = r["key"]
         slug = slugify(r["name"])
         rec = media.get(key) or {}
+        dest = IMG / f"{slug}.jpg"
+        if missing_only and rec.get("image") and dest.exists() and dest.stat().st_size > 800:
+            continue
         person = by_key.get(key)
         if not person:
             known = KNOWN_IDS.get(key)
