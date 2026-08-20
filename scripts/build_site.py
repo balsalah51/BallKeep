@@ -740,7 +740,8 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
         pos = r.get("pos") or ""
         team = r.get("team") or ""
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
-        age_bit = f" · {age_txt}" if show_age and age_txt else ""
+        age_label = f"age {age_txt}" if age_txt else ""
+        age_bit = f" · {age_label}" if show_age and age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
             f" · {esc(team)}{esc(age_bit)}</div>"
@@ -748,7 +749,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
         face = ""
         if faces:
             face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
-        age_td = f'<td class="c-age">{esc(age_txt or "—")}</td>' if show_age else ""
+        age_td = f'<td class="c-age">{esc(age_label or "—")}</td>' if show_age else ""
         stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{meta}</span>'
         body.append(
             f'<tr data-pos="{esc(pos)}">'
