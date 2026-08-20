@@ -83,6 +83,19 @@ TEAMS = {
 TEAM_BY_ABBR = {v: k for k, v in TEAMS.items()}
 
 
+def load_rank_names(stem: str) -> dict:
+    """Ordered public board dumped by scripts/refresh_ranks.py (name -> rank)."""
+    path = ROOT / "data" / "ranks" / f"{stem}.json"
+    if not path.exists():
+        return {}
+    names = json.loads(path.read_text())
+    out = {}
+    for i, name in enumerate(names, 1):
+        if isinstance(name, str) and name.strip():
+            out[name] = i
+    return out
+
+
 def parse_pfn(path: Path):
     rows = []
     for line in path.read_text(errors="replace").splitlines():
@@ -94,7 +107,7 @@ def parse_pfn(path: Path):
             continue
         rows.append({
             "rank": int(m.group(1)),
-            "name": m.group(2).strip(),
+            "name": html.unescape(m.group(2).strip()),
             "pos": m.group(3),
             "team": m.group(4).replace("GBP", "GB").replace("KCC", "KC").replace("NOS", "NO").replace("SFO", "SF").replace("LVR", "LV").replace("NEP", "NE"),
             "age": int(m.group(5)),
@@ -375,11 +388,14 @@ def pick_assets(qb_mult_for_qb: float = 1.0):
 
 
 def aggregate(pfn_rows):
+    fp_sf = load_rank_names("fp-dynasty-sf") or FANTASYPROS_SF
+    dn_sf = load_rank_names("dn-sf") or DYNASTY_NERDS
+    ktc_sf = load_rank_names("ktc-sf") or KTC_SF
     sources = {
         "PFN (Katz/Soppe)": {norm_name(r["name"]): r["rank"] for r in pfn_rows},
-        "Dynasty Nerds": {norm_name(n): r for n, r in DYNASTY_NERDS.items()},
-        "FantasyPros ECR": {norm_name(n): r for n, r in FANTASYPROS_SF.items()},
-        "KeepTradeCut SF": {norm_name(n): r for n, r in KTC_SF.items()},
+        "Dynasty Nerds": {norm_name(n): r for n, r in dn_sf.items()},
+        "FantasyPros ECR": {norm_name(n): r for n, r in fp_sf.items()},
+        "KeepTradeCut SF": {norm_name(n): r for n, r in ktc_sf.items()},
         "ESPN (Karabell)": {norm_name(n): r for n, r in as_ranks(ESPN_KARABELL_SF).items()},
         "Draft Sharks": {norm_name(n): r for n, r in as_ranks(DRAFT_SHARKS_SF).items()},
         "RotoWire": {norm_name(n): r for n, r in as_ranks(ROTOWIRE_SF).items()},
@@ -403,9 +419,9 @@ def aggregate(pfn_rows):
         display = info.get("name")
         if not display:
             bank = (
-                list(DYNASTY_NERDS)
-                + list(KTC_SF)
-                + list(FANTASYPROS_SF)
+                list(dn_sf)
+                + list(ktc_sf)
+                + list(fp_sf)
                 + ESPN_KARABELL_SF
                 + DRAFT_SHARKS_SF
                 + ROTOWIRE_SF
@@ -433,9 +449,10 @@ def aggregate(pfn_rows):
 
 def redraft_lists():
     karabell = as_ranks(ESPN_KARABELL_FLEX)
+    fp_ppr = {norm_name(n): r for n, r in (load_rank_names("fp-ppr") or FP_PPR).items()}
     ppr = []
     for i, (name, pos, team) in enumerate(YATES_PPR, 1):
-        fp = FP_PPR.get(name)
+        fp = fp_ppr.get(norm_name(name)) or FP_PPR.get(name)
         kb = karabell.get(name)
         nums = [float(i)]
         if fp:
@@ -558,10 +575,10 @@ def sources_panel(items):
 
 
 KEEP_SOURCES = [
-    ("Pro Football Network (Katz / Soppe composite)", "https://www.profootballnetwork.com/dynasty-fantasy-football-rankings/", "Full Superflex dynasty board."),
-    ("Dynasty Nerds Superflex", "https://www.dynastynerds.com/dynasty-rankings/superflex/", "Consensus of four rankers, weekly."),
-    ("FantasyPros Dynasty Superflex ECR", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dynasty-superflex.php", "Published top 12, Aug 19."),
-    ("KeepTradeCut Superflex", "https://keeptradecut.com/dynasty-rankings", "Crowdsourced market tape."),
+    ("Pro Football Network (Katz / Soppe composite)", "https://www.profootballnetwork.com/dynasty-fantasy-football-rankings/", "Full Superflex dynasty board, Aug 20."),
+    ("Dynasty Nerds Superflex", "https://www.dynastynerds.com/dynasty-rankings/superflex/", "Consensus of four rankers, Aug 20."),
+    ("FantasyPros Dynasty Superflex ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-superflex.php", "Expert consensus, Aug 20."),
+    ("KeepTradeCut Superflex", "https://keeptradecut.com/dynasty-rankings", "Crowdsourced market tape, Aug 20."),
     ("Derek Brown on X", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dynasty-superflex.php", "Aug 17 Superflex ranks via FantasyPros."),
     ("Andrew Erickson on X", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dynasty-superflex.php", "July 29 Superflex ranks via FantasyPros."),
     ("Pat Fitzmaurice on X", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dynasty-superflex.php", "Aug 19 Superflex ranks via FantasyPros."),
@@ -571,12 +588,12 @@ KEEP_SOURCES = [
 ]
 PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
-    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/consensus-cheatsheets.php", "Published top overlay, Aug 20."),
+    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 20."),
     ("ESPN — Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
 ]
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
-    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "August consensus."),
+    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 19."),
     ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1–2–3."),
 ]
 
@@ -1551,10 +1568,12 @@ def main():
 
     # ROOKIES
     rook_rows = []
+    fp_rook = {norm_name(n): r for n, r in load_rank_names("fp-rookies").items()}
     for r in ROOKIES:
-        nums = [x for x in (r["dd"], r["fp"], r["pff"]) if x]
+        fp = fp_rook.get(norm_name(r["name"])) or r["fp"]
+        nums = [x for x in (r["dd"], fp, r["pff"]) if x]
         avg = round(sum(nums) / len(nums), 2) if nums else 99.0
-        rook_rows.append({**r, "bk": 0, "avg": avg, "dd": r["dd"] or "—", "fp": r["fp"] or "—", "pff": r["pff"] or "—", "blurb": r["value"]})
+        rook_rows.append({**r, "bk": 0, "avg": avg, "dd": r["dd"] or "—", "fp": fp or "—", "pff": r["pff"] or "—", "blurb": r["value"]})
     rook_rows.sort(key=lambda r: r["avg"])
     for i, r in enumerate(rook_rows, 1):
         r["bk"] = i

@@ -47,7 +47,10 @@ Rank 1 is 12,000. 1QB Dynasty uses the same Superflex ranks but taxes quarterbac
 
 ## Rebuild
 ```bash
+python3 scripts/refresh_ranks.py
+python3 scripts/news_scrape.py --sport both
 python3 scripts/build_site.py
+python3 bot/test_catalog.py
 ```
 
 ## BK News
