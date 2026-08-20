@@ -132,16 +132,30 @@ def _rank_th(label):
     cls = ""
     if label == "BK Value":
         cls = "c-val"
+    elif label == "Age":
+        cls = "c-age"
     elif label not in ("BK", "Player", "Pos", "Team"):
         cls = "desk-only"
     attr = f' class="{cls}"' if cls else ""
     return f"<th{attr}>{esc(label)}</th>"
 
 
-def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix=""):
+def face_src(r, media, depth=1):
+    key = r.get("key") or ""
+    slug = slugify(r.get("name") or "")
+    m = (media or {}).get(key) or (media or {}).get(slug) or {}
+    img = m.get("image") or "img/bb-logo.jpg"
+    return "../" * depth + img
+
+
+def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", media=None, faces=False, show_age=False, depth=1):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
-    head = "".join(_rank_th(h) for h in ["BK", "Player", "Pos", "Team"] + extra_headers)
+    media = media or {}
+    cols = ["BK", "Player", "Pos", "Team"]
+    if show_age:
+        cols.append("Age")
+    head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
         pos = r.get("pos") or ""
@@ -149,21 +163,34 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix=""):
         team = r.get("team") or ""
         slug = slugify(r["name"])
         href = f"{player_prefix}players/{slug}.html"
+        age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
+        if show_age and not age_txt:
+            age_txt = str((media.get(r.get("key") or "") or {}).get("age") or "")
+        age_bit = f" · {age_txt}" if show_age and age_txt else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos0)}">{esc(pos)}</span>'
-            f" · {esc(team)}</div>"
+            f" · {esc(team)}{esc(age_bit)}</div>"
+        )
+        face = ""
+        if faces:
+            face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
+        age_td = f'<td class="c-age">{esc(age_txt or "—")}</td>' if show_age else ""
+        stack = (
+            f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
+            f'<strong>{esc(r["name"])}</strong></a>{meta}</span>'
         )
         body.append(
             f'<tr data-pos="{esc(pos0)}" data-group="{esc(r.get("group") or "")}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name"><a class="player-link" href="{esc(href)}"><strong>{esc(r["name"])}</strong></a>{meta}</td>'
+            f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos0)}">{esc(pos)}</span></td>'
             f'<td class="c-team">{esc(team)}</td>'
-            f"{extra_cells(r)}"
+            f"{age_td}{extra_cells(r)}"
             "</tr>"
         )
+    cls = "rank-table faces" if faces else "rank-table"
     return (
-        f'<div class="table-wrap"><table class="rank-table">'
+        f'<div class="table-wrap"><table class="{cls}">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
     )
 
@@ -886,6 +913,10 @@ def write_baseball_site():
     keep, lineup, pitchers = u["keep"], u["lineup"], u["pitchers"]
     saves, svh, redraft = u["saves"], u["svh"], u["redraft"]
     picks = [{"id": slugify(p["name"]), **p} for p in u["picks"]]
+    media = load_bb_media()
+    for r in keep:
+        if r.get("age") in (None, "") and media.get(r.get("key") or ""):
+            r["age"] = media[r["key"]].get("age") or ""
     roster = keep_as_roster(keep)
     stories = rematch_stories(load_news_stories("baseball"), build_player_index(roster))
     news_by_player = defaultdict(list)
@@ -947,9 +978,9 @@ def write_baseball_site():
     keep_body = f"""
     <p class="kicker">Keystone · Overall Dynasty</p>
     <h2>The Keep</h2>
-    <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — 23 boards, two of them 500 names long. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
+    <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — 23 boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
     {flt}
-    <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {sources_panel()}
     """
     write("bb/the-keep.html", bb_page("The Keep", "the-keep.html", keep_body, js))

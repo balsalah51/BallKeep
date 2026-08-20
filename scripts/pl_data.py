@@ -218,6 +218,7 @@ def index_players(raw=None):
             "key": key,
             "id": e.get("id"),
             "name": full or web,
+            "full_name": legal or full or web,
             "web_name": web,
             "pos": POS.get(e.get("element_type"), ""),
             "team": team.get("short_name") or "",

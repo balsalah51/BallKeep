@@ -112,6 +112,8 @@ def _rank_th(label):
         cls = "c-val"
     elif label == "£":
         cls = "c-price"
+    elif label == "Age":
+        cls = "c-age"
     elif label not in ("PK", "Player", "Pos", "Club"):
         cls = "desk-only"
     attr = f' class="{cls}"' if cls else ""
@@ -126,33 +128,44 @@ def face_src(r, media, depth=1):
     return prefix + img
 
 
-def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", media=None, faces=False, depth=1):
+def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", media=None, faces=False, depth=1, full_names=False, show_age=False):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
-    head = "".join(_rank_th(h) for h in ["PK", "Player", "Pos", "Club"] + extra_headers)
+    cols = ["PK", "Player", "Pos", "Club"]
+    if show_age:
+        cols.append("Age")
+    head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
         pos = r.get("pos") or ""
         team = r.get("team") or ""
         price = r.get("price")
+        label = ((r.get("full_name") or r.get("name") or "").strip() if full_names else r["name"])
         slug = slugify(r["name"])
         href = f"{player_prefix}players/{slug}.html"
         price_bit = f" · £{price}" if price not in (None, "") else ""
+        age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
+        age_bit = f" · {age_txt}" if show_age and age_txt else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
-            f" · {esc(team)}{esc(price_bit)}</div>"
+            f" · {esc(team)}{esc(age_bit)}{esc(price_bit)}</div>"
         )
         face = ""
         if faces:
             face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
+        age_td = f'<td class="c-age">{esc(age_txt or "—")}</td>' if show_age else ""
+        stack = (
+            f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
+            f"<strong>{esc(label)}</strong></a>{meta}</span>"
+        )
         body.append(
             f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or pos)}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name">{face}<a class="player-link" href="{esc(href)}"><strong>{esc(r["name"])}</strong></a>{meta}</td>'
+            f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
             f'<td class="c-team">{esc(team)}</td>'
-            f"{extra_cells(r)}</tr>"
+            f"{age_td}{extra_cells(r)}</tr>"
         )
     cls = "rank-table faces" if faces else "rank-table"
     return (
@@ -596,12 +609,13 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp):
             ) if x
         )
         prem_rk = lists.get("The Premier")
+        label = (r.get("full_name") or r.get("name") or "").strip()
         body = f"""
     <p class="kicker">Player File · {esc(r.get("pos") or "")} {esc(r.get("team") or "")} · Premier #{prem_rk or "—"}</p>
     <div class="player-hero">
-      <img src="{esc(img_src)}" alt="{esc(r['name'])}" />
+      <img src="{esc(img_src)}" alt="{esc(label)}" />
       <div>
-        <h2>{esc(r["name"])}</h2>
+        <h2>{esc(label)}</h2>
         <p class="note">{esc(bio)}</p>
       </div>
     </div>
@@ -616,12 +630,12 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp):
     {neighbors(ordered, i, "On The Premier nearby")}
     <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-premier.html">The Premier</a> · <a href="../the-pitch.html">The Pitch</a> · <a href="../trade.html">Calculator</a></p>
     """
-        write(f"pl/players/{slug}.html", pl_page(r["name"], f"players/{slug}.html", body, depth=2))
+        write(f"pl/players/{slug}.html", pl_page(label, f"players/{slug}.html", body, depth=2))
         keep_html.add(f"{slug}.html")
         cards.append(
             f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}" data-group="{esc(r.get("group") or "")}">'
             f'<img src="../../{esc(img)}" alt="" />'
-            f'<h3>{esc(r["name"])}</h3>'
+            f'<h3>{esc(label)}</h3>'
             f'<p>{esc(r.get("pos") or "")} {esc(r.get("team") or "")} · Premier #{prem_rk or "—"}</p></a>'
         )
         urls.append(f"https://ballkeep.com/pl/players/{slug}.html")
@@ -629,6 +643,7 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp):
             "key": r["key"],
             "slug": slug,
             "name": r["name"],
+            "full_name": r.get("full_name") or r["name"],
             "pos": r.get("pos") or "",
             "team": r.get("team") or "",
             "team_name": r.get("team_name") or "",
@@ -674,7 +689,7 @@ def trade_payload(label, file, blurb, rows):
     for r in rows:
         players.append({
             "id": slugify(r["name"]),
-            "name": r["name"],
+            "name": r.get("full_name") or r["name"],
             "pos": r.get("pos") or "",
             "team": r.get("team") or "",
             "rank": r["bk"],
@@ -754,14 +769,14 @@ def write_pitch_site():
     premier_body = f"""
     <p class="kicker">Flagship · Third PK List · {UPDATED}</p>
     <h2>The Premier</h2>
-    <p class="note">Top 400. <strong>50% Sleeper BPL 2025 rank</strong> (last season's counting stats on default Sleeper soccer scoring) and <strong>50% consensus of every other board</strong> — FPL points, price, GW1 ownership, ICT, xGI, EP, form, and the short expert tapes. That is List 1 (the 24-board mash) and List 2 (The Pitch) averaged into one ranking, with the headshot on the row and five paragraphs on the file. BK Value uses this rank (12,000 at 1.01).</p>
+    <p class="note">Top 400. <strong>50% Sleeper BPL 2025 rank</strong> (last season's counting stats on default Sleeper soccer scoring) and <strong>50% consensus of every other board</strong> — FPL points, price, GW1 ownership, ICT, xGI, EP, form, and the short expert tapes. Full legal names and ages sit on the row with the headshot. That is List 1 (the 24-board mash) and List 2 (The Pitch) averaged into one ranking, with five paragraphs on the file. BK Value uses this rank (12,000 at 1.01).</p>
     <section class="panel">
       <p class="kicker">How the hybrid works</p>
       <h3>Production gets a vote. So does the industry.</h3>
       <p class="note">Sleeper BPL 2025 is one number. The mean of FPL + Scout + Fix + Yahoo + Hub + Athletic + Sky + BBC + ESPN + WhoScored + SofaScore + Understat + Draft + Planet + LiveFPL is the other. Unranked names are skipped, never treated as 999. A Brentford keeper who stacked 109 saves stays huge on The Pitch and cools here; a Bukayo Saka down year climbs because the other boards still believe. Filter by position. Open the file for the take.</p>
     </section>
     {flt}
-    <div class="panel">{rank_table(premier, ["Hybrid", "Sleeper rk", "Cons.", "Sleeper", "FPL", "G", "A", "Boards", "£", "BK Value"], premier_cell, media=media, faces=True)}</div>
+    <div class="panel">{rank_table(premier, ["Hybrid", "Sleeper rk", "Cons.", "Sleeper", "FPL", "G", "A", "Boards", "£", "BK Value"], premier_cell, media=media, faces=True, full_names=True, show_age=True)}</div>
     {sources_panel()}
     """
     write("pl/the-premier.html", pl_page("The Premier", "the-premier.html", premier_body, js))

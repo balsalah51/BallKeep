@@ -4,10 +4,12 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -77,6 +79,36 @@ def norm_name(name: str) -> str:
     return aliases.get(n, n)
 
 
+def age_from_sleeper(p) -> str | int:
+    birth = p.get("birth_date") or ""
+    if birth:
+        try:
+            y, m, d = [int(x) for x in str(birth)[:10].split("-")]
+            today = date(2026, 8, 20)
+            return today.year - y - ((today.month, today.day) < (m, d))
+        except Exception:
+            pass
+    age = p.get("age")
+    return age if age not in (None, "") else ""
+
+
+def ensure_sleeper() -> bool:
+    SLEEPER.parent.mkdir(parents=True, exist_ok=True)
+    if SLEEPER.exists() and SLEEPER.stat().st_size > 50_000:
+        return True
+    print("downloading sleeper nfl players...")
+    try:
+        data = get("https://api.sleeper.app/v1/players/nfl", timeout=120)
+        if len(data) < 50_000:
+            print("sleeper payload too small", len(data))
+            return False
+        SLEEPER.write_bytes(data)
+        return True
+    except Exception as e:
+        print("sleeper download failed", e)
+        return False
+
+
 def slugify(name: str) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", norm_name(name))
     return s.strip("-")
@@ -122,7 +154,8 @@ def sleeper_index():
             "pos": pos,
             "team": team,
             "college": p.get("college") or "",
-            "age": p.get("age"),
+            "age": age_from_sleeper(p),
+            "birth_date": p.get("birth_date") or "",
             "years_exp": p.get("years_exp"),
             "score": score,
         }
@@ -277,13 +310,20 @@ def wiki_thumb(name):
 
 
 def main():
+    photos_only = "--photos-only" in sys.argv
+    keep_only = "--keep-only" in sys.argv
     roster = json.loads((ROOT / "data" / "player_roster.json").read_text())
+    if keep_only:
+        roster = [p for p in roster if "The Keep" in (p.get("lists") or {})]
+    ensure_sleeper()
     sleep_idx = sleeper_index() if SLEEPER.exists() else {}
     media = {}
     if OUT.exists():
         media = json.loads(OUT.read_text())
 
-    for p in roster:
+    IMG.mkdir(parents=True, exist_ok=True)
+    n_img = n_age = n_miss = 0
+    for i, p in enumerate(roster, 1):
         key = p["key"]
         slug = p["slug"]
         name = p["name"]
@@ -293,21 +333,45 @@ def main():
             "is_rookie": key in ROOKIE_KEYS, "college": COLLEGE.get(key, rec.get("college", "")),
         })
 
+        sp = sleep_idx.get(key)
+        if not sp:
+            # last-name + team fallback among sleeper rows
+            last = key.split()[-1] if key else ""
+            team = (p.get("team") or "").upper()
+            hits = [
+                v for v in sleep_idx.values()
+                if last and last in (v.get("name") or "").lower()
+                and (not team or (v.get("team") or "").upper() == team)
+                and (v.get("pos") or "") == (p.get("pos") or "")
+            ]
+            if len(hits) == 1:
+                sp = hits[0]
+        if sp:
+            rec["sleeper_id"] = sp["sleeper_id"]
+            rec["espn_id"] = sp.get("espn_id") or rec.get("espn_id") or ""
+            if sp.get("college"):
+                rec["college"] = rec.get("college") or sp["college"]
+            if sp.get("age") not in (None, ""):
+                rec["age"] = sp["age"]
+                n_age += 1
+            elif p.get("age") not in (None, ""):
+                rec["age"] = p["age"]
+        elif p.get("age") not in (None, "") and rec.get("age") in (None, ""):
+            rec["age"] = p["age"]
+
         dest = IMG / f"{slug}.jpg"
         png = IMG / f"{slug}.png"
         if not dest.exists() and png.exists():
             dest = png
-        if not dest.exists() and not png.exists():
-            sp = sleep_idx.get(key)
+        have_file = dest.exists() or png.exists()
+        if have_file:
+            rec["image"] = f"img/players/{dest.name if dest.exists() else png.name}"
+        else:
             urls = []
-            if sp and sp.get("espn_id"):
-                urls.append(f"https://a.espncdn.com/i/headshots/nfl/players/full/{sp['espn_id']}.png")
-            if sp:
-                urls.append(f"https://sleepercdn.com/content/nfl/players/{sp['sleeper_id']}.jpg")
-                rec["sleeper_id"] = sp["sleeper_id"]
-                rec["espn_id"] = sp.get("espn_id")
-                if sp.get("college"):
-                    rec["college"] = rec.get("college") or sp["college"]
+            if rec.get("espn_id"):
+                urls.append(f"https://a.espncdn.com/i/headshots/nfl/players/full/{rec['espn_id']}.png")
+            if rec.get("sleeper_id"):
+                urls.append(f"https://sleepercdn.com/content/nfl/players/{rec['sleeper_id']}.jpg")
             espn = espn_search_headshot(name)
             if espn:
                 urls.append(espn)
@@ -315,12 +379,10 @@ def main():
             if wiki:
                 urls.append(wiki)
             if key in COLLEGE:
-                wiki2 = wiki_thumb(f"{name} (American football)")
-                if wiki2:
-                    urls.append(wiki2)
-                wiki3 = wiki_thumb(f"{name} football")
-                if wiki3:
-                    urls.append(wiki3)
+                for title in (f"{name} (American football)", f"{name} football"):
+                    wiki2 = wiki_thumb(title)
+                    if wiki2:
+                        urls.append(wiki2)
             saved = False
             for u in urls:
                 ext = ".png" if ".png" in u.split("?")[0].lower() else ".jpg"
@@ -328,15 +390,16 @@ def main():
                 if download_image(u, target):
                     rec["image"] = f"img/players/{slug}{ext}"
                     saved = True
+                    n_img += 1
                     print("img", name, u[:80])
                     break
             if not saved:
-                rec["image"] = ""
+                rec["image"] = rec.get("image") or ""
+                n_miss += 1
                 print("NOIMG", name)
-        else:
-            rec["image"] = f"img/players/{dest.name if dest.exists() else png.name}"
+            time.sleep(0.05)
 
-        if not rec.get("youtube_id"):
+        if not photos_only and not rec.get("youtube_id"):
             is_rook = key in ROOKIE_KEYS
             college = rec.get("college") or COLLEGE.get(key, "")
             if is_rook:
@@ -374,9 +437,14 @@ def main():
             time.sleep(0.35)
 
         media[key] = rec
-        OUT.write_text(json.dumps(media, indent=2))
+        if i % 25 == 0:
+            OUT.write_text(json.dumps(media, indent=2))
+            print("progress", i, "/", len(roster), "photos", sum(1 for v in media.values() if v.get("image")))
 
-    print("done", len(media))
+    OUT.write_text(json.dumps(media, indent=2))
+    have = sum(1 for v in media.values() if v.get("image"))
+    aged = sum(1 for v in media.values() if v.get("age") not in (None, ""))
+    print("done", len(media), "photos", have, "new", n_img, "ages", aged, "noimg", n_miss)
 
 
 if __name__ == "__main__":
