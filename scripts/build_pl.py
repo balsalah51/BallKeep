@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 UPDATED = "August 20, 2026"
 
 from pl_data import PL_SOURCES, bk_value, load_universe  # noqa: E402
+from seo import canon, clip, dual_metric_graph, grafs_html, head_tags, rank_spread_graph, value_bars  # noqa: E402
 
 
 def esc(s):
@@ -58,7 +59,76 @@ def sport_footer(depth=1):
     )
 
 
-def pl_page(title, path, body, extra_js="", depth=1):
+PL_SEO = {
+    "index.html": (
+        "PitchKeep | Premier League Rankings on Sleeper BPL 2025 Points",
+        "Purple-and-pitch desk for the Premier League. The Pitch top 400 is default Sleeper soccer scoring on 2025/26 counting stats. Haaland is #1, Bruno #2.",
+        "img/pl-hero.jpg",
+    ),
+    "the-pitch.html": (
+        "The Pitch — Sleeper BPL 2025 Premier League Rankings (Top 400) | PitchKeep",
+        "Overall Premier League top 400 ranked on Sleeper BPL 2025 points. FWD/MID goals 9, DEF/GKP 10, assists 6/7. Erling Haaland leads at 317.2.",
+        "img/pl-logo.jpg",
+    ),
+    "attack.html": (
+        "Premier League Forward Rankings — Sleeper BPL 2025 | PitchKeep",
+        "FPL forwards re-ranked on Sleeper BPL 2025 points. Haaland is the tax. Igor Thiago and João Pedro are the volume argument.",
+        "img/pl-logo.jpg",
+    ),
+    "midfield.html": (
+        "Premier League Midfielder Rankings — Sleeper BPL 2025 | PitchKeep",
+        "Sleeper pays assists. Bruno Fernandes, Antoine Semenyo, Declan Rice — The Pitch midfield 150.",
+        "img/pl-logo.jpg",
+    ),
+    "defence.html": (
+        "Premier League Defender Rankings — Sleeper BPL 2025 | PitchKeep",
+        "Clean sheets are 6 points and goals against are −2. Gabriel Magalhães outscores half the midfield on this table.",
+        "img/pl-logo.jpg",
+    ),
+    "keepers.html": (
+        "Premier League Goalkeeper Rankings — Sleeper BPL 2025 | PitchKeep",
+        "Saves at 2 and clean sheets at 8. Kelleher, Raya, and Donnarumma is the real fight.",
+        "img/pl-logo.jpg",
+    ),
+    "trade.html": (
+        "Premier League Fantasy Trade Calculator | PitchKeep",
+        "Pitch, Attack, Midfield, Defence, Keepers. Rank becomes BK Value. Fair is within 8%.",
+        "img/pl-logo.jpg",
+    ),
+    "players/index.html": (
+        "Premier League Player Files — Sleeper BPL 2025 | PitchKeep",
+        "Every Pitch 400 name: Sleeper points, 2025/26 line, every board, tape.",
+        "img/pl-logo.jpg",
+    ),
+    "trade-pitch.html": (
+        "The Pitch Trade Calculator | PitchKeep",
+        "Trade calculator on The Pitch overall Sleeper BPL 2025 ranks. Rank becomes BK Value. Fair is within 8%.",
+        "img/pl-logo.jpg",
+    ),
+    "trade-attack.html": (
+        "Premier League Forward Trade Calculator | PitchKeep",
+        "Attack-only trade calculator. Rank becomes BK Value. Fair is within 8%.",
+        "img/pl-logo.jpg",
+    ),
+    "trade-midfield.html": (
+        "Premier League Midfielder Trade Calculator | PitchKeep",
+        "Midfield-only trade calculator. Rank becomes BK Value. Fair is within 8%.",
+        "img/pl-logo.jpg",
+    ),
+    "trade-defence.html": (
+        "Premier League Defender Trade Calculator | PitchKeep",
+        "Defence-only trade calculator. Rank becomes BK Value. Fair is within 8%.",
+        "img/pl-logo.jpg",
+    ),
+    "trade-keepers.html": (
+        "Premier League Goalkeeper Trade Calculator | PitchKeep",
+        "Keepers-only trade calculator. Rank becomes BK Value. Fair is within 8%.",
+        "img/pl-logo.jpg",
+    ),
+}
+
+
+def pl_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None):
     prefix = "../" * depth
     links = []
     for href, label in PL_NAV:
@@ -70,13 +140,16 @@ def pl_page(title, path, body, extra_js="", depth=1):
         else:
             target = href
         links.append(f'<a href="{esc(target)}"{cur}>{esc(label)}</a>')
+    packed = PL_SEO.get(path)
+    full_title = doc_title or (packed[0] if packed else f"{title} | PitchKeep")
+    desc = description or (packed[1] if packed else f"{title} on PitchKeep. Premier League rankings on Sleeper BPL 2025 points. Updated {UPDATED}.")
+    img = image or (packed[2] if packed else "img/pl-logo.jpg")
     return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{esc(title)} — PitchKeep</title>
-  <meta name="description" content="PitchKeep Premier League rankings. The Pitch top 400, ranked on Sleeper BPL 2025 points." />
+{head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep")}
   <link rel="stylesheet" href="{prefix}css/pl.css" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
@@ -86,7 +159,7 @@ def pl_page(title, path, body, extra_js="", depth=1):
       <a class="brand" href="{'index.html' if depth == 1 else '../index.html'}">
         <img src="{prefix}img/pl-logo.jpg" alt="PitchKeep circular soccer logo" />
         <div>
-          <h1>{wordmark()}</h1>
+          <p class="brand-title">{wordmark()}</p>
           <p>Premier League · FPL · The Pitch</p>
         </div>
       </a>
@@ -470,7 +543,13 @@ def pl_grafs(r, lists, media):
     if xg or xa:
         bits.append(f"{xg} xG / {xa} xA")
     graf = " · ".join(str(b) for b in bits)
-    return plus[:4], minus[:4], [graf] if graf else []
+    grafs = [graf] if graf else []
+    if r.get("sleeper_pts") not in (None, "", 0, 0.0) and r.get("pts"):
+        grafs.append(
+            f"Sleeper BPL 2025 scores this {r.get('pos') or 'player'} at {r['sleeper_pts']} "
+            f"on 2025/26 counting stats; official FPL had {r['pts']}."
+        )
+    return plus[:4], minus[:4], grafs
 
 
 def list_cards(lists, r):
@@ -529,12 +608,18 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
                 f"£{r['price']}m" if r.get("price") else "",
             ) if x
         )
+        seo_title = f"{r['name']} PitchKeep Rank #{r['bk']} ({r.get('pos') or ''} {r.get('team') or ''})".strip()
+        seo_desc = clip(
+            f"{r['name']} is PitchKeep #{r['bk']} on Sleeper BPL 2025 points "
+            f"({r.get('sleeper_pts') or '—'} pts, {r.get('gls') or 0}G {r.get('ast') or 0}A). "
+            f"{r.get('pos') or ''} {r.get('team_name') or r.get('team') or ''}. Updated {UPDATED}."
+        )
         body = f"""
     <p class="kicker">Player File · {esc(r.get("pos") or "")} {esc(r.get("team") or "")}</p>
     <div class="player-hero">
       <img src="{esc(img_src)}" alt="{esc(r['name'])}" />
       <div>
-        <h2>{esc(r["name"])}</h2>
+        <h1>{esc(r["name"])}</h1>
         <p class="note">{esc(bio)}</p>
       </div>
     </div>
@@ -542,13 +627,30 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
     {season_box(r)}
     {news_flag(r)}
     {list_cards(lists, r)}
+    {grafs_html("The 2025/26 line", grafs, 2)}
     {plusminus_html(plus, minus)}
+    {dual_metric_graph([
+        ("Sleeper BPL", "#e8c547", r.get("sleeper_pts") or 0),
+        ("FPL points", "#00c853", r.get("pts") or 0),
+    ], "Sleeper vs FPL")}
+    {rank_spread_graph(r.get("ranks") or {}, fill="#e8c547", kicker="Board graph")}
     {video_block(media, r["name"])}
     {boards_table(r.get("ranks") or {})}
     {neighbors(pitch, i)}
     <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-pitch.html">The Pitch</a> · <a href="../trade.html">Calculator</a></p>
     """
-        write(f"pl/players/{slug}.html", pl_page(r["name"], f"players/{slug}.html", body, depth=2))
+        write(
+            f"pl/players/{slug}.html",
+            pl_page(
+                r["name"],
+                f"players/{slug}.html",
+                body,
+                depth=2,
+                doc_title=seo_title,
+                description=seo_desc,
+                image=img,
+            ),
+        )
         keep_html.add(f"{slug}.html")
         cards.append(
             f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}" data-group="{esc(r.get("group") or "")}">'
@@ -589,7 +691,7 @@ def write_player_pages(pitch, fwd, mid, defence, gkp):
     flt, js = filter_js(["FWD", "MID", "DEF", "GKP"])
     hub = f"""
     <p class="kicker">Player Files</p>
-    <h2>The Pitch, one name at a time</h2>
+    <h1>The Pitch, one name at a time</h1>
     <p class="note">The Pitch top 400. Sleeper BPL 2025 points, 2025/26 line, every board, tape. Filter the grid.</p>
     {flt}
     <div class="player-grid" id="pl-cards">{''.join(cards)}</div>
@@ -628,7 +730,7 @@ def trade_payload(label, file, blurb, rows):
 def write_trade(payload):
     body = f"""
     <p class="kicker">Trade Calculator</p>
-    <h2>{esc(payload["label"])}</h2>
+    <h1>{esc(payload["label"])}</h1>
     <p class="note">{esc(payload["blurb"])} Fair is within 8%. Same BK Value curve: rank 1 = 12,000.</p>
     <p class="filters">
       <a href="trade.html">All</a>
@@ -662,7 +764,7 @@ def write_pitch_site():
     <section class="hero" style="background-image:url('../img/pl-hero.jpg')">
       <div class="hero-card">
         <p class="kicker" style="color:#e8c547">Updated {UPDATED}</p>
-        <h2>{wordmark()}</h2>
+        <h1>{wordmark()}</h1>
         <p>A purple-and-pitch desk for the Premier League. The Pitch is Sleeper BPL 2025 points. Football and baseball still next door.</p>
       </div>
     </section>
@@ -682,8 +784,10 @@ def write_pitch_site():
     flt, js = filter_js(["FWD", "MID", "DEF", "GKP"])
     pitch_body = f"""
     <p class="kicker">Keystone · Sleeper BPL 2025</p>
-    <h2>The Pitch</h2>
+    <h1>The Pitch</h1>
     <p class="note">Top 400, rebuilt {UPDATED}. Order is default Sleeper soccer scoring on 2025/26 Premier League counting stats — goals, assists, clean sheets, goals against, cards, saves, penalties, tackles, and a CBI blend. That is a different sport than official FPL points: Haaland's 27 goals pay, Bruno's 24 assists pay, and keepers are real because saves and clean sheets stack. BK Value uses this rank on the same curve as football (12,000 at 1.01).</p>
+    {value_bars(pitch, 12, "#e8c547", "Sleeper points graph", key="sleeper_pts", heading="Sleeper BPL 2025, top 12", note="Default Sleeper soccer scoring on 2025/26 counting stats. Haaland is 317.2. Bruno is 293.8.")}
+    {value_bars(pitch, 12, "#00c853", "Pitch value graph")}
     <section class="panel">
       <p class="kicker">Sleeper default table</p>
       <h3>What last year's box score is worth here</h3>
@@ -703,8 +807,10 @@ def write_pitch_site():
     ]:
         body = f"""
     <p class="kicker">{esc(kicker)}</p>
-    <h2>{esc(title)}</h2>
+    <h1>{esc(title)}</h1>
     <p class="note">{esc(note)}</p>
+    {value_bars(rows, 12, "#e8c547", f"{title} points graph", key="sleeper_pts", heading=f"Sleeper BPL 2025 {title.lower()}, top 12", note="Same Sleeper table as The Pitch, this position only.")}
+    {value_bars(rows, 12, "#00c853", f"{title} value graph")}
     <div class="panel">{rank_table(rows, ["Sleeper", "FPL", "G", "A", "Min", "CS", "Tck", "£", "BK Value"], val_cell)}</div>
     {sources_panel()}
     """
@@ -722,7 +828,7 @@ def write_pitch_site():
     hub_tiles = [(m["file"], m["label"], m["blurb"]) for m in modes]
     trade_hub = f"""
     <p class="kicker">Trade Calculators</p>
-    <h2>Five Calculators, One Curve</h2>
+    <h1>Five Calculators, One Curve</h1>
     <p class="note">Rank becomes BK Value the same way it does on the football desk. Rank 1 is 12,000. Fair is within 8%.</p>
     <div class="grid">{''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in hub_tiles)}</div>
     """

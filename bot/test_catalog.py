@@ -89,6 +89,50 @@ def main():
     print("norm jsn", norm("JSN"))
     print("picks", len(cat.raw["picks"]), "nfl", len(cat.raw["nfl"]), "mlb", len(cat.raw["mlb"]))
 
+    root = Path(__file__).resolve().parents[1]
+
+    def html_of(rel: str) -> str:
+        p = root / rel
+        assert p.exists(), f"missing {rel}"
+        return p.read_text(encoding="utf-8")
+
+    def page_title(html: str) -> str:
+        return html.split("<title>", 1)[1].split("</title>", 1)[0]
+
+    def meta_desc(html: str) -> str:
+        return html.split('name="description" content="', 1)[1].split('"', 1)[0]
+
+    keep_html = html_of("the-keep.html")
+    keep_title = page_title(keep_html)
+    assert "Superflex" in keep_title, keep_title
+    assert 'property="og:title"' in keep_html
+    assert "bar-chart" in keep_html
+    generic = "Ball Keep dynasty and redraft rankings, trade calculators, schedules, and market notes."
+    assert generic not in keep_html
+
+    allen = html_of("players/josh-allen.html")
+    allen_title = page_title(allen)
+    assert "Rank #1" in allen_title, allen_title
+    assert generic not in meta_desc(allen)
+    assert "bar-chart" in allen
+    assert "<h1>Josh Allen</h1>" in allen
+
+    pitch_html = html_of("pl/the-pitch.html")
+    pitch_title = page_title(pitch_html)
+    assert "Sleeper" in pitch_title, pitch_title
+    assert "bar-chart" in pitch_html
+    assert "PitchKeep Premier League rankings. The Pitch top 400" not in pitch_html
+
+    haaland = html_of("pl/players/erling-haaland.html")
+    haaland_title = page_title(haaland)
+    assert "Pitch" in haaland_title or "317" in haaland_title, haaland_title
+    assert "bar-chart" in haaland
+    assert "<h1>Erling Haaland</h1>" in haaland
+
+    ohtani = html_of("bb/players/shohei-ohtani.html")
+    assert "Rank #" in page_title(ohtani)
+    assert "bar-chart" in ohtani
+
 
 if __name__ == "__main__":
     main()
