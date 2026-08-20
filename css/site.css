@@ -101,6 +101,14 @@ tr:hover td { background: rgba(200,16,46,0.04); }
 .pos.RB { background: #d7f0d9; }
 .pos.WR { background: #d6e4fb; }
 .pos.TE { background: #f7e6c8; }
+img.face {
+  width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: top center;
+  border: 2px solid var(--red); background: var(--powder); flex: 0 0 44px;
+  vertical-align: middle; margin-right: 10px;
+}
+.name-stack { min-width: 0; flex: 1; display: block; }
+table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
+.c-age { font-variant-numeric: tabular-nums; font-weight: 700; width: 48px; }
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
 .filters button, .filters a {
   border: 1px solid var(--line); background: var(--white); color: var(--ink);
@@ -258,8 +266,11 @@ table.boards tr.lo td { background: rgba(200,16,46,0.08); }
   table.rank-table .c-name a, table.rank-table .c-name strong {
     display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
+  table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  table.rank-table.faces img.face { width: 40px; height: 40px; margin-right: 0; flex: 0 0 40px; }
+  table.rank-table.faces .c-name a { min-width: 0; }
   table.rank-table .row-meta { display: block; font-size: 13px; color: var(--muted); font-weight: 700; margin-top: 2px; }
-  table.rank-table .c-pos, table.rank-table .c-team { display: none !important; }
+  table.rank-table .c-pos, table.rank-table .c-team, table.rank-table .c-age { display: none !important; }
   table.rank-table .c-val {
     grid-column: 3; grid-row: 1 / span 2; align-self: center;
     text-align: right; white-space: nowrap; font-size: 14px;
