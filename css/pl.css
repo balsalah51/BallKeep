@@ -54,13 +54,13 @@ nav a:hover, nav a[aria-current="page"] { color: var(--gold); }
 .panel.analysis p { line-height: 1.65; font-size: 16.5px; margin: 0 0 14px; }
 .panel.analysis p:last-child { margin-bottom: 0; }
 img.face {
-  width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: top center;
-  border: 2px solid var(--purple); background: var(--purple); flex: 0 0 44px;
-  vertical-align: middle; margin-right: 10px;
+  width: 28px; height: 28px; border-radius: 50%; object-fit: cover; object-position: top center;
+  border: 1px solid var(--purple); background: var(--purple); flex: 0 0 28px;
+  vertical-align: middle; margin-right: 8px;
 }
 .name-stack { min-width: 0; flex: 1; display: block; }
 table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
-.c-age { font-variant-numeric: tabular-nums; font-weight: 700; width: 48px; }
+.c-age { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
 .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 16px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .tile { display: block; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px; text-decoration: none; color: inherit; }
@@ -196,7 +196,7 @@ table.boards tr.lo td { background: rgba(200,16,46,0.08); }
     display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
   table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 8px; min-width: 0; }
-  table.rank-table.faces img.face { width: 40px; height: 40px; margin-right: 0; flex: 0 0 40px; }
+  table.rank-table.faces img.face { width: 24px; height: 24px; margin-right: 0; flex: 0 0 24px; }
   table.rank-table.faces .c-name a { min-width: 0; }
   table.rank-table .row-meta { display: block; font-size: 13px; color: var(--muted); font-weight: 700; margin-top: 2px; }
   table.rank-table .c-pos, table.rank-table .c-team, table.rank-table .c-age { display: none !important; }
