@@ -122,6 +122,9 @@ table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
   display: inline-block; margin: 18px 6px 0; padding: 12px 22px; border-radius: 999px;
   font-weight: 800; text-decoration: none; letter-spacing: 0.04em;
 }
+.sport-switch.fb {
+  background: #d6ebf7; color: #c8102e; border: 3px solid #c8102e;
+}
 .sport-switch.bb {
   background: #0b1f3a; color: #f4ebd0; border: 3px solid #1f6b3a;
 }

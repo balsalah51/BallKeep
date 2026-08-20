@@ -549,7 +549,6 @@ def redraft_lists():
 NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
-    ("news.html", "News"),
     ("trade.html", "Trade"),
     ("recent-trades.html", "Deals"),
     ("redraft-ppr.html", "Redraft PPR"),
@@ -558,6 +557,7 @@ NAV = [
     ("hot-n-cold.html", "Hot 'n' Cold"),
     ("board.html", "The Board"),
     ("players/index.html", "Players"),
+    ("news.html", "News"),
     ("nfl-schedule.html", "NFL"),
     ("mlb-schedule.html", "MLB"),
     ("discord.html", "Discord"),
@@ -671,6 +671,16 @@ ROOKIE_SOURCES = [
 ]
 
 
+def sister_sites(depth=0):
+    return (
+        '<div class="sister-sites">'
+        f'<a class="sport-switch fb" href="{nav_href("index.html", depth)}">Ball Keep</a>'
+        f'<a class="sport-switch bb" href="{nav_href("bb/index.html", depth)}">BaseBallKeep</a>'
+        f'<a class="sport-switch pl" href="{nav_href("pl/index.html", depth)}">PitchKeep</a>'
+        "</div>"
+    )
+
+
 def page(title, path, body, extra_js="", depth=0):
     links = []
     news_here = path == "news.html" or path.startswith("news/")
@@ -703,8 +713,7 @@ def page(title, path, body, extra_js="", depth=0):
     {body}
     <footer>
       © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL, MLB, or Premier League.
-      <div><a class="sport-switch bb" href="{nav_href('bb/index.html', depth)}">BaseBallKeep</a>
-      <a class="sport-switch pl" href="{nav_href('pl/index.html', depth)}">PitchKeep</a></div>
+      {sister_sites(depth)}
     </footer>
   </div>
   {extra_js}
@@ -1555,7 +1564,6 @@ def main():
     # HOME
     tiles = [
         ("the-keep.html", "The Keep", "Daily Superflex dynasty top 400. Our keystone board."),
-        ("news.html", "BK News", "Hourly injury, roster, and coach tape. Click a story for the aggregate and the sources."),
         ("trade.html", "Trade Calculators", "Four calculators. Rank becomes BK Value. Add two sides."),
         ("recent-trades.html", "Recent Deals", "Type a name. See the Superflex packages he actually moved in."),
         ("redraft-ppr.html", "Redraft PPR", "2026 startup board for full-PPR redraft."),
@@ -1564,6 +1572,7 @@ def main():
         ("hot-n-cold.html", "BK Hot 'n' Cold", "Buys and sells scraped from dynasty desks and film shows."),
         ("board.html", "The Board", "The long proprietary aggregate — every ranked name we pulled."),
         ("players/index.html", "Player Pages", "Keep top 400: plus/minus, tape, and a 2025 or college clip."),
+        ("news.html", "BK News", "Hourly injury, roster, and coach tape. Click a story for the aggregate and the sources."),
         ("nfl-schedule.html", "NFL Schedules", "2026 week-by-week slate and all 32 team pages."),
         ("mlb-schedule.html", "MLB Schedules", "September stretch run, filterable by club."),
         ("discord.html", "Discord", "The circular mark plus a bot that searches ranks, runs the calculator, drops tape, and can publish the whole site into a server."),
@@ -1598,10 +1607,10 @@ def main():
       <p class="note"><strong>Fantasy Baseball</strong> is the same split. Redraft/roto is this summer's counting stats. <strong>Dynasty Baseball</strong> prices the next five years — peak age, service time, and whether a 22-year-old shortstop is still a shortstop in 2030. ESPN's current dynasty formula weights 2027–2030 at 80% of value.</p>
       <p class="note">Ball Keep aggregates public expert boards (FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN Karabell, Draft Sharks, RotoWire, plus X ranks from Brown / Erickson / Fitzmaurice) into one number, then turns that rank into BK Value for the trade calculators. The Keep is 400 deep. Short expert lists still count — unranked is skipped, never 999. Baseball lives in <a href="bb/index.html">BaseBallKeep</a>. The Premier League lives in <a href="pl/index.html">PitchKeep</a> — purple, pitch green, The Premier hybrid 400, and The Pitch on Sleeper BPL 2025 points.</p>
     </section>
-    {latest_html}
     <div class="grid-3" style="margin-top:16px">
       {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
     </div>
+    {latest_html}
     """
     write("index.html", page("Home", "index.html", home_body))
 

@@ -52,11 +52,13 @@ def wordmark():
 
 def sport_footer(depth=1):
     prefix = "../" * depth
+    pl_home = "index.html" if depth == 1 else "../index.html"
     return (
-        f'<div>'
-        f'<a class="sport-switch fb" href="{prefix}index.html">Ball Keep Football</a>'
+        '<div class="sister-sites">'
+        f'<a class="sport-switch fb" href="{prefix}index.html">Ball Keep</a>'
         f'<a class="sport-switch bb" href="{prefix}bb/index.html">BaseBallKeep</a>'
-        f"</div>"
+        f'<a class="sport-switch pl" href="{pl_home}">PitchKeep</a>'
+        "</div>"
     )
 
 

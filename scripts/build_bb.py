@@ -51,7 +51,6 @@ def write(path, doc):
 BB_NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
-    ("news.html", "News"),
     ("the-lineup.html", "The Lineup"),
     ("pitchers.html", "BK's Pitchers"),
     ("bullpen.html", "Bullpen SV"),
@@ -61,11 +60,24 @@ BB_NAV = [
     ("waivers-dynasty.html", "Dynasty Wire"),
     ("waivers-redraft.html", "Redraft Wire"),
     ("players/index.html", "Players"),
+    ("news.html", "News"),
 ]
 
 
 def wordmark():
     return '<span class="word-base">BASE</span><span class="word-ball">BALL</span><span class="word-keep">KEEP</span>'
+
+
+def sister_sites(depth=1):
+    prefix = "../" * depth
+    bb_home = "index.html" if depth == 1 else "../index.html"
+    return (
+        '<div class="sister-sites">'
+        f'<a class="sport-switch fb" href="{prefix}index.html">Ball Keep</a>'
+        f'<a class="sport-switch bb" href="{bb_home}">BaseBallKeep</a>'
+        f'<a class="sport-switch pl" href="{prefix}pl/index.html">PitchKeep</a>'
+        "</div>"
+    )
 
 
 def bb_nav_target(href: str, path: str, depth: int) -> str:
@@ -92,7 +104,6 @@ def bb_page(title, path, body, extra_js="", depth=1):
         cur = ' aria-current="page"' if bb_nav_current(href, path) else ""
         target = bb_nav_target(href, path, depth)
         links.append(f'<a href="{esc(target)}"{cur}>{esc(label)}</a>')
-    fb = f"{prefix}index.html"
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -118,8 +129,7 @@ def bb_page(title, path, body, extra_js="", depth=1):
     {body}
     <footer>
       © {date.today().year} BaseBallKeep · ballkeep.com/bb · Rankings aggregated {UPDATED}. Not affiliated with MLB.
-      <div><a class="sport-switch fb" href="{fb}">Ball Keep Football</a>
-      <a class="sport-switch pl" href="{prefix}pl/index.html">PitchKeep</a></div>
+      {sister_sites(depth)}
     </footer>
   </div>
   {extra_js}
@@ -1098,7 +1108,6 @@ def write_baseball_site():
 
     tiles = [
         ("the-keep.html", "The Keep", "Overall dynasty top 400. 23-board aggregate."),
-        ("news.html", "BK News", "Hourly IL, roster, and manager tape. Click a story for the aggregate and the sources."),
         ("the-lineup.html", "The Lineup", "Dynasty hitters only. The bats you keep."),
         ("pitchers.html", "BK's Pitchers", "Top 150 dynasty arms, SP and the two-way unicorn."),
         ("bullpen.html", "Bullpen — Saves", "Top 100 relief pitchers for saves leagues."),
@@ -1108,6 +1117,7 @@ def write_baseball_site():
         ("waivers-dynasty.html", "Dynasty Wire", "Prospects and IL stashes. Short on purpose."),
         ("waivers-redraft.html", "Redraft Wire", "Priority 1–50. Longer. This week matters."),
         ("players/index.html", "Player Files", "Keep top 400, one cream card each."),
+        ("news.html", "BK News", "Hourly IL, roster, and manager tape. Click a story for the aggregate and the sources."),
     ]
     latest_news = stories[:5]
     latest_html = ""
@@ -1136,11 +1146,11 @@ def write_baseball_site():
       <p class="note"><strong>Redraft baseball</strong> is this summer's counting stats — you stream arms, you chase saves, you survive September. <strong>Dynasty baseball</strong> prices the next five years: peak age, prospect lists, and whether a 22-year-old shortstop is still a shortstop in 2030.</p>
       <p class="note">The Keep is an overall dynasty top 400 aggregated from 23 public boards, led by RotoGraphs' Aug 14 discounted-dollar model and The Dynasty Guru's Aug 10 points Top 500. The Lineup strips the pitchers (every hitter we can pin, up to 400). BK's Pitchers is the other half (150). The bullpen is two sports: saves, then saves-plus-holds.</p>
     </section>
-    {latest_html}
     <p class="note" style="margin-top:18px"><img src="../img/bb-stitch.jpg" alt="Baseball on forest grass" style="width:100%;border-radius:16px" /></p>
     <div class="grid-3" style="margin-top:16px">
       {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
     </div>
+    {latest_html}
     """
     write("bb/index.html", bb_page("Home", "index.html", home))
 
