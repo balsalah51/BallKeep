@@ -13,6 +13,7 @@ Powder-blue ranks. Red ink. Nicknames, spoilers, and a theatrical keep-or-cut bu
 | `/search jsn` | Fuzzy + nicknames (JSN, CMC, Sun God, BTJ, TLaw, MHJ…) |
 | `/rank` `/top` `/pos` | Any list: Keep, Board, PPR, Standard, Rookies — or just the QBs |
 | `/trade` | Superflex / 1QB / PPR / Standard calculator |
+| `/deals JSN` | Recent packages involving a player (same tape as the site) |
 | `/value` `/picks` `/formula` | One name, every future pick, or the decaying curve itself |
 | `/video` | 2025 NFL or college clip from the player page |
 | `/hot` `/cold` `/hottake` `/rookies` | Market tape, a random buy/sell, the 2026 class |

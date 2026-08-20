@@ -415,6 +415,18 @@ class Catalog:
             if t in {(g.get("away") or "").upper(), (g.get("home") or "").upper()}
         ]
 
+    def deals_for(self, query: str = "") -> list[dict]:
+        rows = list(self.raw.get("deals") or [])
+        q = norm(query)
+        if not q:
+            return rows
+        hits = []
+        for d in rows:
+            names = [norm(n) for n in d.get("names") or []]
+            if any(q == n or q in n or n.startswith(q) for n in names):
+                hits.append(d)
+        return hits
+
     def youtube(self, player: dict) -> str | None:
         yid = player.get("youtube_id")
         if not yid:

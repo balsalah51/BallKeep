@@ -218,7 +218,7 @@ def build_bot():
         )
         emb.add_field(
             name="Make a deal",
-            value="`/trade` `/value` `/picks` `/formula`  ·  `/trade Superflex Allen, 2027 Mid 1st vs Bijan, JSN`",
+            value="`/trade` `/value` `/picks` `/formula` `/deals`  ·  `/deals JSN`",
             inline=False,
         )
         emb.add_field(
@@ -298,6 +298,38 @@ def build_bot():
     async def trade_cmd(interaction: discord.Interaction, mode: app_commands.Choice[str], side_a: str, side_b: str):
         result = desk.cat.trade(mode.value, side_a, side_b)
         await interaction.response.send_message(embed=trade_embed(discord, result))
+
+    @bot.tree.command(name="deals", description="Recent Superflex packages involving a player")
+    @app_commands.describe(name="Player or nickname. Leave blank for the newest deals.")
+    @app_commands.autocomplete(name=ac_player)
+    async def deals_cmd(interaction: discord.Interaction, name: Optional[str] = None):
+        rows = desk.cat.deals_for(name or "")
+        if not rows:
+            await interaction.response.send_message(
+                f"No packages on the tape for **{name}**. Try `/deals JSN`.",
+                ephemeral=True,
+            )
+            return
+        title = f"Recent deals · {name}" if name else "Recent deals"
+        emb = discord.Embed(
+            title=title,
+            description=f"{len(rows)} package{'s' if len(rows) != 1 else ''} on the desk tape. Same log as ballkeep.com/recent-trades.html",
+            color=BLUE,
+            url="https://ballkeep.com/recent-trades.html" + (f"?q={name}" if name else ""),
+        )
+        for d in rows[:8]:
+            def bits(side):
+                return ", ".join(x["name"] for x in side)
+            tag = "asking" if d.get("kind") == "asking" else "closed"
+            emb.add_field(
+                name=f"{d.get('date')} · {d.get('format')} · {d.get('label')} ({tag})",
+                value=f"**A** {bits(d.get('a') or [])} `{fmt(d.get('total_a'))}`\n"
+                      f"**B** {bits(d.get('b') or [])} `{fmt(d.get('total_b'))}`\n"
+                      f"{(d.get('blurb') or '')[:180]}",
+                inline=False,
+            )
+        emb.set_footer(text=random.choice(QUIPS))
+        await interaction.response.send_message(embed=emb)
 
     @bot.tree.command(name="value", description="BK Value for a player or pick on a calculator")
     @app_commands.describe(name="Player or pick (2027 Mid 1st)", mode="Calculator")

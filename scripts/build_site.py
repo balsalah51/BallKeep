@@ -22,6 +22,7 @@ from extra_ranks import (  # noqa: E402
     as_ranks,
 )
 from player_copy import get_copy  # noqa: E402
+from recent_trades import enrich_deals  # noqa: E402
 
 
 def esc(s):
@@ -479,6 +480,7 @@ NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
     ("trade.html", "Trade"),
+    ("recent-trades.html", "Deals"),
     ("redraft-ppr.html", "Redraft PPR"),
     ("redraft-standard.html", "Redraft STD"),
     ("rookies-2026.html", "2026 Rookies"),
@@ -846,7 +848,7 @@ def render_player_pages(profiles):
     </section>
     {video}
     {related}
-    <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../hot-n-cold.html">Hot 'n' Cold</a></p>
+    <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../recent-trades.html?q={esc(p["name"])}">Recent deals</a> · <a href="../hot-n-cold.html">Hot 'n' Cold</a></p>
     """
         write(f"players/{p['slug']}.html", page(p["name"], f"players/{p['slug']}.html", body, depth=1))
 
@@ -963,6 +965,7 @@ def write_trade_pages(board, ppr, std):
         ("trade-1qb.html", "1QB Dynasty", "Same ranks, quarterbacks taxed to 38% of Superflex value."),
         ("trade-ppr.html", "Redraft PPR", "One-year PPR board. No future picks."),
         ("trade-standard.html", "Redraft Standard", "One-year Standard board after the catch-tax."),
+        ("recent-trades.html", "Recent Deals", "Type a player. Pull every package on the desk tape."),
     ]
     hub = f"""
     <p class="kicker">Trade Calculators</p>
@@ -974,6 +977,147 @@ def write_trade_pages(board, ppr, std):
     </div>
     """
     write("trade.html", page("Trade Calculators", "trade.html", hub))
+
+
+def write_recent_trades_page(deals):
+    payload = json.dumps(deals, ensure_ascii=False)
+    nicks = {
+        "jsn": "jaxon smith-njigba",
+        "jj": "justin jefferson",
+        "cmc": "christian mccaffrey",
+        "chase": "jamarr chase",
+        "sun god": "amon-ra st brown",
+        "arsb": "amon-ra st brown",
+        "st brown": "amon-ra st brown",
+        "btj": "brian thomas",
+        "tlaw": "trevor lawrence",
+        "bijan": "bijan robinson",
+        "gibbs": "jahmyr gibbs",
+        "puka": "puka nacua",
+        "maye": "drake maye",
+        "allen": "josh allen",
+        "jeanty": "ashton jeanty",
+        "mhj": "marvin harrison",
+        "marv": "marvin harrison",
+        "ceedee": "ceedee lamb",
+        "cd": "ceedee lamb",
+        "ajb": "a j brown",
+        "bowers": "brock bowers",
+        "saquon": "saquon barkley",
+        "lamar": "lamar jackson",
+        "mahomes": "patrick mahomes",
+        "kyler": "kyler murray",
+        "ladd": "ladd mcconkey",
+        "tet": "tetairoa mcmillan",
+        "breece": "breece hall",
+        "cmcaffrey": "christian mccaffrey",
+    }
+    chips = [
+        "Josh Allen", "Drake Maye", "Ja'Marr Chase", "Jaxon Smith-Njigba",
+        "Jahmyr Gibbs", "Ashton Jeanty", "Brock Bowers", "Christian McCaffrey",
+        "A.J. Brown", "Brian Thomas Jr.", "Kyler Murray",
+    ]
+    chip_html = "".join(
+        f'<button type="button" class="deal-chip" data-q="{esc(n)}">{esc(n)}</button>'
+        for n in chips
+    )
+    body = f"""
+    <p class="kicker">Desk Tape · {UPDATED}</p>
+    <h2>Recent Deals</h2>
+    <p class="note">Type a player. We pull every package on the tape that names him — Superflex, 1QB, asking prices from Hot 'n' Cold, and the deals Sleeper chats actually closed this month. Not a scrape of 200,000 leagues. A powder-blue log with BK Value on both sides so you can see if the room was drunk.</p>
+    <div class="trade-search deals-search">
+      <label for="deal-q">Player</label>
+      <input id="deal-q" type="search" placeholder="JSN, CMC, Sun God, Jeanty…" autocomplete="off" />
+      <p class="note" id="deal-status" style="margin:10px 0 0"></p>
+      <div class="filters" style="margin-top:12px">
+        <button type="button" class="active" data-fmt="all">All formats</button>
+        <button type="button" data-fmt="sf">Superflex</button>
+        <button type="button" data-fmt="oneqb">1QB</button>
+        <button type="button" data-kind="all" class="active">Closed + asking</button>
+        <button type="button" data-kind="closed">Closed</button>
+        <button type="button" data-kind="asking">Asking price</button>
+      </div>
+      <p class="note" style="margin-top:8px">Jump</p>
+      <div class="filters">{chip_html}</div>
+    </div>
+    <div id="deal-list"></div>
+    """
+    extra = f"""<script>
+    const DEALS = {payload};
+    const NICKS = {json.dumps(nicks)};
+    function norm(s) {{
+      let n = (s || '').toLowerCase().replace(/[.'’]/g, ' ').replace(/\\b(jr|sr|iii|ii|iv)\\b/g, ' ');
+      n = n.replace(/\\s+/g, ' ').trim();
+      return NICKS[n] || n;
+    }}
+    function fmt(n) {{ return (n || 0).toLocaleString(); }}
+    function sideHtml(items, q) {{
+      return items.map(x => {{
+        const hit = q && norm(x.name).includes(q);
+        const meta = x.kind === 'pick' ? 'Pick' : ((x.pos || '') + ' ' + (x.team || '')).trim();
+        return '<li class="' + (hit ? 'deal-hit' : '') + '"><strong>' + x.name + '</strong>' +
+          (meta ? '<small>' + meta + '</small>' : '') +
+          '<span class="val">' + fmt(x.value) + '</span></li>';
+      }}).join('');
+    }}
+    let fmtFilter = 'all', kindFilter = 'all';
+    function render() {{
+      const raw = document.getElementById('deal-q').value;
+      const q = norm(raw);
+      const rows = DEALS.filter(d => {{
+        const okF = fmtFilter === 'all' || d.format_id === fmtFilter;
+        const okK = kindFilter === 'all' || d.kind === kindFilter;
+        if (!okF || !okK) return false;
+        if (!q) return true;
+        return d.names.some(n => norm(n).includes(q) || q.includes(norm(n)));
+      }});
+      const status = document.getElementById('deal-status');
+      if (q) {{
+        status.textContent = rows.length
+          ? rows.length + ' deal' + (rows.length === 1 ? '' : 's') + ' involving ' + raw.trim() + '.'
+          : 'Nobody on the tape named ' + raw.trim() + '. Try Chase, Maye, Jeanty, JSN.';
+      }} else {{
+        status.textContent = rows.length + ' packages on the tape. Newest first.';
+      }}
+      const root = document.getElementById('deal-list');
+      if (!rows.length) {{
+        root.innerHTML = '<div class="panel"><p class="note">Empty drawer. Clear the search or pick a chip.</p></div>';
+        return;
+      }}
+      root.innerHTML = rows.map(d => {{
+        const cls = d.label === 'Fair Trade' ? 'fair' : (d.label.indexOf('A') >= 0 ? 'a' : 'b');
+        const tag = d.kind === 'asking' ? 'Asking price' : 'Closed';
+        return '<article class="deal ' + cls + '">' +
+          '<header><p class="kicker" style="margin:0">' + d.date + ' · ' + d.format + ' · ' + tag + '</p>' +
+          '<h3>' + d.label + '</h3>' +
+          '<p class="note">' + d.league + ' · ' + d.source + '</p></header>' +
+          '<div class="deal-grid">' +
+            '<div class="deal-side"><h4>Side A · ' + fmt(d.total_a) + '</h4><ul>' + sideHtml(d.a, q) + '</ul></div>' +
+            '<p class="deal-vs">vs</p>' +
+            '<div class="deal-side"><h4>Side B · ' + fmt(d.total_b) + '</h4><ul>' + sideHtml(d.b, q) + '</ul></div>' +
+          '</div>' +
+          '<p class="deal-blurb">' + d.blurb + '</p>' +
+          '<p class="note"><a href="trade-superflex.html">Run it on the calculator</a></p>' +
+        '</article>';
+      }}).join('');
+    }}
+    document.getElementById('deal-q').addEventListener('input', render);
+    document.querySelectorAll('.deals-search [data-fmt]').forEach(b => b.addEventListener('click', () => {{
+      document.querySelectorAll('.deals-search [data-fmt]').forEach(x => x.classList.remove('active'));
+      b.classList.add('active'); fmtFilter = b.dataset.fmt; render();
+    }}));
+    document.querySelectorAll('.deals-search [data-kind]').forEach(b => b.addEventListener('click', () => {{
+      document.querySelectorAll('.deals-search [data-kind]').forEach(x => x.classList.remove('active'));
+      b.classList.add('active'); kindFilter = b.dataset.kind; render();
+    }}));
+    document.querySelectorAll('.deal-chip').forEach(b => b.addEventListener('click', () => {{
+      document.getElementById('deal-q').value = b.dataset.q; render();
+    }}));
+    const params = new URLSearchParams(location.search);
+    if (params.get('q')) document.getElementById('deal-q').value = params.get('q');
+    render();
+    </script>"""
+    write("recent-trades.html", page("Recent Deals", "recent-trades.html", body, extra))
 
 
 def main():
@@ -993,11 +1137,14 @@ def main():
     (ROOT / "data/board.json").write_text(json.dumps(board, indent=2))
 
     write_trade_pages(board, ppr, std)
+    deals = enrich_deals(board, bk_value, pick_assets(), norm_name)
+    write_recent_trades_page(deals)
 
     # HOME
     tiles = [
         ("the-keep.html", "The Keep", "Daily Superflex dynasty top 100. Our keystone board."),
         ("trade.html", "Trade Calculators", "Four calculators. Rank becomes BK Value. Add two sides."),
+        ("recent-trades.html", "Recent Deals", "Type a name. See the Superflex packages he actually moved in."),
         ("redraft-ppr.html", "Redraft PPR", "2026 startup board for full-PPR redraft."),
         ("redraft-standard.html", "Redraft Standard", "Same season, no reception point. Different order."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class consensus ranks and Superflex values."),
@@ -1235,10 +1382,11 @@ def main():
     <section class="panel" style="margin-top:16px">
       <p class="kicker">Slash Commands</p>
       <h2>Talk to the desk.</h2>
-      <p class="note"><code>/player Josh Allen</code> pulls The Keep rank, BK Value, plus/minus, the 2025 clip, and the player page. <code>/trade</code> is the Superflex / 1QB / PPR / Standard calculator. <code>/video</code> drops the tape. <code>/quiz</code> hides a Keep rank behind a spoiler. <code>/publish</code> writes the whole site into Discord channels so native search works.</p>
+      <p class="note"><code>/player Josh Allen</code> pulls The Keep rank, BK Value, plus/minus, the 2025 clip, and the player page. <code>/trade</code> is the Superflex / 1QB / PPR / Standard calculator. <code>/deals JSN</code> pulls every recent package on the desk tape. <code>/video</code> drops the tape. <code>/quiz</code> hides a Keep rank behind a spoiler. <code>/publish</code> writes the whole site into Discord channels so native search works.</p>
       <div class="grid" style="margin-top:14px">
         <article class="tile"><h3>/player</h3><p>Full file: ranks, value, plus/minus, tape, link.</p></article>
         <article class="tile"><h3>/trade</h3><p>Two sides. Same BK Value curve as the site.</p></article>
+        <article class="tile"><h3>/deals</h3><p>Type a name. Every recent package on the desk tape.</p></article>
         <article class="tile"><h3>/video</h3><p>2025 NFL or college highlight from the player page.</p></article>
         <article class="tile"><h3>/keep-or-cut</h3><p>Theatrical buy/sell with Hot 'n' Cold and The Keep.</p></article>
         <article class="tile"><h3>/top + /pos</h3><p>Leaderboards, or just the QBs / RBs / WRs / TEs.</p></article>
@@ -1255,6 +1403,7 @@ def main():
         "https://ballkeep.com/",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/trade.html",
+        "https://ballkeep.com/recent-trades.html",
         "https://ballkeep.com/trade-superflex.html",
         "https://ballkeep.com/trade-1qb.html",
         "https://ballkeep.com/trade-ppr.html",
@@ -1275,7 +1424,7 @@ def main():
         + "</urlset>\n"
     )
 
-    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games)
+    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals)
     print(f"Keep {len(keep)} Board {len(board)} NFL games {len(nfl)} MLB {len(mlb_games)} Players {len(profiles)} Catalog {cat.name}")
 
 
@@ -1295,7 +1444,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -1341,6 +1490,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         "hot": HOT,
         "cold": COLD,
         "picks": pick_assets(),
+        "deals": deals or [],
         "players": files,
         "nfl": [
             {**g, "away_abbr": TEAMS.get(g["away"], ""), "home_abbr": TEAMS.get(g["home"], "")}

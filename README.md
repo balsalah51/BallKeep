@@ -5,6 +5,7 @@ Static site for [ballkeep.com](https://ballkeep.com), published from this reposi
 ## Pages
 - **The Keep** — Superflex dynasty top 100 (daily keystone)
 - **Trade Calculators** — Superflex Dynasty, 1QB Dynasty, Redraft PPR, Redraft Standard. Rank on each list becomes BK Value.
+- **Recent Deals** — type a player, get every Superflex/1QB package on the desk tape
 - Redraft PPR / Redraft Standard
 - 2026 drafted rookies
 - BK Hot 'n' Cold

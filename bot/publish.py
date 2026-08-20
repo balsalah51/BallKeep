@@ -17,6 +17,7 @@ CHANNELS = [
     ("rookies-2026", "drafted rookie consensus"),
     ("hot-n-cold", "buys and sells"),
     ("trade-block", "calculator notes and pick values"),
+    ("recent-deals", "desk tape of recent superflex packages"),
     ("tape", "2025 and college highlight links"),
     ("nfl-slate", "2026 nfl schedule, every week"),
     ("mlb-slate", "september baseball, every club"),
@@ -93,7 +94,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "`value = round(12000 * exp(-0.0165 * (rank-1)) / rank**0.18)`\n"
         "1QB taxes quarterbacks to 38% of Superflex value.\n\n"
         "**Slash commands (work in every channel)**\n"
-        "`/player` `/search` `/top` `/rank` `/pos` `/trade` `/value` `/picks` `/formula` "
+        "`/player` `/search` `/top` `/rank` `/pos` `/trade` `/deals` `/value` `/picks` `/formula` "
         "`/video` `/hot` `/cold` `/hottake` `/rookies` `/compare` `/keep-or-cut` `/start` "
         "`/quiz` `/nfl` `/mlb` `/random` `/stack` `/desk`\n\n"
         "Try: `/player Josh Allen` · `/trade Superflex Allen, 2027 Mid 1st vs Bijan, Chase` · "
@@ -149,6 +150,26 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "Use `/trade` with two comma-separated sides.\n\n"
         f"**Future picks (Superflex curve)**\n{picks}"
     )
+
+    await _wipe(channels["recent-deals"])
+    deals = cat.raw.get("deals") or []
+    await channels["recent-deals"].send(
+        f"**Recent deals** · {len(deals)} packages on the desk tape.\n"
+        "Search this channel for a name, or `/deals JSN` anywhere.\n"
+        "https://ballkeep.com/recent-trades.html"
+    )
+    for d in deals:
+        a = ", ".join(x["name"] for x in d.get("a") or [])
+        b = ", ".join(x["name"] for x in d.get("b") or [])
+        tag = "asking" if d.get("kind") == "asking" else "closed"
+        await channels["recent-deals"].send(
+            f"**{d.get('date')} · {d.get('format')} · {d.get('label')}** ({tag})\n"
+            f"A: {a} · `{int(d.get('total_a') or 0):,}`\n"
+            f"B: {b} · `{int(d.get('total_b') or 0):,}`\n"
+            f"{d.get('blurb') or ''}"
+        )
+        await asyncio.sleep(1.05)
+    await note("Recent deals posted.")
 
     await _wipe(channels["tape"])
     clips = [p for p in cat.players if p.get("youtube_id")]

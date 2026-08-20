@@ -42,6 +42,11 @@ def main():
     assert norm("JSN") == "jaxon smith-njigba"
     hits = cat.find("chase", limit=3)
     assert hits and "Chase" in hits[0]["name"]
+    jsn_deals = cat.deals_for("jsn")
+    assert jsn_deals, "expected JSN on the desk tape"
+    assert all(any("Smith-Njigba" in n or "Jaxon" in n for n in d["names"]) for d in jsn_deals)
+    assert cat.deals_for("sun god") or cat.deals_for("st brown")
+    assert len(cat.deals_for("")) >= 20
     print("ok", cat.updated, "players", len(cat.players), "keep", len(cat.raw["keep"]))
     print("trade", t2["label"], t2["total_a"], "vs", t2["total_b"])
     print("norm jsn", norm("JSN"))
