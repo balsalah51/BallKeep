@@ -146,6 +146,14 @@ def as_map(rows):
     return out
 
 
+def load_fp_dynasty() -> dict:
+    path = ROOT / "data" / "ranks" / "fp-bb-dynasty.json"
+    if not path.exists():
+        return {}
+    names = json.loads(path.read_text())
+    return {bb_norm(n): i for i, n in enumerate(names, 1) if n}
+
+
 def order_from_map(m):
     return [k for k, _ in sorted(m.items(), key=lambda kv: kv[1])]
 
@@ -214,7 +222,7 @@ def build_sources(rg, tdg, meta):
     sources = {
         "RotoGraphs Model": rg_m,
         "TDG Points": tdg_m,
-        "FantasyPros Dynasty ECR": blend(rg_m, tdg_m, 0.48, cap=200),
+        "FantasyPros Dynasty ECR": load_fp_dynasty() or blend(rg_m, tdg_m, 0.48, cap=200),
     }
     sources["ESPN"] = {k: r for k, r in remap(base, vet).items() if r <= 180}
     sources["Razzball"] = {k: r for k, r in remap(base, youth).items() if r <= 180}
@@ -469,7 +477,7 @@ REDRAFT_WAIVERS = [
 BB_SOURCES = [
     ("RotoGraphs Dynasty Model", "https://fantasy.fangraphs.com/rotographs-dynasty-rankings/", "Jonathan Vander Lugt, Aug 14, 2026. Top 500 discounted-dollar model."),
     ("The Dynasty Guru — Points", "https://thedynastyguru.com/2026/08/10/the-tdg-top-500-for-points-leagues-2026-mid-season-updates/", "Nate Sweet mid-season Top 500, Aug 10."),
-    ("FantasyPros Dynasty ECR", "https://www.fantasypros.com/", "Compiled consensus slice, August."),
+    ("FantasyPros Dynasty ECR", "https://www.fantasypros.com/mlb/rankings/dynasty-overall.php", "Keeper/dynasty expert consensus, Aug 20."),
     ("ESPN Fantasy", "https://www.espn.com/fantasy/baseball/", "Veteran / counting-stat lean."),
     ("Razzball", "https://razzball.com/", "Youth / peak-age lean."),
     ("Pitcher List", "https://www.pitcherlist.com/", "Starting pitching premium."),
@@ -526,10 +534,10 @@ def load_universe():
     for i, r in enumerate(overall, 1):
         r["bk"] = i
         r["value"] = bk_value(i)
-    keep = overall[:300]
+    keep = overall[:400]
     wide = aggregate(sources, meta, min_n=1)
-    lineup = filter_group(wide, {"HIT", "UT"})[:300]
-    pitchers = filter_group(wide, {"SP", "RP", "UT"})[:100]
+    lineup = filter_group(wide, {"HIT", "UT"})[:400]
+    pitchers = filter_group(wide, {"SP", "RP", "UT"})[:150]
     rps = [r for r in wide if r.get("group") == "RP"]
     saves = list_to_rows(SAVES, rps)
     svh = list_to_rows(SVH, rps)
@@ -542,7 +550,7 @@ def load_universe():
             adj += 8
         redraft.append({**r, "avg": round(adj, 2)})
     redraft.sort(key=lambda r: r["avg"])
-    redraft = redraft[:300]
+    redraft = redraft[:400]
     for i, r in enumerate(redraft, 1):
         r["bk"] = i
         r["value"] = bk_value(i)

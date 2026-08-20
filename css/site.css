@@ -13,10 +13,14 @@
   font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
 }
 * { box-sizing: border-box; }
-html, body { margin: 0; background: linear-gradient(180deg, var(--powder) 0%, var(--white) 38%, var(--powder) 100%); color: var(--ink); }
+html, body {
+  margin: 0; max-width: 100%; overflow-x: hidden;
+  background: linear-gradient(180deg, var(--powder) 0%, var(--white) 38%, var(--powder) 100%); color: var(--ink);
+}
 a { color: var(--red-dark); }
 img { max-width: 100%; height: auto; }
-.wrap { max-width: 1120px; margin: 0 auto; padding: 18px 18px 56px; }
+.wrap { width: 100%; max-width: 1120px; margin: 0 auto; padding: 18px 16px 56px; }
+.table-wrap { width: 100%; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 header.site {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
   background: var(--white); border: 1px solid var(--line); border-radius: 18px;
@@ -205,13 +209,63 @@ a.news-item:hover h3 { color: var(--red); }
 }
 .player-card h3 { margin: 8px 0 0; font-size: 15px; }
 .player-card p { margin: 2px 0 0; }
+.rank-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0; }
+.rank-card { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+.rank-card small { display: block; color: var(--red); font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11px; }
+.rank-card strong { display: block; font-size: 28px; color: var(--ink); }
+.rank-card span { color: var(--muted); font-weight: 700; }
+.facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 14px 0; }
+.fact { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.fact small { display: block; color: var(--red); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.fact strong { font-size: 16px; }
+table.boards { font-size: 15px; }
+table.boards tr.hi td { background: rgba(21,122,58,0.10); font-weight: 800; }
+table.boards tr.lo td { background: rgba(200,16,46,0.08); }
+.row-meta { display: none; }
+.news-flag { border-left: 6px solid var(--red); }
 @media (max-width: 860px) {
   header.site { flex-direction: column; align-items: flex-start; }
   nav { justify-content: flex-start; }
   .grid, .grid-3, .plusminus, .player-hero { grid-template-columns: 1fr; }
-  .player-grid { grid-template-columns: repeat(2, 1fr); }
-  .hero-card h2 { font-size: 28px; }
+  .player-grid, .facts, .rank-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero { min-height: 180px; background-size: cover; background-position: center top; }
+  .hero-card { padding: 20px 16px; }
+  .hero-card h2 { font-size: 26px; }
+  .hero-card p { max-width: none; }
   table { font-size: 15px; }
   .trade-hits, .trade-board, .deal-grid { grid-template-columns: 1fr; }
-  .player-hero img { width: 100%; height: 260px; }
+  .player-hero img { width: 100%; height: 220px; object-fit: cover; object-position: top center; }
+  .desk-only { display: none !important; }
+  .table-wrap:has(table.rank-table) { overflow: visible; }
+  table.rank-table thead { display: none; }
+  table.rank-table, table.rank-table tbody { display: block; width: 100%; }
+  table.rank-table tbody tr {
+    display: grid;
+    grid-template-columns: 2.75rem minmax(0, 1fr) auto;
+    column-gap: 10px;
+    align-items: center;
+    margin: 0 0 8px;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--white);
+    box-shadow: none;
+  }
+  table.rank-table tbody tr:hover td { background: transparent; }
+  table.rank-table td { border: 0; padding: 0; width: auto; }
+  table.rank-table .c-rank { grid-column: 1; grid-row: 1 / span 2; font-size: 1.15rem; }
+  table.rank-table .c-name { grid-column: 2; grid-row: 1 / span 2; min-width: 0; }
+  table.rank-table .c-name a, table.rank-table .c-name strong {
+    display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  table.rank-table .row-meta { display: block; font-size: 13px; color: var(--muted); font-weight: 700; margin-top: 2px; }
+  table.rank-table .c-pos, table.rank-table .c-team { display: none !important; }
+  table.rank-table .c-val {
+    grid-column: 3; grid-row: 1 / span 2; align-self: center;
+    text-align: right; white-space: nowrap; font-size: 14px;
+  }
+  table.rank-table .c-price {
+    grid-column: 3; grid-row: 1; text-align: right; font-weight: 800; font-size: 13px;
+  }
+  table.rank-table .c-price ~ .c-val { grid-row: 2; align-self: start; font-size: 13px; }
 }

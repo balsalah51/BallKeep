@@ -1,10 +1,10 @@
 """PitchKeep ranking sources — August 20, 2026.
 
-The Pitch is a Premier League / FPL super-aggregate. The long boards are
-live Fantasy Premier League 2026/27 numbers (last-season points, price,
-ownership, ICT, xGI). The rest are compiled August 2026 expert slices
-(PL Scout, Fantasy Football Fix, Yahoo cheat sheet, Athletic/Scout/Hub
-leans). Unranked names are skipped in the mean — never treated as 999.
+The Pitch is now a Sleeper BPL 2025 points board. Default Sleeper soccer
+scoring (support.sleeper.com/en/articles/9702800-scoring-system) applied
+to 2025/26 Premier League counting stats from the official FPL dump.
+FPL price/ownership/ICT boards and the short expert tapes still sit on
+every player file. Unranked names are skipped in the mean — never 999.
 """
 from __future__ import annotations
 
@@ -65,6 +65,7 @@ def pl_norm(name: str) -> str:
         "antoine semenyo": "antoine semenyo",
         "riccardo calafiori": "riccardo calafiori",
         "declan rice": "declan rice",
+        "rice": "declan rice",
         "morgan gibbs white": "morgan gibbs-white",
         "morgan gibbs-white": "morgan gibbs-white",
         "ollie watkins": "ollie watkins",
@@ -123,6 +124,55 @@ def display_name(e):
 
 
 POS = {1: "GKP", 2: "DEF", 3: "MID", 4: "FWD"}
+PITCH_N = 400
+FWD_N = 100
+MID_N = 150
+DEF_N = 120
+GKP_N = 50
+
+
+def sleeper_bpl_points(p) -> float:
+    """Default Sleeper soccer scoring on 2025/26 counting stats.
+
+    Goals/assists/CS/GA/cards/saves/PK from the published Sleeper table.
+    Tackles map to tackles won (1). FPL clearances+blocks+interceptions
+    are blended at 0.4 to stand in for clearances (0.25), blocks (1),
+    and interceptions (1) without double-counting. Shots on target and
+    key passes are not in the FPL dump, so they are omitted rather than
+    invented.
+    """
+    pos = p.get("pos") or "MID"
+    g = int(p.get("gls") or 0)
+    a = int(p.get("ast") or 0)
+    cs = int(p.get("cs") or 0)
+    gc = int(p.get("gc") or 0)
+    yc = int(p.get("yc") or 0)
+    rc = int(p.get("rc") or 0)
+    saves = int(p.get("saves") or 0)
+    og = int(p.get("og") or 0)
+    ps = int(p.get("pk_save") or 0)
+    pm = int(p.get("pk_miss") or 0)
+    tack = int(p.get("tackles") or 0)
+    cbi = int(p.get("cbi") or 0)
+    gp = 10 if pos in ("DEF", "GKP") else 9
+    ap = 7 if pos in ("DEF", "GKP") else 6
+    csp = {"FWD": 0, "MID": 1, "DEF": 6, "GKP": 8}.get(pos, 1)
+    gap = -2 if pos in ("DEF", "GKP") else 0
+    return round(
+        g * gp
+        + a * ap
+        + cs * csp
+        + saves * 2
+        + ps * 8
+        + yc * -2
+        + rc * -7
+        + og * -5
+        + pm * -4
+        + gc * gap
+        + tack * 1
+        + cbi * 0.4,
+        1,
+    )
 
 
 def _num(v, default=0.0):
@@ -195,10 +245,25 @@ def index_players(raw=None):
             "chance": e.get("chance_of_playing_this_round"),
             "pens": e.get("penalties_order"),
             "corners": e.get("corners_and_indirect_freekicks_order"),
+            "dfk": e.get("direct_freekicks_order"),
             "starts": int(_num(e.get("starts"))),
             "number": e.get("squad_number") or "",
             "group": POS.get(e.get("element_type"), ""),
+            "yc": int(_num(e.get("yellow_cards"))),
+            "rc": int(_num(e.get("red_cards"))),
+            "bps": int(_num(e.get("bps"))),
+            "sel_rank": e.get("selected_rank"),
+            "influence": _num(e.get("influence")),
+            "creativity": _num(e.get("creativity")),
+            "threat": _num(e.get("threat")),
+            "gc": int(_num(e.get("goals_conceded"))),
+            "og": int(_num(e.get("own_goals"))),
+            "pk_save": int(_num(e.get("penalties_saved"))),
+            "pk_miss": int(_num(e.get("penalties_missed"))),
+            "tackles": int(_num(e.get("tackles"))),
+            "cbi": int(_num(e.get("clearances_blocks_interceptions"))),
         }
+        rec["sleeper_pts"] = sleeper_bpl_points(rec)
         out.append(rec)
     return out
 
@@ -291,6 +356,7 @@ HUB_PREMIUM = [
 
 
 PL_SOURCES = [
+    ("Sleeper BPL 2025", "https://support.sleeper.com/en/articles/9702800-scoring-system", "Default Sleeper soccer scoring on 2025/26 Premier League counting stats. This is The Pitch."),
     ("FPL 2025/26 Points", "https://fantasy.premierleague.com/", "Official last-season total points, the long counting-stat board."),
     ("FPL Price Board", "https://fantasy.premierleague.com/", "2026/27 starting prices. Haaland £15.5m is the ceiling."),
     ("FPL GW1 Ownership", "https://fantasy.premierleague.com/", "Selected-by % into the Friday 18:30 BST deadline."),
@@ -321,6 +387,7 @@ PL_SOURCES = [
 def build_sources(players):
     by_key = {p["key"]: p for p in players}
     pts = metric_map(players, lambda p: p["pts"], cap=400)
+    sleeper = metric_map(players, lambda p: p.get("sleeper_pts") or 0, cap=500)
     price = metric_map(players, lambda p: p["price"], cap=300)
     own = metric_map(players, lambda p: p["sel"], cap=300)
     ict = metric_map(players, lambda p: p["ict"], cap=350)
@@ -364,6 +431,7 @@ def build_sources(players):
         return i - (14 if get(k).get("pens") == 1 else 0)
 
     sources = {
+        "Sleeper BPL 2025": sleeper,
         "FPL 2025/26 Points": pts,
         "FPL Price Board": price,
         "FPL GW1 Ownership": own,
@@ -433,8 +501,30 @@ def aggregate(sources, by_key, min_n=2):
             "number": info.get("number") or "",
             "birth": info.get("birth") or "",
             "pens": info.get("pens"),
+            "corners": info.get("corners"),
+            "dfk": info.get("dfk"),
             "status": info.get("status") or "",
+            "chance": info.get("chance"),
+            "bonus": info.get("bonus"),
+            "xg": info.get("xg"),
+            "xa": info.get("xa"),
+            "ppg": info.get("ppg"),
+            "starts": info.get("starts"),
+            "yc": info.get("yc"),
+            "rc": info.get("rc"),
+            "bps": info.get("bps"),
+            "sel_rank": info.get("sel_rank"),
+            "influence": info.get("influence"),
+            "creativity": info.get("creativity"),
+            "threat": info.get("threat"),
+            "gc": info.get("gc"),
             "fpl_id": info.get("id"),
+            "sleeper_pts": info.get("sleeper_pts") or 0,
+            "tackles": info.get("tackles") or 0,
+            "cbi": info.get("cbi") or 0,
+            "og": info.get("og") or 0,
+            "pk_save": info.get("pk_save") or 0,
+            "pk_miss": info.get("pk_miss") or 0,
             "value": 0,
             "bk": 0,
         })
@@ -456,19 +546,59 @@ def filter_pos(rows, pos):
 def load_universe():
     players = index_players()
     sources, by_key = build_sources(players)
-    overall = aggregate(sources, by_key, min_n=2)
-    # Require the FPL points long board so random named-list-only guys don't jump the 250.
-    overall = [r for r in overall if "FPL 2025/26 Points" in r["ranks"] or "FPL Price Board" in r["ranks"]]
-    overall.sort(key=lambda r: (r["avg"], -r["n"], r["name"]))
-    for i, r in enumerate(overall, 1):
+    agg_rows = {r["key"]: r for r in aggregate(sources, by_key, min_n=1)}
+    scored = [
+        p for p in players
+        if (p.get("sleeper_pts") or 0) > 0 or (p.get("minutes") or 0) > 0
+    ]
+    scored.sort(key=lambda p: (-(p.get("sleeper_pts") or 0), -(p.get("pts") or 0), p["name"]))
+    rows = []
+    for i, p in enumerate(scored, 1):
+        extra = agg_rows.get(p["key"]) or {}
+        rec = dict(extra) if extra else dict(p)
+        rec.update({
+            "key": p["key"],
+            "name": p.get("name"),
+            "web_name": p.get("web_name") or "",
+            "pos": p.get("pos") or "",
+            "team": p.get("team") or "",
+            "team_name": p.get("team_name") or "",
+            "age": p.get("age") or "",
+            "group": p.get("pos") or "",
+            "sleeper_pts": p.get("sleeper_pts") or 0,
+            "sleeper_rank": i,
+            "pts": p.get("pts") or 0,
+            "gls": p.get("gls") or 0,
+            "ast": p.get("ast") or 0,
+            "minutes": p.get("minutes") or 0,
+            "price": p.get("price"),
+            "sel": p.get("sel"),
+            "tackles": p.get("tackles") or 0,
+            "cbi": p.get("cbi") or 0,
+        })
+        ranks = dict(extra.get("ranks") or {})
+        ranks["Sleeper BPL 2025"] = i
+        rec["ranks"] = ranks
+        rec["n"] = len(ranks)
+        rec["avg"] = round(sum(ranks.values()) / len(ranks), 2) if ranks else float(i)
+        rec["bk"] = i
+        rec["value"] = bk_value(i)
+        rows.append(rec)
+    pitch = [dict(r) for r in rows[:PITCH_N]]
+    for i, r in enumerate(pitch, 1):
         r["bk"] = i
         r["value"] = bk_value(i)
-    pitch = overall[:250]
-    wide = aggregate(sources, by_key, min_n=1)
-    fwd = filter_pos(wide, "FWD")[:80]
-    mid = filter_pos(wide, "MID")[:120]
-    defence = filter_pos(wide, "DEF")[:100]
-    gkp = filter_pos(wide, "GKP")[:40]
+    fwd = filter_pos(rows, "FWD")[:FWD_N]
+    mid = filter_pos(rows, "MID")[:MID_N]
+    defence = filter_pos(rows, "DEF")[:DEF_N]
+    gkp = filter_pos(rows, "GKP")[:GKP_N]
+    dest = ROOT / "data" / "ranks" / "sleeper-bpl-2025.json"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(json.dumps(
+        [{"rank": r["sleeper_rank"], "name": r["name"], "pos": r["pos"], "team": r["team"],
+          "sleeper_pts": r["sleeper_pts"], "fpl_pts": r.get("pts")} for r in rows[:PITCH_N]],
+        indent=2,
+    ) + "\n")
     return {
         "sources": sources,
         "players": players,
@@ -478,5 +608,5 @@ def load_universe():
         "mid": mid,
         "def": defence,
         "gkp": gkp,
-        "overall": overall,
+        "overall": rows,
     }

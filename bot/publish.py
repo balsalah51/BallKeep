@@ -10,7 +10,7 @@ from catalog import Catalog
 CATEGORY = "BALL KEEP DESK"
 CHANNELS = [
     ("desk", "how to search the desk and what BK Value means"),
-    ("the-keep", "superflex dynasty top 300"),
+    ("the-keep", "superflex dynasty top 400"),
     ("the-board", "long proprietary aggregate"),
     ("redraft-ppr", "2026 full-PPR board"),
     ("redraft-std", "2026 standard board"),
@@ -23,13 +23,13 @@ CHANNELS = [
     ("mlb-slate", "september baseball, every club"),
     ("sources", "the ten superflex boards inside the keep"),
     ("player-files", "every football player page, plus/minus, and ranks"),
-    ("bb-keep", "baseball dynasty top 300"),
+    ("bb-keep", "baseball dynasty top 400"),
     ("bb-lineup", "dynasty hitters only"),
     ("bb-pitchers", "top 100 dynasty pitchers"),
     ("bb-bullpen", "saves and sv+h relief lists"),
     ("bb-redraft", "baseball rest-of-season board"),
     ("bb-waivers", "dynasty stashes and the longer redraft wire"),
-    ("the-pitch", "premier league top 250"),
+    ("the-pitch", "premier league top 400 · sleeper bpl 2025"),
     ("pl-attack", "fpl forwards"),
     ("pl-midfield", "fpl midfield"),
     ("pl-defence", "fpl defenders"),
@@ -245,7 +245,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     files = [p for p in cat.players if p.get("sport") != "baseball"]
     await _wipe(files_ch := channels["player-files"], limit=400)
     await files_ch.send(
-        f"**Player files** · {len(files)} football names from The Keep 300, redraft, rookies, and Hot/Cold.\n"
+        f"**Player files** · {len(files)} football names from The Keep 400, redraft, rookies, and Hot/Cold.\n"
         "Each message is a searchable file. `/player` is faster if you already know the name. "
         "Baseball files live on ballkeep.com/bb and `/bbplayer`."
         " PitchKeep files live on ballkeep.com/pl and `/plplayer`."
@@ -305,7 +305,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-pitch"])
     await _post_list(
         channels["the-pitch"],
-        "PitchKeep — The Pitch (Premier League top 250)",
+        "PitchKeep — The Pitch (Premier League top 400, Sleeper BPL 2025)",
         cat.raw.get("pl_pitch") or [],
         cat,
         "24-board FPL super-aggregate. Purple desk at https://ballkeep.com/pl/the-pitch.html",
@@ -321,7 +321,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     pl_files = cat.raw.get("pl_players") or []
     await _wipe(channels["pl-files"], limit=400)
     await channels["pl-files"].send(
-        f"**PitchKeep player files** · {len(pl_files)} names from The Pitch 250.\n"
+        f"**PitchKeep player files** · {len(pl_files)} names from The Pitch 400.\n"
         "`/plplayer Haaland` is faster if you already know the name. "
         "Site files live at https://ballkeep.com/pl/players/"
     )

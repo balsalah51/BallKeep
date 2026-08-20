@@ -48,8 +48,8 @@ QUIPS = [
     "Publish the desk once. Search Discord forever.",
     "BaseBallKeep is the other door. Navy, cream, 23 boards.",
     "Saves and SV+H are different sports. Use the right bullpen page.",
-    "PitchKeep is the third door. Purple, pitch green, The Pitch 250.",
-    "Bruno and Haaland are the argument. The rest of the 250 is who you own.",
+    "PitchKeep is the third door. Purple, pitch green, The Pitch 400 on Sleeper BPL points.",
+    "Haaland scores. Bruno creates. Sleeper pays both. The rest of the 400 is who you own.",
 ]
 
 
@@ -272,7 +272,7 @@ def build_bot():
         app_commands.Choice(name="Bullpen SV+H", value="bbsvh"),
     ]
     PL_BOARDS = [
-        app_commands.Choice(name="The Pitch (overall 250)", value="pitch"),
+        app_commands.Choice(name="The Pitch (overall 400, Sleeper BPL)", value="pitch"),
         app_commands.Choice(name="Attack", value="attack"),
         app_commands.Choice(name="Midfield", value="midfield"),
         app_commands.Choice(name="Defence", value="defence"),
@@ -749,7 +749,7 @@ def build_bot():
         emb.set_footer(text=desk.cat.updated)
         await interaction.response.send_message(embed=emb)
 
-    @bot.tree.command(name="bbplayer", description="BaseBallKeep file: Keep 300, Lineup, Pitchers, redraft")
+    @bot.tree.command(name="bbplayer", description="BaseBallKeep file: Keep 400, Lineup, Pitchers, redraft")
     @app_commands.describe(name="Baseball player (Ohtani, Judge, PCA, Skenes…)")
     @app_commands.autocomplete(name=ac_bb)
     async def bbplayer_cmd(interaction: discord.Interaction, name: str):
@@ -806,7 +806,7 @@ def build_bot():
             emb.add_field(name="More", value=body[4000:5000] or "Full list on the site.", inline=False)
         await interaction.response.send_message(embed=emb)
 
-    @bot.tree.command(name="plplayer", description="PitchKeep file: The Pitch 250, FPL line, tape")
+    @bot.tree.command(name="plplayer", description="PitchKeep file: The Pitch 400, Sleeper BPL 2025, tape")
     @app_commands.describe(name="Premier League player (Haaland, Bruno, Saka, Semenyo…)")
     @app_commands.autocomplete(name=ac_pl)
     async def plplayer_cmd(interaction: discord.Interaction, name: str):

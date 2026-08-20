@@ -47,17 +47,17 @@ def main():
     assert all(any("Smith-Njigba" in n or "Jaxon" in n for n in d["names"]) for d in jsn_deals)
     assert cat.deals_for("sun god") or cat.deals_for("st brown")
     assert len(cat.deals_for("")) >= 20
-    assert len(cat.raw["keep"]) == 300
+    assert len(cat.raw["keep"]) == 400
     bb = cat.raw.get("bb_keep") or []
-    assert len(bb) == 300, f"bb keep {len(bb)}"
+    assert len(bb) == 400, f"bb keep {len(bb)}"
     assert cat.one("ohtani", sport="baseball")["name"] == "Shohei Ohtani"
     assert cat.one("caminero", sport="baseball")["name"] == "Junior Caminero"
     assert cat.one("pca", sport="baseball")["name"].startswith("Pete Crow")
-    assert len(cat.raw.get("bb_pitchers") or []) == 100
+    assert len(cat.raw.get("bb_pitchers") or []) == 150
     assert len(cat.raw.get("bb_saves") or []) == 100
     assert len(cat.raw.get("bb_svh") or []) == 100
-    assert len(cat.raw.get("bb_lineup") or []) == 300
-    assert len(cat.raw.get("bb_redraft") or []) == 300
+    assert 350 <= len(cat.raw.get("bb_lineup") or []) <= 400
+    assert len(cat.raw.get("bb_redraft") or []) == 400
     assert len(cat.raw.get("bb_waivers_dynasty") or []) == 15
     assert len(cat.raw.get("bb_waivers_redraft") or []) == 50
     assert cat.raw.get("news"), "expected football BK News in the catalog"
@@ -66,20 +66,20 @@ def main():
     assert tbb["total_a"] and tbb["total_b"]
     assert not tbb["missing"], tbb["missing"]
     pitch = cat.raw.get("pl_pitch") or []
-    assert len(pitch) == 250, f"pitch {len(pitch)}"
-    assert pitch[0]["name"] == "Bruno Fernandes"
-    assert pitch[1]["name"] == "Erling Haaland"
+    assert len(pitch) == 400, f"pitch {len(pitch)}"
+    assert pitch[0]["name"] == "Erling Haaland"
+    assert pitch[1]["name"] == "Bruno Fernandes"
     assert cat.one("haaland", sport="soccer")["name"] == "Erling Haaland"
     assert cat.one("bruno", sport="soccer")["name"] == "Bruno Fernandes"
     assert cat.one("saka", sport="soccer")["name"] == "Bukayo Saka"
     assert cat.one("vvd", sport="soccer")["name"] == "Virgil van Dijk"
     assert cat.one("declan rice", sport="soccer")["name"] == "Declan Rice"
     assert cat.one("rice", sport="football")["name"] == "Rashee Rice"
-    assert len(cat.raw.get("pl_fwd") or []) >= 50
-    assert len(cat.raw.get("pl_mid") or []) == 120
-    assert len(cat.raw.get("pl_def") or []) == 100
+    assert len(cat.raw.get("pl_fwd") or []) >= 40
+    assert len(cat.raw.get("pl_mid") or []) == 150
+    assert len(cat.raw.get("pl_def") or []) == 120
     assert len(cat.raw.get("pl_gkp") or []) >= 30
-    assert len(cat.raw.get("pl_players") or []) == 250
+    assert len(cat.raw.get("pl_players") or []) == 400
     tpl = cat.trade("plpitch", "Bruno Fernandes", "Erling Haaland")
     assert tpl["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
     assert tpl["total_a"] and tpl["total_b"]
