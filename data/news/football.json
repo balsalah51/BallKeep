@@ -1,15 +1,162 @@
 {
   "sport": "football",
-  "updated": "2026-08-20T16:14:29Z",
-  "fresh": 121,
+  "updated": "2026-08-20T17:50:40Z",
+  "fresh": 310,
   "stories": [
+    {
+      "id": "colts-te-tyler-warren-injures-groin-saints-alvin-1a14af20",
+      "slug": "colts-te-tyler-warren-injures-groin-saints-alvin-1a14af20",
+      "sport": "football",
+      "headline": "NFL news roundup: Colts TE Tyler Warren injures groin; Saints' Alvin Kamara out at least a month",
+      "blurb": "Warren joins Alec Pierce as two important members of the Colts' offense dealing with injuries.",
+      "summary": "Tyler Warren, Alec Pierce, Emeka Egbuka and Alvin Kamara: Warren joins Alec Pierce as two important members of the Colts' offense dealing with injuries. Colts star tight end Tyler Warren sustained a groin injury in Wednesday's joint practice and did not return. According to NFL Insider Jordan Schultz, the Indianapolis Colts have received positive news on Tyler Warren’s groin injury suffered during Wednesday’s joint training camp practice against the Atlanta Falcons at Grand Park: The Colts’ 2nd-year tight end left Wednesday’s practice d Aggregated from Yahoo Sports, ESPN NFL, SB Nation, ProFootball Talk on NBC Sports, PFT feed and 3 more.",
+      "category": "injury",
+      "published": "2026-08-19T13:47:58Z",
+      "updated": "2026-08-20T15:10:34Z",
+      "players": [
+        {
+          "key": "tyler warren",
+          "name": "Tyler Warren",
+          "slug": "tyler-warren",
+          "pos": "TE",
+          "team": "IND"
+        },
+        {
+          "key": "alec pierce",
+          "name": "Alec Pierce",
+          "slug": "alec-pierce",
+          "pos": "WR",
+          "team": "IND"
+        },
+        {
+          "key": "emeka egbuka",
+          "name": "Emeka Egbuka",
+          "slug": "emeka-egbuka",
+          "pos": "WR",
+          "team": "TB"
+        },
+        {
+          "key": "alvin kamara",
+          "name": "Alvin Kamara",
+          "slug": "alvin-kamara",
+          "pos": "RB",
+          "team": "NO"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Colts top TE Warren injures groin in practice",
+          "url": "https://www.espn.com/nfl/story/_/id/49664278/colts-tight-end-tyler-warren-injures-groin-practice",
+          "publisher": "ESPN NFL",
+          "kind": "article",
+          "snippet": "Colts star tight end Tyler Warren sustained a groin injury in Wednesday's joint practice and did not return.",
+          "published": "Thu, 20 Aug 2026 07:05:40 EST"
+        },
+        {
+          "title": "Colts reportedly receive positive news on TE Tyler Warren’s groin injury",
+          "url": "https://sports.yahoo.com/articles/colts-reportedly-receive-positive-news-021646520.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "According to NFL Insider Jordan Schultz, the Indianapolis Colts have received positive news on Tyler Warren’s groin injury suffered during Wednesday’s joint training camp practice against the Atlanta Falcons at Grand Park: The Colts’ 2nd-year tight end left Wednesday’s practice d",
+          "published": "Thu, 20 Aug 2026 02:16:46 +0000"
+        },
+        {
+          "title": "Tyler Warren has groin injury",
+          "url": "https://sports.yahoo.com/articles/tyler-warren-groin-injury-012244747.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "Colts tight end Tyler Warren left practice on Wednesday with an injury.",
+          "published": "Thu, 20 Aug 2026 01:22:44 +0000"
+        },
+        {
+          "title": "Tyler Warren has groin injury",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyler-warren-has-groin-injury",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Colts tight end Tyler Warren left practice on Wednesday with an injury.",
+          "published": "Wed, 19 Aug 2026 21:22:44 -0400"
+        },
+        {
+          "title": "Colts TE Tyler Warren exits practice with an injury",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/colts-te-tyler-warren-exits-practice-with-an-injury",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Colts tight end Tyler Warren left practice early after going down on a route in 11-on-11 drills.",
+          "published": "Wed, 19 Aug 2026 16:07:01 -0400"
+        },
+        {
+          "title": "NFL news roundup: Colts TE Tyler Warren injures groin; Saints' Alvin Kamara out at least a month",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSUM2QTUxQnVFMzhkeEVNNXVhNnVkcWFyV1JjbWZKR1ZiSS1DWjZ2MlNITWRESVplY3pWeDRxQ2tLNFBwMXpmdG9hY3N1S3hycWY1NXRQVlhMbEdQSjdlNkdqb1NkMV80R1Jyby04SFBKRkcwaG9JODZzOE0tbGw2Y2hrZmJDVk1fdkNfYjNn?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "NFL news roundup: Colts TE Tyler Warren injures groin; Saints' Alvin Kamara out at least a month NFL.com",
+          "published": "Wed, 19 Aug 2026 13:47:58 GMT"
+        },
+        {
+          "title": "One NFL insider has an injury update on Colts TE Tyler Warren, who exited Wednesday's practice with an injury. 📸 Mykal McEldowney/IndyStar coltswire.usatoday.com/story/sports/n…",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9SYmRPTEtwZDlpY3VscUhFamZyU1VxY29JZXQ1UEwxSlhVSnRRM0NoaFR4RjRvZE1EWTBSSVJ1LV9USkM0OHRpeE1vMHIzSEp5S25NTVVCUE5McW1ONzlVSEYzeWJOS1E2aGs5LWFR?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "One NFL insider has an injury update on Colts TE Tyler Warren, who exited Wednesday's practice with an injury. 📸 Mykal McEldowney/IndyStar coltswire.usatoday.com/story/sports/n… x.com",
+          "published": "Thu, 20 Aug 2026 05:00:10 GMT"
+        },
+        {
+          "title": "NFL insider with injury update on Colts' TE Tyler Warren 📸 Mykal McEldowney/IndyStar coltswire.usatoday.com/story/sports/n…",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBjSFV3Nl9YbUtrYWtMSkhqRUE1dThscEdBejRIcndteFlZRXY1cnhVQ1ZYRWZDeVpxMnNTeGdLbzgyRFdKc0tOdWNEQU9ObkhIZTRvcE1IV0lIYlJnM1gwbVlsRQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "NFL insider with injury update on Colts' TE Tyler Warren 📸 Mykal McEldowney/IndyStar coltswire.usatoday.com/story/sports/n… x.com",
+          "published": "Thu, 20 Aug 2026 01:45:33 GMT"
+        },
+        {
+          "title": "How long is Tyler Warren out? Latest injury update on Colts TE",
+          "url": "https://sports.yahoo.com/articles/long-tyler-warren-latest-injury-151034016.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "Tyler Warren suffered a groin injury at Colts practice on Wednesday, but the second-year tight end isn't expected to miss much time due to the injury.",
+          "published": "Thu, 20 Aug 2026 15:10:34 +0000"
+        },
+        {
+          "title": "Tyler Warren to miss about a week with groin injury",
+          "url": "https://sports.yahoo.com/articles/tyler-warren-miss-week-groin-145517701.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "There is some positive news on the injury front with the Colts.",
+          "published": "Thu, 20 Aug 2026 14:55:17 +0000"
+        },
+        {
+          "title": "Tyler Warren to miss about a week with groin injury",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyler-warren-to-miss-about-a-week-with-groin-injury",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "There is some positive news on the injury front with the Colts.",
+          "published": "Thu, 20 Aug 2026 10:55:17 -0400"
+        },
+        {
+          "title": "#NFL Injury Updates #Colts Tyler Warren - Groin. Avg = 2-3 wks. No indication of severity, but most would allow return by Wk 1. Re-injury risk ~5%/wk missed #Buccaneers Emeka Egbuka - Suspect turf toe. Data suggests production = preserved. Most would all",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE42d1JoeFRjUDBrckl4aEFGTnNENXJDUE14NjFlTmZJVVdRZTZWNW9BMGI5YW1fUklGR0pTaVZlQ3JTWUtrRlVmODJBeHg3cmk1QzlZdFdkTmxfVjZIcWtGSVZ6b2FhcXM?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "#NFL Injury Updates #Colts Tyler Warren - Groin. Avg = 2-3 wks. No indication of severity, but most would allow return by Wk 1. Re-injury risk ~5%/wk missed #Buccaneers Emeka Egbuka - Suspect turf toe. Data suggests production = preserved. Most would all x.com",
+          "published": "Thu, 20 Aug 2026 13:06:30 GMT"
+        },
+        {
+          "title": "Colts' Tyler Warren reportedly out for a week with groin injury",
+          "url": "https://sports.yahoo.com/nfl/article/colts-tyler-warren-reportedly-out-for-a-week-with-groin-injury-221859645.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Warren joins Alec Pierce as two important members of the Colts' offense dealing with injuries.",
+          "published": "Wed, 19 Aug 2026 22:18:59 +0000"
+        }
+      ]
+    },
     {
       "id": "texans-wr-jayden-higgins-tears-acl-training-camp-d8c94156",
       "slug": "texans-wr-jayden-higgins-tears-acl-training-camp-d8c94156",
       "sport": "football",
       "headline": "‘Take Away Some Draft Picks’ — NFL Fans Call Out Cardinals HC Mike LaFleur for Cryptic Jeremiyah Love Injury Update",
-      "blurb": "Mike LaFleur: Jeremiyah Love OK after ankle injury, could have returned NBC Sports",
-      "summary": "Mike LaFleur: Jeremiyah Love OK after ankle injury, could have returned NBC Sports Texans second-year wideout Jayden Higgins will miss the season after suffering a torn ACL during a joint practice with the Raiders, sources told NFL Network. Jayden Higgins went down with a torn ACL in a joint practice with the Raiders on Tuesday. Aggregated from NBC Sports, ESPN NFL, Yahoo Sports, NFLTradeRumors.co, YouTube and 25 more.",
+      "blurb": "Cardinals HC Mike LaFleur Defends Controversial Jeremiyah Love Decision heavy.com",
+      "summary": "Cardinals HC Mike LaFleur Defends Controversial Jeremiyah Love Decision heavy.com Cardinals Star Jeremiyah Love Avoided Defenders in Debut - But Not Injury Yahoo Sports Canada Jeremiyah Love won’t suit up for Cardinals in Hall of Fame game Burn City Sports Aggregated from heavy.com, Yahoo Sports Canada, Burn City Sports, ESPN NFL, Yahoo Sports and 25 more.",
       "category": "injury",
       "published": "2026-07-16T07:00:00Z",
       "updated": "2026-08-20T13:11:00Z",
@@ -455,146 +602,6 @@
           "kind": "article",
           "snippet": "Jeremiyah Love won’t suit up for Cardinals in Hall of Fame game Burn City Sports",
           "published": "Wed, 05 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Mike LaFleur: Jeremiyah Love OK after ankle injury, could have returned",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMjJ5MFpKR2g0SzhubnB1MlVVdi1NUkFCQUxTbFBBMy1mX0NYeEltQnVERzl3bWxqQnVPMHotekt6UVFqNUZGRkJFNkFjVFRzTzJfQ3hXeEdnblQ2VkRnRDRuQ1lXbVdlN2d2RVU3a24yMEVYR3puVXJsUUsxRWFCaHBzeVFWaWxlVmlMQU4yLWdVZ09WaHRqQXdpZVpnTUx1ekJBY0M3UVk4YkxHbG1DWHhWZ29iVzBiYlVpUV9ac25aMWdJNTdsWWl5WQ?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Mike LaFleur: Jeremiyah Love OK after ankle injury, could have returned NBC Sports",
-          "published": "Fri, 14 Aug 2026 14:25:42 GMT"
-        }
-      ]
-    },
-    {
-      "id": "colts-te-tyler-warren-injures-groin-saints-alvin-1a14af20",
-      "slug": "colts-te-tyler-warren-injures-groin-saints-alvin-1a14af20",
-      "sport": "football",
-      "headline": "NFL news roundup: Colts TE Tyler Warren injures groin; Saints' Alvin Kamara out at least a month",
-      "blurb": "Tyler Warren suffered a groin injury at Colts practice on Wednesday, but the second-year tight end isn't expected to miss much time due to the injury.",
-      "summary": "Tyler Warren suffered a groin injury at Colts practice on Wednesday, but the second-year tight end isn't expected to miss much time due to the injury. There is some positive news on the injury front with the Colts. #NFL Injury Updates #Colts Tyler Warren - Groin. Aggregated from USA TODAY Sports, ProFootball Talk on NBC Sports, PFT feed, x.com, ESPN NFL and 2 more.",
-      "category": "injury",
-      "published": "2026-08-19T13:47:58Z",
-      "updated": "2026-08-20T15:10:34Z",
-      "players": [
-        {
-          "key": "tyler warren",
-          "name": "Tyler Warren",
-          "slug": "tyler-warren",
-          "pos": "TE",
-          "team": "IND"
-        },
-        {
-          "key": "emeka egbuka",
-          "name": "Emeka Egbuka",
-          "slug": "emeka-egbuka",
-          "pos": "WR",
-          "team": "TB"
-        },
-        {
-          "key": "alvin kamara",
-          "name": "Alvin Kamara",
-          "slug": "alvin-kamara",
-          "pos": "RB",
-          "team": "NO"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Colts top TE Warren injures groin in practice",
-          "url": "https://www.espn.com/nfl/story/_/id/49664278/colts-tight-end-tyler-warren-injures-groin-practice",
-          "publisher": "ESPN NFL",
-          "kind": "article",
-          "snippet": "Colts star tight end Tyler Warren sustained a groin injury in Wednesday's joint practice and did not return.",
-          "published": "Thu, 20 Aug 2026 07:05:40 EST"
-        },
-        {
-          "title": "Colts reportedly receive positive news on TE Tyler Warren’s groin injury",
-          "url": "https://sports.yahoo.com/articles/colts-reportedly-receive-positive-news-021646520.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "According to NFL Insider Jordan Schultz, the Indianapolis Colts have received positive news on Tyler Warren’s groin injury suffered during Wednesday’s joint training camp practice against the Atlanta Falcons at Grand Park: The Colts’ 2nd-year tight end left Wednesday’s practice d",
-          "published": "Thu, 20 Aug 2026 02:16:46 +0000"
-        },
-        {
-          "title": "Tyler Warren has groin injury",
-          "url": "https://sports.yahoo.com/articles/tyler-warren-groin-injury-012244747.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Colts tight end Tyler Warren left practice on Wednesday with an injury.",
-          "published": "Thu, 20 Aug 2026 01:22:44 +0000"
-        },
-        {
-          "title": "Tyler Warren has groin injury",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyler-warren-has-groin-injury",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Colts tight end Tyler Warren left practice on Wednesday with an injury.",
-          "published": "Wed, 19 Aug 2026 21:22:44 -0400"
-        },
-        {
-          "title": "Colts TE Tyler Warren exits practice with an injury",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/colts-te-tyler-warren-exits-practice-with-an-injury",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Colts tight end Tyler Warren left practice early after going down on a route in 11-on-11 drills.",
-          "published": "Wed, 19 Aug 2026 16:07:01 -0400"
-        },
-        {
-          "title": "NFL news roundup: Colts TE Tyler Warren injures groin; Saints' Alvin Kamara out at least a month",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSUM2QTUxQnVFMzhkeEVNNXVhNnVkcWFyV1JjbWZKR1ZiSS1DWjZ2MlNITWRESVplY3pWeDRxQ2tLNFBwMXpmdG9hY3N1S3hycWY1NXRQVlhMbEdQSjdlNkdqb1NkMV80R1Jyby04SFBKRkcwaG9JODZzOE0tbGw2Y2hrZmJDVk1fdkNfYjNn?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "NFL news roundup: Colts TE Tyler Warren injures groin; Saints' Alvin Kamara out at least a month NFL.com",
-          "published": "Wed, 19 Aug 2026 13:47:58 GMT"
-        },
-        {
-          "title": "One NFL insider has an injury update on Colts TE Tyler Warren, who exited Wednesday's practice with an injury. 📸 Mykal McEldowney/IndyStar coltswire.usatoday.com/story/sports/n…",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9SYmRPTEtwZDlpY3VscUhFamZyU1VxY29JZXQ1UEwxSlhVSnRRM0NoaFR4RjRvZE1EWTBSSVJ1LV9USkM0OHRpeE1vMHIzSEp5S25NTVVCUE5McW1ONzlVSEYzeWJOS1E2aGs5LWFR?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "One NFL insider has an injury update on Colts TE Tyler Warren, who exited Wednesday's practice with an injury. 📸 Mykal McEldowney/IndyStar coltswire.usatoday.com/story/sports/n… x.com",
-          "published": "Thu, 20 Aug 2026 05:00:10 GMT"
-        },
-        {
-          "title": "NFL insider with injury update on Colts' TE Tyler Warren 📸 Mykal McEldowney/IndyStar coltswire.usatoday.com/story/sports/n…",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBjSFV3Nl9YbUtrYWtMSkhqRUE1dThscEdBejRIcndteFlZRXY1cnhVQ1ZYRWZDeVpxMnNTeGdLbzgyRFdKc0tOdWNEQU9ObkhIZTRvcE1IV0lIYlJnM1gwbVlsRQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "NFL insider with injury update on Colts' TE Tyler Warren 📸 Mykal McEldowney/IndyStar coltswire.usatoday.com/story/sports/n… x.com",
-          "published": "Thu, 20 Aug 2026 01:45:33 GMT"
-        },
-        {
-          "title": "How long is Tyler Warren out? Latest injury update on Colts TE",
-          "url": "https://sports.yahoo.com/articles/long-tyler-warren-latest-injury-151034016.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "Tyler Warren suffered a groin injury at Colts practice on Wednesday, but the second-year tight end isn't expected to miss much time due to the injury.",
-          "published": "Thu, 20 Aug 2026 15:10:34 +0000"
-        },
-        {
-          "title": "Tyler Warren to miss about a week with groin injury",
-          "url": "https://sports.yahoo.com/articles/tyler-warren-miss-week-groin-145517701.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "There is some positive news on the injury front with the Colts.",
-          "published": "Thu, 20 Aug 2026 14:55:17 +0000"
-        },
-        {
-          "title": "Tyler Warren to miss about a week with groin injury",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyler-warren-to-miss-about-a-week-with-groin-injury",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "There is some positive news on the injury front with the Colts.",
-          "published": "Thu, 20 Aug 2026 10:55:17 -0400"
-        },
-        {
-          "title": "#NFL Injury Updates #Colts Tyler Warren - Groin. Avg = 2-3 wks. No indication of severity, but most would allow return by Wk 1. Re-injury risk ~5%/wk missed #Buccaneers Emeka Egbuka - Suspect turf toe. Data suggests production = preserved. Most would all",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE42d1JoeFRjUDBrckl4aEFGTnNENXJDUE14NjFlTmZJVVdRZTZWNW9BMGI5YW1fUklGR0pTaVZlQ3JTWUtrRlVmODJBeHg3cmk1QzlZdFdkTmxfVjZIcWtGSVZ6b2FhcXM?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "#NFL Injury Updates #Colts Tyler Warren - Groin. Avg = 2-3 wks. No indication of severity, but most would allow return by Wk 1. Re-injury risk ~5%/wk missed #Buccaneers Emeka Egbuka - Suspect turf toe. Data suggests production = preserved. Most would all x.com",
-          "published": "Thu, 20 Aug 2026 13:06:30 GMT"
         }
       ]
     },
@@ -944,6 +951,247 @@
           "kind": "article",
           "snippet": "Chargers injury update: Justin Herbert speaks on Rashawn Slater scare Yahoo Sports",
           "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "trevor-lawrence-playing-today-qbs-jaguars-saints-2026-88c9fdcc",
+      "slug": "trevor-lawrence-playing-today-qbs-jaguars-saints-2026-88c9fdcc",
+      "sport": "football",
+      "headline": "Jacksonville Jaguars capitalize on injury and overthink, give Trevor Lawrence more weapons in 7-round 2026 NFL mock draft",
+      "blurb": "Jaguars news: Trevor Lawrence will love this major injury update as preseason rolls along Yahoo Sports",
+      "summary": "Jaguars news: Trevor Lawrence will love this major injury update as preseason rolls along Yahoo Sports Jaguars see signs of offensive breakthrough as Trevor Lawrence heats up The Florida Times-Union Is Trevor Lawrence playing today? Aggregated from Yahoo Sports, The Florida Times-Union, bolavip.com, Big Cat Country, Sports Illustrated and 3 more.",
+      "category": "injury",
+      "published": "2025-12-10T21:45:19Z",
+      "updated": "2026-08-20T15:31:14Z",
+      "players": [
+        {
+          "key": "trevor lawrence",
+          "name": "Trevor Lawrence",
+          "slug": "trevor-lawrence",
+          "pos": "QB",
+          "team": "JAX"
+        },
+        {
+          "key": "travis hunter",
+          "name": "Travis Hunter",
+          "slug": "travis-hunter",
+          "pos": "WR",
+          "team": "JAX"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jaguars see signs of offensive breakthrough as Trevor Lawrence heats up",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRlpjY21sLUdjQWpGQ211ZE96TzNFQnpUY3NPTG1IcjZFeWludnh3aEhOakFrdFVWUXZYbjRDWk02N2dXbUl3UmRvWUtDTnp6VlJwdXo2UncxSWF3MGU3Q1hsbFVPXzdzeGJ2elFHTGZFUmo2WV9lWnJLbk5JWU1fN01obGZveHFUZG5nOHFqWWJ0d3NSeUpYLVJVNy0yTEpYaHJmbTJmamYwLURjdEJ4d2pGV1JqQ3psM2Jjc0ZtcGtPUTZHSVNoRlpiN0pXbFJrS2dOWmFKcDM5M3QxdVNpd1IyQW0?oc=5",
+          "publisher": "The Florida Times-Union",
+          "kind": "article",
+          "snippet": "Jaguars see signs of offensive breakthrough as Trevor Lawrence heats up The Florida Times-Union",
+          "published": "Wed, 19 Aug 2026 18:07:44 GMT"
+        },
+        {
+          "title": "Is Trevor Lawrence playing today? QBs for Jaguars vs Saints in 2026 NFL Preseason Week 1",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOd0lpWGtDYThNVkthNklZOVQwM2dmeGthUjBuQ3E5dFR4dWt1SEUzVzN2d0pSangxejJtZnhkamxFOVl2SE40RHEwaXZzSk45clhnMzVFZFh5dWhwbEE4cy16cmE1RzN5RUhCa1B5Y3YybmdWOFNCYXF6SHBPTzY0eUtwNmpOUmZESUZZa3pCbkUwbGxva2ZPUm84QlZ1MU9LeTNrd0hqOTF4Wi1hclRDa0w5RmbSAboBQVVfeXFMTW9QWmp3Mm52QXQ4Y0dNS3RkUTBrdnNNSlp4LWlZSW5qa3JUdlhIaFNKTXZUUXZGNEF1ZVVScmItUkcteGJ4NmNzVDZrSWdfVnRUd3RyLVh4bUVUclg3dTQ2UjA3RGw5bnpFZW9lOUp5QWt2dEh4cGV0UmI4X2J3V212b055eEl6ZG4wc3VreHFJWmRuZnVHUHdRQ1RLNEdfbHM3WkpxOTkyMDJpTmdkNy1vRjBfM2Z0VVFR?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Is Trevor Lawrence playing today? QBs for Jaguars vs Saints in 2026 NFL Preseason Week 1 bolavip.com",
+          "published": "Sat, 15 Aug 2026 17:15:24 GMT"
+        },
+        {
+          "title": "Trevor Lawrence, former No. 1 NFL draft pick, Jaguars quarterback",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTDZ3WEVkWWx2aGYxVTVLWUFvQklFRzJOaEEwVGF0UjR4cFgyLTgyNW8xcEtRMDB0a0x0MGpqbTNxWEt2cVBVZUlxdG9zUjhlWmFuNkZVbjRLVGJPSld5WDA3bW5hNnctS2E3RXMtejZGMzUyblZibDJsQUs5MEZrTGFlZ3l0SVJDLUdual9hcTJMOUpvM3JSMld5TDlraXcwdjEzeENPdk45OWlFajVHMlE5R1ZPRlpabDJhUlkxSzRUMEZzQnd6QnpkMF95aWlwVXg1bFhETQ?oc=5",
+          "publisher": "The Florida Times-Union",
+          "kind": "article",
+          "snippet": "Trevor Lawrence, former No. 1 NFL draft pick, Jaguars quarterback The Florida Times-Union",
+          "published": "Mon, 27 Jul 2026 11:46:38 GMT"
+        },
+        {
+          "title": "Defense outshines Trevor Lawrence on Day 6 of Jaguars training camp",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYzJYLVBXVHE5eGZfMnJiYUJMX2w2R2Q5YnJXM1pKR1RNc0ViYjBCMGlPM1kxNW9KSzhuZGFUMjd6SnZqcWQ1QUp2aG8xUGgzYVd2d1pOYmp6WkUzNXdmOFRuWlpxYUVlQVQyU1hWMmpaNE5lOERoYWR6S1RNNXVHOFAzWXRQQ0RwdGZVUGdiVXlDRHVMWEpQckhVVUdyS29GeDBtb2RZMGxjSFdtNUE?oc=5",
+          "publisher": "Big Cat Country",
+          "kind": "article",
+          "snippet": "Defense outshines Trevor Lawrence on Day 6 of Jaguars training camp Big Cat Country",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Good and Not So Good From Day 6 of Jaguars Training Camp: Trevor Lawrence Struggles",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcmJBbElqVWNyR01OUXlBS1FNV1U5UnhDYWZEbnRBa3ZRNUc3d3VWakhJVmdJcWdzdEhXSlZCWGZUVk1LZFB6aTlwT3BmTElZY1Mxa0hTSFRNY3lyR2I2Zm9Rc0NkS1l1LTU4dXZqVmJIMFd2WjRQY1YzaUxsRnVvNEpCT0pGOEZLN2xfVG9hNnZVeGFoZ2dReUM3ZEtDUUxoWGVIOXl5MHFBWThXdzRZUE81WmIwMm5lZGRYUmw0Y0I?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Good and Not So Good From Day 6 of Jaguars Training Camp: Trevor Lawrence Struggles Sports Illustrated",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "5 Observations on Day 3 of Jaguars Minicamp: Trevor Lawrence Shows Off",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc1lMd2ZkOEIxcW1PbU1VMmU4elUxQWJLQms0VlZRaTdzaldjZWMyZDZ4alIwZWtJblczYzR6OWxnTmJDNFkyX1JiT1VNNEgtTWNqVVBSQVNGUW94ZmthM0pMNnl0VmN1eVlwVFM1U0pidWx5RFpRd1NYZHdVWmNfZGdnTGdzZ0hFNGR5Y2NqRkNNYU83MUNNQkdGdjk0UW9PMGZLblZXanh4Mkk?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "5 Observations on Day 3 of Jaguars Minicamp: Trevor Lawrence Shows Off Sports Illustrated",
+          "published": "Thu, 11 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Trevor Lawrence just landed on NFL list Jaguars fans will love",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORWU2MGhUUDRkcFdzWW9GY2pWdC1EZnQ5OUZQUWc2ZF9BWHphNHJnNk44UUNtQnE5em01UU1STjhlc3AtRVZQMzk5RzRvVlBmaG9EZ0dOaFJObEdySW81QzRUNWI0WjNIZzQ1LXVKSHJNWWh6V3A5Y2U4cGg4TFdNYzFxLWNacTRWeGFsNWU2eWVQMTJUYWVRX1ZJNzFUX0RFaXpCVzRnaUQzdw?oc=5",
+          "publisher": "Black and Teal",
+          "kind": "article",
+          "snippet": "Trevor Lawrence just landed on NFL list Jaguars fans will love Black and Teal",
+          "published": "Sat, 02 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jaguars roster: Trevor Lawrence looking to build on 2025 success",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNTZRVG1ydHJ5bFBSakh5QWF0Mnlla0xZd0ExeUNHTjlnbXYtM2p5dnBHM3JSSy1iblM3N1g1ZDRvRG1DTFEwOGZoNUtUX1JTS0IwTWZKSmYxbGJXVFNpWFNXUHAtbGdERlRPNVhWUm85djZfMEFiNUhDZld2U0JZRkpmMWFjOEVpZTBYd3JjVkE?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Jaguars roster: Trevor Lawrence looking to build on 2025 success Yahoo Sports",
+          "published": "Mon, 22 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Trevor Lawrence (ankle) lands on Jacksonville Jaguars injury report",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWDd0ZTJMbi1NOHphQmhzTGJpV2ZRUjM4YnRoc0stY1dsTVBhSDBTcEdUTHZoSkM4bU1VMUZkaFpJeUs3b0xSc2VweTBia2dCVmNIUXlLUVJ4MVprR28tQ19EbjUyN2YzSWV4RHYxdktxTDZtTXJJTUw4RHVLakE5NnAtam5GVDFxbEdOUjl6UHNwb05PSlJVVkl1MUlDSGJCWGgyU0NIeWsyU3l0ZTI1QUloOVAzY1EzRGc4YWxTenotMzJQSlY1cXAxZDJKbWJkZW1wMWhiVHFOdUk?oc=5",
+          "publisher": "The Florida Times-Union",
+          "kind": "article",
+          "snippet": "Trevor Lawrence (ankle) lands on Jacksonville Jaguars injury report The Florida Times-Union",
+          "published": "Wed, 10 Dec 2025 21:45:19 GMT"
+        },
+        {
+          "title": "Jaguars QB Trevor Lawrence returns from shoulder injury",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNXNHaTZqSG5rZVBSWUsxR0h0VERHa01hUWs3MmpUOUZmLTF4eHRlY20xdlNfLUlUY01vbl80c3BSN090WVV5c2tYUUF4NWFTUzZJbkRoQ1R3T2RRZ0xWd19MWm5pdkJMWkVza0JKZzNNR0VNREtfbXZGcExVNTVSZXV4UzB6Z0JUZXdBU0F6T292MkdRZEJCaXlWa3ExRmNXZ0pOX1JB?oc=5",
+          "publisher": "National Football Post",
+          "kind": "article",
+          "snippet": "Jaguars QB Trevor Lawrence returns from shoulder injury National Football Post",
+          "published": "Fri, 29 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "5 Takeaways on Travis Hunter, Trevor Lawrence and More From Jaguars OTA No. 1",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNzJEazhZaFYtRzdDVTA4NENsQllVZlk0THFDMFI1aEYyWTBKU1pITDdkbFFzN0NrQXJIWlZ5MTZJV3NGQkktdGx0UGJNMEN6VF9QYkthb0pCZTN3WElaQnpGTFE0X2gyWjdUdnBYbTZMX1Q2N28tekZmX0NNMzNkMG9hUTFqRnQ2Mk8wa3k0dDlFZ2ZpVWhXbkZLQllTX0xELVN5M2NlSQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "5 Takeaways on Travis Hunter, Trevor Lawrence and More From Jaguars OTA No. 1 Sports Illustrated",
+          "published": "Tue, 26 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jaguars quarterback is turning heads at OTAs, and it's not Trevor Lawrence",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVXAzel9DR0ZpcWQ0a2FpLWx3c1NvU0hvMlM3Y0M2MDRBa2s1Tmlqd0QzUzB0Q0RMWVo3dXNfX0xUa2JZcmFWaFFPOWJid1hhdkE1V0RxRWRpbVRrbzJLS3ZBdDBUNEFQSW9aNXRsc3RQMDB2bHpJMTB3OXlLSG1FUm5PLTdTN21lbkc1eGVCV19mbFpPM3VMdEJ1WlRNR19wMkowcGp5Wl9yUnNtUTY5OFNvWmNRT0lPOEpDTXZoLVQybGpzVkIwOQ?oc=5",
+          "publisher": "Black and Teal",
+          "kind": "article",
+          "snippet": "Jaguars quarterback is turning heads at OTAs, and it's not Trevor Lawrence Black and Teal",
+          "published": "Mon, 08 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Why Trevor Lawrence is carrying a great deal of confidence into 2026",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQcFVqSDRCT0E1Rm9PS1R1RTdVWV8zRWdqcGE4QUc5a1BzWXhmdDVLUTJhV1Z1Z040RkY4c01hYVF2YXBLUTJXY0lsVzBnd0VlNFJMMFVjQVM4aU9MWGdBb09uUm1kaHI1U3VqRTFRSmhmdEpWOHpMNElpV1VlbElwQ2p5dG5QMmZLQTJiS3FhbzRNcFZadnpzc0plQlRuQkZRRzVOeXVVZVo1T3JBb2NMYmtyYjJTcU9YY0ZRU1ZfV1JhREw2b0ZjblVSU3Z1WFBWN1Zr?oc=5",
+          "publisher": "The Florida Times-Union",
+          "kind": "article",
+          "snippet": "Why Trevor Lawrence is carrying a great deal of confidence into 2026 The Florida Times-Union",
+          "published": "Tue, 10 Feb 2026 17:23:08 GMT"
+        },
+        {
+          "title": "Why Trevor Lawrence Is an Obvious MVP Candidate in 2026",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYVNGUVdwNG5uUlNUN2JMYURxTG5lMDJZR1F3RjYyMmpTc1I2QmgtdWxRTjFCa0dGUGxqODNEb2JuQnJJRUREQlVkVjVoM08xR1d1bTVXa3dZd0FSVGJ1UXlEbjV0aVNxb3RXYzFMUmhxV0JxQ0plZmFDT3NlRno0OGI1REFFLU80YTV6TWh3?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Why Trevor Lawrence Is an Obvious MVP Candidate in 2026 Sports Illustrated",
+          "published": "Tue, 03 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Jaguars Can Give Trevor Lawrence a Significant Boost in 2026 NFL Draft",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQmcyV0dDVDFiajRVZnB6djhUVTRyYWFZdS1ZRmpFR2ZrdjN1TjlEbm1GU2pfcXBGRDRxZllDblIzSjhHdEREeEJtb2lCanVxOU9vRjA3NUMtVlBOSlVVd19BWWp3R1p5TUFvcFgxSkd5LUV3TnlsS2ZvU09rUUhvWGl3Z053eXBhQm16cEgzSzhDbFJSQnVtRFpDSmdnX0REZ2QweA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Jaguars Can Give Trevor Lawrence a Significant Boost in 2026 NFL Draft Sports Illustrated",
+          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Trevor Lawrence Knows Exactly Who He Is and Can Be",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZDVZcHhadVBhVnVXanJMeC04UVdlMUhvWUFiQ20xZXlZUkFyWVQ3REE3T1JOdTZNeHkzY1ZPS3JjSmhTdzN2Sko1WWxVX3NIN180SWdKQVJJaWpSOHFLMVBjOEZwU01rcWdocFl4akwwY2Q0YmRLTnNxM0xKRldKWlQ1RVM0RXM3LURIT3VQbFZqUXRkUkxqd1hwQQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Trevor Lawrence Knows Exactly Who He Is and Can Be Sports Illustrated",
+          "published": "Fri, 16 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Jacksonville Jaguars capitalize on injury and overthink, give Trevor Lawrence more weapons in 7-round 2026 NFL mock draft",
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOUktJcXZMZTJHZjJHSFAwTURrWGJiOFRBWVJTYjRIQXVJRS1IMVBFMTdObUY5NnpWdTJFM3VybnZ4aURrRlo4NDZqYnRzd0c5ZTZ2UHpPNlp2RlhWUkt4azlfN3BjRmlzYmFCTHA0ZEQ3TFZqaVlURHBGZXZNcm8wQzRob052WEpsRzlJMGRXa21ERm9DZVVVMUh5VDRHOXpsZDNKWkFaYUY1VUhwR2tzSzBRTGtXeVMyS2dlMDVJNEJXcVdWTG4tRDg2bTN5WnRKaDdKeGhsM2dxSTRDZThZNzdCYlBqa3dkcXhKYlg1Q3pha3VpckVLVDM5TUVPTGlpS0hObjdB?oc=5",
+          "publisher": "A to Z Sports",
+          "kind": "article",
+          "snippet": "Jacksonville Jaguars capitalize on injury and overthink, give Trevor Lawrence more weapons in 7-round 2026 NFL mock draft A to Z Sports",
+          "published": "Tue, 24 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jaguars news: Trevor Lawrence will love this major injury update as preseason rolls along",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPeWNLSkJKYklBdFBZMkhqbDk2VnFUNV8zRGtaLUhKOXpPTEVoZE1BVU5yNUU4ajBMQjFKVHlqOEI0alRWeEM4TXdwMEtwMHNDb29zZm5lMDVuYXBOWHJEbS1WaTAzbkdCY1NxT1BETlJROWNkSXVYRGRHUEwwOW1aeVRhMGxxcnpGTmc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Jaguars news: Trevor Lawrence will love this major injury update as preseason rolls along Yahoo Sports",
+          "published": "Thu, 20 Aug 2026 15:31:14 GMT"
+        }
+      ]
+    },
+    {
+      "id": "justin-herbert-brock-purdy-playing-today-chargers-49ers-2eb142d0",
+      "slug": "justin-herbert-brock-purdy-playing-today-chargers-49ers-2eb142d0",
+      "sport": "football",
+      "headline": "Are Justin Herbert, Brock Purdy playing today in Chargers vs 49ers in 2026 NFL Preseason Week 2?",
+      "blurb": "Here's a look at who's in and who's out for Thursday night's NFL preseason schedule.",
+      "summary": "Fernando Mendoza, Justin Herbert and Brock Purdy: Here's a look at who's in and who's out for Thursday night's NFL preseason schedule. Are Justin Herbert, Brock Purdy playing today in Chargers vs 49ers in 2026 NFL Preseason Week 2? Justin Herbert among Chargers Week 18 inactives vs. Aggregated from Yahoo Sports, bolavip.com, Bolts From The Blue.",
+      "category": "injury",
+      "published": "2025-12-11T08:00:00Z",
+      "updated": "2026-08-20T17:16:13Z",
+      "players": [
+        {
+          "key": "fernando mendoza",
+          "name": "Fernando Mendoza",
+          "slug": "fernando-mendoza",
+          "pos": "QB",
+          "team": "LV"
+        },
+        {
+          "key": "justin herbert",
+          "name": "Justin Herbert",
+          "slug": "justin-herbert",
+          "pos": "QB",
+          "team": "LAC"
+        },
+        {
+          "key": "brock purdy",
+          "name": "Brock Purdy",
+          "slug": "brock-purdy",
+          "pos": "QB",
+          "team": "SF"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Are Justin Herbert, Brock Purdy playing today in Chargers vs 49ers in 2026 NFL Preseason Week 2?",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ0FiZGhhMXBaLVVPdDV5Wm9sTzlZV1ZhcDhvQWQ0RzZzMFFHdVdTZ0VuWnQ5QWNGZFM3MHJMd3NDckxTUTA1UWVjal82R0VnNEp3WnVLSkZiTlh1Slg1OGpiRU9OWDhjb05LMTJnSmtYVTJueU1IbFdXQ1g0dHN4RGRDcTNTNjkyVUVYZWY5Z1NTX3BjLXJ4Ym5ZNUhUY1pWMWw5R2pqTWtrTkMwMHdqRzZGbEFLT05RUmpOWVp30gHDAUFVX3lxTE84Y3lZLTFnbE4yQmI5a0x3VXdyWnVZa2Z3Snd6QjNvclJJZXFRQVY5dmt0VVlyZkQ0RjQ2TnNMNl9xMzktckZZbXp6UVV2NnZ4MW1qWFVSWlpLRG0tckJyNHI2NVQySzZDNUxhSElGcXNKck5vYnp3dkhwVWVvb2RkWTdBUHdYaXJXT3FuUkU5QWRkeTFoMW5JVnFWVTl5MWpscXl6QWxoUW10Z3RxVWJQcGRmeVFZVGduWXRhS3lqeVZudw?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Are Justin Herbert, Brock Purdy playing today in Chargers vs 49ers in 2026 NFL Preseason Week 2? bolavip.com",
+          "published": "Thu, 20 Aug 2026 15:34:32 GMT"
+        },
+        {
+          "title": "Justin Herbert among Chargers Week 18 inactives vs. Broncos",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUlZqcmdjNkxOQ3FqSjJLRTVHUVIzcVlBV1JOd1I0RUU2ZnNKbzN3VW5GNEV3VDBDd2pZMVdmcVVCeThaT2dPT2ZWcHViZ0dCeVNUd3dDcWJrTjNVcUhSdWtIaWVRMDk2WkR0Q3VzdXBIUC1oWmh5Y2p0WUJ0MEUxOVljVWxFMFg5WlR3NTBHZjNrUmlxLU5sUUMzZjg0WWI2ajVRRk13ckF1WHRiYW1iSnlVUmFKZ0pzTldMX2pOYng?oc=5",
+          "publisher": "Bolts From The Blue",
+          "kind": "article",
+          "snippet": "Justin Herbert among Chargers Week 18 inactives vs. Broncos Bolts From The Blue",
+          "published": "Sun, 04 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Justin Herbert injury: Chargers QB provides update on hand",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVlZoUTFrbXRETmJ1WGdJdHBLSDluZ1lKcjRxNkxhMS1GNjcxbG8wNXBwRlJVRUhTdC0wNmVUdjUtX3FkbXNOWGhpLV85MHJvcGRRT2xSemFXUXBsMUJlMnZVeWIyMzctbmNNMVBGYllaMTBKeWZCN09sSmc2NVBZTVh2VFRXRTl4eVE?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Justin Herbert injury: Chargers QB provides update on hand Yahoo Sports",
+          "published": "Thu, 11 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "NFL preseason Week 2: Raiders' Fernando Mendoza set for more action; Justin Herbert, Mike McDaniel partnership on display in L.A.",
+          "url": "https://sports.yahoo.com/nfl/article/nfl-preseason-week-2-raiders-fernando-mendoza-set-for-more-action-justin-herbert-mike-mcdaniel-partnership-on-display-in-la-171613711.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Here's a look at who's in and who's out for Thursday night's NFL preseason schedule.",
+          "published": "Thu, 20 Aug 2026 17:16:13 +0000"
         }
       ]
     },
@@ -1562,6 +1810,75 @@
       ]
     },
     {
+      "id": "sam-laporta-dealing-hip-injury-should-sidelined-long-e88107e2",
+      "slug": "sam-laporta-dealing-hip-injury-should-sidelined-long-e88107e2",
+      "sport": "football",
+      "headline": "Sam LaPorta dealing with hip injury, but should not be sidelined for long",
+      "blurb": "Detroit Lions tight end Sam LaPorta could miss the start of the season with a new hip injury.",
+      "summary": "Detroit Lions tight end Sam LaPorta could miss the start of the season with a new hip injury. The Lions have an injury concern with one of their key offensive players that the club is hopeful will not linger. LaPorta is dealing with a hip injury, and head coach Dan Campbell wouldn't commit Thursday to the tight end being available for Week 1 against the Saints, Tim Twentyman of the Lions' official site reports. Aggregated from SB Nation, PFT feed, RotoWire NFL, x.com, Detroit Free Press.",
+      "category": "injury",
+      "published": "2026-02-05T08:00:00Z",
+      "updated": "2026-08-20T17:19:25Z",
+      "players": [
+        {
+          "key": "sam laporta",
+          "name": "Sam LaPorta",
+          "slug": "sam-laporta",
+          "pos": "TE",
+          "team": "DET"
+        },
+        {
+          "key": "trey mcbride",
+          "name": "Trey McBride",
+          "slug": "trey-mcbride",
+          "pos": "TE",
+          "team": "ARI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Sam LaPorta injury update: Lions unsure if TE will miss start to season",
+          "url": "https://sports.yahoo.com/articles/sam-laporta-injury-lions-unsure-164927357.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Detroit Lions tight end Sam LaPorta could miss the start of the season with a new hip injury.",
+          "published": "Thu, 20 Aug 2026 16:49:27 +0000"
+        },
+        {
+          "title": "Sam LaPorta dealing with hip injury, but should not be sidelined for long",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sam-laporta-dealing-with-hip-injury-but-should-not-be-sidelined-for-long",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "The Lions have an injury concern with one of their key offensive players that the club is hopeful will not linger.",
+          "published": "Thu, 20 Aug 2026 13:19:25 -0400"
+        },
+        {
+          "title": "Sam LaPorta: Dealing with hip injury, per coach",
+          "url": "https://www.rotowire.com//football/player/sam-laporta-17033",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "LaPorta is dealing with a hip injury, and head coach Dan Campbell wouldn't commit Thursday to the tight end being available for Week 1 against the Saints, Tim Twentyman of the Lions' official site reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Thu, 20 Aug 2026 9:35:00 AM PDT"
+        },
+        {
+          "title": "Lions TE Sam LaPorta suffered a hip injury, per Dan Campbell. He doesn’t know for sure if LaPorta will be ready by the start of the season.",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE82WG02VklicnNtUzR0eEgwRjRDX084OXllYzZxN1BYX0NyV0RabWZjcTREYkZpRmp4YWhGelVoLWprMDBIVFhfSDZkOEV4c0tOUFZjQTZqUlh6bTZEZkk2WXBLZGU?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Lions TE Sam LaPorta suffered a hip injury, per Dan Campbell. He doesn’t know for sure if LaPorta will be ready by the start of the season. x.com",
+          "published": "Thu, 20 Aug 2026 16:29:45 GMT"
+        },
+        {
+          "title": "Trey McBride: Lions TE Sam LaPorta 'going to eat' with OC Drew Petzing",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOY1YwZE5sRlhfdkQzdWFMbE9UNXE5dVZTYS16MWM2NUo4MVdIYVZ3WU5lb1F3TEVEckRkUW1zTzlJZVhoTTRYb25GS3JuRlp3VzlfNy00MFdBNXA5MlA2djFZbXBPT1licXN3cURZZzhudUNsLVFlY1VoZF9POU9XY045dHNYRlpnTVRxckVucWpnaUp2NUJDcjNaV1ZDNlpVV2NiUDRTVXpfamR3VDJSTGE3QS1mU3NfWHpic2oxbU4wQQ?oc=5",
+          "publisher": "Detroit Free Press",
+          "kind": "article",
+          "snippet": "Trey McBride: Lions TE Sam LaPorta 'going to eat' with OC Drew Petzing Detroit Free Press",
+          "published": "Thu, 05 Feb 2026 08:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "top-100-players-2026-nos-60-51-bears-90e92c20",
       "slug": "top-100-players-2026-nos-60-51-bears-90e92c20",
       "sport": "football",
@@ -2076,6 +2393,57 @@
       ]
     },
     {
+      "id": "can-patrick-mahomes-josh-allen-lamar-jackson-joe-51574907",
+      "slug": "can-patrick-mahomes-josh-allen-lamar-jackson-joe-51574907",
+      "sport": "football",
+      "headline": "Can Patrick Mahomes, Josh Allen, Lamar Jackson and Joe Burrow avoid the quarterback midlife crisis?",
+      "blurb": "There are red flags as the AFC's best quarterbacks are around the midway point of their careers",
+      "summary": "Patrick Mahomes II, Lamar Jackson, Josh Allen and Joe Burrow: There are red flags as the AFC's best quarterbacks are around the midway point of their careers Desk reading of CBS NFL.",
+      "category": "wire",
+      "published": "2026-08-20T16:17:27Z",
+      "updated": "2026-08-20T16:17:27Z",
+      "players": [
+        {
+          "key": "patrick mahomes",
+          "name": "Patrick Mahomes II",
+          "slug": "patrick-mahomes",
+          "pos": "QB",
+          "team": "KC"
+        },
+        {
+          "key": "lamar jackson",
+          "name": "Lamar Jackson",
+          "slug": "lamar-jackson",
+          "pos": "QB",
+          "team": "BAL"
+        },
+        {
+          "key": "josh allen",
+          "name": "Josh Allen",
+          "slug": "josh-allen",
+          "pos": "QB",
+          "team": "BUF"
+        },
+        {
+          "key": "joe burrow",
+          "name": "Joe Burrow",
+          "slug": "joe-burrow",
+          "pos": "QB",
+          "team": "CIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Can Patrick Mahomes, Josh Allen, Lamar Jackson and Joe Burrow avoid the quarterback midlife crisis?",
+          "url": "https://www.cbssports.com/nfl/news/can-patrick-mahomes-josh-allen-lamar-jackson-and-joe-burrow-avoid-the-quarterback-midlife-crisis/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "There are red flags as the AFC's best quarterbacks are around the midway point of their careers",
+          "published": "Thu, 20 Aug 2026 16:17:27 +0000"
+        }
+      ]
+    },
+    {
       "id": "patrick-mahomes-injury-how-long-he-what-know-c1f81d5b",
       "slug": "patrick-mahomes-injury-how-long-he-what-know-c1f81d5b",
       "sport": "football",
@@ -2217,171 +2585,6 @@
       ]
     },
     {
-      "id": "trevor-lawrence-playing-today-qbs-jaguars-saints-2026-88c9fdcc",
-      "slug": "trevor-lawrence-playing-today-qbs-jaguars-saints-2026-88c9fdcc",
-      "sport": "football",
-      "headline": "Jacksonville Jaguars capitalize on injury and overthink, give Trevor Lawrence more weapons in 7-round 2026 NFL mock draft",
-      "blurb": "Jaguars Can Give Trevor Lawrence a Significant Boost in 2026 NFL Draft Sports Illustrated",
-      "summary": "Jaguars Can Give Trevor Lawrence a Significant Boost in 2026 NFL Draft Sports Illustrated Trevor Lawrence Knows Exactly Who He Is and Can Be Sports Illustrated Jacksonville Jaguars capitalize on injury and overthink, give Trevor Lawrence more weapons in 7-round 2026 NFL mock draft A to Z Sports Aggregated from Sports Illustrated, A to Z Sports, The Florida Times-Union, bolavip.com, Big Cat Country and 3 more.",
-      "category": "injury",
-      "published": "2025-12-10T21:45:19Z",
-      "updated": "2026-08-19T18:07:44Z",
-      "players": [
-        {
-          "key": "trevor lawrence",
-          "name": "Trevor Lawrence",
-          "slug": "trevor-lawrence",
-          "pos": "QB",
-          "team": "JAX"
-        },
-        {
-          "key": "travis hunter",
-          "name": "Travis Hunter",
-          "slug": "travis-hunter",
-          "pos": "WR",
-          "team": "JAX"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jaguars see signs of offensive breakthrough as Trevor Lawrence heats up",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRlpjY21sLUdjQWpGQ211ZE96TzNFQnpUY3NPTG1IcjZFeWludnh3aEhOakFrdFVWUXZYbjRDWk02N2dXbUl3UmRvWUtDTnp6VlJwdXo2UncxSWF3MGU3Q1hsbFVPXzdzeGJ2elFHTGZFUmo2WV9lWnJLbk5JWU1fN01obGZveHFUZG5nOHFqWWJ0d3NSeUpYLVJVNy0yTEpYaHJmbTJmamYwLURjdEJ4d2pGV1JqQ3psM2Jjc0ZtcGtPUTZHSVNoRlpiN0pXbFJrS2dOWmFKcDM5M3QxdVNpd1IyQW0?oc=5",
-          "publisher": "The Florida Times-Union",
-          "kind": "article",
-          "snippet": "Jaguars see signs of offensive breakthrough as Trevor Lawrence heats up The Florida Times-Union",
-          "published": "Wed, 19 Aug 2026 18:07:44 GMT"
-        },
-        {
-          "title": "Is Trevor Lawrence playing today? QBs for Jaguars vs Saints in 2026 NFL Preseason Week 1",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOd0lpWGtDYThNVkthNklZOVQwM2dmeGthUjBuQ3E5dFR4dWt1SEUzVzN2d0pSangxejJtZnhkamxFOVl2SE40RHEwaXZzSk45clhnMzVFZFh5dWhwbEE4cy16cmE1RzN5RUhCa1B5Y3YybmdWOFNCYXF6SHBPTzY0eUtwNmpOUmZESUZZa3pCbkUwbGxva2ZPUm84QlZ1MU9LeTNrd0hqOTF4Wi1hclRDa0w5RmbSAboBQVVfeXFMTW9QWmp3Mm52QXQ4Y0dNS3RkUTBrdnNNSlp4LWlZSW5qa3JUdlhIaFNKTXZUUXZGNEF1ZVVScmItUkcteGJ4NmNzVDZrSWdfVnRUd3RyLVh4bUVUclg3dTQ2UjA3RGw5bnpFZW9lOUp5QWt2dEh4cGV0UmI4X2J3V212b055eEl6ZG4wc3VreHFJWmRuZnVHUHdRQ1RLNEdfbHM3WkpxOTkyMDJpTmdkNy1vRjBfM2Z0VVFR?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Is Trevor Lawrence playing today? QBs for Jaguars vs Saints in 2026 NFL Preseason Week 1 bolavip.com",
-          "published": "Sat, 15 Aug 2026 17:15:24 GMT"
-        },
-        {
-          "title": "Trevor Lawrence, former No. 1 NFL draft pick, Jaguars quarterback",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTDZ3WEVkWWx2aGYxVTVLWUFvQklFRzJOaEEwVGF0UjR4cFgyLTgyNW8xcEtRMDB0a0x0MGpqbTNxWEt2cVBVZUlxdG9zUjhlWmFuNkZVbjRLVGJPSld5WDA3bW5hNnctS2E3RXMtejZGMzUyblZibDJsQUs5MEZrTGFlZ3l0SVJDLUdual9hcTJMOUpvM3JSMld5TDlraXcwdjEzeENPdk45OWlFajVHMlE5R1ZPRlpabDJhUlkxSzRUMEZzQnd6QnpkMF95aWlwVXg1bFhETQ?oc=5",
-          "publisher": "The Florida Times-Union",
-          "kind": "article",
-          "snippet": "Trevor Lawrence, former No. 1 NFL draft pick, Jaguars quarterback The Florida Times-Union",
-          "published": "Mon, 27 Jul 2026 11:46:38 GMT"
-        },
-        {
-          "title": "Defense outshines Trevor Lawrence on Day 6 of Jaguars training camp",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYzJYLVBXVHE5eGZfMnJiYUJMX2w2R2Q5YnJXM1pKR1RNc0ViYjBCMGlPM1kxNW9KSzhuZGFUMjd6SnZqcWQ1QUp2aG8xUGgzYVd2d1pOYmp6WkUzNXdmOFRuWlpxYUVlQVQyU1hWMmpaNE5lOERoYWR6S1RNNXVHOFAzWXRQQ0RwdGZVUGdiVXlDRHVMWEpQckhVVUdyS29GeDBtb2RZMGxjSFdtNUE?oc=5",
-          "publisher": "Big Cat Country",
-          "kind": "article",
-          "snippet": "Defense outshines Trevor Lawrence on Day 6 of Jaguars training camp Big Cat Country",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Good and Not So Good From Day 6 of Jaguars Training Camp: Trevor Lawrence Struggles",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcmJBbElqVWNyR01OUXlBS1FNV1U5UnhDYWZEbnRBa3ZRNUc3d3VWakhJVmdJcWdzdEhXSlZCWGZUVk1LZFB6aTlwT3BmTElZY1Mxa0hTSFRNY3lyR2I2Zm9Rc0NkS1l1LTU4dXZqVmJIMFd2WjRQY1YzaUxsRnVvNEpCT0pGOEZLN2xfVG9hNnZVeGFoZ2dReUM3ZEtDUUxoWGVIOXl5MHFBWThXdzRZUE81WmIwMm5lZGRYUmw0Y0I?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Good and Not So Good From Day 6 of Jaguars Training Camp: Trevor Lawrence Struggles Sports Illustrated",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "5 Observations on Day 3 of Jaguars Minicamp: Trevor Lawrence Shows Off",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc1lMd2ZkOEIxcW1PbU1VMmU4elUxQWJLQms0VlZRaTdzaldjZWMyZDZ4alIwZWtJblczYzR6OWxnTmJDNFkyX1JiT1VNNEgtTWNqVVBSQVNGUW94ZmthM0pMNnl0VmN1eVlwVFM1U0pidWx5RFpRd1NYZHdVWmNfZGdnTGdzZ0hFNGR5Y2NqRkNNYU83MUNNQkdGdjk0UW9PMGZLblZXanh4Mkk?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "5 Observations on Day 3 of Jaguars Minicamp: Trevor Lawrence Shows Off Sports Illustrated",
-          "published": "Thu, 11 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Trevor Lawrence just landed on NFL list Jaguars fans will love",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORWU2MGhUUDRkcFdzWW9GY2pWdC1EZnQ5OUZQUWc2ZF9BWHphNHJnNk44UUNtQnE5em01UU1STjhlc3AtRVZQMzk5RzRvVlBmaG9EZ0dOaFJObEdySW81QzRUNWI0WjNIZzQ1LXVKSHJNWWh6V3A5Y2U4cGg4TFdNYzFxLWNacTRWeGFsNWU2eWVQMTJUYWVRX1ZJNzFUX0RFaXpCVzRnaUQzdw?oc=5",
-          "publisher": "Black and Teal",
-          "kind": "article",
-          "snippet": "Trevor Lawrence just landed on NFL list Jaguars fans will love Black and Teal",
-          "published": "Sat, 02 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Jaguars roster: Trevor Lawrence looking to build on 2025 success",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNTZRVG1ydHJ5bFBSakh5QWF0Mnlla0xZd0ExeUNHTjlnbXYtM2p5dnBHM3JSSy1iblM3N1g1ZDRvRG1DTFEwOGZoNUtUX1JTS0IwTWZKSmYxbGJXVFNpWFNXUHAtbGdERlRPNVhWUm85djZfMEFiNUhDZld2U0JZRkpmMWFjOEVpZTBYd3JjVkE?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Jaguars roster: Trevor Lawrence looking to build on 2025 success Yahoo Sports",
-          "published": "Mon, 22 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Trevor Lawrence (ankle) lands on Jacksonville Jaguars injury report",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWDd0ZTJMbi1NOHphQmhzTGJpV2ZRUjM4YnRoc0stY1dsTVBhSDBTcEdUTHZoSkM4bU1VMUZkaFpJeUs3b0xSc2VweTBia2dCVmNIUXlLUVJ4MVprR28tQ19EbjUyN2YzSWV4RHYxdktxTDZtTXJJTUw4RHVLakE5NnAtam5GVDFxbEdOUjl6UHNwb05PSlJVVkl1MUlDSGJCWGgyU0NIeWsyU3l0ZTI1QUloOVAzY1EzRGc4YWxTenotMzJQSlY1cXAxZDJKbWJkZW1wMWhiVHFOdUk?oc=5",
-          "publisher": "The Florida Times-Union",
-          "kind": "article",
-          "snippet": "Trevor Lawrence (ankle) lands on Jacksonville Jaguars injury report The Florida Times-Union",
-          "published": "Wed, 10 Dec 2025 21:45:19 GMT"
-        },
-        {
-          "title": "Jaguars QB Trevor Lawrence returns from shoulder injury",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNXNHaTZqSG5rZVBSWUsxR0h0VERHa01hUWs3MmpUOUZmLTF4eHRlY20xdlNfLUlUY01vbl80c3BSN090WVV5c2tYUUF4NWFTUzZJbkRoQ1R3T2RRZ0xWd19MWm5pdkJMWkVza0JKZzNNR0VNREtfbXZGcExVNTVSZXV4UzB6Z0JUZXdBU0F6T292MkdRZEJCaXlWa3ExRmNXZ0pOX1JB?oc=5",
-          "publisher": "National Football Post",
-          "kind": "article",
-          "snippet": "Jaguars QB Trevor Lawrence returns from shoulder injury National Football Post",
-          "published": "Fri, 29 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "5 Takeaways on Travis Hunter, Trevor Lawrence and More From Jaguars OTA No. 1",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNzJEazhZaFYtRzdDVTA4NENsQllVZlk0THFDMFI1aEYyWTBKU1pITDdkbFFzN0NrQXJIWlZ5MTZJV3NGQkktdGx0UGJNMEN6VF9QYkthb0pCZTN3WElaQnpGTFE0X2gyWjdUdnBYbTZMX1Q2N28tekZmX0NNMzNkMG9hUTFqRnQ2Mk8wa3k0dDlFZ2ZpVWhXbkZLQllTX0xELVN5M2NlSQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "5 Takeaways on Travis Hunter, Trevor Lawrence and More From Jaguars OTA No. 1 Sports Illustrated",
-          "published": "Tue, 26 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Jaguars quarterback is turning heads at OTAs, and it's not Trevor Lawrence",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVXAzel9DR0ZpcWQ0a2FpLWx3c1NvU0hvMlM3Y0M2MDRBa2s1Tmlqd0QzUzB0Q0RMWVo3dXNfX0xUa2JZcmFWaFFPOWJid1hhdkE1V0RxRWRpbVRrbzJLS3ZBdDBUNEFQSW9aNXRsc3RQMDB2bHpJMTB3OXlLSG1FUm5PLTdTN21lbkc1eGVCV19mbFpPM3VMdEJ1WlRNR19wMkowcGp5Wl9yUnNtUTY5OFNvWmNRT0lPOEpDTXZoLVQybGpzVkIwOQ?oc=5",
-          "publisher": "Black and Teal",
-          "kind": "article",
-          "snippet": "Jaguars quarterback is turning heads at OTAs, and it's not Trevor Lawrence Black and Teal",
-          "published": "Mon, 08 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Why Trevor Lawrence is carrying a great deal of confidence into 2026",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQcFVqSDRCT0E1Rm9PS1R1RTdVWV8zRWdqcGE4QUc5a1BzWXhmdDVLUTJhV1Z1Z040RkY4c01hYVF2YXBLUTJXY0lsVzBnd0VlNFJMMFVjQVM4aU9MWGdBb09uUm1kaHI1U3VqRTFRSmhmdEpWOHpMNElpV1VlbElwQ2p5dG5QMmZLQTJiS3FhbzRNcFZadnpzc0plQlRuQkZRRzVOeXVVZVo1T3JBb2NMYmtyYjJTcU9YY0ZRU1ZfV1JhREw2b0ZjblVSU3Z1WFBWN1Zr?oc=5",
-          "publisher": "The Florida Times-Union",
-          "kind": "article",
-          "snippet": "Why Trevor Lawrence is carrying a great deal of confidence into 2026 The Florida Times-Union",
-          "published": "Tue, 10 Feb 2026 17:23:08 GMT"
-        },
-        {
-          "title": "Why Trevor Lawrence Is an Obvious MVP Candidate in 2026",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYVNGUVdwNG5uUlNUN2JMYURxTG5lMDJZR1F3RjYyMmpTc1I2QmgtdWxRTjFCa0dGUGxqODNEb2JuQnJJRUREQlVkVjVoM08xR1d1bTVXa3dZd0FSVGJ1UXlEbjV0aVNxb3RXYzFMUmhxV0JxQ0plZmFDT3NlRno0OGI1REFFLU80YTV6TWh3?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Why Trevor Lawrence Is an Obvious MVP Candidate in 2026 Sports Illustrated",
-          "published": "Tue, 03 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Jaguars Can Give Trevor Lawrence a Significant Boost in 2026 NFL Draft",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQmcyV0dDVDFiajRVZnB6djhUVTRyYWFZdS1ZRmpFR2ZrdjN1TjlEbm1GU2pfcXBGRDRxZllDblIzSjhHdEREeEJtb2lCanVxOU9vRjA3NUMtVlBOSlVVd19BWWp3R1p5TUFvcFgxSkd5LUV3TnlsS2ZvU09rUUhvWGl3Z053eXBhQm16cEgzSzhDbFJSQnVtRFpDSmdnX0REZ2QweA?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Jaguars Can Give Trevor Lawrence a Significant Boost in 2026 NFL Draft Sports Illustrated",
-          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Trevor Lawrence Knows Exactly Who He Is and Can Be",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZDVZcHhadVBhVnVXanJMeC04UVdlMUhvWUFiQ20xZXlZUkFyWVQ3REE3T1JOdTZNeHkzY1ZPS3JjSmhTdzN2Sko1WWxVX3NIN180SWdKQVJJaWpSOHFLMVBjOEZwU01rcWdocFl4akwwY2Q0YmRLTnNxM0xKRldKWlQ1RVM0RXM3LURIT3VQbFZqUXRkUkxqd1hwQQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Trevor Lawrence Knows Exactly Who He Is and Can Be Sports Illustrated",
-          "published": "Fri, 16 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Jacksonville Jaguars capitalize on injury and overthink, give Trevor Lawrence more weapons in 7-round 2026 NFL mock draft",
-          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOUktJcXZMZTJHZjJHSFAwTURrWGJiOFRBWVJTYjRIQXVJRS1IMVBFMTdObUY5NnpWdTJFM3VybnZ4aURrRlo4NDZqYnRzd0c5ZTZ2UHpPNlp2RlhWUkt4azlfN3BjRmlzYmFCTHA0ZEQ3TFZqaVlURHBGZXZNcm8wQzRob052WEpsRzlJMGRXa21ERm9DZVVVMUh5VDRHOXpsZDNKWkFaYUY1VUhwR2tzSzBRTGtXeVMyS2dlMDVJNEJXcVdWTG4tRDg2bTN5WnRKaDdKeGhsM2dxSTRDZThZNzdCYlBqa3dkcXhKYlg1Q3pha3VpckVLVDM5TUVPTGlpS0hObjdB?oc=5",
-          "publisher": "A to Z Sports",
-          "kind": "article",
-          "snippet": "Jacksonville Jaguars capitalize on injury and overthink, give Trevor Lawrence more weapons in 7-round 2026 NFL mock draft A to Z Sports",
-          "published": "Tue, 24 Mar 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "raiders-te-brock-bowers-big-2026-ac77e67f",
       "slug": "raiders-te-brock-bowers-big-2026-ac77e67f",
       "sport": "football",
@@ -2491,55 +2694,71 @@
       ]
     },
     {
-      "id": "justin-herbert-brock-purdy-playing-today-chargers-49ers-2eb142d0",
-      "slug": "justin-herbert-brock-purdy-playing-today-chargers-49ers-2eb142d0",
+      "id": "colston-loveland-bears-star-caleb-williams-can-best-bd01e8ed",
+      "slug": "colston-loveland-bears-star-caleb-williams-can-best-bd01e8ed",
       "sport": "football",
-      "headline": "Are Justin Herbert, Brock Purdy playing today in Chargers vs 49ers in 2026 NFL Preseason Week 2?",
-      "blurb": "Are Justin Herbert, Brock Purdy playing today in Chargers vs 49ers in 2026 NFL Preseason Week 2?",
-      "summary": "Are Justin Herbert, Brock Purdy playing today in Chargers vs 49ers in 2026 NFL Preseason Week 2? Justin Herbert among Chargers Week 18 inactives vs. Justin Herbert injury: Chargers QB provides update on hand Yahoo Sports Aggregated from bolavip.com, Bolts From The Blue, Yahoo Sports.",
-      "category": "injury",
-      "published": "2025-12-11T08:00:00Z",
-      "updated": "2026-08-20T15:34:32Z",
+      "headline": "Caleb Williams Will Be The Best QB From The 2024 NFL Draft Class, Says Nick Wright",
+      "blurb": "The Bengals defense got the better of Caleb Williams and the Bears offense.",
+      "summary": "The Bengals defense got the better of Caleb Williams and the Bears offense. Caleb Williams can be your harbinger of fantasy football QB value New York Post Colston Loveland says Bears star Caleb Williams can be best QB in NFL Bears Wire Aggregated from SB Nation, New York Post, Bears Wire, FOX Sports, Sports Illustrated.",
+      "category": "practice",
+      "published": "2026-07-30T07:00:00Z",
+      "updated": "2026-08-20T17:08:19Z",
       "players": [
         {
-          "key": "justin herbert",
-          "name": "Justin Herbert",
-          "slug": "justin-herbert",
+          "key": "caleb williams",
+          "name": "Caleb Williams",
+          "slug": "caleb-williams",
           "pos": "QB",
-          "team": "LAC"
+          "team": "CHI"
         },
         {
-          "key": "brock purdy",
-          "name": "Brock Purdy",
-          "slug": "brock-purdy",
-          "pos": "QB",
-          "team": "SF"
+          "key": "colston loveland",
+          "name": "Colston Loveland",
+          "slug": "colston-loveland",
+          "pos": "TE",
+          "team": "CHI"
         }
       ],
       "sources": [
         {
-          "title": "Are Justin Herbert, Brock Purdy playing today in Chargers vs 49ers in 2026 NFL Preseason Week 2?",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQ0FiZGhhMXBaLVVPdDV5Wm9sTzlZV1ZhcDhvQWQ0RzZzMFFHdVdTZ0VuWnQ5QWNGZFM3MHJMd3NDckxTUTA1UWVjal82R0VnNEp3WnVLSkZiTlh1Slg1OGpiRU9OWDhjb05LMTJnSmtYVTJueU1IbFdXQ1g0dHN4RGRDcTNTNjkyVUVYZWY5Z1NTX3BjLXJ4Ym5ZNUhUY1pWMWw5R2pqTWtrTkMwMHdqRzZGbEFLT05RUmpOWVp30gHDAUFVX3lxTE84Y3lZLTFnbE4yQmI5a0x3VXdyWnVZa2Z3Snd6QjNvclJJZXFRQVY5dmt0VVlyZkQ0RjQ2TnNMNl9xMzktckZZbXp6UVV2NnZ4MW1qWFVSWlpLRG0tckJyNHI2NVQySzZDNUxhSElGcXNKck5vYnp3dkhwVWVvb2RkWTdBUHdYaXJXT3FuUkU5QWRkeTFoMW5JVnFWVTl5MWpscXl6QWxoUW10Z3RxVWJQcGRmeVFZVGduWXRhS3lqeVZudw?oc=5",
-          "publisher": "bolavip.com",
+          "title": "Caleb Williams can be your harbinger of fantasy football QB value",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONk5xVmJEaDNCS0NlUmpyTG9XekhQMW40UmE3RGNxdVBjVnp4YzBoR3BpaUZLQTZ1Z1gzc1RULV9LRjJrTjFsUDQ2YXNaZUx2V1dDMFllWDhYTERBSUFKOTQyalhhOTk4VUQzZ1NnQWV1VHpDdzRNemRRcGQ1NUtUZ0VhUXQwblFDZFRaSU1Qd0NTdFFDN1JPcnBWVXFMc1E?oc=5",
+          "publisher": "New York Post",
           "kind": "article",
-          "snippet": "Are Justin Herbert, Brock Purdy playing today in Chargers vs 49ers in 2026 NFL Preseason Week 2? bolavip.com",
-          "published": "Thu, 20 Aug 2026 15:34:32 GMT"
+          "snippet": "Caleb Williams can be your harbinger of fantasy football QB value New York Post",
+          "published": "Thu, 20 Aug 2026 00:05:00 GMT"
         },
         {
-          "title": "Justin Herbert among Chargers Week 18 inactives vs. Broncos",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUlZqcmdjNkxOQ3FqSjJLRTVHUVIzcVlBV1JOd1I0RUU2ZnNKbzN3VW5GNEV3VDBDd2pZMVdmcVVCeThaT2dPT2ZWcHViZ0dCeVNUd3dDcWJrTjNVcUhSdWtIaWVRMDk2WkR0Q3VzdXBIUC1oWmh5Y2p0WUJ0MEUxOVljVWxFMFg5WlR3NTBHZjNrUmlxLU5sUUMzZjg0WWI2ajVRRk13ckF1WHRiYW1iSnlVUmFKZ0pzTldMX2pOYng?oc=5",
-          "publisher": "Bolts From The Blue",
+          "title": "Colston Loveland says Bears star Caleb Williams can be best QB in NFL",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNeFBQZkduckFGTG5PNVVQbnFZNU9KR01jbFIwaE1vdU5PY0Z0NF9SMjg3SkdNZWdXRWJweGNlZngzR2V5ZTBlN3NwQ3FIZWtMeEhFRGEzdTVDNjExRGgtNjE4OHdKUjQ0RHpJZnJkWXJTRk1EWmZjUEhSdGdmMFVFbkotdkJYeXg0aTc0RUhYSm9Ta0c5ckgyUVB1VXd2Rzh6NlB0MDJXT2t2ZFlHcGdmbGVXM2pvUlpCNW1KZG04NDJ1aWxyaDJ1WWRpOXU?oc=5",
+          "publisher": "Bears Wire",
           "kind": "article",
-          "snippet": "Justin Herbert among Chargers Week 18 inactives vs. Broncos Bolts From The Blue",
-          "published": "Sun, 04 Jan 2026 08:00:00 GMT"
+          "snippet": "Colston Loveland says Bears star Caleb Williams can be best QB in NFL Bears Wire",
+          "published": "Thu, 06 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Justin Herbert injury: Chargers QB provides update on hand",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVlZoUTFrbXRETmJ1WGdJdHBLSDluZ1lKcjRxNkxhMS1GNjcxbG8wNXBwRlJVRUhTdC0wNmVUdjUtX3FkbXNOWGhpLV85MHJvcGRRT2xSemFXUXBsMUJlMnZVeWIyMzctbmNNMVBGYllaMTBKeWZCN09sSmc2NVBZTVh2VFRXRTl4eVE?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Caleb Williams Will Be The Best QB From The 2024 NFL Draft Class, Says Nick Wright",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdEhweHdXWUVjQThhajl1ak1LLWFJZE9NWFFXSklCeHBVdUswMmJOVXVoUVdWcXZmX0QtbExrZWY3Z3B3Rm5RZU14bkVIYThZSmM2VThramdtc0NzTVZlYjBoX21LZ0s0RWZwVUhFZ01WT3EtenRiODlWWVJpdXpSQ0lydDZZU0NmMUFWOXNiUW45RmJ5cGhjWFpzUlNNYmhzM0JxWnY3ZzFqR3dE0gGsAUFVX3lxTFBiYy1OazQ1RGZQa2E5cTBXemZYTE03NlFmT2VaYTd0VDA3ZG5hNkphcFZuRkVJQ0ZqRDduYmdIRnFMOG1GY2l4aTNrWGw1cVdvckZQc1g2b3V0ZXMyWGtFOEFoNGlJTVRRakRiNVFaY0NOb1ZzWmNkajRUOHowZlFLRFczRTRuTFFCRVJCMUdBUmkwV1FQUlZnV3Nua19IR1BuXzNMWmlYcWc0aWY?oc=5",
+          "publisher": "FOX Sports",
           "kind": "article",
-          "snippet": "Justin Herbert injury: Chargers QB provides update on hand Yahoo Sports",
-          "published": "Thu, 11 Dec 2025 08:00:00 GMT"
+          "snippet": "Caleb Williams Will Be The Best QB From The 2024 NFL Draft Class, Says Nick Wright FOX Sports",
+          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Caleb Williams Might Have Just Had His Best Practice and What It Means",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOLXYzNkFsXzBRQnhrZUVqU3ZJU0pCRGFNWmljY1lQWkUyUDdaMGFLd1lEZkJ2dnZPNUdCeFFPbktXd040U3dub1FKSnpLQndsZldQZlNrZkphRkNNMXVyVWNlOEQtc2thek42Vmg4WW0tYVdHUFBqNFRjeXUwbTJ4cTRZZmhMT1UtX29zOW5xMFk1bjd1ZEZfelZxTm5yVVNBc3FMM0ZNMA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Caleb Williams Might Have Just Had His Best Practice and What It Means Sports Illustrated",
+          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Twitter recap: Bengals defense shines in joint practice with Chicago Bears",
+          "url": "https://sports.yahoo.com/articles/twitter-recap-bengals-defense-shines-170819180.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Bengals defense got the better of Caleb Williams and the Bears offense.",
+          "published": "Thu, 20 Aug 2026 17:08:19 +0000"
         }
       ]
     },
@@ -2809,6 +3028,51 @@
       ]
     },
     {
+      "id": "makai-lemon-deemed-limited-thursday-s-practice-91748e3e",
+      "slug": "makai-lemon-deemed-limited-thursday-s-practice-91748e3e",
+      "sport": "football",
+      "headline": "Quinshon Judkins: Not spotted at Thursday's practice",
+      "blurb": "Judkins (undisclosed) wasn't spotted at practice Thursday, Daniel Oyefusi of ESPN.com reports.",
+      "summary": "Quinshon Judkins and Makai Lemon: Judkins (undisclosed) wasn't spotted at practice Thursday, Daniel Oyefusi of ESPN.com reports. Visit RotoWire.com for more analysis on this update. Lemon (hamstring) is practicing on a limited basis Thursday, Dave Zangoro of NBC Sports Philadelphia reports. Desk reading of RotoWire NFL.",
+      "category": "injury",
+      "published": "2026-08-20T15:54:23Z",
+      "updated": "2026-08-20T17:50:39Z",
+      "players": [
+        {
+          "key": "quinshon judkins",
+          "name": "Quinshon Judkins",
+          "slug": "quinshon-judkins",
+          "pos": "RB",
+          "team": "CLE"
+        },
+        {
+          "key": "makai lemon",
+          "name": "Makai Lemon",
+          "slug": "makai-lemon",
+          "pos": "WR",
+          "team": "PHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Makai Lemon: Deemed limited at Thursday's practice",
+          "url": "https://www.rotowire.com//football/player/makai-lemon-19231",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Lemon (hamstring) is practicing on a limited basis Thursday, Dave Zangoro of NBC Sports Philadelphia reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Thu, 20 Aug 2026 8:27:00 AM PDT"
+        },
+        {
+          "title": "Quinshon Judkins: Not spotted at Thursday's practice",
+          "url": "https://www.rotowire.com//football/player/quinshon-judkins-18516",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Judkins (undisclosed) wasn't spotted at practice Thursday, Daniel Oyefusi of ESPN.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Thu, 20 Aug 2026 10:42:00 AM PDT"
+        }
+      ]
+    },
+    {
       "id": "bettors-confident-trevor-lawrence-jaguars-repeat-afc-south-ad699d9f",
       "slug": "bettors-confident-trevor-lawrence-jaguars-repeat-afc-south-ad699d9f",
       "sport": "football",
@@ -3027,6 +3291,92 @@
       ]
     },
     {
+      "id": "2026-dalton-schultz-among-justin-boone-s-top-3971a9f4",
+      "slug": "2026-dalton-schultz-among-justin-boone-s-top-3971a9f4",
+      "sport": "football",
+      "headline": "2026 Fantasy Football: Dalton Schultz among Justin Boone's top sleeper picks at TE",
+      "blurb": "Fantasy football analyst Justin Boone continues his sleepers series with the tight ends.",
+      "summary": "Dalton Schultz: Fantasy football analyst Justin Boone continues his sleepers series with the tight ends. Justin Boone shares his 2026 fantasy football defense rankings. Justin Boone shares his 2026 fantasy football kicker rankings. Desk reading of Yahoo Sports.",
+      "category": "wire",
+      "published": "2026-01-05T18:14:19Z",
+      "updated": "2026-08-20T17:23:13Z",
+      "players": [
+        {
+          "key": "dalton schultz",
+          "name": "Dalton Schultz",
+          "slug": "dalton-schultz",
+          "pos": "TE",
+          "team": "HOU"
+        }
+      ],
+      "sources": [
+        {
+          "title": "2026 Fantasy Football: Dalton Schultz among Justin Boone's top sleeper picks at TE",
+          "url": "https://sports.yahoo.com/fantasy/article/2026-fantasy-football-dalton-schultz-among-justin-boones-top-sleeper-picks-at-te-172313228.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Fantasy football analyst Justin Boone continues his sleepers series with the tight ends.",
+          "published": "Thu, 20 Aug 2026 17:23:13 +0000"
+        },
+        {
+          "title": "Fantasy Football D/ST Rankings: Justin Boone's top defenses",
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-dst-rankings-justin-boones-top-defenses-164629705.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Justin Boone shares his 2026 fantasy football defense rankings.",
+          "published": "Wed, 22 Jul 2026 16:46:29 +0000"
+        },
+        {
+          "title": "Fantasy Football Rankings: Justin Boone's top kickers",
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-justin-boones-top-kickers-164430984.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Justin Boone shares his 2026 fantasy football kicker rankings.",
+          "published": "Wed, 22 Jul 2026 16:44:30 +0000"
+        },
+        {
+          "title": "Fantasy Football TE Rankings: Justin Boone's top tight ends",
+          "url": "https://sports.yahoo.com/fantasy/article/2026-fantasy-football-rankings-justin-boone-draft-te-tight-end-173419264.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Justin Boone shares his 2026 fantasy football tight end rankings.",
+          "published": "Thu, 08 Jan 2026 17:34:19 +0000"
+        },
+        {
+          "title": "Fantasy Football WR Rankings: Justin Boone's top wide receivers",
+          "url": "https://sports.yahoo.com/fantasy/article/2026-fantasy-football-rankings-justin-boone-draft-wr-wide-receiver-172147910.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Justin Boone shares his 2026 fantasy football wide receiver rankings.",
+          "published": "Wed, 07 Jan 2026 17:21:47 +0000"
+        },
+        {
+          "title": "Fantasy Football RB Rankings: Justin Boone's top running backs",
+          "url": "https://sports.yahoo.com/fantasy/article/2026-fantasy-football-rankings-justin-boone-draft-rb-running-back-204202587.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Justin Boone shares his 2026 fantasy football running back rankings.",
+          "published": "Tue, 06 Jan 2026 20:42:02 +0000"
+        },
+        {
+          "title": "Fantasy Football QB Rankings: Justin Boone's top quarterbacks",
+          "url": "https://sports.yahoo.com/fantasy/article/2026-fantasy-football-rankings-justin-boone-draft-qb-quarterback-181419842.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Justin Boone shares his 2026 fantasy football quarterback rankings.",
+          "published": "Mon, 05 Jan 2026 18:14:19 +0000"
+        },
+        {
+          "title": "Fantasy Football Rankings: Justin Boone's top-300 players",
+          "url": "https://sports.yahoo.com/fantasy/article/2026-fantasy-football-rankings-justin-boone-top-300-players-155300098.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Yahoo analyst Justin Boone takes you through his top-300 players for 2026 fantasy football drafts.",
+          "published": "Fri, 09 Jan 2026 15:53:00 +0000"
+        }
+      ]
+    },
+    {
       "id": "justin-herbert-trevor-lawrence-who-better-qb-a5f24cc0",
       "slug": "justin-herbert-trevor-lawrence-who-better-qb-a5f24cc0",
       "sport": "football",
@@ -3092,6 +3442,111 @@
           "kind": "article",
           "snippet": "Justin Herbert Week 14 Injury Update: Fantasy Football Outlook FantasyLife",
           "published": "Sun, 07 Dec 2025 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "lions-dan-campbell-reveals-why-he-believed-jared-f961c8ff",
+      "slug": "lions-dan-campbell-reveals-why-he-believed-jared-f961c8ff",
+      "sport": "football",
+      "headline": "Lions’ Dan Campbell Reveals Why He Believed in Jared Goff After Matthew Stafford Trade",
+      "blurb": "Lions’ Dan Campbell Reveals Why He Believed in Jared Goff After Matthew Stafford Trade heavy.com",
+      "summary": "Lions’ Dan Campbell Reveals Why He Believed in Jared Goff After Matthew Stafford Trade heavy.com Desk reading of heavy.com.",
+      "category": "trade",
+      "published": "2026-08-20T14:04:40Z",
+      "updated": "2026-08-20T14:04:40Z",
+      "players": [
+        {
+          "key": "matthew stafford",
+          "name": "Matthew Stafford",
+          "slug": "matthew-stafford",
+          "pos": "QB",
+          "team": "LAR"
+        },
+        {
+          "key": "jared goff",
+          "name": "Jared Goff",
+          "slug": "jared-goff",
+          "pos": "QB",
+          "team": "DET"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lions’ Dan Campbell Reveals Why He Believed in Jared Goff After Matthew Stafford Trade",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVFRsMWdDVzVwc29PZ0dNUjdfSS1OYm5OWmRxb1ZBV3pIak5CdVBXMWNwcUJfMEt2SXI4ZFNvUi10TTc3aWxEYjdpYm1QT2dEWUhGeW5QMnBlVEQ2T1liLUxaUWpBX1BYakQzaTBEQW5NdzZUV2J0bUtrOUNaUm5xdEdpMU5uUQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Lions’ Dan Campbell Reveals Why He Believed in Jared Goff After Matthew Stafford Trade heavy.com",
+          "published": "Thu, 20 Aug 2026 14:04:40 GMT"
+        }
+      ]
+    },
+    {
+      "id": "nfc-jordan-love-kyler-murray-caleb-williams-bears-8537270b",
+      "slug": "nfc-jordan-love-kyler-murray-caleb-williams-bears-8537270b",
+      "sport": "football",
+      "headline": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition",
+      "blurb": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition NFLTradeRumors.co",
+      "summary": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition NFLTradeRumors.co NFC Notes: Caleb Williams, Coby Bryant, Kyler Murray, Bears, Vikings NFLTradeRumors.co NFC Notes: Aidan Hutchinson, Kyler Murray, Lions, Packers, Vikings NFLTradeRumors.co Desk reading of NFLTradeRumors.co.",
+      "category": "wire",
+      "published": "2026-06-19T07:00:00Z",
+      "updated": "2026-08-20T00:00:08Z",
+      "players": [
+        {
+          "key": "caleb williams",
+          "name": "Caleb Williams",
+          "slug": "caleb-williams",
+          "pos": "QB",
+          "team": "CHI"
+        },
+        {
+          "key": "jordan love",
+          "name": "Jordan Love",
+          "slug": "jordan-love",
+          "pos": "QB",
+          "team": "GB"
+        },
+        {
+          "key": "kyler murray",
+          "name": "Kyler Murray",
+          "slug": "kyler-murray",
+          "pos": "QB",
+          "team": "MIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NFC Notes: Aidan Hutchinson, Kyler Murray, Lions, Packers, Vikings",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNR0NwSmJOSjZJNnhqdTI2TXViaTNuU0U4allWMXhyNGFpVEdLZlNqZ000Y3F0S005dTBMVGx5dGFxOF9FVlN5am03X0Q4VmFZVDRpNzFXcWNmTFE0YnQ0LW53VWNldms1SlM5a0RYZXZiRk1iMUN5cVhCSXd5M3BiQlprelV3TUllYVl3c0N0TWw2UQ?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Aidan Hutchinson, Kyler Murray, Lions, Packers, Vikings NFLTradeRumors.co",
+          "published": "Thu, 20 Aug 2026 00:00:08 GMT"
+        },
+        {
+          "title": "NFC Notes: Jordan Love, Kyler Murray, Caleb Williams, Bears, Packers, Vikings",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZVlMdVN0OU90SXVQV2JUQ01fTDVhSzdSNU9pRUZhRmJuQWptRXQ5MHBCdzllV3pBUi0wdjMzekdINjlDaHk3OG5DWFRDLW5nN01KZ2VYNG1CQWh3cHJGMURfRHZ4ZzlIX0s1Qnd0cmI3U01ZeFY4dEhQaGk3TzBRZlZVSTVWa2psYWZIRmp4ZGkzVkRsZ0hoX3VlY1pCaUU?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Jordan Love, Kyler Murray, Caleb Williams, Bears, Packers, Vikings NFLTradeRumors.co",
+          "published": "Wed, 19 Aug 2026 00:00:23 GMT"
+        },
+        {
+          "title": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdng5T3VoUjR1VktHaEh2VmwzN1lia0hhd2xXbzg4NG1McFVETXJ1X0hoYklQTVJZdUZ1cU9BS0stUHNWZkF4c2hJc3djTWRYbVVwcy1RZE8xRXM0N0M2VEtyc3pEcVJGTURhSGFaQWxmRGp5M3BsM3RpUGlZUS1IWlNxS0hrU0hFVU9WeTVvQk1McUFVYkh1RTAwaEliLVRHLVE?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition NFLTradeRumors.co",
+          "published": "Tue, 14 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NFC Notes: Caleb Williams, Coby Bryant, Kyler Murray, Bears, Vikings",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOW1OckhBTy1UVURoTkJac2p3VDhVMVZmZXZRalFlQVVEU3BCSGxXR3hsSXRJeWE0UHUySzRzQ0tvb0EtSEVGUWNVbVNtZW1PVTl2d3h3ZzBIVGxEanBjRUFwU1JSVUR1LTZkNlRueEdPQUZxQUVkSHdPNGd3bXN3eXVYb2VTVzlEN1d3Sm4xYnpBZkVz?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Caleb Williams, Coby Bryant, Kyler Murray, Bears, Vikings NFLTradeRumors.co",
+          "published": "Fri, 19 Jun 2026 07:00:00 GMT"
         }
       ]
     },
@@ -3195,70 +3650,64 @@
       ]
     },
     {
-      "id": "nfc-jordan-love-kyler-murray-caleb-williams-bears-8537270b",
-      "slug": "nfc-jordan-love-kyler-murray-caleb-williams-bears-8537270b",
+      "id": "5-cowboys-2-against-arizona-cardinals-2df94b8e",
+      "slug": "5-cowboys-2-against-arizona-cardinals-2df94b8e",
       "sport": "football",
-      "headline": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition",
-      "blurb": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition NFLTradeRumors.co",
-      "summary": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition NFLTradeRumors.co NFC Notes: Caleb Williams, Coby Bryant, Kyler Murray, Bears, Vikings NFLTradeRumors.co NFC Notes: Aidan Hutchinson, Kyler Murray, Lions, Packers, Vikings NFLTradeRumors.co Desk reading of NFLTradeRumors.co.",
-      "category": "wire",
-      "published": "2026-06-19T07:00:00Z",
-      "updated": "2026-08-20T00:00:08Z",
+      "headline": "5 Cowboys to watch in Preseason Week 2 against Arizona Cardinals",
+      "blurb": "Which Cowboys are you going to be paying the most attention to on Saturday night?",
+      "summary": "Trey McBride: Which Cowboys are you going to be paying the most attention to on Saturday night? 2026 Arizona Cardinals training camp: Latest intel, updates ESPN Arizona Cardinals TE Trey McBride excited about new offense USA Today Aggregated from SB Nation, ESPN, USA Today, Sports Illustrated.",
+      "category": "practice",
+      "published": "2025-07-19T07:00:00Z",
+      "updated": "2026-08-20T17:00:00Z",
       "players": [
         {
-          "key": "caleb williams",
-          "name": "Caleb Williams",
-          "slug": "caleb-williams",
-          "pos": "QB",
-          "team": "CHI"
-        },
-        {
-          "key": "jordan love",
-          "name": "Jordan Love",
-          "slug": "jordan-love",
-          "pos": "QB",
-          "team": "GB"
-        },
-        {
-          "key": "kyler murray",
-          "name": "Kyler Murray",
-          "slug": "kyler-murray",
-          "pos": "QB",
-          "team": "MIN"
+          "key": "trey mcbride",
+          "name": "Trey McBride",
+          "slug": "trey-mcbride",
+          "pos": "TE",
+          "team": "ARI"
         }
       ],
       "sources": [
         {
-          "title": "NFC Notes: Aidan Hutchinson, Kyler Murray, Lions, Packers, Vikings",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNR0NwSmJOSjZJNnhqdTI2TXViaTNuU0U4allWMXhyNGFpVEdLZlNqZ000Y3F0S005dTBMVGx5dGFxOF9FVlN5am03X0Q4VmFZVDRpNzFXcWNmTFE0YnQ0LW53VWNldms1SlM5a0RYZXZiRk1iMUN5cVhCSXd5M3BiQlprelV3TUllYVl3c0N0TWw2UQ?oc=5",
-          "publisher": "NFLTradeRumors.co",
+          "title": "5 Cowboys to watch in Preseason Week 2 against Arizona Cardinals",
+          "url": "https://sports.yahoo.com/articles/5-cowboys-watch-preseason-week-170000118.html",
+          "publisher": "SB Nation",
           "kind": "article",
-          "snippet": "NFC Notes: Aidan Hutchinson, Kyler Murray, Lions, Packers, Vikings NFLTradeRumors.co",
-          "published": "Thu, 20 Aug 2026 00:00:08 GMT"
+          "snippet": "Which Cowboys are you going to be paying the most attention to on Saturday night?",
+          "published": "Thu, 20 Aug 2026 17:00:00 +0000"
         },
         {
-          "title": "NFC Notes: Jordan Love, Kyler Murray, Caleb Williams, Bears, Packers, Vikings",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPZVlMdVN0OU90SXVQV2JUQ01fTDVhSzdSNU9pRUZhRmJuQWptRXQ5MHBCdzllV3pBUi0wdjMzekdINjlDaHk3OG5DWFRDLW5nN01KZ2VYNG1CQWh3cHJGMURfRHZ4ZzlIX0s1Qnd0cmI3U01ZeFY4dEhQaGk3TzBRZlZVSTVWa2psYWZIRmp4ZGkzVkRsZ0hoX3VlY1pCaUU?oc=5",
-          "publisher": "NFLTradeRumors.co",
+          "title": "2026 Arizona Cardinals training camp: Latest intel, updates",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWXlkMTRmNDM2UlFsc2RwRjZ2a1dwYnY0TkZFSHhRVnp1OHp0MkROZk5KbnF0UDlNRHJBSUN1SHVFNExFY0ZrUkp4ZUNEQTk4Y0o3UlVaRzhzMnNfR2EzVTIyNHJjbW0yWTJkYktfalB4dkF5Y2pyQWkwdFYyUjB4ZEV1RlVPVlN5dnFrVWJtVmFxTU9KSUlhYkQxZw?oc=5",
+          "publisher": "ESPN",
           "kind": "article",
-          "snippet": "NFC Notes: Jordan Love, Kyler Murray, Caleb Williams, Bears, Packers, Vikings NFLTradeRumors.co",
-          "published": "Wed, 19 Aug 2026 00:00:23 GMT"
+          "snippet": "2026 Arizona Cardinals training camp: Latest intel, updates ESPN",
+          "published": "Thu, 13 Aug 2026 14:33:00 GMT"
         },
         {
-          "title": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdng5T3VoUjR1VktHaEh2VmwzN1lia0hhd2xXbzg4NG1McFVETXJ1X0hoYklQTVJZdUZ1cU9BS0stUHNWZkF4c2hJc3djTWRYbVVwcy1RZE8xRXM0N0M2VEtyc3pEcVJGTURhSGFaQWxmRGp5M3BsM3RpUGlZUS1IWlNxS0hrU0hFVU9WeTVvQk1McUFVYkh1RTAwaEliLVRHLVE?oc=5",
-          "publisher": "NFLTradeRumors.co",
+          "title": "Arizona Cardinals TE Trey McBride excited about new offense",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQSWIwOUtPNE0tMllJWEZWdjU2c3pVZUlqNlZ3RTdQUUJTR3hqWXRueUotSl9TLVZhN3lDSXg4anh3emtaWkRnaGFDbjRsRVFMcVlNcW1oaThYRGdFR0E1clFYTXFRM1g4VU9aR2RNSmZ0eU1YYVdnRDFuZlZ6c0YwX1cwMUZ1U0VvUGdlMWoyZ1BmLUhYd002b2UwY2VtRGFpbVZ3dXBvamw4OXFkczFOX0NxYVRkb2gtclBDUFFtV3BnMk1CVzZPckJOU0xBM1laaGhrRjIwQU4?oc=5",
+          "publisher": "USA Today",
           "kind": "article",
-          "snippet": "NFC Notes: Jordan Love, Caleb Williams, Bears, Packers, Vikings QB Competition NFLTradeRumors.co",
-          "published": "Tue, 14 Jul 2026 07:00:00 GMT"
+          "snippet": "Arizona Cardinals TE Trey McBride excited about new offense USA Today",
+          "published": "Wed, 03 Jun 2026 07:00:00 GMT"
         },
         {
-          "title": "NFC Notes: Caleb Williams, Coby Bryant, Kyler Murray, Bears, Vikings",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOW1OckhBTy1UVURoTkJac2p3VDhVMVZmZXZRalFlQVVEU3BCSGxXR3hsSXRJeWE0UHUySzRzQ0tvb0EtSEVGUWNVbVNtZW1PVTl2d3h3ZzBIVGxEanBjRUFwU1JSVUR1LTZkNlRueEdPQUZxQUVkSHdPNGd3bXN3eXVYb2VTVzlEN1d3Sm4xYnpBZkVz?oc=5",
-          "publisher": "NFLTradeRumors.co",
+          "title": "Arizona Cardinals TE Trey McBride 2026 offseason profile",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNNWtPVjlwNXFpZ1FQWUUxS1NYeklZOGdzYWtLR3owR1VYSjJQbGR2d3d1YkFoMEtkZE1zQ0J4NU9YU0M2YkNieG5fYnc4US1teks5RXZyZHdIYzFwaGZIMmZQQmxCWWZRNkhSMXFqb3lEV2FpUzc3cmI0Rm1Da0RyMzVSSkt1ZnctTkVTdmp3MlBiSTR4aDNwUkZyeVlCZ2RFWXlBU3MtTWNmN1BodE1SZzhXNGRXcUR4R3NrVGN0cUJmOVF3V2JIaVpGdnRfdk05UE1aQw?oc=5",
+          "publisher": "USA Today",
           "kind": "article",
-          "snippet": "NFC Notes: Caleb Williams, Coby Bryant, Kyler Murray, Bears, Vikings NFLTradeRumors.co",
-          "published": "Fri, 19 Jun 2026 07:00:00 GMT"
+          "snippet": "Arizona Cardinals TE Trey McBride 2026 offseason profile USA Today",
+          "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arizona Cardinals Training Camp Preview: Tight End",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOR2dwTHhXVk1VMTYwQ3lHSjI1bHdNejFReUZ6bDlUQmJfR1RJZkJiRmtyTW9uSjRpWmNIOGU5OUROYmV5bzR2ckdjVnZ1VjJyM0M5ZE5XSTMwNndDaHN4alMtV09VODV4VkV2dWdnSGxtYXJWanY5TlptUHZuWkVwVENiOS1reVV0SVVWY0RTQ2JNTVNSMXBsaG5CWHM?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Arizona Cardinals Training Camp Preview: Tight End Sports Illustrated",
+          "published": "Sat, 19 Jul 2025 07:00:00 GMT"
         }
       ]
     },
@@ -3480,63 +3929,40 @@
       ]
     },
     {
-      "id": "colston-loveland-bears-star-caleb-williams-can-best-bd01e8ed",
-      "slug": "colston-loveland-bears-star-caleb-williams-can-best-bd01e8ed",
+      "id": "patriots-trade-pitch-sends-kayshon-boutte-2-time-6c9d3aad",
+      "slug": "patriots-trade-pitch-sends-kayshon-boutte-2-time-6c9d3aad",
       "sport": "football",
-      "headline": "Caleb Williams Will Be The Best QB From The 2024 NFL Draft Class, Says Nick Wright",
-      "blurb": "Caleb Williams Will Be The Best QB From The 2024 NFL Draft Class, Says Nick Wright FOX Sports",
-      "summary": "Caleb Williams Will Be The Best QB From The 2024 NFL Draft Class, Says Nick Wright FOX Sports Caleb Williams Might Have Just Had His Best Practice and What It Means Sports Illustrated Caleb Williams can be your harbinger of fantasy football QB value New York Post Aggregated from FOX Sports, Sports Illustrated, New York Post, Bears Wire.",
-      "category": "practice",
-      "published": "2026-07-30T07:00:00Z",
-      "updated": "2026-08-20T00:05:00Z",
+      "headline": "Patriots Trade Pitch Sends Kayshon Boutte for 2-Time Pro Bowl Tight End",
+      "blurb": "A Kayshon Boutte Trade JUST GOT REAL After The Latest NFL Injury News | Patriots Rumors YouTube",
+      "summary": "A Kayshon Boutte Trade JUST GOT REAL After The Latest NFL Injury News | Patriots Rumors YouTube Patriots Trade Pitch Sends Kayshon Boutte for 2-Time Pro Bowl Tight End heavy.com Aggregated from YouTube, heavy.com.",
+      "category": "injury",
+      "published": "2026-07-15T07:00:00Z",
+      "updated": "2026-08-20T15:52:56Z",
       "players": [
         {
-          "key": "caleb williams",
-          "name": "Caleb Williams",
-          "slug": "caleb-williams",
-          "pos": "QB",
-          "team": "CHI"
-        },
-        {
-          "key": "colston loveland",
-          "name": "Colston Loveland",
-          "slug": "colston-loveland",
-          "pos": "TE",
-          "team": "CHI"
+          "key": "kayshon boutte",
+          "name": "Kayshon Boutte",
+          "slug": "kayshon-boutte",
+          "pos": "WR",
+          "team": "NE"
         }
       ],
       "sources": [
         {
-          "title": "Caleb Williams can be your harbinger of fantasy football QB value",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONk5xVmJEaDNCS0NlUmpyTG9XekhQMW40UmE3RGNxdVBjVnp4YzBoR3BpaUZLQTZ1Z1gzc1RULV9LRjJrTjFsUDQ2YXNaZUx2V1dDMFllWDhYTERBSUFKOTQyalhhOTk4VUQzZ1NnQWV1VHpDdzRNemRRcGQ1NUtUZ0VhUXQwblFDZFRaSU1Qd0NTdFFDN1JPcnBWVXFMc1E?oc=5",
-          "publisher": "New York Post",
-          "kind": "article",
-          "snippet": "Caleb Williams can be your harbinger of fantasy football QB value New York Post",
-          "published": "Thu, 20 Aug 2026 00:05:00 GMT"
+          "title": "A Kayshon Boutte Trade JUST GOT REAL After The Latest NFL Injury News | Patriots Rumors",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCV1BKcFZSMlFQaHNjUXI1d3NvY01ranlYa0NwWnh0YmJJajUxZDlSM3BLNDZsdURZVnVkTHotc190MUstemVzT1RXMnVHUkg4M085RFV3?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "A Kayshon Boutte Trade JUST GOT REAL After The Latest NFL Injury News | Patriots Rumors YouTube",
+          "published": "Thu, 20 Aug 2026 15:52:56 GMT"
         },
         {
-          "title": "Colston Loveland says Bears star Caleb Williams can be best QB in NFL",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNeFBQZkduckFGTG5PNVVQbnFZNU9KR01jbFIwaE1vdU5PY0Z0NF9SMjg3SkdNZWdXRWJweGNlZngzR2V5ZTBlN3NwQ3FIZWtMeEhFRGEzdTVDNjExRGgtNjE4OHdKUjQ0RHpJZnJkWXJTRk1EWmZjUEhSdGdmMFVFbkotdkJYeXg0aTc0RUhYSm9Ta0c5ckgyUVB1VXd2Rzh6NlB0MDJXT2t2ZFlHcGdmbGVXM2pvUlpCNW1KZG04NDJ1aWxyaDJ1WWRpOXU?oc=5",
-          "publisher": "Bears Wire",
+          "title": "Patriots Trade Pitch Sends Kayshon Boutte for 2-Time Pro Bowl Tight End",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM2ViZm5wRHJsdF94YXBjUFVEUUtKX1kyZ3dMbUVGcC1jY2JZZnhCZmdOS2dieWZkQ3R1ZXhSOVJxSGpGalRRTF9Ga2hDRGdrNkRNQU9OcDU4Z1RwNXZnU1J3aGpqY2NuVWoxbFRkbXl1M1lzVTZHbE5kVF9OeF8wblZMZGJJUDA5OERadERpd1NDUQ?oc=5",
+          "publisher": "heavy.com",
           "kind": "article",
-          "snippet": "Colston Loveland says Bears star Caleb Williams can be best QB in NFL Bears Wire",
-          "published": "Thu, 06 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Caleb Williams Will Be The Best QB From The 2024 NFL Draft Class, Says Nick Wright",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdEhweHdXWUVjQThhajl1ak1LLWFJZE9NWFFXSklCeHBVdUswMmJOVXVoUVdWcXZmX0QtbExrZWY3Z3B3Rm5RZU14bkVIYThZSmM2VThramdtc0NzTVZlYjBoX21LZ0s0RWZwVUhFZ01WT3EtenRiODlWWVJpdXpSQ0lydDZZU0NmMUFWOXNiUW45RmJ5cGhjWFpzUlNNYmhzM0JxWnY3ZzFqR3dE0gGsAUFVX3lxTFBiYy1OazQ1RGZQa2E5cTBXemZYTE03NlFmT2VaYTd0VDA3ZG5hNkphcFZuRkVJQ0ZqRDduYmdIRnFMOG1GY2l4aTNrWGw1cVdvckZQc1g2b3V0ZXMyWGtFOEFoNGlJTVRRakRiNVFaY0NOb1ZzWmNkajRUOHowZlFLRFczRTRuTFFCRVJCMUdBUmkwV1FQUlZnV3Nua19IR1BuXzNMWmlYcWc0aWY?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "Caleb Williams Will Be The Best QB From The 2024 NFL Draft Class, Says Nick Wright FOX Sports",
-          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Caleb Williams Might Have Just Had His Best Practice and What It Means",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOLXYzNkFsXzBRQnhrZUVqU3ZJU0pCRGFNWmljY1lQWkUyUDdaMGFLd1lEZkJ2dnZPNUdCeFFPbktXd040U3dub1FKSnpLQndsZldQZlNrZkphRkNNMXVyVWNlOEQtc2thek42Vmg4WW0tYVdHUFBqNFRjeXUwbTJ4cTRZZmhMT1UtX29zOW5xMFk1bjd1ZEZfelZxTm5yVVNBc3FMM0ZNMA?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Caleb Williams Might Have Just Had His Best Practice and What It Means Sports Illustrated",
-          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
+          "snippet": "Patriots Trade Pitch Sends Kayshon Boutte for 2-Time Pro Bowl Tight End heavy.com",
+          "published": "Wed, 15 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -3689,14 +4115,67 @@
       ]
     },
     {
+      "id": "colts-rookie-seth-mcgowan-raves-jonathan-taylor-s-a0a034b0",
+      "slug": "colts-rookie-seth-mcgowan-raves-jonathan-taylor-s-a0a034b0",
+      "sport": "football",
+      "headline": "Colts rookie Seth McGowan raves about Jonathan Taylor’s influence",
+      "blurb": "Colts rookie Seth McGowan raves about Jonathan Taylor’s influence Colts Wire",
+      "summary": "Colts rookie Seth McGowan raves about Jonathan Taylor’s influence Colts Wire Why Colts walk tightrope with Jonathan Taylor's usage ESPN Should Colts Lessen Jonathan Taylor’s Workload? Aggregated from Colts Wire, ESPN, 93.5 / 107.5 The Fan.",
+      "category": "wire",
+      "published": "2026-06-17T07:00:00Z",
+      "updated": "2026-08-20T12:39:00Z",
+      "players": [
+        {
+          "key": "jonathan taylor",
+          "name": "Jonathan Taylor",
+          "slug": "jonathan-taylor",
+          "pos": "RB",
+          "team": "IND"
+        },
+        {
+          "key": "seth mcgowan",
+          "name": "Seth McGowan",
+          "slug": "seth-mcgowan",
+          "pos": "RB",
+          "team": "IND"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Colts rookie Seth McGowan raves about Jonathan Taylor’s influence",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcjdXOWU5MjROTTl6aWZ3bjhHR1hqa2VYUmhLaHBnb2pmc3JGcnlkeENZNE5QZ05nNnJRc1VseVJpaEYwVURNUjZUenN5VEJDM2dwczNkSWFtY1hrVkxnM2oxeEdsWkNCU2kzTUsxU2xHSVlZSnNaaE03RWs1YWFhUElUTkp2Z3BvWWZKVDdJWXpwZUktOU1IVmtjbzNkLXRsZFB3OTdWUlRNQTBhbUR1T3FmeS0yZjdXem9oLWp3?oc=5",
+          "publisher": "Colts Wire",
+          "kind": "article",
+          "snippet": "Colts rookie Seth McGowan raves about Jonathan Taylor’s influence Colts Wire",
+          "published": "Thu, 20 Aug 2026 12:39:00 GMT"
+        },
+        {
+          "title": "Why Colts walk tightrope with Jonathan Taylor's usage",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQlhTUHdoQ25oUlRJcXRsQlh2VGc2NkhsaFZGdjNQT082SDZWeVRJbGNBbGYxNHRxcGpJUjIxem9lY3huXzEtUzdHd05TQU42WVhvOTBUaENhWDVZd2F0RVdkOHZ6aldRMy1mekNGakJlUHIxa3lVeXZMdmUzR3d3ZlhuRFBzOVNSZU9sdHEwczRMVGk5bnc?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Why Colts walk tightrope with Jonathan Taylor's usage ESPN",
+          "published": "Fri, 10 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Should Colts Lessen Jonathan Taylor’s Workload?",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOazZmWXR5cHRpaDBQZXBZN2F4UmpxUGJEb0pLTGFsLXZyaWxnUTRCbXN1cEgwRHF5WTl3WE9LT21SY05rSUhsZ3gtcEtLNE5SNWhvVXRQNFdfVE9WbUNqTld2R3BXazBBZC1oUFhVTTBiRllkTGRRM1h4V0pQckU2Rm5n?oc=5",
+          "publisher": "93.5 / 107.5 The Fan",
+          "kind": "article",
+          "snippet": "Should Colts Lessen Jonathan Taylor’s Workload? 93.5 / 107.5 The Fan",
+          "published": "Wed, 17 Jun 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "matt-hasselbeck-breaks-down-ty-simpson-mendoza-s-6fb48385",
       "slug": "matt-hasselbeck-breaks-down-ty-simpson-mendoza-s-6fb48385",
       "sport": "football",
       "headline": "Matt Hasselbeck breaks down Ty Simpson and Mendoza's debuts, Jeremiyah Love's injury | The Herd",
-      "blurb": "Here's how much Jeremiyah Love's rookie fantasy outlook will be impacted by ankle injury Yahoo Sports",
-      "summary": "Here's how much Jeremiyah Love's rookie fantasy outlook will be impacted by ankle injury Yahoo Sports Matt Hasselbeck breaks down Ty Simpson and Mendoza's debuts, Jeremiyah Love's injury | The Herd FOX Sports 2026 NFL Preseason Week 1: Rookie QB Breakdown, Jeremiyah Love Injury & Hype Check Yahoo Sports Aggregated from Yahoo Sports, FOX Sports, Sports Illustrated, The New York Times, CBS Sports and 3 more.",
+      "blurb": "Give us your thoughts on the Jeremiyah Love injury Revenge of the Birds",
+      "summary": "Give us your thoughts on the Jeremiyah Love injury Revenge of the Birds Mike LaFleur: Jeremiyah Love OK after ankle injury, could have returned NBC Sports Jeremiyah Love (RB): Bio, News, Stats & more Arizona Cardinals Aggregated from Revenge of the Birds, NBC Sports, Arizona Cardinals, Yahoo Sports, FOX Sports and 6 more.",
       "category": "injury",
-      "published": "2026-08-14T16:03:45Z",
+      "published": "2026-04-24T05:00:46Z",
       "updated": "2026-08-19T01:17:20Z",
       "players": [
         {
@@ -3802,6 +4281,105 @@
           "kind": "article",
           "snippet": "Troubling NFL injuries from Week 1 of preseason: Jeremiyah Love, D.J. Moore and more FanSided",
           "published": "Sun, 16 Aug 2026 22:10:57 GMT"
+        },
+        {
+          "title": "Give us your thoughts on the Jeremiyah Love injury",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcG10N1NkLU95dWZCcUppNWNhUHplX0MyWkdxdFJQQ0p2dXFyUncxOTJSMXc1VHpyTDgxZ3RMcnlyRVhoOTA4YVhhVWxvQllYQjROb0RHSURNZVJZRTdlNDVvNXc0RVNucG9GWTJhQXJPeDROSUF1SDVqRHB4U05JWkVpQmlqNndUaGtBbGVNdVFqWTVLOENDbVZWQlJXZUM4ZFQweVZKb3BPb0Zp?oc=5",
+          "publisher": "Revenge of the Birds",
+          "kind": "article",
+          "snippet": "Give us your thoughts on the Jeremiyah Love injury Revenge of the Birds",
+          "published": "Mon, 17 Aug 2026 16:59:28 GMT"
+        },
+        {
+          "title": "Mike LaFleur: Jeremiyah Love OK after ankle injury, could have returned",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMjJ5MFpKR2g0SzhubnB1MlVVdi1NUkFCQUxTbFBBMy1mX0NYeEltQnVERzl3bWxqQnVPMHotekt6UVFqNUZGRkJFNkFjVFRzTzJfQ3hXeEdnblQ2VkRnRDRuQ1lXbVdlN2d2RVU3a24yMEVYR3puVXJsUUsxRWFCaHBzeVFWaWxlVmlMQU4yLWdVZ09WaHRqQXdpZVpnTUx1ekJBY0M3UVk4YkxHbG1DWHhWZ29iVzBiYlVpUV9ac25aMWdJNTdsWWl5WQ?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Mike LaFleur: Jeremiyah Love OK after ankle injury, could have returned NBC Sports",
+          "published": "Fri, 14 Aug 2026 14:25:42 GMT"
+        },
+        {
+          "title": "Jeremiyah Love (RB): Bio, News, Stats & more",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0ybFRaNVZsSEZkajkySktpY2ZjeDFwX3d4SVdyNWZ2b05IRXhYelhjUWhpNEo4aDFzZi1NVHJvVE80QUFUZFRQb1FuTFJpa3gtZ3h6dm5QQTd4bl9wQWRBTXFvZWdsbmoyZm1RTFpWS0g?oc=5",
+          "publisher": "Arizona Cardinals",
+          "kind": "article",
+          "snippet": "Jeremiyah Love (RB): Bio, News, Stats & more Arizona Cardinals",
+          "published": "Fri, 24 Apr 2026 05:00:46 GMT"
+        }
+      ]
+    },
+    {
+      "id": "kyler-murray-likely-play-saturday-s-contest-09935610",
+      "slug": "kyler-murray-likely-play-saturday-s-contest-09935610",
+      "sport": "football",
+      "headline": "Kyler Murray: Not likely to play in Saturday's preseason contest",
+      "blurb": "McCarthy is fighting to hold the No.",
+      "summary": "J.J. McCarthy and Kyler Murray: McCarthy is fighting to hold the No. Murray isn't expected to suit up for Saturday's preseason game against the Ravens, Kevin Seifert of ESPN.com reports. Visit RotoWire.com for more analysis on this update. Aggregated from PFT feed, RotoWire NFL.",
+      "category": "wire",
+      "published": "2026-08-20T17:17:30Z",
+      "updated": "2026-08-20T17:17:30Z",
+      "players": [
+        {
+          "key": "j j mccarthy",
+          "name": "J.J. McCarthy",
+          "slug": "j-j-mccarthy",
+          "pos": "QB",
+          "team": "MIN"
+        },
+        {
+          "key": "kyler murray",
+          "name": "Kyler Murray",
+          "slug": "kyler-murray",
+          "pos": "QB",
+          "team": "MIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "J.J. McCarthy \"more than likely\" to start Saturday's game",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/j-j-mccarthy-more-than-likely-to-start-saturdays-game",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "McCarthy is fighting to hold the No. 2 spot.",
+          "published": "Thu, 20 Aug 2026 13:17:30 -0400"
+        },
+        {
+          "title": "Kyler Murray: Not likely to play in Saturday's preseason contest",
+          "url": "https://www.rotowire.com//football/player/kyler-murray-13613",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Murray isn't expected to suit up for Saturday's preseason game against the Ravens, Kevin Seifert of ESPN.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Thu, 20 Aug 2026 10:03:00 AM PDT"
+        }
+      ]
+    },
+    {
+      "id": "khalil-shakir-managing-unspecified-injury-b2267ebb",
+      "slug": "khalil-shakir-managing-unspecified-injury-b2267ebb",
+      "sport": "football",
+      "headline": "Khalil Shakir: Managing unspecified injury",
+      "blurb": "Shakir (undisclosed) didn't practice Tuesday due to an injury, Katherine Fitzgerald of The Buffalo News reports.",
+      "summary": "Khalil Shakir: Shakir (undisclosed) didn't practice Tuesday due to an injury, Katherine Fitzgerald of The Buffalo News reports. Visit RotoWire.com for more analysis on this update. Desk reading of RotoWire NFL.",
+      "category": "injury",
+      "published": "2026-08-20T17:50:39Z",
+      "updated": "2026-08-20T17:50:39Z",
+      "players": [
+        {
+          "key": "khalil shakir",
+          "name": "Khalil Shakir",
+          "slug": "khalil-shakir",
+          "pos": "WR",
+          "team": "BUF"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Khalil Shakir: Managing unspecified injury",
+          "url": "https://www.rotowire.com//football/player/khalil-shakir-15892",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Shakir (undisclosed) didn't practice Tuesday due to an injury, Katherine Fitzgerald of The Buffalo News reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Thu, 20 Aug 2026 10:14:00 AM PDT"
         }
       ]
     },
@@ -3886,36 +4464,6 @@
           "kind": "article",
           "snippet": "Warren (groin) suffered a strained abductor in Wednesday's practice but is expected to return to practice next week, NFL reporter Jordan Schultz reports. Visit RotoWire.com for more analysis on this update.",
           "published": "Wed, 19 Aug 2026 6:35:00 PM PDT"
-        }
-      ]
-    },
-    {
-      "id": "makai-lemon-deemed-limited-thursday-s-practice-91748e3e",
-      "slug": "makai-lemon-deemed-limited-thursday-s-practice-91748e3e",
-      "sport": "football",
-      "headline": "Makai Lemon: Deemed limited at Thursday's practice",
-      "blurb": "Lemon (hamstring) is practicing on a limited basis Thursday, Dave Zangoro of NBC Sports Philadelphia reports.",
-      "summary": "Makai Lemon: Lemon (hamstring) is practicing on a limited basis Thursday, Dave Zangoro of NBC Sports Philadelphia reports. Visit RotoWire.com for more analysis on this update. Desk reading of RotoWire NFL.",
-      "category": "injury",
-      "published": "2026-08-20T15:54:23Z",
-      "updated": "2026-08-20T15:54:23Z",
-      "players": [
-        {
-          "key": "makai lemon",
-          "name": "Makai Lemon",
-          "slug": "makai-lemon",
-          "pos": "WR",
-          "team": "PHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Makai Lemon: Deemed limited at Thursday's practice",
-          "url": "https://www.rotowire.com//football/player/makai-lemon-19231",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Lemon (hamstring) is practicing on a limited basis Thursday, Dave Zangoro of NBC Sports Philadelphia reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Thu, 20 Aug 2026 8:27:00 AM PDT"
         }
       ]
     },
@@ -4098,6 +4646,60 @@
           "kind": "article",
           "snippet": "The Big Picture: Justin Herbert is on an Andrew Luck Trajectory Thanks to Jim Harbaugh FOX Sports",
           "published": "Tue, 13 Jan 2026 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "vita-vea-ends-trade-drama-massive-contract-extension-c0749c3a",
+      "slug": "vita-vea-ends-trade-drama-massive-contract-extension-c0749c3a",
+      "sport": "football",
+      "headline": "New NFL Trade Rumors on Vita Vea Amid Bucs Training Camp Absence After Contract Talks",
+      "blurb": "New NFL Trade Rumors on Vita Vea Amid Bucs Training Camp Absence After Contract Talks Bleacher Report",
+      "summary": "New NFL Trade Rumors on Vita Vea Amid Bucs Training Camp Absence After Contract Talks Bleacher Report The Tampa Bay Buccaneers are keeping Vita Vea on the roster after signing an extension just weeks after requesting a trade. 49ers trade target signs $30 million contract with Buccaneers Niners Wire Aggregated from Bleacher Report, SB Nation, Niners Wire, bolavip.com.",
+      "category": "trade",
+      "published": "2026-08-04T07:00:00Z",
+      "updated": "2026-08-20T11:00:00Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Tampa Bay Buccaneers news: Vita Vea signs contract extension",
+          "url": "https://sports.yahoo.com/articles/tampa-bay-buccaneers-news-vita-110000933.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Tampa Bay Buccaneers are keeping Vita Vea on the roster after signing an extension just weeks after requesting a trade.",
+          "published": "Thu, 20 Aug 2026 11:00:00 +0000"
+        },
+        {
+          "title": "49ers trade target signs $30 million contract with Buccaneers",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOem92YkpoRW9UZ1pxSDdfRktRTUpFLTB5VTlLVzdvMnN0cTNCbzZ0SlF1Zm9nUVVPcWhhR0xBLXl2YmJ2a3A1LXZUeVRPbDd0UlRQQUhuVXBpTURKVVNINXNteHdjd2RyenJNUmRzYlR5b2txd2hwQkZ3WVd4T09NMGgwMm1SblBERlJrLTRmTnR4eGE3eHMySThjMWQ2NWZwU1RnN21TS3ZFVkNQRUZGb2p4NDJZbVJ0ZkF0SzlyalZFU3lEdUtUM0ZOdw?oc=5",
+          "publisher": "Niners Wire",
+          "kind": "article",
+          "snippet": "49ers trade target signs $30 million contract with Buccaneers Niners Wire",
+          "published": "Wed, 19 Aug 2026 23:06:00 GMT"
+        },
+        {
+          "title": "Vita Vea ends trade drama with massive contract extension from Buccaneers",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZVE0RnRnSTlWQzhlSTZwX29JcHIySWIxWnRxbkhNbFZkZWZwVTZ6QzVNd1licjVxWUhBQ0JneGltZm5YaGVUeDRCOVRoUXhPTUJwZzVUTlZDTFdHZXVfSVBFNzE5cW4zbV9MQzgwNmRYaXVpQ1BOUWFHWnRZcVIyaDZZWE1abW43VEtwSS1meGNHSWVLcE1ybGxfVjFmcGE1TFHSAacBQVVfeXFMT0syQ21qZG5fSS1fUzh6Tl9oZnpkSWoxWlNlZEJRYks1T2dxbUpIdkdSTDBnZkYtVkF4N0hfNWpyTEpIcFdtak5Ea3dUN21NTDZKeWM1eVJ3OVE4Z0sxUC11cXBFYlJ0cEN1dXJXaWVKeTM1SFhIbHNNSzJkUm92UHhJUm85YkpjdGZrbUdfRE9RV2tsTFc0eEdWNkJPOUVZbWMzNWRUaFk?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Vita Vea ends trade drama with massive contract extension from Buccaneers bolavip.com",
+          "published": "Wed, 19 Aug 2026 23:07:53 GMT"
+        },
+        {
+          "title": "New NFL Rumors Update Vita Vea Bucs Contract, Trade Buzz Amid 2026 Preseason",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYTdnREZVMU94M0FIOTE5UVEwMGpha2pEd1lvOXpGZUV6TWR0Rm5icHFtSXpNMVYyWTVxVFFiRjJkR01nS0ZmN0Frb1NqaXJrWnlvRlI2N3Z3czJKMGlzZ18zTTI3d0tyRTk0VDJHakp6X3A5RXpMZHpRMVdtQzBKUXAxT1VjalI3RXV1OUJDSlJRVEJXb1d1OWpHYzBEVWdUbXh3YW5DQVVCZHNrcklfT0IyWjdUaFNDY3R4Tg?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "New NFL Rumors Update Vita Vea Bucs Contract, Trade Buzz Amid 2026 Preseason Bleacher Report",
+          "published": "Wed, 19 Aug 2026 18:20:59 GMT"
+        },
+        {
+          "title": "New NFL Trade Rumors on Vita Vea Amid Bucs Training Camp Absence After Contract Talks",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMHF0TmhzZlJRazRBVzh2Q1FWX3NYckpEZWptSjBBTTZSdzFSaHVkeUNEMWJyQVBrbUk4T1JIVVpkYl9tRTEwaEJSM0NkRXQ0Z0tFZzZFdHVLRTJJZjJlNGJiSUpYT2NfVnBqSWtTREo5N1RZUkJJNHRnX1k4ZExTWHJnMlRxaUdsMW5fOVJvVXZLdWplUF9TZnVEalNsd0laR3ZrYXZFWGIyZmVRM0pPanBsTV9ZVmhZcXlLZ1c0VzlmTWczU0E?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "New NFL Trade Rumors on Vita Vea Amid Bucs Training Camp Absence After Contract Talks Bleacher Report",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -4286,6 +4888,158 @@
       ]
     },
     {
+      "id": "commanders-rb-rachaad-white-tweaked-hamstring-d6d04209",
+      "slug": "commanders-rb-rachaad-white-tweaked-hamstring-d6d04209",
+      "sport": "football",
+      "headline": "Commanders RB Rachaad White tweaked his hamstring",
+      "blurb": "Commanders running back Rachaad White has missed the past few days with an undisclosed injury.",
+      "summary": "Commanders running back Rachaad White has missed the past few days with an undisclosed injury. White has missed the last few days of practice with a hamstring injury, Mike Garafolo of NFL Network reports. Visit RotoWire.com for more analysis on this update. Aggregated from PFT feed, RotoWire NFL.",
+      "category": "injury",
+      "published": "2026-08-20T02:34:55Z",
+      "updated": "2026-08-20T02:34:55Z",
+      "players": [
+        {
+          "key": "rachaad white",
+          "name": "Rachaad White",
+          "slug": "rachaad-white",
+          "pos": "RB",
+          "team": "WAS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Commanders RB Rachaad White tweaked his hamstring",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-rb-rachaad-white-tweaked-his-hamstring",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Commanders running back Rachaad White has missed the past few days with an undisclosed injury.",
+          "published": "Wed, 19 Aug 2026 22:34:55 -0400"
+        },
+        {
+          "title": "Rachaad White: Nursing hamstring injury",
+          "url": "https://www.rotowire.com//football/player/rachaad-white-15802",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "White has missed the last few days of practice with a hamstring injury, Mike Garafolo of NFL Network reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 19 Aug 2026 6:30:00 PM PDT"
+        }
+      ]
+    },
+    {
+      "id": "live-fernando-mendoza-back-action-2-kicks-off-262759ce",
+      "slug": "live-fernando-mendoza-back-action-2-kicks-off-262759ce",
+      "sport": "football",
+      "headline": "NFL news, live updates: Fernando Mendoza back in action as Week 2 preseason kicks off Thursday; Vita Vea, Bucs agree to 1-year extension",
+      "blurb": "Follow along with the latest NFL news and updates as the preseason plays out.",
+      "summary": "Fernando Mendoza: Follow along with the latest NFL news and updates as the preseason plays out. Desk reading of Yahoo Sports.",
+      "category": "roster",
+      "published": "2026-08-20T14:37:14Z",
+      "updated": "2026-08-20T14:37:14Z",
+      "players": [
+        {
+          "key": "fernando mendoza",
+          "name": "Fernando Mendoza",
+          "slug": "fernando-mendoza",
+          "pos": "QB",
+          "team": "LV"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NFL news, live updates: Fernando Mendoza back in action as Week 2 preseason kicks off Thursday; Vita Vea, Bucs agree to 1-year extension",
+          "url": "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-preseason-week-2-schedule-whos-playing-starters-143714619.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Follow along with the latest NFL news and updates as the preseason plays out.",
+          "published": "Thu, 20 Aug 2026 14:37:14 +0000"
+        }
+      ]
+    },
+    {
+      "id": "colts-qb-anthony-richardson-given-low-trade-probability-cd5f97c1",
+      "slug": "colts-qb-anthony-richardson-given-low-trade-probability-cd5f97c1",
+      "sport": "football",
+      "headline": "Colts QB Anthony Richardson given low trade probability by analyst before cuts",
+      "blurb": "Colts QB Anthony Richardson given low trade probability by analyst before cuts Colts Wire",
+      "summary": "Colts QB Anthony Richardson given low trade probability by analyst before cuts Colts Wire Desk reading of Colts Wire.",
+      "category": "trade",
+      "published": "2026-08-20T14:36:00Z",
+      "updated": "2026-08-20T14:36:00Z",
+      "players": [
+        {
+          "key": "anthony richardson",
+          "name": "Anthony Richardson Sr.",
+          "slug": "anthony-richardson",
+          "pos": "QB",
+          "team": "IND"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Colts QB Anthony Richardson given low trade probability by analyst before cuts",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV3g5N0h0aUszVDczS04xNjluR28yeFJwWnFrMlJHRk9QRldjQTlPb3E4dWlEdkVBMl9WTEluM3VFLTFMcEFid0tFa3V3M1JvSlhVcWU4T09zUTdiQWgwSnA2VnRfQjZlZ042TGhobHRPZEFSRXAwQzhtOVJ4c3Y4a1VOMXBmdWw1TmtCNVFIbXpmQlQ4UGNHdkxuWS1xZGhpRmFzN3Y0NzJJMTk1TDNKc2k2UHZ4WG5GNm5ocW1DNkdpMnlZ?oc=5",
+          "publisher": "Colts Wire",
+          "kind": "article",
+          "snippet": "Colts QB Anthony Richardson given low trade probability by analyst before cuts Colts Wire",
+          "published": "Thu, 20 Aug 2026 14:36:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "top-100-trey-mcbride-earns-rave-reviews-peers-73dc0a7f",
+      "slug": "top-100-trey-mcbride-earns-rave-reviews-peers-73dc0a7f",
+      "sport": "football",
+      "headline": "NFL Top 100: Trey McBride Earns Rave Reviews From His NFL Peers",
+      "blurb": "NFL Top 100: Trey McBride Earns Rave Reviews From His NFL Peers Sports Illustrated",
+      "summary": "NFL Top 100: Trey McBride Earns Rave Reviews From His NFL Peers Sports Illustrated Is Trey McBride NFL's top TE? Cardinals All-Pro weighs in NFL.com Aggregated from Sports Illustrated, NFL.com, Arizona Sports, ESPN.",
+      "category": "wire",
+      "published": "2022-05-05T12:13:08Z",
+      "updated": "2026-08-20T17:09:48Z",
+      "players": [
+        {
+          "key": "trey mcbride",
+          "name": "Trey McBride",
+          "slug": "trey-mcbride",
+          "pos": "TE",
+          "team": "ARI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NFL Top 100: Trey McBride Earns Rave Reviews From His NFL Peers",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaE1LYnlnTlhlM1duMFAycFVhblpLVVo5cWJ1U2dveWw3V3ZUNV9CUnNlZlBoT3E5QzR0bTRiZERqQ2FBVWgyTTdXZUFsZWFHeld6NkQ2eThCZUJVbGlmWnp1QjNxYmJtVTItcGdQRDNfWldDOU5KVURxaDVEV0dZUzJKTkJoWGtQRlV5SmVjeEc0NmNnQVZndEFoV04?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "NFL Top 100: Trey McBride Earns Rave Reviews From His NFL Peers Sports Illustrated",
+          "published": "Thu, 20 Aug 2026 17:09:48 GMT"
+        },
+        {
+          "title": "Is Trey McBride NFL's top TE? Cardinals All-Pro weighs in",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNWFmVDAteTVOeEdwX1h0RktDNkFIMFh6UENET3NRU1BobE1wbFZENWJLallBSURqUktHSHFoWl83eFA1dFA1QkpoMXJLNnVKUUY2YWVYQXRsdlpvTXdwVVBmWHIyZ0tyM2pxekxMTTg1R2ZVNmM2N1BLNUlXNGcxOXZpWUNpaU05?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "Is Trey McBride NFL's top TE? Cardinals All-Pro weighs in NFL.com",
+          "published": "Tue, 03 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Trey McBride listed as one of the top TE's headed into 2025",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yZmdPRS1LTkFNM2Y3WUhiWmk3azBVOXJ6VTZ1ck42R3BOczc4U0d4ZUFsZWxoZGxrdVNvdkM1NGtqbnJZQW9VV3NQRFNFVWhjOEpSdHZmNjdQdG80Snk1cFN3WE1nblFwTGJoQVVDSQ?oc=5",
+          "publisher": "Arizona Sports",
+          "kind": "article",
+          "snippet": "Trey McBride listed as one of the top TE's headed into 2025 Arizona Sports",
+          "published": "Thu, 21 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Trey McBride",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40cWJzY19tRW00dDdNYnc5d0lKWXNqMkxEX04wUFhCc0lCeU1yVE9YcG1lZzlleVNQakZWWWNTYlQ3a1dKOTRhOXlOUDE4dUVRZWpiQ2lDVjVxUmlZZ1JYQUFwSzdNamxJ?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Trey McBride - Arizona Cardinals Tight End ESPN",
+          "published": "Thu, 05 May 2022 12:13:08 GMT"
+        }
+      ]
+    },
+    {
       "id": "what-we-learned-chargers-49ers-joint-practice-justin-38111d79",
       "slug": "what-we-learned-chargers-49ers-joint-practice-justin-38111d79",
       "sport": "football",
@@ -4436,100 +5190,40 @@
       ]
     },
     {
-      "id": "commanders-rb-rachaad-white-tweaked-hamstring-d6d04209",
-      "slug": "commanders-rb-rachaad-white-tweaked-hamstring-d6d04209",
+      "id": "shedeur-sanders-no-extra-anxiety-pressure-0231b0b1",
+      "slug": "shedeur-sanders-no-extra-anxiety-pressure-0231b0b1",
       "sport": "football",
-      "headline": "Commanders RB Rachaad White tweaked his hamstring",
-      "blurb": "Commanders running back Rachaad White has missed the past few days with an undisclosed injury.",
-      "summary": "Commanders running back Rachaad White has missed the past few days with an undisclosed injury. White has missed the last few days of practice with a hamstring injury, Mike Garafolo of NFL Network reports. Visit RotoWire.com for more analysis on this update. Aggregated from PFT feed, RotoWire NFL.",
-      "category": "injury",
-      "published": "2026-08-20T02:34:55Z",
-      "updated": "2026-08-20T02:34:55Z",
+      "headline": "Shedeur Sanders: No extra anxiety or pressure about this week",
+      "blurb": "With a decision at starting quarterback looming, Browns quarterback Shedeur Sanders said Wednesday he's not feeling pressure ahead of joint practice with the Bills on Thursday…",
+      "summary": "With a decision at starting quarterback looming, Browns quarterback Shedeur Sanders said Wednesday he's not feeling pressure ahead of joint practice with the Bills on Thursday and his start in the second preseason game at home Saturday. Browns quarterback Shedeur Sanders is going to get a pair of chances to work against an opposing defense this week. Aggregated from ESPN NFL, PFT feed.",
+      "category": "coach",
+      "published": "2026-08-19T21:34:57Z",
+      "updated": "2026-08-20T12:05:39Z",
       "players": [
         {
-          "key": "rachaad white",
-          "name": "Rachaad White",
-          "slug": "rachaad-white",
-          "pos": "RB",
-          "team": "WAS"
+          "key": "shedeur sanders",
+          "name": "Shedeur Sanders",
+          "slug": "shedeur-sanders",
+          "pos": "QB",
+          "team": "CLE"
         }
       ],
       "sources": [
         {
-          "title": "Commanders RB Rachaad White tweaked his hamstring",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-rb-rachaad-white-tweaked-his-hamstring",
-          "publisher": "PFT feed",
+          "title": "Shedeur not feeling pressure over Browns' QB call",
+          "url": "https://www.espn.com/nfl/story/_/id/49660991/shedeur-sanders-not-worried-browns-qb-decision",
+          "publisher": "ESPN NFL",
           "kind": "article",
-          "snippet": "Commanders running back Rachaad White has missed the past few days with an undisclosed injury.",
-          "published": "Wed, 19 Aug 2026 22:34:55 -0400"
+          "snippet": "With a decision at starting quarterback looming, Browns quarterback Shedeur Sanders said Wednesday he's not feeling pressure ahead of joint practice with the Bills on Thursday and his start in the second preseason game at home Saturday.",
+          "published": "Thu, 20 Aug 2026 07:05:39 EST"
         },
         {
-          "title": "Rachaad White: Nursing hamstring injury",
-          "url": "https://www.rotowire.com//football/player/rachaad-white-15802",
-          "publisher": "RotoWire NFL",
+          "title": "Shedeur Sanders: No extra anxiety or pressure about this week",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/shedeur-sanders-no-extra-anxiety-or-pressure-about-this-week",
+          "publisher": "PFT feed",
           "kind": "article",
-          "snippet": "White has missed the last few days of practice with a hamstring injury, Mike Garafolo of NFL Network reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 19 Aug 2026 6:30:00 PM PDT"
-        }
-      ]
-    },
-    {
-      "id": "live-fernando-mendoza-back-action-2-kicks-off-262759ce",
-      "slug": "live-fernando-mendoza-back-action-2-kicks-off-262759ce",
-      "sport": "football",
-      "headline": "NFL news, live updates: Fernando Mendoza back in action as Week 2 preseason kicks off Thursday; Vita Vea, Bucs agree to 1-year extension",
-      "blurb": "Follow along with the latest NFL news and updates as the preseason plays out.",
-      "summary": "Fernando Mendoza: Follow along with the latest NFL news and updates as the preseason plays out. Desk reading of Yahoo Sports.",
-      "category": "roster",
-      "published": "2026-08-20T14:37:14Z",
-      "updated": "2026-08-20T14:37:14Z",
-      "players": [
-        {
-          "key": "fernando mendoza",
-          "name": "Fernando Mendoza",
-          "slug": "fernando-mendoza",
-          "pos": "QB",
-          "team": "LV"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NFL news, live updates: Fernando Mendoza back in action as Week 2 preseason kicks off Thursday; Vita Vea, Bucs agree to 1-year extension",
-          "url": "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-preseason-week-2-schedule-whos-playing-starters-143714619.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Follow along with the latest NFL news and updates as the preseason plays out.",
-          "published": "Thu, 20 Aug 2026 14:37:14 +0000"
-        }
-      ]
-    },
-    {
-      "id": "colts-qb-anthony-richardson-given-low-trade-probability-cd5f97c1",
-      "slug": "colts-qb-anthony-richardson-given-low-trade-probability-cd5f97c1",
-      "sport": "football",
-      "headline": "Colts QB Anthony Richardson given low trade probability by analyst before cuts",
-      "blurb": "Colts QB Anthony Richardson given low trade probability by analyst before cuts Colts Wire",
-      "summary": "Colts QB Anthony Richardson given low trade probability by analyst before cuts Colts Wire Desk reading of Colts Wire.",
-      "category": "trade",
-      "published": "2026-08-20T14:36:00Z",
-      "updated": "2026-08-20T14:36:00Z",
-      "players": [
-        {
-          "key": "anthony richardson",
-          "name": "Anthony Richardson Sr.",
-          "slug": "anthony-richardson",
-          "pos": "QB",
-          "team": "IND"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Colts QB Anthony Richardson given low trade probability by analyst before cuts",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV3g5N0h0aUszVDczS04xNjluR28yeFJwWnFrMlJHRk9QRldjQTlPb3E4dWlEdkVBMl9WTEluM3VFLTFMcEFid0tFa3V3M1JvSlhVcWU4T09zUTdiQWgwSnA2VnRfQjZlZ042TGhobHRPZEFSRXAwQzhtOVJ4c3Y4a1VOMXBmdWw1TmtCNVFIbXpmQlQ4UGNHdkxuWS1xZGhpRmFzN3Y0NzJJMTk1TDNKc2k2UHZ4WG5GNm5ocW1DNkdpMnlZ?oc=5",
-          "publisher": "Colts Wire",
-          "kind": "article",
-          "snippet": "Colts QB Anthony Richardson given low trade probability by analyst before cuts Colts Wire",
-          "published": "Thu, 20 Aug 2026 14:36:00 GMT"
+          "snippet": "Browns quarterback Shedeur Sanders is going to get a pair of chances to work against an opposing defense this week.",
+          "published": "Wed, 19 Aug 2026 17:34:57 -0400"
         }
       ]
     },
@@ -4567,44 +5261,6 @@
           "kind": "article",
           "snippet": "With the Eagles and Patriots going head-to-head for a joint practice in Foxborough before playing Saturday's preseason game, members of Philadelphia's beat corps got a chance to visit with receiver A.J.",
           "published": "Wed, 19 Aug 2026 14:12:25 -0400"
-        }
-      ]
-    },
-    {
-      "id": "shedeur-sanders-no-extra-anxiety-pressure-0231b0b1",
-      "slug": "shedeur-sanders-no-extra-anxiety-pressure-0231b0b1",
-      "sport": "football",
-      "headline": "Shedeur Sanders: No extra anxiety or pressure about this week",
-      "blurb": "With a decision at starting quarterback looming, Browns quarterback Shedeur Sanders said Wednesday he's not feeling pressure ahead of joint practice with the Bills on Thursday…",
-      "summary": "With a decision at starting quarterback looming, Browns quarterback Shedeur Sanders said Wednesday he's not feeling pressure ahead of joint practice with the Bills on Thursday and his start in the second preseason game at home Saturday. Browns quarterback Shedeur Sanders is going to get a pair of chances to work against an opposing defense this week. Aggregated from ESPN NFL, PFT feed.",
-      "category": "coach",
-      "published": "2026-08-19T21:34:57Z",
-      "updated": "2026-08-20T12:05:39Z",
-      "players": [
-        {
-          "key": "shedeur sanders",
-          "name": "Shedeur Sanders",
-          "slug": "shedeur-sanders",
-          "pos": "QB",
-          "team": "CLE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Shedeur not feeling pressure over Browns' QB call",
-          "url": "https://www.espn.com/nfl/story/_/id/49660991/shedeur-sanders-not-worried-browns-qb-decision",
-          "publisher": "ESPN NFL",
-          "kind": "article",
-          "snippet": "With a decision at starting quarterback looming, Browns quarterback Shedeur Sanders said Wednesday he's not feeling pressure ahead of joint practice with the Bills on Thursday and his start in the second preseason game at home Saturday.",
-          "published": "Thu, 20 Aug 2026 07:05:39 EST"
-        },
-        {
-          "title": "Shedeur Sanders: No extra anxiety or pressure about this week",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/shedeur-sanders-no-extra-anxiety-or-pressure-about-this-week",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Browns quarterback Shedeur Sanders is going to get a pair of chances to work against an opposing defense this week.",
-          "published": "Wed, 19 Aug 2026 17:34:57 -0400"
         }
       ]
     },
@@ -4713,540 +5369,6 @@
           "kind": "article",
           "snippet": "Alabama Running Back Jam Miller and Linebacker Justin Jefferson Accept Senior Bowl Invites Tide 100.9",
           "published": "Mon, 15 Dec 2025 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "cardinals-must-avoid-jeremiyah-love-plan-would-make-1a672801",
-      "slug": "cardinals-must-avoid-jeremiyah-love-plan-would-make-1a672801",
-      "sport": "football",
-      "headline": "Cardinals must avoid a Jeremiyah Love plan that would make the franchise look silly",
-      "blurb": "Cardinals must avoid a Jeremiyah Love plan that would make the franchise look silly Raising Zona",
-      "summary": "Cardinals must avoid a Jeremiyah Love plan that would make the franchise look silly Raising Zona Cardinals deliver latest update on Jeremiyah Love injury azcentral.com and The Arizona Republic Cardinals Make Unfortunate But Correct Call With Jeremiyah Love in Preseason Sports Illustrated Aggregated from Raising Zona, azcentral.com and The Arizona Republic, Sports Illustrated.",
-      "category": "injury",
-      "published": "2026-08-05T07:00:00Z",
-      "updated": "2026-08-19T18:00:00Z",
-      "players": [
-        {
-          "key": "jeremiyah love",
-          "name": "Jeremiyah Love",
-          "slug": "jeremiyah-love",
-          "pos": "RB",
-          "team": "ARI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Cardinals must avoid a Jeremiyah Love plan that would make the franchise look silly",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTlhmVG13YmVMZTRkNVpyZjVzZXZ2RHNzdHJISDZFMjhUakhrdG9CNUdmTy1fZDVDV2tyTV9NS0ZJb3h6ZTVwT2VvTzNzOENkcVlqYXh4bkJReXhvbkwtNWZTcG1pWElpWmstTmp3UERMWDg1bS1ZWC15dTM0TEMtRDV0N19QaUpJNXJ4dzhn?oc=5",
-          "publisher": "Raising Zona",
-          "kind": "article",
-          "snippet": "Cardinals must avoid a Jeremiyah Love plan that would make the franchise look silly Raising Zona",
-          "published": "Wed, 19 Aug 2026 18:00:00 GMT"
-        },
-        {
-          "title": "Cardinals deliver latest update on Jeremiyah Love injury",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNRjJjOUFET0FhWGM1YmZQUXBBcVRIc0ZPVlJJdUhZVlJFR1YwMFcxVEhVRFZRV3doRTNZUmxQZ2dvTFc3U3kyTDZ6b0JiaEY4TVIxcGpPMnByUll2TFgzUUZGcDRfM2Q1aWhsVlRKTUx0Q0tjNmF1enJWVExjT0tFQjljNXczaC1LaW1WQzJkRFpWdEMxeUVBRHpWZHlOVmNKWE9icmJndXdaU3NsUDBOSXl6MXpXdU1HUVh6WWlfcXo?oc=5",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "kind": "article",
-          "snippet": "Cardinals deliver latest update on Jeremiyah Love injury azcentral.com and The Arizona Republic",
-          "published": "Tue, 18 Aug 2026 18:38:00 GMT"
-        },
-        {
-          "title": "Cardinals Make Unfortunate But Correct Call With Jeremiyah Love in Preseason",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPRFdGUEhpbUg0MXpNclhReE5xWVdhTmVyOXhPNnVMUlczS1JkUXVRVnd6YlFPUkJ6UnRSVFhqNDBBQ1dpdzRRZTBRT1dHSllJa3VQX3pJUGtLSWdUTl8yT3BRTmkyMTVGVnJpLXltYzVFb0N6eHN5LVZoVGlxLU5GRUdhZ25sbkRDbFFUT2ZRNUdzLTdSRElTdGFTWTRWSWdaT1lZc05ZNmJIZnlqZzVoVmR2cVBkUQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Cardinals Make Unfortunate But Correct Call With Jeremiyah Love in Preseason Sports Illustrated",
-          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "vita-vea-ends-trade-drama-massive-contract-extension-c0749c3a",
-      "slug": "vita-vea-ends-trade-drama-massive-contract-extension-c0749c3a",
-      "sport": "football",
-      "headline": "New NFL Rumors Update Vita Vea Bucs Contract, Trade Buzz Amid 2026 Preseason",
-      "blurb": "New NFL Rumors Update Vita Vea Bucs Contract, Trade Buzz Amid 2026 Preseason Bleacher Report",
-      "summary": "New NFL Rumors Update Vita Vea Bucs Contract, Trade Buzz Amid 2026 Preseason Bleacher Report The Tampa Bay Buccaneers are keeping Vita Vea on the roster after signing an extension just weeks after requesting a trade. 49ers trade target signs $30 million contract with Buccaneers Niners Wire Aggregated from Bleacher Report, SB Nation, Niners Wire, bolavip.com.",
-      "category": "trade",
-      "published": "2026-08-19T18:20:59Z",
-      "updated": "2026-08-20T11:00:00Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Tampa Bay Buccaneers news: Vita Vea signs contract extension",
-          "url": "https://sports.yahoo.com/articles/tampa-bay-buccaneers-news-vita-110000933.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Tampa Bay Buccaneers are keeping Vita Vea on the roster after signing an extension just weeks after requesting a trade.",
-          "published": "Thu, 20 Aug 2026 11:00:00 +0000"
-        },
-        {
-          "title": "49ers trade target signs $30 million contract with Buccaneers",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOem92YkpoRW9UZ1pxSDdfRktRTUpFLTB5VTlLVzdvMnN0cTNCbzZ0SlF1Zm9nUVVPcWhhR0xBLXl2YmJ2a3A1LXZUeVRPbDd0UlRQQUhuVXBpTURKVVNINXNteHdjd2RyenJNUmRzYlR5b2txd2hwQkZ3WVd4T09NMGgwMm1SblBERlJrLTRmTnR4eGE3eHMySThjMWQ2NWZwU1RnN21TS3ZFVkNQRUZGb2p4NDJZbVJ0ZkF0SzlyalZFU3lEdUtUM0ZOdw?oc=5",
-          "publisher": "Niners Wire",
-          "kind": "article",
-          "snippet": "49ers trade target signs $30 million contract with Buccaneers Niners Wire",
-          "published": "Wed, 19 Aug 2026 23:06:00 GMT"
-        },
-        {
-          "title": "Vita Vea ends trade drama with massive contract extension from Buccaneers",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZVE0RnRnSTlWQzhlSTZwX29JcHIySWIxWnRxbkhNbFZkZWZwVTZ6QzVNd1licjVxWUhBQ0JneGltZm5YaGVUeDRCOVRoUXhPTUJwZzVUTlZDTFdHZXVfSVBFNzE5cW4zbV9MQzgwNmRYaXVpQ1BOUWFHWnRZcVIyaDZZWE1abW43VEtwSS1meGNHSWVLcE1ybGxfVjFmcGE1TFHSAacBQVVfeXFMT0syQ21qZG5fSS1fUzh6Tl9oZnpkSWoxWlNlZEJRYks1T2dxbUpIdkdSTDBnZkYtVkF4N0hfNWpyTEpIcFdtak5Ea3dUN21NTDZKeWM1eVJ3OVE4Z0sxUC11cXBFYlJ0cEN1dXJXaWVKeTM1SFhIbHNNSzJkUm92UHhJUm85YkpjdGZrbUdfRE9RV2tsTFc0eEdWNkJPOUVZbWMzNWRUaFk?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Vita Vea ends trade drama with massive contract extension from Buccaneers bolavip.com",
-          "published": "Wed, 19 Aug 2026 23:07:53 GMT"
-        },
-        {
-          "title": "New NFL Rumors Update Vita Vea Bucs Contract, Trade Buzz Amid 2026 Preseason",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYTdnREZVMU94M0FIOTE5UVEwMGpha2pEd1lvOXpGZUV6TWR0Rm5icHFtSXpNMVYyWTVxVFFiRjJkR01nS0ZmN0Frb1NqaXJrWnlvRlI2N3Z3czJKMGlzZ18zTTI3d0tyRTk0VDJHakp6X3A5RXpMZHpRMVdtQzBKUXAxT1VjalI3RXV1OUJDSlJRVEJXb1d1OWpHYzBEVWdUbXh3YW5DQVVCZHNrcklfT0IyWjdUaFNDY3R4Tg?oc=5",
-          "publisher": "Bleacher Report",
-          "kind": "article",
-          "snippet": "New NFL Rumors Update Vita Vea Bucs Contract, Trade Buzz Amid 2026 Preseason Bleacher Report",
-          "published": "Wed, 19 Aug 2026 18:20:59 GMT"
-        }
-      ]
-    },
-    {
-      "id": "draft-strategy-1-11-ashton-jeanty-justin-jefferson-a0791aef",
-      "slug": "draft-strategy-1-11-ashton-jeanty-justin-jefferson-a0791aef",
-      "sport": "football",
-      "headline": "Fantasy Football Draft Strategy From The 1.11: Ashton Jeanty And Justin Jefferson To Start",
-      "blurb": "Fantasy Football Draft Strategy From The 1.11: Ashton Jeanty And Justin Jefferson To Start FantasyLife",
-      "summary": "Fantasy Football Draft Strategy From The 1.11: Ashton Jeanty And Justin Jefferson To Start FantasyLife Desk reading of FantasyLife.",
-      "category": "wire",
-      "published": "2026-08-20T08:00:00Z",
-      "updated": "2026-08-20T08:00:00Z",
-      "players": [
-        {
-          "key": "justin jefferson",
-          "name": "Justin Jefferson",
-          "slug": "justin-jefferson",
-          "pos": "WR",
-          "team": "MIN"
-        },
-        {
-          "key": "ashton jeanty",
-          "name": "Ashton Jeanty",
-          "slug": "ashton-jeanty",
-          "pos": "RB",
-          "team": "LV"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Fantasy Football Draft Strategy From The 1.11: Ashton Jeanty And Justin Jefferson To Start",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOZTBMeHhVeE1mekM0bWVPc3pLTHpQSmZ4NHVHXy1OSlB4cUJpS18tRVE5Z3c5LThqM3ZSZEJseWlsNG5tcFh1WDhocGRqaEFQSHdGb2FNNkowSkRTRWxaT2liQy1lNTJFenhtLXVtcXhLTXNhMmxCNjdkUXRHMTQxNlhlT3RIdWd1X0FEaEQ3c0ZUQk4wTk5BcHJuRnVmU1dwTGlhWDl5VHlDSlE4bWJxNXltaGZoWnhHQ3E1SERfc3RSWmJ3OWcwUVl5dEkzQQ?oc=5",
-          "publisher": "FantasyLife",
-          "kind": "article",
-          "snippet": "Fantasy Football Draft Strategy From The 1.11: Ashton Jeanty And Justin Jefferson To Start FantasyLife",
-          "published": "Thu, 20 Aug 2026 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "ben-johnson-caleb-williams-s-accuracy-trending-upward-cfd7d126",
-      "slug": "ben-johnson-caleb-williams-s-accuracy-trending-upward-cfd7d126",
-      "sport": "football",
-      "headline": "Ben Johnson: Caleb Williams's accuracy is trending upward",
-      "blurb": "After Ben Johnson became the Bears' head coach in 2025, there was a lot of focus on how his presence would impact quarterback Caleb Williams and much of that discussion focused…",
-      "summary": "After Ben Johnson became the Bears' head coach in 2025, there was a lot of focus on how his presence would impact quarterback Caleb Williams and much of that discussion focused on Williams's accuracy as a passer. Desk reading of PFT feed.",
-      "category": "coach",
-      "published": "2026-08-20T14:11:23Z",
-      "updated": "2026-08-20T14:11:23Z",
-      "players": [
-        {
-          "key": "caleb williams",
-          "name": "Caleb Williams",
-          "slug": "caleb-williams",
-          "pos": "QB",
-          "team": "CHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ben Johnson: Caleb Williams's accuracy is trending upward",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ben-johnson-caleb-williamss-accuracy-is-trending-upward",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "After Ben Johnson became the Bears' head coach in 2025, there was a lot of focus on how his presence would impact quarterback Caleb Williams and much of that discussion focused on Williams's accuracy as a passer.",
-          "published": "Thu, 20 Aug 2026 10:11:23 -0400"
-        }
-      ]
-    },
-    {
-      "id": "commanders-play-good-amount-starters-saturday-unsure-jayden-61df3aab",
-      "slug": "commanders-play-good-amount-starters-saturday-unsure-jayden-61df3aab",
-      "sport": "football",
-      "headline": "Commanders to play \"good amount\" of starters Saturday, but unsure on Jayden Daniels",
-      "blurb": "Commanders head coach Dan Quinn shared some plans for Saturday's game against the Lions during a Thursday morning press conference, but the status of quarterback Jayden Daniels…",
-      "summary": "Commanders head coach Dan Quinn shared some plans for Saturday's game against the Lions during a Thursday morning press conference, but the status of quarterback Jayden Daniels remains up in the air. Desk reading of PFT feed.",
-      "category": "coach",
-      "published": "2026-08-20T12:36:53Z",
-      "updated": "2026-08-20T12:36:53Z",
-      "players": [
-        {
-          "key": "jayden daniels",
-          "name": "Jayden Daniels",
-          "slug": "jayden-daniels",
-          "pos": "QB",
-          "team": "WAS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Commanders to play \"good amount\" of starters Saturday, but unsure on Jayden Daniels",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-to-play-good-amount-of-starters-saturday-but-unsure-on-jayden-daniels",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Commanders head coach Dan Quinn shared some plans for Saturday's game against the Lions during a Thursday morning press conference, but the status of quarterback Jayden Daniels remains up in the air.",
-          "published": "Thu, 20 Aug 2026 08:36:53 -0400"
-        }
-      ]
-    },
-    {
-      "id": "bo-nix-line-play-friday-s-contest-fe0d5ff3",
-      "slug": "bo-nix-line-play-friday-s-contest-fe0d5ff3",
-      "sport": "football",
-      "headline": "Bo Nix: In line to play in Friday's preseason contest",
-      "blurb": "Coach Sean Payton said Nix is expected to play roughly 14 snaps during Friday's preseason game against the Packers, Zac Stevens of TheDNVR.com reports.",
-      "summary": "Bo Nix: Coach Sean Payton said Nix is expected to play roughly 14 snaps during Friday's preseason game against the Packers, Zac Stevens of TheDNVR.com reports. Visit RotoWire.com for more analysis on this update. Desk reading of RotoWire NFL.",
-      "category": "coach",
-      "published": "2026-08-20T11:18:07Z",
-      "updated": "2026-08-20T11:18:07Z",
-      "players": [
-        {
-          "key": "bo nix",
-          "name": "Bo Nix",
-          "slug": "bo-nix",
-          "pos": "QB",
-          "team": "DEN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Bo Nix: In line to play in Friday's preseason contest",
-          "url": "https://www.rotowire.com//football/player/bo-nix-16995",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Coach Sean Payton said Nix is expected to play roughly 14 snaps during Friday's preseason game against the Packers, Zac Stevens of TheDNVR.com reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 19 Aug 2026 3:44:00 PM PDT"
-        }
-      ]
-    },
-    {
-      "id": "afc-de-von-achane-keon-coleman-kenneth-grant-2d6d5fc1",
-      "slug": "afc-de-von-achane-keon-coleman-kenneth-grant-2d6d5fc1",
-      "sport": "football",
-      "headline": "AFC Notes: De’Von Achane, Keon Coleman, Kenneth Grant, Bills, Dolphins",
-      "blurb": "AFC Notes: De’Von Achane, Aaron Glenn, Bills, Jets, Dolphins NFLTradeRumors.co",
-      "summary": "De'Von Achane and Drake London: AFC Notes: De’Von Achane, Aaron Glenn, Bills, Jets, Dolphins NFLTradeRumors.co Keon Coleman injury update after Bills WR spotted in walking boot Yahoo Sports NFL Injury Report Week 11: Drake London In, Keon Coleman Out FOX Sports Aggregated from NFLTradeRumors.co, Yahoo Sports, FOX Sports.",
-      "category": "injury",
-      "published": "2025-11-16T08:00:00Z",
-      "updated": "2026-08-18T18:55:45Z",
-      "players": [
-        {
-          "key": "devon achane",
-          "name": "De'Von Achane",
-          "slug": "devon-achane",
-          "pos": "RB",
-          "team": "MIA"
-        },
-        {
-          "key": "drake london",
-          "name": "Drake London",
-          "slug": "drake-london",
-          "pos": "WR",
-          "team": "ATL"
-        },
-        {
-          "key": "keon coleman",
-          "name": "Keon Coleman",
-          "slug": "keon-coleman",
-          "pos": "WR",
-          "team": "BUF"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Keon Coleman injury update after Bills WR spotted in walking boot",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZktvWHgwbVhzcGp4MVoyelZyVVRicUlFSUFkaGQ4MDBJV3phOGJDUk5SWFI3UTVwVnZuVkExaEN0b1F1QThJRGJTbTZBcC01M1NJQkFyNHoteTZETW9YRUVHQmdXWlYxMEtwU2pCdnQ4d3ltR1Qtc2k4ZXl3VzlQWldhSQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Keon Coleman injury update after Bills WR spotted in walking boot Yahoo Sports",
-          "published": "Tue, 18 Aug 2026 18:55:45 GMT"
-        },
-        {
-          "title": "NFL Injury Report Week 11: Drake London In, Keon Coleman Out",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB4enBUVmxoRVROaTJXOGtteVdya1I5Wmpjc2VwOHlLQ29Vb0hueXVZMVhhakg0V3pybVZQemtvbW5rZDI5Z2k4X2llRFN4bDdza1ZVWHpZam5yX3JRQ2FjYk1vVXRDRy1zUmNKQ2pydkvSAXBBVV95cUxPUEw4OU1OdVk3OEV6S01Ca2FMX0t2S3E5M20yUkZQX0hzYU5sNU9kVVJBSUtrV3p4UTFlTUFuMmFSVkhfODRxQWFZUzVoZnVlUFFiQWxiOUNZRmdIalF3SldIbjRma1lZZ1VCR0xJQTZP?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "NFL Injury Report Week 11: Drake London In, Keon Coleman Out FOX Sports",
-          "published": "Sun, 16 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "AFC Notes: De’Von Achane, Keon Coleman, Kenneth Grant, Bills, Dolphins",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORWUxSml3OTdnb2FvaFp5RnNnZmVQSTRwU1JWa29Xb3RFN3B4c0d3XzY4NldvVE1DQ3Y3dkVhWEVEUnByWDN4QWRKakFjbVctOU9jWldzWFlZSFBhQ3NyOEkxeTViYmd4YWd3dXBXQlQzaUE0U1ZFNkZzWFZ2Q2NBenNnWV9WQmF2S1g5bHFGOWNqaVp1Rnc?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "AFC Notes: De’Von Achane, Keon Coleman, Kenneth Grant, Bills, Dolphins NFLTradeRumors.co",
-          "published": "Mon, 25 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "AFC Notes: De’Von Achane, Aaron Glenn, Bills, Jets, Dolphins",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNW9kU3lONlVsR01QWmpOclFlNlA0TnFoN3JTWjVNSHRDSFNMUl9TdXhIbUU3Tjg5QVk3dUpPZnVXN0NPclRHODhZVWpZMHloNGJWbjN5UkpXU2N0YkRlcUFld3hCSTFGUUdrUjZETkNkRWlnRnRiZXhWbEJLazdTeWJFZU5vOWky?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "AFC Notes: De’Von Achane, Aaron Glenn, Bills, Jets, Dolphins NFLTradeRumors.co",
-          "published": "Sat, 30 May 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "denver-broncos-11-players-injured-reserve-entering-playoffs-a96630ba",
-      "slug": "denver-broncos-11-players-injured-reserve-entering-playoffs-a96630ba",
-      "sport": "football",
-      "headline": "Colts place WR Ashton Dulin on injured reserve, sign S George Odum to 53-man roster from practice squad; sign CB Cameron Mitchell to…",
-      "blurb": "Eagles sign three players, place Elijah Mitchell on injured reserve Yahoo Sports",
-      "summary": "Eagles sign three players, place Elijah Mitchell on injured reserve Yahoo Sports Colts place WR Ashton Dulin on injured reserve, sign S George Odum to 53-man roster from practice squad; sign CB Cameron Mitchell to practice squad Colts.com Denver Broncos injury report: 6 players not practicing Broncos Wire Aggregated from Yahoo Sports, Colts.com, Broncos Wire.",
-      "category": "injury",
-      "published": "2025-11-25T08:00:00Z",
-      "updated": "2026-08-19T18:24:00Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Denver Broncos injury report: 6 players not practicing",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxObzU5RXdSQjVsMUtKSVRnMnNKb3JkV2FoVGFEa09ab3FhYllkTnZTRDN0dnBydmQxaHF3MFd5bmRkR0FmWkdseWJ6TU1pYXNzdjdnTkFVVF90eWtvRlFqa1ZiZ2FabVJRWGdjbjRsWXRtaTRYTW1VMU1DRWJBaUwtMlJVRmhrX3BsTjlnSWYzbnFwM3ZialpKTWhSOHBBQnR4Z2RGT0RDV1JJT0ZRUXJkbE85dW94SXRsc09GSEhvLXRnaUlSVHlCN2hRbVdjYUdT?oc=5",
-          "publisher": "Broncos Wire",
-          "kind": "article",
-          "snippet": "Denver Broncos injury report: 6 players not practicing Broncos Wire",
-          "published": "Wed, 19 Aug 2026 18:24:00 GMT"
-        },
-        {
-          "title": "Denver Broncos: 11 players on injured reserve entering NFL playoffs",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOVBhUF9NSHhTUkRVMnU4a1dVamRCOUk5a2ctZnY0d2lCREM5RG0tUjVRMVI2VEh1RG4tTmEwalg5WUdMOWhfUS03aVlIZ1RKWnF5emt4aG0yWXpaNlVzZTVKZGdZYWFFY2pxTzNNRXVVdEpKa1NOT1NOT25fSnVzcVZaR0lQdFNGUHNOVzZqQVd1M25DVDRJVkhOdk52bi1uSTEwUGE2ZTlEcHNiaUtPNmZYbjRmYzVweW9R?oc=5",
-          "publisher": "Broncos Wire",
-          "kind": "article",
-          "snippet": "Denver Broncos: 11 players on injured reserve entering NFL playoffs Broncos Wire",
-          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Broncos have 10 players on injured reserve going into playoff week",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUWdEUXZRSk9YaGZKczcwVjNkOFVYbmVWN2tpMV9VTlpTekJLNkNwdGxUZGU5ZUx4UndTTnhpMmU3bHo3VGVJaDNYZG1WRXZkUzlNd3VrZEVwbGhqSkZIX0plbURjOG9nb3R5V3M3MUZXVE5MVXlWWlhFa1dhWXZIbEIwdG1hV0JSMXg4T21SV3BOUlFNajREREJfQnFuTTNISHFybTRYWGF6di1hQXVEZC1QWUNaMngzUlNDSTJyR1lYdlYtcWVz?oc=5",
-          "publisher": "Broncos Wire",
-          "kind": "article",
-          "snippet": "Broncos have 10 players on injured reserve going into playoff week Broncos Wire",
-          "published": "Tue, 13 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Eagles sign three players, place Elijah Mitchell on injured reserve",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPSk02bG84WmpBcVQySlk5aGNidWhoTXdqS3ktZDlyT3ZKMUpJMjRwdjhsR21kLUUyS2JGbm5tN3ZKSHhOc1AzaGVfa1ZSMDd6Y290eTBNa0FuRzg2WWJ0RmlVSldiRmN6c2RKWmtGYks3b0lzdVc1Sk1nNEhMMVlYd3lsNDBUU00?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Eagles sign three players, place Elijah Mitchell on injured reserve Yahoo Sports",
-          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Colts place WR Ashton Dulin on injured reserve, sign S George Odum to 53-man roster from practice squad; sign CB Cameron Mitchell to practice squad",
-          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZ2NoZTZteURXdzA4cTNjcFdVNE1ZNHM5cnc5NHNoYzBRZE9jUi1BSXFOVjBVaE5GWTYzcmFBOFdMWE1rUUtFODZQREFUMVF4aVI2MmN6cFhhcEdQbE5mSU5MSE5xcTIydFBfZ3d1VzVHRVZhTmlwdVBSdS1JVnhJd2phQUhnOVg4aWNxSWpZdi1NUFcyNzc0ck94OGFCdUVrdlhpVGJtZVlxTmpxdVVDLVY5Uk1ZcldmYTJXTlJpdjUwYUhXOUY2Q0RkUHQ3X2RBVUtJU3dzV0czaGRad1dESnJLSjhtNXhFSndpTEZUSFBIZ3JzbUI2TXNsVmRXMC1xNkE?oc=5",
-          "publisher": "Colts.com",
-          "kind": "article",
-          "snippet": "Colts place WR Ashton Dulin on injured reserve, sign S George Odum to 53-man roster from practice squad; sign CB Cameron Mitchell to practice squad Colts.com",
-          "published": "Tue, 25 Nov 2025 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "cowboys-ceedee-lamb-george-pickens-both-top-10-08a03e54",
-      "slug": "cowboys-ceedee-lamb-george-pickens-both-top-10-08a03e54",
-      "sport": "football",
-      "headline": "Are Cowboys' CeeDee Lamb, George Pickens both top 10 WRs? Coaches, scouts, execs weigh in",
-      "blurb": "Execs, coaches, scouts rank top NFL tight ends for 2026 ESPN",
-      "summary": "George Pickens and CeeDee Lamb: Execs, coaches, scouts rank top NFL tight ends for 2026 ESPN Which NFL team has the best pair of wide receivers? CeeDee Lamb begs Jerry Jones to keep George Pickens on the Cowboys for the long term bolavip.com Aggregated from ESPN, CBS NFL, bolavip.com, Dallas News, CBS Sports and 1 more.",
-      "category": "injury",
-      "published": "2025-12-04T08:00:00Z",
-      "updated": "2026-08-18T16:29:16Z",
-      "players": [
-        {
-          "key": "george pickens",
-          "name": "George Pickens",
-          "slug": "george-pickens",
-          "pos": "WR",
-          "team": "DAL"
-        },
-        {
-          "key": "ceedee lamb",
-          "name": "CeeDee Lamb",
-          "slug": "ceedee-lamb",
-          "pos": "WR",
-          "team": "DAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "2026 NFL WR duo rankings: Where Cowboys' CeeDee Lamb-George Pickens land",
-          "url": "https://www.cbssports.com/nfl/news/2026-nfl-wr-dynamic-duo-rankings-cowboys-bengals/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "Which NFL team has the best pair of wide receivers?",
-          "published": "Tue, 18 Aug 2026 16:29:16 +0000"
-        },
-        {
-          "title": "CeeDee Lamb begs Jerry Jones to keep George Pickens on the Cowboys for the long term",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOElfQy0zcGw4WE5yQlpJbUdsQzJVSWJacFl4U29vMXNKMVQ3aWN1RU9tV2wtdnhlV2xmdGZ4Y2lEam5FLXVRUnhmekZfdVJodVU1enExM2JTbzV2OXlHeWc2emdkdWZBeUZDb1EzR1FvWFJ3cGtYSFprbFptZzYzeWpyQjA1akNWbWNEa2lKSEkyQlRqZGJRYjQ5aEY2dmlpakJfR0NhdFV3WEY5M0dr0gG0AUFVX3lxTE5fS2F5LWpsWHZuZGhNR1dOaFUtNzQ0eGRkeXBFMHY1eVJKSXBvdlpDdW1Fd3BDYThPdHZtRkhoNUJfcTNMX0ZlSDVhQlRpa3o0ZGhPSlFSVEhJVkxpM2pBQ2Uwek9jLUl3aWlEQ3l1dVdrWEZWRW55bnczUkN6NXVtd19GNHhialpKOWhsT0ZPaC1nRm1TY19fdlJ3RzlUM0hRV0ctUktUNTlzTjI2bXVVejZ2dw?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "CeeDee Lamb begs Jerry Jones to keep George Pickens on the Cowboys for the long term bolavip.com",
-          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Are Cowboys' CeeDee Lamb, George Pickens both top 10 WRs? Coaches, scouts, execs weigh in",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWmd5SDR4bHdfV0lyMGtwczdGZ0tNampZVmx2NFBwamFJMUlTS1NUR2VvNC1jZXVUdWJpRDF0NXhnNC01blBncnFZYy03UXljeUc0NlJVYmh6U3JIODYzQ1p6Q0ZyOU9tc3k5b2szNkd1ZDduQ2NLeDRhb1lPV2pHNlVJdnFFS1phSnY2NHlJZEUzbXJwbTRjVnRDLUw0dlBtNG5RWkx3a1cwZWVRUVE?oc=5",
-          "publisher": "Dallas News",
-          "kind": "article",
-          "snippet": "Are Cowboys' CeeDee Lamb, George Pickens both top 10 WRs? Coaches, scouts, execs weigh in Dallas News",
-          "published": "Wed, 15 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cowboys' CeeDee Lamb: Comes down with illness",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQlBiY2pJQjVjakd5VXRsZk5KbnR4YVFCenpfYTVrNTg1aHltdHduVkpXXzh4cTUwMEttbUVBSHRzT0dIQlluXzVjNFk2Y2NFLVpXdFR4UDBVazNIQmpJWHJGMjZiRm81a3JkajlUeEpmM2hQSnRXUlNhSGZVV082c3V1TTRtMkxuTUdaRjk5MzkwRS1YV3Nz?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "Cowboys' CeeDee Lamb: Comes down with illness CBS Sports",
-          "published": "Wed, 17 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Cowboys' CeeDee Lamb: Ruled out for second half",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQXZMbEd0MEFkVllGVkFmX0ZvT29rYWRSUnhyTnlBdHdQYlFYMVZveUxBMmNFZUdwaV9HeWhTaGx0R0tQbVpoeEhCRExxbmhGMndLTUd3TW5GR1MtbjA0MlJHZ2pBMjlMTVpFUDdsRGVwaHpXcnR4NkVrclM5Q01xYWhqejVJRkVXZ2lwZmtNSFhzWU9ueFJva3pB?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "Cowboys' CeeDee Lamb: Ruled out for second half CBS Sports",
-          "published": "Thu, 04 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "CeeDee Lamb lands on Cowboys’ first injury report for Week 16",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeXhuX21oS3doaDVfc2JFZGxCNVlBdENiUkx2LXJJYkVnTTlLS2J6elljMVBuSzNMTXBGbWVWeGlCR0ZpOElHUl85NFR5MFRPckE0MXdTdmdiSzZobE95eWstaHZhMnVYbk0zZXBBVmpfOEk5U2NsRk4zSWRUMV9HOGVWUGdMNHRNN011MmNJZkZXUWFtZ0xMdGNQc0hEWUxUc1RB?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "CeeDee Lamb lands on Cowboys’ first injury report for Week 16 Sports Illustrated",
-          "published": "Wed, 17 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Execs, coaches, scouts rank top NFL wide receivers for 2026",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWE9yUjV1cGN1SXB2eW02UlVLQmZYR3BmamtMRThnXzQyVHgxOFhqc0RFNTFhOWZjSzRwdDBsazFTZHlGdnRZM1NqVHdTS2JERVVSY2Zzck52a01wM0d1XzdWQzc1cEpvampRWGJBalc0Q1JvRVliMkpZNUg0bUhqTDVXXzB3eEpEckZKTmFkR0xobjMtRzliQW90OS04aHJNTWg5dW5QYw?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Execs, coaches, scouts rank top NFL wide receivers for 2026 ESPN",
-          "published": "Wed, 15 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Execs, coaches, scouts rank top NFL quarterbacks for 2026",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOTF2dWlkMWRuMjRGYW00LXVISVRmTXdFNE0wT2RKeHFDRWR0c2hrbDd5SmpsWko2WWdNSkxqYmc3UEdsYm9nY2hGZS1NbEFxeWptd0NRRHk3V3N5Nm5rUDk4cUxaWmFCY1cyc3RGUi1lRnhRc1BUUHpmTlM5VmdGTWJRQ01mRV9NVldwTnpmcVd2U0RxdFNLY3FCaC16V3ZYT2hFaA?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Execs, coaches, scouts rank top NFL quarterbacks for 2026 ESPN",
-          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Execs, coaches, scouts rank top NFL tight ends for 2026",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTFF3eVRrUnFLY3pEVTV5dERKVDAzeUtGVml6aDJUbmVqTzFKMVlNSjZWNU9rR3hINzJURkdEMlhyalppRlNXNzlCbUc1dThyeG1qaUR6dUFrQVpQSzNQZEdUU2tMcm1JU283RHBTTEY0NHVqdEppY0NDQXFUcEJTWHY0aTZJYUZwMzNJeFlpQkowYVlLdEswTHp2emNfcExCRFE?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Execs, coaches, scouts rank top NFL tight ends for 2026 ESPN",
-          "published": "Fri, 10 Jul 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "caleb-williams-influence-bears-furniture-change-qb-room-59db98d9",
-      "slug": "caleb-williams-influence-bears-furniture-change-qb-room-59db98d9",
-      "sport": "football",
-      "headline": "Caleb Williams’ latest influence on the Bears? A furniture change in the QB room",
-      "blurb": "How The Bears Are Leaning Into QB Caleb Williams’ Limitless Playmaking FOX Sports",
-      "summary": "How The Bears Are Leaning Into QB Caleb Williams’ Limitless Playmaking FOX Sports How Ben Johnson Makes Up for Caleb Williams' Low Completion Rate Sports Illustrated Caleb Williams’ latest influence on the Bears? Aggregated from FOX Sports, Sports Illustrated, Yahoo Sports, BearsTalk, The Big Lead.",
-      "category": "wire",
-      "published": "2026-05-24T07:00:00Z",
-      "updated": "2026-08-19T22:00:03Z",
-      "players": [
-        {
-          "key": "caleb williams",
-          "name": "Caleb Williams",
-          "slug": "caleb-williams",
-          "pos": "QB",
-          "team": "CHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "How The Bears Are Leaning Into QB Caleb Williams’ Limitless Playmaking",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONFR2V3FxWjJodjZLMjlmN2JFMmlLNzRBQWkwVkNISEJScGRReDJ5azRvTGhTNC1UMFp1S01qN1dhOERmUk9peEZpRTNIS1FQX2NwTW5TQV9DQWN3TzVFMnMyUy03N2xxSlhBRS1heFpGWEQ3TTFxeTJibjI3aUhsTWpKQWxIaDk5YTBTTGRobDFKdEhiZTJz0gGXAUFVX3lxTFB5WFRLYTY5S19qRUkyYlN5S21WQW1zb2ZKTlFhNlZITFpRcnk3d0pkMlprakJMM1Eybzg2aV9weTB3TU1VQUZVR3llYlotdlJXeTJqN2RhNkducDFHeldxeVhzN0hVSjUtYjBCcF9nLS1jb3ZnenUxWFM5VkRCaG81TU9fNEtPbjlqR0taUlBPSFoyTFFzNG8?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "How The Bears Are Leaning Into QB Caleb Williams’ Limitless Playmaking FOX Sports",
-          "published": "Wed, 19 Aug 2026 17:37:04 GMT"
-        },
-        {
-          "title": "How Ben Johnson Makes Up for Caleb Williams' Low Completion Rate",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQakl1SnJKU2x2ZGp1Zm9vNVVOLVhRWjhuZUJwOXZ2YVRxZnlJRVp6eVVKZjNKTkN0eUd2RVYxazJnalgxRjZ4d25CTXRUYjBrZG0taGtCMk01bjRGa0NEWG9QeGxsV3Y4MVRVNXk5VmEzMjhveF9qdm1JLUY0MEQtNWhadTVvNUE?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "How Ben Johnson Makes Up for Caleb Williams' Low Completion Rate Sports Illustrated",
-          "published": "Wed, 19 Aug 2026 22:00:03 GMT"
-        },
-        {
-          "title": "Caleb Williams’ latest influence on the Bears? A furniture change in the QB room",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSnhIVkdVUzZnUHJUN25Ha0VnaEFWM3NieE03TWszLVdHM0dLazRYd2o3MWsyekJCdTVlLWJOS2R5c04xUFdvMjJ0dDU1T19aeUZaU2Foa1NhVGxiT3pXU2J1alRCSy1Sak5fQTRfYnJsczdyc3RQMXBpeGtKYnFBSWw4SHhlYnJZOVFGalE1NXBjY2I2NVlnQjhFUy1GUXN5REpuSDdaVXRZWWVrTGtPWnFKd0lWeC1WWHdpeEpUQTZSR191LThDdk1B?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Caleb Williams’ latest influence on the Bears? A furniture change in the QB room Yahoo Sports",
-          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Caleb Williams' Bears transformation has insiders buzzing",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdkhDek5FUDcyaVdOQU0xelRicE5JVHhoV1FqaVR1R1JteldXakpCRk8yMFpicm5UazJhM1NFazBQbFZqdnlkZks3c2tBeXVySlZ1cW9YZHV6S1llQ1lVTGdPUFFHWU1Ib0JrdDJVVDB2Wld3UEZVUld5ZWxINGtUQ3dGVE5kYmRr?oc=5",
-          "publisher": "BearsTalk",
-          "kind": "article",
-          "snippet": "Caleb Williams' Bears transformation has insiders buzzing BearsTalk",
-          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chicago Bears know Caleb Williams’ next step in quarterback growth",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTmxEZUJJZDRfcGV2ZWRyZVF1NmtiX0dnbFRoQXJvTEktM09RMmd2bFJRZkFDUU5fSUE5QTR5QV9DcktyaFRWS3B3aVRqTXRndVc0VXVMQ0FHYzYwZ0pvcXhHa1Z3RlFPR0dmYmNJeDhzM3RmT0M1ajJyYnhDb2tReUdmaFRaeXI1Z1ROWnFDM2h6V2hGT0RoRA?oc=5",
-          "publisher": "The Big Lead",
-          "kind": "article",
-          "snippet": "Chicago Bears know Caleb Williams’ next step in quarterback growth The Big Lead",
-          "published": "Sun, 24 May 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "browns-sign-te-drew-biber-place-te-jack-5d7992a4",
-      "slug": "browns-sign-te-drew-biber-place-te-jack-5d7992a4",
-      "sport": "football",
-      "headline": "Browns sign TE Drew Biber, place TE Jack Stoll on IR",
-      "blurb": "The Browns have made a pair of moves at tight end on Thursday.",
-      "summary": "The Browns have made a pair of moves at tight end on Thursday. Browns Place TE Jack Stoll On IR NFLTradeRumors.co Aggregated from PFT feed, NFLTradeRumors.co.",
-      "category": "injury",
-      "published": "2026-08-20T14:13:02Z",
-      "updated": "2026-08-20T14:34:42Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Browns sign TE Drew Biber, place TE Jack Stoll on IR",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/browns-sign-te-drew-biber-place-te-jack-stoll-on-ir",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "The Browns have made a pair of moves at tight end on Thursday.",
-          "published": "Thu, 20 Aug 2026 10:34:42 -0400"
-        },
-        {
-          "title": "Browns Place TE Jack Stoll On IR",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9mUk90Z1d0VHZlamhHQzBUWjN3Y1RDbDFBN20weVVGY1NqZUk5YllpMEd1Nk9CRG1RSms5QmdyZUh4QkRTb1hDaVprS0I3SFktdDNJODg5Skh5eEhMZE16UXZfc051Tk9reks4?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "Browns Place TE Jack Stoll On IR NFLTradeRumors.co",
-          "published": "Thu, 20 Aug 2026 14:13:02 GMT"
         }
       ]
     }
