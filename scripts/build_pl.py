@@ -146,7 +146,8 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
         href = f"{player_prefix}players/{slug}.html"
         price_bit = f" · £{price}" if price not in (None, "") else ""
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
-        age_bit = f" · {age_txt}" if show_age and age_txt else ""
+        age_label = f"age {age_txt}" if age_txt else ""
+        age_bit = f" · {age_label}" if show_age and age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
             f" · {esc(team)}{esc(age_bit)}{esc(price_bit)}</div>"
@@ -154,7 +155,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
         face = ""
         if faces:
             face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
-        age_td = f'<td class="c-age">{esc(age_txt or "—")}</td>' if show_age else ""
+        age_td = f'<td class="c-age">{esc(age_label or "—")}</td>' if show_age else ""
         stack = (
             f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
             f"<strong>{esc(label)}</strong></a>{meta}</span>"
