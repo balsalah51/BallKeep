@@ -5,6 +5,9 @@
     "Dynasty Nerds",
     "FantasyPros ECR",
     "KeepTradeCut SF",
+    "ESPN (Karabell)",
+    "Draft Sharks",
+    "RotoWire",
     "Derek Brown (X)",
     "Andrew Erickson (X)",
     "Pat Fitzmaurice (X)"
@@ -16,18 +19,22 @@
       "pos": "QB",
       "team": "BUF",
       "age": 30,
-      "avg": 2.0,
-      "n": 7,
+      "avg": 1.7,
+      "n": 10,
       "ranks": {
         "PFN (Katz/Soppe)": 1,
         "Dynasty Nerds": 1,
         "FantasyPros ECR": 2,
         "KeepTradeCut SF": 4,
+        "ESPN (Karabell)": 1,
+        "Draft Sharks": 1,
+        "RotoWire": 1,
         "Derek Brown (X)": 1,
         "Andrew Erickson (X)": 3,
         "Pat Fitzmaurice (X)": 2
       },
-      "bk": 1
+      "bk": 1,
+      "value": 12000
     },
     {
       "key": "drake maye",
@@ -35,18 +42,22 @@
       "pos": "QB",
       "team": "NE",
       "age": 23,
-      "avg": 2.43,
-      "n": 7,
+      "avg": 2.6,
+      "n": 10,
       "ranks": {
         "PFN (Katz/Soppe)": 3,
         "Dynasty Nerds": 3,
         "FantasyPros ECR": 1,
         "KeepTradeCut SF": 6,
+        "ESPN (Karabell)": 5,
+        "Draft Sharks": 2,
+        "RotoWire": 2,
         "Derek Brown (X)": 2,
         "Andrew Erickson (X)": 1,
         "Pat Fitzmaurice (X)": 1
       },
-      "bk": 2
+      "bk": 2,
+      "value": 10419
     },
     {
       "key": "jamarr chase",
@@ -54,18 +65,22 @@
       "pos": "WR",
       "team": "CIN",
       "age": 26,
-      "avg": 4.0,
-      "n": 7,
+      "avg": 4.7,
+      "n": 10,
       "ranks": {
         "PFN (Katz/Soppe)": 2,
         "Dynasty Nerds": 4,
         "FantasyPros ECR": 3,
         "KeepTradeCut SF": 2,
+        "ESPN (Karabell)": 7,
+        "Draft Sharks": 9,
+        "RotoWire": 3,
         "Derek Brown (X)": 4,
         "Andrew Erickson (X)": 8,
         "Pat Fitzmaurice (X)": 5
       },
-      "bk": 3
+      "bk": 3,
+      "value": 9527
     },
     {
       "key": "bijan robinson",
@@ -73,37 +88,22 @@
       "pos": "RB",
       "team": "ATL",
       "age": 24,
-      "avg": 5.71,
-      "n": 7,
+      "avg": 6.4,
+      "n": 10,
       "ranks": {
         "PFN (Katz/Soppe)": 6,
         "Dynasty Nerds": 2,
         "FantasyPros ECR": 5,
         "KeepTradeCut SF": 3,
+        "ESPN (Karabell)": 12,
+        "Draft Sharks": 7,
+        "RotoWire": 5,
         "Derek Brown (X)": 7,
         "Andrew Erickson (X)": 10,
         "Pat Fitzmaurice (X)": 7
       },
-      "bk": 4
-    },
-    {
-      "key": "jaxon smith-njigba",
-      "name": "Jaxon Smith-Njigba",
-      "pos": "WR",
-      "team": "SEA",
-      "age": 24,
-      "avg": 6.57,
-      "n": 7,
-      "ranks": {
-        "PFN (Katz/Soppe)": 7,
-        "Dynasty Nerds": 6,
-        "FantasyPros ECR": 4,
-        "KeepTradeCut SF": 5,
-        "Derek Brown (X)": 5,
-        "Andrew Erickson (X)": 9,
-        "Pat Fitzmaurice (X)": 10
-      },
-      "bk": 5
+      "bk": 4,
+      "value": 8898
     },
     {
       "key": "jahmyr gibbs",
@@ -111,37 +111,45 @@
       "pos": "RB",
       "team": "DET",
       "age": 24,
-      "avg": 7.71,
-      "n": 7,
+      "avg": 8.1,
+      "n": 10,
       "ranks": {
         "PFN (Katz/Soppe)": 11,
         "Dynasty Nerds": 5,
         "FantasyPros ECR": 7,
         "KeepTradeCut SF": 1,
+        "ESPN (Karabell)": 11,
+        "Draft Sharks": 12,
+        "RotoWire": 4,
         "Derek Brown (X)": 6,
         "Andrew Erickson (X)": 16,
         "Pat Fitzmaurice (X)": 8
       },
-      "bk": 6
+      "bk": 5,
+      "value": 8408
     },
     {
-      "key": "puka nacua",
-      "name": "Puka Nacua",
+      "key": "jaxon smith-njigba",
+      "name": "Jaxon Smith-Njigba",
       "pos": "WR",
-      "team": "LAR",
-      "age": 25,
-      "avg": 8.71,
-      "n": 7,
+      "team": "SEA",
+      "age": 24,
+      "avg": 8.1,
+      "n": 10,
       "ranks": {
-        "PFN (Katz/Soppe)": 4,
-        "Dynasty Nerds": 7,
-        "FantasyPros ECR": 8,
-        "KeepTradeCut SF": 7,
-        "Derek Brown (X)": 8,
-        "Andrew Erickson (X)": 18,
-        "Pat Fitzmaurice (X)": 9
+        "PFN (Katz/Soppe)": 7,
+        "Dynasty Nerds": 6,
+        "FantasyPros ECR": 4,
+        "KeepTradeCut SF": 5,
+        "ESPN (Karabell)": 9,
+        "Draft Sharks": 18,
+        "RotoWire": 8,
+        "Derek Brown (X)": 5,
+        "Andrew Erickson (X)": 9,
+        "Pat Fitzmaurice (X)": 10
       },
-      "bk": 7
+      "bk": 6,
+      "value": 8004
     },
     {
       "key": "jayden daniels",
@@ -149,33 +157,22 @@
       "pos": "QB",
       "team": "WAS",
       "age": 25,
-      "avg": 9.71,
-      "n": 7,
+      "avg": 8.8,
+      "n": 10,
       "ranks": {
         "PFN (Katz/Soppe)": 8,
         "Dynasty Nerds": 9,
         "FantasyPros ECR": 6,
         "KeepTradeCut SF": 17,
+        "ESPN (Karabell)": 6,
+        "Draft Sharks": 3,
+        "RotoWire": 11,
         "Derek Brown (X)": 23,
         "Andrew Erickson (X)": 2,
         "Pat Fitzmaurice (X)": 3
       },
-      "bk": 8
-    },
-    {
-      "key": "justin jefferson",
-      "name": "Justin Jefferson",
-      "pos": "WR",
-      "team": "MIN",
-      "age": 27,
-      "avg": 11.67,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 9,
-        "Dynasty Nerds": 12,
-        "KeepTradeCut SF": 14
-      },
-      "bk": 9
+      "bk": 7,
+      "value": 7657
     },
     {
       "key": "lamar jackson",
@@ -183,82 +180,45 @@
       "pos": "QB",
       "team": "BAL",
       "age": 29,
-      "avg": 11.71,
-      "n": 7,
+      "avg": 9.5,
+      "n": 10,
       "ranks": {
         "PFN (Katz/Soppe)": 5,
         "Dynasty Nerds": 19,
         "FantasyPros ECR": 10,
         "KeepTradeCut SF": 11,
+        "ESPN (Karabell)": 2,
+        "Draft Sharks": 4,
+        "RotoWire": 7,
         "Derek Brown (X)": 27,
         "Andrew Erickson (X)": 4,
         "Pat Fitzmaurice (X)": 6
       },
-      "bk": 10
+      "bk": 8,
+      "value": 7353
     },
     {
-      "key": "brock bowers",
-      "name": "Brock Bowers",
-      "pos": "TE",
-      "team": "LV",
-      "age": 23,
-      "avg": 13.33,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 21,
-        "Dynasty Nerds": 11,
-        "KeepTradeCut SF": 8
-      },
-      "bk": 11
-    },
-    {
-      "key": "caleb williams",
-      "name": "Caleb Williams",
-      "pos": "QB",
-      "team": "CHI",
-      "age": 24,
-      "avg": 13.33,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 22,
-        "Dynasty Nerds": 8,
-        "KeepTradeCut SF": 10
-      },
-      "bk": 12
-    },
-    {
-      "key": "ashton jeanty",
-      "name": "Ashton Jeanty",
-      "pos": "RB",
-      "team": "LV",
-      "age": 22,
-      "avg": 13.57,
-      "n": 7,
-      "ranks": {
-        "PFN (Katz/Soppe)": 15,
-        "Dynasty Nerds": 10,
-        "FantasyPros ECR": 12,
-        "KeepTradeCut SF": 12,
-        "Derek Brown (X)": 11,
-        "Andrew Erickson (X)": 22,
-        "Pat Fitzmaurice (X)": 13
-      },
-      "bk": 13
-    },
-    {
-      "key": "amon-ra st brown",
-      "name": "Amon-Ra St. Brown",
+      "key": "puka nacua",
+      "name": "Puka Nacua",
       "pos": "WR",
-      "team": "DET",
-      "age": 26,
-      "avg": 13.67,
-      "n": 3,
+      "team": "LAR",
+      "age": 25,
+      "avg": 9.5,
+      "n": 10,
       "ranks": {
-        "PFN (Katz/Soppe)": 17,
-        "Dynasty Nerds": 15,
-        "KeepTradeCut SF": 9
+        "PFN (Katz/Soppe)": 4,
+        "Dynasty Nerds": 7,
+        "FantasyPros ECR": 8,
+        "KeepTradeCut SF": 7,
+        "ESPN (Karabell)": 8,
+        "Draft Sharks": 20,
+        "RotoWire": 6,
+        "Derek Brown (X)": 8,
+        "Andrew Erickson (X)": 18,
+        "Pat Fitzmaurice (X)": 9
       },
-      "bk": 14
+      "bk": 9,
+      "value": 7081
     },
     {
       "key": "joe burrow",
@@ -266,63 +226,75 @@
       "pos": "QB",
       "team": "CIN",
       "age": 29,
-      "avg": 14.33,
-      "n": 3,
+      "avg": 10.67,
+      "n": 6,
       "ranks": {
         "PFN (Katz/Soppe)": 10,
         "Dynasty Nerds": 17,
-        "KeepTradeCut SF": 16
+        "KeepTradeCut SF": 16,
+        "ESPN (Karabell)": 4,
+        "Draft Sharks": 5,
+        "RotoWire": 12
       },
-      "bk": 15
+      "bk": 10,
+      "value": 6834
     },
     {
-      "key": "ceedee lamb",
-      "name": "CeeDee Lamb",
+      "key": "amon-ra st brown",
+      "name": "Amon-Ra St. Brown",
       "pos": "WR",
-      "team": "DAL",
+      "team": "DET",
+      "age": 26,
+      "avg": 13.83,
+      "n": 6,
+      "ranks": {
+        "PFN (Katz/Soppe)": 17,
+        "Dynasty Nerds": 15,
+        "KeepTradeCut SF": 9,
+        "ESPN (Karabell)": 10,
+        "Draft Sharks": 23,
+        "RotoWire": 9
+      },
+      "bk": 11,
+      "value": 6608
+    },
+    {
+      "key": "justin jefferson",
+      "name": "Justin Jefferson",
+      "pos": "WR",
+      "team": "MIN",
       "age": 27,
-      "avg": 15.0,
-      "n": 3,
+      "avg": 13.83,
+      "n": 6,
       "ranks": {
-        "PFN (Katz/Soppe)": 12,
-        "Dynasty Nerds": 14,
-        "KeepTradeCut SF": 19
+        "PFN (Katz/Soppe)": 9,
+        "Dynasty Nerds": 12,
+        "KeepTradeCut SF": 14,
+        "ESPN (Karabell)": 19,
+        "Draft Sharks": 16,
+        "RotoWire": 13
       },
-      "bk": 16
+      "bk": 12,
+      "value": 6399
     },
     {
-      "key": "malik nabers",
-      "name": "Malik Nabers",
-      "pos": "WR",
-      "team": "NYG",
-      "age": 23,
-      "avg": 15.0,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 14,
-        "Dynasty Nerds": 16,
-        "KeepTradeCut SF": 15
-      },
-      "bk": 17
-    },
-    {
-      "key": "justin herbert",
-      "name": "Justin Herbert",
+      "key": "caleb williams",
+      "name": "Caleb Williams",
       "pos": "QB",
-      "team": "LAC",
-      "age": 28,
-      "avg": 16.43,
-      "n": 7,
+      "team": "CHI",
+      "age": 24,
+      "avg": 15.33,
+      "n": 6,
       "ranks": {
-        "PFN (Katz/Soppe)": 16,
-        "Dynasty Nerds": 22,
-        "FantasyPros ECR": 11,
-        "KeepTradeCut SF": 23,
-        "Derek Brown (X)": 26,
-        "Andrew Erickson (X)": 5,
-        "Pat Fitzmaurice (X)": 12
+        "PFN (Katz/Soppe)": 22,
+        "Dynasty Nerds": 8,
+        "KeepTradeCut SF": 10,
+        "ESPN (Karabell)": 31,
+        "Draft Sharks": 6,
+        "RotoWire": 15
       },
-      "bk": 18
+      "bk": 13,
+      "value": 6204
     },
     {
       "key": "jalen hurts",
@@ -330,48 +302,22 @@
       "pos": "QB",
       "team": "PHI",
       "age": 28,
-      "avg": 17.0,
-      "n": 7,
+      "avg": 15.5,
+      "n": 10,
       "ranks": {
         "PFN (Katz/Soppe)": 22,
         "Dynasty Nerds": 26,
         "FantasyPros ECR": 9,
         "KeepTradeCut SF": 26,
+        "ESPN (Karabell)": 3,
+        "Draft Sharks": 11,
+        "RotoWire": 22,
         "Derek Brown (X)": 3,
         "Andrew Erickson (X)": 14,
         "Pat Fitzmaurice (X)": 19
       },
-      "bk": 19
-    },
-    {
-      "key": "devon achane",
-      "name": "De'Von Achane",
-      "pos": "RB",
-      "team": "MIA",
-      "age": 24,
-      "avg": 17.33,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 19,
-        "Dynasty Nerds": 13,
-        "KeepTradeCut SF": 20
-      },
-      "bk": 20
-    },
-    {
-      "key": "jeremiyah love",
-      "name": "Jeremiyah Love",
-      "pos": "RB",
-      "team": "ARI",
-      "age": 21,
-      "avg": 19.0,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 26,
-        "Dynasty Nerds": 18,
-        "KeepTradeCut SF": 13
-      },
-      "bk": 21
+      "bk": 14,
+      "value": 6022
     },
     {
       "key": "patrick mahomes",
@@ -379,14 +325,119 @@
       "pos": "QB",
       "team": "KC",
       "age": 30,
-      "avg": 21.0,
-      "n": 3,
+      "avg": 16.0,
+      "n": 6,
       "ranks": {
         "PFN (Katz/Soppe)": 13,
         "Dynasty Nerds": 20,
-        "KeepTradeCut SF": 30
+        "KeepTradeCut SF": 30,
+        "ESPN (Karabell)": 15,
+        "Draft Sharks": 8,
+        "RotoWire": 10
       },
-      "bk": 22
+      "bk": 15,
+      "value": 5850
+    },
+    {
+      "key": "ashton jeanty",
+      "name": "Ashton Jeanty",
+      "pos": "RB",
+      "team": "LV",
+      "age": 22,
+      "avg": 16.5,
+      "n": 10,
+      "ranks": {
+        "PFN (Katz/Soppe)": 15,
+        "Dynasty Nerds": 10,
+        "FantasyPros ECR": 12,
+        "KeepTradeCut SF": 12,
+        "ESPN (Karabell)": 33,
+        "Draft Sharks": 17,
+        "RotoWire": 20,
+        "Derek Brown (X)": 11,
+        "Andrew Erickson (X)": 22,
+        "Pat Fitzmaurice (X)": 13
+      },
+      "bk": 16,
+      "value": 5688
+    },
+    {
+      "key": "justin herbert",
+      "name": "Justin Herbert",
+      "pos": "QB",
+      "team": "LAC",
+      "age": 28,
+      "avg": 17.0,
+      "n": 10,
+      "ranks": {
+        "PFN (Katz/Soppe)": 16,
+        "Dynasty Nerds": 22,
+        "FantasyPros ECR": 11,
+        "KeepTradeCut SF": 23,
+        "ESPN (Karabell)": 28,
+        "Draft Sharks": 10,
+        "RotoWire": 17,
+        "Derek Brown (X)": 26,
+        "Andrew Erickson (X)": 5,
+        "Pat Fitzmaurice (X)": 12
+      },
+      "bk": 17,
+      "value": 5534
+    },
+    {
+      "key": "ceedee lamb",
+      "name": "CeeDee Lamb",
+      "pos": "WR",
+      "team": "DAL",
+      "age": 27,
+      "avg": 17.17,
+      "n": 6,
+      "ranks": {
+        "PFN (Katz/Soppe)": 12,
+        "Dynasty Nerds": 14,
+        "KeepTradeCut SF": 19,
+        "ESPN (Karabell)": 18,
+        "Draft Sharks": 21,
+        "RotoWire": 19
+      },
+      "bk": 18,
+      "value": 5388
+    },
+    {
+      "key": "devon achane",
+      "name": "De'Von Achane",
+      "pos": "RB",
+      "team": "MIA",
+      "age": 24,
+      "avg": 17.8,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 19,
+        "Dynasty Nerds": 13,
+        "KeepTradeCut SF": 20,
+        "ESPN (Karabell)": 16,
+        "RotoWire": 21
+      },
+      "bk": 19,
+      "value": 5248
+    },
+    {
+      "key": "brock bowers",
+      "name": "Brock Bowers",
+      "pos": "TE",
+      "team": "LV",
+      "age": 23,
+      "avg": 18.2,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 21,
+        "Dynasty Nerds": 11,
+        "KeepTradeCut SF": 8,
+        "ESPN (Karabell)": 25,
+        "RotoWire": 26
+      },
+      "bk": 20,
+      "value": 5115
     },
     {
       "key": "drake london",
@@ -394,73 +445,18 @@
       "pos": "WR",
       "team": "ATL",
       "age": 25,
-      "avg": 23.0,
-      "n": 3,
+      "avg": 21.5,
+      "n": 6,
       "ranks": {
         "PFN (Katz/Soppe)": 20,
         "Dynasty Nerds": 25,
-        "KeepTradeCut SF": 24
+        "KeepTradeCut SF": 24,
+        "ESPN (Karabell)": 20,
+        "Draft Sharks": 24,
+        "RotoWire": 16
       },
-      "bk": 23
-    },
-    {
-      "key": "omarion hampton",
-      "name": "Omarion Hampton",
-      "pos": "RB",
-      "team": "LAC",
-      "age": 23,
-      "avg": 24.33,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 30,
-        "Dynasty Nerds": 21,
-        "KeepTradeCut SF": 22
-      },
-      "bk": 24
-    },
-    {
-      "key": "trey mcbride",
-      "name": "Trey McBride",
-      "pos": "TE",
-      "team": "ARI",
-      "age": 26,
-      "avg": 24.33,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 32,
-        "Dynasty Nerds": 23,
-        "KeepTradeCut SF": 18
-      },
-      "bk": 25
-    },
-    {
-      "key": "tetairoa mcmillan",
-      "name": "Tetairoa McMillan",
-      "pos": "WR",
-      "team": "CAR",
-      "age": 23,
-      "avg": 27.0,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 27,
-        "Dynasty Nerds": 27,
-        "KeepTradeCut SF": 27
-      },
-      "bk": 26
-    },
-    {
-      "key": "james cook",
-      "name": "James Cook III",
-      "pos": "RB",
-      "team": "BUF",
-      "age": 26,
-      "avg": 27.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 23,
-        "Dynasty Nerds": 31
-      },
-      "bk": 27
+      "bk": 21,
+      "value": 4987
     },
     {
       "key": "trevor lawrence",
@@ -468,43 +464,54 @@
       "pos": "QB",
       "team": "JAX",
       "age": 26,
-      "avg": 27.5,
-      "n": 2,
+      "avg": 23.6,
+      "n": 5,
       "ranks": {
         "PFN (Katz/Soppe)": 27,
-        "Dynasty Nerds": 28
+        "Dynasty Nerds": 28,
+        "ESPN (Karabell)": 30,
+        "Draft Sharks": 15,
+        "RotoWire": 18
       },
-      "bk": 28
+      "bk": 22,
+      "value": 4865
     },
     {
-      "key": "emeka egbuka",
-      "name": "Emeka Egbuka",
-      "pos": "WR",
-      "team": "TB",
-      "age": 23,
-      "avg": 29.33,
-      "n": 3,
+      "key": "jeremiyah love",
+      "name": "Jeremiyah Love",
+      "pos": "RB",
+      "team": "ARI",
+      "age": 21,
+      "avg": 23.83,
+      "n": 6,
       "ranks": {
-        "PFN (Katz/Soppe)": 31,
-        "Dynasty Nerds": 29,
-        "KeepTradeCut SF": 28
+        "PFN (Katz/Soppe)": 26,
+        "Dynasty Nerds": 18,
+        "KeepTradeCut SF": 13,
+        "ESPN (Karabell)": 49,
+        "Draft Sharks": 13,
+        "RotoWire": 24
       },
-      "bk": 29
+      "bk": 23,
+      "value": 4747
     },
     {
-      "key": "george pickens",
-      "name": "George Pickens",
-      "pos": "WR",
-      "team": "DAL",
-      "age": 25,
-      "avg": 29.67,
-      "n": 3,
+      "key": "trey mcbride",
+      "name": "Trey McBride",
+      "pos": "TE",
+      "team": "ARI",
+      "age": 26,
+      "avg": 25.2,
+      "n": 5,
       "ranks": {
-        "PFN (Katz/Soppe)": 24,
-        "Dynasty Nerds": 33,
-        "KeepTradeCut SF": 32
+        "PFN (Katz/Soppe)": 32,
+        "Dynasty Nerds": 23,
+        "KeepTradeCut SF": 18,
+        "ESPN (Karabell)": 24,
+        "RotoWire": 29
       },
-      "bk": 30
+      "bk": 24,
+      "value": 4634
     },
     {
       "key": "jonathan taylor",
@@ -512,14 +519,56 @@
       "pos": "RB",
       "team": "IND",
       "age": 27,
-      "avg": 29.67,
-      "n": 3,
+      "avg": 25.83,
+      "n": 6,
       "ranks": {
         "PFN (Katz/Soppe)": 34,
         "Dynasty Nerds": 30,
-        "KeepTradeCut SF": 25
+        "KeepTradeCut SF": 25,
+        "ESPN (Karabell)": 13,
+        "Draft Sharks": 14,
+        "RotoWire": 39
       },
-      "bk": 31
+      "bk": 25,
+      "value": 4525
+    },
+    {
+      "key": "omarion hampton",
+      "name": "Omarion Hampton",
+      "pos": "RB",
+      "team": "LAC",
+      "age": 23,
+      "avg": 26.17,
+      "n": 6,
+      "ranks": {
+        "PFN (Katz/Soppe)": 30,
+        "Dynasty Nerds": 21,
+        "KeepTradeCut SF": 22,
+        "ESPN (Karabell)": 35,
+        "Draft Sharks": 19,
+        "RotoWire": 30
+      },
+      "bk": 26,
+      "value": 4419
+    },
+    {
+      "key": "malik nabers",
+      "name": "Malik Nabers",
+      "pos": "WR",
+      "team": "NYG",
+      "age": 23,
+      "avg": 26.33,
+      "n": 6,
+      "ranks": {
+        "PFN (Katz/Soppe)": 14,
+        "Dynasty Nerds": 16,
+        "KeepTradeCut SF": 15,
+        "ESPN (Karabell)": 77,
+        "Draft Sharks": 22,
+        "RotoWire": 14
+      },
+      "bk": 27,
+      "value": 4317
     },
     {
       "key": "jaxson dart",
@@ -527,29 +576,34 @@
       "pos": "QB",
       "team": "NYG",
       "age": 23,
-      "avg": 30.33,
-      "n": 3,
+      "avg": 28.6,
+      "n": 5,
       "ranks": {
         "PFN (Katz/Soppe)": 31,
         "Dynasty Nerds": 24,
-        "KeepTradeCut SF": 36
+        "KeepTradeCut SF": 36,
+        "ESPN (Karabell)": 27,
+        "RotoWire": 25
       },
-      "bk": 32
+      "bk": 28,
+      "value": 4219
     },
     {
-      "key": "nico collins",
-      "name": "Nico Collins",
-      "pos": "WR",
-      "team": "HOU",
-      "age": 27,
-      "avg": 32.67,
-      "n": 3,
+      "key": "james cook",
+      "name": "James Cook III",
+      "pos": "RB",
+      "team": "BUF",
+      "age": 26,
+      "avg": 29.0,
+      "n": 4,
       "ranks": {
-        "PFN (Katz/Soppe)": 18,
-        "Dynasty Nerds": 42,
-        "KeepTradeCut SF": 38
+        "PFN (Katz/Soppe)": 23,
+        "Dynasty Nerds": 31,
+        "ESPN (Karabell)": 21,
+        "RotoWire": 41
       },
-      "bk": 33
+      "bk": 29,
+      "value": 4124
     },
     {
       "key": "bo nix",
@@ -557,74 +611,17 @@
       "pos": "QB",
       "team": "DEN",
       "age": 26,
-      "avg": 33.67,
-      "n": 3,
+      "avg": 31.2,
+      "n": 5,
       "ranks": {
         "PFN (Katz/Soppe)": 35,
         "Dynasty Nerds": 35,
-        "KeepTradeCut SF": 31
+        "KeepTradeCut SF": 31,
+        "ESPN (Karabell)": 32,
+        "RotoWire": 23
       },
-      "bk": 34
-    },
-    {
-      "key": "colston loveland",
-      "name": "Colston Loveland",
-      "pos": "TE",
-      "team": "CHI",
-      "age": 22,
-      "avg": 35.67,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 41,
-        "Dynasty Nerds": 37,
-        "KeepTradeCut SF": 29
-      },
-      "bk": 35
-    },
-    {
-      "key": "chris olave",
-      "name": "Chris Olave",
-      "pos": "WR",
-      "team": "NO",
-      "age": 26,
-      "avg": 36.33,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 25,
-        "Dynasty Nerds": 45,
-        "KeepTradeCut SF": 39
-      },
-      "bk": 36
-    },
-    {
-      "key": "garrett wilson",
-      "name": "Garrett Wilson",
-      "pos": "WR",
-      "team": "NYJ",
-      "age": 26,
-      "avg": 37.0,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 35,
-        "Dynasty Nerds": 32,
-        "KeepTradeCut SF": 44
-      },
-      "bk": 37
-    },
-    {
-      "key": "ladd mcconkey",
-      "name": "Ladd McConkey",
-      "pos": "WR",
-      "team": "LAC",
-      "age": 24,
-      "avg": 38.67,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 29,
-        "Dynasty Nerds": 39,
-        "KeepTradeCut SF": 48
-      },
-      "bk": 38
+      "bk": 30,
+      "value": 4032
     },
     {
       "key": "brock purdy",
@@ -632,188 +629,107 @@
       "pos": "QB",
       "team": "SF",
       "age": 26,
-      "avg": 40.0,
-      "n": 3,
+      "avg": 31.67,
+      "n": 6,
       "ranks": {
         "PFN (Katz/Soppe)": 46,
         "Dynasty Nerds": 34,
-        "KeepTradeCut SF": 40
+        "KeepTradeCut SF": 40,
+        "ESPN (Karabell)": 14,
+        "Draft Sharks": 25,
+        "RotoWire": 31
       },
-      "bk": 39
+      "bk": 31,
+      "value": 3942
     },
     {
-      "key": "breece hall",
-      "name": "Breece Hall",
-      "pos": "RB",
+      "key": "george pickens",
+      "name": "George Pickens",
+      "pos": "WR",
+      "team": "DAL",
+      "age": 25,
+      "avg": 32.4,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 24,
+        "Dynasty Nerds": 33,
+        "KeepTradeCut SF": 32,
+        "ESPN (Karabell)": 40,
+        "RotoWire": 33
+      },
+      "bk": 32,
+      "value": 3856
+    },
+    {
+      "key": "nico collins",
+      "name": "Nico Collins",
+      "pos": "WR",
+      "team": "HOU",
+      "age": 27,
+      "avg": 32.4,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 18,
+        "Dynasty Nerds": 42,
+        "KeepTradeCut SF": 38,
+        "ESPN (Karabell)": 36,
+        "RotoWire": 28
+      },
+      "bk": 33,
+      "value": 3772
+    },
+    {
+      "key": "tetairoa mcmillan",
+      "name": "Tetairoa McMillan",
+      "pos": "WR",
+      "team": "CAR",
+      "age": 23,
+      "avg": 32.4,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 27,
+        "Dynasty Nerds": 27,
+        "KeepTradeCut SF": 27,
+        "ESPN (Karabell)": 54,
+        "RotoWire": 27
+      },
+      "bk": 34,
+      "value": 3690
+    },
+    {
+      "key": "emeka egbuka",
+      "name": "Emeka Egbuka",
+      "pos": "WR",
+      "team": "TB",
+      "age": 23,
+      "avg": 36.0,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 31,
+        "Dynasty Nerds": 29,
+        "KeepTradeCut SF": 28,
+        "ESPN (Karabell)": 57,
+        "RotoWire": 35
+      },
+      "bk": 35,
+      "value": 3611
+    },
+    {
+      "key": "garrett wilson",
+      "name": "Garrett Wilson",
+      "pos": "WR",
       "team": "NYJ",
-      "age": 25,
-      "avg": 40.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 42,
-        "Dynasty Nerds": 38
-      },
-      "bk": 40
-    },
-    {
-      "key": "jordan love",
-      "name": "Jordan Love",
-      "pos": "QB",
-      "team": "GB",
-      "age": 27,
-      "avg": 40.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 40,
-        "Dynasty Nerds": 40
-      },
-      "bk": 41
-    },
-    {
-      "key": "tyler warren",
-      "name": "Tyler Warren",
-      "pos": "TE",
-      "team": "IND",
-      "age": 24,
-      "avg": 42.0,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 52,
-        "Dynasty Nerds": 41,
-        "KeepTradeCut SF": 33
-      },
-      "bk": 42
-    },
-    {
-      "key": "carnell tate",
-      "name": "Carnell Tate",
-      "pos": "WR",
-      "team": "TEN",
-      "age": 21,
-      "avg": 43.0,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 56,
-        "Dynasty Nerds": 36,
-        "KeepTradeCut SF": 37
-      },
-      "bk": 43
-    },
-    {
-      "key": "kenneth walker",
-      "name": "Kenneth Walker III",
-      "pos": "RB",
-      "team": "KC",
-      "age": 25,
-      "avg": 43.67,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 46,
-        "Dynasty Nerds": 43,
-        "KeepTradeCut SF": 42
-      },
-      "bk": 44
-    },
-    {
-      "key": "rome odunze",
-      "name": "Rome Odunze",
-      "pos": "WR",
-      "team": "CHI",
-      "age": 24,
-      "avg": 45.33,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 45,
-        "Dynasty Nerds": 48,
-        "KeepTradeCut SF": 43
-      },
-      "bk": 45
-    },
-    {
-      "key": "chase brown",
-      "name": "Chase Brown",
-      "pos": "RB",
-      "team": "CIN",
       "age": 26,
-      "avg": 45.67,
-      "n": 3,
+      "avg": 37.25,
+      "n": 4,
       "ranks": {
-        "PFN (Katz/Soppe)": 38,
-        "Dynasty Nerds": 58,
-        "KeepTradeCut SF": 41
+        "PFN (Katz/Soppe)": 35,
+        "Dynasty Nerds": 32,
+        "KeepTradeCut SF": 44,
+        "ESPN (Karabell)": 38
       },
-      "bk": 46
-    },
-    {
-      "key": "zay flowers",
-      "name": "Zay Flowers",
-      "pos": "WR",
-      "team": "BAL",
-      "age": 25,
-      "avg": 46.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 40,
-        "Dynasty Nerds": 53
-      },
-      "bk": 47
-    },
-    {
-      "key": "luther burden",
-      "name": "Luther Burden III",
-      "pos": "WR",
-      "team": "CHI",
-      "age": 22,
-      "avg": 47.0,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 39,
-        "Dynasty Nerds": 55,
-        "KeepTradeCut SF": 47
-      },
-      "bk": 48
-    },
-    {
-      "key": "rashee rice",
-      "name": "Rashee Rice",
-      "pos": "WR",
-      "team": "KC",
-      "age": 26,
-      "avg": 48.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 33,
-        "Dynasty Nerds": 63
-      },
-      "bk": 49
-    },
-    {
-      "key": "quinshon judkins",
-      "name": "Quinshon Judkins",
-      "pos": "RB",
-      "team": "CLE",
-      "age": 22,
-      "avg": 49.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 54,
-        "Dynasty Nerds": 44
-      },
-      "bk": 50
-    },
-    {
-      "key": "tee higgins",
-      "name": "Tee Higgins",
-      "pos": "WR",
-      "team": "CIN",
-      "age": 27,
-      "avg": 49.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 37,
-        "Dynasty Nerds": 61
-      },
-      "bk": 51
+      "bk": 36,
+      "value": 3534
     },
     {
       "key": "dak prescott",
@@ -821,70 +737,103 @@
       "pos": "QB",
       "team": "DAL",
       "age": 33,
-      "avg": 51.0,
-      "n": 2,
+      "avg": 37.75,
+      "n": 4,
       "ranks": {
         "PFN (Katz/Soppe)": 52,
-        "Dynasty Nerds": 50
+        "Dynasty Nerds": 50,
+        "ESPN (Karabell)": 17,
+        "RotoWire": 32
       },
-      "bk": 52
+      "bk": 37,
+      "value": 3459
     },
     {
-      "key": "brian thomas",
-      "name": "Brian Thomas Jr.",
-      "pos": "WR",
-      "team": "JAX",
-      "age": 23,
-      "avg": 51.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 51,
-        "Dynasty Nerds": 52
-      },
-      "bk": 53
-    },
-    {
-      "key": "a j brown",
-      "name": "A.J. Brown",
-      "pos": "WR",
-      "team": "NE",
-      "age": 29,
-      "avg": 52.0,
-      "n": 3,
-      "ranks": {
-        "PFN (Katz/Soppe)": 47,
-        "Dynasty Nerds": 60,
-        "KeepTradeCut SF": 49
-      },
-      "bk": 54
-    },
-    {
-      "key": "treveyon henderson",
-      "name": "TreVeyon Henderson",
-      "pos": "RB",
-      "team": "NE",
-      "age": 23,
-      "avg": 53.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 60,
-        "Dynasty Nerds": 46
-      },
-      "bk": 55
-    },
-    {
-      "key": "jordyn tyson",
-      "name": "Jordyn Tyson",
+      "key": "chris olave",
+      "name": "Chris Olave",
       "pos": "WR",
       "team": "NO",
-      "age": 22,
-      "avg": 53.5,
-      "n": 2,
+      "age": 26,
+      "avg": 38.0,
+      "n": 5,
       "ranks": {
-        "PFN (Katz/Soppe)": 53,
-        "Dynasty Nerds": 54
+        "PFN (Katz/Soppe)": 25,
+        "Dynasty Nerds": 45,
+        "KeepTradeCut SF": 39,
+        "ESPN (Karabell)": 37,
+        "RotoWire": 44
       },
-      "bk": 56
+      "bk": 38,
+      "value": 3386
+    },
+    {
+      "key": "chase brown",
+      "name": "Chase Brown",
+      "pos": "RB",
+      "team": "CIN",
+      "age": 26,
+      "avg": 40.0,
+      "n": 4,
+      "ranks": {
+        "PFN (Katz/Soppe)": 38,
+        "Dynasty Nerds": 58,
+        "KeepTradeCut SF": 41,
+        "ESPN (Karabell)": 23
+      },
+      "bk": 39,
+      "value": 3315
+    },
+    {
+      "key": "breece hall",
+      "name": "Breece Hall",
+      "pos": "RB",
+      "team": "NYJ",
+      "age": 25,
+      "avg": 42.0,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 42,
+        "Dynasty Nerds": 38,
+        "ESPN (Karabell)": 46
+      },
+      "bk": 40,
+      "value": 3246
+    },
+    {
+      "key": "colston loveland",
+      "name": "Colston Loveland",
+      "pos": "TE",
+      "team": "CHI",
+      "age": 22,
+      "avg": 43.0,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 41,
+        "Dynasty Nerds": 37,
+        "KeepTradeCut SF": 29,
+        "ESPN (Karabell)": 74,
+        "RotoWire": 34
+      },
+      "bk": 41,
+      "value": 3179
+    },
+    {
+      "key": "ladd mcconkey",
+      "name": "Ladd McConkey",
+      "pos": "WR",
+      "team": "LAC",
+      "age": 24,
+      "avg": 43.4,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 29,
+        "Dynasty Nerds": 39,
+        "KeepTradeCut SF": 48,
+        "ESPN (Karabell)": 58,
+        "RotoWire": 43
+      },
+      "bk": 42,
+      "value": 3113
     },
     {
       "key": "christian mccaffrey",
@@ -892,27 +841,68 @@
       "pos": "RB",
       "team": "SF",
       "age": 30,
-      "avg": 54.0,
-      "n": 2,
+      "avg": 45.25,
+      "n": 4,
       "ranks": {
         "PFN (Katz/Soppe)": 57,
-        "Dynasty Nerds": 51
+        "Dynasty Nerds": 51,
+        "ESPN (Karabell)": 26,
+        "RotoWire": 47
       },
-      "bk": 57
+      "bk": 43,
+      "value": 3049
     },
     {
-      "key": "marvin harrison",
-      "name": "Marvin Harrison Jr.",
-      "pos": "WR",
-      "team": "ARI",
-      "age": 24,
-      "avg": 54.0,
-      "n": 2,
+      "key": "jordan love",
+      "name": "Jordan Love",
+      "pos": "QB",
+      "team": "GB",
+      "age": 27,
+      "avg": 45.5,
+      "n": 4,
       "ranks": {
-        "PFN (Katz/Soppe)": 59,
-        "Dynasty Nerds": 49
+        "PFN (Katz/Soppe)": 40,
+        "Dynasty Nerds": 40,
+        "ESPN (Karabell)": 66,
+        "RotoWire": 36
       },
-      "bk": 58
+      "bk": 44,
+      "value": 2987
+    },
+    {
+      "key": "kenneth walker",
+      "name": "Kenneth Walker III",
+      "pos": "RB",
+      "team": "KC",
+      "age": 25,
+      "avg": 45.6,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 46,
+        "Dynasty Nerds": 43,
+        "KeepTradeCut SF": 42,
+        "ESPN (Karabell)": 47,
+        "RotoWire": 50
+      },
+      "bk": 45,
+      "value": 2926
+    },
+    {
+      "key": "zay flowers",
+      "name": "Zay Flowers",
+      "pos": "WR",
+      "team": "BAL",
+      "age": 25,
+      "avg": 46.0,
+      "n": 4,
+      "ranks": {
+        "PFN (Katz/Soppe)": 40,
+        "Dynasty Nerds": 53,
+        "ESPN (Karabell)": 51,
+        "RotoWire": 40
+      },
+      "bk": 46,
+      "value": 2867
     },
     {
       "key": "saquon barkley",
@@ -920,13 +910,65 @@
       "pos": "RB",
       "team": "PHI",
       "age": 29,
-      "avg": 54.0,
-      "n": 2,
+      "avg": 47.33,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 49,
-        "Dynasty Nerds": 59
+        "Dynasty Nerds": 59,
+        "ESPN (Karabell)": 34
       },
-      "bk": 59
+      "bk": 47,
+      "value": 2809
+    },
+    {
+      "key": "a j brown",
+      "name": "A.J. Brown",
+      "pos": "WR",
+      "team": "NE",
+      "age": 29,
+      "avg": 48.75,
+      "n": 4,
+      "ranks": {
+        "PFN (Katz/Soppe)": 47,
+        "Dynasty Nerds": 60,
+        "KeepTradeCut SF": 49,
+        "ESPN (Karabell)": 39
+      },
+      "bk": 48,
+      "value": 2753
+    },
+    {
+      "key": "tyler warren",
+      "name": "Tyler Warren",
+      "pos": "TE",
+      "team": "IND",
+      "age": 24,
+      "avg": 50.25,
+      "n": 4,
+      "ranks": {
+        "PFN (Katz/Soppe)": 52,
+        "Dynasty Nerds": 41,
+        "KeepTradeCut SF": 33,
+        "ESPN (Karabell)": 75
+      },
+      "bk": 49,
+      "value": 2698
+    },
+    {
+      "key": "rashee rice",
+      "name": "Rashee Rice",
+      "pos": "WR",
+      "team": "KC",
+      "age": 26,
+      "avg": 50.67,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 33,
+        "Dynasty Nerds": 63,
+        "ESPN (Karabell)": 56
+      },
+      "bk": 50,
+      "value": 2644
     },
     {
       "key": "devonta smith",
@@ -934,42 +976,84 @@
       "pos": "WR",
       "team": "PHI",
       "age": 27,
-      "avg": 54.5,
-      "n": 2,
+      "avg": 50.75,
+      "n": 4,
       "ranks": {
         "PFN (Katz/Soppe)": 44,
-        "Dynasty Nerds": 65
+        "Dynasty Nerds": 65,
+        "ESPN (Karabell)": 52,
+        "RotoWire": 42
       },
-      "bk": 60
+      "bk": 51,
+      "value": 2591
     },
     {
-      "key": "fernando mendoza",
-      "name": "Fernando Mendoza",
-      "pos": "QB",
-      "team": "LV",
-      "age": 22,
-      "avg": 56.33,
+      "key": "tee higgins",
+      "name": "Tee Higgins",
+      "pos": "WR",
+      "team": "CIN",
+      "age": 27,
+      "avg": 51.0,
       "n": 3,
       "ranks": {
-        "PFN (Katz/Soppe)": 72,
-        "Dynasty Nerds": 47,
-        "KeepTradeCut SF": 50
+        "PFN (Katz/Soppe)": 37,
+        "Dynasty Nerds": 61,
+        "ESPN (Karabell)": 55
       },
-      "bk": 61
+      "bk": 52,
+      "value": 2540
     },
     {
-      "key": "jaylen waddle",
-      "name": "Jaylen Waddle",
+      "key": "luther burden",
+      "name": "Luther Burden III",
       "pos": "WR",
-      "team": "DEN",
-      "age": 27,
-      "avg": 57.5,
-      "n": 2,
+      "team": "CHI",
+      "age": 22,
+      "avg": 52.8,
+      "n": 5,
       "ranks": {
-        "PFN (Katz/Soppe)": 48,
-        "Dynasty Nerds": 67
+        "PFN (Katz/Soppe)": 39,
+        "Dynasty Nerds": 55,
+        "KeepTradeCut SF": 47,
+        "ESPN (Karabell)": 86,
+        "RotoWire": 37
       },
-      "bk": 62
+      "bk": 53,
+      "value": 2490
+    },
+    {
+      "key": "carnell tate",
+      "name": "Carnell Tate",
+      "pos": "WR",
+      "team": "TEN",
+      "age": 21,
+      "avg": 53.2,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 56,
+        "Dynasty Nerds": 36,
+        "KeepTradeCut SF": 37,
+        "ESPN (Karabell)": 92,
+        "RotoWire": 45
+      },
+      "bk": 54,
+      "value": 2441
+    },
+    {
+      "key": "quinshon judkins",
+      "name": "Quinshon Judkins",
+      "pos": "RB",
+      "team": "CLE",
+      "age": 22,
+      "avg": 53.67,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 54,
+        "Dynasty Nerds": 44,
+        "ESPN (Karabell)": 63
+      },
+      "bk": 55,
+      "value": 2393
     },
     {
       "key": "jared goff",
@@ -977,69 +1061,49 @@
       "pos": "QB",
       "team": "DET",
       "age": 31,
-      "avg": 63.5,
-      "n": 2,
+      "avg": 54.75,
+      "n": 4,
       "ranks": {
         "PFN (Katz/Soppe)": 65,
-        "Dynasty Nerds": 62
+        "Dynasty Nerds": 62,
+        "ESPN (Karabell)": 44,
+        "RotoWire": 48
       },
-      "bk": 63
+      "bk": 56,
+      "value": 2346
     },
     {
-      "key": "jameson williams",
-      "name": "Jameson Williams",
+      "key": "rome odunze",
+      "name": "Rome Odunze",
       "pos": "WR",
-      "team": "DET",
-      "age": 25,
-      "avg": 65.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 55,
-        "Dynasty Nerds": 75
-      },
-      "bk": 64
-    },
-    {
-      "key": "makai lemon",
-      "name": "Makai Lemon",
-      "pos": "WR",
-      "team": "PHI",
-      "age": 22,
-      "avg": 65.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 74,
-        "Dynasty Nerds": 56
-      },
-      "bk": 65
-    },
-    {
-      "key": "bucky irving",
-      "name": "Bucky Irving",
-      "pos": "RB",
-      "team": "TB",
+      "team": "CHI",
       "age": 24,
-      "avg": 67.0,
-      "n": 2,
+      "avg": 55.25,
+      "n": 4,
       "ranks": {
-        "PFN (Katz/Soppe)": 63,
-        "Dynasty Nerds": 71
+        "PFN (Katz/Soppe)": 45,
+        "Dynasty Nerds": 48,
+        "KeepTradeCut SF": 43,
+        "ESPN (Karabell)": 85
       },
-      "bk": 66
+      "bk": 57,
+      "value": 2301
     },
     {
-      "key": "tucker kraft",
-      "name": "Tucker Kraft",
-      "pos": "TE",
-      "team": "GB",
-      "age": 25,
-      "avg": 67.0,
-      "n": 2,
+      "key": "jaylen waddle",
+      "name": "Jaylen Waddle",
+      "pos": "WR",
+      "team": "DEN",
+      "age": 27,
+      "avg": 58.67,
+      "n": 3,
       "ranks": {
-        "PFN (Katz/Soppe)": 60,
-        "Dynasty Nerds": 74
+        "PFN (Katz/Soppe)": 48,
+        "Dynasty Nerds": 67,
+        "ESPN (Karabell)": 61
       },
-      "bk": 67
+      "bk": 58,
+      "value": 2256
     },
     {
       "key": "baker mayfield",
@@ -1047,55 +1111,31 @@
       "pos": "QB",
       "team": "TB",
       "age": 31,
-      "avg": 68.0,
-      "n": 2,
+      "avg": 59.67,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 79,
-        "Dynasty Nerds": 57
+        "Dynasty Nerds": 57,
+        "ESPN (Karabell)": 43
       },
-      "bk": 68
+      "bk": 59,
+      "value": 2212
     },
     {
-      "key": "c j stroud",
-      "name": "C.J. Stroud",
-      "pos": "QB",
-      "team": "HOU",
-      "age": 24,
-      "avg": 69.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 58,
-        "Dynasty Nerds": 80
-      },
-      "bk": 69
-    },
-    {
-      "key": "kyren williams",
-      "name": "Kyren Williams",
+      "key": "treveyon henderson",
+      "name": "TreVeyon Henderson",
       "pos": "RB",
-      "team": "LAR",
-      "age": 25,
-      "avg": 70.0,
-      "n": 2,
+      "team": "NE",
+      "age": 23,
+      "avg": 62.33,
+      "n": 3,
       "ranks": {
-        "PFN (Katz/Soppe)": 72,
-        "Dynasty Nerds": 68
+        "PFN (Katz/Soppe)": 60,
+        "Dynasty Nerds": 46,
+        "ESPN (Karabell)": 81
       },
-      "bk": 70
-    },
-    {
-      "key": "cam skattebo",
-      "name": "Cam Skattebo",
-      "pos": "RB",
-      "team": "NYG",
-      "age": 24,
-      "avg": 70.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 75,
-        "Dynasty Nerds": 66
-      },
-      "bk": 71
+      "bk": 60,
+      "value": 2169
     },
     {
       "key": "josh jacobs",
@@ -1103,27 +1143,47 @@
       "pos": "RB",
       "team": "GB",
       "age": 28,
-      "avg": 71.5,
-      "n": 2,
+      "avg": 62.67,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 66,
-        "Dynasty Nerds": 77
+        "Dynasty Nerds": 77,
+        "ESPN (Karabell)": 45
       },
-      "bk": 72
+      "bk": 61,
+      "value": 2128
     },
     {
-      "key": "christian watson",
-      "name": "Christian Watson",
+      "key": "jameson williams",
+      "name": "Jameson Williams",
       "pos": "WR",
-      "team": "GB",
-      "age": 27,
-      "avg": 72.0,
-      "n": 2,
+      "team": "DET",
+      "age": 25,
+      "avg": 63.33,
+      "n": 3,
       "ranks": {
-        "PFN (Katz/Soppe)": 62,
-        "Dynasty Nerds": 82
+        "PFN (Katz/Soppe)": 55,
+        "Dynasty Nerds": 75,
+        "ESPN (Karabell)": 60
       },
-      "bk": 73
+      "bk": 62,
+      "value": 2087
+    },
+    {
+      "key": "kyren williams",
+      "name": "Kyren Williams",
+      "pos": "RB",
+      "team": "LAR",
+      "age": 25,
+      "avg": 63.33,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 72,
+        "Dynasty Nerds": 68,
+        "ESPN (Karabell)": 50
+      },
+      "bk": 63,
+      "value": 2047
     },
     {
       "key": "javonte williams",
@@ -1131,13 +1191,114 @@
       "pos": "RB",
       "team": "DAL",
       "age": 26,
-      "avg": 72.5,
-      "n": 2,
+      "avg": 64.33,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 81,
-        "Dynasty Nerds": 64
+        "Dynasty Nerds": 64,
+        "ESPN (Karabell)": 48
       },
-      "bk": 74
+      "bk": 64,
+      "value": 2007
+    },
+    {
+      "key": "fernando mendoza",
+      "name": "Fernando Mendoza",
+      "pos": "QB",
+      "team": "LV",
+      "age": 22,
+      "avg": 64.4,
+      "n": 5,
+      "ranks": {
+        "PFN (Katz/Soppe)": 72,
+        "Dynasty Nerds": 47,
+        "KeepTradeCut SF": 50,
+        "ESPN (Karabell)": 115,
+        "RotoWire": 38
+      },
+      "bk": 65,
+      "value": 1969
+    },
+    {
+      "key": "c j stroud",
+      "name": "C.J. Stroud",
+      "pos": "QB",
+      "team": "HOU",
+      "age": 24,
+      "avg": 67.67,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 58,
+        "Dynasty Nerds": 80,
+        "ESPN (Karabell)": 65
+      },
+      "bk": 66,
+      "value": 1931
+    },
+    {
+      "key": "jordyn tyson",
+      "name": "Jordyn Tyson",
+      "pos": "WR",
+      "team": "NO",
+      "age": 22,
+      "avg": 68.25,
+      "n": 4,
+      "ranks": {
+        "PFN (Katz/Soppe)": 53,
+        "Dynasty Nerds": 54,
+        "ESPN (Karabell)": 120,
+        "RotoWire": 46
+      },
+      "bk": 67,
+      "value": 1895
+    },
+    {
+      "key": "cam skattebo",
+      "name": "Cam Skattebo",
+      "pos": "RB",
+      "team": "NYG",
+      "age": 24,
+      "avg": 68.33,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 75,
+        "Dynasty Nerds": 66,
+        "ESPN (Karabell)": 64
+      },
+      "bk": 68,
+      "value": 1859
+    },
+    {
+      "key": "derrick henry",
+      "name": "Derrick Henry",
+      "pos": "RB",
+      "team": "BAL",
+      "age": 32,
+      "avg": 68.33,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 84,
+        "Dynasty Nerds": 99,
+        "ESPN (Karabell)": 22
+      },
+      "bk": 69,
+      "value": 1824
+    },
+    {
+      "key": "kyler murray",
+      "name": "Kyler Murray",
+      "pos": "QB",
+      "team": "MIN",
+      "age": 29,
+      "avg": 69.33,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 86,
+        "Dynasty Nerds": 81,
+        "ESPN (Karabell)": 41
+      },
+      "bk": 70,
+      "value": 1789
     },
     {
       "key": "travis etienne",
@@ -1145,27 +1306,95 @@
       "pos": "RB",
       "team": "NO",
       "age": 27,
-      "avg": 73.5,
-      "n": 2,
+      "avg": 69.67,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 69,
-        "Dynasty Nerds": 78
+        "Dynasty Nerds": 78,
+        "ESPN (Karabell)": 62
       },
-      "bk": 75
+      "bk": 71,
+      "value": 1755
     },
     {
-      "key": "sam laporta",
-      "name": "Sam LaPorta",
-      "pos": "TE",
-      "team": "DET",
-      "age": 25,
-      "avg": 75.5,
-      "n": 2,
+      "key": "marvin harrison",
+      "name": "Marvin Harrison Jr.",
+      "pos": "WR",
+      "team": "ARI",
+      "age": 24,
+      "avg": 70.67,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 59,
+        "Dynasty Nerds": 49,
+        "ESPN (Karabell)": 104
+      },
+      "bk": 72,
+      "value": 1722
+    },
+    {
+      "key": "bucky irving",
+      "name": "Bucky Irving",
+      "pos": "RB",
+      "team": "TB",
+      "age": 24,
+      "avg": 72.0,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 63,
+        "Dynasty Nerds": 71,
+        "ESPN (Karabell)": 82
+      },
+      "bk": 73,
+      "value": 1690
+    },
+    {
+      "key": "terry mclaurin",
+      "name": "Terry McLaurin",
+      "pos": "WR",
+      "team": "WAS",
+      "age": 30,
+      "avg": 74.0,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 68,
-        "Dynasty Nerds": 83
+        "Dynasty Nerds": 95,
+        "ESPN (Karabell)": 59
       },
-      "bk": 76
+      "bk": 74,
+      "value": 1658
+    },
+    {
+      "key": "brian thomas",
+      "name": "Brian Thomas Jr.",
+      "pos": "WR",
+      "team": "JAX",
+      "age": 23,
+      "avg": 75.0,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 51,
+        "Dynasty Nerds": 52,
+        "ESPN (Karabell)": 122
+      },
+      "bk": 75,
+      "value": 1627
+    },
+    {
+      "key": "tyler shough",
+      "name": "Tyler Shough",
+      "pos": "QB",
+      "team": "NO",
+      "age": 26,
+      "avg": 75.0,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 96,
+        "Dynasty Nerds": 87,
+        "ESPN (Karabell)": 42
+      },
+      "bk": 76,
+      "value": 1597
     },
     {
       "key": "harold fannin",
@@ -1174,26 +1403,14 @@
       "team": "CLE",
       "age": 22,
       "avg": 76.0,
-      "n": 2,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 76,
-        "Dynasty Nerds": 76
+        "Dynasty Nerds": 76,
+        "ESPN (Karabell)": 76
       },
-      "bk": 77
-    },
-    {
-      "key": "kc concepcion",
-      "name": "KC Concepcion",
-      "pos": "WR",
-      "team": "CLE",
-      "age": 21,
-      "avg": 77.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 83,
-        "Dynasty Nerds": 72
-      },
-      "bk": 78
+      "bk": 77,
+      "value": 1567
     },
     {
       "key": "jadarian price",
@@ -1201,96 +1418,31 @@
       "pos": "RB",
       "team": "SEA",
       "age": 22,
-      "avg": 78.5,
-      "n": 2,
+      "avg": 76.0,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 87,
-        "Dynasty Nerds": 70
+        "Dynasty Nerds": 70,
+        "ESPN (Karabell)": 71
       },
-      "bk": 79
+      "bk": 78,
+      "value": 1538
     },
     {
-      "key": "jordan addison",
-      "name": "Jordan Addison",
-      "pos": "WR",
-      "team": "MIN",
-      "age": 24,
-      "avg": 78.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 71,
-        "Dynasty Nerds": 86
-      },
-      "bk": 80
-    },
-    {
-      "key": "kyle pitts",
-      "name": "Kyle Pitts Sr.",
+      "key": "tucker kraft",
+      "name": "Tucker Kraft",
       "pos": "TE",
-      "team": "ATL",
+      "team": "GB",
       "age": 25,
-      "avg": 78.5,
-      "n": 2,
+      "avg": 76.67,
+      "n": 3,
       "ranks": {
-        "PFN (Katz/Soppe)": 84,
-        "Dynasty Nerds": 73
+        "PFN (Katz/Soppe)": 60,
+        "Dynasty Nerds": 74,
+        "ESPN (Karabell)": 96
       },
-      "bk": 81
-    },
-    {
-      "key": "jakobi meyers",
-      "name": "Jakobi Meyers",
-      "pos": "WR",
-      "team": "JAX",
-      "age": 29,
-      "avg": 80.0,
-      "n": 1,
-      "ranks": {
-        "PFN (Katz/Soppe)": 80
-      },
-      "bk": 82
-    },
-    {
-      "key": "parker washington",
-      "name": "Parker Washington",
-      "pos": "WR",
-      "team": "JAX",
-      "age": 24,
-      "avg": 81.0,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 65,
-        "Dynasty Nerds": 97
-      },
-      "bk": 83
-    },
-    {
-      "key": "terry mclaurin",
-      "name": "Terry McLaurin",
-      "pos": "WR",
-      "team": "WAS",
-      "age": 30,
-      "avg": 81.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 68,
-        "Dynasty Nerds": 95
-      },
-      "bk": 84
-    },
-    {
-      "key": "kyler murray",
-      "name": "Kyler Murray",
-      "pos": "QB",
-      "team": "MIN",
-      "age": 29,
-      "avg": 83.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 86,
-        "Dynasty Nerds": 81
-      },
-      "bk": 85
+      "bk": 79,
+      "value": 1509
     },
     {
       "key": "dandre swift",
@@ -1298,54 +1450,15 @@
       "pos": "RB",
       "team": "CHI",
       "age": 27,
-      "avg": 84.5,
-      "n": 2,
+      "avg": 79.67,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 78,
-        "Dynasty Nerds": 91
+        "Dynasty Nerds": 91,
+        "ESPN (Karabell)": 70
       },
-      "bk": 86
-    },
-    {
-      "key": "michael wilson",
-      "name": "Michael Wilson",
-      "pos": "WR",
-      "team": "ARI",
-      "age": 26,
-      "avg": 85.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 77,
-        "Dynasty Nerds": 94
-      },
-      "bk": 87
-    },
-    {
-      "key": "dk metcalf",
-      "name": "DK Metcalf",
-      "pos": "WR",
-      "team": "PIT",
-      "age": 28,
-      "avg": 86.0,
-      "n": 1,
-      "ranks": {
-        "PFN (Katz/Soppe)": 86
-      },
-      "bk": 88
-    },
-    {
-      "key": "bhayshul tuten",
-      "name": "Bhayshul Tuten",
-      "pos": "RB",
-      "team": "JAX",
-      "age": 23,
-      "avg": 88.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 93,
-        "Dynasty Nerds": 84
-      },
-      "bk": 89
+      "bk": 80,
+      "value": 1481
     },
     {
       "key": "cam ward",
@@ -1353,53 +1466,95 @@
       "pos": "QB",
       "team": "TEN",
       "age": 24,
-      "avg": 88.5,
-      "n": 2,
+      "avg": 80.0,
+      "n": 4,
       "ranks": {
         "PFN (Katz/Soppe)": 108,
-        "Dynasty Nerds": 69
+        "Dynasty Nerds": 69,
+        "ESPN (Karabell)": 94,
+        "RotoWire": 49
       },
-      "bk": 90
+      "bk": 81,
+      "value": 1453
     },
     {
-      "key": "josh downs",
-      "name": "Josh Downs",
-      "pos": "WR",
-      "team": "IND",
+      "key": "sam laporta",
+      "name": "Sam LaPorta",
+      "pos": "TE",
+      "team": "DET",
       "age": 25,
-      "avg": 89.0,
-      "n": 1,
+      "avg": 82.0,
+      "n": 3,
       "ranks": {
-        "PFN (Katz/Soppe)": 89
+        "PFN (Katz/Soppe)": 68,
+        "Dynasty Nerds": 83,
+        "ESPN (Karabell)": 95
       },
-      "bk": 91
+      "bk": 82,
+      "value": 1426
     },
     {
-      "key": "rj harvey",
-      "name": "RJ Harvey",
+      "key": "bhayshul tuten",
+      "name": "Bhayshul Tuten",
       "pos": "RB",
-      "team": "DEN",
-      "age": 25,
-      "avg": 90.0,
-      "n": 1,
+      "team": "JAX",
+      "age": 23,
+      "avg": 83.0,
+      "n": 3,
       "ranks": {
-        "PFN (Katz/Soppe)": 90
+        "PFN (Katz/Soppe)": 93,
+        "Dynasty Nerds": 84,
+        "ESPN (Karabell)": 72
       },
-      "bk": 92
+      "bk": 83,
+      "value": 1400
     },
     {
-      "key": "alec pierce",
-      "name": "Alec Pierce",
+      "key": "christian watson",
+      "name": "Christian Watson",
       "pos": "WR",
-      "team": "IND",
-      "age": 26,
-      "avg": 91.0,
+      "team": "GB",
+      "age": 27,
+      "avg": 83.33,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 62,
+        "Dynasty Nerds": 82,
+        "ESPN (Karabell)": 106
+      },
+      "bk": 84,
+      "value": 1374
+    },
+    {
+      "key": "kyle pitts",
+      "name": "Kyle Pitts Sr.",
+      "pos": "TE",
+      "team": "ATL",
+      "age": 25,
+      "avg": 85.67,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 84,
+        "Dynasty Nerds": 73,
+        "ESPN (Karabell)": 100
+      },
+      "bk": 85,
+      "value": 1349
+    },
+    {
+      "key": "davante adams",
+      "name": "Davante Adams",
+      "pos": "WR",
+      "team": "LAR",
+      "age": 33,
+      "avg": 87.5,
       "n": 2,
       "ranks": {
-        "PFN (Katz/Soppe)": 92,
-        "Dynasty Nerds": 90
+        "PFN (Katz/Soppe)": 122,
+        "ESPN (Karabell)": 53
       },
-      "bk": 93
+      "bk": 86,
+      "value": 1324
     },
     {
       "key": "dj moore",
@@ -1407,67 +1562,94 @@
       "pos": "WR",
       "team": "BUF",
       "age": 29,
-      "avg": 91.5,
-      "n": 2,
+      "avg": 89.0,
+      "n": 3,
       "ranks": {
         "PFN (Katz/Soppe)": 98,
-        "Dynasty Nerds": 85
+        "Dynasty Nerds": 85,
+        "ESPN (Karabell)": 84
       },
-      "bk": 94
+      "bk": 87,
+      "value": 1300
     },
     {
-      "key": "derrick henry",
-      "name": "Derrick Henry",
-      "pos": "RB",
-      "team": "BAL",
-      "age": 32,
-      "avg": 91.5,
-      "n": 2,
-      "ranks": {
-        "PFN (Katz/Soppe)": 84,
-        "Dynasty Nerds": 99
-      },
-      "bk": 95
-    },
-    {
-      "key": "tyler shough",
-      "name": "Tyler Shough",
+      "key": "sam darnold",
+      "name": "Sam Darnold",
       "pos": "QB",
-      "team": "NO",
+      "team": "SEA",
+      "age": 29,
+      "avg": 89.0,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 120,
+        "Dynasty Nerds": 79,
+        "ESPN (Karabell)": 68
+      },
+      "bk": 88,
+      "value": 1276
+    },
+    {
+      "key": "makai lemon",
+      "name": "Makai Lemon",
+      "pos": "WR",
+      "team": "PHI",
+      "age": 22,
+      "avg": 90.0,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 74,
+        "Dynasty Nerds": 56,
+        "ESPN (Karabell)": 140
+      },
+      "bk": 89,
+      "value": 1252
+    },
+    {
+      "key": "parker washington",
+      "name": "Parker Washington",
+      "pos": "WR",
+      "team": "JAX",
+      "age": 24,
+      "avg": 91.67,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 65,
+        "Dynasty Nerds": 97,
+        "ESPN (Karabell)": 113
+      },
+      "bk": 90,
+      "value": 1229
+    },
+    {
+      "key": "michael wilson",
+      "name": "Michael Wilson",
+      "pos": "WR",
+      "team": "ARI",
       "age": 26,
-      "avg": 91.5,
+      "avg": 92.0,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 77,
+        "Dynasty Nerds": 94,
+        "ESPN (Karabell)": 105
+      },
+      "bk": 91,
+      "value": 1207
+    },
+    {
+      "key": "david montgomery",
+      "name": "David Montgomery",
+      "pos": "RB",
+      "team": "HOU",
+      "age": 29,
+      "avg": 92.0,
       "n": 2,
       "ranks": {
-        "PFN (Katz/Soppe)": 96,
-        "Dynasty Nerds": 87
+        "PFN (Katz/Soppe)": 111,
+        "ESPN (Karabell)": 73
       },
-      "bk": 96
-    },
-    {
-      "key": "oronde gadsden",
-      "name": "Oronde Gadsden II",
-      "pos": "TE",
-      "team": "LAC",
-      "age": 23,
-      "avg": 92.0,
-      "n": 1,
-      "ranks": {
-        "PFN (Katz/Soppe)": 92
-      },
-      "bk": 97
-    },
-    {
-      "key": "xavier worthy",
-      "name": "Xavier Worthy",
-      "pos": "WR",
-      "team": "KC",
-      "age": 23,
-      "avg": 95.0,
-      "n": 1,
-      "ranks": {
-        "PFN (Katz/Soppe)": 95
-      },
-      "bk": 98
+      "bk": 92,
+      "value": 1185
     },
     {
       "key": "jaylen warren",
@@ -1475,25 +1657,121 @@
       "pos": "RB",
       "team": "PIT",
       "age": 27,
-      "avg": 96.0,
-      "n": 1,
+      "avg": 92.0,
+      "n": 2,
       "ranks": {
-        "PFN (Katz/Soppe)": 96
+        "PFN (Katz/Soppe)": 96,
+        "ESPN (Karabell)": 88
       },
-      "bk": 99
+      "bk": 93,
+      "value": 1163
     },
     {
-      "key": "kyle monangai",
-      "name": "Kyle Monangai",
-      "pos": "RB",
-      "team": "CHI",
+      "key": "jordan addison",
+      "name": "Jordan Addison",
+      "pos": "WR",
+      "team": "MIN",
       "age": 24,
-      "avg": 99.0,
-      "n": 1,
+      "avg": 94.0,
+      "n": 3,
       "ranks": {
-        "PFN (Katz/Soppe)": 99
+        "PFN (Katz/Soppe)": 71,
+        "Dynasty Nerds": 86,
+        "ESPN (Karabell)": 125
       },
-      "bk": 100
+      "bk": 94,
+      "value": 1142
+    },
+    {
+      "key": "rhamondre stevenson",
+      "name": "Rhamondre Stevenson",
+      "pos": "RB",
+      "team": "NE",
+      "age": 28,
+      "avg": 94.0,
+      "n": 2,
+      "ranks": {
+        "PFN (Katz/Soppe)": 108,
+        "ESPN (Karabell)": 80
+      },
+      "bk": 95,
+      "value": 1121
+    },
+    {
+      "key": "dk metcalf",
+      "name": "DK Metcalf",
+      "pos": "WR",
+      "team": "PIT",
+      "age": 28,
+      "avg": 94.5,
+      "n": 2,
+      "ranks": {
+        "PFN (Katz/Soppe)": 86,
+        "ESPN (Karabell)": 103
+      },
+      "bk": 96,
+      "value": 1101
+    },
+    {
+      "key": "courtland sutton",
+      "name": "Courtland Sutton",
+      "pos": "WR",
+      "team": "DEN",
+      "age": 30,
+      "avg": 96.0,
+      "n": 2,
+      "ranks": {
+        "PFN (Katz/Soppe)": 101,
+        "ESPN (Karabell)": 91
+      },
+      "bk": 97,
+      "value": 1081
+    },
+    {
+      "key": "malik willis",
+      "name": "Malik Willis",
+      "pos": "QB",
+      "team": "MIA",
+      "age": 27,
+      "avg": 96.33,
+      "n": 3,
+      "ranks": {
+        "PFN (Katz/Soppe)": 132,
+        "Dynasty Nerds": 88,
+        "ESPN (Karabell)": 69
+      },
+      "bk": 98,
+      "value": 1061
+    },
+    {
+      "key": "jakobi meyers",
+      "name": "Jakobi Meyers",
+      "pos": "WR",
+      "team": "JAX",
+      "age": 29,
+      "avg": 97.0,
+      "n": 2,
+      "ranks": {
+        "PFN (Katz/Soppe)": 80,
+        "ESPN (Karabell)": 114
+      },
+      "bk": 99,
+      "value": 1042
+    },
+    {
+      "key": "george kittle",
+      "name": "George Kittle",
+      "pos": "TE",
+      "team": "SF",
+      "age": 32,
+      "avg": 98.5,
+      "n": 2,
+      "ranks": {
+        "PFN (Katz/Soppe)": 100,
+        "ESPN (Karabell)": 97
+      },
+      "bk": 100,
+      "value": 1023
     }
   ]
 }
