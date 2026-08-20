@@ -108,6 +108,29 @@ NICKNAMES = {
     "kraft": "tucker kraft",
     "fannin": "harold fannin",
     "mason": "jordan mason",
+    "ohtani": "shohei ohtani",
+    "shohei": "shohei ohtani",
+    "judge": "aaron judge",
+    "soto": "juan soto",
+    "witt": "bobby witt",
+    "elly": "elly de la cruz",
+    "edlc": "elly de la cruz",
+    "pca": "pete crow-armstrong",
+    "skenes": "paul skenes",
+    "caminero": "junior caminero",
+    "yordan": "yordan alvarez",
+    "acuna": "ronald acuna",
+    "tatis": "fernando tatis",
+    "julio": "julio rodriguez",
+    "vlad": "vladimir guerrero",
+    "jazz": "jazz chisholm",
+    "gunnar": "gunnar henderson",
+    "corbin": "corbin carroll",
+    "mookie": "mookie betts",
+    "trout": "mike trout",
+    "devers": "rafael devers",
+    "hader": "josh hader",
+    "diaz": "edwin diaz",
 }
 
 MLB_ALIASES = {
@@ -217,15 +240,39 @@ class Catalog:
             "standard": "standard",
             "rookies": "rookies",
             "rookie": "rookies",
+            "bbkeep": "bb_keep",
+            "bb keep": "bb_keep",
+            "bb_keep": "bb_keep",
+            "lineup": "bb_lineup",
+            "the lineup": "bb_lineup",
+            "bb_lineup": "bb_lineup",
+            "pitchers": "bb_pitchers",
+            "bb_pitchers": "bb_pitchers",
+            "saves": "bb_saves",
+            "bb_saves": "bb_saves",
+            "bullpen": "bb_saves",
+            "svh": "bb_svh",
+            "bb_svh": "bb_svh",
+            "holds": "bb_svh",
+            "bbredraft": "bb_redraft",
+            "bb_redraft": "bb_redraft",
+            "bb redraft": "bb_redraft",
         }.get((board or "keep").lower(), "keep")
         return self.raw.get(key) or []
 
-    def find(self, query: str, limit: int = 8) -> list[dict]:
+    def find(self, query: str, limit: int = 8, sport: str | None = None) -> list[dict]:
         q = norm(query)
         if not q:
             return []
         scored = []
-        pool = self.players or self.raw.get("board") or []
+        football = list(self.players or self.raw.get("board") or [])
+        baseball = list(self.raw.get("bb_players") or self.raw.get("bb_keep") or [])
+        if sport == "baseball":
+            pool = baseball
+        elif sport == "football":
+            pool = football
+        else:
+            pool = football + baseball
         for p in pool:
             key = p.get("key") or norm(p.get("name", ""))
             name = norm(p.get("name", ""))
@@ -238,34 +285,58 @@ class Catalog:
                 scored.append((2, p))
             elif all(tok in hay for tok in q.split()):
                 scored.append((3, p))
-        scored.sort(key=lambda x: (x[0], x[1].get("lists", {}).get("The Keep") or 999, x[1].get("name", "")))
+        scored.sort(key=lambda x: (
+            x[0],
+            (x[1].get("lists") or {}).get("The Keep")
+            or (x[1].get("lists") or {}).get("BB Keep")
+            or x[1].get("bk")
+            or 999,
+            x[1].get("name", ""),
+        ))
         seen = set()
         out = []
         for _s, p in scored:
-            k = norm(p.get("name", "")) or p.get("key")
+            k = (p.get("sport") or "football") + ":" + (norm(p.get("name", "")) or p.get("key") or "")
             if k in seen:
                 continue
             seen.add(k)
             out.append(p)
             if len(out) >= limit:
                 break
-        if len(out) < limit:
+        if len(out) < limit and sport != "baseball":
             for board_key in ("keep", "board", "ppr", "standard", "rookies"):
                 for r in self.raw.get(board_key) or []:
                     name = norm(r.get("name", ""))
                     if not name:
                         continue
                     if q == name or name.startswith(q) or q in name:
-                        if name in seen:
+                        tag = "football:" + name
+                        if tag in seen:
                             continue
-                        seen.add(name)
+                        seen.add(tag)
                         out.append(r)
+                        if len(out) >= limit:
+                            return out
+        if len(out) < limit and sport != "football":
+            for board_key in ("bb_keep", "bb_lineup", "bb_pitchers", "bb_redraft"):
+                for r in self.raw.get(board_key) or []:
+                    name = norm(r.get("name", ""))
+                    if not name:
+                        continue
+                    if q == name or name.startswith(q) or q in name:
+                        tag = "baseball:" + name
+                        if tag in seen:
+                            continue
+                        seen.add(tag)
+                        row = dict(r)
+                        row.setdefault("sport", "baseball")
+                        out.append(row)
                         if len(out) >= limit:
                             return out
         return out
 
-    def one(self, query: str) -> dict | None:
-        hits = self.find(query, limit=1)
+    def one(self, query: str, sport: str | None = None) -> dict | None:
+        hits = self.find(query, limit=1, sport=sport)
         return hits[0] if hits else None
 
     def board_row(self, name: str, board: str = "keep") -> dict | None:
@@ -281,9 +352,18 @@ class Catalog:
             return None
         nt = norm(t)
         want = compact(t)
+        bb_modes = {
+            "bbkeep": "bb_keep",
+            "bblineup": "bb_lineup",
+            "bbpitchers": "bb_pitchers",
+            "bbredraft": "bb_redraft",
+            "bbsaves": "bb_saves",
+            "bbsvh": "bb_svh",
+        }
+        pick_pool = self.raw.get("bb_picks") if mode in bb_modes else self.raw.get("picks")
         exact_pick = None
         fuzzy_pick = None
-        for p in self.raw.get("picks") or []:
+        for p in pick_pool or []:
             pn = compact(p["name"])
             if want == pn or nt == norm(p["name"]):
                 exact_pick = {**p, "kind": "pick"}
@@ -294,7 +374,23 @@ class Catalog:
             return exact_pick
         if fuzzy_pick:
             return fuzzy_pick
-        player = self.one(t)
+        if mode in bb_modes:
+            row = self.board_row(t, mode)
+            if not row:
+                return None
+            return {
+                "name": row.get("name"),
+                "pos": row.get("pos") or "",
+                "team": row.get("team") or "",
+                "rank": row.get("bk"),
+                "value": int(row.get("value") or bk_value(row.get("bk") or 0)),
+                "kind": "player",
+                "url": "",
+                "slug": "",
+            }
+        player = self.one(t, sport="football")
+        if player and player.get("sport") == "baseball":
+            player = None
         if not player:
             # long-board-only name
             row = self.board_row(t, "board")
