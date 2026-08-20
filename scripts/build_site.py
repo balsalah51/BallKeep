@@ -390,6 +390,13 @@ def pick_assets(qb_mult_for_qb: float = 1.0):
     return out
 
 
+def is_draft_pick_name(name: str) -> bool:
+    n = re.sub(r"\s+", " ", (name or "").strip().lower())
+    if re.search(r"\b20\d{2}\b", n) and re.search(r"\b(1st|2nd|3rd|4th|5th|pick)\b", n):
+        return True
+    return False
+
+
 def aggregate(pfn_rows):
     fp_sf = load_rank_names("fp-dynasty-sf") or FANTASYPROS_SF
     dn_sf = load_rank_names("dn-sf") or DYNASTY_NERDS
@@ -411,6 +418,8 @@ def aggregate(pfn_rows):
         names.update(src)
     rows = []
     for key in names:
+        if is_draft_pick_name(key):
+            continue
         ranks = {s: src[key] for s, src in sources.items() if key in src}
         if not ranks:
             continue
@@ -438,6 +447,8 @@ def aggregate(pfn_rows):
                 if norm_name(n) == key:
                     display = n
                     break
+        if is_draft_pick_name(display or key):
+            continue
         rows.append({
             "key": key,
             "name": display or key.title(),
