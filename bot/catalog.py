@@ -284,6 +284,10 @@ class Catalog:
             "the pitch": "pl_pitch",
             "pl_pitch": "pl_pitch",
             "plpitch": "pl_pitch",
+            "premier": "pl_premier",
+            "the premier": "pl_premier",
+            "pl_premier": "pl_premier",
+            "plpremier": "pl_premier",
             "plfwd": "pl_fwd",
             "attack": "pl_fwd",
             "pl_fwd": "pl_fwd",
@@ -318,12 +322,13 @@ class Catalog:
         for p in pool:
             key = p.get("key") or norm(p.get("name", ""))
             name = norm(p.get("name", ""))
-            hay = f"{name} {p.get('pos','')} {p.get('team','')} {p.get('slug','')}"
-            if q == key or q == name:
+            full = norm(p.get("full_name") or "")
+            hay = f"{name} {full} {p.get('pos','')} {p.get('team','')} {p.get('slug','')}"
+            if q == key or q == name or (full and q == full):
                 scored.append((0, p))
-            elif name.startswith(q) or key.startswith(q):
+            elif name.startswith(q) or key.startswith(q) or (full and full.startswith(q)):
                 scored.append((1, p))
-            elif q in name or q in key:
+            elif q in name or q in key or (full and q in full):
                 scored.append((2, p))
             elif all(tok in hay for tok in q.split()):
                 scored.append((3, p))
@@ -377,7 +382,7 @@ class Catalog:
                         if len(out) >= limit:
                             return out
         if sport in (None, "soccer", "premier", "pl", "fpl"):
-            for board_key in ("pl_pitch", "pl_fwd", "pl_mid", "pl_def", "pl_gkp"):
+            for board_key in ("pl_premier", "pl_pitch", "pl_fwd", "pl_mid", "pl_def", "pl_gkp"):
                 for r in self.raw.get(board_key) or []:
                     name = norm(r.get("name", ""))
                     if not name:
@@ -420,7 +425,8 @@ class Catalog:
             "bbsvh": "bb_svh",
         }
         pl_mode_keys = {
-            "plpitch", "pitch250", "thepitch", "plfwd", "plmid", "pldef", "plgkp",
+            "plpitch", "pitch250", "thepitch", "plpremier", "premier400", "thepremier",
+            "plfwd", "plmid", "pldef", "plgkp",
         }
         if mode in bb_modes:
             pick_pool = self.raw.get("bb_picks")
@@ -441,6 +447,9 @@ class Catalog:
             "plpitch": "pl_pitch",
             "pitch250": "pl_pitch",
             "thepitch": "pl_pitch",
+            "plpremier": "pl_premier",
+            "premier400": "pl_premier",
+            "thepremier": "pl_premier",
             "plfwd": "pl_fwd",
             "plmid": "pl_mid",
             "pldef": "pl_def",

@@ -29,6 +29,7 @@ CHANNELS = [
     ("bb-bullpen", "saves and sv+h relief lists"),
     ("bb-redraft", "baseball rest-of-season board"),
     ("bb-waivers", "dynasty stashes and the longer redraft wire"),
+    ("the-premier", "premier league hybrid 400 · sleeper + every board"),
     ("the-pitch", "premier league top 400 · sleeper bpl 2025"),
     ("pl-attack", "fpl forwards"),
     ("pl-midfield", "fpl midfield"),
@@ -302,13 +303,21 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         await asyncio.sleep(1.05)
     await note("BaseBallKeep boards posted.")
 
+    await _wipe(channels["the-premier"])
+    await _post_list(
+        channels["the-premier"],
+        "PitchKeep — The Premier (hybrid 400: 50% Sleeper BPL 2025, 50% every other board)",
+        cat.raw.get("pl_premier") or [],
+        cat,
+        "The flagship PK list. Purple desk at https://ballkeep.com/pl/the-premier.html",
+    )
     await _wipe(channels["the-pitch"])
     await _post_list(
         channels["the-pitch"],
         "PitchKeep — The Pitch (Premier League top 400, Sleeper BPL 2025)",
         cat.raw.get("pl_pitch") or [],
         cat,
-        "24-board FPL super-aggregate. Purple desk at https://ballkeep.com/pl/the-pitch.html",
+        "Sleeper-only counting board. Purple desk at https://ballkeep.com/pl/the-pitch.html",
     )
     await _wipe(channels["pl-attack"])
     await _post_list(channels["pl-attack"], "Attack — FPL forwards", cat.raw.get("pl_fwd") or [], cat)
@@ -321,7 +330,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     pl_files = cat.raw.get("pl_players") or []
     await _wipe(channels["pl-files"], limit=400)
     await channels["pl-files"].send(
-        f"**PitchKeep player files** · {len(pl_files)} names from The Pitch 400.\n"
+        f"**PitchKeep player files** · {len(pl_files)} names from The Premier 400.\n"
         "`/plplayer Haaland` is faster if you already know the name. "
         "Site files live at https://ballkeep.com/pl/players/"
     )

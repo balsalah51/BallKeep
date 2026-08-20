@@ -609,6 +609,29 @@ def player_anchor(name: str, depth: int = 0) -> str:
     return f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
 
 
+def load_player_media():
+    path = ROOT / "data/player_media.json"
+    if path.exists():
+        return json.loads(path.read_text())
+    return {}
+
+
+def apply_media_ages(rows, media):
+    for r in rows:
+        if r.get("age") not in (None, ""):
+            continue
+        key = r.get("key") or norm_name(r.get("name") or "")
+        age = (media.get(key) or {}).get("age")
+        if age not in (None, ""):
+            r["age"] = age
+
+
+def face_src(r, media, depth=0):
+    key = r.get("key") or norm_name(r.get("name") or "")
+    img = (media.get(key) or {}).get("image") or "img/logo.jpg"
+    return asset(img, depth)
+
+
 def wordmark():
     return '<span class="word-ball">BALL</span> <span class="word-keep">KEEP</span>'
 
@@ -800,35 +823,50 @@ def _rank_th(label):
         cls = "c-val"
     elif label == "£":
         cls = "c-price"
+    elif label == "Age":
+        cls = "c-age"
     elif label not in ("BK", "PK", "Player", "Pos", "Team", "Club"):
         cls = "desk-only"
     attr = f' class="{cls}"' if cls else ""
     return f"<th{attr}>{esc(label)}</th>"
 
 
-def rank_table(rows, extra_headers=None, extra_cells=None, depth=0):
+def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, faces=False, show_age=False):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
-    head = "".join(_rank_th(h) for h in ["BK", "Player", "Pos", "Team"] + extra_headers)
+    media = media or {}
+    cols = ["BK", "Player", "Pos", "Team"]
+    if show_age:
+        cols.append("Age")
+    head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
         pos = r.get("pos") or ""
         team = r.get("team") or ""
+        age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
+        age_label = f"age {age_txt}" if age_txt else ""
+        age_bit = f" · {age_label}" if show_age and age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
-            f" · {esc(team)}</div>"
+            f" · {esc(team)}{esc(age_bit)}</div>"
         )
+        face = ""
+        if faces:
+            face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
+        age_td = f'<td class="c-age">{esc(age_label or "—")}</td>' if show_age else ""
+        stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{meta}</span>'
         body.append(
             f'<tr data-pos="{esc(pos)}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name">{player_anchor(r["name"], depth)}{meta}</td>'
+            f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
             f'<td class="c-team">{esc(team)}</td>'
-            f"{extra_cells(r)}"
+            f"{age_td}{extra_cells(r)}"
             "</tr>"
         )
+    cls = "rank-table faces" if faces else "rank-table"
     return (
-        f'<div class="table-wrap"><table class="rank-table">'
+        f'<div class="table-wrap"><table class="{cls}">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
     )
 
@@ -1656,6 +1694,10 @@ def main():
         board = board[:BOARD_N]
     ppr, std = redraft_lists()
     profiles = collect_profiles(keep, board, ppr, std)
+    media = load_player_media()
+    apply_media_ages(keep, media)
+    apply_media_ages(board, media)
+    apply_media_ages(profiles, media)
     (ROOT / "data" / "player_roster.json").write_text(json.dumps(profiles, indent=2))
 
     (ROOT / "data/the-keep.json").write_text(json.dumps({
@@ -1713,7 +1755,7 @@ def main():
       <h2>Keep the guys who still matter in 2029.</h2>
       <p class="note"><strong>Fantasy Football</strong> is a one-year contest: you draft, you stream, you chase weekly points. <strong>Dynasty Football</strong> is a roster you keep. Young quarterbacks, incoming rookies, and contract years all change the price. Superflex (a second QB slot) makes passers first-round assets instead of round-eight afterthoughts.</p>
       <p class="note"><strong>Fantasy Baseball</strong> is the same split. Redraft/roto is this summer's counting stats. <strong>Dynasty Baseball</strong> prices the next five years — peak age, service time, and whether a 22-year-old shortstop is still a shortstop in 2030. ESPN's current dynasty formula weights 2027–2030 at 80% of value.</p>
-      <p class="note">Ball Keep aggregates public expert boards (FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN Karabell, Draft Sharks, RotoWire, plus X ranks from Brown / Erickson / Fitzmaurice) into one number, then turns that rank into BK Value for the trade calculators. The Keep is 400 deep. Short expert lists still count — unranked is skipped, never 999. Baseball lives in <a href="bb/index.html">BaseBallKeep</a>. The Premier League lives in <a href="pl/index.html">PitchKeep</a> — purple, pitch green, and The Pitch top 400 on Sleeper BPL 2025 points.</p>
+      <p class="note">Ball Keep aggregates public expert boards (FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN Karabell, Draft Sharks, RotoWire, plus X ranks from Brown / Erickson / Fitzmaurice) into one number, then turns that rank into BK Value for the trade calculators. The Keep is 400 deep. Short expert lists still count — unranked is skipped, never 999. Baseball lives in <a href="bb/index.html">BaseBallKeep</a>. The Premier League lives in <a href="pl/index.html">PitchKeep</a> — purple, pitch green, The Premier hybrid 400, and The Pitch on Sleeper BPL 2025 points.</p>
     </section>
     {latest_html}
     <div class="grid-3" style="margin-top:16px">
@@ -1740,7 +1782,7 @@ def main():
     keep_body = f"""
     <p class="kicker">Keystone · Superflex Dynasty</p>
     <h1>The Keep</h1>
-    <p class="note">Top 400 for Superflex dynasty leagues, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — PFN, Dynasty Nerds, FantasyPros Superflex ECR, KeepTradeCut, Karabell, Draft Sharks, RotoWire, and the X tapes. BK Value is that rank on a decaying curve (12,000 at 1.01). Filter by position. Per-source ranks live in the source list at the bottom so the board stays readable.</p>
+    <p class="note">Top 400 for Superflex dynasty leagues, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — PFN, Dynasty Nerds, FantasyPros Superflex ECR, KeepTradeCut, Karabell, Draft Sharks, RotoWire, and the X tapes. Every row has a headshot and an age. BK Value is that rank on a decaying curve (12,000 at 1.01). Filter by position. Per-source ranks live in the source list at the bottom so the board stays readable.</p>
     {value_bars(keep, 12, "#c8102e", "Keep value graph")}
     <p class="note">Position</p>
     <div class="filters" id="keep-pos"><button type="button" class="active" data-pos="all">All</button>
@@ -1749,7 +1791,7 @@ def main():
       <button type="button" data-pos="WR">WR</button>
       <button type="button" data-pos="TE">TE</button>
     </div>
-    <div class="panel">{rank_table(keep, ["PFN", "DN", "FP", "KTC", "Avg", "# Boards", "BK Value"], keep_extra)}</div>
+    <div class="panel">{rank_table(keep, ["PFN", "DN", "FP", "KTC", "Avg", "# Boards", "BK Value"], keep_extra, media=media, faces=True, show_age=True)}</div>
     {sources_panel(KEEP_SOURCES)}
     """
     keep_js = """<script>
@@ -2034,7 +2076,7 @@ def main():
     print(
         f"Keep {len(keep)} Board {len(board)} NFL games {len(nfl)} MLB {len(mlb_games)} "
         f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
-        f"BB News {bb.get('n_news', 0)} Pitch {pl['n_pitch']} Catalog {cat.name}"
+        f"BB News {bb.get('n_news', 0)} Pitch {pl['n_pitch']} Premier {pl.get('n_premier', 0)} Catalog {cat.name}"
     )
 
 
@@ -2071,6 +2113,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
             "pos": p.get("pos") or "",
             "team": p.get("team") or "",
             "age": p.get("age") or "",
+            "full_name": p.get("full_name") or p.get("name") or "",
             "lists": p.get("lists") or {},
             "notes": p.get("notes") or [],
             "ranks": p.get("ranks") or {},
@@ -2157,6 +2200,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
     catalog["bb_news"] = bb_news
     pl = pl or {}
     catalog["pl_pitch"] = [slim_row(r, ("age", "group", "price", "sel", "pts", "sleeper_pts", "gls", "ast")) for r in pl.get("pitch") or []]
+    catalog["pl_premier"] = [slim_row(r, ("age", "group", "price", "sel", "pts", "sleeper_pts", "gls", "ast", "sleeper_rank", "consensus", "premier_score", "full_name")) for r in pl.get("premier") or []]
     catalog["pl_fwd"] = [slim_row(r, ("age", "group", "price")) for r in pl.get("fwd") or []]
     catalog["pl_mid"] = [slim_row(r, ("age", "group", "price")) for r in pl.get("mid") or []]
     catalog["pl_def"] = [slim_row(r, ("age", "group", "price")) for r in pl.get("def") or []]

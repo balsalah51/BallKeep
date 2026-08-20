@@ -1,10 +1,12 @@
 """PitchKeep ranking sources — August 20, 2026.
 
-The Pitch is now a Sleeper BPL 2025 points board. Default Sleeper soccer
+The Pitch is a Sleeper BPL 2025 points board. Default Sleeper soccer
 scoring (support.sleeper.com/en/articles/9702800-scoring-system) applied
 to 2025/26 Premier League counting stats from the official FPL dump.
-FPL price/ownership/ICT boards and the short expert tapes still sit on
-every player file. Unranked names are skipped in the mean — never 999.
+
+The Premier is the third PitchKeep list: 50% Sleeper BPL 2025 rank,
+50% consensus of every other board (FPL points, price, ownership, ICT,
+xGI, expert tapes). Unranked names are skipped in the mean — never 999.
 """
 from __future__ import annotations
 
@@ -216,6 +218,7 @@ def index_players(raw=None):
             "key": key,
             "id": e.get("id"),
             "name": full or web,
+            "full_name": legal or full or web,
             "web_name": web,
             "pos": POS.get(e.get("element_type"), ""),
             "team": team.get("short_name") or "",
@@ -356,7 +359,7 @@ HUB_PREMIUM = [
 
 
 PL_SOURCES = [
-    ("Sleeper BPL 2025", "https://support.sleeper.com/en/articles/9702800-scoring-system", "Default Sleeper soccer scoring on 2025/26 Premier League counting stats. This is The Pitch."),
+    ("Sleeper BPL 2025", "https://support.sleeper.com/en/articles/9702800-scoring-system", "Default Sleeper soccer scoring on 2025/26 Premier League counting stats. This is The Pitch, and half of The Premier."),
     ("FPL 2025/26 Points", "https://fantasy.premierleague.com/", "Official last-season total points, the long counting-stat board."),
     ("FPL Price Board", "https://fantasy.premierleague.com/", "2026/27 starting prices. Haaland £15.5m is the ceiling."),
     ("FPL GW1 Ownership", "https://fantasy.premierleague.com/", "Selected-by % into the Friday 18:30 BST deadline."),
@@ -474,6 +477,7 @@ def aggregate(sources, by_key, min_n=2):
         rows.append({
             "key": k,
             "name": info.get("name") or k.title(),
+            "full_name": info.get("full_name") or info.get("name") or k.title(),
             "web_name": info.get("web_name") or "",
             "pos": info.get("pos") or "",
             "team": info.get("team") or "",
@@ -543,6 +547,34 @@ def filter_pos(rows, pos):
     return out
 
 
+def build_premier(rows, cap=PITCH_N):
+    """Third PK list: 50% Sleeper BPL 2025, 50% consensus of every other board."""
+    scored = []
+    for r in rows:
+        ranks = dict(r.get("ranks") or {})
+        sleeper = ranks.get("Sleeper BPL 2025") or r.get("sleeper_rank")
+        if not sleeper:
+            continue
+        others = [v for k, v in ranks.items() if k != "Sleeper BPL 2025"]
+        consensus = (sum(others) / len(others)) if others else float(sleeper)
+        score = (float(sleeper) + consensus) / 2.0
+        rec = dict(r)
+        rec["sleeper_rank"] = int(sleeper)
+        rec["consensus"] = round(consensus, 2)
+        rec["premier_score"] = round(score, 2)
+        rec["n_consensus"] = len(others)
+        scored.append(rec)
+    scored.sort(key=lambda r: (r["premier_score"], r["sleeper_rank"], r["name"]))
+    premier = []
+    for i, r in enumerate(scored[:cap], 1):
+        rec = dict(r)
+        rec["bk"] = i
+        rec["premier"] = i
+        rec["value"] = bk_value(i)
+        premier.append(rec)
+    return premier
+
+
 def load_universe():
     players = index_players()
     sources, by_key = build_sources(players)
@@ -559,6 +591,7 @@ def load_universe():
         rec.update({
             "key": p["key"],
             "name": p.get("name"),
+            "full_name": p.get("full_name") or p.get("name"),
             "web_name": p.get("web_name") or "",
             "pos": p.get("pos") or "",
             "team": p.get("team") or "",
@@ -588,6 +621,12 @@ def load_universe():
     for i, r in enumerate(pitch, 1):
         r["bk"] = i
         r["value"] = bk_value(i)
+    premier = build_premier(rows, cap=PITCH_N)
+    prem_map = {r["key"]: r["bk"] for r in premier}
+    for r in pitch:
+        r["premier"] = prem_map.get(r["key"])
+    for r in rows:
+        r["premier"] = prem_map.get(r["key"])
     fwd = filter_pos(rows, "FWD")[:FWD_N]
     mid = filter_pos(rows, "MID")[:MID_N]
     defence = filter_pos(rows, "DEF")[:DEF_N]
@@ -604,6 +643,7 @@ def load_universe():
         "players": players,
         "by_key": by_key,
         "pitch": pitch,
+        "premier": premier,
         "fwd": fwd,
         "mid": mid,
         "def": defence,

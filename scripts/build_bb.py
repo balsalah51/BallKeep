@@ -230,16 +230,30 @@ def _rank_th(label):
     cls = ""
     if label == "BK Value":
         cls = "c-val"
+    elif label == "Age":
+        cls = "c-age"
     elif label not in ("BK", "Player", "Pos", "Team"):
         cls = "desk-only"
     attr = f' class="{cls}"' if cls else ""
     return f"<th{attr}>{esc(label)}</th>"
 
 
-def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix=""):
+def face_src(r, media, depth=1):
+    key = r.get("key") or ""
+    slug = slugify(r.get("name") or "")
+    m = (media or {}).get(key) or (media or {}).get(slug) or {}
+    img = m.get("image") or "img/bb-logo.jpg"
+    return "../" * depth + img
+
+
+def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", media=None, faces=False, show_age=False, depth=1):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
-    head = "".join(_rank_th(h) for h in ["BK", "Player", "Pos", "Team"] + extra_headers)
+    media = media or {}
+    cols = ["BK", "Player", "Pos", "Team"]
+    if show_age:
+        cols.append("Age")
+    head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
         pos = r.get("pos") or ""
@@ -247,21 +261,35 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix=""):
         team = r.get("team") or ""
         slug = slugify(r["name"])
         href = f"{player_prefix}players/{slug}.html"
+        age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
+        if show_age and not age_txt:
+            age_txt = str((media.get(r.get("key") or "") or {}).get("age") or "")
+        age_label = f"age {age_txt}" if age_txt else ""
+        age_bit = f" · {age_label}" if show_age and age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos0)}">{esc(pos)}</span>'
-            f" · {esc(team)}</div>"
+            f" · {esc(team)}{esc(age_bit)}</div>"
+        )
+        face = ""
+        if faces:
+            face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
+        age_td = f'<td class="c-age">{esc(age_label or "—")}</td>' if show_age else ""
+        stack = (
+            f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
+            f'<strong>{esc(r["name"])}</strong></a>{meta}</span>'
         )
         body.append(
             f'<tr data-pos="{esc(pos0)}" data-group="{esc(r.get("group") or "")}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name"><a class="player-link" href="{esc(href)}"><strong>{esc(r["name"])}</strong></a>{meta}</td>'
+            f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos0)}">{esc(pos)}</span></td>'
             f'<td class="c-team">{esc(team)}</td>'
-            f"{extra_cells(r)}"
+            f"{age_td}{extra_cells(r)}"
             "</tr>"
         )
+    cls = "rank-table faces" if faces else "rank-table"
     return (
-        f'<div class="table-wrap"><table class="rank-table">'
+        f'<div class="table-wrap"><table class="{cls}">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
     )
 
@@ -324,6 +352,173 @@ def load_bb_media():
     if not path.exists():
         return {}
     return json.loads(path.read_text())
+
+
+def load_bb_savant():
+    path = ROOT / "data/bb-savant.json"
+    if not path.exists():
+        return {"batters": {}, "pitchers": {}}
+    return json.loads(path.read_text())
+
+
+BAT_STARCAST = [
+    ("xwoba", "xwOBA"),
+    ("xba", "xBA"),
+    ("xslg", "xSLG"),
+    ("xiso", "xISO"),
+    ("xobp", "xOBP"),
+    ("brl", "Barrels"),
+    ("brl_percent", "Barrel %"),
+    ("exit_velocity", "EV"),
+    ("max_ev", "Max EV"),
+    ("hard_hit_percent", "Hard Hit %"),
+    ("k_percent", "K %"),
+    ("bb_percent", "BB %"),
+    ("whiff_percent", "Whiff %"),
+    ("chase_percent", "Chase %"),
+    ("sprint_speed", "Speed"),
+    ("arm_strength", "Arm"),
+    ("oaa", "OAA"),
+    ("bat_speed", "Bat Speed"),
+    ("squared_up_rate", "Squared Up"),
+    ("swing_length", "Swing Len"),
+]
+PIT_STARCAST = [
+    ("xera", "xERA"),
+    ("xwoba", "xwOBA"),
+    ("fb_velocity", "FB Velo"),
+    ("fb_spin", "FB Spin"),
+    ("curve_spin", "CU Spin"),
+    ("k_percent", "K %"),
+    ("bb_percent", "BB %"),
+    ("whiff_percent", "Whiff %"),
+    ("chase_percent", "Chase %"),
+    ("brl_percent", "Barrel %"),
+    ("hard_hit_percent", "Hard Hit %"),
+    ("exit_velocity", "EV"),
+    ("max_ev", "Max EV"),
+]
+
+
+def savant_color(pct: int) -> str:
+    p = max(0, min(100, int(pct))) / 100.0
+    if p < 0.5:
+        t = p * 2
+        r = int(200 + (236 - 200) * t)
+        g = int(16 + (236 - 16) * t)
+        b = int(46 + (236 - 46) * t)
+    else:
+        t = (p - 0.5) * 2
+        r = int(236 + (22 - 236) * t)
+        g = int(236 + (80 - 236) * t)
+        b = int(236 + (160 - 236) * t)
+    return f"#{r:02x}{g:02x}{b:02x}"
+
+
+def savant_player_url(name: str, mlb_id) -> str:
+    return f"https://baseballsavant.mlb.com/savant-player/{slugify(name)}-{int(mlb_id)}"
+
+
+def savant_roles(r, media) -> list[str]:
+    g = (r.get("group") or "").upper()
+    hit = bool((media.get("hit") or {}).get("g") or (media.get("hit_2025") or {}).get("g"))
+    pit = bool(
+        (media.get("pit") or {}).get("ip")
+        or (media.get("pit") or {}).get("g")
+        or (media.get("pit_2025") or {}).get("ip")
+    )
+    if g == "UT" or (hit and pit):
+        return ["batter", "pitcher"]
+    if g in ("SP", "RP"):
+        return ["pitcher"]
+    return ["batter"]
+
+
+def starcast_html(title: str, rec: dict, metrics) -> str:
+    rows = []
+    for key, label in metrics:
+        val = rec.get(key)
+        if val in (None, ""):
+            continue
+        try:
+            pct = int(val)
+        except (TypeError, ValueError):
+            continue
+        pct = max(0, min(100, pct))
+        color = savant_color(pct)
+        rows.append(
+            f'<div class="starcast-row">'
+            f'<span class="sc-lab">{esc(label)}</span>'
+            f'<div class="sc-track"><i class="sc-fill" style="width:{pct}%;background:{color}"></i></div>'
+            f'<span class="sc-pct">{pct}</span></div>'
+        )
+    if not rows:
+        return ""
+    year = rec.get("year") or ""
+    return (
+        f'<div class="starcast-pane">'
+        f'<h3>{esc(title)}{f" · {year}" if year else ""}</h3>'
+        f'{"".join(rows)}</div>'
+    )
+
+
+def savant_block(r, media, savant) -> str:
+    mlb_id = media.get("mlb_id")
+    if not mlb_id:
+        return ""
+    try:
+        mlb_id = int(mlb_id)
+    except (TypeError, ValueError):
+        return ""
+    href = savant_player_url(r["name"], mlb_id)
+    roles = savant_roles(r, media)
+    batters = (savant or {}).get("batters") or {}
+    pitchers = (savant or {}).get("pitchers") or {}
+    panes = []
+    if "batter" in roles:
+        panes.append(starcast_html("Batter", batters.get(str(mlb_id)) or {}, BAT_STARCAST))
+    if "pitcher" in roles:
+        panes.append(starcast_html("Pitcher", pitchers.get(str(mlb_id)) or {}, PIT_STARCAST))
+    panes = [p for p in panes if p]
+    starcast = f'<div class="starcast-grid">{"".join(panes)}</div>' if panes else (
+        '<p class="note">No 2026 Savant percentile sample yet. The spray and pitch charts below still load from Baseball Savant.</p>'
+    )
+    frames = []
+    if "batter" in roles:
+        spray = (
+            "https://baseballsavant.mlb.com/player-comparison"
+            f"?playerIds={mlb_id}&seasons=2026&ddlChartType=spray"
+        )
+        frames.append(
+            f'<div class="savant-chart">'
+            f"<h3>Hits spray chart</h3>"
+            f'<iframe class="savant-embed" title="{esc(r["name"])} spray chart" '
+            f'src="{esc(spray)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+            f'<p class="note"><a href="{esc(spray)}" target="_blank" rel="noopener">Open spray chart on Baseball Savant</a></p>'
+            f"</div>"
+        )
+    if "pitcher" in roles:
+        pitch = (
+            "https://baseballsavant.mlb.com/player-comparison"
+            f"?playerIds={mlb_id}&seasons=2026&ddlChartType=pitch"
+        )
+        frames.append(
+            f'<div class="savant-chart">'
+            f"<h3>Pitch chart</h3>"
+            f'<iframe class="savant-embed" title="{esc(r["name"])} pitch chart" '
+            f'src="{esc(pitch)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+            f'<p class="note"><a href="{esc(pitch)}" target="_blank" rel="noopener">Open pitch chart on Baseball Savant</a></p>'
+            f"</div>"
+        )
+    return f"""
+    <section class="panel savant-panel">
+      <p class="kicker">Baseball Savant</p>
+      <h3>Starcast · spray · pitch</h3>
+      <p class="note">Percentile ranks (Starcast) plus the official Savant spray chart for bats and pitch chart for arms. <a href="{esc(href)}" target="_blank" rel="noopener">Open the full Baseball Savant page</a>.</p>
+      {starcast}
+      {"".join(frames)}
+    </section>
+    """
 
 
 def nz(v, dash="—"):
@@ -638,6 +833,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     sv = {r["key"]: r for r in (saves or [])}
     svh_m = {r["key"]: r for r in (svh or [])}
     media_all = load_bb_media()
+    savant = load_bb_savant()
     cards = []
     urls = []
     files = []
@@ -691,6 +887,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     {season_box(media)}
     {list_cards(lists, r)}
     {grafs_html("The 2026 line", grafs, 2)}
+    {savant_block(r, media, savant)}
     {plusminus_html(plus, minus)}
     {rank_spread_graph(r.get("ranks") or {}, fill="#1f6b3a", kicker="Board graph")}
     {boards_table(r.get("ranks") or {})}
@@ -754,6 +951,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
             "pit": media.get("pit") or {},
             "hit_2025": media.get("hit_2025") or {},
             "pit_2025": media.get("pit_2025") or {},
+            "savant": savant_player_url(r["name"], media["mlb_id"]) if media.get("mlb_id") else "",
         })
     flt, js = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
     hub = f"""
@@ -1012,6 +1210,10 @@ def write_baseball_site():
     keep, lineup, pitchers = u["keep"], u["lineup"], u["pitchers"]
     saves, svh, redraft = u["saves"], u["svh"], u["redraft"]
     picks = [{"id": slugify(p["name"]), **p} for p in u["picks"]]
+    media = load_bb_media()
+    for r in keep:
+        if r.get("age") in (None, "") and media.get(r.get("key") or ""):
+            r["age"] = media[r["key"]].get("age") or ""
     roster = keep_as_roster(keep)
     stories = rematch_stories(load_news_stories("baseball"), build_player_index(roster))
     news_by_player = defaultdict(list)
@@ -1073,10 +1275,10 @@ def write_baseball_site():
     keep_body = f"""
     <p class="kicker">Keystone · Overall Dynasty</p>
     <h1>The Keep</h1>
-    <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — 23 boards, two of them 500 names long. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
+    <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — 23 boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
     {value_bars(keep, 12, "#1f6b3a", "Keep value graph")}
     {flt}
-    <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {sources_panel()}
     """
     write("bb/the-keep.html", bb_page("The Keep", "the-keep.html", keep_body, js))
@@ -1087,7 +1289,7 @@ def write_baseball_site():
     {banner("bb-lineup.jpg", "Bats in a dugout rack")}
     <p class="note">Every hitter we could pin to a dynasty board, re-ranked among bats only. Ohtani lives here as a DH. Pitchers have their own building.</p>
     {value_bars(lineup, 12, "#1f6b3a", "Lineup value graph")}
-    <div class="panel">{rank_table(lineup, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(lineup, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {sources_panel()}
     """
     write("bb/the-lineup.html", bb_page("The Lineup", "the-lineup.html", lu_body))
@@ -1098,7 +1300,7 @@ def write_baseball_site():
     {banner("bb-pitch.jpg", "Baseball in a pitcher's grip")}
     <p class="note">Top 150 overall dynasty pitchers. Starting pitchers plus the two-way unicorn. Relievers who crack the overall pitcher board sneak in; the full bullpen lives next door.</p>
     {value_bars(pitchers, 12, "#1f6b3a", "Pitcher value graph")}
-    <div class="panel">{rank_table(pitchers, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(pitchers, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {sources_panel()}
     """
     write("bb/pitchers.html", bb_page("BK's Pitchers", "pitchers.html", pit_body))

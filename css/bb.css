@@ -76,6 +76,14 @@ tr:hover td { background: rgba(31,107,58,0.05); }
 .pos.SP { background: #d6e4fb; }
 .pos.RP { background: #f7e6c8; }
 .pos.C { background: #f8d0d6; }
+img.face {
+  width: 28px; height: 28px; border-radius: 50%; object-fit: cover; object-position: top center;
+  border: 1px solid var(--navy); background: var(--navy); flex: 0 0 28px;
+  vertical-align: middle; margin-right: 8px;
+}
+.name-stack { min-width: 0; flex: 1; display: block; }
+table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
+.c-age { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
 .filters button {
   border: 1px solid var(--line); background: #fff; color: var(--ink);
@@ -169,6 +177,23 @@ table.boards tr.lo td { background: rgba(200,16,46,0.08); }
   background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px;
 }
 .fact small { display: block; color: var(--forest); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.savant-panel { margin-top: 18px; }
+.starcast-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin: 14px 0 8px; }
+.starcast-pane h3 { margin: 0 0 10px; font-size: 16px; color: var(--navy); }
+.starcast-row {
+  display: grid; grid-template-columns: 7.5rem minmax(0, 1fr) 2.4rem;
+  gap: 8px; align-items: center; margin: 0 0 6px;
+}
+.sc-lab { font-size: 12px; font-weight: 800; color: var(--muted); letter-spacing: 0.02em; }
+.sc-track { height: 14px; background: #e8eef4; border-radius: 999px; overflow: hidden; }
+.sc-fill { display: block; height: 100%; border-radius: 999px; }
+.sc-pct { font-variant-numeric: tabular-nums; font-weight: 800; font-size: 13px; text-align: right; color: var(--navy); }
+.savant-chart { margin-top: 18px; }
+.savant-chart h3 { margin: 0 0 8px; }
+.savant-embed {
+  display: block; width: 100%; height: 640px; border: 0;
+  border-radius: 14px; background: #0b1f3a; box-shadow: var(--shadow);
+}
 .fact strong { font-size: 16px; color: var(--navy); }
 .panel.season { margin: 12px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .panel.season table { font-variant-numeric: tabular-nums; font-size: 14px; }
@@ -199,13 +224,14 @@ table.boards tr.lo td { background: rgba(200,16,46,0.08); }
 @media (max-width: 860px) {
   header.site { flex-direction: column; align-items: flex-start; }
   nav { justify-content: flex-start; }
-  .grid, .grid-3, .plusminus, .player-hero, .trade-hits, .trade-board { grid-template-columns: 1fr; }
+  .grid, .grid-3, .plusminus, .player-hero, .trade-hits, .trade-board, .starcast-grid { grid-template-columns: 1fr; }
   .player-grid, .facts, .rank-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
   .hero-card { padding: 20px 16px; }
   .hero-card h1, .hero-card h2 { font-size: 26px; }
   .hero-card p { max-width: none; }
   .player-hero img { width: 100%; height: 220px; object-fit: contain; object-position: center bottom; }
+  .savant-embed { height: 520px; }
   .desk-only { display: none !important; }
   .table-wrap:has(table.rank-table) { overflow: visible; }
   table.rank-table thead { display: none; }
@@ -228,8 +254,11 @@ table.boards tr.lo td { background: rgba(200,16,46,0.08); }
   table.rank-table .c-name a, table.rank-table .c-name strong {
     display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
+  table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  table.rank-table.faces img.face { width: 24px; height: 24px; margin-right: 0; flex: 0 0 24px; }
+  table.rank-table.faces .c-name a { min-width: 0; }
   table.rank-table .row-meta { display: block; font-size: 13px; color: var(--muted); font-weight: 700; margin-top: 2px; }
-  table.rank-table .c-pos, table.rank-table .c-team { display: none !important; }
+  table.rank-table .c-pos, table.rank-table .c-team, table.rank-table .c-age { display: none !important; }
   table.rank-table .c-val {
     grid-column: 3; grid-row: 1 / span 2; align-self: center;
     text-align: right; white-space: nowrap; font-size: 14px;
