@@ -74,7 +74,10 @@ img.face {
 }
 .name-stack { min-width: 0; flex: 1; display: block; }
 table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
-.c-age { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
+.age-desc {
+  color: var(--muted); font-weight: 700; font-variant-numeric: tabular-nums;
+  white-space: nowrap; font-size: 13px; margin-left: 8px;
+}
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
 .filters button {
   border: 1px solid var(--line); background: #fff; color: var(--ink);

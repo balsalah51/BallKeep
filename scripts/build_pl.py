@@ -133,8 +133,6 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
     cols = ["PK", "Player", "Pos", "Club"]
-    if show_age:
-        cols.append("Age")
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
@@ -146,19 +144,18 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
         href = f"{player_prefix}players/{slug}.html"
         price_bit = f" · £{price}" if price not in (None, "") else ""
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
-        age_label = f"age {age_txt}" if age_txt else ""
-        age_bit = f" · {age_label}" if show_age and age_label else ""
+        age_label = f"age {age_txt}" if show_age and age_txt else ""
+        age_span = f'<span class="age-desc">{esc(age_label)}</span>' if age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
-            f" · {esc(team)}{esc(age_bit)}{esc(price_bit)}</div>"
+            f" · {esc(team)}{esc(price_bit)}</div>"
         )
         face = ""
         if faces:
             face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
-        age_td = f'<td class="c-age">{esc(age_label or "—")}</td>' if show_age else ""
         stack = (
             f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
-            f"<strong>{esc(label)}</strong></a>{meta}</span>"
+            f"<strong>{esc(label)}</strong></a>{age_span}{meta}</span>"
         )
         body.append(
             f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or pos)}">'
@@ -166,7 +163,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
             f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
             f'<td class="c-team">{esc(team)}</td>'
-            f"{age_td}{extra_cells(r)}</tr>"
+            f"{extra_cells(r)}</tr>"
         )
     cls = "rank-table faces" if faces else "rank-table"
     return (
@@ -770,7 +767,7 @@ def write_pitch_site():
     premier_body = f"""
     <p class="kicker">Flagship · Third PK List · {UPDATED}</p>
     <h2>The Premier</h2>
-    <p class="note">Top 400. <strong>50% Sleeper BPL 2025 rank</strong> (last season's counting stats on default Sleeper soccer scoring) and <strong>50% consensus of every other board</strong> — FPL points, price, GW1 ownership, ICT, xGI, EP, form, and the short expert tapes. Full legal names and ages sit on the row with the headshot. That is List 1 (the 24-board mash) and List 2 (The Pitch) averaged into one ranking, with five paragraphs on the file. BK Value uses this rank (12,000 at 1.01).</p>
+    <p class="note">Top 400. <strong>50% Sleeper BPL 2025 rank</strong> (last season's counting stats on default Sleeper soccer scoring) and <strong>50% consensus of every other board</strong> — FPL points, price, GW1 ownership, ICT, xGI, EP, form, and the short expert tapes. Full legal names sit on the row with the headshot, with age labeled next to the name. That is List 1 (the 24-board mash) and List 2 (The Pitch) averaged into one ranking, with five paragraphs on the file. BK Value uses this rank (12,000 at 1.01).</p>
     <section class="panel">
       <p class="kicker">How the hybrid works</p>
       <h3>Production gets a vote. So does the industry.</h3>
