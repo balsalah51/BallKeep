@@ -21,6 +21,7 @@ from extra_ranks import (  # noqa: E402
     ROTOWIRE_SF,
     as_ranks,
 )
+from news_algo import CATEGORY_LABEL, load_news_stories, news_when  # noqa: E402
 from player_copy import get_copy  # noqa: E402
 from recent_trades import enrich_deals  # noqa: E402
 from build_bb import write_baseball_site  # noqa: E402
@@ -481,6 +482,7 @@ def redraft_lists():
 NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
+    ("news.html", "News"),
     ("trade.html", "Trade"),
     ("recent-trades.html", "Deals"),
     ("redraft-ppr.html", "Redraft PPR"),
@@ -510,6 +512,8 @@ def nav_href(target: str, depth: int) -> str:
         return target
     if target.startswith("players/"):
         return target[len("players/") :]
+    if target.startswith("news/"):
+        return target[len("news/") :]
     return "../" + target
 
 
@@ -579,8 +583,10 @@ ROOKIE_SOURCES = [
 
 def page(title, path, body, extra_js="", depth=0):
     links = []
+    news_here = path == "news.html" or path.startswith("news/")
     for href, label in NAV:
-        cur = ' aria-current="page"' if href == path else ""
+        on = href == path or (href == "news.html" and news_here)
+        cur = ' aria-current="page"' if on else ""
         links.append(f'<a href="{nav_href(href, depth)}"{cur}>{esc(label)}</a>')
     return f"""<!doctype html>
 <html lang="en">
@@ -640,6 +646,168 @@ def write(path, html_doc):
     dest = ROOT / path.lstrip("/")
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(html_doc)
+
+
+def news_player_href(player: dict, depth: int = 0) -> str | None:
+    slug = player.get("slug") or PLAYER_PAGES.get(player.get("key") or "")
+    if not slug:
+        slug = PLAYER_PAGES.get(norm_name(player.get("name") or ""))
+    if not slug:
+        return None
+    return f"{'../' * depth}players/{slug}.html"
+
+
+def news_player_anchor(player: dict, depth: int = 0) -> str:
+    name = player.get("name") or player.get("key") or "Player"
+    href = news_player_href(player, depth)
+    if not href:
+        return f"<strong>{esc(name)}</strong>"
+    return f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
+
+
+def news_card(story: dict, depth: int = 0) -> str:
+    cat = story.get("category") or "wire"
+    label = CATEGORY_LABEL.get(cat, cat.title())
+    href = f"{'../' * depth}news/{esc(story['slug'])}.html"
+    players = " ".join(
+        f'<span class="chip">{esc(p.get("name") or "")}</span>'
+        for p in (story.get("players") or [])[:6]
+    )
+    nsrc = len(story.get("sources") or [])
+    kinds = {s.get("kind") for s in story.get("sources") or []}
+    bits = [f"{nsrc} source" + ("s" if nsrc != 1 else "")]
+    if "x" in kinds:
+        bits.append("X")
+    if "video" in kinds:
+        bits.append("video")
+    return (
+        f'<a class="news-item tile" href="{href}">'
+        f'<div class="news-meta"><span class="kind {esc(cat)}">{esc(label)}</span> '
+        f'{esc(news_when(story.get("updated") or story.get("published") or ""))} · {esc(" · ".join(bits))}</div>'
+        f'<h3>{esc(story.get("headline") or "Update")}</h3>'
+        f'<p>{esc(story.get("blurb") or "")}</p>'
+        f'<div class="news-players">{players}</div>'
+        f"</a>"
+    )
+
+
+def render_news_pages():
+    """Football BK News hub + story files. Baseball lives on BaseBallKeep."""
+    stories = load_news_stories("football")
+    (ROOT / "news").mkdir(parents=True, exist_ok=True)
+    keep = {f"{s['slug']}.html" for s in stories if s.get("slug")}
+    for old in (ROOT / "news").glob("*.html"):
+        if old.name not in keep:
+            old.unlink()
+
+    cards = "".join(news_card(s) for s in stories) or (
+        '<p class="note">The football wire is warming up. The hourly scrape will fill this desk.</p>'
+    )
+    chips = []
+    for k, lab in (
+        ("all", "All"),
+        ("injury", "Injuries"),
+        ("roster", "Roster"),
+        ("coach", "Coach"),
+        ("trade", "Trades"),
+        ("practice", "Practice"),
+        ("wire", "Wire"),
+    ):
+        cls = ' class="active"' if k == "all" else ""
+        chips.append(f'<button type="button" data-cat="{esc(k)}"{cls}>{esc(lab)}</button>')
+    filters = "".join(chips)
+    updated = stories[0].get("updated") if stories else ""
+    items_json = json.dumps([
+        {
+            "slug": s.get("slug"),
+            "cat": s.get("category") or "wire",
+            "html": news_card(s),
+        }
+        for s in stories
+    ]).replace("<", "\\u003c")
+    extra = f"""<script>
+    const NEWS = {items_json};
+    const box = document.getElementById('news-list');
+    function show(cat) {{
+      const rows = NEWS.filter(s => cat === 'all' || s.cat === cat);
+      box.innerHTML = rows.map(s => s.html).join('') || '<p class="note">No stories in this bucket yet.</p>';
+    }}
+    document.getElementById('news-filters').addEventListener('click', e => {{
+      const b = e.target.closest('button'); if (!b) return;
+      document.querySelectorAll('#news-filters button').forEach(x => x.classList.remove('active'));
+      b.classList.add('active'); show(b.dataset.cat);
+    }});
+    </script>"""
+    body = f"""
+    <p class="kicker">BK News · Football · Hourly wire</p>
+    <h2>BK News</h2>
+    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball BK News lives on <a href="bb/news.html">BaseBallKeep</a>.</p>
+    <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
+    <div class="filters" id="news-filters">{filters}</div>
+    <div class="news-list" id="news-list">{cards}</div>
+    """
+    write("news.html", page("BK News", "news.html", body, extra))
+
+    urls = ["https://ballkeep.com/news.html"]
+    for s in stories:
+        slug = s.get("slug")
+        if not slug:
+            continue
+        cat = s.get("category") or "wire"
+        label = CATEGORY_LABEL.get(cat, cat.title())
+        sources = s.get("sources") or []
+        groups = [("article", "Articles"), ("x", "X"), ("video", "Video")]
+        blocks = []
+        for kind, heading in groups:
+            rows = [src for src in sources if src.get("kind") == kind]
+            if not rows:
+                continue
+            lis = []
+            for src in rows:
+                pub = src.get("publisher") or ""
+                when = news_when(src.get("published") or "")
+                snip = src.get("snippet") or ""
+                lis.append(
+                    "<li class=\"source-row\">"
+                    f'<a href="{esc(src.get("url") or "#")}" rel="noopener noreferrer">{esc(src.get("title") or pub or "Source")}</a>'
+                    f'<span class="news-meta">{esc(pub)}{" · " + esc(when) if when else ""}</span>'
+                    f'{f"<p class=\"note\">{esc(snip)}</p>" if snip else ""}'
+                    "</li>"
+                )
+            blocks.append(f"<h3>{esc(heading)}</h3><ul class=\"source-list\">{''.join(lis)}</ul>")
+        source_html = "".join(blocks) or "<p class=\"note\">Sources attached on the next hourly pass.</p>"
+        people = s.get("players") or []
+        if people:
+            plist = "".join(
+                f'<a class="tile" href="{esc(news_player_href(p, 1) or "#")}"><h3>{esc(p.get("name") or "")}</h3>'
+                f'<p class="note">{esc(p.get("pos") or "")} {esc(p.get("team") or "")}</p></a>'
+                for p in people
+                if news_player_href(p, 1)
+            )
+            named = f'<p class="kicker" style="margin-top:22px">Players on this story</p><div class="grid-3">{plist}</div>'
+        else:
+            named = '<p class="note" style="margin-top:18px">No Ball Keep player page matched this cluster yet.</p>'
+        nsrc = len(sources)
+        story_body = f"""
+    <p class="kicker">BK News · {esc(label)}</p>
+    <p class="news-meta">{esc(news_when(s.get("updated") or s.get("published") or ""))} · {nsrc} source{"s" if nsrc != 1 else ""}</p>
+    <h2>{esc(s.get("headline") or "Update")}</h2>
+    <section class="panel analysis">
+      <p class="kicker">Aggregate</p>
+      <p>{esc(s.get("summary") or s.get("blurb") or "")}</p>
+    </section>
+    {named}
+    <section class="sources-box panel" style="margin-top:18px">
+      <p class="kicker">Tape</p>
+      <h3>Links back to the desks</h3>
+      {source_html}
+    </section>
+    <p class="note" style="margin-top:18px"><a href="../news.html">All BK News</a> · <a href="../players/index.html">Player pages</a></p>
+    """
+        write(f"news/{slug}.html", page(s.get("headline") or "BK News", f"news/{slug}.html", story_body, depth=1))
+        urls.append(f"https://ballkeep.com/news/{slug}.html")
+    return urls
+
 
 
 def collect_profiles(keep, board, ppr, std):
@@ -753,6 +921,12 @@ def render_player_pages(profiles):
         media = json.loads(media_path.read_text())
     out_dir = ROOT / "players"
     out_dir.mkdir(parents=True, exist_ok=True)
+    news_by_player = defaultdict(list)
+    for story in load_news_stories("football"):
+        for pl in story.get("players") or []:
+            key = pl.get("key") or norm_name(pl.get("name") or "")
+            if key:
+                news_by_player[key].append(story)
 
     cards = []
     missing_copy = []
@@ -836,6 +1010,20 @@ def render_player_pages(profiles):
                 + "</p>"
             )
 
+        news_hits = news_by_player.get(p["key"]) or []
+        news_block = ""
+        if news_hits:
+            lis = "".join(
+                f'<li><a href="../news/{esc(s["slug"])}.html">{esc(s.get("headline") or "Update")}</a> '
+                f'<span class="news-meta">{esc(CATEGORY_LABEL.get(s.get("category") or "", ""))} · '
+                f'{esc(news_when(s.get("updated") or s.get("published") or ""))}</span></li>'
+                for s in news_hits[:5] if s.get("slug")
+            )
+            news_block = (
+                '<p class="kicker" style="margin-top:22px">BK News</p>'
+                f'<ul class="source-list">{lis}</ul>'
+            )
+
         body = f"""
     <p class="kicker">Player File · {esc(p["pos"])} {esc(p["team"])}</p>
     <div class="player-hero">
@@ -856,8 +1044,9 @@ def render_player_pages(profiles):
       {analysis}
     </section>
     {video}
+    {news_block}
     {related}
-    <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../recent-trades.html?q={esc(p["name"])}">Recent deals</a> · <a href="../hot-n-cold.html">Hot 'n' Cold</a></p>
+    <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../recent-trades.html?q={esc(p["name"])}">Recent deals</a> · <a href="../hot-n-cold.html">Hot 'n' Cold</a> · <a href="../news.html">BK News</a></p>
     """
         write(f"players/{p['slug']}.html", page(p["name"], f"players/{p['slug']}.html", body, depth=1))
 
@@ -1171,6 +1360,7 @@ def main():
     # HOME
     tiles = [
         ("the-keep.html", "The Keep", "Daily Superflex dynasty top 300. Our keystone board."),
+        ("news.html", "BK News", "Hourly injury, roster, and coach tape. Click a story for the aggregate and the sources."),
         ("trade.html", "Trade Calculators", "Four calculators. Rank becomes BK Value. Add two sides."),
         ("recent-trades.html", "Recent Deals", "Type a name. See the Superflex packages he actually moved in."),
         ("redraft-ppr.html", "Redraft PPR", "2026 startup board for full-PPR redraft."),
@@ -1185,6 +1375,19 @@ def main():
         ("bb/index.html", "BaseBallKeep", "Navy diamond desk. Keep 300, Lineup, Pitchers, bullpen, redraft."),
         ("pl/index.html", "PitchKeep", "Premier League purple. The Pitch top 250, FPL files, tape."),
     ]
+    latest_news = load_news_stories("football")[:5]
+    latest_html = ""
+    if latest_news:
+        latest_html = (
+            '<section class="panel" style="margin-top:16px">'
+            '<p class="kicker">BK News · Football</p>'
+            "<h2>Latest on the wire.</h2>"
+            '<div class="news-list">'
+            + "".join(news_card(s) for s in latest_news)
+            + "</div>"
+            '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
+            "</section>"
+        )
     home_body = f"""
     <section class="hero" style="background-image:url('img/hero.jpg')">
       <div class="hero-card">
@@ -1200,6 +1403,7 @@ def main():
       <p class="note"><strong>Fantasy Baseball</strong> is the same split. Redraft/roto is this summer's counting stats. <strong>Dynasty Baseball</strong> prices the next five years — peak age, service time, and whether a 22-year-old shortstop is still a shortstop in 2030. ESPN's current dynasty formula weights 2027–2030 at 80% of value.</p>
       <p class="note">Ball Keep aggregates public expert boards (FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN Karabell, Draft Sharks, RotoWire, plus X ranks from Brown / Erickson / Fitzmaurice) into one number, then turns that rank into BK Value for the trade calculators. We do not pretend a podcast hot take is a 300-player sheet. Sources sit at the bottom of each board. Baseball lives in <a href="bb/index.html">BaseBallKeep</a>. The Premier League lives in <a href="pl/index.html">PitchKeep</a> — purple, pitch green, and The Pitch top 250.</p>
     </section>
+    {latest_html}
     <div class="grid-3" style="margin-top:16px">
       {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
     </div>
@@ -1451,9 +1655,11 @@ def main():
     write("discord.html", page("Discord", "discord.html", disc))
 
     player_urls = render_player_pages(profiles)
+    news_urls = render_news_pages()
     sitemap = [
         "https://ballkeep.com/",
         "https://ballkeep.com/the-keep.html",
+        "https://ballkeep.com/news.html",
         "https://ballkeep.com/trade.html",
         "https://ballkeep.com/recent-trades.html",
         "https://ballkeep.com/trade-superflex.html",
@@ -1468,7 +1674,7 @@ def main():
         "https://ballkeep.com/nfl-schedule.html",
         "https://ballkeep.com/mlb-schedule.html",
         "https://ballkeep.com/discord.html",
-    ] + player_urls
+    ] + news_urls[1:] + player_urls
     bb = write_baseball_site()
     sitemap.extend(bb.get("urls") or [])
     pl = write_pitch_site()
@@ -1483,7 +1689,8 @@ def main():
     cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl)
     print(
         f"Keep {len(keep)} Board {len(board)} NFL games {len(nfl)} MLB {len(mlb_games)} "
-        f"Players {len(profiles)} BB Keep {bb['n_keep']} Pitch {pl['n_pitch']} Catalog {cat.name}"
+        f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
+        f"BB News {bb.get('n_news', 0)} Pitch {pl['n_pitch']} Catalog {cat.name}"
     )
 
 
@@ -1537,6 +1744,22 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
             "sport": "football",
             "url": f"https://ballkeep.com/players/{p['slug']}.html",
         })
+    news_pack = []
+    for s in load_news_stories("football"):
+        news_pack.append({
+            "headline": s.get("headline"),
+            "slug": s.get("slug"),
+            "blurb": s.get("blurb"),
+            "summary": s.get("summary"),
+            "category": s.get("category"),
+            "updated": s.get("updated"),
+            "url": f"https://ballkeep.com/news/{s.get('slug')}.html",
+            "players": s.get("players") or [],
+            "sources": [
+                {"title": src.get("title"), "url": src.get("url"), "kind": src.get("kind"), "publisher": src.get("publisher")}
+                for src in (s.get("sources") or [])
+            ],
+        })
     catalog = {
         "updated": UPDATED,
         "site": "https://ballkeep.com",
@@ -1557,6 +1780,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
             for g in nfl
         ],
         "mlb": mlb_games,
+        "news": news_pack,
     }
     bb = bb or {}
     catalog["bb_keep"] = [slim_row(r, ("age", "group")) for r in bb.get("keep") or []]
@@ -1570,6 +1794,23 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
     catalog["bb_waivers_dynasty"] = bb.get("dynasty_waivers") or []
     catalog["bb_waivers_redraft"] = bb.get("redraft_waivers") or []
     catalog["bb_sources"] = bb.get("source_names") or []
+    bb_news = []
+    for s in bb.get("news") or []:
+        bb_news.append({
+            "headline": s.get("headline"),
+            "slug": s.get("slug"),
+            "blurb": s.get("blurb"),
+            "summary": s.get("summary"),
+            "category": s.get("category"),
+            "updated": s.get("updated"),
+            "url": f"https://ballkeep.com/bb/news/{s.get('slug')}.html",
+            "players": s.get("players") or [],
+            "sources": [
+                {"title": src.get("title"), "url": src.get("url"), "kind": src.get("kind"), "publisher": src.get("publisher")}
+                for src in (s.get("sources") or [])
+            ],
+        })
+    catalog["bb_news"] = bb_news
     pl = pl or {}
     catalog["pl_pitch"] = [slim_row(r, ("age", "group", "price", "sel", "pts")) for r in pl.get("pitch") or []]
     catalog["pl_fwd"] = [slim_row(r, ("age", "group", "price")) for r in pl.get("fwd") or []]

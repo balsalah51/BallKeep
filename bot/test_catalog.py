@@ -60,6 +60,7 @@ def main():
     assert len(cat.raw.get("bb_redraft") or []) == 300
     assert len(cat.raw.get("bb_waivers_dynasty") or []) == 15
     assert len(cat.raw.get("bb_waivers_redraft") or []) == 50
+    assert cat.raw.get("news"), "expected football BK News in the catalog"
     tbb = cat.trade("bbkeep", "Shohei Ohtani", "Junior Caminero")
     assert tbb["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
     assert tbb["total_a"] and tbb["total_b"]
