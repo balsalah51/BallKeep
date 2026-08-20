@@ -1006,7 +1006,7 @@ def main():
         ("players/index.html", "Player Pages", "Top-50 names from every board: plus/minus, tape, and a 2025 or college clip."),
         ("nfl-schedule.html", "NFL Schedules", "2026 week-by-week slate and all 32 team pages."),
         ("mlb-schedule.html", "MLB Schedules", "September stretch run, filterable by club."),
-        ("discord.html", "Discord", "The circular mark. Community room coming online."),
+        ("discord.html", "Discord", "The circular mark plus a bot that searches ranks, runs the calculator, drops tape, and can publish the whole site into a server."),
     ]
     home_body = f"""
     <section class="hero" style="background-image:url('img/hero.jpg')">
@@ -1229,9 +1229,24 @@ def main():
       <img src="img/discord.jpg" alt="Ball Keep circular Discord logo" />
       <p class="kicker">Community</p>
       <h2>Ball Keep on Discord</h2>
-      <p class="note">Red primary. White BK. Black ring. This is the mark for the server — ranks chat, trade block, and The Keep daily drop.</p>
-      <a class="cta" href="#">Invite drops with the first Keep refresh</a>
+      <p class="note">Red primary. White BK. Black ring. The bot is the desk in the server: every Keep rank, every player file, every highlight, and the trade calculator — searchable in Discord the same way they are on the site.</p>
+      <a class="cta" href="https://github.com/balsalah51/BallKeep/tree/main/bot">Run the Ball Keep bot</a>
     </div>
+    <section class="panel" style="margin-top:16px">
+      <p class="kicker">Slash Commands</p>
+      <h2>Talk to the desk.</h2>
+      <p class="note"><code>/player Josh Allen</code> pulls The Keep rank, BK Value, plus/minus, the 2025 clip, and the player page. <code>/trade</code> is the Superflex / 1QB / PPR / Standard calculator. <code>/video</code> drops the tape. <code>/quiz</code> hides a Keep rank behind a spoiler. <code>/publish</code> writes the whole site into Discord channels so native search works.</p>
+      <div class="grid" style="margin-top:14px">
+        <article class="tile"><h3>/player</h3><p>Full file: ranks, value, plus/minus, tape, link.</p></article>
+        <article class="tile"><h3>/trade</h3><p>Two sides. Same BK Value curve as the site.</p></article>
+        <article class="tile"><h3>/video</h3><p>2025 NFL or college highlight from the player page.</p></article>
+        <article class="tile"><h3>/keep-or-cut</h3><p>Theatrical buy/sell with Hot 'n' Cold and The Keep.</p></article>
+        <article class="tile"><h3>/top + /pos</h3><p>Leaderboards, or just the QBs / RBs / WRs / TEs.</p></article>
+        <article class="tile"><h3>/quiz + /hottake</h3><p>Guess a Keep rank. Draw a random buy or sell.</p></article>
+        <article class="tile"><h3>/start + /picks</h3><p>Redraft start/sit, plus every future-pick value.</p></article>
+        <article class="tile"><h3>/publish</h3><p>Admin: stamp Keep, Board, tape, NFL, MLB, and every player file into the server.</p></article>
+      </div>
+    </section>
     """
     write("discord.html", page("Discord", "discord.html", disc))
 
@@ -1260,7 +1275,82 @@ def main():
         + "</urlset>\n"
     )
 
-    print(f"Keep {len(keep)} Board {len(board)} NFL games {len(nfl)} MLB {len(mlb_games)} Players {len(profiles)}")
+    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games)
+    print(f"Keep {len(keep)} Board {len(board)} NFL games {len(nfl)} MLB {len(mlb_games)} Players {len(profiles)} Catalog {cat.name}")
+
+
+def slim_row(r, extra=()):
+    out = {
+        "name": r.get("name"),
+        "pos": r.get("pos") or "",
+        "team": r.get("team") or "",
+        "bk": r.get("bk"),
+        "avg": r.get("avg"),
+        "n": r.get("n"),
+        "value": r.get("value"),
+    }
+    for k in extra:
+        if k in r:
+            out[k] = r[k]
+    return out
+
+
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games):
+    """One JSON pack the Discord bot reads instead of scraping HTML."""
+    media = {}
+    media_path = ROOT / "data/player_media.json"
+    if media_path.exists():
+        media = json.loads(media_path.read_text())
+    files = []
+    for p in profiles:
+        copy = get_copy(p["key"])
+        med = media.get(p["key"], {})
+        files.append({
+            "key": p["key"],
+            "slug": p["slug"],
+            "name": p["name"],
+            "pos": p.get("pos") or "",
+            "team": p.get("team") or "",
+            "age": p.get("age") or "",
+            "lists": p.get("lists") or {},
+            "notes": p.get("notes") or [],
+            "ranks": p.get("ranks") or {},
+            "keep_avg": p.get("keep_avg"),
+            "keep_n": p.get("keep_n"),
+            "plus": copy.get("plus") or [],
+            "minus": copy.get("minus") or [],
+            "grafs": copy.get("grafs") or [],
+            "image": med.get("image") or "",
+            "youtube_id": med.get("youtube_id") or "",
+            "youtube_title": med.get("youtube_title") or "",
+            "youtube_channel": med.get("youtube_channel") or "",
+            "college": med.get("college") or "",
+            "is_rookie": bool(med.get("is_rookie")),
+            "url": f"https://ballkeep.com/players/{p['slug']}.html",
+        })
+    catalog = {
+        "updated": UPDATED,
+        "site": "https://ballkeep.com",
+        "algorithm": "value = round(12000 * exp(-0.0165 * (rank-1)) / rank**0.18). 1QB multiplies QB value by 0.38.",
+        "sources": [name for name, _url, _note in KEEP_SOURCES],
+        "keep": [slim_row(r, ("ranks", "age")) for r in keep],
+        "board": [slim_row(r) for r in board],
+        "ppr": [slim_row(r, ("yates", "fp", "karabell")) for r in ppr],
+        "standard": [slim_row(r) for r in std],
+        "rookies": [slim_row(r, ("dd", "fp", "pff", "blurb")) for r in rook_rows],
+        "hot": HOT,
+        "cold": COLD,
+        "picks": pick_assets(),
+        "players": files,
+        "nfl": [
+            {**g, "away_abbr": TEAMS.get(g["away"], ""), "home_abbr": TEAMS.get(g["home"], "")}
+            for g in nfl
+        ],
+        "mlb": mlb_games,
+    }
+    dest = ROOT / "data/discord-catalog.json"
+    dest.write_text(json.dumps(catalog, indent=2, default=str))
+    return dest
 
 
 if __name__ == "__main__":

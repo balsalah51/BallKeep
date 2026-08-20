@@ -12,7 +12,7 @@ Static site for [ballkeep.com](https://ballkeep.com), published from this reposi
 - **Player Pages** — every top-50 name from those lists, plus rookies and Hot/Cold: plus/minus, a few paragraphs, a headshot, and a 2025 NFL (or college) highlight
 - NFL 2026 schedules (all 32 teams)
 - MLB September stretch-run schedules
-- Discord mark
+- Discord mark **and Discord bot** (`bot/`) — slash commands for ranks, trade calculator, videos, plus `/publish` to write the whole site into a server
 
 ## BK Value
 `value = round(12000 * exp(-0.0165 * (rank - 1)) / rank**0.18)`
@@ -25,3 +25,6 @@ python3 scripts/build_site.py
 ```
 
 Rankings last aggregated August 20, 2026 from FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN (Eric Karabell Superflex + Flex, Field Yates), Draft Sharks, RotoWire, Dynasty Dealer, PFF, and X ranks from Derek Brown, Andrew Erickson, and Pat Fitzmaurice.
+
+## Discord bot
+The bot reads `data/discord-catalog.json` (emitted by the rebuild). Setup: [bot/README.md](bot/README.md).
