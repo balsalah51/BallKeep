@@ -95,7 +95,8 @@ def bb_page(title, path, body, extra_js="", depth=1):
     {body}
     <footer>
       © {date.today().year} BaseBallKeep · ballkeep.com/bb · Rankings aggregated {UPDATED}. Not affiliated with MLB.
-      <div><a class="sport-switch fb" href="{fb}">Ball Keep Football</a></div>
+      <div><a class="sport-switch fb" href="{fb}">Ball Keep Football</a>
+      <a class="sport-switch pl" href="{prefix}pl/index.html">PitchKeep</a></div>
     </footer>
   </div>
   {extra_js}

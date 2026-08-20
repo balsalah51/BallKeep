@@ -64,7 +64,26 @@ def main():
     assert tbb["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
     assert tbb["total_a"] and tbb["total_b"]
     assert not tbb["missing"], tbb["missing"]
-    print("ok", cat.updated, "players", len(cat.players), "keep", len(cat.raw["keep"]), "bb", len(bb))
+    pitch = cat.raw.get("pl_pitch") or []
+    assert len(pitch) == 250, f"pitch {len(pitch)}"
+    assert pitch[0]["name"] == "Bruno Fernandes"
+    assert pitch[1]["name"] == "Erling Haaland"
+    assert cat.one("haaland", sport="soccer")["name"] == "Erling Haaland"
+    assert cat.one("bruno", sport="soccer")["name"] == "Bruno Fernandes"
+    assert cat.one("saka", sport="soccer")["name"] == "Bukayo Saka"
+    assert cat.one("vvd", sport="soccer")["name"] == "Virgil van Dijk"
+    assert cat.one("declan rice", sport="soccer")["name"] == "Declan Rice"
+    assert cat.one("rice", sport="football")["name"] == "Rashee Rice"
+    assert len(cat.raw.get("pl_fwd") or []) >= 50
+    assert len(cat.raw.get("pl_mid") or []) == 120
+    assert len(cat.raw.get("pl_def") or []) == 100
+    assert len(cat.raw.get("pl_gkp") or []) >= 30
+    assert len(cat.raw.get("pl_players") or []) == 250
+    tpl = cat.trade("plpitch", "Bruno Fernandes", "Erling Haaland")
+    assert tpl["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
+    assert tpl["total_a"] and tpl["total_b"]
+    assert not tpl["missing"], tpl["missing"]
+    print("ok", cat.updated, "players", len(cat.players), "keep", len(cat.raw["keep"]), "bb", len(bb), "pitch", len(pitch))
     print("trade", t2["label"], t2["total_a"], "vs", t2["total_b"])
     print("norm jsn", norm("JSN"))
     print("picks", len(cat.raw["picks"]), "nfl", len(cat.raw["nfl"]), "mlb", len(cat.raw["mlb"]))

@@ -92,6 +92,7 @@ footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: cen
 .sport-switch.fb {
   background: #d6ebf7; color: #c8102e; border: 3px solid #c8102e;
 }
+.sport-switch.pl { background: #37003c; color: #00ff85; border: 3px solid #e8c547; }
 a.player-link { color: inherit; text-decoration: none; border-bottom: 1px dashed rgba(31,107,58,0.4); }
 a.player-link:hover { color: var(--forest); }
 .player-hero {
