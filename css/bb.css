@@ -96,6 +96,28 @@ footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: cen
 .sport-switch.pl { background: #37003c; color: #00ff85; border: 3px solid #e8c547; }
 a.player-link { color: inherit; text-decoration: none; border-bottom: 1px dashed rgba(31,107,58,0.4); }
 a.player-link:hover { color: var(--forest); }
+.news-list { display: grid; gap: 12px; }
+a.news-item { color: inherit; }
+a.news-item h3 { margin: 0 0 6px; color: var(--navy); }
+a.news-item:hover h3 { color: var(--forest); }
+.news-meta { color: var(--muted); font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+.news-players { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.kind {
+  display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
+  text-transform: uppercase; border-radius: 999px; padding: 2px 8px; background: #dce7d4;
+}
+.kind.injury { background: #f8d0d6; }
+.kind.roster { background: #d7f0d9; }
+.kind.coach { background: #d6e4fb; }
+.kind.trade { background: #f7e6c8; }
+.kind.practice { background: var(--cream); }
+.kind.x { background: var(--navy); color: var(--cream); }
+.kind.video { background: var(--stitch); color: #fff; }
+.source-list { list-style: none; margin: 0; padding: 0; }
+.source-row { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.source-row a { font-weight: 800; }
+.source-row .news-meta { display: block; margin: 4px 0 0; }
+.sources-box h3 { margin: 16px 0 8px; }
 .player-hero {
   display: grid; grid-template-columns: 220px 1fr; gap: 22px; align-items: center;
   background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 18px;

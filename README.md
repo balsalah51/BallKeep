@@ -13,6 +13,7 @@ Powder-blue football desk. Navy-and-cream **BaseBallKeep** through the footer bu
 - BK Hot 'n' Cold
 - The Board (long proprietary aggregate)
 - **Player Pages** — every Keep 300 name, plus redraft top 50, rookies, and Hot/Cold: plus/minus, a few paragraphs, a headshot, and a 2025 NFL (or college) highlight when we have the tape
+- **BK News** — football injuries, roster moves, and coach reports scraped hourly from league RSS, Google News, X (`site:x.com`), and YouTube, then clustered into short stories with an aggregate summary and source links
 - NFL 2026 schedules (all 32 teams)
 - MLB September stretch-run schedules
 - Discord mark **and Discord bot** (`bot/`)
@@ -21,6 +22,7 @@ Powder-blue football desk. Navy-and-cream **BaseBallKeep** through the footer bu
 Separate sport, separate palette. Footer crossover only — baseball does not live in the football nav.
 
 - **The Keep** — overall dynasty top 300, 23-board aggregate (RotoGraphs + The Dynasty Guru long boards, plus compiled expert slices)
+- **BK News** — live at `bb/news.html`. Same hourly pipeline as football: IL, roster, DFA/call-up, and manager tape, clustered with links back to Keep player files
 - **The Lineup** — dynasty hitters only
 - **BK's Pitchers** — top 100 overall dynasty pitchers
 - **BK's Bullpen** — top 100 relievers for **saves**, and a second page for **saves + holds**
@@ -47,6 +49,25 @@ Rank 1 is 12,000. 1QB Dynasty uses the same Superflex ranks but taxes quarterbac
 ```bash
 python3 scripts/build_site.py
 ```
+
+## BK News
+Football news is live at `news.html`. Baseball news is live at `bb/news.html`. Each hour GitHub Actions runs `scripts/news_scrape.py`:
+
+1. Pull a small set of league RSS wires (ESPN, CBS, Yahoo, PFT, FantasyPros, RotoWire for football; ESPN/CBS/Yahoo/RotoWire for MLB).
+2. Run a handful of Google News topic queries (injury, roster, coach/manager, practice, trade).
+3. Pull X and video via Google News `site:x.com` / `site:youtube.com` — no X login and no HTML scrape of x.com.
+4. Rotate eight Keep player-name queries so the full desk is covered across a day without hammering search.
+5. Hash every URL, skip ones already in `data/news/state.json`, cluster the rest, and merge into `data/news/football.json` or `data/news/baseball.json`.
+6. Rebuild the static site and commit if anything changed.
+
+```bash
+python3 scripts/test_news.py
+python3 scripts/news_scrape.py --sport football
+python3 scripts/news_scrape.py --sport baseball
+python3 scripts/build_site.py
+```
+
+Scheduled runs need **Settings → Actions → General → Workflow permissions → Read and write** so the hourly job can push refreshed pages to the GitHub Pages branch.
 
 Football rankings last aggregated August 20, 2026 from FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN (Eric Karabell Superflex + Flex, Field Yates), Draft Sharks, RotoWire, Dynasty Dealer, PFF, and X ranks from Derek Brown, Andrew Erickson, and Pat Fitzmaurice.
 
