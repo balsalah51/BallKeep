@@ -50,6 +50,16 @@ def test_categorize():
     assert categorize("Red Sox DFA a reliever and called up a prospect") == "roster"
 
 
+def test_baseball_drops_nfl_leaks():
+    from news_algo import is_publishable
+    assert not is_publishable({
+        "sport": "baseball",
+        "headline": "Vita Vea, Buccaneers agree to 1-year, $30 million deal",
+        "blurb": "Tampa Bay locked up its nose tackle",
+        "sources": [{"kind": "article"}],
+    })
+
+
 def test_match_full_name_not_ambiguous_brown():
     idx = build_player_index(ROSTER)
     hits = match_players("Ja'Marr Chase sat out with a hamstring", idx)

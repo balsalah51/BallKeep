@@ -177,6 +177,12 @@ CATEGORY_LABEL = {
     "wire": "Wire",
 }
 
+NFL_LEAK_RE = re.compile(
+    r"\b(nfl|super bowl|buccaneers|patriots|commanders|steelers|cowboys|"
+    r"packers|chiefs|ravens|eagles|49ers|preseason football|touchdown)\b",
+    re.I,
+)
+
 
 def load_news_stories(sport: str, root: Path | None = None) -> list:
     path = (root or ROOT) / "data" / "news" / f"{sport}.json"
@@ -200,7 +206,7 @@ def load_news_stories(sport: str, root: Path | None = None) -> list:
         blob = f"{s.get('headline')} {s.get('blurb')}".lower()
         if sport == "football" and re.search(r"\b(mlb|baseball)\b", blob) and not re.search(r"\bnfl\b", blob):
             continue
-        if sport == "baseball" and "nfl" in blob and "mlb" not in blob:
+        if sport == "baseball" and ("nfl" in blob and "mlb" not in blob or NFL_LEAK_RE.search(blob)):
             continue
         cleaned.append(s)
     return cleaned
@@ -600,7 +606,7 @@ def is_publishable(story: dict) -> bool:
         if re.search(r"\b(mlb|baseball)\b", blob) and not re.search(r"\bnfl\b", blob):
             return False
     if story.get("sport") == "baseball":
-        if "nfl" in blob and "mlb" not in blob:
+        if ("nfl" in blob and "mlb" not in blob) or NFL_LEAK_RE.search(blob):
             return False
     if "article" in kinds or "video" in kinds:
         return True
