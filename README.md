@@ -8,6 +8,7 @@ Static site for [ballkeep.com](https://ballkeep.com), published from this reposi
 - 2026 drafted rookies
 - BK Hot 'n' Cold
 - The Board (long proprietary aggregate)
+- **Player pages** — every top-50 name from those lists, plus rookies and Hot/Cold: plus/minus, a few paragraphs, a headshot, and a 2025 NFL (or college) highlight
 - NFL 2026 schedules (all 32 teams)
 - MLB September stretch-run schedules
 - Discord mark
