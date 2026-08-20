@@ -284,6 +284,10 @@ class Catalog:
             "the pitch": "pl_pitch",
             "pl_pitch": "pl_pitch",
             "plpitch": "pl_pitch",
+            "premier": "pl_premier",
+            "the premier": "pl_premier",
+            "pl_premier": "pl_premier",
+            "plpremier": "pl_premier",
             "plfwd": "pl_fwd",
             "attack": "pl_fwd",
             "pl_fwd": "pl_fwd",
@@ -377,7 +381,7 @@ class Catalog:
                         if len(out) >= limit:
                             return out
         if sport in (None, "soccer", "premier", "pl", "fpl"):
-            for board_key in ("pl_pitch", "pl_fwd", "pl_mid", "pl_def", "pl_gkp"):
+            for board_key in ("pl_premier", "pl_pitch", "pl_fwd", "pl_mid", "pl_def", "pl_gkp"):
                 for r in self.raw.get(board_key) or []:
                     name = norm(r.get("name", ""))
                     if not name:
@@ -420,7 +424,8 @@ class Catalog:
             "bbsvh": "bb_svh",
         }
         pl_mode_keys = {
-            "plpitch", "pitch250", "thepitch", "plfwd", "plmid", "pldef", "plgkp",
+            "plpitch", "pitch250", "thepitch", "plpremier", "premier400", "thepremier",
+            "plfwd", "plmid", "pldef", "plgkp",
         }
         if mode in bb_modes:
             pick_pool = self.raw.get("bb_picks")
@@ -441,6 +446,9 @@ class Catalog:
             "plpitch": "pl_pitch",
             "pitch250": "pl_pitch",
             "thepitch": "pl_pitch",
+            "plpremier": "pl_premier",
+            "premier400": "pl_premier",
+            "thepremier": "pl_premier",
             "plfwd": "pl_fwd",
             "plmid": "pl_mid",
             "pldef": "pl_def",
