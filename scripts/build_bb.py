@@ -118,7 +118,8 @@ def bb_page(title, path, body, extra_js="", depth=1):
     {body}
     <footer>
       © {date.today().year} BaseBallKeep · ballkeep.com/bb · Rankings aggregated {UPDATED}. Not affiliated with MLB.
-      <div><a class="sport-switch fb" href="{fb}">Ball Keep Football</a></div>
+      <div><a class="sport-switch fb" href="{fb}">Ball Keep Football</a>
+      <a class="sport-switch pl" href="{prefix}pl/index.html">PitchKeep</a></div>
     </footer>
   </div>
   {extra_js}
@@ -193,13 +194,285 @@ def banner(src, alt=""):
     return f'<p class="bb-banner"><img src="../img/{esc(src)}" alt="{esc(alt)}" /></p>'
 
 
-def bb_grafs(r, lists=None):
+def load_bb_media():
+    path = ROOT / "data/bb-media.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text())
+
+
+def nz(v, dash="—"):
+    if v in (None, "", []):
+        return dash
+    return v
+
+
+def stat_pills(media, group):
+    pills = []
+    hit = (media or {}).get("hit") or {}
+    pit = (media or {}).get("pit") or {}
+    if group in ("HIT", "UT") and hit.get("g"):
+        pills.extend([
+            ("AVG", hit.get("avg")),
+            ("HR", hit.get("hr")),
+            ("SB", hit.get("sb")),
+            ("OPS", hit.get("ops")),
+            ("R", hit.get("r")),
+            ("RBI", hit.get("rbi")),
+            ("G", hit.get("g")),
+            ("BB", hit.get("bb")),
+        ])
+    if group in ("SP", "RP", "UT") and (pit.get("g") or pit.get("ip")):
+        pills.extend([
+            ("ERA", pit.get("era")),
+            ("WHIP", pit.get("whip")),
+            ("K", pit.get("so")),
+            ("IP", pit.get("ip")),
+            ("W", pit.get("w")),
+            ("SV", pit.get("sv")),
+            ("HLD", pit.get("hld")),
+            ("K/9", pit.get("k9")),
+        ])
+    pills = [(k, v) for k, v in pills if v not in (None, "", 0, "0", ".000") or k in ("AVG", "ERA", "SV")]
+    if not pills:
+        return ""
+    cells = "".join(
+        f'<div class="stat-pill"><small>{esc(k)}</small><strong>{esc(v)}</strong></div>'
+        for k, v in pills[:8]
+    )
+    return f'<div class="stat-strip">{cells}</div>'
+
+
+def bio_line(media, r):
+    bits = []
+    if media.get("number"):
+        bits.append(f"#{media['number']}")
+    pos = r.get("pos") or media.get("pos") or ""
+    team = r.get("team") or media.get("team") or ""
+    if pos:
+        bits.append(pos)
+    if team or media.get("team_name"):
+        bits.append(media.get("team_name") or team)
+    age = r.get("age") or media.get("age") or ""
+    if age:
+        bits.append(f"age {age}")
+    if media.get("bats") or media.get("throws"):
+        bits.append(f"B/T {media.get('bats') or '—'}{media.get('throws') or ''}")
+    if media.get("height"):
+        ht = media["height"]
+        if media.get("weight"):
+            ht += f" / {media['weight']} lbs"
+        bits.append(ht)
+    if media.get("debut"):
+        bits.append(f"MLB debut {media['debut'][:4]}")
+    elif media.get("draft"):
+        bits.append(f"Draft {media['draft']}")
+    home = ", ".join(x for x in (media.get("birth_city"), media.get("birth_country")) if x)
+    if home:
+        bits.append(home)
+    return " · ".join(str(b) for b in bits)
+
+
+def facts_table(media, r):
+    media = media or {}
+    items = []
+    if media.get("number"):
+        items.append(("No.", f"#{media['number']}"))
+    pos = r.get("pos") or media.get("pos") or ""
+    if pos:
+        items.append(("Pos", pos))
+    team = media.get("team_name") or r.get("team") or media.get("team") or ""
+    if team:
+        items.append(("Team", team))
+    age = r.get("age") or media.get("age") or ""
+    if age:
+        items.append(("Age", age))
+    if media.get("bats") or media.get("throws"):
+        items.append(("B / T", f"{media.get('bats') or '—'} / {media.get('throws') or '—'}"))
+    if media.get("height"):
+        items.append(("Height", media["height"]))
+    if media.get("weight"):
+        items.append(("Weight", f"{media['weight']} lbs"))
+    if media.get("birth"):
+        items.append(("Born", media["birth"]))
+    home = ", ".join(x for x in (media.get("birth_city"), media.get("birth_country")) if x)
+    if home:
+        items.append(("From", home))
+    if media.get("debut"):
+        items.append(("MLB debut", media["debut"][:10]))
+    if media.get("draft"):
+        items.append(("Draft", media["draft"]))
+    if media.get("mlb_id"):
+        items.append(("MLB ID", media["mlb_id"]))
+    if not items:
+        return ""
+    cells = "".join(
+        f'<div class="fact"><small>{esc(k)}</small><strong>{esc(v)}</strong></div>'
+        for k, v in items
+    )
+    return f'<div class="facts">{cells}</div>'
+
+
+def _hit_row(year, st):
+    if not st or not st.get("g"):
+        return ""
+    label = year
+    if st.get("level") and st.get("level") != "MLB":
+        label = f"{year} {st['level']}"
+    cells = [
+        label, st.get("g"), st.get("ab"), st.get("r"), st.get("h"), st.get("2b"),
+        st.get("hr"), st.get("rbi"), st.get("sb"), st.get("bb"), st.get("so"),
+        st.get("avg"), st.get("obp"), st.get("slg"), st.get("ops"),
+    ]
+    return "<tr>" + "".join(f"<td>{esc(nz(c))}</td>" for c in cells) + "</tr>"
+
+
+def _pit_row(year, st):
+    if not st or not (st.get("g") or st.get("ip")):
+        return ""
+    label = year
+    if st.get("level") and st.get("level") != "MLB":
+        label = f"{year} {st['level']}"
+    cells = [
+        label, st.get("g"), st.get("gs"), st.get("w"), st.get("l"), st.get("sv"),
+        st.get("hld"), st.get("ip"), st.get("so"), st.get("bb"), st.get("hr"),
+        st.get("era"), st.get("whip"), st.get("k9"),
+    ]
+    return "<tr>" + "".join(f"<td>{esc(nz(c))}</td>" for c in cells) + "</tr>"
+
+
+def season_box(media):
+    media = media or {}
+    hit_rows = _hit_row("2026", media.get("hit")) + _hit_row("2025", media.get("hit_2025"))
+    pit_rows = _pit_row("2026", media.get("pit")) + _pit_row("2025", media.get("pit_2025"))
+    parts = []
+    if hit_rows:
+        parts.append(
+            '<div class="panel season">'
+            '<p class="kicker">Hitting</p>'
+            "<table><thead><tr>"
+            "<th>Year</th><th>G</th><th>AB</th><th>R</th><th>H</th><th>2B</th>"
+            "<th>HR</th><th>RBI</th><th>SB</th><th>BB</th><th>SO</th>"
+            "<th>AVG</th><th>OBP</th><th>SLG</th><th>OPS</th>"
+            "</tr></thead><tbody>"
+            f"{hit_rows}</tbody></table></div>"
+        )
+    if pit_rows:
+        parts.append(
+            '<div class="panel season">'
+            '<p class="kicker">Pitching</p>'
+            "<table><thead><tr>"
+            "<th>Year</th><th>G</th><th>GS</th><th>W</th><th>L</th><th>SV</th>"
+            "<th>HLD</th><th>IP</th><th>K</th><th>BB</th><th>HR</th>"
+            "<th>ERA</th><th>WHIP</th><th>K/9</th>"
+            "</tr></thead><tbody>"
+            f"{pit_rows}</tbody></table></div>"
+        )
+    if not parts:
+        return (
+            '<p class="note">No MLB box score yet — prospect file. '
+            "The Keep rank is the projection, not a 2026 line.</p>"
+        )
+    return "".join(parts)
+
+
+def list_cards(lists, r):
+    items = [
+        ("The Keep", lists.get("BB Keep"), r.get("value")),
+        ("The Lineup", lists.get("The Lineup"), None),
+        ("BK's Pitchers", lists.get("BK Pitchers"), None),
+        ("Redraft", lists.get("BB Redraft"), None),
+        ("Saves", lists.get("Saves"), None),
+        ("SV+H", lists.get("SVH"), None),
+    ]
+    cards = []
+    for label, rank, val in items:
+        if not rank:
+            continue
+        value = val if val else bk_value(rank)
+        cards.append(
+            f'<div class="rank-card"><small>{esc(label)}</small>'
+            f"<strong>#{rank}</strong><span>BK {int(value):,}</span></div>"
+        )
+    return f'<div class="rank-grid">{"".join(cards)}</div>' if cards else ""
+
+
+def boards_table(ranks):
+    if not ranks:
+        return ""
+    rows = sorted(ranks.items(), key=lambda kv: kv[1])
+    vals = [v for _s, v in rows]
+    lo, hi = min(vals), max(vals)
+    body = []
+    for src, rk in rows:
+        cls = "hi" if rk == lo else ("lo" if rk == hi and hi != lo else "")
+        body.append(f'<tr class="{cls}"><td>{esc(src)}</td><td class="rk">{rk}</td></tr>')
+    return (
+        '<section class="panel">'
+        '<p class="kicker">Every Board</p>'
+        f"<h3>Spread {lo}–{hi} · {len(rows)} sources</h3>"
+        f'<table class="boards"><thead><tr><th>Source</th><th>Rank</th></tr></thead>'
+        f"<tbody>{''.join(body)}</tbody></table></section>"
+    )
+
+
+def neighbors(keep, idx):
+    window = keep[max(0, idx - 2) : idx] + keep[idx + 1 : idx + 3]
+    if not window:
+        return ""
+    links = " · ".join(
+        f'<a class="player-link" href="{slugify(p["name"])}.html">{esc(p["name"])}</a> '
+        f'(#{p["bk"]})'
+        for p in window
+    )
+    return f'<p class="note" style="margin-top:18px"><strong>On The Keep nearby</strong> — {links}</p>'
+
+
+def same_pos(keep, r, limit=6):
+    pos = (r.get("pos") or "").split("/")[0]
+    others = [p for p in keep if p["key"] != r["key"] and (p.get("pos") or "").split("/")[0] == pos][:limit]
+    if not others:
+        return ""
+    links = " · ".join(
+        f'<a class="player-link" href="{slugify(p["name"])}.html">{esc(p["name"])}</a> #{p["bk"]}'
+        for p in others
+    )
+    return f'<p class="note"><strong>Same position on the 300</strong> — {links}</p>'
+
+
+def waiver_note(name, dynasty, redraft):
+    bits = []
+    for w in dynasty:
+        if w["name"].lower() == name.lower() or name.lower() in w["name"].lower():
+            bits.append(f"Dynasty Wire P{w['pri']}: {w['why']}")
+    for w in redraft:
+        if w["name"].lower() == name.lower() or name.lower() in w["name"].lower():
+            bits.append(f"Redraft Wire P{w['pri']}: {w['why']}")
+    if not bits:
+        return ""
+    return (
+        '<section class="panel">'
+        '<p class="kicker">On the Wire</p>'
+        + "".join(f"<p>{esc(b)}</p>" for b in bits)
+        + "</section>"
+    )
+
+
+def bb_grafs(r, lists=None, media=None):
     lists = lists or {}
-    name, pos, team = r["name"], r.get("pos") or "", r.get("team") or ""
+    media = media or {}
+    name, pos, team = r["name"], r.get("pos") or "", r.get("team") or media.get("team") or ""
     keep = r.get("bk")
     n = r.get("n") or 0
-    age = r.get("age") or ""
+    age = r.get("age") or media.get("age") or ""
     g = r.get("group") or ""
+    hit = media.get("hit") or {}
+    pit = media.get("pit") or {}
+    ranks = r.get("ranks") or {}
+    try:
+        age_n = int(age) if age not in ("", None) else None
+    except (TypeError, ValueError):
+        age_n = None
     plus, minus = [], []
     if keep and keep <= 15:
         plus.append(f"Keep #{keep} — first-round dynasty capital on a 23-board mix.")
@@ -207,51 +480,100 @@ def bb_grafs(r, lists=None):
         plus.append(f"Keep #{keep} — still a building-block name on the 300.")
     elif keep and keep <= 150:
         plus.append(f"Keep #{keep} on the 300. Tradable, not a 1.01.")
-    if keep and keep <= 40:
+    if keep and keep <= 40 and n:
         plus.append(f"Average {r.get('avg')} across {n} boards.")
     if lists.get("The Lineup") and lists["The Lineup"] <= 40:
         plus.append(f"Lineup #{lists['The Lineup']} among dynasty bats.")
     if lists.get("BK Pitchers") and lists["BK Pitchers"] <= 25:
         plus.append(f"BK's Pitchers #{lists['BK Pitchers']} — ace-room capital.")
-    if lists.get("BB Redraft") and lists["BB Redraft"] + 15 < (keep or 999):
+    if lists.get("BB Redraft") and keep and lists["BB Redraft"] + 15 < keep:
         plus.append(f"Redraft #{lists['BB Redraft']} — helping this month more than the dynasty slot says.")
-    if age and age <= 24:
-        plus.append(f"Age {age} — still climbing the curve.")
-    if age and age >= 33:
-        minus.append(f"Age {age} is a dynasty tax even when 2026 is loud.")
+    if lists.get("BB Redraft") and keep and lists["BB Redraft"] > keep + 25:
+        minus.append(f"Redraft #{lists['BB Redraft']} is colder than Keep #{keep} — this is a future, not a September stream.")
+    if age_n and age_n <= 24:
+        plus.append(f"Age {age_n} — still climbing the curve.")
+    if age_n and age_n >= 33:
+        minus.append(f"Age {age_n} is a dynasty tax even when 2026 is loud.")
     if g == "RP":
         minus.append("Reliever volatility: the ninth can vanish in a week.")
+        if lists.get("Saves"):
+            plus.append(f"Saves board #{lists['Saves']}.")
+        if lists.get("SVH"):
+            plus.append(f"SV+H board #{lists['SVH']}.")
     if g == "SP" and keep and keep <= 30:
         plus.append("Ace-tier innings. Pitcher injuries are the tax, not the ranking.")
     if n >= 8:
         plus.append(f"On {n} boards — not a one-list darling.")
+    if ranks:
+        vals = list(ranks.values())
+        spread = max(vals) - min(vals)
+        if spread >= 40:
+            minus.append(f"Board spread is {spread} ranks. You are betting with one camp, not a unanimous tape.")
+        elif spread <= 8 and n >= 6:
+            plus.append(f"Tight tape — the boards only disagree by {spread} spots.")
+    if hit.get("hr") and int(hit.get("hr") or 0) >= 25:
+        plus.append(f"{hit['hr']} homers in 2026. The counting stats match the rank.")
+    if hit.get("sb") and int(hit.get("sb") or 0) >= 25:
+        plus.append(f"{hit['sb']} steals — category juice, not just a pretty OPS.")
+    if pit.get("era") and g in ("SP", "UT"):
+        try:
+            era = float(pit["era"])
+            if era <= 3.20:
+                plus.append(f"{pit['era']} ERA in {pit.get('ip') or '?'} IP. The arm is doing the job this year.")
+            elif era >= 4.50:
+                minus.append(f"{pit['era']} ERA is the 2026 tax. Dynasty can wait; redraft has to live with it.")
+        except (TypeError, ValueError):
+            pass
+    if not media.get("mlb_id"):
+        minus.append("No 2026 MLB line yet — prospect file. The rank is the projection, not the box score.")
+        plus.append("The long boards already stuffed him. That is how Keep names get made.")
     if keep and keep >= 200:
         minus.append(f"Keep #{keep} is the edge of the 300. Deep-league / taxi-squad more than a foundation chip.")
     if not plus:
         plus.append(f"{pos} {team} sits on The Keep at #{keep}.")
     if not minus:
         minus.append("The rank is the comment until the next IL stint.")
+
     lineup_bit = f" Lineup #{lists['The Lineup']}." if lists.get("The Lineup") else ""
     pit_bit = f" BK's Pitchers #{lists['BK Pitchers']}." if lists.get("BK Pitchers") else ""
     rd_bit = f" Rest-of-season redraft #{lists['BB Redraft']}." if lists.get("BB Redraft") else ""
+    stat_bit = ""
+    if hit.get("g"):
+        stat_bit = f" 2026 line: {hit.get('avg') or '—'} / {hit.get('hr') or 0} HR / {hit.get('sb') or 0} SB / {hit.get('ops') or '—'} OPS in {hit.get('g')} games."
+    elif pit.get("ip"):
+        stat_bit = f" 2026 line: {pit.get('era') or '—'} ERA, {pit.get('whip') or '—'} WHIP, {pit.get('so') or 0} K in {pit.get('ip')} IP."
+    debut = media.get("debut") or ""
+    debut_bit = f" MLB since {debut[:4]}." if debut else (" Still a prospect clock." if not media.get("mlb_id") else "")
+    home = media.get("birth_country") or ""
+    home_bit = f" From {media.get('birth_city') or ''}{' / ' if media.get('birth_city') and home else ''}{home}." if home or media.get("birth_city") else ""
+    bats = ""
+    if media.get("bats") or media.get("throws"):
+        bats = f" Bats {media.get('bats') or '—'}, throws {media.get('throws') or '—'}."
     grafs = [
-        f"{name} is #{keep} on BaseBallKeep's overall dynasty 300, a 23-source mix anchored by RotoGraphs (Aug 14) and The Dynasty Guru points list (Aug 10). {pos} for {team or 'the org'}.{lineup_bit}{pit_bit}{rd_bit}",
-        f"BK Value on this rank is {int(r.get('value') or 0):,}. Same decaying curve as football: 12,000 at 1.01, a late first a fraction of that. If someone is asking for two firsts, run the calculator.",
+        f"{name} is #{keep} on BaseBallKeep's overall dynasty 300, a 23-source mix anchored by RotoGraphs (Aug 14) and The Dynasty Guru points list (Aug 10). {pos} for {team or media.get('team_name') or 'the org'}.{lineup_bit}{pit_bit}{rd_bit}{debut_bit}{home_bit}{bats}",
+        f"BK Value on this rank is {int(r.get('value') or 0):,}. Same decaying curve as football: 12,000 at 1.01, a late first a fraction of that. If someone is asking for two firsts, run the calculator.{stat_bit}",
+        f"The 23-board average is {r.get('avg')} on {n} lists that actually ranked him — unranked sources are skipped, never treated as 999. "
+        + (f"High {min(ranks.values())}, low {max(ranks.values())}." if ranks else "Short tape."),
+        "Dynasty pays the next five years. Redraft pays September. If those two ranks diverge, that is the instruction: hold the kid or cash the veteran.",
         "Flags fly forever. We will refresh this file with The Keep. September baseball is a proving ground, not a coronation.",
     ]
-    return plus[:6], minus[:6], grafs
+    return plus[:7], minus[:7], grafs
 
 
-def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None):
+def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, saves=None, svh=None):
     news_by_player = news_by_player or {}
     lu = {r["key"]: r for r in lineup}
     pit = {r["key"]: r for r in pitchers}
     rd = {r["key"]: r for r in redraft}
+    sv = {r["key"]: r for r in (saves or [])}
+    svh_m = {r["key"]: r for r in (svh or [])}
+    media_all = load_bb_media()
     cards = []
     urls = []
     files = []
-    for r in keep:
+    for i, r in enumerate(keep):
         slug = slugify(r["name"])
+        media = media_all.get(r["key"]) or {}
         lists = {"BB Keep": r["bk"]}
         if r["key"] in lu:
             lists["The Lineup"] = lu[r["key"]]["bk"]
@@ -259,7 +581,11 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None):
             lists["BK Pitchers"] = pit[r["key"]]["bk"]
         if r["key"] in rd:
             lists["BB Redraft"] = rd[r["key"]]["bk"]
-        plus, minus, grafs = bb_grafs(r, lists)
+        if r["key"] in sv:
+            lists["Saves"] = sv[r["key"]]["bk"]
+        if r["key"] in svh_m:
+            lists["SVH"] = svh_m[r["key"]]["bk"]
+        plus, minus, grafs = bb_grafs(r, lists, media)
         chips = [f'<span class="chip">Keep #{r["bk"]}</span>']
         chips.append(f'<span class="chip">BK {int(r.get("value") or 0):,}</span>')
         if lists.get("The Lineup"):
@@ -268,16 +594,17 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None):
             chips.append(f'<span class="chip">Pitchers #{lists["BK Pitchers"]}</span>')
         if lists.get("BB Redraft"):
             chips.append(f'<span class="chip">Redraft #{lists["BB Redraft"]}</span>')
-        if r.get("age"):
-            chips.append(f'<span class="chip">Age {esc(r["age"])}</span>')
-        ranks = r.get("ranks") or {}
-        rank_bits = ""
-        if ranks:
-            bits = "".join(
-                f"<div><small>{esc(s)}</small> {v}</div>"
-                for s, v in sorted(ranks.items(), key=lambda kv: kv[1])[:8]
-            )
-            rank_bits = f'<div class="note" style="margin-top:10px"><strong>Boards</strong>{bits}</div>'
+        if lists.get("Saves"):
+            chips.append(f'<span class="chip">Saves #{lists["Saves"]}</span>')
+        if lists.get("SVH"):
+            chips.append(f'<span class="chip">SV+H #{lists["SVH"]}</span>')
+        age = r.get("age") or media.get("age")
+        if age:
+            chips.append(f'<span class="chip">Age {esc(age)}</span>')
+        if media.get("number"):
+            chips.append(f'<span class="chip">#{esc(media["number"])}</span>')
+        img = media.get("image") or "img/bb-logo.jpg"
+        img_src = "../../" + img
         news_hits = news_by_player.get(r["key"]) or []
         news_block = ""
         if news_hits:
@@ -292,16 +619,19 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None):
                 f'<ul class="source-list">{lis}</ul>'
             )
         body = f"""
-    <p class="kicker">Player File · {esc(r.get("pos",""))} {esc(r.get("team",""))}</p>
+    <p class="kicker">Player File · {esc(r.get("pos") or media.get("pos") or "")} {esc(r.get("team") or media.get("team") or "")}</p>
     <div class="player-hero">
-      <img src="../../img/bb-logo.jpg" alt="" />
+      <img src="{esc(img_src)}" alt="{esc(r['name'])}" />
       <div>
         <h2>{esc(r["name"])}</h2>
-        <p class="note">{esc(r.get("pos",""))} · {esc(r.get("team",""))}{" · age " + esc(str(r["age"])) if r.get("age") else ""}</p>
+        <p class="note">{esc(bio_line(media, r))}</p>
         <div class="chips">{''.join(chips)}</div>
-        {rank_bits}
       </div>
     </div>
+    {facts_table(media, r)}
+    {stat_pills(media, r.get("group") or "")}
+    {season_box(media)}
+    {list_cards(lists, r)}
     <div class="plusminus">
       <div class="pm"><h3>Plus</h3><ul>{''.join(f'<li>{esc(x)}</li>' for x in plus)}</ul></div>
       <div class="pm"><h3>Minus</h3><ul>{''.join(f'<li>{esc(x)}</li>' for x in minus)}</ul></div>
@@ -311,13 +641,18 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None):
       {''.join(f'<p>{esc(g)}</p>' for g in grafs)}
     </section>
     {news_block}
-    <p class="note"><a href="index.html">All players</a> · <a href="../the-keep.html">The Keep</a> · <a href="../news.html">BK News</a> · <a href="../the-lineup.html">The Lineup</a> · <a href="../pitchers.html">Pitchers</a> · <a href="../trade.html">Calculator</a></p>
+    {boards_table(r.get("ranks") or {})}
+    {waiver_note(r["name"], DYNASTY_WAIVERS, REDRAFT_WAIVERS)}
+    {neighbors(keep, i)}
+    {same_pos(keep, r)}
+    <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-keep.html">The Keep</a> · <a href="../news.html">BK News</a> · <a href="../the-lineup.html">The Lineup</a> · <a href="../pitchers.html">Pitchers</a> · <a href="../trade-keep.html">Calculator</a></p>
     """
         write(f"bb/players/{slug}.html", bb_page(r["name"], f"players/{slug}.html", body, depth=2))
         cards.append(
-            f'<a class="tile" href="{slug}.html" data-pos="{esc((r.get("pos") or "").split("/")[0])}" data-group="{esc(r.get("group") or "")}">'
+            f'<a class="tile player-card" href="{slug}.html" data-pos="{esc((r.get("pos") or "").split("/")[0])}" data-group="{esc(r.get("group") or "")}">'
+            f'<img src="../../{esc(img)}" alt="" />'
             f'<h3>{esc(r["name"])}</h3>'
-            f'<p>{esc(r.get("pos",""))} {esc(r.get("team",""))} · Keep #{r["bk"]}</p></a>'
+            f'<p>{esc(r.get("pos") or "")} {esc(r.get("team") or media.get("team") or "")} · Keep #{r["bk"]}</p></a>'
         )
         urls.append(f"https://ballkeep.com/bb/players/{slug}.html")
         files.append({
@@ -325,8 +660,8 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None):
             "slug": slug,
             "name": r["name"],
             "pos": r.get("pos") or "",
-            "team": r.get("team") or "",
-            "age": r.get("age") or "",
+            "team": r.get("team") or media.get("team") or "",
+            "age": r.get("age") or media.get("age") or "",
             "group": r.get("group") or "",
             "lists": lists,
             "plus": plus,
@@ -338,19 +673,36 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None):
             "bk": r["bk"],
             "keep_avg": r.get("avg"),
             "keep_n": r.get("n"),
-            "image": "img/bb-logo.jpg",
+            "image": img,
+            "mlb_id": media.get("mlb_id") or "",
+            "number": media.get("number") or "",
+            "bats": media.get("bats") or "",
+            "throws": media.get("throws") or "",
+            "height": media.get("height") or "",
+            "weight": media.get("weight") or "",
+            "debut": media.get("debut") or "",
+            "draft": media.get("draft") or "",
+            "birth": media.get("birth") or "",
+            "birth_city": media.get("birth_city") or "",
+            "birth_country": media.get("birth_country") or "",
+            "team_name": media.get("team_name") or "",
+            "hit": media.get("hit") or {},
+            "pit": media.get("pit") or {},
+            "hit_2025": media.get("hit_2025") or {},
+            "pit_2025": media.get("pit_2025") or {},
         })
     flt, js = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
     hub = f"""
     <p class="kicker">Player Files</p>
     <h2>The Keep, one name at a time</h2>
-    <p class="note">Every name in the baseball Keep top 300. Plus/minus, board dump, BK Value. Tape lives on the football desk; the diamond files stay in the cream and navy.</p>
+    <p class="note">Every name in the baseball Keep top 300. Headshot, bio, 2026 and 2025 lines, plus/minus, every board, BK Value. Filter the grid. Click a face.</p>
     {flt}
-    <div class="grid-3" id="bb-cards">{''.join(cards)}</div>
+    <div class="player-grid" id="bb-cards">{''.join(cards)}</div>
     """
     hub_js = js.replace("tbody tr", "#bb-cards .tile")
     write("bb/players/index.html", bb_page("Players", "players/index.html", hub, hub_js, depth=2))
     return urls, files
+
 
 
 def trade_payload(label, file, blurb, rows, picks):
@@ -738,7 +1090,7 @@ def write_baseball_site():
         hot=True,
     )
 
-    player_urls, player_files = write_player_pages(keep, lineup, pitchers, redraft, news_by_player)
+    player_urls, player_files = write_player_pages(keep, lineup, pitchers, redraft, news_by_player, saves, svh)
     news_urls = render_bb_news_pages(stories)
     (ROOT / "data/bb-keep.json").write_text(json.dumps({
         "updated": UPDATED,

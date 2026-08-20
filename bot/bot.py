@@ -32,6 +32,7 @@ RED = 0xC8102E
 GREEN = 0x157A3A
 INK = 0x102033
 NAVY = 0x0B1F3A
+PURPLE = 0x37003C
 
 QUIPS = [
     "Keep the guys who still matter in 2029.",
@@ -47,6 +48,8 @@ QUIPS = [
     "Publish the desk once. Search Discord forever.",
     "BaseBallKeep is the other door. Navy, cream, 23 boards.",
     "Saves and SV+H are different sports. Use the right bullpen page.",
+    "PitchKeep is the third door. Purple, pitch green, The Pitch 250.",
+    "Bruno and Haaland are the argument. The rest of the 250 is who you own.",
 ]
 
 
@@ -80,9 +83,17 @@ desk = Desk()
 def player_embed(discord, p: dict):
     lists = p.get("lists") or {}
     baseball = p.get("sport") == "baseball" or "BB Keep" in lists
-    keep = lists.get("BB Keep") if baseball else (lists.get("The Keep") or p.get("bk"))
+    soccer = p.get("sport") == "soccer" or "The Pitch" in lists
+    if soccer:
+        keep = lists.get("The Pitch") or p.get("bk")
+    elif baseball:
+        keep = lists.get("BB Keep")
+    else:
+        keep = lists.get("The Keep") or p.get("bk")
     value = p.get("value") or (bk_value(keep) if keep else None)
-    if baseball:
+    if soccer:
+        color = PURPLE
+    elif baseball:
         color = NAVY
     else:
         color = {"QB": RED, "RB": GREEN, "WR": BLUE, "TE": 0xC9A227, "PICK": 0x888888}.get(p.get("pos"), INK)
@@ -90,7 +101,10 @@ def player_embed(discord, p: dict):
     title = f"{p.get('name')} · {' · '.join(bits)}"
     desc = (p.get("grafs") or [random.choice(QUIPS)])[0][:400]
     emb = discord.Embed(title=title, description=desc, color=color, url=p.get("url") or "https://ballkeep.com")
-    if baseball and keep:
+    if soccer and keep:
+        price = f" · £{p['price']}m" if p.get("price") else ""
+        emb.add_field(name="The Pitch", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK{price}", inline=True)
+    elif baseball and keep:
         emb.add_field(name="BB Keep", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK", inline=True)
     elif keep:
         emb.add_field(name="The Keep", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK", inline=True)
@@ -100,7 +114,15 @@ def player_embed(discord, p: dict):
         emb.add_field(name="Pitchers", value=f"#{lists['BK Pitchers']}", inline=True)
     if lists.get("BB Redraft"):
         emb.add_field(name="BB Redraft", value=f"#{lists['BB Redraft']}", inline=True)
-    if lists.get("The Board") or (p.get("bk") and not keep and not baseball):
+    if lists.get("Attack"):
+        emb.add_field(name="Attack", value=f"#{lists['Attack']}", inline=True)
+    if lists.get("Midfield"):
+        emb.add_field(name="Midfield", value=f"#{lists['Midfield']}", inline=True)
+    if lists.get("Defence"):
+        emb.add_field(name="Defence", value=f"#{lists['Defence']}", inline=True)
+    if lists.get("Keepers"):
+        emb.add_field(name="Keepers", value=f"#{lists['Keepers']}", inline=True)
+    if lists.get("The Board") or (p.get("bk") and not keep and not baseball and not soccer):
         board_rk = lists.get("The Board") or p.get("bk")
         emb.add_field(name="The Board", value=f"#{board_rk}", inline=True)
     if lists.get("Redraft PPR"):
@@ -113,6 +135,43 @@ def player_embed(discord, p: dict):
         emb.add_field(name="🔥 Hot", value=f"Buy #{lists['Hot']}", inline=True)
     if lists.get("Cold"):
         emb.add_field(name="❄️ Cold", value=f"Sell #{lists['Cold']}", inline=True)
+    hit = p.get("hit") or {}
+    pit = p.get("pit") or {}
+    if hit.get("g"):
+        emb.add_field(
+            name="2026 bat",
+            value=f"{hit.get('avg') or '—'} / {hit.get('hr') or 0} HR / {hit.get('sb') or 0} SB / {hit.get('ops') or '—'} OPS · {hit.get('g')} G",
+            inline=False,
+        )
+    if pit.get("ip") or pit.get("g"):
+        emb.add_field(
+            name="2026 arm",
+            value=f"{pit.get('era') or '—'} ERA · {pit.get('whip') or '—'} WHIP · {pit.get('so') or 0} K in {pit.get('ip') or '—'} IP",
+            inline=False,
+        )
+    if soccer and (p.get("pts") or p.get("gls") or p.get("sel") is not None):
+        bits_pl = []
+        if p.get("pts") not in (None, ""):
+            bits_pl.append(f"{p['pts']} pts")
+        if p.get("gls") not in (None, ""):
+            bits_pl.append(f"{p['gls']} G")
+        if p.get("ast") not in (None, ""):
+            bits_pl.append(f"{p['ast']} A")
+        if p.get("sel") not in (None, ""):
+            bits_pl.append(f"{p['sel']}% owned")
+        if bits_pl:
+            emb.add_field(name="2025/26 FPL", value=" · ".join(str(x) for x in bits_pl), inline=False)
+    bits_bio = []
+    if p.get("bats") or p.get("throws"):
+        bits_bio.append(f"B/T {p.get('bats') or '—'}{p.get('throws') or ''}")
+    if p.get("height"):
+        bits_bio.append(str(p["height"]) + (f" / {p['weight']} lbs" if p.get("weight") else ""))
+    if p.get("debut"):
+        bits_bio.append(f"debut {str(p['debut'])[:4]}")
+    if p.get("birth_city") or p.get("birth_country"):
+        bits_bio.append(", ".join(x for x in (p.get("birth_city"), p.get("birth_country")) if x))
+    if bits_bio:
+        emb.add_field(name="File", value=" · ".join(bits_bio)[:1024], inline=False)
     plus = p.get("plus") or []
     minus = p.get("minus") or []
     if plus:
@@ -212,6 +271,20 @@ def build_bot():
         app_commands.Choice(name="Bullpen Saves", value="bbsaves"),
         app_commands.Choice(name="Bullpen SV+H", value="bbsvh"),
     ]
+    PL_BOARDS = [
+        app_commands.Choice(name="The Pitch (overall 250)", value="pitch"),
+        app_commands.Choice(name="Attack", value="attack"),
+        app_commands.Choice(name="Midfield", value="midfield"),
+        app_commands.Choice(name="Defence", value="defence"),
+        app_commands.Choice(name="Keepers", value="keepers"),
+    ]
+    PL_MODES = [
+        app_commands.Choice(name="The Pitch", value="plpitch"),
+        app_commands.Choice(name="Attack", value="plfwd"),
+        app_commands.Choice(name="Midfield", value="plmid"),
+        app_commands.Choice(name="Defence", value="pldef"),
+        app_commands.Choice(name="Keepers", value="plgkp"),
+    ]
 
     async def ac_player(interaction: discord.Interaction, current: str):
         q = current.strip() if current else ""
@@ -227,6 +300,14 @@ def build_bot():
             rows = desk.cat.raw.get("bb_keep") or []
             return [app_commands.Choice(name=r["name"], value=r["name"]) for r in rows[:20]]
         hits = desk.cat.find(q, limit=20, sport="baseball")
+        return [app_commands.Choice(name=h["name"], value=h["name"]) for h in hits if h.get("name")]
+
+    async def ac_pl(interaction: discord.Interaction, current: str):
+        q = current.strip() if current else ""
+        if len(q) < 1:
+            rows = desk.cat.raw.get("pl_pitch") or []
+            return [app_commands.Choice(name=r["name"], value=r["name"]) for r in rows[:20]]
+        hits = desk.cat.find(q, limit=20, sport="soccer")
         return [app_commands.Choice(name=h["name"], value=h["name"]) for h in hits if h.get("name")]
 
     @bot.event
@@ -268,6 +349,11 @@ def build_bot():
         emb.add_field(
             name="BaseBallKeep",
             value="`/bbplayer Ohtani` `/bbkeep` `/bbtrade` `/bbwire` · navy desk at ballkeep.com/bb",
+            inline=False,
+        )
+        emb.add_field(
+            name="PitchKeep",
+            value="`/plplayer Haaland` `/pitch` `/pltrade` · purple desk at ballkeep.com/pl",
             inline=False,
         )
         emb.set_thumbnail(url="https://ballkeep.com/img/logo.jpg")
@@ -718,6 +804,39 @@ def build_bot():
         )
         if len(body) > 4000:
             emb.add_field(name="More", value=body[4000:5000] or "Full list on the site.", inline=False)
+        await interaction.response.send_message(embed=emb)
+
+    @bot.tree.command(name="plplayer", description="PitchKeep file: The Pitch 250, FPL line, tape")
+    @app_commands.describe(name="Premier League player (Haaland, Bruno, Saka, Semenyo…)")
+    @app_commands.autocomplete(name=ac_pl)
+    async def plplayer_cmd(interaction: discord.Interaction, name: str):
+        p = desk.cat.one(name, sport="soccer")
+        if not p:
+            await interaction.response.send_message(f"Not on PitchKeep: **{name}**.", ephemeral=True)
+            return
+        files = {norm(x.get("name", "")): x for x in desk.cat.raw.get("pl_players") or []}
+        rich = files.get(norm(p.get("name", ""))) or p
+        rich = {**rich, "sport": "soccer"}
+        await interaction.response.send_message(embed=player_embed(discord, rich))
+
+    @bot.tree.command(name="pitch", description="A PitchKeep board: The Pitch, Attack, Midfield, Defence, Keepers")
+    @app_commands.describe(board="Which Premier League list", count="How many names (default 15, max 25)")
+    @app_commands.choices(board=PL_BOARDS)
+    async def pitch_cmd(interaction: discord.Interaction, board: app_commands.Choice[str], count: int = 15):
+        rows = desk.cat.list_for(board.value)[: max(1, min(count, 25))]
+        if not rows:
+            await interaction.response.send_message("That PitchKeep board is empty. Rebuild the site catalog.", ephemeral=True)
+            return
+        await interaction.response.send_message(embed=list_embed(discord, f"PitchKeep · {board.name}", rows, PURPLE))
+
+    @bot.tree.command(name="pltrade", description="PitchKeep trade calculator — same BK Value curve")
+    @app_commands.describe(mode="Which PitchKeep calculator", side_a="Names, comma-separated", side_b="Names, comma-separated")
+    @app_commands.choices(mode=PL_MODES)
+    async def pltrade_cmd(interaction: discord.Interaction, mode: app_commands.Choice[str], side_a: str, side_b: str):
+        result = desk.cat.trade(mode.value, side_a, side_b)
+        emb = trade_embed(discord, result)
+        emb.color = PURPLE
+        emb.set_footer(text="Fair = within 8% · same curve as ballkeep.com/pl/trade.html")
         await interaction.response.send_message(embed=emb)
 
     @bot.tree.command(name="reload", description="Reload discord-catalog.json after a site rebuild (admin)")

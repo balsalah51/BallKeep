@@ -25,6 +25,7 @@ from news_algo import CATEGORY_LABEL, load_news_stories, news_when  # noqa: E402
 from player_copy import get_copy  # noqa: E402
 from recent_trades import enrich_deals  # noqa: E402
 from build_bb import write_baseball_site  # noqa: E402
+from build_pl import write_pitch_site  # noqa: E402
 
 
 def esc(s):
@@ -611,8 +612,9 @@ def page(title, path, body, extra_js="", depth=0):
     </header>
     {body}
     <footer>
-      © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL or MLB.
-      <div><a class="sport-switch bb" href="{nav_href('bb/index.html', depth)}">BaseBallKeep</a></div>
+      © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL, MLB, or Premier League.
+      <div><a class="sport-switch bb" href="{nav_href('bb/index.html', depth)}">BaseBallKeep</a>
+      <a class="sport-switch pl" href="{nav_href('pl/index.html', depth)}">PitchKeep</a></div>
     </footer>
   </div>
   {extra_js}
@@ -1370,6 +1372,8 @@ def main():
         ("nfl-schedule.html", "NFL Schedules", "2026 week-by-week slate and all 32 team pages."),
         ("mlb-schedule.html", "MLB Schedules", "September stretch run, filterable by club."),
         ("discord.html", "Discord", "The circular mark plus a bot that searches ranks, runs the calculator, drops tape, and can publish the whole site into a server."),
+        ("bb/index.html", "BaseBallKeep", "Navy diamond desk. Keep 300, Lineup, Pitchers, bullpen, redraft."),
+        ("pl/index.html", "PitchKeep", "Premier League purple. The Pitch top 250, FPL files, tape."),
     ]
     latest_news = load_news_stories("football")[:5]
     latest_html = ""
@@ -1389,7 +1393,7 @@ def main():
       <div class="hero-card">
         <p class="kicker" style="color:#ffd4db">Updated {UPDATED}</p>
         <h2>{wordmark()}</h2>
-        <p>A powder-blue desk for dynasty and redraft. Football first. Baseball in season. One board, many experts, no fluff.</p>
+        <p>A powder-blue desk for dynasty and redraft. Football first. Baseball in season. Premier League next door. One board, many experts, no fluff.</p>
       </div>
     </section>
     <section class="panel">
@@ -1397,7 +1401,7 @@ def main():
       <h2>Keep the guys who still matter in 2029.</h2>
       <p class="note"><strong>Fantasy Football</strong> is a one-year contest: you draft, you stream, you chase weekly points. <strong>Dynasty Football</strong> is a roster you keep. Young quarterbacks, incoming rookies, and contract years all change the price. Superflex (a second QB slot) makes passers first-round assets instead of round-eight afterthoughts.</p>
       <p class="note"><strong>Fantasy Baseball</strong> is the same split. Redraft/roto is this summer's counting stats. <strong>Dynasty Baseball</strong> prices the next five years — peak age, service time, and whether a 22-year-old shortstop is still a shortstop in 2030. ESPN's current dynasty formula weights 2027–2030 at 80% of value.</p>
-      <p class="note">Ball Keep aggregates public expert boards (FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN Karabell, Draft Sharks, RotoWire, plus X ranks from Brown / Erickson / Fitzmaurice) into one number, then turns that rank into BK Value for the trade calculators. We do not pretend a podcast hot take is a 300-player sheet. Sources sit at the bottom of each board. Baseball lives in <a href="bb/index.html">BaseBallKeep</a> — navy, cream, and a 23-board Keep of its own.</p>
+      <p class="note">Ball Keep aggregates public expert boards (FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN Karabell, Draft Sharks, RotoWire, plus X ranks from Brown / Erickson / Fitzmaurice) into one number, then turns that rank into BK Value for the trade calculators. We do not pretend a podcast hot take is a 300-player sheet. Sources sit at the bottom of each board. Baseball lives in <a href="bb/index.html">BaseBallKeep</a>. The Premier League lives in <a href="pl/index.html">PitchKeep</a> — purple, pitch green, and The Pitch top 250.</p>
     </section>
     {latest_html}
     <div class="grid-3" style="margin-top:16px">
@@ -1631,7 +1635,7 @@ def main():
     <section class="panel" style="margin-top:16px">
       <p class="kicker">Slash Commands</p>
       <h2>Talk to the desk.</h2>
-      <p class="note"><code>/player Josh Allen</code> pulls The Keep rank, BK Value, plus/minus, the 2025 clip, and the player page. <code>/trade</code> is the Superflex / 1QB / PPR / Standard calculator. <code>/deals JSN</code> pulls every recent package on the desk tape. <code>/bbplayer Ohtani</code> is the same file on the baseball desk. <code>/video</code> drops the tape. <code>/quiz</code> hides a Keep rank behind a spoiler. <code>/publish</code> writes the whole site into Discord channels so native search works.</p>
+      <p class="note"><code>/player Josh Allen</code> pulls The Keep rank, BK Value, plus/minus, the 2025 clip, and the player page. <code>/trade</code> is the Superflex / 1QB / PPR / Standard calculator. <code>/deals JSN</code> pulls every recent package on the desk tape. <code>/bbplayer Ohtani</code> is the same file on the baseball desk. <code>/plplayer Haaland</code> is the PitchKeep file — The Pitch rank, picture, long take, 2025/26 tape. <code>/video</code> drops the tape. <code>/quiz</code> hides a Keep rank behind a spoiler. <code>/publish</code> writes the whole site into Discord channels so native search works.</p>
       <div class="grid" style="margin-top:14px">
         <article class="tile"><h3>/player</h3><p>Full file: ranks, value, plus/minus, tape, link.</p></article>
         <article class="tile"><h3>/trade</h3><p>Two sides. Same BK Value curve as the site.</p></article>
@@ -1643,6 +1647,8 @@ def main():
         <article class="tile"><h3>/start + /picks</h3><p>Redraft start/sit, plus every future-pick value.</p></article>
         <article class="tile"><h3>/bbplayer</h3><p>BaseBallKeep file: Keep 300, Lineup, Pitchers, redraft.</p></article>
         <article class="tile"><h3>/bbkeep + /bbwire</h3><p>Diamond boards and the longer redraft waiver list.</p></article>
+        <article class="tile"><h3>/plplayer</h3><p>PitchKeep file: The Pitch 250, FPL line, long take, tape.</p></article>
+        <article class="tile"><h3>/pitch + /pltrade</h3><p>Premier League boards and the PitchKeep calculator.</p></article>
       </div>
     </section>
     """
@@ -1671,6 +1677,8 @@ def main():
     ] + news_urls[1:] + player_urls
     bb = write_baseball_site()
     sitemap.extend(bb.get("urls") or [])
+    pl = write_pitch_site()
+    sitemap.extend(pl.get("urls") or [])
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1678,11 +1686,11 @@ def main():
         + "</urlset>\n"
     )
 
-    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb)
+    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl)
     print(
         f"Keep {len(keep)} Board {len(board)} NFL games {len(nfl)} MLB {len(mlb_games)} "
         f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
-        f"BB News {bb.get('n_news', 0)} Catalog {cat.name}"
+        f"BB News {bb.get('n_news', 0)} Pitch {pl['n_pitch']} Catalog {cat.name}"
     )
 
 
@@ -1702,7 +1710,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -1803,6 +1811,14 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
             ],
         })
     catalog["bb_news"] = bb_news
+    pl = pl or {}
+    catalog["pl_pitch"] = [slim_row(r, ("age", "group", "price", "sel", "pts")) for r in pl.get("pitch") or []]
+    catalog["pl_fwd"] = [slim_row(r, ("age", "group", "price")) for r in pl.get("fwd") or []]
+    catalog["pl_mid"] = [slim_row(r, ("age", "group", "price")) for r in pl.get("mid") or []]
+    catalog["pl_def"] = [slim_row(r, ("age", "group", "price")) for r in pl.get("def") or []]
+    catalog["pl_gkp"] = [slim_row(r, ("age", "group", "price")) for r in pl.get("gkp") or []]
+    catalog["pl_players"] = pl.get("files") or []
+    catalog["pl_sources"] = pl.get("source_names") or []
     dest = ROOT / "data/discord-catalog.json"
     dest.write_text(json.dumps(catalog, indent=2, default=str))
     return dest

@@ -92,6 +92,7 @@ footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: cen
 .sport-switch.fb {
   background: #d6ebf7; color: #c8102e; border: 3px solid #c8102e;
 }
+.sport-switch.pl { background: #37003c; color: #00ff85; border: 3px solid #e8c547; }
 a.player-link { color: inherit; text-decoration: none; border-bottom: 1px dashed rgba(31,107,58,0.4); }
 a.player-link:hover { color: var(--forest); }
 .news-list { display: grid; gap: 12px; }
@@ -117,16 +118,49 @@ a.news-item:hover h3 { color: var(--forest); }
 .source-row .news-meta { display: block; margin: 4px 0 0; }
 .sources-box h3 { margin: 16px 0 8px; }
 .player-hero {
-  display: grid; grid-template-columns: 180px 1fr; gap: 22px; align-items: center;
+  display: grid; grid-template-columns: 220px 1fr; gap: 22px; align-items: center;
   background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 18px;
   box-shadow: var(--shadow); margin: 8px 0 18px;
 }
 .player-hero img {
-  width: 180px; height: 180px; object-fit: cover; border-radius: 16px;
-  border: 4px solid var(--navy); background: var(--cream);
+  width: 220px; height: 220px; object-fit: contain; object-position: center bottom;
+  border-radius: 16px; border: 4px solid var(--navy); background: var(--navy);
 }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .chip { display: inline-block; background: #dce7d4; border-radius: 999px; padding: 5px 10px; font-size: 12px; font-weight: 800; }
+.stat-strip { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+.stat-pill {
+  background: var(--navy); color: var(--cream); border-radius: 14px; padding: 10px 14px; min-width: 72px;
+}
+.stat-pill small { display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #8fdb9c; }
+.stat-pill strong { font-size: 22px; }
+.rank-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0; }
+.rank-card {
+  background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px;
+}
+.rank-card small { display: block; color: var(--forest); font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11px; }
+.rank-card strong { display: block; font-size: 28px; color: var(--navy); }
+.rank-card span { color: var(--muted); font-weight: 700; }
+table.boards { font-size: 15px; }
+table.boards tr.hi td { background: rgba(31,107,58,0.12); font-weight: 800; }
+table.boards tr.lo td { background: rgba(200,16,46,0.08); }
+.player-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.player-card { text-align: center; padding: 12px; }
+.player-card img {
+  width: 100%; aspect-ratio: 1; object-fit: contain; object-position: center bottom;
+  border-radius: 14px; border: 3px solid var(--navy); background: var(--navy);
+}
+.player-card h3 { margin: 8px 0 0; font-size: 15px; }
+.facts {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 14px 0;
+}
+.fact {
+  background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px;
+}
+.fact small { display: block; color: var(--forest); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.fact strong { font-size: 16px; color: var(--navy); }
+.panel.season { margin: 12px 0; overflow-x: auto; }
+.panel.season table { font-variant-numeric: tabular-nums; font-size: 14px; }
 .plusminus { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0; }
 .pm { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
 .trade-search { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
@@ -152,6 +186,8 @@ a.news-item:hover h3 { color: var(--forest); }
 @media (max-width: 860px) {
   header.site { flex-direction: column; align-items: flex-start; }
   nav { justify-content: flex-start; }
-  .grid, .grid-3, .plusminus, .player-hero, .trade-hits, .trade-board { grid-template-columns: 1fr; }
+  .grid, .grid-3, .plusminus, .player-hero, .trade-hits, .trade-board, .rank-grid { grid-template-columns: 1fr; }
+  .player-grid, .facts { grid-template-columns: repeat(2, 1fr); }
+  .player-hero img { width: 100%; height: 280px; }
   .hero-card h2 { font-size: 26px; }
 }
