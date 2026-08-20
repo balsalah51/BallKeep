@@ -113,6 +113,31 @@ def player_embed(discord, p: dict):
         emb.add_field(name="🔥 Hot", value=f"Buy #{lists['Hot']}", inline=True)
     if lists.get("Cold"):
         emb.add_field(name="❄️ Cold", value=f"Sell #{lists['Cold']}", inline=True)
+    hit = p.get("hit") or {}
+    pit = p.get("pit") or {}
+    if hit.get("g"):
+        emb.add_field(
+            name="2026 bat",
+            value=f"{hit.get('avg') or '—'} / {hit.get('hr') or 0} HR / {hit.get('sb') or 0} SB / {hit.get('ops') or '—'} OPS · {hit.get('g')} G",
+            inline=False,
+        )
+    if pit.get("ip") or pit.get("g"):
+        emb.add_field(
+            name="2026 arm",
+            value=f"{pit.get('era') or '—'} ERA · {pit.get('whip') or '—'} WHIP · {pit.get('so') or 0} K in {pit.get('ip') or '—'} IP",
+            inline=False,
+        )
+    bits_bio = []
+    if p.get("bats") or p.get("throws"):
+        bits_bio.append(f"B/T {p.get('bats') or '—'}{p.get('throws') or ''}")
+    if p.get("height"):
+        bits_bio.append(str(p["height"]) + (f" / {p['weight']} lbs" if p.get("weight") else ""))
+    if p.get("debut"):
+        bits_bio.append(f"debut {str(p['debut'])[:4]}")
+    if p.get("birth_city") or p.get("birth_country"):
+        bits_bio.append(", ".join(x for x in (p.get("birth_city"), p.get("birth_country")) if x))
+    if bits_bio:
+        emb.add_field(name="File", value=" · ".join(bits_bio)[:1024], inline=False)
     plus = p.get("plus") or []
     minus = p.get("minus") or []
     if plus:

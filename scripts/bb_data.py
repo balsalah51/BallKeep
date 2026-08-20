@@ -10,13 +10,19 @@ from __future__ import annotations
 import json
 import math
 import re
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def fold(s: str) -> str:
+    n = unicodedata.normalize("NFKD", s or "")
+    return "".join(c for c in n if not unicodedata.combining(c))
+
+
 def bb_norm(name: str) -> str:
-    n = clean_name(name or "").lower()
+    n = fold(clean_name(name or "")).lower()
     n = re.sub(r"[\u3131-\u318E\uAC00-\uD7A3\u3040-\u30ff\u4e00-\u9fff]+", "", n)
     n = n.replace(".", " ").replace("'", "").replace("’", "")
     n = re.sub(r"\b(jr|sr|iii|ii|iv)\b", "", n)
@@ -323,6 +329,7 @@ SAVES = [
     ("A.J. Puk", "RP", "ARI"), ("Porter Hodge", "RP", "CHC"), ("Dennis Santana", "RP", "PIT"),
     ("Seranthony Dominguez", "RP", "BAL"), ("Caleb Ferguson", "RP", "PIT"),
     ("Mason Fluharty", "RP", "TOR"), ("Shelby Miller", "RP", "ARI"),
+    ("Emmanuel Clase", "RP", "CLE"), ("Kyle Finnegan", "RP", "WSH"),
 ]
 
 SVH = [
