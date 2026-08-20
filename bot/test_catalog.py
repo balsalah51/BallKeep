@@ -65,6 +65,16 @@ def main():
     assert tbb["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
     assert tbb["total_a"] and tbb["total_b"]
     assert not tbb["missing"], tbb["missing"]
+    root = Path(__file__).resolve().parents[1]
+    ohtani_html = (root / "bb/players/shohei-ohtani.html").read_text()
+    assert "Starcast" in ohtani_html
+    assert "baseballsavant.mlb.com" in ohtani_html
+    assert "spray" in ohtani_html.lower()
+    assert "Pitch chart" in ohtani_html
+    caminero_html = (root / "bb/players/junior-caminero.html").read_text()
+    assert "Hits spray chart" in caminero_html
+    skenes_html = (root / "bb/players/paul-skenes.html").read_text()
+    assert "Pitch chart" in skenes_html
     pitch = cat.raw.get("pl_pitch") or []
     assert len(pitch) == 400, f"pitch {len(pitch)}"
     assert pitch[0]["name"] == "Erling Haaland"

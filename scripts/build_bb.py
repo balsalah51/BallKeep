@@ -255,6 +255,173 @@ def load_bb_media():
     return json.loads(path.read_text())
 
 
+def load_bb_savant():
+    path = ROOT / "data/bb-savant.json"
+    if not path.exists():
+        return {"batters": {}, "pitchers": {}}
+    return json.loads(path.read_text())
+
+
+BAT_STARCAST = [
+    ("xwoba", "xwOBA"),
+    ("xba", "xBA"),
+    ("xslg", "xSLG"),
+    ("xiso", "xISO"),
+    ("xobp", "xOBP"),
+    ("brl", "Barrels"),
+    ("brl_percent", "Barrel %"),
+    ("exit_velocity", "EV"),
+    ("max_ev", "Max EV"),
+    ("hard_hit_percent", "Hard Hit %"),
+    ("k_percent", "K %"),
+    ("bb_percent", "BB %"),
+    ("whiff_percent", "Whiff %"),
+    ("chase_percent", "Chase %"),
+    ("sprint_speed", "Speed"),
+    ("arm_strength", "Arm"),
+    ("oaa", "OAA"),
+    ("bat_speed", "Bat Speed"),
+    ("squared_up_rate", "Squared Up"),
+    ("swing_length", "Swing Len"),
+]
+PIT_STARCAST = [
+    ("xera", "xERA"),
+    ("xwoba", "xwOBA"),
+    ("fb_velocity", "FB Velo"),
+    ("fb_spin", "FB Spin"),
+    ("curve_spin", "CU Spin"),
+    ("k_percent", "K %"),
+    ("bb_percent", "BB %"),
+    ("whiff_percent", "Whiff %"),
+    ("chase_percent", "Chase %"),
+    ("brl_percent", "Barrel %"),
+    ("hard_hit_percent", "Hard Hit %"),
+    ("exit_velocity", "EV"),
+    ("max_ev", "Max EV"),
+]
+
+
+def savant_color(pct: int) -> str:
+    p = max(0, min(100, int(pct))) / 100.0
+    if p < 0.5:
+        t = p * 2
+        r = int(200 + (236 - 200) * t)
+        g = int(16 + (236 - 16) * t)
+        b = int(46 + (236 - 46) * t)
+    else:
+        t = (p - 0.5) * 2
+        r = int(236 + (22 - 236) * t)
+        g = int(236 + (80 - 236) * t)
+        b = int(236 + (160 - 236) * t)
+    return f"#{r:02x}{g:02x}{b:02x}"
+
+
+def savant_player_url(name: str, mlb_id) -> str:
+    return f"https://baseballsavant.mlb.com/savant-player/{slugify(name)}-{int(mlb_id)}"
+
+
+def savant_roles(r, media) -> list[str]:
+    g = (r.get("group") or "").upper()
+    hit = bool((media.get("hit") or {}).get("g") or (media.get("hit_2025") or {}).get("g"))
+    pit = bool(
+        (media.get("pit") or {}).get("ip")
+        or (media.get("pit") or {}).get("g")
+        or (media.get("pit_2025") or {}).get("ip")
+    )
+    if g == "UT" or (hit and pit):
+        return ["batter", "pitcher"]
+    if g in ("SP", "RP"):
+        return ["pitcher"]
+    return ["batter"]
+
+
+def starcast_html(title: str, rec: dict, metrics) -> str:
+    rows = []
+    for key, label in metrics:
+        val = rec.get(key)
+        if val in (None, ""):
+            continue
+        try:
+            pct = int(val)
+        except (TypeError, ValueError):
+            continue
+        pct = max(0, min(100, pct))
+        color = savant_color(pct)
+        rows.append(
+            f'<div class="starcast-row">'
+            f'<span class="sc-lab">{esc(label)}</span>'
+            f'<div class="sc-track"><i class="sc-fill" style="width:{pct}%;background:{color}"></i></div>'
+            f'<span class="sc-pct">{pct}</span></div>'
+        )
+    if not rows:
+        return ""
+    year = rec.get("year") or ""
+    return (
+        f'<div class="starcast-pane">'
+        f'<h3>{esc(title)}{f" · {year}" if year else ""}</h3>'
+        f'{"".join(rows)}</div>'
+    )
+
+
+def savant_block(r, media, savant) -> str:
+    mlb_id = media.get("mlb_id")
+    if not mlb_id:
+        return ""
+    try:
+        mlb_id = int(mlb_id)
+    except (TypeError, ValueError):
+        return ""
+    href = savant_player_url(r["name"], mlb_id)
+    roles = savant_roles(r, media)
+    batters = (savant or {}).get("batters") or {}
+    pitchers = (savant or {}).get("pitchers") or {}
+    panes = []
+    if "batter" in roles:
+        panes.append(starcast_html("Batter", batters.get(str(mlb_id)) or {}, BAT_STARCAST))
+    if "pitcher" in roles:
+        panes.append(starcast_html("Pitcher", pitchers.get(str(mlb_id)) or {}, PIT_STARCAST))
+    panes = [p for p in panes if p]
+    starcast = f'<div class="starcast-grid">{"".join(panes)}</div>' if panes else (
+        '<p class="note">No 2026 Savant percentile sample yet. The spray and pitch charts below still load from Baseball Savant.</p>'
+    )
+    frames = []
+    if "batter" in roles:
+        spray = (
+            "https://baseballsavant.mlb.com/player-comparison"
+            f"?playerIds={mlb_id}&seasons=2026&ddlChartType=spray"
+        )
+        frames.append(
+            f'<div class="savant-chart">'
+            f"<h3>Hits spray chart</h3>"
+            f'<iframe class="savant-embed" title="{esc(r["name"])} spray chart" '
+            f'src="{esc(spray)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+            f'<p class="note"><a href="{esc(spray)}" target="_blank" rel="noopener">Open spray chart on Baseball Savant</a></p>'
+            f"</div>"
+        )
+    if "pitcher" in roles:
+        pitch = (
+            "https://baseballsavant.mlb.com/player-comparison"
+            f"?playerIds={mlb_id}&seasons=2026&ddlChartType=pitch"
+        )
+        frames.append(
+            f'<div class="savant-chart">'
+            f"<h3>Pitch chart</h3>"
+            f'<iframe class="savant-embed" title="{esc(r["name"])} pitch chart" '
+            f'src="{esc(pitch)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+            f'<p class="note"><a href="{esc(pitch)}" target="_blank" rel="noopener">Open pitch chart on Baseball Savant</a></p>'
+            f"</div>"
+        )
+    return f"""
+    <section class="panel savant-panel">
+      <p class="kicker">Baseball Savant</p>
+      <h3>Starcast · spray · pitch</h3>
+      <p class="note">Percentile ranks (Starcast) plus the official Savant spray chart for bats and pitch chart for arms. <a href="{esc(href)}" target="_blank" rel="noopener">Open the full Baseball Savant page</a>.</p>
+      {starcast}
+      {"".join(frames)}
+    </section>
+    """
+
+
 def nz(v, dash="—"):
     if v in (None, "", []):
         return dash
@@ -567,6 +734,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     sv = {r["key"]: r for r in (saves or [])}
     svh_m = {r["key"]: r for r in (svh or [])}
     media_all = load_bb_media()
+    savant = load_bb_savant()
     cards = []
     urls = []
     files = []
@@ -613,6 +781,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     {facts_table(media, r)}
     {season_box(media)}
     {list_cards(lists, r)}
+    {savant_block(r, media, savant)}
     {plusminus_html(plus, minus)}
     {boards_table(r.get("ranks") or {})}
     {waiver_note(r["name"], DYNASTY_WAIVERS, REDRAFT_WAIVERS)}
@@ -664,6 +833,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
             "pit": media.get("pit") or {},
             "hit_2025": media.get("hit_2025") or {},
             "pit_2025": media.get("pit_2025") or {},
+            "savant": savant_player_url(r["name"], media["mlb_id"]) if media.get("mlb_id") else "",
         })
     flt, js = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
     hub = f"""
