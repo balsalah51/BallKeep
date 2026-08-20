@@ -732,32 +732,29 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
     cols = ["BK", "Player", "Pos", "Team"]
-    if show_age:
-        cols.append("Age")
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
         pos = r.get("pos") or ""
         team = r.get("team") or ""
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
-        age_label = f"age {age_txt}" if age_txt else ""
-        age_bit = f" · {age_label}" if show_age and age_label else ""
+        age_label = f"age {age_txt}" if show_age and age_txt else ""
+        age_span = f'<span class="age-desc">{esc(age_label)}</span>' if age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
-            f" · {esc(team)}{esc(age_bit)}</div>"
+            f" · {esc(team)}</div>"
         )
         face = ""
         if faces:
             face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
-        age_td = f'<td class="c-age">{esc(age_label or "—")}</td>' if show_age else ""
-        stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{meta}</span>'
+        stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{age_span}{meta}</span>'
         body.append(
             f'<tr data-pos="{esc(pos)}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
             f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
             f'<td class="c-team">{esc(team)}</td>'
-            f"{age_td}{extra_cells(r)}"
+            f"{extra_cells(r)}"
             "</tr>"
         )
     cls = "rank-table faces" if faces else "rank-table"
@@ -1624,7 +1621,7 @@ def main():
     keep_body = f"""
     <p class="kicker">Keystone · Superflex Dynasty</p>
     <h2>The Keep</h2>
-    <p class="note">Top 400 for Superflex dynasty leagues, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — PFN, Dynasty Nerds, FantasyPros Superflex ECR, KeepTradeCut, Karabell, Draft Sharks, RotoWire, and the X tapes. Every row has a headshot and an age. BK Value is that rank on a decaying curve (12,000 at 1.01). Filter by position. Per-source ranks live in the source list at the bottom so the board stays readable.</p>
+    <p class="note">Top 400 for Superflex dynasty leagues, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — PFN, Dynasty Nerds, FantasyPros Superflex ECR, KeepTradeCut, Karabell, Draft Sharks, RotoWire, and the X tapes. Every row has a small headshot and an age description next to the name. BK Value is that rank on a decaying curve (12,000 at 1.01). Filter by position. Per-source ranks live in the source list at the bottom so the board stays readable.</p>
     <p class="note">Position</p>
     <div class="filters" id="keep-pos"><button type="button" class="active" data-pos="all">All</button>
       <button type="button" data-pos="QB">QB</button>
