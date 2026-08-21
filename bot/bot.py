@@ -745,11 +745,11 @@ def build_bot():
         emb.add_field(name=pb["name"], value=f"PPR #{ppr_rank(pb) if ppr_rank(pb) != 999 else '—'} · Keep #{keep_rank(pb)}", inline=True)
         await interaction.response.send_message(embed=emb)
 
-    @bot.tree.command(name="sources", description="Boards inside the Superflex aggregate")
+    @bot.tree.command(name="sources", description="30+ Super Aggregate desks inside The Keep")
     async def sources_cmd(interaction: discord.Interaction):
         src = desk.cat.raw.get("sources") or []
         emb = discord.Embed(
-            title="10 Superflex sources",
+            title=f"Super Aggregate · {len(src)} desks",
             description="\n".join(f"• {s}" for s in src),
             color=INK,
         )

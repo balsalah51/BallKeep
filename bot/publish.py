@@ -21,7 +21,7 @@ CHANNELS = [
     ("tape", "2025 and college highlight links"),
     ("nfl-slate", "2026 nfl schedule, every week"),
     ("mlb-slate", "september baseball, every club"),
-    ("sources", "the ten superflex boards inside the keep"),
+    ("sources", "the 30+ super aggregate desks inside the keep"),
     ("player-files", "every football player page, plus/minus, and ranks"),
     ("bb-keep", "baseball dynasty top 400"),
     ("bb-lineup", "dynasty hitters only"),
@@ -120,10 +120,10 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-keep"])
     await _post_list(
         channels["the-keep"],
-        "The Keep — Superflex Dynasty Top 300",
+        "The Keep — Superflex Dynasty Top 400",
         cat.raw["keep"],
         cat,
-        "Keystone board. Average of 10 Superflex sources. Top 300.",
+        "Super Aggregate of 30+ desks. 50% long boards, 50% the rest. Top 400.",
     )
     await note("The Keep posted.")
 
@@ -237,10 +237,10 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["sources"])
     src = cat.raw.get("sources") or []
     await channels["sources"].send(
-        f"**Superflex sources inside The Keep** · {cat.updated}\n"
+        f"**Super Aggregate desks inside The Keep** · {cat.updated}\n"
         + "\n".join(f"• {s}" for s in src)
         + f"\n\n{cat.raw.get('algorithm') or ''}\n"
-        "Same boards, same order, same numbers as ballkeep.com."
+        "Long core is half the Super. Same desks, same numbers as ballkeep.com."
     )
 
     files = [p for p in cat.players if p.get("sport") != "baseball"]

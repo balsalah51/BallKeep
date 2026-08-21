@@ -74,7 +74,10 @@ img.face {
 }
 .name-stack { min-width: 0; flex: 1; display: block; }
 table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
-.c-age { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
+.age-desc {
+  color: var(--muted); font-weight: 700; font-variant-numeric: tabular-nums;
+  white-space: nowrap; font-size: 13px; margin-left: 8px;
+}
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
 .filters button {
   border: 1px solid var(--line); background: #fff; color: var(--ink);
@@ -121,6 +124,16 @@ a.news-item:hover h3 { color: var(--forest); }
 .kind.practice { background: var(--cream); }
 .kind.x { background: var(--navy); color: var(--cream); }
 .kind.video { background: var(--stitch); color: #fff; }
+.x-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 12px; }
+a.x-card { color: inherit; padding: 0; overflow: hidden; }
+a.x-card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--navy); }
+a.x-card h3 { margin: 10px 12px 4px; font-size: 15px; }
+a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
+.x-kind {
+  display: inline-block; margin: 10px 12px 0; font-size: 11px; font-weight: 800;
+  letter-spacing: 0.08em; text-transform: uppercase; background: var(--navy); color: var(--cream);
+  border-radius: 999px; padding: 2px 8px;
+}
 .source-list { list-style: none; margin: 0; padding: 0; }
 .source-row { padding: 10px 0; border-bottom: 1px solid var(--line); }
 .source-row a { font-weight: 800; }

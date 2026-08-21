@@ -7,13 +7,15 @@ on:
   workflow_dispatch:
     inputs:
       sport:
-        description: "football, baseball, or both"
-        default: both
+        description: "football, baseball, soccer, both, or all"
+        default: all
         type: choice
         options:
+          - all
           - both
           - football
           - baseball
+          - soccer
 
 concurrency:
   group: bk-news
@@ -36,7 +38,10 @@ jobs:
         run: python3 scripts/test_news.py
 
       - name: Scrape wires
-        run: python3 scripts/news_scrape.py --sport "${{ github.event.inputs.sport || 'both' }}"
+        run: python3 scripts/news_scrape.py --sport "${{ github.event.inputs.sport || 'all' }}"
+
+      - name: Pull The X tape
+        run: python3 scripts/x_tape.py --sport all
 
       - name: Rebuild site
         run: python3 scripts/build_site.py

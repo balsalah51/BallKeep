@@ -102,6 +102,33 @@ VIDEO_QUERIES_FOOTBALL = [
 VIDEO_QUERIES_BASEBALL = [
     "MLB injury OR manager site:youtube.com",
 ]
+SOCCER_FEEDS = [
+    ("BBC Football", "https://feeds.bbci.co.uk/sport/football/rss.xml"),
+    ("Guardian Football", "https://www.theguardian.com/football/rss"),
+    ("ESPN Soccer", "https://www.espn.com/espn/rss/soccer/news"),
+    ("Sky Sports Football", "https://www.skysports.com/rss/12040"),
+]
+
+SOCCER_TOPICS = [
+    "Premier League injury",
+    "Premier League transfer OR signed OR loan",
+    "FPL injury OR flagged",
+    "Premier League manager press conference",
+]
+
+X_QUERIES_SOCCER = [
+    "Premier League (injury OR transfer) site:x.com",
+    "FPL (injury OR flagged) site:x.com",
+]
+VIDEO_QUERIES_SOCCER = [
+    "Premier League injury OR transfer site:youtube.com",
+]
+
+WIRES = {
+    "football": (FOOTBALL_FEEDS, FOOTBALL_TOPICS, X_QUERIES_FOOTBALL, VIDEO_QUERIES_FOOTBALL),
+    "baseball": (BASEBALL_FEEDS, BASEBALL_TOPICS, X_QUERIES_BASEBALL, VIDEO_QUERIES_BASEBALL),
+    "soccer": (SOCCER_FEEDS, SOCCER_TOPICS, X_QUERIES_SOCCER, VIDEO_QUERIES_SOCCER),
+}
 
 Fetcher = Callable[[str], str | None]
 
@@ -237,6 +264,31 @@ def load_roster(sport: str) -> list[dict]:
             return []
         data = json.loads(path.read_text())
         return data if isinstance(data, list) else []
+    if sport == "soccer":
+        path = ROOT / "data" / "pl-pitch.json"
+        if not path.exists():
+            return []
+        try:
+            data = json.loads(path.read_text())
+        except json.JSONDecodeError:
+            return []
+        rows = []
+        seen = set()
+        for r in (data.get("premier") or data.get("pitch") or []):
+            name = r.get("name") or ""
+            key = r.get("key") or slugify_name(name)
+            if not name or key in seen:
+                continue
+            seen.add(key)
+            rows.append({
+                "key": key,
+                "name": name,
+                "slug": slugify_name(name),
+                "pos": r.get("pos") or "",
+                "team": r.get("team") or "",
+                "lists": {"The Premier": r.get("bk") or r.get("premier")},
+            })
+        return rows
     path = ROOT / "data" / "bb-keep.json"
     if not path.exists():
         return []
@@ -289,10 +341,7 @@ def collect_sport(
     now = now or utcnow()
     index = build_player_index(roster)
     seen = state.setdefault("seen", {}).setdefault(sport, {})
-    feeds = FOOTBALL_FEEDS if sport == "football" else BASEBALL_FEEDS
-    topics = FOOTBALL_TOPICS if sport == "football" else BASEBALL_TOPICS
-    xq = X_QUERIES_FOOTBALL if sport == "football" else X_QUERIES_BASEBALL
-    vq = VIDEO_QUERIES_FOOTBALL if sport == "football" else VIDEO_QUERIES_BASEBALL
+    feeds, topics, xq, vq = WIRES[sport]
 
     jobs: list[tuple[str, str]] = [(name, url) for name, url in feeds]
     for q in topics:
@@ -304,6 +353,8 @@ def collect_sport(
     for p in player_query_slice(roster, now, size=8):
         if sport == "football":
             q = f'"{p["name"]}" NFL (injury OR roster OR coach OR IR OR practice)'
+        elif sport == "soccer":
+            q = f'"{p["name"]}" (Premier League OR FPL) (injury OR transfer OR flagged)'
         else:
             q = f'"{p["name"]}" MLB (injury OR IL OR DFA OR roster OR trade)'
         jobs.append((f"player:{p['name']}", google_news_url(q)))
@@ -329,6 +380,8 @@ def collect_sport(
             if sport == "football" and re.search(r"\b(mlb|baseball)\b", blob) and not re.search(r"\bnfl\b", blob):
                 continue
             if sport == "baseball" and "nfl" in blob and "mlb" not in blob:
+                continue
+            if sport == "soccer" and re.search(r"\b(nfl|mlb)\b", blob) and not re.search(r"\b(premier|fpl|soccer|epl)\b", blob):
                 continue
             seen[item["hash"]] = iso(now)
             fresh.append(item)
@@ -398,10 +451,15 @@ def run(sport: str, fetch: Fetcher = default_fetch, sleep_s: float = 0.35) -> di
 
 def main():
     ap = argparse.ArgumentParser(description="Scrape BK News wires into data/news/")
-    ap.add_argument("--sport", choices=("football", "baseball", "both"), default="both")
+    ap.add_argument("--sport", choices=("football", "baseball", "soccer", "both", "all"), default="both")
     ap.add_argument("--sleep", type=float, default=0.35)
     args = ap.parse_args()
-    sports = ["football", "baseball"] if args.sport == "both" else [args.sport]
+    if args.sport in ("all",):
+        sports = ["football", "baseball", "soccer"]
+    elif args.sport == "both":
+        sports = ["football", "baseball"]
+    else:
+        sports = [args.sport]
     for sport in sports:
         run(sport, sleep_s=args.sleep)
 
