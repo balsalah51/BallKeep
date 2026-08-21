@@ -5,13 +5,15 @@ Static site for [ballkeep.com](https://ballkeep.com), published from this reposi
 Powder-blue football desk. Navy-and-cream **BaseBallKeep** through the footer button.
 
 ## Football
-- **The Keep** — Superflex dynasty top 400 (daily keystone)
+- **The Keep** — Superflex dynasty Super Aggregate top 400 (30+ desks; 50% the four long boards, 50% every other desk that ranked the player)
+- **The Board** — the four published long Superflex boards only, 500 names, no Super mash
+- **The X** — fun tape from X, not news
 - **Trade Calculators** — Superflex Dynasty, 1QB Dynasty, Redraft PPR, Redraft Standard. Rank on each list becomes BK Value.
 - **Recent Deals** — type a player, get every Superflex/1QB package on the desk tape
 - Redraft PPR / Redraft Standard (200 names)
 - 2026 drafted rookies
 - BK Hot 'n' Cold
-- The Board (long proprietary aggregate)
+- The Board (long tape of the four published boards)
 - **Player Pages** — every Keep 400 name, plus redraft, rookies, and Hot/Cold: ranks, board dump, a headshot, and a 2025 NFL (or college) highlight when we have the tape
 - **BK News** — football injuries, roster moves, and coach reports scraped hourly from league RSS, Google News, X (`site:x.com`), and YouTube, then clustered into short stories with an aggregate summary and source links
 - NFL 2026 schedules (all 32 teams)

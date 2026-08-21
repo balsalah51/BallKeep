@@ -21,7 +21,7 @@ CHANNELS = [
     ("tape", "2025 and college highlight links"),
     ("nfl-slate", "2026 nfl schedule, every week"),
     ("mlb-slate", "september baseball, every club"),
-    ("sources", "the ten superflex boards inside the keep"),
+    ("sources", "the 30+ super aggregate desks inside the keep"),
     ("player-files", "every football player page, plus/minus, and ranks"),
     ("bb-keep", "baseball dynasty top 400"),
     ("bb-lineup", "dynasty hitters only"),
@@ -120,10 +120,10 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-keep"])
     await _post_list(
         channels["the-keep"],
-        "The Keep — Superflex Dynasty Top 300",
+        "The Keep — Superflex Dynasty Top 400",
         cat.raw["keep"],
         cat,
-        "Keystone board. Average of 10 Superflex sources. Top 300.",
+        "Super Aggregate of 30+ desks. 50% long boards, 50% the rest. Top 400.",
     )
     await note("The Keep posted.")
 
@@ -237,10 +237,10 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["sources"])
     src = cat.raw.get("sources") or []
     await channels["sources"].send(
-        f"**Superflex sources inside The Keep** · {cat.updated}\n"
+        f"**Super Aggregate desks inside The Keep** · {cat.updated}\n"
         + "\n".join(f"• {s}" for s in src)
         + f"\n\n{cat.raw.get('algorithm') or ''}\n"
-        "Same boards, same order, same numbers as ballkeep.com."
+        "Long core is half the Super. Same desks, same numbers as ballkeep.com."
     )
 
     files = [p for p in cat.players if p.get("sport") != "baseball"]
@@ -309,7 +309,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "PitchKeep — The Premier (hybrid 400: 50% Sleeper BPL 2025, 50% every other board)",
         cat.raw.get("pl_premier") or [],
         cat,
-        "The flagship PK list. Purple desk at https://ballkeep.com/pl/the-premier.html",
+        "The Premier. 50% Sleeper, 50% the other boards. https://ballkeep.com/pl/the-premier.html",
     )
     await _wipe(channels["the-pitch"])
     await _post_list(
@@ -320,13 +320,13 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "Sleeper-only counting board. Purple desk at https://ballkeep.com/pl/the-pitch.html",
     )
     await _wipe(channels["pl-attack"])
-    await _post_list(channels["pl-attack"], "Attack — FPL forwards", cat.raw.get("pl_fwd") or [], cat)
+    await _post_list(channels["pl-attack"], "Attack — forwards", cat.raw.get("pl_fwd") or [], cat)
     await _wipe(channels["pl-midfield"])
-    await _post_list(channels["pl-midfield"], "Midfield — FPL engine room", cat.raw.get("pl_mid") or [], cat)
+    await _post_list(channels["pl-midfield"], "Midfield", cat.raw.get("pl_mid") or [], cat)
     await _wipe(channels["pl-defence"])
-    await _post_list(channels["pl-defence"], "Defence — FPL back line", cat.raw.get("pl_def") or [], cat)
+    await _post_list(channels["pl-defence"], "Defence", cat.raw.get("pl_def") or [], cat)
     await _wipe(channels["pl-keepers"])
-    await _post_list(channels["pl-keepers"], "Keepers — between the sticks", cat.raw.get("pl_gkp") or [], cat)
+    await _post_list(channels["pl-keepers"], "Keepers", cat.raw.get("pl_gkp") or [], cat)
     pl_files = cat.raw.get("pl_players") or []
     await _wipe(channels["pl-files"], limit=400)
     await channels["pl-files"].send(

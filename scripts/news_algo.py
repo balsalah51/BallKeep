@@ -3,7 +3,7 @@
 The scrape job (news_scrape.py) pulls cheap RSS + a rotating slice of
 player Google News queries every hour. This module turns those raw items
 into clustered stories with player-page links. Football publishes at
-/news.html; baseball publishes on BaseBallKeep at /bb/news.html.
+/news.html; baseball at /bb/news.html; soccer at /pl/news.html.
 """
 from __future__ import annotations
 
@@ -50,7 +50,7 @@ COACH_RE = re.compile(
     r"scheme|play-caller|coordinator|manager|skipper)\b",
     re.I,
 )
-TRADE_RE = re.compile(r"\b(trade[ds]?|dealt|acquired|sent to|in exchange)\b", re.I)
+TRADE_RE = re.compile(r"\b(trade[ds]?|dealt|acquired|sent to|in exchange|transfer[s]?|loaned)\b", re.I)
 PRACTICE_RE = re.compile(
     r"\b(practice|walkthrough|training camp|padded|walk-through|full go|"
     r"did not practice|returned to practice)\b",
@@ -208,6 +208,8 @@ def load_news_stories(sport: str, root: Path | None = None) -> list:
             continue
         if sport == "baseball" and ("nfl" in blob and "mlb" not in blob or NFL_LEAK_RE.search(blob)):
             continue
+        if sport == "soccer" and re.search(r"\b(nfl|mlb)\b", blob) and not re.search(r"\b(premier|fpl|soccer|epl)\b", blob):
+            continue
         cleaned.append(s)
     return cleaned
 
@@ -269,6 +271,10 @@ def publisher_from_url(url: str) -> str:
         "youtube.com": "YouTube",
         "youtu.be": "YouTube",
         "mlb.com": "MLB.com",
+        "bbc.co.uk": "BBC",
+        "skysports.com": "Sky Sports",
+        "theguardian.com": "The Guardian",
+        "premierleague.com": "Premier League",
         "news.google.com": "Google News",
     }
     if host in aliases:

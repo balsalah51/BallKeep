@@ -29,6 +29,7 @@ from news_algo import (  # noqa: E402
     news_when,
     rematch_stories,
 )
+from x_tape import cards_html as x_cards  # noqa: E402
 from seo import canon, clip, grafs_html, head_tags, rank_spread_graph, value_bars  # noqa: E402
 
 
@@ -53,6 +54,7 @@ BB_NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
     ("news.html", "News"),
+    ("the-x.html", "The X"),
     ("the-lineup.html", "The Lineup"),
     ("pitchers.html", "BK's Pitchers"),
     ("bullpen.html", "Bullpen SV"),
@@ -94,7 +96,7 @@ BB_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Dynasty Baseball Rankings (Top 400) | BaseBallKeep",
-        "Overall dynasty baseball top 400, rebuilt August 20, 2026. 23-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
+        "Overall dynasty baseball top 400, rebuilt August 21, 2026. 23-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
         "img/bb-logo.jpg",
     ),
     "the-lineup.html": (
@@ -135,6 +137,11 @@ BB_SEO = {
     "players/index.html": (
         "MLB Dynasty Player Files | BaseBallKeep",
         "The Keep top 400, one cream card each: 2026/2025 line, every board, tape.",
+        "img/bb-logo.jpg",
+    ),
+    "the-x.html": (
+        "The X — Baseball Memes from X | BaseBallKeep",
+        "Fun tape, not news. MLB memes and shitposts pulled from X via Google News.",
         "img/bb-logo.jpg",
     ),
     "waivers-dynasty.html": (
@@ -251,8 +258,6 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
     cols = ["BK", "Player", "Pos", "Team"]
-    if show_age:
-        cols.append("Age")
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
@@ -264,19 +269,18 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
         if show_age and not age_txt:
             age_txt = str((media.get(r.get("key") or "") or {}).get("age") or "")
-        age_label = f"age {age_txt}" if age_txt else ""
-        age_bit = f" · {age_label}" if show_age and age_label else ""
+        age_label = f"age {age_txt}" if show_age and age_txt else ""
+        age_span = f'<span class="age-desc">{esc(age_label)}</span>' if age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos0)}">{esc(pos)}</span>'
-            f" · {esc(team)}{esc(age_bit)}</div>"
+            f" · {esc(team)}</div>"
         )
         face = ""
         if faces:
             face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
-        age_td = f'<td class="c-age">{esc(age_label or "—")}</td>' if show_age else ""
         stack = (
             f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
-            f'<strong>{esc(r["name"])}</strong></a>{meta}</span>'
+            f'<strong>{esc(r["name"])}</strong></a>{age_span}{meta}</span>'
         )
         body.append(
             f'<tr data-pos="{esc(pos0)}" data-group="{esc(r.get("group") or "")}">'
@@ -284,7 +288,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
             f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos0)}">{esc(pos)}</span></td>'
             f'<td class="c-team">{esc(team)}</td>'
-            f"{age_td}{extra_cells(r)}"
+            f"{extra_cells(r)}"
             "</tr>"
         )
     cls = "rank-table faces" if faces else "rank-table"
@@ -868,12 +872,6 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
                 '<p class="kicker" style="margin-top:22px">BK News</p>'
                 f'<ul class="source-list">{lis}</ul>'
             )
-        seo_title = f"{r['name']} Dynasty Rank #{r['bk']} ({r.get('pos') or ''} {r.get('team') or media.get('team') or ''})".strip()
-        seo_desc = clip(
-            f"{r['name']} is BaseBallKeep #{r['bk']}, {r.get('pos') or ''} "
-            f"{r.get('team') or media.get('team') or ''}. Average {r.get('avg')} across {r.get('n') or 0} boards. "
-            f"BK Value {int(r.get('value') or 0):,}. Updated {UPDATED}."
-        )
         body = f"""
     <p class="kicker">Player File · {esc(r.get("pos") or media.get("pos") or "")} {esc(r.get("team") or media.get("team") or "")}</p>
     <div class="player-hero">
@@ -896,18 +894,13 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     {neighbors(keep, i)}
     <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-keep.html">The Keep</a> · <a href="../news.html">BK News</a> · <a href="../the-lineup.html">The Lineup</a> · <a href="../pitchers.html">Pitchers</a> · <a href="../trade-keep.html">Calculator</a></p>
     """
-        write(
-            f"bb/players/{slug}.html",
-            bb_page(
-                r["name"],
-                f"players/{slug}.html",
-                body,
-                depth=2,
-                doc_title=seo_title,
-                description=seo_desc,
-                image=img,
-            ),
+        seo_title = f"{r['name']} Dynasty Rank #{r['bk']} ({r.get('pos') or ''} {r.get('team') or media.get('team') or ''})".strip()
+        seo_desc = clip(
+            f"{r['name']} is BaseBallKeep #{r['bk']}, {r.get('pos') or ''} "
+            f"{r.get('team') or media.get('team') or ''}. Average {r.get('avg')} across {r.get('n') or 0} boards. "
+            f"BK Value {int(r.get('value') or 0):,}. Updated {UPDATED}."
         )
+        write(f"bb/players/{slug}.html", bb_page(r["name"], f"players/{slug}.html", body, depth=2, doc_title=seo_title, description=seo_desc, image=img))
         keep_html.add(f"{slug}.html")
         cards.append(
             f'<a class="tile player-card" href="{slug}.html" data-pos="{esc((r.get("pos") or "").split("/")[0])}" data-group="{esc(r.get("group") or "")}">'
@@ -956,7 +949,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     flt, js = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
     hub = f"""
     <p class="kicker">Player Files</p>
-    <h1>The Keep, one name at a time</h1>
+    <h2>The Keep, one name at a time</h2>
     <p class="note">The Keep top 400. Headshot, 2026/2025 line, ranks, every board. Filter the grid.</p>
     {flt}
     <div class="player-grid" id="bb-cards">{''.join(cards)}</div>
@@ -996,7 +989,7 @@ def trade_payload(label, file, blurb, rows, picks):
 def write_trade(payload, depth=1):
     body = f"""
     <p class="kicker">Trade Calculator</p>
-    <h1>{esc(payload["label"])}</h1>
+    <h2>{esc(payload["label"])}</h2>
     <p class="note">{esc(payload["blurb"])} Fair is within 8%. Same BK Value curve as football: rank 1 = 12,000.</p>
     <p class="filters">
       <a href="trade.html">All calculators</a>
@@ -1025,7 +1018,7 @@ def waiver_page(title, path, kicker, note, items, hot=False):
         )
     body = f"""
     <p class="kicker">{esc(kicker)}</p>
-    <h1>{esc(title)}</h1>
+    <h2>{esc(title)}</h2>
     <p class="note">{esc(note)}</p>
     <div class="grid">{''.join(cards)}</div>
     """
@@ -1127,7 +1120,7 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
     </script>"""
     body = f"""
     <p class="kicker">BK News · Baseball · Hourly wire</p>
-    <h1>BK News</h1>
+    <h2>BK News</h2>
     <p class="note">Injuries, IL stints, roster moves, and manager reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every BaseBallKeep player page named in the tape. The scrape repeats on its own every hour. Football BK News lives on <a href="../news.html">Ball Keep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{''.join(chips)}</div>
@@ -1178,7 +1171,7 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
         story_body = f"""
     <p class="kicker">BK News · {esc(label)}</p>
     <p class="news-meta">{esc(news_when(s.get("updated") or s.get("published") or ""))} · {nsrc} source{"s" if nsrc != 1 else ""}</p>
-    <h1>{esc(s.get("headline") or "Update")}</h1>
+    <h2>{esc(s.get("headline") or "Update")}</h2>
     <section class="panel">
       <p class="kicker">Aggregate</p>
       <p>{esc(s.get("summary") or s.get("blurb") or "")}</p>
@@ -1191,16 +1184,7 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
     </section>
     <p class="note" style="margin-top:18px"><a href="../news.html">All BK News</a> · <a href="../players/index.html">Player pages</a></p>
     """
-        write(
-            f"bb/news/{slug}.html",
-            bb_page(
-                s.get("headline") or "BK News",
-                f"news/{slug}.html",
-                story_body,
-                depth=2,
-                description=clip(s.get("summary") or s.get("blurb") or s.get("headline") or "BK News baseball story."),
-            ),
-        )
+        write(f"bb/news/{slug}.html", bb_page(s.get("headline") or "BK News", f"news/{slug}.html", story_body, depth=2))
         urls.append(f"https://ballkeep.com/bb/news/{slug}.html")
     return urls
 
@@ -1211,7 +1195,7 @@ def write_baseball_site():
     saves, svh, redraft = u["saves"], u["svh"], u["redraft"]
     picks = [{"id": slugify(p["name"]), **p} for p in u["picks"]]
     media = load_bb_media()
-    for r in keep:
+    for r in keep + lineup + pitchers + redraft:
         if r.get("age") in (None, "") and media.get(r.get("key") or ""):
             r["age"] = media[r["key"]].get("age") or ""
     roster = keep_as_roster(keep)
@@ -1225,7 +1209,8 @@ def write_baseball_site():
 
     tiles = [
         ("the-keep.html", "The Keep", "Overall dynasty top 400. 23-board aggregate."),
-        ("news.html", "BK News", "Hourly IL, roster, and manager tape. Click a story for the aggregate and the sources."),
+        ("the-x.html", "The X", "MLB memes from X. Pictures."),
+        ("news.html", "BK News", "Hourly IL, roster, and manager tape."),
         ("the-lineup.html", "The Lineup", "Dynasty hitters only. The bats you keep."),
         ("pitchers.html", "BK's Pitchers", "Top 150 dynasty arms, SP and the two-way unicorn."),
         ("bullpen.html", "Bullpen — Saves", "Top 100 relief pitchers for saves leagues."),
@@ -1253,76 +1238,73 @@ def write_baseball_site():
     <section class="hero" style="background-image:url('../img/bb-hero.jpg')">
       <div class="hero-card">
         <p class="kicker" style="color:#ffd36a">Updated {UPDATED}</p>
-        <h1>{wordmark()}</h1>
-        <p>A navy-and-cream desk for dynasty baseball. Twenty-three boards. One Keep. The football site is still next door.</p>
+        <h2>{wordmark()}</h2>
       </div>
     </section>
     <section class="panel">
-      <p class="kicker">What This Desk Is</p>
+      <p class="kicker">The desk</p>
       <h2>Keep the guys who still mash in 2030.</h2>
-      <p class="note"><strong>Redraft baseball</strong> is this summer's counting stats — you stream arms, you chase saves, you survive September. <strong>Dynasty baseball</strong> prices the next five years: peak age, prospect lists, and whether a 22-year-old shortstop is still a shortstop in 2030.</p>
-      <p class="note">The Keep is an overall dynasty top 400 aggregated from 23 public boards, led by RotoGraphs' Aug 14 discounted-dollar model and The Dynasty Guru's Aug 10 points Top 500. The Lineup strips the pitchers (every hitter we can pin, up to 400). BK's Pitchers is the other half (150). The bullpen is two sports: saves, then saves-plus-holds.</p>
+      <p class="note">The Keep is an overall dynasty top 400 from 23 public boards. The Lineup is the bats. BK's Pitchers is the arms.</p>
     </section>
-    {latest_html}
-    <p class="note" style="margin-top:18px"><img src="../img/bb-stitch.jpg" alt="Baseball on forest grass" style="width:100%;border-radius:16px" /></p>
     <div class="grid-3" style="margin-top:16px">
       {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
     </div>
+    {latest_html}
     """
     write("bb/index.html", bb_page("Home", "index.html", home))
 
     flt, js = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
     keep_body = f"""
     <p class="kicker">Keystone · Overall Dynasty</p>
-    <h1>The Keep</h1>
+    <h2>The Keep</h2>
     <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — 23 boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
-    {value_bars(keep, 12, "#1f6b3a", "Keep value graph")}
     {flt}
     <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
+    {value_bars(keep, 12, "#1f6b3a", "Keep value graph")}
     {sources_panel()}
     """
     write("bb/the-keep.html", bb_page("The Keep", "the-keep.html", keep_body, js))
 
     lu_body = f"""
     <p class="kicker">Hitters Only</p>
-    <h1>The Lineup</h1>
+    <h2>The Lineup</h2>
     {banner("bb-lineup.jpg", "Bats in a dugout rack")}
     <p class="note">Every hitter we could pin to a dynasty board, re-ranked among bats only. Ohtani lives here as a DH. Pitchers have their own building.</p>
-    {value_bars(lineup, 12, "#1f6b3a", "Lineup value graph")}
     <div class="panel">{rank_table(lineup, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
+    {value_bars(lineup, 12, "#1f6b3a", "Lineup value graph")}
     {sources_panel()}
     """
     write("bb/the-lineup.html", bb_page("The Lineup", "the-lineup.html", lu_body))
 
     pit_body = f"""
     <p class="kicker">Dynasty Arms</p>
-    <h1>BK's Pitchers</h1>
+    <h2>BK's Pitchers</h2>
     {banner("bb-pitch.jpg", "Baseball in a pitcher's grip")}
     <p class="note">Top 150 overall dynasty pitchers. Starting pitchers plus the two-way unicorn. Relievers who crack the overall pitcher board sneak in; the full bullpen lives next door.</p>
-    {value_bars(pitchers, 12, "#1f6b3a", "Pitcher value graph")}
     <div class="panel">{rank_table(pitchers, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
+    {value_bars(pitchers, 12, "#1f6b3a", "Pitcher value graph")}
     {sources_panel()}
     """
     write("bb/pitchers.html", bb_page("BK's Pitchers", "pitchers.html", pit_body))
 
     sv_body = f"""
     <p class="kicker">Relief · Saves</p>
-    <h1>BK's Bullpen — Saves</h1>
+    <h2>BK's Bullpen — Saves</h2>
     {banner("bb-bullpen.jpg", "Bullpen mound at twilight")}
     <p class="note">Top 100 relief pitchers for traditional saves leagues. Chart mix: FantasyPros closer report (Aug 20), ESPN reliever depth chart, and RPs who survive the overall Keep. Bryan Baker has the MLB lead. Diaz is leaking. Scott is the add.</p>
-    {value_bars(saves, 12, "#1f6b3a", "Saves value graph")}
     <div class="panel">{rank_table(saves, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
+    {value_bars(saves, 12, "#1f6b3a", "Saves value graph")}
     {sources_panel()}
     """
     write("bb/bullpen.html", bb_page("Bullpen Saves", "bullpen.html", sv_body))
 
     svh_body = f"""
     <p class="kicker">Relief · Saves + Holds</p>
-    <h1>BK's Bullpen — SV+H</h1>
+    <h2>BK's Bullpen — SV+H</h2>
     {banner("bb-bullpen.jpg", "Bullpen mound at twilight")}
     <p class="note">Same bullpen, different sport. FantasyPros Week 21 SV+H board (Baker / Miller / Varland) plus setup men the ESPN chart actually uses. If your league counts holds, this is the page. The saves page is the other one.</p>
-    {value_bars(svh, 12, "#1f6b3a", "SV+H value graph")}
     <div class="panel">{rank_table(svh, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
+    {value_bars(svh, 12, "#1f6b3a", "SV+H value graph")}
     {sources_panel()}
     """
     write("bb/bullpen-holds.html", bb_page("Bullpen SV+H", "bullpen-holds.html", svh_body))
@@ -1330,11 +1312,11 @@ def write_baseball_site():
     rd_flt, rd_js = filter_js(["HIT", "SP", "RP", "UT"])
     rd_body = f"""
     <p class="kicker">2026 Rest of Season</p>
-    <h1>Redraft</h1>
+    <h2>Redraft</h2>
     <p class="note">One-year board. We start from the dynasty mix, then tax kids who are not helping this month and boost veterans who still count. Relievers slide — unless you are in a saves crunch, use the wire.</p>
-    {value_bars(redraft, 12, "#1f6b3a", "Redraft value graph")}
     {rd_flt}
-    <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{int(r["value"]):,}</td>')}</div>
+    <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{int(r["value"]):,}</td>', media=media, faces=True, show_age=True)}</div>
+    {value_bars(redraft, 12, "#1f6b3a", "Redraft value graph")}
     {sources_panel()}
     """
     write("bb/redraft.html", bb_page("Redraft", "redraft.html", rd_body, rd_js))
@@ -1352,7 +1334,7 @@ def write_baseball_site():
     hub_tiles = [(m["file"], m["label"], m["blurb"]) for m in modes]
     trade_hub = f"""
     <p class="kicker">Trade Calculators</p>
-    <h1>Six Calculators, One Curve</h1>
+    <h2>Six Calculators, One Curve</h2>
     <p class="note">Rank becomes BK Value the same way it does on the football desk. Rank 1 is 12,000. Fair is within 8%. Dynasty calcs include 2027/2028 pick chips mapped to equivalent ranks.</p>
     <div class="grid">{''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in hub_tiles)}</div>
     """
@@ -1377,6 +1359,14 @@ def write_baseball_site():
 
     player_urls, player_files = write_player_pages(keep, lineup, pitchers, redraft, news_by_player, saves, svh)
     news_urls = render_bb_news_pages(stories)
+    x_body = f"""
+    <p class="kicker">Fun tape · not news</p>
+    <h2>The X</h2>
+    <p class="note">MLB memes and shitposts pulled from X. Pictures when the wire carries them.</p>
+    {x_cards("baseball", 1, esc)}
+    <p class="note" style="margin-top:16px"><a href="../the-x.html">Football The X</a> · <a href="../pl/the-x.html">PitchKeep The X</a></p>
+    """
+    write("bb/the-x.html", bb_page("The X", "the-x.html", x_body))
     (ROOT / "data/bb-keep.json").write_text(json.dumps({
         "updated": UPDATED,
         "keep": keep,
@@ -1402,7 +1392,7 @@ def write_baseball_site():
         "urls": ["https://ballkeep.com/bb/"] + [
             "https://ballkeep.com/bb/" + p
             for p in [
-                "the-keep.html", "the-lineup.html", "pitchers.html", "bullpen.html",
+                "the-keep.html", "news.html", "the-x.html", "the-lineup.html", "pitchers.html", "bullpen.html",
                 "bullpen-holds.html", "redraft.html", "trade.html",
                 "trade-keep.html", "trade-lineup.html", "trade-pitchers.html",
                 "trade-redraft.html", "trade-saves.html", "trade-svh.html",
