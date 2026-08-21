@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 20, 2026"
+UPDATED = "August 21, 2026"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -616,12 +616,49 @@ def load_player_media():
     return {}
 
 
-def apply_media_ages(rows, media):
+def load_age_bank():
+    """Ages from the last roster/Keep dump, then Sleeper birthdays for new names."""
+    bank = {}
+    roster = ROOT / "data/player_roster.json"
+    if roster.exists():
+        try:
+            for p in json.loads(roster.read_text()):
+                key = p.get("key") or norm_name(p.get("name") or "")
+                if key and p.get("age") not in (None, ""):
+                    bank[key] = p["age"]
+        except Exception:
+            pass
+    keep = ROOT / "data/the-keep.json"
+    if keep.exists():
+        try:
+            blob = json.loads(keep.read_text())
+            for p in blob.get("players") or []:
+                key = p.get("key") or norm_name(p.get("name") or "")
+                if key and p.get("age") not in (None, "") and key not in bank:
+                    bank[key] = p["age"]
+        except Exception:
+            pass
+    try:
+        from fetch_player_media import ensure_sleeper, sleeper_index
+        if ensure_sleeper():
+            for key, rec in sleeper_index().items():
+                age = rec.get("age")
+                if age not in (None, "") and key not in bank:
+                    bank[key] = age
+    except Exception:
+        pass
+    return bank
+
+
+def apply_media_ages(rows, media, extra=None):
+    extra = extra or {}
     for r in rows:
         if r.get("age") not in (None, ""):
             continue
         key = r.get("key") or norm_name(r.get("name") or "")
         age = (media.get(key) or {}).get("age")
+        if age in (None, ""):
+            age = extra.get(key)
         if age not in (None, ""):
             r["age"] = age
 
@@ -1695,9 +1732,10 @@ def main():
     ppr, std = redraft_lists()
     profiles = collect_profiles(keep, board, ppr, std)
     media = load_player_media()
-    apply_media_ages(keep, media)
-    apply_media_ages(board, media)
-    apply_media_ages(profiles, media)
+    ages = load_age_bank()
+    apply_media_ages(keep, media, ages)
+    apply_media_ages(board, media, ages)
+    apply_media_ages(profiles, media, ages)
     (ROOT / "data" / "player_roster.json").write_text(json.dumps(profiles, indent=2))
 
     (ROOT / "data/the-keep.json").write_text(json.dumps({

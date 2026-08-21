@@ -1,4 +1,4 @@
-"""BaseBallKeep ranking sources — August 20, 2026.
+"""BaseBallKeep ranking sources — August 21, 2026.
 
 Long boards are RotoGraphs (Aug 14 model) and The Dynasty Guru points (Aug 10).
 The other boards are compiled slices of those lists plus public August 2026

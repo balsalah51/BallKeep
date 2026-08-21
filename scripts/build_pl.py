@@ -10,7 +10,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 20, 2026"
+UPDATED = "August 21, 2026"
 
 from pl_data import PL_SOURCES, bk_value, load_universe  # noqa: E402
 from pl_copy import get_pl_copy  # noqa: E402
