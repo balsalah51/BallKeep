@@ -283,7 +283,16 @@ def main():
 
     IMG.mkdir(parents=True, exist_ok=True)
     n_img = n_search = n_miss = 0
-    for r in keep:
+    seen = set()
+    rows = []
+    for r in keep + universe.get("lineup", []) + universe.get("pitchers", []) + universe.get("redraft", []):
+        key = r.get("key")
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        rows.append(r)
+    print("unique names", len(rows))
+    for r in rows:
         key = r["key"]
         slug = slugify(r["name"])
         rec = media.get(key) or {}

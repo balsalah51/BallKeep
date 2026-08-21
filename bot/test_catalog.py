@@ -48,6 +48,7 @@ def main():
     assert cat.deals_for("sun god") or cat.deals_for("st brown")
     assert len(cat.deals_for("")) >= 20
     assert len(cat.raw["keep"]) == 400
+    assert len(cat.raw["board"]) == 500, f"board {len(cat.raw.get('board') or [])}"
     bb = cat.raw.get("bb_keep") or []
     assert len(bb) == 400, f"bb keep {len(bb)}"
     assert cat.one("ohtani", sport="baseball")["name"] == "Shohei Ohtani"
@@ -114,6 +115,11 @@ def main():
     assert not tprem["missing"], tprem["missing"]
     assert tpl["total_a"] and tpl["total_b"]
     assert not tpl["missing"], tpl["missing"]
+    assert len(cat.raw.get("sources") or []) >= 30, "The Keep Super Aggregate needs 30+ desks"
+    keep0 = cat.raw["keep"][0]
+    board0 = cat.raw["board"][0]
+    assert (keep0.get("n") or 0) >= 10, keep0
+    assert (board0.get("n") or 0) <= 4, board0
     print("ok", cat.updated, "players", len(cat.players), "keep", len(cat.raw["keep"]), "bb", len(bb), "pitch", len(pitch))
     print("trade", t2["label"], t2["total_a"], "vs", t2["total_b"])
     print("norm jsn", norm("JSN"))

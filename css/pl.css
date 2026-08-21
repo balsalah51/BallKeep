@@ -60,7 +60,10 @@ img.face {
 }
 .name-stack { min-width: 0; flex: 1; display: block; }
 table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
-.c-age { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
+.age-desc {
+  color: var(--muted); font-weight: 700; font-variant-numeric: tabular-nums;
+  white-space: nowrap; font-size: 13px; margin-left: 8px;
+}
 .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 16px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .tile { display: block; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px; text-decoration: none; color: inherit; }
@@ -137,6 +140,29 @@ table.boards tr.lo td { background: rgba(200,16,46,0.08); }
 .panel.season table { font-variant-numeric: tabular-nums; font-size: 14px; }
 .row-meta { display: none; }
 .news-flag { border-left: 6px solid var(--gold); }
+.news-list { display: grid; gap: 12px; }
+a.news-item { color: inherit; }
+a.news-item h3 { margin: 0 0 6px; color: var(--purple); }
+.news-meta { color: var(--muted); font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+.news-players { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.kind {
+  display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
+  text-transform: uppercase; border-radius: 999px; padding: 2px 8px; background: #d4f5e4;
+}
+.kind.injury { background: #f8d0d6; }
+.kind.roster { background: #d7f0d9; }
+.kind.coach { background: #d6e4fb; }
+.kind.trade { background: #f7e6c8; }
+.x-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 12px; }
+a.x-card { color: inherit; padding: 0; overflow: hidden; }
+a.x-card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--purple); }
+a.x-card h3 { margin: 10px 12px 4px; font-size: 15px; }
+a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
+.x-kind {
+  display: inline-block; margin: 10px 12px 0; font-size: 11px; font-weight: 800;
+  letter-spacing: 0.08em; text-transform: uppercase; background: var(--purple); color: #fff;
+  border-radius: 999px; padding: 2px 8px;
+}
 .plusminus { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0; }
 .pm { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
 .video-wrap { position: relative; padding-bottom: 56.25%; height: 0; border-radius: 16px; overflow: hidden; background: #000; }

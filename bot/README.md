@@ -21,7 +21,7 @@ Powder-blue ranks. Red ink. Nicknames, spoilers, and a theatrical keep-or-cut bu
 | `/nfl` `/mlb` | Full 2026 NFL slate and September baseball (`bills`, `yankees` work) |
 | `/bbplayer` `/bbkeep` `/bbtrade` `/bbwire` | BaseBallKeep files, boards, calculator, and waiver wires |
 | `/plplayer` `/pitch` `/pltrade` | PitchKeep files, The Premier hybrid 400, The Pitch (Sleeper BPL), and the trade calculator |
-| `/sources` | The ten Superflex boards inside The Keep |
+| `/sources` | The 30+ Super Aggregate desks inside The Keep |
 | `/publish` | **Admin.** Creates a **BALL KEEP DESK** category and posts every list, every player file, every clip, every NFL week, and the September MLB slate so native Discord search works |
 | `/reload` | Admin. Reload the catalog after a site rebuild |
 | `!bk player maye` | Prefix alias (`!bk video`, `!bk trade Allen vs Bijan`, `!bk top keep`) |
@@ -63,7 +63,7 @@ python3 -m pip install -r bot/requirements.txt
 python3 bot/bot.py
 ```
 
-7. In Discord: `/desk` then `/publish` once. It takes a few minutes — Discord rate-limits channel posts — and writes The Keep, The Board, redraft, rookies, Hot/Cold, pick values, tape, every NFL week, September MLB, the ten Superflex sources, and every player file.
+7. In Discord: `/desk` then `/publish` once. It takes a few minutes — Discord rate-limits channel posts — and writes The Keep, The Board, redraft, rookies, Hot/Cold, pick values, tape, every NFL week, September MLB, the Super Aggregate desks, and every player file.
 
 ## Data
 

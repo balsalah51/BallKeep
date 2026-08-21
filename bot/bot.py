@@ -48,7 +48,7 @@ QUIPS = [
     "Publish the desk once. Search Discord forever.",
     "BaseBallKeep is the other door. Navy, cream, 23 boards.",
     "Saves and SV+H are different sports. Use the right bullpen page.",
-    "PitchKeep is the third door. Purple, pitch green, The Premier hybrid 400.",
+    "PitchKeep: The Premier, The Pitch, the lists, the files.",
     "Haaland scores. Bruno creates. Sleeper pays both. The rest of the 400 is who you own.",
 ]
 
@@ -745,11 +745,11 @@ def build_bot():
         emb.add_field(name=pb["name"], value=f"PPR #{ppr_rank(pb) if ppr_rank(pb) != 999 else '—'} · Keep #{keep_rank(pb)}", inline=True)
         await interaction.response.send_message(embed=emb)
 
-    @bot.tree.command(name="sources", description="Boards inside the Superflex aggregate")
+    @bot.tree.command(name="sources", description="30+ Super Aggregate desks inside The Keep")
     async def sources_cmd(interaction: discord.Interaction):
         src = desk.cat.raw.get("sources") or []
         emb = discord.Embed(
-            title="10 Superflex sources",
+            title=f"Super Aggregate · {len(src)} desks",
             description="\n".join(f"• {s}" for s in src),
             color=INK,
         )
