@@ -93,7 +93,7 @@ def pl_page(title, path, body, extra_js="", depth=1):
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{esc(title)} — PitchKeep</title>
-  <meta name="description" content="PitchKeep Premier League rankings. The Premier hybrid 400, Sleeper BPL 2025, and 24-board consensus." />
+  <meta name="description" content="PitchKeep. Premier League ranks: The Premier, The Pitch, position lists, files, news." />
   <link rel="stylesheet" href="{prefix}css/pl.css" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
@@ -104,7 +104,7 @@ def pl_page(title, path, body, extra_js="", depth=1):
         <img src="{prefix}img/pl-logo.jpg" alt="PitchKeep circular soccer logo" />
         <div>
           <h1>{wordmark()}</h1>
-          <p>Premier League · The Premier · Sleeper BPL</p>
+          <p>Premier League ranks</p>
         </div>
       </a>
       <nav>{''.join(links)}</nav>
@@ -243,7 +243,7 @@ def sources_panel():
         items.append(f"<li>{label} — {esc(note)}</li>")
     return (
         '<section class="panel sources-box"><p class="kicker">Sources</p>'
-        "<h3>The Premier is 50% Sleeper BPL 2025 and 50% every other board. The Pitch is Sleeper only. Unranked is skipped, never 999.</h3>"
+        "<h3>Boards we track</h3>"
         f"<ol>{''.join(items)}</ol></section>"
     )
 
@@ -574,7 +574,7 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp):
     prem_map = {r["key"]: r for r in premier}
     pitch_map = {r["key"]: r for r in pitch}
     media_all = load_pl_media()
-    # Premier is the flagship file order; include anyone on The Pitch who missed the hybrid 400.
+    # Premier 400 first; then anyone on The Pitch who missed the hybrid.
     ordered = list(premier)
     seen = {r["key"] for r in ordered}
     for r in pitch:
@@ -684,9 +684,9 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp):
         })
     flt, js = filter_js(["FWD", "MID", "DEF", "GKP"])
     hub = f"""
-    <p class="kicker">Player Files</p>
+    <p class="kicker">Player files</p>
     <h2>The Premier, one name at a time</h2>
-    <p class="note">The Premier top 400 — hybrid of Sleeper BPL 2025 and every other board. Headshot, five-graf take, 2025/26 line, tape. Filter the grid.</p>
+    <p class="note">Headshot, 2025/26 line, boards, tape.</p>
     {flt}
     <div class="player-grid" id="pl-cards">{''.join(cards)}</div>
     """
@@ -793,7 +793,7 @@ def render_pl_news_pages(stories: list[dict]) -> list[str]:
     body = f"""
     <p class="kicker">PitchKeep News</p>
     <h2>Latest on the wire.</h2>
-    <p class="note">Injuries, transfers, and manager tape clustered the same way as football BK News. Football lives on <a href="../news.html">Ball Keep</a>. Baseball lives on <a href="../bb/news.html">BaseBallKeep</a>.</p>
+    <p class="note">Injuries, transfers, manager news. Same clustering as football.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{''.join(chips)}</div>
     <div class="news-list" id="news-list">{cards}</div>
@@ -872,9 +872,9 @@ def write_pitch_site():
       </div>
     </section>
     <section class="panel">
-      <p class="kicker">The desk</p>
-      <h2>We cover The Premier, The Pitch, the lists, and the files.</h2>
-      <p class="note">Premier is the hybrid 400. Pitch is Sleeper points. Attack, Midfield, Defence, Keepers. News sits under the tiles.</p>
+      <p class="kicker">What we cover</p>
+      <h2>The Premier, The Pitch, Attack, Midfield, Defence, Keepers, the files, news, and The X.</h2>
+      <p class="note">Premier: half Sleeper, half the other boards. Pitch: Sleeper points. That's it.</p>
     </section>
     <div class="grid-3" style="margin-top:16px">
       {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
@@ -887,7 +887,7 @@ def write_pitch_site():
     premier_body = f"""
     <p class="kicker">Hybrid 400 · {UPDATED}</p>
     <h2>The Premier</h2>
-    <p class="note">Top 400. 50% Sleeper BPL 2025, 50% FPL, price, ownership, ICT, xGI, Scout, Fix, Yahoo, Hub, Athletic, Sky, BBC, ESPN, WhoScored, SofaScore, Understat, Draft, Planet FPL, LiveFPL. Unranked skipped, never 999. Full name, age, headshot. Rank 1 is 12,000.</p>
+    <p class="note">Top 400. Half Sleeper BPL 2025, half every other board. Unranked skipped. Rank 1 is 12,000.</p>
     {flt}
     <div class="panel">{rank_table(premier, ["Hybrid", "Sleeper rk", "Cons.", "Sleeper", "FPL", "G", "A", "Boards", "£", "BK Value"], premier_cell, media=media, faces=True, full_names=True, show_age=True)}</div>
     {sources_panel()}
@@ -897,7 +897,7 @@ def write_pitch_site():
     pitch_body = f"""
     <p class="kicker">Sleeper BPL 2025</p>
     <h2>The Pitch</h2>
-    <p class="note">Top 400. Sleeper default scoring on 2025/26 stats. FWD/MID goal 9, DEF/GKP 10. Assist 6 / 7. Clean sheet 0 / 1 / 6 / 8. Save 2. Yellow −2, red −7. Rank 1 is 12,000.</p>
+    <p class="note">Top 400. Sleeper scoring. Goal 9/10, assist 6/7, clean sheet 0/1/6/8, save 2. Rank 1 is 12,000.</p>
     {flt}
     <div class="panel">{rank_table(pitch, ["Sleeper", "FPL", "G", "A", "Min", "CS", "Tck", "£", "BK Value"], val_cell, media=media, faces=True)}</div>
     {sources_panel()}
@@ -941,9 +941,9 @@ def write_pitch_site():
     player_urls, player_files = write_player_pages(pitch, premier, fwd, mid, defence, gkp)
     news_urls = render_pl_news_pages(stories)
     x_body = f"""
-    <p class="kicker">Fun tape · not news</p>
+    <p class="kicker">The X</p>
     <h2>The X</h2>
-    <p class="note">Premier League memes and shitposts pulled from X. Pictures when the wire carries them.</p>
+    <p class="note">Memes from X.</p>
     {x_cards("soccer", 1, esc)}
     <p class="note" style="margin-top:16px"><a href="../the-x.html">Football The X</a> · <a href="../bb/the-x.html">Baseball The X</a></p>
     """

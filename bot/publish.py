@@ -309,7 +309,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "PitchKeep — The Premier (hybrid 400: 50% Sleeper BPL 2025, 50% every other board)",
         cat.raw.get("pl_premier") or [],
         cat,
-        "The flagship PK list. Purple desk at https://ballkeep.com/pl/the-premier.html",
+        "The Premier. 50% Sleeper, 50% the other boards. https://ballkeep.com/pl/the-premier.html",
     )
     await _wipe(channels["the-pitch"])
     await _post_list(
@@ -320,13 +320,13 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "Sleeper-only counting board. Purple desk at https://ballkeep.com/pl/the-pitch.html",
     )
     await _wipe(channels["pl-attack"])
-    await _post_list(channels["pl-attack"], "Attack — FPL forwards", cat.raw.get("pl_fwd") or [], cat)
+    await _post_list(channels["pl-attack"], "Attack — forwards", cat.raw.get("pl_fwd") or [], cat)
     await _wipe(channels["pl-midfield"])
-    await _post_list(channels["pl-midfield"], "Midfield — FPL engine room", cat.raw.get("pl_mid") or [], cat)
+    await _post_list(channels["pl-midfield"], "Midfield", cat.raw.get("pl_mid") or [], cat)
     await _wipe(channels["pl-defence"])
-    await _post_list(channels["pl-defence"], "Defence — FPL back line", cat.raw.get("pl_def") or [], cat)
+    await _post_list(channels["pl-defence"], "Defence", cat.raw.get("pl_def") or [], cat)
     await _wipe(channels["pl-keepers"])
-    await _post_list(channels["pl-keepers"], "Keepers — between the sticks", cat.raw.get("pl_gkp") or [], cat)
+    await _post_list(channels["pl-keepers"], "Keepers", cat.raw.get("pl_gkp") or [], cat)
     pl_files = cat.raw.get("pl_players") or []
     await _wipe(channels["pl-files"], limit=400)
     await channels["pl-files"].send(

@@ -1551,7 +1551,7 @@ def main():
         ("mlb-schedule.html", "MLB Schedules", "September stretch run."),
         ("discord.html", "Discord", "The bot searches ranks and runs the calculator."),
         ("bb/index.html", "BaseBallKeep", "Navy diamond desk. Keep 400, Lineup, Pitchers."),
-        ("pl/index.html", "PitchKeep", "Premier League purple. The Premier and The Pitch."),
+        ("pl/index.html", "PitchKeep", "The Premier, The Pitch, the lists."),
     ]
     latest_news = load_news_stories("football")[:5]
     latest_html = ""
