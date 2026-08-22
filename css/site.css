@@ -198,8 +198,10 @@ a.news-item:hover h3 { color: var(--red); }
 .tile.lead { padding: 20px 20px 18px; }
 .tile.lead.keep { border-color: var(--red); }
 .tile.lead.board { border-color: var(--ink); }
+.tile.lead.ones { border-color: #1788c2; grid-column: 1 / -1; }
 .tile.lead.keep h3 { color: var(--red); }
 .tile.lead.board h3 { color: var(--ink); }
+.tile.lead.ones h3 { color: #1788c2; }
 .tile.lead h3 { font-size: 24px; margin: 0 0 4px; }
 .tile.lead .lead-sub { margin: 0 0 8px; color: var(--ink); font-weight: 800; }
 .tile.lead p { margin: 0; }
