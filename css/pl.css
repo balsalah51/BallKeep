@@ -105,14 +105,15 @@ a.sport-switch.pl {
   margin: 18px 6px 0; padding: 8px 16px; border-radius: 999px;
   font-weight: 800; font-size: 13px; line-height: 1; text-decoration: none; letter-spacing: 0.02em;
   cursor: pointer; background: #fff; color: #c8102e;
-  border: 3px solid #c8102e;
-  outline: 3px solid #c8102e;
-  outline-offset: 2px;
+  border: 4px solid #c8102e; outline: none;
+  box-shadow: 0 0 0 3px #c8102e;
 }
 a.sport-switch.bk {
-  border: 3px solid #c8102e;
-  outline: 3px solid #c8102e;
-  outline-offset: 2px;
+  border: 4px solid #c8102e !important;
+  outline: none;
+  box-shadow: 0 0 0 3px #c8102e !important;
+  background: #fff !important;
+  color: #c8102e !important;
 }
 a.sport-switch:hover,
 a.sport-switch.fb:hover,
@@ -182,8 +183,8 @@ a.news-item h3 { margin: 0 0 6px; color: var(--purple); }
 .desk-block.extra .tile:hover { border-color: #c4a035; }
 .desk-block.extra .news-list { margin-top: 16px; }
 .sports-top {
-  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
-  margin: 14px 0 2px;
+  display: flex; flex-wrap: wrap; gap: 16px; align-items: center;
+  margin: 14px 0 2px; padding: 8px 4px;
 }
 .sports-top .sport-switch { margin: 0; }
 .x-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 12px; }
