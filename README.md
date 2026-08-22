@@ -2,7 +2,7 @@
 
 Static site for [ballkeep.com](https://ballkeep.com), published from this repository root on GitHub Pages.
 
-Powder-blue **FootKeep** desk. Navy-and-cream **BaseKeep**, hardwood **BasketKeep**, and purple **PitchKeep** through the sport pills.
+Powder-blue **BallKeep** desk. Navy-and-cream **BaseKeep**, hardwood **BasketKeep**, and purple **PitchKeep** through the sport pills.
 
 ## Football
 - **The Keep** — Superflex Dynasty Super Aggregate top 400 (30+ desks; 50% the four long boards, 50% every other desk that ranked the player). The big draw.
