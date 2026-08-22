@@ -300,6 +300,19 @@ class Catalog:
             "plgkp": "pl_gkp",
             "keepers": "pl_gkp",
             "pl_gkp": "pl_gkp",
+            "bkkeep": "bk_keep",
+            "bk keep": "bk_keep",
+            "bk_keep": "bk_keep",
+            "basketkeep": "bk_keep",
+            "bkboard": "bk_board",
+            "bk board": "bk_board",
+            "bk_board": "bk_board",
+            "bkguards": "bk_guards",
+            "bk_guards": "bk_guards",
+            "bkwings": "bk_wings",
+            "bk_wings": "bk_wings",
+            "bkbigs": "bk_bigs",
+            "bk_bigs": "bk_bigs",
         }.get((board or "keep").lower(), "keep")
         return self.raw.get(key) or []
 
@@ -311,14 +324,17 @@ class Catalog:
         football = list(self.players or self.raw.get("board") or [])
         baseball = list(self.raw.get("bb_players") or self.raw.get("bb_keep") or [])
         soccer = list(self.raw.get("pl_players") or self.raw.get("pl_pitch") or [])
+        basketball = list(self.raw.get("bk_players") or self.raw.get("bk_keep") or [])
         if sport == "baseball":
             pool = baseball
         elif sport == "football":
             pool = football
         elif sport in ("soccer", "premier", "pl", "fpl"):
             pool = soccer
+        elif sport in ("basketball", "nba", "bk"):
+            pool = basketball
         else:
-            pool = football + baseball + soccer
+            pool = football + baseball + soccer + basketball
         for p in pool:
             key = p.get("key") or norm(p.get("name", ""))
             name = norm(p.get("name", ""))
@@ -337,6 +353,8 @@ class Catalog:
             (x[1].get("lists") or {}).get("The Keep")
             or (x[1].get("lists") or {}).get("BB Keep")
             or (x[1].get("lists") or {}).get("The Pitch")
+            or (x[1].get("lists") or {}).get("The Keep")
+            or x[1].get("keep")
             or x[1].get("bk")
             or 999,
             x[1].get("name", ""),
@@ -397,6 +415,22 @@ class Catalog:
                         out.append(row)
                         if len(out) >= limit:
                             return out
+        if sport in (None, "basketball", "nba", "bk"):
+            for board_key in ("bk_keep", "bk_board", "bk_guards", "bk_wings", "bk_bigs"):
+                for r in self.raw.get(board_key) or []:
+                    name = norm(r.get("name", ""))
+                    if not name:
+                        continue
+                    if q == name or name.startswith(q) or q in name:
+                        tag = "basketball:" + name
+                        if tag in seen:
+                            continue
+                        seen.add(tag)
+                        row = dict(r)
+                        row.setdefault("sport", "basketball")
+                        out.append(row)
+                        if len(out) >= limit:
+                            return out
         return out
 
     def one(self, query: str, sport: str | None = None) -> dict | None:
@@ -428,10 +462,19 @@ class Catalog:
             "plpitch", "pitch250", "thepitch", "plpremier", "premier400", "thepremier",
             "plfwd", "plmid", "pldef", "plgkp",
         }
+        bk_modes = {
+            "bkkeep": "bk_keep",
+            "bkboard": "bk_board",
+            "bkguards": "bk_guards",
+            "bkwings": "bk_wings",
+            "bkbigs": "bk_bigs",
+        }
         if mode in bb_modes:
             pick_pool = self.raw.get("bb_picks")
         elif mode in pl_mode_keys:
             pick_pool = []
+        elif mode in bk_modes:
+            pick_pool = self.raw.get("bk_picks")
         else:
             pick_pool = self.raw.get("picks")
         exact_pick = None
@@ -485,6 +528,20 @@ class Catalog:
                 "value": int(row.get("value") or bk_value(row.get("bk") or 0)),
                 "kind": "player",
                 "url": row.get("url") or "",
+                "slug": row.get("slug") or "",
+            }
+        if mode in bk_modes:
+            row = self.board_row(t, mode) or self.one(t, sport="basketball")
+            if not row:
+                return None
+            return {
+                "name": row.get("name"),
+                "pos": row.get("pos") or "",
+                "team": row.get("team") or "",
+                "rank": row.get("bk"),
+                "value": int(row.get("value") or bk_value(row.get("bk") or 0)),
+                "kind": "player",
+                "url": row.get("url") or f"https://ballkeep.com/bk/players/{row.get('slug') or ''}.html",
                 "slug": row.get("slug") or "",
             }
         player = self.one(t, sport="football")

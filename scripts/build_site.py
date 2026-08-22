@@ -35,6 +35,8 @@ from seo import (  # noqa: E402
     clip,
     head_tags,
     rank_spread_graph,
+    sports_footer,
+    sports_top,
     value_bars,
 )
 from news_algo import CATEGORY_LABEL, load_news_stories, news_when  # noqa: E402
@@ -42,6 +44,7 @@ from x_tape import cards_html as x_cards  # noqa: E402
 from player_copy import get_copy  # noqa: E402
 from recent_trades import enrich_deals  # noqa: E402
 from build_bb import write_baseball_site  # noqa: E402
+from build_bk import write_basket_site  # noqa: E402
 from build_pl import write_pitch_site  # noqa: E402
 
 
@@ -558,6 +561,51 @@ def redraft_lists():
     return ppr, out
 
 
+def superflex_redraft(keep, ppr):
+    """This-year Superflex. Keep supplies the QB tax; PPR supplies the skill board."""
+    ppr_by = {norm_name(r["name"]): r for r in ppr}
+    keep_by = {r["key"]: r for r in keep}
+    keys = list(dict.fromkeys([*keep_by, *ppr_by]))
+    scored = []
+    for k in keys:
+        kr = keep_by.get(k)
+        pr = ppr_by.get(k)
+        src = kr or pr
+        pos = (src or {}).get("pos") or ""
+        try:
+            age_n = int((src or {}).get("age") or 25)
+        except (TypeError, ValueError):
+            age_n = 25
+        age_adj = (age_n - 25) * (-1.6)
+        if age_n <= 22:
+            age_adj += 10
+        if pos == "QB":
+            base = (kr["bk"] if kr else 90) * 0.82
+        elif pr:
+            base = pr["bk"] * 0.7 + (kr["bk"] if kr else pr["bk"] + 18) * 0.3
+        else:
+            base = (kr["bk"] if kr else 220) + 40
+        scored.append((base + age_adj, k, src, kr, pr))
+    scored.sort(key=lambda x: (x[0], x[1]))
+    rows = []
+    for i, (score, k, src, kr, pr) in enumerate(scored[:BOARD_N], 1):
+        rows.append({
+            "key": k,
+            "name": src.get("name") or k.title(),
+            "pos": src.get("pos") or "",
+            "team": src.get("team") or "",
+            "age": src.get("age") or "",
+            "bk": i,
+            "keep": kr["bk"] if kr else "",
+            "ppr": pr["bk"] if pr else "",
+            "avg": round(score, 2),
+            "n": (1 if kr else 0) + (1 if pr else 0),
+            "ranks": {k: v for k, v in {"Keep SF": kr["bk"] if kr else None, "PPR": pr["bk"] if pr else None}.items() if v},
+            "value": bk_value(i),
+        })
+    return rows
+
+
 NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
@@ -712,8 +760,8 @@ ROOKIE_SOURCES = [
 
 FB_SEO = {
     "index.html": (
-        "Ball Keep | Superflex Dynasty Rankings and Trade Calculator",
-        "2026 Superflex dynasty rankings. The Keep Super Aggregate from 30+ desks, The Board long tape, BK Value trade calculator, The X, and hourly BK News. Josh Allen is Keep #1.",
+        "Ball Keep | Superflex Dynasty Rankings and Superflex Redraft",
+        "The Keep is Superflex Dynasty — 32 desks, top 400. The Board is Superflex Redraft. BK Value trade calculator, The X, and hourly BK News.",
         "img/hero.jpg",
     ),
     "the-keep.html": (
@@ -722,8 +770,8 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "board.html": (
-        "The Board — Long Superflex Dynasty Aggregate (500) | Ball Keep",
-        "The long tape: PFN, Dynasty Nerds, FantasyPros ECR, and KeepTradeCut only. 500 names, no Super mash. Unranked skipped, never 999.",
+        "The Board — Superflex Redraft Rankings | Ball Keep",
+        "Superflex Redraft, the second desk. This-year Superflex: quarterbacks stay expensive, rookies pay a tax. Built from The Keep SF premium plus the PPR board.",
         "img/logo.jpg",
     ),
     "the-x.html": (
@@ -791,6 +839,11 @@ FB_SEO = {
         "Add two sides. Superflex Keep ranks become BK Value (12,000 at 1.01). Fair is within 8%. Future picks map to equivalent ranks.",
         "img/logo.jpg",
     ),
+    "trade-sf-redraft.html": (
+        "Superflex Redraft Trade Calculator | Ball Keep",
+        "Trade calculator on The Board Superflex Redraft ranks. This-year Superflex. Fair is within 8%.",
+        "img/logo.jpg",
+    ),
     "trade-1qb.html": (
         "1QB Dynasty Trade Calculator | Ball Keep",
         "Same Superflex ranks, quarterbacks taxed to 38% of BK Value. Fair is within 8%.",
@@ -836,17 +889,16 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
         <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" />
         <div>
           <p class="brand-title">{wordmark()}</p>
-          <p>Dynasty · Redraft · Ball</p>
+          <p>Superflex Dynasty · Superflex Redraft</p>
         </div>
       </a>
       <nav>{''.join(links)}</nav>
     </header>
-    <p class="sports-top">Also: <a href="{nav_href('bb/index.html', depth)}">BaseBallKeep</a> · <a href="{nav_href('pl/index.html', depth)}">PitchKeep</a></p>
+    {sports_top("fb", depth)}
     {body}
     <footer>
-      © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL, MLB, or Premier League.
-      <div><a class="sport-switch bb" href="{nav_href('bb/index.html', depth)}">BaseBallKeep</a>
-      <a class="sport-switch pl" href="{nav_href('pl/index.html', depth)}">PitchKeep</a></div>
+      © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL, MLB, NBA, or Premier League.
+      {sports_footer("fb", depth)}
     </footer>
   </div>
   {extra_js}
@@ -1005,7 +1057,7 @@ def render_news_pages():
     body = f"""
     <p class="kicker">BK News · Football · Hourly wire</p>
     <h2>BK News</h2>
-    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball BK News lives on <a href="bb/news.html">BaseBallKeep</a>.</p>
+    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball lives on <a href="bb/news.html">BaseBallKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{filters}</div>
     <div class="news-list" id="news-list">{cards}</div>
@@ -1101,11 +1153,11 @@ def collect_profiles(keep, board, ppr, std):
             p["team"] = team
         if age and not p["age"]:
             p["age"] = age
-        if ranks:
-            p["ranks"] = ranks
-        if avg is not None:
+        if ranks and not p.get("ranks"):
+            p["ranks"] = {src: rk for src, rk in ranks.items() if rk not in (None, "", "—")}
+        if avg is not None and p.get("keep_avg") is None:
             p["keep_avg"] = avg
-        if n is not None:
+        if n is not None and p.get("keep_n") is None:
             p["keep_n"] = n
         p["lists"][list_name] = rank
         if extra:
@@ -1117,7 +1169,7 @@ def collect_profiles(keep, board, ppr, std):
             ranks=r["ranks"], avg=r["avg"], n=r["n"], age=r.get("age"))
     for r in board:
         add(r["name"], r["pos"], r["team"], "The Board", r["bk"],
-            f"The Board #{r['bk']} on the long proprietary aggregate",
+            f"The Board #{r['bk']} Superflex Redraft",
             ranks=r.get("ranks"), avg=r.get("avg"), n=r.get("n"), age=r.get("age"))
     for r in ppr:
         extra = f"Redraft PPR #{r['bk']} (Yates {r['yates']}" + (f", FantasyPros {r['fp']}" if r["fp"] != "—" else "") + ")"
@@ -1198,7 +1250,7 @@ def ff_facts(p, college, is_rook):
     if keep:
         items.append(("BK Value", f"{bk_value(keep):,}"))
     hi, lo = None, None
-    ranks = p.get("ranks") or {}
+    ranks = {k: v for k, v in (p.get("ranks") or {}).items() if isinstance(v, (int, float))}
     if ranks:
         hi, lo = min(ranks.values()), max(ranks.values())
         items.append(("Spread", f"{hi}–{lo}"))
@@ -1274,7 +1326,7 @@ def ff_rank_cards(p):
 
 
 def ff_boards_table(p):
-    ranks = p.get("ranks") or {}
+    ranks = {k: v for k, v in (p.get("ranks") or {}).items() if isinstance(v, (int, float))}
     if not ranks:
         return ""
     rows = sorted(ranks.items(), key=lambda kv: kv[1])
@@ -1483,6 +1535,7 @@ def trade_mode_page(mode, payload):
     <p class="filters">
       <a href="trade.html">All Calculators</a>
       <a href="trade-superflex.html"{' class="active"' if mode == "sf" else ""}>Superflex Dynasty</a>
+      <a href="trade-sf-redraft.html"{' class="active"' if mode == "sfr" else ""}>Superflex Redraft</a>
       <a href="trade-1qb.html"{' class="active"' if mode == "oneqb" else ""}>1QB Dynasty</a>
       <a href="trade-ppr.html"{' class="active"' if mode == "ppr" else ""}>Redraft PPR</a>
       <a href="trade-standard.html"{' class="active"' if mode == "std" else ""}>Redraft Standard</a>
@@ -1494,22 +1547,30 @@ def trade_mode_page(mode, payload):
     write(payload["file"], page(payload["label"], payload["file"], body, extra))
 
 
-def write_trade_pages(board, ppr, std):
+def write_trade_pages(keep, board, ppr, std):
     modes = {
         "sf": {
             "id": "sf",
             "file": "trade-superflex.html",
             "label": "Superflex Dynasty",
-            "blurb": "Uses The Board ranks (same order as The Keep). Rank 1 is 12,000 BK Value. Quarterbacks keep full Superflex price.",
-            "players": as_trade_players(board),
+            "blurb": "Uses The Keep Superflex Dynasty ranks. Rank 1 is 12,000 BK Value. Quarterbacks keep full Superflex price.",
+            "players": as_trade_players(keep),
             "picks": pick_assets(),
+        },
+        "sfr": {
+            "id": "sfr",
+            "file": "trade-sf-redraft.html",
+            "label": "Superflex Redraft",
+            "blurb": "Uses The Board Superflex Redraft ranks. This-year Superflex. No dynasty pick chips.",
+            "players": as_trade_players(board),
+            "picks": [],
         },
         "oneqb": {
             "id": "oneqb",
             "file": "trade-1qb.html",
             "label": "1QB Dynasty",
-            "blurb": "Same Ball Keep ranks as Superflex, but quarterbacks are taxed to 38% of that value because there is no second QB slot.",
-            "players": as_trade_players(board, 0.38),
+            "blurb": "Same Ball Keep ranks as Superflex Dynasty, but quarterbacks are taxed to 38% of that value because there is no second QB slot.",
+            "players": as_trade_players(keep, 0.38),
             "picks": pick_assets(),
         },
         "ppr": {
@@ -1538,15 +1599,16 @@ def write_trade_pages(board, ppr, std):
         trade_mode_page(key, payload)
 
     tiles = [
-        ("trade-superflex.html", "Superflex Dynasty", "The Keep / The Board ranks. QBs are first-round assets."),
-        ("trade-1qb.html", "1QB Dynasty", "Same ranks, quarterbacks taxed to 38% of Superflex value."),
+        ("trade-superflex.html", "Superflex Dynasty", "The Keep ranks. QBs are first-round assets."),
+        ("trade-sf-redraft.html", "Superflex Redraft", "The Board ranks. This year only."),
+        ("trade-1qb.html", "1QB Dynasty", "Same Keep ranks, quarterbacks taxed to 38% of Superflex value."),
         ("trade-ppr.html", "Redraft PPR", "One-year PPR board. No future picks."),
         ("trade-standard.html", "Redraft Standard", "One-year Standard board after the catch-tax."),
         ("recent-trades.html", "Recent Deals", "Type a player. Pull every package on the desk tape."),
     ]
     hub = f"""
     <p class="kicker">Trade Calculators</p>
-    <h2>Four Calculators, One Curve</h2>
+    <h2>Five Calculators, One Curve</h2>
     <p class="note">Every name on a Ball Keep list has a rank. That rank becomes <strong>BK Value</strong>: rank 1 is 12,000, and the number falls on a decaying curve so the drop from 1 to 2 is larger than 50 to 51. A late first (~rank 28) is about 28% of the 1.01. Trade math is just adding those numbers on two sides.</p>
     <p class="note">Use Superflex for two-QB leagues, 1QB when a passer is just another starter, and the redraft calculators when the deal is for this season only.</p>
     <div class="grid" style="margin-top:16px">
@@ -1700,19 +1762,21 @@ def write_recent_trades_page(deals):
 def main():
     pfn = parse_pfn(ROOT / "data/pfn-dynasty.txt")
     nfl = parse_nfl_schedule(ROOT / "data/nfl-schedule.txt")
-    keep, board, sources = aggregate(pfn)
+    keep, long_board, sources = aggregate(pfn)
     if len(keep) > KEEP_N:
         keep = keep[:KEEP_N]
-    if len(board) > BOARD_N:
-        board = board[:BOARD_N]
+    if len(long_board) > BOARD_N:
+        long_board = long_board[:BOARD_N]
     ppr, std = redraft_lists()
-    profiles = collect_profiles(keep, board, ppr, std)
     media = load_player_media()
     ages = load_age_bank()
     apply_media_ages(keep, media, ages)
-    apply_media_ages(board, media, ages)
+    apply_media_ages(long_board, media, ages)
     apply_media_ages(ppr, media, ages)
     apply_media_ages(std, media, ages)
+    board = superflex_redraft(keep, ppr)
+    apply_media_ages(board, media, ages)
+    profiles = collect_profiles(keep, board, ppr, std)
     apply_media_ages(profiles, media, ages)
     (ROOT / "data" / "player_roster.json").write_text(json.dumps(profiles, indent=2))
 
@@ -1723,8 +1787,8 @@ def main():
     }, indent=2))
     (ROOT / "data/board.json").write_text(json.dumps(board, indent=2))
 
-    write_trade_pages(board, ppr, std)
-    deals = enrich_deals(board, bk_value, pick_assets(), norm_name)
+    write_trade_pages(keep, board, ppr, std)
+    deals = enrich_deals(keep, bk_value, pick_assets(), norm_name)
     write_recent_trades_page(deals)
 
     # HOME
@@ -1740,16 +1804,40 @@ def main():
     home_body = f"""
     <section class="hero" style="background-image:url('img/hero.jpg')">
       <div class="hero-card">
-        <p class="kicker" style="color:#ffd4db">Updated {UPDATED}</p>
+        <p class="kicker" style="color:#ffd4db">Updated {UPDATED} · Superflex desk</p>
         <h2>{wordmark()}</h2>
+        <p class="hero-lead">The Keep is Superflex Dynasty. The Board is Superflex Redraft. Two-QB ranks, no 1QB tax on the flagship lists.</p>
+        <div class="hero-ctas">
+          <a class="cta" href="the-keep.html">The Keep · Superflex Dynasty</a>
+          <a class="cta alt" href="board.html">The Board · Superflex Redraft</a>
+        </div>
       </div>
     </section>
-    {desk_block("main", "Main", "The Keep and The Board.", "The Keep is our ranking — 32 desks mashed, top 400. The Board is just the four published lists, 500 names. Trade and files sit here too.", [
-        ("the-keep.html", "The Keep", "Our ranking. 32 desks. Top 400."),
-        ("board.html", "The Board", "The four published lists only. 500 names."),
-        ("trade.html", "Trade Calculators", "Rank becomes BK Value."),
-        ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
-    ])}
+    <section class="desk-block main">
+      <p class="kicker">The draws</p>
+      <h2>Start here.</h2>
+      <p class="note">Two boards. That is the desk. Everything else is support.</p>
+      <div class="draw-row">
+        <a class="draw keep" href="the-keep.html">
+          <span class="draw-badge">Big draw</span>
+          <h3>The Keep</h3>
+          <p class="draw-format">Superflex Dynasty</p>
+          <p>32 desks mashed into a top 400. This is the list you trade on.</p>
+          <span class="cta">Open The Keep</span>
+        </a>
+        <a class="draw board" href="board.html">
+          <span class="draw-badge alt">Next up</span>
+          <h3>The Board</h3>
+          <p class="draw-format">Superflex Redraft</p>
+          <p>This-year Superflex. Quarterbacks stay expensive. Kids pay a tax.</p>
+          <span class="cta alt">Open The Board</span>
+        </a>
+      </div>
+      <div class="grid-3" style="margin-top:14px">
+        <a class="tile" href="trade.html"><h3>Trade Calculators</h3><p>Keep, Board, 1QB, PPR, Standard.</p></a>
+        <a class="tile" href="players/index.html"><h3>Player Pages</h3><p>Keep top 400. Tape, plus/minus.</p></a>
+      </div>
+    </section>
     {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, the market tape, and the slates.", [
         ("redraft-ppr.html", "Redraft PPR", "2026 startup. Photos and ages."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
@@ -1781,17 +1869,16 @@ def main():
             + f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
     keep_body = f"""
-    <p class="kicker">Super Aggregate · {len(KEEP_SOURCES)} desks</p>
+    <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} desks</p>
     <h2>The Keep</h2>
-    <p class="note">This is our ranking. Top 400 Superflex. {len(KEEP_SOURCES)} desks. Half the vote is the four long boards, half is everyone else. Use this list for trades. The Board next door is just those four lists, raw.</p>
+    <p class="note">This is the big one. Superflex Dynasty. Top 400. {len(KEEP_SOURCES)} desks. Half the vote is the four long boards, half is everyone else. Use this list for dynasty trades. The Board next door is Superflex Redraft — this year only.</p>
     <section class="panel" style="margin-top:16px">
       <p class="kicker">Super Aggregate protocol</p>
       <h3>How The Keep is not The Board</h3>
       <ol>
-        <li><strong>Half the vote: long core.</strong> Equal mean of PFN, Dynasty Nerds, FantasyPros ECR, and KeepTradeCut — the published 300–500 name boards.</li>
-        <li><strong>Half the vote: every other desk.</strong> Thirty-plus professional short lists and overlays. They move the names they ranked. Unranked is skipped, never 999.</li>
+        <li><strong>The Keep is Superflex Dynasty.</strong> Half the vote is the four long boards (PFN, Dynasty Nerds, FantasyPros ECR, KeepTradeCut). Half is every other desk that ranked the player. Unranked is skipped, never 999.</li>
         <li><strong>Eligibility.</strong> Must appear on at least one long-core board. Draft picks are not players. Then the top 400.</li>
-        <li><strong>The Board</strong> next door is those four long boards only, 500 deep, no Super mash, no headshots.</li>
+        <li><strong>The Board</strong> is Superflex Redraft — this-year Superflex built from the Keep QB premium plus the PPR board. Kids pay a tax. Veterans climb.</li>
       </ol>
     </section>
     <p class="note">Position</p>
@@ -1914,18 +2001,25 @@ def main():
             + f'<td class="desk-only">{r["n"]}</td>'
             + f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
+    def board_redraft_extra(r):
+        keep_r = r.get("keep") or "—"
+        ppr_r = r.get("ppr") or "—"
+        return (
+            f'<td class="desk-only">{keep_r}</td>'
+            f'<td class="desk-only">{ppr_r}</td>'
+            f'<td class="desk-only">{r["avg"]}</td>'
+            f'<td class="c-val val">{fmt_val(r["value"])}</td>'
+        )
     board_body = f"""
-    <p class="kicker">Long tape · four published boards</p>
+    <p class="kicker">Superflex Redraft · this year</p>
     <h2>The Board</h2>
-    <p class="note">Not The Keep. This is the raw file: PFN, Dynasty Nerds, FantasyPros ECR, KeepTradeCut. {len(board)} names. Average of those four only. The Keep is the 32-desk mash.</p>
-    <div class="panel">{rank_table(board, ["PFN", "DN", "FP", "KTC", "Avg", "# Boards", "BK Value"], board_extra)}</div>
-    {value_bars(board, 12, "#c8102e", "Board value graph")}
+    <p class="note">Not The Keep. The Keep is Superflex Dynasty. The Board is Superflex Redraft — {len(board)} names, this season only. Quarterbacks keep the Superflex tax from The Keep. Skill players lean on the PPR board. Rookies and kids pay a tax. Veterans climb. Use this list for redraft startups that start two quarterbacks.</p>
+    <div class="panel">{rank_table(board, ["Keep SF", "PPR", "Score", "BK Value"], board_redraft_extra, media=media, faces=True, show_age=True)}</div>
+    {value_bars(board, 12, "#1e8fc2", "Board value graph")}
     {sources_panel([
-        ("Pro Football Network (Katz / Soppe composite)", "https://www.profootballnetwork.com/dynasty-fantasy-football-rankings/", "Long core."),
-        ("Dynasty Nerds Superflex", "https://www.dynastynerds.com/dynasty-rankings/superflex/", "Long core."),
-        ("FantasyPros Dynasty Superflex ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-superflex.php", "Long core."),
-        ("KeepTradeCut Superflex", "https://keeptradecut.com/dynasty-rankings", "Long core."),
-    ], heading="Long boards on this tape")}
+        ("The Keep Superflex Dynasty", "https://ballkeep.com/the-keep.html", "QB premium and the long Superflex market."),
+        ("Field Yates / FantasyPros PPR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "This-year skill-player board."),
+    ], heading="How Superflex Redraft is built")}
     """
     write("board.html", page("The Board", "board.html", board_body))
 
@@ -2061,7 +2155,7 @@ def main():
     <h2>The X</h2>
     <p class="note">Memes, shitposts, and the jokes the football desk actually laughs at. Pulled from X via Google News — pictures when the wire carries them. Baseball and PitchKeep have their own X pages.</p>
     {x_cards("football", 0, esc)}
-    <p class="note" style="margin-top:16px"><a href="bb/the-x.html">Baseball The X</a> · <a href="pl/the-x.html">PitchKeep The X</a></p>
+    <p class="note" style="margin-top:16px"><a href="bk/the-x.html">BasketKeep The X</a> · <a href="bb/the-x.html">Baseball The X</a> · <a href="pl/the-x.html">PitchKeep The X</a></p>
     """
     write("the-x.html", page("The X", "the-x.html", x_body))
 
@@ -2075,6 +2169,7 @@ def main():
         "https://ballkeep.com/trade.html",
         "https://ballkeep.com/recent-trades.html",
         "https://ballkeep.com/trade-superflex.html",
+        "https://ballkeep.com/trade-sf-redraft.html",
         "https://ballkeep.com/trade-1qb.html",
         "https://ballkeep.com/trade-ppr.html",
         "https://ballkeep.com/trade-standard.html",
@@ -2089,6 +2184,8 @@ def main():
     ] + news_urls[1:] + player_urls
     bb = write_baseball_site()
     sitemap.extend(bb.get("urls") or [])
+    bk = write_basket_site()
+    sitemap.extend(bk.get("urls") or [])
     pl = write_pitch_site()
     sitemap.extend(pl.get("urls") or [])
     (ROOT / "sitemap.xml").write_text(
@@ -2098,11 +2195,12 @@ def main():
         + "</urlset>\n"
     )
 
-    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl)
+    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk)
     print(
         f"Keep {len(keep)} Board {len(board)} NFL games {len(nfl)} MLB {len(mlb_games)} "
         f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
-        f"BB News {bb.get('n_news', 0)} Pitch {pl['n_pitch']} Premier {pl.get('n_premier', 0)} Catalog {cat.name}"
+        f"BB News {bb.get('n_news', 0)} BK Keep {bk['n_keep']} Pitch {pl['n_pitch']} "
+        f"Premier {pl.get('n_premier', 0)} Catalog {cat.name}"
     )
 
 
@@ -2122,7 +2220,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -2245,6 +2343,35 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
             "players": s.get("players") or [],
         })
     catalog["pl_news"] = pl_news
+    bk = bk or {}
+    catalog["bk_keep"] = [slim_row(r, ("age", "group", "n", "avg")) for r in bk.get("keep") or []]
+    catalog["bk_board"] = [slim_row(r, ("age", "group", "keep")) for r in bk.get("board") or []]
+    catalog["bk_guards"] = [slim_row(r, ("age", "group")) for r in bk.get("guards") or []]
+    catalog["bk_wings"] = [slim_row(r, ("age", "group")) for r in bk.get("wings") or []]
+    catalog["bk_bigs"] = [slim_row(r, ("age", "group")) for r in bk.get("bigs") or []]
+    catalog["bk_rookies"] = [slim_row(r, ("age", "blurb")) for r in bk.get("rookies") or []]
+    catalog["bk_picks"] = bk.get("picks") or []
+    catalog["bk_players"] = bk.get("files") or []
+    catalog["bk_waivers_dynasty"] = bk.get("dynasty_waivers") or []
+    catalog["bk_waivers_redraft"] = bk.get("redraft_waivers") or []
+    catalog["bk_sources"] = bk.get("source_names") or []
+    bk_news = []
+    for s in bk.get("news") or []:
+        bk_news.append({
+            "headline": s.get("headline"),
+            "slug": s.get("slug"),
+            "blurb": s.get("blurb"),
+            "summary": s.get("summary"),
+            "category": s.get("category"),
+            "updated": s.get("updated"),
+            "url": f"https://ballkeep.com/bk/news/{s.get('slug')}.html",
+            "players": s.get("players") or [],
+            "sources": [
+                {"title": src.get("title"), "url": src.get("url"), "kind": src.get("kind"), "publisher": src.get("publisher")}
+                for src in (s.get("sources") or [])
+            ],
+        })
+    catalog["bk_news"] = bk_news
     dest = ROOT / "data/discord-catalog.json"
     dest.write_text(json.dumps(catalog, indent=2, default=str))
     return dest

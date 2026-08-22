@@ -2,18 +2,17 @@
 
 Static site for [ballkeep.com](https://ballkeep.com), published from this repository root on GitHub Pages.
 
-Powder-blue football desk. Navy-and-cream **BaseBallKeep** through the footer button.
+Powder-blue football desk. Navy-and-cream **BaseBallKeep**, hardwood **BasketKeep**, and purple **PitchKeep** through the sport pills.
 
 ## Football
-- **The Keep** — Superflex dynasty Super Aggregate top 400 (30+ desks; 50% the four long boards, 50% every other desk that ranked the player)
-- **The Board** — the four published long Superflex boards only, 500 names, no Super mash
+- **The Keep** — Superflex Dynasty Super Aggregate top 400 (30+ desks; 50% the four long boards, 50% every other desk that ranked the player). The big draw.
+- **The Board** — Superflex Redraft. This-year Superflex: Keep QB premium plus the PPR board, kids taxed. The next draw.
 - **The X** — fun tape from X, not news
 - **Trade Calculators** — Superflex Dynasty, 1QB Dynasty, Redraft PPR, Redraft Standard. Rank on each list becomes BK Value.
 - **Recent Deals** — type a player, get every Superflex/1QB package on the desk tape
 - Redraft PPR / Redraft Standard (200 names)
 - 2026 drafted rookies
 - BK Hot 'n' Cold
-- The Board (long tape of the four published boards)
 - **Player Pages** — every Keep 400 name, plus redraft, rookies, and Hot/Cold: ranks, board dump, a headshot, and a 2025 NFL (or college) highlight when we have the tape
 - **BK News** — football injuries, roster moves, and coach reports scraped hourly from league RSS, Google News, X (`site:x.com`), and YouTube, then clustered into short stories with an aggregate summary and source links
 - NFL 2026 schedules (all 32 teams)
@@ -34,6 +33,19 @@ Separate sport, separate palette. Footer crossover only — baseball does not li
 - **Redraft Wire** — priority 1–50, longer and louder
 - **Player files** — Keep 400, one cream card each
 
+## BasketKeep (`/bk`)
+Separate sport, separate palette. Hardwood orange and night. Footer / header crossover only.
+
+- **The Keep** — dynasty basketball top 400, 18-board aggregate
+- **The Board** — this-year redraft (veterans climb, kids pay a tax)
+- **Guards / Wings / Bigs** — position boards stripped from The Keep
+- **Rookies** — compiled 2026 class plus the sophomores still priced like kids
+- **BK News** — live at `bk/news.html`. Same hourly pipeline: injury, roster, coach tape
+- **The X** — NBA memes
+- **Trade calculators** — Keep and Board. Same BK Value curve.
+- **Wires** — 15 dynasty stashes, redraft priority 1–50
+- **Player files** — Keep 400, one hardwood card each
+
 ## PitchKeep (`/pl`)
 Separate sport, separate palette. Premier League purple, pitch green, gold. Footer crossover only.
 
@@ -50,25 +62,26 @@ Rank 1 is 12,000. 1QB Dynasty uses the same Superflex ranks but taxes quarterbac
 ## Rebuild
 ```bash
 python3 scripts/refresh_ranks.py
-python3 scripts/news_scrape.py --sport both
+python3 scripts/news_scrape.py --sport all
 python3 scripts/build_site.py
 python3 bot/test_catalog.py
 ```
 
 ## BK News
-Football news is live at `news.html`. Baseball news is live at `bb/news.html`. Each hour GitHub Actions runs `scripts/news_scrape.py`:
+Football news is live at `news.html`. Baseball news is live at `bb/news.html`. Basketball news is live at `bk/news.html`. Each hour GitHub Actions runs `scripts/news_scrape.py`:
 
 1. Pull a small set of league RSS wires (ESPN, CBS, Yahoo, PFT, FantasyPros, RotoWire for football; ESPN/CBS/Yahoo/RotoWire for MLB).
 2. Run a handful of Google News topic queries (injury, roster, coach/manager, practice, trade).
 3. Pull X and video via Google News `site:x.com` / `site:youtube.com` — no X login and no HTML scrape of x.com.
 4. Rotate eight Keep player-name queries so the full desk is covered across a day without hammering search.
-5. Hash every URL, skip ones already in `data/news/state.json`, cluster the rest, and merge into `data/news/football.json` or `data/news/baseball.json`.
+5. Hash every URL, skip ones already in `data/news/state.json`, cluster the rest, and merge into `data/news/football.json`, `data/news/baseball.json`, `data/news/soccer.json`, or `data/news/basketball.json`.
 6. Rebuild the static site and commit if anything changed.
 
 ```bash
 python3 scripts/test_news.py
 python3 scripts/news_scrape.py --sport football
 python3 scripts/news_scrape.py --sport baseball
+python3 scripts/news_scrape.py --sport basketball
 python3 scripts/build_site.py
 ```
 

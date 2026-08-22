@@ -24,7 +24,7 @@ from news_algo import (  # noqa: E402
     rematch_stories,
 )
 from x_tape import cards_html as x_cards  # noqa: E402
-from seo import canon, clip, dual_metric_graph, head_tags, rank_spread_graph, value_bars  # noqa: E402
+from seo import canon, clip, dual_metric_graph, head_tags, rank_spread_graph, sports_footer, sports_top, value_bars  # noqa: E402
 
 
 def esc(s):
@@ -74,16 +74,6 @@ PL_NAV = [
 
 def wordmark():
     return '<span class="word-pitch">PITCH</span><span class="word-keep">KEEP</span>'
-
-
-def sport_footer(depth=1):
-    prefix = "../" * depth
-    return (
-        f'<div>'
-        f'<a class="sport-switch fb" href="{prefix}index.html">Ball Keep Football</a>'
-        f'<a class="sport-switch bb" href="{prefix}bb/index.html">BaseBallKeep</a>'
-        f"</div>"
-    )
 
 
 PL_SEO = {
@@ -215,11 +205,11 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
       </a>
       <nav>{''.join(links)}</nav>
     </header>
-    <p class="sports-top">Also: <a href="{prefix}index.html">Ball Keep Football</a> · <a href="{prefix}bb/index.html">BaseBallKeep</a></p>
+    {sports_top("pl", depth)}
     {body}
     <footer>
       © {date.today().year} PitchKeep · ballkeep.com/pl · Rankings aggregated {UPDATED}. Not affiliated with the Premier League or FPL.
-      {sport_footer(depth)}
+      {sports_footer("pl", depth)}
     </footer>
   </div>
   {extra_js}

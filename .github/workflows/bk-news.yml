@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       sport:
-        description: "football, baseball, soccer, both, or all"
+        description: "football, baseball, soccer, basketball, both, or all"
         default: all
         type: choice
         options:
@@ -16,6 +16,7 @@ on:
           - football
           - baseball
           - soccer
+          - basketball
 
 concurrency:
   group: bk-news
