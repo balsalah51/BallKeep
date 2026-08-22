@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 21, 2026"
+UPDATED = "August 22, 2026"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from bb_data import (  # noqa: E402

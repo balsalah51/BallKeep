@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 21, 2026"
+UPDATED = "August 22, 2026"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from pl_data import PL_SOURCES, bk_value, load_universe  # noqa: E402

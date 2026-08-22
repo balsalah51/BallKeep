@@ -27,6 +27,7 @@ URLS = {
     "fp_ppr": "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php",
     "fp_rook": "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php",
     "fp_bb": "https://www.fantasypros.com/mlb/rankings/dynasty-overall.php",
+    "fp_nba": "https://www.fantasypros.com/nba/rankings/dynasty-overall.php",
     "ktc": "https://keeptradecut.com/dynasty-rankings",
     "dn": "https://www.dynastynerds.com/dynasty-rankings/superflex/",
 }
@@ -227,12 +228,18 @@ def main() -> int:
         dump_names("fp-rookies", fp_names(pages["fp_rook"]))
     if "fp_bb" in pages:
         dump_names("fp-bb-dynasty", fp_names(pages["fp_bb"]))
+    if "fp_nba" in pages:
+        dump_names("fp-nba-dynasty", fp_names(pages["fp_nba"]))
     if "ktc" in pages:
         dump_names("ktc-sf", ktc_names(pages["ktc"]))
     if "dn" in pages:
         dump_names("dn-sf", dn_names(pages["dn"]))
     if "pfn" in pages:
-        write_pfn_txt(parse_pfn(pages["pfn"]))
+        pfn_rows = parse_pfn(pages["pfn"])
+        if pfn_rows:
+            write_pfn_txt(pfn_rows)
+        else:
+            print("  keep existing PFN tape (parser got 0 rows)")
     return 0
 
 

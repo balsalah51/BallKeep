@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 21, 2026"
+UPDATED = "August 22, 2026"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
