@@ -155,16 +155,16 @@ a.news-item:hover h3 { color: var(--red); }
 .desk-block.main { background: #fff; border: 3px solid var(--ink); }
 .desk-block.lists { background: #e8eef4; border: 3px solid #4a6780; }
 .desk-block.lists .kicker { color: #4a6780; }
-.desk-block.extra { background: #141414; border: 3px solid #141414; color: #fff; }
-.desk-block.extra .kicker { color: #f0c14b; }
-.desk-block.extra h2 { color: #fff; }
-.desk-block.extra .note { color: #c5c5c5; }
-.desk-block.extra .tile { background: #222; border-color: #333; color: #fff; }
-.desk-block.extra .tile h3 { color: #fff; }
-.desk-block.extra .tile p, .desk-block.extra .news-meta { color: #bdbdbd; }
-.desk-block.extra .tile:hover { border-color: #f0c14b; }
-.desk-block.extra .news-item h3 { color: #fff; }
+.desk-block.extra { background: #f4e8ec; border: 3px solid #a85a6a; }
+.desk-block.extra .kicker { color: #a85a6a; }
+.desk-block.extra .tile { background: #fff; }
+.desk-block.extra .tile:hover { border-color: #a85a6a; }
 .desk-block.extra .news-list { margin-top: 16px; }
+.sports-top {
+  margin: 0 0 10px; font-size: 12px; font-weight: 700; color: var(--muted);
+}
+.sports-top a { color: var(--muted); text-decoration: none; }
+.sports-top a:hover { color: var(--red); }
 .x-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 12px; }
 a.x-card { color: inherit; padding: 0; overflow: hidden; }
 a.x-card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--powder-deep); display: block; }

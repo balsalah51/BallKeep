@@ -233,6 +233,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
       </a>
       <nav>{''.join(links)}</nav>
     </header>
+    <p class="sports-top">Also: <a href="{fb}">Ball Keep Football</a> · <a href="{prefix}pl/index.html">PitchKeep</a></p>
     {body}
     <footer>
       © {date.today().year} BaseBallKeep · ballkeep.com/bb · Rankings aggregated {UPDATED}. Not affiliated with MLB.

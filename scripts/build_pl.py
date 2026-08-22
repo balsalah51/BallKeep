@@ -215,6 +215,7 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
       </a>
       <nav>{''.join(links)}</nav>
     </header>
+    <p class="sports-top">Also: <a href="{prefix}index.html">Ball Keep Football</a> · <a href="{prefix}bb/index.html">BaseBallKeep</a></p>
     {body}
     <footer>
       © {date.today().year} PitchKeep · ballkeep.com/pl · Rankings aggregated {UPDATED}. Not affiliated with the Premier League or FPL.
