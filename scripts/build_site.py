@@ -874,8 +874,8 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "the-ones.html": (
-        "The Ones — John Metchie the III Rankings | Ball Keep",
-        "The third desk. John Metchie the III about 80 times, with every name 30 and older spliced in. Full fake rankings. Not a trade board.",
+        "The Ones — Win-Now Superflex Rankings | Ball Keep",
+        "Competitive win-now Superflex rankings. Veterans who can still close a championship window. The third desk, under The Keep and The Board.",
         "img/logo.jpg",
     ),
     "the-x.html": (
@@ -1910,7 +1910,7 @@ def main():
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
       <h2>{wordmark()}</h2>
-      <p class="note">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year. The Ones is a bit.</p>
+      <p class="note">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year. The Ones is win-now.</p>
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
@@ -1924,8 +1924,8 @@ def main():
         </a>
         <a class="tile lead ones" href="the-ones.html">
           <h3>The Ones</h3>
-          <p class="lead-sub">John Metchie the III · the old heads</p>
-          <p>Eighty Metchies. Everyone 30 and older spliced in.</p>
+          <p class="lead-sub">Win-now Superflex · competitive</p>
+          <p>Names that help you win this year.</p>
         </a>
       </div>
       <div class="grid">
@@ -2121,9 +2121,9 @@ def main():
         )
 
     ones_body = f"""
-    <p class="kicker">The third desk · not a real board</p>
+    <p class="kicker">Win-now Superflex · competitive ranks</p>
     <h2>The Ones</h2>
-    <p class="note">The Keep is Superflex Dynasty. The Board is Superflex Redraft. The Ones is John Metchie the III, about eighty times, with every name 30 and older spliced in because they are still The Ones. Full fake desks. Real faces. Do not trade on this.</p>
+    <p class="note">The Keep is Superflex Dynasty. The Board is Superflex Redraft. The Ones is the win-now board — competitive ranks for teams trying to win this year. Veterans stay expensive. Kids pay a tax.</p>
     <p class="note">Position</p>
     <div class="filters" id="ones-pos"><button type="button" class="active" data-pos="all">All</button>
       <button type="button" data-pos="QB">QB</button>
@@ -2134,10 +2134,10 @@ def main():
     <div class="panel">{rank_table(ones, ["Super", "Desks", "PFN", "KTC", "BK Value"], ones_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ones, 12, "#1788c2", "Ones value graph")}
     {sources_panel([
-        ("Metchie Institute of Advanced Ones", "", "Weekly board. Always 1.01. Eighty copies."),
-        ("The Geriatric Tape", "", "Anyone 30 or older automatically qualifies."),
-        ("III Desk", "", "Roman numerals only. The is mandatory."),
-    ], heading="Desks in This Completely Serious Aggregate")}
+        ("Contender desk", "", "Win-now Superflex: veterans climb, kids cool."),
+        ("Championship window", "", "This-year production over 2029."),
+        ("Veteran Superflex tape", "", "Names who can start a title week."),
+    ], heading="Boards in This Aggregate")}
     """
     ones_js = """<script>
     const box = document.getElementById('ones-pos');
