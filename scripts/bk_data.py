@@ -6,6 +6,7 @@ Unranked names are skipped in the mean — never treated as 999.
 """
 from __future__ import annotations
 
+import json
 import math
 import re
 import unicodedata
@@ -985,6 +986,14 @@ def unique_universe():
     return seen, order
 
 
+def load_fp_nba() -> dict:
+    path = ROOT / "data" / "ranks" / "fp-nba-dynasty.json"
+    if not path.exists():
+        return {}
+    names = json.loads(path.read_text())
+    return {bk_norm(n): i for i, n in enumerate(names, 1) if n}
+
+
 def remap(keys, score_fn, cap=None):
     scored = [(score_fn(k, i), i, k) for i, k in enumerate(keys)]
     scored.sort()
@@ -1031,7 +1040,7 @@ def build_sources(meta, order):
     base = {k: i + 1 for i, k in enumerate(order)}
     sources = {
         "Hashtag Basketball Dynasty": {k: r for k, r in base.items() if r <= 400},
-        "FantasyPros Dynasty ECR": remap(order, youth, cap=250),
+        "FantasyPros Dynasty ECR": load_fp_nba() or remap(order, youth, cap=250),
         "Basketball Monster Cats": remap(order, cats, cap=220),
         "Hashtag Points": remap(order, points, cap=200),
         "ESPN Dynasty": remap(order, youth, cap=180),
