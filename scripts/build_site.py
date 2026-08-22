@@ -725,7 +725,10 @@ def face_src(r, media, depth=0):
 
 
 def wordmark():
-    return '<span class="word-ball">BALL</span> <span class="word-keep">KEEP</span>'
+    return (
+        '<span class="word-ball" style="color:#1788c2">BALL</span> '
+        '<span class="word-keep" style="color:#c8102e">KEEP</span>'
+    )
 
 
 def sources_panel(items, heading="Desks in This Super Aggregate"):
@@ -880,7 +883,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep")}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=25" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
