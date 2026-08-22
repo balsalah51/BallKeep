@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 UPDATED = "August 21, 2026"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from bk_cats import plus_minus as bk_plus_minus  # noqa: E402
 from bk_data import (  # noqa: E402
     BK_SOURCES,
     DYNASTY_WAIVERS,
@@ -486,22 +487,7 @@ def write_player_pages(keep, board, news_by_player):
                 + "".join(bk_news_card(s, prefix="../") for s in stories[:3])
                 + "</div>"
             )
-        plus = []
-        minus = []
-        if r["bk"] <= 20:
-            plus.append("Keep top 20. This is a first-round dynasty chip.")
-        if (r.get("age") or 99) <= 22:
-            plus.append("Age still works for you. Dynasty rooms overpay this profile for a reason.")
-        if (r.get("age") or 0) >= 33:
-            minus.append("The age curve is the minus. Redraft still pays. Dynasty should tax it.")
-        if br and br["bk"] + 15 < r["bk"]:
-            plus.append(f"The Board has him #{br['bk']} — redraft likes him more than dynasty does.")
-        if br and br["bk"] > r["bk"] + 20:
-            minus.append(f"The Board slides him to #{br['bk']}. This-year managers are colder.")
-        if not plus:
-            plus.append("On The Keep. That is already a rostered name.")
-        if not minus:
-            minus.append("The minus is the price. Someone in your room already knows the rank.")
+        plus, minus = bk_plus_minus(r)
         board_rows = "".join(
             f"<tr><td>{esc(src)}</td><td>{rk}</td></tr>" for src, rk in sorted(ranks.items(), key=lambda kv: kv[1])[:12]
         )
