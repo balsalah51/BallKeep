@@ -204,7 +204,8 @@ def main():
     css = Path("css/site.css").read_text()
     assert "a.sport-switch.bk" in css
     assert "border: 3px solid #c8102e" in css
-    assert "clamp(52px, 11vw, 84px)" in css
+    assert ".home-intro" in css
+    assert "font-size: 36px" in css
     board_html = html_of("board.html")
     assert "Superflex Redraft" in board_html
     assert "Superflex Dynasty" in board_html
