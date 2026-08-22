@@ -204,10 +204,14 @@ def main():
     assert "Big draw" not in home
     css = Path("css/site.css").read_text()
     assert "a.sport-switch.bk" in css
-    assert "box-shadow: 0 0 0 3px #c8102e" in css
+    assert "background: #1a1208" in css
+    assert "color: #f4a259" in css
+    assert "border: 3px solid #e87722" in css
+    assert "background: #0b1f3a" in css
+    assert "background: #37003c" in css
+    assert "background: #d6ebf7" in css
+    assert "box-shadow:0 0 0 3px #c8102e" not in home
     assert "style=\"color:#1788c2\"" in home
-    assert "style=\"color:#c8102e\"" in home
-    assert "box-shadow:0 0 0 3px #c8102e" in home
     assert "font-size: 40px" in css
     assert ".home-intro" in css
     board_html = html_of("board.html")
