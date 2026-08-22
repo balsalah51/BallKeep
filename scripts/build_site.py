@@ -82,7 +82,6 @@ def norm_name(name: str) -> str:
         "marvin harrison jr": "marvin harrison",
         "michael pittman jr": "michael pittman",
         "kyle pitts sr": "kyle pitts",
-        "john metchie the": "john metchie",
         "chris godwin jr": "chris godwin",
         "travis etienne jr": "travis etienne",
         "dandre swift": "dandre swift",
@@ -389,100 +388,6 @@ def attach_values(rows, qb_mult_for_qb: float = 1.0):
     return rows
 
 
-METCHIE_ONES_NAME = "John Metchie the III"
-METCHIE_ONES_COPIES = 80
-
-
-def _row_age(r) -> int:
-    try:
-        return int(r.get("age") or 0)
-    except (TypeError, ValueError):
-        return 0
-
-
-def _metchie_template(keep, board, media):
-    media_row = media.get("john metchie") or {}
-    for rows in (keep, board):
-        for r in rows:
-            if (r.get("key") or norm_name(r.get("name") or "")) == "john metchie":
-                return {
-                    "key": "john metchie",
-                    "name": METCHIE_ONES_NAME,
-                    "pos": r.get("pos") or media_row.get("pos") or "WR",
-                    "team": r.get("team") or media_row.get("team") or "NYJ",
-                    "age": r.get("age") or media_row.get("age") or 26,
-                }
-    return {
-        "key": "john metchie",
-        "name": METCHIE_ONES_NAME,
-        "pos": media_row.get("pos") or "WR",
-        "team": media_row.get("team") or "NYJ",
-        "age": media_row.get("age") or 26,
-    }
-
-
-def _veterans_30(*lists):
-    seen = {"john metchie"}
-    out = []
-    for rows in lists:
-        for r in rows:
-            key = r.get("key") or norm_name(r.get("name") or "")
-            if not key or key in seen or _row_age(r) < 30:
-                continue
-            seen.add(key)
-            out.append(r)
-    out.sort(key=lambda r: (-_row_age(r), r.get("name") or ""))
-    return out
-
-
-def _weave_ones(metchies, vets):
-    """Two Metchies, then a 30+ name, repeat."""
-    if not vets:
-        return list(metchies)
-    out = []
-    i = j = 0
-    while i < len(metchies) or j < len(vets):
-        if i < len(metchies):
-            out.append(metchies[i])
-            i += 1
-        if i < len(metchies):
-            out.append(metchies[i])
-            i += 1
-        if j < len(vets):
-            out.append(vets[j])
-            j += 1
-    return out
-
-
-def the_ones_board(keep, board, media):
-    """Joke third desk: ~80 John Metchie the III rows, every 30+ name spliced in."""
-    src = _metchie_template(keep, board, media)
-    woven = _weave_ones([src] * METCHIE_ONES_COPIES, _veterans_30(keep, board))
-    rows = []
-    for i, raw in enumerate(woven, 1):
-        is_one = raw is src
-        pfn = 1 + (i * 13 + (1 if is_one else 41)) % 247
-        ktc = 1 + (i * 17 + (5 if is_one else 53)) % 301
-        desks = 32 if is_one else 6 + (i % 19)
-        super_avg = round((1.01 if is_one else 22.0) + (i * 0.31) % (18 if is_one else 70), 2)
-        rows.append({
-            "bk": i,
-            "key": raw.get("key") or norm_name(raw.get("name") or ""),
-            "name": METCHIE_ONES_NAME if is_one else raw.get("name"),
-            "pos": raw.get("pos") or ("WR" if is_one else ""),
-            "team": raw.get("team") or ("NYJ" if is_one else ""),
-            "age": raw.get("age") or "",
-            "avg": super_avg,
-            "n": desks,
-            "ranks": {
-                "PFN (Katz/Soppe)": pfn,
-                "KeepTradeCut SF": ktc,
-            },
-            "value": bk_value(i),
-        })
-    return rows
-
-
 # Future firsts priced as equivalent ranks on the Superflex curve.
 DYNASTY_PICKS = [
     ("2027 Early 1st", 8),
@@ -714,10 +619,10 @@ NAV = [
     ("rookies-2026.html", "2026 Rookies"),
     ("hot-n-cold.html", "Hot 'n' Cold"),
     ("board.html", "The Board"),
-    ("the-ones.html", "The Ones"),
     ("players/index.html", "Players"),
     ("nfl-schedule.html", "NFL"),
     ("mlb-schedule.html", "MLB"),
+    ("discord.html", "Discord"),
 ]
 
 PLAYER_PAGES = {}  # key -> slug
@@ -873,11 +778,6 @@ FB_SEO = {
         "Superflex Redraft, the second desk. This-year Superflex: quarterbacks stay expensive, rookies pay a tax. Built from The Keep SF premium plus the PPR board.",
         "img/logo.jpg",
     ),
-    "the-ones.html": (
-        "The Ones — John Metchie the III Rankings | Ball Keep",
-        "The third desk. John Metchie the III about 80 times, with every name 30 and older spliced in. Full fake rankings. Not a trade board.",
-        "img/logo.jpg",
-    ),
     "the-x.html": (
         "The X — Football Memes from X | Ball Keep",
         "Fun tape, not news. Memes and shitposts pulled from X via Google News. Pictures when the wire carries them.",
@@ -983,7 +883,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep")}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=27" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=26" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1910,7 +1810,7 @@ def main():
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
       <h2>{wordmark()}</h2>
-      <p class="note">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year. The Ones is a bit.</p>
+      <p class="note">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year.</p>
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
@@ -1921,11 +1821,6 @@ def main():
           <h3>The Board</h3>
           <p class="lead-sub">Superflex Redraft · this year</p>
           <p>Quarterbacks stay expensive. Kids pay a tax.</p>
-        </a>
-        <a class="tile lead ones" href="the-ones.html">
-          <h3>The Ones</h3>
-          <p class="lead-sub">John Metchie the III · the old heads</p>
-          <p>Eighty Metchies. Everyone 30 and older spliced in.</p>
         </a>
       </div>
       <div class="grid">
@@ -1941,6 +1836,7 @@ def main():
         ("recent-trades.html", "Recent Deals", "Packages that closed."),
         ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
         ("mlb-schedule.html", "MLB Schedule", "September slate."),
+        ("discord.html", "Discord", "Search ranks. Run the calculator."),
     ])}
     {desk_block("extra", "Extra", "News and The X.", "Memes and the wire. Not the ranks.", [
         ("the-x.html", "The X", "Memes. Pictures on the card."),
@@ -2108,51 +2004,6 @@ def main():
     """
     write("board.html", page("The Board", "board.html", board_body))
 
-    ones = the_ones_board(keep, board, media)
-    apply_media_ages(ones, media, ages)
-
-    def ones_extra(r):
-        return (
-            f'<td class="desk-only">{r["avg"]}</td>'
-            + f'<td class="desk-only">{r["n"]}</td>'
-            + src_td(r, "PFN (Katz/Soppe)")
-            + src_td(r, "KeepTradeCut SF")
-            + f'<td class="c-val val">{fmt_val(r["value"])}</td>'
-        )
-
-    ones_body = f"""
-    <p class="kicker">The third desk · not a real board</p>
-    <h2>The Ones</h2>
-    <p class="note">The Keep is Superflex Dynasty. The Board is Superflex Redraft. The Ones is John Metchie the III, about eighty times, with every name 30 and older spliced in because they are still The Ones. Full fake desks. Real faces. Do not trade on this.</p>
-    <p class="note">Position</p>
-    <div class="filters" id="ones-pos"><button type="button" class="active" data-pos="all">All</button>
-      <button type="button" data-pos="QB">QB</button>
-      <button type="button" data-pos="RB">RB</button>
-      <button type="button" data-pos="WR">WR</button>
-      <button type="button" data-pos="TE">TE</button>
-    </div>
-    <div class="panel">{rank_table(ones, ["Super", "Desks", "PFN", "KTC", "BK Value"], ones_extra, media=media, faces=True, show_age=True)}</div>
-    {value_bars(ones, 12, "#1788c2", "Ones value graph")}
-    {sources_panel([
-        ("Metchie Institute of Advanced Ones", "", "Weekly board. Always 1.01. Eighty copies."),
-        ("The Geriatric Tape", "", "Anyone 30 or older automatically qualifies."),
-        ("III Desk", "", "Roman numerals only. The is mandatory."),
-    ], heading="Desks in This Completely Serious Aggregate")}
-    """
-    ones_js = """<script>
-    const box = document.getElementById('ones-pos');
-    box.addEventListener('click', e => {
-      const b = e.target.closest('button'); if (!b) return;
-      box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
-      b.classList.add('active');
-      const p = b.dataset.pos;
-      document.querySelectorAll('tbody tr').forEach(tr => {
-        tr.style.display = (p === 'all' || tr.dataset.pos === p) ? '' : 'none';
-      });
-    });
-    </script>"""
-    write("the-ones.html", page("The Ones", "the-ones.html", ones_body, ones_js))
-
     # NFL schedule
     weeks = sorted({g["week"] for g in nfl})
     nfl_js_games = json.dumps(nfl)
@@ -2308,9 +2159,9 @@ def main():
         "https://ballkeep.com/rookies-2026.html",
         "https://ballkeep.com/hot-n-cold.html",
         "https://ballkeep.com/board.html",
-        "https://ballkeep.com/the-ones.html",
         "https://ballkeep.com/nfl-schedule.html",
         "https://ballkeep.com/mlb-schedule.html",
+        "https://ballkeep.com/discord.html",
     ] + news_urls[1:] + player_urls
     bb = write_baseball_site()
     sitemap.extend(bb.get("urls") or [])
