@@ -2,7 +2,7 @@
 
 Static site for [ballkeep.com](https://ballkeep.com), published from this repository root on GitHub Pages.
 
-Powder-blue football desk. Navy-and-cream **BaseBallKeep**, hardwood **BasketKeep**, and purple **PitchKeep** through the sport pills.
+Powder-blue **FootKeep** desk. Navy-and-cream **BaseKeep**, hardwood **BasketKeep**, and purple **PitchKeep** through the sport pills.
 
 ## Football
 - **The Keep** — Superflex Dynasty Super Aggregate top 400 (30+ desks; 50% the four long boards, 50% every other desk that ranked the player). The big draw.
@@ -19,7 +19,7 @@ Powder-blue football desk. Navy-and-cream **BaseBallKeep**, hardwood **BasketKee
 - MLB September stretch-run schedules
 - Discord mark **and Discord bot** (`bot/`)
 
-## BaseBallKeep (`/bb`)
+## BaseKeep (`/bb`)
 Separate sport, separate palette. Footer crossover only — baseball does not live in the football nav.
 
 - **The Keep** — overall dynasty top 400, 23-board aggregate (RotoGraphs + The Dynasty Guru long boards, plus compiled expert slices)

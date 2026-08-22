@@ -10,7 +10,7 @@ Efficiency:
   5. Hash every item; skip URLs already in data/news/state.json.
   6. Cluster leftover items into stories and merge into the existing sport JSON.
 
-Football publishes at /news.html. Baseball publishes on BaseBallKeep at /bb/news.html. Basketball publishes on BasketKeep at /bk/news.html.
+Football publishes at /news.html. Baseball publishes on BaseKeep at /bb/news.html. Basketball publishes on BasketKeep at /bk/news.html.
 """
 from __future__ import annotations
 

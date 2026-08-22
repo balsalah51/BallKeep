@@ -120,20 +120,15 @@ table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
 .waiver.hot { border-left-color: var(--stitch); background: #fff8f0; }
 footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
 .sport-switch {
-  display: inline-block; margin: 18px 6px 0; padding: 12px 22px; border-radius: 999px;
-  font-weight: 800; text-decoration: none; letter-spacing: 0.04em;
-  cursor: pointer; box-shadow: 0 6px 16px rgba(16, 32, 51, 0.16);
-  transition: transform 0.12s ease, filter 0.12s ease;
+  display: inline-block; margin: 18px 6px 0; padding: 8px 14px; border-radius: 999px;
+  font-weight: 800; font-size: 13px; text-decoration: none; letter-spacing: 0.02em;
+  cursor: pointer; border: 2px solid transparent;
 }
-.sport-switch:hover { transform: translateY(-1px); filter: brightness(1.08); }
-.sport-switch.bb {
-  background: var(--navy); color: var(--cream); border: 3px solid var(--forest);
-}
-.sport-switch.fb {
-  background: #d6ebf7; color: #c8102e; border: 3px solid #c8102e;
-}
-.sport-switch.bk { background: #1a1208; color: #f4a259; border: 3px solid #e87722; }
-.sport-switch.pl { background: #37003c; color: #00ff85; border: 3px solid #e8c547; }
+.sport-switch:hover { filter: brightness(1.06); }
+.sport-switch.fb { background: #fff; color: #c8102e; border-color: #c8102e; }
+.sport-switch.bb { background: #0b1f3a; color: #fff; border-color: #0b1f3a; }
+.sport-switch.bk { background: #1a1208; color: #ffb347; border-color: #1a1208; }
+.sport-switch.pl { background: #37003c; color: #fff; border-color: #37003c; }
 a.player-link { color: inherit; text-decoration: none; border-bottom: 1px dashed rgba(232,119,34,0.45); }
 a.player-link:hover { color: var(--forest); }
 .news-list { display: grid; gap: 12px; }

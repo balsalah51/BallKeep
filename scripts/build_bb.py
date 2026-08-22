@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the BaseBallKeep static section under bb/."""
+"""Build the BaseKeep static section under bb/."""
 from __future__ import annotations
 
 import html
@@ -39,12 +39,13 @@ def esc(s):
 
 def desk_block(kind, kicker, heading, note, tiles, extra=""):
     cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
+    cols = "grid" if len(tiles) <= 2 else "grid-3"
     return (
         f'<section class="desk-block {kind}">'
         f'<p class="kicker">{esc(kicker)}</p>'
         f"<h2>{esc(heading)}</h2>"
         f'<p class="note">{note}</p>'
-        f'<div class="grid-3">{cards}</div>'
+        f'<div class="{cols}">{cards}</div>'
         f"{extra}"
         "</section>"
     )
@@ -81,7 +82,7 @@ BB_NAV = [
 
 
 def wordmark():
-    return '<span class="word-base">BASE</span><span class="word-ball">BALL</span><span class="word-keep">KEEP</span>'
+    return '<span class="word-base">BASE</span> <span class="word-keep">KEEP</span>'
 
 
 def bb_nav_target(href: str, path: str, depth: int) -> str:
@@ -103,97 +104,97 @@ def bb_nav_current(href: str, path: str) -> bool:
 
 BB_SEO = {
     "index.html": (
-        "BaseBallKeep | Dynasty Baseball Rankings and Trade Calculator",
+        "BaseKeep | Dynasty Baseball Rankings and Trade Calculator",
         "Navy-and-cream dynasty baseball desk. The Keep top 400 from 23 boards led by RotoGraphs and The Dynasty Guru. Lineup, Pitchers, bullpen, redraft, and BK News.",
         "img/bb-hero.jpg",
     ),
     "the-keep.html": (
-        "The Keep 2026 Dynasty Baseball Rankings (Top 400) | BaseBallKeep",
+        "The Keep 2026 Dynasty Baseball Rankings (Top 400) | BaseKeep",
         "Overall dynasty baseball top 400, rebuilt August 21, 2026. 23-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
         "img/bb-logo.jpg",
     ),
     "the-lineup.html": (
-        "The Lineup — Dynasty Hitter Rankings | BaseBallKeep",
+        "The Lineup — Dynasty Hitter Rankings | BaseKeep",
         "Dynasty hitters only. The bats you keep, stripped from The Keep. Ranked on the same 23-board average.",
         "img/bb-logo.jpg",
     ),
     "pitchers.html": (
-        "BK's Pitchers — Dynasty SP and Two-Way Rankings | BaseBallKeep",
+        "BK's Pitchers — Dynasty SP and Two-Way Rankings | BaseKeep",
         "Top 150 dynasty arms, starters plus the two-way unicorn. Same BK Value curve as The Keep.",
         "img/bb-logo.jpg",
     ),
     "bullpen.html": (
-        "Bullpen Saves Rankings — Top 100 Relievers | BaseBallKeep",
+        "Bullpen Saves Rankings — Top 100 Relievers | BaseKeep",
         "Top 100 relief pitchers for saves leagues. FantasyPros closer report plus ESPN reliever depth.",
         "img/bb-logo.jpg",
     ),
     "bullpen-holds.html": (
-        "Saves Plus Holds Rankings | BaseBallKeep",
+        "Saves Plus Holds Rankings | BaseKeep",
         "Same bullpen, holds counted. FantasyPros Week 21 SV+H board plus setup men the ESPN chart uses.",
         "img/bb-logo.jpg",
     ),
     "redraft.html": (
-        "2026 Rest-of-Season Baseball Rankings | BaseBallKeep",
+        "2026 Rest-of-Season Baseball Rankings | BaseKeep",
         "Redraft baseball top 400. Age tax flipped so veterans who mash this month climb.",
         "img/bb-logo.jpg",
     ),
     "trade.html": (
-        "Dynasty Baseball Trade Calculator | BaseBallKeep",
+        "Dynasty Baseball Trade Calculator | BaseKeep",
         "Keep, Lineup, Pitchers, Redraft, Saves, SV+H. Rank becomes BK Value. Fair is within 8%.",
         "img/bb-logo.jpg",
     ),
     "news.html": (
-        "BK News Baseball — IL, Roster, and Manager Tape | BaseBallKeep",
+        "BK News Baseball — IL, Roster, and Manager Tape | BaseKeep",
         "Hourly baseball IL, roster, and manager reports clustered with links back to Keep player files.",
         "img/bb-logo.jpg",
     ),
     "players/index.html": (
-        "MLB Dynasty Player Files | BaseBallKeep",
+        "MLB Dynasty Player Files | BaseKeep",
         "The Keep top 400, one cream card each: 2026/2025 line, every board, tape.",
         "img/bb-logo.jpg",
     ),
     "the-x.html": (
-        "The X — Baseball Memes from X | BaseBallKeep",
+        "The X — Baseball Memes from X | BaseKeep",
         "Fun tape, not news. MLB memes and shitposts pulled from X via Google News.",
         "img/bb-logo.jpg",
     ),
     "waivers-dynasty.html": (
-        "Dynasty Baseball Waiver Wire | BaseBallKeep",
+        "Dynasty Baseball Waiver Wire | BaseKeep",
         "Fifteen dynasty stashes. Short on purpose: prospects and IL names worth a roster spot.",
         "img/bb-logo.jpg",
     ),
     "waivers-redraft.html": (
-        "Redraft Baseball Waiver Wire — Priority 1 to 50 | BaseBallKeep",
+        "Redraft Baseball Waiver Wire — Priority 1 to 50 | BaseKeep",
         "Redraft wire, longer and louder. This week matters.",
         "img/bb-logo.jpg",
     ),
     "trade-keep.html": (
-        "Dynasty Baseball Overall Trade Calculator | BaseBallKeep",
+        "Dynasty Baseball Overall Trade Calculator | BaseKeep",
         "Trade calculator on The Keep overall ranks. Rank becomes BK Value (12,000 at 1.01). Fair is within 8%.",
         "img/bb-logo.jpg",
     ),
     "trade-lineup.html": (
-        "Dynasty Hitter Trade Calculator | BaseBallKeep",
+        "Dynasty Hitter Trade Calculator | BaseKeep",
         "Trade calculator on The Lineup. Hitters only. Rank becomes BK Value. Fair is within 8%.",
         "img/bb-logo.jpg",
     ),
     "trade-pitchers.html": (
-        "Dynasty Pitcher Trade Calculator | BaseBallKeep",
+        "Dynasty Pitcher Trade Calculator | BaseKeep",
         "Trade calculator on BK's Pitchers. Rank becomes BK Value. Fair is within 8%.",
         "img/bb-logo.jpg",
     ),
     "trade-redraft.html": (
-        "Baseball Redraft Trade Calculator | BaseBallKeep",
+        "Baseball Redraft Trade Calculator | BaseKeep",
         "Rest-of-season baseball trade calculator. No future picks. Rank becomes BK Value. Fair is within 8%.",
         "img/bb-logo.jpg",
     ),
     "trade-saves.html": (
-        "Saves League Trade Calculator | BaseBallKeep",
+        "Saves League Trade Calculator | BaseKeep",
         "Bullpen saves board as BK Value. Fair is within 8%.",
         "img/bb-logo.jpg",
     ),
     "trade-svh.html": (
-        "Saves Plus Holds Trade Calculator | BaseBallKeep",
+        "Saves Plus Holds Trade Calculator | BaseKeep",
         "SV+H bullpen board as BK Value. Fair is within 8%.",
         "img/bb-logo.jpg",
     ),
@@ -209,15 +210,15 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
         links.append(f'<a href="{esc(target)}"{cur}>{esc(label)}</a>')
     fb = f"{prefix}index.html"
     packed = BB_SEO.get(path)
-    full_title = doc_title or (packed[0] if packed else f"{title} | BaseBallKeep")
-    desc = description or (packed[1] if packed else f"{title} on BaseBallKeep. Dynasty baseball rankings, BK Value, and BK News. Updated {UPDATED}.")
+    full_title = doc_title or (packed[0] if packed else f"{title} | BaseKeep")
+    desc = description or (packed[1] if packed else f"{title} on BaseKeep. Dynasty baseball rankings, BK Value, and BK News. Updated {UPDATED}.")
     img = image or (packed[2] if packed else "img/bb-logo.jpg")
     return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-{head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseBallKeep")}
+{head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseKeep")}
   <link rel="stylesheet" href="{prefix}css/bb.css" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
 </head>
@@ -225,7 +226,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{'index.html' if depth == 1 else '../index.html'}">
-        <img src="{prefix}img/bb-logo.jpg" alt="BaseBallKeep circular baseball logo" />
+        <img src="{prefix}img/bb-logo.jpg" alt="BaseKeep circular baseball logo" />
         <div>
           <p class="brand-title">{wordmark()}</p>
           <p>Dynasty · Redraft · Diamond</p>
@@ -236,7 +237,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
     {sports_top("bb", depth)}
     {body}
     <footer>
-      © {date.today().year} BaseBallKeep · ballkeep.com/bb · Rankings aggregated {UPDATED}. Not affiliated with MLB.
+      © {date.today().year} BaseKeep · ballkeep.com/bb · Rankings aggregated {UPDATED}. Not affiliated with MLB.
       {sports_footer("bb", depth)}
     </footer>
   </div>
@@ -909,7 +910,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     """
         seo_title = f"{r['name']} Dynasty Rank #{r['bk']} ({r.get('pos') or ''} {r.get('team') or media.get('team') or ''})".strip()
         seo_desc = clip(
-            f"{r['name']} is BaseBallKeep #{r['bk']}, {r.get('pos') or ''} "
+            f"{r['name']} is BaseKeep #{r['bk']}, {r.get('pos') or ''} "
             f"{r.get('team') or media.get('team') or ''}. Average {r.get('avg')} across {r.get('n') or 0} boards. "
             f"BK Value {int(r.get('value') or 0):,}. Updated {UPDATED}."
         )
@@ -1134,7 +1135,7 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
     body = f"""
     <p class="kicker">BK News · Baseball · Hourly wire</p>
     <h2>BK News</h2>
-    <p class="note">Injuries, IL stints, roster moves, and manager reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every BaseBallKeep player page named in the tape. The scrape repeats on its own every hour. Football BK News lives on <a href="../news.html">Ball Keep</a>.</p>
+    <p class="note">Injuries, IL stints, roster moves, and manager reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every BaseKeep player page named in the tape. The scrape repeats on its own every hour. Football BK News lives on <a href="../news.html">Ball Keep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{''.join(chips)}</div>
     <div class="news-list" id="news-list">{cards}</div>
@@ -1179,7 +1180,7 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
             )
             named = f'<p class="kicker" style="margin-top:22px">Players on this story</p><div class="grid-3">{plist}</div>'
         else:
-            named = '<p class="note" style="margin-top:18px">No BaseBallKeep player page matched this cluster yet.</p>'
+            named = '<p class="note" style="margin-top:18px">No BaseKeep player page matched this cluster yet.</p>'
         nsrc = len(sources)
         story_body = f"""
     <p class="kicker">BK News · {esc(label)}</p>
