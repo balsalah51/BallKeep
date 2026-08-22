@@ -1803,15 +1803,14 @@ def main():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home_body = f"""
-    <section class="hero" style="background-image:url('img/hero.jpg')">
-      <div class="hero-card">
-        <p class="kicker">Updated {UPDATED}</p>
-        <h2>{wordmark()}</h2>
-        <p class="hero-lead">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year.</p>
-        <div class="hero-ctas">
-          <a class="cta" href="the-keep.html">The Keep · Superflex Dynasty</a>
-          <a class="cta alt" href="board.html">The Board · Superflex Redraft</a>
-        </div>
+    <section class="hero" style="background-image:url('img/hero.jpg')" role="img" aria-label="Night stadium"></section>
+    <section class="home-intro">
+      <p class="kicker">Updated {UPDATED}</p>
+      <h2>{wordmark()}</h2>
+      <p class="hero-lead">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year.</p>
+      <div class="hero-ctas">
+        <a class="cta" href="the-keep.html">The Keep · Superflex Dynasty</a>
+        <a class="cta alt" href="board.html">The Board · Superflex Redraft</a>
       </div>
     </section>
     <section class="desk-block main">

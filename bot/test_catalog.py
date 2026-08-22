@@ -197,6 +197,8 @@ def main():
     assert "BaseBallKeep" not in home
     assert 'class="desk-block extra"' in home
     assert "hero-ctas" in home
+    assert "home-intro" in home
+    assert '<section class="hero"' in home
     assert "home-leads" in home
     assert "Big draw" not in home
     board_html = html_of("board.html")
