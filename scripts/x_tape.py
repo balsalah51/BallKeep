@@ -29,17 +29,17 @@ TIMEOUT = 14
 REDDIT = {
     "football": [
         "https://www.reddit.com/r/nflmemes/.rss",
-        "https://www.reddit.com/r/NFLmemes/.rss",
-        "https://www.reddit.com/r/fantasyfootball/.rss",
+        "https://old.reddit.com/r/nflmemes/.rss",
+        "https://old.reddit.com/r/fantasyfootball/.rss",
     ],
     "baseball": [
-        "https://www.reddit.com/r/baseball/.rss",
-        "https://www.reddit.com/r/mlbmemes/.rss",
+        "https://old.reddit.com/r/baseball/.rss",
+        "https://old.reddit.com/r/mlbmemes/.rss",
     ],
     "soccer": [
-        "https://www.reddit.com/r/soccercirclejerk/.rss",
-        "https://www.reddit.com/r/PremierLeague/.rss",
-        "https://www.reddit.com/r/soccer/.rss",
+        "https://old.reddit.com/r/soccercirclejerk/.rss",
+        "https://old.reddit.com/r/PremierLeague/.rss",
+        "https://old.reddit.com/r/soccer/.rss",
     ],
 }
 
