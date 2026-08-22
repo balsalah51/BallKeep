@@ -193,6 +193,7 @@ def main():
     assert "BaseKeep" in home
     assert "PitchKeep" in home
     assert "Ball Keep Football" not in home
+    assert "FootKeep" not in home
     assert "BaseBallKeep" not in home
     assert 'class="desk-block extra"' in home
     assert "hero-ctas" in home
@@ -202,12 +203,14 @@ def main():
     assert "Superflex Redraft" in board_html
     assert "Superflex Dynasty" in board_html
     bb_home = html_of("bb/index.html")
-    assert "FootKeep" in bb_home
+    assert "BallKeep" in bb_home
+    assert "FootKeep" not in bb_home
     assert "BaseKeep" in page_title(bb_home) or "BASE" in bb_home
     assert "BaseBallKeep" not in bb_home
     bk_home = html_of("bk/index.html")
     assert "BasketKeep" in page_title(bk_home) or "BASKET" in bk_home
-    assert "FootKeep" in bk_home
+    assert "BallKeep" in bk_home
+    assert "FootKeep" not in bk_home
     assert "the-keep.html" in bk_home
     assert "board.html" in bk_home
     bk_keep = html_of("bk/the-keep.html")
