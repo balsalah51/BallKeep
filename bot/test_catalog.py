@@ -201,8 +201,8 @@ def main():
     assert "hero-lead" not in home
     assert '<section class="hero"' in home
     assert "home-leads" in home
-    assert "the-ones.html" in home
-    assert "The Ones" in home
+    assert "the-ones.html" not in home
+    assert "The Ones" not in home
     assert 'href="discord.html"' not in home
     assert "Big draw" not in home
     css = Path("css/site.css").read_text()
@@ -251,9 +251,7 @@ def main():
     embiid = html_of("bk/players/joel-embiid.html")
     assert "The minus is the price" not in embiid
     assert "On The Keep. That is already a rostered name" not in embiid
-    ones = html_of("the-ones.html")
-    assert ones.count("John Metchie the III") >= 80
-    assert "The Ones" in ones
+    assert not (root / "the-ones.html").exists()
     assert 'href="discord.html"' not in html_of("the-keep.html")
 
 
