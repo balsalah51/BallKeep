@@ -198,6 +198,8 @@ def main():
     assert 'class="desk-block extra"' in home
     assert "home-intro" in home
     assert "Superflex ranks for two-QB leagues" in home
+    assert "Dynasty · Redraft" in home
+    assert "Superflex Dynasty · Superflex Redraft" not in home
     assert "hero-lead" not in home
     assert '<section class="hero"' in home
     assert "home-leads" in home
