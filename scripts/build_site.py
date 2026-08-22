@@ -1804,19 +1804,10 @@ def main():
         )
     home_body = f"""
     <section class="hero" style="background-image:url('img/hero.jpg')" role="img" aria-label="Night stadium"></section>
-    <section class="home-intro">
+    <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
       <h2>{wordmark()}</h2>
-      <p class="hero-lead">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year.</p>
-      <div class="hero-ctas">
-        <a class="cta" href="the-keep.html">The Keep · Superflex Dynasty</a>
-        <a class="cta alt" href="board.html">The Board · Superflex Redraft</a>
-      </div>
-    </section>
-    <section class="desk-block main">
-      <p class="kicker">Superflex</p>
-      <h2>The Keep and The Board</h2>
-      <p class="note">Two lists. Everything else on this page supports these.</p>
+      <p class="note">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year.</p>
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>

@@ -196,8 +196,9 @@ def main():
     assert "FootKeep" not in home
     assert "BaseBallKeep" not in home
     assert 'class="desk-block extra"' in home
-    assert "hero-ctas" in home
     assert "home-intro" in home
+    assert "Superflex ranks for two-QB leagues" in home
+    assert "hero-lead" not in home
     assert '<section class="hero"' in home
     assert "home-leads" in home
     assert "Big draw" not in home
@@ -205,7 +206,6 @@ def main():
     assert "a.sport-switch.bk" in css
     assert "border: 3px solid #c8102e" in css
     assert ".home-intro" in css
-    assert "font-size: 36px" in css
     board_html = html_of("board.html")
     assert "Superflex Redraft" in board_html
     assert "Superflex Dynasty" in board_html
