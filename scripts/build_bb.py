@@ -67,16 +67,14 @@ def write(path, doc):
 BB_NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
+    ("the-diamond.html", "The Diamond"),
     ("news.html", "News"),
     ("the-x.html", "The X"),
     ("the-lineup.html", "The Lineup"),
     ("pitchers.html", "BK's Pitchers"),
     ("bullpen.html", "Bullpen SV"),
     ("bullpen-holds.html", "SV + Holds"),
-    ("redraft.html", "Redraft"),
     ("trade.html", "Trade"),
-    ("waivers-dynasty.html", "Dynasty Wire"),
-    ("waivers-redraft.html", "Redraft Wire"),
     ("players/index.html", "Players"),
 ]
 
@@ -99,13 +97,15 @@ def bb_nav_current(href: str, path: str) -> bool:
         return True
     if href == "news.html" and (path == "news.html" or path.startswith("news/")):
         return True
+    if href == "the-diamond.html" and path in ("the-diamond.html", "redraft.html"):
+        return True
     return False
 
 
 BB_SEO = {
     "index.html": (
         "BaseKeep | Dynasty Baseball Rankings and Trade Calculator",
-        "Navy-and-cream dynasty baseball desk. The Keep top 400 from 23 boards led by RotoGraphs and The Dynasty Guru. Lineup, Pitchers, bullpen, redraft, and BK News.",
+        "Navy-and-cream dynasty baseball desk. The Keep is dynasty top 400. The Diamond is redraft. Lineup, Pitchers, bullpen, and BK News.",
         "img/bb-hero.jpg",
     ),
     "the-keep.html": (
@@ -133,14 +133,19 @@ BB_SEO = {
         "Same bullpen, holds counted. FantasyPros Week 21 SV+H board plus setup men the ESPN chart uses.",
         "img/bb-logo.jpg",
     ),
+    "the-diamond.html": (
+        "The Diamond — 2026 Redraft Baseball Rankings | BaseKeep",
+        "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400. Veterans climb. Kids pay a tax.",
+        "img/bb-logo.jpg",
+    ),
     "redraft.html": (
-        "2026 Rest-of-Season Baseball Rankings | BaseKeep",
-        "Redraft baseball top 400. Age tax flipped so veterans who mash this month climb.",
+        "The Diamond — 2026 Redraft Baseball Rankings | BaseKeep",
+        "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400. Veterans climb. Kids pay a tax.",
         "img/bb-logo.jpg",
     ),
     "trade.html": (
         "Dynasty Baseball Trade Calculator | BaseKeep",
-        "Keep, Lineup, Pitchers, Redraft, Saves, SV+H. Rank becomes BK Value. Fair is within 8%.",
+        "Keep, Lineup, Pitchers, The Diamond (redraft), Saves, SV+H. Rank becomes BK Value. Fair is within 8%.",
         "img/bb-logo.jpg",
     ),
     "news.html": (
@@ -156,16 +161,6 @@ BB_SEO = {
     "the-x.html": (
         "The X — Baseball Memes from X | BaseKeep",
         "Fun tape, not news. MLB memes and shitposts pulled from X via Google News.",
-        "img/bb-logo.jpg",
-    ),
-    "waivers-dynasty.html": (
-        "Dynasty Baseball Waiver Wire | BaseKeep",
-        "Fifteen dynasty stashes. Short on purpose: prospects and IL names worth a roster spot.",
-        "img/bb-logo.jpg",
-    ),
-    "waivers-redraft.html": (
-        "Redraft Baseball Waiver Wire — Priority 1 to 50 | BaseKeep",
-        "Redraft wire, longer and louder. This week matters.",
         "img/bb-logo.jpg",
     ),
     "trade-keep.html": (
@@ -184,8 +179,8 @@ BB_SEO = {
         "img/bb-logo.jpg",
     ),
     "trade-redraft.html": (
-        "Baseball Redraft Trade Calculator | BaseKeep",
-        "Rest-of-season baseball trade calculator. No future picks. Rank becomes BK Value. Fair is within 8%.",
+        "The Diamond Trade Calculator | BaseKeep",
+        "Trade calculator on The Diamond, BaseKeep's redraft ranking. No future picks. Rank becomes BK Value. Fair is within 8%.",
         "img/bb-logo.jpg",
     ),
     "trade-saves.html": (
@@ -229,7 +224,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
         <img src="{prefix}img/bb-logo.jpg" alt="BaseKeep circular baseball logo" />
         <div>
           <p class="brand-title">{wordmark()}</p>
-          <p>Dynasty · Redraft · Diamond</p>
+          <p>The Keep · The Diamond</p>
         </div>
       </a>
       <nav>{''.join(links)}</nav>
@@ -714,7 +709,7 @@ def list_cards(lists, r):
         ("The Keep", lists.get("BB Keep"), r.get("value")),
         ("The Lineup", lists.get("The Lineup"), None),
         ("BK's Pitchers", lists.get("BK Pitchers"), None),
-        ("Redraft", lists.get("BB Redraft"), None),
+        ("The Diamond", lists.get("BB Redraft"), None),
         ("Saves", lists.get("Saves"), None),
         ("SV+H", lists.get("SVH"), None),
     ]
@@ -807,9 +802,9 @@ def bb_grafs(r, lists=None, media=None):
         age_n = None
     plus, minus = [], []
     if lists.get("BB Redraft") and keep and lists["BB Redraft"] + 20 < keep:
-        plus.append(f"Redraft #{lists['BB Redraft']} vs Keep #{keep} — helping now more than the dynasty slot.")
+        plus.append(f"The Diamond #{lists['BB Redraft']} vs Keep #{keep} — helping now more than the dynasty slot.")
     if lists.get("BB Redraft") and keep and lists["BB Redraft"] > keep + 25:
-        minus.append(f"Redraft #{lists['BB Redraft']} vs Keep #{keep} — future, not a September stream.")
+        minus.append(f"The Diamond #{lists['BB Redraft']} vs Keep #{keep} — future, not a September stream.")
     if age_n and age_n >= 33:
         minus.append(f"Age {age_n} — dynasty tax.")
     if g == "RP":
@@ -903,10 +898,9 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     {plusminus_html(plus, minus)}
     {rank_spread_graph(r.get("ranks") or {}, fill="#1f6b3a", kicker="Board graph")}
     {boards_table(r.get("ranks") or {})}
-    {waiver_note(r["name"], DYNASTY_WAIVERS, REDRAFT_WAIVERS)}
     {news_block}
     {neighbors(keep, i)}
-    <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-keep.html">The Keep</a> · <a href="../news.html">BK News</a> · <a href="../the-lineup.html">The Lineup</a> · <a href="../pitchers.html">Pitchers</a> · <a href="../trade-keep.html">Calculator</a></p>
+    <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-keep.html">The Keep</a> · <a href="../the-diamond.html">The Diamond</a> · <a href="../news.html">BK News</a> · <a href="../the-lineup.html">The Lineup</a> · <a href="../pitchers.html">Pitchers</a> · <a href="../trade-keep.html">Calculator</a></p>
     """
         seo_title = f"{r['name']} Dynasty Rank #{r['bk']} ({r.get('pos') or ''} {r.get('team') or media.get('team') or ''})".strip()
         seo_desc = clip(
@@ -1010,7 +1004,7 @@ def write_trade(payload, depth=1):
       <a href="trade-keep.html">Keep</a>
       <a href="trade-lineup.html">Lineup</a>
       <a href="trade-pitchers.html">Pitchers</a>
-      <a href="trade-redraft.html">Redraft</a>
+      <a href="trade-redraft.html">The Diamond</a>
       <a href="trade-saves.html">Saves</a>
       <a href="trade-svh.html">SV+H</a>
     </p>
@@ -1237,19 +1231,17 @@ def write_baseball_site():
         <h2>{wordmark()}</h2>
       </div>
     </section>
-    {desk_block("main", "Main", "The Keep, The Lineup, the arms.", "Overall dynasty 400, the bats, the pitchers, trade, and the files.", [
+    {desk_block("main", "Main", "The Keep and The Diamond.", "Dynasty overall, then the redraft ranking. Everything else on this page supports these.", [
         ("the-keep.html", "The Keep", "Overall dynasty top 400."),
+        ("the-diamond.html", "The Diamond", "Redraft ranking. This year only."),
         ("the-lineup.html", "The Lineup", "Hitters only."),
         ("pitchers.html", "BK's Pitchers", "Top 150 arms."),
-        ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, Redraft."),
+        ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, The Diamond."),
         ("players/index.html", "Player Files", "Keep top 400."),
     ])}
-    {desk_block("lists", "Lists", "The other boards.", "Bullpen, redraft, and the wires.", [
+    {desk_block("lists", "Lists", "The other boards.", "Bullpen and the files.", [
         ("bullpen.html", "Bullpen — Saves", "Top 100 relievers."),
         ("bullpen-holds.html", "Bullpen — SV+H", "Holds counted."),
-        ("redraft.html", "Redraft", "Rest-of-season board."),
-        ("waivers-dynasty.html", "Dynasty Wire", "Prospects and IL stashes."),
-        ("waivers-redraft.html", "Redraft Wire", "Priority 1–50."),
     ])}
     {desk_block("extra", "Extra", "News and The X.", "Memes and the wire. Not the ranks.", [
         ("the-x.html", "The X", "MLB memes. Pictures on the card."),
@@ -1316,21 +1308,28 @@ def write_baseball_site():
 
     rd_flt, rd_js = filter_js(["HIT", "SP", "RP", "UT"])
     rd_body = f"""
-    <p class="kicker">2026 Rest of Season</p>
-    <h2>Redraft</h2>
-    <p class="note">One-year board. We start from the dynasty mix, then tax kids who are not helping this month and boost veterans who still count. Relievers slide — unless you are in a saves crunch, use the wire.</p>
+    <p class="kicker">Redraft ranking · this year</p>
+    <h2>The Diamond</h2>
+    <p class="note">This is the redraft list. Not The Keep. One-year baseball, {len(redraft)} names. Veterans who mash this month climb. Kids pay a tax. Use this board for 2026 rest-of-season and redraft startups.</p>
     {rd_flt}
     <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{int(r["value"]):,}</td>', media=media, faces=True, show_age=True)}</div>
-    {value_bars(redraft, 12, "#1f6b3a", "Redraft value graph")}
+    {value_bars(redraft, 12, "#1f6b3a", "The Diamond value graph")}
     {sources_panel()}
     """
-    write("bb/redraft.html", bb_page("Redraft", "redraft.html", rd_body, rd_js))
+    write("bb/the-diamond.html", bb_page("The Diamond", "the-diamond.html", rd_body, rd_js))
+    write("bb/redraft.html", bb_page(
+        "The Diamond",
+        "redraft.html",
+        '<p class="kicker">Moved</p><h2>The Diamond</h2>'
+        '<p class="note">The redraft ranking now lives on <a href="the-diamond.html">The Diamond</a>.</p>'
+        '<p><a class="cta" href="the-diamond.html">The Diamond · Redraft</a></p>',
+    ))
 
     modes = [
         trade_payload("Dynasty Overall", "trade-keep.html", "Uses The Keep overall ranks.", keep, picks),
         trade_payload("Dynasty Lineup", "trade-lineup.html", "Hitters only, The Lineup ranks.", lineup, picks),
         trade_payload("Dynasty Pitchers", "trade-pitchers.html", "BK's Pitchers ranks. Ohtani is here.", pitchers, picks),
-        trade_payload("Redraft", "trade-redraft.html", "Rest-of-season board. No future picks.", redraft, []),
+        trade_payload("The Diamond", "trade-redraft.html", "The Diamond redraft ranking. This year only. No future picks.", redraft, []),
         trade_payload("Bullpen Saves", "trade-saves.html", "Saves-only RP board.", saves, []),
         trade_payload("Bullpen SV+H", "trade-svh.html", "Saves plus holds.", svh, []),
     ]
@@ -1344,23 +1343,6 @@ def write_baseball_site():
     <div class="grid">{''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in hub_tiles)}</div>
     """
     write("bb/trade.html", bb_page("Trade Calculators", "trade.html", trade_hub))
-
-    waiver_page(
-        "Dynasty Waiver Wire",
-        "waivers-dynasty.html",
-        "Stash List · Short on purpose",
-        "Fifteen names. Prospects, IL stashes, and kids the long boards already stuffed. If he is a streamer this week, he is on the redraft wire — that page is longer and the priorities are louder.",
-        DYNASTY_WAIVERS,
-        hot=False,
-    )
-    waiver_page(
-        "Redraft Waiver Wire",
-        "waivers-redraft.html",
-        "Priority 1–50 · September stretch",
-        "This is the longer wire. Priority order is the whole point: P1–P10 are must-roster saves and aces, P11–P30 are stream bats and two-start arms, P31–P50 are SV+H specialists and deep-league speed. Check this before you stream a random fifth starter.",
-        REDRAFT_WAIVERS,
-        hot=True,
-    )
 
     player_urls, player_files = write_player_pages(keep, lineup, pitchers, redraft, news_by_player, saves, svh)
     news_urls = render_bb_news_pages(stories)
@@ -1398,10 +1380,10 @@ def write_baseball_site():
             "https://ballkeep.com/bb/" + p
             for p in [
                 "the-keep.html", "news.html", "the-x.html", "the-lineup.html", "pitchers.html", "bullpen.html",
-                "bullpen-holds.html", "redraft.html", "trade.html",
+                "bullpen-holds.html", "the-diamond.html", "redraft.html", "trade.html",
                 "trade-keep.html", "trade-lineup.html", "trade-pitchers.html",
                 "trade-redraft.html", "trade-saves.html", "trade-svh.html",
-                "waivers-dynasty.html", "waivers-redraft.html", "players/",
+                "players/",
             ]
         ] + news_urls + player_urls,
         "n_keep": len(keep),

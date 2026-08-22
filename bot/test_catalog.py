@@ -222,6 +222,16 @@ def main():
     assert "FootKeep" not in bb_home
     assert "BaseKeep" in page_title(bb_home) or "BASE" in bb_home
     assert "BaseBallKeep" not in bb_home
+    assert "The Diamond" in bb_home
+    assert "Redraft ranking" in bb_home
+    assert "the-diamond.html" in bb_home
+    diamond = html_of("bb/the-diamond.html")
+    assert "The Diamond" in page_title(diamond) or "<h2>The Diamond</h2>" in diamond
+    assert "Redraft ranking" in diamond
+    assert "waivers-dynasty.html" not in bb_home
+    assert "waivers-redraft.html" not in bb_home
+    assert "Dynasty Wire" not in bb_home
+    assert "Redraft Wire" not in bb_home
     bk_home = html_of("bk/index.html")
     assert "BasketKeep" in page_title(bk_home) or "BASKET" in bk_home
     assert "BallKeep" in bk_home
