@@ -154,7 +154,7 @@ def player_embed(discord, p: dict):
             value=f"{pit.get('era') or '—'} ERA · {pit.get('whip') or '—'} WHIP · {pit.get('so') or 0} K in {pit.get('ip') or '—'} IP",
             inline=False,
         )
-    if soccer and (p.get("pts") or p.get("gls") or p.get("sel") is not None):
+    if soccer and (p.get("pts") or p.get("gls") is not None):
         bits_pl = []
         if p.get("pts") not in (None, ""):
             bits_pl.append(f"{p['pts']} pts")
@@ -162,8 +162,6 @@ def player_embed(discord, p: dict):
             bits_pl.append(f"{p['gls']} G")
         if p.get("ast") not in (None, ""):
             bits_pl.append(f"{p['ast']} A")
-        if p.get("sel") not in (None, ""):
-            bits_pl.append(f"{p['sel']}% owned")
         if bits_pl:
             emb.add_field(name="2025/26 FPL", value=" · ".join(str(x) for x in bits_pl), inline=False)
     bits_bio = []
