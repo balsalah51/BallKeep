@@ -5,13 +5,15 @@ Static site for [ballkeep.com](https://ballkeep.com), published from this reposi
 Powder-blue football desk. Navy-and-cream **BaseBallKeep** through the footer button.
 
 ## Football
-- **The Keep** — Superflex dynasty top 400 (daily keystone)
+- **The Keep** — Superflex dynasty Super Aggregate top 400 (30+ desks; 50% the four long boards, 50% every other desk that ranked the player)
+- **The Board** — the four published long Superflex boards only, 500 names, no Super mash
+- **The X** — fun tape from X, not news
 - **Trade Calculators** — Superflex Dynasty, 1QB Dynasty, Redraft PPR, Redraft Standard. Rank on each list becomes BK Value.
 - **Recent Deals** — type a player, get every Superflex/1QB package on the desk tape
 - Redraft PPR / Redraft Standard (200 names)
 - 2026 drafted rookies
 - BK Hot 'n' Cold
-- The Board (long proprietary aggregate)
+- The Board (long tape of the four published boards)
 - **Player Pages** — every Keep 400 name, plus redraft, rookies, and Hot/Cold: ranks, board dump, a headshot, and a 2025 NFL (or college) highlight when we have the tape
 - **BK News** — football injuries, roster moves, and coach reports scraped hourly from league RSS, Google News, X (`site:x.com`), and YouTube, then clustered into short stories with an aggregate summary and source links
 - NFL 2026 schedules (all 32 teams)
@@ -72,13 +74,13 @@ python3 scripts/build_site.py
 
 Scheduled runs need **Settings → Actions → General → Workflow permissions → Read and write** so the hourly job can push refreshed pages to the GitHub Pages branch.
 
-Football rankings last aggregated August 20, 2026 from FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN (Eric Karabell Superflex + Flex, Field Yates), Draft Sharks, RotoWire, Dynasty Dealer, PFF, and X ranks from Derek Brown, Andrew Erickson, and Pat Fitzmaurice.
+Football rankings last aggregated August 21, 2026 from FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN (Eric Karabell Superflex + Flex, Field Yates), Draft Sharks, RotoWire, Dynasty Dealer, PFF, and X ranks from Derek Brown, Andrew Erickson, and Pat Fitzmaurice.
 
-Baseball rankings last aggregated August 20, 2026 from RotoGraphs (Aug 14 model), The Dynasty Guru points Top 500 (Aug 10), plus compiled slices of FantasyPros, ESPN, Razzball, Pitcher List, RotoWire, CBS, NFBC, Ottoneu, BP, The Athletic, DLB, Dynasty Dugout, Fantasy Baseballers, FanGraphs The Board, Baseball America, MLB Pipeline, Mastersball, Four-Seam/Sekulski, Yahoo, ATC ROS, and Enos Slaughter. Closer charts: FantasyPros Aug 20 + ESPN reliever depth.
+Baseball rankings last aggregated August 21, 2026 from RotoGraphs (Aug 14 model), The Dynasty Guru points Top 500 (Aug 10), plus compiled slices of FantasyPros, ESPN, Razzball, Pitcher List, RotoWire, CBS, NFBC, Ottoneu, BP, The Athletic, DLB, Dynasty Dugout, Fantasy Baseballers, FanGraphs The Board, Baseball America, MLB Pipeline, Mastersball, Four-Seam/Sekulski, Yahoo, ATC ROS, and Enos Slaughter. Closer charts: FantasyPros Aug 20 + ESPN reliever depth.
 
 Unranked names are skipped in the mean — never treated as 999.
 
-Premier League rankings last aggregated August 20, 2026 from official FPL 2025/26 points, 2026/27 prices, Gameweek 1 ownership, ICT, xGI, EP, and form, plus compiled slices of Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, Fantasy Football Hub, Fantasy Football Scout, The Athletic, Sky, BBC, ESPN, WhoScored, SofaScore, Understat, FPL Draft, Planet FPL, and LiveFPL.
+Premier League rankings last aggregated August 21, 2026 from official FPL 2025/26 points, 2026/27 prices, Gameweek 1 ownership, ICT, xGI, EP, and form, plus compiled slices of Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, Fantasy Football Hub, Fantasy Football Scout, The Athletic, Sky, BBC, ESPN, WhoScored, SofaScore, Understat, FPL Draft, Planet FPL, and LiveFPL.
 
 ## Discord bot
 The bot reads `data/discord-catalog.json` (emitted by the rebuild). Setup: [bot/README.md](bot/README.md).

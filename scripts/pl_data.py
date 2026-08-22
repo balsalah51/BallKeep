@@ -1,4 +1,4 @@
-"""PitchKeep ranking sources — August 20, 2026.
+"""PitchKeep ranking sources — August 21, 2026.
 
 The Pitch is a Sleeper BPL 2025 points board. Default Sleeper soccer
 scoring (support.sleeper.com/en/articles/9702800-scoring-system) applied
@@ -189,7 +189,7 @@ def _age(birth):
         return ""
     try:
         y, m, d = [int(x) for x in str(birth)[:10].split("-")]
-        today = date(2026, 8, 20)
+        today = date(2026, 8, 21)
         age = today.year - y - ((today.month, today.day) < (m, d))
         return age
     except Exception:

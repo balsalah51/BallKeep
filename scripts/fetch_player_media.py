@@ -87,7 +87,7 @@ def age_from_sleeper(p) -> str | int:
     if birth:
         try:
             y, m, d = [int(x) for x in str(birth)[:10].split("-")]
-            today = date(2026, 8, 20)
+            today = date(2026, 8, 21)
             return today.year - y - ((today.month, today.day) < (m, d))
         except Exception:
             pass
