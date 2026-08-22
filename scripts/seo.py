@@ -8,7 +8,7 @@ import re
 SITE = "https://ballkeep.com"
 
 SPORT_LINKS = [
-    ("fb", "", "FootKeep"),
+    ("fb", "", "BallKeep"),
     ("bb", "bb/", "BaseKeep"),
     ("bk", "bk/", "BasketKeep"),
     ("pl", "pl/", "PitchKeep"),

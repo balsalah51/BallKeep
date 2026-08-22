@@ -1805,7 +1805,7 @@ def main():
     home_body = f"""
     <section class="hero" style="background-image:url('img/hero.jpg')">
       <div class="hero-card">
-        <p class="kicker" style="color:#fff">Updated {UPDATED}</p>
+        <p class="kicker">Updated {UPDATED}</p>
         <h2>{wordmark()}</h2>
         <p class="hero-lead">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year.</p>
         <div class="hero-ctas">
