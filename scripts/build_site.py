@@ -54,12 +54,13 @@ def esc(s):
 
 def desk_block(kind, kicker, heading, note, tiles, extra=""):
     cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
+    cols = "grid" if len(tiles) <= 2 else "grid-3"
     return (
         f'<section class="desk-block {kind}">'
         f'<p class="kicker">{esc(kicker)}</p>'
         f"<h2>{esc(heading)}</h2>"
         f'<p class="note">{note}</p>'
-        f'<div class="grid-3">{cards}</div>'
+        f'<div class="{cols}">{cards}</div>'
         f"{extra}"
         "</section>"
     )
@@ -1008,7 +1009,7 @@ def news_card(story: dict, depth: int = 0) -> str:
 
 
 def render_news_pages():
-    """Football BK News hub + story files. Baseball lives on BaseBallKeep."""
+    """Football BK News hub + story files. Baseball lives on BaseKeep."""
     stories = load_news_stories("football")
     (ROOT / "news").mkdir(parents=True, exist_ok=True)
     keep = {f"{s['slug']}.html" for s in stories if s.get("slug")}
@@ -1057,7 +1058,7 @@ def render_news_pages():
     body = f"""
     <p class="kicker">BK News · Football · Hourly wire</p>
     <h2>BK News</h2>
-    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball lives on <a href="bb/news.html">BaseBallKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
+    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball lives on <a href="bb/news.html">BaseKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{filters}</div>
     <div class="news-list" id="news-list">{cards}</div>
@@ -1804,9 +1805,9 @@ def main():
     home_body = f"""
     <section class="hero" style="background-image:url('img/hero.jpg')">
       <div class="hero-card">
-        <p class="kicker" style="color:#ffd4db">Updated {UPDATED} · Superflex desk</p>
+        <p class="kicker" style="color:#fff">Updated {UPDATED}</p>
         <h2>{wordmark()}</h2>
-        <p class="hero-lead">The Keep is Superflex Dynasty. The Board is Superflex Redraft. Two-QB ranks, no 1QB tax on the flagship lists.</p>
+        <p class="hero-lead">Superflex ranks for two-QB leagues. The Keep is dynasty. The Board is this year.</p>
         <div class="hero-ctas">
           <a class="cta" href="the-keep.html">The Keep · Superflex Dynasty</a>
           <a class="cta alt" href="board.html">The Board · Superflex Redraft</a>
@@ -1814,26 +1815,22 @@ def main():
       </div>
     </section>
     <section class="desk-block main">
-      <p class="kicker">The draws</p>
-      <h2>Start here.</h2>
-      <p class="note">Two boards. That is the desk. Everything else is support.</p>
-      <div class="draw-row">
-        <a class="draw keep" href="the-keep.html">
-          <span class="draw-badge">Big draw</span>
+      <p class="kicker">Superflex</p>
+      <h2>The Keep and The Board</h2>
+      <p class="note">Two lists. Everything else on this page supports these.</p>
+      <div class="home-leads">
+        <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
-          <p class="draw-format">Superflex Dynasty</p>
-          <p>32 desks mashed into a top 400. This is the list you trade on.</p>
-          <span class="cta">Open The Keep</span>
+          <p class="lead-sub">Superflex Dynasty · top 400</p>
+          <p>32 desks mashed into one rank. This is the list you trade on.</p>
         </a>
-        <a class="draw board" href="board.html">
-          <span class="draw-badge alt">Next up</span>
+        <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
-          <p class="draw-format">Superflex Redraft</p>
-          <p>This-year Superflex. Quarterbacks stay expensive. Kids pay a tax.</p>
-          <span class="cta alt">Open The Board</span>
+          <p class="lead-sub">Superflex Redraft · this year</p>
+          <p>Quarterbacks stay expensive. Kids pay a tax.</p>
         </a>
       </div>
-      <div class="grid-3" style="margin-top:14px">
+      <div class="grid">
         <a class="tile" href="trade.html"><h3>Trade Calculators</h3><p>Keep, Board, 1QB, PPR, Standard.</p></a>
         <a class="tile" href="players/index.html"><h3>Player Pages</h3><p>Keep top 400. Tape, plus/minus.</p></a>
       </div>
@@ -2141,7 +2138,7 @@ def main():
         <article class="tile"><h3>/top + /pos</h3><p>Leaderboards, or just the QBs / RBs / WRs / TEs.</p></article>
         <article class="tile"><h3>/quiz + /hottake</h3><p>Guess a Keep rank. Draw a random buy or sell.</p></article>
         <article class="tile"><h3>/start + /picks</h3><p>Redraft start/sit, plus every future-pick value.</p></article>
-        <article class="tile"><h3>/bbplayer</h3><p>BaseBallKeep file: Keep 400, Lineup, Pitchers, redraft.</p></article>
+        <article class="tile"><h3>/bbplayer</h3><p>BaseKeep file: Keep 400, Lineup, Pitchers, redraft.</p></article>
         <article class="tile"><h3>/bbkeep + /bbwire</h3><p>Diamond boards and the longer redraft waiver list.</p></article>
         <article class="tile"><h3>/plplayer</h3><p>PitchKeep file: The Pitch 250, FPL line, long take, tape.</p></article>
         <article class="tile"><h3>/pitch + /pltrade</h3><p>Premier League boards and the PitchKeep calculator.</p></article>

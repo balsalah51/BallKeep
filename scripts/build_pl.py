@@ -33,12 +33,13 @@ def esc(s):
 
 def desk_block(kind, kicker, heading, note, tiles, extra=""):
     cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
+    cols = "grid" if len(tiles) <= 2 else "grid-3"
     return (
         f'<section class="desk-block {kind}">'
         f'<p class="kicker">{esc(kicker)}</p>'
         f"<h2>{esc(heading)}</h2>"
         f'<p class="note">{note}</p>'
-        f'<div class="grid-3">{cards}</div>'
+        f'<div class="{cols}">{cards}</div>'
         f"{extra}"
         "</section>"
     )
