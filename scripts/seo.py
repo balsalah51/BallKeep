@@ -7,6 +7,33 @@ import re
 
 SITE = "https://ballkeep.com"
 
+SPORT_LINKS = [
+    ("fb", "", "Ball Keep Football"),
+    ("bb", "bb/", "BaseBallKeep"),
+    ("bk", "bk/", "BasketKeep"),
+    ("pl", "pl/", "PitchKeep"),
+]
+
+
+def sport_pills(here: str, depth: int = 0) -> str:
+    """Clickable sport-switch pills, same look in the header strip and the footer."""
+    prefix = "../" * depth
+    bits = []
+    for key, folder, label in SPORT_LINKS:
+        if key == here:
+            continue
+        href = f"{prefix}{folder}index.html" if folder else f"{prefix}index.html"
+        bits.append(f'<a class="sport-switch {key}" href="{href}">{label}</a>')
+    return "".join(bits)
+
+
+def sports_top(here: str, depth: int = 0) -> str:
+    return f'<div class="sports-top">{sport_pills(here, depth)}</div>'
+
+
+def sports_footer(here: str, depth: int = 0) -> str:
+    return f"<div>{sport_pills(here, depth)}</div>"
+
 
 def esc(s):
     return html.escape(str(s), quote=True)

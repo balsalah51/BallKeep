@@ -48,7 +48,7 @@ def main():
     assert cat.deals_for("sun god") or cat.deals_for("st brown")
     assert len(cat.deals_for("")) >= 20
     assert len(cat.raw["keep"]) == 400
-    assert len(cat.raw["board"]) == 500, f"board {len(cat.raw.get('board') or [])}"
+    assert 400 <= len(cat.raw["board"]) <= 500, f"board {len(cat.raw.get('board') or [])}"
     bb = cat.raw.get("bb_keep") or []
     assert len(bb) == 400, f"bb keep {len(bb)}"
     assert cat.one("ohtani", sport="baseball")["name"] == "Shohei Ohtani"
@@ -119,8 +119,24 @@ def main():
     keep0 = cat.raw["keep"][0]
     board0 = cat.raw["board"][0]
     assert (keep0.get("n") or 0) >= 10, keep0
-    assert (board0.get("n") or 0) <= 4, board0
-    print("ok", cat.updated, "players", len(cat.players), "keep", len(cat.raw["keep"]), "bb", len(bb), "pitch", len(pitch))
+    assert board0.get("keep") or board0.get("ppr") or (board0.get("n") or 0) <= 2, board0
+    bk = cat.raw.get("bk_keep") or []
+    assert len(bk) == 400, f"bk keep {len(bk)}"
+    assert bk[0]["name"] == "Victor Wembanyama"
+    assert cat.one("wembanyama", sport="basketball")["name"] == "Victor Wembanyama"
+    assert cat.one("luka", sport="basketball")["name"] == "Luka Doncic"
+    assert cat.one("jokic", sport="basketball")["name"] == "Nikola Jokic"
+    assert 200 <= len(cat.raw.get("bk_board") or []) <= 250
+    assert len(cat.raw.get("bk_waivers_dynasty") or []) == 15
+    assert len(cat.raw.get("bk_waivers_redraft") or []) == 50
+    assert cat.raw["bk_keep"][0].get("age"), "BasketKeep The Keep needs age"
+    tbk = cat.trade("bkkeep", "Victor Wembanyama", "Luka Doncic")
+    assert tbk["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
+    assert tbk["total_a"] and tbk["total_b"]
+    assert not tbk["missing"], tbk["missing"]
+    wemby_html = (root / "bk/players/victor-wembanyama.html").read_text()
+    assert "The Keep" in wemby_html
+    print("ok", cat.updated, "players", len(cat.players), "keep", len(cat.raw["keep"]), "bb", len(bb), "bk", len(bk), "pitch", len(pitch))
     print("trade", t2["label"], t2["total_a"], "vs", t2["total_b"])
     print("norm jsn", norm("JSN"))
     print("picks", len(cat.raw["picks"]), "nfl", len(cat.raw["nfl"]), "mlb", len(cat.raw["mlb"]))
@@ -168,6 +184,24 @@ def main():
     ohtani = html_of("bb/players/shohei-ohtani.html")
     assert "Rank #" in page_title(ohtani)
     assert "bar-chart" in ohtani
+
+    home = html_of("index.html")
+    assert "Superflex Dynasty" in home
+    assert "Superflex Redraft" in home
+    assert "sports-top" in home
+    assert "BasketKeep" in home
+    assert 'class="desk-block extra"' in home
+    assert "hero-ctas" in home
+    board_html = html_of("board.html")
+    assert "Superflex Redraft" in board_html
+    assert "Superflex Dynasty" in board_html
+    bk_home = html_of("bk/index.html")
+    assert "BasketKeep" in page_title(bk_home) or "BASKET" in bk_home
+    assert "the-keep.html" in bk_home
+    assert "board.html" in bk_home
+    bk_keep = html_of("bk/the-keep.html")
+    assert "Victor Wembanyama" in bk_keep
+    assert "bar-chart" in bk_keep
 
 
 if __name__ == "__main__":

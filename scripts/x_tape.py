@@ -41,6 +41,11 @@ REDDIT = {
         "https://old.reddit.com/r/PremierLeague/.rss",
         "https://old.reddit.com/r/soccer/.rss",
     ],
+    "basketball": [
+        "https://old.reddit.com/r/nbamemes/.rss",
+        "https://old.reddit.com/r/nba/.rss",
+        "https://old.reddit.com/r/fantasybball/.rss",
+    ],
 }
 
 QUERIES = {
@@ -63,12 +68,19 @@ QUERIES = {
         "Premier League shitpost site:x.com",
         "football meme Haaland OR Saka site:x.com",
     ],
+    "basketball": [
+        "NBA meme site:x.com",
+        "fantasy basketball meme site:x.com",
+        "NBA shitpost site:x.com",
+        "basketball funny site:x.com",
+    ],
 }
 
 SPORT_FACE = {
     "football": "img/logo.jpg",
     "baseball": "img/bb-logo.jpg",
     "soccer": "img/pl-logo.jpg",
+    "basketball": "img/bk-logo.jpg",
 }
 
 
@@ -341,6 +353,8 @@ def scrape_sport(sport: str, fetch=default_fetch, sleep_s: float = 0.3) -> dict:
                 continue
             if sport == "soccer" and re.search(r"\b(nfl|mlb)\b", blob) and not re.search(r"\b(premier|fpl|soccer|football)\b", blob):
                 continue
+            if sport == "basketball" and re.search(r"\b(nfl|mlb|premier league)\b", blob) and not re.search(r"\b(nba|basketball)\b", blob):
+                continue
             seen.add(h)
             raw["hash"] = h
             raw["kind"] = "x" if "x.com" in (raw["url"] or "").lower() or "twitter" in (raw.get("publisher") or "").lower() else "web"
@@ -405,9 +419,9 @@ def cards_html(sport: str, depth: int = 0, esc=None) -> str:
 def main():
     import argparse
     ap = argparse.ArgumentParser(description="Pull The X meme tape")
-    ap.add_argument("--sport", choices=("football", "baseball", "soccer", "all"), default="all")
+    ap.add_argument("--sport", choices=("football", "baseball", "soccer", "basketball", "all"), default="all")
     args = ap.parse_args()
-    sports = ["football", "baseball", "soccer"] if args.sport == "all" else [args.sport]
+    sports = ["football", "baseball", "soccer", "basketball"] if args.sport == "all" else [args.sport]
     for sport in sports:
         scrape_sport(sport)
 

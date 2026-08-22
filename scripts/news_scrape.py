@@ -10,7 +10,7 @@ Efficiency:
   5. Hash every item; skip URLs already in data/news/state.json.
   6. Cluster leftover items into stories and merge into the existing sport JSON.
 
-Football publishes at /news.html. Baseball publishes on BaseBallKeep at /bb/news.html.
+Football publishes at /news.html. Baseball publishes on BaseBallKeep at /bb/news.html. Basketball publishes on BasketKeep at /bk/news.html.
 """
 from __future__ import annotations
 
@@ -96,6 +96,27 @@ X_QUERIES_BASEBALL = [
     "MLB (IL OR injured) site:x.com",
     "MLB (DFA OR optioned OR called up) site:x.com",
 ]
+BASKETBALL_FEEDS = [
+    ("ESPN NBA", "https://www.espn.com/espn/rss/nba/news"),
+    ("CBS NBA", "https://www.cbssports.com/rss/headlines/nba/"),
+    ("Yahoo NBA", "https://sports.yahoo.com/nba/rss.xml"),
+    ("RotoWire NBA", "https://www.rotowire.com/rss/news.php?sport=NBA"),
+]
+BASKETBALL_TOPICS = [
+    "NBA injury report",
+    "NBA injured OR out OR questionable",
+    "NBA roster waived OR signed OR two-way",
+    "NBA coach press conference OR told reporters",
+    "NBA trade",
+]
+X_QUERIES_BASKETBALL = [
+    "NBA (injury OR out OR questionable) site:x.com",
+    "NBA (waived OR signed OR roster) site:x.com",
+    "NBA (coach OR presser) site:x.com",
+]
+VIDEO_QUERIES_BASKETBALL = [
+    "NBA injury OR coach site:youtube.com",
+]
 VIDEO_QUERIES_FOOTBALL = [
     "NFL injury OR coach site:youtube.com",
 ]
@@ -128,6 +149,7 @@ WIRES = {
     "football": (FOOTBALL_FEEDS, FOOTBALL_TOPICS, X_QUERIES_FOOTBALL, VIDEO_QUERIES_FOOTBALL),
     "baseball": (BASEBALL_FEEDS, BASEBALL_TOPICS, X_QUERIES_BASEBALL, VIDEO_QUERIES_BASEBALL),
     "soccer": (SOCCER_FEEDS, SOCCER_TOPICS, X_QUERIES_SOCCER, VIDEO_QUERIES_SOCCER),
+    "basketball": (BASKETBALL_FEEDS, BASKETBALL_TOPICS, X_QUERIES_BASKETBALL, VIDEO_QUERIES_BASKETBALL),
 }
 
 Fetcher = Callable[[str], str | None]
@@ -264,6 +286,26 @@ def load_roster(sport: str) -> list[dict]:
             return []
         data = json.loads(path.read_text())
         return data if isinstance(data, list) else []
+    if sport == "basketball":
+        path = ROOT / "data" / "bk-keep.json"
+        if not path.exists():
+            return []
+        try:
+            data = json.loads(path.read_text())
+        except json.JSONDecodeError:
+            return []
+        rows = []
+        for r in data.get("keep") or []:
+            name = r.get("name") or ""
+            rows.append({
+                "key": r.get("key") or "",
+                "name": name,
+                "slug": slugify_name(name),
+                "pos": r.get("pos") or "",
+                "team": r.get("team") or "",
+                "lists": {"The Keep": r.get("bk")},
+            })
+        return rows
     if sport == "soccer":
         path = ROOT / "data" / "pl-pitch.json"
         if not path.exists():
@@ -451,11 +493,11 @@ def run(sport: str, fetch: Fetcher = default_fetch, sleep_s: float = 0.35) -> di
 
 def main():
     ap = argparse.ArgumentParser(description="Scrape BK News wires into data/news/")
-    ap.add_argument("--sport", choices=("football", "baseball", "soccer", "both", "all"), default="both")
+    ap.add_argument("--sport", choices=("football", "baseball", "soccer", "basketball", "both", "all"), default="both")
     ap.add_argument("--sleep", type=float, default=0.35)
     args = ap.parse_args()
     if args.sport in ("all",):
-        sports = ["football", "baseball", "soccer"]
+        sports = ["football", "baseball", "soccer", "basketball"]
     elif args.sport == "both":
         sports = ["football", "baseball"]
     else:
