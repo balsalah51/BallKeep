@@ -205,6 +205,9 @@ def main():
     css = Path("css/site.css").read_text()
     assert "a.sport-switch.bk" in css
     assert "border: 3px solid #c8102e" in css
+    assert "outline: 3px solid #c8102e" in css
+    assert ".brand h1 .word-ball, .brand .brand-title .word-ball { color: #1788c2; }" in css
+    assert ".home-intro .word-ball { color: #1788c2; }" in css
     assert ".home-intro" in css
     board_html = html_of("board.html")
     assert "Superflex Redraft" in board_html
