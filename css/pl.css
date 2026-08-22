@@ -105,7 +105,14 @@ a.sport-switch.pl {
   margin: 18px 6px 0; padding: 8px 16px; border-radius: 999px;
   font-weight: 800; font-size: 13px; line-height: 1; text-decoration: none; letter-spacing: 0.02em;
   cursor: pointer; background: #fff; color: #c8102e;
-  border: 3px solid #c8102e; outline: 0;
+  border: 3px solid #c8102e;
+  outline: 3px solid #c8102e;
+  outline-offset: 2px;
+}
+a.sport-switch.bk {
+  border: 3px solid #c8102e;
+  outline: 3px solid #c8102e;
+  outline-offset: 2px;
 }
 a.sport-switch:hover,
 a.sport-switch.fb:hover,
