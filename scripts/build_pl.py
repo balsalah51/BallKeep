@@ -31,6 +31,19 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+def desk_block(kind, kicker, heading, note, tiles, extra=""):
+    cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
+    return (
+        f'<section class="desk-block {kind}">'
+        f'<p class="kicker">{esc(kicker)}</p>'
+        f"<h2>{esc(heading)}</h2>"
+        f'<p class="note">{note}</p>'
+        f'<div class="grid-3">{cards}</div>'
+        f"{extra}"
+        "</section>"
+    )
+
+
 def slugify(name: str) -> str:
     s = unicodedata.normalize("NFKD", name or "")
     s = "".join(c for c in s if not unicodedata.combining(c))
@@ -938,35 +951,19 @@ def write_pitch_site():
     fwd, mid, defence, gkp = u["fwd"], u["mid"], u["def"], u["gkp"]
     media = load_pl_media()
 
-    tiles = [
-        ("the-premier.html", "The Premier", "Hybrid 400. Half Sleeper, half every other board."),
-        ("the-pitch.html", "The Pitch", "Sleeper BPL 2025 points."),
-        ("news.html", "PK News", "Injuries, transfers, manager tape."),
-        ("the-x.html", "The X", "Premier League memes from X."),
-        ("attack.html", "Attack", "Forwards. Sleeper-ranked."),
-        ("midfield.html", "Midfield", "Mids. Sleeper-ranked."),
-        ("defence.html", "Defence", "Defenders. Sleeper-ranked."),
-        ("keepers.html", "Keepers", "Keepers. Sleeper-ranked."),
-        ("trade.html", "Trade Calculators", "Premier, Pitch, and the position lists."),
-        ("players/index.html", "Player Files", "Headshot, line, boards, tape."),
-    ]
     roster = [
         {"key": r.get("key") or "", "name": r["name"], "slug": slugify(r["name"]), "pos": r.get("pos") or "", "team": r.get("team") or ""}
         for r in premier
     ]
     stories = rematch_stories(load_news_stories("soccer"), build_player_index(roster))
     latest_news = stories[:5]
-    latest_html = ""
+    extra_news = ""
     if latest_news:
-        latest_html = (
-            '<section class="panel" style="margin-top:16px">'
-            '<p class="kicker">PK News</p>'
-            "<h2>Latest on the wire.</h2>"
+        extra_news = (
             '<div class="news-list">'
             + "".join(pl_news_card(s) for s in latest_news)
             + "</div>"
             '<p class="note" style="margin-top:12px"><a href="news.html">All PK News</a></p>'
-            "</section>"
         )
     home = f"""
     <section class="hero" style="background-image:url('../img/pl-hero.jpg')">
@@ -975,15 +972,22 @@ def write_pitch_site():
         <h2>{wordmark()}</h2>
       </div>
     </section>
-    <section class="panel">
-      <p class="kicker">What we cover</p>
-      <h2>The Premier, The Pitch, Attack, Midfield, Defence, Keepers, the files, news, and The X.</h2>
-      <p class="note">Premier: half Sleeper, half the other boards. Pitch: Sleeper points. That's it.</p>
-    </section>
-    <div class="grid-3" style="margin-top:16px">
-      {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
-    </div>
-    {latest_html}
+    {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: half Sleeper, half the other boards. Pitch: Sleeper points. Trade and files here too.", [
+        ("the-premier.html", "The Premier", "Hybrid 400."),
+        ("the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
+        ("trade.html", "Trade Calculators", "Premier, Pitch, the lists."),
+        ("players/index.html", "Player Files", "Headshot, line, boards, tape."),
+    ])}
+    {desk_block("lists", "Lists", "The position boards.", "Forwards, mids, defenders, keepers. Sleeper-ranked.", [
+        ("attack.html", "Attack", "Forwards."),
+        ("midfield.html", "Midfield", "Mids."),
+        ("defence.html", "Defence", "Defenders."),
+        ("keepers.html", "Keepers", "Keepers."),
+    ])}
+    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire. Not the ranks.", [
+        ("the-x.html", "The X", "PL memes. Pictures on the card."),
+        ("news.html", "PK News", "Injuries, transfers, managers."),
+    ], extra_news)}
     """
     write("pl/index.html", pl_page("Home", "index.html", home))
 

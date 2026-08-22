@@ -37,6 +37,19 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+def desk_block(kind, kicker, heading, note, tiles, extra=""):
+    cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
+    return (
+        f'<section class="desk-block {kind}">'
+        f'<p class="kicker">{esc(kicker)}</p>'
+        f"<h2>{esc(heading)}</h2>"
+        f'<p class="note">{note}</p>'
+        f'<div class="grid-3">{cards}</div>'
+        f"{extra}"
+        "</section>"
+    )
+
+
 def slugify(name: str) -> str:
     s = unicodedata.normalize("NFKD", name or "")
     s = "".join(c for c in s if not unicodedata.combining(c))
@@ -1207,32 +1220,14 @@ def write_baseball_site():
             if key:
                 news_by_player[key].append(story)
 
-    tiles = [
-        ("the-keep.html", "The Keep", "Overall dynasty top 400. 23-board aggregate."),
-        ("the-x.html", "The X", "MLB memes from X. Pictures."),
-        ("news.html", "BK News", "Hourly IL, roster, and manager tape."),
-        ("the-lineup.html", "The Lineup", "Dynasty hitters only. The bats you keep."),
-        ("pitchers.html", "BK's Pitchers", "Top 150 dynasty arms, SP and the two-way unicorn."),
-        ("bullpen.html", "Bullpen — Saves", "Top 100 relief pitchers for saves leagues."),
-        ("bullpen-holds.html", "Bullpen — SV+H", "Same bullpen, holds counted. Different sport."),
-        ("redraft.html", "Redraft", "2026 rest-of-season board. Age tax flipped."),
-        ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, Redraft. Same curve."),
-        ("waivers-dynasty.html", "Dynasty Wire", "Prospects and IL stashes. Short on purpose."),
-        ("waivers-redraft.html", "Redraft Wire", "Priority 1–50. Longer. This week matters."),
-        ("players/index.html", "Player Files", "Keep top 400, one cream card each."),
-    ]
     latest_news = stories[:5]
-    latest_html = ""
+    extra_news = ""
     if latest_news:
-        latest_html = (
-            '<section class="panel" style="margin-top:16px">'
-            '<p class="kicker">BK News · Baseball</p>'
-            "<h2>Latest on the wire.</h2>"
+        extra_news = (
             '<div class="news-list">'
             + "".join(bb_news_card(s) for s in latest_news)
             + "</div>"
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
-            "</section>"
         )
     home = f"""
     <section class="hero" style="background-image:url('../img/bb-hero.jpg')">
@@ -1241,15 +1236,24 @@ def write_baseball_site():
         <h2>{wordmark()}</h2>
       </div>
     </section>
-    <section class="panel">
-      <p class="kicker">The desk</p>
-      <h2>Keep the guys who still mash in 2030.</h2>
-      <p class="note">The Keep is an overall dynasty top 400 from 23 public boards. The Lineup is the bats. BK's Pitchers is the arms.</p>
-    </section>
-    <div class="grid-3" style="margin-top:16px">
-      {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
-    </div>
-    {latest_html}
+    {desk_block("main", "Main", "The Keep, The Lineup, the arms.", "Overall dynasty 400, the bats, the pitchers, trade, and the files.", [
+        ("the-keep.html", "The Keep", "Overall dynasty top 400."),
+        ("the-lineup.html", "The Lineup", "Hitters only."),
+        ("pitchers.html", "BK's Pitchers", "Top 150 arms."),
+        ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, Redraft."),
+        ("players/index.html", "Player Files", "Keep top 400."),
+    ])}
+    {desk_block("lists", "Lists", "The other boards.", "Bullpen, redraft, and the wires.", [
+        ("bullpen.html", "Bullpen — Saves", "Top 100 relievers."),
+        ("bullpen-holds.html", "Bullpen — SV+H", "Holds counted."),
+        ("redraft.html", "Redraft", "Rest-of-season board."),
+        ("waivers-dynasty.html", "Dynasty Wire", "Prospects and IL stashes."),
+        ("waivers-redraft.html", "Redraft Wire", "Priority 1–50."),
+    ])}
+    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire. Not the ranks.", [
+        ("the-x.html", "The X", "MLB memes. Pictures on the card."),
+        ("news.html", "BK News", "IL, roster, managers."),
+    ], extra_news)}
     """
     write("bb/index.html", bb_page("Home", "index.html", home))
 
