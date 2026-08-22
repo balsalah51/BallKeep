@@ -222,6 +222,13 @@ def main():
     bk_keep = html_of("bk/the-keep.html")
     assert "Victor Wembanyama" in bk_keep
     assert "bar-chart" in bk_keep
+    wemby = html_of("bk/players/victor-wembanyama.html")
+    assert "The minus is the price" not in wemby
+    assert "Someone in your room already knows the rank" not in wemby
+    assert "blocks" in wemby.lower()
+    embiid = html_of("bk/players/joel-embiid.html")
+    assert "The minus is the price" not in embiid
+    assert "On The Keep. That is already a rostered name" not in embiid
 
 
 if __name__ == "__main__":
