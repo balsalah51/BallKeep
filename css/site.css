@@ -97,10 +97,6 @@ tr:hover td { background: rgba(200,16,46,0.04); }
 .trade-verdict.fair { border-color: #157a3a; }
 .trade-verdict h3 { margin: 0; font-size: 28px; }
 .pos { display: inline-block; min-width: 42px; padding: 2px 7px; border-radius: 999px; background: var(--powder-deep); font-weight: 800; font-size: 12px; }
-.pos.QB { background: #f8d0d6; }
-.pos.RB { background: #d7f0d9; }
-.pos.WR { background: #d6e4fb; }
-.pos.TE { background: #f7e6c8; }
 img.face {
   width: 28px; height: 28px; border-radius: 50%; object-fit: cover; object-position: top center;
   border: 1px solid var(--red); background: var(--powder); flex: 0 0 28px;
@@ -118,8 +114,7 @@ table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
   border-radius: 999px; padding: 7px 12px; font-weight: 800; cursor: pointer; text-decoration: none; font-size: 13px;
 }
 .filters button.active, .filters a.active { background: var(--red); color: #fff; border-color: var(--red); }
-.hot { background: #fff5f5; }
-.cold { background: #f3f8ff; }
+.hot, .cold { background: var(--white); }
 .badge { font-size: 11px; font-weight: 800; color: #fff; background: var(--red); border-radius: 999px; padding: 2px 8px; }
 .sport-switch {
   display: inline-block; margin: 18px 6px 0; padding: 12px 22px; border-radius: 999px;
@@ -145,17 +140,25 @@ a.news-item:hover h3 { color: var(--red); }
   display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
   text-transform: uppercase; border-radius: 999px; padding: 2px 8px; background: var(--powder-deep);
 }
-.kind.injury { background: #f8d0d6; }
-.kind.roster { background: #d7f0d9; }
-.kind.coach { background: #d6e4fb; }
-.kind.trade { background: #f7e6c8; }
-.kind.practice { background: var(--powder); }
-.kind.x { background: #102033; color: #fff; }
-.kind.video { background: var(--red); color: #fff; }
-.kind.article { background: var(--powder-deep); }
+.desk-block { margin-top: 28px; padding: 22px 22px 26px; border-radius: 20px; }
+.desk-block h2 { margin: 0 0 8px; }
+.desk-block .grid-3 { margin-top: 14px; }
+.desk-block.main { background: #fff; border: 3px solid var(--ink); }
+.desk-block.lists { background: #e8eef4; border: 3px solid #4a6780; }
+.desk-block.lists .kicker { color: #4a6780; }
+.desk-block.extra { background: #141414; border: 3px solid #141414; color: #fff; }
+.desk-block.extra .kicker { color: #f0c14b; }
+.desk-block.extra h2 { color: #fff; }
+.desk-block.extra .note { color: #c5c5c5; }
+.desk-block.extra .tile { background: #222; border-color: #333; color: #fff; }
+.desk-block.extra .tile h3 { color: #fff; }
+.desk-block.extra .tile p, .desk-block.extra .news-meta { color: #bdbdbd; }
+.desk-block.extra .tile:hover { border-color: #f0c14b; }
+.desk-block.extra .news-item h3 { color: #fff; }
+.desk-block.extra .news-list { margin-top: 16px; }
 .x-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 12px; }
 a.x-card { color: inherit; padding: 0; overflow: hidden; }
-a.x-card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--powder-deep); }
+a.x-card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--powder-deep); display: block; }
 a.x-card h3 { margin: 10px 12px 4px; font-size: 15px; }
 a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
 .x-kind {
@@ -207,8 +210,7 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
   display: inline-block; background: var(--powder); border-radius: 999px;
   padding: 5px 10px; font-size: 12px; font-weight: 800;
 }
-.chip.hot { background: #f8d0d6; }
-.chip.cold { background: #d6e4fb; }
+.chip.hot, .chip.cold { background: var(--powder); }
 .plusminus { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0; }
 .pm { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 8px; }
 .pm h3 { margin: 0 0 8px; }
@@ -240,8 +242,7 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
 .fact small { display: block; color: var(--red); font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
 .fact strong { font-size: 16px; }
 table.boards { font-size: 15px; }
-table.boards tr.hi td { background: rgba(21,122,58,0.10); font-weight: 800; }
-table.boards tr.lo td { background: rgba(200,16,46,0.08); }
+table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
 .row-meta { display: none; }
 .news-flag { border-left: 6px solid var(--red); }
 @media (max-width: 860px) {

@@ -42,6 +42,19 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+def desk_block(kind, kicker, heading, note, tiles, extra=""):
+    cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
+    return (
+        f'<section class="desk-block {kind}">'
+        f'<p class="kicker">{esc(kicker)}</p>'
+        f"<h2>{esc(heading)}</h2>"
+        f'<p class="note">{note}</p>'
+        f'<div class="grid-3">{cards}</div>'
+        f"{extra}"
+        "</section>"
+    )
+
+
 def norm_name(name: str) -> str:
     n = name.lower()
     n = n.replace(".", " ")
@@ -1535,36 +1548,14 @@ def main():
     write_recent_trades_page(deals)
 
     # HOME
-    tiles = [
-        ("the-keep.html", "The Keep", "Super Aggregate. 30+ professional desks. Superflex top 400."),
-        ("board.html", "The Board", "The long tape — four published boards, 500 names. Not The Keep."),
-        ("the-x.html", "The X", "Fun memes pulled from X. Pictures. Not news."),
-        ("news.html", "BK News", "Hourly injury, roster, and coach tape."),
-        ("trade.html", "Trade Calculators", "Four calculators. Rank becomes BK Value."),
-        ("recent-trades.html", "Recent Deals", "Type a name. Superflex packages he actually moved in."),
-        ("redraft-ppr.html", "Redraft PPR", "2026 startup board. Photos and ages on the row."),
-        ("redraft-standard.html", "Redraft Standard", "Same season, no reception point."),
-        ("rookies-2026.html", "2026 Rookies", "Drafted class consensus ranks."),
-        ("hot-n-cold.html", "BK Hot 'n' Cold", "Buys and sells from dynasty desks."),
-        ("players/index.html", "Player Pages", "Keep top 400: plus/minus, tape, clip."),
-        ("nfl-schedule.html", "NFL Schedules", "2026 week-by-week slate."),
-        ("mlb-schedule.html", "MLB Schedules", "September stretch run."),
-        ("discord.html", "Discord", "The bot searches ranks and runs the calculator."),
-        ("bb/index.html", "BaseBallKeep", "Navy diamond desk. Keep 400, Lineup, Pitchers."),
-        ("pl/index.html", "PitchKeep", "The Premier, The Pitch, the lists."),
-    ]
     latest_news = load_news_stories("football")[:5]
-    latest_html = ""
+    extra_news = ""
     if latest_news:
-        latest_html = (
-            '<section class="panel" style="margin-top:16px">'
-            '<p class="kicker">BK News · Football</p>'
-            "<h2>Latest on the wire.</h2>"
+        extra_news = (
             '<div class="news-list">'
             + "".join(news_card(s) for s in latest_news)
             + "</div>"
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
-            "</section>"
         )
     home_body = f"""
     <section class="hero" style="background-image:url('img/hero.jpg')">
@@ -1573,15 +1564,28 @@ def main():
         <h2>{wordmark()}</h2>
       </div>
     </section>
-    <section class="panel">
-      <p class="kicker">The desk</p>
-      <h2>Keep the guys who still matter in 2029.</h2>
-      <p class="note">The Keep is a Super Aggregate of {len(KEEP_SOURCES)} professional desks. The Board is the long tape from four published boards. Baseball is <a href="bb/index.html">BaseBallKeep</a>. Premier League is <a href="pl/index.html">PitchKeep</a>.</p>
-    </section>
-    <div class="grid-3" style="margin-top:16px">
-      {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
-    </div>
-    {latest_html}
+    {desk_block("main", "Main", "The Keep and The Board.", f"Super Aggregate of {len(KEEP_SOURCES)} desks. The Board is the four long tapes. Trade and files live here too.", [
+        ("the-keep.html", "The Keep", "Super Aggregate. 32 desks. Superflex top 400."),
+        ("board.html", "The Board", "Four long boards. 500 names."),
+        ("trade.html", "Trade Calculators", "Rank becomes BK Value."),
+        ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
+        ("bb/index.html", "BaseBallKeep", "Keep, Lineup, Pitchers."),
+        ("pl/index.html", "PitchKeep", "The Premier, The Pitch, the lists."),
+    ])}
+    {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, the market tape, and the slates.", [
+        ("redraft-ppr.html", "Redraft PPR", "2026 startup. Photos and ages."),
+        ("redraft-standard.html", "Redraft Standard", "No reception point."),
+        ("rookies-2026.html", "2026 Rookies", "Drafted class."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
+        ("recent-trades.html", "Recent Deals", "Packages that closed."),
+        ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
+        ("mlb-schedule.html", "MLB Schedule", "September slate."),
+        ("discord.html", "Discord", "Search ranks. Run the calculator."),
+    ])}
+    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire. Not the ranks.", [
+        ("the-x.html", "The X", "Memes. Pictures on the card."),
+        ("news.html", "BK News", "Injuries, roster, coaches."),
+    ], extra_news)}
     """
     write("index.html", page("Home", "index.html", home_body))
 

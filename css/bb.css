@@ -64,9 +64,6 @@ tr:hover td { background: rgba(31,107,58,0.05); }
 .rk { font-weight: 800; color: var(--navy); width: 48px; }
 .val { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
 .pos { display: inline-block; min-width: 42px; padding: 2px 7px; border-radius: 999px; background: #dce7d4; font-weight: 800; font-size: 12px; }
-.pos.SP { background: #d6e4fb; }
-.pos.RP { background: #f7e6c8; }
-.pos.C { background: #f8d0d6; }
 img.face {
   width: 28px; height: 28px; border-radius: 50%; object-fit: cover; object-position: top center;
   border: 1px solid var(--navy); background: var(--navy); flex: 0 0 28px;
@@ -117,16 +114,25 @@ a.news-item:hover h3 { color: var(--forest); }
   display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
   text-transform: uppercase; border-radius: 999px; padding: 2px 8px; background: #dce7d4;
 }
-.kind.injury { background: #f8d0d6; }
-.kind.roster { background: #d7f0d9; }
-.kind.coach { background: #d6e4fb; }
-.kind.trade { background: #f7e6c8; }
-.kind.practice { background: var(--cream); }
-.kind.x { background: var(--navy); color: var(--cream); }
-.kind.video { background: var(--stitch); color: #fff; }
+.desk-block { margin-top: 28px; padding: 22px 22px 26px; border-radius: 20px; }
+.desk-block h2 { margin: 0 0 8px; }
+.desk-block .grid-3 { margin-top: 14px; }
+.desk-block.main { background: #fff; border: 3px solid var(--navy); }
+.desk-block.lists { background: #e4ecf4; border: 3px solid #3d5a73; }
+.desk-block.lists .kicker { color: #3d5a73; }
+.desk-block.extra { background: #141414; border: 3px solid #141414; color: #fff; }
+.desk-block.extra .kicker { color: #ffd36a; }
+.desk-block.extra h2 { color: #fff; }
+.desk-block.extra .note { color: #c5c5c5; }
+.desk-block.extra .tile { background: #222; border-color: #333; color: #fff; }
+.desk-block.extra .tile h3 { color: #fff; }
+.desk-block.extra .tile p, .desk-block.extra .news-meta { color: #bdbdbd; }
+.desk-block.extra .tile:hover { border-color: #ffd36a; }
+.desk-block.extra .news-item h3 { color: #fff; }
+.desk-block.extra .news-list { margin-top: 16px; }
 .x-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 12px; }
 a.x-card { color: inherit; padding: 0; overflow: hidden; }
-a.x-card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--navy); }
+a.x-card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--navy); display: block; }
 a.x-card h3 { margin: 10px 12px 4px; font-size: 15px; }
 a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
 .x-kind {
@@ -164,8 +170,7 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
 .rank-card strong { display: block; font-size: 28px; color: var(--navy); }
 .rank-card span { color: var(--muted); font-weight: 700; }
 table.boards { font-size: 15px; }
-table.boards tr.hi td { background: rgba(31,107,58,0.12); font-weight: 800; }
-table.boards tr.lo td { background: rgba(200,16,46,0.08); }
+table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
 .player-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .player-card { text-align: center; padding: 12px; }
 .player-card img {
