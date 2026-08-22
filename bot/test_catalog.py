@@ -201,6 +201,10 @@ def main():
     assert '<section class="hero"' in home
     assert "home-leads" in home
     assert "Big draw" not in home
+    css = Path("css/site.css").read_text()
+    assert "a.sport-switch.bk" in css
+    assert "border: 3px solid #c8102e" in css
+    assert "clamp(52px, 11vw, 84px)" in css
     board_html = html_of("board.html")
     assert "Superflex Redraft" in board_html
     assert "Superflex Dynasty" in board_html
