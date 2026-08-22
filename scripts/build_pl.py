@@ -383,10 +383,6 @@ def facts_table(r, media):
         items.append(("Sleeper rk", f"#{r['sleeper_rank']}"))
     if r.get("price"):
         items.append(("FPL £", f"£{r['price']}m"))
-    if r.get("sel") not in (None, ""):
-        items.append(("Owned", f"{r['sel']}%"))
-    if r.get("sel_rank"):
-        items.append(("Sel. rank", f"#{r['sel_rank']}"))
     if r.get("premier"):
         items.append(("Premier", f"#{r['premier']}"))
     if r.get("premier_score") not in (None, ""):
@@ -588,7 +584,6 @@ def pl_grafs(r, lists, media):
     avg = r.get("avg")
     ranks = r.get("ranks") or {}
     price = r.get("price")
-    sel = r.get("sel")
     pts = r.get("pts") or 0
     gls = r.get("gls") or 0
     ast = r.get("ast") or 0
@@ -615,8 +610,6 @@ def pl_grafs(r, lists, media):
         bits.append(f"{n} boards")
     if price not in (None, ""):
         bits.append(f"£{price}m")
-    if sel not in (None, ""):
-        bits.append(f"{sel}% owned")
     if pts:
         bits.append(f"{pts} pts")
     if gls or ast:

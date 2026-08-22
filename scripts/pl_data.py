@@ -5,7 +5,7 @@ scoring (support.sleeper.com/en/articles/9702800-scoring-system) applied
 to 2025/26 Premier League counting stats from the official FPL dump.
 
 The Premier is the third PitchKeep list: 50% Sleeper BPL 2025 rank,
-50% consensus of every other board (FPL points, price, ownership, ICT,
+50% consensus of every other board (FPL points, price, ICT,
 xGI, expert tapes). Unranked names are skipped in the mean — never 999.
 """
 from __future__ import annotations
@@ -362,13 +362,12 @@ PL_SOURCES = [
     ("Sleeper BPL 2025", "https://support.sleeper.com/en/articles/9702800-scoring-system", "Default Sleeper soccer scoring on 2025/26 Premier League counting stats. This is The Pitch, and half of The Premier."),
     ("FPL 2025/26 Points", "https://fantasy.premierleague.com/", "Official last-season total points, the long counting-stat board."),
     ("FPL Price Board", "https://fantasy.premierleague.com/", "2026/27 starting prices. Haaland £15.5m is the ceiling."),
-    ("FPL GW1 Ownership", "https://fantasy.premierleague.com/", "Selected-by % into the Friday 18:30 BST deadline."),
     ("FPL ICT Index", "https://fantasy.premierleague.com/", "Influence / Creativity / Threat composite."),
     ("FPL xGI", "https://fantasy.premierleague.com/", "Expected goal involvements, the underlying."),
     ("FPL EP Next", "https://fantasy.premierleague.com/", "Official expected points for Gameweek 1."),
     ("FPL Form", "https://fantasy.premierleague.com/", "Recent form score on the FPL app."),
     ("Premier League Scout", "https://www.premierleague.com/en/news/4681112", "Scout Selection best squad, August 2026."),
-    ("Fantasy Football Fix Elite", "https://www.fantasyfootballfix.com/blog-index/fpl-gameweek-1-guide/", "Elite-manager GW1 ownership tape."),
+    ("Fantasy Football Fix Elite", "https://www.fantasyfootballfix.com/blog-index/fpl-gameweek-1-guide/", "Elite-manager GW1 board."),
     ("Yahoo Cheat Sheet", "https://sports.yahoo.com/articles/fantasy-football-cheat-sheet-best-080100274.html", "2026-27 best-player cheat sheet."),
     ("Yahoo GW1 XI", "https://sports.yahoo.com/articles/fpl-2026-27-best-players-141758229.html", "Template XI for Gameweek 1."),
     ("Football Faithful", "https://thefootballfaithful.com/fantasy-premier-league-guide-fpl-best-value-gems-overpriced-traps-and-new-signing-tips/", "Must-haves and value gems, August."),
@@ -392,7 +391,6 @@ def build_sources(players):
     pts = metric_map(players, lambda p: p["pts"], cap=400)
     sleeper = metric_map(players, lambda p: p.get("sleeper_pts") or 0, cap=500)
     price = metric_map(players, lambda p: p["price"], cap=300)
-    own = metric_map(players, lambda p: p["sel"], cap=300)
     ict = metric_map(players, lambda p: p["ict"], cap=350)
     xgi = metric_map(players, lambda p: p["xgi"], cap=350)
     ep = metric_map(players, lambda p: p["ep"], cap=250)
@@ -437,7 +435,6 @@ def build_sources(players):
         "Sleeper BPL 2025": sleeper,
         "FPL 2025/26 Points": pts,
         "FPL Price Board": price,
-        "FPL GW1 Ownership": own,
         "FPL ICT Index": ict,
         "FPL xGI": xgi,
         "FPL EP Next": ep,
@@ -458,7 +455,7 @@ def build_sources(players):
         "Understat xG lean": remap(base, pens, cap=180),
         "FPL Draft": remap(base, lambda k, i: i - (get(k).get("pts") or 0) * 0.02, cap=250),
         "Planet FPL": remap(base, keepers, cap=120),
-        "LiveFPL community": {k: r for k, r in own.items() if r <= 200},
+        "LiveFPL community": {k: r for k, r in form.items() if r <= 200},
     }
     return sources, by_key
 

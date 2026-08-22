@@ -27,7 +27,7 @@ COPY = {
         "Erling Haaland is the player The Premier is built around. Sleeper BPL 2025 scored his 2025/26 line at 317.2, first of 400. The other 23 boards average 3.87. Split the difference and he is still 1.01. Twenty-seven Premier League goals, eight assists, 34 starts, 2,953 minutes, 13 clean-sheet cameos that Sleeper barely cares about because he is a forward. The Pitch already had him first. The Premier does not argue.",
         "The 2025/26 tape is the same argument on film: City walk him into the box and he finishes. 25.5 expected goals, 27 actual. That is not a lucky spike. That is a No. 9 doing No. 9 work at a volume nobody else on this list can touch. Igor Thiago's 22 goals are the closest counting-stat rival and still live 60 Sleeper points back because Haaland also added eight assists and a 6.8 FPL points-per-game.",
         "Set pieces are the rest of the floor. He is first-choice from the spot. He is not on corners. He does not need to be. Threat 1,520, ICT 302.3, 43 bonus. Official FPL had him on 239 points, also first. The boards that fade him (Scout 24, SofaScore 17, Yahoo XI 10) are pricing the £15.5m hit or a single-week XI, not the season. We are ranking the season.",
-        "Ownership into 2026/27 is 69.3 percent. That is not a differential. That is the market admitting the 1.01. The Premier's job is not to be clever about Haaland. It is to put him first so the rest of the 400 has a ceiling to be measured against.",
+        "£15.5m is the market admitting the 1.01. The Premier's job is not to be clever about Haaland. It is to put him first so the rest of the 400 has a ceiling to be measured against.",
         "Instruction: you do not trade Haaland for two very good players on this curve. Rank 1 is 12,000 BK Value. Bruno at 2 is close enough that a calculator will call some packages fair. The desk still wants the Norwegian. If your league scores Sleeper, this is not a conversation. If it scores FPL, it is still not a conversation.",
     ),
     "bruno fernandes": C(
@@ -39,12 +39,12 @@ COPY = {
         [
             "Turns 32 this season. The Athletic has him 12th — the first age tax on a midfielder who plays every week.",
             "Seven clean sheets as a midfielder. United's defensive tape still caps the CS crumbs Sleeper pays at 1.",
-            "50.2% owned at £12.0m. You are paying a second premium after Haaland.",
+            "£12.0m. You are paying a second premium after Haaland.",
         ],
         "Bruno Fernandes is the midfielder every board still refuses to fade. Fantasy Football Fix, Yahoo's cheat sheet, ESPN, WhoScored, and the ICT index all had him first. Sleeper BPL 2025 had him second, 293.8, because 24 assists at 6 points each is how a creator outranks almost every goalscorer who is not Haaland. The Premier averages that into #2. Consensus 3.48 versus Haaland's 3.87 — the industry actually likes Bruno more. Production likes Haaland more. We split it and keep the Norwegian first by a hair.",
         "The 2025/26 line is 9 goals, 24 assists, 35 starts, 3,065 minutes, 10.79 xG, 12.28 xA. He slightly under-finished the shot map and still ended as FPL's second-highest scorer (235). First-choice penalties, first-choice corners, first-choice direct free-kicks. Fifty-three tackles and 67 CBI are the part of the profile FPL undervalues and Sleeper does not. That is why his Sleeper rank (2) beats several of the 'he's just a creator' boards.",
         "United are not a clean-sheet machine (7 CS, 46 goals against while he was on). Sleeper pays midfielders 1 for a clean sheet, so the defensive mess is a rounding error, not a ranking event. The real minus is age. He is 31. The Athletic sliding him to 12 is the 'how many more 90s?' question. We hear it. We are not moving him out of the first two for it.",
-        "Price is £12.0m and ownership is 50.2%. That is the second-most expensive shirt on the app for a reason. Scout's 14 is the value lean talking. Ignore value leans when the player takes every set piece and 24 chances. The Premier is not an FPL budget tool. It is a ranking of who actually produced and who the industry still believes.",
+        "Price is £12.0m. That is the second-most expensive shirt on the app for a reason. Scout's 14 is the value lean talking. Ignore value leans when the player takes every set piece and 24 chances. The Premier is not an FPL budget tool. It is a ranking of who actually produced and who the industry still believes.",
         "Nearby on this list is Semenyo at 3, then Gabriel. If you need to move Bruno, the package starts with a top-five name, not a pair of mid-premiums. Draft-league managers who still think 'United midfielder' means a tax can be the other side of that trade. Take Bruno. Stop talking.",
     ),
     "semenyo": C(
@@ -56,11 +56,11 @@ COPY = {
         [
             "17 on 11.1 xG is a hot finishing year. City usage is the 2026/27 bet, not a second 17.",
             "Third-choice penalties. Seven yellows. Not a set-piece tree like Bruno.",
-            "26.4% owned — still a differential next to Haaland and João Pedro, which will not last.",
+            "£8.5m next to Haaland and João Pedro. City usage is the bet, not last year's Bournemouth volume.",
         ],
         "Antoine Semenyo is the first name The Premier is willing to argue about. Sleeper had him fifth (247.6) on 17 goals and 6 assists from midfield. The other boards average 6.14. Hybrid lands at 3, ahead of Gabriel, ahead of Igor Thiago, ahead of Rice. That is a 26-year-old who just left Bournemouth's volume for Manchester City's chance quality, and the desk is not going to pretend that is a lateral move.",
         "The 2025/26 counting line is a feature-winger season: 37 starts, 3,200 minutes, 17 G, 6 A, 12 clean sheets (Sleeper pays mids 1), 45 tackles. FPL had him on 202 points, fourth overall. ESPN, The Athletic, and Sky all parked him inside the top four. The underlying is the honest paragraph: 11.1 xG, 17 finishes. Six goals of overperformance. At Bournemouth that can be 'he is actually this good.' At City it can be 'the shots get better and the finishing regresses toward a still-elite number.' We are buying the usage. We are not projecting 17 again without blinking.",
-        "Price is £8.5m with 26.4% ownership. That is the last moment he is a differential. Haaland is 69% and Pedro is 62%. Semenyo at a quarter of the rooms is how The Premier tells you the public has not finished the sentence 'he plays for City now.' xGI rank 11 and EP-next 12 are the FPL app still treating him like a Bournemouth winger. The Pitch already moved. The Premier moved with it.",
+        "Price is £8.5m. xGI rank 11 and EP-next 12 are the FPL app still treating him like a Bournemouth winger. The Pitch already moved. The Premier moved with it. The public has not finished the sentence 'he plays for City now.'",
         "Yellows (7) and third-choice pens are the minuses that do not move a ranking this high. He is not Bruno. He does not need to be. He is the midfielder who scores like a forward and now shares a building with the actual 1.01. City can make that a problem (minutes) or a cheat code (box entries). 37 starts last year says he survives minutes fights.",
         "Instruction: if your league still has him priced like a Bournemouth output, that is a buy. If someone wants Haaland-lite and offers a top-eight package, listen. Do not sell him for a 'safer' 8.0 midfielder who scored 8. The whole point of a hybrid board is that production and consensus finally agreed on someone who is not named Bruno or Erling.",
     ),
@@ -77,7 +77,7 @@ COPY = {
         ],
         "Gabriel Magalhães is why The Premier exists as a third list. Sleeper BPL 2025 had him third overall, 258.6, because an Arsenal centre-back with 18 clean sheets, 3 goals, 5 assists, 38 tackles, and 239 clearances/blocks/interceptions is a cheat code in a scoring system that pays 6 for a CS and 0.4 per CBI. The FPL-shaped boards average him 12.78. Hybrid lands at 4. That gap is the whole methodology: production said 3, the industry said 13, we are not throwing either number away.",
         "The 2025/26 line is 30 starts, 2,750 minutes, 209 FPL points (third overall), 6.5 PPG, 30 bonus. 2.94 xG and 3 goals — no finishing luck. 1.75 xA and 5 assists — he over-created a bit from set-piece chaos, which Arsenal will keep manufacturing. SofaScore and the Scout value lean both had him 1.01 because they watch defenders. The xGI table had him 107th because it does not.",
-        "£8.0m and 29.6% owned is the market catching up without fully arriving. You cannot call a near-30% Arsenal defender a differential. You can still call him under-owned relative to 18 clean sheets. Saliba and Calafiori live in the same building and do not outrank him here. Sleeper is not confused about which centre-back got on the ball in the box and also blocked everything.",
+        "£8.0m is the market catching up without fully arriving. Saliba and Calafiori live in the same building and do not outrank him here. Sleeper is not confused about which centre-back got on the ball in the box and also blocked everything.",
         "The minus is architectural: if Arsenal's clean-sheet rate drops, a lot of these points are not replaceable with 'he will just score more.' He scored 3. The floor is the defending. The Premier is willing to take that floor in the first four because last year's floor was a top-three season in two different scoring systems.",
         "Instruction: do not trade Gabriel for a midfielder who 'feels more premium' unless that midfielder is Bruno or Semenyo. Draft formats that pay CBI and CS will scream if you do. FPL managers who still think £8.0 is 'too much for a defender' are the other side of the trade. Take the Brazilian.",
     ),
@@ -90,13 +90,13 @@ COPY = {
         [
             "One assist. The profile is penalty-box only. Consensus 17.22 is the industry still asking 'Brentford, though?'",
             "FPL Form 108 and EP-next 49 — the app is not starting 2026/27 where 2025/26 ended.",
-            "17.8% owned at £8.0m. Public has not paid the 22-goal tax yet, which cuts both ways.",
+            "£8.0m after 22 goals. The public has not paid the tax yet, which cuts both ways.",
         ],
         "Igor Thiago is the second-best pure scorer on The Premier and the first argument. Sleeper ranked him fourth (256.6) on 22 goals and almost nothing else — 1 assist, 37 tackles, 84 CBI, 10 clean sheets that a forward gets paid 0 for. Haaland's eight assists are why the 1.01 is not close. Everyone else is close. Twenty-two goals from a 25-year-old Brentford No. 9 with first-choice penalties is how you crash a 400.",
         "The underlying backs it: 20.6 xG, 22 finishes. Slight overperformance, nothing like Semenyo's finishing spike. 22.43 xGI is second on this desk behind Haaland. BBC, Understat, and The Athletic all have him inside the top four because they are watching shots. The consensus 17.22 is the other half of the industry still typing 'Brentford' as if that is a rebuttal. The Premier splits it to 5. That is a buy signal, not a fade.",
-        "FPL had him on 181 points — elite, not first. One assist and a 4.8 PPG keep him out of the Haaland/Bruno band in official scoring. Sleeper's 9-per-goal for forwards does not care. Form rank 108 and EP 49 are the 2026/27 app refusing to believe the 22. Ownership 17.8% at £8.0m is the public agreeing with the app. That is the window.",
+        "FPL had him on 181 points — elite, not first. One assist and a 4.8 PPG keep him out of the Haaland/Bruno band in official scoring. Sleeper's 9-per-goal for forwards does not care. Form rank 108 and EP 49 are the 2026/27 app refusing to believe the 22. £8.0m is the window.",
         "Yellows (7) and a one-dimensional chance profile are real. If the penalties dry up or Brentford's attack becomes a committee, 22 becomes 14 and this ranking looks aggressive. We are not projecting 22. We are ranking the player who just scored 22 on 20.6 xG and still costs less than Mbeumo in a lot of rooms.",
-        "Instruction: this is the striker you buy from people who watched 2024 and not 2025. Do not pay Haaland money. Do pay more than a 15-goal Chelsea forward who is 62% owned. Thiago at Premier 5 versus João Pedro at 8 is the desk picking shots over narrative.",
+        "Instruction: this is the striker you buy from people who watched 2024 and not 2025. Do not pay Haaland money. Do pay more than a 15-goal Chelsea forward on narrative. Thiago at Premier 5 versus João Pedro at 8 is the desk picking shots over the shirt.",
     ),
     "declan rice": C(
         [
@@ -105,13 +105,13 @@ COPY = {
             "4 G, 9 A, 7.32 xA. The creation is real even when the box entries are not Haaland-tier.",
         ],
         [
-            "£7.5m with only 19.0% ownership. The public still treats him like a 'safe eight' instead of a top-six.",
+            "£7.5m. The public still treats him like a 'safe eight' instead of a top-six.",
             "3.15 xG, 4 goals. He is not going to outscore Semenyo. That is not the job.",
             "xGI board 34th. The attacking-only tables will always tax a six who also takes set pieces.",
         ],
         "Declan Rice is the midfielder The Premier trusts when the flashier names start arguing. Sleeper 10 (221.8), consensus 11.45, hybrid 6. Almost no gap. That is 35 starts, 3,093 minutes, 4 goals, 9 assists, 18 clean sheets, 69 tackles, 127 CBI, 23 bonus, 184 FPL points. Arsenal's engine room, first-choice corners, first-choice direct free-kicks. Sleeper pays every one of those events. The industry noticed.",
         "The 2025/26 tape is control plus set pieces, not a 15-goal explosion. 3.15 xG and 7.32 xA is a creator who also sits. ESPN and the Scout value lean had him fourth. Sky and FPL points had him sixth. The people who watched the season and the people who counted the season landed in the same band. That is rarer than it should be on a 24-board mix.",
-        "Price is the tell. £7.5m, 19.0% owned, EP-next 23. You can still draft Rice as if he were a Forest or Everton eight. He is not. He is an Arsenal midfielder who played 3,000 minutes, took the dead balls, and generated 221.8 Sleeper points without needing a finishing spike. Gibbs-White outscored him in FPL (188 vs 184) and still sits behind him here because Rice's defensive events and clean sheets are not optional in Sleeper.",
+        "Price is the tell. £7.5m, EP-next 23. You can still draft Rice as if he were a Forest or Everton eight. He is not. He is an Arsenal midfielder who played 3,000 minutes, took the dead balls, and generated 221.8 Sleeper points without needing a finishing spike. Gibbs-White outscored him in FPL (188 vs 184) and still sits behind him here because Rice's defensive events and clean sheets are not optional in Sleeper.",
         "The minus is the ceiling. He will not be Semenyo. He will not be Bruno. If your format is goals-only, he slides. If your format is this desk, he is a top-six name you can actually get. Age 27 is the prime, not a tax.",
         "Instruction: hold. If a manager still has him in the 20s because 'he's a six,' that is the trade. Nearby are Gibbs-White and João Pedro. Rice is the one you keep when you need the season not to fall over.",
     ),
@@ -124,36 +124,36 @@ COPY = {
         [
             "Sleeper 18 versus consensus 11. The Pitch already cooled him relative to FPL.",
             "20 tackles, 48 CBI. Sleeper's defensive table does not love him the way FPL's attack table does.",
-            "11.9% owned. Forest plus a 15-goal spike is how people talk themselves out of a top-eight mid.",
+            "Forest plus a 15-goal spike is how people talk themselves out of a top-eight mid.",
         ],
         "Morgan Gibbs-White is the first real Sleeper-versus-FPL split on The Premier. Official points had him fifth (188). ESPN, Athletic, and Sky were 3–5. Consensus 11.17. Sleeper BPL 2025 had him 18th (206.2) because 15 goals and 4 assists from midfield is elite attacking output and 20 tackles is not. Hybrid lands at 7. We are not ignoring 15 goals. We are not pretending he defends like Rice.",
-        "The 2025/26 line: 35 starts, 3,101 minutes, 15 G, 4 A, 10 CS, 10.81 xG, 2.91 xA. Four-goal overperformance on the shot map. Direct free-kicks are his. Penalties are second. Forest's attack ran through him and the FPL boards noticed. Ownership 11.9% at £8.0m is the public still hearing 'Nottingham Forest' louder than '15 goals.' That gap is the point of a third list.",
+        "The 2025/26 line: 35 starts, 3,101 minutes, 15 G, 4 A, 10 CS, 10.81 xG, 2.91 xA. Four-goal overperformance on the shot map. Direct free-kicks are his. Penalties are second. Forest's attack ran through him and the FPL boards noticed. £8.0m is the public still hearing 'Nottingham Forest' louder than '15 goals.' That gap is the point of a third list.",
         "Sleeper's defensive scoring is why he sits behind Rice and Garner on The Pitch. The Premier pulls him back up because 19 boards averaging 11 is a lot of industry agreement to throw away. Yellows: 1. He did not even give the card-tax people a hook. PPG 5.1, same as Rice, with a completely different shape.",
         "The risk is the finishing. 15 on 10.81 can become 11 on 11, and then the FPL boards will look silly and Sleeper will look prescient. Forest's supporting cast is not City or Arsenal. If the chance quality dies, this ranking dies with it. We are ranking the player who just did it for 3,100 minutes, not a projection model that wants him to be polite.",
         "Instruction: this is a hold against anyone using Sleeper rank as gospel and a buy against anyone who still has him outside the top 20 on vibes. Do not pay Bruno. Do pay more than a 6.5 Forest-adjacent mid who scored 8.",
     ),
     "joao pedro": C(
         [
-            "15 G, 9 A, 62.2% owned, Football Faithful 1.01. The most drafted forward after Haaland.",
+            "15 G, 9 A, Football Faithful 1.01. The most pushed forward after Haaland.",
             "Sleeper 11, 221.6. Chelsea's centre-forward who actually creates.",
             "Age 24. The youngest name in the Premier top 10.",
         ],
         [
             "14.91 xG, 15 goals — fine. 1.96 xA, 9 assists — that assist spike is the whole worry.",
             "FPL Form 169, EP-next 73. The app has gone cold into 2026/27.",
-            "Consensus 19.3 versus 62% ownership. The public is ahead of the hybrid and that is usually a sell tell.",
+            "Consensus 19.3 versus Faithful 1.01. The loudest boards are ahead of the hybrid and that is usually a sell tell.",
         ],
-        "João Pedro is the most owned argument on The Premier. Sixty-two percent of FPL drafted him. Football Faithful had him first. Fix Elite and BBC were inside the top four. Sleeper BPL 2025 had him 11th (221.6) on 15 goals and 9 assists in a Chelsea shirt. Consensus 19.3. Hybrid 8. The public is treating him like a 1.02. The boards that count are treating him like a top-ten forward who might have gotten lucky on the assist column.",
+        "João Pedro is the loudest argument on The Premier. Football Faithful had him first. Fix Elite and BBC were inside the top four. Sleeper BPL 2025 had him 11th (221.6) on 15 goals and 9 assists in a Chelsea shirt. Consensus 19.3. Hybrid 8. The public is treating him like a 1.02. The boards that count are treating him like a top-ten forward who might have gotten lucky on the assist column.",
         "The 2025/26 line: 31 starts, 2,658 minutes, 15 G, 9 A, 30 bonus, 177 FPL points. 14.91 xG is honest finishing. 1.96 xA against 9 assists is not. He more than quadrupled his expected assists. That can be 'Chelsea's chance creation found him in ways the model missed' or 'do not buy 9 assists again.' The Premier is willing to rank the 15 goals and nervous about the 9 assists. Hence 8, not 3.",
-        "Price £7.5m is the other reason the public smashed the button. He is cheaper than Haaland, Thiago, and Watkins on several squad builds, and he is Chelsea. Form rank 169 into the new season is the hangover. You cannot be 62% owned and 169th in form without the template becoming a trap for a month. That does not erase 221.6 Sleeper points. It does stop us from pretending he is Haaland at half price.",
+        "Price £7.5m is the other reason the public smashed the button. He is cheaper than Haaland, Thiago, and Watkins on several squad builds, and he is Chelsea. Form rank 169 into the new season is the hangover. That does not erase 221.6 Sleeper points. It does stop us from pretending he is Haaland at half price.",
         "Age 24 is the dynasty-shaped plus if your league keeps players. The minus is the role: Chelsea can rotate a forward group into dust. 31 starts is a lot, and it is not 37. Thiago started 37. Semenyo started 37. Minutes are a skill.",
-        "Instruction: do not buy him at a 1.02 price from a manager who watched the ownership, not the xA. Do not sell him for a 12-goal veteran because the form rank looks scary. He is Premier 8. Pay 8. Collect 8. The 62% is other people's problem in draft formats; it is your problem in FPL.",
+        "Instruction: do not buy him at a 1.02 price from a manager who watched the shirt, not the xA. Do not sell him for a 12-goal veteran because the form rank looks scary. He is Premier 8. Pay 8. Collect 8.",
     ),
     "garner": C(
         [
             "Sleeper 8 (227.6) on 3,413 minutes, 53-style midfield volume, 2 G / 7 A, Everton every week.",
             "The Pitch already had him inside the top 10. The Premier keeps him 9 because production was not a mirage.",
-            "£6.0m, 0.2% owned. The last genuinely ignored top-ten name on the desk.",
+            "£6.0m. The last genuinely ignored top-ten name on the desk.",
         ],
         [
             "Consensus 26.29 on only 15 boards. Half the industry did not even rank him.",
@@ -161,10 +161,10 @@ COPY = {
             "Everton's ceiling is the ceiling. He will not catch Semenyo's 17.",
         ],
         "James Garner is the reason we built a hybrid instead of just publishing Sleeper. The Pitch had him eighth (227.6) because he played 3,413 minutes, tackles everything, and Sleeper pays that. FPL had him on 159. Consensus among the boards that bothered is 26.29. Hybrid 9. That is the desk saying: the minutes and the defensive events were real, and the industry's refusal to rank an Everton six is not a scouting report.",
-        "Two goals, seven assists, 25 years old, £6.0m, 0.2% ownership. He is not on anyone's GW1 template. He was on the pitch every week. That is the entire plus. In Sleeper, availability plus tackles plus a handful of returns is a QB2-equivalent at midfield. In FPL it is a 6.0 who 'doesn't score enough.' Both can be true. The Premier is 50% the first sentence.",
+        "Two goals, seven assists, 25 years old, £6.0m. He is not on anyone's GW1 template. He was on the pitch every week. That is the entire plus. In Sleeper, availability plus tackles plus a handful of returns is a QB2-equivalent at midfield. In FPL it is a 6.0 who 'doesn't score enough.' Both can be true. The Premier is 50% the first sentence.",
         "The boards that skipped him are the tell. Fifteen sources, not 24. When you are unranked you do not get a 999 — you get skipped — so his consensus is only the people who noticed. They still averaged 26. We are not promoting him over Rice. We are not dumping him to 40 because Yahoo did not print the name.",
         "Minus: Everton. Minus: two goals. Minus: if Sleeper ever weights attacking events more, he slides. None of that makes 3,413 minutes a fluke. Age 25 means you can still be early.",
-        "Instruction: this is the buy on The Premier. Zero-point-two percent owned, Pitch top 10, hybrid top 10. If your league uses Sleeper, he should not be on waivers. If it uses FPL, he is a squad name, not a star. Know the format. Then smash the Everton button they left on the table.",
+        "Instruction: this is the buy on The Premier. Pitch top 10, hybrid top 10, £6.0m. If your league uses Sleeper, he should not be on waivers. If it uses FPL, he is a squad name, not a star. Know the format. Then smash the Everton button they left on the table.",
     ),
     "saka": C(
         [
@@ -231,7 +231,7 @@ COPY = {
         [
             "Consensus 20.55, Hub 7, Fix 6, xGI 5. The industry still has him as a top-eight mid.",
             "11 G, 3 A, 16.97 xGI. The underlying likes him more than the finishing.",
-            "United, £8.0m, 34.3% owned. Template-adjacent without being Haaland-adjacent.",
+            "United, £8.0m. Template-adjacent without being Haaland-adjacent.",
         ],
         [
             "Sleeper 63. The Pitch already left him behind Garner, Wilson, and a pile of defenders.",
@@ -239,7 +239,7 @@ COPY = {
             "Premier 30 is the hybrid refusing to pay 2024 Mbeumo prices for 2025 Mbeumo output.",
         ],
         "Bryan Mbeumo is the other side of the Semenyo coin. Consensus still loves him (20.55, several expert lists inside the top eight). Sleeper BPL 2025 had him 63rd (151.2) on 11 goals and 3 assists. Hybrid 30. The Premier is not going to rank him like a 1.05 because the public remembers Brentford Mbeumo, and it is not going to rank him 63rd because 16.97 xGI and first-ish United usage still matter.",
-        "Thirty-four percent owned at £8.0m is a lot of people still pressing the old button. xGI fifth, ownership sixth, Sleeper 63rd. That is a sell-the-name, buy-the-gap-the-other-direction situation. If your league is Sleeper, he is a reach at expert ADP. If your league is FPL, he is a hold at 8.0 with a shot at bouncing. The third list is the average of those two sentences.",
+        "£8.0m is a lot of people still pressing the old button. xGI fifth, Sleeper 63rd. That is a sell-the-name, buy-the-gap-the-other-direction situation. If your league is Sleeper, he is a reach at expert ADP. If your league is FPL, he is a hold at 8.0 with a shot at bouncing. The third list is the average of those two sentences.",
         "Instruction: do not pay Semenyo money. Do not throw him in a dump pile with true mid-60s Sleeper names who have no xGI. He is Premier 30. That is a third-round name, not a first, not a waiver.",
     ),
     "kelleher": C(
@@ -376,7 +376,6 @@ def generate_take(r, lists=None, neighbors=None):
     yc = _i(r.get("yc"))
     bonus = _i(r.get("bonus"))
     ppg = _n(r.get("ppg"))
-    sel = _n(r.get("sel"))
     price = r.get("price")
     hi_src, hi_rk, lo_src, lo_rk = _hi_lo(ranks)
     gap = None
@@ -413,10 +412,6 @@ def generate_take(r, lists=None, neighbors=None):
         plus.append(f"{gls} goals on {xg} xG — the shots were better than the box score.")
     if xa and ast - xa >= 3:
         minus.append(f"{ast} assists on {xa} xA — the creation number needs a second season.")
-    if sel >= 40:
-        minus.append(f"{sel}% owned. This is a template name, not a differential.")
-    elif sel and sel <= 2 and premier and premier <= 40:
-        plus.append(f"{sel}% owned at Premier #{premier}. The public has not caught the hybrid.")
     if yc >= 8:
         minus.append(f"{yc} yellows. Sleeper subtracts 2 a card.")
     if pos in ("DEF", "GKP") and gc >= 50:
@@ -565,25 +560,13 @@ def generate_take(r, lists=None, neighbors=None):
     g4 = "Market: "
     if price not in (None, ""):
         g4 += f"{_money(r)}"
-    if sel not in (None, ""):
-        g4 += f", {sel}% owned into the 2026/27 FPL start"
     g4 += f", {n_boards} boards on the file."
-    if sel >= 40:
-        g4 += (
-            " That ownership is template territory. You do not win a mini-league by discovering him; "
-            "you lose one by going without him and being wrong. Draft formats do not care. FPL does."
-        )
-    elif sel and sel < 5:
-        g4 += (
-            " That ownership is a leftover. Either the public missed a real season or the public "
-            "correctly decided the role is not repeatable. The Premier's rank is our vote. "
-            "If we have him inside the first 80 and they have him at 0.4%, that is a Sleeper buy."
-        )
+    if price not in (None, "") and float(price) >= 10:
+        g4 += " That is premium money. You are paying for a name the other boards already priced, not a dart."
+    elif price not in (None, "") and float(price) <= 6 and premier and premier <= 80:
+        g4 += " That is leftover money for a Premier-ranked name. If the minutes hold, this desk already voted."
     else:
-        g4 += (
-            " Mid-range ownership means the name is known and not fully paid. That is usually "
-            "where this desk lives — not the 70% tax, not the 0.2% dart."
-        )
+        g4 += " Price is the FPL tax, not the rank. The Premier is who produced and who the boards still believe."
     if r.get("ep") not in (None, "", 0, 0.0):
         g4 += f" FPL's own EP-next is {r['ep']}."
     if r.get("ict") not in (None, "", 0, 0.0):
@@ -605,7 +588,7 @@ def generate_take(r, lists=None, neighbors=None):
     elif premier and premier <= 25:
         g5 += (
             f"treat him as a building-block, not a dart. Premier #{premier} is the band where you start "
-            f"the player every week in Sleeper and still check FPL ownership before you template him."
+            f"the player every week in Sleeper."
         )
     elif premier and premier <= 60:
         g5 += (
