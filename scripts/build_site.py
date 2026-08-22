@@ -841,6 +841,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
       </a>
       <nav>{''.join(links)}</nav>
     </header>
+    <p class="sports-top">Also: <a href="{nav_href('bb/index.html', depth)}">BaseBallKeep</a> · <a href="{nav_href('pl/index.html', depth)}">PitchKeep</a></p>
     {body}
     <footer>
       © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL, MLB, or Premier League.
@@ -1743,13 +1744,11 @@ def main():
         <h2>{wordmark()}</h2>
       </div>
     </section>
-    {desk_block("main", "Main", "The Keep and The Board.", f"Super Aggregate of {len(KEEP_SOURCES)} desks. The Board is the four long tapes. Trade and files live here too.", [
-        ("the-keep.html", "The Keep", "Super Aggregate. 32 desks. Superflex top 400."),
-        ("board.html", "The Board", "Four long boards. 500 names."),
+    {desk_block("main", "Main", "The Keep and The Board.", "The Keep is our ranking — 32 desks mashed, top 400. The Board is just the four published lists, 500 names. Trade and files sit here too.", [
+        ("the-keep.html", "The Keep", "Our ranking. 32 desks. Top 400."),
+        ("board.html", "The Board", "The four published lists only. 500 names."),
         ("trade.html", "Trade Calculators", "Rank becomes BK Value."),
         ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
-        ("bb/index.html", "BaseBallKeep", "Keep, Lineup, Pitchers."),
-        ("pl/index.html", "PitchKeep", "The Premier, The Pitch, the lists."),
     ])}
     {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, the market tape, and the slates.", [
         ("redraft-ppr.html", "Redraft PPR", "2026 startup. Photos and ages."),
@@ -1784,7 +1783,7 @@ def main():
     keep_body = f"""
     <p class="kicker">Super Aggregate · {len(KEEP_SOURCES)} desks</p>
     <h2>The Keep</h2>
-    <p class="note">Top 400 Superflex dynasty. {len(KEEP_SOURCES)} professional desks. Super is 50% the four long boards and 50% every other desk that ranked the player. Unranked skipped, never 999. Headshot and age on the row. BK Value uses this rank (12,000 at 1.01). The Board is the four long tapes only — different list.</p>
+    <p class="note">This is our ranking. Top 400 Superflex. {len(KEEP_SOURCES)} desks. Half the vote is the four long boards, half is everyone else. Use this list for trades. The Board next door is just those four lists, raw.</p>
     <section class="panel" style="margin-top:16px">
       <p class="kicker">Super Aggregate protocol</p>
       <h3>How The Keep is not The Board</h3>
@@ -1918,7 +1917,7 @@ def main():
     board_body = f"""
     <p class="kicker">Long tape · four published boards</p>
     <h2>The Board</h2>
-    <p class="note">This is not The Keep. The Keep is the Super Aggregate of {len(KEEP_SOURCES)} professional desks. The Board is the long file: PFN, Dynasty Nerds, FantasyPros ECR, and KeepTradeCut only — {len(board)} names, no short-list mash, no headshots. Mean of those four; unranked skipped, never 999.</p>
+    <p class="note">Not The Keep. This is the raw file: PFN, Dynasty Nerds, FantasyPros ECR, KeepTradeCut. {len(board)} names. Average of those four only. The Keep is the 32-desk mash.</p>
     <div class="panel">{rank_table(board, ["PFN", "DN", "FP", "KTC", "Avg", "# Boards", "BK Value"], board_extra)}</div>
     {value_bars(board, 12, "#c8102e", "Board value graph")}
     {sources_panel([
