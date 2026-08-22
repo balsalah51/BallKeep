@@ -39,12 +39,13 @@ def esc(s):
 
 def desk_block(kind, kicker, heading, note, tiles, extra=""):
     cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
+    cols = "grid" if len(tiles) <= 2 else "grid-3"
     return (
         f'<section class="desk-block {kind}">'
         f'<p class="kicker">{esc(kicker)}</p>'
         f"<h2>{esc(heading)}</h2>"
         f'<p class="note">{note}</p>'
-        f'<div class="grid-3">{cards}</div>'
+        f'<div class="{cols}">{cards}</div>'
         f"{extra}"
         "</section>"
     )
@@ -688,7 +689,7 @@ def write_basket_site():
           <p>Veterans climb. Kids pay a tax.</p>
         </a>
       </div>
-      <div class="grid-3">
+      <div class="grid">
         <a class="tile" href="trade.html"><h3>Trade Calculators</h3><p>Keep and Board. Rank becomes BK Value.</p></a>
         <a class="tile" href="players/index.html"><h3>Player Files</h3><p>Keep top 400.</p></a>
       </div>

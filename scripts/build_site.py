@@ -54,12 +54,13 @@ def esc(s):
 
 def desk_block(kind, kicker, heading, note, tiles, extra=""):
     cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
+    cols = "grid" if len(tiles) <= 2 else "grid-3"
     return (
         f'<section class="desk-block {kind}">'
         f'<p class="kicker">{esc(kicker)}</p>'
         f"<h2>{esc(heading)}</h2>"
         f'<p class="note">{note}</p>'
-        f'<div class="grid-3">{cards}</div>'
+        f'<div class="{cols}">{cards}</div>'
         f"{extra}"
         "</section>"
     )
@@ -1008,7 +1009,7 @@ def news_card(story: dict, depth: int = 0) -> str:
 
 
 def render_news_pages():
-    """Football BK News hub + story files. Baseball lives on BaseBallKeep."""
+    """Football BK News hub + story files. Baseball lives on BaseKeep."""
     stories = load_news_stories("football")
     (ROOT / "news").mkdir(parents=True, exist_ok=True)
     keep = {f"{s['slug']}.html" for s in stories if s.get("slug")}
@@ -1057,7 +1058,7 @@ def render_news_pages():
     body = f"""
     <p class="kicker">BK News · Football · Hourly wire</p>
     <h2>BK News</h2>
-    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball lives on <a href="bb/news.html">BaseBallKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
+    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball lives on <a href="bb/news.html">BaseKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{filters}</div>
     <div class="news-list" id="news-list">{cards}</div>
@@ -1829,7 +1830,7 @@ def main():
           <p>Quarterbacks stay expensive. Kids pay a tax.</p>
         </a>
       </div>
-      <div class="grid-3">
+      <div class="grid">
         <a class="tile" href="trade.html"><h3>Trade Calculators</h3><p>Keep, Board, 1QB, PPR, Standard.</p></a>
         <a class="tile" href="players/index.html"><h3>Player Pages</h3><p>Keep top 400. Tape, plus/minus.</p></a>
       </div>
@@ -2137,7 +2138,7 @@ def main():
         <article class="tile"><h3>/top + /pos</h3><p>Leaderboards, or just the QBs / RBs / WRs / TEs.</p></article>
         <article class="tile"><h3>/quiz + /hottake</h3><p>Guess a Keep rank. Draw a random buy or sell.</p></article>
         <article class="tile"><h3>/start + /picks</h3><p>Redraft start/sit, plus every future-pick value.</p></article>
-        <article class="tile"><h3>/bbplayer</h3><p>BaseBallKeep file: Keep 400, Lineup, Pitchers, redraft.</p></article>
+        <article class="tile"><h3>/bbplayer</h3><p>BaseKeep file: Keep 400, Lineup, Pitchers, redraft.</p></article>
         <article class="tile"><h3>/bbkeep + /bbwire</h3><p>Diamond boards and the longer redraft waiver list.</p></article>
         <article class="tile"><h3>/plplayer</h3><p>PitchKeep file: The Pitch 250, FPL line, long take, tape.</p></article>
         <article class="tile"><h3>/pitch + /pltrade</h3><p>Premier League boards and the PitchKeep calculator.</p></article>
