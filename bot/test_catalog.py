@@ -192,6 +192,8 @@ def main():
     assert "BasketKeep" in home
     assert 'class="desk-block extra"' in home
     assert "hero-ctas" in home
+    assert "home-leads" in home
+    assert "Big draw" not in home
     board_html = html_of("board.html")
     assert "Superflex Redraft" in board_html
     assert "Superflex Dynasty" in board_html

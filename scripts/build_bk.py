@@ -663,7 +663,7 @@ def write_basket_site():
     home = f"""
     <section class="hero" style="background-image:url('../img/bk-hero.jpg')">
       <div class="hero-card">
-        <p class="kicker" style="color:#ffb347">Updated {UPDATED}</p>
+        <p class="kicker" style="color:#fff">Updated {UPDATED}</p>
         <h2>{wordmark()}</h2>
         <p class="hero-lead">Dynasty first. Redraft right behind it. Same Keep / Board split as football, on hardwood.</p>
         <div class="hero-ctas">
@@ -673,26 +673,22 @@ def write_basket_site():
       </div>
     </section>
     <section class="desk-block main">
-      <p class="kicker">The draws</p>
-      <h2>Start here.</h2>
-      <p class="note">Two boards. That is the desk.</p>
-      <div class="draw-row">
-        <a class="draw keep" href="the-keep.html">
-          <span class="draw-badge">Big draw</span>
+      <p class="kicker">Hardwood</p>
+      <h2>The Keep and The Board</h2>
+      <p class="note">Two lists. Everything else on this page supports these.</p>
+      <div class="home-leads">
+        <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
-          <p class="draw-format">Dynasty basketball</p>
-          <p>18 desks mashed into a top 400. This is the list you trade on.</p>
-          <span class="cta">Open The Keep</span>
+          <p class="lead-sub">Dynasty basketball · top 400</p>
+          <p>18 desks mashed into one rank. This is the list you trade on.</p>
         </a>
-        <a class="draw board" href="board.html">
-          <span class="draw-badge alt">Next up</span>
+        <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
-          <p class="draw-format">Redraft basketball</p>
-          <p>This year. Veterans climb. Kids pay a tax.</p>
-          <span class="cta alt">Open The Board</span>
+          <p class="lead-sub">Redraft basketball · this year</p>
+          <p>Veterans climb. Kids pay a tax.</p>
         </a>
       </div>
-      <div class="grid-3" style="margin-top:14px">
+      <div class="grid-3">
         <a class="tile" href="trade.html"><h3>Trade Calculators</h3><p>Keep and Board. Rank becomes BK Value.</p></a>
         <a class="tile" href="players/index.html"><h3>Player Files</h3><p>Keep top 400.</p></a>
       </div>
