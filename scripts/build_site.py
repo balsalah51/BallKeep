@@ -892,7 +892,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
         <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" />
         <div>
           <p class="brand-title">{wordmark()}</p>
-          <p>Superflex Dynasty · Superflex Redraft</p>
+          <p>Dynasty · Redraft</p>
         </div>
       </a>
       <nav>{''.join(links)}</nav>
@@ -1813,12 +1813,12 @@ def main():
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
-          <p class="lead-sub">Superflex Dynasty · top 400</p>
+          <p class="lead-sub">Dynasty · top 400</p>
           <p>32 desks mashed into one rank. This is the list you trade on.</p>
         </a>
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
-          <p class="lead-sub">Superflex Redraft · this year</p>
+          <p class="lead-sub">Redraft · this year</p>
           <p>Quarterbacks stay expensive. Kids pay a tax.</p>
         </a>
       </div>
