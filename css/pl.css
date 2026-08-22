@@ -97,29 +97,18 @@ tr:hover td { background: rgba(0, 200, 83, 0.06); }
 .sources-box ol { margin: 0; padding-left: 22px; }
 footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
 a.sport-switch,
-a.sport-switch.fb,
-a.sport-switch.bb,
-a.sport-switch.bk,
-a.sport-switch.pl {
-  display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box;
-  margin: 18px 6px 0; padding: 8px 16px; border-radius: 999px;
-  font-weight: 800; font-size: 13px; line-height: 1; text-decoration: none; letter-spacing: 0.02em;
-  cursor: pointer; background: #fff; color: #c8102e;
-  border: 4px solid #c8102e; outline: none;
-  box-shadow: 0 0 0 3px #c8102e;
+.sport-switch {
+  display: inline-block; margin: 18px 6px 0; padding: 12px 22px; border-radius: 999px;
+  font-weight: 800; font-size: 13px; line-height: 1; text-decoration: none; letter-spacing: 0.04em;
+  cursor: pointer; box-sizing: border-box;
+  box-shadow: 0 6px 16px rgba(16, 32, 51, 0.16);
+  transition: transform 0.12s ease, filter 0.12s ease;
 }
-a.sport-switch.bk {
-  border: 4px solid #c8102e !important;
-  outline: none;
-  box-shadow: 0 0 0 3px #c8102e !important;
-  background: #fff !important;
-  color: #c8102e !important;
-}
-a.sport-switch:hover,
-a.sport-switch.fb:hover,
-a.sport-switch.bb:hover,
-a.sport-switch.bk:hover,
-a.sport-switch.pl:hover { background: #d6ebf7; }
+a.sport-switch:hover, .sport-switch:hover { transform: translateY(-1px); filter: brightness(1.08); }
+a.sport-switch.fb, .sport-switch.fb { background: #d6ebf7; color: #c8102e; border: 3px solid #c8102e; }
+a.sport-switch.bb, .sport-switch.bb { background: #0b1f3a; color: #f4ebd0; border: 3px solid #1f6b3a; }
+a.sport-switch.bk, .sport-switch.bk { background: #1a1208; color: #f4a259; border: 3px solid #e87722; }
+a.sport-switch.pl, .sport-switch.pl { background: #37003c; color: #00ff85; border: 3px solid #e8c547; }
 a.player-link { color: inherit; text-decoration: none; border-bottom: 1px dashed rgba(55,0,60,0.35); }
 a.player-link:hover { color: var(--purple); }
 .player-hero {
@@ -183,8 +172,8 @@ a.news-item h3 { margin: 0 0 6px; color: var(--purple); }
 .desk-block.extra .tile:hover { border-color: #c4a035; }
 .desk-block.extra .news-list { margin-top: 16px; }
 .sports-top {
-  display: flex; flex-wrap: wrap; gap: 16px; align-items: center;
-  margin: 14px 0 2px; padding: 8px 4px;
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  margin: 14px 0 2px;
 }
 .sports-top .sport-switch { margin: 0; }
 .x-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 12px; }

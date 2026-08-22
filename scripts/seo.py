@@ -23,13 +23,7 @@ def sport_pills(here: str, depth: int = 0) -> str:
         if key == here:
             continue
         href = f"{prefix}{folder}index.html" if folder else f"{prefix}index.html"
-        ring = (
-            ' style="border:4px solid #c8102e;box-shadow:0 0 0 3px #c8102e;'
-            'background:#fff;color:#c8102e"'
-            if key == "bk"
-            else ""
-        )
-        bits.append(f'<a class="sport-switch {key}" href="{href}"{ring}>{label}</a>')
+        bits.append(f'<a class="sport-switch {key}" href="{href}">{label}</a>')
     return "".join(bits)
 
 
