@@ -116,7 +116,7 @@ BK_SEO = {
     ),
     "board.html": (
         "The Board — 2026 Redraft Basketball Rankings | BasketKeep",
-        "This-year basketball redraft. Veterans climb. Kids pay a tax. Same BK Value curve as The Keep.",
+        "This-year basketball redraft. Same BK Value curve as The Keep.",
         "img/bk-logo.jpg",
     ),
     "guards.html": (
@@ -672,7 +672,7 @@ def write_basket_site():
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
           <p class="lead-sub">Redraft basketball · this year</p>
-          <p>Veterans climb. Kids pay a tax.</p>
+          <p>This season only. The names you start in 2026-27.</p>
         </a>
       </div>
       <div class="grid">
@@ -715,7 +715,7 @@ def write_basket_site():
     board_body = f"""
     <p class="kicker">Redraft · this year</p>
     <h2>The Board</h2>
-    <p class="note">Not The Keep. The Keep is dynasty. The Board is redraft — {len(board)} names, this season only. Veterans climb. Kids pay a tax. Use this list for 2026-27 startups.</p>
+    <p class="note">Not The Keep. The Keep is dynasty. The Board is redraft — {len(board)} names, this season only. Use this list for 2026-27 startups.</p>
     <div class="panel">{rank_table(board, ["Keep", "BK Value"], board_extra)}</div>
     {value_bars(board, 12, "#1a1208", "Board value graph")}
     """

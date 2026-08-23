@@ -135,12 +135,12 @@ BB_SEO = {
     ),
     "the-diamond.html": (
         "The Diamond — 2026 Redraft Baseball Rankings | BaseKeep",
-        "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400. Veterans climb. Kids pay a tax.",
+        "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400.",
         "img/bb-logo.jpg",
     ),
     "redraft.html": (
         "The Diamond — 2026 Redraft Baseball Rankings | BaseKeep",
-        "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400. Veterans climb. Kids pay a tax.",
+        "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400.",
         "img/bb-logo.jpg",
     ),
     "trade.html": (
@@ -1310,7 +1310,7 @@ def write_baseball_site():
     rd_body = f"""
     <p class="kicker">Redraft ranking · this year</p>
     <h2>The Diamond</h2>
-    <p class="note">This is the redraft list. Not The Keep. One-year baseball, {len(redraft)} names. Veterans who mash this month climb. Kids pay a tax. Use this board for 2026 rest-of-season and redraft startups.</p>
+    <p class="note">This is the redraft list. Not The Keep. One-year baseball, {len(redraft)} names. Use this board for 2026 rest-of-season and redraft startups.</p>
     {rd_flt}
     <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{int(r["value"]):,}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(redraft, 12, "#1f6b3a", "The Diamond value graph")}

@@ -6,11 +6,11 @@ Powder-blue **BallKeep** desk. Navy-and-cream **BaseKeep**, hardwood **BasketKee
 
 ## Football
 - **The Keep** — Superflex Dynasty Super Aggregate top 400 (30+ desks; 50% the four long boards, 50% every other desk that ranked the player). The big draw.
-- **The Board** — Superflex Redraft. This-year Superflex: Keep QB premium plus the PPR board, kids taxed. The next draw.
+- **The Board** — Redraft PPR. Full-PPR, 1QB, this year. Field Yates, FantasyPros PPR ECR, Karabell Flex. The next draw.
 - **The X** — fun tape from X, not news
 - **Trade Calculators** — Superflex Dynasty, 1QB Dynasty, Redraft PPR, Redraft Standard. Rank on each list becomes BK Value.
 - **Recent Deals** — type a player, get every Superflex/1QB package on the desk tape
-- Redraft PPR / Redraft Standard (200 names)
+- Redraft Superflex (two-QB, this year) / Redraft Standard (200 names)
 - 2026 drafted rookies
 - BK Hot 'n' Cold
 - **Player Pages** — every Keep 400 name, plus redraft, rookies, and Hot/Cold: ranks, board dump, a headshot, and a 2025 NFL (or college) highlight when we have the tape
@@ -37,7 +37,7 @@ Separate sport, separate palette. Footer crossover only — baseball does not li
 Separate sport, separate palette. Hardwood orange and night. Footer / header crossover only.
 
 - **The Keep** — dynasty basketball top 400, 18-board aggregate
-- **The Board** — this-year redraft (veterans climb, kids pay a tax)
+- **The Board** — this-year basketball redraft
 - **Guards / Wings / Bigs** — position boards stripped from The Keep
 - **Rookies** — compiled 2026 class plus the sophomores still priced like kids
 - **BK News** — live at `bk/news.html`. Same hourly pipeline: injury, roster, coach tape

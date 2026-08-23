@@ -1116,7 +1116,7 @@ def filter_group(rows, groups):
 
 
 def redraft_board(keep):
-    """This-year board: veterans climb, kids pay a tax."""
+    """This-year basketball redraft board."""
     scored = []
     for r in keep:
         try:
