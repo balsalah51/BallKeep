@@ -5,8 +5,8 @@ scoring (support.sleeper.com/en/articles/9702800-scoring-system) applied
 to 2025/26 Premier League counting stats from the official FPL dump.
 
 The Premier is the third PitchKeep list: 50% Sleeper BPL 2025 rank,
-50% consensus of every other board (FPL points, price, ICT,
-xGI, expert tapes). Unranked names are skipped in the mean — never 999.
+50% consensus of every other board (official FPL metrics plus 25
+published 2026/27 pro lists). Unranked names are skipped — never 999.
 """
 from __future__ import annotations
 
@@ -81,6 +81,79 @@ def pl_norm(name: str) -> str:
         "william saliba": "william saliba",
         "marc guehi": "marc guehi",
         "igorthiago nascimento rodrigues": "igor thiago",
+        "odegaard": "ødegaard",
+        "martin odegaard": "ødegaard",
+        "martin ødegaard": "ødegaard",
+        "bruno g": "bruno g",
+        "bruno guimaraes": "bruno g",
+        "bruno guimaraes rodriguez moura": "bruno g",
+        "alisson": "a becker",
+        "alisson becker": "a becker",
+        "a becker": "a becker",
+        "rodri": "rodrigo",
+        "rodrigo rodri": "rodrigo",
+        "n jackson": "n jackson",
+        "nicolas jackson": "n jackson",
+        "alexis mac allister": "mac allister",
+        "mac allister": "mac allister",
+        "moises caicedo": "caicedo",
+        "moises caicedo corozo": "caicedo",
+        "caicedo": "caicedo",
+        "matheus nunes": "matheus n",
+        "matheus n": "matheus n",
+        "david raya martin": "david raya",
+        "marcos senesi baron": "senesi",
+        "marcos senesi": "senesi",
+        "micky van de ven": "van de ven",
+        "van de ven": "van de ven",
+        "emiliano martinez": "martinez",
+        "emiliano martinez romero": "martinez",
+        "estevao": "estevao",
+        "estevao goncalves": "estevao",
+        "florentino": "florentino",
+        "evanilson": "evanilson",
+        "rayan vitor": "rayan",
+        "jeremy doku": "jeremy doku",
+        "jeremie doku": "jeremy doku",
+        "ezri konsa": "konsa",
+        "ezri konsa ngoyo": "konsa",
+        "daniel munoz": "munoz",
+        "daniel munoz mejia": "munoz",
+        "ben white": "white",
+        "benjamin white": "white",
+        "kaoru mitoma": "mitoma",
+        "mitoma kaoru": "mitoma",
+        "diego gomez": "gomez",
+        "diego gomez amarilla": "gomez",
+        "vitaliy mykolenko": "mykolenko",
+        "vitalii mykolenko": "mykolenko",
+        "emiliano buendia": "buendia",
+        "emiliano buendia stati": "buendia",
+        "djordje petrovic": "petrovic",
+        "dorde petrovic": "petrovic",
+        "oliver mcburnie": "mcburnie",
+        "oli mcburnie": "mcburnie",
+        "yeremy pino": "yeremy",
+        "yeremy pino santos": "yeremy",
+        "yehor yarmolyuk": "yarmoliuk",
+        "yehor yarmoliuk": "yarmoliuk",
+        "valentino livramento": "livramento",
+        "tino livramento": "livramento",
+        "florentino luis": "florentino",
+        "christian norgaard": "nørgaard",
+        "jorgen strand larsen": "strand larsen",
+        "strand larsen": "strand larsen",
+        "gabriel martinelli": "martinelli",
+        "jamie gittens": "gittens",
+        "jamie bynoe gittens": "gittens",
+        "wataru endo": "endo",
+        "endo wataru": "endo",
+        "rodrigo muniz": "muniz",
+        "ao tanaka": "tanaka",
+        "tanaka ao": "tanaka",
+        "mikel merino": "merino",
+        "juanlu": "sanchez",
+        "juanlu sanchez": "sanchez",
     }
     return aliases.get(n, n)
 
@@ -291,11 +364,12 @@ def named_map(players, names, cap=None):
     by_key = {p["key"]: p for p in players}
     by_web = {pl_norm(p["web_name"]): p for p in players}
     by_name = {pl_norm(p["name"]): p for p in players}
+    by_full = {pl_norm(p["full_name"]): p for p in players}
     out = {}
     rank = 1
     for raw in names:
         k = pl_norm(raw)
-        p = by_key.get(k) or by_web.get(k) or by_name.get(k)
+        p = by_key.get(k) or by_web.get(k) or by_name.get(k) or by_full.get(k)
         if not p:
             continue
         if p["key"] in out:
@@ -305,6 +379,14 @@ def named_map(players, names, cap=None):
         if cap and rank > cap:
             break
     return out
+
+
+def load_expert_lists():
+    path = ROOT / "data/pl-expert-lists.json"
+    if not path.exists():
+        return {}
+    blob = json.loads(path.read_text())
+    return blob.get("lists") or {}
 
 
 def remap(keys, score_fn, cap=None):
@@ -320,143 +402,62 @@ def order_from_map(m):
     return [k for k, _ in sorted(m.items(), key=lambda kv: kv[1])]
 
 
-# Short expert tapes published around GW1 2026/27.
-PL_SCOUT = [
-    "Erling Haaland", "Bruno Fernandes", "Gabriel Magalhaes", "Antoine Semenyo",
-    "Bukayo Saka", "Cole Palmer", "Joao Pedro", "Bryan Mbeumo", "Declan Rice",
-    "Dominik Szoboszlai", "Antonin Kinsky", "Pascal Gross", "Riccardo Calafiori",
-    "Mamadou Sangare", "Jonah Kusi-Asare", "Jacob Greaves", "Bobby Thomas",
-    "Cristhian Mosquera", "Iliman Ndiaye", "Florian Wirtz",
-]
-FIX_ELITE = [
-    "Bruno Fernandes", "Erling Haaland", "Dominic Calvert-Lewin", "Joao Pedro",
-    "Antonin Kinsky", "Bryan Mbeumo", "Antoine Semenyo", "David Raya",
-    "Dominik Szoboszlai", "Gabriel Magalhaes",
-]
-YAHOO_CHEAT = [
-    "Bruno Fernandes", "Cole Palmer", "Gabriel Magalhaes", "Erling Haaland",
-    "Dominik Szoboszlai", "Antoine Semenyo", "Brian Brobbey", "Pedro Porro",
-    "Maxence Lacroix", "Neco Williams", "Enzo Le Fee", "Luke Shaw",
-    "Ezri Konsa", "Trai Hume", "Pascal Gross", "Martin Zubimendi",
-    "Virgil van Dijk", "Daniel Munoz", "Ollie Watkins", "Bukayo Saka",
-]
-YAHOO_GW1 = [
-    "Antonin Kinsky", "Riccardo Calafiori", "Harry Maguire", "Anel Muharemovic",
-    "Pascal Gross", "Bruno Fernandes", "Dominik Szoboszlai", "Christos Tzolis",
-    "Joao Pedro", "Brian Brobbey", "Erling Haaland",
-]
-FAITHFUL = [
-    "Joao Pedro", "Bruno Fernandes", "Erling Haaland", "Iliman Ndiaye",
-    "Florian Wirtz", "Gabriel Magalhaes", "Christos Tzolis",
-]
-HUB_PREMIUM = [
-    "Erling Haaland", "Bruno Fernandes", "Bukayo Saka", "Cole Palmer",
-    "Mohamed Salah", "Alexander Isak", "Antoine Semenyo", "Bryan Mbeumo",
-    "Phil Foden", "Declan Rice", "Gabriel Magalhaes", "Virgil van Dijk",
-    "David Raya", "Joao Pedro", "Ollie Watkins", "Dominik Szoboszlai",
-    "Eberechi Eze", "Florian Wirtz", "Morgan Gibbs-White", "William Saliba",
-]
-
-
-PL_SOURCES = [
-    ("Sleeper BPL 2025", "https://support.sleeper.com/en/articles/9702800-scoring-system", "Default Sleeper soccer scoring on 2025/26 Premier League counting stats. This is The Pitch, and half of The Premier."),
-    ("FPL 2025/26 Points", "https://fantasy.premierleague.com/", "Official last-season total points, the long counting-stat board."),
-    ("FPL Price Board", "https://fantasy.premierleague.com/", "2026/27 starting prices. Haaland £15.5m is the ceiling."),
-    ("FPL ICT Index", "https://fantasy.premierleague.com/", "Influence / Creativity / Threat composite."),
-    ("FPL xGI", "https://fantasy.premierleague.com/", "Expected goal involvements, the underlying."),
-    ("FPL EP Next", "https://fantasy.premierleague.com/", "Official expected points for Gameweek 1."),
-    ("FPL Form", "https://fantasy.premierleague.com/", "Recent form score on the FPL app."),
-    ("Premier League Scout", "https://www.premierleague.com/en/news/4681112", "Scout Selection best squad, August 2026."),
+EXPERT_META = [
+    ("RotoWire FPL 400", "https://www.rotowire.com/soccer/article/fantasy-premier-league-fpl-rankings-top-400-for-2026-27-season-124261", "Season-long official-game top 400, Aug 21."),
+    ("RotoWire Fantrax / Sleeper 400", "https://www.rotowire.com/soccer/article/fantrax-sleeper-premier-league-rankings-top-400-for-the-202627-season-123920", "Draft-scoring Fantrax and Sleeper top 400, Aug 21."),
+    ("RotoWire GW1", "https://www.rotowire.com/soccer/article/fpl-gameweek-1-best-players-captain-picks-2026-27-rankings-127487", "Gameweek 1 projected board."),
+    ("RotoWire Premiums", "https://www.rotowire.com/soccer/article/fantasy-premier-league-fpl-rankings-top-400-for-2026-27-season-124261", "Elite assets the FPL 400 is built around."),
+    ("RotoWire Value", "https://www.rotowire.com/soccer/article/fantasy-premier-league-fpl-rankings-top-400-for-2026-27-season-124261", "Points-per-million enablers."),
+    ("RotoWire DEFCON", "https://www.rotowire.com/soccer/article/fantasy-premier-league-fpl-rankings-top-400-for-2026-27-season-124261", "Defensive-contribution specialists."),
+    ("RotoWire Bounce-backs", "https://www.rotowire.com/soccer/article/fantrax-sleeper-premier-league-rankings-top-400-for-the-202627-season-123920", "Lost-season names the draft room fades."),
+    ("RotoWire Draft values", "https://www.rotowire.com/soccer/article/fantrax-sleeper-premier-league-rankings-top-400-for-the-202627-season-123920", "Early-ADP steals."),
+    ("RotoWire GW1 captains", "https://www.rotowire.com/soccer/article/fpl-gameweek-1-best-players-captain-picks-2026-27-rankings-127487", "Opening-week armband tape."),
+    ("The Athletic PL 50", "https://www.nytimes.com/athletic/7518505/2026/08/19/premier-league-best-players-ranking/", "Phil Hay and Tim Spiers, August 2026."),
+    ("ESPN PL 50", "https://www.espn.com/soccer/story/_/id/49610912/premier-league-top-50-ranking-best-players-2026-27-season-liverpool-arsenal-man-united", "ESPN Premier League Top 50, 2026-27."),
+    ("The Independent Watchlist", "https://www.the-independent.com/sport/football/fpl-fantasy-premier-league-tips-player-rankings-b3032618.html", "44-name 2026/27 FPL watchlist."),
+    ("Premier League Scout Selection", "https://www.premierleague.com/en/news/4681112", "Official Scout best squad for GW1."),
+    ("Premier League Scout Must-Haves", "https://www.premierleague.com/en/news/4681709", "Four names The Scout says you need."),
+    ("Premier League Scout Club Picks", "https://www.premierleague.com/en/news/4688438", "Best FPL pick from each of the 20 clubs."),
+    ("Premier League Scout Key Prices", "https://www.premierleague.com/en/news/4680821", "Fifteen key 2026/27 price tags."),
     ("Fantasy Football Fix Elite", "https://www.fantasyfootballfix.com/blog-index/fpl-gameweek-1-guide/", "Elite-manager GW1 board."),
+    ("Fantasy Football Fix GW1", "https://www.fantasyfootballfix.com/blog-index/fpl-gw1-top-5-players-2026-27/", "Five key GW1 picks."),
+    ("Fantasy Football Fix Captains", "https://www.fantasyfootballfix.com/blog-index/fpl-gameweek-1-captaincy-2026/", "GW1 captain three."),
     ("Yahoo Cheat Sheet", "https://sports.yahoo.com/articles/fantasy-football-cheat-sheet-best-080100274.html", "2026-27 best-player cheat sheet."),
     ("Yahoo GW1 XI", "https://sports.yahoo.com/articles/fpl-2026-27-best-players-141758229.html", "Template XI for Gameweek 1."),
     ("Football Faithful", "https://thefootballfaithful.com/fantasy-premier-league-guide-fpl-best-value-gems-overpriced-traps-and-new-signing-tips/", "Must-haves and value gems, August."),
-    ("Fantasy Football Hub mix", "", "Premium-asset public tape."),
-    ("Fantasy Football Scout lean", "", "Fixture / value lean on the FPL points board."),
-    ("The Athletic FPL", "", "Process / minutes lean."),
-    ("Sky Sports FPL", "", "Big-name public board."),
-    ("BBC Sport FPL", "", "Captaincy / template lean."),
-    ("ESPN FPL", "", "International-reader board."),
-    ("WhoScored PL", "", "Rating-weighted veteran lean."),
-    ("SofaScore mix", "", "In-game rating / minutes mix."),
-    ("Understat xG lean", "", "Shot-quality overlay on the FPL board."),
-    ("FPL Draft", "", "Season-long draft, no £100m cap — scorers climb."),
-    ("Planet FPL", "", "Content-desk template mix."),
-    ("LiveFPL community", "", "Crowd ranker overlay."),
+    ("Football Faithful Premiums", "https://thefootballfaithful.com/the-five-most-expensive-players-in-fpl-2026-27/", "Five priciest 2026/27 assets."),
+    ("Fantasy Football Hub", "", "Premium-asset public tape."),
+    ("BBC Sport FPL", "https://www.bbc.co.uk/sport/football/articles/cn0np755k4wo", "BBC 2026-27 FPL questions board."),
 ]
+
+FPL_METRIC_SOURCES = [
+    ("Sleeper BPL 2025", "https://support.sleeper.com/en/articles/9702800-scoring-system", "Default Sleeper soccer scoring on 2025/26 Premier League counting stats. This is The Pitch, and half of The Premier."),
+    ("FPL 2025/26 Points", "https://fantasy.premierleague.com/", "Official last-season total points."),
+    ("FPL Price Board", "https://fantasy.premierleague.com/", "2026/27 starting prices."),
+    ("FPL ICT Index", "https://fantasy.premierleague.com/", "Influence / Creativity / Threat composite."),
+    ("FPL xGI", "https://fantasy.premierleague.com/", "Expected goal involvements."),
+    ("FPL EP Next", "https://fantasy.premierleague.com/", "Official expected points for Gameweek 1."),
+    ("FPL Form", "https://fantasy.premierleague.com/", "Recent form score on the FPL app."),
+    ("FPL Ownership", "https://fantasy.premierleague.com/", "Official selected-by percent, the public board."),
+]
+
+PL_SOURCES = FPL_METRIC_SOURCES + EXPERT_META
 
 
 def build_sources(players):
     by_key = {p["key"]: p for p in players}
-    pts = metric_map(players, lambda p: p["pts"], cap=400)
-    sleeper = metric_map(players, lambda p: p.get("sleeper_pts") or 0, cap=500)
-    price = metric_map(players, lambda p: p["price"], cap=300)
-    ict = metric_map(players, lambda p: p["ict"], cap=350)
-    xgi = metric_map(players, lambda p: p["xgi"], cap=350)
-    ep = metric_map(players, lambda p: p["ep"], cap=250)
-    form = metric_map(players, lambda p: p["form"], cap=200)
-    base = order_from_map(pts)
-
-    def get(k):
-        return by_key.get(k) or {}
-
-    def fwd(k, i):
-        return i - (18 if get(k).get("pos") == "FWD" else 0) + (8 if get(k).get("pos") == "GKP" else 0)
-
-    def mids(k, i):
-        return i - (16 if get(k).get("pos") == "MID" else 0)
-
-    def defs(k, i):
-        return i - (20 if get(k).get("pos") == "DEF" else 0) + (10 if get(k).get("pos") == "FWD" else 0)
-
-    def keepers(k, i):
-        return i - (22 if get(k).get("pos") == "GKP" else 0)
-
-    def youth(k, i):
-        age = get(k).get("age") or 27
-        return i + max(0, (age - 24)) * 2.5
-
-    def vet(k, i):
-        age = get(k).get("age") or 27
-        return i - max(0, (age - 30)) * 1.8
-
-    def premium(k, i):
-        return i - max(0, (get(k).get("price") or 0) - 8) * 4
-
-    def value(k, i):
-        price = get(k).get("price") or 5
-        pts = get(k).get("pts") or 0
-        return i + price * 3 - pts * 0.04
-
-    def pens(k, i):
-        return i - (14 if get(k).get("pens") == 1 else 0)
-
     sources = {
-        "Sleeper BPL 2025": sleeper,
-        "FPL 2025/26 Points": pts,
-        "FPL Price Board": price,
-        "FPL ICT Index": ict,
-        "FPL xGI": xgi,
-        "FPL EP Next": ep,
-        "FPL Form": form,
-        "Premier League Scout": named_map(players, PL_SCOUT),
-        "Fantasy Football Fix Elite": named_map(players, FIX_ELITE),
-        "Yahoo Cheat Sheet": named_map(players, YAHOO_CHEAT),
-        "Yahoo GW1 XI": named_map(players, YAHOO_GW1),
-        "Football Faithful": named_map(players, FAITHFUL),
-        "Fantasy Football Hub mix": named_map(players, HUB_PREMIUM),
-        "Fantasy Football Scout lean": remap(base, value, cap=180),
-        "The Athletic FPL": remap(base, youth, cap=160),
-        "Sky Sports FPL": remap(base, premium, cap=140),
-        "BBC Sport FPL": remap(base, fwd, cap=150),
-        "ESPN FPL": remap(base, mids, cap=150),
-        "WhoScored PL": remap(base, vet, cap=160),
-        "SofaScore mix": remap(base, defs, cap=140),
-        "Understat xG lean": remap(base, pens, cap=180),
-        "FPL Draft": remap(base, lambda k, i: i - (get(k).get("pts") or 0) * 0.02, cap=250),
-        "Planet FPL": remap(base, keepers, cap=120),
-        "LiveFPL community": {k: r for k, r in form.items() if r <= 200},
+        "Sleeper BPL 2025": metric_map(players, lambda p: p.get("sleeper_pts") or 0, cap=500),
+        "FPL 2025/26 Points": metric_map(players, lambda p: p["pts"], cap=400),
+        "FPL Price Board": metric_map(players, lambda p: p["price"], cap=300),
+        "FPL ICT Index": metric_map(players, lambda p: p["ict"], cap=350),
+        "FPL xGI": metric_map(players, lambda p: p["xgi"], cap=350),
+        "FPL EP Next": metric_map(players, lambda p: p["ep"], cap=250),
+        "FPL Form": metric_map(players, lambda p: p["form"], cap=200),
+        "FPL Ownership": metric_map(players, lambda p: p.get("sel") or 0, cap=250),
     }
+    for name, names in load_expert_lists().items():
+        sources[name] = named_map(players, names)
     return sources, by_key
 
 
@@ -544,24 +545,53 @@ def filter_pos(rows, pos):
     return out
 
 
+PREMIER_SKIP = {
+    "Sleeper BPL 2025",
+    "FPL 2025/26 Points",
+    "FPL ICT Index",
+    "FPL xGI",
+    "FPL Form",
+}
+PREMIER_OFFICIAL = {"FPL Price Board", "FPL EP Next", "FPL Ownership"}
+# This-year official boards still vote: price, EP-next, ownership.
+
+
 def build_premier(rows, cap=PITCH_N):
-    """Third PK list: 50% Sleeper BPL 2025, 50% consensus of every other board."""
+    """2026/27 board: mean of published pro lists.
+
+    Last-season Sleeper and FPL counting stats stay on The Pitch. A name needs
+    two published desks before those ranks can lift him. Unranked sources are skipped.
+    """
+    expert_names = set(load_expert_lists())
     scored = []
     for r in rows:
         ranks = dict(r.get("ranks") or {})
         sleeper = ranks.get("Sleeper BPL 2025") or r.get("sleeper_rank")
-        if not sleeper:
+        expert = [v for k, v in ranks.items() if k in expert_names]
+        official = [v for k, v in ranks.items() if k in PREMIER_OFFICIAL]
+        if len(expert) >= 2:
+            votes = expert
+            tier = 0
+        elif expert:
+            votes = expert + [90]
+            tier = 1
+        elif official:
+            votes = official
+            tier = 2
+        elif sleeper:
+            votes = [float(sleeper) + 80]
+            tier = 3
+        else:
             continue
-        others = [v for k, v in ranks.items() if k != "Sleeper BPL 2025"]
-        consensus = (sum(others) / len(others)) if others else float(sleeper)
-        score = (float(sleeper) + consensus) / 2.0
+        consensus = sum(votes) / len(votes)
         rec = dict(r)
-        rec["sleeper_rank"] = int(sleeper)
+        rec["sleeper_rank"] = int(sleeper) if sleeper else ""
         rec["consensus"] = round(consensus, 2)
-        rec["premier_score"] = round(score, 2)
-        rec["n_consensus"] = len(others)
+        rec["premier_score"] = round(consensus, 2)
+        rec["n_consensus"] = len(expert)
+        rec["tier"] = tier
         scored.append(rec)
-    scored.sort(key=lambda r: (r["premier_score"], r["sleeper_rank"], r["name"]))
+    scored.sort(key=lambda r: (r["tier"], r["premier_score"], r.get("sleeper_rank") or 999, r["name"]))
     premier = []
     for i, r in enumerate(scored[:cap], 1):
         rec = dict(r)

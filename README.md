@@ -49,7 +49,8 @@ Separate sport, separate palette. Hardwood orange and night. Footer / header cro
 ## PitchKeep (`/pl`)
 Separate sport, separate palette. Premier League purple, pitch green, gold. Footer crossover only.
 
-- **The Pitch** — overall Premier League top 400, ranked on **Sleeper BPL 2025** default soccer scoring applied to 2025/26 counting stats (goals, assists, CS, GA, cards, saves, penalties, tackles, CBI). FPL price / ownership / ICT and the short expert tapes still sit on every player file.
+- **The Premier** — 2026/27 board from 25 published pro lists (RotoWire 400s, Athletic 50, ESPN 50, Scout, Fix, Yahoo, Independent, and the rest). Last-season Sleeper does not veto a name the desks actually ranked.
+- **The Pitch** — overall Premier League top 400, ranked on **Sleeper BPL 2025** default soccer scoring applied to 2025/26 counting stats (goals, assists, CS, GA, cards, saves, penalties, tackles, CBI). FPL price / ownership / ICT and the expert tapes still sit on every player file.
 - **Attack / Midfield / Defence / Keepers** — position boards re-ranked on the same Sleeper points
 - **Trade calculators** — Pitch, Attack, Midfield, Defence, Keepers. Same BK Value curve.
 - **Player files** — every Pitch 400 name: headshot, Sleeper points, 2025/26 line, every board, YouTube tape
@@ -93,7 +94,7 @@ Baseball rankings last aggregated August 21, 2026 from RotoGraphs (Aug 14 model)
 
 Unranked names are skipped in the mean — never treated as 999.
 
-Premier League rankings last aggregated August 21, 2026 from official FPL 2025/26 points, 2026/27 prices, Gameweek 1 ownership, ICT, xGI, EP, and form, plus compiled slices of Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, Fantasy Football Hub, Fantasy Football Scout, The Athletic, Sky, BBC, ESPN, WhoScored, SofaScore, Understat, FPL Draft, Planet FPL, and LiveFPL.
+Premier League rankings last aggregated August 23, 2026 from 25 published 2026/27 pro lists (RotoWire FPL 400, RotoWire Fantrax/Sleeper 400, RotoWire GW1, The Athletic PL 50, ESPN PL 50, The Independent, Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, Fantasy Football Hub, BBC Sport) plus official FPL price / EP / ownership. Last-season Sleeper scoring is The Pitch, not a veto on The Premier.
 
 ## Discord bot
 The bot reads `data/discord-catalog.json` (emitted by the rebuild). Setup: [bot/README.md](bot/README.md).

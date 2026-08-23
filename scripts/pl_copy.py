@@ -2,7 +2,7 @@
 
 Hand-written copy for the names at the top of the hybrid board.
 Everyone else gets a five-graf desk take built from Sleeper BPL 2025,
-the 24-board consensus, and the 2025/26 counting line. No empty filler:
+the 25-list consensus, and the 2025/26 counting line. No empty filler:
 every sentence has a number, a board, or an instruction.
 """
 from __future__ import annotations
@@ -16,7 +16,7 @@ COPY = {
     "erling haaland": C(
         [
             "The Premier 1.01 and Sleeper BPL 1.01 — 27 goals, 317.2 Sleeper points.",
-            "First-choice penalties at £15.5m. Thirteen of 24 boards have him inside the top three.",
+            "First-choice penalties at £15.5m. The published boards still have him inside the top three.",
             "25.5 xG, 27 finishes. The finishing did not run hot. It ran like Haaland.",
         ],
         [
@@ -110,7 +110,7 @@ COPY = {
             "xGI board 34th. The attacking-only tables will always tax a six who also takes set pieces.",
         ],
         "Declan Rice is the midfielder The Premier trusts when the flashier names start arguing. Sleeper 10 (221.8), consensus 11.45, hybrid 6. Almost no gap. That is 35 starts, 3,093 minutes, 4 goals, 9 assists, 18 clean sheets, 69 tackles, 127 CBI, 23 bonus, 184 FPL points. Arsenal's engine room, first-choice corners, first-choice direct free-kicks. Sleeper pays every one of those events. The industry noticed.",
-        "The 2025/26 tape is control plus set pieces, not a 15-goal explosion. 3.15 xG and 7.32 xA is a creator who also sits. ESPN and the Scout value lean had him fourth. Sky and FPL points had him sixth. The people who watched the season and the people who counted the season landed in the same band. That is rarer than it should be on a 24-board mix.",
+        "The 2025/26 tape is control plus set pieces, not a 15-goal explosion. 3.15 xG and 7.32 xA is a creator who also sits. ESPN and the Scout still have him inside the top ten. The people who watched the season and the people who counted the season landed in the same band.",
         "Price is the tell. £7.5m, EP-next 23. You can still draft Rice as if he were a Forest or Everton eight. He is not. He is an Arsenal midfielder who played 3,000 minutes, took the dead balls, and generated 221.8 Sleeper points without needing a finishing spike. Gibbs-White outscored him in FPL (188 vs 184) and still sits behind him here because Rice's defensive events and clean sheets are not optional in Sleeper.",
         "The minus is the ceiling. He will not be Semenyo. He will not be Bruno. If your format is goals-only, he slides. If your format is this desk, he is a top-six name you can actually get. Age 27 is the prime, not a tax.",
         "Instruction: hold. If a manager still has him in the 20s because 'he's a six,' that is the trade. Nearby are Gibbs-White and João Pedro. Rice is the one you keep when you need the season not to fall over.",
@@ -387,7 +387,7 @@ def generate_take(r, lists=None, neighbors=None):
 
     # --- plus / minus ---
     if premier and premier <= 20:
-        plus.append(f"The Premier {_ord(premier)} overall — hybrid of Sleeper BPL and the 24-board mix.")
+        plus.append(f"The Premier {_ord(premier)} overall — hybrid of Sleeper BPL and the published pro lists.")
     elif premier and premier <= 50:
         plus.append(f"Premier #{premier}. Inside the first 50 of the 400-deep hybrid.")
     if sleeper_pts:
