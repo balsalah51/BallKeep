@@ -87,7 +87,12 @@ def main():
     assert len(premier) == 400, f"premier {len(premier)}"
     assert premier[0]["name"] == "Erling Haaland"
     assert premier[1]["name"] == "Bruno Fernandes"
-    assert premier[2]["name"] == "Antoine Semenyo"
+    by_name = {r["name"]: r["bk"] for r in premier}
+    assert by_name.get("Cole Palmer", 999) <= 25, by_name.get("Cole Palmer")
+    assert by_name.get("Florian Wirtz", 999) <= 40, by_name.get("Florian Wirtz")
+    assert by_name.get("Alexander Isak", 999) <= 50, by_name.get("Alexander Isak")
+    assert by_name.get("Bukayo Saka", 999) <= 20, by_name.get("Bukayo Saka")
+    assert len(cat.raw.get("pl_sources") or []) >= 25
     assert premier[0].get("age"), "Premier list needs ages"
     assert "Haaland" in (premier[0].get("full_name") or "")
     files = cat.raw.get("pl_players") or []

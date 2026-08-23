@@ -80,12 +80,12 @@ def wordmark():
 PL_SEO = {
     "index.html": (
         "PitchKeep | The Premier Hybrid Rankings and Sleeper BPL 2025",
-        "Purple-and-pitch desk for the Premier League. The Premier is 50% Sleeper BPL 2025 and 50% every other board. The Pitch is Sleeper only. Haaland is #1.",
+        "Purple-and-pitch desk for the Premier League. The Premier is 25 published 2026/27 pro lists. The Pitch is Sleeper only. Haaland is #1.",
         "img/pl-hero.jpg",
     ),
     "the-premier.html": (
         "The Premier — Hybrid Premier League Rankings (Top 400) | PitchKeep",
-        "PitchKeep flagship 400: half Sleeper BPL 2025 points, half 24-board consensus. Haaland is 1.01. Semenyo climbs. Full names and ages on the row.",
+        "PitchKeep flagship 400: 25 published 2026/27 pro lists. Haaland is 1.01. Palmer, Saka, and Isak climb off last-year volume. Full names and ages on the row.",
         "img/pl-logo.jpg",
     ),
     "the-pitch.html": (
@@ -135,7 +135,7 @@ PL_SEO = {
     ),
     "trade-premier.html": (
         "The Premier Trade Calculator | PitchKeep",
-        "Trade calculator on The Premier hybrid ranks — 50% Sleeper BPL 2025, 50% every other board. Fair is within 8%.",
+        "Trade calculator on The Premier ranks — 25 published 2026/27 pro lists. Fair is within 8%.",
         "img/pl-logo.jpg",
     ),
     "trade-pitch.html": (
@@ -957,7 +957,7 @@ def write_pitch_site():
         <h2>{wordmark()}</h2>
       </div>
     </section>
-    {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: half Sleeper, half the other boards. Pitch: Sleeper points. Trade and files here too.", [
+    {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: 25 published 2026/27 lists. Pitch: Sleeper points. Trade and files here too.", [
         ("the-premier.html", "The Premier", "Hybrid 400."),
         ("the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
         ("trade.html", "Trade Calculators", "Premier, Pitch, the lists."),
@@ -980,7 +980,7 @@ def write_pitch_site():
     premier_body = f"""
     <p class="kicker">Hybrid 400 · {UPDATED}</p>
     <h2>The Premier</h2>
-    <p class="note">Top 400. Half Sleeper BPL 2025, half every other board. Unranked skipped. Rank 1 is 12,000.</p>
+    <p class="note">Top 400. Half Sleeper BPL 2025, half 25 published pro lists plus official FPL metrics. Unranked skipped. Rank 1 is 12,000.</p>
     {flt}
     <div class="panel">{rank_table(premier, ["Hybrid", "Sleeper rk", "Cons.", "Sleeper", "FPL", "G", "A", "Boards", "£", "BK Value"], premier_cell, media=media, faces=True, full_names=True, show_age=True)}</div>
     {value_bars(premier, 12, "#e8c547", "Premier value graph")}
@@ -1018,7 +1018,7 @@ def write_pitch_site():
         write("pl/" + path, pl_page(title, path, body))
 
     modes = [
-        trade_payload("The Premier", "trade-premier.html", "Uses The Premier hybrid ranks — 50% Sleeper BPL 2025, 50% every other board.", premier),
+        trade_payload("The Premier", "trade-premier.html", "Uses The Premier ranks — 25 published 2026/27 pro lists.", premier),
         trade_payload("The Pitch", "trade-pitch.html", "Uses The Pitch overall ranks (Sleeper BPL 2025 only).", pitch),
         trade_payload("Attack", "trade-attack.html", "Forwards only.", fwd),
         trade_payload("Midfield", "trade-midfield.html", "Midfielders only.", mid),
@@ -1031,7 +1031,7 @@ def write_pitch_site():
     trade_hub = f"""
     <p class="kicker">Trade Calculators</p>
     <h2>Six calculators</h2>
-    <p class="note">Premier uses the hybrid 400. Pitch uses Sleeper. Rank 1 is 12,000. Fair is within 8%.</p>
+    <p class="note">Premier uses the 2026/27 pro-list 400. Pitch uses Sleeper. Rank 1 is 12,000. Fair is within 8%.</p>
     <div class="grid">{''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in hub_tiles)}</div>
     """
     write("pl/trade.html", pl_page("Trade Calculators", "trade.html", trade_hub))
