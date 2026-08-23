@@ -730,6 +730,19 @@ def wordmark():
     )
 
 
+def masthead(kicker, mark, sub, url="ballkeep.com"):
+    return (
+        f'<section class="hero masthead" aria-label="{esc(kicker)}">'
+        f'<div class="hero-card">'
+        f'<p class="mast-url">{esc(url)}</p>'
+        f'<p class="mast-kicker">{esc(kicker)}</p>'
+        f"<h2>{mark}</h2>"
+        f'<span class="mast-rule" aria-hidden="true"></span>'
+        f'<p class="mast-sub">{esc(sub)}</p>'
+        f"</div></section>"
+    )
+
+
 def sources_panel(items, heading="Desks in This Super Aggregate"):
     lis = []
     for name, url, note in items:
@@ -889,7 +902,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep")}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=28" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=29" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1822,10 +1835,9 @@ def main():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home_body = f"""
-    <section class="hero" style="background-image:url('img/hero.jpg')" role="img" aria-label="Night stadium"></section>
+    {masthead("Football desk", wordmark(), "Dynasty · Redraft")}
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
-      <h2>{wordmark()}</h2>
       <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR.</p>
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">

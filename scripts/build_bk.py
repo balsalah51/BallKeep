@@ -86,6 +86,19 @@ def wordmark():
     return '<span class="word-basket">BASKET</span><span class="word-ball">BALL</span><span class="word-keep">KEEP</span>'
 
 
+def masthead(kicker, mark, sub, url="ballkeep.com/bk"):
+    return (
+        f'<section class="hero masthead" aria-label="{esc(kicker)}">'
+        f'<div class="hero-card">'
+        f'<p class="mast-url">{esc(url)}</p>'
+        f'<p class="mast-kicker">{esc(kicker)}</p>'
+        f"<h2>{mark}</h2>"
+        f'<span class="mast-rule" aria-hidden="true"></span>'
+        f'<p class="mast-sub">{esc(sub)}</p>'
+        f"</div></section>"
+    )
+
+
 def bk_nav_target(href: str, path: str, depth: int) -> str:
     if depth < 2:
         return href
@@ -189,7 +202,7 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bk/"), image=img, brand="BasketKeep")}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=26" />
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=27" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
 <body>
@@ -648,17 +661,7 @@ def write_basket_site():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home = f"""
-    <section class="hero" style="background-image:url('../img/bk-hero.jpg')">
-      <div class="hero-card">
-        <p class="kicker" style="color:#fff">Updated {UPDATED}</p>
-        <h2>{wordmark()}</h2>
-        <p class="hero-lead">Dynasty first. Redraft right behind it. Same Keep / Board split as football, on hardwood.</p>
-        <div class="hero-ctas">
-          <a class="cta" href="the-keep.html">The Keep · Dynasty</a>
-          <a class="cta alt" href="board.html">The Board · Redraft</a>
-        </div>
-      </div>
-    </section>
+    {masthead("Basketball desk", wordmark(), "The Keep · The Board")}
     <section class="desk-block main">
       <p class="kicker">Hardwood</p>
       <h2>The Keep and The Board</h2>

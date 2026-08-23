@@ -44,6 +44,77 @@ nav a:hover, nav a[aria-current="page"] { color: var(--gold); }
   background: var(--purple) center/cover no-repeat; border: 1px solid var(--line);
   display: grid; align-items: end;
 }
+.hero.masthead {
+  position: relative;
+  min-height: 0;
+  display: flex;
+  align-items: stretch;
+  background: var(--purple);
+  background-image:
+    repeating-linear-gradient(
+      -18deg,
+      transparent 0 22px,
+      rgba(0, 255, 133, 0.08) 22px 23px
+    );
+}
+.hero.masthead::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: linear-gradient(180deg, #00ff85 0%, #e8c547 100%);
+}
+.hero.masthead .hero-card {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  box-shadow: none;
+  padding: 34px 36px 28px 40px;
+}
+.hero.masthead .mast-kicker {
+  margin: 0 0 10px;
+  color: var(--gold);
+  letter-spacing: 0.22em;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.hero.masthead h1, .hero.masthead h2 {
+  font-size: clamp(36px, 7vw, 56px);
+  letter-spacing: 0.06em;
+  line-height: 0.95;
+}
+.hero.masthead h2 .word-keep { margin-left: 0.18em; }
+.hero.masthead .mast-rule {
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin: 16px 0 12px;
+  background: var(--gold);
+}
+.hero.masthead .mast-sub {
+  margin: 0;
+  max-width: none;
+  color: #fff;
+  letter-spacing: 0.16em;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.hero.masthead .mast-url {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  margin: 0;
+  color: rgba(232, 197, 71, 0.75);
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
 .hero-card { background: linear-gradient(180deg, transparent, rgba(55,0,60,0.86)); color: #fff; padding: 28px; }
 .hero-card h1, .hero-card h2 { margin: 0; font-size: 40px; letter-spacing: -0.03em; }
 .hero-card h1 .word-pitch, .hero-card h2 .word-pitch { color: var(--pitch); }
@@ -218,9 +289,13 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
   .grid, .grid-3, .plusminus, .player-hero, .trade-hits, .trade-board { grid-template-columns: 1fr; }
   .player-grid, .facts, .rank-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
+  .hero.masthead { min-height: 0; }
   .hero-card { padding: 20px 16px; }
+  .hero.masthead .hero-card { padding: 26px 20px 22px 28px; }
   .hero-card h1, .hero-card h2 { font-size: 26px; }
+  .hero.masthead h1, .hero.masthead h2 { font-size: clamp(28px, 10vw, 40px); }
   .hero-card p { max-width: none; }
+  .hero.masthead .mast-url { position: static; display: block; margin: 0 0 10px; }
   .player-hero img { width: 100%; height: 220px; object-fit: cover; object-position: top center; }
   .desk-only { display: none !important; }
   .table-wrap:has(table.rank-table) { overflow: visible; }
