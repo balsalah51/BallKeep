@@ -216,6 +216,16 @@ def main():
     assert "hero-lead" not in home
     assert '<section class="hero"' in home
     assert "home-leads" in home
+    assert 'href="privacy.html"' in home
+    privacy = html_of("privacy.html")
+    assert "Privacy Policy" in page_title(privacy)
+    assert "Google AdSense" in privacy
+    assert "adssettings.google.com" in privacy
+    assert "policies.google.com/technologies/partner-sites" in privacy
+    assert "BaseKeep" in privacy
+    assert "BasketKeep" in privacy
+    assert "PitchKeep" in privacy
+    assert "Kids pay a tax" not in privacy
     assert "the-ones.html" not in home
     assert "The Ones" not in home
     assert 'href="discord.html"' not in home
@@ -254,6 +264,7 @@ def main():
     assert "The Diamond" in bb_home
     assert "Redraft ranking" in bb_home
     assert "the-diamond.html" in bb_home
+    assert 'href="../privacy.html"' in bb_home
     diamond = html_of("bb/the-diamond.html")
     assert "The Diamond" in page_title(diamond) or "<h2>The Diamond</h2>" in diamond
     assert "Redraft ranking" in diamond
@@ -267,6 +278,8 @@ def main():
     assert "FootKeep" not in bk_home
     assert "the-keep.html" in bk_home
     assert "board.html" in bk_home
+    assert 'href="../privacy.html"' in bk_home
+    assert 'href="../privacy.html"' in html_of("pl/index.html")
     bk_keep = html_of("bk/the-keep.html")
     assert "Victor Wembanyama" in bk_keep
     assert "bar-chart" in bk_keep

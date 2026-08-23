@@ -34,6 +34,7 @@ from seo import (  # noqa: E402
     canon,
     clip,
     head_tags,
+    legal_links,
     rank_spread_graph,
     sports_footer,
     sports_top,
@@ -837,6 +838,11 @@ FB_SEO = {
         "September baseball slate on the football desk. Filter by club. Regular season wraps Sunday, Sept. 27, 2026.",
         "img/logo.jpg",
     ),
+    "privacy.html": (
+        "Privacy Policy | Ball Keep",
+        "How Ball Keep, BaseKeep, BasketKeep, and PitchKeep collect and use information, including cookies, analytics, and ads.",
+        "img/logo.jpg",
+    ),
     "discord.html": (
         "Ball Keep Discord Bot — Ranks, Trades, Tape",
         "The circular mark plus a Discord bot that searches The Keep, runs the trade calculator, drops tape, and can publish the site into a server.",
@@ -908,6 +914,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
     {body}
     <footer>
       © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL, MLB, NBA, or Premier League.
+      {legal_links(depth)}
       {sports_footer("fb", depth)}
     </footer>
   </div>
@@ -2162,10 +2169,59 @@ def main():
     """
     write("the-x.html", page("The X", "the-x.html", x_body))
 
+    privacy = """
+    <section class="panel policy">
+      <p class="kicker">Legal</p>
+      <h2>Privacy Policy</h2>
+      <p class="note">Last updated: August 23, 2026</p>
+      <p>Ball Keep ("we," "us," or "this site") respects your privacy. This Privacy Policy explains what information we collect when you visit ballkeep.com (and its BaseKeep, BasketKeep, and PitchKeep sections), how we use it, and the choices you have.</p>
+
+      <h3>Information We Collect</h3>
+      <p><strong>Automatically collected information.</strong> Like most websites, we automatically collect certain information when you visit, including your IP address, browser type, device type, pages viewed, and time spent on the site. This is collected through cookies, log files, and similar technologies.</p>
+      <p><strong>Information you provide.</strong> We do not require account creation or collect personal information such as your name, email address, or payment details through this site.</p>
+
+      <h3>Cookies</h3>
+      <p>We use cookies and similar tracking technologies to:</p>
+      <ul>
+        <li>Understand how visitors use the site (analytics)</li>
+        <li>Remember basic preferences</li>
+        <li>Support advertising, if and when ads are enabled on the site</li>
+      </ul>
+      <p>You can disable cookies through your browser settings. Doing so may affect some site functionality.</p>
+
+      <h3>Advertising</h3>
+      <p>This site may display advertisements served by third-party providers, including Google AdSense. Google and its partners may use cookies to serve ads based on your prior visits to this site or other websites. You can learn more about how Google uses data and opt out of personalized advertising by visiting <a href="https://adssettings.google.com/" rel="noopener">Google's Ads Settings</a> and reviewing <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use our services</a>.</p>
+
+      <h3>Affiliate Links</h3>
+      <p>This site may contain affiliate links, including links to sportsbooks, merchandise retailers, or fantasy sports platforms. If you click one of these links and make a purchase or sign up, we may earn a commission at no additional cost to you.</p>
+
+      <h3>News and Rankings Content</h3>
+      <p>Our rankings, trade values, and news summaries aggregate publicly available information from multiple sources, which are credited at the bottom of each board or article. We do not collect personal information through this aggregation process.</p>
+
+      <h3>Analytics</h3>
+      <p>We may use third-party analytics services (such as Google Analytics) to understand site traffic and usage patterns. These services may collect information such as your IP address and browsing behavior on this site. This data is used in aggregate and is not used to personally identify you.</p>
+
+      <h3>Children's Privacy</h3>
+      <p>This site is not directed at children under 13, and we do not knowingly collect personal information from children under 13.</p>
+
+      <h3>Third-Party Links</h3>
+      <p>Our site links to third-party content, including news sources, statistics providers, and fantasy platforms. We are not responsible for the privacy practices of these external sites.</p>
+
+      <h3>Changes to This Policy</h3>
+      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date.</p>
+
+      <h3>Contact Us</h3>
+      <p>If you have questions about this Privacy Policy, please reach out through the contact information listed on this site.</p>
+      <p>Ball Keep is not affiliated with the NFL, MLB, NBA, or Premier League.</p>
+    </section>
+    """
+    write("privacy.html", page("Privacy Policy", "privacy.html", privacy))
+
     player_urls = render_player_pages(profiles)
     news_urls = render_news_pages()
     sitemap = [
         "https://ballkeep.com/",
+        "https://ballkeep.com/privacy.html",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/news.html",
         "https://ballkeep.com/the-x.html",

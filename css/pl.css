@@ -96,6 +96,9 @@ tr:hover td { background: rgba(0, 200, 83, 0.06); }
 .sources-box { margin-top: 22px; }
 .sources-box ol { margin: 0; padding-left: 22px; }
 footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+.legal-links { margin: 10px 0 0; }
+.legal-links a { color: var(--muted); font-weight: 800; text-decoration: none; }
+.legal-links a:hover { color: var(--gold); }
 a.sport-switch,
 .sport-switch {
   display: inline-block; margin: 18px 6px 0; padding: 12px 22px; border-radius: 999px;

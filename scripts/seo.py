@@ -35,6 +35,11 @@ def sports_footer(here: str, depth: int = 0) -> str:
     return f"<div>{sport_pills(here, depth)}</div>"
 
 
+def legal_links(depth: int = 0) -> str:
+    prefix = "../" * depth
+    return f'<p class="legal-links"><a href="{prefix}privacy.html">Privacy Policy</a></p>'
+
+
 def esc(s):
     return html.escape(str(s), quote=True)
 

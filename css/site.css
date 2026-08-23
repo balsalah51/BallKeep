@@ -189,6 +189,13 @@ a.news-item:hover h3 { color: var(--red); }
 .desk-block.extra .tile { background: #fff; }
 .desk-block.extra .tile:hover { border-color: #9aa1ad; }
 .desk-block.extra .news-list { margin-top: 16px; }
+footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+.legal-links { margin: 10px 0 0; }
+.legal-links a { color: var(--muted); font-weight: 800; text-decoration: none; }
+.legal-links a:hover { color: var(--red); }
+.policy h3 { margin: 22px 0 8px; font-size: 20px; }
+.policy p { line-height: 1.65; margin: 0 0 12px; }
+.policy ul { margin: 0 0 12px; padding-left: 22px; line-height: 1.55; }
 .sports-top {
   display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
   margin: 14px 0 2px;

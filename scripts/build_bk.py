@@ -31,7 +31,7 @@ from news_algo import (  # noqa: E402
     rematch_stories,
 )
 from x_tape import cards_html as x_cards  # noqa: E402
-from seo import canon, clip, head_tags, sports_footer, sports_top, value_bars  # noqa: E402
+from seo import canon, clip, head_tags, legal_links, sports_footer, sports_top, value_bars  # noqa: E402
 
 
 def esc(s):
@@ -208,6 +208,7 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
     {body}
     <footer>
       © {date.today().year} BasketKeep · ballkeep.com/bk · Rankings aggregated {UPDATED}. Not affiliated with the NBA.
+      {legal_links(depth)}
       {sports_footer("bk", depth)}
     </footer>
   </div>
