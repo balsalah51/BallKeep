@@ -1,7 +1,7 @@
 {
   "sport": "soccer",
-  "updated": "2026-08-23T19:12:20Z",
-  "fresh": 152,
+  "updated": "2026-08-23T19:52:31Z",
+  "fresh": 74,
   "stories": [
     {
       "id": "man-united-identify-premier-league-transfer-target-bruno-1349e5e8",
@@ -2510,12 +2510,19 @@
       "slug": "bukayo-saka-danger-missing-man-city-title-showdown-6e7ebb0e",
       "sport": "soccer",
       "headline": "Arsenal injury update: Bukayo Saka, Declan Rice, Gabriel and William Saliba latest news and return dates",
-      "blurb": "Declan Rice and Bukayo Saka injury update ahead of Arsenal vs Sporting Metro.co.uk",
-      "summary": "Declan Rice and Bukayo Saka injury update ahead of Arsenal vs Sporting Metro.co.uk Injury update and Arsenal team news USA Today Bukayo Saka, Riccardo Calafiori ‘probably’ returning to Arsenal squad for Newcastle game The New York Times Aggregated from Metro.co.uk, USA Today, The New York Times, DAZN, Goal.com and 10 more.",
+      "blurb": "Arsenal injury update: Bukayo Saka, Declan Rice, Gabriel and William Saliba latest news and return dates London Evening Standard",
+      "summary": "Arsenal injury update: Bukayo Saka, Declan Rice, Gabriel and William Saliba latest news and return dates London Evening Standard Injury update and Arsenal team news USA Today Bukayo Saka, Riccardo Calafiori ‘probably’ returning to Arsenal squad for Newcastle game The New York Times Aggregated from London Evening Standard, USA Today, The New York Times, DAZN, Goal.com and 10 more.",
       "category": "injury",
       "published": "2026-01-09T08:00:00Z",
       "updated": "2026-08-23T08:00:00Z",
       "players": [
+        {
+          "key": "saliba",
+          "name": "William Saliba",
+          "slug": "william-saliba",
+          "pos": "DEF",
+          "team": "ARS"
+        },
         {
           "key": "saka",
           "name": "Bukayo Saka",
@@ -2542,13 +2549,6 @@
           "name": "Mikel Merino Zazón",
           "slug": "mikel-merino-zaz-n",
           "pos": "MID",
-          "team": "ARS"
-        },
-        {
-          "key": "saliba",
-          "name": "William Saliba",
-          "slug": "william-saliba",
-          "pos": "DEF",
           "team": "ARS"
         },
         {
@@ -4752,6 +4752,66 @@
       ]
     },
     {
+      "id": "gu-hi-gvardiol-late-show-earns-manchester-city-76dc9793",
+      "slug": "gu-hi-gvardiol-late-show-earns-manchester-city-76dc9793",
+      "sport": "soccer",
+      "headline": "Guéhi and Gvardiol late show earns Manchester City dramatic win against Bournemouth",
+      "blurb": "Gvardiol’s stoppage-time strike gives City points ‘I’m looking for solutions.",
+      "summary": "Marcus Tavernier, Marc Guéhi and Joško Gvardiol: Gvardiol’s stoppage-time strike gives City points ‘I’m looking for solutions. When you win games it helps’ Enzo Maresca said Manchester City remain a “work in progress” after Sunday’s last-gasp win over Bournemouth at the Etihad Stadium. Marc Guéhi’s 85th-minute equaliser and Josko Gvardiol’s 91st-minute winner gave City’s new manager victory in his first game, after Marcus Tavernier’s first-half strike for the visitors. Aggregated from Guardian Football, BBC Football.",
+      "category": "coach",
+      "published": "2026-08-23T15:14:19Z",
+      "updated": "2026-08-23T19:03:31Z",
+      "players": [
+        {
+          "key": "tavernier",
+          "name": "Marcus Tavernier",
+          "slug": "marcus-tavernier",
+          "pos": "MID",
+          "team": "BOU"
+        },
+        {
+          "key": "guehi",
+          "name": "Marc Guéhi",
+          "slug": "marc-gu-hi",
+          "pos": "DEF",
+          "team": "MCI"
+        },
+        {
+          "key": "gvardiol",
+          "name": "Joško Gvardiol",
+          "slug": "jo-ko-gvardiol",
+          "pos": "DEF",
+          "team": "MCI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Guéhi and Gvardiol late show earns Manchester City dramatic win against Bournemouth",
+          "url": "https://www.theguardian.com/football/2026/aug/23/manchester-city-bournemouth-premier-league-match-report",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "“WELCOME BACK ENZO” read the tifo beforehand and by the breathless close this was a joyous return for Manchester City’s new manager, Enzo Maresca, as a damaging loss became a memorable win due to Marc Guéhi’s 84th-minute equaliser and Josko Gvardiol’s added-time winner. Until the",
+          "published": "Sun, 23 Aug 2026 15:14:19 GMT"
+        },
+        {
+          "title": "Maresca's Manchester City reign begins with dramatic comeback against Bournemouth",
+          "url": "https://www.bbc.co.uk/sport/football/videos/cpd7dp7zeqzo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "video",
+          "snippet": "Two managers in charge of new clubs face off with Manchester City under Enzo Maresca and Bournemouth under Marco Rose, as the hosts stage a late comeback to kick the new Premier League season off in dramatic fashion.",
+          "published": "Sun, 23 Aug 2026 19:03:31 GMT"
+        },
+        {
+          "title": "Maresca concedes Manchester City ‘a work in progress’ after hair-raising escape",
+          "url": "https://www.theguardian.com/football/2026/aug/23/enzo-maresca-concedes-manchester-city-work-in-progress-bournemouth",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Gvardiol’s stoppage-time strike gives City points ‘I’m looking for solutions. When you win games it helps’ Enzo Maresca said Manchester City remain a “work in progress” after Sunday’s last-gasp win over Bournemouth at the Etihad Stadium. Marc Guéhi’s 85th-minute equaliser and Jos",
+          "published": "Sun, 23 Aug 2026 16:32:04 GMT"
+        }
+      ]
+    },
+    {
       "id": "premier-league-transfer-spending-another-record-set-fall-2e5d2f09",
       "slug": "premier-league-transfer-spending-another-record-set-fall-2e5d2f09",
       "sport": "soccer",
@@ -4890,24 +4950,24 @@
       "slug": "spurs-agree-75m-deal-savinho-who-wanted-leave-7f25468c",
       "sport": "soccer",
       "headline": "Spurs agree £75m deal for Savinho who 'wanted to leave' Man City",
-      "blurb": "Tottenham set Marmoush transfer deadline after Brentford loss TribalFootball",
-      "summary": "Omar Marmoush and Sávio Oliveira: Tottenham set Marmoush transfer deadline after Brentford loss TribalFootball Tottenham have agreed a deal to sign Savinho for an initial £75m after the winger asked to leave Manchester City, according to boss Enzo Maresca. Tottenham have agreed a deal worth up to £85 million to sign Savinho from Manchester City, sources have told ESPN. Aggregated from TribalFootball, BBC Football, ESPN Soccer, BBC, YouTube.",
+      "blurb": "BREAKING: Spurs agree £85m deal to sign Savinho from Man City YouTube",
+      "summary": "Sávio Oliveira and Omar Marmoush: BREAKING: Spurs agree £85m deal to sign Savinho from Man City YouTube Tottenham have agreed a deal to sign Savinho for an initial £75m after the winger asked to leave Manchester City, according to boss Enzo Maresca. Tottenham have agreed a deal worth up to £85 million to sign Savinho from Manchester City, sources have told ESPN. Aggregated from YouTube, BBC Football, ESPN Soccer, BBC, TribalFootball.",
       "category": "trade",
       "published": "2026-08-21T06:01:09Z",
       "updated": "2026-08-23T09:43:25Z",
       "players": [
         {
-          "key": "marmoush",
-          "name": "Omar Marmoush",
-          "slug": "omar-marmoush",
-          "pos": "FWD",
-          "team": "MCI"
-        },
-        {
           "key": "savinho",
           "name": "Sávio Oliveira",
           "slug": "s-vio-oliveira",
           "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "marmoush",
+          "name": "Omar Marmoush",
+          "slug": "omar-marmoush",
+          "pos": "FWD",
           "team": "MCI"
         }
       ],
@@ -5462,47 +5522,64 @@
       ]
     },
     {
-      "id": "gu-hi-gvardiol-late-show-earns-manchester-city-76dc9793",
-      "slug": "gu-hi-gvardiol-late-show-earns-manchester-city-76dc9793",
+      "id": "manchester-city-agree-deal-worth-up-100m-lille-a1b5040d",
+      "slug": "manchester-city-agree-deal-worth-up-100m-lille-a1b5040d",
       "sport": "soccer",
-      "headline": "Guéhi and Gvardiol late show earns Manchester City dramatic win against Bournemouth",
-      "blurb": "Two managers in charge of new clubs face off with Manchester City under Enzo Maresca and Bournemouth under Marco Rose, as the hosts stage a late comeback to kick the new…",
-      "summary": "Two managers in charge of new clubs face off with Manchester City under Enzo Maresca and Bournemouth under Marco Rose, as the hosts stage a late comeback to kick the new Premier League season off in dramatic fashion. “WELCOME BACK ENZO” read the tifo beforehand and by the breathless close this was a joyous return for Manchester City’s new manager, Enzo Maresca, as a damaging loss became a memorable win due to Marc Guéhi’s 84th-minute equaliser and Josko Gvardiol’s added-time winner. Aggregated from BBC Football, Guardian Football.",
-      "category": "coach",
-      "published": "2026-08-23T15:14:19Z",
-      "updated": "2026-08-23T19:03:31Z",
+      "headline": "Ayyoub Bouaddi transfer: Manchester City reach agreement with Lille to sign 18-year-old Morocco midfielder",
+      "blurb": "Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi The Guardian",
+      "summary": "Elliot Anderson: Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi The Guardian Manchester City agree a deal in principle for 18-year-old Lille midfielder Ayyoub Bouaddi worth 100m euros (£86m). Signing will take City’s window spending to nearly £200m Moroccan stood down from Lille’s game against Angers Manchester City have agreed a deal with Lille worth €95m (£81.4m) plus €5m in potential add-ons for Ayyoub Bouaddi, with the Morocco midfielder’s arrival to take the club Aggregated from The Guardian, BBC Football, Guardian Football, Sky Sports Football, Sky Sports.",
+      "category": "trade",
+      "published": "2026-08-23T12:32:43Z",
+      "updated": "2026-08-23T13:48:00Z",
       "players": [
         {
-          "key": "guehi",
-          "name": "Marc Guéhi",
-          "slug": "marc-gu-hi",
-          "pos": "DEF",
-          "team": "MCI"
-        },
-        {
-          "key": "gvardiol",
-          "name": "Joško Gvardiol",
-          "slug": "jo-ko-gvardiol",
-          "pos": "DEF",
+          "key": "anderson",
+          "name": "Elliot Anderson",
+          "slug": "elliot-anderson",
+          "pos": "MID",
           "team": "MCI"
         }
       ],
       "sources": [
         {
-          "title": "Guéhi and Gvardiol late show earns Manchester City dramatic win against Bournemouth",
-          "url": "https://www.theguardian.com/football/2026/aug/23/manchester-city-bournemouth-premier-league-match-report",
-          "publisher": "Guardian Football",
+          "title": "Man City agree £86m deal for teen midfielder Bouaddi",
+          "url": "https://www.bbc.co.uk/sport/football/articles/clyjy0e0pkzo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
           "kind": "article",
-          "snippet": "“WELCOME BACK ENZO” read the tifo beforehand and by the breathless close this was a joyous return for Manchester City’s new manager, Enzo Maresca, as a damaging loss became a memorable win due to Marc Guéhi’s 84th-minute equaliser and Josko Gvardiol’s added-time winner. Until the",
-          "published": "Sun, 23 Aug 2026 15:14:19 GMT"
+          "snippet": "Manchester City agree a deal in principle for 18-year-old Lille midfielder Ayyoub Bouaddi worth 100m euros (£86m).",
+          "published": "Sun, 23 Aug 2026 12:41:05 GMT"
         },
         {
-          "title": "Maresca's Manchester City reign begins with dramatic comeback against Bournemouth",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cpd7dp7zeqzo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "video",
-          "snippet": "Two managers in charge of new clubs face off with Manchester City under Enzo Maresca and Bournemouth under Marco Rose, as the hosts stage a late comeback to kick the new Premier League season off in dramatic fashion.",
-          "published": "Sun, 23 Aug 2026 19:03:31 GMT"
+          "title": "Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi",
+          "url": "https://www.theguardian.com/football/2026/aug/23/manchester-city-agree-deal-lille-ayyoub-bouaddi-transfer",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Signing will take City’s window spending to nearly £200m Moroccan stood down from Lille’s game against Angers Manchester City have agreed a deal with Lille worth €95m (£81.4m) plus €5m in potential add-ons for Ayyoub Bouaddi, with the Morocco midfielder’s arrival to take the club",
+          "published": "Sun, 23 Aug 2026 12:32:43 GMT"
+        },
+        {
+          "title": "Man City agree record-breaking deal with Lille to sign Bouaddi",
+          "url": "https://www.skysports.com/football/news/12040/13576242/ayyoub-bouaddi-transfer-manchester-city-reach-agreement-with-lille-to-sign-18-year-old-morocco-midfielder",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "Manchester City have agreed a deal with Lille for Morocco international midfielder Ayyoub Bouaddi worth up to £86m (€100m).",
+          "published": "Sun, 23 Aug 2026 13:02:00 BST"
+        },
+        {
+          "title": "Ayyoub Bouaddi transfer: Manchester City reach agreement with Lille to sign 18-year-old Morocco midfielder",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQenZ5WS1EQzNYX1o5R0xzUzg5cUVTZzhQZzdua0pIRzNHWjlFemdGWXpXZGJJeVFzZFdFVnUtV3hBWVdWdkhoUTBXWkFrbk1uOEVaNXc0X1F5SktDT0N3R1YxYm00QkpCWjlZQW9NaFREMFJuNXc1dlVpMDJaT2VlekVJZngya3hWY3Q3TkJHd19LRTFaZk1EQlRBOWpQQUxyTVpSTmN0NmdsTzB6cVRUWUVkYmpmd3QxYmY3amtJRV9wYkk0bVJnQ0FFWlRFNjhqNkpSMW1RR0QySEY3U0RwZmEzN3VPN1ppWHQ1Y1VFYlB1QQ?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Ayyoub Bouaddi transfer: Manchester City reach agreement with Lille to sign 18-year-old Morocco midfielder Sky Sports",
+          "published": "Sun, 23 Aug 2026 13:15:40 GMT"
+        },
+        {
+          "title": "Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRzFIQjFYZWJhM0hQSHNPUVZyQUlqUUNvLUQzN0J2dHRYbjdkMGRVZWp0TkRtVC1TWVpGZ29zUzhaMWlWNXlXRHNXeFpIODhEV2R2U2t2WlY0WHcyakI4bVdxMk5rWllhdzBWWGRnOC1mMUhERjFLdFNfNktfMVpmblRWcV9xR1RBdWZMNkRuTmRtUi1iXzBSYWo2eTcwcHZ4Z1VWdVZxTl8?oc=5",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi The Guardian",
+          "published": "Sun, 23 Aug 2026 13:48:00 GMT"
         }
       ]
     },
@@ -5641,68 +5718,6 @@
           "kind": "article",
           "snippet": "Jose Mourinho personally blocked Real Madrid midfielder Premier League transfer – report Yahoo Sports",
           "published": "Mon, 17 Aug 2026 09:35:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "manchester-city-agree-deal-worth-up-100m-lille-a1b5040d",
-      "slug": "manchester-city-agree-deal-worth-up-100m-lille-a1b5040d",
-      "sport": "soccer",
-      "headline": "Ayyoub Bouaddi transfer: Manchester City reach agreement with Lille to sign 18-year-old Morocco midfielder",
-      "blurb": "Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi The Guardian",
-      "summary": "Elliot Anderson: Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi The Guardian Manchester City agree a deal in principle for 18-year-old Lille midfielder Ayyoub Bouaddi worth 100m euros (£86m). Signing will take City’s window spending to nearly £200m Moroccan stood down from Lille’s game against Angers Manchester City have agreed a deal with Lille worth €95m (£81.4m) plus €5m in potential add-ons for Ayyoub Bouaddi, with the Morocco midfielder’s arrival to take the club Aggregated from The Guardian, BBC Football, Guardian Football, Sky Sports Football, Sky Sports.",
-      "category": "trade",
-      "published": "2026-08-23T12:32:43Z",
-      "updated": "2026-08-23T13:48:00Z",
-      "players": [
-        {
-          "key": "anderson",
-          "name": "Elliot Anderson",
-          "slug": "elliot-anderson",
-          "pos": "MID",
-          "team": "MCI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Man City agree £86m deal for teen midfielder Bouaddi",
-          "url": "https://www.bbc.co.uk/sport/football/articles/clyjy0e0pkzo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Manchester City agree a deal in principle for 18-year-old Lille midfielder Ayyoub Bouaddi worth 100m euros (£86m).",
-          "published": "Sun, 23 Aug 2026 12:41:05 GMT"
-        },
-        {
-          "title": "Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi",
-          "url": "https://www.theguardian.com/football/2026/aug/23/manchester-city-agree-deal-lille-ayyoub-bouaddi-transfer",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Signing will take City’s window spending to nearly £200m Moroccan stood down from Lille’s game against Angers Manchester City have agreed a deal with Lille worth €95m (£81.4m) plus €5m in potential add-ons for Ayyoub Bouaddi, with the Morocco midfielder’s arrival to take the club",
-          "published": "Sun, 23 Aug 2026 12:32:43 GMT"
-        },
-        {
-          "title": "Man City agree record-breaking deal with Lille to sign Bouaddi",
-          "url": "https://www.skysports.com/football/news/12040/13576242/ayyoub-bouaddi-transfer-manchester-city-reach-agreement-with-lille-to-sign-18-year-old-morocco-midfielder",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "Manchester City have agreed a deal with Lille for Morocco international midfielder Ayyoub Bouaddi worth up to £86m (€100m).",
-          "published": "Sun, 23 Aug 2026 13:02:00 BST"
-        },
-        {
-          "title": "Ayyoub Bouaddi transfer: Manchester City reach agreement with Lille to sign 18-year-old Morocco midfielder",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQenZ5WS1EQzNYX1o5R0xzUzg5cUVTZzhQZzdua0pIRzNHWjlFemdGWXpXZGJJeVFzZFdFVnUtV3hBWVdWdkhoUTBXWkFrbk1uOEVaNXc0X1F5SktDT0N3R1YxYm00QkpCWjlZQW9NaFREMFJuNXc1dlVpMDJaT2VlekVJZngya3hWY3Q3TkJHd19LRTFaZk1EQlRBOWpQQUxyTVpSTmN0NmdsTzB6cVRUWUVkYmpmd3QxYmY3amtJRV9wYkk0bVJnQ0FFWlRFNjhqNkpSMW1RR0QySEY3U0RwZmEzN3VPN1ppWHQ1Y1VFYlB1QQ?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Ayyoub Bouaddi transfer: Manchester City reach agreement with Lille to sign 18-year-old Morocco midfielder Sky Sports",
-          "published": "Sun, 23 Aug 2026 13:15:40 GMT"
-        },
-        {
-          "title": "Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRzFIQjFYZWJhM0hQSHNPUVZyQUlqUUNvLUQzN0J2dHRYbjdkMGRVZWp0TkRtVC1TWVpGZ29zUzhaMWlWNXlXRHNXeFpIODhEV2R2U2t2WlY0WHcyakI4bVdxMk5rWllhdzBWWGRnOC1mMUhERjFLdFNfNktfMVpmblRWcV9xR1RBdWZMNkRuTmRtUi1iXzBSYWo2eTcwcHZ4Z1VWdVZxTl8?oc=5",
-          "publisher": "The Guardian",
-          "kind": "article",
-          "snippet": "Manchester City agree deal worth up to €100m for Lille’s Ayyoub Bouaddi The Guardian",
-          "published": "Sun, 23 Aug 2026 13:48:00 GMT"
         }
       ]
     },
@@ -6020,12 +6035,19 @@
       "slug": "hull-city-s-injury-list-full-ahead-manchester-3685d5a0",
       "sport": "soccer",
       "headline": "Injury update: Mikkel Damsgaard to be assessed ahead of Brentford’s Premier League game against Leeds United",
-      "blurb": "Is Rodri available for Manchester City against Crystal Palace?",
-      "summary": "Mikkel Damsgaard, Kristoffer Ajer, Dominic Calvert-Lewin, William Saliba, Kai Havertz and Jaidon Anthony: Is Rodri available for Manchester City against Crystal Palace? Premier League injury update FourFourTwo How Arsenal and Coventry's players rated following their Premier League match. Aggregated from FourFourTwo, Arsenal v Coventry player ratings, Guardian Football, The Guardian, ESPN Soccer and 8 more.",
+      "blurb": "Hull City's injury list in full ahead of Manchester United Premier League opener Hull Live",
+      "summary": "Bukayo Saka, Mikkel Damsgaard, Kristoffer Ajer, Dominic Calvert-Lewin, William Saliba, Kai Havertz and Jaidon Anthony: Hull City's injury list in full ahead of Manchester United Premier League opener Hull Live Man City vs Arsenal: Bukayo Saka injury update ahead of crucial Premier League clash Read Arsenal How Arsenal and Coventry's players rated following their Premier League match. Aggregated from Hull Live, Read Arsenal, Arsenal v Coventry player ratings, Guardian Football, The Guardian and 10 more.",
       "category": "injury",
       "published": "2025-07-09T07:00:00Z",
       "updated": "2026-08-21T23:11:04Z",
       "players": [
+        {
+          "key": "saka",
+          "name": "Bukayo Saka",
+          "slug": "bukayo-saka",
+          "pos": "MID",
+          "team": "ARS"
+        },
         {
           "key": "damsgaard",
           "name": "Mikkel Damsgaard",
@@ -6261,6 +6283,22 @@
           "kind": "article",
           "snippet": "Is Rodri available for Manchester City against Crystal Palace? Premier League injury update FourFourTwo",
           "published": "Tue, 12 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Hull City's injury list in full ahead of Manchester United Premier League opener",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZUVjM0V3a0JoOS1nQWZ5ZVVLRHNkYzRTcU5TS0s1anhOdHNhNy1BLTNJVVJFckJud2JuNUd4SDhZQXdsZ2U3XzA1UTNnQ0JEZjRLUEdGbWJwQTZRbnI1NEVpMTVtSnFZNHBMQVJKQlhYTmR6RTlhWFktc0g4aEdwbDV1cGVKVkg0Y1pFdHlhcGVwcFVoMWFYTWJCYTNpdw?oc=5",
+          "publisher": "Hull Live",
+          "kind": "article",
+          "snippet": "Hull City's injury list in full ahead of Manchester United Premier League opener Hull Live",
+          "published": "Wed, 19 Aug 2026 14:05:00 GMT"
+        },
+        {
+          "title": "Man City vs Arsenal: Bukayo Saka injury update ahead of crucial Premier League clash",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObGhUaDB4dFMtQnhXQnhlNEFQZlpLa0tXekpqaFY3a0RZTTQ4Ynp5QzZkYURjSGlCVGFIMXZ3SGRTdlh3Rm00enlUQnFaNGUxc3RBMTJMNHVSQjRRQ3pkOENNUFpPNDFJSHFDc09JN1JUM25QSXNIWHhleWlZQnIycVhBNU5ISDVv?oc=5",
+          "publisher": "Read Arsenal",
+          "kind": "article",
+          "snippet": "Man City vs Arsenal: Bukayo Saka injury update ahead of crucial Premier League clash Read Arsenal",
+          "published": "Thu, 16 Apr 2026 07:00:00 GMT"
         }
       ]
     },
@@ -7075,6 +7113,14 @@
           "kind": "article",
           "snippet": "",
           "published": "Sun, 23 Aug 2026 17:43:20 GMT"
+        },
+        {
+          "title": "Continue reading...",
+          "url": "https://www.theguardian.com/football/2026/aug/23/enzo-maresca-concedes-manchester-city-work-in-progress-bournemouth",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Sun, 23 Aug 2026 16:32:04 GMT"
         }
       ]
     },
@@ -7330,6 +7376,44 @@
       ]
     },
     {
+      "id": "liverpool-iraola-isak-expected-hostile-return-newcastle-51955bed",
+      "slug": "liverpool-iraola-isak-expected-hostile-return-newcastle-51955bed",
+      "sport": "soccer",
+      "headline": "Liverpool latest: Iraola says Isak expected hostile return at Newcastle",
+      "blurb": "Dominik Szoboszlai's injury-time penalty rescues a point at the start of the Andoni Iraola era - but Liverpool need to improv after below-par performance.",
+      "summary": "Dominik Szoboszlai's injury-time penalty rescues a point at the start of the Andoni Iraola era - but Liverpool need to improv after below-par performance. Liverpool latest: Iraola says Isak expected hostile return at Newcastle Aggregated from BBC Football, Sky Sports Football.",
+      "category": "injury",
+      "published": "2026-08-23T19:27:12Z",
+      "updated": "2026-08-23T19:27:12Z",
+      "players": [
+        {
+          "key": "szoboszlai",
+          "name": "Dominik Szoboszlai",
+          "slug": "dominik-szoboszlai",
+          "pos": "MID",
+          "team": "LIV"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Relief for Iraola but Liverpool have work to do",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cdrvr73egnlo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "Dominik Szoboszlai's injury-time penalty rescues a point at the start of the Andoni Iraola era - but Liverpool need to improv after below-par performance.",
+          "published": "Sun, 23 Aug 2026 19:27:12 GMT"
+        },
+        {
+          "title": "Liverpool latest: Iraola says Isak expected hostile return at Newcastle",
+          "url": "https://www.skysports.com/football/live-blog/12040/13025501/liverpool-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "",
+          "published": "Sun, 23 Aug 2026 20:12:00 BST"
+        }
+      ]
+    },
+    {
       "id": "second-set-twins-good-distraction-injury-3813c1ec",
       "slug": "second-set-twins-good-distraction-injury-3813c1ec",
       "sport": "soccer",
@@ -7466,6 +7550,43 @@
           "kind": "article",
           "snippet": "Al-Hilal open talks to sign Arsenal winger Martinelli BBC",
           "published": "Sun, 23 Aug 2026 17:37:06 GMT"
+        }
+      ]
+    },
+    {
+      "id": "liverpool-given-bradley-barcola-transfer-warning-which-simply-bff59d51",
+      "slug": "liverpool-given-bradley-barcola-transfer-warning-which-simply-bff59d51",
+      "sport": "soccer",
+      "headline": "Liverpool given Bradley Barcola transfer warning which simply must jolt Richard Hughes into action",
+      "blurb": "Liverpool given Bradley Barcola transfer warning which simply must jolt Richard Hughes into action Yahoo Sports Canada",
+      "summary": "Conor Bradley and Will Hughes: Liverpool given Bradley Barcola transfer warning which simply must jolt Richard Hughes into action Yahoo Sports Canada Desk reading of Yahoo Sports Canada.",
+      "category": "trade",
+      "published": "2026-08-23T08:50:00Z",
+      "updated": "2026-08-23T08:50:00Z",
+      "players": [
+        {
+          "key": "bradley",
+          "name": "Conor Bradley",
+          "slug": "conor-bradley",
+          "pos": "DEF",
+          "team": "LIV"
+        },
+        {
+          "key": "hughes",
+          "name": "Will Hughes",
+          "slug": "will-hughes",
+          "pos": "MID",
+          "team": "CRY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Liverpool given Bradley Barcola transfer warning which simply must jolt Richard Hughes into action",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNelVGMk5TY1Jwb0NqZXk4ZFBFYVh5WFFzaGlWb3RHMllrSnMzYThfMVBSRHZRcUQzN0hkQU5VN1V2cEwteExPODA3S1h1NzRlUEtoM2Fpa2F6b2oxREtPb2Y4Sjd0VGNBWUJvUWxxQXNXTUdZeEduSU85aURRRTM2RzlvS0xfTUNtSGc0dkt3azZJQQ?oc=5",
+          "publisher": "Yahoo Sports Canada",
+          "kind": "article",
+          "snippet": "Liverpool given Bradley Barcola transfer warning which simply must jolt Richard Hughes into action Yahoo Sports Canada",
+          "published": "Sun, 23 Aug 2026 08:50:00 GMT"
         }
       ]
     },
@@ -8546,6 +8667,124 @@
       ]
     },
     {
+      "id": "mykhailo-mudryk-transfer-chelsea-turn-down-offer-fierce-3905aa95",
+      "slug": "mykhailo-mudryk-transfer-chelsea-turn-down-offer-fierce-3905aa95",
+      "sport": "soccer",
+      "headline": "Premier League club turn to Chelsea for replacement after seeing their £50m star join Real Madrid",
+      "blurb": "‘Deal Agreed’—Chelsea Accept Premier League Rivals Bid for Wantaway Star Sports Illustrated",
+      "summary": "João Pedro: ‘Deal Agreed’—Chelsea Accept Premier League Rivals Bid for Wantaway Star Sports Illustrated Chelsea open transfer talks as Premier League deal emerges after Arsenal move Football London Premier League club turn to Chelsea for replacement after seeing their £50m star join Real Madrid The Chelsea Chronicle Aggregated from Sports Illustrated, Football London, The Chelsea Chronicle, London Evening Standard, EPL Index and 3 more.",
+      "category": "trade",
+      "published": "2025-01-25T08:00:00Z",
+      "updated": "2026-08-22T10:42:56Z",
+      "players": [
+        {
+          "key": "joao pedro",
+          "name": "João Pedro",
+          "slug": "jo-o-pedro",
+          "pos": "FWD",
+          "team": "CHE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Chelsea in talks with Premier League rival over Mudryk deal",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaEp2UmFHam9rUEJheEV5RWRjblhXZ0JvQmNzbkxLRUhiUHRITFVudGRZeWdOSDlHa09yb1ZoZktMSHdkNnlyd2JLLS1aUWhHcE1nb3JuOEJEbzd0aU5LSVRJMmFKNG9vWW1wRXNPcUNUYlJzdllYeFd0VFhNSXg2dWRlb3F2RXB5c1RFa1hCR0k?oc=5",
+          "publisher": "London Evening Standard",
+          "kind": "article",
+          "snippet": "Chelsea in talks with Premier League rival over Mudryk deal London Evening Standard",
+          "published": "Sat, 22 Aug 2026 06:24:35 GMT"
+        },
+        {
+          "title": "Mykhailo Mudryk transfer update as Chelsea turn down offer from fierce Premier League rivals",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTHVmelpFbmRSSUlaWFFKb190ZUQyckgtcnJibWJsZnNtbEtSZW83Q2Z0NlVpdTVteWxxOWhYSGVpMkFfcDM2ZkhmZWNwQkNQbE9xTGF2cFNMdE1hOHVLTUU0bkp1YzN2Q3RQVUx2X0VMbTVIV0lPWjZLdG9fQ3p0SUdsUnZLTUhQYlNqTTFoRk0xM1psY1hvTGk0OHpyX0V3by0w?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Mykhailo Mudryk transfer update as Chelsea turn down offer from fierce Premier League rivals Football London",
+          "published": "Fri, 21 Aug 2026 15:39:11 GMT"
+        },
+        {
+          "title": "Joao Pedro Shines as Chelsea Beat Fulham 2-0 in Premier League",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPanRPbkZIZEJnd0NOT3EySU5hb2l4T18yZ0ZqRTFZQUppczNTUldTQW9KVzVnOWxndXhYN2k3UE9rYnZXTjZsUnEyTEtnY2xkTHNXck00Z3Q5WGlKbExudTFZemd2SUFqTC1XMWRpWERiVWFDOHNweFJUNTdfM1hjdThUR1JBaG1rLXROSFdXeThxOFN0VEdnTkdvWQ?oc=5",
+          "publisher": "EPL Index",
+          "kind": "article",
+          "snippet": "Joao Pedro Shines as Chelsea Beat Fulham 2-0 in Premier League EPL Index",
+          "published": "Sat, 30 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Said El Mala says 'yes' to Premier League transfer after 'strong' Chelsea bid",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQck8taS00c3N2NVZ6dmFiVXlheDUtZUhiekJ4bk5JLS1ETjFTWkx2N2ZWcjkxd1dZb3JEQnMwczZJWXFFbGlVRkl0THB3X3lJbFZiNnJYN3BYanJsWDJtbUMwQ0dKQWtSVlJVdmI1TExoVUx0bHFPdWF4OV9VVU1ZVVhlM25ybzE5QUpOU05KRVBuTmp0UUVrb3p4TXVEVnlDRFRWS1dlVl9uZDhtNFFkUzV6MEYyNVFJaGF5Tg?oc=5",
+          "publisher": "footballtransfers.com",
+          "kind": "article",
+          "snippet": "Said El Mala says 'yes' to Premier League transfer after 'strong' Chelsea bid footballtransfers.com",
+          "published": "Wed, 18 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League buildup, transfers and João Pedro signs new Chelsea deal – matchday live",
+          "url": "https://www.theguardian.com/football/live/2026/aug/22/premier-league-buildup-transfers-and-hull-v-manchester-united-early-news-matchday-live",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "⚽ News and buildup as the Premier League returns ⚽ Arsenal sweep Coventry aside | Fixtures | Get in touch On the topic of signings. Mikel Arteta said he was ‘really happy’ with the squad he’s got at The Emirates, but there’s still talk around whether Atletico Madrid’s Julian Alva",
+          "published": "Sat, 22 Aug 2026 10:42:56 GMT"
+        },
+        {
+          "title": "Premier League rivals 'open talks' for Chelsea outcast as asking price set",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc2FocmhRV1VfZ2VTOEx3LU5IMWxZNF92MnJwTFQ5WS1QbmhuOVBkMFg5alNlajM5Y2FlaUozbXNadlpfZjJNVFRPY1BnVm04QkRyU2JfWnI0dzRqd0JYaUpyNndUbjJYRFNVWFV6VERMTnhSeVFxTEJOMDdPWVZMVXo5S3B0Zjhna2Q2MUFibXlUZERINVRKdk530gGfAUFVX3lxTE1aNzdGVE5SSGp1QnR4eVhtNWhuLVhRelVVd2xqaFVzLWhGSnJGQ0NrZmpSVXdBWXl0NEljOEtRLVAwSFBmVnN4akFra3ZHU1EtNGd3QVlfOVVON2ZpWmxZbGpwT1dfc2xsXzl5ZVllQ0ZCZ1Z0WFZEZDlZQnBzV2tSMUk1Rk5iQVZUMTUxM1pocXRSUGN6Y3ZxYlVYMFhjYw?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Premier League rivals 'open talks' for Chelsea outcast as asking price set Football London",
+          "published": "Mon, 04 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Chelsea offer Premier League rival choice of two midfielders as transfer plan emerges",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZjlWbWV4Z0t0SVFRUjRqNGF4YTIwRUd0TG05a0xKdm9EM0ZvOWVFR2hWV0o0SmFpeS1LaEpFdDVyLXM4bS11UzFVODVVTlFLZjdZN0tvb2hfaERfRjRuOVNnUlVpQ0l1aTdWREY3cVFkM0QzQzNqZzE2TmV1TjJxclBKNG9ZWXdEYnFzMkQ5WDJlcF85SXlxc05QbUTSAaIBQVVfeXFMTTU2WG9OTE5peFhKSmEtOHZNblVjdG1tdHE2Nk91bkZjek5hQ3VxNDNkb2VPbTlHRUFwTVhkZWVrLWtXbUVWbmEzVzNhS2hlYllVRXZqSEdxYjA3UWJoQTNuVlJaYjBvNi11X0pIaUtXT05BX1RMTzByNVdOdHcxdF9pWDlnNXQ1R1poZGRQNmkyX3RtTXRoMXpjZDBUMVR3S0VB?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Chelsea offer Premier League rival choice of two midfielders as transfer plan emerges Football London",
+          "published": "Sat, 25 Jan 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Chelsea preparing £60m offer for Premier League goalkeeper",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPenAzVmZNZlpXbG5TZFpvTzNFeUhvVzdveUlBa1UxMWREN19JT2lNNDdVWU9IYjVYYWlnM0EyUTBSZ1FQS0lpNmlmZnhZQUplQWJxT21hekVLMWN6Tm01VENfTWJVd0pKOEREYUttNTcwVVZka09VdXpLejBTOTFIdTc1MC14OTFWLXNnbjVn?oc=5",
+          "publisher": "Read Chelsea",
+          "kind": "article",
+          "snippet": "Chelsea preparing £60m offer for Premier League goalkeeper Read Chelsea",
+          "published": "Tue, 07 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "‘Deal Agreed’—Chelsea Accept Premier League Rivals Bid for Wantaway Star",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNS21XUnp6SDhzOXlxNVQ1bklFRnZiUDJaNmZxa0NNdGpXTDlabk9KckxiVTZnQVE3MHFMaE8wSVNTdXl0VHkyN1h4ZWwzWW5taU1ldDdzcnBLVS1PaVVQVExUSXIxZG85SFpyZGxNZklWcVgwUndLbTZ1VnlUeDVVY19EazJ0ZkU?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "‘Deal Agreed’—Chelsea Accept Premier League Rivals Bid for Wantaway Star Sports Illustrated",
+          "published": "Sat, 12 Jul 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Chelsea open transfer talks as Premier League deal emerges after Arsenal move",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNenBwTVg2MWdZdkptdUNHTGVzN01MZ0NiRlNUV2FOWF9NTFNXWEl3WDNmV3lYMDVpSTNvQ0JLcF9NYi10aXdwelZTWlhSbEJ1UWhfX0M2R0FGRFRjR25zVVYzNm9MalBFdjlBNmktRTI4VFp1cm9zeTZDYTNTZXVlaUtVWmwzTUhuSkEySXRKUTZvQdIBlwFBVV95cUxOWXFub1VmWVNmb0FVamY3cmRkdnRSWHBJTjltMmtpeHpadnd4RVh2cl9iUFZfZVhZYjNIcjZPd25RQnQ5WThNc1BJZEhOaVhyY002TEI2LTJiN3A1ZGVKdFZTdWg5bGJYM2R1UEtHaVlaWnlrakd0eENiS1lacjVfSW11RnI2d2V3SE95ODR3QUNFYy1KdjJv?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Chelsea open transfer talks as Premier League deal emerges after Arsenal move Football London",
+          "published": "Wed, 09 Jul 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League club turn to Chelsea for replacement after seeing their £50m star join Real Madrid",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeS1XaVpNa0x4Mmh3cl9sQV9LVUVXUEIxUWk1OVpPc09vcUI4OHNFd0VfSlMtMXE2SjFrWnZLNE9aYzNvVEkxaDItN01NMFBuNFFZRnBtLXU4SGtuZ082bHloZHdmZWNXejVDalZYdm8tNU92Qzdtemg2RmpucmtvR0dXLTBxaXZJZmhiNEpDM3RMQ3hZM0ZpbVdUc3JOakdYQUVDRy03RTRjTUNha1FwbldZUF9xS1gzZ0NybklheEdQSVdXSlFVNWRXQllRWDNLLUFWTEV6RW9GUjUxR19HeA?oc=5",
+          "publisher": "The Chelsea Chronicle",
+          "kind": "article",
+          "snippet": "Premier League club turn to Chelsea for replacement after seeing their £50m star join Real Madrid The Chelsea Chronicle",
+          "published": "Sat, 26 Jul 2025 07:00:00 GMT"
+        },
+        {
+          "title": "£14m Chelsea player agrees terms to join Premier League rivals, ‘expected soon’",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQa2dWQkR0aHRNdlREMC1kMFVKN3NWMzY5NGZhTzh5aldWVl9ybU5zQ1NPdWFQR1MyYS03QWJUb3FqY1AwWkV0Q3pFdVpLaXk3bDNkVHV1RHc0dHNHWlo4RHBJODZyNzJvNkx5N05WakUxOW9FbGo4T080dlVQY2lrMGYtd3FCeDBUSWxNZW1pSk9pMG8zSXZjNUNBTzBrU0FZTF9YT2w0ak9DbEVoQl9INUllU0s5VTVTeHJESFhCNTZ2M3dw?oc=5",
+          "publisher": "The Chelsea Chronicle",
+          "kind": "article",
+          "snippet": "£14m Chelsea player agrees terms to join Premier League rivals, ‘expected soon’ The Chelsea Chronicle",
+          "published": "Thu, 10 Jul 2025 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "gabriel-magalhaes-injured-weekend-early-premier-league-injury-8402c21b",
       "slug": "gabriel-magalhaes-injured-weekend-early-premier-league-injury-8402c21b",
       "sport": "soccer",
@@ -8918,120 +9157,48 @@
       ]
     },
     {
-      "id": "mykhailo-mudryk-transfer-chelsea-turn-down-offer-fierce-3905aa95",
-      "slug": "mykhailo-mudryk-transfer-chelsea-turn-down-offer-fierce-3905aa95",
+      "id": "mateta-claims-final-year-palace-deal-invalid-893c77c2",
+      "slug": "mateta-claims-final-year-palace-deal-invalid-893c77c2",
       "sport": "soccer",
-      "headline": "Premier League club turn to Chelsea for replacement after seeing their £50m star join Real Madrid",
-      "blurb": "‘Deal Agreed’—Chelsea Accept Premier League Rivals Bid for Wantaway Star Sports Illustrated",
-      "summary": "João Pedro: ‘Deal Agreed’—Chelsea Accept Premier League Rivals Bid for Wantaway Star Sports Illustrated Chelsea open transfer talks as Premier League deal emerges after Arsenal move Football London Premier League club turn to Chelsea for replacement after seeing their £50m star join Real Madrid The Chelsea Chronicle Aggregated from Sports Illustrated, Football London, The Chelsea Chronicle, London Evening Standard, EPL Index and 3 more.",
-      "category": "trade",
-      "published": "2025-01-25T08:00:00Z",
-      "updated": "2026-08-22T10:42:56Z",
+      "headline": "Jean-Philippe Mateta: Crystal Palace striker says final year of deal is invalid",
+      "blurb": "Striker wants move and said final year of deal was invalid 29-year-old took his case to tribunal and Fifa but lost Jean-Philippe Mateta is in dispute with Crystal Palace over…",
+      "summary": "Striker wants move and said final year of deal was invalid 29-year-old took his case to tribunal and Fifa but lost Jean-Philippe Mateta is in dispute with Crystal Palace over the final year of his contract but failed in an attempt to have it ruled invalid by an independent Premier League tribunal and Fifa. The France striker signed a four-and-a-half-year contract when he joined permanently from Mainz in January 2022 after an initial loan, in a deal that also included the option of a 12-month extension. That was activated by Palace in 2024, with Mateta’s contract now due to expire at the end of Aggregated from Guardian Football, BBC Football, BBC.",
+      "category": "roster",
+      "published": "2026-08-22T17:49:41Z",
+      "updated": "2026-08-23T10:49:06Z",
       "players": [
         {
-          "key": "joao pedro",
-          "name": "João Pedro",
-          "slug": "jo-o-pedro",
+          "key": "mateta",
+          "name": "Jean-Philippe Mateta",
+          "slug": "jean-philippe-mateta",
           "pos": "FWD",
-          "team": "CHE"
+          "team": "CRY"
         }
       ],
       "sources": [
         {
-          "title": "Chelsea in talks with Premier League rival over Mudryk deal",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOaEp2UmFHam9rUEJheEV5RWRjblhXZ0JvQmNzbkxLRUhiUHRITFVudGRZeWdOSDlHa09yb1ZoZktMSHdkNnlyd2JLLS1aUWhHcE1nb3JuOEJEbzd0aU5LSVRJMmFKNG9vWW1wRXNPcUNUYlJzdllYeFd0VFhNSXg2dWRlb3F2RXB5c1RFa1hCR0k?oc=5",
-          "publisher": "London Evening Standard",
+          "title": "Mateta claims final year of Palace deal is invalid",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cdx7x90dxywo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
           "kind": "article",
-          "snippet": "Chelsea in talks with Premier League rival over Mudryk deal London Evening Standard",
-          "published": "Sat, 22 Aug 2026 06:24:35 GMT"
+          "snippet": "Jean-Philippe Mateta is challenging the validity of the final 10 months on his Crystal Palace contract.",
+          "published": "Sat, 22 Aug 2026 17:49:41 GMT"
         },
         {
-          "title": "Mykhailo Mudryk transfer update as Chelsea turn down offer from fierce Premier League rivals",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTHVmelpFbmRSSUlaWFFKb190ZUQyckgtcnJibWJsZnNtbEtSZW83Q2Z0NlVpdTVteWxxOWhYSGVpMkFfcDM2ZkhmZWNwQkNQbE9xTGF2cFNMdE1hOHVLTUU0bkp1YzN2Q3RQVUx2X0VMbTVIV0lPWjZLdG9fQ3p0SUdsUnZLTUhQYlNqTTFoRk0xM1psY1hvTGk0OHpyX0V3by0w?oc=5",
-          "publisher": "Football London",
+          "title": "Jean-Philippe Mateta: Crystal Palace striker says final year of deal is invalid",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JMDhXWW1IOTJ5NkZnZTdMZ2pxd0JONGU2MmptRXZlb1hURG5EYWE0eVNVeEktaGI4Vm80S3l4dm82d1RiMWxzM2FXdWl0aHhqYkpZOWV5Qi1fOWtIdU1PVHpvc2xuZWc?oc=5",
+          "publisher": "BBC",
           "kind": "article",
-          "snippet": "Mykhailo Mudryk transfer update as Chelsea turn down offer from fierce Premier League rivals Football London",
-          "published": "Fri, 21 Aug 2026 15:39:11 GMT"
+          "snippet": "Jean-Philippe Mateta: Crystal Palace striker says final year of deal is invalid BBC",
+          "published": "Sat, 22 Aug 2026 17:49:41 GMT"
         },
         {
-          "title": "Joao Pedro Shines as Chelsea Beat Fulham 2-0 in Premier League",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPanRPbkZIZEJnd0NOT3EySU5hb2l4T18yZ0ZqRTFZQUppczNTUldTQW9KVzVnOWxndXhYN2k3UE9rYnZXTjZsUnEyTEtnY2xkTHNXck00Z3Q5WGlKbExudTFZemd2SUFqTC1XMWRpWERiVWFDOHNweFJUNTdfM1hjdThUR1JBaG1rLXROSFdXeThxOFN0VEdnTkdvWQ?oc=5",
-          "publisher": "EPL Index",
-          "kind": "article",
-          "snippet": "Joao Pedro Shines as Chelsea Beat Fulham 2-0 in Premier League EPL Index",
-          "published": "Sat, 30 Aug 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Said El Mala says 'yes' to Premier League transfer after 'strong' Chelsea bid",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQck8taS00c3N2NVZ6dmFiVXlheDUtZUhiekJ4bk5JLS1ETjFTWkx2N2ZWcjkxd1dZb3JEQnMwczZJWXFFbGlVRkl0THB3X3lJbFZiNnJYN3BYanJsWDJtbUMwQ0dKQWtSVlJVdmI1TExoVUx0bHFPdWF4OV9VVU1ZVVhlM25ybzE5QUpOU05KRVBuTmp0UUVrb3p4TXVEVnlDRFRWS1dlVl9uZDhtNFFkUzV6MEYyNVFJaGF5Tg?oc=5",
-          "publisher": "footballtransfers.com",
-          "kind": "article",
-          "snippet": "Said El Mala says 'yes' to Premier League transfer after 'strong' Chelsea bid footballtransfers.com",
-          "published": "Wed, 18 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League buildup, transfers and João Pedro signs new Chelsea deal – matchday live",
-          "url": "https://www.theguardian.com/football/live/2026/aug/22/premier-league-buildup-transfers-and-hull-v-manchester-united-early-news-matchday-live",
+          "title": "Mateta’s Palace dispute deepens after losing appeals to end contract early",
+          "url": "https://www.theguardian.com/football/2026/aug/23/jean-philippe-mateta-dispute-crystal-palace-contract-transfer-window",
           "publisher": "Guardian Football",
           "kind": "article",
-          "snippet": "⚽ News and buildup as the Premier League returns ⚽ Arsenal sweep Coventry aside | Fixtures | Get in touch On the topic of signings. Mikel Arteta said he was ‘really happy’ with the squad he’s got at The Emirates, but there’s still talk around whether Atletico Madrid’s Julian Alva",
-          "published": "Sat, 22 Aug 2026 10:42:56 GMT"
-        },
-        {
-          "title": "Premier League rivals 'open talks' for Chelsea outcast as asking price set",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPc2FocmhRV1VfZ2VTOEx3LU5IMWxZNF92MnJwTFQ5WS1QbmhuOVBkMFg5alNlajM5Y2FlaUozbXNadlpfZjJNVFRPY1BnVm04QkRyU2JfWnI0dzRqd0JYaUpyNndUbjJYRFNVWFV6VERMTnhSeVFxTEJOMDdPWVZMVXo5S3B0Zjhna2Q2MUFibXlUZERINVRKdk530gGfAUFVX3lxTE1aNzdGVE5SSGp1QnR4eVhtNWhuLVhRelVVd2xqaFVzLWhGSnJGQ0NrZmpSVXdBWXl0NEljOEtRLVAwSFBmVnN4akFra3ZHU1EtNGd3QVlfOVVON2ZpWmxZbGpwT1dfc2xsXzl5ZVllQ0ZCZ1Z0WFZEZDlZQnBzV2tSMUk1Rk5iQVZUMTUxM1pocXRSUGN6Y3ZxYlVYMFhjYw?oc=5",
-          "publisher": "Football London",
-          "kind": "article",
-          "snippet": "Premier League rivals 'open talks' for Chelsea outcast as asking price set Football London",
-          "published": "Mon, 04 Aug 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Chelsea offer Premier League rival choice of two midfielders as transfer plan emerges",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNZjlWbWV4Z0t0SVFRUjRqNGF4YTIwRUd0TG05a0xKdm9EM0ZvOWVFR2hWV0o0SmFpeS1LaEpFdDVyLXM4bS11UzFVODVVTlFLZjdZN0tvb2hfaERfRjRuOVNnUlVpQ0l1aTdWREY3cVFkM0QzQzNqZzE2TmV1TjJxclBKNG9ZWXdEYnFzMkQ5WDJlcF85SXlxc05QbUTSAaIBQVVfeXFMTTU2WG9OTE5peFhKSmEtOHZNblVjdG1tdHE2Nk91bkZjek5hQ3VxNDNkb2VPbTlHRUFwTVhkZWVrLWtXbUVWbmEzVzNhS2hlYllVRXZqSEdxYjA3UWJoQTNuVlJaYjBvNi11X0pIaUtXT05BX1RMTzByNVdOdHcxdF9pWDlnNXQ1R1poZGRQNmkyX3RtTXRoMXpjZDBUMVR3S0VB?oc=5",
-          "publisher": "Football London",
-          "kind": "article",
-          "snippet": "Chelsea offer Premier League rival choice of two midfielders as transfer plan emerges Football London",
-          "published": "Sat, 25 Jan 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Chelsea preparing £60m offer for Premier League goalkeeper",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPenAzVmZNZlpXbG5TZFpvTzNFeUhvVzdveUlBa1UxMWREN19JT2lNNDdVWU9IYjVYYWlnM0EyUTBSZ1FQS0lpNmlmZnhZQUplQWJxT21hekVLMWN6Tm01VENfTWJVd0pKOEREYUttNTcwVVZka09VdXpLejBTOTFIdTc1MC14OTFWLXNnbjVn?oc=5",
-          "publisher": "Read Chelsea",
-          "kind": "article",
-          "snippet": "Chelsea preparing £60m offer for Premier League goalkeeper Read Chelsea",
-          "published": "Tue, 07 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "‘Deal Agreed’—Chelsea Accept Premier League Rivals Bid for Wantaway Star",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNS21XUnp6SDhzOXlxNVQ1bklFRnZiUDJaNmZxa0NNdGpXTDlabk9KckxiVTZnQVE3MHFMaE8wSVNTdXl0VHkyN1h4ZWwzWW5taU1ldDdzcnBLVS1PaVVQVExUSXIxZG85SFpyZGxNZklWcVgwUndLbTZ1VnlUeDVVY19EazJ0ZkU?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "‘Deal Agreed’—Chelsea Accept Premier League Rivals Bid for Wantaway Star Sports Illustrated",
-          "published": "Sat, 12 Jul 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Chelsea open transfer talks as Premier League deal emerges after Arsenal move",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNenBwTVg2MWdZdkptdUNHTGVzN01MZ0NiRlNUV2FOWF9NTFNXWEl3WDNmV3lYMDVpSTNvQ0JLcF9NYi10aXdwelZTWlhSbEJ1UWhfX0M2R0FGRFRjR25zVVYzNm9MalBFdjlBNmktRTI4VFp1cm9zeTZDYTNTZXVlaUtVWmwzTUhuSkEySXRKUTZvQdIBlwFBVV95cUxOWXFub1VmWVNmb0FVamY3cmRkdnRSWHBJTjltMmtpeHpadnd4RVh2cl9iUFZfZVhZYjNIcjZPd25RQnQ5WThNc1BJZEhOaVhyY002TEI2LTJiN3A1ZGVKdFZTdWg5bGJYM2R1UEtHaVlaWnlrakd0eENiS1lacjVfSW11RnI2d2V3SE95ODR3QUNFYy1KdjJv?oc=5",
-          "publisher": "Football London",
-          "kind": "article",
-          "snippet": "Chelsea open transfer talks as Premier League deal emerges after Arsenal move Football London",
-          "published": "Wed, 09 Jul 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League club turn to Chelsea for replacement after seeing their £50m star join Real Madrid",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPeS1XaVpNa0x4Mmh3cl9sQV9LVUVXUEIxUWk1OVpPc09vcUI4OHNFd0VfSlMtMXE2SjFrWnZLNE9aYzNvVEkxaDItN01NMFBuNFFZRnBtLXU4SGtuZ082bHloZHdmZWNXejVDalZYdm8tNU92Qzdtemg2RmpucmtvR0dXLTBxaXZJZmhiNEpDM3RMQ3hZM0ZpbVdUc3JOakdYQUVDRy03RTRjTUNha1FwbldZUF9xS1gzZ0NybklheEdQSVdXSlFVNWRXQllRWDNLLUFWTEV6RW9GUjUxR19HeA?oc=5",
-          "publisher": "The Chelsea Chronicle",
-          "kind": "article",
-          "snippet": "Premier League club turn to Chelsea for replacement after seeing their £50m star join Real Madrid The Chelsea Chronicle",
-          "published": "Sat, 26 Jul 2025 07:00:00 GMT"
-        },
-        {
-          "title": "£14m Chelsea player agrees terms to join Premier League rivals, ‘expected soon’",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQa2dWQkR0aHRNdlREMC1kMFVKN3NWMzY5NGZhTzh5aldWVl9ybU5zQ1NPdWFQR1MyYS03QWJUb3FqY1AwWkV0Q3pFdVpLaXk3bDNkVHV1RHc0dHNHWlo4RHBJODZyNzJvNkx5N05WakUxOW9FbGo4T080dlVQY2lrMGYtd3FCeDBUSWxNZW1pSk9pMG8zSXZjNUNBTzBrU0FZTF9YT2w0ak9DbEVoQl9INUllU0s5VTVTeHJESFhCNTZ2M3dw?oc=5",
-          "publisher": "The Chelsea Chronicle",
-          "kind": "article",
-          "snippet": "£14m Chelsea player agrees terms to join Premier League rivals, ‘expected soon’ The Chelsea Chronicle",
-          "published": "Thu, 10 Jul 2025 07:00:00 GMT"
+          "snippet": "Striker wants move and said final year of deal was invalid 29-year-old took his case to tribunal and Fifa but lost Jean-Philippe Mateta is in dispute with Crystal Palace over the final year of his contract but failed in an attempt to have it ruled invalid by an independent Premie",
+          "published": "Sun, 23 Aug 2026 10:49:06 GMT"
         }
       ]
     },
@@ -9466,58 +9633,12 @@
       ]
     },
     {
-      "id": "mateta-claims-final-year-palace-deal-invalid-893c77c2",
-      "slug": "mateta-claims-final-year-palace-deal-invalid-893c77c2",
-      "sport": "soccer",
-      "headline": "Jean-Philippe Mateta: Crystal Palace striker says final year of deal is invalid",
-      "blurb": "Striker wants move and said final year of deal was invalid 29-year-old took his case to tribunal and Fifa but lost Jean-Philippe Mateta is in dispute with Crystal Palace over…",
-      "summary": "Striker wants move and said final year of deal was invalid 29-year-old took his case to tribunal and Fifa but lost Jean-Philippe Mateta is in dispute with Crystal Palace over the final year of his contract but failed in an attempt to have it ruled invalid by an independent Premier League tribunal and Fifa. The France striker signed a four-and-a-half-year contract when he joined permanently from Mainz in January 2022 after an initial loan, in a deal that also included the option of a 12-month extension. That was activated by Palace in 2024, with Mateta’s contract now due to expire at the end of Aggregated from Guardian Football, BBC Football, BBC.",
-      "category": "roster",
-      "published": "2026-08-22T17:49:41Z",
-      "updated": "2026-08-23T10:49:06Z",
-      "players": [
-        {
-          "key": "mateta",
-          "name": "Jean-Philippe Mateta",
-          "slug": "jean-philippe-mateta",
-          "pos": "FWD",
-          "team": "CRY"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Mateta claims final year of Palace deal is invalid",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cdx7x90dxywo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Jean-Philippe Mateta is challenging the validity of the final 10 months on his Crystal Palace contract.",
-          "published": "Sat, 22 Aug 2026 17:49:41 GMT"
-        },
-        {
-          "title": "Jean-Philippe Mateta: Crystal Palace striker says final year of deal is invalid",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JMDhXWW1IOTJ5NkZnZTdMZ2pxd0JONGU2MmptRXZlb1hURG5EYWE0eVNVeEktaGI4Vm80S3l4dm82d1RiMWxzM2FXdWl0aHhqYkpZOWV5Qi1fOWtIdU1PVHpvc2xuZWc?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Jean-Philippe Mateta: Crystal Palace striker says final year of deal is invalid BBC",
-          "published": "Sat, 22 Aug 2026 17:49:41 GMT"
-        },
-        {
-          "title": "Mateta’s Palace dispute deepens after losing appeals to end contract early",
-          "url": "https://www.theguardian.com/football/2026/aug/23/jean-philippe-mateta-dispute-crystal-palace-contract-transfer-window",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Striker wants move and said final year of deal was invalid 29-year-old took his case to tribunal and Fifa but lost Jean-Philippe Mateta is in dispute with Crystal Palace over the final year of his contract but failed in an attempt to have it ruled invalid by an independent Premie",
-          "published": "Sun, 23 Aug 2026 10:49:06 GMT"
-        }
-      ]
-    },
-    {
       "id": "round-up-key-takeaways-arne-slot-s-pre-dcc79c83",
       "slug": "round-up-key-takeaways-arne-slot-s-pre-dcc79c83",
       "sport": "soccer",
       "headline": "Press conference: Arne Slot's assessment of Liverpool 1-1 Tottenham Hotspur",
-      "blurb": "Aston Villa 4-2 Liverpool: Arne Slot's post-match press conference Liverpool FC",
-      "summary": "Dominik Szoboszlai: Aston Villa 4-2 Liverpool: Arne Slot's post-match press conference Liverpool FC Pre-Chelsea Press Conference Fulham FC Every word: Press conference v Brentford Manchester United Website Aggregated from Liverpool FC, Fulham FC, Manchester United Website, University of Georgia Athletics, Arsenal.com and 6 more.",
+      "blurb": "Press conference: Arne Slot's assessment of Liverpool 1-1 Tottenham Hotspur Liverpool FC",
+      "summary": "Dominik Szoboszlai: Press conference: Arne Slot's assessment of Liverpool 1-1 Tottenham Hotspur Liverpool FC Pre-Chelsea Press Conference Fulham FC Every word: Press conference v Brentford Manchester United Website Aggregated from Liverpool FC, Fulham FC, Manchester United Website, University of Georgia Athletics, Arsenal.com and 6 more.",
       "category": "coach",
       "published": "2025-11-22T08:00:00Z",
       "updated": "2026-08-22T09:00:02Z",
@@ -9706,6 +9827,164 @@
           "kind": "article",
           "snippet": "Watch Andoni Iraola's Newcastle v Liverpool press conference on demand Liverpool FC",
           "published": "Thu, 20 Aug 2026 10:08:01 GMT"
+        }
+      ]
+    },
+    {
+      "id": "transfer-rumors-nottingham-forest-bid-70m-igor-thiago-26176101",
+      "slug": "transfer-rumors-nottingham-forest-bid-70m-igor-thiago-26176101",
+      "sport": "soccer",
+      "headline": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago",
+      "blurb": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago ESPN",
+      "summary": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago ESPN Desk reading of ESPN.",
+      "category": "trade",
+      "published": "2026-08-23T09:50:00Z",
+      "updated": "2026-08-23T09:50:00Z",
+      "players": [
+        {
+          "key": "thiago",
+          "name": "Igor Thiago",
+          "slug": "igor-thiago",
+          "pos": "FWD",
+          "team": "BRE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVXczYnpjdV9PQ21iTHZlUEZwWG1LUXAwYzBxTnl5T0pqWlpJTlREN3ZVNmZLVG40MDBQbHAzT1FPV0tRRDVVemE2S01rVy0tQ1F1blF5SWFJUEthWGxRdE9yNHBvNUYxZ3l5amE1QzMyTklNajBUNEZtNnB4cHdValFhSHYzTDJnWmljdzI0QjYtckhrTXhDeFVaU1c1Nk44NC01UVBTQzVpZw?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago ESPN",
+          "published": "Sun, 23 Aug 2026 09:50:00 GMT"
+        },
+        {
+          "title": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZTFzMGRRX2JzYWtXMkQtM0N0RnNMcUplQ2M0VmlEZWE3Y3BKelYwM2FiYndlUUtVcWZiOEk5aUJqUG9yTVBhUWlMNlQyYXk5R1J5UldwSGpEQzhzSWV2NHpzdzdUY3JKMmhIZnE3aEoyWXJfM3FBN2gzMVdhdDVMSm5xMUdscEp6Y3pmUUZuQVJXRWxINGV0R29ocXl1b3ZCYk1SZHg0eUJzOHBXNFZB?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago ESPN",
+          "published": "Sun, 23 Aug 2026 09:50:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "ask-him-emery-cryptic-watkins-amid-transfer-interest-1d20c828",
+      "slug": "ask-him-emery-cryptic-watkins-amid-transfer-interest-1d20c828",
+      "sport": "soccer",
+      "headline": "'Ask him' - Emery cryptic on Watkins amid transfer interest",
+      "blurb": "Unai Emery gave a coy and cryptic response to questions about Ollie Watkins' absence from Aston Villa's squad for their Premier League defeat at Brighton.",
+      "summary": "Unai Emery gave a coy and cryptic response to questions about Ollie Watkins' absence from Aston Villa's squad for their Premier League defeat at Brighton. Desk reading of Sky Sports Football.",
+      "category": "trade",
+      "published": "2026-08-23T17:02:13Z",
+      "updated": "2026-08-23T17:02:13Z",
+      "players": [
+        {
+          "key": "watkins",
+          "name": "Ollie Watkins",
+          "slug": "ollie-watkins",
+          "pos": "FWD",
+          "team": "AVL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "'Ask him' - Emery cryptic on Watkins amid transfer interest",
+          "url": "https://www.skysports.com/football/news/12040/13576353/ollie-watkins-transfer-news-aston-villa-boss-unai-emery-gives-cryptic-answer-when-asked-about-striker-amid-al-hilal-interest",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "Unai Emery gave a coy and cryptic response to questions about Ollie Watkins' absence from Aston Villa's squad for their Premier League defeat at Brighton.",
+          "published": "Sun, 23 Aug 2026 16:46:00 BST"
+        }
+      ]
+    },
+    {
+      "id": "brilliant-finish-elanga-puts-newcastle-ahead-inside-five-7c955177",
+      "slug": "brilliant-finish-elanga-puts-newcastle-ahead-inside-five-7c955177",
+      "sport": "soccer",
+      "headline": "'Brilliant finish!' Elanga puts Newcastle ahead inside FIVE minutes",
+      "blurb": "Matthias Jaissle's new Newcastle United side go ahead against Liverpool thanks to Anthony Elanga's early goal.",
+      "summary": "Matthias Jaissle's new Newcastle United side go ahead against Liverpool thanks to Anthony Elanga's early goal. Desk reading of Sky Sports Football.",
+      "category": "wire",
+      "published": "2026-08-23T17:02:13Z",
+      "updated": "2026-08-23T17:02:13Z",
+      "players": [
+        {
+          "key": "elanga",
+          "name": "Anthony Elanga",
+          "slug": "anthony-elanga",
+          "pos": "MID",
+          "team": "NEW"
+        },
+        {
+          "key": "anthony",
+          "name": "Jaidon Anthony",
+          "slug": "jaidon-anthony",
+          "pos": "MID",
+          "team": "BRE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "'Brilliant finish!' Elanga puts Newcastle ahead inside FIVE minutes",
+          "url": "https://www.skysports.com/watch/video/13576346/goal-a-elanga-5-newcastle-1-0-liverpool",
+          "publisher": "Sky Sports Football",
+          "kind": "video",
+          "snippet": "Matthias Jaissle's new Newcastle United side go ahead against Liverpool thanks to Anthony Elanga's early goal.",
+          "published": "Sun, 23 Aug 2026 16:45:00 BST"
+        }
+      ]
+    },
+    {
+      "id": "anton-stach-snatches-late-leeds-winner-sour-glasner-8fa65149",
+      "slug": "anton-stach-snatches-late-leeds-winner-sour-glasner-8fa65149",
+      "sport": "soccer",
+      "headline": "Anton Stach snatches late Leeds winner to sour Glasner’s new dawn at Forest",
+      "blurb": "Leeds United manager Daniel Farke reacts to his side's 1–0 win against Nottingham Forest, sealed by Anton Stach's free‑kick in the opening game of their 2026-27 Premier League…",
+      "summary": "Leeds United manager Daniel Farke reacts to his side's 1–0 win against Nottingham Forest, sealed by Anton Stach's free‑kick in the opening game of their 2026-27 Premier League season. For Nottingham Forest, a few minutes before kick-off and before the curtain went up on another season, a new protagonist emerged from the tunnel. Oliver Glasner, Forest’s fifth head coach in less than 12 months, surveyed the scene from the home technical area. Aggregated from Farke, Guardian Football, Sky Sports Football.",
+      "category": "coach",
+      "published": "2026-08-22T16:13:13Z",
+      "updated": "2026-08-22T16:55:35Z",
+      "players": [
+        {
+          "key": "stach",
+          "name": "Anton Stach",
+          "slug": "anton-stach",
+          "pos": "MID",
+          "team": "LEE"
+        },
+        {
+          "key": "sels",
+          "name": "Matz Sels",
+          "slug": "matz-sels",
+          "pos": "GKP",
+          "team": "NFO"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Anton Stach snatches late Leeds winner to sour Glasner’s new dawn at Forest",
+          "url": "https://www.theguardian.com/football/2026/aug/22/nottingham-forest-leeds-premier-league-match-report",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "For Nottingham Forest, a few minutes before kick-off and before the curtain went up on another season, a new protagonist emerged from the tunnel. Oliver Glasner, Forest’s fifth head coach in less than 12 months, surveyed the scene from the home technical area. But the start of th",
+          "published": "Sat, 22 Aug 2026 16:13:13 GMT"
+        },
+        {
+          "title": "Stach snatches win for Leeds at Forest",
+          "url": "https://www.skysports.com/football/nottingham-forest-vs-leeds-united/report/559449",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "Anton Stach's stunning late free-kick snatched the points for Leeds as Oliver Glasner lost his first Premier League game in charge of Nottingham Forest 1-0 at the City Ground.",
+          "published": "Sat, 22 Aug 2026 16:45:00 BST"
+        },
+        {
+          "title": "'I'm very happy and have many compliments for my players'",
+          "url": "https://www.bbc.co.uk/sport/football/videos/cn5n57dwewko?at_medium=RSS&at_campaign=rss",
+          "publisher": "Farke",
+          "kind": "video",
+          "snippet": "Leeds United manager Daniel Farke reacts to his side's 1–0 win against Nottingham Forest, sealed by Anton Stach's free‑kick in the opening game of their 2026-27 Premier League season.",
+          "published": "Sat, 22 Aug 2026 16:55:35 GMT"
         }
       ]
     },
@@ -9918,6 +10197,172 @@
           "kind": "article",
           "snippet": "Bruno Fernandes approves Man Utd transfer with Michael Carrick 'closing in' on deal Daily Express",
           "published": "Sat, 28 Mar 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "premier-league-injuries-injury-table-suspension-fpl-every-876ebe3d",
+      "slug": "premier-league-injuries-injury-table-suspension-fpl-every-876ebe3d",
+      "sport": "soccer",
+      "headline": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
+      "blurb": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club Sky Sports",
+      "summary": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club Sky Sports Arsenal rolled to the Premier League title in 2025-26, but what will the new season hold? Ian Darke makes his best- and worst-case scenario forecasts for all 20 teams. Aggregated from Sky Sports, ESPN Soccer, ESPN, NBC Sports, Sports Illustrated and 5 more.",
+      "category": "injury",
+      "published": "2025-03-17T16:01:15Z",
+      "updated": "2026-08-22T10:25:34Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Ian Darke's best- and worst-case scenarios for every Premier League club",
+          "url": "https://www.espn.com/soccer/story/_/id/49659699/premier-league-ian-darke-preview-arsenal-manchester-city-manchester-united-liverpool-chelsea",
+          "publisher": "ESPN Soccer",
+          "kind": "article",
+          "snippet": "Arsenal rolled to the Premier League title in 2025-26, but what will the new season hold? Ian Darke makes his best- and worst-case scenario forecasts for all 20 teams.",
+          "published": "Fri, 21 Aug 2026 14:34:18 EST"
+        },
+        {
+          "title": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQc1hwX3lxRVlEcGp2NXpKVVN1YVZuZERxWkZ2S2FSbEV5Z0hZQnJuNEd0emZpUE80WHdrWE1MckVEZTc1X243dHNoa3FrQTFZQ0tQZFNyNUtXMmxKdzZ5dl83Z0RHSUJxUFR5VVhqMWh6X1pMTnpsM2I5dkh2c1RYcXhDRGNjU1NKR1BDR1NKOWQ1eWVFeGVPVWM0aXgzS1RnUFBSTEQ2dWg5UmlmR21TYWpsdWNZYjlWTFdpbTlIUjRrSmdRSmFVV1V4Q3Vwbzc4b25TNzVBV2NXaGQ4NFZwRTZfWk90Tkg5?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club Sky Sports",
+          "published": "Mon, 27 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League 2026 summer transfers: All confirmed ins, outs for every club",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaVRSVUIzcC1tdlVQdUJjYWZVNVpIN0ZydXlfS1RFX1Zjb1k1MmV6Wnp2WTdaOTMtTVpwdlBRTjJEeE8tY25hN1BmWi1STjNpSjBVU3hBVFZiRUtncG11cGphZ3FueVVPcnN2WXdBSG5kM3N1eVhBekV0X2FKclZWTjJocVFUQmt5YjVOUEtYYmRUUzVCYWhOQXhTZkUyMTA1WEMtOVBJUzBWTkVLRTNOWnFPV0N6bWhjZ3c?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Premier League 2026 summer transfers: All confirmed ins, outs for every club ESPN",
+          "published": "Fri, 21 Aug 2026 06:06:00 GMT"
+        },
+        {
+          "title": "Premier League transfers for summer 2026: List of every in and out for each club",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQkZWaC1DRlRVUDJfakRDY2ozVGxDSTY4VVViS1VCdGpmSVJmTGNNajdUUUhJQkJPVkotdVdKeEFzd1NPVXkyZ1pHVUpxMjlCdWFpTVE2cnNiODJHc1BpRnBtTTRQdlBkYWZmRVVRblh5ZWc2T3NRZmN3SHUyUk9RZWF1RkprME0xMU5vYlROQjJJajd1YktXcm9LSFpYMkd3Y0NYU1R1RmlCU0N0bm51bEdKQjF4blVB?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Premier League transfers for summer 2026: List of every in and out for each club NBC Sports",
+          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "One Signing Every Premier League Club Must Make in Final Month of Transfer Window",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTkVURTlVX0hTOWpWNmdFU3VUaURaSzBrNE9kd21MalUwWDBLZVhPMWl6YllJODIyRFg5Yno5aFlkM2IxRGRla0Z1UXh4ZXoyQ2JpOVlMNXBYZEYydEo3Vmk4SVROVm5ael9RMC1EVndkWk9TVDNEdnNmWExQdVhvX3VoX0picDlfTTlsSlZXTXozZW9VV2RDTG9EazBMcFNkalVwSXJ2eC1ndw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "One Signing Every Premier League Club Must Make in Final Month of Transfer Window Sports Illustrated",
+          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "One transfer every Premier League club needs before deadline day",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNX1VVbUxQX1ZsZy1PRHNNbUJBSDJ4X1JqY2NudFF0U1ZkN1htdGNjM0VzcjBaSGdQck9UcFppTWNSemp5X0YzV2xFOHBfM2kxLU10NmNkWTFHcnVIWVJaWVJPXzh4MlAwNjNjSGVhTENYd3otUjBjd01TS2lmZDl1MHBaNXdfT20xVzNybg?oc=5",
+          "publisher": "The i Paper",
+          "kind": "article",
+          "snippet": "One transfer every Premier League club needs before deadline day The i Paper",
+          "published": "Mon, 17 Aug 2026 06:00:00 GMT"
+        },
+        {
+          "title": "Premier League transfer window CLOSED | Which club had the best transfer window? | Scoreline",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10UjFoWlpWOEJvZURIcm9QU2hpSGhwNlY1NW1fV3ExX1pibFhsd2wwVzZRRWtRV0tDaVdvTXpha3ZRaWFZRDRoQi1ibklESjRDQ2ZZSC1B?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Premier League transfer window CLOSED | Which club had the best transfer window? | Scoreline YouTube",
+          "published": "Mon, 01 Sep 2025 20:45:03 GMT"
+        },
+        {
+          "title": "Ranking all 33 Premier League transfers in the 2026 winter window from worst to best",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV3JGdVB6QTFKb1NJVzJVRzZaYURiWDlQcXVfV1hlYlBZTVRBZUxSSFV6UFJNREFvX0ljQXJDQndXX09oVUptTEhvOXVfTXdpTTF1MUduRDNiSDU5ZC16OVp4NS10bkVjbWxQSkJyMXY5djVHU2lwaXhvZGtZMVBqRXNZeWlHVVNRbkpWVHRBTlgzZFhVb3BFRkJ3bllkUQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Ranking all 33 Premier League transfers in the 2026 winter window from worst to best The New York Times",
+          "published": "Tue, 03 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "The Premier League’s rising stars: A prospect from every club",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQY2laYVliR2o2a0YxRlhtTElXTTFISkM2Z2hwblRUalNnWi1wOVN0SGVJZzNSbmpnQ1VOOGRWSUJmRVNCRktEamFDS3JhZ1NqTW1qaTZSdUdVdlpjV0xZd3U5S3dpNHhNa0hwdWxaV0I5X3lGQVVQejhfc3VkS096TG9nZkZiYjkwOURkN0xjZDZRemo5?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "The Premier League’s rising stars: A prospect from every club - The Athletic The New York Times",
+          "published": "Sat, 22 Aug 2026 10:25:34 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DZC1lcDl1c0VweFBqX3N6Ym9xSF9KUkVjZTl6YzlIT0NNZGFFc2l3SmxMRzNHN1BVYmlueURTbDkwNTJWVU12RFA5Z05RZzJqdVV5ZXV3ZHRfYTg?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZemlWcDBHMExQaUR2Q2FaUGhaTWY0LVJwdm43c2NQOUlQdFRhaEMtVl85N3pmRHk4X0Z2M2tpTmQ5T2V5cU9ZdmlSU0N1ZGx4Qmhva1BhX2JpTXc?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 06 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1M21fZTFXVXhrTzI4cVJDMk1BanNCTHgyVFJ2aTduZHlXOVpDQTJoQjR1SHZhT0R1UHdTTjlOWW5ia29OUTRoRzJUaDVHUjB4QVFhY19nQWxIakU?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 24 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "One player EVERY Premier League club MUST SIGN before Deadline Day… ✍️ | Saturday Social",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1feUl2RWp6bDJ3X0E4bkYwdTdyem5FdGpJUFlIOURlbDh1Z1l4OGc4UUVab1NKLW1ROUE5bUdwODhUa3lyalJLUkRnYXIxbFJzby1aa1R3?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "One player EVERY Premier League club MUST SIGN before Deadline Day… ✍️ | Saturday Social YouTube",
+          "published": "Sat, 22 Aug 2026 09:30:09 GMT"
+        },
+        {
+          "title": "Premier League Funny Bloopers and Silly Injuries",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3SGxTRTgyS1c2TV8xRVFuZ0xaUWt0eThiU082dUZvXzdRQ0ZYMWRIaTAwYndyc20wY0RFbE5sQU9RMmVtT3FZVUZfT1FNTUJDV2tNMVFn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Premier League Funny Bloopers and Silly Injuries YouTube",
+          "published": "Mon, 17 Mar 2025 16:01:15 GMT"
+        },
+        {
+          "title": "All the latest Premier League team and injury news as as FPL managers face big last-minute decisions #DailyExpress",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9mdk93ZjNNMEZvMndqeFRPRHFLMThRYllxZm9yVkZtRHNXVW01TjI3YnZNcHdRZXB1ZC1Ncjdob1l2cWkzWkNfY1E4NVJmTzV5SnUtUnBMYkcyNjVXLXk0OHlmT2xxYWl4Wl9hbmFnbw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "All the latest Premier League team and injury news as as FPL managers face big last-minute decisions #DailyExpress x.com",
+          "published": "Fri, 21 Aug 2026 08:03:04 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5SRlRWcXpwenJvOF8xX2FkeHRiNmNFQ1FXN1NXbFUwNkR6SGdNVElzZDNtSktfbGF6LWx1WnZuaWRTQTB3X1RPcHBkWGZPSEwtV0FmUDRsajNmWGM?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBblFfaE5id0NvWjRPaTd6STJHdUhGWmNUc0tpQmZhNGItUGdaWFBsem1QeXVXVHV4a2R5UXpDLXNCX3FpRExQMDdhalljU1kwcmRIVmJDTUx0eGM?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5famVyUi1vZWtqb0Mtb0xmSVR6d2x0aXk5aTEyV3ZZQXQxUkEydWczNE5vczNpZlZFM0t4ME1scmhkeGZRanV6THlxLVVlTVFyWV9rTC1MV0YwSlk?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 05 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "The Alternative Premier League Table: No 12 – Who have injuries hurt most?",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT1RuMVJ6RFR2bEV4V1ZXMndKWVRPSXdyUEhhTTF0b0EtcjhIMnZ4VUhKbG5hTzNsLXRpWi14WlJCT0Q0dGZvSXd0Yzc3SmtFZTkzdmZxc3h6WW8wVFpfUzROQkRBcVdLN1ltcy04QXRmSncwTkc5V3ROM244a29kWDlYVnJ6RWdicFFYdzN5Ukhjb1lId3JZcXlrd3AzY2xBYW5Fa1Fkcw?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "The Alternative Premier League Table: No 12 – Who have injuries hurt most? - The Athletic The New York Times",
+          "published": "Wed, 19 Nov 2025 08:00:00 GMT"
         }
       ]
     },
@@ -10681,326 +11126,93 @@
       ]
     },
     {
-      "id": "transfer-rumors-nottingham-forest-bid-70m-igor-thiago-26176101",
-      "slug": "transfer-rumors-nottingham-forest-bid-70m-igor-thiago-26176101",
+      "id": "yankuba-minteh-injury-explained-how-long-liverpool-target-8bc2cb8e",
+      "slug": "yankuba-minteh-injury-explained-how-long-liverpool-target-8bc2cb8e",
       "sport": "soccer",
-      "headline": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago",
-      "blurb": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago ESPN",
-      "summary": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago ESPN Desk reading of ESPN.",
-      "category": "trade",
-      "published": "2026-08-23T09:50:00Z",
-      "updated": "2026-08-23T09:50:00Z",
-      "players": [
-        {
-          "key": "thiago",
-          "name": "Igor Thiago",
-          "slug": "igor-thiago",
-          "pos": "FWD",
-          "team": "BRE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVXczYnpjdV9PQ21iTHZlUEZwWG1LUXAwYzBxTnl5T0pqWlpJTlREN3ZVNmZLVG40MDBQbHAzT1FPV0tRRDVVemE2S01rVy0tQ1F1blF5SWFJUEthWGxRdE9yNHBvNUYxZ3l5amE1QzMyTklNajBUNEZtNnB4cHdValFhSHYzTDJnWmljdzI0QjYtckhrTXhDeFVaU1c1Nk44NC01UVBTQzVpZw?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago ESPN",
-          "published": "Sun, 23 Aug 2026 09:50:00 GMT"
-        },
-        {
-          "title": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZTFzMGRRX2JzYWtXMkQtM0N0RnNMcUplQ2M0VmlEZWE3Y3BKelYwM2FiYndlUUtVcWZiOEk5aUJqUG9yTVBhUWlMNlQyYXk5R1J5UldwSGpEQzhzSWV2NHpzdzdUY3JKMmhIZnE3aEoyWXJfM3FBN2gzMVdhdDVMSm5xMUdscEp6Y3pmUUZuQVJXRWxINGV0R29ocXl1b3ZCYk1SZHg0eUJzOHBXNFZB?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Nottingham Forest bid £70m for Igor Thiago ESPN",
-          "published": "Sun, 23 Aug 2026 09:50:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "anton-stach-snatches-late-leeds-winner-sour-glasner-8fa65149",
-      "slug": "anton-stach-snatches-late-leeds-winner-sour-glasner-8fa65149",
-      "sport": "soccer",
-      "headline": "Anton Stach snatches late Leeds winner to sour Glasner’s new dawn at Forest",
-      "blurb": "Leeds United manager Daniel Farke reacts to his side's 1–0 win against Nottingham Forest, sealed by Anton Stach's free‑kick in the opening game of their 2026-27 Premier League…",
-      "summary": "Leeds United manager Daniel Farke reacts to his side's 1–0 win against Nottingham Forest, sealed by Anton Stach's free‑kick in the opening game of their 2026-27 Premier League season. For Nottingham Forest, a few minutes before kick-off and before the curtain went up on another season, a new protagonist emerged from the tunnel. Oliver Glasner, Forest’s fifth head coach in less than 12 months, surveyed the scene from the home technical area. Aggregated from Farke, Guardian Football, Sky Sports Football.",
-      "category": "coach",
-      "published": "2026-08-22T16:13:13Z",
-      "updated": "2026-08-22T16:55:35Z",
-      "players": [
-        {
-          "key": "stach",
-          "name": "Anton Stach",
-          "slug": "anton-stach",
-          "pos": "MID",
-          "team": "LEE"
-        },
-        {
-          "key": "sels",
-          "name": "Matz Sels",
-          "slug": "matz-sels",
-          "pos": "GKP",
-          "team": "NFO"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Anton Stach snatches late Leeds winner to sour Glasner’s new dawn at Forest",
-          "url": "https://www.theguardian.com/football/2026/aug/22/nottingham-forest-leeds-premier-league-match-report",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "For Nottingham Forest, a few minutes before kick-off and before the curtain went up on another season, a new protagonist emerged from the tunnel. Oliver Glasner, Forest’s fifth head coach in less than 12 months, surveyed the scene from the home technical area. But the start of th",
-          "published": "Sat, 22 Aug 2026 16:13:13 GMT"
-        },
-        {
-          "title": "Stach snatches win for Leeds at Forest",
-          "url": "https://www.skysports.com/football/nottingham-forest-vs-leeds-united/report/559449",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "Anton Stach's stunning late free-kick snatched the points for Leeds as Oliver Glasner lost his first Premier League game in charge of Nottingham Forest 1-0 at the City Ground.",
-          "published": "Sat, 22 Aug 2026 16:45:00 BST"
-        },
-        {
-          "title": "'I'm very happy and have many compliments for my players'",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cn5n57dwewko?at_medium=RSS&at_campaign=rss",
-          "publisher": "Farke",
-          "kind": "video",
-          "snippet": "Leeds United manager Daniel Farke reacts to his side's 1–0 win against Nottingham Forest, sealed by Anton Stach's free‑kick in the opening game of their 2026-27 Premier League season.",
-          "published": "Sat, 22 Aug 2026 16:55:35 GMT"
-        }
-      ]
-    },
-    {
-      "id": "ask-him-emery-cryptic-watkins-amid-transfer-interest-1d20c828",
-      "slug": "ask-him-emery-cryptic-watkins-amid-transfer-interest-1d20c828",
-      "sport": "soccer",
-      "headline": "'Ask him' - Emery cryptic on Watkins amid transfer interest",
-      "blurb": "Unai Emery gave a coy and cryptic response to questions about Ollie Watkins' absence from Aston Villa's squad for their Premier League defeat at Brighton.",
-      "summary": "Unai Emery gave a coy and cryptic response to questions about Ollie Watkins' absence from Aston Villa's squad for their Premier League defeat at Brighton. Desk reading of Sky Sports Football.",
-      "category": "trade",
-      "published": "2026-08-23T17:02:13Z",
-      "updated": "2026-08-23T17:02:13Z",
-      "players": [
-        {
-          "key": "watkins",
-          "name": "Ollie Watkins",
-          "slug": "ollie-watkins",
-          "pos": "FWD",
-          "team": "AVL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "'Ask him' - Emery cryptic on Watkins amid transfer interest",
-          "url": "https://www.skysports.com/football/news/12040/13576353/ollie-watkins-transfer-news-aston-villa-boss-unai-emery-gives-cryptic-answer-when-asked-about-striker-amid-al-hilal-interest",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "Unai Emery gave a coy and cryptic response to questions about Ollie Watkins' absence from Aston Villa's squad for their Premier League defeat at Brighton.",
-          "published": "Sun, 23 Aug 2026 16:46:00 BST"
-        }
-      ]
-    },
-    {
-      "id": "brilliant-finish-elanga-puts-newcastle-ahead-inside-five-7c955177",
-      "slug": "brilliant-finish-elanga-puts-newcastle-ahead-inside-five-7c955177",
-      "sport": "soccer",
-      "headline": "'Brilliant finish!' Elanga puts Newcastle ahead inside FIVE minutes",
-      "blurb": "Matthias Jaissle's new Newcastle United side go ahead against Liverpool thanks to Anthony Elanga's early goal.",
-      "summary": "Matthias Jaissle's new Newcastle United side go ahead against Liverpool thanks to Anthony Elanga's early goal. Desk reading of Sky Sports Football.",
-      "category": "wire",
-      "published": "2026-08-23T17:02:13Z",
-      "updated": "2026-08-23T17:02:13Z",
-      "players": [
-        {
-          "key": "elanga",
-          "name": "Anthony Elanga",
-          "slug": "anthony-elanga",
-          "pos": "MID",
-          "team": "NEW"
-        },
-        {
-          "key": "anthony",
-          "name": "Jaidon Anthony",
-          "slug": "jaidon-anthony",
-          "pos": "MID",
-          "team": "BRE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "'Brilliant finish!' Elanga puts Newcastle ahead inside FIVE minutes",
-          "url": "https://www.skysports.com/watch/video/13576346/goal-a-elanga-5-newcastle-1-0-liverpool",
-          "publisher": "Sky Sports Football",
-          "kind": "video",
-          "snippet": "Matthias Jaissle's new Newcastle United side go ahead against Liverpool thanks to Anthony Elanga's early goal.",
-          "published": "Sun, 23 Aug 2026 16:45:00 BST"
-        }
-      ]
-    },
-    {
-      "id": "premier-league-injuries-injury-table-suspension-fpl-every-876ebe3d",
-      "slug": "premier-league-injuries-injury-table-suspension-fpl-every-876ebe3d",
-      "sport": "soccer",
-      "headline": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
-      "blurb": "The Alternative Premier League Table: No 12 – Who have injuries hurt most?",
-      "summary": "The Alternative Premier League Table: No 12 – Who have injuries hurt most? - The Athletic The New York Times Arsenal rolled to the Premier League title in 2025-26, but what will the new season hold? Aggregated from The New York Times, ESPN Soccer, Sky Sports, ESPN, NBC Sports and 5 more.",
+      "headline": "Virgil van Dijk injury: How long will Liverpool star be out for? Here’s everything we know about his ACL",
+      "blurb": "Virgil van Dijk injury: How long will Liverpool star be out for?",
+      "summary": "Virgil van Dijk injury: How long will Liverpool star be out for? Here’s everything we know about his ACL The i Paper Yankuba Minteh injury explained – how long Liverpool target will be out This Is Anfield Aggregated from The i Paper, This Is Anfield.",
       "category": "injury",
-      "published": "2025-03-17T16:01:15Z",
-      "updated": "2026-08-22T10:25:34Z",
-      "players": [],
+      "published": "2020-10-19T07:00:00Z",
+      "updated": "2026-08-22T13:06:55Z",
+      "players": [
+        {
+          "key": "virgil van dijk",
+          "name": "Virgil van Dijk",
+          "slug": "virgil-van-dijk",
+          "pos": "DEF",
+          "team": "LIV"
+        },
+        {
+          "key": "minteh",
+          "name": "Yankuba Minteh",
+          "slug": "yankuba-minteh",
+          "pos": "MID",
+          "team": "BHA"
+        }
+      ],
       "sources": [
         {
-          "title": "Ian Darke's best- and worst-case scenarios for every Premier League club",
-          "url": "https://www.espn.com/soccer/story/_/id/49659699/premier-league-ian-darke-preview-arsenal-manchester-city-manchester-united-liverpool-chelsea",
-          "publisher": "ESPN Soccer",
+          "title": "Yankuba Minteh injury explained – how long Liverpool target will be out",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPakRxS09nXzNOUXR5WEVhV2Z4TDhHOGVGOUJyZFNDV2NkM3dwNlQ2em1nSXdGdjlDZ2hnblExOUlMeE9JNk1SbXR6MEwwS3NTNG5aTk02SkswYzBHU19TeXpTanpGSktGUEFUSERuMzAzVFQ3aVBPUXl0aWl1S3RybVpwR2J6Um5RU1p3RXdzWWV5eHlKNERjYWdEekhmLS1BWjNxbzU5ZGY5cjFvUGc?oc=5",
+          "publisher": "This Is Anfield",
           "kind": "article",
-          "snippet": "Arsenal rolled to the Premier League title in 2025-26, but what will the new season hold? Ian Darke makes his best- and worst-case scenario forecasts for all 20 teams.",
-          "published": "Fri, 21 Aug 2026 14:34:18 EST"
+          "snippet": "Yankuba Minteh injury explained – how long Liverpool target will be out This Is Anfield",
+          "published": "Sat, 22 Aug 2026 13:06:55 GMT"
         },
         {
-          "title": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQc1hwX3lxRVlEcGp2NXpKVVN1YVZuZERxWkZ2S2FSbEV5Z0hZQnJuNEd0emZpUE80WHdrWE1MckVEZTc1X243dHNoa3FrQTFZQ0tQZFNyNUtXMmxKdzZ5dl83Z0RHSUJxUFR5VVhqMWh6X1pMTnpsM2I5dkh2c1RYcXhDRGNjU1NKR1BDR1NKOWQ1eWVFeGVPVWM0aXgzS1RnUFBSTEQ2dWg5UmlmR21TYWpsdWNZYjlWTFdpbTlIUjRrSmdRSmFVV1V4Q3Vwbzc4b25TNzVBV2NXaGQ4NFZwRTZfWk90Tkg5?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club Sky Sports",
-          "published": "Mon, 27 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League 2026 summer transfers: All confirmed ins, outs for every club",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOaVRSVUIzcC1tdlVQdUJjYWZVNVpIN0ZydXlfS1RFX1Zjb1k1MmV6Wnp2WTdaOTMtTVpwdlBRTjJEeE8tY25hN1BmWi1STjNpSjBVU3hBVFZiRUtncG11cGphZ3FueVVPcnN2WXdBSG5kM3N1eVhBekV0X2FKclZWTjJocVFUQmt5YjVOUEtYYmRUUzVCYWhOQXhTZkUyMTA1WEMtOVBJUzBWTkVLRTNOWnFPV0N6bWhjZ3c?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Premier League 2026 summer transfers: All confirmed ins, outs for every club ESPN",
-          "published": "Fri, 21 Aug 2026 06:06:00 GMT"
-        },
-        {
-          "title": "Premier League transfers for summer 2026: List of every in and out for each club",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQkZWaC1DRlRVUDJfakRDY2ozVGxDSTY4VVViS1VCdGpmSVJmTGNNajdUUUhJQkJPVkotdVdKeEFzd1NPVXkyZ1pHVUpxMjlCdWFpTVE2cnNiODJHc1BpRnBtTTRQdlBkYWZmRVVRblh5ZWc2T3NRZmN3SHUyUk9RZWF1RkprME0xMU5vYlROQjJJajd1YktXcm9LSFpYMkd3Y0NYU1R1RmlCU0N0bm51bEdKQjF4blVB?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Premier League transfers for summer 2026: List of every in and out for each club NBC Sports",
-          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "One Signing Every Premier League Club Must Make in Final Month of Transfer Window",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTkVURTlVX0hTOWpWNmdFU3VUaURaSzBrNE9kd21MalUwWDBLZVhPMWl6YllJODIyRFg5Yno5aFlkM2IxRGRla0Z1UXh4ZXoyQ2JpOVlMNXBYZEYydEo3Vmk4SVROVm5ael9RMC1EVndkWk9TVDNEdnNmWExQdVhvX3VoX0picDlfTTlsSlZXTXozZW9VV2RDTG9EazBMcFNkalVwSXJ2eC1ndw?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "One Signing Every Premier League Club Must Make in Final Month of Transfer Window Sports Illustrated",
-          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "One transfer every Premier League club needs before deadline day",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNX1VVbUxQX1ZsZy1PRHNNbUJBSDJ4X1JqY2NudFF0U1ZkN1htdGNjM0VzcjBaSGdQck9UcFppTWNSemp5X0YzV2xFOHBfM2kxLU10NmNkWTFHcnVIWVJaWVJPXzh4MlAwNjNjSGVhTENYd3otUjBjd01TS2lmZDl1MHBaNXdfT20xVzNybg?oc=5",
+          "title": "Virgil van Dijk injury: How long will Liverpool star be out for? Here’s everything we know about his ACL",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX2V6cjNpaTBSNVY2Mm1pQzNPbmlFNzhtLWFNanFBMkdKblYxa3RWQTE2MlAzU19RSEIybEFGQmdfWTN0V0ZjaGd4c3V2Z0I5TzZZUGxUeEIxZ0pUdldoYWVUY0hnc0djZmRFenV6bHVPcW81SFdOYjBsYWZvYjlWcEN5elVGdEluX0FwUFdfT3QtTGxxMGxRM05QUkxkSFZXWkFxUVNtbkNGMVFXZGc?oc=5",
           "publisher": "The i Paper",
           "kind": "article",
-          "snippet": "One transfer every Premier League club needs before deadline day The i Paper",
-          "published": "Mon, 17 Aug 2026 06:00:00 GMT"
-        },
+          "snippet": "Virgil van Dijk injury: How long will Liverpool star be out for? Here’s everything we know about his ACL The i Paper",
+          "published": "Mon, 19 Oct 2020 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "man-city-given-double-injury-boost-ahead-bournemouth-f7353ba6",
+      "slug": "man-city-given-double-injury-boost-ahead-bournemouth-f7353ba6",
+      "sport": "soccer",
+      "headline": "Man City given double injury boost ahead of Bournemouth amid Erling Haaland and Rodri update",
+      "blurb": "Erling Haaland out of FA Cup tie vs Newcastle as Man City issue injury update Metro.co.uk",
+      "summary": "Erling Haaland out of FA Cup tie vs Newcastle as Man City issue injury update Metro.co.uk MARESCA: “I WILL FIND THE NEW RODRI!” 🔍 Man City v Bournemouth 🔒 EMBARGO YouTube Man City given double injury boost ahead of Bournemouth amid Erling Haaland and Rodri update Manchester Evening News Aggregated from Metro.co.uk, YouTube, Manchester Evening News.",
+      "category": "injury",
+      "published": "2025-10-31T07:00:00Z",
+      "updated": "2026-08-22T21:30:33Z",
+      "players": [
         {
-          "title": "Premier League transfer window CLOSED | Which club had the best transfer window? | Scoreline",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10UjFoWlpWOEJvZURIcm9QU2hpSGhwNlY1NW1fV3ExX1pibFhsd2wwVzZRRWtRV0tDaVdvTXpha3ZRaWFZRDRoQi1ibklESjRDQ2ZZSC1B?oc=5",
+          "key": "erling haaland",
+          "name": "Erling Haaland",
+          "slug": "erling-haaland",
+          "pos": "FWD",
+          "team": "MCI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "MARESCA: “I WILL FIND THE NEW RODRI!” 🔍 Man City v Bournemouth 🔒 EMBARGO",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9GcEViMXhCeFpsdEVvVUVmTU9EdlV1TUdPNUtWUjh6b1ppSm51OEFGaVZfRmJDRTJqZGEyaDFtUW1kVlBiRTM3X25LT1dNcW9QUUg1WWNR?oc=5",
           "publisher": "YouTube",
           "kind": "video",
-          "snippet": "Premier League transfer window CLOSED | Which club had the best transfer window? | Scoreline YouTube",
-          "published": "Mon, 01 Sep 2025 20:45:03 GMT"
+          "snippet": "MARESCA: “I WILL FIND THE NEW RODRI!” 🔍 Man City v Bournemouth 🔒 EMBARGO YouTube",
+          "published": "Sat, 22 Aug 2026 21:30:33 GMT"
         },
         {
-          "title": "Ranking all 33 Premier League transfers in the 2026 winter window from worst to best",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV3JGdVB6QTFKb1NJVzJVRzZaYURiWDlQcXVfV1hlYlBZTVRBZUxSSFV6UFJNREFvX0ljQXJDQndXX09oVUptTEhvOXVfTXdpTTF1MUduRDNiSDU5ZC16OVp4NS10bkVjbWxQSkJyMXY5djVHU2lwaXhvZGtZMVBqRXNZeWlHVVNRbkpWVHRBTlgzZFhVb3BFRkJ3bllkUQ?oc=5",
-          "publisher": "The New York Times",
+          "title": "Man City given double injury boost ahead of Bournemouth amid Erling Haaland and Rodri update",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV3UwdzRXUU80blFkLVY1TmZjel85WUhVRU04UTJvZFNwTi1aTzNNanN2Y1FLelN4Ny1IYWtlRWh3dEZmcGdLZHgtMVViNUlZampua0c5YXAyYjduQWFIUTIzVzYxWlFyM0k3QzduTnRfdFNCb2xyMXRPOTJwdTZtNUdpRFlXWUNOeG9ESWRhbXpLR0UyY0tDTW84YTZUdUdoaXBPTDgzQmplQdIBrwFBVV95cUxPMlYyb01VU0lsQTZqV2kxZVNvYkZ0R2JlWFVIazlLNndySi1pczU3UjVBRE5TSWxoVDFvclE5MERJQUY3SjlqMXQyVjRlVXlHX0NVZXlaanZaUnQtZ0h1NGRQbmR0T1hQT1FJQ3Z0QTRfSVB3Z1FUbVJyN2ZBQ2RVYlpGY3AwMktPTndKc2dqWkxCUUF6WGxVVldRYWlyeXdyemc0akxNd3dNeEl0T0Yw?oc=5",
+          "publisher": "Manchester Evening News",
           "kind": "article",
-          "snippet": "Ranking all 33 Premier League transfers in the 2026 winter window from worst to best The New York Times",
-          "published": "Tue, 03 Feb 2026 08:00:00 GMT"
+          "snippet": "Man City given double injury boost ahead of Bournemouth amid Erling Haaland and Rodri update Manchester Evening News",
+          "published": "Fri, 31 Oct 2025 07:00:00 GMT"
         },
         {
-          "title": "The Premier League’s rising stars: A prospect from every club",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQY2laYVliR2o2a0YxRlhtTElXTTFISkM2Z2hwblRUalNnWi1wOVN0SGVJZzNSbmpnQ1VOOGRWSUJmRVNCRktEamFDS3JhZ1NqTW1qaTZSdUdVdlpjV0xZd3U5S3dpNHhNa0hwdWxaV0I5X3lGQVVQejhfc3VkS096TG9nZkZiYjkwOURkN0xjZDZRemo5?oc=5",
-          "publisher": "The New York Times",
+          "title": "Erling Haaland out of FA Cup tie vs Newcastle as Man City issue injury update",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZC11d2RvRlFHNTU1NmRVeGYwSlI1MVlrX1dWYVVoMTFjYnFldWZCcm9BZmZKVkNsaFFOb2hiTWplY1NLWkhPSS1UV0VmQXpyTmswcThpVHZ2RUh6SHBsZjVXUlB1UnVJZktKOXFrTnZLb0ZfcnRSOHZYVVRTTHdscVNqd2R2bWhTeGhkVXpNRHNEWVhHbTYwQko1VkgwekNHU0ZuZjkzNVR2SUVj0gGyAUFVX3lxTE1HbUdJbkR2QWFuR0RSX0VBRk5OQWM2MGItM0NTR2E3azM4dFNDY18tbC1BaVZOU2N5Q2JWQktibEtvcklQb3ZrcUhHM1Q0eDRNVnNwSlNyNmMzYlpkeUxSWE9fM2N3bWhjTUhHMVhITWRpY0hfNHM0VmF3VVA0cVNXaWRBTzVrckJnN0ZlR21qSDVtVDU5UDZCeWJoM0JVVUFrQldFODl4TnVnSHZEQWFMT0E?oc=5",
+          "publisher": "Metro.co.uk",
           "kind": "article",
-          "snippet": "The Premier League’s rising stars: A prospect from every club - The Athletic The New York Times",
-          "published": "Sat, 22 Aug 2026 10:25:34 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DZC1lcDl1c0VweFBqX3N6Ym9xSF9KUkVjZTl6YzlIT0NNZGFFc2l3SmxMRzNHN1BVYmlueURTbDkwNTJWVU12RFA5Z05RZzJqdVV5ZXV3ZHRfYTg?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZemlWcDBHMExQaUR2Q2FaUGhaTWY0LVJwdm43c2NQOUlQdFRhaEMtVl85N3pmRHk4X0Z2M2tpTmQ5T2V5cU9ZdmlSU0N1ZGx4Qmhva1BhX2JpTXc?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 06 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1M21fZTFXVXhrTzI4cVJDMk1BanNCTHgyVFJ2aTduZHlXOVpDQTJoQjR1SHZhT0R1UHdTTjlOWW5ia29OUTRoRzJUaDVHUjB4QVFhY19nQWxIakU?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 24 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "One player EVERY Premier League club MUST SIGN before Deadline Day… ✍️ | Saturday Social",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1feUl2RWp6bDJ3X0E4bkYwdTdyem5FdGpJUFlIOURlbDh1Z1l4OGc4UUVab1NKLW1ROUE5bUdwODhUa3lyalJLUkRnYXIxbFJzby1aa1R3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "One player EVERY Premier League club MUST SIGN before Deadline Day… ✍️ | Saturday Social YouTube",
-          "published": "Sat, 22 Aug 2026 09:30:09 GMT"
-        },
-        {
-          "title": "Premier League Funny Bloopers and Silly Injuries",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3SGxTRTgyS1c2TV8xRVFuZ0xaUWt0eThiU082dUZvXzdRQ0ZYMWRIaTAwYndyc20wY0RFbE5sQU9RMmVtT3FZVUZfT1FNTUJDV2tNMVFn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Premier League Funny Bloopers and Silly Injuries YouTube",
-          "published": "Mon, 17 Mar 2025 16:01:15 GMT"
-        },
-        {
-          "title": "All the latest Premier League team and injury news as as FPL managers face big last-minute decisions #DailyExpress",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9mdk93ZjNNMEZvMndqeFRPRHFLMThRYllxZm9yVkZtRHNXVW01TjI3YnZNcHdRZXB1ZC1Ncjdob1l2cWkzWkNfY1E4NVJmTzV5SnUtUnBMYkcyNjVXLXk0OHlmT2xxYWl4Wl9hbmFnbw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "All the latest Premier League team and injury news as as FPL managers face big last-minute decisions #DailyExpress x.com",
-          "published": "Fri, 21 Aug 2026 08:03:04 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5SRlRWcXpwenJvOF8xX2FkeHRiNmNFQ1FXN1NXbFUwNkR6SGdNVElzZDNtSktfbGF6LWx1WnZuaWRTQTB3X1RPcHBkWGZPSEwtV0FmUDRsajNmWGM?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBblFfaE5id0NvWjRPaTd6STJHdUhGWmNUc0tpQmZhNGItUGdaWFBsem1QeXVXVHV4a2R5UXpDLXNCX3FpRExQMDdhalljU1kwcmRIVmJDTUx0eGM?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5famVyUi1vZWtqb0Mtb0xmSVR6d2x0aXk5aTEyV3ZZQXQxUkEydWczNE5vczNpZlZFM0t4ME1scmhkeGZRanV6THlxLVVlTVFyWV9rTC1MV0YwSlk?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 05 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "The Alternative Premier League Table: No 12 – Who have injuries hurt most?",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT1RuMVJ6RFR2bEV4V1ZXMndKWVRPSXdyUEhhTTF0b0EtcjhIMnZ4VUhKbG5hTzNsLXRpWi14WlJCT0Q0dGZvSXd0Yzc3SmtFZTkzdmZxc3h6WW8wVFpfUzROQkRBcVdLN1ltcy04QXRmSncwTkc5V3ROM244a29kWDlYVnJ6RWdicFFYdzN5Ukhjb1lId3JZcXlrd3AzY2xBYW5Fa1Fkcw?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "The Alternative Premier League Table: No 12 – Who have injuries hurt most? - The Athletic The New York Times",
-          "published": "Wed, 19 Nov 2025 08:00:00 GMT"
+          "snippet": "Erling Haaland out of FA Cup tie vs Newcastle as Man City issue injury update Metro.co.uk",
+          "published": "Sat, 07 Mar 2026 08:00:00 GMT"
         }
       ]
     },
@@ -11131,97 +11343,6 @@
       ]
     },
     {
-      "id": "yankuba-minteh-injury-explained-how-long-liverpool-target-8bc2cb8e",
-      "slug": "yankuba-minteh-injury-explained-how-long-liverpool-target-8bc2cb8e",
-      "sport": "soccer",
-      "headline": "Virgil van Dijk injury: How long will Liverpool star be out for? Here’s everything we know about his ACL",
-      "blurb": "Virgil van Dijk injury: How long will Liverpool star be out for?",
-      "summary": "Virgil van Dijk injury: How long will Liverpool star be out for? Here’s everything we know about his ACL The i Paper Yankuba Minteh injury explained – how long Liverpool target will be out This Is Anfield Aggregated from The i Paper, This Is Anfield.",
-      "category": "injury",
-      "published": "2020-10-19T07:00:00Z",
-      "updated": "2026-08-22T13:06:55Z",
-      "players": [
-        {
-          "key": "virgil van dijk",
-          "name": "Virgil van Dijk",
-          "slug": "virgil-van-dijk",
-          "pos": "DEF",
-          "team": "LIV"
-        },
-        {
-          "key": "minteh",
-          "name": "Yankuba Minteh",
-          "slug": "yankuba-minteh",
-          "pos": "MID",
-          "team": "BHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Yankuba Minteh injury explained – how long Liverpool target will be out",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPakRxS09nXzNOUXR5WEVhV2Z4TDhHOGVGOUJyZFNDV2NkM3dwNlQ2em1nSXdGdjlDZ2hnblExOUlMeE9JNk1SbXR6MEwwS3NTNG5aTk02SkswYzBHU19TeXpTanpGSktGUEFUSERuMzAzVFQ3aVBPUXl0aWl1S3RybVpwR2J6Um5RU1p3RXdzWWV5eHlKNERjYWdEekhmLS1BWjNxbzU5ZGY5cjFvUGc?oc=5",
-          "publisher": "This Is Anfield",
-          "kind": "article",
-          "snippet": "Yankuba Minteh injury explained – how long Liverpool target will be out This Is Anfield",
-          "published": "Sat, 22 Aug 2026 13:06:55 GMT"
-        },
-        {
-          "title": "Virgil van Dijk injury: How long will Liverpool star be out for? Here’s everything we know about his ACL",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX2V6cjNpaTBSNVY2Mm1pQzNPbmlFNzhtLWFNanFBMkdKblYxa3RWQTE2MlAzU19RSEIybEFGQmdfWTN0V0ZjaGd4c3V2Z0I5TzZZUGxUeEIxZ0pUdldoYWVUY0hnc0djZmRFenV6bHVPcW81SFdOYjBsYWZvYjlWcEN5elVGdEluX0FwUFdfT3QtTGxxMGxRM05QUkxkSFZXWkFxUVNtbkNGMVFXZGc?oc=5",
-          "publisher": "The i Paper",
-          "kind": "article",
-          "snippet": "Virgil van Dijk injury: How long will Liverpool star be out for? Here’s everything we know about his ACL The i Paper",
-          "published": "Mon, 19 Oct 2020 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "man-city-given-double-injury-boost-ahead-bournemouth-f7353ba6",
-      "slug": "man-city-given-double-injury-boost-ahead-bournemouth-f7353ba6",
-      "sport": "soccer",
-      "headline": "Man City given double injury boost ahead of Bournemouth amid Erling Haaland and Rodri update",
-      "blurb": "Erling Haaland out of FA Cup tie vs Newcastle as Man City issue injury update Metro.co.uk",
-      "summary": "Erling Haaland out of FA Cup tie vs Newcastle as Man City issue injury update Metro.co.uk MARESCA: “I WILL FIND THE NEW RODRI!” 🔍 Man City v Bournemouth 🔒 EMBARGO YouTube Man City given double injury boost ahead of Bournemouth amid Erling Haaland and Rodri update Manchester Evening News Aggregated from Metro.co.uk, YouTube, Manchester Evening News.",
-      "category": "injury",
-      "published": "2025-10-31T07:00:00Z",
-      "updated": "2026-08-22T21:30:33Z",
-      "players": [
-        {
-          "key": "erling haaland",
-          "name": "Erling Haaland",
-          "slug": "erling-haaland",
-          "pos": "FWD",
-          "team": "MCI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "MARESCA: “I WILL FIND THE NEW RODRI!” 🔍 Man City v Bournemouth 🔒 EMBARGO",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9GcEViMXhCeFpsdEVvVUVmTU9EdlV1TUdPNUtWUjh6b1ppSm51OEFGaVZfRmJDRTJqZGEyaDFtUW1kVlBiRTM3X25LT1dNcW9QUUg1WWNR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "MARESCA: “I WILL FIND THE NEW RODRI!” 🔍 Man City v Bournemouth 🔒 EMBARGO YouTube",
-          "published": "Sat, 22 Aug 2026 21:30:33 GMT"
-        },
-        {
-          "title": "Man City given double injury boost ahead of Bournemouth amid Erling Haaland and Rodri update",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV3UwdzRXUU80blFkLVY1TmZjel85WUhVRU04UTJvZFNwTi1aTzNNanN2Y1FLelN4Ny1IYWtlRWh3dEZmcGdLZHgtMVViNUlZampua0c5YXAyYjduQWFIUTIzVzYxWlFyM0k3QzduTnRfdFNCb2xyMXRPOTJwdTZtNUdpRFlXWUNOeG9ESWRhbXpLR0UyY0tDTW84YTZUdUdoaXBPTDgzQmplQdIBrwFBVV95cUxPMlYyb01VU0lsQTZqV2kxZVNvYkZ0R2JlWFVIazlLNndySi1pczU3UjVBRE5TSWxoVDFvclE5MERJQUY3SjlqMXQyVjRlVXlHX0NVZXlaanZaUnQtZ0h1NGRQbmR0T1hQT1FJQ3Z0QTRfSVB3Z1FUbVJyN2ZBQ2RVYlpGY3AwMktPTndKc2dqWkxCUUF6WGxVVldRYWlyeXdyemc0akxNd3dNeEl0T0Yw?oc=5",
-          "publisher": "Manchester Evening News",
-          "kind": "article",
-          "snippet": "Man City given double injury boost ahead of Bournemouth amid Erling Haaland and Rodri update Manchester Evening News",
-          "published": "Fri, 31 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Erling Haaland out of FA Cup tie vs Newcastle as Man City issue injury update",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZC11d2RvRlFHNTU1NmRVeGYwSlI1MVlrX1dWYVVoMTFjYnFldWZCcm9BZmZKVkNsaFFOb2hiTWplY1NLWkhPSS1UV0VmQXpyTmswcThpVHZ2RUh6SHBsZjVXUlB1UnVJZktKOXFrTnZLb0ZfcnRSOHZYVVRTTHdscVNqd2R2bWhTeGhkVXpNRHNEWVhHbTYwQko1VkgwekNHU0ZuZjkzNVR2SUVj0gGyAUFVX3lxTE1HbUdJbkR2QWFuR0RSX0VBRk5OQWM2MGItM0NTR2E3azM4dFNDY18tbC1BaVZOU2N5Q2JWQktibEtvcklQb3ZrcUhHM1Q0eDRNVnNwSlNyNmMzYlpkeUxSWE9fM2N3bWhjTUhHMVhITWRpY0hfNHM0VmF3VVA0cVNXaWRBTzVrckJnN0ZlR21qSDVtVDU5UDZCeWJoM0JVVUFrQldFODl4TnVnSHZEQWFMT0E?oc=5",
-          "publisher": "Metro.co.uk",
-          "kind": "article",
-          "snippet": "Erling Haaland out of FA Cup tie vs Newcastle as Man City issue injury update Metro.co.uk",
-          "published": "Sat, 07 Mar 2026 08:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "new-new-trim-6435c205",
       "slug": "new-new-trim-6435c205",
       "sport": "soccer",
@@ -11248,6 +11369,50 @@
           "kind": "article",
           "snippet": "Manchester City striker Erling Haaland reveals his new buzz cut on social media.",
           "published": "Sun, 23 Aug 2026 12:36:54 GMT"
+        }
+      ]
+    },
+    {
+      "id": "burnham-s-boys-enjoy-visit-palace-everton-ease-ba266cbc",
+      "slug": "burnham-s-boys-enjoy-visit-palace-everton-ease-ba266cbc",
+      "sport": "soccer",
+      "headline": "Burnham’s boys enjoy visit from Palace as Everton ease to victory in opener",
+      "blurb": "Andy Burnham was in the posh seats to see how his beloved Everton would fare without the key additions that even the prime minister has voiced an opinion on.",
+      "summary": "Kiernan Dewsbury-Hall, Iliman Ndiaye and Thierno Barry: Andy Burnham was in the posh seats to see how his beloved Everton would fare without the key additions that even the prime minister has voiced an opinion on. No right-back, no new centre-forward, no problem: Everton contained enough quality to overcome a wasteful Crystal Palace. Kiernan Dewsbury-Hall and Iliman Ndiaye delivered a timely reminder that, despite the missing pieces in the squad, there is pedigree and Premier League knowhow available to David Moyes as he attempts to sustain a challenge for European qualification this season. Desk reading of Guardian Football.",
+      "category": "wire",
+      "published": "2026-08-22T16:12:46Z",
+      "updated": "2026-08-22T16:12:46Z",
+      "players": [
+        {
+          "key": "dewsbury hall",
+          "name": "Kiernan Dewsbury-Hall",
+          "slug": "kiernan-dewsbury-hall",
+          "pos": "MID",
+          "team": "EVE"
+        },
+        {
+          "key": "ndiaye",
+          "name": "Iliman Ndiaye",
+          "slug": "iliman-ndiaye",
+          "pos": "MID",
+          "team": "EVE"
+        },
+        {
+          "key": "barry",
+          "name": "Thierno Barry",
+          "slug": "thierno-barry",
+          "pos": "FWD",
+          "team": "EVE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Burnham’s boys enjoy visit from Palace as Everton ease to opening day win",
+          "url": "https://www.theguardian.com/football/2026/aug/22/everton-crystal-palace-premier-league-match-report",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Andy Burnham was in the posh seats at Hill Dickinson Stadium to witness how his beloved Everton would fare without the key additions to David Moyes’s team that even the Prime Minister had voiced an opinion on. No right-back, no new centre-forward , no problem: Everton capitalised",
+          "published": "Sat, 22 Aug 2026 16:12:46 GMT"
         }
       ]
     },
@@ -11734,50 +11899,6 @@
           "kind": "article",
           "snippet": "Sunderland injury round-up: Nordi Mukiele and Robin Roefs latest as Dennis Cirkin could return Mackem News",
           "published": "Tue, 10 Mar 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "burnham-s-boys-enjoy-visit-palace-everton-ease-ba266cbc",
-      "slug": "burnham-s-boys-enjoy-visit-palace-everton-ease-ba266cbc",
-      "sport": "soccer",
-      "headline": "Burnham’s boys enjoy visit from Palace as Everton ease to victory in opener",
-      "blurb": "Andy Burnham was in the posh seats to see how his beloved Everton would fare without the key additions that even the prime minister has voiced an opinion on.",
-      "summary": "Kiernan Dewsbury-Hall, Iliman Ndiaye and Thierno Barry: Andy Burnham was in the posh seats to see how his beloved Everton would fare without the key additions that even the prime minister has voiced an opinion on. No right-back, no new centre-forward, no problem: Everton contained enough quality to overcome a wasteful Crystal Palace. Kiernan Dewsbury-Hall and Iliman Ndiaye delivered a timely reminder that, despite the missing pieces in the squad, there is pedigree and Premier League knowhow available to David Moyes as he attempts to sustain a challenge for European qualification this season. Desk reading of Guardian Football.",
-      "category": "wire",
-      "published": "2026-08-22T16:12:46Z",
-      "updated": "2026-08-22T16:12:46Z",
-      "players": [
-        {
-          "key": "dewsbury hall",
-          "name": "Kiernan Dewsbury-Hall",
-          "slug": "kiernan-dewsbury-hall",
-          "pos": "MID",
-          "team": "EVE"
-        },
-        {
-          "key": "ndiaye",
-          "name": "Iliman Ndiaye",
-          "slug": "iliman-ndiaye",
-          "pos": "MID",
-          "team": "EVE"
-        },
-        {
-          "key": "barry",
-          "name": "Thierno Barry",
-          "slug": "thierno-barry",
-          "pos": "FWD",
-          "team": "EVE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Burnham’s boys enjoy visit from Palace as Everton ease to opening day win",
-          "url": "https://www.theguardian.com/football/2026/aug/22/everton-crystal-palace-premier-league-match-report",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Andy Burnham was in the posh seats at Hill Dickinson Stadium to witness how his beloved Everton would fare without the key additions to David Moyes’s team that even the Prime Minister had voiced an opinion on. No right-back, no new centre-forward , no problem: Everton capitalised",
-          "published": "Sat, 22 Aug 2026 16:12:46 GMT"
         }
       ]
     },
@@ -12412,73 +12533,6 @@
           "kind": "article",
           "snippet": "Liverpool: Why Alexander Isak & Florian Wirtz must step up after Mohamed Salah's exit BBC",
           "published": "Sun, 23 Aug 2026 06:31:21 GMT"
-        }
-      ]
-    },
-    {
-      "id": "carrick-tells-manchester-united-keep-calm-carry-hull-01d01fbd",
-      "slug": "carrick-tells-manchester-united-keep-calm-carry-hull-01d01fbd",
-      "sport": "soccer",
-      "headline": "Carrick tells Manchester United to keep calm and carry on after Hull humbling",
-      "blurb": "Bruno Fernandes: ‘We gave too much of the ball to them’ Sergej Jakirovic happy Hull proved critics wrong Michael Carrick says he will not overreact, but has called for…",
-      "summary": "Bruno Fernandes: ‘We gave too much of the ball to them’ Sergej Jakirovic happy Hull proved critics wrong Michael Carrick says he will not overreact, but has called for improvement after Manchester United started the season with a 2-0 defeat at Hull. United lost their opening game for the fourth time in the past seven years as Semi Ajayi and Nobel Mendy took advantage of poor defending from set-pieces. The United head coach presented a professional exterior despite United’s performance not reaching the desired standard as they were deservedly beaten by Hull, who finished sixth in the Championsh Desk reading of Guardian Football.",
-      "category": "coach",
-      "published": "2026-08-22T15:41:27Z",
-      "updated": "2026-08-22T15:41:27Z",
-      "players": [
-        {
-          "key": "bruno fernandes",
-          "name": "Bruno Fernandes",
-          "slug": "bruno-fernandes",
-          "pos": "MID",
-          "team": "MUN"
-        },
-        {
-          "key": "fernandes",
-          "name": "Mateus Fernandes",
-          "slug": "mateus-fernandes",
-          "pos": "MID",
-          "team": "TOT"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Carrick tells Manchester United to keep calm and carry on after Hull humbling",
-          "url": "https://www.theguardian.com/football/2026/aug/22/carrick-manchester-united-shock-defeat-by-hull",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Bruno Fernandes: ‘We gave too much of the ball to them’ Sergej Jakirovic happy Hull proved critics wrong Michael Carrick says he will not overreact, but has called for improvement after Manchester United started the season with a 2-0 defeat at Hull. United lost their opening game",
-          "published": "Sat, 22 Aug 2026 15:41:27 GMT"
-        }
-      ]
-    },
-    {
-      "id": "newcastle-hit-major-new-injury-hours-kickoff-liverpool-b270a284",
-      "slug": "newcastle-hit-major-new-injury-hours-kickoff-liverpool-b270a284",
-      "sport": "soccer",
-      "headline": "Newcastle hit with major new injury hours before kickoff vs. Liverpool",
-      "blurb": "Newcastle vs Liverpool team news LIVE!",
-      "summary": "Newcastle vs Liverpool team news LIVE! Newcastle hit with major new injury hours before kickoff vs. Aggregated from Sky Sports Football, This Is Anfield.",
-      "category": "injury",
-      "published": "2026-08-23T13:33:23Z",
-      "updated": "2026-08-23T13:33:23Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Newcastle vs Liverpool team news LIVE!",
-          "url": "https://www.skysports.com/football/newcastle-united-vs-liverpool/live/559452",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "",
-          "published": "Sun, 23 Aug 2026 14:00:00 BST"
-        },
-        {
-          "title": "Newcastle hit with major new injury hours before kickoff vs. Liverpool",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSVBQOHNkbTdpSDg1U0FIRzJyendGLUdIVzI1WDdvSFA3NGozakN0bkxCUWZzcTRLVlREeG1pNk9GM3lhdUtUUGoxaXpxbnJHeE1DM2V3cWx0Q1ZDR1VsSUw0a2x3UXBnS1YxdUxob0VNWllNbmdTQ1Fya2JDRUVtSGtEUHBFZVdxMUZ0dEhuMWlHMW90RUROag?oc=5",
-          "publisher": "This Is Anfield",
-          "kind": "article",
-          "snippet": "Newcastle hit with major new injury hours before kickoff vs. Liverpool This Is Anfield",
-          "published": "Sun, 23 Aug 2026 13:33:23 GMT"
         }
       ]
     }
