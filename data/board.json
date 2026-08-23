@@ -1,6602 +1,2606 @@
-[
-  {
-    "key": "josh allen",
-    "name": "Josh Allen",
-    "pos": "QB",
-    "team": "BUF",
-    "age": 30,
-    "bk": 1,
-    "keep": 1,
-    "ppr": 27,
-    "avg": -7.18,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 1,
-      "PPR": 27
-    },
-    "value": 12000
-  },
-  {
-    "key": "lamar jackson",
-    "name": "Lamar Jackson",
-    "pos": "QB",
-    "team": "BAL",
-    "age": 29,
-    "bk": 2,
-    "keep": 9,
-    "ppr": 33,
-    "avg": 0.98,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 9,
-      "PPR": 33
-    },
-    "value": 10419
-  },
-  {
-    "key": "joe burrow",
-    "name": "Joe Burrow",
-    "pos": "QB",
-    "team": "CIN",
-    "age": 29,
-    "bk": 3,
-    "keep": 10,
-    "ppr": 60,
-    "avg": 1.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 10,
-      "PPR": 60
-    },
-    "value": 9527
-  },
-  {
-    "key": "jamarr chase",
-    "name": "Ja'Marr Chase",
-    "pos": "WR",
-    "team": "CIN",
-    "age": 24,
-    "bk": 4,
-    "keep": 3,
-    "ppr": 1,
-    "avg": 3.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 3,
-      "PPR": 1
-    },
-    "value": 8898
-  },
-  {
-    "key": "jahmyr gibbs",
-    "name": "Jahmyr Gibbs",
-    "pos": "RB",
-    "team": "DET",
-    "age": 24,
-    "bk": 5,
-    "keep": 5,
-    "ppr": 2,
-    "avg": 4.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 5,
-      "PPR": 2
-    },
-    "value": 8408
-  },
-  {
-    "key": "puka nacua",
-    "name": "Puka Nacua",
-    "pos": "WR",
-    "team": "LAR",
-    "age": 25,
-    "bk": 6,
-    "keep": 8,
-    "ppr": 3,
-    "avg": 4.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 8,
-      "PPR": 3
-    },
-    "value": 8004
-  },
-  {
-    "key": "drake maye",
-    "name": "Drake Maye",
-    "pos": "QB",
-    "team": "NE",
-    "age": 23,
-    "bk": 7,
-    "keep": 2,
-    "ppr": 43,
-    "avg": 4.84,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 2,
-      "PPR": 43
-    },
-    "value": 7657
-  },
-  {
-    "key": "bijan robinson",
-    "name": "Bijan Robinson",
-    "pos": "RB",
-    "team": "ATL",
-    "age": 24,
-    "bk": 8,
-    "keep": 4,
-    "ppr": 4,
-    "avg": 5.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 4,
-      "PPR": 4
-    },
-    "value": 7353
-  },
-  {
-    "key": "jayden daniels",
-    "name": "Jayden Daniels",
-    "pos": "QB",
-    "team": "WAS",
-    "age": 25,
-    "bk": 9,
-    "keep": 7,
-    "ppr": 47,
-    "avg": 5.74,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 7,
-      "PPR": 47
-    },
-    "value": 7081
-  },
-  {
-    "key": "amon-ra st brown",
-    "name": "Amon-Ra St. Brown",
-    "pos": "WR",
-    "team": "DET",
-    "age": 26,
-    "bk": 10,
-    "keep": 13,
-    "ppr": 6,
-    "avg": 6.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 13,
-      "PPR": 6
-    },
-    "value": 6834
-  },
-  {
-    "key": "jaxon smith-njigba",
-    "name": "Jaxon Smith-Njigba",
-    "pos": "WR",
-    "team": "SEA",
-    "age": 24,
-    "bk": 11,
-    "keep": 6,
-    "ppr": 5,
-    "avg": 6.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 6,
-      "PPR": 5
-    },
-    "value": 6608
-  },
-  {
-    "key": "ceedee lamb",
-    "name": "CeeDee Lamb",
-    "pos": "WR",
-    "team": "DAL",
-    "age": 27,
-    "bk": 12,
-    "keep": 16,
-    "ppr": 8,
-    "avg": 7.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 16,
-      "PPR": 8
-    },
-    "value": 6399
-  },
-  {
-    "key": "justin jefferson",
-    "name": "Justin Jefferson",
-    "pos": "WR",
-    "team": "MIN",
-    "age": 27,
-    "bk": 13,
-    "keep": 14,
-    "ppr": 10,
-    "avg": 8.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 14,
-      "PPR": 10
-    },
-    "value": 6204
-  },
-  {
-    "key": "justin herbert",
-    "name": "Justin Herbert",
-    "pos": "QB",
-    "team": "LAC",
-    "age": 28,
-    "bk": 14,
-    "keep": 17,
-    "ppr": 65,
-    "avg": 9.14,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 17,
-      "PPR": 65
-    },
-    "value": 6022
-  },
-  {
-    "key": "jonathan taylor",
-    "name": "Jonathan Taylor",
-    "pos": "RB",
-    "team": "IND",
-    "age": 27,
-    "bk": 15,
-    "keep": 29,
-    "ppr": 7,
-    "avg": 10.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 29,
-      "PPR": 7
-    },
-    "value": 5850
-  },
-  {
-    "key": "caleb williams",
-    "name": "Caleb Williams",
-    "pos": "QB",
-    "team": "CHI",
-    "age": 24,
-    "bk": 16,
-    "keep": 11,
-    "ppr": 69,
-    "avg": 10.62,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 11,
-      "PPR": 69
-    },
-    "value": 5688
-  },
-  {
-    "key": "christian mccaffrey",
-    "name": "Christian McCaffrey",
-    "pos": "RB",
-    "team": "SF",
-    "age": 30,
-    "bk": 17,
-    "keep": 48,
-    "ppr": 9,
-    "avg": 12.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 48,
-      "PPR": 9
-    },
-    "value": 5534
-  },
-  {
-    "key": "jalen hurts",
-    "name": "Jalen Hurts",
-    "pos": "QB",
-    "team": "PHI",
-    "age": 28,
-    "bk": 18,
-    "keep": 22,
-    "ppr": 53,
-    "avg": 13.24,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 22,
-      "PPR": 53
-    },
-    "value": 5388
-  },
-  {
-    "key": "devon achane",
-    "name": "De'Von Achane",
-    "pos": "RB",
-    "team": "MIA",
-    "age": 24,
-    "bk": 19,
-    "keep": 18,
-    "ppr": 11,
-    "avg": 14.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 18,
-      "PPR": 11
-    },
-    "value": 5248
-  },
-  {
-    "key": "drake london",
-    "name": "Drake London",
-    "pos": "WR",
-    "team": "ATL",
-    "age": 25,
-    "bk": 20,
-    "keep": 25,
-    "ppr": 12,
-    "avg": 15.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 25,
-      "PPR": 12
-    },
-    "value": 5115
-  },
-  {
-    "key": "trey mcbride",
-    "name": "Trey McBride",
-    "pos": "TE",
-    "team": "ARI",
-    "age": 26,
-    "bk": 21,
-    "keep": 23,
-    "ppr": 16,
-    "avg": 16.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 23,
-      "PPR": 16
-    },
-    "value": 4987
-  },
-  {
-    "key": "patrick mahomes",
-    "name": "Patrick Mahomes",
-    "pos": "QB",
-    "team": "KC",
-    "age": 24,
-    "bk": 22,
-    "keep": 20,
-    "ppr": 103,
-    "avg": 18.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 20,
-      "PPR": 103
-    },
-    "value": 4865
-  },
-  {
-    "key": "brock bowers",
-    "name": "Brock Bowers",
-    "pos": "TE",
-    "team": "LV",
-    "age": 23,
-    "bk": 23,
-    "keep": 15,
-    "ppr": 15,
-    "avg": 18.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 15,
-      "PPR": 15
-    },
-    "value": 4747
-  },
-  {
-    "key": "james cook",
-    "name": "James Cook",
-    "pos": "RB",
-    "team": "BUF",
-    "age": 24,
-    "bk": 24,
-    "keep": 28,
-    "ppr": 13,
-    "avg": 19.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 28,
-      "PPR": 13
-    },
-    "value": 4634
-  },
-  {
-    "key": "trevor lawrence",
-    "name": "Trevor Lawrence",
-    "pos": "QB",
-    "team": "JAX",
-    "age": 26,
-    "bk": 25,
-    "keep": 26,
-    "ppr": 79,
-    "avg": 19.72,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 26,
-      "PPR": 79
-    },
-    "value": 4525
-  },
-  {
-    "key": "chase brown",
-    "name": "Chase Brown",
-    "pos": "RB",
-    "team": "CIN",
-    "age": 26,
-    "bk": 26,
-    "keep": 44,
-    "ppr": 14,
-    "avg": 21.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 44,
-      "PPR": 14
-    },
-    "value": 4419
-  },
-  {
-    "key": "dak prescott",
-    "name": "Dak Prescott",
-    "pos": "QB",
-    "team": "DAL",
-    "age": 33,
-    "bk": 27,
-    "keep": 43,
-    "ppr": 90,
-    "avg": 22.46,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 43,
-      "PPR": 90
-    },
-    "value": 4317
-  },
-  {
-    "key": "chris olave",
-    "name": "Chris Olave",
-    "pos": "WR",
-    "team": "NO",
-    "age": 26,
-    "bk": 28,
-    "keep": 36,
-    "ppr": 20,
-    "avg": 23.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 36,
-      "PPR": 20
-    },
-    "value": 4219
-  },
-  {
-    "key": "bo nix",
-    "name": "Bo Nix",
-    "pos": "QB",
-    "team": "DEN",
-    "age": 26,
-    "bk": 29,
-    "keep": 31,
-    "ppr": 107,
-    "avg": 23.82,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 31,
-      "PPR": 107
-    },
-    "value": 4124
-  },
-  {
-    "key": "a j brown",
-    "name": "A.J. Brown",
-    "pos": "WR",
-    "team": "NE",
-    "age": 29,
-    "bk": 30,
-    "keep": 57,
-    "ppr": 19,
-    "avg": 24.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 57,
-      "PPR": 19
-    },
-    "value": 4032
-  },
-  {
-    "key": "nico collins",
-    "name": "Nico Collins",
-    "pos": "WR",
-    "team": "HOU",
-    "age": 27,
-    "bk": 31,
-    "keep": 34,
-    "ppr": 25,
-    "avg": 24.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 34,
-      "PPR": 25
-    },
-    "value": 3942
-  },
-  {
-    "key": "saquon barkley",
-    "name": "Saquon Barkley",
-    "pos": "RB",
-    "team": "PHI",
-    "age": 29,
-    "bk": 32,
-    "keep": 54,
-    "ppr": 21,
-    "avg": 24.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 54,
-      "PPR": 21
-    },
-    "value": 3856
-  },
-  {
-    "key": "brock purdy",
-    "name": "Brock Purdy",
-    "pos": "QB",
-    "team": "SF",
-    "age": 26,
-    "bk": 33,
-    "keep": 32,
-    "ppr": 101,
-    "avg": 24.64,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 32,
-      "PPR": 101
-    },
-    "value": 3772
-  },
-  {
-    "key": "jaxson dart",
-    "name": "Jaxson Dart",
-    "pos": "QB",
-    "team": "NYG",
-    "age": 23,
-    "bk": 34,
-    "keep": 27,
-    "ppr": 87,
-    "avg": 25.34,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 27,
-      "PPR": 87
-    },
-    "value": 3690
-  },
-  {
-    "key": "omarion hampton",
-    "name": "Omarion Hampton",
-    "pos": "RB",
-    "team": "LAC",
-    "age": 23,
-    "bk": 35,
-    "keep": 24,
-    "ppr": 22,
-    "avg": 25.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 24,
-      "PPR": 22
-    },
-    "value": 3611
-  },
-  {
-    "key": "derrick henry",
-    "name": "Derrick Henry",
-    "pos": "RB",
-    "team": "BAL",
-    "age": 32,
-    "bk": 36,
-    "keep": 83,
-    "ppr": 18,
-    "avg": 26.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 83,
-      "PPR": 18
-    },
-    "value": 3534
-  },
-  {
-    "key": "george pickens",
-    "name": "George Pickens",
-    "pos": "WR",
-    "team": "DAL",
-    "age": 25,
-    "bk": 37,
-    "keep": 33,
-    "ppr": 24,
-    "avg": 26.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 33,
-      "PPR": 24
-    },
-    "value": 3459
-  },
-  {
-    "key": "kenneth walker",
-    "name": "Kenneth Walker III",
-    "pos": "RB",
-    "team": "KC",
-    "age": 25,
-    "bk": 38,
-    "keep": 42,
-    "ppr": 23,
-    "avg": 28.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 42,
-      "PPR": 23
-    },
-    "value": 3386
-  },
-  {
-    "key": "jordan love",
-    "name": "Jordan Love",
-    "pos": "QB",
-    "team": "GB",
-    "age": 27,
-    "bk": 39,
-    "keep": 39,
-    "ppr": 125,
-    "avg": 28.78,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 39,
-      "PPR": 125
-    },
-    "value": 3315
-  },
-  {
-    "key": "garrett wilson",
-    "name": "Garrett Wilson",
-    "pos": "WR",
-    "team": "NYJ",
-    "age": 26,
-    "bk": 40,
-    "keep": 38,
-    "ppr": 28,
-    "avg": 29.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 38,
-      "PPR": 28
-    },
-    "value": 3246
-  },
-  {
-    "key": "ashton jeanty",
-    "name": "Ashton Jeanty",
-    "pos": "RB",
-    "team": "LV",
-    "age": 22,
-    "bk": 41,
-    "keep": 12,
-    "ppr": 17,
-    "avg": 30.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 12,
-      "PPR": 17
-    },
-    "value": 3179
-  },
-  {
-    "key": "rashee rice",
-    "name": "Rashee Rice",
-    "pos": "WR",
-    "team": "KC",
-    "age": 26,
-    "bk": 42,
-    "keep": 53,
-    "ppr": 26,
-    "avg": 32.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 53,
-      "PPR": 26
-    },
-    "value": 3113
-  },
-  {
-    "key": "breece hall",
-    "name": "Breece Hall",
-    "pos": "RB",
-    "team": "NYJ",
-    "age": 25,
-    "bk": 43,
-    "keep": 40,
-    "ppr": 31,
-    "avg": 33.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 40,
-      "PPR": 31
-    },
-    "value": 3049
-  },
-  {
-    "key": "malik nabers",
-    "name": "Malik Nabers",
-    "pos": "WR",
-    "team": "NYG",
-    "age": 23,
-    "bk": 44,
-    "keep": 19,
-    "ppr": 36,
-    "avg": 34.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 19,
-      "PPR": 36
-    },
-    "value": 2987
-  },
-  {
-    "key": "devonta smith",
-    "name": "DeVonta Smith",
-    "pos": "WR",
-    "team": "PHI",
-    "age": 27,
-    "bk": 45,
-    "keep": 56,
-    "ppr": 32,
-    "avg": 36.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 56,
-      "PPR": 32
-    },
-    "value": 2926
-  },
-  {
-    "key": "tetairoa mcmillan",
-    "name": "Tetairoa McMillan",
-    "pos": "WR",
-    "team": "CAR",
-    "age": 23,
-    "bk": 46,
-    "keep": 30,
-    "ppr": 38,
-    "avg": 38.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 30,
-      "PPR": 38
-    },
-    "value": 2867
-  },
-  {
-    "key": "josh jacobs",
-    "name": "Josh Jacobs",
-    "pos": "RB",
-    "team": "GB",
-    "age": 28,
-    "bk": 47,
-    "keep": 78,
-    "ppr": 29,
-    "avg": 38.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 78,
-      "PPR": 29
-    },
-    "value": 2809
-  },
-  {
-    "key": "zay flowers",
-    "name": "Zay Flowers",
-    "pos": "WR",
-    "team": "BAL",
-    "age": 25,
-    "bk": 48,
-    "keep": 50,
-    "ppr": 35,
-    "avg": 39.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 50,
-      "PPR": 35
-    },
-    "value": 2753
-  },
-  {
-    "key": "jared goff",
-    "name": "Jared Goff",
-    "pos": "QB",
-    "team": "DET",
-    "age": 31,
-    "bk": 49,
-    "keep": 60,
-    "ppr": 113,
-    "avg": 39.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 60,
-      "PPR": 113
-    },
-    "value": 2698
-  },
-  {
-    "key": "emeka egbuka",
-    "name": "Emeka Egbuka",
-    "pos": "WR",
-    "team": "TB",
-    "age": 23,
-    "bk": 50,
-    "keep": 35,
-    "ppr": 39,
-    "avg": 41.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 35,
-      "PPR": 39
-    },
-    "value": 2644
-  },
-  {
-    "key": "baker mayfield",
-    "name": "Baker Mayfield",
-    "pos": "QB",
-    "team": "TB",
-    "age": 31,
-    "bk": 51,
-    "keep": 63,
-    "ppr": 124,
-    "avg": 42.06,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 63,
-      "PPR": 124
-    },
-    "value": 2591
-  },
-  {
-    "key": "ladd mcconkey",
-    "name": "Ladd McConkey",
-    "pos": "WR",
-    "team": "LAC",
-    "age": 24,
-    "bk": 52,
-    "keep": 41,
-    "ppr": 42,
-    "avg": 43.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 41,
-      "PPR": 42
-    },
-    "value": 2540
-  },
-  {
-    "key": "jaylen waddle",
-    "name": "Jaylen Waddle",
-    "pos": "WR",
-    "team": "DEN",
-    "age": 27,
-    "bk": 53,
-    "keep": 62,
-    "ppr": 40,
-    "avg": 43.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 62,
-      "PPR": 40
-    },
-    "value": 2490
-  },
-  {
-    "key": "jeremiyah love",
-    "name": "Jeremiyah Love",
-    "pos": "RB",
-    "team": "ARI",
-    "age": 21,
-    "bk": 54,
-    "keep": 21,
-    "ppr": 30,
-    "avg": 43.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 21,
-      "PPR": 30
-    },
-    "value": 2441
-  },
-  {
-    "key": "javonte williams",
-    "name": "Javonte Williams",
-    "pos": "RB",
-    "team": "DAL",
-    "age": 26,
-    "bk": 55,
-    "keep": 72,
-    "ppr": 34,
-    "avg": 43.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 72,
-      "PPR": 34
-    },
-    "value": 2393
-  },
-  {
-    "key": "kyren williams",
-    "name": "Kyren Williams",
-    "pos": "RB",
-    "team": "LAR",
-    "age": 25,
-    "bk": 56,
-    "keep": 61,
-    "ppr": 37,
-    "avg": 44.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 61,
-      "PPR": 37
-    },
-    "value": 2346
-  },
-  {
-    "key": "tee higgins",
-    "name": "Tee Higgins",
-    "pos": "WR",
-    "team": "CIN",
-    "age": 27,
-    "bk": 57,
-    "keep": 58,
-    "ppr": 44,
-    "avg": 45.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 58,
-      "PPR": 44
-    },
-    "value": 2301
-  },
-  {
-    "key": "tyler warren",
-    "name": "Tyler Warren",
-    "pos": "TE",
-    "team": "IND",
-    "age": 24,
-    "bk": 58,
-    "keep": 46,
-    "ppr": 50,
-    "avg": 50.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 46,
-      "PPR": 50
-    },
-    "value": 2256
-  },
-  {
-    "key": "travis etienne",
-    "name": "Travis Etienne Jr.",
-    "pos": "RB",
-    "team": "NO",
-    "age": 27,
-    "bk": 59,
-    "keep": 75,
-    "ppr": 45,
-    "avg": 50.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 75,
-      "PPR": 45
-    },
-    "value": 2212
-  },
-  {
-    "key": "davante adams",
-    "name": "Davante Adams",
-    "pos": "WR",
-    "team": "LAR",
-    "age": 33,
-    "bk": 60,
-    "keep": 107,
-    "ppr": 46,
-    "avg": 51.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 107,
-      "PPR": 46
-    },
-    "value": 2169
-  },
-  {
-    "key": "fernando mendoza",
-    "name": "Fernando Mendoza",
-    "pos": "QB",
-    "team": "LV",
-    "age": 22,
-    "bk": 61,
-    "keep": 47,
-    "ppr": "",
-    "avg": 53.34,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 47
-    },
-    "value": 2128
-  },
-  {
-    "key": "terry mclaurin",
-    "name": "Terry McLaurin",
-    "pos": "WR",
-    "team": "WAS",
-    "age": 30,
-    "bk": 62,
-    "keep": 94,
-    "ppr": 49,
-    "avg": 54.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 94,
-      "PPR": 49
-    },
-    "value": 2087
-  },
-  {
-    "key": "colston loveland",
-    "name": "Colston Loveland",
-    "pos": "TE",
-    "team": "CHI",
-    "age": 22,
-    "bk": 63,
-    "keep": 37,
-    "ppr": 41,
-    "avg": 54.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 37,
-      "PPR": 41
-    },
-    "value": 2047
-  },
-  {
-    "key": "cam skattebo",
-    "name": "Cam Skattebo",
-    "pos": "RB",
-    "team": "NYG",
-    "age": 24,
-    "bk": 64,
-    "keep": 66,
-    "ppr": 48,
-    "avg": 55.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 66,
-      "PPR": 48
-    },
-    "value": 2007
-  },
-  {
-    "key": "cam ward",
-    "name": "Cam Ward",
-    "pos": "QB",
-    "team": "TEN",
-    "age": 24,
-    "bk": 65,
-    "keep": 68,
-    "ppr": 148,
-    "avg": 57.36,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 68,
-      "PPR": 148
-    },
-    "value": 1969
-  },
-  {
-    "key": "bucky irving",
-    "name": "Bucky Irving",
-    "pos": "RB",
-    "team": "TB",
-    "age": 24,
-    "bk": 66,
-    "keep": 65,
-    "ppr": 54,
-    "avg": 58.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 65,
-      "PPR": 54
-    },
-    "value": 1931
-  },
-  {
-    "key": "kyler murray",
-    "name": "Kyler Murray",
-    "pos": "QB",
-    "team": "MIN",
-    "age": 29,
-    "bk": 67,
-    "keep": 80,
-    "ppr": 118,
-    "avg": 59.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 80,
-      "PPR": 118
-    },
-    "value": 1895
-  },
-  {
-    "key": "sam darnold",
-    "name": "Sam Darnold",
-    "pos": "QB",
-    "team": "SEA",
-    "age": 29,
-    "bk": 68,
-    "keep": 81,
-    "ppr": 138,
-    "avg": 60.02,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 81,
-      "PPR": 138
-    },
-    "value": 1859
-  },
-  {
-    "key": "matthew stafford",
-    "name": "Matthew Stafford",
-    "pos": "QB",
-    "team": "LAR",
-    "age": 38,
-    "bk": 69,
-    "keep": 99,
-    "ppr": 108,
-    "avg": 60.38,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 99,
-      "PPR": 108
-    },
-    "value": 1824
-  },
-  {
-    "key": "tyler shough",
-    "name": "Tyler Shough",
-    "pos": "QB",
-    "team": "NO",
-    "age": 26,
-    "bk": 70,
-    "keep": 76,
-    "ppr": 130,
-    "avg": 60.72,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 76,
-      "PPR": 130
-    },
-    "value": 1789
-  },
-  {
-    "key": "c j stroud",
-    "name": "C.J. Stroud",
-    "pos": "QB",
-    "team": "HOU",
-    "age": 24,
-    "bk": 71,
-    "keep": 73,
-    "ppr": 139,
-    "avg": 61.46,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 73,
-      "PPR": 139
-    },
-    "value": 1755
-  },
-  {
-    "key": "rome odunze",
-    "name": "Rome Odunze",
-    "pos": "WR",
-    "team": "CHI",
-    "age": 24,
-    "bk": 72,
-    "keep": 55,
-    "ppr": 62,
-    "avg": 61.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 55,
-      "PPR": 62
-    },
-    "value": 1722
-  },
-  {
-    "key": "jameson williams",
-    "name": "Jameson Williams",
-    "pos": "WR",
-    "team": "DET",
-    "age": 25,
-    "bk": 73,
-    "keep": 71,
-    "ppr": 58,
-    "avg": 61.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 71,
-      "PPR": 58
-    },
-    "value": 1690
-  },
-  {
-    "key": "dandre swift",
-    "name": "D'Andre Swift",
-    "pos": "RB",
-    "team": "CHI",
-    "age": 24,
-    "bk": 74,
-    "keep": 86,
-    "ppr": 51,
-    "avg": 63.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 86,
-      "PPR": 51
-    },
-    "value": 1658
-  },
-  {
-    "key": "david montgomery",
-    "name": "David Montgomery",
-    "pos": "RB",
-    "team": "HOU",
-    "age": 29,
-    "bk": 75,
-    "keep": 101,
-    "ppr": 56,
-    "avg": 63.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 101,
-      "PPR": 56
-    },
-    "value": 1627
-  },
-  {
-    "key": "treveyon henderson",
-    "name": "TreVeyon Henderson",
-    "pos": "RB",
-    "team": "NE",
-    "age": 23,
-    "bk": 76,
-    "keep": 52,
-    "ppr": 64,
-    "avg": 63.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 52,
-      "PPR": 64
-    },
-    "value": 1597
-  },
-  {
-    "key": "dj moore",
-    "name": "DJ Moore",
-    "pos": "WR",
-    "team": "BUF",
-    "age": 29,
-    "bk": 77,
-    "keep": 93,
-    "ppr": 61,
-    "avg": 64.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 93,
-      "PPR": 61
-    },
-    "value": 1567
-  },
-  {
-    "key": "quinshon judkins",
-    "name": "Quinshon Judkins",
-    "pos": "RB",
-    "team": "CLE",
-    "age": 22,
-    "bk": 78,
-    "keep": 49,
-    "ppr": 52,
-    "avg": 65.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 49,
-      "PPR": 52
-    },
-    "value": 1538
-  },
-  {
-    "key": "bhayshul tuten",
-    "name": "Bhayshul Tuten",
-    "pos": "RB",
-    "team": "JAX",
-    "age": 23,
-    "bk": 79,
-    "keep": 84,
-    "ppr": 55,
-    "avg": 66.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 84,
-      "PPR": 55
-    },
-    "value": 1509
-  },
-  {
-    "key": "daniel jones",
-    "name": "Daniel Jones",
-    "pos": "QB",
-    "team": "IND",
-    "age": 29,
-    "bk": 80,
-    "keep": 90,
-    "ppr": 144,
-    "avg": 67.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 90,
-      "PPR": 144
-    },
-    "value": 1481
-  },
-  {
-    "key": "malik willis",
-    "name": "Malik Willis",
-    "pos": "QB",
-    "team": "MIA",
-    "age": 27,
-    "bk": 81,
-    "keep": 88,
-    "ppr": 133,
-    "avg": 68.96,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 88,
-      "PPR": 133
-    },
-    "value": 1453
-  },
-  {
-    "key": "luther burden",
-    "name": "Luther Burden III",
-    "pos": "WR",
-    "team": "CHI",
-    "age": 22,
-    "bk": 82,
-    "keep": 51,
-    "ppr": 63,
-    "avg": 74.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 51,
-      "PPR": 63
-    },
-    "value": 1426
-  },
-  {
-    "key": "bryce young",
-    "name": "Bryce Young",
-    "pos": "QB",
-    "team": "CAR",
-    "age": 25,
-    "bk": 83,
-    "keep": 91,
-    "ppr": 154,
-    "avg": 74.62,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 91,
-      "PPR": 154
-    },
-    "value": 1400
-  },
-  {
-    "key": "christian watson",
-    "name": "Christian Watson",
-    "pos": "WR",
-    "team": "GB",
-    "age": 27,
-    "bk": 84,
-    "keep": 87,
-    "ppr": 74,
-    "avg": 74.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 87,
-      "PPR": 74
-    },
-    "value": 1374
-  },
-  {
-    "key": "mike evans",
-    "name": "Mike Evans",
-    "pos": "WR",
-    "team": "SF",
-    "age": 32,
-    "bk": 85,
-    "keep": 131,
-    "ppr": 67,
-    "avg": 75.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 131,
-      "PPR": 67
-    },
-    "value": 1349
-  },
-  {
-    "key": "marvin harrison",
-    "name": "Marvin Harrison Jr.",
-    "pos": "WR",
-    "team": "ARI",
-    "age": 24,
-    "bk": 86,
-    "keep": 69,
-    "ppr": 76,
-    "avg": 75.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 69,
-      "PPR": 76
-    },
-    "value": 1324
-  },
-  {
-    "key": "kyle pitts",
-    "name": "Kyle Pitts Sr.",
-    "pos": "TE",
-    "team": "ATL",
-    "age": 25,
-    "bk": 87,
-    "keep": 82,
-    "ppr": 73,
-    "avg": 75.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 82,
-      "PPR": 73
-    },
-    "value": 1300
-  },
-  {
-    "key": "brian thomas",
-    "name": "Brian Thomas Jr.",
-    "pos": "WR",
-    "team": "JAX",
-    "age": 23,
-    "bk": 88,
-    "keep": 70,
-    "ppr": 75,
-    "avg": 76.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 70,
-      "PPR": 75
-    },
-    "value": 1276
-  },
-  {
-    "key": "carnell tate",
-    "name": "Carnell Tate",
-    "pos": "WR",
-    "team": "TEN",
-    "age": 21,
-    "bk": 89,
-    "keep": 45,
-    "ppr": 68,
-    "avg": 77.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 45,
-      "PPR": 68
-    },
-    "value": 1252
-  },
-  {
-    "key": "jadarian price",
-    "name": "Jadarian Price",
-    "pos": "RB",
-    "team": "SEA",
-    "age": 22,
-    "bk": 90,
-    "keep": 77,
-    "ppr": 57,
-    "avg": 77.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 77,
-      "PPR": 57
-    },
-    "value": 1229
-  },
-  {
-    "key": "tucker kraft",
-    "name": "Tucker Kraft",
-    "pos": "TE",
-    "team": "GB",
-    "age": 25,
-    "bk": 91,
-    "keep": 64,
-    "ppr": 84,
-    "avg": 78.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 64,
-      "PPR": 84
-    },
-    "value": 1207
-  },
-  {
-    "key": "harold fannin",
-    "name": "Harold Fannin Jr.",
-    "pos": "TE",
-    "team": "CLE",
-    "age": 22,
-    "bk": 92,
-    "keep": 74,
-    "ppr": 59,
-    "avg": 78.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 74,
-      "PPR": 59
-    },
-    "value": 1185
-  },
-  {
-    "key": "jaylen warren",
-    "name": "Jaylen Warren",
-    "pos": "RB",
-    "team": "PIT",
-    "age": 27,
-    "bk": 93,
-    "keep": 109,
-    "ppr": 71,
-    "avg": 79.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 109,
-      "PPR": 71
-    },
-    "value": 1163
-  },
-  {
-    "key": "dk metcalf",
-    "name": "DK Metcalf",
-    "pos": "WR",
-    "team": "PIT",
-    "age": 28,
-    "bk": 94,
-    "keep": 103,
-    "ppr": 78,
-    "avg": 80.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 103,
-      "PPR": 78
-    },
-    "value": 1142
-  },
-  {
-    "key": "sam laporta",
-    "name": "Sam LaPorta",
-    "pos": "TE",
-    "team": "DET",
-    "age": 25,
-    "bk": 95,
-    "keep": 79,
-    "ppr": 83,
-    "avg": 81.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 79,
-      "PPR": 83
-    },
-    "value": 1121
-  },
-  {
-    "key": "george kittle",
-    "name": "George Kittle",
-    "pos": "TE",
-    "team": "SF",
-    "age": 32,
-    "bk": 96,
-    "keep": 119,
-    "ppr": 82,
-    "avg": 81.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 119,
-      "PPR": 82
-    },
-    "value": 1101
-  },
-  {
-    "key": "rhamondre stevenson",
-    "name": "Rhamondre Stevenson",
-    "pos": "RB",
-    "team": "NE",
-    "age": 28,
-    "bk": 97,
-    "keep": 128,
-    "ppr": 70,
-    "avg": 82.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 128,
-      "PPR": 70
-    },
-    "value": 1081
-  },
-  {
-    "key": "parker washington",
-    "name": "Parker Washington",
-    "pos": "WR",
-    "team": "JAX",
-    "age": 24,
-    "bk": 98,
-    "keep": 95,
-    "ppr": 80,
-    "avg": 86.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 95,
-      "PPR": 80
-    },
-    "value": 1061
-  },
-  {
-    "key": "ty simpson",
-    "name": "Ty Simpson",
-    "pos": "QB",
-    "team": "LAR",
-    "age": 23,
-    "bk": 99,
-    "keep": 102,
-    "ppr": "",
-    "avg": 86.84,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 102
-    },
-    "value": 1042
-  },
-  {
-    "key": "tony pollard",
-    "name": "Tony Pollard",
-    "pos": "RB",
-    "team": "TEN",
-    "age": 29,
-    "bk": 100,
-    "keep": 147,
-    "ppr": 72,
-    "avg": 88.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 147,
-      "PPR": 72
-    },
-    "value": 1023
-  },
-  {
-    "key": "courtland sutton",
-    "name": "Courtland Sutton",
-    "pos": "WR",
-    "team": "DEN",
-    "age": 30,
-    "bk": 101,
-    "keep": 124,
-    "ppr": 85,
-    "avg": 88.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 124,
-      "PPR": 85
-    },
-    "value": 1004
-  },
-  {
-    "key": "rico dowdle",
-    "name": "Rico Dowdle",
-    "pos": "RB",
-    "team": "PIT",
-    "age": 28,
-    "bk": 102,
-    "keep": 126,
-    "ppr": 81,
-    "avg": 89.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 126,
-      "PPR": 81
-    },
-    "value": 986
-  },
-  {
-    "key": "kenneth gainwell",
-    "name": "Kenneth Gainwell",
-    "pos": "RB",
-    "team": "TB",
-    "age": 24,
-    "bk": 103,
-    "keep": 141,
-    "ppr": 66,
-    "avg": 90.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 141,
-      "PPR": 66
-    },
-    "value": 968
-  },
-  {
-    "key": "chuba hubbard",
-    "name": "Chuba Hubbard",
-    "pos": "RB",
-    "team": "CAR",
-    "age": 27,
-    "bk": 104,
-    "keep": 133,
-    "ppr": 77,
-    "avg": 90.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 133,
-      "PPR": 77
-    },
-    "value": 951
-  },
-  {
-    "key": "michael wilson",
-    "name": "Michael Wilson",
-    "pos": "WR",
-    "team": "ARI",
-    "age": 26,
-    "bk": 105,
-    "keep": 98,
-    "ppr": 91,
-    "avg": 91.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 98,
-      "PPR": 91
-    },
-    "value": 934
-  },
-  {
-    "key": "michael pittman",
-    "name": "Michael Pittman Jr.",
-    "pos": "WR",
-    "team": "PIT",
-    "age": 28,
-    "bk": 106,
-    "keep": 115,
-    "ppr": 89,
-    "avg": 92.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 115,
-      "PPR": 89
-    },
-    "value": 917
-  },
-  {
-    "key": "rj harvey",
-    "name": "RJ Harvey",
-    "pos": "RB",
-    "team": "DEN",
-    "age": 25,
-    "bk": 107,
-    "keep": 100,
-    "ppr": 93,
-    "avg": 95.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 100,
-      "PPR": 93
-    },
-    "value": 900
-  },
-  {
-    "key": "alec pierce",
-    "name": "Alec Pierce",
-    "pos": "WR",
-    "team": "IND",
-    "age": 26,
-    "bk": 108,
-    "keep": 92,
-    "ppr": 99,
-    "avg": 95.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 92,
-      "PPR": 99
-    },
-    "value": 884
-  },
-  {
-    "key": "stefon diggs",
-    "name": "Stefon Diggs",
-    "pos": "WR",
-    "team": "WAS",
-    "age": 32,
-    "bk": 109,
-    "keep": 162,
-    "ppr": 86,
-    "avg": 97.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 162,
-      "PPR": 86
-    },
-    "value": 868
-  },
-  {
-    "key": "wandale robinson",
-    "name": "Wan'Dale Robinson",
-    "pos": "WR",
-    "team": "TEN",
-    "age": 24,
-    "bk": 110,
-    "keep": 108,
-    "ppr": 92,
-    "avg": 98.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 108,
-      "PPR": 92
-    },
-    "value": 852
-  },
-  {
-    "key": "travis kelce",
-    "name": "Travis Kelce",
-    "pos": "TE",
-    "team": "KC",
-    "age": 36,
-    "bk": 111,
-    "keep": 172,
-    "ppr": 97,
-    "avg": 101.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 172,
-      "PPR": 97
-    },
-    "value": 837
-  },
-  {
-    "key": "josh downs",
-    "name": "Josh Downs",
-    "pos": "WR",
-    "team": "IND",
-    "age": 25,
-    "bk": 112,
-    "keep": 121,
-    "ppr": 95,
-    "avg": 102.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 121,
-      "PPR": 95
-    },
-    "value": 822
-  },
-  {
-    "key": "jakobi meyers",
-    "name": "Jakobi Meyers",
-    "pos": "WR",
-    "team": "JAX",
-    "age": 29,
-    "bk": 113,
-    "keep": 132,
-    "ppr": 100,
-    "avg": 103.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 132,
-      "PPR": 100
-    },
-    "value": 807
-  },
-  {
-    "key": "jonathon brooks",
-    "name": "Jonathon Brooks",
-    "pos": "RB",
-    "team": "CAR",
-    "age": 23,
-    "bk": 114,
-    "keep": 129,
-    "ppr": 88,
-    "avg": 103.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 129,
-      "PPR": 88
-    },
-    "value": 793
-  },
-  {
-    "key": "jordan addison",
-    "name": "Jordan Addison",
-    "pos": "WR",
-    "team": "MIN",
-    "age": 24,
-    "bk": 115,
-    "keep": 89,
-    "ppr": 109,
-    "avg": 104.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 89,
-      "PPR": 109
-    },
-    "value": 779
-  },
-  {
-    "key": "kyle monangai",
-    "name": "Kyle Monangai",
-    "pos": "RB",
-    "team": "CHI",
-    "age": 24,
-    "bk": 116,
-    "keep": 105,
-    "ppr": 104,
-    "avg": 105.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 105,
-      "PPR": 104
-    },
-    "value": 765
-  },
-  {
-    "key": "aaron jones",
-    "name": "Aaron Jones Sr.",
-    "pos": "RB",
-    "team": "MIN",
-    "age": 31,
-    "bk": 117,
-    "keep": 166,
-    "ppr": 94,
-    "avg": 106.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 166,
-      "PPR": 94
-    },
-    "value": 751
-  },
-  {
-    "key": "blake corum",
-    "name": "Blake Corum",
-    "pos": "RB",
-    "team": "LAR",
-    "age": 25,
-    "bk": 118,
-    "keep": 111,
-    "ppr": 106,
-    "avg": 107.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 111,
-      "PPR": 106
-    },
-    "value": 738
-  },
-  {
-    "key": "chris godwin",
-    "name": "Chris Godwin",
-    "pos": "WR",
-    "team": "TB",
-    "age": 24,
-    "bk": 119,
-    "keep": 135,
-    "ppr": 96,
-    "avg": 109.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 135,
-      "PPR": 96
-    },
-    "value": 724
-  },
-  {
-    "key": "jayden reed",
-    "name": "Jayden Reed",
-    "pos": "WR",
-    "team": "GB",
-    "age": 26,
-    "bk": 120,
-    "keep": 113,
-    "ppr": 112,
-    "avg": 110.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 113,
-      "PPR": 112
-    },
-    "value": 712
-  },
-  {
-    "key": "quentin johnston",
-    "name": "Quentin Johnston",
-    "pos": "WR",
-    "team": "LAC",
-    "age": 24,
-    "bk": 121,
-    "keep": 120,
-    "ppr": 105,
-    "avg": 111.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 120,
-      "PPR": 105
-    },
-    "value": 699
-  },
-  {
-    "key": "j k dobbins",
-    "name": "J.K. Dobbins",
-    "pos": "RB",
-    "team": "DEN",
-    "age": 27,
-    "bk": 122,
-    "keep": 146,
-    "ppr": 102,
-    "avg": 112.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 146,
-      "PPR": 102
-    },
-    "value": 686
-  },
-  {
-    "key": "jake ferguson",
-    "name": "Jake Ferguson",
-    "pos": "TE",
-    "team": "DAL",
-    "age": 27,
-    "bk": 123,
-    "keep": 130,
-    "ppr": 110,
-    "avg": 112.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 130,
-      "PPR": 110
-    },
-    "value": 674
-  },
-  {
-    "key": "rachaad white",
-    "name": "Rachaad White",
-    "pos": "RB",
-    "team": "WAS",
-    "age": 27,
-    "bk": 124,
-    "keep": 158,
-    "ppr": 98,
-    "avg": 112.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 158,
-      "PPR": 98
-    },
-    "value": 662
-  },
-  {
-    "key": "jordyn tyson",
-    "name": "Jordyn Tyson",
-    "pos": "WR",
-    "team": "NO",
-    "age": 22,
-    "bk": 125,
-    "keep": 59,
-    "ppr": 116,
-    "avg": 113.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 59,
-      "PPR": 116
-    },
-    "value": 650
-  },
-  {
-    "key": "makai lemon",
-    "name": "Makai Lemon",
-    "pos": "WR",
-    "team": "PHI",
-    "age": 22,
-    "bk": 126,
-    "keep": 67,
-    "ppr": 115,
-    "avg": 115.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 67,
-      "PPR": 115
-    },
-    "value": 639
-  },
-  {
-    "key": "matthew golden",
-    "name": "Matthew Golden",
-    "pos": "WR",
-    "team": "GB",
-    "age": 23,
-    "bk": 127,
-    "keep": 117,
-    "ppr": 111,
-    "avg": 116.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 117,
-      "PPR": 111
-    },
-    "value": 627
-  },
-  {
-    "key": "dallas goedert",
-    "name": "Dallas Goedert",
-    "pos": "TE",
-    "team": "PHI",
-    "age": 31,
-    "bk": 128,
-    "keep": 153,
-    "ppr": 114,
-    "avg": 116.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 153,
-      "PPR": 114
-    },
-    "value": 616
-  },
-  {
-    "key": "michael penix",
-    "name": "Michael Penix Jr.",
-    "pos": "QB",
-    "team": "ATL",
-    "age": 26,
-    "bk": 129,
-    "keep": 144,
-    "ppr": "",
-    "avg": 116.48,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 144
-    },
-    "value": 605
-  },
-  {
-    "key": "dalton kincaid",
-    "name": "Dalton Kincaid",
-    "pos": "TE",
-    "team": "BUF",
-    "age": 26,
-    "bk": 130,
-    "keep": 116,
-    "ppr": 120,
-    "avg": 117.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 116,
-      "PPR": 120
-    },
-    "value": 595
-  },
-  {
-    "key": "isaiah likely",
-    "name": "Isaiah Likely",
-    "pos": "TE",
-    "team": "NYG",
-    "age": 26,
-    "bk": 131,
-    "keep": 110,
-    "ppr": 126,
-    "avg": 119.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 110,
-      "PPR": 126
-    },
-    "value": 584
-  },
-  {
-    "key": "geno smith",
-    "name": "Geno Smith",
-    "pos": "QB",
-    "team": "NYJ",
-    "age": 35,
-    "bk": 132,
-    "keep": 167,
-    "ppr": 188,
-    "avg": 120.94,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 167,
-      "PPR": 188
-    },
-    "value": 574
-  },
-  {
-    "key": "khalil shakir",
-    "name": "Khalil Shakir",
-    "pos": "WR",
-    "team": "BUF",
-    "age": 26,
-    "bk": 133,
-    "keep": 138,
-    "ppr": 117,
-    "avg": 121.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 138,
-      "PPR": 117
-    },
-    "value": 564
-  },
-  {
-    "key": "xavier worthy",
-    "name": "Xavier Worthy",
-    "pos": "WR",
-    "team": "KC",
-    "age": 23,
-    "bk": 134,
-    "keep": 125,
-    "ppr": 119,
-    "avg": 124.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 125,
-      "PPR": 119
-    },
-    "value": 554
-  },
-  {
-    "key": "jordan mason",
-    "name": "Jordan Mason",
-    "pos": "RB",
-    "team": "MIN",
-    "age": 27,
-    "bk": 135,
-    "keep": 150,
-    "ppr": 123,
-    "avg": 127.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 150,
-      "PPR": 123
-    },
-    "value": 544
-  },
-  {
-    "key": "jacory croskey-merritt",
-    "name": "Jacory Croskey-Merritt",
-    "pos": "RB",
-    "team": "WAS",
-    "age": 25,
-    "bk": 136,
-    "keep": 142,
-    "ppr": 122,
-    "avg": 128.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 142,
-      "PPR": 122
-    },
-    "value": 534
-  },
-  {
-    "key": "d j moore",
-    "name": "D.J. Moore",
-    "pos": "",
-    "team": "",
-    "age": 29,
-    "bk": 137,
-    "keep": 96,
-    "ppr": "",
-    "avg": 129.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 96
-    },
-    "value": 525
-  },
-  {
-    "key": "tua tagovailoa",
-    "name": "Tua Tagovailoa",
-    "pos": "QB",
-    "team": "ATL",
-    "age": 28,
-    "bk": 138,
-    "keep": 164,
-    "ppr": "",
-    "avg": 129.68,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 164
-    },
-    "value": 516
-  },
-  {
-    "key": "romeo doubs",
-    "name": "Romeo Doubs",
-    "pos": "WR",
-    "team": "NE",
-    "age": 26,
-    "bk": 139,
-    "keep": 134,
-    "ppr": 131,
-    "avg": 130.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 134,
-      "PPR": 131
-    },
-    "value": 506
-  },
-  {
-    "key": "kc concepcion",
-    "name": "KC Concepcion",
-    "pos": "WR",
-    "team": "CLE",
-    "age": 21,
-    "bk": 140,
-    "keep": 85,
-    "ppr": 128,
-    "avg": 131.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 85,
-      "PPR": 128
-    },
-    "value": 498
-  },
-  {
-    "key": "mark andrews",
-    "name": "Mark Andrews",
-    "pos": "TE",
-    "team": "BAL",
-    "age": 30,
-    "bk": 141,
-    "keep": 161,
-    "ppr": 132,
-    "avg": 132.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 161,
-      "PPR": 132
-    },
-    "value": 489
-  },
-  {
-    "key": "jalen coker",
-    "name": "Jalen Coker",
-    "pos": "WR",
-    "team": "CAR",
-    "age": 24,
-    "bk": 142,
-    "keep": 137,
-    "ppr": 129,
-    "avg": 133.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 137,
-      "PPR": 129
-    },
-    "value": 480
-  },
-  {
-    "key": "tyjae spears",
-    "name": "Tyjae Spears",
-    "pos": "RB",
-    "team": "TEN",
-    "age": 25,
-    "bk": 143,
-    "keep": 163,
-    "ppr": 121,
-    "avg": 133.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 163,
-      "PPR": 121
-    },
-    "value": 472
-  },
-  {
-    "key": "tyler allgeier",
-    "name": "Tyler Allgeier",
-    "pos": "RB",
-    "team": "ARI",
-    "age": 26,
-    "bk": 144,
-    "keep": 143,
-    "ppr": 135,
-    "avg": 135.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 143,
-      "PPR": 135
-    },
-    "value": 463
-  },
-  {
-    "key": "zach charbonnet",
-    "name": "Zach Charbonnet",
-    "pos": "RB",
-    "team": "SEA",
-    "age": 25,
-    "bk": 145,
-    "keep": 118,
-    "ppr": 145,
-    "avg": 136.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 118,
-      "PPR": 145
-    },
-    "value": 455
-  },
-  {
-    "key": "woody marks",
-    "name": "Woody Marks",
-    "pos": "RB",
-    "team": "HOU",
-    "age": 25,
-    "bk": 146,
-    "keep": 149,
-    "ppr": 136,
-    "avg": 139.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 149,
-      "PPR": 136
-    },
-    "value": 447
-  },
-  {
-    "key": "alvin kamara",
-    "name": "Alvin Kamara",
-    "pos": "RB",
-    "team": "NO",
-    "age": 31,
-    "bk": 147,
-    "keep": 204,
-    "ppr": 127,
-    "avg": 140.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 204,
-      "PPR": 127
-    },
-    "value": 439
-  },
-  {
-    "key": "shedeur sanders",
-    "name": "Shedeur Sanders",
-    "pos": "QB",
-    "team": "CLE",
-    "age": 24,
-    "bk": 148,
-    "keep": 171,
-    "ppr": "",
-    "avg": 141.82,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 171
-    },
-    "value": 432
-  },
-  {
-    "key": "tyrone tracy",
-    "name": "Tyrone Tracy Jr.",
-    "pos": "RB",
-    "team": "NYG",
-    "age": 26,
-    "bk": 149,
-    "keep": 159,
-    "ppr": 140,
-    "avg": 144.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 159,
-      "PPR": 140
-    },
-    "value": 424
-  },
-  {
-    "key": "juwan johnson",
-    "name": "Juwan Johnson",
-    "pos": "TE",
-    "team": "NO",
-    "age": 29,
-    "bk": 150,
-    "keep": 191,
-    "ppr": 134,
-    "avg": 144.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 191,
-      "PPR": 134
-    },
-    "value": 417
-  },
-  {
-    "key": "rashid shaheed",
-    "name": "Rashid Shaheed",
-    "pos": "WR",
-    "team": "SEA",
-    "age": 27,
-    "bk": 151,
-    "keep": 156,
-    "ppr": 146,
-    "avg": 145.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 156,
-      "PPR": 146
-    },
-    "value": 409
-  },
-  {
-    "key": "brenton strange",
-    "name": "Brenton Strange",
-    "pos": "TE",
-    "team": "JAX",
-    "age": 25,
-    "bk": 152,
-    "keep": 139,
-    "ppr": 149,
-    "avg": 146.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 139,
-      "PPR": 149
-    },
-    "value": 402
-  },
-  {
-    "key": "deebo samuel",
-    "name": "Deebo Samuel Sr.",
-    "pos": "WR",
-    "team": "SF",
-    "age": 30,
-    "bk": 153,
-    "keep": 186,
-    "ppr": 141,
-    "avg": 146.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 186,
-      "PPR": 141
-    },
-    "value": 395
-  },
-  {
-    "key": "denzel boston",
-    "name": "Denzel Boston",
-    "pos": "WR",
-    "team": "CLE",
-    "age": 22,
-    "bk": 154,
-    "keep": 106,
-    "ppr": 143,
-    "avg": 146.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 106,
-      "PPR": 143
-    },
-    "value": 388
-  },
-  {
-    "key": "chris rodriguez",
-    "name": "Chris Rodriguez Jr.",
-    "pos": "RB",
-    "team": "JAX",
-    "age": 26,
-    "bk": 155,
-    "keep": 182,
-    "ppr": 137,
-    "avg": 148.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 182,
-      "PPR": 137
-    },
-    "value": 381
-  },
-  {
-    "key": "j j mccarthy",
-    "name": "J.J. McCarthy",
-    "pos": "QB",
-    "team": "MIN",
-    "age": 23,
-    "bk": 156,
-    "keep": 180,
-    "ppr": "",
-    "avg": 150.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 180
-    },
-    "value": 375
-  },
-  {
-    "key": "oronde gadsden",
-    "name": "Oronde Gadsden II",
-    "pos": "TE",
-    "team": "LAC",
-    "age": 23,
-    "bk": 157,
-    "keep": 112,
-    "ppr": 167,
-    "avg": 153.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 112,
-      "PPR": 167
-    },
-    "value": 368
-  },
-  {
-    "key": "hunter henry",
-    "name": "Hunter Henry",
-    "pos": "TE",
-    "team": "NE",
-    "age": 31,
-    "bk": 158,
-    "keep": 190,
-    "ppr": 152,
-    "avg": 153.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 190,
-      "PPR": 152
-    },
-    "value": 362
-  },
-  {
-    "key": "chig okonkwo",
-    "name": "Chig Okonkwo",
-    "pos": "TE",
-    "team": "WAS",
-    "age": 26,
-    "bk": 159,
-    "keep": 169,
-    "ppr": 150,
-    "avg": 154.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 169,
-      "PPR": 150
-    },
-    "value": 355
-  },
-  {
-    "key": "jauan jennings",
-    "name": "Jauan Jennings",
-    "pos": "WR",
-    "team": "MIN",
-    "age": 29,
-    "bk": 160,
-    "keep": 176,
-    "ppr": 155,
-    "avg": 154.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 176,
-      "PPR": 155
-    },
-    "value": 349
-  },
-  {
-    "key": "jayden higgins",
-    "name": "Jayden Higgins",
-    "pos": "WR",
-    "team": "HOU",
-    "age": 23,
-    "bk": 161,
-    "keep": 114,
-    "ppr": "",
-    "avg": 157.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 114
-    },
-    "value": 343
-  },
-  {
-    "key": "omar cooper",
-    "name": "Omar Cooper Jr.",
-    "pos": "WR",
-    "team": "NYJ",
-    "age": 22,
-    "bk": 162,
-    "keep": 104,
-    "ppr": 164,
-    "avg": 160.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 104,
-      "PPR": 164
-    },
-    "value": 337
-  },
-  {
-    "key": "jerry jeudy",
-    "name": "Jerry Jeudy",
-    "pos": "WR",
-    "team": "CLE",
-    "age": 27,
-    "bk": 163,
-    "keep": 184,
-    "ppr": 156,
-    "avg": 161.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 184,
-      "PPR": 156
-    },
-    "value": 331
-  },
-  {
-    "key": "isiah pacheco",
-    "name": "Isiah Pacheco",
-    "pos": "RB",
-    "team": "DET",
-    "age": 27,
-    "bk": 164,
-    "keep": 196,
-    "ppr": 151,
-    "avg": 161.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 196,
-      "PPR": 151
-    },
-    "value": 325
-  },
-  {
-    "key": "travis hunter",
-    "name": "Travis Hunter",
-    "pos": "WR",
-    "team": "JAX",
-    "age": 23,
-    "bk": 165,
-    "keep": 140,
-    "ppr": 166,
-    "avg": 161.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 140,
-      "PPR": 166
-    },
-    "value": 320
-  },
-  {
-    "key": "t j hockenson",
-    "name": "T.J. Hockenson",
-    "pos": "TE",
-    "team": "MIN",
-    "age": 29,
-    "bk": 166,
-    "keep": 177,
-    "ppr": 165,
-    "avg": 162.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 177,
-      "PPR": 165
-    },
-    "value": 314
-  },
-  {
-    "key": "dalton schultz",
-    "name": "Dalton Schultz",
-    "pos": "TE",
-    "team": "HOU",
-    "age": 30,
-    "bk": 167,
-    "keep": 211,
-    "ppr": 153,
-    "avg": 162.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 211,
-      "PPR": 153
-    },
-    "value": 309
-  },
-  {
-    "key": "keaton mitchell",
-    "name": "Keaton Mitchell",
-    "pos": "RB",
-    "team": "LAC",
-    "age": 24,
-    "bk": 168,
-    "keep": 195,
-    "ppr": 147,
-    "avg": 163.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 195,
-      "PPR": 147
-    },
-    "value": 303
-  },
-  {
-    "key": "dezhaun stribling",
-    "name": "De'Zhaun Stribling",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 169,
-    "keep": 122,
-    "ppr": "",
-    "avg": 165.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 122
-    },
-    "value": 298
-  },
-  {
-    "key": "jalen mcmillan",
-    "name": "Jalen McMillan",
-    "pos": "WR",
-    "team": "TB",
-    "age": 24,
-    "bk": 170,
-    "keep": 174,
-    "ppr": 160,
-    "avg": 165.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 174,
-      "PPR": 160
-    },
-    "value": 293
-  },
-  {
-    "key": "eli stowers",
-    "name": "Eli Stowers",
-    "pos": "TE",
-    "team": "PHI",
-    "age": 23,
-    "bk": 171,
-    "keep": 123,
-    "ppr": "",
-    "avg": 166.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 123
-    },
-    "value": 288
-  },
-  {
-    "key": "tre harris",
-    "name": "Tre' Harris",
-    "pos": "WR",
-    "team": "FA",
-    "age": 24,
-    "bk": 172,
-    "keep": 173,
-    "ppr": 163,
-    "avg": 167.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 173,
-      "PPR": 163
-    },
-    "value": 283
-  },
-  {
-    "key": "adonai mitchell",
-    "name": "Adonai Mitchell",
-    "pos": "WR",
-    "team": "NYJ",
-    "age": 23,
-    "bk": 173,
-    "keep": 183,
-    "ppr": 157,
-    "avg": 168.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 183,
-      "PPR": 157
-    },
-    "value": 278
-  },
-  {
-    "key": "dylan sampson",
-    "name": "Dylan Sampson",
-    "pos": "RB",
-    "team": "CLE",
-    "age": 21,
-    "bk": 174,
-    "keep": 179,
-    "ppr": 142,
-    "avg": 169.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 179,
-      "PPR": 142
-    },
-    "value": 273
-  },
-  {
-    "key": "jonah coleman",
-    "name": "Jonah Coleman",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 175,
-    "keep": 127,
-    "ppr": "",
-    "avg": 170.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 127
-    },
-    "value": 268
-  },
-  {
-    "key": "brian robinson",
-    "name": "Brian Robinson Jr.",
-    "pos": "RB",
-    "team": "ATL",
-    "age": 27,
-    "bk": 176,
-    "keep": 207,
-    "ppr": 161,
-    "avg": 171.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 207,
-      "PPR": 161
-    },
-    "value": 264
-  },
-  {
-    "key": "nick singleton",
-    "name": "Nicholas Singleton",
-    "pos": "RB",
-    "team": "FA",
-    "age": 24,
-    "bk": 177,
-    "keep": 148,
-    "ppr": 182,
-    "avg": 173.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 148,
-      "PPR": 182
-    },
-    "value": 259
-  },
-  {
-    "key": "tre tucker",
-    "name": "Tre Tucker",
-    "pos": "WR",
-    "team": "LV",
-    "age": 25,
-    "bk": 178,
-    "keep": 214,
-    "ppr": 158,
-    "avg": 174.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 214,
-      "PPR": 158
-    },
-    "value": 255
-  },
-  {
-    "key": "kenyon sadiq",
-    "name": "Kenyon Sadiq",
-    "pos": "TE",
-    "team": "NYJ",
-    "age": 21,
-    "bk": 179,
-    "keep": 97,
-    "ppr": 186,
-    "avg": 175.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 97,
-      "PPR": 186
-    },
-    "value": 250
-  },
-  {
-    "key": "ricky pearsall",
-    "name": "Ricky Pearsall",
-    "pos": "WR",
-    "team": "SF",
-    "age": 25,
-    "bk": 180,
-    "keep": 136,
-    "ppr": "",
-    "avg": 176.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 136
-    },
-    "value": 246
-  },
-  {
-    "key": "pat bryant",
-    "name": "Pat Bryant",
-    "pos": "WR",
-    "team": "DEN",
-    "age": 23,
-    "bk": 181,
-    "keep": 175,
-    "ppr": 172,
-    "avg": 176.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 175,
-      "PPR": 172
-    },
-    "value": 242
-  },
-  {
-    "key": "tank bigsby",
-    "name": "Tank Bigsby",
-    "pos": "RB",
-    "team": "PHI",
-    "age": 23,
-    "bk": 182,
-    "keep": 208,
-    "ppr": 159,
-    "avg": 176.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 208,
-      "PPR": 159
-    },
-    "value": 237
-  },
-  {
-    "key": "jaylin noel",
-    "name": "Jaylin Noel",
-    "pos": "WR",
-    "team": "HOU",
-    "age": 23,
-    "bk": 183,
-    "keep": 181,
-    "ppr": 174,
-    "avg": 179.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 181,
-      "PPR": 174
-    },
-    "value": 233
-  },
-  {
-    "key": "mike washington",
-    "name": "Mike Washington Jr.",
-    "pos": "RB",
-    "team": "LV",
-    "age": 23,
-    "bk": 184,
-    "keep": 170,
-    "ppr": 179,
-    "avg": 179.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 170,
-      "PPR": 179
-    },
-    "value": 229
-  },
-  {
-    "key": "calvin ridley",
-    "name": "Calvin Ridley",
-    "pos": "WR",
-    "team": "TEN",
-    "age": 31,
-    "bk": 185,
-    "keep": 212,
-    "ppr": 181,
-    "avg": 180.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 212,
-      "PPR": 181
-    },
-    "value": 225
-  },
-  {
-    "key": "aj barner",
-    "name": "AJ Barner",
-    "pos": "TE",
-    "team": "SEA",
-    "age": 24,
-    "bk": 186,
-    "keep": 189,
-    "ppr": 176,
-    "avg": 181.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 189,
-      "PPR": 176
-    },
-    "value": 221
-  },
-  {
-    "key": "braelon allen",
-    "name": "Braelon Allen",
-    "pos": "RB",
-    "team": "NYJ",
-    "age": 22,
-    "bk": 187,
-    "keep": 178,
-    "ppr": 162,
-    "avg": 181.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 178,
-      "PPR": 162
-    },
-    "value": 217
-  },
-  {
-    "key": "tank dell",
-    "name": "Tank Dell",
-    "pos": "WR",
-    "team": "HOU",
-    "age": 26,
-    "bk": 188,
-    "keep": 198,
-    "ppr": 177,
-    "avg": 181.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 198,
-      "PPR": 177
-    },
-    "value": 214
-  },
-  {
-    "key": "kenny gainwell",
-    "name": "Kenny Gainwell",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 189,
-    "keep": 145,
-    "ppr": "",
-    "avg": 181.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 145
-    },
-    "value": 210
-  },
-  {
-    "key": "emmett johnson",
-    "name": "Emmett Johnson",
-    "pos": "RB",
-    "team": "KC",
-    "age": 22,
-    "bk": 190,
-    "keep": 155,
-    "ppr": 173,
-    "avg": 182.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 155,
-      "PPR": 173
-    },
-    "value": 206
-  },
-  {
-    "key": "terrance ferguson",
-    "name": "Terrance Ferguson",
-    "pos": "TE",
-    "team": "LAR",
-    "age": 23,
-    "bk": 191,
-    "keep": 157,
-    "ppr": 189,
-    "avg": 182.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 157,
-      "PPR": 189
-    },
-    "value": 203
-  },
-  {
-    "key": "malik washington",
-    "name": "Malik Washington",
-    "pos": "WR",
-    "team": "MIA",
-    "age": 25,
-    "bk": 192,
-    "keep": 221,
-    "ppr": 168,
-    "avg": 183.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 221,
-      "PPR": 168
-    },
-    "value": 199
-  },
-  {
-    "key": "dontayvion wicks",
-    "name": "Dontayvion Wicks",
-    "pos": "WR",
-    "team": "PHI",
-    "age": 25,
-    "bk": 193,
-    "keep": 216,
-    "ppr": 171,
-    "avg": 184.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 216,
-      "PPR": 171
-    },
-    "value": 196
-  },
-  {
-    "key": "kayshon boutte",
-    "name": "Kayshon Boutte",
-    "pos": "WR",
-    "team": "NE",
-    "age": 24,
-    "bk": 194,
-    "keep": 199,
-    "ppr": 178,
-    "avg": 185.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 199,
-      "PPR": 178
-    },
-    "value": 192
-  },
-  {
-    "key": "isaac teslaa",
-    "name": "Isaac TeSlaa",
-    "pos": "WR",
-    "team": "DET",
-    "age": 24,
-    "bk": 195,
-    "keep": 194,
-    "ppr": 187,
-    "avg": 190.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 194,
-      "PPR": 187
-    },
-    "value": 189
-  },
-  {
-    "key": "ray davis",
-    "name": "Ray Davis",
-    "pos": "RB",
-    "team": "BUF",
-    "age": 26,
-    "bk": 196,
-    "keep": 248,
-    "ppr": 169,
-    "avg": 191.1,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 248,
-      "PPR": 169
-    },
-    "value": 186
-  },
-  {
-    "key": "troy franklin",
-    "name": "Troy Franklin",
-    "pos": "WR",
-    "team": "DEN",
-    "age": 23,
-    "bk": 197,
-    "keep": 197,
-    "ppr": 185,
-    "avg": 191.8,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 197,
-      "PPR": 185
-    },
-    "value": 183
-  },
-  {
-    "key": "pat freiermuth",
-    "name": "Pat Freiermuth",
-    "pos": "TE",
-    "team": "PIT",
-    "age": 27,
-    "bk": 198,
-    "keep": 210,
-    "ppr": 194,
-    "avg": 195.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 210,
-      "PPR": 194
-    },
-    "value": 180
-  },
-  {
-    "key": "kimani vidal",
-    "name": "Kimani Vidal",
-    "pos": "RB",
-    "team": "LAC",
-    "age": 24,
-    "bk": 199,
-    "keep": 227,
-    "ppr": 180,
-    "avg": 195.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 227,
-      "PPR": 180
-    },
-    "value": 176
-  },
-  {
-    "key": "rashod bateman",
-    "name": "Rashod Bateman",
-    "pos": "WR",
-    "team": "BAL",
-    "age": 26,
-    "bk": 200,
-    "keep": 215,
-    "ppr": 190,
-    "avg": 195.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 215,
-      "PPR": 190
-    },
-    "value": 173
-  },
-  {
-    "key": "marshawn lloyd",
-    "name": "MarShawn Lloyd",
-    "pos": "RB",
-    "team": "GB",
-    "age": 25,
-    "bk": 201,
-    "keep": 258,
-    "ppr": 170,
-    "avg": 196.4,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 258,
-      "PPR": 170
-    },
-    "value": 170
-  },
-  {
-    "key": "cooper kupp",
-    "name": "Cooper Kupp",
-    "pos": "WR",
-    "team": "SEA",
-    "age": 33,
-    "bk": 202,
-    "keep": 238,
-    "ppr": 197,
-    "avg": 196.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 238,
-      "PPR": 197
-    },
-    "value": 167
-  },
-  {
-    "key": "sean tucker",
-    "name": "Sean Tucker",
-    "pos": "RB",
-    "team": "TB",
-    "age": 24,
-    "bk": 203,
-    "keep": 245,
-    "ppr": 175,
-    "avg": 197.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 245,
-      "PPR": 175
-    },
-    "value": 165
-  },
-  {
-    "key": "aaron rodgers",
-    "name": "Aaron Rodgers",
-    "pos": "",
-    "team": "",
-    "age": 42,
-    "bk": 204,
-    "keep": 185,
-    "ppr": "",
-    "avg": 197.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 185
-    },
-    "value": 162
-  },
-  {
-    "key": "antonio williams",
-    "name": "Antonio Williams",
-    "pos": "RB",
-    "team": "WAS",
-    "age": 22,
-    "bk": 205,
-    "keep": 151,
-    "ppr": 198,
-    "avg": 198.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 151,
-      "PPR": 198
-    },
-    "value": 159
-  },
-  {
-    "key": "james conner",
-    "name": "James Conner",
-    "pos": "RB",
-    "team": "ARI",
-    "age": 31,
-    "bk": 206,
-    "keep": 268,
-    "ppr": 183,
-    "avg": 198.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 268,
-      "PPR": 183
-    },
-    "value": 156
-  },
-  {
-    "key": "germie bernard",
-    "name": "Germie Bernard",
-    "pos": "WR",
-    "team": "PIT",
-    "age": 22,
-    "bk": 207,
-    "keep": 154,
-    "ppr": 199,
-    "avg": 200.3,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 154,
-      "PPR": 199
-    },
-    "value": 154
-  },
-  {
-    "key": "darnell mooney",
-    "name": "Darnell Mooney",
-    "pos": "WR",
-    "team": "NYG",
-    "age": 28,
-    "bk": 208,
-    "keep": 251,
-    "ppr": 191,
-    "avg": 204.2,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 251,
-      "PPR": 191
-    },
-    "value": 151
-  },
-  {
-    "key": "keenan allen",
-    "name": "Keenan Allen",
-    "pos": "WR",
-    "team": "IND",
-    "age": 34,
-    "bk": 209,
-    "keep": 304,
-    "ppr": 184,
-    "avg": 205.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 304,
-      "PPR": 184
-    },
-    "value": 148
-  },
-  {
-    "key": "chigoziem okonkwo",
-    "name": "Chigoziem Okonkwo",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 210,
-    "keep": 168,
-    "ppr": "",
-    "avg": 206.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 168
-    },
-    "value": 146
-  },
-  {
-    "key": "cade otton",
-    "name": "Cade Otton",
-    "pos": "TE",
-    "team": "TB",
-    "age": 27,
-    "bk": 211,
-    "keep": 242,
-    "ppr": 196,
-    "avg": 206.6,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 242,
-      "PPR": 196
-    },
-    "value": 143
-  },
-  {
-    "key": "chris bell",
-    "name": "Chris Bell",
-    "pos": "WR",
-    "team": "MIA",
-    "age": 22,
-    "bk": 212,
-    "keep": 152,
-    "ppr": "",
-    "avg": 206.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 152
-    },
-    "value": 141
-  },
-  {
-    "key": "zachariah branch",
-    "name": "Zachariah Branch",
-    "pos": "WR",
-    "team": "ATL",
-    "age": 22,
-    "bk": 213,
-    "keep": 188,
-    "ppr": 195,
-    "avg": 207.7,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 188,
-      "PPR": 195
-    },
-    "value": 138
-  },
-  {
-    "key": "emanuel wilson",
-    "name": "Emanuel Wilson",
-    "pos": "RB",
-    "team": "SEA",
-    "age": 27,
-    "bk": 214,
-    "keep": 261,
-    "ppr": 192,
-    "avg": 209.5,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 261,
-      "PPR": 192
-    },
-    "value": 136
-  },
-  {
-    "key": "jakobi lane",
-    "name": "Ja'Kobi Lane",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 215,
-    "keep": 160,
-    "ppr": "",
-    "avg": 214.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 160
-    },
-    "value": 134
-  },
-  {
-    "key": "jaylen wright",
-    "name": "Jaylen Wright",
-    "pos": "RB",
-    "team": "MIA",
-    "age": 23,
-    "bk": 216,
-    "keep": 239,
-    "ppr": 200,
-    "avg": 214.9,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 239,
-      "PPR": 200
-    },
-    "value": 131
-  },
-  {
-    "key": "malachi fields",
-    "name": "Malachi Fields",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 217,
-    "keep": 165,
-    "ppr": "",
-    "avg": 219.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 165
-    },
-    "value": 129
-  },
-  {
-    "key": "jacoby brissett",
-    "name": "Jacoby Brissett",
-    "pos": "",
-    "team": "",
-    "age": 33,
-    "bk": 218,
-    "keep": 193,
-    "ppr": "",
-    "avg": 220.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 193
-    },
-    "value": 127
-  },
-  {
-    "key": "jaydon blue",
-    "name": "Jaydon Blue",
-    "pos": "RB",
-    "team": "DAL",
-    "age": 22,
-    "bk": 219,
-    "keep": 237,
-    "ppr": 193,
-    "avg": 221.0,
-    "n": 2,
-    "ranks": {
-      "Keep SF": 237,
-      "PPR": 193
-    },
-    "value": 125
-  },
-  {
-    "key": "elijah sarratt",
-    "name": "Elijah Sarratt",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 220,
-    "keep": 192,
-    "ppr": "",
-    "avg": 235.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 192
-    },
-    "value": 123
-  },
-  {
-    "key": "deshaun watson",
-    "name": "Deshaun Watson",
-    "pos": "",
-    "team": "",
-    "age": 30,
-    "bk": 221,
-    "keep": 206,
-    "ppr": "",
-    "avg": 238.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 206
-    },
-    "value": 120
-  },
-  {
-    "key": "jalen nailor",
-    "name": "Jalen Nailor",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 222,
-    "keep": 203,
-    "ppr": "",
-    "avg": 239.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 203
-    },
-    "value": 118
-  },
-  {
-    "key": "ted hurst",
-    "name": "Ted Hurst",
-    "pos": "WR",
-    "team": "TB",
-    "age": 22,
-    "bk": 223,
-    "keep": 187,
-    "ppr": "",
-    "avg": 241.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 187
-    },
-    "value": 116
-  },
-  {
-    "key": "kaytron allen",
-    "name": "Kaytron Allen",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 224,
-    "keep": 200,
-    "ppr": "",
-    "avg": 243.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 200
-    },
-    "value": 114
-  },
-  {
-    "key": "carson beck",
-    "name": "Carson Beck",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 225,
-    "keep": 201,
-    "ppr": "",
-    "avg": 244.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 201
-    },
-    "value": 112
-  },
-  {
-    "key": "kirk cousins",
-    "name": "Kirk Cousins",
-    "pos": "",
-    "team": "",
-    "age": 38,
-    "bk": 226,
-    "keep": 225,
-    "ppr": "",
-    "avg": 244.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 225
-    },
-    "value": 110
-  },
-  {
-    "key": "gunnar helm",
-    "name": "Gunnar Helm",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 227,
-    "keep": 202,
-    "ppr": "",
-    "avg": 245.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 202
-    },
-    "value": 109
-  },
-  {
-    "key": "justin fields",
-    "name": "Justin Fields",
-    "pos": "QB",
-    "team": "KC",
-    "age": 27,
-    "bk": 228,
-    "keep": 306,
-    "ppr": "",
-    "avg": 247.72,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 306
-    },
-    "value": 107
-  },
-  {
-    "key": "elic ayomanor",
-    "name": "Elic Ayomanor",
-    "pos": "WR",
-    "team": "TEN",
-    "age": 23,
-    "bk": 229,
-    "keep": 209,
-    "ppr": "",
-    "avg": 252.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 209
-    },
-    "value": 105
-  },
-  {
-    "key": "david njoku",
-    "name": "David Njoku",
-    "pos": "TE",
-    "team": "LAC",
-    "age": 30,
-    "bk": 230,
-    "keep": 224,
-    "ppr": "",
-    "avg": 256.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 224
-    },
-    "value": 103
-  },
-  {
-    "key": "mason taylor",
-    "name": "Mason Taylor",
-    "pos": "TE",
-    "team": "NYJ",
-    "age": 22,
-    "bk": 231,
-    "keep": 205,
-    "ppr": "",
-    "avg": 259.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 205
-    },
-    "value": 101
-  },
-  {
-    "key": "skyler bell",
-    "name": "Skyler Bell",
-    "pos": "WR",
-    "team": "BUF",
-    "age": 24,
-    "bk": 232,
-    "keep": 219,
-    "ppr": "",
-    "avg": 260.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 219
-    },
-    "value": 100
-  },
-  {
-    "key": "cyrus allen",
-    "name": "Cyrus Allen",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 233,
-    "keep": 218,
-    "ppr": "",
-    "avg": 261.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 218
-    },
-    "value": 98
-  },
-  {
-    "key": "jack bech",
-    "name": "Jack Bech",
-    "pos": "WR",
-    "team": "LV",
-    "age": 23,
-    "bk": 234,
-    "keep": 220,
-    "ppr": "",
-    "avg": 263.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 220
-    },
-    "value": 96
-  },
-  {
-    "key": "greg dulcich",
-    "name": "Greg Dulcich",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 235,
-    "keep": 226,
-    "ppr": "",
-    "avg": 264.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 226
-    },
-    "value": 95
-  },
-  {
-    "key": "tory horton",
-    "name": "Tory Horton",
-    "pos": "WR",
-    "team": "SEA",
-    "age": 23,
-    "bk": 236,
-    "keep": 223,
-    "ppr": "",
-    "avg": 266.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 223
-    },
-    "value": 93
-  },
-  {
-    "key": "chris brazzell",
-    "name": "Chris Brazzell II",
-    "pos": "WR",
-    "team": "CAR",
-    "age": 22,
-    "bk": 237,
-    "keep": 213,
-    "ppr": "",
-    "avg": 267.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 213
-    },
-    "value": 91
-  },
-  {
-    "key": "chimere dike",
-    "name": "Chimere Dike",
-    "pos": "WR",
-    "team": "TEN",
-    "age": 24,
-    "bk": 238,
-    "keep": 229,
-    "ppr": "",
-    "avg": 270.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 229
-    },
-    "value": 90
-  },
-  {
-    "key": "oscar delp",
-    "name": "Oscar Delp",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 239,
-    "keep": 228,
-    "ppr": "",
-    "avg": 271.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 228
-    },
-    "value": 88
-  },
-  {
-    "key": "trey benson",
-    "name": "Trey Benson",
-    "pos": "RB",
-    "team": "ARI",
-    "age": 24,
-    "bk": 240,
-    "keep": 230,
-    "ppr": "",
-    "avg": 271.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 230
-    },
-    "value": 87
-  },
-  {
-    "key": "caleb douglas",
-    "name": "Caleb Douglas",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 241,
-    "keep": 217,
-    "ppr": "",
-    "avg": 271.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 217
-    },
-    "value": 85
-  },
-  {
-    "key": "kaleb johnson",
-    "name": "Kaleb Johnson",
-    "pos": "RB",
-    "team": "PIT",
-    "age": 23,
-    "bk": 242,
-    "keep": 231,
-    "ppr": "",
-    "avg": 274.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 231
-    },
-    "value": 84
-  },
-  {
-    "key": "elijah arroyo",
-    "name": "Elijah Arroyo",
-    "pos": "TE",
-    "team": "SEA",
-    "age": 23,
-    "bk": 243,
-    "keep": 232,
-    "ppr": "",
-    "avg": 275.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 232
-    },
-    "value": 82
-  },
-  {
-    "key": "eli raridon",
-    "name": "Eli Raridon",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 244,
-    "keep": 222,
-    "ppr": "",
-    "avg": 276.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 222
-    },
-    "value": 81
-  },
-  {
-    "key": "mac jones",
-    "name": "Mac Jones",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 245,
-    "keep": 241,
-    "ppr": "",
-    "avg": 277.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 241
-    },
-    "value": 80
-  },
-  {
-    "key": "max klare",
-    "name": "Max Klare",
-    "pos": "TE",
-    "team": "LAR",
-    "age": 23,
-    "bk": 246,
-    "keep": 235,
-    "ppr": "",
-    "avg": 278.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 235
-    },
-    "value": 78
-  },
-  {
-    "key": "justice hill",
-    "name": "Justice Hill",
-    "pos": "RB",
-    "team": "BAL",
-    "age": 28,
-    "bk": 247,
-    "keep": 244,
-    "ppr": "",
-    "avg": 279.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 244
-    },
-    "value": 77
-  },
-  {
-    "key": "keon coleman",
-    "name": "Keon Coleman",
-    "pos": "WR",
-    "team": "BUF",
-    "age": 23,
-    "bk": 248,
-    "keep": 236,
-    "ppr": "",
-    "avg": 279.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 236
-    },
-    "value": 76
-  },
-  {
-    "key": "kaelon black",
-    "name": "Kaelon Black",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 249,
-    "keep": 240,
-    "ppr": "",
-    "avg": 281.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 240
-    },
-    "value": 74
-  },
-  {
-    "key": "jalen tolbert",
-    "name": "Jalen Tolbert",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 250,
-    "keep": 249,
-    "ppr": "",
-    "avg": 285.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 249
-    },
-    "value": 73
-  },
-  {
-    "key": "michael mayer",
-    "name": "Michael Mayer",
-    "pos": "TE",
-    "team": "LV",
-    "age": 25,
-    "bk": 251,
-    "keep": 246,
-    "ppr": "",
-    "avg": 286.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 246
-    },
-    "value": 72
-  },
-  {
-    "key": "kyle williams",
-    "name": "Kyle Williams",
-    "pos": "WR",
-    "team": "NE",
-    "age": 23,
-    "bk": 252,
-    "keep": 243,
-    "ppr": "",
-    "avg": 286.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 243
-    },
-    "value": 71
-  },
-  {
-    "key": "ollie gordon",
-    "name": "Ollie Gordon II",
-    "pos": "RB",
-    "team": "MIA",
-    "age": 22,
-    "bk": 253,
-    "keep": 233,
-    "ppr": "",
-    "avg": 287.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 233
-    },
-    "value": 69
-  },
-  {
-    "key": "ryan flournoy",
-    "name": "Ryan Flournoy",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 254,
-    "keep": 250,
-    "ppr": "",
-    "avg": 288.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 250
-    },
-    "value": 68
-  },
-  {
-    "key": "marvin mims",
-    "name": "Marvin Mims Jr.",
-    "pos": "WR",
-    "team": "DEN",
-    "age": 24,
-    "bk": 255,
-    "keep": 247,
-    "ppr": "",
-    "avg": 288.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 247
-    },
-    "value": 67
-  },
-  {
-    "key": "demond claiborne",
-    "name": "Demond Claiborne",
-    "pos": "RB",
-    "team": "MIN",
-    "age": 22,
-    "bk": 256,
-    "keep": 234,
-    "ppr": "",
-    "avg": 288.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 234
-    },
-    "value": 66
-  },
-  {
-    "key": "theo johnson",
-    "name": "Theo Johnson",
-    "pos": "TE",
-    "team": "NYG",
-    "age": 25,
-    "bk": 257,
-    "keep": 252,
-    "ppr": "",
-    "avg": 292.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 252
-    },
-    "value": 65
-  },
-  {
-    "key": "brashard smith",
-    "name": "Brashard Smith",
-    "pos": "RB",
-    "team": "KC",
-    "age": 23,
-    "bk": 258,
-    "keep": 253,
-    "ppr": "",
-    "avg": 296.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 253
-    },
-    "value": 64
-  },
-  {
-    "key": "mike gesicki",
-    "name": "Mike Gesicki",
-    "pos": "",
-    "team": "",
-    "age": 30,
-    "bk": 259,
-    "keep": 265,
-    "ppr": "",
-    "avg": 297.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 265
-    },
-    "value": 63
-  },
-  {
-    "key": "seth mcgowan",
-    "name": "Seth McGowan",
-    "pos": "RB",
-    "team": "IND",
-    "age": 24,
-    "bk": 260,
-    "keep": 256,
-    "ppr": "",
-    "avg": 297.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 256
-    },
-    "value": 61
-  },
-  {
-    "key": "tez johnson",
-    "name": "Tez Johnson",
-    "pos": "WR",
-    "team": "TB",
-    "age": 24,
-    "bk": 261,
-    "keep": 257,
-    "ppr": "",
-    "avg": 298.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 257
-    },
-    "value": 60
-  },
-  {
-    "key": "brandon aiyuk",
-    "name": "Brandon Aiyuk",
-    "pos": "WR",
-    "team": "SF",
-    "age": 28,
-    "bk": 262,
-    "keep": 264,
-    "ppr": "",
-    "avg": 299.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 264
-    },
-    "value": 59
-  },
-  {
-    "key": "hollywood brown",
-    "name": "Hollywood Brown",
-    "pos": "",
-    "team": "",
-    "age": 29,
-    "bk": 263,
-    "keep": 267,
-    "ppr": "",
-    "avg": 300.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 267
-    },
-    "value": 58
-  },
-  {
-    "key": "devin neal",
-    "name": "Devin Neal",
-    "pos": "RB",
-    "team": "NO",
-    "age": 23,
-    "bk": 264,
-    "keep": 260,
-    "ppr": "",
-    "avg": 303.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 260
-    },
-    "value": 57
-  },
-  {
-    "key": "evan engram",
-    "name": "Evan Engram",
-    "pos": "TE",
-    "team": "DEN",
-    "age": 31,
-    "bk": 265,
-    "keep": 275,
-    "ppr": "",
-    "avg": 305.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 275
-    },
-    "value": 56
-  },
-  {
-    "key": "christian kirk",
-    "name": "Christian Kirk",
-    "pos": "WR",
-    "team": "SF",
-    "age": 29,
-    "bk": 266,
-    "keep": 272,
-    "ppr": "",
-    "avg": 305.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 272
-    },
-    "value": 55
-  },
-  {
-    "key": "jahan dotson",
-    "name": "Jahan Dotson",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 267,
-    "keep": 270,
-    "ppr": "",
-    "avg": 308.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 270
-    },
-    "value": 54
-  },
-  {
-    "key": "jordan james",
-    "name": "Jordan James",
-    "pos": "RB",
-    "team": "SF",
-    "age": 22,
-    "bk": 268,
-    "keep": 254,
-    "ppr": "",
-    "avg": 308.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 254
-    },
-    "value": 54
-  },
-  {
-    "key": "xavier legette",
-    "name": "Xavier Legette",
-    "pos": "WR",
-    "team": "CAR",
-    "age": 25,
-    "bk": 269,
-    "keep": 269,
-    "ppr": "",
-    "avg": 309.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 269
-    },
-    "value": 53
-  },
-  {
-    "key": "adam randall",
-    "name": "Adam Randall",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 270,
-    "keep": 255,
-    "ppr": "",
-    "avg": 309.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 255
-    },
-    "value": 52
-  },
-  {
-    "key": "bryce lance",
-    "name": "Bryce Lance",
-    "pos": "WR",
-    "team": "NO",
-    "age": 24,
-    "bk": 271,
-    "keep": 271,
-    "ppr": "",
-    "avg": 312.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 271
-    },
-    "value": 51
-  },
-  {
-    "key": "drew allar",
-    "name": "Drew Allar",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 272,
-    "keep": 259,
-    "ppr": "",
-    "avg": 313.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 259
-    },
-    "value": 50
-  },
-  {
-    "key": "isaiah davis",
-    "name": "Isaiah Davis",
-    "pos": "RB",
-    "team": "NYJ",
-    "age": 24,
-    "bk": 273,
-    "keep": 273,
-    "ppr": "",
-    "avg": 314.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 273
-    },
-    "value": 49
-  },
-  {
-    "key": "dare ogunbowale",
-    "name": "Dare Ogunbowale",
-    "pos": "",
-    "team": "",
-    "age": 32,
-    "bk": 274,
-    "keep": 286,
-    "ppr": "",
-    "avg": 314.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 286
-    },
-    "value": 48
-  },
-  {
-    "key": "demario douglas",
-    "name": "DeMario Douglas",
-    "pos": "WR",
-    "team": "NE",
-    "age": 25,
-    "bk": 275,
-    "keep": 276,
-    "ppr": "",
-    "avg": 316.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 276
-    },
-    "value": 47
-  },
-  {
-    "key": "isaiah bond",
-    "name": "Isaiah Bond",
-    "pos": "WR",
-    "team": "CLE",
-    "age": 22,
-    "bk": 276,
-    "keep": 262,
-    "ppr": "",
-    "avg": 316.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 262
-    },
-    "value": 47
-  },
-  {
-    "key": "justin joly",
-    "name": "Justin Joly",
-    "pos": "TE",
-    "team": "DEN",
-    "age": 22,
-    "bk": 277,
-    "keep": 263,
-    "ppr": "",
-    "avg": 317.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 263
-    },
-    "value": 46
-  },
-  {
-    "key": "jake tonges",
-    "name": "Jake Tonges",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 278,
-    "keep": 283,
-    "ppr": "",
-    "avg": 319.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 283
-    },
-    "value": 45
-  },
-  {
-    "key": "cedric tillman",
-    "name": "Cedric Tillman",
-    "pos": "WR",
-    "team": "CLE",
-    "age": 26,
-    "bk": 279,
-    "keep": 282,
-    "ppr": "",
-    "avg": 320.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 282
-    },
-    "value": 44
-  },
-  {
-    "key": "tyreek hill",
-    "name": "Tyreek Hill",
-    "pos": "WR",
-    "team": "FA",
-    "age": 24,
-    "bk": 280,
-    "keep": 279,
-    "ppr": "",
-    "avg": 320.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 279
-    },
-    "value": 44
-  },
-  {
-    "key": "kevin coleman",
-    "name": "Kevin Coleman Jr.",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 281,
-    "keep": 266,
-    "ppr": "",
-    "avg": 320.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 266
-    },
-    "value": 43
-  },
-  {
-    "key": "kendre miller",
-    "name": "Kendre Miller",
-    "pos": "RB",
-    "team": "NO",
-    "age": 24,
-    "bk": 282,
-    "keep": 280,
-    "ppr": "",
-    "avg": 321.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 280
-    },
-    "value": 42
-  },
-  {
-    "key": "colby parkinson",
-    "name": "Colby Parkinson",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 283,
-    "keep": 285,
-    "ppr": "",
-    "avg": 321.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 285
-    },
-    "value": 41
-  },
-  {
-    "key": "brenen thompson",
-    "name": "Brenen Thompson",
-    "pos": "WR",
-    "team": "LAC",
-    "age": 23,
-    "bk": 284,
-    "keep": 281,
-    "ppr": "",
-    "avg": 324.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 281
-    },
-    "value": 41
-  },
-  {
-    "key": "anthony richardson",
-    "name": "Anthony Richardson Sr.",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 285,
-    "keep": 284,
-    "ppr": "",
-    "avg": 325.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 284
-    },
-    "value": 40
-  },
-  {
-    "key": "donte thornton",
-    "name": "Dont'e Thornton Jr.",
-    "pos": "WR",
-    "team": "FA",
-    "age": 24,
-    "bk": 286,
-    "keep": 287,
-    "ppr": "",
-    "avg": 328.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 287
-    },
-    "value": 39
-  },
-  {
-    "key": "lequint allen",
-    "name": "LeQuint Allen Jr.",
-    "pos": "RB",
-    "team": "JAX",
-    "age": 22,
-    "bk": 287,
-    "keep": 274,
-    "ppr": "",
-    "avg": 328.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 274
-    },
-    "value": 39
-  },
-  {
-    "key": "samaje perine",
-    "name": "Samaje Perine",
-    "pos": "",
-    "team": "",
-    "age": 30,
-    "bk": 288,
-    "keep": 297,
-    "ppr": "",
-    "avg": 329.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 297
-    },
-    "value": 38
-  },
-  {
-    "key": "ben sinnott",
-    "name": "Ben Sinnott",
-    "pos": "TE",
-    "team": "WAS",
-    "age": 24,
-    "bk": 289,
-    "keep": 288,
-    "ppr": "",
-    "avg": 329.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 288
-    },
-    "value": 37
-  },
-  {
-    "key": "darius slayton",
-    "name": "Darius Slayton",
-    "pos": "WR",
-    "team": "NYG",
-    "age": 29,
-    "bk": 290,
-    "keep": 298,
-    "ppr": "",
-    "avg": 331.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 298
-    },
-    "value": 37
-  },
-  {
-    "key": "matt hibner",
-    "name": "Matt Hibner",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 291,
-    "keep": 290,
-    "ppr": "",
-    "avg": 331.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 290
-    },
-    "value": 36
-  },
-  {
-    "key": "dj giddens",
-    "name": "DJ Giddens",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 292,
-    "keep": 277,
-    "ppr": "",
-    "avg": 331.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 277
-    },
-    "value": 35
-  },
-  {
-    "key": "jatavion sanders",
-    "name": "Ja'Tavion Sanders",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 293,
-    "keep": 289,
-    "ppr": "",
-    "avg": 332.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 289
-    },
-    "value": 35
-  },
-  {
-    "key": "cole kmet",
-    "name": "Cole Kmet",
-    "pos": "TE",
-    "team": "CHI",
-    "age": 27,
-    "bk": 294,
-    "keep": 296,
-    "ppr": "",
-    "avg": 332.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 296
-    },
-    "value": 34
-  },
-  {
-    "key": "trevor etienne",
-    "name": "Trevor Etienne",
-    "pos": "RB",
-    "team": "CAR",
-    "age": 22,
-    "bk": 295,
-    "keep": 278,
-    "ppr": "",
-    "avg": 332.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 278
-    },
-    "value": 34
-  },
-  {
-    "key": "darnell washington",
-    "name": "Darnell Washington",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 296,
-    "keep": 294,
-    "ppr": "",
-    "avg": 334.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 294
-    },
-    "value": 33
-  },
-  {
-    "key": "jalen royals",
-    "name": "Jalen Royals",
-    "pos": "WR",
-    "team": "KC",
-    "age": 23,
-    "bk": 297,
-    "keep": 291,
-    "ppr": "",
-    "avg": 334.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 291
-    },
-    "value": 33
-  },
-  {
-    "key": "jarquez hunter",
-    "name": "Jarquez Hunter",
-    "pos": "RB",
-    "team": "LAR",
-    "age": 23,
-    "bk": 298,
-    "keep": 293,
-    "ppr": "",
-    "avg": 336.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 293
-    },
-    "value": 32
-  },
-  {
-    "key": "eli heidenreich",
-    "name": "Eli Heidenreich",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 299,
-    "keep": 295,
-    "ppr": "",
-    "avg": 338.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 295
-    },
-    "value": 31
-  },
-  {
-    "key": "devaughn vele",
-    "name": "Devaughn Vele",
-    "pos": "WR",
-    "team": "NO",
-    "age": 28,
-    "bk": 300,
-    "keep": 305,
-    "ppr": "",
-    "avg": 340.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 305
-    },
-    "value": 31
-  },
-  {
-    "key": "tyquan thornton",
-    "name": "Tyquan Thornton",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 301,
-    "keep": 302,
-    "ppr": "",
-    "avg": 340.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 302
-    },
-    "value": 30
-  },
-  {
-    "key": "jaylin lane",
-    "name": "Jaylin Lane",
-    "pos": "WR",
-    "team": "WAS",
-    "age": 24,
-    "bk": 302,
-    "keep": 299,
-    "ppr": "",
-    "avg": 340.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 299
-    },
-    "value": 30
-  },
-  {
-    "key": "jalen milroe",
-    "name": "Jalen Milroe",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 303,
-    "keep": 300,
-    "ppr": "",
-    "avg": 343.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 300
-    },
-    "value": 29
-  },
-  {
-    "key": "najee harris",
-    "name": "Najee Harris",
-    "pos": "RB",
-    "team": "NYG",
-    "age": 28,
-    "bk": 304,
-    "keep": 309,
-    "ppr": "",
-    "avg": 344.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 309
-    },
-    "value": 29
-  },
-  {
-    "key": "will shipley",
-    "name": "Will Shipley",
-    "pos": "RB",
-    "team": "PHI",
-    "age": 23,
-    "bk": 305,
-    "keep": 301,
-    "ppr": "",
-    "avg": 344.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 301
-    },
-    "value": 28
-  },
-  {
-    "key": "george holani",
-    "name": "George Holani",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 306,
-    "keep": 308,
-    "ppr": "",
-    "avg": 346.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 308
-    },
-    "value": 28
-  },
-  {
-    "key": "cade klubnik",
-    "name": "Cade Klubnik",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 307,
-    "keep": 292,
-    "ppr": "",
-    "avg": 346.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 292
-    },
-    "value": 27
-  },
-  {
-    "key": "isaac guerendo",
-    "name": "Isaac Guerendo",
-    "pos": "RB",
-    "team": "SF",
-    "age": 26,
-    "bk": 308,
-    "keep": 310,
-    "ppr": "",
-    "avg": 348.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 310
-    },
-    "value": 27
-  },
-  {
-    "key": "tahj brooks",
-    "name": "Tahj Brooks",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 309,
-    "keep": 307,
-    "ppr": "",
-    "avg": 348.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 307
-    },
-    "value": 27
-  },
-  {
-    "key": "andrei iosivas",
-    "name": "Andrei Iosivas",
-    "pos": "WR",
-    "team": "CIN",
-    "age": 26,
-    "bk": 310,
-    "keep": 311,
-    "ppr": "",
-    "avg": 349.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 311
-    },
-    "value": 26
-  },
-  {
-    "key": "joshua palmer",
-    "name": "Joshua Palmer",
-    "pos": "WR",
-    "team": "BUF",
-    "age": 26,
-    "bk": 311,
-    "keep": 312,
-    "ppr": "",
-    "avg": 350.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 312
-    },
-    "value": 26
-  },
-  {
-    "key": "roman hemby",
-    "name": "Roman Hemby",
-    "pos": "RB",
-    "team": "LV",
-    "age": 24,
-    "bk": 312,
-    "keep": 313,
-    "ppr": "",
-    "avg": 354.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 313
-    },
-    "value": 25
-  },
-  {
-    "key": "tyren montgomery",
-    "name": "Tyren Montgomery",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 313,
-    "keep": 315,
-    "ppr": "",
-    "avg": 355.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 315
-    },
-    "value": 25
-  },
-  {
-    "key": "chris brooks",
-    "name": "Chris Brooks",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 314,
-    "keep": 319,
-    "ppr": "",
-    "avg": 357.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 319
-    },
-    "value": 24
-  },
-  {
-    "key": "will howard",
-    "name": "Will Howard",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 315,
-    "keep": 316,
-    "ppr": "",
-    "avg": 357.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 316
-    },
-    "value": 24
-  },
-  {
-    "key": "zavion thomas",
-    "name": "Zavion Thomas",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 316,
-    "keep": 303,
-    "ppr": "",
-    "avg": 357.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 303
-    },
-    "value": 24
-  },
-  {
-    "key": "joe mixon",
-    "name": "Joe Mixon",
-    "pos": "RB",
-    "team": "FA",
-    "age": 24,
-    "bk": 317,
-    "keep": 317,
-    "ppr": "",
-    "avg": 358.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 317
-    },
-    "value": 23
-  },
-  {
-    "key": "kareem hunt",
-    "name": "Kareem Hunt",
-    "pos": "RB",
-    "team": "FA",
-    "age": 24,
-    "bk": 318,
-    "keep": 318,
-    "ppr": "",
-    "avg": 359.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 318
-    },
-    "value": 23
-  },
-  {
-    "key": "roman wilson",
-    "name": "Roman Wilson",
-    "pos": "WR",
-    "team": "PIT",
-    "age": 25,
-    "bk": 319,
-    "keep": 320,
-    "ppr": "",
-    "avg": 360.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 320
-    },
-    "value": 22
-  },
-  {
-    "key": "luke mccaffrey",
-    "name": "Luke McCaffrey",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 320,
-    "keep": 321,
-    "ppr": "",
-    "avg": 361.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 321
-    },
-    "value": 22
-  },
-  {
-    "key": "devin singletary",
-    "name": "Devin Singletary",
-    "pos": "RB",
-    "team": "NYG",
-    "age": 28,
-    "bk": 321,
-    "keep": 326,
-    "ppr": "",
-    "avg": 361.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 326
-    },
-    "value": 22
-  },
-  {
-    "key": "jerome ford",
-    "name": "Jerome Ford",
-    "pos": "RB",
-    "team": "WAS",
-    "age": 26,
-    "bk": 322,
-    "keep": 323,
-    "ppr": "",
-    "avg": 361.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 323
-    },
-    "value": 21
-  },
-  {
-    "key": "dawson knox",
-    "name": "Dawson Knox",
-    "pos": "",
-    "team": "",
-    "age": 29,
-    "bk": 323,
-    "keep": 328,
-    "ppr": "",
-    "avg": 361.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 328
-    },
-    "value": 21
-  },
-  {
-    "key": "quinn ewers",
-    "name": "Quinn Ewers",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 324,
-    "keep": 322,
-    "ppr": "",
-    "avg": 365.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 322
-    },
-    "value": 21
-  },
-  {
-    "key": "savion williams",
-    "name": "Savion Williams",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 325,
-    "keep": 325,
-    "ppr": "",
-    "avg": 366.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 325
-    },
-    "value": 20
-  },
-  {
-    "key": "calvin austin",
-    "name": "Calvin Austin III",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 326,
-    "keep": 331,
-    "ppr": "",
-    "avg": 367.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 331
-    },
-    "value": 20
-  },
-  {
-    "key": "michael trigg",
-    "name": "Michael Trigg",
-    "pos": "TE",
-    "team": "DAL",
-    "age": 24,
-    "bk": 327,
-    "keep": 327,
-    "ppr": "",
-    "avg": 368.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 327
-    },
-    "value": 20
-  },
-  {
-    "key": "daequan wright",
-    "name": "Dae'Quan Wright",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 328,
-    "keep": 314,
-    "ppr": "",
-    "avg": 368.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 314
-    },
-    "value": 19
-  },
-  {
-    "key": "erick all",
-    "name": "Erick All Jr.",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 329,
-    "keep": 329,
-    "ppr": "",
-    "avg": 369.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 329
-    },
-    "value": 19
-  },
-  {
-    "key": "luke musgrave",
-    "name": "Luke Musgrave",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 330,
-    "keep": 330,
-    "ppr": "",
-    "avg": 370.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 330
-    },
-    "value": 19
-  },
-  {
-    "key": "noah gray",
-    "name": "Noah Gray",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 331,
-    "keep": 335,
-    "ppr": "",
-    "avg": 371.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 335
-    },
-    "value": 18
-  },
-  {
-    "key": "zach ertz",
-    "name": "Zach Ertz",
-    "pos": "",
-    "team": "",
-    "age": 35,
-    "bk": 332,
-    "keep": 350,
-    "ppr": "",
-    "avg": 374.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 350
-    },
-    "value": 18
-  },
-  {
-    "key": "joe royer",
-    "name": "Joe Royer",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 333,
-    "keep": 333,
-    "ppr": "",
-    "avg": 374.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 333
-    },
-    "value": 18
-  },
-  {
-    "key": "malik benson",
-    "name": "Malik Benson",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 334,
-    "keep": 332,
-    "ppr": "",
-    "avg": 375.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 332
-    },
-    "value": 17
-  },
-  {
-    "key": "garrett nussmeier",
-    "name": "Garrett Nussmeier",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 335,
-    "keep": 334,
-    "ppr": "",
-    "avg": 375.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 334
-    },
-    "value": 17
-  },
-  {
-    "key": "marquise brown",
-    "name": "Marquise Brown",
-    "pos": "",
-    "team": "",
-    "age": 29,
-    "bk": 336,
-    "keep": 342,
-    "ppr": "",
-    "avg": 375.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 342
-    },
-    "value": 17
-  },
-  {
-    "key": "jordan whittington",
-    "name": "Jordan Whittington",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 337,
-    "keep": 336,
-    "ppr": "",
-    "avg": 376.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 336
-    },
-    "value": 16
-  },
-  {
-    "key": "treylon burks",
-    "name": "Treylon Burks",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 338,
-    "keep": 338,
-    "ppr": "",
-    "avg": 376.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 338
-    },
-    "value": 16
-  },
-  {
-    "key": "barion brown",
-    "name": "Barion Brown",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 339,
-    "keep": 324,
-    "ppr": "",
-    "avg": 378.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 324
-    },
-    "value": 16
-  },
-  {
-    "key": "josh cameron",
-    "name": "Josh Cameron",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 340,
-    "keep": 337,
-    "ppr": "",
-    "avg": 380.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 337
-    },
-    "value": 16
-  },
-  {
-    "key": "marlin klein",
-    "name": "Marlin Klein",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 341,
-    "keep": 339,
-    "ppr": "",
-    "avg": 382.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 339
-    },
-    "value": 15
-  },
-  {
-    "key": "john metchie",
-    "name": "John Metchie III",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 342,
-    "keep": 344,
-    "ppr": "",
-    "avg": 382.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 344
-    },
-    "value": 15
-  },
-  {
-    "key": "tyler higbee",
-    "name": "Tyler Higbee",
-    "pos": "",
-    "team": "",
-    "age": 33,
-    "bk": 343,
-    "keep": 357,
-    "ppr": "",
-    "avg": 384.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 357
-    },
-    "value": 15
-  },
-  {
-    "key": "jmari taylor",
-    "name": "J'Mari Taylor",
-    "pos": "RB",
-    "team": "FA",
-    "age": 24,
-    "bk": 344,
-    "keep": 343,
-    "ppr": "",
-    "avg": 384.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 343
-    },
-    "value": 15
-  },
-  {
-    "key": "emari demercado",
-    "name": "Emari Demercado",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 345,
-    "keep": 349,
-    "ppr": "",
-    "avg": 385.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 349
-    },
-    "value": 14
-  },
-  {
-    "key": "eric mcalister",
-    "name": "Eric McAlister",
-    "pos": "WR",
-    "team": "FA",
-    "age": 24,
-    "bk": 346,
-    "keep": 346,
-    "ppr": "",
-    "avg": 387.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 346
-    },
-    "value": 14
-  },
-  {
-    "key": "jeff caldwell",
-    "name": "Jeff Caldwell",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 347,
-    "keep": 345,
-    "ppr": "",
-    "avg": 388.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 345
-    },
-    "value": 14
-  },
-  {
-    "key": "keandre lambert-smith",
-    "name": "KeAndre Lambert-Smith",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 348,
-    "keep": 347,
-    "ppr": "",
-    "avg": 388.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 347
-    },
-    "value": 14
-  },
-  {
-    "key": "xavier hutchinson",
-    "name": "Xavier Hutchinson",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 349,
-    "keep": 351,
-    "ppr": "",
-    "avg": 389.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 351
-    },
-    "value": 13
-  },
-  {
-    "key": "tutu atwell",
-    "name": "Tutu Atwell",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 350,
-    "keep": 352,
-    "ppr": "",
-    "avg": 390.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 352
-    },
-    "value": 13
-  },
-  {
-    "key": "deion burks",
-    "name": "Deion Burks",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 351,
-    "keep": 348,
-    "ppr": "",
-    "avg": 391.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 348
-    },
-    "value": 13
-  },
-  {
-    "key": "cj daniels",
-    "name": "CJ Daniels",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 352,
-    "keep": 353,
-    "ppr": "",
-    "avg": 394.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 353
-    },
-    "value": 13
-  },
-  {
-    "key": "malik davis",
-    "name": "Malik Davis",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 353,
-    "keep": 358,
-    "ppr": "",
-    "avg": 394.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 358
-    },
-    "value": 13
-  },
-  {
-    "key": "sam roush",
-    "name": "Sam Roush",
-    "pos": "TE",
-    "team": "CHI",
-    "age": 22,
-    "bk": 354,
-    "keep": 340,
-    "ppr": "",
-    "avg": 394.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 340
-    },
-    "value": 12
-  },
-  {
-    "key": "audric estime",
-    "name": "Audric Estime",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 355,
-    "keep": 341,
-    "ppr": "",
-    "avg": 395.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 341
-    },
-    "value": 12
-  },
-  {
-    "key": "noah fant",
-    "name": "Noah Fant",
-    "pos": "",
-    "team": "",
-    "age": 28,
-    "bk": 356,
-    "keep": 361,
-    "ppr": "",
-    "avg": 396.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 361
-    },
-    "value": 12
-  },
-  {
-    "key": "konata mumpfield",
-    "name": "Konata Mumpfield",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 357,
-    "keep": 354,
-    "ppr": "",
-    "avg": 397.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 354
-    },
-    "value": 12
-  },
-  {
-    "key": "nate boerkircher",
-    "name": "Nate Boerkircher",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 358,
-    "keep": 356,
-    "ppr": "",
-    "avg": 397.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 356
-    },
-    "value": 12
-  },
-  {
-    "key": "charlie kolar",
-    "name": "Charlie Kolar",
-    "pos": "",
-    "team": "",
-    "age": 27,
-    "bk": 359,
-    "keep": 364,
-    "ppr": "",
-    "avg": 400.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 364
-    },
-    "value": 11
-  },
-  {
-    "key": "ty johnson",
-    "name": "Ty Johnson",
-    "pos": "",
-    "team": "",
-    "age": 28,
-    "bk": 360,
-    "keep": 366,
-    "ppr": "",
-    "avg": 401.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 366
-    },
-    "value": 11
-  },
-  {
-    "key": "tai felton",
-    "name": "Tai Felton",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 361,
-    "keep": 359,
-    "ppr": "",
-    "avg": 402.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 359
-    },
-    "value": 11
-  },
-  {
-    "key": "riley leonard",
-    "name": "Riley Leonard",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 362,
-    "keep": 360,
-    "ppr": "",
-    "avg": 403.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 360
-    },
-    "value": 11
-  },
-  {
-    "key": "robert henry",
-    "name": "Robert Henry Jr.",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 363,
-    "keep": 363,
-    "ppr": "",
-    "avg": 404.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 363
-    },
-    "value": 11
-  },
-  {
-    "key": "roschon johnson",
-    "name": "Roschon Johnson",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 364,
-    "keep": 365,
-    "ppr": "",
-    "avg": 405.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 365
-    },
-    "value": 10
-  },
-  {
-    "key": "jaleel mclaughlin",
-    "name": "Jaleel McLaughlin",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 365,
-    "keep": 367,
-    "ppr": "",
-    "avg": 407.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 367
-    },
-    "value": 10
-  },
-  {
-    "key": "devontez walker",
-    "name": "Devontez Walker",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 366,
-    "keep": 368,
-    "ppr": "",
-    "avg": 408.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 368
-    },
-    "value": 10
-  },
-  {
-    "key": "dallen bentley",
-    "name": "Dallen Bentley",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 367,
-    "keep": 369,
-    "ppr": "",
-    "avg": 409.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 369
-    },
-    "value": 10
-  },
-  {
-    "key": "austin hooper",
-    "name": "Austin Hooper",
-    "pos": "",
-    "team": "",
-    "age": 31,
-    "bk": 368,
-    "keep": 379,
-    "ppr": "",
-    "avg": 409.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 379
-    },
-    "value": 10
-  },
-  {
-    "key": "jack endries",
-    "name": "Jack Endries",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 369,
-    "keep": 355,
-    "ppr": "",
-    "avg": 409.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 355
-    },
-    "value": 10
-  },
-  {
-    "key": "deandre hopkins",
-    "name": "DeAndre Hopkins",
-    "pos": "",
-    "team": "",
-    "age": 34,
-    "bk": 370,
-    "keep": 385,
-    "ppr": "",
-    "avg": 410.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 385
-    },
-    "value": 9
-  },
-  {
-    "key": "joe milton",
-    "name": "Joe Milton III",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 371,
-    "keep": 373,
-    "ppr": "",
-    "avg": 411.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 373
-    },
-    "value": 9
-  },
-  {
-    "key": "tahj washington",
-    "name": "Tahj Washington",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 372,
-    "keep": 372,
-    "ppr": "",
-    "avg": 412.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 372
-    },
-    "value": 9
-  },
-  {
-    "key": "kendrick law",
-    "name": "Kendrick Law",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 373,
-    "keep": 370,
-    "ppr": "",
-    "avg": 413.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 370
-    },
-    "value": 9
-  },
-  {
-    "key": "jeremy mcnichols",
-    "name": "Jeremy McNichols",
-    "pos": "",
-    "team": "",
-    "age": 30,
-    "bk": 374,
-    "keep": 382,
-    "ppr": "",
-    "avg": 414.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 382
-    },
-    "value": 9
-  },
-  {
-    "key": "taylen green",
-    "name": "Taylen Green",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 375,
-    "keep": 371,
-    "ppr": "",
-    "avg": 414.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 371
-    },
-    "value": 9
-  },
-  {
-    "key": "efton chism",
-    "name": "Efton Chism III",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 376,
-    "keep": 375,
-    "ppr": "",
-    "avg": 416.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 375
-    },
-    "value": 8
-  },
-  {
-    "key": "tanner koziol",
-    "name": "Tanner Koziol",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 377,
-    "keep": 362,
-    "ppr": "",
-    "avg": 416.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 362
-    },
-    "value": 8
-  },
-  {
-    "key": "eric rivers",
-    "name": "Eric Rivers Jr.",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 378,
-    "keep": 374,
-    "ppr": "",
-    "avg": 417.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 374
-    },
-    "value": 8
-  },
-  {
-    "key": "kendrick bourne",
-    "name": "Kendrick Bourne",
-    "pos": "",
-    "team": "",
-    "age": 31,
-    "bk": 379,
-    "keep": 387,
-    "ppr": "",
-    "avg": 417.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 387
-    },
-    "value": 8
-  },
-  {
-    "key": "dyami brown",
-    "name": "Dyami Brown",
-    "pos": "",
-    "team": "",
-    "age": 26,
-    "bk": 380,
-    "keep": 380,
-    "ppr": "",
-    "avg": 418.4,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 380
-    },
-    "value": 8
-  },
-  {
-    "key": "will kacmarek",
-    "name": "Will Kacmarek",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 381,
-    "keep": 376,
-    "ppr": "",
-    "avg": 419.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 376
-    },
-    "value": 8
-  },
-  {
-    "key": "mitchell evans",
-    "name": "Mitchell Evans",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 382,
-    "keep": 377,
-    "ppr": "",
-    "avg": 420.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 377
-    },
-    "value": 8
-  },
-  {
-    "key": "elijah higgins",
-    "name": "Elijah Higgins",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 383,
-    "keep": 383,
-    "ppr": "",
-    "avg": 423.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 383
-    },
-    "value": 8
-  },
-  {
-    "key": "spencer rattler",
-    "name": "Spencer Rattler",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 384,
-    "keep": 384,
-    "ppr": "",
-    "avg": 424.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 384
-    },
-    "value": 7
-  },
-  {
-    "key": "mack hollins",
-    "name": "Mack Hollins",
-    "pos": "",
-    "team": "",
-    "age": 32,
-    "bk": 385,
-    "keep": 400,
-    "ppr": "",
-    "avg": 428.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 400
-    },
-    "value": 7
-  },
-  {
-    "key": "thomas fidone",
-    "name": "Thomas Fidone II",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 386,
-    "keep": 386,
-    "ppr": "",
-    "avg": 429.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 386
-    },
-    "value": 7
-  },
-  {
-    "key": "seydou traore",
-    "name": "Seydou Traore",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 387,
-    "keep": 389,
-    "ppr": "",
-    "avg": 430.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 389
-    },
-    "value": 7
-  },
-  {
-    "key": "jimmy horn",
-    "name": "Jimmy Horn Jr.",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 388,
-    "keep": 388,
-    "ppr": "",
-    "avg": 431.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 388
-    },
-    "value": 7
-  },
-  {
-    "key": "olamide zaccheaus",
-    "name": "Olamide Zaccheaus",
-    "pos": "",
-    "team": "",
-    "age": 29,
-    "bk": 389,
-    "keep": 398,
-    "ppr": "",
-    "avg": 431.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 398
-    },
-    "value": 7
-  },
-  {
-    "key": "dillon gabriel",
-    "name": "Dillon Gabriel",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 390,
-    "keep": 392,
-    "ppr": "",
-    "avg": 432.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 392
-    },
-    "value": 7
-  },
-  {
-    "key": "reggie virgil",
-    "name": "Reggie Virgil",
-    "pos": "WR",
-    "team": "ARI",
-    "age": 22,
-    "bk": 391,
-    "keep": 378,
-    "ppr": "",
-    "avg": 432.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 378
-    },
-    "value": 7
-  },
-  {
-    "key": "phil mafah",
-    "name": "Phil Mafah",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 392,
-    "keep": 390,
-    "ppr": "",
-    "avg": 433.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 390
-    },
-    "value": 6
-  },
-  {
-    "key": "jaydn ott",
-    "name": "Jaydn Ott",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 393,
-    "keep": 391,
-    "ppr": "",
-    "avg": 434.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 391
-    },
-    "value": 6
-  },
-  {
-    "key": "kameron johnson",
-    "name": "Kameron Johnson",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 394,
-    "keep": 393,
-    "ppr": "",
-    "avg": 434.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 393
-    },
-    "value": 6
-  },
-  {
-    "key": "colbie young",
-    "name": "Colbie Young",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 395,
-    "keep": 394,
-    "ppr": "",
-    "avg": 435.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 394
-    },
-    "value": 6
-  },
-  {
-    "key": "jam miller",
-    "name": "Jam Miller",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 396,
-    "keep": 381,
-    "ppr": "",
-    "avg": 435.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 381
-    },
-    "value": 6
-  },
-  {
-    "key": "rasheen ali",
-    "name": "Rasheen Ali",
-    "pos": "",
-    "team": "",
-    "age": 25,
-    "bk": 397,
-    "keep": 396,
-    "ppr": "",
-    "avg": 436.0,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 396
-    },
-    "value": 6
-  },
-  {
-    "key": "jordan watkins",
-    "name": "Jordan Watkins",
-    "pos": "",
-    "team": "",
-    "age": 24,
-    "bk": 398,
-    "keep": 395,
-    "ppr": "",
-    "avg": 436.6,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 395
-    },
-    "value": 6
-  },
-  {
-    "key": "carsen ryan",
-    "name": "Carsen Ryan",
-    "pos": "",
-    "team": "",
-    "age": 23,
-    "bk": 399,
-    "keep": 399,
-    "ppr": "",
-    "avg": 442.2,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 399
-    },
-    "value": 6
-  },
-  {
-    "key": "josh cuevas",
-    "name": "Josh Cuevas",
-    "pos": "",
-    "team": "",
-    "age": 22,
-    "bk": 400,
-    "keep": 397,
-    "ppr": "",
-    "avg": 451.8,
-    "n": 1,
-    "ranks": {
-      "Keep SF": 397
-    },
-    "value": 6
-  }
-]
+{
+  "format": "redraft PPR",
+  "updated": "August 22, 2026",
+  "players": [
+    {
+      "bk": 1,
+      "name": "Ja'Marr Chase",
+      "pos": "WR",
+      "team": "CIN",
+      "yates": 4,
+      "fp": 1,
+      "karabell": 1,
+      "n": 3,
+      "avg": 2.0,
+      "value": 12000,
+      "age": 26
+    },
+    {
+      "bk": 2,
+      "name": "Jahmyr Gibbs",
+      "pos": "RB",
+      "team": "DET",
+      "yates": 2,
+      "fp": 2,
+      "karabell": 5,
+      "n": 3,
+      "avg": 3.0,
+      "value": 10419,
+      "age": 24
+    },
+    {
+      "bk": 3,
+      "name": "Puka Nacua",
+      "pos": "WR",
+      "team": "LAR",
+      "yates": 5,
+      "fp": 3,
+      "karabell": 2,
+      "n": 3,
+      "avg": 3.33,
+      "value": 9527,
+      "age": 25
+    },
+    {
+      "bk": 4,
+      "name": "Bijan Robinson",
+      "pos": "RB",
+      "team": "ATL",
+      "yates": 1,
+      "fp": 4,
+      "karabell": 6,
+      "n": 3,
+      "avg": 3.67,
+      "value": 8898,
+      "age": 24
+    },
+    {
+      "bk": 5,
+      "name": "Jaxon Smith-Njigba",
+      "pos": "WR",
+      "team": "SEA",
+      "yates": 6,
+      "fp": 5,
+      "karabell": 3,
+      "n": 3,
+      "avg": 4.67,
+      "value": 8408,
+      "age": 24
+    },
+    {
+      "bk": 6,
+      "name": "Amon-Ra St. Brown",
+      "pos": "WR",
+      "team": "DET",
+      "yates": 9,
+      "fp": 6,
+      "karabell": 4,
+      "n": 3,
+      "avg": 6.33,
+      "value": 8004,
+      "age": 26
+    },
+    {
+      "bk": 7,
+      "name": "Jonathan Taylor",
+      "pos": "RB",
+      "team": "IND",
+      "yates": 7,
+      "fp": 11,
+      "karabell": 7,
+      "n": 3,
+      "avg": 8.33,
+      "value": 7657,
+      "age": 27
+    },
+    {
+      "bk": 8,
+      "name": "CeeDee Lamb",
+      "pos": "WR",
+      "team": "DAL",
+      "yates": 13,
+      "fp": 7,
+      "karabell": 9,
+      "n": 3,
+      "avg": 9.67,
+      "value": 7353,
+      "age": 27
+    },
+    {
+      "bk": 9,
+      "name": "Christian McCaffrey",
+      "pos": "RB",
+      "team": "SF",
+      "yates": 3,
+      "fp": 9,
+      "karabell": 17,
+      "n": 3,
+      "avg": 9.67,
+      "value": 7081,
+      "age": 30
+    },
+    {
+      "bk": 10,
+      "name": "Justin Jefferson",
+      "pos": "WR",
+      "team": "MIN",
+      "yates": 12,
+      "fp": 8,
+      "karabell": 10,
+      "n": 3,
+      "avg": 10.0,
+      "value": 6834,
+      "age": 27
+    },
+    {
+      "bk": 11,
+      "name": "De'Von Achane",
+      "pos": "RB",
+      "team": "MIA",
+      "yates": 8,
+      "fp": 21,
+      "karabell": 8,
+      "n": 3,
+      "avg": 12.33,
+      "value": 6608,
+      "age": 24
+    },
+    {
+      "bk": 12,
+      "name": "Drake London",
+      "pos": "WR",
+      "team": "ATL",
+      "yates": 17,
+      "fp": 10,
+      "karabell": 11,
+      "n": 3,
+      "avg": 12.67,
+      "value": 6399,
+      "age": 25
+    },
+    {
+      "bk": 13,
+      "name": "James Cook",
+      "pos": "RB",
+      "team": "BUF",
+      "yates": 10,
+      "fp": 17,
+      "karabell": 12,
+      "n": 3,
+      "avg": 13.0,
+      "value": 6204,
+      "age": 26
+    },
+    {
+      "bk": 14,
+      "name": "Chase Brown",
+      "pos": "RB",
+      "team": "CIN",
+      "yates": 14,
+      "fp": 15,
+      "karabell": 14,
+      "n": 3,
+      "avg": 14.33,
+      "value": 6022,
+      "age": 26
+    },
+    {
+      "bk": 15,
+      "name": "Brock Bowers",
+      "pos": "TE",
+      "team": "LV",
+      "yates": 18,
+      "fp": 16,
+      "karabell": 16,
+      "n": 3,
+      "avg": 16.67,
+      "value": 5850,
+      "age": 23
+    },
+    {
+      "bk": 16,
+      "name": "Trey McBride",
+      "pos": "TE",
+      "team": "ARI",
+      "yates": 16,
+      "fp": 20,
+      "karabell": 15,
+      "n": 3,
+      "avg": 17.0,
+      "value": 5688,
+      "age": 26
+    },
+    {
+      "bk": 17,
+      "name": "Ashton Jeanty",
+      "pos": "RB",
+      "team": "LV",
+      "yates": 23,
+      "fp": 14,
+      "karabell": 18,
+      "n": 3,
+      "avg": 18.33,
+      "value": 5534,
+      "age": 22
+    },
+    {
+      "bk": 18,
+      "name": "Derrick Henry",
+      "pos": "RB",
+      "team": "BAL",
+      "yates": 11,
+      "fp": 36,
+      "karabell": 13,
+      "n": 3,
+      "avg": 20.0,
+      "value": 5388,
+      "age": 32
+    },
+    {
+      "bk": 19,
+      "name": "A.J. Brown",
+      "pos": "WR",
+      "team": "NE",
+      "yates": 26,
+      "fp": 12,
+      "karabell": 24,
+      "n": 3,
+      "avg": 20.67,
+      "value": 5248,
+      "age": 29
+    },
+    {
+      "bk": 20,
+      "name": "Chris Olave",
+      "pos": "WR",
+      "team": "NO",
+      "yates": 27,
+      "fp": 18,
+      "karabell": 22,
+      "n": 3,
+      "avg": 22.33,
+      "value": 5115,
+      "age": 26
+    },
+    {
+      "bk": 21,
+      "name": "Saquon Barkley",
+      "pos": "RB",
+      "team": "PHI",
+      "yates": 22,
+      "fp": 26,
+      "karabell": 19,
+      "n": 3,
+      "avg": 22.33,
+      "value": 4987,
+      "age": 29
+    },
+    {
+      "bk": 22,
+      "name": "Omarion Hampton",
+      "pos": "RB",
+      "team": "LAC",
+      "yates": 24,
+      "fp": 24,
+      "karabell": 20,
+      "n": 3,
+      "avg": 22.67,
+      "value": 4865,
+      "age": 23
+    },
+    {
+      "bk": 23,
+      "name": "Kenneth Walker",
+      "pos": "RB",
+      "team": "KC",
+      "yates": 15,
+      "fp": 28,
+      "karabell": 28,
+      "n": 3,
+      "avg": 23.67,
+      "value": 4747,
+      "age": 25
+    },
+    {
+      "bk": 24,
+      "name": "George Pickens",
+      "pos": "WR",
+      "team": "DAL",
+      "yates": 29,
+      "fp": 19,
+      "karabell": 25,
+      "n": 3,
+      "avg": 24.33,
+      "value": 4634,
+      "age": 25
+    },
+    {
+      "bk": 25,
+      "name": "Nico Collins",
+      "pos": "WR",
+      "team": "HOU",
+      "yates": 39,
+      "fp": 13,
+      "karabell": 21,
+      "n": 3,
+      "avg": 24.33,
+      "value": 4525,
+      "age": 27
+    },
+    {
+      "bk": 26,
+      "name": "Rashee Rice",
+      "pos": "WR",
+      "team": "KC",
+      "yates": 19,
+      "fp": 22,
+      "karabell": 37,
+      "n": 3,
+      "avg": 26.0,
+      "value": 4419,
+      "age": 26
+    },
+    {
+      "bk": 27,
+      "name": "Josh Allen",
+      "pos": "QB",
+      "team": "BUF",
+      "yates": 28,
+      "fp": 27,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 27.5,
+      "value": 4317,
+      "age": 30
+    },
+    {
+      "bk": 28,
+      "name": "Garrett Wilson",
+      "pos": "WR",
+      "team": "NYJ",
+      "yates": 34,
+      "fp": 30,
+      "karabell": 23,
+      "n": 3,
+      "avg": 29.0,
+      "value": 4219,
+      "age": 26
+    },
+    {
+      "bk": 29,
+      "name": "Josh Jacobs",
+      "pos": "RB",
+      "team": "GB",
+      "yates": 20,
+      "fp": 44,
+      "karabell": 26,
+      "n": 3,
+      "avg": 30.0,
+      "value": 4124,
+      "age": 28
+    },
+    {
+      "bk": 30,
+      "name": "Jeremiyah Love",
+      "pos": "RB",
+      "team": "ARI",
+      "yates": 21,
+      "fp": 41,
+      "karabell": 30,
+      "n": 3,
+      "avg": 30.67,
+      "value": 4032,
+      "age": 21
+    },
+    {
+      "bk": 31,
+      "name": "Breece Hall",
+      "pos": "RB",
+      "team": "NYJ",
+      "yates": 31,
+      "fp": 40,
+      "karabell": 27,
+      "n": 3,
+      "avg": 32.67,
+      "value": 3942,
+      "age": 25
+    },
+    {
+      "bk": 32,
+      "name": "DeVonta Smith",
+      "pos": "WR",
+      "team": "PHI",
+      "yates": 43,
+      "fp": 23,
+      "karabell": 33,
+      "n": 3,
+      "avg": 33.0,
+      "value": 3856,
+      "age": 27
+    },
+    {
+      "bk": 33,
+      "name": "Lamar Jackson",
+      "pos": "QB",
+      "team": "BAL",
+      "yates": 36,
+      "fp": 31,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 33.5,
+      "value": 3772,
+      "age": 29
+    },
+    {
+      "bk": 34,
+      "name": "Javonte Williams",
+      "pos": "RB",
+      "team": "DAL",
+      "yates": 30,
+      "fp": 43,
+      "karabell": 29,
+      "n": 3,
+      "avg": 34.0,
+      "value": 3690,
+      "age": 26
+    },
+    {
+      "bk": 35,
+      "name": "Zay Flowers",
+      "pos": "WR",
+      "team": "BAL",
+      "yates": 41,
+      "fp": 29,
+      "karabell": 32,
+      "n": 3,
+      "avg": 34.0,
+      "value": 3611,
+      "age": 25
+    },
+    {
+      "bk": 36,
+      "name": "Malik Nabers",
+      "pos": "WR",
+      "team": "NYG",
+      "yates": 25,
+      "fp": 25,
+      "karabell": 53,
+      "n": 3,
+      "avg": 34.33,
+      "value": 3534,
+      "age": 23
+    },
+    {
+      "bk": 37,
+      "name": "Kyren Williams",
+      "pos": "RB",
+      "team": "LAR",
+      "yates": 32,
+      "fp": 42,
+      "karabell": 31,
+      "n": 3,
+      "avg": 35.0,
+      "value": 3459,
+      "age": 25
+    },
+    {
+      "bk": 38,
+      "name": "Tetairoa McMillan",
+      "pos": "WR",
+      "team": "CAR",
+      "yates": 42,
+      "fp": 32,
+      "karabell": 35,
+      "n": 3,
+      "avg": 36.33,
+      "value": 3386,
+      "age": 23
+    },
+    {
+      "bk": 39,
+      "name": "Emeka Egbuka",
+      "pos": "WR",
+      "team": "TB",
+      "yates": 33,
+      "fp": 39,
+      "karabell": 38,
+      "n": 3,
+      "avg": 36.67,
+      "value": 3315,
+      "age": 23
+    },
+    {
+      "bk": 40,
+      "name": "Jaylen Waddle",
+      "pos": "WR",
+      "team": "DEN",
+      "yates": 44,
+      "fp": 33,
+      "karabell": 42,
+      "n": 3,
+      "avg": 39.67,
+      "value": 3246,
+      "age": 27
+    },
+    {
+      "bk": 41,
+      "name": "Colston Loveland",
+      "pos": "TE",
+      "team": "CHI",
+      "yates": 35,
+      "fp": 38,
+      "karabell": 50,
+      "n": 3,
+      "avg": 41.0,
+      "value": 3179,
+      "age": 22
+    },
+    {
+      "bk": 42,
+      "name": "Ladd McConkey",
+      "pos": "WR",
+      "team": "LAC",
+      "yates": 51,
+      "fp": 34,
+      "karabell": 39,
+      "n": 3,
+      "avg": 41.33,
+      "value": 3113,
+      "age": 24
+    },
+    {
+      "bk": 43,
+      "name": "Drake Maye",
+      "pos": "QB",
+      "team": "NE",
+      "yates": 48,
+      "fp": 37,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 42.5,
+      "value": 3049,
+      "age": 23
+    },
+    {
+      "bk": 44,
+      "name": "Tee Higgins",
+      "pos": "WR",
+      "team": "CIN",
+      "yates": 57,
+      "fp": 35,
+      "karabell": 36,
+      "n": 3,
+      "avg": 42.67,
+      "value": 2987,
+      "age": 27
+    },
+    {
+      "bk": 45,
+      "name": "Travis Etienne",
+      "pos": "RB",
+      "team": "NO",
+      "yates": 37,
+      "fp": 48,
+      "karabell": 43,
+      "n": 3,
+      "avg": 42.67,
+      "value": 2926,
+      "age": 27
+    },
+    {
+      "bk": 46,
+      "name": "Davante Adams",
+      "pos": "WR",
+      "team": "LAR",
+      "yates": 50,
+      "fp": 49,
+      "karabell": 34,
+      "n": 3,
+      "avg": 44.33,
+      "value": 2867,
+      "age": 33
+    },
+    {
+      "bk": 47,
+      "name": "Jayden Daniels",
+      "pos": "QB",
+      "team": "WAS",
+      "yates": 40,
+      "fp": 51,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 45.5,
+      "value": 2809,
+      "age": 25
+    },
+    {
+      "bk": 48,
+      "name": "Cam Skattebo",
+      "pos": "RB",
+      "team": "NYG",
+      "yates": 38,
+      "fp": 55,
+      "karabell": 45,
+      "n": 3,
+      "avg": 46.0,
+      "value": 2753,
+      "age": 24
+    },
+    {
+      "bk": 49,
+      "name": "Terry McLaurin",
+      "pos": "WR",
+      "team": "WAS",
+      "yates": 60,
+      "fp": 45,
+      "karabell": 40,
+      "n": 3,
+      "avg": 48.33,
+      "value": 2698,
+      "age": 30
+    },
+    {
+      "bk": 50,
+      "name": "Tyler Warren",
+      "pos": "TE",
+      "team": "IND",
+      "yates": 46,
+      "fp": 52,
+      "karabell": 51,
+      "n": 3,
+      "avg": 49.67,
+      "value": 2644,
+      "age": 24
+    },
+    {
+      "bk": 51,
+      "name": "D'Andre Swift",
+      "pos": "RB",
+      "team": "CHI",
+      "yates": 47,
+      "fp": 57,
+      "karabell": 46,
+      "n": 3,
+      "avg": 50.0,
+      "value": 2591,
+      "age": 27
+    },
+    {
+      "bk": 52,
+      "name": "Quinshon Judkins",
+      "pos": "RB",
+      "team": "CLE",
+      "yates": 45,
+      "fp": 62,
+      "karabell": 44,
+      "n": 3,
+      "avg": 50.33,
+      "value": 2540,
+      "age": 22
+    },
+    {
+      "bk": 53,
+      "name": "Jalen Hurts",
+      "pos": "QB",
+      "team": "PHI",
+      "yates": 52,
+      "fp": 59,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 55.5,
+      "value": 2490,
+      "age": 28
+    },
+    {
+      "bk": 54,
+      "name": "Bucky Irving",
+      "pos": "RB",
+      "team": "TB",
+      "yates": 49,
+      "fp": 60,
+      "karabell": 58,
+      "n": 3,
+      "avg": 55.67,
+      "value": 2441,
+      "age": 24
+    },
+    {
+      "bk": 55,
+      "name": "Bhayshul Tuten",
+      "pos": "RB",
+      "team": "JAX",
+      "yates": 54,
+      "fp": 67,
+      "karabell": 48,
+      "n": 3,
+      "avg": 56.33,
+      "value": 2393,
+      "age": 23
+    },
+    {
+      "bk": 56,
+      "name": "David Montgomery",
+      "pos": "RB",
+      "team": "HOU",
+      "yates": 62,
+      "fp": 61,
+      "karabell": 49,
+      "n": 3,
+      "avg": 57.33,
+      "value": 2346,
+      "age": 29
+    },
+    {
+      "bk": 57,
+      "name": "Jadarian Price",
+      "pos": "RB",
+      "team": "SEA",
+      "yates": 56,
+      "fp": 70,
+      "karabell": 47,
+      "n": 3,
+      "avg": 57.67,
+      "value": 2301,
+      "age": 22
+    },
+    {
+      "bk": 58,
+      "name": "Jameson Williams",
+      "pos": "WR",
+      "team": "DET",
+      "yates": 78,
+      "fp": 54,
+      "karabell": 41,
+      "n": 3,
+      "avg": 57.67,
+      "value": 2256,
+      "age": 25
+    },
+    {
+      "bk": 59,
+      "name": "Harold Fannin",
+      "pos": "TE",
+      "team": "CLE",
+      "yates": 53,
+      "fp": 71,
+      "karabell": 52,
+      "n": 3,
+      "avg": 58.67,
+      "value": 2212,
+      "age": 22
+    },
+    {
+      "bk": 60,
+      "name": "Joe Burrow",
+      "pos": "QB",
+      "team": "CIN",
+      "yates": 73,
+      "fp": 46,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 59.5,
+      "value": 2169,
+      "age": 29
+    },
+    {
+      "bk": 61,
+      "name": "DJ Moore",
+      "pos": "WR",
+      "team": "BUF",
+      "yates": 72,
+      "fp": 50,
+      "karabell": 60,
+      "n": 3,
+      "avg": 60.67,
+      "value": 2128,
+      "age": 29
+    },
+    {
+      "bk": 62,
+      "name": "Rome Odunze",
+      "pos": "WR",
+      "team": "CHI",
+      "yates": 67,
+      "fp": 56,
+      "karabell": 61,
+      "n": 3,
+      "avg": 61.33,
+      "value": 2087,
+      "age": 24
+    },
+    {
+      "bk": 63,
+      "name": "Luther Burden",
+      "pos": "WR",
+      "team": "CHI",
+      "yates": 77,
+      "fp": 47,
+      "karabell": 62,
+      "n": 3,
+      "avg": 62.0,
+      "value": 2047,
+      "age": 22
+    },
+    {
+      "bk": 64,
+      "name": "TreVeyon Henderson",
+      "pos": "RB",
+      "team": "NE",
+      "yates": 66,
+      "fp": 66,
+      "karabell": 57,
+      "n": 3,
+      "avg": 63.0,
+      "value": 2007,
+      "age": 23
+    },
+    {
+      "bk": 65,
+      "name": "Justin Herbert",
+      "pos": "QB",
+      "team": "LAC",
+      "yates": 59,
+      "fp": 69,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 64.0,
+      "value": 1969,
+      "age": 28
+    },
+    {
+      "bk": 66,
+      "name": "Kenneth Gainwell",
+      "pos": "RB",
+      "team": "TB",
+      "yates": 69,
+      "fp": "\u2014",
+      "karabell": 59,
+      "n": 2,
+      "avg": 64.0,
+      "value": 1931,
+      "age": 27
+    },
+    {
+      "bk": 67,
+      "name": "Mike Evans",
+      "pos": "WR",
+      "team": "SF",
+      "yates": 85,
+      "fp": 53,
+      "karabell": 54,
+      "n": 3,
+      "avg": 64.0,
+      "value": 1895,
+      "age": 32
+    },
+    {
+      "bk": 68,
+      "name": "Carnell Tate",
+      "pos": "WR",
+      "team": "TEN",
+      "yates": 61,
+      "fp": 64,
+      "karabell": 68,
+      "n": 3,
+      "avg": 64.33,
+      "value": 1859,
+      "age": 21
+    },
+    {
+      "bk": 69,
+      "name": "Caleb Williams",
+      "pos": "QB",
+      "team": "CHI",
+      "yates": "\u2014",
+      "fp": 65,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 65.0,
+      "value": 1824,
+      "age": 24
+    },
+    {
+      "bk": 70,
+      "name": "Rhamondre Stevenson",
+      "pos": "RB",
+      "team": "NE",
+      "yates": 65,
+      "fp": 80,
+      "karabell": 56,
+      "n": 3,
+      "avg": 67.0,
+      "value": 1789,
+      "age": 28
+    },
+    {
+      "bk": 71,
+      "name": "Jaylen Warren",
+      "pos": "RB",
+      "team": "PIT",
+      "yates": 71,
+      "fp": 74,
+      "karabell": 64,
+      "n": 3,
+      "avg": 69.67,
+      "value": 1755,
+      "age": 27
+    },
+    {
+      "bk": 72,
+      "name": "Tony Pollard",
+      "pos": "RB",
+      "team": "TEN",
+      "yates": 63,
+      "fp": 84,
+      "karabell": 63,
+      "n": 3,
+      "avg": 70.0,
+      "value": 1722,
+      "age": 29
+    },
+    {
+      "bk": 73,
+      "name": "Kyle Pitts",
+      "pos": "TE",
+      "team": "ATL",
+      "yates": 58,
+      "fp": 79,
+      "karabell": 74,
+      "n": 3,
+      "avg": 70.33,
+      "value": 1690,
+      "age": 25
+    },
+    {
+      "bk": 74,
+      "name": "Christian Watson",
+      "pos": "WR",
+      "team": "GB",
+      "yates": 76,
+      "fp": 58,
+      "karabell": 80,
+      "n": 3,
+      "avg": 71.33,
+      "value": 1658,
+      "age": 27
+    },
+    {
+      "bk": 75,
+      "name": "Brian Thomas Jr.",
+      "pos": "WR",
+      "team": "JAX",
+      "yates": "\u2014",
+      "fp": 72,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 72.0,
+      "value": 1627,
+      "age": 23
+    },
+    {
+      "bk": 76,
+      "name": "Marvin Harrison",
+      "pos": "WR",
+      "team": "ARI",
+      "yates": 74,
+      "fp": 68,
+      "karabell": 78,
+      "n": 3,
+      "avg": 73.33,
+      "value": 1597,
+      "age": 24
+    },
+    {
+      "bk": 77,
+      "name": "Chuba Hubbard",
+      "pos": "RB",
+      "team": "CAR",
+      "yates": 55,
+      "fp": 93,
+      "karabell": 73,
+      "n": 3,
+      "avg": 73.67,
+      "value": 1567,
+      "age": 27
+    },
+    {
+      "bk": 78,
+      "name": "DK Metcalf",
+      "pos": "WR",
+      "team": "PIT",
+      "yates": 68,
+      "fp": 77,
+      "karabell": 77,
+      "n": 3,
+      "avg": 74.0,
+      "value": 1538,
+      "age": 28
+    },
+    {
+      "bk": 79,
+      "name": "Trevor Lawrence",
+      "pos": "QB",
+      "team": "JAX",
+      "yates": 75,
+      "fp": 73,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 74.0,
+      "value": 1509,
+      "age": 26
+    },
+    {
+      "bk": 80,
+      "name": "Parker Washington",
+      "pos": "WR",
+      "team": "JAX",
+      "yates": "\u2014",
+      "fp": 63,
+      "karabell": 87,
+      "n": 2,
+      "avg": 75.0,
+      "value": 1481,
+      "age": 24
+    },
+    {
+      "bk": 81,
+      "name": "Rico Dowdle",
+      "pos": "RB",
+      "team": "PIT",
+      "yates": "\u2014",
+      "fp": 87,
+      "karabell": 65,
+      "n": 2,
+      "avg": 76.0,
+      "value": 1453,
+      "age": 28
+    },
+    {
+      "bk": 82,
+      "name": "George Kittle",
+      "pos": "TE",
+      "team": "SF",
+      "yates": 64,
+      "fp": 96,
+      "karabell": 71,
+      "n": 3,
+      "avg": 77.0,
+      "value": 1426,
+      "age": 32
+    },
+    {
+      "bk": 83,
+      "name": "Sam LaPorta",
+      "pos": "TE",
+      "team": "DET",
+      "yates": 82,
+      "fp": 83,
+      "karabell": 69,
+      "n": 3,
+      "avg": 78.0,
+      "value": 1400,
+      "age": 25
+    },
+    {
+      "bk": 84,
+      "name": "Tucker Kraft",
+      "pos": "TE",
+      "team": "GB",
+      "yates": 88,
+      "fp": 76,
+      "karabell": 70,
+      "n": 3,
+      "avg": 78.0,
+      "value": 1374,
+      "age": 25
+    },
+    {
+      "bk": 85,
+      "name": "Courtland Sutton",
+      "pos": "WR",
+      "team": "DEN",
+      "yates": 86,
+      "fp": 82,
+      "karabell": 67,
+      "n": 3,
+      "avg": 78.33,
+      "value": 1349,
+      "age": 30
+    },
+    {
+      "bk": 86,
+      "name": "Stefon Diggs",
+      "pos": "WR",
+      "team": "WAS",
+      "yates": 80,
+      "fp": 103,
+      "karabell": 55,
+      "n": 3,
+      "avg": 79.33,
+      "value": 1324,
+      "age": 32
+    },
+    {
+      "bk": 87,
+      "name": "Jaxson Dart",
+      "pos": "QB",
+      "team": "NYG",
+      "yates": 70,
+      "fp": 92,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 81.0,
+      "value": 1300,
+      "age": 23
+    },
+    {
+      "bk": 88,
+      "name": "Jonathon Brooks",
+      "pos": "RB",
+      "team": "CAR",
+      "yates": "\u2014",
+      "fp": 90,
+      "karabell": 72,
+      "n": 2,
+      "avg": 81.0,
+      "value": 1276,
+      "age": 23
+    },
+    {
+      "bk": 89,
+      "name": "Michael Pittman",
+      "pos": "WR",
+      "team": "PIT",
+      "yates": 87,
+      "fp": 81,
+      "karabell": 76,
+      "n": 3,
+      "avg": 81.33,
+      "value": 1252,
+      "age": 28
+    },
+    {
+      "bk": 90,
+      "name": "Dak Prescott",
+      "pos": "QB",
+      "team": "DAL",
+      "yates": 89,
+      "fp": 78,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 83.5,
+      "value": 1229,
+      "age": 33
+    },
+    {
+      "bk": 91,
+      "name": "Michael Wilson",
+      "pos": "WR",
+      "team": "ARI",
+      "yates": 84,
+      "fp": 88,
+      "karabell": 79,
+      "n": 3,
+      "avg": 83.67,
+      "value": 1207,
+      "age": 26
+    },
+    {
+      "bk": 92,
+      "name": "Wan'Dale Robinson",
+      "pos": "WR",
+      "team": "TEN",
+      "yates": 79,
+      "fp": 85,
+      "karabell": 92,
+      "n": 3,
+      "avg": 85.33,
+      "value": 1185,
+      "age": 25
+    },
+    {
+      "bk": 93,
+      "name": "RJ Harvey",
+      "pos": "RB",
+      "team": "DEN",
+      "yates": "\u2014",
+      "fp": 89,
+      "karabell": 86,
+      "n": 2,
+      "avg": 87.5,
+      "value": 1163,
+      "age": 25
+    },
+    {
+      "bk": 94,
+      "name": "Aaron Jones",
+      "pos": "RB",
+      "team": "MIN",
+      "yates": 83,
+      "fp": 114,
+      "karabell": 66,
+      "n": 3,
+      "avg": 87.67,
+      "value": 1142,
+      "age": 31
+    },
+    {
+      "bk": 95,
+      "name": "Josh Downs",
+      "pos": "WR",
+      "team": "IND",
+      "yates": "\u2014",
+      "fp": 86,
+      "karabell": 90,
+      "n": 2,
+      "avg": 88.0,
+      "value": 1121,
+      "age": 25
+    },
+    {
+      "bk": 96,
+      "name": "Chris Godwin",
+      "pos": "WR",
+      "team": "TB",
+      "yates": 93,
+      "fp": 75,
+      "karabell": 99,
+      "n": 3,
+      "avg": 89.0,
+      "value": 1101,
+      "age": 30
+    },
+    {
+      "bk": 97,
+      "name": "Travis Kelce",
+      "pos": "TE",
+      "team": "KC",
+      "yates": 99,
+      "fp": 95,
+      "karabell": 75,
+      "n": 3,
+      "avg": 89.67,
+      "value": 1081,
+      "age": 36
+    },
+    {
+      "bk": 98,
+      "name": "Rachaad White",
+      "pos": "RB",
+      "team": "WAS",
+      "yates": 81,
+      "fp": 109,
+      "karabell": 82,
+      "n": 3,
+      "avg": 90.67,
+      "value": 1061,
+      "age": 27
+    },
+    {
+      "bk": 99,
+      "name": "Alec Pierce",
+      "pos": "WR",
+      "team": "IND",
+      "yates": "\u2014",
+      "fp": 97,
+      "karabell": 89,
+      "n": 2,
+      "avg": 93.0,
+      "value": 1042,
+      "age": 26
+    },
+    {
+      "bk": 100,
+      "name": "Jakobi Meyers",
+      "pos": "WR",
+      "team": "JAX",
+      "yates": 91,
+      "fp": 101,
+      "karabell": 88,
+      "n": 3,
+      "avg": 93.33,
+      "value": 1023,
+      "age": 29
+    },
+    {
+      "bk": 101,
+      "name": "Brock Purdy",
+      "pos": "QB",
+      "team": "SF",
+      "yates": 96,
+      "fp": 91,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 93.5,
+      "value": 1004,
+      "age": 26
+    },
+    {
+      "bk": 102,
+      "name": "J.K. Dobbins",
+      "pos": "RB",
+      "team": "DEN",
+      "yates": 100,
+      "fp": 102,
+      "karabell": 83,
+      "n": 3,
+      "avg": 95.0,
+      "value": 986,
+      "age": 27
+    },
+    {
+      "bk": 103,
+      "name": "Patrick Mahomes",
+      "pos": "QB",
+      "team": "KC",
+      "yates": 90,
+      "fp": 100,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 95.0,
+      "value": 968,
+      "age": 30
+    },
+    {
+      "bk": 104,
+      "name": "Kyle Monangai",
+      "pos": "RB",
+      "team": "CHI",
+      "yates": 95,
+      "fp": 112,
+      "karabell": 84,
+      "n": 3,
+      "avg": 97.0,
+      "value": 951,
+      "age": 24
+    },
+    {
+      "bk": 105,
+      "name": "Quentin Johnston",
+      "pos": "WR",
+      "team": "LAC",
+      "yates": "\u2014",
+      "fp": 94,
+      "karabell": 100,
+      "n": 2,
+      "avg": 97.0,
+      "value": 934,
+      "age": 24
+    },
+    {
+      "bk": 106,
+      "name": "Blake Corum",
+      "pos": "RB",
+      "team": "LAR",
+      "yates": "\u2014",
+      "fp": 110,
+      "karabell": 85,
+      "n": 2,
+      "avg": 97.5,
+      "value": 917,
+      "age": 25
+    },
+    {
+      "bk": 107,
+      "name": "Bo Nix",
+      "pos": "QB",
+      "team": "DEN",
+      "yates": 98,
+      "fp": 99,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 98.5,
+      "value": 900,
+      "age": 26
+    },
+    {
+      "bk": 108,
+      "name": "Matthew Stafford",
+      "pos": "QB",
+      "team": "LAR",
+      "yates": 97,
+      "fp": 104,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 100.5,
+      "value": 884,
+      "age": 38
+    },
+    {
+      "bk": 109,
+      "name": "Jordan Addison",
+      "pos": "WR",
+      "team": "MIN",
+      "yates": "\u2014",
+      "fp": 106,
+      "karabell": 96,
+      "n": 2,
+      "avg": 101.0,
+      "value": 868,
+      "age": 24
+    },
+    {
+      "bk": 110,
+      "name": "Jake Ferguson",
+      "pos": "TE",
+      "team": "DAL",
+      "yates": 92,
+      "fp": 115,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 103.5,
+      "value": 852,
+      "age": 27
+    },
+    {
+      "bk": 111,
+      "name": "Matthew Golden",
+      "pos": "WR",
+      "team": "GB",
+      "yates": "\u2014",
+      "fp": 128,
+      "karabell": 81,
+      "n": 2,
+      "avg": 104.5,
+      "value": 837,
+      "age": 23
+    },
+    {
+      "bk": 112,
+      "name": "Jayden Reed",
+      "pos": "WR",
+      "team": "GB",
+      "yates": "\u2014",
+      "fp": 105,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 105.0,
+      "value": 822,
+      "age": 26
+    },
+    {
+      "bk": 113,
+      "name": "Jared Goff",
+      "pos": "QB",
+      "team": "DET",
+      "yates": "\u2014",
+      "fp": 107,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 107.0,
+      "value": 807,
+      "age": 31
+    },
+    {
+      "bk": 114,
+      "name": "Dallas Goedert",
+      "pos": "TE",
+      "team": "PHI",
+      "yates": 94,
+      "fp": 122,
+      "karabell": "\u2014",
+      "n": 2,
+      "avg": 108.0,
+      "value": 793,
+      "age": 31
+    },
+    {
+      "bk": 115,
+      "name": "Makai Lemon",
+      "pos": "WR",
+      "team": "PHI",
+      "yates": "\u2014",
+      "fp": 108,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 108.0,
+      "value": 779,
+      "age": 22
+    },
+    {
+      "bk": 116,
+      "name": "Jordyn Tyson",
+      "pos": "WR",
+      "team": "NO",
+      "yates": "\u2014",
+      "fp": 127,
+      "karabell": 91,
+      "n": 2,
+      "avg": 109.0,
+      "value": 765,
+      "age": 22
+    },
+    {
+      "bk": 117,
+      "name": "Khalil Shakir",
+      "pos": "WR",
+      "team": "BUF",
+      "yates": "\u2014",
+      "fp": 121,
+      "karabell": 97,
+      "n": 2,
+      "avg": 109.0,
+      "value": 751,
+      "age": 26
+    },
+    {
+      "bk": 118,
+      "name": "Kyler Murray",
+      "pos": "QB",
+      "team": "MIN",
+      "yates": "\u2014",
+      "fp": 111,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 111.0,
+      "value": 738,
+      "age": 29
+    },
+    {
+      "bk": 119,
+      "name": "Xavier Worthy",
+      "pos": "WR",
+      "team": "KC",
+      "yates": "\u2014",
+      "fp": 126,
+      "karabell": 98,
+      "n": 2,
+      "avg": 112.0,
+      "value": 724,
+      "age": 23
+    },
+    {
+      "bk": 120,
+      "name": "Dalton Kincaid",
+      "pos": "TE",
+      "team": "BUF",
+      "yates": "\u2014",
+      "fp": 113,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 113.0,
+      "value": 712,
+      "age": 26
+    },
+    {
+      "bk": 121,
+      "name": "Tyjae Spears",
+      "pos": "RB",
+      "team": "TEN",
+      "yates": "\u2014",
+      "fp": 135,
+      "karabell": 94,
+      "n": 2,
+      "avg": 114.5,
+      "value": 699,
+      "age": 25
+    },
+    {
+      "bk": 122,
+      "name": "Jacory Croskey-Merritt",
+      "pos": "RB",
+      "team": "WAS",
+      "yates": "\u2014",
+      "fp": 116,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 116.0,
+      "value": 686,
+      "age": 25
+    },
+    {
+      "bk": 123,
+      "name": "Jordan Mason",
+      "pos": "RB",
+      "team": "MIN",
+      "yates": "\u2014",
+      "fp": 117,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 117.0,
+      "value": 674,
+      "age": 27
+    },
+    {
+      "bk": 124,
+      "name": "Baker Mayfield",
+      "pos": "QB",
+      "team": "TB",
+      "yates": "\u2014",
+      "fp": 118,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 118.0,
+      "value": 662,
+      "age": 31
+    },
+    {
+      "bk": 125,
+      "name": "Jordan Love",
+      "pos": "QB",
+      "team": "GB",
+      "yates": "\u2014",
+      "fp": 119,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 119.0,
+      "value": 650,
+      "age": 27
+    },
+    {
+      "bk": 126,
+      "name": "Isaiah Likely",
+      "pos": "TE",
+      "team": "NYG",
+      "yates": "\u2014",
+      "fp": 120,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 120.0,
+      "value": 639,
+      "age": 26
+    },
+    {
+      "bk": 127,
+      "name": "Alvin Kamara",
+      "pos": "RB",
+      "team": "NO",
+      "yates": "\u2014",
+      "fp": 151,
+      "karabell": 95,
+      "n": 2,
+      "avg": 123.0,
+      "value": 627,
+      "age": 31
+    },
+    {
+      "bk": 128,
+      "name": "KC Concepcion",
+      "pos": "WR",
+      "team": "CLE",
+      "yates": "\u2014",
+      "fp": 123,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 123.0,
+      "value": 616,
+      "age": 21
+    },
+    {
+      "bk": 129,
+      "name": "Jalen Coker",
+      "pos": "WR",
+      "team": "CAR",
+      "yates": "\u2014",
+      "fp": 124,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 124.0,
+      "value": 605,
+      "age": 24
+    },
+    {
+      "bk": 130,
+      "name": "Tyler Shough",
+      "pos": "QB",
+      "team": "NO",
+      "yates": "\u2014",
+      "fp": 125,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 125.0,
+      "value": 595,
+      "age": 26
+    },
+    {
+      "bk": 131,
+      "name": "Romeo Doubs",
+      "pos": "WR",
+      "team": "NE",
+      "yates": "\u2014",
+      "fp": 129,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 129.0,
+      "value": 584,
+      "age": 26
+    },
+    {
+      "bk": 132,
+      "name": "Mark Andrews",
+      "pos": "TE",
+      "team": "BAL",
+      "yates": "\u2014",
+      "fp": 130,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 130.0,
+      "value": 574,
+      "age": 30
+    },
+    {
+      "bk": 133,
+      "name": "Malik Willis",
+      "pos": "QB",
+      "team": "MIA",
+      "yates": "\u2014",
+      "fp": 131,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 131.0,
+      "value": 564,
+      "age": 27
+    },
+    {
+      "bk": 134,
+      "name": "Juwan Johnson",
+      "pos": "TE",
+      "team": "NO",
+      "yates": "\u2014",
+      "fp": 132,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 132.0,
+      "value": 554,
+      "age": 29
+    },
+    {
+      "bk": 135,
+      "name": "Tyler Allgeier",
+      "pos": "RB",
+      "team": "ARI",
+      "yates": "\u2014",
+      "fp": 133,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 133.0,
+      "value": 544,
+      "age": 26
+    },
+    {
+      "bk": 136,
+      "name": "Woody Marks",
+      "pos": "RB",
+      "team": "HOU",
+      "yates": "\u2014",
+      "fp": 134,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 134.0,
+      "value": 534,
+      "age": 25
+    },
+    {
+      "bk": 137,
+      "name": "Chris Rodriguez Jr.",
+      "pos": "RB",
+      "team": "JAX",
+      "yates": "\u2014",
+      "fp": 136,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 136.0,
+      "value": 525,
+      "age": 26
+    },
+    {
+      "bk": 138,
+      "name": "Sam Darnold",
+      "pos": "QB",
+      "team": "SEA",
+      "yates": "\u2014",
+      "fp": 137,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 137.0,
+      "value": 516,
+      "age": 29
+    },
+    {
+      "bk": 139,
+      "name": "C.J. Stroud",
+      "pos": "QB",
+      "team": "HOU",
+      "yates": "\u2014",
+      "fp": 138,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 138.0,
+      "value": 506,
+      "age": 24
+    },
+    {
+      "bk": 140,
+      "name": "Tyrone Tracy Jr.",
+      "pos": "RB",
+      "team": "NYG",
+      "yates": "\u2014",
+      "fp": 139,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 139.0,
+      "value": 498,
+      "age": 26
+    },
+    {
+      "bk": 141,
+      "name": "Deebo Samuel Sr.",
+      "pos": "WR",
+      "team": "SF",
+      "yates": "\u2014",
+      "fp": 141,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 141.0,
+      "value": 489,
+      "age": 30
+    },
+    {
+      "bk": 142,
+      "name": "Dylan Sampson",
+      "pos": "RB",
+      "team": "CLE",
+      "yates": "\u2014",
+      "fp": 142,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 142.0,
+      "value": 480,
+      "age": 21
+    },
+    {
+      "bk": 143,
+      "name": "Denzel Boston",
+      "pos": "WR",
+      "team": "CLE",
+      "yates": "\u2014",
+      "fp": 143,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 143.0,
+      "value": 472,
+      "age": 22
+    },
+    {
+      "bk": 144,
+      "name": "Daniel Jones",
+      "pos": "QB",
+      "team": "IND",
+      "yates": "\u2014",
+      "fp": 144,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 144.0,
+      "value": 463,
+      "age": 29
+    },
+    {
+      "bk": 145,
+      "name": "Zach Charbonnet",
+      "pos": "RB",
+      "team": "SEA",
+      "yates": "\u2014",
+      "fp": 145,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 145.0,
+      "value": 455,
+      "age": 25
+    },
+    {
+      "bk": 146,
+      "name": "Rashid Shaheed",
+      "pos": "WR",
+      "team": "SEA",
+      "yates": "\u2014",
+      "fp": 146,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 146.0,
+      "value": 447,
+      "age": 27
+    },
+    {
+      "bk": 147,
+      "name": "Keaton Mitchell",
+      "pos": "RB",
+      "team": "LAC",
+      "yates": "\u2014",
+      "fp": 147,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 147.0,
+      "value": 439,
+      "age": 24
+    },
+    {
+      "bk": 148,
+      "name": "Cam Ward",
+      "pos": "QB",
+      "team": "TEN",
+      "yates": "\u2014",
+      "fp": 148,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 148.0,
+      "value": 432,
+      "age": 24
+    },
+    {
+      "bk": 149,
+      "name": "Brenton Strange",
+      "pos": "TE",
+      "team": "JAX",
+      "yates": "\u2014",
+      "fp": 149,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 149.0,
+      "value": 424,
+      "age": 25
+    },
+    {
+      "bk": 150,
+      "name": "Chig Okonkwo",
+      "pos": "TE",
+      "team": "WAS",
+      "yates": "\u2014",
+      "fp": 150,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 150.0,
+      "value": 417,
+      "age": 26
+    },
+    {
+      "bk": 151,
+      "name": "Isiah Pacheco",
+      "pos": "RB",
+      "team": "DET",
+      "yates": "\u2014",
+      "fp": 153,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 153.0,
+      "value": 409,
+      "age": 27
+    },
+    {
+      "bk": 152,
+      "name": "Hunter Henry",
+      "pos": "TE",
+      "team": "NE",
+      "yates": "\u2014",
+      "fp": 154,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 154.0,
+      "value": 402,
+      "age": 31
+    },
+    {
+      "bk": 153,
+      "name": "Dalton Schultz",
+      "pos": "TE",
+      "team": "HOU",
+      "yates": "\u2014",
+      "fp": 155,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 155.0,
+      "value": 395,
+      "age": 30
+    },
+    {
+      "bk": 154,
+      "name": "Bryce Young",
+      "pos": "QB",
+      "team": "CAR",
+      "yates": "\u2014",
+      "fp": 157,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 157.0,
+      "value": 388,
+      "age": 25
+    },
+    {
+      "bk": 155,
+      "name": "Jauan Jennings",
+      "pos": "WR",
+      "team": "MIN",
+      "yates": "\u2014",
+      "fp": 158,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 158.0,
+      "value": 381,
+      "age": 29
+    },
+    {
+      "bk": 156,
+      "name": "Jerry Jeudy",
+      "pos": "WR",
+      "team": "CLE",
+      "yates": "\u2014",
+      "fp": 159,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 159.0,
+      "value": 375,
+      "age": 27
+    },
+    {
+      "bk": 157,
+      "name": "Adonai Mitchell",
+      "pos": "WR",
+      "team": "NYJ",
+      "yates": "\u2014",
+      "fp": 160,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 160.0,
+      "value": 368,
+      "age": 23
+    },
+    {
+      "bk": 158,
+      "name": "Tre Tucker",
+      "pos": "WR",
+      "team": "LV",
+      "yates": "\u2014",
+      "fp": 161,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 161.0,
+      "value": 362,
+      "age": 25
+    },
+    {
+      "bk": 159,
+      "name": "Tank Bigsby",
+      "pos": "RB",
+      "team": "PHI",
+      "yates": "\u2014",
+      "fp": 162,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 162.0,
+      "value": 355,
+      "age": 23
+    },
+    {
+      "bk": 160,
+      "name": "Jalen McMillan",
+      "pos": "WR",
+      "team": "TB",
+      "yates": "\u2014",
+      "fp": 163,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 163.0,
+      "value": 349,
+      "age": 24
+    },
+    {
+      "bk": 161,
+      "name": "Brian Robinson Jr.",
+      "pos": "RB",
+      "team": "ATL",
+      "yates": "\u2014",
+      "fp": 165,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 165.0,
+      "value": 343,
+      "age": 27
+    },
+    {
+      "bk": 162,
+      "name": "Braelon Allen",
+      "pos": "RB",
+      "team": "NYJ",
+      "yates": "\u2014",
+      "fp": 166,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 166.0,
+      "value": 337,
+      "age": 22
+    },
+    {
+      "bk": 163,
+      "name": "Tre' Harris",
+      "pos": "WR",
+      "team": "FA",
+      "yates": "\u2014",
+      "fp": 169,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 169.0,
+      "value": 331,
+      "age": 24
+    },
+    {
+      "bk": 164,
+      "name": "Omar Cooper Jr.",
+      "pos": "WR",
+      "team": "NYJ",
+      "yates": "\u2014",
+      "fp": 170,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 170.0,
+      "value": 325,
+      "age": 22
+    },
+    {
+      "bk": 165,
+      "name": "T.J. Hockenson",
+      "pos": "TE",
+      "team": "MIN",
+      "yates": "\u2014",
+      "fp": 171,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 171.0,
+      "value": 320,
+      "age": 29
+    },
+    {
+      "bk": 166,
+      "name": "Travis Hunter",
+      "pos": "WR",
+      "team": "JAX",
+      "yates": "\u2014",
+      "fp": 175,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 175.0,
+      "value": 314,
+      "age": 23
+    },
+    {
+      "bk": 167,
+      "name": "Oronde Gadsden II",
+      "pos": "TE",
+      "team": "LAC",
+      "yates": "\u2014",
+      "fp": 176,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 176.0,
+      "value": 309,
+      "age": 23
+    },
+    {
+      "bk": 168,
+      "name": "Malik Washington",
+      "pos": "WR",
+      "team": "MIA",
+      "yates": "\u2014",
+      "fp": 178,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 178.0,
+      "value": 303,
+      "age": 25
+    },
+    {
+      "bk": 169,
+      "name": "Ray Davis",
+      "pos": "RB",
+      "team": "BUF",
+      "yates": "\u2014",
+      "fp": 180,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 180.0,
+      "value": 298,
+      "age": 26
+    },
+    {
+      "bk": 170,
+      "name": "MarShawn Lloyd",
+      "pos": "RB",
+      "team": "GB",
+      "yates": "\u2014",
+      "fp": 181,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 181.0,
+      "value": 293,
+      "age": 25
+    },
+    {
+      "bk": 171,
+      "name": "Dontayvion Wicks",
+      "pos": "WR",
+      "team": "PHI",
+      "yates": "\u2014",
+      "fp": 182,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 182.0,
+      "value": 288,
+      "age": 25
+    },
+    {
+      "bk": 172,
+      "name": "Pat Bryant",
+      "pos": "WR",
+      "team": "DEN",
+      "yates": "\u2014",
+      "fp": 183,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 183.0,
+      "value": 283,
+      "age": 23
+    },
+    {
+      "bk": 173,
+      "name": "Emmett Johnson",
+      "pos": "RB",
+      "team": "KC",
+      "yates": "\u2014",
+      "fp": 186,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 186.0,
+      "value": 278,
+      "age": 22
+    },
+    {
+      "bk": 174,
+      "name": "Jaylin Noel",
+      "pos": "WR",
+      "team": "HOU",
+      "yates": "\u2014",
+      "fp": 188,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 188.0,
+      "value": 273,
+      "age": 23
+    },
+    {
+      "bk": 175,
+      "name": "Sean Tucker",
+      "pos": "RB",
+      "team": "TB",
+      "yates": "\u2014",
+      "fp": 189,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 189.0,
+      "value": 268,
+      "age": 24
+    },
+    {
+      "bk": 176,
+      "name": "AJ Barner",
+      "pos": "TE",
+      "team": "SEA",
+      "yates": "\u2014",
+      "fp": 190,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 190.0,
+      "value": 264,
+      "age": 24
+    },
+    {
+      "bk": 177,
+      "name": "Tank Dell",
+      "pos": "WR",
+      "team": "HOU",
+      "yates": "\u2014",
+      "fp": 195,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 195.0,
+      "value": 259,
+      "age": 26
+    },
+    {
+      "bk": 178,
+      "name": "Kayshon Boutte",
+      "pos": "WR",
+      "team": "NE",
+      "yates": "\u2014",
+      "fp": 197,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 197.0,
+      "value": 255,
+      "age": 24
+    },
+    {
+      "bk": 179,
+      "name": "Mike Washington Jr.",
+      "pos": "RB",
+      "team": "LV",
+      "yates": "\u2014",
+      "fp": 198,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 198.0,
+      "value": 250,
+      "age": 23
+    },
+    {
+      "bk": 180,
+      "name": "Kimani Vidal",
+      "pos": "RB",
+      "team": "LAC",
+      "yates": "\u2014",
+      "fp": 199,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 199.0,
+      "value": 246,
+      "age": 24
+    },
+    {
+      "bk": 181,
+      "name": "Calvin Ridley",
+      "pos": "WR",
+      "team": "TEN",
+      "yates": "\u2014",
+      "fp": 200,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 200.0,
+      "value": 242,
+      "age": 31
+    },
+    {
+      "bk": 182,
+      "name": "Nicholas Singleton",
+      "pos": "RB",
+      "team": "FA",
+      "yates": "\u2014",
+      "fp": 202,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 202.0,
+      "value": 237,
+      "age": 24
+    },
+    {
+      "bk": 183,
+      "name": "James Conner",
+      "pos": "RB",
+      "team": "ARI",
+      "yates": "\u2014",
+      "fp": 204,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 204.0,
+      "value": 233,
+      "age": 31
+    },
+    {
+      "bk": 184,
+      "name": "Keenan Allen",
+      "pos": "WR",
+      "team": "IND",
+      "yates": "\u2014",
+      "fp": 205,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 205.0,
+      "value": 229,
+      "age": 34
+    },
+    {
+      "bk": 185,
+      "name": "Troy Franklin",
+      "pos": "WR",
+      "team": "DEN",
+      "yates": "\u2014",
+      "fp": 207,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 207.0,
+      "value": 225,
+      "age": 23
+    },
+    {
+      "bk": 186,
+      "name": "Kenyon Sadiq",
+      "pos": "TE",
+      "team": "NYJ",
+      "yates": "\u2014",
+      "fp": 210,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 210.0,
+      "value": 221,
+      "age": 21
+    },
+    {
+      "bk": 187,
+      "name": "Isaac TeSlaa",
+      "pos": "WR",
+      "team": "DET",
+      "yates": "\u2014",
+      "fp": 213,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 213.0,
+      "value": 217,
+      "age": 24
+    },
+    {
+      "bk": 188,
+      "name": "Geno Smith",
+      "pos": "QB",
+      "team": "NYJ",
+      "yates": "\u2014",
+      "fp": 215,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 215.0,
+      "value": 214,
+      "age": 35
+    },
+    {
+      "bk": 189,
+      "name": "Terrance Ferguson",
+      "pos": "TE",
+      "team": "LAR",
+      "yates": "\u2014",
+      "fp": 216,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 216.0,
+      "value": 210,
+      "age": 23
+    },
+    {
+      "bk": 190,
+      "name": "Rashod Bateman",
+      "pos": "WR",
+      "team": "BAL",
+      "yates": "\u2014",
+      "fp": 217,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 217.0,
+      "value": 206,
+      "age": 26
+    },
+    {
+      "bk": 191,
+      "name": "Darnell Mooney",
+      "pos": "WR",
+      "team": "NYG",
+      "yates": "\u2014",
+      "fp": 218,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 218.0,
+      "value": 203,
+      "age": 28
+    },
+    {
+      "bk": 192,
+      "name": "Emanuel Wilson",
+      "pos": "RB",
+      "team": "SEA",
+      "yates": "\u2014",
+      "fp": 221,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 221.0,
+      "value": 199,
+      "age": 27
+    },
+    {
+      "bk": 193,
+      "name": "Jaydon Blue",
+      "pos": "RB",
+      "team": "DAL",
+      "yates": "\u2014",
+      "fp": 223,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 223.0,
+      "value": 196,
+      "age": 22
+    },
+    {
+      "bk": 194,
+      "name": "Pat Freiermuth",
+      "pos": "TE",
+      "team": "PIT",
+      "yates": "\u2014",
+      "fp": 227,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 227.0,
+      "value": 192,
+      "age": 27
+    },
+    {
+      "bk": 195,
+      "name": "Zachariah Branch",
+      "pos": "WR",
+      "team": "ATL",
+      "yates": "\u2014",
+      "fp": 230,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 230.0,
+      "value": 189,
+      "age": 22
+    },
+    {
+      "bk": 196,
+      "name": "Cade Otton",
+      "pos": "TE",
+      "team": "TB",
+      "yates": "\u2014",
+      "fp": 231,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 231.0,
+      "value": 186,
+      "age": 27
+    },
+    {
+      "bk": 197,
+      "name": "Cooper Kupp",
+      "pos": "WR",
+      "team": "SEA",
+      "yates": "\u2014",
+      "fp": 232,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 232.0,
+      "value": 183,
+      "age": 33
+    },
+    {
+      "bk": 198,
+      "name": "Antonio Williams",
+      "pos": "RB",
+      "team": "WAS",
+      "yates": "\u2014",
+      "fp": 234,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 234.0,
+      "value": 180,
+      "age": 22
+    },
+    {
+      "bk": 199,
+      "name": "Germie Bernard",
+      "pos": "WR",
+      "team": "PIT",
+      "yates": "\u2014",
+      "fp": 235,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 235.0,
+      "value": 176,
+      "age": 22
+    },
+    {
+      "bk": 200,
+      "name": "Jaylen Wright",
+      "pos": "RB",
+      "team": "MIA",
+      "yates": "\u2014",
+      "fp": 237,
+      "karabell": "\u2014",
+      "n": 1,
+      "avg": 237.0,
+      "value": 173,
+      "age": 23
+    }
+  ]
+}

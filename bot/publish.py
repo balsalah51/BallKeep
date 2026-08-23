@@ -130,10 +130,10 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-board"])
     await _post_list(
         channels["the-board"],
-        "The Board — long Superflex aggregate",
+        "The Board — Redraft PPR",
         cat.raw["board"],
         cat,
-        "Every name on a long Superflex board, ordered by Ball Keep average.",
+        "Redraft PPR. Field Yates, FantasyPros PPR ECR, Karabell Flex.",
     )
     await note("The Board posted.")
 

@@ -48,7 +48,10 @@ def main():
     assert cat.deals_for("sun god") or cat.deals_for("st brown")
     assert len(cat.deals_for("")) >= 20
     assert len(cat.raw["keep"]) == 400
-    assert 400 <= len(cat.raw["board"]) <= 500, f"board {len(cat.raw.get('board') or [])}"
+    assert cat.raw.get("board_format") == "redraft PPR", cat.raw.get("board_format")
+    assert len(cat.raw["board"]) == 200, f"board {len(cat.raw.get('board') or [])}"
+    assert cat.raw["board"][0]["name"] == cat.raw["ppr"][0]["name"]
+    assert 400 <= len(cat.raw.get("sf_redraft") or []) <= 500, f"sf_redraft {len(cat.raw.get('sf_redraft') or [])}"
     bb = cat.raw.get("bb_keep") or []
     assert len(bb) == 400, f"bb keep {len(bb)}"
     assert cat.one("ohtani", sport="baseball")["name"] == "Shohei Ohtani"
@@ -119,7 +122,8 @@ def main():
     keep0 = cat.raw["keep"][0]
     board0 = cat.raw["board"][0]
     assert (keep0.get("n") or 0) >= 10, keep0
-    assert board0.get("keep") or board0.get("ppr") or (board0.get("n") or 0) <= 2, board0
+    assert board0.get("yates") or board0.get("fp") or board0.get("karabell"), board0
+    assert keep0["name"] != board0["name"] or board0.get("yates") == 1
     bk = cat.raw.get("bk_keep") or []
     assert len(bk) == 400, f"bk keep {len(bk)}"
     assert bk[0]["name"] == "Victor Wembanyama"
@@ -187,7 +191,7 @@ def main():
 
     home = html_of("index.html")
     assert "Superflex Dynasty" in home
-    assert "Superflex Redraft" in home
+    assert "Redraft PPR" in home
     assert "sports-top" in home
     assert "BasketKeep" in home
     assert "BaseKeep" in home
@@ -197,9 +201,13 @@ def main():
     assert "BaseBallKeep" not in home
     assert 'class="desk-block extra"' in home
     assert "home-intro" in home
-    assert "Superflex ranks for two-QB leagues" in home
+    assert "The Keep is Superflex Dynasty. The Board is Redraft PPR." in home
     assert "Dynasty · Redraft" in home
     assert "Superflex Dynasty · Superflex Redraft" not in home
+    assert "Kids pay a tax" not in home
+    assert "kids pay a tax" not in home
+    assert "Redraft Superflex" in home
+    assert 'href="redraft-superflex.html"' in home
     assert "hero-lead" not in home
     assert '<section class="hero"' in home
     assert "home-leads" in home
@@ -220,8 +228,19 @@ def main():
     assert "font-size: 40px" in css
     assert ".home-intro" in css
     board_html = html_of("board.html")
-    assert "Superflex Redraft" in board_html
-    assert "Superflex Dynasty" in board_html
+    assert "2026 Redraft · PPR" in board_html
+    assert "<h2>The Board</h2>" in board_html
+    assert "redraft ppr" in board_html.lower()
+    assert "Kids pay a tax" not in board_html
+    assert "kids pay a tax" not in board_html
+    assert "The tax is" not in board_html
+    sf_html = html_of("redraft-superflex.html")
+    assert "<h2>Redraft Superflex</h2>" in sf_html
+    assert "Superflex Redraft" in sf_html
+    assert "Kids pay a tax" not in sf_html
+    stub = html_of("redraft-ppr.html")
+    assert "board.html" in stub
+    assert "The Board" in stub
     bb_home = html_of("bb/index.html")
     assert "BallKeep" in bb_home
     assert "FootKeep" not in bb_home
