@@ -24,7 +24,7 @@ from news_algo import (  # noqa: E402
     rematch_stories,
 )
 from x_tape import cards_html as x_cards  # noqa: E402
-from seo import canon, clip, dual_metric_graph, head_tags, rank_spread_graph, sports_footer, sports_top, value_bars  # noqa: E402
+from seo import canon, clip, dual_metric_graph, head_tags, legal_links, rank_spread_graph, sports_footer, sports_top, value_bars  # noqa: E402
 
 
 def esc(s):
@@ -210,6 +210,7 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
     {body}
     <footer>
       © {date.today().year} PitchKeep · ballkeep.com/pl · Rankings aggregated {UPDATED}. Not affiliated with the Premier League or FPL.
+      {legal_links(depth)}
       {sports_footer("pl", depth)}
     </footer>
   </div>
