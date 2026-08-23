@@ -230,7 +230,7 @@ def main():
     board_html = html_of("board.html")
     assert "2026 Redraft · PPR" in board_html
     assert "<h2>The Board</h2>" in board_html
-    assert "redraft PPR" in board_html.lower()
+    assert "redraft ppr" in board_html.lower()
     assert "Kids pay a tax" not in board_html
     assert "kids pay a tax" not in board_html
     assert "The tax is" not in board_html
