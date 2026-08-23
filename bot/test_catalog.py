@@ -214,7 +214,11 @@ def main():
     assert "Redraft Superflex" in home
     assert 'href="redraft-superflex.html"' in home
     assert "hero-lead" not in home
-    assert '<section class="hero"' in home
+    assert '<section class="hero' in home
+    assert 'class="hero masthead"' in home
+    assert "Football desk" in home
+    assert "background-image:url" not in home
+    assert "Night stadium" not in home
     assert "home-leads" in home
     assert "the-ones.html" not in home
     assert "The Ones" not in home
@@ -254,6 +258,15 @@ def main():
     assert "The Diamond" in bb_home
     assert "Redraft ranking" in bb_home
     assert "the-diamond.html" in bb_home
+    assert 'class="hero masthead"' in bb_home
+    assert "Baseball desk" in bb_home
+    assert "background-image:url" not in bb_home
+    lineup = html_of("bb/the-lineup.html")
+    assert "page-label" in lineup
+    assert "<h2>The Lineup</h2>" in lineup
+    assert "bb-lineup.jpg" not in lineup
+    assert "bb-pitch.jpg" not in html_of("bb/pitchers.html")
+    assert "bb-bullpen.jpg" not in html_of("bb/bullpen.html")
     diamond = html_of("bb/the-diamond.html")
     assert "The Diamond" in page_title(diamond) or "<h2>The Diamond</h2>" in diamond
     assert "Redraft ranking" in diamond
@@ -267,6 +280,13 @@ def main():
     assert "FootKeep" not in bk_home
     assert "the-keep.html" in bk_home
     assert "board.html" in bk_home
+    assert 'class="hero masthead"' in bk_home
+    assert "Basketball desk" in bk_home
+    assert "background-image:url" not in bk_home
+    pl_home = html_of("pl/index.html")
+    assert 'class="hero masthead"' in pl_home
+    assert "Premier League desk" in pl_home
+    assert "background-image:url" not in pl_home
     bk_keep = html_of("bk/the-keep.html")
     assert "Victor Wembanyama" in bk_keep
     assert "bar-chart" in bk_keep

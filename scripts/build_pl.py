@@ -77,6 +77,19 @@ def wordmark():
     return '<span class="word-pitch">PITCH</span><span class="word-keep">KEEP</span>'
 
 
+def masthead(kicker, mark, sub, url="ballkeep.com/pl"):
+    return (
+        f'<section class="hero masthead" aria-label="{esc(kicker)}">'
+        f'<div class="hero-card">'
+        f'<p class="mast-url">{esc(url)}</p>'
+        f'<p class="mast-kicker">{esc(kicker)}</p>'
+        f"<h2>{mark}</h2>"
+        f'<span class="mast-rule" aria-hidden="true"></span>'
+        f'<p class="mast-sub">{esc(sub)}</p>'
+        f"</div></section>"
+    )
+
+
 PL_SEO = {
     "index.html": (
         "PitchKeep | The Premier Hybrid Rankings and Sleeper BPL 2025",
@@ -191,7 +204,7 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep")}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=26" />
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=27" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
 <body>
@@ -951,12 +964,7 @@ def write_pitch_site():
             '<p class="note" style="margin-top:12px"><a href="news.html">All PK News</a></p>'
         )
     home = f"""
-    <section class="hero" style="background-image:url('../img/pl-hero.jpg')">
-      <div class="hero-card">
-        <p class="kicker" style="color:#e8c547">Updated {UPDATED}</p>
-        <h2>{wordmark()}</h2>
-      </div>
-    </section>
+    {masthead("Premier League desk", wordmark(), "The Premier · The Pitch")}
     {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: 25 published 2026/27 lists. Pitch: Sleeper points. Trade and files here too.", [
         ("the-premier.html", "The Premier", "Hybrid 400."),
         ("the-pitch.html", "The Pitch", "Sleeper BPL 2025."),

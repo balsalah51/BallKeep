@@ -83,6 +83,19 @@ def wordmark():
     return '<span class="word-base">BASE</span> <span class="word-keep">KEEP</span>'
 
 
+def masthead(kicker, mark, sub, url="ballkeep.com/bb"):
+    return (
+        f'<section class="hero masthead" aria-label="{esc(kicker)}">'
+        f'<div class="hero-card">'
+        f'<p class="mast-url">{esc(url)}</p>'
+        f'<p class="mast-kicker">{esc(kicker)}</p>'
+        f"<h2>{mark}</h2>"
+        f'<span class="mast-rule" aria-hidden="true"></span>'
+        f'<p class="mast-sub">{esc(sub)}</p>'
+        f"</div></section>"
+    )
+
+
 def bb_nav_target(href: str, path: str, depth: int) -> str:
     if depth < 2:
         return href
@@ -214,7 +227,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseKeep")}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=26" />
+  <link rel="stylesheet" href="{prefix}css/bb.css?v=27" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
 </head>
 <body>
@@ -356,8 +369,16 @@ def filter_js(groups):
     </script>"""
 
 
-def banner(src, alt=""):
-    return f'<p class="bb-banner"><img src="../img/{esc(src)}" alt="{esc(alt)}" /></p>'
+def page_label(kicker, title, sub=""):
+    sub_html = f'<p class="mast-sub">{esc(sub)}</p>' if sub else ""
+    return (
+        f'<section class="page-label" aria-label="{esc(title)}">'
+        f'<p class="mast-kicker">{esc(kicker)}</p>'
+        f"<h2>{esc(title)}</h2>"
+        f'<span class="mast-rule" aria-hidden="true"></span>'
+        f"{sub_html}"
+        "</section>"
+    )
 
 
 def load_bb_media():
@@ -1225,12 +1246,7 @@ def write_baseball_site():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home = f"""
-    <section class="hero" style="background-image:url('../img/bb-hero.jpg')">
-      <div class="hero-card">
-        <p class="kicker" style="color:#ffd36a">Updated {UPDATED}</p>
-        <h2>{wordmark()}</h2>
-      </div>
-    </section>
+    {masthead("Baseball desk", wordmark(), "The Keep · The Diamond")}
     {desk_block("main", "Main", "The Keep and The Diamond.", "Dynasty overall, then the redraft ranking. Everything else on this page supports these.", [
         ("the-keep.html", "The Keep", "Overall dynasty top 400."),
         ("the-diamond.html", "The Diamond", "Redraft ranking. This year only."),
@@ -1263,9 +1279,7 @@ def write_baseball_site():
     write("bb/the-keep.html", bb_page("The Keep", "the-keep.html", keep_body, js))
 
     lu_body = f"""
-    <p class="kicker">Hitters Only</p>
-    <h2>The Lineup</h2>
-    {banner("bb-lineup.jpg", "Bats in a dugout rack")}
+    {page_label("BaseKeep", "The Lineup", "Hitters only")}
     <p class="note">Every hitter we could pin to a dynasty board, re-ranked among bats only. Ohtani lives here as a DH. Pitchers have their own building.</p>
     <div class="panel">{rank_table(lineup, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {value_bars(lineup, 12, "#1f6b3a", "Lineup value graph")}
@@ -1274,9 +1288,7 @@ def write_baseball_site():
     write("bb/the-lineup.html", bb_page("The Lineup", "the-lineup.html", lu_body))
 
     pit_body = f"""
-    <p class="kicker">Dynasty Arms</p>
-    <h2>BK's Pitchers</h2>
-    {banner("bb-pitch.jpg", "Baseball in a pitcher's grip")}
+    {page_label("BaseKeep", "BK's Pitchers", "Dynasty arms")}
     <p class="note">Top 150 overall dynasty pitchers. Starting pitchers plus the two-way unicorn. Relievers who crack the overall pitcher board sneak in; the full bullpen lives next door.</p>
     <div class="panel">{rank_table(pitchers, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {value_bars(pitchers, 12, "#1f6b3a", "Pitcher value graph")}
@@ -1285,9 +1297,7 @@ def write_baseball_site():
     write("bb/pitchers.html", bb_page("BK's Pitchers", "pitchers.html", pit_body))
 
     sv_body = f"""
-    <p class="kicker">Relief · Saves</p>
-    <h2>BK's Bullpen — Saves</h2>
-    {banner("bb-bullpen.jpg", "Bullpen mound at twilight")}
+    {page_label("BaseKeep", "BK's Bullpen — Saves", "Relief · Saves")}
     <p class="note">Top 100 relief pitchers for traditional saves leagues. Chart mix: FantasyPros closer report (Aug 20), ESPN reliever depth chart, and RPs who survive the overall Keep. Bryan Baker has the MLB lead. Diaz is leaking. Scott is the add.</p>
     <div class="panel">{rank_table(saves, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {value_bars(saves, 12, "#1f6b3a", "Saves value graph")}
@@ -1296,9 +1306,7 @@ def write_baseball_site():
     write("bb/bullpen.html", bb_page("Bullpen Saves", "bullpen.html", sv_body))
 
     svh_body = f"""
-    <p class="kicker">Relief · Saves + Holds</p>
-    <h2>BK's Bullpen — SV+H</h2>
-    {banner("bb-bullpen.jpg", "Bullpen mound at twilight")}
+    {page_label("BaseKeep", "BK's Bullpen — SV+H", "Relief · Saves + Holds")}
     <p class="note">Same bullpen, different sport. FantasyPros Week 21 SV+H board (Baker / Miller / Varland) plus setup men the ESPN chart actually uses. If your league counts holds, this is the page. The saves page is the other one.</p>
     <div class="panel">{rank_table(svh, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {value_bars(svh, 12, "#1f6b3a", "SV+H value graph")}
