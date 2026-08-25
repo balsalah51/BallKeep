@@ -98,7 +98,9 @@ def masthead(kicker, mark, sub, url="ballkeep.com/bk"):
         f'<span class="mast-rule" aria-hidden="true"></span>'
         f'<p class="mast-sub">{esc(sub)}</p>'
         f'<p class="mast-url">{esc(url)}</p>'
-        f"</div></div></div></section>"
+        f"</div>"
+        f'<div class="mast-art" aria-hidden="true"><img src="../img/mast-ballkeep.jpg" alt="" /></div>'
+        f"</div></div></section>"
     )
 
 
@@ -205,7 +207,7 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bk/"), image=img, brand="BasketKeep")}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=27" />
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=28" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
 <body>
@@ -665,7 +667,7 @@ def write_basket_site():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home = f"""
-    {masthead("Basketball desk", wordmark(), "The Keep · The Board")}
+    {masthead("Basketball rankings", wordmark(), "The Keep · The Board")}
     <section class="desk-block main">
       <p class="kicker">Hardwood</p>
       <h2>The Keep and The Board</h2>

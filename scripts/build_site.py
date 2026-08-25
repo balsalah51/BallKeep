@@ -731,7 +731,7 @@ def wordmark():
     )
 
 
-def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ball Keep circular logo"):
+def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ball Keep circular logo", art="img/mast-ballkeep.jpg"):
     return (
         f'<section class="hero masthead" aria-label="{esc(kicker)}">'
         f'<div class="hero-card">'
@@ -743,7 +743,9 @@ def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ba
         f'<span class="mast-rule" aria-hidden="true"></span>'
         f'<p class="mast-sub">{esc(sub)}</p>'
         f'<p class="mast-url">{esc(url)}</p>'
-        f"</div></div></div></section>"
+        f"</div>"
+        f'<div class="mast-art" aria-hidden="true"><img src="{esc(art)}" alt="" /></div>'
+        f"</div></div></section>"
     )
 
 
@@ -911,7 +913,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep")}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=29" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=30" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1845,7 +1847,7 @@ def main():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home_body = f"""
-    {masthead("Football desk", wordmark(), "Dynasty · Redraft")}
+    {masthead("Football rankings", wordmark(), "Dynasty · Redraft")}
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
       <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR.</p>

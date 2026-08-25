@@ -216,7 +216,10 @@ def main():
     assert "hero-lead" not in home
     assert '<section class="hero' in home
     assert 'class="hero masthead"' in home
-    assert "Football desk" in home
+    assert "Football rankings" in home
+    assert "Football desk" not in home
+    assert "mast-art" in home
+    assert "mast-ballkeep.jpg" in home
     assert "background-image:url" not in home
     assert 'class="mast-mark"' in home
     assert "home-leads" in home
@@ -270,7 +273,10 @@ def main():
     assert "the-diamond.html" in bb_home
     assert 'href="../privacy.html"' in bb_home
     assert 'class="hero masthead"' in bb_home
-    assert "Baseball desk" in bb_home
+    assert "Baseball rankings" in bb_home
+    assert "Baseball desk" not in bb_home
+    assert "mast-art" in bb_home
+    assert "mast-ballkeep.jpg" in bb_home
     assert "background-image:url" not in bb_home
     lineup = html_of("bb/the-lineup.html")
     assert "page-label" in lineup
@@ -292,13 +298,19 @@ def main():
     assert "board.html" in bk_home
     assert 'href="../privacy.html"' in bk_home
     assert 'class="hero masthead"' in bk_home
-    assert "Basketball desk" in bk_home
+    assert "Basketball rankings" in bk_home
+    assert "Basketball desk" not in bk_home
+    assert "mast-art" in bk_home
+    assert "mast-ballkeep.jpg" in bk_home
     assert "background-image:url" not in bk_home
     assert "hero-lead" not in bk_home
     pl_home = html_of("pl/index.html")
     assert 'href="../privacy.html"' in pl_home
     assert 'class="hero masthead"' in pl_home
-    assert "Premier League desk" in pl_home
+    assert "Premier League rankings" in pl_home
+    assert "Premier League desk" not in pl_home
+    assert "mast-art" in pl_home
+    assert "mast-ballkeep.jpg" in pl_home
     assert "background-image:url" not in pl_home
     bk_keep = html_of("bk/the-keep.html")
     assert "Victor Wembanyama" in bk_keep
