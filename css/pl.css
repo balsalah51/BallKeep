@@ -57,40 +57,17 @@ nav a:hover, nav a[aria-current="page"] { color: var(--gold); }
   left: 0; top: 0; bottom: 0;
   width: 5px;
   background: var(--pitch);
+  z-index: 1;
 }
-.hero.masthead .hero-card {
-  background: transparent;
-  padding: 0 0 0 28px;
-}
-.hero.masthead .hero-card h2 {
-  font-size: 36px;
-  letter-spacing: 0.04em;
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.mast-row { display: flex; align-items: stretch; gap: 16px; width: 100%; min-width: 0; }
-.mast-mark {
-  width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
-  border: 3px solid var(--pitch); background: #fff;
-  box-shadow: 0 4px 18px rgba(0,0,0,.28);
-  align-self: center;
-}
-.mast-copy { min-width: 0; flex: 0 1 auto; padding: 18px 4px 18px 0; align-self: center; }
-.mast-art {
-  flex: 1 1 48%;
+.hero.masthead .mast-art {
+  flex: none;
+  width: 100%;
   min-width: 0;
   overflow: hidden;
-  position: relative;
 }
-.mast-art img {
-  display: block; width: 100%; height: 100%; min-height: 148px;
+.hero.masthead .mast-art img {
+  display: block; width: 100%; height: 168px; min-height: 0;
   object-fit: cover; object-position: center;
-}
-.hero.masthead p.mast-kicker {
-  margin: 0 0 6px; max-width: none;
-  font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
-  color: #86efac;
 }
 .mast-rule {
   display: block; width: 56px; height: 3px; margin: 12px 0 10px;
@@ -284,18 +261,9 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
   .hero.masthead { min-height: 0; }
   .hero-card { padding: 20px 16px; }
-  .hero.masthead .hero-card { padding: 0 0 0 20px; }
   .hero-card h1, .hero-card h2 { font-size: 26px; }
-  .hero.masthead .hero-card h2 { font-size: 26px; }
   .hero-card p { max-width: none; }
-  .mast-row { gap: 12px; flex-wrap: wrap; }
-  .mast-copy { padding: 14px 16px 8px 0; }
-  .mast-art { flex: 1 1 100%; }
-  .mast-art img { min-height: 110px; }
-  .mast-mark { width: 64px; height: 64px; border-width: 2px; }
-  .hero.masthead p.mast-kicker { font-size: 10px; }
-  .hero.masthead p.mast-sub { font-size: 12px; }
-  .hero.masthead p.mast-url { display: block; }
+  .hero.masthead .mast-art img { height: 120px; }
   .player-hero img { width: 100%; height: 220px; object-fit: cover; object-position: top center; }
   .desk-only { display: none !important; }
   .table-wrap:has(table.rank-table) { overflow: visible; }
