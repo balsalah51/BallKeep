@@ -220,6 +220,7 @@ def main():
     assert "Football desk" not in home
     assert "mast-art" in home
     assert "mast-ballkeep.jpg" in home
+    assert 'class="mast-mark"' in home
     assert "background-image:url" not in home
     assert "home-leads" in home
     assert 'href="privacy.html"' in home
@@ -274,6 +275,7 @@ def main():
     assert 'class="hero masthead"' in bb_home
     assert "Baseball rankings" in bb_home
     assert "Baseball desk" not in bb_home
+    assert 'class="mast-mark"' in bb_home
     assert "mast-art" in bb_home
     assert "mast-ballkeep.jpg" in bb_home
     assert "background-image:url" not in bb_home

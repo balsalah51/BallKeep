@@ -731,11 +731,21 @@ def wordmark():
     )
 
 
-def masthead(art="img/mast-ballkeep.jpg"):
+def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ball Keep circular logo", art="img/mast-ballkeep.jpg"):
     return (
-        '<section class="hero masthead" aria-label="BALL KEEP">'
-        f'<div class="mast-art"><img src="{esc(art)}" alt="BALL KEEP" /></div>'
-        "</section>"
+        f'<section class="hero masthead" aria-label="{esc(kicker)}">'
+        f'<div class="hero-card">'
+        f'<div class="mast-row">'
+        f'<img class="mast-mark" src="{esc(logo)}" alt="{esc(alt)}" />'
+        f'<div class="mast-copy">'
+        f'<p class="mast-kicker">{esc(kicker)}</p>'
+        f"<h2>{mark}</h2>"
+        f'<span class="mast-rule" aria-hidden="true"></span>'
+        f'<p class="mast-sub">{esc(sub)}</p>'
+        f'<p class="mast-url">{esc(url)}</p>'
+        f"</div>"
+        f'<div class="mast-art" aria-hidden="true"><img src="{esc(art)}" alt="" /></div>'
+        f"</div></div></section>"
     )
 
 
@@ -903,7 +913,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep")}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=31" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=32" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1837,9 +1847,9 @@ def main():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home_body = f"""
-    {masthead()}
+    {masthead("Football rankings", wordmark(), "Dynasty · Redraft")}
     <section class="desk-block main home-intro">
-      <p class="kicker">Football rankings · Updated {UPDATED}</p>
+      <p class="kicker">Updated {UPDATED}</p>
       <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR.</p>
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">

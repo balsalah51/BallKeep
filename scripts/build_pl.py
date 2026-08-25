@@ -77,11 +77,21 @@ def wordmark():
     return '<span class="word-pitch">PITCH</span><span class="word-keep">KEEP</span>'
 
 
-def masthead(art="../img/mast-ballkeep.jpg"):
+def masthead(kicker, mark, sub, url="ballkeep.com/pl"):
     return (
-        '<section class="hero masthead" aria-label="BALL KEEP">'
-        f'<div class="mast-art"><img src="{esc(art)}" alt="BALL KEEP" /></div>'
-        "</section>"
+        f'<section class="hero masthead" aria-label="{esc(kicker)}">'
+        f'<div class="hero-card">'
+        f'<div class="mast-row">'
+        f'<img class="mast-mark" src="../img/pl-logo.jpg" alt="PitchKeep circular soccer logo" />'
+        f'<div class="mast-copy">'
+        f'<p class="mast-kicker">{esc(kicker)}</p>'
+        f"<h2>{mark}</h2>"
+        f'<span class="mast-rule" aria-hidden="true"></span>'
+        f'<p class="mast-sub">{esc(sub)}</p>'
+        f'<p class="mast-url">{esc(url)}</p>'
+        f"</div>"
+        f'<div class="mast-art" aria-hidden="true"><img src="../img/mast-ballkeep.jpg" alt="" /></div>'
+        f"</div></div></section>"
     )
 
 
@@ -199,7 +209,7 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep")}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=29" />
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=30" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
 <body>
@@ -960,8 +970,8 @@ def write_pitch_site():
             '<p class="note" style="margin-top:12px"><a href="news.html">All PK News</a></p>'
         )
     home = f"""
-    {masthead()}
-    {desk_block("main", "Premier League rankings", "The Premier and The Pitch.", "Premier: 25 published 2026/27 lists. Pitch: Sleeper points. Trade and files here too.", [
+    {masthead("Premier League rankings", wordmark(), "The Premier · The Pitch")}
+    {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: 25 published 2026/27 lists. Pitch: Sleeper points. Trade and files here too.", [
         ("the-premier.html", "The Premier", "Hybrid 400."),
         ("the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
         ("trade.html", "Trade Calculators", "Premier, Pitch, the lists."),
