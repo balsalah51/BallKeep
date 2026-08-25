@@ -46,7 +46,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--gold); }
 }
 .hero.masthead {
   position: relative;
-  min-height: 0;
+  height: 120px;
+  min-height: 120px;
+  max-height: 120px;
   align-items: stretch;
   background: var(--purple);
   background-image: none;
@@ -60,55 +62,67 @@ nav a:hover, nav a[aria-current="page"] { color: var(--gold); }
   z-index: 1;
 }
 .hero.masthead .mast-art {
-  flex: 0 0 220px;
-  width: 220px;
-  max-width: 34%;
+  width: 200px;
   height: 88px;
-  margin-left: auto;
   overflow: hidden;
   border-radius: 10px;
+  background: #240028;
+  justify-self: stretch;
 }
 .hero.masthead .mast-art img {
-  display: block; width: 100%; height: 88px; min-height: 0;
-  object-fit: cover; object-position: center;
+  display: block; width: 100%; height: 100%; min-height: 0;
+  object-fit: contain; object-position: center;
 }
 .hero.masthead .hero-card {
+  height: 100%;
+  display: flex;
+  align-items: center;
   background: transparent;
-  padding: 14px 16px 14px 22px;
+  padding: 12px 16px 12px 22px;
 }
 .hero.masthead .hero-card h2 {
   margin: 0;
-  font-size: 30px;
-  letter-spacing: 0.04em;
+  font-size: clamp(14px, 10cqi, 30px);
+  letter-spacing: 0.03em;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.mast-row { display: flex; align-items: center; gap: 14px; width: 100%; min-width: 0; }
+.mast-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) 200px;
+  column-gap: 16px;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  height: 96px;
+}
 .mast-mark {
-  width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
+  width: 72px; height: 72px; border-radius: 50%; object-fit: cover;
   border: 3px solid var(--pitch); background: #fff;
   box-shadow: 0 4px 18px rgba(0,0,0,.28);
 }
-.mast-copy { min-width: 0; flex: 1 1 auto; }
+.mast-copy { min-width: 0; overflow: hidden; container-type: inline-size; }
 .hero.masthead p.mast-kicker {
   margin: 0 0 4px; max-width: none;
   font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
   color: #86efac;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .mast-rule {
-  display: block; width: 56px; height: 3px; margin: 12px 0 10px;
+  display: block; width: 44px; height: 3px; margin: 6px 0;
   background: var(--pitch); border-radius: 2px;
 }
 .hero.masthead p.mast-sub {
   margin: 0; max-width: none;
-  font-size: 15px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
   color: #e2e8f0;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.hero.masthead p.mast-url {
-  display: none; margin: 8px 0 0; max-width: none;
-  font-size: 12px; font-weight: 700; letter-spacing: .04em; color: #86efac;
-}
+.hero.masthead p.mast-url { display: none !important; }
 .hero-card { background: linear-gradient(180deg, transparent, rgba(55,0,60,0.86)); color: #fff; padding: 28px; }
 .hero-card h1, .hero-card h2 { margin: 0; font-size: 40px; letter-spacing: -0.03em; }
 .hero-card h1 .word-pitch, .hero-card h2 .word-pitch { color: var(--pitch); }
@@ -286,20 +300,14 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
   .grid, .grid-3, .plusminus, .player-hero, .trade-hits, .trade-board { grid-template-columns: 1fr; }
   .player-grid, .facts, .rank-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
-  .hero.masthead { min-height: 0; }
+  .hero.masthead { height: 120px; min-height: 120px; max-height: 120px; }
   .hero-card { padding: 20px 16px; }
   .hero-card h1, .hero-card h2 { font-size: 26px; }
   .hero-card p { max-width: none; }
   .hero.masthead .hero-card { padding: 12px 12px 12px 16px; }
-  .hero.masthead .hero-card h2 { font-size: 22px; }
+  .mast-row { grid-template-columns: 56px minmax(0, 1fr) 140px; column-gap: 12px; height: 96px; }
   .mast-mark { width: 56px; height: 56px; border-width: 2px; }
-  .hero.masthead .mast-art {
-    flex: 0 0 132px;
-    width: 132px;
-    max-width: 38%;
-    height: 64px;
-  }
-  .hero.masthead .mast-art img { height: 64px; }
+  .hero.masthead .mast-art { width: 140px; height: 72px; }
   .player-hero img { width: 100%; height: 220px; object-fit: cover; object-position: top center; }
   .desk-only { display: none !important; }
   .table-wrap:has(table.rank-table) { overflow: visible; }

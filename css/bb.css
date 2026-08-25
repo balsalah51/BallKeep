@@ -46,7 +46,9 @@ nav a:hover, nav a[aria-current="page"] { color: #ffd36a; }
 }
 .hero.masthead, .hero.page-label {
   position: relative;
-  min-height: 0;
+  height: 120px;
+  min-height: 120px;
+  max-height: 120px;
   align-items: stretch;
   background: var(--navy);
   background-image: none;
@@ -60,75 +62,70 @@ nav a:hover, nav a[aria-current="page"] { color: #ffd36a; }
   z-index: 1;
 }
 .hero.masthead .mast-art {
-  flex: 0 0 220px;
-  width: 220px;
-  max-width: 34%;
+  width: 200px;
   height: 88px;
-  margin-left: auto;
   overflow: hidden;
   border-radius: 10px;
+  background: #081628;
+  justify-self: stretch;
 }
 .hero.masthead .mast-art img {
-  display: block; width: 100%; height: 88px; min-height: 0;
-  object-fit: cover; object-position: center;
+  display: block; width: 100%; height: 100%; min-height: 0;
+  object-fit: contain; object-position: center;
 }
 .hero.masthead .hero-card, .hero.page-label .hero-card {
+  height: 100%;
+  display: flex;
+  align-items: center;
   background: transparent;
-  padding: 14px 16px 14px 22px;
+  padding: 12px 16px 12px 22px;
 }
-.hero.page-label .hero-card { padding: 16px 20px 16px 24px; }
-.hero.masthead .hero-card h2 {
+.hero.masthead .hero-card h2, .hero.page-label .hero-card h2 {
   margin: 0;
-  font-size: 30px;
-  letter-spacing: 0.04em;
+  font-size: clamp(14px, 10cqi, 30px);
+  letter-spacing: 0.03em;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 900;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.hero.masthead .word-base { color: #fff; }
-.hero.masthead .word-keep { color: #ffd36a; }
-.hero.page-label .hero-card {
-  background: transparent;
-  padding: 18px 22px 18px 28px;
+.hero.masthead .word-base, .hero.page-label .word-base { color: #fff; }
+.hero.masthead .word-keep, .hero.page-label .word-keep { color: #ffd36a; }
+.mast-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) 200px;
+  column-gap: 16px;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  height: 96px;
 }
-.hero.page-label .hero-card h2 {
-  font-size: 28px;
-  letter-spacing: 0.04em;
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin: 0;
-}
-.hero.page-label .word-base { color: #fff; }
-.hero.page-label .word-keep { color: #ffd36a; }
-.mast-row { display: flex; align-items: center; gap: 14px; width: 100%; min-width: 0; }
+.hero.page-label .mast-row { grid-template-columns: 72px minmax(0, 1fr); }
 .mast-mark {
-  width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
+  width: 72px; height: 72px; border-radius: 50%; object-fit: cover;
   border: 3px solid var(--stitch); background: #fff;
   box-shadow: 0 4px 18px rgba(0,0,0,.28);
-  align-self: center;
 }
-.hero.masthead .mast-mark { width: 72px; height: 72px; }
-.hero.page-label .mast-mark { width: 64px; height: 64px; }
-.mast-copy { min-width: 0; flex: 1 1 auto; }
+.mast-copy { min-width: 0; overflow: hidden; container-type: inline-size; }
 .hero.masthead p.mast-kicker, .hero.page-label p.mast-kicker {
-  margin: 0 0 6px; max-width: none;
+  margin: 0 0 4px; max-width: none;
   font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
   color: #fca5a5;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .mast-rule {
-  display: block; width: 56px; height: 3px; margin: 12px 0 10px;
+  display: block; width: 44px; height: 3px; margin: 6px 0;
   background: var(--stitch); border-radius: 2px;
 }
 .hero.masthead p.mast-sub, .hero.page-label p.mast-sub {
   margin: 0; max-width: none;
-  font-size: 15px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
   color: var(--cream);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.hero.masthead p.mast-url {
-  display: none; margin: 8px 0 0; max-width: none;
-  font-size: 12px; font-weight: 700; letter-spacing: .04em; color: #fca5a5;
-}
+.hero.masthead p.mast-url { display: none !important; }
 .hero-card { background: linear-gradient(180deg, transparent, rgba(11,31,58,0.82)); color: #fff; padding: 28px; }
 .hero-card h1, .hero-card h2 { margin: 0; font-size: 40px; letter-spacing: -0.03em; }
 .hero-card p { margin: 8px 0 0; max-width: 62ch; line-height: 1.5; }
@@ -334,24 +331,15 @@ table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
   .grid, .grid-3, .plusminus, .player-hero, .trade-hits, .trade-board, .starcast-grid { grid-template-columns: 1fr; }
   .player-grid, .facts, .rank-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
-  .hero.masthead, .hero.page-label { min-height: 0; }
+  .hero.masthead, .hero.page-label { height: 120px; min-height: 120px; max-height: 120px; }
   .hero-card { padding: 20px 16px; }
-  .hero.page-label .hero-card { padding: 14px 16px 16px 20px; }
+  .hero.masthead .hero-card, .hero.page-label .hero-card { padding: 12px 12px 12px 16px; }
   .hero-card h1, .hero-card h2 { font-size: 26px; }
-  .hero.page-label .hero-card h2 { font-size: 22px; }
   .hero-card p { max-width: none; }
-  .hero.masthead .mast-art {
-    flex: 0 0 132px;
-    width: 132px;
-    max-width: 38%;
-    height: 64px;
-  }
-  .hero.masthead .mast-art img { height: 64px; }
-  .mast-mark { width: 64px; height: 64px; border-width: 2px; }
-  .hero.page-label .mast-mark { width: 52px; height: 52px; }
-  .hero.masthead p.mast-kicker, .hero.page-label p.mast-kicker { font-size: 10px; }
-  .hero.masthead p.mast-sub, .hero.page-label p.mast-sub { font-size: 12px; }
-  .hero.masthead p.mast-url { display: block; }
+  .mast-row { grid-template-columns: 56px minmax(0, 1fr) 140px; column-gap: 12px; height: 96px; }
+  .hero.page-label .mast-row { grid-template-columns: 56px minmax(0, 1fr); }
+  .hero.masthead .mast-art { width: 140px; height: 72px; }
+  .mast-mark { width: 56px; height: 56px; border-width: 2px; }
   .player-hero img { width: 100%; height: 220px; object-fit: contain; object-position: center bottom; }
   .savant-embed { height: 520px; }
   .desk-only { display: none !important; }
