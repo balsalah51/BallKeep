@@ -207,7 +207,7 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bk/"), image=img, brand="BasketKeep")}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=30" />
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=32" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
 <body>
