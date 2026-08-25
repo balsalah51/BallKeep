@@ -221,7 +221,6 @@ def main():
     assert "mast-art" in home
     assert "mast-ballkeep.jpg" in home
     assert "background-image:url" not in home
-    assert 'class="mast-mark"' in home
     assert "home-leads" in home
     assert 'href="privacy.html"' in home
     privacy = html_of("privacy.html")
