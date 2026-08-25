@@ -63,7 +63,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--red); }
   color: #fff;
   border: 0;
   box-shadow: none;
-  padding: 22px 24px 22px 28px;
+  padding: 0 0 0 28px;
 }
 .hero.masthead .hero-card h2 {
   font-size: 36px;
@@ -72,13 +72,24 @@ nav a:hover, nav a[aria-current="page"] { color: var(--red); }
   text-transform: uppercase;
   font-weight: 900;
 }
-.mast-row { display: flex; align-items: center; gap: 22px; }
+.mast-row { display: flex; align-items: stretch; gap: 16px; width: 100%; min-width: 0; }
 .mast-mark {
   width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
   border: 3px solid #1788c2; background: #fff;
   box-shadow: 0 4px 18px rgba(0,0,0,.28);
+  align-self: center;
 }
-.mast-copy { min-width: 0; }
+.mast-copy { min-width: 0; flex: 0 1 auto; padding: 18px 4px 18px 0; align-self: center; }
+.mast-art {
+  flex: 1 1 48%;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+}
+.mast-art img {
+  display: block; width: 100%; height: 100%; min-height: 148px;
+  object-fit: cover; object-position: center;
+}
 .hero.masthead p.mast-kicker {
   margin: 0 0 6px; max-width: none;
   font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
@@ -360,12 +371,15 @@ table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
   .hero.masthead { min-height: 0; }
   .hero-card { padding: 22px 16px 18px; }
-  .hero.masthead .hero-card { padding: 16px 16px 18px 20px; }
+  .hero.masthead .hero-card { padding: 0 0 0 20px; }
   .hero-card h1, .hero-card h2 { font-size: 28px; }
   .hero.masthead .hero-card h2 { font-size: 26px; }
   .hero-card p { max-width: none; }
   .hero-lead { font-size: 15px; max-width: none; }
-  .mast-row { gap: 14px; }
+  .mast-row { gap: 12px; flex-wrap: wrap; }
+  .mast-copy { padding: 14px 16px 8px 0; }
+  .mast-art { flex: 1 1 100%; }
+  .mast-art img { min-height: 110px; }
   .mast-mark { width: 64px; height: 64px; border-width: 2px; }
   .hero.masthead p.mast-kicker { font-size: 10px; }
   .hero.masthead p.mast-sub { font-size: 12px; }

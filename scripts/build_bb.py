@@ -95,7 +95,9 @@ def masthead(kicker, mark, sub, url="ballkeep.com/bb"):
         f'<span class="mast-rule" aria-hidden="true"></span>'
         f'<p class="mast-sub">{esc(sub)}</p>'
         f'<p class="mast-url">{esc(url)}</p>'
-        f"</div></div></div></section>"
+        f"</div>"
+        f'<div class="mast-art" aria-hidden="true"><img src="../img/mast-ballkeep.jpg" alt="" /></div>'
+        f"</div></div></section>"
     )
 
 
@@ -230,7 +232,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseKeep")}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=27" />
+  <link rel="stylesheet" href="{prefix}css/bb.css?v=28" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
 </head>
 <body>
@@ -1254,7 +1256,7 @@ def write_baseball_site():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home = f"""
-    {masthead("Baseball desk", wordmark(), "The Keep · The Diamond")}
+    {masthead("Baseball rankings", wordmark(), "The Keep · The Diamond")}
     {desk_block("main", "Main", "The Keep and The Diamond.", "Dynasty overall, then the redraft ranking. Everything else on this page supports these.", [
         ("the-keep.html", "The Keep", "Overall dynasty top 400."),
         ("the-diamond.html", "The Diamond", "Redraft ranking. This year only."),
