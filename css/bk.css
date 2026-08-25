@@ -45,6 +45,58 @@ nav a:hover, nav a[aria-current="page"] { color: #ffb347; }
   background: var(--navy) center/cover no-repeat; border: 1px solid var(--line);
   display: grid; align-items: end;
 }
+.hero.masthead {
+  position: relative;
+  min-height: 0;
+  align-items: stretch;
+  background: var(--navy);
+  background-image: none;
+}
+.hero.masthead::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: #f97316;
+}
+.hero.masthead .hero-card {
+  background: transparent;
+  padding: 22px 24px 22px 28px;
+}
+.hero.masthead .hero-card h2 {
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: none;
+}
+.hero.masthead .hero-card h2 .word-keep { margin-left: 0.18em; }
+.mast-row { display: flex; align-items: center; gap: 22px; }
+.mast-mark {
+  width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
+  border: 3px solid #f97316; background: #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,.28);
+}
+.mast-copy { min-width: 0; }
+.hero.masthead p.mast-kicker {
+  margin: 0 0 6px; max-width: none;
+  font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+  color: #fdba74;
+}
+.mast-rule {
+  display: block; width: 56px; height: 3px; margin: 12px 0 10px;
+  background: #f97316; border-radius: 2px;
+}
+.hero.masthead p.mast-sub {
+  margin: 0; max-width: none;
+  font-size: 15px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--cream);
+}
+.hero.masthead p.mast-url {
+  display: none; margin: 8px 0 0; max-width: none;
+  font-size: 12px; font-weight: 700; letter-spacing: .04em; color: #fdba74;
+}
 .hero-card { background: linear-gradient(180deg, rgba(26,18,8,0.2) 0%, rgba(26,18,8,0.82) 50%, rgba(26,18,8,0.96) 100%); color: #fff; padding: 36px 32px 30px; }
 .hero-card h1, .hero-card h2 { margin: 0; font-size: 40px; letter-spacing: -0.03em; text-shadow: 0 2px 16px rgba(0,0,0,0.55); }
 .hero-card p { margin: 8px 0 0; max-width: 62ch; line-height: 1.5; }
@@ -269,9 +321,17 @@ table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
   .grid, .grid-3, .plusminus, .player-hero, .trade-hits, .trade-board, .starcast-grid { grid-template-columns: 1fr; }
   .player-grid, .facts, .rank-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
+  .hero.masthead { min-height: 0; }
   .hero-card { padding: 20px 16px; }
+  .hero.masthead .hero-card { padding: 16px 16px 18px 20px; }
   .hero-card h1, .hero-card h2 { font-size: 26px; }
+  .hero.masthead .hero-card h2 { font-size: 26px; }
   .hero-card p { max-width: none; }
+  .mast-row { gap: 14px; }
+  .mast-mark { width: 64px; height: 64px; border-width: 2px; }
+  .hero.masthead p.mast-kicker { font-size: 10px; }
+  .hero.masthead p.mast-sub { font-size: 12px; }
+  .hero.masthead p.mast-url { display: block; }
   .player-hero img { width: 100%; height: 220px; object-fit: contain; object-position: center bottom; }
   .savant-embed { height: 520px; }
   .desk-only { display: none !important; }

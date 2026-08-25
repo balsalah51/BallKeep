@@ -44,6 +44,60 @@ nav a:hover, nav a[aria-current="page"] { color: #ffd36a; }
   background: var(--navy) center/cover no-repeat; border: 1px solid var(--line);
   display: grid; align-items: end;
 }
+.hero.masthead, .hero.page-label {
+  position: relative;
+  min-height: 0;
+  align-items: stretch;
+  background: var(--navy);
+  background-image: none;
+}
+.hero.masthead::before, .hero.page-label::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: var(--stitch);
+}
+.hero.masthead .hero-card, .hero.page-label .hero-card {
+  background: transparent;
+  padding: 22px 24px 22px 28px;
+}
+.hero.masthead .hero-card h2, .hero.page-label .hero-card h2 {
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.hero.page-label .hero-card h2 { font-size: 28px; }
+.hero.masthead .word-base, .hero.page-label .word-base { color: #fff; }
+.hero.masthead .word-keep, .hero.page-label .word-keep { color: #ffd36a; }
+.mast-row { display: flex; align-items: center; gap: 22px; }
+.mast-mark {
+  width: 88px; height: 88px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
+  border: 3px solid var(--stitch); background: #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,.28);
+}
+.hero.page-label .mast-mark { width: 64px; height: 64px; }
+.mast-copy { min-width: 0; }
+.hero.masthead p.mast-kicker, .hero.page-label p.mast-kicker {
+  margin: 0 0 6px; max-width: none;
+  font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+  color: #fca5a5;
+}
+.mast-rule {
+  display: block; width: 56px; height: 3px; margin: 12px 0 10px;
+  background: var(--stitch); border-radius: 2px;
+}
+.hero.masthead p.mast-sub, .hero.page-label p.mast-sub {
+  margin: 0; max-width: none;
+  font-size: 15px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--cream);
+}
+.hero.masthead p.mast-url {
+  display: none; margin: 8px 0 0; max-width: none;
+  font-size: 12px; font-weight: 700; letter-spacing: .04em; color: #fca5a5;
+}
 .hero-card { background: linear-gradient(180deg, transparent, rgba(11,31,58,0.82)); color: #fff; padding: 28px; }
 .hero-card h1, .hero-card h2 { margin: 0; font-size: 40px; letter-spacing: -0.03em; }
 .hero-card p { margin: 8px 0 0; max-width: 62ch; line-height: 1.5; }
@@ -249,9 +303,19 @@ table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
   .grid, .grid-3, .plusminus, .player-hero, .trade-hits, .trade-board, .starcast-grid { grid-template-columns: 1fr; }
   .player-grid, .facts, .rank-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
+  .hero.masthead, .hero.page-label { min-height: 0; }
   .hero-card { padding: 20px 16px; }
+  .hero.masthead .hero-card, .hero.page-label .hero-card { padding: 16px 16px 18px 20px; }
   .hero-card h1, .hero-card h2 { font-size: 26px; }
+  .hero.masthead .hero-card h2 { font-size: 26px; }
+  .hero.page-label .hero-card h2 { font-size: 22px; }
   .hero-card p { max-width: none; }
+  .mast-row { gap: 14px; }
+  .mast-mark { width: 64px; height: 64px; border-width: 2px; }
+  .hero.page-label .mast-mark { width: 52px; height: 52px; }
+  .hero.masthead p.mast-kicker, .hero.page-label p.mast-kicker { font-size: 10px; }
+  .hero.masthead p.mast-sub, .hero.page-label p.mast-sub { font-size: 12px; }
+  .hero.masthead p.mast-url { display: block; }
   .player-hero img { width: 100%; height: 220px; object-fit: contain; object-position: center bottom; }
   .savant-embed { height: 520px; }
   .desk-only { display: none !important; }

@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 22, 2026"
+UPDATED = "August 25, 2026"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -731,6 +731,22 @@ def wordmark():
     )
 
 
+def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ball Keep circular logo"):
+    return (
+        f'<section class="hero masthead" aria-label="{esc(kicker)}">'
+        f'<div class="hero-card">'
+        f'<div class="mast-row">'
+        f'<img class="mast-mark" src="{esc(logo)}" alt="{esc(alt)}" />'
+        f'<div class="mast-copy">'
+        f'<p class="mast-kicker">{esc(kicker)}</p>'
+        f"<h2>{mark}</h2>"
+        f'<span class="mast-rule" aria-hidden="true"></span>'
+        f'<p class="mast-sub">{esc(sub)}</p>'
+        f'<p class="mast-url">{esc(url)}</p>'
+        f"</div></div></div></section>"
+    )
+
+
 def sources_panel(items, heading="Desks in This Super Aggregate"):
     lis = []
     for name, url, note in items:
@@ -751,12 +767,12 @@ def sources_panel(items, heading="Desks in This Super Aggregate"):
 
 PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
-    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 20."),
+    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 25."),
     ("ESPN — Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
 ]
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
-    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 19."),
+    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 21."),
     ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1–2–3."),
 ]
 
@@ -770,7 +786,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 21, 2026. 50% the four long boards, 50% every other desk that ranked the player. Rank 1 is 12,000 BK Value.",
+        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 25, 2026. 50% the four long boards, 50% every other desk that ranked the player. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -895,7 +911,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep")}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=28" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=29" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1829,10 +1845,9 @@ def main():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home_body = f"""
-    <section class="hero" style="background-image:url('img/hero.jpg')" role="img" aria-label="Night stadium"></section>
+    {masthead("Football desk", wordmark(), "Dynasty · Redraft")}
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
-      <h2>{wordmark()}</h2>
       <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR.</p>
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">
@@ -1920,7 +1935,7 @@ def main():
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR</p>
     <h2>The Board</h2>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 20), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is the other list, one tier down.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 25), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is the other list, one tier down.</p>
     <div class="panel">{rank_table(ppr, ["Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
