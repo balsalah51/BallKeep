@@ -24,6 +24,7 @@ from news_algo import (  # noqa: E402
     tokens,
 )
 from news_scrape import parse_feed  # noqa: E402
+from x_tape import canon_post_url, is_junk_title, looks_like_image_url  # noqa: E402
 
 
 ROSTER = [
@@ -234,6 +235,15 @@ def test_rematch_fills_baseball_players():
     out = rematch_stories(stories, idx)
     assert out[0]["players"][0]["key"] == "aaron judge"
     assert out[0]["players"][0]["slug"] == "aaron-judge"
+
+
+def test_x_tape_skips_google_news_icons_and_profile_pages():
+    assert is_junk_title("Falcons Esports (@FalconsEsport) / Posts / X")
+    assert is_junk_title("Yahoo Fantasy Sports (@YahooFantasy) / Posts / X")
+    assert not is_junk_title("Deshaun Watson driving to the mobile home park")
+    assert not looks_like_image_url("https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw")
+    assert looks_like_image_url("https://preview.redd.it/tewd4o8mwwme1.jpeg?width=640")
+    assert canon_post_url("https://old.reddit.com/r/nflmemes/comments/abc/hi/") == "https://www.reddit.com/r/nflmemes/comments/abc/hi/"
 
 
 def main():
