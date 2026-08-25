@@ -305,9 +305,9 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
   .hero-card h1, .hero-card h2 { font-size: 26px; }
   .hero-card p { max-width: none; }
   .hero.masthead .hero-card { padding: 12px 12px 12px 16px; }
-  .mast-row { grid-template-columns: 56px minmax(0, 1fr) 140px; column-gap: 12px; height: 96px; }
+  .mast-row { grid-template-columns: 56px minmax(0, 1fr); column-gap: 12px; height: 96px; }
   .mast-mark { width: 56px; height: 56px; border-width: 2px; }
-  .hero.masthead .mast-art { width: 140px; height: 72px; }
+  .hero.masthead .mast-art { display: none; }
   .player-hero img { width: 100%; height: 220px; object-fit: cover; object-position: top center; }
   .desk-only { display: none !important; }
   .table-wrap:has(table.rank-table) { overflow: visible; }

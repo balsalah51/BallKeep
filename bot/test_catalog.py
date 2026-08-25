@@ -252,12 +252,14 @@ def main():
     assert "height: 120px" in css
     assert "grid-template-columns: 72px minmax(0, 1fr) 200px" in css
     assert "object-fit: contain" in css
+    assert ".hero.masthead .mast-art { display: none; }" in css
     for sport_css in ("css/bb.css", "css/bk.css", "css/pl.css"):
         sport = Path(sport_css).read_text()
         assert "height: 120px" in sport, sport_css
         assert "grid-template-columns: 72px minmax(0, 1fr) 200px" in sport, sport_css
         assert "object-fit: contain" in sport, sport_css
         assert "max-width: 34%" not in sport, sport_css
+        assert ".hero.masthead .mast-art { display: none; }" in sport, sport_css
     board_html = html_of("board.html")
     assert "2026 Redraft · PPR" in board_html
     assert "<h2>The Board</h2>" in board_html

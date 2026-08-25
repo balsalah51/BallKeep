@@ -913,7 +913,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep")}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=33" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=34" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>

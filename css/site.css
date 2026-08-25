@@ -393,9 +393,9 @@ table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
   .hero-card h1, .hero-card h2 { font-size: 28px; }
   .hero-card p { max-width: none; }
   .hero-lead { font-size: 15px; max-width: none; }
-  .mast-row { grid-template-columns: 56px minmax(0, 1fr) 140px; column-gap: 12px; height: 96px; }
+  .mast-row { grid-template-columns: 56px minmax(0, 1fr); column-gap: 12px; height: 96px; }
   .mast-mark { width: 56px; height: 56px; border-width: 2px; }
-  .hero.masthead .mast-art { width: 140px; height: 72px; }
+  .hero.masthead .mast-art { display: none; }
   .home-leads { grid-template-columns: 1fr; }
   table { font-size: 15px; }
   .trade-hits, .trade-board, .deal-grid { grid-template-columns: 1fr; }

@@ -209,7 +209,7 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep")}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=31" />
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=32" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
 <body>
