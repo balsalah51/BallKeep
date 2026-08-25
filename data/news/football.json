@@ -1,7 +1,7 @@
 {
   "sport": "football",
-  "updated": "2026-08-25T08:23:53Z",
-  "fresh": 450,
+  "updated": "2026-08-25T10:58:02Z",
+  "fresh": 290,
   "stories": [
     {
       "id": "broncos-signing-safety-taylor-rapp-lions-sam-laporta-b590c767",
@@ -1412,12 +1412,26 @@
       "slug": "training-camp-injury-tracking-2026-3c0cee1c",
       "sport": "football",
       "headline": "Training Camp News and Updates for Fantasy Football: Emeka Egbuka Injury, Giants' RB Room and More",
-      "blurb": "Pittsburgh Steelers 2026 Training Camp Injury Report – August 4 #Steelers #NFL #Pittsburgh x.com",
-      "summary": "Garrett Wilson, Chris Olave, Emeka Egbuka, Bo Nix and Tetairoa McMillan: Pittsburgh Steelers 2026 Training Camp Injury Report – August 4 #Steelers #NFL #Pittsburgh x.com Bears 2026 training camp position preview: Tight end Chicago Bears Chicago Bears 2026 Training Camp Preview: Tight End 247Sports Aggregated from x.com, Chicago Bears, 247Sports, nysportsday.com, Yahoo Sports and 10 more.",
+      "blurb": "Seeing the latest NFL training camp injury updates every day x.com",
+      "summary": "Breece Hall, Ladd McConkey, Garrett Wilson, Chris Olave, Emeka Egbuka, Bo Nix and Tetairoa McMillan: Seeing the latest NFL training camp injury updates every day x.com Breece Hall hobbles off field in worrying Jets training camp injury New York Post Chargers’ Ladd McConkey Reveals Crucial Injury Update Ahead of Training Camp heavy.com Aggregated from x.com, New York Post, heavy.com, A to Z Sports, Yahoo Sports and 13 more.",
       "category": "injury",
-      "published": "2026-06-10T07:00:00Z",
+      "published": "2025-08-04T07:00:00Z",
       "updated": "2026-08-24T16:20:11Z",
       "players": [
+        {
+          "key": "breece hall",
+          "name": "Breece Hall",
+          "slug": "breece-hall",
+          "pos": "RB",
+          "team": "NYJ"
+        },
+        {
+          "key": "ladd mcconkey",
+          "name": "Ladd McConkey",
+          "slug": "ladd-mcconkey",
+          "pos": "WR",
+          "team": "LAC"
+        },
         {
           "key": "garrett wilson",
           "name": "Garrett Wilson",
@@ -1622,6 +1636,54 @@
           "kind": "article",
           "snippet": "Garrett Wilson Healthy at Jets 2026 Training Camp nysportsday.com",
           "published": "Wed, 29 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Seeing the latest NFL training camp injury updates every day",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jcWNNUHQtRnNmdEZYVUl3QWUxYTNjN1pFS3JXRGZEVnVEUUtla1VmcHd3aWpPeThSMWtnbWpFVnZkZkhfbE9vRzI2UVppT2lzTmMtcm1FY0lobW1Odm53cmt3?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Seeing the latest NFL training camp injury updates every day x.com",
+          "published": "Thu, 20 Aug 2026 22:00:02 GMT"
+        },
+        {
+          "title": "Breece Hall hobbles off field in worrying Jets training camp injury",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOd1FWeUN3Z0tQYUQ4U0pGLVZQaFlHLXdnakRSbHk2c1ZuSmNnSGRRWXBPZUNKYllKRHI2MWJDcy1JUFJCSDVFeklPY01JeDNVWFY1SXNSNjQtSl9XUzlwUTJKQmxLN0RuQnRwbEdqNk0tSXYzbEJZNnFNV0dfOGlya0NNZElnZnZEbFFybnpKTWYySnlnUFdINmdkVGpaNkc5cndmaXZEZmU?oc=5",
+          "publisher": "New York Post",
+          "kind": "article",
+          "snippet": "Breece Hall hobbles off field in worrying Jets training camp injury New York Post",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chargers’ Ladd McConkey Reveals Crucial Injury Update Ahead of Training Camp",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOHVlaHJ6S1U5eUVHdGZQc0RHeE1wY1ZhUW5kWVcxM1BFcFM4TURnVndaSTdhb2FheU54WHR4QUUweUoxQXhnVnJ6cG13RjVPbUQ5OXFscFVFUUFKNVR4N3lSUGdZYkxIaFZRa0lnZ3dqcndROE9aOXBlc2Z0dUYxelN2bWdLQXNJcm02V09DNHFFbjY5TGlVX1IyMzVLMkJHX21kd2R0U3B1OUVHRl81WURobFYxdURudGdiY243bTk4a0tn?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Chargers’ Ladd McConkey Reveals Crucial Injury Update Ahead of Training Camp heavy.com",
+          "published": "Tue, 28 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Los Angeles Chargers Injury Updates: Every injured player to monitor heading into third NFL training camp under Jim Harbaugh",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUDVFVmFIc1I0NjF0d2UwR0lTYTBmUmlzcEJpRUhZTW5KMmlkMXNLWFo0SDYzTVFEV3prVVNWUkhvVkduSUM5eE11UzF3UEhkRFdKbGhLSVM0MktCWS05dDVFRkpnYzFvNmVDSGxZNjNYS0puamQ3RWdoUVdpV1NRRFhfR3d4Q3VaSEN5TWR0RnlCVnRuQWdXZ3FEYXp6ZnVzLWc4TmJqdkpxQ1d3eHV5aFZkNmFDSFM4UW9CbndrNnhUUUhUZ0pLR002eWdnRFltTTRZ?oc=5",
+          "publisher": "A to Z Sports",
+          "kind": "article",
+          "snippet": "Los Angeles Chargers Injury Updates: Every injured player to monitor heading into third NFL training camp under Jim Harbaugh A to Z Sports",
+          "published": "Tue, 07 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chargers’ Ladd McConkey ‘full go’ for training camp after offseason hamstring injury",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUnFuM3gwaEFzYV8tdFNxdEFoc2QzMXZIUmtJTXgzLWdFR3lSQ25ybnRzZVJTRmw5TU1wYW5jR1ZpOW1TbW5mU09STVNWUzNEbFEyRnYtZy1ZZVlUY01DaDRlNER6SlF4X1RRSGk4ZDJPek9SSjZXSk5ZVTg2MlpjM0RBU2c1TTdBbFNSUnhn?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Chargers’ Ladd McConkey ‘full go’ for training camp after offseason hamstring injury Yahoo Sports",
+          "published": "Tue, 28 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Ladd McConkey, Mekhi Becton injury updates from Chargers training camp",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMWRDbzMwNnlYTHJsVnFiRE9KRWgySHhIQTJiYVMyZFV4Nzh0Skw0U2lvWmFXQXRVYTlmUWpLUjI4aGtkdXZGTTc3dEtxcXhtQ0dDNjFQcWZ2RGh2LWpkMEpEUlBnLXBTU3BzdFBHLURURU1mVHROQ2wxM0JMbFE1bzk0N3VqdkVWLWhnU0JpVzRqUEJaNllteHI1NFUtNll0eGxJ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Ladd McConkey, Mekhi Becton injury updates from Chargers training camp Sports Illustrated",
+          "published": "Mon, 04 Aug 2025 07:00:00 GMT"
         }
       ]
     },
@@ -2243,29 +2305,258 @@
       ]
     },
     {
+      "id": "aaron-glenn-breece-hall-kenyon-sadiq-track-1-e976aa2c",
+      "slug": "aaron-glenn-breece-hall-kenyon-sadiq-track-1-e976aa2c",
+      "sport": "football",
+      "headline": "AFC Notes: Christian Gonzalez, Breece Hall, Injury Updates, Dolphins, Jets, Patriots",
+      "blurb": "Positive injury update for Jets RB Breece Hall Jets Wire",
+      "summary": "Positive injury update for Jets RB Breece Hall Jets Wire Breece Hall Progressing From Groin Injury Draft Sharks Breece Hall Injury: Works on side Monday RotoWire Aggregated from Jets Wire, Draft Sharks, RotoWire, Complex, Yahoo Sports and 12 more.",
+      "category": "injury",
+      "published": "2026-08-17T13:51:13Z",
+      "updated": "2026-08-25T00:09:48Z",
+      "players": [
+        {
+          "key": "breece hall",
+          "name": "Breece Hall",
+          "slug": "breece-hall",
+          "pos": "RB",
+          "team": "NYJ"
+        },
+        {
+          "key": "kenyon sadiq",
+          "name": "Kenyon Sadiq",
+          "slug": "kenyon-sadiq",
+          "pos": "TE",
+          "team": "NYJ"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Aaron Glenn: Breece Hall, Kenyon Sadiq on track for Week 1",
+          "url": "https://sports.yahoo.com/articles/aaron-glenn-breece-hall-kenyon-210559760.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "Jets running back Breece Hall has missed the last week of work with a groin injury, but the team isn't showing much concern about his status for the season opener.",
+          "published": "Mon, 24 Aug 2026 21:05:59 +0000"
+        },
+        {
+          "title": "Aaron Glenn: Breece Hall, Kenyon Sadiq on track for Week 1",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/aaron-glenn-breece-hall-kenyon-sadiq-on-track-for-week-1",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Jets running back Breece Hall has missed the last week of work with a groin injury, but the team isn't showing much concern about his status for the season opener.",
+          "published": "Mon, 24 Aug 2026 17:05:59 -0400"
+        },
+        {
+          "title": "Jets’ Breece Hall, Kenyon Sadiq, D’Angelo Ponds remain on track for Week 1",
+          "url": "https://sports.yahoo.com/articles/jets-breece-hall-kenyon-sadiq-000948485.html",
+          "publisher": "SNY",
+          "kind": "article",
+          "snippet": "Jets head coach Aaron Glenn had a handful of positive injury updates following Monday's practice.",
+          "published": "Tue, 25 Aug 2026 00:09:48 +0000"
+        },
+        {
+          "title": "Positive injury update for Jets RB Breece Hall",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObVUzWVpjbTJNR1hHWmp4ckpicGlVRXk2UGc0X3Q4V2doVERIZ0FFQ0RWbVpCQU9YcHZ3TW9kMndvcVBPakRvNTV3MDg2ZDV2YW5jZ0NlSWxnQXNFazRyM1ZMYlBiVGVoQ3F0ZDQ3OWR5SWhlS19XODlpejM4UWdoMVVpWG5LRVE3SDBqUUI3dG1hMW9RU2p3dWxmN1B1RTlVblVEblhScmpmMDZWdm91LVExSkhLSjNMOWpR?oc=5",
+          "publisher": "Jets Wire",
+          "kind": "article",
+          "snippet": "Positive injury update for Jets RB Breece Hall Jets Wire",
+          "published": "Mon, 24 Aug 2026 22:47:00 GMT"
+        },
+        {
+          "title": "Breece Hall Progressing From Groin Injury",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWDhGUms4Uk9mUHpnYk9NUmtCMlktdGFhc1N1RjRlUmphNjFEbXFvb1JoOE9FTXBZaVlTa2NVeTYwcEVlR3FRbGpkclBpV0Z5MG43ODZPQUNTSURfNnM1anB1YVF5WjM0dTNLUDdHbWtnek1RdlItQ3pRRUdiYUZ1US1jZnRDSXQ1OHpfWnFfeEF0d00zaUg3R0hSN1htUQ?oc=5",
+          "publisher": "Draft Sharks",
+          "kind": "article",
+          "snippet": "Breece Hall Progressing From Groin Injury Draft Sharks",
+          "published": "Mon, 24 Aug 2026 18:21:16 GMT"
+        },
+        {
+          "title": "Breece Hall Injury: Works on side Monday",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVmExNks0MktqZmZnRXRWYjA0eDlTVm82SFNFYkV3QjBOeUppeHpxaTFsUi1PQWU1NnM5R1AxRVg1aGQ2TFR1S0ZTdWlyX0NDaEZZTlhoeHl6LUJ1b3dFRkhhQnR4NmZYZEVYVE1ROURldFZqNE1sM0cwX0J6a1ZxbThqcjFwY3VVX0dpenpZcUlHT3NX?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Breece Hall Injury: Works on side Monday RotoWire",
+          "published": "Mon, 24 Aug 2026 17:11:28 GMT"
+        },
+        {
+          "title": "Breece Hall Injury Update: When Will Jets RB Return?",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE42WmgtNU5NTVhCeVhURGgwMDJUT3QtdmVmT1R2TGdJU0ZuT1haWks1Nm0yZ3ZvR3FLZ0tFSk5fSGZ6eXZSbldKVnB5NUttTlc5YWZGUW93RW1BZm1lSGpCN0VVcUMtWWhPSHdLS3dFNkNVM0c3RUE?oc=5",
+          "publisher": "Complex",
+          "kind": "article",
+          "snippet": "Breece Hall Injury Update: When Will Jets RB Return? Complex",
+          "published": "Fri, 21 Aug 2026 16:26:44 GMT"
+        },
+        {
+          "title": "Breece Hall injury update gives Jets fans optimism after doomsday fear",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRUh3RHpDVDJWM2F0dm5SbjBPSklEa0xOUzQtZFZDR3U4RXFWbkVudEU1Y0NFX1BpeFZzc1B6Z1drdU5hY2lHbDBua2pQSFVvUEVkUE5XZ1B0M2RxN3pKdzVPS1ZsTGZmQXFqaUJLSFlEdGxRa3FGc2F1S2NsS0N6dkl2ZXc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Breece Hall injury update gives Jets fans optimism after doomsday fear Yahoo Sports",
+          "published": "Mon, 17 Aug 2026 15:44:51 GMT"
+        },
+        {
+          "title": "Breece Hall suffers non-contact injury at Jets practice",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQM2tORUotTXlUdTRsRENGaHpTMFhSQzRIc2VBVUM3Nl9xNDIwaTZLVi1haS00cEhuQXVDVHU0X2tSQUR4N2dZeW5HR0dPT01leE9MUGNwcE41WkU3T1VBdC0tTWFkUnpEeXFQQXBNQUp5ZmxRbUQ1eVlpLUtYN3oyUkpfeU55REk?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Breece Hall suffers non-contact injury at Jets practice Yahoo Sports",
+          "published": "Mon, 17 Aug 2026 13:51:13 GMT"
+        },
+        {
+          "title": "Breece Hall injury update as Jets RB goes down untouched at practice",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSm5UZHplMjN2SGMtTkxGVXJrWHU4ZU1BeS1aNnpWaTgzM0JVTEpRbnBCa005a0NXc0RUdFdycnBSMUNGaU9OUFhZQkhSSVg1STJIUXIwSzRfbzJvOVJ0SjNVNDdsei1sV0djLTVuWFZsTG1wZm9KWnc5MHJqMWtibQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Breece Hall injury update as Jets RB goes down untouched at practice Yahoo Sports",
+          "published": "Mon, 17 Aug 2026 14:12:15 GMT"
+        },
+        {
+          "title": "Breece Hall leaves Jets practice with apparent injury",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaWtYbG1pa1dhcjRfNmxwQXBGeFJZSGs3VjZFdUVLTkdHOGJjLTVWMzdqU0czTUhBNGdpXzJnX012dkFTSXV0VW5UQ0FQbjFoU19neFlkVl85UkpydVJNZGd6cUVnNnFUVDhzUk5BTGNIemRHbnZNcHpNLU9rWUVfVWRfWW5TRTRRNG9PNzRCUzNTanhqMXc5aHpLZ0lpTEp4X1NmTldLQzhSRUU3bDN4dk5XVHJoZw?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Breece Hall leaves Jets practice with apparent injury NBC Sports",
+          "published": "Mon, 17 Aug 2026 14:19:06 GMT"
+        },
+        {
+          "title": "Breece Hall Injury Update Throws Cold Water On Jets Fantasy Football Sleeper",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPT2ZfYjRqd1I4VmVQU3FvdVBReUR1T2dZS2hVaTNlY28zRjNNMkVfZEpXWDlGQl9ETlViY1dPRjNpZDAzdmJuWFVYTzdBdXZwbjJ0U1VXUjUzMWdfVDZsUzdIdUhycExmQWR0bktPbG0xdGc3Q1lYZmRpSEJJeVBmZzU1S0RJcDJZZGdQblc4ZG96Mjd1VjJLb3gxRnpnWFdnZUZ3cnJfZ3M5VFZXVm9ydWQzUUR5dkR3?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Breece Hall Injury Update Throws Cold Water On Jets Fantasy Football Sleeper Sports Illustrated",
+          "published": "Tue, 18 Aug 2026 16:21:08 GMT"
+        },
+        {
+          "title": "Aaron Glenn updates Breece Hall injury at Jets practice",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWjR6cVRreEVJN3FhenRKdFBGNEdkZjVJcGQ4TWhOOWpYRlhrV0xsVHRGTnd4MGd0MmZhWFBONXB1Wlo0QnZQZUQ1UVZIWHBxbzBjRmI3WVVWQUhuRkdGTVcya0hXcFBRek5wSWlnX3lxR2NHb3pqdjRpWGJWdnNTcHJuV0FWMEk?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Aaron Glenn updates Breece Hall injury at Jets practice Yahoo Sports",
+          "published": "Mon, 17 Aug 2026 20:29:31 GMT"
+        },
+        {
+          "title": "Jets RB Breece Hall's injury scare gets positive update from Aaron Glenn",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQkZZZU91Tkt5U3BzOTMtdlpQaC1zVVU0eUFydXEwNjZOUjBuVVQ3ZUdqU0pMdkV3eVBJazRpa2FCT1laTDRsQUtSNWZnNjlMT2VPeTAyZV9nUUxER0NJS2M5RjE4LWQwVFZiTmlRWDRXZFFnMXZWUTVya1l2OWVaUG93?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Jets RB Breece Hall's injury scare gets positive update from Aaron Glenn Yahoo Sports",
+          "published": "Mon, 17 Aug 2026 14:31:48 GMT"
+        },
+        {
+          "title": "Jets Learn Injury Timeline for Star RB Breece Hall",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTldDRllsZWlJejRjRVVhTTBpNmpIdDV5bndYczJoamwtS3NnWDcyRW9FZGxmT3lrNXd3V1J1MDdJeDdBZjVlYTJuajh0OE5LS0lCc2hyNnFEUGY4TF95cFpma05pM1JaMW9Xb01OY1d2X0piUFJNb0t5SjFZajB1Um1zUzk4Nlp1aVZDMw?oc=5",
+          "publisher": "Newsweek",
+          "kind": "article",
+          "snippet": "Jets Learn Injury Timeline for Star RB Breece Hall Newsweek",
+          "published": "Tue, 18 Aug 2026 15:33:00 GMT"
+        },
+        {
+          "title": "Jets Star RB Breece Hall Suffers Non-Contact Injury",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPeGROdTlNUXhQaHBGc2VIcnB5SHFtUDVMU09GcTAxRDFIZTl1YUxuNllubERpVE5YaGJtZGxiN2tlVXhvb2lpMVpYS2pNTExOb3k2OU9fXzNwSlA2MVpYdVo4OEhWdHZxMzhpYXR3RU9ZNVhEMklseHo0UDBYT2VjelV6UVlrN0lxSnBCcnF3?oc=5",
+          "publisher": "Newsweek",
+          "kind": "article",
+          "snippet": "Jets Star RB Breece Hall Suffers Non-Contact Injury Newsweek",
+          "published": "Mon, 17 Aug 2026 14:47:00 GMT"
+        },
+        {
+          "title": "Breece Hall Injury: Will watch practice Tuesday",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRDdfSm4zdkRaVlVEdW5BRVY3dHVnY3VhZ01xX2JoZnJSVmwyMUNweTlCOVNlVVZqNW9IS2t0N2hYMnpVcjRRaTdqbnJPSTFhYndtRHV6ZFhvZkc1c0c3TEJhNHhHaHpydWxGWFZjV2ZKN1FyVHZtYXo2MjkzSEFNT0xfZUNHT2xYRW1tdFNYaWcwdmdUUVBRODE4SnN4dw?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Breece Hall Injury: Will watch practice Tuesday RotoWire",
+          "published": "Tue, 18 Aug 2026 14:29:57 GMT"
+        },
+        {
+          "title": "Jets must place Breece Hall in bubble wrap after injury scare",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbkJ6ODdtRE5vMDB4NUxWN3U2eXc5QTF0aWRaeGU0SkNjZG5kckw4RzZCc2cwNjVzMW1VT2ZWU0k2V29oSU1JNkdHWmt3OUZUNUlQQXZaSnNOeDdkNFdLc3hfNmtkNUVnUHNzRzUxdEd1NFdXVUN2UnVIQUE2Q1J1Y0Jn?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Jets must place Breece Hall in bubble wrap after injury scare Yahoo Sports",
+          "published": "Tue, 18 Aug 2026 13:22:45 GMT"
+        },
+        {
+          "title": "AFC Notes: Christian Gonzalez, Breece Hall, Injury Updates, Dolphins, Jets, Patriots",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcmVEVi1vUzFqT25DZXpxWlVMcEs1LVZJdFh0Sk50OVRfMURfOE5KLWxHbGpjcF9ZMllBNUhqRVJUVlJsWmtMMFFSTlk5ZHhpQTl4TkNBNFlXbWd0OGM2cnZIT09NVUVNVjMtOUhVQlZyYW01aWE2dVRCQTQyZndBNjdac2QxVEpEeVlqdnJiMjQ3R3VmSTREdGtWdEo4b3lOLWhKTDExS2k?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "AFC Notes: Christian Gonzalez, Breece Hall, Injury Updates, Dolphins, Jets, Patriots NFLTradeRumors.co",
+          "published": "Mon, 17 Aug 2026 21:30:22 GMT"
+        },
+        {
+          "title": "Breece Hall injury update: What happened to Jets RB in practice?",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRUNiMHhCdmdPR1ZfNjFpM3Z1cUNBaktvZHlYNmJkd1dZOE5KNWN0aEpFNFpXV2hrX0ZNTnFHZjBwclpGcm0tejJmMlh4YXBEYUpfNXZPd19zY3ljWERyVmh2N2xaNFlKdXl6TW8yVTdtZXFJcmVJMzRGQ0hzaUVvSWlfVmI0a0gzVzYzc1BORnVNcnNsM2o4Sm0tdXU1aWdMelJ4ZEItRWJ4aTlsWl9PeGV0UWhQeGx1WXBYVUhyc2sydmM?oc=5",
+          "publisher": "USA Today",
+          "kind": "article",
+          "snippet": "Breece Hall injury update: What happened to Jets RB in practice? USA Today",
+          "published": "Mon, 17 Aug 2026 14:22:00 GMT"
+        },
+        {
+          "title": "Breece Hall Injury: Will be sidelined 2-to-3 weeks",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNmF2WnBoalF0amdNbVBVS3p5b3JQQWI4Q0dmZ3FvOGJyd3FwU25mTlBjN3NOR0hkdWtDdVZWblpLNVFWN3RqRk50Nkc5RXVvQVkwOWxTUDY0bFYwNUc0YlFINDdGVFMwSlp1UjFqR3RwZXZRWHhpVlJPT25IWVA2ZmpoS3plMW9qdkZiTXFodEIxMkJIVXk4bEZEY0JMdy1Wb2c?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Breece Hall Injury: Will be sidelined 2-to-3 weeks RotoWire",
+          "published": "Tue, 18 Aug 2026 14:53:43 GMT"
+        },
+        {
+          "title": "Aaron Glenn Addresses Breece Hall Injury Scare at Jets Practice",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQjY4VTEyTURuQWZ2ZU95cFpmS0RxOUsydko4SGdfdzBYeVJmT3lnekk4RGlYZE9hWXJwenVpSTJKWkdteVhRaHVLVTcxd3pYeXFVbG1FcklIVGZuNHdyOG8yZTF0V2NyOFRzcnZZRG5xRmFiQ285N0tRU29iN1FQTGRhb3M?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Aaron Glenn Addresses Breece Hall Injury Scare at Jets Practice heavy.com",
+          "published": "Mon, 17 Aug 2026 14:44:23 GMT"
+        },
+        {
+          "title": "Jets RB Breece Hall leaves practice with groin injury",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcUwyVjQ1MXFObjVNTEVPN2l3TXJrSUVpY3M0SzNmclVkdWtKNXhWNDU3T0E0QWdGc0QxSDRoS1ZHMkxZQzMwb3F3V1dhOUhseERDeUhESkcwdjFoTDFlTXBVazJDSDZaSkJFTklscFVOTnJPRTliLUVOc2IxSzQwMkpfNHZKbGs4aWd4STQyUlhORXg5ZUk3eTNRVFJrejBvdUNV?oc=5",
+          "publisher": "Southern Sports Today",
+          "kind": "article",
+          "snippet": "Jets RB Breece Hall leaves practice with groin injury Southern Sports Today",
+          "published": "Mon, 17 Aug 2026 20:49:48 GMT"
+        },
+        {
+          "title": "Jets RB Breece Hall leaves practice with groin injury",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxORDZxcm5KczZpUjZreFV0cGl0YUFSQzRLWEhZYTBrd2N1VjN4SWo4M1dxbmJhNHNQVkJlUlF6bWtkMTZId0FkUk5kVkhqVjhoV1hMdmtOeG5wTjVTNmd6VmVfWmVLZm5aREl5TlQ3Nm5yME1WZUxRLTk4c2tBQXpJa2xMU1FOM1dYNWc4UEpkWnY5OWM5cVNHZnlhblVFZw?oc=5",
+          "publisher": "98.1 The Sports Animal",
+          "kind": "article",
+          "snippet": "Jets RB Breece Hall leaves practice with groin injury 98.1 The Sports Animal",
+          "published": "Mon, 17 Aug 2026 14:57:31 GMT"
+        },
+        {
+          "title": "Breece Hall Injury Update Emerges After Leaving Jets Practice",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZk5CMVRUZDdJdFRrckdwb0thRnJjSEREeXc5N3d5blNEc0FpTzZsY0xMRXRLZ1h2Sm12T2dzc2t4TUNDNjRQREFwQnREQ2tocGFPdDN4b3U5dFBrZkszQVBUaFNWZXhySlAxYkJPb0RiTXUyUEhKZmYxN3hQWnRTZlZPTFMtb0E5TGhmXzNLMmZzSkkzQ1RxWVozbzlqYUF3?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Breece Hall Injury Update Emerges After Leaving Jets Practice Athlon Sports",
+          "published": "Mon, 17 Aug 2026 14:52:05 GMT"
+        }
+      ]
+    },
+    {
       "id": "defense-draft-rankings-2026-860a9805",
       "slug": "defense-draft-rankings-2026-860a9805",
       "sport": "football",
       "headline": "49ers take star TE George Kittle off PUP list 10 days before leaving for Australia",
-      "blurb": "49ers’ George Kittle injury update provides massive NFL Week 1 optimism Yahoo Sports",
-      "summary": "49ers’ George Kittle injury update provides massive NFL Week 1 optimism Yahoo Sports Here are our RB fantasy football rankings for 2026. Here are our Kicker rankings for fantasy football as we move through the NFL offseason. Aggregated from Yahoo Sports, YouTube, Fantasy Alarm, x.com, WETM and 1 more.",
+      "blurb": "Ashton Jeanty BREAKING Raiders News!",
+      "summary": "Ashton Jeanty BREAKING Raiders News! The NFL Injury Update Las Vegas Has Been Waiting For YouTube Here are our RB fantasy football rankings for 2026. Aggregated from YouTube, Yahoo Sports, Fantasy Alarm, x.com, WETM and 1 more.",
       "category": "injury",
       "published": "2026-04-27T15:59:28Z",
       "updated": "2026-08-24T15:31:13Z",
       "players": [
-        {
-          "key": "george kittle",
-          "name": "George Kittle",
-          "slug": "george-kittle",
-          "pos": "TE",
-          "team": "SF"
-        },
         {
           "key": "ashton jeanty",
           "name": "Ashton Jeanty",
           "slug": "ashton-jeanty",
           "pos": "RB",
           "team": "LV"
+        },
+        {
+          "key": "george kittle",
+          "name": "George Kittle",
+          "slug": "george-kittle",
+          "pos": "TE",
+          "team": "SF"
         },
         {
           "key": "christian mccaffrey",
@@ -2387,6 +2678,14 @@
           "kind": "article",
           "snippet": "49ers’ George Kittle injury update provides massive NFL Week 1 optimism Yahoo Sports",
           "published": "Sun, 23 Aug 2026 17:22:34 GMT"
+        },
+        {
+          "title": "Ashton Jeanty BREAKING Raiders News! The NFL Injury Update Las Vegas Has Been Waiting For",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBRM0NnTGdqWVJBdzV3ZHhWczQ0Si1aMjJORVZFN3kxaXFsTkY4V29tMEhOeHdxOWxHSEpvVmplSkxSM3dxenN6NUlScnJvUVo3R2hFaGdR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Ashton Jeanty BREAKING Raiders News! The NFL Injury Update Las Vegas Has Been Waiting For YouTube",
+          "published": "Mon, 24 Aug 2026 03:23:31 GMT"
         }
       ]
     },
@@ -3838,6 +4137,74 @@
       ]
     },
     {
+      "id": "eagles-injury-good-devonta-smith-makai-lemon-aba93e96",
+      "slug": "eagles-injury-good-devonta-smith-makai-lemon-aba93e96",
+      "sport": "football",
+      "headline": "Makai Lemon is back but now some other Eagles rookies are sidelined",
+      "blurb": "Eagles news: DeVonta Smith, Makai Lemon off injury report Yahoo Sports",
+      "summary": "Eagles news: DeVonta Smith, Makai Lemon off injury report Yahoo Sports Some good news for the Eagles offense ahead of their last preseason game. Eli Stowers is one of the latest players added to Philadelphia’s injury report. Aggregated from Yahoo Sports, SB Nation, PFT feed.",
+      "category": "injury",
+      "published": "2026-08-24T15:22:00Z",
+      "updated": "2026-08-24T20:05:04Z",
+      "players": [
+        {
+          "key": "devonta smith",
+          "name": "DeVonta Smith",
+          "slug": "devonta-smith",
+          "pos": "WR",
+          "team": "PHI"
+        },
+        {
+          "key": "makai lemon",
+          "name": "Makai Lemon",
+          "slug": "makai-lemon",
+          "pos": "WR",
+          "team": "PHI"
+        },
+        {
+          "key": "eli stowers",
+          "name": "Eli Stowers",
+          "slug": "eli-stowers",
+          "pos": "TE",
+          "team": "PHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Eagles injury update: Good news on DeVonta Smith and Makai Lemon",
+          "url": "https://sports.yahoo.com/articles/eagles-injury-good-news-devonta-152200257.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Some good news for the Eagles offense ahead of their last preseason game.",
+          "published": "Mon, 24 Aug 2026 15:22:00 +0000"
+        },
+        {
+          "title": "Makai Lemon is back but now some other Eagles rookies are sidelined",
+          "url": "https://sports.yahoo.com/articles/makai-lemon-back-now-other-193219955.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Eli Stowers is one of the latest players added to Philadelphia’s injury report.",
+          "published": "Mon, 24 Aug 2026 19:32:19 +0000"
+        },
+        {
+          "title": "Makai Lemon: \"For sure\" I'll be up to speed for Week 1",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/makai-lemon-for-sure-ill-be-up-to-speed-for-week-1",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Eagles wide receiver Makai Lemon returned to practice last week after an extended absence due to a hamstring injury and the rookie is confident that he'll have enough practice time to be at full speed for the season opener.",
+          "published": "Mon, 24 Aug 2026 16:05:04 -0400"
+        },
+        {
+          "title": "Eagles news: DeVonta Smith, Makai Lemon off injury report",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNT2preDhmX3FnV25VR0t6YkEtZllfRzJ5WGNiX0tGbktzVFRPd2ZJN0swcUtZcnl0Nzljc2FYZENOVEpqd3NEMkkwMHFxZXdSOFNVeXBMeHdMa3czUjF2dV95ZWV3SmE0SURKajI4alQxVTkyZUpmWExvamtaSmdXRWJQUGI2bHc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Eagles news: DeVonta Smith, Makai Lemon off injury report Yahoo Sports",
+          "published": "Mon, 24 Aug 2026 16:56:37 GMT"
+        }
+      ]
+    },
+    {
       "id": "browns-now-officially-waived-te-dea-quan-wright-7d6121e3",
       "slug": "browns-now-officially-waived-te-dea-quan-wright-7d6121e3",
       "sport": "football",
@@ -3936,66 +4303,6 @@
           "kind": "article",
           "snippet": "Browns Waiving TE Dae’Quan Wright NFLTradeRumors.co",
           "published": "Sun, 23 Aug 2026 21:00:44 GMT"
-        }
-      ]
-    },
-    {
-      "id": "eagles-injury-good-devonta-smith-makai-lemon-aba93e96",
-      "slug": "eagles-injury-good-devonta-smith-makai-lemon-aba93e96",
-      "sport": "football",
-      "headline": "Makai Lemon is back but now some other Eagles rookies are sidelined",
-      "blurb": "Eli Stowers is one of the latest players added to Philadelphia’s injury report.",
-      "summary": "Makai Lemon, Eli Stowers and DeVonta Smith: Eli Stowers is one of the latest players added to Philadelphia’s injury report. Eagles wide receiver Makai Lemon returned to practice last week after an extended absence due to a hamstring injury and the rookie is confident that he'll have enough practice time to be at full speed for the season opener. Some good news for the Eagles offense ahead of their last preseason game. Aggregated from SB Nation, PFT feed.",
-      "category": "injury",
-      "published": "2026-08-24T15:22:00Z",
-      "updated": "2026-08-24T20:05:04Z",
-      "players": [
-        {
-          "key": "makai lemon",
-          "name": "Makai Lemon",
-          "slug": "makai-lemon",
-          "pos": "WR",
-          "team": "PHI"
-        },
-        {
-          "key": "eli stowers",
-          "name": "Eli Stowers",
-          "slug": "eli-stowers",
-          "pos": "TE",
-          "team": "PHI"
-        },
-        {
-          "key": "devonta smith",
-          "name": "DeVonta Smith",
-          "slug": "devonta-smith",
-          "pos": "WR",
-          "team": "PHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Eagles injury update: Good news on DeVonta Smith and Makai Lemon",
-          "url": "https://sports.yahoo.com/articles/eagles-injury-good-news-devonta-152200257.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Some good news for the Eagles offense ahead of their last preseason game.",
-          "published": "Mon, 24 Aug 2026 15:22:00 +0000"
-        },
-        {
-          "title": "Makai Lemon is back but now some other Eagles rookies are sidelined",
-          "url": "https://sports.yahoo.com/articles/makai-lemon-back-now-other-193219955.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Eli Stowers is one of the latest players added to Philadelphia’s injury report.",
-          "published": "Mon, 24 Aug 2026 19:32:19 +0000"
-        },
-        {
-          "title": "Makai Lemon: \"For sure\" I'll be up to speed for Week 1",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/makai-lemon-for-sure-ill-be-up-to-speed-for-week-1",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Eagles wide receiver Makai Lemon returned to practice last week after an extended absence due to a hamstring injury and the rookie is confident that he'll have enough practice time to be at full speed for the season opener.",
-          "published": "Mon, 24 Aug 2026 16:05:04 -0400"
         }
       ]
     },
@@ -5136,6 +5443,59 @@
       ]
     },
     {
+      "id": "trey-benson-barely-played-waived-injured-so-he-dc5b54a3",
+      "slug": "trey-benson-barely-played-waived-injured-so-he-dc5b54a3",
+      "sport": "football",
+      "headline": "Cardinals waive former third-round RB Trey Benson after 2 injury-riddled seasons",
+      "blurb": "The Cardinals drafted Benson as the potential successor to James Conner in the backfield, but injuries have cut his career in Arizona short.",
+      "summary": "The Cardinals drafted Benson as the potential successor to James Conner in the backfield, but injuries have cut his career in Arizona short. Running back Trey Benson waived/injured by Cardinals nfl.com/news/nfl-news-… x.com Trey Benson has barely played in the NFL and was waived-injured, so he'll revert to Arizona's IR if he's not claimed. Aggregated from Yahoo Sports, x.com.",
+      "category": "injury",
+      "published": "2026-08-24T22:05:00Z",
+      "updated": "2026-08-24T23:07:39Z",
+      "players": [
+        {
+          "key": "james conner",
+          "name": "James Conner",
+          "slug": "james-conner",
+          "pos": "RB",
+          "team": "ARI"
+        },
+        {
+          "key": "trey benson",
+          "name": "Trey Benson",
+          "slug": "trey-benson",
+          "pos": "RB",
+          "team": "ARI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Trey Benson has barely played in the NFL and was waived-injured, so he'll revert to Arizona's IR if he's not claimed. That injury will impact whether he's claimed. He hasn't played at all in this preseason as a knee injury from 2025 lingers.",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBTMXprYUh6YlRYM016T1pjT2tzSW1jUGVNRUtuRHNOYUd5YTZMMWZYcUlxQ3gyZU5LdU1ZY2gwOV8zQXowY083NzZkQ3R0Q1h2b2lSaG03NVhITlk2cHRfaQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Trey Benson has barely played in the NFL and was waived-injured, so he'll revert to Arizona's IR if he's not claimed. That injury will impact whether he's claimed. He hasn't played at all in this preseason as a knee injury from 2025 lingers. x.com",
+          "published": "Mon, 24 Aug 2026 22:32:18 GMT"
+        },
+        {
+          "title": "Cardinals waive former third-round RB Trey Benson after 2 injury-riddled seasons",
+          "url": "https://sports.yahoo.com/nfl/article/cardinals-waive-former-third-round-rb-trey-benson-after-2-injury-riddled-seasons-230739250.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The Cardinals drafted Benson as the potential successor to James Conner in the backfield, but injuries have cut his career in Arizona short.",
+          "published": "Mon, 24 Aug 2026 23:07:39 +0000"
+        },
+        {
+          "title": "Running back Trey Benson waived/injured by Cardinals nfl.com/news/nfl-news-…",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAwRmplY194VHpLX0NGT0s2R2ZISXhPUFdKTHRSLTV3TDBYeVdSMWJBcDZHNDUxY3VZcnFISEZUY01DenBmNmNJRE5KQ0VjSU13ZWFhTElTYUFncFFGZmM5cjdvTQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Running back Trey Benson waived/injured by Cardinals nfl.com/news/nfl-news-… x.com",
+          "published": "Mon, 24 Aug 2026 22:05:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "49ers-christian-mccaffrey-sits-practice-due-tightness-ahead-a50f9ef7",
       "slug": "49ers-christian-mccaffrey-sits-practice-due-tightness-ahead-a50f9ef7",
       "sport": "football",
@@ -5311,112 +5671,6 @@
           "kind": "article",
           "snippet": "49ers Activated TE George Kittle From PUP List NFLTradeRumors.co",
           "published": "Sun, 23 Aug 2026 17:13:52 GMT"
-        }
-      ]
-    },
-    {
-      "id": "aaron-glenn-breece-hall-kenyon-sadiq-track-1-e976aa2c",
-      "slug": "aaron-glenn-breece-hall-kenyon-sadiq-track-1-e976aa2c",
-      "sport": "football",
-      "headline": "Jets’ Breece Hall, Kenyon Sadiq, D’Angelo Ponds remain on track for Week 1",
-      "blurb": "Jets head coach Aaron Glenn had a handful of positive injury updates following Monday's practice.",
-      "summary": "Kenyon Sadiq and Breece Hall: Jets head coach Aaron Glenn had a handful of positive injury updates following Monday's practice. Jets running back Breece Hall has missed the last week of work with a groin injury, but the team isn't showing much concern about his status for the season opener. Aggregated from SNY, ProFootball Talk on NBC Sports, PFT feed.",
-      "category": "injury",
-      "published": "2026-08-24T21:05:59Z",
-      "updated": "2026-08-25T00:09:48Z",
-      "players": [
-        {
-          "key": "kenyon sadiq",
-          "name": "Kenyon Sadiq",
-          "slug": "kenyon-sadiq",
-          "pos": "TE",
-          "team": "NYJ"
-        },
-        {
-          "key": "breece hall",
-          "name": "Breece Hall",
-          "slug": "breece-hall",
-          "pos": "RB",
-          "team": "NYJ"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Aaron Glenn: Breece Hall, Kenyon Sadiq on track for Week 1",
-          "url": "https://sports.yahoo.com/articles/aaron-glenn-breece-hall-kenyon-210559760.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Jets running back Breece Hall has missed the last week of work with a groin injury, but the team isn't showing much concern about his status for the season opener.",
-          "published": "Mon, 24 Aug 2026 21:05:59 +0000"
-        },
-        {
-          "title": "Aaron Glenn: Breece Hall, Kenyon Sadiq on track for Week 1",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/aaron-glenn-breece-hall-kenyon-sadiq-on-track-for-week-1",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Jets running back Breece Hall has missed the last week of work with a groin injury, but the team isn't showing much concern about his status for the season opener.",
-          "published": "Mon, 24 Aug 2026 17:05:59 -0400"
-        },
-        {
-          "title": "Jets’ Breece Hall, Kenyon Sadiq, D’Angelo Ponds remain on track for Week 1",
-          "url": "https://sports.yahoo.com/articles/jets-breece-hall-kenyon-sadiq-000948485.html",
-          "publisher": "SNY",
-          "kind": "article",
-          "snippet": "Jets head coach Aaron Glenn had a handful of positive injury updates following Monday's practice.",
-          "published": "Tue, 25 Aug 2026 00:09:48 +0000"
-        }
-      ]
-    },
-    {
-      "id": "trey-benson-barely-played-waived-injured-so-he-dc5b54a3",
-      "slug": "trey-benson-barely-played-waived-injured-so-he-dc5b54a3",
-      "sport": "football",
-      "headline": "Cardinals waive former third-round RB Trey Benson after 2 injury-riddled seasons",
-      "blurb": "The Cardinals drafted Benson as the potential successor to James Conner in the backfield, but injuries have cut his career in Arizona short.",
-      "summary": "The Cardinals drafted Benson as the potential successor to James Conner in the backfield, but injuries have cut his career in Arizona short. Running back Trey Benson waived/injured by Cardinals nfl.com/news/nfl-news-… x.com Trey Benson has barely played in the NFL and was waived-injured, so he'll revert to Arizona's IR if he's not claimed. Aggregated from Yahoo Sports, x.com.",
-      "category": "injury",
-      "published": "2026-08-24T22:05:00Z",
-      "updated": "2026-08-24T23:07:39Z",
-      "players": [
-        {
-          "key": "james conner",
-          "name": "James Conner",
-          "slug": "james-conner",
-          "pos": "RB",
-          "team": "ARI"
-        },
-        {
-          "key": "trey benson",
-          "name": "Trey Benson",
-          "slug": "trey-benson",
-          "pos": "RB",
-          "team": "ARI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Trey Benson has barely played in the NFL and was waived-injured, so he'll revert to Arizona's IR if he's not claimed. That injury will impact whether he's claimed. He hasn't played at all in this preseason as a knee injury from 2025 lingers.",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBTMXprYUh6YlRYM016T1pjT2tzSW1jUGVNRUtuRHNOYUd5YTZMMWZYcUlxQ3gyZU5LdU1ZY2gwOV8zQXowY083NzZkQ3R0Q1h2b2lSaG03NVhITlk2cHRfaQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Trey Benson has barely played in the NFL and was waived-injured, so he'll revert to Arizona's IR if he's not claimed. That injury will impact whether he's claimed. He hasn't played at all in this preseason as a knee injury from 2025 lingers. x.com",
-          "published": "Mon, 24 Aug 2026 22:32:18 GMT"
-        },
-        {
-          "title": "Cardinals waive former third-round RB Trey Benson after 2 injury-riddled seasons",
-          "url": "https://sports.yahoo.com/nfl/article/cardinals-waive-former-third-round-rb-trey-benson-after-2-injury-riddled-seasons-230739250.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The Cardinals drafted Benson as the potential successor to James Conner in the backfield, but injuries have cut his career in Arizona short.",
-          "published": "Mon, 24 Aug 2026 23:07:39 +0000"
-        },
-        {
-          "title": "Running back Trey Benson waived/injured by Cardinals nfl.com/news/nfl-news-…",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAwRmplY194VHpLX0NGT0s2R2ZISXhPUFdKTHRSLTV3TDBYeVdSMWJBcDZHNDUxY3VZcnFISEZUY01DenBmNmNJRE5KQ0VjSU13ZWFhTElTYUFncFFGZmM5cjdvTQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Running back Trey Benson waived/injured by Cardinals nfl.com/news/nfl-news-… x.com",
-          "published": "Mon, 24 Aug 2026 22:05:00 GMT"
         }
       ]
     },
@@ -5891,6 +6145,68 @@
       ]
     },
     {
+      "id": "chargers-rookie-running-back-omarion-hampton-placed-injured-8dc78193",
+      "slug": "chargers-rookie-running-back-omarion-hampton-placed-injured-8dc78193",
+      "sport": "football",
+      "headline": "Chargers rookie running back Omarion Hampton placed on injured reserve with ankle injury, will miss at least 4 games",
+      "blurb": "Chargers Camp Report: Rookie Omarion Hampton Flashes at Monday's Practice Chargers",
+      "summary": "Chargers Camp Report: Rookie Omarion Hampton Flashes at Monday's Practice Chargers Chargers RB Omarion Hampton (ankle) to injured reserve, will miss at least four games NFL.com Chargers rookie running back Omarion Hampton placed on injured reserve with ankle injury, will miss at least 4 games Yahoo Sports Aggregated from Chargers, NFL.com, Yahoo Sports, Chargers Wire.",
+      "category": "injury",
+      "published": "2025-08-18T07:00:00Z",
+      "updated": "2026-08-24T20:55:00Z",
+      "players": [
+        {
+          "key": "omarion hampton",
+          "name": "Omarion Hampton",
+          "slug": "omarion-hampton",
+          "pos": "RB",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Chargers RB Omarion Hampton (ankle) to injured reserve, will miss at least four games",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zdzhQMXNGcld5am9ieGJxd3FadTJFSkR6ZllCdE9WcEJkQklyNS11Tkxfc1B3UC03OHA3SmEyX253NGFDVmJUX2ZNcThhUlAzQkkzUFZia3J0WU1pV2NsbWNNNjFDcUNFMEg1LXJlSnRJUHRjT1RSQ3BDbTk1UUU?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "Chargers RB Omarion Hampton (ankle) to injured reserve, will miss at least four games NFL.com",
+          "published": "Mon, 06 Oct 2025 21:12:38 GMT"
+        },
+        {
+          "title": "Chargers rookie running back Omarion Hampton placed on injured reserve with ankle injury, will miss at least 4 games",
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPaXdOVTQtOVZCV1pwQmRUSmVxWlhEYlAxZW8ySkNRb2MzQWpvdmJPRGQ2U0pjT2JCUFRWdlJXMXdJWnl2Tndkb2ZSN3F2TjVwRGxtMmsydjdMNUxOQnpMZ04tdFcxQ24xcnZ0amVaejNkRUxZdFpBWmNzU1R0b2dpRzUxdjR3Z0JsU3RSa2tZSWpLWmd3anVsamJmX1ZJZTAtZHNFaTFnMVJYZVg0WWp4UXVlc1pITEFVUmRSNEhzZUNUUDFscGR1dTBOUXFLcnBwYzVzLXhZSmN1TDQtWUdIU0JwSmgzOHNLU3F6U2ZrY09SSWJDWkcybVVPazZFZVZzOGZmaWk1OWNicjJxVWc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Chargers rookie running back Omarion Hampton placed on injured reserve with ankle injury, will miss at least 4 games Yahoo Sports",
+          "published": "Mon, 06 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Can Omarion Hampton be guy for Chargers after injury-riddled season?",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPX1ZyYjhxQ09mWFc3RW5TdkgtQVFmTl9TTzliT0dEWjh2V0padXkzY3R6Mkw4b0Y1R084UWFDYjBOaTBIMjdaU1dORkJHRUVLdlFDUEFGM1B4dlV2SkxHMGJ1UDUyeFNiRjdBVF83LUZ2bkx0QjFtQXNlMW5Jb1B5RDZRSEU5QXRhQ3dLZmpMTmJVZGV3TWhWSW9GazBkRmVIOG1fanNBLVhPakRDcDduZ041VlhXeVRxYVplS2dhcktIcXNNcmpTdVhZWXR0SjhTaTFJTkNB?oc=5",
+          "publisher": "Chargers Wire",
+          "kind": "article",
+          "snippet": "Can Omarion Hampton be guy for Chargers after injury-riddled season? Chargers Wire",
+          "published": "Mon, 24 Aug 2026 20:55:00 GMT"
+        },
+        {
+          "title": "Chargers to activate rookie RB Omarion Hampton (ankle) from injured reserve ahead of Eagles game",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTzJkdzhMTV9ZVW5RU3pGVDRWcFpDS0JWRDg0WjBUdWdGLWVIRG12VWNQX3k3MmNCcDJnWmpoWVY3dm9hOGV4Qk5ZcmNrQUgwODBUeWctZ2ZWM2FoNjIxRGpRTC0xVDZMWk5MZmJiRm56ZnR3WUZVNlpIVVVWekVDeFZlMUxDa0w3OVpqN25PWFoyRlVKN2VSVnZuc0tMdw?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "Chargers to activate rookie RB Omarion Hampton (ankle) from injured reserve ahead of Eagles game NFL.com",
+          "published": "Sun, 07 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Chargers Camp Report: Rookie Omarion Hampton Flashes at Monday's Practice",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9oWEhKNlFFYVZrVVA0VGhFWjRkaUo5b3l2enVyQk1jcnRwTlFITHZqTndQM0cwamp3MnN4aDdKOXVjWXA0eXhOYVQzeWNCMlRqMGpYSmx3elEtWElselhYc1UwLTNGNTBDbERkajN1R1NGd1F3U1BZOGhn?oc=5",
+          "publisher": "Chargers",
+          "kind": "article",
+          "snippet": "Chargers Camp Report: Rookie Omarion Hampton Flashes at Monday's Practice Chargers",
+          "published": "Mon, 18 Aug 2025 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "2026-chicago-bears-training-camp-intel-9d7a2136",
       "slug": "2026-chicago-bears-training-camp-intel-9d7a2136",
       "sport": "football",
@@ -6028,6 +6344,302 @@
           "kind": "article",
           "snippet": "Chicago Bears training camp update: Caleb Williams shows signs of growth in first practice Shaw Local",
           "published": "Wed, 29 Jul 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "michael-penix-participates-everything-else-you-need-know-73651430",
+      "slug": "michael-penix-participates-everything-else-you-need-know-73651430",
+      "sport": "football",
+      "headline": "Michael Penix participates, and everything else you need to know from Monday’s Falcons practice",
+      "blurb": "Look Who’s Back: Everything You Need to Know About Practice 5 of Packers OTAs Sports Illustrated",
+      "summary": "Michael Penix Jr. and Tua Tagovailoa: Look Who’s Back: Everything You Need to Know About Practice 5 of Packers OTAs Sports Illustrated Everything You Need to Know About Practice 4 of Packers Training Camp Sports Illustrated Here’s everything you need to know from Monday’s practice and Michael Penix Jr.‘s status. Aggregated from Sports Illustrated, SB Nation, PFT feed.",
+      "category": "practice",
+      "published": "2026-06-02T07:00:00Z",
+      "updated": "2026-08-24T20:50:35Z",
+      "players": [
+        {
+          "key": "michael penix",
+          "name": "Michael Penix Jr.",
+          "slug": "michael-penix",
+          "pos": "QB",
+          "team": "ATL"
+        },
+        {
+          "key": "tua tagovailoa",
+          "name": "Tua Tagovailoa",
+          "slug": "tua-tagovailoa",
+          "pos": "QB",
+          "team": "ATL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Michael Penix participates, and everything else you need to know from Monday’s Falcons practice",
+          "url": "https://sports.yahoo.com/articles/michael-penix-participates-everything-else-205035261.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Here’s everything you need to know from Monday’s practice and Michael Penix Jr.‘s status.",
+          "published": "Mon, 24 Aug 2026 20:50:35 +0000"
+        },
+        {
+          "title": "Kevin Stefanski: Michael Penix, Tua Tagovailoa to split first-team reps in practice",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kevin-stefanski-michael-penix-tua-tagovailoa-to-split-first-team-reps-in-practice",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "After being cleared for all football activities, Falcons quarterback Michael Penix Jr. is set to truly enter Atlanta’s quarterback competition.",
+          "published": "Mon, 24 Aug 2026 15:48:54 -0400"
+        },
+        {
+          "title": "Look Who’s Back: Everything You Need to Know About Practice 5 of Packers OTAs",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVkUwNU14RTNJZ000eFloQ2RLS0RaZS1faWFvYVVhNGpkSG5SZHFud2dwQl82UnpwcHdKUkxjYmZWZTg3TjB5MFpDN1hQeXNhdnVlMXFvenFSR3JabU1uRUs0dTFCS05pVkViLWVvUTNWWGhqekNCbXdueXV4UG9lRWYyYmNHZVZwOF9PT0FveWhJSGh2bklWdkFCUlpRTWZrWkE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Look Who’s Back: Everything You Need to Know About Practice 5 of Packers OTAs Sports Illustrated",
+          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Everything You Need to Know About Practice 4 of Packers Training Camp",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbklwSkZmMjJXa0FUTW1WLUJocUpjWndpeUNiUGZPd0hOUXRrMm1sX29wRmZadTBYSjItNDNXbkpZZFNmY09qZXdSUDVWOFpzZXZNM1I0UHVvdzBRanhXUzBNZzU2dktRcFo5Z2FhaktNOWJhUGk5d3JGejh6Y1ktM0VqNXRWTkNIX0tONXIwVTZibWd5OXMzT1RWNy05TDJVNVU1R2lNd2Q?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Everything You Need to Know About Practice 4 of Packers Training Camp Sports Illustrated",
+          "published": "Sun, 02 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "who-should-i-draft-outlooks-trevor-lawrence-jalen-d2aa2430",
+      "slug": "who-should-i-draft-outlooks-trevor-lawrence-jalen-d2aa2430",
+      "sport": "football",
+      "headline": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Tyler Shough, Lamar…",
+      "blurb": "Who Should I Draft for Fantasy Football?",
+      "summary": "Trevor Lawrence, Lamar Jackson, Tyler Shough, Kyler Murray, Jalen Hurts, Jaxson Dart, Jordan Love, Josh Allen, Drake Maye and Bo Nix: Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Tyler Shough, Lamar Jackson, Josh Allen, Bo Nix, Drake Maye, Jordan Love RotoBaller Desk reading of RotoBaller.",
+      "category": "wire",
+      "published": "2026-08-24T12:05:18Z",
+      "updated": "2026-08-24T12:05:18Z",
+      "players": [
+        {
+          "key": "trevor lawrence",
+          "name": "Trevor Lawrence",
+          "slug": "trevor-lawrence",
+          "pos": "QB",
+          "team": "JAX"
+        },
+        {
+          "key": "lamar jackson",
+          "name": "Lamar Jackson",
+          "slug": "lamar-jackson",
+          "pos": "QB",
+          "team": "BAL"
+        },
+        {
+          "key": "tyler shough",
+          "name": "Tyler Shough",
+          "slug": "tyler-shough",
+          "pos": "QB",
+          "team": "NO"
+        },
+        {
+          "key": "kyler murray",
+          "name": "Kyler Murray",
+          "slug": "kyler-murray",
+          "pos": "QB",
+          "team": "MIN"
+        },
+        {
+          "key": "jalen hurts",
+          "name": "Jalen Hurts",
+          "slug": "jalen-hurts",
+          "pos": "QB",
+          "team": "PHI"
+        },
+        {
+          "key": "jaxson dart",
+          "name": "Jaxson Dart",
+          "slug": "jaxson-dart",
+          "pos": "QB",
+          "team": "NYG"
+        },
+        {
+          "key": "jordan love",
+          "name": "Jordan Love",
+          "slug": "jordan-love",
+          "pos": "QB",
+          "team": "GB"
+        },
+        {
+          "key": "josh allen",
+          "name": "Josh Allen",
+          "slug": "josh-allen",
+          "pos": "QB",
+          "team": "BUF"
+        },
+        {
+          "key": "drake maye",
+          "name": "Drake Maye",
+          "slug": "drake-maye",
+          "pos": "QB",
+          "team": "NE"
+        },
+        {
+          "key": "bo nix",
+          "name": "Bo Nix",
+          "slug": "bo-nix",
+          "pos": "QB",
+          "team": "DEN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Tyler Shough, Lamar Jackson, Josh Allen, Bo Nix, Drake Maye, Jordan Love",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNaFRrVkxSellzVS1xTWpvT3VhVzdIdW9BWi1ObDYyNlR6VVhLY0FRNUdvdC1BU0thY1Z5b2YyaC0zR3JmY0V1UDhraElqTy1NMTJpUWMwNFVZbk5pQlZFa0FCVGliOWdBV05zYVJpdHc1R0Y1SHZUNVplR0dUZmdNMFZCU2Q4T3dtVXM1V3EwZHpsdldsQ09UaGRZaXM1cXNUc2xJSHFDakJCVkRqaWt5c19fbW43RVdDV181LVc3ZEFuSjVLNUlGYkM4Ul9GSnI4c1Y5Q0xhSXZFaHJjQXk4b0xsZTlsWTlpQ0ZWV1pCLW9qWTBRMG8yTTJ2UHpnVnlSb0Z3a2ZVMjNweWVQTDdaQWFuYVZrRVR3N0p3Nmkxb3hHcFNmSk5lcE1FNmluWEpHSlE?oc=5",
+          "publisher": "RotoBaller",
+          "kind": "article",
+          "snippet": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Tyler Shough, Lamar Jackson, Josh Allen, Bo Nix, Drake Maye, Jordan Love RotoBaller",
+          "published": "Mon, 24 Aug 2026 12:05:18 GMT"
+        }
+      ]
+    },
+    {
+      "id": "patrick-mahomes-cleared-practice-chiefs-qb-play-1-6c85039e",
+      "slug": "patrick-mahomes-cleared-practice-chiefs-qb-play-1-6c85039e",
+      "sport": "football",
+      "headline": "Patrick Mahomes confirms desire to play in Chiefs preseason, expects to firmly return by Week 1",
+      "blurb": "NFL news roundup: O'Cyrus Torrence gets $78.4M; Patrick Mahomes unlikely to play in preseason NFL.com",
+      "summary": "NFL news roundup: O'Cyrus Torrence gets $78.4M; Patrick Mahomes unlikely to play in preseason NFL.com Schefter: Mahomes (knee) on track to play Week 1 NBC Sports Reid: Mahomes unlikely to play in Chiefs' preseason opener ESPN Aggregated from NFL.com, NBC Sports, ESPN, FantasyPros, USA Today and 7 more.",
+      "category": "injury",
+      "published": "2026-07-18T07:00:00Z",
+      "updated": "2026-08-24T03:32:00Z",
+      "players": [
+        {
+          "key": "patrick mahomes",
+          "name": "Patrick Mahomes",
+          "slug": "patrick-mahomes",
+          "pos": "QB",
+          "team": "KC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Schefter: Mahomes (knee) on track to play Week 1",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaFpfTWowbHctU0tTTm1VT3QyZldMSm4xeTVsdWRIRTYyRzN5VnA2aWM2YkpRMndrNC1ELXM2YnhsTm9FZFBuZDM3alZvbHZNdUs1NmRRSERoNXFJMkZDd1V0aFVsX1BtSFI2QzVRblZ2cUlsMGpKOHFBSDFNNmZtWmk5N1VNdmFZc2dWTzVqOV9yS3JhVjdXazZmWUV3djY1N0FTQ2YycEpPSG1NTTBacA?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Schefter: Mahomes (knee) on track to play Week 1 NBC Sports",
+          "published": "Fri, 21 Aug 2026 19:02:40 GMT"
+        },
+        {
+          "title": "Reid: Mahomes unlikely to play in Chiefs' preseason opener",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXpXT2pMTmNqSnJJUVFESzk2Qzg2eGI5OUs4amxWNW5nclBRbldiYVU5dnBpMWh2WTVrZnlzQUhnWXRsMlVXYzBEZ1N3WmVxRkNPSHIwTDY3eE9lYm5adW5qNEJUU1J3VUcyTXBMRUxmdVU3ZzhRc05HbDFhaHdsd3RHbml4STBCcEpLbWVjTmlqNHp1aGVkaFdyVQ?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Reid: Mahomes unlikely to play in Chiefs' preseason opener ESPN",
+          "published": "Fri, 07 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Will Patrick Mahomes Play Week 1? (2026 Fantasy Football)",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdm5OSmxGRm9mbWd6R183MzYzS0Q1MlllTmdmSXJEUlhIaFdOR0dSZTN5NTJxNUhCNlg2QnBtSG16a0M5QzVJUy1DT05mMXdrVDJDbFpDaUJ3RnhkejBGM2VTTnA2TTczYnNOWFFsYm5uRTF0QWQtel9LZ2FQLWhSSHRyQkdqUm5qX0hjZU0wbUU4STRVdHfSAZsBQVVfeXFMTXRGQjRqd0Z0NC13aVp3bkRfZ1lCZU5ENkZsaE05VDdRSWVVOW5CcEMxRlZ4SHJreS1BTEYweGlRU2NheUZZd0hrQ1BvMjh1NmpobklkdzZPSTJRTWhiYnM2Rl9NNGNpRmxsQjhNZDRlbUxyc2dqZGt0NzFIVndzODNVYlFuRTc0QlYyTXc5UzBKd19Kc28xYUVWM1k?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Will Patrick Mahomes Play Week 1? (2026 Fantasy Football) FantasyPros",
+          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Patrick Mahomes is cleared to practice. Will Chiefs QB play Week 1?",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSXZwSDBVWkxiMUN3VlF5TUlBNFdYR3psamNKd2dVdkdlQzlJbXlfaXFoMHZEYkRHVHRQTklyc0x1OXc1ZWllMjN0UDZxLURkdnJ4cHo4LTJmZ3NyN0QyREsyVENlVm1fVUlqbElDdmlJeFl5YkRvWjlHWUlZQ3U2SHU0SXp6WnNYQk1ibE9PLTlKOG5UbHFpS3RzYlBBQVBQalZIamhwdS1HWjROSVR0QkV0Zw?oc=5",
+          "publisher": "USA Today",
+          "kind": "article",
+          "snippet": "Patrick Mahomes is cleared to practice. Will Chiefs QB play Week 1? USA Today",
+          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Patrick Mahomes ready to play in preseason? He says yes, Chiefs aren't sure yet",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQTF9yUDYwSlF0UFpuaVZOWjVGb2JkejVpN2t5MU9QMF9mbFQ3NUJxakphRWlTVWM3RTF2NHF5RzBJNjROaF9OWXF1V29pRHNEZjl0Xzh6MDVXRGxvWUg1WXhrUUZvR1c0LUpQeUsyMUE2a3Q4Zml2cUxRSGJWSjR5b1llalNqYkp4T05LNmdYTkJUdEhaUUZOb1VFR1VYdDlCWW5VZHJGNU82LXRjTmswYVRLYWlSSzFtREd2Rm82am5VVjdhY2w3YVk0blNmZXJGcFg4SFBTN2I2ekZqLUplLWFka0t5SW5XendsYVpR0gHzAUFVX3lxTE9rZ0ZiVll2YmN5ZjduV2NseHVBTG1fczZieU1mOFQ0cnBKMVN0NzB3TkhCSEoyVDhhVVVtM1RicktyU2FZcWx1eXg4SmFNM0RXVzdOTklTUllHaU9qUkJucFdhQ0ZFcmd4OHkzblUxY3JhdHdJM2NmTGN6SldoMVRkeTFRUWhiUHp5T2g0QTZKVzVHU1BIUEloNGVBdnVUQS12eTh4OVdFektfRjZCeFZydkZwVDBGVUt0a0RkeUlpQXZhbjZWX1AtR0FSMkdNOXc4dGlLSjBwWHVLMzN1b0xCS25zdEVDSnAwMXo4VEp4V3oyTQ?oc=5",
+          "publisher": "The Times of India",
+          "kind": "article",
+          "snippet": "Is Patrick Mahomes ready to play in preseason? He says yes, Chiefs aren't sure yet The Times of India",
+          "published": "Mon, 24 Aug 2026 03:32:00 GMT"
+        },
+        {
+          "title": "Chiefs QB Patrick Mahomes 'Confident' in Return Date Ahead of NFL Season",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUWVQYThMd0dWZVdGNmdPc1d3U2U5Y2VSekU2RFdDVDg5UHdpeFFQZmIwNlVoZmdzd0NXSHBaQnA5VlNqQVpYdmZXNnpfMmVpd3ZHbmRIMUxPSHBSZDJhaDFsVFZBWlZSRnRsazJPdXVNT1JNQV9IbmJDYlBfX1FuaFZna1BZRi15M2RScQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Chiefs QB Patrick Mahomes 'Confident' in Return Date Ahead of NFL Season Yahoo Sports",
+          "published": "Sun, 23 Aug 2026 04:41:23 GMT"
+        },
+        {
+          "title": "Chiefs QB Patrick Mahomes Raises Concern With Actions at Practice",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMVFET0s0aTczMmUyeExXcmZVT2JNS0xXTjFyTWVDWDJkcnVDRnVkRXpPOE5rSmo1XzhuYmZjbjBiVkw3ckdoSnpsTmk5RUZNcmVXd2QzWDFRaWd1bFFDdXlORUpBNlRQRkVyRExwWW5vZVN4eWFiamdGZHpzbnNaNHUtREdHU251?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Chiefs QB Patrick Mahomes Raises Concern With Actions at Practice Yahoo Sports",
+          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Patrick Mahomes confirms desire to play in Chiefs preseason, expects to firmly return by Week 1",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdWhOQ0F4cmVscmZHVHdYNzBpRnNVUDVYUDh0VHJ6Ym13ZzFrVnFRc1lyZUxBeFRHR1RMbE5kQ05zay1tUUs4bmZac2JxaXpEZjJqdnRZbmpYdEJab1NWSEdqVmc5WjFkM0lSRnVQbGVUTzJ3WW9PM1VhbUtua1U5dWVfUUozdXpBSmpraTluaklEZkM3N3h3RGZlcXdOMDQ1UURzci1Jc3BDOVdtUUtWbS1Id1FqMEU?oc=5",
+          "publisher": "hitc.com",
+          "kind": "article",
+          "snippet": "Patrick Mahomes confirms desire to play in Chiefs preseason, expects to firmly return by Week 1 hitc.com",
+          "published": "Sun, 23 Aug 2026 02:02:57 GMT"
+        },
+        {
+          "title": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPblFWVFpaQ012NkUtQmRwRFBhM1VjVUZiS0VLN2pDbXE5YTZvaUFUU3A3Y24yUkg1Wk5QRFctTEdFNC1ySThLTXJYZnJ1cXVWWDB3V0c5ZjI0LW5yTTQ1Mm05VDB0dmVPWHpIZEg0MVZUUDF6Ti1jcFQxUS1jcXNWeWhXdUZBczhvYkd1T0pka0tBenpSdEtTX0llOXNqTnp2LUNrZ05XT09sdHRrVzZjc2lITQ?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season Athlon Sports",
+          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Patrick Mahomes Injury Update: Chiefs QB's Fantasy Stock On The Rise With Latest News",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdWtFZlZnUE1nY1dHWHoyUFJ4ZkpMcldUb3pBY0hyeDhwTjZld0VodzlZaFR4MW1NSGR2Q3l2enZiWUNXZ2dQRUdNOE1vS3V2X1N5a2FibnpBVGtrU3pIT2pMb2ZaUWNYcS1pWUZQR3dnRDNiN0dad1FrZDBPRWxXem84d3ZESU41VFhrZm82S0xfbElFa3lPZ0JCMEFYYzlqWVBZYzYzYzIyR2p2TWFiUURYS3ZaSUhEUTFibDFzMzE5ejg?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Patrick Mahomes Injury Update: Chiefs QB's Fantasy Stock On The Rise With Latest News Sports Illustrated",
+          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Three Patrick Mahomes observations from early Chiefs practices",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSXlLRHF5XzNnYU1WMXJ6THJDdnc5X0lXeDRZVUJyY2ZQLWhEN2IwUkVrSzQxTjdqbk44TTl3YURDUFZSYjQwN2VTZTRFRGh6YloxT3JQRWRNSk9ubmlJUTZiTzI5RTJQempUcENpcHlMemtkNHdfZm91LTRobnpxUTdqbTB1NGxqUmcyUVY5eXNLSko3U3ZhRFJWUUJGcTFyTVVNOQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Three Patrick Mahomes observations from early Chiefs practices - The Athletic The New York Times",
+          "published": "Tue, 28 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chiefs Predicted to Make Unprecedented Decision on QB Patrick Mahomes",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUHhHVDg3c1ctTl9qYXdmNU1BakVobHlvZ1lUQTB5Wmd1YlpNRV9xZndKSTYxZnkzMjFYSlpfM0F2MkJvSFZpMmVBYS1TOEp1NG9ta0NxWm9MLS1zRERjYm43Ym1TWlBTeVMzanYzOHJTVXJQOHhqaTFEcmNRV2FLNFdEYmFlcUU1blZTdkxXbVJ0cjdRSmc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Chiefs Predicted to Make Unprecedented Decision on QB Patrick Mahomes Yahoo Sports",
+          "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "18: Patrick Mahomes (QB, Chiefs) | Top 100 Players of 2026",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lT1hhVDdMWlRqOTJLRjlKRUxwZ2VfYnQ0NVlaRV9NVmxGMU05TkRpVmgybUdyWHJTS0JoUFhWUU85RkpQRzRmVVNLNm1Cb2JkMlNOejFn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "18: Patrick Mahomes (QB, Chiefs) | Top 100 Players of 2026 YouTube",
+          "published": "Sun, 23 Aug 2026 14:00:18 GMT"
+        },
+        {
+          "title": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObG9QLWc1bmxvdFc5LXJzNjJMRXV5Y3g2dFotb1NEN3ZXMHd0WjZ4dFByXzhMeV9la1dZQXk4bm5iRTRfdTVSMkxkR3VMc2JZdU9FNFBnOUh5Rjc1WE15c1pjTlI3UkkxZXNDUWxCZ0NOSW5FbnUxSTJRUVVqQnlqeHRMMnA1UDVv?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season Yahoo Sports",
+          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NFL news roundup: O'Cyrus Torrence gets $78.4M; Patrick Mahomes unlikely to play in preseason",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZzJyb19pOWNEbnNQR055dVd5SjVVNk1BUjMzTUxDcUwxNWVnbEZuX0pDMHpGTUhfMUcwc3dDUUpSVS1qanlueFF0TE1SWTRvVllQdzVqeXhjaTBmN250Q2JEU3NiejVINU81T04tZE5XOHh1Nm5JOXdscDBZZXBwaEY2RFpjQWwz?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "NFL news roundup: O'Cyrus Torrence gets $78.4M; Patrick Mahomes unlikely to play in preseason NFL.com",
+          "published": "Fri, 07 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -6241,298 +6853,167 @@
       ]
     },
     {
-      "id": "michael-penix-participates-everything-else-you-need-know-73651430",
-      "slug": "michael-penix-participates-everything-else-you-need-know-73651430",
+      "id": "3-wr3s-wr1-potential-2026-f152f10d",
+      "slug": "3-wr3s-wr1-potential-2026-f152f10d",
       "sport": "football",
-      "headline": "Michael Penix participates, and everything else you need to know from Monday’s Falcons practice",
-      "blurb": "Look Who’s Back: Everything You Need to Know About Practice 5 of Packers OTAs Sports Illustrated",
-      "summary": "Michael Penix Jr. and Tua Tagovailoa: Look Who’s Back: Everything You Need to Know About Practice 5 of Packers OTAs Sports Illustrated Everything You Need to Know About Practice 4 of Packers Training Camp Sports Illustrated Here’s everything you need to know from Monday’s practice and Michael Penix Jr.‘s status. Aggregated from Sports Illustrated, SB Nation, PFT feed.",
-      "category": "practice",
-      "published": "2026-06-02T07:00:00Z",
-      "updated": "2026-08-24T20:50:35Z",
-      "players": [
-        {
-          "key": "michael penix",
-          "name": "Michael Penix Jr.",
-          "slug": "michael-penix",
-          "pos": "QB",
-          "team": "ATL"
-        },
-        {
-          "key": "tua tagovailoa",
-          "name": "Tua Tagovailoa",
-          "slug": "tua-tagovailoa",
-          "pos": "QB",
-          "team": "ATL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Michael Penix participates, and everything else you need to know from Monday’s Falcons practice",
-          "url": "https://sports.yahoo.com/articles/michael-penix-participates-everything-else-205035261.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Here’s everything you need to know from Monday’s practice and Michael Penix Jr.‘s status.",
-          "published": "Mon, 24 Aug 2026 20:50:35 +0000"
-        },
-        {
-          "title": "Kevin Stefanski: Michael Penix, Tua Tagovailoa to split first-team reps in practice",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kevin-stefanski-michael-penix-tua-tagovailoa-to-split-first-team-reps-in-practice",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "After being cleared for all football activities, Falcons quarterback Michael Penix Jr. is set to truly enter Atlanta’s quarterback competition.",
-          "published": "Mon, 24 Aug 2026 15:48:54 -0400"
-        },
-        {
-          "title": "Look Who’s Back: Everything You Need to Know About Practice 5 of Packers OTAs",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVkUwNU14RTNJZ000eFloQ2RLS0RaZS1faWFvYVVhNGpkSG5SZHFud2dwQl82UnpwcHdKUkxjYmZWZTg3TjB5MFpDN1hQeXNhdnVlMXFvenFSR3JabU1uRUs0dTFCS05pVkViLWVvUTNWWGhqekNCbXdueXV4UG9lRWYyYmNHZVZwOF9PT0FveWhJSGh2bklWdkFCUlpRTWZrWkE?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Look Who’s Back: Everything You Need to Know About Practice 5 of Packers OTAs Sports Illustrated",
-          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Everything You Need to Know About Practice 4 of Packers Training Camp",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbklwSkZmMjJXa0FUTW1WLUJocUpjWndpeUNiUGZPd0hOUXRrMm1sX29wRmZadTBYSjItNDNXbkpZZFNmY09qZXdSUDVWOFpzZXZNM1I0UHVvdzBRanhXUzBNZzU2dktRcFo5Z2FhaktNOWJhUGk5d3JGejh6Y1ktM0VqNXRWTkNIX0tONXIwVTZibWd5OXMzT1RWNy05TDJVNVU1R2lNd2Q?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Everything You Need to Know About Practice 4 of Packers Training Camp Sports Illustrated",
-          "published": "Sun, 02 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "patrick-mahomes-cleared-practice-chiefs-qb-play-1-6c85039e",
-      "slug": "patrick-mahomes-cleared-practice-chiefs-qb-play-1-6c85039e",
-      "sport": "football",
-      "headline": "Patrick Mahomes confirms desire to play in Chiefs preseason, expects to firmly return by Week 1",
-      "blurb": "NFL news roundup: O'Cyrus Torrence gets $78.4M; Patrick Mahomes unlikely to play in preseason NFL.com",
-      "summary": "NFL news roundup: O'Cyrus Torrence gets $78.4M; Patrick Mahomes unlikely to play in preseason NFL.com Schefter: Mahomes (knee) on track to play Week 1 NBC Sports Reid: Mahomes unlikely to play in Chiefs' preseason opener ESPN Aggregated from NFL.com, NBC Sports, ESPN, FantasyPros, USA Today and 7 more.",
-      "category": "injury",
-      "published": "2026-07-18T07:00:00Z",
-      "updated": "2026-08-24T03:32:00Z",
-      "players": [
-        {
-          "key": "patrick mahomes",
-          "name": "Patrick Mahomes",
-          "slug": "patrick-mahomes",
-          "pos": "QB",
-          "team": "KC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Schefter: Mahomes (knee) on track to play Week 1",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaFpfTWowbHctU0tTTm1VT3QyZldMSm4xeTVsdWRIRTYyRzN5VnA2aWM2YkpRMndrNC1ELXM2YnhsTm9FZFBuZDM3alZvbHZNdUs1NmRRSERoNXFJMkZDd1V0aFVsX1BtSFI2QzVRblZ2cUlsMGpKOHFBSDFNNmZtWmk5N1VNdmFZc2dWTzVqOV9yS3JhVjdXazZmWUV3djY1N0FTQ2YycEpPSG1NTTBacA?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Schefter: Mahomes (knee) on track to play Week 1 NBC Sports",
-          "published": "Fri, 21 Aug 2026 19:02:40 GMT"
-        },
-        {
-          "title": "Reid: Mahomes unlikely to play in Chiefs' preseason opener",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXpXT2pMTmNqSnJJUVFESzk2Qzg2eGI5OUs4amxWNW5nclBRbldiYVU5dnBpMWh2WTVrZnlzQUhnWXRsMlVXYzBEZ1N3WmVxRkNPSHIwTDY3eE9lYm5adW5qNEJUU1J3VUcyTXBMRUxmdVU3ZzhRc05HbDFhaHdsd3RHbml4STBCcEpLbWVjTmlqNHp1aGVkaFdyVQ?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Reid: Mahomes unlikely to play in Chiefs' preseason opener ESPN",
-          "published": "Fri, 07 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Will Patrick Mahomes Play Week 1? (2026 Fantasy Football)",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdm5OSmxGRm9mbWd6R183MzYzS0Q1MlllTmdmSXJEUlhIaFdOR0dSZTN5NTJxNUhCNlg2QnBtSG16a0M5QzVJUy1DT05mMXdrVDJDbFpDaUJ3RnhkejBGM2VTTnA2TTczYnNOWFFsYm5uRTF0QWQtel9LZ2FQLWhSSHRyQkdqUm5qX0hjZU0wbUU4STRVdHfSAZsBQVVfeXFMTXRGQjRqd0Z0NC13aVp3bkRfZ1lCZU5ENkZsaE05VDdRSWVVOW5CcEMxRlZ4SHJreS1BTEYweGlRU2NheUZZd0hrQ1BvMjh1NmpobklkdzZPSTJRTWhiYnM2Rl9NNGNpRmxsQjhNZDRlbUxyc2dqZGt0NzFIVndzODNVYlFuRTc0QlYyTXc5UzBKd19Kc28xYUVWM1k?oc=5",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "Will Patrick Mahomes Play Week 1? (2026 Fantasy Football) FantasyPros",
-          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Patrick Mahomes is cleared to practice. Will Chiefs QB play Week 1?",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSXZwSDBVWkxiMUN3VlF5TUlBNFdYR3psamNKd2dVdkdlQzlJbXlfaXFoMHZEYkRHVHRQTklyc0x1OXc1ZWllMjN0UDZxLURkdnJ4cHo4LTJmZ3NyN0QyREsyVENlVm1fVUlqbElDdmlJeFl5YkRvWjlHWUlZQ3U2SHU0SXp6WnNYQk1ibE9PLTlKOG5UbHFpS3RzYlBBQVBQalZIamhwdS1HWjROSVR0QkV0Zw?oc=5",
-          "publisher": "USA Today",
-          "kind": "article",
-          "snippet": "Patrick Mahomes is cleared to practice. Will Chiefs QB play Week 1? USA Today",
-          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Is Patrick Mahomes ready to play in preseason? He says yes, Chiefs aren't sure yet",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQTF9yUDYwSlF0UFpuaVZOWjVGb2JkejVpN2t5MU9QMF9mbFQ3NUJxakphRWlTVWM3RTF2NHF5RzBJNjROaF9OWXF1V29pRHNEZjl0Xzh6MDVXRGxvWUg1WXhrUUZvR1c0LUpQeUsyMUE2a3Q4Zml2cUxRSGJWSjR5b1llalNqYkp4T05LNmdYTkJUdEhaUUZOb1VFR1VYdDlCWW5VZHJGNU82LXRjTmswYVRLYWlSSzFtREd2Rm82am5VVjdhY2w3YVk0blNmZXJGcFg4SFBTN2I2ekZqLUplLWFka0t5SW5XendsYVpR0gHzAUFVX3lxTE9rZ0ZiVll2YmN5ZjduV2NseHVBTG1fczZieU1mOFQ0cnBKMVN0NzB3TkhCSEoyVDhhVVVtM1RicktyU2FZcWx1eXg4SmFNM0RXVzdOTklTUllHaU9qUkJucFdhQ0ZFcmd4OHkzblUxY3JhdHdJM2NmTGN6SldoMVRkeTFRUWhiUHp5T2g0QTZKVzVHU1BIUEloNGVBdnVUQS12eTh4OVdFektfRjZCeFZydkZwVDBGVUt0a0RkeUlpQXZhbjZWX1AtR0FSMkdNOXc4dGlLSjBwWHVLMzN1b0xCS25zdEVDSnAwMXo4VEp4V3oyTQ?oc=5",
-          "publisher": "The Times of India",
-          "kind": "article",
-          "snippet": "Is Patrick Mahomes ready to play in preseason? He says yes, Chiefs aren't sure yet The Times of India",
-          "published": "Mon, 24 Aug 2026 03:32:00 GMT"
-        },
-        {
-          "title": "Chiefs QB Patrick Mahomes 'Confident' in Return Date Ahead of NFL Season",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUWVQYThMd0dWZVdGNmdPc1d3U2U5Y2VSekU2RFdDVDg5UHdpeFFQZmIwNlVoZmdzd0NXSHBaQnA5VlNqQVpYdmZXNnpfMmVpd3ZHbmRIMUxPSHBSZDJhaDFsVFZBWlZSRnRsazJPdXVNT1JNQV9IbmJDYlBfX1FuaFZna1BZRi15M2RScQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Chiefs QB Patrick Mahomes 'Confident' in Return Date Ahead of NFL Season Yahoo Sports",
-          "published": "Sun, 23 Aug 2026 04:41:23 GMT"
-        },
-        {
-          "title": "Chiefs QB Patrick Mahomes Raises Concern With Actions at Practice",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMVFET0s0aTczMmUyeExXcmZVT2JNS0xXTjFyTWVDWDJkcnVDRnVkRXpPOE5rSmo1XzhuYmZjbjBiVkw3ckdoSnpsTmk5RUZNcmVXd2QzWDFRaWd1bFFDdXlORUpBNlRQRkVyRExwWW5vZVN4eWFiamdGZHpzbnNaNHUtREdHU251?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Chiefs QB Patrick Mahomes Raises Concern With Actions at Practice Yahoo Sports",
-          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Patrick Mahomes confirms desire to play in Chiefs preseason, expects to firmly return by Week 1",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdWhOQ0F4cmVscmZHVHdYNzBpRnNVUDVYUDh0VHJ6Ym13ZzFrVnFRc1lyZUxBeFRHR1RMbE5kQ05zay1tUUs4bmZac2JxaXpEZjJqdnRZbmpYdEJab1NWSEdqVmc5WjFkM0lSRnVQbGVUTzJ3WW9PM1VhbUtua1U5dWVfUUozdXpBSmpraTluaklEZkM3N3h3RGZlcXdOMDQ1UURzci1Jc3BDOVdtUUtWbS1Id1FqMEU?oc=5",
-          "publisher": "hitc.com",
-          "kind": "article",
-          "snippet": "Patrick Mahomes confirms desire to play in Chiefs preseason, expects to firmly return by Week 1 hitc.com",
-          "published": "Sun, 23 Aug 2026 02:02:57 GMT"
-        },
-        {
-          "title": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPblFWVFpaQ012NkUtQmRwRFBhM1VjVUZiS0VLN2pDbXE5YTZvaUFUU3A3Y24yUkg1Wk5QRFctTEdFNC1ySThLTXJYZnJ1cXVWWDB3V0c5ZjI0LW5yTTQ1Mm05VDB0dmVPWHpIZEg0MVZUUDF6Ti1jcFQxUS1jcXNWeWhXdUZBczhvYkd1T0pka0tBenpSdEtTX0llOXNqTnp2LUNrZ05XT09sdHRrVzZjc2lITQ?oc=5",
-          "publisher": "Athlon Sports",
-          "kind": "article",
-          "snippet": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season Athlon Sports",
-          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Patrick Mahomes Injury Update: Chiefs QB's Fantasy Stock On The Rise With Latest News",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdWtFZlZnUE1nY1dHWHoyUFJ4ZkpMcldUb3pBY0hyeDhwTjZld0VodzlZaFR4MW1NSGR2Q3l2enZiWUNXZ2dQRUdNOE1vS3V2X1N5a2FibnpBVGtrU3pIT2pMb2ZaUWNYcS1pWUZQR3dnRDNiN0dad1FrZDBPRWxXem84d3ZESU41VFhrZm82S0xfbElFa3lPZ0JCMEFYYzlqWVBZYzYzYzIyR2p2TWFiUURYS3ZaSUhEUTFibDFzMzE5ejg?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Patrick Mahomes Injury Update: Chiefs QB's Fantasy Stock On The Rise With Latest News Sports Illustrated",
-          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Three Patrick Mahomes observations from early Chiefs practices",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSXlLRHF5XzNnYU1WMXJ6THJDdnc5X0lXeDRZVUJyY2ZQLWhEN2IwUkVrSzQxTjdqbk44TTl3YURDUFZSYjQwN2VTZTRFRGh6YloxT3JQRWRNSk9ubmlJUTZiTzI5RTJQempUcENpcHlMemtkNHdfZm91LTRobnpxUTdqbTB1NGxqUmcyUVY5eXNLSko3U3ZhRFJWUUJGcTFyTVVNOQ?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Three Patrick Mahomes observations from early Chiefs practices - The Athletic The New York Times",
-          "published": "Tue, 28 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chiefs Predicted to Make Unprecedented Decision on QB Patrick Mahomes",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUHhHVDg3c1ctTl9qYXdmNU1BakVobHlvZ1lUQTB5Wmd1YlpNRV9xZndKSTYxZnkzMjFYSlpfM0F2MkJvSFZpMmVBYS1TOEp1NG9ta0NxWm9MLS1zRERjYm43Ym1TWlBTeVMzanYzOHJTVXJQOHhqaTFEcmNRV2FLNFdEYmFlcUU1blZTdkxXbVJ0cjdRSmc?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Chiefs Predicted to Make Unprecedented Decision on QB Patrick Mahomes Yahoo Sports",
-          "published": "Thu, 23 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "18: Patrick Mahomes (QB, Chiefs) | Top 100 Players of 2026",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lT1hhVDdMWlRqOTJLRjlKRUxwZ2VfYnQ0NVlaRV9NVmxGMU05TkRpVmgybUdyWHJTS0JoUFhWUU85RkpQRzRmVVNLNm1Cb2JkMlNOejFn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "18: Patrick Mahomes (QB, Chiefs) | Top 100 Players of 2026 YouTube",
-          "published": "Sun, 23 Aug 2026 14:00:18 GMT"
-        },
-        {
-          "title": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObG9QLWc1bmxvdFc5LXJzNjJMRXV5Y3g2dFotb1NEN3ZXMHd0WjZ4dFByXzhMeV9la1dZQXk4bm5iRTRfdTVSMkxkR3VMc2JZdU9FNFBnOUh5Rjc1WE15c1pjTlI3UkkxZXNDUWxCZ0NOSW5FbnUxSTJRUVVqQnlqeHRMMnA1UDVv?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season Yahoo Sports",
-          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NFL news roundup: O'Cyrus Torrence gets $78.4M; Patrick Mahomes unlikely to play in preseason",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZzJyb19pOWNEbnNQR055dVd5SjVVNk1BUjMzTUxDcUwxNWVnbEZuX0pDMHpGTUhfMUcwc3dDUUpSVS1qanlueFF0TE1SWTRvVllQdzVqeXhjaTBmN250Q2JEU3NiejVINU81T04tZE5XOHh1Nm5JOXdscDBZZXBwaEY2RFpjQWwz?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "NFL news roundup: O'Cyrus Torrence gets $78.4M; Patrick Mahomes unlikely to play in preseason NFL.com",
-          "published": "Fri, 07 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "who-should-i-draft-outlooks-trevor-lawrence-jalen-d2aa2430",
-      "slug": "who-should-i-draft-outlooks-trevor-lawrence-jalen-d2aa2430",
-      "sport": "football",
-      "headline": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Tyler Shough, Lamar…",
-      "blurb": "Who Should I Draft for Fantasy Football?",
-      "summary": "Trevor Lawrence, Lamar Jackson, Tyler Shough, Kyler Murray, Jalen Hurts, Jaxson Dart, Jordan Love, Josh Allen, Drake Maye and Bo Nix: Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Tyler Shough, Lamar Jackson, Josh Allen, Bo Nix, Drake Maye, Jordan Love RotoBaller Desk reading of RotoBaller.",
+      "headline": "3 WR3s With WR1 Potential (2026 Fantasy Football)",
+      "blurb": "Gamers who don’t get one of Ja’Marr Chase, Puka Nacua, Amon-Ra St.",
+      "summary": "Gamers who don’t get one of Ja’Marr Chase, Puka Nacua, Amon-Ra St. Brown, CeeDee Lamb or Justin Jefferson in the first round of fantasy football drafts shouldn’t fret. There is ample talent at the position. Desk reading of FantasyPros.",
       "category": "wire",
-      "published": "2026-08-24T12:05:18Z",
-      "updated": "2026-08-24T12:05:18Z",
+      "published": "2026-08-24T11:08:30Z",
+      "updated": "2026-08-24T11:08:30Z",
       "players": [
         {
-          "key": "trevor lawrence",
-          "name": "Trevor Lawrence",
-          "slug": "trevor-lawrence",
-          "pos": "QB",
-          "team": "JAX"
+          "key": "amon-ra st brown",
+          "name": "Amon-Ra St. Brown",
+          "slug": "amon-ra-st-brown",
+          "pos": "WR",
+          "team": "DET"
         },
         {
-          "key": "lamar jackson",
-          "name": "Lamar Jackson",
-          "slug": "lamar-jackson",
-          "pos": "QB",
-          "team": "BAL"
-        },
-        {
-          "key": "tyler shough",
-          "name": "Tyler Shough",
-          "slug": "tyler-shough",
-          "pos": "QB",
-          "team": "NO"
-        },
-        {
-          "key": "kyler murray",
-          "name": "Kyler Murray",
-          "slug": "kyler-murray",
-          "pos": "QB",
+          "key": "justin jefferson",
+          "name": "Justin Jefferson",
+          "slug": "justin-jefferson",
+          "pos": "WR",
           "team": "MIN"
         },
         {
-          "key": "jalen hurts",
-          "name": "Jalen Hurts",
-          "slug": "jalen-hurts",
-          "pos": "QB",
-          "team": "PHI"
+          "key": "jamarr chase",
+          "name": "Ja'Marr Chase",
+          "slug": "jamarr-chase",
+          "pos": "WR",
+          "team": "CIN"
         },
         {
-          "key": "jaxson dart",
-          "name": "Jaxson Dart",
-          "slug": "jaxson-dart",
-          "pos": "QB",
-          "team": "NYG"
+          "key": "ceedee lamb",
+          "name": "CeeDee Lamb",
+          "slug": "ceedee-lamb",
+          "pos": "WR",
+          "team": "DAL"
         },
         {
-          "key": "jordan love",
-          "name": "Jordan Love",
-          "slug": "jordan-love",
-          "pos": "QB",
-          "team": "GB"
-        },
-        {
-          "key": "josh allen",
-          "name": "Josh Allen",
-          "slug": "josh-allen",
-          "pos": "QB",
-          "team": "BUF"
-        },
-        {
-          "key": "drake maye",
-          "name": "Drake Maye",
-          "slug": "drake-maye",
-          "pos": "QB",
-          "team": "NE"
-        },
-        {
-          "key": "bo nix",
-          "name": "Bo Nix",
-          "slug": "bo-nix",
-          "pos": "QB",
-          "team": "DEN"
+          "key": "puka nacua",
+          "name": "Puka Nacua",
+          "slug": "puka-nacua",
+          "pos": "WR",
+          "team": "LAR"
         }
       ],
       "sources": [
         {
-          "title": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Tyler Shough, Lamar Jackson, Josh Allen, Bo Nix, Drake Maye, Jordan Love",
-          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNaFRrVkxSellzVS1xTWpvT3VhVzdIdW9BWi1ObDYyNlR6VVhLY0FRNUdvdC1BU0thY1Z5b2YyaC0zR3JmY0V1UDhraElqTy1NMTJpUWMwNFVZbk5pQlZFa0FCVGliOWdBV05zYVJpdHc1R0Y1SHZUNVplR0dUZmdNMFZCU2Q4T3dtVXM1V3EwZHpsdldsQ09UaGRZaXM1cXNUc2xJSHFDakJCVkRqaWt5c19fbW43RVdDV181LVc3ZEFuSjVLNUlGYkM4Ul9GSnI4c1Y5Q0xhSXZFaHJjQXk4b0xsZTlsWTlpQ0ZWV1pCLW9qWTBRMG8yTTJ2UHpnVnlSb0Z3a2ZVMjNweWVQTDdaQWFuYVZrRVR3N0p3Nmkxb3hHcFNmSk5lcE1FNmluWEpHSlE?oc=5",
-          "publisher": "RotoBaller",
+          "title": "3 WR3s With WR1 Potential (2026 Fantasy Football)",
+          "url": "https://www.fantasypros.com/2026/08/3-wr3s-with-wr1-potential-2026-fantasy-football-picks/",
+          "publisher": "FantasyPros",
           "kind": "article",
-          "snippet": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Tyler Shough, Lamar Jackson, Josh Allen, Bo Nix, Drake Maye, Jordan Love RotoBaller",
-          "published": "Mon, 24 Aug 2026 12:05:18 GMT"
+          "snippet": "Gamers who don’t get one of Ja’Marr Chase, Puka Nacua, Amon-Ra St. Brown, CeeDee Lamb or Justin Jefferson in the first round of fantasy football drafts shouldn’t fret. There is ample talent at the position. A few wide receivers with ... read more »",
+          "published": "Mon, 24 Aug 2026 11:08:30 +0000"
+        }
+      ]
+    },
+    {
+      "id": "arizona-cardinals-hidden-gems-3-secret-superstars-2026-574559c0",
+      "slug": "arizona-cardinals-hidden-gems-3-secret-superstars-2026-574559c0",
+      "sport": "football",
+      "headline": "Arizona Cardinals Hidden Gems: 3 Secret Superstars on the 2026 roster",
+      "blurb": "The 2026 Rams loaded up to become the NFL’s ultimate Dream Team.",
+      "summary": "Trey McBride: The 2026 Rams loaded up to become the NFL’s ultimate Dream Team. Hidden Gems Byron Young, Jaylen Watson, and Tim Keenan III are here to help overcome the pitfalls suffered by previous ‘perfect’ rosters. The Cardinals are in an impossible situation in the NFL’s toughest division. Aggregated from SB Nation, PFF, ESPN, USA Today.",
+      "category": "roster",
+      "published": "2026-07-10T07:00:00Z",
+      "updated": "2026-08-24T20:00:00Z",
+      "players": [
+        {
+          "key": "trey mcbride",
+          "name": "Trey McBride",
+          "slug": "trey-mcbride",
+          "pos": "TE",
+          "team": "ARI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Arizona Cardinals Hidden Gems: 3 Secret Superstars on the 2026 roster",
+          "url": "https://sports.yahoo.com/articles/arizona-cardinals-hidden-gems-3-164133167.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Cardinals are in an impossible situation in the NFL’s toughest division. Josh Sweat, Gardner Minshew, and Karson Sharar are here to help the team at least be competitive in the NFC West.",
+          "published": "Mon, 24 Aug 2026 16:41:33 +0000"
+        },
+        {
+          "title": "Arizona Cardinals 2026 preview: Roster analysis",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrZTFaLVQ0c2N1amU2RGV1VVlrbTVyRmRDZ0Y3UW1xMFZ4WHk2RjlleDJ6b2RSRjkyUDgyODNhVzl3enZzLVBUcXFuMW1seXAtX0tzMVlSRVBNYXluLXdUYmhHX0VOS2ZrSmgw?oc=5",
+          "publisher": "PFF",
+          "kind": "article",
+          "snippet": "Arizona Cardinals 2026 preview: Roster analysis PFF",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "2026 Arizona Cardinals training camp: Latest intel, updates",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUFh5TldSWUJKcGZTWlcyOVRnS0hKdTFDNThpaDkyci1mV2c5QXJfTV9yVkU2bXgtN2Q3ZnpZRUxQaXZNSU5SUHRaMXN3Y1RSaWxwajBkRjROdUZGdFh0QlhqSlNLaXB3MkxodjVXa1owNjByOUpzYUZjNDZmVGhpWWlCelhVZnU3M2xKT1pBNDhYNmYzZ2VWOXg3VkwwZw?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "2026 Arizona Cardinals training camp: Latest intel, updates ESPN",
+          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arizona Cardinals training camp roster preview: TE Trey McBride",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWFZOMmhGbVV0cHVmYldkY2hnUm5IRFFWMnJZMzRPdXZDdi1DdHRtOFlGanhqeGdCTklLeDlZRmU1blcxcEZpZHFoY3ljeHhpc05CRXctdGFtMERTY0dMUFI3OUxGLVpqT1loQjFoSnN3aEJCSnJoeEM1bDNmWEFGcVNVV2ozTVpUQ3NMWV9YaWw2empVdnEwcEJGZDZVVm4tLW03TTNKLThQQkJXcGQzM09qLUlkd0pnNFdPR2dHUkZTN1lqaDNfYnUwVUd3VHBPQUtaU0FYUWhDZXls?oc=5",
+          "publisher": "USA Today",
+          "kind": "article",
+          "snippet": "Arizona Cardinals training camp roster preview: TE Trey McBride USA Today",
+          "published": "Fri, 10 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "LA Rams Hidden Gems: 3 Secret Superstars on the 2026 roster",
+          "url": "https://sports.yahoo.com/articles/la-rams-hidden-gems-3-200000710.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The 2026 Rams loaded up to become the NFL’s ultimate Dream Team. Hidden Gems Byron Young, Jaylen Watson, and Tim Keenan III are here to help overcome the pitfalls suffered by previous ‘perfect’ rosters.",
+          "published": "Mon, 24 Aug 2026 20:00:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "spencer-rattler-starting-chris-olave-injury-new-orleans-19a95482",
+      "slug": "spencer-rattler-starting-chris-olave-injury-new-orleans-19a95482",
+      "sport": "football",
+      "headline": "Spencer Rattler STARTING + Chris Olave Injury! New Orleans Saints News Happy Mother's Day (LSiPYudCh1)",
+      "blurb": "Michael Thomas Calls Out Derek Carr After Chris Olave Injury: Mshale",
+      "summary": "Michael Thomas Calls Out Derek Carr After Chris Olave Injury: Mshale Spencer Rattler STARTING + Chris Olave Injury! New Orleans Saints News Happy Mother's Day (LSiPYudCh1) Mshale Desk reading of Mshale.",
+      "category": "injury",
+      "published": "2026-08-24T12:37:57Z",
+      "updated": "2026-08-24T14:40:19Z",
+      "players": [
+        {
+          "key": "chris olave",
+          "name": "Chris Olave",
+          "slug": "chris-olave",
+          "pos": "WR",
+          "team": "NO"
+        },
+        {
+          "key": "spencer rattler",
+          "name": "Spencer Rattler",
+          "slug": "spencer-rattler",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Michael Thomas Calls Out Derek Carr After Chris Olave Injury:",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PeEtCeEMxYlp4NmExRHNTX193Q2hJbnBVbGhpYlZfdzVrRklnNzl3ekw4TDRkelg4dzJjRHVSOHZRNlZyWFI1TnNmNG52bHktNHlSMS1NR3Jaa00?oc=5",
+          "publisher": "Mshale",
+          "kind": "article",
+          "snippet": "Michael Thomas Calls Out Derek Carr After Chris Olave Injury: Mshale",
+          "published": "Mon, 24 Aug 2026 14:40:19 GMT"
+        },
+        {
+          "title": "Spencer Rattler STARTING + Chris Olave Injury! New Orleans Saints News Happy Mother's Day (LSiPYudCh1)",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE54a3BfZ2c3VVQ0YzR3MV85Ql8tb1RLX3JmNEZ5Y2VRaUZkdFZsdEo0UnZJdjE4ZVI3LThRd1pQYXNHck5FVUxmMUZqM0R3bG5Ob2xPM3RRdnBHb0E?oc=5",
+          "publisher": "Mshale",
+          "kind": "article",
+          "snippet": "Spencer Rattler STARTING + Chris Olave Injury! New Orleans Saints News Happy Mother's Day (LSiPYudCh1) Mshale",
+          "published": "Mon, 24 Aug 2026 12:37:57 GMT"
         }
       ]
     },
@@ -7081,221 +7562,93 @@
       ]
     },
     {
-      "id": "3-wr3s-wr1-potential-2026-f152f10d",
-      "slug": "3-wr3s-wr1-potential-2026-f152f10d",
+      "id": "new-york-giants-could-ease-malik-nabers-contact-d19fc7a9",
+      "slug": "new-york-giants-could-ease-malik-nabers-contact-d19fc7a9",
       "sport": "football",
-      "headline": "3 WR3s With WR1 Potential (2026 Fantasy Football)",
-      "blurb": "Gamers who don’t get one of Ja’Marr Chase, Puka Nacua, Amon-Ra St.",
-      "summary": "Gamers who don’t get one of Ja’Marr Chase, Puka Nacua, Amon-Ra St. Brown, CeeDee Lamb or Justin Jefferson in the first round of fantasy football drafts shouldn’t fret. There is ample talent at the position. Desk reading of FantasyPros.",
-      "category": "wire",
-      "published": "2026-08-24T11:08:30Z",
-      "updated": "2026-08-24T11:08:30Z",
+      "headline": "New York Giants could ease Malik Nabers into contact practice this week",
+      "blurb": "Nabers (knee) wasn't wearing a non-contact red jersey at Monday's practice, Perry Sook of WPIX reports.",
+      "summary": "Malik Nabers: Nabers (knee) wasn't wearing a non-contact red jersey at Monday's practice, Perry Sook of WPIX reports. Visit RotoWire.com for more analysis on this update. New York Giants could ease Malik Nabers into contact practice this week Giants Wire Aggregated from RotoWire NFL, Giants Wire, RotoWire, Sports Illustrated.",
+      "category": "injury",
+      "published": "2026-08-19T14:13:23Z",
+      "updated": "2026-08-24T19:16:51Z",
       "players": [
         {
-          "key": "amon-ra st brown",
-          "name": "Amon-Ra St. Brown",
-          "slug": "amon-ra-st-brown",
+          "key": "malik nabers",
+          "name": "Malik Nabers",
+          "slug": "malik-nabers",
           "pos": "WR",
-          "team": "DET"
-        },
-        {
-          "key": "justin jefferson",
-          "name": "Justin Jefferson",
-          "slug": "justin-jefferson",
-          "pos": "WR",
-          "team": "MIN"
-        },
-        {
-          "key": "jamarr chase",
-          "name": "Ja'Marr Chase",
-          "slug": "jamarr-chase",
-          "pos": "WR",
-          "team": "CIN"
-        },
-        {
-          "key": "ceedee lamb",
-          "name": "CeeDee Lamb",
-          "slug": "ceedee-lamb",
-          "pos": "WR",
-          "team": "DAL"
-        },
-        {
-          "key": "puka nacua",
-          "name": "Puka Nacua",
-          "slug": "puka-nacua",
-          "pos": "WR",
-          "team": "LAR"
+          "team": "NYG"
         }
       ],
       "sources": [
         {
-          "title": "3 WR3s With WR1 Potential (2026 Fantasy Football)",
-          "url": "https://www.fantasypros.com/2026/08/3-wr3s-with-wr1-potential-2026-fantasy-football-picks/",
-          "publisher": "FantasyPros",
+          "title": "New York Giants could ease Malik Nabers into contact practice this week",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQa3hqamdnTklHbVRjc2trMkc3ZWQ3QmRFbkhiTmw2eHAtVGd0UGNiNHRldF9qdmpJeWRIcmV4WWV2REJleEFTcWUzRG1QOWdoVWpfYnBMTnkydWwtZVJpLTlLZGhpV0NuTkR5d3pXa21jczVibEo4a2hDckpoRXBrUnlqTHNaT2czR0NWNWdPcm54YXoxVVRSN0pGc0dfTHJjQ2ZndzhzQjdwc1FkRGtac3lfZmtKazRyemdZWXZ3ZkpDUmc?oc=5",
+          "publisher": "Giants Wire",
           "kind": "article",
-          "snippet": "Gamers who don’t get one of Ja’Marr Chase, Puka Nacua, Amon-Ra St. Brown, CeeDee Lamb or Justin Jefferson in the first round of fantasy football drafts shouldn’t fret. There is ample talent at the position. A few wide receivers with ... read more »",
-          "published": "Mon, 24 Aug 2026 11:08:30 +0000"
+          "snippet": "New York Giants could ease Malik Nabers into contact practice this week Giants Wire",
+          "published": "Mon, 24 Aug 2026 09:55:00 GMT"
+        },
+        {
+          "title": "Malik Nabers Injury: Needs to take contact before game action",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUFIxWkk1cnZ1dkxkb0dPZkZ6R3RMUTIwYW5MZHVaaDQ4bHlHcWlCNk9QajRVX0N1a3VsVVhLMnZkbVI4NkhBeTlCcTA0cVNDUWFQUl94YUpaWkhNVkJXcmdkUkd2YzhXYndKM0l2djBFTVg0T19EaWVNcUI2LVhuZUZQVHJiSEtpbTM3cnFodkExMGFuYW1NVEFoUE1jUVo3TzRCUjJPTzZJSmdTaDJuag?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Malik Nabers Injury: Needs to take contact before game action RotoWire",
+          "published": "Wed, 19 Aug 2026 14:13:23 GMT"
+        },
+        {
+          "title": "Malik Nabers Could Shed No-Contact Jersey This Week, Harbaugh Says",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMzEybVRFOTVQOWVsZngza3FoVS16R2MxeldsSHctOFRYX2JyNUtRUFdyR0dyeVZaMG1oNHhMZnh4STc5Wi1KZUFITWVNREs3ME5RczhwUmN1T3ppX2t3cU9nV3VLN3RzQzJxWF9UMzBaUWdWVU5WM0liNVgya0RHTg?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Malik Nabers Could Shed No-Contact Jersey This Week, Harbaugh Says Sports Illustrated",
+          "published": "Sun, 23 Aug 2026 19:54:39 GMT"
+        },
+        {
+          "title": "Malik Nabers: Out of non-contact jersey",
+          "url": "https://www.rotowire.com//football/player/malik-nabers-17704",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Nabers (knee) wasn't wearing a non-contact red jersey at Monday's practice, Perry Sook of WPIX reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 24 Aug 2026 12:16:00 PM PDT"
         }
       ]
     },
     {
-      "id": "chargers-rookie-running-back-omarion-hampton-placed-injured-8dc78193",
-      "slug": "chargers-rookie-running-back-omarion-hampton-placed-injured-8dc78193",
+      "id": "jonathon-brooks-possible-committee-hubbard-s-return-9b659dff",
+      "slug": "jonathon-brooks-possible-committee-hubbard-s-return-9b659dff",
       "sport": "football",
-      "headline": "Chargers rookie running back Omarion Hampton placed on injured reserve with ankle injury, will miss at least 4 games",
-      "blurb": "Chargers to activate rookie RB Omarion Hampton (ankle) from injured reserve ahead of Eagles game NFL.com",
-      "summary": "Chargers to activate rookie RB Omarion Hampton (ankle) from injured reserve ahead of Eagles game NFL.com Chargers RB Omarion Hampton (ankle) to injured reserve, will miss at least four games NFL.com Chargers rookie running back Omarion Hampton placed on injured reserve with ankle injury, will miss at least 4 games Yahoo Sports Aggregated from NFL.com, Yahoo Sports, Chargers Wire.",
+      "headline": "Jonathon Brooks: Possible committee with Hubbard's return",
+      "blurb": "Coach Dave Canales told reporters Monday that the Panthers will go with a committee in Week 1 with Brooks and Chuba Hubbard (hamstring), provided that Hubbard is healthy, per…",
+      "summary": "Jonathon Brooks and Chuba Hubbard: Coach Dave Canales told reporters Monday that the Panthers will go with a committee in Week 1 with Brooks and Chuba Hubbard (hamstring), provided that Hubbard is healthy, per Joe Person of the Athletic. Visit RotoWire.com for more analysis on this update. Desk reading of RotoWire NFL.",
       "category": "injury",
-      "published": "2025-10-06T07:00:00Z",
-      "updated": "2026-08-24T20:55:00Z",
+      "published": "2026-08-24T17:08:29Z",
+      "updated": "2026-08-24T17:08:29Z",
       "players": [
         {
-          "key": "omarion hampton",
-          "name": "Omarion Hampton",
-          "slug": "omarion-hampton",
+          "key": "jonathon brooks",
+          "name": "Jonathon Brooks",
+          "slug": "jonathon-brooks",
           "pos": "RB",
-          "team": "LAC"
+          "team": "CAR"
+        },
+        {
+          "key": "chuba hubbard",
+          "name": "Chuba Hubbard",
+          "slug": "chuba-hubbard",
+          "pos": "RB",
+          "team": "CAR"
         }
       ],
       "sources": [
         {
-          "title": "Chargers RB Omarion Hampton (ankle) to injured reserve, will miss at least four games",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zdzhQMXNGcld5am9ieGJxd3FadTJFSkR6ZllCdE9WcEJkQklyNS11Tkxfc1B3UC03OHA3SmEyX253NGFDVmJUX2ZNcThhUlAzQkkzUFZia3J0WU1pV2NsbWNNNjFDcUNFMEg1LXJlSnRJUHRjT1RSQ3BDbTk1UUU?oc=5",
-          "publisher": "NFL.com",
+          "title": "Jonathon Brooks: Possible committee with Hubbard's return",
+          "url": "https://www.rotowire.com//football/player/jonathon-brooks-17747",
+          "publisher": "RotoWire NFL",
           "kind": "article",
-          "snippet": "Chargers RB Omarion Hampton (ankle) to injured reserve, will miss at least four games NFL.com",
-          "published": "Mon, 06 Oct 2025 21:12:38 GMT"
-        },
-        {
-          "title": "Chargers rookie running back Omarion Hampton placed on injured reserve with ankle injury, will miss at least 4 games",
-          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPaXdOVTQtOVZCV1pwQmRUSmVxWlhEYlAxZW8ySkNRb2MzQWpvdmJPRGQ2U0pjT2JCUFRWdlJXMXdJWnl2Tndkb2ZSN3F2TjVwRGxtMmsydjdMNUxOQnpMZ04tdFcxQ24xcnZ0amVaejNkRUxZdFpBWmNzU1R0b2dpRzUxdjR3Z0JsU3RSa2tZSWpLWmd3anVsamJmX1ZJZTAtZHNFaTFnMVJYZVg0WWp4UXVlc1pITEFVUmRSNEhzZUNUUDFscGR1dTBOUXFLcnBwYzVzLXhZSmN1TDQtWUdIU0JwSmgzOHNLU3F6U2ZrY09SSWJDWkcybVVPazZFZVZzOGZmaWk1OWNicjJxVWc?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Chargers rookie running back Omarion Hampton placed on injured reserve with ankle injury, will miss at least 4 games Yahoo Sports",
-          "published": "Mon, 06 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Can Omarion Hampton be guy for Chargers after injury-riddled season?",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPX1ZyYjhxQ09mWFc3RW5TdkgtQVFmTl9TTzliT0dEWjh2V0padXkzY3R6Mkw4b0Y1R084UWFDYjBOaTBIMjdaU1dORkJHRUVLdlFDUEFGM1B4dlV2SkxHMGJ1UDUyeFNiRjdBVF83LUZ2bkx0QjFtQXNlMW5Jb1B5RDZRSEU5QXRhQ3dLZmpMTmJVZGV3TWhWSW9GazBkRmVIOG1fanNBLVhPakRDcDduZ041VlhXeVRxYVplS2dhcktIcXNNcmpTdVhZWXR0SjhTaTFJTkNB?oc=5",
-          "publisher": "Chargers Wire",
-          "kind": "article",
-          "snippet": "Can Omarion Hampton be guy for Chargers after injury-riddled season? Chargers Wire",
-          "published": "Mon, 24 Aug 2026 20:55:00 GMT"
-        },
-        {
-          "title": "Chargers to activate rookie RB Omarion Hampton (ankle) from injured reserve ahead of Eagles game",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTzJkdzhMTV9ZVW5RU3pGVDRWcFpDS0JWRDg0WjBUdWdGLWVIRG12VWNQX3k3MmNCcDJnWmpoWVY3dm9hOGV4Qk5ZcmNrQUgwODBUeWctZ2ZWM2FoNjIxRGpRTC0xVDZMWk5MZmJiRm56ZnR3WUZVNlpIVVVWekVDeFZlMUxDa0w3OVpqN25PWFoyRlVKN2VSVnZuc0tMdw?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "Chargers to activate rookie RB Omarion Hampton (ankle) from injured reserve ahead of Eagles game NFL.com",
-          "published": "Sun, 07 Dec 2025 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "arizona-cardinals-hidden-gems-3-secret-superstars-2026-574559c0",
-      "slug": "arizona-cardinals-hidden-gems-3-secret-superstars-2026-574559c0",
-      "sport": "football",
-      "headline": "Arizona Cardinals Hidden Gems: 3 Secret Superstars on the 2026 roster",
-      "blurb": "The 2026 Rams loaded up to become the NFL’s ultimate Dream Team.",
-      "summary": "Trey McBride: The 2026 Rams loaded up to become the NFL’s ultimate Dream Team. Hidden Gems Byron Young, Jaylen Watson, and Tim Keenan III are here to help overcome the pitfalls suffered by previous ‘perfect’ rosters. The Cardinals are in an impossible situation in the NFL’s toughest division. Aggregated from SB Nation, PFF, ESPN, USA Today.",
-      "category": "roster",
-      "published": "2026-07-10T07:00:00Z",
-      "updated": "2026-08-24T20:00:00Z",
-      "players": [
-        {
-          "key": "trey mcbride",
-          "name": "Trey McBride",
-          "slug": "trey-mcbride",
-          "pos": "TE",
-          "team": "ARI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Arizona Cardinals Hidden Gems: 3 Secret Superstars on the 2026 roster",
-          "url": "https://sports.yahoo.com/articles/arizona-cardinals-hidden-gems-3-164133167.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Cardinals are in an impossible situation in the NFL’s toughest division. Josh Sweat, Gardner Minshew, and Karson Sharar are here to help the team at least be competitive in the NFC West.",
-          "published": "Mon, 24 Aug 2026 16:41:33 +0000"
-        },
-        {
-          "title": "Arizona Cardinals 2026 preview: Roster analysis",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrZTFaLVQ0c2N1amU2RGV1VVlrbTVyRmRDZ0Y3UW1xMFZ4WHk2RjlleDJ6b2RSRjkyUDgyODNhVzl3enZzLVBUcXFuMW1seXAtX0tzMVlSRVBNYXluLXdUYmhHX0VOS2ZrSmgw?oc=5",
-          "publisher": "PFF",
-          "kind": "article",
-          "snippet": "Arizona Cardinals 2026 preview: Roster analysis PFF",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "2026 Arizona Cardinals training camp: Latest intel, updates",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUFh5TldSWUJKcGZTWlcyOVRnS0hKdTFDNThpaDkyci1mV2c5QXJfTV9yVkU2bXgtN2Q3ZnpZRUxQaXZNSU5SUHRaMXN3Y1RSaWxwajBkRjROdUZGdFh0QlhqSlNLaXB3MkxodjVXa1owNjByOUpzYUZjNDZmVGhpWWlCelhVZnU3M2xKT1pBNDhYNmYzZ2VWOXg3VkwwZw?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "2026 Arizona Cardinals training camp: Latest intel, updates ESPN",
-          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Arizona Cardinals training camp roster preview: TE Trey McBride",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWFZOMmhGbVV0cHVmYldkY2hnUm5IRFFWMnJZMzRPdXZDdi1DdHRtOFlGanhqeGdCTklLeDlZRmU1blcxcEZpZHFoY3ljeHhpc05CRXctdGFtMERTY0dMUFI3OUxGLVpqT1loQjFoSnN3aEJCSnJoeEM1bDNmWEFGcVNVV2ozTVpUQ3NMWV9YaWw2empVdnEwcEJGZDZVVm4tLW03TTNKLThQQkJXcGQzM09qLUlkd0pnNFdPR2dHUkZTN1lqaDNfYnUwVUd3VHBPQUtaU0FYUWhDZXls?oc=5",
-          "publisher": "USA Today",
-          "kind": "article",
-          "snippet": "Arizona Cardinals training camp roster preview: TE Trey McBride USA Today",
-          "published": "Fri, 10 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "LA Rams Hidden Gems: 3 Secret Superstars on the 2026 roster",
-          "url": "https://sports.yahoo.com/articles/la-rams-hidden-gems-3-200000710.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The 2026 Rams loaded up to become the NFL’s ultimate Dream Team. Hidden Gems Byron Young, Jaylen Watson, and Tim Keenan III are here to help overcome the pitfalls suffered by previous ‘perfect’ rosters.",
-          "published": "Mon, 24 Aug 2026 20:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "spencer-rattler-starting-chris-olave-injury-new-orleans-19a95482",
-      "slug": "spencer-rattler-starting-chris-olave-injury-new-orleans-19a95482",
-      "sport": "football",
-      "headline": "Spencer Rattler STARTING + Chris Olave Injury! New Orleans Saints News Happy Mother's Day (LSiPYudCh1)",
-      "blurb": "Michael Thomas Calls Out Derek Carr After Chris Olave Injury: Mshale",
-      "summary": "Michael Thomas Calls Out Derek Carr After Chris Olave Injury: Mshale Spencer Rattler STARTING + Chris Olave Injury! New Orleans Saints News Happy Mother's Day (LSiPYudCh1) Mshale Desk reading of Mshale.",
-      "category": "injury",
-      "published": "2026-08-24T12:37:57Z",
-      "updated": "2026-08-24T14:40:19Z",
-      "players": [
-        {
-          "key": "chris olave",
-          "name": "Chris Olave",
-          "slug": "chris-olave",
-          "pos": "WR",
-          "team": "NO"
-        },
-        {
-          "key": "spencer rattler",
-          "name": "Spencer Rattler",
-          "slug": "spencer-rattler",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Michael Thomas Calls Out Derek Carr After Chris Olave Injury:",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PeEtCeEMxYlp4NmExRHNTX193Q2hJbnBVbGhpYlZfdzVrRklnNzl3ekw4TDRkelg4dzJjRHVSOHZRNlZyWFI1TnNmNG52bHktNHlSMS1NR3Jaa00?oc=5",
-          "publisher": "Mshale",
-          "kind": "article",
-          "snippet": "Michael Thomas Calls Out Derek Carr After Chris Olave Injury: Mshale",
-          "published": "Mon, 24 Aug 2026 14:40:19 GMT"
-        },
-        {
-          "title": "Spencer Rattler STARTING + Chris Olave Injury! New Orleans Saints News Happy Mother's Day (LSiPYudCh1)",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE54a3BfZ2c3VVQ0YzR3MV85Ql8tb1RLX3JmNEZ5Y2VRaUZkdFZsdEo0UnZJdjE4ZVI3LThRd1pQYXNHck5FVUxmMUZqM0R3bG5Ob2xPM3RRdnBHb0E?oc=5",
-          "publisher": "Mshale",
-          "kind": "article",
-          "snippet": "Spencer Rattler STARTING + Chris Olave Injury! New Orleans Saints News Happy Mother's Day (LSiPYudCh1) Mshale",
-          "published": "Mon, 24 Aug 2026 12:37:57 GMT"
+          "snippet": "Coach Dave Canales told reporters Monday that the Panthers will go with a committee in Week 1 with Brooks and Chuba Hubbard (hamstring), provided that Hubbard is healthy, per Joe Person of the Athletic. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 24 Aug 2026 9:35:00 AM PDT"
         }
       ]
     },
@@ -7450,97 +7803,6 @@
       ]
     },
     {
-      "id": "new-york-giants-could-ease-malik-nabers-contact-d19fc7a9",
-      "slug": "new-york-giants-could-ease-malik-nabers-contact-d19fc7a9",
-      "sport": "football",
-      "headline": "New York Giants could ease Malik Nabers into contact practice this week",
-      "blurb": "Nabers (knee) wasn't wearing a non-contact red jersey at Monday's practice, Perry Sook of WPIX reports.",
-      "summary": "Malik Nabers: Nabers (knee) wasn't wearing a non-contact red jersey at Monday's practice, Perry Sook of WPIX reports. Visit RotoWire.com for more analysis on this update. New York Giants could ease Malik Nabers into contact practice this week Giants Wire Aggregated from RotoWire NFL, Giants Wire, RotoWire, Sports Illustrated.",
-      "category": "injury",
-      "published": "2026-08-19T14:13:23Z",
-      "updated": "2026-08-24T19:16:51Z",
-      "players": [
-        {
-          "key": "malik nabers",
-          "name": "Malik Nabers",
-          "slug": "malik-nabers",
-          "pos": "WR",
-          "team": "NYG"
-        }
-      ],
-      "sources": [
-        {
-          "title": "New York Giants could ease Malik Nabers into contact practice this week",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQa3hqamdnTklHbVRjc2trMkc3ZWQ3QmRFbkhiTmw2eHAtVGd0UGNiNHRldF9qdmpJeWRIcmV4WWV2REJleEFTcWUzRG1QOWdoVWpfYnBMTnkydWwtZVJpLTlLZGhpV0NuTkR5d3pXa21jczVibEo4a2hDckpoRXBrUnlqTHNaT2czR0NWNWdPcm54YXoxVVRSN0pGc0dfTHJjQ2ZndzhzQjdwc1FkRGtac3lfZmtKazRyemdZWXZ3ZkpDUmc?oc=5",
-          "publisher": "Giants Wire",
-          "kind": "article",
-          "snippet": "New York Giants could ease Malik Nabers into contact practice this week Giants Wire",
-          "published": "Mon, 24 Aug 2026 09:55:00 GMT"
-        },
-        {
-          "title": "Malik Nabers Injury: Needs to take contact before game action",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPUFIxWkk1cnZ1dkxkb0dPZkZ6R3RMUTIwYW5MZHVaaDQ4bHlHcWlCNk9QajRVX0N1a3VsVVhLMnZkbVI4NkhBeTlCcTA0cVNDUWFQUl94YUpaWkhNVkJXcmdkUkd2YzhXYndKM0l2djBFTVg0T19EaWVNcUI2LVhuZUZQVHJiSEtpbTM3cnFodkExMGFuYW1NVEFoUE1jUVo3TzRCUjJPTzZJSmdTaDJuag?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Malik Nabers Injury: Needs to take contact before game action RotoWire",
-          "published": "Wed, 19 Aug 2026 14:13:23 GMT"
-        },
-        {
-          "title": "Malik Nabers Could Shed No-Contact Jersey This Week, Harbaugh Says",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMzEybVRFOTVQOWVsZngza3FoVS16R2MxeldsSHctOFRYX2JyNUtRUFdyR0dyeVZaMG1oNHhMZnh4STc5Wi1KZUFITWVNREs3ME5RczhwUmN1T3ppX2t3cU9nV3VLN3RzQzJxWF9UMzBaUWdWVU5WM0liNVgya0RHTg?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Malik Nabers Could Shed No-Contact Jersey This Week, Harbaugh Says Sports Illustrated",
-          "published": "Sun, 23 Aug 2026 19:54:39 GMT"
-        },
-        {
-          "title": "Malik Nabers: Out of non-contact jersey",
-          "url": "https://www.rotowire.com//football/player/malik-nabers-17704",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Nabers (knee) wasn't wearing a non-contact red jersey at Monday's practice, Perry Sook of WPIX reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 24 Aug 2026 12:16:00 PM PDT"
-        }
-      ]
-    },
-    {
-      "id": "jonathon-brooks-possible-committee-hubbard-s-return-9b659dff",
-      "slug": "jonathon-brooks-possible-committee-hubbard-s-return-9b659dff",
-      "sport": "football",
-      "headline": "Jonathon Brooks: Possible committee with Hubbard's return",
-      "blurb": "Coach Dave Canales told reporters Monday that the Panthers will go with a committee in Week 1 with Brooks and Chuba Hubbard (hamstring), provided that Hubbard is healthy, per…",
-      "summary": "Jonathon Brooks and Chuba Hubbard: Coach Dave Canales told reporters Monday that the Panthers will go with a committee in Week 1 with Brooks and Chuba Hubbard (hamstring), provided that Hubbard is healthy, per Joe Person of the Athletic. Visit RotoWire.com for more analysis on this update. Desk reading of RotoWire NFL.",
-      "category": "injury",
-      "published": "2026-08-24T17:08:29Z",
-      "updated": "2026-08-24T17:08:29Z",
-      "players": [
-        {
-          "key": "jonathon brooks",
-          "name": "Jonathon Brooks",
-          "slug": "jonathon-brooks",
-          "pos": "RB",
-          "team": "CAR"
-        },
-        {
-          "key": "chuba hubbard",
-          "name": "Chuba Hubbard",
-          "slug": "chuba-hubbard",
-          "pos": "RB",
-          "team": "CAR"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jonathon Brooks: Possible committee with Hubbard's return",
-          "url": "https://www.rotowire.com//football/player/jonathon-brooks-17747",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Coach Dave Canales told reporters Monday that the Panthers will go with a committee in Week 1 with Brooks and Chuba Hubbard (hamstring), provided that Hubbard is healthy, per Joe Person of the Athletic. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 24 Aug 2026 9:35:00 AM PDT"
-        }
-      ]
-    },
-    {
       "id": "producks-2-recap-74a0a780",
       "slug": "producks-2-recap-74a0a780",
       "sport": "football",
@@ -7581,6 +7843,60 @@
           "kind": "article",
           "snippet": "What’s up y’all? Here’s how some of the NFL #ProDucks played in week 2 of the preseason. AFC WEST:Raiders: WR Malik Benson – 1 catch, 18 yards Chargers: QB Justin Herbert – 1/2, 9 yardsCB Nikko Reed – 1 solo tackle, 3 assisted Broncos: QB Bo Nix – 6/9, 76 yards, 1 TD Chiefs: LB [",
           "published": "Mon, 24 Aug 2026 19:30:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "emeka-egbuka-injury-wr-could-hamper-early-2026-7446b73d",
+      "slug": "emeka-egbuka-injury-wr-could-hamper-early-2026-7446b73d",
+      "sport": "football",
+      "headline": "Emeka Egbuka Injury Update: Latest On WR Could Hamper Early 2026 Fantasy Outlook",
+      "blurb": "Emeka Egbuka Fantasy Football Outlook (2026) FantasyPros",
+      "summary": "Emeka Egbuka Fantasy Football Outlook (2026) FantasyPros Fantasy Football Updates: Emeka Egbuka Avoids Major Injury (2026) FantasyPros Emeka Egbuka Injury Update: Latest On WR Could Hamper Early 2026 Fantasy Outlook Sports Illustrated Aggregated from FantasyPros, Sports Illustrated.",
+      "category": "injury",
+      "published": "2026-08-14T07:00:00Z",
+      "updated": "2026-08-24T16:18:00Z",
+      "players": [
+        {
+          "key": "emeka egbuka",
+          "name": "Emeka Egbuka",
+          "slug": "emeka-egbuka",
+          "pos": "WR",
+          "team": "TB"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Emeka Egbuka Fantasy Football Outlook (2026)",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92b08xT0RNSVdzeXJfM1ZyZTN0cGNWUnBYUkxTRE9qTEw3cmI1bHBMSF9LUDBQaVJROGNPUWVGTGZwRDZ5Rk8xUWt1N0lCaFR1R2xRWVBkaFB5WTR0eWROelFzQ3IwWmhUdFBNenMyR1ZEclBRT1lWMDh2cFF2cXPSAYQBQVVfeXFMTXNLeTBidkNTYlRhSFBoTnV2REc5SjRjQzhJbGZ4RUNjVVQ4YXhPUjcxcnY4c1JCUm9FZjVoRUtROVlZaWJhbkpBd2lkeEVSTVhiV1NwU1BzdnZDZ0ZXOEFEeUFsN2I5MXBndHAwRXNhM19WeXo1bnFVTjRqZk1HdXQ5TkMx?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Emeka Egbuka Fantasy Football Outlook (2026) FantasyPros",
+          "published": "Mon, 24 Aug 2026 16:18:00 GMT"
+        },
+        {
+          "title": "Fantasy Football Updates: Emeka Egbuka Avoids Major Injury (2026)",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV2VsM1pOaW9CSHp6SWVhcFpWVzNLcDNkaFNXM1J4TFdoUUhLMkhHTUZjMnVOTnNIaG83ZFEzVFRaakI5MFFlNTlpbXdybkZnQ1FOVl8ya2ZoLTI0TkQ3VkJpSmV4d2NmMl9aZ2thdk45V2piYVhwZnNMZ0s2QkRiUVVyMG9rSmhCaFhXbkhudEdmbm5xOUk2UVFMY2hkMkpO0gGmAUFVX3lxTE94S1llMVZheTQyZk50S1E3d2JpT3luQ0RuSEpaSlpKZ2lVT3hUQVE0bHB4cFQtVUJ5MWpveTJqSGtSWkxjT0ZhYWdtNGg5T2pOaVQtRnhOR1NsVVdNWVczejByTDJNWXdkNWFkYUxraGtRQzFBTnJXN3hxYVNiNnhZZGpyaHVMS191b2hNNW9fV1lVVFNUc2tIVllQWkIwanhEajRETFE?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Fantasy Football Updates: Emeka Egbuka Avoids Major Injury (2026) FantasyPros",
+          "published": "Fri, 14 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Emeka Egbuka Injury Update: Latest On WR Could Hamper Early 2026 Fantasy Outlook",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNU240ZGVOTkhpUDVxeFlMcWRiZEtxTDlOMjdleXpPMklFNEdZRDRhSTBoaGZRbXFNdThLbWp1NmJaaS1ua1QtVWUxeDlySjJJMmU1VzRLODR1Q0Vpd3N6TG1XX2ZUYVFQMFJBaFpNTU10b2psc21QbEVyaFp5ZmFURm9FTzNPZl9YSUZ4QkVVZHJ0NWtoNFlJWWd2WWJ0SndnekxiQjQ2VDJxWmt4V0JlVjFMWHZtTFZMU3gwYw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Emeka Egbuka Injury Update: Latest On WR Could Hamper Early 2026 Fantasy Outlook Sports Illustrated",
+          "published": "Mon, 17 Aug 2026 20:25:56 GMT"
+        },
+        {
+          "title": "Emeka Egbuka Fantasy Football Outlook (2026)",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kMl9uNDd0bk5XWHRpRm5zY1lfSzNWMWJIY19sYmlGM0puaWZOdXRfSlVMNkNxNWlxYWxvbmFaY3NoS2w4b0pyMU81c3lRalJLOHh0U2dfOHBFanY1b2VkeWROMk9TbVRxckVsUVZRYWlqR1prZVRqeGhVUWJ0cXfSAYQBQVVfeXFMUEp6cHdvUzlkXzhfMjZnU0xYWXdkTmZXYmNKbEdYdWFjY3FsMlI3R01CY0JiSkx4blR2VG9vZmtCYTNwQWtEVmZ2UkNtbHJfUjZqN2t4ZXJXOWtKeDA5UGlwWUNpVVQwSEVRX1h6dk5rSktmY2pNd1RoWERvZ2hVRnNVSFdL?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Emeka Egbuka Fantasy Football Outlook (2026) FantasyPros",
+          "published": "Mon, 17 Aug 2026 19:02:00 GMT"
         }
       ]
     },
@@ -7645,56 +7961,313 @@
       ]
     },
     {
-      "id": "emeka-egbuka-injury-wr-could-hamper-early-2026-7446b73d",
-      "slug": "emeka-egbuka-injury-wr-could-hamper-early-2026-7446b73d",
+      "id": "jets-head-coach-aaron-glenn-gives-encouraging-breece-13124e47",
+      "slug": "jets-head-coach-aaron-glenn-gives-encouraging-breece-13124e47",
       "sport": "football",
-      "headline": "Emeka Egbuka Injury Update: Latest On WR Could Hamper Early 2026 Fantasy Outlook",
-      "blurb": "Emeka Egbuka Fantasy Football Outlook (2026) FantasyPros",
-      "summary": "Emeka Egbuka Fantasy Football Outlook (2026) FantasyPros Fantasy Football Updates: Emeka Egbuka Avoids Major Injury (2026) FantasyPros Emeka Egbuka Injury Update: Latest On WR Could Hamper Early 2026 Fantasy Outlook Sports Illustrated Aggregated from FantasyPros, Sports Illustrated.",
-      "category": "injury",
-      "published": "2026-08-14T07:00:00Z",
-      "updated": "2026-08-24T16:18:00Z",
+      "headline": "Jets head coach Aaron Glenn gives encouraging update on Breece Hall, Kenyon Sadiq",
+      "blurb": "Jets head coach Aaron Glenn gives encouraging update on Breece Hall, Kenyon Sadiq Yahoo Sports",
+      "summary": "Jets head coach Aaron Glenn gives encouraging update on Breece Hall, Kenyon Sadiq Yahoo Sports Desk reading of Yahoo Sports.",
+      "category": "coach",
+      "published": "2026-08-24T22:05:36Z",
+      "updated": "2026-08-24T22:05:36Z",
       "players": [
         {
-          "key": "emeka egbuka",
-          "name": "Emeka Egbuka",
-          "slug": "emeka-egbuka",
-          "pos": "WR",
-          "team": "TB"
+          "key": "kenyon sadiq",
+          "name": "Kenyon Sadiq",
+          "slug": "kenyon-sadiq",
+          "pos": "TE",
+          "team": "NYJ"
+        },
+        {
+          "key": "breece hall",
+          "name": "Breece Hall",
+          "slug": "breece-hall",
+          "pos": "RB",
+          "team": "NYJ"
         }
       ],
       "sources": [
         {
-          "title": "Emeka Egbuka Fantasy Football Outlook (2026)",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92b08xT0RNSVdzeXJfM1ZyZTN0cGNWUnBYUkxTRE9qTEw3cmI1bHBMSF9LUDBQaVJROGNPUWVGTGZwRDZ5Rk8xUWt1N0lCaFR1R2xRWVBkaFB5WTR0eWROelFzQ3IwWmhUdFBNenMyR1ZEclBRT1lWMDh2cFF2cXPSAYQBQVVfeXFMTXNLeTBidkNTYlRhSFBoTnV2REc5SjRjQzhJbGZ4RUNjVVQ4YXhPUjcxcnY4c1JCUm9FZjVoRUtROVlZaWJhbkpBd2lkeEVSTVhiV1NwU1BzdnZDZ0ZXOEFEeUFsN2I5MXBndHAwRXNhM19WeXo1bnFVTjRqZk1HdXQ5TkMx?oc=5",
-          "publisher": "FantasyPros",
+          "title": "Jets head coach Aaron Glenn gives encouraging update on Breece Hall, Kenyon Sadiq",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxObXNNVjJZVzVKUnlQc0JRTExPRW1Da3p4MTUzbmVyYUZ4dFZnWjVwSkd3Z3dEckdwVUZMSHpoay05N29VWlpqTmNWTU1CSDlDc0c2Z1BteEdEcDdlR3pmWVllbTluTERwbmhNNklDR042NWlZOHhPOUdNT2F1T0tKbWhn?oc=5",
+          "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "Emeka Egbuka Fantasy Football Outlook (2026) FantasyPros",
-          "published": "Mon, 24 Aug 2026 16:18:00 GMT"
+          "snippet": "Jets head coach Aaron Glenn gives encouraging update on Breece Hall, Kenyon Sadiq Yahoo Sports",
+          "published": "Mon, 24 Aug 2026 22:05:36 GMT"
+        }
+      ]
+    },
+    {
+      "id": "jeremiyah-love-remain-practice-d7b3b8b5",
+      "slug": "jeremiyah-love-remain-practice-d7b3b8b5",
+      "sport": "football",
+      "headline": "Jeremiyah Love will remain out of practice this week",
+      "blurb": "Coach Mike LaFleur said Monday that Love is progressing in his recovery from a high-ankle sprain but will remain sidelined this week, Darren Urban of the Cardinals' official…",
+      "summary": "Jeremiyah Love: Coach Mike LaFleur said Monday that Love is progressing in his recovery from a high-ankle sprain but will remain sidelined this week, Darren Urban of the Cardinals' official site reports. Visit RotoWire.com for more analysis on this update. Aggregated from ProFootball Talk on NBC Sports, PFT feed, RotoWire NFL.",
+      "category": "injury",
+      "published": "2026-08-24T20:17:19Z",
+      "updated": "2026-08-24T20:17:19Z",
+      "players": [
+        {
+          "key": "jeremiyah love",
+          "name": "Jeremiyah Love",
+          "slug": "jeremiyah-love",
+          "pos": "RB",
+          "team": "ARI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jeremiyah Love will remain out of practice this week",
+          "url": "https://sports.yahoo.com/articles/jeremiyah-love-remain-practice-week-201719723.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "At least one J.",
+          "published": "Mon, 24 Aug 2026 20:17:19 +0000"
         },
         {
-          "title": "Fantasy Football Updates: Emeka Egbuka Avoids Major Injury (2026)",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV2VsM1pOaW9CSHp6SWVhcFpWVzNLcDNkaFNXM1J4TFdoUUhLMkhHTUZjMnVOTnNIaG83ZFEzVFRaakI5MFFlNTlpbXdybkZnQ1FOVl8ya2ZoLTI0TkQ3VkJpSmV4d2NmMl9aZ2thdk45V2piYVhwZnNMZ0s2QkRiUVVyMG9rSmhCaFhXbkhudEdmbm5xOUk2UVFMY2hkMkpO0gGmAUFVX3lxTE94S1llMVZheTQyZk50S1E3d2JpT3luQ0RuSEpaSlpKZ2lVT3hUQVE0bHB4cFQtVUJ5MWpveTJqSGtSWkxjT0ZhYWdtNGg5T2pOaVQtRnhOR1NsVVdNWVczejByTDJNWXdkNWFkYUxraGtRQzFBTnJXN3hxYVNiNnhZZGpyaHVMS191b2hNNW9fV1lVVFNUc2tIVllQWkIwanhEajRETFE?oc=5",
-          "publisher": "FantasyPros",
+          "title": "Jeremiyah Love will remain out of practice this week",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jeremiyah-love-will-remain-out-of-practice-this-week",
+          "publisher": "PFT feed",
           "kind": "article",
-          "snippet": "Fantasy Football Updates: Emeka Egbuka Avoids Major Injury (2026) FantasyPros",
-          "published": "Fri, 14 Aug 2026 07:00:00 GMT"
+          "snippet": "At least one J.",
+          "published": "Mon, 24 Aug 2026 16:17:19 -0400"
         },
         {
-          "title": "Emeka Egbuka Injury Update: Latest On WR Could Hamper Early 2026 Fantasy Outlook",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNU240ZGVOTkhpUDVxeFlMcWRiZEtxTDlOMjdleXpPMklFNEdZRDRhSTBoaGZRbXFNdThLbWp1NmJaaS1ua1QtVWUxeDlySjJJMmU1VzRLODR1Q0Vpd3N6TG1XX2ZUYVFQMFJBaFpNTU10b2psc21QbEVyaFp5ZmFURm9FTzNPZl9YSUZ4QkVVZHJ0NWtoNFlJWWd2WWJ0SndnekxiQjQ2VDJxWmt4V0JlVjFMWHZtTFZMU3gwYw?oc=5",
-          "publisher": "Sports Illustrated",
+          "title": "Jeremiyah Love: Remains sidelined by ankle issue",
+          "url": "https://www.rotowire.com//football/player/jeremiyah-love-19235",
+          "publisher": "RotoWire NFL",
           "kind": "article",
-          "snippet": "Emeka Egbuka Injury Update: Latest On WR Could Hamper Early 2026 Fantasy Outlook Sports Illustrated",
-          "published": "Mon, 17 Aug 2026 20:25:56 GMT"
+          "snippet": "Coach Mike LaFleur said Monday that Love is progressing in his recovery from a high-ankle sprain but will remain sidelined this week, Darren Urban of the Cardinals' official site reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 24 Aug 2026 12:49:00 PM PDT"
+        }
+      ]
+    },
+    {
+      "id": "cowboys-sign-te-mitchell-van-vooren-e246ddf1",
+      "slug": "cowboys-sign-te-mitchell-van-vooren-e246ddf1",
+      "sport": "football",
+      "headline": "Cowboys Sign TE Mitchell Van Vooren",
+      "blurb": "The Cowboys needed a tight end for depth purposes with injuries to Michael Trigg and D.J.",
+      "summary": "The Cowboys needed a tight end for depth purposes with injuries to Michael Trigg and D.J. Cowboys Sign TE Mitchell Van Vooren NFLTradeRumors.co Aggregated from ProFootball Talk on NBC Sports, PFT feed, NFLTradeRumors.co.",
+      "category": "injury",
+      "published": "2026-08-24T20:00:23Z",
+      "updated": "2026-08-24T20:02:30Z",
+      "players": [
+        {
+          "key": "michael trigg",
+          "name": "Michael Trigg",
+          "slug": "michael-trigg",
+          "pos": "TE",
+          "team": "DAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cowboys sign TE Mitch Van Vooren",
+          "url": "https://sports.yahoo.com/articles/cowboys-sign-te-mitch-van-200230070.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "The Cowboys needed a tight end for depth purposes with injuries to Michael Trigg and D.J.",
+          "published": "Mon, 24 Aug 2026 20:02:30 +0000"
         },
         {
-          "title": "Emeka Egbuka Fantasy Football Outlook (2026)",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9kMl9uNDd0bk5XWHRpRm5zY1lfSzNWMWJIY19sYmlGM0puaWZOdXRfSlVMNkNxNWlxYWxvbmFaY3NoS2w4b0pyMU81c3lRalJLOHh0U2dfOHBFanY1b2VkeWROMk9TbVRxckVsUVZRYWlqR1prZVRqeGhVUWJ0cXfSAYQBQVVfeXFMUEp6cHdvUzlkXzhfMjZnU0xYWXdkTmZXYmNKbEdYdWFjY3FsMlI3R01CY0JiSkx4blR2VG9vZmtCYTNwQWtEVmZ2UkNtbHJfUjZqN2t4ZXJXOWtKeDA5UGlwWUNpVVQwSEVRX1h6dk5rSktmY2pNd1RoWERvZ2hVRnNVSFdL?oc=5",
-          "publisher": "FantasyPros",
+          "title": "Cowboys sign TE Mitch Van Vooren",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cowboys-sign-te-mitch-van-vooren",
+          "publisher": "PFT feed",
           "kind": "article",
-          "snippet": "Emeka Egbuka Fantasy Football Outlook (2026) FantasyPros",
-          "published": "Mon, 17 Aug 2026 19:02:00 GMT"
+          "snippet": "The Cowboys needed a tight end for depth purposes with injuries to Michael Trigg and D.J.",
+          "published": "Mon, 24 Aug 2026 16:02:30 -0400"
+        },
+        {
+          "title": "Cowboys Sign TE Mitchell Van Vooren",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE83OGQyT1lCRldEaHh5SUx6cGVXaE03b0hDTmE2SXJGU1Q2NzFmT3JBMWl1M056TGZNc0hqTy1LUmxRaUxzNUx0bVZCekJZcGZ6SV9SeXF0Wm9vN3VEdVBWQVpSbnNwZDhDLTcwbjNxRQ?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "Cowboys Sign TE Mitchell Van Vooren NFLTradeRumors.co",
+          "published": "Mon, 24 Aug 2026 20:00:23 GMT"
+        }
+      ]
+    },
+    {
+      "id": "2026-2-takeaways-mike-washington-jr-rises-oronde-1b36cd17",
+      "slug": "2026-2-takeaways-mike-washington-jr-rises-oronde-1b36cd17",
+      "sport": "football",
+      "headline": "2026 NFL Preseason Week 2 Fantasy Takeaways: Mike Washington Jr. rises, Oronde Gadsden falls",
+      "blurb": "The second week of 2026 NFL preseason action has wrapped, meaning there are more snap counts and standout performances to break down.",
+      "summary": "Mike Washington Jr., Jonathon Brooks and Oronde Gadsden II: The second week of 2026 NFL preseason action has wrapped, meaning there are more snap counts and standout performances to break down. and Jonathon Brooks headline the biggest winners of last weekend's games. Desk reading of NBC Sports.",
+      "category": "wire",
+      "published": "2026-08-24T17:20:18Z",
+      "updated": "2026-08-24T17:20:18Z",
+      "players": [
+        {
+          "key": "mike washington",
+          "name": "Mike Washington Jr.",
+          "slug": "mike-washington",
+          "pos": "RB",
+          "team": "LV"
+        },
+        {
+          "key": "jonathon brooks",
+          "name": "Jonathon Brooks",
+          "slug": "jonathon-brooks",
+          "pos": "RB",
+          "team": "CAR"
+        },
+        {
+          "key": "oronde gadsden",
+          "name": "Oronde Gadsden II",
+          "slug": "oronde-gadsden",
+          "pos": "TE",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "2026 NFL Preseason Week 2 Fantasy Takeaways: Mike Washington Jr. rises, Oronde Gadsden falls",
+          "url": "https://sports.yahoo.com/articles/2026-nfl-preseason-week-2-172018730.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "The second week of 2026 NFL preseason action has wrapped, meaning there are more snap counts and standout performances to break down. Mike Washington Jr. and Jonathon Brooks headline the biggest winners of last weekend's games.",
+          "published": "Mon, 24 Aug 2026 17:20:18 +0000"
+        }
+      ]
+    },
+    {
+      "id": "commanders-running-back-rachaad-white-back-individual-work-fd153a2c",
+      "slug": "commanders-running-back-rachaad-white-back-individual-work-fd153a2c",
+      "sport": "football",
+      "headline": "Commanders running back Rachaad White back to individual work after hamstring injury",
+      "blurb": "Commanders running back Rachaad White is making progress in returning from a hamstring injury.",
+      "summary": "Commanders running back Rachaad White is making progress in returning from a hamstring injury. Coach Dan Quinn said White (hamstring) will participate in individual drills at Monday's practice, Ben Standig of Big 100 Washington D.C. Visit RotoWire.com for more analysis on this update. Aggregated from ProFootball Talk on NBC Sports, PFT feed, RotoWire NFL.",
+      "category": "injury",
+      "published": "2026-08-24T18:28:22Z",
+      "updated": "2026-08-24T18:28:22Z",
+      "players": [
+        {
+          "key": "rachaad white",
+          "name": "Rachaad White",
+          "slug": "rachaad-white",
+          "pos": "RB",
+          "team": "WAS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Commanders running back Rachaad White back to individual work after hamstring injury",
+          "url": "https://sports.yahoo.com/articles/commanders-running-back-rachaad-white-182822230.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "Commanders running back Rachaad White is making progress in returning from a hamstring injury.",
+          "published": "Mon, 24 Aug 2026 18:28:22 +0000"
+        },
+        {
+          "title": "Commanders running back Rachaad White back to individual work after hamstring injury",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-running-back-rachaad-white-back-to-individual-work-after-hamstring-injury",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Commanders running back Rachaad White is making progress in returning from a hamstring injury.",
+          "published": "Mon, 24 Aug 2026 14:28:22 -0400"
+        },
+        {
+          "title": "Rachaad White: Back in individual drills Monday",
+          "url": "https://www.rotowire.com//football/player/rachaad-white-15802",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Coach Dan Quinn said White (hamstring) will participate in individual drills at Monday's practice, Ben Standig of Big 100 Washington D.C. reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 24 Aug 2026 11:26:00 AM PDT"
+        }
+      ]
+    },
+    {
+      "id": "saints-fear-rb-ty-chandler-suffered-serious-knee-a95e48a4",
+      "slug": "saints-fear-rb-ty-chandler-suffered-serious-knee-a95e48a4",
+      "sport": "football",
+      "headline": "Report: Saints fear RB Ty Chandler suffered serious knee injury",
+      "blurb": "The Saints made a trade for Zamir White on Monday and injuries in their offensive backfield appear to be the reason why they made the made.",
+      "summary": "Ashton Jeanty: The Saints made a trade for Zamir White on Monday and injuries in their offensive backfield appear to be the reason why they made the made. Raiders RB Ashton Jeanty Suffered Right Knee Injury NFLTradeRumors.co Aggregated from PFT feed, NFLTradeRumors.co.",
+      "category": "injury",
+      "published": "2026-08-23T21:34:17Z",
+      "updated": "2026-08-24T23:11:50Z",
+      "players": [
+        {
+          "key": "ashton jeanty",
+          "name": "Ashton Jeanty",
+          "slug": "ashton-jeanty",
+          "pos": "RB",
+          "team": "LV"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Report: Saints fear RB Ty Chandler suffered serious knee injury",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-saints-fear-rb-ty-chandler-suffered-serious-knee-injury",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "The Saints made a trade for Zamir White on Monday and injuries in their offensive backfield appear to be the reason why they made the made.",
+          "published": "Mon, 24 Aug 2026 19:11:50 -0400"
+        },
+        {
+          "title": "Raiders RB Ashton Jeanty Suffered Right Knee Injury",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVEVOcmhTQlNaSWplckt2QW94YkptSU54d0F6ZEhsaDZ0MVJPS0ZJUmNZVnZkSlgyM3M2NllTTTFidnhoNEFraHhXTURldVZtWlBsUVpRbTJ6aEtYSkVpaFplTHlNcVRKaEhKbGRhdEstUTBVbFdtSkVBNkQwTy1ucjlES2Q?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "Raiders RB Ashton Jeanty Suffered Right Knee Injury NFLTradeRumors.co",
+          "published": "Sun, 23 Aug 2026 21:34:17 GMT"
+        }
+      ]
+    },
+    {
+      "id": "colin-cowherd-ranks-packers-jordan-love-matt-lafleur-2c0d16aa",
+      "slug": "colin-cowherd-ranks-packers-jordan-love-matt-lafleur-2c0d16aa",
+      "sport": "football",
+      "headline": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger'",
+      "blurb": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger' NFL.com",
+      "summary": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger' NFL.com Former NFL Head Coach Makes Thoughts on Packers’ Jordan Love Extremely Clear heavy.com Colin Cowherd Ranks Packers' Jordan Love, Matt LaFleur Top-10 QB, Coach Combo roundtable.io Aggregated from NFL.com, heavy.com, roundtable.io.",
+      "category": "coach",
+      "published": "2026-03-29T07:00:00Z",
+      "updated": "2026-08-24T21:18:08Z",
+      "players": [
+        {
+          "key": "jordan love",
+          "name": "Jordan Love",
+          "slug": "jordan-love",
+          "pos": "QB",
+          "team": "GB"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Former NFL Head Coach Makes Thoughts on Packers’ Jordan Love Extremely Clear",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR3BuamM4ZzJNVG1HWnBiVHdTZWJ0ODdZQURXdVp0Wm9TcVNPV0k3eWRoLVM0bU1BdmtGMDdfLXRwaUdkRWpqY08yTmVWcTd6cDhQU0ZCSkNwTWFJSndxcGxpOVhTdFRrWnpFZFB5Njl5Tk9TSkcwUmZ5UnAwbVVIVGFVd2hNZDhnX1JSYXhvdE5BY0RkZGs2bXgwYVl2SzdX?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Former NFL Head Coach Makes Thoughts on Packers’ Jordan Love Extremely Clear heavy.com",
+          "published": "Mon, 24 Aug 2026 21:18:08 GMT"
+        },
+        {
+          "title": "Colin Cowherd Ranks Packers' Jordan Love, Matt LaFleur Top-10 QB, Coach Combo",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWWNkSGZrbmNKbFpDc0U5LVFSQ1ppYmNycFRROWFJc0l0ZjBaaU85WUdoZTdXbjd2TlppQmxqNmlhYmR6a3hORWlvc0NhQ0h5d1ZnTHhCQW5jOHdrWHctZFV1YW1NS3dvUGRVYURjNnVZSDkwUWZ6cklMZ2lJd2tpVzVEOEhrbUFmTmtmbk14QWE3aUdKZ2xZSi1TaldTNWpkdWFoM1J5Nzd2VC1YMmc0aXlEZ2VEMnI3aFMzOG5UTQ?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Colin Cowherd Ranks Packers' Jordan Love, Matt LaFleur Top-10 QB, Coach Combo roundtable.io",
+          "published": "Thu, 20 Aug 2026 16:25:36 GMT"
+        },
+        {
+          "title": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger'",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWVVfT2RwekpKZG9Uc3Z6VnB2WHd5OVh5TS1ySUw5Zy1ldVlaaGQ1UXplNHl2Y3pKM1czZHROdzBQQ1lEZ3U2YjNlV3RkN0tlZEtNN3dPMnBuQkUzTjdKWnE0SG1XS1NXaFJVeW9Ob1pnNW5YWlNpVy00ZDB1bjhmSnljaFpXSkJFeEVFVkxraWVzYmpEd3hGSUpuWDg5NlJDNG9Zd3hpTG1VcktJWXZ1Qnl4ZG9nUWlnM0E2X09FSDRaTVRaSXRCSmdkdw?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger' NFL.com",
+          "published": "Sun, 29 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger'",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQSm9QY0lnWEFTLVkwWWhOVjBZQlZHUDR2a0QxZ3lEWktrRkhJY0tOODlRRnJnN1BRSkVBSWoxVHI3N1dHZWU2VHBwYWYyU2x4M05sTzJ6b21wamVRU05GbFM4Q2lJcG9EN1RNQ2d6cjlqN21xajg5VE1EUGY1akRaQjI1UVd2ZXc3bndDR0otXzN2MWlneUhjQVJwdG5MeGFJYVVmeGFfTDFhb1NwMUpjRmNoR19aQnZ5SURQU3RaZjZEOWtWLUw3MHNpTHMzMVFSTWJzTkJwSktOdUk?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger' NFL.com",
+          "published": "Sun, 29 Mar 2026 07:00:00 GMT"
         }
       ]
     },
@@ -7983,138 +8556,204 @@
       ]
     },
     {
-      "id": "jeremiyah-love-remain-practice-d7b3b8b5",
-      "slug": "jeremiyah-love-remain-practice-d7b3b8b5",
+      "id": "texans-swing-trade-patriots-kayshon-boutte-part-playoff-d348738b",
+      "slug": "texans-swing-trade-patriots-kayshon-boutte-part-playoff-d348738b",
       "sport": "football",
-      "headline": "Jeremiyah Love will remain out of practice this week",
-      "blurb": "Coach Mike LaFleur said Monday that Love is progressing in his recovery from a high-ankle sprain but will remain sidelined this week, Darren Urban of the Cardinals' official…",
-      "summary": "Jeremiyah Love: Coach Mike LaFleur said Monday that Love is progressing in his recovery from a high-ankle sprain but will remain sidelined this week, Darren Urban of the Cardinals' official site reports. Visit RotoWire.com for more analysis on this update. Aggregated from ProFootball Talk on NBC Sports, PFT feed, RotoWire NFL.",
-      "category": "injury",
-      "published": "2026-08-24T20:17:19Z",
-      "updated": "2026-08-24T20:17:19Z",
+      "headline": "Texans Swing Trade for Patriots’ Kayshon Boutte, Part With Playoff Starter",
+      "blurb": "Patriots trade Kayshon Boutte to Texans for Jaylen Reed, pick ESPN",
+      "summary": "Patriots trade Kayshon Boutte to Texans for Jaylen Reed, pick ESPN Patriots trade WR Kayshon Boutte to the Houston Texans Audacy Texans Swing Trade for Patriots’ Kayshon Boutte, Part With Playoff Starter Yahoo Sports Aggregated from ESPN, Audacy, Yahoo Sports.",
+      "category": "trade",
+      "published": "2026-08-24T18:49:00Z",
+      "updated": "2026-08-24T21:45:31Z",
       "players": [
         {
-          "key": "jeremiyah love",
-          "name": "Jeremiyah Love",
-          "slug": "jeremiyah-love",
-          "pos": "RB",
-          "team": "ARI"
+          "key": "kayshon boutte",
+          "name": "Kayshon Boutte",
+          "slug": "kayshon-boutte",
+          "pos": "WR",
+          "team": "NE"
         }
       ],
       "sources": [
         {
-          "title": "Jeremiyah Love will remain out of practice this week",
-          "url": "https://sports.yahoo.com/articles/jeremiyah-love-remain-practice-week-201719723.html",
-          "publisher": "ProFootball Talk on NBC Sports",
+          "title": "Patriots trade Kayshon Boutte to Texans for Jaylen Reed, pick",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVHd3R1NDUHlZcnh3MHNtWkRmSGQ0bnJMRkNrSVlIeUtCTkNrM3MzQWNPRHNfSGZkYmYxYm5BWGw5dkdWb2NPNUtzYVc2WFJSREpDVWM5R2xhMDV6R2JxTFM4Nkdmc0hVX2xiWXY3a3JZQWJUUFdsaWp3WTdnelpPX0U3clBHTWVBNmZaa2R3M1FqSnRRWVE?oc=5",
+          "publisher": "ESPN",
           "kind": "article",
-          "snippet": "At least one J.",
-          "published": "Mon, 24 Aug 2026 20:17:19 +0000"
+          "snippet": "Patriots trade Kayshon Boutte to Texans for Jaylen Reed, pick ESPN",
+          "published": "Mon, 24 Aug 2026 18:58:00 GMT"
         },
         {
-          "title": "Jeremiyah Love will remain out of practice this week",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jeremiyah-love-will-remain-out-of-practice-this-week",
-          "publisher": "PFT feed",
+          "title": "Patriots trade WR Kayshon Boutte to the Houston Texans",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPanpEczVmNTluX2NzSDBERWpaZF9oM0JIX2IwRnpBUWlrS2xCZ3hkNE9vOXRlcWc2VHUyM0hzSU1TVjQ4WWI0eTU2aVpjVk1nb0tCSFh6aXIwb0t1SkpqNlNjTWgzSTVqeTlsSG55NmpmU2l4NDZjN0l3b0p2SkhoUUhhQ1h0Rk5RbkhvVjBfOTFlbm1CTmFDSlhfNFpvc00?oc=5",
+          "publisher": "Audacy",
           "kind": "article",
-          "snippet": "At least one J.",
-          "published": "Mon, 24 Aug 2026 16:17:19 -0400"
+          "snippet": "Patriots trade WR Kayshon Boutte to the Houston Texans Audacy",
+          "published": "Mon, 24 Aug 2026 18:49:00 GMT"
         },
         {
-          "title": "Jeremiyah Love: Remains sidelined by ankle issue",
-          "url": "https://www.rotowire.com//football/player/jeremiyah-love-19235",
-          "publisher": "RotoWire NFL",
+          "title": "Texans Swing Trade for Patriots’ Kayshon Boutte, Part With Playoff Starter",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSm9yNVFfQWlEd3Y3LW9BVlVCbVBCX0loRkhSVTZHN1dxYTFfanUxemRQQUlGNVVpYlFiV2N4ZlVFVEhJVFkyTVpMM0xmdEtaUTJLMVk3Q04zYmlmMk5UTXpIem9QZS1TN0lCald1dmRfSWo3TnNFRzVidWE2dE1LR1h3eFF2MWVhRy1pbw?oc=5",
+          "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "Coach Mike LaFleur said Monday that Love is progressing in his recovery from a high-ankle sprain but will remain sidelined this week, Darren Urban of the Cardinals' official site reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 24 Aug 2026 12:49:00 PM PDT"
+          "snippet": "Texans Swing Trade for Patriots’ Kayshon Boutte, Part With Playoff Starter Yahoo Sports",
+          "published": "Mon, 24 Aug 2026 21:45:31 GMT"
         }
       ]
     },
     {
-      "id": "cowboys-sign-te-mitchell-van-vooren-e246ddf1",
-      "slug": "cowboys-sign-te-mitchell-van-vooren-e246ddf1",
+      "id": "giants-roster-projections-malik-nabers-progresses-tae-banks-bd3c3104",
+      "slug": "giants-roster-projections-malik-nabers-progresses-tae-banks-bd3c3104",
       "sport": "football",
-      "headline": "Cowboys Sign TE Mitchell Van Vooren",
-      "blurb": "The Cowboys needed a tight end for depth purposes with injuries to Michael Trigg and D.J.",
-      "summary": "The Cowboys needed a tight end for depth purposes with injuries to Michael Trigg and D.J. Cowboys Sign TE Mitchell Van Vooren NFLTradeRumors.co Aggregated from ProFootball Talk on NBC Sports, PFT feed, NFLTradeRumors.co.",
-      "category": "injury",
-      "published": "2026-08-24T20:00:23Z",
-      "updated": "2026-08-24T20:02:30Z",
+      "headline": "Giants news: Roster projections, Malik Nabers progresses, Tae Banks, more",
+      "blurb": "New York Giants headlines for Tuesday.",
+      "summary": "Malik Nabers: New York Giants headlines for Tuesday. Desk reading of SB Nation.",
+      "category": "roster",
+      "published": "2026-08-25T10:00:00Z",
+      "updated": "2026-08-25T10:00:00Z",
       "players": [
         {
-          "key": "michael trigg",
-          "name": "Michael Trigg",
-          "slug": "michael-trigg",
-          "pos": "TE",
-          "team": "DAL"
+          "key": "malik nabers",
+          "name": "Malik Nabers",
+          "slug": "malik-nabers",
+          "pos": "WR",
+          "team": "NYG"
         }
       ],
       "sources": [
         {
-          "title": "Cowboys sign TE Mitch Van Vooren",
-          "url": "https://sports.yahoo.com/articles/cowboys-sign-te-mitch-van-200230070.html",
+          "title": "Giants news: Roster projections, Malik Nabers progresses, Tae Banks, more",
+          "url": "https://sports.yahoo.com/articles/giants-news-roster-projections-malik-100000119.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "New York Giants headlines for Tuesday.",
+          "published": "Tue, 25 Aug 2026 10:00:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "chargers-place-veteran-c-tyler-biadasz-knee-ending-c96e74de",
+      "slug": "chargers-place-veteran-c-tyler-biadasz-knee-ending-c96e74de",
+      "sport": "football",
+      "headline": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers",
+      "blurb": "Chargers place Tyler Biadasz on season-ending injured reserve NBC Sports",
+      "summary": "Chargers place Tyler Biadasz on season-ending injured reserve NBC Sports Chargers center Tyler Biadasz will not play at all this season. Chargers place Tyler Biadasz on season-ending injured reserve ESPN Aggregated from NBC Sports, ProFootball Talk on NBC Sports, PFT feed, ESPN, NFL.com and 8 more.",
+      "category": "injury",
+      "published": "2026-08-17T16:41:00Z",
+      "updated": "2026-08-24T03:07:50Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Chargers place Tyler Biadasz on season-ending injured reserve",
+          "url": "https://sports.yahoo.com/articles/chargers-place-tyler-biadasz-season-173108556.html",
           "publisher": "ProFootball Talk on NBC Sports",
           "kind": "article",
-          "snippet": "The Cowboys needed a tight end for depth purposes with injuries to Michael Trigg and D.J.",
-          "published": "Mon, 24 Aug 2026 20:02:30 +0000"
+          "snippet": "Chargers center Tyler Biadasz will not play at all this season.",
+          "published": "Sun, 23 Aug 2026 17:31:08 +0000"
         },
         {
-          "title": "Cowboys sign TE Mitch Van Vooren",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cowboys-sign-te-mitch-van-vooren",
+          "title": "Chargers place Tyler Biadasz on season-ending injured reserve",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chargers-place-tyler-biadasz-on-season-ending-injured-reserve",
           "publisher": "PFT feed",
           "kind": "article",
-          "snippet": "The Cowboys needed a tight end for depth purposes with injuries to Michael Trigg and D.J.",
-          "published": "Mon, 24 Aug 2026 16:02:30 -0400"
+          "snippet": "Chargers center Tyler Biadasz will not play at all this season.",
+          "published": "Sun, 23 Aug 2026 13:31:08 -0400"
         },
         {
-          "title": "Cowboys Sign TE Mitchell Van Vooren",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE83OGQyT1lCRldEaHh5SUx6cGVXaE03b0hDTmE2SXJGU1Q2NzFmT3JBMWl1M056TGZNc0hqTy1LUmxRaUxzNUx0bVZCekJZcGZ6SV9SeXF0Wm9vN3VEdVBWQVpSbnNwZDhDLTcwbjNxRQ?oc=5",
+          "title": "Chargers place Tyler Biadasz on season-ending injured reserve",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNekZ0bVF3VDFLWFY5bktJcXNwRi1MZnk5VWJsYTJjRDJJR3hHYjB2YTFER2d4X2QzdHpFeG8ybGc3OXViY0ZyemRnb0t2YjJnZTZVaEQzUDBuTnRxd0U0Y3E0RzRqWU51eXhWZHVlNTd6UjFvM09HOC1LbnhySjBkRTJBWl8xQ1AwNXFmckYxTDNuSW1FWTB0Nk5wUWF1RzJIM2hqaEF3?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Chargers place Tyler Biadasz on season-ending injured reserve ESPN",
+          "published": "Sun, 23 Aug 2026 17:10:00 GMT"
+        },
+        {
+          "title": "Chargers place veteran C Tyler Biadasz (knee) on season-ending injured reserve",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSjJKVHhOa09KS2xhaUJDTGFHM2RzS1c5WlBDMVRnTEpvZ2ZXZjRSMFYyYTBvZHNreEIybDRTRk93ZnNzNmlwWVpjUl9BTWE0clVlb2MxZWxaODBwRUYzVjF6QVkwTnVQX1A5MGZEc0pOYmNvMkRZb3lrV1p0X0xXd3VrQ2xZT1A5N0NlVk1DaFBQTnB2LWxwb1NDdmFxRXVHTDJn?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "Chargers place veteran C Tyler Biadasz (knee) on season-ending injured reserve NFL.com",
+          "published": "Sun, 23 Aug 2026 17:36:30 GMT"
+        },
+        {
+          "title": "Chargers Place Center Tyler Biadasz on Season-Ending Injured Reserve",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUzEyeUNiUm5jRGp5WThtazEtZHhNb3BhbG04ZDgtUV9IRTNnSVhoMmZNRUF1YUF6dlFuM2ZEaDc1Rk9ld0JHMHpYcUx1UkZJUm1Zc2ozamxBQVpMSDZEV2tYazltMFVGaXhLeDlnV0gtUS1tS3BIVUdSRXF6VWdHS2RTclgwMlBJT09KZzl4N0xRRmtfSWFXc2tVV2M4VjRaUTMxRVI2b1ZfNi1KVWpNZXVzOGEzQQ?oc=5",
+          "publisher": "RotoBaller",
+          "kind": "article",
+          "snippet": "Chargers Place Center Tyler Biadasz on Season-Ending Injured Reserve - NFL News | Fantasy Football RotoBaller",
+          "published": "Sun, 23 Aug 2026 17:32:50 GMT"
+        },
+        {
+          "title": "Chargers Placed C Tyler Biadasz On IR, Signed WR Gary Jennings",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPc1lDckl1UmJpai1hSThCUmNKTjBYM0c0REFibXJQZFZhUi1CalBBbHhvc0llSjgxX0E4eld2cnJya2RrWWFPbUlCSU9GWGFuOVdtWV83ckFsNENHbUtmSTJXVjVpZUN0ZkE1V3k5Y3didEFyc3B2V2dPYzJISTBmVmthTU5rZS1WNUd4SVpkZUxhUQ?oc=5",
           "publisher": "NFLTradeRumors.co",
           "kind": "article",
-          "snippet": "Cowboys Sign TE Mitchell Van Vooren NFLTradeRumors.co",
-          "published": "Mon, 24 Aug 2026 20:00:23 GMT"
-        }
-      ]
-    },
-    {
-      "id": "2026-2-takeaways-mike-washington-jr-rises-oronde-1b36cd17",
-      "slug": "2026-2-takeaways-mike-washington-jr-rises-oronde-1b36cd17",
-      "sport": "football",
-      "headline": "2026 NFL Preseason Week 2 Fantasy Takeaways: Mike Washington Jr. rises, Oronde Gadsden falls",
-      "blurb": "The second week of 2026 NFL preseason action has wrapped, meaning there are more snap counts and standout performances to break down.",
-      "summary": "Mike Washington Jr., Jonathon Brooks and Oronde Gadsden II: The second week of 2026 NFL preseason action has wrapped, meaning there are more snap counts and standout performances to break down. and Jonathon Brooks headline the biggest winners of last weekend's games. Desk reading of NBC Sports.",
-      "category": "wire",
-      "published": "2026-08-24T17:20:18Z",
-      "updated": "2026-08-24T17:20:18Z",
-      "players": [
-        {
-          "key": "mike washington",
-          "name": "Mike Washington Jr.",
-          "slug": "mike-washington",
-          "pos": "RB",
-          "team": "LV"
+          "snippet": "Chargers Placed C Tyler Biadasz On IR, Signed WR Gary Jennings NFLTradeRumors.co",
+          "published": "Sun, 23 Aug 2026 17:11:04 GMT"
         },
         {
-          "key": "jonathon brooks",
-          "name": "Jonathon Brooks",
-          "slug": "jonathon-brooks",
-          "pos": "RB",
-          "team": "CAR"
+          "title": "Vikings place veteran Jamal Adams on injured reserve, sign CB Bryce Phillips",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZGVhVjlBeFJlWU5uclRsV2VNWmY5ZGxUTjhGOG5jbkhhX05ZTmhWLU80NHE2N0d0dk1HUjBvR1p0bXNscTF3VzJkRU9ULVM0RUtNekJmaEtlczBxMm9NUDBqQmExWGNvZ0ZpenpVdUZPRjdsQXkwVXpsODkyMGc5My13Q0VlVEllZXhncXQ4YlZYRjdzMW4yM2tMaGpUNDVsREd1SXJfdmhmRkJaMXM4V29tbzhGYkU?oc=5",
+          "publisher": "MPR News",
+          "kind": "article",
+          "snippet": "Vikings place veteran Jamal Adams on injured reserve, sign CB Bryce Phillips MPR News",
+          "published": "Mon, 17 Aug 2026 17:32:00 GMT"
         },
         {
-          "key": "oronde gadsden",
-          "name": "Oronde Gadsden II",
-          "slug": "oronde-gadsden",
-          "pos": "TE",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
+          "title": "Vikings place veteran Jamal Adams on injured reserve",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSkV2OWVYLWdtQ1pxNmNWcURZVW5NdUZUdmtmdmVVeGc5WmtBQUpMSmFFZkhMY2w5elRRSUNRT3dOVk1UbTlVVEtibWZEVXM2dGhBYmMzbXJWb3dYMzNWdmF2NGRoQ2RHV3lxdVFfbFF0VFBmNjB5SFJfM21HRFRzN0dMQmhjNDlLYTVCYnRtbzJIV00zSjRsV2U5OTdLOFcwYTNYT2xoWGtldDRxQjZVQTdTclVpT1hGVU9kZ25COTEwUXlaMi1rT182UkZ1bzh4TzZjRnpn?oc=5",
+          "publisher": "kare11.com",
+          "kind": "article",
+          "snippet": "Vikings place veteran Jamal Adams on injured reserve kare11.com",
+          "published": "Mon, 17 Aug 2026 16:41:00 GMT"
+        },
         {
-          "title": "2026 NFL Preseason Week 2 Fantasy Takeaways: Mike Washington Jr. rises, Oronde Gadsden falls",
-          "url": "https://sports.yahoo.com/articles/2026-nfl-preseason-week-2-172018730.html",
+          "title": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNzA5aEk0bVA3bWtseTlxdGNnSjZvMHNPNzFxbWdkSXBCMHJmQ0FRNHZTSS1aNHZEblQtVnl3VmVCODRxZlJQUWZWQlQwRk9IRE9qZmhINDI3RjBMQ2pTdzNSVko0dDJrazlsSnhRdVFaSjZncWhTeVFMSGhEaU9fWkV6dThENWQtUDlGMFdhOUJ5WlJ3NFB1eTYyZU9Da3FWS1N5elQ1WTFYMmRSelhGd3I3dVVGRjc2Smk0cWVTNHRQRXdSdmowLXZnYw?oc=5",
+          "publisher": "The Washington Post",
+          "kind": "article",
+          "snippet": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers The Washington Post",
+          "published": "Sun, 23 Aug 2026 20:25:26 GMT"
+        },
+        {
+          "title": "Chargers place C Tyler Biadasz (knee) on season-ending IR.",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IYmtRT0ppRnVIdW5QUTdBalpOYnZvUDZJWVpGekRFT3BpbEFlalJ0YnRRTlQ4aHIwUkJyRjYta2dvUHRrVzgtbWN4cFBkcjVhVm53UWxOSQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Chargers place C Tyler Biadasz (knee) on season-ending IR. x.com",
+          "published": "Sun, 23 Aug 2026 17:01:19 GMT"
+        },
+        {
+          "title": "Chargers place Tyler Biadasz on season-ending injured reserve",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUHFkMkU2WHk0MjJ6VTBKUjdWS2FYekZ6RmUwREF5dWdRS2VYczQ1SU16WU42Q2hxaHVVREFtN1hGREpkNjFtX2pkOXYwOWM0blQxbWczWS1pTjB1VmxwNmxvV2daMlFTVFNwQTBCc3VfYWtPQ0o5SDNTbEhoYV9sTjlFRFc1cnY1RVo3ckMtdGZFSXpqRzh0R2c5ajR3VDFjNTR0eGJvUmRMTU82dHpPUk04azVWRnl1eVl1aG10dEk?oc=5",
           "publisher": "NBC Sports",
           "kind": "article",
-          "snippet": "The second week of 2026 NFL preseason action has wrapped, meaning there are more snap counts and standout performances to break down. Mike Washington Jr. and Jonathon Brooks headline the biggest winners of last weekend's games.",
-          "published": "Mon, 24 Aug 2026 17:20:18 +0000"
+          "snippet": "Chargers place Tyler Biadasz on season-ending injured reserve NBC Sports",
+          "published": "Sun, 23 Aug 2026 17:49:53 GMT"
+        },
+        {
+          "title": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPOGVVWWJkNzlDMHpsUTlGdGFxM3RHQWVmQzBDbjdxZGowS3NONEJGWVRlTjRfczVQY2p0S0NDLUh4SkFTalk1ODgxa192U0FNbjlLdjRCQ1VOd0hoUGVQQ19ZV1R5OXZRajZ2QWFmOVowQnppdm5Cay1iWGFLd3ExdHUxdnJmaXA0QVhYb2pqY3JBdWhnQWRhRkRVOFVFVjVheHBLZ0JfcHE4NkRLdE80UE1uU1A4NzFDc3ZyTlZURUZ6ZFVWVjRfRGJ1NkZ5UFNrWURITkhtaS1vd0J5MFJIdVVKa3RlUEdOMjBKbmF0bEc3R040QjgtNHBXTlVHMi1iUXpleVV2bng?oc=5",
+          "publisher": "Daily Jefferson County Union",
+          "kind": "article",
+          "snippet": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers Daily Jefferson County Union",
+          "published": "Sun, 23 Aug 2026 20:06:48 GMT"
+        },
+        {
+          "title": "Tyler Biadasz (knee) placed on season-ending injured reserve",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYS1MRTFzOG5oQnlzYWdRZ2RONWlOeV9BcEVRaEJrSzVuUWdwWDYtOW1tZGt0WFF1TUpsclVIUUVIY2NrSGtuY3dzUnRCeGkxX21ZTjROb2NlSEwwYjdzbU9jbFVHcXB1U3ktbWZQM3dBNzM0YnBJMVNyU29RaXcwNEVodF9MenAwdjJ6RG5oU1dhV1ZuSkJIeVFkdlIxS01EU21MMWNUOWpQd9IBrwFBVV95cUxNZHd5VktINFBiVUg2eVNCbzNFLTNIU0IyMVhCY3pqMGlucWJrMmd4QmtRZWp6dmxzMTZIMU5BZnNiR1RZNm5qX29PNnJWQU5kRFo3ZDF5SHdOR1drYmV3ak5uNlo4V2NIVEFvdFZuUzRTd1pYc3J2dlVraGg5Z2lBUEpPMkVGRHJicmdtZHFSd2ktZFpEY0Z0ZWk0UTdPa0xmT1ZWQmhqeVFLblZFbFNN?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Tyler Biadasz (knee) placed on season-ending injured reserve FantasyPros",
+          "published": "Sun, 23 Aug 2026 17:05:47 GMT"
+        },
+        {
+          "title": "Chargers center Tyler Biadasz is out indefinitely after suffering damage to his ACL and additional injuries to his left knee during Tuesday’s joint practice against the 49ers, per @RapSheet and me. Biadasz will meet with more doctors to try to get more clarity.",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4xQmZKN2pBYlFheGs5bzl2a3hSOVI3cWdPUC0xM3dxY3J0Zk9adUxpRkFGZDFfa2ljeGU5b040OTJIQ0VhVnFzWW42c05walEyRmp3clZZaGhVRVR1V1dmMjNsMA?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Chargers center Tyler Biadasz is out indefinitely after suffering damage to his ACL and additional injuries to his left knee during Tuesday’s joint practice against the 49ers, per @RapSheet and me. Biadasz will meet with more doctors to try to get more clarity. x.com",
+          "published": "Wed, 19 Aug 2026 15:15:04 GMT"
         }
       ]
     },
@@ -8387,312 +9026,40 @@
       ]
     },
     {
-      "id": "commanders-running-back-rachaad-white-back-individual-work-fd153a2c",
-      "slug": "commanders-running-back-rachaad-white-back-individual-work-fd153a2c",
+      "id": "carson-beck-still-dealing-rib-injury-tbd-if-c310ee26",
+      "slug": "carson-beck-still-dealing-rib-injury-tbd-if-c310ee26",
       "sport": "football",
-      "headline": "Commanders running back Rachaad White back to individual work after hamstring injury",
-      "blurb": "Commanders running back Rachaad White is making progress in returning from a hamstring injury.",
-      "summary": "Commanders running back Rachaad White is making progress in returning from a hamstring injury. Coach Dan Quinn said White (hamstring) will participate in individual drills at Monday's practice, Ben Standig of Big 100 Washington D.C. Visit RotoWire.com for more analysis on this update. Aggregated from ProFootball Talk on NBC Sports, PFT feed, RotoWire NFL.",
+      "headline": "Carson Beck still dealing with rib injury, TBD if he'll play on Friday",
+      "blurb": "Cardinals rookie quarterback Carson Beck is making progress, but has not fully recovered from the rib injury he suffered in the Hall of Fame Game.",
+      "summary": "Cardinals rookie quarterback Carson Beck is making progress, but has not fully recovered from the rib injury he suffered in the Hall of Fame Game. Aggregated from ProFootball Talk on NBC Sports, PFT feed.",
       "category": "injury",
-      "published": "2026-08-24T18:28:22Z",
-      "updated": "2026-08-24T18:28:22Z",
+      "published": "2026-08-24T20:31:22Z",
+      "updated": "2026-08-24T20:31:22Z",
       "players": [
         {
-          "key": "rachaad white",
-          "name": "Rachaad White",
-          "slug": "rachaad-white",
-          "pos": "RB",
-          "team": "WAS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Commanders running back Rachaad White back to individual work after hamstring injury",
-          "url": "https://sports.yahoo.com/articles/commanders-running-back-rachaad-white-182822230.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Commanders running back Rachaad White is making progress in returning from a hamstring injury.",
-          "published": "Mon, 24 Aug 2026 18:28:22 +0000"
-        },
-        {
-          "title": "Commanders running back Rachaad White back to individual work after hamstring injury",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-running-back-rachaad-white-back-to-individual-work-after-hamstring-injury",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Commanders running back Rachaad White is making progress in returning from a hamstring injury.",
-          "published": "Mon, 24 Aug 2026 14:28:22 -0400"
-        },
-        {
-          "title": "Rachaad White: Back in individual drills Monday",
-          "url": "https://www.rotowire.com//football/player/rachaad-white-15802",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Coach Dan Quinn said White (hamstring) will participate in individual drills at Monday's practice, Ben Standig of Big 100 Washington D.C. reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 24 Aug 2026 11:26:00 AM PDT"
-        }
-      ]
-    },
-    {
-      "id": "colin-cowherd-ranks-packers-jordan-love-matt-lafleur-2c0d16aa",
-      "slug": "colin-cowherd-ranks-packers-jordan-love-matt-lafleur-2c0d16aa",
-      "sport": "football",
-      "headline": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger'",
-      "blurb": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger' NFL.com",
-      "summary": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger' NFL.com Former NFL Head Coach Makes Thoughts on Packers’ Jordan Love Extremely Clear heavy.com Colin Cowherd Ranks Packers' Jordan Love, Matt LaFleur Top-10 QB, Coach Combo roundtable.io Aggregated from NFL.com, heavy.com, roundtable.io.",
-      "category": "coach",
-      "published": "2026-03-29T07:00:00Z",
-      "updated": "2026-08-24T21:18:08Z",
-      "players": [
-        {
-          "key": "jordan love",
-          "name": "Jordan Love",
-          "slug": "jordan-love",
+          "key": "carson beck",
+          "name": "Carson Beck",
+          "slug": "carson-beck",
           "pos": "QB",
-          "team": "GB"
+          "team": "ARI"
         }
       ],
       "sources": [
         {
-          "title": "Former NFL Head Coach Makes Thoughts on Packers’ Jordan Love Extremely Clear",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR3BuamM4ZzJNVG1HWnBiVHdTZWJ0ODdZQURXdVp0Wm9TcVNPV0k3eWRoLVM0bU1BdmtGMDdfLXRwaUdkRWpqY08yTmVWcTd6cDhQU0ZCSkNwTWFJSndxcGxpOVhTdFRrWnpFZFB5Njl5Tk9TSkcwUmZ5UnAwbVVIVGFVd2hNZDhnX1JSYXhvdE5BY0RkZGs2bXgwYVl2SzdX?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Former NFL Head Coach Makes Thoughts on Packers’ Jordan Love Extremely Clear heavy.com",
-          "published": "Mon, 24 Aug 2026 21:18:08 GMT"
-        },
-        {
-          "title": "Colin Cowherd Ranks Packers' Jordan Love, Matt LaFleur Top-10 QB, Coach Combo",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWWNkSGZrbmNKbFpDc0U5LVFSQ1ppYmNycFRROWFJc0l0ZjBaaU85WUdoZTdXbjd2TlppQmxqNmlhYmR6a3hORWlvc0NhQ0h5d1ZnTHhCQW5jOHdrWHctZFV1YW1NS3dvUGRVYURjNnVZSDkwUWZ6cklMZ2lJd2tpVzVEOEhrbUFmTmtmbk14QWE3aUdKZ2xZSi1TaldTNWpkdWFoM1J5Nzd2VC1YMmc0aXlEZ2VEMnI3aFMzOG5UTQ?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Colin Cowherd Ranks Packers' Jordan Love, Matt LaFleur Top-10 QB, Coach Combo roundtable.io",
-          "published": "Thu, 20 Aug 2026 16:25:36 GMT"
-        },
-        {
-          "title": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger'",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWVVfT2RwekpKZG9Uc3Z6VnB2WHd5OVh5TS1ySUw5Zy1ldVlaaGQ1UXplNHl2Y3pKM1czZHROdzBQQ1lEZ3U2YjNlV3RkN0tlZEtNN3dPMnBuQkUzTjdKWnE0SG1XS1NXaFJVeW9Ob1pnNW5YWlNpVy00ZDB1bjhmSnljaFpXSkJFeEVFVkxraWVzYmpEd3hGSUpuWDg5NlJDNG9Zd3hpTG1VcktJWXZ1Qnl4ZG9nUWlnM0E2X09FSDRaTVRaSXRCSmdkdw?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger' NFL.com",
-          "published": "Sun, 29 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger'",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQSm9QY0lnWEFTLVkwWWhOVjBZQlZHUDR2a0QxZ3lEWktrRkhJY0tOODlRRnJnN1BRSkVBSWoxVHI3N1dHZWU2VHBwYWYyU2x4M05sTzJ6b21wamVRU05GbFM4Q2lJcG9EN1RNQ2d6cjlqN21xajg5VE1EUGY1akRaQjI1UVd2ZXc3bndDR0otXzN2MWlneUhjQVJwdG5MeGFJYVVmeGFfTDFhb1NwMUpjRmNoR19aQnZ5SURQU3RaZjZEOWtWLUw3MHNpTHMzMVFSTWJzTkJwSktOdUk?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "Packers' Matt LaFleur feels fortunate to have Jordan Love: Teams are only as good as 'guy pulling the trigger' NFL.com",
-          "published": "Sun, 29 Mar 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "saints-fear-rb-ty-chandler-suffered-serious-knee-a95e48a4",
-      "slug": "saints-fear-rb-ty-chandler-suffered-serious-knee-a95e48a4",
-      "sport": "football",
-      "headline": "Report: Saints fear RB Ty Chandler suffered serious knee injury",
-      "blurb": "The Saints made a trade for Zamir White on Monday and injuries in their offensive backfield appear to be the reason why they made the made.",
-      "summary": "Ashton Jeanty: The Saints made a trade for Zamir White on Monday and injuries in their offensive backfield appear to be the reason why they made the made. Raiders RB Ashton Jeanty Suffered Right Knee Injury NFLTradeRumors.co Aggregated from PFT feed, NFLTradeRumors.co.",
-      "category": "injury",
-      "published": "2026-08-23T21:34:17Z",
-      "updated": "2026-08-24T23:11:50Z",
-      "players": [
-        {
-          "key": "ashton jeanty",
-          "name": "Ashton Jeanty",
-          "slug": "ashton-jeanty",
-          "pos": "RB",
-          "team": "LV"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Report: Saints fear RB Ty Chandler suffered serious knee injury",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-saints-fear-rb-ty-chandler-suffered-serious-knee-injury",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "The Saints made a trade for Zamir White on Monday and injuries in their offensive backfield appear to be the reason why they made the made.",
-          "published": "Mon, 24 Aug 2026 19:11:50 -0400"
-        },
-        {
-          "title": "Raiders RB Ashton Jeanty Suffered Right Knee Injury",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVEVOcmhTQlNaSWplckt2QW94YkptSU54d0F6ZEhsaDZ0MVJPS0ZJUmNZVnZkSlgyM3M2NllTTTFidnhoNEFraHhXTURldVZtWlBsUVpRbTJ6aEtYSkVpaFplTHlNcVRKaEhKbGRhdEstUTBVbFdtSkVBNkQwTy1ucjlES2Q?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "Raiders RB Ashton Jeanty Suffered Right Knee Injury NFLTradeRumors.co",
-          "published": "Sun, 23 Aug 2026 21:34:17 GMT"
-        }
-      ]
-    },
-    {
-      "id": "texans-swing-trade-patriots-kayshon-boutte-part-playoff-d348738b",
-      "slug": "texans-swing-trade-patriots-kayshon-boutte-part-playoff-d348738b",
-      "sport": "football",
-      "headline": "Texans Swing Trade for Patriots’ Kayshon Boutte, Part With Playoff Starter",
-      "blurb": "Patriots trade Kayshon Boutte to Texans for Jaylen Reed, pick ESPN",
-      "summary": "Patriots trade Kayshon Boutte to Texans for Jaylen Reed, pick ESPN Patriots trade WR Kayshon Boutte to the Houston Texans Audacy Texans Swing Trade for Patriots’ Kayshon Boutte, Part With Playoff Starter Yahoo Sports Aggregated from ESPN, Audacy, Yahoo Sports.",
-      "category": "trade",
-      "published": "2026-08-24T18:49:00Z",
-      "updated": "2026-08-24T21:45:31Z",
-      "players": [
-        {
-          "key": "kayshon boutte",
-          "name": "Kayshon Boutte",
-          "slug": "kayshon-boutte",
-          "pos": "WR",
-          "team": "NE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Patriots trade Kayshon Boutte to Texans for Jaylen Reed, pick",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVHd3R1NDUHlZcnh3MHNtWkRmSGQ0bnJMRkNrSVlIeUtCTkNrM3MzQWNPRHNfSGZkYmYxYm5BWGw5dkdWb2NPNUtzYVc2WFJSREpDVWM5R2xhMDV6R2JxTFM4Nkdmc0hVX2xiWXY3a3JZQWJUUFdsaWp3WTdnelpPX0U3clBHTWVBNmZaa2R3M1FqSnRRWVE?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Patriots trade Kayshon Boutte to Texans for Jaylen Reed, pick ESPN",
-          "published": "Mon, 24 Aug 2026 18:58:00 GMT"
-        },
-        {
-          "title": "Patriots trade WR Kayshon Boutte to the Houston Texans",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPanpEczVmNTluX2NzSDBERWpaZF9oM0JIX2IwRnpBUWlrS2xCZ3hkNE9vOXRlcWc2VHUyM0hzSU1TVjQ4WWI0eTU2aVpjVk1nb0tCSFh6aXIwb0t1SkpqNlNjTWgzSTVqeTlsSG55NmpmU2l4NDZjN0l3b0p2SkhoUUhhQ1h0Rk5RbkhvVjBfOTFlbm1CTmFDSlhfNFpvc00?oc=5",
-          "publisher": "Audacy",
-          "kind": "article",
-          "snippet": "Patriots trade WR Kayshon Boutte to the Houston Texans Audacy",
-          "published": "Mon, 24 Aug 2026 18:49:00 GMT"
-        },
-        {
-          "title": "Texans Swing Trade for Patriots’ Kayshon Boutte, Part With Playoff Starter",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSm9yNVFfQWlEd3Y3LW9BVlVCbVBCX0loRkhSVTZHN1dxYTFfanUxemRQQUlGNVVpYlFiV2N4ZlVFVEhJVFkyTVpMM0xmdEtaUTJLMVk3Q04zYmlmMk5UTXpIem9QZS1TN0lCald1dmRfSWo3TnNFRzVidWE2dE1LR1h3eFF2MWVhRy1pbw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Texans Swing Trade for Patriots’ Kayshon Boutte, Part With Playoff Starter Yahoo Sports",
-          "published": "Mon, 24 Aug 2026 21:45:31 GMT"
-        }
-      ]
-    },
-    {
-      "id": "chargers-place-veteran-c-tyler-biadasz-knee-ending-c96e74de",
-      "slug": "chargers-place-veteran-c-tyler-biadasz-knee-ending-c96e74de",
-      "sport": "football",
-      "headline": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers",
-      "blurb": "Chargers place Tyler Biadasz on season-ending injured reserve NBC Sports",
-      "summary": "Chargers place Tyler Biadasz on season-ending injured reserve NBC Sports Chargers center Tyler Biadasz will not play at all this season. Chargers place Tyler Biadasz on season-ending injured reserve ESPN Aggregated from NBC Sports, ProFootball Talk on NBC Sports, PFT feed, ESPN, NFL.com and 8 more.",
-      "category": "injury",
-      "published": "2026-08-17T16:41:00Z",
-      "updated": "2026-08-24T03:07:50Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Chargers place Tyler Biadasz on season-ending injured reserve",
-          "url": "https://sports.yahoo.com/articles/chargers-place-tyler-biadasz-season-173108556.html",
+          "title": "Carson Beck still dealing with rib injury, TBD if he'll play on Friday",
+          "url": "https://sports.yahoo.com/articles/carson-beck-still-dealing-rib-203122581.html",
           "publisher": "ProFootball Talk on NBC Sports",
           "kind": "article",
-          "snippet": "Chargers center Tyler Biadasz will not play at all this season.",
-          "published": "Sun, 23 Aug 2026 17:31:08 +0000"
+          "snippet": "Cardinals rookie quarterback Carson Beck is making progress, but has not fully recovered from the rib injury he suffered in the Hall of Fame Game.",
+          "published": "Mon, 24 Aug 2026 20:31:22 +0000"
         },
         {
-          "title": "Chargers place Tyler Biadasz on season-ending injured reserve",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chargers-place-tyler-biadasz-on-season-ending-injured-reserve",
+          "title": "Carson Beck still dealing with rib injury, TBD if he'll play on Friday",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/carson-beck-still-dealing-with-rib-injury-tbd-if-hell-play-on-friday",
           "publisher": "PFT feed",
           "kind": "article",
-          "snippet": "Chargers center Tyler Biadasz will not play at all this season.",
-          "published": "Sun, 23 Aug 2026 13:31:08 -0400"
-        },
-        {
-          "title": "Chargers place Tyler Biadasz on season-ending injured reserve",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNekZ0bVF3VDFLWFY5bktJcXNwRi1MZnk5VWJsYTJjRDJJR3hHYjB2YTFER2d4X2QzdHpFeG8ybGc3OXViY0ZyemRnb0t2YjJnZTZVaEQzUDBuTnRxd0U0Y3E0RzRqWU51eXhWZHVlNTd6UjFvM09HOC1LbnhySjBkRTJBWl8xQ1AwNXFmckYxTDNuSW1FWTB0Nk5wUWF1RzJIM2hqaEF3?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Chargers place Tyler Biadasz on season-ending injured reserve ESPN",
-          "published": "Sun, 23 Aug 2026 17:10:00 GMT"
-        },
-        {
-          "title": "Chargers place veteran C Tyler Biadasz (knee) on season-ending injured reserve",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSjJKVHhOa09KS2xhaUJDTGFHM2RzS1c5WlBDMVRnTEpvZ2ZXZjRSMFYyYTBvZHNreEIybDRTRk93ZnNzNmlwWVpjUl9BTWE0clVlb2MxZWxaODBwRUYzVjF6QVkwTnVQX1A5MGZEc0pOYmNvMkRZb3lrV1p0X0xXd3VrQ2xZT1A5N0NlVk1DaFBQTnB2LWxwb1NDdmFxRXVHTDJn?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "Chargers place veteran C Tyler Biadasz (knee) on season-ending injured reserve NFL.com",
-          "published": "Sun, 23 Aug 2026 17:36:30 GMT"
-        },
-        {
-          "title": "Chargers Place Center Tyler Biadasz on Season-Ending Injured Reserve",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUzEyeUNiUm5jRGp5WThtazEtZHhNb3BhbG04ZDgtUV9IRTNnSVhoMmZNRUF1YUF6dlFuM2ZEaDc1Rk9ld0JHMHpYcUx1UkZJUm1Zc2ozamxBQVpMSDZEV2tYazltMFVGaXhLeDlnV0gtUS1tS3BIVUdSRXF6VWdHS2RTclgwMlBJT09KZzl4N0xRRmtfSWFXc2tVV2M4VjRaUTMxRVI2b1ZfNi1KVWpNZXVzOGEzQQ?oc=5",
-          "publisher": "RotoBaller",
-          "kind": "article",
-          "snippet": "Chargers Place Center Tyler Biadasz on Season-Ending Injured Reserve - NFL News | Fantasy Football RotoBaller",
-          "published": "Sun, 23 Aug 2026 17:32:50 GMT"
-        },
-        {
-          "title": "Chargers Placed C Tyler Biadasz On IR, Signed WR Gary Jennings",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPc1lDckl1UmJpai1hSThCUmNKTjBYM0c0REFibXJQZFZhUi1CalBBbHhvc0llSjgxX0E4eld2cnJya2RrWWFPbUlCSU9GWGFuOVdtWV83ckFsNENHbUtmSTJXVjVpZUN0ZkE1V3k5Y3didEFyc3B2V2dPYzJISTBmVmthTU5rZS1WNUd4SVpkZUxhUQ?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "Chargers Placed C Tyler Biadasz On IR, Signed WR Gary Jennings NFLTradeRumors.co",
-          "published": "Sun, 23 Aug 2026 17:11:04 GMT"
-        },
-        {
-          "title": "Vikings place veteran Jamal Adams on injured reserve, sign CB Bryce Phillips",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZGVhVjlBeFJlWU5uclRsV2VNWmY5ZGxUTjhGOG5jbkhhX05ZTmhWLU80NHE2N0d0dk1HUjBvR1p0bXNscTF3VzJkRU9ULVM0RUtNekJmaEtlczBxMm9NUDBqQmExWGNvZ0ZpenpVdUZPRjdsQXkwVXpsODkyMGc5My13Q0VlVEllZXhncXQ4YlZYRjdzMW4yM2tMaGpUNDVsREd1SXJfdmhmRkJaMXM4V29tbzhGYkU?oc=5",
-          "publisher": "MPR News",
-          "kind": "article",
-          "snippet": "Vikings place veteran Jamal Adams on injured reserve, sign CB Bryce Phillips MPR News",
-          "published": "Mon, 17 Aug 2026 17:32:00 GMT"
-        },
-        {
-          "title": "Vikings place veteran Jamal Adams on injured reserve",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNSkV2OWVYLWdtQ1pxNmNWcURZVW5NdUZUdmtmdmVVeGc5WmtBQUpMSmFFZkhMY2w5elRRSUNRT3dOVk1UbTlVVEtibWZEVXM2dGhBYmMzbXJWb3dYMzNWdmF2NGRoQ2RHV3lxdVFfbFF0VFBmNjB5SFJfM21HRFRzN0dMQmhjNDlLYTVCYnRtbzJIV00zSjRsV2U5OTdLOFcwYTNYT2xoWGtldDRxQjZVQTdTclVpT1hGVU9kZ25COTEwUXlaMi1rT182UkZ1bzh4TzZjRnpn?oc=5",
-          "publisher": "kare11.com",
-          "kind": "article",
-          "snippet": "Vikings place veteran Jamal Adams on injured reserve kare11.com",
-          "published": "Mon, 17 Aug 2026 16:41:00 GMT"
-        },
-        {
-          "title": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPNzA5aEk0bVA3bWtseTlxdGNnSjZvMHNPNzFxbWdkSXBCMHJmQ0FRNHZTSS1aNHZEblQtVnl3VmVCODRxZlJQUWZWQlQwRk9IRE9qZmhINDI3RjBMQ2pTdzNSVko0dDJrazlsSnhRdVFaSjZncWhTeVFMSGhEaU9fWkV6dThENWQtUDlGMFdhOUJ5WlJ3NFB1eTYyZU9Da3FWS1N5elQ1WTFYMmRSelhGd3I3dVVGRjc2Smk0cWVTNHRQRXdSdmowLXZnYw?oc=5",
-          "publisher": "The Washington Post",
-          "kind": "article",
-          "snippet": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers The Washington Post",
-          "published": "Sun, 23 Aug 2026 20:25:26 GMT"
-        },
-        {
-          "title": "Chargers place C Tyler Biadasz (knee) on season-ending IR.",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1IYmtRT0ppRnVIdW5QUTdBalpOYnZvUDZJWVpGekRFT3BpbEFlalJ0YnRRTlQ4aHIwUkJyRjYta2dvUHRrVzgtbWN4cFBkcjVhVm53UWxOSQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Chargers place C Tyler Biadasz (knee) on season-ending IR. x.com",
-          "published": "Sun, 23 Aug 2026 17:01:19 GMT"
-        },
-        {
-          "title": "Chargers place Tyler Biadasz on season-ending injured reserve",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUHFkMkU2WHk0MjJ6VTBKUjdWS2FYekZ6RmUwREF5dWdRS2VYczQ1SU16WU42Q2hxaHVVREFtN1hGREpkNjFtX2pkOXYwOWM0blQxbWczWS1pTjB1VmxwNmxvV2daMlFTVFNwQTBCc3VfYWtPQ0o5SDNTbEhoYV9sTjlFRFc1cnY1RVo3ckMtdGZFSXpqRzh0R2c5ajR3VDFjNTR0eGJvUmRMTU82dHpPUk04azVWRnl1eVl1aG10dEk?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Chargers place Tyler Biadasz on season-ending injured reserve NBC Sports",
-          "published": "Sun, 23 Aug 2026 17:49:53 GMT"
-        },
-        {
-          "title": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers",
-          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPOGVVWWJkNzlDMHpsUTlGdGFxM3RHQWVmQzBDbjdxZGowS3NONEJGWVRlTjRfczVQY2p0S0NDLUh4SkFTalk1ODgxa192U0FNbjlLdjRCQ1VOd0hoUGVQQ19ZV1R5OXZRajZ2QWFmOVowQnppdm5Cay1iWGFLd3ExdHUxdnJmaXA0QVhYb2pqY3JBdWhnQWRhRkRVOFVFVjVheHBLZ0JfcHE4NkRLdE80UE1uU1A4NzFDc3ZyTlZURUZ6ZFVWVjRfRGJ1NkZ5UFNrWURITkhtaS1vd0J5MFJIdVVKa3RlUEdOMjBKbmF0bEc3R040QjgtNHBXTlVHMi1iUXpleVV2bng?oc=5",
-          "publisher": "Daily Jefferson County Union",
-          "kind": "article",
-          "snippet": "Chargers put center Tyler Biadasz on IR after he injured left knee in joint practice with 49ers Daily Jefferson County Union",
-          "published": "Sun, 23 Aug 2026 20:06:48 GMT"
-        },
-        {
-          "title": "Tyler Biadasz (knee) placed on season-ending injured reserve",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYS1MRTFzOG5oQnlzYWdRZ2RONWlOeV9BcEVRaEJrSzVuUWdwWDYtOW1tZGt0WFF1TUpsclVIUUVIY2NrSGtuY3dzUnRCeGkxX21ZTjROb2NlSEwwYjdzbU9jbFVHcXB1U3ktbWZQM3dBNzM0YnBJMVNyU29RaXcwNEVodF9MenAwdjJ6RG5oU1dhV1ZuSkJIeVFkdlIxS01EU21MMWNUOWpQd9IBrwFBVV95cUxNZHd5VktINFBiVUg2eVNCbzNFLTNIU0IyMVhCY3pqMGlucWJrMmd4QmtRZWp6dmxzMTZIMU5BZnNiR1RZNm5qX29PNnJWQU5kRFo3ZDF5SHdOR1drYmV3ak5uNlo4V2NIVEFvdFZuUzRTd1pYc3J2dlVraGg5Z2lBUEpPMkVGRHJicmdtZHFSd2ktZFpEY0Z0ZWk0UTdPa0xmT1ZWQmhqeVFLblZFbFNN?oc=5",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "Tyler Biadasz (knee) placed on season-ending injured reserve FantasyPros",
-          "published": "Sun, 23 Aug 2026 17:05:47 GMT"
-        },
-        {
-          "title": "Chargers center Tyler Biadasz is out indefinitely after suffering damage to his ACL and additional injuries to his left knee during Tuesday’s joint practice against the 49ers, per @RapSheet and me. Biadasz will meet with more doctors to try to get more clarity.",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4xQmZKN2pBYlFheGs5bzl2a3hSOVI3cWdPUC0xM3dxY3J0Zk9adUxpRkFGZDFfa2ljeGU5b040OTJIQ0VhVnFzWW42c05walEyRmp3clZZaGhVRVR1V1dmMjNsMA?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Chargers center Tyler Biadasz is out indefinitely after suffering damage to his ACL and additional injuries to his left knee during Tuesday’s joint practice against the 49ers, per @RapSheet and me. Biadasz will meet with more doctors to try to get more clarity. x.com",
-          "published": "Wed, 19 Aug 2026 15:15:04 GMT"
+          "snippet": "Cardinals rookie quarterback Carson Beck is making progress, but has not fully recovered from the rib injury he suffered in the Hall of Fame Game.",
+          "published": "Mon, 24 Aug 2026 16:31:22 -0400"
         }
       ]
     },
@@ -8839,131 +9206,40 @@
       ]
     },
     {
-      "id": "carson-beck-still-dealing-rib-injury-tbd-if-c310ee26",
-      "slug": "carson-beck-still-dealing-rib-injury-tbd-if-c310ee26",
+      "id": "rams-ol-justin-dedich-activated-non-injury-list-a0b2ada8",
+      "slug": "rams-ol-justin-dedich-activated-non-injury-list-a0b2ada8",
       "sport": "football",
-      "headline": "Carson Beck still dealing with rib injury, TBD if he'll play on Friday",
-      "blurb": "Cardinals rookie quarterback Carson Beck is making progress, but has not fully recovered from the rib injury he suffered in the Hall of Fame Game.",
-      "summary": "Cardinals rookie quarterback Carson Beck is making progress, but has not fully recovered from the rib injury he suffered in the Hall of Fame Game. Aggregated from ProFootball Talk on NBC Sports, PFT feed.",
+      "headline": "Rams OL Justin Dedich activated from non-football injury list nfl.com/news/nfl-news-…",
+      "blurb": "Dolphins activated wide receiver Chris Bell off the non-football injury list.",
+      "summary": "Dolphins activated wide receiver Chris Bell off the non-football injury list. Rams OL Justin Dedich activated from non-football injury list nfl.com/news/nfl-news-… x.com Desk reading of x.com.",
       "category": "injury",
-      "published": "2026-08-24T20:31:22Z",
-      "updated": "2026-08-24T20:31:22Z",
+      "published": "2026-08-17T13:16:26Z",
+      "updated": "2026-08-24T18:14:30Z",
       "players": [
         {
-          "key": "carson beck",
-          "name": "Carson Beck",
-          "slug": "carson-beck",
-          "pos": "QB",
-          "team": "ARI"
+          "key": "chris bell",
+          "name": "Chris Bell",
+          "slug": "chris-bell",
+          "pos": "WR",
+          "team": "MIA"
         }
       ],
       "sources": [
         {
-          "title": "Carson Beck still dealing with rib injury, TBD if he'll play on Friday",
-          "url": "https://sports.yahoo.com/articles/carson-beck-still-dealing-rib-203122581.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Cardinals rookie quarterback Carson Beck is making progress, but has not fully recovered from the rib injury he suffered in the Hall of Fame Game.",
-          "published": "Mon, 24 Aug 2026 20:31:22 +0000"
+          "title": "Dolphins activated wide receiver Chris Bell off the non-football injury list.",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1icVh4Rk13eG8zRVZWNzh3bndRU1ZiSlByNlVsZVNJSUhzWFZFV1hQNHV2LUxjMWNFM1dSWmJKOXpva05zaEtRVGFnZVFPUHJVMlZBV2laVDEyZ3g2WURqZnNaYw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Dolphins activated wide receiver Chris Bell off the non-football injury list. x.com",
+          "published": "Mon, 17 Aug 2026 13:16:26 GMT"
         },
         {
-          "title": "Carson Beck still dealing with rib injury, TBD if he'll play on Friday",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/carson-beck-still-dealing-with-rib-injury-tbd-if-hell-play-on-friday",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Cardinals rookie quarterback Carson Beck is making progress, but has not fully recovered from the rib injury he suffered in the Hall of Fame Game.",
-          "published": "Mon, 24 Aug 2026 16:31:22 -0400"
-        }
-      ]
-    },
-    {
-      "id": "5-steelers-storylines-matchup-new-york-jets-88a12e14",
-      "slug": "5-steelers-storylines-matchup-new-york-jets-88a12e14",
-      "sport": "football",
-      "headline": "New York Jets News: Jets beat Steelers in preseason action as Geno Smith stars",
-      "blurb": "Here are your daily Jets links for your reading enjoyment.",
-      "summary": "Geno Smith, Mason Rudolph, Will Howard and Drew Allar: Here are your daily Jets links for your reading enjoyment. Bent – How the hell am I supposed to know who this is? – Nate Lynn Bent – In-depth analysis – Jets at Steelers: Special Teams Randy Lange – A Multitude of Receivers Got In on the Action from Jets QBs […] Aggregated from SB Nation, USA TODAY Sports.",
-      "category": "coach",
-      "published": "2026-08-21T10:05:06Z",
-      "updated": "2026-08-23T11:09:42Z",
-      "players": [
-        {
-          "key": "geno smith",
-          "name": "Geno Smith",
-          "slug": "geno-smith",
-          "pos": "QB",
-          "team": "NYJ"
-        },
-        {
-          "key": "mason rudolph",
-          "name": "Mason Rudolph",
-          "slug": "mason-rudolph",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "will howard",
-          "name": "Will Howard",
-          "slug": "will-howard",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "drew allar",
-          "name": "Drew Allar",
-          "slug": "drew-allar",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "5 Steelers storylines to watch in NFL preseason matchup with New York Jets",
-          "url": "https://sports.yahoo.com/articles/5-steelers-storylines-watch-nfl-100506909.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "Quarterbacks Will Howard and Drew Allar could be facing some pressure after coach Mike McCarthy expressed confidence in Mason Rudolph.",
-          "published": "Fri, 21 Aug 2026 10:05:06 +0000"
-        },
-        {
-          "title": "New York Jets News: Geno Smith to start for Jets against Steelers",
-          "url": "https://sports.yahoo.com/articles/york-jets-news-geno-smith-110000594.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Your daily links to the New York Jets",
-          "published": "Fri, 21 Aug 2026 11:00:00 +0000"
-        },
-        {
-          "title": "New York Jets vs Pittsburgh Steelers Game Thread",
-          "url": "https://sports.yahoo.com/articles/york-jets-vs-pittsburgh-steelers-223000548.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Jets take on the Steelers tonight in preseason action",
-          "published": "Fri, 21 Aug 2026 22:30:00 +0000"
-        },
-        {
-          "title": "Steelers vs. Jets: Preseason Week 2 open thread",
-          "url": "https://sports.yahoo.com/articles/steelers-vs-jets-preseason-week-223000419.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Come join us for Pittsburgh’s second preseason game.",
-          "published": "Fri, 21 Aug 2026 22:30:00 +0000"
-        },
-        {
-          "title": "New York Jets News: Geno Smith is stellar in Jets preseason win over Steelers",
-          "url": "https://sports.yahoo.com/articles/york-jets-news-geno-smith-110000576.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Happy Saturday, Jets fans! This is a victory Saturday as the Jets beat the Steelers 17-0 last night in Pittsburgh. Most notably, Geno Smith’s 2026 preseason debut was a success. The quarterback completed all seven of his passing attempts, including a touchdown to Jelani Woods. Th",
-          "published": "Sat, 22 Aug 2026 11:00:00 +0000"
-        },
-        {
-          "title": "New York Jets News: Jets beat Steelers in preseason action as Geno Smith stars",
-          "url": "https://sports.yahoo.com/articles/york-jets-news-jets-beat-110942892.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Happy Sunday, Jets fans! Here are your daily Jets links for your reading enjoyment. Bent – How the hell am I supposed to know who this is? – Nate Lynn Bent – In-depth analysis – Jets at Steelers: Special Teams Randy Lange – A Multitude of Receivers Got In on the Action from Jets ",
-          "published": "Sun, 23 Aug 2026 11:09:42 +0000"
+          "title": "Rams OL Justin Dedich activated from non-football injury list nfl.com/news/nfl-news-…",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9xeGtnTjIteGhkemgweEgwUTdHRHRIanBFMjkwSTc5MFc0X0l5OG43ZUxfc3lfY1hfTV82aW5GNUpSWGxMT0M3Ny1LYVN1M1hEZHpkc3RmcEhrNVBMcGpsdUVTZw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Rams OL Justin Dedich activated from non-football injury list nfl.com/news/nfl-news-… x.com",
+          "published": "Mon, 24 Aug 2026 18:14:30 GMT"
         }
       ]
     },
@@ -9098,95 +9374,6 @@
           "kind": "article",
           "snippet": "Giants' John Harbaugh penalizes Jaxson Dart for immature celebration Giants Wire",
           "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "rams-ol-justin-dedich-activated-non-injury-list-a0b2ada8",
-      "slug": "rams-ol-justin-dedich-activated-non-injury-list-a0b2ada8",
-      "sport": "football",
-      "headline": "Rams OL Justin Dedich activated from non-football injury list nfl.com/news/nfl-news-…",
-      "blurb": "Dolphins activated wide receiver Chris Bell off the non-football injury list.",
-      "summary": "Dolphins activated wide receiver Chris Bell off the non-football injury list. Rams OL Justin Dedich activated from non-football injury list nfl.com/news/nfl-news-… x.com Desk reading of x.com.",
-      "category": "injury",
-      "published": "2026-08-17T13:16:26Z",
-      "updated": "2026-08-24T18:14:30Z",
-      "players": [
-        {
-          "key": "chris bell",
-          "name": "Chris Bell",
-          "slug": "chris-bell",
-          "pos": "WR",
-          "team": "MIA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Dolphins activated wide receiver Chris Bell off the non-football injury list.",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1icVh4Rk13eG8zRVZWNzh3bndRU1ZiSlByNlVsZVNJSUhzWFZFV1hQNHV2LUxjMWNFM1dSWmJKOXpva05zaEtRVGFnZVFPUHJVMlZBV2laVDEyZ3g2WURqZnNaYw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Dolphins activated wide receiver Chris Bell off the non-football injury list. x.com",
-          "published": "Mon, 17 Aug 2026 13:16:26 GMT"
-        },
-        {
-          "title": "Rams OL Justin Dedich activated from non-football injury list nfl.com/news/nfl-news-…",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9xeGtnTjIteGhkemgweEgwUTdHRHRIanBFMjkwSTc5MFc0X0l5OG43ZUxfc3lfY1hfTV82aW5GNUpSWGxMT0M3Ny1LYVN1M1hEZHpkc3RmcEhrNVBMcGpsdUVTZw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Rams OL Justin Dedich activated from non-football injury list nfl.com/news/nfl-news-… x.com",
-          "published": "Mon, 24 Aug 2026 18:14:30 GMT"
-        }
-      ]
-    },
-    {
-      "id": "qbs-might-waived-dolphins-should-keep-eye-taylon-5eb1a61c",
-      "slug": "qbs-might-waived-dolphins-should-keep-eye-taylon-5eb1a61c",
-      "sport": "football",
-      "headline": "NFL QBs that might be waived the Dolphins should keep their eye on: Taylon Green (Browns), Will Howard (Pittsburgh), Anthony Richardson…",
-      "blurb": "NFL QBs that might be waived the Dolphins should keep their eye on: Taylon Green (Browns), Will Howard (Pittsburgh), Anthony Richardson (but no claiming him), Jalen Milroe…",
-      "summary": "NFL QBs that might be waived the Dolphins should keep their eye on: Taylon Green (Browns), Will Howard (Pittsburgh), Anthony Richardson (but no claiming him), Jalen Milroe (Seattle), Sam Elinger (Denver), Garrett Nussmeier (Chiefs), Cole Payton (Eagles), x.com Desk reading of x.com.",
-      "category": "roster",
-      "published": "2026-08-23T16:38:41Z",
-      "updated": "2026-08-23T16:38:41Z",
-      "players": [
-        {
-          "key": "anthony richardson",
-          "name": "Anthony Richardson Sr.",
-          "slug": "anthony-richardson",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "garrett nussmeier",
-          "name": "Garrett Nussmeier",
-          "slug": "garrett-nussmeier",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "jalen milroe",
-          "name": "Jalen Milroe",
-          "slug": "jalen-milroe",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "will howard",
-          "name": "Will Howard",
-          "slug": "will-howard",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "NFL QBs that might be waived the Dolphins should keep their eye on: Taylon Green (Browns), Will Howard (Pittsburgh), Anthony Richardson (but no claiming him), Jalen Milroe (Seattle), Sam Elinger (Denver), Garrett Nussmeier (Chiefs), Cole Payton (Eagles),",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4yOWNQRzQ2NU1zbllTeHFIaVRTRmh3a2Nnbko3SEg5Qmt4X0d0NzVVaWRUWVppbzBSQms3dGdMT3FyYjJLemVZWVlpSlRfTWU3OGw4cFNNZXIxRllHODBB?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "NFL QBs that might be waived the Dolphins should keep their eye on: Taylon Green (Browns), Will Howard (Pittsburgh), Anthony Richardson (but no claiming him), Jalen Milroe (Seattle), Sam Elinger (Denver), Garrett Nussmeier (Chiefs), Cole Payton (Eagles), x.com",
-          "published": "Sun, 23 Aug 2026 16:38:41 GMT"
         }
       ]
     }

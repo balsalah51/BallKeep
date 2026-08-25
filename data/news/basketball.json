@@ -1,19 +1,26 @@
 {
   "sport": "basketball",
-  "updated": "2026-08-25T08:24:44Z",
-  "fresh": 218,
+  "updated": "2026-08-25T10:58:59Z",
+  "fresh": 145,
   "stories": [
     {
       "id": "projected-trade-reunites-celtics-kyrie-irving-3-player-922ea883",
       "slug": "projected-trade-reunites-celtics-kyrie-irving-3-player-922ea883",
       "sport": "basketball",
       "headline": "Mavs’ Kyrie Irving Proposed to Land With Knicks in 3-Team Blockbuster NBA Trade",
-      "blurb": "Lakers Proposed to Trade for Myles Turner in 3-Team Blockbuster Yahoo Sports",
-      "summary": "Lakers Proposed to Trade for Myles Turner in 3-Team Blockbuster Yahoo Sports Proposed NBA Trade Sees Lakers Land 7’2″ Deadly 3-Point Shooter Yahoo Sports Proposed NBA Trade Reunites Lakers With D’Angelo Russell in 3-Team Deal heavy.com Aggregated from Yahoo Sports, heavy.com.",
+      "blurb": "Mavs Proposed to Trade Kyrie Irving to Knicks in 3-Team Blockbuster NBA Trade heavy.com",
+      "summary": "Mavs Proposed to Trade Kyrie Irving to Knicks in 3-Team Blockbuster NBA Trade heavy.com Projected NBA Trade Reunites Celtics With Kyrie Irving in 3-Player Mavs Deal heavy.com Miami Heat Predicted to Trade for Kyrie Irving to Complete Super Team Yahoo Sports Aggregated from heavy.com, Yahoo Sports.",
       "category": "trade",
       "published": "2026-07-20T07:00:00Z",
       "updated": "2026-08-25T02:14:00Z",
       "players": [
+        {
+          "key": "kyrie irving",
+          "name": "Kyrie Irving",
+          "slug": "kyrie-irving",
+          "pos": "PG",
+          "team": "DAL"
+        },
         {
           "key": "myles turner",
           "name": "Myles Turner",
@@ -34,13 +41,6 @@
           "slug": "bronny-james",
           "pos": "SG",
           "team": "LAL"
-        },
-        {
-          "key": "kyrie irving",
-          "name": "Kyrie Irving",
-          "slug": "kyrie-irving",
-          "pos": "PG",
-          "team": "DAL"
         },
         {
           "key": "jalen duren",
@@ -2024,6 +2024,36 @@
       ]
     },
     {
+      "id": "jimmy-butler-still-close-return-2cb78d26",
+      "slug": "jimmy-butler-still-close-return-2cb78d26",
+      "sport": "basketball",
+      "headline": "Jimmy Butler: Still not close to return",
+      "blurb": "Butler (knee) is still in the relatively early stages of his recovery and has only recently begun getting back on the court, according to Danny Emerman of SFStandard.com.",
+      "summary": "Jimmy Butler: Butler (knee) is still in the relatively early stages of his recovery and has only recently begun getting back on the court, according to Danny Emerman of SFStandard.com. Visit RotoWire.com for more analysis on this update. Desk reading of RotoWire NBA.",
+      "category": "injury",
+      "published": "2026-08-24T17:09:27Z",
+      "updated": "2026-08-24T17:09:27Z",
+      "players": [
+        {
+          "key": "jimmy butler",
+          "name": "Jimmy Butler",
+          "slug": "jimmy-butler",
+          "pos": "SF",
+          "team": "GSW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jimmy Butler: Still not close to return",
+          "url": "https://www.rotowire.com//basketball/player/jimmy-butler-3231",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Butler (knee) is still in the relatively early stages of his recovery and has only recently begun getting back on the court, according to Danny Emerman of SFStandard.com. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 24 Aug 2026 8:23:00 AM PDT"
+        }
+      ]
+    },
+    {
       "id": "payton-pritchard-beginning-bond-new-celtics-teammates-952fb974",
       "slug": "payton-pritchard-beginning-bond-new-celtics-teammates-952fb974",
       "sport": "basketball",
@@ -2088,36 +2118,6 @@
           "kind": "article",
           "snippet": "Celtics and Pistons trade proposal would swap Jaylen Brown and Jalen Duren in blockbuster deal sportingnews.com",
           "published": "Fri, 26 Jun 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "jimmy-butler-still-close-return-2cb78d26",
-      "slug": "jimmy-butler-still-close-return-2cb78d26",
-      "sport": "basketball",
-      "headline": "Jimmy Butler: Still not close to return",
-      "blurb": "Butler (knee) is still in the relatively early stages of his recovery and has only recently begun getting back on the court, according to Danny Emerman of SFStandard.com.",
-      "summary": "Jimmy Butler: Butler (knee) is still in the relatively early stages of his recovery and has only recently begun getting back on the court, according to Danny Emerman of SFStandard.com. Visit RotoWire.com for more analysis on this update. Desk reading of RotoWire NBA.",
-      "category": "injury",
-      "published": "2026-08-24T17:09:27Z",
-      "updated": "2026-08-24T17:09:27Z",
-      "players": [
-        {
-          "key": "jimmy butler",
-          "name": "Jimmy Butler",
-          "slug": "jimmy-butler",
-          "pos": "SF",
-          "team": "GSW"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jimmy Butler: Still not close to return",
-          "url": "https://www.rotowire.com//basketball/player/jimmy-butler-3231",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "Butler (knee) is still in the relatively early stages of his recovery and has only recently begun getting back on the court, according to Danny Emerman of SFStandard.com. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 24 Aug 2026 8:23:00 AM PDT"
         }
       ]
     },
@@ -3042,8 +3042,8 @@
       "slug": "scoot-henderson-trail-blazers-want-play-full-strength-877ab377",
       "sport": "basketball",
       "headline": "NBA prospect Scoot Henderson: ‘I have the ability to go No. 1’ in draft over Victor Wembanyama",
-      "blurb": "NBA prospect Scoot Henderson: ‘I have the ability to go No.",
-      "summary": "Victor Wembanyama, Scoot Henderson, Brandon Miller, Russell Westbrook and Cam Whitmore: NBA prospect Scoot Henderson: ‘I have the ability to go No. 1’ in draft over Victor Wembanyama The New York Times NBA Mock Draft: Our reporters debate Brandon Miller vs. Aggregated from The New York Times, USA Today, Sportskeeda, ESPN, sportingnews.com and 3 more.",
+      "blurb": "The NBA drama that got our attention as Victor Wembanyama towered over the draft New York Post",
+      "summary": "The NBA drama that got our attention as Victor Wembanyama towered over the draft New York Post Scoot Henderson will never settle: \"I want to go No. Scoot Henderson and the Trail Blazers want to play a full-strength Victor Wembanyama sportingnews.com Aggregated from New York Post, ESPN, sportingnews.com, Sports Illustrated, DraftKings Network and 4 more.",
       "category": "injury",
       "published": "2023-05-17T07:00:00Z",
       "updated": "2026-08-19T22:00:01Z",
@@ -3180,6 +3180,14 @@
           "kind": "article",
           "snippet": "\"UNREAL INFLUENCE\"- NBA fans hail Russell Westbrook as he was named a favorite player by Victor Wembanyama, Scoot Henderson and Cam Whitmore Sportskeeda",
           "published": "Thu, 22 Jun 2023 07:00:00 GMT"
+        },
+        {
+          "title": "The NBA drama that got our attention as Victor Wembanyama towered over the draft",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONmhpWFZKMnlpdXB5MlNJUU5sbWJMd2g0QjJONmQxVm5ydXZrUlJ2dDFjTVhLMzlRYXctS0g4dzdVTkxRSUJ6U2tTWV9nQlp4LUNHRjhMaHB2MDB5SlVuak5ZYThPR2pzeUNOMHh3MklxQkdqSFg3WGZUYW9iVUlORzRuTlBnNy0za3hSY3FsQQ?oc=5",
+          "publisher": "New York Post",
+          "kind": "article",
+          "snippet": "The NBA drama that got our attention as Victor Wembanyama towered over the draft New York Post",
+          "published": "Fri, 23 Jun 2023 07:00:00 GMT"
         }
       ]
     },
@@ -3188,12 +3196,33 @@
       "slug": "anthony-edwards-playing-tonight-injury-betting-impact-timberwolves-200bc408",
       "sport": "basketball",
       "headline": "Are Josh Giddey, Matas Buzelis playing tonight after career games vs. Warriors? Bulls vs Lakers injury report",
-      "blurb": "Is LaMelo Ball playing tonight vs the Chicago Bulls?",
-      "summary": "Is LaMelo Ball playing tonight vs the Chicago Bulls? Latest update on the Charlotte Hornets star's injury The Times of India Is LaMelo Ball playing tonight vs the Minnesota Timberwolves? Aggregated from The Times of India, sportingnews.com, Sportskeeda, The New York Times, Sports Illustrated and 5 more.",
+      "blurb": "The Bulls Must Be Smart with Josh Giddey and Matas Buzelis the Rest of the Way Sports Illustrated",
+      "summary": "The Bulls Must Be Smart with Josh Giddey and Matas Buzelis the Rest of the Way Sports Illustrated Bulls notebook: Josh Giddey finding ways to ‘fit in’; Matas Buzelis bounces back The New York Times What kind of Bulls team are Matas Buzelis and Josh Giddey joining? Aggregated from Sports Illustrated, The New York Times, Minnesota Sports Fan, Al Bat, Athlon Sports and 6 more.",
       "category": "injury",
-      "published": "2025-02-27T08:00:00Z",
+      "published": "2024-06-27T07:00:00Z",
       "updated": "2026-08-19T21:00:06Z",
       "players": [
+        {
+          "key": "matas buzelis",
+          "name": "Matas Buzelis",
+          "slug": "matas-buzelis",
+          "pos": "SF",
+          "team": "CHI"
+        },
+        {
+          "key": "josh giddey",
+          "name": "Josh Giddey",
+          "slug": "josh-giddey",
+          "pos": "SG",
+          "team": "CHI"
+        },
+        {
+          "key": "kristaps porzingis",
+          "name": "Kristaps Porzingis",
+          "slug": "kristaps-porzingis",
+          "pos": "C",
+          "team": "BOS"
+        },
         {
           "key": "lamelo ball",
           "name": "LaMelo Ball",
@@ -3209,25 +3238,11 @@
           "team": "CLE"
         },
         {
-          "key": "matas buzelis",
-          "name": "Matas Buzelis",
-          "slug": "matas-buzelis",
-          "pos": "SF",
-          "team": "CHI"
-        },
-        {
           "key": "luka doncic",
           "name": "Luka Doncic",
           "slug": "luka-doncic",
           "pos": "PG",
           "team": "LAL"
-        },
-        {
-          "key": "josh giddey",
-          "name": "Josh Giddey",
-          "slug": "josh-giddey",
-          "pos": "SG",
-          "team": "CHI"
         },
         {
           "key": "paolo banchero",
@@ -3488,6 +3503,62 @@
           "kind": "article",
           "snippet": "LaMelo Ball Injury Update: Latest on Hornets All-Star's status against Atlanta Hawks (March 23) Sportskeeda",
           "published": "Mon, 23 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Josh Giddey playing today, December 27, for Bulls vs Bucks?",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbUJ2MTVTNHpCU1BKWHdSTERxVlA5LXJsbFp5SGZjdHZ5RF83QW1zS0haemNEUkpMdUdnNW1yVzJtY1VBS1lrQUZkUXVfMlowRzlKYWc4R1kyaVlLeDRkM2pfam1UaTNab0lYU1RFY1FZd3RSU0s4anVvWGY5ZVhrWTRrZ0xhZHdFREVCbG4zSdIBlAFBVV95cUxQTTFfdmhqa2d3cmlzdXB6Nk10TmVzaFpndDZ5WlFNalRPVWl3Uy1pbzQ4YWZzX2VzOVZ6UzNic2hFdlBXUWNQN2t3TlN0M1lBSmJPTXB3b243U0VSbGlXZmcwbEp0SVhYUlFTRE93elBQN0EyYlY5WkdRNnd4UEpmRkZLVHkxZDR4Rjg3dVFVWXZ0TW5K?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Is Josh Giddey playing today, December 27, for Bulls vs Bucks? bolavip.com",
+          "published": "Sat, 27 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Are Josh Giddey and Kristaps Porzingis playing today, Oct. 27, in Bulls vs Hawks?",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSjZTbnJLd1puWHpMLXhtbU1fLTR6VDVkSUU0OWdxTG82elgzUVJOOEw3NVpDaWtjLU5ic3pEcmhoeHpFaEtwUmxzQUJwdlBLdWFBMk9JN002ME8tczlkemJsT3hSdGhsNi1PZEdUX0FlT3Z2eC1lTTREOHlua1VfVWlQQW5wRThxTnNVcGVmWFBmcUFmemRMZmU1UjI1T0ZvbG9nU1R6c9IBrAFBVV95cUxNTkxDaDVETUVPVWJlM2NCZUU5V09HdUkyUDNvVjFjbGRpcFh6anRubDJUS3A0Tk9yNm9JaGYxcERFNDFrc1ZfZ0JaN2dBSDVWNnZadmNBdVpuVDU2YTdGRF9yX0p2Y3RIVXlqNEhtdlJvbElsRVBMMXJKeFc1cnFwTHRhMlc2ZkNpdFBtUUZtVFg4RDBQNVdRaWVPalVpS2xxS3g0M0htemVjbUNk?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Are Josh Giddey and Kristaps Porzingis playing today, Oct. 27, in Bulls vs Hawks? bolavip.com",
+          "published": "Mon, 27 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Is Josh Giddey Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Pistons)",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSWo0Y1N3LXNHb2FsUXBfdGJ4bnQ0Q0RNazQtRG96eW5uNkFoX2dpSk52SU9GaVZrRXg3dC12SGV0eDNiVzVNR1I3SlVxUUFnNC1rbVZwaWI2V1U3ckZyZEF4R2RiN3I0Y0JHVjF5YUxKZkRXbjI4ZG1fYW9HS3dYdHBwdmpHbUFqN3p2MmJpclpSUQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Josh Giddey Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Pistons) Sports Illustrated",
+          "published": "Wed, 12 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Is Josh Giddey Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Suns)",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcy03R2xjS2lqZFE1YWhGdGJqYTNiSjVYcjZ4SXpnRnhNVzQzeFVYQnFRSk1XR2xNb1N4RDV4YWlDd3MzaHl4SW1rSDVfN2RBLXRsUEg2WU1iUnp4d3BueFlINmphZlFBSzRleVdWUmx5TEVQOHQyYV9sVElvRGRyMU5TU1FGTEYzblBFRFRVMEFodTRObTdsdA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Josh Giddey Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Suns) Sports Illustrated",
+          "published": "Thu, 05 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "The Bulls Must Be Smart with Josh Giddey and Matas Buzelis the Rest of the Way",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcEU5YWxWQ0xfY1laU28tRVJSYnJjTi1UTU90RURLQkZIRXV4NTNzOXZBOEMwU0JWTkNVZEtwdGo4X2MtQ2dHQU5BZnptNzBnaV9MeEVvT01zbG1oUy04T2Y3a2dkOUZCTEhsTE1wVzdoQmQxY3pWc2JXT0ExMnpRdktMblFqdElTNEdxRnZOREFOQnU5dXlXRFdn?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "The Bulls Must Be Smart with Josh Giddey and Matas Buzelis the Rest of the Way Sports Illustrated",
+          "published": "Wed, 04 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Bulls notebook: Josh Giddey finding ways to ‘fit in’; Matas Buzelis bounces back",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeURQdFdwaU5wQ1p0WlQ1MjVLTmdUOG5CYlJ2TlNNUzBRNmk1a3EzSzM5VU45SWVzcmdUUk84RFBTZlozNjg5MVc3VTlCMFRYSkpxRjE5TXlFb3dmcE1hTEFiOFhSRVJhb2JfcGExY3BEcjVudE14VnBjNHVlbHdVWXNkU3hpcHBLNVg4LWJiZzdzNEFrai1B?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Bulls notebook: Josh Giddey finding ways to ‘fit in’; Matas Buzelis bounces back The New York Times",
+          "published": "Wed, 04 Dec 2024 08:00:00 GMT"
+        },
+        {
+          "title": "What kind of Bulls team are Matas Buzelis and Josh Giddey joining?",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPajRXdFZWU1dxal9TREZicmlNUEp6b0tJR3p0eUltMDU5VEhMbEVONHNUdk82VXpiZWMzbGl6M0llbkQ2R0ZLUUswSEhvS1RVOXlMa1dmN2dBd3pvQy1DeGtqVFQ5YmlBTEpDTndEQ3RhcHBacnd4YnB5Nkcybmhidjk4M3UyWTloSDRXODVUWEkyTmpsMWE4RWNjMkxkUlQtTFN1Yg?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "What kind of Bulls team are Matas Buzelis and Josh Giddey joining? The New York Times",
+          "published": "Thu, 27 Jun 2024 07:00:00 GMT"
         }
       ]
     },
@@ -7128,13 +7199,55 @@
       "id": "anthony-edwards-playing-tonight-injury-betting-impact-nuggets-edf51637",
       "slug": "anthony-edwards-playing-tonight-injury-betting-impact-nuggets-edf51637",
       "sport": "basketball",
-      "headline": "Why is Anthony Edwards not playing tonight vs the Charlotte Hornets? Latest update on the Minnesota Timbe",
-      "blurb": "Anthony Edwards Injury Update: Is Ant Playing Tonight vs.",
-      "summary": "Anthony Edwards Injury Update: Is Ant Playing Tonight vs. Is Stephon Castle Playing Tonight? (Injury Update, Betting Impact for Spurs vs. Aggregated from PrizePicks, Sports Illustrated, Athlon Sports, NBA.com, The New York Times and 14 more.",
+      "headline": "Are LaMelo Ball & Brandon Miller Playing Tonight? Hornets Injury Report, Depth Chart, and More Before Bulls Clash",
+      "blurb": "Hornets injury report: Kon Knueppel, Brandon Miller and more vs.",
+      "summary": "Hornets injury report: Kon Knueppel, Brandon Miller and more vs. Brandon Miller to Miss Rest of NBA Season With Wrist Injury Sports Illustrated WATCH: Knicks Bench Player Leaves Brandon Miller With Head Injury heavy.com Aggregated from Yahoo Sports, Sports Illustrated, heavy.com, Athlon Sports, Al Bat and 18 more.",
       "category": "injury",
       "published": "2016-05-10T07:00:00Z",
       "updated": "2026-07-04T07:00:00Z",
       "players": [
+        {
+          "key": "brandon miller",
+          "name": "Brandon Miller",
+          "slug": "brandon-miller",
+          "pos": "SF",
+          "team": "CHA"
+        },
+        {
+          "key": "kon knueppel",
+          "name": "Kon Knueppel",
+          "slug": "kon-knueppel",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "alex caruso",
+          "name": "Alex Caruso",
+          "slug": "alex-caruso",
+          "pos": "SG",
+          "team": "OKC"
+        },
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        },
+        {
+          "key": "cooper flagg",
+          "name": "Cooper Flagg",
+          "slug": "cooper-flagg",
+          "pos": "SF",
+          "team": "UTA"
+        },
+        {
+          "key": "lamelo ball",
+          "name": "LaMelo Ball",
+          "slug": "lamelo-ball",
+          "pos": "PG",
+          "team": "CHA"
+        },
         {
           "key": "anthony edwards",
           "name": "Anthony Edwards",
@@ -7162,13 +7275,6 @@
           "slug": "donte-divincenzo",
           "pos": "SG",
           "team": "MIN"
-        },
-        {
-          "key": "lamelo ball",
-          "name": "LaMelo Ball",
-          "slug": "lamelo-ball",
-          "pos": "PG",
-          "team": "CHA"
         },
         {
           "key": "nikola jokic",
@@ -7880,6 +7986,174 @@
           "kind": "article",
           "snippet": "Final Raptors-Timberwolves Injury Report: Will Anthony Edwards, Brandon Ingram Play? Athlon Sports",
           "published": "Thu, 05 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Is Brandon Miller playing tonight? Hornets vs. Mavericks injury report",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaEZzQ0lZQW5KQk5hcnZnMlM0WVZDMkN3X21qaHZYQmtDc0IxdzljSFN0ZDVlZlVQT0NzU2Z5VGtjZS14LVJCTnJZamF6aUtJR3dzeDIzZ3E4VHBMdjVUWlE2cFMyaUxxUFhsWEc4c3pHTVlnRk8zTjJEdnJ4dGlXc04zeTFlejNuZXlZdktLY2Q?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Is Brandon Miller playing tonight? Hornets vs. Mavericks injury report Yahoo Sports",
+          "published": "Thu, 29 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Brandon Miller Injury, Latest on Hornets Star's Timeline to Return After Shoulder Surgery",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPbDZoMldrT09EcTlkZi10akFmS0hWYzNfQ0pqR1hLVVhQMlBnMDItRm5uOTUtcjRoUkluMGxvVFBjTXVPVFZYcFVjY1ptc1EtZE9fS09MU29abWJ3WG9WYVlEbVowMVVUSVN5eXpXckFteUk2WGpuaG1SUTE5RDQxd0lVSHo5b2NIbTl3dThxLUpDU2IxdUYtX1RSWjNUckU0bFREQnRhZjMtRUVOZHJWdkJlWUhiNGF1U0VackRoYnlMUDJu?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "Brandon Miller Injury, Latest on Hornets Star's Timeline to Return After Shoulder Surgery Bleacher Report",
+          "published": "Wed, 06 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Hornets' Brandon Miller: Cleared from injury report",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPc2sxNHY1VFU4SEx6Qkw4MVVjRGlyMk5ZV3lrbzk2SXZPREhvcUFhREpBM05xdWwySVdnZnRjMVNGWVd3NndWd3dHdnlrT2QxNFZHbXN0NHE2QXFEZEQxZUNFY0pIZ3YxMW55bEtpb01QQXNQYkNYcFNBQzNFb1ZrMi0tMVh4T0ZfNnc4eUlCa1FJWEg3dUhEX2xWOUdySGo1N0E?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Hornets' Brandon Miller: Cleared from injury report CBS Sports",
+          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Hornets Dealt Crushing Brandon Miller Injury News",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPT2R1aEFQYkVsTWNqcEJFb2pSQ1VESDU4c1U1enQySHR3SUs1ajlQZWR3WFNlOFhpejBlUG5JSkN6OTBLMl95UDlsYUNmNVlWMGNyY2F4cER6U2ZqVTRLYUJBYlJock1kMGdUSDBCLW9rUE1NbE1JLWowOXBicVBfMm1QNld3bGtEZlgzdkQyUGgzUTVwVkE?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Hornets Dealt Crushing Brandon Miller Injury News heavy.com",
+          "published": "Mon, 03 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Brandon Miller injury update: Charlotte Hornets star set to miss Wizards contest with shoulder ailment",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTFQ2V3JYbTQ2UXhVZWdfV05PZXJncFNiY2h5aHJlLUVSNVhmZVlWV1BjMmd4Wl9ZS2g4QVAxbVBpRDJtSGhkdzlqdmRvNFlDek4za0prVFpNdEMzeWZCdW1sUFZvVjh2bDRQZWNWdkJySWozU0J5bDVkbUs0RGxhaE1zdkJ5dXFZOVRWZS1GeW9fYUpqMm81Yl82Qmt4M1d0amNEb2tUeVl4LXZWQ2x5X0JGV3VKOXpNMUtnMHhRNEdHNWM3bTF2cTVIQkVNamRudk1QOFhuUkNkZw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Brandon Miller injury update: Charlotte Hornets star set to miss Wizards contest with shoulder ailment Sports Illustrated",
+          "published": "Sun, 26 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Hornets-Mavericks: Will Brandon Miller, Cooper Flagg, Play?",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQTVHTHM0SkpFNHpJZ1g0czA0RnQ3MUp4NUlzMW0yajZwV2RQeGhUY1h4S1FUYW1ZLXJmQktoZ0wzaU1vMGlzYjBPSC1jVEk2c05PUTFnV2s3MEU0bVAyMDVNWERvc251SWFPY0gySUtYM09OZkd2Z1RzV1RyUW1FX2M4LXNaUWE5ZFVpQmRkSQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Hornets-Mavericks: Will Brandon Miller, Cooper Flagg, Play? Yahoo Sports",
+          "published": "Thu, 29 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Hornets provide enormous Brandon Miller health update ahead of Raptors game",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUmlyYUl6NWRzbGtLelFNS2lkRjJMUXdvaU83VHVjQi1Db3FOZUppcVJyNEZhSERPVXJDaVVSS0FwNHdFbEdzb0NUQkZpS0hqcjAwODBOT1huaURMZWxJVEFNLVdRZ1g3cDRhZm9WV2JESTdXaUNKSU80WDdrMVBpMU5ZV1hqUnhfQ29aYnlLRTU3Y0VUM1diZEhlR0J6c2J6VFFEYkNPVUVxeldHYnRNRWljV1BzbHM?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Hornets provide enormous Brandon Miller health update ahead of Raptors game Sports Illustrated",
+          "published": "Mon, 17 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Can LaMelo Ball, Brandon Miller and Hornets finally find their identity?",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUzJnQ29ROGMtM0VpNENKWnZJamRSazltUHh0N3p3ekhzSWp4UWlxQ05McllaTThlRGtWdmJFQ3FCM2h4NHRkUUxMc05nRlBkSEduNGc2Z1I1TUozN1ZHVDhaN0hFcE5ZdlJ5QTNldTZ5cFNPWU1Od1ZhbjlWWXl2WVRIQTU0ZU9oYXdvVDZ0am14OHlzRkMyNk1pSFk?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Can LaMelo Ball, Brandon Miller and Hornets finally find their identity? The New York Times",
+          "published": "Sun, 17 Nov 2024 08:00:00 GMT"
+        },
+        {
+          "title": "The Charlotte Hornets get crucial injury update on Brandon Miller",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc3VGZGtpWno1dGZFbDdkWHJrUEI3cWNyWEdFczhVUXQxdHg2Nm9GMjVnNF91aWZ5YzdHWGJad2JOQjRybzVaRTB4RVFRaFB6cWJ5QWNQTjBfMU5INENBb0NLRlJjRjVDaUFIMm56THlUeFloUWhEcDg4WEZpcXVvQTUyR3hFelRxUmdiR3FveHRXbHNyY0NvR1lmTm9DbEd2YWVYSXFRRl9wQQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "The Charlotte Hornets get crucial injury update on Brandon Miller Sports Illustrated",
+          "published": "Mon, 03 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Hornets give massive Brandon Miller injury update",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUXFncXpNRE1WdDk2a0NDNW9qbDdVVEcxTjNyd2NiQmFuQy1EMnd1cU5sMDVFR1pVM2hXSDYweTBfZDdVd3lQdXdObTNQQU1FTjMxeWNzVFBlNHBITy1zS2xoaENvVUxPcFJuS3FOdUZ4eDc2ek1wUmR3QXV4R0J0VzlRNTRud1Frc19xTE1jaGFYSFBZ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Hornets give massive Brandon Miller injury update Sports Illustrated",
+          "published": "Tue, 30 Sep 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Hornets provide massive Brandon Miller injury update ahead of matchup with Clippers",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQmVNSkM2aF9vZzNXcnNWT2lwVHVhQ0x2N0M1Ny1OSVlFY1NDRy01R0NTNl9XV3pYb2ZBSm9zalo4SXlCelRVS0NNOVJCRjZaZ1hJTy1pTDV1eXhjYllmNlMtQS1NUjNnSHNwMjcwSXZyQzVlVFdmenVQaUhxanNuWWpfSHZPVGFPNEE4WWNHdzVQWmtkTVkyOVpQSzJ2X0hLekk0dGo0d0N2U2h6M085ZDMwUkZmNFZOT3N2Qi1oNVhoZw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Hornets provide massive Brandon Miller injury update ahead of matchup with Clippers Sports Illustrated",
+          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Hornets provide diagnosis of Brandon Miller’s shoulder injury",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMWFWV0MxRTRlQXcxanBkdkVoa3cyMjh6akQ2NzhBMF9hWW4weDhtdGo1aHRsdzFsZW9YODZyMk4tajJ6aFZpXzgycGFuUUR6eGhBeVdWeHZ6eFM3ZFNkY3hEd0VQODdqRnpCaVBwYjBSUWZnLTR0b0VuUDUzZi13cHo0ZXF1ZVppYjY5VjhMaDdZU0FSNFMyMmV5dW1fLTF5Uy02M09fSTBlUQ?oc=5",
+          "publisher": "Queen City News",
+          "kind": "article",
+          "snippet": "Hornets provide diagnosis of Brandon Miller’s shoulder injury Queen City News",
+          "published": "Mon, 27 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Is Brandon Miller Playing Tonight? (Injury Update, Betting Impact for Magic vs. Hornets)",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUTZuM0pKNjBOaV9TWWxIeHQyN0UyWU1KM09OaV9iVWFhY3VUeTllX3JyUEs0Ml96OHJSX0lKZnBrZDFaQVViWkkyeHQ1dDR2cWNnQmRtTTc0MDRLWEZEN3RNMlNRMnpzYWQ0VmlaUWpKNXhwakVGbHdUNENickNQV2padjlBRmI4SFdaOFJEclNPSEtTeVE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Brandon Miller Playing Tonight? (Injury Update, Betting Impact for Magic vs. Hornets) Sports Illustrated",
+          "published": "Thu, 30 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Are LaMelo Ball & Brandon Miller Playing Tonight? Hornets Injury Report, Depth Chart, and More Before Bulls Clash",
+          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPUnRJbXF6ZV9Bc0s4RUFzdjBMTktQc1BGVFNXdWFuWHpzLTFBbGxfbnhqRzNHNVQxWGNIczNGTzZfUGdEU3FsOEs5NFAwSm5oX1JqbmxzcTNfaThtaXFDTUR0ZDUzdlFkQ1pURlJyV214OWJ0X1VBamJvNVl0ZjBOX3lsTHBucUNOdHBpek1TbjZKSTVsdnQxcko0TVZ1b2hETXppVjl6M0dHcTNxZTN1OFIwOVFTQm5SSkRLV1Y2LUdycTdtT3JRSFhVRUxjN0NBVFFRdnlIeU5mYnNYRWx4R0ZaM1ZUeDRfQ01CQkZzVHh3WUhQSHloRVFHZGItQU5oNkNxVE83MHJrZ3B2TEFPVEJOTjltcE0?oc=5",
+          "publisher": "EssentiallySports",
+          "kind": "article",
+          "snippet": "Are LaMelo Ball & Brandon Miller Playing Tonight? Hornets Injury Report, Depth Chart, and More Before Bulls Clash EssentiallySports",
+          "published": "Mon, 30 Dec 2024 08:00:00 GMT"
+        },
+        {
+          "title": "Hornets injury report: Kon Knueppel, Brandon Miller and more vs. OKC",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMV93dEk1eFV2TlZkOWllb3htZ1RRVGJUcUR1VU5ZNlBJSXdoX1RXR200ZFkzQVhhSWJteDduSDY1UmhnRXVFMWctdEZPV1dpbWEwblN6N3p0QkpZUkJmeVJpbTVWSkUzN1diSkRrbVJCR2lSOGw5TFlBWXFHVGR0OWgtY0lhRDBiUFNV?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Hornets injury report: Kon Knueppel, Brandon Miller and more vs. OKC Yahoo Sports",
+          "published": "Mon, 05 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Brandon Miller to Miss Rest of NBA Season With Wrist Injury",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOVo4ZlBOdDdkcHRvSzZFb1RKb0ZMVGdRY09sYldGS1dUeEpYa3QxbUVCSHA1TVBDV0dIWDhUWVNsMXhPVEhhZjN6N0IwQ3FPWUV4eUFNUDBtY09BMWhDVmstS1NHNDBHQWtFXzBkbEhETkRrWWFYT2dNZ2dBLXRoS3FMeG93V3VOVWJscHlOd0ZPTzRIejVNTkZRNWZZR0d5S0dzbzBJSHB2MzRhS3hpUlhPUnItY2F3Q2c?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Brandon Miller to Miss Rest of NBA Season With Wrist Injury Sports Illustrated",
+          "published": "Thu, 23 Jan 2025 08:00:00 GMT"
+        },
+        {
+          "title": "WATCH: Knicks Bench Player Leaves Brandon Miller With Head Injury",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONFdmRGRvdEoydXNGOGVBRXZibjV5NG1WMFpyT3BHc3VFblVXektiZ1FLNk5FNmZobnd3SF9GeEJ3YWRhRGhjdndnZ2JyWHVKdHBBYVczT2FGaHg4dENIRWV5RWpORGU3b0tTTUR0TlNfVVc2aXdoc0cwcDRUTDQ0eUdKRXc?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "WATCH: Knicks Bench Player Leaves Brandon Miller With Head Injury heavy.com",
+          "published": "Mon, 13 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Brandon Miller reveals update on shoulder wrap amid injury woes",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeTF6NmdsTlpZVkJZU0ZNT3lHTWxWdEM1OWJCalpVcHZvbklpNTJDWVpNZFQxQnpKQWgtc3UwWGtGSzRYNno1WVcwVmliVVpBbjBKRm9HNmtMcHVSMmk3MmNGdnh1ak1OZ0Fib2dvNjVQYVBfYlBWTFJNY0dTTEl3Nm5vY3czdFpOSk1fYzhWM1ZxLXdFYlZBeElTdnNMWVFKQ1BUZTd5WQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Brandon Miller reveals update on shoulder wrap amid injury woes Sports Illustrated",
+          "published": "Fri, 12 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Hornets-Thunder, Will Brandon Miller, Alex Caruso Play?",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNDJpLVl4VjlOdmZoZXBVOEk1Ml9GTnRpRmlBUXI3dXpZZDY0TU5GMUk2VTA3NThCNW0zRnIydjNBN1otNmMzVzY4djBtUEhkRjN0dDI4dURreDJVQTNiN2Ixb3doODhoVE51Rlpsc3hSLVhfM1ZTRnoxWlZaNEszeVZrUkFieDdFWUU4YzRLRlotQW5iUjc0OTh6V2ZGUUZMRklmZXo4VTJfSXJrQzFqcDQwcjcwU3poY1pPQXBQYkNROW40X1E?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Hornets-Thunder, Will Brandon Miller, Alex Caruso Play? Athlon Sports",
+          "published": "Mon, 05 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Clippers-Hornets, Will Kawhi Leonard, Brandon Miller Play?",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQczVCNWx1RWhOTHVsa0dXRlhORUE1SmJ3a1NLWk1EZXJNcXdCU2xGcmc4U2pSaUZ4d3VUUXpmUlphenpoaUVjMS1hMTRyTFUzWG9ab1BlaDhVUTdhRE9sbEpYNmRkdzNmX1JDektLai1IcEJlTWxlSVJGX0JBbVptU0oxWGRrOU5BeE9mOUJzOENFaGZBSF82TTN0a3RVcG1XS2xUQ1huTWwxWG8zOWVIRVdfQ2dYTk02REp4bHBJRm5ObzgzYnMtYQ?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Clippers-Hornets, Will Kawhi Leonard, Brandon Miller Play? Athlon Sports",
+          "published": "Sat, 22 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "NBA: Hornets Star Brandon Miller Undergoes Surgery, Future Uncertain",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMVpYVXpic1psRE5CcE9yZ3lnQ0xFSVUyU05vLUQ0aWt2b01NRUsyR1NxN182Y2JQM3B3YVVUcjI2d09OenIzMUtzZ21melJwLUFJb0JXYXNvOEtySExuZlpQYjhwMk1Ial90VUZzWklJektIVHhvaU5RY1lMTWV1VTFBbTl4LW9UNnpQQmhtdlIyQlFmUnl0UGxDT1g2TjJQU24tV2tCU1ZBamVJYS1IVENLQkhhQdIBuwFBVV95cUxOd3JERTZ3S0swOVNkMUtEQjNTaC1rTzFLbktlM3Nic0FsME03Ti00Zno4TGpDel96dkh1VTBubVpRMnlHX1haVW01WndZWHdGeTVGdEZUejFHbVI2N0xrbzlFNFJJcmlNUDFFc0VraUJHZU1GWGNBQlhzVlBEaC1SeUExczhmTFNmajlzZGViSXNqdzlJdWg2eTVKSGN2dGt3dGhmQkV0RXpPV1ZZdnJkdzlDMjVjQXd0WFc4?oc=5",
+          "publisher": "Al Bat",
+          "kind": "article",
+          "snippet": "NBA: Hornets Star Brandon Miller Undergoes Surgery, Future Uncertain Al Bat",
+          "published": "Wed, 06 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -8832,12 +9106,19 @@
       "slug": "paolo-banchero-injury-orlando-magic-forward-won-t-1548f622",
       "sport": "basketball",
       "headline": "Thunder, Chet Holmgren agree to 5-year max rookie contract extension worth up to $250 million",
-      "blurb": "De’Aaron Fox, Spurs agree to 4-year contract extension The New York Times",
-      "summary": "De'Aaron Fox, CJ McCollum, Chet Holmgren, Josh Giddey, Evan Mobley, Paolo Banchero and Victor Wembanyama: De’Aaron Fox, Spurs agree to 4-year contract extension The New York Times Magic's Paolo Banchero breaks silence on his return from injury and is ready to face Heat bolavip.com Paolo Banchero injury update: Orlando Magic forward won’t return to game vs. Aggregated from The New York Times, bolavip.com, The Times of India, heavy.com, FOX 35 Orlando and 1 more.",
+      "blurb": "Josh Giddey, Bulls agree to 4-year, $100 million contract extension: Source The New York Times",
+      "summary": "Josh Giddey, Bulls agree to 4-year, $100 million contract extension: Source The New York Times Can Josh Giddey land a fair, long-term contract after strong finish with Bulls? Magic's Paolo Banchero breaks silence on his return from injury and is ready to face Heat bolavip.com Aggregated from The New York Times, bolavip.com, The Times of India, heavy.com, FOX 35 Orlando and 1 more.",
       "category": "injury",
       "published": "2022-12-06T08:00:00Z",
       "updated": "2026-06-21T07:00:00Z",
       "players": [
+        {
+          "key": "josh giddey",
+          "name": "Josh Giddey",
+          "slug": "josh-giddey",
+          "pos": "SG",
+          "team": "CHI"
+        },
         {
           "key": "deaaron fox",
           "name": "De'Aaron Fox",
@@ -8858,13 +9139,6 @@
           "slug": "chet-holmgren",
           "pos": "C",
           "team": "OKC"
-        },
-        {
-          "key": "josh giddey",
-          "name": "Josh Giddey",
-          "slug": "josh-giddey",
-          "pos": "SG",
-          "team": "CHI"
         },
         {
           "key": "evan mobley",
@@ -13103,8 +13377,8 @@
       "slug": "darius-garland-playing-tonight-injury-betting-impact-clippers-3089a7fa",
       "sport": "basketball",
       "headline": "Clippers vs. Timberwolves Injury Report: Latest on Darius Garland, Kawhi Leonard & John Collins",
-      "blurb": "Darius Garland to make Clippers debut Monday at Warriors The New York Times",
-      "summary": "Darius Garland to make Clippers debut Monday at Warriors The New York Times Darius Garland Sets Date for Clippers Debut After James Harden Trade Sports Illustrated James Harden traded to Cavaliers, Clippers get Darius Garland in return: Sources The New York Times Aggregated from The New York Times, Sports Illustrated, New York Post, Sportskeeda, NBC Sports and 6 more.",
+      "blurb": "Clippers Give Fans a Disappointing Darius Garland Injury Update Sports Illustrated",
+      "summary": "Clippers Give Fans a Disappointing Darius Garland Injury Update Sports Illustrated Is Jalen Johnson Playing Tonight? (Injury Update, Betting Impact for Grizzlies vs. Aggregated from Sports Illustrated, NBC Sports, Yahoo Sports, CBS Sports, The New York Times and 6 more.",
       "category": "injury",
       "published": "2022-11-16T08:00:00Z",
       "updated": "2026-04-08T07:00:00Z",
@@ -13446,6 +13720,14 @@
           "kind": "article",
           "snippet": "Reports: Darius Garland to make return against Boston after suffering eye injury Sportskeeda",
           "published": "Wed, 16 Nov 2022 08:00:00 GMT"
+        },
+        {
+          "title": "Clippers Give Fans a Disappointing Darius Garland Injury Update",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONlRZbE9BWHl4bXpBRkx6RmFMOGlydndBR3p1LVZOLWRJTUk2SzR5bExkbWVrVVFQaVZVWUNjOGlSa0k4MU40eEowZUR4Q19Ya0pXeE5iSzFuYzlyRjlKOTQyMVNUV1QzUEp6UDEtcDJXb3NpR2lvem1MWEtRTDR4SWlOQVNRUHRZaVRLYVNQNk13OU1QSU9MN2wwMF9KQkU2RGM5ZkE4QzdwUHluRkR4QmkteG1vMkk?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Give Fans a Disappointing Darius Garland Injury Update Sports Illustrated",
+          "published": "Mon, 09 Feb 2026 08:00:00 GMT"
         }
       ]
     },
