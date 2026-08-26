@@ -1,7 +1,7 @@
 {
   "sport": "basketball",
-  "updated": "2026-08-26T05:59:52Z",
-  "fresh": 440,
+  "updated": "2026-08-26T08:26:01Z",
+  "fresh": 320,
   "stories": [
     {
       "id": "offseason-trade-free-agent-rumors-2026-teams-still-0295e28b",
@@ -908,26 +908,12 @@
       "slug": "klay-thompson-sign-2-year-deal-heat-mavs-85559432",
       "sport": "basketball",
       "headline": "Klay Thompson signs with Heat + talking Blazers, Jazz, Wizards, Raptors & Mavericks with Andrew Sharp",
-      "blurb": "Jeff Teague says he’s taking the Heat over the Sixers now that they’ve signed Klay Thompson.",
-      "summary": "Jeff Teague says he’s taking the Heat over the Sixers now that they’ve signed Klay Thompson. “Don’t let Jrue Holiday get a buyout and go to Miami. We (Heat) the best team in the East, competing with the Knicks” (Via @club520podcast / h/t @TheHeatCentral) x.com Aggregated from x.com, NBA.com, ESPN, CBS NBA, NY Post Sports and 4 more.",
+      "blurb": "The veteran wing will provide the Heat with much-needed shooting around Giannis Antetokounmpo and Bam Adebayo",
+      "summary": "The veteran wing will provide the Heat with much-needed shooting around Giannis Antetokounmpo and Bam Adebayo Klay Thompson signs with Heat after Mavericks buyout NBA.com Klay Thompson to sign 2-year deal with Heat after Mavs buyout ESPN Aggregated from CBS NBA, NBA.com, ESPN, NY Post Sports, NBC Sports and 4 more.",
       "category": "roster",
       "published": "2026-08-21T19:24:00Z",
       "updated": "2026-08-25T13:01:29Z",
       "players": [
-        {
-          "key": "klay thompson",
-          "name": "Klay Thompson",
-          "slug": "klay-thompson",
-          "pos": "SG",
-          "team": "DAL"
-        },
-        {
-          "key": "jrue holiday",
-          "name": "Jrue Holiday",
-          "slug": "jrue-holiday",
-          "pos": "PG",
-          "team": "BOS"
-        },
         {
           "key": "giannis antetokounmpo",
           "name": "Giannis Antetokounmpo",
@@ -936,11 +922,25 @@
           "team": "MIL"
         },
         {
+          "key": "klay thompson",
+          "name": "Klay Thompson",
+          "slug": "klay-thompson",
+          "pos": "SG",
+          "team": "DAL"
+        },
+        {
           "key": "bam adebayo",
           "name": "Bam Adebayo",
           "slug": "bam-adebayo",
           "pos": "C",
           "team": "MIA"
+        },
+        {
+          "key": "jrue holiday",
+          "name": "Jrue Holiday",
+          "slug": "jrue-holiday",
+          "pos": "PG",
+          "team": "BOS"
         }
       ],
       "sources": [
@@ -1526,6 +1526,92 @@
       ]
     },
     {
+      "id": "reserve-point-guard-brandon-williams-reportedly-agrees-join-ec63d34c",
+      "slug": "reserve-point-guard-brandon-williams-reportedly-agrees-join-ec63d34c",
+      "sport": "basketball",
+      "headline": "Reserve point guard Brandon Williams reportedly agrees to join Warriors on one-year minimum contract",
+      "blurb": "Roster business mostly done for the Warriors this summer after adding a veteran frontcourt bench option (Georges Niang) known for his durability (72, 76, 78, 82, 79 games…",
+      "summary": "Roster business mostly done for the Warriors this summer after adding a veteran frontcourt bench option (Georges Niang) known for his durability (72, 76, 78, 82, 79 games played last five seasons before missing 25-26) and spacing (39.9% career from 3 on g x.com This is a quality signing for the minimum this late in the summer, Williams can help Golden State. Dubs fill their 14th roster spot. Aggregated from x.com, NBC Sports, SB Nation, NBC Sports BayArea, NY Post Sports.",
+      "category": "roster",
+      "published": "2026-08-25T07:07:16Z",
+      "updated": "2026-08-26T01:19:22Z",
+      "players": [
+        {
+          "key": "georges niang",
+          "name": "Georges Niang",
+          "slug": "georges-niang",
+          "pos": "PF",
+          "team": "CLE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Reserve point guard Brandon Williams reportedly agrees to join Warriors on one-year minimum contract",
+          "url": "https://sports.yahoo.com/articles/point-guard-brandon-williams-reportedly-160311149.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "This is a quality signing for the minimum this late in the summer, Williams can help Golden State.",
+          "published": "Tue, 25 Aug 2026 16:03:11 +0000"
+        },
+        {
+          "title": "Warriors Bolster Backcourt, Agree to One-Year Deal with Guard Brandon Williams",
+          "url": "https://sports.yahoo.com/articles/warriors-bolster-backcourt-agree-one-134929084.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Dubs fill their 14th roster spot.",
+          "published": "Tue, 25 Aug 2026 13:49:29 +0000"
+        },
+        {
+          "title": "Brandon Williams, Warriors agree to one-year, $2.6M NBA contract, per agents",
+          "url": "https://sports.yahoo.com/articles/brandon-williams-warriors-agree-one-070716846.html",
+          "publisher": "NBC Sports BayArea",
+          "kind": "article",
+          "snippet": "The Golden State Warriors agreed to a one-year, $2.6 million contract with free-agent guard Brandon Williams, his agents confirmed to ESPN.",
+          "published": "Tue, 25 Aug 2026 07:07:16 +0000"
+        },
+        {
+          "title": "Warriors sign Brandon Williams to one-year, $2.6 million deal",
+          "url": "https://sports.yahoo.com/articles/warriors-sign-brandon-williams-one-155307677.html",
+          "publisher": "NY Post Sports",
+          "kind": "article",
+          "snippet": "The contract marks Golden State's first outside acquisition in what has been a relatively quiet offseason for the team.",
+          "published": "Tue, 25 Aug 2026 15:53:07 +0000"
+        },
+        {
+          "title": "Forward Georges Niang, Warriors agree to one-year, $3.9M contract, per agents",
+          "url": "https://sports.yahoo.com/articles/forward-georges-niang-warriors-agree-154020214.html",
+          "publisher": "NBC Sports BayArea",
+          "kind": "article",
+          "snippet": "Veteran forward Georges Niang and the Golden State Warriors have agreed to a one-year, $3.9 million contract in NBA free agency.",
+          "published": "Tue, 25 Aug 2026 15:40:20 +0000"
+        },
+        {
+          "title": "Report: Former Arizona guard Brandon Williams signs with Warriors",
+          "url": "https://sports.yahoo.com/articles/report-former-arizona-guard-brandon-233331305.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Steve Kerr will have a former Arizona guard under his tutelage this NBA season. Brandon Williams has signed a one-year, $2.6 million contract with the Golden State Warriors, ESPN’s Shams Charania reported Tuesday. The former Wildcats point guard is coming off a career-best season",
+          "published": "Tue, 25 Aug 2026 23:33:31 +0000"
+        },
+        {
+          "title": "Golden State reportedly to round out roster signing sharp-shooting forward Georges Niang",
+          "url": "https://sports.yahoo.com/articles/golden-state-reportedly-round-roster-011922309.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "The minivan is coming to the Bay Area.",
+          "published": "Wed, 26 Aug 2026 01:19:22 +0000"
+        },
+        {
+          "title": "Roster business mostly done for the Warriors this summer after adding a veteran frontcourt bench option (Georges Niang) known for his durability (72, 76, 78, 82, 79 games played last five seasons before missing 25-26) and spacing (39.9% career from 3 on g",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYMVR3M08wVnJxWlJjNTJ0WDNEdlpVNlBJLXBtQVNiU0lfN3ExVjV3bF9PMi1DM21iUk9iMFFGWW5FUjBNaWJNcUgxd3BRWE9kUjRoeTNPM240QXB6RW9wcGxFVWhldw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Roster business mostly done for the Warriors this summer after adding a veteran frontcourt bench option (Georges Niang) known for his durability (72, 76, 78, 82, 79 games played last five seasons before missing 25-26) and spacing (39.9% career from 3 on g x.com",
+          "published": "Tue, 25 Aug 2026 22:40:57 GMT"
+        }
+      ]
+    },
+    {
       "id": "winners-losers-jaren-jackson-jr-trade-utah-127e9712",
       "slug": "winners-losers-jaren-jackson-jr-trade-utah-127e9712",
       "sport": "basketball",
@@ -1777,84 +1863,6 @@
       ]
     },
     {
-      "id": "reserve-point-guard-brandon-williams-reportedly-agrees-join-ec63d34c",
-      "slug": "reserve-point-guard-brandon-williams-reportedly-agrees-join-ec63d34c",
-      "sport": "basketball",
-      "headline": "Reserve point guard Brandon Williams reportedly agrees to join Warriors on one-year minimum contract",
-      "blurb": "The minivan is coming to the Bay Area.",
-      "summary": "Georges Niang: The minivan is coming to the Bay Area. This is a quality signing for the minimum this late in the summer, Williams can help Golden State. Dubs fill their 14th roster spot. Aggregated from NBC Sports, SB Nation, NBC Sports BayArea, NY Post Sports.",
-      "category": "roster",
-      "published": "2026-08-25T07:07:16Z",
-      "updated": "2026-08-26T01:19:22Z",
-      "players": [
-        {
-          "key": "georges niang",
-          "name": "Georges Niang",
-          "slug": "georges-niang",
-          "pos": "PF",
-          "team": "CLE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Reserve point guard Brandon Williams reportedly agrees to join Warriors on one-year minimum contract",
-          "url": "https://sports.yahoo.com/articles/point-guard-brandon-williams-reportedly-160311149.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "This is a quality signing for the minimum this late in the summer, Williams can help Golden State.",
-          "published": "Tue, 25 Aug 2026 16:03:11 +0000"
-        },
-        {
-          "title": "Warriors Bolster Backcourt, Agree to One-Year Deal with Guard Brandon Williams",
-          "url": "https://sports.yahoo.com/articles/warriors-bolster-backcourt-agree-one-134929084.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Dubs fill their 14th roster spot.",
-          "published": "Tue, 25 Aug 2026 13:49:29 +0000"
-        },
-        {
-          "title": "Brandon Williams, Warriors agree to one-year, $2.6M NBA contract, per agents",
-          "url": "https://sports.yahoo.com/articles/brandon-williams-warriors-agree-one-070716846.html",
-          "publisher": "NBC Sports BayArea",
-          "kind": "article",
-          "snippet": "The Golden State Warriors agreed to a one-year, $2.6 million contract with free-agent guard Brandon Williams, his agents confirmed to ESPN.",
-          "published": "Tue, 25 Aug 2026 07:07:16 +0000"
-        },
-        {
-          "title": "Warriors sign Brandon Williams to one-year, $2.6 million deal",
-          "url": "https://sports.yahoo.com/articles/warriors-sign-brandon-williams-one-155307677.html",
-          "publisher": "NY Post Sports",
-          "kind": "article",
-          "snippet": "The contract marks Golden State's first outside acquisition in what has been a relatively quiet offseason for the team.",
-          "published": "Tue, 25 Aug 2026 15:53:07 +0000"
-        },
-        {
-          "title": "Forward Georges Niang, Warriors agree to one-year, $3.9M contract, per agents",
-          "url": "https://sports.yahoo.com/articles/forward-georges-niang-warriors-agree-154020214.html",
-          "publisher": "NBC Sports BayArea",
-          "kind": "article",
-          "snippet": "Veteran forward Georges Niang and the Golden State Warriors have agreed to a one-year, $3.9 million contract in NBA free agency.",
-          "published": "Tue, 25 Aug 2026 15:40:20 +0000"
-        },
-        {
-          "title": "Report: Former Arizona guard Brandon Williams signs with Warriors",
-          "url": "https://sports.yahoo.com/articles/report-former-arizona-guard-brandon-233331305.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Steve Kerr will have a former Arizona guard under his tutelage this NBA season. Brandon Williams has signed a one-year, $2.6 million contract with the Golden State Warriors, ESPN’s Shams Charania reported Tuesday. The former Wildcats point guard is coming off a career-best season",
-          "published": "Tue, 25 Aug 2026 23:33:31 +0000"
-        },
-        {
-          "title": "Golden State reportedly to round out roster signing sharp-shooting forward Georges Niang",
-          "url": "https://sports.yahoo.com/articles/golden-state-reportedly-round-roster-011922309.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "The minivan is coming to the Bay Area.",
-          "published": "Wed, 26 Aug 2026 01:19:22 +0000"
-        }
-      ]
-    },
-    {
       "id": "76ers-proposed-trade-joel-embiid-2x-champ-pg-c9f20a7f",
       "slug": "76ers-proposed-trade-joel-embiid-2x-champ-pg-c9f20a7f",
       "sport": "basketball",
@@ -1920,6 +1928,58 @@
           "kind": "article",
           "snippet": "76ers Proposed to Trade Joel Embiid for 2x NBA Champ PG in Major Blazers Deal Yahoo Sports",
           "published": "Mon, 24 Aug 2026 22:11:59 GMT"
+        }
+      ]
+    },
+    {
+      "id": "open-thread-cbs-names-victor-wembanyama-stephon-castle-fefaf15e",
+      "slug": "open-thread-cbs-names-victor-wembanyama-stephon-castle-fefaf15e",
+      "sport": "basketball",
+      "headline": "Reggie Miller: Trade Everyone But Victor Wembanyama and Stephon Castle to Get Stephen Curry",
+      "blurb": "Reggie Miller: Trade Everyone But Victor Wembanyama and Stephon Castle to Get Stephen Curry The SportsRush",
+      "summary": "Reggie Miller: Trade Everyone But Victor Wembanyama and Stephon Castle to Get Stephen Curry The SportsRush Some long-term partners, some who just met up, and a loaded 76ers highlights this year’s list Aggregated from The SportsRush, SB Nation.",
+      "category": "trade",
+      "published": "2026-01-26T08:00:00Z",
+      "updated": "2026-08-25T11:00:00Z",
+      "players": [
+        {
+          "key": "victor wembanyama",
+          "name": "Victor Wembanyama",
+          "slug": "victor-wembanyama",
+          "pos": "C",
+          "team": "SAS"
+        },
+        {
+          "key": "stephon castle",
+          "name": "Stephon Castle",
+          "slug": "stephon-castle",
+          "pos": "PG",
+          "team": "SAS"
+        },
+        {
+          "key": "stephen curry",
+          "name": "Stephen Curry",
+          "slug": "stephen-curry",
+          "pos": "PG",
+          "team": "GSW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Open Thread: CBS names Victor Wembanyama and Stephon Castle top NBA duo",
+          "url": "https://sports.yahoo.com/articles/open-thread-cbs-names-victor-110000345.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Some long-term partners, some who just met up, and a loaded 76ers highlights this year’s list",
+          "published": "Tue, 25 Aug 2026 11:00:00 +0000"
+        },
+        {
+          "title": "Reggie Miller: Trade Everyone But Victor Wembanyama and Stephon Castle to Get Stephen Curry",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZG43blRGeUJieFZnWDl0bnZlV2d2SDU0TTlKODMyWnk4dk1TaDFMRVdEYTlwVG5ma3Y5aDlrY3RFTlFqZjNwNl9lRGQ0VVBEN210Z2xuWGQxSGpvSHFXckF4eXZ4bFhjRUl5d0ZGU0NhOEg3WnoyNXRUaldKa2dXZTJZTjVBbmZsX185dWhjY3NGY0N0cGkxcFphWVZoQUF1RXNDRW04RnowdnBzT09YNjFudEFSMlZ3WVlHdjNrNG9HTWhn?oc=5",
+          "publisher": "The SportsRush",
+          "kind": "article",
+          "snippet": "Reggie Miller: Trade Everyone But Victor Wembanyama and Stephon Castle to Get Stephen Curry The SportsRush",
+          "published": "Mon, 26 Jan 2026 08:00:00 GMT"
         }
       ]
     },
@@ -2233,6 +2293,52 @@
       ]
     },
     {
+      "id": "projected-trade-reunites-lakers-7-1-3-pt-c35df154",
+      "slug": "projected-trade-reunites-lakers-7-1-3-pt-c35df154",
+      "sport": "basketball",
+      "headline": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. 2 Shot Blocker",
+      "blurb": "Projected NBA Trade Sends 22-Year-Old 6’10” Unicorn to Lakers heavy.com",
+      "summary": "Luka Doncic: Projected NBA Trade Sends 22-Year-Old 6’10” Unicorn to Lakers heavy.com Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. Projected NBA Trade Gives Lakers 7’1″ Sharpshooter to Pair With Luka Doncic Yahoo Sports Aggregated from heavy.com, Yahoo Sports.",
+      "category": "trade",
+      "published": "2026-08-21T12:28:50Z",
+      "updated": "2026-08-26T00:12:00Z",
+      "players": [
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. 2 Shot Blocker",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRFBvZ2M4bVNpajYyYXlBc2dMQU9NZlZiXzFETmFBVFJ2VDVEQVdpZnJkVkNSaXdWU3NLcFdtbWFSeGlKSVdBRmhwQjZ2d3BtMEVQeFUydDE2T0VCMGd6RHFJY0NrUmNTZ2pFUjNub25pUXh6YVdWTzhqd0NGQTQzRU1RcmUtUnpqeTZrYw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. 2 Shot Blocker Yahoo Sports",
+          "published": "Wed, 26 Aug 2026 00:12:00 GMT"
+        },
+        {
+          "title": "Projected NBA Trade Gives Lakers 7’1″ Sharpshooter to Pair With Luka Doncic",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeVRTUmk0VW10RkhwU0t5ZVJ6NXlKbmNrOWRYbTJGcDYxak05RHdiR0Iwc2dwTFUwVEZ2Y3hYNERGNjZMenFRc1lDTXg2UGQ4cnRjZDBKUFU3Q0dTdXU1S29TbHpFTnM0WU5ZRTE2cThSUVNCUDhldEQ2dURqUjA4QzhjWXd3WTNk?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Projected NBA Trade Gives Lakers 7’1″ Sharpshooter to Pair With Luka Doncic Yahoo Sports",
+          "published": "Sat, 22 Aug 2026 01:57:00 GMT"
+        },
+        {
+          "title": "Projected NBA Trade Sends 22-Year-Old 6’10” Unicorn to Lakers",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObV9tb3F1MlB6Zkl1TlQ0eExIOG4yMHVSaEphaGplX3hjQ0VBRk11aGVKdFdtbXpCbmhVbUxZWWQ0c2FxZEVHUlJFeFBTWUdZMkl2MHZIaEU4T1hwTTVCOFNfeGNhdlYzN2Rlckl3NGt3UFZKaWlHcUQ3eW1sRTZ4dl9odVU?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Projected NBA Trade Sends 22-Year-Old 6’10” Unicorn to Lakers heavy.com",
+          "published": "Fri, 21 Aug 2026 12:28:50 GMT"
+        }
+      ]
+    },
+    {
       "id": "klay-thompson-officially-agrees-deal-heat-cada811f",
       "slug": "klay-thompson-officially-agrees-deal-heat-cada811f",
       "sport": "basketball",
@@ -2317,44 +2423,6 @@
       ]
     },
     {
-      "id": "projected-trade-reunites-lakers-7-1-3-pt-c35df154",
-      "slug": "projected-trade-reunites-lakers-7-1-3-pt-c35df154",
-      "sport": "basketball",
-      "headline": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. 2 Shot Blocker",
-      "blurb": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No.",
-      "summary": "Luka Doncic: Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. Projected NBA Trade Gives Lakers 7’1″ Sharpshooter to Pair With Luka Doncic Yahoo Sports Desk reading of Yahoo Sports.",
-      "category": "trade",
-      "published": "2026-08-22T01:57:00Z",
-      "updated": "2026-08-26T00:12:00Z",
-      "players": [
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. 2 Shot Blocker",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRFBvZ2M4bVNpajYyYXlBc2dMQU9NZlZiXzFETmFBVFJ2VDVEQVdpZnJkVkNSaXdWU3NLcFdtbWFSeGlKSVdBRmhwQjZ2d3BtMEVQeFUydDE2T0VCMGd6RHFJY0NrUmNTZ2pFUjNub25pUXh6YVdWTzhqd0NGQTQzRU1RcmUtUnpqeTZrYw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. 2 Shot Blocker Yahoo Sports",
-          "published": "Wed, 26 Aug 2026 00:12:00 GMT"
-        },
-        {
-          "title": "Projected NBA Trade Gives Lakers 7’1″ Sharpshooter to Pair With Luka Doncic",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPeVRTUmk0VW10RkhwU0t5ZVJ6NXlKbmNrOWRYbTJGcDYxak05RHdiR0Iwc2dwTFUwVEZ2Y3hYNERGNjZMenFRc1lDTXg2UGQ4cnRjZDBKUFU3Q0dTdXU1S29TbHpFTnM0WU5ZRTE2cThSUVNCUDhldEQ2dURqUjA4QzhjWXd3WTNk?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Projected NBA Trade Gives Lakers 7’1″ Sharpshooter to Pair With Luka Doncic Yahoo Sports",
-          "published": "Sat, 22 Aug 2026 01:57:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "jimmy-butler-returning-acl-injury-2027-trade-deadline-dbfa402f",
       "slug": "jimmy-butler-returning-acl-injury-2027-trade-deadline-dbfa402f",
       "sport": "basketball",
@@ -2419,6 +2487,36 @@
           "kind": "article",
           "snippet": "Why Russell Westbrook signing with the Rockets is intriguing but very unlikely The New York Times",
           "published": "Thu, 09 Oct 2025 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "phoenix-suns-guard-collin-gillespie-talks-record-new-fd4955a0",
+      "slug": "phoenix-suns-guard-collin-gillespie-talks-record-new-fd4955a0",
+      "sport": "basketball",
+      "headline": "Phoenix Suns Guard Collin Gillespie Talks RECORD-BREAKING Season & NEW Contract",
+      "blurb": "Phoenix Suns Guard Collin Gillespie Talks RECORD-BREAKING Season & NEW Contract YouTube",
+      "summary": "Phoenix Suns Guard Collin Gillespie Talks RECORD-BREAKING Season & NEW Contract YouTube Desk reading of YouTube.",
+      "category": "roster",
+      "published": "2026-08-25T23:15:03Z",
+      "updated": "2026-08-25T23:15:03Z",
+      "players": [
+        {
+          "key": "collin gillespie",
+          "name": "Collin Gillespie",
+          "slug": "collin-gillespie",
+          "pos": "PG",
+          "team": "PHX"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Phoenix Suns Guard Collin Gillespie Talks RECORD-BREAKING Season & NEW Contract",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9PT0hCQkxpVExJTVhYMDQ2RFFMOVc0YlFoQzlrYThqNzVLaVR4SXlHcllTTkphQk96c3g2MHRaMnZhRnpaTEgyOGdrU1NOSlVrSTU0TGVR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Phoenix Suns Guard Collin Gillespie Talks RECORD-BREAKING Season & NEW Contract YouTube",
+          "published": "Tue, 25 Aug 2026 23:15:03 GMT"
         }
       ]
     },
@@ -2557,6 +2655,36 @@
       ]
     },
     {
+      "id": "patrick-williams-featured-5-1-trades-built-89e6987d",
+      "slug": "patrick-williams-featured-5-1-trades-built-89e6987d",
+      "sport": "basketball",
+      "headline": "Patrick Williams featured in 5.1% of trades built on …",
+      "blurb": "Patrick Williams featured in 5.1% of trades built on … HoopsHype",
+      "summary": "Patrick Williams featured in 5.1% of trades built on … HoopsHype Desk reading of HoopsHype.",
+      "category": "trade",
+      "published": "2026-08-25T12:16:00Z",
+      "updated": "2026-08-25T12:16:00Z",
+      "players": [
+        {
+          "key": "patrick williams",
+          "name": "Patrick Williams",
+          "slug": "patrick-williams",
+          "pos": "PF",
+          "team": "CHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Patrick Williams featured in 5.1% of trades built on …",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSTVQNDZMaU9lQ3FOYTBmckYtZkdXZTh5NElUOFFPYWxoN3BXZnJiZ25IV3Q2MzZzUWR3cGN3N3UxOXFkUEh6TXN3NFpOb2xRZTBVQ3d0eFhlR2JCa01hcExVX2xMU3R0ZUlzMjF6WkFSOW1uUmpGREd6WFhCUldVZTRfYzc2Y2hKTnJHVFdVV3Bib00xRThMXzE3RHJDSFhVNXFFY3dmV1NqTFR6YW9CLUQ3QlQwNEFIZFZkT3REWmwzb2c?oc=5",
+          "publisher": "HoopsHype",
+          "kind": "article",
+          "snippet": "Patrick Williams featured in 5.1% of trades built on … HoopsHype",
+          "published": "Tue, 25 Aug 2026 12:16:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "myles-turner-decision-could-make-bucks-center-attention-98aa37b0",
       "slug": "myles-turner-decision-could-make-bucks-center-attention-98aa37b0",
       "sport": "basketball",
@@ -2607,73 +2735,6 @@
           "kind": "article",
           "snippet": "Follow The NBA Trade Deadline At Hoops Rumors MLB Trade Rumors",
           "published": "Tue, 08 Feb 2022 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "patrick-williams-featured-5-1-trades-built-89e6987d",
-      "slug": "patrick-williams-featured-5-1-trades-built-89e6987d",
-      "sport": "basketball",
-      "headline": "Patrick Williams featured in 5.1% of trades built on …",
-      "blurb": "Patrick Williams featured in 5.1% of trades built on … HoopsHype",
-      "summary": "Patrick Williams featured in 5.1% of trades built on … HoopsHype Desk reading of HoopsHype.",
-      "category": "trade",
-      "published": "2026-08-25T12:16:00Z",
-      "updated": "2026-08-25T12:16:00Z",
-      "players": [
-        {
-          "key": "patrick williams",
-          "name": "Patrick Williams",
-          "slug": "patrick-williams",
-          "pos": "PF",
-          "team": "CHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Patrick Williams featured in 5.1% of trades built on …",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQSTVQNDZMaU9lQ3FOYTBmckYtZkdXZTh5NElUOFFPYWxoN3BXZnJiZ25IV3Q2MzZzUWR3cGN3N3UxOXFkUEh6TXN3NFpOb2xRZTBVQ3d0eFhlR2JCa01hcExVX2xMU3R0ZUlzMjF6WkFSOW1uUmpGREd6WFhCUldVZTRfYzc2Y2hKTnJHVFdVV3Bib00xRThMXzE3RHJDSFhVNXFFY3dmV1NqTFR6YW9CLUQ3QlQwNEFIZFZkT3REWmwzb2c?oc=5",
-          "publisher": "HoopsHype",
-          "kind": "article",
-          "snippet": "Patrick Williams featured in 5.1% of trades built on … HoopsHype",
-          "published": "Tue, 25 Aug 2026 12:16:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "open-thread-cbs-names-victor-wembanyama-stephon-castle-fefaf15e",
-      "slug": "open-thread-cbs-names-victor-wembanyama-stephon-castle-fefaf15e",
-      "sport": "basketball",
-      "headline": "Open Thread: CBS names Victor Wembanyama and Stephon Castle top NBA duo",
-      "blurb": "Some long-term partners, some who just met up, and a loaded 76ers highlights this year’s list",
-      "summary": "Victor Wembanyama and Stephon Castle: Some long-term partners, some who just met up, and a loaded 76ers highlights this year’s list Desk reading of SB Nation.",
-      "category": "wire",
-      "published": "2026-08-25T11:00:00Z",
-      "updated": "2026-08-25T11:00:00Z",
-      "players": [
-        {
-          "key": "victor wembanyama",
-          "name": "Victor Wembanyama",
-          "slug": "victor-wembanyama",
-          "pos": "C",
-          "team": "SAS"
-        },
-        {
-          "key": "stephon castle",
-          "name": "Stephon Castle",
-          "slug": "stephon-castle",
-          "pos": "PG",
-          "team": "SAS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Open Thread: CBS names Victor Wembanyama and Stephon Castle top NBA duo",
-          "url": "https://sports.yahoo.com/articles/open-thread-cbs-names-victor-110000345.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Some long-term partners, some who just met up, and a loaded 76ers highlights this year’s list",
-          "published": "Tue, 25 Aug 2026 11:00:00 +0000"
         }
       ]
     },
@@ -4868,12 +4929,47 @@
       "slug": "mock-blockbuster-trade-knicks-acquire-giannis-antetokounmpo-karl-d86d27cc",
       "sport": "basketball",
       "headline": "Is Karl-Anthony Towns playing tonight against Toronto Raptors? Latest injury update for Knicks star (Dec. 9)",
-      "blurb": "Anthony Edwards Injury Update: Is Ant Playing Tonight vs.",
-      "summary": "Anthony Edwards Injury Update: Is Ant Playing Tonight vs. Anthony Edwards Injury Update NBA.com Is Amen Thompson Playing Tonight? Aggregated from PrizePicks, NBA.com, Sports Illustrated, The New York Times, Diario AS and 3 more.",
+      "blurb": "Is Stephon Castle playing tonight against Timberwolves?",
+      "summary": "Is Stephon Castle playing tonight against Timberwolves? Latest on Spurs guard's availability (Dec. What we’re hearing about Karl-Anthony Towns’ NBA Finals play impacting Knicks, Giannis - The Athletic The New York Times Aggregated from Sportskeeda, The New York Times, Diario AS, Sports Illustrated, sportingnews.com and 4 more.",
       "category": "injury",
       "published": "2024-10-03T07:00:00Z",
       "updated": "2026-08-06T07:00:00Z",
       "players": [
+        {
+          "key": "stephon castle",
+          "name": "Stephon Castle",
+          "slug": "stephon-castle",
+          "pos": "PG",
+          "team": "SAS"
+        },
+        {
+          "key": "joel embiid",
+          "name": "Joel Embiid",
+          "slug": "joel-embiid",
+          "pos": "C",
+          "team": "PHI"
+        },
+        {
+          "key": "jalen williams",
+          "name": "Jalen Williams",
+          "slug": "jalen-williams",
+          "pos": "SF",
+          "team": "OKC"
+        },
+        {
+          "key": "tyrese maxey",
+          "name": "Tyrese Maxey",
+          "slug": "tyrese-maxey",
+          "pos": "PG",
+          "team": "PHI"
+        },
+        {
+          "key": "jalen brunson",
+          "name": "Jalen Brunson",
+          "slug": "jalen-brunson",
+          "pos": "PG",
+          "team": "NYK"
+        },
         {
           "key": "anthony edwards",
           "name": "Anthony Edwards",
@@ -4901,13 +4997,6 @@
           "slug": "nikola-jokic",
           "pos": "C",
           "team": "DEN"
-        },
-        {
-          "key": "jalen williams",
-          "name": "Jalen Williams",
-          "slug": "jalen-williams",
-          "pos": "SF",
-          "team": "OKC"
         },
         {
           "key": "cooper flagg",
@@ -5323,6 +5412,78 @@
           "kind": "article",
           "snippet": "Is Jalen Williams Playing Tonight? (Injury Update, Betting Impact for Thunder vs. 76ers) Sports Illustrated",
           "published": "Mon, 23 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Joel Embiid Injury Update: Is Embiid Playing Tonight vs. Knicks in Game 3?",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeExrSVdKT2RaelhLbGtWbVRCTGZRaG9XaXFpclZsSGs4bFo4aXYxd3JnQTJCNVBFWE5SVnpmbHNuUTlPVmN5c1hlMEEyV3I4LWFNYmlCbzQ1N3o4SkJROFNDdlQ5MVFKTkFTSTEwSTNqeUtiQ3ItdjFUUm1mSXRoX1Q4X2UwWFFFV3VhQy0xdnFCTW1HeW9vUDdFVTUta05XUFdqRlI3ZDhqVnlKNW9KdUxn?oc=5",
+          "publisher": "PrizePicks",
+          "kind": "article",
+          "snippet": "Joel Embiid Injury Update: Is Embiid Playing Tonight vs. Knicks in Game 3? PrizePicks",
+          "published": "Fri, 08 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Jalen Williams Playing Tonight? (Injury Update, Betting Impact for Lakers vs. Thunder Game 3)",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQ1F0dTMtX054ZHhZUmhVZUhoaGtla1U1VWtyN3MyalpLbGJDTy05QUtWWDFTQTZKRGFqeGFnZ056OTBlWlp6V0ZLcVZEcGJBeDNZdC1XeFo3RHJET0pIb1FKQ25PUWFkRXRyUFJVNUdjbEltSjFBcGd6Wkc0QmFmMXlTUWd0cWgySjJqS3U5dkIyajZSc0pLNGlYODZ2WXlt?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Jalen Williams Playing Tonight? (Injury Update, Betting Impact for Lakers vs. Thunder Game 3) Sports Illustrated",
+          "published": "Sat, 09 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Jalen Williams Playing Tonight? (Injury Update, Betting Impact for Lakers vs. Thunder Game 2)",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNanZEQk01RzEyejdHeG1wcGp0TmFIRWN5U2UwUlZKQklNU3FDWTRYOUoxbFFPVlVZdEc3d2NfeGlnWlhJZW16RmlUeGZIUkt6WUpUeWlraGF1ZEZTd1plXzBrUGJFTlN3ZVRacndpWTRPRkhGMkF2dzByZGxUbEJVajdoSThvMzUxYVlIT2V0TEtSTnQyT3I1VENmeDhsQm1t?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Jalen Williams Playing Tonight? (Injury Update, Betting Impact for Lakers vs. Thunder Game 2) Sports Illustrated",
+          "published": "Thu, 07 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Tyrese Maxey Playing Tonight? (Injury Update, Betting Impact for Magic vs. 76ers)",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVFA3dHBsZks2cTh6d0gwdHhZejZnU0lUUjlseDJOT1F0NWFEblAwZTEyZ1VfR241bDloVmY5dUtfMno3MGlMZWtJb0tTNjJfTGVxekdpRUpEdWhwb1FSeFhveUVhdHY2Ynk2SnFmemQ3QllzWEN1dEVzaU1NTm9uOTFMWlRjcmJzZEtOMzZaYXg?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Tyrese Maxey Playing Tonight? (Injury Update, Betting Impact for Magic vs. 76ers) Sports Illustrated",
+          "published": "Tue, 25 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Is Tyrese Maxey Playing Tonight? (Injury Update, Betting Impact for 76ers vs. Raptors)",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVm5vYWFpWUtUb2FsaWwwdTBiZ1NUbXJINXZJZWprSHZySkVLekI1NWphYzhFQlRaZG5aaUxwMlUxeGZvWDdoUGdSNHljOHMySWxBaFZzdWtXTGlPejBWbmR4M1R2MW5pWmhrQlFhaHJVTmVfck1NYVpqUXAtRDZCUjZnS2JrUkZZMDBSSW0zNWJuVWQ0cXppNTB5OXdhNThMSHBjOVVOY25famdW?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Tyrese Maxey Playing Tonight? (Injury Update, Betting Impact for 76ers vs. Raptors) Sports Illustrated",
+          "published": "Wed, 12 Mar 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Is Stephon Castle playing tonight? Spurs vs. Pacers injury report",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaHZmdDdnYW45TTVNNk1TdFFnMXRPX2xFODYwdzMwNG5GeUk4UV9vYUIxaGY2SGFNN0xpWFZVQzVxcnN6eUtaVk9nNjluOWtGTC1PQjRyTmt0azBWdEYxTGo4RDFtV3pYSUdObUVoSzVjT0o0b3JFOU9fbnRQMmw0cGViSFB5MTduY0VOdzNPOVdBRFVvMmczMnJHTUMxM3VqamJuWXlXLUZrV2M?oc=5",
+          "publisher": "ClutchPoints",
+          "kind": "article",
+          "snippet": "Is Stephon Castle playing tonight? Spurs vs. Pacers injury report ClutchPoints",
+          "published": "Sat, 21 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Jalen Brunson Playing Tonight? (Injury Update, Betting Impact for Knicks vs. Blazers)",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNkd6MjBvUmdMc0lsT3Fzd1NocHdLT1ljNlVBZ3BFTm1TcjBBTlh5ZEZEQTV6eXhkMWRRY19PYVdiczNjUXM5NDY5MzZzTFNHNjhLUUIzVm9NckVUaXJzRS1mZ1VUNlB4MkdHbUhfWVdkWjJaUGhySWIwNHZvZXNTWUZQT1EwYUVfQVV6VGVPLTRsQ2phOXV4bERNMW9reUowbThWREJB?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Jalen Brunson Playing Tonight? (Injury Update, Betting Impact for Knicks vs. Blazers) Sports Illustrated",
+          "published": "Wed, 12 Mar 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Is Jalen Brunson Playing Tonight? (Injury Update, Betting Impact for Knicks vs. Kings)",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeE1QMk1fT29zUG1sclNjWFFXRVVraXgyS2JHRm1KdDBKdXFPT29ReFA5cVpfbFUyZDk3WGpqWUNQMU13d3BiT0FqdnItZDJQWFNQQUNtdzNXX2tka2VJa1g4OTBUZWF2NXpVZVdmM1FIS3lWOHpKNTN6YWdZSHg4dWhCTDk2STMwbVdleGJCa0ZJZnc?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Jalen Brunson Playing Tonight? (Injury Update, Betting Impact for Knicks vs. Kings) Sports Illustrated",
+          "published": "Mon, 10 Mar 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Is Stephon Castle playing tonight against Timberwolves? Latest on Spurs guard's availability (Dec. 15)",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNckZ4MEZETnJDNDYxM19XZTNGU3lXWmtld094V09uVGpjSnFyaG9NdXMzdV95aEo1bTFjOGhhcFgyelE4MHdGTUlpeFdUZ21KVEdHLWx4QXR3ZF9RMWJNTEVyR3Zid1dKZWZaNGl5TnZSbEI0dUppWGI0VmhmbkJERmxaT1M3T011NXctUjF4UF9PTDhaS29YYzJOZkU2ejZFUVhzOTJjMlVIWDFoeHJiRFZtN19NVW9hQ29iRDRRa1JnZ1RGYTJNUDZ4aw?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "Is Stephon Castle playing tonight against Timberwolves? Latest on Spurs guard's availability (Dec. 15) Sportskeeda",
+          "published": "Mon, 15 Dec 2025 08:00:00 GMT"
         }
       ]
     },
@@ -11063,7 +11224,7 @@
       "sport": "basketball",
       "headline": "Spurs’ Devin Vassell defends Stephon Castle over questionable fouls received vs OKC",
       "blurb": "Spurs' Stephon Castle: Goes missing in Game 5 loss CBS Sports",
-      "summary": "Spurs' Stephon Castle: Goes missing in Game 5 loss CBS Sports Spurs’ Devin Vassell defends Stephon Castle over questionable fouls received vs OKC bolavip.com Spurs' Stephon Castle: Scores 18 points in loss CBS Sports Aggregated from CBS Sports, bolavip.com, DraftKings Network, Sportskeeda, sportingnews.com and 1 more.",
+      "summary": "Spurs' Stephon Castle: Goes missing in Game 5 loss CBS Sports Spurs’ Devin Vassell defends Stephon Castle over questionable fouls received vs OKC bolavip.com Spurs unlikely to trade Stephon Castle Yahoo Sports Aggregated from CBS Sports, bolavip.com, Yahoo Sports, Sportskeeda, sportingnews.com and 2 more.",
       "category": "injury",
       "published": "2023-06-23T07:00:00Z",
       "updated": "2026-06-14T07:00:00Z",
@@ -11201,6 +11362,22 @@
           "kind": "article",
           "snippet": "Stephon Castle Injury Update: Monday 3/10/25 vs. Mavericks DraftKings Network",
           "published": "Mon, 10 Mar 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Spurs unlikely to trade Stephon Castle",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQendVb0dXRmxrWmpkR2ZERTNtbkk3MDFzTFVNVjU3MUtQMHpIYkItOWNuSl9rZ1VQckNDRlU2Q3QySGxjbGpkbDh3dHlpU0tKb3YxRXlmOG5fZXBFTks3WDVHdEQ5X2VRVzZnMFRCUjI1U040RjFsNi15Z1diekNtb21GUDNqazJ6Ylp6cg?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Spurs unlikely to trade Stephon Castle Yahoo Sports",
+          "published": "Thu, 18 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Where is Stephon Castle from?",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5yaERqU3VGeVY5SlZhYmtmOWZCRTNaS2xuenozTll6UmtROUJnMnUxa0xKYWlBN2JFOXRGdUtWbnJrWm04eXNrSVJCdk9pWjVfOWlDSkJOOWVvdko3cjdXVFNJWEkyUVJqZmNsZ1lRWQ?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "Where is Stephon Castle from? Sportskeeda",
+          "published": "Mon, 17 Jun 2024 07:00:00 GMT"
         }
       ]
     },
@@ -11208,13 +11385,27 @@
       "id": "mitchell-robinson-headlines-today-s-injury-wednesday-6-3217112b",
       "slug": "mitchell-robinson-headlines-today-s-injury-wednesday-6-3217112b",
       "sport": "basketball",
-      "headline": "Final Injury Report for Knicks-Spurs NBA Finals Game 2: Will Jalen Brunson, Mitchell Robinson Play?",
-      "blurb": "Jalen Williams, Ajay Mitchell headline Thunder injury report for WCF Game 6 vs.",
-      "summary": "Jalen Williams, Ajay Mitchell headline Thunder injury report for WCF Game 6 vs. Jalen Williams, Isaiah Joe headline Thunder injury report for Game 3 vs. Will Jalen Williams Play Tonight vs Spurs? Aggregated from sportingnews.com, Yahoo Sports, Sports Illustrated, heavy.com, FanDuel and 9 more.",
+      "headline": "Jalen Brunson shakes off first-quarter knee scare, scores 30 as Knicks steal Finals Game 1 from Spurs",
+      "blurb": "Jalen Brunson shakes off first-quarter knee scare, scores 30 as Knicks steal Finals Game 1 from Spurs Fox News",
+      "summary": "Jalen Brunson shakes off first-quarter knee scare, scores 30 as Knicks steal Finals Game 1 from Spurs Fox News Kevin Durant Headlines Today’s NBA Injury Report: Tuesday 4/21/26 DraftKings Network Victor Wembanyama Headlines Today’s NBA Injury Report: Friday 4/24/26 DraftKings Network Aggregated from Fox News, DraftKings Network, Yahoo Sports, SILive.com, Rookie Wire and 11 more.",
       "category": "injury",
-      "published": "2025-10-21T07:00:00Z",
+      "published": "2024-05-08T07:00:00Z",
       "updated": "2026-06-14T07:00:00Z",
       "players": [
+        {
+          "key": "jalen brunson",
+          "name": "Jalen Brunson",
+          "slug": "jalen-brunson",
+          "pos": "PG",
+          "team": "NYK"
+        },
+        {
+          "key": "mitchell robinson",
+          "name": "Mitchell Robinson",
+          "slug": "mitchell-robinson",
+          "pos": "C",
+          "team": "NYK"
+        },
         {
           "key": "jalen williams",
           "name": "Jalen Williams",
@@ -11235,20 +11426,6 @@
           "slug": "isaiah-joe",
           "pos": "SG",
           "team": "OKC"
-        },
-        {
-          "key": "jalen brunson",
-          "name": "Jalen Brunson",
-          "slug": "jalen-brunson",
-          "pos": "PG",
-          "team": "NYK"
-        },
-        {
-          "key": "mitchell robinson",
-          "name": "Mitchell Robinson",
-          "slug": "mitchell-robinson",
-          "pos": "C",
-          "team": "NYK"
         },
         {
           "key": "luke kornet",
@@ -11556,6 +11733,38 @@
           "kind": "article",
           "snippet": "Jalen Williams injury update: Why did Thunder star leave Game 2 vs. Spurs? AOL.com",
           "published": "Thu, 21 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jalen Brunson Receives Final Injury Designation for Suns vs Knicks",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdVNLaXVfYWRIenowblA3dWxKNEgwT3Bjbkd3ZlVRdmF0RDFMdXRTcFB0bDZQUE1pVDZCendHb0lub3lhYlYtQWxRanFOdmFxZHVPaFlVME1iZ2pZeGdOSl85NC1xVDRTdTBLWUtlQUYxVkRweUNsOE9taGlweFo3aV9mQXZPbkpuVlByU0xFU0NLS0dkd0IyZ05UWFBqTVp4bUlkMzdleGhTeWp0QzJOQ1UwcVU?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Jalen Brunson Receives Final Injury Designation for Suns vs Knicks Sports Illustrated",
+          "published": "Sat, 17 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Jalen Brunson battles through foot injury to lead Knicks over Pacers in Game 2",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZ0VjcTVZYnEySlBwR1FBX2FtOFRKTEpYNHQ1cE9yaXlYQWZ6VHZ0cFJIdHp4QmNDUnhyMzhmV1ZUMjgtZ1JIdFRsdHVPeW5qMENtdXNtb3o3QWszX0ZBSU9EUjNxN1lyZEFXVmI2eDlvUDBuY3ZNVXVJZTI3cWhGbExLZDNPT3Vpa3hrR3lTaWU4QnQ50gGaAUFVX3lxTE5Tb0tqeGRVM3cxMEhibGVNeVFZZlpETU9PYXhDNS1NSHIyQnRKOWw2RlpCSVJIVHIySGtfSDlXOE5xSzVFeGdPSFZvVmJsWUtGR3hkWk9LWGk4Mnliejh3WFRoLWJTang5d0lYTFhJOFJWaUxiZUFyVlk5S3ZMV0lqTXJaVTE1dFM4aHBuM29ka2dIb2ctbWRYLXc?oc=5",
+          "publisher": "Fox News",
+          "kind": "article",
+          "snippet": "Jalen Brunson battles through foot injury to lead Knicks over Pacers in Game 2 Fox News",
+          "published": "Wed, 08 May 2024 07:00:00 GMT"
+        },
+        {
+          "title": "Will Jalen Brunson play today for the Knicks against the Magic?",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMVJNOXR3VmpZUml3VnZMSjIzR01STVgyUE1OS1dfUUNrUjFUQXl3WDVzbGZ1SXdRZ2diSjlON25Rb0tOTkl1aUVtbUpEV1J1eUl5djV1Tk45Z0x1Y0ItNEZXVzBPbENaMjJOUlRxNVh5YWg3ZERMdjVIU1E4aW5sNzloQm9zNWdTU2lEQ3dFUEHSAaQBQVVfeXFMUDlramllbklxYThWZWplVzBFbFpqWF96YW91Q0M0NnJwTVdWQTBlR0VsNS1PUnZjU1dmVUlHTmJUdTJpUTlEd2dfZ3REdW5hOUd2aU9tdHZiLWRLSFJBTFBOdHJ4cXQ4OGw2MWdiU2xrTHhRcldOTHFQOGd4QW8ycG9sX1BhYWZQWEVjb1NoSGRlSmpHUVVHa0RSbDhWczNCTlVqTHk?oc=5",
+          "publisher": "Diario AS",
+          "kind": "article",
+          "snippet": "Will Jalen Brunson play today for the Knicks against the Magic? Diario AS",
+          "published": "Mon, 06 Jan 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Jalen Brunson shakes off first-quarter knee scare, scores 30 as Knicks steal Finals Game 1 from Spurs",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUE5sWU54dlBfdFljY3Q4SGxMRVMycEt2dnJTWHdDWk5OSFNjZlRDcldrRUYzZllCaXJ4SjlQbjRtOTEwVWRSUnVQOXB2eUdJVkhsdHFicElFQW41SHhKWkh3S1paV1NtbW5ROXdqOTFDTGJOaVBXZHNlWUhVU2pSeEZuYVJ0WmJZQkN6cklUdGlJcGtmemszZWFfdExtOGVaVThEaUl5Z2pvYTZ4ZVBCeXgyeElCMTVuaDZz0gHAAUFVX3lxTE9qRDNGc1U3dTJGMnlQcGNtSWl4MWNmNG5JUkNrdU41SlBOTWdKOFZ1VDh2RjdQdC15T3BpVjdLeXVacGhyMWlCdlpaVzF5WmxZVU9XMW5Zb0FnNGY5Q20za3YtOWdEVWphRVN2MnFIYmlEZzVBLXZBdEh3a1NGVVlEbjI5d1JDWlBsRGRUX2I2VWF1U3lqT3F4cENrN2t5LS1CeTNneVpUaU5KR1NxRXEzZTlubXV5S2d3dVJsSUc0Zw?oc=5",
+          "publisher": "Fox News",
+          "kind": "article",
+          "snippet": "Jalen Brunson shakes off first-quarter knee scare, scores 30 as Knicks steal Finals Game 1 from Spurs Fox News",
+          "published": "Wed, 03 Jun 2026 07:00:00 GMT"
         }
       ]
     },
@@ -11564,12 +11773,19 @@
       "slug": "spurs-take-1-de-aaron-fox-ankle-soreness-34e3f5b2",
       "sport": "basketball",
       "headline": "Top 3 Trade Destinations For De'Aaron Fox If Spurs Reassess Backcourt Option With Dylan Harper Ascension",
-      "blurb": "Thunder Tonight: De'Aaron Fox, Dylan Harper Game 3 News PrizePicks",
-      "summary": "Thunder Tonight: De'Aaron Fox, Dylan Harper Game 3 News PrizePicks Jalen Williams Injury Update: Is Williams Playing Tonight vs. What channel is Thunder vs Spurs on TV tonight? Aggregated from PrizePicks, The Oklahoman, Sports Illustrated, FanSided, The New York Times and 5 more.",
+      "blurb": "Dylan Harper, De’Aaron Fox will both play in Spurs-Thunder Game 3; Jalen Williams out - The Athletic The New York Times",
+      "summary": "Dylan Harper, De’Aaron Fox will both play in Spurs-Thunder Game 3; Jalen Williams out - The Athletic The New York Times Is Jalen Williams playing tonight in Game 5 vs. Final status for Thunder star sportingnews.com Aggregated from The New York Times, sportingnews.com, Toronto Star, Yahoo Sports, Al Bat and 5 more.",
       "category": "injury",
       "published": "2025-06-26T07:00:00Z",
       "updated": "2026-06-13T07:00:00Z",
       "players": [
+        {
+          "key": "jalen williams",
+          "name": "Jalen Williams",
+          "slug": "jalen-williams",
+          "pos": "SF",
+          "team": "OKC"
+        },
         {
           "key": "dylan harper",
           "name": "Dylan Harper",
@@ -11585,10 +11801,10 @@
           "team": "SAS"
         },
         {
-          "key": "jalen williams",
-          "name": "Jalen Williams",
-          "slug": "jalen-williams",
-          "pos": "SF",
+          "key": "ajay mitchell",
+          "name": "Ajay Mitchell",
+          "slug": "ajay-mitchell",
+          "pos": "PG",
           "team": "OKC"
         },
         {
@@ -11597,13 +11813,6 @@
           "slug": "mitchell-robinson",
           "pos": "C",
           "team": "NYK"
-        },
-        {
-          "key": "ajay mitchell",
-          "name": "Ajay Mitchell",
-          "slug": "ajay-mitchell",
-          "pos": "PG",
-          "team": "OKC"
         },
         {
           "key": "stephon castle",
@@ -11837,8 +12046,8 @@
       "slug": "what-channel-thunder-lakers-tv-tonight-4-time-349caed1",
       "sport": "basketball",
       "headline": "Oklahoma City's Jalen Williams exits game in third quarter with left hamstring injury, does not return",
-      "blurb": "Oklahoma City's Jalen Williams exits game in third quarter with left hamstring injury, does not return NBC Sports",
-      "summary": "Oklahoma City's Jalen Williams exits game in third quarter with left hamstring injury, does not return NBC Sports What channel is Thunder vs Spurs on TV tonight? Game 6 time, NBA schedule, injury report The Oklahoman Aggregated from NBC Sports, The Oklahoman, PrizePicks, San Antonio Express-News, OKC Thunder Wire and 11 more.",
+      "blurb": "Thunder's Jalen Williams not on injury report, set to return from hamstring injury Monday vs.",
+      "summary": "Thunder's Jalen Williams not on injury report, set to return from hamstring injury Monday vs. Thunder’s Jalen Williams receives concerning hamstring injury update ahead of Game 3 vs Spurs bolavip.com Thunder's Jalen Williams pulled a Victor Wembanyama after nightmare Game 6 sportingnews.com Aggregated from NBC Sports, bolavip.com, sportingnews.com, The Oklahoman, PrizePicks and 11 more.",
       "category": "injury",
       "published": "2025-02-08T08:00:00Z",
       "updated": "2026-06-08T07:00:00Z",
@@ -12286,8 +12495,8 @@
       "slug": "what-channel-thunder-lakers-tv-tonight-3-time-33dd2e8b",
       "sport": "basketball",
       "headline": "Is Jalen Williams playing tonight for OKC vs Spurs in Game 6 of 2026 NBA Western Conference Finals?",
-      "blurb": "Is Jalen Williams playing tonight?",
-      "summary": "Is Jalen Williams playing tonight? Thunder star's final status at Knicks sportingnews.com What channel is Thunder vs Spurs on TV tonight? Aggregated from sportingnews.com, The Oklahoman, PrizePicks, San Antonio Express-News, OKC Thunder Wire and 9 more.",
+      "blurb": "Thunder receive major boost as Jalen Williams returns for Western Conference Finals sportingnews.com",
+      "summary": "Thunder receive major boost as Jalen Williams returns for Western Conference Finals sportingnews.com What channel is Thunder vs Spurs on TV tonight? Game 7 time, NBA schedule, injury report The Oklahoman Aggregated from sportingnews.com, The Oklahoman, PrizePicks, San Antonio Express-News, OKC Thunder Wire and 10 more.",
       "category": "injury",
       "published": "2026-03-04T08:00:00Z",
       "updated": "2026-06-08T07:00:00Z",
@@ -12717,6 +12926,22 @@
           "kind": "article",
           "snippet": "Is Jalen Williams playing tonight? Thunder star's final status at Knicks sportingnews.com",
           "published": "Wed, 04 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Jalen Williams headlines Thunder injury report for Game 2 vs. Lakers",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdWtVY1hWU203Xzh6eUlDZzZ3Q1ZQX2xhQlJuR2pRM2tmRDZnNkUwQ0hFamZnZWVvcUVhdHhwY0NZbV9nRzBRU3I0ZF8tUEtjQzVNUlA4VjR0OUlBSDdPaVdIYjJ0MFdHMkp1Wkp6VWxFNG5KUDNSZUtUWmdEY3NBdHVFd3JPRDZYMk9KNnlaYkUtdkNGdjVreUVTSE94ckhsalR6NUJxTEF4a19BWWtMYnpsRF9XN3VyR1FHSnRXNGdISzVqRWJudUY2S2Y1VFVFRHBKRGZnZ3VJb2l3WGVZLWRR?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Jalen Williams headlines Thunder injury report for Game 2 vs. Lakers sportingnews.com",
+          "published": "Thu, 07 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Thunder's Jalen Williams leaves Game 2 with third-quarter injury",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbUVxUlNRWjVfVG05aWJ5Z2NfVjNlWXhUaWxVTTA1Q1FHWHRvcTRTbXhQdnlic2JPYlBrZkwtSlJ5XzdRLS0zWVNLUV83Z0lJaXA4SUxubE96d3BUNlFLZTVzVzFnZXNYZC1WZGxNT1hIRXM5a1VrdnNIdHVhT3dwcUFUWXdlTkNhQlZqUWduTi1Fbm91UUJDYnowd2lzYVJ0VGU1Yg?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Thunder's Jalen Williams leaves Game 2 with third-quarter injury ESPN",
+          "published": "Wed, 22 Apr 2026 07:00:00 GMT"
         }
       ]
     },
@@ -12725,8 +12950,8 @@
       "slug": "stephon-castle-injury-spurs-guard-leaving-finals-2-6254c190",
       "sport": "basketball",
       "headline": "Stephon Castle injury update: Latest news on Spurs guard after leaving NBA Finals Game 2 with ankle issue",
-      "blurb": "Final Injury Report for Knicks-Spurs, Will Josh Hart, Stephon Castle Play?",
-      "summary": "Final Injury Report for Knicks-Spurs, Will Josh Hart, Stephon Castle Play? Victor Wembanyama, Stephon Castle headline Spurs injury report vs. Stephon Castle injury update: Latest news on Spurs guard after leaving NBA Finals Game 2 with ankle issue sportingnews.com Aggregated from Athlon Sports, sportingnews.com, Sports Illustrated, heavy.com, The New York Times and 3 more.",
+      "blurb": "Spurs injury report: Stephon Castle, Keldon Johnson and more ahead of matchup vs.",
+      "summary": "Spurs injury report: Stephon Castle, Keldon Johnson and more ahead of matchup vs. Final Injury Report for Thunder-Spurs: Will Shai Gilgeous-Alexander, Stephon Castle Play? Final Injury Report for Timberwolves-Spurs, Will Anthony Edwards, Stephon Castle Play? Aggregated from sportingnews.com, Athlon Sports, Sportskeeda, Sports Illustrated, heavy.com and 6 more.",
       "category": "injury",
       "published": "2024-12-24T08:00:00Z",
       "updated": "2026-06-06T07:00:00Z",
@@ -12737,27 +12962,6 @@
           "slug": "stephon-castle",
           "pos": "PG",
           "team": "SAS"
-        },
-        {
-          "key": "josh hart",
-          "name": "Josh Hart",
-          "slug": "josh-hart",
-          "pos": "SF",
-          "team": "NYK"
-        },
-        {
-          "key": "victor wembanyama",
-          "name": "Victor Wembanyama",
-          "slug": "victor-wembanyama",
-          "pos": "C",
-          "team": "SAS"
-        },
-        {
-          "key": "norman powell",
-          "name": "Norman Powell",
-          "slug": "norman-powell",
-          "pos": "SG",
-          "team": "LAC"
         },
         {
           "key": "keldon johnson",
@@ -12774,6 +12978,48 @@
           "team": "OKC"
         },
         {
+          "key": "anthony edwards",
+          "name": "Anthony Edwards",
+          "slug": "anthony-edwards",
+          "pos": "SG",
+          "team": "MIN"
+        },
+        {
+          "key": "devin vassell",
+          "name": "Devin Vassell",
+          "slug": "devin-vassell",
+          "pos": "SG",
+          "team": "SAS"
+        },
+        {
+          "key": "norman powell",
+          "name": "Norman Powell",
+          "slug": "norman-powell",
+          "pos": "SG",
+          "team": "LAC"
+        },
+        {
+          "key": "stephen curry",
+          "name": "Stephen Curry",
+          "slug": "stephen-curry",
+          "pos": "PG",
+          "team": "GSW"
+        },
+        {
+          "key": "josh hart",
+          "name": "Josh Hart",
+          "slug": "josh-hart",
+          "pos": "SF",
+          "team": "NYK"
+        },
+        {
+          "key": "victor wembanyama",
+          "name": "Victor Wembanyama",
+          "slug": "victor-wembanyama",
+          "pos": "C",
+          "team": "SAS"
+        },
+        {
           "key": "jalen brunson",
           "name": "Jalen Brunson",
           "slug": "jalen-brunson",
@@ -12786,13 +13032,6 @@
           "slug": "ausar-thompson",
           "pos": "SF",
           "team": "DET"
-        },
-        {
-          "key": "anthony edwards",
-          "name": "Anthony Edwards",
-          "slug": "anthony-edwards",
-          "pos": "SG",
-          "team": "MIN"
         },
         {
           "key": "scoot henderson",
@@ -12977,6 +13216,86 @@
           "kind": "article",
           "snippet": "Final Injury Report for Thunder-Spurs: Will Shai Gilgeous-Alexander, Stephon Castle Play? Athlon Sports",
           "published": "Wed, 04 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Is Stephon Castle Playing Tonight? (Injury Update, Betting Impact for Spurs vs. Heat)",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNUJ3dTlRc3RUc0pnekRKaHFKOG1PN2JHZTNjWEhDWnhpcGRMMGp6Uk94Wld2UUZ5V1pxMDVpci1DMllOV1FfMUFTTWJ6SHg4X25HNkV0VS0wdGZ3dmlIVzFvYjRVdFB0ajltOXZaR3dwdkEtTDluMUpyTDgtQzFUZU9kMGtCOVhvUzJMM1BnQnZJMXFiLU14XzdLdTFwQQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Stephon Castle Playing Tonight? (Injury Update, Betting Impact for Spurs vs. Heat) Sports Illustrated",
+          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Spurs Announce Stephon Castle Injury News After Two Missed Games",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNWdRNkloZk1PaDVKUVhFaURTejBHYTRoc1YyeXNiemszQjNzcXdaWWlkVVYtUkpfYlM5dHdXVVJsdUNXVVpkSGd5OGFtMHE2TDg3cVhiZUpFemNzZkxLaWdHLVRFUFF6UGJETk9Tbk9MTUMxVE8xUXRiTTBvYkxJTGFfUE91WlgyOEVqMHpwS3p5WmN1aUthblpvLV80MmswSFZPZERwNFNEN1U?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Spurs Announce Stephon Castle Injury News After Two Missed Games Athlon Sports",
+          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Injury Update: Spurs Expect Stephon Castle to be 'Really Sore' After Scary Fall",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOamNDcFJBelduM1ZENUZXd1VETURsS2NNOS02d2JBcndWUXViRERZbERVU2k2M1poR0NndXppNEowNHlwaDY0cnQ4MnpNM1lWdklVclhKaVVjbDkyRDhJWnVEWjMwTWxRQTNjZmNscFdzUC1GSmdaLTI4azlwcF9OUWEwYkxkTS1zLU4yYjlkZDFrWU1SYktDMGU3TFEyM2VjUm00Y1YzcHgzQ2JmS1ZubDR0Z1c2Z1BUNFM0enhR?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Injury Update: Spurs Expect Stephon Castle to be 'Really Sore' After Scary Fall Sports Illustrated",
+          "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Spurs’ Stephon Castle gets positive update after leaving Lakers game with an injury",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUzYweGpyYUZpMEhnaTJGY2xsa0xYZk1acE9QUHJfZnRzMzVRWEcxNFRJNTZQaGI1QXdHUkJnVGxOLUVpQjI5cE5iWld6bUtJb2NQeW9xNXBic3VUS1dTNmlnQ2xjVG9oV184ZVlDcFNHc3B5YmRtTVdIZG9ZOTVzOFdQV3RBOTItdFFn?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Spurs’ Stephon Castle gets positive update after leaving Lakers game with an injury Yahoo Sports",
+          "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Spurs' Stephon Castle: Late addition to injury report",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbXdSb1k1UEZtQldfYlptWUp4eG9wMVRyeVJ5R2Zhdk1wM0xwVEQwQ19mOEU2WkZibUhVd1d1UTdCUUZKVjdHUm1hRFcyRVNZVnp6bUUxU1gxWFNSWWt4YV8wcGRmMlR6N0JPVWtfYlVPMm1jak92dVdwWXpQd1A1M0VteVhiNFBlS0hsdU9rVXdhQ2JYV1Z4ZFZVRzhOS21raEdLcQ?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Spurs' Stephon Castle: Late addition to injury report CBS Sports",
+          "published": "Thu, 19 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Spurs' Stephon Castle: Exits game with hand injury",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdDVucDcxd1Jqc1RzS3diNGhTZHEyQlp0SEZ5d2tQLXczNk1GYVU0a294OENnZWYwZ3FPT0hwVHpZOUZBMWV6bU9lUVBpcGVlSFJZa1BnRkh2ZUhJMVVVTXlTZlBncHM5Q2NXU3lHRjRWMnItc0x0M0pzRzZNWE5uY3RwMVBvYVQxMkh2azdBb0IxT2EzRzJ6NnNab0M2RE1F?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Spurs' Stephon Castle: Exits game with hand injury CBS Sports",
+          "published": "Sun, 26 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Spurs Provide Injury Update on Stephon Castle and Devin Vassell",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMGxPN1VQdHQtNGwxdWVKRURGNFFLQUdiNUxNc2R5cGxDQ2E5ZzNodV9iNUdxY0lnbERsYTAwR0JYa00yYmh0cldCX0tSRTN4eHdEaWtFdDlhRXFaRGVkRGZTSlpTMHZqX1JXYkw4am9YV29USHNJNkRoa05qSjVDeEw3a1BBMEo5Q2gyZFMzeEs4Y3hSSDVDb052dlZxdw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Spurs Provide Injury Update on Stephon Castle and Devin Vassell Sports Illustrated",
+          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Spurs-Warriors: Will Stephon Castle, Stephen Curry Play?",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTDRldmxydUFtajhJTWxHenJkY3NlOGNydVZLd1lkVk5aWmhoVTRSOXFlWVRPa1h0d00xdzhNYVRxNHdYV3BPUi15TTlCeklFeWtqUWpHaG1iNGRKWldzUnR1TW56QlNPMm0xSDBISGtNRUJIRjF5ZWpqUmZiQTRaM2dhYTBpbEtzNTY0cGdRZm95NWVEY3RxdVJjUmQ2RVFaZy0tZ3lHVWhkNjc5dzREX2ZiU0hQbXNMN3oxNjk0QUxpSWw4ZFMw?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Spurs-Warriors: Will Stephon Castle, Stephen Curry Play? Athlon Sports",
+          "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Timberwolves-Spurs, Will Anthony Edwards, Stephon Castle Play?",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOOXBOZmlNVzdfZ24yNVdXZGpON25MQnlXUnVSU2xtaUdFVUhNelBYZDdNU2ZyNDkwUlluT3E2VmZpZ3lMQnZRRFVkRTVWZkJNQzBEcXBHNkIwQWF6QWNSenJhV0VmVF83dVBpSVZ2Zk5FTGs5RlMyUm9WVWRRZDFnVFJoLXVFcmJUWXo2NzU4MjZWZjJwTzJuajdLY181THY0bV8yeFVLU203aHY0eG9SSEhQQmxsNFlSVzBiQzRwcm5NSUV3dTBkTEptRXhXd290?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Timberwolves-Spurs, Will Anthony Edwards, Stephon Castle Play? Athlon Sports",
+          "published": "Sat, 17 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "San Antonio Spurs Injury Update: Major Stephon Castle and Devin Vassell Concern as Franchise Suffer Big Blow Ahead of Knicks Game (Dec. 31)",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPbzU2bUpxcFdLLVItcEZBMUxXUTZOblNZZjdFQTJONFRPX0JPTU9NaXlRNFhrSVZJZ0VGcGl3ME0tYXJUZUliZUpVUUsteWFpb0RoWlR3dm96Z0tnUzU2N2JDcU1tWGxUSGxrX2NKSVFqY25KUUxCLUdDYXdaUHNGUVppWGFPWkF3eUZ4SUpNZlgwS2o3bzBya2g5N3kxSzVEUUVaRFUtVXRuN0Rlb2ZQNFN3U3h1REVabDZJY2VFU2tQX1A1THRGZmhETnU3TUctSS1KUTcwVmk5eE1IZzRubHd0TV9pWWswaG5NdlMzbEV3TjY4UXd1cTZLRC1MQQ?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "San Antonio Spurs Injury Update: Major Stephon Castle and Devin Vassell Concern as Franchise Suffer Big Blow Ahead of Knicks Game (Dec. 31) Sportskeeda",
+          "published": "Wed, 31 Dec 2025 08:00:00 GMT"
         }
       ]
     },
@@ -13600,25 +13919,25 @@
       "slug": "franz-wagner-playing-today-injury-betting-impact-magic-09c135ee",
       "sport": "basketball",
       "headline": "Spurs-Thunder injury updates: Dylan Harper, De'Aaron Fox cleared to play, Jalen Williams ruled out for Game 3",
-      "blurb": "Thunder Game 1: Experts offer first-look predictions after encouraging Jalen Williams injury news OregonLive.com",
-      "summary": "Thunder Game 1: Experts offer first-look predictions after encouraging Jalen Williams injury news OregonLive.com Pistons NBA Playoffs | Game 7 Injury Report – May 3 95.7 WDAE Magic's Franz Wagner out with calf injury for Game 6 vs. Aggregated from OregonLive.com, 95.7 WDAE, NBA.com, Akron Beacon Journal, San Diego Sports 760 and 12 more.",
+      "blurb": "Spurs Coach Mitch Johnson Gives De’Aaron Fox Injury Update for NBA Finals Yahoo Sports",
+      "summary": "De'Aaron Fox, Jalen Williams, LaMelo Ball, Domantas Sabonis, Ja Morant, Jalen Brunson, Dylan Harper, Tyrese Maxey, Stephon Castle, Franz Wagner, Joel Embiid, Anthony Edwards, Ajay Mitchell, Mitchell Robinson, Desmond Bane, Jalen Suggs, Tobias Harris, Nikola Jokic, Paolo Banchero and Cade Cunningham: Spurs Coach Mitch Johnson Gives De’Aaron Fox Injury Update for NBA Finals Yahoo Sports Pistons NBA Playoffs | Game 7 Injury Report – May 3 95.7 WDAE Magic's Franz Wagner out with calf injury for Game 6 vs. Aggregated from Yahoo Sports, 95.7 WDAE, NBA.com, Akron Beacon Journal, San Diego Sports 760 and 12 more.",
       "category": "injury",
       "published": "2025-03-04T08:00:00Z",
       "updated": "2026-06-05T07:00:00Z",
       "players": [
-        {
-          "key": "jalen williams",
-          "name": "Jalen Williams",
-          "slug": "jalen-williams",
-          "pos": "SF",
-          "team": "OKC"
-        },
         {
           "key": "deaaron fox",
           "name": "De'Aaron Fox",
           "slug": "de-aaron-fox",
           "pos": "PG",
           "team": "SAS"
+        },
+        {
+          "key": "jalen williams",
+          "name": "Jalen Williams",
+          "slug": "jalen-williams",
+          "pos": "SF",
+          "team": "OKC"
         },
         {
           "key": "lamelo ball",
@@ -14179,6 +14498,14 @@
           "kind": "article",
           "snippet": "Spurs vs. Thunder Game 1: Experts offer first-look predictions after encouraging Jalen Williams injury news OregonLive.com",
           "published": "Sun, 17 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Spurs Coach Mitch Johnson Gives De’Aaron Fox Injury Update for NBA Finals",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdU5RZTBWeFN2NHpaWkR0N01oQko0TmxkeUszc3Ixa05IS0hTaHY5cnpBZEV1SC1XemViVXRidFpCcVFKWWlobVQ2cmRpOWV0cGxtTzc0Ukx6ajBpMkdCU0t4N1Jqdmt3S0F0dW1IRDc3bXR2Uklxdm52dFhGb2VaSXdjeXNPNE0?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Spurs Coach Mitch Johnson Gives De’Aaron Fox Injury Update for NBA Finals Yahoo Sports",
+          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
         }
       ]
     },
@@ -14515,168 +14842,6 @@
           "kind": "article",
           "snippet": "San Antonio Spurs Injury Status ESPN",
           "published": "Wed, 29 May 2019 22:31:58 GMT"
-        }
-      ]
-    },
-    {
-      "id": "lakers-receive-inevitable-ex-warriors-champion-jonathan-kuminga-950aa440",
-      "slug": "lakers-receive-inevitable-ex-warriors-champion-jonathan-kuminga-950aa440",
-      "sport": "basketball",
-      "headline": "Warriors predicted to trade for $364M 10x All-Star, ex-Lakers NBA champion to pair with Steph Curry",
-      "blurb": "Thunder urged to trade Chet Holmgren for $186M Finals champion, former MVP, 10x All-Star sportingnews.com",
-      "summary": "Thunder urged to trade Chet Holmgren for $186M Finals champion, former MVP, 10x All-Star sportingnews.com NBA Trade Rumors: Klay Thompson-Lakers? Scouts Pick Best Fits heavy.com Aggregated from sportingnews.com, heavy.com, Yahoo Sports, The Big Lead, Sports Illustrated and 1 more.",
-      "category": "trade",
-      "published": "2025-10-03T07:00:00Z",
-      "updated": "2026-08-23T20:40:12Z",
-      "players": [
-        {
-          "key": "chet holmgren",
-          "name": "Chet Holmgren",
-          "slug": "chet-holmgren",
-          "pos": "C",
-          "team": "OKC"
-        },
-        {
-          "key": "kevin durant",
-          "name": "Kevin Durant",
-          "slug": "kevin-durant",
-          "pos": "PF",
-          "team": "HOU"
-        },
-        {
-          "key": "klay thompson",
-          "name": "Klay Thompson",
-          "slug": "klay-thompson",
-          "pos": "SG",
-          "team": "DAL"
-        },
-        {
-          "key": "stephen curry",
-          "name": "Stephen Curry",
-          "slug": "stephen-curry",
-          "pos": "PG",
-          "team": "GSW"
-        },
-        {
-          "key": "jonathan kuminga",
-          "name": "Jonathan Kuminga",
-          "slug": "jonathan-kuminga",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA Trade Rumors: Klay Thompson-Lakers? Jonathan Kuminga-Cavs? Scouts Pick Best Fits",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb2YzV2kxbnlfLWxEdmhfY3JKdVh5TFhiY0hLam5wZkVjM3JEbXB1Tl9KSTRPTFNlQnZKaTNkNElJS3pGVVBFM1FZR2hSb0ZxMkt6MXg1NlB6OXRYYlM1YkU2clg3OFVzRENrTllCY2dYeW9wTHBaNEpNZXV2cmVDVWpSOWtCOHEzYkRZcURiTENFVGRKZk41V0NpX2FwWUFmYnBYMGFR?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Klay Thompson-Lakers? Jonathan Kuminga-Cavs? Scouts Pick Best Fits heavy.com",
-          "published": "Wed, 19 Aug 2026 23:04:35 GMT"
-        },
-        {
-          "title": "Lakers hit with brutal ex-Warriors Jonathan Kuminga sign-and-trade update as T-Wolves linger",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcTBMY3laRDdoVjg5UG44OGRTU29kS294d3V1RlAwd0NMQ2NLRWZmRnVDMjVmcDV4THpBR3U4RUlOQ1NkUDl0eVJrNk9YVXdBTlY0OFp2aEpUQjVBQmh2Rm9jZXBWdVptZk9NUFNVQ292cUJCdV8tbS04VEVNeUhJNGNmLTI?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Lakers hit with brutal ex-Warriors Jonathan Kuminga sign-and-trade update as T-Wolves linger Yahoo Sports",
-          "published": "Fri, 21 Aug 2026 17:59:02 GMT"
-        },
-        {
-          "title": "Lakers receive inevitable ex-Warriors NBA champion Jonathan Kuminga update after 5-team trade",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMjgzOWxvOElSeFNObklNUThRZXJqSXc4ZDhFMGRtWFRLcUwyZUlDSUM2bjRxWWNNRmJWTUE0LXE4SjNzZGZOeXh3c1hkZzYxMV8wQnFyb0FnSVZ0UGFCa1hyNzUzYmdIX09uWEZGRXRCR1Y1UVFzSWo0MEFtYm5jaTVucWJlQ2dUV1RoUWdwMA?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Lakers receive inevitable ex-Warriors NBA champion Jonathan Kuminga update after 5-team trade Yahoo Sports",
-          "published": "Thu, 20 Aug 2026 14:50:11 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Knicks Bigs, What’s Next for Cavaliers & Jonathan Kuminga",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSnpiNmdEV2trdTZLWGtUZnQ1NVNndm1qZEx6ZFMtTTR4dU9TSmRidFVXT2NxUzFmN2JiYmtjeTNLdGViWVEzNnBzcXBpMTIzNEVodHFfT0dmdmVaNUE3MTd2T1BqUUhOSV9fMUMyajFheEpoS1ZrdXFydzRMRG9YWDM3TXh1VG95bTBmZjlRdVVSQkpqRHk1WmplODhfTHIxMUl4RVdHdmFnamRNMU45d3JtQ1Z4QQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Knicks Bigs, What’s Next for Cavaliers & Jonathan Kuminga heavy.com",
-          "published": "Mon, 17 Aug 2026 22:36:49 GMT"
-        },
-        {
-          "title": "Lakers Signing Jonathan Kuminga Now ‘Inevitable’ After Blockbuster NBA Trade",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYUlmUHA1bWZoV2pIX2lrU0E5ZVdPblI4TTQ0NE5Fc252dHVyRzVnLUNfSnNzY29oOFR4MVRhSXIxZlRqWDNINUQ1eGJxbUNBa1hVN3lFNjNDQlBFZW1jSWdBaUhpcFNsOHBjT2N0VTN5VGdJdGRSTm56MHZjUDhGTzl4SUl2M0FoMHc?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Lakers Signing Jonathan Kuminga Now ‘Inevitable’ After Blockbuster NBA Trade heavy.com",
-          "published": "Thu, 20 Aug 2026 14:09:22 GMT"
-        },
-        {
-          "title": "Warriors predicted to trade for $364M 10x All-Star, ex-Lakers NBA champion to pair with Steph Curry",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbEhxUDgxczlmR3B6RjQtMmcxaldMeWNhUjFlNkVhNVhKWGh5d0xGTmRUOUJLeERDUnYxcjZmcW1VX1VHQkJLRFQ4cFo3ODg1NTJ5NEJtTzZXdTRkTUtXdGUwTWNKTnlzR19NVUR3X2ZHYnZVVHU5YndFcVlaUm1aZ3l4NXdBbFlhR3c?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Warriors predicted to trade for $364M 10x All-Star, ex-Lakers NBA champion to pair with Steph Curry Yahoo Sports",
-          "published": "Sat, 22 Aug 2026 21:35:37 GMT"
-        },
-        {
-          "title": "Golden State Warriors reportedly eyeing 3-time NBA All-Star in potential trade",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaWNNTjRBUG5VSGRXUjFGNDlXc3NsSVpmeG5ZOFZIcWUtSS1JdDQ0OWMxTXc4ck5teWJYSG5rM0J1Rk45STgwMXAtZzJRcTB2WFJMUXl2cm5YU2txOWZJVTNGX2JnSW1zLXVpempIUWVFQW9QdXVWVS1fMFJwcHY1TmJsQ0xhX2dCbXBNVEJtT3RUSGx5TFFSdUdlZTNBTWlvZ0dWT1JrbVVwQQ?oc=5",
-          "publisher": "The Big Lead",
-          "kind": "article",
-          "snippet": "Golden State Warriors reportedly eyeing 3-time NBA All-Star in potential trade The Big Lead",
-          "published": "Fri, 03 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Warriors predicted to trade Steph Curry to the Raptors for $151M young rising trio in mega deal",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVXEzZ0lYMV92QVVRRWNkQjJxU2NqeVNERzludDVYRGpLYjczWDJIOGUtbmtwMnlZa2w2bzBWZjh0R19KOEhkQjFWWHdSR3lrc1RWdGlaNnRJUWVOVWF5NU0xbzJtSXU0OGVvUlN6ZnVDclJlRFN2eVVsMWdZTlBKMGhWLVhkamJ1SW8zOTN3?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Warriors predicted to trade Steph Curry to the Raptors for $151M young rising trio in mega deal Yahoo Sports",
-          "published": "Sat, 22 Aug 2026 21:57:49 GMT"
-        },
-        {
-          "title": "Crafting a Jonathan Kuminga Three-Team Sign-And-Trade Involving The Hawks, Clippers, and Grizzlies",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWXR4MUh2dmlDNHdCQWVvNzBKMWQwV0dlblBwX24wNFp3Z3g1WkY2VTJTNGhWQ0NrUU95eWlxWmdkOXloc3o0ZG8yeDNWUU9IWUh1ZENsbUV1cVpVUWlRajFYRC1WampIbVhoX25jUnppQlBlYWg4UG52S2JzZUlHUEROd2ttNV9JQU1GX0JPaDgwT1I3bkRIeDNnb1hWaUxnSjN0c0V4VHRDbUNlamVyaWg1djVManVkVVlJN1gwUHp5OHBmM0ZLRjQzVDZNSXpZMktrVkhtajRqVzQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Crafting a Jonathan Kuminga Three-Team Sign-And-Trade Involving The Hawks, Clippers, and Grizzlies Sports Illustrated",
-          "published": "Sat, 22 Aug 2026 15:01:33 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Stephen Curry’s Big Warriors Week, All-Star Monitored & Big Board",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSUMtQWZiRTBiTEp1SVBlQW5GaWxKMV9RYUNzSkM4a2szXzc0cjU3bG5NR0thWVpwNTdlOUs1aU1qSE9wbmZURDEzUVloNEd1RTZOd05WbXlIZFpEU0FNZFpkV3hFc3pFUXhIWWRFSFptRmhNM29QSXN2M1FSYkdZLVU1emdYdnU4dXYzWGRTLXVTQmpYcWFMZFNlNDdMZVZDQjdGYktXYXhYb2NhRlRHZ0dxNFVRTlNfV0V0UzFZb19mQUtTRFF2SEx3?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Stephen Curry’s Big Warriors Week, All-Star Monitored & Big Board heavy.com",
-          "published": "Sun, 23 Aug 2026 12:59:21 GMT"
-        },
-        {
-          "title": "NBA trade news: Klay Thompson clears Mavericks buyout, Miami Heat expected to be next stop",
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPNHdQT29tcGJPM29RSjVUVGNxZDdNWjdVc0pGb1NoeGpaNkNid1lMZmUwSDBUVXRtTXBKQVV3R053eHdwblBLM2xjOGcweWZCNDFPc3FoREJLX2lWZ09SV2VseUFpbjVudnVSc0xQWFBubGZ1YWdZeFRIVVRLbzhEMGQ1S3QtNWM1SHFRRGZJQTZ1OGR1MFBBT0hzT0hwdFJraDlsU1czYWg2NlI4ZGhXRHp6NDkwZkNWOEhYYllqS01VZWpqdmpOVWJkUEdPUWwyd2p3TGhLLTlVTlNJT1dac0MwalJka3V3MzBvdmQtdzRBVDcxRFFLZDdGcm54UlhSVzNJ0gGIAkFVX3lxTFBDLXhxcGFBSjI5OXU2OHg4NGFDeHR4RGRuV2x5T0I0aWJJUEU4REFQdzZyWDdFRnV0NERYTG1WWWdRZ01zaFJKZDE3bF9TR244QnUtajgxTG00bkFDMUFOSjBoUUFJaGdfU2UzM1Atdml1SkoyNmE0UlFqekl0N05QS041NDUyMmI0R0t3eXpCMVNqSEdWbUcyOGNFUkFBV2lVQ25HQTFjNGppN2lsMHJjZjlRZ3MtMmplWW1uUDIzYkZfM0YwOG14SDduTmN1X2V5RmY0NDU4bG5MODdmM0Z1UE5jQTFfNHc4d05LOGpkNDRNaHR2Snl2R3VLbXVoNTE3c0JzODBNdA?oc=5",
-          "publisher": "The Times of India",
-          "kind": "article",
-          "snippet": "NBA trade news: Klay Thompson clears Mavericks buyout, Miami Heat expected to be next stop The Times of India",
-          "published": "Fri, 21 Aug 2026 19:48:00 GMT"
-        },
-        {
-          "title": "Rockets predicted to trade for $364M ex-Lakers NBA champion, future HOF to pair with Kevin Durant",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRjRPb0tXNWJxNzg0OXVxdXV6NElyRVg5a2Q1bk5pWllhRGkyRTZvLTZFcElxcThjUEtMbUZZekJnZl91ZVRSOTRUejdaNDI5ZC1uR2lna09xOFBYVzhkMk50N3Bld3FJai1mN21PTGxyeTFSZnZkRHlEbHVmRVRJNDdGeVhMXzg?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Rockets predicted to trade for $364M ex-Lakers NBA champion, future HOF to pair with Kevin Durant Yahoo Sports",
-          "published": "Sun, 23 Aug 2026 17:36:13 GMT"
-        },
-        {
-          "title": "Warriors predicted to trade Steph Curry to Hornets for $289M veteran quartet to begin new era",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTi1RdUZHOXJZV3ktdW1HLUtFempLcjV1QXNLUlFjUmpqTncwTVNDeUl5Y3NfYktYWl9pN1J6U05HVEtvMFVUb3RNUzBGMjVMYzFkZ29rTFZmM0dmZzNENTlRVHA4VDZqMFpQYzl6Y3BQSUgzNU12ZFNKVUNNSDdKU0NrMDNYYzR1ZEdfcXZ3?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Warriors predicted to trade Steph Curry to Hornets for $289M veteran quartet to begin new era Yahoo Sports",
-          "published": "Sun, 23 Aug 2026 20:40:12 GMT"
-        },
-        {
-          "title": "Thunder urged to trade Chet Holmgren for $186M Finals champion, former MVP, 10x All-Star",
-          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQVkZjYVFpOEpacmFpMU5iRXJQS1V6b2JjLXZ5YXIyVzFrMGFJWGZXczBUeVJkaC1qaWJUVlpXUVdYOW43X3N2bzA4Y2laVi1URnh6WXVQSktVRjFIQlFwVlRiUGxYT3RPWDJLdzhIa09OTzBsNnlqOXBRUS1FQldpaDUwMVFKY2x6N0ZnbVVWQm8yRzI4dVZHbVUyeVhSVFBlQkVLc3oxdlFVUnpySUN6RnhkOEw5SjBlckplTWhPNzRFR0NkWUI0UEkxeXJUbklvVTJhblo2STlaeHo4eXpfMGFFbm1OYUR2aDRyMU50MS1JbWtxaXllQjdR?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Thunder urged to trade Chet Holmgren for $186M Finals champion, former MVP, 10x All-Star sportingnews.com",
-          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
         }
       ]
     }
