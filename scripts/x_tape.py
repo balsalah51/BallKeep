@@ -30,19 +30,24 @@ REDDIT = {
     "football": [
         "https://www.reddit.com/r/nflmemes/.rss",
         "https://old.reddit.com/r/nflmemes/.rss",
+        "https://old.reddit.com/r/nflcirclejerk/.rss",
         "https://old.reddit.com/r/fantasyfootball/.rss",
     ],
     "baseball": [
-        "https://old.reddit.com/r/baseball/.rss",
         "https://old.reddit.com/r/mlbmemes/.rss",
+        "https://www.reddit.com/r/mlbmemes/.rss",
+        "https://old.reddit.com/r/baseballcirclejerk/.rss",
+        "https://old.reddit.com/r/baseball/.rss",
     ],
     "soccer": [
         "https://old.reddit.com/r/soccercirclejerk/.rss",
-        "https://old.reddit.com/r/PremierLeague/.rss",
-        "https://old.reddit.com/r/soccer/.rss",
+        "https://www.reddit.com/r/soccercirclejerk/.rss",
+        "https://www.reddit.com/r/PremierLeague/.rss",
+        "https://www.reddit.com/r/soccer/.rss",
     ],
     "basketball": [
         "https://old.reddit.com/r/nbamemes/.rss",
+        "https://old.reddit.com/r/nbacirclejerk/.rss",
         "https://old.reddit.com/r/nba/.rss",
         "https://old.reddit.com/r/fantasybball/.rss",
     ],
@@ -117,19 +122,67 @@ def save_image(raw: bytes, dest: Path) -> bool:
             im = im.convert("RGB")
         im.thumbnail((900, 900))
         im.save(dest, "JPEG", quality=82, optimize=True)
-        return dest.stat().st_size > 800
     except Exception:
         dest.write_bytes(raw)
-        return dest.stat().st_size > 800
+    if is_usable_image_file(dest):
+        return True
+    dest.unlink(missing_ok=True)
+    return False
+
+
+JUNK_TITLE_RE = re.compile(r"(?:\(@\w+\)\s*)?/\s*Posts\s*/\s*X\s*$", re.I)
+BAD_IMG_HINTS = (
+    "1x1", "pixel", "spacer", "logo.svg", "favicon",
+    "lh3.googleusercontent.com", "encrypted-tbn",
+    "gstatic.com/images", "news.google.com",
+)
 
 
 def looks_like_image_url(url: str) -> bool:
     u = (url or "").lower()
     if not u.startswith("http"):
         return False
-    if any(bad in u for bad in ("1x1", "pixel", "spacer", "logo.svg", "favicon")):
+    return not any(bad in u for bad in BAD_IMG_HINTS)
+
+
+def is_junk_title(title: str) -> bool:
+    t = (title or "").strip()
+    if len(t) < 8:
+        return True
+    return bool(JUNK_TITLE_RE.search(t))
+
+
+def is_usable_image_file(path: Path) -> bool:
+    """Reject Google News icons and other site-logo placeholders saved as card art."""
+    if not path.exists():
         return False
-    return True
+    size = path.stat().st_size
+    if size < 2000:
+        return False
+    try:
+        from PIL import Image
+        im = Image.open(path)
+        w, h = im.size
+        if min(w, h) < 140:
+            return False
+        if w == 300 and h == 300 and size < 20000:
+            return False
+        return True
+    except Exception:
+        return size > 20000
+
+
+def reddit_full_image(url: str) -> str:
+    m = re.match(r"https://preview\.redd\.it/([^?]+)", url or "", re.I)
+    if m:
+        return "https://i.redd.it/" + m.group(1)
+    return url or ""
+
+
+def canon_post_url(url: str) -> str:
+    u = (url or "").strip()
+    u = re.sub(r"https://old\.reddit\.com/", "https://www.reddit.com/", u, flags=re.I)
+    return u.split("?")[0]
 
 
 def fxtwitter_image(status_id: str) -> str:
@@ -179,14 +232,21 @@ def page_image(url: str) -> tuple[str, str]:
 
 def download_pic(url: str, sport: str, hid: str) -> str:
     dest = IMG / sport / f"{hid}.jpg"
-    if dest.exists() and dest.stat().st_size > 800:
+    if is_usable_image_file(dest):
         return f"img/x-tape/{sport}/{hid}.jpg"
-    try:
-        raw, _ = fetch_bytes(url)
-    except Exception:
-        return ""
-    if save_image(raw, dest):
-        return f"img/x-tape/{sport}/{hid}.jpg"
+    candidates = []
+    full = reddit_full_image(url)
+    if full and full != url:
+        candidates.append(full)
+    if url:
+        candidates.append(url)
+    for src in candidates:
+        try:
+            raw, _ = fetch_bytes(src)
+        except Exception:
+            continue
+        if save_image(raw, dest):
+            return f"img/x-tape/{sport}/{hid}.jpg"
     dest.unlink(missing_ok=True)
     return ""
 
@@ -198,16 +258,13 @@ def hydrate_images(posts: list[dict], sport: str) -> list[dict]:
         hid = p.get("hash") or item_hash(p.get("url") or "", p.get("title") or "")
         p["hash"] = hid
         local = IMG / sport / f"{hid}.jpg"
-        if local.exists() and local.stat().st_size > 800:
+        if is_usable_image_file(local):
             p["image"] = f"img/x-tape/{sport}/{hid}.jpg"
             out.append(p)
             continue
         img = p.get("image") or ""
-        if img.startswith("img/x-tape/"):
-            out.append(p)
-            continue
         src = img if looks_like_image_url(img) else ""
-        if not src and lookups < 12:
+        if not src and lookups < 40:
             lookups += 1
             src, final = page_image(p.get("url") or "")
             if final and final != p.get("url"):
@@ -220,9 +277,7 @@ def hydrate_images(posts: list[dict], sport: str) -> list[dict]:
                 p["image"] = saved
                 out.append(p)
                 continue
-        if looks_like_image_url(img):
-            p["image"] = img
-            out.append(p)
+        p["image"] = ""
     return out
 
 
@@ -338,46 +393,66 @@ def load_tape(sport: str) -> dict:
 def scrape_sport(sport: str, fetch=default_fetch, sleep_s: float = 0.3) -> dict:
     seen = set()
     posts = []
-    for q in QUERIES.get(sport) or []:
-        xml_text = fetch(google_news_url(q))
-        if sleep_s:
-            time.sleep(sleep_s)
-        for raw in parse_items(xml_text or ""):
-            h = item_hash(raw["url"], raw["title"])
-            if h in seen or len(raw["title"]) < 12:
-                continue
-            blob = f"{raw['title']} {raw['summary']}".lower()
-            if sport == "football" and re.search(r"\b(mlb|premier league|fpl)\b", blob) and "nfl" not in blob:
-                continue
-            if sport == "baseball" and "nfl" in blob and "mlb" not in blob:
-                continue
-            if sport == "soccer" and re.search(r"\b(nfl|mlb)\b", blob) and not re.search(r"\b(premier|fpl|soccer|football)\b", blob):
-                continue
-            if sport == "basketball" and re.search(r"\b(nfl|mlb|premier league)\b", blob) and not re.search(r"\b(nba|basketball)\b", blob):
-                continue
-            seen.add(h)
-            raw["hash"] = h
-            raw["kind"] = "x" if "x.com" in (raw["url"] or "").lower() or "twitter" in (raw.get("publisher") or "").lower() else "web"
-            posts.append(raw)
-            if len(posts) >= 24:
-                break
-        if len(posts) >= 24:
-            break
+
+    def add(raw: dict) -> None:
+        raw["url"] = canon_post_url(raw.get("url") or "")
+        title = raw.get("title") or ""
+        if is_junk_title(title) or not raw["url"]:
+            return
+        h = item_hash(raw["url"], title)
+        if h in seen:
+            return
+        blob = f"{title} {raw.get('summary') or ''}".lower()
+        if sport == "football" and re.search(r"\b(mlb|premier league|fpl)\b", blob) and "nfl" not in blob:
+            return
+        if sport == "baseball" and "nfl" in blob and "mlb" not in blob:
+            return
+        if sport == "soccer" and re.search(r"\b(nfl|mlb)\b", blob) and not re.search(r"\b(premier|fpl|soccer|football)\b", blob):
+            return
+        if sport == "basketball" and re.search(r"\b(nfl|mlb|premier league)\b", blob) and not re.search(r"\b(nba|basketball)\b", blob):
+            return
+        seen.add(h)
+        raw["hash"] = h
+        posts.append(raw)
+
     for feed in REDDIT.get(sport) or []:
         xml_text = fetch(feed)
         if sleep_s:
             time.sleep(sleep_s)
         for raw in parse_reddit(xml_text or ""):
-            h = item_hash(raw["url"], raw["title"])
-            if h in seen or len(raw["title"]) < 8:
-                continue
-            seen.add(h)
-            raw["hash"] = h
-            posts.append(raw)
+            add(raw)
+    for q in QUERIES.get(sport) or []:
+        xml_text = fetch(google_news_url(q))
+        if sleep_s:
+            time.sleep(sleep_s)
+        for raw in parse_items(xml_text or ""):
+            raw["kind"] = "x" if "x.com" in (raw["url"] or "").lower() or "twitter" in (raw.get("publisher") or "").lower() else "web"
+            add(raw)
+            if len(posts) >= 80:
+                break
+        if len(posts) >= 80:
+            break
     posts = hydrate_images(posts, sport)
-    posts.sort(key=lambda p: parse_dt(p.get("published") or "") or utcnow(), reverse=True)
-    with_pic = [p for p in posts if (p.get("image") or "").startswith("img/x-tape/") or looks_like_image_url(p.get("image") or "")]
-    keep = with_pic[:36] if with_pic else posts[:12]
+    with_pic = []
+    for p in posts:
+        img = p.get("image") or ""
+        if img.startswith("img/x-tape/") and is_usable_image_file(ROOT / img):
+            with_pic.append(p)
+        elif looks_like_image_url(img):
+            with_pic.append(p)
+    with_pic.sort(key=lambda p: parse_dt(p.get("published") or "") or utcnow(), reverse=True)
+    have = {p.get("hash") for p in with_pic}
+    for p in (load_tape(sport).get("posts") or []):
+        img = p.get("image") or ""
+        hid = p.get("hash") or item_hash(p.get("url") or "", p.get("title") or "")
+        if hid in have:
+            continue
+        if img.startswith("img/x-tape/") and is_usable_image_file(ROOT / img):
+            p["hash"] = hid
+            with_pic.append(p)
+            have.add(hid)
+    with_pic.sort(key=lambda p: parse_dt(p.get("published") or "") or utcnow(), reverse=True)
+    keep = with_pic[:36]
     doc = {"sport": sport, "updated": iso(utcnow()), "posts": keep}
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / f"{sport}.json").write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
@@ -399,6 +474,8 @@ def cards_html(sport: str, depth: int = 0, esc=None) -> str:
     for p in posts:
         img = p.get("image") or ""
         if not img or img.endswith("logo.jpg"):
+            continue
+        if not img.startswith("http") and not is_usable_image_file(ROOT / img):
             continue
         src = img if img.startswith("http") else prefix + img
         kind = "X" if p.get("kind") == "x" else (p.get("publisher") or "Web")

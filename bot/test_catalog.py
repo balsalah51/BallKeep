@@ -224,6 +224,12 @@ def main():
     assert "background-image:url" not in home
     assert "home-leads" in home
     assert 'href="privacy.html"' in home
+    for x_path in ("the-x.html", "bb/the-x.html", "bk/the-x.html", "pl/the-x.html"):
+        x_html = html_of(x_path)
+        assert "x-card" in x_html, x_path
+        assert "x-tape" in x_html, x_path
+        assert "No pictures on the tape yet" not in x_html
+        assert x_html.count("x-card") >= 20, x_path
     privacy = html_of("privacy.html")
     assert "Privacy Policy" in page_title(privacy)
     assert "Google AdSense" in privacy
