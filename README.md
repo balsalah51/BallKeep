@@ -38,7 +38,7 @@ Separate sport, separate palette. Hardwood orange and night. Footer / header cro
 
 - **The Keep** — dynasty basketball top 400, 18-board aggregate
 - **The Board** — this-year basketball redraft
-- **Guards / Wings / Bigs** — position boards stripped from The Keep
+- **Guards / Wings / Bigs** — position boards from The Keep
 - **Rookies** — compiled 2026 class plus the sophomores still priced like kids
 - **BK News** — live at `bk/news.html`. Same hourly pipeline: injury, roster, coach tape
 - **The X** — NBA memes
