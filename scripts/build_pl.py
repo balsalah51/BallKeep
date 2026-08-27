@@ -983,7 +983,7 @@ def write_pitch_site():
         ("defence.html", "Defence", "Defenders."),
         ("keepers.html", "Keepers", "Keepers."),
     ])}
-    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire. Not the ranks.", [
+    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "PL memes. Pictures on the card."),
         ("news.html", "PK News", "Injuries, transfers, managers."),
     ], extra_news)}

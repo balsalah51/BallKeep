@@ -144,7 +144,7 @@ BK_SEO = {
     ),
     "wings.html": (
         "Wings — Dynasty SF and PF Rankings | BasketKeep",
-        "Dynasty wings only. Forwards stripped from The Keep.",
+        "Dynasty wings only. The Keep, forwards only.",
         "img/bk-logo.jpg",
     ),
     "bigs.html": (
@@ -676,7 +676,7 @@ def write_basket_site():
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
           <p class="lead-sub">Dynasty basketball · top 400</p>
-          <p>18 desks mashed into one rank. This is the list you trade on.</p>
+          <p>18 desks mashed into one rank.</p>
         </a>
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
@@ -697,7 +697,7 @@ def write_basket_site():
         ("waivers-dynasty.html", "Dynasty Wire", "Fifteen stashes."),
         ("waivers-redraft.html", "Redraft Wire", "Priority 1–50."),
     ])}
-    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire. Not the ranks.", [
+    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "NBA memes. Pictures on the card."),
         ("news.html", "BK News", "Injuries, roster, coaches."),
     ], extra_news)}
@@ -724,7 +724,7 @@ def write_basket_site():
     board_body = f"""
     <p class="kicker">Redraft · this year</p>
     <h2>The Board</h2>
-    <p class="note">Not The Keep. The Keep is dynasty. The Board is redraft — {len(board)} names, this season only. Use this list for 2026-27 startups.</p>
+    <p class="note">The Board is redraft — {len(board)} names, this season only. Use this list for 2026-27 startups. The Keep is dynasty.</p>
     <div class="panel">{rank_table(board, ["Keep", "BK Value"], board_extra)}</div>
     {value_bars(board, 12, "#1a1208", "Board value graph")}
     """
@@ -733,7 +733,7 @@ def write_basket_site():
     g_body = f"""
     <p class="kicker">Guards only</p>
     <h2>Guards</h2>
-    <p class="note">Point guards and shooting guards stripped from The Keep and re-ranked among themselves.</p>
+    <p class="note">Point guards and shooting guards, re-ranked among themselves from The Keep.</p>
     <div class="panel">{rank_table(guards, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
     write("bk/guards.html", bk_page("Guards", "guards.html", g_body))
@@ -762,7 +762,7 @@ def write_basket_site():
     rook_body = f"""
     <p class="kicker">2026 class · plus the kids</p>
     <h2>Rookies</h2>
-    <p class="note">Compiled 2026 draftees and the sophomores still priced like the future. Not a mock. A Keep-adjacent board.</p>
+    <p class="note">Compiled 2026 draftees and the sophomores still priced like the future. A Keep-adjacent board.</p>
     <div class="grid">{rook_rows}</div>
     """
     write("bk/rookies.html", bk_page("Rookies", "rookies.html", rook_body))

@@ -133,7 +133,7 @@ BB_SEO = {
     ),
     "the-lineup.html": (
         "The Lineup — Dynasty Hitter Rankings | BaseKeep",
-        "Dynasty hitters only. The bats you keep, stripped from The Keep. Ranked on the same 23-board average.",
+        "Dynasty hitters only. The bats you keep, re-ranked from The Keep. Ranked on the same 23-board average.",
         "img/bb-logo.jpg",
     ),
     "pitchers.html": (
@@ -1269,7 +1269,7 @@ def write_baseball_site():
         ("bullpen.html", "Bullpen — Saves", "Top 100 relievers."),
         ("bullpen-holds.html", "Bullpen — SV+H", "Holds counted."),
     ])}
-    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire. Not the ranks.", [
+    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "MLB memes. Pictures on the card."),
         ("news.html", "BK News", "IL, roster, managers."),
     ], extra_news)}
@@ -1317,7 +1317,7 @@ def write_baseball_site():
 
     svh_body = f"""
     {page_label("BaseKeep", "BK's Bullpen — SV+H", "Relief · Saves + Holds")}
-    <p class="note">Same bullpen, different sport. FantasyPros Week 21 SV+H board (Baker / Miller / Varland) plus setup men the ESPN chart actually uses. If your league counts holds, this is the page. The saves page is the other one.</p>
+    <p class="note">Same bullpen, different sport. FantasyPros Week 21 SV+H board (Baker / Miller / Varland) plus setup men the ESPN chart actually uses. If your league counts holds, this is the page. The saves board is next door.</p>
     <div class="panel">{rank_table(svh, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {value_bars(svh, 12, "#1f6b3a", "SV+H value graph")}
     {sources_panel()}
@@ -1328,7 +1328,7 @@ def write_baseball_site():
     rd_body = f"""
     <p class="kicker">Redraft ranking · this year</p>
     <h2>The Diamond</h2>
-    <p class="note">This is the redraft list. Not The Keep. One-year baseball, {len(redraft)} names. Use this board for 2026 rest-of-season and redraft startups.</p>
+    <p class="note">This is the redraft list. One-year baseball, {len(redraft)} names. Use this board for 2026 rest-of-season and redraft startups.</p>
     {rd_flt}
     <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{int(r["value"]):,}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(redraft, 12, "#1f6b3a", "The Diamond value graph")}

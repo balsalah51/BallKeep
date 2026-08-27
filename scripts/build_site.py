@@ -1855,7 +1855,7 @@ def main():
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
           <p class="lead-sub">Dynasty · top 400</p>
-          <p>32 desks mashed into one rank. This is the list you trade on.</p>
+          <p>32 desks mashed into one rank.</p>
         </a>
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
@@ -1877,7 +1877,7 @@ def main():
         ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
         ("mlb-schedule.html", "MLB Schedule", "September slate."),
     ])}
-    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire. Not the ranks.", [
+    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "Memes. Pictures on the card."),
         ("news.html", "BK News", "Injuries, roster, coaches."),
     ], extra_news)}
@@ -1900,7 +1900,7 @@ def main():
     keep_body = f"""
     <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} desks</p>
     <h2>The Keep</h2>
-    <p class="note">This is the big one. Superflex Dynasty. Top 400. {len(KEEP_SOURCES)} desks. Half the vote is the four long boards, half is everyone else. Use this list for dynasty trades. The Board next door is Redraft PPR — this year, one quarterback, a point per catch.</p>
+    <p class="note">This is the big one. Superflex Dynasty. Top 400. {len(KEEP_SOURCES)} desks. Half the vote is the four long boards, half is everyone else. The Board next door is Redraft PPR — this year, one quarterback, a point per catch.</p>
     <p class="note">Position</p>
     <div class="filters" id="keep-pos"><button type="button" class="active" data-pos="all">All</button>
       <button type="button" data-pos="QB">QB</button>
@@ -1937,7 +1937,7 @@ def main():
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR</p>
     <h2>The Board</h2>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 25), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is the other list, one tier down.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 25), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
     <div class="panel">{rank_table(ppr, ["Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
@@ -2040,7 +2040,7 @@ def main():
     sf_body = f"""
     <p class="kicker">Superflex Redraft · this year</p>
     <h2>Redraft Superflex</h2>
-    <p class="note">Not The Keep and not The Board. The Keep is Superflex Dynasty. The Board is Redraft PPR. This list is Superflex for this season — {len(sf_redraft)} names. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks.</p>
+    <p class="note">This list is Superflex for this season — {len(sf_redraft)} names. The Keep is Superflex Dynasty. The Board is Redraft PPR. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks.</p>
     <div class="panel">{rank_table(sf_redraft, ["Keep SF", "PPR", "Score", "BK Value"], board_redraft_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(sf_redraft, 12, "#1e8fc2", "Superflex redraft value graph")}
     {sources_panel([
