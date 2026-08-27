@@ -17,6 +17,7 @@ Powder-blue **BallKeep** desk. Navy-and-cream **BaseKeep**, hardwood **BasketKee
 - **BK News** — football injuries, roster moves, and coach reports scraped hourly from league RSS, Google News, X (`site:x.com`), and YouTube, then clustered into short stories with an aggregate summary and source links
 - NFL 2026 schedules (all 32 teams)
 - MLB September stretch-run schedules
+- **Site map** (`explore.html`) — crawlable directory of all four desks
 - Discord mark **and Discord bot** (`bot/`)
 
 ## BaseKeep (`/bb`)

@@ -31,7 +31,28 @@ from news_algo import (  # noqa: E402
     rematch_stories,
 )
 from x_tape import cards_html as x_cards  # noqa: E402
-from seo import canon, clip, head_tags, legal_links, sports_footer, sports_top, value_bars  # noqa: E402
+from seo import (  # noqa: E402
+    canon,
+    clip,
+    crumbs_html,
+    footer_nav,
+    head_tags,
+    legal_links,
+    nearby_window,
+    news_ld,
+    path_crumbs,
+    person_ld,
+    related_names,
+    related_news,
+    related_news_html,
+    related_tiles,
+    same_field,
+    sports_footer,
+    sports_top,
+    sr_only,
+    story_card,
+    value_bars,
+)
 
 
 def esc(s):
@@ -190,7 +211,7 @@ BK_SEO = {
 }
 
 
-def bk_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None):
+def bk_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None, extra_ld=None, og_type="website"):
     prefix = "../" * depth
     links = []
     for href, label in BK_NAV:
@@ -201,19 +222,34 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
     full_title = doc_title or (packed[0] if packed else f"{title} | BasketKeep")
     desc = description or (packed[1] if packed else f"{title} on BasketKeep. Dynasty basketball rankings, BK Value, and BK News. Updated {UPDATED}.")
     img = image or (packed[2] if packed else "img/bk-logo.jpg")
+    home = "index.html" if depth == 1 else "../index.html"
+    crumb_html = crumbs_html(path_crumbs(
+        path, title,
+        home_href=home,
+        players_href=bk_nav_target("players/index.html", path, depth),
+        news_href=bk_nav_target("news.html", path, depth),
+    ))
+    foot = footer_nav([
+        (bk_nav_target("the-keep.html", path, depth), "The Keep"),
+        (bk_nav_target("board.html", path, depth), "The Board"),
+        (bk_nav_target("news.html", path, depth), "News"),
+        (bk_nav_target("trade.html", path, depth), "Trade"),
+        (bk_nav_target("players/index.html", path, depth), "Players"),
+        (f"{prefix}explore.html", "Site map"),
+    ])
     return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-{head_tags(title=full_title, description=desc, canonical=canon(path, "bk/"), image=img, brand="BasketKeep")}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=32" />
+{head_tags(title=full_title, description=desc, canonical=canon(path, "bk/"), image=img, brand="BasketKeep", og_type=og_type, extra_ld=extra_ld)}
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=33" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
 <body>
   <div class="wrap">
     <header class="site">
-      <a class="brand" href="{'index.html' if depth == 1 else '../index.html'}">
+      <a class="brand" href="{home}">
         <img src="{prefix}img/bk-logo.jpg" alt="BasketKeep circular basketball logo" />
         <div>
           <p class="brand-title">{wordmark()}</p>
@@ -223,9 +259,11 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
       <nav>{''.join(links)}</nav>
     </header>
     {sports_top("bk", depth)}
+    {crumb_html}
     {body}
     <footer>
       © {date.today().year} BasketKeep · ballkeep.com/bk · Rankings aggregated {UPDATED}. Not affiliated with the NBA.
+      {foot}
       {legal_links(depth)}
       {sports_footer("bk", depth)}
     </footer>
@@ -348,25 +386,29 @@ def bk_news_card(story, prefix=""):
     cat = story.get("category") or "wire"
     label = CATEGORY_LABEL.get(cat, cat.title())
     href = f"{prefix}news/{esc(story['slug'])}.html"
-    players = " ".join(
-        f'<span class="chip">{esc(p.get("name") or "")}</span>'
-        for p in (story.get("players") or [])[:6]
-    )
+    pdepth = 2 if (prefix or "").startswith("..") else 1
+    chips = []
+    for p in (story.get("players") or [])[:6]:
+        name = p.get("name") or ""
+        if not name:
+            continue
+        ph = bk_player_href(p, pdepth)
+        if ph:
+            chips.append(f'<a class="chip" href="{esc(ph)}">{esc(name)}</a>')
+        else:
+            chips.append(f'<span class="chip">{esc(name)}</span>')
     nsrc = len(story.get("sources") or [])
     kinds = {s.get("kind") for s in story.get("sources") or []}
-    bits = [f"{nsrc} source" + ("s" if nsrc != 1 else "")]
-    if "x" in kinds:
-        bits.append("X")
-    if "video" in kinds:
-        bits.append("video")
-    return (
-        f'<a class="news-item tile" href="{href}">'
-        f'<div class="news-meta"><span class="kind {esc(cat)}">{esc(label)}</span> '
-        f'{esc(news_when(story.get("updated") or story.get("published") or ""))} · {esc(" · ".join(bits))}</div>'
-        f'<h3>{esc(story.get("headline") or "Update")}</h3>'
-        f'<p>{esc(story.get("blurb") or "")}</p>'
-        f'<div class="news-players">{players}</div>'
-        f"</a>"
+    return story_card(
+        href=href,
+        category=cat,
+        label=label,
+        when=news_when(story.get("updated") or story.get("published") or ""),
+        headline=story.get("headline") or "Update",
+        blurb=story.get("blurb") or "",
+        player_html=" ".join(chips),
+        nsrc=nsrc,
+        kinds=kinds,
     )
 
 
@@ -418,7 +460,7 @@ def render_bk_news_pages(stories):
     </script>"""
     body = f"""
     <p class="kicker">BK News · Basketball · Hourly wire</p>
-    <h2>BK News</h2>
+    <h1>BK News</h1>
     <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate, the original tape, and links back to every BasketKeep player page named in the story. Football BK News lives on <a href="../news.html">Ball Keep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{''.join(chips)}</div>
@@ -466,7 +508,7 @@ def render_bk_news_pages(stories):
         story_body = f"""
     <p class="kicker">BK News · {esc(label)}</p>
     <p class="news-meta">{esc(news_when(s.get("updated") or s.get("published") or ""))} · {nsrc} source{"s" if nsrc != 1 else ""}</p>
-    <h2>{esc(s.get("headline") or "Update")}</h2>
+    <h1>{esc(s.get("headline") or "Update")}</h1>
     <section class="panel">
       <p class="kicker">Aggregate</p>
       <p>{esc(s.get("summary") or s.get("blurb") or "")}</p>
@@ -474,12 +516,28 @@ def render_bk_news_pages(stories):
     {named}
     <section class="sources-box panel" style="margin-top:18px">
       <p class="kicker">Tape</p>
-      <h3>Links back to the desks</h3>
+      <h2>Links back to the desks</h2>
       {source_html}
     </section>
-    <p class="note" style="margin-top:18px"><a href="../news.html">All BK News</a> · <a href="../players/index.html">Player pages</a></p>
+    {related_news_html(related_news(stories, s))}
+    <p class="note" style="margin-top:18px"><a href="../news.html">All BK News</a> · <a href="../players/index.html">Player pages</a> · <a href="../the-keep.html">The Keep</a></p>
     """
-        write(f"bk/news/{slug}.html", bk_page(s.get("headline") or "BK News", f"news/{slug}.html", story_body, depth=2))
+        write(
+            f"bk/news/{slug}.html",
+            bk_page(
+                s.get("headline") or "BK News", f"news/{slug}.html", story_body, depth=2,
+                og_type="article",
+                extra_ld=[news_ld(
+                    headline=s.get("headline") or "Update",
+                    url=f"https://ballkeep.com/bk/news/{slug}.html",
+                    description=s.get("summary") or s.get("blurb") or "",
+                    image="img/bk-logo.jpg",
+                    brand="BasketKeep",
+                    published=s.get("published") or "",
+                    updated=s.get("updated") or "",
+                )],
+            ),
+        )
         urls.append(f"https://ballkeep.com/bk/news/{slug}.html")
     return urls
 
@@ -510,12 +568,36 @@ def write_player_pages(keep, board, news_by_player):
         board_rows = "".join(
             f"<tr><td>{esc(src)}</td><td>{rk}</td></tr>" for src, rk in sorted(ranks.items(), key=lambda kv: kv[1])[:12]
         )
+        pos_board = {"PG": "../guards.html", "SG": "../guards.html", "SF": "../wings.html", "PF": "../wings.html", "C": "../bigs.html"}.get(r.get("pos") or "")
+        idx = next((i for i, x in enumerate(keep) if x["key"] == r["key"]), None)
+        related = []
+        window = nearby_window(keep, idx, 2)
+        if window:
+            related.append(related_names(
+                "On The Keep nearby",
+                [(f'{slugify(p["name"])}.html', p["name"], f'#{p["bk"]}') for p in window],
+            ))
+        mates = same_field(keep, r, "team", limit=6)
+        if mates:
+            related.append(related_names(
+                f"Same team · {r.get('team') or ''}",
+                [(f'{slugify(p["name"])}.html', p["name"], f'#{p["bk"]}') for p in mates],
+            ))
+        pos_pool = [p for p in keep if p.get("pos") == r.get("pos")]
+        pidx = next((i for i, p in enumerate(pos_pool) if p["key"] == r["key"]), None)
+        same = nearby_window(pos_pool, pidx, 3) if pidx is not None else []
+        if same:
+            related.append(related_names(
+                f"Same position · {r.get('pos') or ''}",
+                [(f'{slugify(p["name"])}.html', p["name"], f'#{p["bk"]}') for p in same],
+            ))
+        seo_desc = clip(f"{r['name']} is BasketKeep #{r['bk']} in dynasty. {r.get('pos')} {r.get('team')}.")
         body = f"""
     <div class="player-hero">
-      <img src="../../img/bk-logo.jpg" alt="{esc(r['name'])}" />
+      <img src="../../img/bk-logo.jpg" alt="{esc(r['name'])} headshot" />
       <div>
         <p class="kicker">{esc(r.get("pos") or "")} · {esc(r.get("team") or "")}</p>
-        <h2>{esc(r["name"])}</h2>
+        <h1>{esc(r["name"])}</h1>
         <div class="chips">
           <span class="chip">Keep #{r["bk"]}</span>
           {f'<span class="chip">Board #{br["bk"]}</span>' if br else ""}
@@ -525,8 +607,8 @@ def write_player_pages(keep, board, news_by_player):
       </div>
     </div>
     <div class="rank-grid">
-      <div class="rank-card"><small>The Keep</small><strong>{r["bk"]}</strong><span>Dynasty</span></div>
-      <div class="rank-card"><small>The Board</small><strong>{br["bk"] if br else "—"}</strong><span>Redraft</span></div>
+      <a class="rank-card" href="../the-keep.html"><small>The Keep</small><strong>{r["bk"]}</strong><span>Dynasty</span></a>
+      <a class="rank-card" href="../board.html"><small>The Board</small><strong>{br["bk"] if br else "—"}</strong><span>Redraft</span></a>
       <div class="rank-card"><small>Desks</small><strong>{r.get("n") or "—"}</strong><span>avg {r.get("avg") or "—"}</span></div>
     </div>
     <div class="plusminus">
@@ -535,15 +617,30 @@ def write_player_pages(keep, board, news_by_player):
     </div>
     <section class="panel">
       <p class="kicker">Boards</p>
-      <h3>Where the desks put him</h3>
+      <h2>Where the desks put him</h2>
       <p class="note">High {hi} · low {lo}. Unranked desks are skipped.</p>
       <div class="table-wrap"><table class="boards"><thead><tr><th>Desk</th><th>Rank</th></tr></thead><tbody>{board_rows}</tbody></table></div>
     </section>
     {news_html}
-    <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-keep.html">The Keep</a> · <a href="../board.html">The Board</a> · <a href="../news.html">BK News</a></p>
+    {"".join(related)}
+    <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-keep.html">The Keep</a> · <a href="../board.html">The Board</a> · {f'<a href="{pos_board}">Position board</a> · ' if pos_board else ""}<a href="../news.html">BK News</a> · <a href="../trade-keep.html">Calculator</a></p>
     """
-        write(f"bk/players/{slug}.html", bk_page(r["name"], f"players/{slug}.html", body, depth=2,
-                                                 description=clip(f"{r['name']} is BasketKeep #{r['bk']} in dynasty. {r.get('pos')} {r.get('team')}.")))
+        write(
+            f"bk/players/{slug}.html",
+            bk_page(
+                r["name"], f"players/{slug}.html", body, depth=2,
+                description=seo_desc,
+                extra_ld=[person_ld(
+                    name=r["name"],
+                    url=f"https://ballkeep.com/bk/players/{slug}.html",
+                    image="img/bk-logo.jpg",
+                    description=seo_desc,
+                    sport="Basketball",
+                    team=r.get("team") or "",
+                    pos=r.get("pos") or "",
+                )],
+            ),
+        )
         urls.append(f"https://ballkeep.com/bk/players/{slug}.html")
         files.append({
             "key": r.get("key") or "",
@@ -568,14 +665,14 @@ def write_player_pages(keep, board, news_by_player):
         slug = slugify(r["name"])
         cards.append(
             f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}">'
-            f'<img src="../../img/bk-logo.jpg" alt="" />'
+            f'<img src="../../img/bk-logo.jpg" alt="{esc(r["name"])} headshot" />'
             f'<h3>{esc(r["name"])}</h3>'
             f'<p class="note">{esc(r.get("pos") or "")} {esc(r.get("team") or "")} · Keep #{r["bk"]}</p></a>'
         )
     flt, js = filter_js(["PG", "SG", "SF", "PF", "C"])
     hub = f"""
     <p class="kicker">Player files</p>
-    <h2>The Keep, one name at a time</h2>
+    <h1>The Keep, one name at a time</h1>
     <p class="note">The Keep top {len(keep)}. Rank, The Board redraft slot, every desk, plus/minus. Filter the grid.</p>
     {flt}
     <div class="player-grid">{''.join(cards)}</div>
@@ -668,6 +765,7 @@ def write_basket_site():
         )
     home = f"""
     {masthead("Basketball rankings", wordmark(), "The Keep · The Board")}
+    {sr_only("BasketKeep Dynasty Basketball Rankings and Trade Calculator")}
     <section class="desk-block main">
       <p class="kicker">Hardwood</p>
       <h2>The Keep and The Board</h2>
@@ -707,12 +805,20 @@ def write_basket_site():
     flt, js = filter_js(["G", "F", "C", "PG", "SG", "SF", "PF"])
     keep_body = f"""
     <p class="kicker">Keystone · Dynasty basketball</p>
-    <h2>The Keep</h2>
+    <h1>The Keep</h1>
     <p class="note">This is the big one. Dynasty basketball top {len(keep)}, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — 18 boards. Unranked is skipped, never 999. BK Value uses the same decaying curve as football (12,000 at 1.01). The Board next door is this-year redraft.</p>
     {flt}
     <div class="panel">{rank_table(keep, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     {value_bars(keep, 12, "#e87722", "Keep value graph")}
     {sources_panel()}
+    {related_tiles("Also on this desk", "Related pages", [
+        ("board.html", "The Board", "This-year redraft."),
+        ("guards.html", "Guards", "PG / SG from The Keep."),
+        ("wings.html", "Wings", "Wings from The Keep."),
+        ("bigs.html", "Bigs", "Centers from The Keep."),
+        ("players/index.html", "Player files", "Keep 400, one card each."),
+        ("news.html", "BK News", "Injury and roster tape."),
+    ])}
     """
     write("bk/the-keep.html", bk_page("The Keep", "the-keep.html", keep_body, js))
 
@@ -723,16 +829,22 @@ def write_basket_site():
         )
     board_body = f"""
     <p class="kicker">Redraft · this year</p>
-    <h2>The Board</h2>
+    <h1>The Board</h1>
     <p class="note">The Board is redraft — {len(board)} names, this season only. Use this list for 2026-27 startups. The Keep is dynasty.</p>
     <div class="panel">{rank_table(board, ["Keep", "BK Value"], board_extra)}</div>
     {value_bars(board, 12, "#1a1208", "Board value graph")}
+    {related_tiles("Also on this desk", "Related pages", [
+        ("the-keep.html", "The Keep", "Dynasty basketball top 400."),
+        ("trade-board.html", "Board calculator", "These ranks as BK Value."),
+        ("players/index.html", "Player files", "Keep and Board on one card."),
+        ("news.html", "BK News", "Hourly NBA wire."),
+    ])}
     """
     write("bk/board.html", bk_page("The Board", "board.html", board_body))
 
     g_body = f"""
     <p class="kicker">Guards only</p>
-    <h2>Guards</h2>
+    <h1>Guards</h1>
     <p class="note">Point guards and shooting guards, re-ranked among themselves from The Keep.</p>
     <div class="panel">{rank_table(guards, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
@@ -740,7 +852,7 @@ def write_basket_site():
 
     w_body = f"""
     <p class="kicker">Wings only</p>
-    <h2>Wings</h2>
+    <h1>Wings</h1>
     <p class="note">Small forwards and power forwards. The Keep, forwards only.</p>
     <div class="panel">{rank_table(wings, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
@@ -748,7 +860,7 @@ def write_basket_site():
 
     b_body = f"""
     <p class="kicker">Centers only</p>
-    <h2>Bigs</h2>
+    <h1>Bigs</h1>
     <p class="note">The fives. Wemby is the 1.01. Jokic is the this-year argument.</p>
     <div class="panel">{rank_table(bigs, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
@@ -761,7 +873,7 @@ def write_basket_site():
     )
     rook_body = f"""
     <p class="kicker">2026 class · plus the kids</p>
-    <h2>Rookies</h2>
+    <h1>Rookies</h1>
     <p class="note">Compiled 2026 draftees and the sophomores still priced like the future. A Keep-adjacent board.</p>
     <div class="grid">{rook_rows}</div>
     """
