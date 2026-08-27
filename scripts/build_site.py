@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 25, 2026"
+UPDATED = "August 27, 2026"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -769,12 +769,12 @@ def sources_panel(items, heading="Desks in This Super Aggregate"):
 
 PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
-    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 25."),
+    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 27."),
     ("ESPN — Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
 ]
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
-    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 21."),
+    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 26."),
     ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1–2–3."),
 ]
 
@@ -788,7 +788,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 25, 2026. 50% the four long boards, 50% every other desk that ranked the player. Rank 1 is 12,000 BK Value.",
+        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 27, 2026. 50% the four long boards, 50% every other desk that ranked the player. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -1937,7 +1937,7 @@ def main():
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR</p>
     <h2>The Board</h2>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 25), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 27), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
     <div class="panel">{rank_table(ppr, ["Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}

@@ -1,4 +1,4 @@
-"""PitchKeep ranking sources — August 21, 2026.
+"""PitchKeep ranking sources — August 27, 2026.
 
 The Pitch is a Sleeper BPL 2025 points board. Default Sleeper soccer
 scoring (support.sleeper.com/en/articles/9702800-scoring-system) applied
