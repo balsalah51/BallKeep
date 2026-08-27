@@ -88,13 +88,13 @@ python3 scripts/build_site.py
 
 Scheduled runs need **Settings → Actions → General → Workflow permissions → Read and write** so the hourly job can push refreshed pages to the GitHub Pages branch.
 
-Football rankings last aggregated August 25, 2026 from FantasyPros, PFN, Dynasty Nerds, KeepTradeCut, ESPN (Eric Karabell Superflex + Flex, Field Yates), Draft Sharks, RotoWire, Dynasty Dealer, PFF, and X ranks from Derek Brown, Andrew Erickson, and Pat Fitzmaurice.
+Football rankings last aggregated August 27, 2026 from FantasyPros (dynasty Superflex Aug 26, redraft PPR Aug 27, rookies Aug 26), PFN, Dynasty Nerds, KeepTradeCut, ESPN (Eric Karabell Superflex + Flex, Field Yates), Draft Sharks, RotoWire, Dynasty Dealer, PFF, and X ranks from Derek Brown, Andrew Erickson, and Pat Fitzmaurice.
 
-Baseball rankings last aggregated August 21, 2026 from RotoGraphs (Aug 14 model), The Dynasty Guru points Top 500 (Aug 10), plus compiled slices of FantasyPros, ESPN, Razzball, Pitcher List, RotoWire, CBS, NFBC, Ottoneu, BP, The Athletic, DLB, Dynasty Dugout, Fantasy Baseballers, FanGraphs The Board, Baseball America, MLB Pipeline, Mastersball, Four-Seam/Sekulski, Yahoo, ATC ROS, and Enos Slaughter. Closer charts: FantasyPros Aug 20 + ESPN reliever depth.
+Baseball rankings last aggregated August 27, 2026 from RotoGraphs (Aug 14 model), The Dynasty Guru points Top 500 (Aug 10), plus compiled slices of FantasyPros (dynasty ECR Aug 26), ESPN, Razzball, Pitcher List, RotoWire, CBS, NFBC, Ottoneu, BP, The Athletic, DLB, Dynasty Dugout, Fantasy Baseballers, FanGraphs The Board, Baseball America, MLB Pipeline, Mastersball, Four-Seam/Sekulski, Yahoo, ATC ROS, and Enos Slaughter. Closer charts: FantasyPros Aug 20 + ESPN reliever depth.
 
 Unranked names are skipped in the mean — never treated as 999.
 
-Premier League rankings last aggregated August 23, 2026 from 25 published 2026/27 pro lists (RotoWire FPL 400, RotoWire Fantrax/Sleeper 400, RotoWire GW1, The Athletic PL 50, ESPN PL 50, The Independent, Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, Fantasy Football Hub, BBC Sport) plus official FPL price / EP / ownership. Last-season Sleeper scoring is The Pitch, not a veto on The Premier.
+Premier League rankings last aggregated August 27, 2026 from 25 published 2026/27 pro lists (RotoWire FPL 400, RotoWire Fantrax/Sleeper 400, RotoWire GW1, The Athletic PL 50, ESPN PL 50, The Independent, Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, Fantasy Football Hub, BBC Sport) plus official FPL price / EP / ownership. Last-season Sleeper scoring is The Pitch, not a veto on The Premier.
 
 ## Discord bot
 The bot reads `data/discord-catalog.json` (emitted by the rebuild). Setup: [bot/README.md](bot/README.md).

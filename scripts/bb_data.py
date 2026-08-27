@@ -1,4 +1,4 @@
-"""BaseBallKeep ranking sources — August 21, 2026.
+"""BaseBallKeep ranking sources — August 27, 2026.
 
 Long boards are RotoGraphs (Aug 14 model) and The Dynasty Guru points (Aug 10).
 The other boards are compiled slices of those lists plus public August 2026
@@ -477,7 +477,7 @@ REDRAFT_WAIVERS = [
 BB_SOURCES = [
     ("RotoGraphs Dynasty Model", "https://fantasy.fangraphs.com/rotographs-dynasty-rankings/", "Jonathan Vander Lugt, Aug 14, 2026. Top 500 discounted-dollar model."),
     ("The Dynasty Guru — Points", "https://thedynastyguru.com/2026/08/10/the-tdg-top-500-for-points-leagues-2026-mid-season-updates/", "Nate Sweet mid-season Top 500, Aug 10."),
-    ("FantasyPros Dynasty ECR", "https://www.fantasypros.com/mlb/rankings/dynasty-overall.php", "Keeper/dynasty expert consensus, Aug 20."),
+    ("FantasyPros Dynasty ECR", "https://www.fantasypros.com/mlb/rankings/dynasty-overall.php", "Keeper/dynasty expert consensus, Aug 26."),
     ("ESPN Fantasy", "https://www.espn.com/fantasy/baseball/", "Veteran / counting-stat lean."),
     ("Razzball", "https://razzball.com/", "Youth / peak-age lean."),
     ("Pitcher List", "https://www.pitcherlist.com/", "Starting pitching premium."),

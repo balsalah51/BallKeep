@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 22, 2026"
+UPDATED = "August 27, 2026"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from bk_cats import plus_minus as bk_plus_minus  # noqa: E402
@@ -129,7 +129,7 @@ BK_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Dynasty Basketball Rankings (Top 400) | BasketKeep",
-        "Dynasty basketball top 400, rebuilt August 21, 2026. 18-board aggregate. Wembanyama is the 1.01. BK Value starts at 12,000.",
+        "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama is the 1.01. BK Value starts at 12,000.",
         "img/bk-logo.jpg",
     ),
     "board.html": (

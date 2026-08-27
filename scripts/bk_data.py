@@ -1,4 +1,4 @@
-"""BasketKeep ranking sources — August 21, 2026.
+"""BasketKeep ranking sources — August 27, 2026.
 
 Compiled dynasty and redraft boards for category + points leagues.
 The Keep is the dynasty Super Aggregate. The Board is this-year redraft.

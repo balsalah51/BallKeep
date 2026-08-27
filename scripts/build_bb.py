@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 22, 2026"
+UPDATED = "August 27, 2026"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from bb_data import (  # noqa: E402
@@ -128,7 +128,7 @@ BB_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Dynasty Baseball Rankings (Top 400) | BaseKeep",
-        "Overall dynasty baseball top 400, rebuilt August 21, 2026. 23-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
+        "Overall dynasty baseball top 400, rebuilt August 27, 2026. 23-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
         "img/bb-logo.jpg",
     ),
     "the-lineup.html": (
