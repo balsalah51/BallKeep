@@ -5,7 +5,7 @@ import asyncio
 
 import discord
 
-from catalog import Catalog
+from catalog import FORMULA, Catalog
 
 CATEGORY = "BALL KEEP DESK"
 CHANNELS = [
@@ -104,7 +104,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "This category is a carbon copy of ballkeep.com so Discord search works.\n\n"
         f"Ranks last aggregated **{cat.updated}**.\n"
         "BK Value formula: rank 1 = **12,000**. "
-        "`value = round(12000 * exp(-0.0165 * (rank-1)) / rank**0.18)`\n"
+        f"`{FORMULA}`\n"
         "1QB taxes quarterbacks to 38% of Superflex value.\n\n"
         "**Slash commands (work in every channel)**\n"
         "`/player` `/search` `/top` `/rank` `/pos` `/trade` `/deals` `/value` `/picks` `/formula` "

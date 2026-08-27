@@ -56,9 +56,9 @@ Separate sport, separate palette. Premier League purple, pitch green, gold. Foot
 - **Player files** — every Pitch 400 name: headshot, Sleeper points, 2025/26 line, every board, YouTube tape
 
 ## BK Value
-`value = round(12000 * exp(-0.0165 * (rank - 1)) / rank**0.18)`
+`value = round(12000 * exp(-0.0085 * (rank - 1)) / rank**0.13)`
 
-Rank 1 is 12,000. 1QB Dynasty uses the same Superflex ranks but taxes quarterbacks to 38% of that number. Future picks on the dynasty calculators map to equivalent ranks on the curve. Fair trade = sides within 8%.
+Rank 1 is 12,000. The exponential is slow on purpose so a rank-40 to rank-80 starter still has real trade juice (about 44% and 29% of the 1.01). 1QB Dynasty uses the same Superflex ranks but taxes quarterbacks to 38% of that number. Future picks on the dynasty calculators map to equivalent ranks on the curve. Fair trade = sides within 8%.
 
 ## Rebuild
 ```bash

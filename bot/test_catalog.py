@@ -13,6 +13,13 @@ def main():
     cat = Catalog()
     assert cat.raw["keep"][0]["name"] == "Josh Allen"
     assert bk_value(1) == 12000
+    assert bk_value(40) == 5333
+    assert bk_value(80) == 3469
+    assert bk_value(28) == 6186
+    assert "0.0085" in cat.raw.get("algorithm", "")
+    assert "0.13" in cat.raw.get("algorithm", "")
+    assert cat.raw["keep"][39]["value"] == bk_value(40)
+    assert cat.raw["keep"][79]["value"] == bk_value(80)
     assert cat.one("jsn")["name"] == "Jaxon Smith-Njigba"
     assert cat.one("sun god")["name"].startswith("Amon-Ra")
     assert cat.one("cmc")["name"] == "Christian McCaffrey"

@@ -2,12 +2,15 @@
 from __future__ import annotations
 
 import json
-import math
 import re
+import sys
 from functools import cached_property
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from bk_curve import FORMULA, bk_value  # noqa: E402
+
 CATALOG_PATH = ROOT / "data" / "discord-catalog.json"
 
 NICKNAMES = {
@@ -219,13 +222,6 @@ def norm(name: str) -> str:
     n = n.replace("'", "").replace("’", "")
     n = re.sub(r"\s+", " ", n).strip()
     return NICKNAMES.get(n, n)
-
-
-def bk_value(rank, qb_mult: float = 1.0) -> int:
-    if not rank or rank < 1:
-        return 0
-    raw = 12000 * math.exp(-0.0165 * (rank - 1)) / (rank ** 0.18)
-    return max(1, int(round(raw * qb_mult)))
 
 
 class Catalog:
