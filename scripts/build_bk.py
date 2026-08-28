@@ -280,7 +280,7 @@ BK_ALSO = {
 }
 
 BK_HOME_FAQ = [
-    ("What is BasketKeep?", "Hardwood desk on Ball Keep. The Keep is dynasty basketball top 400 from 18 boards. The Board is this-year redraft. BK Value uses the same 12,000 curve as football."),
+    ("What is BasketKeep?", "BasketKeep is basketball on Ball Keep. The Keep is dynasty basketball top 400 from 18 boards. The Board is this-year redraft. BK Value uses the same 12,000 curve as football."),
     ("How is The Keep ranked?", "Average of every source that ranked the player. Unranked is skipped, never 999."),
     ("Where is the NBA news?", "BK News on this desk clusters injury, roster, and coach tape hourly, with links back to Keep player files."),
 ]
@@ -320,7 +320,7 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bk/"), image=img, brand="BasketKeep", brand_url="https://ballkeep.com/bk/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=34" />
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=35" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
 <body>

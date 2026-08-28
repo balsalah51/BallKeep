@@ -274,7 +274,7 @@ PL_ALSO = {
 }
 
 PL_HOME_FAQ = [
-    ("What is PitchKeep?", "Premier League desk on Ball Keep. The Premier is a 2026/27 hybrid 400 from 25 published lists. The Pitch is last season's Sleeper BPL points. Same BK Value curve."),
+    ("What is PitchKeep?", "PitchKeep is Premier League on Ball Keep. The Premier is a 2026/27 hybrid 400 from 25 published lists. The Pitch is last season's Sleeper BPL points. Same BK Value curve."),
     ("Premier vs Pitch?", "The Premier is who the desks ranked for 2026/27. The Pitch is who scored on Sleeper last season. Use Premier for drafts, Pitch for the counting-stat tape."),
     ("Where is the soccer news?", "PK News clusters injury, transfer, and manager tape hourly, with links back to PitchKeep player files."),
 ]
@@ -326,7 +326,7 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=34" />
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=35" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
 <body>

@@ -301,7 +301,7 @@ BB_ALSO = {
 }
 
 BB_HOME_FAQ = [
-    ("What is BaseKeep?", "Baseball desk on Ball Keep. The Keep is dynasty overall top 400 from 23 boards. The Diamond is this-year redraft. Same BK Value curve as football."),
+    ("What is BaseKeep?", "BaseKeep is baseball on Ball Keep. The Keep is dynasty overall top 400 from 23 boards. The Diamond is this-year redraft. Same BK Value curve as football."),
     ("How is The Keep ranked?", "Average of every source that ranked the player. Unranked is skipped, never 999. Two of the boards run 500 names long."),
     ("Where is the MLB news?", "BK News on this desk clusters IL, roster, DFA, and manager tape hourly."),
 ]
@@ -341,7 +341,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseKeep", brand_url="https://ballkeep.com/bb/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=34" />
+  <link rel="stylesheet" href="{prefix}css/bb.css?v=35" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
 </head>
 <body>
