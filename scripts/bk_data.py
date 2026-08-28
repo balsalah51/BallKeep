@@ -7,10 +7,11 @@ Unranked names are skipped in the mean — never treated as 999.
 from __future__ import annotations
 
 import json
-import math
 import re
 import unicodedata
 from pathlib import Path
+
+from bk_curve import bk_value
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -1059,13 +1060,6 @@ def build_sources(meta, order):
         "Late-Round Fantasy": remap(order, wings, cap=110),
     }
     return sources
-
-
-def bk_value(rank, mult: float = 1.0) -> int:
-    if not rank or rank < 1:
-        return 0
-    raw = 12000 * math.exp(-0.0165 * (rank - 1)) / (rank ** 0.18)
-    return max(1, int(round(raw * mult)))
 
 
 def aggregate(sources, meta, min_n=1):

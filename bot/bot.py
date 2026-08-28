@@ -21,7 +21,7 @@ from discord.ext import commands
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from catalog import Catalog, bk_value, load, norm  # noqa: E402
+from catalog import FORMULA, Catalog, bk_value, load, norm  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
@@ -681,7 +681,7 @@ def build_bot():
         emb = discord.Embed(
             title="BK Value",
             description=(
-                "`value = round(12000 * exp(-0.0165 * (rank-1)) / rank**0.18)`\n"
+                f"`{FORMULA}`\n"
                 "Rank 1 is **12,000**. 1QB taxes quarterbacks to **38%** of Superflex.\n"
                 "Fair trade = the two sides within **8%**.\n\n" + "\n".join(lines)
             ),

@@ -13,6 +13,13 @@ def main():
     cat = Catalog()
     assert cat.raw["keep"][0]["name"] == "Josh Allen"
     assert bk_value(1) == 12000
+    assert bk_value(40) == 5333
+    assert bk_value(80) == 3469
+    assert bk_value(28) == 6186
+    assert "0.0085" in cat.raw.get("algorithm", "")
+    assert "0.13" in cat.raw.get("algorithm", "")
+    assert cat.raw["keep"][39]["value"] == bk_value(40)
+    assert cat.raw["keep"][79]["value"] == bk_value(80)
     assert cat.one("jsn")["name"] == "Jaxon Smith-Njigba"
     assert cat.one("sun god")["name"].startswith("Amon-Ra")
     assert cat.one("cmc")["name"] == "Christian McCaffrey"
@@ -268,13 +275,13 @@ def main():
         assert ".hero.masthead .mast-art { display: none; }" in sport, sport_css
     board_html = html_of("board.html")
     assert "2026 Redraft · PPR" in board_html
-    assert "<h2>The Board</h2>" in board_html
+    assert "<h1>The Board</h1>" in board_html
     assert "redraft ppr" in board_html.lower()
     assert "Kids pay a tax" not in board_html
     assert "kids pay a tax" not in board_html
     assert "The tax is" not in board_html
     sf_html = html_of("redraft-superflex.html")
-    assert "<h2>Redraft Superflex</h2>" in sf_html
+    assert "<h1>Redraft Superflex</h1>" in sf_html
     assert "Superflex Redraft" in sf_html
     assert "Kids pay a tax" not in sf_html
     stub = html_of("redraft-ppr.html")
@@ -302,7 +309,7 @@ def main():
     assert "bb-pitch.jpg" not in html_of("bb/pitchers.html")
     assert "bb-bullpen.jpg" not in html_of("bb/bullpen.html")
     diamond = html_of("bb/the-diamond.html")
-    assert "The Diamond" in page_title(diamond) or "<h2>The Diamond</h2>" in diamond
+    assert "The Diamond" in page_title(diamond) or "<h1>The Diamond</h1>" in diamond
     assert "Redraft ranking" in diamond
     assert "waivers-dynasty.html" not in bb_home
     assert "waivers-redraft.html" not in bb_home

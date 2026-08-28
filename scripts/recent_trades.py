@@ -17,7 +17,7 @@ DEALS = [
         "kind": "closed",
         "a": ["Josh Allen"],
         "b": ["Jayden Daniels", "2027 Mid 1st", "2028 2nd"],
-        "blurb": "Allen still clears Daniels plus a mid-first on our curve. The 2028 second is perfume. If you are trying to win 2026, you keep the 1.01.",
+        "blurb": "Daniels plus a mid-first already covers Allen on the curve. The 2028 second is extra. If you are trying to win 2026, you still keep the 1.01.",
     },
     {
         "date": "2026-08-20",
