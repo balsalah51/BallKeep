@@ -47,6 +47,8 @@ from seo import (  # noqa: E402
     legal_links,
     person_jsonld,
     rank_list_jsonld,
+    rank_search_bar,
+    rank_search_key,
     rank_spread_graph,
     related_players_html,
     related_stories_html,
@@ -342,7 +344,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseKeep", brand_url="https://ballkeep.com/bb/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=36" />
+  <link rel="stylesheet" href="{prefix}css/bb.css?v=37" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
 </head>
 <body>
@@ -439,8 +441,9 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
             f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
             f'<strong>{esc(r["name"])}</strong></a>{age_span}{meta}</span>'
         )
+        dn = rank_search_key(r.get("name"), pos, team, r.get("group"))
         body.append(
-            f'<tr data-pos="{esc(pos0)}" data-group="{esc(r.get("group") or "")}">'
+            f'<tr data-pos="{esc(pos0)}" data-group="{esc(r.get("group") or "")}" data-name="{dn}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
             f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos0)}">{esc(pos)}</span></td>'
@@ -487,7 +490,6 @@ def val_cell(r):
 def filter_js(groups):
     btns = "".join(f'<button type="button" data-pos="{g}">{g}</button>' for g in groups)
     return f"""
-    <p class="note">Filter</p>
     <div class="filters" id="posf"><button type="button" class="active" data-pos="all">All</button>{btns}</div>
     """, """<script>
     const box = document.getElementById('posf');
@@ -495,6 +497,7 @@ def filter_js(groups):
       const b = e.target.closest('button'); if (!b) return;
       box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
       b.classList.add('active');
+      if (window.applyRankFilter) { applyRankFilter(); return; }
       const p = b.dataset.pos;
       document.querySelectorAll('tbody tr').forEach(tr => {
         const hit = p === 'all' || tr.dataset.pos === p || tr.dataset.group === p;
@@ -1501,7 +1504,7 @@ def write_baseball_site():
     <p class="kicker">Keystone · Overall Dynasty</p>
     <h1>The Keep</h1>
     <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - 23 boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
-    {flt}
+    {rank_search_bar(flt)}
     <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#1f6b3a", "Keep value graph")}
     {sources_panel()}
@@ -1524,6 +1527,7 @@ def write_baseball_site():
     lu_body = f"""
     {page_label("BaseKeep", "The Lineup", "Hitters only")}
     <p class="note">Every hitter we could pin to a dynasty board, re-ranked among bats only. Ohtani lives here as a DH. Pitchers have their own building.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(lineup, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {value_bars(lineup, 12, "#1f6b3a", "Lineup value graph")}
     {sources_panel()}
@@ -1533,6 +1537,7 @@ def write_baseball_site():
     pit_body = f"""
     {page_label("BaseKeep", "BK's Pitchers", "Dynasty arms")}
     <p class="note">Top 150 overall dynasty pitchers. Starting pitchers plus the two-way unicorn. Relievers who crack the overall pitcher board sneak in; the full bullpen lives next door.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(pitchers, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {value_bars(pitchers, 12, "#1f6b3a", "Pitcher value graph")}
     {sources_panel()}
@@ -1542,6 +1547,7 @@ def write_baseball_site():
     sv_body = f"""
     {page_label("BaseKeep", "BK's Bullpen - Saves", "Relief · Saves")}
     <p class="note">Top 100 relief pitchers for traditional saves leagues. Chart mix: FantasyPros closer report (Aug 20), ESPN reliever depth chart, and RPs who survive the overall Keep. Bryan Baker has the MLB lead. Diaz is leaking. Scott is the add.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(saves, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {value_bars(saves, 12, "#1f6b3a", "Saves value graph")}
     {sources_panel()}
@@ -1551,6 +1557,7 @@ def write_baseball_site():
     svh_body = f"""
     {page_label("BaseKeep", "BK's Bullpen - SV+H", "Relief · Saves + Holds")}
     <p class="note">Same bullpen, different sport. FantasyPros Week 21 SV+H board (Baker / Miller / Varland) plus setup men the ESPN chart actually uses. If your league counts holds, this is the page. The saves board is next door.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(svh, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {value_bars(svh, 12, "#1f6b3a", "SV+H value graph")}
     {sources_panel()}
@@ -1562,7 +1569,7 @@ def write_baseball_site():
     <p class="kicker">Redraft ranking · this year</p>
     <h1>The Diamond</h1>
     <p class="note">This is the redraft list. One-year baseball, {len(redraft)} names. Use this board for 2026 rest-of-season and redraft startups.</p>
-    {rd_flt}
+    {rank_search_bar(rd_flt)}
     <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{int(r["value"]):,}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(redraft, 12, "#1f6b3a", "The Diamond value graph")}
     {sources_panel()}

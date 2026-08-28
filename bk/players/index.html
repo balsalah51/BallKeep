@@ -29,7 +29,7 @@
   <meta name="twitter:image" content="https://ballkeep.com/img/bk-logo.jpg" />
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "BasketKeep Player Files - The Keep Top 400", "description": "The Keep top 400, one hardwood card each.", "url": "https://ballkeep.com/bk/players/index.html", "inLanguage": "en-US", "isPartOf": {"@type": "WebSite", "name": "BasketKeep", "url": "https://ballkeep.com/bk/"}, "publisher": {"@type": "Organization", "name": "BasketKeep", "url": "https://ballkeep.com/bk/", "logo": {"@type": "ImageObject", "url": "https://ballkeep.com/img/bk-logo.jpg"}}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://ballkeep.com/img/bk-logo.jpg"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "BasketKeep", "item": "https://ballkeep.com/bk/"}, {"@type": "ListItem", "position": 2, "name": "Players", "item": "https://ballkeep.com/bk/players/"}]}</script>
-  <link rel="stylesheet" href="../../css/bk.css?v=36" />
+  <link rel="stylesheet" href="../../css/bk.css?v=37" />
   <link rel="icon" href="../../img/bk-logo.jpg" />
 </head>
 <body>
@@ -63,10 +63,11 @@
   </div>
   <script>
     const box = document.getElementById('pos-f');
-    box.addEventListener('click', e => {
+    if (box) box.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
       box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
       b.classList.add('active');
+      if (window.applyRankFilter) { applyRankFilter(); return; }
       const p = b.dataset.pos;
       document.querySelectorAll('tbody tr').forEach(tr => {
         const hit = p === 'all' || tr.dataset.pos === p || tr.dataset.group === p;

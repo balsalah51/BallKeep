@@ -49,6 +49,8 @@ from seo import (  # noqa: E402
     news_sitemap_xml,
     person_jsonld,
     rank_list_jsonld,
+    rank_search_bar,
+    rank_search_key,
     rank_spread_graph,
     related_players_html,
     related_stories_html,
@@ -1030,7 +1032,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=38" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=39" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1115,8 +1117,9 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
         if faces:
             face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="{esc(face_alt(r.get("name")))}" loading="lazy" />'
         stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{age_span}{meta}</span>'
+        dn = rank_search_key(r.get("name"), pos, team)
         body.append(
-            f'<tr data-pos="{esc(pos)}">'
+            f'<tr data-pos="{esc(pos)}" data-name="{dn}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
             f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
@@ -2287,13 +2290,12 @@ def main():
     <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} boards</p>
     <h1>The Keep</h1>
     <p class="note">This is the big one. Superflex Dynasty. Top 400. {len(KEEP_SOURCES)} boards. Half the vote is the four long boards, half is everyone else. The Board next door is Redraft PPR - this year, one quarterback, a point per catch.</p>
-    <p class="note">Position</p>
-    <div class="filters" id="keep-pos"><button type="button" class="active" data-pos="all">All</button>
+    {rank_search_bar('''<div class="filters" id="keep-pos"><button type="button" class="active" data-pos="all">All</button>
       <button type="button" data-pos="QB">QB</button>
       <button type="button" data-pos="RB">RB</button>
       <button type="button" data-pos="WR">WR</button>
       <button type="button" data-pos="TE">TE</button>
-    </div>
+    </div>''')}
     <div class="panel">{rank_table(keep, ["Super", "Boards", "PFN", "KTC", "BK Value"], keep_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#c8102e", "Keep value graph")}
     {sources_panel(KEEP_SOURCES)}
@@ -2301,14 +2303,11 @@ def main():
     """
     keep_js = """<script>
     const box = document.getElementById('keep-pos');
-    box.addEventListener('click', e => {
+    if (box) box.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
       box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
       b.classList.add('active');
-      const p = b.dataset.pos;
-      document.querySelectorAll('tbody tr').forEach(tr => {
-        tr.style.display = (p === 'all' || tr.dataset.pos === p) ? '' : 'none';
-      });
+      if (window.applyRankFilter) applyRankFilter();
     });
     </script>"""
     write("the-keep.html", board_page(
@@ -2337,6 +2336,7 @@ def main():
     <p class="kicker">2026 Redraft · PPR</p>
     <h1>The Board</h1>
     <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 28), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(ppr, ["Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
@@ -2367,6 +2367,7 @@ def main():
     <p class="kicker">2026 Redraft · Standard</p>
     <h1>Redraft Standard</h1>
     <p class="note">Standard (no extra point per catch) is a different sport than PPR. We start from the PPR consensus above, then apply Ball Keep positional taxes used across major STD vs PPR deltas: running backs −4.5 ranks, receivers +3, tight ends +2, quarterbacks +0.5. Result: Bijan / Gibbs / CMC / Henry / Taylor climb; Chase / Puka / JSN still go early but not as automatic 1.01s.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(std, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(std, 12, "#c8102e", "Standard value graph")}
     {sources_panel(PPR_SOURCES + [("Ball Keep Standard Tax", "", "RB −4.5 ranks, WR +3, TE +2, QB +0.5 applied to the PPR consensus.")], heading="Boards in This Aggregate")}
@@ -2389,6 +2390,7 @@ def main():
     <p class="kicker">2026 NFL Draft Class</p>
     <h1>Notable Drafted Rookies</h1>
     <p class="note">Superflex rookie consensus from Dynasty Dealer (13-analyst team board, July 30), FantasyPros Superflex Rookie ECR (August), and PFF's Superflex rookie column (Love / Mendoza / Tate locked 1-2-3). BK Value uses this rookie-board rank on the same curve as The Keep. The note is startup / rookie-draft language, not salary-cap dollars.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(rook_rows, ["Avg", "Dealer", "FP", "PFF", "BK Value", "Note"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["dd"]}</td><td class="desk-only">{r["fp"]}</td><td class="desk-only">{r["pff"]}</td><td class="c-val val">{fmt_val(r["value"])}</td><td class="note desk-only">{esc(r["blurb"])}</td>')}</div>
     {value_bars(rook_rows, 12, "#c8102e", "Rookie value graph")}
     {sources_panel(ROOKIE_SOURCES, heading="Boards in This Aggregate")}
@@ -2453,6 +2455,7 @@ def main():
     <p class="kicker">Superflex Redraft · this year</p>
     <h1>Redraft Superflex</h1>
     <p class="note">This list is Superflex for this season - {len(sf_redraft)} names. The Keep is Superflex Dynasty. The Board is Redraft PPR. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(sf_redraft, ["Keep SF", "PPR", "Score", "BK Value"], board_redraft_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(sf_redraft, 12, "#1e8fc2", "Superflex redraft value graph")}
     {sources_panel([

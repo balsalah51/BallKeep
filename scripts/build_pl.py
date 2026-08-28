@@ -41,6 +41,8 @@ from seo import (  # noqa: E402
     legal_links,
     person_jsonld,
     rank_list_jsonld,
+    rank_search_bar,
+    rank_search_key,
     rank_spread_graph,
     related_players_html,
     related_stories_html,
@@ -327,7 +329,7 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=36" />
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=37" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
 <body>
@@ -426,8 +428,9 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
             f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
             f"<strong>{esc(label)}</strong></a>{age_span}{meta}</span>"
         )
+        dn = rank_search_key(r.get("name"), label, pos, team)
         body.append(
-            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or pos)}">'
+            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or pos)}" data-name="{dn}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
             f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
@@ -473,7 +476,6 @@ def premier_cell(r):
 def filter_js(groups):
     btns = "".join(f'<button type="button" data-pos="{g}">{g}</button>' for g in groups)
     return f"""
-    <p class="note">Filter</p>
     <div class="filters" id="posf"><button type="button" class="active" data-pos="all">All</button>{btns}</div>
     """, """<script>
     const box = document.getElementById('posf');
@@ -481,6 +483,7 @@ def filter_js(groups):
       const b = e.target.closest('button'); if (!b) return;
       box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
       b.classList.add('active');
+      if (window.applyRankFilter) { applyRankFilter(); return; }
       const p = b.dataset.pos;
       document.querySelectorAll('tbody tr').forEach(tr => {
         const hit = p === 'all' || tr.dataset.pos === p || tr.dataset.group === p;
@@ -1257,7 +1260,7 @@ def write_pitch_site():
     <p class="kicker">Hybrid 400 · {UPDATED}</p>
     <h1>The Premier</h1>
     <p class="note">Top 400. Half Sleeper BPL 2025, half 25 published pro lists plus official FPL metrics. Unranked skipped. Rank 1 is 12,000.</p>
-    {flt}
+    {rank_search_bar(flt)}
     <div class="panel">{rank_table(premier, ["Hybrid", "Sleeper rk", "Cons.", "Sleeper", "FPL", "G", "A", "Boards", "£", "BK Value"], premier_cell, media=media, faces=True, full_names=True, show_age=True)}</div>
     {value_bars(premier, 12, "#e8c547", "Premier value graph")}
     {sources_panel()}
@@ -1281,7 +1284,7 @@ def write_pitch_site():
     <p class="kicker">Sleeper BPL 2025</p>
     <h1>The Pitch</h1>
     <p class="note">Top 400. Sleeper scoring. Goal 9/10, assist 6/7, clean sheet 0/1/6/8, save 2. Rank 1 is 12,000.</p>
-    {flt}
+    {rank_search_bar(flt)}
     <div class="panel">{rank_table(pitch, ["Sleeper", "FPL", "G", "A", "Min", "CS", "Tck", "£", "BK Value"], val_cell, media=media, faces=True)}</div>
     {value_bars(pitch, 12, "#e8c547", "Sleeper points graph", key="sleeper_pts", heading="Sleeper BPL 2025, top 12", note="Default Sleeper soccer scoring on 2025/26 counting stats. Haaland is 317.2. Bruno is 293.8.")}
     {value_bars(pitch, 12, "#00c853", "Pitch value graph")}
@@ -1299,6 +1302,7 @@ def write_pitch_site():
     <p class="kicker">{esc(kicker)}</p>
     <h1>{esc(title)}</h1>
     <p class="note">{esc(note)}</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(rows, ["Sleeper", "FPL", "G", "A", "Min", "CS", "Tck", "£", "BK Value"], val_cell)}</div>
     {value_bars(rows, 12, "#e8c547", f"{title} points graph", key="sleeper_pts", heading=f"Sleeper BPL 2025 {title.lower()}, top 12", note="Same Sleeper table as The Pitch, this position only.")}
     {value_bars(rows, 12, "#00c853", f"{title} value graph")}

@@ -368,6 +368,49 @@ def main():
     assert not (root / "the-ones.html").exists()
     assert 'href="discord.html"' not in html_of("the-keep.html")
 
+    rank_pages = (
+        "the-keep.html",
+        "board.html",
+        "redraft-standard.html",
+        "redraft-superflex.html",
+        "rookies-2026.html",
+        "bk/the-keep.html",
+        "bk/board.html",
+        "bk/guards.html",
+        "bk/wings.html",
+        "bk/bigs.html",
+        "bb/the-keep.html",
+        "bb/the-lineup.html",
+        "bb/pitchers.html",
+        "bb/bullpen.html",
+        "bb/bullpen-holds.html",
+        "bb/the-diamond.html",
+        "pl/the-premier.html",
+        "pl/the-pitch.html",
+        "pl/attack.html",
+        "pl/midfield.html",
+        "pl/defence.html",
+        "pl/keepers.html",
+    )
+    for rel in rank_pages:
+        page = html_of(rel)
+        assert 'class="rank-search-input"' in page, rel
+        assert "applyRankFilter" in page, rel
+        assert "data-name=" in page, rel
+        assert "Find a player" in page, rel
+    assert "rank-search-input" not in html_of("index.html")
+    assert "rank-search-input" not in html_of("news.html")
+    assert "rank-search-input" not in html_of("the-x.html")
+    assert ".rank-search" in Path("css/site.css").read_text()
+    assert ".rank-search" in Path("css/bk.css").read_text()
+    assert ".rank-search" in Path("css/bb.css").read_text()
+    assert ".rank-search" in Path("css/pl.css").read_text()
+    keep_html = html_of("the-keep.html")
+    assert 'id="keep-pos"' in keep_html
+    assert 'data-name="josh allen' in keep_html
+    assert "rank-search-input" in keep_html
+    assert keep_html.find("rank-search-input") < keep_html.find("keep-pos")
+
 
 if __name__ == "__main__":
     main()
