@@ -481,7 +481,7 @@ def cards_html(sport: str, depth: int = 0, esc=None) -> str:
         kind = "X" if p.get("kind") == "x" else (p.get("publisher") or "Web")
         bits.append(
             f'<a class="x-card tile" href="{esc(p.get("url") or "#")}" target="_blank" rel="noopener">'
-            f'<img src="{esc(src)}" alt="{esc(p.get("title") or "")}" />'
+            f'<img src="{esc(src)}" alt="{esc(p.get("title") or "Meme from X")}" />'
             f'<span class="x-kind">{esc(kind)}</span>'
             f'<h3>{esc(p.get("title") or "")}</h3>'
             f'<p>{esc((p.get("summary") or "")[:140])}</p>'
