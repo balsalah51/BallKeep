@@ -34,16 +34,21 @@ from seo import (  # noqa: E402
     clip,
     dual_metric_graph,
     face_alt,
+    faq_html,
+    faq_jsonld,
     footer_nav,
     head_tags,
     legal_links,
     person_jsonld,
+    rank_list_jsonld,
     rank_spread_graph,
     related_players_html,
     related_stories_html,
     sports_footer,
     sports_top,
     value_bars,
+    video_jsonld,
+    website_jsonld,
 )
 
 
@@ -268,6 +273,25 @@ PL_ALSO = {
     ],
 }
 
+PL_HOME_FAQ = [
+    ("What is PitchKeep?", "PitchKeep is Premier League on Ball Keep. The Premier is a 2026/27 hybrid 400 from 25 published lists. The Pitch is last season's Sleeper BPL points. Same BK Value curve."),
+    ("Premier vs Pitch?", "The Premier is who the desks ranked for 2026/27. The Pitch is who scored on Sleeper last season. Use Premier for drafts, Pitch for the counting-stat tape."),
+    ("Where is the soccer news?", "PK News clusters injury, transfer, and manager tape hourly, with links back to PitchKeep player files."),
+]
+PL_PREMIER_FAQ = [
+    ("What is The Premier?", "Top 400 from 25 published 2026/27 pro lists plus official FPL metrics. Half Sleeper BPL 2025, half the desks. Unranked skipped."),
+    ("How does BK Value work here?", "Premier rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%."),
+    ("What is The Pitch?", "The same 400 names ranked on Sleeper BPL 2025 scoring of 2025/26 counting stats."),
+]
+PL_TRADE_FAQ = [
+    ("How does the PitchKeep calculator work?", "Rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%. Premier uses the 2026/27 list. Pitch uses Sleeper."),
+    ("Which calc should I use?", "Premier for 2026/27 drafts. Pitch when the deal is last season's Sleeper points. Position calcs when the trade is all forwards, mids, defenders, or keepers."),
+]
+PL_NEWS_FAQ = [
+    ("Where does PK News come from?", "Hourly clusters from Premier League RSS, Google News, X, and YouTube, linked to PitchKeep player files."),
+    ("How often does it refresh?", "The scrape runs every hour with the rest of Ball Keep."),
+]
+
 
 def pl_nav_target(href: str, path: str, depth: int) -> str:
     if depth == 2:
@@ -279,7 +303,8 @@ def pl_nav_target(href: str, path: str, depth: int) -> str:
 
 
 def pl_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None,
-            crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None):
+            crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
+            robots=None):
     prefix = "../" * depth
     links = []
     for href, label in PL_NAV:
@@ -300,15 +325,15 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-{head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified)}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=33" />
+{head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=35" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
 <body>
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{'index.html' if depth == 1 else '../index.html'}">
-        <img src="{prefix}img/pl-logo.jpg" alt="PitchKeep circular soccer logo" />
+        <img src="{prefix}img/pl-logo.jpg" alt="PitchKeep circular soccer logo" width="56" height="56" />
         <div>
           <p class="brand-title">{wordmark()}</p>
           <p>Premier League ranks</p>
@@ -332,16 +357,20 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
 """
 
 
-def pl_board_page(title, path, body, extra_js="", depth=1):
+def pl_board_page(title, path, body, extra_js="", depth=1, extra_jsonld=None):
     extra = also_on_desk(PL_ALSO.get(path) or [])
     home = "index.html" if depth == 1 else "../index.html"
+    ld = [breadcrumb_jsonld([
+        ("PitchKeep", "https://ballkeep.com/pl/"),
+        (title, canon(path, "pl/")),
+    ])]
+    for blob in extra_jsonld or []:
+        if blob:
+            ld.append(blob)
     return pl_page(
         title, path, body + extra, extra_js, depth=depth,
         crumbs=breadcrumbs([("PitchKeep", home), (title, None)]),
-        extra_jsonld=[breadcrumb_jsonld([
-            ("PitchKeep", "https://ballkeep.com/pl/"),
-            (title, canon(path, "pl/")),
-        ])],
+        extra_jsonld=ld,
     )
 
 
@@ -889,17 +918,7 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp, news_by_player=No
             f"{r.get('pos') or ''} {r.get('team_name') or r.get('team') or ''}. Updated {UPDATED}."
         )
         player_abs = f"https://ballkeep.com/pl/players/{slug}.html"
-        write(
-            f"pl/players/{slug}.html",
-            pl_page(
-                label, f"players/{slug}.html", body, depth=2,
-                doc_title=seo_title, description=seo_desc, image=img,
-                crumbs=breadcrumbs([
-                    ("PitchKeep", "../index.html"),
-                    ("Players", "index.html"),
-                    (label, None),
-                ]),
-                extra_jsonld=[
+        extra_ld = [
                     breadcrumb_jsonld([
                         ("PitchKeep", "https://ballkeep.com/pl/"),
                         ("Players", "https://ballkeep.com/pl/players/"),
@@ -911,8 +930,29 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp, news_by_player=No
                         team=r.get("team_name") or r.get("team") or "",
                         image=img,
                         description=seo_desc,
+                        sport="Soccer",
                     ),
-                ],
+                ]
+        yt = (media or {}).get("youtube_id") or ""
+        if yt:
+            extra_ld.append(video_jsonld(
+                media.get("youtube_title") or f"{label} highlights",
+                yt,
+                description=seo_desc,
+                brand="PitchKeep",
+                brand_url="https://ballkeep.com/pl/",
+            ))
+        write(
+            f"pl/players/{slug}.html",
+            pl_page(
+                label, f"players/{slug}.html", body, depth=2,
+                doc_title=seo_title, description=seo_desc, image=img,
+                crumbs=breadcrumbs([
+                    ("PitchKeep", "../index.html"),
+                    ("Players", "index.html"),
+                    (label, None),
+                ]),
+                extra_jsonld=extra_ld,
             ),
         )
         keep_html.add(f"{slug}.html")
@@ -1081,15 +1121,19 @@ def render_pl_news_pages(stories: list[dict]) -> list[str]:
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{''.join(chips)}</div>
     <div class="news-list" id="news-list">{cards}</div>
+    {faq_html(PL_NEWS_FAQ, heading="How the PitchKeep wire works.")}
     {also_on_desk(PL_ALSO["news.html"])}
     """
     write("pl/news.html", pl_page(
         "PK News", "news.html", body, extra,
         crumbs=breadcrumbs([("PitchKeep", "index.html"), ("PK News", None)]),
-        extra_jsonld=[breadcrumb_jsonld([
-            ("PitchKeep", "https://ballkeep.com/pl/"),
-            ("PK News", "https://ballkeep.com/pl/news.html"),
-        ])],
+        extra_jsonld=[
+            breadcrumb_jsonld([
+                ("PitchKeep", "https://ballkeep.com/pl/"),
+                ("PK News", "https://ballkeep.com/pl/news.html"),
+            ]),
+            faq_jsonld(PL_NEWS_FAQ),
+        ],
     ))
     urls = ["https://ballkeep.com/pl/news.html"]
     for s in stories:
@@ -1142,6 +1186,7 @@ def render_pl_news_pages(stories: list[dict]) -> list[str]:
                         image="img/pl-logo.jpg",
                         brand="PitchKeep",
                         brand_url="https://ballkeep.com/pl/",
+                        section=CATEGORY_LABEL.get(s.get("category") or "wire", "Wire"),
                     ),
                 ],
                 og_type="article",
@@ -1181,11 +1226,9 @@ def write_pitch_site():
         )
     home = f"""
     {masthead("Premier League rankings", wordmark(), "The Premier · The Pitch")}
-    {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: 25 published 2026/27 lists. Pitch: Sleeper points. Trade and files here too.", [
+    {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: 25 published 2026/27 lists. Pitch: Sleeper points.", [
         ("the-premier.html", "The Premier", "Hybrid 400."),
         ("the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
-        ("trade.html", "Trade Calculators", "Premier, Pitch, the lists."),
-        ("players/index.html", "Player Files", "Headshot, line, boards, tape."),
     ])}
     {desk_block("lists", "Lists", "The position boards.", "Forwards, mids, defenders, keepers. Sleeper-ranked.", [
         ("attack.html", "Attack", "Forwards."),
@@ -1193,12 +1236,20 @@ def write_pitch_site():
         ("defence.html", "Defence", "Defenders."),
         ("keepers.html", "Keepers", "Keepers."),
     ])}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
+        ("trade.html", "Trade Calculators", "Premier, Pitch, the lists."),
+        ("players/index.html", "Player Files", "Headshot, line, boards, tape."),
+    ])}
     {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "PL memes. Pictures on the card."),
         ("news.html", "PK News", "Injuries, transfers, managers."),
     ], extra_news)}
+    {faq_html(PL_HOME_FAQ, heading="How PitchKeep works.")}
     """
-    write("pl/index.html", pl_page("Home", "index.html", home))
+    write("pl/index.html", pl_page(
+        "Home", "index.html", home,
+        extra_jsonld=[website_jsonld("PitchKeep", "https://ballkeep.com/pl/"), faq_jsonld(PL_HOME_FAQ)],
+    ))
 
     flt, js = filter_js(["FWD", "MID", "DEF", "GKP"])
     premier_body = f"""
@@ -1209,8 +1260,21 @@ def write_pitch_site():
     <div class="panel">{rank_table(premier, ["Hybrid", "Sleeper rk", "Cons.", "Sleeper", "FPL", "G", "A", "Boards", "£", "BK Value"], premier_cell, media=media, faces=True, full_names=True, show_age=True)}</div>
     {value_bars(premier, 12, "#e8c547", "Premier value graph")}
     {sources_panel()}
+    {faq_html(PL_PREMIER_FAQ, heading="How The Premier is built.")}
     """
-    write("pl/the-premier.html", pl_board_page("The Premier", "the-premier.html", premier_body, js))
+    write("pl/the-premier.html", pl_board_page(
+        "The Premier", "the-premier.html", premier_body, js,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "The Premier 2026/27 Rankings",
+                "https://ballkeep.com/pl/the-premier.html",
+                premier,
+                lambda r: f"https://ballkeep.com/pl/players/{slugify(r['name'])}.html",
+                description="Premier League hybrid 400 from 25 published lists.",
+            ),
+            faq_jsonld(PL_PREMIER_FAQ),
+        ],
+    ))
 
     pitch_body = f"""
     <p class="kicker">Sleeper BPL 2025</p>
@@ -1257,8 +1321,12 @@ def write_pitch_site():
     <h1>Six calculators</h1>
     <p class="note">Premier uses the 2026/27 pro-list 400. Pitch uses Sleeper. Rank 1 is 12,000. Fair is within 8%.</p>
     <div class="grid">{''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in hub_tiles)}</div>
+    {faq_html(PL_TRADE_FAQ, heading="How BK Value prices a Premier League trade.")}
     """
-    write("pl/trade.html", pl_board_page("Trade Calculators", "trade.html", trade_hub))
+    write("pl/trade.html", pl_board_page(
+        "Trade Calculators", "trade.html", trade_hub,
+        extra_jsonld=[faq_jsonld(PL_TRADE_FAQ)],
+    ))
 
     player_urls, player_files = write_player_pages(pitch, premier, fwd, mid, defence, gkp, news_by_player)
     news_urls = render_pl_news_pages(stories)

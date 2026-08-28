@@ -11,7 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 27, 2026"
+UPDATED = "August 28, 2026"
+LASTMOD = "2026-08-28"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -31,6 +32,7 @@ from aggregate_protocol import (  # noqa: E402
     rank_rows,
 )
 from seo import (  # noqa: E402
+    abs_img,
     also_on_desk,
     article_jsonld,
     breadcrumb_jsonld,
@@ -39,17 +41,25 @@ from seo import (  # noqa: E402
     card_alt,
     clip,
     face_alt,
+    faq_html,
+    faq_jsonld,
     footer_nav,
     head_tags,
     legal_links,
+    news_sitemap_xml,
     person_jsonld,
+    rank_list_jsonld,
     rank_spread_graph,
     related_players_html,
     related_stories_html,
+    robots_txt,
+    rss_xml,
     sitemap_xml,
     sports_footer,
     sports_top,
     value_bars,
+    video_jsonld,
+    website_jsonld,
 )
 from news_algo import CATEGORY_LABEL, load_news_stories, news_when  # noqa: E402
 from x_tape import cards_html as x_cards  # noqa: E402
@@ -344,28 +354,28 @@ ROOKIES = [
 ]
 
 HOT = [
-    {"name": "Kyler Murray", "pos": "QB", "team": "MIN", "why": "DLF (Aug 16): healthy years were locked top-10 SF QBs; currently priced like a mid-1st rookie pick.", "src": "Dynasty League Football"},
-    {"name": "Christian Watson", "pos": "WR", "team": "GB", "why": "Sports Arena + Draft Sharks: WR21 in FPPG Weeks 8–18 last year on a 68% route share; Doubs/Wicks gone.", "src": "Sports Arena, Draft Sharks"},
-    {"name": "A.J. Brown", "pos": "WR", "team": "NE", "why": "Sports Arena: PFM WR14 vs FantasyPros ECR WR20. Buy for Luther Burden straight up.", "src": "Sports Arena / PFM"},
-    {"name": "Trevor Lawrence", "pos": "QB", "team": "JAX", "why": "FantasyPros TVC + YouTube: closed the gap on Mahomes in the QB8-9 band after a 26 FPPG second half.", "src": "FantasyPros, Fantasy Footballers"},
-    {"name": "Jordan Mason", "pos": "RB", "team": "MIN", "why": "Draft Sharks: cheap potential starter in a new Minnesota scheme; buy before a spike week.", "src": "Draft Sharks"},
-    {"name": "Tucker Kraft", "pos": "TE", "team": "GB", "why": "FantasyPros: positive ACL reports; 25-year-old TE who looked top-4 before the injury.", "src": "FantasyPros"},
-    {"name": "Zay Flowers", "pos": "WR", "team": "BAL", "why": "FantasyPros: new contract + 1,200 yards on a historically run-heavy Ravens offense; new OC hope.", "src": "FantasyPros"},
-    {"name": "Harold Fannin Jr.", "pos": "TE", "team": "CLE", "why": "FantasyPros: FBS-leading receiving TE who popped as a rookie; new HC is a TE maven.", "src": "FantasyPros"},
-    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "Sports Arena: buy for a projected late 2027 1st. Youth + Patriots backfield.", "src": "Sports Arena"},
-    {"name": "Christian McCaffrey", "pos": "RB", "team": "SF", "why": "Sports Arena for contenders only: PFM RB9 vs ECR RB15. Win-now buy, not a rebuild hold.", "src": "Sports Arena"},
+    {"name": "De'Zhaun Stribling", "pos": "WR", "team": "SF", "why": "SI (Aug 25) + FantasyPros (Aug 26): 13 targets, 11-109 in his first two preseason games. Pearsall is out on a PCL; Shanahan is moving him all over the formation.", "src": "Sports Illustrated, FantasyPros"},
+    {"name": "Jonah Coleman", "pos": "RB", "team": "DEN", "why": "SI (Aug 25) + FantasyPros: Payton pulled him after one preseason series because he'd already seen enough. Pass-pro trust is the three-down unlock in Denver.", "src": "Sports Illustrated, FantasyPros"},
+    {"name": "Parker Washington", "pos": "WR", "team": "JAX", "why": "SI (Aug 25): WR8 over the last five weeks of 2025. Jacksonville is manufacturing touches in space; he is no longer a depth piece.", "src": "Sports Illustrated"},
+    {"name": "Rome Odunze", "pos": "WR", "team": "CHI", "why": "PlayerProfiler (Aug 7): cheapest Chicago WR after the Burden/Loveland run-up. WR11 Weeks 1–8 last year before the foot; PP WR19 vs KTC WR20.", "src": "PlayerProfiler"},
+    {"name": "Kyle Pitts", "pos": "TE", "team": "ATL", "why": "PlayerProfiler: TE2 finish last year, Stefanski TE volume, still 25. KTC TE8 is a discount on a name who just got paid through 2028.", "src": "PlayerProfiler"},
+    {"name": "Zay Flowers", "pos": "WR", "team": "BAL", "why": "PlayerProfiler would take him straight up over KTC WR14 Ladd McConkey. New contract, 1,200 yards on a run-leaning Ravens offense.", "src": "PlayerProfiler"},
+    {"name": "Bryce Lance", "pos": "WR", "team": "NO", "why": "SI (Aug 25): Tyson is expected to miss time; Lance went 5-5-2 in joint practice with Shough. Deep-bench buy before the Saints room fills back in.", "src": "Sports Illustrated"},
+    {"name": "Jelani Woods", "pos": "TE", "team": "NYJ", "why": "SI (Aug 25): healthier camp, elevated preseason reps, empty middle of the Jets offense. Reclamation TE with size/speed and a clean runway.", "src": "Sports Illustrated"},
+    {"name": "Christian Watson", "pos": "WR", "team": "GB", "why": "Sports Arena + Draft Sharks: WR21 in FPPG Weeks 8–18 last year on a 68% route share with Doubs/Wicks gone. Still the buy vs. packed rookie rooms.", "src": "Sports Arena, Draft Sharks"},
+    {"name": "Kyler Murray", "pos": "QB", "team": "MIN", "why": "DLF: healthy years were locked top-10 SF QBs; still priced like a mid-1st rookie pick heading into Week 1 in Minnesota.", "src": "Dynasty League Football"},
 ]
 COLD = [
-    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "DLF + Sports Arena: Jakobi Meyers + Parker Washington crowding targets. ADP still treats him like a high WR2.", "src": "DLF, Sports Arena"},
-    {"name": "Breece Hall", "pos": "RB", "team": "NYJ", "why": "Sports Arena: sell if you can still get true top-10 RB value; efficiency/target share have slipped.", "src": "Sports Arena"},
-    {"name": "Makai Lemon", "pos": "WR", "team": "PHI", "why": "Sports Arena: sell the rookie premium for Christian Watson. Philly room is packed.", "src": "Sports Arena"},
-    {"name": "Luther Burden III", "pos": "WR", "team": "CHI", "why": "Sports Arena: ECR has him WR19; if that's the ask, move him for A.J. Brown.", "src": "Sports Arena"},
-    {"name": "Davante Adams", "pos": "WR", "team": "LAR", "why": "Fantasy Footballers (YouTube): 33-year-old coming off a 14-TD outlier. Cash to a contender.", "src": "Fantasy Footballers"},
-    {"name": "DJ Moore", "pos": "WR", "team": "BUF", "why": "Fantasy Footballers: 29, new team, 60-790 line last year. Sell the name.", "src": "Fantasy Footballers"},
-    {"name": "Ricky Pearsall", "pos": "WR", "team": "SF", "why": "FantasyPros live update: out until ~next September, age 27 on return. Clear sell for win-now clubs.", "src": "FantasyPros"},
-    {"name": "RJ Harvey", "pos": "RB", "team": "DEN", "why": "Draft Sharks: Broncos brought J.K. Dobbins back; not a locked lead back.", "src": "Draft Sharks"},
-    {"name": "Rashee Rice", "pos": "WR", "team": "KC", "why": "Draft Sharks: Chiefs look run-leaning; sell while redraft boards still pay WR10-ish.", "src": "Draft Sharks"},
-    {"name": "Jonathon Brooks", "pos": "RB", "team": "CAR", "why": "FantasyPros: two ACLs in 13 months, still unproven, market near RB26.", "src": "FantasyPros"},
+    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "The Athletic (Aug 26): ADP RB12, ranked RB16. Stevenson still has the job; sell the camp premium before a quiet September.", "src": "The Athletic"},
+    {"name": "Ladd McConkey", "pos": "WR", "team": "LAC", "why": "PlayerProfiler (Aug 7): KTC WR14 is a ceiling smash. Year-2 dip, McDaniel 12-personnel, Njoku in the building. Flowers/Olave/Smith are the ask.", "src": "PlayerProfiler"},
+    {"name": "Jonathan Taylor", "pos": "RB", "team": "IND", "why": "PlayerProfiler: 27, last look at peak. Age-28 lead backs lose ~41% of peak PPR. Contenders hold; everyone else moves him a year early.", "src": "PlayerProfiler"},
+    {"name": "Kyren Williams", "pos": "RB", "team": "LAR", "why": "FantasyPros (August): Corum's role keeps growing, Williams turns 26, 2027 cap-cut candidate. Sell the name equity to a contender.", "src": "FantasyPros"},
+    {"name": "Kenneth Walker", "pos": "RB", "team": "KC", "why": "FantasyPros (August): Super Bowl MVP + Chiefs lead-back hype is peak value. Durability and a receiving back in the room say timeshare.", "src": "FantasyPros"},
+    {"name": "Carnell Tate", "pos": "WR", "team": "TEN", "why": "FantasyPros (Aug 9): dynasty ECR WR14. Titans OL ranked 31st and he was never a 900-yard college WR. Sell the rookie-class premium.", "src": "FantasyPros"},
+    {"name": "Ricky Pearsall", "pos": "WR", "team": "SF", "why": "FantasyPros: season-ending PCL, age 27 on return. Clear sell for win-now clubs; the 49ers room already moved on to Stribling.", "src": "FantasyPros"},
+    {"name": "RJ Harvey", "pos": "RB", "team": "DEN", "why": "Draft Sharks + SI: Dobbins is back and Coleman just won Payton's trust. Not a locked lead back.", "src": "Draft Sharks, Sports Illustrated"},
+    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "DLF + SI: Parker Washington is now a foundational piece. ADP still treats BTJ like a locked high WR2.", "src": "DLF, Sports Illustrated"},
+    {"name": "Davante Adams", "pos": "WR", "team": "LAR", "why": "The Athletic: 33-year-old coming off a 14-TD outlier. If you roster him, cash to a contender before Week 1.", "src": "The Athletic"},
 ]
 
 
@@ -767,12 +777,12 @@ def sources_panel(items, heading="Desks in This Super Aggregate"):
 
 PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
-    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 27."),
+    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 28."),
     ("ESPN — Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
 ]
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
-    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 26."),
+    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 27."),
     ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1–2–3."),
 ]
 
@@ -786,7 +796,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 27, 2026. 50% the four long boards, 50% every other desk that ranked the player. Rank 1 is 12,000 BK Value.",
+        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 28, 2026. 50% the four long boards, 50% every other desk that ranked the player. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -821,7 +831,7 @@ FB_SEO = {
     ),
     "hot-n-cold.html": (
         "Dynasty Hot and Cold Board — Buys and Sells | Ball Keep",
-        "Ball Keep Hot 'n' Cold: dynasty buys and sells scraped from desks and film shows, tied to The Keep ranks.",
+        "Ball Keep Hot 'n' Cold: late-August dynasty buys and sells from PlayerProfiler, FantasyPros, SI, and The Athletic, tied to The Keep ranks.",
         "img/logo.jpg",
     ),
     "trade.html": (
@@ -890,6 +900,33 @@ FB_SEO = {
         "img/logo.jpg",
     ),
 }
+
+HOME_FAQ = [
+    ("What is Ball Keep?", "The Keep is Superflex Dynasty — 32 desks, top 400. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
+    ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other desk that ranked the player. Unranked names are skipped, never treated as 999."),
+    ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
+    ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
+]
+KEEP_FAQ = [
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public desks, rebuilt August 28, 2026."),
+    ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR — one QB, a point per catch."),
+    ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40–80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
+]
+BOARD_FAQ = [
+    ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex. Kickers and DST omitted."),
+    ("How is this different from The Keep?", "The Keep is Superflex Dynasty. The Board is this year only, one quarterback, a point per catch."),
+    ("Does BK Value use this rank?", "Yes. The PPR calculator prices The Board rank on the same 12,000 curve."),
+]
+TRADE_FAQ = [
+    ("How does the trade calculator work?", "Every name on a Ball Keep list has a rank. That rank becomes BK Value on a decaying curve. Add the numbers on two sides."),
+    ("What does fair mean?", "Fair is within 8%. Superflex keeps quarterback price. 1QB taxes passers to 38% of that number."),
+    ("Which calculator should I use?", "Superflex Dynasty for two-QB startups. 1QB when a passer is just another starter. Redraft PPR or Standard when the deal is for this season only."),
+]
+NEWS_FAQ = [
+    ("Where does BK News come from?", "Hourly clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with links back to the original desks and to Keep player files."),
+    ("How often does the wire refresh?", "The scrape runs every hour. New URLs merge into the cluster; the static pages rebuild when the tape moved."),
+    ("Why do stories link to player pages?", "Named Keep, Board, and rookie files sit on the cluster so you can jump from the injury to the rank."),
+]
 
 FB_ALSO = {
     "the-keep.html": [
@@ -970,7 +1007,8 @@ FB_ALSO = {
 
 
 def page(title, path, body, extra_js="", depth=0, description=None, image=None, doc_title=None,
-         crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None):
+         crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
+         robots=None):
     links = []
     news_here = path == "news.html" or path.startswith("news/")
     for href, label in NAV:
@@ -990,15 +1028,15 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-{head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=35" />
+{head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=37" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{nav_href("index.html", depth)}">
-        <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" />
+        <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" width="56" height="56" />
         <div>
           <p class="brand-title">{wordmark()}</p>
           <p>Dynasty · Redraft</p>
@@ -1022,18 +1060,22 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
 """
 
 
-def board_page(title, path, body, extra_js=""):
+def board_page(title, path, body, extra_js="", extra_jsonld=None):
     extra = also_on_desk(FB_ALSO.get(path) or [])
+    ld = [breadcrumb_jsonld([
+        ("Ball Keep", "https://ballkeep.com/"),
+        (title, canon(path)),
+    ])]
+    for blob in extra_jsonld or []:
+        if blob:
+            ld.append(blob)
     return page(
         title,
         path,
         body + extra,
         extra_js,
         crumbs=breadcrumbs([("Ball Keep", "index.html"), (title, None)]),
-        extra_jsonld=[breadcrumb_jsonld([
-            ("Ball Keep", "https://ballkeep.com/"),
-            (title, canon(path)),
-        ])],
+        extra_jsonld=ld,
     )
 
 
@@ -1191,15 +1233,19 @@ def render_news_pages():
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{filters}</div>
     <div class="news-list" id="news-list">{cards}</div>
+    {faq_html(NEWS_FAQ, heading="How the football wire works.")}
     {also_on_desk(FB_ALSO["news.html"])}
     """
     write("news.html", page(
         "BK News", "news.html", body, extra,
         crumbs=breadcrumbs([("Ball Keep", "index.html"), ("BK News", None)]),
-        extra_jsonld=[breadcrumb_jsonld([
-            ("Ball Keep", "https://ballkeep.com/"),
-            ("BK News", "https://ballkeep.com/news.html"),
-        ])],
+        extra_jsonld=[
+            breadcrumb_jsonld([
+                ("Ball Keep", "https://ballkeep.com/"),
+                ("BK News", "https://ballkeep.com/news.html"),
+            ]),
+            faq_jsonld(NEWS_FAQ),
+        ],
     ))
 
     urls = ["https://ballkeep.com/news.html"]
@@ -1290,6 +1336,7 @@ def render_news_pages():
                         modified=s.get("updated") or "",
                         image="img/logo.jpg",
                         brand="Ball Keep",
+                        section=label,
                     ),
                 ],
                 og_type="article",
@@ -1648,6 +1695,26 @@ def render_player_pages(profiles):
     """
         seo_title, seo_desc = ff_player_seo(p)
         player_url_abs = f"https://ballkeep.com/players/{p['slug']}.html"
+        extra_ld = [
+                    breadcrumb_jsonld([
+                        ("Ball Keep", "https://ballkeep.com/"),
+                        ("Players", "https://ballkeep.com/players/"),
+                        (p["name"], player_url_abs),
+                    ]),
+                    person_jsonld(
+                        p["name"],
+                        player_url_abs,
+                        pos=p.get("pos") or "",
+                        team=p.get("team") or "",
+                        image=img or "img/logo.jpg",
+                        description=seo_desc,
+                        sport="American Football",
+                    ),
+                ]
+        if yt:
+            extra_ld.append(video_jsonld(
+                yt_title, yt, description=seo_desc, brand="Ball Keep",
+            ))
         write(
             f"players/{p['slug']}.html",
             page(
@@ -1663,21 +1730,7 @@ def render_player_pages(profiles):
                     ("Players", "index.html"),
                     (p["name"], None),
                 ]),
-                extra_jsonld=[
-                    breadcrumb_jsonld([
-                        ("Ball Keep", "https://ballkeep.com/"),
-                        ("Players", "https://ballkeep.com/players/"),
-                        (p["name"], player_url_abs),
-                    ]),
-                    person_jsonld(
-                        p["name"],
-                        player_url_abs,
-                        pos=p.get("pos") or "",
-                        team=p.get("team") or "",
-                        image=img or "img/logo.jpg",
-                        description=seo_desc,
-                    ),
-                ],
+                extra_jsonld=extra_ld,
             ),
         )
         keep_html.add(f"{p['slug']}.html")
@@ -1851,8 +1904,12 @@ def write_trade_pages(keep, board, ppr, std):
     <div class="grid" style="margin-top:16px">
       {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
     </div>
+    {faq_html(TRADE_FAQ, heading="How BK Value prices a trade.")}
     """
-    write("trade.html", board_page("Trade Calculators", "trade.html", hub))
+    write("trade.html", board_page(
+        "Trade Calculators", "trade.html", hub,
+        extra_jsonld=[faq_jsonld(TRADE_FAQ)],
+    ))
 
 
 def write_recent_trades_page(deals):
@@ -1996,6 +2053,132 @@ def write_recent_trades_page(deals):
     write("recent-trades.html", page("Recent Deals", "recent-trades.html", body, extra))
 
 
+def _story_when(story: dict) -> str:
+    return (story.get("updated") or story.get("published") or "").strip()
+
+
+def player_image_entries() -> dict:
+    specs = [
+        (ROOT / "data/player_media.json", "https://ballkeep.com/players/{slug}.html"),
+        (ROOT / "data/bb-media.json", "https://ballkeep.com/bb/players/{slug}.html"),
+        (ROOT / "data/pl-media.json", "https://ballkeep.com/pl/players/{slug}.html"),
+    ]
+    out = {}
+    for path, tmpl in specs:
+        if not path.exists():
+            continue
+        try:
+            doc = json.loads(path.read_text())
+        except json.JSONDecodeError:
+            continue
+        recs = doc.values() if isinstance(doc, dict) else doc
+        for rec in recs:
+            if not isinstance(rec, dict):
+                continue
+            slug = rec.get("slug")
+            img = rec.get("image") or ""
+            name = rec.get("name") or ""
+            if not slug or not img or "logo" in img:
+                continue
+            loc = tmpl.format(slug=slug)
+            out[loc] = {"loc": loc, "image": abs_img(img, img), "image_title": name}
+    return out
+
+
+def merge_sitemap_images(urls: list) -> list:
+    images = player_image_entries()
+    merged = []
+    seen = set()
+    for u in urls:
+        loc = u.get("loc") if isinstance(u, dict) else u
+        if not loc or loc in seen:
+            continue
+        seen.add(loc)
+        if loc in images:
+            merged.append(images[loc])
+        else:
+            merged.append(loc)
+    return merged
+
+
+NEWS_FEEDS = [
+    ("football", "Ball Keep", "BK News", "https://ballkeep.com/news.html", "https://ballkeep.com/news/{slug}.html", "feed.xml"),
+    ("baseball", "BaseKeep", "BaseKeep News", "https://ballkeep.com/bb/news.html", "https://ballkeep.com/bb/news/{slug}.html", "bb/feed.xml"),
+    ("basketball", "BasketKeep", "BasketKeep News", "https://ballkeep.com/bk/news.html", "https://ballkeep.com/bk/news/{slug}.html", "bk/feed.xml"),
+    ("soccer", "PitchKeep", "PitchKeep News", "https://ballkeep.com/pl/news.html", "https://ballkeep.com/pl/news/{slug}.html", "pl/feed.xml"),
+]
+
+
+def write_discovery_feeds():
+    from datetime import datetime, timedelta, timezone
+
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=72)
+    news_entries = []
+    for sport, brand, feed_title, hub, tmpl, dest in NEWS_FEEDS:
+        stories = load_news_stories(sport)
+        items = []
+        for s in stories[:40]:
+            slug = s.get("slug")
+            if not slug:
+                continue
+            loc = tmpl.format(slug=slug)
+            when = _story_when(s)
+            items.append({
+                "title": s.get("headline") or "Update",
+                "link": loc,
+                "description": s.get("blurb") or s.get("summary") or "",
+                "date": when,
+                "guid": loc,
+            })
+        write(dest, rss_xml(
+            title=f"{feed_title} — {brand}",
+            link=hub,
+            description=f"Hourly {sport} injury, roster, and coach tape from {brand}.",
+            items=items,
+            self_url=f"https://ballkeep.com/{dest}" if dest != "feed.xml" else "https://ballkeep.com/feed.xml",
+        ))
+        for s in stories:
+            slug = s.get("slug")
+            when = _story_when(s)
+            if not slug or not when:
+                continue
+            try:
+                dt = datetime.fromisoformat(when.replace("Z", "+00:00"))
+            except ValueError:
+                continue
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            if dt < cutoff:
+                continue
+            news_entries.append({
+                "loc": tmpl.format(slug=slug),
+                "title": s.get("headline") or "Update",
+                "date": when,
+                "publication": brand,
+            })
+    (ROOT / "sitemap-news.xml").write_text(news_sitemap_xml(news_entries))
+    return len(news_entries)
+
+
+def write_not_found_page():
+    body = """
+    <section class="panel">
+      <p class="kicker">404</p>
+      <h1>That page is not on this desk.</h1>
+      <p class="note">The Keep, The Board, BK News, and the other three sports are still here.</p>
+      <div class="grid-3">
+        <a class="tile" href="index.html"><h3>Ball Keep</h3><p>Superflex dynasty and redraft PPR.</p></a>
+        <a class="tile" href="the-keep.html"><h3>The Keep</h3><p>Football top 400.</p></a>
+        <a class="tile" href="news.html"><h3>BK News</h3><p>Hourly football wire.</p></a>
+        <a class="tile" href="bb/index.html"><h3>BaseKeep</h3><p>Dynasty baseball.</p></a>
+        <a class="tile" href="bk/index.html"><h3>BasketKeep</h3><p>Dynasty basketball.</p></a>
+        <a class="tile" href="pl/index.html"><h3>PitchKeep</h3><p>Premier League ranks.</p></a>
+      </div>
+    </section>
+    """
+    write("404.html", page("Page not found", "404.html", body, robots="noindex, follow"))
+
+
 def main():
     pfn = parse_pfn(ROOT / "data/pfn-dynasty.txt")
     nfl = parse_nfl_schedule(ROOT / "data/nfl-schedule.txt")
@@ -2060,10 +2243,6 @@ def main():
           <p>Full-PPR, this year. Yates, FantasyPros, Karabell.</p>
         </a>
       </div>
-      <div class="grid">
-        <a class="tile" href="trade.html"><h3>Trade Calculators</h3><p>Keep, Board, 1QB, PPR, Standard.</p></a>
-        <a class="tile" href="players/index.html"><h3>Player Pages</h3><p>Keep top 400. Tape, plus/minus.</p></a>
-      </div>
     </section>
     {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, the market tape, and the slates.", [
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
@@ -2074,12 +2253,21 @@ def main():
         ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
         ("mlb-schedule.html", "MLB Schedule", "September slate."),
     ])}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
+        ("trade.html", "Trade Calculators", "Keep, Board, 1QB, PPR, Standard."),
+        ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
+    ])}
     {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "Memes. Pictures on the card."),
         ("news.html", "BK News", "Injuries, roster, coaches."),
     ], extra_news)}
+    {faq_html(HOME_FAQ, heading="How Ball Keep works.")}
     """
-    write("index.html", page("Home", "index.html", home_body))
+    write("index.html", page(
+        "Home", "index.html", home_body,
+        extra_jsonld=[website_jsonld("Ball Keep"), faq_jsonld(HOME_FAQ)],
+        modified=LASTMOD,
+    ))
 
     # THE KEEP
     def src_td(r, name):
@@ -2108,6 +2296,7 @@ def main():
     <div class="panel">{rank_table(keep, ["Super", "Desks", "PFN", "KTC", "BK Value"], keep_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#c8102e", "Keep value graph")}
     {sources_panel(KEEP_SOURCES)}
+    {faq_html(KEEP_FAQ, heading="How The Keep is built.")}
     """
     keep_js = """<script>
     const box = document.getElementById('keep-pos');
@@ -2121,7 +2310,19 @@ def main():
       });
     });
     </script>"""
-    write("the-keep.html", board_page("The Keep", "the-keep.html", keep_body, keep_js))
+    write("the-keep.html", board_page(
+        "The Keep", "the-keep.html", keep_body, keep_js,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "The Keep 2026 Superflex Dynasty Rankings",
+                "https://ballkeep.com/the-keep.html",
+                keep,
+                lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
+                description="Superflex dynasty top 400 from 32 desks.",
+            ),
+            faq_jsonld(KEEP_FAQ),
+        ],
+    ))
 
     # REDRAFT
     def ppr_extra(r):
@@ -2134,12 +2335,25 @@ def main():
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 27), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 28), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
     <div class="panel">{rank_table(ppr, ["Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
+    {faq_html(BOARD_FAQ, heading="How The Board is built.")}
     """
-    write("board.html", board_page("The Board", "board.html", ppr_body))
+    write("board.html", board_page(
+        "The Board", "board.html", ppr_body,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "The Board 2026 Redraft PPR Rankings",
+                "https://ballkeep.com/board.html",
+                ppr,
+                lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
+                description="Redraft PPR skill-player board.",
+            ),
+            faq_jsonld(BOARD_FAQ),
+        ],
+    ))
     write("redraft-ppr.html", page(
         "The Board",
         "redraft-ppr.html",
@@ -2193,7 +2407,7 @@ def main():
     hc_body = f"""
     <p class="kicker">Market Tape · {UPDATED}</p>
     <h1>BK Hot 'n' Cold</h1>
-    <p class="note">Rising names to Buy and aging / overpriced names to Sell, pulled from DLF trending notes (Aug 16), Sports Arena trade targets (Aug 11), Draft Sharks (Aug 14), FantasyPros Trade Value Chart show (August), and the Fantasy Footballers dynasty trade episode on YouTube.</p>
+    <p class="note">Rising names to Buy and aging / overpriced names to Sell, pulled from PlayerProfiler (Aug 7), FantasyPros dynasty trade columns (Aug 9 and August sell list), Sports Illustrated preseason risers (Aug 25), The Athletic dynasty sells (Aug 26), plus DLF, Sports Arena, and Draft Sharks camp notes.</p>
     <div class="grid">
       <div>
         <h3 style="color:var(--red)">Hot — Buy</h3>
@@ -2205,11 +2419,11 @@ def main():
       </div>
     </div>
     {sources_panel([
-        ("Dynasty League Football", "", "Trending notes, Aug 16."),
-        ("Sports Arena", "", "Trade targets, Aug 11."),
-        ("Draft Sharks", "https://www.draftsharks.com/dynasty-rankings/superflex", "Aug 14 market notes."),
-        ("FantasyPros Trade Value Chart", "https://www.fantasypros.com/", "August show."),
-        ("Fantasy Footballers", "", "Dynasty trade episode on YouTube."),
+        ("PlayerProfiler", "https://www.playerprofiler.com/article/dynasty-trade-targets-2026-buy-low-sell-high-before-kickoff/", "Buy low / sell high, Aug 7."),
+        ("FantasyPros", "https://www.fantasypros.com/2026/08/14-players-to-sell-in-dynasty-leagues-2026-fantasy-football/", "Dynasty sells and trade-now notes, August."),
+        ("Sports Illustrated", "https://www.si.com/onsi/fantasy/rankings/parker-washington-headlines-dynasty-fantasy-football-risers-making-the-biggest-leap-in-2026", "Preseason risers, Aug 25."),
+        ("The Athletic", "https://www.nytimes.com/athletic/7538068/2026/08/26/fantasy-football-top-5-dynasty-sells-treveyon-henderson/", "Top dynasty sells, Aug 26."),
+        ("Draft Sharks", "https://www.draftsharks.com/dynasty-rankings/superflex", "Camp market notes."),
     ], heading="Boards in This Aggregate")}
     """
     write("hot-n-cold.html", board_page("Hot 'n' Cold", "hot-n-cold.html", hc_body))
@@ -2454,6 +2668,7 @@ def main():
         "https://ballkeep.com/board.html",
         "https://ballkeep.com/nfl-schedule.html",
         "https://ballkeep.com/mlb-schedule.html",
+        "https://ballkeep.com/discord.html",
     ] + news_urls[1:] + player_urls
     bb = write_baseball_site()
     sitemap.extend(bb.get("urls") or [])
@@ -2461,14 +2676,20 @@ def main():
     sitemap.extend(bk.get("urls") or [])
     pl = write_pitch_site()
     sitemap.extend(pl.get("urls") or [])
-    (ROOT / "sitemap.xml").write_text(sitemap_xml(sitemap, "2026-08-27"))
+    (ROOT / "sitemap.xml").write_text(sitemap_xml(merge_sitemap_images(sitemap), LASTMOD))
+    n_news = write_discovery_feeds()
+    write_not_found_page()
+    (ROOT / "robots.txt").write_text(robots_txt([
+        "https://ballkeep.com/sitemap.xml",
+        "https://ballkeep.com/sitemap-news.xml",
+    ]))
 
     cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk, sf_redraft)
     print(
         f"Keep {len(keep)} Board {len(board)} (redraft PPR) Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} "
         f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
         f"BB News {bb.get('n_news', 0)} BK Keep {bk['n_keep']} Pitch {pl['n_pitch']} "
-        f"Premier {pl.get('n_premier', 0)} Catalog {cat.name}"
+        f"Premier {pl.get('n_premier', 0)} Catalog {cat.name} NewsSitemap {n_news}"
     )
 
 

@@ -14,10 +14,19 @@ from seo import (  # noqa: E402
     branded,
     clip,
     face_alt,
+    faq_html,
+    faq_jsonld,
     footer_nav,
+    head_tags,
+    item_list_jsonld,
+    news_sitemap_xml,
     related_players_html,
     related_stories_html,
+    robots_txt,
+    rss_xml,
     sitemap_xml,
+    video_jsonld,
+    website_jsonld,
 )
 
 
@@ -86,9 +95,82 @@ def test_also_on_desk_and_sitemap():
 
 
 def test_article_schema():
-    obj = article_jsonld("Chase injured", "https://ballkeep.com/news/x.html", "Summary here", published="2026-08-26")
+    obj = article_jsonld("Chase injured", "https://ballkeep.com/news/x.html", "Summary here", published="2026-08-26", section="Injury")
     assert obj["@type"] == "NewsArticle"
     assert obj["datePublished"] == "2026-08-26"
+    assert obj["inLanguage"] == "en-US"
+    assert obj["isAccessibleForFree"] is True
+    assert obj["articleSection"] == "Injury"
+    assert obj["publisher"]["logo"]["url"] == "https://ballkeep.com/img/logo.jpg"
+
+
+def test_google_head_tags():
+    html = head_tags(
+        title="The Keep",
+        description="Superflex dynasty top 400.",
+        canonical="https://ballkeep.com/the-keep.html",
+        image="img/logo.jpg",
+        brand="Ball Keep",
+    )
+    assert "max-image-preview:large" in html
+    assert 'name="googlebot"' in html
+    assert 'property="og:locale"' in html
+    assert "fonts.googleapis.com" in html
+    assert "application/rss+xml" in html
+    assert "https://ballkeep.com/feed.xml" in html
+    assert "img/logo.jpg" in html
+
+
+def test_item_list_faq_video():
+    ld = item_list_jsonld("The Keep", "https://ballkeep.com/the-keep.html", [
+        ("Josh Allen", "https://ballkeep.com/players/josh-allen.html"),
+        ("Drake Maye", "https://ballkeep.com/players/drake-maye.html"),
+        ("Bijan Robinson", "https://ballkeep.com/players/bijan-robinson.html"),
+    ])
+    assert ld["@type"] == "ItemList"
+    assert ld["numberOfItems"] == 3
+    faq = faq_jsonld([("What is BK Value?", "Rank 1 is 12,000."), ("What is fair?", "Within 8%.")])
+    assert faq["@type"] == "FAQPage"
+    html = faq_html([("What is BK Value?", "Rank 1 is 12,000.")])
+    assert "<details>" in html
+    vid = video_jsonld("Josh Allen highlights", "2kwY6ve5E88")
+    assert vid["@type"] == "VideoObject"
+    assert "2kwY6ve5E88" in vid["embedUrl"]
+
+
+def test_news_sitemap_rss_robots():
+    xml = news_sitemap_xml([{
+        "loc": "https://ballkeep.com/news/chase.html",
+        "title": "Chase injured",
+        "date": "2026-08-26T13:21:21Z",
+        "publication": "Ball Keep",
+    }])
+    assert "xmlns:news=" in xml
+    assert "Chase injured" in xml
+    rss = rss_xml(
+        title="BK News",
+        link="https://ballkeep.com/news.html",
+        description="Hourly wire",
+        items=[{"title": "Chase", "link": "https://ballkeep.com/news/chase.html", "description": "Knee", "date": "2026-08-26T13:21:21Z"}],
+        self_url="https://ballkeep.com/feed.xml",
+    )
+    assert "<rss version=" in rss
+    assert "Chase" in rss
+    bots = robots_txt(["https://ballkeep.com/sitemap.xml", "https://ballkeep.com/sitemap-news.xml"])
+    assert "Googlebot" in bots
+    assert "sitemap-news.xml" in bots
+
+
+def test_sitemap_images_and_website():
+    xml = sitemap_xml([
+        "https://ballkeep.com/",
+        {"loc": "https://ballkeep.com/players/josh-allen.html", "image": "https://ballkeep.com/img/players/josh-allen.png", "image_title": "Josh Allen"},
+    ], "2026-08-27")
+    assert "xmlns:image=" in xml
+    assert "josh-allen.png" in xml
+    site = website_jsonld("Ball Keep")
+    assert site["@type"] == "WebSite"
+    assert site["url"] == "https://ballkeep.com"
 
 
 def test_clip():

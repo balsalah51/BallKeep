@@ -1,6 +1,4 @@
 /* BasketKeep — hardwood, orange, night. Separate from the football desk. */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap");
-
 :root {
   --navy: #1a1208;
   --navy-2: #2a1c10;
@@ -228,6 +226,15 @@ footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: cen
   color: var(--forest); margin-bottom: 4px;
 }
 .related .grid, .related .grid-3 { margin-top: 12px; }
+.faq {
+  margin-top: 22px; padding: 18px 18px 12px; background: #fff;
+  border: 1px solid var(--line); border-radius: 16px;
+}
+.faq h2 { margin: 0 0 10px; font-size: 20px; }
+.faq details { border-top: 1px solid var(--line); padding: 10px 0; }
+.faq details:first-of-type { border-top: 0; }
+.faq summary { cursor: pointer; font-weight: 800; }
+.faq details p { margin: 8px 0 0; color: var(--muted); line-height: 1.55; }
 a.sport-switch,
 .sport-switch {
   display: inline-block; margin: 18px 6px 0; padding: 12px 22px; border-radius: 999px;
@@ -255,7 +262,7 @@ a.news-item:hover h3 { color: var(--forest); }
 }
 .desk-block { margin-top: 28px; padding: 22px 22px 26px; border-radius: 20px; }
 .desk-block h1, .desk-block h2 { margin: 0 0 8px; }
-.desk-block .grid-3 { margin-top: 14px; }
+.desk-block .grid, .desk-block .grid-3 { margin-top: 14px; }
 .desk-block.main { background: #fff; border: 3px solid var(--navy); }
 .desk-block.lists { background: #e4ecf4; border: 3px solid #3d5a73; }
 .desk-block.lists .kicker { color: #3d5a73; }
@@ -264,6 +271,10 @@ a.news-item:hover h3 { color: var(--forest); }
 .desk-block.extra .tile { background: #fff; }
 .desk-block.extra .tile:hover { border-color: #6b7280; }
 .desk-block.extra .news-list { margin-top: 16px; }
+.desk-block.tools { background: #e6e8ed; border: 3px solid #6b7280; }
+.desk-block.tools .kicker { color: #4b5563; }
+.desk-block.tools .tile { background: #fff; }
+.desk-block.tools .tile:hover { border-color: #6b7280; }
 .sports-top {
   display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
   margin: 14px 0 2px;
