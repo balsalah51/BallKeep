@@ -270,6 +270,10 @@ a.news-item:hover h3 { color: var(--red); }
 .desk-block.extra .tile { background: #fff; }
 .desk-block.extra .tile:hover { border-color: #9aa1ad; }
 .desk-block.extra .news-list { margin-top: 16px; }
+.desk-block.tools { background: #f0f1f4; border: 1px solid #d5d7de; }
+.desk-block.tools .kicker { color: #4b5563; }
+.desk-block.tools .tile { background: #fff; }
+.desk-block.tools .tile:hover { border-color: #9aa1ad; }
 footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
 .legal-links { margin: 10px 0 0; }
 .legal-links a { color: var(--muted); font-weight: 800; text-decoration: none; }

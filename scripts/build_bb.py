@@ -1475,12 +1475,14 @@ def write_baseball_site():
         ("the-diamond.html", "The Diamond", "Redraft ranking. This year only."),
         ("the-lineup.html", "The Lineup", "Hitters only."),
         ("pitchers.html", "BK's Pitchers", "Top 150 arms."),
-        ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, The Diamond."),
-        ("players/index.html", "Player Files", "Keep top 400."),
     ])}
     {desk_block("lists", "Lists", "The other boards.", "Bullpen and the files.", [
         ("bullpen.html", "Bullpen — Saves", "Top 100 relievers."),
         ("bullpen-holds.html", "Bullpen — SV+H", "Holds counted."),
+    ])}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
+        ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, The Diamond."),
+        ("players/index.html", "Player Files", "Keep top 400."),
     ])}
     {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "MLB memes. Pictures on the card."),

@@ -230,6 +230,13 @@ def main():
     assert 'class="mast-mark"' in home
     assert "background-image:url" not in home
     assert "home-leads" in home
+    lists_at = home.find('class="desk-block lists"')
+    tools_at = home.find('class="desk-block tools"')
+    extra_at = home.find('class="desk-block extra"')
+    assert 0 < lists_at < tools_at < extra_at
+    assert 'href="trade.html"' in home[tools_at:extra_at]
+    assert "Player Pages" in home[tools_at:extra_at]
+    assert "Trade Calculators" not in home[home.find("home-intro"):lists_at]
     assert 'href="privacy.html"' in home
     for x_path in ("the-x.html", "bb/the-x.html", "bk/the-x.html", "pl/the-x.html"):
         x_html = html_of(x_path)

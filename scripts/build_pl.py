@@ -1226,17 +1226,19 @@ def write_pitch_site():
         )
     home = f"""
     {masthead("Premier League rankings", wordmark(), "The Premier · The Pitch")}
-    {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: 25 published 2026/27 lists. Pitch: Sleeper points. Trade and files here too.", [
+    {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: 25 published 2026/27 lists. Pitch: Sleeper points.", [
         ("the-premier.html", "The Premier", "Hybrid 400."),
         ("the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
-        ("trade.html", "Trade Calculators", "Premier, Pitch, the lists."),
-        ("players/index.html", "Player Files", "Headshot, line, boards, tape."),
     ])}
     {desk_block("lists", "Lists", "The position boards.", "Forwards, mids, defenders, keepers. Sleeper-ranked.", [
         ("attack.html", "Attack", "Forwards."),
         ("midfield.html", "Midfield", "Mids."),
         ("defence.html", "Defence", "Defenders."),
         ("keepers.html", "Keepers", "Keepers."),
+    ])}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
+        ("trade.html", "Trade Calculators", "Premier, Pitch, the lists."),
+        ("players/index.html", "Player Files", "Headshot, line, boards, tape."),
     ])}
     {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "PL memes. Pictures on the card."),

@@ -913,10 +913,6 @@ def write_basket_site():
           <p>This season only. The names you start in 2026-27.</p>
         </a>
       </div>
-      <div class="grid">
-        <a class="tile" href="trade.html"><h3>Trade Calculators</h3><p>Keep and Board. Rank becomes BK Value.</p></a>
-        <a class="tile" href="players/index.html"><h3>Player Files</h3><p>Keep top 400.</p></a>
-      </div>
     </section>
     {desk_block("lists", "Lists", "The other boards.", "Positions, rookies, and the wires.", [
         ("guards.html", "Guards", "PG and SG, Keep-ranked."),
@@ -925,6 +921,10 @@ def write_basket_site():
         ("rookies.html", "Rookies", "2026 class plus the kids."),
         ("waivers-dynasty.html", "Dynasty Wire", "Fifteen stashes."),
         ("waivers-redraft.html", "Redraft Wire", "Priority 1–50."),
+    ])}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
+        ("trade.html", "Trade Calculators", "Keep and Board. Rank becomes BK Value."),
+        ("players/index.html", "Player Files", "Keep top 400."),
     ])}
     {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "NBA memes. Pictures on the card."),

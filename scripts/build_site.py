@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 27, 2026"
-LASTMOD = "2026-08-27"
+UPDATED = "August 28, 2026"
+LASTMOD = "2026-08-28"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -354,28 +354,28 @@ ROOKIES = [
 ]
 
 HOT = [
-    {"name": "Kyler Murray", "pos": "QB", "team": "MIN", "why": "DLF (Aug 16): healthy years were locked top-10 SF QBs; currently priced like a mid-1st rookie pick.", "src": "Dynasty League Football"},
-    {"name": "Christian Watson", "pos": "WR", "team": "GB", "why": "Sports Arena + Draft Sharks: WR21 in FPPG Weeks 8–18 last year on a 68% route share; Doubs/Wicks gone.", "src": "Sports Arena, Draft Sharks"},
-    {"name": "A.J. Brown", "pos": "WR", "team": "NE", "why": "Sports Arena: PFM WR14 vs FantasyPros ECR WR20. Buy for Luther Burden straight up.", "src": "Sports Arena / PFM"},
-    {"name": "Trevor Lawrence", "pos": "QB", "team": "JAX", "why": "FantasyPros TVC + YouTube: closed the gap on Mahomes in the QB8-9 band after a 26 FPPG second half.", "src": "FantasyPros, Fantasy Footballers"},
-    {"name": "Jordan Mason", "pos": "RB", "team": "MIN", "why": "Draft Sharks: cheap potential starter in a new Minnesota scheme; buy before a spike week.", "src": "Draft Sharks"},
-    {"name": "Tucker Kraft", "pos": "TE", "team": "GB", "why": "FantasyPros: positive ACL reports; 25-year-old TE who looked top-4 before the injury.", "src": "FantasyPros"},
-    {"name": "Zay Flowers", "pos": "WR", "team": "BAL", "why": "FantasyPros: new contract + 1,200 yards on a historically run-heavy Ravens offense; new OC hope.", "src": "FantasyPros"},
-    {"name": "Harold Fannin Jr.", "pos": "TE", "team": "CLE", "why": "FantasyPros: FBS-leading receiving TE who popped as a rookie; new HC is a TE maven.", "src": "FantasyPros"},
-    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "Sports Arena: buy for a projected late 2027 1st. Youth + Patriots backfield.", "src": "Sports Arena"},
-    {"name": "Christian McCaffrey", "pos": "RB", "team": "SF", "why": "Sports Arena for contenders only: PFM RB9 vs ECR RB15. Win-now buy, not a rebuild hold.", "src": "Sports Arena"},
+    {"name": "De'Zhaun Stribling", "pos": "WR", "team": "SF", "why": "SI (Aug 25) + FantasyPros (Aug 26): 13 targets, 11-109 in his first two preseason games. Pearsall is out on a PCL; Shanahan is moving him all over the formation.", "src": "Sports Illustrated, FantasyPros"},
+    {"name": "Jonah Coleman", "pos": "RB", "team": "DEN", "why": "SI (Aug 25) + FantasyPros: Payton pulled him after one preseason series because he'd already seen enough. Pass-pro trust is the three-down unlock in Denver.", "src": "Sports Illustrated, FantasyPros"},
+    {"name": "Parker Washington", "pos": "WR", "team": "JAX", "why": "SI (Aug 25): WR8 over the last five weeks of 2025. Jacksonville is manufacturing touches in space; he is no longer a depth piece.", "src": "Sports Illustrated"},
+    {"name": "Rome Odunze", "pos": "WR", "team": "CHI", "why": "PlayerProfiler (Aug 7): cheapest Chicago WR after the Burden/Loveland run-up. WR11 Weeks 1–8 last year before the foot; PP WR19 vs KTC WR20.", "src": "PlayerProfiler"},
+    {"name": "Kyle Pitts", "pos": "TE", "team": "ATL", "why": "PlayerProfiler: TE2 finish last year, Stefanski TE volume, still 25. KTC TE8 is a discount on a name who just got paid through 2028.", "src": "PlayerProfiler"},
+    {"name": "Zay Flowers", "pos": "WR", "team": "BAL", "why": "PlayerProfiler would take him straight up over KTC WR14 Ladd McConkey. New contract, 1,200 yards on a run-leaning Ravens offense.", "src": "PlayerProfiler"},
+    {"name": "Bryce Lance", "pos": "WR", "team": "NO", "why": "SI (Aug 25): Tyson is expected to miss time; Lance went 5-5-2 in joint practice with Shough. Deep-bench buy before the Saints room fills back in.", "src": "Sports Illustrated"},
+    {"name": "Jelani Woods", "pos": "TE", "team": "NYJ", "why": "SI (Aug 25): healthier camp, elevated preseason reps, empty middle of the Jets offense. Reclamation TE with size/speed and a clean runway.", "src": "Sports Illustrated"},
+    {"name": "Christian Watson", "pos": "WR", "team": "GB", "why": "Sports Arena + Draft Sharks: WR21 in FPPG Weeks 8–18 last year on a 68% route share with Doubs/Wicks gone. Still the buy vs. packed rookie rooms.", "src": "Sports Arena, Draft Sharks"},
+    {"name": "Kyler Murray", "pos": "QB", "team": "MIN", "why": "DLF: healthy years were locked top-10 SF QBs; still priced like a mid-1st rookie pick heading into Week 1 in Minnesota.", "src": "Dynasty League Football"},
 ]
 COLD = [
-    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "DLF + Sports Arena: Jakobi Meyers + Parker Washington crowding targets. ADP still treats him like a high WR2.", "src": "DLF, Sports Arena"},
-    {"name": "Breece Hall", "pos": "RB", "team": "NYJ", "why": "Sports Arena: sell if you can still get true top-10 RB value; efficiency/target share have slipped.", "src": "Sports Arena"},
-    {"name": "Makai Lemon", "pos": "WR", "team": "PHI", "why": "Sports Arena: sell the rookie premium for Christian Watson. Philly room is packed.", "src": "Sports Arena"},
-    {"name": "Luther Burden III", "pos": "WR", "team": "CHI", "why": "Sports Arena: ECR has him WR19; if that's the ask, move him for A.J. Brown.", "src": "Sports Arena"},
-    {"name": "Davante Adams", "pos": "WR", "team": "LAR", "why": "Fantasy Footballers (YouTube): 33-year-old coming off a 14-TD outlier. Cash to a contender.", "src": "Fantasy Footballers"},
-    {"name": "DJ Moore", "pos": "WR", "team": "BUF", "why": "Fantasy Footballers: 29, new team, 60-790 line last year. Sell the name.", "src": "Fantasy Footballers"},
-    {"name": "Ricky Pearsall", "pos": "WR", "team": "SF", "why": "FantasyPros live update: out until ~next September, age 27 on return. Clear sell for win-now clubs.", "src": "FantasyPros"},
-    {"name": "RJ Harvey", "pos": "RB", "team": "DEN", "why": "Draft Sharks: Broncos brought J.K. Dobbins back; not a locked lead back.", "src": "Draft Sharks"},
-    {"name": "Rashee Rice", "pos": "WR", "team": "KC", "why": "Draft Sharks: Chiefs look run-leaning; sell while redraft boards still pay WR10-ish.", "src": "Draft Sharks"},
-    {"name": "Jonathon Brooks", "pos": "RB", "team": "CAR", "why": "FantasyPros: two ACLs in 13 months, still unproven, market near RB26.", "src": "FantasyPros"},
+    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "The Athletic (Aug 26): ADP RB12, ranked RB16. Stevenson still has the job; sell the camp premium before a quiet September.", "src": "The Athletic"},
+    {"name": "Ladd McConkey", "pos": "WR", "team": "LAC", "why": "PlayerProfiler (Aug 7): KTC WR14 is a ceiling smash. Year-2 dip, McDaniel 12-personnel, Njoku in the building. Flowers/Olave/Smith are the ask.", "src": "PlayerProfiler"},
+    {"name": "Jonathan Taylor", "pos": "RB", "team": "IND", "why": "PlayerProfiler: 27, last look at peak. Age-28 lead backs lose ~41% of peak PPR. Contenders hold; everyone else moves him a year early.", "src": "PlayerProfiler"},
+    {"name": "Kyren Williams", "pos": "RB", "team": "LAR", "why": "FantasyPros (August): Corum's role keeps growing, Williams turns 26, 2027 cap-cut candidate. Sell the name equity to a contender.", "src": "FantasyPros"},
+    {"name": "Kenneth Walker", "pos": "RB", "team": "KC", "why": "FantasyPros (August): Super Bowl MVP + Chiefs lead-back hype is peak value. Durability and a receiving back in the room say timeshare.", "src": "FantasyPros"},
+    {"name": "Carnell Tate", "pos": "WR", "team": "TEN", "why": "FantasyPros (Aug 9): dynasty ECR WR14. Titans OL ranked 31st and he was never a 900-yard college WR. Sell the rookie-class premium.", "src": "FantasyPros"},
+    {"name": "Ricky Pearsall", "pos": "WR", "team": "SF", "why": "FantasyPros: season-ending PCL, age 27 on return. Clear sell for win-now clubs; the 49ers room already moved on to Stribling.", "src": "FantasyPros"},
+    {"name": "RJ Harvey", "pos": "RB", "team": "DEN", "why": "Draft Sharks + SI: Dobbins is back and Coleman just won Payton's trust. Not a locked lead back.", "src": "Draft Sharks, Sports Illustrated"},
+    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "DLF + SI: Parker Washington is now a foundational piece. ADP still treats BTJ like a locked high WR2.", "src": "DLF, Sports Illustrated"},
+    {"name": "Davante Adams", "pos": "WR", "team": "LAR", "why": "The Athletic: 33-year-old coming off a 14-TD outlier. If you roster him, cash to a contender before Week 1.", "src": "The Athletic"},
 ]
 
 
@@ -777,12 +777,12 @@ def sources_panel(items, heading="Desks in This Super Aggregate"):
 
 PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
-    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 27."),
+    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 28."),
     ("ESPN — Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
 ]
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
-    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 26."),
+    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 27."),
     ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1–2–3."),
 ]
 
@@ -796,7 +796,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 27, 2026. 50% the four long boards, 50% every other desk that ranked the player. Rank 1 is 12,000 BK Value.",
+        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 28, 2026. 50% the four long boards, 50% every other desk that ranked the player. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -831,7 +831,7 @@ FB_SEO = {
     ),
     "hot-n-cold.html": (
         "Dynasty Hot and Cold Board — Buys and Sells | Ball Keep",
-        "Ball Keep Hot 'n' Cold: dynasty buys and sells scraped from desks and film shows, tied to The Keep ranks.",
+        "Ball Keep Hot 'n' Cold: late-August dynasty buys and sells from PlayerProfiler, FantasyPros, SI, and The Athletic, tied to The Keep ranks.",
         "img/logo.jpg",
     ),
     "trade.html": (
@@ -908,9 +908,9 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public desks, rebuilt August 27, 2026."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public desks, rebuilt August 28, 2026."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR — one QB, a point per catch."),
-    ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. A late first is about 28% of the 1.01. The Superflex calculator uses this board."),
+    ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40–80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
 BOARD_FAQ = [
     ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex. Kickers and DST omitted."),
@@ -2243,10 +2243,6 @@ def main():
           <p>Full-PPR, this year. Yates, FantasyPros, Karabell.</p>
         </a>
       </div>
-      <div class="grid">
-        <a class="tile" href="trade.html"><h3>Trade Calculators</h3><p>Keep, Board, 1QB, PPR, Standard.</p></a>
-        <a class="tile" href="players/index.html"><h3>Player Pages</h3><p>Keep top 400. Tape, plus/minus.</p></a>
-      </div>
     </section>
     {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, the market tape, and the slates.", [
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
@@ -2256,6 +2252,10 @@ def main():
         ("recent-trades.html", "Recent Deals", "Packages that closed."),
         ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
         ("mlb-schedule.html", "MLB Schedule", "September slate."),
+    ])}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
+        ("trade.html", "Trade Calculators", "Keep, Board, 1QB, PPR, Standard."),
+        ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
     ])}
     {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "Memes. Pictures on the card."),
@@ -2335,7 +2335,7 @@ def main():
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 27), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 28), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
     <div class="panel">{rank_table(ppr, ["Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
@@ -2407,7 +2407,7 @@ def main():
     hc_body = f"""
     <p class="kicker">Market Tape · {UPDATED}</p>
     <h1>BK Hot 'n' Cold</h1>
-    <p class="note">Rising names to Buy and aging / overpriced names to Sell, pulled from DLF trending notes (Aug 16), Sports Arena trade targets (Aug 11), Draft Sharks (Aug 14), FantasyPros Trade Value Chart show (August), and the Fantasy Footballers dynasty trade episode on YouTube.</p>
+    <p class="note">Rising names to Buy and aging / overpriced names to Sell, pulled from PlayerProfiler (Aug 7), FantasyPros dynasty trade columns (Aug 9 and August sell list), Sports Illustrated preseason risers (Aug 25), The Athletic dynasty sells (Aug 26), plus DLF, Sports Arena, and Draft Sharks camp notes.</p>
     <div class="grid">
       <div>
         <h3 style="color:var(--red)">Hot — Buy</h3>
@@ -2419,11 +2419,11 @@ def main():
       </div>
     </div>
     {sources_panel([
-        ("Dynasty League Football", "", "Trending notes, Aug 16."),
-        ("Sports Arena", "", "Trade targets, Aug 11."),
-        ("Draft Sharks", "https://www.draftsharks.com/dynasty-rankings/superflex", "Aug 14 market notes."),
-        ("FantasyPros Trade Value Chart", "https://www.fantasypros.com/", "August show."),
-        ("Fantasy Footballers", "", "Dynasty trade episode on YouTube."),
+        ("PlayerProfiler", "https://www.playerprofiler.com/article/dynasty-trade-targets-2026-buy-low-sell-high-before-kickoff/", "Buy low / sell high, Aug 7."),
+        ("FantasyPros", "https://www.fantasypros.com/2026/08/14-players-to-sell-in-dynasty-leagues-2026-fantasy-football/", "Dynasty sells and trade-now notes, August."),
+        ("Sports Illustrated", "https://www.si.com/onsi/fantasy/rankings/parker-washington-headlines-dynasty-fantasy-football-risers-making-the-biggest-leap-in-2026", "Preseason risers, Aug 25."),
+        ("The Athletic", "https://www.nytimes.com/athletic/7538068/2026/08/26/fantasy-football-top-5-dynasty-sells-treveyon-henderson/", "Top dynasty sells, Aug 26."),
+        ("Draft Sharks", "https://www.draftsharks.com/dynasty-rankings/superflex", "Camp market notes."),
     ], heading="Boards in This Aggregate")}
     """
     write("hot-n-cold.html", board_page("Hot 'n' Cold", "hot-n-cold.html", hc_body))

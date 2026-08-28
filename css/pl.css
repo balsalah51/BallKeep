@@ -275,7 +275,7 @@ a.news-item h3 { margin: 0 0 6px; color: var(--purple); }
 }
 .desk-block { margin-top: 28px; padding: 22px 22px 26px; border-radius: 20px; }
 .desk-block h1, .desk-block h2 { margin: 0 0 8px; }
-.desk-block .grid-3 { margin-top: 14px; }
+.desk-block .grid, .desk-block .grid-3 { margin-top: 14px; }
 .desk-block.main { background: #fff; border: 3px solid var(--purple); }
 .desk-block.lists { background: #efe6f3; border: 3px solid #6b3a75; }
 .desk-block.lists .kicker { color: #6b3a75; }
@@ -284,6 +284,10 @@ a.news-item h3 { margin: 0 0 6px; color: var(--purple); }
 .desk-block.extra .tile { background: #fff; }
 .desk-block.extra .tile:hover { border-color: #c4a035; }
 .desk-block.extra .news-list { margin-top: 16px; }
+.desk-block.tools { background: #f6edd8; border: 3px solid #c4a035; }
+.desk-block.tools .kicker { color: #8a7018; }
+.desk-block.tools .tile { background: #fff; }
+.desk-block.tools .tile:hover { border-color: #c4a035; }
 .sports-top {
   display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
   margin: 14px 0 2px;
