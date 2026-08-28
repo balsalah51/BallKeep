@@ -237,6 +237,15 @@ def main():
     assert 'href="trade.html"' in home[tools_at:extra_at]
     assert "Player Pages" in home[tools_at:extra_at]
     assert "Trade Calculators" not in home[home.find("home-intro"):lists_at]
+    assert "this desk" not in home
+    assert "\u2014" not in home
+    assert "On this board" in home
+    assert "32 boards mashed" in home
+    hc = html_of("hot-n-cold.html")
+    assert "this desk" not in hc
+    assert "\u2014" not in hc
+    assert 'class="hc-cold"' in hc
+    assert 'class="tile cold"' in hc or "tile cold" in hc
     assert 'href="privacy.html"' in home
     for x_path in ("the-x.html", "bb/the-x.html", "bk/the-x.html", "pl/the-x.html"):
         x_html = html_of(x_path)
@@ -269,6 +278,8 @@ def main():
     assert "style=\"color:#1788c2\"" in home
     assert "font-size: 40px" in css
     assert ".home-intro" in css
+    assert "--powder-ink" in css
+    assert ".tile.cold h3" in css
     assert "height: 120px" in css
     assert "grid-template-columns: 72px minmax(0, 1fr) 200px" in css
     assert "object-fit: contain" in css

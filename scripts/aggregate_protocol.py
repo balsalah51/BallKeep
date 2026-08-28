@@ -2,20 +2,20 @@
 
 The Keep is not a photocopy of The Board.
 
-THE KEEP — Super Aggregate (30+ professional desks)
-  Super = 50% long-core mean + 50% every other desk that ranked the player.
+THE KEEP - Super Aggregate (30+ professional boards)
+  Super = 50% long-core mean + 50% every other board that ranked the player.
   Long core: PFN, Dynasty Nerds, FantasyPros ECR, KeepTradeCut (published
-  300–500 name boards). The other desks are professional short lists and
+  300–500 name boards). The other boards are professional short lists and
   public-outlet overlays. Unranked is skipped, never treated as 999.
   If nobody but the long boards ranked him, Super is the long-core mean.
   Eligibility: must appear on at least one long-core board. Draft picks
   are not players. Then the top 400.
 
-THE BOARD — Long tape
+THE BOARD - Long tape
   Only the four published long boards. Equal mean, 500 deep.
   No Super mash, no headshots. This is the raw file.
 
-Desks that do not publish a full 400 are still desks. Their ranks count
+Boards that do not publish a full 400 are still boards. Their ranks count
 for the names they ranked and are ignored for everyone else.
 """
 from __future__ import annotations
@@ -32,19 +32,19 @@ LONG_CORE = (
     "KeepTradeCut SF",
 )
 
-# Name, URL, note — the public catalog. Keep this at 30+.
+# Name, URL, note - the public catalog. Keep this at 30+.
 KEEP_SOURCES = [
     ("Pro Football Network (Katz / Soppe composite)", "https://www.profootballnetwork.com/dynasty-fantasy-football-rankings/", "Full Superflex dynasty board. Long core."),
     ("Dynasty Nerds Superflex", "https://www.dynastynerds.com/dynasty-rankings/superflex/", "Four-ranker consensus. Long core."),
     ("FantasyPros Dynasty Superflex ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-superflex.php", "Expert consensus. Long core."),
     ("KeepTradeCut Superflex", "https://keeptradecut.com/dynasty-rankings", "Crowdsourced market tape. Long core."),
-    ("ESPN — Eric Karabell Superflex PPR", "https://www.espn.com/fantasy/football/story/_/id/47539664", "Published Superflex board."),
+    ("ESPN - Eric Karabell Superflex PPR", "https://www.espn.com/fantasy/football/story/_/id/47539664", "Published Superflex board."),
     ("Draft Sharks Superflex", "https://www.draftsharks.com/dynasty-rankings/superflex", "Public Superflex slice."),
     ("RotoWire Superflex", "https://www.rotowire.com/football/article/2026-dynasty-superflex-rankings-buy-low-values-adp-127901", "Team/pos Superflex board."),
     ("Derek Brown on X", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dynasty-superflex.php", "Professional Superflex ranks via FantasyPros."),
     ("Andrew Erickson on X", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dynasty-superflex.php", "Professional Superflex ranks via FantasyPros."),
     ("Pat Fitzmaurice on X", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dynasty-superflex.php", "Professional Superflex ranks via FantasyPros."),
-    ("Dynasty League Football Superflex", "https://www.dynastyleaguefootball.com/", "QB-premium Superflex desk."),
+    ("Dynasty League Football Superflex", "https://www.dynastyleaguefootball.com/", "QB-premium Superflex board."),
     ("Fantasy Footballers Dynasty", "https://www.thefantasyfootballers.com/", "Youth / film-show lean."),
     ("PFF Dynasty Superflex", "https://www.pff.com/", "Analytics Superflex. Passers and receivers up."),
     ("The Athletic Fantasy", "https://www.nytimes.com/athletic/", "Win-now / veteran lean."),
@@ -55,7 +55,7 @@ KEEP_SOURCES = [
     ("Establish The Run", "https://establishtherun.com/", "Process / youth Superflex."),
     ("Sleeper Superflex market", "https://sleeper.com/", "App market tape, long-board mash."),
     ("Underdog Best Ball ADP", "https://underdogfantasy.com/", "Best-ball counting lean, capped."),
-    ("Footballguys", "https://www.footballguys.com/", "Tight-end premium desk."),
+    ("Footballguys", "https://www.footballguys.com/", "Tight-end premium board."),
     ("4for4 Dynasty", "https://www.4for4.com/", "Projection-weighted short list."),
     ("numberFire", "https://www.numberfire.com/", "Model / youth overlay."),
     ("Fantasy Alarm", "https://www.fantasyalarm.com/", "Early-round running back lean."),
@@ -63,12 +63,12 @@ KEEP_SOURCES = [
     ("FFToday", "https://www.fftoday.com/", "Veteran public board."),
     ("WalterFootball", "https://walterfootball.com/", "Quarterback-heavy public board."),
     ("Dynasty Trade Calculator", "https://keeptradecut.com/", "Market-weighted mash of the long boards."),
-    ("Contender desk", "", "Win-now Superflex: veterans climb, kids cool."),
-    ("Rebuild desk", "", "Dynasty rebuild: peak-age kids climb."),
+    ("Contender board", "", "Win-now Superflex: veterans climb, kids cool."),
+    ("Rebuild board", "", "Dynasty rebuild: peak-age kids climb."),
     ("DLF ADP mix", "https://www.dynastyleaguefootball.com/", "Startup ADP overlay on the long-board mash."),
 ]
 
-assert len(KEEP_SOURCES) >= 30, "The Keep Super Aggregate needs at least 30 professional desks"
+assert len(KEEP_SOURCES) >= 30, "The Keep Super Aggregate needs at least 30 professional boards"
 
 
 def is_pick_key(key: str) -> bool:
@@ -113,9 +113,9 @@ def remap(keys: list[str], score_fn, cap: int | None = None) -> dict:
 
 
 def expand_super_desks(core: dict[str, dict], meta: dict) -> dict[str, dict]:
-    """Fill the Super Aggregate to 30+ named professional desks.
+    """Fill the Super Aggregate to 30+ named professional boards.
 
-    Long boards and published expert lists stay as-is. Additional desks are
+    Long boards and published expert lists stay as-is. Additional boards are
     public-outlet philosophies applied to the long-board mash (same method
     baseball already uses for Athletic / Razzball / Pitcher List slices).
     """
@@ -172,8 +172,8 @@ def expand_super_desks(core: dict[str, dict], meta: dict) -> dict[str, dict]:
         "FFToday": remap(base, vet, cap=100),
         "WalterFootball": remap(base, qb_up, cap=80),
         "Dynasty Trade Calculator": blend_maps([ktc, base_map] if ktc else long_maps, cap=220),
-        "Contender desk": remap(base, vet, cap=180),
-        "Rebuild desk": remap(base, youth, cap=180),
+        "Contender board": remap(base, vet, cap=180),
+        "Rebuild board": remap(base, youth, cap=180),
         "DLF ADP mix": blend_maps(long_maps, cap=200),
     }
     for name, board in derived.items():

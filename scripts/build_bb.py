@@ -52,6 +52,7 @@ from seo import (  # noqa: E402
     related_stories_html,
     sports_footer,
     sports_top,
+    strip_em,
     value_bars,
     website_jsonld,
 )
@@ -85,7 +86,7 @@ def slugify(name: str) -> str:
 def write(path, doc):
     dest = ROOT / path.lstrip("/")
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(doc)
+    dest.write_text(strip_em(doc))
 
 
 BB_NAV = [
@@ -147,7 +148,7 @@ def bb_nav_current(href: str, path: str) -> bool:
 BB_SEO = {
     "index.html": (
         "BaseKeep | Dynasty Baseball Rankings and Trade Calculator",
-        "Navy-and-cream dynasty baseball desk. The Keep is dynasty top 400. The Diamond is redraft. Lineup, Pitchers, bullpen, and BK News.",
+        "Navy-and-cream dynasty baseball boards. The Keep is dynasty top 400. The Diamond is redraft. Lineup, Pitchers, bullpen, and BK News.",
         "img/bb-hero.jpg",
     ),
     "the-keep.html": (
@@ -156,17 +157,17 @@ BB_SEO = {
         "img/bb-logo.jpg",
     ),
     "the-lineup.html": (
-        "The Lineup — Dynasty Hitter Rankings | BaseKeep",
+        "The Lineup - Dynasty Hitter Rankings | BaseKeep",
         "Dynasty hitters only. The bats you keep, re-ranked from The Keep. Ranked on the same 23-board average.",
         "img/bb-logo.jpg",
     ),
     "pitchers.html": (
-        "BK's Pitchers — Dynasty SP and Two-Way Rankings | BaseKeep",
+        "BK's Pitchers - Dynasty SP and Two-Way Rankings | BaseKeep",
         "Top 150 dynasty arms, starters plus the two-way unicorn. Same BK Value curve as The Keep.",
         "img/bb-logo.jpg",
     ),
     "bullpen.html": (
-        "Bullpen Saves Rankings — Top 100 Relievers | BaseKeep",
+        "Bullpen Saves Rankings - Top 100 Relievers | BaseKeep",
         "Top 100 relief pitchers for saves leagues. FantasyPros closer report plus ESPN reliever depth.",
         "img/bb-logo.jpg",
     ),
@@ -176,12 +177,12 @@ BB_SEO = {
         "img/bb-logo.jpg",
     ),
     "the-diamond.html": (
-        "The Diamond — 2026 Redraft Baseball Rankings | BaseKeep",
+        "The Diamond - 2026 Redraft Baseball Rankings | BaseKeep",
         "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400.",
         "img/bb-logo.jpg",
     ),
     "redraft.html": (
-        "The Diamond — 2026 Redraft Baseball Rankings | BaseKeep",
+        "The Diamond - 2026 Redraft Baseball Rankings | BaseKeep",
         "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400.",
         "img/bb-logo.jpg",
     ),
@@ -191,7 +192,7 @@ BB_SEO = {
         "img/bb-logo.jpg",
     ),
     "news.html": (
-        "BK News Baseball — IL, Roster, and Manager Tape | BaseKeep",
+        "BK News Baseball - IL, Roster, and Manager Tape | BaseKeep",
         "Hourly baseball IL, roster, and manager reports clustered with links back to Keep player files.",
         "img/bb-logo.jpg",
     ),
@@ -201,7 +202,7 @@ BB_SEO = {
         "img/bb-logo.jpg",
     ),
     "the-x.html": (
-        "The X — Baseball Memes from X | BaseKeep",
+        "The X - Baseball Memes from X | BaseKeep",
         "Fun tape, not news. MLB memes and shitposts pulled from X via Google News.",
         "img/bb-logo.jpg",
     ),
@@ -303,7 +304,7 @@ BB_ALSO = {
 BB_HOME_FAQ = [
     ("What is BaseKeep?", "BaseKeep is baseball on Ball Keep. The Keep is dynasty overall top 400 from 23 boards. The Diamond is this-year redraft. Same BK Value curve as football."),
     ("How is The Keep ranked?", "Average of every source that ranked the player. Unranked is skipped, never 999. Two of the boards run 500 names long."),
-    ("Where is the MLB news?", "BK News on this desk clusters IL, roster, DFA, and manager tape hourly."),
+    ("Where is the MLB news?", "BK News on this board clusters IL, roster, DFA, and manager tape hourly."),
 ]
 BB_KEEP_FAQ = [
     ("What is The Keep on BaseKeep?", "Dynasty baseball top 400, rebuilt August 27, 2026. 23-board aggregate including RotoGraphs and The Dynasty Guru."),
@@ -341,7 +342,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseKeep", brand_url="https://ballkeep.com/bb/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=35" />
+  <link rel="stylesheet" href="{prefix}css/bb.css?v=36" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
 </head>
 <body>
@@ -458,15 +459,15 @@ def sources_panel():
     lis = []
     for name, url, note in BB_SOURCES:
         if url:
-            lis.append(f'<li><a href="{esc(url)}">{esc(name)}</a> — {esc(note)}</li>')
+            lis.append(f'<li><a href="{esc(url)}">{esc(name)}</a> - {esc(note)}</li>')
         else:
-            lis.append(f"<li><strong>{esc(name)}</strong> — {esc(note)}</li>")
+            lis.append(f"<li><strong>{esc(name)}</strong> - {esc(note)}</li>")
     return (
         '<section class="sources-box panel">'
         '<p class="kicker">Sources</p><h3>Boards in This Aggregate</h3>'
         f"<ol>{''.join(lis)}</ol>"
         '<p class="note">23 public boards and compiled expert slices, August 2026. '
-        "Unranked names are skipped in the mean — never treated as 999.</p></section>"
+        "Unranked names are skipped in the mean - never treated as 999.</p></section>"
     )
 
 
@@ -475,8 +476,8 @@ def val_cell(r):
     rg = ranks.get("RotoGraphs Model")
     tdg = ranks.get("TDG Points")
     return (
-        f'<td class="desk-only">{rg if rg not in (None, "") else "—"}</td>'
-        f'<td class="desk-only">{tdg if tdg not in (None, "") else "—"}</td>'
+        f'<td class="desk-only">{rg if rg not in (None, "") else "-"}</td>'
+        f'<td class="desk-only">{tdg if tdg not in (None, "") else "-"}</td>'
         f'<td class="desk-only">{r["avg"]}</td>'
         f'<td class="desk-only">{r["n"]}</td>'
         f'<td class="c-val val">{int(r["value"]):,}</td>'
@@ -693,7 +694,7 @@ def savant_block(r, media, savant) -> str:
     """
 
 
-def nz(v, dash="—"):
+def nz(v, dash="-"):
     if v in (None, "", []):
         return dash
     return v
@@ -749,7 +750,7 @@ def bio_line(media, r):
     if age:
         bits.append(f"age {age}")
     if media.get("bats") or media.get("throws"):
-        bits.append(f"B/T {media.get('bats') or '—'}{media.get('throws') or ''}")
+        bits.append(f"B/T {media.get('bats') or '-'}{media.get('throws') or ''}")
     if media.get("height"):
         ht = media["height"]
         if media.get("weight"):
@@ -857,7 +858,7 @@ def season_box(media):
         )
     if not parts:
         return (
-            '<p class="note">No MLB box score yet — prospect file. '
+            '<p class="note">No MLB box score yet - prospect file. '
             "The Keep rank is the projection, not a 2026 line.</p>"
         )
     return "".join(parts)
@@ -923,7 +924,7 @@ def same_pos(keep, r, limit=6):
         f'<a class="player-link" href="{slugify(p["name"])}.html">{esc(p["name"])}</a> #{p["bk"]}'
         for p in others
     )
-    return f'<p class="note"><strong>Same position on the 300</strong> — {links}</p>'
+    return f'<p class="note"><strong>Same position on the 300</strong> - {links}</p>'
 
 
 def waiver_note(name, dynasty, redraft):
@@ -960,11 +961,11 @@ def bb_grafs(r, lists=None, media=None):
         age_n = None
     plus, minus = [], []
     if lists.get("BB Redraft") and keep and lists["BB Redraft"] + 20 < keep:
-        plus.append(f"The Diamond #{lists['BB Redraft']} vs Keep #{keep} — helping now more than the dynasty slot.")
+        plus.append(f"The Diamond #{lists['BB Redraft']} vs Keep #{keep} - helping now more than the dynasty slot.")
     if lists.get("BB Redraft") and keep and lists["BB Redraft"] > keep + 25:
-        minus.append(f"The Diamond #{lists['BB Redraft']} vs Keep #{keep} — future, not a September stream.")
+        minus.append(f"The Diamond #{lists['BB Redraft']} vs Keep #{keep} - future, not a September stream.")
     if age_n and age_n >= 33:
-        minus.append(f"Age {age_n} — dynasty tax.")
+        minus.append(f"Age {age_n} - dynasty tax.")
     if g == "RP":
         minus.append("RP: the ninth can vanish in a week.")
     if ranks:
@@ -980,7 +981,7 @@ def bb_grafs(r, lists=None, media=None):
         except (TypeError, ValueError):
             pass
     if not media.get("mlb_id"):
-        minus.append("No 2026 MLB line — prospect file. Rank is the projection.")
+        minus.append("No 2026 MLB line - prospect file. Rank is the projection.")
     bits = []
     if keep:
         bits.append(f"Keep #{keep}")
@@ -989,9 +990,9 @@ def bb_grafs(r, lists=None, media=None):
     if n:
         bits.append(f"{n} boards")
     if hit.get("g"):
-        bits.append(f"{hit.get('avg') or '—'} / {hit.get('hr') or 0} HR / {hit.get('sb') or 0} SB / {hit.get('ops') or '—'} OPS")
+        bits.append(f"{hit.get('avg') or '-'} / {hit.get('hr') or 0} HR / {hit.get('sb') or 0} SB / {hit.get('ops') or '-'} OPS")
     elif pit.get("ip"):
-        bits.append(f"{pit.get('era') or '—'} ERA, {pit.get('whip') or '—'} WHIP, {pit.get('so') or 0} K in {pit.get('ip')} IP")
+        bits.append(f"{pit.get('era') or '-'} ERA, {pit.get('whip') or '-'} WHIP, {pit.get('so') or 0} K in {pit.get('ip')} IP")
     graf = " · ".join(str(b) for b in bits)
     return plus[:4], minus[:4], [graf] if graf else []
 
@@ -1288,7 +1289,7 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
             old.unlink()
 
     cards = "".join(bb_news_card(s) for s in stories) or (
-        '<p class="note">The baseball wire is warming up. The hourly scrape will fill this desk.</p>'
+        '<p class="note">The baseball wire is warming up. The hourly scrape will fill this board.</p>'
     )
     chips = []
     for k, lab in (
@@ -1398,7 +1399,7 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
     {named}
     <section class="sources-box panel" style="margin-top:18px">
       <p class="kicker">Tape</p>
-      <h3>Links back to the desks</h3>
+      <h3>Links back to the boards</h3>
       {source_html}
     </section>
     {related}
@@ -1477,8 +1478,8 @@ def write_baseball_site():
         ("pitchers.html", "BK's Pitchers", "Top 150 arms."),
     ])}
     {desk_block("lists", "Lists", "The other boards.", "Bullpen and the files.", [
-        ("bullpen.html", "Bullpen — Saves", "Top 100 relievers."),
-        ("bullpen-holds.html", "Bullpen — SV+H", "Holds counted."),
+        ("bullpen.html", "Bullpen - Saves", "Top 100 relievers."),
+        ("bullpen-holds.html", "Bullpen - SV+H", "Holds counted."),
     ])}
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
         ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, The Diamond."),
@@ -1499,7 +1500,7 @@ def write_baseball_site():
     keep_body = f"""
     <p class="kicker">Keystone · Overall Dynasty</p>
     <h1>The Keep</h1>
-    <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — 23 boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
+    <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - 23 boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
     {flt}
     <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#1f6b3a", "Keep value graph")}
@@ -1539,7 +1540,7 @@ def write_baseball_site():
     write("bb/pitchers.html", bb_board_page("BK's Pitchers", "pitchers.html", pit_body))
 
     sv_body = f"""
-    {page_label("BaseKeep", "BK's Bullpen — Saves", "Relief · Saves")}
+    {page_label("BaseKeep", "BK's Bullpen - Saves", "Relief · Saves")}
     <p class="note">Top 100 relief pitchers for traditional saves leagues. Chart mix: FantasyPros closer report (Aug 20), ESPN reliever depth chart, and RPs who survive the overall Keep. Bryan Baker has the MLB lead. Diaz is leaking. Scott is the add.</p>
     <div class="panel">{rank_table(saves, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {value_bars(saves, 12, "#1f6b3a", "Saves value graph")}
@@ -1548,7 +1549,7 @@ def write_baseball_site():
     write("bb/bullpen.html", bb_board_page("Bullpen Saves", "bullpen.html", sv_body))
 
     svh_body = f"""
-    {page_label("BaseKeep", "BK's Bullpen — SV+H", "Relief · Saves + Holds")}
+    {page_label("BaseKeep", "BK's Bullpen - SV+H", "Relief · Saves + Holds")}
     <p class="note">Same bullpen, different sport. FantasyPros Week 21 SV+H board (Baker / Miller / Varland) plus setup men the ESPN chart actually uses. If your league counts holds, this is the page. The saves board is next door.</p>
     <div class="panel">{rank_table(svh, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {value_bars(svh, 12, "#1f6b3a", "SV+H value graph")}
@@ -1589,7 +1590,7 @@ def write_baseball_site():
     trade_hub = f"""
     <p class="kicker">Trade Calculators</p>
     <h1>Six Calculators, One Curve</h1>
-    <p class="note">Rank becomes BK Value the same way it does on the football desk. Rank 1 is 12,000. Fair is within 8%. Dynasty calcs include 2027/2028 pick chips mapped to equivalent ranks.</p>
+    <p class="note">Rank becomes BK Value the same way it does on the football boards. Rank 1 is 12,000. Fair is within 8%. Dynasty calcs include 2027/2028 pick chips mapped to equivalent ranks.</p>
     <div class="grid">{''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in hub_tiles)}</div>
     {faq_html(BB_TRADE_FAQ, heading="How BK Value prices a baseball trade.")}
     """

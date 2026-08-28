@@ -57,6 +57,7 @@ from seo import (  # noqa: E402
     sitemap_xml,
     sports_footer,
     sports_top,
+    strip_em,
     value_bars,
     video_jsonld,
     website_jsonld,
@@ -539,9 +540,9 @@ def redraft_lists():
             "name": name,
             "pos": pos,
             "team": team,
-            "yates": yates or "—",
-            "fp": fp or "—",
-            "karabell": kb or "—",
+            "yates": yates or "-",
+            "fp": fp or "-",
+            "karabell": kb or "-",
             "n": len(nums),
             "avg": round(avg, 2),
         })
@@ -757,19 +758,19 @@ def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ba
     )
 
 
-def sources_panel(items, heading="Desks in This Super Aggregate"):
+def sources_panel(items, heading="Boards in This Super Aggregate"):
     lis = []
     for name, url, note in items:
         if url:
-            lis.append(f'<li><a href="{esc(url)}">{esc(name)}</a> — {esc(note)}</li>')
+            lis.append(f'<li><a href="{esc(url)}">{esc(name)}</a> - {esc(note)}</li>')
         else:
-            lis.append(f"<li><strong>{esc(name)}</strong> — {esc(note)}</li>")
+            lis.append(f"<li><strong>{esc(name)}</strong> - {esc(note)}</li>")
     return (
         '<section class="sources-box panel">'
         '<p class="kicker">Sources</p>'
         f"<h3>{esc(heading)}</h3>"
         f"<ol>{''.join(lis)}</ol>"
-        '<p class="note">Unranked names are skipped in the mean — never treated as 999. '
+        '<p class="note">Unranked names are skipped in the mean - never treated as 999. '
         "Short expert lists still move the names they actually ranked.</p>"
         "</section>"
     )
@@ -778,7 +779,7 @@ def sources_panel(items, heading="Desks in This Super Aggregate"):
 PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
     ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 28."),
-    ("ESPN — Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
+    ("ESPN - Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
 ]
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
@@ -791,26 +792,26 @@ ROOKIE_SOURCES = [
 FB_SEO = {
     "index.html": (
         "Ball Keep | Superflex Dynasty Rankings and Redraft PPR",
-        "The Keep is Superflex Dynasty — 32 desks, top 400. The Board is Redraft PPR. BK Value trade calculator, The X, and hourly BK News.",
+        "The Keep is Superflex Dynasty - 32 boards, top 400. The Board is Redraft PPR. BK Value trade calculator, The X, and hourly BK News.",
         "img/hero.jpg",
     ),
     "the-keep.html": (
         "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 28, 2026. 50% the four long boards, 50% every other desk that ranked the player. Rank 1 is 12,000 BK Value.",
+        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 28, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
-        "The Board — 2026 Redraft PPR Rankings | Ball Keep",
+        "The Board - 2026 Redraft PPR Rankings | Ball Keep",
         "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex. Kickers and DST omitted.",
         "img/logo.jpg",
     ),
     "the-x.html": (
-        "The X — Football Memes from X | Ball Keep",
+        "The X - Football Memes from X | Ball Keep",
         "Fun tape, not news. Memes and shitposts pulled from X via Google News. Pictures when the wire carries them.",
         "img/logo.jpg",
     ),
     "redraft-ppr.html": (
-        "The Board — 2026 Redraft PPR Rankings | Ball Keep",
+        "The Board - 2026 Redraft PPR Rankings | Ball Keep",
         "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex.",
         "img/logo.jpg",
     ),
@@ -830,7 +831,7 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "hot-n-cold.html": (
-        "Dynasty Hot and Cold Board — Buys and Sells | Ball Keep",
+        "Dynasty Hot and Cold Board - Buys and Sells | Ball Keep",
         "Ball Keep Hot 'n' Cold: late-August dynasty buys and sells from PlayerProfiler, FantasyPros, SI, and The Athletic, tied to The Keep ranks.",
         "img/logo.jpg",
     ),
@@ -845,23 +846,23 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "news.html": (
-        "BK News — NFL Injury, Roster, and Coach Tape | Ball Keep",
+        "BK News - NFL Injury, Roster, and Coach Tape | Ball Keep",
         "Hourly football injury, roster, and coach reports clustered from league RSS, Google News, X, and YouTube, linked to Keep player files.",
         "img/logo.jpg",
     ),
     "players/index.html": (
-        "NFL Dynasty Player Files — Keep, Redraft, Tape | Ball Keep",
+        "NFL Dynasty Player Files - Keep, Redraft, Tape | Ball Keep",
         "Every Keep 400 and Board name: Superflex Keep rank, Redraft PPR Board rank, BK Value, 2025 tape, and BK News hits.",
         "img/logo.jpg",
     ),
     "nfl-schedule.html": (
-        "2026 NFL Schedule — All 32 Teams | Ball Keep",
+        "2026 NFL Schedule - All 32 Teams | Ball Keep",
         "Full 2026 NFL regular-season slate. Filter by week or club. Kickoff Wednesday, Sept. 9 in Seattle.",
         "img/logo.jpg",
     ),
     "mlb-schedule.html": (
-        "MLB September Schedule — Stretch Run | Ball Keep",
-        "September baseball slate on the football desk. Filter by club. Regular season wraps Sunday, Sept. 27, 2026.",
+        "MLB September Schedule - Stretch Run | Ball Keep",
+        "September baseball slate on the football boards. Filter by club. Regular season wraps Sunday, Sept. 27, 2026.",
         "img/logo.jpg",
     ),
     "privacy.html": (
@@ -870,7 +871,7 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "discord.html": (
-        "Ball Keep Discord Bot — Ranks, Trades, Tape",
+        "Ball Keep Discord Bot - Ranks, Trades, Tape",
         "The circular mark plus a Discord bot that searches The Keep, runs the trade calculator, drops tape, and can publish the site into a server.",
         "img/logo.jpg",
     ),
@@ -902,14 +903,14 @@ FB_SEO = {
 }
 
 HOME_FAQ = [
-    ("What is Ball Keep?", "The Keep is Superflex Dynasty — 32 desks, top 400. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
-    ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other desk that ranked the player. Unranked names are skipped, never treated as 999."),
+    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 32 boards, top 400. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
+    ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player. Unranked names are skipped, never treated as 999."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public desks, rebuilt August 28, 2026."),
-    ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR — one QB, a point per catch."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public boards, rebuilt August 28, 2026."),
+    ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40–80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
 BOARD_FAQ = [
@@ -923,7 +924,7 @@ TRADE_FAQ = [
     ("Which calculator should I use?", "Superflex Dynasty for two-QB startups. 1QB when a passer is just another starter. Redraft PPR or Standard when the deal is for this season only."),
 ]
 NEWS_FAQ = [
-    ("Where does BK News come from?", "Hourly clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with links back to the original desks and to Keep player files."),
+    ("Where does BK News come from?", "Hourly clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with links back to the original boards and to Keep player files."),
     ("How often does the wire refresh?", "The scrape runs every hour. New URLs merge into the cluster; the static pages rebuild when the tape moved."),
     ("Why do stories link to player pages?", "Named Keep, Board, and rookie files sit on the cluster so you can jump from the injury to the rank."),
 ]
@@ -999,7 +1000,7 @@ FB_ALSO = {
         ("mlb-schedule.html", "MLB Schedule", "September baseball."),
     ],
     "mlb-schedule.html": [
-        ("bb/index.html", "BaseKeep", "The baseball desk."),
+        ("bb/index.html", "BaseKeep", "BaseKeep boards."),
         ("bb/the-keep.html", "BB The Keep", "Dynasty baseball 400."),
         ("nfl-schedule.html", "NFL Schedule", "Football slate."),
     ],
@@ -1029,7 +1030,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=37" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=38" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1133,7 +1134,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
 def write(path, html_doc):
     dest = ROOT / path.lstrip("/")
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(html_doc)
+    dest.write_text(strip_em(html_doc))
 
 
 def news_player_href(player: dict, depth: int = 0) -> str | None:
@@ -1189,7 +1190,7 @@ def render_news_pages():
             old.unlink()
 
     cards = "".join(news_card(s) for s in stories) or (
-        '<p class="note">The football wire is warming up. The hourly scrape will fill this desk.</p>'
+        '<p class="note">The football wire is warming up. The hourly scrape will fill this board.</p>'
     )
     chips = []
     for k, lab in (
@@ -1300,7 +1301,7 @@ def render_news_pages():
     {named}
     <section class="sources-box panel" style="margin-top:18px">
       <p class="kicker">Tape</p>
-      <h3>Links back to the desks</h3>
+      <h3>Links back to the boards</h3>
       {source_html}
     </section>
     {related}
@@ -1377,7 +1378,7 @@ def collect_profiles(keep, ppr, std, sf_redraft):
         if age and not p["age"]:
             p["age"] = age
         if ranks and not p.get("ranks"):
-            p["ranks"] = {src: rk for src, rk in ranks.items() if rk not in (None, "", "—")}
+            p["ranks"] = {src: rk for src, rk in ranks.items() if rk not in (None, "", "-")}
         if avg is not None and p.get("keep_avg") is None:
             p["keep_avg"] = avg
         if n is not None and p.get("keep_n") is None:
@@ -1393,7 +1394,7 @@ def collect_profiles(keep, ppr, std, sf_redraft):
     for r in ppr:
         extra = (
             f"The Board #{r['bk']} Redraft PPR (Yates {r['yates']}"
-            + (f", FantasyPros {r['fp']}" if r["fp"] != "—" else "")
+            + (f", FantasyPros {r['fp']}" if r["fp"] != "-" else "")
             + ")"
         )
         add(r["name"], r["pos"], r["team"], "The Board", r["bk"], extra, age=r.get("age"))
@@ -1408,9 +1409,9 @@ def collect_profiles(keep, ppr, std, sf_redraft):
     for i, r in enumerate(ROOKIES, 1):
         add(r["name"], r["pos"], r["team"], "2026 Rookies", i, r["value"])
     for i, r in enumerate(HOT, 1):
-        add(r["name"], r["pos"], r["team"], "Hot", i, f"Hot #{i}: {r['why']} — {r['src']}")
+        add(r["name"], r["pos"], r["team"], "Hot", i, f"Hot #{i}: {r['why']} - {r['src']}")
     for i, r in enumerate(COLD, 1):
-        add(r["name"], r["pos"], r["team"], "Cold", i, f"Cold #{i}: {r['why']} — {r['src']}")
+        add(r["name"], r["pos"], r["team"], "Cold", i, f"Cold #{i}: {r['why']} - {r['src']}")
 
     PLAYER_PAGES.clear()
     for k, p in players.items():
@@ -1460,7 +1461,7 @@ def take_html(kicker, grafs, limit=2):
 def _fact_cells(items):
     cells = "".join(
         f'<div class="fact"><small>{esc(k)}</small><strong>{esc(v)}</strong></div>'
-        for k, v in items if v not in (None, "", "—")
+        for k, v in items if v not in (None, "", "-")
     )
     return f'<div class="facts">{cells}</div>' if cells else ""
 
@@ -1588,7 +1589,7 @@ def ff_related(profiles, p):
         rank_of = lambda x: x["lists"].get("The Board") or x["lists"].get("Redraft PPR")
     else:
         board = list(profiles)
-        nearby_label = "Nearby on the desk"
+        nearby_label = "Nearby on the board"
         rank_of = lambda x: 0
     normed = [{**x, "bk": rank_of(x)} for x in board]
     current = {**p, "bk": rank_of(p)}
@@ -1816,7 +1817,7 @@ def trade_mode_page(mode, payload):
     picks_note = (
         "Future firsts and seconds are priced as equivalent ranks on the same curve."
         if payload.get("picks")
-        else "Redraft has no future picks — only the names on this board."
+        else "Redraft has no future picks - only the names on this board."
     )
     body = f"""
     <p class="kicker">Trade Calculator · {esc(payload["label"])}</p>
@@ -1894,7 +1895,7 @@ def write_trade_pages(keep, board, ppr, std):
         ("trade-1qb.html", "1QB Dynasty", "Same Keep ranks, quarterbacks taxed to 38% of Superflex value."),
         ("trade-ppr.html", "The Board (PPR)", "One-year PPR board. No future picks."),
         ("trade-standard.html", "Redraft Standard", "One-year Standard board after the catch-tax."),
-        ("recent-trades.html", "Recent Deals", "Type a player. Pull every package on the desk tape."),
+        ("recent-trades.html", "Recent Deals", "Type a player. Pull every package on the trade tape."),
     ]
     hub = f"""
     <p class="kicker">Trade Calculators</p>
@@ -1955,7 +1956,7 @@ def write_recent_trades_page(deals):
         for n in chips
     )
     body = f"""
-    <p class="kicker">Desk Tape · {UPDATED}</p>
+    <p class="kicker">Trade Tape · {UPDATED}</p>
     <h1>Recent Deals</h1>
     <p class="note">Type a player. Superflex, 1QB, asking prices, and deals that actually closed. BK Value on both sides.</p>
     <div class="trade-search deals-search">
@@ -2131,7 +2132,7 @@ def write_discovery_feeds():
                 "guid": loc,
             })
         write(dest, rss_xml(
-            title=f"{feed_title} — {brand}",
+            title=f"{feed_title} - {brand}",
             link=hub,
             description=f"Hourly {sport} injury, roster, and coach tape from {brand}.",
             items=items,
@@ -2164,7 +2165,7 @@ def write_not_found_page():
     body = """
     <section class="panel">
       <p class="kicker">404</p>
-      <h1>That page is not on this desk.</h1>
+      <h1>That page is not on this board.</h1>
       <p class="note">The Keep, The Board, BK News, and the other three sports are still here.</p>
       <div class="grid-3">
         <a class="tile" href="index.html"><h3>Ball Keep</h3><p>Superflex dynasty and redraft PPR.</p></a>
@@ -2235,7 +2236,7 @@ def main():
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
           <p class="lead-sub">Dynasty · top 400</p>
-          <p>32 desks mashed into one rank.</p>
+          <p>32 boards mashed into one rank.</p>
         </a>
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
@@ -2272,7 +2273,7 @@ def main():
     # THE KEEP
     def src_td(r, name):
         v = (r.get("ranks") or {}).get(name)
-        return f'<td class="desk-only">{v if v not in (None, "") else "—"}</td>'
+        return f'<td class="desk-only">{v if v not in (None, "") else "-"}</td>'
 
     def keep_extra(r):
         return (
@@ -2283,9 +2284,9 @@ def main():
             + f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
     keep_body = f"""
-    <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} desks</p>
+    <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} boards</p>
     <h1>The Keep</h1>
-    <p class="note">This is the big one. Superflex Dynasty. Top 400. {len(KEEP_SOURCES)} desks. Half the vote is the four long boards, half is everyone else. The Board next door is Redraft PPR — this year, one quarterback, a point per catch.</p>
+    <p class="note">This is the big one. Superflex Dynasty. Top 400. {len(KEEP_SOURCES)} boards. Half the vote is the four long boards, half is everyone else. The Board next door is Redraft PPR - this year, one quarterback, a point per catch.</p>
     <p class="note">Position</p>
     <div class="filters" id="keep-pos"><button type="button" class="active" data-pos="all">All</button>
       <button type="button" data-pos="QB">QB</button>
@@ -2293,7 +2294,7 @@ def main():
       <button type="button" data-pos="WR">WR</button>
       <button type="button" data-pos="TE">TE</button>
     </div>
-    <div class="panel">{rank_table(keep, ["Super", "Desks", "PFN", "KTC", "BK Value"], keep_extra, media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(keep, ["Super", "Boards", "PFN", "KTC", "BK Value"], keep_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#c8102e", "Keep value graph")}
     {sources_panel(KEEP_SOURCES)}
     {faq_html(KEEP_FAQ, heading="How The Keep is built.")}
@@ -2318,7 +2319,7 @@ def main():
                 "https://ballkeep.com/the-keep.html",
                 keep,
                 lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
-                description="Superflex dynasty top 400 from 32 desks.",
+                description="Superflex dynasty top 400 from 32 boards.",
             ),
             faq_jsonld(KEEP_FAQ),
         ],
@@ -2379,7 +2380,7 @@ def main():
         fp = fp_rook.get(norm_name(r["name"])) or r["fp"]
         nums = [x for x in (r["dd"], fp, r["pff"]) if x]
         avg = round(sum(nums) / len(nums), 2) if nums else 99.0
-        rook_rows.append({**r, "bk": 0, "avg": avg, "dd": r["dd"] or "—", "fp": fp or "—", "pff": r["pff"] or "—", "blurb": r["value"]})
+        rook_rows.append({**r, "bk": 0, "avg": avg, "dd": r["dd"] or "-", "fp": fp or "-", "pff": r["pff"] or "-", "blurb": r["value"]})
     rook_rows.sort(key=lambda r: r["avg"])
     for i, r in enumerate(rook_rows, 1):
         r["bk"] = i
@@ -2410,11 +2411,11 @@ def main():
     <p class="note">Rising names to Buy and aging / overpriced names to Sell, pulled from PlayerProfiler (Aug 7), FantasyPros dynasty trade columns (Aug 9 and August sell list), Sports Illustrated preseason risers (Aug 25), The Athletic dynasty sells (Aug 26), plus DLF, Sports Arena, and Draft Sharks camp notes.</p>
     <div class="grid">
       <div>
-        <h3 style="color:var(--red)">Hot — Buy</h3>
+        <h3 class="hc-hot">Hot: Buy</h3>
         {hc_cards(HOT, "hot")}
       </div>
       <div>
-        <h3 style="color:#1d4f8a">Cold — Sell</h3>
+        <h3 class="hc-cold">Cold: Sell</h3>
         {hc_cards(COLD, "cold")}
       </div>
     </div>
@@ -2440,8 +2441,8 @@ def main():
             + f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
     def board_redraft_extra(r):
-        keep_r = r.get("keep") or "—"
-        ppr_r = r.get("ppr") or "—"
+        keep_r = r.get("keep") or "-"
+        ppr_r = r.get("ppr") or "-"
         return (
             f'<td class="desk-only">{keep_r}</td>'
             f'<td class="desk-only">{ppr_r}</td>'
@@ -2451,7 +2452,7 @@ def main():
     sf_body = f"""
     <p class="kicker">Superflex Redraft · this year</p>
     <h1>Redraft Superflex</h1>
-    <p class="note">This list is Superflex for this season — {len(sf_redraft)} names. The Keep is Superflex Dynasty. The Board is Redraft PPR. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks.</p>
+    <p class="note">This list is Superflex for this season - {len(sf_redraft)} names. The Keep is Superflex Dynasty. The Board is Redraft PPR. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks.</p>
     <div class="panel">{rank_table(sf_redraft, ["Keep SF", "PPR", "Score", "BK Value"], board_redraft_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(sf_redraft, 12, "#1e8fc2", "Superflex redraft value graph")}
     {sources_panel([
@@ -2536,7 +2537,7 @@ def main():
     mlb_body = f"""
     <p class="kicker">MLB · Stretch Run</p>
     <h1>Baseball Schedules</h1>
-    <p class="note">Today is Aug. 20, 2026 — the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027–2031 heavier than this month's box score; redraft baseball is only this month.</p>
+    <p class="note">Today is Aug. 20, 2026 - the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027–2031 heavier than this month's box score; redraft baseball is only this month.</p>
     <div class="filters" id="mlb-teams"><button type="button" class="active" data-team="all">All clubs</button>{mlb_btns}</div>
     <div class="panel table-wrap" id="mlb-games"></div>
     """
@@ -2563,17 +2564,17 @@ def main():
       <img src="img/discord.jpg" alt="Ball Keep circular Discord logo" />
       <p class="kicker">Community</p>
       <h1>Ball Keep on Discord</h1>
-      <p class="note">Red primary. White BK. Black ring. The bot is the desk in the server: every Keep rank, every player file, every highlight, and the trade calculator — searchable in Discord the same way they are on the site.</p>
+      <p class="note">Red primary. White BK. Black ring. The bot is Ball Keep in the server: every Keep rank, every player file, every highlight, and the trade calculator - searchable in Discord the same way they are on the site.</p>
       <a class="cta" href="https://github.com/balsalah51/BallKeep/tree/main/bot">Run the Ball Keep bot</a>
     </div>
     <section class="panel" style="margin-top:16px">
       <p class="kicker">Slash Commands</p>
-      <h2>Talk to the desk.</h2>
-      <p class="note"><code>/player Josh Allen</code> pulls The Keep rank, BK Value, plus/minus, the 2025 clip, and the player page. <code>/trade</code> is the Superflex / 1QB / PPR / Standard calculator. <code>/deals JSN</code> pulls every recent package on the desk tape. <code>/bbplayer Ohtani</code> is the same file on the baseball desk. <code>/plplayer Haaland</code> is the PitchKeep file — The Pitch rank, picture, long take, 2025/26 tape. <code>/video</code> drops the tape. <code>/quiz</code> hides a Keep rank behind a spoiler. <code>/publish</code> writes the whole site into Discord channels so native search works.</p>
+      <h2>Talk to the bot.</h2>
+      <p class="note"><code>/player Josh Allen</code> pulls The Keep rank, BK Value, plus/minus, the 2025 clip, and the player page. <code>/trade</code> is the Superflex / 1QB / PPR / Standard calculator. <code>/deals JSN</code> pulls every recent package on the trade tape. <code>/bbplayer Ohtani</code> is the same file on the baseball boards. <code>/plplayer Haaland</code> is the PitchKeep file - The Pitch rank, picture, long take, 2025/26 tape. <code>/video</code> drops the tape. <code>/quiz</code> hides a Keep rank behind a spoiler. <code>/publish</code> writes the whole site into Discord channels so native search works.</p>
       <div class="grid" style="margin-top:14px">
         <article class="tile"><h3>/player</h3><p>Full file: ranks, value, plus/minus, tape, link.</p></article>
         <article class="tile"><h3>/trade</h3><p>Two sides. Same BK Value curve as the site.</p></article>
-        <article class="tile"><h3>/deals</h3><p>Type a name. Every recent package on the desk tape.</p></article>
+        <article class="tile"><h3>/deals</h3><p>Type a name. Every recent package on the trade tape.</p></article>
         <article class="tile"><h3>/video</h3><p>2025 NFL or college highlight from the player page.</p></article>
         <article class="tile"><h3>/keep-or-cut</h3><p>Theatrical buy/sell with Hot 'n' Cold and The Keep.</p></article>
         <article class="tile"><h3>/top + /pos</h3><p>Leaderboards, or just the QBs / RBs / WRs / TEs.</p></article>
@@ -2591,7 +2592,7 @@ def main():
     x_body = f"""
     <p class="kicker">Fun tape · not news</p>
     <h1>The X</h1>
-    <p class="note">Memes, shitposts, and the jokes the football desk actually laughs at. Pulled from X via Google News — pictures when the wire carries them. Baseball and PitchKeep have their own X pages.</p>
+    <p class="note">Memes, shitposts, and the jokes the football boards actually laugh at. Pulled from X via Google News - pictures when the wire carries them. Baseball and PitchKeep have their own X pages.</p>
     {x_cards("football", 0, esc)}
     <p class="note" style="margin-top:16px"><a href="bk/the-x.html">BasketKeep The X</a> · <a href="bb/the-x.html">Baseball The X</a> · <a href="pl/the-x.html">PitchKeep The X</a></p>
     """
