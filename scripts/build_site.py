@@ -31,11 +31,22 @@ from aggregate_protocol import (  # noqa: E402
     rank_rows,
 )
 from seo import (  # noqa: E402
+    also_on_desk,
+    article_jsonld,
+    breadcrumb_jsonld,
+    breadcrumbs,
     canon,
+    card_alt,
     clip,
+    face_alt,
+    footer_nav,
     head_tags,
     legal_links,
+    person_jsonld,
     rank_spread_graph,
+    related_players_html,
+    related_stories_html,
+    sitemap_xml,
     sports_footer,
     sports_top,
     value_bars,
@@ -739,7 +750,7 @@ def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ba
         f'<img class="mast-mark" src="{esc(logo)}" alt="{esc(alt)}" />'
         f'<div class="mast-copy">'
         f'<p class="mast-kicker">{esc(kicker)}</p>'
-        f"<h2>{mark}</h2>"
+        f"<h1>{mark}</h1>"
         f'<span class="mast-rule" aria-hidden="true"></span>'
         f'<p class="mast-sub">{esc(sub)}</p>'
         f'<p class="mast-url">{esc(url)}</p>'
@@ -893,8 +904,86 @@ FB_SEO = {
     ),
 }
 
+FB_ALSO = {
+    "the-keep.html": [
+        ("board.html", "The Board", "Redraft PPR, this year."),
+        ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
+        ("rookies-2026.html", "2026 Rookies", "Drafted class."),
+        ("trade-superflex.html", "Superflex Calculator", "Keep ranks as BK Value."),
+        ("players/index.html", "Player Pages", "Every Keep name, tape included."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
+    ],
+    "board.html": [
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("redraft-standard.html", "Redraft Standard", "No reception point."),
+        ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
+        ("trade-ppr.html", "PPR Calculator", "Board ranks as BK Value."),
+        ("players/index.html", "Player Pages", "Tape and plus/minus."),
+        ("news.html", "BK News", "Injuries and roster tape."),
+    ],
+    "redraft-superflex.html": [
+        ("the-keep.html", "The Keep", "Superflex dynasty."),
+        ("board.html", "The Board", "Redraft PPR."),
+        ("trade-sf-redraft.html", "SF Redraft Calculator", "This-year Superflex values."),
+        ("rookies-2026.html", "2026 Rookies", "Drafted class."),
+    ],
+    "redraft-standard.html": [
+        ("board.html", "The Board", "Full-PPR redraft."),
+        ("the-keep.html", "The Keep", "Superflex dynasty."),
+        ("trade-standard.html", "Standard Calculator", "No-PPR values."),
+        ("players/index.html", "Player Pages", "Keep and Board files."),
+    ],
+    "rookies-2026.html": [
+        ("the-keep.html", "The Keep", "Where the class lands on the 400."),
+        ("redraft-superflex.html", "Redraft Superflex", "This-year two-QB board."),
+        ("players/index.html", "Player Pages", "Rookie files and tape."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Market tape."),
+    ],
+    "hot-n-cold.html": [
+        ("the-keep.html", "The Keep", "The ranks behind the tape."),
+        ("recent-trades.html", "Recent Deals", "Packages that actually closed."),
+        ("news.html", "BK News", "Injuries moving the market."),
+        ("trade-superflex.html", "Superflex Calculator", "Price the buy."),
+    ],
+    "trade.html": [
+        ("the-keep.html", "The Keep", "Superflex dynasty ranks."),
+        ("board.html", "The Board", "Redraft PPR ranks."),
+        ("recent-trades.html", "Recent Deals", "Packages that closed."),
+        ("players/index.html", "Player Pages", "Every name in the calc."),
+    ],
+    "news.html": [
+        ("the-keep.html", "The Keep", "The ranks the wire moves."),
+        ("players/index.html", "Player Pages", "Files named in the tape."),
+        ("bb/news.html", "BaseKeep News", "Baseball IL and roster."),
+        ("bk/news.html", "BasketKeep News", "NBA injury tape."),
+    ],
+    "players/index.html": [
+        ("the-keep.html", "The Keep", "Superflex dynasty top 400."),
+        ("board.html", "The Board", "Redraft PPR."),
+        ("news.html", "BK News", "Hourly wire."),
+        ("trade.html", "Trade Calculators", "Price any name."),
+    ],
+    "the-x.html": [
+        ("news.html", "BK News", "The actual wire."),
+        ("bk/the-x.html", "BasketKeep The X", "NBA memes."),
+        ("bb/the-x.html", "BaseKeep The X", "MLB memes."),
+        ("pl/the-x.html", "PitchKeep The X", "PL memes."),
+    ],
+    "nfl-schedule.html": [
+        ("the-keep.html", "The Keep", "Dynasty ranks by club."),
+        ("news.html", "BK News", "Injuries on the slate."),
+        ("mlb-schedule.html", "MLB Schedule", "September baseball."),
+    ],
+    "mlb-schedule.html": [
+        ("bb/index.html", "BaseKeep", "The baseball desk."),
+        ("bb/the-keep.html", "BB The Keep", "Dynasty baseball 400."),
+        ("nfl-schedule.html", "NFL Schedule", "Football slate."),
+    ],
+}
 
-def page(title, path, body, extra_js="", depth=0, description=None, image=None, doc_title=None):
+
+def page(title, path, body, extra_js="", depth=0, description=None, image=None, doc_title=None,
+         crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None):
     links = []
     news_here = path == "news.html" or path.startswith("news/")
     for href, label in NAV:
@@ -907,13 +996,15 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
     full_title = doc_title or (packed[0] if packed else f"{title} | Ball Keep")
     desc = description or (packed[1] if packed else f"{title} on Ball Keep. Superflex dynasty rankings, BK Value trade calculator, and BK News. Updated {UPDATED}.")
     img = image or (packed[2] if packed else "img/logo.jpg")
+    foot = footer_nav([(nav_href(h, depth), lab) for h, lab in NAV], nav_href(path, depth))
+    crumb_html = crumbs or ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-{head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep")}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=34" />
+{head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified)}
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=35" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -929,17 +1020,34 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
       <nav>{''.join(links)}</nav>
     </header>
     {sports_top("fb", depth)}
+    {crumb_html}
     {body}
     <footer>
       © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL, MLB, NBA, or Premier League.
+      {foot}
       {legal_links(depth)}
       {sports_footer("fb", depth)}
     </footer>
   </div>
-  {extra_js}
+    {extra_js}
 </body>
 </html>
 """
+
+
+def board_page(title, path, body, extra_js=""):
+    extra = also_on_desk(FB_ALSO.get(path) or [])
+    return page(
+        title,
+        path,
+        body + extra,
+        extra_js,
+        crumbs=breadcrumbs([("Ball Keep", "index.html"), (title, None)]),
+        extra_jsonld=[breadcrumb_jsonld([
+            ("Ball Keep", "https://ballkeep.com/"),
+            (title, canon(path)),
+        ])],
+    )
 
 
 def _rank_th(label):
@@ -975,7 +1083,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
         )
         face = ""
         if faces:
-            face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="" />'
+            face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="{esc(face_alt(r.get("name")))}" loading="lazy" />'
         stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{age_span}{meta}</span>'
         body.append(
             f'<tr data-pos="{esc(pos)}">'
@@ -1091,13 +1199,21 @@ def render_news_pages():
     </script>"""
     body = f"""
     <p class="kicker">BK News · Football · Hourly wire</p>
-    <h2>BK News</h2>
+    <h1>BK News</h1>
     <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball lives on <a href="bb/news.html">BaseKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{filters}</div>
     <div class="news-list" id="news-list">{cards}</div>
+    {also_on_desk(FB_ALSO["news.html"])}
     """
-    write("news.html", page("BK News", "news.html", body, extra))
+    write("news.html", page(
+        "BK News", "news.html", body, extra,
+        crumbs=breadcrumbs([("Ball Keep", "index.html"), ("BK News", None)]),
+        extra_jsonld=[breadcrumb_jsonld([
+            ("Ball Keep", "https://ballkeep.com/"),
+            ("BK News", "https://ballkeep.com/news.html"),
+        ])],
+    ))
 
     urls = ["https://ballkeep.com/news.html"]
     for s in stories:
@@ -1139,10 +1255,11 @@ def render_news_pages():
         else:
             named = '<p class="note" style="margin-top:18px">No Ball Keep player page matched this cluster yet.</p>'
         nsrc = len(sources)
+        related = related_stories_html(stories, s, lambda st: f"{st['slug']}.html")
         story_body = f"""
     <p class="kicker">BK News · {esc(label)}</p>
     <p class="news-meta">{esc(news_when(s.get("updated") or s.get("published") or ""))} · {nsrc} source{"s" if nsrc != 1 else ""}</p>
-    <h2>{esc(s.get("headline") or "Update")}</h2>
+    <h1>{esc(s.get("headline") or "Update")}</h1>
     <section class="panel analysis">
       <p class="kicker">Aggregate</p>
       <p>{esc(s.get("summary") or s.get("blurb") or "")}</p>
@@ -1153,9 +1270,46 @@ def render_news_pages():
       <h3>Links back to the desks</h3>
       {source_html}
     </section>
-    <p class="note" style="margin-top:18px"><a href="../news.html">All BK News</a> · <a href="../players/index.html">Player pages</a></p>
+    {related}
+    <p class="note" style="margin-top:18px"><a href="../news.html">All BK News</a> · <a href="../players/index.html">Player pages</a> · <a href="../the-keep.html">The Keep</a></p>
     """
-        write(f"news/{slug}.html", page(s.get("headline") or "BK News", f"news/{slug}.html", story_body, depth=1, description=clip(s.get("summary") or s.get("blurb") or s.get("headline") or "BK News football story."), image="img/logo.jpg"))
+        story_url = f"https://ballkeep.com/news/{slug}.html"
+        story_desc = clip(s.get("summary") or s.get("blurb") or s.get("headline") or "BK News football story.")
+        write(
+            f"news/{slug}.html",
+            page(
+                s.get("headline") or "BK News",
+                f"news/{slug}.html",
+                story_body,
+                depth=1,
+                description=story_desc,
+                image="img/logo.jpg",
+                crumbs=breadcrumbs([
+                    ("Ball Keep", "../index.html"),
+                    ("BK News", "../news.html"),
+                    (s.get("headline") or "Update", None),
+                ]),
+                extra_jsonld=[
+                    breadcrumb_jsonld([
+                        ("Ball Keep", "https://ballkeep.com/"),
+                        ("BK News", "https://ballkeep.com/news.html"),
+                        (s.get("headline") or "Update", story_url),
+                    ]),
+                    article_jsonld(
+                        s.get("headline") or "BK News",
+                        story_url,
+                        story_desc,
+                        published=s.get("published") or "",
+                        modified=s.get("updated") or "",
+                        image="img/logo.jpg",
+                        brand="Ball Keep",
+                    ),
+                ],
+                og_type="article",
+                published=s.get("published"),
+                modified=s.get("updated"),
+            ),
+        )
         urls.append(f"https://ballkeep.com/news/{slug}.html")
     return urls
 
@@ -1386,21 +1540,32 @@ def ff_boards_table(p):
     )
 
 
-def ff_neighbors(profiles, p):
-    if "The Keep" not in (p.get("lists") or {}):
-        return ""
-    keepers = [x for x in profiles if "The Keep" in (x.get("lists") or {})]
-    keepers.sort(key=lambda x: x["lists"]["The Keep"])
-    idx = next((i for i, x in enumerate(keepers) if x["key"] == p["key"]), None)
-    if idx is None:
-        return ""
-    window = keepers[max(0, idx - 2) : idx] + keepers[idx + 1 : idx + 3]
-    if not window:
-        return ""
-    links = " · ".join(
-        f'{player_anchor(x["name"], 1)} (#{x["lists"]["The Keep"]})' for x in window
+def ff_related(profiles, p):
+    lists = p.get("lists") or {}
+    if "The Keep" in lists:
+        board = [x for x in profiles if "The Keep" in (x.get("lists") or {})]
+        board.sort(key=lambda x: x["lists"]["The Keep"])
+        nearby_label = "On The Keep nearby"
+        rank_of = lambda x: x["lists"]["The Keep"]
+    elif lists.get("The Board") or lists.get("Redraft PPR"):
+        board = [x for x in profiles if (x.get("lists") or {}).get("The Board") or (x.get("lists") or {}).get("Redraft PPR")]
+        board.sort(key=lambda x: x["lists"].get("The Board") or x["lists"].get("Redraft PPR") or 999)
+        nearby_label = "On The Board nearby"
+        rank_of = lambda x: x["lists"].get("The Board") or x["lists"].get("Redraft PPR")
+    else:
+        board = list(profiles)
+        nearby_label = "Nearby on the desk"
+        rank_of = lambda x: 0
+    normed = [{**x, "bk": rank_of(x)} for x in board]
+    current = {**p, "bk": rank_of(p)}
+    return related_players_html(
+        normed,
+        current,
+        lambda r: f"{r['slug']}.html",
+        nearby_label=nearby_label,
+        pos_label="Same position",
+        team_label="Same club",
     )
-    return f'<p class="note" style="margin-top:18px"><strong>On The Keep nearby</strong> — {links}</p>'
 
 
 def render_player_pages(profiles):
@@ -1443,9 +1608,9 @@ def render_player_pages(profiles):
 
         photo = ""
         if img:
-            photo = f'<img src="{asset(img, 1)}" alt="{esc(p["name"])} headshot" />'
+            photo = f'<img src="{asset(img, 1)}" alt="{esc(face_alt(p["name"]))}" />'
         else:
-            photo = f'<img src="{asset("img/logo.jpg", 1)}" alt="" />'
+            photo = f'<img src="{asset("img/logo.jpg", 1)}" alt="{esc(card_alt(p["name"]))}" />'
 
         video = ""
         if yt:
@@ -1491,17 +1656,49 @@ def render_player_pages(profiles):
     {ff_boards_table(p)}
     {video}
     {news_block}
-    {ff_neighbors(profiles, p)}
-    <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../recent-trades.html?q={esc(p["name"])}">Recent deals</a> · <a href="../hot-n-cold.html">Hot 'n' Cold</a> · <a href="../news.html">BK News</a></p>
+    {ff_related(profiles, p)}
+    <p class="note" style="margin-top:18px"><a href="index.html">All player pages</a> · <a href="../the-keep.html">The Keep</a> · <a href="../board.html">The Board</a> · <a href="../recent-trades.html?q={esc(p["name"])}">Recent deals</a> · <a href="../hot-n-cold.html">Hot 'n' Cold</a> · <a href="../news.html">BK News</a> · <a href="../trade-superflex.html">Trade calculator</a></p>
     """
         seo_title, seo_desc = ff_player_seo(p)
-        write(f"players/{p['slug']}.html", page(p["name"], f"players/{p['slug']}.html", body, depth=1, doc_title=seo_title, description=seo_desc, image=img or "img/logo.jpg"))
+        player_url_abs = f"https://ballkeep.com/players/{p['slug']}.html"
+        write(
+            f"players/{p['slug']}.html",
+            page(
+                p["name"],
+                f"players/{p['slug']}.html",
+                body,
+                depth=1,
+                doc_title=seo_title,
+                description=seo_desc,
+                image=img or "img/logo.jpg",
+                crumbs=breadcrumbs([
+                    ("Ball Keep", "../index.html"),
+                    ("Players", "index.html"),
+                    (p["name"], None),
+                ]),
+                extra_jsonld=[
+                    breadcrumb_jsonld([
+                        ("Ball Keep", "https://ballkeep.com/"),
+                        ("Players", "https://ballkeep.com/players/"),
+                        (p["name"], player_url_abs),
+                    ]),
+                    person_jsonld(
+                        p["name"],
+                        player_url_abs,
+                        pos=p.get("pos") or "",
+                        team=p.get("team") or "",
+                        image=img or "img/logo.jpg",
+                        description=seo_desc,
+                    ),
+                ],
+            ),
+        )
         keep_html.add(f"{p['slug']}.html")
 
         thumb = asset(img, 1) if img else asset("img/logo.jpg", 1)
         cards.append(
             f'<a class="tile player-card" href="{p["slug"]}.html" data-pos="{esc(p.get("pos") or "")}">'
-            f'<img src="{thumb}" alt="" />'
+            f'<img src="{thumb}" alt="{esc(face_alt(p["name"]))}" />'
             f'<h3>{esc(p["name"])}</h3>'
             f'<p class="note">{esc(p["pos"])} {esc(p["team"])}</p></a>'
         )
@@ -1512,7 +1709,7 @@ def render_player_pages(profiles):
 
     hub = f"""
     <p class="kicker">Depth Chart · {UPDATED}</p>
-    <h2>Player Pages</h2>
+    <h1>Player Pages</h1>
     <p class="note">The Keep top 400, The Board (redraft PPR), Superflex redraft, 2026 rookies, and Hot 'n' Cold. Ranks, board dump, tape. Filter by position.</p>
     <p class="note">Position</p>
     <div class="filters" id="hub-pos"><button type="button" class="active" data-pos="all">All</button>
@@ -1522,6 +1719,12 @@ def render_player_pages(profiles):
       <button type="button" data-pos="TE">TE</button>
     </div>
     <div class="player-grid">{''.join(cards)}</div>
+    {also_on_desk([
+        ("../the-keep.html", "The Keep", "Superflex dynasty top 400."),
+        ("../board.html", "The Board", "Redraft PPR."),
+        ("../news.html", "BK News", "Hourly wire."),
+        ("../trade.html", "Trade Calculators", "Price any name."),
+    ])}
     """
     hub_js = """<script>
     const box = document.getElementById('hub-pos');
@@ -1535,7 +1738,14 @@ def render_player_pages(profiles):
       });
     });
     </script>"""
-    write("players/index.html", page("Players", "players/index.html", hub, hub_js, depth=1))
+    write("players/index.html", page(
+        "Players", "players/index.html", hub, hub_js, depth=1,
+        crumbs=breadcrumbs([("Ball Keep", "../index.html"), ("Players", None)]),
+        extra_jsonld=[breadcrumb_jsonld([
+            ("Ball Keep", "https://ballkeep.com/"),
+            ("Players", "https://ballkeep.com/players/"),
+        ])],
+    ))
 
     urls = ["https://ballkeep.com/players/"] + [
         f"https://ballkeep.com/players/{p['slug']}.html" for p in profiles
@@ -1570,7 +1780,7 @@ def trade_mode_page(mode, payload):
     )
     body = f"""
     <p class="kicker">Trade Calculator · {esc(payload["label"])}</p>
-    <h2>{esc(payload["label"])}</h2>
+    <h1>{esc(payload["label"])}</h1>
     <p class="note">{esc(payload["blurb"])} {picks_note} Fair means the sides are within 8%.</p>
     <p class="filters">
       <a href="trade.html">All Calculators</a>
@@ -1648,14 +1858,14 @@ def write_trade_pages(keep, board, ppr, std):
     ]
     hub = f"""
     <p class="kicker">Trade Calculators</p>
-    <h2>Five Calculators, One Curve</h2>
+    <h1>Five Calculators, One Curve</h1>
     <p class="note">Every name on a Ball Keep list has a rank. That rank becomes <strong>BK Value</strong>: rank 1 is 12,000, and the number falls on a decaying curve so the drop from 1 to 2 is larger than 50 to 51. A late first (~rank 28) is about 28% of the 1.01. Trade math is just adding those numbers on two sides.</p>
     <p class="note">Use Superflex for two-QB leagues, 1QB when a passer is just another starter, and the redraft calculators when the deal is for this season only.</p>
     <div class="grid" style="margin-top:16px">
       {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
     </div>
     """
-    write("trade.html", page("Trade Calculators", "trade.html", hub))
+    write("trade.html", board_page("Trade Calculators", "trade.html", hub))
 
 
 def write_recent_trades_page(deals):
@@ -1702,7 +1912,7 @@ def write_recent_trades_page(deals):
     )
     body = f"""
     <p class="kicker">Desk Tape · {UPDATED}</p>
-    <h2>Recent Deals</h2>
+    <h1>Recent Deals</h1>
     <p class="note">Type a player. Superflex, 1QB, asking prices, and deals that actually closed. BK Value on both sides.</p>
     <div class="trade-search deals-search">
       <label for="deal-q">Player</label>
@@ -1899,7 +2109,7 @@ def main():
         )
     keep_body = f"""
     <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} desks</p>
-    <h2>The Keep</h2>
+    <h1>The Keep</h1>
     <p class="note">This is the big one. Superflex Dynasty. Top 400. {len(KEEP_SOURCES)} desks. Half the vote is the four long boards, half is everyone else. The Board next door is Redraft PPR — this year, one quarterback, a point per catch.</p>
     <p class="note">Position</p>
     <div class="filters" id="keep-pos"><button type="button" class="active" data-pos="all">All</button>
@@ -1924,7 +2134,7 @@ def main():
       });
     });
     </script>"""
-    write("the-keep.html", page("The Keep", "the-keep.html", keep_body, keep_js))
+    write("the-keep.html", board_page("The Keep", "the-keep.html", keep_body, keep_js))
 
     # REDRAFT
     def ppr_extra(r):
@@ -1936,30 +2146,30 @@ def main():
         )
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR</p>
-    <h2>The Board</h2>
+    <h1>The Board</h1>
     <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 27), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
     <div class="panel">{rank_table(ppr, ["Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
     """
-    write("board.html", page("The Board", "board.html", ppr_body))
+    write("board.html", board_page("The Board", "board.html", ppr_body))
     write("redraft-ppr.html", page(
         "The Board",
         "redraft-ppr.html",
-        '<p class="kicker">Moved</p><h2>The Board</h2>'
+        '<p class="kicker">Moved</p><h1>The Board</h1>'
         '<p class="note">Redraft PPR now lives on <a href="board.html">The Board</a>.</p>'
         '<p><a class="cta" href="board.html">The Board · Redraft PPR</a></p>',
     ))
 
     std_body = f"""
     <p class="kicker">2026 Redraft · Standard</p>
-    <h2>Redraft Standard</h2>
+    <h1>Redraft Standard</h1>
     <p class="note">Standard (no extra point per catch) is a different sport than PPR. We start from the PPR consensus above, then apply Ball Keep positional taxes used across major STD vs PPR deltas: running backs −4.5 ranks, receivers +3, tight ends +2, quarterbacks +0.5. Result: Bijan / Gibbs / CMC / Henry / Taylor climb; Chase / Puka / JSN still go early but not as automatic 1.01s.</p>
     <div class="panel">{rank_table(std, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(std, 12, "#c8102e", "Standard value graph")}
     {sources_panel(PPR_SOURCES + [("Ball Keep Standard Tax", "", "RB −4.5 ranks, WR +3, TE +2, QB +0.5 applied to the PPR consensus.")], heading="Boards in This Aggregate")}
     """
-    write("redraft-standard.html", page("Redraft Standard", "redraft-standard.html", std_body))
+    write("redraft-standard.html", board_page("Redraft Standard", "redraft-standard.html", std_body))
 
     # ROOKIES
     rook_rows = []
@@ -1975,13 +2185,13 @@ def main():
     attach_values(rook_rows)
     rook_body = f"""
     <p class="kicker">2026 NFL Draft Class</p>
-    <h2>Notable Drafted Rookies</h2>
+    <h1>Notable Drafted Rookies</h1>
     <p class="note">Superflex rookie consensus from Dynasty Dealer (13-analyst team board, July 30), FantasyPros Superflex Rookie ECR (August), and PFF's Superflex rookie column (Love / Mendoza / Tate locked 1-2-3). BK Value uses this rookie-board rank on the same curve as The Keep. The note is startup / rookie-draft language, not salary-cap dollars.</p>
     <div class="panel">{rank_table(rook_rows, ["Avg", "Dealer", "FP", "PFF", "BK Value", "Note"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["dd"]}</td><td class="desk-only">{r["fp"]}</td><td class="desk-only">{r["pff"]}</td><td class="c-val val">{fmt_val(r["value"])}</td><td class="note desk-only">{esc(r["blurb"])}</td>')}</div>
     {value_bars(rook_rows, 12, "#c8102e", "Rookie value graph")}
     {sources_panel(ROOKIE_SOURCES, heading="Boards in This Aggregate")}
     """
-    write("rookies-2026.html", page("2026 Rookies", "rookies-2026.html", rook_body))
+    write("rookies-2026.html", board_page("2026 Rookies", "rookies-2026.html", rook_body))
 
     # HOT COLD
     def hc_cards(items, cls):
@@ -1995,7 +2205,7 @@ def main():
         return "".join(out)
     hc_body = f"""
     <p class="kicker">Market Tape · {UPDATED}</p>
-    <h2>BK Hot 'n' Cold</h2>
+    <h1>BK Hot 'n' Cold</h1>
     <p class="note">Rising names to Buy and aging / overpriced names to Sell, pulled from DLF trending notes (Aug 16), Sports Arena trade targets (Aug 11), Draft Sharks (Aug 14), FantasyPros Trade Value Chart show (August), and the Fantasy Footballers dynasty trade episode on YouTube.</p>
     <div class="grid">
       <div>
@@ -2015,7 +2225,7 @@ def main():
         ("Fantasy Footballers", "", "Dynasty trade episode on YouTube."),
     ], heading="Boards in This Aggregate")}
     """
-    write("hot-n-cold.html", page("Hot 'n' Cold", "hot-n-cold.html", hc_body))
+    write("hot-n-cold.html", board_page("Hot 'n' Cold", "hot-n-cold.html", hc_body))
 
     # LONG BOARD
     def board_extra(r):
@@ -2039,7 +2249,7 @@ def main():
         )
     sf_body = f"""
     <p class="kicker">Superflex Redraft · this year</p>
-    <h2>Redraft Superflex</h2>
+    <h1>Redraft Superflex</h1>
     <p class="note">This list is Superflex for this season — {len(sf_redraft)} names. The Keep is Superflex Dynasty. The Board is Redraft PPR. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks.</p>
     <div class="panel">{rank_table(sf_redraft, ["Keep SF", "PPR", "Score", "BK Value"], board_redraft_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(sf_redraft, 12, "#1e8fc2", "Superflex redraft value graph")}
@@ -2048,7 +2258,7 @@ def main():
         ("Field Yates / FantasyPros PPR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "This-year skill-player board."),
     ], heading="How Superflex Redraft is built")}
     """
-    write("redraft-superflex.html", page("Redraft Superflex", "redraft-superflex.html", sf_body))
+    write("redraft-superflex.html", board_page("Redraft Superflex", "redraft-superflex.html", sf_body))
 
     # NFL schedule
     weeks = sorted({g["week"] for g in nfl})
@@ -2060,7 +2270,7 @@ def main():
     )
     nfl_body = f"""
     <p class="kicker">2026 NFL Regular Season</p>
-    <h2>NFL Schedule</h2>
+    <h1>NFL Schedule</h1>
     <p class="note">Full slate from NFL Football Operations (released May 14). Kickoff is Wednesday, Sept. 9 in Seattle. Filter by week or club for the individual team schedule. International sites: Melbourne, Rio, London, Paris, Madrid, Munich, Mexico City.</p>
     <p class="note">Weeks</p>
     <div class="filters" id="weeks"><button type="button" class="active" data-week="all">All</button>{week_btns}</div>
@@ -2099,7 +2309,7 @@ def main():
     bind('teams', 'team', v => team = v);
     render();
     </script>"""
-    write("nfl-schedule.html", page("NFL Schedule", "nfl-schedule.html", nfl_body, nfl_js))
+    write("nfl-schedule.html", board_page("NFL Schedule", "nfl-schedule.html", nfl_body, nfl_js))
 
     # MLB September
     mlb_games = []
@@ -2124,7 +2334,7 @@ def main():
     mlb_btns = "".join(f'<button type="button" data-team="{esc(a)}">{esc(a)}</button>' for a in mlb_abbrs)
     mlb_body = f"""
     <p class="kicker">MLB · Stretch Run</p>
-    <h2>Baseball Schedules</h2>
+    <h1>Baseball Schedules</h1>
     <p class="note">Today is Aug. 20, 2026 — the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027–2031 heavier than this month's box score; redraft baseball is only this month.</p>
     <div class="filters" id="mlb-teams"><button type="button" class="active" data-team="all">All clubs</button>{mlb_btns}</div>
     <div class="panel table-wrap" id="mlb-games"></div>
@@ -2144,14 +2354,14 @@ def main():
     }});
     render();
     </script>"""
-    write("mlb-schedule.html", page("MLB Schedule", "mlb-schedule.html", mlb_body, mlb_js))
+    write("mlb-schedule.html", board_page("MLB Schedule", "mlb-schedule.html", mlb_body, mlb_js))
 
     # Discord
     disc = """
     <div class="panel discord-hero">
       <img src="img/discord.jpg" alt="Ball Keep circular Discord logo" />
       <p class="kicker">Community</p>
-      <h2>Ball Keep on Discord</h2>
+      <h1>Ball Keep on Discord</h1>
       <p class="note">Red primary. White BK. Black ring. The bot is the desk in the server: every Keep rank, every player file, every highlight, and the trade calculator — searchable in Discord the same way they are on the site.</p>
       <a class="cta" href="https://github.com/balsalah51/BallKeep/tree/main/bot">Run the Ball Keep bot</a>
     </div>
@@ -2179,17 +2389,17 @@ def main():
 
     x_body = f"""
     <p class="kicker">Fun tape · not news</p>
-    <h2>The X</h2>
+    <h1>The X</h1>
     <p class="note">Memes, shitposts, and the jokes the football desk actually laughs at. Pulled from X via Google News — pictures when the wire carries them. Baseball and PitchKeep have their own X pages.</p>
     {x_cards("football", 0, esc)}
     <p class="note" style="margin-top:16px"><a href="bk/the-x.html">BasketKeep The X</a> · <a href="bb/the-x.html">Baseball The X</a> · <a href="pl/the-x.html">PitchKeep The X</a></p>
     """
-    write("the-x.html", page("The X", "the-x.html", x_body))
+    write("the-x.html", board_page("The X", "the-x.html", x_body))
 
     privacy = """
     <section class="panel policy">
       <p class="kicker">Legal</p>
-      <h2>Privacy Policy</h2>
+      <h1>Privacy Policy</h1>
       <p class="note">Last updated: August 23, 2026</p>
       <p>Ball Keep ("we," "us," or "this site") respects your privacy. This Privacy Policy explains what information we collect when you visit ballkeep.com (and its BaseKeep, BasketKeep, and PitchKeep sections), how we use it, and the choices you have.</p>
 
@@ -2264,12 +2474,7 @@ def main():
     sitemap.extend(bk.get("urls") or [])
     pl = write_pitch_site()
     sitemap.extend(pl.get("urls") or [])
-    (ROOT / "sitemap.xml").write_text(
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"  <url><loc>{u}</loc></url>\n" for u in sitemap)
-        + "</urlset>\n"
-    )
+    (ROOT / "sitemap.xml").write_text(sitemap_xml(sitemap, "2026-08-27"))
 
     cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk, sf_redraft)
     print(
