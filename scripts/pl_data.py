@@ -11,11 +11,12 @@ published 2026/27 pro lists). Unranked names are skipped — never 999.
 from __future__ import annotations
 
 import json
-import math
 import re
 import unicodedata
 from datetime import date
 from pathlib import Path
+
+from bk_curve import bk_value
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -156,12 +157,6 @@ def pl_norm(name: str) -> str:
         "juanlu sanchez": "sanchez",
     }
     return aliases.get(n, n)
-
-
-def bk_value(rank, mult=1.0):
-    if not rank or rank <= 0:
-        return 0
-    return int(round(12000 * math.exp(-0.0165 * (rank - 1)) / (rank ** 0.18) * mult))
 
 
 def display_name(e):

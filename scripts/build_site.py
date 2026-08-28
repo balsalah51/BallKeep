@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import html
 import json
-import math
 import re
 import sys
 from collections import OrderedDict, defaultdict
@@ -17,6 +16,7 @@ KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from bk_curve import ALGORITHM, bk_value  # noqa: E402
 from extra_ranks import (  # noqa: E402
     DRAFT_SHARKS_SF,
     ESPN_KARABELL_FLEX,
@@ -374,19 +374,6 @@ def meta_map(pfn_rows):
     for r in pfn_rows:
         m[norm_name(r["name"])] = r
     return m
-
-
-def bk_value(rank, qb_mult: float = 1.0) -> int:
-    """Turn a 1-indexed list rank into Ball Keep trade value.
-
-    Rank 1 is 12,000. Value falls on an exponential curve with a mild
-    rank-power so the cliff from 1.01 to 1.02 is real, a late first sits
-    near 28% of the 1.01, and rank 100 still has a tradable number.
-    """
-    if not rank or rank < 1:
-        return 0
-    raw = 12000 * math.exp(-0.0165 * (rank - 1)) / (rank ** 0.18)
-    return max(1, int(round(raw * qb_mult)))
 
 
 def fmt_val(n: int) -> str:
@@ -1842,7 +1829,7 @@ def write_trade_pages(keep, board, ppr, std):
     }
     (ROOT / "data/trade-values.json").write_text(json.dumps({
         "updated": UPDATED,
-        "algorithm": "value = round(12000 * exp(-0.0165 * (rank-1)) / rank**0.18). 1QB multiplies QB value by 0.38. Picks map to equivalent ranks on that curve.",
+        "algorithm": ALGORITHM,
         "modes": modes,
     }, indent=2, default=str))
     for key, payload in modes.items():
@@ -1859,7 +1846,7 @@ def write_trade_pages(keep, board, ppr, std):
     hub = f"""
     <p class="kicker">Trade Calculators</p>
     <h1>Five Calculators, One Curve</h1>
-    <p class="note">Every name on a Ball Keep list has a rank. That rank becomes <strong>BK Value</strong>: rank 1 is 12,000, and the number falls on a decaying curve so the drop from 1 to 2 is larger than 50 to 51. A late first (~rank 28) is about 28% of the 1.01. Trade math is just adding those numbers on two sides.</p>
+    <p class="note">Every name on a Ball Keep list has a rank. That rank becomes <strong>BK Value</strong>: rank 1 is 12,000, and the number falls on a decaying curve so the drop from 1 to 2 is larger than 50 to 51. A late first (~rank 28) is about half the 1.01. Rank 80 still holds about 29%. Trade math is just adding those numbers on two sides.</p>
     <p class="note">Use Superflex for two-QB leagues, 1QB when a passer is just another starter, and the redraft calculators when the deal is for this season only.</p>
     <div class="grid" style="margin-top:16px">
       {''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in tiles)}
@@ -2555,7 +2542,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
     catalog = {
         "updated": UPDATED,
         "site": "https://ballkeep.com",
-        "algorithm": "value = round(12000 * exp(-0.0165 * (rank-1)) / rank**0.18). 1QB multiplies QB value by 0.38.",
+        "algorithm": ALGORITHM,
         "sources": [name for name, _url, _note in KEEP_SOURCES],
         "keep": [slim_row(r, ("ranks", "age", "n", "avg")) for r in keep],
         "board_format": "redraft PPR",
