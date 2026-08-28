@@ -171,6 +171,18 @@ tr:hover td { background: rgba(0, 200, 83, 0.06); }
   border-radius: 999px; padding: 7px 12px; font-weight: 800; cursor: pointer; font-size: 13px; text-decoration: none;
 }
 .filters button.active, .filters a.active { background: var(--purple); color: #fff; border-color: var(--purple); }
+.rank-bar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 4px 0 16px;
+}
+.rank-bar .rank-search { margin: 0; flex: 1 1 240px; max-width: 420px; }
+.rank-bar .filters { margin: 0; }
+.rank-search-input {
+  width: 100%; border: 2px solid var(--line); background: #fff; color: var(--ink);
+  font: 600 15px/1.2 inherit; padding: 10px 14px; border-radius: 999px;
+}
+.rank-search-input:focus {
+  outline: 2px solid var(--purple); outline-offset: 1px; border-color: var(--purple);
+}
 .sources-box { margin-top: 22px; }
 .sources-box ol { margin: 0; padding-left: 22px; }
 footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }

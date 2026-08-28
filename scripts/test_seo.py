@@ -24,6 +24,8 @@ from seo import (  # noqa: E402
     related_stories_html,
     robots_txt,
     rss_xml,
+    rank_search_bar,
+    rank_search_key,
     strip_em,
     sitemap_xml,
     video_jsonld,
@@ -179,6 +181,18 @@ def test_sitemap_images_and_website():
 
 def test_clip():
     assert len(clip("word " * 80, 168)) <= 168
+
+
+def test_rank_search_bar():
+    html = rank_search_bar('<div class="filters" id="keep-pos"></div>')
+    assert 'class="rank-bar"' in html
+    assert 'class="rank-search-input"' in html
+    assert 'type="search"' in html
+    assert "Find a player" in html
+    assert "applyRankFilter" in html
+    assert "keep-pos" in html
+    assert rank_search_key("Josh Allen", "QB", "BUF") == "josh allen qb buf"
+    assert "&#x27;" in rank_search_key("Ja'Marr Chase")
 
 
 if __name__ == "__main__":

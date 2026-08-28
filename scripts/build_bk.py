@@ -46,6 +46,8 @@ from seo import (  # noqa: E402
     legal_links,
     person_jsonld,
     rank_list_jsonld,
+    rank_search_bar,
+    rank_search_key,
     related_players_html,
     related_stories_html,
     sports_footer,
@@ -321,7 +323,7 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bk/"), image=img, brand="BasketKeep", brand_url="https://ballkeep.com/bk/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=36" />
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=37" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
 <body>
@@ -400,8 +402,9 @@ def rank_table(rows, extra_headers=None, extra_cells=None, show_age=True):
         href = f"players/{slugify(r['name'])}.html"
         name = f'<a class="player-link" href="{href}"><strong>{esc(r["name"])}</strong></a>'
         stack = f'<span class="name-stack">{name}{age_span}{meta}</span>'
+        dn = rank_search_key(r.get("name"), pos, team, r.get("group"))
         body.append(
-            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or "")}">'
+            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or "")}" data-name="{dn}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
             f'<td class="c-name">{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
@@ -422,10 +425,11 @@ def filter_js(keys):
     html_f = f'<div class="filters" id="pos-f">{"".join(btns)}</div>'
     js = """<script>
     const box = document.getElementById('pos-f');
-    box.addEventListener('click', e => {
+    if (box) box.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
       box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
       b.classList.add('active');
+      if (window.applyRankFilter) { applyRankFilter(); return; }
       const p = b.dataset.pos;
       document.querySelectorAll('tbody tr').forEach(tr => {
         const hit = p === 'all' || tr.dataset.pos === p || tr.dataset.group === p;
@@ -943,7 +947,7 @@ def write_basket_site():
     <p class="kicker">Keystone · Dynasty basketball</p>
     <h1>The Keep</h1>
     <p class="note">This is the big one. Dynasty basketball top {len(keep)}, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - 18 boards. Unranked is skipped, never 999. BK Value uses the same decaying curve as football (12,000 at 1.01). The Board next door is this-year redraft.</p>
-    {flt}
+    {rank_search_bar(flt)}
     <div class="panel">{rank_table(keep, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     {value_bars(keep, 12, "#e87722", "Keep value graph")}
     {sources_panel()}
@@ -972,6 +976,7 @@ def write_basket_site():
     <p class="kicker">Redraft · this year</p>
     <h1>The Board</h1>
     <p class="note">The Board is redraft - {len(board)} names, this season only. Use this list for 2026-27 startups. The Keep is dynasty.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(board, ["Keep", "BK Value"], board_extra)}</div>
     {value_bars(board, 12, "#1a1208", "Board value graph")}
     """
@@ -981,6 +986,7 @@ def write_basket_site():
     <p class="kicker">Guards only</p>
     <h1>Guards</h1>
     <p class="note">Point guards and shooting guards, re-ranked among themselves from The Keep.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(guards, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
     write("bk/guards.html", bk_board_page("Guards", "guards.html", g_body))
@@ -989,6 +995,7 @@ def write_basket_site():
     <p class="kicker">Wings only</p>
     <h1>Wings</h1>
     <p class="note">Small forwards and power forwards. The Keep, forwards only.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(wings, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
     write("bk/wings.html", bk_board_page("Wings", "wings.html", w_body))
@@ -997,6 +1004,7 @@ def write_basket_site():
     <p class="kicker">Centers only</p>
     <h1>Bigs</h1>
     <p class="note">The fives. Wemby is the 1.01. Jokic is the this-year argument.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(bigs, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
     write("bk/bigs.html", bk_board_page("Bigs", "bigs.html", b_body))

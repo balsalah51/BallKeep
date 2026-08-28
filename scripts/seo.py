@@ -931,6 +931,80 @@ def news_sitemap_xml(entries: list) -> str:
     )
 
 
+def rank_search_key(*parts: str) -> str:
+    """Lowercased name/pos/team blob for ranking-row search."""
+    bits = []
+    seen = set()
+    for p in parts:
+        t = " ".join(str(p or "").split())
+        if not t:
+            continue
+        key = t.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        bits.append(t)
+    return html.escape(" ".join(bits).lower(), quote=True)
+
+
+def rank_search_js() -> str:
+    return """<script>
+(function () {
+  function needle() {
+    var inp = document.querySelector(".rank-search-input");
+    return inp ? String(inp.value || "").trim().toLowerCase() : "";
+  }
+  function wantPos() {
+    var btn = document.querySelector(".rank-bar .filters button.active")
+      || document.querySelector(".filters button.active");
+    if (!btn) return "all";
+    return String(btn.getAttribute("data-pos") || btn.getAttribute("data-group") || "all").toLowerCase();
+  }
+  window.applyRankFilter = function () {
+    var q = needle();
+    var pos = wantPos();
+    document.querySelectorAll("table.rank-table tbody tr").forEach(function (tr) {
+      var hay = (tr.getAttribute("data-name") || "").toLowerCase();
+      var nameOk = !q || hay.indexOf(q) !== -1;
+      var rowPos = (tr.getAttribute("data-pos") || "").toLowerCase();
+      var rowGroup = (tr.getAttribute("data-group") || "").toLowerCase();
+      var posOk = pos === "all" || rowPos === pos || rowGroup === pos;
+      tr.style.display = (nameOk && posOk) ? "" : "none";
+    });
+  };
+  document.addEventListener("input", function (e) {
+    if (e.target && e.target.classList && e.target.classList.contains("rank-search-input")) {
+      window.applyRankFilter();
+    }
+  });
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest(".rank-bar .filters button");
+    if (!b) return;
+    var box = b.closest(".filters");
+    if (!box) return;
+    box.querySelectorAll("button").forEach(function (x) { x.classList.remove("active"); });
+    b.classList.add("active");
+    window.applyRankFilter();
+  });
+})();
+</script>
+"""
+
+
+def rank_search_bar(filters: str = "") -> str:
+    """Player search plus optional position chips above a ranking table."""
+    return (
+        '<div class="rank-bar">'
+        '<p class="rank-search">'
+        '<input type="search" class="rank-search-input" placeholder="Find a player" '
+        'aria-label="Find a player" autocomplete="off" spellcheck="false">'
+        "</p>"
+        f"{filters}"
+        "</div>"
+        + rank_search_js()
+    )
+
+
 def robots_txt(sitemaps: list) -> str:
     lines = [
         "User-agent: *",
