@@ -39,17 +39,21 @@ from seo import (  # noqa: E402
     card_alt,
     clip,
     face_alt,
+    faq_html,
+    faq_jsonld,
     footer_nav,
     grafs_html,
     head_tags,
     legal_links,
     person_jsonld,
+    rank_list_jsonld,
     rank_spread_graph,
     related_players_html,
     related_stories_html,
     sports_footer,
     sports_top,
     value_bars,
+    website_jsonld,
 )
 
 
@@ -296,9 +300,29 @@ BB_ALSO = {
     ],
 }
 
+BB_HOME_FAQ = [
+    ("What is BaseKeep?", "Baseball desk on Ball Keep. The Keep is dynasty overall top 400 from 23 boards. The Diamond is this-year redraft. Same BK Value curve as football."),
+    ("How is The Keep ranked?", "Average of every source that ranked the player. Unranked is skipped, never 999. Two of the boards run 500 names long."),
+    ("Where is the MLB news?", "BK News on this desk clusters IL, roster, DFA, and manager tape hourly."),
+]
+BB_KEEP_FAQ = [
+    ("What is The Keep on BaseKeep?", "Dynasty baseball top 400, rebuilt August 27, 2026. 23-board aggregate including RotoGraphs and The Dynasty Guru."),
+    ("How does BK Value work here?", "Keep rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%."),
+    ("Where are hitters and pitchers split?", "The Lineup is bats. BK's Pitchers is arms. Ohtani lives on both sides of that split."),
+]
+BB_TRADE_FAQ = [
+    ("How does the baseball calculator work?", "Rank becomes BK Value the same way it does on football. Rank 1 is 12,000. Fair is within 8%."),
+    ("Which calc should I use?", "Keep for overall dynasty. Lineup or Pitchers when the deal is bats or arms. The Diamond for this-year redraft."),
+]
+BB_NEWS_FAQ = [
+    ("Where does BaseKeep news come from?", "Hourly clusters from MLB RSS, Google News, X, and YouTube, linked to Keep player files."),
+    ("How often does it refresh?", "The scrape runs every hour with the rest of Ball Keep."),
+]
+
 
 def bb_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None,
-            crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None):
+            crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
+            robots=None):
     prefix = "../" * depth
     links = []
     for href, label in BB_NAV:
@@ -316,15 +340,15 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-{head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseKeep", brand_url="https://ballkeep.com/bb/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified)}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=33" />
+{head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseKeep", brand_url="https://ballkeep.com/bb/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
+  <link rel="stylesheet" href="{prefix}css/bb.css?v=34" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
 </head>
 <body>
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{'index.html' if depth == 1 else '../index.html'}">
-        <img src="{prefix}img/bb-logo.jpg" alt="BaseKeep circular baseball logo" />
+        <img src="{prefix}img/bb-logo.jpg" alt="BaseKeep circular baseball logo" width="56" height="56" />
         <div>
           <p class="brand-title">{wordmark()}</p>
           <p>The Keep · The Diamond</p>
@@ -348,16 +372,20 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
 """
 
 
-def bb_board_page(title, path, body, extra_js="", depth=1):
+def bb_board_page(title, path, body, extra_js="", depth=1, extra_jsonld=None):
     extra = also_on_desk(BB_ALSO.get(path) or [])
     home = "index.html" if depth == 1 else "../index.html"
+    ld = [breadcrumb_jsonld([
+        ("BaseKeep", "https://ballkeep.com/bb/"),
+        (title, canon(path, "bb/")),
+    ])]
+    for blob in extra_jsonld or []:
+        if blob:
+            ld.append(blob)
     return bb_page(
         title, path, body + extra, extra_js, depth=depth,
         crumbs=breadcrumbs([("BaseKeep", home), (title, None)]),
-        extra_jsonld=[breadcrumb_jsonld([
-            ("BaseKeep", "https://ballkeep.com/bb/"),
-            (title, canon(path, "bb/")),
-        ])],
+        extra_jsonld=ld,
     )
 
 
@@ -1061,6 +1089,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
                         team=r.get("team") or media.get("team") or "",
                         image=img,
                         description=seo_desc,
+                        sport="Baseball",
                     ),
                 ],
             ),
@@ -1302,15 +1331,19 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{''.join(chips)}</div>
     <div class="news-list" id="news-list">{cards}</div>
+    {faq_html(BB_NEWS_FAQ, heading="How the baseball wire works.")}
     {also_on_desk(BB_ALSO["news.html"])}
     """
     write("bb/news.html", bb_page(
         "BK News", "news.html", body, extra,
         crumbs=breadcrumbs([("BaseKeep", "index.html"), ("BK News", None)]),
-        extra_jsonld=[breadcrumb_jsonld([
-            ("BaseKeep", "https://ballkeep.com/bb/"),
-            ("BK News", "https://ballkeep.com/bb/news.html"),
-        ])],
+        extra_jsonld=[
+            breadcrumb_jsonld([
+                ("BaseKeep", "https://ballkeep.com/bb/"),
+                ("BK News", "https://ballkeep.com/bb/news.html"),
+            ]),
+            faq_jsonld(BB_NEWS_FAQ),
+        ],
     ))
 
     urls = ["https://ballkeep.com/bb/news.html"]
@@ -1396,6 +1429,7 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
                         image="img/bb-logo.jpg",
                         brand="BaseKeep",
                         brand_url="https://ballkeep.com/bb/",
+                        section=label,
                     ),
                 ],
                 og_type="article",
@@ -1452,8 +1486,12 @@ def write_baseball_site():
         ("the-x.html", "The X", "MLB memes. Pictures on the card."),
         ("news.html", "BK News", "IL, roster, managers."),
     ], extra_news)}
+    {faq_html(BB_HOME_FAQ, heading="How BaseKeep works.")}
     """
-    write("bb/index.html", bb_page("Home", "index.html", home))
+    write("bb/index.html", bb_page(
+        "Home", "index.html", home,
+        extra_jsonld=[website_jsonld("BaseKeep", "https://ballkeep.com/bb/"), faq_jsonld(BB_HOME_FAQ)],
+    ))
 
     flt, js = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
     keep_body = f"""
@@ -1464,8 +1502,21 @@ def write_baseball_site():
     <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#1f6b3a", "Keep value graph")}
     {sources_panel()}
+    {faq_html(BB_KEEP_FAQ, heading="How The Keep is built.")}
     """
-    write("bb/the-keep.html", bb_board_page("The Keep", "the-keep.html", keep_body, js))
+    write("bb/the-keep.html", bb_board_page(
+        "The Keep", "the-keep.html", keep_body, js,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "The Keep 2026 Dynasty Baseball Rankings",
+                "https://ballkeep.com/bb/the-keep.html",
+                keep,
+                lambda r: f"https://ballkeep.com/bb/players/{slugify(r['name'])}.html",
+                description="Dynasty baseball top 400 from 23 boards.",
+            ),
+            faq_jsonld(BB_KEEP_FAQ),
+        ],
+    ))
 
     lu_body = f"""
     {page_label("BaseKeep", "The Lineup", "Hitters only")}
@@ -1538,8 +1589,12 @@ def write_baseball_site():
     <h1>Six Calculators, One Curve</h1>
     <p class="note">Rank becomes BK Value the same way it does on the football desk. Rank 1 is 12,000. Fair is within 8%. Dynasty calcs include 2027/2028 pick chips mapped to equivalent ranks.</p>
     <div class="grid">{''.join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h,t,p in hub_tiles)}</div>
+    {faq_html(BB_TRADE_FAQ, heading="How BK Value prices a baseball trade.")}
     """
-    write("bb/trade.html", bb_board_page("Trade Calculators", "trade.html", trade_hub))
+    write("bb/trade.html", bb_board_page(
+        "Trade Calculators", "trade.html", trade_hub,
+        extra_jsonld=[faq_jsonld(BB_TRADE_FAQ)],
+    ))
 
     player_urls, player_files = write_player_pages(keep, lineup, pitchers, redraft, news_by_player, saves, svh)
     news_urls = render_bb_news_pages(stories)

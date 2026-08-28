@@ -1,3 +1,14 @@
 User-agent: *
 Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
 Sitemap: https://ballkeep.com/sitemap.xml
+Sitemap: https://ballkeep.com/sitemap-news.xml

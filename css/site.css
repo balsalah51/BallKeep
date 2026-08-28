@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap");
-
 :root {
   --powder: #d6ebf7;
   --powder-deep: #b9dcf0;
@@ -299,6 +297,15 @@ footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: cen
   color: var(--red); margin-bottom: 4px;
 }
 .related .grid, .related .grid-3 { margin-top: 12px; }
+.faq {
+  margin-top: 22px; padding: 18px 18px 12px; background: var(--white);
+  border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow);
+}
+.faq h2 { margin: 0 0 10px; font-size: 20px; }
+.faq details { border-top: 1px solid var(--line); padding: 10px 0; }
+.faq details:first-of-type { border-top: 0; }
+.faq summary { cursor: pointer; font-weight: 800; }
+.faq details p { margin: 8px 0 0; color: var(--muted); line-height: 1.55; }
 h1.page-h { font-size: 32px; letter-spacing: -0.03em; line-height: 1.15; margin: 8px 0 12px; }
 .policy h3 { margin: 22px 0 8px; font-size: 20px; }
 .policy p { line-height: 1.65; margin: 0 0 12px; }
