@@ -463,7 +463,7 @@ def summarize(items: list[dict], players: list[dict]) -> tuple[str, str]:
         lead = f"{who}: {lead}"
     if pubs:
         if len(pubs) == 1:
-            attrib = f" Desk reading of {pubs[0]}."
+            attrib = f" Board reading of {pubs[0]}."
         else:
             attrib = f" Aggregated from {', '.join(pubs[:5])}" + ("." if len(pubs) <= 5 else f" and {len(pubs) - 5} more.")
     else:

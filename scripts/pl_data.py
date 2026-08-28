@@ -1,4 +1,4 @@
-"""PitchKeep ranking sources — August 27, 2026.
+"""PitchKeep ranking sources - August 27, 2026.
 
 The Pitch is a Sleeper BPL 2025 points board. Default Sleeper soccer
 scoring (support.sleeper.com/en/articles/9702800-scoring-system) applied
@@ -6,7 +6,7 @@ to 2025/26 Premier League counting stats from the official FPL dump.
 
 The Premier is the third PitchKeep list: 50% Sleeper BPL 2025 rank,
 50% consensus of every other board (official FPL metrics plus 25
-published 2026/27 pro lists). Unranked names are skipped — never 999.
+published 2026/27 pro lists). Unranked names are skipped - never 999.
 """
 from __future__ import annotations
 
@@ -168,7 +168,7 @@ def display_name(e):
     given = first.split()[0] if first else ""
     last = parts[-1] if parts else web
     tokens = (first + " " + second).split()
-    # Virgil van Dijk — keep the particle surname intact.
+    # Virgil van Dijk - keep the particle surname intact.
     if len(parts) == 2 and parts[0].lower() in particles:
         return f"{first} {second}".strip()
     # FPL already prints the public name: João Pedro, Pedro Porro.
@@ -555,7 +555,7 @@ def build_premier(rows, cap=PITCH_N):
     """2026/27 board: mean of published pro lists.
 
     Last-season Sleeper and FPL counting stats stay on The Pitch. A name needs
-    two published desks before those ranks can lift him. Unranked sources are skipped.
+    two published boards before those ranks can lift him. Unranked sources are skipped.
     """
     expert_names = set(load_expert_lists())
     scored = []

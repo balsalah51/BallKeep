@@ -84,6 +84,18 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+def strip_em(text: str) -> str:
+    """Site copy does not use em dashes."""
+    if not text:
+        return text
+    return (
+        text.replace("\u2014", "-")
+        .replace("&mdash;", "-")
+        .replace("&#8212;", "-")
+        .replace("&#x2014;", "-")
+    )
+
+
 def canon(path: str, prefix: str = "") -> str:
     path = (path or "index.html").lstrip("/")
     if path in ("index.html", ""):
@@ -499,7 +511,7 @@ def article_jsonld(
 
 def also_on_desk(
     tiles: list,
-    kicker: str = "Also on this desk",
+    kicker: str = "Also on this board",
     heading: str = "Keep going.",
 ) -> str:
     """tiles: [(href, title, note), ...] — sibling boards, calculators, hubs."""
@@ -531,7 +543,7 @@ def footer_nav(items: list, current_path: str = "") -> str:
         bits.append(f'<a href="{esc(href)}">{esc(label)}</a>')
     if not bits:
         return ""
-    return f'<nav class="footer-nav" aria-label="On this desk">{"".join(bits)}</nav>'
+    return f'<nav class="footer-nav" aria-label="On this board">{"".join(bits)}</nav>'
 
 
 def _rank_int(row: dict, rank_key: str = "bk") -> int:
@@ -626,7 +638,7 @@ def related_players_html(
     return (
         '<section class="related related-players" aria-label="Related players">'
         '<p class="kicker">Related</p>'
-        "<h2>More names on this desk</h2>"
+        "<h2>More names on this board</h2>"
         f"{body}</section>"
     )
 
@@ -767,7 +779,7 @@ def faq_jsonld(pairs: list) -> dict | None:
 def faq_html(
     pairs: list,
     kicker: str = "FAQ",
-    heading: str = "How this desk works.",
+    heading: str = "How this board works.",
 ) -> str:
     qs = [(str(q or "").strip(), str(a or "").strip()) for q, a in (pairs or []) if q and a]
     if not qs:
