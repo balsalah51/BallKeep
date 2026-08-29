@@ -262,6 +262,11 @@ class Catalog:
             "sf_redraft": "sf_redraft",
             "std": "standard",
             "standard": "standard",
+            "classic": "classic",
+            "the classic": "classic",
+            "half ppr": "classic",
+            "0.5 ppr": "classic",
+            "half-ppr": "classic",
             "rookies": "rookies",
             "rookie": "rookies",
             "bbkeep": "bb_keep",
@@ -376,7 +381,7 @@ class Catalog:
             if len(out) >= limit:
                 break
         if len(out) < limit and sport != "baseball":
-            for board_key in ("keep", "board", "ppr", "standard", "rookies"):
+            for board_key in ("keep", "board", "ppr", "standard", "classic", "rookies"):
                 for r in self.raw.get(board_key) or []:
                     name = norm(r.get("name", ""))
                     if not name:
@@ -576,6 +581,10 @@ class Catalog:
             value = bk_value(rank or 0, mult)
         elif mode in ("ppr",):
             row = self.board_row(player.get("name", ""), "ppr")
+            rank = row.get("bk") if row else None
+            value = bk_value(rank or 0)
+        elif mode in ("classic", "halfppr", "half-ppr"):
+            row = self.board_row(player.get("name", ""), "classic")
             rank = row.get("bk") if row else None
             value = bk_value(rank or 0)
         elif mode in ("std", "standard"):

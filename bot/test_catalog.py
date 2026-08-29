@@ -136,6 +136,9 @@ def main():
     assert (keep0.get("n") or 0) >= 10, keep0
     assert board0.get("yates") or board0.get("fp") or board0.get("karabell"), board0
     assert (board0.get("n") or 0) >= 10, board0
+    classic = cat.raw.get("classic") or []
+    assert len(classic) == 200, f"classic {len(classic)}"
+    assert classic[0].get("bk") == 1
     assert keep0["name"] != board0["name"] or board0.get("yates") == 1
     farm = cat.raw.get("bb_farm") or []
     assert len(farm) == 100, f"bb farm {len(farm)}"
@@ -306,6 +309,10 @@ def main():
     assert "13 boards" in board_html
     assert "Derek Brown" in board_html
     assert "4for4" in board_html
+    classic_html = html_of("the-classic.html")
+    assert "<h1>The Classic</h1>" in classic_html
+    assert "0.5 PPR" in classic_html or "Half-PPR" in classic_html
+    assert "the-classic.html" in html_of("index.html")
     assert "Kids pay a tax" not in board_html
     assert "kids pay a tax" not in board_html
     assert "The tax is" not in board_html
@@ -396,6 +403,7 @@ def main():
         "the-keep.html",
         "board.html",
         "redraft-standard.html",
+        "the-classic.html",
         "redraft-superflex.html",
         "rookies-2026.html",
         "bk/the-keep.html",

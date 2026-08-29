@@ -206,6 +206,18 @@ def test_ppr_extra_boards():
         assert maps[label]
 
 
+def test_half_ppr_classic_tax():
+    from build_site import score_from_ppr
+    ppr = [
+        {"name": "A", "pos": "RB", "avg": 10, "yates": 1, "fp": 1, "karabell": 1, "n": 3, "team": "BUF"},
+        {"name": "B", "pos": "WR", "avg": 10, "yates": 2, "fp": 2, "karabell": 2, "n": 3, "team": "CIN"},
+    ]
+    classic = score_from_ppr(ppr, {"RB": -2.25, "WR": 1.5, "TE": 1.0, "QB": 0.25})
+    assert classic[0]["name"] == "A"
+    assert classic[0]["avg"] == 7.75
+    assert classic[1]["avg"] == 11.5
+
+
 def test_farm_top_100():
     from bb_prospects import FARM_SOURCES, load_farm
     farm = load_farm()
