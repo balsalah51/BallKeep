@@ -206,6 +206,15 @@ def test_ppr_extra_boards():
         assert maps[label]
 
 
+def test_pos_filter_chips():
+    from build_site import pos_filter
+    chips, js = pos_filter("board-pos")
+    assert 'id="board-pos"' in chips
+    assert 'data-pos="QB"' in chips
+    assert 'data-pos="RB"' in chips
+    assert "applyRankFilter" in js
+
+
 def test_half_ppr_classic_tax():
     from build_site import score_from_ppr
     ppr = [

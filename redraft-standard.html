@@ -49,8 +49,8 @@
     
     <p class="kicker">2026 Redraft · Standard</p>
     <h1>Redraft Standard</h1>
-    <p class="note">Standard (no extra point per catch) is a different sport than PPR. We start from the PPR consensus above, then apply Ball Keep positional taxes used across major STD vs PPR deltas: running backs −4.5 ranks, receivers +3, tight ends +2, quarterbacks +0.5. Result: Bijan / Gibbs / CMC / Henry / Taylor climb; Chase / Puka / JSN still go early but not as automatic 1.01s.</p>
-    <div class="rank-bar"><p class="rank-search"><input type="search" class="rank-search-input" placeholder="Find a player" aria-label="Find a player" autocomplete="off" spellcheck="false"></p></div><script>
+    <p class="note">Standard (no extra point per catch) is a different sport than PPR. We start from the PPR consensus above, then apply Ball Keep positional taxes used across major STD vs PPR deltas: running backs −4.5 ranks, receivers +3, tight ends +2, quarterbacks +0.5. Result: Bijan / Gibbs / CMC / Henry / Taylor climb; Chase / Puka / JSN still go early but not as automatic 1.01s. Sort by position with the chips.</p>
+    <div class="rank-bar"><p class="rank-search"><input type="search" class="rank-search-input" placeholder="Find a player" aria-label="Find a player" autocomplete="off" spellcheck="false"></p><div class="filters" id="std-pos"><button type="button" class="active" data-pos="all">All</button><button type="button" data-pos="QB">QB</button><button type="button" data-pos="RB">RB</button><button type="button" data-pos="WR">WR</button><button type="button" data-pos="TE">TE</button></div></div><script>
 (function () {
   function needle() {
     var inp = document.querySelector(".rank-search-input");
@@ -102,6 +102,14 @@
       <div><a class="sport-switch bb" href="bb/index.html">BaseKeep</a><a class="sport-switch bk" href="bk/index.html">BasketKeep</a><a class="sport-switch pl" href="pl/index.html">PitchKeep</a></div>
     </footer>
   </div>
-    
+    <script>
+    const box = document.getElementById('std-pos');
+    if (box) box.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      if (window.applyRankFilter) applyRankFilter();
+    });
+    </script>
 </body>
 </html>
