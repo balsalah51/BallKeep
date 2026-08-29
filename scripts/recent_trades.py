@@ -1,4 +1,4 @@
-"""Ball Keep desk tape of recent Superflex / 1QB packages.
+"""Ball Keep trade tape of recent Superflex / 1QB packages.
 
 Not a scrape of 200,000 leagues. Packages that moved in public dynasty chats
 this month, plus asking prices from the Hot 'n' Cold board. Rank math is
@@ -307,7 +307,7 @@ DEALS = [
         "kind": "closed",
         "a": ["Tee Higgins"],
         "b": ["DeVonta Smith", "2028 3rd"],
-        "blurb": "Higgins versus Smitty is two WR2s with different quarterbacks. The third is a courtesy. We would rather have the one who is not sharing a building with Chase — wait, that is Smith. Take Smith.",
+        "blurb": "Higgins versus Smitty is two WR2s with different quarterbacks. The third is a courtesy. We would rather have the one who is not sharing a building with Chase - wait, that is Smith. Take Smith.",
     },
     {
         "date": "2026-08-10",
@@ -317,7 +317,7 @@ DEALS = [
         "kind": "closed",
         "a": ["Ladd McConkey"],
         "b": ["Chris Olave"],
-        "blurb": "Ladd is the cleaner 2026 bet. Olave is the name. Straight up, the desk takes the Charger and does not apologize.",
+        "blurb": "Ladd is the cleaner 2026 bet. Olave is the name. Straight up, the board takes the Charger and does not apologize.",
     },
     {
         "date": "2026-08-10",
@@ -367,7 +367,7 @@ DEALS = [
         "kind": "closed",
         "a": ["Harold Fannin Jr."],
         "b": ["Tucker Kraft"],
-        "blurb": "Two tight ends the desk likes. Fannin is the FBS-leading rookie on a TE-maven staff. Kraft is the 25-year-old who looked top-4 before the ACL. Straight up is a coin we would flip toward Kraft's tape.",
+        "blurb": "Two tight ends the board likes. Fannin is the FBS-leading rookie on a TE-maven staff. Kraft is the 25-year-old who looked top-4 before the ACL. Straight up is a coin we would flip toward Kraft's tape.",
     },
     {
         "date": "2026-08-07",
@@ -427,7 +427,7 @@ DEALS = [
         "kind": "closed",
         "a": ["Josh Jacobs"],
         "b": ["Javonte Williams"],
-        "blurb": "Jacobs is the veteran volume. Javonte is the hope. Straight up, the desk takes the Packer and lets someone else write the comeback story.",
+        "blurb": "Jacobs is the veteran volume. Javonte is the hope. Straight up, the board takes the Packer and lets someone else write the comeback story.",
     },
     {
         "date": "2026-08-04",

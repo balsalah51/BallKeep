@@ -24,6 +24,9 @@ from seo import (  # noqa: E402
     related_stories_html,
     robots_txt,
     rss_xml,
+    rank_search_bar,
+    rank_search_key,
+    strip_em,
     sitemap_xml,
     video_jsonld,
     website_jsonld,
@@ -89,6 +92,9 @@ def test_breadcrumbs_and_footer():
 def test_also_on_desk_and_sitemap():
     html = also_on_desk([("board.html", "The Board", "Redraft PPR.")])
     assert "board.html" in html
+    assert "Also on this board" in html
+    assert "this desk" not in html
+    assert strip_em("The Board \u2014 2026") == "The Board - 2026"
     xml = sitemap_xml(["https://ballkeep.com/", "https://ballkeep.com/the-keep.html"], "2026-08-27")
     assert "<lastmod>2026-08-27</lastmod>" in xml
     assert xml.count("<url>") == 2
@@ -175,6 +181,18 @@ def test_sitemap_images_and_website():
 
 def test_clip():
     assert len(clip("word " * 80, 168)) <= 168
+
+
+def test_rank_search_bar():
+    html = rank_search_bar('<div class="filters" id="keep-pos"></div>')
+    assert 'class="rank-bar"' in html
+    assert 'class="rank-search-input"' in html
+    assert 'type="search"' in html
+    assert "Find a player" in html
+    assert "applyRankFilter" in html
+    assert "keep-pos" in html
+    assert rank_search_key("Josh Allen", "QB", "BUF") == "josh allen qb buf"
+    assert "&#x27;" in rank_search_key("Ja'Marr Chase")
 
 
 if __name__ == "__main__":

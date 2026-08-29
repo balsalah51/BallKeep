@@ -84,6 +84,18 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+def strip_em(text: str) -> str:
+    """Site copy does not use em dashes."""
+    if not text:
+        return text
+    return (
+        text.replace("\u2014", "-")
+        .replace("&mdash;", "-")
+        .replace("&#8212;", "-")
+        .replace("&#x2014;", "-")
+    )
+
+
 def canon(path: str, prefix: str = "") -> str:
     path = (path or "index.html").lstrip("/")
     if path in ("index.html", ""):
@@ -499,7 +511,7 @@ def article_jsonld(
 
 def also_on_desk(
     tiles: list,
-    kicker: str = "Also on this desk",
+    kicker: str = "Also on this board",
     heading: str = "Keep going.",
 ) -> str:
     """tiles: [(href, title, note), ...] — sibling boards, calculators, hubs."""
@@ -531,7 +543,7 @@ def footer_nav(items: list, current_path: str = "") -> str:
         bits.append(f'<a href="{esc(href)}">{esc(label)}</a>')
     if not bits:
         return ""
-    return f'<nav class="footer-nav" aria-label="On this desk">{"".join(bits)}</nav>'
+    return f'<nav class="footer-nav" aria-label="On this board">{"".join(bits)}</nav>'
 
 
 def _rank_int(row: dict, rank_key: str = "bk") -> int:
@@ -626,7 +638,7 @@ def related_players_html(
     return (
         '<section class="related related-players" aria-label="Related players">'
         '<p class="kicker">Related</p>'
-        "<h2>More names on this desk</h2>"
+        "<h2>More names on this board</h2>"
         f"{body}</section>"
     )
 
@@ -767,7 +779,7 @@ def faq_jsonld(pairs: list) -> dict | None:
 def faq_html(
     pairs: list,
     kicker: str = "FAQ",
-    heading: str = "How this desk works.",
+    heading: str = "How this board works.",
 ) -> str:
     qs = [(str(q or "").strip(), str(a or "").strip()) for q, a in (pairs or []) if q and a]
     if not qs:
@@ -916,6 +928,80 @@ def news_sitemap_xml(entries: list) -> str:
         'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n'
         + "".join(rows)
         + "</urlset>\n"
+    )
+
+
+def rank_search_key(*parts: str) -> str:
+    """Lowercased name/pos/team blob for ranking-row search."""
+    bits = []
+    seen = set()
+    for p in parts:
+        t = " ".join(str(p or "").split())
+        if not t:
+            continue
+        key = t.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        bits.append(t)
+    return html.escape(" ".join(bits).lower(), quote=True)
+
+
+def rank_search_js() -> str:
+    return """<script>
+(function () {
+  function needle() {
+    var inp = document.querySelector(".rank-search-input");
+    return inp ? String(inp.value || "").trim().toLowerCase() : "";
+  }
+  function wantPos() {
+    var btn = document.querySelector(".rank-bar .filters button.active")
+      || document.querySelector(".filters button.active");
+    if (!btn) return "all";
+    return String(btn.getAttribute("data-pos") || btn.getAttribute("data-group") || "all").toLowerCase();
+  }
+  window.applyRankFilter = function () {
+    var q = needle();
+    var pos = wantPos();
+    document.querySelectorAll("table.rank-table tbody tr").forEach(function (tr) {
+      var hay = (tr.getAttribute("data-name") || "").toLowerCase();
+      var nameOk = !q || hay.indexOf(q) !== -1;
+      var rowPos = (tr.getAttribute("data-pos") || "").toLowerCase();
+      var rowGroup = (tr.getAttribute("data-group") || "").toLowerCase();
+      var posOk = pos === "all" || rowPos === pos || rowGroup === pos;
+      tr.style.display = (nameOk && posOk) ? "" : "none";
+    });
+  };
+  document.addEventListener("input", function (e) {
+    if (e.target && e.target.classList && e.target.classList.contains("rank-search-input")) {
+      window.applyRankFilter();
+    }
+  });
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest(".rank-bar .filters button");
+    if (!b) return;
+    var box = b.closest(".filters");
+    if (!box) return;
+    box.querySelectorAll("button").forEach(function (x) { x.classList.remove("active"); });
+    b.classList.add("active");
+    window.applyRankFilter();
+  });
+})();
+</script>
+"""
+
+
+def rank_search_bar(filters: str = "") -> str:
+    """Player search plus optional position chips above a ranking table."""
+    return (
+        '<div class="rank-bar">'
+        '<p class="rank-search">'
+        '<input type="search" class="rank-search-input" placeholder="Find a player" '
+        'aria-label="Find a player" autocomplete="off" spellcheck="false">'
+        "</p>"
+        f"{filters}"
+        "</div>"
+        + rank_search_js()
     )
 
 

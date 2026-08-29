@@ -46,10 +46,13 @@ from seo import (  # noqa: E402
     legal_links,
     person_jsonld,
     rank_list_jsonld,
+    rank_search_bar,
+    rank_search_key,
     related_players_html,
     related_stories_html,
     sports_footer,
     sports_top,
+    strip_em,
     value_bars,
     website_jsonld,
 )
@@ -83,7 +86,7 @@ def slugify(name: str) -> str:
 def write(path, doc):
     dest = ROOT / path.lstrip("/")
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(doc)
+    dest.write_text(strip_em(doc))
 
 
 BK_NAV = [
@@ -145,7 +148,7 @@ def bk_nav_current(href: str, path: str) -> bool:
 BK_SEO = {
     "index.html": (
         "BasketKeep | Dynasty Basketball Rankings and Trade Calculator",
-        "Hardwood desk. The Keep is dynasty basketball top 400. The Board is this-year redraft. Guards, wings, bigs, BK News, and The X.",
+        "BasketKeep boards. The Keep is dynasty basketball top 400. The Board is this-year redraft. Guards, wings, bigs, BK News, and The X.",
         "img/bk-hero.jpg",
     ),
     "the-keep.html": (
@@ -154,22 +157,22 @@ BK_SEO = {
         "img/bk-logo.jpg",
     ),
     "board.html": (
-        "The Board — 2026 Redraft Basketball Rankings | BasketKeep",
+        "The Board - 2026 Redraft Basketball Rankings | BasketKeep",
         "This-year basketball redraft. Same BK Value curve as The Keep.",
         "img/bk-logo.jpg",
     ),
     "guards.html": (
-        "Guards — Dynasty PG and SG Rankings | BasketKeep",
+        "Guards - Dynasty PG and SG Rankings | BasketKeep",
         "Dynasty guards only. The Keep re-ranked among point guards and shooting guards.",
         "img/bk-logo.jpg",
     ),
     "wings.html": (
-        "Wings — Dynasty SF and PF Rankings | BasketKeep",
+        "Wings - Dynasty SF and PF Rankings | BasketKeep",
         "Dynasty wings only. The Keep, forwards only.",
         "img/bk-logo.jpg",
     ),
     "bigs.html": (
-        "Bigs — Dynasty Center Rankings | BasketKeep",
+        "Bigs - Dynasty Center Rankings | BasketKeep",
         "Dynasty centers only. Wemby, Jokic, Chet, and the rest of the fives.",
         "img/bk-logo.jpg",
     ),
@@ -184,17 +187,17 @@ BK_SEO = {
         "img/bk-logo.jpg",
     ),
     "news.html": (
-        "BK News Basketball — Injury, Roster, and Coach Tape | BasketKeep",
+        "BK News Basketball - Injury, Roster, and Coach Tape | BasketKeep",
         "Hourly NBA injury, roster, and coach reports clustered with links back to Keep player files.",
         "img/bk-logo.jpg",
     ),
     "the-x.html": (
-        "The X — Basketball Memes from X | BasketKeep",
+        "The X - Basketball Memes from X | BasketKeep",
         "Fun tape, not news. NBA memes pulled from X. Pictures when the wire carries them.",
         "img/bk-logo.jpg",
     ),
     "players/index.html": (
-        "BasketKeep Player Files — The Keep Top 400",
+        "BasketKeep Player Files - The Keep Top 400",
         "The Keep top 400, one hardwood card each.",
         "img/bk-logo.jpg",
     ),
@@ -282,10 +285,10 @@ BK_ALSO = {
 BK_HOME_FAQ = [
     ("What is BasketKeep?", "BasketKeep is basketball on Ball Keep. The Keep is dynasty basketball top 400 from 18 boards. The Board is this-year redraft. BK Value uses the same 12,000 curve as football."),
     ("How is The Keep ranked?", "Average of every source that ranked the player. Unranked is skipped, never 999."),
-    ("Where is the NBA news?", "BK News on this desk clusters injury, roster, and coach tape hourly, with links back to Keep player files."),
+    ("Where is the NBA news?", "BK News on this board clusters injury, roster, and coach tape hourly, with links back to Keep player files."),
 ]
 BK_KEEP_FAQ = [
-    ("What is The Keep on BasketKeep?", "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama is the 1.01 on this desk."),
+    ("What is The Keep on BasketKeep?", "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama is the 1.01 on this board."),
     ("How does BK Value work here?", "Keep rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%. The Keep calculator uses this board."),
     ("What is The Board?", "This-year basketball redraft. Use it for 2026-27 startups. The Keep is dynasty."),
 ]
@@ -320,7 +323,7 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bk/"), image=img, brand="BasketKeep", brand_url="https://ballkeep.com/bk/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=35" />
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=37" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
 <body>
@@ -399,8 +402,9 @@ def rank_table(rows, extra_headers=None, extra_cells=None, show_age=True):
         href = f"players/{slugify(r['name'])}.html"
         name = f'<a class="player-link" href="{href}"><strong>{esc(r["name"])}</strong></a>'
         stack = f'<span class="name-stack">{name}{age_span}{meta}</span>'
+        dn = rank_search_key(r.get("name"), pos, team, r.get("group"))
         body.append(
-            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or "")}">'
+            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or "")}" data-name="{dn}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
             f'<td class="c-name">{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
@@ -421,10 +425,11 @@ def filter_js(keys):
     html_f = f'<div class="filters" id="pos-f">{"".join(btns)}</div>'
     js = """<script>
     const box = document.getElementById('pos-f');
-    box.addEventListener('click', e => {
+    if (box) box.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
       box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
       b.classList.add('active');
+      if (window.applyRankFilter) { applyRankFilter(); return; }
       const p = b.dataset.pos;
       document.querySelectorAll('tbody tr').forEach(tr => {
         const hit = p === 'all' || tr.dataset.pos === p || tr.dataset.group === p;
@@ -437,7 +442,7 @@ def filter_js(keys):
 
 def sources_panel():
     lis = "".join(
-        f"<li><strong>{esc(n)}</strong> — {esc(note)} {f'<a href=\"{esc(u)}\">link</a>' if u else ''}</li>"
+        f"<li><strong>{esc(n)}</strong> - {esc(note)} {f'<a href=\"{esc(u)}\">link</a>' if u else ''}</li>"
         for n, u, note in BK_SOURCES
     )
     return f'<section class="sources-box panel"><h3>Boards on this mash</h3><ol>{lis}</ol></section>'
@@ -447,13 +452,13 @@ def fmt_val(n):
     try:
         return f"{int(n):,}"
     except (TypeError, ValueError):
-        return "—"
+        return "-"
 
 
 def val_cell(r):
     return (
-        f'<td class="desk-only">{r.get("avg", "—")}</td>'
-        f'<td class="desk-only">{r.get("n", "—")}</td>'
+        f'<td class="desk-only">{r.get("avg", "-")}</td>'
+        f'<td class="desk-only">{r.get("n", "-")}</td>'
         f'<td class="c-val val">{fmt_val(r.get("value"))}</td>'
     )
 
@@ -516,7 +521,7 @@ def render_bk_news_pages(stories):
         if old.name not in keep:
             old.unlink()
     cards = "".join(bk_news_card(s) for s in stories) or (
-        '<p class="note">The basketball wire is warming up. The hourly scrape will fill this desk.</p>'
+        '<p class="note">The basketball wire is warming up. The hourly scrape will fill this board.</p>'
     )
     chips = []
     for k, lab in (
@@ -619,7 +624,7 @@ def render_bk_news_pages(stories):
     {named}
     <section class="sources-box panel" style="margin-top:18px">
       <p class="kicker">Tape</p>
-      <h3>Links back to the desks</h3>
+      <h3>Links back to the boards</h3>
       {source_html}
     </section>
     {related}
@@ -704,8 +709,8 @@ def write_player_pages(keep, board, news_by_player):
     </div>
     <div class="rank-grid">
       <div class="rank-card"><small>The Keep</small><strong>{r["bk"]}</strong><span>Dynasty</span></div>
-      <div class="rank-card"><small>The Board</small><strong>{br["bk"] if br else "—"}</strong><span>Redraft</span></div>
-      <div class="rank-card"><small>Desks</small><strong>{r.get("n") or "—"}</strong><span>avg {r.get("avg") or "—"}</span></div>
+      <div class="rank-card"><small>The Board</small><strong>{br["bk"] if br else "-"}</strong><span>Redraft</span></div>
+      <div class="rank-card"><small>Boards</small><strong>{r.get("n") or "-"}</strong><span>avg {r.get("avg") or "-"}</span></div>
     </div>
     <div class="plusminus">
       <div class="pm plus"><h3>Plus</h3><ul>{''.join(f"<li>{esc(x)}</li>" for x in plus)}</ul></div>
@@ -713,9 +718,9 @@ def write_player_pages(keep, board, news_by_player):
     </div>
     <section class="panel">
       <p class="kicker">Boards</p>
-      <h3>Where the desks put him</h3>
-      <p class="note">High {hi} · low {lo}. Unranked desks are skipped.</p>
-      <div class="table-wrap"><table class="boards"><thead><tr><th>Desk</th><th>Rank</th></tr></thead><tbody>{board_rows}</tbody></table></div>
+      <h3>Where the boards put him</h3>
+      <p class="note">High {hi} · low {lo}. Unranked boards are skipped.</p>
+      <div class="table-wrap"><table class="boards"><thead><tr><th>Board</th><th>Rank</th></tr></thead><tbody>{board_rows}</tbody></table></div>
     </section>
     {news_html}
     {related_players_html(keep, r, lambda p: f"{slugify(p['name'])}.html", nearby_label="On The Keep nearby", pos_label="Same position", team_label="Same club")}
@@ -786,7 +791,7 @@ def write_player_pages(keep, board, news_by_player):
     hub = f"""
     <p class="kicker">Player files</p>
     <h1>The Keep, one name at a time</h1>
-    <p class="note">The Keep top {len(keep)}. Rank, The Board redraft slot, every desk, plus/minus. Filter the grid.</p>
+    <p class="note">The Keep top {len(keep)}. Rank, The Board redraft slot, every board, plus/minus. Filter the grid.</p>
     {flt}
     <div class="player-grid">{''.join(cards)}</div>
     {also_on_desk([
@@ -905,7 +910,7 @@ def write_basket_site():
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
           <p class="lead-sub">Dynasty basketball · top 400</p>
-          <p>18 desks mashed into one rank.</p>
+          <p>18 boards mashed into one rank.</p>
         </a>
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
@@ -941,8 +946,8 @@ def write_basket_site():
     keep_body = f"""
     <p class="kicker">Keystone · Dynasty basketball</p>
     <h1>The Keep</h1>
-    <p class="note">This is the big one. Dynasty basketball top {len(keep)}, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player — 18 boards. Unranked is skipped, never 999. BK Value uses the same decaying curve as football (12,000 at 1.01). The Board next door is this-year redraft.</p>
-    {flt}
+    <p class="note">This is the big one. Dynasty basketball top {len(keep)}, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - 18 boards. Unranked is skipped, never 999. BK Value uses the same decaying curve as football (12,000 at 1.01). The Board next door is this-year redraft.</p>
+    {rank_search_bar(flt)}
     <div class="panel">{rank_table(keep, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     {value_bars(keep, 12, "#e87722", "Keep value graph")}
     {sources_panel()}
@@ -964,13 +969,14 @@ def write_basket_site():
 
     def board_extra(r):
         return (
-            f'<td class="desk-only">{r.get("keep") or "—"}</td>'
+            f'<td class="desk-only">{r.get("keep") or "-"}</td>'
             f'<td class="c-val val">{fmt_val(r.get("value"))}</td>'
         )
     board_body = f"""
     <p class="kicker">Redraft · this year</p>
     <h1>The Board</h1>
-    <p class="note">The Board is redraft — {len(board)} names, this season only. Use this list for 2026-27 startups. The Keep is dynasty.</p>
+    <p class="note">The Board is redraft - {len(board)} names, this season only. Use this list for 2026-27 startups. The Keep is dynasty.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(board, ["Keep", "BK Value"], board_extra)}</div>
     {value_bars(board, 12, "#1a1208", "Board value graph")}
     """
@@ -980,6 +986,7 @@ def write_basket_site():
     <p class="kicker">Guards only</p>
     <h1>Guards</h1>
     <p class="note">Point guards and shooting guards, re-ranked among themselves from The Keep.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(guards, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
     write("bk/guards.html", bk_board_page("Guards", "guards.html", g_body))
@@ -988,6 +995,7 @@ def write_basket_site():
     <p class="kicker">Wings only</p>
     <h1>Wings</h1>
     <p class="note">Small forwards and power forwards. The Keep, forwards only.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(wings, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
     write("bk/wings.html", bk_board_page("Wings", "wings.html", w_body))
@@ -996,6 +1004,7 @@ def write_basket_site():
     <p class="kicker">Centers only</p>
     <h1>Bigs</h1>
     <p class="note">The fives. Wemby is the 1.01. Jokic is the this-year argument.</p>
+    {rank_search_bar()}
     <div class="panel">{rank_table(bigs, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """
     write("bk/bigs.html", bk_board_page("Bigs", "bigs.html", b_body))
@@ -1019,7 +1028,7 @@ def write_basket_site():
     hub = """
     <p class="kicker">Trade Calculators</p>
     <h1>Two Calculators, One Curve</h1>
-    <p class="note">Rank becomes BK Value the same way it does on the football desk. Rank 1 is 12,000. Fair is within 8%. The Keep calc includes 2027/2028 pick chips.</p>
+    <p class="note">Rank becomes BK Value the same way it does on the football boards. Rank 1 is 12,000. Fair is within 8%. The Keep calc includes 2027/2028 pick chips.</p>
     <div class="grid">
       <a class="tile" href="trade-keep.html"><h3>The Keep</h3><p>Dynasty. First-round chips.</p></a>
       <a class="tile" href="trade-board.html"><h3>The Board</h3><p>Redraft. This year only.</p></a>

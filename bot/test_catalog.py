@@ -237,6 +237,15 @@ def main():
     assert 'href="trade.html"' in home[tools_at:extra_at]
     assert "Player Pages" in home[tools_at:extra_at]
     assert "Trade Calculators" not in home[home.find("home-intro"):lists_at]
+    assert "this desk" not in home
+    assert "\u2014" not in home
+    assert "On this board" in home
+    assert "32 boards mashed" in home
+    hc = html_of("hot-n-cold.html")
+    assert "this desk" not in hc
+    assert "\u2014" not in hc
+    assert 'class="hc-cold"' in hc
+    assert 'class="tile cold"' in hc or "tile cold" in hc
     assert 'href="privacy.html"' in home
     for x_path in ("the-x.html", "bb/the-x.html", "bk/the-x.html", "pl/the-x.html"):
         x_html = html_of(x_path)
@@ -269,6 +278,8 @@ def main():
     assert "style=\"color:#1788c2\"" in home
     assert "font-size: 40px" in css
     assert ".home-intro" in css
+    assert "--powder-ink" in css
+    assert ".tile.cold h3" in css
     assert "height: 120px" in css
     assert "grid-template-columns: 72px minmax(0, 1fr) 200px" in css
     assert "object-fit: contain" in css
@@ -356,6 +367,49 @@ def main():
     assert "On The Keep. That is already a rostered name" not in embiid
     assert not (root / "the-ones.html").exists()
     assert 'href="discord.html"' not in html_of("the-keep.html")
+
+    rank_pages = (
+        "the-keep.html",
+        "board.html",
+        "redraft-standard.html",
+        "redraft-superflex.html",
+        "rookies-2026.html",
+        "bk/the-keep.html",
+        "bk/board.html",
+        "bk/guards.html",
+        "bk/wings.html",
+        "bk/bigs.html",
+        "bb/the-keep.html",
+        "bb/the-lineup.html",
+        "bb/pitchers.html",
+        "bb/bullpen.html",
+        "bb/bullpen-holds.html",
+        "bb/the-diamond.html",
+        "pl/the-premier.html",
+        "pl/the-pitch.html",
+        "pl/attack.html",
+        "pl/midfield.html",
+        "pl/defence.html",
+        "pl/keepers.html",
+    )
+    for rel in rank_pages:
+        page = html_of(rel)
+        assert 'class="rank-search-input"' in page, rel
+        assert "applyRankFilter" in page, rel
+        assert "data-name=" in page, rel
+        assert "Find a player" in page, rel
+    assert "rank-search-input" not in html_of("index.html")
+    assert "rank-search-input" not in html_of("news.html")
+    assert "rank-search-input" not in html_of("the-x.html")
+    assert ".rank-search" in Path("css/site.css").read_text()
+    assert ".rank-search" in Path("css/bk.css").read_text()
+    assert ".rank-search" in Path("css/bb.css").read_text()
+    assert ".rank-search" in Path("css/pl.css").read_text()
+    keep_html = html_of("the-keep.html")
+    assert 'id="keep-pos"' in keep_html
+    assert 'data-name="josh allen' in keep_html
+    assert "rank-search-input" in keep_html
+    assert keep_html.find("rank-search-input") < keep_html.find("keep-pos")
 
 
 if __name__ == "__main__":

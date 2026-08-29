@@ -2,58 +2,58 @@
 
 Static site for [ballkeep.com](https://ballkeep.com), published from this repository root on GitHub Pages.
 
-Powder-blue **BallKeep** desk. Navy-and-cream **BaseKeep**, hardwood **BasketKeep**, and purple **PitchKeep** through the sport pills.
+Powder-blue **BallKeep** boards. Navy-and-cream **BaseKeep**, hardwood **BasketKeep**, and purple **PitchKeep** through the sport pills.
 
 ## Football
-- **The Keep** — Superflex Dynasty Super Aggregate top 400 (30+ desks; 50% the four long boards, 50% every other desk that ranked the player). The big draw.
-- **The Board** — Redraft PPR. Full-PPR, 1QB, this year. Field Yates, FantasyPros PPR ECR, Karabell Flex. The next draw.
-- **The X** — fun tape from X, not news
-- **Trade Calculators** — Superflex Dynasty, 1QB Dynasty, Redraft PPR, Redraft Standard. Rank on each list becomes BK Value.
-- **Recent Deals** — type a player, get every Superflex/1QB package on the desk tape
+- **The Keep** - Superflex Dynasty Super Aggregate top 400 (30+ boards; 50% the four long boards, 50% every other board that ranked the player). The big draw.
+- **The Board** - Redraft PPR. Full-PPR, 1QB, this year. Field Yates, FantasyPros PPR ECR, Karabell Flex. The next draw.
+- **The X** - fun tape from X, not news
+- **Trade Calculators** - Superflex Dynasty, 1QB Dynasty, Redraft PPR, Redraft Standard. Rank on each list becomes BK Value.
+- **Recent Deals** - type a player, get every Superflex/1QB package on the trade tape
 - Redraft Superflex (two-QB, this year) / Redraft Standard (200 names)
 - 2026 drafted rookies
 - BK Hot 'n' Cold
-- **Player Pages** — every Keep 400 name, plus redraft, rookies, and Hot/Cold: ranks, board dump, a headshot, and a 2025 NFL (or college) highlight when we have the tape
-- **BK News** — football injuries, roster moves, and coach reports scraped hourly from league RSS, Google News, X (`site:x.com`), and YouTube, then clustered into short stories with an aggregate summary and source links
+- **Player Pages** - every Keep 400 name, plus redraft, rookies, and Hot/Cold: ranks, board dump, a headshot, and a 2025 NFL (or college) highlight when we have the tape
+- **BK News** - football injuries, roster moves, and coach reports scraped hourly from league RSS, Google News, X (`site:x.com`), and YouTube, then clustered into short stories with an aggregate summary and source links
 - NFL 2026 schedules (all 32 teams)
 - MLB September stretch-run schedules
 - Discord mark **and Discord bot** (`bot/`)
 
 ## BaseKeep (`/bb`)
-Separate sport, separate palette. Footer crossover only — baseball does not live in the football nav.
+Separate sport, separate palette. Footer crossover only - baseball does not live in the football nav.
 
-- **The Keep** — overall dynasty top 400, 23-board aggregate (RotoGraphs + The Dynasty Guru long boards, plus compiled expert slices)
-- **BK News** — live at `bb/news.html`. Same hourly pipeline as football: IL, roster, DFA/call-up, and manager tape, clustered with links back to Keep player files
-- **The Lineup** — dynasty hitters only (the bats on the long boards, up to 400)
-- **BK's Pitchers** — top 150 overall dynasty pitchers
-- **BK's Bullpen** — top 100 relievers for **saves**, and a second page for **saves + holds**
-- **Redraft** — rest-of-season 400
-- **Trade calculators** — Keep, Lineup, Pitchers, Redraft, Saves, SV+H. Same BK Value curve.
-- **Dynasty Wire** — 15 stashes (short on purpose)
-- **Redraft Wire** — priority 1–50, longer and louder
-- **Player files** — Keep 400, one cream card each
+- **The Keep** - overall dynasty top 400, 23-board aggregate (RotoGraphs + The Dynasty Guru long boards, plus compiled expert slices)
+- **BK News** - live at `bb/news.html`. Same hourly pipeline as football: IL, roster, DFA/call-up, and manager tape, clustered with links back to Keep player files
+- **The Lineup** - dynasty hitters only (the bats on the long boards, up to 400)
+- **BK's Pitchers** - top 150 overall dynasty pitchers
+- **BK's Bullpen** - top 100 relievers for **saves**, and a second page for **saves + holds**
+- **Redraft** - rest-of-season 400
+- **Trade calculators** - Keep, Lineup, Pitchers, Redraft, Saves, SV+H. Same BK Value curve.
+- **Dynasty Wire** - 15 stashes (short on purpose)
+- **Redraft Wire** - priority 1–50, longer and louder
+- **Player files** - Keep 400, one cream card each
 
 ## BasketKeep (`/bk`)
 Separate sport, separate palette. Hardwood orange and night. Footer / header crossover only.
 
-- **The Keep** — dynasty basketball top 400, 18-board aggregate
-- **The Board** — this-year basketball redraft
-- **Guards / Wings / Bigs** — position boards from The Keep
-- **Rookies** — compiled 2026 class plus the sophomores still priced like kids
-- **BK News** — live at `bk/news.html`. Same hourly pipeline: injury, roster, coach tape
-- **The X** — NBA memes
-- **Trade calculators** — Keep and Board. Same BK Value curve.
-- **Wires** — 15 dynasty stashes, redraft priority 1–50
-- **Player files** — Keep 400, one hardwood card each
+- **The Keep** - dynasty basketball top 400, 18-board aggregate
+- **The Board** - this-year basketball redraft
+- **Guards / Wings / Bigs** - position boards from The Keep
+- **Rookies** - compiled 2026 class plus the sophomores still priced like kids
+- **BK News** - live at `bk/news.html`. Same hourly pipeline: injury, roster, coach tape
+- **The X** - NBA memes
+- **Trade calculators** - Keep and Board. Same BK Value curve.
+- **Wires** - 15 dynasty stashes, redraft priority 1–50
+- **Player files** - Keep 400, one hardwood card each
 
 ## PitchKeep (`/pl`)
 Separate sport, separate palette. Premier League purple, pitch green, gold. Footer crossover only.
 
-- **The Premier** — 2026/27 board from 25 published pro lists (RotoWire 400s, Athletic 50, ESPN 50, Scout, Fix, Yahoo, Independent, and the rest). Last-season Sleeper does not veto a name the desks actually ranked.
-- **The Pitch** — overall Premier League top 400, ranked on **Sleeper BPL 2025** default soccer scoring applied to 2025/26 counting stats (goals, assists, CS, GA, cards, saves, penalties, tackles, CBI). FPL price / ownership / ICT and the expert tapes still sit on every player file.
-- **Attack / Midfield / Defence / Keepers** — position boards re-ranked on the same Sleeper points
-- **Trade calculators** — Pitch, Attack, Midfield, Defence, Keepers. Same BK Value curve.
-- **Player files** — every Pitch 400 name: headshot, Sleeper points, 2025/26 line, every board, YouTube tape
+- **The Premier** - 2026/27 board from 25 published pro lists (RotoWire 400s, Athletic 50, ESPN 50, Scout, Fix, Yahoo, Independent, and the rest). Last-season Sleeper does not veto a name the boards actually ranked.
+- **The Pitch** - overall Premier League top 400, ranked on **Sleeper BPL 2025** default soccer scoring applied to 2025/26 counting stats (goals, assists, CS, GA, cards, saves, penalties, tackles, CBI). FPL price / ownership / ICT and the expert tapes still sit on every player file.
+- **Attack / Midfield / Defence / Keepers** - position boards re-ranked on the same Sleeper points
+- **Trade calculators** - Pitch, Attack, Midfield, Defence, Keepers. Same BK Value curve.
+- **Player files** - every Pitch 400 name: headshot, Sleeper points, 2025/26 line, every board, YouTube tape
 
 ## BK Value
 `value = round(12000 * exp(-0.0085 * (rank - 1)) / rank**0.13)`
@@ -73,8 +73,8 @@ Football news is live at `news.html`. Baseball news is live at `bb/news.html`. B
 
 1. Pull a small set of league RSS wires (ESPN, CBS, Yahoo, PFT, FantasyPros, RotoWire for football; ESPN/CBS/Yahoo/RotoWire for MLB).
 2. Run a handful of Google News topic queries (injury, roster, coach/manager, practice, trade).
-3. Pull X and video via Google News `site:x.com` / `site:youtube.com` — no X login and no HTML scrape of x.com.
-4. Rotate eight Keep player-name queries so the full desk is covered across a day without hammering search.
+3. Pull X and video via Google News `site:x.com` / `site:youtube.com` - no X login and no HTML scrape of x.com.
+4. Rotate eight Keep player-name queries so the full board is covered across a day without hammering search.
 5. Hash every URL, skip ones already in `data/news/state.json`, cluster the rest, and merge into `data/news/football.json`, `data/news/baseball.json`, `data/news/soccer.json`, or `data/news/basketball.json`.
 6. Rebuild the static site and commit if anything changed.
 
@@ -92,13 +92,13 @@ Football rankings last aggregated August 28, 2026 from FantasyPros (dynasty Supe
 
 Baseball rankings last aggregated August 27, 2026 from RotoGraphs (Aug 14 model), The Dynasty Guru points Top 500 (Aug 10), plus compiled slices of FantasyPros (dynasty ECR Aug 26), ESPN, Razzball, Pitcher List, RotoWire, CBS, NFBC, Ottoneu, BP, The Athletic, DLB, Dynasty Dugout, Fantasy Baseballers, FanGraphs The Board, Baseball America, MLB Pipeline, Mastersball, Four-Seam/Sekulski, Yahoo, ATC ROS, and Enos Slaughter. Closer charts: FantasyPros Aug 20 + ESPN reliever depth.
 
-Unranked names are skipped in the mean — never treated as 999.
+Unranked names are skipped in the mean - never treated as 999.
 
 Premier League rankings last aggregated August 27, 2026 from 25 published 2026/27 pro lists (RotoWire FPL 400, RotoWire Fantrax/Sleeper 400, RotoWire GW1, The Athletic PL 50, ESPN PL 50, The Independent, Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, Fantasy Football Hub, BBC Sport) plus official FPL price / EP / ownership. Last-season Sleeper scoring is The Pitch, not a veto on The Premier.
 
 ## Discord bot
 The bot reads `data/discord-catalog.json` (emitted by the rebuild). Setup: [bot/README.md](bot/README.md).
 
-`/bbplayer` `/bbkeep` `/bbtrade` `/bbwire` search the diamond desk.
+`/bbplayer` `/bbkeep` `/bbtrade` `/bbwire` search the diamond boards.
 
 `/plplayer` `/pitch` `/pltrade` search PitchKeep.

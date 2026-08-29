@@ -1,6 +1,7 @@
 :root {
   --powder: #d6ebf7;
   --powder-deep: #b9dcf0;
+  --powder-ink: #1788c2;
   --white: #ffffff;
   --ink: #102033;
   --muted: #3d5268;
@@ -229,8 +230,28 @@ table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
   border-radius: 999px; padding: 7px 12px; font-weight: 800; cursor: pointer; text-decoration: none; font-size: 13px;
 }
 .filters button.active, .filters a.active { background: var(--red); color: #fff; border-color: var(--red); }
+.rank-bar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 4px 0 16px;
+}
+.rank-bar .rank-search { margin: 0; flex: 1 1 240px; max-width: 420px; }
+.rank-bar .filters { margin: 0; }
+.rank-search-input {
+  width: 100%; border: 2px solid var(--line); background: var(--white); color: var(--ink);
+  font: 600 15px/1.2 inherit; padding: 10px 14px; border-radius: 999px;
+}
+.rank-search-input:focus {
+  outline: 2px solid var(--red); outline-offset: 1px; border-color: var(--red);
+}
 .hot, .cold { background: var(--white); }
 .badge { font-size: 11px; font-weight: 800; color: #fff; background: var(--red); border-radius: 999px; padding: 2px 8px; }
+.hc-hot { color: var(--red); }
+.hc-cold { color: var(--powder-ink); }
+.tile.cold { border-color: #8ec6e0; }
+.tile.cold:hover { border-color: var(--powder-ink); }
+.tile.cold h3 { color: var(--powder-ink); }
+.tile.cold .badge { background: var(--powder-ink); }
+.tile.cold a.player-link { border-bottom-color: rgba(23, 136, 194, 0.45); }
+.tile.cold a.player-link:hover { color: var(--powder-ink); border-bottom-color: var(--powder-ink); }
 a.sport-switch,
 .sport-switch {
   display: inline-block; margin: 18px 6px 0; padding: 12px 22px; border-radius: 999px;
@@ -382,7 +403,8 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
   display: inline-block; background: var(--powder); border-radius: 999px;
   padding: 5px 10px; font-size: 12px; font-weight: 800;
 }
-.chip.hot, .chip.cold { background: var(--powder); }
+.chip.hot { color: var(--red); background: #f7d5db; }
+.chip.cold { color: var(--powder-ink); background: var(--powder); }
 .plusminus { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0; }
 .pm { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 8px; }
 .pm h3 { margin: 0 0 8px; }
