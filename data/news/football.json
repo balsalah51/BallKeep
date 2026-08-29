@@ -1,15 +1,15 @@
 {
   "sport": "football",
-  "updated": "2026-08-29T01:19:15Z",
-  "fresh": 175,
+  "updated": "2026-08-29T02:19:31Z",
+  "fresh": 218,
   "stories": [
     {
       "id": "tucker-kraft-participating-joint-practice-0027e96b",
       "slug": "tucker-kraft-participating-joint-practice-0027e96b",
       "sport": "football",
       "headline": "NFL Week 14 injury report: Vikings' J.J. McCarthy, Commanders' Jayden Daniels, Browns' Deshaun Watson practice",
-      "blurb": "NFL Week 14 Injury Report: Jayden Daniels returns, Rome Odunze update Yahoo Sports",
-      "summary": "NFL Week 14 Injury Report: Jayden Daniels returns, Rome Odunze update Yahoo Sports NFL Injury Report Week 15 for Jayden Daniels, Rome Odunze, Tee Higgins on Sunday FOX Sports Kraft (knee) will participate in team drills during Wednesday's joint practice with the Cardinals, Ryan Wood of USA Today reports. Aggregated from Yahoo Sports, FOX Sports, RotoWire NFL, NFLTradeRumors.co, x.com and 4 more.",
+      "blurb": "NFL Injury Report Week 14: Jayden Daniels, J.J.",
+      "summary": "NFL Injury Report Week 14: Jayden Daniels, J.J. McCarthy Return for Showdown FOX Sports Kraft (knee) will participate in team drills during Wednesday's joint practice with the Cardinals, Ryan Wood of USA Today reports. Aggregated from FOX Sports, RotoWire NFL, NFLTradeRumors.co, x.com, YouTube and 4 more.",
       "category": "injury",
       "published": "2025-12-03T08:00:00Z",
       "updated": "2026-08-28T23:09:58Z",
@@ -20,6 +20,13 @@
           "slug": "jayden-daniels",
           "pos": "QB",
           "team": "WAS"
+        },
+        {
+          "key": "j j mccarthy",
+          "name": "J.J. McCarthy",
+          "slug": "j-j-mccarthy",
+          "pos": "QB",
+          "team": "MIN"
         },
         {
           "key": "rome odunze",
@@ -34,13 +41,6 @@
           "slug": "tee-higgins",
           "pos": "WR",
           "team": "CIN"
-        },
-        {
-          "key": "j j mccarthy",
-          "name": "J.J. McCarthy",
-          "slug": "j-j-mccarthy",
-          "pos": "QB",
-          "team": "MIN"
         },
         {
           "key": "kyler murray",
@@ -151,6 +151,14 @@
           "kind": "article",
           "snippet": "NFL Injury Report Week 15 for Jayden Daniels, Rome Odunze, Tee Higgins on Sunday FOX Sports",
           "published": "Sun, 14 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "NFL Injury Report Week 14: Jayden Daniels, J.J. McCarthy Return for Showdown",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Db1VjOURaNGgxRDZSNkJSUWwta2lwZENYd0JJZTB0aDF3WlViaUxfLXJxWXVZQjBINWJpSVRJWUw2Mk1neEJzUFU1ekJlWHU5UnlaTERZOTQ1OXJZVS1kWFFUeTF4d2xUWEpEV3pQMTPSAXBBVV95cUxQb3hEUUNoMEJjMlAxVEwwdV9VTnJKNnFBdDktT3F4QV9DMExGcXNmTVlpaTBSZ0x3UEhHcmZOYmREXzRkakZSTVNmMWJ1LTNsVU5IOU9fTHc4SjBTeUxzNVRVXzNscC0wWkx5Z1BuUUNs?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "NFL Injury Report Week 14: Jayden Daniels, J.J. McCarthy Return for Showdown FOX Sports",
+          "published": "Sat, 06 Dec 2025 08:00:00 GMT"
         }
       ]
     },
@@ -816,12 +824,63 @@
       ]
     },
     {
+      "id": "injuries-sam-laporta-breece-hall-jeremiyah-love-alvin-52ac5720",
+      "slug": "injuries-sam-laporta-breece-hall-jeremiyah-love-alvin-52ac5720",
+      "sport": "football",
+      "headline": "NFL preseason injuries tracker: Updates on Sam LaPorta, Breece Hall, Jeremiyah Love, Alvin Kamara",
+      "blurb": "We track the biggest injury updates and recovery timelines as teams navigate a brutal start to the NFL preseason",
+      "summary": "Jeremiyah Love, Alvin Kamara, Breece Hall and Sam LaPorta: We track the biggest injury updates and recovery timelines as teams navigate a brutal start to the NFL preseason Board reading of CBS NFL.",
+      "category": "injury",
+      "published": "2026-08-29T02:04:18Z",
+      "updated": "2026-08-29T02:04:18Z",
+      "players": [
+        {
+          "key": "jeremiyah love",
+          "name": "Jeremiyah Love",
+          "slug": "jeremiyah-love",
+          "pos": "RB",
+          "team": "ARI"
+        },
+        {
+          "key": "alvin kamara",
+          "name": "Alvin Kamara",
+          "slug": "alvin-kamara",
+          "pos": "RB",
+          "team": "NO"
+        },
+        {
+          "key": "breece hall",
+          "name": "Breece Hall",
+          "slug": "breece-hall",
+          "pos": "RB",
+          "team": "NYJ"
+        },
+        {
+          "key": "sam laporta",
+          "name": "Sam LaPorta",
+          "slug": "sam-laporta",
+          "pos": "TE",
+          "team": "DET"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NFL preseason injuries tracker: Updates on Sam LaPorta, Breece Hall, Jeremiyah Love, Alvin Kamara",
+          "url": "https://www.cbssports.com/nfl/news/nfl-training-camp-injury-tracker/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "We track the biggest injury updates and recovery timelines as teams navigate a brutal start to the NFL preseason",
+          "published": "Sat, 29 Aug 2026 02:04:18 +0000"
+        }
+      ]
+    },
+    {
       "id": "giants-2026-futures-odds-jaxson-dart-john-harbaugh-149900ae",
       "slug": "giants-2026-futures-odds-jaxson-dart-john-harbaugh-149900ae",
       "sport": "football",
       "headline": "Giants 2026 NFL futures odds: With Jaxson Dart and John Harbaugh, New York aims for Patriots-type formula",
-      "blurb": "John Harbaugh Is Reportedly Sitting Jaxson Dart in the Preseason Finale Sports Illustrated",
-      "summary": "John Harbaugh Is Reportedly Sitting Jaxson Dart in the Preseason Finale Sports Illustrated Can John Harbaugh and Jaxson Dart turn the 2026 Giants into a success story? Giants 2026 NFL futures odds: With Jaxson Dart and John Harbaugh, New York aims for Patriots-type formula CBS Sports Aggregated from Sports Illustrated, CBS NFL, CBS Sports, The New York Times, bolavip.com and 5 more.",
+      "blurb": "Jaxson Dart Applauded by Giants Defense, John Harbaugh After Rare Slide During Practice Bleacher Report",
+      "summary": "Jaxson Dart Applauded by Giants Defense, John Harbaugh After Rare Slide During Practice Bleacher Report Can John Harbaugh and Jaxson Dart turn the 2026 Giants into a success story? Giants 2026 NFL futures odds: With Jaxson Dart and John Harbaugh, New York aims for Patriots-type formula CBS Sports Aggregated from Bleacher Report, CBS NFL, CBS Sports, The New York Times, bolavip.com and 6 more.",
       "category": "injury",
       "published": "2026-07-14T07:00:00Z",
       "updated": "2026-08-28T22:00:11Z",
@@ -946,6 +1005,89 @@
           "kind": "article",
           "snippet": "John Harbaugh Is Reportedly Sitting Jaxson Dart in the Preseason Finale Sports Illustrated",
           "published": "Fri, 28 Aug 2026 22:00:11 GMT"
+        },
+        {
+          "title": "Jaxson Dart Applauded by Giants Defense, John Harbaugh After Rare Slide During Practice",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQckdMTElnRGRLWGdHTWJaUUZlcVJObVNYNU5YMFVIbHR1NWk2VEFTVGdNWFgyRlhieElkdVpNWU5iWlBWSEhFMHpKaWl6dVM2Zk42QTQxaXVJVXp3RmV3OWprWTJEWVR2VHMzZm5sU2NGcnBJV3B5T0N4aEhLem56SXhNWU5qT1NWYU50RW9nb1UybnRuSTctTWJkaUgzekxsUzk1NnpkSXdUX3JLWl9XeGVWbHNRTC1RZERzcGtUczB0bEJxanl3?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "Jaxson Dart Applauded by Giants Defense, John Harbaugh After Rare Slide During Practice Bleacher Report",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "bo-nix-playing-today-broncos-starting-qb-falcons-56080fdc",
+      "slug": "bo-nix-playing-today-broncos-starting-qb-falcons-56080fdc",
+      "sport": "football",
+      "headline": "Is Brock Purdy playing today? 49ers’ starting QB vs Titans in Week 1 of 2026 NFL Preseason",
+      "blurb": "Are Bo Nix, Jordan Love playing today in Broncos vs Packers in 2026 NFL Preseason Week 2?",
+      "summary": "Are Bo Nix, Jordan Love playing today in Broncos vs Packers in 2026 NFL Preseason Week 2? Why isn’t Jaxson Dart playing today for NY Giants vs Jets in 2026 NFL Preseason Week 3? Broncos’ starting QB vs Falcons in Week 1 of 2026 NFL Preseason bolavip.com Board reading of bolavip.com.",
+      "category": "wire",
+      "published": "2026-08-13T07:00:00Z",
+      "updated": "2026-08-28T22:08:58Z",
+      "players": [
+        {
+          "key": "jordan love",
+          "name": "Jordan Love",
+          "slug": "jordan-love",
+          "pos": "QB",
+          "team": "GB"
+        },
+        {
+          "key": "bo nix",
+          "name": "Bo Nix",
+          "slug": "bo-nix",
+          "pos": "QB",
+          "team": "DEN"
+        },
+        {
+          "key": "brock purdy",
+          "name": "Brock Purdy",
+          "slug": "brock-purdy",
+          "pos": "QB",
+          "team": "SF"
+        },
+        {
+          "key": "jaxson dart",
+          "name": "Jaxson Dart",
+          "slug": "jaxson-dart",
+          "pos": "QB",
+          "team": "NYG"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Why isn’t Jaxson Dart playing today for NY Giants vs Jets in 2026 NFL Preseason Week 3?",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYTRfZkNjN3F5a0xieXJGV1VkN0tpU3puWGpOWlh1YXprQTNOQ3EtLUROc1ptenlCdnI0T2ZTdTNCd0tTTHlJQWs5SGV3SGNKRlYxNVlGN3V2TGZEX1JXVXBhMHpwUkFjTTBHMWRxeTlfMG9JWmI3d210YWphQXVIYlIzMGo3SjhkS0xISWJzaTBoR3FuTk5zbFlmSndNWVU2R3F5ZjFJSDVOeVdnMlU5cXJ30gG3AUFVX3lxTE5JWkc0Vlc5c2xERUtlRU9iUEU5dUpKczkxSFJOeDFkVHdsbGlRakVDbFZhSFdjWGluWExWOUc3clZTMmw1RG1wSVZ1MnA5QzNrcHZUVXpkT2NXQTU0QmlZRWMwZ2dockhscVJtc3JrR0UwcVpaR19BYV80OTk4dkp2cHpsTmRMYkVuenhsZnBOYTBPVlZoVlBEODZIUnpKNVFSNldZdl9lSFNnNnlDQmN6YXAzNjJMTQ?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Why isn’t Jaxson Dart playing today for NY Giants vs Jets in 2026 NFL Preseason Week 3? bolavip.com",
+          "published": "Fri, 28 Aug 2026 22:08:58 GMT"
+        },
+        {
+          "title": "Is Bo Nix playing today? Broncos’ starting QB vs Falcons in Week 1 of 2026 NFL Preseason",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQzFlZmxxb091Zng4d0p3cmJQc3Y0UGluNkRILVJCOTRaMUVZajdOcTRIZ0hfT0dsYVJ1ZUZsUUxranNIbHNvSzJ3UW9XTS1rV2xrdnlhSjZhdk1RVjExVV9hV0VkbGFwenNNR1AxSGVicTdqQ056TjAyWlZWdkFrTHRjTklId0VYclVZY2xTMWtKYjYtNzkyQVNBVW44ZzBFeFp1RENGdGVyZ3BMTUpDeGVmd9IBuAFBVV95cUxNcjAzSlo2ejNPRG95NThHMUlhenlOcTNwUGxEQVdZNV8zVXctWVhUMzRwWXhwTU00S3J2MFRpT181TVVUcFJxZk0xVWFQOVNsb25GYk1ETWRQSUY3dWpza2cxMm4yVHRGMVMwUzBTaDV2dS1KSEVPNWlRTEVFeUlqN3B4UkdHeThXclp5dkxrOFVjZDZENXF2R21ORDR6cjVPaTFITEhianc2UkljYXFsOFlJRXAyWjFU?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Is Bo Nix playing today? Broncos’ starting QB vs Falcons in Week 1 of 2026 NFL Preseason bolavip.com",
+          "published": "Fri, 14 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Brock Purdy playing today? 49ers’ starting QB vs Titans in Week 1 of 2026 NFL Preseason",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlZscXYya1BwS2xfMTRsNEpITnd1NTAxamR5R2lLaTdsMzFwVHZ0aGtjcU1jeVlFemZfblpGOGhfR1o4YXJQZzZxTTh4TFFCZEdJN2dUeWxXSU1aOVBxM1hEVlV3QnZCNy1FTUVKY0JHcjVuY181OW9HWnNzQU1hVlZtcTlMLWVGNUlaWHVmb3ljRk9tM3VoRlNWWnRVVk9HZmVXU3Z4MXlTb1pvdzlIWUU1YW1ad9IBuwFBVV95cUxNSVFwdTR1bFFlT21LbnpuWk9WeWl1ODFVTDkxR2piNkV5UmM2ZElMcHUySm05SHpuMXlMdUFMaUR2eEhzX0NmUUZmTXZqaGNLSndsSVFlQkFfQXhUOG13RFRrc1RYU1RBQ21wM2lQMWdYd1UxQUEzZWZXZDlvb1l5R20zT3dHTkZMTEFFSVNtX1hoanFtMU1INkVwWFZqdHY3UzBrSEZobHNGN2gwNkVsYksyd3pTazRYOU5V?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Is Brock Purdy playing today? 49ers’ starting QB vs Titans in Week 1 of 2026 NFL Preseason bolavip.com",
+          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Are Bo Nix, Jordan Love playing today in Broncos vs Packers in 2026 NFL Preseason Week 2?",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcERXMmZXZ09iSklDOEFLcUxDM3hwLXRsNFFOTldDRklaa2s4bl9ib09kQVJkdFJlM0kwWFJpMERTTnE0N3dFU3AyWENYWWlvd0puZVZicHFhN05wb0ZuWkZobkFxbTYybENQVEwtNFA5aXpkU1ZOTE5YR1lheGVpcnlXUll6dlhPaHNuS3piTklvMFlhR3hFeTgwQS1jcHE4dGh0MEI1VjlxWWFYYTZuU0dDV1TSAboBQVVfeXFMTXR6UTRvN1ZNSm1uQlZOMGs3YmNEZ1g3ZUVxSWRsN3kxU3dzNHFkcUw2TWlEblJmZzBRUk5lRHV1eTczMENhMjB2ZUxFdURqcjRwUjlrYUlCOUw3bUI4Tlo2RTZuRmt6VV9ZVElBcXZ0QUMzT3VnZDVEb0dobmttcmNLUW81MzY5ZjNCdUp5Z1B3eXRPX2xRT1JoaXpnNmppeWloUDVJN19hRHhQUmYtWmluTTZzbDlJVXl3?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Are Bo Nix, Jordan Love playing today in Broncos vs Packers in 2026 NFL Preseason Week 2? bolavip.com",
+          "published": "Fri, 21 Aug 2026 18:43:26 GMT"
         }
       ]
     },
@@ -1228,81 +1370,6 @@
           "kind": "article",
           "snippet": "AFC Notes: Kayshon Boutte, Christian Gonzalez, Jaylen Waddle, Bills, Jets, Patriots NFLTradeRumors.co",
           "published": "Thu, 27 Aug 2026 21:30:13 GMT"
-        }
-      ]
-    },
-    {
-      "id": "bo-nix-playing-today-broncos-starting-qb-falcons-56080fdc",
-      "slug": "bo-nix-playing-today-broncos-starting-qb-falcons-56080fdc",
-      "sport": "football",
-      "headline": "Is Brock Purdy playing today? 49ers’ starting QB vs Titans in Week 1 of 2026 NFL Preseason",
-      "blurb": "Are Bo Nix, Jordan Love playing today in Broncos vs Packers in 2026 NFL Preseason Week 2?",
-      "summary": "Are Bo Nix, Jordan Love playing today in Broncos vs Packers in 2026 NFL Preseason Week 2? Why isn’t Jaxson Dart playing today for NY Giants vs Jets in 2026 NFL Preseason Week 3? Broncos’ starting QB vs Falcons in Week 1 of 2026 NFL Preseason bolavip.com Board reading of bolavip.com.",
-      "category": "wire",
-      "published": "2026-08-13T07:00:00Z",
-      "updated": "2026-08-28T22:08:58Z",
-      "players": [
-        {
-          "key": "jordan love",
-          "name": "Jordan Love",
-          "slug": "jordan-love",
-          "pos": "QB",
-          "team": "GB"
-        },
-        {
-          "key": "bo nix",
-          "name": "Bo Nix",
-          "slug": "bo-nix",
-          "pos": "QB",
-          "team": "DEN"
-        },
-        {
-          "key": "brock purdy",
-          "name": "Brock Purdy",
-          "slug": "brock-purdy",
-          "pos": "QB",
-          "team": "SF"
-        },
-        {
-          "key": "jaxson dart",
-          "name": "Jaxson Dart",
-          "slug": "jaxson-dart",
-          "pos": "QB",
-          "team": "NYG"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Why isn’t Jaxson Dart playing today for NY Giants vs Jets in 2026 NFL Preseason Week 3?",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYTRfZkNjN3F5a0xieXJGV1VkN0tpU3puWGpOWlh1YXprQTNOQ3EtLUROc1ptenlCdnI0T2ZTdTNCd0tTTHlJQWs5SGV3SGNKRlYxNVlGN3V2TGZEX1JXVXBhMHpwUkFjTTBHMWRxeTlfMG9JWmI3d210YWphQXVIYlIzMGo3SjhkS0xISWJzaTBoR3FuTk5zbFlmSndNWVU2R3F5ZjFJSDVOeVdnMlU5cXJ30gG3AUFVX3lxTE5JWkc0Vlc5c2xERUtlRU9iUEU5dUpKczkxSFJOeDFkVHdsbGlRakVDbFZhSFdjWGluWExWOUc3clZTMmw1RG1wSVZ1MnA5QzNrcHZUVXpkT2NXQTU0QmlZRWMwZ2dockhscVJtc3JrR0UwcVpaR19BYV80OTk4dkp2cHpsTmRMYkVuenhsZnBOYTBPVlZoVlBEODZIUnpKNVFSNldZdl9lSFNnNnlDQmN6YXAzNjJMTQ?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Why isn’t Jaxson Dart playing today for NY Giants vs Jets in 2026 NFL Preseason Week 3? bolavip.com",
-          "published": "Fri, 28 Aug 2026 22:08:58 GMT"
-        },
-        {
-          "title": "Is Bo Nix playing today? Broncos’ starting QB vs Falcons in Week 1 of 2026 NFL Preseason",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQzFlZmxxb091Zng4d0p3cmJQc3Y0UGluNkRILVJCOTRaMUVZajdOcTRIZ0hfT0dsYVJ1ZUZsUUxranNIbHNvSzJ3UW9XTS1rV2xrdnlhSjZhdk1RVjExVV9hV0VkbGFwenNNR1AxSGVicTdqQ056TjAyWlZWdkFrTHRjTklId0VYclVZY2xTMWtKYjYtNzkyQVNBVW44ZzBFeFp1RENGdGVyZ3BMTUpDeGVmd9IBuAFBVV95cUxNcjAzSlo2ejNPRG95NThHMUlhenlOcTNwUGxEQVdZNV8zVXctWVhUMzRwWXhwTU00S3J2MFRpT181TVVUcFJxZk0xVWFQOVNsb25GYk1ETWRQSUY3dWpza2cxMm4yVHRGMVMwUzBTaDV2dS1KSEVPNWlRTEVFeUlqN3B4UkdHeThXclp5dkxrOFVjZDZENXF2R21ORDR6cjVPaTFITEhianc2UkljYXFsOFlJRXAyWjFU?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Is Bo Nix playing today? Broncos’ starting QB vs Falcons in Week 1 of 2026 NFL Preseason bolavip.com",
-          "published": "Fri, 14 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Is Brock Purdy playing today? 49ers’ starting QB vs Titans in Week 1 of 2026 NFL Preseason",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlZscXYya1BwS2xfMTRsNEpITnd1NTAxamR5R2lLaTdsMzFwVHZ0aGtjcU1jeVlFemZfblpGOGhfR1o4YXJQZzZxTTh4TFFCZEdJN2dUeWxXSU1aOVBxM1hEVlV3QnZCNy1FTUVKY0JHcjVuY181OW9HWnNzQU1hVlZtcTlMLWVGNUlaWHVmb3ljRk9tM3VoRlNWWnRVVk9HZmVXU3Z4MXlTb1pvdzlIWUU1YW1ad9IBuwFBVV95cUxNSVFwdTR1bFFlT21LbnpuWk9WeWl1ODFVTDkxR2piNkV5UmM2ZElMcHUySm05SHpuMXlMdUFMaUR2eEhzX0NmUUZmTXZqaGNLSndsSVFlQkFfQXhUOG13RFRrc1RYU1RBQ21wM2lQMWdYd1UxQUEzZWZXZDlvb1l5R20zT3dHTkZMTEFFSVNtX1hoanFtMU1INkVwWFZqdHY3UzBrSEZobHNGN2gwNkVsYksyd3pTazRYOU5V?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Is Brock Purdy playing today? 49ers’ starting QB vs Titans in Week 1 of 2026 NFL Preseason bolavip.com",
-          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Are Bo Nix, Jordan Love playing today in Broncos vs Packers in 2026 NFL Preseason Week 2?",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcERXMmZXZ09iSklDOEFLcUxDM3hwLXRsNFFOTldDRklaa2s4bl9ib09kQVJkdFJlM0kwWFJpMERTTnE0N3dFU3AyWENYWWlvd0puZVZicHFhN05wb0ZuWkZobkFxbTYybENQVEwtNFA5aXpkU1ZOTE5YR1lheGVpcnlXUll6dlhPaHNuS3piTklvMFlhR3hFeTgwQS1jcHE4dGh0MEI1VjlxWWFYYTZuU0dDV1TSAboBQVVfeXFMTXR6UTRvN1ZNSm1uQlZOMGs3YmNEZ1g3ZUVxSWRsN3kxU3dzNHFkcUw2TWlEblJmZzBRUk5lRHV1eTczMENhMjB2ZUxFdURqcjRwUjlrYUlCOUw3bUI4Tlo2RTZuRmt6VV9ZVElBcXZ0QUMzT3VnZDVEb0dobmttcmNLUW81MzY5ZjNCdUp5Z1B3eXRPX2xRT1JoaXpnNmppeWloUDVJN19hRHhQUmYtWmluTTZzbDlJVXl3?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Are Bo Nix, Jordan Love playing today in Broncos vs Packers in 2026 NFL Preseason Week 2? bolavip.com",
-          "published": "Fri, 21 Aug 2026 18:43:26 GMT"
         }
       ]
     },
@@ -2383,8 +2450,8 @@
       "slug": "steelers-begin-roster-cuts-11-players-cdf4ad33",
       "sport": "football",
       "headline": "3 Surprise Roster Cuts Vikings Could Be Forced to Make (McCarthy Headlines Potential Casualties)",
-      "blurb": "4 NFL players who could be surprise roster cuts Yahoo Sports",
-      "summary": "4 NFL players who could be surprise roster cuts Yahoo Sports NFL veterans on the chopping block: These 20 players could be among roster-cut casualties CBS Sports 35 players who are locks to make the Panthers' initial 53-man roster Panthers Wire Aggregated from Yahoo Sports, CBS Sports, Panthers Wire, Bleacher Report, Sports Illustrated and 5 more.",
+      "blurb": "4 NFL players who could be surprise roster cuts The Big Lead",
+      "summary": "4 NFL players who could be surprise roster cuts The Big Lead The Steelers finished their preseason on Thursday, so they have begun the process of trimming their roster to the mandatory 53-player limit before Sunday's 6 p.m. Steelers Begin Roster Cuts With 11 Players NFLTradeRumors.co Aggregated from The Big Lead, ProFootball Talk on NBC Sports, PFT feed, NFLTradeRumors.co, Yahoo Sports and 6 more.",
       "category": "trade",
       "published": "2024-08-29T07:00:00Z",
       "updated": "2026-08-28T21:43:19Z",
@@ -2493,6 +2560,14 @@
           "kind": "x",
           "snippet": "Some former Texas football players survived NFL roster cuts, while others didn't. x.com",
           "published": "Thu, 29 Aug 2024 07:00:00 GMT"
+        },
+        {
+          "title": "4 NFL players who could be surprise roster cuts",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSDV5LWIyUHRjSUdHaE9qX2t5YzFLYWxMbDJTVkdXTk9Ib015aFZwNHVKSlNPcUlHUGExZ3JqODR5eVE5ejRPR3djRFZQNEtPVWFvNndIYmlXRDBPZ0wyUWJXSURoaWIzNWZLMzF5d3pyN2Vxcnc3bnJtdXp2SEVrcFdjUjN4VGFEd2RRTA?oc=5",
+          "publisher": "The Big Lead",
+          "kind": "article",
+          "snippet": "4 NFL players who could be surprise roster cuts The Big Lead",
+          "published": "Fri, 28 Aug 2026 13:58:58 GMT"
         }
       ]
     },
@@ -2579,6 +2654,113 @@
           "kind": "x",
           "snippet": "Four Steelers Who Could Be The 2026 Roster ‘Yo-Yo’ #Steelers #NFL #Pittsburgh x.com",
           "published": "Fri, 28 Aug 2026 13:32:22 GMT"
+        }
+      ]
+    },
+    {
+      "id": "j-j-mccarthy-won-t-play-vikings-finale-b3552e7c",
+      "slug": "j-j-mccarthy-won-t-play-vikings-finale-b3552e7c",
+      "sport": "football",
+      "headline": "J.J. McCarthy won't play for Vikings in preseason finale, due to ankle injury",
+      "blurb": "To the extent the Vikings still have a competition for the backup quarterback spot behind Kyler Murray, J.J.",
+      "summary": "To the extent the Vikings still have a competition for the backup quarterback spot behind Kyler Murray, J.J. Board reading of ProFootball Talk on NBC Sports.",
+      "category": "injury",
+      "published": "2026-08-28T23:09:58Z",
+      "updated": "2026-08-28T23:09:58Z",
+      "players": [
+        {
+          "key": "kyler murray",
+          "name": "Kyler Murray",
+          "slug": "kyler-murray",
+          "pos": "QB",
+          "team": "MIN"
+        },
+        {
+          "key": "j j mccarthy",
+          "name": "J.J. McCarthy",
+          "slug": "j-j-mccarthy",
+          "pos": "QB",
+          "team": "MIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "J.J. McCarthy won't play for Vikings in preseason finale, due to ankle injury",
+          "url": "https://sports.yahoo.com/articles/j-j-mccarthy-wont-play-230958306.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "To the extent the Vikings still have a competition for the backup quarterback spot behind Kyler Murray, J.J.",
+          "published": "Fri, 28 Aug 2026 23:09:58 +0000"
+        }
+      ]
+    },
+    {
+      "id": "giants-hc-assigns-blame-jaxson-dart-injury-worry-c9bc5730",
+      "slug": "giants-hc-assigns-blame-jaxson-dart-injury-worry-c9bc5730",
+      "sport": "football",
+      "headline": "NFL executives, writer share alarming concerns about Giants' Jaxson Dart",
+      "blurb": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart heavy.com",
+      "summary": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart heavy.com NFL executives, writer share alarming concerns about Giants' Jaxson Dart Yardbarker Giants’ Head Coach Accused of Creating Problem for Jaxson Dart Yahoo Sports Aggregated from heavy.com, Yardbarker, Yahoo Sports, CBS Sports.",
+      "category": "injury",
+      "published": "2026-08-08T07:00:00Z",
+      "updated": "2026-08-28T14:58:19Z",
+      "players": [
+        {
+          "key": "jaxson dart",
+          "name": "Jaxson Dart",
+          "slug": "jaxson-dart",
+          "pos": "QB",
+          "team": "NYG"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRFFmSTY1alVsU0J4Vl9zSU9DdThGb2t1MkNlS1pPMUdpT1d0dWU2anF5YUQydTdiYmE4ZHV0dUZ2NGZodGRYNXRjVTBhUVdGMXBBWVpsOUFCSUVOTjk5VndlWUJ2UXNnVTFXbWpUQjBra0Vlc1NnWWlIT0R0Mll4RmtUYk1OYTg0VmhR?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart Yahoo Sports",
+          "published": "Fri, 28 Aug 2026 14:58:19 GMT"
+        },
+        {
+          "title": "Giants' Jaxson Dart: Heads to medical tent",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMTB4VjZNTWxSbE45YlR6WlpyWmluQWk3Mndwb194c3JLNEI1aEd1UGNmcDg0eEJuU1ZmOUdsVWI5ZUJhMkhfU0ExYVJkNW1BbVQ1NlJHX0wtVUM5ZGJrV29Sek5IYW8zMWdiU0ZoMjdPSkx5VDBJSFpJbVVmakRla3AwcGhjcDd2bEpXN2lYeGRKSlE?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Giants' Jaxson Dart: Heads to medical tent CBS Sports",
+          "published": "Sat, 15 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Giants’ HC Assigns Blame for Jaxson Dart Injury Worry vs. Vikings",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeWdjM2YzbmxBcmVzSzg4aGQwVFdlWC12eXRsQS1GZXBwSTlnc3dnRHI3X0FNclRwbEpPdGd4blR1MmpuRXRJS0RnT0o0M3h0dUZydFU1UVJPUjZiLXg3RHRqVzNONGppWnQwNTFyMXA1X3NxVzB0cVdjUzhjM3FvWEd6dnpXVFJYZ3pwR21BUQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Giants’ HC Assigns Blame for Jaxson Dart Injury Worry vs. Vikings heavy.com",
+          "published": "Sat, 15 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Giants’ Jaxson Dart Gets Major Update on His Future",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOU2hRSjZmYm85M3d1b0pxb2pGbTJRSlA1SFFzTF9maUxWTWJXaWliR3dhckNTNmU1ZDVkQVk3WlJNLTlScXE4eGY5QU1hTzRqTXdOaTh2UUtUb1ExbURuQ1NsVnkzdW1wQVVpVXdlaE11Q1JvemZubEZIel8xYXBQMU56dw?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Giants’ Jaxson Dart Gets Major Update on His Future heavy.com",
+          "published": "Sat, 08 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ3Flc2lod0EwVkJDa1RoMmxuNFZjS3piUlRZdTZ0SDhsN3ctdi1XVmJlaDhCN3lGN28ycGpOOXltQzMweVIwS3ZQUlNFXy16R1pHZ1JrbVpYSXd2Z296djc2VmU3bXd0Tk1QZjNpSENhQUk3RldPRmhOVzQzY2dZMHM0ZHBNQjBZcHRMMEhhRjc?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart heavy.com",
+          "published": "Fri, 28 Aug 2026 11:58:19 GMT"
+        },
+        {
+          "title": "NFL executives, writer share alarming concerns about Giants' Jaxson Dart",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSlNidV9RWnZid1JwQ2pWd2wxYXJEUmRubDl3YlZBRHpYTVNLSGxjdURQTnU2RU40RlFHTE5tY2ZZUElxYl9KM1NDTmprZlpxR0JwcjZfNnFmcThqSDBBS2NEWWp4SE5hWVJYUU9ON1NxZXVGSThIOE9UVjRFN3BzNnhqZ2hiUzE3bVNremtNZnFqNW9mZXJxcWkyQWdKWG15bGI5VnpWZlN6c09scWJNXy15MTlDMWFKampvWWpYWnBlTzRXRUJN?oc=5",
+          "publisher": "Yardbarker",
+          "kind": "article",
+          "snippet": "NFL executives, writer share alarming concerns about Giants' Jaxson Dart Yardbarker",
+          "published": "Fri, 28 Aug 2026 13:09:13 GMT"
         }
       ]
     },
@@ -2703,113 +2885,6 @@
           "kind": "x",
           "snippet": "Ja’Marr Chase left Bengals practice after suffering an apparent injury on this play (Via @yannitragellis) x.com",
           "published": "Tue, 25 Aug 2026 19:12:15 GMT"
-        }
-      ]
-    },
-    {
-      "id": "j-j-mccarthy-won-t-play-vikings-finale-b3552e7c",
-      "slug": "j-j-mccarthy-won-t-play-vikings-finale-b3552e7c",
-      "sport": "football",
-      "headline": "J.J. McCarthy won't play for Vikings in preseason finale, due to ankle injury",
-      "blurb": "To the extent the Vikings still have a competition for the backup quarterback spot behind Kyler Murray, J.J.",
-      "summary": "To the extent the Vikings still have a competition for the backup quarterback spot behind Kyler Murray, J.J. Board reading of ProFootball Talk on NBC Sports.",
-      "category": "injury",
-      "published": "2026-08-28T23:09:58Z",
-      "updated": "2026-08-28T23:09:58Z",
-      "players": [
-        {
-          "key": "kyler murray",
-          "name": "Kyler Murray",
-          "slug": "kyler-murray",
-          "pos": "QB",
-          "team": "MIN"
-        },
-        {
-          "key": "j j mccarthy",
-          "name": "J.J. McCarthy",
-          "slug": "j-j-mccarthy",
-          "pos": "QB",
-          "team": "MIN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "J.J. McCarthy won't play for Vikings in preseason finale, due to ankle injury",
-          "url": "https://sports.yahoo.com/articles/j-j-mccarthy-wont-play-230958306.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "To the extent the Vikings still have a competition for the backup quarterback spot behind Kyler Murray, J.J.",
-          "published": "Fri, 28 Aug 2026 23:09:58 +0000"
-        }
-      ]
-    },
-    {
-      "id": "giants-hc-assigns-blame-jaxson-dart-injury-worry-c9bc5730",
-      "slug": "giants-hc-assigns-blame-jaxson-dart-injury-worry-c9bc5730",
-      "sport": "football",
-      "headline": "NFL executives, writer share alarming concerns about Giants' Jaxson Dart",
-      "blurb": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart heavy.com",
-      "summary": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart heavy.com NFL executives, writer share alarming concerns about Giants' Jaxson Dart Yardbarker Giants’ Head Coach Accused of Creating Problem for Jaxson Dart Yahoo Sports Aggregated from heavy.com, Yardbarker, Yahoo Sports, CBS Sports.",
-      "category": "injury",
-      "published": "2026-08-08T07:00:00Z",
-      "updated": "2026-08-28T14:58:19Z",
-      "players": [
-        {
-          "key": "jaxson dart",
-          "name": "Jaxson Dart",
-          "slug": "jaxson-dart",
-          "pos": "QB",
-          "team": "NYG"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRFFmSTY1alVsU0J4Vl9zSU9DdThGb2t1MkNlS1pPMUdpT1d0dWU2anF5YUQydTdiYmE4ZHV0dUZ2NGZodGRYNXRjVTBhUVdGMXBBWVpsOUFCSUVOTjk5VndlWUJ2UXNnVTFXbWpUQjBra0Vlc1NnWWlIT0R0Mll4RmtUYk1OYTg0VmhR?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart Yahoo Sports",
-          "published": "Fri, 28 Aug 2026 14:58:19 GMT"
-        },
-        {
-          "title": "Giants' Jaxson Dart: Heads to medical tent",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMTB4VjZNTWxSbE45YlR6WlpyWmluQWk3Mndwb194c3JLNEI1aEd1UGNmcDg0eEJuU1ZmOUdsVWI5ZUJhMkhfU0ExYVJkNW1BbVQ1NlJHX0wtVUM5ZGJrV29Sek5IYW8zMWdiU0ZoMjdPSkx5VDBJSFpJbVVmakRla3AwcGhjcDd2bEpXN2lYeGRKSlE?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "Giants' Jaxson Dart: Heads to medical tent CBS Sports",
-          "published": "Sat, 15 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Giants’ HC Assigns Blame for Jaxson Dart Injury Worry vs. Vikings",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeWdjM2YzbmxBcmVzSzg4aGQwVFdlWC12eXRsQS1GZXBwSTlnc3dnRHI3X0FNclRwbEpPdGd4blR1MmpuRXRJS0RnT0o0M3h0dUZydFU1UVJPUjZiLXg3RHRqVzNONGppWnQwNTFyMXA1X3NxVzB0cVdjUzhjM3FvWEd6dnpXVFJYZ3pwR21BUQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Giants’ HC Assigns Blame for Jaxson Dart Injury Worry vs. Vikings heavy.com",
-          "published": "Sat, 15 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Giants’ Jaxson Dart Gets Major Update on His Future",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOU2hRSjZmYm85M3d1b0pxb2pGbTJRSlA1SFFzTF9maUxWTWJXaWliR3dhckNTNmU1ZDVkQVk3WlJNLTlScXE4eGY5QU1hTzRqTXdOaTh2UUtUb1ExbURuQ1NsVnkzdW1wQVVpVXdlaE11Q1JvemZubEZIel8xYXBQMU56dw?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Giants’ Jaxson Dart Gets Major Update on His Future heavy.com",
-          "published": "Sat, 08 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ3Flc2lod0EwVkJDa1RoMmxuNFZjS3piUlRZdTZ0SDhsN3ctdi1XVmJlaDhCN3lGN28ycGpOOXltQzMweVIwS3ZQUlNFXy16R1pHZ1JrbVpYSXd2Z296djc2VmU3bXd0Tk1QZjNpSENhQUk3RldPRmhOVzQzY2dZMHM0ZHBNQjBZcHRMMEhhRjc?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Giants’ Head Coach Accused of Creating Problem for Jaxson Dart heavy.com",
-          "published": "Fri, 28 Aug 2026 11:58:19 GMT"
-        },
-        {
-          "title": "NFL executives, writer share alarming concerns about Giants' Jaxson Dart",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSlNidV9RWnZid1JwQ2pWd2wxYXJEUmRubDl3YlZBRHpYTVNLSGxjdURQTnU2RU40RlFHTE5tY2ZZUElxYl9KM1NDTmprZlpxR0JwcjZfNnFmcThqSDBBS2NEWWp4SE5hWVJYUU9ON1NxZXVGSThIOE9UVjRFN3BzNnhqZ2hiUzE3bVNremtNZnFqNW9mZXJxcWkyQWdKWG15bGI5VnpWZlN6c09scWJNXy15MTlDMWFKampvWWpYWnBlTzRXRUJN?oc=5",
-          "publisher": "Yardbarker",
-          "kind": "article",
-          "snippet": "NFL executives, writer share alarming concerns about Giants' Jaxson Dart Yardbarker",
-          "published": "Fri, 28 Aug 2026 13:09:13 GMT"
         }
       ]
     },
@@ -3250,6 +3325,52 @@
           "kind": "article",
           "snippet": "Kyle Shanahan provides injury update on Brock Purdy after Week 18 loss Niner Noise",
           "published": "Sat, 03 Jan 2026 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "marvin-mims-goes-locker-room-721cb388",
+      "slug": "marvin-mims-goes-locker-room-721cb388",
+      "sport": "football",
+      "headline": "Marvin Mims: Goes to locker room",
+      "blurb": "exits Broncos' preseason finale with foot injury https://t.co/SjutyvBhZM x.com",
+      "summary": "Marvin Mims Jr.: exits Broncos' preseason finale with foot injury https://t.co/SjutyvBhZM x.com Status alert: Marvin Mims Jr. (foot) questionable to return Friday. Aggregated from x.com, RotoWire NFL.",
+      "category": "injury",
+      "published": "2026-08-29T01:19:28Z",
+      "updated": "2026-08-29T02:19:30Z",
+      "players": [
+        {
+          "key": "marvin mims",
+          "name": "Marvin Mims Jr.",
+          "slug": "marvin-mims",
+          "pos": "WR",
+          "team": "DEN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Marvin Mims: Goes to locker room",
+          "url": "https://www.rotowire.com//football/player/marvin-mims-16849",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Mims (foot) went to the locker room during the first quarter of Friday's preseason game against the Vikings and is questionable to return, Zac Stevens of TheDNVR.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Fri, 28 Aug 2026 6:22:00 PM PDT"
+        },
+        {
+          "title": "Marvin Mims Jr. exits Broncos' preseason finale with foot injury https://t.co/SjutyvBhZM",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyMXNfTWxBcDI4dWdXXzcxSk41dFZrVm9sNWEzcUM1VmNxZEJlc2h5X291MXZZSmJ3NmJGcjFaX0w4ZF93QTVuaFJIaWJUR1pIbDB1a0tWMU1aZEZuRGFjOTVJcw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Marvin Mims Jr. exits Broncos' preseason finale with foot injury https://t.co/SjutyvBhZM x.com",
+          "published": "Sat, 29 Aug 2026 02:02:30 GMT"
+        },
+        {
+          "title": "Status alert: Marvin Mims Jr. (foot) questionable to return Friday.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Nd0tNZVFzR1A0MktyY1hTSGk3OWxNbmxteVdRVUtBcUtTNXV4dkNnLXJwQTA0cV9NMnJSU21aOThwbWJERFpzRGJSVmw2cDRKblJuTWNYWk9WdWhWNzY4OWpR?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Status alert: Marvin Mims Jr. (foot) questionable to return Friday. x.com",
+          "published": "Sat, 29 Aug 2026 01:19:28 GMT"
         }
       ]
     },
@@ -4294,36 +4415,6 @@
       ]
     },
     {
-      "id": "najee-harris-set-play-tonight-first-action-since-f0e24a5f",
-      "slug": "najee-harris-set-play-tonight-first-action-since-f0e24a5f",
-      "sport": "football",
-      "headline": "Najee Harris set to play tonight, first game action since tearing Achilles 11 months ago",
-      "blurb": "Harris would make his Giants debut against the Jets in the preseason finale.",
-      "summary": "Najee Harris: Harris would make his Giants debut against the Jets in the preseason finale. Desk reading of PFT feed.",
-      "category": "injury",
-      "published": "2026-08-28T15:44:13Z",
-      "updated": "2026-08-28T15:44:13Z",
-      "players": [
-        {
-          "key": "najee harris",
-          "name": "Najee Harris",
-          "slug": "najee-harris",
-          "pos": "RB",
-          "team": "NYG"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Najee Harris set to play tonight, first game action since tearing Achilles 11 months ago",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/najee-harris-set-to-play-tonight-first-game-action-since-tearing-achilles-11-months-ago",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Harris would make his Giants debut against the Jets in the preseason finale.",
-          "published": "Fri, 28 Aug 2026 11:44:13 -0400"
-        }
-      ]
-    },
-    {
       "id": "dolphins-sit-starters-finale-against-falcons-421393f5",
       "slug": "dolphins-sit-starters-finale-against-falcons-421393f5",
       "sport": "football",
@@ -4357,6 +4448,36 @@
           "kind": "article",
           "snippet": "Malik Willis, De’Von Achane and many others will not play against Atlanta Falcons in Dolphins final preseason game.",
           "published": "Fri, 28 Aug 2026 21:46:26 +0000"
+        }
+      ]
+    },
+    {
+      "id": "najee-harris-set-play-tonight-first-action-since-f0e24a5f",
+      "slug": "najee-harris-set-play-tonight-first-action-since-f0e24a5f",
+      "sport": "football",
+      "headline": "Najee Harris set to play tonight, first game action since tearing Achilles 11 months ago",
+      "blurb": "Harris would make his Giants debut against the Jets in the preseason finale.",
+      "summary": "Najee Harris: Harris would make his Giants debut against the Jets in the preseason finale. Desk reading of PFT feed.",
+      "category": "injury",
+      "published": "2026-08-28T15:44:13Z",
+      "updated": "2026-08-28T15:44:13Z",
+      "players": [
+        {
+          "key": "najee harris",
+          "name": "Najee Harris",
+          "slug": "najee-harris",
+          "pos": "RB",
+          "team": "NYG"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Najee Harris set to play tonight, first game action since tearing Achilles 11 months ago",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/najee-harris-set-to-play-tonight-first-game-action-since-tearing-achilles-11-months-ago",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Harris would make his Giants debut against the Jets in the preseason finale.",
+          "published": "Fri, 28 Aug 2026 11:44:13 -0400"
         }
       ]
     },
@@ -4435,6 +4556,43 @@
       ]
     },
     {
+      "id": "colston-loveland-ben-johnson-caleb-williams-bears-believing-5bd4b85a",
+      "slug": "colston-loveland-ben-johnson-caleb-williams-bears-believing-5bd4b85a",
+      "sport": "football",
+      "headline": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot",
+      "blurb": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot YouTube",
+      "summary": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot YouTube Desk reading of YouTube.",
+      "category": "wire",
+      "published": "2026-08-28T19:29:06Z",
+      "updated": "2026-08-28T19:29:06Z",
+      "players": [
+        {
+          "key": "colston loveland",
+          "name": "Colston Loveland",
+          "slug": "colston-loveland",
+          "pos": "TE",
+          "team": "CHI"
+        },
+        {
+          "key": "caleb williams",
+          "name": "Caleb Williams",
+          "slug": "caleb-williams",
+          "pos": "QB",
+          "team": "CHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LSXo4Wkh4NkNpVk5NMUc2c0xVdDRZSC01WkJjUzhnNzRWcnpkNTNuV1NQVlJYdm5yTUFLS2dZcm1TUFg1MnRxV3dTQlFVbGMzVUJyOVln?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot YouTube",
+          "published": "Fri, 28 Aug 2026 19:29:06 GMT"
+        }
+      ]
+    },
+    {
       "id": "broncos-sean-payton-rips-analyst-who-bo-nix-11405ec5",
       "slug": "broncos-sean-payton-rips-analyst-who-bo-nix-11405ec5",
       "sport": "football",
@@ -4505,39 +4663,40 @@
       ]
     },
     {
-      "id": "colston-loveland-ben-johnson-caleb-williams-bears-believing-5bd4b85a",
-      "slug": "colston-loveland-ben-johnson-caleb-williams-bears-believing-5bd4b85a",
+      "id": "training-camp-injury-tracking-2026-3c0cee1c",
+      "slug": "training-camp-injury-tracking-2026-3c0cee1c",
       "sport": "football",
-      "headline": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot",
-      "blurb": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot YouTube",
-      "summary": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot YouTube Desk reading of YouTube.",
-      "category": "wire",
-      "published": "2026-08-28T19:29:06Z",
-      "updated": "2026-08-28T19:29:06Z",
-      "players": [
-        {
-          "key": "colston loveland",
-          "name": "Colston Loveland",
-          "slug": "colston-loveland",
-          "pos": "TE",
-          "team": "CHI"
-        },
-        {
-          "key": "caleb williams",
-          "name": "Caleb Williams",
-          "slug": "caleb-williams",
-          "pos": "QB",
-          "team": "CHI"
-        }
-      ],
+      "headline": "NFL Training Camp Injury Report: Tracking the latest news, updates for 2026 fantasy football",
+      "blurb": "NFL Training Camp Injury Report: Tracking the latest news, updates for 2026 fantasy football Yahoo Sports",
+      "summary": "NFL Training Camp Injury Report: Tracking the latest news, updates for 2026 fantasy football Yahoo Sports NFL Training Camp Injury Report: Latest Injuries and Return Timelines Sports Injury Central NFL Injury Tracker: Full List of Players Beginning 2026 Training Camp on PUP, NFI and IR Sports Illustrated Aggregated from Yahoo Sports, Sports Injury Central, Sports Illustrated.",
+      "category": "injury",
+      "published": "2026-07-23T07:00:00Z",
+      "updated": "2026-08-28T20:38:32Z",
+      "players": [],
       "sources": [
         {
-          "title": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LSXo4Wkh4NkNpVk5NMUc2c0xVdDRZSC01WkJjUzhnNzRWcnpkNTNuV1NQVlJYdm5yTUFLS2dZcm1TUFg1MnRxV3dTQlFVbGMzVUJyOVln?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Colston Loveland: Ben Johnson and Caleb Williams have the Bears believing in Super Bowl| The Pivot YouTube",
-          "published": "Fri, 28 Aug 2026 19:29:06 GMT"
+          "title": "NFL Training Camp Injury Report: Tracking the latest news, updates for 2026 fantasy football",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNTUtnVUVXUzZYdFJROGFLOTVsaWFOcTdSYmtOeFJQYUxyQnFFSWZpeU50SVpfajl1TmRlekp6S1BtaC1rUDZIbnB4bmNaYzZCVk1xY01fVUtrWjFDR3l6SmZ5dHZmX1pnRzR1YWZBNGRYNUFYb3JvdjJPWlV5NTI0b0s5WUQwTXFqZW5MNDhuNmlIa19aaFBySW9SZmFRbndCVHpub0N6UUNRT3NxTjVxSzNxSlVqRU1rVmtpZjY3Nll6TVB6YkIyRUNxXzZkNmVQS0ZaUHo2b3VoT0pubU93?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "NFL Training Camp Injury Report: Tracking the latest news, updates for 2026 fantasy football Yahoo Sports",
+          "published": "Fri, 28 Aug 2026 20:38:32 GMT"
+        },
+        {
+          "title": "NFL Training Camp Injury Report: Latest Injuries and Return Timelines",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOamVTQTFlRnhtZ21xOGFuN1VaVGcyR09nNlJkd3VWajFQVGRrNnUzV0h1aDNtc0NVLUFOSUVaUkxwamZZVUV5WUZpYUtMWjEwTWVYUHRUY0RReTU0V2tVMDBnelRxWVdGZV9BR1BoVDdkbGxQNEJ4OVVMbDRTNjNRUV8zdXpBalI3eVdueXI3WFQxZHJrOTdVN0Zn?oc=5",
+          "publisher": "Sports Injury Central",
+          "kind": "article",
+          "snippet": "NFL Training Camp Injury Report: Latest Injuries and Return Timelines Sports Injury Central",
+          "published": "Mon, 17 Aug 2026 02:25:11 GMT"
+        },
+        {
+          "title": "NFL Injury Tracker: Full List of Players Beginning 2026 Training Camp on PUP, NFI and IR",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRDRGY2JGa2RTQXNGR3luUjVQbDRPME00NThxa3pFa3ZJck9IUWp6ajRabjZ6RV8zNkRPVkpMb3BZN3RjS1owNExTMXYwN0xlV1BXQnB0UlJ6NFJrbXRaNGExaW5TVTdyRDFZdEx3TXpCMjI3dFh5eXVzVXo2Z3Rzb3diRnBmSGs?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "NFL Injury Tracker: Full List of Players Beginning 2026 Training Camp on PUP, NFI and IR Sports Illustrated",
+          "published": "Thu, 23 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -4612,110 +4771,6 @@
           "kind": "article",
           "snippet": "AFC Notes: Malik Willis, Geno Smith, Dolphins, Jets, Patriots NFLTradeRumors.co",
           "published": "Fri, 28 Aug 2026 16:05:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "unc-ocho-question-if-steelers-even-need-howard-f9db41be",
-      "slug": "unc-ocho-question-if-steelers-even-need-howard-f9db41be",
-      "sport": "football",
-      "headline": "Unc & Ocho QUESTION If Steelers Even NEED Will Howard After Drew Allar’s BREAKOUT! | Nightcap",
-      "blurb": "Unc & Ocho QUESTION If Steelers Even NEED Will Howard After Drew Allar’s BREAKOUT!",
-      "summary": "Unc & Ocho QUESTION If Steelers Even NEED Will Howard After Drew Allar’s BREAKOUT! Desk reading of YouTube.",
-      "category": "wire",
-      "published": "2026-08-28T16:00:24Z",
-      "updated": "2026-08-28T16:00:24Z",
-      "players": [
-        {
-          "key": "will howard",
-          "name": "Will Howard",
-          "slug": "will-howard",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "drew allar",
-          "name": "Drew Allar",
-          "slug": "drew-allar",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Unc & Ocho QUESTION If Steelers Even NEED Will Howard After Drew Allar’s BREAKOUT! | Nightcap",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE11d1JUYkVyT1o5anhqLXA4RXlQNDBiMFIySkI0OGlJZVpqWEF4ZG9VVUZyZW5YTXpsWWVQQ18tRlpTcVpBS0hxbmpfVG1FQW5INnRWd2N3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Unc & Ocho QUESTION If Steelers Even NEED Will Howard After Drew Allar’s BREAKOUT! | Nightcap YouTube",
-          "published": "Fri, 28 Aug 2026 16:00:24 GMT"
-        }
-      ]
-    },
-    {
-      "id": "one-s-healthy-scratch-another-s-treasure-making-307118a5",
-      "slug": "one-s-healthy-scratch-another-s-treasure-making-307118a5",
-      "sport": "football",
-      "headline": "One team's healthy scratch is another's treasure: Making sense of why Patriots traded Kayshon Boutte to Texans",
-      "blurb": "Boutte led all Patriots wide receivers in touchdowns last year, but didn't fit into New England's plans this season",
-      "summary": "Kayshon Boutte: Boutte led all Patriots wide receivers in touchdowns last year, but didn't fit into New England's plans this season Desk reading of CBS NFL.",
-      "category": "trade",
-      "published": "2026-08-28T15:41:35Z",
-      "updated": "2026-08-28T15:41:35Z",
-      "players": [
-        {
-          "key": "kayshon boutte",
-          "name": "Kayshon Boutte",
-          "slug": "kayshon-boutte",
-          "pos": "WR",
-          "team": "HOU"
-        }
-      ],
-      "sources": [
-        {
-          "title": "One team's healthy scratch is another's treasure: Making sense of why Patriots traded Kayshon Boutte to Texans",
-          "url": "https://www.cbssports.com/nfl/news/kayshon-boutte-trade-analysis-patriots-texans/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "Boutte led all Patriots wide receivers in touchdowns last year, but didn't fit into New England's plans this season",
-          "published": "Fri, 28 Aug 2026 15:41:35 +0000"
-        }
-      ]
-    },
-    {
-      "id": "what-s-next-shedeur-sanders-question-whether-browns-ea7ce540",
-      "slug": "what-s-next-shedeur-sanders-question-whether-browns-ea7ce540",
-      "sport": "football",
-      "headline": "What's next for Shedeur Sanders? NFL sources question whether Browns QB has a starting future",
-      "blurb": "After Deshaun Watson won Cleveland's starting job, NFL coaches and front-office officials explain why Sanders faces an uncertain future -- and why some teams wouldn't trade for…",
-      "summary": "Shedeur Sanders and Deshaun Watson: After Deshaun Watson won Cleveland's starting job, NFL coaches and front-office officials explain why Sanders faces an uncertain future -- and why some teams wouldn't trade for him even if he became available Desk reading of CBS NFL.",
-      "category": "trade",
-      "published": "2026-08-27T21:29:58Z",
-      "updated": "2026-08-27T21:29:58Z",
-      "players": [
-        {
-          "key": "shedeur sanders",
-          "name": "Shedeur Sanders",
-          "slug": "shedeur-sanders",
-          "pos": "QB",
-          "team": "CLE"
-        },
-        {
-          "key": "deshaun watson",
-          "name": "Deshaun Watson",
-          "slug": "deshaun-watson",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "What's next for Shedeur Sanders? NFL sources question whether Browns QB has a starting future",
-          "url": "https://www.cbssports.com/nfl/news/shedeur-sanders-future-browns-qb-job-deshaun-watson/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "After Deshaun Watson won Cleveland's starting job, NFL coaches and front-office officials explain why Sanders faces an uncertain future -- and why some teams wouldn't trade for him even if he became available",
-          "published": "Thu, 27 Aug 2026 21:29:58 +0000"
         }
       ]
     }
