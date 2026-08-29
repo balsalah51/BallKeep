@@ -49,8 +49,8 @@
     
     <p class="kicker">Superflex Redraft · this year</p>
     <h1>Redraft Superflex</h1>
-    <p class="note">This list is Superflex for this season - 400 names. The Keep is Superflex Dynasty. The Board is Redraft PPR. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks.</p>
-    <div class="rank-bar"><p class="rank-search"><input type="search" class="rank-search-input" placeholder="Find a player" aria-label="Find a player" autocomplete="off" spellcheck="false"></p></div><script>
+    <p class="note">This list is Superflex for this season - 400 names. The Keep is Superflex Dynasty. The Board is Redraft PPR. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks. Sort by position with the chips.</p>
+    <div class="rank-bar"><p class="rank-search"><input type="search" class="rank-search-input" placeholder="Find a player" aria-label="Find a player" autocomplete="off" spellcheck="false"></p><div class="filters" id="sf-pos"><button type="button" class="active" data-pos="all">All</button><button type="button" data-pos="QB">QB</button><button type="button" data-pos="RB">RB</button><button type="button" data-pos="WR">WR</button><button type="button" data-pos="TE">TE</button></div></div><script>
 (function () {
   function needle() {
     var inp = document.querySelector(".rank-search-input");
@@ -102,6 +102,14 @@
       <div><a class="sport-switch bb" href="bb/index.html">BaseKeep</a><a class="sport-switch bk" href="bk/index.html">BasketKeep</a><a class="sport-switch pl" href="pl/index.html">PitchKeep</a></div>
     </footer>
   </div>
-    
+    <script>
+    const box = document.getElementById('sf-pos');
+    if (box) box.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      if (window.applyRankFilter) applyRankFilter();
+    });
+    </script>
 </body>
 </html>
