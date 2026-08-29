@@ -281,6 +281,11 @@ class Catalog:
             "bbredraft": "bb_redraft",
             "bb_redraft": "bb_redraft",
             "bb redraft": "bb_redraft",
+            "farm": "bb_farm",
+            "the farm": "bb_farm",
+            "bb_farm": "bb_farm",
+            "prospects": "bb_farm",
+            "bb farm": "bb_farm",
             "pitch": "pl_pitch",
             "the pitch": "pl_pitch",
             "pl_pitch": "pl_pitch",
@@ -385,7 +390,7 @@ class Catalog:
                         if len(out) >= limit:
                             return out
         if len(out) < limit and sport != "football":
-            for board_key in ("bb_keep", "bb_lineup", "bb_pitchers", "bb_redraft"):
+            for board_key in ("bb_keep", "bb_lineup", "bb_pitchers", "bb_redraft", "bb_farm"):
                 for r in self.raw.get(board_key) or []:
                     name = norm(r.get("name", ""))
                     if not name:

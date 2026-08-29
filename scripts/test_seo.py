@@ -195,6 +195,32 @@ def test_rank_search_bar():
     assert "&#x27;" in rank_search_key("Ja'Marr Chase")
 
 
+def test_ppr_extra_boards():
+    from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps
+    spine = ["Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson"]
+    maps = extra_ppr_maps(spine)
+    assert len(PPR_EXTRA_SOURCES) == 10
+    assert len(maps) == 10
+    for label, _url, _note in PPR_EXTRA_SOURCES:
+        assert label in maps
+        assert maps[label]
+
+
+def test_farm_top_100():
+    from bb_prospects import FARM_SOURCES, load_farm
+    farm = load_farm()
+    assert len(farm) == 100
+    assert len(FARM_SOURCES) == 5
+    assert farm[0]["name"] == "Jesús Made"
+    assert farm[0]["bk"] == 1
+    assert all((r.get("mlb_g") or 0) <= 142 for r in farm)
+    assert all(r.get("eta") for r in farm)
+    assert all(r.get("path") for r in farm)
+    assert all(r.get("ranks") for r in farm)
+    keys = [r["key"] for r in farm]
+    assert len(keys) == len(set(keys))
+
+
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_")]
     for fn in tests:

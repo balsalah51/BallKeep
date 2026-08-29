@@ -25,6 +25,7 @@ from extra_ranks import (  # noqa: E402
     ROTOWIRE_SF,
     as_ranks,
 )
+from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps, _norm as ppr_norm  # noqa: E402
 from aggregate_protocol import (  # noqa: E402
     KEEP_SOURCES,
     LONG_CORE,
@@ -521,6 +522,8 @@ def redraft_lists():
         universe.append((name, pos, team))
         if len(universe) >= PPR_N:
             break
+    spine = [n for n, _rk in sorted(fp_ppr_named.items(), key=lambda kv: kv[1])]
+    extra_maps = extra_ppr_maps(spine)
     ppr = []
     for name, pos, team in universe:
         k = norm_name(name)
@@ -534,6 +537,11 @@ def redraft_lists():
             nums.append(float(fp))
         if kb:
             nums.append(float(kb))
+        pk = ppr_norm(name)
+        for emap in extra_maps.values():
+            rk = emap.get(pk) or emap.get(k)
+            if rk:
+                nums.append(float(rk))
         if not nums:
             continue
         avg = sum(nums) / len(nums)
@@ -782,7 +790,7 @@ PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
     ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 28."),
     ("ESPN - Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
-]
+] + PPR_EXTRA_SOURCES
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
     ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 27."),
@@ -804,7 +812,7 @@ FB_SEO = {
     ),
     "board.html": (
         "The Board - 2026 Redraft PPR Rankings | Ball Keep",
-        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex. Kickers and DST omitted.",
+        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen boards: Yates, FantasyPros ECR, Karabell, plus ten more expert and public PPR lists. Kickers and DST omitted.",
         "img/logo.jpg",
     ),
     "the-x.html": (
@@ -814,7 +822,7 @@ FB_SEO = {
     ),
     "redraft-ppr.html": (
         "The Board - 2026 Redraft PPR Rankings | Ball Keep",
-        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex.",
+        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen PPR boards averaged. Kickers and DST omitted.",
         "img/logo.jpg",
     ),
     "redraft-superflex.html": (
@@ -916,7 +924,8 @@ KEEP_FAQ = [
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40–80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
 BOARD_FAQ = [
-    ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex. Kickers and DST omitted."),
+    ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Kickers and DST omitted."),
+    ("How is the rank built?", "The mean of every board that published the name. Unranked on a board is a skip, not a last-place dump. Yates, FantasyPros, and Karabell stay on the table so you can see the long tapes against the mean."),
     ("How is this different from The Keep?", "The Keep is Superflex Dynasty. The Board is this year only, one quarterback, a point per catch."),
     ("Does BK Value use this rank?", "Yes. The PPR calculator prices The Board rank on the same 12,000 curve."),
 ]
@@ -1032,7 +1041,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=39" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=40" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -2244,7 +2253,7 @@ def main():
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
           <p class="lead-sub">Redraft · PPR</p>
-          <p>Full-PPR, this year. Yates, FantasyPros, Karabell.</p>
+          <p>Full-PPR, this year. Thirteen boards averaged.</p>
         </a>
       </div>
     </section>
@@ -2327,17 +2336,19 @@ def main():
     # REDRAFT
     def ppr_extra(r):
         return (
+            f'<td class="desk-only">{r["avg"]}</td>'
+            f'<td class="desk-only">{r["n"]}</td>'
             f'<td class="desk-only">{r["yates"]}</td>'
             f'<td class="desk-only">{r["fp"]}</td>'
             f'<td class="desk-only">{r["karabell"]}</td>'
             f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
     ppr_body = f"""
-    <p class="kicker">2026 Redraft · PPR</p>
+    <p class="kicker">2026 Redraft · PPR · {len(PPR_SOURCES)} boards</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 28), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Mean of {len(PPR_SOURCES)} boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then ten more from Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(ppr, ["Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(ppr, ["Avg", "Boards", "Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
     {faq_html(BOARD_FAQ, heading="How The Board is built.")}
@@ -2350,7 +2361,7 @@ def main():
                 "https://ballkeep.com/board.html",
                 ppr,
                 lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
-                description="Redraft PPR skill-player board.",
+                description="Redraft PPR skill-player board from thirteen public lists.",
             ),
             faq_jsonld(BOARD_FAQ),
         ],
@@ -2771,8 +2782,8 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         "sources": [name for name, _url, _note in KEEP_SOURCES],
         "keep": [slim_row(r, ("ranks", "age", "n", "avg")) for r in keep],
         "board_format": "redraft PPR",
-        "board": [slim_row(r, ("yates", "fp", "karabell", "age")) for r in board],
-        "ppr": [slim_row(r, ("yates", "fp", "karabell", "age")) for r in ppr],
+        "board": [slim_row(r, ("yates", "fp", "karabell", "age", "n", "avg")) for r in board],
+        "ppr": [slim_row(r, ("yates", "fp", "karabell", "age", "n", "avg")) for r in ppr],
         "sf_redraft": [slim_row(r, ("n", "avg", "keep", "ppr")) for r in (sf_redraft or [])],
         "standard": [slim_row(r) for r in std],
         "rookies": [slim_row(r, ("dd", "fp", "pff", "blurb")) for r in rook_rows],
@@ -2795,6 +2806,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
     catalog["bb_saves"] = [slim_row(r) for r in bb.get("saves") or []]
     catalog["bb_svh"] = [slim_row(r) for r in bb.get("svh") or []]
     catalog["bb_redraft"] = [slim_row(r, ("age", "group")) for r in bb.get("redraft") or []]
+    catalog["bb_farm"] = [slim_row(r, ("age", "group", "eta", "path", "level", "mlb_g")) for r in bb.get("farm") or []]
     catalog["bb_picks"] = bb.get("picks") or []
     catalog["bb_players"] = bb.get("files") or []
     catalog["bb_waivers_dynasty"] = bb.get("dynasty_waivers") or []
