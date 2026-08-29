@@ -25,6 +25,7 @@ from extra_ranks import (  # noqa: E402
     ROTOWIRE_SF,
     as_ranks,
 )
+from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps, _norm as ppr_norm  # noqa: E402
 from aggregate_protocol import (  # noqa: E402
     KEEP_SOURCES,
     LONG_CORE,
@@ -521,6 +522,8 @@ def redraft_lists():
         universe.append((name, pos, team))
         if len(universe) >= PPR_N:
             break
+    spine = [n for n, _rk in sorted(fp_ppr_named.items(), key=lambda kv: kv[1])]
+    extra_maps = extra_ppr_maps(spine)
     ppr = []
     for name, pos, team in universe:
         k = norm_name(name)
@@ -534,6 +537,11 @@ def redraft_lists():
             nums.append(float(fp))
         if kb:
             nums.append(float(kb))
+        pk = ppr_norm(name)
+        for emap in extra_maps.values():
+            rk = emap.get(pk) or emap.get(k)
+            if rk:
+                nums.append(float(rk))
         if not nums:
             continue
         avg = sum(nums) / len(nums)
@@ -554,24 +562,23 @@ def redraft_lists():
         r["bk"] = i
     attach_values(ppr)
     # Standard: bump RB, slight WR/TE tax vs PPR
-    std = []
+    std = score_from_ppr(ppr, {"RB": -4.5, "WR": 3.0, "TE": 2.0, "QB": 0.5})
+    # Half-PPR sits between full PPR and Standard: half those taxes.
+    classic = score_from_ppr(ppr, {"RB": -2.25, "WR": 1.5, "TE": 1.0, "QB": 0.25})
+    return ppr, std, classic
+
+
+def score_from_ppr(ppr, taxes):
+    rows = []
     for r in ppr:
-        adj = r["avg"]
-        if r["pos"] == "RB":
-            adj -= 4.5
-        elif r["pos"] == "WR":
-            adj += 3.0
-        elif r["pos"] == "TE":
-            adj += 2.0
-        elif r["pos"] == "QB":
-            adj += 0.5
-        std.append({**r, "avg": round(adj, 2)})
-    std.sort(key=lambda r: r["avg"])
+        adj = r["avg"] + taxes.get(r["pos"], 0)
+        rows.append({**r, "avg": round(adj, 2)})
+    rows.sort(key=lambda r: r["avg"])
     out = []
-    for i, r in enumerate(std[:PPR_N], 1):
+    for i, r in enumerate(rows[:PPR_N], 1):
         out.append({**r, "bk": i})
     attach_values(out)
-    return ppr, out
+    return out
 
 
 def superflex_redraft(keep, ppr):
@@ -627,6 +634,7 @@ NAV = [
     ("trade.html", "Trade"),
     ("recent-trades.html", "Deals"),
     ("redraft-superflex.html", "Redraft Superflex"),
+    ("the-classic.html", "The Classic"),
     ("redraft-standard.html", "Redraft STD"),
     ("rookies-2026.html", "2026 Rookies"),
     ("hot-n-cold.html", "Hot 'n' Cold"),
@@ -782,7 +790,7 @@ PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
     ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 28."),
     ("ESPN - Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
-]
+] + PPR_EXTRA_SOURCES
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
     ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 27."),
@@ -804,7 +812,7 @@ FB_SEO = {
     ),
     "board.html": (
         "The Board - 2026 Redraft PPR Rankings | Ball Keep",
-        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex. Kickers and DST omitted.",
+        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen boards: Yates, FantasyPros ECR, Karabell, plus ten more expert and public PPR lists. Kickers and DST omitted.",
         "img/logo.jpg",
     ),
     "the-x.html": (
@@ -814,12 +822,17 @@ FB_SEO = {
     ),
     "redraft-ppr.html": (
         "The Board - 2026 Redraft PPR Rankings | Ball Keep",
-        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex.",
+        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen PPR boards averaged. Kickers and DST omitted.",
         "img/logo.jpg",
     ),
     "redraft-superflex.html": (
         "2026 Superflex Redraft Rankings | Ball Keep",
         "This-year Superflex redraft. Quarterbacks stay expensive. Built from The Keep SF premium plus the PPR board.",
+        "img/logo.jpg",
+    ),
+    "the-classic.html": (
+        "The Classic - 2026 Half-PPR Rankings | Ball Keep",
+        "The Classic is Ball Keep's 0.5 PPR redraft list. Same 13-board PPR mean as The Board, then half the Standard tax: RB −2.25, WR +1.5, TE +1, QB +0.25.",
         "img/logo.jpg",
     ),
     "redraft-standard.html": (
@@ -902,6 +915,11 @@ FB_SEO = {
         "Trade calculator on the 2026 standard (no PPR) board. Rank becomes BK Value. Fair is within 8%.",
         "img/logo.jpg",
     ),
+    "trade-classic.html": (
+        "The Classic Half-PPR Trade Calculator | Ball Keep",
+        "Trade calculator on The Classic 0.5 PPR ranks. Rank becomes BK Value. Fair is within 8%.",
+        "img/logo.jpg",
+    ),
 }
 
 HOME_FAQ = [
@@ -916,14 +934,15 @@ KEEP_FAQ = [
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40–80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
 BOARD_FAQ = [
-    ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex. Kickers and DST omitted."),
+    ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Kickers and DST omitted."),
+    ("How is the rank built?", "The mean of every board that published the name. Unranked on a board is a skip, not a last-place dump. Yates, FantasyPros, and Karabell stay on the table so you can see the long tapes against the mean."),
     ("How is this different from The Keep?", "The Keep is Superflex Dynasty. The Board is this year only, one quarterback, a point per catch."),
     ("Does BK Value use this rank?", "Yes. The PPR calculator prices The Board rank on the same 12,000 curve."),
 ]
 TRADE_FAQ = [
     ("How does the trade calculator work?", "Every name on a Ball Keep list has a rank. That rank becomes BK Value on a decaying curve. Add the numbers on two sides."),
     ("What does fair mean?", "Fair is within 8%. Superflex keeps quarterback price. 1QB taxes passers to 38% of that number."),
-    ("Which calculator should I use?", "Superflex Dynasty for two-QB startups. 1QB when a passer is just another starter. Redraft PPR or Standard when the deal is for this season only."),
+    ("Which calculator should I use?", "Superflex Dynasty for two-QB startups. 1QB when a passer is just another starter. Redraft PPR, The Classic (0.5 PPR), or Standard when the deal is for this season only."),
 ]
 NEWS_FAQ = [
     ("Where does BK News come from?", "Hourly clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with links back to the original boards and to Keep player files."),
@@ -942,11 +961,19 @@ FB_ALSO = {
     ],
     "board.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("the-classic.html", "The Classic", "Half-PPR redraft."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("trade-ppr.html", "PPR Calculator", "Board ranks as BK Value."),
         ("players/index.html", "Player Pages", "Tape and plus/minus."),
         ("news.html", "BK News", "Injuries and roster tape."),
+    ],
+    "the-classic.html": [
+        ("board.html", "The Board", "Full-PPR redraft."),
+        ("redraft-standard.html", "Redraft Standard", "No reception point."),
+        ("trade-classic.html", "Classic Calculator", "0.5 PPR values."),
+        ("the-keep.html", "The Keep", "Superflex dynasty."),
+        ("players/index.html", "Player Pages", "Keep and Board files."),
     ],
     "redraft-superflex.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty."),
@@ -956,6 +983,7 @@ FB_ALSO = {
     ],
     "redraft-standard.html": [
         ("board.html", "The Board", "Full-PPR redraft."),
+        ("the-classic.html", "The Classic", "Half-PPR redraft."),
         ("the-keep.html", "The Keep", "Superflex dynasty."),
         ("trade-standard.html", "Standard Calculator", "No-PPR values."),
         ("players/index.html", "Player Pages", "Keep and Board files."),
@@ -1032,7 +1060,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=39" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=40" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1353,7 +1381,7 @@ def render_news_pages():
 
 
 
-def collect_profiles(keep, ppr, std, sf_redraft):
+def collect_profiles(keep, ppr, std, sf_redraft, classic=None):
     """Union of The Keep top 400, The Board (redraft PPR), Superflex redraft, and Hot/Cold."""
     players = OrderedDict()
 
@@ -1409,6 +1437,11 @@ def collect_profiles(keep, ppr, std, sf_redraft):
     for r in std:
         add(r["name"], r["pos"], r["team"], "Redraft Standard", r["bk"],
             f"Redraft Standard #{r['bk']}")
+    for r in (classic or []):
+        add(r["name"], r["pos"], r["team"], "The Classic", r["bk"],
+            f"The Classic #{r['bk']} Half-PPR")
+        add(r["name"], r["pos"], r["team"], "Redraft Half-PPR", r["bk"],
+            f"The Classic #{r['bk']} Half-PPR")
     for i, r in enumerate(ROOKIES, 1):
         add(r["name"], r["pos"], r["team"], "2026 Rookies", i, r["value"])
     for i, r in enumerate(HOT, 1):
@@ -1502,6 +1535,8 @@ def ff_stat_line(p):
         bits.append(f"BK {bk_value(lists['The Keep']):,}")
     if lists.get("Redraft PPR"):
         bits.append(f"PPR #{lists['Redraft PPR']}")
+    if lists.get("The Classic") or lists.get("Redraft Half-PPR"):
+        bits.append(f"Classic #{lists.get('The Classic') or lists.get('Redraft Half-PPR')}")
     if lists.get("Redraft Standard"):
         bits.append(f"STD #{lists['Redraft Standard']}")
     if lists.get("2026 Rookies"):
@@ -1542,6 +1577,7 @@ def ff_rank_cards(p):
     items = [
         ("The Keep", lists.get("The Keep")),
         ("The Board", lists.get("The Board") or lists.get("Redraft PPR")),
+        ("The Classic", lists.get("The Classic") or lists.get("Redraft Half-PPR")),
         ("SF Redraft", lists.get("Redraft Superflex")),
         ("STD", lists.get("Redraft Standard")),
         ("Rookies", lists.get("2026 Rookies")),
@@ -1832,6 +1868,7 @@ def trade_mode_page(mode, payload):
       <a href="trade-sf-redraft.html"{' class="active"' if mode == "sfr" else ""}>Superflex Redraft</a>
       <a href="trade-1qb.html"{' class="active"' if mode == "oneqb" else ""}>1QB Dynasty</a>
       <a href="trade-ppr.html"{' class="active"' if mode == "ppr" else ""}>Redraft PPR</a>
+      <a href="trade-classic.html"{' class="active"' if mode == "classic" else ""}>The Classic</a>
       <a href="trade-standard.html"{' class="active"' if mode == "std" else ""}>Redraft Standard</a>
     </p>
     <div id="trade-app" class="trade-app"></div>
@@ -1841,7 +1878,7 @@ def trade_mode_page(mode, payload):
     write(payload["file"], page(payload["label"], payload["file"], body, extra))
 
 
-def write_trade_pages(keep, board, ppr, std):
+def write_trade_pages(keep, board, ppr, std, classic=None):
     modes = {
         "sf": {
             "id": "sf",
@@ -1875,6 +1912,14 @@ def write_trade_pages(keep, board, ppr, std):
             "players": as_trade_players(ppr),
             "picks": [],
         },
+        "classic": {
+            "id": "classic",
+            "file": "trade-classic.html",
+            "label": "The Classic",
+            "blurb": "Uses The Classic 0.5 PPR ranks. Half a point per catch. Same curve, no dynasty pick chips.",
+            "players": as_trade_players(classic or []),
+            "picks": [],
+        },
         "std": {
             "id": "std",
             "file": "trade-standard.html",
@@ -1897,12 +1942,13 @@ def write_trade_pages(keep, board, ppr, std):
         ("trade-sf-redraft.html", "Superflex Redraft", "Redraft Superflex ranks. This year only."),
         ("trade-1qb.html", "1QB Dynasty", "Same Keep ranks, quarterbacks taxed to 38% of Superflex value."),
         ("trade-ppr.html", "The Board (PPR)", "One-year PPR board. No future picks."),
+        ("trade-classic.html", "The Classic (0.5 PPR)", "Half a point per catch. This year only."),
         ("trade-standard.html", "Redraft Standard", "One-year Standard board after the catch-tax."),
         ("recent-trades.html", "Recent Deals", "Type a player. Pull every package on the trade tape."),
     ]
     hub = f"""
     <p class="kicker">Trade Calculators</p>
-    <h1>Five Calculators, One Curve</h1>
+    <h1>Six Calculators, One Curve</h1>
     <p class="note">Every name on a Ball Keep list has a rank. That rank becomes <strong>BK Value</strong>: rank 1 is 12,000, and the number falls on a decaying curve so the drop from 1 to 2 is larger than 50 to 51. A late first (~rank 28) is about half the 1.01. Rank 80 still holds about 29%. Trade math is just adding those numbers on two sides.</p>
     <p class="note">Use Superflex for two-QB leagues, 1QB when a passer is just another starter, and the redraft calculators when the deal is for this season only.</p>
     <div class="grid" style="margin-top:16px">
@@ -2191,17 +2237,18 @@ def main():
         keep = keep[:KEEP_N]
     if len(long_board) > BOARD_N:
         long_board = long_board[:BOARD_N]
-    ppr, std = redraft_lists()
+    ppr, std, classic = redraft_lists()
     media = load_player_media()
     ages = load_age_bank()
     apply_media_ages(keep, media, ages)
     apply_media_ages(long_board, media, ages)
     apply_media_ages(ppr, media, ages)
     apply_media_ages(std, media, ages)
+    apply_media_ages(classic, media, ages)
     sf_redraft = superflex_redraft(keep, ppr)
     apply_media_ages(sf_redraft, media, ages)
     board = ppr
-    profiles = collect_profiles(keep, ppr, std, sf_redraft)
+    profiles = collect_profiles(keep, ppr, std, sf_redraft, classic)
     apply_media_ages(profiles, media, ages)
     (ROOT / "data" / "player_roster.json").write_text(json.dumps(profiles, indent=2))
 
@@ -2216,7 +2263,7 @@ def main():
         "players": board,
     }, indent=2))
 
-    write_trade_pages(keep, sf_redraft, ppr, std)
+    write_trade_pages(keep, sf_redraft, ppr, std, classic)
     deals = enrich_deals(keep, bk_value, pick_assets(), norm_name)
     write_recent_trades_page(deals)
 
@@ -2244,12 +2291,13 @@ def main():
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
           <p class="lead-sub">Redraft · PPR</p>
-          <p>Full-PPR, this year. Yates, FantasyPros, Karabell.</p>
+          <p>Full-PPR, this year. Thirteen boards averaged.</p>
         </a>
       </div>
     </section>
     {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, the market tape, and the slates.", [
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
+        ("the-classic.html", "The Classic", "Half-PPR, this year."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
@@ -2258,7 +2306,7 @@ def main():
         ("mlb-schedule.html", "MLB Schedule", "September slate."),
     ])}
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
-        ("trade.html", "Trade Calculators", "Keep, Board, 1QB, PPR, Standard."),
+        ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
         ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
     ])}
     {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
@@ -2327,17 +2375,19 @@ def main():
     # REDRAFT
     def ppr_extra(r):
         return (
+            f'<td class="desk-only">{r["avg"]}</td>'
+            f'<td class="desk-only">{r["n"]}</td>'
             f'<td class="desk-only">{r["yates"]}</td>'
             f'<td class="desk-only">{r["fp"]}</td>'
             f'<td class="desk-only">{r["karabell"]}</td>'
             f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
     ppr_body = f"""
-    <p class="kicker">2026 Redraft · PPR</p>
+    <p class="kicker">2026 Redraft · PPR · {len(PPR_SOURCES)} boards</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Consensus of Field Yates (ESPN, Aug 17), the full FantasyPros PPR ECR (Aug 28), and Eric Karabell's Flex board (Aug 17). Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Superflex redraft is a two-QB board for this season.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Mean of {len(PPR_SOURCES)} boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then ten more from Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(ppr, ["Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(ppr, ["Avg", "Boards", "Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
     {faq_html(BOARD_FAQ, heading="How The Board is built.")}
@@ -2350,7 +2400,7 @@ def main():
                 "https://ballkeep.com/board.html",
                 ppr,
                 lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
-                description="Redraft PPR skill-player board.",
+                description="Redraft PPR skill-player board from thirteen public lists.",
             ),
             faq_jsonld(BOARD_FAQ),
         ],
@@ -2373,6 +2423,28 @@ def main():
     {sources_panel(PPR_SOURCES + [("Ball Keep Standard Tax", "", "RB −4.5 ranks, WR +3, TE +2, QB +0.5 applied to the PPR consensus.")], heading="Boards in This Aggregate")}
     """
     write("redraft-standard.html", board_page("Redraft Standard", "redraft-standard.html", std_body))
+
+    classic_body = f"""
+    <p class="kicker">2026 Redraft · 0.5 PPR</p>
+    <h1>The Classic</h1>
+    <p class="note">Half-PPR is the format most rooms actually run. We start from the same 13-board PPR mean as The Board, then apply half the Standard tax: running backs −2.25 ranks, receivers +1.5, tight ends +1, quarterbacks +0.25. RBs climb versus full PPR. Chase and Puka still go early, just not as automatic 1.01s. The Board next door is full PPR. Standard is zero.</p>
+    {rank_search_bar()}
+    <div class="panel">{rank_table(classic, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
+    {value_bars(classic, 12, "#c8102e", "Classic value graph")}
+    {sources_panel(PPR_SOURCES + [("Ball Keep Half-PPR Tax", "", "RB −2.25 ranks, WR +1.5, TE +1, QB +0.25 applied to the PPR consensus.")], heading="Boards in This Aggregate")}
+    """
+    write("the-classic.html", board_page(
+        "The Classic", "the-classic.html", classic_body,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "The Classic 2026 Half-PPR Rankings",
+                "https://ballkeep.com/the-classic.html",
+                classic,
+                lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
+                description="Redraft 0.5 PPR skill-player board.",
+            ),
+        ],
+    ))
 
     # ROOKIES
     rook_rows = []
@@ -2663,7 +2735,9 @@ def main():
         "https://ballkeep.com/trade-sf-redraft.html",
         "https://ballkeep.com/trade-1qb.html",
         "https://ballkeep.com/trade-ppr.html",
+        "https://ballkeep.com/trade-classic.html",
         "https://ballkeep.com/trade-standard.html",
+        "https://ballkeep.com/the-classic.html",
         "https://ballkeep.com/redraft-ppr.html",
         "https://ballkeep.com/redraft-superflex.html",
         "https://ballkeep.com/redraft-standard.html",
@@ -2688,7 +2762,7 @@ def main():
         "https://ballkeep.com/sitemap-news.xml",
     ]))
 
-    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk, sf_redraft)
+    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk, sf_redraft, classic)
     print(
         f"Keep {len(keep)} Board {len(board)} (redraft PPR) Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} "
         f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
@@ -2713,7 +2787,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -2771,10 +2845,11 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         "sources": [name for name, _url, _note in KEEP_SOURCES],
         "keep": [slim_row(r, ("ranks", "age", "n", "avg")) for r in keep],
         "board_format": "redraft PPR",
-        "board": [slim_row(r, ("yates", "fp", "karabell", "age")) for r in board],
-        "ppr": [slim_row(r, ("yates", "fp", "karabell", "age")) for r in ppr],
+        "board": [slim_row(r, ("yates", "fp", "karabell", "age", "n", "avg")) for r in board],
+        "ppr": [slim_row(r, ("yates", "fp", "karabell", "age", "n", "avg")) for r in ppr],
         "sf_redraft": [slim_row(r, ("n", "avg", "keep", "ppr")) for r in (sf_redraft or [])],
         "standard": [slim_row(r) for r in std],
+        "classic": [slim_row(r) for r in (classic or [])],
         "rookies": [slim_row(r, ("dd", "fp", "pff", "blurb")) for r in rook_rows],
         "hot": HOT,
         "cold": COLD,
@@ -2795,6 +2870,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
     catalog["bb_saves"] = [slim_row(r) for r in bb.get("saves") or []]
     catalog["bb_svh"] = [slim_row(r) for r in bb.get("svh") or []]
     catalog["bb_redraft"] = [slim_row(r, ("age", "group")) for r in bb.get("redraft") or []]
+    catalog["bb_farm"] = [slim_row(r, ("age", "group", "eta", "path", "level", "mlb_g")) for r in bb.get("farm") or []]
     catalog["bb_picks"] = bb.get("picks") or []
     catalog["bb_players"] = bb.get("files") or []
     catalog["bb_waivers_dynasty"] = bb.get("dynasty_waivers") or []

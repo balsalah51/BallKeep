@@ -135,7 +135,18 @@ def main():
     board0 = cat.raw["board"][0]
     assert (keep0.get("n") or 0) >= 10, keep0
     assert board0.get("yates") or board0.get("fp") or board0.get("karabell"), board0
+    assert (board0.get("n") or 0) >= 10, board0
+    classic = cat.raw.get("classic") or []
+    assert len(classic) == 200, f"classic {len(classic)}"
+    assert classic[0].get("bk") == 1
     assert keep0["name"] != board0["name"] or board0.get("yates") == 1
+    farm = cat.raw.get("bb_farm") or []
+    assert len(farm) == 100, f"bb farm {len(farm)}"
+    assert farm[0]["name"] == "Jesús Made"
+    assert all((r.get("mlb_g") or 0) <= 142 for r in farm)
+    assert all(r.get("eta") for r in farm)
+    assert all(r.get("path") for r in farm)
+    assert cat.one("jesus made", sport="baseball")["name"] == "Jesús Made"
     bk = cat.raw.get("bk_keep") or []
     assert len(bk) == 400, f"bk keep {len(bk)}"
     assert bk[0]["name"] == "Victor Wembanyama"
@@ -295,6 +306,13 @@ def main():
     assert "2026 Redraft · PPR" in board_html
     assert "<h1>The Board</h1>" in board_html
     assert "redraft ppr" in board_html.lower()
+    assert "13 boards" in board_html
+    assert "Derek Brown" in board_html
+    assert "4for4" in board_html
+    classic_html = html_of("the-classic.html")
+    assert "<h1>The Classic</h1>" in classic_html
+    assert "0.5 PPR" in classic_html or "Half-PPR" in classic_html
+    assert "the-classic.html" in html_of("index.html")
     assert "Kids pay a tax" not in board_html
     assert "kids pay a tax" not in board_html
     assert "The tax is" not in board_html
@@ -313,6 +331,8 @@ def main():
     assert "The Diamond" in bb_home
     assert "Redraft ranking" in bb_home
     assert "the-diamond.html" in bb_home
+    assert "The Farm" in bb_home
+    assert "the-farm.html" in bb_home
     assert 'href="../privacy.html"' in bb_home
     assert 'class="hero masthead"' in bb_home
     assert "Baseball rankings" in bb_home
@@ -329,6 +349,17 @@ def main():
     diamond = html_of("bb/the-diamond.html")
     assert "The Diamond" in page_title(diamond) or "<h1>The Diamond</h1>" in diamond
     assert "Redraft ranking" in diamond
+    farm_html = html_of("bb/the-farm.html")
+    assert "<h1>The Farm</h1>" in farm_html
+    assert "Arrival" in farm_html
+    assert "path to playtime" in farm_html.lower()
+    assert "Jesús Made" in farm_html or "Jesus Made" in farm_html
+    assert "142" in farm_html
+    assert "MLB Pipeline" in farm_html
+    assert farm_html.count('class="face"') >= 80
+    made = html_of("bb/players/jesus-made.html")
+    assert "Arrival" in made
+    assert "The Farm" in made
     assert "waivers-dynasty.html" not in bb_home
     assert "waivers-redraft.html" not in bb_home
     assert "Dynasty Wire" not in bb_home
@@ -372,6 +403,7 @@ def main():
         "the-keep.html",
         "board.html",
         "redraft-standard.html",
+        "the-classic.html",
         "redraft-superflex.html",
         "rookies-2026.html",
         "bk/the-keep.html",
@@ -385,6 +417,7 @@ def main():
         "bb/bullpen.html",
         "bb/bullpen-holds.html",
         "bb/the-diamond.html",
+        "bb/the-farm.html",
         "pl/the-premier.html",
         "pl/the-pitch.html",
         "pl/attack.html",

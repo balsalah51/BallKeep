@@ -195,6 +195,44 @@ def test_rank_search_bar():
     assert "&#x27;" in rank_search_key("Ja'Marr Chase")
 
 
+def test_ppr_extra_boards():
+    from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps
+    spine = ["Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson"]
+    maps = extra_ppr_maps(spine)
+    assert len(PPR_EXTRA_SOURCES) == 10
+    assert len(maps) == 10
+    for label, _url, _note in PPR_EXTRA_SOURCES:
+        assert label in maps
+        assert maps[label]
+
+
+def test_half_ppr_classic_tax():
+    from build_site import score_from_ppr
+    ppr = [
+        {"name": "A", "pos": "RB", "avg": 10, "yates": 1, "fp": 1, "karabell": 1, "n": 3, "team": "BUF"},
+        {"name": "B", "pos": "WR", "avg": 10, "yates": 2, "fp": 2, "karabell": 2, "n": 3, "team": "CIN"},
+    ]
+    classic = score_from_ppr(ppr, {"RB": -2.25, "WR": 1.5, "TE": 1.0, "QB": 0.25})
+    assert classic[0]["name"] == "A"
+    assert classic[0]["avg"] == 7.75
+    assert classic[1]["avg"] == 11.5
+
+
+def test_farm_top_100():
+    from bb_prospects import FARM_SOURCES, load_farm
+    farm = load_farm()
+    assert len(farm) == 100
+    assert len(FARM_SOURCES) == 5
+    assert farm[0]["name"] == "Jesús Made"
+    assert farm[0]["bk"] == 1
+    assert all((r.get("mlb_g") or 0) <= 142 for r in farm)
+    assert all(r.get("eta") for r in farm)
+    assert all(r.get("path") for r in farm)
+    assert all(r.get("ranks") for r in farm)
+    keys = [r["key"] for r in farm]
+    assert len(keys) == len(set(keys))
+
+
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_")]
     for fn in tests:
