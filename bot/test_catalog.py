@@ -443,6 +443,17 @@ def main():
     assert 'data-name="josh allen' in keep_html
     assert "rank-search-input" in keep_html
     assert keep_html.find("rank-search-input") < keep_html.find("keep-pos")
+    for rel, box in (
+        ("board.html", "board-pos"),
+        ("the-classic.html", "classic-pos"),
+        ("redraft-standard.html", "std-pos"),
+        ("redraft-superflex.html", "sf-pos"),
+    ):
+        page = html_of(rel)
+        assert f'id="{box}"' in page, rel
+        assert 'data-pos="RB"' in page, rel
+        assert 'data-pos="WR"' in page, rel
+        assert page.find("rank-search-input") < page.find(box)
 
 
 if __name__ == "__main__":

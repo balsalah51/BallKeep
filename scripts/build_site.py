@@ -78,6 +78,29 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+def pos_filter(box_id):
+    """QB / RB / WR / TE chips. Works with applyRankFilter on ranking tables."""
+    chips = (
+        f'<div class="filters" id="{box_id}">'
+        '<button type="button" class="active" data-pos="all">All</button>'
+        '<button type="button" data-pos="QB">QB</button>'
+        '<button type="button" data-pos="RB">RB</button>'
+        '<button type="button" data-pos="WR">WR</button>'
+        '<button type="button" data-pos="TE">TE</button>'
+        "</div>"
+    )
+    js = f"""<script>
+    const box = document.getElementById({box_id!r});
+    if (box) box.addEventListener('click', e => {{
+      const b = e.target.closest('button'); if (!b) return;
+      box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      if (window.applyRankFilter) applyRankFilter();
+    }});
+    </script>"""
+    return chips, js
+
+
 def desk_block(kind, kicker, heading, note, tiles, extra=""):
     cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
     cols = "grid" if len(tiles) <= 2 else "grid-3"
@@ -2332,32 +2355,19 @@ def main():
             + f'<td class="desk-only">{r["n"]}</td>'
             + src_td(r, "PFN (Katz/Soppe)")
             + src_td(r, "KeepTradeCut SF")
-            + f'<td class="c-val val">{fmt_val(r["value"])}</td>'
+            +             f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
+    keep_chips, keep_js = pos_filter("keep-pos")
     keep_body = f"""
     <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} boards</p>
     <h1>The Keep</h1>
     <p class="note">This is the big one. Superflex Dynasty. Top 400. {len(KEEP_SOURCES)} boards. Half the vote is the four long boards, half is everyone else. The Board next door is Redraft PPR - this year, one quarterback, a point per catch.</p>
-    {rank_search_bar('''<div class="filters" id="keep-pos"><button type="button" class="active" data-pos="all">All</button>
-      <button type="button" data-pos="QB">QB</button>
-      <button type="button" data-pos="RB">RB</button>
-      <button type="button" data-pos="WR">WR</button>
-      <button type="button" data-pos="TE">TE</button>
-    </div>''')}
+    {rank_search_bar(keep_chips)}
     <div class="panel">{rank_table(keep, ["Super", "Boards", "PFN", "KTC", "BK Value"], keep_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#c8102e", "Keep value graph")}
     {sources_panel(KEEP_SOURCES)}
     {faq_html(KEEP_FAQ, heading="How The Keep is built.")}
     """
-    keep_js = """<script>
-    const box = document.getElementById('keep-pos');
-    if (box) box.addEventListener('click', e => {
-      const b = e.target.closest('button'); if (!b) return;
-      box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
-      b.classList.add('active');
-      if (window.applyRankFilter) applyRankFilter();
-    });
-    </script>"""
     write("the-keep.html", board_page(
         "The Keep", "the-keep.html", keep_body, keep_js,
         extra_jsonld=[
@@ -2382,18 +2392,19 @@ def main():
             f'<td class="desk-only">{r["karabell"]}</td>'
             f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
+    board_chips, board_js = pos_filter("board-pos")
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR · {len(PPR_SOURCES)} boards</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Mean of {len(PPR_SOURCES)} boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then ten more from Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty.</p>
-    {rank_search_bar()}
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Mean of {len(PPR_SOURCES)} boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then ten more from Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
+    {rank_search_bar(board_chips)}
     <div class="panel">{rank_table(ppr, ["Avg", "Boards", "Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
     {faq_html(BOARD_FAQ, heading="How The Board is built.")}
     """
     write("board.html", board_page(
-        "The Board", "board.html", ppr_body,
+        "The Board", "board.html", ppr_body, board_js,
         extra_jsonld=[
             rank_list_jsonld(
                 "The Board 2026 Redraft PPR Rankings",
@@ -2413,28 +2424,30 @@ def main():
         '<p><a class="cta" href="board.html">The Board · Redraft PPR</a></p>',
     ))
 
+    std_chips, std_js = pos_filter("std-pos")
     std_body = f"""
     <p class="kicker">2026 Redraft · Standard</p>
     <h1>Redraft Standard</h1>
-    <p class="note">Standard (no extra point per catch) is a different sport than PPR. We start from the PPR consensus above, then apply Ball Keep positional taxes used across major STD vs PPR deltas: running backs −4.5 ranks, receivers +3, tight ends +2, quarterbacks +0.5. Result: Bijan / Gibbs / CMC / Henry / Taylor climb; Chase / Puka / JSN still go early but not as automatic 1.01s.</p>
-    {rank_search_bar()}
+    <p class="note">Standard (no extra point per catch) is a different sport than PPR. We start from the PPR consensus above, then apply Ball Keep positional taxes used across major STD vs PPR deltas: running backs −4.5 ranks, receivers +3, tight ends +2, quarterbacks +0.5. Result: Bijan / Gibbs / CMC / Henry / Taylor climb; Chase / Puka / JSN still go early but not as automatic 1.01s. Sort by position with the chips.</p>
+    {rank_search_bar(std_chips)}
     <div class="panel">{rank_table(std, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(std, 12, "#c8102e", "Standard value graph")}
     {sources_panel(PPR_SOURCES + [("Ball Keep Standard Tax", "", "RB −4.5 ranks, WR +3, TE +2, QB +0.5 applied to the PPR consensus.")], heading="Boards in This Aggregate")}
     """
-    write("redraft-standard.html", board_page("Redraft Standard", "redraft-standard.html", std_body))
+    write("redraft-standard.html", board_page("Redraft Standard", "redraft-standard.html", std_body, std_js))
 
+    classic_chips, classic_js = pos_filter("classic-pos")
     classic_body = f"""
     <p class="kicker">2026 Redraft · 0.5 PPR</p>
     <h1>The Classic</h1>
-    <p class="note">Half-PPR is the format most rooms actually run. We start from the same 13-board PPR mean as The Board, then apply half the Standard tax: running backs −2.25 ranks, receivers +1.5, tight ends +1, quarterbacks +0.25. RBs climb versus full PPR. Chase and Puka still go early, just not as automatic 1.01s. The Board next door is full PPR. Standard is zero.</p>
-    {rank_search_bar()}
+    <p class="note">Half-PPR is the format most rooms actually run. We start from the same 13-board PPR mean as The Board, then apply half the Standard tax: running backs −2.25 ranks, receivers +1.5, tight ends +1, quarterbacks +0.25. RBs climb versus full PPR. Chase and Puka still go early, just not as automatic 1.01s. The Board next door is full PPR. Standard is zero. Sort by position with the chips.</p>
+    {rank_search_bar(classic_chips)}
     <div class="panel">{rank_table(classic, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(classic, 12, "#c8102e", "Classic value graph")}
     {sources_panel(PPR_SOURCES + [("Ball Keep Half-PPR Tax", "", "RB −2.25 ranks, WR +1.5, TE +1, QB +0.25 applied to the PPR consensus.")], heading="Boards in This Aggregate")}
     """
     write("the-classic.html", board_page(
-        "The Classic", "the-classic.html", classic_body,
+        "The Classic", "the-classic.html", classic_body, classic_js,
         extra_jsonld=[
             rank_list_jsonld(
                 "The Classic 2026 Half-PPR Rankings",
@@ -2523,11 +2536,12 @@ def main():
             f'<td class="desk-only">{r["avg"]}</td>'
             f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
+    sf_chips, sf_js = pos_filter("sf-pos")
     sf_body = f"""
     <p class="kicker">Superflex Redraft · this year</p>
     <h1>Redraft Superflex</h1>
-    <p class="note">This list is Superflex for this season - {len(sf_redraft)} names. The Keep is Superflex Dynasty. The Board is Redraft PPR. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks.</p>
-    {rank_search_bar()}
+    <p class="note">This list is Superflex for this season - {len(sf_redraft)} names. The Keep is Superflex Dynasty. The Board is Redraft PPR. Quarterbacks stay expensive because you start two of them. Skill players lean on the PPR board. Use this for redraft startups that start two quarterbacks. Sort by position with the chips.</p>
+    {rank_search_bar(sf_chips)}
     <div class="panel">{rank_table(sf_redraft, ["Keep SF", "PPR", "Score", "BK Value"], board_redraft_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(sf_redraft, 12, "#1e8fc2", "Superflex redraft value graph")}
     {sources_panel([
@@ -2535,7 +2549,7 @@ def main():
         ("Field Yates / FantasyPros PPR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "This-year skill-player board."),
     ], heading="How Superflex Redraft is built")}
     """
-    write("redraft-superflex.html", board_page("Redraft Superflex", "redraft-superflex.html", sf_body))
+    write("redraft-superflex.html", board_page("Redraft Superflex", "redraft-superflex.html", sf_body, sf_js))
 
     # NFL schedule
     weeks = sorted({g["week"] for g in nfl})
