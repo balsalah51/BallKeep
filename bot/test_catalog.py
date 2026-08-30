@@ -313,6 +313,19 @@ def main():
     assert "<h1>The Classic</h1>" in classic_html
     assert "0.5 PPR" in classic_html or "Half-PPR" in classic_html
     assert "the-classic.html" in html_of("index.html")
+    assert 'class="draft-check"' in classic_html
+    assert "has-draft" in classic_html
+    assert "Crossed off" in classic_html
+    assert "until you refresh" in classic_html
+    assert "localStorage" not in classic_html
+    assert "sessionStorage" not in classic_html
+    assert 'class="draft-check"' not in board_html
+    assert 'class="draft-check"' not in html_of("the-keep.html")
+    assert 'class="draft-check"' not in html_of("redraft-standard.html")
+    assert 'class="draft-check"' not in html_of("redraft-superflex.html")
+    css = Path("css/site.css").read_text()
+    assert "tr.crossed-off" in css
+    assert ".draft-check" in css
     assert "Kids pay a tax" not in board_html
     assert "kids pay a tax" not in board_html
     assert "The tax is" not in board_html
