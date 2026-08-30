@@ -26,6 +26,7 @@ from seo import (  # noqa: E402
     rss_xml,
     rank_search_bar,
     rank_search_key,
+    draft_check_js,
     strip_em,
     sitemap_xml,
     video_jsonld,
@@ -204,6 +205,27 @@ def test_ppr_extra_boards():
     for label, _url, _note in PPR_EXTRA_SOURCES:
         assert label in maps
         assert maps[label]
+
+
+def test_draft_check_js():
+    html = draft_check_js()
+    assert "draft-check" in html
+    assert "crossed-off" in html
+    assert "localStorage" not in html
+    assert "sessionStorage" not in html
+
+
+def test_classic_draft_check_table():
+    from build_site import rank_table
+    rows = [{"name": "Jahmyr Gibbs", "pos": "RB", "team": "DET", "bk": 1}]
+    on = rank_table(rows, draft_check=True)
+    off = rank_table(rows)
+    assert 'class="draft-check"' in on
+    assert "Crossed off" in on
+    assert "has-draft" in on
+    assert 'aria-label="Cross off Jahmyr Gibbs"' in on
+    assert 'class="draft-check"' not in off
+    assert "has-draft" not in off
 
 
 def test_pos_filter_chips():

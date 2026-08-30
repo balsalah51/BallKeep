@@ -219,7 +219,24 @@ img.face {
   vertical-align: middle; margin-right: 8px;
 }
 .name-stack { min-width: 0; flex: 1; display: block; }
-table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 0; }
+table.rank-table.faces td.c-name,
+table.rank-table.has-draft td.c-name { display: flex; align-items: center; gap: 0; }
+.draft-mark {
+  display: inline-flex; align-items: center; flex: 0 0 auto;
+  margin-right: 8px; cursor: pointer; user-select: none;
+}
+.draft-check {
+  width: 18px; height: 18px; margin: 0; accent-color: var(--red); cursor: pointer;
+}
+.draft-off {
+  display: none; margin-left: 8px; font-size: 11px; font-weight: 800;
+  letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted);
+  vertical-align: middle; white-space: nowrap;
+}
+tr.crossed-off { opacity: 0.5; }
+tr.crossed-off .name-stack a,
+tr.crossed-off .name-stack strong { text-decoration: line-through; }
+tr.crossed-off .draft-off { display: inline; }
 .age-desc {
   color: var(--muted); font-weight: 700; font-variant-numeric: tabular-nums;
   white-space: nowrap; font-size: 13px; margin-left: 8px;
@@ -481,7 +498,9 @@ table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
   table.rank-table .c-name a, table.rank-table .c-name strong {
     display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
-  table.rank-table.faces td.c-name { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  table.rank-table.faces td.c-name,
+  table.rank-table.has-draft td.c-name { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  tr.crossed-off .draft-off { display: block; margin-left: 0; margin-top: 2px; }
   table.rank-table.faces img.face { width: 24px; height: 24px; margin-right: 0; flex: 0 0 24px; }
   table.rank-table.faces .c-name a { min-width: 0; }
   table.rank-table .row-meta { display: block; font-size: 13px; color: var(--muted); font-weight: 700; margin-top: 2px; }

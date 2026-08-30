@@ -1005,6 +1005,26 @@ def rank_search_bar(filters: str = "") -> str:
     )
 
 
+def draft_check_js() -> str:
+    """Session-only taken marks. No storage: a refresh clears every box."""
+    return """<script>
+(function () {
+  document.addEventListener("click", function (e) {
+    var mark = e.target && e.target.closest && e.target.closest(".draft-mark");
+    if (mark) e.stopPropagation();
+  });
+  document.addEventListener("change", function (e) {
+    var cb = e.target;
+    if (!cb || !cb.classList || !cb.classList.contains("draft-check")) return;
+    var tr = cb.closest("tr");
+    if (!tr) return;
+    tr.classList.toggle("crossed-off", !!cb.checked);
+  });
+})();
+</script>
+"""
+
+
 def robots_txt(sitemaps: list) -> str:
     lines = [
         "User-agent: *",

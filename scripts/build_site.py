@@ -41,6 +41,7 @@ from seo import (  # noqa: E402
     canon,
     card_alt,
     clip,
+    draft_check_js,
     face_alt,
     faq_html,
     faq_jsonld,
@@ -1083,7 +1084,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=40" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=41" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1147,7 +1148,7 @@ def _rank_th(label):
     return f"<th{attr}>{esc(label)}</th>"
 
 
-def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, faces=False, show_age=False):
+def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, faces=False, show_age=False, draft_check=False):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
@@ -1167,20 +1168,33 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
         face = ""
         if faces:
             face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="{esc(face_alt(r.get("name")))}" loading="lazy" />'
-        stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{age_span}{meta}</span>'
+        off = '<span class="draft-off">Crossed off</span>' if draft_check else ""
+        stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{off}{age_span}{meta}</span>'
+        mark = ""
+        if draft_check:
+            nm = r.get("name") or "player"
+            mark = (
+                f'<label class="draft-mark">'
+                f'<input type="checkbox" class="draft-check" aria-label="Cross off {esc(nm)}">'
+                f"</label>"
+            )
         dn = rank_search_key(r.get("name"), pos, team)
         body.append(
             f'<tr data-pos="{esc(pos)}" data-name="{dn}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name">{face}{stack}</td>'
+            f'<td class="c-name">{mark}{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
             f'<td class="c-team">{esc(team)}</td>'
             f"{extra_cells(r)}"
             "</tr>"
         )
-    cls = "rank-table faces" if faces else "rank-table"
+    bits = ["rank-table"]
+    if faces:
+        bits.append("faces")
+    if draft_check:
+        bits.append("has-draft")
     return (
-        f'<div class="table-wrap"><table class="{cls}">'
+        f'<div class="table-wrap"><table class="{" ".join(bits)}">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
     )
 
@@ -2437,12 +2451,13 @@ def main():
     write("redraft-standard.html", board_page("Redraft Standard", "redraft-standard.html", std_body, std_js))
 
     classic_chips, classic_js = pos_filter("classic-pos")
+    classic_js = classic_js + draft_check_js()
     classic_body = f"""
     <p class="kicker">2026 Redraft · 0.5 PPR</p>
     <h1>The Classic</h1>
-    <p class="note">Half-PPR is the format most rooms actually run. We start from the same 13-board PPR mean as The Board, then apply half the Standard tax: running backs −2.25 ranks, receivers +1.5, tight ends +1, quarterbacks +0.25. RBs climb versus full PPR. Chase and Puka still go early, just not as automatic 1.01s. The Board next door is full PPR. Standard is zero. Sort by position with the chips.</p>
+    <p class="note">Half-PPR is the format most rooms actually run. We start from the same 13-board PPR mean as The Board, then apply half the Standard tax: running backs −2.25 ranks, receivers +1.5, tight ends +1, quarterbacks +0.25. RBs climb versus full PPR. Chase and Puka still go early, just not as automatic 1.01s. The Board next door is full PPR. Standard is zero. Sort by position with the chips. Check a name when they are off the board in your room. Crossed-off names stay on the list until you refresh.</p>
     {rank_search_bar(classic_chips)}
-    <div class="panel">{rank_table(classic, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(classic, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True, draft_check=True)}</div>
     {value_bars(classic, 12, "#c8102e", "Classic value graph")}
     {sources_panel(PPR_SOURCES + [("Ball Keep Half-PPR Tax", "", "RB −2.25 ranks, WR +1.5, TE +1, QB +0.25 applied to the PPR consensus.")], heading="Boards in This Aggregate")}
     """
