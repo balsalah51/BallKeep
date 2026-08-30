@@ -16,6 +16,7 @@ UPDATED = "August 27, 2026"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from pl_data import PL_SOURCES, bk_value, load_universe  # noqa: E402
+from bpl_schedule import bpl_schedule_parts  # noqa: E402
 from pl_copy import get_pl_copy  # noqa: E402
 from news_algo import (  # noqa: E402
     CATEGORY_LABEL,
@@ -98,6 +99,7 @@ PL_NAV = [
     ("keepers.html", "Keepers"),
     ("trade.html", "Trade"),
     ("players/index.html", "Players"),
+    ("schedule.html", "Schedule"),
 ]
 
 
@@ -209,6 +211,11 @@ PL_SEO = {
         "Keepers-only trade calculator. Rank becomes BK Value. Fair is within 8%.",
         "img/pl-logo.jpg",
     ),
+    "schedule.html": (
+        "Premier League 2026/27 Schedule | PitchKeep",
+        "Full 2026/27 Premier League slate. Filter by matchweek or club. Arsenal opened Aug 21. Last Sunday is May 30, 2027.",
+        "img/pl-logo.jpg",
+    ),
 }
 
 PL_ALSO = {
@@ -251,6 +258,12 @@ PL_ALSO = {
         ("the-pitch.html", "The Pitch", "Overall Sleeper 400."),
         ("trade-keepers.html", "Keepers Calculator", "GKs only."),
         ("the-premier.html", "The Premier", "Hybrid 400."),
+    ],
+    "schedule.html": [
+        ("the-premier.html", "The Premier", "Hybrid 400."),
+        ("the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
+        ("../bpl-schedule.html", "Football BPL slate", "Same slate on Ball Keep."),
+        ("../nfl-schedule.html", "NFL Schedule", "Football slate."),
     ],
     "news.html": [
         ("the-premier.html", "The Premier", "The ranks the wire moves."),
@@ -329,7 +342,7 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=37" />
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=38" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
 <body>
@@ -1240,6 +1253,9 @@ def write_pitch_site():
         ("defence.html", "Defence", "Defenders."),
         ("keepers.html", "Keepers", "Keepers."),
     ])}
+    {desk_block("schedules", "Slates", "The schedule.", "2026/27 Premier League.", [
+        ("schedule.html", "BPL Schedule", "Matchweeks and clubs."),
+    ])}
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
         ("trade.html", "Trade Calculators", "Premier, Pitch, the lists."),
         ("players/index.html", "Player Files", "Headshot, line, boards, tape."),
@@ -1343,6 +1359,8 @@ def write_pitch_site():
     <p class="note" style="margin-top:16px"><a href="../the-x.html">Football The X</a> · <a href="../bb/the-x.html">Baseball The X</a></p>
     """
     write("pl/the-x.html", pl_board_page("The X", "the-x.html", x_body))
+    bpl_body, bpl_js = bpl_schedule_parts(esc, json)
+    write("pl/schedule.html", pl_board_page("BPL Schedule", "schedule.html", bpl_body, bpl_js))
     (ROOT / "data/pl-pitch.json").write_text(json.dumps({
         "updated": UPDATED,
         "pitch": pitch,
@@ -1365,6 +1383,7 @@ def write_pitch_site():
             "https://ballkeep.com/pl/" + p
             for p in [
                 "the-premier.html", "the-pitch.html", "news.html", "the-x.html",
+                "schedule.html",
                 "attack.html", "midfield.html",
                 "defence.html", "keepers.html", "trade.html", "trade-premier.html",
                 "trade-pitch.html", "trade-attack.html", "trade-midfield.html",
