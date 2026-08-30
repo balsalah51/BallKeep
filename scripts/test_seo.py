@@ -237,6 +237,31 @@ def test_pos_filter_chips():
     assert "applyRankFilter" in js
 
 
+def test_dst_and_kicker_boards():
+    from special_teams import dst_board, kicker_board
+    dst = dst_board()
+    assert len(dst) == 32
+    assert dst[0]["name"] == "Houston Texans"
+    assert dst[0]["bk"] == 1
+    assert dst[0]["n"] >= 3
+    kickers = kicker_board()
+    assert len(kickers) == 24
+    assert kickers[0]["name"] == "Brandon Aubrey"
+    assert kickers[0]["bk"] == 1
+
+
+def test_bpl_slate():
+    from bpl_schedule import CLUBS, bpl_games
+    games = bpl_games()
+    assert len(games) == 380
+    assert len(CLUBS) == 20
+    assert games[0]["home"] == "Arsenal"
+    assert games[0]["score"] == "3-0"
+    weeks = {g["week"] for g in games}
+    assert weeks == set(range(1, 39))
+    assert all(g["home_abbr"] in CLUBS and g["away_abbr"] in CLUBS for g in games)
+
+
 def test_half_ppr_classic_tax():
     from build_site import score_from_ppr
     ppr = [

@@ -26,6 +26,8 @@ from extra_ranks import (  # noqa: E402
     as_ranks,
 )
 from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps, _norm as ppr_norm  # noqa: E402
+from special_teams import DST_SOURCES, K_SOURCES, dst_board, kicker_board  # noqa: E402
+from bpl_schedule import bpl_games, bpl_schedule_parts  # noqa: E402
 from aggregate_protocol import (  # noqa: E402
     KEEP_SOURCES,
     LONG_CORE,
@@ -664,8 +666,11 @@ NAV = [
     ("hot-n-cold.html", "Hot 'n' Cold"),
     ("board.html", "The Board"),
     ("players/index.html", "Players"),
+    ("defenses.html", "The D"),
+    ("kickers.html", "Kickers"),
     ("nfl-schedule.html", "NFL"),
     ("mlb-schedule.html", "MLB"),
+    ("bpl-schedule.html", "BPL"),
 ]
 
 PLAYER_PAGES = {}  # key -> slug
@@ -904,6 +909,21 @@ FB_SEO = {
         "September baseball slate on the football boards. Filter by club. Regular season wraps Sunday, Sept. 27, 2026.",
         "img/logo.jpg",
     ),
+    "bpl-schedule.html": (
+        "Premier League 2026/27 Schedule | Ball Keep",
+        "Full 2026/27 Premier League slate. Filter by matchweek or club. Arsenal opened Aug 21. Last Sunday is May 30, 2027.",
+        "img/logo.jpg",
+    ),
+    "defenses.html": (
+        "2026 Fantasy Football DST Rankings | Ball Keep",
+        "Top Defenses is Ball Keep's aggregate DST board. Mean of FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, and Pat Fitzmaurice. Houston is 1.01.",
+        "img/logo.jpg",
+    ),
+    "kickers.html": (
+        "2026 Fantasy Football Kicker Rankings | Ball Keep",
+        "Top Kickers is Ball Keep's aggregate kicking board. Mean of FantasyPros ECR, Derek Brown, and Pat Fitzmaurice. Brandon Aubrey is 1.01.",
+        "img/logo.jpg",
+    ),
     "privacy.html": (
         "Privacy Policy | Ball Keep",
         "How Ball Keep, BaseKeep, BasketKeep, and PitchKeep collect and use information, including cookies, analytics, and ads.",
@@ -1052,11 +1072,31 @@ FB_ALSO = {
         ("the-keep.html", "The Keep", "Dynasty ranks by club."),
         ("news.html", "BK News", "Injuries on the slate."),
         ("mlb-schedule.html", "MLB Schedule", "September baseball."),
+        ("bpl-schedule.html", "BPL Schedule", "Premier League slate."),
     ],
     "mlb-schedule.html": [
         ("bb/index.html", "BaseKeep", "BaseKeep boards."),
         ("bb/the-keep.html", "BB The Keep", "Dynasty baseball 400."),
         ("nfl-schedule.html", "NFL Schedule", "Football slate."),
+        ("bpl-schedule.html", "BPL Schedule", "Premier League slate."),
+    ],
+    "bpl-schedule.html": [
+        ("pl/index.html", "PitchKeep", "Premier League boards."),
+        ("pl/the-premier.html", "The Premier", "Hybrid 400."),
+        ("nfl-schedule.html", "NFL Schedule", "Football slate."),
+        ("mlb-schedule.html", "MLB Schedule", "September baseball."),
+    ],
+    "defenses.html": [
+        ("kickers.html", "Top Kickers", "The kicking board."),
+        ("board.html", "The Board", "Skill-player PPR."),
+        ("the-classic.html", "The Classic", "Half-PPR redraft."),
+        ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
+    ],
+    "kickers.html": [
+        ("defenses.html", "Top Defenses", "Aggregate DST."),
+        ("board.html", "The Board", "Skill-player PPR."),
+        ("the-classic.html", "The Classic", "Half-PPR redraft."),
+        ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
 }
 
@@ -1084,7 +1124,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=41" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=42" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -2332,15 +2372,20 @@ def main():
         </a>
       </div>
     </section>
-    {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, the market tape, and the slates.", [
+    {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, the market tape, defenses, and kickers.", [
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("the-classic.html", "The Classic", "Half-PPR, this year."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
         ("recent-trades.html", "Recent Deals", "Packages that closed."),
+        ("defenses.html", "Top Defenses", "Aggregate DST."),
+        ("kickers.html", "Top Kickers", "Aggregate K."),
+    ])}
+    {desk_block("schedules", "Slates", "The schedules.", "Football, baseball, and the Premier League.", [
         ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
         ("mlb-schedule.html", "MLB Schedule", "September slate."),
+        ("bpl-schedule.html", "BPL Schedule", "2026/27 Premier League."),
     ])}
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
         ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
@@ -2566,6 +2611,49 @@ def main():
     """
     write("redraft-superflex.html", board_page("Redraft Superflex", "redraft-superflex.html", sf_body, sf_js))
 
+    dst = dst_board()
+    kickers = kicker_board()
+    dst_body = f"""
+    <p class="kicker">2026 Redraft · DST</p>
+    <h1>Top Defenses</h1>
+    <p class="note">The skill boards skip kickers and DST. This is the DST mean: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, and Pat Fitzmaurice. Unranked on a board is a skip. Houston is 1.01. Seattle and Denver sit right behind. Sort with Find a player.</p>
+    {rank_search_bar()}
+    <div class="panel">{rank_table(dst, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    {sources_panel(DST_SOURCES, heading="Boards in This Aggregate")}
+    """
+    write("defenses.html", board_page(
+        "Top Defenses", "defenses.html", dst_body,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "2026 Fantasy Football DST Rankings",
+                "https://ballkeep.com/defenses.html",
+                dst,
+                lambda r: "https://ballkeep.com/defenses.html",
+                description="Aggregate redraft DST board.",
+            ),
+        ],
+    ))
+    k_body = f"""
+    <p class="kicker">2026 Redraft · K</p>
+    <h1>Top Kickers</h1>
+    <p class="note">The kicking board. Mean of FantasyPros ECR, Derek Brown, and Pat Fitzmaurice. Unranked on a board is a skip. Brandon Aubrey is 1.01. Fairbairn and Dicker follow. Sort with Find a player.</p>
+    {rank_search_bar()}
+    <div class="panel">{rank_table(kickers, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    {sources_panel(K_SOURCES, heading="Boards in This Aggregate")}
+    """
+    write("kickers.html", board_page(
+        "Top Kickers", "kickers.html", k_body,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "2026 Fantasy Football Kicker Rankings",
+                "https://ballkeep.com/kickers.html",
+                kickers,
+                lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html" if slugify(r["name"]) in PLAYER_PAGES.values() else "https://ballkeep.com/kickers.html",
+                description="Aggregate redraft kicker board.",
+            ),
+        ],
+    ))
+
     # NFL schedule
     weeks = sorted({g["week"] for g in nfl})
     nfl_js_games = json.dumps(nfl)
@@ -2661,6 +2749,10 @@ def main():
     render();
     </script>"""
     write("mlb-schedule.html", board_page("MLB Schedule", "mlb-schedule.html", mlb_body, mlb_js))
+
+    bpl = bpl_games()
+    bpl_body, bpl_js = bpl_schedule_parts(esc, json)
+    write("bpl-schedule.html", board_page("BPL Schedule", "bpl-schedule.html", bpl_body, bpl_js))
 
     # Discord
     disc = """
@@ -2775,6 +2867,9 @@ def main():
         "https://ballkeep.com/board.html",
         "https://ballkeep.com/nfl-schedule.html",
         "https://ballkeep.com/mlb-schedule.html",
+        "https://ballkeep.com/bpl-schedule.html",
+        "https://ballkeep.com/defenses.html",
+        "https://ballkeep.com/kickers.html",
         "https://ballkeep.com/discord.html",
     ] + news_urls[1:] + player_urls
     bb = write_baseball_site()
@@ -2791,9 +2886,9 @@ def main():
         "https://ballkeep.com/sitemap-news.xml",
     ]))
 
-    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk, sf_redraft, classic)
+    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk, sf_redraft, classic, dst, kickers, bpl)
     print(
-        f"Keep {len(keep)} Board {len(board)} (redraft PPR) Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} "
+        f"Keep {len(keep)} Board {len(board)} (redraft PPR) Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} BPL {len(bpl)} DST {len(dst)} K {len(kickers)} "
         f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
         f"BB News {bb.get('n_news', 0)} BK Keep {bk['n_keep']} Pitch {pl['n_pitch']} "
         f"Premier {pl.get('n_premier', 0)} Catalog {cat.name} NewsSitemap {n_news}"
@@ -2816,7 +2911,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None, dst=None, kickers=None, bpl=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -2879,6 +2974,8 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         "sf_redraft": [slim_row(r, ("n", "avg", "keep", "ppr")) for r in (sf_redraft or [])],
         "standard": [slim_row(r) for r in std],
         "classic": [slim_row(r) for r in (classic or [])],
+        "dst": [slim_row(r, ("n", "avg")) for r in (dst or [])],
+        "kickers": [slim_row(r, ("n", "avg")) for r in (kickers or [])],
         "rookies": [slim_row(r, ("dd", "fp", "pff", "blurb")) for r in rook_rows],
         "hot": HOT,
         "cold": COLD,
@@ -2890,6 +2987,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
             for g in nfl
         ],
         "mlb": mlb_games,
+        "bpl": bpl or [],
         "news": news_pack,
     }
     bb = bb or {}

@@ -303,6 +303,10 @@ a.news-item:hover h3 { color: var(--red); }
 .desk-block.main { background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
 .desk-block.lists { background: #eef3f7; border: 1px solid #c5d2de; }
 .desk-block.lists .kicker { color: #3d5268; }
+.desk-block.schedules { background: #e4f1f8; border: 1px solid #b5d4e4; }
+.desk-block.schedules .kicker { color: #17688a; }
+.desk-block.schedules .tile { background: #fff; }
+.desk-block.schedules .tile:hover { border-color: #7eb3ce; }
 .desk-block.extra { background: #f0f1f4; border: 1px solid #d5d7de; }
 .desk-block.extra .kicker { color: #4b5563; }
 .desk-block.extra .tile { background: #fff; }

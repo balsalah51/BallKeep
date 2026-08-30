@@ -22689,6 +22689,514 @@
       "value": 1110
     }
   ],
+  "dst": [
+    {
+      "name": "Houston Texans",
+      "pos": "DST",
+      "team": "HOU",
+      "bk": 1,
+      "avg": 1.6,
+      "n": 5,
+      "value": 12000
+    },
+    {
+      "name": "Seattle Seahawks",
+      "pos": "DST",
+      "team": "SEA",
+      "bk": 2,
+      "avg": 2.4,
+      "n": 5,
+      "value": 10873
+    },
+    {
+      "name": "Denver Broncos",
+      "pos": "DST",
+      "team": "DEN",
+      "bk": 3,
+      "avg": 3.2,
+      "n": 5,
+      "value": 10228
+    },
+    {
+      "name": "Los Angeles Rams",
+      "pos": "DST",
+      "team": "LAR",
+      "bk": 4,
+      "avg": 3.4,
+      "n": 5,
+      "value": 9769
+    },
+    {
+      "name": "Philadelphia Eagles",
+      "pos": "DST",
+      "team": "PHI",
+      "bk": 5,
+      "avg": 5.8,
+      "n": 5,
+      "value": 9409
+    },
+    {
+      "name": "Jacksonville Jaguars",
+      "pos": "DST",
+      "team": "JAX",
+      "bk": 6,
+      "avg": 8.6,
+      "n": 5,
+      "value": 9111
+    },
+    {
+      "name": "Minnesota Vikings",
+      "pos": "DST",
+      "team": "MIN",
+      "bk": 7,
+      "avg": 9.0,
+      "n": 5,
+      "value": 8855
+    },
+    {
+      "name": "Los Angeles Chargers",
+      "pos": "DST",
+      "team": "LAC",
+      "bk": 8,
+      "avg": 9.2,
+      "n": 5,
+      "value": 8629
+    },
+    {
+      "name": "Pittsburgh Steelers",
+      "pos": "DST",
+      "team": "PIT",
+      "bk": 9,
+      "avg": 9.4,
+      "n": 5,
+      "value": 8426
+    },
+    {
+      "name": "New England Patriots",
+      "pos": "DST",
+      "team": "NE",
+      "bk": 10,
+      "avg": 9.6,
+      "n": 5,
+      "value": 8241
+    },
+    {
+      "name": "Baltimore Ravens",
+      "pos": "DST",
+      "team": "BAL",
+      "bk": 11,
+      "avg": 11.2,
+      "n": 5,
+      "value": 8070
+    },
+    {
+      "name": "Detroit Lions",
+      "pos": "DST",
+      "team": "DET",
+      "bk": 12,
+      "avg": 13.0,
+      "n": 5,
+      "value": 7912
+    },
+    {
+      "name": "Buffalo Bills",
+      "pos": "DST",
+      "team": "BUF",
+      "bk": 13,
+      "avg": 13.5,
+      "n": 2,
+      "value": 7764
+    },
+    {
+      "name": "Kansas City Chiefs",
+      "pos": "DST",
+      "team": "KC",
+      "bk": 14,
+      "avg": 14.0,
+      "n": 2,
+      "value": 7624
+    },
+    {
+      "name": "Cleveland Browns",
+      "pos": "DST",
+      "team": "CLE",
+      "bk": 15,
+      "avg": 15.0,
+      "n": 2,
+      "value": 7492
+    },
+    {
+      "name": "Green Bay Packers",
+      "pos": "DST",
+      "team": "GB",
+      "bk": 16,
+      "avg": 15.0,
+      "n": 2,
+      "value": 7367
+    },
+    {
+      "name": "New Orleans Saints",
+      "pos": "DST",
+      "team": "NO",
+      "bk": 17,
+      "avg": 16.0,
+      "n": 2,
+      "value": 7247
+    },
+    {
+      "name": "Atlanta Falcons",
+      "pos": "DST",
+      "team": "ATL",
+      "bk": 18,
+      "avg": 19.0,
+      "n": 2,
+      "value": 7132
+    },
+    {
+      "name": "San Francisco 49ers",
+      "pos": "DST",
+      "team": "SF",
+      "bk": 19,
+      "avg": 19.5,
+      "n": 2,
+      "value": 7023
+    },
+    {
+      "name": "Indianapolis Colts",
+      "pos": "DST",
+      "team": "IND",
+      "bk": 20,
+      "avg": 20.0,
+      "n": 2,
+      "value": 6917
+    },
+    {
+      "name": "Chicago Bears",
+      "pos": "DST",
+      "team": "CHI",
+      "bk": 21,
+      "avg": 21.0,
+      "n": 2,
+      "value": 6815
+    },
+    {
+      "name": "Tampa Bay Buccaneers",
+      "pos": "DST",
+      "team": "TB",
+      "bk": 22,
+      "avg": 21.5,
+      "n": 2,
+      "value": 6717
+    },
+    {
+      "name": "New York Giants",
+      "pos": "DST",
+      "team": "NYG",
+      "bk": 23,
+      "avg": 23.0,
+      "n": 2,
+      "value": 6621
+    },
+    {
+      "name": "Dallas Cowboys",
+      "pos": "DST",
+      "team": "DAL",
+      "bk": 24,
+      "avg": 25.0,
+      "n": 2,
+      "value": 6529
+    },
+    {
+      "name": "Carolina Panthers",
+      "pos": "DST",
+      "team": "CAR",
+      "bk": 25,
+      "avg": 25.5,
+      "n": 2,
+      "value": 6440
+    },
+    {
+      "name": "Miami Dolphins",
+      "pos": "DST",
+      "team": "MIA",
+      "bk": 26,
+      "avg": 26.5,
+      "n": 2,
+      "value": 6353
+    },
+    {
+      "name": "Tennessee Titans",
+      "pos": "DST",
+      "team": "TEN",
+      "bk": 27,
+      "avg": 26.5,
+      "n": 2,
+      "value": 6268
+    },
+    {
+      "name": "Las Vegas Raiders",
+      "pos": "DST",
+      "team": "LV",
+      "bk": 28,
+      "avg": 27.5,
+      "n": 2,
+      "value": 6186
+    },
+    {
+      "name": "Cincinnati Bengals",
+      "pos": "DST",
+      "team": "CIN",
+      "bk": 29,
+      "avg": 28.0,
+      "n": 2,
+      "value": 6105
+    },
+    {
+      "name": "Washington Commanders",
+      "pos": "DST",
+      "team": "WAS",
+      "bk": 30,
+      "avg": 29.5,
+      "n": 2,
+      "value": 6027
+    },
+    {
+      "name": "New York Jets",
+      "pos": "DST",
+      "team": "NYJ",
+      "bk": 31,
+      "avg": 30.5,
+      "n": 2,
+      "value": 5951
+    },
+    {
+      "name": "Arizona Cardinals",
+      "pos": "DST",
+      "team": "ARI",
+      "bk": 32,
+      "avg": 32.0,
+      "n": 2,
+      "value": 5876
+    }
+  ],
+  "kickers": [
+    {
+      "name": "Brandon Aubrey",
+      "pos": "K",
+      "team": "DAL",
+      "bk": 1,
+      "avg": 1.0,
+      "n": 3,
+      "value": 12000
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "pos": "K",
+      "team": "HOU",
+      "bk": 2,
+      "avg": 2.0,
+      "n": 3,
+      "value": 10873
+    },
+    {
+      "name": "Cameron Dicker",
+      "pos": "K",
+      "team": "LAC",
+      "bk": 3,
+      "avg": 3.0,
+      "n": 3,
+      "value": 10228
+    },
+    {
+      "name": "Jason Myers",
+      "pos": "K",
+      "team": "SEA",
+      "bk": 4,
+      "avg": 4.33,
+      "n": 3,
+      "value": 9769
+    },
+    {
+      "name": "Cam Little",
+      "pos": "K",
+      "team": "JAX",
+      "bk": 5,
+      "avg": 4.67,
+      "n": 3,
+      "value": 9409
+    },
+    {
+      "name": "Eddy Pineiro",
+      "pos": "K",
+      "team": "SF",
+      "bk": 6,
+      "avg": 7.0,
+      "n": 3,
+      "value": 9111
+    },
+    {
+      "name": "Tyler Loop",
+      "pos": "K",
+      "team": "BAL",
+      "bk": 7,
+      "avg": 8.33,
+      "n": 3,
+      "value": 8855
+    },
+    {
+      "name": "Evan McPherson",
+      "pos": "K",
+      "team": "CIN",
+      "bk": 8,
+      "avg": 8.67,
+      "n": 3,
+      "value": 8629
+    },
+    {
+      "name": "Jake Bates",
+      "pos": "K",
+      "team": "DET",
+      "bk": 9,
+      "avg": 9.0,
+      "n": 1,
+      "value": 8426
+    },
+    {
+      "name": "Chase McLaughlin",
+      "pos": "K",
+      "team": "TB",
+      "bk": 10,
+      "avg": 10.33,
+      "n": 3,
+      "value": 8241
+    },
+    {
+      "name": "Harrison Mevis",
+      "pos": "K",
+      "team": "LAR",
+      "bk": 11,
+      "avg": 10.33,
+      "n": 3,
+      "value": 8070
+    },
+    {
+      "name": "Andy Borregales",
+      "pos": "K",
+      "team": "NE",
+      "bk": 12,
+      "avg": 10.67,
+      "n": 3,
+      "value": 7912
+    },
+    {
+      "name": "Cairo Santos",
+      "pos": "K",
+      "team": "CHI",
+      "bk": 13,
+      "avg": 10.67,
+      "n": 3,
+      "value": 7764
+    },
+    {
+      "name": "Chris Boswell",
+      "pos": "K",
+      "team": "PIT",
+      "bk": 14,
+      "avg": 14.0,
+      "n": 1,
+      "value": 7624
+    },
+    {
+      "name": "Harrison Butker",
+      "pos": "K",
+      "team": "KC",
+      "bk": 15,
+      "avg": 15.0,
+      "n": 1,
+      "value": 7492
+    },
+    {
+      "name": "Will Reichard",
+      "pos": "K",
+      "team": "MIN",
+      "bk": 16,
+      "avg": 16.0,
+      "n": 1,
+      "value": 7367
+    },
+    {
+      "name": "Wil Lutz",
+      "pos": "K",
+      "team": "DEN",
+      "bk": 17,
+      "avg": 17.0,
+      "n": 1,
+      "value": 7247
+    },
+    {
+      "name": "Charlie Smyth",
+      "pos": "K",
+      "team": "NO",
+      "bk": 18,
+      "avg": 18.0,
+      "n": 1,
+      "value": 7132
+    },
+    {
+      "name": "Jake Elliott",
+      "pos": "K",
+      "team": "PHI",
+      "bk": 19,
+      "avg": 19.0,
+      "n": 1,
+      "value": 7023
+    },
+    {
+      "name": "Blake Grupe",
+      "pos": "K",
+      "team": "IND",
+      "bk": 20,
+      "avg": 20.0,
+      "n": 1,
+      "value": 6917
+    },
+    {
+      "name": "Tyler Bass",
+      "pos": "K",
+      "team": "BUF",
+      "bk": 21,
+      "avg": 21.0,
+      "n": 1,
+      "value": 6815
+    },
+    {
+      "name": "Chad Ryland",
+      "pos": "K",
+      "team": "ARI",
+      "bk": 22,
+      "avg": 22.0,
+      "n": 1,
+      "value": 6717
+    },
+    {
+      "name": "Joey Slye",
+      "pos": "K",
+      "team": "TEN",
+      "bk": 23,
+      "avg": 23.0,
+      "n": 1,
+      "value": 6621
+    },
+    {
+      "name": "Nick Folk",
+      "pos": "K",
+      "team": "ATL",
+      "bk": 24,
+      "avg": 24.0,
+      "n": 1,
+      "value": 6529
+    }
+  ],
   "rookies": [
     {
       "name": "Jeremiyah Love",
@@ -51792,6 +52300,3808 @@
       "time": "3:20 pm ET",
       "away": "BAL",
       "home": "NYY"
+    }
+  ],
+  "bpl": [
+    {
+      "week": 1,
+      "day": "Friday, Aug 21",
+      "time": "Final",
+      "home": "Arsenal",
+      "away": "Coventry City",
+      "home_abbr": "ARS",
+      "away_abbr": "COV",
+      "score": "3-0"
+    },
+    {
+      "week": 1,
+      "day": "Saturday, Aug 22",
+      "time": "Final",
+      "home": "Hull City",
+      "away": "Manchester United",
+      "home_abbr": "HUL",
+      "away_abbr": "MUN",
+      "score": "2-0"
+    },
+    {
+      "week": 1,
+      "day": "Saturday, Aug 22",
+      "time": "Final",
+      "home": "Everton",
+      "away": "Crystal Palace",
+      "home_abbr": "EVE",
+      "away_abbr": "CRY",
+      "score": "2-0"
+    },
+    {
+      "week": 1,
+      "day": "Saturday, Aug 22",
+      "time": "Final",
+      "home": "Ipswich Town",
+      "away": "Sunderland",
+      "home_abbr": "IPS",
+      "away_abbr": "SUN",
+      "score": "2-1"
+    },
+    {
+      "week": 1,
+      "day": "Saturday, Aug 22",
+      "time": "Final",
+      "home": "Nottingham Forest",
+      "away": "Leeds United",
+      "home_abbr": "NFO",
+      "away_abbr": "LEE",
+      "score": "0-1"
+    },
+    {
+      "week": 1,
+      "day": "Saturday, Aug 22",
+      "time": "Final",
+      "home": "Brentford",
+      "away": "Tottenham",
+      "home_abbr": "BRE",
+      "away_abbr": "TOT",
+      "score": "3-0"
+    },
+    {
+      "week": 1,
+      "day": "Sunday, Aug 23",
+      "time": "Final",
+      "home": "Brighton",
+      "away": "Aston Villa",
+      "home_abbr": "BHA",
+      "away_abbr": "AVL",
+      "score": "4-0"
+    },
+    {
+      "week": 1,
+      "day": "Sunday, Aug 23",
+      "time": "Final",
+      "home": "Manchester City",
+      "away": "Bournemouth",
+      "home_abbr": "MCI",
+      "away_abbr": "BOU",
+      "score": "2-1"
+    },
+    {
+      "week": 1,
+      "day": "Sunday, Aug 23",
+      "time": "Final",
+      "home": "Newcastle",
+      "away": "Liverpool",
+      "home_abbr": "NEW",
+      "away_abbr": "LIV",
+      "score": "2-2"
+    },
+    {
+      "week": 1,
+      "day": "Monday, Aug 24",
+      "time": "Final",
+      "home": "Fulham",
+      "away": "Chelsea",
+      "home_abbr": "FUL",
+      "away_abbr": "CHE",
+      "score": "2-3"
+    },
+    {
+      "week": 2,
+      "day": "Friday, Aug 28",
+      "time": "Final",
+      "home": "Crystal Palace",
+      "away": "Manchester City",
+      "home_abbr": "CRY",
+      "away_abbr": "MCI",
+      "score": "1-4"
+    },
+    {
+      "week": 2,
+      "day": "Saturday, Aug 29",
+      "time": "Final",
+      "home": "Liverpool",
+      "away": "Nottingham Forest",
+      "home_abbr": "LIV",
+      "away_abbr": "NFO",
+      "score": "2-2"
+    },
+    {
+      "week": 2,
+      "day": "Saturday, Aug 29",
+      "time": "Final",
+      "home": "Bournemouth",
+      "away": "Everton",
+      "home_abbr": "BOU",
+      "away_abbr": "EVE",
+      "score": "1-1"
+    },
+    {
+      "week": 2,
+      "day": "Saturday, Aug 29",
+      "time": "Final",
+      "home": "Coventry City",
+      "away": "Hull City",
+      "home_abbr": "COV",
+      "away_abbr": "HUL",
+      "score": "0-1"
+    },
+    {
+      "week": 2,
+      "day": "Saturday, Aug 29",
+      "time": "Final",
+      "home": "Tottenham",
+      "away": "Newcastle",
+      "home_abbr": "TOT",
+      "away_abbr": "NEW",
+      "score": "0-2"
+    },
+    {
+      "week": 2,
+      "day": "Sunday, Aug 30",
+      "time": "9:00 AM",
+      "home": "Chelsea",
+      "away": "Brighton",
+      "home_abbr": "CHE",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 2,
+      "day": "Sunday, Aug 30",
+      "time": "9:00 AM",
+      "home": "Leeds United",
+      "away": "Brentford",
+      "home_abbr": "LEE",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 2,
+      "day": "Sunday, Aug 30",
+      "time": "9:00 AM",
+      "home": "Sunderland",
+      "away": "Fulham",
+      "home_abbr": "SUN",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 2,
+      "day": "Sunday, Aug 30",
+      "time": "11:30 AM",
+      "home": "Manchester United",
+      "away": "Ipswich Town",
+      "home_abbr": "MUN",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 2,
+      "day": "Monday, Aug 31",
+      "time": "3:00 PM",
+      "home": "Aston Villa",
+      "away": "Arsenal",
+      "home_abbr": "AVL",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Friday, Sep 4",
+      "time": "3:00 PM",
+      "home": "Ipswich Town",
+      "away": "Liverpool",
+      "home_abbr": "IPS",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Saturday, Sep 5",
+      "time": "7:30 AM",
+      "home": "Newcastle",
+      "away": "Bournemouth",
+      "home_abbr": "NEW",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Saturday, Sep 5",
+      "time": "10:00 AM",
+      "home": "Brentford",
+      "away": "Sunderland",
+      "home_abbr": "BRE",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Saturday, Sep 5",
+      "time": "10:00 AM",
+      "home": "Brighton",
+      "away": "Leeds United",
+      "home_abbr": "BHA",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Saturday, Sep 5",
+      "time": "10:00 AM",
+      "home": "Fulham",
+      "away": "Crystal Palace",
+      "home_abbr": "FUL",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Saturday, Sep 5",
+      "time": "10:00 AM",
+      "home": "Manchester City",
+      "away": "Coventry City",
+      "home_abbr": "MCI",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Saturday, Sep 5",
+      "time": "10:00 AM",
+      "home": "Nottingham Forest",
+      "away": "Tottenham",
+      "home_abbr": "NFO",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Saturday, Sep 5",
+      "time": "12:30 PM",
+      "home": "Hull City",
+      "away": "Aston Villa",
+      "home_abbr": "HUL",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Sunday, Sep 6",
+      "time": "9:00 AM",
+      "home": "Everton",
+      "away": "Manchester United",
+      "home_abbr": "EVE",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 3,
+      "day": "Sunday, Sep 6",
+      "time": "11:30 AM",
+      "home": "Arsenal",
+      "away": "Chelsea",
+      "home_abbr": "ARS",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Saturday, Sep 12",
+      "time": "10:00 AM",
+      "home": "Bournemouth",
+      "away": "Brentford",
+      "home_abbr": "BOU",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Saturday, Sep 12",
+      "time": "10:00 AM",
+      "home": "Aston Villa",
+      "away": "Nottingham Forest",
+      "home_abbr": "AVL",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Saturday, Sep 12",
+      "time": "10:00 AM",
+      "home": "Chelsea",
+      "away": "Hull City",
+      "home_abbr": "CHE",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Saturday, Sep 12",
+      "time": "10:00 AM",
+      "home": "Crystal Palace",
+      "away": "Ipswich Town",
+      "home_abbr": "CRY",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Saturday, Sep 12",
+      "time": "10:00 AM",
+      "home": "Liverpool",
+      "away": "Fulham",
+      "home_abbr": "LIV",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Saturday, Sep 12",
+      "time": "12:30 PM",
+      "home": "Tottenham",
+      "away": "Everton",
+      "home_abbr": "TOT",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Saturday, Sep 12",
+      "time": "3:00 PM",
+      "home": "Sunderland",
+      "away": "Arsenal",
+      "home_abbr": "SUN",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Sunday, Sep 13",
+      "time": "9:00 AM",
+      "home": "Coventry City",
+      "away": "Brighton",
+      "home_abbr": "COV",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Sunday, Sep 13",
+      "time": "11:30 AM",
+      "home": "Manchester United",
+      "away": "Manchester City",
+      "home_abbr": "MUN",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 4,
+      "day": "Monday, Sep 14",
+      "time": "3:00 PM",
+      "home": "Leeds United",
+      "away": "Newcastle",
+      "home_abbr": "LEE",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Friday, Sep 18",
+      "time": "3:00 PM",
+      "home": "Brentford",
+      "away": "Chelsea",
+      "home_abbr": "BRE",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Saturday, Sep 19",
+      "time": "7:30 AM",
+      "home": "Tottenham",
+      "away": "Aston Villa",
+      "home_abbr": "TOT",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Saturday, Sep 19",
+      "time": "10:00 AM",
+      "home": "Brighton",
+      "away": "Arsenal",
+      "home_abbr": "BHA",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Saturday, Sep 19",
+      "time": "10:00 AM",
+      "home": "Everton",
+      "away": "Ipswich Town",
+      "home_abbr": "EVE",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Saturday, Sep 19",
+      "time": "10:00 AM",
+      "home": "Leeds United",
+      "away": "Crystal Palace",
+      "home_abbr": "LEE",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Saturday, Sep 19",
+      "time": "10:00 AM",
+      "home": "Manchester City",
+      "away": "Sunderland",
+      "home_abbr": "MCI",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Saturday, Sep 19",
+      "time": "10:00 AM",
+      "home": "Newcastle",
+      "away": "Hull City",
+      "home_abbr": "NEW",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Saturday, Sep 19",
+      "time": "12:30 PM",
+      "home": "Nottingham Forest",
+      "away": "Coventry City",
+      "home_abbr": "NFO",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Sunday, Sep 20",
+      "time": "9:00 AM",
+      "home": "Bournemouth",
+      "away": "Liverpool",
+      "home_abbr": "BOU",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 5,
+      "day": "Sunday, Sep 20",
+      "time": "11:30 AM",
+      "home": "Fulham",
+      "away": "Manchester United",
+      "home_abbr": "FUL",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Saturday, Oct 10",
+      "time": "7:30 AM",
+      "home": "Arsenal",
+      "away": "Leeds United",
+      "home_abbr": "ARS",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Saturday, Oct 10",
+      "time": "10:00 AM",
+      "home": "Aston Villa",
+      "away": "Brentford",
+      "home_abbr": "AVL",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Saturday, Oct 10",
+      "time": "10:00 AM",
+      "home": "Chelsea",
+      "away": "Bournemouth",
+      "home_abbr": "CHE",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Saturday, Oct 10",
+      "time": "10:00 AM",
+      "home": "Ipswich Town",
+      "away": "Fulham",
+      "home_abbr": "IPS",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Saturday, Oct 10",
+      "time": "10:00 AM",
+      "home": "Sunderland",
+      "away": "Brighton",
+      "home_abbr": "SUN",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Saturday, Oct 10",
+      "time": "12:30 PM",
+      "home": "Manchester United",
+      "away": "Tottenham",
+      "home_abbr": "MUN",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Sunday, Oct 11",
+      "time": "9:00 AM",
+      "home": "Crystal Palace",
+      "away": "Nottingham Forest",
+      "home_abbr": "CRY",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Sunday, Oct 11",
+      "time": "9:00 AM",
+      "home": "Hull City",
+      "away": "Everton",
+      "home_abbr": "HUL",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Sunday, Oct 11",
+      "time": "11:30 AM",
+      "home": "Liverpool",
+      "away": "Manchester City",
+      "home_abbr": "LIV",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 6,
+      "day": "Monday, Oct 12",
+      "time": "3:00 PM",
+      "home": "Coventry City",
+      "away": "Newcastle",
+      "home_abbr": "COV",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Saturday, Oct 17",
+      "time": "7:30 AM",
+      "home": "Everton",
+      "away": "Chelsea",
+      "home_abbr": "EVE",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Saturday, Oct 17",
+      "time": "10:00 AM",
+      "home": "Brentford",
+      "away": "Liverpool",
+      "home_abbr": "BRE",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Saturday, Oct 17",
+      "time": "10:00 AM",
+      "home": "Fulham",
+      "away": "Hull City",
+      "home_abbr": "FUL",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Saturday, Oct 17",
+      "time": "10:00 AM",
+      "home": "Manchester City",
+      "away": "Ipswich Town",
+      "home_abbr": "MCI",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Saturday, Oct 17",
+      "time": "12:30 PM",
+      "home": "Newcastle",
+      "away": "Aston Villa",
+      "home_abbr": "NEW",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Sunday, Oct 18",
+      "time": "9:00 AM",
+      "home": "Bournemouth",
+      "away": "Sunderland",
+      "home_abbr": "BOU",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Sunday, Oct 18",
+      "time": "9:00 AM",
+      "home": "Brighton",
+      "away": "Crystal Palace",
+      "home_abbr": "BHA",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Sunday, Oct 18",
+      "time": "9:00 AM",
+      "home": "Leeds United",
+      "away": "Manchester United",
+      "home_abbr": "LEE",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Sunday, Oct 18",
+      "time": "11:30 AM",
+      "home": "Nottingham Forest",
+      "away": "Arsenal",
+      "home_abbr": "NFO",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 7,
+      "day": "Monday, Oct 19",
+      "time": "3:00 PM",
+      "home": "Tottenham",
+      "away": "Coventry City",
+      "home_abbr": "TOT",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Friday, Oct 23",
+      "time": "3:00 PM",
+      "home": "Ipswich Town",
+      "away": "Nottingham Forest",
+      "home_abbr": "IPS",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Saturday, Oct 24",
+      "time": "7:30 AM",
+      "home": "Aston Villa",
+      "away": "Manchester City",
+      "home_abbr": "AVL",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Saturday, Oct 24",
+      "time": "10:00 AM",
+      "home": "Arsenal",
+      "away": "Everton",
+      "home_abbr": "ARS",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Saturday, Oct 24",
+      "time": "10:00 AM",
+      "home": "Coventry City",
+      "away": "Fulham",
+      "home_abbr": "COV",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Saturday, Oct 24",
+      "time": "10:00 AM",
+      "home": "Liverpool",
+      "away": "Brighton",
+      "home_abbr": "LIV",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Saturday, Oct 24",
+      "time": "12:30 PM",
+      "home": "Chelsea",
+      "away": "Tottenham",
+      "home_abbr": "CHE",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Sunday, Oct 25",
+      "time": "9:00 AM",
+      "home": "Crystal Palace",
+      "away": "Newcastle",
+      "home_abbr": "CRY",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Sunday, Oct 25",
+      "time": "9:00 AM",
+      "home": "Hull City",
+      "away": "Brentford",
+      "home_abbr": "HUL",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Sunday, Oct 25",
+      "time": "9:00 AM",
+      "home": "Manchester United",
+      "away": "Bournemouth",
+      "home_abbr": "MUN",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 8,
+      "day": "Sunday, Oct 25",
+      "time": "11:30 AM",
+      "home": "Sunderland",
+      "away": "Leeds United",
+      "home_abbr": "SUN",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Saturday, Oct 31",
+      "time": "7:30 AM",
+      "home": "Chelsea",
+      "away": "Manchester United",
+      "home_abbr": "CHE",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Saturday, Oct 31",
+      "time": "10:00 AM",
+      "home": "Bournemouth",
+      "away": "Leeds United",
+      "home_abbr": "BOU",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Saturday, Oct 31",
+      "time": "10:00 AM",
+      "home": "Brentford",
+      "away": "Nottingham Forest",
+      "home_abbr": "BRE",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Saturday, Oct 31",
+      "time": "10:00 AM",
+      "home": "Coventry City",
+      "away": "Sunderland",
+      "home_abbr": "COV",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Saturday, Oct 31",
+      "time": "10:00 AM",
+      "home": "Hull City",
+      "away": "Ipswich Town",
+      "home_abbr": "HUL",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Saturday, Oct 31",
+      "time": "10:00 AM",
+      "home": "Manchester City",
+      "away": "Brighton",
+      "home_abbr": "MCI",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Saturday, Oct 31",
+      "time": "12:30 PM",
+      "home": "Tottenham",
+      "away": "Crystal Palace",
+      "home_abbr": "TOT",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Sunday, Nov 1",
+      "time": "9:00 AM",
+      "home": "Aston Villa",
+      "away": "Fulham",
+      "home_abbr": "AVL",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Sunday, Nov 1",
+      "time": "11:30 AM",
+      "home": "Liverpool",
+      "away": "Arsenal",
+      "home_abbr": "LIV",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 9,
+      "day": "Monday, Nov 2",
+      "time": "3:00 PM",
+      "home": "Newcastle",
+      "away": "Everton",
+      "home_abbr": "NEW",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Hull City",
+      "home_abbr": "ARS",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Brentford",
+      "home_abbr": "BHA",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Liverpool",
+      "home_abbr": "CRY",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Coventry City",
+      "home_abbr": "EVE",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Newcastle",
+      "home_abbr": "FUL",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Bournemouth",
+      "home_abbr": "IPS",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Tottenham",
+      "home_abbr": "LEE",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Aston Villa",
+      "home_abbr": "MUN",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Manchester City",
+      "home_abbr": "NFO",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 10,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Chelsea",
+      "home_abbr": "SUN",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Nottingham Forest",
+      "home_abbr": "BOU",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Sunderland",
+      "home_abbr": "AVL",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Everton",
+      "home_abbr": "BRE",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Leeds United",
+      "home_abbr": "CHE",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Crystal Palace",
+      "home_abbr": "COV",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Hull City",
+      "away": "Brighton",
+      "home_abbr": "HUL",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Manchester United",
+      "home_abbr": "LIV",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Fulham",
+      "home_abbr": "MCI",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Arsenal",
+      "home_abbr": "NEW",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 11,
+      "day": "Saturday",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Ipswich Town",
+      "home_abbr": "TOT",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Manchester City",
+      "home_abbr": "ARS",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Newcastle",
+      "home_abbr": "BHA",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Hull City",
+      "home_abbr": "CRY",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Liverpool",
+      "home_abbr": "EVE",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Bournemouth",
+      "home_abbr": "FUL",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Aston Villa",
+      "home_abbr": "IPS",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Coventry City",
+      "home_abbr": "LEE",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Brentford",
+      "home_abbr": "MUN",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Chelsea",
+      "home_abbr": "NFO",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 12,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Tottenham",
+      "home_abbr": "SUN",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Bournemouth",
+      "away": "Brighton",
+      "home_abbr": "BOU",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Aston Villa",
+      "away": "Everton",
+      "home_abbr": "AVL",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Brentford",
+      "away": "Arsenal",
+      "home_abbr": "BRE",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Chelsea",
+      "away": "Crystal Palace",
+      "home_abbr": "CHE",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Coventry City",
+      "away": "Ipswich Town",
+      "home_abbr": "COV",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Hull City",
+      "away": "Nottingham Forest",
+      "home_abbr": "HUL",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Liverpool",
+      "away": "Sunderland",
+      "home_abbr": "LIV",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Manchester City",
+      "away": "Leeds United",
+      "home_abbr": "MCI",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Newcastle",
+      "away": "Manchester United",
+      "home_abbr": "NEW",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 13,
+      "day": "Wednesday, Dec 2",
+      "time": "3:00 PM",
+      "home": "Tottenham",
+      "away": "Fulham",
+      "home_abbr": "TOT",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Hull City",
+      "home_abbr": "BOU",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Crystal Palace",
+      "home_abbr": "AVL",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Manchester City",
+      "home_abbr": "BRE",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Liverpool",
+      "home_abbr": "CHE",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Fulham",
+      "home_abbr": "EVE",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Ipswich Town",
+      "home_abbr": "LEE",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Coventry City",
+      "home_abbr": "MUN",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Sunderland",
+      "home_abbr": "NEW",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Brighton",
+      "home_abbr": "NFO",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 14,
+      "day": "Saturday",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Arsenal",
+      "home_abbr": "TOT",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Bournemouth",
+      "home_abbr": "ARS",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Everton",
+      "home_abbr": "BHA",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Aston Villa",
+      "home_abbr": "COV",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Manchester United",
+      "home_abbr": "CRY",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Brentford",
+      "home_abbr": "FUL",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Hull City",
+      "away": "Tottenham",
+      "home_abbr": "HUL",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Newcastle",
+      "home_abbr": "IPS",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Leeds United",
+      "home_abbr": "LIV",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Chelsea",
+      "home_abbr": "MCI",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 15,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Nottingham Forest",
+      "home_abbr": "SUN",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Coventry City",
+      "home_abbr": "BOU",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Manchester United",
+      "home_abbr": "ARS",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Newcastle",
+      "home_abbr": "BRE",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Ipswich Town",
+      "home_abbr": "BHA",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Aston Villa",
+      "home_abbr": "CHE",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Fulham",
+      "home_abbr": "LEE",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Tottenham",
+      "home_abbr": "LIV",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Hull City",
+      "home_abbr": "MCI",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Everton",
+      "home_abbr": "NFO",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 16,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Crystal Palace",
+      "home_abbr": "SUN",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Leeds United",
+      "home_abbr": "AVL",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Chelsea",
+      "home_abbr": "COV",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Arsenal",
+      "home_abbr": "CRY",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Everton",
+      "away": "Sunderland",
+      "home_abbr": "EVE",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Fulham",
+      "away": "Brighton",
+      "home_abbr": "FUL",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Hull City",
+      "away": "Liverpool",
+      "home_abbr": "HUL",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Brentford",
+      "home_abbr": "IPS",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Nottingham Forest",
+      "home_abbr": "MUN",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Manchester City",
+      "home_abbr": "NEW",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 17,
+      "day": "Saturday, Dec 26",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Bournemouth",
+      "home_abbr": "TOT",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Aston Villa",
+      "away": "Liverpool",
+      "home_abbr": "AVL",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Coventry City",
+      "away": "Brentford",
+      "home_abbr": "COV",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Crystal Palace",
+      "away": "Bournemouth",
+      "home_abbr": "CRY",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Everton",
+      "away": "Manchester City",
+      "home_abbr": "EVE",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Fulham",
+      "away": "Arsenal",
+      "home_abbr": "FUL",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Hull City",
+      "away": "Leeds United",
+      "home_abbr": "HUL",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Ipswich Town",
+      "away": "Chelsea",
+      "home_abbr": "IPS",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Manchester United",
+      "away": "Sunderland",
+      "home_abbr": "MUN",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Newcastle",
+      "away": "Nottingham Forest",
+      "home_abbr": "NEW",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 18,
+      "day": "Wednesday, Dec 30",
+      "time": "3:00 PM",
+      "home": "Tottenham",
+      "away": "Brighton",
+      "home_abbr": "TOT",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Aston Villa",
+      "home_abbr": "BOU",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Ipswich Town",
+      "home_abbr": "ARS",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Brentford",
+      "away": "Crystal Palace",
+      "home_abbr": "BRE",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Brighton",
+      "away": "Manchester United",
+      "home_abbr": "BHA",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Newcastle",
+      "home_abbr": "CHE",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Everton",
+      "home_abbr": "LEE",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Coventry City",
+      "home_abbr": "LIV",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Tottenham",
+      "home_abbr": "MCI",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Fulham",
+      "home_abbr": "NFO",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 19,
+      "day": "Saturday, Jan 2",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Hull City",
+      "home_abbr": "SUN",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Arsenal",
+      "away": "Brentford",
+      "home_abbr": "ARS",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Brighton",
+      "away": "Bournemouth",
+      "home_abbr": "BHA",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Crystal Palace",
+      "away": "Chelsea",
+      "home_abbr": "CRY",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Everton",
+      "away": "Aston Villa",
+      "home_abbr": "EVE",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Fulham",
+      "away": "Tottenham",
+      "home_abbr": "FUL",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Ipswich Town",
+      "away": "Coventry City",
+      "home_abbr": "IPS",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Leeds United",
+      "away": "Manchester City",
+      "home_abbr": "LEE",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Manchester United",
+      "away": "Newcastle",
+      "home_abbr": "MUN",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Nottingham Forest",
+      "away": "Hull City",
+      "home_abbr": "NFO",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 20,
+      "day": "Wednesday, Jan 6",
+      "time": "3:00 PM",
+      "home": "Sunderland",
+      "away": "Liverpool",
+      "home_abbr": "SUN",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Ipswich Town",
+      "home_abbr": "BOU",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Manchester United",
+      "home_abbr": "AVL",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Brighton",
+      "home_abbr": "BRE",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Sunderland",
+      "home_abbr": "CHE",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Everton",
+      "home_abbr": "COV",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Hull City",
+      "away": "Arsenal",
+      "home_abbr": "HUL",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Crystal Palace",
+      "home_abbr": "LIV",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Nottingham Forest",
+      "home_abbr": "MCI",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Fulham",
+      "home_abbr": "NEW",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 21,
+      "day": "Saturday",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Leeds United",
+      "home_abbr": "TOT",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Newcastle",
+      "home_abbr": "ARS",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Manchester City",
+      "home_abbr": "BHA",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Tottenham",
+      "home_abbr": "CRY",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Brentford",
+      "home_abbr": "EVE",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Aston Villa",
+      "home_abbr": "FUL",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Hull City",
+      "home_abbr": "IPS",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Chelsea",
+      "home_abbr": "LEE",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Liverpool",
+      "home_abbr": "MUN",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Bournemouth",
+      "home_abbr": "NFO",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 22,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Coventry City",
+      "home_abbr": "SUN",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Fulham",
+      "home_abbr": "BOU",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Ipswich Town",
+      "home_abbr": "AVL",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Manchester United",
+      "home_abbr": "BRE",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Nottingham Forest",
+      "home_abbr": "CHE",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Leeds United",
+      "home_abbr": "COV",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Hull City",
+      "away": "Crystal Palace",
+      "home_abbr": "HUL",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Everton",
+      "home_abbr": "LIV",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Arsenal",
+      "home_abbr": "MCI",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Brighton",
+      "home_abbr": "NEW",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 23,
+      "day": "Saturday",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Sunderland",
+      "home_abbr": "TOT",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Liverpool",
+      "home_abbr": "ARS",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Hull City",
+      "home_abbr": "BHA",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Coventry City",
+      "home_abbr": "CRY",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Newcastle",
+      "home_abbr": "EVE",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Manchester City",
+      "home_abbr": "FUL",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Tottenham",
+      "home_abbr": "IPS",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Bournemouth",
+      "home_abbr": "LEE",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Chelsea",
+      "home_abbr": "MUN",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Brentford",
+      "home_abbr": "NFO",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 24,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Aston Villa",
+      "home_abbr": "SUN",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Aston Villa",
+      "away": "Bournemouth",
+      "home_abbr": "AVL",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Coventry City",
+      "away": "Liverpool",
+      "home_abbr": "COV",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Crystal Palace",
+      "away": "Brentford",
+      "home_abbr": "CRY",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Everton",
+      "away": "Leeds United",
+      "home_abbr": "EVE",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Fulham",
+      "away": "Nottingham Forest",
+      "home_abbr": "FUL",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Hull City",
+      "away": "Sunderland",
+      "home_abbr": "HUL",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Ipswich Town",
+      "away": "Arsenal",
+      "home_abbr": "IPS",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Manchester United",
+      "away": "Brighton",
+      "home_abbr": "MUN",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Newcastle",
+      "away": "Chelsea",
+      "home_abbr": "NEW",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 25,
+      "day": "Wednesday, Feb 10",
+      "time": "3:00 PM",
+      "home": "Tottenham",
+      "away": "Manchester City",
+      "home_abbr": "TOT",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Crystal Palace",
+      "home_abbr": "BOU",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Fulham",
+      "home_abbr": "ARS",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Coventry City",
+      "home_abbr": "BRE",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Tottenham",
+      "home_abbr": "BHA",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Ipswich Town",
+      "home_abbr": "CHE",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Aston Villa",
+      "home_abbr": "LEE",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Hull City",
+      "home_abbr": "LIV",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Newcastle",
+      "home_abbr": "MCI",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Manchester United",
+      "home_abbr": "NFO",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 26,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Everton",
+      "home_abbr": "SUN",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Chelsea",
+      "home_abbr": "AVL",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Bournemouth",
+      "home_abbr": "COV",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Sunderland",
+      "home_abbr": "CRY",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Nottingham Forest",
+      "home_abbr": "EVE",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Leeds United",
+      "home_abbr": "FUL",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Hull City",
+      "away": "Manchester City",
+      "home_abbr": "HUL",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Brighton",
+      "home_abbr": "IPS",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Arsenal",
+      "home_abbr": "MUN",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Brentford",
+      "home_abbr": "NEW",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 27,
+      "day": "Saturday",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Liverpool",
+      "home_abbr": "TOT",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Bournemouth",
+      "away": "Tottenham",
+      "home_abbr": "BOU",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Arsenal",
+      "away": "Crystal Palace",
+      "home_abbr": "ARS",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Brentford",
+      "away": "Ipswich Town",
+      "home_abbr": "BRE",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Brighton",
+      "away": "Fulham",
+      "home_abbr": "BHA",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Chelsea",
+      "away": "Coventry City",
+      "home_abbr": "CHE",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Leeds United",
+      "away": "Hull City",
+      "home_abbr": "LEE",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Liverpool",
+      "away": "Aston Villa",
+      "home_abbr": "LIV",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Manchester City",
+      "away": "Everton",
+      "home_abbr": "MCI",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Nottingham Forest",
+      "away": "Newcastle",
+      "home_abbr": "NFO",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 28,
+      "day": "Wednesday, Mar 3",
+      "time": "3:00 PM",
+      "home": "Sunderland",
+      "away": "Manchester United",
+      "home_abbr": "SUN",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Newcastle",
+      "home_abbr": "BOU",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Hull City",
+      "home_abbr": "AVL",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Arsenal",
+      "home_abbr": "CHE",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Manchester City",
+      "home_abbr": "COV",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Fulham",
+      "home_abbr": "CRY",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Brighton",
+      "home_abbr": "LEE",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Ipswich Town",
+      "home_abbr": "LIV",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Everton",
+      "home_abbr": "MUN",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Brentford",
+      "home_abbr": "SUN",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 29,
+      "day": "Saturday",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Nottingham Forest",
+      "home_abbr": "TOT",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Sunderland",
+      "home_abbr": "ARS",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Bournemouth",
+      "home_abbr": "BRE",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Coventry City",
+      "home_abbr": "BHA",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Tottenham",
+      "home_abbr": "EVE",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Liverpool",
+      "home_abbr": "FUL",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Hull City",
+      "away": "Chelsea",
+      "home_abbr": "HUL",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Crystal Palace",
+      "home_abbr": "IPS",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Manchester United",
+      "home_abbr": "MCI",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Leeds United",
+      "home_abbr": "NEW",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 30,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Aston Villa",
+      "home_abbr": "NFO",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Manchester City",
+      "home_abbr": "BOU",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Brighton",
+      "home_abbr": "AVL",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Fulham",
+      "home_abbr": "CHE",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Arsenal",
+      "home_abbr": "COV",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Everton",
+      "home_abbr": "CRY",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Nottingham Forest",
+      "home_abbr": "LEE",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Newcastle",
+      "home_abbr": "LIV",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Hull City",
+      "home_abbr": "MUN",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Ipswich Town",
+      "home_abbr": "SUN",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 31,
+      "day": "Saturday",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Brentford",
+      "home_abbr": "TOT",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Aston Villa",
+      "home_abbr": "ARS",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Leeds United",
+      "home_abbr": "BRE",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Chelsea",
+      "home_abbr": "BHA",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Bournemouth",
+      "home_abbr": "EVE",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Sunderland",
+      "home_abbr": "FUL",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Hull City",
+      "away": "Coventry City",
+      "home_abbr": "HUL",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Manchester United",
+      "home_abbr": "IPS",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Crystal Palace",
+      "home_abbr": "MCI",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Tottenham",
+      "home_abbr": "NEW",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 32,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Liverpool",
+      "home_abbr": "NFO",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Arsenal",
+      "home_abbr": "BOU",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Coventry City",
+      "home_abbr": "AVL",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Fulham",
+      "home_abbr": "BRE",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Manchester City",
+      "home_abbr": "CHE",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Brighton",
+      "home_abbr": "EVE",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Liverpool",
+      "home_abbr": "LEE",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Crystal Palace",
+      "home_abbr": "MUN",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Ipswich Town",
+      "home_abbr": "NEW",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Sunderland",
+      "home_abbr": "NFO",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 33,
+      "day": "Saturday",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Hull City",
+      "home_abbr": "TOT",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Tottenham",
+      "home_abbr": "ARS",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Nottingham Forest",
+      "home_abbr": "BHA",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Manchester United",
+      "home_abbr": "COV",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Aston Villa",
+      "home_abbr": "CRY",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Everton",
+      "home_abbr": "FUL",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Hull City",
+      "away": "Bournemouth",
+      "home_abbr": "HUL",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Leeds United",
+      "home_abbr": "IPS",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Chelsea",
+      "home_abbr": "LIV",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Brentford",
+      "home_abbr": "MCI",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 34,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Newcastle",
+      "home_abbr": "SUN",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Manchester United",
+      "home_abbr": "BOU",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brentford",
+      "away": "Aston Villa",
+      "home_abbr": "BRE",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Brighton",
+      "away": "Sunderland",
+      "home_abbr": "BHA",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Everton",
+      "away": "Hull City",
+      "home_abbr": "EVE",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Fulham",
+      "away": "Ipswich Town",
+      "home_abbr": "FUL",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Arsenal",
+      "home_abbr": "LEE",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Liverpool",
+      "home_abbr": "MCI",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Coventry City",
+      "home_abbr": "NEW",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Crystal Palace",
+      "home_abbr": "NFO",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 35,
+      "day": "Saturday",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Chelsea",
+      "home_abbr": "TOT",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Nottingham Forest",
+      "home_abbr": "ARS",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Newcastle",
+      "home_abbr": "AVL",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Everton",
+      "home_abbr": "CHE",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Tottenham",
+      "home_abbr": "COV",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Brighton",
+      "home_abbr": "CRY",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Hull City",
+      "away": "Fulham",
+      "home_abbr": "HUL",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Manchester City",
+      "home_abbr": "IPS",
+      "away_abbr": "MCI",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Brentford",
+      "home_abbr": "LIV",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Leeds United",
+      "home_abbr": "MUN",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 36,
+      "day": "Saturday",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Bournemouth",
+      "home_abbr": "SUN",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Bournemouth",
+      "away": "Chelsea",
+      "home_abbr": "BOU",
+      "away_abbr": "CHE",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Brentford",
+      "away": "Hull City",
+      "home_abbr": "BRE",
+      "away_abbr": "HUL",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Brighton",
+      "away": "Liverpool",
+      "home_abbr": "BHA",
+      "away_abbr": "LIV",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Everton",
+      "away": "Arsenal",
+      "home_abbr": "EVE",
+      "away_abbr": "ARS",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Fulham",
+      "away": "Coventry City",
+      "home_abbr": "FUL",
+      "away_abbr": "COV",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Leeds United",
+      "away": "Sunderland",
+      "home_abbr": "LEE",
+      "away_abbr": "SUN",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Manchester City",
+      "away": "Aston Villa",
+      "home_abbr": "MCI",
+      "away_abbr": "AVL",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Newcastle",
+      "away": "Crystal Palace",
+      "home_abbr": "NEW",
+      "away_abbr": "CRY",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Nottingham Forest",
+      "away": "Ipswich Town",
+      "home_abbr": "NFO",
+      "away_abbr": "IPS",
+      "score": ""
+    },
+    {
+      "week": 37,
+      "day": "Sunday, May 23",
+      "time": "",
+      "home": "Tottenham",
+      "away": "Manchester United",
+      "home_abbr": "TOT",
+      "away_abbr": "MUN",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Arsenal",
+      "away": "Brighton",
+      "home_abbr": "ARS",
+      "away_abbr": "BHA",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Aston Villa",
+      "away": "Tottenham",
+      "home_abbr": "AVL",
+      "away_abbr": "TOT",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Chelsea",
+      "away": "Brentford",
+      "home_abbr": "CHE",
+      "away_abbr": "BRE",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Coventry City",
+      "away": "Nottingham Forest",
+      "home_abbr": "COV",
+      "away_abbr": "NFO",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Crystal Palace",
+      "away": "Leeds United",
+      "home_abbr": "CRY",
+      "away_abbr": "LEE",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Hull City",
+      "away": "Newcastle",
+      "home_abbr": "HUL",
+      "away_abbr": "NEW",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Ipswich Town",
+      "away": "Everton",
+      "home_abbr": "IPS",
+      "away_abbr": "EVE",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Liverpool",
+      "away": "Bournemouth",
+      "home_abbr": "LIV",
+      "away_abbr": "BOU",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Manchester United",
+      "away": "Fulham",
+      "home_abbr": "MUN",
+      "away_abbr": "FUL",
+      "score": ""
+    },
+    {
+      "week": 38,
+      "day": "Sunday, May 30",
+      "time": "",
+      "home": "Sunderland",
+      "away": "Manchester City",
+      "home_abbr": "SUN",
+      "away_abbr": "MCI",
+      "score": ""
     }
   ],
   "news": [

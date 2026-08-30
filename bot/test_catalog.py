@@ -139,6 +139,18 @@ def main():
     classic = cat.raw.get("classic") or []
     assert len(classic) == 200, f"classic {len(classic)}"
     assert classic[0].get("bk") == 1
+    dst = cat.raw.get("dst") or []
+    assert len(dst) == 32, f"dst {len(dst)}"
+    assert dst[0]["name"] == "Houston Texans"
+    assert dst[0].get("bk") == 1
+    kickers = cat.raw.get("kickers") or []
+    assert len(kickers) == 24, f"kickers {len(kickers)}"
+    assert kickers[0]["name"] == "Brandon Aubrey"
+    assert cat.list_for("dst")[0]["name"] == "Houston Texans"
+    assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"
+    bpl = cat.raw.get("bpl") or []
+    assert len(bpl) == 380, f"bpl {len(bpl)}"
+    assert bpl[0]["home_abbr"] == "ARS"
     assert keep0["name"] != board0["name"] or board0.get("yates") == 1
     farm = cat.raw.get("bb_farm") or []
     assert len(farm) == 100, f"bb farm {len(farm)}"
@@ -242,9 +254,21 @@ def main():
     assert "background-image:url" not in home
     assert "home-leads" in home
     lists_at = home.find('class="desk-block lists"')
+    schedules_at = home.find('class="desk-block schedules"')
     tools_at = home.find('class="desk-block tools"')
     extra_at = home.find('class="desk-block extra"')
-    assert 0 < lists_at < tools_at < extra_at
+    assert 0 < lists_at < schedules_at < tools_at < extra_at
+    lists = home[lists_at:schedules_at]
+    slates = home[schedules_at:tools_at]
+    assert "defenses.html" in lists
+    assert "kickers.html" in lists
+    assert "Top Defenses" in lists
+    assert "Top Kickers" in lists
+    assert "nfl-schedule.html" not in lists
+    assert "mlb-schedule.html" not in lists
+    assert "nfl-schedule.html" in slates
+    assert "mlb-schedule.html" in slates
+    assert "bpl-schedule.html" in slates
     assert 'href="trade.html"' in home[tools_at:extra_at]
     assert "Player Pages" in home[tools_at:extra_at]
     assert "Trade Calculators" not in home[home.find("home-intro"):lists_at]
@@ -309,6 +333,20 @@ def main():
     assert "13 boards" in board_html
     assert "Derek Brown" in board_html
     assert "4for4" in board_html
+    dst_html = html_of("defenses.html")
+    assert "<h1>Top Defenses</h1>" in dst_html
+    assert "Houston Texans" in dst_html
+    assert "class=\"draft-check\"" not in dst_html
+    k_html = html_of("kickers.html")
+    assert "<h1>Top Kickers</h1>" in k_html
+    assert "Brandon Aubrey" in k_html
+    bpl_html = html_of("bpl-schedule.html")
+    assert "<h1>BPL Schedule</h1>" in bpl_html
+    assert "bpl-weeks" in bpl_html
+    assert "ARS" in bpl_html
+    pl_sched = html_of("pl/schedule.html")
+    assert "<h1>BPL Schedule</h1>" in pl_sched
+    assert "schedule.html" in html_of("pl/index.html")
     classic_html = html_of("the-classic.html")
     assert "<h1>The Classic</h1>" in classic_html
     assert "0.5 PPR" in classic_html or "Half-PPR" in classic_html
@@ -392,6 +430,8 @@ def main():
     assert "background-image:url" not in bk_home
     assert "hero-lead" not in bk_home
     pl_home = html_of("pl/index.html")
+    assert 'class="desk-block schedules"' in pl_home
+    assert "schedule.html" in pl_home
     assert 'href="../privacy.html"' in pl_home
     assert 'class="hero masthead"' in pl_home
     assert "Premier League rankings" in pl_home
@@ -418,6 +458,8 @@ def main():
         "redraft-standard.html",
         "the-classic.html",
         "redraft-superflex.html",
+        "defenses.html",
+        "kickers.html",
         "rookies-2026.html",
         "bk/the-keep.html",
         "bk/board.html",
