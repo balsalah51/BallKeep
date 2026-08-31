@@ -126,6 +126,12 @@ def test_google_head_tags():
     assert "application/rss+xml" in html
     assert "https://ballkeep.com/feed.xml" in html
     assert "img/logo.jpg" in html
+    assert "ca-pub-1074015774205047" in html
+    assert "pagead2.googlesyndication.com" in html
+    assert "adsbygoogle.js" in html
+    from seo import ads_txt, ADSENSE_CLIENT
+    assert ADSENSE_CLIENT == "ca-pub-1074015774205047"
+    assert ads_txt().startswith("google.com, pub-1074015774205047, DIRECT,")
 
 
 def test_item_list_faq_video():
