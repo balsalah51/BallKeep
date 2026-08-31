@@ -36,6 +36,7 @@ from aggregate_protocol import (  # noqa: E402
 )
 from seo import (  # noqa: E402
     abs_img,
+    ads_txt,
     also_on_desk,
     article_jsonld,
     breadcrumb_jsonld,
@@ -2798,7 +2799,7 @@ def main():
     <section class="panel policy">
       <p class="kicker">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="note">Last updated: August 23, 2026</p>
+      <p class="note">Last updated: August 31, 2026</p>
       <p>Ball Keep ("we," "us," or "this site") respects your privacy. This Privacy Policy explains what information we collect when you visit ballkeep.com (and its BaseKeep, BasketKeep, and PitchKeep sections), how we use it, and the choices you have.</p>
 
       <h3>Information We Collect</h3>
@@ -2885,6 +2886,7 @@ def main():
         "https://ballkeep.com/sitemap.xml",
         "https://ballkeep.com/sitemap-news.xml",
     ]))
+    (ROOT / "ads.txt").write_text(ads_txt())
 
     cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk, sf_redraft, classic, dst, kickers, bpl)
     print(

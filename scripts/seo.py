@@ -7,6 +7,8 @@ import re
 
 SITE = "https://ballkeep.com"
 FONT_HREF = "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap"
+ADSENSE_CLIENT = "ca-pub-1074015774205047"
+ADSENSE_CERT = "f08c47fec0942fa0"
 
 BRANDS = {
     "Ball Keep": {
@@ -260,6 +262,7 @@ def head_tags(
         f'  <link rel="canonical" href="{esc(canonical)}" />\n'
         f'  <link rel="preconnect" href="https://fonts.googleapis.com" />\n'
         f'  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n'
+        f'  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />\n'
         f'  <link rel="stylesheet" href="{esc(FONT_HREF)}" />\n'
         f'  <link rel="apple-touch-icon" href="{esc(logo)}" />\n'
         f"{rss_link}"
@@ -274,8 +277,15 @@ def head_tags(
         f'  <meta name="twitter:title" content="{esc(full)}" />\n'
         f'  <meta name="twitter:description" content="{esc(desc)}" />\n'
         f'  <meta name="twitter:image" content="{esc(img)}" />\n'
-        f"{scripts}"
+        f"{scripts}\n"
+        f'  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" '
+        f'crossorigin="anonymous"></script>'
     )
+
+
+def ads_txt() -> str:
+    pub = ADSENSE_CLIENT.removeprefix("ca-")
+    return f"google.com, {pub}, DIRECT, {ADSENSE_CERT}\n"
 
 
 def _fmt_bar(v: float) -> str:
