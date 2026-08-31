@@ -241,6 +241,7 @@ def build_bot():
 
     BOARDS = [
         app_commands.Choice(name="The Keep (Superflex)", value="keep"),
+        app_commands.Choice(name="The Fence (IDP)", value="fence"),
         app_commands.Choice(name="The Board", value="board"),
         app_commands.Choice(name="Redraft PPR", value="ppr"),
         app_commands.Choice(name="The Classic", value="classic"),
@@ -259,6 +260,9 @@ def build_bot():
         app_commands.Choice(name="Running Back", value="RB"),
         app_commands.Choice(name="Wide Receiver", value="WR"),
         app_commands.Choice(name="Tight End", value="TE"),
+        app_commands.Choice(name="Defensive Line", value="DL"),
+        app_commands.Choice(name="Linebacker", value="LB"),
+        app_commands.Choice(name="Defensive Back", value="DB"),
     ]
     BB_BOARDS = [
         app_commands.Choice(name="The Keep (overall dynasty 300)", value="bbkeep"),
