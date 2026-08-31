@@ -1,19 +1,33 @@
 {
   "sport": "basketball",
-  "updated": "2026-08-31T12:20:13Z",
-  "fresh": 62,
+  "updated": "2026-08-31T13:20:12Z",
+  "fresh": 124,
   "stories": [
     {
       "id": "trade-rumors-wait-see-anthony-davis-jimmy-butler-691d7161",
       "slug": "trade-rumors-wait-see-anthony-davis-jimmy-butler-691d7161",
       "sport": "basketball",
       "headline": "Rockets predicted to trade Alperen Sengun for $364M ex-Lakers champion to pair with Kevin Durant",
-      "blurb": "Alperen Sengun Would Benefit the Most from a Kevin Durant Trade Sports Illustrated",
-      "summary": "Alperen Sengun Would Benefit the Most from a Kevin Durant Trade Sports Illustrated NBA Trade Rumors: Rockets' Alperen Sengun on the Trade Block? NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com Aggregated from Sports Illustrated, heavy.com, Yahoo Sports, sportingnews.com, Athlon Sports and 2 more.",
+      "blurb": "Lakers predicted to trade Dalton Knecht for $107M NBA champion to pair with Luka Doncic Yahoo Sports",
+      "summary": "Lakers predicted to trade Dalton Knecht for $107M NBA champion to pair with Luka Doncic Yahoo Sports NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com Proposed Blockbuster NBA Trade Reunites Lakers With Anthony Davis Yahoo Sports Aggregated from Yahoo Sports, heavy.com, sportingnews.com, Sports Illustrated, Athlon Sports and 2 more.",
       "category": "injury",
       "published": "2024-07-28T07:00:00Z",
       "updated": "2026-08-30T15:58:39Z",
       "players": [
+        {
+          "key": "dalton knecht",
+          "name": "Dalton Knecht",
+          "slug": "dalton-knecht",
+          "pos": "SF",
+          "team": "LAL"
+        },
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
+        },
         {
           "key": "alperen sengun",
           "name": "Alperen Sengun",
@@ -55,13 +69,6 @@
           "slug": "giannis-antetokounmpo",
           "pos": "PF",
           "team": "MIL"
-        },
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
         },
         {
           "key": "anthony davis",
@@ -267,6 +274,14 @@
           "kind": "article",
           "snippet": "NBA Trade Rumors: Rockets' Alperen Sengun on the Trade Block? Sports Illustrated",
           "published": "Sun, 28 Jul 2024 07:00:00 GMT"
+        },
+        {
+          "title": "Lakers predicted to trade Dalton Knecht for $107M NBA champion to pair with Luka Doncic",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPM0x6SllMZlBUeTBRWjlMV1BsejJkTGUtcVRmYWJnVzR2anRVMElHZ0JHc3pfV081OWJSWk5OM1dKTkZNa1g4Q0gycllKM2JtTjlPSFpoNmxfLTR5ckNYcW1USDVWd0tQdHJaWXY4dnViQmxYaE9VVVM2MHRTaGVyckU5WXRBTGVJOTFiNXNR?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Lakers predicted to trade Dalton Knecht for $107M NBA champion to pair with Luka Doncic Yahoo Sports",
+          "published": "Sat, 29 Aug 2026 16:58:29 GMT"
         }
       ]
     },
@@ -698,6 +713,43 @@
           "kind": "article",
           "snippet": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade Yahoo Sports",
           "published": "Sun, 30 Aug 2026 15:56:31 GMT"
+        }
+      ]
+    },
+    {
+      "id": "trade-rumors-deal-cost-kyrie-irving-trey-murphy-9c8a5835",
+      "slug": "trade-rumors-deal-cost-kyrie-irving-trey-murphy-9c8a5835",
+      "sport": "basketball",
+      "headline": "NBA Trade Rumors: Deal Cost for Kyrie Irving, Trey Murphy & More",
+      "blurb": "NBA Trade Rumors: Deal Cost for Kyrie Irving, Trey Murphy & More heavy.com",
+      "summary": "NBA Trade Rumors: Deal Cost for Kyrie Irving, Trey Murphy & More heavy.com Board reading of heavy.com.",
+      "category": "trade",
+      "published": "2026-08-31T12:59:10Z",
+      "updated": "2026-08-31T12:59:10Z",
+      "players": [
+        {
+          "key": "kyrie irving",
+          "name": "Kyrie Irving",
+          "slug": "kyrie-irving",
+          "pos": "PG",
+          "team": "DAL"
+        },
+        {
+          "key": "trey murphy",
+          "name": "Trey Murphy III",
+          "slug": "trey-murphy-iii",
+          "pos": "SF",
+          "team": "NOP"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA Trade Rumors: Deal Cost for Kyrie Irving, Trey Murphy & More",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdzBQbXpnZnJ3RWdTM1lNcnc3T3BBR0ZVNVloYVpNdWQ0dFJKUHd4LXRobXhGRzJCbnNwNnFOUlEyQU1hOUdtRnIycGZVNk15alFjVS0tbEhSRnVFQkxHTjRoVDRyWjlXUjVhYjZWSDBMeEpWUGJubGQxb1k0NXBlYS1PaUpMb3RYT3YxVVlocVZEdGppUDk2eklzZEx4XzVGTzFxVGhST0JZM085RFVJLXln?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Deal Cost for Kyrie Irving, Trey Murphy & More heavy.com",
+          "published": "Mon, 31 Aug 2026 12:59:10 GMT"
         }
       ]
     },
@@ -1546,6 +1598,36 @@
       ]
     },
     {
+      "id": "celtics-proposed-trade-derrick-white-pistons-blockbuster-3-eb5a976b",
+      "slug": "celtics-proposed-trade-derrick-white-pistons-blockbuster-3-eb5a976b",
+      "sport": "basketball",
+      "headline": "Celtics Proposed to Trade Derrick White to Pistons in Blockbuster 3-Player Deal",
+      "blurb": "Celtics Proposed to Trade Derrick White to Pistons in Blockbuster 3-Player Deal heavy.com",
+      "summary": "Celtics Proposed to Trade Derrick White to Pistons in Blockbuster 3-Player Deal heavy.com Board reading of heavy.com.",
+      "category": "trade",
+      "published": "2026-08-31T12:43:46Z",
+      "updated": "2026-08-31T12:43:46Z",
+      "players": [
+        {
+          "key": "derrick white",
+          "name": "Derrick White",
+          "slug": "derrick-white",
+          "pos": "SG",
+          "team": "BOS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Celtics Proposed to Trade Derrick White to Pistons in Blockbuster 3-Player Deal",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVFZvZVJGS2Rja0w0WEZFMHRPZWg1MG54cnAtWDIyZFY3STF4M2FlNTk0YTdGcWFPVXlmQjZVdWtSMnhvMlozZDBUdzJ6cVhqV2JvS3c2RS1FY2RvODdCOVNhUmZOTUxYNWp6UFNuczF3NjhOLW13SmQxRDBlT0V2Y0ZRLUc0aXBi?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Celtics Proposed to Trade Derrick White to Pistons in Blockbuster 3-Player Deal heavy.com",
+          "published": "Mon, 31 Aug 2026 12:43:46 GMT"
+        }
+      ]
+    },
+    {
       "id": "heat-bucks-trade-grades-did-miami-pay-too-b1977968",
       "slug": "heat-bucks-trade-grades-did-miami-pay-too-b1977968",
       "sport": "basketball",
@@ -1634,9 +1716,9 @@
       "id": "if-lakers-continue-pursue-starting-level-forward-missing-3de3a70b",
       "slug": "if-lakers-continue-pursue-starting-level-forward-missing-3de3a70b",
       "sport": "basketball",
-      "headline": "Projected NBA Trade Sends Jonathan Kuminga to Lakers in Major 3-Team Deal",
-      "blurb": "Projected NBA Trade Sends Jonathan Kuminga to Lakers in Major 3-Team Deal Yahoo Sports",
-      "summary": "Projected NBA Trade Sends Jonathan Kuminga to Lakers in Major 3-Team Deal Yahoo Sports If the Lakers continue to pursue a starting-level forward after missing out on Jonathan Kuminga, notable trade targets could include PJ Washington, Derrick Jones Jr., or Kyle Kuzma. The Lakers are still above the roster limit with 16 players currently under contr x.com Aggregated from Yahoo Sports, x.com.",
+      "headline": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. 2 Shot Blocker",
+      "blurb": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No.",
+      "summary": "Jonathan Kuminga, Derrick Jones Jr., P.J. Washington and Kyle Kuzma: Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. Projected NBA Trade Has Lakers Land 19 PPG 2x All-NBA SF in 4-Team Deal Yahoo Sports If the Lakers continue to pursue a starting-level forward after missing out on Jonathan Kuminga, notable trade targets could include PJ Washington, Derrick Jones Jr., or Kyle Kuzma. Aggregated from Yahoo Sports, x.com.",
       "category": "trade",
       "published": "2026-08-15T07:00:00Z",
       "updated": "2026-08-29T17:04:09Z",
@@ -1686,6 +1768,147 @@
           "kind": "article",
           "snippet": "Projected NBA Trade Sends Jonathan Kuminga to Lakers in Major 3-Team Deal Yahoo Sports",
           "published": "Sat, 15 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. 2 Shot Blocker",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRFBvZ2M4bVNpajYyYXlBc2dMQU9NZlZiXzFETmFBVFJ2VDVEQVdpZnJkVkNSaXdWU3NLcFdtbWFSeGlKSVdBRmhwQjZ2d3BtMEVQeFUydDE2T0VCMGd6RHFJY0NrUmNTZ2pFUjNub25pUXh6YVdWTzhqd0NGQTQzRU1RcmUtUnpqeTZrYw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Projected NBA Trade Reunites Lakers With 7’1″ 3-PT Sniper, No. 2 Shot Blocker Yahoo Sports",
+          "published": "Wed, 26 Aug 2026 00:12:27 GMT"
+        },
+        {
+          "title": "Projected NBA Trade Has Lakers Land 19 PPG 2x All-NBA SF in 4-Team Deal",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbWF5aGRkeC1mTjI3cFFSTXg0NFZwNGR3Z1E0ajNTNVg1ZkMzeDdTbXM4eW53R2JFTnpFMGtCenBIYzJ2azk3ai00RzJlZWx5VThBUml1bndzMUxRT19lRkpkdVpXb290ZUZPUW5oOVFNbDZRc1MzU01icWlTOHVIYUZCZlM1STQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Projected NBA Trade Has Lakers Land 19 PPG 2x All-NBA SF in 4-Team Deal Yahoo Sports",
+          "published": "Sun, 16 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "bennedict-mathurin-agrees-sign-pelicans-2-years-16-4510f3c9",
+      "slug": "bennedict-mathurin-agrees-sign-pelicans-2-years-16-4510f3c9",
+      "sport": "basketball",
+      "headline": "Bennedict Mathurin's Future: Sign-and-Trade with Pelicans or Accept Clippers' Qualifying Offer?",
+      "blurb": "Re-Grading Clippers' Ivica Zubac Trade After Bennedict Mathurin's Departure Sports Illustrated",
+      "summary": "Re-Grading Clippers' Ivica Zubac Trade After Bennedict Mathurin's Departure Sports Illustrated NBA Trade Eval: Ivica Zubac Gets Sent To Pacers In Deal Involving Bennedict Mathurin Sports Illustrated Clippers get Bennedict Mathurin, send Ivica Zubac to Pacers in NBA trade deadline stunner New York Post Aggregated from Sports Illustrated, New York Post, SSBCrack, The New York Times, NBC Sports and 1 more.",
+      "category": "trade",
+      "published": "2025-12-14T08:00:00Z",
+      "updated": "2026-08-29T15:23:15Z",
+      "players": [
+        {
+          "key": "bennedict mathurin",
+          "name": "Bennedict Mathurin",
+          "slug": "bennedict-mathurin",
+          "pos": "SG",
+          "team": "IND"
+        },
+        {
+          "key": "ivica zubac",
+          "name": "Ivica Zubac",
+          "slug": "ivica-zubac",
+          "pos": "C",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bennedict Mathurin agrees to sign with Pelicans for 2 years, $16 million: Sources",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ3pRekw3cm5qeWpraWsybU96QkJac0wzbGVwQzF3a3BKbkk1N2ZRaHJMWDNpbGRxWFlJeG15Z21ieVU1U3hUTFVmVHJfWlNfTFg1Z1RSand1U0prdU9MWjNUUUQwVmpxNUl0Rk9UT3d6OXhkc2l3TWVOdkJ0UjdmNlZPd1ZmZ2lyV2IteE1HMGNEeHhGR0R5YjFxcG00bXhDTFh5ZDJxcXZnZ29m?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Bennedict Mathurin agrees to sign with Pelicans for 2 years, $16 million: Sources The New York Times",
+          "published": "Wed, 26 Aug 2026 16:04:12 GMT"
+        },
+        {
+          "title": "Miami Heat Should Explore Sign-and-Trade for Bennedict Mathurin",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObVUyRVNOcmd6MjR0M2JtN2s0ZFdla0o5RzJ0Rml5dXZSamxJOWVJNXpzMUJuYlptRkIxZGdHa0llXzhoMmswT1laYjdMbkdRQm1BTGx2X3FDTnVORUR2c1p0NjdUVDRPbmNHV1pQNmpzOGFPN1JPODNyRTBTNmg1M01FWUVqQVlOMzE5cFRMZFUwWERGNWU2dTlFbnBDRWszS0hiejZZTE1hTlo0bFE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Miami Heat Should Explore Sign-and-Trade for Bennedict Mathurin Sports Illustrated",
+          "published": "Fri, 21 Aug 2026 18:12:30 GMT"
+        },
+        {
+          "title": "What a Bennedict Mathurin Trade With the Pelicans Would Mean for the Clippers",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbmhpQ2VjOEE2djlaQjZQR0dMLVhPNThBV3ZnTkhRUzZLLWRsdkpOV2NuQ21CbXhhdFhrZVYyVnZyXzNYU25Ob1VEazlIQUpxLVpSbHowdGVuMmpQN285VF93bG9XSTRvWnRkUVRvMmV5bjdtRUg2MlQ5dldZZlpzblNvVE56b0o5VEE1a0RQTGpodktaSWE2bmlBMlR6MTM3RnRfMA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "What a Bennedict Mathurin Trade With the Pelicans Would Mean for the Clippers Sports Illustrated",
+          "published": "Tue, 28 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mocking Up a Bulls Sign-and-Trade for Bennedict Mathurin as Buzz Continues",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxORldlLUp1ZGlQQmxyQ1RMSk5YNEI3N19ybS1KZENKUlllaW9vaWlDMTB1Y1F5VzdkcEZDVm83dTRYSEljYnZjdUlnc2xvM29fOFFXb3VSTVpVYnJQVXZVRUxRcmQwaHo4cUROeWtxSGhCakp0OTkwMG5nWHpQUl9PX1JscWZZY000MkNuZDFNQWhZbTJPdi1NekVRMU9CZWdaMUdSUEZZN3dteTVXS1lnRQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Mocking Up a Bulls Sign-and-Trade for Bennedict Mathurin as Buzz Continues Sports Illustrated",
+          "published": "Sat, 01 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pelicans Must Avoid Falling into the Trap of Bennedict Mathurin Bidding War",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeTk4cUJENWYyWTBDb3Zwb2stTE1QeW1YTTFyNFptQTVvXzlScjBNREVKZHZKSXJoUDVodENGMVQ0NXFocXpXV0pVZzRva0U4Q29vNWhhTHRwaWlyNkRVZDdtbk52TnN3M3BIZkpvQUgzTWQydS11c0RtcVNjT1R2dkt4c3NWck16OUFsVktnMUhDSVYyMmlCSHRSNmh3eGlrN0F3YkJFRUczUUZjX1BrcUZtYw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Pelicans Must Avoid Falling into the Trap of Bennedict Mathurin Bidding War Sports Illustrated",
+          "published": "Sat, 01 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bennedict Mathurin, Pelicans reportedly agree to two-year, $16 million contract",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSWlEUG5OcEMwRUFHeW9YbkppcW9uM0hfeHpCNXB0UGw3b0JvRmhLV2RweHJxek9XZjl6OUp0TnA2RTByQWhPTnduQUQ2NjBndWxST1FXSURkNXpjeDFGRy1JeklENmg3cWxENE11UDVMQkNpdmFzbTRlWUxEYkVlaGdwM3p5amtsLWtYSFV1MzRFM2Y0UnVNQmRpWmZFYzhhLWMxa3lhTjg2VmFCSmVRQg?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Bennedict Mathurin, Pelicans reportedly agree to two-year, $16 million contract NBC Sports",
+          "published": "Wed, 26 Aug 2026 16:10:25 GMT"
+        },
+        {
+          "title": "Bennedict Mathurin Parents",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1WeDNpY0s3ekx3SW8yd3pjLURpM3BBS0tiV000Z1BnOWJVNHJWemxJM0ZGeEs0SXdnRWtyRHIwMVVTdi12V0JiQWNpMWdCTUI0RXNHQzhqX0sxOUM0WDhaTXVhQUNNVmlBMlF2QW9RU0hYaUE?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "Bennedict Mathurin Parents Sportskeeda",
+          "published": "Sun, 14 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Re-Grading Clippers' Ivica Zubac Trade After Bennedict Mathurin's Departure",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMUVPSUdqMXlZR1A5VlNaeUtNUllOOGdSOWpHdi1DeW5WcVFJbnllWUZwMFgxd0hRd1REY0ZRUkdLWDRLWDZ2WEk2cDVXdFVDLVZxZW1rbC1LUUx0OEw5M1dobUFMSlN0M0pSQXZJazNCbUF3RDRmX2dFeVA5Z1pJNkFUZTJIVFNrdkZxZGtDUUl2MWpsN29GOTEyRGtMUXh6NFF2R2hlN2lJVnpBRElycmk2Ty16Sm8?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Re-Grading Clippers' Ivica Zubac Trade After Bennedict Mathurin's Departure Sports Illustrated",
+          "published": "Wed, 26 Aug 2026 17:53:04 GMT"
+        },
+        {
+          "title": "NBA Trade Eval: Ivica Zubac Gets Sent To Pacers In Deal Involving Bennedict Mathurin",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQal9yY0Rvd1FDbmtuc1hWLWRBZm1VVW1tQUdYUlJqU1lENXFraTRwMGVSaHNyeUZkeFFkQ2VwNWZXVEMxcE1vdzR5bDJjbDl1ZFRtNF8wOFNveVN4ckR2RndvcHJVcGJSbk5SSnE2THhFR3lfdjROaF9yMU5yMFYxRkFNd2phazB0b09MeGl0LU91LTZKU2E1UGxGY2oydGJjc25XeHpzMzRMcjNvNFBNeFBIVFFxMHRHd3NZ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "NBA Trade Eval: Ivica Zubac Gets Sent To Pacers In Deal Involving Bennedict Mathurin Sports Illustrated",
+          "published": "Fri, 06 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Clippers get Bennedict Mathurin, send Ivica Zubac to Pacers in NBA trade deadline stunner",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcVRyanpSSzdYNzBjbk03UXB6OWRHd0g1RThxQnBMWDJ4Rk10Q0l6bUpQdk91UzZMb0dDcmhxWExva3dfZzZMeTh6VktpcnFZeUZrVkpBWjJvd2M0ellJa2NQMTA5dERrQXVCeXBGWE9kM2xVb1FwOE1aX0RLQXRFTndnNDdPNUFlZTNVODdOdDY?oc=5",
+          "publisher": "New York Post",
+          "kind": "article",
+          "snippet": "Clippers get Bennedict Mathurin, send Ivica Zubac to Pacers in NBA trade deadline stunner New York Post",
+          "published": "Thu, 05 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Two More Clippers Have to Follow Bennedict Mathurin's Departure",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbWxabGszRUs4azZIM0hfaG9LeEQ1a1hzVG9wZ1Zrd1pzVDI0UldXUkZ1ZExnUkFIbnBUamt6aE5LWV9qM19uM1dvTUIzNkxldmhGdXhMNnlFZmdfSzlIMmNGekxvTWtTd1B0d05FdGw5N19xWEZ5aVpZS09WakJNVnYxUjJkWUpCZ0lDaEM4eDBteGNHNXN0bEJRanJXVDBicjBkMVBVcDQtcy1Y?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Two More Clippers Have to Follow Bennedict Mathurin's Departure Sports Illustrated",
+          "published": "Sat, 29 Aug 2026 15:23:15 GMT"
+        },
+        {
+          "title": "Bennedict Mathurin's Future: Sign-and-Trade with Pelicans or Accept Clippers' Qualifying Offer?",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWUROdHBzNWc2ZmtVenlKZmkzVTM0UVp1QVF5c0duTjVJVTBhZ3p1RzlCOEhvMnZwQTR2dy1FN2k4ekdrNFJFaXF3MFZkMmdaWXVidENmb0FGc1d5UUVPdVdSZ1VIb1dPejg5WHpYYlQ4N2hSVDd2UDlhVkRpeHdndVZ3cUhxZHNrenF5QzBRSzY1ajRVZVFWVlFuQ2lwQmwyQ3hNWndtTnFXcFBGRTFZX2ZGcVFXYnZ2R0E?oc=5",
+          "publisher": "SSBCrack",
+          "kind": "article",
+          "snippet": "Bennedict Mathurin's Future: Sign-and-Trade with Pelicans or Accept Clippers' Qualifying Offer? SSBCrack",
+          "published": "Wed, 26 Aug 2026 15:13:52 GMT"
         }
       ]
     },
@@ -1754,6 +1977,126 @@
           "kind": "article",
           "snippet": "Jaylen Brown Thanks Celtics After 76ers Trade, Fans Hold NBA Trophy in Viral Videos of Block Party Bleacher Report",
           "published": "Sun, 30 Aug 2026 23:35:32 GMT"
+        }
+      ]
+    },
+    {
+      "id": "nuggets-may-landed-future-gem-cavs-peyton-watson-6f9d90ae",
+      "slug": "nuggets-may-landed-future-gem-cavs-peyton-watson-6f9d90ae",
+      "sport": "basketball",
+      "headline": "NBA trade grades: Is Peyton Watson a good fit with Cavs? What’s next for Nuggets?",
+      "blurb": "NBA trade grades: Is Peyton Watson a good fit with Cavs?",
+      "summary": "NBA trade grades: Is Peyton Watson a good fit with Cavs? Nuggets may have landed a future gem from Cavs in the Peyton Watson trade Yahoo Sports Aggregated from The New York Times, Yahoo Sports.",
+      "category": "trade",
+      "published": "2026-08-19T07:00:00Z",
+      "updated": "2026-08-30T15:00:02Z",
+      "players": [
+        {
+          "key": "peyton watson",
+          "name": "Peyton Watson",
+          "slug": "peyton-watson",
+          "pos": "SF",
+          "team": "DEN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nuggets may have landed a future gem from Cavs in the Peyton Watson trade",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRzVsMVUtc1JNTlNxWnBjaXc2OWs2OU9ZUHBGTmFYNU1Jd2VSMmF2RGtMUnZ4eWRpVXdHalU2b0lnMVVYbThUZTFNX3pycGZLZG4zWHpUVlpfVTNGRjlCU2Vwazl4ODJjOUVoUjFfaU9kUnA0ZU5VQUlRVjVDQnBFYk1pejg?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Nuggets may have landed a future gem from Cavs in the Peyton Watson trade Yahoo Sports",
+          "published": "Sun, 30 Aug 2026 15:00:02 GMT"
+        },
+        {
+          "title": "NBA trade grades: Is Peyton Watson a good fit with Cavs? What’s next for Nuggets?",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQamNlMmZVcjVsbGlMUGY3dkZzMFJBWFNvcW1IRmY0cW92Q2Fwc3ZjZlNCY1lQcjFLeGlXd3I1UXBJNUt1Y3Uwdlp1RU9uMkdveDRNYVdJZnRkUjFTN2Q4eDhQeE9LX2Y5a3hCM2VZZGE1YmpSRG1WcmpZTGQ0X3dpTjFYcDFudm13aGdqX1RhYUhidXBfQXJIWg?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "NBA trade grades: Is Peyton Watson a good fit with Cavs? What’s next for Nuggets? The New York Times",
+          "published": "Wed, 19 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "trade-rumors-kyrie-irving-knicks-mikal-bridges-choice-f9e4e5d5",
+      "slug": "trade-rumors-kyrie-irving-knicks-mikal-bridges-choice-f9e4e5d5",
+      "sport": "basketball",
+      "headline": "NBA Trade Rumors: Kyrie Irving, Knicks' Mikal Bridges Choice & Lakers Jonathan Kuminga Redux",
+      "blurb": "NBA Trade Rumors: Kyrie Irving, Knicks' Mikal Bridges Choice & Lakers Jonathan Kuminga Redux heavy.com",
+      "summary": "NBA Trade Rumors: Kyrie Irving, Knicks' Mikal Bridges Choice & Lakers Jonathan Kuminga Redux heavy.com Lakers Trade Pitch Lands Former NBA Champion After Jonathan Kuminga Miss heavy.com Board reading of heavy.com.",
+      "category": "trade",
+      "published": "2026-08-25T23:27:00Z",
+      "updated": "2026-08-29T18:04:07Z",
+      "players": [
+        {
+          "key": "jonathan kuminga",
+          "name": "Jonathan Kuminga",
+          "slug": "jonathan-kuminga",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "mikal bridges",
+          "name": "Mikal Bridges",
+          "slug": "mikal-bridges",
+          "pos": "SF",
+          "team": "NYK"
+        },
+        {
+          "key": "kyrie irving",
+          "name": "Kyrie Irving",
+          "slug": "kyrie-irving",
+          "pos": "PG",
+          "team": "DAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA Trade Rumors: Kyrie Irving, Knicks' Mikal Bridges Choice & Lakers Jonathan Kuminga Redux",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdHc4MTBXYmdoYzVvbHpLR0JJbFJ1X2NGVURWY0RGQ2dFZTJhNkwwLUlOSmFqX2pOdHdvR0VlT280NjhCV2IwVFB4UVpWMWMwcmN3cG01Q1lCaXhXc1hVVERzQTZVeEVUZ2FOcnUwTms5dDI1UHNTRzEwVDZMMkEzUExWcGZJN2stM3BUNWc0RE5kY3F2ZjBVU2VZM0hhcEZIVlUwVUlKQzM?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Kyrie Irving, Knicks' Mikal Bridges Choice & Lakers Jonathan Kuminga Redux heavy.com",
+          "published": "Tue, 25 Aug 2026 23:27:00 GMT"
+        },
+        {
+          "title": "Lakers Trade Pitch Lands Former NBA Champion After Jonathan Kuminga Miss",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOclIyc3BOaS1tQWJhQi1zbDZHUW5ueTQtalRXLTJKUXV2R2pnSVhqWFVSblFhaVZzSE1KOGlpbEZzenlBZnRMcXhfR2FHR1lKSFQ5Tm1DZWtlVUkxa2VwLWUwSklQR3VsSlJ3d01HMDN2TXZQNXZHMzdzZnRUWHBCcVZOaXFaLURObEhMdmpOaw?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Lakers Trade Pitch Lands Former NBA Champion After Jonathan Kuminga Miss heavy.com",
+          "published": "Sat, 29 Aug 2026 18:04:07 GMT"
+        }
+      ]
+    },
+    {
+      "id": "bennedict-mathurin-deal-still-leaves-pelicans-roster-more-89b449e5",
+      "slug": "bennedict-mathurin-deal-still-leaves-pelicans-roster-more-89b449e5",
+      "sport": "basketball",
+      "headline": "The Bennedict Mathurin Deal Still Leaves Pelicans Roster With More Questions Than Answers",
+      "blurb": "The Bennedict Mathurin Deal Still Leaves Pelicans Roster With More Questions Than Answers Sports Illustrated",
+      "summary": "The Bennedict Mathurin Deal Still Leaves Pelicans Roster With More Questions Than Answers Sports Illustrated Board reading of Sports Illustrated.",
+      "category": "roster",
+      "published": "2026-08-30T19:57:10Z",
+      "updated": "2026-08-30T19:57:10Z",
+      "players": [
+        {
+          "key": "bennedict mathurin",
+          "name": "Bennedict Mathurin",
+          "slug": "bennedict-mathurin",
+          "pos": "SG",
+          "team": "IND"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Bennedict Mathurin Deal Still Leaves Pelicans Roster With More Questions Than Answers",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTDN1eDIteG9OS29UVUo1RlhMQy1kdk5wQmtScm9ESmljTW5sdE9sVXRBY0FCU3kzRUduMWRKVHoya1JXRl9tYm9kNklaTmRHLWxleHExenhEVUt2UVpwTlhNZkpNcXJJQnRsdi11VE1uMjU5cGE3Tkhkb1dHNG54TFpNUUVkNFY4X09rMTJQdlpNQmpMczViY3NQVlBwdHJnZm9JdVdobGd4UQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "The Bennedict Mathurin Deal Still Leaves Pelicans Roster With More Questions Than Answers Sports Illustrated",
+          "published": "Sun, 30 Aug 2026 19:57:10 GMT"
         }
       ]
     },
@@ -1897,206 +2240,6 @@
           "kind": "article",
           "snippet": "Despite Bold LaMelo Trade, Hornets Get Major Recognition With Top-10 NBA Front Office Ranking Yahoo Sports",
           "published": "Thu, 27 Aug 2026 15:44:40 GMT"
-        }
-      ]
-    },
-    {
-      "id": "nuggets-may-landed-future-gem-cavs-peyton-watson-6f9d90ae",
-      "slug": "nuggets-may-landed-future-gem-cavs-peyton-watson-6f9d90ae",
-      "sport": "basketball",
-      "headline": "Nuggets may have landed a future gem from Cavs in the Peyton Watson trade",
-      "blurb": "Nuggets may have landed a future gem from Cavs in the Peyton Watson trade Yahoo Sports",
-      "summary": "Nuggets may have landed a future gem from Cavs in the Peyton Watson trade Yahoo Sports Board reading of Yahoo Sports.",
-      "category": "trade",
-      "published": "2026-08-30T15:00:02Z",
-      "updated": "2026-08-30T15:00:02Z",
-      "players": [
-        {
-          "key": "peyton watson",
-          "name": "Peyton Watson",
-          "slug": "peyton-watson",
-          "pos": "SF",
-          "team": "DEN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Nuggets may have landed a future gem from Cavs in the Peyton Watson trade",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRzVsMVUtc1JNTlNxWnBjaXc2OWs2OU9ZUHBGTmFYNU1Jd2VSMmF2RGtMUnZ4eWRpVXdHalU2b0lnMVVYbThUZTFNX3pycGZLZG4zWHpUVlpfVTNGRjlCU2Vwazl4ODJjOUVoUjFfaU9kUnA0ZU5VQUlRVjVDQnBFYk1pejg?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Nuggets may have landed a future gem from Cavs in the Peyton Watson trade Yahoo Sports",
-          "published": "Sun, 30 Aug 2026 15:00:02 GMT"
-        }
-      ]
-    },
-    {
-      "id": "raptors-bring-kawhi-leonard-back-toronto-land-jalen-23905698",
-      "slug": "raptors-bring-kawhi-leonard-back-toronto-land-jalen-23905698",
-      "sport": "basketball",
-      "headline": "Toronto Raptors star Scottie Barnes and Oklahoma City Thunder star Cason Wallace rise quietly to claim NB",
-      "blurb": "Scottie Barnes Deems Kawhi Leonard-Toronto Raptors Pairing \"Dangerous\" Yahoo Sports Canada",
-      "summary": "Scottie Barnes Deems Kawhi Leonard-Toronto Raptors Pairing \"Dangerous\" Yahoo Sports Canada Toronto Raptors star Scottie Barnes and Oklahoma City Thunder star Cason Wallace rise quietly to claim NB The Times of India Debunking rumors of Toronto Raptors star having neurological disability Sportskeeda Aggregated from Yahoo Sports Canada, The Times of India, Sportskeeda, Yahoo Sports, Hoops Habit and 5 more.",
-      "category": "trade",
-      "published": "2023-11-07T08:00:00Z",
-      "updated": "2026-08-29T03:27:00Z",
-      "players": [
-        {
-          "key": "scottie barnes",
-          "name": "Scottie Barnes",
-          "slug": "scottie-barnes",
-          "pos": "SF",
-          "team": "TOR"
-        },
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        },
-        {
-          "key": "cason wallace",
-          "name": "Cason Wallace",
-          "slug": "cason-wallace",
-          "pos": "PG",
-          "team": "OKC"
-        },
-        {
-          "key": "jalen duren",
-          "name": "Jalen Duren",
-          "slug": "jalen-duren",
-          "pos": "C",
-          "team": "DET"
-        },
-        {
-          "key": "kyrie irving",
-          "name": "Kyrie Irving",
-          "slug": "kyrie-irving",
-          "pos": "PG",
-          "team": "DAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Raptors Bring Kawhi Leonard Back To Toronto & Land Jalen Duren In Massive Trade Proposal",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSk1KM2xaR2JUQ2hTQ1h4alFuRXg2NHF4NkNDVkh6Y25rR1M1dlctZEt2MWRoZDd3OVcyWm9IekFYVjRwdkR0MUpiRHVWNU15X1lEaUZwXzdmUHNLam5OdlZmczJjRklyS2tMZ3JVVEkyZGlFQ0dBU1E2Y1FKc1JCbnh2TEQzSGk2?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Raptors Bring Kawhi Leonard Back To Toronto & Land Jalen Duren In Massive Trade Proposal Yahoo Sports",
-          "published": "Fri, 28 Aug 2026 15:34:29 GMT"
-        },
-        {
-          "title": "NBA Trades: Blockbuster Pistons deal would send Jalen Duren to Bucks",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaEtGUGp4eE1FMXJvS3cySnFfQ0dtOHRmMm4xd1pOcDNsdVpJT2NsQUh0cUN6WjZTSzNiOFJxRnhuSkNzN1VpeHZTWEVNRld4Q2xQODZuX1lzQXBQV2tXR1M0TFFid0EwVkNrUkliV2NvUmlGZ3FTdmlnR3kyclBHZlFwUWhfVEEtTE1JYkRVX3U?oc=5",
-          "publisher": "Hoops Habit",
-          "kind": "article",
-          "snippet": "NBA Trades: Blockbuster Pistons deal would send Jalen Duren to Bucks Hoops Habit",
-          "published": "Thu, 27 Aug 2026 13:00:05 GMT"
-        },
-        {
-          "title": "Raptors Land Kyrie Irving In Blockbuster Trade Proposal Nobody Saw Coming",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOU2hQSXNUcE56V0h5ZGJDQlo5OUMzSHFURmc0RUVCcFB1OEFCTV9zUGlXeDh1LUV0aEg1ZW1SOGNsMmJtTDVGYXdmdjJjYmhrNk1FbDRkM1J1T2hFQWFILW9IeTgyaDNKcWc5S29oa2JrbUFub2YtQVpQbDZqM01pMGdRbGt4eTN0RVBKWXBlcw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Raptors Land Kyrie Irving In Blockbuster Trade Proposal Nobody Saw Coming Yahoo Sports",
-          "published": "Wed, 26 Aug 2026 15:30:37 GMT"
-        },
-        {
-          "title": "NBA Trade Proposal Lands Pistons Two Standouts For Jalen Duren",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWVZFNHZKRlhNdmJZdVVWM3kxX3ctUWJ0dG5Obl9zeFRKdUpXVFk1aVdYTmVJS2htSjJDUVlwQkFDdEhOUTJIRlFCUFp1eGN4OUFXZG1CZ3pIQzJmekRUQVlMTzZOVzhUR2M0dVB1bEhhbGNKd2lDUXVYSzFLVk9hcEVwTjNWc3BY?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "NBA Trade Proposal Lands Pistons Two Standouts For Jalen Duren Yahoo Sports",
-          "published": "Fri, 14 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Blockbuster Jalen Duren Trade Proposal Sends Pistons All-Star to Bucks in Stunning Deal",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdjZWUU14UDhvcXhUdmhGWTJKaGFiUjQ1ZFlhS04tOEZuTXBTaVhTaWtsTkNTSzgzX21DeDZnTEdfUV9CUmtBNGNGalZHUkFuTTZsZ0FETWdQMDJlUXpnb1o0TS05djA5YjhMY2YxN25CZXlhMXBkeldtRmE1bWFmV2U0aEJqUVBZRkU3VmNFdG4zRmVIdF8tUzBXVHRMN3V0TkUyZFBoTXpWb1VkNUZmdHFQVm1MY2FMLUthZVhLeUJsYWNfaUVzdTBfX2dYMkg20gHWAUFVX3lxTE5uSWtocTJfRUdZVGpzVlY1cHVQVElKVWg2WG9KcmZGaERCcXhJeEJlQTlSTFA5SVZxci1Henh2czlMNzRrOEJSeU1OV1NOUVQ4RUNMUFlNTzBTMThnRWRhUTZJMENTRkJEdXEwVFd2QktLRlZiclJZdjhCUlY4OUVFM0o1RUtlVGVKaGpkcERKUTl3UnR3SFFxUHB1Uk42RTVDaGl2V1JMV1pVcjVZOTBuc0xpNFpVRTJ2NmFoaWlKMkZ5bHNoUTU0Z255eThaSjJqbWlfNHc?oc=5",
-          "publisher": "Al Bat",
-          "kind": "article",
-          "snippet": "Blockbuster Jalen Duren Trade Proposal Sends Pistons All-Star to Bucks in Stunning Deal Al Bat",
-          "published": "Thu, 27 Aug 2026 16:27:00 GMT"
-        },
-        {
-          "title": "Scottie Barnes Deems Kawhi Leonard-Toronto Raptors Pairing \"Dangerous\"",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSy1lVHd3UVo5Tl9JRWVhUnpXQ3NEbWxVa01QakxMSUFJb05TME5HUmpfZTVmQ0U5ZTBRazBGYXFjXy1abmx6QnFIS3ZPLWEtSkQ0QnhjQlEzMDdtTUYyM2JQOVUyQmVrN04zMXVHU3Y5b2h0MWoyQklaaTN2d3UxTE5lRVNBNXhtUWc?oc=5",
-          "publisher": "Yahoo Sports Canada",
-          "kind": "article",
-          "snippet": "Scottie Barnes Deems Kawhi Leonard-Toronto Raptors Pairing \"Dangerous\" Yahoo Sports Canada",
-          "published": "Sun, 12 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "How Kawhi Leonard fits alongside Scottie Barnes with Raptors after trade from Clippers",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQnJDcTVDWnpiN2VZRUNUTkdadG1tenZVRzhXcnFhUThNRm93cVRwT3o0VF9rYS1iSzhWNTNlNDhaMWI5VDhacmFNUXF6UTNlTkQ5SF9DS1pKbnNjOTVVcVA5dks3dVdXUW0ybThma01WdzhGNTlicEdQSkh0cnU0S1BzOXRRQkZLS2I4STlR?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "How Kawhi Leonard fits alongside Scottie Barnes with Raptors after trade from Clippers Yahoo Sports",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Kawhi Leonard trade is a big risk for the Raptors. It’s worth it",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZHlvaE54cTFvUjNYZzVJazJDVWVfWEg1VXYzaEJCR3hmMktrVTlScDltN2NiNGZjbHF0S3VYeklVVHhPZDZMcloza2pfa3ZBMVdyUk4tYUtWOG14N1Voa1QyUGd5a1FLWmptNUtTUTNCRkE0LS1wbU5Bb2d4al94ZGlsbFNNU2tGLTJULUNCYVMtWWpQM05DT19vYlRWeHFUMFVIUmtUNDc2SkF5VVpnVXhIRWZzcm5CQjdv?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "The Kawhi Leonard trade is a big risk for the Raptors. It’s worth it The New York Times",
-          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Clippers Plan Revealed If Kawhi Leonard Raptors Trade Fails",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVjIwYUc2cmZlZUdXcXpKR0hrQ1NJT1NtNGhuNm9kRG5QMThqb01jdDNLNXpwRkgzc1hkNWwxUXRzc201MVZjcW53SUoyTERLWXNVd2ZDS21YZGxHRHpZUHRwb0lzMlphQzJRUlBPTVRsQTFNeEJMWnJBUmFCY2EwU3VQenhDWkQtdTYwLWI3R3otSF9FbXZhVQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Clippers Plan Revealed If Kawhi Leonard Raptors Trade Fails heavy.com",
-          "published": "Sat, 29 Aug 2026 00:27:00 GMT"
-        },
-        {
-          "title": "Clippers Plan Revealed If Kawhi Leonard Raptors Trade Fails",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQamdqeTlyQVNqaXJwSlZ4VlhjaVpLN1QxdXFsb1NBOVF1Ymp3dGU2ZFhWNUtOMzlVc2E5Z0hiTXNMSjhfTWgtQ1dXQWlEVVA1QXVWSVdxY1BXTlh0UVZjTy1RZWhvTVpkQk1KeGh0VjJ6QVNLcFJVZjBkbG1yWTFyeU1VcTJtbTZiX3pVMHBR?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Clippers Plan Revealed If Kawhi Leonard Raptors Trade Fails Yahoo Sports",
-          "published": "Sat, 29 Aug 2026 03:27:00 GMT"
-        },
-        {
-          "title": "Raptors Trade Idea Lands Kawhi Leonard and Jalen Duren",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZlEydnZpbmt0bWVGT0duYTdCZTJZWFlZTGdvamVqVzc4S3o1SzNSVXdFeTEtY2hUdEVfMHVwc1RkT3YzQzkyVHJ5dnJoa3BrWTFSRjlFTTNwRWxHVVhEdEZNdzd4UnVZU25qcW5IWXJqbExXdDhWUWxkdnM3NWdLejBYUTJLeld1S2EyS1ZWc0ZTQQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Raptors Trade Idea Lands Kawhi Leonard and Jalen Duren Sports Illustrated",
-          "published": "Tue, 25 Aug 2026 11:00:03 GMT"
-        },
-        {
-          "title": "Blockbuster NBA Trade Proposal Lands Steph Curry Next to Kawhi on Raptors",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdERoUkFIUWhNNWh4ZGE5UXlZY00xeFE4YkhOenNQdzl5RzFhcjhGZko0ekJHMldYdnF6WDlhSXBTV0JhdlBMaW5OeExhUXlZdk9yN05hU0cwSmRuQUpGS0k4TGNFaWFPTzhDUW9TYU9COTQ5eVo2eThuOFVkTm9HZlBkRkNWWW50NFpDRzZn?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Blockbuster NBA Trade Proposal Lands Steph Curry Next to Kawhi on Raptors Yahoo Sports",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Report: Kawhi Leonard, Jalen Duren among potential offseason additions for Lakers",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQVUxzYnBZQ2dFS2RNdTJFSEFoUERBdkVoV1dJZFlJdzkxS3JrTUlVaGs0MEFYbVp6SlRJX0VacWdUbjQyWWZjTjFXdFdsdUx1Y0FsMGh3ckpXaVNBeVhIMVZ5TjBwVGQ3Q01BcFlmbHIxdk4tMlVrX0JuTDRnRWMxSm9yWmU4b0xMTjNicjNfOFpzN2t5dTJTQU5mYTZuZVRjREsyaE5icTNwaEZCSThyRmI4WXRjTXNTOF8ybzBlU2wwY1BfOGFnd1lSUW1sdEU?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Report: Kawhi Leonard, Jalen Duren among potential offseason additions for Lakers sportingnews.com",
-          "published": "Mon, 23 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Toronto Raptors star Scottie Barnes and Oklahoma City Thunder star Cason Wallace rise quietly to claim NB",
-          "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPZGtLbjZ2Q0pTTEh0NDNqa1I0dnhqUGV4QUFkTmV2eUJ6Ym1WcmstNTVtY05pNEZVZGlBT3JUSnVtSFRKdHYwSWxad1doa2xyY1FPajBpeEJ2TEFRaDF2enJfT0E4MEhTVmxsSnJpOUFTeTN3MVk1Q21DRVg3NnpuSWk5MVFFOEF3RnhsSEllY3huUTUtOFJzdmxURkNlZ2FsNW9UTDVpVW40RzhFeDRwcFNFZXpzNW03aUlFR3Nua20zdklUU1FpOFh4eDlQYVlJaVpVeTJVMEQtOXZLbExQSVJjek1nRnJNSVcyR00tNF9GX01CalBYMTVUSFBtbjNhcFd1NkxEOWdKeng0SWg3bVlXYlJLQ3Qxc0Z1VUc5MlpfdWxGV0dFSWQ1ODRvZlQ4UVRTWHlIYm_SAb4CQVVfeXFMUGk2TUNnVFhSOEpqb00tTlJRdndDVF95Mm1HbHNUSnV3OTBJbkVTX3FqVkd1b2pJV0llTG9WS0RlYWFuNF93X1BzQm1qcWtuRjZhRTlrb01lYTlHT3RnRmRRRHNBSHhCbTFCbHpTd2p3MGlBSERzY2xSSGZuZDNGckZRODZreDVlaVhLY2hIWWFCd2FDV0FFQVE4MDNMbHYyRElNSUYzU0xfeWNDNnpndEdtbWVGalMySkxfcDJlYUJCNzF0ZTFfMTRlWGIteWczWXU1RjRyNkE1Mng5QWpmT1ItMVBVNlFZeEFpWkVWbmhCMHNId01JUmwyZEQ4ME9mSUw0OThjOVNRRHFHSlllYU1pN2pVSUxaeEFVNEQ3XzVGUGhESXgxMXhjSEdSdm16VzljaFluQzlZamVwdGJR?oc=5",
-          "publisher": "The Times of India",
-          "kind": "article",
-          "snippet": "Toronto Raptors star Scottie Barnes and Oklahoma City Thunder star Cason Wallace rise quietly to claim NB The Times of India",
-          "published": "Wed, 03 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Is Scottie Barnes autistic? Debunking rumors of Toronto Raptors star having neurological disability",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOU0k4djdHeU8wOXJUVHU4OVUwVGRzZEM1eHpLdVZhdW85V1FpVkcyaTd0Ul9vX0FzNnVtbFdKRzYxU2p1N1BvTzRITnEwbHhSNjBjNnZvaFM4enRPekw3RjFlbU5GZXFmVi1LLTV5bE5vaVAyb0hMRW5OaGY0U2lrVlpvUlcybjFaU0tfUU9iNkZKYnJfSXNaVkx0VWx4ZVVaS3Q2REhvNDBXUS1uWnM1TWRoWTNRd2lUREVDQkZfclIzbGZKUnhJUmRaNDA?oc=5",
-          "publisher": "Sportskeeda",
-          "kind": "article",
-          "snippet": "Is Scottie Barnes autistic? Debunking rumors of Toronto Raptors star having neurological disability Sportskeeda",
-          "published": "Tue, 07 Nov 2023 08:00:00 GMT"
         }
       ]
     },
@@ -4125,26 +4268,26 @@
       "id": "darius-garland-bennedict-mathurin-3-other-underdog-props-ffc60d60",
       "slug": "darius-garland-bennedict-mathurin-3-other-underdog-props-ffc60d60",
       "sport": "basketball",
-      "headline": "Darius Garland, Bennedict Mathurin, & 3 Other Underdog Props For Clippers vs. Pacers",
-      "blurb": "Darius Garland to make Clippers debut Monday at Warriors The New York Times",
-      "summary": "Darius Garland to make Clippers debut Monday at Warriors The New York Times Cavaliers’ Darius Garland could make season debut Wednesday vs. 76ers: Sources The New York Times Aggregated from The New York Times, Sports Illustrated.",
+      "headline": "Clippers Fans Are Getting the Full Bennedict Mathurin Experience (And That Is Not a Good Thing)",
+      "blurb": "Bennedict Mathurin Makes His Plea to Stay With the Clippers Sports Illustrated",
+      "summary": "Bennedict Mathurin Makes His Plea to Stay With the Clippers Sports Illustrated NBA Trade Rumor: Bennedict Mathurin 'Likes' Mavs Move; Daniel Gafford To Clippers? Clippers Fans Are Getting the Full Bennedict Mathurin Experience (And That Is Not a Good Thing) Sports Illustrated Aggregated from Sports Illustrated, Yahoo Sports, The New York Times, Yahoo Sports Canada, Athlon Sports.",
       "category": "injury",
       "published": "2025-11-04T08:00:00Z",
       "updated": "2026-08-26T15:57:20Z",
       "players": [
         {
-          "key": "darius garland",
-          "name": "Darius Garland",
-          "slug": "darius-garland",
-          "pos": "PG",
-          "team": "CLE"
+          "key": "bennedict mathurin",
+          "name": "Bennedict Mathurin",
+          "slug": "bennedict-mathurin",
+          "pos": "SG",
+          "team": "IND"
         },
         {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
+          "key": "daniel gafford",
+          "name": "Daniel Gafford",
+          "slug": "daniel-gafford",
+          "pos": "C",
+          "team": "DAL"
         },
         {
           "key": "john collins",
@@ -4154,11 +4297,18 @@
           "team": "UTA"
         },
         {
-          "key": "bennedict mathurin",
-          "name": "Bennedict Mathurin",
-          "slug": "bennedict-mathurin",
-          "pos": "SG",
-          "team": "IND"
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        },
+        {
+          "key": "darius garland",
+          "name": "Darius Garland",
+          "slug": "darius-garland",
+          "pos": "PG",
+          "team": "CLE"
         }
       ],
       "sources": [
@@ -4353,6 +4503,62 @@
           "kind": "article",
           "snippet": "Clippers Must Entertain Darius Garland Trade Offers After Landing No. 5 Pick Sports Illustrated",
           "published": "Sat, 16 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Clippers are now set up to trade Darius Garland again",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUWxZakdPUXRaSV9ZY0QtWUxyUnF2MXdtRG1yZXV6RGV4YWpLdnBZMDNnNWpBZWF3U01GcHd3b1dQRnpTaDF0bHdWZC0tXzhvN0F5YWFHcUN4bkVtb2dMWW10ZTBDajdhdURlR2hiWDBVMWdmQWc4UW9QbU1CeGZVYktCOA?oc=5",
+          "publisher": "Yahoo Sports Canada",
+          "kind": "article",
+          "snippet": "Clippers are now set up to trade Darius Garland again Yahoo Sports Canada",
+          "published": "Mon, 11 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Clippers Can Add Third Star Next to Kawhi Leonard & Darius Garland With This Trade",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaDBKVXlhMWN0dlpYeGtrOHNEWHljT0lwZGlFNzFDa2EwNjIxYmZpTV9CY2FxRDMtUXlSSkZlZVVwX0pvSHZCRVBBem9HZ1Q2Unk2YW5icnUzY2NjT3N2YkJFbUk2THBmYjRaczZ1V3IzcVU4S2JySmZ1Q3gzdHJ5T2Jlc21xa2ZzdWowRjd4UXh3NXRvWUpKMjZsR2dFVUhsWHBfTjJ5bDEzcHFESFVqY1BDaw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Can Add Third Star Next to Kawhi Leonard & Darius Garland With This Trade Sports Illustrated",
+          "published": "Tue, 09 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Clippers-Timberwolves: Will Darius Garland, Bennedict Mathurin Play?",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUmY0SDVoa3ByVWhPWVJONVU3bWd1eWQ2MndYZHlDTzVZNVNoMXRhb1pwWXo4VTZ5SnlNZnlWRmJZN2JQejFIWVFYT2I0cF9FOGhmOURvdE05X0R0a0k5UERicHdtQjJmVS1vTGtzcElJeF9QdGJNMUk3ak1IVmpxeDF2NFZjZ3dIUF9PZXNCTUF2VTZLTjlIUF92SURQX1VEdWZ3TVYtaVRsYk9UQWNUcm9HYVVOR3V6RUFJQUFmUWI1RHhOVi0zYnJybVptV0JtR09TUU9n?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Clippers-Timberwolves: Will Darius Garland, Bennedict Mathurin Play? Athlon Sports",
+          "published": "Sun, 08 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Clippers Can Land Their Starting Center With This Mock Bennedict Mathurin Trade",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYTVSRlV2Smtkc2tuZnlDM1ZqTHZNY2RfTHZubUEyXy1tckt3ZlI0eXpKTWZudU9KalpCRF9xa19qODR6MjFKcU9Cc0VzSlAwNXBuT3VETW5Hd19mbnAxVFg3VktrTVNDR0g1eVRqTWpsUlFCVGhaNEJPWFYzVXFwWmwzajlWN09zWkhzdUFfRnd6Rmd1djRjUi14S01nR2tMS1VBWG9ROEt5N2R5S0E?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Can Land Their Starting Center With This Mock Bennedict Mathurin Trade Sports Illustrated",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NBA Trade Rumor: Bennedict Mathurin 'Likes' Mavs Move; Daniel Gafford To Clippers?",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQnp4aHBqLTV2M0o1NFROR0J4UUxOQkp0Q01Wb3pPVGRvODVsNzVZVDZzM0ZrSF9QWkJ1TW13S0xWT0IzZTlQU01jQnJQb3A3QmRBV2ZERk5wMFcxdTZieFFSazlzWXJiQlFQZExac2IzTE1XbWx3di1EOWYtQXJVQnFLbW9Pd0MzdlJF?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "NBA Trade Rumor: Bennedict Mathurin 'Likes' Mavs Move; Daniel Gafford To Clippers? Yahoo Sports",
+          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Clippers Fans Are Getting the Full Bennedict Mathurin Experience (And That Is Not a Good Thing)",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWHFFaUFzeDhuSnJLLU54V2V2Ukd0S0NBWXdvRHplMlp0NzJSZ01oUGNPeW56bXJ6X0YwZ1UwMGhtcTJZMm51eG1uSjdWQTJDcVdYRVFPekhkZWpvTThKSG5kWnhWUlRYd0tzcHgwNUxESmtSZUZPQzYzX0tJUUhWNjRlUm9kREktZDNtdkh2djJxMHd2WjBJbFctNDZaeEhVeWFjNi1sTzdNaGpuQ3gwbXQxYnl1MnBKblRWWXA4WQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Fans Are Getting the Full Bennedict Mathurin Experience (And That Is Not a Good Thing) Sports Illustrated",
+          "published": "Mon, 02 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Bennedict Mathurin Creating Big Offseason Dilemma for Clippers",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTWdla1cxN2NfeG1zcW9DMUxnQTBkS2lzNldpcUpHM1dhZ3A2dE94ZUhuWFZoOFZKV1FuYkZLemk1VTdMMERfek5naDBWbzlQS09OamFhWVA2SDJiUFBSYmpXOUxRVkp6R25MYW80dGhkLW5odlhqaGhLSjE1VVg4SEktRzRSdnZnNUU1YWFERnJNN0hsVnJmM2t0NWREN1dlaUlSVEFKX19xbWx4ODJJUE5ZNA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Bennedict Mathurin Creating Big Offseason Dilemma for Clippers Sports Illustrated",
+          "published": "Sun, 08 Mar 2026 08:00:00 GMT"
         }
       ]
     },
@@ -6676,12 +6882,19 @@
       "slug": "final-injury-timberwolves-trail-blazers-anthony-edwards-scoot-9029884c",
       "sport": "basketball",
       "headline": "Final Injury Report for Timberwolves-Trail Blazers, Will Anthony Edwards, Scoot Henderson Play?",
-      "blurb": "Final Injury Report for Trail Blazers-Hawks, Will Deni Avdija, Jalen Johnson Play?",
-      "summary": "Final Injury Report for Trail Blazers-Hawks, Will Deni Avdija, Jalen Johnson Play? If Trail Blazers Don't Trade Scoot Henderson, It’s Time to Pay Him Yahoo Sports Scoot Henderson Trade Seems Inevitable for the Blazers Sports Illustrated Aggregated from Athlon Sports, Yahoo Sports, Sports Illustrated, sportingnews.com, The New York Times and 6 more.",
+      "blurb": "Anthony Edwards Injury Update | Minnesota Timberwolves NBA.com",
+      "summary": "Anthony Edwards Injury Update | Minnesota Timberwolves NBA.com If Trail Blazers Don't Trade Scoot Henderson, It’s Time to Pay Him Yahoo Sports Scoot Henderson Trade Seems Inevitable for the Blazers Sports Illustrated Aggregated from NBA.com, Yahoo Sports, Sports Illustrated, sportingnews.com, The New York Times and 6 more.",
       "category": "injury",
       "published": "2019-05-29T22:31:28Z",
       "updated": "2026-08-19T07:00:00Z",
       "players": [
+        {
+          "key": "anthony edwards",
+          "name": "Anthony Edwards",
+          "slug": "anthony-edwards",
+          "pos": "SG",
+          "team": "MIN"
+        },
         {
           "key": "jalen johnson",
           "name": "Jalen Johnson",
@@ -6695,13 +6908,6 @@
           "slug": "deni-avdija",
           "pos": "SF",
           "team": "POR"
-        },
-        {
-          "key": "anthony edwards",
-          "name": "Anthony Edwards",
-          "slug": "anthony-edwards",
-          "pos": "SG",
-          "team": "MIN"
         },
         {
           "key": "domantas sabonis",
@@ -6972,6 +7178,14 @@
           "kind": "article",
           "snippet": "Final Injury Report for Trail Blazers-Hawks, Will Deni Avdija, Jalen Johnson Play? Athlon Sports",
           "published": "Sun, 01 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Anthony Edwards Injury Update | Minnesota Timberwolves",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55amZPUGUwaU11eGZ1eGVVekh4c19ZZVhVR3BIMElEdlZ0dmN2c2dMQVlmemM3b3QzTGJxcTF6XzhRWm1iX0RtdHlBYnU0b2FlQlc0dmltbmhjTWVIaDJUM0tRZUQwazJPVUpYYm9R?oc=5",
+          "publisher": "NBA.com",
+          "kind": "article",
+          "snippet": "Anthony Edwards Injury Update | Minnesota Timberwolves NBA.com",
+          "published": "Sun, 03 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -15024,715 +15238,6 @@
           "kind": "article",
           "snippet": "Rockets Get Frustrating Injury Update On Alperen Sengun heavy.com",
           "published": "Mon, 05 Jan 2026 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "why-josh-giddey-isn-t-playing-tonight-detroit-a1afdb72",
-      "slug": "why-josh-giddey-isn-t-playing-tonight-detroit-a1afdb72",
-      "sport": "basketball",
-      "headline": "Why Josh Giddey isn’t playing tonight vs Detroit Pistons? Chicago Bulls star's heath update and status re",
-      "blurb": "Josh Giddey's Injury Status for Chicago Bulls vs.",
-      "summary": "Josh Giddey's Injury Status for Chicago Bulls vs. Dallas Mavericks Sports Illustrated NBA injury update: Is Josh Giddey playing tonight? Aggregated from Sports Illustrated, The Times of India, FantasySP, bolavip.com, Sportskeeda.",
-      "category": "injury",
-      "published": "2024-11-06T08:00:00Z",
-      "updated": "2026-04-03T07:00:00Z",
-      "players": [
-        {
-          "key": "josh giddey",
-          "name": "Josh Giddey",
-          "slug": "josh-giddey",
-          "pos": "SG",
-          "team": "CHI"
-        },
-        {
-          "key": "lonzo ball",
-          "name": "Lonzo Ball",
-          "slug": "lonzo-ball",
-          "pos": "PG",
-          "team": "CLE"
-        },
-        {
-          "key": "austin reaves",
-          "name": "Austin Reaves",
-          "slug": "austin-reaves",
-          "pos": "SG",
-          "team": "LAL"
-        },
-        {
-          "key": "nikola jokic",
-          "name": "Nikola Jokic",
-          "slug": "nikola-jokic",
-          "pos": "C",
-          "team": "DEN"
-        },
-        {
-          "key": "kristaps porzingis",
-          "name": "Kristaps Porzingis",
-          "slug": "kristaps-porzingis",
-          "pos": "C",
-          "team": "BOS"
-        },
-        {
-          "key": "tre jones",
-          "name": "Tre Jones",
-          "slug": "tre-jones",
-          "pos": "PG",
-          "team": "CHI"
-        },
-        {
-          "key": "isaac okoro",
-          "name": "Isaac Okoro",
-          "slug": "isaac-okoro",
-          "pos": "SF",
-          "team": "CLE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA injury update: Is Josh Giddey playing tonight? Chicago Bulls suffer major blow as star face health se",
-          "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQOTYtZk96LTc5dTUyeUkyZVJrdVlsaVd4T2NqVGgzV3E3MzF5aHQ1RjhWU3Budm5OVVBZQnV0eEp0UkxiZGJQNXBkT1g4eTdqdTFHNmNtdWo1MTJXd09zamtwcU1hN3IzbDM1VzhoN0thWUs2dnl5ZG9DME9xT05ScDh0V1hlSHBSVzZRMWkzV093dG14WTlUckhSY3B3bjdSYWVkaE5EN1hfNk13eGhhZlJPRVlKSkFJLXdpVEpyTnRmLTNSSEQ2RVBaODYwaEJ1T2RVYnl4RXdGSENpOFJXbGJodXpKa2FLZ2ozR2pzb0lid25BekNqV3ZIMTR1c3FXUG1ybnE4YVhQSUpmMU16SHpNOTRSVm1IazRhV2F5QW9CNHlDNHJUdmdGRkctVkI1N2JCTmFjOUk1QzFpYWtIS2JGQdIByAJBVV95cUxOTlFPYktGd28wX01OQ2V3S1VmZnNzSURFa3g0NkdkOUM2VHp4RkZ1UzV1anRaZ1Q3SVdtS2xuNXhMamZoTFJQN3BOMTlTNmZ4NFNyYUlpV1ZGQVhqOC05TFpua1lqNFNFVmNuWjhCaC1pVXhubk5OS2RRcmxwMThsVmN2M0FaeEZoRV8wbHE0X25XQUplaGluRzBDdmFRUjdsSFQtZGNveFNLZzBpZHpmMVdGR0NjcnhZdWpBcmg0SEZGSjhIMGNLaGFEYmY0OFFCOFA3OG5HaTZSeWNSZW9fLVlGNnNCQkJKalo3MkhqdGhXVlhHVE82eThQOE1tTlhnbl9hckgwUUR1VGRpWEU5bjkwY0pHa2tuMFJhXzY2Nms1bTMwMnFvMzJ1YkhkZWNSaGpiejlOcHRMZjNZSHVrNTZuV0FCT24w?oc=5",
-          "publisher": "The Times of India",
-          "kind": "article",
-          "snippet": "NBA injury update: Is Josh Giddey playing tonight? Chicago Bulls suffer major blow as star face health se The Times of India",
-          "published": "Thu, 01 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "NBA Injuries and Fantasy Basketball Impact: Nikola Jokic, Josh Giddey, Austin Reaves and More",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZWYtTnZtVnFXX2gzTmVGa1g5MmZEVHYtT011elR2SnhWSTBQUHpKUWkzOVZXRUFGZzdDZ1N4WmttSmNOVmgwazlvNDlzMnlBaWwwc0xRZm9wd280aDF4SnJ3dGhzXzZHOTdFWlJ1WnN3amh2bHItZXY1dXVWT3ZlRFU3UGdVQnE5U2l3WDlB?oc=5",
-          "publisher": "FantasySP",
-          "kind": "article",
-          "snippet": "NBA Injuries and Fantasy Basketball Impact: Nikola Jokic, Josh Giddey, Austin Reaves and More FantasySP",
-          "published": "Wed, 31 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Is Josh Giddey playing today, December 27, for Bulls vs Bucks?",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbUJ2MTVTNHpCU1BKWHdSTERxVlA5LXJsbFp5SGZjdHZ5RF83QW1zS0haemNEUkpMdUdnNW1yVzJtY1VBS1lrQUZkUXVfMlowRzlKYWc4R1kyaVlLeDRkM2pfam1UaTNab0lYU1RFY1FZd3RSU0s4anVvWGY5ZVhrWTRrZ0xhZHdFREVCbG4zSdIBlAFBVV95cUxQTTFfdmhqa2d3cmlzdXB6Nk10TmVzaFpndDZ5WlFNalRPVWl3Uy1pbzQ4YWZzX2VzOVZ6UzNic2hFdlBXUWNQN2t3TlN0M1lBSmJPTXB3b243U0VSbGlXZmcwbEp0SVhYUlFTRE93elBQN0EyYlY5WkdRNnd4UEpmRkZLVHkxZDR4Rjg3dVFVWXZ0TW5K?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Is Josh Giddey playing today, December 27, for Bulls vs Bucks? bolavip.com",
-          "published": "Sat, 27 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Chicago Bulls Injury Report: Josh Giddey Downgraded, Heat Missing Multiple Guards",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPR2dVRExWU1lzaWVNNk1FalFRRmZuVXJnQnRzQnViMXNZNnpLV0FnM0FMWkhWMXZNaVVVR1hLTzNNZ25tczRFTlNqMzkzdDZTeVJGV0ZUVHdmdjg2R1VCNGE2LV9KYWpqTWwtSElVOTNUSFRwR3c0Y01kVFpfUW1ZR203YkxFZFNUODRLb0VyeVBxZE5ZVkc5eUhUWENUYzRWanV3Y25HdEJodw?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Chicago Bulls Injury Report: Josh Giddey Downgraded, Heat Missing Multiple Guards Sports Illustrated",
-          "published": "Thu, 29 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Chicago Bulls Injury Report: A Big Step for Josh Giddey, Nets Rule Out MPJ",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQmVlby1yTmEtZWZ0RUpIZkluMkVfU2R0a09FMWx2SXlTeElrOGVhRTlvSHVaQjJGMDZQZ2N2OE5RVDYtSkVCMWhUazlSSTF2cUpRYjV6Q2l4bkxCWnc1UXJhd1hGVzlZLUdLajNFS1MxSnN4dlV5MThtRDh1a0xoVnJUSjNhY0ZoaEhCU2lydlZ6LTdyNG5nZnEyTTJkcFo0dW41NGZpQXprWU1WSko5OWM0dnNaclVTTlJaQmhqdE51UQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Chicago Bulls Injury Report: A Big Step for Josh Giddey, Nets Rule Out MPJ Sports Illustrated",
-          "published": "Sun, 18 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Are Josh Giddey and Kristaps Porzingis playing today, Oct. 27, in Bulls vs Hawks?",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSjZTbnJLd1puWHpMLXhtbU1fLTR6VDVkSUU0OWdxTG82elgzUVJOOEw3NVpDaWtjLU5ic3pEcmhoeHpFaEtwUmxzQUJwdlBLdWFBMk9JN002ME8tczlkemJsT3hSdGhsNi1PZEdUX0FlT3Z2eC1lTTREOHlua1VfVWlQQW5wRThxTnNVcGVmWFBmcUFmemRMZmU1UjI1T0ZvbG9nU1R6c9IBrAFBVV95cUxNTkxDaDVETUVPVWJlM2NCZUU5V09HdUkyUDNvVjFjbGRpcFh6anRubDJUS3A0Tk9yNm9JaGYxcERFNDFrc1ZfZ0JaN2dBSDVWNnZadmNBdVpuVDU2YTdGRF9yX0p2Y3RIVXlqNEhtdlJvbElsRVBMMXJKeFc1cnFwTHRhMlc2ZkNpdFBtUUZtVFg4RDBQNVdRaWVPalVpS2xxS3g0M0htemVjbUNk?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Are Josh Giddey and Kristaps Porzingis playing today, Oct. 27, in Bulls vs Hawks? bolavip.com",
-          "published": "Mon, 27 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Why Josh Giddey isn’t playing tonight vs Detroit Pistons? Chicago Bulls star's heath update and status re",
-          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQMEZPXzYzSjlKZjUyOHEwbExTUXpmVjJWYXlHeUN5cTlkVU8wYzJEbG13c3pKSTRERkZoUUVMeU1NYmZLaFM0bVVfZVpLNlpSQWNNLVJ5c2dWeHoteUd0cXVkWWxhdWlsTXo4djN1VV9MT1dkdmREWlpfSnJDdm1FY2dDRTV4eVVBVXhHSFZEc05jX0QwaVFsd3lqSEhNY3BUbm1sWnRVSW5KUExyc2NhdXBHQlk3UDhhYzcwSW9meHBOUVA1Wkdwb3M5YmJ2MVVJTnVUMms2V201bUt3ZlNZR3pGMnlPWDg4ZVZHQTVZZTRPN3o0Um1RU0c3Zjh0VlZkY1ZqNjBDWnpfYXhDeDZNS3FlUDBGNHZKd1Vpc3J2Ym0wLTZqSmN4WU15b2zSAbICQVVfeXFMT2RldDZGYXdPZGpJNHpPRkgtQVZDMjdvczZ3UzIxNnBvUGZRbkwxSVZjTklPN09TV29lVS16TUV0WlAzSFZGVlZIOE84ekhzaXNmQlZyRVQ2aGVCR1h6cnpUV0VZd0xFYTZydm1yUUY2Wkp2QzB6Vk1TcGdraEFRZ0o2YXo5anlpWGw1dktuNDRjc09QUnYwMEJKc3VnaXNJREpMUVFpaXBPa0FoUkRtOFpoUGZ5N19TV0lyTXlTTUg1Qy1QN3VwNlRBZHJscUliNkRNTzZJbjFrb2JkVVh1NUdwTjRwdE9WM0UzeEtMYS1LQ21qYVV6NncyM1o2UkVfUWMtdlFzNEFiUGxQRUtMWllxdkM4bUVSZjZQOUFfcnB0V3JwWVFmQkRCNEpMY0V0a1Fn?oc=5",
-          "publisher": "The Times of India",
-          "kind": "article",
-          "snippet": "Why Josh Giddey isn’t playing tonight vs Detroit Pistons? Chicago Bulls star's heath update and status re The Times of India",
-          "published": "Thu, 13 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Chicago Bulls Injury Report: Three Players Upgraded, Including Josh Giddey",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQjdYampaNDRyZ3habkxiLTgzM1RUOV93d1hOYkRZUm16d055RWpqYzktVDc3TDBiUzkzQm0xcHVoU0NTTWJnZS1SRnR2eFIyS2EteFBjaThJM1I1S3QxRlBEZUlSYmk4b1VPNVNHWF9NMXRNdXdpU3JlQ0hQZTYyMWFVenVRTk52VjNxSmRwbE84U3RpRFYwUXZzaHlfM0hFcjdqUldRM3V1dUZSd3ZCWEF4ME4?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Chicago Bulls Injury Report: Three Players Upgraded, Including Josh Giddey Sports Illustrated",
-          "published": "Thu, 19 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Chicago Bulls Upgrade Josh Giddey Before Meeting with Knicks ... But Should They?",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQel9ZajFtQ2FLXzYwdkhPQk5oMVNKMDJDTEVlZHFJajVIYUVnZVZBM2RCdGpFQ0xEZU50WXA1U2RUcjMzZlNYUlFkSU1pWm1fR2l5M3NLRmJPdFAwcDJUVkNORXZzQ0tLX2VXcEEwN2E1V3NFUUVHY0J3LUxWWjFqY001UF9uX29STGlrOWtjeEg4WkJGSTc4NVJHdm5GRnAydW9n?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Chicago Bulls Upgrade Josh Giddey Before Meeting with Knicks ... But Should They? Sports Illustrated",
-          "published": "Fri, 03 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chicago Bulls Injury Report: Plan for Josh Giddey vs. Boston, Tre Jones Out for Weeks",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNa2NNODdtMW9kUWR4Mk1vUDVZWnRtSDRXdUlHVWFMSGxXNVVqdngtb05rbHJRamJIVy1LVFRaYkV3VFVtSkc4SXdvaGQ3VVVucDU5WTJ5WmpqOHd0Zk40VnpST05SVEh1N3J3QVBKV3dvZzR3NkZkQmpvYXlZWVpDbTdkdk1CMWs4S3Z0akJ4QVhaUnk3SU9DMUdKbE5yaDdBM2p6ZWRnZWxEczNXWU9aMA?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Chicago Bulls Injury Report: Plan for Josh Giddey vs. Boston, Tre Jones Out for Weeks Sports Illustrated",
-          "published": "Sat, 24 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Chicago Bulls Injury Report: Step in the Right Direction for Josh Giddey, Tre Jones",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSlRaY0lSYlczeTcxd2VRWDdPdzhxWm1RRkFlNE0yWkRMNjRyTFIyR2RwVzJwckRHdERzeF9aMHJacDhKNUJPLW11MDM4LUdXXy02R3BqZFlYVExJbURDYnNnMEhtN1dTV2FtSGJGclVuUjVOdk9QRldldkhxRm5CQ2VIV1p5TkxTd3JTQmQ5eDdZREtfX2NEekttWWhPa1RfOU91M29ZbkU3NXQ2cVBMMjhR?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Chicago Bulls Injury Report: Step in the Right Direction for Josh Giddey, Tre Jones Sports Illustrated",
-          "published": "Mon, 09 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Chicago Bulls Injury Report: Josh Giddey Update, Isaac Okoro Joins Long List",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQ1ZKY0xNYm5wRG5yN2tEcG1Nc2Nyb2pyZmUtZmlWZi1RN09JakFhV0pCMEFXMVN4SVhhVERCc21FLVRFVnNheVoxRlBnaWw0U0RnVDhjYUcxWWZPYzBrYXdyLTBuOEs0VElnUzFUUXdfWWJqcXJ1MFVEN2tnMTNaVDBFbDlaZ1p2bWdGMGd3eVdncXVCMVJFNGdRTXdrcFJRdk1GTjRIeTdiU2VLa3d1R0Npaw?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Chicago Bulls Injury Report: Josh Giddey Update, Isaac Okoro Joins Long List Sports Illustrated",
-          "published": "Wed, 11 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Sources: Josh Giddey Expected to Stay With Chicago Bulls—Can He Become a Fantasy Star?",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdHdqQ19vbkQ5ZVBVM2FfMHJPTmVfb3lIRmJoVlpUMUFYRXFMOGRXcDNFOVRPMjdycU1QZTFTeHJWcjdLM3VMaC1RdHJXbmdqcTNEME5WM2lQVmFpMExSTnB6SmNNRU1VWUtTS1JFcjRleTlhZ3BpUVIzN0FXLU0wT3FTaGQwQ1loWFlvNk8xenJDc3RGUjJIUy1hbGtIazFNblhIZFpvcko5WWstLXVNbUxRZ3J0RnpoQ0g1Yw?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Sources: Josh Giddey Expected to Stay With Chicago Bulls—Can He Become a Fantasy Star? Sports Illustrated",
-          "published": "Fri, 08 Aug 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Josh Giddey / Chicago Bulls Standoff Heats Up NBA Free Agency—and Messes Up Fantasy Boards",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPM1RPR2NUUnBaMm1LV0VLVUlsQkFXWk1jWnRmdlZ4UTFuSGwwQXBMRm5oc0pDcWg1eUVtcGJpUDJTZlVERVQ5Qm0wUWR1M0xnQmdISmJvQ2U5NHlfazJ1VEdESWppZmZxbDJqVW9kQ3V6QVJaSTBLMDZhREk4NzhVMGtURUxWMy1IY2lHTVVDemx6dW8xSS1SSlpDQ21yTzJPUzVYRGFYQ3hCajBhTkJ4aEpNNHU4M3duOVRDVUFGQ2ZvZw?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Josh Giddey / Chicago Bulls Standoff Heats Up NBA Free Agency—and Messes Up Fantasy Boards Sports Illustrated",
-          "published": "Mon, 07 Jul 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Chicago Bulls Injury Report (Mar. 6): Latest on Lonzo Ball and Josh Giddey's status",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdVVQT2NPZXN4WFhVdDN1RXJIQ0tlbkhXeERRWlFQZVR4b2ppT1dLRWhRbW1wR3k0dHMwWkU5ejk2OHlIRURPcjU5dDdvYm1OMzAzWkhFQzFBSHY0T2hXX3pkYUlSVVRaTjRQSTlGVzdudVlzblNvZ1Q2bDlBTWZVQkJQb3BLcVRGblVjaXdPWEJIQVg2VEZNY1Fnc01FYlBiLUFoVDhmN1VlbHdmS1lDZ3EwYlAwUGs?oc=5",
-          "publisher": "Sportskeeda",
-          "kind": "article",
-          "snippet": "Chicago Bulls Injury Report (Mar. 6): Latest on Lonzo Ball and Josh Giddey's status Sportskeeda",
-          "published": "Thu, 06 Mar 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Josh Giddey's Injury Status for Chicago Bulls vs. Dallas Mavericks",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQLVZ3aUJiZndOYlA3THgwcTdPWWZhZDdzYm5wM29vZ0FjNEFGcEE4WV9RVDF2c2trUDhrTl9STERTaGo2M1U4eGNoaFoxOElnSmNiVVNLeW1YODZhNExnclZFaTg2Yi1fUFQyZ05aVXYwTUIwNmpXSWZ2TnhXb1VuUWdQTW1GRTNUVDRYMW82eU0xZTlLLXRUM25EQkdRQmthNjhjZTc2bWp4TFBIVkJMWURiTzZtVUJh?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Josh Giddey's Injury Status for Chicago Bulls vs. Dallas Mavericks Sports Illustrated",
-          "published": "Wed, 06 Nov 2024 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "domantas-sabonis-playing-tonight-injury-betting-impact-nuggets-a262d4d1",
-      "slug": "domantas-sabonis-playing-tonight-injury-betting-impact-nuggets-a262d4d1",
-      "sport": "basketball",
-      "headline": "Is Domantas Sabonis Playing Tonight? (Injury Update, Betting Impact for Nuggets vs. Kings)",
-      "blurb": "Is Josh Giddey Playing Tonight?",
-      "summary": "Is Josh Giddey Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Kings Announce Domantas Sabonis' Injury Status for Thunder Game Sports Illustrated Aggregated from Sports Illustrated, The New York Times.",
-      "category": "injury",
-      "published": "2022-12-29T08:00:00Z",
-      "updated": "2026-03-05T08:00:00Z",
-      "players": [
-        {
-          "key": "josh giddey",
-          "name": "Josh Giddey",
-          "slug": "josh-giddey",
-          "pos": "SG",
-          "team": "CHI"
-        },
-        {
-          "key": "domantas sabonis",
-          "name": "Domantas Sabonis",
-          "slug": "domantas-sabonis",
-          "pos": "C",
-          "team": "SAC"
-        },
-        {
-          "key": "zach lavine",
-          "name": "Zach LaVine",
-          "slug": "zach-lavine",
-          "pos": "SG",
-          "team": "SAC"
-        },
-        {
-          "key": "jaylen brown",
-          "name": "Jaylen Brown",
-          "slug": "jaylen-brown",
-          "pos": "SG",
-          "team": "BOS"
-        },
-        {
-          "key": "dejounte murray",
-          "name": "Dejounte Murray",
-          "slug": "dejounte-murray",
-          "pos": "SG",
-          "team": "NOP"
-        },
-        {
-          "key": "victor wembanyama",
-          "name": "Victor Wembanyama",
-          "slug": "victor-wembanyama",
-          "pos": "C",
-          "team": "SAS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Kings Announce Domantas Sabonis' Injury Status for Thunder Game",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbEc4ZXpMSk91WHo2bUpJQnNIMlJNOVZHLV9JYUhRMW9GLUlRek5pamtENXZLTmtYTTRjbC1aRTQ5NVVFbWpsaVY0V2xOOFVuWll2VWRVejZsTXBGeUNfakVkQlZ2OHA4UXkzVldTTVdIYkU2UTdlUFo1QmxPTmdIeEpycmc4UEpBWHZPaWFJMjdwV3NDdU1obWJ0MGF4WnRrZGx4bWlfX0hsTUJ0OHBoZy1ZUkhnWTRreWc?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Kings Announce Domantas Sabonis' Injury Status for Thunder Game Sports Illustrated",
-          "published": "Wed, 19 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Is Domantas Sabonis Playing Tonight? (Injury Update, Betting Impact for Nuggets vs. Kings)",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOVBvN3ktcG5MZTZ5NlJDcTFXYnFsUHA4RTBkSTFkMTh4MDNJZTlscGhrYWVtYkRjcHprdzRQUkIyTkVQeThpTDdCNnlZS1NqaUF0U3hXemVBZVJKUXA0T1Axd3o2QTRtalpURTJXcHdCVjhWbko1Vl96NVpaQ2JzZGNCRGhxZi01bFZPeHNaZFVOb2pMeGFVU3BfdnoybjRkNmc?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Is Domantas Sabonis Playing Tonight? (Injury Update, Betting Impact for Nuggets vs. Kings) Sports Illustrated",
-          "published": "Tue, 11 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Kings Downgrade Domantas Sabonis' Injury Status for Pelicans Game",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOM3otZE9iTU5OWnZ0U1U2MV9vUEhhQTRMdmtQMG84YmdYNzU0STI1MmZQV05NQmZJaHJVc2xndDNYOXRhZE5saHJvcmZaOExpR2h0eTF2M1VvRk1SZnBqRDlsZ3VHdHVPLWgxT0F5YW1lbzJieW5pT3A1akc0V094d2N1ZFVEYnZIMXdUSWJyUXBzaFhYOFJtTFpEbFdjcFA4c2cwN29sbmtmQXJiY3VvQzBQTXU2SUFuNmlSZV8tSWdKT1FpZWhMSnpYZw?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Kings Downgrade Domantas Sabonis' Injury Status for Pelicans Game Sports Illustrated",
-          "published": "Mon, 09 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Kings Announce Shocking Domantas Sabonis Injury Update",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOGN4ZkpZZ0ttaWZOaDl5azBVM0Nna0dERHlTS0w0eVlPdXpwOU1vTFFUMXczeHRzTkFtRTVfZXA4UkVvT2RsWlRSalc0ZzUybTcyZV9JYkhHU2FacTMzN0JVN1AtTlVncmJWdklObzNDaGtaVjdUcmdtMTN1U2VfQWR6R01DNHV4MTFSS3I4WmhMMzhPcmtFcllSNTFQTFRDRTloS3VBXy15T0I0MXdV?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Kings Announce Shocking Domantas Sabonis Injury Update Sports Illustrated",
-          "published": "Sat, 20 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Kings Announce Domantas Sabonis' Final Injury Status vs. Thunder",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYzBBRDQ4dE9vbHhGX0hhLWV4N0VIeU0ycFlNM3JHaTBrclE2VGY2WDd6bmw2RnJGeGlBSURnQjM0SnhPYzR1Z3kzWTBydG5PaVlPM0RHTXI0WXk1VWdLemZ0NG1LUl8wb3ZkWldzS0NLekpWYmhRcW9PeVdtT0Roa1NtWUVRcnp1N3NRbWJBVW0zSkloS2JZZEd1eDdQem00SnRYaHlrOS1Uc0Fyc1FybUJ4ZUpjTFRqcGc?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Kings Announce Domantas Sabonis' Final Injury Status vs. Thunder Sports Illustrated",
-          "published": "Fri, 07 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Kings vs. Celtics Injury Report Reveals Jaylen Brown, Domantas Sabonis Statuses",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQekQ0Sk1GRHlhVHpyWW5sd1ZmLTY0ckZOZVlzeF9sOVJOS2dkbmtMVDBSN3dJRjFHRGl2cDhUbHVDN2dHaUNRdnJtX3MwaGpJcEpvWlptdkUycXFLaURuZTVBcUcxWVhmdEdTWDRGZ3NLS1NWczNtR1IzZENlZlR2WDZRcXJyYWZ5NG1qTzMtR2E5UThGZGVUSFJGMVhwMnVWQUJ4dndjbWJsZXZjaGF2UHdkR0o0ZGhBSkRDUEhJbmFZTTVvTVJ0THFXeE9maDRtRDFDNV9uWXRFNFU5d0YyQ3dB?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Kings vs. Celtics Injury Report Reveals Jaylen Brown, Domantas Sabonis Statuses Sports Illustrated",
-          "published": "Fri, 30 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Pelicans Injury Report vs. Kings: Will Dejounte Murray & Domantas Sabonis Play?",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT2I3dnNPRWNGd1lUNjRxcVVYNXY2LW1FMXNabWE4d05xUU5BLW1BZ3ljVjJJQmJ4WDhOcUJPSlFxSFdJejl1TGY2WDlGQTR6YXlRMzZlS2JBb0YwTXVVeXRNNl9EaU9OemM3aFZ1bHcyQXpDcmJ3NW9fbGtobVFVSWIwM3ppaGphTzBkYlFTYjdkUmtsd0ZmaTJMWFVpWFY3REduQmliaEVmVHVoOENCdW1PRUtlX3BNbjNpNEVKbnZPTTdU?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Pelicans Injury Report vs. Kings: Will Dejounte Murray & Domantas Sabonis Play? Sports Illustrated",
-          "published": "Mon, 09 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Kings vs. Spurs Injury Report Lists Victor Wembanyama, Domantas Sabonis",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQREhYMElpN2dCU2tGcGpJSlV5QlZHUlRwSmg1ODZFWHpGOWFBVHdiU1BaZDYtaUdwNDJucGhTbF9CNm11Y2ZRdDNKN0pNcXVsTlR2MWFsZEc5VFFvX2ExLUpSZmxPdDF1VE1FazBlYWs4WG9tSWNCUF9qYXNtSFpxNHQ3eGRvMDkxSkR4NDhZVnF5OElXMUJna21WeGJhd0NMZzBzdFFJYXFIT3NmVjQ5alVpa0hJbzM5dEZSbEVFMWIxcmc?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Kings vs. Spurs Injury Report Lists Victor Wembanyama, Domantas Sabonis Sports Illustrated",
-          "published": "Sun, 16 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "How Domantas Sabonis' Devastating Injury News Impacts Kings' Outlook",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdDFoNC1QTXhHcllWMzZCZ3o0T0lxVC1RYi1qNUxfazZqeU55X0ktVjNDbTNpcU1yckVWeHZvQjVtc0lsbXBuc3E2WjBIU3k1WmVPZDBhWGIzNFFnMG5veTdTbzl0aFVsSTFVcEl6a0tabWVwV2t6TFZXQnN5NDFjQlU2dk12bzBQczV0czRzWWtXeVVralRITnhDMVJicTBiUWF4M2pOQUpLdTAzLWJwN3lRSC14N1VGTlh2M25mRQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "How Domantas Sabonis' Devastating Injury News Impacts Kings' Outlook Sports Illustrated",
-          "published": "Thu, 20 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Is Domantas Sabonis Playing Tonight? (Injury Update, Betting Impact for Nuggets vs. Kings)",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUGRra3hpWVowSy1ScmpZekJaVnF4Znlac1BmVkZWS2ZCeEcydmhCcUpWRmJLQWpfUkxvLXl2MHFsbldCRF81cWxLZXc3TlAwNFVkS05NMXlBaFBKUTV0YjVva3pvakNTOV9HUDRfU3oyUy1kTU5EODdsVFhHSVR3ckNiX1JLWkJaazZOd0tJQ3FOSHV0dUJHag?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Is Domantas Sabonis Playing Tonight? (Injury Update, Betting Impact for Nuggets vs. Kings) Sports Illustrated",
-          "published": "Thu, 11 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Is Domantas Sabonis Playing Tonight? (Injury Update, Betting Impact for Kings vs. Pacers)",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVXBlZTdGQ2pReE1DVFpMNV9fT0UwRXVBQ1VrMnF4QmhkRXZzX1ByWmtTaFNwWWFvQ2JlOW5DSng4X19JZEl1b00zLTZMelN2cThLZFVscW8xWTBmYlBlLW9NOXlVM01nUVdEN2JuQWQwWVJySHhmc0QxcGM4eGlpQ3R6VVA4NlVaY0ZUNmhOZXpDVlpWNzdz?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Is Domantas Sabonis Playing Tonight? (Injury Update, Betting Impact for Kings vs. Pacers) Sports Illustrated",
-          "published": "Mon, 08 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "How Domantas Sabonis is playing with a fractured thumb and keeping the Kings afloat",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPM0tjTXppNHFCTGRWWnhCaHJfOE1fcVRlckdXV3ZSQkNMR1dXckhNcjhUUW5DYm9iNzlLVXQtUjh5SDBBU1RYaWtDNmM4UzBEOTB4VlZlQlhQclFHSU4zNTJnRzEwcVl5dUNKa3lCQjI0VWl1UEFzQVEzTDItSHRQcDhEYW5VbEtTSzRCYlZ2MFJ1cjNsbUZXbjIzX213WTFKdGFwZzdn?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "How Domantas Sabonis is playing with a fractured thumb and keeping the Kings afloat The New York Times",
-          "published": "Thu, 29 Dec 2022 08:00:00 GMT"
-        },
-        {
-          "title": "Kings Stars Zach LaVine and Domantas Sabonis Receive Injury Updates",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNlVObXJzOVVURDVtQ3cwdFFqTURZbm5iRHlZZTd3QWlwNjVqVU5OaXc3RDJqcWdFeFowejN0X0hpM2Z2YlZsdXBwRnhQX29ISnFlTmlMeUZydzVvYm56T0dQR01HVThCVW5JN3Q3WC13bTdGWGFQZmRVT3lQbnBYMzRERWRkNFBpNy15MGJudk1zdE04TC1HQnBHZ2h1dUJ2a2ZwT1FONk95TkRwVzNvaW1uY3ZFd0ZDRFUw?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Kings Stars Zach LaVine and Domantas Sabonis Receive Injury Updates Sports Illustrated",
-          "published": "Tue, 16 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Is Josh Giddey Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Suns)",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcy03R2xjS2lqZFE1YWhGdGJqYTNiSjVYcjZ4SXpnRnhNVzQzeFVYQnFRSk1XR2xNb1N4RDV4YWlDd3MzaHl4SW1rSDVfN2RBLXRsUEg2WU1iUnp4d3BueFlINmphZlFBSzRleVdWUmx5TEVQOHQyYV9sVElvRGRyMU5TU1FGTEYzblBFRFRVMEFodTRObTdsdA?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Is Josh Giddey Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Suns) Sports Illustrated",
-          "published": "Thu, 05 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Is Josh Giddey Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Pistons)",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSWo0Y1N3LXNHb2FsUXBfdGJ4bnQ0Q0RNazQtRG96eW5uNkFoX2dpSk52SU9GaVZrRXg3dC12SGV0eDNiVzVNR1I3SlVxUUFnNC1rbVZwaWI2V1U3ckZyZEF4R2RiN3I0Y0JHVjF5YUxKZkRXbjI4ZG1fYW9HS3dYdHBwdmpHbUFqN3p2MmJpclpSUQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Is Josh Giddey Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Pistons) Sports Illustrated",
-          "published": "Wed, 12 Nov 2025 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "brandon-miller-injury-charlotte-hornets-star-set-miss-3a307eb4",
-      "slug": "brandon-miller-injury-charlotte-hornets-star-set-miss-3a307eb4",
-      "sport": "basketball",
-      "headline": "Hornets’ Brandon Miller undergoes surgery to repair torn ligament in right wrist, out for rest of season",
-      "blurb": "Wizards’ Bilal Coulibaly undergoes surgery to repair torn thumb ligament The New York Times",
-      "summary": "Wizards’ Bilal Coulibaly undergoes surgery to repair torn thumb ligament The New York Times Hornets Dealt Crushing Brandon Miller Injury News heavy.com Hornets' Brandon Miller progressing toward return from shoulder injury sportingnews.com Aggregated from The New York Times, heavy.com, sportingnews.com, Yahoo Sports, Sports Illustrated and 2 more.",
-      "category": "injury",
-      "published": "2025-01-23T08:00:00Z",
-      "updated": "2026-01-29T08:00:00Z",
-      "players": [
-        {
-          "key": "bilal coulibaly",
-          "name": "Bilal Coulibaly",
-          "slug": "bilal-coulibaly",
-          "pos": "SF",
-          "team": "WAS"
-        },
-        {
-          "key": "brandon miller",
-          "name": "Brandon Miller",
-          "slug": "brandon-miller",
-          "pos": "SF",
-          "team": "CHA"
-        },
-        {
-          "key": "jakob poeltl",
-          "name": "Jakob Poeltl",
-          "slug": "jakob-poeltl",
-          "pos": "C",
-          "team": "TOR"
-        },
-        {
-          "key": "cooper flagg",
-          "name": "Cooper Flagg",
-          "slug": "cooper-flagg",
-          "pos": "SF",
-          "team": "UTA"
-        },
-        {
-          "key": "alex caruso",
-          "name": "Alex Caruso",
-          "slug": "alex-caruso",
-          "pos": "SG",
-          "team": "OKC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Hornets Dealt Crushing Brandon Miller Injury News",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPT2R1aEFQYkVsTWNqcEJFb2pSQ1VESDU4c1U1enQySHR3SUs1ajlQZWR3WFNlOFhpejBlUG5JSkN6OTBLMl95UDlsYUNmNVlWMGNyY2F4cER6U2ZqVTRLYUJBYlJock1kMGdUSDBCLW9rUE1NbE1JLWowOXBicVBfMm1QNld3bGtEZlgzdkQyUGgzUTVwVkE?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Hornets Dealt Crushing Brandon Miller Injury News heavy.com",
-          "published": "Mon, 03 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Hornets' Brandon Miller progressing toward return from shoulder injury",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNU1U3TEFxdldweVR4LVZWRFBOcnBVbWU5ZksxLXRiLW1KQTJXS1hXNmdfWnlRRkgxUk9rZlk1dHR0TGl5OUxmY0JZOFRzZS11YkNKbkwwVnpPNHFEWk1sUUIxaFE1THdlWVJsNG1vamMxRGxCenIwY0dORWJ2M0txUnJMcnhoSzNKMjh0eW5admtmU1RYMUpkVEVtaE1oQzduMGFwNnhaTGtQUVRkNkVOR2ZCZ3hlNngxb2pFa3dRTzg4NUJCcTRQZ29FbHpaSXJvZ0NCaWhn?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Hornets' Brandon Miller progressing toward return from shoulder injury sportingnews.com",
-          "published": "Mon, 17 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Is Brandon Miller playing tonight? Hornets vs. Mavericks injury report",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaEZzQ0lZQW5KQk5hcnZnMlM0WVZDMkN3X21qaHZYQmtDc0IxdzljSFN0ZDVlZlVQT0NzU2Z5VGtjZS14LVJCTnJZamF6aUtJR3dzeDIzZ3E4VHBMdjVUWlE2cFMyaUxxUFhsWEc4c3pHTVlnRk8zTjJEdnJ4dGlXc04zeTFlejNuZXlZdktLY2Q?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Is Brandon Miller playing tonight? Hornets vs. Mavericks injury report Yahoo Sports",
-          "published": "Thu, 29 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Hornets provide massive Brandon Miller injury update ahead of matchup with Clippers",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQmVNSkM2aF9vZzNXcnNWT2lwVHVhQ0x2N0M1Ny1OSVlFY1NDRy01R0NTNl9XV3pYb2ZBSm9zalo4SXlCelRVS0NNOVJCRjZaZ1hJTy1pTDV1eXhjYllmNlMtQS1NUjNnSHNwMjcwSXZyQzVlVFdmenVQaUhxanNuWWpfSHZPVGFPNEE4WWNHdzVQWmtkTVkyOVpQSzJ2X0hLekk0dGo0d0N2U2h6M085ZDMwUkZmNFZOT3N2Qi1oNVhoZw?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Hornets provide massive Brandon Miller injury update ahead of matchup with Clippers Sports Illustrated",
-          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "The Charlotte Hornets get crucial injury update on Brandon Miller",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc3VGZGtpWno1dGZFbDdkWHJrUEI3cWNyWEdFczhVUXQxdHg2Nm9GMjVnNF91aWZ5YzdHWGJad2JOQjRybzVaRTB4RVFRaFB6cWJ5QWNQTjBfMU5INENBb0NLRlJjRjVDaUFIMm56THlUeFloUWhEcDg4WEZpcXVvQTUyR3hFelRxUmdiR3FveHRXbHNyY0NvR1lmTm9DbEd2YWVYSXFRRl9wQQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "The Charlotte Hornets get crucial injury update on Brandon Miller Sports Illustrated",
-          "published": "Mon, 03 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Brandon Miller’s injury would have doomed the old Hornets, but not this group",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVkdVVGhiMWVHNWdsRHEwZEdROF9pMWk4R2JUY2t0YVNTTi1MajYycUZMSDdhUGZ4OEkyeTZKTzBkemVNazRUMFZEc2YycWRVYUh1RkQxV0diWG9leWR3VXN2emt5Y1F1bXBaREhtZWlQd205a19aaExvYkdacFFlZ3RPNTR2RldaNktRc3NHNlJJbWVMTFdGblY0cjB5Q3liS1MtN01LRHY4Z0xFMnhRUW0xeW5ZMDAx?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Brandon Miller’s injury would have doomed the old Hornets, but not this group Sports Illustrated",
-          "published": "Tue, 28 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Brandon Miller injury update: Charlotte Hornets star set to miss Wizards contest with shoulder ailment",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTFQ2V3JYbTQ2UXhVZWdfV05PZXJncFNiY2h5aHJlLUVSNVhmZVlWV1BjMmd4Wl9ZS2g4QVAxbVBpRDJtSGhkdzlqdmRvNFlDek4za0prVFpNdEMzeWZCdW1sUFZvVjh2bDRQZWNWdkJySWozU0J5bDVkbUs0RGxhaE1zdkJ5dXFZOVRWZS1GeW9fYUpqMm81Yl82Qmt4M1d0amNEb2tUeVl4LXZWQ2x5X0JGV3VKOXpNMUtnMHhRNEdHNWM3bTF2cTVIQkVNamRudk1QOFhuUkNkZw?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Brandon Miller injury update: Charlotte Hornets star set to miss Wizards contest with shoulder ailment Sports Illustrated",
-          "published": "Sun, 26 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Brandon Miller’s injury revealed: What it could mean for the Hornets and the rotation",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdW9oam9kQjdBQ1VTel9VdU11WWJxVjFzaklqUF9wTkJkak8xMU02eF9BNFc3WE5CSnExdXdWakpScDBMUllYdFljRVM0Y2V3d2p4SWFLcHgwU19MbTJRcG9Oa01wTWk1Tm8tU2JFMjh5dERGR3RTT3Uxbk5TVmlraHk1eGF1UzRwamxLaTRPM3YxTnNJZ3FZYjlUUHVqSWV5VDljMVZMZkJ5SWNtaVF4eWJ0OE9qX05hbHRJUzNsREZoZ0U?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Brandon Miller’s injury revealed: What it could mean for the Hornets and the rotation Sports Illustrated",
-          "published": "Mon, 27 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Hornets give massive Brandon Miller injury update",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUXFncXpNRE1WdDk2a0NDNW9qbDdVVEcxTjNyd2NiQmFuQy1EMnd1cU5sMDVFR1pVM2hXSDYweTBfZDdVd3lQdXdObTNQQU1FTjMxeWNzVFBlNHBITy1zS2xoaENvVUxPcFJuS3FOdUZ4eDc2ek1wUmR3QXV4R0J0VzlRNTRud1Frc19xTE1jaGFYSFBZ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Hornets give massive Brandon Miller injury update Sports Illustrated",
-          "published": "Tue, 30 Sep 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Brandon Miller reveals update on shoulder wrap amid injury woes",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeTF6NmdsTlpZVkJZU0ZNT3lHTWxWdEM1OWJCalpVcHZvbklpNTJDWVpNZFQxQnpKQWgtc3UwWGtGSzRYNno1WVcwVmliVVpBbjBKRm9HNmtMcHVSMmk3MmNGdnh1ak1OZ0Fib2dvNjVQYVBfYlBWTFJNY0dTTEl3Nm5vY3czdFpOSk1fYzhWM1ZxLXdFYlZBeElTdnNMWVFKQ1BUZTd5WQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Brandon Miller reveals update on shoulder wrap amid injury woes Sports Illustrated",
-          "published": "Fri, 12 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Brandon Miller is reportedly set to seek a second opinion on shoulder injury",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcm9JODdnMjF0UFZScTRwQURubjRUSUU0NUtWSDRQaHRTUi1GSG9YSFgycFFIOFpoUWhGaDREVnVWdkNsd2F2dXFGcmVHNWhfX1pGaW95LTdLTVBfcV9VQzA5bzdzZ0VXd1ZhWlM3Y2ZWZHJ3V1RLRDBuWlo4aG1VbVdZbE5oWG1YN1B2alM4aTh2UUlxQjNiVENJT2xTWV91YWxDcTNTRk1sdFEtOTFETjNWRlI5cjhn?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Brandon Miller is reportedly set to seek a second opinion on shoulder injury Sports Illustrated",
-          "published": "Tue, 28 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "One player the Hornets should target if Brandon Miller is out long-term",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbUlqNUhRWW1rU2JMOGpRVEp0MmhKMmtHVlZiX01PYmt3aUZtLTVmeDFmczZialZMek15UzQweEd6OHdXSnlIWWVvVC1FSmFHR0lXbDZNeXo2MDM2LUVNZmNTUnZmMUJLV1Rhd0ZfdVh6c2ozN281TzdITFBjNi1SVjNjNFhJWW1CWW9fN2RUdHNkMlB3RjBnS1A1VE1DTWtxTmh4XzBnZFoxdzc5anRCbmFR?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "One player the Hornets should target if Brandon Miller is out long-term Sports Illustrated",
-          "published": "Wed, 05 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Charlotte Hornets Issue Tough Update on Brandon Miller After Wrist Injury",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOYzdpSHh6S2dkaUczLUtRNkZhTUw3RFMyNWwzVnpWU2gyZ0Z0d2dEaFh6WHJYWVZlN3lkZnVOUmw4bzZFSWxMTVFxYVVxbTRzOXBNb193WFR2emZGOXhOeUFmVDd5RG1kdGhzYTBpcmJkNzVMWE9DRmhwcC1tMnh5NQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Charlotte Hornets Issue Tough Update on Brandon Miller After Wrist Injury Sports Illustrated",
-          "published": "Thu, 23 Jan 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Brandon Miller to Miss Rest of NBA Season With Wrist Injury",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOVo4ZlBOdDdkcHRvSzZFb1RKb0ZMVGdRY09sYldGS1dUeEpYa3QxbUVCSHA1TVBDV0dIWDhUWVNsMXhPVEhhZjN6N0IwQ3FPWUV4eUFNUDBtY09BMWhDVmstS1NHNDBHQWtFXzBkbEhETkRrWWFYT2dNZ2dBLXRoS3FMeG93V3VOVWJscHlOd0ZPTzRIejVNTkZRNWZZR0d5S0dzbzBJSHB2MzRhS3hpUlhPUnItY2F3Q2c?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Brandon Miller to Miss Rest of NBA Season With Wrist Injury Sports Illustrated",
-          "published": "Thu, 23 Jan 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Final Injury Report for Raptors-Hornets, Will Jakob Poeltl, Brandon Miller Play?",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWGhyYXE0RXQzZUxUT1dfZlphbUFoN0wzTW5CYXMxelQ2RGZpbjR2Zzl4ampWVm05UjFGTzBJUUhRZ2l2SGt2TkVKbWU5ZmtCRlM2MkJSNzJsQUtOTjg5eFZycDZYZkFpZi02MkU3UlZXMXZVRnpuZG5KN1ZMTVBjX1RhUEEwRzRGRmhpcVoybTgzRFp2UE0zVk5UY2tCTkRadW84QVkteW5uRXpnTnU2bmRwNkRjbnNrOW9xWUpSREU0Zw?oc=5",
-          "publisher": "Athlon Sports",
-          "kind": "article",
-          "snippet": "Final Injury Report for Raptors-Hornets, Will Jakob Poeltl, Brandon Miller Play? Athlon Sports",
-          "published": "Wed, 07 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Hornets’ Brandon Miller undergoes surgery to repair torn ligament in right wrist, out for rest of season",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdjVfa25hUlVqUVNFRllwd0JKUmQ0d1Rka3N0Tno4M2Q2YzJLN1k0dDhnellCd2JzVmE1cnplRUpBdHFKT2FFcW1wWmxkTUNzbGNtcllLbjlGcmdDZ3BhUVJJN294MGZnNUJlNndDanUwcFlRb1VLVmttam5GMVU4UFhuSzEweERMa3lLMkc1UkxONndHYlpFTVRaODM?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Hornets’ Brandon Miller undergoes surgery to repair torn ligament in right wrist, out for rest of season The New York Times",
-          "published": "Thu, 23 Jan 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Final Injury Report for Hornets-Mavericks: Will Brandon Miller, Cooper Flagg, Play?",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTGdIa2d5eWdwREU5blNVUW5UTDZzWHpwc2h4VDYzYktaVE1CbEQ1NEUxbFgzOHN5eHlCSVgwVjBjZzMyRUNxVVBkbGdMUDlSUlNQWElHWFJ2WHJyOXQzNlAyZ3l4ZjNUdkZ3bXNqV055UlRjQ3J1YTh6Z3BlVHU3UmJaZW1FRmtpX2d2WXZLWmoycDVzUWkwbnBkS0FGdmpBQTZESUsyZ3dvbGppVUkyN182S2t6NUxYblJScC1aalo5QkU?oc=5",
-          "publisher": "Athlon Sports",
-          "kind": "article",
-          "snippet": "Final Injury Report for Hornets-Mavericks: Will Brandon Miller, Cooper Flagg, Play? Athlon Sports",
-          "published": "Thu, 29 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Final Injury Report for Hornets-Thunder, Will Brandon Miller, Alex Caruso Play?",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNDJpLVl4VjlOdmZoZXBVOEk1Ml9GTnRpRmlBUXI3dXpZZDY0TU5GMUk2VTA3NThCNW0zRnIydjNBN1otNmMzVzY4djBtUEhkRjN0dDI4dURreDJVQTNiN2Ixb3doODhoVE51Rlpsc3hSLVhfM1ZTRnoxWlZaNEszeVZrUkFieDdFWUU4YzRLRlotQW5iUjc0OTh6V2ZGUUZMRklmZXo4VTJfSXJrQzFqcDQwcjcwU3poY1pPQXBQYkNROW40X1E?oc=5",
-          "publisher": "Athlon Sports",
-          "kind": "article",
-          "snippet": "Final Injury Report for Hornets-Thunder, Will Brandon Miller, Alex Caruso Play? Athlon Sports",
-          "published": "Mon, 05 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "What happened to Brandon Miller? Closer look at Hornets $49,378,426 forward's season-ending injury",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRE4tc1dnNjV6ODNwUHRQSkVTMVVoNjBuYlhKLVo2bm5BUGtTVHhVeUh5Y2dqQXBVT0R5M3BJX3FLTm5QQzBSSHlrU1J1d3RxZnNGWkZxRTRobVVOVGNsc1ptMWxteDN1TWE1OTgtbGNILWV1Q1drLVd4UFEwXzlmNnRhZDAzUmtXZzYwX3A0Z3ZoNHlKM3h1Y1R1V3A4ZmlnejFXcVZRaUplN1FlX3lVd3RPRGJGZlJyWGJwY19fdkpORU1udkZXUTVHOXh6dTg?oc=5",
-          "publisher": "Sportskeeda",
-          "kind": "article",
-          "snippet": "What happened to Brandon Miller? Closer look at Hornets $49,378,426 forward's season-ending injury Sportskeeda",
-          "published": "Thu, 23 Jan 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Wizards’ Bilal Coulibaly undergoes surgery to repair torn thumb ligament",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaXFOZHIyR21KajZRTGM1bnFFVENWTjVPWWFMV2VNdkNIbmFtankxYWI5YzhMT21EdlVfMVNRNDZvVVc5dTB0TUJsTURUcmhmbERILVhna0U3SFJkRW9vTnU0MUNaY1B2RFhnNGJMNi14NXhtRkVoUEFidi0xS2pXTTY2XzU1dWk3MXpndDdCRFpQeTBL?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Wizards’ Bilal Coulibaly undergoes surgery to repair torn thumb ligament The New York Times",
-          "published": "Fri, 12 Sep 2025 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "lakers-predicted-trade-dalton-knecht-69m-veteran-gamble-2417fa7d",
-      "slug": "lakers-predicted-trade-dalton-knecht-69m-veteran-gamble-2417fa7d",
-      "sport": "basketball",
-      "headline": "Anthony Davis, Kyrie Irving Trades Eyed by NBA Insiders in New Poll Ahead of 2026-27 Season",
-      "blurb": "NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com",
-      "summary": "NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com Anthony Davis, Kyrie Irving Trades Eyed by NBA Insiders in New Poll Ahead of 2026-27 Season Bleacher Report Ex-Lakers’ Anthony Davis Proposed to Land With Celtics in 4-Player NBA Trade heavy.com Aggregated from heavy.com, Bleacher Report, Yahoo Sports.",
-      "category": "trade",
-      "published": "2026-08-18T07:00:00Z",
-      "updated": "2026-08-28T19:26:41Z",
-      "players": [
-        {
-          "key": "anthony davis",
-          "name": "Anthony Davis",
-          "slug": "anthony-davis",
-          "pos": "C",
-          "team": "DAL"
-        },
-        {
-          "key": "jimmy butler",
-          "name": "Jimmy Butler",
-          "slug": "jimmy-butler",
-          "pos": "SF",
-          "team": "GSW"
-        },
-        {
-          "key": "kyrie irving",
-          "name": "Kyrie Irving",
-          "slug": "kyrie-irving",
-          "pos": "PG",
-          "team": "DAL"
-        },
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
-        },
-        {
-          "key": "dalton knecht",
-          "name": "Dalton Knecht",
-          "slug": "dalton-knecht",
-          "pos": "SF",
-          "team": "LAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOclJLc2lQLVRHaU5MOTRlWXFOVGVtM2dPRldwdVRJR3ZGSlAxZ0h6dnpuSldPWjR0dUc3Z1hPaGR6YUd1NEpoSmlYRVJLS1lDRWZ0ZTZ5M1VVc0FrQ2lDS2hiR1Vvd2RKWWg4SmVUTk5LSXJhNXdKZUhiUS1zaU1sTWNiWjNIazkwcFE?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic heavy.com",
-          "published": "Fri, 28 Aug 2026 13:33:15 GMT"
-        },
-        {
-          "title": "Proposed NBA Trade Lands Miami Heat 20 PPG Star Playmaker Next to Giannis",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhcFJiMjVfdV9pVGU2VllXdm8yeVMwMXNNdXNrNlJDU1hYVDFnSVV2ZEVrb2ZYSUhRQmZqdGt4RVNaMEJLU2g4a1hYWndXNGdFa1g1SFpGeGRfNDI5M3pmSl9PQkFZaUt1N2U5ag?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Proposed NBA Trade Lands Miami Heat 20 PPG Star Playmaker Next to Giannis heavy.com",
-          "published": "Thu, 27 Aug 2026 23:36:41 GMT"
-        },
-        {
-          "title": "Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeXZVWEdQbmNKbWlpdnkyeHZ6Wk83ZmwyQ3ptUllEem52eHpiTVlaMWRQOVRmU0k4X0xCMXZuLXZFN3VXQ3VCQ251U0NqeXBRV2x2a2pPWWp0aGF6R0JvQWJuNWI2eE5DM3VKY0l3RTE5R0c2cFN1TU56WHktcWlZeGxjQ29JTDQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic Yahoo Sports",
-          "published": "Fri, 28 Aug 2026 16:32:31 GMT"
-        },
-        {
-          "title": "Proposed NBA Trade Lands Lakers 6’11” Positionless Unicorn Next to Luka Doncic",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQ2xucU1BaE1wNXZCOU1PamZtU2plbXZEaU01UXpCakZoQXo3cXdhLVRnZFhNT2RGSlhwcEhiaU5rNEdLWEZzRmJhMmlNVG5aaDZTUFdDZmpJanZHd1FELW1iMWhkd3dKQVR1eU9jeTRQTURsV1hrU3dWS1BPOEROVlhhUmFFZ2M?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Proposed NBA Trade Lands Lakers 6’11” Positionless Unicorn Next to Luka Doncic Yahoo Sports",
-          "published": "Thu, 27 Aug 2026 02:29:00 GMT"
-        },
-        {
-          "title": "Lakers predicted to trade Dalton Knecht for $69M veteran gamble, ex-Luka Doncic teammate",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdE12TWdxWGlnY04xNVpPZE5tR29MSHdzYzNobDJrd0Z4cFVJUjRHNEtRZXFhOVFySERzdS1KQnN6cXctUkNGNjF0azFUYU1NbXhGZUNqcldORUFNTzFJZG5fby1FVjNDYTFlS3ZKeF9VeXdrVmNVSFh3VF9DRjRMSnc3NXhpdkthd2VEQUp3?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Lakers predicted to trade Dalton Knecht for $69M veteran gamble, ex-Luka Doncic teammate Yahoo Sports",
-          "published": "Thu, 27 Aug 2026 18:27:29 GMT"
-        },
-        {
-          "title": "Proposed Blockbuster NBA Trade Reunites Lakers With Anthony Davis",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQ0pKV05FSURDeWVYSlh3VklCdW5LbEtyekI5YmZQSHI5bzdfNWVyOUI1UzR4Rklxa0ZUWnJDUTlmLVhSR2VJMkRaRkREQ21YT0hyMVItT1JLNG5WbUV6VTN6SEJFM2s1NDAwbDdTaGZjTEdyQVpHWEU5OXhPMkxBMGpoS1cyT3dack45bmRTWHVNdw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Proposed Blockbuster NBA Trade Reunites Lakers With Anthony Davis Yahoo Sports",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Proposed NBA Trade Lands Lakers 6’11” Positionless Unicorn Next to Luka Doncic",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNY2pEMXBhU3U5ZmU5RDhsN1VGWmNwWlpCNWtoVGllakItSjZCZ0x6cFlvSlZNelJwbEprczJrdWc0MVBOaHIzVlRNdzZlalBFUkFMVkJqNnlXT3h3SGpNNGpydkhOZzZ6ZjI5ckJtdVRlVjJTNzZ5djZmb3BZVHJxQ1g3R0p6dmlXeU9FYlV1STYwdGRQVUVTNg?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Proposed NBA Trade Lands Lakers 6’11” Positionless Unicorn Next to Luka Doncic heavy.com",
-          "published": "Wed, 26 Aug 2026 23:30:39 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQVVHRHM3Zng0eWtBTnY2R25VWXRQYkxyWlhlZnRvOHhFcFFVeUFJRU91TFZObTdVZ2kzR19fdFA3dEhQcW04RDB5d003bkppWVh0SU9CUjhzNWhXRmNOaFhhT2xWTVpLSmQwNEV6Y1Y1aGViWjl5UlQ5WkdVTU01V09UOHkxd2pFVElRRGRjSXl0cDNsdFhibEVjWklWNEpBbmJTSXpOMGJ6MjRBakhNa2ZZM0JRZDQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com",
-          "published": "Fri, 28 Aug 2026 19:26:41 GMT"
-        },
-        {
-          "title": "Anthony Davis, Kyrie Irving Trades Eyed by NBA Insiders in New Poll Ahead of 2026-27 Season",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNEVOY29vVU00djRFaldjX2tPT1J4OXRCN0dURkVZS05OSl9ER0IyWWk5ZjR5MUwxWTlWV2JLZ2hnLTNJanJBLTQ1LVBKNmhzNWxPNU4zNE1OS1hDdnZtVzBIWXJTNzE1WXJzMF9xb0JhSEY1NTVUNldualFlS3VHOTNpUkU0Mktkdkx3MGFEd2FaZG1KMW5DcTRBN2did1ZqdGtma2pkbzlnN082bEt2WFU4X0FrWS1JdHBHMkpZV3BpOW1a?oc=5",
-          "publisher": "Bleacher Report",
-          "kind": "article",
-          "snippet": "Anthony Davis, Kyrie Irving Trades Eyed by NBA Insiders in New Poll Ahead of 2026-27 Season Bleacher Report",
-          "published": "Thu, 27 Aug 2026 12:55:23 GMT"
-        },
-        {
-          "title": "Ex-Lakers’ Anthony Davis Proposed to Land With Celtics in 4-Player NBA Trade",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObERWdXNTMGh5cHpIRHJqR0ZYNzNJOUwwY3RydUxVck9vOUx3TVZoblVCMGdqXzgyNTl5TDVIUXRMM2ZLeFFZYXZTMFBGWmwwUFhLQ2l2d3FQd1hfbXpFeXA0VVVCU1VXbHU1bmF3cjMwLVNDd2VRTUloRFlHVDZBOTk0bS1yVEhfbjNWZV95VQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Ex-Lakers’ Anthony Davis Proposed to Land With Celtics in 4-Player NBA Trade heavy.com",
-          "published": "Thu, 27 Aug 2026 21:06:47 GMT"
         }
       ]
     }
