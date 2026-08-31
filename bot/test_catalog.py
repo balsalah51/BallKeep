@@ -144,7 +144,7 @@ def main():
     assert dst[0]["name"] == "Houston Texans"
     assert dst[0].get("bk") == 1
     kickers = cat.raw.get("kickers") or []
-    assert len(kickers) == 24, f"kickers {len(kickers)}"
+    assert len(kickers) == 25, f"kickers {len(kickers)}"
     assert kickers[0]["name"] == "Brandon Aubrey"
     assert cat.list_for("dst")[0]["name"] == "Houston Texans"
     assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"

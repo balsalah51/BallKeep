@@ -22695,8 +22695,8 @@
       "pos": "DST",
       "team": "HOU",
       "bk": 1,
-      "avg": 1.6,
-      "n": 5,
+      "avg": 1.5,
+      "n": 8,
       "value": 12000
     },
     {
@@ -22704,8 +22704,8 @@
       "pos": "DST",
       "team": "SEA",
       "bk": 2,
-      "avg": 2.4,
-      "n": 5,
+      "avg": 2.75,
+      "n": 8,
       "value": 10873
     },
     {
@@ -22713,8 +22713,8 @@
       "pos": "DST",
       "team": "DEN",
       "bk": 3,
-      "avg": 3.2,
-      "n": 5,
+      "avg": 3.0,
+      "n": 8,
       "value": 10228
     },
     {
@@ -22722,8 +22722,8 @@
       "pos": "DST",
       "team": "LAR",
       "bk": 4,
-      "avg": 3.4,
-      "n": 5,
+      "avg": 3.88,
+      "n": 8,
       "value": 9769
     },
     {
@@ -22731,53 +22731,53 @@
       "pos": "DST",
       "team": "PHI",
       "bk": 5,
-      "avg": 5.8,
-      "n": 5,
+      "avg": 6.62,
+      "n": 8,
       "value": 9409
-    },
-    {
-      "name": "Jacksonville Jaguars",
-      "pos": "DST",
-      "team": "JAX",
-      "bk": 6,
-      "avg": 8.6,
-      "n": 5,
-      "value": 9111
-    },
-    {
-      "name": "Minnesota Vikings",
-      "pos": "DST",
-      "team": "MIN",
-      "bk": 7,
-      "avg": 9.0,
-      "n": 5,
-      "value": 8855
-    },
-    {
-      "name": "Los Angeles Chargers",
-      "pos": "DST",
-      "team": "LAC",
-      "bk": 8,
-      "avg": 9.2,
-      "n": 5,
-      "value": 8629
     },
     {
       "name": "Pittsburgh Steelers",
       "pos": "DST",
       "team": "PIT",
-      "bk": 9,
-      "avg": 9.4,
-      "n": 5,
-      "value": 8426
+      "bk": 6,
+      "avg": 8.25,
+      "n": 8,
+      "value": 9111
+    },
+    {
+      "name": "Jacksonville Jaguars",
+      "pos": "DST",
+      "team": "JAX",
+      "bk": 7,
+      "avg": 8.75,
+      "n": 8,
+      "value": 8855
+    },
+    {
+      "name": "Minnesota Vikings",
+      "pos": "DST",
+      "team": "MIN",
+      "bk": 8,
+      "avg": 8.75,
+      "n": 8,
+      "value": 8629
     },
     {
       "name": "New England Patriots",
       "pos": "DST",
       "team": "NE",
+      "bk": 9,
+      "avg": 8.75,
+      "n": 8,
+      "value": 8426
+    },
+    {
+      "name": "Los Angeles Chargers",
+      "pos": "DST",
+      "team": "LAC",
       "bk": 10,
-      "avg": 9.6,
-      "n": 5,
+      "avg": 9.86,
+      "n": 7,
       "value": 8241
     },
     {
@@ -22785,26 +22785,26 @@
       "pos": "DST",
       "team": "BAL",
       "bk": 11,
-      "avg": 11.2,
-      "n": 5,
+      "avg": 9.88,
+      "n": 8,
       "value": 8070
+    },
+    {
+      "name": "Green Bay Packers",
+      "pos": "DST",
+      "team": "GB",
+      "bk": 12,
+      "avg": 11.5,
+      "n": 4,
+      "value": 7912
     },
     {
       "name": "Detroit Lions",
       "pos": "DST",
       "team": "DET",
-      "bk": 12,
-      "avg": 13.0,
-      "n": 5,
-      "value": 7912
-    },
-    {
-      "name": "Buffalo Bills",
-      "pos": "DST",
-      "team": "BUF",
       "bk": 13,
-      "avg": 13.5,
-      "n": 2,
+      "avg": 13.0,
+      "n": 7,
       "value": 7764
     },
     {
@@ -22812,26 +22812,26 @@
       "pos": "DST",
       "team": "KC",
       "bk": 14,
-      "avg": 14.0,
-      "n": 2,
+      "avg": 13.67,
+      "n": 3,
       "value": 7624
+    },
+    {
+      "name": "Buffalo Bills",
+      "pos": "DST",
+      "team": "BUF",
+      "bk": 15,
+      "avg": 14.75,
+      "n": 4,
+      "value": 7492
     },
     {
       "name": "Cleveland Browns",
       "pos": "DST",
       "team": "CLE",
-      "bk": 15,
-      "avg": 15.0,
-      "n": 2,
-      "value": 7492
-    },
-    {
-      "name": "Green Bay Packers",
-      "pos": "DST",
-      "team": "GB",
       "bk": 16,
-      "avg": 15.0,
-      "n": 2,
+      "avg": 15.25,
+      "n": 4,
       "value": 7367
     },
     {
@@ -22839,71 +22839,71 @@
       "pos": "DST",
       "team": "NO",
       "bk": 17,
-      "avg": 16.0,
-      "n": 2,
+      "avg": 18.25,
+      "n": 4,
       "value": 7247
-    },
-    {
-      "name": "Atlanta Falcons",
-      "pos": "DST",
-      "team": "ATL",
-      "bk": 18,
-      "avg": 19.0,
-      "n": 2,
-      "value": 7132
     },
     {
       "name": "San Francisco 49ers",
       "pos": "DST",
       "team": "SF",
-      "bk": 19,
-      "avg": 19.5,
-      "n": 2,
-      "value": 7023
+      "bk": 18,
+      "avg": 18.67,
+      "n": 3,
+      "value": 7132
     },
     {
-      "name": "Indianapolis Colts",
+      "name": "Atlanta Falcons",
       "pos": "DST",
-      "team": "IND",
-      "bk": 20,
-      "avg": 20.0,
-      "n": 2,
-      "value": 6917
+      "team": "ATL",
+      "bk": 19,
+      "avg": 19.67,
+      "n": 3,
+      "value": 7023
     },
     {
       "name": "Chicago Bears",
       "pos": "DST",
       "team": "CHI",
-      "bk": 21,
-      "avg": 21.0,
-      "n": 2,
-      "value": 6815
+      "bk": 20,
+      "avg": 20.0,
+      "n": 4,
+      "value": 6917
     },
     {
-      "name": "Tampa Bay Buccaneers",
+      "name": "Indianapolis Colts",
       "pos": "DST",
-      "team": "TB",
-      "bk": 22,
-      "avg": 21.5,
-      "n": 2,
-      "value": 6717
+      "team": "IND",
+      "bk": 21,
+      "avg": 20.25,
+      "n": 4,
+      "value": 6815
     },
     {
       "name": "New York Giants",
       "pos": "DST",
       "team": "NYG",
-      "bk": 23,
-      "avg": 23.0,
-      "n": 2,
-      "value": 6621
+      "bk": 22,
+      "avg": 20.75,
+      "n": 4,
+      "value": 6717
     },
     {
       "name": "Dallas Cowboys",
       "pos": "DST",
       "team": "DAL",
+      "bk": 23,
+      "avg": 23.0,
+      "n": 3,
+      "value": 6621
+    },
+    {
+      "name": "Tampa Bay Buccaneers",
+      "pos": "DST",
+      "team": "TB",
       "bk": 24,
-      "avg": 25.0,
-      "n": 2,
+      "avg": 23.0,
+      "n": 3,
       "value": 6529
     },
     {
@@ -22911,17 +22911,17 @@
       "pos": "DST",
       "team": "CAR",
       "bk": 25,
-      "avg": 25.5,
-      "n": 2,
+      "avg": 24.33,
+      "n": 3,
       "value": 6440
     },
     {
-      "name": "Miami Dolphins",
+      "name": "Cincinnati Bengals",
       "pos": "DST",
-      "team": "MIA",
+      "team": "CIN",
       "bk": 26,
-      "avg": 26.5,
-      "n": 2,
+      "avg": 26.67,
+      "n": 3,
       "value": 6353
     },
     {
@@ -22929,26 +22929,26 @@
       "pos": "DST",
       "team": "TEN",
       "bk": 27,
-      "avg": 26.5,
-      "n": 2,
+      "avg": 26.67,
+      "n": 3,
       "value": 6268
+    },
+    {
+      "name": "Miami Dolphins",
+      "pos": "DST",
+      "team": "MIA",
+      "bk": 28,
+      "avg": 27.0,
+      "n": 3,
+      "value": 6186
     },
     {
       "name": "Las Vegas Raiders",
       "pos": "DST",
       "team": "LV",
-      "bk": 28,
-      "avg": 27.5,
-      "n": 2,
-      "value": 6186
-    },
-    {
-      "name": "Cincinnati Bengals",
-      "pos": "DST",
-      "team": "CIN",
       "bk": 29,
-      "avg": 28.0,
-      "n": 2,
+      "avg": 29.0,
+      "n": 3,
       "value": 6105
     },
     {
@@ -22956,8 +22956,8 @@
       "pos": "DST",
       "team": "WAS",
       "bk": 30,
-      "avg": 29.5,
-      "n": 2,
+      "avg": 29.33,
+      "n": 3,
       "value": 6027
     },
     {
@@ -22965,8 +22965,8 @@
       "pos": "DST",
       "team": "NYJ",
       "bk": 31,
-      "avg": 30.5,
-      "n": 2,
+      "avg": 30.33,
+      "n": 3,
       "value": 5951
     },
     {
@@ -22974,8 +22974,8 @@
       "pos": "DST",
       "team": "ARI",
       "bk": 32,
-      "avg": 32.0,
-      "n": 2,
+      "avg": 31.67,
+      "n": 3,
       "value": 5876
     }
   ],
@@ -22986,7 +22986,7 @@
       "team": "DAL",
       "bk": 1,
       "avg": 1.0,
-      "n": 3,
+      "n": 5,
       "value": 12000
     },
     {
@@ -22994,8 +22994,8 @@
       "pos": "K",
       "team": "HOU",
       "bk": 2,
-      "avg": 2.0,
-      "n": 3,
+      "avg": 2.4,
+      "n": 5,
       "value": 10873
     },
     {
@@ -23003,26 +23003,26 @@
       "pos": "K",
       "team": "LAC",
       "bk": 3,
-      "avg": 3.0,
-      "n": 3,
+      "avg": 2.6,
+      "n": 5,
       "value": 10228
-    },
-    {
-      "name": "Jason Myers",
-      "pos": "K",
-      "team": "SEA",
-      "bk": 4,
-      "avg": 4.33,
-      "n": 3,
-      "value": 9769
     },
     {
       "name": "Cam Little",
       "pos": "K",
       "team": "JAX",
+      "bk": 4,
+      "avg": 4.6,
+      "n": 5,
+      "value": 9769
+    },
+    {
+      "name": "Jason Myers",
+      "pos": "K",
+      "team": "SEA",
       "bk": 5,
-      "avg": 4.67,
-      "n": 3,
+      "avg": 5.0,
+      "n": 5,
       "value": 9409
     },
     {
@@ -23030,80 +23030,80 @@
       "pos": "K",
       "team": "SF",
       "bk": 6,
-      "avg": 7.0,
-      "n": 3,
+      "avg": 8.0,
+      "n": 5,
       "value": 9111
     },
     {
-      "name": "Tyler Loop",
+      "name": "Jake Bates",
       "pos": "K",
-      "team": "BAL",
+      "team": "DET",
       "bk": 7,
       "avg": 8.33,
       "n": 3,
       "value": 8855
     },
     {
-      "name": "Evan McPherson",
-      "pos": "K",
-      "team": "CIN",
-      "bk": 8,
-      "avg": 8.67,
-      "n": 3,
-      "value": 8629
-    },
-    {
-      "name": "Jake Bates",
-      "pos": "K",
-      "team": "DET",
-      "bk": 9,
-      "avg": 9.0,
-      "n": 1,
-      "value": 8426
-    },
-    {
-      "name": "Chase McLaughlin",
-      "pos": "K",
-      "team": "TB",
-      "bk": 10,
-      "avg": 10.33,
-      "n": 3,
-      "value": 8241
-    },
-    {
       "name": "Harrison Mevis",
       "pos": "K",
       "team": "LAR",
-      "bk": 11,
-      "avg": 10.33,
-      "n": 3,
-      "value": 8070
+      "bk": 8,
+      "avg": 9.8,
+      "n": 5,
+      "value": 8629
     },
     {
-      "name": "Andy Borregales",
+      "name": "Tyler Loop",
       "pos": "K",
-      "team": "NE",
-      "bk": 12,
-      "avg": 10.67,
-      "n": 3,
-      "value": 7912
+      "team": "BAL",
+      "bk": 9,
+      "avg": 9.8,
+      "n": 5,
+      "value": 8426
+    },
+    {
+      "name": "Evan McPherson",
+      "pos": "K",
+      "team": "CIN",
+      "bk": 10,
+      "avg": 10.2,
+      "n": 5,
+      "value": 8241
     },
     {
       "name": "Cairo Santos",
       "pos": "K",
       "team": "CHI",
-      "bk": 13,
-      "avg": 10.67,
+      "bk": 11,
+      "avg": 10.8,
+      "n": 5,
+      "value": 8070
+    },
+    {
+      "name": "Will Reichard",
+      "pos": "K",
+      "team": "MIN",
+      "bk": 12,
+      "avg": 11.33,
       "n": 3,
+      "value": 7912
+    },
+    {
+      "name": "Andy Borregales",
+      "pos": "K",
+      "team": "NE",
+      "bk": 13,
+      "avg": 12.0,
+      "n": 4,
       "value": 7764
     },
     {
-      "name": "Chris Boswell",
+      "name": "Chase McLaughlin",
       "pos": "K",
-      "team": "PIT",
+      "team": "TB",
       "bk": 14,
-      "avg": 14.0,
-      "n": 1,
+      "avg": 12.2,
+      "n": 5,
       "value": 7624
     },
     {
@@ -23111,17 +23111,17 @@
       "pos": "K",
       "team": "KC",
       "bk": 15,
-      "avg": 15.0,
-      "n": 1,
+      "avg": 13.0,
+      "n": 3,
       "value": 7492
     },
     {
-      "name": "Will Reichard",
+      "name": "Chris Boswell",
       "pos": "K",
-      "team": "MIN",
+      "team": "PIT",
       "bk": 16,
-      "avg": 16.0,
-      "n": 1,
+      "avg": 14.0,
+      "n": 3,
       "value": 7367
     },
     {
@@ -23129,17 +23129,17 @@
       "pos": "K",
       "team": "DEN",
       "bk": 17,
-      "avg": 17.0,
-      "n": 1,
+      "avg": 14.33,
+      "n": 3,
       "value": 7247
     },
     {
-      "name": "Charlie Smyth",
+      "name": "Trey Smack",
       "pos": "K",
-      "team": "NO",
+      "team": "GB",
       "bk": 18,
-      "avg": 18.0,
-      "n": 1,
+      "avg": 15.0,
+      "n": 2,
       "value": 7132
     },
     {
@@ -23147,54 +23147,63 @@
       "pos": "K",
       "team": "PHI",
       "bk": 19,
-      "avg": 19.0,
-      "n": 1,
+      "avg": 19.5,
+      "n": 2,
       "value": 7023
-    },
-    {
-      "name": "Blake Grupe",
-      "pos": "K",
-      "team": "IND",
-      "bk": 20,
-      "avg": 20.0,
-      "n": 1,
-      "value": 6917
     },
     {
       "name": "Tyler Bass",
       "pos": "K",
       "team": "BUF",
+      "bk": 20,
+      "avg": 20.0,
+      "n": 2,
+      "value": 6917
+    },
+    {
+      "name": "Charlie Smyth",
+      "pos": "K",
+      "team": "NO",
       "bk": 21,
-      "avg": 21.0,
-      "n": 1,
+      "avg": 20.5,
+      "n": 2,
       "value": 6815
-    },
-    {
-      "name": "Chad Ryland",
-      "pos": "K",
-      "team": "ARI",
-      "bk": 22,
-      "avg": 22.0,
-      "n": 1,
-      "value": 6717
-    },
-    {
-      "name": "Joey Slye",
-      "pos": "K",
-      "team": "TEN",
-      "bk": 23,
-      "avg": 23.0,
-      "n": 1,
-      "value": 6621
     },
     {
       "name": "Nick Folk",
       "pos": "K",
       "team": "ATL",
+      "bk": 22,
+      "avg": 20.5,
+      "n": 2,
+      "value": 6717
+    },
+    {
+      "name": "Blake Grupe",
+      "pos": "K",
+      "team": "IND",
+      "bk": 23,
+      "avg": 21.67,
+      "n": 3,
+      "value": 6621
+    },
+    {
+      "name": "Chad Ryland",
+      "pos": "K",
+      "team": "ARI",
       "bk": 24,
-      "avg": 24.0,
+      "avg": 22.0,
       "n": 1,
       "value": 6529
+    },
+    {
+      "name": "Joey Slye",
+      "pos": "K",
+      "team": "TEN",
+      "bk": 25,
+      "avg": 23.0,
+      "n": 1,
+      "value": 6440
     }
   ],
   "rookies": [

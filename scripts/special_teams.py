@@ -53,6 +53,24 @@ NBC_DST = {
     "GB": 17, "ATL": 18, "TB": 19, "SF": 20, "CHI": 21, "IND": 22, "NYG": 23, "MIA": 24,
     "LV": 25, "CAR": 26, "TEN": 27, "DAL": 28, "CIN": 29, "NYJ": 30, "WAS": 31, "ARI": 32,
 }
+# STACKED 2026 DST, updated Aug 31. Full 32. https://www.stackedfantasy.com/nfl/draft-guide/dst
+STACKED_DST = {
+    "HOU": 1, "DEN": 2, "LAR": 3, "SEA": 4, "PHI": 5, "NE": 6, "JAX": 7, "PIT": 8,
+    "BAL": 9, "LAC": 10, "MIN": 11, "GB": 12, "KC": 13, "CLE": 14, "DET": 15, "BUF": 16,
+    "SF": 17, "NO": 18, "DAL": 19, "IND": 20, "ATL": 21, "CAR": 22, "CHI": 23, "CIN": 24,
+    "NYG": 25, "TB": 26, "TEN": 27, "MIA": 28, "WAS": 29, "NYJ": 30, "ARI": 31, "LV": 32,
+}
+# Draft Sharks 2026 DST. Partial board: skip unranked. https://www.draftsharks.com/rankings/def
+DS_DST = {
+    "HOU": 1, "DEN": 2, "SEA": 3, "GB": 4, "BAL": 5, "PIT": 6, "MIN": 7, "NE": 8,
+    "PHI": 9, "LAR": 10, "DET": 11, "NYG": 12, "LAC": 13, "JAX": 14, "CHI": 15, "BUF": 16,
+    "CLE": 17, "IND": 21, "NO": 23,
+}
+# CBS via 4for4, top 10 published Aug 30. https://www.4for4.com/fantasy-football-rankings/cbs/def/2026
+CBS_DST = {
+    "LAR": 1, "HOU": 2, "SEA": 3, "DEN": 4, "PIT": 5,
+    "JAX": 6, "MIN": 7, "NE": 8, "BAL": 9, "PHI": 10,
+}
 
 DST_SOURCES = [
     ("FantasyPros DST ECR", "https://www.fantasypros.com/2026/08/fantasy-football-draft-rankings-targets-defenses-d-st-picks/", "Expert consensus, Aug 2026. All 32 clubs."),
@@ -60,6 +78,9 @@ DST_SOURCES = [
     ("Derek Brown DST", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dst.php", "FantasyPros expert, Aug 12. Houston and the Rams up."),
     ("Andrew Erickson DST", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dst.php", "FantasyPros expert, Aug 27. Chargers inside the 5."),
     ("Pat Fitzmaurice DST", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dst.php", "FantasyPros expert, July 1. Seattle first."),
+    ("STACKED DST", "https://www.stackedfantasy.com/nfl/draft-guide/dst", "Full 32, updated Aug 31. Houston first."),
+    ("Draft Sharks DST", "https://www.draftsharks.com/rankings/def", "Partial board, Aug 31. Unranked clubs skipped."),
+    ("CBS DST", "https://www.4for4.com/fantasy-football-rankings/cbs/def/2026", "Top 10 published Aug 30 via 4for4. Rams first."),
 ]
 
 KICKERS = [
@@ -71,6 +92,7 @@ KICKERS = [
     ("Will Reichard", "MIN"), ("Wil Lutz", "DEN"), ("Charlie Smyth", "NO"),
     ("Jake Elliott", "PHI"), ("Blake Grupe", "IND"), ("Tyler Bass", "BUF"),
     ("Chad Ryland", "ARI"), ("Joey Slye", "TEN"), ("Nick Folk", "ATL"),
+    ("Trey Smack", "GB"),
 ]
 
 # FantasyPros kicker ECR, Aug 2026 draft article.
@@ -92,11 +114,32 @@ FITZ_K = {
     "Jason Myers": 5, "Harrison Mevis": 6, "Tyler Loop": 7, "Eddy Pineiro": 8,
     "Chase McLaughlin": 9, "Cairo Santos": 10, "Andy Borregales": 11, "Evan McPherson": 12,
 }
+# Draft Sharks 2026 K, updated Aug 31. Skip unnamed NYG/CAR/WAS slots.
+# https://www.draftsharks.com/rankings/pk
+DS_K = {
+    "Brandon Aubrey": 1, "Cameron Dicker": 2, "Ka'imi Fairbairn": 3, "Cam Little": 4,
+    "Eddy Pineiro": 5, "Cairo Santos": 6, "Evan McPherson": 7, "Jason Myers": 8,
+    "Jake Bates": 9, "Harrison Mevis": 10, "Trey Smack": 11, "Will Reichard": 12,
+    "Wil Lutz": 13, "Harrison Butker": 14, "Tyler Loop": 15, "Andy Borregales": 16,
+    "Chris Boswell": 17, "Chase McLaughlin": 18, "Tyler Bass": 19, "Jake Elliott": 20,
+    "Charlie Smyth": 23, "Blake Grupe": 25,
+}
+# RotoWire Jerry Donabedian, Aug 27. Skip 15 (Carlson vs Smyth). Grupe not Shrader.
+# https://www.rotowire.com/football/article/2026-fantasy-football-rankings-kickers-85924
+RW_K = {
+    "Brandon Aubrey": 1, "Cameron Dicker": 2, "Ka'imi Fairbairn": 3, "Jason Myers": 4,
+    "Cam Little": 5, "Will Reichard": 6, "Jake Bates": 7, "Harrison Mevis": 8,
+    "Tyler Loop": 9, "Harrison Butker": 10, "Chris Boswell": 11, "Chase McLaughlin": 12,
+    "Wil Lutz": 13, "Eddy Pineiro": 14, "Cairo Santos": 16, "Nick Folk": 17,
+    "Evan McPherson": 18, "Trey Smack": 19, "Blake Grupe": 20,
+}
 
 K_SOURCES = [
     ("FantasyPros Kicker ECR", "https://www.fantasypros.com/2026/08/fantasy-football-draft-rankings-tiers-kickers-2026-little-bates-aubrey/", "Expert consensus, Aug 2026. Aubrey locked first."),
     ("Derek Brown K", "https://www.fantasypros.com/nfl/fantasy-football-rankings/k.php", "FantasyPros expert, Aug 13."),
     ("Pat Fitzmaurice K", "https://www.fantasypros.com/nfl/fantasy-football-rankings/k.php", "FantasyPros expert, Aug 26. Little over Myers, Mevis inside the 6."),
+    ("Draft Sharks K", "https://www.draftsharks.com/rankings/pk", "Updated Aug 31. Trey Smack (GB) inside the 12. Unnamed slots skipped."),
+    ("RotoWire K", "https://www.rotowire.com/football/article/2026-fantasy-football-rankings-kickers-85924", "Jerry Donabedian, Aug 27. Skip the Carlson/Smyth slot."),
 ]
 
 
@@ -134,6 +177,9 @@ def dst_board():
         "brown": BROWN_DST,
         "erickson": ERICKSON_DST,
         "fitz": FITZ_DST,
+        "stacked": STACKED_DST,
+        "ds": DS_DST,
+        "cbs": CBS_DST,
     }, "DST")
 
 
@@ -142,4 +188,6 @@ def kicker_board():
         "fp": FP_K,
         "brown": BROWN_K,
         "fitz": FITZ_K,
+        "ds": DS_K,
+        "rw": RW_K,
     }, "K")

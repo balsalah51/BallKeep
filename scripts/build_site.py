@@ -916,12 +916,12 @@ FB_SEO = {
     ),
     "defenses.html": (
         "2026 Fantasy Football DST Rankings | Ball Keep",
-        "Top Defenses is Ball Keep's aggregate DST board. Mean of FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, and Pat Fitzmaurice. Houston is 1.01.",
+        "Top Defenses is Ball Keep's aggregate DST board. Mean of eight boards: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, Pat Fitzmaurice, STACKED, Draft Sharks, and CBS. Houston is 1.01.",
         "img/logo.jpg",
     ),
     "kickers.html": (
         "2026 Fantasy Football Kicker Rankings | Ball Keep",
-        "Top Kickers is Ball Keep's aggregate kicking board. Mean of FantasyPros ECR, Derek Brown, and Pat Fitzmaurice. Brandon Aubrey is 1.01.",
+        "Top Kickers is Ball Keep's aggregate kicking board. Mean of five boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks, and RotoWire. Brandon Aubrey is 1.01.",
         "img/logo.jpg",
     ),
     "privacy.html": (
@@ -2616,7 +2616,7 @@ def main():
     dst_body = f"""
     <p class="kicker">2026 Redraft · DST</p>
     <h1>Top Defenses</h1>
-    <p class="note">The skill boards skip kickers and DST. This is the DST mean: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, and Pat Fitzmaurice. Unranked on a board is a skip. Houston is 1.01. Seattle and Denver sit right behind. Sort with Find a player.</p>
+    <p class="note">The skill boards skip kickers and DST. This is the DST mean of eight boards: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, Pat Fitzmaurice, STACKED (Aug 31), Draft Sharks, and CBS (top 10, Aug 30). Unranked on a board is a skip. Houston is 1.01. Seattle and Denver sit right behind. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(dst, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(DST_SOURCES, heading="Boards in This Aggregate")}
@@ -2636,7 +2636,7 @@ def main():
     k_body = f"""
     <p class="kicker">2026 Redraft · K</p>
     <h1>Top Kickers</h1>
-    <p class="note">The kicking board. Mean of FantasyPros ECR, Derek Brown, and Pat Fitzmaurice. Unranked on a board is a skip. Brandon Aubrey is 1.01. Fairbairn and Dicker follow. Sort with Find a player.</p>
+    <p class="note">The kicking board. Mean of five boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks (Aug 31), and RotoWire (Aug 27). Unranked on a board is a skip. Brandon Aubrey is 1.01. Fairbairn and Dicker follow. Trey Smack (GB) is on the list. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(kickers, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(K_SOURCES, heading="Boards in This Aggregate")}
