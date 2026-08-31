@@ -243,9 +243,9 @@ def test_dst_and_kicker_boards():
     assert len(dst) == 32
     assert dst[0]["name"] == "Houston Texans"
     assert dst[0]["bk"] == 1
-    assert dst[0]["n"] >= 3
+    assert dst[0]["n"] >= 5
     kickers = kicker_board()
-    assert len(kickers) == 24
+    assert len(kickers) == 25
     assert kickers[0]["name"] == "Brandon Aubrey"
     assert kickers[0]["bk"] == 1
 
