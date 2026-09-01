@@ -274,10 +274,16 @@ def main():
     slates = home[schedules_at:tools_at]
     assert "defenses.html" in lists
     assert "kickers.html" in lists
-    assert "Top Defenses" in lists
+    assert "The D (DST)" in lists
     assert "Top Kickers" in lists
     assert "the-fence.html" in lists
-    assert "The Fence" in lists
+    assert "The Fence (IDP)" in lists
+    assert "the-keep.html" in lists
+    assert "board.html" in lists
+    keep_i = lists.find("the-keep.html")
+    board_i = lists.find("board.html")
+    fence_i = lists.find("the-fence.html")
+    assert 0 <= keep_i < board_i < fence_i
     assert "nfl-schedule.html" not in lists
     assert "mlb-schedule.html" not in lists
     assert "nfl-schedule.html" in slates
