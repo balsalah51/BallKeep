@@ -208,7 +208,7 @@ BK_SEO = {
     ),
     "waivers-redraft.html": (
         "Redraft Basketball Waiver Wire | BasketKeep",
-        "Priority 1–50. Streamers and six-man cats.",
+        "Priority 1-50. Streamers and six-man cats.",
         "img/bk-logo.jpg",
     ),
 }
@@ -269,7 +269,7 @@ BK_ALSO = {
         ("players/index.html", "Player Files", "Every name in the calc."),
     ],
     "waivers-dynasty.html": [
-        ("waivers-redraft.html", "Redraft Wire", "Priority 1–50."),
+        ("waivers-redraft.html", "Redraft Wire", "Priority 1-50."),
         ("the-keep.html", "The Keep", "Long-board ranks."),
         ("rookies.html", "Rookies", "The class."),
         ("players/index.html", "Player Files", "Keep 400."),
@@ -925,7 +925,7 @@ def write_basket_site():
         ("bigs.html", "Bigs", "Centers."),
         ("rookies.html", "Rookies", "2026 class plus the kids."),
         ("waivers-dynasty.html", "Dynasty Wire", "Fifteen stashes."),
-        ("waivers-redraft.html", "Redraft Wire", "Priority 1–50."),
+        ("waivers-redraft.html", "Redraft Wire", "Priority 1-50."),
     ])}
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
         ("trade.html", "Trade Calculators", "Keep and Board. Rank becomes BK Value."),
@@ -1053,8 +1053,8 @@ def write_basket_site():
     waiver_page(
         "Redraft Waiver Wire",
         "waivers-redraft.html",
-        "Priority 1–50 · Opening night",
-        "This is the longer wire. P1–P10 are must-roster six-men and stream cats. P11–P30 are threes and stocks. P31–P50 are deep-league fliers.",
+        "Priority 1-50 · Opening night",
+        "This is the longer wire. P1-P10 are must-roster six-men and stream cats. P11-P30 are threes and stocks. P31-P50 are deep-league fliers.",
         REDRAFT_WAIVERS,
         hot=True,
         keep_slugs=keep_slugs_set,

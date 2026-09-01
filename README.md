@@ -30,7 +30,7 @@ Separate sport, separate palette. Footer crossover only - baseball does not live
 - **Redraft** - rest-of-season 400
 - **Trade calculators** - Keep, Lineup, Pitchers, Redraft, Saves, SV+H. Same BK Value curve.
 - **Dynasty Wire** - 15 stashes (short on purpose)
-- **Redraft Wire** - priority 1–50, longer and louder
+- **Redraft Wire** - priority 1-50, longer and louder
 - **Player files** - Keep 400, one cream card each
 
 ## BasketKeep (`/bk`)
@@ -43,7 +43,7 @@ Separate sport, separate palette. Hardwood orange and night. Footer / header cro
 - **BK News** - live at `bk/news.html`. Same hourly pipeline: injury, roster, coach tape
 - **The X** - NBA memes
 - **Trade calculators** - Keep and Board. Same BK Value curve.
-- **Wires** - 15 dynasty stashes, redraft priority 1–50
+- **Wires** - 15 dynasty stashes, redraft priority 1-50
 - **Player files** - Keep 400, one hardwood card each
 
 ## PitchKeep (`/pl`)

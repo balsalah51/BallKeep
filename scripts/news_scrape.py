@@ -4,7 +4,7 @@
 Efficiency:
   1. Always pull a small set of league RSS wires (one GET each).
   2. Run a fixed handful of Google News topic queries (injury, roster, coach).
-  3. Pull X and YouTube via Google News `site:` filters — no login, no scrape of x.com HTML.
+  3. Pull X and YouTube via Google News `site:` filters - no login, no scrape of x.com HTML.
   4. Rotate ~8 Keep player queries per hour so the full desk is covered daily without
      hammering search engines.
   5. Hash every item; skip URLs already in data/news/state.json.
@@ -271,7 +271,9 @@ def load_json(path: Path, default):
 
 def save_json(path: Path, payload) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
+    from seo import strip_em_tree
+
+    path.write_text(json.dumps(strip_em_tree(payload), indent=2, ensure_ascii=False) + "\n")
 
 
 def slugify_name(name: str) -> str:

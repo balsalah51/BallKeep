@@ -27,6 +27,7 @@ from extra_ranks import (  # noqa: E402
 )
 from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps, _norm as ppr_norm  # noqa: E402
 from special_teams import DST_SOURCES, K_SOURCES, dst_board, kicker_board  # noqa: E402
+from idp_board import FENCE_SOURCES, fence_board  # noqa: E402
 from bpl_schedule import bpl_games, bpl_schedule_parts  # noqa: E402
 from aggregate_protocol import (  # noqa: E402
     KEEP_SOURCES,
@@ -65,6 +66,7 @@ from seo import (  # noqa: E402
     sports_footer,
     sports_top,
     strip_em,
+    strip_em_tree,
     value_bars,
     video_jsonld,
     website_jsonld,
@@ -82,17 +84,12 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
-def pos_filter(box_id):
-    """QB / RB / WR / TE chips. Works with applyRankFilter on ranking tables."""
-    chips = (
-        f'<div class="filters" id="{box_id}">'
-        '<button type="button" class="active" data-pos="all">All</button>'
-        '<button type="button" data-pos="QB">QB</button>'
-        '<button type="button" data-pos="RB">RB</button>'
-        '<button type="button" data-pos="WR">WR</button>'
-        '<button type="button" data-pos="TE">TE</button>'
-        "</div>"
-    )
+def pos_filter(box_id, positions=None):
+    """Position chips. Works with applyRankFilter on ranking tables."""
+    positions = positions or ["QB", "RB", "WR", "TE"]
+    btns = ['<button type="button" class="active" data-pos="all">All</button>']
+    btns.extend(f'<button type="button" data-pos="{p}">{p}</button>' for p in positions)
+    chips = f'<div class="filters" id="{box_id}">{"".join(btns)}</div>'
     js = f"""<script>
     const box = document.getElementById({box_id!r});
     if (box) box.addEventListener('click', e => {{
@@ -388,12 +385,12 @@ HOT = [
     {"name": "De'Zhaun Stribling", "pos": "WR", "team": "SF", "why": "SI (Aug 25) + FantasyPros (Aug 26): 13 targets, 11-109 in his first two preseason games. Pearsall is out on a PCL; Shanahan is moving him all over the formation.", "src": "Sports Illustrated, FantasyPros"},
     {"name": "Jonah Coleman", "pos": "RB", "team": "DEN", "why": "SI (Aug 25) + FantasyPros: Payton pulled him after one preseason series because he'd already seen enough. Pass-pro trust is the three-down unlock in Denver.", "src": "Sports Illustrated, FantasyPros"},
     {"name": "Parker Washington", "pos": "WR", "team": "JAX", "why": "SI (Aug 25): WR8 over the last five weeks of 2025. Jacksonville is manufacturing touches in space; he is no longer a depth piece.", "src": "Sports Illustrated"},
-    {"name": "Rome Odunze", "pos": "WR", "team": "CHI", "why": "PlayerProfiler (Aug 7): cheapest Chicago WR after the Burden/Loveland run-up. WR11 Weeks 1–8 last year before the foot; PP WR19 vs KTC WR20.", "src": "PlayerProfiler"},
+    {"name": "Rome Odunze", "pos": "WR", "team": "CHI", "why": "PlayerProfiler (Aug 7): cheapest Chicago WR after the Burden/Loveland run-up. WR11 Weeks 1-8 last year before the foot; PP WR19 vs KTC WR20.", "src": "PlayerProfiler"},
     {"name": "Kyle Pitts", "pos": "TE", "team": "ATL", "why": "PlayerProfiler: TE2 finish last year, Stefanski TE volume, still 25. KTC TE8 is a discount on a name who just got paid through 2028.", "src": "PlayerProfiler"},
     {"name": "Zay Flowers", "pos": "WR", "team": "BAL", "why": "PlayerProfiler would take him straight up over KTC WR14 Ladd McConkey. New contract, 1,200 yards on a run-leaning Ravens offense.", "src": "PlayerProfiler"},
     {"name": "Bryce Lance", "pos": "WR", "team": "NO", "why": "SI (Aug 25): Tyson is expected to miss time; Lance went 5-5-2 in joint practice with Shough. Deep-bench buy before the Saints room fills back in.", "src": "Sports Illustrated"},
     {"name": "Jelani Woods", "pos": "TE", "team": "NYJ", "why": "SI (Aug 25): healthier camp, elevated preseason reps, empty middle of the Jets offense. Reclamation TE with size/speed and a clean runway.", "src": "Sports Illustrated"},
-    {"name": "Christian Watson", "pos": "WR", "team": "GB", "why": "Sports Arena + Draft Sharks: WR21 in FPPG Weeks 8–18 last year on a 68% route share with Doubs/Wicks gone. Still the buy vs. packed rookie rooms.", "src": "Sports Arena, Draft Sharks"},
+    {"name": "Christian Watson", "pos": "WR", "team": "GB", "why": "Sports Arena + Draft Sharks: WR21 in FPPG Weeks 8-18 last year on a 68% route share with Doubs/Wicks gone. Still the buy vs. packed rookie rooms.", "src": "Sports Arena, Draft Sharks"},
     {"name": "Kyler Murray", "pos": "QB", "team": "MIN", "why": "DLF: healthy years were locked top-10 SF QBs; still priced like a mid-1st rookie pick heading into Week 1 in Minnesota.", "src": "Dynasty League Football"},
 ]
 COLD = [
@@ -656,6 +653,7 @@ def superflex_redraft(keep, ppr):
 NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
+    ("the-fence.html", "The Fence"),
     ("news.html", "News"),
     ("the-x.html", "The X"),
     ("trade.html", "Trade"),
@@ -824,7 +822,7 @@ PPR_SOURCES = [
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
     ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 27."),
-    ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1–2–3."),
+    ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1-2-3."),
 ]
 
 
@@ -925,6 +923,11 @@ FB_SEO = {
         "Top Kickers is Ball Keep's aggregate kicking board. Mean of five boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks, and RotoWire. Brandon Aubrey is 1.01.",
         "img/logo.jpg",
     ),
+    "the-fence.html": (
+        "The Fence 2026 Dynasty IDP Rankings | Ball Keep",
+        "The Fence is Ball Keep's dynasty IDP board. Mean of 20 markets the most popular dynasty IDP leagues draft from. Aidan Hutchinson is 1.01.",
+        "img/logo.jpg",
+    ),
     "privacy.html": (
         "Privacy Policy | Ball Keep",
         "How Ball Keep, BaseKeep, BasketKeep, and PitchKeep collect and use information, including cookies, analytics, and ads.",
@@ -968,7 +971,8 @@ FB_SEO = {
 }
 
 HOME_FAQ = [
-    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 32 boards, top 400. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
+    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 32 boards, top 400. The Fence is dynasty IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
+    ("What is The Fence?", "Dynasty IDP. Mean of 20 markets the most popular dynasty IDP leagues draft from. DL, LB, and DB only. Unranked is a skip."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player. Unranked names are skipped, never treated as 999."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
@@ -976,7 +980,7 @@ HOME_FAQ = [
 KEEP_FAQ = [
     ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public boards, rebuilt August 28, 2026."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
-    ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40–80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
+    ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
 BOARD_FAQ = [
     ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Kickers and DST omitted."),
@@ -989,6 +993,11 @@ TRADE_FAQ = [
     ("What does fair mean?", "Fair is within 8%. Superflex keeps quarterback price. 1QB taxes passers to 38% of that number."),
     ("Which calculator should I use?", "Superflex Dynasty for two-QB startups. 1QB when a passer is just another starter. Redraft PPR, The Classic (0.5 PPR), or Standard when the deal is for this season only."),
 ]
+FENCE_FAQ = [
+    ("What is The Fence?", "Ball Keep's dynasty IDP list. Top 200 individual defensive players. Mean of 20 markets the most popular dynasty IDP leagues actually draft from."),
+    ("How is the rank built?", "Three published long boards: Dynasty Nerds, PFF, and Dynasty Dealer Sleeper trades. Then seventeen IDP-format overlays: tackle premium, big play, IDP123, MFL 5-pos, youth, win-now, LB-heavy, EDGE-first, start-4 DB. Unranked on a board is a skip, never 999."),
+    ("How is this different from Top Defenses?", "Top Defenses is team DST. The Fence is IDP: defensive linemen, linebackers, and defensive backs as individual names."),
+]
 NEWS_FAQ = [
     ("Where does BK News come from?", "Hourly clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with links back to the original boards and to Keep player files."),
     ("How often does the wire refresh?", "The scrape runs every hour. New URLs merge into the cluster; the static pages rebuild when the tape moved."),
@@ -997,6 +1006,7 @@ NEWS_FAQ = [
 
 FB_ALSO = {
     "the-keep.html": [
+        ("the-fence.html", "The Fence", "Dynasty IDP, top 200."),
         ("board.html", "The Board", "Redraft PPR, this year."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
@@ -1088,6 +1098,7 @@ FB_ALSO = {
         ("mlb-schedule.html", "MLB Schedule", "September baseball."),
     ],
     "defenses.html": [
+        ("the-fence.html", "The Fence", "Dynasty IDP names."),
         ("kickers.html", "Top Kickers", "The kicking board."),
         ("board.html", "The Board", "Skill-player PPR."),
         ("the-classic.html", "The Classic", "Half-PPR redraft."),
@@ -1097,6 +1108,12 @@ FB_ALSO = {
         ("defenses.html", "Top Defenses", "Aggregate DST."),
         ("board.html", "The Board", "Skill-player PPR."),
         ("the-classic.html", "The Classic", "Half-PPR redraft."),
+        ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
+    ],
+    "the-fence.html": [
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("defenses.html", "Top Defenses", "Team DST."),
+        ("board.html", "The Board", "Skill-player PPR."),
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
 }
@@ -1596,7 +1613,7 @@ def ff_facts(p, college, is_rook):
     ranks = {k: v for k, v in (p.get("ranks") or {}).items() if isinstance(v, (int, float))}
     if ranks:
         hi, lo = min(ranks.values()), max(ranks.values())
-        items.append(("Spread", f"{hi}–{lo}"))
+        items.append(("Spread", f"{hi}-{lo}"))
     return _fact_cells(items)
 
 
@@ -1685,7 +1702,7 @@ def ff_boards_table(p):
     return (
         '<section class="panel">'
         '<p class="kicker">Every Board</p>'
-        f"<h3>Spread {lo}–{hi} · {len(rows)} sources</h3>"
+        f"<h3>Spread {lo}-{hi} · {len(rows)} sources</h3>"
         '<div class="table-wrap"><table class="boards">'
         "<thead><tr><th>Source</th><th>Rank</th></tr></thead>"
         f"<tbody>{''.join(body)}</tbody></table></div></section>"
@@ -2284,7 +2301,7 @@ def write_discovery_feeds():
                 "date": when,
                 "publication": brand,
             })
-    (ROOT / "sitemap-news.xml").write_text(news_sitemap_xml(news_entries))
+    (ROOT / "sitemap-news.xml").write_text(strip_em(news_sitemap_xml(news_entries)))
     return len(news_entries)
 
 
@@ -2373,7 +2390,8 @@ def main():
         </a>
       </div>
     </section>
-    {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, the market tape, defenses, and kickers.", [
+    {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, IDP, the market tape, defenses, and kickers.", [
+        ("the-fence.html", "The Fence", "Dynasty IDP, top 200."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("the-classic.html", "The Classic", "Half-PPR, this year."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
@@ -2614,6 +2632,7 @@ def main():
 
     dst = dst_board()
     kickers = kicker_board()
+    fence = fence_board()
     dst_body = f"""
     <p class="kicker">2026 Redraft · DST</p>
     <h1>Top Defenses</h1>
@@ -2652,6 +2671,31 @@ def main():
                 lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html" if slugify(r["name"]) in PLAYER_PAGES.values() else "https://ballkeep.com/kickers.html",
                 description="Aggregate redraft kicker board.",
             ),
+        ],
+    ))
+
+    fence_chips, fence_js = pos_filter("fence-pos", ["DL", "LB", "DB"])
+    fence_body = f"""
+    <p class="kicker">Dynasty IDP · Super Aggregate · {len(FENCE_SOURCES)} boards</p>
+    <h1>The Fence</h1>
+    <p class="note">This is dynasty IDP. Top {len(fence)} names. Mean of {len(FENCE_SOURCES)} markets the most popular dynasty IDP leagues draft from. Three published long boards (Dynasty Nerds, PFF, Dynasty Dealer Sleeper trades) plus seventeen IDP-format overlays: tackle premium, big play, IDP123, MFL 5-pos, youth, win-now, LB-heavy, EDGE-first, start-4 DB. Unranked on a board is a skip. Aidan Hutchinson is 1.01. The Keep next door is Superflex skill players. Top Defenses is team DST. Sort by DL, LB, or DB with the chips.</p>
+    {rank_search_bar(fence_chips)}
+    <div class="panel">{rank_table(fence, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
+    {value_bars(fence, 12, "#c8102e", "Fence value graph")}
+    {sources_panel(FENCE_SOURCES, heading="Boards in This Aggregate")}
+    {faq_html(FENCE_FAQ, heading="How The Fence is built.")}
+    """
+    write("the-fence.html", board_page(
+        "The Fence", "the-fence.html", fence_body, fence_js,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "2026 Dynasty IDP Rankings",
+                "https://ballkeep.com/the-fence.html",
+                fence,
+                lambda r: "https://ballkeep.com/the-fence.html",
+                description="Aggregate dynasty IDP board.",
+            ),
+            faq_jsonld(FENCE_FAQ),
         ],
     ))
 
@@ -2730,7 +2774,7 @@ def main():
     mlb_body = f"""
     <p class="kicker">MLB · Stretch Run</p>
     <h1>Baseball Schedules</h1>
-    <p class="note">Today is Aug. 20, 2026 - the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027–2031 heavier than this month's box score; redraft baseball is only this month.</p>
+    <p class="note">Today is Aug. 20, 2026 - the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027-2031 heavier than this month's box score; redraft baseball is only this month.</p>
     <div class="filters" id="mlb-teams"><button type="button" class="active" data-team="all">All clubs</button>{mlb_btns}</div>
     <div class="panel table-wrap" id="mlb-games"></div>
     """
@@ -2871,6 +2915,7 @@ def main():
         "https://ballkeep.com/bpl-schedule.html",
         "https://ballkeep.com/defenses.html",
         "https://ballkeep.com/kickers.html",
+        "https://ballkeep.com/the-fence.html",
         "https://ballkeep.com/discord.html",
     ] + news_urls[1:] + player_urls
     bb = write_baseball_site()
@@ -2888,9 +2933,9 @@ def main():
     ]))
     (ROOT / "ads.txt").write_text(ads_txt())
 
-    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk, sf_redraft, classic, dst, kickers, bpl)
+    cat = write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk, sf_redraft, classic, dst, kickers, bpl, fence)
     print(
-        f"Keep {len(keep)} Board {len(board)} (redraft PPR) Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} BPL {len(bpl)} DST {len(dst)} K {len(kickers)} "
+        f"Keep {len(keep)} Board {len(board)} (redraft PPR) Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} BPL {len(bpl)} DST {len(dst)} K {len(kickers)} Fence {len(fence)} "
         f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
         f"BB News {bb.get('n_news', 0)} BK Keep {bk['n_keep']} Pitch {pl['n_pitch']} "
         f"Premier {pl.get('n_premier', 0)} Catalog {cat.name} NewsSitemap {n_news}"
@@ -2913,7 +2958,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None, dst=None, kickers=None, bpl=None):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None, dst=None, kickers=None, bpl=None, fence=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -2978,6 +3023,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         "classic": [slim_row(r) for r in (classic or [])],
         "dst": [slim_row(r, ("n", "avg")) for r in (dst or [])],
         "kickers": [slim_row(r, ("n", "avg")) for r in (kickers or [])],
+        "fence": [slim_row(r, ("n", "avg", "age")) for r in (fence or [])],
         "rookies": [slim_row(r, ("dd", "fp", "pff", "blurb")) for r in rook_rows],
         "hot": HOT,
         "cold": COLD,
@@ -3073,7 +3119,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         })
     catalog["bk_news"] = bk_news
     dest = ROOT / "data/discord-catalog.json"
-    dest.write_text(json.dumps(catalog, indent=2, default=str))
+    dest.write_text(json.dumps(strip_em_tree(catalog), indent=2, default=str))
     return dest
 
 

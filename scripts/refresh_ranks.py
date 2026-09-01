@@ -5,7 +5,7 @@ Football: PFN Superflex table, FantasyPros Superflex ECR / PPR / rookies,
 KeepTradeCut Superflex, Dynasty Nerds Superflex JSON-LD.
 Baseball: FantasyPros keeper/dynasty ECR.
 
-Unranked names stay skipped in the mean — this script only stores names a
+Unranked names stay skipped in the mean - this script only stores names a
 board actually published.
 """
 from __future__ import annotations

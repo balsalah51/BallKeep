@@ -828,7 +828,7 @@ def facts_table(media, r):
         items.append(("BK Value", f"{int(r['value']):,}"))
     ranks = r.get("ranks") or {}
     if ranks:
-        items.append(("Spread", f"{min(ranks.values())}–{max(ranks.values())}"))
+        items.append(("Spread", f"{min(ranks.values())}-{max(ranks.values())}"))
     if not items:
         return ""
     cells = "".join(
@@ -968,7 +968,7 @@ def boards_table(ranks):
     return (
         '<section class="panel">'
         '<p class="kicker">Every Board</p>'
-        f"<h3>Spread {lo}–{hi} · {len(rows)} sources</h3>"
+        f"<h3>Spread {lo}-{hi} · {len(rows)} sources</h3>"
         f'<div class="table-wrap"><table class="boards"><thead><tr><th>Source</th><th>Rank</th></tr></thead>'
         f"<tbody>{''.join(body)}</tbody></table></div></section>"
     )
@@ -1042,7 +1042,7 @@ def bb_grafs(r, lists=None, media=None):
         vals = list(ranks.values())
         spread = max(vals) - min(vals)
         if spread >= 40:
-            minus.append(f"Board spread {min(vals)}–{max(vals)} ({spread} ranks).")
+            minus.append(f"Board spread {min(vals)}-{max(vals)} ({spread} ranks).")
     if pit.get("era") and g in ("SP", "UT"):
         try:
             era = float(pit["era"])

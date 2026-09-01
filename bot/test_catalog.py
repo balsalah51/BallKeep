@@ -148,6 +148,12 @@ def main():
     assert kickers[0]["name"] == "Brandon Aubrey"
     assert cat.list_for("dst")[0]["name"] == "Houston Texans"
     assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"
+    fence = cat.raw.get("fence") or []
+    assert len(fence) == 200, f"fence {len(fence)}"
+    assert fence[0]["name"] == "Aidan Hutchinson"
+    assert fence[0].get("bk") == 1
+    assert cat.list_for("fence")[0]["name"] == "Aidan Hutchinson"
+    assert cat.list_for("idp")[0]["name"] == "Aidan Hutchinson"
     bpl = cat.raw.get("bpl") or []
     assert len(bpl) == 380, f"bpl {len(bpl)}"
     assert bpl[0]["home_abbr"] == "ARS"
@@ -264,6 +270,8 @@ def main():
     assert "kickers.html" in lists
     assert "Top Defenses" in lists
     assert "Top Kickers" in lists
+    assert "the-fence.html" in lists
+    assert "The Fence" in lists
     assert "nfl-schedule.html" not in lists
     assert "mlb-schedule.html" not in lists
     assert "nfl-schedule.html" in slates
@@ -340,6 +348,12 @@ def main():
     k_html = html_of("kickers.html")
     assert "<h1>Top Kickers</h1>" in k_html
     assert "Brandon Aubrey" in k_html
+    fence_html = html_of("the-fence.html")
+    assert "<h1>The Fence</h1>" in fence_html
+    assert "Aidan Hutchinson" in fence_html
+    assert 'id="fence-pos"' in fence_html
+    assert 'data-pos="DL"' in fence_html
+    assert "Dynasty Nerds" in fence_html
     bpl_html = html_of("bpl-schedule.html")
     assert "<h1>BPL Schedule</h1>" in bpl_html
     assert "bpl-weeks" in bpl_html
@@ -460,6 +474,7 @@ def main():
         "redraft-superflex.html",
         "defenses.html",
         "kickers.html",
+        "the-fence.html",
         "rookies-2026.html",
         "bk/the-keep.html",
         "bk/board.html",
@@ -509,6 +524,12 @@ def main():
         assert 'data-pos="RB"' in page, rel
         assert 'data-pos="WR"' in page, rel
         assert page.find("rank-search-input") < page.find(box)
+    fence_page = html_of("the-fence.html")
+    assert 'id="fence-pos"' in fence_page
+    assert 'data-pos="DL"' in fence_page
+    assert 'data-pos="LB"' in fence_page
+    assert 'data-pos="DB"' in fence_page
+    assert fence_page.find("rank-search-input") < fence_page.find("fence-pos")
 
 
 if __name__ == "__main__":

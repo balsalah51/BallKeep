@@ -4,7 +4,7 @@ Only published boards. Short lists still count: unranked names are skipped
 in the mean, not treated as 999.
 """
 
-# ESPN — Eric Karabell Superflex PPR, updated Aug 17, 2026
+# ESPN - Eric Karabell Superflex PPR, updated Aug 17, 2026
 # https://www.espn.com/fantasy/football/story/_/id/47539664
 ESPN_KARABELL_SF = [
     "Josh Allen", "Lamar Jackson", "Jalen Hurts", "Joe Burrow", "Drake Maye",
@@ -49,7 +49,7 @@ ESPN_KARABELL_SF = [
     "Oronde Gadsden", "Chig Okonkwo", "Greg Dulcich", "Mike Gesicki", "AJ Barner",
 ]
 
-# ESPN Karabell Flex (no QB) — extra PPR redraft source, Aug 17 2026
+# ESPN Karabell Flex (no QB) - extra PPR redraft source, Aug 17 2026
 ESPN_KARABELL_FLEX = [
     "Ja'Marr Chase", "Puka Nacua", "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Jahmyr Gibbs",
     "Bijan Robinson", "Jonathan Taylor", "De'Von Achane", "CeeDee Lamb", "Justin Jefferson",

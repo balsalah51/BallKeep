@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SEO helper checks — related links, breadcrumbs, titles, sitemap."""
+"""SEO helper checks - related links, breadcrumbs, titles, sitemap."""
 from __future__ import annotations
 
 import sys
@@ -96,6 +96,9 @@ def test_also_on_desk_and_sitemap():
     assert "Also on this board" in html
     assert "this desk" not in html
     assert strip_em("The Board \u2014 2026") == "The Board - 2026"
+    assert strip_em("40\u201380 names") == "40-80 names"
+    assert strip_em("Keep &mdash; Board") == "Keep - Board"
+    assert strip_em("Keep &ndash; Board") == "Keep - Board"
     xml = sitemap_xml(["https://ballkeep.com/", "https://ballkeep.com/the-keep.html"], "2026-08-27")
     assert "<lastmod>2026-08-27</lastmod>" in xml
     assert xml.count("<url>") == 2
@@ -240,6 +243,9 @@ def test_pos_filter_chips():
     assert 'id="board-pos"' in chips
     assert 'data-pos="QB"' in chips
     assert 'data-pos="RB"' in chips
+    idp, _ = pos_filter("fence-pos", ["DL", "LB", "DB"])
+    assert 'data-pos="DL"' in idp
+    assert 'data-pos="QB"' not in idp
     assert "applyRankFilter" in js
 
 
@@ -254,6 +260,18 @@ def test_dst_and_kicker_boards():
     assert len(kickers) == 25
     assert kickers[0]["name"] == "Brandon Aubrey"
     assert kickers[0]["bk"] == 1
+
+
+def test_fence_idp_board():
+    from idp_board import FENCE_SOURCES, fence_board
+    assert len(FENCE_SOURCES) == 20
+    fence = fence_board()
+    assert len(fence) == 200
+    assert fence[0]["name"] == "Aidan Hutchinson"
+    assert fence[0]["bk"] == 1
+    assert fence[0]["n"] >= 10
+    assert fence[0]["pos"] == "DL"
+    assert {r["pos"] for r in fence} <= {"DL", "LB", "DB"}
 
 
 def test_bpl_slate():

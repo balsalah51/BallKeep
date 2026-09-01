@@ -216,7 +216,7 @@ def test_jaccard_and_slug():
     assert "injury" not in story_slug("Hello!!!", "injury") or True
     slug = story_slug("Christian McCaffrey calf strain", "injury")
     assert slug.startswith("christian-mccaffrey")
-    assert normalize_title("Hello — World") == "hello world"
+    assert normalize_title("Hello \u2014 World") == "hello world"
 
 
 def test_rematch_fills_baseball_players():

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Ball Keep Discord desk — rankings, calculator, tape, and a full server publish."""
+"""Ball Keep Discord desk - rankings, calculator, tape, and a full server publish."""
 from __future__ import annotations
 
 import os
@@ -65,7 +65,7 @@ def fmt(n) -> str:
     try:
         return f"{int(n):,}"
     except (TypeError, ValueError):
-        return "—"
+        return "-"
 
 
 class Desk:
@@ -106,13 +106,13 @@ def player_embed(discord, p: dict):
         prem = lists.get("The Premier")
         label = "The Premier" if prem else "The Pitch"
         shown = prem or keep
-        emb.add_field(name=label, value=f"#{shown} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK{price}", inline=True)
+        emb.add_field(name=label, value=f"#{shown} · avg {p.get('keep_avg') or p.get('avg') or '-'} · {fmt(value)} BK{price}", inline=True)
         if prem and keep and prem != keep:
             emb.add_field(name="The Pitch", value=f"#{keep}", inline=True)
     elif baseball and keep:
-        emb.add_field(name="BB Keep", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK", inline=True)
+        emb.add_field(name="BB Keep", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '-'} · {fmt(value)} BK", inline=True)
     elif keep:
-        emb.add_field(name="The Keep", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '—'} · {fmt(value)} BK", inline=True)
+        emb.add_field(name="The Keep", value=f"#{keep} · avg {p.get('keep_avg') or p.get('avg') or '-'} · {fmt(value)} BK", inline=True)
     if lists.get("The Lineup"):
         emb.add_field(name="The Lineup", value=f"#{lists['The Lineup']}", inline=True)
     if lists.get("BK Pitchers"):
@@ -145,13 +145,13 @@ def player_embed(discord, p: dict):
     if hit.get("g"):
         emb.add_field(
             name="2026 bat",
-            value=f"{hit.get('avg') or '—'} / {hit.get('hr') or 0} HR / {hit.get('sb') or 0} SB / {hit.get('ops') or '—'} OPS · {hit.get('g')} G",
+            value=f"{hit.get('avg') or '-'} / {hit.get('hr') or 0} HR / {hit.get('sb') or 0} SB / {hit.get('ops') or '-'} OPS · {hit.get('g')} G",
             inline=False,
         )
     if pit.get("ip") or pit.get("g"):
         emb.add_field(
             name="2026 arm",
-            value=f"{pit.get('era') or '—'} ERA · {pit.get('whip') or '—'} WHIP · {pit.get('so') or 0} K in {pit.get('ip') or '—'} IP",
+            value=f"{pit.get('era') or '-'} ERA · {pit.get('whip') or '-'} WHIP · {pit.get('so') or 0} K in {pit.get('ip') or '-'} IP",
             inline=False,
         )
     if soccer and (p.get("pts") or p.get("gls") is not None):
@@ -166,7 +166,7 @@ def player_embed(discord, p: dict):
             emb.add_field(name="2025/26 FPL", value=" · ".join(str(x) for x in bits_pl), inline=False)
     bits_bio = []
     if p.get("bats") or p.get("throws"):
-        bits_bio.append(f"B/T {p.get('bats') or '—'}{p.get('throws') or ''}")
+        bits_bio.append(f"B/T {p.get('bats') or '-'}{p.get('throws') or ''}")
     if p.get("height"):
         bits_bio.append(str(p["height"]) + (f" / {p['weight']} lbs" if p.get("weight") else ""))
     if p.get("debut"):
@@ -216,7 +216,7 @@ def trade_embed(discord, result: dict):
             return "_empty_"
         lines = []
         for x in items:
-            meta = "Pick" if x.get("kind") == "pick" else f"{x.get('pos','')} {x.get('team','')} · #{x.get('rank') or '—'}"
+            meta = "Pick" if x.get("kind") == "pick" else f"{x.get('pos','')} {x.get('team','')} · #{x.get('rank') or '-'}"
             lines.append(f"**{x['name']}** · {meta} · `{fmt(x['value'])}`")
         return "\n".join(lines)
 
@@ -241,6 +241,7 @@ def build_bot():
 
     BOARDS = [
         app_commands.Choice(name="The Keep (Superflex)", value="keep"),
+        app_commands.Choice(name="The Fence (IDP)", value="fence"),
         app_commands.Choice(name="The Board", value="board"),
         app_commands.Choice(name="Redraft PPR", value="ppr"),
         app_commands.Choice(name="The Classic", value="classic"),
@@ -259,6 +260,9 @@ def build_bot():
         app_commands.Choice(name="Running Back", value="RB"),
         app_commands.Choice(name="Wide Receiver", value="WR"),
         app_commands.Choice(name="Tight End", value="TE"),
+        app_commands.Choice(name="Defensive Line", value="DL"),
+        app_commands.Choice(name="Linebacker", value="LB"),
+        app_commands.Choice(name="Defensive Back", value="DB"),
     ]
     BB_BOARDS = [
         app_commands.Choice(name="The Keep (overall dynasty 300)", value="bbkeep"),
@@ -389,7 +393,7 @@ def build_bot():
         for h in hits:
             lists = h.get("lists") or {}
             keep = lists.get("The Keep") or h.get("bk")
-            lines.append(f"**{h['name']}** · {h.get('pos','')} {h.get('team','')} · Keep #{keep or '—'}")
+            lines.append(f"**{h['name']}** · {h.get('pos','')} {h.get('team','')} · Keep #{keep or '-'}")
         emb = discord.Embed(title=f"Search · {query}", description="\n".join(lines), color=BLUE)
         await interaction.response.send_message(embed=emb)
 
@@ -499,16 +503,16 @@ def build_bot():
             f"**{target.get('name')}** · {target.get('youtube_title') or 'highlight'}\n{yt}"
         )
 
-    @bot.tree.command(name="hot", description="BK Hot board — names to buy")
+    @bot.tree.command(name="hot", description="BK Hot board - names to buy")
     async def hot_cmd(interaction: discord.Interaction):
         lines = [f"**{i}. {x['name']}** ({x['pos']} {x['team']})\n{x['why']}" for i, x in enumerate(desk.cat.raw["hot"], 1)]
-        emb = discord.Embed(title="🔥 Hot — Buy", description="\n\n".join(lines)[:4000], color=RED)
+        emb = discord.Embed(title="🔥 Hot - Buy", description="\n\n".join(lines)[:4000], color=RED)
         await interaction.response.send_message(embed=emb)
 
-    @bot.tree.command(name="cold", description="BK Cold board — names to sell")
+    @bot.tree.command(name="cold", description="BK Cold board - names to sell")
     async def cold_cmd(interaction: discord.Interaction):
         lines = [f"**{i}. {x['name']}** ({x['pos']} {x['team']})\n{x['why']}" for i, x in enumerate(desk.cat.raw["cold"], 1)]
-        emb = discord.Embed(title="❄️ Cold — Sell", description="\n\n".join(lines)[:4000], color=BLUE)
+        emb = discord.Embed(title="❄️ Cold - Sell", description="\n\n".join(lines)[:4000], color=BLUE)
         await interaction.response.send_message(embed=emb)
 
     @bot.tree.command(name="rookies", description="2026 drafted rookie Superflex board")
@@ -533,11 +537,11 @@ def build_bot():
 
         def blurb(p):
             lists = p.get("lists") or {}
-            keep = lists.get("The Keep") or "—"
+            keep = lists.get("The Keep") or "-"
             return (
                 f"{p.get('pos')} {p.get('team')}\n"
                 f"Keep #{keep} · `{fmt(bk_value(lists.get('The Keep')))}`\n"
-                f"PPR #{lists.get('Redraft PPR') or '—'} · STD #{lists.get('Redraft Standard') or '—'}"
+                f"PPR #{lists.get('Redraft PPR') or '-'} · STD #{lists.get('Redraft Standard') or '-'}"
             )
 
         emb = discord.Embed(title=f"{pa['name']} vs {pb['name']}", color=INK)
@@ -560,9 +564,9 @@ def build_bot():
         lists = p.get("lists") or {}
         keep = lists.get("The Keep")
         if lists.get("Hot"):
-            verdict, color, line = "KEEP — actually, BUY", RED, "On the Hot board. Do not get cute."
+            verdict, color, line = "KEEP - actually, BUY", RED, "On the Hot board. Do not get cute."
         elif lists.get("Cold"):
-            verdict, color, line = "CUT — sell the name", BLUE, "On the Cold board. Cash it before the tape does."
+            verdict, color, line = "CUT - sell the name", BLUE, "On the Cold board. Cash it before the tape does."
         elif keep and keep <= 15:
             verdict, color, line = "KEEP forever", RED, "Superflex first-rounder. You are not 'selling high.'"
         elif keep and keep <= 40:
@@ -709,7 +713,7 @@ def build_bot():
         emb.set_footer(text=f"{stamp} · {x.get('src') or 'Ball Keep'} · {desk.cat.updated}")
         await interaction.response.send_message(embed=emb)
 
-    @bot.tree.command(name="start", description="Who to start this week — redraft PPR, with Keep as a tiebreak")
+    @bot.tree.command(name="start", description="Who to start this week - redraft PPR, with Keep as a tiebreak")
     @app_commands.describe(a="Player A", b="Player B")
     @app_commands.autocomplete(a=ac_player)
     @app_commands.autocomplete(b=ac_player)
@@ -741,8 +745,8 @@ def build_bot():
             description=f"{why}\n\nSit **{loser['name']}** unless the matchup is a cartoon.",
             color=GREEN,
         )
-        emb.add_field(name=pa["name"], value=f"PPR #{ppr_rank(pa) if ppr_rank(pa) != 999 else '—'} · Keep #{keep_rank(pa)}", inline=True)
-        emb.add_field(name=pb["name"], value=f"PPR #{ppr_rank(pb) if ppr_rank(pb) != 999 else '—'} · Keep #{keep_rank(pb)}", inline=True)
+        emb.add_field(name=pa["name"], value=f"PPR #{ppr_rank(pa) if ppr_rank(pa) != 999 else '-'} · Keep #{keep_rank(pa)}", inline=True)
+        emb.add_field(name=pb["name"], value=f"PPR #{ppr_rank(pb) if ppr_rank(pb) != 999 else '-'} · Keep #{keep_rank(pb)}", inline=True)
         await interaction.response.send_message(embed=emb)
 
     @bot.tree.command(name="sources", description="30+ Super Aggregate desks inside The Keep")
@@ -779,7 +783,7 @@ def build_bot():
             return
         await interaction.response.send_message(embed=list_embed(discord, f"BaseBallKeep · {board.name}", rows, NAVY))
 
-    @bot.tree.command(name="bbtrade", description="BaseBallKeep trade calculator — same BK Value curve")
+    @bot.tree.command(name="bbtrade", description="BaseBallKeep trade calculator - same BK Value curve")
     @app_commands.describe(mode="Which diamond calculator", side_a="Names, comma-separated", side_b="Names, comma-separated")
     @app_commands.choices(mode=BB_MODES)
     async def bbtrade_cmd(interaction: discord.Interaction, mode: app_commands.Choice[str], side_a: str, side_b: str):
@@ -788,11 +792,11 @@ def build_bot():
         emb.set_footer(text="Fair = within 8% · same curve as ballkeep.com/bb/trade.html")
         await interaction.response.send_message(embed=emb)
 
-    @bot.tree.command(name="bbwire", description="BaseBallKeep waiver adds — dynasty stash vs the longer redraft wire")
+    @bot.tree.command(name="bbwire", description="BaseBallKeep waiver adds - dynasty stash vs the longer redraft wire")
     @app_commands.describe(kind="Dynasty (short) or redraft (longer, higher priority)")
     @app_commands.choices(kind=[
         app_commands.Choice(name="Dynasty stashes", value="dynasty"),
-        app_commands.Choice(name="Redraft priority 1–50", value="redraft"),
+        app_commands.Choice(name="Redraft priority 1-50", value="redraft"),
     ])
     async def bbwire_cmd(interaction: discord.Interaction, kind: app_commands.Choice[str]):
         key = "bb_waivers_redraft" if kind.value == "redraft" else "bb_waivers_dynasty"
@@ -800,7 +804,7 @@ def build_bot():
         if not rows:
             await interaction.response.send_message("Waiver lists missing. Rebuild the catalog.", ephemeral=True)
             return
-        lines = [f"**P{x['pri']}. {x['name']}** · {x.get('pos','')} {x.get('team','')} — {x.get('why')}" for x in rows]
+        lines = [f"**P{x['pri']}. {x['name']}** · {x.get('pos','')} {x.get('team','')} - {x.get('why')}" for x in rows]
         # Discord field limit; split into chunks
         body = "\n\n".join(lines)
         emb = discord.Embed(
@@ -836,7 +840,7 @@ def build_bot():
             return
         await interaction.response.send_message(embed=list_embed(discord, f"PitchKeep · {board.name}", rows, PURPLE))
 
-    @bot.tree.command(name="pltrade", description="PitchKeep trade calculator — same BK Value curve")
+    @bot.tree.command(name="pltrade", description="PitchKeep trade calculator - same BK Value curve")
     @app_commands.describe(mode="Which PitchKeep calculator", side_a="Names, comma-separated", side_b="Names, comma-separated")
     @app_commands.choices(mode=PL_MODES)
     async def pltrade_cmd(interaction: discord.Interaction, mode: app_commands.Choice[str], side_a: str, side_b: str):
@@ -881,7 +885,7 @@ def build_bot():
     @bot.command(name="help")
     async def prefix_help(ctx: commands.Context):
         await ctx.reply(
-            "**Ball Keep desk** — try `/desk` for the full menu.\n"
+            "**Ball Keep desk** - try `/desk` for the full menu.\n"
             "`!bk player maye` · `!bk video jsn` · `!bk trade Allen vs Bijan`\n"
             "`!bk top keep` · `who is Drake Maye` · `trade Allen for Bijan` · `start Gibbs or Jeanty`"
         )
@@ -946,7 +950,7 @@ def build_bot():
                 ra = (pa.get("lists") or {}).get("Redraft PPR") or 999
                 rb = (pb.get("lists") or {}).get("Redraft PPR") or 999
                 winner = pa if ra <= rb else pb
-                await message.reply(f"Start **{winner['name']}**. PPR #{min(ra, rb) if min(ra, rb) != 999 else '—'} beats the other name.")
+                await message.reply(f"Start **{winner['name']}**. PPR #{min(ra, rb) if min(ra, rb) != 999 else '-'} beats the other name.")
                 return
         m = re.search(r"^video (?:of |on )?(.+?)[\?]?$", low)
         if m:
