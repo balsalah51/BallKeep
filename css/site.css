@@ -303,6 +303,11 @@ a.news-item:hover h3 { color: var(--red); }
 .desk-block.main { background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
 .desk-block.lists { background: #eef3f7; border: 1px solid #c5d2de; }
 .desk-block.lists .kicker { color: #3d5268; }
+.desk-block.lists .tile.lead { border-width: 2px; padding: 20px 20px 18px; }
+.desk-block.lists .tile.lead.keep { border-color: var(--red); background: #fff5f6; }
+.desk-block.lists .tile.lead.board { border-color: var(--ink); background: #e8eef5; }
+.desk-block.lists .tile.lead.keep h3 { color: var(--red); font-size: 22px; }
+.desk-block.lists .tile.lead.board h3 { color: var(--ink); font-size: 22px; }
 .desk-block.schedules { background: #e4f1f8; border: 1px solid #b5d4e4; }
 .desk-block.schedules .kicker { color: #17688a; }
 .desk-block.schedules .tile { background: #fff; }

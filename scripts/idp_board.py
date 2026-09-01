@@ -1,6 +1,8 @@
-"""The Fence: dynasty IDP mean of 20 markets popular IDP leagues draft from.
+"""The Fence: mixed Superflex + IDP dynasty board.
 
-Unranked on a board is a skip, never 999. IDP only: DL, LB, DB.
+Published mixed cores (Glossery Top 725) plus Keep / IDP stitches using
+the IDP Show slot method. Separate IDP-only mean stays as one source.
+Unranked on a board is a skip, never 999.
 """
 from __future__ import annotations
 
@@ -15,6 +17,8 @@ from bk_curve import bk_value  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 FENCE_N = 200
+FENCE_MIXED_N = 400
+IDP_POS = {"DL", "LB", "DB", "DE", "DT", "CB", "S"}
 
 IDP_LONG = (
     "Dynasty Nerds IDP",
@@ -46,6 +50,27 @@ FENCE_SOURCES = [
 ]
 
 assert len(FENCE_SOURCES) == 20, len(FENCE_SOURCES)
+
+MIXED_LONG = (
+    "Glossery Mixed",
+    "Consensus stitch",
+    "The Keep",
+    "Fence IDP",
+)
+
+FENCE_MIXED_SOURCES = [
+    ("Glossery Mixed", "https://www.dynastynerds.com/idp/glossery-mixed-idp-rankings/", "Dynasty Nerds Glossery Superflex + IDP top 725, Aug 21 2026. Long core."),
+    ("Consensus stitch", "https://www.theidpshow.com/p/combined-idp-offense-dynasty-rankings-fantasy-football", "IDP Show method: Keep skill + Fence IDP dropped into Glossery startup slots."),
+    ("The Keep", "https://ballkeep.com/the-keep.html", "Superflex skill-player 400. IDP names are a skip."),
+    ("Fence IDP", "https://ballkeep.com/the-fence.html", "IDP-only mean of 20 markets. Skill names are a skip."),
+    ("IDP Show startup", "https://www.theidpshow.com/p/combined-idp-offense-dynasty-rankings-fantasy-football", "Same stitch, IDP slots a few rounds earlier the way Sleeper IDP startups run."),
+    ("Youth mixed", "", "Kids climb on the consensus stitch."),
+    ("Contender mixed", "", "Win-now vets climb on the consensus stitch."),
+    ("IDP-early", "", "Defenders climb. Popular when 40%+ of starters are IDP."),
+    ("Skill-first", "", "Defenders cool. Skill-heavy IDP rooms."),
+    ("TE premium", "", "Tight ends climb, same Superflex + IDP board."),
+]
+assert len(FENCE_MIXED_SOURCES) == 10, len(FENCE_MIXED_SOURCES)
 
 _ALIASES = {
     "roquon smith": "roquan smith",
@@ -201,7 +226,8 @@ def expand_idp_leagues(core: dict[str, dict], meta: dict) -> dict[str, dict]:
     return sources
 
 
-def fence_board() -> list[dict]:
+def idp_only_board() -> list[dict]:
+    """IDP-only mean of 20 markets. Hutchinson is 1.01 on this slice."""
     dn = _load_rows("idp-dn")
     pff = _load_rows("idp-pff")
     dealer = _load_rows("idp-dealer")
@@ -236,6 +262,177 @@ def fence_board() -> list[dict]:
         })
     rows.sort(key=lambda r: (r["avg"], -r["n"], r["name"] or r["key"]))
     rows = rows[:FENCE_N]
+    out = []
+    for i, r in enumerate(rows, 1):
+        out.append({**r, "bk": i, "value": bk_value(i)})
+    return out
+
+
+def _is_idp(pos: str) -> bool:
+    return (pos or "").upper() in IDP_POS
+
+
+def _keep_rows() -> list[dict]:
+    path = ROOT / "data" / "the-keep.json"
+    blob = json.loads(path.read_text())
+    return blob.get("players") or []
+
+
+def _glossery_rows() -> list[dict]:
+    return _load_rows("idp-glossery-mixed")
+
+
+def _merge_meta(*row_lists: list[list[dict]]) -> dict[str, dict]:
+    meta: dict[str, dict] = {}
+    for rows in row_lists:
+        for row in rows:
+            key = idp_key(row.get("name") or row.get("key") or "")
+            if not key:
+                continue
+            cur = meta.setdefault(key, {
+                "name": row.get("name") or key,
+                "pos": row.get("pos") or "",
+                "team": row.get("team") or "",
+                "age": row.get("age") or "",
+            })
+            if row.get("name") and len(str(row.get("name"))) >= len(str(cur.get("name") or "")):
+                cur["name"] = row["name"]
+            if row.get("pos") and not cur.get("pos"):
+                cur["pos"] = row["pos"]
+            if row.get("team") and (not cur.get("team") or cur.get("team") == "FA"):
+                cur["team"] = row["team"]
+            if row.get("age") and not cur.get("age"):
+                cur["age"] = row["age"]
+    return meta
+
+
+def _ordered_keys(rows: list[dict]) -> list[str]:
+    out, seen = [], set()
+    for row in sorted(rows, key=lambda r: int(r.get("bk") or r.get("rank") or 9999)):
+        key = idp_key(row.get("name") or row.get("key") or "")
+        if key and key not in seen:
+            seen.add(key)
+            out.append(key)
+    return out
+
+
+def _slot_kind(pos: str) -> str:
+    return "IDP" if _is_idp(pos) else "SKILL"
+
+
+def _stitch(skill_keys: list[str], idp_keys: list[str], slots: list[str]) -> dict[str, int]:
+    si = ii = 0
+    used = set()
+    out = {}
+    rank = 1
+    for slot in slots:
+        if slot == "IDP":
+            while ii < len(idp_keys) and idp_keys[ii] in used:
+                ii += 1
+            if ii >= len(idp_keys):
+                continue
+            key = idp_keys[ii]
+            ii += 1
+        else:
+            while si < len(skill_keys) and skill_keys[si] in used:
+                si += 1
+            if si >= len(skill_keys):
+                continue
+            key = skill_keys[si]
+            si += 1
+        used.add(key)
+        out[key] = rank
+        rank += 1
+    return out
+
+
+def _shift_idp_slots(slots: list[str], earlier: int) -> list[str]:
+    """Move each IDP slot `earlier` places toward the top. Skill fills the gaps."""
+    idp_at = [i for i, s in enumerate(slots) if s == "IDP"]
+    moved = []
+    taken = set()
+    for i in idp_at:
+        dest = min(len(slots) - 1, max(0, i - earlier))
+        while dest in taken and dest < len(slots) - 1:
+            dest += 1
+        taken.add(dest)
+        moved.append(dest)
+    out = ["SKILL"] * len(slots)
+    for i in moved:
+        if i < len(out):
+            out[i] = "IDP"
+    return out
+
+
+def expand_mixed_leagues(keep: list[dict], idp: list[dict], gloss: list[dict], meta: dict) -> dict[str, dict]:
+    skill_keys = _ordered_keys(keep)
+    idp_keys = _ordered_keys(idp)
+    slots = [_slot_kind(r.get("pos") or "") for r in sorted(gloss, key=lambda x: int(x["rank"]))]
+    stitch = _stitch(skill_keys, idp_keys, slots)
+    early = _stitch(skill_keys, idp_keys, _shift_idp_slots(slots, 10))
+    late = _stitch(skill_keys, idp_keys, _shift_idp_slots(slots, -12))
+    show = _stitch(skill_keys, idp_keys, _shift_idp_slots(slots, 6))
+    base = [key for key, _ in sorted(stitch.items(), key=lambda kv: kv[1])]
+
+    def youth(key, i):
+        return i + max(0, (_age(meta, key) - 24)) * 1.8
+
+    def vet(key, i):
+        return i - max(0, (_age(meta, key) - 29)) * 1.6
+
+    def te_up(key, i):
+        return i - (14 if _pos(meta, key) == "TE" else 0)
+
+    keep_map = {idp_key(r.get("name") or r.get("key") or ""): int(r.get("bk") or r.get("rank") or 0)
+                for r in keep if r.get("bk") or r.get("rank")}
+    idp_map = {idp_key(r.get("name") or r.get("key") or ""): int(r.get("bk") or r.get("rank") or 0)
+               for r in idp if r.get("bk") or r.get("rank")}
+    gloss_map = _map_from_rows(gloss)
+    return {
+        "Glossery Mixed": gloss_map,
+        "Consensus stitch": stitch,
+        "The Keep": {k: v for k, v in keep_map.items() if k and v},
+        "Fence IDP": {k: v for k, v in idp_map.items() if k and v},
+        "IDP Show startup": show,
+        "Youth mixed": remap(base, youth, cap=400),
+        "Contender mixed": remap(base, vet, cap=400),
+        "IDP-early": early,
+        "Skill-first": late,
+        "TE premium": remap(base, te_up, cap=400),
+    }
+
+
+def fence_board() -> list[dict]:
+    """Mixed Superflex + IDP. Skill and IDP on one board."""
+    keep = _keep_rows()
+    idp = idp_only_board()
+    gloss = _glossery_rows()
+    meta = _merge_meta(keep, idp, gloss)
+    sources = expand_mixed_leagues(keep, idp, gloss, meta)
+    names = set()
+    for src in sources.values():
+        names.update(src)
+    rows = []
+    for key in names:
+        ranks = {name: src[key] for name, src in sources.items() if key in src}
+        if not ranks:
+            continue
+        if not any(name in ranks for name in MIXED_LONG):
+            continue
+        avg = round(sum(ranks.values()) / len(ranks), 2)
+        info = meta.get(key) or {}
+        rows.append({
+            "key": key,
+            "name": info.get("name") or key,
+            "pos": info.get("pos") or "",
+            "team": info.get("team") or "",
+            "age": info.get("age") or "",
+            "avg": avg,
+            "n": len(ranks),
+            "ranks": ranks,
+        })
+    rows.sort(key=lambda r: (r["avg"], -r["n"], r["name"] or r["key"]))
+    rows = rows[:FENCE_MIXED_N]
     out = []
     for i, r in enumerate(rows, 1):
         out.append({**r, "bk": i, "value": bk_value(i)})

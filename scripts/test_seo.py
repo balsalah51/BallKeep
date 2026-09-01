@@ -243,9 +243,9 @@ def test_pos_filter_chips():
     assert 'id="board-pos"' in chips
     assert 'data-pos="QB"' in chips
     assert 'data-pos="RB"' in chips
-    idp, _ = pos_filter("fence-pos", ["DL", "LB", "DB"])
+    idp, _ = pos_filter("fence-pos", ["QB", "RB", "WR", "TE", "DL", "LB", "DB"])
     assert 'data-pos="DL"' in idp
-    assert 'data-pos="QB"' not in idp
+    assert 'data-pos="QB"' in idp
     assert "applyRankFilter" in js
 
 
@@ -263,15 +263,23 @@ def test_dst_and_kicker_boards():
 
 
 def test_fence_idp_board():
-    from idp_board import FENCE_SOURCES, fence_board
+    from idp_board import FENCE_MIXED_SOURCES, FENCE_SOURCES, fence_board, idp_only_board
     assert len(FENCE_SOURCES) == 20
+    assert len(FENCE_MIXED_SOURCES) == 10
+    idp = idp_only_board()
+    assert len(idp) == 200
+    assert idp[0]["name"] == "Aidan Hutchinson"
+    assert idp[0]["pos"] == "DL"
     fence = fence_board()
-    assert len(fence) == 200
-    assert fence[0]["name"] == "Aidan Hutchinson"
+    assert len(fence) == 400
+    assert fence[0]["name"] == "Josh Allen"
     assert fence[0]["bk"] == 1
-    assert fence[0]["n"] >= 10
-    assert fence[0]["pos"] == "DL"
-    assert {r["pos"] for r in fence} <= {"DL", "LB", "DB"}
+    assert fence[0]["pos"] == "QB"
+    assert fence[0]["n"] >= 6
+    assert {r["pos"] for r in fence} >= {"QB", "RB", "WR", "TE", "DL", "LB", "DB"}
+    first_idp = next(r for r in fence if r["pos"] in {"DL", "LB", "DB"})
+    assert first_idp["name"] == "Aidan Hutchinson"
+    assert first_idp["bk"] <= 80
 
 
 def test_bpl_slate():
