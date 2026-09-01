@@ -1,7 +1,7 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-01T22:23:51Z",
-  "fresh": 124,
+  "updated": "2026-09-01T23:21:45Z",
+  "fresh": 80,
   "stories": [
     {
       "id": "nets-michael-porter-jr-impasse-extension-f3a5caec",
@@ -516,12 +516,26 @@
       "slug": "trade-rumors-stephen-curry-nikola-jokic-extensions-set-1219f277",
       "sport": "basketball",
       "headline": "NBA Trade Rumors: Warriors’ Good Stephen Curry Sign, Jonathan Kuminga Agent & More",
-      "blurb": "NBA Trade Rumors: Jonathan Kuminga-Lakers, Kawhi Leonard & the New Big Board heavy.com",
-      "summary": "NBA Trade Rumors: Jonathan Kuminga-Lakers, Kawhi Leonard & the New Big Board heavy.com NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More heavy.com NBA Trade Machine Rankings: Stephen Curry, Anthony Davis and more HoopsHype Aggregated from heavy.com, HoopsHype.",
+      "blurb": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More heavy.com",
+      "summary": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More heavy.com NBA Trade Machine Rankings: Stephen Curry, Anthony Davis and more HoopsHype NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com Aggregated from heavy.com, HoopsHype.",
       "category": "trade",
       "published": "2026-07-30T07:00:00Z",
       "updated": "2026-09-01T13:00:08Z",
       "players": [
+        {
+          "key": "stephen curry",
+          "name": "Stephen Curry",
+          "slug": "stephen-curry",
+          "pos": "PG",
+          "team": "GSW"
+        },
+        {
+          "key": "nikola jokic",
+          "name": "Nikola Jokic",
+          "slug": "nikola-jokic",
+          "pos": "C",
+          "team": "DEN"
+        },
         {
           "key": "jonathan kuminga",
           "name": "Jonathan Kuminga",
@@ -544,25 +558,11 @@
           "team": "DAL"
         },
         {
-          "key": "stephen curry",
-          "name": "Stephen Curry",
-          "slug": "stephen-curry",
-          "pos": "PG",
-          "team": "GSW"
-        },
-        {
           "key": "jimmy butler",
           "name": "Jimmy Butler",
           "slug": "jimmy-butler",
           "pos": "SF",
           "team": "GSW"
-        },
-        {
-          "key": "nikola jokic",
-          "name": "Nikola Jokic",
-          "slug": "nikola-jokic",
-          "pos": "C",
-          "team": "DEN"
         }
       ],
       "sources": [
@@ -2446,112 +2446,6 @@
           "kind": "article",
           "snippet": "Curry became eligible for a contract extension on Saturday, and he said he expects the deal to \"happen at the right time.\"",
           "published": "Tue, 01 Sep 2026 01:15:10 +0000"
-        }
-      ]
-    },
-    {
-      "id": "knicks-proposed-trade-josh-hart-9x-all-star-5caa19f3",
-      "slug": "knicks-proposed-trade-josh-hart-9x-all-star-5caa19f3",
-      "sport": "basketball",
-      "headline": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade",
-      "blurb": "Proposed 3-Team NBA Trade Lands 18 PPG Star Wing With Lakers Yahoo Sports",
-      "summary": "Luka Doncic, Josh Hart, Immanuel Quickley, Derrick White and Zion Williamson: Proposed 3-Team NBA Trade Lands 18 PPG Star Wing With Lakers Yahoo Sports Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic heavy.com Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade heavy.com Aggregated from Yahoo Sports, heavy.com.",
-      "category": "trade",
-      "published": "2026-08-19T07:00:00Z",
-      "updated": "2026-08-30T15:56:31Z",
-      "players": [
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
-        },
-        {
-          "key": "josh hart",
-          "name": "Josh Hart",
-          "slug": "josh-hart",
-          "pos": "SF",
-          "team": "NYK"
-        },
-        {
-          "key": "immanuel quickley",
-          "name": "Immanuel Quickley",
-          "slug": "immanuel-quickley",
-          "pos": "PG",
-          "team": "TOR"
-        },
-        {
-          "key": "derrick white",
-          "name": "Derrick White",
-          "slug": "derrick-white",
-          "pos": "SG",
-          "team": "BOS"
-        },
-        {
-          "key": "zion williamson",
-          "name": "Zion Williamson",
-          "slug": "zion-williamson",
-          "pos": "PF",
-          "team": "NOP"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSlpHSXNVS3NOT002Um5QcWpjM0l6b09KTHUtemlZLWNCZThfTkM2U3lBNmhEV0d3YlJ1b1dCNG13dW5MeVctaTBXenhhalQ1b0FjbTdTVFZCUDAyMlljaDg2T1pJN3hfRTA5bzVkeWc0QWdyVzYwdXpDSV9NZXNMLUZtM05IVF8takhHcHdn?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade heavy.com",
-          "published": "Sun, 30 Aug 2026 12:57:53 GMT"
-        },
-        {
-          "title": "Celtics Proposed to Trade Derrick White for All-Star SG in 3-Player Bucks Deal",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdGZ2Mi1XVWFCaFBkUTRENmV0REM5TlhiNV9UQVlzU29jRTFiSnRDdFgxVVg4SXdmVThBa3NSZV9XT2w3NmRuRjItemhQR0VhTmJOd2FYZk54UlRBQXJhQkpSMlEwNHZsSFdlQWwwVUY1ay1mV1Uycjl5TXJ4N2VId0pxVFRaYlhYTFpNakxR?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Celtics Proposed to Trade Derrick White for All-Star SG in 3-Player Bucks Deal Yahoo Sports",
-          "published": "Thu, 27 Aug 2026 15:30:14 GMT"
-        },
-        {
-          "title": "Zion Williamson Proposed to Land With Knicks in Massive 4-Player NBA Trade",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdjcxVlVGNm11ZEd0NnNER2kwY04tNTkxRnQ4RmthQzFOa3E1ZUVkZURLVTQ3QUJuZHJqY3lSRDQ1TFZGazNlSTRZOWZOS1FTM2k0aGphbDVEWms0RWNpQmVLRjZUYzZpeEVjb3JDcjd3QUxWTjJ3V096RUl1Y3NTZU0zZVpDZw?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Zion Williamson Proposed to Land With Knicks in Massive 4-Player NBA Trade heavy.com",
-          "published": "Thu, 27 Aug 2026 12:31:06 GMT"
-        },
-        {
-          "title": "Raptors Proposed to Trade Immanuel Quickley for 2x NBA Champion Star PG",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUjNKb1NmRzZTdWg4VU1KN0x2c2xNWkhQMWYtQmpMRnNkZWtaamR6N2JVcEt4RjcyNVZNVHdZZWpYbVZYdVlDZzFNUXN2dFgzNG1Ta2wxeFhxMUVNMUE0YWNKZ1BMTzVSbEt4T3RrVWJoclFlZmtpUWtzRG9MaWhKZEdGU1c2bXM?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Raptors Proposed to Trade Immanuel Quickley for 2x NBA Champion Star PG heavy.com",
-          "published": "Sun, 30 Aug 2026 15:53:53 GMT"
-        },
-        {
-          "title": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNN1lBSUFfcXZqWDl2S0o2ZjJoekw1TklpNmlMSF9UTTdPcXAtak1VUGZ1a29xVGtsdElsek9YWWlvS3VjbXN5LW1TRVJESUM2eHQwVzd3VUl5YTdtWXBmX0ZjTUt4ZFJ0ME1JcHlsSlBaV1hoOWRtdFdGNm5tTlFkanF0UXlvaDA?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade Yahoo Sports",
-          "published": "Sun, 30 Aug 2026 15:56:31 GMT"
-        },
-        {
-          "title": "Proposed 3-Team NBA Trade Lands 18 PPG Star Wing With Lakers",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRaVJ5Q2MzM1czS0xSZkhSUjVYbjFNYnBINDBXVzdaNFVPZVRxNHo1UzNCVUxLaUViNi1sYVR2RW15SmdQeFJ2QVI5S1hhUHBwYV9xelM4RjhWUHlOX1NBSzg0M1RzZm1Rd1lCMG5TU3AxcUNtcmEteEdZVmZvTjA?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Proposed 3-Team NBA Trade Lands 18 PPG Star Wing With Lakers Yahoo Sports",
-          "published": "Wed, 19 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOclJLc2lQLVRHaU5MOTRlWXFOVGVtM2dPRldwdVRJR3ZGSlAxZ0h6dnpuSldPWjR0dUc3Z1hPaGR6YUd1NEpoSmlYRVJLS1lDRWZ0ZTZ5M1VVc0FrQ2lDS2hiR1Vvd2RKWWg4SmVUTk5LSXJhNXdKZUhiUS1zaU1sTWNiWjNIazkwcFE?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic heavy.com",
-          "published": "Fri, 28 Aug 2026 13:33:15 GMT"
         }
       ]
     },
@@ -5464,8 +5358,8 @@
       "slug": "winners-losers-jaren-jackson-jr-trade-utah-127e9712",
       "sport": "basketball",
       "headline": "Grizzlies and Jazz’s projected lineups after surprising trade involving Jaren Jackson Jr, Walter Clayton",
-      "blurb": "Mock Trade: Nuggets Send Nikola Jokic To Grizzlies For Ja Morant And Jaren Jackson Jr Sports Illustrated",
-      "summary": "Mock Trade: Nuggets Send Nikola Jokic To Grizzlies For Ja Morant And Jaren Jackson Jr Sports Illustrated Seattle Seahawks NFL Preseason Week 2 WINNERS & LOSERS YouTube Winners, Losers from Jaren Jackson Jr. Aggregated from Sports Illustrated, YouTube, NBC Sports, bolavip.com, Al Bat and 6 more.",
+      "blurb": "Trade Pushes Memphis Grizzlies Down in NBA Power Rankings si.com",
+      "summary": "Jaren Jackson Jr., Nikola Jokic, Ja Morant, Scotty Pippen Jr. and Austin Reaves: Trade Pushes Memphis Grizzlies Down in NBA Power Rankings si.com Seattle Seahawks NFL Preseason Week 2 WINNERS & LOSERS YouTube Winners, Losers from Jaren Jackson Jr. Aggregated from si.com, YouTube, NBC Sports, Sports Illustrated, bolavip.com and 7 more.",
       "category": "injury",
       "published": "2024-03-16T07:00:00Z",
       "updated": "2026-08-24T17:10:37Z",
@@ -5730,6 +5624,14 @@
           "kind": "article",
           "snippet": "Memphis Grizzlies Injury Report (March 16): Latest on Jaren Jackson Jr. and Scotty Pippen Jr.'s status Sportskeeda",
           "published": "Sat, 16 Mar 2024 07:00:00 GMT"
+        },
+        {
+          "title": "5 Winners, 2 Losers From Grizzlies' Jaren Jackson Jr. Blockbuster Trade",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONUxGc2RBQlFxWnZxZnRXYm9mZ2JTTmQtYU9QTkgzMklQeGpLU1liT1l0ZGhiNjg3dXkxbHRtNF9kai12SVJRenEydk1yQXBBMjdrbFUtcFNGRW5aUGN2SHBkUE5ISEJkTGhxWlVxbXJ4MDR5UVBwT3llNzNYbGRCakUzVHRpWkxYQ0Y1eGhXRUxULS1WTEdZajZwdkdJZzJXUC0zV24yQm1sSHg5TlN5RWpWc3Bsd3U5bUpIS3ZxRnV0QQ?oc=5",
+          "publisher": "si.com",
+          "kind": "article",
+          "snippet": "5 Winners, 2 Losers From Grizzlies' Jaren Jackson Jr. Blockbuster Trade si.com",
+          "published": "Wed, 04 Feb 2026 08:00:00 GMT"
         }
       ]
     },
@@ -13143,6 +13045,134 @@
       ]
     },
     {
+      "id": "knicks-proposed-trade-josh-hart-9x-all-star-5caa19f3",
+      "slug": "knicks-proposed-trade-josh-hart-9x-all-star-5caa19f3",
+      "sport": "basketball",
+      "headline": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade",
+      "blurb": "Proposed 3-Team NBA Trade Lands 18 PPG Star Wing With Lakers Yahoo Sports",
+      "summary": "Luka Doncic, Josh Hart, Immanuel Quickley, Derrick White and Zion Williamson: Proposed 3-Team NBA Trade Lands 18 PPG Star Wing With Lakers Yahoo Sports Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic heavy.com Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade heavy.com Aggregated from Yahoo Sports, heavy.com.",
+      "category": "trade",
+      "published": "2026-08-19T07:00:00Z",
+      "updated": "2026-08-30T15:56:31Z",
+      "players": [
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
+        },
+        {
+          "key": "josh hart",
+          "name": "Josh Hart",
+          "slug": "josh-hart",
+          "pos": "SF",
+          "team": "NYK"
+        },
+        {
+          "key": "immanuel quickley",
+          "name": "Immanuel Quickley",
+          "slug": "immanuel-quickley",
+          "pos": "PG",
+          "team": "TOR"
+        },
+        {
+          "key": "derrick white",
+          "name": "Derrick White",
+          "slug": "derrick-white",
+          "pos": "SG",
+          "team": "BOS"
+        },
+        {
+          "key": "zion williamson",
+          "name": "Zion Williamson",
+          "slug": "zion-williamson",
+          "pos": "PF",
+          "team": "NOP"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSlpHSXNVS3NOT002Um5QcWpjM0l6b09KTHUtemlZLWNCZThfTkM2U3lBNmhEV0d3YlJ1b1dCNG13dW5MeVctaTBXenhhalQ1b0FjbTdTVFZCUDAyMlljaDg2T1pJN3hfRTA5bzVkeWc0QWdyVzYwdXpDSV9NZXNMLUZtM05IVF8takhHcHdn?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade heavy.com",
+          "published": "Sun, 30 Aug 2026 12:57:53 GMT"
+        },
+        {
+          "title": "Celtics Proposed to Trade Derrick White for All-Star SG in 3-Player Bucks Deal",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPdGZ2Mi1XVWFCaFBkUTRENmV0REM5TlhiNV9UQVlzU29jRTFiSnRDdFgxVVg4SXdmVThBa3NSZV9XT2w3NmRuRjItemhQR0VhTmJOd2FYZk54UlRBQXJhQkpSMlEwNHZsSFdlQWwwVUY1ay1mV1Uycjl5TXJ4N2VId0pxVFRaYlhYTFpNakxR?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Celtics Proposed to Trade Derrick White for All-Star SG in 3-Player Bucks Deal Yahoo Sports",
+          "published": "Thu, 27 Aug 2026 15:30:14 GMT"
+        },
+        {
+          "title": "Zion Williamson Proposed to Land With Knicks in Massive 4-Player NBA Trade",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdjcxVlVGNm11ZEd0NnNER2kwY04tNTkxRnQ4RmthQzFOa3E1ZUVkZURLVTQ3QUJuZHJqY3lSRDQ1TFZGazNlSTRZOWZOS1FTM2k0aGphbDVEWms0RWNpQmVLRjZUYzZpeEVjb3JDcjd3QUxWTjJ3V096RUl1Y3NTZU0zZVpDZw?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Zion Williamson Proposed to Land With Knicks in Massive 4-Player NBA Trade heavy.com",
+          "published": "Thu, 27 Aug 2026 12:31:06 GMT"
+        },
+        {
+          "title": "Raptors Proposed to Trade Immanuel Quickley for 2x NBA Champion Star PG",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUjNKb1NmRzZTdWg4VU1KN0x2c2xNWkhQMWYtQmpMRnNkZWtaamR6N2JVcEt4RjcyNVZNVHdZZWpYbVZYdVlDZzFNUXN2dFgzNG1Ta2wxeFhxMUVNMUE0YWNKZ1BMTzVSbEt4T3RrVWJoclFlZmtpUWtzRG9MaWhKZEdGU1c2bXM?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Raptors Proposed to Trade Immanuel Quickley for 2x NBA Champion Star PG heavy.com",
+          "published": "Sun, 30 Aug 2026 15:53:53 GMT"
+        },
+        {
+          "title": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNN1lBSUFfcXZqWDl2S0o2ZjJoekw1TklpNmlMSF9UTTdPcXAtak1VUGZ1a29xVGtsdElsek9YWWlvS3VjbXN5LW1TRVJESUM2eHQwVzd3VUl5YTdtWXBmX0ZjTUt4ZFJ0ME1JcHlsSlBaV1hoOWRtdFdGNm5tTlFkanF0UXlvaDA?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Knicks Proposed to Trade Josh Hart for 9x All-Star Guard in 3-Player NBA Trade Yahoo Sports",
+          "published": "Sun, 30 Aug 2026 15:56:31 GMT"
+        },
+        {
+          "title": "Proposed 3-Team NBA Trade Lands 18 PPG Star Wing With Lakers",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRaVJ5Q2MzM1czS0xSZkhSUjVYbjFNYnBINDBXVzdaNFVPZVRxNHo1UzNCVUxLaUViNi1sYVR2RW15SmdQeFJ2QVI5S1hhUHBwYV9xelM4RjhWUHlOX1NBSzg0M1RzZm1Rd1lCMG5TU3AxcUNtcmEteEdZVmZvTjA?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Proposed 3-Team NBA Trade Lands 18 PPG Star Wing With Lakers Yahoo Sports",
+          "published": "Wed, 19 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOclJLc2lQLVRHaU5MOTRlWXFOVGVtM2dPRldwdVRJR3ZGSlAxZ0h6dnpuSldPWjR0dUc3Z1hPaGR6YUd1NEpoSmlYRVJLS1lDRWZ0ZTZ5M1VVc0FrQ2lDS2hiR1Vvd2RKWWg4SmVUTk5LSXJhNXdKZUhiUS1zaU1sTWNiWjNIazkwcFE?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Proposed NBA Trade Lands Lakers a 20 PPG Sharpshooter Next to Luka Doncic heavy.com",
+          "published": "Fri, 28 Aug 2026 13:33:15 GMT"
+        }
+      ]
+    },
+    {
+      "id": "brandon-mccoy-jr-injury-michigan-star-miss-2026-799a13d3",
+      "slug": "brandon-mccoy-jr-injury-michigan-star-miss-2026-799a13d3",
+      "sport": "basketball",
+      "headline": "Brandon McCoy Jr. injury update: Michigan star to miss 2026-27 season",
+      "blurb": "Five-star freshman Brandon McCoy Jr.",
+      "summary": "Five-star freshman Brandon McCoy Jr. will miss the entire 2026-27 season due to injury, Michigan basketball announced Sept. Board reading of USA TODAY Sports.",
+      "category": "injury",
+      "published": "2026-09-01T17:56:30Z",
+      "updated": "2026-09-01T17:56:30Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Brandon McCoy Jr. injury update: Michigan star to miss 2026-27 season",
+          "url": "https://sports.yahoo.com/articles/brandon-mccoy-jr-injury-michigan-175630600.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "Five-star freshman Brandon McCoy Jr. will miss the entire 2026-27 season due to injury, Michigan basketball announced Sept. 1.",
+          "published": "Tue, 01 Sep 2026 17:56:30 +0000"
+        }
+      ]
+    },
+    {
       "id": "nuggets-roster-why-denver-waived-stretched-jonas-valanciunas-5392072c",
       "slug": "nuggets-roster-why-denver-waived-stretched-jonas-valanciunas-5392072c",
       "sport": "basketball",
@@ -13223,28 +13253,6 @@
           "kind": "article",
           "snippet": "Jalen Duren's Latest Free Agency Update Points Upwards in Fantasy Basketball Sports Illustrated",
           "published": "Tue, 21 Jul 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "brandon-mccoy-jr-injury-michigan-star-miss-2026-799a13d3",
-      "slug": "brandon-mccoy-jr-injury-michigan-star-miss-2026-799a13d3",
-      "sport": "basketball",
-      "headline": "Brandon McCoy Jr. injury update: Michigan star to miss 2026-27 season",
-      "blurb": "Five-star freshman Brandon McCoy Jr.",
-      "summary": "Five-star freshman Brandon McCoy Jr. will miss the entire 2026-27 season due to injury, Michigan basketball announced Sept. Board reading of USA TODAY Sports.",
-      "category": "injury",
-      "published": "2026-09-01T17:56:30Z",
-      "updated": "2026-09-01T17:56:30Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Brandon McCoy Jr. injury update: Michigan star to miss 2026-27 season",
-          "url": "https://sports.yahoo.com/articles/brandon-mccoy-jr-injury-michigan-175630600.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "Five-star freshman Brandon McCoy Jr. will miss the entire 2026-27 season due to injury, Michigan basketball announced Sept. 1.",
-          "published": "Tue, 01 Sep 2026 17:56:30 +0000"
         }
       ]
     },
