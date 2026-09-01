@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SEO helper checks — related links, breadcrumbs, titles, sitemap."""
+"""SEO helper checks - related links, breadcrumbs, titles, sitemap."""
 from __future__ import annotations
 
 import sys
@@ -96,6 +96,9 @@ def test_also_on_desk_and_sitemap():
     assert "Also on this board" in html
     assert "this desk" not in html
     assert strip_em("The Board \u2014 2026") == "The Board - 2026"
+    assert strip_em("40\u201380 names") == "40-80 names"
+    assert strip_em("Keep &mdash; Board") == "Keep - Board"
+    assert strip_em("Keep &ndash; Board") == "Keep - Board"
     xml = sitemap_xml(["https://ballkeep.com/", "https://ballkeep.com/the-keep.html"], "2026-08-27")
     assert "<lastmod>2026-08-27</lastmod>" in xml
     assert xml.count("<url>") == 2

@@ -1,9 +1,9 @@
-"""BaseBallKeep ranking sources — August 27, 2026.
+"""BaseBallKeep ranking sources - August 27, 2026.
 
 Long boards are RotoGraphs (Aug 14 model) and The Dynasty Guru points (Aug 10).
 The other boards are compiled slices of those lists plus public August 2026
 expert tapes (FantasyPros, ESPN closer chart, Pitcher List, Razzball, etc.).
-Unranked names are skipped in the mean — never treated as 999.
+Unranked names are skipped in the mean - never treated as 999.
 """
 from __future__ import annotations
 
@@ -65,7 +65,7 @@ TEAM_FIX = {
 def pos_group(pos: str) -> str:
     p = (pos or "").upper()
     if "SP" in p and "DH" in p:
-        return "UT"  # Ohtani two-way — overall + both lists
+        return "UT"  # Ohtani two-way - overall + both lists
     if "RP" in p:
         return "RP"
     if "SP" in p:
@@ -470,7 +470,7 @@ REDRAFT_WAIVERS = [
 
 BB_SOURCES = [
     ("RotoGraphs Dynasty Model", "https://fantasy.fangraphs.com/rotographs-dynasty-rankings/", "Jonathan Vander Lugt, Aug 14, 2026. Top 500 discounted-dollar model."),
-    ("The Dynasty Guru — Points", "https://thedynastyguru.com/2026/08/10/the-tdg-top-500-for-points-leagues-2026-mid-season-updates/", "Nate Sweet mid-season Top 500, Aug 10."),
+    ("The Dynasty Guru - Points", "https://thedynastyguru.com/2026/08/10/the-tdg-top-500-for-points-leagues-2026-mid-season-updates/", "Nate Sweet mid-season Top 500, Aug 10."),
     ("FantasyPros Dynasty ECR", "https://www.fantasypros.com/mlb/rankings/dynasty-overall.php", "Keeper/dynasty expert consensus, Aug 26."),
     ("ESPN Fantasy", "https://www.espn.com/fantasy/baseball/", "Veteran / counting-stat lean."),
     ("Razzball", "https://razzball.com/", "Youth / peak-age lean."),
@@ -535,7 +535,7 @@ def load_universe():
     rps = [r for r in wide if r.get("group") == "RP"]
     saves = list_to_rows(SAVES, rps)
     svh = list_to_rows(SVH, rps)
-    # Redraft: ATC/NFBC-style — re-rank overall with a veteran/ROS bump
+    # Redraft: ATC/NFBC-style - re-rank overall with a veteran/ROS bump
     redraft = []
     for r in overall:
         age = r.get("age") or 27

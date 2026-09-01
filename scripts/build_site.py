@@ -66,6 +66,7 @@ from seo import (  # noqa: E402
     sports_footer,
     sports_top,
     strip_em,
+    strip_em_tree,
     value_bars,
     video_jsonld,
     website_jsonld,
@@ -384,12 +385,12 @@ HOT = [
     {"name": "De'Zhaun Stribling", "pos": "WR", "team": "SF", "why": "SI (Aug 25) + FantasyPros (Aug 26): 13 targets, 11-109 in his first two preseason games. Pearsall is out on a PCL; Shanahan is moving him all over the formation.", "src": "Sports Illustrated, FantasyPros"},
     {"name": "Jonah Coleman", "pos": "RB", "team": "DEN", "why": "SI (Aug 25) + FantasyPros: Payton pulled him after one preseason series because he'd already seen enough. Pass-pro trust is the three-down unlock in Denver.", "src": "Sports Illustrated, FantasyPros"},
     {"name": "Parker Washington", "pos": "WR", "team": "JAX", "why": "SI (Aug 25): WR8 over the last five weeks of 2025. Jacksonville is manufacturing touches in space; he is no longer a depth piece.", "src": "Sports Illustrated"},
-    {"name": "Rome Odunze", "pos": "WR", "team": "CHI", "why": "PlayerProfiler (Aug 7): cheapest Chicago WR after the Burden/Loveland run-up. WR11 Weeks 1–8 last year before the foot; PP WR19 vs KTC WR20.", "src": "PlayerProfiler"},
+    {"name": "Rome Odunze", "pos": "WR", "team": "CHI", "why": "PlayerProfiler (Aug 7): cheapest Chicago WR after the Burden/Loveland run-up. WR11 Weeks 1-8 last year before the foot; PP WR19 vs KTC WR20.", "src": "PlayerProfiler"},
     {"name": "Kyle Pitts", "pos": "TE", "team": "ATL", "why": "PlayerProfiler: TE2 finish last year, Stefanski TE volume, still 25. KTC TE8 is a discount on a name who just got paid through 2028.", "src": "PlayerProfiler"},
     {"name": "Zay Flowers", "pos": "WR", "team": "BAL", "why": "PlayerProfiler would take him straight up over KTC WR14 Ladd McConkey. New contract, 1,200 yards on a run-leaning Ravens offense.", "src": "PlayerProfiler"},
     {"name": "Bryce Lance", "pos": "WR", "team": "NO", "why": "SI (Aug 25): Tyson is expected to miss time; Lance went 5-5-2 in joint practice with Shough. Deep-bench buy before the Saints room fills back in.", "src": "Sports Illustrated"},
     {"name": "Jelani Woods", "pos": "TE", "team": "NYJ", "why": "SI (Aug 25): healthier camp, elevated preseason reps, empty middle of the Jets offense. Reclamation TE with size/speed and a clean runway.", "src": "Sports Illustrated"},
-    {"name": "Christian Watson", "pos": "WR", "team": "GB", "why": "Sports Arena + Draft Sharks: WR21 in FPPG Weeks 8–18 last year on a 68% route share with Doubs/Wicks gone. Still the buy vs. packed rookie rooms.", "src": "Sports Arena, Draft Sharks"},
+    {"name": "Christian Watson", "pos": "WR", "team": "GB", "why": "Sports Arena + Draft Sharks: WR21 in FPPG Weeks 8-18 last year on a 68% route share with Doubs/Wicks gone. Still the buy vs. packed rookie rooms.", "src": "Sports Arena, Draft Sharks"},
     {"name": "Kyler Murray", "pos": "QB", "team": "MIN", "why": "DLF: healthy years were locked top-10 SF QBs; still priced like a mid-1st rookie pick heading into Week 1 in Minnesota.", "src": "Dynasty League Football"},
 ]
 COLD = [
@@ -821,7 +822,7 @@ PPR_SOURCES = [
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
     ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 27."),
-    ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1–2–3."),
+    ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1-2-3."),
 ]
 
 
@@ -979,7 +980,7 @@ HOME_FAQ = [
 KEEP_FAQ = [
     ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public boards, rebuilt August 28, 2026."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
-    ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40–80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
+    ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
 BOARD_FAQ = [
     ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Kickers and DST omitted."),
@@ -1612,7 +1613,7 @@ def ff_facts(p, college, is_rook):
     ranks = {k: v for k, v in (p.get("ranks") or {}).items() if isinstance(v, (int, float))}
     if ranks:
         hi, lo = min(ranks.values()), max(ranks.values())
-        items.append(("Spread", f"{hi}–{lo}"))
+        items.append(("Spread", f"{hi}-{lo}"))
     return _fact_cells(items)
 
 
@@ -1701,7 +1702,7 @@ def ff_boards_table(p):
     return (
         '<section class="panel">'
         '<p class="kicker">Every Board</p>'
-        f"<h3>Spread {lo}–{hi} · {len(rows)} sources</h3>"
+        f"<h3>Spread {lo}-{hi} · {len(rows)} sources</h3>"
         '<div class="table-wrap"><table class="boards">'
         "<thead><tr><th>Source</th><th>Rank</th></tr></thead>"
         f"<tbody>{''.join(body)}</tbody></table></div></section>"
@@ -2300,7 +2301,7 @@ def write_discovery_feeds():
                 "date": when,
                 "publication": brand,
             })
-    (ROOT / "sitemap-news.xml").write_text(news_sitemap_xml(news_entries))
+    (ROOT / "sitemap-news.xml").write_text(strip_em(news_sitemap_xml(news_entries)))
     return len(news_entries)
 
 
@@ -2773,7 +2774,7 @@ def main():
     mlb_body = f"""
     <p class="kicker">MLB · Stretch Run</p>
     <h1>Baseball Schedules</h1>
-    <p class="note">Today is Aug. 20, 2026 - the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027–2031 heavier than this month's box score; redraft baseball is only this month.</p>
+    <p class="note">Today is Aug. 20, 2026 - the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027-2031 heavier than this month's box score; redraft baseball is only this month.</p>
     <div class="filters" id="mlb-teams"><button type="button" class="active" data-team="all">All clubs</button>{mlb_btns}</div>
     <div class="panel table-wrap" id="mlb-games"></div>
     """
@@ -3118,7 +3119,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         })
     catalog["bk_news"] = bk_news
     dest = ROOT / "data/discord-catalog.json"
-    dest.write_text(json.dumps(catalog, indent=2, default=str))
+    dest.write_text(json.dumps(strip_em_tree(catalog), indent=2, default=str))
     return dest
 
 

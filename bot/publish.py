@@ -120,7 +120,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-keep"])
     await _post_list(
         channels["the-keep"],
-        "The Keep — Superflex Dynasty Top 400",
+        "The Keep - Superflex Dynasty Top 400",
         cat.raw["keep"],
         cat,
         "Super Aggregate of 30+ desks. 50% long boards, 50% the rest. Top 400.",
@@ -130,7 +130,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-board"])
     await _post_list(
         channels["the-board"],
-        "The Board — Redraft PPR",
+        "The Board - Redraft PPR",
         cat.raw["board"],
         cat,
         "Redraft PPR. Field Yates, FantasyPros PPR ECR, Karabell Flex.",
@@ -152,10 +152,10 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await note("Rookies posted.")
 
     await _wipe(channels["hot-n-cold"])
-    hot = "\n".join(f"**HOT {i}. {x['name']}** ({x['pos']} {x['team']}) — {x['why']}" for i, x in enumerate(cat.raw["hot"], 1))
-    cold = "\n".join(f"**COLD {i}. {x['name']}** ({x['pos']} {x['team']}) — {x['why']}" for i, x in enumerate(cat.raw["cold"], 1))
-    await channels["hot-n-cold"].send(f"🔥 **Hot — Buy**\n{hot}")
-    await channels["hot-n-cold"].send(f"❄️ **Cold — Sell**\n{cold}")
+    hot = "\n".join(f"**HOT {i}. {x['name']}** ({x['pos']} {x['team']}) - {x['why']}" for i, x in enumerate(cat.raw["hot"], 1))
+    cold = "\n".join(f"**COLD {i}. {x['name']}** ({x['pos']} {x['team']}) - {x['why']}" for i, x in enumerate(cat.raw["cold"], 1))
+    await channels["hot-n-cold"].send(f"🔥 **Hot - Buy**\n{hot}")
+    await channels["hot-n-cold"].send(f"❄️ **Cold - Sell**\n{cold}")
     await note("Hot 'n' Cold posted.")
 
     await _wipe(channels["trade-block"])
@@ -192,7 +192,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     for group in _chunks(clips, 15):
         lines = []
         for p in group:
-            lines.append(f"**{p['name']}** — {p.get('youtube_title') or 'highlight'} — https://www.youtube.com/watch?v={p['youtube_id']}")
+            lines.append(f"**{p['name']}** - {p.get('youtube_title') or 'highlight'} - https://www.youtube.com/watch?v={p['youtube_id']}")
         await channels["tape"].send("\n".join(lines))
         await asyncio.sleep(1.05)
     await note("Tape posted.")
@@ -261,8 +261,8 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         msg = (
             f"**{p['name']}** · {p.get('pos')} {p.get('team')} · {p.get('url')}\n"
             f"{chips}\n"
-            f"Plus: {plus or '—'}\n"
-            f"Minus: {minus or '—'}\n"
+            f"Plus: {plus or '-'}\n"
+            f"Minus: {minus or '-'}\n"
             f"{graf}\n"
             f"Tape: {yt}"
         )
@@ -272,15 +272,15 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["bb-keep"])
     await _post_list(
         channels["bb-keep"],
-        "BaseBallKeep — The Keep (dynasty 300)",
+        "BaseBallKeep - The Keep (dynasty 300)",
         cat.raw.get("bb_keep") or [],
         cat,
         "23-board baseball aggregate. Navy desk at https://ballkeep.com/bb/the-keep.html",
     )
     await _wipe(channels["bb-lineup"])
-    await _post_list(channels["bb-lineup"], "The Lineup — dynasty hitters", cat.raw.get("bb_lineup") or [], cat)
+    await _post_list(channels["bb-lineup"], "The Lineup - dynasty hitters", cat.raw.get("bb_lineup") or [], cat)
     await _wipe(channels["bb-pitchers"])
-    await _post_list(channels["bb-pitchers"], "BK's Pitchers — top 100", cat.raw.get("bb_pitchers") or [], cat)
+    await _post_list(channels["bb-pitchers"], "BK's Pitchers - top 100", cat.raw.get("bb_pitchers") or [], cat)
     await _wipe(channels["bb-bullpen"])
     await channels["bb-bullpen"].send("**BK's Bullpen** · Saves first, then SV+H. Different sport.")
     await _post_list(channels["bb-bullpen"], "Saves", cat.raw.get("bb_saves") or [], cat)
@@ -289,13 +289,13 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _post_list(channels["bb-redraft"], "Baseball redraft ROS", cat.raw.get("bb_redraft") or [], cat)
     await _wipe(channels["bb-waivers"])
     dyn = "\n".join(
-        f"**P{x['pri']}. {x['name']}** ({x.get('pos')} {x.get('team')}) — {x.get('why')}"
+        f"**P{x['pri']}. {x['name']}** ({x.get('pos')} {x.get('team')}) - {x.get('why')}"
         for x in (cat.raw.get("bb_waivers_dynasty") or [])
     )
     await channels["bb-waivers"].send(f"**Dynasty wire** (short on purpose)\n{dyn[:1900]}")
     for i, chunk in enumerate(_chunks(cat.raw.get("bb_waivers_redraft") or [], 12)):
         body = "\n".join(
-            f"**P{x['pri']}. {x['name']}** ({x.get('pos')} {x.get('team')}) — {x.get('why')}"
+            f"**P{x['pri']}. {x['name']}** ({x.get('pos')} {x.get('team')}) - {x.get('why')}"
             for x in chunk
         )
         title = "**Redraft wire** (longer, higher priority)" if i == 0 else "**Redraft wire** (cont.)"
@@ -306,7 +306,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-premier"])
     await _post_list(
         channels["the-premier"],
-        "PitchKeep — The Premier (hybrid 400: 50% Sleeper BPL 2025, 50% every other board)",
+        "PitchKeep - The Premier (hybrid 400: 50% Sleeper BPL 2025, 50% every other board)",
         cat.raw.get("pl_premier") or [],
         cat,
         "The Premier. 50% Sleeper, 50% the other boards. https://ballkeep.com/pl/the-premier.html",
@@ -314,13 +314,13 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-pitch"])
     await _post_list(
         channels["the-pitch"],
-        "PitchKeep — The Pitch (Premier League top 400, Sleeper BPL 2025)",
+        "PitchKeep - The Pitch (Premier League top 400, Sleeper BPL 2025)",
         cat.raw.get("pl_pitch") or [],
         cat,
         "Sleeper-only counting board. Purple desk at https://ballkeep.com/pl/the-pitch.html",
     )
     await _wipe(channels["pl-attack"])
-    await _post_list(channels["pl-attack"], "Attack — forwards", cat.raw.get("pl_fwd") or [], cat)
+    await _post_list(channels["pl-attack"], "Attack - forwards", cat.raw.get("pl_fwd") or [], cat)
     await _wipe(channels["pl-midfield"])
     await _post_list(channels["pl-midfield"], "Midfield", cat.raw.get("pl_mid") or [], cat)
     await _wipe(channels["pl-defence"])
@@ -344,8 +344,8 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         msg = (
             f"**{p['name']}** · {p.get('pos')} {p.get('team')} · {p.get('url')}\n"
             f"{chips}\n"
-            f"Plus: {plus or '—'}\n"
-            f"Minus: {minus or '—'}\n"
+            f"Plus: {plus or '-'}\n"
+            f"Minus: {minus or '-'}\n"
             f"{graf}\n"
             f"Tape: {yt}"
         )

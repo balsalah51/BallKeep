@@ -126,7 +126,7 @@ COPY = {
             "20 tackles, 48 CBI. Sleeper's defensive table does not love him the way FPL's attack table does.",
             "Forest plus a 15-goal spike is how people talk themselves out of a top-eight mid.",
         ],
-        "Morgan Gibbs-White is the first real Sleeper-versus-FPL split on The Premier. Official points had him fifth (188). ESPN, Athletic, and Sky were 3–5. Consensus 11.17. Sleeper BPL 2025 had him 18th (206.2) because 15 goals and 4 assists from midfield is elite attacking output and 20 tackles is not. Hybrid lands at 7. We are not ignoring 15 goals. We are not pretending he defends like Rice.",
+        "Morgan Gibbs-White is the first real Sleeper-versus-FPL split on The Premier. Official points had him fifth (188). ESPN, Athletic, and Sky were 3-5. Consensus 11.17. Sleeper BPL 2025 had him 18th (206.2) because 15 goals and 4 assists from midfield is elite attacking output and 20 tackles is not. Hybrid lands at 7. We are not ignoring 15 goals. We are not pretending he defends like Rice.",
         "The 2025/26 line: 35 starts, 3,101 minutes, 15 G, 4 A, 10 CS, 10.81 xG, 2.91 xA. Four-goal overperformance on the shot map. Direct free-kicks are his. Penalties are second. Forest's attack ran through him and the FPL boards noticed. £8.0m is the public still hearing 'Nottingham Forest' louder than '15 goals.' That gap is the point of a third list.",
         "Sleeper's defensive scoring is why he sits behind Rice and Garner on The Pitch. The Premier pulls him back up because 19 boards averaging 11 is a lot of industry agreement to throw away. Yellows: 1. He did not even give the card-tax people a hook. PPG 5.1, same as Rice, with a completely different shape.",
         "The risk is the finishing. 15 on 10.81 can become 11 on 11, and then the FPL boards will look silly and Sleeper will look prescient. Forest's supporting cast is not City or Arsenal. If the chance quality dies, this ranking dies with it. We are ranking the player who just did it for 3,100 minutes, not a projection model that wants him to be polite.",
@@ -428,7 +428,7 @@ def generate_take(r, lists=None, neighbors=None):
     elif gap is not None and gap <= -15:
         plus.append(f"Consensus {consensus} vs Sleeper #{sleeper_rk} - the industry still believes more than 2025/26 counted.")
     if hi_src and lo_src and hi_rk != lo_rk:
-        minus.append(f"Board spread {hi_rk}–{lo_rk} ({hi_src} to {lo_src}).")
+        minus.append(f"Board spread {hi_rk}-{lo_rk} ({hi_src} to {lo_src}).")
 
     plus = list(dict.fromkeys(plus))[:5]
     minus = list(dict.fromkeys(minus))[:5]

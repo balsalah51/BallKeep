@@ -86,16 +86,39 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+_DASH_FROM = (
+    "\u2014",  # em dash
+    "\u2013",  # en dash
+    "\u2015",  # horizontal bar
+    "&mdash;",
+    "&ndash;",
+    "&#8212;",
+    "&#8211;",
+    "&#x2014;",
+    "&#x2013;",
+    "&#X2014;",
+    "&#X2013;",
+)
+
+
 def strip_em(text: str) -> str:
-    """Site copy does not use em dashes."""
-    if not text:
+    """Site copy uses a hyphen, never an em or en dash."""
+    if not text or not isinstance(text, str):
         return text
-    return (
-        text.replace("\u2014", "-")
-        .replace("&mdash;", "-")
-        .replace("&#8212;", "-")
-        .replace("&#x2014;", "-")
-    )
+    for token in _DASH_FROM:
+        text = text.replace(token, "-")
+    return text
+
+
+def strip_em_tree(obj):
+    """Walk JSON-shaped data and replace fancy dashes in every string."""
+    if isinstance(obj, str):
+        return strip_em(obj)
+    if isinstance(obj, list):
+        return [strip_em_tree(x) for x in obj]
+    if isinstance(obj, dict):
+        return {k: strip_em_tree(v) for k, v in obj.items()}
+    return obj
 
 
 def canon(path: str, prefix: str = "") -> str:
@@ -139,7 +162,7 @@ def branded(title: str, brand: str) -> str:
         return brand
     low = t.lower()
     b = brand.lower()
-    if low.endswith(b) or low.startswith(b) or f" | {b}" in low or f" — {b}" in low:
+    if low.endswith(b) or low.startswith(b) or f" | {b}" in low or f" - {b}" in low:
         return t
     return f"{t} | {brand}"
 
@@ -314,7 +337,7 @@ def rank_spread_graph(ranks: dict, fill: str = "#c8102e", kicker: str = "Board g
     return (
         '<section class="panel graph">'
         f'<p class="kicker">{esc(kicker)}</p>'
-        f"<h3>Spread {lo}–{hi} · {len(items)} sources</h3>"
+        f"<h3>Spread {lo}-{hi} · {len(items)} sources</h3>"
         f'<div class="bar-chart" role="img" aria-label="Rank on every published board">'
         f"{''.join(rows)}</div></section>"
     )
@@ -417,7 +440,7 @@ def clip_label(text: str, n: int = 48) -> str:
 
 
 def breadcrumbs(trail: list) -> str:
-    """trail: [(label, href_or_None), ...] — last item is the current page."""
+    """trail: [(label, href_or_None), ...] - last item is the current page."""
     items = [(str(label or "").strip(), href) for label, href in (trail or []) if label]
     if len(items) < 2:
         return ""
@@ -524,7 +547,7 @@ def also_on_desk(
     kicker: str = "Also on this board",
     heading: str = "Keep going.",
 ) -> str:
-    """tiles: [(href, title, note), ...] — sibling boards, calculators, hubs."""
+    """tiles: [(href, title, note), ...] - sibling boards, calculators, hubs."""
     tiles = [t for t in (tiles or []) if t and t[0] and t[1]]
     if not tiles:
         return ""
@@ -585,7 +608,7 @@ def related_players_html(
     pos_label: str = "Same position",
     team_label: str = "Same club",
 ) -> str:
-    """Neighbors, teammates, and same-position names — crawl paths off a player file."""
+    """Neighbors, teammates, and same-position names - crawl paths off a player file."""
     if not rows or not current:
         return ""
     cid = current.get(id_key)
@@ -661,7 +684,7 @@ def related_stories_html(
     limit: int = 5,
     heading: str = "More on this wire",
 ) -> str:
-    """Stories that share players, then same category, then latest — so crawlers leave the leaf."""
+    """Stories that share players, then same category, then latest - so crawlers leave the leaf."""
     if not stories or not current:
         return ""
     cur_slug = current.get("slug")
@@ -737,7 +760,7 @@ def sitemap_xml(urls: list, lastmod: str) -> str:
 
 
 def item_list_jsonld(name: str, url: str, items: list, *, description: str = "") -> dict | None:
-    """items: [(name, url), ...] — first 25 names on a ranking board."""
+    """items: [(name, url), ...] - first 25 names on a ranking board."""
     shown = [(str(n or "").strip(), u) for n, u in (items or []) if n and u][:25]
     if len(shown) < 3:
         return None

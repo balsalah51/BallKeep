@@ -1,7 +1,7 @@
 """BK Value curve. One formula for every desk and the Discord bot.
 
 Rank 1 is 12,000. The exponential used to be 0.0165, which crushed names
-in the 40–80 band (a rank-80 starter was 12% of the 1.01). Halving that
+in the 40-80 band (a rank-80 starter was 12% of the 1.01). Halving that
 rate and softening the rank-power keeps a real 1.01 premium while leaving
 mid-board starters with trade juice.
 """
@@ -29,7 +29,7 @@ def bk_value(rank, qb_mult: float = 1.0) -> int:
 
     Rank 1 is 12,000. Value falls on an exponential curve with a mild
     rank-power so the cliff from 1.01 to 1.02 is real, a late first sits
-    near half the 1.01, and ranks 40–80 stay in the 5,300–3,500 band.
+    near half the 1.01, and ranks 40-80 stay in the 5,300-3,500 band.
     """
     if not rank or rank < 1:
         return 0

@@ -1,8 +1,8 @@
-"""BasketKeep ranking sources — August 27, 2026.
+"""BasketKeep ranking sources - August 27, 2026.
 
 Compiled dynasty and redraft boards for category + points leagues.
 The Keep is the dynasty Super Aggregate. The Board is this-year redraft.
-Unranked names are skipped in the mean — never treated as 999.
+Unranked names are skipped in the mean - never treated as 999.
 """
 from __future__ import annotations
 

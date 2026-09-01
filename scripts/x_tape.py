@@ -1,4 +1,4 @@
-"""The X — fun tape from X/Twitter via Google News site: filters.
+"""The X - fun tape from X/Twitter via Google News site: filters.
 
 No login. No scrape of x.com HTML. Same cheap RSS path as BK News.
 Pictures are resolved (og:image / FixTweet) and saved under img/x-tape/
@@ -455,7 +455,9 @@ def scrape_sport(sport: str, fetch=default_fetch, sleep_s: float = 0.3) -> dict:
     keep = with_pic[:36]
     doc = {"sport": sport, "updated": iso(utcnow()), "posts": keep}
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / f"{sport}.json").write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
+    from seo import strip_em_tree
+
+    (OUT / f"{sport}.json").write_text(json.dumps(strip_em_tree(doc), indent=2, ensure_ascii=False) + "\n")
     print(f"The X {sport}: {len(doc['posts'])} posts with pictures")
     return doc
 
@@ -468,7 +470,7 @@ def cards_html(sport: str, depth: int = 0, esc=None) -> str:
     doc = load_tape(sport)
     posts = doc.get("posts") or []
     if not posts:
-        return '<p class="note">The X tape is empty until the next pull. Memes come through Google News site:x.com — no login.</p>'
+        return '<p class="note">The X tape is empty until the next pull. Memes come through Google News site:x.com - no login.</p>'
     bits = []
     shown = 0
     for p in posts:

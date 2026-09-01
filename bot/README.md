@@ -1,6 +1,6 @@
 # Ball Keep Discord bot
 
-The desk, in a server. The bot loads `data/discord-catalog.json` (built from the site) so Discord can search player rankings, run the four trade calculators, drop highlight videos, and — with `/publish` — write the entire Ball Keep site into channels.
+The desk, in a server. The bot loads `data/discord-catalog.json` (built from the site) so Discord can search player rankings, run the four trade calculators, drop highlight videos, and - with `/publish` - write the entire Ball Keep site into channels.
 
 Powder-blue ranks. Red ink. Nicknames, spoilers, and a theatrical keep-or-cut button.
 
@@ -11,7 +11,7 @@ Powder-blue ranks. Red ink. Nicknames, spoilers, and a theatrical keep-or-cut bu
 | `/desk` | Tour of the bot |
 | `/player Josh Allen` | Keep rank, BK Value, plus/minus, age, college, tape, site link |
 | `/search jsn` | Fuzzy + nicknames (JSN, CMC, Sun God, BTJ, TLaw, MHJ…) |
-| `/rank` `/top` `/pos` | Any list: Keep, Board, PPR, Standard, Rookies — or just the QBs |
+| `/rank` `/top` `/pos` | Any list: Keep, Board, PPR, Standard, Rookies - or just the QBs |
 | `/trade` | Superflex / 1QB / PPR / Standard calculator |
 | `/deals JSN` | Recent packages involving a player (same tape as the site) |
 | `/value` `/picks` `/formula` | One name, every future pick, or the decaying curve itself |
@@ -63,7 +63,7 @@ python3 -m pip install -r bot/requirements.txt
 python3 bot/bot.py
 ```
 
-7. In Discord: `/desk` then `/publish` once. It takes a few minutes — Discord rate-limits channel posts — and writes The Keep, The Board, redraft, rookies, Hot/Cold, pick values, tape, every NFL week, September MLB, the Super Aggregate desks, and every player file.
+7. In Discord: `/desk` then `/publish` once. It takes a few minutes - Discord rate-limits channel posts - and writes The Keep, The Board, redraft, rookies, Hot/Cold, pick values, tape, every NFL week, September MLB, the Super Aggregate desks, and every player file.
 
 ## Data
 

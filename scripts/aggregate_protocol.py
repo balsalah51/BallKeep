@@ -5,7 +5,7 @@ The Keep is not a photocopy of The Board.
 THE KEEP - Super Aggregate (30+ professional boards)
   Super = 50% long-core mean + 50% every other board that ranked the player.
   Long core: PFN, Dynasty Nerds, FantasyPros ECR, KeepTradeCut (published
-  300–500 name boards). The other boards are professional short lists and
+  300-500 name boards). The other boards are professional short lists and
   public-outlet overlays. Unranked is skipped, never treated as 999.
   If nobody but the long boards ranked him, Super is the long-core mean.
   Eligibility: must appear on at least one long-core board. Draft picks

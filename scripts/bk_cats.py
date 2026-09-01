@@ -153,7 +153,7 @@ PLUS_LINE = {
     ("pts", 1): "Helps in points. You are not punting the scoring column.",
     ("reb", 2): "Elite rebounds. The glass is a weekly lock.",
     ("reb", 1): "Helps on the glass. Boards show up even when the shot is quiet.",
-    ("ast", 2): "Elite assists. He is a hub — category rooms pay this.",
+    ("ast", 2): "Elite assists. He is a hub - category rooms pay this.",
     ("ast", 1): "Helps in assists. Enough dimes to keep the column honest.",
     ("stl", 2): "Elite steals. This is a 2-steal floor most weeks.",
     ("stl", 1): "Helps in steals. The defensive events are real.",
@@ -171,7 +171,7 @@ PLUS_LINE = {
 
 MINUS_LINE = {
     ("pts", -1): "Points run light. You need scoring from the other four.",
-    ("pts", -2): "Points are a hole. Cats-only profile — empty scoring nights happen.",
+    ("pts", -2): "Points are a hole. Cats-only profile - empty scoring nights happen.",
     ("reb", -1): "Rebounds are thin. Guard/wing who does not crash.",
     ("reb", -2): "Rebounds are empty. You are punting the glass if you start him.",
     ("ast", -1): "Assists are light. Not a creator. Need dimes elsewhere.",
@@ -229,9 +229,9 @@ def _board_lines(row: dict) -> tuple[list[str], list[str]]:
     plus, minus = [], []
     if cat_rk and pts_rk:
         if cat_rk + 18 <= pts_rk:
-            plus.append(f"Category boards have him #{cat_rk} vs points #{pts_rk} — stocks and percentages travel.")
+            plus.append(f"Category boards have him #{cat_rk} vs points #{pts_rk} - stocks and percentages travel.")
         elif pts_rk + 18 <= cat_rk:
-            minus.append(f"Points boards have him #{pts_rk} vs cats #{cat_rk} — scoring is the line, empty cats are the tax.")
+            minus.append(f"Points boards have him #{pts_rk} vs cats #{cat_rk} - scoring is the line, empty cats are the tax.")
     return plus, minus
 
 
@@ -257,7 +257,7 @@ def plus_minus(row: dict) -> tuple[list[str], list[str]]:
     except (TypeError, ValueError):
         age_n = None
     if age_n is not None and age_n >= 34:
-        minus.append("Age 34+ — minutes and games played are the hidden category.")
+        minus.append("Age 34+ - minutes and games played are the hidden category.")
     if age_n is not None and age_n <= 21 and row.get("bk", 99) > 30:
         plus.append("Age still on your side. The counting stats can grow into the rank.")
 
@@ -267,5 +267,5 @@ def plus_minus(row: dict) -> tuple[list[str], list[str]]:
         pos = row.get("pos") or "wing"
         plus.append(f"{pos} counting stats are why he is on The Keep at all.")
     if not minus:
-        minus.append("No loud category drain on the sheet — the risk is minutes, not a dead column.")
+        minus.append("No loud category drain on the sheet - the risk is minutes, not a dead column.")
     return plus, minus
