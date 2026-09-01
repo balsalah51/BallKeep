@@ -280,6 +280,8 @@ class Catalog:
             "the fence": "fence",
             "idp": "fence",
             "dynasty idp": "fence",
+            "mixed": "fence",
+            "superflex idp": "fence",
             "rookies": "rookies",
             "rookie": "rookies",
             "bbkeep": "bb_keep",

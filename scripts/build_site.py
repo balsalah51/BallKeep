@@ -27,7 +27,7 @@ from extra_ranks import (  # noqa: E402
 )
 from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps, _norm as ppr_norm  # noqa: E402
 from special_teams import DST_SOURCES, K_SOURCES, dst_board, kicker_board  # noqa: E402
-from idp_board import FENCE_SOURCES, fence_board  # noqa: E402
+from idp_board import FENCE_MIXED_SOURCES, fence_board  # noqa: E402
 from bpl_schedule import bpl_games, bpl_schedule_parts  # noqa: E402
 from aggregate_protocol import (  # noqa: E402
     KEEP_SOURCES,
@@ -103,7 +103,12 @@ def pos_filter(box_id, positions=None):
 
 
 def desk_block(kind, kicker, heading, note, tiles, extra=""):
-    cards = "".join(f'<a class="tile" href="{h}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>' for h, t, p in tiles)
+    cards = []
+    for item in tiles:
+        href, title, blurb = item[0], item[1], item[2]
+        klass = f'tile {item[3]}'.strip() if len(item) > 3 and item[3] else "tile"
+        cards.append(f'<a class="{klass}" href="{href}"><h3>{esc(title)}</h3><p>{esc(blurb)}</p></a>')
+    cards = "".join(cards)
     cols = "grid" if len(tiles) <= 2 else "grid-3"
     return (
         f'<section class="desk-block {kind}">'
@@ -653,11 +658,10 @@ def superflex_redraft(keep, ppr):
 NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
-    ("the-fence.html", "The Fence"),
+    ("the-fence.html", "The Fence (IDP)"),
     ("news.html", "News"),
     ("the-x.html", "The X"),
     ("trade.html", "Trade"),
-    ("recent-trades.html", "Deals"),
     ("redraft-superflex.html", "Redraft Superflex"),
     ("the-classic.html", "The Classic"),
     ("redraft-standard.html", "Redraft STD"),
@@ -665,7 +669,7 @@ NAV = [
     ("hot-n-cold.html", "Hot 'n' Cold"),
     ("board.html", "The Board"),
     ("players/index.html", "Players"),
-    ("defenses.html", "The D"),
+    ("defenses.html", "The D (DST)"),
     ("kickers.html", "Kickers"),
     ("nfl-schedule.html", "NFL"),
     ("mlb-schedule.html", "MLB"),
@@ -924,8 +928,8 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "the-fence.html": (
-        "The Fence 2026 Dynasty IDP Rankings | Ball Keep",
-        "The Fence is Ball Keep's dynasty IDP board. Mean of 20 markets the most popular dynasty IDP leagues draft from. Aidan Hutchinson is 1.01.",
+        "The Fence 2026 Superflex + IDP Rankings | Ball Keep",
+        "The Fence is Ball Keep's mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. Josh Allen is 1.01. Aidan Hutchinson is the first IDP.",
         "img/logo.jpg",
     ),
     "privacy.html": (
@@ -971,8 +975,8 @@ FB_SEO = {
 }
 
 HOME_FAQ = [
-    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 32 boards, top 400. The Fence is dynasty IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
-    ("What is The Fence?", "Dynasty IDP. Mean of 20 markets the most popular dynasty IDP leagues draft from. DL, LB, and DB only. Unranked is a skip."),
+    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 32 boards, top 400. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
+    ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. Unranked is a skip."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player. Unranked names are skipped, never treated as 999."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
@@ -994,9 +998,9 @@ TRADE_FAQ = [
     ("Which calculator should I use?", "Superflex Dynasty for two-QB startups. 1QB when a passer is just another starter. Redraft PPR, The Classic (0.5 PPR), or Standard when the deal is for this season only."),
 ]
 FENCE_FAQ = [
-    ("What is The Fence?", "Ball Keep's dynasty IDP list. Top 200 individual defensive players. Mean of 20 markets the most popular dynasty IDP leagues actually draft from."),
-    ("How is the rank built?", "Three published long boards: Dynasty Nerds, PFF, and Dynasty Dealer Sleeper trades. Then seventeen IDP-format overlays: tackle premium, big play, IDP123, MFL 5-pos, youth, win-now, LB-heavy, EDGE-first, start-4 DB. Unranked on a board is a skip, never 999."),
-    ("How is this different from Top Defenses?", "Top Defenses is team DST. The Fence is IDP: defensive linemen, linebackers, and defensive backs as individual names."),
+    ("What is The Fence?", "Ball Keep's mixed Superflex + IDP dynasty list. Top 400 names, skill and IDP on one board. The board IDP startups actually draft from."),
+    ("How is the rank built?", "Published core is Dynasty Nerds Glossery mixed 725 (Aug 21, 2026). Then the IDP Show stitch: The Keep skill ranks and the 20-market IDP mean dropped into Glossery startup slots. Unranked on a board is a skip, never 999."),
+    ("How is this different from The Keep and Top Defenses?", "The Keep is Superflex skill players only. Top Defenses is team DST. The Fence is the combined board: QB, RB, WR, TE, DL, LB, DB."),
 ]
 NEWS_FAQ = [
     ("Where does BK News come from?", "Hourly clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with links back to the original boards and to Keep player files."),
@@ -1006,7 +1010,7 @@ NEWS_FAQ = [
 
 FB_ALSO = {
     "the-keep.html": [
-        ("the-fence.html", "The Fence", "Dynasty IDP, top 200."),
+        ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
         ("board.html", "The Board", "Redraft PPR, this year."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
@@ -1098,7 +1102,7 @@ FB_ALSO = {
         ("mlb-schedule.html", "MLB Schedule", "September baseball."),
     ],
     "defenses.html": [
-        ("the-fence.html", "The Fence", "Dynasty IDP names."),
+        ("the-fence.html", "The Fence (IDP)", "Superflex + IDP names."),
         ("kickers.html", "Top Kickers", "The kicking board."),
         ("board.html", "The Board", "Skill-player PPR."),
         ("the-classic.html", "The Classic", "Half-PPR redraft."),
@@ -2377,28 +2381,17 @@ def main():
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
       <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR.</p>
-      <div class="home-leads">
-        <a class="tile lead keep" href="the-keep.html">
-          <h3>The Keep</h3>
-          <p class="lead-sub">Dynasty · top 400</p>
-          <p>32 boards mashed into one rank.</p>
-        </a>
-        <a class="tile lead board" href="board.html">
-          <h3>The Board</h3>
-          <p class="lead-sub">Redraft · PPR</p>
-          <p>Full-PPR, this year. Thirteen boards averaged.</p>
-        </a>
-      </div>
     </section>
-    {desk_block("lists", "Lists", "The other boards.", "Redraft, rookies, IDP, the market tape, defenses, and kickers.", [
-        ("the-fence.html", "The Fence", "Dynasty IDP, top 200."),
+    {desk_block("lists", "Lists", "The boards.", "The Keep and The Board lead. Then Superflex + IDP, redraft, rookies, the market tape, DST, and kickers.", [
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400. 32 boards mashed into one rank.", "lead keep"),
+        ("board.html", "The Board", "Redraft PPR, this year. Thirteen boards averaged.", "lead board"),
+        ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("the-classic.html", "The Classic", "Half-PPR, this year."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
-        ("recent-trades.html", "Recent Deals", "Packages that closed."),
-        ("defenses.html", "Top Defenses", "Aggregate DST."),
+        ("defenses.html", "The D (DST)", "Aggregate team DST."),
         ("kickers.html", "Top Kickers", "Aggregate K."),
     ])}
     {desk_block("schedules", "Slates", "The schedules.", "Football, baseball, and the Premier League.", [
@@ -2674,26 +2667,26 @@ def main():
         ],
     ))
 
-    fence_chips, fence_js = pos_filter("fence-pos", ["DL", "LB", "DB"])
+    fence_chips, fence_js = pos_filter("fence-pos", ["QB", "RB", "WR", "TE", "DL", "LB", "DB"])
     fence_body = f"""
-    <p class="kicker">Dynasty IDP · Super Aggregate · {len(FENCE_SOURCES)} boards</p>
+    <p class="kicker">Dynasty Superflex + IDP · Super Aggregate · {len(FENCE_MIXED_SOURCES)} boards</p>
     <h1>The Fence</h1>
-    <p class="note">This is dynasty IDP. Top {len(fence)} names. Mean of {len(FENCE_SOURCES)} markets the most popular dynasty IDP leagues draft from. Three published long boards (Dynasty Nerds, PFF, Dynasty Dealer Sleeper trades) plus seventeen IDP-format overlays: tackle premium, big play, IDP123, MFL 5-pos, youth, win-now, LB-heavy, EDGE-first, start-4 DB. Unranked on a board is a skip. Aidan Hutchinson is 1.01. The Keep next door is Superflex skill players. Top Defenses is team DST. Sort by DL, LB, or DB with the chips.</p>
+    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Published core is Dynasty Nerds Glossery mixed 725. Then the IDP Show stitch: The Keep skill ranks and the 20-market IDP mean dropped into those startup slots. Unranked on a board is a skip. Josh Allen is 1.01. Aidan Hutchinson is the first IDP. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
     {rank_search_bar(fence_chips)}
     <div class="panel">{rank_table(fence, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(fence, 12, "#c8102e", "Fence value graph")}
-    {sources_panel(FENCE_SOURCES, heading="Boards in This Aggregate")}
+    {sources_panel(FENCE_MIXED_SOURCES, heading="Boards in This Aggregate")}
     {faq_html(FENCE_FAQ, heading="How The Fence is built.")}
     """
     write("the-fence.html", board_page(
         "The Fence", "the-fence.html", fence_body, fence_js,
         extra_jsonld=[
             rank_list_jsonld(
-                "2026 Dynasty IDP Rankings",
+                "2026 Superflex + IDP Dynasty Rankings",
                 "https://ballkeep.com/the-fence.html",
                 fence,
                 lambda r: "https://ballkeep.com/the-fence.html",
-                description="Aggregate dynasty IDP board.",
+                description="Aggregate mixed Superflex and IDP dynasty board.",
             ),
             faq_jsonld(FENCE_FAQ),
         ],

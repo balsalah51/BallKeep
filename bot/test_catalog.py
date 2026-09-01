@@ -149,11 +149,12 @@ def main():
     assert cat.list_for("dst")[0]["name"] == "Houston Texans"
     assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"
     fence = cat.raw.get("fence") or []
-    assert len(fence) == 200, f"fence {len(fence)}"
-    assert fence[0]["name"] == "Aidan Hutchinson"
+    assert len(fence) == 400, f"fence {len(fence)}"
+    assert fence[0]["name"] == "Josh Allen"
     assert fence[0].get("bk") == 1
-    assert cat.list_for("fence")[0]["name"] == "Aidan Hutchinson"
-    assert cat.list_for("idp")[0]["name"] == "Aidan Hutchinson"
+    assert cat.list_for("fence")[0]["name"] == "Josh Allen"
+    assert cat.list_for("idp")[0]["name"] == "Josh Allen"
+    assert any(r["name"] == "Aidan Hutchinson" for r in fence)
     bpl = cat.raw.get("bpl") or []
     assert len(bpl) == 380, f"bpl {len(bpl)}"
     assert bpl[0]["home_abbr"] == "ARS"
@@ -258,7 +259,12 @@ def main():
     assert "mast-ballkeep.jpg" in home
     assert 'class="mast-mark"' in home
     assert "background-image:url" not in home
-    assert "home-leads" in home
+    assert "home-leads" not in home
+    assert 'class="tile lead keep"' in home
+    assert 'class="tile lead board"' in home
+    assert 'href="recent-trades.html"' not in home[home.find("<nav>"):home.find("</nav>")]
+    assert "The D (DST)" in home
+    assert "The Fence (IDP)" in home
     lists_at = home.find('class="desk-block lists"')
     schedules_at = home.find('class="desk-block schedules"')
     tools_at = home.find('class="desk-block tools"')
@@ -526,9 +532,11 @@ def main():
         assert page.find("rank-search-input") < page.find(box)
     fence_page = html_of("the-fence.html")
     assert 'id="fence-pos"' in fence_page
+    assert 'data-pos="QB"' in fence_page
     assert 'data-pos="DL"' in fence_page
     assert 'data-pos="LB"' in fence_page
     assert 'data-pos="DB"' in fence_page
+    assert "Josh Allen" in fence_page
     assert fence_page.find("rank-search-input") < fence_page.find("fence-pos")
 
 
