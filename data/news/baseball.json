@@ -1,8 +1,275 @@
 {
   "sport": "baseball",
-  "updated": "2026-09-01T04:25:36Z",
-  "fresh": 177,
+  "updated": "2026-09-01T05:24:44Z",
+  "fresh": 134,
   "stories": [
+    {
+      "id": "masyn-winn-could-return-soon-tuesday-41b059c7",
+      "slug": "masyn-winn-could-return-soon-tuesday-41b059c7",
+      "sport": "baseball",
+      "headline": "MLB Injury Report: Willson Contreras sidelined with hamstring strain, James Wood nearing return",
+      "blurb": "Jorge Montanez breaks down all of the relevant injury news around the league over the last week.",
+      "summary": "Willson Contreras, James Wood, CJ Abrams and Masyn Winn: Jorge Montanez breaks down all of the relevant injury news around the league over the last week. MLB Injury Report: Willson Contreras sidelined with hamstring strain, James Wood nearing return NBC Sports Winn (thumb) could be activated from the 10-day injured list when first eligible Tuesday, Derrick Goold of the St. Aggregated from NBC Sports, RotoWire MLB, ESPN, MLB Trade Rumors, Reuters and 14 more.",
+      "category": "injury",
+      "published": "2025-08-12T07:00:00Z",
+      "updated": "2026-09-01T04:29:42Z",
+      "players": [
+        {
+          "key": "willson contreras",
+          "name": "Willson Contreras",
+          "slug": "willson-contreras",
+          "pos": "1B",
+          "team": "STL"
+        },
+        {
+          "key": "james wood",
+          "name": "James Wood",
+          "slug": "james-wood",
+          "pos": "OF",
+          "team": "WSH"
+        },
+        {
+          "key": "cj abrams",
+          "name": "CJ Abrams",
+          "slug": "cj-abrams",
+          "pos": "SS",
+          "team": "WSH"
+        },
+        {
+          "key": "masyn winn",
+          "name": "Masyn Winn",
+          "slug": "masyn-winn",
+          "pos": "SS",
+          "team": "STL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Masyn Winn: Could return as soon as Tuesday",
+          "url": "https://www.rotowire.com//baseball/player/masyn-winn-16718",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Winn (thumb) could be activated from the 10-day injured list when first eligible Tuesday, Derrick Goold of the St. Louis Post-Dispatch reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 8:01:00 AM PDT"
+        },
+        {
+          "title": "James Wood (oblique) could return on Tuesday",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU2hRSUJmeWxYaG9KS3c0bHctb0pnaEl4VDJNRUk1QkMwRWo5MzNndHhYTUt1YnFIcnVkWmo1WnROcldoOE94NFJYRmU2Z1doNjY2ZEFyNEpyTFJBLUxFdkR3YW1NQXhvc2FNdkVNcVFSNzRNS3lkaWxjRm5GWU84b0ZvMGlFS3UyZHJGTWg5RmtMUmRFR0RmdS11bmxCVDlkRjFnU2RuSUw0aW9F?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "James Wood (oblique) could return on Tuesday NBC Sports",
+          "published": "Mon, 31 Aug 2026 18:21:37 GMT"
+        },
+        {
+          "title": "James Wood exits Nationals' loss, set for testing on oblique",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOOG90d1R5M29EcTFXQkVSVnlqanZNaS14OFh2d3JqSGlkRVRSTnRKS2N6Wk92enlCODBPcGNPRks0Y2ZaNHlMWDRTbWIzWUhGZ25uSzF3UGZ1bTRoNHBoQWpPbmplM3pjM1FnWDRVYnVvQXRHSnd1MDZzODk3NzJSUndQQnVRbGJ6WjhHYW5OTWJxbVZWUDdZeXNQOGU?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "James Wood exits Nationals' loss, set for testing on oblique ESPN",
+          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals To Place James Wood On IL With Oblique Strain",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZEJkNUQzc2xHMWQ3NzFVUXNTbmNMZ1ZYS01fTGI5eTRYbDRPVzM5dnRoY0RFYzlVcDU4UE03alNsWm9fVVVESzc4Tm1vWnJJY2ZiOUZlTjlQRll1RE1FYXAxTDdpenZJYWFYcTUwQVQyeU5wd1FRWDhiaTA3dGxlWDlkNjliT1liX1RqUkhQYy1LTkpvU0pXMVRlTktRNUot?oc=5",
+          "publisher": "MLB Trade Rumors",
+          "kind": "article",
+          "snippet": "Nationals To Place James Wood On IL With Oblique Strain MLB Trade Rumors",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals All-Star OF James Wood (oblique) on MLB's IL for 1st time",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWTVJdjNoTnNzdVJ0YWViTk0tZHlRQ3J5bUdNbnJoMXJjek5qNnh4bHpHMW5fMDNJVDJ3TzVNX0RBRkVOR3hRZ0dZc3VWa0gySHh6VEFaa1c1T29YYUNtOE9sd0VCelpSQmdQbzBKbFZ0ZHdYYVpNQlJGZ28zWE91NkZwQUFjSmY0Y3l5SF9LVjBrWUVxX24tdEpwOXkwQWpQcWVxMQ?oc=5",
+          "publisher": "Reuters",
+          "kind": "article",
+          "snippet": "Nationals All-Star OF James Wood (oblique) on MLB's IL for 1st time Reuters",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals place James Wood on IL with strained oblique",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTzE3Y2hzNDBqaUhXU1JBTXpIN1hfeDJaUUZyVFd2aHN1RUZIT243WE1rQ1VzOGoxOFlxUTdvREw4ejdRM2dLTGpmZ20zY3NCU1l6SmN4RTh5U25wNVM1OFdNV2d3QTAyM1pWX3RpakRHTHEwaFY5b215c3c1Mk1Xd3lkS2I2a0JlcjVVRjVtR0NQVUlhV0E?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Nationals place James Wood on IL with strained oblique ESPN",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals add OF James Wood to IL due to oblique strain",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHBoMVpzVmhhbDk1dUpJTmE2bmpSVF8yMENITWtjQXlXMnBNcW00aW5sUUtLamFEcEZzeVhWQi1ScDhhTW1Mc01menlJZ0tKQkY0Wlhybnhyby1jODVQb3lUMTJ4dXRiUXg5cVVkbHBlaUJ5VVVwZTB5WkxrMWtTeW5nWVAwSktKQXk4MktzT2owU01GOHlDdGc0anFPOXVTS083X253dkw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Nationals add OF James Wood to IL due to oblique strain Yahoo Sports",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "James Wood Injury: Healing slowly from oblique strain",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcnpKcUtlRTJZTlhkUEpEdGxNcDZ1NzRTWkVEcXdzVTYtNFRXRU5HV3h4YndaSWV0dnBKeHA3N3pOaDZZT0ZMNEZvbHplcVBCMXFGS0NjeWR6dWYxQm1FNm1pMGpJeHJOMDVQTEctc180Z1djS213STJJampEaDlIRllnTGpXclBYMzAyZ1c0UDlQUC1HOFJXdVRzdTdvNDVuNE5wYW95WQ?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "James Wood Injury: Healing slowly from oblique strain RotoWire",
+          "published": "Sun, 16 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals' Wood (oblique) placed on 10-day IL",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPU2gyVndnVkdENE03Zk9mUnN3dUxrdWdkeWc1X2NGa0RKXzlrSEgxY1ZrNXRnemV0MTlBTUI1bUhnQ2IxTG00TjJHSlhqNmRvbkxvbzhPQ2wxUGJ6WG5LS0d2blNvLTI1OHJiU3MyWUFLR280UE1HT1ZEZnBLSjFCbXJlSVZBLWpPeHkyUnptUUVqY1ZyY0ZNS3FDMA?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Nationals' Wood (oblique) placed on 10-day IL NBC Sports",
+          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals All-Star OF James Wood (oblique) on MLB's IL for 1st time",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLVJwelJFWTdKQXJjRkhhOE40T1lyWUFFWjgwcmRJUW4xLWVCTThDaFZzVmNiRlBYbk1HZHNZWUJMOWk2Q202MXIzMlVOTnkyR1lVS19VS3FXVW1rWnlGRXp2QzNsVE1Pc1c0SmZJZi10ck1tY00zYmF1X3FraDVrMXlueWplNWdMUkZwbF9kd3huQ3U4SUlFeDhOanNJNXY1WHB5UHJKNjhlNHNpemc?oc=5",
+          "publisher": "Big News Network.com",
+          "kind": "article",
+          "snippet": "Nationals All-Star OF James Wood (oblique) on MLB's IL for 1st time Big News Network.com",
+          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "James Wood Injury Update: When Will Nationals Outfielder Return?",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE82dnBEZHpZSFdXZGhCb2ZkVUE2cTltOGNyRXVMbmFyYUJ5UlZWS3lHU2tFVDBOZzZacVJDdlY2VjlkTjNQRi1XOTYxMXdfLVNBQThITHVvdFJ0c0pQVHl5OU92azdTX3h0LU05aUpfZ0pIVmxW?oc=5",
+          "publisher": "Complex",
+          "kind": "article",
+          "snippet": "James Wood Injury Update: When Will Nationals Outfielder Return? Complex",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Washington Nationals Admit Slow Recovery for James Wood",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUDl1cGU1U0E0NVJQQmNBazJHYmZBblluckVuNHI3V3FHUWVVZWI0V0lkSUxTY1NmSjBEdmt1cEFTSU5naWlJLXlpb2kxbzB4d1JILS1LbEcxTl94SVpIZWF6YktWUnR2Rkg2R1huYkdtaElFOXJudUpvblpqa1pxbFdYaE1GMXhzUm5FdjMtN2JTVk0?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Washington Nationals Admit Slow Recovery for James Wood Yahoo Sports",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "James Wood Gets Placed on IL, How This Can Turn Into a Positive for the Nationals",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTldtdWxKTFc4bjhPR0p1ZVNrdFpQbkpvOURkMjRvTGc0d2lHYTFQWDRuTElQTURrSEFrN2NWLTlXWk5mcXpCT2hhNFhoOWNNQ05iQi1ORlhyUXpvVDMwYzRPWXZBRHNIQkdPZnRhSXFycjBVSjBLNlpGVzdZdVI4bWlDa3U5T3VWZEl2NEdhelpackN3dFdJ?oc=5",
+          "publisher": "si.com",
+          "kind": "article",
+          "snippet": "James Wood Gets Placed on IL, How This Can Turn Into a Positive for the Nationals si.com",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Washington Nationals superstar James Wood heads to the IL",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYzBTWk01Y0xKLVBJQWFJVE9tekNlRFJHWGYzNTZlRXlDS0pSU1JWWXJwTFR1Rkk2bzN3bnYwMjdlSkJwWU03QVY0ZDZBRW5ybXppV2hicDAxWHpZRXRIOUdXNFF0Rmlxd1JQWHFaR2pXdmp0V3cyWWIzX2pUTjlOLXBzVmRRUG1Cd2Y0cF9qNzB2RXJTekNYRUdPbmc0TjAzcG9uNnNIblZMTnQ1Vi1qckVWWGY3dElpX090bV9n?oc=5",
+          "publisher": "Federal Baseball",
+          "kind": "article",
+          "snippet": "Washington Nationals superstar James Wood heads to the IL Federal Baseball",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals send outfielder James Wood to injured list with oblique strain",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYWRmOERFYVIzUUNDckFvdXVpVFVlQ1hZNDlreklvNnB1SUdGYmQ3NFJSOU55M09vdXM2TEFOeTFIRkFHT3lHTkVCMzFXTHJJYm90M3RRaDhuVEVEWVpPd2VzTWxFLVJrbkNvenJldVJYTWVVY01YZE1lNVpOcUgtNVNnenpqdVBDOVc3ME5YeW1LbXM1RG4zUU5OQXhHdHA0d3dpNTlrZEFhMXFaZzNWSkNicE1RNlNQOW5N?oc=5",
+          "publisher": "The Washington Post",
+          "kind": "article",
+          "snippet": "Nationals send outfielder James Wood to injured list with oblique strain The Washington Post",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Washington Nationals All-Star outfielder James Wood on injury list for the first time",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZ040UnNlc0FwNnFrTnJnQmFFejB3SkdHLTZTNUZwbklRYzJ3a1dCbmhxVnNCb2hoVk05bWxnbWJOVXpSNkdMMU5DbjVlOFVqSUZSbXBabUZpb0EydHVMcXlwQ0FiMVJaWW5FdENnbHRyc1BUMVZFUE5qOUpYQXNTNk5fVkxnMmNsaGVucUxzVGRfV1pnZFRFY2d5Z3Q4SEdLQXV0ZHg5SGtqdHAwSGlwVjZ0M19SbG1YbXRhZ2RTMmdJUnNzZWc?oc=5",
+          "publisher": "Flashscore.com",
+          "kind": "article",
+          "snippet": "Washington Nationals All-Star outfielder James Wood on injury list for the first time Flashscore.com",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Washington Nationals Announce James Wood News During Phillies Series",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTEhsQnROOHBzWm1CYnJsVVRNM1IwYi1hWHcySzRtWVozdXhjX2VzNVp3el9LU3BhMjEyUVpvdF9IemZ2RTh5X3ZsdXZ5Nm9LZVFNY3I2Z3B6R1ZYa092VGRDUDZfZHV2WDRPRzdMc3lGMDNBZmJ0YXF0cVhqY0ZVVkdNOTJFRDFvMzN3U2ZYWGFhanM?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Washington Nationals Announce James Wood News During Phillies Series Yahoo Sports",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals Skid Continues, Pitcher Demoted, James Wood Injured",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNY0liTkZzb190SFRYalhocG1zTXVsQnE4Tk9oWldGUl9HYU1JVTEyczNRX3VUQ245WE9ua3NnTGpYdnJFR1Y1V1NYN084aG5kQi02a0lwdGtfcG91NkFlRVE5VFFwMTE5M0QzTmdhR2F1OWZWNE53S2p4cEVBNm9BdmJMN0NaZ041WFZ5Q3o5eDBtZ2tlWWJkWGU3NFExQ0YxVFNvOEdaOWJ3cVNCelBSQg?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Nationals Skid Continues, Pitcher Demoted, James Wood Injured roundtable.io",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals Announce James Wood News After Leaving Phillies Game",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONmpVSnJ0NGc1Yl9kNTc3NFgyLTJyYjVVbGVISXJDRHlHUjVVRUdzaEFNSGhyRmZkc2NjeDk0ZzUwaEd5cDV0dUwzWnJKaVozWFlVdHBIOFZucm1tSFlnMGFHWS01cGFLWGN2YURQS3ZaWDdIbWRsdTB3MXRpSEFHR1daWVgtUmpCUjVmalYyeVdZMTJTa0QwSkJveFNxWno3enVhVVdPaDc2NF9JcHprcHBDZ0tVZkEzOTJaSg?oc=5",
+          "publisher": "Yardbarker",
+          "kind": "article",
+          "snippet": "Nationals Announce James Wood News After Leaving Phillies Game Yardbarker",
+          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Washington Nationals Announce James Wood News During Phillies Series",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa3o4UFBjOVM2V3J1VTJ5MWZEZU9HbWh5YnBYeXNZVWQzSEhSTU1jVU1tRXJWX1lxeWtwdVBUUVczYUpFaDhLNzdlWlRfQy1NQkp6VkR2cjRGTGZVUXNBSWFTVmxSVG15clVydFVFTnd3elRHX2FyTjAtLVR3UkpsRWlzLWtDVTlkQk80TXBTV25XbEYxSm5MX2wyR2RxY1k?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Washington Nationals Announce James Wood News During Phillies Series heavy.com",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "James Wood Has Become the Offensive Anchor the Nationals Needed",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYVJfSnZiX2hOMkFqNTNUc0QyaVZHZmhyOF8xZnRhdE1fOUMtYmh3VG40VjNLVEotblNDQy1mTGFiNWw4cXBVcTliOEQ2bGgxRDhmREd6WmdqbUlyZG5pSTZCaElCVi1Ga0JTTVYyd2tkbndkSlQ3R0pSQVNqRVc2YjdWU0FoSGdyLTFPTUJmdU9WX3M?oc=5",
+          "publisher": "Just Baseball",
+          "kind": "article",
+          "snippet": "James Wood Has Become the Offensive Anchor the Nationals Needed Just Baseball",
+          "published": "Mon, 08 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals Stars James Wood and CJ Abrams Are on Pace to Make Franchise History",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPV1c2SzBBUGVvUHV5ek12Q1EwSE96RmstQUU0VlV4OG9TUTRZZXp5ZHBpR1hrYTlfQWEtM3p4b25BM0xfMHNuVkhfVEdaT3NZNlNYYzd6ZlhILWw5V2NxejMxVFdkOXlXdURzdzlBRW5Cenp4aXVaRGRfZmY1dFQtbHRuSHRJOGY3TnVCRjhVakNnR0huMHk5eV95ZFBjQVF0TFdaVVEzd2w?oc=5",
+          "publisher": "si.com",
+          "kind": "article",
+          "snippet": "Nationals Stars James Wood and CJ Abrams Are on Pace to Make Franchise History si.com",
+          "published": "Wed, 22 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals All-Star James Wood to undergo imaging after exiting with oblique issue",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObEZfTVhXeGI2OXFOYnFrMkZUcUYyOTRlYVdBS1Jzay0xS1VFcDRKRDdkN2cwWk5uR2hjTEtzZ3JBMDlQVG5DY1BOMmxXWi1xaEI2VzZvd1g5cW4xUVBGUFRjN3N4WU5CT1J1QTFxZ0ZzU1FyNGYta1VjNDJNRV93QmZPd2RwUmM5eFQ4dUJ6eElOUHl0bUE?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Nationals All-Star James Wood to undergo imaging after exiting with oblique issue The New York Times",
+          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "James Wood (oblique) will not be activated this week",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZnFEUWkxYkIyQ1VyQWRDM0FtX2hobnQ5b2U3Rl9qcmpIdWd3WUlnbWdFMm9qc1Fnb0NxUWFtejF4eGlQQzRlTUxxYktoYWZBeVEyaVpnZWdhUlRyVnk2VUpxcjJ1T2pRb1IxcExWcHU3S3pyRVZnWXNKdENDbTZHRGdqS29VZkF1TGtxcWNuYWxEWjlEeWdQbkstZERPNGPSAaQBQVVfeXFMTjRnc19YaDBUOUJlQV92UURBVlJyYXg1SE9QUGhXX3dYaU80aDdEazBPdkNNUE16T2UySFlvUTI5OTJIT3hwUTNSVnNpTDUzLVdOdlNSV2RRQlpoYnAzd0o0TGdBRHM5dHFFcllsTDNGNkdqSHhDMHBnZ2FzV3daODRTMC1oSGtWdWhxZlNFYk01akp5djhiQ2dhQzJkWVBkNFlBRUg?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "James Wood (oblique) will not be activated this week FantasyPros",
+          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "James Wood (oblique) lands on IL",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQX0lua19sVWx0XzBZNDRDbnY3UGNfS3FBeEhXazd2RU9WQTl6NjctMUNXV0UtTFdock9ZaEp1SWY0OVhDYnN1UlQ5Nlg1VGd2Q00tMmFoWVV5QzVBQnd1SDFEeTNhUGZ6a3RZNUY2dWZicWhHM2czQm1sdnEwbE4zdVBKYnLSAYoBQVVfeXFMTjlMZW5HSHlFN2l0NjRrYkY5RXdSeHQ3WkhyS25ERFltZU53TVRudDF4RzlNTmRXUnBsY05pVlczc1lkbXVWeksyNEQzY0R1anlaekdaTHdxNnM5dHJiRFZlVXpfTXV2MHFaWVVoVkMxMkZvZ3VaN2pNS0VnZUpOMnMxbWhTU00tQTJR?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "James Wood (oblique) lands on IL FantasyPros",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nationals Star James Wood Remains Among MLB’s Top Players Despite Slump",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZTYxbE54V1k1UXhraVBmbVQwZkxWMUNaZkx5MFAzOWZ5NlZwVzJra2ZYVkFGZlM4M0tGYkVJZnZ5TkNTRVVQMkV2aVFsTXR3dDc3NzJSZHVrSXd4d3dKc0JZWnhLT245UzhjQnk0LTFobjNEaFFrN1FJUkdySzVuZ0lXeTJvemtMUWlKaFVFb3lyVl9HQngzZw?oc=5",
+          "publisher": "si.com",
+          "kind": "article",
+          "snippet": "Nationals Star James Wood Remains Among MLB’s Top Players Despite Slump si.com",
+          "published": "Tue, 12 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "MLB Injury Report: Willson Contreras sidelined with hamstring strain, James Wood nearing return",
+          "url": "https://sports.yahoo.com/articles/mlb-injury-report-willson-contreras-042801665.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Jorge Montanez breaks down all of the relevant injury news around the league over the last week.",
+          "published": "Tue, 01 Sep 2026 04:28:01 +0000"
+        },
+        {
+          "title": "MLB Injury Report: Willson Contreras sidelined with hamstring strain, James Wood nearing return",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNenc2QnhyUGg3VDdRc1U4ZWxodTFseXhsc3FURlVtbi11LVRYY1dVeWxBSjB6UUZQZUhFaDJYblJMMEhNT0NCczdaNXdIaGt3aS13SmxIZEotTDRQMGpvOHY4OWJwNzB2UDBYeGk3REdnNUJXS0ZBZTZjYXVOT0pnTkJDQ1NSaTFEY2hvTlBxZS1oVVZyYURfWG8yZ2xmTFEzSEJMUG11djNxOXVhNlRWZ0ljbjB1X1I5NGhKSWVtLWstY0oyUWJydGRZXzRfX2dCMFdhNTNYaHM?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "MLB Injury Report: Willson Contreras sidelined with hamstring strain, James Wood nearing return NBC Sports",
+          "published": "Tue, 01 Sep 2026 04:29:42 GMT"
+        }
+      ]
+    },
     {
       "id": "aaron-judge-explains-why-he-hopes-bypass-rehab-0e2b5a13",
       "slug": "aaron-judge-explains-why-he-hopes-bypass-rehab-0e2b5a13",
@@ -1720,250 +1987,6 @@
       ]
     },
     {
-      "id": "masyn-winn-could-return-soon-tuesday-41b059c7",
-      "slug": "masyn-winn-could-return-soon-tuesday-41b059c7",
-      "sport": "baseball",
-      "headline": "Washington Nationals All-Star outfielder James Wood on injury list for the first time",
-      "blurb": "Nationals All-Star James Wood to undergo imaging after exiting with oblique issue The New York Times",
-      "summary": "Nationals All-Star James Wood to undergo imaging after exiting with oblique issue The New York Times James Wood (oblique) will not be activated this week FantasyPros James Wood (oblique) lands on IL FantasyPros Aggregated from The New York Times, FantasyPros, si.com, RotoWire MLB, NBC Sports and 14 more.",
-      "category": "injury",
-      "published": "2025-08-12T07:00:00Z",
-      "updated": "2026-08-31T18:21:37Z",
-      "players": [
-        {
-          "key": "james wood",
-          "name": "James Wood",
-          "slug": "james-wood",
-          "pos": "OF",
-          "team": "WSH"
-        },
-        {
-          "key": "cj abrams",
-          "name": "CJ Abrams",
-          "slug": "cj-abrams",
-          "pos": "SS",
-          "team": "WSH"
-        },
-        {
-          "key": "masyn winn",
-          "name": "Masyn Winn",
-          "slug": "masyn-winn",
-          "pos": "SS",
-          "team": "STL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Masyn Winn: Could return as soon as Tuesday",
-          "url": "https://www.rotowire.com//baseball/player/masyn-winn-16718",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Winn (thumb) could be activated from the 10-day injured list when first eligible Tuesday, Derrick Goold of the St. Louis Post-Dispatch reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 8:01:00 AM PDT"
-        },
-        {
-          "title": "James Wood (oblique) could return on Tuesday",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU2hRSUJmeWxYaG9KS3c0bHctb0pnaEl4VDJNRUk1QkMwRWo5MzNndHhYTUt1YnFIcnVkWmo1WnROcldoOE94NFJYRmU2Z1doNjY2ZEFyNEpyTFJBLUxFdkR3YW1NQXhvc2FNdkVNcVFSNzRNS3lkaWxjRm5GWU84b0ZvMGlFS3UyZHJGTWg5RmtMUmRFR0RmdS11bmxCVDlkRjFnU2RuSUw0aW9F?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "James Wood (oblique) could return on Tuesday NBC Sports",
-          "published": "Mon, 31 Aug 2026 18:21:37 GMT"
-        },
-        {
-          "title": "James Wood exits Nationals' loss, set for testing on oblique",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOOG90d1R5M29EcTFXQkVSVnlqanZNaS14OFh2d3JqSGlkRVRSTnRKS2N6Wk92enlCODBPcGNPRks0Y2ZaNHlMWDRTbWIzWUhGZ25uSzF3UGZ1bTRoNHBoQWpPbmplM3pjM1FnWDRVYnVvQXRHSnd1MDZzODk3NzJSUndQQnVRbGJ6WjhHYW5OTWJxbVZWUDdZeXNQOGU?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "James Wood exits Nationals' loss, set for testing on oblique ESPN",
-          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals To Place James Wood On IL With Oblique Strain",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZEJkNUQzc2xHMWQ3NzFVUXNTbmNMZ1ZYS01fTGI5eTRYbDRPVzM5dnRoY0RFYzlVcDU4UE03alNsWm9fVVVESzc4Tm1vWnJJY2ZiOUZlTjlQRll1RE1FYXAxTDdpenZJYWFYcTUwQVQyeU5wd1FRWDhiaTA3dGxlWDlkNjliT1liX1RqUkhQYy1LTkpvU0pXMVRlTktRNUot?oc=5",
-          "publisher": "MLB Trade Rumors",
-          "kind": "article",
-          "snippet": "Nationals To Place James Wood On IL With Oblique Strain MLB Trade Rumors",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals All-Star OF James Wood (oblique) on MLB's IL for 1st time",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWTVJdjNoTnNzdVJ0YWViTk0tZHlRQ3J5bUdNbnJoMXJjek5qNnh4bHpHMW5fMDNJVDJ3TzVNX0RBRkVOR3hRZ0dZc3VWa0gySHh6VEFaa1c1T29YYUNtOE9sd0VCelpSQmdQbzBKbFZ0ZHdYYVpNQlJGZ28zWE91NkZwQUFjSmY0Y3l5SF9LVjBrWUVxX24tdEpwOXkwQWpQcWVxMQ?oc=5",
-          "publisher": "Reuters",
-          "kind": "article",
-          "snippet": "Nationals All-Star OF James Wood (oblique) on MLB's IL for 1st time Reuters",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals place James Wood on IL with strained oblique",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTzE3Y2hzNDBqaUhXU1JBTXpIN1hfeDJaUUZyVFd2aHN1RUZIT243WE1rQ1VzOGoxOFlxUTdvREw4ejdRM2dLTGpmZ20zY3NCU1l6SmN4RTh5U25wNVM1OFdNV2d3QTAyM1pWX3RpakRHTHEwaFY5b215c3c1Mk1Xd3lkS2I2a0JlcjVVRjVtR0NQVUlhV0E?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Nationals place James Wood on IL with strained oblique ESPN",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals add OF James Wood to IL due to oblique strain",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHBoMVpzVmhhbDk1dUpJTmE2bmpSVF8yMENITWtjQXlXMnBNcW00aW5sUUtLamFEcEZzeVhWQi1ScDhhTW1Mc01menlJZ0tKQkY0Wlhybnhyby1jODVQb3lUMTJ4dXRiUXg5cVVkbHBlaUJ5VVVwZTB5WkxrMWtTeW5nWVAwSktKQXk4MktzT2owU01GOHlDdGc0anFPOXVTS083X253dkw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Nationals add OF James Wood to IL due to oblique strain Yahoo Sports",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "James Wood Injury: Healing slowly from oblique strain",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcnpKcUtlRTJZTlhkUEpEdGxNcDZ1NzRTWkVEcXdzVTYtNFRXRU5HV3h4YndaSWV0dnBKeHA3N3pOaDZZT0ZMNEZvbHplcVBCMXFGS0NjeWR6dWYxQm1FNm1pMGpJeHJOMDVQTEctc180Z1djS213STJJampEaDlIRllnTGpXclBYMzAyZ1c0UDlQUC1HOFJXdVRzdTdvNDVuNE5wYW95WQ?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "James Wood Injury: Healing slowly from oblique strain RotoWire",
-          "published": "Sun, 16 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals' Wood (oblique) placed on 10-day IL",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPU2gyVndnVkdENE03Zk9mUnN3dUxrdWdkeWc1X2NGa0RKXzlrSEgxY1ZrNXRnemV0MTlBTUI1bUhnQ2IxTG00TjJHSlhqNmRvbkxvbzhPQ2wxUGJ6WG5LS0d2blNvLTI1OHJiU3MyWUFLR280UE1HT1ZEZnBLSjFCbXJlSVZBLWpPeHkyUnptUUVqY1ZyY0ZNS3FDMA?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Nationals' Wood (oblique) placed on 10-day IL NBC Sports",
-          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals All-Star OF James Wood (oblique) on MLB's IL for 1st time",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOLVJwelJFWTdKQXJjRkhhOE40T1lyWUFFWjgwcmRJUW4xLWVCTThDaFZzVmNiRlBYbk1HZHNZWUJMOWk2Q202MXIzMlVOTnkyR1lVS19VS3FXVW1rWnlGRXp2QzNsVE1Pc1c0SmZJZi10ck1tY00zYmF1X3FraDVrMXlueWplNWdMUkZwbF9kd3huQ3U4SUlFeDhOanNJNXY1WHB5UHJKNjhlNHNpemc?oc=5",
-          "publisher": "Big News Network.com",
-          "kind": "article",
-          "snippet": "Nationals All-Star OF James Wood (oblique) on MLB's IL for 1st time Big News Network.com",
-          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "James Wood Injury Update: When Will Nationals Outfielder Return?",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE82dnBEZHpZSFdXZGhCb2ZkVUE2cTltOGNyRXVMbmFyYUJ5UlZWS3lHU2tFVDBOZzZacVJDdlY2VjlkTjNQRi1XOTYxMXdfLVNBQThITHVvdFJ0c0pQVHl5OU92azdTX3h0LU05aUpfZ0pIVmxW?oc=5",
-          "publisher": "Complex",
-          "kind": "article",
-          "snippet": "James Wood Injury Update: When Will Nationals Outfielder Return? Complex",
-          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Washington Nationals Admit Slow Recovery for James Wood",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUDl1cGU1U0E0NVJQQmNBazJHYmZBblluckVuNHI3V3FHUWVVZWI0V0lkSUxTY1NmSjBEdmt1cEFTSU5naWlJLXlpb2kxbzB4d1JILS1LbEcxTl94SVpIZWF6YktWUnR2Rkg2R1huYkdtaElFOXJudUpvblpqa1pxbFdYaE1GMXhzUm5FdjMtN2JTVk0?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Washington Nationals Admit Slow Recovery for James Wood Yahoo Sports",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "James Wood Gets Placed on IL, How This Can Turn Into a Positive for the Nationals",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTldtdWxKTFc4bjhPR0p1ZVNrdFpQbkpvOURkMjRvTGc0d2lHYTFQWDRuTElQTURrSEFrN2NWLTlXWk5mcXpCT2hhNFhoOWNNQ05iQi1ORlhyUXpvVDMwYzRPWXZBRHNIQkdPZnRhSXFycjBVSjBLNlpGVzdZdVI4bWlDa3U5T3VWZEl2NEdhelpackN3dFdJ?oc=5",
-          "publisher": "si.com",
-          "kind": "article",
-          "snippet": "James Wood Gets Placed on IL, How This Can Turn Into a Positive for the Nationals si.com",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Washington Nationals superstar James Wood heads to the IL",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYzBTWk01Y0xKLVBJQWFJVE9tekNlRFJHWGYzNTZlRXlDS0pSU1JWWXJwTFR1Rkk2bzN3bnYwMjdlSkJwWU03QVY0ZDZBRW5ybXppV2hicDAxWHpZRXRIOUdXNFF0Rmlxd1JQWHFaR2pXdmp0V3cyWWIzX2pUTjlOLXBzVmRRUG1Cd2Y0cF9qNzB2RXJTekNYRUdPbmc0TjAzcG9uNnNIblZMTnQ1Vi1qckVWWGY3dElpX090bV9n?oc=5",
-          "publisher": "Federal Baseball",
-          "kind": "article",
-          "snippet": "Washington Nationals superstar James Wood heads to the IL Federal Baseball",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals send outfielder James Wood to injured list with oblique strain",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYWRmOERFYVIzUUNDckFvdXVpVFVlQ1hZNDlreklvNnB1SUdGYmQ3NFJSOU55M09vdXM2TEFOeTFIRkFHT3lHTkVCMzFXTHJJYm90M3RRaDhuVEVEWVpPd2VzTWxFLVJrbkNvenJldVJYTWVVY01YZE1lNVpOcUgtNVNnenpqdVBDOVc3ME5YeW1LbXM1RG4zUU5OQXhHdHA0d3dpNTlrZEFhMXFaZzNWSkNicE1RNlNQOW5N?oc=5",
-          "publisher": "The Washington Post",
-          "kind": "article",
-          "snippet": "Nationals send outfielder James Wood to injured list with oblique strain The Washington Post",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Washington Nationals All-Star outfielder James Wood on injury list for the first time",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZ040UnNlc0FwNnFrTnJnQmFFejB3SkdHLTZTNUZwbklRYzJ3a1dCbmhxVnNCb2hoVk05bWxnbWJOVXpSNkdMMU5DbjVlOFVqSUZSbXBabUZpb0EydHVMcXlwQ0FiMVJaWW5FdENnbHRyc1BUMVZFUE5qOUpYQXNTNk5fVkxnMmNsaGVucUxzVGRfV1pnZFRFY2d5Z3Q4SEdLQXV0ZHg5SGtqdHAwSGlwVjZ0M19SbG1YbXRhZ2RTMmdJUnNzZWc?oc=5",
-          "publisher": "Flashscore.com",
-          "kind": "article",
-          "snippet": "Washington Nationals All-Star outfielder James Wood on injury list for the first time Flashscore.com",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Washington Nationals Announce James Wood News During Phillies Series",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTEhsQnROOHBzWm1CYnJsVVRNM1IwYi1hWHcySzRtWVozdXhjX2VzNVp3el9LU3BhMjEyUVpvdF9IemZ2RTh5X3ZsdXZ5Nm9LZVFNY3I2Z3B6R1ZYa092VGRDUDZfZHV2WDRPRzdMc3lGMDNBZmJ0YXF0cVhqY0ZVVkdNOTJFRDFvMzN3U2ZYWGFhanM?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Washington Nationals Announce James Wood News During Phillies Series Yahoo Sports",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals Skid Continues, Pitcher Demoted, James Wood Injured",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNY0liTkZzb190SFRYalhocG1zTXVsQnE4Tk9oWldGUl9HYU1JVTEyczNRX3VUQ245WE9ua3NnTGpYdnJFR1Y1V1NYN084aG5kQi02a0lwdGtfcG91NkFlRVE5VFFwMTE5M0QzTmdhR2F1OWZWNE53S2p4cEVBNm9BdmJMN0NaZ041WFZ5Q3o5eDBtZ2tlWWJkWGU3NFExQ0YxVFNvOEdaOWJ3cVNCelBSQg?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Nationals Skid Continues, Pitcher Demoted, James Wood Injured roundtable.io",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals Announce James Wood News After Leaving Phillies Game",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONmpVSnJ0NGc1Yl9kNTc3NFgyLTJyYjVVbGVISXJDRHlHUjVVRUdzaEFNSGhyRmZkc2NjeDk0ZzUwaEd5cDV0dUwzWnJKaVozWFlVdHBIOFZucm1tSFlnMGFHWS01cGFLWGN2YURQS3ZaWDdIbWRsdTB3MXRpSEFHR1daWVgtUmpCUjVmalYyeVdZMTJTa0QwSkJveFNxWno3enVhVVdPaDc2NF9JcHprcHBDZ0tVZkEzOTJaSg?oc=5",
-          "publisher": "Yardbarker",
-          "kind": "article",
-          "snippet": "Nationals Announce James Wood News After Leaving Phillies Game Yardbarker",
-          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Washington Nationals Announce James Wood News During Phillies Series",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNa3o4UFBjOVM2V3J1VTJ5MWZEZU9HbWh5YnBYeXNZVWQzSEhSTU1jVU1tRXJWX1lxeWtwdVBUUVczYUpFaDhLNzdlWlRfQy1NQkp6VkR2cjRGTGZVUXNBSWFTVmxSVG15clVydFVFTnd3elRHX2FyTjAtLVR3UkpsRWlzLWtDVTlkQk80TXBTV25XbEYxSm5MX2wyR2RxY1k?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Washington Nationals Announce James Wood News During Phillies Series heavy.com",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "James Wood Has Become the Offensive Anchor the Nationals Needed",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYVJfSnZiX2hOMkFqNTNUc0QyaVZHZmhyOF8xZnRhdE1fOUMtYmh3VG40VjNLVEotblNDQy1mTGFiNWw4cXBVcTliOEQ2bGgxRDhmREd6WmdqbUlyZG5pSTZCaElCVi1Ga0JTTVYyd2tkbndkSlQ3R0pSQVNqRVc2YjdWU0FoSGdyLTFPTUJmdU9WX3M?oc=5",
-          "publisher": "Just Baseball",
-          "kind": "article",
-          "snippet": "James Wood Has Become the Offensive Anchor the Nationals Needed Just Baseball",
-          "published": "Mon, 08 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals Stars James Wood and CJ Abrams Are on Pace to Make Franchise History",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPV1c2SzBBUGVvUHV5ek12Q1EwSE96RmstQUU0VlV4OG9TUTRZZXp5ZHBpR1hrYTlfQWEtM3p4b25BM0xfMHNuVkhfVEdaT3NZNlNYYzd6ZlhILWw5V2NxejMxVFdkOXlXdURzdzlBRW5Cenp4aXVaRGRfZmY1dFQtbHRuSHRJOGY3TnVCRjhVakNnR0huMHk5eV95ZFBjQVF0TFdaVVEzd2w?oc=5",
-          "publisher": "si.com",
-          "kind": "article",
-          "snippet": "Nationals Stars James Wood and CJ Abrams Are on Pace to Make Franchise History si.com",
-          "published": "Wed, 22 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals All-Star James Wood to undergo imaging after exiting with oblique issue",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObEZfTVhXeGI2OXFOYnFrMkZUcUYyOTRlYVdBS1Jzay0xS1VFcDRKRDdkN2cwWk5uR2hjTEtzZ3JBMDlQVG5DY1BOMmxXWi1xaEI2VzZvd1g5cW4xUVBGUFRjN3N4WU5CT1J1QTFxZ0ZzU1FyNGYta1VjNDJNRV93QmZPd2RwUmM5eFQ4dUJ6eElOUHl0bUE?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Nationals All-Star James Wood to undergo imaging after exiting with oblique issue The New York Times",
-          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "James Wood (oblique) will not be activated this week",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZnFEUWkxYkIyQ1VyQWRDM0FtX2hobnQ5b2U3Rl9qcmpIdWd3WUlnbWdFMm9qc1Fnb0NxUWFtejF4eGlQQzRlTUxxYktoYWZBeVEyaVpnZWdhUlRyVnk2VUpxcjJ1T2pRb1IxcExWcHU3S3pyRVZnWXNKdENDbTZHRGdqS29VZkF1TGtxcWNuYWxEWjlEeWdQbkstZERPNGPSAaQBQVVfeXFMTjRnc19YaDBUOUJlQV92UURBVlJyYXg1SE9QUGhXX3dYaU80aDdEazBPdkNNUE16T2UySFlvUTI5OTJIT3hwUTNSVnNpTDUzLVdOdlNSV2RRQlpoYnAzd0o0TGdBRHM5dHFFcllsTDNGNkdqSHhDMHBnZ2FzV3daODRTMC1oSGtWdWhxZlNFYk01akp5djhiQ2dhQzJkWVBkNFlBRUg?oc=5",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "James Wood (oblique) will not be activated this week FantasyPros",
-          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "James Wood (oblique) lands on IL",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQX0lua19sVWx0XzBZNDRDbnY3UGNfS3FBeEhXazd2RU9WQTl6NjctMUNXV0UtTFdock9ZaEp1SWY0OVhDYnN1UlQ5Nlg1VGd2Q00tMmFoWVV5QzVBQnd1SDFEeTNhUGZ6a3RZNUY2dWZicWhHM2czQm1sdnEwbE4zdVBKYnLSAYoBQVVfeXFMTjlMZW5HSHlFN2l0NjRrYkY5RXdSeHQ3WkhyS25ERFltZU53TVRudDF4RzlNTmRXUnBsY05pVlczc1lkbXVWeksyNEQzY0R1anlaekdaTHdxNnM5dHJiRFZlVXpfTXV2MHFaWVVoVkMxMkZvZ3VaN2pNS0VnZUpOMnMxbWhTU00tQTJR?oc=5",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "James Wood (oblique) lands on IL FantasyPros",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Nationals Star James Wood Remains Among MLB’s Top Players Despite Slump",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZTYxbE54V1k1UXhraVBmbVQwZkxWMUNaZkx5MFAzOWZ5NlZwVzJra2ZYVkFGZlM4M0tGYkVJZnZ5TkNTRVVQMkV2aVFsTXR3dDc3NzJSZHVrSXd4d3dKc0JZWnhLT245UzhjQnk0LTFobjNEaFFrN1FJUkdySzVuZ0lXeTJvemtMUWlKaFVFb3lyVl9HQngzZw?oc=5",
-          "publisher": "si.com",
-          "kind": "article",
-          "snippet": "Nationals Star James Wood Remains Among MLB’s Top Players Despite Slump si.com",
-          "published": "Tue, 12 Aug 2025 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "new-york-yankees-boston-red-sox-carlos-rod-58260119",
       "slug": "new-york-yankees-boston-red-sox-carlos-rod-58260119",
       "sport": "baseball",
@@ -2641,8 +2664,8 @@
       "slug": "reds-cubs-prop-picks-sunday-night-baseball-59f3aff5",
       "sport": "baseball",
       "headline": "Use DraftKings promo code to get $200 in bonus bets by targeting Cubs-Brewers, MLB, college football on Monday",
-      "blurb": "DraftKings offers $200 in bonus bets after your first $5 wager (paid within 21 days) for MLB, college football betting on Monday",
-      "summary": "Chase Burns, Pete Crow-Armstrong and Sal Stewart: DraftKings offers $200 in bonus bets after your first $5 wager (paid within 21 days) for MLB, college football betting on Monday Colby Marchio breaks down his favorite player props for Sunday Night Baseball on August 30, featuring Sal Stewart and Pete Crow-Armstrong. Play along during tonight's game! Aggregated from CBS MLB, COVERS, SB Nation.",
+      "blurb": "DraftKings offers $200 in bonus bets after your first $5 wager (paid within 21 days) for MLB betting on Sunday",
+      "summary": "Chase Burns, Pete Crow-Armstrong and Sal Stewart: DraftKings offers $200 in bonus bets after your first $5 wager (paid within 21 days) for MLB betting on Sunday Colby Marchio breaks down his favorite player props for Sunday Night Baseball on August 30, featuring Sal Stewart and Pete Crow-Armstrong. Play along during tonight's game! Aggregated from CBS MLB, COVERS, SB Nation.",
       "category": "wire",
       "published": "2026-08-30T18:01:00Z",
       "updated": "2026-08-31T22:37:28Z",
@@ -3721,11 +3744,11 @@
       "slug": "2026-baseball-top-300-juan-soto-james-wood-5dc4aef2",
       "sport": "baseball",
       "headline": "2026 Fantasy Baseball Top 300: Juan Soto, James Wood zooming back up, Chase Burns plummets",
-      "blurb": "2026 Fantasy Baseball Top 300: Juan Soto, James Wood zooming back up, Chase Burns plummets Yahoo Sports",
-      "summary": "2026 Fantasy Baseball Top 300: Juan Soto, James Wood zooming back up, Chase Burns plummets Yahoo Sports Ketel Marte, Riley Greene and Roman Anthony also make big jumps this week as they return to lineups. Aggregated from Yahoo Sports, NBC Sports.",
+      "blurb": "2026 Fantasy Baseball Top 300: Juan Soto, James Wood zooming back up, Chase Burns plummets NBC Sports",
+      "summary": "2026 Fantasy Baseball Top 300: Juan Soto, James Wood zooming back up, Chase Burns plummets NBC Sports Ketel Marte, Riley Greene and Roman Anthony also make big jumps this week as they return to lineups. Aggregated from NBC Sports, Yahoo Sports.",
       "category": "wire",
       "published": "2026-08-31T21:30:00Z",
-      "updated": "2026-08-31T21:38:54Z",
+      "updated": "2026-08-31T23:18:09Z",
       "players": [
         {
           "key": "chase burns",
@@ -3786,6 +3809,114 @@
           "kind": "article",
           "snippet": "2026 Fantasy Baseball Top 300: Juan Soto, James Wood zooming back up, Chase Burns plummets Yahoo Sports",
           "published": "Mon, 31 Aug 2026 21:38:54 GMT"
+        },
+        {
+          "title": "2026 Fantasy Baseball Top 300: Juan Soto, James Wood zooming back up, Chase Burns plummets",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObGd2cFBkUFp1OXJxTk1VamxkSHh3aGV6MDRWNXJXTU1ETTZsWWR5YlZZLWhiNzRCNElIRkRhT2Rkc0htY0xITXRRcmNWVVBNOWJFX05ad2REUUNITjBpRm10ZnJfSkMzbkJhcVlVcGJhS2Y1UW5OejJoYXh6X1N5S1NnZHNtWUxNZnpScHg2MU8tR1J3WTA4ZHktTWtvVnhZUnp3Q0FmT2NjZHQ2WmI3N0hreEN1UmNiRHNvRTlVOXBIWGV4QWd2cjdZaWNiYkU?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "2026 Fantasy Baseball Top 300: Juan Soto, James Wood zooming back up, Chase Burns plummets NBC Sports",
+          "published": "Mon, 31 Aug 2026 23:18:09 GMT"
+        }
+      ]
+    },
+    {
+      "id": "d-backs-phillies-discussion-f2a18c12",
+      "slug": "d-backs-phillies-discussion-f2a18c12",
+      "sport": "baseball",
+      "headline": "D-backs vs. Phillies Discussion",
+      "blurb": "Today’s Lineups PHILLIES DIAMONDBACKS Kyle Schwarber - DH Geraldo Perdomo - SS Trea Turner - SS Corbin Carroll - RF Bryce Harper - RF Gabriel Moreno - C Luis Arraez - 2B Ketel…",
+      "summary": "Today’s Lineups PHILLIES DIAMONDBACKS Kyle Schwarber - DH Geraldo Perdomo - SS Trea Turner - SS Corbin Carroll - RF Bryce Harper - RF Gabriel Moreno - C Luis Arraez - 2B Ketel Marte - DH Alec Bohm - 1B Lars Nootbaar - LF Bryson Stott - 3B Nolan Arenado - 3B Brandon Marsh - […] Board reading of SB Nation.",
+      "category": "wire",
+      "published": "2026-09-01T01:00:00Z",
+      "updated": "2026-09-01T01:00:00Z",
+      "players": [
+        {
+          "key": "geraldo perdomo",
+          "name": "Geraldo Perdomo",
+          "slug": "geraldo-perdomo",
+          "pos": "SS",
+          "team": "ARI"
+        },
+        {
+          "key": "corbin carroll",
+          "name": "Corbin Carroll",
+          "slug": "corbin-carroll",
+          "pos": "OF",
+          "team": "ARI"
+        },
+        {
+          "key": "kyle schwarber",
+          "name": "Kyle Schwarber",
+          "slug": "kyle-schwarber",
+          "pos": "DH",
+          "team": "PHI"
+        },
+        {
+          "key": "gabriel moreno",
+          "name": "Gabriel Moreno",
+          "slug": "gabriel-moreno",
+          "pos": "C",
+          "team": ""
+        },
+        {
+          "key": "lars nootbaar",
+          "name": "Lars Nootbaar",
+          "slug": "lars-nootbaar",
+          "pos": "OF",
+          "team": "STL"
+        },
+        {
+          "key": "bryce harper",
+          "name": "Bryce Harper",
+          "slug": "bryce-harper",
+          "pos": "1B",
+          "team": "PHI"
+        },
+        {
+          "key": "bryson stott",
+          "name": "Bryson Stott",
+          "slug": "bryson-stott",
+          "pos": "2B",
+          "team": "PHI"
+        },
+        {
+          "key": "ketel marte",
+          "name": "Ketel Marte",
+          "slug": "ketel-marte",
+          "pos": "2B",
+          "team": "ARI"
+        },
+        {
+          "key": "trea turner",
+          "name": "Trea Turner",
+          "slug": "trea-turner",
+          "pos": "SS",
+          "team": "PHI"
+        },
+        {
+          "key": "luis arraez",
+          "name": "Luis Arraez",
+          "slug": "luis-arraez",
+          "pos": "1B",
+          "team": "SF"
+        },
+        {
+          "key": "alec bohm",
+          "name": "Alec Bohm",
+          "slug": "alec-bohm",
+          "pos": "1B",
+          "team": "PHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "D-backs vs. Phillies Discussion",
+          "url": "https://sports.yahoo.com/articles/d-backs-vs-phillies-discussion-010000786.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Today’s Lineups PHILLIES DIAMONDBACKS Kyle Schwarber - DH Geraldo Perdomo - SS Trea Turner - SS Corbin Carroll - RF Bryce Harper - RF Gabriel Moreno - C Luis Arraez - 2B Ketel Marte - DH Alec Bohm - 1B Lars Nootbaar - LF Bryson Stott - 3B Nolan Arenado - 3B Brandon Marsh - […]",
+          "published": "Tue, 01 Sep 2026 01:00:00 +0000"
         }
       ]
     },
@@ -4234,106 +4365,6 @@
           "kind": "article",
           "snippet": "MLB trade deadline grades for all 30 teams: Dodgers, Tigers, Red Sox earn high marks - The Athletic The New York Times",
           "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "d-backs-phillies-discussion-f2a18c12",
-      "slug": "d-backs-phillies-discussion-f2a18c12",
-      "sport": "baseball",
-      "headline": "D-backs vs. Phillies Discussion",
-      "blurb": "Today’s Lineups PHILLIES DIAMONDBACKS Kyle Schwarber - DH Geraldo Perdomo - SS Trea Turner - SS Corbin Carroll - RF Bryce Harper - RF Gabriel Moreno - C Luis Arraez - 2B Ketel…",
-      "summary": "Today’s Lineups PHILLIES DIAMONDBACKS Kyle Schwarber - DH Geraldo Perdomo - SS Trea Turner - SS Corbin Carroll - RF Bryce Harper - RF Gabriel Moreno - C Luis Arraez - 2B Ketel Marte - DH Alec Bohm - 1B Lars Nootbaar - LF Bryson Stott - 3B Nolan Arenado - 3B Brandon Marsh - […] Board reading of SB Nation.",
-      "category": "wire",
-      "published": "2026-09-01T01:00:00Z",
-      "updated": "2026-09-01T01:00:00Z",
-      "players": [
-        {
-          "key": "geraldo perdomo",
-          "name": "Geraldo Perdomo",
-          "slug": "geraldo-perdomo",
-          "pos": "SS",
-          "team": "ARI"
-        },
-        {
-          "key": "corbin carroll",
-          "name": "Corbin Carroll",
-          "slug": "corbin-carroll",
-          "pos": "OF",
-          "team": "ARI"
-        },
-        {
-          "key": "kyle schwarber",
-          "name": "Kyle Schwarber",
-          "slug": "kyle-schwarber",
-          "pos": "DH",
-          "team": "PHI"
-        },
-        {
-          "key": "gabriel moreno",
-          "name": "Gabriel Moreno",
-          "slug": "gabriel-moreno",
-          "pos": "C",
-          "team": ""
-        },
-        {
-          "key": "lars nootbaar",
-          "name": "Lars Nootbaar",
-          "slug": "lars-nootbaar",
-          "pos": "OF",
-          "team": "STL"
-        },
-        {
-          "key": "bryce harper",
-          "name": "Bryce Harper",
-          "slug": "bryce-harper",
-          "pos": "1B",
-          "team": "PHI"
-        },
-        {
-          "key": "bryson stott",
-          "name": "Bryson Stott",
-          "slug": "bryson-stott",
-          "pos": "2B",
-          "team": "PHI"
-        },
-        {
-          "key": "ketel marte",
-          "name": "Ketel Marte",
-          "slug": "ketel-marte",
-          "pos": "2B",
-          "team": "ARI"
-        },
-        {
-          "key": "trea turner",
-          "name": "Trea Turner",
-          "slug": "trea-turner",
-          "pos": "SS",
-          "team": "PHI"
-        },
-        {
-          "key": "luis arraez",
-          "name": "Luis Arraez",
-          "slug": "luis-arraez",
-          "pos": "1B",
-          "team": "SF"
-        },
-        {
-          "key": "alec bohm",
-          "name": "Alec Bohm",
-          "slug": "alec-bohm",
-          "pos": "1B",
-          "team": "PHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "D-backs vs. Phillies Discussion",
-          "url": "https://sports.yahoo.com/articles/d-backs-vs-phillies-discussion-010000786.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Today’s Lineups PHILLIES DIAMONDBACKS Kyle Schwarber - DH Geraldo Perdomo - SS Trea Turner - SS Corbin Carroll - RF Bryce Harper - RF Gabriel Moreno - C Luis Arraez - 2B Ketel Marte - DH Alec Bohm - 1B Lars Nootbaar - LF Bryson Stott - 3B Nolan Arenado - 3B Brandon Marsh - […]",
-          "published": "Tue, 01 Sep 2026 01:00:00 +0000"
         }
       ]
     },
@@ -5018,6 +5049,51 @@
       ]
     },
     {
+      "id": "elly-de-la-cruz-included-lineup-dh-7bd6f63c",
+      "slug": "elly-de-la-cruz-included-lineup-dh-7bd6f63c",
+      "sport": "baseball",
+      "headline": "Pete Alonso: Included in Baltimore lineup Monday",
+      "blurb": "Alonso (head) will start at first base and bat second in Monday's game versus the Rockies.",
+      "summary": "Pete Alonso and Elly De La Cruz: Alonso (head) will start at first base and bat second in Monday's game versus the Rockies. Visit RotoWire.com for more analysis on this update. De La Cruz (quadriceps) will start at designated hitter and bat second in Monday's game versus the Padres. Board reading of RotoWire MLB.",
+      "category": "roster",
+      "published": "2026-08-31T19:19:34Z",
+      "updated": "2026-08-31T22:19:36Z",
+      "players": [
+        {
+          "key": "pete alonso",
+          "name": "Pete Alonso",
+          "slug": "pete-alonso",
+          "pos": "1B",
+          "team": "BAL"
+        },
+        {
+          "key": "elly de la cruz",
+          "name": "Elly De La Cruz",
+          "slug": "elly-de-la-cruz",
+          "pos": "SS",
+          "team": "CIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Elly De La Cruz: Included in lineup at DH",
+          "url": "https://www.rotowire.com//baseball/player/elly-de-la-cruz-17579",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "De La Cruz (quadriceps) will start at designated hitter and bat second in Monday's game versus the Padres. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 12:08:00 PM PDT"
+        },
+        {
+          "title": "Pete Alonso: Included in Baltimore lineup Monday",
+          "url": "https://www.rotowire.com//baseball/player/pete-alonso-14300",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Alonso (head) will start at first base and bat second in Monday's game versus the Rockies. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 2:27:00 PM PDT"
+        }
+      ]
+    },
+    {
       "id": "trade-deadline-cubs-shouldn-t-take-pete-crow-c6b09adb",
       "slug": "trade-deadline-cubs-shouldn-t-take-pete-crow-c6b09adb",
       "sport": "baseball",
@@ -5274,51 +5350,6 @@
           "kind": "article",
           "snippet": "\"Shohei Ohtani isn't doing that\" - Fans erupt as Pete Crow-Armstrong's stunning steal lifts Cubs past Blue Jays Sportskeeda",
           "published": "Fri, 07 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "elly-de-la-cruz-included-lineup-dh-7bd6f63c",
-      "slug": "elly-de-la-cruz-included-lineup-dh-7bd6f63c",
-      "sport": "baseball",
-      "headline": "Pete Alonso: Included in Baltimore lineup Monday",
-      "blurb": "Alonso (head) will start at first base and bat second in Monday's game versus the Rockies.",
-      "summary": "Pete Alonso and Elly De La Cruz: Alonso (head) will start at first base and bat second in Monday's game versus the Rockies. Visit RotoWire.com for more analysis on this update. De La Cruz (quadriceps) will start at designated hitter and bat second in Monday's game versus the Padres. Board reading of RotoWire MLB.",
-      "category": "roster",
-      "published": "2026-08-31T19:19:34Z",
-      "updated": "2026-08-31T22:19:36Z",
-      "players": [
-        {
-          "key": "pete alonso",
-          "name": "Pete Alonso",
-          "slug": "pete-alonso",
-          "pos": "1B",
-          "team": "BAL"
-        },
-        {
-          "key": "elly de la cruz",
-          "name": "Elly De La Cruz",
-          "slug": "elly-de-la-cruz",
-          "pos": "SS",
-          "team": "CIN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Elly De La Cruz: Included in lineup at DH",
-          "url": "https://www.rotowire.com//baseball/player/elly-de-la-cruz-17579",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "De La Cruz (quadriceps) will start at designated hitter and bat second in Monday's game versus the Padres. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 12:08:00 PM PDT"
-        },
-        {
-          "title": "Pete Alonso: Included in Baltimore lineup Monday",
-          "url": "https://www.rotowire.com//baseball/player/pete-alonso-14300",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Alonso (head) will start at first base and bat second in Monday's game versus the Rockies. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 2:27:00 PM PDT"
         }
       ]
     },
@@ -5905,6 +5936,52 @@
       ]
     },
     {
+      "id": "ethan-salas-promotion-tap-5d482640",
+      "slug": "ethan-salas-promotion-tap-5d482640",
+      "sport": "baseball",
+      "headline": "Ethan Salas: Promotion on tap",
+      "blurb": "With Ethan Salas reportedly being called up He’s 20 years, 91 days today Whenever he appears in a game, he would be the youngest player to appear at catcher in a game since…",
+      "summary": "With Ethan Salas reportedly being called up He’s 20 years, 91 days today Whenever he appears in a game, he would be the youngest player to appear at catcher in a game since Iván Rodríguez on Oct. Salas will have his contract selected from Triple-A El Paso on Tuesday, Kevin Acee of The San Diego Union-Tribune reports. Visit RotoWire.com for more analysis on this update. Aggregated from x.com, RotoWire MLB.",
+      "category": "roster",
+      "published": "2026-09-01T03:48:33Z",
+      "updated": "2026-09-01T04:25:36Z",
+      "players": [
+        {
+          "key": "ethan salas",
+          "name": "Ethan Salas",
+          "slug": "ethan-salas",
+          "pos": "C",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ethan Salas: Promotion on tap",
+          "url": "https://www.rotowire.com//baseball/player/ethan-salas-18291",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Salas will have his contract selected from Triple-A El Paso on Tuesday, Kevin Acee of The San Diego Union-Tribune reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 8:57:00 PM PDT"
+        },
+        {
+          "title": "Ethan Salas to be called up by the Padres, per @sdutKevinAcee.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBzTEdIWmg4MUdCb3d1SHhvUDhEdE0yMXFWOVF0aE5KNHhiblBsSjFNYUVkRHB5LTlEWjV2SVdoS24ybF9GYTJjU21pWXpmR3JocjBlbmM2LUs0dWpjNEdWQ0ZB?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Ethan Salas to be called up by the Padres, per @sdutKevinAcee. x.com",
+          "published": "Tue, 01 Sep 2026 03:48:33 GMT"
+        },
+        {
+          "title": "With Ethan Salas reportedly being called up He’s 20 years, 91 days today Whenever he appears in a game, he would be the youngest player to appear at catcher in a game since Iván Rodríguez on Oct. 2, 1991, at 19y 309d",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5nQmtidDVzWWJVcDFzamx1Z3FtUlNRTmpuUUZWZldHOU1FRXZHVTB2dnpKZTJRbUtOUXh3a0tHSF85VEhybDJfOWN1aUx2SkF0d0dKc1VGMHA4OGZoNVRiQXhvUjlXUQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "With Ethan Salas reportedly being called up He’s 20 years, 91 days today Whenever he appears in a game, he would be the youngest player to appear at catcher in a game since Iván Rodríguez on Oct. 2, 1991, at 19y 309d x.com",
+          "published": "Tue, 01 Sep 2026 04:05:59 GMT"
+        }
+      ]
+    },
+    {
       "id": "should-i-trade-ben-rice-jackson-merrill-baseball-e2405364",
       "slug": "should-i-trade-ben-rice-jackson-merrill-baseball-e2405364",
       "sport": "baseball",
@@ -5954,6 +6031,105 @@
           "kind": "article",
           "snippet": "Fantasy Baseball Trade Value Chart for Week 3 - Trade Rankings, Buys, Sells RotoBaller",
           "published": "Mon, 20 Apr 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "al-east-turning-dogfight-tarik-skubal-s-emotional-152d340e",
+      "slug": "al-east-turning-dogfight-tarik-skubal-s-emotional-152d340e",
+      "sport": "baseball",
+      "headline": "AL East turning into a dogfight, Tarik Skubal’s emotional Detroit return & Pete Crow-Armstrong pulling away in MVP race",
+      "blurb": "MLB Power Rankings: Braves stay hot, Pete Crow-Armstrong pulls ahead in NL MVP race NBC Sports",
+      "summary": "MLB Power Rankings: Braves stay hot, Pete Crow-Armstrong pulls ahead in NL MVP race NBC Sports Pete Crow-Armstrong stays red hot in blowout victory NBC Sports On this episode of Baseball Bar-B-Cast, Jake and Jordan try to figure out who will get into the postseason from the AL East, talk about Tarik Skubal’s return to Detroit and wonder if PCA just solidified his first-ever NL MVP title. Aggregated from NBC Sports, Yahoo Sports.",
+      "category": "wire",
+      "published": "2026-07-01T07:00:00Z",
+      "updated": "2026-08-31T20:13:37Z",
+      "players": [
+        {
+          "key": "pete crow-armstrong",
+          "name": "Pete Crow-Armstrong",
+          "slug": "pete-crow-armstrong",
+          "pos": "OF",
+          "team": "CHC"
+        },
+        {
+          "key": "tarik skubal",
+          "name": "Tarik Skubal",
+          "slug": "tarik-skubal",
+          "pos": "SP",
+          "team": "DET"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AL East turning into a dogfight, Tarik Skubal’s emotional Detroit return & Pete Crow-Armstrong pulling away in MVP race",
+          "url": "https://sports.yahoo.com/mlb/article/al-east-turning-into-a-dogfight-tarik-skubals-emotional-detroit-return--pete-crow-armstrong-pulling-away-in-mvp-race-173106046.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "On this episode of Baseball Bar-B-Cast, Jake and Jordan try to figure out who will get into the postseason from the AL East, talk about Tarik Skubal’s return to Detroit and wonder if PCA just solidified his first-ever NL MVP title.",
+          "published": "Mon, 31 Aug 2026 17:31:06 +0000"
+        },
+        {
+          "title": "MLB Power Rankings: Braves stay hot, Pete Crow-Armstrong pulls ahead in NL MVP race",
+          "url": "https://sports.yahoo.com/articles/mlb-power-rankings-braves-stay-200959542.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "The Braves have won seven straight, PCA is surging toward MVP honors, and the Orioles are finally approaching .500.",
+          "published": "Mon, 31 Aug 2026 20:09:59 +0000"
+        },
+        {
+          "title": "MLB Power Rankings: Braves stay hot, Pete Crow-Armstrong pulls ahead in NL MVP race",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNM1RhLWM4NjlaZzltSnI1c2owQ3ZVbU91N21vR0wwSy1ocU1lMkt0S0ZkTldhRElIU1dKR056SnVHaEN0c3cxWUR0RzlPejlFd0RhLVUwN3ZzTGdSczlucW5jUXRBLTBSaDQxQ1dUUFBWOE5RbjZqQkJvZW5ZU05IanNVUEo2eTBsWGk0cEtQZ0lrR2o2dUZEcUVrMjU5Ty1QRGdWNHJBaWhFVkVUUWZUWG4yWjNVVUE?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "MLB Power Rankings: Braves stay hot, Pete Crow-Armstrong pulls ahead in NL MVP race NBC Sports",
+          "published": "Mon, 31 Aug 2026 20:13:37 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong stays red hot in blowout victory",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNT05oNWl5SXBxZFRGdi02bjZ1R0RhTm9XRkw2ZE9tRTFsSzJkcGFlWlBJVlphLVF3ZWtxcXBkOWpCV1BKcW1HNUlsbko2czZZMHFFcV8tMFh6SEt3UXFhTVlxOVJSbnNjdU9OUGQtSi1GRDBhNWZRMFdzamYwRHhmRWd5b2szbnBlWVpRSFlGQWxPdmxiNkRoUlZiVnF1TTFiRU8yYUhQTV9BN056OWVFT0c5UFpNLUp3M3c?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong stays red hot in blowout victory NBC Sports",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "aaron-judge-rib-could-return-il-next-0bb0f3d9",
+      "slug": "aaron-judge-rib-could-return-il-next-0bb0f3d9",
+      "sport": "baseball",
+      "headline": "Aaron Judge (rib) could return from IL next week",
+      "blurb": "Manager Aaron Boone stated Monday that Judge (ribs) could be activated from the 60-day injured list during the Yankees' upcoming homestand, which runs from Sept.",
+      "summary": "Manager Aaron Boone stated Monday that Judge (ribs) could be activated from the 60-day injured list during the Yankees' upcoming homestand, which runs from Sept. 13, Gary Phillips of the New York Daily News reports. Visit RotoWire.com for more analysis on this update. Aggregated from RotoWire MLB, NBC Sports.",
+      "category": "injury",
+      "published": "2026-09-01T00:22:09Z",
+      "updated": "2026-09-01T00:22:09Z",
+      "players": [
+        {
+          "key": "aaron judge",
+          "name": "Aaron Judge",
+          "slug": "aaron-judge",
+          "pos": "OF",
+          "team": "NYY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Aaron Judge: Could return for next homestand",
+          "url": "https://www.rotowire.com//baseball/player/aaron-judge-12959",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Manager Aaron Boone stated Monday that Judge (ribs) could be activated from the 60-day injured list during the Yankees' upcoming homestand, which runs from Sept. 8 - Sept. 13, Gary Phillips of the New York Daily News reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 5:09:00 PM PDT"
+        },
+        {
+          "title": "Aaron Judge (rib) could return from IL next week",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTzlvSkVWNFgzNmNwQWtmcWpnLThXVktNRUpORDJVQVpCdVphR3ZCQW16bmVMcUswODc2a1Joek9DMmRXQ2lfcEp5NEVmb0FqcjFwRDUtNzVPMGVSNTFhbU1GMnJuLS11NW1QNEw3VnpqSnNDMnpYdGpwc3IyaFdOOU1Cc1BNUU5iVXl1TlBBTWxPblNmd2NhR2cwLTctX1BkSE8yaG41a183X2k5MlNTZERn?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Aaron Judge (rib) could return from IL next week NBC Sports",
+          "published": "Tue, 01 Sep 2026 00:22:09 GMT"
         }
       ]
     },
@@ -6044,44 +6220,6 @@
           "kind": "article",
           "snippet": "Bryan Woo Chalkboard MLB Picks Today, 5/12: Baseball Projections + More Fantasy Alarm",
           "published": "Tue, 12 May 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "aaron-judge-rib-could-return-il-next-0bb0f3d9",
-      "slug": "aaron-judge-rib-could-return-il-next-0bb0f3d9",
-      "sport": "baseball",
-      "headline": "Aaron Judge (rib) could return from IL next week",
-      "blurb": "Manager Aaron Boone stated Monday that Judge (ribs) could be activated from the 60-day injured list during the Yankees' upcoming homestand, which runs from Sept.",
-      "summary": "Manager Aaron Boone stated Monday that Judge (ribs) could be activated from the 60-day injured list during the Yankees' upcoming homestand, which runs from Sept. 13, Gary Phillips of the New York Daily News reports. Visit RotoWire.com for more analysis on this update. Aggregated from RotoWire MLB, NBC Sports.",
-      "category": "injury",
-      "published": "2026-09-01T00:22:09Z",
-      "updated": "2026-09-01T00:22:09Z",
-      "players": [
-        {
-          "key": "aaron judge",
-          "name": "Aaron Judge",
-          "slug": "aaron-judge",
-          "pos": "OF",
-          "team": "NYY"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Aaron Judge: Could return for next homestand",
-          "url": "https://www.rotowire.com//baseball/player/aaron-judge-12959",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Manager Aaron Boone stated Monday that Judge (ribs) could be activated from the 60-day injured list during the Yankees' upcoming homestand, which runs from Sept. 8 - Sept. 13, Gary Phillips of the New York Daily News reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 5:09:00 PM PDT"
-        },
-        {
-          "title": "Aaron Judge (rib) could return from IL next week",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTzlvSkVWNFgzNmNwQWtmcWpnLThXVktNRUpORDJVQVpCdVphR3ZCQW16bmVMcUswODc2a1Joek9DMmRXQ2lfcEp5NEVmb0FqcjFwRDUtNzVPMGVSNTFhbU1GMnJuLS11NW1QNEw3VnpqSnNDMnpYdGpwc3IyaFdOOU1Cc1BNUU5iVXl1TlBBTWxPblNmd2NhR2cwLTctX1BkSE8yaG41a183X2k5MlNTZERn?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Aaron Judge (rib) could return from IL next week NBC Sports",
-          "published": "Tue, 01 Sep 2026 00:22:09 GMT"
         }
       ]
     },
@@ -6313,6 +6451,68 @@
       ]
     },
     {
+      "id": "c-cincinnati-hopes-elly-de-la-cruz-s-1ea32bac",
+      "slug": "c-cincinnati-hopes-elly-de-la-cruz-s-1ea32bac",
+      "sport": "baseball",
+      "headline": "C. Notes: Cincinnati hopes Elly De La Cruz’s return can spark a Reds revival",
+      "blurb": "Cincinnati Reds SS Elly De La Cruz exits game with 'tight' quad Cincinnati Enquirer",
+      "summary": "Cincinnati Reds SS Elly De La Cruz exits game with 'tight' quad Cincinnati Enquirer Elly De La Cruz (quad) exits early Sunday FantasyPros Cincinnati Reds Receive Best Elly De La Cruz Injury Update Yet Sports Illustrated Aggregated from Cincinnati Enquirer, FantasyPros, Sports Illustrated, The New York Times.",
+      "category": "injury",
+      "published": "2026-06-12T07:00:00Z",
+      "updated": "2026-08-31T08:03:01Z",
+      "players": [
+        {
+          "key": "elly de la cruz",
+          "name": "Elly De La Cruz",
+          "slug": "elly-de-la-cruz",
+          "pos": "SS",
+          "team": "CIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cincinnati Reds SS Elly De La Cruz exits game with 'tight' quad",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONmpIYWRnNUpVcTFKdkVpQlNZX2czRFhEbmttV2VCUGlMR25HVTRvVDI2MkZVWG9rYkw0dHQ5Q3NlLVdhUF9FN2J6ekNNQ1FhZlhickk3Z3Y5WV9yczA5R3VFYmNPNDEyNW5HVjFGU2NCcHVuUTliUzVwdlFzWExxVmxjVTczWWtIZmxXb3UzRHJWek9OdWkzcGczU3RSanFKVnRiVWlBTjEweEZab1RoTw?oc=5",
+          "publisher": "Cincinnati Enquirer",
+          "kind": "article",
+          "snippet": "Cincinnati Reds SS Elly De La Cruz exits game with 'tight' quad Cincinnati Enquirer",
+          "published": "Mon, 31 Aug 2026 08:03:01 GMT"
+        },
+        {
+          "title": "Elly De La Cruz (quad) exits early Sunday",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbVRzZ050NGc3MGNmcE53RGdKNlFCczBhaEUwOW1Hc3RfcjVFaHN4M05ZRVdEQkIyV2JHd1p4MHVjdm5NTDNNc2ZzTFdTVFR4VVVXWER6ZWpCeDZmUnV4ZXA3TmplblRMbW1ETWRuODlVTkZhVWVKMDJXYnhqV3h2b2gxdEV4MlRvb0VqMHVLOTTSAZYBQVVfeXFMTnRpOUlTOE9QcHZXVlZtZmZMZHQyUVBjekpmMlc0VkZpOUc5MXRsazljQkJqUGJhdENCTHJibW45SEpxY05qY25DWHdCbHRLTTREOEdoRXZ3a0VlUmxvQzdDVWJCNTJNeVA0VlJTQUNNLXdtZDhOd09fTW5YZFZ5WlN0emxDcmJwSzNuOXJpY1ZtU3RHRHZB?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Elly De La Cruz (quad) exits early Sunday FantasyPros",
+          "published": "Mon, 31 Aug 2026 02:24:00 GMT"
+        },
+        {
+          "title": "Cincinnati Reds Receive Best Elly De La Cruz Injury Update Yet",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcTRXSkFxazYtRE5sUnpIdHZHWVZ4Q3pnTXY0R19mSjB2dHI0MWdPR0hVc2l5UEt5Z2YzeFFBMkhVZ0FzV2xRVGNCMkZZVXFwOFNBQnJXR1RqeFllVzZYc3d6YXZXd0FLUmpGc3NBWFFfOFRQQi05OVBTaVBETWxiUkZIMHFmQmZzdGJvRHd3YUtWa0ZMTFdGWHF0dEFhcHE2OXkyRTdxc0RtOUI4?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Cincinnati Reds Receive Best Elly De La Cruz Injury Update Yet Sports Illustrated",
+          "published": "Fri, 12 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Cincinnati Reds Provide Massive Update on Shortstop Elly De La Cruz",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVjZvNkVpc2dIb0JEVS1KN3pnTlZ4bWRmOHM0N2tZcG8xVGFVMXRydnFtQTlCSlk4eUJ3QnlxMngzTFRiZlZydVhWWUJrTDZ6clpVQUg1REhnZ2FIYTk2dG93YVZoR01FWmk1NlJvRzN0ck5wZ2lFcmFRd2k5RzU2SmJmVzlKcERnd0hZSTg3bEVLVjRpTzdzNk9CUVZjYkJIOVZsT2VjdXdwNXdsM2ZPQWdrRQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Cincinnati Reds Provide Massive Update on Shortstop Elly De La Cruz Sports Illustrated",
+          "published": "Tue, 16 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "C. Notes: Cincinnati hopes Elly De La Cruz’s return can spark a Reds revival",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMDFTcFdFVW1NSUZ4T19EOE9nd2Z2V0d0LUQzU2g3WXExcXQzeFNaYWlNYkxXd25VUlFfS2NmT1RRN0dCLW5WNG5KNFN4RzM3MF9JOEJpZjhsOElEbmFOX0hxQ055UG5sTzJUbVRqOFJjRkxtZ2hVeVExeWxLT2FKZXRVNVplcEVaQUF6UDNqT0pBQQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "C. Notes: Cincinnati hopes Elly De La Cruz’s return can spark a Reds revival The New York Times",
+          "published": "Sun, 14 Jun 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "falcons-dolphins-2026-fan-discussion-a3017ee4",
       "slug": "falcons-dolphins-2026-fan-discussion-a3017ee4",
       "sport": "baseball",
@@ -6381,106 +6581,6 @@
       ]
     },
     {
-      "id": "c-cincinnati-hopes-elly-de-la-cruz-s-1ea32bac",
-      "slug": "c-cincinnati-hopes-elly-de-la-cruz-s-1ea32bac",
-      "sport": "baseball",
-      "headline": "C. Notes: Cincinnati hopes Elly De La Cruz’s return can spark a Reds revival",
-      "blurb": "Cincinnati Reds SS Elly De La Cruz exits game with 'tight' quad Cincinnati Enquirer",
-      "summary": "Cincinnati Reds SS Elly De La Cruz exits game with 'tight' quad Cincinnati Enquirer Elly De La Cruz (quad) exits early Sunday FantasyPros Cincinnati Reds Receive Best Elly De La Cruz Injury Update Yet Sports Illustrated Aggregated from Cincinnati Enquirer, FantasyPros, Sports Illustrated, The New York Times.",
-      "category": "injury",
-      "published": "2026-06-12T07:00:00Z",
-      "updated": "2026-08-31T08:03:01Z",
-      "players": [
-        {
-          "key": "elly de la cruz",
-          "name": "Elly De La Cruz",
-          "slug": "elly-de-la-cruz",
-          "pos": "SS",
-          "team": "CIN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Cincinnati Reds SS Elly De La Cruz exits game with 'tight' quad",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONmpIYWRnNUpVcTFKdkVpQlNZX2czRFhEbmttV2VCUGlMR25HVTRvVDI2MkZVWG9rYkw0dHQ5Q3NlLVdhUF9FN2J6ekNNQ1FhZlhickk3Z3Y5WV9yczA5R3VFYmNPNDEyNW5HVjFGU2NCcHVuUTliUzVwdlFzWExxVmxjVTczWWtIZmxXb3UzRHJWek9OdWkzcGczU3RSanFKVnRiVWlBTjEweEZab1RoTw?oc=5",
-          "publisher": "Cincinnati Enquirer",
-          "kind": "article",
-          "snippet": "Cincinnati Reds SS Elly De La Cruz exits game with 'tight' quad Cincinnati Enquirer",
-          "published": "Mon, 31 Aug 2026 08:03:01 GMT"
-        },
-        {
-          "title": "Elly De La Cruz (quad) exits early Sunday",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbVRzZ050NGc3MGNmcE53RGdKNlFCczBhaEUwOW1Hc3RfcjVFaHN4M05ZRVdEQkIyV2JHd1p4MHVjdm5NTDNNc2ZzTFdTVFR4VVVXWER6ZWpCeDZmUnV4ZXA3TmplblRMbW1ETWRuODlVTkZhVWVKMDJXYnhqV3h2b2gxdEV4MlRvb0VqMHVLOTTSAZYBQVVfeXFMTnRpOUlTOE9QcHZXVlZtZmZMZHQyUVBjekpmMlc0VkZpOUc5MXRsazljQkJqUGJhdENCTHJibW45SEpxY05qY25DWHdCbHRLTTREOEdoRXZ3a0VlUmxvQzdDVWJCNTJNeVA0VlJTQUNNLXdtZDhOd09fTW5YZFZ5WlN0emxDcmJwSzNuOXJpY1ZtU3RHRHZB?oc=5",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "Elly De La Cruz (quad) exits early Sunday FantasyPros",
-          "published": "Mon, 31 Aug 2026 02:24:00 GMT"
-        },
-        {
-          "title": "Cincinnati Reds Receive Best Elly De La Cruz Injury Update Yet",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcTRXSkFxazYtRE5sUnpIdHZHWVZ4Q3pnTXY0R19mSjB2dHI0MWdPR0hVc2l5UEt5Z2YzeFFBMkhVZ0FzV2xRVGNCMkZZVXFwOFNBQnJXR1RqeFllVzZYc3d6YXZXd0FLUmpGc3NBWFFfOFRQQi05OVBTaVBETWxiUkZIMHFmQmZzdGJvRHd3YUtWa0ZMTFdGWHF0dEFhcHE2OXkyRTdxc0RtOUI4?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Cincinnati Reds Receive Best Elly De La Cruz Injury Update Yet Sports Illustrated",
-          "published": "Fri, 12 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cincinnati Reds Provide Massive Update on Shortstop Elly De La Cruz",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVjZvNkVpc2dIb0JEVS1KN3pnTlZ4bWRmOHM0N2tZcG8xVGFVMXRydnFtQTlCSlk4eUJ3QnlxMngzTFRiZlZydVhWWUJrTDZ6clpVQUg1REhnZ2FIYTk2dG93YVZoR01FWmk1NlJvRzN0ck5wZ2lFcmFRd2k5RzU2SmJmVzlKcERnd0hZSTg3bEVLVjRpTzdzNk9CUVZjYkJIOVZsT2VjdXdwNXdsM2ZPQWdrRQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Cincinnati Reds Provide Massive Update on Shortstop Elly De La Cruz Sports Illustrated",
-          "published": "Tue, 16 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "C. Notes: Cincinnati hopes Elly De La Cruz’s return can spark a Reds revival",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMDFTcFdFVW1NSUZ4T19EOE9nd2Z2V0d0LUQzU2g3WXExcXQzeFNaYWlNYkxXd25VUlFfS2NmT1RRN0dCLW5WNG5KNFN4RzM3MF9JOEJpZjhsOElEbmFOX0hxQ055UG5sTzJUbVRqOFJjRkxtZ2hVeVExeWxLT2FKZXRVNVplcEVaQUF6UDNqT0pBQQ?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "C. Notes: Cincinnati hopes Elly De La Cruz’s return can spark a Reds revival The New York Times",
-          "published": "Sun, 14 Jun 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "ethan-salas-promotion-tap-5d482640",
-      "slug": "ethan-salas-promotion-tap-5d482640",
-      "sport": "baseball",
-      "headline": "Ethan Salas: Promotion on tap",
-      "blurb": "Ethan Salas to be called up by the Padres, per @sdutKevinAcee.",
-      "summary": "Ethan Salas to be called up by the Padres, per @sdutKevinAcee. Salas will have his contract selected from Triple-A El Paso on Tuesday, Kevin Acee of The San Diego Union-Tribune reports. Visit RotoWire.com for more analysis on this update. Aggregated from x.com, RotoWire MLB.",
-      "category": "roster",
-      "published": "2026-09-01T03:48:33Z",
-      "updated": "2026-09-01T04:25:36Z",
-      "players": [
-        {
-          "key": "ethan salas",
-          "name": "Ethan Salas",
-          "slug": "ethan-salas",
-          "pos": "C",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ethan Salas: Promotion on tap",
-          "url": "https://www.rotowire.com//baseball/player/ethan-salas-18291",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Salas will have his contract selected from Triple-A El Paso on Tuesday, Kevin Acee of The San Diego Union-Tribune reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 8:57:00 PM PDT"
-        },
-        {
-          "title": "Ethan Salas to be called up by the Padres, per @sdutKevinAcee.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBzTEdIWmg4MUdCb3d1SHhvUDhEdE0yMXFWOVF0aE5KNHhiblBsSjFNYUVkRHB5LTlEWjV2SVdoS24ybF9GYTJjU21pWXpmR3JocjBlbmM2LUs0dWpjNEdWQ0ZB?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Ethan Salas to be called up by the Padres, per @sdutKevinAcee. x.com",
-          "published": "Tue, 01 Sep 2026 03:48:33 GMT"
-        }
-      ]
-    },
-    {
       "id": "willson-contreras-bound-il-hamstring-strain-c781f394",
       "slug": "willson-contreras-bound-il-hamstring-strain-c781f394",
       "sport": "baseball",
@@ -6515,6 +6615,156 @@
           "kind": "x",
           "snippet": "Willson Contreras placed on 10-day IL with hamstring strain. Mickey Gasper recalled from Triple-A. x.com",
           "published": "Mon, 31 Aug 2026 18:54:39 GMT"
+        }
+      ]
+    },
+    {
+      "id": "kyle-karros-nearing-rehab-stint-3a734a2c",
+      "slug": "kyle-karros-nearing-rehab-stint-3a734a2c",
+      "sport": "baseball",
+      "headline": "Kyle Karros: Nearing rehab stint",
+      "blurb": "Karros is hopeful to be cleared from the league's concussion protocol Tuesday, and then play for Double-A Hartford from Thursday to Sunday, Eli Whitney of Blake Street Banter…",
+      "summary": "Kyle Karros: Karros is hopeful to be cleared from the league's concussion protocol Tuesday, and then play for Double-A Hartford from Thursday to Sunday, Eli Whitney of Blake Street Banter reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "category": "injury",
+      "published": "2026-08-31T23:19:32Z",
+      "updated": "2026-08-31T23:19:32Z",
+      "players": [
+        {
+          "key": "kyle karros",
+          "name": "Kyle Karros",
+          "slug": "kyle-karros",
+          "pos": "3B",
+          "team": "COL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kyle Karros: Nearing rehab stint",
+          "url": "https://www.rotowire.com//baseball/player/kyle-karros-18937",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Karros is hopeful to be cleared from the league's concussion protocol Tuesday, and then play for Double-A Hartford from Thursday to Sunday, Eli Whitney of Blake Street Banter reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 4:15:00 PM PDT"
+        }
+      ]
+    },
+    {
+      "id": "george-lombard-remains-monday-2d57c2a1",
+      "slug": "george-lombard-remains-monday-2d57c2a1",
+      "sport": "baseball",
+      "headline": "George Lombard: Remains out Monday",
+      "blurb": "Lombard (knee) is not listed in the Yankees' starting lineup against the Angels on Monday, per Chris Kirschner of The Athletic.",
+      "summary": "George Lombard Jr.: Lombard (knee) is not listed in the Yankees' starting lineup against the Angels on Monday, per Chris Kirschner of The Athletic. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "category": "injury",
+      "published": "2026-08-31T23:19:32Z",
+      "updated": "2026-08-31T23:19:32Z",
+      "players": [
+        {
+          "key": "george lombard",
+          "name": "George Lombard Jr.",
+          "slug": "george-lombard-jr",
+          "pos": "SS",
+          "team": "NYY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "George Lombard: Remains out Monday",
+          "url": "https://www.rotowire.com//baseball/player/george-lombard-18921",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Lombard (knee) is not listed in the Yankees' starting lineup against the Angels on Monday, per Chris Kirschner of The Athletic. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 4:04:00 PM PDT"
+        }
+      ]
+    },
+    {
+      "id": "josh-jung-going-through-full-baseball-activities-b90ba927",
+      "slug": "josh-jung-going-through-full-baseball-activities-b90ba927",
+      "sport": "baseball",
+      "headline": "Josh Jung: Going through full baseball activities",
+      "blurb": "Jung (calf) has been cleared for full baseball activities and could begin a rehab assignment as soon as this weekend, Jeff Wilson of AllDLLS.com reports.",
+      "summary": "Josh Jung: Jung (calf) has been cleared for full baseball activities and could begin a rehab assignment as soon as this weekend, Jeff Wilson of AllDLLS.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "category": "injury",
+      "published": "2026-08-31T23:19:32Z",
+      "updated": "2026-08-31T23:19:32Z",
+      "players": [
+        {
+          "key": "josh jung",
+          "name": "Josh Jung",
+          "slug": "josh-jung",
+          "pos": "3B",
+          "team": "TEX"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Josh Jung: Going through full baseball activities",
+          "url": "https://www.rotowire.com//baseball/player/josh-jung-16053",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Jung (calf) has been cleared for full baseball activities and could begin a rehab assignment as soon as this weekend, Jeff Wilson of AllDLLS.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 4:03:00 PM PDT"
+        }
+      ]
+    },
+    {
+      "id": "odds-continue-increase-ryan-o-hearn-return-pirates-1187c042",
+      "slug": "odds-continue-increase-ryan-o-hearn-return-pirates-1187c042",
+      "sport": "baseball",
+      "headline": "Odds continue to increase Ryan O’Hearn will return to Pirates this season",
+      "blurb": "One of the Pirates’ best all-around hitters is on pace to return to the lineup before the end of the season.",
+      "summary": "Ryan O'Hearn: One of the Pirates’ best all-around hitters is on pace to return to the lineup before the end of the season. Ryan O’Hearn is progressing well from his quad injury and is expected to rejoin the Pirates in mid-September, general manager Ben Cherington said on his radio show Sunday. The Pirates are planning for O’Hearn […] Board reading of SB Nation.",
+      "category": "injury",
+      "published": "2026-08-31T22:31:00Z",
+      "updated": "2026-08-31T22:31:00Z",
+      "players": [
+        {
+          "key": "ryan ohearn",
+          "name": "Ryan O'Hearn",
+          "slug": "ryan-o-hearn",
+          "pos": "1B",
+          "team": "PIT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Odds continue to increase Ryan O’Hearn will return to Pirates this season",
+          "url": "https://sports.yahoo.com/articles/odds-continue-increase-ryan-o-223100293.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "One of the Pirates’ best all-around hitters is on pace to return to the lineup before the end of the season. Ryan O’Hearn is progressing well from his quad injury and is expected to rejoin the Pirates in mid-September, general manager Ben Cherington said on his radio show Sunday.",
+          "published": "Mon, 31 Aug 2026 22:31:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "ketel-marte-activated-batting-cleanup-monday-b5556309",
+      "slug": "ketel-marte-activated-batting-cleanup-monday-b5556309",
+      "sport": "baseball",
+      "headline": "Ketel Marte: Activated, batting cleanup Monday",
+      "blurb": "The Diamondbacks activated Marte (knee) from the 10-day injured list Monday, Alex Weiner of ArizonaSports.com reports.",
+      "summary": "Ketel Marte: The Diamondbacks activated Marte (knee) from the 10-day injured list Monday, Alex Weiner of ArizonaSports.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "category": "injury",
+      "published": "2026-08-31T22:19:36Z",
+      "updated": "2026-08-31T22:19:36Z",
+      "players": [
+        {
+          "key": "ketel marte",
+          "name": "Ketel Marte",
+          "slug": "ketel-marte",
+          "pos": "2B",
+          "team": "ARI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ketel Marte: Activated, batting cleanup Monday",
+          "url": "https://www.rotowire.com//baseball/player/ketel-marte-13183",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "The Diamondbacks activated Marte (knee) from the 10-day injured list Monday, Alex Weiner of ArizonaSports.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 2:41:00 PM PDT"
         }
       ]
     },
@@ -6743,152 +6993,108 @@
       ]
     },
     {
-      "id": "kyle-karros-nearing-rehab-stint-3a734a2c",
-      "slug": "kyle-karros-nearing-rehab-stint-3a734a2c",
+      "id": "garrett-crochet-plays-catch-off-mound-ca54dc81",
+      "slug": "garrett-crochet-plays-catch-off-mound-ca54dc81",
       "sport": "baseball",
-      "headline": "Kyle Karros: Nearing rehab stint",
-      "blurb": "Karros is hopeful to be cleared from the league's concussion protocol Tuesday, and then play for Double-A Hartford from Thursday to Sunday, Eli Whitney of Blake Street Banter…",
-      "summary": "Kyle Karros: Karros is hopeful to be cleared from the league's concussion protocol Tuesday, and then play for Double-A Hartford from Thursday to Sunday, Eli Whitney of Blake Street Banter reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "headline": "Garrett Crochet: Plays catch off mound",
+      "blurb": "Crochet (lat/shoulder) has begun playing catch off the mound, Mac Cerullo of the Boston Herald reports.",
+      "summary": "Garrett Crochet: Crochet (lat/shoulder) has begun playing catch off the mound, Mac Cerullo of the Boston Herald reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
       "category": "injury",
-      "published": "2026-08-31T23:19:32Z",
-      "updated": "2026-08-31T23:19:32Z",
+      "published": "2026-08-31T21:19:31Z",
+      "updated": "2026-08-31T21:19:31Z",
       "players": [
         {
-          "key": "kyle karros",
-          "name": "Kyle Karros",
-          "slug": "kyle-karros",
-          "pos": "3B",
-          "team": "COL"
+          "key": "garrett crochet",
+          "name": "Garrett Crochet",
+          "slug": "garrett-crochet",
+          "pos": "SP",
+          "team": "BOS"
         }
       ],
       "sources": [
         {
-          "title": "Kyle Karros: Nearing rehab stint",
-          "url": "https://www.rotowire.com//baseball/player/kyle-karros-18937",
+          "title": "Garrett Crochet: Plays catch off mound",
+          "url": "https://www.rotowire.com//baseball/player/garrett-crochet-16680",
           "publisher": "RotoWire MLB",
           "kind": "article",
-          "snippet": "Karros is hopeful to be cleared from the league's concussion protocol Tuesday, and then play for Double-A Hartford from Thursday to Sunday, Eli Whitney of Blake Street Banter reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 4:15:00 PM PDT"
+          "snippet": "Crochet (lat/shoulder) has begun playing catch off the mound, Mac Cerullo of the Boston Herald reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 2:01:00 PM PDT"
         }
       ]
     },
     {
-      "id": "george-lombard-remains-monday-2d57c2a1",
-      "slug": "george-lombard-remains-monday-2d57c2a1",
+      "id": "james-wood-likely-needs-one-more-rehab-8036e4f3",
+      "slug": "james-wood-likely-needs-one-more-rehab-8036e4f3",
       "sport": "baseball",
-      "headline": "George Lombard: Remains out Monday",
-      "blurb": "Lombard (knee) is not listed in the Yankees' starting lineup against the Angels on Monday, per Chris Kirschner of The Athletic.",
-      "summary": "George Lombard Jr.: Lombard (knee) is not listed in the Yankees' starting lineup against the Angels on Monday, per Chris Kirschner of The Athletic. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "headline": "James Wood: Likely needs one more rehab game",
+      "blurb": "Wood (oblique) is expected to play in at least one more rehab game this week before returning from the 10-day injured list, Mark Zuckerman of NatsJournal.com reports.",
+      "summary": "James Wood: Wood (oblique) is expected to play in at least one more rehab game this week before returning from the 10-day injured list, Mark Zuckerman of NatsJournal.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
       "category": "injury",
-      "published": "2026-08-31T23:19:32Z",
-      "updated": "2026-08-31T23:19:32Z",
+      "published": "2026-08-31T21:19:31Z",
+      "updated": "2026-08-31T21:19:31Z",
       "players": [
         {
-          "key": "george lombard",
-          "name": "George Lombard Jr.",
-          "slug": "george-lombard-jr",
-          "pos": "SS",
-          "team": "NYY"
+          "key": "james wood",
+          "name": "James Wood",
+          "slug": "james-wood",
+          "pos": "OF",
+          "team": "WSH"
         }
       ],
       "sources": [
         {
-          "title": "George Lombard: Remains out Monday",
-          "url": "https://www.rotowire.com//baseball/player/george-lombard-18921",
+          "title": "James Wood: Likely needs one more rehab game",
+          "url": "https://www.rotowire.com//baseball/player/james-wood-17334",
           "publisher": "RotoWire MLB",
           "kind": "article",
-          "snippet": "Lombard (knee) is not listed in the Yankees' starting lineup against the Angels on Monday, per Chris Kirschner of The Athletic. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 4:04:00 PM PDT"
+          "snippet": "Wood (oblique) is expected to play in at least one more rehab game this week before returning from the 10-day injured list, Mark Zuckerman of NatsJournal.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 31 Aug 2026 1:48:00 PM PDT"
         }
       ]
     },
     {
-      "id": "josh-jung-going-through-full-baseball-activities-b90ba927",
-      "slug": "josh-jung-going-through-full-baseball-activities-b90ba927",
+      "id": "ohtani-blasts-leadoff-hr-lowers-era-0-73-eaab735d",
+      "slug": "ohtani-blasts-leadoff-hr-lowers-era-0-73-eaab735d",
       "sport": "baseball",
-      "headline": "Josh Jung: Going through full baseball activities",
-      "blurb": "Jung (calf) has been cleared for full baseball activities and could begin a rehab assignment as soon as this weekend, Jeff Wilson of AllDLLS.com reports.",
-      "summary": "Josh Jung: Jung (calf) has been cleared for full baseball activities and could begin a rehab assignment as soon as this weekend, Jeff Wilson of AllDLLS.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "headline": "Ohtani blasts leadoff HR, lowers ERA to 0.73 in return to hitting while pitching",
+      "blurb": "MLB Injury Report - Ohtani Pitching Return Delayed?",
+      "summary": "Shohei Ohtani: MLB Injury Report - Ohtani Pitching Return Delayed? Ohtani blasts leadoff HR, lowers ERA to 0.73 in return to hitting while pitching MLB.com Shohei Ohtani to miss next pitching start, no timetable for return to rotation The New York Times Aggregated from FantraxHQ, MLB.com, The New York Times.",
       "category": "injury",
-      "published": "2026-08-31T23:19:32Z",
-      "updated": "2026-08-31T23:19:32Z",
+      "published": "2026-05-20T07:00:00Z",
+      "updated": "2026-08-31T10:01:55Z",
       "players": [
         {
-          "key": "josh jung",
-          "name": "Josh Jung",
-          "slug": "josh-jung",
-          "pos": "3B",
-          "team": "TEX"
+          "key": "shohei ohtani",
+          "name": "Shohei Ohtani",
+          "slug": "shohei-ohtani",
+          "pos": "DH/SP",
+          "team": "LAD"
         }
       ],
       "sources": [
         {
-          "title": "Josh Jung: Going through full baseball activities",
-          "url": "https://www.rotowire.com//baseball/player/josh-jung-16053",
-          "publisher": "RotoWire MLB",
+          "title": "MLB Injury Report - Ohtani Pitching Return Delayed?",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1iYzZsTHo1Nkh0YW5yeDZnU2xJMEE4TnFKT045RFNpNUlCUEpJTGpZTnNDTFVIcTF4OHpWNDJvbTJVX1RzS0szSllvTkxaVk1rT3dpOGZjVG0wU1lBZ0hKY3NuWVBTdFdOZzhUWUJyV0ozbFplY1FLY3JPUQ?oc=5",
+          "publisher": "FantraxHQ",
           "kind": "article",
-          "snippet": "Jung (calf) has been cleared for full baseball activities and could begin a rehab assignment as soon as this weekend, Jeff Wilson of AllDLLS.com reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 4:03:00 PM PDT"
-        }
-      ]
-    },
-    {
-      "id": "odds-continue-increase-ryan-o-hearn-return-pirates-1187c042",
-      "slug": "odds-continue-increase-ryan-o-hearn-return-pirates-1187c042",
-      "sport": "baseball",
-      "headline": "Odds continue to increase Ryan O’Hearn will return to Pirates this season",
-      "blurb": "One of the Pirates’ best all-around hitters is on pace to return to the lineup before the end of the season.",
-      "summary": "Ryan O'Hearn: One of the Pirates’ best all-around hitters is on pace to return to the lineup before the end of the season. Ryan O’Hearn is progressing well from his quad injury and is expected to rejoin the Pirates in mid-September, general manager Ben Cherington said on his radio show Sunday. The Pirates are planning for O’Hearn […] Board reading of SB Nation.",
-      "category": "injury",
-      "published": "2026-08-31T22:31:00Z",
-      "updated": "2026-08-31T22:31:00Z",
-      "players": [
+          "snippet": "MLB Injury Report - Ohtani Pitching Return Delayed? FantraxHQ",
+          "published": "Mon, 31 Aug 2026 10:01:55 GMT"
+        },
         {
-          "key": "ryan ohearn",
-          "name": "Ryan O'Hearn",
-          "slug": "ryan-o-hearn",
-          "pos": "1B",
-          "team": "PIT"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Odds continue to increase Ryan O’Hearn will return to Pirates this season",
-          "url": "https://sports.yahoo.com/articles/odds-continue-increase-ryan-o-223100293.html",
-          "publisher": "SB Nation",
+          "title": "Ohtani blasts leadoff HR, lowers ERA to 0.73 in return to hitting while pitching",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1FTTRBQWhLbzVQWFdTalZQdmNrUWdsOVpDQ2ZsTnFsampzR2hHQ19Hc1dlX0lQSUMxR2N5UWI5WFU5T0Nad05qTDZKMTd6M25peXBkcHRqcUVyMk9tbF9FdVFIWEtFQQ?oc=5",
+          "publisher": "MLB.com",
           "kind": "article",
-          "snippet": "One of the Pirates’ best all-around hitters is on pace to return to the lineup before the end of the season. Ryan O’Hearn is progressing well from his quad injury and is expected to rejoin the Pirates in mid-September, general manager Ben Cherington said on his radio show Sunday.",
-          "published": "Mon, 31 Aug 2026 22:31:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "ketel-marte-activated-batting-cleanup-monday-b5556309",
-      "slug": "ketel-marte-activated-batting-cleanup-monday-b5556309",
-      "sport": "baseball",
-      "headline": "Ketel Marte: Activated, batting cleanup Monday",
-      "blurb": "The Diamondbacks activated Marte (knee) from the 10-day injured list Monday, Alex Weiner of ArizonaSports.com reports.",
-      "summary": "Ketel Marte: The Diamondbacks activated Marte (knee) from the 10-day injured list Monday, Alex Weiner of ArizonaSports.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
-      "category": "injury",
-      "published": "2026-08-31T22:19:36Z",
-      "updated": "2026-08-31T22:19:36Z",
-      "players": [
+          "snippet": "Ohtani blasts leadoff HR, lowers ERA to 0.73 in return to hitting while pitching MLB.com",
+          "published": "Wed, 20 May 2026 07:00:00 GMT"
+        },
         {
-          "key": "ketel marte",
-          "name": "Ketel Marte",
-          "slug": "ketel-marte",
-          "pos": "2B",
-          "team": "ARI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ketel Marte: Activated, batting cleanup Monday",
-          "url": "https://www.rotowire.com//baseball/player/ketel-marte-13183",
-          "publisher": "RotoWire MLB",
+          "title": "Shohei Ohtani to miss next pitching start, no timetable for return to rotation",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbG53Rk92bHlmdWJzdmR0b2tNb1dOSloyZ1RESEQ2V25rN1BhVWh2eEpKVEdkV3B1dE1zTmZnZkNNeHN2YUxKMnRrdWNRQnkzVjlMcmllOGZvWG0xcWFKa2cxV25nUWdIRU1DT1IwWnRPVW5GZ3JnOXZkODhSaDBENlNpS3FOVlg3ZFp1cDFtdEk1YWFNMHFDd2JZalZqZw?oc=5",
+          "publisher": "The New York Times",
           "kind": "article",
-          "snippet": "The Diamondbacks activated Marte (knee) from the 10-day injured list Monday, Alex Weiner of ArizonaSports.com reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 2:41:00 PM PDT"
+          "snippet": "Shohei Ohtani to miss next pitching start, no timetable for return to rotation The New York Times",
+          "published": "Sun, 19 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -6897,10 +7103,10 @@
       "slug": "tarik-skubal-wipes-away-tears-return-detroit-then-7abdbf15",
       "sport": "baseball",
       "headline": "Tarik Skubal Opens Up About Tigers Revenge Game, Reveals His 'True Crime Ritual' After Dodgers Trade",
-      "blurb": "Dodgers vs Tigers score: Emotional Tarik Skubal pulled after 6 innings; Dodgers get win Yahoo Sports",
-      "summary": "Dodgers vs Tigers score: Emotional Tarik Skubal pulled after 6 innings; Dodgers get win Yahoo Sports Dodgers rally past Tigers after Tarik Skubal’s emotional Detroit homecoming New York Post Tarik Skubal not his best in home debut, but Dodgers rally for win ESPN Aggregated from Yahoo Sports, New York Post, ESPN, foxsports.com, The New York Times and 6 more.",
+      "blurb": "How Dodgers could build Tarik Skubal package ahead of MLB trade deadline New York Post",
+      "summary": "How Dodgers could build Tarik Skubal package ahead of MLB trade deadline New York Post Some thoughts on the Tarik Skubal trade and today’s MLB Trade Deadline Yahoo Sports Dodgers' Skubal shines, tears up in emotional return to Detroit ESPN Aggregated from New York Post, Yahoo Sports, ESPN, foxsports.com, The New York Times and 6 more.",
       "category": "trade",
-      "published": "2026-08-02T07:00:00Z",
+      "published": "2026-07-31T07:00:00Z",
       "updated": "2026-08-30T15:14:25Z",
       "players": [
         {
@@ -7047,157 +7253,22 @@
           "kind": "article",
           "snippet": "Tarik Skubal not his best in home debut, but Dodgers rally for win ESPN",
           "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "ohtani-blasts-leadoff-hr-lowers-era-0-73-eaab735d",
-      "slug": "ohtani-blasts-leadoff-hr-lowers-era-0-73-eaab735d",
-      "sport": "baseball",
-      "headline": "Ohtani blasts leadoff HR, lowers ERA to 0.73 in return to hitting while pitching",
-      "blurb": "MLB Injury Report - Ohtani Pitching Return Delayed?",
-      "summary": "Shohei Ohtani: MLB Injury Report - Ohtani Pitching Return Delayed? Ohtani blasts leadoff HR, lowers ERA to 0.73 in return to hitting while pitching MLB.com Shohei Ohtani to miss next pitching start, no timetable for return to rotation The New York Times Aggregated from FantraxHQ, MLB.com, The New York Times.",
-      "category": "injury",
-      "published": "2026-05-20T07:00:00Z",
-      "updated": "2026-08-31T10:01:55Z",
-      "players": [
-        {
-          "key": "shohei ohtani",
-          "name": "Shohei Ohtani",
-          "slug": "shohei-ohtani",
-          "pos": "DH/SP",
-          "team": "LAD"
-        }
-      ],
-      "sources": [
-        {
-          "title": "MLB Injury Report - Ohtani Pitching Return Delayed?",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1iYzZsTHo1Nkh0YW5yeDZnU2xJMEE4TnFKT045RFNpNUlCUEpJTGpZTnNDTFVIcTF4OHpWNDJvbTJVX1RzS0szSllvTkxaVk1rT3dpOGZjVG0wU1lBZ0hKY3NuWVBTdFdOZzhUWUJyV0ozbFplY1FLY3JPUQ?oc=5",
-          "publisher": "FantraxHQ",
-          "kind": "article",
-          "snippet": "MLB Injury Report - Ohtani Pitching Return Delayed? FantraxHQ",
-          "published": "Mon, 31 Aug 2026 10:01:55 GMT"
         },
         {
-          "title": "Ohtani blasts leadoff HR, lowers ERA to 0.73 in return to hitting while pitching",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1FTTRBQWhLbzVQWFdTalZQdmNrUWdsOVpDQ2ZsTnFsampzR2hHQ19Hc1dlX0lQSUMxR2N5UWI5WFU5T0Nad05qTDZKMTd6M25peXBkcHRqcUVyMk9tbF9FdVFIWEtFQQ?oc=5",
-          "publisher": "MLB.com",
+          "title": "How Dodgers could build Tarik Skubal package ahead of MLB trade deadline",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTGxENk5OXzdoZER2RzQwVHNfLUtMZVNONFh0VjZrRnNPWjlEdV85V1lyWTM1VFZOQ2lQUExYYXhsdVJMV3VyUTNPYkpFTGRURnFMZnRieDlPYnVyOGdrby03OVhLU2tqWXpSWGNiSUlmNW5DYm5NTVBSMzZOd1ZVYW9sazZpX2JZTEwzUHdfekJZaTVUYWZkQ1R6NmZkMXRfc1diQlh4VlRJUQ?oc=5",
+          "publisher": "New York Post",
           "kind": "article",
-          "snippet": "Ohtani blasts leadoff HR, lowers ERA to 0.73 in return to hitting while pitching MLB.com",
-          "published": "Wed, 20 May 2026 07:00:00 GMT"
+          "snippet": "How Dodgers could build Tarik Skubal package ahead of MLB trade deadline New York Post",
+          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
         },
         {
-          "title": "Shohei Ohtani to miss next pitching start, no timetable for return to rotation",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbG53Rk92bHlmdWJzdmR0b2tNb1dOSloyZ1RESEQ2V25rN1BhVWh2eEpKVEdkV3B1dE1zTmZnZkNNeHN2YUxKMnRrdWNRQnkzVjlMcmllOGZvWG0xcWFKa2cxV25nUWdIRU1DT1IwWnRPVW5GZ3JnOXZkODhSaDBENlNpS3FOVlg3ZFp1cDFtdEk1YWFNMHFDd2JZalZqZw?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Shohei Ohtani to miss next pitching start, no timetable for return to rotation The New York Times",
-          "published": "Sun, 19 Jul 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "garrett-crochet-plays-catch-off-mound-ca54dc81",
-      "slug": "garrett-crochet-plays-catch-off-mound-ca54dc81",
-      "sport": "baseball",
-      "headline": "Garrett Crochet: Plays catch off mound",
-      "blurb": "Crochet (lat/shoulder) has begun playing catch off the mound, Mac Cerullo of the Boston Herald reports.",
-      "summary": "Garrett Crochet: Crochet (lat/shoulder) has begun playing catch off the mound, Mac Cerullo of the Boston Herald reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
-      "category": "injury",
-      "published": "2026-08-31T21:19:31Z",
-      "updated": "2026-08-31T21:19:31Z",
-      "players": [
-        {
-          "key": "garrett crochet",
-          "name": "Garrett Crochet",
-          "slug": "garrett-crochet",
-          "pos": "SP",
-          "team": "BOS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Garrett Crochet: Plays catch off mound",
-          "url": "https://www.rotowire.com//baseball/player/garrett-crochet-16680",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Crochet (lat/shoulder) has begun playing catch off the mound, Mac Cerullo of the Boston Herald reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 2:01:00 PM PDT"
-        }
-      ]
-    },
-    {
-      "id": "james-wood-likely-needs-one-more-rehab-8036e4f3",
-      "slug": "james-wood-likely-needs-one-more-rehab-8036e4f3",
-      "sport": "baseball",
-      "headline": "James Wood: Likely needs one more rehab game",
-      "blurb": "Wood (oblique) is expected to play in at least one more rehab game this week before returning from the 10-day injured list, Mark Zuckerman of NatsJournal.com reports.",
-      "summary": "James Wood: Wood (oblique) is expected to play in at least one more rehab game this week before returning from the 10-day injured list, Mark Zuckerman of NatsJournal.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
-      "category": "injury",
-      "published": "2026-08-31T21:19:31Z",
-      "updated": "2026-08-31T21:19:31Z",
-      "players": [
-        {
-          "key": "james wood",
-          "name": "James Wood",
-          "slug": "james-wood",
-          "pos": "OF",
-          "team": "WSH"
-        }
-      ],
-      "sources": [
-        {
-          "title": "James Wood: Likely needs one more rehab game",
-          "url": "https://www.rotowire.com//baseball/player/james-wood-17334",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Wood (oblique) is expected to play in at least one more rehab game this week before returning from the 10-day injured list, Mark Zuckerman of NatsJournal.com reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 31 Aug 2026 1:48:00 PM PDT"
-        }
-      ]
-    },
-    {
-      "id": "al-east-turning-dogfight-tarik-skubal-s-emotional-152d340e",
-      "slug": "al-east-turning-dogfight-tarik-skubal-s-emotional-152d340e",
-      "sport": "baseball",
-      "headline": "AL East turning into a dogfight, Tarik Skubal’s emotional Detroit return & Pete Crow-Armstrong pulling away in MVP race",
-      "blurb": "The Braves have won seven straight, PCA is surging toward MVP honors, and the Orioles are finally approaching .500.",
-      "summary": "Pete Crow-Armstrong and Tarik Skubal: The Braves have won seven straight, PCA is surging toward MVP honors, and the Orioles are finally approaching .500. On this episode of Baseball Bar-B-Cast, Jake and Jordan try to figure out who will get into the postseason from the AL East, talk about Tarik Skubal’s return to Detroit and wonder if PCA just solidified his first-ever NL MVP title. Aggregated from NBC Sports, Yahoo Sports.",
-      "category": "wire",
-      "published": "2026-08-31T17:31:06Z",
-      "updated": "2026-08-31T20:09:59Z",
-      "players": [
-        {
-          "key": "pete crow-armstrong",
-          "name": "Pete Crow-Armstrong",
-          "slug": "pete-crow-armstrong",
-          "pos": "OF",
-          "team": "CHC"
-        },
-        {
-          "key": "tarik skubal",
-          "name": "Tarik Skubal",
-          "slug": "tarik-skubal",
-          "pos": "SP",
-          "team": "DET"
-        }
-      ],
-      "sources": [
-        {
-          "title": "AL East turning into a dogfight, Tarik Skubal’s emotional Detroit return & Pete Crow-Armstrong pulling away in MVP race",
-          "url": "https://sports.yahoo.com/mlb/article/al-east-turning-into-a-dogfight-tarik-skubals-emotional-detroit-return--pete-crow-armstrong-pulling-away-in-mvp-race-173106046.html",
+          "title": "Some thoughts on the Tarik Skubal trade and today’s MLB Trade Deadline",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOM0YtWWhRVHY3V1BxZm5QMnF4dE54bkNWejBjZVNrNUlYajd2dzhsNVgyVGtZcThkdWs0WnJTME9IX19DM0ZDMnJ6VkRiVUlsWjUtLVlZVnJQYjRGdWpuQ0NscjNkY3pEVk1nOG83R2p3QmdrRFRCdVFGWGtyWFAtVnJ4RGRDQzMtcXc?oc=5",
           "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "On this episode of Baseball Bar-B-Cast, Jake and Jordan try to figure out who will get into the postseason from the AL East, talk about Tarik Skubal’s return to Detroit and wonder if PCA just solidified his first-ever NL MVP title.",
-          "published": "Mon, 31 Aug 2026 17:31:06 +0000"
-        },
-        {
-          "title": "MLB Power Rankings: Braves stay hot, Pete Crow-Armstrong pulls ahead in NL MVP race",
-          "url": "https://sports.yahoo.com/articles/mlb-power-rankings-braves-stay-200959542.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "The Braves have won seven straight, PCA is surging toward MVP honors, and the Orioles are finally approaching .500.",
-          "published": "Mon, 31 Aug 2026 20:09:59 +0000"
+          "snippet": "Some thoughts on the Tarik Skubal trade and today’s MLB Trade Deadline Yahoo Sports",
+          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
         }
       ]
     },
