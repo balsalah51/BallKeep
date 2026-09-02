@@ -272,9 +272,10 @@ def test_fence_idp_board():
     assert idp[0]["pos"] == "DL"
     fence = fence_board()
     assert len(fence) == 400
-    assert fence[0]["name"] == "Josh Allen"
+    assert fence[0]["name"] == "Drake Maye"
     assert fence[0]["bk"] == 1
     assert fence[0]["pos"] == "QB"
+    assert any(r["name"] == "Josh Allen" and r["bk"] == 2 for r in fence[:3])
     assert fence[0]["n"] >= 6
     assert {r["pos"] for r in fence} >= {"QB", "RB", "WR", "TE", "DL", "LB", "DB"}
     first_idp = next(r for r in fence if r["pos"] in {"DL", "LB", "DB"})

@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 28, 2026"
-LASTMOD = "2026-08-28"
+UPDATED = "September 2, 2026"
+LASTMOD = "2026-09-02"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -152,6 +152,7 @@ def norm_name(name: str) -> str:
         "harold fannin jr": "harold fannin",
         "deebo samuel sr": "deebo samuel",
         "aaron jones sr": "aaron jones",
+        "matthew hibner": "matt hibner",
     }
     return aliases.get(n, n)
 
@@ -759,14 +760,18 @@ def load_age_bank():
 def apply_media_ages(rows, media, extra=None):
     extra = extra or {}
     for r in rows:
-        if r.get("age") not in (None, ""):
-            continue
         key = r.get("key") or norm_name(r.get("name") or "")
-        age = (media.get(key) or {}).get("age")
-        if age in (None, ""):
-            age = extra.get(key)
-        if age not in (None, ""):
-            r["age"] = age
+        info = media.get(key) or {}
+        if r.get("age") in (None, ""):
+            age = info.get("age")
+            if age in (None, ""):
+                age = extra.get(key)
+            if age not in (None, ""):
+                r["age"] = age
+        if not r.get("pos") and info.get("pos"):
+            r["pos"] = info["pos"]
+        if not r.get("team") and info.get("team"):
+            r["team"] = info["team"]
 
 
 def face_src(r, media, depth=0):
@@ -820,12 +825,12 @@ def sources_panel(items, heading="Boards in This Super Aggregate"):
 
 PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
-    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 28."),
+    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Sep 2."),
     ("ESPN - Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
 ] + PPR_EXTRA_SOURCES
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
-    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 27."),
+    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Sep 1."),
     ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1-2-3."),
 ]
 
@@ -839,7 +844,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 28, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
+        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt September 2, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -929,7 +934,7 @@ FB_SEO = {
     ),
     "the-fence.html": (
         "The Fence 2026 Superflex + IDP Rankings | Ball Keep",
-        "The Fence is Ball Keep's mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. Josh Allen is 1.01. Aidan Hutchinson is the first IDP.",
+        "The Fence is Ball Keep's mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. Drake Maye is 1.01. Aidan Hutchinson is the first IDP.",
         "img/logo.jpg",
     ),
     "privacy.html": (
@@ -982,7 +987,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public boards, rebuilt August 28, 2026."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public boards, rebuilt September 2, 2026."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
@@ -1146,7 +1151,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=42" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=43" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -2380,11 +2385,22 @@ def main():
     {masthead("Football rankings", wordmark(), "Dynasty · Redraft")}
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
-      <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR.</p>
+      <h2>The Keep and The Board</h2>
+      <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR. Everything else on this page supports these.</p>
+      <div class="home-leads">
+        <a class="tile lead keep" href="the-keep.html">
+          <h3>The Keep</h3>
+          <p class="lead-sub">Superflex dynasty · top 400</p>
+          <p>32 boards mashed into one rank.</p>
+        </a>
+        <a class="tile lead board" href="board.html">
+          <h3>The Board</h3>
+          <p class="lead-sub">Redraft PPR · this year</p>
+          <p>Thirteen boards averaged.</p>
+        </a>
+      </div>
     </section>
-    {desk_block("lists", "Lists", "The boards.", "The Keep and The Board lead. Then Superflex + IDP, redraft, rookies, the market tape, DST, and kickers.", [
-        ("the-keep.html", "The Keep", "Superflex dynasty, top 400. 32 boards mashed into one rank.", "lead keep"),
-        ("board.html", "The Board", "Redraft PPR, this year. Thirteen boards averaged.", "lead board"),
+    {desk_block("lists", "Lists", "The other boards.", "Superflex + IDP, redraft, rookies, the market tape, DST, and kickers.", [
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("the-classic.html", "The Classic", "Half-PPR, this year."),
@@ -2671,7 +2687,7 @@ def main():
     fence_body = f"""
     <p class="kicker">Dynasty Superflex + IDP · Super Aggregate · {len(FENCE_MIXED_SOURCES)} boards</p>
     <h1>The Fence</h1>
-    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Published core is Dynasty Nerds Glossery mixed 725. Then the IDP Show stitch: The Keep skill ranks and the 20-market IDP mean dropped into those startup slots. Unranked on a board is a skip. Josh Allen is 1.01. Aidan Hutchinson is the first IDP. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
+    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Published core is Dynasty Nerds Glossery mixed 725. Then the IDP Show stitch: The Keep skill ranks and the 20-market IDP mean dropped into those startup slots. Unranked on a board is a skip. Drake Maye is 1.01. Aidan Hutchinson is the first IDP. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
     {rank_search_bar(fence_chips)}
     <div class="panel">{rank_table(fence, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(fence, 12, "#c8102e", "Fence value graph")}
