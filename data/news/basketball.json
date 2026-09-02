@@ -1,7 +1,7 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-02T21:24:35Z",
-  "fresh": 177,
+  "updated": "2026-09-02T22:25:56Z",
+  "fresh": 104,
   "stories": [
     {
       "id": "kawhi-leonard-clearly-worried-investigation-trade-raptors-0e317eab",
@@ -273,25 +273,25 @@
       "slug": "jazz-trade-cody-williams-john-konchar-timberwolves-josh-6d01dedd",
       "sport": "basketball",
       "headline": "NBA Trade Rumors: Timberwolves' Next Move, Lakers' Jonathan Kuminga Response & New Big Board",
-      "blurb": "NBA Trade Rumors: Lakers’ Next Deals, Knicks Being Monitored & More heavy.com",
-      "summary": "Luka Doncic, Jonathan Kuminga, Dalton Knecht, Jaden Hardy and Josh Green: NBA Trade Rumors: Lakers’ Next Deals, Knicks Being Monitored & More heavy.com Report: Jazz trade Cody Williams, John Konchar to Timberwolves for Josh Green NBA.com Report: T-Wolves trade Green to Jazz for Williams, Konchar theScore Aggregated from heavy.com, NBA.com, theScore, Sportsnet.ca, ESPN and 8 more.",
+      "blurb": "NBA Trade Rumors: Timberwolves' Next Move, Lakers' Jonathan Kuminga Response & New Big Board heavy.com",
+      "summary": "NBA Trade Rumors: Timberwolves' Next Move, Lakers' Jonathan Kuminga Response & New Big Board heavy.com Report: Jazz trade Cody Williams, John Konchar to Timberwolves for Josh Green NBA.com Report: T-Wolves trade Green to Jazz for Williams, Konchar theScore Aggregated from heavy.com, NBA.com, theScore, Sportsnet.ca, ESPN and 8 more.",
       "category": "trade",
       "published": "2026-08-13T07:00:00Z",
       "updated": "2026-09-02T12:59:40Z",
       "players": [
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
-        },
         {
           "key": "jonathan kuminga",
           "name": "Jonathan Kuminga",
           "slug": "jonathan-kuminga",
           "pos": "",
           "team": ""
+        },
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
         },
         {
           "key": "dalton knecht",
@@ -994,6 +994,100 @@
       ]
     },
     {
+      "id": "steve-ballmer-suspended-one-year-clippers-lose-5-95a1aad8",
+      "slug": "steve-ballmer-suspended-one-year-clippers-lose-5-95a1aad8",
+      "sport": "basketball",
+      "headline": "Steve Ballmer suspended one year, Clippers to lose 5 first-round picks in Kawhi Leonard endorsement scandal",
+      "blurb": "Here is the NBA's investigation into allegations the Los Angeles Clippers the team circumvented the league's Collective Bargaining Agreement.",
+      "summary": "Kawhi Leonard: Here is the NBA's investigation into allegations the Los Angeles Clippers the team circumvented the league's Collective Bargaining Agreement. NBA star Kawhi Leonard released a statement on Sept. 2 addressing the punishments and fines the league dropped on him and the LA Clippers. Aggregated from LA Times, USA TODAY Sports, CBS NBA, NBC Sports, Yahoo Sports and 2 more.",
+      "category": "roster",
+      "published": "2026-09-02T20:26:31Z",
+      "updated": "2026-09-02T21:41:36Z",
+      "players": [
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA hammers Clippers, Steve Ballmer for salary cap circumvention as Kawhi Leonard avoids suspension",
+          "url": "https://www.cbssports.com/nba/news/nba-punishes-clippers-steve-ballmer-salary-cap-circumvention-kawhi-leonard/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "The NBA released the findings of its nearly year-long investigation into salary cap circumvention allegations on Wednesday",
+          "published": "Wed, 02 Sep 2026 21:10:02 +0000"
+        },
+        {
+          "title": "Steve Ballmer suspended one year, Clippers to lose 5 first-round picks in Kawhi Leonard endorsement scandal",
+          "url": "https://sports.yahoo.com/articles/steve-ballmer-suspended-one-clippers-210031885.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "There is more, Adam Silver and the NBA have thrown the book at the Clippers for salary cap circumvention.",
+          "published": "Wed, 02 Sep 2026 21:00:31 +0000"
+        },
+        {
+          "title": "NBA hammers Clippers, Steve Ballmer and Kawhi Leonard following investigation",
+          "url": "https://sports.yahoo.com/articles/nba-hammers-clippers-steve-ballmer-205348049.html",
+          "publisher": "LA Times",
+          "kind": "article",
+          "snippet": "The NBA handed down sweeping penalties to Clippers owner Steve Ballmer, team executives, the team and Kawhi Leonard following an investigation.",
+          "published": "Wed, 02 Sep 2026 20:53:48 +0000"
+        },
+        {
+          "title": "NBA fines Clippers $30M, drops hammer on Steve Ballmer, Kawhi Leonard: Live updates",
+          "url": "https://sports.yahoo.com/articles/nba-announces-big-penalties-clippers-203951012.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "An NBA-backed investigation found that the Clippers circumvented the salary cap by facilitating a \"no-show\" endorsement deal for Kawhi Leonard.",
+          "published": "Wed, 02 Sep 2026 20:39:51 +0000"
+        },
+        {
+          "title": "NBA strips Clippers of 5 first-round draft picks, fines Steve Ballmer $30M in Kawhi Leonard salary cap circumvention probe",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/nba-reportedly-strips-clipper-of-5-first-round-draft-picks-fines-steve-ballmer-30m-in-kawhi-leonard-salary-cap-circumvention-probe-202637985.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The NBA has stripped the Los Angeles Clippers of five first-round draft picks and fined owner Steve Ballmer $30 million at the conclusion of it’s probe into alleged salary cap circumvention with Kawhi Leonard, ESPN’s Shams Charania reports.",
+          "published": "Wed, 02 Sep 2026 20:26:37 +0000"
+        },
+        {
+          "title": "Kawhi Leonard: Fined, avoids suspension",
+          "url": "https://www.rotowire.com//basketball/player/kawhi-leonard-3195",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Leonard has been fined $700,000 in restitution for improper benefits due to his involvement in the Clippers' salary cap circumvention, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 02 Sep 2026 1:34:00 PM PDT"
+        },
+        {
+          "title": "Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts. Clippers owner Steve Ballmer is suspended from all league and team activities for one year for knowingly seeking to help Mr. Leona",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HcDY5ZzB6OWN0NFFnMDlUVGp4TmZiTWpkS3hrRmdGR2RZS0h4R2ZtRzBmTlVYMmFMbEd4b3lCZFhEVlJyOFRJYWdEQ3lRR3NpTm0yNHRUbEJ0TDBGSGx2cmIwTXg?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts. Clippers owner Steve Ballmer is suspended from all league and team activities for one year for knowingly seeking to help Mr. Leona x.com",
+          "published": "Wed, 02 Sep 2026 20:26:31 GMT"
+        },
+        {
+          "title": "Read the NBA's investigation of the Clippers, Steve Ballmer, Kawhi Leonard",
+          "url": "https://sports.yahoo.com/articles/read-nbas-investigation-clippers-steve-214136815.html",
+          "publisher": "LA Times",
+          "kind": "article",
+          "snippet": "Here is the NBA's investigation into allegations the Los Angeles Clippers the team circumvented the league's Collective Bargaining Agreement.",
+          "published": "Wed, 02 Sep 2026 21:41:36 +0000"
+        },
+        {
+          "title": "Read Kawhi Leonard statement on NBA's significant punishments, fines",
+          "url": "https://sports.yahoo.com/articles/read-kawhi-leonard-statement-nbas-211211969.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "NBA star Kawhi Leonard released a statement on Sept. 2 addressing the punishments and fines the league dropped on him and the LA Clippers.",
+          "published": "Wed, 02 Sep 2026 21:12:11 +0000"
+        }
+      ]
+    },
+    {
       "id": "nets-michael-porter-jr-impasse-extension-f3a5caec",
       "slug": "nets-michael-porter-jr-impasse-extension-f3a5caec",
       "sport": "basketball",
@@ -1223,84 +1317,6 @@
       ]
     },
     {
-      "id": "steve-ballmer-suspended-one-year-clippers-lose-5-95a1aad8",
-      "slug": "steve-ballmer-suspended-one-year-clippers-lose-5-95a1aad8",
-      "sport": "basketball",
-      "headline": "Steve Ballmer suspended one year, Clippers to lose 5 first-round picks in Kawhi Leonard endorsement scandal",
-      "blurb": "Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts.",
-      "summary": "Kawhi Leonard: Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts. Clippers owner Steve Ballmer is suspended from all league and team activities for one year for knowingly seeking to help Mr. The NBA released the findings of its nearly year-long investigation into salary cap circumvention allegations on Wednesday Aggregated from x.com, CBS NBA, NBC Sports, LA Times, USA TODAY Sports and 2 more.",
-      "category": "roster",
-      "published": "2026-09-02T20:26:31Z",
-      "updated": "2026-09-02T21:10:02Z",
-      "players": [
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA hammers Clippers, Steve Ballmer for salary cap circumvention as Kawhi Leonard avoids suspension",
-          "url": "https://www.cbssports.com/nba/news/nba-punishes-clippers-steve-ballmer-salary-cap-circumvention-kawhi-leonard/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "The NBA released the findings of its nearly year-long investigation into salary cap circumvention allegations on Wednesday",
-          "published": "Wed, 02 Sep 2026 21:10:02 +0000"
-        },
-        {
-          "title": "Steve Ballmer suspended one year, Clippers to lose 5 first-round picks in Kawhi Leonard endorsement scandal",
-          "url": "https://sports.yahoo.com/articles/steve-ballmer-suspended-one-clippers-210031885.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "There is more, Adam Silver and the NBA have thrown the book at the Clippers for salary cap circumvention.",
-          "published": "Wed, 02 Sep 2026 21:00:31 +0000"
-        },
-        {
-          "title": "NBA hammers Clippers, Steve Ballmer and Kawhi Leonard following investigation",
-          "url": "https://sports.yahoo.com/articles/nba-hammers-clippers-steve-ballmer-205348049.html",
-          "publisher": "LA Times",
-          "kind": "article",
-          "snippet": "The NBA handed down sweeping penalties to Clippers owner Steve Ballmer, team executives, the team and Kawhi Leonard following an investigation.",
-          "published": "Wed, 02 Sep 2026 20:53:48 +0000"
-        },
-        {
-          "title": "NBA fines Clippers $30M, drops hammer on Steve Ballmer, Kawhi Leonard: Live updates",
-          "url": "https://sports.yahoo.com/articles/nba-announces-big-penalties-clippers-203951012.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "An NBA-backed investigation found that the Clippers circumvented the salary cap by facilitating a \"no-show\" endorsement deal for Kawhi Leonard.",
-          "published": "Wed, 02 Sep 2026 20:39:51 +0000"
-        },
-        {
-          "title": "NBA strips Clippers of 5 first-round draft picks, fines Steve Ballmer $30M in Kawhi Leonard salary cap circumvention probe",
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/nba-reportedly-strips-clipper-of-5-first-round-draft-picks-fines-steve-ballmer-30m-in-kawhi-leonard-salary-cap-circumvention-probe-202637985.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The NBA has stripped the Los Angeles Clippers of five first-round draft picks and fined owner Steve Ballmer $30 million at the conclusion of it’s probe into alleged salary cap circumvention with Kawhi Leonard, ESPN’s Shams Charania reports.",
-          "published": "Wed, 02 Sep 2026 20:26:37 +0000"
-        },
-        {
-          "title": "Kawhi Leonard: Fined, avoids suspension",
-          "url": "https://www.rotowire.com//basketball/player/kawhi-leonard-3195",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "Leonard has been fined $700,000 in restitution for improper benefits due to his involvement in the Clippers' salary cap circumvention, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 02 Sep 2026 1:34:00 PM PDT"
-        },
-        {
-          "title": "Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts. Clippers owner Steve Ballmer is suspended from all league and team activities for one year for knowingly seeking to help Mr. Leona",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HcDY5ZzB6OWN0NFFnMDlUVGp4TmZiTWpkS3hrRmdGR2RZS0h4R2ZtRzBmTlVYMmFMbEd4b3lCZFhEVlJyOFRJYWdEQ3lRR3NpTm0yNHRUbEJ0TDBGSGx2cmIwTXg?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts. Clippers owner Steve Ballmer is suspended from all league and team activities for one year for knowingly seeking to help Mr. Leona x.com",
-          "published": "Wed, 02 Sep 2026 20:26:31 GMT"
-        }
-      ]
-    },
-    {
       "id": "rewind-ja-morant-s-trade-saga-memphis-grizzlies-9d87a33d",
       "slug": "rewind-ja-morant-s-trade-saga-memphis-grizzlies-9d87a33d",
       "sport": "basketball",
@@ -1407,185 +1423,6 @@
           "kind": "article",
           "snippet": "The one deadline move the Memphis Grizzlies should be prioritizing Sports Illustrated",
           "published": "Thu, 29 Jan 2026 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "kevin-durant-next-star-request-trade-58ce6b40",
-      "slug": "kevin-durant-next-star-request-trade-58ce6b40",
-      "sport": "basketball",
-      "headline": "Spurs trade proposal cuts ties with De’Aaron Fox for $204M worth of contracts in Raptors deal",
-      "blurb": "Spurs PG De’Aaron Fox Is Put On Notice Amid NBA Trade Rumors Yahoo Sports",
-      "summary": "De'Aaron Fox, Kevin Durant, Jamal Murray and Zach LaVine: Spurs PG De’Aaron Fox Is Put On Notice Amid NBA Trade Rumors Yahoo Sports Will Kevin Durant Be the Next NBA Star to Request a Trade? Kevin Durant Proposed to Join Nuggets in Blockbuster 4-Player NBA Trade heavy.com Aggregated from Yahoo Sports, Sports Illustrated, heavy.com, sportingnews.com, The New York Times and 2 more.",
-      "category": "trade",
-      "published": "2025-02-06T08:00:00Z",
-      "updated": "2026-09-01T05:55:11Z",
-      "players": [
-        {
-          "key": "deaaron fox",
-          "name": "De'Aaron Fox",
-          "slug": "de-aaron-fox",
-          "pos": "PG",
-          "team": "SAS"
-        },
-        {
-          "key": "kevin durant",
-          "name": "Kevin Durant",
-          "slug": "kevin-durant",
-          "pos": "PF",
-          "team": "HOU"
-        },
-        {
-          "key": "jamal murray",
-          "name": "Jamal Murray",
-          "slug": "jamal-murray",
-          "pos": "PG",
-          "team": "DEN"
-        },
-        {
-          "key": "zach lavine",
-          "name": "Zach LaVine",
-          "slug": "zach-lavine",
-          "pos": "SG",
-          "team": "SAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Will Kevin Durant Be the Next NBA Star to Request a Trade?",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQR01MZHJoNGtDZmZ1MkNDb2tKVk0waG1OSG0yMFBpZUZmYWhkTEp2TzlCZ2FHVEdnSDFKTTRPQnRvR0kzd1hCQjN2STlBeHQ2c0FBN1A0YmZBZjF3VjhvWGtraVlHODNiWFAxMk94SUl6OVJoLWVOUkdxdDR4YlFWbkFZbThFeGtteWwyNlBhcXMtaHFWajFTVTVISmFsQUNRZW9VUF9BaG9SQQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Will Kevin Durant Be the Next NBA Star to Request a Trade? Sports Illustrated",
-          "published": "Sun, 30 Aug 2026 13:00:01 GMT"
-        },
-        {
-          "title": "Kevin Durant Proposed to Join Nuggets in Blockbuster 4-Player NBA Trade",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNkRIV3lvWlZ0d2JrMUVfVUVIaEpVQ0FoMzdwSGJMVkVDV1VfVXdsUXRNN19XWWJaZGdqSzZ0UmlMUkNrLV9jekxuWXNqYkl4bHpoTHplcm1US0NUWFhyTm52S0RyYTV5Ymo5ZFdlLVB4VlVEX3NQWG1tb1pPVmY0cUlB?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Kevin Durant Proposed to Join Nuggets in Blockbuster 4-Player NBA Trade heavy.com",
-          "published": "Sun, 30 Aug 2026 22:12:05 GMT"
-        },
-        {
-          "title": "Spurs Proposed to Trade De’Aaron Fox to Raptors in Blockbuster 5-Team Deal",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTjNwV3RTX0hONk1hNDVzWGVRb2ZlbHI0TTJWVVZBeVEyV2VyMGljQlh6UkQtbThhRGNEaTVSQ0J4TVhad0NHM0NsY2h2aGJUejFKWFdnZVFYRVpmUWR3dVZxRG8xNFN6WUxEVEJ5V01IWHZjelAwQW5Qc2xMX3d1ZjMwWUZGVE5I?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Spurs Proposed to Trade De’Aaron Fox to Raptors in Blockbuster 5-Team Deal heavy.com",
-          "published": "Sun, 30 Aug 2026 20:59:20 GMT"
-        },
-        {
-          "title": "Spurs trade proposal cuts ties with De’Aaron Fox for $204M worth of contracts in Raptors deal",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYnkyTE93Y054Y081aHZKUGpxWWs3el9semZmN3VrMjY3Z3RKSm9FSjZqeXpQWDB4UHBzZHlreEJwT184QzJIWXpmbW9zZXI5QXZ2LUxaeGo5ZC1tdUxrUDJET09kNU1QOXIyZEdTVUVoeUpDRlQ2anFMNEd0dzF3WkpOSWtwbFUyQ1dCQndYWUtrdXo5R0xaakpYRHktT1RZanhnNUh5eEVqbE05V19uTHJtWGg0Q1RjRE90dDgzWU9kMWNmTHpGcC1Cc2t4RzRiTDAtR1d3?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Spurs trade proposal cuts ties with De’Aaron Fox for $204M worth of contracts in Raptors deal sportingnews.com",
-          "published": "Thu, 18 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "De’Aaron Fox traded to the Spurs, Zach LaVine to Kings in multi-team deal: Source",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNR1hVNEEzQ3dOSEFwZjROd2ZiTEktX0twRlBjRTV0RC1FbVlzamxsXzVyWUZrbVRmOUhFVVYzLVZhVjVld2xsXzhyS0o1MDhxMDA3ZE85UXJ3SU5Yc3Z2MDg3MlFjX0VER3BidTE4ZF9KMVMtaEhaTEdHQ1cyMGVQS2JkVG81WFE2eVdNTjMtcnFfQkV2THpGTVk1UWs4Q182NHAwaFYybw?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "De’Aaron Fox traded to the Spurs, Zach LaVine to Kings in multi-team deal: Source - The Athletic The New York Times",
-          "published": "Thu, 06 Feb 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Spurs trade pitch moves De'Aaron Fox for $120M All-Star",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWDNGNXBfaWpjMVpWMk5MYUNhajNwRWFWNjJkSlJlWmItbnZlakRvOGNDZmVWM2lXdEZiMnhzWEc3RFFsRnJPT2hhYkY3Zk1INUdHMlZYeXdSS0lZS21HeGd5TjVraEg3bllrQkh2WE9HYUUxanpRVjlYV1VOZ3pEa0pna0s4RU5VV1U0MG8xUnV2YzBVLTU1MnNYNWYyNHJEcEFVd0dKM2p2R3o1X1AwSmwzUzh5YzBLeFNtdHpvMHI4QUczTHZmVjF0NnpRQQ?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Spurs trade pitch moves De'Aaron Fox for $120M All-Star sportingnews.com",
-          "published": "Sat, 11 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Spurs Proposed to Trade De’Aaron Fox to Raptors in Blockbuster 5-Team Deal",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQkhkSEFPalFkOFdBMW52TWlrOTIyV1lfaFhSNXpXcXd6eUFQdl9IUktxUGJOeldOT0d6YjlDRDAzbTJKZFNPbEVkOTRHNTBscjFSa2NoZVNiTXJiU0JoVWdrdW9mRHVnS3Rqa1RBbGp5VFdZLWd3a3EtcTFUU2w2T3czeDd1dw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Spurs Proposed to Trade De’Aaron Fox to Raptors in Blockbuster 5-Team Deal Yahoo Sports",
-          "published": "Sun, 30 Aug 2026 23:57:49 GMT"
-        },
-        {
-          "title": "Kings listening to trade offers for De’Aaron Fox: Source",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNb0ltOXhwRHpqN00tWDRuZkhVOVVKWFFSMFpSLTFPZm42d1E1UTZPNWRsZEp0Wmx2TFdnWnhscGlzTmJHQmdGUDM4NHhKMVFaaWdKSWswVzZfcnJlNm41aFJGQ0R4bjBnMkJuNmtNT2FjMkVjSG8yQVJkVDk0MkJZUzdUYXRqaXNILW1rYnRn?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Kings listening to trade offers for De’Aaron Fox: Source The New York Times",
-          "published": "Thu, 06 Feb 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Spurs get bad De'Aaron Fox trade news after inexcusable NBA Finals blunder",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbWFwNUFWbk0xdkFKbGUweGdyOVVRbGIzaTB2MUREczB0R292T1JacGpNeUVyYVNaS09HVU1KZlAzUHlQODh0NVhvTEdDeUxOZ3EwOVY2VEdiRW9MQzFzMWNuWnZDS1d6S3JpS05HMzlFSjlwYVpEQkdPUHgxUTdhbnEzTEZpMC1DMWZWNUxuMkcxMlVOUVpCb3dfdU1RQ3owZ3JHYngtUUFueVRtdmJOOE9UbDlKLVFWQVl2eWFOaHczcHRuLVNzcDFCRWlDWC1wQll3MWREbHBNZmxURVlSLWItVEM?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Spurs get bad De'Aaron Fox trade news after inexcusable NBA Finals blunder sportingnews.com",
-          "published": "Mon, 15 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Where Raptors Fit with Spurs in De'Aaron Fox Trade Rumors",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xTU0yRGN6SE1WcVdEZzlyUVRVcnlEQ3o4cllJQmdoTWVaUmJzWlNzc3dxT2dWbjl0aWdhTmJOYnY0cEpXNVhMa1lUdWxBSnlpZi1NYzJsOHRQaHJWSklMZ3dwV0JQcTNCUzVEanhIZXh0d2xhdGdneVB5dWlyMFU?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Where Raptors Fit with Spurs in De'Aaron Fox Trade Rumors Sports Illustrated",
-          "published": "Tue, 26 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Miami Heat Linked To Kevin Durant Trade During Season",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTEhPZlBMR1Nsc1BfcDlrZE1GSkZJd3RSbng2TEJKLUJIYnJna0tTZTk4Nl9YcDBodXhnQk9jZGJENUV0ZHBraWVrbzhaVTJiRkNjLV95aWVDT2xTWGtCZF81ZzhyVGpXOXZEc2lSVG5ITDl6dUttd3BTcWdBUzRlMXRhZw?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Miami Heat Linked To Kevin Durant Trade During Season heavy.com",
-          "published": "Mon, 31 Aug 2026 00:18:00 GMT"
-        },
-        {
-          "title": "Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWlV1ZkoyUWxjalI2STdZanpVbUV3Mmdyb1VhSmpHRFR6TEdrWlI3MVBRVFluem1LeDhTdDdsWFJUNmJ6RTlSaFh1elpFclY3UkJCa1BDRkRra1JDYzZZRzYyblhJdm54bHhPWXZMSUk2Ym1UVXBnMlk0Ni1SNHBULXJuYkFwU1Bs?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets Yahoo Sports",
-          "published": "Mon, 31 Aug 2026 13:37:18 GMT"
-        },
-        {
-          "title": "Knicks Proposed to Trade for Kevin Durant in Blockbuster 6-Player NBA Deal",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNemhhSW5MWmd5UUl4ZkpTRUY3WkpQa21CTzU0RzU2MHJ0dnowZXZycTNqdjVJZWpMVjA4Z0x5cVBYN2pSNUxmMXgxMmE1QXBTRXBibjYyV1h4TUQ4c29oWjNsc0Vza3Fsa3dpUkhxWWxjWjdmeE5IVV9OUU5FOFUzZ0JScmhIRi1odndpLQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Knicks Proposed to Trade for Kevin Durant in Blockbuster 6-Player NBA Deal heavy.com",
-          "published": "Mon, 31 Aug 2026 15:41:46 GMT"
-        },
-        {
-          "title": "Stephen Jackson urges the Spurs to make a blockbuster trade that could break the NBA: \"They got the pieces to move for a Steph for De'Aaron Fox\"",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRzRzSWFMZHVEeDhIQnpGcjAyczNiTFIzMWVzUDVZWmJLS0JYMlNKbTZZVUxPR2JKQ1dLY2hsQm9qUGZWellWRG44WDhab2VFRl9lclluY1phZWxpa0NlSzZxdmxOYThRMW9aaVJhZUtkMDhDVmxBd1VGdnZJbXJTXzVYOHZzZnpsUURrcFVrZkhpZmYyN3NwQjJRd3piV2dzTE9RM1BkSGsxUXdHTWRVOXN3WnkxY1F1ME5TbWp5bkpucDg0Z1l3eGRR?oc=5",
-          "publisher": "Basketball Network",
-          "kind": "article",
-          "snippet": "Stephen Jackson urges the Spurs to make a blockbuster trade that could break the NBA: \"They got the pieces to move for a Steph for De'Aaron Fox\" Basketball Network",
-          "published": "Mon, 31 Aug 2026 12:49:17 GMT"
-        },
-        {
-          "title": "Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLXRWSmN3YU1JYmdfdGlLTjRjT2c0ZjZtY2ZQZWVKaU9JREJ2aTh1ekpxeE14SVliVHhOREpSUHlockVmMXUtR1VtS21oTkw1TlNlMXNYZnlaRXZEQ25CakpoSkJLWDZPbVZKTW5wY1hvWGJzSnBNdFUwdWNrVm9qVWxJN3pYVTlxN0xLSFB1eF9nRHNlcDhsZi1qNGw1ZWtLS3lRMlJxa2VwamVaWjhB?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets roundtable.io",
-          "published": "Tue, 01 Sep 2026 05:55:11 GMT"
-        },
-        {
-          "title": "Proposed Blockbuster NBA Trade Sends Jamal Murray to Raptors in 4-Team Deal",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOElfNlJtYWRWa3lpQzJVamRHM3VLTnpaZHR3QkNwMUdJVUowa3g4NnJMeDJGOUZ1MWVBeW9OaXFSajRFWF8wZGdISVFfeFloai01ME9ZOXJLMGJRQTE2a2xBTExDYW5rczdLU2ZtNDN6ZkI1bnFlRF9BTV9kYTNsRjkyR29hcGtzQlZpeWhB?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Proposed Blockbuster NBA Trade Sends Jamal Murray to Raptors in 4-Team Deal Yahoo Sports",
-          "published": "Sun, 16 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Spurs PG De’Aaron Fox Is Put On Notice Amid NBA Trade Rumors",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5sSG1lemY0Y0xoTDNJNjFWY00zX3pKeHByZ1ptb2V0STJfN2VCbE9HcFpwZVQ2UW5DY25FRVhQY280SGpTamM2WUdCRkwzSktrX2I0bVFDd21pNlRHZ1ZDTTA5RU1jWXUzb0I2by1MUlFFMVFtM3BZOUlvdw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Spurs PG De’Aaron Fox Is Put On Notice Amid NBA Trade Rumors Yahoo Sports",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -1828,6 +1665,185 @@
       ]
     },
     {
+      "id": "kevin-durant-next-star-request-trade-58ce6b40",
+      "slug": "kevin-durant-next-star-request-trade-58ce6b40",
+      "sport": "basketball",
+      "headline": "Spurs trade proposal cuts ties with De’Aaron Fox for $204M worth of contracts in Raptors deal",
+      "blurb": "Spurs PG De’Aaron Fox Is Put On Notice Amid NBA Trade Rumors Yahoo Sports",
+      "summary": "De'Aaron Fox, Kevin Durant, Jamal Murray and Zach LaVine: Spurs PG De’Aaron Fox Is Put On Notice Amid NBA Trade Rumors Yahoo Sports Will Kevin Durant Be the Next NBA Star to Request a Trade? Kevin Durant Proposed to Join Nuggets in Blockbuster 4-Player NBA Trade heavy.com Aggregated from Yahoo Sports, Sports Illustrated, heavy.com, sportingnews.com, The New York Times and 2 more.",
+      "category": "trade",
+      "published": "2025-02-06T08:00:00Z",
+      "updated": "2026-09-01T05:55:11Z",
+      "players": [
+        {
+          "key": "deaaron fox",
+          "name": "De'Aaron Fox",
+          "slug": "de-aaron-fox",
+          "pos": "PG",
+          "team": "SAS"
+        },
+        {
+          "key": "kevin durant",
+          "name": "Kevin Durant",
+          "slug": "kevin-durant",
+          "pos": "PF",
+          "team": "HOU"
+        },
+        {
+          "key": "jamal murray",
+          "name": "Jamal Murray",
+          "slug": "jamal-murray",
+          "pos": "PG",
+          "team": "DEN"
+        },
+        {
+          "key": "zach lavine",
+          "name": "Zach LaVine",
+          "slug": "zach-lavine",
+          "pos": "SG",
+          "team": "SAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Will Kevin Durant Be the Next NBA Star to Request a Trade?",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQR01MZHJoNGtDZmZ1MkNDb2tKVk0waG1OSG0yMFBpZUZmYWhkTEp2TzlCZ2FHVEdnSDFKTTRPQnRvR0kzd1hCQjN2STlBeHQ2c0FBN1A0YmZBZjF3VjhvWGtraVlHODNiWFAxMk94SUl6OVJoLWVOUkdxdDR4YlFWbkFZbThFeGtteWwyNlBhcXMtaHFWajFTVTVISmFsQUNRZW9VUF9BaG9SQQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Will Kevin Durant Be the Next NBA Star to Request a Trade? Sports Illustrated",
+          "published": "Sun, 30 Aug 2026 13:00:01 GMT"
+        },
+        {
+          "title": "Kevin Durant Proposed to Join Nuggets in Blockbuster 4-Player NBA Trade",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNkRIV3lvWlZ0d2JrMUVfVUVIaEpVQ0FoMzdwSGJMVkVDV1VfVXdsUXRNN19XWWJaZGdqSzZ0UmlMUkNrLV9jekxuWXNqYkl4bHpoTHplcm1US0NUWFhyTm52S0RyYTV5Ymo5ZFdlLVB4VlVEX3NQWG1tb1pPVmY0cUlB?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Kevin Durant Proposed to Join Nuggets in Blockbuster 4-Player NBA Trade heavy.com",
+          "published": "Sun, 30 Aug 2026 22:12:05 GMT"
+        },
+        {
+          "title": "Spurs Proposed to Trade De’Aaron Fox to Raptors in Blockbuster 5-Team Deal",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTjNwV3RTX0hONk1hNDVzWGVRb2ZlbHI0TTJWVVZBeVEyV2VyMGljQlh6UkQtbThhRGNEaTVSQ0J4TVhad0NHM0NsY2h2aGJUejFKWFdnZVFYRVpmUWR3dVZxRG8xNFN6WUxEVEJ5V01IWHZjelAwQW5Qc2xMX3d1ZjMwWUZGVE5I?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Spurs Proposed to Trade De’Aaron Fox to Raptors in Blockbuster 5-Team Deal heavy.com",
+          "published": "Sun, 30 Aug 2026 20:59:20 GMT"
+        },
+        {
+          "title": "Spurs trade proposal cuts ties with De’Aaron Fox for $204M worth of contracts in Raptors deal",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYnkyTE93Y054Y081aHZKUGpxWWs3el9semZmN3VrMjY3Z3RKSm9FSjZqeXpQWDB4UHBzZHlreEJwT184QzJIWXpmbW9zZXI5QXZ2LUxaeGo5ZC1tdUxrUDJET09kNU1QOXIyZEdTVUVoeUpDRlQ2anFMNEd0dzF3WkpOSWtwbFUyQ1dCQndYWUtrdXo5R0xaakpYRHktT1RZanhnNUh5eEVqbE05V19uTHJtWGg0Q1RjRE90dDgzWU9kMWNmTHpGcC1Cc2t4RzRiTDAtR1d3?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Spurs trade proposal cuts ties with De’Aaron Fox for $204M worth of contracts in Raptors deal sportingnews.com",
+          "published": "Thu, 18 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "De’Aaron Fox traded to the Spurs, Zach LaVine to Kings in multi-team deal: Source",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNR1hVNEEzQ3dOSEFwZjROd2ZiTEktX0twRlBjRTV0RC1FbVlzamxsXzVyWUZrbVRmOUhFVVYzLVZhVjVld2xsXzhyS0o1MDhxMDA3ZE85UXJ3SU5Yc3Z2MDg3MlFjX0VER3BidTE4ZF9KMVMtaEhaTEdHQ1cyMGVQS2JkVG81WFE2eVdNTjMtcnFfQkV2THpGTVk1UWs4Q182NHAwaFYybw?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "De’Aaron Fox traded to the Spurs, Zach LaVine to Kings in multi-team deal: Source - The Athletic The New York Times",
+          "published": "Thu, 06 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Spurs trade pitch moves De'Aaron Fox for $120M All-Star",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWDNGNXBfaWpjMVpWMk5MYUNhajNwRWFWNjJkSlJlWmItbnZlakRvOGNDZmVWM2lXdEZiMnhzWEc3RFFsRnJPT2hhYkY3Zk1INUdHMlZYeXdSS0lZS21HeGd5TjVraEg3bllrQkh2WE9HYUUxanpRVjlYV1VOZ3pEa0pna0s4RU5VV1U0MG8xUnV2YzBVLTU1MnNYNWYyNHJEcEFVd0dKM2p2R3o1X1AwSmwzUzh5YzBLeFNtdHpvMHI4QUczTHZmVjF0NnpRQQ?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Spurs trade pitch moves De'Aaron Fox for $120M All-Star sportingnews.com",
+          "published": "Sat, 11 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Spurs Proposed to Trade De’Aaron Fox to Raptors in Blockbuster 5-Team Deal",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQkhkSEFPalFkOFdBMW52TWlrOTIyV1lfaFhSNXpXcXd6eUFQdl9IUktxUGJOeldOT0d6YjlDRDAzbTJKZFNPbEVkOTRHNTBscjFSa2NoZVNiTXJiU0JoVWdrdW9mRHVnS3Rqa1RBbGp5VFdZLWd3a3EtcTFUU2w2T3czeDd1dw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Spurs Proposed to Trade De’Aaron Fox to Raptors in Blockbuster 5-Team Deal Yahoo Sports",
+          "published": "Sun, 30 Aug 2026 23:57:49 GMT"
+        },
+        {
+          "title": "Kings listening to trade offers for De’Aaron Fox: Source",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNb0ltOXhwRHpqN00tWDRuZkhVOVVKWFFSMFpSLTFPZm42d1E1UTZPNWRsZEp0Wmx2TFdnWnhscGlzTmJHQmdGUDM4NHhKMVFaaWdKSWswVzZfcnJlNm41aFJGQ0R4bjBnMkJuNmtNT2FjMkVjSG8yQVJkVDk0MkJZUzdUYXRqaXNILW1rYnRn?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Kings listening to trade offers for De’Aaron Fox: Source The New York Times",
+          "published": "Thu, 06 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Spurs get bad De'Aaron Fox trade news after inexcusable NBA Finals blunder",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNbWFwNUFWbk0xdkFKbGUweGdyOVVRbGIzaTB2MUREczB0R292T1JacGpNeUVyYVNaS09HVU1KZlAzUHlQODh0NVhvTEdDeUxOZ3EwOVY2VEdiRW9MQzFzMWNuWnZDS1d6S3JpS05HMzlFSjlwYVpEQkdPUHgxUTdhbnEzTEZpMC1DMWZWNUxuMkcxMlVOUVpCb3dfdU1RQ3owZ3JHYngtUUFueVRtdmJOOE9UbDlKLVFWQVl2eWFOaHczcHRuLVNzcDFCRWlDWC1wQll3MWREbHBNZmxURVlSLWItVEM?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Spurs get bad De'Aaron Fox trade news after inexcusable NBA Finals blunder sportingnews.com",
+          "published": "Mon, 15 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Where Raptors Fit with Spurs in De'Aaron Fox Trade Rumors",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xTU0yRGN6SE1WcVdEZzlyUVRVcnlEQ3o4cllJQmdoTWVaUmJzWlNzc3dxT2dWbjl0aWdhTmJOYnY0cEpXNVhMa1lUdWxBSnlpZi1NYzJsOHRQaHJWSklMZ3dwV0JQcTNCUzVEanhIZXh0d2xhdGdneVB5dWlyMFU?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Where Raptors Fit with Spurs in De'Aaron Fox Trade Rumors Sports Illustrated",
+          "published": "Tue, 26 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Miami Heat Linked To Kevin Durant Trade During Season",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTEhPZlBMR1Nsc1BfcDlrZE1GSkZJd3RSbng2TEJKLUJIYnJna0tTZTk4Nl9YcDBodXhnQk9jZGJENUV0ZHBraWVrbzhaVTJiRkNjLV95aWVDT2xTWGtCZF81ZzhyVGpXOXZEc2lSVG5ITDl6dUttd3BTcWdBUzRlMXRhZw?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Miami Heat Linked To Kevin Durant Trade During Season heavy.com",
+          "published": "Mon, 31 Aug 2026 00:18:00 GMT"
+        },
+        {
+          "title": "Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWlV1ZkoyUWxjalI2STdZanpVbUV3Mmdyb1VhSmpHRFR6TEdrWlI3MVBRVFluem1LeDhTdDdsWFJUNmJ6RTlSaFh1elpFclY3UkJCa1BDRkRra1JDYzZZRzYyblhJdm54bHhPWXZMSUk2Ym1UVXBnMlk0Ni1SNHBULXJuYkFwU1Bs?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets Yahoo Sports",
+          "published": "Mon, 31 Aug 2026 13:37:18 GMT"
+        },
+        {
+          "title": "Knicks Proposed to Trade for Kevin Durant in Blockbuster 6-Player NBA Deal",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNemhhSW5MWmd5UUl4ZkpTRUY3WkpQa21CTzU0RzU2MHJ0dnowZXZycTNqdjVJZWpMVjA4Z0x5cVBYN2pSNUxmMXgxMmE1QXBTRXBibjYyV1h4TUQ4c29oWjNsc0Vza3Fsa3dpUkhxWWxjWjdmeE5IVV9OUU5FOFUzZ0JScmhIRi1odndpLQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Knicks Proposed to Trade for Kevin Durant in Blockbuster 6-Player NBA Deal heavy.com",
+          "published": "Mon, 31 Aug 2026 15:41:46 GMT"
+        },
+        {
+          "title": "Stephen Jackson urges the Spurs to make a blockbuster trade that could break the NBA: \"They got the pieces to move for a Steph for De'Aaron Fox\"",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPRzRzSWFMZHVEeDhIQnpGcjAyczNiTFIzMWVzUDVZWmJLS0JYMlNKbTZZVUxPR2JKQ1dLY2hsQm9qUGZWellWRG44WDhab2VFRl9lclluY1phZWxpa0NlSzZxdmxOYThRMW9aaVJhZUtkMDhDVmxBd1VGdnZJbXJTXzVYOHZzZnpsUURrcFVrZkhpZmYyN3NwQjJRd3piV2dzTE9RM1BkSGsxUXdHTWRVOXN3WnkxY1F1ME5TbWp5bkpucDg0Z1l3eGRR?oc=5",
+          "publisher": "Basketball Network",
+          "kind": "article",
+          "snippet": "Stephen Jackson urges the Spurs to make a blockbuster trade that could break the NBA: \"They got the pieces to move for a Steph for De'Aaron Fox\" Basketball Network",
+          "published": "Mon, 31 Aug 2026 12:49:17 GMT"
+        },
+        {
+          "title": "Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLXRWSmN3YU1JYmdfdGlLTjRjT2c0ZjZtY2ZQZWVKaU9JREJ2aTh1ekpxeE14SVliVHhOREpSUHlockVmMXUtR1VtS21oTkw1TlNlMXNYZnlaRXZEQ25CakpoSkJLWDZPbVZKTW5wY1hvWGJzSnBNdFUwdWNrVm9qVWxJN3pYVTlxN0xLSFB1eF9nRHNlcDhsZi1qNGw1ZWtLS3lRMlJxa2VwamVaWjhB?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets roundtable.io",
+          "published": "Tue, 01 Sep 2026 05:55:11 GMT"
+        },
+        {
+          "title": "Proposed Blockbuster NBA Trade Sends Jamal Murray to Raptors in 4-Team Deal",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOElfNlJtYWRWa3lpQzJVamRHM3VLTnpaZHR3QkNwMUdJVUowa3g4NnJMeDJGOUZ1MWVBeW9OaXFSajRFWF8wZGdISVFfeFloai01ME9ZOXJLMGJRQTE2a2xBTExDYW5rczdLU2ZtNDN6ZkI1bnFlRF9BTV9kYTNsRjkyR29hcGtzQlZpeWhB?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Proposed Blockbuster NBA Trade Sends Jamal Murray to Raptors in 4-Team Deal Yahoo Sports",
+          "published": "Sun, 16 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Spurs PG De’Aaron Fox Is Put On Notice Amid NBA Trade Rumors",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5sSG1lemY0Y0xoTDNJNjFWY00zX3pKeHByZ1ptb2V0STJfN2VCbE9HcFpwZVQ2UW5DY25FRVhQY280SGpTamM2WUdCRkwzSktrX2I0bVFDd21pNlRHZ1ZDTTA5RU1jWXUzb0I2by1MUlFFMVFtM3BZOUlvdw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Spurs PG De’Aaron Fox Is Put On Notice Amid NBA Trade Rumors Yahoo Sports",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "stephon-castle-luke-kornet-win-dunk-block-year-c3dc935a",
       "slug": "stephon-castle-luke-kornet-win-dunk-block-year-c3dc935a",
       "sport": "basketball",
@@ -1876,8 +1892,8 @@
       "slug": "proposed-blockbuster-trade-sends-jamal-murray-raptors-4-380962f3",
       "sport": "basketball",
       "headline": "NBA Mock Trade Sends Kawhi Leonard To The Pistons To Pair With Cade Cunningham In Blockbuster 3-Team Deal",
-      "blurb": "NBA Mock Trade Sends Kawhi Leonard To The Pistons To Pair With Cade Cunningham In Blockbuster 3-Team Deal Fadeaway World",
-      "summary": "NBA Mock Trade Sends Kawhi Leonard To The Pistons To Pair With Cade Cunningham In Blockbuster 3-Team Deal Fadeaway World Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets roundtable.io Proposed Blockbuster NBA Trade Sends Jamal Murray to Raptors in 4-Team Deal Yahoo Sports Aggregated from Fadeaway World, roundtable.io, Yahoo Sports.",
+      "blurb": "NBA Statement Game: Cade Cunningham Sends Powerful Message After Detroit Pistons Historic Comeback Al Bat",
+      "summary": "NBA Statement Game: Cade Cunningham Sends Powerful Message After Detroit Pistons Historic Comeback Al Bat Blockbuster NBA Trade Idea Sends Rockets' Kevin Durant to Hornets roundtable.io Proposed Blockbuster NBA Trade Sends Jamal Murray to Raptors in 4-Team Deal Yahoo Sports Aggregated from Al Bat, roundtable.io, Yahoo Sports, Fadeaway World, sports.yahoo.com.",
       "category": "trade",
       "published": "2026-04-30T07:00:00Z",
       "updated": "2026-09-01T05:55:11Z",
@@ -1888,6 +1904,20 @@
           "slug": "cade-cunningham",
           "pos": "PG",
           "team": "DET"
+        },
+        {
+          "key": "derrick white",
+          "name": "Derrick White",
+          "slug": "derrick-white",
+          "pos": "SG",
+          "team": "BOS"
+        },
+        {
+          "key": "anthony davis",
+          "name": "Anthony Davis",
+          "slug": "anthony-davis",
+          "pos": "C",
+          "team": "DAL"
         },
         {
           "key": "kawhi leonard",
@@ -1935,6 +1965,30 @@
           "kind": "article",
           "snippet": "NBA Mock Trade Sends Kawhi Leonard To The Pistons To Pair With Cade Cunningham In Blockbuster 3-Team Deal Fadeaway World",
           "published": "Thu, 30 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Celtics Proposed to Trade Derrick White to Pistons in Blockbuster 3-Player Deal",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaDBISU5qNlp6eFA3Ym1JdTZwbDV4YjRIaWpzRjlEczNQdUJ1QnBBS0F6TGxUdUdRZWc0MDZGYjBiM3NoWlhjMUtILW5NQ0JXbUNweW8wd243Yzd2b0ctemNibndiaUJ4SE9fQkNRNXJwQTFzeXhaeUtjS2ZGMXhUQ19ZUWdvczFKZVJQMk93?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Celtics Proposed to Trade Derrick White to Pistons in Blockbuster 3-Player Deal sports.yahoo.com",
+          "published": "Mon, 31 Aug 2026 15:43:37 GMT"
+        },
+        {
+          "title": "Proposed Blockbuster NBA Trade Reunites Lakers With Anthony Davis",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQ0pKV05FSURDeWVYSlh3VklCdW5LbEtyekI5YmZQSHI5bzdfNWVyOUI1UzR4Rklxa0ZUWnJDUTlmLVhSR2VJMkRaRkREQ21YT0hyMVItT1JLNG5WbUV6VTN6SEJFM2s1NDAwbDdTaGZjTEdyQVpHWEU5OXhPMkxBMGpoS1cyT3dack45bmRTWHVNdw?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Proposed Blockbuster NBA Trade Reunites Lakers With Anthony Davis sports.yahoo.com",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NBA Statement Game: Cade Cunningham Sends Powerful Message After Detroit Pistons Historic Comeback",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNb0NfU3VSazA5T1JPaW5nWWpRMTVYTUYyUXR2S2p0d0Nld3JLbW1laHFQZV95eS1MSEJMQWlEQjlWeEF6Z3NIZjBkcW5jY1lnWFN6eGtQZTR4V0VmU1JjS3Ruc2phX1F4R3R0QWVfdlhzWVBVWjJLd3JrSS1nOFR5V1FRRW1BV0U0enFYQlF1ME9WSEl2dDU2SmhZN1RGeGhGQlNqYkRhcE9wWUJQUllPMmQtUVdiUF9GWElBR3RtSTdOdFM4LTRBV1lBXzNTQWg1cXNhOUVWeGpXXzFiU0o40gHkAUFVX3lxTFBhWFJ6dzVRV2RjREtMRmJDaXZpRHBxY21pYWVmZy03ZnVvTmlsdzIyaGt1TGxtY3lURzdmemRkcVdBeDNQcjBTbWgxdlg4b3ZNS2JBSl9PLUVzSUllVXhxa1diZnUtRFBhckdvdE1JclBsaFk4SEtvSzNhSFhHalFkOGNJV1c1c21vdlY2cUFGaU9lc05COEJuM0Q1MWJRaE56OGNPLVdLN3hVUE03UWJGZ2NJd0ZScW5OcTZrVlN4ekVSZVN4eFM5Qk9yVS15ZzhUNE1OOFc5NW5BWmZScmNpODdjVA?oc=5",
+          "publisher": "Al Bat",
+          "kind": "article",
+          "snippet": "NBA Statement Game: Cade Cunningham Sends Powerful Message After Detroit Pistons Historic Comeback Al Bat",
+          "published": "Sat, 02 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -1943,8 +1997,8 @@
       "slug": "clippers-docked-five-first-round-draft-picks-fined-2ea8cc2b",
       "sport": "basketball",
       "headline": "Clippers docked five first-round draft picks and fined $30m over Kawhi Leonard scandal",
-      "blurb": "The LA Clippers are fined $30m (£22.2m) by the NBA for violating salary rules over the acquisition of star player Kawhi Leonard.",
-      "summary": "The LA Clippers are fined $30m (£22.2m) by the NBA for violating salary rules over the acquisition of star player Kawhi Leonard. The NBA has handed down one of the biggest punishments in the history of the league to the Los Angeles Clippers after finding that the franchise circumvented salary cap rules when it courted Kawhi Leonard as a free agent. The NBA also fined the Clippers $30m, and suspended owner Steve Ballmer from all league and team activities for a year. Aggregated from BBC, The Guardian, NBC Sports Boston, NBC Sports Philadelphia, NBC Sports BayArea.",
+      "blurb": "The NBA on Wednesday handed down punishments for the Los Angeles Clippers' salary cap circumvention scandal involving Kawhi Leonard.",
+      "summary": "The NBA on Wednesday handed down punishments for the Los Angeles Clippers' salary cap circumvention scandal involving Kawhi Leonard. The LA Clippers are fined $30m (£22.2m) by the NBA for violating salary rules over the acquisition of star player Kawhi Leonard. The NBA has handed down one of the biggest punishments in the history of the league to the Los Angeles Clippers after finding that the franchise circumvented salary cap rules when it courted Kawhi Leonard as a free agent. Aggregated from NBC Sports BayArea, BBC, The Guardian, NBC Sports Boston, NBC Sports Philadelphia.",
       "category": "wire",
       "published": "2026-09-02T13:55:41Z",
       "updated": "2026-09-02T21:08:26Z",
@@ -1996,6 +2050,14 @@
           "publisher": "NBC Sports BayArea",
           "kind": "article",
           "snippet": "The Clippers will forfeit five first-round picks, owner Steve Ballmer will be suspended for one year and more.",
+          "published": "Wed, 02 Sep 2026 13:55:41 +0000"
+        },
+        {
+          "title": "NBA issues huge punishments for Kawhi Leonard-Clippers cap circumvention scandal",
+          "url": "https://sports.yahoo.com/articles/nba-issues-huge-punishments-kawhi-135541953.html",
+          "publisher": "NBC Sports BayArea",
+          "kind": "article",
+          "snippet": "The NBA on Wednesday handed down punishments for the Los Angeles Clippers' salary cap circumvention scandal involving Kawhi Leonard.",
           "published": "Wed, 02 Sep 2026 13:55:41 +0000"
         }
       ]
@@ -2549,6 +2611,44 @@
       ]
     },
     {
+      "id": "pablo-torre-mark-cuban-others-react-punishes-clippers-1e6c3817",
+      "slug": "pablo-torre-mark-cuban-others-react-punishes-clippers-1e6c3817",
+      "sport": "basketball",
+      "headline": "Pablo Torre, Mark Cuban, others react after NBA punishes the Clippers and Kawhi Leonard in sponsorship scandal",
+      "blurb": "Mark Cuban had previously sparred with Pablo Torre, both on his podcast and on social media, over the Kawhi Leonard-Clippers investigation.",
+      "summary": "Mark Cuban had previously sparred with Pablo Torre, both on his podcast and on social media, over the Kawhi Leonard-Clippers investigation. The NBA annihilated the Clippers for Kawhi Leonard’s cap circumvention scandal. Aggregated from Yahoo Sports, SB Nation.",
+      "category": "wire",
+      "published": "2026-09-02T20:44:16Z",
+      "updated": "2026-09-02T21:17:39Z",
+      "players": [
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pablo Torre, Mark Cuban, others react after NBA punishes the Clippers and Kawhi Leonard in sponsorship scandal",
+          "url": "https://sports.yahoo.com/nba/article/pablo-torre-mark-cuban-others-react-after-nba-punishes-the-clippers-and-kawhi-leonard-in-sponsorship-scandal-211739733.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Mark Cuban had previously sparred with Pablo Torre, both on his podcast and on social media, over the Kawhi Leonard-Clippers investigation.",
+          "published": "Wed, 02 Sep 2026 21:17:39 +0000"
+        },
+        {
+          "title": "NBA crushes Clippers for Kawhi Leonard scandal with 5 first-round picks stripped, and more",
+          "url": "https://sports.yahoo.com/articles/nba-crushes-clippers-kawhi-leonard-204416254.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The NBA annihilated the Clippers for Kawhi Leonard’s cap circumvention scandal.",
+          "published": "Wed, 02 Sep 2026 20:44:16 +0000"
+        }
+      ]
+    },
+    {
       "id": "get-best-posting-toasting-new-sb-nation-app-9bbcbd96",
       "slug": "get-best-posting-toasting-new-sb-nation-app-9bbcbd96",
       "sport": "basketball",
@@ -2635,103 +2735,6 @@
       ]
     },
     {
-      "id": "pablo-torre-mark-cuban-others-react-punishes-clippers-1e6c3817",
-      "slug": "pablo-torre-mark-cuban-others-react-punishes-clippers-1e6c3817",
-      "sport": "basketball",
-      "headline": "Pablo Torre, Mark Cuban, others react after NBA punishes the Clippers and Kawhi Leonard in sponsorship scandal",
-      "blurb": "Mark Cuban had previously sparred with Pablo Torre, both on his podcast and on social media, over the Kawhi Leonard-Clippers investigation.",
-      "summary": "Mark Cuban had previously sparred with Pablo Torre, both on his podcast and on social media, over the Kawhi Leonard-Clippers investigation. The NBA annihilated the Clippers for Kawhi Leonard’s cap circumvention scandal. Aggregated from Yahoo Sports, SB Nation.",
-      "category": "wire",
-      "published": "2026-09-02T20:44:16Z",
-      "updated": "2026-09-02T21:17:39Z",
-      "players": [
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Pablo Torre, Mark Cuban, others react after NBA punishes the Clippers and Kawhi Leonard in sponsorship scandal",
-          "url": "https://sports.yahoo.com/nba/article/pablo-torre-mark-cuban-others-react-after-nba-punishes-the-clippers-and-kawhi-leonard-in-sponsorship-scandal-211739733.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Mark Cuban had previously sparred with Pablo Torre, both on his podcast and on social media, over the Kawhi Leonard-Clippers investigation.",
-          "published": "Wed, 02 Sep 2026 21:17:39 +0000"
-        },
-        {
-          "title": "NBA crushes Clippers for Kawhi Leonard scandal with 5 first-round picks stripped, and more",
-          "url": "https://sports.yahoo.com/articles/nba-crushes-clippers-kawhi-leonard-204416254.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The NBA annihilated the Clippers for Kawhi Leonard’s cap circumvention scandal.",
-          "published": "Wed, 02 Sep 2026 20:44:16 +0000"
-        }
-      ]
-    },
-    {
-      "id": "mutombo-assistant-coach-when-toronto-raptors-won-2019-acc32d9a",
-      "slug": "mutombo-assistant-coach-when-toronto-raptors-won-2019-acc32d9a",
-      "sport": "basketball",
-      "headline": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin…",
-      "blurb": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin Booker, Kevin Durant and Giannis Antetokounmpo.",
-      "summary": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin Booker, Kevin Durant and Giannis Antetokounmpo. He also worked with the Suns from 2022-23, alongside a certain BYU x.com BYU's new assistant coach won a championship with the Raptors in 2019, made the playoffs in 9 of 10 NBA seasons and has coached the likes of Giannis, Kawhi and KD. Board reading of x.com.",
-      "category": "coach",
-      "published": "2026-08-31T20:47:21Z",
-      "updated": "2026-08-31T20:55:25Z",
-      "players": [
-        {
-          "key": "giannis antetokounmpo",
-          "name": "Giannis Antetokounmpo",
-          "slug": "giannis-antetokounmpo",
-          "pos": "PF",
-          "team": "MIL"
-        },
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        },
-        {
-          "key": "devin booker",
-          "name": "Devin Booker",
-          "slug": "devin-booker",
-          "pos": "SG",
-          "team": "PHX"
-        },
-        {
-          "key": "kevin durant",
-          "name": "Kevin Durant",
-          "slug": "kevin-durant",
-          "pos": "PF",
-          "team": "HOU"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin Booker, Kevin Durant and Giannis Antetokounmpo. He also worked with the Suns from 2022-23, alongside a certain BYU",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qMDd6RXpVY3lEa0N0Z1lmRVdURC1reVRyc2ZDLVFUVzFsWFduRURyTW9fUHFxbV9xS1pneThHNW9mYTBIX2YzOW1uQjVERVpxaWFNcDRfVmNONTBfc0VXeEJB?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin Booker, Kevin Durant and Giannis Antetokounmpo. He also worked with the Suns from 2022-23, alongside a certain BYU x.com",
-          "published": "Mon, 31 Aug 2026 20:47:21 GMT"
-        },
-        {
-          "title": "BYU's new assistant coach won a championship with the Raptors in 2019, made the playoffs in 9 of 10 NBA seasons and has coached the likes of Giannis, Kawhi and KD. Really impressive hire for Kevin Young, who spent the 2022-23 season with Mutombo o",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5KRUd6cDl4eFNQMEJMM0FFX0dUUDVIVzNvRXU2bmcwSTJVX3BHMzg3YW1INW5QY3N0S21QdEtGVFJLNGh6Vk8wSWdGS0hnMl8wYXZQUV9YeC10ZVFJRWtxNWRLSVQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "BYU's new assistant coach won a championship with the Raptors in 2019, made the playoffs in 9 of 10 NBA seasons and has coached the likes of Giannis, Kawhi and KD. Really impressive hire for Kevin Young, who spent the 2022-23 season with Mutombo o x.com",
-          "published": "Mon, 31 Aug 2026 20:55:25 GMT"
-        }
-      ]
-    },
-    {
       "id": "nikola-jokic-battling-illness-serbia-40920fed",
       "slug": "nikola-jokic-battling-illness-serbia-40920fed",
       "sport": "basketball",
@@ -2796,6 +2799,65 @@
           "kind": "article",
           "snippet": "As the NBA world awaits the findings of the investigation into Kawhi Leonard and the Los Angeles Clippers, another wrinkle may delay the process.",
           "published": "Wed, 02 Sep 2026 18:57:41 +0000"
+        }
+      ]
+    },
+    {
+      "id": "mutombo-assistant-coach-when-toronto-raptors-won-2019-acc32d9a",
+      "slug": "mutombo-assistant-coach-when-toronto-raptors-won-2019-acc32d9a",
+      "sport": "basketball",
+      "headline": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin…",
+      "blurb": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin Booker, Kevin Durant and Giannis Antetokounmpo.",
+      "summary": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin Booker, Kevin Durant and Giannis Antetokounmpo. He also worked with the Suns from 2022-23, alongside a certain BYU x.com BYU's new assistant coach won a championship with the Raptors in 2019, made the playoffs in 9 of 10 NBA seasons and has coached the likes of Giannis, Kawhi and KD. Board reading of x.com.",
+      "category": "coach",
+      "published": "2026-08-31T20:47:21Z",
+      "updated": "2026-08-31T20:55:25Z",
+      "players": [
+        {
+          "key": "giannis antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "slug": "giannis-antetokounmpo",
+          "pos": "PF",
+          "team": "MIL"
+        },
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        },
+        {
+          "key": "devin booker",
+          "name": "Devin Booker",
+          "slug": "devin-booker",
+          "pos": "SG",
+          "team": "PHX"
+        },
+        {
+          "key": "kevin durant",
+          "name": "Kevin Durant",
+          "slug": "kevin-durant",
+          "pos": "PF",
+          "team": "HOU"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin Booker, Kevin Durant and Giannis Antetokounmpo. He also worked with the Suns from 2022-23, alongside a certain BYU",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qMDd6RXpVY3lEa0N0Z1lmRVdURC1reVRyc2ZDLVFUVzFsWFduRURyTW9fUHFxbV9xS1pneThHNW9mYTBIX2YzOW1uQjVERVpxaWFNcDRfVmNONTBfc0VXeEJB?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Mutombo was an assistant coach when the Toronto Raptors won the 2019 NBA title, and helped coach the likes of Kawhi Leonard, Devin Booker, Kevin Durant and Giannis Antetokounmpo. He also worked with the Suns from 2022-23, alongside a certain BYU x.com",
+          "published": "Mon, 31 Aug 2026 20:47:21 GMT"
+        },
+        {
+          "title": "BYU's new assistant coach won a championship with the Raptors in 2019, made the playoffs in 9 of 10 NBA seasons and has coached the likes of Giannis, Kawhi and KD. Really impressive hire for Kevin Young, who spent the 2022-23 season with Mutombo o",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5KRUd6cDl4eFNQMEJMM0FFX0dUUDVIVzNvRXU2bmcwSTJVX3BHMzg3YW1INW5QY3N0S21QdEtGVFJLNGh6Vk8wSWdGS0hnMl8wYXZQUV9YeC10ZVFJRWtxNWRLSVQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "BYU's new assistant coach won a championship with the Raptors in 2019, made the playoffs in 9 of 10 NBA seasons and has coached the likes of Giannis, Kawhi and KD. Really impressive hire for Kevin Young, who spent the 2022-23 season with Mutombo o x.com",
+          "published": "Mon, 31 Aug 2026 20:55:25 GMT"
         }
       ]
     },
@@ -2893,44 +2955,6 @@
           "kind": "article",
           "snippet": "Jalen Brunson might not be the first NBA Finals champion Knick to make an appearance on a New York crime show this fall.",
           "published": "Tue, 01 Sep 2026 22:48:06 +0000"
-        }
-      ]
-    },
-    {
-      "id": "jaylen-brown-set-enter-first-sixers-kill-mentality-723c332f",
-      "slug": "jaylen-brown-set-enter-first-sixers-kill-mentality-723c332f",
-      "sport": "basketball",
-      "headline": "Jaylen Brown set to enter first Sixers season with ‘kill' mentality",
-      "blurb": "Jaylen Brown is embracing a new beginning in Philly after saying farewell to Boston.",
-      "summary": "Jaylen Brown is embracing a new beginning in Philly after saying farewell to Boston. Board reading of NBC Sports Philadelphia.",
-      "category": "wire",
-      "published": "2026-09-02T16:28:49Z",
-      "updated": "2026-09-02T16:28:49Z",
-      "players": [
-        {
-          "key": "jaylen brown",
-          "name": "Jaylen Brown",
-          "slug": "jaylen-brown",
-          "pos": "SG",
-          "team": "BOS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jaylen Brown set to enter first Sixers season with ‘kill' mentality",
-          "url": "https://sports.yahoo.com/articles/jaylen-brown-set-enter-first-162849151.html",
-          "publisher": "NBC Sports Philadelphia",
-          "kind": "article",
-          "snippet": "Jaylen Brown is embracing a new beginning in Philly after saying farewell to Boston.",
-          "published": "Wed, 02 Sep 2026 16:28:49 +0000"
-        },
-        {
-          "title": "Jaylen Brown set to enter first Sixers season with ‘kill' mentality",
-          "url": "https://sports.yahoo.com/articles/jaylen-brown-set-enter-first-162849689.html",
-          "publisher": "NBC Sports Philadelphia",
-          "kind": "article",
-          "snippet": "Jaylen Brown is embracing a new beginning in Philly after saying farewell to Boston.",
-          "published": "Wed, 02 Sep 2026 16:28:49 +0000"
         }
       ]
     },
@@ -13366,8 +13390,8 @@
       "slug": "jalen-williams-playing-tonight-injury-betting-impact-lakers-2652f6b7",
       "sport": "basketball",
       "headline": "Is Victor Wembanyama playing tonight vs the New York Knicks? Latest update on the San Antonio Spurs star'",
-      "blurb": "Is Victor Wembanyama playing tonight vs the New York Knicks?",
-      "summary": "Is Victor Wembanyama playing tonight vs the New York Knicks? Latest update on the San Antonio Spurs star' The Times of India Is Victor Wembanyama Playing Tonight? Aggregated from The Times of India, Sports Illustrated, nytimes.com, The Oklahoman, sportingnews.com and 9 more.",
+      "blurb": "San Antonio Spurs Injury Report: Victor Wembanyama Status, Luke Kornet and 4 Others Ruled Out of Home Opener vs Nets (Oct.",
+      "summary": "San Antonio Spurs Injury Report: Victor Wembanyama Status, Luke Kornet and 4 Others Ruled Out of Home Opener vs Nets (Oct. OKC Thunder: Jalen Williams Searching for Bounce-Back Season After Injury-Plagued Campaign Sports Illustrated Jalen Williams was a 1st-half force, and now Thunder wait for positive injury news nytimes.com Aggregated from Sportskeeda, Sports Illustrated, nytimes.com, The Oklahoman, sportingnews.com and 9 more.",
       "category": "injury",
       "published": "2023-03-10T08:00:00Z",
       "updated": "2026-07-22T07:00:00Z",
@@ -13378,6 +13402,13 @@
           "slug": "victor-wembanyama",
           "pos": "C",
           "team": "SAS"
+        },
+        {
+          "key": "luke kornet",
+          "name": "Luke Kornet",
+          "slug": "luke-kornet",
+          "pos": "C",
+          "team": "BOS"
         },
         {
           "key": "jalen williams",
@@ -13970,6 +14001,14 @@
           "kind": "article",
           "snippet": "Is Victor Wembanyama Playing Tonight? (Injury Update, Betting Impact for Blazers vs. Spurs Game 5) Sports Illustrated",
           "published": "Tue, 28 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "San Antonio Spurs Injury Report: Victor Wembanyama Status, Luke Kornet and 4 Others Ruled Out of Home Opener vs Nets (Oct. 26)",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOTm5KNU5VZk1jY292RUd2Tkw4MDQ4dW8zcm15S180UkRKdFhRZG9LZU1KTFpiQ3JOb0lOcXA3T0R6RzZiRkVNOW82elI4aWNKRnhCcC0xdVg3YzZnWjhEaXRGY3hjMGZkTlVmS0t5bTdUTkwxdTh5QmFuTjhsSXlPY2dyZmxWVVZmTnU5TVBoYnc2YmhTRHJZLUhNc204bExtVVplcVZzTUF6clhxaUlyenFNbzMyS2tkQ2Nrd25pRFZobEZ5UFFZQ2pGQVRJQ1h0TGZBMGFncS1ZTGZDZnNRVVZia1RwNWJCaHdYRW9fRQ?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "San Antonio Spurs Injury Report: Victor Wembanyama Status, Luke Kornet and 4 Others Ruled Out of Home Opener vs Nets (Oct. 26) Sportskeeda",
+          "published": "Sun, 26 Oct 2025 07:00:00 GMT"
         }
       ]
     },
@@ -15217,6 +15256,44 @@
           "kind": "article",
           "snippet": "Is Shai Gilgeous-Alexander playing tonight against Sacramento Kings? Latest injury update on NBA MVP contender (April 9) Sportskeeda",
           "published": "Tue, 09 Apr 2024 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "jaylen-brown-set-enter-first-sixers-kill-mentality-723c332f",
+      "slug": "jaylen-brown-set-enter-first-sixers-kill-mentality-723c332f",
+      "sport": "basketball",
+      "headline": "Jaylen Brown set to enter first Sixers season with ‘kill' mentality",
+      "blurb": "Jaylen Brown is embracing a new beginning in Philly after saying farewell to Boston.",
+      "summary": "Jaylen Brown is embracing a new beginning in Philly after saying farewell to Boston. Board reading of NBC Sports Philadelphia.",
+      "category": "wire",
+      "published": "2026-09-02T16:28:49Z",
+      "updated": "2026-09-02T16:28:49Z",
+      "players": [
+        {
+          "key": "jaylen brown",
+          "name": "Jaylen Brown",
+          "slug": "jaylen-brown",
+          "pos": "SG",
+          "team": "BOS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jaylen Brown set to enter first Sixers season with ‘kill' mentality",
+          "url": "https://sports.yahoo.com/articles/jaylen-brown-set-enter-first-162849151.html",
+          "publisher": "NBC Sports Philadelphia",
+          "kind": "article",
+          "snippet": "Jaylen Brown is embracing a new beginning in Philly after saying farewell to Boston.",
+          "published": "Wed, 02 Sep 2026 16:28:49 +0000"
+        },
+        {
+          "title": "Jaylen Brown set to enter first Sixers season with ‘kill' mentality",
+          "url": "https://sports.yahoo.com/articles/jaylen-brown-set-enter-first-162849689.html",
+          "publisher": "NBC Sports Philadelphia",
+          "kind": "article",
+          "snippet": "Jaylen Brown is embracing a new beginning in Philly after saying farewell to Boston.",
+          "published": "Wed, 02 Sep 2026 16:28:49 +0000"
         }
       ]
     }
