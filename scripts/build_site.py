@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 28, 2026"
-LASTMOD = "2026-08-28"
+UPDATED = "September 2, 2026"
+LASTMOD = "2026-09-02"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -839,7 +839,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt August 28, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
+        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt September 2, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -982,7 +982,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public boards, rebuilt August 28, 2026."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public boards, rebuilt September 2, 2026."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
@@ -1146,7 +1146,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=42" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=43" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -2380,11 +2380,22 @@ def main():
     {masthead("Football rankings", wordmark(), "Dynasty · Redraft")}
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
-      <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR.</p>
+      <h2>The Keep and The Board</h2>
+      <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR. Everything else on this page supports these.</p>
+      <div class="home-leads">
+        <a class="tile lead keep" href="the-keep.html">
+          <h3>The Keep</h3>
+          <p class="lead-sub">Superflex dynasty · top 400</p>
+          <p>32 boards mashed into one rank.</p>
+        </a>
+        <a class="tile lead board" href="board.html">
+          <h3>The Board</h3>
+          <p class="lead-sub">Redraft PPR · this year</p>
+          <p>Thirteen boards averaged.</p>
+        </a>
+      </div>
     </section>
-    {desk_block("lists", "Lists", "The boards.", "The Keep and The Board lead. Then Superflex + IDP, redraft, rookies, the market tape, DST, and kickers.", [
-        ("the-keep.html", "The Keep", "Superflex dynasty, top 400. 32 boards mashed into one rank.", "lead keep"),
-        ("board.html", "The Board", "Redraft PPR, this year. Thirteen boards averaged.", "lead board"),
+    {desk_block("lists", "Lists", "The other boards.", "Superflex + IDP, redraft, rookies, the market tape, DST, and kickers.", [
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("the-classic.html", "The Classic", "Half-PPR, this year."),
