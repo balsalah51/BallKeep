@@ -78,6 +78,7 @@ def norm_name(name: str) -> str:
         "d j moore": "dj moore",
         "chigoziem okonkwo": "chig okonkwo",
         "hollywood brown": "marquise brown",
+        "matthew hibner": "matt hibner",
     }
     return aliases.get(n, n)
 

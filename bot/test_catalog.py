@@ -150,10 +150,11 @@ def main():
     assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"
     fence = cat.raw.get("fence") or []
     assert len(fence) == 400, f"fence {len(fence)}"
-    assert fence[0]["name"] == "Josh Allen"
+    assert fence[0]["name"] == "Drake Maye"
     assert fence[0].get("bk") == 1
-    assert cat.list_for("fence")[0]["name"] == "Josh Allen"
-    assert cat.list_for("idp")[0]["name"] == "Josh Allen"
+    assert cat.list_for("fence")[0]["name"] == "Drake Maye"
+    assert cat.list_for("idp")[0]["name"] == "Drake Maye"
+    assert any(r["name"] == "Josh Allen" and r.get("bk") == 2 for r in fence[:3])
     assert any(r["name"] == "Aidan Hutchinson" for r in fence)
     bpl = cat.raw.get("bpl") or []
     assert len(bpl) == 380, f"bpl {len(bpl)}"
@@ -259,7 +260,7 @@ def main():
     assert "mast-ballkeep.jpg" in home
     assert 'class="mast-mark"' in home
     assert "background-image:url" not in home
-    assert "home-leads" not in home
+    assert "home-leads" in home
     assert 'class="tile lead keep"' in home
     assert 'class="tile lead board"' in home
     assert 'href="recent-trades.html"' not in home[home.find("<nav>"):home.find("</nav>")]
@@ -269,21 +270,24 @@ def main():
     schedules_at = home.find('class="desk-block schedules"')
     tools_at = home.find('class="desk-block tools"')
     extra_at = home.find('class="desk-block extra"')
-    assert 0 < lists_at < schedules_at < tools_at < extra_at
+    main_at = home.find("home-intro")
+    assert 0 < main_at < lists_at < schedules_at < tools_at < extra_at
+    main = home[main_at:lists_at]
     lists = home[lists_at:schedules_at]
     slates = home[schedules_at:tools_at]
+    assert "the-keep.html" in main
+    assert "board.html" in main
+    assert "The Keep and The Board" in main
+    assert "the-keep.html" not in lists
+    assert "board.html" not in lists
     assert "defenses.html" in lists
     assert "kickers.html" in lists
     assert "The D (DST)" in lists
     assert "Top Kickers" in lists
     assert "the-fence.html" in lists
     assert "The Fence (IDP)" in lists
-    assert "the-keep.html" in lists
-    assert "board.html" in lists
-    keep_i = lists.find("the-keep.html")
-    board_i = lists.find("board.html")
     fence_i = lists.find("the-fence.html")
-    assert 0 <= keep_i < board_i < fence_i
+    assert 0 <= fence_i
     assert "nfl-schedule.html" not in lists
     assert "mlb-schedule.html" not in lists
     assert "nfl-schedule.html" in slates

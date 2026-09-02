@@ -152,6 +152,7 @@ def norm_name(name: str) -> str:
         "harold fannin jr": "harold fannin",
         "deebo samuel sr": "deebo samuel",
         "aaron jones sr": "aaron jones",
+        "matthew hibner": "matt hibner",
     }
     return aliases.get(n, n)
 
@@ -759,14 +760,18 @@ def load_age_bank():
 def apply_media_ages(rows, media, extra=None):
     extra = extra or {}
     for r in rows:
-        if r.get("age") not in (None, ""):
-            continue
         key = r.get("key") or norm_name(r.get("name") or "")
-        age = (media.get(key) or {}).get("age")
-        if age in (None, ""):
-            age = extra.get(key)
-        if age not in (None, ""):
-            r["age"] = age
+        info = media.get(key) or {}
+        if r.get("age") in (None, ""):
+            age = info.get("age")
+            if age in (None, ""):
+                age = extra.get(key)
+            if age not in (None, ""):
+                r["age"] = age
+        if not r.get("pos") and info.get("pos"):
+            r["pos"] = info["pos"]
+        if not r.get("team") and info.get("team"):
+            r["team"] = info["team"]
 
 
 def face_src(r, media, depth=0):
@@ -820,12 +825,12 @@ def sources_panel(items, heading="Boards in This Super Aggregate"):
 
 PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
-    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Aug 28."),
+    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Sep 2."),
     ("ESPN - Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
 ] + PPR_EXTRA_SOURCES
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
-    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Aug 27."),
+    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Sep 1."),
     ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1-2-3."),
 ]
 
@@ -929,7 +934,7 @@ FB_SEO = {
     ),
     "the-fence.html": (
         "The Fence 2026 Superflex + IDP Rankings | Ball Keep",
-        "The Fence is Ball Keep's mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. Josh Allen is 1.01. Aidan Hutchinson is the first IDP.",
+        "The Fence is Ball Keep's mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. Drake Maye is 1.01. Aidan Hutchinson is the first IDP.",
         "img/logo.jpg",
     ),
     "privacy.html": (
@@ -2682,7 +2687,7 @@ def main():
     fence_body = f"""
     <p class="kicker">Dynasty Superflex + IDP · Super Aggregate · {len(FENCE_MIXED_SOURCES)} boards</p>
     <h1>The Fence</h1>
-    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Published core is Dynasty Nerds Glossery mixed 725. Then the IDP Show stitch: The Keep skill ranks and the 20-market IDP mean dropped into those startup slots. Unranked on a board is a skip. Josh Allen is 1.01. Aidan Hutchinson is the first IDP. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
+    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Published core is Dynasty Nerds Glossery mixed 725. Then the IDP Show stitch: The Keep skill ranks and the 20-market IDP mean dropped into those startup slots. Unranked on a board is a skip. Drake Maye is 1.01. Aidan Hutchinson is the first IDP. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
     {rank_search_bar(fence_chips)}
     <div class="panel">{rank_table(fence, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(fence, 12, "#c8102e", "Fence value graph")}
