@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 2, 2026"
-LASTMOD = "2026-09-02"
+UPDATED = "September 3, 2026"
+LASTMOD = "2026-09-03"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -22,8 +22,10 @@ from extra_ranks import (  # noqa: E402
     DRAFT_SHARKS_SF,
     ESPN_KARABELL_FLEX,
     ESPN_KARABELL_SF,
+    MIKE_CLAY_DYNASTY,
     ROTOWIRE_SF,
     as_ranks,
+    load_rank_map,
 )
 from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps, _norm as ppr_norm  # noqa: E402
 from special_teams import DST_SOURCES, K_SOURCES, dst_board, kicker_board  # noqa: E402
@@ -269,17 +271,17 @@ FANTASYPROS_SF = {
     "Jalen Hurts": 9, "Lamar Jackson": 10, "Justin Herbert": 11, "Ashton Jeanty": 12,
 }
 FP_EXPERTS = {
-    "Derek Brown (X)": {
+    "Derek Brown (X)": load_rank_map("fp-brown-sf") or {
         "Josh Allen": 1, "Drake Maye": 2, "Jalen Hurts": 3, "Ja'Marr Chase": 4,
         "Jaxon Smith-Njigba": 5, "Jahmyr Gibbs": 6, "Bijan Robinson": 7, "Puka Nacua": 8,
         "Ashton Jeanty": 11, "Jayden Daniels": 23, "Justin Herbert": 26, "Lamar Jackson": 27,
     },
-    "Andrew Erickson (X)": {
+    "Andrew Erickson (X)": load_rank_map("fp-erickson-sf") or {
         "Drake Maye": 1, "Jayden Daniels": 2, "Josh Allen": 3, "Lamar Jackson": 4,
         "Justin Herbert": 5, "Ja'Marr Chase": 8, "Jaxon Smith-Njigba": 9, "Bijan Robinson": 10,
         "Jalen Hurts": 14, "Jahmyr Gibbs": 16, "Puka Nacua": 18, "Ashton Jeanty": 22,
     },
-    "Pat Fitzmaurice (X)": {
+    "Pat Fitzmaurice (X)": load_rank_map("fp-fitz-sf") or {
         "Drake Maye": 1, "Josh Allen": 2, "Jayden Daniels": 3, "Ja'Marr Chase": 5,
         "Lamar Jackson": 6, "Bijan Robinson": 7, "Jahmyr Gibbs": 8, "Puka Nacua": 9,
         "Jaxon Smith-Njigba": 10, "Justin Herbert": 12, "Ashton Jeanty": 13, "Jalen Hurts": 19,
@@ -326,42 +328,24 @@ KTC_SF = {
     "Garrett Wilson": 44, "Luther Burden": 47, "Ladd McConkey": 48, "A.J. Brown": 49,
     "Fernando Mendoza": 50,
 }
-YATES_PPR = [
-    ("Bijan Robinson", "RB", "ATL"), ("Jahmyr Gibbs", "RB", "DET"), ("Christian McCaffrey", "RB", "SF"),
-    ("Ja'Marr Chase", "WR", "CIN"), ("Puka Nacua", "WR", "LAR"), ("Jaxon Smith-Njigba", "WR", "SEA"),
-    ("Jonathan Taylor", "RB", "IND"), ("De'Von Achane", "RB", "MIA"), ("Amon-Ra St. Brown", "WR", "DET"),
-    ("James Cook", "RB", "BUF"), ("Derrick Henry", "RB", "BAL"), ("Justin Jefferson", "WR", "MIN"),
-    ("CeeDee Lamb", "WR", "DAL"), ("Chase Brown", "RB", "CIN"), ("Kenneth Walker", "RB", "KC"),
-    ("Trey McBride", "TE", "ARI"), ("Drake London", "WR", "ATL"), ("Brock Bowers", "TE", "LV"),
-    ("Rashee Rice", "WR", "KC"), ("Josh Jacobs", "RB", "GB"), ("Jeremiyah Love", "RB", "ARI"),
-    ("Saquon Barkley", "RB", "PHI"), ("Ashton Jeanty", "RB", "LV"), ("Omarion Hampton", "RB", "LAC"),
-    ("Malik Nabers", "WR", "NYG"), ("A.J. Brown", "WR", "NE"), ("Chris Olave", "WR", "NO"),
-    ("Josh Allen", "QB", "BUF"), ("George Pickens", "WR", "DAL"), ("Javonte Williams", "RB", "DAL"),
-    ("Breece Hall", "RB", "NYJ"), ("Kyren Williams", "RB", "LAR"), ("Emeka Egbuka", "WR", "TB"),
-    ("Garrett Wilson", "WR", "NYJ"), ("Colston Loveland", "TE", "CHI"), ("Lamar Jackson", "QB", "BAL"),
-    ("Travis Etienne", "RB", "NO"), ("Cam Skattebo", "RB", "NYG"), ("Nico Collins", "WR", "HOU"),
-    ("Jayden Daniels", "QB", "WAS"), ("Zay Flowers", "WR", "BAL"), ("Tetairoa McMillan", "WR", "CAR"),
-    ("DeVonta Smith", "WR", "PHI"), ("Jaylen Waddle", "WR", "DEN"), ("Quinshon Judkins", "RB", "CLE"),
-    ("Tyler Warren", "TE", "IND"), ("D'Andre Swift", "RB", "CHI"), ("Drake Maye", "QB", "NE"),
-    ("Bucky Irving", "RB", "TB"), ("Davante Adams", "WR", "LAR"), ("Ladd McConkey", "WR", "LAC"),
-    ("Jalen Hurts", "QB", "PHI"), ("Harold Fannin", "TE", "CLE"), ("Bhayshul Tuten", "RB", "JAX"),
-    ("Chuba Hubbard", "RB", "CAR"), ("Jadarian Price", "RB", "SEA"), ("Tee Higgins", "WR", "CIN"),
-    ("Kyle Pitts", "TE", "ATL"), ("Justin Herbert", "QB", "LAC"), ("Terry McLaurin", "WR", "WAS"),
-    ("Carnell Tate", "WR", "TEN"), ("David Montgomery", "RB", "HOU"), ("Tony Pollard", "RB", "TEN"),
-    ("George Kittle", "TE", "SF"), ("Rhamondre Stevenson", "RB", "NE"), ("TreVeyon Henderson", "RB", "NE"),
-    ("Rome Odunze", "WR", "CHI"), ("DK Metcalf", "WR", "PIT"), ("Kenneth Gainwell", "RB", "TB"),
-    ("Jaxson Dart", "QB", "NYG"), ("Jaylen Warren", "RB", "PIT"), ("DJ Moore", "WR", "BUF"),
-    ("Joe Burrow", "QB", "CIN"), ("Marvin Harrison", "WR", "ARI"), ("Trevor Lawrence", "QB", "JAX"),
-    ("Christian Watson", "WR", "GB"), ("Luther Burden", "WR", "CHI"), ("Jameson Williams", "WR", "DET"),
-    ("Wan'Dale Robinson", "WR", "TEN"), ("Stefon Diggs", "WR", "WAS"), ("Rachaad White", "RB", "WAS"),
-    ("Sam LaPorta", "TE", "DET"), ("Aaron Jones", "RB", "MIN"), ("Michael Wilson", "WR", "ARI"),
-    ("Mike Evans", "WR", "SF"), ("Courtland Sutton", "WR", "DEN"), ("Michael Pittman", "WR", "PIT"),
-    ("Tucker Kraft", "TE", "GB"), ("Dak Prescott", "QB", "DAL"), ("Patrick Mahomes", "QB", "KC"),
-    ("Jakobi Meyers", "WR", "JAX"), ("Jake Ferguson", "TE", "DAL"), ("Chris Godwin", "WR", "TB"),
-    ("Dallas Goedert", "TE", "PHI"), ("Kyle Monangai", "RB", "CHI"), ("Brock Purdy", "QB", "SF"),
-    ("Matthew Stafford", "QB", "LAR"), ("Bo Nix", "QB", "DEN"), ("Travis Kelce", "TE", "KC"),
-    ("J.K. Dobbins", "RB", "DEN"),
-]
+
+
+def _yates_ppr_rows():
+    path = ROOT / "data" / "ranks" / "yates-ppr.json"
+    if not path.exists():
+        return []
+    rows = json.loads(path.read_text())
+    out = []
+    for row in rows:
+        name = (row.get("name") or "").strip()
+        pos = (row.get("pos") or "").strip()
+        team = (row.get("team") or "").strip()
+        if name and pos in ("QB", "RB", "WR", "TE"):
+            out.append((name, pos, team))
+    return out
+
+
+YATES_PPR = _yates_ppr_rows()
 FP_PPR = {"Ja'Marr Chase": 1, "Jahmyr Gibbs": 2, "Puka Nacua": 3, "Bijan Robinson": 4, "Jaxon Smith-Njigba": 5}
 
 ROOKIES = [
@@ -473,7 +457,7 @@ def is_draft_pick_name(name: str) -> bool:
 
 def _fill_display_names(rows, pfn_rows, fp_sf, dn_sf, ktc_sf):
     meta = meta_map(pfn_rows)
-    bank = list(dn_sf) + list(ktc_sf) + list(fp_sf) + ESPN_KARABELL_SF + DRAFT_SHARKS_SF + ROTOWIRE_SF
+    bank = list(dn_sf) + list(ktc_sf) + list(fp_sf) + ESPN_KARABELL_SF + DRAFT_SHARKS_SF + ROTOWIRE_SF + MIKE_CLAY_DYNASTY
     bank_map = {norm_name(n): n for n in bank}
     for r in rows:
         if is_draft_pick_name(r.get("key") or "") or is_draft_pick_name(r.get("name") or ""):
@@ -500,6 +484,7 @@ def aggregate(pfn_rows):
         "ESPN (Karabell)": {norm_name(n): r for n, r in as_ranks(ESPN_KARABELL_SF).items()},
         "Draft Sharks": {norm_name(n): r for n, r in as_ranks(DRAFT_SHARKS_SF).items()},
         "RotoWire": {norm_name(n): r for n, r in as_ranks(ROTOWIRE_SF).items()},
+        "Mike Clay (ESPN)": {norm_name(n): r for n, r in as_ranks(MIKE_CLAY_DYNASTY).items()},
     }
     for expert, board in FP_EXPERTS.items():
         core[expert] = {norm_name(n): r for n, r in board.items()}
@@ -824,9 +809,9 @@ def sources_panel(items, heading="Boards in This Super Aggregate"):
 
 
 PPR_SOURCES = [
-    ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Aug 17."),
-    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Sep 2."),
-    ("ESPN - Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 17."),
+    ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/story/_/id/48711830", "2026 full-PPR redraft board, updated Aug 31. Skill players only."),
+    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Sep 3."),
+    ("ESPN - Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Aug 31."),
 ] + PPR_EXTRA_SOURCES
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
@@ -839,17 +824,17 @@ ROOKIE_SOURCES = [
 FB_SEO = {
     "index.html": (
         "Ball Keep | Superflex Dynasty Rankings and Redraft PPR",
-        "The Keep is Superflex Dynasty - 32 boards, top 400. The Board is Redraft PPR. BK Value trade calculator, The X, and hourly BK News.",
+        "The Keep is Superflex Dynasty - 33 boards, top 400. The Board is Redraft PPR. BK Value trade calculator, The X, and hourly BK News.",
         "img/hero.jpg",
     ),
     "the-keep.html": (
         "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt September 2, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
+        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt September 3, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
         "The Board - 2026 Redraft PPR Rankings | Ball Keep",
-        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen boards: Yates, FantasyPros ECR, Karabell, plus ten more expert and public PPR lists. Kickers and DST omitted.",
+        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Fifteen boards: Yates, FantasyPros ECR, Karabell, plus twelve more expert and public PPR lists. Kickers and DST omitted.",
         "img/logo.jpg",
     ),
     "the-x.html": (
@@ -859,7 +844,7 @@ FB_SEO = {
     ),
     "redraft-ppr.html": (
         "The Board - 2026 Redraft PPR Rankings | Ball Keep",
-        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen PPR boards averaged. Kickers and DST omitted.",
+        "The Board is Ball Keep's redraft PPR list. Full-PPR, 1QB, 200 skill players. Fifteen PPR boards averaged. Kickers and DST omitted.",
         "img/logo.jpg",
     ),
     "redraft-superflex.html": (
@@ -869,7 +854,7 @@ FB_SEO = {
     ),
     "the-classic.html": (
         "The Classic - 2026 Half-PPR Rankings | Ball Keep",
-        "The Classic is Ball Keep's 0.5 PPR redraft list. Same 13-board PPR mean as The Board, then half the Standard tax: RB −2.25, WR +1.5, TE +1, QB +0.25.",
+        "The Classic is Ball Keep's 0.5 PPR redraft list. Same 15-board PPR mean as The Board, then half the Standard tax: RB −2.25, WR +1.5, TE +1, QB +0.25.",
         "img/logo.jpg",
     ),
     "redraft-standard.html": (
@@ -924,12 +909,12 @@ FB_SEO = {
     ),
     "defenses.html": (
         "2026 Fantasy Football DST Rankings | Ball Keep",
-        "Top Defenses is Ball Keep's aggregate DST board. Mean of eight boards: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, Pat Fitzmaurice, STACKED, Draft Sharks, and CBS. Houston is 1.01.",
+        "Top Defenses is Ball Keep's aggregate DST board. Mean of nine boards: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, Pat Fitzmaurice, STACKED, Draft Sharks, CBS, and Field Yates. Houston is 1.01.",
         "img/logo.jpg",
     ),
     "kickers.html": (
         "2026 Fantasy Football Kicker Rankings | Ball Keep",
-        "Top Kickers is Ball Keep's aggregate kicking board. Mean of five boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks, and RotoWire. Brandon Aubrey is 1.01.",
+        "Top Kickers is Ball Keep's aggregate kicking board. Mean of six boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks, RotoWire, and Field Yates. Brandon Aubrey is 1.01.",
         "img/logo.jpg",
     ),
     "the-fence.html": (
@@ -980,19 +965,19 @@ FB_SEO = {
 }
 
 HOME_FAQ = [
-    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 32 boards, top 400. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
+    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 33 boards, top 400. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
     ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. Unranked is a skip."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player. Unranked names are skipped, never treated as 999."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 32 public boards, rebuilt September 2, 2026."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 33 public boards, rebuilt September 3, 2026."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
 BOARD_FAQ = [
-    ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Thirteen boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Kickers and DST omitted."),
+    ("What is The Board?", "Ball Keep's 2026 redraft PPR list. Full-PPR, 1QB, 200 skill players. Fifteen boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, 4for4, NBC Sports, and Footballguys. Kickers and DST omitted."),
     ("How is the rank built?", "The mean of every board that published the name. Unranked on a board is a skip, not a last-place dump. Yates, FantasyPros, and Karabell stay on the table so you can see the long tapes against the mean."),
     ("How is this different from The Keep?", "The Keep is Superflex Dynasty. The Board is this year only, one quarterback, a point per catch."),
     ("Does BK Value use this rank?", "Yes. The PPR calculator prices The Board rank on the same 12,000 curve."),
@@ -2391,12 +2376,12 @@ def main():
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
           <p class="lead-sub">Superflex dynasty · top 400</p>
-          <p>32 boards mashed into one rank.</p>
+          <p>33 boards mashed into one rank.</p>
         </a>
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
           <p class="lead-sub">Redraft PPR · this year</p>
-          <p>Thirteen boards averaged.</p>
+          <p>Fifteen boards averaged.</p>
         </a>
       </div>
     </section>
@@ -2463,7 +2448,7 @@ def main():
                 "https://ballkeep.com/the-keep.html",
                 keep,
                 lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
-                description="Superflex dynasty top 400 from 32 boards.",
+                description="Superflex dynasty top 400 from 33 boards.",
             ),
             faq_jsonld(KEEP_FAQ),
         ],
@@ -2483,7 +2468,7 @@ def main():
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR · {len(PPR_SOURCES)} boards</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Mean of {len(PPR_SOURCES)} boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then ten more from Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, and 4for4. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Mean of {len(PPR_SOURCES)} boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then twelve more from Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, 4for4, NBC Sports, and Footballguys. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
     {rank_search_bar(board_chips)}
     <div class="panel">{rank_table(ppr, ["Avg", "Boards", "Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
@@ -2498,7 +2483,7 @@ def main():
                 "https://ballkeep.com/board.html",
                 ppr,
                 lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
-                description="Redraft PPR skill-player board from thirteen public lists.",
+                description="Redraft PPR skill-player board from fifteen public lists.",
             ),
             faq_jsonld(BOARD_FAQ),
         ],
@@ -2528,7 +2513,7 @@ def main():
     classic_body = f"""
     <p class="kicker">2026 Redraft · 0.5 PPR</p>
     <h1>The Classic</h1>
-    <p class="note">Half-PPR is the format most rooms actually run. We start from the same 13-board PPR mean as The Board, then apply half the Standard tax: running backs −2.25 ranks, receivers +1.5, tight ends +1, quarterbacks +0.25. RBs climb versus full PPR. Chase and Puka still go early, just not as automatic 1.01s. The Board next door is full PPR. Standard is zero. Sort by position with the chips. Check a name when they are off the board in your room. Crossed-off names stay on the list until you refresh.</p>
+    <p class="note">Half-PPR is the format most rooms actually run. We start from the same 15-board PPR mean as The Board, then apply half the Standard tax: running backs −2.25 ranks, receivers +1.5, tight ends +1, quarterbacks +0.25. RBs climb versus full PPR. Chase and Puka still go early, just not as automatic 1.01s. The Board next door is full PPR. Standard is zero. Sort by position with the chips. Check a name when they are off the board in your room. Crossed-off names stay on the list until you refresh.</p>
     {rank_search_bar(classic_chips)}
     <div class="panel">{rank_table(classic, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True, draft_check=True)}</div>
     {value_bars(classic, 12, "#c8102e", "Classic value graph")}
@@ -2645,7 +2630,7 @@ def main():
     dst_body = f"""
     <p class="kicker">2026 Redraft · DST</p>
     <h1>Top Defenses</h1>
-    <p class="note">The skill boards skip kickers and DST. This is the DST mean of eight boards: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, Pat Fitzmaurice, STACKED (Aug 31), Draft Sharks, and CBS (top 10, Aug 30). Unranked on a board is a skip. Houston is 1.01. Seattle and Denver sit right behind. Sort with Find a player.</p>
+    <p class="note">The skill boards skip kickers and DST. This is the DST mean of nine boards: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, Pat Fitzmaurice, STACKED (Aug 31), Draft Sharks, CBS (top 10, Aug 30), and Field Yates (Aug 31). Unranked on a board is a skip. Houston is 1.01. Seattle and Denver sit right behind. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(dst, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(DST_SOURCES, heading="Boards in This Aggregate")}
@@ -2665,7 +2650,7 @@ def main():
     k_body = f"""
     <p class="kicker">2026 Redraft · K</p>
     <h1>Top Kickers</h1>
-    <p class="note">The kicking board. Mean of five boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks (Aug 31), and RotoWire (Aug 27). Unranked on a board is a skip. Brandon Aubrey is 1.01. Fairbairn and Dicker follow. Trey Smack (GB) is on the list. Sort with Find a player.</p>
+    <p class="note">The kicking board. Mean of six boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks (Aug 31), RotoWire (Aug 27), and Field Yates (Aug 31). Unranked on a board is a skip. Brandon Aubrey is 1.01. Fairbairn and Dicker follow. Trey Smack (GB) is on the list. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(kickers, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(K_SOURCES, heading="Boards in This Aggregate")}
