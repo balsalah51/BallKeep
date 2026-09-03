@@ -209,8 +209,8 @@ def test_ppr_extra_boards():
     from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps
     spine = ["Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson"]
     maps = extra_ppr_maps(spine)
-    assert len(PPR_EXTRA_SOURCES) == 10
-    assert len(maps) == 10
+    assert len(PPR_EXTRA_SOURCES) == 12
+    assert len(maps) == 12
     for label, _url, _note in PPR_EXTRA_SOURCES:
         assert label in maps
         assert maps[label]

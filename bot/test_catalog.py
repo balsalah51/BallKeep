@@ -299,7 +299,7 @@ def main():
     assert "this desk" not in home
     assert "\u2014" not in home
     assert "On this board" in home
-    assert "32 boards mashed" in home
+    assert "33 boards mashed" in home
     hc = html_of("hot-n-cold.html")
     assert "this desk" not in hc
     assert "\u2014" not in hc
@@ -354,7 +354,7 @@ def main():
     assert "2026 Redraft · PPR" in board_html
     assert "<h1>The Board</h1>" in board_html
     assert "redraft ppr" in board_html.lower()
-    assert "13 boards" in board_html
+    assert "15 boards" in board_html
     assert "Derek Brown" in board_html
     assert "4for4" in board_html
     dst_html = html_of("defenses.html")
