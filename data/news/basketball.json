@@ -1,7 +1,7 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-02T23:23:30Z",
-  "fresh": 174,
+  "updated": "2026-09-03T00:36:35Z",
+  "fresh": 143,
   "stories": [
     {
       "id": "kawhi-leonard-clearly-worried-investigation-trade-raptors-0e317eab",
@@ -724,12 +724,19 @@
       "slug": "proposed-steph-curry-hornets-blockbuster-trade-would-shock-d6d9e1bb",
       "sport": "basketball",
       "headline": "Warriors predicted to trade for $364M 10x All-Star, ex-Lakers NBA champion to pair with Steph Curry",
-      "blurb": "Spurs predicted to trade De'Aaron Fox for $118M generational 9-time All-Star, Finals champion sportingnews.com",
-      "summary": "Spurs predicted to trade De'Aaron Fox for $118M generational 9-time All-Star, Finals champion sportingnews.com Proposed Steph Curry-to-Hornets blockbuster trade would shock the NBA Hoops Habit Jrue Holiday Proposed to Join Miami Heat in Blockbuster 3-Team NBA Trade heavy.com Aggregated from sportingnews.com, Hoops Habit, heavy.com, Yahoo Sports, The Big Lead and 1 more.",
+      "blurb": "Lakers predicted to trade Jaden Hardy to Clippers for $229M sniper, NBA Finals champion sports.yahoo.com",
+      "summary": "Lakers predicted to trade Jaden Hardy to Clippers for $229M sniper, NBA Finals champion sports.yahoo.com Proposed Steph Curry-to-Hornets blockbuster trade would shock the NBA Hoops Habit Jrue Holiday Proposed to Join Miami Heat in Blockbuster 3-Team NBA Trade heavy.com Aggregated from sports.yahoo.com, Hoops Habit, heavy.com, Yahoo Sports, The Big Lead and 2 more.",
       "category": "injury",
       "published": "2025-10-03T07:00:00Z",
       "updated": "2026-09-01T18:14:56Z",
       "players": [
+        {
+          "key": "jaden hardy",
+          "name": "Jaden Hardy",
+          "slug": "jaden-hardy",
+          "pos": "SG",
+          "team": "DAL"
+        },
         {
           "key": "deaaron fox",
           "name": "De'Aaron Fox",
@@ -764,13 +771,6 @@
           "slug": "dalton-knecht",
           "pos": "SF",
           "team": "LAL"
-        },
-        {
-          "key": "jaden hardy",
-          "name": "Jaden Hardy",
-          "slug": "jaden-hardy",
-          "pos": "SG",
-          "team": "DAL"
         },
         {
           "key": "giannis antetokounmpo",
@@ -1100,6 +1100,67 @@
           "kind": "article",
           "snippet": "Spurs predicted to trade De'Aaron Fox for $118M generational 9-time All-Star, Finals champion sportingnews.com",
           "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Lakers predicted to trade Jaden Hardy to Clippers for $229M sniper, NBA Finals champion",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcDRfVW5aYzlMWFpIOS1LMWFXODFIZUJkZ1ZFNUlTb1J6eUFidWk0bmRFaUtWVkt5UTZYc3Z5dTJlRG9Bd0JKTUt0T2lFbFNoRGcxOEpxcWdXVUtfNm8xLWpSNU1hX0I5M3UtVUpIdWFGRzVoczVjV3dSYXV4M19CQ1dlSktfRmJNQkl3?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Lakers predicted to trade Jaden Hardy to Clippers for $229M sniper, NBA Finals champion sports.yahoo.com",
+          "published": "Mon, 31 Aug 2026 12:47:51 GMT"
+        }
+      ]
+    },
+    {
+      "id": "brandon-ingram-trade-expected-become-official-soon-7e79438e",
+      "slug": "brandon-ingram-trade-expected-become-official-soon-7e79438e",
+      "sport": "basketball",
+      "headline": "What's next after NBA's Clippers punishment? Five lingering questions about Kawhi Leonard trade, appeals, more",
+      "blurb": "The Kawhi trade to the Raptors should go through, but the Clippers' appeals process is much less clear",
+      "summary": "The Kawhi trade to the Raptors should go through, but the Clippers' appeals process is much less clear Unpacking the ramifications for the Clippers and Kawhi Leonard punishments, and how it pertains to the Sixers. The NBA has concluded its investigation into salary cap circumvention involving Kawhi Leonard and the Clippers, and the trade sending Ingram (heel) to Los Angeles is expected to be finalized in the coming days, Shams Charania of ESPN reports. Aggregated from CBS NBA, SB Nation, RotoWire NBA.",
+      "category": "trade",
+      "published": "2026-09-02T22:26:16Z",
+      "updated": "2026-09-03T00:11:42Z",
+      "players": [
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        },
+        {
+          "key": "brandon ingram",
+          "name": "Brandon Ingram",
+          "slug": "brandon-ingram",
+          "pos": "SF",
+          "team": "TOR"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Brandon Ingram: Trade expected to become official soon",
+          "url": "https://www.rotowire.com//basketball/player/brandon-ingram-3861",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "The NBA has concluded its investigation into salary cap circumvention involving Kawhi Leonard and the Clippers, and the trade sending Ingram (heel) to Los Angeles is expected to be finalized in the coming days, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis ",
+          "published": "Wed, 02 Sep 2026 3:44:00 PM PDT"
+        },
+        {
+          "title": "What's next after NBA's Clippers punishment? Five lingering questions about Kawhi Leonard trade, appeals, more",
+          "url": "https://www.cbssports.com/nba/news/whats-next-kawhi-leonard-clippers-five-lingering-questions/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "The Kawhi trade to the Raptors should go through, but the Clippers' appeals process is much less clear",
+          "published": "Thu, 03 Sep 2026 00:11:42 +0000"
+        },
+        {
+          "title": "The Kawhi Leonard Clippers punishment and how it impacts the Sixers",
+          "url": "https://sports.yahoo.com/articles/kawhi-leonard-clippers-punishment-impacts-222616799.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Unpacking the ramifications for the Clippers and Kawhi Leonard punishments, and how it pertains to the Sixers.",
+          "published": "Wed, 02 Sep 2026 22:26:16 +0000"
         }
       ]
     },
@@ -1214,6 +1275,76 @@
           "kind": "article",
           "snippet": "Final Injury Report for Cavaliers-Hornets: Will Evan Mobley, Coby White Play? Athlon Sports",
           "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "clippers-vehemently-reject-s-findings-kawhi-leonard-investigation-18d83b9d",
+      "slug": "clippers-vehemently-reject-s-findings-kawhi-leonard-investigation-18d83b9d",
+      "sport": "basketball",
+      "headline": "Clippers 'vehemently reject' NBA's findings in Kawhi Leonard investigation, vow to 'fight' punishments",
+      "blurb": "The NBA hit the Clippers with historic penalties, but Kawhi Leonard's punishment was comparatively minor.",
+      "summary": "The NBA hit the Clippers with historic penalties, but Kawhi Leonard's punishment was comparatively minor. The NBA hammered the Clippers with penalties following an investigation into salary cap circumvention Kawhi says he had “no knowledge of any intent on anyone's part to circumvent the salary cap” Aggregated from USA TODAY Sports, CBS NBA, SB Nation, USA Today, bleacherreport.com.",
+      "category": "trade",
+      "published": "2026-09-02T20:48:00Z",
+      "updated": "2026-09-03T00:13:02Z",
+      "players": [
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Clippers 'vehemently reject' NBA's findings in Kawhi Leonard investigation, vow to 'fight' punishments",
+          "url": "https://www.cbssports.com/nba/news/clippers-statement-nba-investigation-kawhi-leonard-salary-cap-circumvention/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "The NBA hammered the Clippers with penalties following an investigation into salary cap circumvention",
+          "published": "Wed, 02 Sep 2026 22:52:11 +0000"
+        },
+        {
+          "title": "Kawhi Leonard fined, not suspended, while Clippers lose five picks, NBA investigation concludes",
+          "url": "https://sports.yahoo.com/articles/kawhi-leonard-fined-not-suspended-205004616.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Kawhi says he had “no knowledge of any intent on anyone's part to circumvent the salary cap”",
+          "published": "Wed, 02 Sep 2026 20:50:04 +0000"
+        },
+        {
+          "title": "Will the Kawhi Leonard Clippers-Raptors trade go ahead with NBA investigation ending?",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSlFJUWxENUJRb3V3ejFwVmsybTFlaE1hYzVWR0xjVmFnM3FzWm1sRXJ0cmo0T0lhVnpPaWlHWnZxVF9wYndka2VWZmlQOW1LY2c1SFdMTU5VdEl6dWdCa0o5dW11cHB4VkR2Rno5Q19PNkN1OUJQZVd2bHV0TTVPbWloRE5VMXBRS0F3bEZ3VG82MldXd0FCanRWdVVxSTFDQXFXZlhPMG5PMGtpMzI0NmZjeTR5NFVhVVpJWVNJVWUwUkNDU3c?oc=5",
+          "publisher": "USA Today",
+          "kind": "article",
+          "snippet": "Will the Kawhi Leonard Clippers-Raptors trade go ahead with NBA investigation ending? USA Today",
+          "published": "Wed, 02 Sep 2026 20:48:00 GMT"
+        },
+        {
+          "title": "Kawhi Leonard gets best-case scenario, leaves Clippers in the dust after NBA investigation",
+          "url": "https://www.cbssports.com/nba/news/kawhi-leonard-punishment-clippers-nba-investigation/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "Leonard gets to flee to Toronto mostly unscathed, while the Clippers are left to pick up the pieces",
+          "published": "Wed, 02 Sep 2026 23:58:55 +0000"
+        },
+        {
+          "title": "New Kawhi Leonard Rumors on Clippers-Raptors Trade After NBA Concludes Investigation",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZE53WGxTNnQ5SUt3MHJHb3kxZVp4YndQV2h6dGJSUE9LRmQ3WkhfbjNHZWNvODJHLU03MEF4akZ2LWs3YTFhNlYydS1MNjVPNzdZdFJzc0xqR1NSWmxiMVlCYWlvcExleERQMnpEblI3WTJWOHl3UFIwYlV2UGFCLTdYWU9kc2NpWjRqc2R2eXQ2R2VlNldSMDJkTndLeWpadVdscERrb0l4cENOSGZZX0d1R05aUk4wTVRabWwzZnA4V2ds?oc=5",
+          "publisher": "bleacherreport.com",
+          "kind": "article",
+          "snippet": "New Kawhi Leonard Rumors on Clippers-Raptors Trade After NBA Concludes Investigation bleacherreport.com",
+          "published": "Wed, 02 Sep 2026 23:13:48 GMT"
+        },
+        {
+          "title": "Did Kawhi Leonard get off light in the NBA's Clippers crackdown? | Opinion",
+          "url": "https://sports.yahoo.com/articles/did-kawhi-leonard-off-light-001302523.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "The NBA hit the Clippers with historic penalties, but Kawhi Leonard's punishment was comparatively minor. Here's why it matters.",
+          "published": "Thu, 03 Sep 2026 00:13:02 +0000"
         }
       ]
     },
@@ -1529,140 +1660,6 @@
       ]
     },
     {
-      "id": "brandon-ingram-trade-expected-become-official-soon-7e79438e",
-      "slug": "brandon-ingram-trade-expected-become-official-soon-7e79438e",
-      "sport": "basketball",
-      "headline": "Brandon Ingram: Trade expected to become official soon",
-      "blurb": "The NBA has concluded its investigation into salary cap circumvention involving Kawhi Leonard and the Clippers, and the trade sending Ingram (heel) to Los Angeles is expected…",
-      "summary": "Brandon Ingram and Kawhi Leonard: The NBA has concluded its investigation into salary cap circumvention involving Kawhi Leonard and the Clippers, and the trade sending Ingram (heel) to Los Angeles is expected to be finalized in the coming days, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
-      "category": "trade",
-      "published": "2026-09-02T23:23:30Z",
-      "updated": "2026-09-02T23:23:30Z",
-      "players": [
-        {
-          "key": "brandon ingram",
-          "name": "Brandon Ingram",
-          "slug": "brandon-ingram",
-          "pos": "SF",
-          "team": "TOR"
-        },
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Brandon Ingram: Trade expected to become official soon",
-          "url": "https://www.rotowire.com//basketball/player/brandon-ingram-3861",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "The NBA has concluded its investigation into salary cap circumvention involving Kawhi Leonard and the Clippers, and the trade sending Ingram (heel) to Los Angeles is expected to be finalized in the coming days, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis ",
-          "published": "Wed, 02 Sep 2026 3:44:00 PM PDT"
-        }
-      ]
-    },
-    {
-      "id": "trade-rumors-stephen-curry-nikola-jokic-extensions-set-1219f277",
-      "slug": "trade-rumors-stephen-curry-nikola-jokic-extensions-set-1219f277",
-      "sport": "basketball",
-      "headline": "NBA Trade Rumors: Warriors’ Good Stephen Curry Sign, Jonathan Kuminga Agent & More",
-      "blurb": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More heavy.com",
-      "summary": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More heavy.com NBA Trade Machine Rankings: Stephen Curry, Anthony Davis and more HoopsHype NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com Aggregated from heavy.com, HoopsHype.",
-      "category": "trade",
-      "published": "2026-07-30T07:00:00Z",
-      "updated": "2026-09-01T13:00:08Z",
-      "players": [
-        {
-          "key": "stephen curry",
-          "name": "Stephen Curry",
-          "slug": "stephen-curry",
-          "pos": "PG",
-          "team": "GSW"
-        },
-        {
-          "key": "nikola jokic",
-          "name": "Nikola Jokic",
-          "slug": "nikola-jokic",
-          "pos": "C",
-          "team": "DEN"
-        },
-        {
-          "key": "jonathan kuminga",
-          "name": "Jonathan Kuminga",
-          "slug": "jonathan-kuminga",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        },
-        {
-          "key": "anthony davis",
-          "name": "Anthony Davis",
-          "slug": "anthony-davis",
-          "pos": "C",
-          "team": "DAL"
-        },
-        {
-          "key": "jimmy butler",
-          "name": "Jimmy Butler",
-          "slug": "jimmy-butler",
-          "pos": "SF",
-          "team": "GSW"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQa1NBdmhJUjlpM0NuVnVMT2Y4TmliakFONkxjVE1EZ0w1NV9sLVZVR1RudFlHQTM1MG5IOFozSlRDbFRBQ0Q0dHJKWmR6MTc5SXdNY3pwSG1EMzV1bHdiMVhvQlVaNUpiRTRrd2Zod1E2MEJWdDdOcDlYVDJmUm5OWVl4SmN3TldiWjY1QjRxT3NJNzAyWk8xcWtyaWN0d3ZFVnRNSnRTb1huNEJKVU1oYzA1N1M3Nm5fTThWSGVsR3JZRnNEYzJV?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More heavy.com",
-          "published": "Sat, 29 Aug 2026 13:01:31 GMT"
-        },
-        {
-          "title": "NBA Trade Machine Rankings: Stephen Curry, Anthony Davis and more",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZV9Camg4d1NuVG5NZVYwRlNjQ3YzeWw4Q1dvQkxLNjdabFhqaHhBYXpmQm5ScEZ6Qmg1ZlA2bVRyRnlCOWFkZjlGY1ZSWXFob05WSmFOSm5PTUltSlltWlVMVEpJakZQWHRyd3lHWlp6SnphSVFlOW1kUUkyb2x3MUp4TGE5eTVMT1JKanp3Q2xxYWhTcXppcDdSOWNTRkpFTndOdEhHNTc2X3BRU3FtTEpoT0ZiRmVnSDNCNnZGZDVQR0p5RzZaRW1QZw?oc=5",
-          "publisher": "HoopsHype",
-          "kind": "article",
-          "snippet": "NBA Trade Machine Rankings: Stephen Curry, Anthony Davis and more HoopsHype",
-          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQVVHRHM3Zng0eWtBTnY2R25VWXRQYkxyWlhlZnRvOHhFcFFVeUFJRU91TFZObTdVZ2kzR19fdFA3dEhQcW04RDB5d003bkppWVh0SU9CUjhzNWhXRmNOaFhhT2xWTVpLSmQwNEV6Y1Y1aGViWjl5UlQ5WkdVTU01V09UOHkxd2pFVElRRGRjSXl0cDNsdFhibEVjWklWNEpBbmJTSXpOMGJ6MjRBakhNa2ZZM0JRZDQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com",
-          "published": "Fri, 28 Aug 2026 19:26:41 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Warriors’ Good Stephen Curry Sign, Jonathan Kuminga Agent & More",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZzhBdDdOa0NZaWF3TmtNZmxUa3E0S3pGZGxWc3A3Z1pfajVraDFsWnY2dTR3SUdrREFyNWJ6aEhsbGJqQ2JfN2hzZE91SlBUR2NUcm45Vmd2S3psdG9WMTVXTTJFTXJ4TTY1eWc5Wkd0ajgwRnZoYUk1SEFpd1ljcEhEYVFzYl9leXNIVUdMTEhMSE5lcUNfYmRJRXBQeHhKQXBYOGFobnBDYTR5ZFhXQVBTRjFKWUcxUWFZajFGSDV6Q1NyTUkxeDRn?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Warriors’ Good Stephen Curry Sign, Jonathan Kuminga Agent & More heavy.com",
-          "published": "Tue, 01 Sep 2026 13:00:08 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Jonathan Kuminga-Lakers, Kawhi Leonard & the New Big Board",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQjI1WkE5WXBpWUJENlhzbml6WENFRVduT0tCSk5QZGxqdUNMcnZ1TmE5Q1hlOWVtNVhpQTRFejQ3ZW5jQkNaMVBYRUhqa3R3UWZoRHI1eDRJeERPdGdMZXNRYmltNlpaa0pUcnBaLTQ0OWwtZi1zMTN2TWd2Z0ZESjhfM0JzZ0JlUDVCOUkySTE?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Jonathan Kuminga-Lakers, Kawhi Leonard & the New Big Board heavy.com",
-          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "proposed-trade-lands-lakers-6-10-cheat-code-5cc17bdf",
       "slug": "proposed-trade-lands-lakers-6-10-cheat-code-5cc17bdf",
       "sport": "basketball",
@@ -1800,6 +1797,103 @@
           "kind": "article",
           "snippet": "Lakers Proposed to Trade Dalton Knecht for High Upside 3-and-D Wing Yahoo Sports",
           "published": "Tue, 01 Sep 2026 13:59:24 GMT"
+        }
+      ]
+    },
+    {
+      "id": "trade-rumors-stephen-curry-nikola-jokic-extensions-set-1219f277",
+      "slug": "trade-rumors-stephen-curry-nikola-jokic-extensions-set-1219f277",
+      "sport": "basketball",
+      "headline": "NBA Trade Rumors: Warriors’ Good Stephen Curry Sign, Jonathan Kuminga Agent & More",
+      "blurb": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More heavy.com",
+      "summary": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More heavy.com NBA Trade Machine Rankings: Stephen Curry, Anthony Davis and more HoopsHype NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com Aggregated from heavy.com, HoopsHype.",
+      "category": "trade",
+      "published": "2026-07-30T07:00:00Z",
+      "updated": "2026-09-01T13:00:08Z",
+      "players": [
+        {
+          "key": "stephen curry",
+          "name": "Stephen Curry",
+          "slug": "stephen-curry",
+          "pos": "PG",
+          "team": "GSW"
+        },
+        {
+          "key": "nikola jokic",
+          "name": "Nikola Jokic",
+          "slug": "nikola-jokic",
+          "pos": "C",
+          "team": "DEN"
+        },
+        {
+          "key": "jonathan kuminga",
+          "name": "Jonathan Kuminga",
+          "slug": "jonathan-kuminga",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        },
+        {
+          "key": "anthony davis",
+          "name": "Anthony Davis",
+          "slug": "anthony-davis",
+          "pos": "C",
+          "team": "DAL"
+        },
+        {
+          "key": "jimmy butler",
+          "name": "Jimmy Butler",
+          "slug": "jimmy-butler",
+          "pos": "SF",
+          "team": "GSW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQa1NBdmhJUjlpM0NuVnVMT2Y4TmliakFONkxjVE1EZ0w1NV9sLVZVR1RudFlHQTM1MG5IOFozSlRDbFRBQ0Q0dHJKWmR6MTc5SXdNY3pwSG1EMzV1bHdiMVhvQlVaNUpiRTRrd2Zod1E2MEJWdDdOcDlYVDJmUm5OWVl4SmN3TldiWjY1QjRxT3NJNzAyWk8xcWtyaWN0d3ZFVnRNSnRTb1huNEJKVU1oYzA1N1M3Nm5fTThWSGVsR3JZRnNEYzJV?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Stephen Curry, Nikola Jokic Extensions Will Set Market & More heavy.com",
+          "published": "Sat, 29 Aug 2026 13:01:31 GMT"
+        },
+        {
+          "title": "NBA Trade Machine Rankings: Stephen Curry, Anthony Davis and more",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZV9Camg4d1NuVG5NZVYwRlNjQ3YzeWw4Q1dvQkxLNjdabFhqaHhBYXpmQm5ScEZ6Qmg1ZlA2bVRyRnlCOWFkZjlGY1ZSWXFob05WSmFOSm5PTUltSlltWlVMVEpJakZQWHRyd3lHWlp6SnphSVFlOW1kUUkyb2x3MUp4TGE5eTVMT1JKanp3Q2xxYWhTcXppcDdSOWNTRkpFTndOdEhHNTc2X3BRU3FtTEpoT0ZiRmVnSDNCNnZGZDVQR0p5RzZaRW1QZw?oc=5",
+          "publisher": "HoopsHype",
+          "kind": "article",
+          "snippet": "NBA Trade Machine Rankings: Stephen Curry, Anthony Davis and more HoopsHype",
+          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQVVHRHM3Zng0eWtBTnY2R25VWXRQYkxyWlhlZnRvOHhFcFFVeUFJRU91TFZObTdVZ2kzR19fdFA3dEhQcW04RDB5d003bkppWVh0SU9CUjhzNWhXRmNOaFhhT2xWTVpLSmQwNEV6Y1Y1aGViWjl5UlQ5WkdVTU01V09UOHkxd2pFVElRRGRjSXl0cDNsdFhibEVjWklWNEpBbmJTSXpOMGJ6MjRBakhNa2ZZM0JRZDQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Wait-and-See on Anthony Davis, Jimmy Butler & More heavy.com",
+          "published": "Fri, 28 Aug 2026 19:26:41 GMT"
+        },
+        {
+          "title": "NBA Trade Rumors: Warriors’ Good Stephen Curry Sign, Jonathan Kuminga Agent & More",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZzhBdDdOa0NZaWF3TmtNZmxUa3E0S3pGZGxWc3A3Z1pfajVraDFsWnY2dTR3SUdrREFyNWJ6aEhsbGJqQ2JfN2hzZE91SlBUR2NUcm45Vmd2S3psdG9WMTVXTTJFTXJ4TTY1eWc5Wkd0ajgwRnZoYUk1SEFpd1ljcEhEYVFzYl9leXNIVUdMTEhMSE5lcUNfYmRJRXBQeHhKQXBYOGFobnBDYTR5ZFhXQVBTRjFKWUcxUWFZajFGSDV6Q1NyTUkxeDRn?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Warriors’ Good Stephen Curry Sign, Jonathan Kuminga Agent & More heavy.com",
+          "published": "Tue, 01 Sep 2026 13:00:08 GMT"
+        },
+        {
+          "title": "NBA Trade Rumors: Jonathan Kuminga-Lakers, Kawhi Leonard & the New Big Board",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQjI1WkE5WXBpWUJENlhzbml6WENFRVduT0tCSk5QZGxqdUNMcnZ1TmE5Q1hlOWVtNVhpQTRFejQ3ZW5jQkNaMVBYRUhqa3R3UWZoRHI1eDRJeERPdGdMZXNRYmltNlpaa0pUcnBaLTQ0OWwtZi1zMTN2TWd2Z0ZESjhfM0JzZ0JlUDVCOUkySTE?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Jonathan Kuminga-Lakers, Kawhi Leonard & the New Big Board heavy.com",
+          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -2027,52 +2121,6 @@
       ]
     },
     {
-      "id": "clippers-vehemently-reject-s-findings-kawhi-leonard-investigation-18d83b9d",
-      "slug": "clippers-vehemently-reject-s-findings-kawhi-leonard-investigation-18d83b9d",
-      "sport": "basketball",
-      "headline": "Clippers 'vehemently reject' NBA's findings in Kawhi Leonard investigation, vow to 'fight' punishments",
-      "blurb": "The NBA hammered the Clippers with penalties following an investigation into salary cap circumvention",
-      "summary": "Kawhi Leonard: The NBA hammered the Clippers with penalties following an investigation into salary cap circumvention Kawhi says he had “no knowledge of any intent on anyone's part to circumvent the salary cap” Will the Kawhi Leonard Clippers-Raptors trade go ahead with NBA investigation ending? Aggregated from CBS NBA, SB Nation, USA Today.",
-      "category": "trade",
-      "published": "2026-09-02T20:48:00Z",
-      "updated": "2026-09-02T22:52:11Z",
-      "players": [
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Clippers 'vehemently reject' NBA's findings in Kawhi Leonard investigation, vow to 'fight' punishments",
-          "url": "https://www.cbssports.com/nba/news/clippers-statement-nba-investigation-kawhi-leonard-salary-cap-circumvention/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "The NBA hammered the Clippers with penalties following an investigation into salary cap circumvention",
-          "published": "Wed, 02 Sep 2026 22:52:11 +0000"
-        },
-        {
-          "title": "Kawhi Leonard fined, not suspended, while Clippers lose five picks, NBA investigation concludes",
-          "url": "https://sports.yahoo.com/articles/kawhi-leonard-fined-not-suspended-205004616.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Kawhi says he had “no knowledge of any intent on anyone's part to circumvent the salary cap”",
-          "published": "Wed, 02 Sep 2026 20:50:04 +0000"
-        },
-        {
-          "title": "Will the Kawhi Leonard Clippers-Raptors trade go ahead with NBA investigation ending?",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPSlFJUWxENUJRb3V3ejFwVmsybTFlaE1hYzVWR0xjVmFnM3FzWm1sRXJ0cmo0T0lhVnpPaWlHWnZxVF9wYndka2VWZmlQOW1LY2c1SFdMTU5VdEl6dWdCa0o5dW11cHB4VkR2Rno5Q19PNkN1OUJQZVd2bHV0TTVPbWloRE5VMXBRS0F3bEZ3VG82MldXd0FCanRWdVVxSTFDQXFXZlhPMG5PMGtpMzI0NmZjeTR5NFVhVVpJWVNJVWUwUkNDU3c?oc=5",
-          "publisher": "USA Today",
-          "kind": "article",
-          "snippet": "Will the Kawhi Leonard Clippers-Raptors trade go ahead with NBA investigation ending? USA Today",
-          "published": "Wed, 02 Sep 2026 20:48:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "proposed-blockbuster-trade-sends-jamal-murray-raptors-4-380962f3",
       "slug": "proposed-blockbuster-trade-sends-jamal-murray-raptors-4-380962f3",
       "sport": "basketball",
@@ -2249,6 +2297,51 @@
           "kind": "article",
           "snippet": "Golden State Warriors star Draymond Green explained why he didn't appreciate Aaron Turner's recent comments on \"The Kevin O'Connor Show.\"",
           "published": "Wed, 02 Sep 2026 15:51:58 +0000"
+        }
+      ]
+    },
+    {
+      "id": "anthony-edwards-pitch-jonathan-kuminga-join-timberwolves-according-c993734c",
+      "slug": "anthony-edwards-pitch-jonathan-kuminga-join-timberwolves-according-c993734c",
+      "sport": "basketball",
+      "headline": "Anthony Edwards’ focus on defense convinced Jonathan Kuminga to join Timberwolves",
+      "blurb": "Anthony Edwards’ focus on defense convinced Jonathan Kuminga to join Timberwolves - The Athletic The New York Times",
+      "summary": "Anthony Edwards’ focus on defense convinced Jonathan Kuminga to join Timberwolves - The Athletic The New York Times Anthony Edwards’ pitch to Jonathan Kuminga to join the Timberwolves, according to Aaron Turner: “I want you to come here and I want you to do everything you do and do it loudly. I feel where you’re coming from. Aggregated from The New York Times, x.com.",
+      "category": "trade",
+      "published": "2026-08-28T12:13:39Z",
+      "updated": "2026-09-01T17:22:19Z",
+      "players": [
+        {
+          "key": "jonathan kuminga",
+          "name": "Jonathan Kuminga",
+          "slug": "jonathan-kuminga",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "anthony edwards",
+          "name": "Anthony Edwards",
+          "slug": "anthony-edwards",
+          "pos": "SG",
+          "team": "MIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Anthony Edwards’ pitch to Jonathan Kuminga to join the Timberwolves, according to Aaron Turner: “I want you to come here and I want you to do everything you do and do it loudly. I feel where you’re coming from. I can understand what you’ve dealt with throu",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9GRzJ6aGoxT2NTdVBTd0k4V0xIZGdySG1JalZKVVkwV3B5TDRKRnZCU3B3QmwxMUVISmFZbFd4d0lzMzVfc0dCWWVsbVpPSm45ZnhkX0U1UU11LWY0TWVxV2R0UQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Anthony Edwards’ pitch to Jonathan Kuminga to join the Timberwolves, according to Aaron Turner: “I want you to come here and I want you to do everything you do and do it loudly. I feel where you’re coming from. I can understand what you’ve dealt with throu x.com",
+          "published": "Tue, 01 Sep 2026 17:22:19 GMT"
+        },
+        {
+          "title": "Anthony Edwards’ focus on defense convinced Jonathan Kuminga to join Timberwolves",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMmxEX0JBNUhxclZEV0xIbUZsX0hRRlkwNlgzeF9sWU95OENsUUZyODV6cFdDUm04RHY3ZThFcE9SMW5WODBjalNjVDdRVU1ieWlaV0gtUDNpVkZ3SVhvMUhMQjJDYzZ3Y0V4bjZibGVaTGdseXNULVNvQmRzOVBPVjl4Y3hmcWRqUVlTekx1Z09KcWlaUS00UkhPVG1sdXM?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Anthony Edwards’ focus on defense convinced Jonathan Kuminga to join Timberwolves - The Athletic The New York Times",
+          "published": "Fri, 28 Aug 2026 12:13:39 GMT"
         }
       ]
     },
@@ -2606,43 +2699,6 @@
       ]
     },
     {
-      "id": "anthony-edwards-pitch-jonathan-kuminga-join-timberwolves-according-c993734c",
-      "slug": "anthony-edwards-pitch-jonathan-kuminga-join-timberwolves-according-c993734c",
-      "sport": "basketball",
-      "headline": "Anthony Edwards’ pitch to Jonathan Kuminga to join the Timberwolves, according to Aaron Turner: “I want you to come here and I want you…",
-      "blurb": "Anthony Edwards’ pitch to Jonathan Kuminga to join the Timberwolves, according to Aaron Turner: “I want you to come here and I want you to do everything you do and do it loudly.",
-      "summary": "Anthony Edwards’ pitch to Jonathan Kuminga to join the Timberwolves, according to Aaron Turner: “I want you to come here and I want you to do everything you do and do it loudly. I feel where you’re coming from. I can understand what you’ve dealt with throu x.com Board reading of x.com.",
-      "category": "trade",
-      "published": "2026-09-01T17:22:19Z",
-      "updated": "2026-09-01T17:22:19Z",
-      "players": [
-        {
-          "key": "jonathan kuminga",
-          "name": "Jonathan Kuminga",
-          "slug": "jonathan-kuminga",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "anthony edwards",
-          "name": "Anthony Edwards",
-          "slug": "anthony-edwards",
-          "pos": "SG",
-          "team": "MIN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Anthony Edwards’ pitch to Jonathan Kuminga to join the Timberwolves, according to Aaron Turner: “I want you to come here and I want you to do everything you do and do it loudly. I feel where you’re coming from. I can understand what you’ve dealt with throu",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9GRzJ6aGoxT2NTdVBTd0k4V0xIZGdySG1JalZKVVkwV3B5TDRKRnZCU3B3QmwxMUVISmFZbFd4d0lzMzVfc0dCWWVsbVpPSm45ZnhkX0U1UU11LWY0TWVxV2R0UQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Anthony Edwards’ pitch to Jonathan Kuminga to join the Timberwolves, according to Aaron Turner: “I want you to come here and I want you to do everything you do and do it loudly. I feel where you’re coming from. I can understand what you’ve dealt with throu x.com",
-          "published": "Tue, 01 Sep 2026 17:22:19 GMT"
-        }
-      ]
-    },
-    {
       "id": "jalen-duren-wants-something-around-40m-year-pistons-13012858",
       "slug": "jalen-duren-wants-something-around-40m-year-pistons-13012858",
       "sport": "basketball",
@@ -2917,36 +2973,6 @@
       ]
     },
     {
-      "id": "nikola-jokic-battling-illness-serbia-40920fed",
-      "slug": "nikola-jokic-battling-illness-serbia-40920fed",
-      "sport": "basketball",
-      "headline": "Nikola Jokic: Battling illness with Serbia",
-      "blurb": "Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA…",
-      "summary": "Nikola Jokic: Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA World Cup qualifier. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
-      "category": "injury",
-      "published": "2026-09-01T20:25:37Z",
-      "updated": "2026-09-01T20:25:37Z",
-      "players": [
-        {
-          "key": "nikola jokic",
-          "name": "Nikola Jokic",
-          "slug": "nikola-jokic",
-          "pos": "C",
-          "team": "DEN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Nikola Jokic: Battling illness with Serbia",
-          "url": "https://www.rotowire.com//basketball/player/nikola-jokic-3612",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA World Cup qualifier. Visit RotoWire.com for more analysis on this update.",
-          "published": "Tue, 01 Sep 2026 1:18:00 PM PDT"
-        }
-      ]
-    },
-    {
       "id": "sec-looking-kawhi-leonard-s-endorsement-deal-daktronics-cdb69d4f",
       "slug": "sec-looking-kawhi-leonard-s-endorsement-deal-daktronics-cdb69d4f",
       "sport": "basketball",
@@ -2981,6 +3007,36 @@
           "kind": "article",
           "snippet": "As the NBA world awaits the findings of the investigation into Kawhi Leonard and the Los Angeles Clippers, another wrinkle may delay the process.",
           "published": "Wed, 02 Sep 2026 18:57:41 +0000"
+        }
+      ]
+    },
+    {
+      "id": "nikola-jokic-battling-illness-serbia-40920fed",
+      "slug": "nikola-jokic-battling-illness-serbia-40920fed",
+      "sport": "basketball",
+      "headline": "Nikola Jokic: Battling illness with Serbia",
+      "blurb": "Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA…",
+      "summary": "Nikola Jokic: Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA World Cup qualifier. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
+      "category": "injury",
+      "published": "2026-09-01T20:25:37Z",
+      "updated": "2026-09-01T20:25:37Z",
+      "players": [
+        {
+          "key": "nikola jokic",
+          "name": "Nikola Jokic",
+          "slug": "nikola-jokic",
+          "pos": "C",
+          "team": "DEN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nikola Jokic: Battling illness with Serbia",
+          "url": "https://www.rotowire.com//basketball/player/nikola-jokic-3612",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA World Cup qualifier. Visit RotoWire.com for more analysis on this update.",
+          "published": "Tue, 01 Sep 2026 1:18:00 PM PDT"
         }
       ]
     },
@@ -7534,8 +7590,8 @@
       "slug": "final-injury-timberwolves-trail-blazers-anthony-edwards-scoot-9029884c",
       "sport": "basketball",
       "headline": "Scoot Henderson injury update: Trail Blazers rookie exits Summer League debut with shoulder injury",
-      "blurb": "Trail Blazers Announce 2026 NBA Summer League Roster NBA.com",
-      "summary": "Scoot Henderson, Bradley Beal, P.J. Washington, Anthony Edwards, LaMelo Ball, Ayo Dosunmu, Isaiah Hartenstein, Jalen Johnson, Deni Avdija, Domantas Sabonis, Tyler Herro, Donovan Clingan, Ja Morant, Brandon Ingram, Victor Wembanyama, Toumani Camara and Damian Lillard: Trail Blazers Announce 2026 NBA Summer League Roster NBA.com If Trail Blazers Don't Trade Scoot Henderson, It’s Time to Pay Him Yahoo Sports Scoot Henderson Trade Seems Inevitable for the Blazers Sports Illustrated Aggregated from NBA.com, Yahoo Sports, Sports Illustrated, sportingnews.com, The New York Times and 14 more.",
+      "blurb": "Portland Trail Blazers Injury Status ESPN",
+      "summary": "Scoot Henderson, Bradley Beal, P.J. Washington, Anthony Edwards, LaMelo Ball, Ayo Dosunmu, Isaiah Hartenstein, Jalen Johnson, Deni Avdija, Domantas Sabonis, Tyler Herro, Donovan Clingan, Ja Morant, Brandon Ingram, Victor Wembanyama, Toumani Camara and Damian Lillard: Portland Trail Blazers Injury Status ESPN If Trail Blazers Don't Trade Scoot Henderson, It’s Time to Pay Him Yahoo Sports Scoot Henderson Trade Seems Inevitable for the Blazers Sports Illustrated Aggregated from ESPN, Yahoo Sports, Sports Illustrated, sportingnews.com, The New York Times and 14 more.",
       "category": "injury",
       "published": "2019-05-29T22:31:28Z",
       "updated": "2026-08-19T07:00:00Z",
@@ -12187,6 +12243,222 @@
       ]
     },
     {
+      "id": "chet-holmgren-playing-tonight-injury-betting-impact-nuggets-d6cd5897",
+      "slug": "chet-holmgren-playing-tonight-injury-betting-impact-nuggets-d6cd5897",
+      "sport": "basketball",
+      "headline": "Experts release new Nuggets vs. Thunder prediction after Jamal Murray & Chet Holmgren appear on injury report",
+      "blurb": "Experts release new Nuggets vs.",
+      "summary": "Chet Holmgren, Jamal Murray, Jalen Williams, Jayson Tatum, Ayo Dosunmu, Anthony Edwards and Grayson Allen: Experts release new Nuggets vs. Thunder prediction after Jamal Murray & Chet Holmgren appear on injury report MassLive.com Ayo Dosunmu Injury Update: Is Dosunmu Playing Tonight vs. Aggregated from MassLive.com, PrizePicks, Sports Illustrated, sports.yahoo.com, sportingnews.com and 1 more.",
+      "category": "injury",
+      "published": "2022-06-23T07:00:00Z",
+      "updated": "2026-08-02T07:00:00Z",
+      "players": [
+        {
+          "key": "chet holmgren",
+          "name": "Chet Holmgren",
+          "slug": "chet-holmgren",
+          "pos": "C",
+          "team": "OKC"
+        },
+        {
+          "key": "jamal murray",
+          "name": "Jamal Murray",
+          "slug": "jamal-murray",
+          "pos": "PG",
+          "team": "DEN"
+        },
+        {
+          "key": "jalen williams",
+          "name": "Jalen Williams",
+          "slug": "jalen-williams",
+          "pos": "SF",
+          "team": "OKC"
+        },
+        {
+          "key": "jayson tatum",
+          "name": "Jayson Tatum",
+          "slug": "jayson-tatum",
+          "pos": "SF",
+          "team": "BOS"
+        },
+        {
+          "key": "ayo dosunmu",
+          "name": "Ayo Dosunmu",
+          "slug": "ayo-dosunmu",
+          "pos": "SG",
+          "team": "CHI"
+        },
+        {
+          "key": "anthony edwards",
+          "name": "Anthony Edwards",
+          "slug": "anthony-edwards",
+          "pos": "SG",
+          "team": "MIN"
+        },
+        {
+          "key": "grayson allen",
+          "name": "Grayson Allen",
+          "slug": "grayson-allen",
+          "pos": "SG",
+          "team": "PHX"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ayo Dosunmu Injury Update: Is Dosunmu Playing Tonight vs. Nuggets?",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVHU5MUdSU25CMGpuZWdtallaNTNyb25qdEViVW1LcjM0WDhTcGxTOUxtZUVxcllWaUI0U0hERFIwU0dZX3Mxc09tX2hYNDBTaUxqTWxBdDFaZTBacFpVOXdNOHJabWdxbjQzcWs2WHVOQzFYbFhVdEFRZWVDNjN4d0JEOGRwVy1ubUhoaWtIeVBNMms5ODZQM2dCZTRHbVBnYl9SQUVGVmF5dXM?oc=5",
+          "publisher": "PrizePicks",
+          "kind": "article",
+          "snippet": "Ayo Dosunmu Injury Update: Is Dosunmu Playing Tonight vs. Nuggets? PrizePicks",
+          "published": "Thu, 30 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Anthony Edwards Injury Update: Is Ant Playing Tonight vs. Spurs in Game 3?",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSUgyVE56WVg3QXg2Q0tmYlAwRGl0aTBTMkpkbzJOeHJILXlrWG1xVXVPS1V1eVI5ZllYWUZsWkpqSm4xT0dJUEFDTlpCSkJ5R3hvbER2aXV2Z1ZnR2I4SGF1cnQzbUdGcWR2b3I5eV9McVdIZkgxOFA5SlZKcUtLRTFKWllZUWE2VHFLRkxNZ2RlSnRJRDlBdmRXeEtCQW5vbENBeHpSVmFXRFBvYmt6MFhn?oc=5",
+          "publisher": "PrizePicks",
+          "kind": "article",
+          "snippet": "Anthony Edwards Injury Update: Is Ant Playing Tonight vs. Spurs in Game 3? PrizePicks",
+          "published": "Fri, 08 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Grayson Allen Injury Update: Is Allen Playing Tonight vs. Trail Blazers?",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaERkRmRSdUl0NjVWaVM1cTRhcjZYY1VPZ1RZZEs2QzdqRlFOZldVLVhlMFl1NmxkTXVwNUtDOHRCeGZVWmRzYW1JNG5GMlFYZWdaTS0zVktmU0stelRoRXR0Wlk3bEZEUnc2bzBxVHhwX1VoUE1odmtTblZYWTFTWXJmMjd5TVRzSjdWNS00WDVrMDlBcmpmLUN4RDJka0o3cThEVGtJQ2ZVdFF3MGhxZXJjRQ?oc=5",
+          "publisher": "PrizePicks",
+          "kind": "article",
+          "snippet": "Grayson Allen Injury Update: Is Allen Playing Tonight vs. Trail Blazers? PrizePicks",
+          "published": "Tue, 14 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Chet Holmgren Playing Tonight? (Injury Update, Betting Impact for Nuggets vs. Thunder)",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN3ZlUlJkZGoySTRUNnY3RG1RSUN4UldmSGFTejM5dTgyd3hSRnZxaUZJZnd4V0pRSzdCVlJmRmNwY2hsVFVidURGY3BYdHc5bk5Zbm5jZ3E3WkhiRmMzVTdROHV0X1Y5U1VmcW9nU2Z5bDlLSHZZdmFUdUxuc1dyaEZMZ2M2TmN4M3NCM080TkJiQnpzaGUxTVdac0l2Z0x5WGc?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Chet Holmgren Playing Tonight? (Injury Update, Betting Impact for Nuggets vs. Thunder) Sports Illustrated",
+          "published": "Mon, 09 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Chet Holmgren Playing Tonight? (Injury Update, Betting Impact for Thunder vs. Mavs)",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMi1SMUd0Uk1wNVJydHRDN0drdW1WZVhBLUtyckVPeGw5OVUxZzZoSG53eTQ3TlBPRGhNdmNmakpScWFkLUVUTWh1d25wNVdPTjlKejJNLUNUOEFUR1ZGR1N1ZGZPcGI1cFk1M0J5d05uREdZSjgwRE9uM2dzbF8xWGRmOVdvcUFPaUdaSk9sMWVxVkE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Chet Holmgren Playing Tonight? (Injury Update, Betting Impact for Thunder vs. Mavs) Sports Illustrated",
+          "published": "Mon, 27 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Is Chet Holmgren Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Thunder)",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdkVQYXlZencxZkJ6UWVjRDRyR2FzS0gxZXgweGRPLTNSWGtWd2xKLXlzZ1lVaDRGMDlPMGVSdjhObXlSM0pnWlR1UTRHRWZGNU53cnVEbTc1cUtSREJaakV0OU5hb1dHdUpYV21IMGVEdFBfQ3prWEtpM1BGWjNzaUpxbTFxSnpCdmthcnBGWQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Chet Holmgren Playing Tonight? (Injury Update, Betting Impact for Bulls vs. Thunder) Sports Illustrated",
+          "published": "Mon, 31 Mar 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Chet Holmgren Comments On Thunder Offseason Trades",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNOHByR29uWDhYcS1fU2YyNEkwajlINUU2cFQwYU1tU1hqNnJLUTJ4djBBcUN0UlUxM2w5ZEt6dkJiNzN1SXk4Y2NETjhUX1Z5cF9CMjZLQjRfa2lBSzY0cGZURVdYUGtUSVNKZzIwdGtnOUFRRHo5MGFMUDYtUnQ2YVpjSm5BbXZCTG9kZEloYkFDVHc?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Chet Holmgren Comments On Thunder Offseason Trades sports.yahoo.com",
+          "published": "Sun, 02 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Wizards Should Trade for Chet Holmgren",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdkdpbHc2dmhQWnB0WU5QUUh5SWozZEtaMDJLX01wVVV6QnpjT0RqaFItNGdSMllENk1Fay1sWjMzZTV3Q1dzMVJPbFhtbDktYjFwOERZdkZQdWtUaVdYZEFfcGxXR21rZFVtR0h4aEZ1X0JYcjJZMkRWR0RRMHRPbWxaRUN6aGpzZGNlUThTd043eWRZZHVvc0EwR0lRelE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Wizards Should Trade for Chet Holmgren Sports Illustrated",
+          "published": "Tue, 23 Sep 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Thunder expected to make Chet Holmgren trade decision that might surprise some",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNnFGMWhCdU1Kb1FUb2dOMGVNNnh3TUM1dlNKRERqYjF5WTJ0N1BXemIySnZkbmxOR1NVOHRSRjBrWUYwMms5YlNIWWZnN056d3JzaWhtcnBtQ3F2TkFJMExPUWpWbkhMa1ItUDU3YUtKMHpMQ0pDYUFITHpwMnhPeHhldDA1djRpdHhDRGZyWEN2bWVodnplWlQtZXhkT1lLQkZPQkY4d0V3bnY2ZURWT1FHcm85dlhmQm5SV2FwQzdIcTJ1aHRXeUlPaE0yWjdVU05xWnZ2QUU2RkFu?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Thunder expected to make Chet Holmgren trade decision that might surprise some sportingnews.com",
+          "published": "Wed, 10 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Could the Thunder trade Chet Holmgren for a top-4 pick in the NBA Draft?",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOU2wxWlJCWFp2eGhEZ3BFeFJnd2gzQmdIdlB0SnN1T0tXNFYxdXFudXNrZFlMaHJYYWtfc05QRlRfb19lRUIwVzhBenFvX29YWEJxTlVwQ2pta2RwNE1SbnJlZG1pUFVZM3VhYXY1dmhOZWtQeF9oNFhSdUtrdVZkUWpYejY1dw?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Could the Thunder trade Chet Holmgren for a top-4 pick in the NBA Draft? sports.yahoo.com",
+          "published": "Sat, 30 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Fantasy basketball roundup: Thunder roiling after Chet Holmgren injury; Target the Thompson twins",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPX0ZYXzIzNG5sZDl5UTB5ejQ1cF9nbUxDa1NmemNZUVFRQldUUGlSRVRvZENKdng2MDg3SkNzVkwyZlFENmI5aGdoUHd6RmtRalhWbE8zM3hrWFFUUGxZUUQ1STNxY2REM2NoQm9CV0QwOHVueDE1aVRnV2dTVk5XNmVLaWlTekhGR2tMT1NqMkpUWW1uZkxtMWQtWDhBbnNMeXhJd0NLa0s?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Fantasy basketball roundup: Thunder roiling after Chet Holmgren injury; Target the Thompson twins The New York Times",
+          "published": "Tue, 12 Nov 2024 08:00:00 GMT"
+        },
+        {
+          "title": "Chet Holmgren, Jalen Williams are motor that keeps Thunder running in NBA Finals",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdkVJcHZ1TEpSei1JaUZpTzBCQ2x2SXF6UDNWYmJZOWx1bTNIZk9IUk05Sk5rMWxoNHg2QUQxMWlXcC05ZzR1ckNBQlE0YzdxM21JY2d4XzExWHA1TkNUc2NiNTNQQTJDNUdfNTFQY3RMek40aEYyQ3p0d2xvUTduYWZIZzV1Sm9GOGZMSU1uX1ZTYkp4clBKTjBRN1o0azlaTmNCbTl6MmpySVFiUjA3ejh1OVo?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Chet Holmgren, Jalen Williams are motor that keeps Thunder running in NBA Finals The New York Times",
+          "published": "Tue, 17 Jun 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Dynasty Warriors' Blueprint Shows What Thunder Should Do with Chet Holmgren",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMGtLdDBSYU96NGhnNF9wbWs1emRGdXVwejRNRGlQN0RUQW1tS2ZydHo4Mld6X0tQTHBFOXNEcC1uS1VMUGxKYWN6RnBCXzI3TWdiZ2Vselp0aTEzV2o5QnlHV2g2TTcwbG5DVXN4dUZQYUlfZWVjclJ6M1JRc3RvUEExMXFCX0pXdG5WY1V6dHVFekJRbDV1UWNpM004TVRyaHhrZkIxSHpvVm9PSTAzOFItN3pnQnJKMFZKRlJDbjBLUQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Dynasty Warriors' Blueprint Shows What Thunder Should Do with Chet Holmgren Sports Illustrated",
+          "published": "Mon, 01 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Can Chet Holmgren, Thunder contend? Could the Hawks kick off trade season?",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNejVXTXZ2RVpaVnRVanhjMXBTd004RTMzMmxqdFVKSlZtYndFLUNlYnRoMHZwNHd1aWE4RmI2djdQQkhVZlhIbk1hNHp5eW1NcE0zbnlaUVliNmdEZGpyanhIV2tSTTNlN1VaYVVoYWhWcWJTR0VvNklhNVd0XzVnMnpwVFlsOUM5RlZmdWlaRDgzS05BTDBTc1phR3hyQ0tXOW5rLUJFc0VCbnJqaFBuLXU4Y2s1TFdqaXc?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Can Chet Holmgren, Thunder contend? Could the Hawks kick off trade season? The New York Times",
+          "published": "Tue, 23 Jan 2024 08:00:00 GMT"
+        },
+        {
+          "title": "Thunder rookie Chet Holmgren undergoes follow-up Lisfranc procedure",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRURWVnhZRHVEelNoOW1FRExIR3IwT3prNHlOVVJFRUdvbHQwY1QxQXNlNVJ2T1ZQVE5IS0lSZlczenRBMUpMcTRiWGM4RVJwQUQ5YVdVLUVxRVF2amJCcTVnZHB3R3k4M2FWRXI3RDdGenhScGMwZ21mV1AwSm9TMjVTM1ZhU2UwVnE3Y1J2aUVNN0lpalE?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Thunder rookie Chet Holmgren undergoes follow-up Lisfranc procedure - The Athletic The New York Times",
+          "published": "Tue, 06 Dec 2022 08:00:00 GMT"
+        },
+        {
+          "title": "Injury report: Jayson Tatum, Chet Holmgren and more ahead of Celtics vs. Thunder",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNbjZ1dW9PZnV6WVo0SDBRcFNPa2xVcFllY1BjX01zTG9sSGhkb2plVmw4dk5JOE55MnRqRjFtRXFZS1djWE9yaTVTbGd4bmRqeEdrTk5DenR2MWJCaHFpaW5acnBoa3llbEdsUFB6eGpkbkp6cnpiVUwwVnZ4anM1VzhidU5YWTEzTUExamNyckNtQVZVZDUxVXNIT2VGWDdDWjdSMFRiNTZDbjA3NXFzNVVRM3pwekNMZlVkMWJKdHhmelRQdlppNi1pVUtaY2pWemJwZUUwV3o1bGp0Z2E0NQ?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Injury report: Jayson Tatum, Chet Holmgren and more ahead of Celtics vs. Thunder sportingnews.com",
+          "published": "Thu, 12 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "BREAKING: Thunder Announce Chet Holmgren Injury Update vs. Warriors",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRVJyM3dyb3dvejIwTGVLODBJR2dJM2VKRHNCVUVaZmNIQ01NZkQxQXp0c183MnVWblNtTmdKNTFRNWFVa0ktbnhwazNYMXROaFVtM0pSRDVUZHhrTXV3OEVGMG1iNlBBTHN2dFJKZVBUVm5aTElnQlJoOGpHdV9mQlI0Um00eV9rRm5vdUFlcDhVR1VBSUtxTko2alZBNEpmRXg3TU5jYUt4ajRjUjZvbEhoOVFqUmNpVHJqNQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "BREAKING: Thunder Announce Chet Holmgren Injury Update vs. Warriors Sports Illustrated",
+          "published": "Sun, 10 Nov 2024 08:00:00 GMT"
+        },
+        {
+          "title": "Thunder NBA Draft analysis: Breaking down Chet Holmgren, two other selections",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZVN0eEZia0FOWWZQdmNXR0kxX0VNM09lSy1fcXZxSDMxTFV3bmpYOXN3VDV2R0Y5emIydzZJX2dic2Zyc00zdXE1d0ZmYTcwLUJyXzJYcklrOFdmWExlQTZIeXJCY0hwaTNEVGFTbFgyOGtUUVJ6SGU5ckRoNlRxMjRFUktMbXRzWHhhdQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Thunder NBA Draft analysis: Breaking down Chet Holmgren, two other selections The New York Times",
+          "published": "Thu, 23 Jun 2022 07:00:00 GMT"
+        },
+        {
+          "title": "Experts release new Nuggets vs. Thunder prediction after Jamal Murray & Chet Holmgren appear on injury report",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPQURETHMxbGttaEJiYmdSNUUzY0VRbjNGbmgzNVBOM214dmE2cTVFTFRBRW56LU9hWUc3SkR0d2E1YkVMbHBQNXBBUlFla0VNWmhEc3pTZ0Z6SnFrSU91Vks5SENiUFJreFgwVGZQY2J2WkJPYUpfZDFVcGFzRlNJRXV0WFpTb1ZJY0g1cXZtNXJHNEFNZjIwTDJobG5MTFNqRDc4Zm1BcHZjR01IbGlzdmxnQm85aHBXX2xPWG1VUE1wX29OXzhzZ3BfWmw0VExTVUpsRmlyXzlKblFTM0QyZGRmN1o5UWs?oc=5",
+          "publisher": "MassLive.com",
+          "kind": "article",
+          "snippet": "Experts release new Nuggets vs. Thunder prediction after Jamal Murray & Chet Holmgren appear on injury report MassLive.com",
+          "published": "Mon, 09 Mar 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "what-happened-bilal-coulibaly-live-injury-wizards-clippers-cd001c2e",
       "slug": "what-happened-bilal-coulibaly-live-injury-wizards-clippers-cd001c2e",
       "sport": "basketball",
@@ -15313,36 +15585,6 @@
           "kind": "article",
           "snippet": "Shai Gilgeous-Alexander leads way for Thunder’s group effort in Game 5 win The New York Times",
           "published": "Mon, 19 May 2025 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "who-should-lakers-fifth-starter-failed-jonathan-kuminga-7a9a7507",
-      "slug": "who-should-lakers-fifth-starter-failed-jonathan-kuminga-7a9a7507",
-      "sport": "basketball",
-      "headline": "Who should be Lakers’ fifth starter after failed Jonathan Kuminga pursuit?",
-      "blurb": "The Lakers coming up short in their pursuit of Jonathan Kuminga, who’s joining the Timberwolves, will have a trickle-down effect on the rest of their roster.",
-      "summary": "The Lakers coming up short in their pursuit of Jonathan Kuminga, who’s joining the Timberwolves, will have a trickle-down effect on the rest of their roster. Board reading of NY Post Sports.",
-      "category": "roster",
-      "published": "2026-09-01T23:07:54Z",
-      "updated": "2026-09-01T23:07:54Z",
-      "players": [
-        {
-          "key": "jonathan kuminga",
-          "name": "Jonathan Kuminga",
-          "slug": "jonathan-kuminga",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Who should be Lakers’ fifth starter after failed Jonathan Kuminga pursuit?",
-          "url": "https://sports.yahoo.com/articles/lakers-fifth-starter-failed-jonathan-230754197.html",
-          "publisher": "NY Post Sports",
-          "kind": "article",
-          "snippet": "The Lakers coming up short in their pursuit of Jonathan Kuminga, who’s joining the Timberwolves, will have a trickle-down effect on the rest of their roster. One of the biggest...",
-          "published": "Tue, 01 Sep 2026 23:07:54 +0000"
         }
       ]
     }
