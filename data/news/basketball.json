@@ -1,7 +1,7 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-03T13:27:44Z",
-  "fresh": 94,
+  "updated": "2026-09-03T14:27:45Z",
+  "fresh": 7,
   "stories": [
     {
       "id": "kawhi-leonard-clearly-worried-investigation-trade-raptors-0e317eab",
@@ -1463,6 +1463,50 @@
       ]
     },
     {
+      "id": "where-does-knicks-jalen-brunson-rank-among-s-c8fdab4d",
+      "slug": "where-does-knicks-jalen-brunson-rank-among-s-c8fdab4d",
+      "sport": "basketball",
+      "headline": "Where does Knicks' Jalen Brunson rank among the NBA's best point guards?",
+      "blurb": "Jalen Brunson had an unbelievable run to the NBA championship, but does that put him ahead of names like Shai Gilgeous-Alexander and Luka Doncic?",
+      "summary": "Jalen Brunson had an unbelievable run to the NBA championship, but does that put him ahead of names like Shai Gilgeous-Alexander and Luka Doncic? Board reading of SNY.",
+      "category": "wire",
+      "published": "2026-09-03T12:50:05Z",
+      "updated": "2026-09-03T12:50:05Z",
+      "players": [
+        {
+          "key": "shai gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "slug": "shai-gilgeous-alexander",
+          "pos": "PG",
+          "team": "OKC"
+        },
+        {
+          "key": "jalen brunson",
+          "name": "Jalen Brunson",
+          "slug": "jalen-brunson",
+          "pos": "PG",
+          "team": "NYK"
+        },
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Where does Knicks' Jalen Brunson rank among the NBA's best point guards?",
+          "url": "https://sports.yahoo.com/articles/where-does-knicks-jalen-brunson-125005731.html",
+          "publisher": "SNY",
+          "kind": "article",
+          "snippet": "Jalen Brunson had an unbelievable run to the NBA championship, but does that put him ahead of names like Shai Gilgeous-Alexander and Luka Doncic?",
+          "published": "Thu, 03 Sep 2026 12:50:05 +0000"
+        }
+      ]
+    },
+    {
       "id": "amen-thompson-raises-questions-kevin-durant-s-situation-4be27ef0",
       "slug": "amen-thompson-raises-questions-kevin-durant-s-situation-4be27ef0",
       "sport": "basketball",
@@ -1619,50 +1663,6 @@
           "kind": "article",
           "snippet": "Rockets Announce Amen Thompson News After Leaving Wizards Game Athlon Sports",
           "published": "Mon, 02 Mar 2026 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "where-does-knicks-jalen-brunson-rank-among-s-c8fdab4d",
-      "slug": "where-does-knicks-jalen-brunson-rank-among-s-c8fdab4d",
-      "sport": "basketball",
-      "headline": "Where does Knicks' Jalen Brunson rank among the NBA's best point guards?",
-      "blurb": "Jalen Brunson had an unbelievable run to the NBA championship, but does that put him ahead of names like Shai Gilgeous-Alexander and Luka Doncic?",
-      "summary": "Jalen Brunson had an unbelievable run to the NBA championship, but does that put him ahead of names like Shai Gilgeous-Alexander and Luka Doncic? Board reading of SNY.",
-      "category": "wire",
-      "published": "2026-09-03T12:50:05Z",
-      "updated": "2026-09-03T12:50:05Z",
-      "players": [
-        {
-          "key": "shai gilgeous-alexander",
-          "name": "Shai Gilgeous-Alexander",
-          "slug": "shai-gilgeous-alexander",
-          "pos": "PG",
-          "team": "OKC"
-        },
-        {
-          "key": "jalen brunson",
-          "name": "Jalen Brunson",
-          "slug": "jalen-brunson",
-          "pos": "PG",
-          "team": "NYK"
-        },
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Where does Knicks' Jalen Brunson rank among the NBA's best point guards?",
-          "url": "https://sports.yahoo.com/articles/where-does-knicks-jalen-brunson-125005731.html",
-          "publisher": "SNY",
-          "kind": "article",
-          "snippet": "Jalen Brunson had an unbelievable run to the NBA championship, but does that put him ahead of names like Shai Gilgeous-Alexander and Luka Doncic?",
-          "published": "Thu, 03 Sep 2026 12:50:05 +0000"
         }
       ]
     },
@@ -2104,6 +2104,89 @@
       ]
     },
     {
+      "id": "clippers-kawhi-leonard-most-damaging-swing-miss-history-3d9b6433",
+      "slug": "clippers-kawhi-leonard-most-damaging-swing-miss-history-3d9b6433",
+      "sport": "basketball",
+      "headline": "The Clippers, Kawhi Leonard and the most damaging swing-and-a-miss in NBA history",
+      "blurb": "The Clippers franchise has paid a steep price for bringing aboard Kawhi Leonard in possibly the costliest transaction ever.",
+      "summary": "The Clippers franchise has paid a steep price for bringing aboard Kawhi Leonard in possibly the costliest transaction ever. The Clippers received one of the harshest punishments in NBA history. Despite being found in violation of the same salary-cap rules, he escaped with comparatively little... Aggregated from Yahoo Sports, NY Post Sports, USA Today.",
+      "category": "trade",
+      "published": "2026-09-02T22:25:21Z",
+      "updated": "2026-09-03T02:15:00Z",
+      "players": [
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Clippers, Kawhi Leonard and the most damaging swing-and-a-miss in NBA history",
+          "url": "https://sports.yahoo.com/nba/article/the-clippers-kawhi-leonard-and-the-most-damaging-swing-and-a-miss-in-nba-history-014136845.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The Clippers franchise has paid a steep price for bringing aboard Kawhi Leonard in possibly the costliest transaction ever.",
+          "published": "Thu, 03 Sep 2026 01:41:36 +0000"
+        },
+        {
+          "title": "How Kawhi Leonard escaped NBA’s hammer in Clippers scandal",
+          "url": "https://sports.yahoo.com/articles/kawhi-leonard-escaped-nba-hammer-222521814.html",
+          "publisher": "NY Post Sports",
+          "kind": "article",
+          "snippet": "The Clippers received one of the harshest punishments in NBA history. Kawhi Leonard did not. Despite being found in violation of the same salary-cap rules, he escaped with comparatively little...",
+          "published": "Wed, 02 Sep 2026 22:25:21 +0000"
+        },
+        {
+          "title": "How bad was the Kawhi Leonard trade for Clippers after massive NBA penalty?",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNY3JESEdZeUluSzhKOWlNdldrOFlKM3VibFhlOE9IZ2hKUDA2cU16UVVQNk9lT0VjWVE3WHJlaFp6NXB5ZlMxM1N2TnNlV3NKaUxyMHV3Z3lrWk1QVXBpNnEyQ2pVOXVhanpnVWE2SEZ3WHRmUDdtQ2dHRjliMWNwUkdYQnJYaXlDUWRmM1BKaFhLQTBXSVNFVUhVVWl6cU5FWkRnWDJDT0hfYTBKSFhTUU53TXJhTUEzcXJ0QWluTXlMczNnT0N2TWdwcnZjSHhiTmRHSw?oc=5",
+          "publisher": "USA Today",
+          "kind": "article",
+          "snippet": "How bad was the Kawhi Leonard trade for Clippers after massive NBA penalty? USA Today",
+          "published": "Thu, 03 Sep 2026 02:15:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "warriors-predicted-trade-brandin-podziemski-88m-rim-runner-7d2cc19d",
+      "slug": "warriors-predicted-trade-brandin-podziemski-88m-rim-runner-7d2cc19d",
+      "sport": "basketball",
+      "headline": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal",
+      "blurb": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal Yahoo Sports",
+      "summary": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal Yahoo Sports Board reading of Yahoo Sports.",
+      "category": "trade",
+      "published": "2026-09-02T18:50:24Z",
+      "updated": "2026-09-02T18:50:24Z",
+      "players": [
+        {
+          "key": "brandin podziemski",
+          "name": "Brandin Podziemski",
+          "slug": "brandin-podziemski",
+          "pos": "SG",
+          "team": "GSW"
+        },
+        {
+          "key": "kyrie irving",
+          "name": "Kyrie Irving",
+          "slug": "kyrie-irving",
+          "pos": "PG",
+          "team": "DAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY0pxbWt6VExFSkNQVmttODlVUjYzZmtKX2d1eGdhYzhjY2NRdVJFSTZtZ3hlaVlqRjZ2eVk5Y3ptQ1E0VzRtbEZKb2F1S01kWG9aNnJyWFpqZmFRTlNvTmRIYWZOUDhSUXNWbF84cWJPbHZNWHQ4YmVrTm5FQWFfU3JibWQ1VV9sMldXVEpYSGdiR0ZQb3lz?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal Yahoo Sports",
+          "published": "Wed, 02 Sep 2026 18:50:24 GMT"
+        }
+      ]
+    },
+    {
       "id": "celtics-proposed-trade-derrick-white-pistons-blockbuster-3-eb5a976b",
       "slug": "celtics-proposed-trade-derrick-white-pistons-blockbuster-3-eb5a976b",
       "sport": "basketball",
@@ -2235,6 +2318,80 @@
       ]
     },
     {
+      "id": "nikola-jokic-battling-illness-serbia-40920fed",
+      "slug": "nikola-jokic-battling-illness-serbia-40920fed",
+      "sport": "basketball",
+      "headline": "Nikola Jokic: Battling illness with Serbia",
+      "blurb": "Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA…",
+      "summary": "Nikola Jokic: Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA World Cup qualifier. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
+      "category": "injury",
+      "published": "2026-09-03T08:29:37Z",
+      "updated": "2026-09-03T08:29:37Z",
+      "players": [
+        {
+          "key": "nikola jokic",
+          "name": "Nikola Jokic",
+          "slug": "nikola-jokic",
+          "pos": "C",
+          "team": "DEN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nikola Jokic: Battling illness with Serbia",
+          "url": "https://www.rotowire.com//basketball/player/nikola-jokic-3612",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA World Cup qualifier. Visit RotoWire.com for more analysis on this update.",
+          "published": "Tue, 01 Sep 2026 1:18:00 PM PDT"
+        }
+      ]
+    },
+    {
+      "id": "stephon-castle-luke-kornet-win-dunk-block-year-c3dc935a",
+      "slug": "stephon-castle-luke-kornet-win-dunk-block-year-c3dc935a",
+      "sport": "basketball",
+      "headline": "Stephon Castle and Luke Kornet win Dunk and Block of the Year",
+      "blurb": "The WCF were good to the Spurs’ highlights reals, especially against Isaiah Hartenstein.",
+      "summary": "The WCF were good to the Spurs’ highlights reals, especially against Isaiah Hartenstein. Board reading of SB Nation.",
+      "category": "wire",
+      "published": "2026-09-02T18:25:45Z",
+      "updated": "2026-09-02T18:25:45Z",
+      "players": [
+        {
+          "key": "isaiah hartenstein",
+          "name": "Isaiah Hartenstein",
+          "slug": "isaiah-hartenstein",
+          "pos": "C",
+          "team": "OKC"
+        },
+        {
+          "key": "stephon castle",
+          "name": "Stephon Castle",
+          "slug": "stephon-castle",
+          "pos": "PG",
+          "team": "SAS"
+        },
+        {
+          "key": "luke kornet",
+          "name": "Luke Kornet",
+          "slug": "luke-kornet",
+          "pos": "C",
+          "team": "BOS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Stephon Castle and Luke Kornet win Dunk and Block of the Year",
+          "url": "https://sports.yahoo.com/articles/stephon-castle-luke-kornet-win-182545477.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The WCF were good to the Spurs’ highlights reals, especially against Isaiah Hartenstein.",
+          "published": "Wed, 02 Sep 2026 18:25:45 +0000"
+        }
+      ]
+    },
+    {
       "id": "nets-michael-porter-jr-impasse-extension-f3a5caec",
       "slug": "nets-michael-porter-jr-impasse-extension-f3a5caec",
       "sport": "basketball",
@@ -2345,163 +2502,6 @@
           "kind": "article",
           "snippet": "Final Injury Report for Cavaliers-Hornets: Will Evan Mobley, Coby White Play? Athlon Sports",
           "published": "Fri, 20 Feb 2026 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "clippers-kawhi-leonard-most-damaging-swing-miss-history-3d9b6433",
-      "slug": "clippers-kawhi-leonard-most-damaging-swing-miss-history-3d9b6433",
-      "sport": "basketball",
-      "headline": "The Clippers, Kawhi Leonard and the most damaging swing-and-a-miss in NBA history",
-      "blurb": "The Clippers franchise has paid a steep price for bringing aboard Kawhi Leonard in possibly the costliest transaction ever.",
-      "summary": "The Clippers franchise has paid a steep price for bringing aboard Kawhi Leonard in possibly the costliest transaction ever. The Clippers received one of the harshest punishments in NBA history. Despite being found in violation of the same salary-cap rules, he escaped with comparatively little... Aggregated from Yahoo Sports, NY Post Sports, USA Today.",
-      "category": "trade",
-      "published": "2026-09-02T22:25:21Z",
-      "updated": "2026-09-03T02:15:00Z",
-      "players": [
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "The Clippers, Kawhi Leonard and the most damaging swing-and-a-miss in NBA history",
-          "url": "https://sports.yahoo.com/nba/article/the-clippers-kawhi-leonard-and-the-most-damaging-swing-and-a-miss-in-nba-history-014136845.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The Clippers franchise has paid a steep price for bringing aboard Kawhi Leonard in possibly the costliest transaction ever.",
-          "published": "Thu, 03 Sep 2026 01:41:36 +0000"
-        },
-        {
-          "title": "How Kawhi Leonard escaped NBA’s hammer in Clippers scandal",
-          "url": "https://sports.yahoo.com/articles/kawhi-leonard-escaped-nba-hammer-222521814.html",
-          "publisher": "NY Post Sports",
-          "kind": "article",
-          "snippet": "The Clippers received one of the harshest punishments in NBA history. Kawhi Leonard did not. Despite being found in violation of the same salary-cap rules, he escaped with comparatively little...",
-          "published": "Wed, 02 Sep 2026 22:25:21 +0000"
-        },
-        {
-          "title": "How bad was the Kawhi Leonard trade for Clippers after massive NBA penalty?",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNY3JESEdZeUluSzhKOWlNdldrOFlKM3VibFhlOE9IZ2hKUDA2cU16UVVQNk9lT0VjWVE3WHJlaFp6NXB5ZlMxM1N2TnNlV3NKaUxyMHV3Z3lrWk1QVXBpNnEyQ2pVOXVhanpnVWE2SEZ3WHRmUDdtQ2dHRjliMWNwUkdYQnJYaXlDUWRmM1BKaFhLQTBXSVNFVUhVVWl6cU5FWkRnWDJDT0hfYTBKSFhTUU53TXJhTUEzcXJ0QWluTXlMczNnT0N2TWdwcnZjSHhiTmRHSw?oc=5",
-          "publisher": "USA Today",
-          "kind": "article",
-          "snippet": "How bad was the Kawhi Leonard trade for Clippers after massive NBA penalty? USA Today",
-          "published": "Thu, 03 Sep 2026 02:15:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "warriors-predicted-trade-brandin-podziemski-88m-rim-runner-7d2cc19d",
-      "slug": "warriors-predicted-trade-brandin-podziemski-88m-rim-runner-7d2cc19d",
-      "sport": "basketball",
-      "headline": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal",
-      "blurb": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal Yahoo Sports",
-      "summary": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal Yahoo Sports Board reading of Yahoo Sports.",
-      "category": "trade",
-      "published": "2026-09-02T18:50:24Z",
-      "updated": "2026-09-02T18:50:24Z",
-      "players": [
-        {
-          "key": "brandin podziemski",
-          "name": "Brandin Podziemski",
-          "slug": "brandin-podziemski",
-          "pos": "SG",
-          "team": "GSW"
-        },
-        {
-          "key": "kyrie irving",
-          "name": "Kyrie Irving",
-          "slug": "kyrie-irving",
-          "pos": "PG",
-          "team": "DAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOY0pxbWt6VExFSkNQVmttODlVUjYzZmtKX2d1eGdhYzhjY2NRdVJFSTZtZ3hlaVlqRjZ2eVk5Y3ptQ1E0VzRtbEZKb2F1S01kWG9aNnJyWFpqZmFRTlNvTmRIYWZOUDhSUXNWbF84cWJPbHZNWHQ4YmVrTm5FQWFfU3JibWQ1VV9sMldXVEpYSGdiR0ZQb3lz?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Warriors predicted to trade Brandin Podziemski for $88M rim runner in Kyrie Irving-centered deal Yahoo Sports",
-          "published": "Wed, 02 Sep 2026 18:50:24 GMT"
-        }
-      ]
-    },
-    {
-      "id": "stephon-castle-luke-kornet-win-dunk-block-year-c3dc935a",
-      "slug": "stephon-castle-luke-kornet-win-dunk-block-year-c3dc935a",
-      "sport": "basketball",
-      "headline": "Stephon Castle and Luke Kornet win Dunk and Block of the Year",
-      "blurb": "The WCF were good to the Spurs’ highlights reals, especially against Isaiah Hartenstein.",
-      "summary": "The WCF were good to the Spurs’ highlights reals, especially against Isaiah Hartenstein. Board reading of SB Nation.",
-      "category": "wire",
-      "published": "2026-09-02T18:25:45Z",
-      "updated": "2026-09-02T18:25:45Z",
-      "players": [
-        {
-          "key": "isaiah hartenstein",
-          "name": "Isaiah Hartenstein",
-          "slug": "isaiah-hartenstein",
-          "pos": "C",
-          "team": "OKC"
-        },
-        {
-          "key": "stephon castle",
-          "name": "Stephon Castle",
-          "slug": "stephon-castle",
-          "pos": "PG",
-          "team": "SAS"
-        },
-        {
-          "key": "luke kornet",
-          "name": "Luke Kornet",
-          "slug": "luke-kornet",
-          "pos": "C",
-          "team": "BOS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Stephon Castle and Luke Kornet win Dunk and Block of the Year",
-          "url": "https://sports.yahoo.com/articles/stephon-castle-luke-kornet-win-182545477.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The WCF were good to the Spurs’ highlights reals, especially against Isaiah Hartenstein.",
-          "published": "Wed, 02 Sep 2026 18:25:45 +0000"
-        }
-      ]
-    },
-    {
-      "id": "nikola-jokic-battling-illness-serbia-40920fed",
-      "slug": "nikola-jokic-battling-illness-serbia-40920fed",
-      "sport": "basketball",
-      "headline": "Nikola Jokic: Battling illness with Serbia",
-      "blurb": "Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA…",
-      "summary": "Nikola Jokic: Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA World Cup qualifier. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
-      "category": "injury",
-      "published": "2026-09-03T08:29:37Z",
-      "updated": "2026-09-03T08:29:37Z",
-      "players": [
-        {
-          "key": "nikola jokic",
-          "name": "Nikola Jokic",
-          "slug": "nikola-jokic",
-          "pos": "C",
-          "team": "DEN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Nikola Jokic: Battling illness with Serbia",
-          "url": "https://www.rotowire.com//basketball/player/nikola-jokic-3612",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "Jokic (illness) registered eight points (1-4 FG, 0-2 3Pt, 6-7 FT), eight rebounds, one assist and one steal in 23 minutes during Serbia's 76-64 win over Italy in Monday's FIBA World Cup qualifier. Visit RotoWire.com for more analysis on this update.",
-          "published": "Tue, 01 Sep 2026 1:18:00 PM PDT"
         }
       ]
     },
@@ -2901,6 +2901,43 @@
       ]
     },
     {
+      "id": "why-draymond-believes-jonathan-kuminga-s-agent-doing-a822ddd4",
+      "slug": "why-draymond-believes-jonathan-kuminga-s-agent-doing-a822ddd4",
+      "sport": "basketball",
+      "headline": "Why Draymond believes Jonathan Kuminga's agent is doing client a ‘disservice'",
+      "blurb": "Golden State Warriors star Draymond Green explained why he didn't appreciate Aaron Turner's recent comments on \"The Kevin O'Connor Show.\"",
+      "summary": "Jonathan Kuminga and Draymond Green: Golden State Warriors star Draymond Green explained why he didn't appreciate Aaron Turner's recent comments on \"The Kevin O'Connor Show.\" Board reading of NBC Sports BayArea.",
+      "category": "wire",
+      "published": "2026-09-02T15:51:58Z",
+      "updated": "2026-09-02T15:51:58Z",
+      "players": [
+        {
+          "key": "jonathan kuminga",
+          "name": "Jonathan Kuminga",
+          "slug": "jonathan-kuminga",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "draymond green",
+          "name": "Draymond Green",
+          "slug": "draymond-green",
+          "pos": "PF",
+          "team": "GSW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Why Draymond believes Jonathan Kuminga's agent is doing client a ‘disservice'",
+          "url": "https://sports.yahoo.com/articles/why-draymond-believes-jonathan-kumingas-155158059.html",
+          "publisher": "NBC Sports BayArea",
+          "kind": "article",
+          "snippet": "Golden State Warriors star Draymond Green explained why he didn't appreciate Aaron Turner's recent comments on \"The Kevin O'Connor Show.\"",
+          "published": "Wed, 02 Sep 2026 15:51:58 +0000"
+        }
+      ]
+    },
+    {
       "id": "proposed-blockbuster-trade-sends-jamal-murray-raptors-4-380962f3",
       "slug": "proposed-blockbuster-trade-sends-jamal-murray-raptors-4-380962f3",
       "sport": "basketball",
@@ -3040,43 +3077,6 @@
           "kind": "article",
           "snippet": "Projected Blockbuster NBA Trade Sends De’Aaron Fox to Miami Heat heavy.com",
           "published": "Fri, 21 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "why-draymond-believes-jonathan-kuminga-s-agent-doing-a822ddd4",
-      "slug": "why-draymond-believes-jonathan-kuminga-s-agent-doing-a822ddd4",
-      "sport": "basketball",
-      "headline": "Why Draymond believes Jonathan Kuminga's agent is doing client a ‘disservice'",
-      "blurb": "Golden State Warriors star Draymond Green explained why he didn't appreciate Aaron Turner's recent comments on \"The Kevin O'Connor Show.\"",
-      "summary": "Jonathan Kuminga and Draymond Green: Golden State Warriors star Draymond Green explained why he didn't appreciate Aaron Turner's recent comments on \"The Kevin O'Connor Show.\" Board reading of NBC Sports BayArea.",
-      "category": "wire",
-      "published": "2026-09-02T15:51:58Z",
-      "updated": "2026-09-02T15:51:58Z",
-      "players": [
-        {
-          "key": "jonathan kuminga",
-          "name": "Jonathan Kuminga",
-          "slug": "jonathan-kuminga",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "draymond green",
-          "name": "Draymond Green",
-          "slug": "draymond-green",
-          "pos": "PF",
-          "team": "GSW"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Why Draymond believes Jonathan Kuminga's agent is doing client a ‘disservice'",
-          "url": "https://sports.yahoo.com/articles/why-draymond-believes-jonathan-kumingas-155158059.html",
-          "publisher": "NBC Sports BayArea",
-          "kind": "article",
-          "snippet": "Golden State Warriors star Draymond Green explained why he didn't appreciate Aaron Turner's recent comments on \"The Kevin O'Connor Show.\"",
-          "published": "Wed, 02 Sep 2026 15:51:58 +0000"
         }
       ]
     },
