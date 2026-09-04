@@ -1,7 +1,7 @@
 {
   "sport": "soccer",
-  "updated": "2026-09-04T03:25:19Z",
-  "fresh": 147,
+  "updated": "2026-09-04T04:26:01Z",
+  "fresh": 92,
   "stories": [
     {
       "id": "11-premier-league-clubs-which-clubs-broke-transfer-13877543",
@@ -3158,13 +3158,20 @@
       "id": "premier-league-10-things-look-weekend-3dcd006f",
       "slug": "premier-league-10-things-look-weekend-3dcd006f",
       "sport": "soccer",
-      "headline": "Wonderkid Max Dowman banned from Arsenal debut amid Kai Havertz injury due to Premier League rule",
-      "blurb": "Premier League injury update on Arsenal striker FourFourTwo",
-      "summary": "Kai Havertz, Eberechi Eze, Bukayo Saka, Max Dowman, Carlos Baleba, Jack Hinshelwood, Bruno Fernandes, Florian Wirtz, Mateus Fernandes and Conor Bradley: Premier League injury update on Arsenal striker FourFourTwo Kai Havertz: Arsenal forward set to miss at least four matches with muscular injury Sky Sports Kai Havertz, Ben White - Arsenal injury latest and possible return dates vs Chelsea Football London Aggregated from FourFourTwo, Sky Sports, Football London, London Evening Standard, The Mirror and 11 more.",
+      "headline": "Arsenal lineup vs. Chelsea: Predicted XI for Premier League London derby amid Bukayo Saka injury worry",
+      "blurb": "Chelsea: Predicted XI for Premier League London derby amid Bukayo Saka injury worry Sports Mole",
+      "summary": "Chelsea: Predicted XI for Premier League London derby amid Bukayo Saka injury worry Sports Mole Florian Wirtz has a chance to shine, there’s a Red Bull reunion on Tyneside and Chelsea face litmus test at Arsenal Florian Wirtz is easing himself into his second season at Liverpool after a forgettable first. There were signs of promise against Nottingham Forest , where he set Aggregated from Sports Mole, Guardian Football, Premier League, ESPN, YouTube and 12 more.",
       "category": "injury",
       "published": "2025-02-13T08:00:00Z",
       "updated": "2026-09-03T23:01:51Z",
       "players": [
+        {
+          "key": "saka",
+          "name": "Bukayo Saka",
+          "slug": "bukayo-saka",
+          "pos": "MID",
+          "team": "ARS"
+        },
         {
           "key": "havertz",
           "name": "Kai Havertz",
@@ -3176,13 +3183,6 @@
           "key": "eze",
           "name": "Eberechi Eze",
           "slug": "eberechi-eze",
-          "pos": "MID",
-          "team": "ARS"
-        },
-        {
-          "key": "saka",
-          "name": "Bukayo Saka",
-          "slug": "bukayo-saka",
           "pos": "MID",
           "team": "ARS"
         },
@@ -3404,6 +3404,14 @@
           "kind": "article",
           "snippet": "What is the update on Kai Havertz’s injury at Arsenal? NotjustOk",
           "published": "Fri, 13 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arsenal lineup vs. Chelsea: Predicted XI for Premier League London derby amid Bukayo Saka injury worry",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbDE0dDROMXJvVUQzZm84VEdlY0dUeEJlc01pUGI5S0lJOWUxdVVZQ2JqeFphektXYjgzdVBQREVsNWZVOWtRckJCVWV0UUkxZ3FwUHNrNEM4VlN1NTllcU8zVldnZTRvSk5WelZ1ODNrWWtGdnREMFdJOWVRVW55M3VTVHJPb1JFcmZLdGhvSEZfOWt3TlB3U3djOGVBX29PMnRCRFNUanVzaUNVMXhSMEtkQmZwZ2I1T3RSdW5fYU9TTVpzbUMyM190aTJtVFd0LXRvWTNCYlV5WDFuVDZZUTJ2OA?oc=5",
+          "publisher": "Sports Mole",
+          "kind": "article",
+          "snippet": "Arsenal lineup vs. Chelsea: Predicted XI for Premier League London derby amid Bukayo Saka injury worry Sports Mole",
+          "published": "Fri, 27 Feb 2026 08:00:00 GMT"
         }
       ]
     },
@@ -6845,12 +6853,19 @@
       "slug": "barcola-szoboszlai-liverpool-injury-fpl-gameweek-3-07042e74",
       "sport": "soccer",
       "headline": "Arsenal injury, suspension list and return dates for Liverpool: Riccardo Calafiori, Cristhian Mosquera latest",
-      "blurb": "Liverpool injury update: Ryan Gravenberch, Ibrahima Konate, Alisson Becker latest news and return dates London Evening Standard",
-      "summary": "Liverpool injury update: Ryan Gravenberch, Ibrahima Konate, Alisson Becker latest news and return dates London Evening Standard Liverpool: Ryan Gravenberch value increases according to report BBC Why is Ryan Gravenberch not playing for Liverpool vs Bournemouth? Aggregated from London Evening Standard, BBC, Goal.com, Sports Mole, Premier League and 8 more.",
+      "blurb": "Is Riccardo Calafiori fit to start for Arsenal vs Tottenham?",
+      "summary": "Is Riccardo Calafiori fit to start for Arsenal vs Tottenham? Injury news latest and FPL update Football London Calafiori injury latest as Arsenal star 'missing' before Man Utd clash London Evening Standard Aggregated from Football London, London Evening Standard, ArsenalNews.co.uk, Premier League, fantasyfootballscout.co.uk and 9 more.",
       "category": "injury",
       "published": "2022-10-07T07:00:00Z",
       "updated": "2026-09-03T15:39:52Z",
       "players": [
+        {
+          "key": "calafiori",
+          "name": "Riccardo Calafiori",
+          "slug": "riccardo-calafiori",
+          "pos": "DEF",
+          "team": "ARS"
+        },
         {
           "key": "gravenberch",
           "name": "Ryan Gravenberch",
@@ -6864,13 +6879,6 @@
           "slug": "alisson-becker",
           "pos": "GKP",
           "team": "LIV"
-        },
-        {
-          "key": "calafiori",
-          "name": "Riccardo Calafiori",
-          "slug": "riccardo-calafiori",
-          "pos": "DEF",
-          "team": "ARS"
         },
         {
           "key": "havertz",
@@ -7343,6 +7351,30 @@
           "kind": "article",
           "snippet": "Liverpool suffer Ryan Gravenberch injury scare Sports Mole",
           "published": "Thu, 21 Sep 2023 07:00:00 GMT"
+        },
+        {
+          "title": "Is Riccardo Calafiori fit to start for Arsenal vs Tottenham? Injury news latest and FPL update",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPcDlYdm5jcTVlM3hEVHliazc3R19vemVCOTBQQ2tPdnlGZjFKaktTRVFWYzd3Sm5CWWhNMnVXenBMbnN6OXZlTTJUSmp0d2U5Nmd5b21YVHh1NGZKQzFibzE3MlRIQmFBOXRyNC1Ba2RETTFCUTQyMnQxNDVTeUV6U05mM2dfdWIxZVRLTzNNaDLSAZYBQVVfeXFMTjdQNmZUVkZXaVppMy1DQWRpV1RuaUE5TWZZM0xTNnpBbW1QRl9SSFhIZ2RELU9Jd3pZNl9GNFhjaDJuZWFUU1JPS1JEU1UxN1VrUWxGeVhZRzRuaHRRUDhMUmw1b19kbjg3Tms5S3I2ZEZ5c25STGladTFGTnN2UkVkWnFZUjVyVmJlNUtDNDdIV19sazFR?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Is Riccardo Calafiori fit to start for Arsenal vs Tottenham? Injury news latest and FPL update Football London",
+          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Calafiori injury latest as Arsenal star 'missing' before Man Utd clash",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUjZfNnhjMXRzUlYzV3E5ZUNEYzNxVE9fVy1RVGhfdUNzVnhWNmwxbXpiQUZYSzRzbi10T2VyNVFBdHpXNWpqYnA0ajBMdnV2MDFWSTBnd0FuTDBPamdMVDQtVTAzbm9sSjRVU1lvTkM0dkMzN3FZVk5SWWJMVzNfU2ZGNThIQTlUblVqamtLNHdmWkxZcXVXS0VqRjlTdkQwaWtIcUtSVm9wTUVzVUstWUllZXhaQQ?oc=5",
+          "publisher": "London Evening Standard",
+          "kind": "article",
+          "snippet": "Calafiori injury latest as Arsenal star 'missing' before Man Utd clash London Evening Standard",
+          "published": "Sun, 25 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arsenal star Riccardo Calafiori suspended vs Wolverhampton Wanderers",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPODNmZWtGN19pb0NiN3hxeEV0ZHV5WloxS2hoY0R0SG9pR0dGckcxcGhuYUJGei1GV3VNckNRdmtSRWVJRE84TG1hQ1VfV2pHdThxY0pCRnA3VG1SeVZHU25faWY3MWg1ckJPNFZtWWpXM2xhQjJsTkRJNld6YUNvcWp4ekVsRS1mdnc4dDMyb28wWEk0TXFncDBUSmxwZUxXUnJPaC1pWURXdw?oc=5",
+          "publisher": "ArsenalNews.co.uk",
+          "kind": "article",
+          "snippet": "Arsenal star Riccardo Calafiori suspended vs Wolverhampton Wanderers ArsenalNews.co.uk",
+          "published": "Sun, 07 Dec 2025 08:00:00 GMT"
         }
       ]
     },
@@ -10772,118 +10804,6 @@
       ]
     },
     {
-      "id": "baleba-mount-de-ligt-man-utd-injury-return-10bc616c",
-      "slug": "baleba-mount-de-ligt-man-utd-injury-return-10bc616c",
-      "sport": "soccer",
-      "headline": "Ballard, O’Nien & Le Fée: Latest Sunderland injury news and expected return dates ahead of Aston Villa match",
-      "blurb": "Ballard, Le Fée & Roefs: Sunderland latest injury news and return dates ahead of Newcastle clash 3 Added Minutes",
-      "summary": "Daniel Ballard, Kiernan Dewsbury-Hall, Jarrad Branthwaite, Jack Grealish, Tim Iroegbunam, Matthijs de Ligt and Carlos Baleba: Ballard, Le Fée & Roefs: Sunderland latest injury news and return dates ahead of Newcastle clash 3 Added Minutes Baleba, Mount and De Ligt: Man Utd injury news and return dates ahead of Everton 3 Added Minutes Grealish, Branthwaite & Dewsbury-Hall: Latest Everton injury news and expected return dates 3 Added Minutes Board reading of 3 Added Minutes.",
-      "category": "injury",
-      "published": "2025-09-17T07:00:00Z",
-      "updated": "2026-09-03T11:10:00Z",
-      "players": [
-        {
-          "key": "ballard",
-          "name": "Daniel Ballard",
-          "slug": "daniel-ballard",
-          "pos": "DEF",
-          "team": "SUN"
-        },
-        {
-          "key": "dewsbury hall",
-          "name": "Kiernan Dewsbury-Hall",
-          "slug": "kiernan-dewsbury-hall",
-          "pos": "MID",
-          "team": "EVE"
-        },
-        {
-          "key": "branthwaite",
-          "name": "Jarrad Branthwaite",
-          "slug": "jarrad-branthwaite",
-          "pos": "DEF",
-          "team": "EVE"
-        },
-        {
-          "key": "grealish",
-          "name": "Jack Grealish",
-          "slug": "jack-grealish",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "iroegbunam",
-          "name": "Tim Iroegbunam",
-          "slug": "tim-iroegbunam",
-          "pos": "MID",
-          "team": "EVE"
-        },
-        {
-          "key": "de ligt",
-          "name": "Matthijs de Ligt",
-          "slug": "matthijs-de-ligt",
-          "pos": "DEF",
-          "team": "MUN"
-        },
-        {
-          "key": "baleba",
-          "name": "Carlos Baleba",
-          "slug": "carlos-baleba",
-          "pos": "MID",
-          "team": "BHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Baleba, Mount and De Ligt: Man Utd injury news and return dates ahead of Everton",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTGpfNWJ5cnk4bFJxMkF1TU5lQjR2ejFvSExXLTJialNXU1h3bHd2VzlHc2lId0RMbFAzeGFXenNDUU1pbVZZVkR3NDFWSHVBVHhpQ1NaN2xncXNfc2c2NDVLRUdtLWlFNTJZbkVsWG5keU1pMDdKNUs4SGluclJ6a2g5SXhiUkpJZnF0b2YyMTlwRExZMXhGSkpiTzBrSGIyVjU3SV9uZ05yVmZNa0NnaWtqR2dJLTdkaXZzVVdYMFl6UjNEMEx4R0VQd003Rkk?oc=5",
-          "publisher": "3 Added Minutes",
-          "kind": "article",
-          "snippet": "Baleba, Mount and De Ligt: Man Utd injury news and return dates ahead of Everton 3 Added Minutes",
-          "published": "Thu, 03 Sep 2026 11:10:00 GMT"
-        },
-        {
-          "title": "Grealish, Branthwaite & Dewsbury-Hall: Latest Everton injury news and expected return dates",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWXhlN3NTRzJyWnpMc0JOQTBGX1ZKWVRzSXQybmNxeXVjVFJwaTV2MkFqTFRiZGxKMUVJWjFnelBlSmFJbko3SWpIUm5aSlFjQ2pOSG9ETk9VUmRBTDlhYzVDdW5IZGhEeV9mYmxtc3pXVHRTU05LaTBYc2x2eGZoTnRQVlA1Y0FXSl8tTG01UUsxa0tBQ1JGZ1lqWkFOYmFpb1hrMTdrcUtRVFhYdTQ0V3B0TFBOY09RaU5xS3BwSQ?oc=5",
-          "publisher": "3 Added Minutes",
-          "kind": "article",
-          "snippet": "Grealish, Branthwaite & Dewsbury-Hall: Latest Everton injury news and expected return dates 3 Added Minutes",
-          "published": "Fri, 23 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Branthwaite, Dewsbury-Hall & Iroegbunam: Latest Everton injury news and expected return dates",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPM2J3OFhJRmxLMndpRTdMWEhDdWZPcWtSUUxNT2UzVTFzNV9IMHNfWnJ1S09seXYzVzdzMVZHMXJJTzRYM0pic0cyYThWUkxoR0xJdHVnVkZTR3EzYW9STHhrY3YzU2Ryc2lfN0ZjNzZkbkdNZjVZcXd3c3g4YURFSGwyWkd1NGdqcjFicFVhMmdGQTlYaWt3Wi1lU2VsNk1JcHNrZDNXUlNzOXdZcmYwdlNqS1haRXBm?oc=5",
-          "publisher": "3 Added Minutes",
-          "kind": "article",
-          "snippet": "Branthwaite, Dewsbury-Hall & Iroegbunam: Latest Everton injury news and expected return dates 3 Added Minutes",
-          "published": "Mon, 19 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Dewsbury-Hall, Branthwaite & Coleman: Latest Everton injury news and expected return dates ahead of Burnley",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVy1xaGMxa3lSVlowUkIzc0tPSFFxM2F4Z1hyZ3dreW1ZZWZNVHl2YTdPUTlfbzkyZjI5ZmxlbWlnSUtnWmNHZHhWc3hBVFJ3RFNtd004TnU0VGFWSDdVb0pkZVhVNlZ4YzlpakpIYmp4bmRNdV9LTnYxUThpYktvNFBCbUxNLXctZExqc2p1NDAyWHExT1pTUllWR2NQYzBZNFlGYWdVcG4zTXRVRFo4OHpGN3ZvOTk2cUpRWXlhTWYxUXFFZjRKcUVJNm5YN2dpWWRsQVhmZU9wSzBUVkFXbXFRaWU?oc=5",
-          "publisher": "3 Added Minutes",
-          "kind": "article",
-          "snippet": "Dewsbury-Hall, Branthwaite & Coleman: Latest Everton injury news and expected return dates ahead of Burnley 3 Added Minutes",
-          "published": "Tue, 23 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Ballard, O’Nien & Le Fée: Latest Sunderland injury news and expected return dates ahead of Aston Villa match",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZm9CZGxLTUJXR2NsbndjZHlqZGdIWHZ3S1BrVFdrS2FIdmw4eVozMWZ6OWFFM3NrZTdlNzJzd1RyQmRQQ0ZPVTZPNGtWZlVDUTVqcWM0UzJjU01MS0U4bzNCeHJYd0xiZm8yVFNNVHJscjRwVkRUWHBDYi1GUVgxQ3puRzBtZXFQSkhtOGlVWmFlX3paQ09BN3BJdlNtT1IzSHc2U0JzaFNUV3dUSjEtZ0xSWDdTcFdSRnc?oc=5",
-          "publisher": "3 Added Minutes",
-          "kind": "article",
-          "snippet": "Ballard, O’Nien & Le Fée: Latest Sunderland injury news and expected return dates ahead of Aston Villa match 3 Added Minutes",
-          "published": "Wed, 17 Sep 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Ballard, Le Fée & Roefs: Sunderland latest injury news and return dates ahead of Newcastle clash",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORlhCcXlHVmQ4RUl0RElpRkVmaVhIcHUyazVrS1RaWEo3OHd1bDlEMHR3Q2dBdHBkTGtDbVFMMGxoazc1eWp5WTU2ekVBOWxCNFpYRXRQd1BFV2VkclFLUmRnOElKLWkxUnhzTGY1c0dmYVVlMjUyMEpwc0p5amhqa3dPRmxRS3cyRWl4N0J4UHFtd3dzSTNKbW85bm9LRklGNEZQcG1BcV9IT0hxMjNjTnFjSlkxUktLMkZod0xYY1Zadw?oc=5",
-          "publisher": "3 Added Minutes",
-          "kind": "article",
-          "snippet": "Ballard, Le Fée & Roefs: Sunderland latest injury news and return dates ahead of Newcastle clash 3 Added Minutes",
-          "published": "Thu, 19 Mar 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "premier-league-injuries-injury-suspensions-7ff4a0fb",
       "slug": "premier-league-injuries-injury-suspensions-7ff4a0fb",
       "sport": "soccer",
@@ -11013,6 +10933,323 @@
           "kind": "article",
           "snippet": "Richarlison: Tottenham omit Brazil forward from Premier League squad bbc.co.uk",
           "published": "Thu, 03 Sep 2026 17:11:10 GMT"
+        }
+      ]
+    },
+    {
+      "id": "baleba-mount-de-ligt-man-utd-injury-return-10bc616c",
+      "slug": "baleba-mount-de-ligt-man-utd-injury-return-10bc616c",
+      "sport": "soccer",
+      "headline": "Ballard, O’Nien & Le Fée: Latest Sunderland injury news and expected return dates ahead of Aston Villa match",
+      "blurb": "Ballard, Le Fée & Roefs: Sunderland latest injury news and return dates ahead of Newcastle clash 3 Added Minutes",
+      "summary": "Daniel Ballard, Kiernan Dewsbury-Hall, Jarrad Branthwaite, Jack Grealish, Tim Iroegbunam, Matthijs de Ligt and Carlos Baleba: Ballard, Le Fée & Roefs: Sunderland latest injury news and return dates ahead of Newcastle clash 3 Added Minutes Baleba, Mount and De Ligt: Man Utd injury news and return dates ahead of Everton 3 Added Minutes Grealish, Branthwaite & Dewsbury-Hall: Latest Everton injury news and expected return dates 3 Added Minutes Board reading of 3 Added Minutes.",
+      "category": "injury",
+      "published": "2025-09-17T07:00:00Z",
+      "updated": "2026-09-03T11:10:00Z",
+      "players": [
+        {
+          "key": "ballard",
+          "name": "Daniel Ballard",
+          "slug": "daniel-ballard",
+          "pos": "DEF",
+          "team": "SUN"
+        },
+        {
+          "key": "dewsbury hall",
+          "name": "Kiernan Dewsbury-Hall",
+          "slug": "kiernan-dewsbury-hall",
+          "pos": "MID",
+          "team": "EVE"
+        },
+        {
+          "key": "branthwaite",
+          "name": "Jarrad Branthwaite",
+          "slug": "jarrad-branthwaite",
+          "pos": "DEF",
+          "team": "EVE"
+        },
+        {
+          "key": "grealish",
+          "name": "Jack Grealish",
+          "slug": "jack-grealish",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "iroegbunam",
+          "name": "Tim Iroegbunam",
+          "slug": "tim-iroegbunam",
+          "pos": "MID",
+          "team": "EVE"
+        },
+        {
+          "key": "de ligt",
+          "name": "Matthijs de Ligt",
+          "slug": "matthijs-de-ligt",
+          "pos": "DEF",
+          "team": "MUN"
+        },
+        {
+          "key": "baleba",
+          "name": "Carlos Baleba",
+          "slug": "carlos-baleba",
+          "pos": "MID",
+          "team": "BHA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Baleba, Mount and De Ligt: Man Utd injury news and return dates ahead of Everton",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTGpfNWJ5cnk4bFJxMkF1TU5lQjR2ejFvSExXLTJialNXU1h3bHd2VzlHc2lId0RMbFAzeGFXenNDUU1pbVZZVkR3NDFWSHVBVHhpQ1NaN2xncXNfc2c2NDVLRUdtLWlFNTJZbkVsWG5keU1pMDdKNUs4SGluclJ6a2g5SXhiUkpJZnF0b2YyMTlwRExZMXhGSkpiTzBrSGIyVjU3SV9uZ05yVmZNa0NnaWtqR2dJLTdkaXZzVVdYMFl6UjNEMEx4R0VQd003Rkk?oc=5",
+          "publisher": "3 Added Minutes",
+          "kind": "article",
+          "snippet": "Baleba, Mount and De Ligt: Man Utd injury news and return dates ahead of Everton 3 Added Minutes",
+          "published": "Thu, 03 Sep 2026 11:10:00 GMT"
+        },
+        {
+          "title": "Grealish, Branthwaite & Dewsbury-Hall: Latest Everton injury news and expected return dates",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWXhlN3NTRzJyWnpMc0JOQTBGX1ZKWVRzSXQybmNxeXVjVFJwaTV2MkFqTFRiZGxKMUVJWjFnelBlSmFJbko3SWpIUm5aSlFjQ2pOSG9ETk9VUmRBTDlhYzVDdW5IZGhEeV9mYmxtc3pXVHRTU05LaTBYc2x2eGZoTnRQVlA1Y0FXSl8tTG01UUsxa0tBQ1JGZ1lqWkFOYmFpb1hrMTdrcUtRVFhYdTQ0V3B0TFBOY09RaU5xS3BwSQ?oc=5",
+          "publisher": "3 Added Minutes",
+          "kind": "article",
+          "snippet": "Grealish, Branthwaite & Dewsbury-Hall: Latest Everton injury news and expected return dates 3 Added Minutes",
+          "published": "Fri, 23 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Branthwaite, Dewsbury-Hall & Iroegbunam: Latest Everton injury news and expected return dates",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPM2J3OFhJRmxLMndpRTdMWEhDdWZPcWtSUUxNT2UzVTFzNV9IMHNfWnJ1S09seXYzVzdzMVZHMXJJTzRYM0pic0cyYThWUkxoR0xJdHVnVkZTR3EzYW9STHhrY3YzU2Ryc2lfN0ZjNzZkbkdNZjVZcXd3c3g4YURFSGwyWkd1NGdqcjFicFVhMmdGQTlYaWt3Wi1lU2VsNk1JcHNrZDNXUlNzOXdZcmYwdlNqS1haRXBm?oc=5",
+          "publisher": "3 Added Minutes",
+          "kind": "article",
+          "snippet": "Branthwaite, Dewsbury-Hall & Iroegbunam: Latest Everton injury news and expected return dates 3 Added Minutes",
+          "published": "Mon, 19 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Dewsbury-Hall, Branthwaite & Coleman: Latest Everton injury news and expected return dates ahead of Burnley",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVy1xaGMxa3lSVlowUkIzc0tPSFFxM2F4Z1hyZ3dreW1ZZWZNVHl2YTdPUTlfbzkyZjI5ZmxlbWlnSUtnWmNHZHhWc3hBVFJ3RFNtd004TnU0VGFWSDdVb0pkZVhVNlZ4YzlpakpIYmp4bmRNdV9LTnYxUThpYktvNFBCbUxNLXctZExqc2p1NDAyWHExT1pTUllWR2NQYzBZNFlGYWdVcG4zTXRVRFo4OHpGN3ZvOTk2cUpRWXlhTWYxUXFFZjRKcUVJNm5YN2dpWWRsQVhmZU9wSzBUVkFXbXFRaWU?oc=5",
+          "publisher": "3 Added Minutes",
+          "kind": "article",
+          "snippet": "Dewsbury-Hall, Branthwaite & Coleman: Latest Everton injury news and expected return dates ahead of Burnley 3 Added Minutes",
+          "published": "Tue, 23 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Ballard, O’Nien & Le Fée: Latest Sunderland injury news and expected return dates ahead of Aston Villa match",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZm9CZGxLTUJXR2NsbndjZHlqZGdIWHZ3S1BrVFdrS2FIdmw4eVozMWZ6OWFFM3NrZTdlNzJzd1RyQmRQQ0ZPVTZPNGtWZlVDUTVqcWM0UzJjU01MS0U4bzNCeHJYd0xiZm8yVFNNVHJscjRwVkRUWHBDYi1GUVgxQ3puRzBtZXFQSkhtOGlVWmFlX3paQ09BN3BJdlNtT1IzSHc2U0JzaFNUV3dUSjEtZ0xSWDdTcFdSRnc?oc=5",
+          "publisher": "3 Added Minutes",
+          "kind": "article",
+          "snippet": "Ballard, O’Nien & Le Fée: Latest Sunderland injury news and expected return dates ahead of Aston Villa match 3 Added Minutes",
+          "published": "Wed, 17 Sep 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Ballard, Le Fée & Roefs: Sunderland latest injury news and return dates ahead of Newcastle clash",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORlhCcXlHVmQ4RUl0RElpRkVmaVhIcHUyazVrS1RaWEo3OHd1bDlEMHR3Q2dBdHBkTGtDbVFMMGxoazc1eWp5WTU2ekVBOWxCNFpYRXRQd1BFV2VkclFLUmRnOElKLWkxUnhzTGY1c0dmYVVlMjUyMEpwc0p5amhqa3dPRmxRS3cyRWl4N0J4UHFtd3dzSTNKbW85bm9LRklGNEZQcG1BcV9IT0hxMjNjTnFjSlkxUktLMkZod0xYY1Zadw?oc=5",
+          "publisher": "3 Added Minutes",
+          "kind": "article",
+          "snippet": "Ballard, Le Fée & Roefs: Sunderland latest injury news and return dates ahead of Newcastle clash 3 Added Minutes",
+          "published": "Thu, 19 Mar 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "liverpool-open-talks-crystal-palace-ismaila-sarr-transfer-474c9833",
+      "slug": "liverpool-open-talks-crystal-palace-ismaila-sarr-transfer-474c9833",
+      "sport": "soccer",
+      "headline": "Liverpool 'open talks with Crystal Palace over Ismaila Sarr transfer after ENDING Yankuba Minteh pursuit'",
+      "blurb": "Crystal Palace rebuff Liverpool approach for Ismaila Sarr - The Athletic The New York Times",
+      "summary": "Yankuba Minteh and Jean-Philippe Mateta: Crystal Palace rebuff Liverpool approach for Ismaila Sarr - The Athletic The New York Times Sarr desperate for Liverpool move as Crystal Palace fume at Reds talkSPORT Ismaila Sarr: Liverpool explore move after failed Yankuba Minteh bids BBC Aggregated from The New York Times, talkSPORT, BBC, Metro.co.uk, footballtoday.com and 11 more.",
+      "category": "injury",
+      "published": "2025-12-01T08:00:00Z",
+      "updated": "2026-09-03T15:37:00Z",
+      "players": [
+        {
+          "key": "minteh",
+          "name": "Yankuba Minteh",
+          "slug": "yankuba-minteh",
+          "pos": "MID",
+          "team": "BHA"
+        },
+        {
+          "key": "mateta",
+          "name": "Jean-Philippe Mateta",
+          "slug": "jean-philippe-mateta",
+          "pos": "FWD",
+          "team": "CRY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ismaila Sarr dream transfer amid Liverpool interest as stance perfectly clear",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUXI2VFhNN0xVNU1IWklTT01wOFExZzlzSjdlUXdoV1p2NnAyaEFGZ0JwcU5Va1ZaRFJrMGROSDNPUEo1alJZbjRmODVCWXBFTWlhTDdYbWdWWWF6aE1NYlVkUzBFVGZFWFRGcWd3ZHJkZ3J4QW8ycW11b3ZaRHBLdWVhY2x0UWY1SmFrQVJ0eUhabDZReUZN0gGcAUFVX3lxTE85djhNS3oxb1haOXBPbnZRc3hGUjdPZU85UXZzTXZENjR5c0RZNWF3ZnhBekR6bzlyaUJxbWUxaDZwVjMyaGJPb2JGN3JGb2QtXzFaRTVlZkppQkpFS3JOVkRQTTZFV1RPUlY4eTQ3WVJBV2ltRWxLZjJJNlVlWHpNd2ptblh6c2RaX1BsUl9pNm9nSzNxeE1FN1ZZTA?oc=5",
+          "publisher": "Daily Mirror",
+          "kind": "article",
+          "snippet": "Ismaila Sarr dream transfer amid Liverpool interest as stance perfectly clear Daily Mirror",
+          "published": "Thu, 03 Sep 2026 15:37:00 GMT"
+        },
+        {
+          "title": "Ismaila Sarr agent reacts to £50m Liverpool transfer miss with impassioned statement",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeXN6OXdfX25wLTRHeWloMnpEOFl5NTdLNklwaU16OVdoZ2pGd0NQUWd3SS1YNU9GZnFtejh6dHNXR2ZOZnBlS2Z2eW9OLVFtS1djdDlMTjhnY0xZTGVTQmlOYTd0SmJUbUtIZ0w0c0hFcEZ0ZVA0OWtNZjZpbk9IV0xwX2dGU0RBYVFPVzliRjVVRzZ2YlBwNGJnX0NVWFZSLWU3NUJ4LXE?oc=5",
+          "publisher": "Football365",
+          "kind": "article",
+          "snippet": "Ismaila Sarr agent reacts to £50m Liverpool transfer miss with impassioned statement Football365",
+          "published": "Wed, 02 Sep 2026 10:11:49 GMT"
+        },
+        {
+          "title": "Liverpool transfer news: Reds continue talks with Crystal Palace to sign Ismaila Sarr",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQRkNRLWJiSm03UHFIVGxFUy1rcmYwNmtNTXZRUWZHNmVwSkpSUlp3bkNDNVdGYmRTMy1adlNSb3lZTU5UZjZGbTJIOC1uNWpLNjNXbldYbzE2SFdDV1MzN2hSeV9XRXJZZkdEQlNBdk0xUmY4Tk9pTTh0aUdYZktOR1NlWHQ4NTRVeGJ1RnRPV1FaS1N0WkRSSXdGWklualpVRVJsTkZFWHdJNjY4dnZUTmtkZWRDVUZEUTBDQmhxY3F4VzZVTWVUUE9YNFh5bDVMbjVJOW5nRkp1SldTczlnZTNpU1ZJMWh3aTR6MDFHdlp4MUIyUVpiNw?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Liverpool transfer news: Reds continue talks with Crystal Palace to sign Ismaila Sarr - Paper Talk Sky Sports",
+          "published": "Sat, 29 Aug 2026 22:25:09 GMT"
+        },
+        {
+          "title": "Liverpool 'open talks with Crystal Palace over Ismaila Sarr transfer after ENDING Yankuba Minteh pursuit'",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOT0puSnM5elJUaDRzY1hRQklOXzBVWHdidmUwVkluWUlpOWowUG5pVzJLOG5jUVdZcTkyMi15M3BMaDZlWnJMOHdYMjRBS0VyY2ZwQmJGTWp0cXJpNDNINUxwS1hkb1FZWEVhQmxhdVFzdS1weHNhSEJQWkhKLVV3Ukh5QTRNOFZkRGFFQUxfYmE?oc=5",
+          "publisher": "The Sun",
+          "kind": "article",
+          "snippet": "Liverpool 'open talks with Crystal Palace over Ismaila Sarr transfer after ENDING Yankuba Minteh pursuit' The Sun",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Romano drops Liverpool transfer bombshell as Reds make £50m offer for Ismaila Sarr",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSk9wRDNMU0ZTdlpOeHJUZl95TENZWGY4MmFhRUI0VFVSNjFiMzcyWndMbV9YWmxrNmU1Rk52LUs4V3dlWl84TkljZ0Rid0VNM1IzM1N0bHkycHR0MDVqbk81VzVxNkZaNzVXc3liMHZCMU00NEdhc19rRTNuZUotVTFCb1NQcW9hNWVGMjRn?oc=5",
+          "publisher": "Football365",
+          "kind": "article",
+          "snippet": "Romano drops Liverpool transfer bombshell as Reds make £50m offer for Ismaila Sarr Football365",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool Make Big Ismaila Sarr Transfer Decision on Deadline Day",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSU51ZUprbjNNX2lwUWhfYWhndDZKMHZEeDV5cmZQTGxBZU1nNmRwN0xfcl9TeXU1T2drZ3N5Mmo3dW5OVUFqdmY2bTB3VXFuckFpZWdjSVdSa0R6eHdTSDJZN1RPMnpjY3RzODJqQ0hyQzZKWUVwaXVtNFNqOFkzb05SMEZhVDJ6UmNwMFQzaVNaeVNlclE?oc=5",
+          "publisher": "GiveMeSport",
+          "kind": "article",
+          "snippet": "Liverpool Make Big Ismaila Sarr Transfer Decision on Deadline Day GiveMeSport",
+          "published": "Tue, 01 Sep 2026 11:16:12 GMT"
+        },
+        {
+          "title": "Ismaila Sarr 'makes Liverpool transfer demand' in meeting with club owners",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm1aQ3Nsal90VS1EVmRyM3prUm9JNXlYWC1HWl9XLVNaME9CbWxidV9ZdDNnYUdTSkRneHJVQ3RjdXFoMUFkUmNuNkdqeEJRZWh1Y2EyZENjWkhKRk5UTWhwdlhoci0xRnNUZW5MMDRya2N4eG1Vb1k4Wm8zc0pZdWdWZ2ZUdWdEdTczVlFzdWx1SVNueGQ3UGdPOWpGZ2NWRDJDNNIBqgFBVV95cUxNbGNUUzlmakIyVUJVa2RZVmY2dkVON05fVVY2UmZqQ1FZYkdEMEVrYlc4eUNTRDVNdWJLT05xOHpZZWNLT2hwaWZMdXhfaFdMZmlXQVRsX3g2VHQ3dGN5WGVJRHhIMzc2ZEpJbmlBZ3BtejJZR2EyaHBnb1FBUzZLMkN3LWdJZndEenJwQ21xQ21zR3hqMFlEOFFZZjI1dlItYy1pYmd4SGpUUQ?oc=5",
+          "publisher": "Daily Express",
+          "kind": "article",
+          "snippet": "Ismaila Sarr 'makes Liverpool transfer demand' in meeting with club owners Daily Express",
+          "published": "Sun, 30 Aug 2026 21:46:00 GMT"
+        },
+        {
+          "title": "Liverpool transfer disagreement as major concerns raised over Ismaila Sarr decision",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYzF3Vmk0RlM3cXd5QUxSS3h6ekRtYXh0NXpYOVZUSlhoYzRLRWxuanNYc0tYdEpoRHMwSWZFQ0VuSXNLYTNJeDZLMzlRU3dTRmFNaV9pY1Uwdnc5ak94X1p6R2ZTMkt2dXNRaEJZcVpXUXBZSzF2aVExcklXWGdkekVmdEc3eFMzQXU2ZDdZUTVWM3EyRE9Z0gGcAUFVX3lxTE1vTVZVbl9ZREgtdENKYlZDRXNDX2lFOEZvTk5WMEtwRS1xUGY1RWJNcDFERTdQUmVxSFNram5aRWlJdkxzanZlVkpxMGRoX2Q5akF3dUVSR3l5OWFmTm01UmZWcjFGVHFsLVlhMVBNUlU3dWtjSUtLSFdobm1QUC1ZYmo0R3p2WVJ5bFcyQjBMZWJyZEcxWjFCYk50WA?oc=5",
+          "publisher": "Daily Express",
+          "kind": "article",
+          "snippet": "Liverpool transfer disagreement as major concerns raised over Ismaila Sarr decision Daily Express",
+          "published": "Tue, 01 Sep 2026 06:00:00 GMT"
+        },
+        {
+          "title": "Ismaila Sarr has already made his stance on joining Liverpool perfectly clear",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUURyUVRkYkplMmNYZDgwMk1RejYtRHFaNzFDX1ZvY1ZaRDc5ZUJ3NGJDSDA3TW5jRkxUZVVVdldDb3lUeW9IQjFFRkFYdFd1VktYbGF6aTRvNmdVd2JvU1BjRHhRdk82aHRMREVoVkszYnBhVjhIZXlPQ085NEpwSkdYcFRWaC1NMmFvWHV4ZXdaa2tXZkhlVzlJelEzT05FZXlXR0FBUE54Q3R2cXM0WXlYVU42TXc?oc=5",
+          "publisher": "SPORTbible",
+          "kind": "article",
+          "snippet": "Ismaila Sarr has already made his stance on joining Liverpool perfectly clear SPORTbible",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool linked with Crystal Palace winger Ismaila Sarr in €45m transfer rumour",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZnpDaUVId0FsWmI5d1YyeXJkOFZFdVF3bzF5QUZsV2Q1YzhYNzJrTExPcW9YR09xZDhJa21HN3dNYmdaWXhDejVWWTJvRE9HSnFEcUIwRGVXUHhvd3EtS2JsazFXQmZENXE1a0EwMkdqdGRzRlFtOUdFNjVVeVUxbFd4cGQxaTQ4MGpwVVYwS2lTSG8zai1jSXZnSlN5QlNGSjRUb1JJTElhdw?oc=5",
+          "publisher": "AfricaSoccer.com",
+          "kind": "article",
+          "snippet": "Liverpool linked with Crystal Palace winger Ismaila Sarr in €45m transfer rumour AfricaSoccer.com",
+          "published": "Mon, 31 Aug 2026 16:24:44 GMT"
+        },
+        {
+          "title": "Crystal Palace rebuff Liverpool approach for Ismaila Sarr",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdUpzaVE4cE5SbGVscUFxYzcxbjJUT1AzNDVza0pLaUp4c1h6RjlncktLYnk3QkdQUlk4QkZNd1lwc3dvdTFZcGtjSzZVYmxqNWZfWTUwYjZIRlZpT3JBTFp6QXNmcnF2dVVuUFFBMmgxcGtpeWF2MzlhVEhRZjdHOVM3X1BzaGFkTnRRTmtIeURPS3pE?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Crystal Palace rebuff Liverpool approach for Ismaila Sarr - The Athletic The New York Times",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Sarr desperate for Liverpool move as Crystal Palace fume at Reds",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRzMzRVZtckYxZVNSN011ZWRuWXV1bkUtRTk2cGNrMGtSeThBY2dJVDQzZFJZOWo3cUZ5U2Q0UGtGT2xYeGt5NUlpUkR0OVdBTkc5VGplbDBBSEpjazBUQ2I0M2llSTVYbTVOcmV3QnJYRU1RRmF6XzR2YnV4MWE0cUVlamhUQkRHc3ItcWlrbw?oc=5",
+          "publisher": "talkSPORT",
+          "kind": "article",
+          "snippet": "Sarr desperate for Liverpool move as Crystal Palace fume at Reds talkSPORT",
+          "published": "Sun, 30 Aug 2026 21:42:00 GMT"
+        },
+        {
+          "title": "Ismaila Sarr: Liverpool explore move after failed Yankuba Minteh bids",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE13MmZsWEVYSFJLelZtZnVRUWY3MEVLOTc5YTEtVS1yN2lITTRjeE1nTzVZZTRZR0x1VWFVS0FZV3RMQ0JXSWEwSEFoMVNza1VXYmdMcVVDNVVEVlJuQUtTRDhlaVpyUm8?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Ismaila Sarr: Liverpool explore move after failed Yankuba Minteh bids BBC",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Crystal Palace boss speaks out on Ismaila Sarr and Jean-Philippe Mateta's futures",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxORHI1SFJ2V0NEQ0NudmQ0bHc1WWZiS2R5TWgtQ0RRbmNyUXdXTDhYcWZaSGQwckdJTnRVdHFPQVVtMFgydFo5eXdXVjltT1UwdUpDOURJYWxpY1UwUXdSZUlEVlRJN3BPMEJZT0xEc3lMcHNQZWFYSXdGNHRUbFlKVUZncVYzQ1FhQ0gxRjZEdjVMU0tzVlFqb0p5aGYzVnNlMWdweFRJdFZENXl0TmFr0gG0AUFVX3lxTE5UaFlqM3JTemZveXZlMUt6VmZZWncwWE5ONURfSFFvUnd5M1JwWURuSUNRbXpraldmQjNSSV9lZkJ6c25rRG5ETzdrYVBLeGV6cHZDcWlZYVZzN1YybGJKSDJFT0FTN3hlNXNIdHZVVGt5eXlXN3NnbXBpTjBkdXNvUlZjMUk5VU5nekNiZUhmM21vbEdlTlY4T21qaUpmcWFaLXdLX01BZUpKVEt5NF9WZG93Xw?oc=5",
+          "publisher": "Metro.co.uk",
+          "kind": "article",
+          "snippet": "Crystal Palace boss speaks out on Ismaila Sarr and Jean-Philippe Mateta's futures Metro.co.uk",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Crystal Palace reject Liverpool’s £50m bid for winger Ismaila Sarr",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQlFId1pNM1I0cGdDSmxVTHhKeGRaaV9pZ09VUC10bGpXSWRWMGxyVGw5RWVqOFRaSXMzQkZ2bWkwdUN2cThTRnBvTnJHcjdsamhSZUtOZktLOVFxUWtxeWktalpZUU5nRkh0aWhHVzBxTklqNWk3VmpCMFM2b1ROcTJRMm5hMHhvTVlXYjRUVHp6My0xc0ZFamUteGQ2TFVPU1EwdA?oc=5",
+          "publisher": "footballtoday.com",
+          "kind": "article",
+          "snippet": "Crystal Palace reject Liverpool’s £50m bid for winger Ismaila Sarr footballtoday.com",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Crystal Palace, squad depth, and a window into their immediate future without Sarr",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVV83SUc0TGUtWXZ1dXptcFJtZzFrSk96bTk1YXB3cW9kTVYzV25PNFZBUThPb1JJWi1EYmJlbFZxcmM3ZGtvS0Vqako4enJBSTRZaHQ1dG5iMDIzRUlVd0dXY2dNbEoyWjk4c3lfWHNhbmlzZ3ltUmJaMVlNWHY4U0ZIa2xvc1hLQ3NKOElQMnVqLUVaUVdBYWVmNHVRMmNwM2lrZGRkOElNbVZjV19sOTNaYw?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Crystal Palace, squad depth, and a window into their immediate future without Sarr The New York Times",
+          "published": "Mon, 01 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Crystal Palace reveal Sarr injury latest before Premier League clash",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPN2otQkdaV3ZSOU11emdueVpvR002RS1xdG00SVZTRkJXR29xa1BYNV9McTZKZDFxTUdCUmR5UXBxUDRBUTNLTmtIeVNvbjdDR1lZbXo4Wng5cnNJSXk1cFZLcGVBUG9KakNyYkJsTXQtTEVVMElpUXI1d0UwTWt0V29xT1ZUVWlseWZSeXdRUFNPLUxoLWt6WVlB?oc=5",
+          "publisher": "London Evening Standard",
+          "kind": "article",
+          "snippet": "Crystal Palace reveal Sarr injury latest before Premier League clash London Evening Standard",
+          "published": "Tue, 02 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Ismaila Sarr injury update ahead of Crystal Palace's midweek trip to Burnley",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcUdkX09XOXZ5Z2NHemNvQ2liRTZLYnljV3F6RTBXTG5BRndMcjBhQm56TGdHa2dkZVVsMnBGYlo0QVdjVWJ1V3N3MHAzbnRlaS1sLVNwLTJReWQ3cVd6c0thRDAwdmJMUnZBcWZtME53blJHZTd4WC1SMGtNUE9lWWdtYlJGQ2NMbTduc0w3U3cxcFBjWS1oaVVSTUF1LWZlOUxWNkh6TlQ4MXhXQ3k00gG0AUFVX3lxTE5fTUVpYzJTUFdoWmFsNlNhdGJpbF9vNnVBc0REV2NCcjJ1eDZQU2UwVlh6SDlwNVdSUS1zX3ZkUTRGOTZhR2JzRkZHUGViTzhMUHZWTUFvWGZ5TnpiemE0dDF5Vjh4Q2t2cmxJY0pfRjBKWHo5WnotTWM3d3dRODJ0M2pkRHJqZWNrMUhFaV9qa3dJc0xTbGRqQXhCS0tIbkg2RDJobjhzMEFYSUhvb2lwalpybA?oc=5",
+          "publisher": "Metro.co.uk",
+          "kind": "article",
+          "snippet": "Ismaila Sarr injury update ahead of Crystal Palace's midweek trip to Burnley Metro.co.uk",
+          "published": "Mon, 01 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Ismaila Sarr's Agent Posts Stunning Statement After Failed Crystal Palace to Liverpool Move",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUEZKSFktUnEzeVRnaU0ta0lUQWQ4VnktLUdRSDN5NkczRVhQSTNOSDZZZlZlS0FKeDZBXzdwTVhiOEN2TU04N29ja0N5UHQ0b3hIVXkyaDg4VU1MZWYzMHdpVkpISjVGbHRqdVhMenRINEdBYVd6bm1Na1piRV9XQ0Nxb3g4U3pCNlBrYzlyOWxwMTJreHBFem9VajlKaFU?oc=5",
+          "publisher": "GiveMeSport",
+          "kind": "article",
+          "snippet": "Ismaila Sarr's Agent Posts Stunning Statement After Failed Crystal Palace to Liverpool Move GiveMeSport",
+          "published": "Wed, 02 Sep 2026 09:37:57 GMT"
+        },
+        {
+          "title": "Romano: Liverpool Make £50m Bid to Sign Crystal Palace Star Ismaila Sarr",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTUNOYlM2WUtTN2tjU3VoUW4wQ2RJVTJiQm1NNklicjdTSEdNYlcxYkd4cFRUb1ZfZHJDaTcwTlBTVW4xeHptanBNU3lDd2psajcza3FSR1NjcVFxNl9lampKWDEyRWNVOUFJQjZ4M3hBTUdOOG5HeFVSLTYxOWdqRg?oc=5",
+          "publisher": "GiveMeSport",
+          "kind": "article",
+          "snippet": "Romano: Liverpool Make £50m Bid to Sign Crystal Palace Star Ismaila Sarr GiveMeSport",
+          "published": "Wed, 26 Aug 2026 11:56:39 GMT"
+        },
+        {
+          "title": "Liverpool in ‘discussions’ to sign Crystal Palace’s Ismaila Sarr",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQ1M3TW9aV0l1RnU2YzA1RVVXZlBZaDV0Nm5DV0g5b0lNVWtBZExPb1dHSWRtOHpHeTBxRm5uNVZZUkpBbzgzRlNvZ0tKRzhuVzZYd0pvZjNTSGcta0xpXzlXbEZHd2J5Tzd0bHViMnNzOXlGOWVvXzdJbmR3Z3U4bWhYZ1lGcnZ0Sk9EUzdKeUFVd0kxeGItbTJYZDV2UQ?oc=5",
+          "publisher": "football-talk.co.uk",
+          "kind": "article",
+          "snippet": "Liverpool in ‘discussions’ to sign Crystal Palace’s Ismaila Sarr football-talk.co.uk",
+          "published": "Mon, 31 Aug 2026 17:01:12 GMT"
+        },
+        {
+          "title": "Crystal Palace decide Ismaila Sarr asking price due to increasing interest",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSHR4ZWRKQVZTeGREY3FhOGNLMF9waHlULXk4V2NHU0RKVm8zRXUtVVJjbFBxc2IwaXVPZ2RmZUpORkpVVnczc3EtZW5mS0FNYlVlUEZQUGQ4ZFYycm91ejNqa2VlVjhhLTNxN3F4UEs3akVvbWgwNXk4RkRGX2t4alpuSlVQbnFlZ29Bcm1WamZBOVXSAZgBQVVfeXFMTlRGRDc4Vl9RbC01UlpCbEU4bFIxUUp6ZzRXRm1BYlI2NlNBOFh1eVBKdWEzT0dsREpTaFBYUVBSamhQX0VKSHowZEVEQ2tZeXZjZ3ZiY09ORjRBSVFWQjNTZzJ4WWpINm4xMzRGN2diZmlVNEdaTlZ2N05WSThlSUpxV0tnY1lJUjNUZzVKUDdjUXZFWDNaU0c?oc=5",
+          "publisher": "caughtoffside.com",
+          "kind": "article",
+          "snippet": "Crystal Palace decide Ismaila Sarr asking price due to increasing interest caughtoffside.com",
+          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -13878,8 +14115,8 @@
       "slug": "morgan-rogers-transfer-why-arsenal-made-aston-villa-66471f04",
       "sport": "soccer",
       "headline": "Morgan Rogers transfer news: Why Arsenal have made Aston Villa star their top forward target this summer",
-      "blurb": "Aston Villa transfer news: Why are key players leaving?",
-      "summary": "Morgan Rogers: Aston Villa transfer news: Why are key players leaving? Chelsea star favoured Arsenal transfer and made £117m request Metro.co.uk Morgan Rogers transfer news: Why Arsenal have made Aston Villa star their top forward target this summer Sky Sports Aggregated from bbc.com, Metro.co.uk, Sky Sports, Daily Mirror, India Today and 4 more.",
+      "blurb": "Ezri Konsa: Arsenal preparing offer for Aston Villa defender as Morgan Rogers talks continue - Paper Talk Sky Sports",
+      "summary": "Ezri Konsa: Arsenal preparing offer for Aston Villa defender as Morgan Rogers talks continue - Paper Talk Sky Sports Arsenal transfers: Aston Villa to demand British record fee to allow Morgan Rogers sale - Paper Talk Sky Sports Chelsea star favoured Arsenal transfer and made £117m request Metro.co.uk Aggregated from Sky Sports, Metro.co.uk, Daily Mirror, India Today, AOL.co.uk and 4 more.",
       "category": "trade",
       "published": "2026-04-01T07:00:00Z",
       "updated": "2026-09-03T19:34:00Z",
@@ -13972,6 +14209,22 @@
           "kind": "article",
           "snippet": "Aston Villa transfer news: Why are key players leaving? bbc.com",
           "published": "Thu, 20 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Ezri Konsa: Arsenal preparing offer for Aston Villa defender as Morgan Rogers talks continue",
+          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNcFNqTXU1aERLRk9tOGRqQmkyaXI1ZVlJTGpKc0xMQ2VuZmN5bHF6N1B4Uk9TT1E0RGFyNF9uZ1dZalRRUnRlRlJUTGlFQjZ3b0JWRTR5WlFoM1p6ODZ2UTJaU0o4OHdJVmpsQWltVTBZaUNnbGxwWW9RUGdXZ3B2dDZRR2hsWklhOERxU29RY2RZRm1DVHFxbHVINndfcjhOT0ctdnZkaWJWOGJEX2liSl9FSFhoUmQ2ZUNLZ2pBam9ZVy1DTlc0S2haOGZhVHY5T2hkNFdFNkNxb2UtVzFMWlRfV2QtWm5fQ1VWUTg2Y19QWGFFSkZaeXl6a25kdC1xc1E?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Ezri Konsa: Arsenal preparing offer for Aston Villa defender as Morgan Rogers talks continue - Paper Talk Sky Sports",
+          "published": "Fri, 17 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal transfers: Aston Villa to demand British record fee to allow Morgan Rogers sale",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNMjhvckE5UHh2N28tZGxVM2FzNnFtRFpBSWVmNllXUktJaUpKVUZJekZZREpiam1feWpBTnhreklJaUhWcXNoRWdjWU9JWDhYR0s1SVFmZE9SQmNqNkRjSW5vZlpyVDlVZDdnRGd0MUM2TXBsdmhWSVhOWUl2d1RGenJsczR6VTlDLTRlb0k0dmk0ZTJucUpnWTFTV0dFOExVYTRPZWRBNEh4dmJiU01uM3g5Q1NLV0lTZlJOMGVfUEFZRzlPcHk5VFJWeVFQS3hGVnhMeEhnbzdZNXA3U1RtOW5adHdGU0lnRGJaMFI2Vk5xeHFISExOcTNscw?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Arsenal transfers: Aston Villa to demand British record fee to allow Morgan Rogers sale - Paper Talk Sky Sports",
+          "published": "Mon, 06 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -13980,8 +14233,8 @@
       "slug": "where-transfer-window-still-open-nine-countries-premier-62ff6a34",
       "sport": "soccer",
       "headline": "Where is the transfer window still open? Nine countries Premier League clubs can still sell to",
-      "blurb": "Premier League transfer windfall a lifeline for ailing French clubs France 24",
-      "summary": "Premier League transfer windfall a lifeline for ailing French clubs France 24 Premier League transfer windfall a lifeline for ailing French clubs Soccer America Brighton & Everton are the only current Premier League clubs to record a transfer 𝙥𝙧𝙤𝙛𝙞𝙩 across the past five seasons 😎 x.com Aggregated from France 24, Soccer America, x.com, Laodong.vn, Yahoo Sports and 7 more.",
+      "blurb": "Premier League Transfer Windfall A Lfeline For Ailing French Clubs https://t.co/Ntww7D6jEq x.com",
+      "summary": "Premier League Transfer Windfall A Lfeline For Ailing French Clubs https://t.co/Ntww7D6jEq x.com Premier League: Are transfer fees actually bigger now? Where is the transfer window still open? Aggregated from x.com, BBC, Yahoo Sports, Anadolu Ajansı, FotMob and 7 more.",
       "category": "injury",
       "published": "2025-09-02T07:00:00Z",
       "updated": "2026-09-04T03:03:28Z",
@@ -14106,6 +14359,22 @@
           "kind": "article",
           "snippet": "Premier League and the transfer fever that has no stopping point Laodong.vn",
           "published": "Mon, 27 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League Transfer Windfall A Lfeline For Ailing French Clubs https://t.co/Ntww7D6jEq",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE92bDBocmM5ZHc4MDAxakJiaVF5RFQ1VnVMYTdMTWZuLXhwVEZ5MlEweTBrUWRQRUc1djF5Q3NRUVdLS3JwdUZOUHk3MmtfS2RSNlg1WEdQUTV4S003Mk51eG9R?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Premier League Transfer Windfall A Lfeline For Ailing French Clubs https://t.co/Ntww7D6jEq x.com",
+          "published": "Fri, 04 Sep 2026 02:35:43 GMT"
+        },
+        {
+          "title": "Premier League: Are transfer fees actually bigger now?",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9GTTNWT2Q5aDZZd0pkYkdoRmxMVGlvNkktTmlJNGhBWDNQcTNNVmxMdG9UYmtXV1puUkpNV3plWnpRRmZLcjlOUmdtSTdIYmVHd05XN3g4cV9MZENUanJaekdzYmczbjQ?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League: Are transfer fees actually bigger now? BBC",
+          "published": "Wed, 22 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -15126,6 +15395,91 @@
       ]
     },
     {
+      "id": "transfer-every-premier-league-club-s-plans-summer-3f1cf23e",
+      "slug": "transfer-every-premier-league-club-s-plans-summer-3f1cf23e",
+      "sport": "soccer",
+      "headline": "Juventus transfer news: From Alisson to Calafiori - the ten players on Spalletti's summer wishlist with six Premier League targets",
+      "blurb": "SIX Premier League players win Africa Cup of Nations Premier League",
+      "summary": "Riccardo Calafiori and James Trafford: SIX Premier League players win Africa Cup of Nations Premier League How the Laws of the Game are changing in 2026/27 Premier League Premier League Premier League 2025-26 preview No 17: Sunderland The Guardian Aggregated from Premier League, The Guardian, Squawka, Football365, Sky Sports and 1 more.",
+      "category": "trade",
+      "published": "2025-08-14T07:00:00Z",
+      "updated": "2026-09-03T08:01:55Z",
+      "players": [
+        {
+          "key": "calafiori",
+          "name": "Riccardo Calafiori",
+          "slug": "riccardo-calafiori",
+          "pos": "DEF",
+          "team": "ARS"
+        },
+        {
+          "key": "trafford",
+          "name": "James Trafford",
+          "slug": "james-trafford",
+          "pos": "GKP",
+          "team": "LEE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "How the Laws of the Game are changing in 2026/27 Premier League",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNck91VDZfRUlfZnhsOVNTaTMxdnR5c2ppcFNyRnAxb3BDUkplc3pqM293R3lIUUJ4SEk5OWNzZFVYSjFmLTRWTXBWZFF6WkdpR3hERnp5SEEyUjZpOWV2UTFTbEtYX09GdGRZMHBfRUY3bjQwN3JVS1RXZ2ZmMThYZ0V0YUtaQy1xNVE?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "How the Laws of the Game are changing in 2026/27 Premier League Premier League",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League 2025-26 preview No 17: Sunderland",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOcWc1bVFNWGZTRU5MRWRJejBKeF95ZDlOYzhNUVhsNFpYNVZvRVlIdTRWb1Y2NmxySFROZEg1XzhiUkZmQXc2NnBScWpqcWZFQU9rTkxndkpVNnBab1F6Smtqei1WUkdrVk1OTURwWGlrUkFJQzVodk5tZnRkUUNnVHlweHFJYlRPV19XZU1nUjU2YklHelF3UDNmM0o?oc=5",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "Premier League 2025-26 preview No 17: Sunderland The Guardian",
+          "published": "Thu, 14 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Every confirmed Premier League transfer in the 2026 summer window",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWUpKTE9OR0tYTEJqU3VmOURGeTA0Yjhvb19lZUF5RzNzMklmWWxtNGZUQzhQaUhLbHdhWjJrSUM1S3lSQ01KNUxERmRrdERKQlAzZTJtWl9YdjFiVGw2cTc2ekpsZDdVVG11anJyVHd2anZpcmc3ZkwtUzVCT19XSnZYX0lpV1FRVlU3LUdCbFpSQVlx?oc=5",
+          "publisher": "Squawka",
+          "kind": "article",
+          "snippet": "Every confirmed Premier League transfer in the 2026 summer window Squawka",
+          "published": "Thu, 03 Sep 2026 08:01:55 GMT"
+        },
+        {
+          "title": "Trafford tops ranking of 10 best Premier League signings of summer 2026",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPODg2d2dsb0NtLTNPejVod3U1LWVnQ0RnUXh6Ulh5bmtqNXZxZnZpZ1RBV1RWQlZTVG1RVEJDVTk2Q3p6dkstc19tYkxNT25XekRqZTJGdW5KMWxGZFYyYUhpYUFzdzdsOENoV0pBUUZVT1pCbUp6bDVNYW1XWGlDUUd3TW0zNWlrOGZLc0RiNU9VdUZDYVlQQXdSTQ?oc=5",
+          "publisher": "Football365",
+          "kind": "article",
+          "snippet": "Trafford tops ranking of 10 best Premier League signings of summer 2026 Football365",
+          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Transfer news: Every Premier League club's plans for summer window 2026",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZlg1NlItd0VMbWVaR3dkV3FkQWIzWlg0SWdFeS1VTHFOVVBIb1Q4bko3QnZackdzTDc0MjZ4TkdvT18tVGNCZ1U2OEZ5ek1zTXJhZkZsY014MkZ0UGhOdlR6UlRIMG9RdFRGYmw3QkR2LUpOYVFDLXh5aU1yZ1hPaXlhVHRDTG5rUkVQRWR6TWc3bXVsbDRzeUhMdUR6MUZaNFJZSUVoV0tIb3RmNmZSbThyUGpPQmNvRHZFV3NIbnl5Zw?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Transfer news: Every Premier League club's plans for summer window 2026 Sky Sports",
+          "published": "Tue, 16 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Juventus transfer news: From Alisson to Calafiori - the ten players on Spalletti's summer wishlist with six Premier League targets",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNbWxrenN4NW9PbmY2b1RYTWM4SXpfZmN5TGNhT3dEbXBxOUFSVi1NU1NhWmRQUDI4dWxoWTBlME9adW9DazBBUHhSLU9tWmNlckp5Y3VQY2EydTN5SG0wM2J2WXpmalltN3BwZ1RvQ2s4QWdoNWRxeDRlTk9LZXJrZzlHMUVrVkdFVFAtLUlxTXc3c0dQUF8xN0xZRnZxZ2V0dUJIVmsxLWxWcFdVam54NUJCaHVBMThxOWRyWHRWYkd1aENiNFlNZm1aS3FXU1RBalpzdExVSHBxanB5MngyNnFmQkpXTmdDT2t0anV1TU5uV3ZvMmNvb1hzaEE?oc=5",
+          "publisher": "Sports Mole",
+          "kind": "article",
+          "snippet": "Juventus transfer news: From Alisson to Calafiori - the ten players on Spalletti's summer wishlist with six Premier League targets Sports Mole",
+          "published": "Mon, 13 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "SIX Premier League players win Africa Cup of Nations",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkF2U1g3TWJZbDJ0MTVFb0FGSHN6cmZlSVBmX0cxU1ItaHlTSW9KdjhVV1hBd2cyMEI4NVl2dmJmNTdWUFhzN2lZbi0zT19SRng4bHMxQ1lLRy1ZUW5lTEw5VF9ydzlRVlJRXzVWY3IxUVlyLWZTYkFka0FELVg5TFNaOU9XTEZHeVV2RWppNl9ISG5fLUZkZlFLR1lFSGs?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "SIX Premier League players win Africa Cup of Nations Premier League",
+          "published": "Sun, 18 Jan 2026 08:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "u-s-striker-folarin-balogun-headed-transfer-premier-6da42998",
       "slug": "u-s-striker-folarin-balogun-headed-transfer-premier-6da42998",
       "sport": "soccer",
@@ -15491,6 +15845,59 @@
           "kind": "article",
           "snippet": "VIDEO: Antoine Semenyo's perfect parting gift! Bournemouth star scores 95th-MINUTE winning goal against Tottenham in final game before £65m Man City transfer Goal.com",
           "published": "Thu, 08 Jan 2026 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "everton-eye-free-agent-vardy-25885ee6",
+      "slug": "everton-eye-free-agent-vardy-25885ee6",
+      "sport": "soccer",
+      "headline": "Everton transfer news: Toffees eye shock move for free agent Jamie Vardy after Folarin Balogun deal falls through",
+      "blurb": "The top stories and transfer rumours from Friday's newspapers...",
+      "summary": "Estêvão Gonçalves and Jaidon Anthony: The top stories and transfer rumours from Friday's newspapers... Everton transfer news: Toffees eye shock move for free agent Jamie Vardy after Folarin Balogun deal falls through - Paper Talk Sky Sports Everton weigh up moves for Jamie Vardy or Anthony Martial, Wilfried Zaha could join AC Milan, Estevao Willian considers move from Chelsea. Aggregated from Sky Sports Football, Sky Sports, Friday's gossip.",
+      "category": "trade",
+      "published": "2026-09-03T20:54:27Z",
+      "updated": "2026-09-03T21:34:44Z",
+      "players": [
+        {
+          "key": "estevao",
+          "name": "Estêvão Gonçalves",
+          "slug": "est-v-o-gon-alves",
+          "pos": "MID",
+          "team": "CHE"
+        },
+        {
+          "key": "anthony",
+          "name": "Jaidon Anthony",
+          "slug": "jaidon-anthony",
+          "pos": "MID",
+          "team": "BRE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Everton eye free agent Vardy",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c62jgzxkjypo?at_medium=RSS&at_campaign=rss",
+          "publisher": "Friday's gossip",
+          "kind": "article",
+          "snippet": "Everton weigh up moves for Jamie Vardy or Anthony Martial, Wilfried Zaha could join AC Milan, Estevao Willian considers move from Chelsea.",
+          "published": "Thu, 03 Sep 2026 20:54:27 GMT"
+        },
+        {
+          "title": "Papers: Everton eye shock Vardy move to solve striker problem",
+          "url": "https://www.skysports.com/football/news/12040/13581025/everton-transfer-news-toffees-eye-shock-move-for-free-agent-jamie-vardy-after-folarin-balogun-deal-falls-through-paper-talk",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "The top stories and transfer rumours from Friday's newspapers...",
+          "published": "Thu, 03 Sep 2026 22:30:00 BST"
+        },
+        {
+          "title": "Everton transfer news: Toffees eye shock move for free agent Jamie Vardy after Folarin Balogun deal falls through",
+          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPMU1FcmVicjhGdklvb3lCSklDSzhmVlgtYUY4RnBEUmxwd21hdUFFOEd6eTVydmU5ejBDOUxKUl8zZDk4enBfUUVGT0Y5bldmWTJ0eEZxUjlqMHM0ZFNEOVVDVkdTQ1FiU1E0ZldScEdtZTdSWkUxTHFvZThWQWdSQ21USUV4SWdqa0RUV213TTRpQlhyLW1wOGgwcjJhbk14cDJud2RhOXFkcDA0NmtnV2Jnal80Y0VJVllyaHZFVlNKMVJjOVR5amdzT1FZRWVXWXg4Z1JTX3puNG4yYmhLdnZyUUxOaXE2d3FoY3JnU2tpR1Y5V254UHh6a1ZSOHY4LUlFam56eHQ1UnUyTFVnWlQtYk9sdzg1MWh6emtn?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Everton transfer news: Toffees eye shock move for free agent Jamie Vardy after Folarin Balogun deal falls through - Paper Talk Sky Sports",
+          "published": "Thu, 03 Sep 2026 21:34:44 GMT"
         }
       ]
     },
@@ -16147,55 +16554,94 @@
       ]
     },
     {
-      "id": "everton-eye-free-agent-vardy-25885ee6",
-      "slug": "everton-eye-free-agent-vardy-25885ee6",
+      "id": "liverpool-premier-league-rivals-monitoring-enzo-le-f-657600ff",
+      "slug": "liverpool-premier-league-rivals-monitoring-enzo-le-f-657600ff",
       "sport": "soccer",
-      "headline": "Everton transfer news: Toffees eye shock move for free agent Jamie Vardy after Folarin Balogun deal falls through",
-      "blurb": "The top stories and transfer rumours from Friday's newspapers...",
-      "summary": "Estêvão Gonçalves and Jaidon Anthony: The top stories and transfer rumours from Friday's newspapers... Everton transfer news: Toffees eye shock move for free agent Jamie Vardy after Folarin Balogun deal falls through - Paper Talk Sky Sports Everton weigh up moves for Jamie Vardy or Anthony Martial, Wilfried Zaha could join AC Milan, Estevao Willian considers move from Chelsea. Aggregated from Sky Sports Football, Sky Sports, Friday's gossip.",
+      "headline": "Enzo Le Fee on the Le Bris text that sparked Sunderland move & his Premier League dream for 'incredible' fans",
+      "blurb": "Diomansy Kamara says players must ‘be heard’ Monaco defend halting Lamine Camara’s Chelsea move Ismaïla Sarr’s agent has claimed some African players are treated like “a…",
+      "summary": "Diomansy Kamara says players must ‘be heard’ Monaco defend halting Lamine Camara’s Chelsea move Ismaïla Sarr’s agent has claimed some African players are treated like “a commodity” after Crystal Palace turned down Liverpool’s approach for the Senegal forward and Lamine Camara’s move from Monaco to Chelsea broke down on deadline day. Palace are understood to have rejected a bid from Liverpool for Sarr last week and insisted last season’s top scorer was not for sale. The 28-year-old, who missed the opening two matches against Everton and Manchester City after the manager, Pierre Sage, said he ha Aggregated from Guardian Football, YouTube, OneFootball, Sunderland Echo, FourFourTwo and 1 more.",
       "category": "trade",
-      "published": "2026-09-03T20:54:27Z",
-      "updated": "2026-09-03T21:34:44Z",
+      "published": "2025-05-06T07:00:00Z",
+      "updated": "2026-09-02T22:04:00Z",
       "players": [
         {
-          "key": "estevao",
-          "name": "Estêvão Gonçalves",
-          "slug": "est-v-o-gon-alves",
+          "key": "sarr",
+          "name": "Ismaïla Sarr",
+          "slug": "isma-la-sarr",
           "pos": "MID",
-          "team": "CHE"
+          "team": "CRY"
         },
         {
-          "key": "anthony",
-          "name": "Jaidon Anthony",
-          "slug": "jaidon-anthony",
+          "key": "kamara",
+          "name": "Boubacar Kamara",
+          "slug": "boubacar-kamara",
           "pos": "MID",
-          "team": "BRE"
+          "team": "AVL"
+        },
+        {
+          "key": "e le fee",
+          "name": "Enzo Le Fée",
+          "slug": "enzo-le-f-e",
+          "pos": "MID",
+          "team": "SUN"
         }
       ],
       "sources": [
         {
-          "title": "Everton eye free agent Vardy",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c62jgzxkjypo?at_medium=RSS&at_campaign=rss",
-          "publisher": "Friday's gossip",
-          "kind": "article",
-          "snippet": "Everton weigh up moves for Jamie Vardy or Anthony Martial, Wilfried Zaha could join AC Milan, Estevao Willian considers move from Chelsea.",
-          "published": "Thu, 03 Sep 2026 20:54:27 GMT"
+          "title": "Ben Jacobs OUTLINES Lamine Kamara TIMELINE as Liverpool battle Premier League rivals",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VSHE2YXJ0TV9vQUl0ZG1YLWxQOUhfV2NsY2hzdWxzQ1RuZzhiblRrYUFCRmgzbEQxcXJROThsSk9HZUcwblo0ZTFkTnhqZzBpbU5MVkd3?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Ben Jacobs OUTLINES Lamine Kamara TIMELINE as Liverpool battle Premier League rivals YouTube",
+          "published": "Tue, 01 Sep 2026 12:00:23 GMT"
         },
         {
-          "title": "Papers: Everton eye shock Vardy move to solve striker problem",
-          "url": "https://www.skysports.com/football/news/12040/13581025/everton-transfer-news-toffees-eye-shock-move-for-free-agent-jamie-vardy-after-folarin-balogun-deal-falls-through-paper-talk",
-          "publisher": "Sky Sports Football",
+          "title": "Liverpool and Premier League rivals ‘monitoring’ Enzo Le Fée as Sunderland brace for summer interest",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOSmpYNHdkQlNHSUlGLTFUMVBMTkhITzA4TzRZaDlOVGNBRnZ4TUtiRmUwaWhsbVNEcTdKLW02ejNtVnFlMWYyYTNydmVqZWN1R243cXFOeVV6MFgyLTJrX0ZrVDlGX0k3a3FEYllvWEw5dm5IeUVTdk53dF9mdkkzVXRmZncycVl0dDdueVBWYjhicy1MS0dZbG1LdVc4bE5xVkwtREg0MmRJMU9IaGpXWk9wZFJaMmdpTFF2ME9XcUhidXFydUlkVG5ER3lEcjNBWXYzUlB3?oc=5",
+          "publisher": "OneFootball",
           "kind": "article",
-          "snippet": "The top stories and transfer rumours from Friday's newspapers...",
-          "published": "Thu, 03 Sep 2026 22:30:00 BST"
+          "snippet": "Liverpool and Premier League rivals ‘monitoring’ Enzo Le Fée as Sunderland brace for summer interest OneFootball",
+          "published": "Tue, 21 Apr 2026 07:00:00 GMT"
         },
         {
-          "title": "Everton transfer news: Toffees eye shock move for free agent Jamie Vardy after Folarin Balogun deal falls through",
-          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPMU1FcmVicjhGdklvb3lCSklDSzhmVlgtYUY4RnBEUmxwd21hdUFFOEd6eTVydmU5ejBDOUxKUl8zZDk4enBfUUVGT0Y5bldmWTJ0eEZxUjlqMHM0ZFNEOVVDVkdTQ1FiU1E0ZldScEdtZTdSWkUxTHFvZThWQWdSQ21USUV4SWdqa0RUV213TTRpQlhyLW1wOGgwcjJhbk14cDJud2RhOXFkcDA0NmtnV2Jnal80Y0VJVllyaHZFVlNKMVJjOVR5amdzT1FZRWVXWXg4Z1JTX3puNG4yYmhLdnZyUUxOaXE2d3FoY3JnU2tpR1Y5V254UHh6a1ZSOHY4LUlFam56eHQ1UnUyTFVnWlQtYk9sdzg1MWh6emtn?oc=5",
-          "publisher": "Sky Sports",
+          "title": "Sunderland face Enzo Le Fée transfer battle as Liverpool and Premier League rivals circle - reports",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNTI2TmxISkxMSEJhLUFhbVRFaEJwcHotR3pFY0pNS0UtbG5HYkVLTVJNRmhfTmRlazRyQTJyYVJnR2RwZFVjdkxjejhyWXJXWnVlN2taSlRXQllERE9KeERJTWlqLVAxbXV2WTF5QkdIeTBEQ0VQSnB6UlVrSzNiSm9XbmtkeENHVS1QdS1YQzVxS0pCQmhrMTNaZ09BNmxqR0I0VFBsbmdUOG5DbWVJ?oc=5",
+          "publisher": "Sunderland Echo",
           "kind": "article",
-          "snippet": "Everton transfer news: Toffees eye shock move for free agent Jamie Vardy after Folarin Balogun deal falls through - Paper Talk Sky Sports",
-          "published": "Thu, 03 Sep 2026 21:34:44 GMT"
+          "snippet": "Sunderland face Enzo Le Fée transfer battle as Liverpool and Premier League rivals circle - reports Sunderland Echo",
+          "published": "Mon, 20 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Sunderland have made Premier League signing of the summer and nobody has noticed it yet",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUHowclZXRWdjLV9IdmozbzVENzRoMHpmYTFlNUYwTnI5dlhTQTJMSVpiN2I1b3Z6a2NLYkl6MXVPb1dfTHNUMzVWa3RlRHZJUWdPX3Rvd2hNeWpTY3VFUlE4d25CUGRDN1BNY2JkZVpUeFZ2Y29DLXJNMVh1MVVzNG5ERjViWFEwZDN2Vk9tYzFDajMybVJQWE54THZDSnlUMUtBcFhtNV9Rc1ItM2RPM0NSTXZidkpLTXhmRU56TWVTZw?oc=5",
+          "publisher": "FourFourTwo",
+          "kind": "article",
+          "snippet": "Sunderland have made Premier League signing of the summer and nobody has noticed it yet FourFourTwo",
+          "published": "Tue, 30 Sep 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Enzo Le Fee on the Le Bris text that sparked Sunderland move & his Premier League dream for 'incredible' fans",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYUtXNjc0WWJxMWdfTzlxbFRRdWlnMHlkNG1qeDlWRlltWTBGRFM3ZjVtbWFzTnd0SDU4QVRiVUhWWnVvSWFSc0VudHgwTVZYRHY2OGd4LUU0RjhWWFN5cV9JWXFaZWM1OUFlRWVpR1N0RGUzRHNKODllc3RMcEI4TWxRNlMzVkRCWjkxemNXbk9kWUJOcEY3YUtGREpCZ2V5RjJlanQzVktOdEgwUGR3ZVRLcEZWTlJRV05aUXllc09RYmxWbXp4dU5n?oc=5",
+          "publisher": "Sunderland Echo",
+          "kind": "article",
+          "snippet": "Enzo Le Fee on the Le Bris text that sparked Sunderland move & his Premier League dream for 'incredible' fans Sunderland Echo",
+          "published": "Tue, 06 May 2025 07:00:00 GMT"
+        },
+        {
+          "title": "‘A commodity’: Ismaïla Sarr’s agent wants respect for African players in transfer deals",
+          "url": "https://www.theguardian.com/football/2026/sep/02/a-commodity-ismaila-sarrs-agent-wants-respect-for-african-players-in-transfer-deals",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Diomansy Kamara says players must ‘be heard’ Monaco defend halting Lamine Camara’s Chelsea move Ismaïla Sarr’s agent has claimed some African players are treated like “a commodity” after Crystal Palace turned down Liverpool’s approach for the Senegal forward and Lamine Camara’s m",
+          "published": "Wed, 02 Sep 2026 19:29:01 GMT"
+        },
+        {
+          "title": "‘A commodity’: Ismaïla Sarr’s agent wants respect for African players in transfer deals",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTzRzVlBsMU1takJ6RlNiSDMxQWhYQ2hxN0FqVU1WWUF0dXBxbGh0REUyU0xidUZ0bmxkUzNTSzRyRW4zekQydnF2dURPd19qTUp1QnRMY1VXVnh6Qm9Ncm5CMG1mTy1fU21RZ3ZxLVkwaWpGNkhadFFTc2pWaGNjX2xpbVQxOGRfcGttS0tfNUtZWjktWUV6dmoyWDFTVG52TzFnX2NkSTU4ZnpEeTV3aWQ4d0U0SXU4aWd3WVlQMTJuZzhDQ3ZTblRXUEI?oc=5",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "‘A commodity’: Ismaïla Sarr’s agent wants respect for African players in transfer deals The Guardian",
+          "published": "Wed, 02 Sep 2026 22:04:00 GMT"
         }
       ]
     },
@@ -16363,98 +16809,6 @@
       ]
     },
     {
-      "id": "liverpool-premier-league-rivals-monitoring-enzo-le-f-657600ff",
-      "slug": "liverpool-premier-league-rivals-monitoring-enzo-le-f-657600ff",
-      "sport": "soccer",
-      "headline": "Enzo Le Fee on the Le Bris text that sparked Sunderland move & his Premier League dream for 'incredible' fans",
-      "blurb": "Diomansy Kamara says players must ‘be heard’ Monaco defend halting Lamine Camara’s Chelsea move Ismaïla Sarr’s agent has claimed some African players are treated like “a…",
-      "summary": "Diomansy Kamara says players must ‘be heard’ Monaco defend halting Lamine Camara’s Chelsea move Ismaïla Sarr’s agent has claimed some African players are treated like “a commodity” after Crystal Palace turned down Liverpool’s approach for the Senegal forward and Lamine Camara’s move from Monaco to Chelsea broke down on deadline day. Palace are understood to have rejected a bid from Liverpool for Sarr last week and insisted last season’s top scorer was not for sale. The 28-year-old, who missed the opening two matches against Everton and Manchester City after the manager, Pierre Sage, said he ha Aggregated from Guardian Football, YouTube, OneFootball, Sunderland Echo, FourFourTwo and 1 more.",
-      "category": "trade",
-      "published": "2025-05-06T07:00:00Z",
-      "updated": "2026-09-02T22:04:00Z",
-      "players": [
-        {
-          "key": "sarr",
-          "name": "Ismaïla Sarr",
-          "slug": "isma-la-sarr",
-          "pos": "MID",
-          "team": "CRY"
-        },
-        {
-          "key": "kamara",
-          "name": "Boubacar Kamara",
-          "slug": "boubacar-kamara",
-          "pos": "MID",
-          "team": "AVL"
-        },
-        {
-          "key": "e le fee",
-          "name": "Enzo Le Fée",
-          "slug": "enzo-le-f-e",
-          "pos": "MID",
-          "team": "SUN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ben Jacobs OUTLINES Lamine Kamara TIMELINE as Liverpool battle Premier League rivals",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VSHE2YXJ0TV9vQUl0ZG1YLWxQOUhfV2NsY2hzdWxzQ1RuZzhiblRrYUFCRmgzbEQxcXJROThsSk9HZUcwblo0ZTFkTnhqZzBpbU5MVkd3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Ben Jacobs OUTLINES Lamine Kamara TIMELINE as Liverpool battle Premier League rivals YouTube",
-          "published": "Tue, 01 Sep 2026 12:00:23 GMT"
-        },
-        {
-          "title": "Liverpool and Premier League rivals ‘monitoring’ Enzo Le Fée as Sunderland brace for summer interest",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOSmpYNHdkQlNHSUlGLTFUMVBMTkhITzA4TzRZaDlOVGNBRnZ4TUtiRmUwaWhsbVNEcTdKLW02ejNtVnFlMWYyYTNydmVqZWN1R243cXFOeVV6MFgyLTJrX0ZrVDlGX0k3a3FEYllvWEw5dm5IeUVTdk53dF9mdkkzVXRmZncycVl0dDdueVBWYjhicy1MS0dZbG1LdVc4bE5xVkwtREg0MmRJMU9IaGpXWk9wZFJaMmdpTFF2ME9XcUhidXFydUlkVG5ER3lEcjNBWXYzUlB3?oc=5",
-          "publisher": "OneFootball",
-          "kind": "article",
-          "snippet": "Liverpool and Premier League rivals ‘monitoring’ Enzo Le Fée as Sunderland brace for summer interest OneFootball",
-          "published": "Tue, 21 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Sunderland face Enzo Le Fée transfer battle as Liverpool and Premier League rivals circle - reports",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNTI2TmxISkxMSEJhLUFhbVRFaEJwcHotR3pFY0pNS0UtbG5HYkVLTVJNRmhfTmRlazRyQTJyYVJnR2RwZFVjdkxjejhyWXJXWnVlN2taSlRXQllERE9KeERJTWlqLVAxbXV2WTF5QkdIeTBEQ0VQSnB6UlVrSzNiSm9XbmtkeENHVS1QdS1YQzVxS0pCQmhrMTNaZ09BNmxqR0I0VFBsbmdUOG5DbWVJ?oc=5",
-          "publisher": "Sunderland Echo",
-          "kind": "article",
-          "snippet": "Sunderland face Enzo Le Fée transfer battle as Liverpool and Premier League rivals circle - reports Sunderland Echo",
-          "published": "Mon, 20 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Sunderland have made Premier League signing of the summer and nobody has noticed it yet",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUHowclZXRWdjLV9IdmozbzVENzRoMHpmYTFlNUYwTnI5dlhTQTJMSVpiN2I1b3Z6a2NLYkl6MXVPb1dfTHNUMzVWa3RlRHZJUWdPX3Rvd2hNeWpTY3VFUlE4d25CUGRDN1BNY2JkZVpUeFZ2Y29DLXJNMVh1MVVzNG5ERjViWFEwZDN2Vk9tYzFDajMybVJQWE54THZDSnlUMUtBcFhtNV9Rc1ItM2RPM0NSTXZidkpLTXhmRU56TWVTZw?oc=5",
-          "publisher": "FourFourTwo",
-          "kind": "article",
-          "snippet": "Sunderland have made Premier League signing of the summer and nobody has noticed it yet FourFourTwo",
-          "published": "Tue, 30 Sep 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Enzo Le Fee on the Le Bris text that sparked Sunderland move & his Premier League dream for 'incredible' fans",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYUtXNjc0WWJxMWdfTzlxbFRRdWlnMHlkNG1qeDlWRlltWTBGRFM3ZjVtbWFzTnd0SDU4QVRiVUhWWnVvSWFSc0VudHgwTVZYRHY2OGd4LUU0RjhWWFN5cV9JWXFaZWM1OUFlRWVpR1N0RGUzRHNKODllc3RMcEI4TWxRNlMzVkRCWjkxemNXbk9kWUJOcEY3YUtGREpCZ2V5RjJlanQzVktOdEgwUGR3ZVRLcEZWTlJRV05aUXllc09RYmxWbXp4dU5n?oc=5",
-          "publisher": "Sunderland Echo",
-          "kind": "article",
-          "snippet": "Enzo Le Fee on the Le Bris text that sparked Sunderland move & his Premier League dream for 'incredible' fans Sunderland Echo",
-          "published": "Tue, 06 May 2025 07:00:00 GMT"
-        },
-        {
-          "title": "‘A commodity’: Ismaïla Sarr’s agent wants respect for African players in transfer deals",
-          "url": "https://www.theguardian.com/football/2026/sep/02/a-commodity-ismaila-sarrs-agent-wants-respect-for-african-players-in-transfer-deals",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Diomansy Kamara says players must ‘be heard’ Monaco defend halting Lamine Camara’s Chelsea move Ismaïla Sarr’s agent has claimed some African players are treated like “a commodity” after Crystal Palace turned down Liverpool’s approach for the Senegal forward and Lamine Camara’s m",
-          "published": "Wed, 02 Sep 2026 19:29:01 GMT"
-        },
-        {
-          "title": "‘A commodity’: Ismaïla Sarr’s agent wants respect for African players in transfer deals",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTzRzVlBsMU1takJ6RlNiSDMxQWhYQ2hxN0FqVU1WWUF0dXBxbGh0REUyU0xidUZ0bmxkUzNTSzRyRW4zekQydnF2dURPd19qTUp1QnRMY1VXVnh6Qm9Ncm5CMG1mTy1fU21RZ3ZxLVkwaWpGNkhadFFTc2pWaGNjX2xpbVQxOGRfcGttS0tfNUtZWjktWUV6dmoyWDFTVG52TzFnX2NkSTU4ZnpEeTV3aWQ4d0U0SXU4aWd3WVlQMTJuZzhDQ3ZTblRXUEI?oc=5",
-          "publisher": "The Guardian",
-          "kind": "article",
-          "snippet": "‘A commodity’: Ismaïla Sarr’s agent wants respect for African players in transfer deals The Guardian",
-          "published": "Wed, 02 Sep 2026 22:04:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "man-city-xi-west-ham-starting-lineup-confirmed-cc905eee",
       "slug": "man-city-xi-west-ham-starting-lineup-confirmed-cc905eee",
       "sport": "soccer",
@@ -16602,83 +16956,6 @@
           "kind": "article",
           "snippet": "Xabi Alonso’s side have scored seven and conceded five in two wins so far, a product of the squad’s constant churn Sign up for our free newsletter here Two Premier League games played for Chelsea under Xabi Alonso: two wins and seven goals scored. It’s the sort of start that woul",
           "published": "Mon, 31 Aug 2026 14:40:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "transfer-every-premier-league-club-s-plans-summer-3f1cf23e",
-      "slug": "transfer-every-premier-league-club-s-plans-summer-3f1cf23e",
-      "sport": "soccer",
-      "headline": "Juventus transfer news: From Alisson to Calafiori - the ten players on Spalletti's summer wishlist with six Premier League targets",
-      "blurb": "Juventus transfer news: From Alisson to Calafiori - the ten players on Spalletti's summer wishlist with six Premier League targets Sports Mole",
-      "summary": "Riccardo Calafiori and James Trafford: Juventus transfer news: From Alisson to Calafiori - the ten players on Spalletti's summer wishlist with six Premier League targets Sports Mole How the Laws of the Game are changing in 2026/27 Premier League Premier League Premier League 2025-26 preview No 17: Sunderland The Guardian Aggregated from Sports Mole, Premier League, The Guardian, Squawka, Football365 and 1 more.",
-      "category": "trade",
-      "published": "2025-08-14T07:00:00Z",
-      "updated": "2026-09-03T08:01:55Z",
-      "players": [
-        {
-          "key": "calafiori",
-          "name": "Riccardo Calafiori",
-          "slug": "riccardo-calafiori",
-          "pos": "DEF",
-          "team": "ARS"
-        },
-        {
-          "key": "trafford",
-          "name": "James Trafford",
-          "slug": "james-trafford",
-          "pos": "GKP",
-          "team": "LEE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "How the Laws of the Game are changing in 2026/27 Premier League",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNck91VDZfRUlfZnhsOVNTaTMxdnR5c2ppcFNyRnAxb3BDUkplc3pqM293R3lIUUJ4SEk5OWNzZFVYSjFmLTRWTXBWZFF6WkdpR3hERnp5SEEyUjZpOWV2UTFTbEtYX09GdGRZMHBfRUY3bjQwN3JVS1RXZ2ZmMThYZ0V0YUtaQy1xNVE?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "How the Laws of the Game are changing in 2026/27 Premier League Premier League",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League 2025-26 preview No 17: Sunderland",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOcWc1bVFNWGZTRU5MRWRJejBKeF95ZDlOYzhNUVhsNFpYNVZvRVlIdTRWb1Y2NmxySFROZEg1XzhiUkZmQXc2NnBScWpqcWZFQU9rTkxndkpVNnBab1F6Smtqei1WUkdrVk1OTURwWGlrUkFJQzVodk5tZnRkUUNnVHlweHFJYlRPV19XZU1nUjU2YklHelF3UDNmM0o?oc=5",
-          "publisher": "The Guardian",
-          "kind": "article",
-          "snippet": "Premier League 2025-26 preview No 17: Sunderland The Guardian",
-          "published": "Thu, 14 Aug 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Every confirmed Premier League transfer in the 2026 summer window",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWUpKTE9OR0tYTEJqU3VmOURGeTA0Yjhvb19lZUF5RzNzMklmWWxtNGZUQzhQaUhLbHdhWjJrSUM1S3lSQ01KNUxERmRrdERKQlAzZTJtWl9YdjFiVGw2cTc2ekpsZDdVVG11anJyVHd2anZpcmc3ZkwtUzVCT19XSnZYX0lpV1FRVlU3LUdCbFpSQVlx?oc=5",
-          "publisher": "Squawka",
-          "kind": "article",
-          "snippet": "Every confirmed Premier League transfer in the 2026 summer window Squawka",
-          "published": "Thu, 03 Sep 2026 08:01:55 GMT"
-        },
-        {
-          "title": "Trafford tops ranking of 10 best Premier League signings of summer 2026",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPODg2d2dsb0NtLTNPejVod3U1LWVnQ0RnUXh6Ulh5bmtqNXZxZnZpZ1RBV1RWQlZTVG1RVEJDVTk2Q3p6dkstc19tYkxNT25XekRqZTJGdW5KMWxGZFYyYUhpYUFzdzdsOENoV0pBUUZVT1pCbUp6bDVNYW1XWGlDUUd3TW0zNWlrOGZLc0RiNU9VdUZDYVlQQXdSTQ?oc=5",
-          "publisher": "Football365",
-          "kind": "article",
-          "snippet": "Trafford tops ranking of 10 best Premier League signings of summer 2026 Football365",
-          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Transfer news: Every Premier League club's plans for summer window 2026",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZlg1NlItd0VMbWVaR3dkV3FkQWIzWlg0SWdFeS1VTHFOVVBIb1Q4bko3QnZackdzTDc0MjZ4TkdvT18tVGNCZ1U2OEZ5ek1zTXJhZkZsY014MkZ0UGhOdlR6UlRIMG9RdFRGYmw3QkR2LUpOYVFDLXh5aU1yZ1hPaXlhVHRDTG5rUkVQRWR6TWc3bXVsbDRzeUhMdUR6MUZaNFJZSUVoV0tIb3RmNmZSbThyUGpPQmNvRHZFV3NIbnl5Zw?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Transfer news: Every Premier League club's plans for summer window 2026 Sky Sports",
-          "published": "Tue, 16 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Juventus transfer news: From Alisson to Calafiori - the ten players on Spalletti's summer wishlist with six Premier League targets",
-          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNbWxrenN4NW9PbmY2b1RYTWM4SXpfZmN5TGNhT3dEbXBxOUFSVi1NU1NhWmRQUDI4dWxoWTBlME9adW9DazBBUHhSLU9tWmNlckp5Y3VQY2EydTN5SG0wM2J2WXpmalltN3BwZ1RvQ2s4QWdoNWRxeDRlTk9LZXJrZzlHMUVrVkdFVFAtLUlxTXc3c0dQUF8xN0xZRnZxZ2V0dUJIVmsxLWxWcFdVam54NUJCaHVBMThxOWRyWHRWYkd1aENiNFlNZm1aS3FXU1RBalpzdExVSHBxanB5MngyNnFmQkpXTmdDT2t0anV1TU5uV3ZvMmNvb1hzaEE?oc=5",
-          "publisher": "Sports Mole",
-          "kind": "article",
-          "snippet": "Juventus transfer news: From Alisson to Calafiori - the ten players on Spalletti's summer wishlist with six Premier League targets Sports Mole",
-          "published": "Mon, 13 Apr 2026 07:00:00 GMT"
         }
       ]
     },
@@ -17561,12 +17838,109 @@
       ]
     },
     {
+      "id": "gabriel-martinelli-leaves-arsenal-saudi-arabian-club-al-637c758a",
+      "slug": "gabriel-martinelli-leaves-arsenal-saudi-arabian-club-al-637c758a",
+      "sport": "soccer",
+      "headline": "Gabriel Martinelli leaves Arsenal for Saudi Arabian club Al-Hilal in £60m deal",
+      "blurb": "Arsenal winger Gabriel Martinelli has joined Saudi Pro League side Al-Hilal for £60m.",
+      "summary": "Arsenal winger Gabriel Martinelli has joined Saudi Pro League side Al-Hilal for £60m. Forward follows Gabriel Jesus out of champions Martinelli’s contract thought worth £17m a year Arsenal have confirmed Gabriel Martinelli has joined the Saudi Arabian side Al-Hilal for £60m. It is understood the deal for Brazil forward includes a sell-on clause. Aggregated from BBC Football, Guardian Football, Sky Sports Football.",
+      "category": "roster",
+      "published": "2026-09-03T16:30:08Z",
+      "updated": "2026-09-03T16:30:43Z",
+      "players": [
+        {
+          "key": "martinelli",
+          "name": "Gabriel Martinelli Silva",
+          "slug": "gabriel-martinelli-silva",
+          "pos": "MID",
+          "team": "ARS"
+        },
+        {
+          "key": "g jesus",
+          "name": "Gabriel Jesus",
+          "slug": "gabriel-jesus",
+          "pos": "FWD",
+          "team": "ARS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Arsenal's Martinelli joins Al-Hilal in £60m move",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cq5xl575q7no?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "Arsenal winger Gabriel Martinelli has joined Saudi Pro League side Al-Hilal for £60m.",
+          "published": "Thu, 03 Sep 2026 16:30:43 GMT"
+        },
+        {
+          "title": "Gabriel Martinelli leaves Arsenal for Saudi Arabian club Al-Hilal in £60m deal",
+          "url": "https://www.theguardian.com/football/2026/sep/03/gabriel-martinelli-leaves-arsenal-al-hilal",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Forward follows Gabriel Jesus out of champions Martinelli’s contract thought worth £17m a year Arsenal have confirmed Gabriel Martinelli has joined the Saudi Arabian side Al-Hilal for £60m. It is understood the deal for Brazil forward includes a sell-on clause. Martinelli, who jo",
+          "published": "Thu, 03 Sep 2026 16:30:08 GMT"
+        },
+        {
+          "title": "Martinelli joins Al Hilal in Arsenal club-record sale",
+          "url": "https://www.skysports.com/football/news/12040/13579276/gabriel-martinelli-transfer-news-forward-joins-al-hilal-in-a-club-record-sale-for-arsenal-in-60m-deal",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "Gabriel Martinelli has joined Al Hilal in a club-record £60m sale for Arsenal.",
+          "published": "Thu, 03 Sep 2026 17:30:00 BST"
+        }
+      ]
+    },
+    {
+      "id": "fpl-gw3-wildcard-squad-how-own-haaland-fernandes-a84e1429",
+      "slug": "fpl-gw3-wildcard-squad-how-own-haaland-fernandes-a84e1429",
+      "sport": "soccer",
+      "headline": "FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer",
+      "blurb": "FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer Premier League",
+      "summary": "João Pedro, Mateus Fernandes and Cole Palmer: FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer Premier League Board reading of Premier League.",
+      "category": "wire",
+      "published": "2026-09-04T01:58:01Z",
+      "updated": "2026-09-04T01:58:01Z",
+      "players": [
+        {
+          "key": "joao pedro",
+          "name": "João Pedro",
+          "slug": "jo-o-pedro",
+          "pos": "FWD",
+          "team": "CHE"
+        },
+        {
+          "key": "fernandes",
+          "name": "Mateus Fernandes",
+          "slug": "mateus-fernandes",
+          "pos": "MID",
+          "team": "TOT"
+        },
+        {
+          "key": "palmer",
+          "name": "Cole Palmer",
+          "slug": "cole-palmer",
+          "pos": "MID",
+          "team": "CHE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMmxYMFFPcHBXc25TWHhGSlVicUhhN0tQajBudU9PNWhPaThEaWx3elJnYm5kSGk5U3R6cEo1azd2Sng1cXUwMUdNSlFCS2NXaEpLWVdQNFI1MExHanY0QU9DTlZfdTdMaVdEdTFkOVQ2MGhUeEdkMzhvaG1vZGd1clhjR3doWEp1aThLMjVsbGlyVm1TbnBKNXo3WUk1LTVuVU1UeVhRd3BnNzRLbVRUMU9jTlgxX1JZOV93?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer Premier League",
+          "published": "Fri, 04 Sep 2026 01:58:01 GMT"
+        }
+      ]
+    },
+    {
       "id": "man-utd-transfer-today-talks-confirmed-carrick-edges-2b109dfc",
       "slug": "man-utd-transfer-today-talks-confirmed-carrick-edges-2b109dfc",
       "sport": "soccer",
       "headline": "Arsenal can save millions on Morgan Rogers by finally taking Man Utd up on bargain transfer",
       "blurb": "The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic The New York Times",
-      "summary": "Morgan Rogers, Youri Tielemans, Bruno Fernandes, Mateus Fernandes and Jarrad Branthwaite: The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic The New York Times Arsenal can save millions on Morgan Rogers by finally taking Man Utd up on bargain transfer Football London INEOS Transfer Plan EXPOSED! Aggregated from The New York Times, Football London, YouTube, The Mirror, footballtransfers.com and 4 more.",
+      "summary": "Morgan Rogers, Youri Tielemans, Bruno Fernandes, Mateus Fernandes and Jarrad Branthwaite: The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic The New York Times Liverpool have secret weapon to beat Man Utd to £50m Ismaila Sarr transfer Daily Express INEOS Transfer Plan EXPOSED! Aggregated from The New York Times, Daily Express, YouTube, The Mirror, footballtransfers.com and 4 more.",
       "category": "trade",
       "published": "2024-08-21T07:00:00Z",
       "updated": "2026-09-02T10:10:25Z",
@@ -17695,103 +18069,22 @@
           "kind": "article",
           "snippet": "Arsenal can save millions on Morgan Rogers by finally taking Man Utd up on bargain transfer Football London",
           "published": "Sun, 05 Jul 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "gabriel-martinelli-leaves-arsenal-saudi-arabian-club-al-637c758a",
-      "slug": "gabriel-martinelli-leaves-arsenal-saudi-arabian-club-al-637c758a",
-      "sport": "soccer",
-      "headline": "Gabriel Martinelli leaves Arsenal for Saudi Arabian club Al-Hilal in £60m deal",
-      "blurb": "Arsenal winger Gabriel Martinelli has joined Saudi Pro League side Al-Hilal for £60m.",
-      "summary": "Arsenal winger Gabriel Martinelli has joined Saudi Pro League side Al-Hilal for £60m. Forward follows Gabriel Jesus out of champions Martinelli’s contract thought worth £17m a year Arsenal have confirmed Gabriel Martinelli has joined the Saudi Arabian side Al-Hilal for £60m. It is understood the deal for Brazil forward includes a sell-on clause. Aggregated from BBC Football, Guardian Football, Sky Sports Football.",
-      "category": "roster",
-      "published": "2026-09-03T16:30:08Z",
-      "updated": "2026-09-03T16:30:43Z",
-      "players": [
-        {
-          "key": "martinelli",
-          "name": "Gabriel Martinelli Silva",
-          "slug": "gabriel-martinelli-silva",
-          "pos": "MID",
-          "team": "ARS"
         },
         {
-          "key": "g jesus",
-          "name": "Gabriel Jesus",
-          "slug": "gabriel-jesus",
-          "pos": "FWD",
-          "team": "ARS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Arsenal's Martinelli joins Al-Hilal in £60m move",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cq5xl575q7no?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
+          "title": "The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVGxHRlhHeVg3WXhsdzV2QllUUG5WRnI3cXphMkhHbVJ0Z0tETjZHeVQwWEJ6bEFJRWJDLW9kZTZTN3ZnSTRaeU5tdmxzME5nSXEwQUJPTEtiRzJ3MXpqc3o1UjdBUXkzb0Z2V3FlbFd3WnQwMzN1WHBpSnRHb3FZUkk3WTBvZDhPZlA5LW9vM29DM1hrajJDdkR2WEtJek10eWFhLXRzQzBBeWVrYlE?oc=5",
+          "publisher": "The New York Times",
           "kind": "article",
-          "snippet": "Arsenal winger Gabriel Martinelli has joined Saudi Pro League side Al-Hilal for £60m.",
-          "published": "Thu, 03 Sep 2026 16:30:43 GMT"
+          "snippet": "The Transfer DealSheet: Latest on Man Utd, Arsenal, Liverpool, Real Madrid and more - The Athletic The New York Times",
+          "published": "Tue, 07 Jul 2026 07:00:00 GMT"
         },
         {
-          "title": "Gabriel Martinelli leaves Arsenal for Saudi Arabian club Al-Hilal in £60m deal",
-          "url": "https://www.theguardian.com/football/2026/sep/03/gabriel-martinelli-leaves-arsenal-al-hilal",
-          "publisher": "Guardian Football",
+          "title": "Liverpool have secret weapon to beat Man Utd to £50m Ismaila Sarr transfer",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcHZmNTR2LTYxV2EwSW9lVUg3STBjRGFXNWxhUWVra19jdW1ESi00ZE1Rbi1OS084SlotZ3k3REFNTDRpUG5mMHJYcmcwRGt2RFVPNW5sbkt6c0xIUXFoNHNxb1RFSjV3cGhWYW56dVpuYVFMd2FQSTdFSUV0YlB4Zzh5cmNKTDFyOXNoazEtZ2xfUdIBlwFBVV95cUxQMEkxMzJuVU5QWUF6QzBLZFdvLUktMkxEQy1WOG9iS2RFRW1rNFREOWIzbzBtdXJ0ekpKM1RnNE5EbktPdXFIYXhZaFpsUkxuNHhrQTdvNG12b2o5b2tFVU9zOXhuNmh0ZmRpVDRKSXEtd002VlJlMUhJbWJkM0haV0dQSFJEMmdJSkNyV0F1ZExXUm5NOUZR?oc=5",
+          "publisher": "Daily Express",
           "kind": "article",
-          "snippet": "Forward follows Gabriel Jesus out of champions Martinelli’s contract thought worth £17m a year Arsenal have confirmed Gabriel Martinelli has joined the Saudi Arabian side Al-Hilal for £60m. It is understood the deal for Brazil forward includes a sell-on clause. Martinelli, who jo",
-          "published": "Thu, 03 Sep 2026 16:30:08 GMT"
-        },
-        {
-          "title": "Martinelli joins Al Hilal in Arsenal club-record sale",
-          "url": "https://www.skysports.com/football/news/12040/13579276/gabriel-martinelli-transfer-news-forward-joins-al-hilal-in-a-club-record-sale-for-arsenal-in-60m-deal",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "Gabriel Martinelli has joined Al Hilal in a club-record £60m sale for Arsenal.",
-          "published": "Thu, 03 Sep 2026 17:30:00 BST"
-        }
-      ]
-    },
-    {
-      "id": "fpl-gw3-wildcard-squad-how-own-haaland-fernandes-a84e1429",
-      "slug": "fpl-gw3-wildcard-squad-how-own-haaland-fernandes-a84e1429",
-      "sport": "soccer",
-      "headline": "FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer",
-      "blurb": "FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer Premier League",
-      "summary": "João Pedro, Mateus Fernandes and Cole Palmer: FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer Premier League Board reading of Premier League.",
-      "category": "wire",
-      "published": "2026-09-04T01:58:01Z",
-      "updated": "2026-09-04T01:58:01Z",
-      "players": [
-        {
-          "key": "joao pedro",
-          "name": "João Pedro",
-          "slug": "jo-o-pedro",
-          "pos": "FWD",
-          "team": "CHE"
-        },
-        {
-          "key": "fernandes",
-          "name": "Mateus Fernandes",
-          "slug": "mateus-fernandes",
-          "pos": "MID",
-          "team": "TOT"
-        },
-        {
-          "key": "palmer",
-          "name": "Cole Palmer",
-          "slug": "cole-palmer",
-          "pos": "MID",
-          "team": "CHE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMmxYMFFPcHBXc25TWHhGSlVicUhhN0tQajBudU9PNWhPaThEaWx3elJnYm5kSGk5U3R6cEo1azd2Sng1cXUwMUdNSlFCS2NXaEpLWVdQNFI1MExHanY0QU9DTlZfdTdMaVdEdTFkOVQ2MGhUeEdkMzhvaG1vZGd1clhjR3doWEp1aThLMjVsbGlyVm1TbnBKNXo3WUk1LTVuVU1UeVhRd3BnNzRLbVRUMU9jTlgxX1JZOV93?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "FPL GW3 Wildcard squad: How to own Haaland, Fernandes, Joao Pedro AND Palmer Premier League",
-          "published": "Fri, 04 Sep 2026 01:58:01 GMT"
+          "snippet": "Liverpool have secret weapon to beat Man Utd to £50m Ismaila Sarr transfer Daily Express",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -18305,8 +18598,8 @@
       "slug": "chelsea-finalising-99million-deal-shattering-british-transfer-record-d66f3fb2",
       "sport": "soccer",
       "headline": "Why did Morgan Rogers choose Chelsea over Arsenal? How Xabi Alonso phone call helped broker record transfer",
-      "blurb": "Chelsea: Enzo Fernandez booed and Morgan Rogers scores as Xabi Alonso reveals blueprint bbc.com",
-      "summary": "Chelsea: Enzo Fernandez booed and Morgan Rogers scores as Xabi Alonso reveals blueprint bbc.com Morgan Rogers: Chelsea boss Xabi Alonso has 'plan' for record signing to play alongside Cole Palmer bbc.com Morgan Rogers rejects Arsenal for Chelsea in £117m deal after Xabi Alonso gets involved Football365 Aggregated from bbc.com, Football365, x.com, beIN SPORTS, football360.com.au and 6 more.",
+      "blurb": "Morgan Rogers to Chelsea in $157.2 million transfer - Report Yahoo Sports",
+      "summary": "Morgan Rogers to Chelsea in $157.2 million transfer - Report Yahoo Sports Arsenal vindicated in Morgan Rogers transfer plan after details on his role emerge Football London Chelsea have brought in over £500m in sales and loan fees, which is a British transfer record.💷 x.com Aggregated from Yahoo Sports, Football London, x.com, beIN SPORTS, football360.com.au and 6 more.",
       "category": "trade",
       "published": "2026-07-09T07:00:00Z",
       "updated": "2026-09-02T15:45:28Z",
@@ -18430,6 +18723,22 @@
           "kind": "article",
           "snippet": "Morgan Rogers: Chelsea boss Xabi Alonso has 'plan' for record signing to play alongside Cole Palmer bbc.com",
           "published": "Mon, 27 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Morgan Rogers to Chelsea in $157.2 million transfer",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSXBxYmFyajIzeU5JUEJ2T09qbXljZjlyVTcxbVlBTGZOUUx6SWEtSzd4dDhBdnZ0eGszc01hdGdNOGZpYkx1aUFWQW9CSjNXU01rX0xqS00wcjd2LU1yOUotQmg3NVV5WlZmdDFYbnJIUU9TeWdmVElSN19nTU02dUdn?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Morgan Rogers to Chelsea in $157.2 million transfer - Report Yahoo Sports",
+          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal vindicated in Morgan Rogers transfer plan after details on his role emerge",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUC10aW5YVGcwdVJ4ZkMxakRKWFhPd3l2MzJhRnQ5QmNaajRoN25VZFZJLWFfbUZUd09ZYXJpOGNOSWFCRFdkRXc1b3NiNEppOTFzamp2UGVfUnNVWGppcHB0TGV3SVRKdlZZZzRKdmFmMkN1TnZYXzM5QV9KS1pmSjdIcDYybnc5RnBpRXNwODRhTWVOQ292T0VKZHdkb2lCaUlDUEJR0gGrAUFVX3lxTE52eF9EX0dMalZwTFB6MDBTTzNwZVB3QnBEX3ZmLTFLQTMwRlZpSWk0eHBfWkVsSnJ0QkRBNEdyU3Jndm1MWTNVNlZzMXY1ZGt6MWpFNXJpbkJUaGczUDAwT09tT0k1a1NreDFScVJlSXp5VnZBQ3lyQkVPbW1XdkN5aWJkOGJzMTI1R3R5YUEwdEdMTzRBdm5JS092ajBodlBucm82NUlCbmpSTQ?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Arsenal vindicated in Morgan Rogers transfer plan after details on his role emerge Football London",
+          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -18780,399 +19089,6 @@
           "kind": "article",
           "snippet": "Record Elliot Anderson signing sparks Liverpool transfer domino footballtransfers.com",
           "published": "Tue, 16 Jun 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "transfer-deadline-day-man-city-set-169m-move-671923c2",
-      "slug": "transfer-deadline-day-man-city-set-169m-move-671923c2",
-      "sport": "soccer",
-      "headline": "Why Elliot Anderson is only the 31st most expensive Premier League transfer ever despite huge £116m fee",
-      "blurb": "Nathan Collins set to become most expensive Irish transfer ever as Premier League side swoops SportsJOE",
-      "summary": "Nathan Collins set to become most expensive Irish transfer ever as Premier League side swoops SportsJOE Premier League clubs set new transfer spending record BBC Transfer deadline day: Man City set for $169M move for Fernandez as English clubs spend record $4.3B LancasterOnline Aggregated from SportsJOE, BBC, LancasterOnline, YouTube, sportingnews.com and 27 more.",
-      "category": "trade",
-      "published": "2022-07-12T07:00:00Z",
-      "updated": "2026-09-02T06:21:15Z",
-      "players": [
-        {
-          "key": "collins",
-          "name": "Nathan Collins",
-          "slug": "nathan-collins",
-          "pos": "DEF",
-          "team": "BRE"
-        },
-        {
-          "key": "ndiaye",
-          "name": "Iliman Ndiaye",
-          "slug": "iliman-ndiaye",
-          "pos": "MID",
-          "team": "EVE"
-        },
-        {
-          "key": "anderson",
-          "name": "Elliot Anderson",
-          "slug": "elliot-anderson",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "tonali",
-          "name": "Sandro Tonali",
-          "slug": "sandro-tonali",
-          "pos": "MID",
-          "team": "TOT"
-        },
-        {
-          "key": "savinho",
-          "name": "Sávio Oliveira",
-          "slug": "s-vio-oliveira",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "rogers",
-          "name": "Morgan Rogers",
-          "slug": "morgan-rogers",
-          "pos": "MID",
-          "team": "CHE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Premier League clubs set new transfer spending record",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKb1d0ZGxJTGtydHZwb3g1Q2pvSW16OG54QWsya1N6VldoMVdydDRMVnk0QnRtSmUyOXJfRE02cTFqSjkzU0t4dHBBeGsxYXl1RTR0WERtWTFyaHdnbWVkTzBxVUlsWUVIVFE?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League clubs set new transfer spending record BBC",
-          "published": "Tue, 01 Sep 2026 20:17:17 GMT"
-        },
-        {
-          "title": "Transfer deadline day: Man City set for $169M move for Fernandez as English clubs spend record $4.3B",
-          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQWHZoTnRuWVY5VEJwRHkxNlRDcW5JNEpoYl9OM0p6TEg3bmpmWVhaby1wak1zVnNkYjhIcVlhdXlOSXl5dm56SF9CZFU5eTJGNzN4RzlPZjg0SkFSMDZ4TjJtZnJyeWFSeklMVS0wUmxLNS1Kd3AzaHUwRVc4dmdaQkxOWjc1M0ZQMGdtcG5yN05OSXNUUFhrS3gwS1VjYmxGMWhnekNGcEtZaEdrb1lybU5vR05GMHZnMVFERFRiMHhsTl9RcmNzOFNKNUN3OXVSek5qMXdZcm9obmpiMW5SSWFTclVZdVlwZEtneWF3MnVwLUY0TzdjcHppUTAyUFlfMmlBNHdzOWZDRE9DMVFJZkx3?oc=5",
-          "publisher": "LancasterOnline",
-          "kind": "article",
-          "snippet": "Transfer deadline day: Man City set for $169M move for Fernandez as English clubs spend record $4.3B LancasterOnline",
-          "published": "Tue, 01 Sep 2026 19:21:57 GMT"
-        },
-        {
-          "title": "Premier League Transfer Values... Make it Make Sense!!! | Caught Offside",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBPMG5IWU8ySU9LNS1ZcUhSQzl0RzVWenAzVEVjZGwyQUQ4c2ZOQ0MyckRndEYwd0d0eHllcU9nN2wzRVFQaHRVaUVDWDFxTHl1RFJQek1yMFZXRHlRekQyWjNWUml5ZzFEYWdYSjZn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Premier League Transfer Values... Make it Make Sense!!! | Caught Offside YouTube",
-          "published": "Thu, 27 Aug 2026 20:56:46 GMT"
-        },
-        {
-          "title": "Premier League transfer record: Where Morgan Rogers to Chelsea ranks among biggest ever deals",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVFlTeEcxYlNRTWNNY1dvYWJDS284Q3JNeU9vTFVzYjljLWJqM0VDRWw4T2dicmdoY2FicUozYVE3VnQ2TWJhc1hucTh5YUZpUzI0cTFjT3pBTndMbzdFdEpYUTRYSnRhRG9PMW84TVBtVUduMWY1RWUya2k5Sm0tNVlHWFA5anJMMG8tbjlEdExCeEx4YVN1MGhUczJFMmVHOXZndklBb3NqUzJVZkZEOHhUTQ?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Premier League transfer record: Where Morgan Rogers to Chelsea ranks among biggest ever deals sportingnews.com",
-          "published": "Tue, 21 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chelsea reportedly sign Morgan Rogers | Premier League transfer news | British record",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMFNhWnRBZVNuMkNRdFIxNnkwY2QzM2JjbWllMTNKSWFJTi1PMGNNRzBhZkxhYldTWTVhM0FjNU8xSGJUQU9yckFLYmRDV29FSThkeGlQQmxKai1GUUk3M1BkU0xDUTk3VHQyRFB5dEJuTGNaLTVUekpWOFd0Zm1PY2VnRC1jbTluTW5kVmNtTVJGeEFBajU1RmQ4XzBablU?oc=5",
-          "publisher": "football360.com.au",
-          "kind": "article",
-          "snippet": "Chelsea reportedly sign Morgan Rogers | Premier League transfer news | British record - where does fee rank? football360.com.au",
-          "published": "Sun, 19 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Arsenal | Premier League transfer news | Christos Tzolis | Morgan Rogers",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRmJpZndqNENJRkZMamFhcFZQVm91RGNmWVZwdWtqQzdHVk1fWHJ1NlY1UjEyTjJ3T01VU3UzZmVrQk5XblF3NlJqZmhpS1otOHZXZExDeFk2Rno0NTVzQnktZkdaR3RuME5lWU54Q09tamt6RXlFc2VuNjc0Q2xseVhuS3BWb1lqQXlPMkJUVGZIVV9wVTFLZVIyNkRxNGxMdkhFUQ?oc=5",
-          "publisher": "football360.com.au",
-          "kind": "article",
-          "snippet": "Arsenal | Premier League transfer news | Christos Tzolis | Morgan Rogers football360.com.au",
-          "published": "Fri, 17 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Morgan Rogers: Chelsea set new premier league transfer record",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNLUZnRU0tQ2xqX3U5bmdoc2lzeGJKMmtHNGV4TmFSdkhaTFQ3cEZNdE5BYVZuWVdRcVR4SGNlb3g0RXM0dy1WVEhXU20zMlpoZWFsZjBFdHFHYkRFc3NEY3hfWHc2MnR6dkhON0ZqWHZ5NVJfTFRzWkZyMDRjb1Q1RC1RS3I1M1RwX2c?oc=5",
-          "publisher": "Blueprint Newspapers",
-          "kind": "article",
-          "snippet": "Morgan Rogers: Chelsea set new premier league transfer record Blueprint Newspapers",
-          "published": "Wed, 22 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Manchester United set to join Premier League transfer battle for Morgan Rogers",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNS1KMHRXYlVVeS15TkRyOTNtOUVaVE1JZG9UWDdhWUhVazNFV2djWG1hMnVNNk9vUThjSTJhb1NWZmZ1OHJZc2NBM1BkbVhqYzRJTjNjOHFhblM5X0xoRVUtbVp4dlR3MjMxeVFNbkdPTzdJdE1aTFFBYllJZ3JoeFZlTVFNWVl5OGdoNHJDYzd0ZzJrZ1Z0a0p2U0VsRFhpMlRJWjVPWUFJdzZkeWxIUHRR0gG3AUFVX3lxTE5QZDVyMVJNNVVLWFhZOUh5Yk9idEp6LVFUTUNqMmtNcnY4ckljQUc4SW54ZzV1bTdoSzJ5YW5waW96SVE4V0d2LWlJTUJ1VGUzVHd6MVZGZ1Q5OXRwSDRGa0oxRkZvR1ZrOWVud0pnbDNLb3BxaGpDOHhUVE9RZUFpcGRqQjFUbXRUSzBwMzFRSTFMenpaYU9HVWYwR2R2bXlUejcxYmgwVy1HUVV6Si1CZVAzRmJ6aw?oc=5",
-          "publisher": "The Manc",
-          "kind": "article",
-          "snippet": "Manchester United set to join Premier League transfer battle for Morgan Rogers The Manc",
-          "published": "Thu, 09 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chelsea 'preparing' stratospheric Aston Villa bid that would shatter Premier League transfer record",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUTVYejhtRWd6ZmNzNmRUa1piX1pFaUdUOEVwdDhJS2VIaTV6bmhkLVN4c2F5dFRlLUV2LTM2dUVjVFVXLWtxWVdabHA4eHJXemxvV1hkaVI4bmFFS2pWdDRGYWlsa1ZvaXd3MUVZbF9aNkphOXYzb3RMUjN0Mks2eUJzNElkU3JKOFlkci1TZzk1SVFaOG4tM1FVMktSRmhJekE3ZG5ZblJtU01xX3NFbTdNZGxfbm9MYUphNU0tZmE4cDNRaGdfb19PSE82NDNwelFWa0g0Q28tTzhjcGw0N0Jn?oc=5",
-          "publisher": "birminghamworld.uk",
-          "kind": "article",
-          "snippet": "Chelsea 'preparing' stratospheric Aston Villa bid that would shatter Premier League transfer record birminghamworld.uk",
-          "published": "Wed, 07 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Fernandez joins Man City for joint-British record £125m",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cr7deg1ze03o?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Manchester City pay a joint-British transfer record fee of £125m for Chelsea midfielder Enzo Fernandez.",
-          "published": "Tue, 01 Sep 2026 22:52:22 GMT"
-        },
-        {
-          "title": "Man City sign Fernandez in British-record-equalling deal",
-          "url": "https://www.skysports.com/football/news/12040/13579972/enzo-fernandez-transfer-news-man-city-sign-midfielder-from-chelsea-in-british-record-equalling-125m-deal",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "Manchester City have signed Enzo Fernandez from Chelsea for a joint-British-record fee of £125m.",
-          "published": "Tue, 01 Sep 2026 23:30:00 BST"
-        },
-        {
-          "title": "Deadlines, acrimony and a record as Man City back Maresca for Fernandez deal",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cz0z377mxero?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "The summer's longest-running transfer saga ends with Manchester City paying a joint-British record fee to bring in midfielder Enzo Fernandez from Chelsea.",
-          "published": "Tue, 01 Sep 2026 23:16:59 GMT"
-        },
-        {
-          "title": "ENZO FERNANDEZ SIGNS FOR MAN CITY!!! 🚨",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE95eWJ2VTBZbmJ6ejlFeThlYWRBbnJac2tySmdWNGpfemNIZXVwNFJqTEFPSzhxUFVfUUluZE4waHFCcG0zTjl3WmJWWlRySTlwVTJGNlFB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "ENZO FERNANDEZ SIGNS FOR MAN CITY!!! 🚨 YouTube",
-          "published": "Tue, 01 Sep 2026 16:36:26 GMT"
-        },
-        {
-          "title": "Deadline Day Drama: Alvarez, Fernandez, and Gakpo in Transfer Limbo",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZHVIV3NxZjBKbUJ1MGo5MXNqZ2ZuZUJySmZYZklZR0N6VEI3NXlBenQxX2R4Q1o0eUdpVG1FSUhtTHQtTnhZVEpYc3lPcm5GWklkRUJYcnRBVXNYY2ZzaG93V1FwUzIySmhzVHoxcm1uQmhwZUdVUk4wbXVXWUNHTWFtamV1bzdVWGhvb21falRhTXc?oc=5",
-          "publisher": "Head Topics",
-          "kind": "article",
-          "snippet": "Deadline Day Drama: Alvarez, Fernandez, and Gakpo in Transfer Limbo Head Topics",
-          "published": "Mon, 31 Aug 2026 07:35:00 GMT"
-        },
-        {
-          "title": "English clubs spend a staggering $4.7B in transfer window as Fernandez signing caps $600M City spree",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQeEhXRnF3M1I4X0l2Z3djMjdVRnJvUVBFMjE2UUdkeTRPSWd1YXpkQjNTamJFcWJ5bHlhSllScjNfMGNZWVJxT3JHT3VldjhkQjhRTXA5MUtJWUhsT2V6SW9tYnIwZzF3cFFoc0ExZkNIODNMSC14QTBEejNDbUZFbWZCZ1FVWjRDRGlwQ0djQnFkSnNTeVNncllLMnNHVkVLWnNQYlZIQlJxbXlodVdXdXdXVFJ3dWtjVWpqS1g5ZFpVVS1rblkwcHlCQk5oUFVIMGJSN2Y0R3VfbTZ2WFZiODZCRFNYbkdDeWpCUVZMOHNhQV80?oc=5",
-          "publisher": "lethbridgeherald.com",
-          "kind": "article",
-          "snippet": "English clubs spend a staggering $4.7B in transfer window as Fernandez signing caps $600M City spree lethbridgeherald.com",
-          "published": "Wed, 02 Sep 2026 00:37:49 GMT"
-        },
-        {
-          "title": "Transfer rumors, news: Man City could prioritize move for Tonali",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQ3N6WDF4MFB0MXEtajlkc2liM2NOazFfRlV6Wjc1YXVxdURWdXNvQ2dFdXJvRHdOb3lTYmdMZWp4aUllcjdZdV9vRktLZUlQYVZRbkN3aHdRdHNOWFRGcTVDNHRWTWphZ2JxVlNObW9Idk9rMzBoUmxhVjJhMl9EbHVQV3BZZElQbURKWjJ3Q0dIWGh2NlNGVkZsZlZpaWhqdWY1V0hR?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Man City could prioritize move for Tonali ESPN",
-          "published": "Fri, 05 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man City transfer spending explained: Elliot Anderson move smashes British record transfer fee",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOMXl3ZF9NdklUalN2YzduQmh5TC1CcUVreDRXUDJJX3ZTZ0pES3JBVzRIQUhtakhXalFXTWxGclk5NHp2cjlvMUdHN2I5SjdZZkhzaFZiajZaSVlYQzN2QjhlaVluWndYenpoNXl5bDItYTFYaHFDSGZOZ1Vudm1QbkdBWjhJVEtxN1hoZ1pCc3VyTmZtdXBSUVJmdUpuT3k3NkZOYTUtbVZMX1A3bkxYX09TNVhzS1hsRHlFREp1b2RYWGMxSmp2Q3o3LXRrMHk4MmRiWU1wdGc2Q1MyMHVoLVZn?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Man City transfer spending explained: Elliot Anderson move smashes British record transfer fee Sky Sports",
-          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man City confirm £116m Elliot Anderson transfer in club-record move for England star",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdFlrdVZfbVZHaHRvbkdvQlBpdzhDX1o1TGNtdVRZMURnM2sydE02aGltTTdLTXBRRDZCQVpHOGl2bUpKMWlfeVZvRDRCSDlTSnhwVmVZeTFNUXROdkNtbHNkWlU4LWpWUVpwWFZzNVNTd0pkUU9QRkxObGxsaGtGNlNyRF9zRWJoeXREX2dkc09vc0R6NlNod1ZMZWnSAaIBQVVfeXFMUG95RG1UeERxZWpkZmNaNmNWVkI2TU1Tdm5Jb2JvVWN4dlZWSGFoZUwzU014bWhzMF9vajNrNmpSM1ZaWS1STmE3a1BiYlVJenh4NXRzRFFFTHFZS2Q2OF9MMURhd00waW1mQ0ViOVB5WUdxdlBPVnBYeHpBdDJoNzJmVWt4d3FTclVRTmpkX2JRcnFpdmN6VGkxem9yS3U2VjZR?oc=5",
-          "publisher": "The Mirror",
-          "kind": "article",
-          "snippet": "Man City confirm £116m Elliot Anderson transfer in club-record move for England star The Mirror",
-          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Transfer rumors, news: Man City ahead of Man Utd in Anderson race",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRmFha0wyT3NEVWVkYVZEZm5XdGxGaGNiYmt0ZFAySzFYNTRlSnNSTEdMRUlzc0lKN2FKelFndjlIeVVTeXcxelpxQW14RjVEVHkwN1pnQTdDdGU5Rlc4Vm01YjF2Y2pjSXdUYnBKMEhGamFoTmZQNzc1dER2ZHVyMEY1M1JwUERkSGFtQU1QWGxWU3RtNHExOW9ZS01Cb3ZhSU5NRm1mYllCbll2UzdHS3NpTXFPdzF2dDh4dHpYZjNJZjRHWFRVM1hUUjBBUlU?oc=5",
-          "publisher": "espn.com.au",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Man City ahead of Man Utd in Anderson race espn.com.au",
-          "published": "Sun, 21 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Sandro Tonali thinking, Elliot Anderson latest and Savinho - your Man City transfer questions answered",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNN3ppRk9TNzBOcHR2Rkk0Y3lSaTF5Sk9Wd05kV0FNQWFFYTdVMUxhRmt0RUM2cEdWLUVhN3A1TmNiZWtCWkVJd1V0NGtWVE5aY2N3T3RCVHJSelZuN3VWa2Q2M1poaDJ4M05OeUxGMFJPNEZNQ0UwOER4MTFXQ2xFQWxKQ09JTktsY2pVYzM0QWpmSm1rb3U0dkdwY2hMeVJJUWpuYjMyTTZXREQxaVp4aVJmeEpqZ1U?oc=5",
-          "publisher": "Manchester Evening News",
-          "kind": "article",
-          "snippet": "Sandro Tonali thinking, Elliot Anderson latest and Savinho - your Man City transfer questions answered Manchester Evening News",
-          "published": "Sun, 21 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Elliot Anderson reactions will delight Man City ahead of transfer",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYkJydkxweUE0SEFSVG94b3lISjJRdmI4X1U0UDF0bFpNRE5MZzZ5X3dpYWNuUmx3dlJOLU50Qmh6MF9IUE5UOHVUVm1nS1BzZ3UwdGJ5NTZtc0FLbUxmNW5XOTFfbFlrOUdNck1lWHRzSjA3aW1wOWVUZktETlMxdFllWGRUSl9mUFB2eXl6M1Bsb3pzM0lVRlFSTXdJTXphakVEWk1JU1h0S0Q3OW9DVUhrTUFId9IBuwFBVV95cUxQb3p1NEhpN2hTVG9xVEFWNFJmcjFKTEZhNGozUnZYMm11TFFyOC1MWWNBdWJPMl9OVG1ucjViWU1lUy1zeEhFYXJ5QmFDQzlleUVhZDBPTXZITGxVU2s4dnRDaDBBcmNpRWsxV1pfNXJEVW9PUjljNjZoNjNkTW5uSU95YzdzZEpyWUUtc183MVJ1LXJNSGJpbmt3X3VsNFFoZy1HZ3Y0N1lIamtsNlRGQk1IQVFRZW4ydjNN?oc=5",
-          "publisher": "Manchester Evening News",
-          "kind": "article",
-          "snippet": "Elliot Anderson reactions will delight Man City ahead of transfer Manchester Evening News",
-          "published": "Tue, 23 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "'Kings of Manchester': Elliot Anderson hails City after headline £116m transfer",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWEFRT19RMl9PZ1Q3WHpFYWlJRHEyRlZ0M21BSWlkblhCVXpibHNLUG9LakFVNHljVDN5RURUVEt2eWUtcGVCYzFzQ05qTEhjZUhiOVM5OXNIUC1TWWYxZDJiWXdWS0tXTDFJcHNlMnR2S1MzdjEycm1DOTdOSTdvRzdmQ2gyaFgyeS1fS2dOVEZBSW5MYTVvWG9QRFRha1g2ZkhXVHpPM200REp5TXpzNU9Id2d0Mjgt?oc=5",
-          "publisher": "Flashscore.com",
-          "kind": "article",
-          "snippet": "'Kings of Manchester': Elliot Anderson hails City after headline £116m transfer Flashscore.com",
-          "published": "Thu, 23 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Thomas Tuchel speaks out on Elliot Anderson transfer saga",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZ1huRzhvUV9pX01wRWo3VWphb0RCQ0VnVl8yQXdfZ2thWHNsNTNfTTloT2RKc3dlMnlpVFZhQmhINW81dzIwMV9JWGRuY0xSeEluR1JSWlVfZUYxbXUwdExadWRrZjg1RndxalI5aDdJSTFzLVJjR0p1RXdUQ2MtRFI1ZjhEaUdnRWdkcnRrYW13d2NuZnfSAZsBQVVfeXFMTzBqV0ZETjgwMUFMdWlMckpCOXdCa09VeVBxaTBpUUZSS2E0NXdXWGpFWmNWTlNVS1JGZUk3d000bjZWNzZNelRwY24tX1VJeF9wdWc0Vm9FU094YU9Ia2MtdHMyVGQ2VlRxTnJUa3NtLW1qQ3VNNEpINFBMbGpfbzFPS19NanBzOE9YNkVDazcxck5HeUN5TWZUOE0?oc=5",
-          "publisher": "Metro.co.uk",
-          "kind": "article",
-          "snippet": "Thomas Tuchel speaks out on Elliot Anderson transfer saga Metro.co.uk",
-          "published": "Thu, 11 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Elliot Anderson confirms Man Utd legend told him to snub Man City transfer",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORnJidzgxWlJONjZsZV9paU0zalNGVkEya0tMdlV4NDlPTU1aT3ZrZEtzQUlWUS16bjhFVVk3cVBmNW11c3RkNmEtSElvUDVSZzEwOGw4UXB6dFFsazVSSlNzOWV1YU9paEdOSnQ2TktoQlRtNGc0dnBKZDRFVHMta2FyVnNtLVJWWklHVl93c0tvTmV2dHpveUEzYnFucnljbk9lX3Q0QVg2SjZQ0gGyAUFVX3lxTE9WTkszSWJwc3d4a0pLWF9kOGFmWDVYNUFKX3MtUzY4MTg3cFBpcVR0aURtVkt6aVBibVd5Q0VvUnk2WmtnVWlWWE1tUEFEbmZGUmYxem96dFh1V2k3Rm9NcDhGeFF2ME1mTFdRb2IzeHI4bWRScFVGTmpGZkd5aGkyZE9nRjg4Z0pGREQ5emFpdGo0d3FhWFlDanRnRXZmYzF5b0NJaWM2bjVIQ0tIUzdBeEE?oc=5",
-          "publisher": "Metro.co.uk",
-          "kind": "article",
-          "snippet": "Elliot Anderson confirms Man Utd legend told him to snub Man City transfer Metro.co.uk",
-          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man City know Pep Guardiola's Elliot Anderson transfer verdict after Thomas Tuchel admission",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUkk1OXdWbkNRTTNudkdqZVp1eW5UVW13YUluVC1ndnVlWVYwRnhVdnJxbHdudTN5TGV1cVppUlNBZkhIcDFtT05EQjdoOTFrTzBwZ1VhVG53V2xROWhXcTlxTE40QWgzM1ZpekFWX3Z6VDhvQjU1THVZakhsdGxIUjVyZDA0U0NjLWlCbkFnMlhicTZYMDJ6RGhGLTVySHRSTFUyWGVGdHVOQdIBrwFBVV95cUxQNVpUcnplQVJ5d3JVUTJ4b0NmVWZpUXFwZW5vb0x0VkVtem5MSEpOSjZXSTl2ZThUNF9sMWJZT0NpaXBnNVZ1Mm51cWNpNUN0NjI0dF9HWHdkVnVLS1NJZ2tfdk5XZmhEa194NkVEMGU1YXRBeU5FZkd5WDdIQ2RMelpvNHh3bktfMnhVaVdaTXd1R090b01zSTNMNWU4Xzg4cVFmd1JPOVBDQk9mWFBF?oc=5",
-          "publisher": "Manchester Evening News",
-          "kind": "article",
-          "snippet": "Man City know Pep Guardiola's Elliot Anderson transfer verdict after Thomas Tuchel admission Manchester Evening News",
-          "published": "Sat, 13 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man City accelerate Elliot Anderson transfer as ‘new bid’ is revealed after Man Utd decision",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdFFVcHlZZHVLVHdvSXVoNGppSzI5RDNsTjlsdEtGeUo3X2RlT3NDU1k0dExObXRodDluVXR1SWdYb0JrZWluanVnd2lBdllNU3l5NnozVWN6N3VhalJWVVlBVkRnSkNHMHRMTG1uelEtek5RVXBQNmpybklRUlY5SlZ4eU9kOHVDR2RldDIxRFdEbzNueDRhcUJ4VG1kX2RKNmc?oc=5",
-          "publisher": "Football365",
-          "kind": "article",
-          "snippet": "Man City accelerate Elliot Anderson transfer as ‘new bid’ is revealed after Man Utd decision Football365",
-          "published": "Mon, 22 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Inside the remarkable rise of Man City transfer target Elliot Anderson",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYlRIeDlFTUYwc2dnZl8ydVRWbktXMzkwTExNYVdMSU9kSEFpVGdFVk1yeVFHVW9YT096bzBPc0d5V05GNlRVa3FNSndvdHB1cXYxRU9lTTJ2VkpJbWs4RkFXTkJkNk8yRWI0NldoX3h0bHZtVUJfc24zZXl2U0NVZ1RVZmdnNUt3a1BQYWtFcmhROWpoVTdyV0t1MHpKQUxzMkNxaDMzYzhxYnJfZ2c?oc=5",
-          "publisher": "Manchester Evening News",
-          "kind": "article",
-          "snippet": "Inside the remarkable rise of Man City transfer target Elliot Anderson Manchester Evening News",
-          "published": "Sun, 07 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man City's £116m Elliot Anderson transfer exposes another issue with 115 charges verdict delay",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOU1FjNmpZUHZQaEpITDVvXzVlaHhTUVFRZDEwTTFkV1VGaUoxc01WRjlwNFZwS1NPMVhFX0tmVlJLR1BGRVh6UXRiUlNZM0ZxREtCMzQ4dGQzQVNNNldRa1VPWEl1QTFacVdXek5sYXBuTktIZzc2MGkxWmRMTVlxVXgtT0lZUC1YRXVCaXRDUFN6RkZXdE1PZdIBngFBVV95cUxQenN0SnNscXQ1bE5NcGpaTThybWNNRlRXY25DcmNYRUg4Q3djR3NOM2hOVW95d1hKaTB5b0E4YUh6NlJuVTM4elhpX0p3bHlsN1pXOWlRcWJ0OU5BSmkybGNScjV6Yko2dkRldDcyUU9FN2RkWWZJWlpqNGkyQWd5R25NNUQyUjRDWVJTeFlTUDJHaFRDRnR5ejBQVzVWdw?oc=5",
-          "publisher": "The Mirror",
-          "kind": "article",
-          "snippet": "Man City's £116m Elliot Anderson transfer exposes another issue with 115 charges verdict delay The Mirror",
-          "published": "Fri, 03 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "'Kings of Manchester': Elliot Anderson hails City after headline £116m transfer",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRUZJbzZqcE9XeDdVZlVuMEprR01QQnZnVkEyc0ZkRU9kb2ZXMk82elFRZUxicWJ6UmhrcExYMUpHUFJkdXdLWG1WQm52WVJWM0xWZ2xTa29WTFM0M3NLbFZFeTY3bnE1a2RlOE9nTy1jSGxvYWJKa041dzdQaFVHcjZBUEdvUlpHNG5VN3gxX3hZRDdtOUpOcnBGMzcxMjJyOEYtc3NDUjdVZzhlOW1ObVJkb0t0SkdxQ3Yw?oc=5",
-          "publisher": "Flashscore.co.za",
-          "kind": "article",
-          "snippet": "'Kings of Manchester': Elliot Anderson hails City after headline £116m transfer Flashscore.co.za",
-          "published": "Thu, 23 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man Utd reach decision on hijacking Elliot Anderson transfer to Man City for £105m",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdDF0aVBsbThtN1VBdHhvZzVCVFVuNHpzd0tYNnBqbVdJVWFMeGlUejlwSDVzUFg3UUpEem5PaEFlRUdoYjh4Ty04M21qTkV5MS1IS2d4T0pBbUExcHNhUWpCRVVLTnZVNEhqZi0wSXRfU3RUVTVocVNpclhhMmk2bWx1YU5JTXZJQjVqV3UtY2ZzWVZtWXpkNHFNNHUwSnlZMFNoNXRvMA?oc=5",
-          "publisher": "Football365",
-          "kind": "article",
-          "snippet": "Man Utd reach decision on hijacking Elliot Anderson transfer to Man City for £105m Football365",
-          "published": "Mon, 08 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Elliot Anderson isn’t as good as Sandro Tonali or Bruno Guimaraes so what is their transfer value?",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQakhWLVlLdTVRMHZqTl9VLUFGanI4TzdEWkk2dXpKdFdEU1RCakRDQldvMDJPZy1FbG9ScVhfc0Vpazd6SlhiZWpNUWwwM001UXFaRWxla244OXNvSkpCVk1yaUYxT1g5bU9RYjNSUVNVcXdfOGdZS0h4VUk3bVBHUm9sZnUwT2NTQ3V3elBXV19mTmxTNjJVdTA0RVczeUl6ZmFxZHZSNngtaE45VlY2dmNPV2FmblYxNW9wYkJPa2Juc19OQjhZVFBR?oc=5",
-          "publisher": "The Mag",
-          "kind": "article",
-          "snippet": "Elliot Anderson isn’t as good as Sandro Tonali or Bruno Guimaraes so what is their transfer value? The Mag",
-          "published": "Tue, 16 Jun 2026 11:09:54 GMT"
-        },
-        {
-          "title": "Man City want Elliot Anderson AND Sandro Tonali! Blues ready to spend ‘upwards of £200m’ in transfer raids on Nottingham Forest and Newcastle",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOEp5TVF3dXQ1YTV5ZjhLeTBQQTNMY3BsdkhFWVRDMzh1aUxBVVQtVjhva1NFQ1dma2gtc3FNYXRyVHhfTUdiZHkzZEh1RmFtSkJqNDF0bFRSMk1UYm1VZE5NTWY3eW1nalg2TzRuY2NpWjlKRURQVjBZbVJ3dFVkRkl0N1k4Mnh5NnZRcmlXNG5tcEZtMlhKS3hSckdkU1NDUFpZdUdma1luVjJDek1YSTJtNzFzd0hiSkxuZUlWcnBrbGlILU15NThWSjZvUQ?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "Man City want Elliot Anderson AND Sandro Tonali! Blues ready to spend ‘upwards of £200m’ in transfer raids on Nottingham Forest and Newcastle Goal.com",
-          "published": "Sun, 21 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Sandro Tonali price tag is proof Premier League transfer market is out of control",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcEU4QV8xQTIxbHg4VHBEX2ZjS0ZrcGQ2VW9CN29hdEVOY2N0N0F3MmgyWEVHR0pWX2llbXA0dWpESWQwX2JPTkc4a1l3MTVjSXhaaHVzV1BURmhPbmJYZktfc0tqeDN6N0J5c1FvYnJ3X3JMcFQ5UHlCTHN0b01LQi1TTkXSAYoBQVVfeXFMTmtJQnFVS0NzMVh5TXBlbmI3bUxtQlBHeTVOdFktNzNwQURxclU4TWxLc0h0NjU3SkkzQi1Hc3JfRm1fdkV4aHAxNzNkVW8wSVZVRndlLWRtUU53U0RzcjI3MHpmSkdOT3hKcWI0ZUVmRDhjZEVSdjF1N1diUWp1RnZieW9RMVBDNGZB?oc=5",
-          "publisher": "The Mirror",
-          "kind": "article",
-          "snippet": "Sandro Tonali price tag is proof Premier League transfer market is out of control The Mirror",
-          "published": "Sun, 21 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Elliot Anderson Transfer Update Sparks City Rebuild",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRFBtVEtHVXVaLVVkNHkzR0tDdW85czhZeU9DTnpYS3ctdU1adE44dzZ4WXRSTmxCZ3VVMC1DYjJaMzE4MDhhQmRvUnJwOXhZY2ZiZGVkc0xhZTd4dDhNb21uSEdDTkRYT2g2Y2pyR3ptNHI5WHp3akcybWpWVHpjNGNLbXJxY0J3?oc=5",
-          "publisher": "Read Man City",
-          "kind": "article",
-          "snippet": "Elliot Anderson Transfer Update Sparks City Rebuild Read Man City",
-          "published": "Thu, 25 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Why Elliot Anderson is only the 31st most expensive Premier League transfer ever despite huge £116m fee",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOS3hFSGNQRWtLTkY2OWdnNjFBc3hPOF9ZZ0FqYjYwZDRsenZhcXY4cjgzSURiT2U5Qzg1dU1ubFBJQTQwcThDUVJaRFc2MWtjN1BpMWFwZHlIYlBULUctWGFVQ0tnR08zVmR1R1FtUWstUzBDUUNlVEZjYjBUc0d4SnRfakhSallTeHd2bnJCS3VkN2tySTdwVFplUzllZlZMZ2F6RlRaU2pKdURncjh0bXRrMFE0QQ?oc=5",
-          "publisher": "SPORTbible",
-          "kind": "article",
-          "snippet": "Why Elliot Anderson is only the 31st most expensive Premier League transfer ever despite huge £116m fee SPORTbible",
-          "published": "Fri, 26 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Elliot Anderson is set to become Premier League's second most expensive transfer at £116m... but which 1990s icon is top of the charts when adjusted for inflation with a deal worth £236m?",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdUtjdWx0YVVGWnlDRXltN1k4cVlGc3RxWHJWTURzSWxZelY0UjNDM3ZiLVFpY0g2OVdVaGYzQXY2TmtVMXVaOXprSVpfamlKWklkS3BVM1dmLThMY1BRc2w4VExIN2sxZ2ttTjRPYVhQYS1tMzROeERzZ0V2RDFDNnliUUxCUUlfTFQxb0xXZ29QNW1WTElHSlZLckNKaE8zTk5WVVNqekRROWFEcmJ2Tl9pMUtlTVNxRVA2SXJWV1N2SGpy0gHKAUFVX3lxTE5QQk9sTDVnbElsUV9YVzR2R21lZzdNOHZtY051MXZtTTAxQTV4U2RmVlM0UVRsRWFpc2hlT2owS0M4aTJMQUtWS1g2NEE3QnBNMDZMQ2VmaDVPeFdPVjNFRmMwN25yTGQyWUhlYzJiSzlDcGk0OHB2V09jaThOTFJrRXhTRm9TMGVxc3lDNmVMSFl4NDF6NWJGNDVnYVByeWZ4VURqT0lqUFhIUXgtMjNpdTVYSGVvdVh2V2xXVFBkZjZ5UkhXbmRHdWc?oc=5",
-          "publisher": "Daily Mail",
-          "kind": "article",
-          "snippet": "Elliot Anderson is set to become Premier League's second most expensive transfer at £116m... but which 1990s icon is top of the charts when adjusted for inflation with a deal worth £236m? Daily Mail",
-          "published": "Fri, 26 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Unbreakable spirit: How tragedy fuelled Elliot Anderson's record Premier League transfer",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRFNSejQ3MERPLVZaUzdPWTZRUmIzbFpsSDZYNF9rRXliR3k0RFdHbi1MRnFoN05jNzNXeXg1UUduSGJneWpGSWRmb0VmTk1aa1BZY0NMUVo0MHNPanVMMUY1dlozaWJFQjJsMjdISXkxSlhfWUpiYW9hRWl4Nml0aDNQX05kQlB6OUFDSnhEbG1Fd1RO0gGaAUFVX3lxTE9QVW5scWl3TVlaeDYyQlZiMW5BWVZER3BBb0VobXJFWjRGWm1CUlVWeWpSTENGVHhvNHIwNXVkMGdqYm8xdmxSQVgyWjJvcWZLbkVBQWhMQUtSYWNGcnhnM3VHd09HMDdkWWEybkxES2s0LVNldXJjQjFCNUhaX0tnYkxPYmVoMU8waW9iekZWVlAwQjNUTnRCMHc?oc=5",
-          "publisher": "Tribuna.com",
-          "kind": "article",
-          "snippet": "Unbreakable spirit: How tragedy fuelled Elliot Anderson's record Premier League transfer Tribuna.com",
-          "published": "Fri, 26 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Elliot Anderson becomes third most expensive Premier League signing with £116m Man City move but he's only 31st when adjusting historic fees",
-          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOOE1VNGlxNFZBY1hCZi1PTTYtYTNobmJkTmZyQ000Mkc3Zlp0NjlYbUNNcnNGYldEYm03S05ad25IdEUtbEo3cl9CdEVvcFE5SWNuNjZ4dTQ2aS1SS0dkSEV1dzZ5c08wOTBseVV0SWhkNlRiX1lJTEhiR3M5eEZ1alBoX3h3OG9TSEZEdkpKX1lXWXRIek1pYW5qX1ByaGRBZmQ1SlRKSEdXaDVzMjVudkM3OGQ3UEdBR29NSnAzOWZMdHpnM3FLUlFSbVpfU2FXRXNMMVRwa3BhZjdWYTZMbVhyaHp5NlBLLWJkbE9QOUtqakpTc1JTYUh0Nnh2bjNjcmNoOVBXNnQteGkxUkNjb2RBc1M?oc=5",
-          "publisher": "Manx Radio Motorsport",
-          "kind": "article",
-          "snippet": "Elliot Anderson becomes third most expensive Premier League signing with £116m Man City move but he's only 31st when adjusting historic fees Manx Radio Motorsport",
-          "published": "Thu, 02 Jul 2026 19:01:57 GMT"
-        },
-        {
-          "title": "The Premier League leaders, “Man City,” have completed the most expensive transfer of the summer",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQVpURENJWG5jUFdQVnhUWTBBUE8tc2RrTTBseTF1Wm5SRTgyTEZBYnRfVVB6SDFlY0NnSkwyaXA3Z1h6YUJ0RDJ6RVV3UmNoWjlZUEtjNXBjU2FkcDN2bjY4ejgtVlBGelRVM3gwa2lDdTZuUWF4YjRnend4VEZ1bGFfM3Rsd3JyQnlldjgtalhxOGNITmFJMGFVRnl2UExILVl0WHBDUFd1VGk0TTAyalJnelhJd9IBtAFBVV95cUxQTWtfUDg4a3pSWWRCVUYzd3hKWTZsT2x3N3F2Y0hQcmplYmNfOWNiSHR6YnNfWXI1ekg5eU15dWVHc2Q0SW03SnFiM21CMWgzZ3pOSzRsUndicFhlajlTbnR2TU1sNGU4ZDN1blZ5dm52cnBERTF2NW5fVHowYkRTLUhZRW1NT1V2NWZYNzFzSjNsdTZJV1d1NEQwdm5MQWt1QnhTOE1PWTRmNlR3dlFYMzlEYU8?oc=5",
-          "publisher": "unn.ua",
-          "kind": "article",
-          "snippet": "The Premier League leaders, “Man City,” have completed the most expensive transfer of the summer unn.ua",
-          "published": "Wed, 02 Sep 2026 06:21:15 GMT"
-        },
-        {
-          "title": "Man City sign Fernandez, Ndiaye as Premier League clubs spend record £3.46bn",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQmloMnBTQnU0Z0tjN0syUjNQNFFfamtIdHRjZFFXZHJBZEpjMUpXN05oRGxYYmdsMVYycFJIbEZXZVJSaG9QWTU5WmhjVWhYMjkwSVVDbm4yYlhmSHBSZGRDNGlCNnFWcVdManB6bEJQbjB0TEYydnNFaUthZ3F6YWszbi0tbDR5U2tuVUhfYm1WUU1xUmNobWMwS2I0LXo4Uy1aWWZ6RVlpemtvYnV5Q1kzUnJvMDQ1YjcyYW5LNDN2SGtFOHlYZUo3Uko0dzJpUWfSAd8BQVVfeXFMTlJkRlQtNjFGZUd0cDFfN3F5TmdFXy02Vi1KWl90bjBYZFBxeEhHYWFYaHM4dmttWTdXMUd3UWFNWlY0Rlp0UU44ekVtLXlGRVlpQ2xJYjR2eDFFbDNPVHhZOXZaYURnLVd4ZVNmN0p4UlZfZDdjMGRyRDhWbzRrc0tJaVFLVVVnWU9zbExaMGhfbWtaREZjMDNGcHpJM3pzd0hDcWVQeVB6c0phTEpLZENodEJVS0hSOFhfdnZwbnQxN2k1OFF5a3p4MTk2VW1DMkkxcXRjQXdYTV96V1N1MA?oc=5",
-          "publisher": "newindianexpress.com",
-          "kind": "article",
-          "snippet": "Man City sign Fernandez, Ndiaye as Premier League clubs spend record £3.46bn newindianexpress.com",
-          "published": "Wed, 02 Sep 2026 04:17:24 GMT"
-        },
-        {
-          "title": "Enzo Fernandez Transfer: Man City Sign Chelsea Star For £125m, Equals Premier League Record",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZS1MeVM1VWt2N1lkUHJGaURyWVJ0b1JzNERid29aSWRwZW96MTJYVVNjM3ExQm5kRllvbVc2MTVFaGNRMmR5UG1sOWE2SW81WDVMWDZSNHNXWWZHckYwSHJlWkpqYjVUcUluSUJfaHdCX1VTOWZ0MUJaS2Fqc29lOTlnZlRTdVhhZmxoMmluMDFXUEN0Yk5fZEJBcWFYTm1YTTU1SGlMdTJvWWJkWkZMMHE4aWl3SDYwUUx0cXp0WmJhTU44S0HSAdMBQVVfeXFMUGpNeFpmSFJzZzJHVHVFSmJHUU1rOVhnRldrLWFlY1Y5ank0d1ZiOE1WWkVNUEthY3dkLV9ZNXltM1dmZmhJY3NVcFU4OXkyZXNnNFU1eHFvejQ4TlBSc0NNdnQweFZEUGI5bVF3aTVPaDRzektZV0ZmWTNiakViMFNYNkJxNTQ0S215RzVCdmF0cGRBbXEycWFBMnROM2dZNHh2dVdkbGdnWDVfanVNOXlraUFkRENhTnZfUEJOdHNPb1Qtb3BBVm4yQ01uR2RIelkxdw?oc=5",
-          "publisher": "Outlook India",
-          "kind": "article",
-          "snippet": "Enzo Fernandez Transfer: Man City Sign Chelsea Star For £125m, Equals Premier League Record Outlook India",
-          "published": "Wed, 02 Sep 2026 02:23:42 GMT"
-        },
-        {
-          "title": "Nathan Collins set to become most expensive Irish transfer ever as Premier League side swoops",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQ3ZISXFkTFNLaDRoQXVUMWJ2NHFDTmpGRlhlWVlXT0trT2xocktZVG95MVZLdTZlMDNlNncxcm85MWE4WTdfUVFzYmpaQzhrUlIzRjUwdS1aWnptcXFqR08tS01pN19JSk54WTlBNXJqY0wxLUFUcjhZRXhLR3RvNVV1dw?oc=5",
-          "publisher": "SportsJOE",
-          "kind": "article",
-          "snippet": "Nathan Collins set to become most expensive Irish transfer ever as Premier League side swoops SportsJOE",
-          "published": "Tue, 12 Jul 2022 07:00:00 GMT"
         }
       ]
     },
@@ -21591,6 +21507,445 @@
       ]
     },
     {
+      "id": "transfer-deadline-day-man-city-set-169m-move-671923c2",
+      "slug": "transfer-deadline-day-man-city-set-169m-move-671923c2",
+      "sport": "soccer",
+      "headline": "Why Elliot Anderson is only the 31st most expensive Premier League transfer ever despite huge £116m fee",
+      "blurb": "Nathan Collins set to become most expensive Irish transfer ever as Premier League side swoops SportsJOE",
+      "summary": "Nathan Collins set to become most expensive Irish transfer ever as Premier League side swoops SportsJOE Premier League clubs set new transfer spending record BBC Transfer deadline day: Man City set for $169M move for Fernandez as English clubs spend record $4.3B LancasterOnline Aggregated from SportsJOE, BBC, LancasterOnline, YouTube, sportingnews.com and 27 more.",
+      "category": "trade",
+      "published": "2022-07-12T07:00:00Z",
+      "updated": "2026-09-02T06:21:15Z",
+      "players": [
+        {
+          "key": "collins",
+          "name": "Nathan Collins",
+          "slug": "nathan-collins",
+          "pos": "DEF",
+          "team": "BRE"
+        },
+        {
+          "key": "ndiaye",
+          "name": "Iliman Ndiaye",
+          "slug": "iliman-ndiaye",
+          "pos": "MID",
+          "team": "EVE"
+        },
+        {
+          "key": "anderson",
+          "name": "Elliot Anderson",
+          "slug": "elliot-anderson",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "tonali",
+          "name": "Sandro Tonali",
+          "slug": "sandro-tonali",
+          "pos": "MID",
+          "team": "TOT"
+        },
+        {
+          "key": "savinho",
+          "name": "Sávio Oliveira",
+          "slug": "s-vio-oliveira",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "rogers",
+          "name": "Morgan Rogers",
+          "slug": "morgan-rogers",
+          "pos": "MID",
+          "team": "CHE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Premier League clubs set new transfer spending record",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBKb1d0ZGxJTGtydHZwb3g1Q2pvSW16OG54QWsya1N6VldoMVdydDRMVnk0QnRtSmUyOXJfRE02cTFqSjkzU0t4dHBBeGsxYXl1RTR0WERtWTFyaHdnbWVkTzBxVUlsWUVIVFE?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League clubs set new transfer spending record BBC",
+          "published": "Tue, 01 Sep 2026 20:17:17 GMT"
+        },
+        {
+          "title": "Transfer deadline day: Man City set for $169M move for Fernandez as English clubs spend record $4.3B",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQWHZoTnRuWVY5VEJwRHkxNlRDcW5JNEpoYl9OM0p6TEg3bmpmWVhaby1wak1zVnNkYjhIcVlhdXlOSXl5dm56SF9CZFU5eTJGNzN4RzlPZjg0SkFSMDZ4TjJtZnJyeWFSeklMVS0wUmxLNS1Kd3AzaHUwRVc4dmdaQkxOWjc1M0ZQMGdtcG5yN05OSXNUUFhrS3gwS1VjYmxGMWhnekNGcEtZaEdrb1lybU5vR05GMHZnMVFERFRiMHhsTl9RcmNzOFNKNUN3OXVSek5qMXdZcm9obmpiMW5SSWFTclVZdVlwZEtneWF3MnVwLUY0TzdjcHppUTAyUFlfMmlBNHdzOWZDRE9DMVFJZkx3?oc=5",
+          "publisher": "LancasterOnline",
+          "kind": "article",
+          "snippet": "Transfer deadline day: Man City set for $169M move for Fernandez as English clubs spend record $4.3B LancasterOnline",
+          "published": "Tue, 01 Sep 2026 19:21:57 GMT"
+        },
+        {
+          "title": "Premier League Transfer Values... Make it Make Sense!!! | Caught Offside",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBPMG5IWU8ySU9LNS1ZcUhSQzl0RzVWenAzVEVjZGwyQUQ4c2ZOQ0MyckRndEYwd0d0eHllcU9nN2wzRVFQaHRVaUVDWDFxTHl1RFJQek1yMFZXRHlRekQyWjNWUml5ZzFEYWdYSjZn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Premier League Transfer Values... Make it Make Sense!!! | Caught Offside YouTube",
+          "published": "Thu, 27 Aug 2026 20:56:46 GMT"
+        },
+        {
+          "title": "Premier League transfer record: Where Morgan Rogers to Chelsea ranks among biggest ever deals",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVFlTeEcxYlNRTWNNY1dvYWJDS284Q3JNeU9vTFVzYjljLWJqM0VDRWw4T2dicmdoY2FicUozYVE3VnQ2TWJhc1hucTh5YUZpUzI0cTFjT3pBTndMbzdFdEpYUTRYSnRhRG9PMW84TVBtVUduMWY1RWUya2k5Sm0tNVlHWFA5anJMMG8tbjlEdExCeEx4YVN1MGhUczJFMmVHOXZndklBb3NqUzJVZkZEOHhUTQ?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Premier League transfer record: Where Morgan Rogers to Chelsea ranks among biggest ever deals sportingnews.com",
+          "published": "Tue, 21 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chelsea reportedly sign Morgan Rogers | Premier League transfer news | British record",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMFNhWnRBZVNuMkNRdFIxNnkwY2QzM2JjbWllMTNKSWFJTi1PMGNNRzBhZkxhYldTWTVhM0FjNU8xSGJUQU9yckFLYmRDV29FSThkeGlQQmxKai1GUUk3M1BkU0xDUTk3VHQyRFB5dEJuTGNaLTVUekpWOFd0Zm1PY2VnRC1jbTluTW5kVmNtTVJGeEFBajU1RmQ4XzBablU?oc=5",
+          "publisher": "football360.com.au",
+          "kind": "article",
+          "snippet": "Chelsea reportedly sign Morgan Rogers | Premier League transfer news | British record - where does fee rank? football360.com.au",
+          "published": "Sun, 19 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal | Premier League transfer news | Christos Tzolis | Morgan Rogers",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRmJpZndqNENJRkZMamFhcFZQVm91RGNmWVZwdWtqQzdHVk1fWHJ1NlY1UjEyTjJ3T01VU3UzZmVrQk5XblF3NlJqZmhpS1otOHZXZExDeFk2Rno0NTVzQnktZkdaR3RuME5lWU54Q09tamt6RXlFc2VuNjc0Q2xseVhuS3BWb1lqQXlPMkJUVGZIVV9wVTFLZVIyNkRxNGxMdkhFUQ?oc=5",
+          "publisher": "football360.com.au",
+          "kind": "article",
+          "snippet": "Arsenal | Premier League transfer news | Christos Tzolis | Morgan Rogers football360.com.au",
+          "published": "Fri, 17 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Morgan Rogers: Chelsea set new premier league transfer record",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNLUZnRU0tQ2xqX3U5bmdoc2lzeGJKMmtHNGV4TmFSdkhaTFQ3cEZNdE5BYVZuWVdRcVR4SGNlb3g0RXM0dy1WVEhXU20zMlpoZWFsZjBFdHFHYkRFc3NEY3hfWHc2MnR6dkhON0ZqWHZ5NVJfTFRzWkZyMDRjb1Q1RC1RS3I1M1RwX2c?oc=5",
+          "publisher": "Blueprint Newspapers",
+          "kind": "article",
+          "snippet": "Morgan Rogers: Chelsea set new premier league transfer record Blueprint Newspapers",
+          "published": "Wed, 22 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Manchester United set to join Premier League transfer battle for Morgan Rogers",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNS1KMHRXYlVVeS15TkRyOTNtOUVaVE1JZG9UWDdhWUhVazNFV2djWG1hMnVNNk9vUThjSTJhb1NWZmZ1OHJZc2NBM1BkbVhqYzRJTjNjOHFhblM5X0xoRVUtbVp4dlR3MjMxeVFNbkdPTzdJdE1aTFFBYllJZ3JoeFZlTVFNWVl5OGdoNHJDYzd0ZzJrZ1Z0a0p2U0VsRFhpMlRJWjVPWUFJdzZkeWxIUHRR0gG3AUFVX3lxTE5QZDVyMVJNNVVLWFhZOUh5Yk9idEp6LVFUTUNqMmtNcnY4ckljQUc4SW54ZzV1bTdoSzJ5YW5waW96SVE4V0d2LWlJTUJ1VGUzVHd6MVZGZ1Q5OXRwSDRGa0oxRkZvR1ZrOWVud0pnbDNLb3BxaGpDOHhUVE9RZUFpcGRqQjFUbXRUSzBwMzFRSTFMenpaYU9HVWYwR2R2bXlUejcxYmgwVy1HUVV6Si1CZVAzRmJ6aw?oc=5",
+          "publisher": "The Manc",
+          "kind": "article",
+          "snippet": "Manchester United set to join Premier League transfer battle for Morgan Rogers The Manc",
+          "published": "Thu, 09 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chelsea 'preparing' stratospheric Aston Villa bid that would shatter Premier League transfer record",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQUTVYejhtRWd6ZmNzNmRUa1piX1pFaUdUOEVwdDhJS2VIaTV6bmhkLVN4c2F5dFRlLUV2LTM2dUVjVFVXLWtxWVdabHA4eHJXemxvV1hkaVI4bmFFS2pWdDRGYWlsa1ZvaXd3MUVZbF9aNkphOXYzb3RMUjN0Mks2eUJzNElkU3JKOFlkci1TZzk1SVFaOG4tM1FVMktSRmhJekE3ZG5ZblJtU01xX3NFbTdNZGxfbm9MYUphNU0tZmE4cDNRaGdfb19PSE82NDNwelFWa0g0Q28tTzhjcGw0N0Jn?oc=5",
+          "publisher": "birminghamworld.uk",
+          "kind": "article",
+          "snippet": "Chelsea 'preparing' stratospheric Aston Villa bid that would shatter Premier League transfer record birminghamworld.uk",
+          "published": "Wed, 07 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Fernandez joins Man City for joint-British record £125m",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cr7deg1ze03o?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "Manchester City pay a joint-British transfer record fee of £125m for Chelsea midfielder Enzo Fernandez.",
+          "published": "Tue, 01 Sep 2026 22:52:22 GMT"
+        },
+        {
+          "title": "Man City sign Fernandez in British-record-equalling deal",
+          "url": "https://www.skysports.com/football/news/12040/13579972/enzo-fernandez-transfer-news-man-city-sign-midfielder-from-chelsea-in-british-record-equalling-125m-deal",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "Manchester City have signed Enzo Fernandez from Chelsea for a joint-British-record fee of £125m.",
+          "published": "Tue, 01 Sep 2026 23:30:00 BST"
+        },
+        {
+          "title": "Deadlines, acrimony and a record as Man City back Maresca for Fernandez deal",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cz0z377mxero?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "The summer's longest-running transfer saga ends with Manchester City paying a joint-British record fee to bring in midfielder Enzo Fernandez from Chelsea.",
+          "published": "Tue, 01 Sep 2026 23:16:59 GMT"
+        },
+        {
+          "title": "ENZO FERNANDEZ SIGNS FOR MAN CITY!!! 🚨",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE95eWJ2VTBZbmJ6ejlFeThlYWRBbnJac2tySmdWNGpfemNIZXVwNFJqTEFPSzhxUFVfUUluZE4waHFCcG0zTjl3WmJWWlRySTlwVTJGNlFB?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "ENZO FERNANDEZ SIGNS FOR MAN CITY!!! 🚨 YouTube",
+          "published": "Tue, 01 Sep 2026 16:36:26 GMT"
+        },
+        {
+          "title": "Deadline Day Drama: Alvarez, Fernandez, and Gakpo in Transfer Limbo",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZHVIV3NxZjBKbUJ1MGo5MXNqZ2ZuZUJySmZYZklZR0N6VEI3NXlBenQxX2R4Q1o0eUdpVG1FSUhtTHQtTnhZVEpYc3lPcm5GWklkRUJYcnRBVXNYY2ZzaG93V1FwUzIySmhzVHoxcm1uQmhwZUdVUk4wbXVXWUNHTWFtamV1bzdVWGhvb21falRhTXc?oc=5",
+          "publisher": "Head Topics",
+          "kind": "article",
+          "snippet": "Deadline Day Drama: Alvarez, Fernandez, and Gakpo in Transfer Limbo Head Topics",
+          "published": "Mon, 31 Aug 2026 07:35:00 GMT"
+        },
+        {
+          "title": "English clubs spend a staggering $4.7B in transfer window as Fernandez signing caps $600M City spree",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQeEhXRnF3M1I4X0l2Z3djMjdVRnJvUVBFMjE2UUdkeTRPSWd1YXpkQjNTamJFcWJ5bHlhSllScjNfMGNZWVJxT3JHT3VldjhkQjhRTXA5MUtJWUhsT2V6SW9tYnIwZzF3cFFoc0ExZkNIODNMSC14QTBEejNDbUZFbWZCZ1FVWjRDRGlwQ0djQnFkSnNTeVNncllLMnNHVkVLWnNQYlZIQlJxbXlodVdXdXdXVFJ3dWtjVWpqS1g5ZFpVVS1rblkwcHlCQk5oUFVIMGJSN2Y0R3VfbTZ2WFZiODZCRFNYbkdDeWpCUVZMOHNhQV80?oc=5",
+          "publisher": "lethbridgeherald.com",
+          "kind": "article",
+          "snippet": "English clubs spend a staggering $4.7B in transfer window as Fernandez signing caps $600M City spree lethbridgeherald.com",
+          "published": "Wed, 02 Sep 2026 00:37:49 GMT"
+        },
+        {
+          "title": "Transfer rumors, news: Man City could prioritize move for Tonali",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQ3N6WDF4MFB0MXEtajlkc2liM2NOazFfRlV6Wjc1YXVxdURWdXNvQ2dFdXJvRHdOb3lTYmdMZWp4aUllcjdZdV9vRktLZUlQYVZRbkN3aHdRdHNOWFRGcTVDNHRWTWphZ2JxVlNObW9Idk9rMzBoUmxhVjJhMl9EbHVQV3BZZElQbURKWjJ3Q0dIWGh2NlNGVkZsZlZpaWhqdWY1V0hR?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Transfer rumors, news: Man City could prioritize move for Tonali ESPN",
+          "published": "Fri, 05 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man City transfer spending explained: Elliot Anderson move smashes British record transfer fee",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOMXl3ZF9NdklUalN2YzduQmh5TC1CcUVreDRXUDJJX3ZTZ0pES3JBVzRIQUhtakhXalFXTWxGclk5NHp2cjlvMUdHN2I5SjdZZkhzaFZiajZaSVlYQzN2QjhlaVluWndYenpoNXl5bDItYTFYaHFDSGZOZ1Vudm1QbkdBWjhJVEtxN1hoZ1pCc3VyTmZtdXBSUVJmdUpuT3k3NkZOYTUtbVZMX1A3bkxYX09TNVhzS1hsRHlFREp1b2RYWGMxSmp2Q3o3LXRrMHk4MmRiWU1wdGc2Q1MyMHVoLVZn?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Man City transfer spending explained: Elliot Anderson move smashes British record transfer fee Sky Sports",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man City confirm £116m Elliot Anderson transfer in club-record move for England star",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdFlrdVZfbVZHaHRvbkdvQlBpdzhDX1o1TGNtdVRZMURnM2sydE02aGltTTdLTXBRRDZCQVpHOGl2bUpKMWlfeVZvRDRCSDlTSnhwVmVZeTFNUXROdkNtbHNkWlU4LWpWUVpwWFZzNVNTd0pkUU9QRkxObGxsaGtGNlNyRF9zRWJoeXREX2dkc09vc0R6NlNod1ZMZWnSAaIBQVVfeXFMUG95RG1UeERxZWpkZmNaNmNWVkI2TU1Tdm5Jb2JvVWN4dlZWSGFoZUwzU014bWhzMF9vajNrNmpSM1ZaWS1STmE3a1BiYlVJenh4NXRzRFFFTHFZS2Q2OF9MMURhd00waW1mQ0ViOVB5WUdxdlBPVnBYeHpBdDJoNzJmVWt4d3FTclVRTmpkX2JRcnFpdmN6VGkxem9yS3U2VjZR?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Man City confirm £116m Elliot Anderson transfer in club-record move for England star The Mirror",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Transfer rumors, news: Man City ahead of Man Utd in Anderson race",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRmFha0wyT3NEVWVkYVZEZm5XdGxGaGNiYmt0ZFAySzFYNTRlSnNSTEdMRUlzc0lKN2FKelFndjlIeVVTeXcxelpxQW14RjVEVHkwN1pnQTdDdGU5Rlc4Vm01YjF2Y2pjSXdUYnBKMEhGamFoTmZQNzc1dER2ZHVyMEY1M1JwUERkSGFtQU1QWGxWU3RtNHExOW9ZS01Cb3ZhSU5NRm1mYllCbll2UzdHS3NpTXFPdzF2dDh4dHpYZjNJZjRHWFRVM1hUUjBBUlU?oc=5",
+          "publisher": "espn.com.au",
+          "kind": "article",
+          "snippet": "Transfer rumors, news: Man City ahead of Man Utd in Anderson race espn.com.au",
+          "published": "Sun, 21 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Sandro Tonali thinking, Elliot Anderson latest and Savinho - your Man City transfer questions answered",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNN3ppRk9TNzBOcHR2Rkk0Y3lSaTF5Sk9Wd05kV0FNQWFFYTdVMUxhRmt0RUM2cEdWLUVhN3A1TmNiZWtCWkVJd1V0NGtWVE5aY2N3T3RCVHJSelZuN3VWa2Q2M1poaDJ4M05OeUxGMFJPNEZNQ0UwOER4MTFXQ2xFQWxKQ09JTktsY2pVYzM0QWpmSm1rb3U0dkdwY2hMeVJJUWpuYjMyTTZXREQxaVp4aVJmeEpqZ1U?oc=5",
+          "publisher": "Manchester Evening News",
+          "kind": "article",
+          "snippet": "Sandro Tonali thinking, Elliot Anderson latest and Savinho - your Man City transfer questions answered Manchester Evening News",
+          "published": "Sun, 21 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Elliot Anderson reactions will delight Man City ahead of transfer",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYkJydkxweUE0SEFSVG94b3lISjJRdmI4X1U0UDF0bFpNRE5MZzZ5X3dpYWNuUmx3dlJOLU50Qmh6MF9IUE5UOHVUVm1nS1BzZ3UwdGJ5NTZtc0FLbUxmNW5XOTFfbFlrOUdNck1lWHRzSjA3aW1wOWVUZktETlMxdFllWGRUSl9mUFB2eXl6M1Bsb3pzM0lVRlFSTXdJTXphakVEWk1JU1h0S0Q3OW9DVUhrTUFId9IBuwFBVV95cUxQb3p1NEhpN2hTVG9xVEFWNFJmcjFKTEZhNGozUnZYMm11TFFyOC1MWWNBdWJPMl9OVG1ucjViWU1lUy1zeEhFYXJ5QmFDQzlleUVhZDBPTXZITGxVU2s4dnRDaDBBcmNpRWsxV1pfNXJEVW9PUjljNjZoNjNkTW5uSU95YzdzZEpyWUUtc183MVJ1LXJNSGJpbmt3X3VsNFFoZy1HZ3Y0N1lIamtsNlRGQk1IQVFRZW4ydjNN?oc=5",
+          "publisher": "Manchester Evening News",
+          "kind": "article",
+          "snippet": "Elliot Anderson reactions will delight Man City ahead of transfer Manchester Evening News",
+          "published": "Tue, 23 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "'Kings of Manchester': Elliot Anderson hails City after headline £116m transfer",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWEFRT19RMl9PZ1Q3WHpFYWlJRHEyRlZ0M21BSWlkblhCVXpibHNLUG9LakFVNHljVDN5RURUVEt2eWUtcGVCYzFzQ05qTEhjZUhiOVM5OXNIUC1TWWYxZDJiWXdWS0tXTDFJcHNlMnR2S1MzdjEycm1DOTdOSTdvRzdmQ2gyaFgyeS1fS2dOVEZBSW5MYTVvWG9QRFRha1g2ZkhXVHpPM200REp5TXpzNU9Id2d0Mjgt?oc=5",
+          "publisher": "Flashscore.com",
+          "kind": "article",
+          "snippet": "'Kings of Manchester': Elliot Anderson hails City after headline £116m transfer Flashscore.com",
+          "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Thomas Tuchel speaks out on Elliot Anderson transfer saga",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZ1huRzhvUV9pX01wRWo3VWphb0RCQ0VnVl8yQXdfZ2thWHNsNTNfTTloT2RKc3dlMnlpVFZhQmhINW81dzIwMV9JWGRuY0xSeEluR1JSWlVfZUYxbXUwdExadWRrZjg1RndxalI5aDdJSTFzLVJjR0p1RXdUQ2MtRFI1ZjhEaUdnRWdkcnRrYW13d2NuZnfSAZsBQVVfeXFMTzBqV0ZETjgwMUFMdWlMckpCOXdCa09VeVBxaTBpUUZSS2E0NXdXWGpFWmNWTlNVS1JGZUk3d000bjZWNzZNelRwY24tX1VJeF9wdWc0Vm9FU094YU9Ia2MtdHMyVGQ2VlRxTnJUa3NtLW1qQ3VNNEpINFBMbGpfbzFPS19NanBzOE9YNkVDazcxck5HeUN5TWZUOE0?oc=5",
+          "publisher": "Metro.co.uk",
+          "kind": "article",
+          "snippet": "Thomas Tuchel speaks out on Elliot Anderson transfer saga Metro.co.uk",
+          "published": "Thu, 11 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Elliot Anderson confirms Man Utd legend told him to snub Man City transfer",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORnJidzgxWlJONjZsZV9paU0zalNGVkEya0tMdlV4NDlPTU1aT3ZrZEtzQUlWUS16bjhFVVk3cVBmNW11c3RkNmEtSElvUDVSZzEwOGw4UXB6dFFsazVSSlNzOWV1YU9paEdOSnQ2TktoQlRtNGc0dnBKZDRFVHMta2FyVnNtLVJWWklHVl93c0tvTmV2dHpveUEzYnFucnljbk9lX3Q0QVg2SjZQ0gGyAUFVX3lxTE9WTkszSWJwc3d4a0pLWF9kOGFmWDVYNUFKX3MtUzY4MTg3cFBpcVR0aURtVkt6aVBibVd5Q0VvUnk2WmtnVWlWWE1tUEFEbmZGUmYxem96dFh1V2k3Rm9NcDhGeFF2ME1mTFdRb2IzeHI4bWRScFVGTmpGZkd5aGkyZE9nRjg4Z0pGREQ5emFpdGo0d3FhWFlDanRnRXZmYzF5b0NJaWM2bjVIQ0tIUzdBeEE?oc=5",
+          "publisher": "Metro.co.uk",
+          "kind": "article",
+          "snippet": "Elliot Anderson confirms Man Utd legend told him to snub Man City transfer Metro.co.uk",
+          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man City know Pep Guardiola's Elliot Anderson transfer verdict after Thomas Tuchel admission",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUkk1OXdWbkNRTTNudkdqZVp1eW5UVW13YUluVC1ndnVlWVYwRnhVdnJxbHdudTN5TGV1cVppUlNBZkhIcDFtT05EQjdoOTFrTzBwZ1VhVG53V2xROWhXcTlxTE40QWgzM1ZpekFWX3Z6VDhvQjU1THVZakhsdGxIUjVyZDA0U0NjLWlCbkFnMlhicTZYMDJ6RGhGLTVySHRSTFUyWGVGdHVOQdIBrwFBVV95cUxQNVpUcnplQVJ5d3JVUTJ4b0NmVWZpUXFwZW5vb0x0VkVtem5MSEpOSjZXSTl2ZThUNF9sMWJZT0NpaXBnNVZ1Mm51cWNpNUN0NjI0dF9HWHdkVnVLS1NJZ2tfdk5XZmhEa194NkVEMGU1YXRBeU5FZkd5WDdIQ2RMelpvNHh3bktfMnhVaVdaTXd1R090b01zSTNMNWU4Xzg4cVFmd1JPOVBDQk9mWFBF?oc=5",
+          "publisher": "Manchester Evening News",
+          "kind": "article",
+          "snippet": "Man City know Pep Guardiola's Elliot Anderson transfer verdict after Thomas Tuchel admission Manchester Evening News",
+          "published": "Sat, 13 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man City accelerate Elliot Anderson transfer as ‘new bid’ is revealed after Man Utd decision",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdFFVcHlZZHVLVHdvSXVoNGppSzI5RDNsTjlsdEtGeUo3X2RlT3NDU1k0dExObXRodDluVXR1SWdYb0JrZWluanVnd2lBdllNU3l5NnozVWN6N3VhalJWVVlBVkRnSkNHMHRMTG1uelEtek5RVXBQNmpybklRUlY5SlZ4eU9kOHVDR2RldDIxRFdEbzNueDRhcUJ4VG1kX2RKNmc?oc=5",
+          "publisher": "Football365",
+          "kind": "article",
+          "snippet": "Man City accelerate Elliot Anderson transfer as ‘new bid’ is revealed after Man Utd decision Football365",
+          "published": "Mon, 22 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Inside the remarkable rise of Man City transfer target Elliot Anderson",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYlRIeDlFTUYwc2dnZl8ydVRWbktXMzkwTExNYVdMSU9kSEFpVGdFVk1yeVFHVW9YT096bzBPc0d5V05GNlRVa3FNSndvdHB1cXYxRU9lTTJ2VkpJbWs4RkFXTkJkNk8yRWI0NldoX3h0bHZtVUJfc24zZXl2U0NVZ1RVZmdnNUt3a1BQYWtFcmhROWpoVTdyV0t1MHpKQUxzMkNxaDMzYzhxYnJfZ2c?oc=5",
+          "publisher": "Manchester Evening News",
+          "kind": "article",
+          "snippet": "Inside the remarkable rise of Man City transfer target Elliot Anderson Manchester Evening News",
+          "published": "Sun, 07 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man City's £116m Elliot Anderson transfer exposes another issue with 115 charges verdict delay",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOU1FjNmpZUHZQaEpITDVvXzVlaHhTUVFRZDEwTTFkV1VGaUoxc01WRjlwNFZwS1NPMVhFX0tmVlJLR1BGRVh6UXRiUlNZM0ZxREtCMzQ4dGQzQVNNNldRa1VPWEl1QTFacVdXek5sYXBuTktIZzc2MGkxWmRMTVlxVXgtT0lZUC1YRXVCaXRDUFN6RkZXdE1PZdIBngFBVV95cUxQenN0SnNscXQ1bE5NcGpaTThybWNNRlRXY25DcmNYRUg4Q3djR3NOM2hOVW95d1hKaTB5b0E4YUh6NlJuVTM4elhpX0p3bHlsN1pXOWlRcWJ0OU5BSmkybGNScjV6Yko2dkRldDcyUU9FN2RkWWZJWlpqNGkyQWd5R25NNUQyUjRDWVJTeFlTUDJHaFRDRnR5ejBQVzVWdw?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Man City's £116m Elliot Anderson transfer exposes another issue with 115 charges verdict delay The Mirror",
+          "published": "Fri, 03 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "'Kings of Manchester': Elliot Anderson hails City after headline £116m transfer",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRUZJbzZqcE9XeDdVZlVuMEprR01QQnZnVkEyc0ZkRU9kb2ZXMk82elFRZUxicWJ6UmhrcExYMUpHUFJkdXdLWG1WQm52WVJWM0xWZ2xTa29WTFM0M3NLbFZFeTY3bnE1a2RlOE9nTy1jSGxvYWJKa041dzdQaFVHcjZBUEdvUlpHNG5VN3gxX3hZRDdtOUpOcnBGMzcxMjJyOEYtc3NDUjdVZzhlOW1ObVJkb0t0SkdxQ3Yw?oc=5",
+          "publisher": "Flashscore.co.za",
+          "kind": "article",
+          "snippet": "'Kings of Manchester': Elliot Anderson hails City after headline £116m transfer Flashscore.co.za",
+          "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man Utd reach decision on hijacking Elliot Anderson transfer to Man City for £105m",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdDF0aVBsbThtN1VBdHhvZzVCVFVuNHpzd0tYNnBqbVdJVWFMeGlUejlwSDVzUFg3UUpEem5PaEFlRUdoYjh4Ty04M21qTkV5MS1IS2d4T0pBbUExcHNhUWpCRVVLTnZVNEhqZi0wSXRfU3RUVTVocVNpclhhMmk2bWx1YU5JTXZJQjVqV3UtY2ZzWVZtWXpkNHFNNHUwSnlZMFNoNXRvMA?oc=5",
+          "publisher": "Football365",
+          "kind": "article",
+          "snippet": "Man Utd reach decision on hijacking Elliot Anderson transfer to Man City for £105m Football365",
+          "published": "Mon, 08 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Elliot Anderson isn’t as good as Sandro Tonali or Bruno Guimaraes so what is their transfer value?",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQakhWLVlLdTVRMHZqTl9VLUFGanI4TzdEWkk2dXpKdFdEU1RCakRDQldvMDJPZy1FbG9ScVhfc0Vpazd6SlhiZWpNUWwwM001UXFaRWxla244OXNvSkpCVk1yaUYxT1g5bU9RYjNSUVNVcXdfOGdZS0h4VUk3bVBHUm9sZnUwT2NTQ3V3elBXV19mTmxTNjJVdTA0RVczeUl6ZmFxZHZSNngtaE45VlY2dmNPV2FmblYxNW9wYkJPa2Juc19OQjhZVFBR?oc=5",
+          "publisher": "The Mag",
+          "kind": "article",
+          "snippet": "Elliot Anderson isn’t as good as Sandro Tonali or Bruno Guimaraes so what is their transfer value? The Mag",
+          "published": "Tue, 16 Jun 2026 11:09:54 GMT"
+        },
+        {
+          "title": "Man City want Elliot Anderson AND Sandro Tonali! Blues ready to spend ‘upwards of £200m’ in transfer raids on Nottingham Forest and Newcastle",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOEp5TVF3dXQ1YTV5ZjhLeTBQQTNMY3BsdkhFWVRDMzh1aUxBVVQtVjhva1NFQ1dma2gtc3FNYXRyVHhfTUdiZHkzZEh1RmFtSkJqNDF0bFRSMk1UYm1VZE5NTWY3eW1nalg2TzRuY2NpWjlKRURQVjBZbVJ3dFVkRkl0N1k4Mnh5NnZRcmlXNG5tcEZtMlhKS3hSckdkU1NDUFpZdUdma1luVjJDek1YSTJtNzFzd0hiSkxuZUlWcnBrbGlILU15NThWSjZvUQ?oc=5",
+          "publisher": "Goal.com",
+          "kind": "article",
+          "snippet": "Man City want Elliot Anderson AND Sandro Tonali! Blues ready to spend ‘upwards of £200m’ in transfer raids on Nottingham Forest and Newcastle Goal.com",
+          "published": "Sun, 21 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Sandro Tonali price tag is proof Premier League transfer market is out of control",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcEU4QV8xQTIxbHg4VHBEX2ZjS0ZrcGQ2VW9CN29hdEVOY2N0N0F3MmgyWEVHR0pWX2llbXA0dWpESWQwX2JPTkc4a1l3MTVjSXhaaHVzV1BURmhPbmJYZktfc0tqeDN6N0J5c1FvYnJ3X3JMcFQ5UHlCTHN0b01LQi1TTkXSAYoBQVVfeXFMTmtJQnFVS0NzMVh5TXBlbmI3bUxtQlBHeTVOdFktNzNwQURxclU4TWxLc0h0NjU3SkkzQi1Hc3JfRm1fdkV4aHAxNzNkVW8wSVZVRndlLWRtUU53U0RzcjI3MHpmSkdOT3hKcWI0ZUVmRDhjZEVSdjF1N1diUWp1RnZieW9RMVBDNGZB?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Sandro Tonali price tag is proof Premier League transfer market is out of control The Mirror",
+          "published": "Sun, 21 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Elliot Anderson Transfer Update Sparks City Rebuild",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRFBtVEtHVXVaLVVkNHkzR0tDdW85czhZeU9DTnpYS3ctdU1adE44dzZ4WXRSTmxCZ3VVMC1DYjJaMzE4MDhhQmRvUnJwOXhZY2ZiZGVkc0xhZTd4dDhNb21uSEdDTkRYT2g2Y2pyR3ptNHI5WHp3akcybWpWVHpjNGNLbXJxY0J3?oc=5",
+          "publisher": "Read Man City",
+          "kind": "article",
+          "snippet": "Elliot Anderson Transfer Update Sparks City Rebuild Read Man City",
+          "published": "Thu, 25 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Why Elliot Anderson is only the 31st most expensive Premier League transfer ever despite huge £116m fee",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOS3hFSGNQRWtLTkY2OWdnNjFBc3hPOF9ZZ0FqYjYwZDRsenZhcXY4cjgzSURiT2U5Qzg1dU1ubFBJQTQwcThDUVJaRFc2MWtjN1BpMWFwZHlIYlBULUctWGFVQ0tnR08zVmR1R1FtUWstUzBDUUNlVEZjYjBUc0d4SnRfakhSallTeHd2bnJCS3VkN2tySTdwVFplUzllZlZMZ2F6RlRaU2pKdURncjh0bXRrMFE0QQ?oc=5",
+          "publisher": "SPORTbible",
+          "kind": "article",
+          "snippet": "Why Elliot Anderson is only the 31st most expensive Premier League transfer ever despite huge £116m fee SPORTbible",
+          "published": "Fri, 26 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Elliot Anderson is set to become Premier League's second most expensive transfer at £116m... but which 1990s icon is top of the charts when adjusted for inflation with a deal worth £236m?",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdUtjdWx0YVVGWnlDRXltN1k4cVlGc3RxWHJWTURzSWxZelY0UjNDM3ZiLVFpY0g2OVdVaGYzQXY2TmtVMXVaOXprSVpfamlKWklkS3BVM1dmLThMY1BRc2w4VExIN2sxZ2ttTjRPYVhQYS1tMzROeERzZ0V2RDFDNnliUUxCUUlfTFQxb0xXZ29QNW1WTElHSlZLckNKaE8zTk5WVVNqekRROWFEcmJ2Tl9pMUtlTVNxRVA2SXJWV1N2SGpy0gHKAUFVX3lxTE5QQk9sTDVnbElsUV9YVzR2R21lZzdNOHZtY051MXZtTTAxQTV4U2RmVlM0UVRsRWFpc2hlT2owS0M4aTJMQUtWS1g2NEE3QnBNMDZMQ2VmaDVPeFdPVjNFRmMwN25yTGQyWUhlYzJiSzlDcGk0OHB2V09jaThOTFJrRXhTRm9TMGVxc3lDNmVMSFl4NDF6NWJGNDVnYVByeWZ4VURqT0lqUFhIUXgtMjNpdTVYSGVvdVh2V2xXVFBkZjZ5UkhXbmRHdWc?oc=5",
+          "publisher": "Daily Mail",
+          "kind": "article",
+          "snippet": "Elliot Anderson is set to become Premier League's second most expensive transfer at £116m... but which 1990s icon is top of the charts when adjusted for inflation with a deal worth £236m? Daily Mail",
+          "published": "Fri, 26 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Unbreakable spirit: How tragedy fuelled Elliot Anderson's record Premier League transfer",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRFNSejQ3MERPLVZaUzdPWTZRUmIzbFpsSDZYNF9rRXliR3k0RFdHbi1MRnFoN05jNzNXeXg1UUduSGJneWpGSWRmb0VmTk1aa1BZY0NMUVo0MHNPanVMMUY1dlozaWJFQjJsMjdISXkxSlhfWUpiYW9hRWl4Nml0aDNQX05kQlB6OUFDSnhEbG1Fd1RO0gGaAUFVX3lxTE9QVW5scWl3TVlaeDYyQlZiMW5BWVZER3BBb0VobXJFWjRGWm1CUlVWeWpSTENGVHhvNHIwNXVkMGdqYm8xdmxSQVgyWjJvcWZLbkVBQWhMQUtSYWNGcnhnM3VHd09HMDdkWWEybkxES2s0LVNldXJjQjFCNUhaX0tnYkxPYmVoMU8waW9iekZWVlAwQjNUTnRCMHc?oc=5",
+          "publisher": "Tribuna.com",
+          "kind": "article",
+          "snippet": "Unbreakable spirit: How tragedy fuelled Elliot Anderson's record Premier League transfer Tribuna.com",
+          "published": "Fri, 26 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Elliot Anderson becomes third most expensive Premier League signing with £116m Man City move but he's only 31st when adjusting historic fees",
+          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOOE1VNGlxNFZBY1hCZi1PTTYtYTNobmJkTmZyQ000Mkc3Zlp0NjlYbUNNcnNGYldEYm03S05ad25IdEUtbEo3cl9CdEVvcFE5SWNuNjZ4dTQ2aS1SS0dkSEV1dzZ5c08wOTBseVV0SWhkNlRiX1lJTEhiR3M5eEZ1alBoX3h3OG9TSEZEdkpKX1lXWXRIek1pYW5qX1ByaGRBZmQ1SlRKSEdXaDVzMjVudkM3OGQ3UEdBR29NSnAzOWZMdHpnM3FLUlFSbVpfU2FXRXNMMVRwa3BhZjdWYTZMbVhyaHp5NlBLLWJkbE9QOUtqakpTc1JTYUh0Nnh2bjNjcmNoOVBXNnQteGkxUkNjb2RBc1M?oc=5",
+          "publisher": "Manx Radio Motorsport",
+          "kind": "article",
+          "snippet": "Elliot Anderson becomes third most expensive Premier League signing with £116m Man City move but he's only 31st when adjusting historic fees Manx Radio Motorsport",
+          "published": "Thu, 02 Jul 2026 19:01:57 GMT"
+        },
+        {
+          "title": "The Premier League leaders, “Man City,” have completed the most expensive transfer of the summer",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQVpURENJWG5jUFdQVnhUWTBBUE8tc2RrTTBseTF1Wm5SRTgyTEZBYnRfVVB6SDFlY0NnSkwyaXA3Z1h6YUJ0RDJ6RVV3UmNoWjlZUEtjNXBjU2FkcDN2bjY4ejgtVlBGelRVM3gwa2lDdTZuUWF4YjRnend4VEZ1bGFfM3Rsd3JyQnlldjgtalhxOGNITmFJMGFVRnl2UExILVl0WHBDUFd1VGk0TTAyalJnelhJd9IBtAFBVV95cUxQTWtfUDg4a3pSWWRCVUYzd3hKWTZsT2x3N3F2Y0hQcmplYmNfOWNiSHR6YnNfWXI1ekg5eU15dWVHc2Q0SW03SnFiM21CMWgzZ3pOSzRsUndicFhlajlTbnR2TU1sNGU4ZDN1blZ5dm52cnBERTF2NW5fVHowYkRTLUhZRW1NT1V2NWZYNzFzSjNsdTZJV1d1NEQwdm5MQWt1QnhTOE1PWTRmNlR3dlFYMzlEYU8?oc=5",
+          "publisher": "unn.ua",
+          "kind": "article",
+          "snippet": "The Premier League leaders, “Man City,” have completed the most expensive transfer of the summer unn.ua",
+          "published": "Wed, 02 Sep 2026 06:21:15 GMT"
+        },
+        {
+          "title": "Man City sign Fernandez, Ndiaye as Premier League clubs spend record £3.46bn",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQmloMnBTQnU0Z0tjN0syUjNQNFFfamtIdHRjZFFXZHJBZEpjMUpXN05oRGxYYmdsMVYycFJIbEZXZVJSaG9QWTU5WmhjVWhYMjkwSVVDbm4yYlhmSHBSZGRDNGlCNnFWcVdManB6bEJQbjB0TEYydnNFaUthZ3F6YWszbi0tbDR5U2tuVUhfYm1WUU1xUmNobWMwS2I0LXo4Uy1aWWZ6RVlpemtvYnV5Q1kzUnJvMDQ1YjcyYW5LNDN2SGtFOHlYZUo3Uko0dzJpUWfSAd8BQVVfeXFMTlJkRlQtNjFGZUd0cDFfN3F5TmdFXy02Vi1KWl90bjBYZFBxeEhHYWFYaHM4dmttWTdXMUd3UWFNWlY0Rlp0UU44ekVtLXlGRVlpQ2xJYjR2eDFFbDNPVHhZOXZaYURnLVd4ZVNmN0p4UlZfZDdjMGRyRDhWbzRrc0tJaVFLVVVnWU9zbExaMGhfbWtaREZjMDNGcHpJM3pzd0hDcWVQeVB6c0phTEpLZENodEJVS0hSOFhfdnZwbnQxN2k1OFF5a3p4MTk2VW1DMkkxcXRjQXdYTV96V1N1MA?oc=5",
+          "publisher": "newindianexpress.com",
+          "kind": "article",
+          "snippet": "Man City sign Fernandez, Ndiaye as Premier League clubs spend record £3.46bn newindianexpress.com",
+          "published": "Wed, 02 Sep 2026 04:17:24 GMT"
+        },
+        {
+          "title": "Enzo Fernandez Transfer: Man City Sign Chelsea Star For £125m, Equals Premier League Record",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZS1MeVM1VWt2N1lkUHJGaURyWVJ0b1JzNERid29aSWRwZW96MTJYVVNjM3ExQm5kRllvbVc2MTVFaGNRMmR5UG1sOWE2SW81WDVMWDZSNHNXWWZHckYwSHJlWkpqYjVUcUluSUJfaHdCX1VTOWZ0MUJaS2Fqc29lOTlnZlRTdVhhZmxoMmluMDFXUEN0Yk5fZEJBcWFYTm1YTTU1SGlMdTJvWWJkWkZMMHE4aWl3SDYwUUx0cXp0WmJhTU44S0HSAdMBQVVfeXFMUGpNeFpmSFJzZzJHVHVFSmJHUU1rOVhnRldrLWFlY1Y5ank0d1ZiOE1WWkVNUEthY3dkLV9ZNXltM1dmZmhJY3NVcFU4OXkyZXNnNFU1eHFvejQ4TlBSc0NNdnQweFZEUGI5bVF3aTVPaDRzektZV0ZmWTNiakViMFNYNkJxNTQ0S215RzVCdmF0cGRBbXEycWFBMnROM2dZNHh2dVdkbGdnWDVfanVNOXlraUFkRENhTnZfUEJOdHNPb1Qtb3BBVm4yQ01uR2RIelkxdw?oc=5",
+          "publisher": "Outlook India",
+          "kind": "article",
+          "snippet": "Enzo Fernandez Transfer: Man City Sign Chelsea Star For £125m, Equals Premier League Record Outlook India",
+          "published": "Wed, 02 Sep 2026 02:23:42 GMT"
+        },
+        {
+          "title": "Nathan Collins set to become most expensive Irish transfer ever as Premier League side swoops",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQ3ZISXFkTFNLaDRoQXVUMWJ2NHFDTmpGRlhlWVlXT0trT2xocktZVG95MVZLdTZlMDNlNncxcm85MWE4WTdfUVFzYmpaQzhrUlIzRjUwdS1aWnptcXFqR08tS01pN19JSk54WTlBNXJqY0wxLUFUcjhZRXhLR3RvNVV1dw?oc=5",
+          "publisher": "SportsJOE",
+          "kind": "article",
+          "snippet": "Nathan Collins set to become most expensive Irish transfer ever as Premier League side swoops SportsJOE",
+          "published": "Tue, 12 Jul 2022 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "leeds-rodon-up-10-weeks-hamstring-injury-15c40904",
+      "slug": "leeds-rodon-up-10-weeks-hamstring-injury-15c40904",
+      "sport": "soccer",
+      "headline": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow",
+      "blurb": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow Vodacom Soccer",
+      "summary": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow Vodacom Soccer Leeds United manager Daniel Farke says centre-back Joe Rodon will be out for eight to 10 weeks because of a \"serious hamstring injury\". Leeds’ Joe Rodon out with hamstring injury for eight to 10 weeks nytimes.com Aggregated from Vodacom Soccer, BBC Football, nytimes.com.",
+      "category": "injury",
+      "published": "2026-09-03T13:56:39Z",
+      "updated": "2026-09-03T16:33:26Z",
+      "players": [
+        {
+          "key": "rodon",
+          "name": "Joe Rodon",
+          "slug": "joe-rodon",
+          "pos": "DEF",
+          "team": "LEE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Leeds' Rodon out for up to 10 weeks with hamstring injury",
+          "url": "https://www.bbc.co.uk/sport/football/articles/crm93nv8n7yo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "Leeds United manager Daniel Farke says centre-back Joe Rodon will be out for eight to 10 weeks because of a \"serious hamstring injury\".",
+          "published": "Thu, 03 Sep 2026 14:39:30 GMT"
+        },
+        {
+          "title": "Leeds’ Joe Rodon out with hamstring injury for eight to 10 weeks",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWnJCd3g5SnpVOE13cmVGeU9PVG8wazB0UjBTelM3V0VWajU1dm1JTkZLMUo4Y3VDbTRrY3VyUDVaZVNUXzJhYTdHOUE0UVJTLVRxRXBwTzBEUC1FLTVrQXA1bTNTVDE2eVBpa0FEZGw3Wl8xZHZEanI3SVBiT0lVTg?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Leeds’ Joe Rodon out with hamstring injury for eight to 10 weeks nytimes.com",
+          "published": "Thu, 03 Sep 2026 13:56:39 GMT"
+        },
+        {
+          "title": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcTFNZkxzUDRBODFtTXpxR3cyajUwWDI5eVI1OUJGNFdPd0taZWRBRkx5QjdDSUZXTG1uMjdoQUFwME1yeVpKTzVtb1BRNm9TOFhKMGhQSExiV1RWUk9IZF9ROVRweDE1akhzcVdsRVpoWk44TWZoc2hhYzVxS1NtaDN3WHFkcjZCUXZVam10c1VCSFppNE95aDd3?oc=5",
+          "publisher": "Vodacom Soccer",
+          "kind": "article",
+          "snippet": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow Vodacom Soccer",
+          "published": "Thu, 03 Sep 2026 16:33:26 GMT"
+        }
+      ]
+    },
+    {
       "id": "liverpool-finalise-transfer-agreement-sign-bradley-barcola-psg-58062226",
       "slug": "liverpool-finalise-transfer-agreement-sign-bradley-barcola-psg-58062226",
       "sport": "soccer",
@@ -22278,52 +22633,6 @@
       ]
     },
     {
-      "id": "leeds-rodon-up-10-weeks-hamstring-injury-15c40904",
-      "slug": "leeds-rodon-up-10-weeks-hamstring-injury-15c40904",
-      "sport": "soccer",
-      "headline": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow",
-      "blurb": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow Vodacom Soccer",
-      "summary": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow Vodacom Soccer Leeds United manager Daniel Farke says centre-back Joe Rodon will be out for eight to 10 weeks because of a \"serious hamstring injury\". Leeds’ Joe Rodon out with hamstring injury for eight to 10 weeks nytimes.com Aggregated from Vodacom Soccer, BBC Football, nytimes.com.",
-      "category": "injury",
-      "published": "2026-09-03T13:56:39Z",
-      "updated": "2026-09-03T16:33:26Z",
-      "players": [
-        {
-          "key": "rodon",
-          "name": "Joe Rodon",
-          "slug": "joe-rodon",
-          "pos": "DEF",
-          "team": "LEE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Leeds' Rodon out for up to 10 weeks with hamstring injury",
-          "url": "https://www.bbc.co.uk/sport/football/articles/crm93nv8n7yo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Leeds United manager Daniel Farke says centre-back Joe Rodon will be out for eight to 10 weeks because of a \"serious hamstring injury\".",
-          "published": "Thu, 03 Sep 2026 14:39:30 GMT"
-        },
-        {
-          "title": "Leeds’ Joe Rodon out with hamstring injury for eight to 10 weeks",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWnJCd3g5SnpVOE13cmVGeU9PVG8wazB0UjBTelM3V0VWajU1dm1JTkZLMUo4Y3VDbTRrY3VyUDVaZVNUXzJhYTdHOUE0UVJTLVRxRXBwTzBEUC1FLTVrQXA1bTNTVDE2eVBpa0FEZGw3Wl8xZHZEanI3SVBiT0lVTg?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Leeds’ Joe Rodon out with hamstring injury for eight to 10 weeks nytimes.com",
-          "published": "Thu, 03 Sep 2026 13:56:39 GMT"
-        },
-        {
-          "title": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcTFNZkxzUDRBODFtTXpxR3cyajUwWDI5eVI1OUJGNFdPd0taZWRBRkx5QjdDSUZXTG1uMjdoQUFwME1yeVpKTzVtb1BRNm9TOFhKMGhQSExiV1RWUk9IZF9ROVRweDE1akhzcVdsRVpoWk44TWZoc2hhYzVxS1NtaDN3WHFkcjZCUXZVam10c1VCSFppNE95aDd3?oc=5",
-          "publisher": "Vodacom Soccer",
-          "kind": "article",
-          "snippet": "News | Leeds coach Daniel Farke confirms major Joe Rodon injury blow Vodacom Soccer",
-          "published": "Thu, 03 Sep 2026 16:33:26 GMT"
-        }
-      ]
-    },
-    {
       "id": "richarlison-left-tottenham-s-premier-league-squad-amid-99ff8016",
       "slug": "richarlison-left-tottenham-s-premier-league-squad-amid-99ff8016",
       "sport": "soccer",
@@ -22465,223 +22774,6 @@
           "kind": "article",
           "snippet": "Premier League clubs have been embarrassing in the transfer window this summer, why Liverpool would be crazy to sell Cody Gakpo and Kobbie Mainoo must silence critics: IAN LADYMAN on My Football Weekend dailymail.com",
           "published": "Mon, 31 Aug 2026 10:58:26 GMT"
-        }
-      ]
-    },
-    {
-      "id": "premier-league-2026-27-winners-losers-73dd18e5",
-      "slug": "premier-league-2026-27-winners-losers-73dd18e5",
-      "sport": "soccer",
-      "headline": "Senne Lammens picks up Premier League award ahead of seven players after Man Utd debut season",
-      "blurb": "Senne Lammens picks up Premier League award ahead of seven players after Man Utd debut season unitedinfocus.com",
-      "summary": "Senne Lammens picks up Premier League award ahead of seven players after Man Utd debut season unitedinfocus.com Our writers gaze into their crystal balls and deliver their predictions for the Premier League season ahead Continue reading... Premier League 2026-27 preseason winners and losers ESPN Aggregated from unitedinfocus.com, Guardian Football, ESPN, x.com, flashscore.com and 12 more.",
-      "category": "trade",
-      "published": "2025-07-11T07:00:00Z",
-      "updated": "2026-09-01T23:09:43Z",
-      "players": [
-        {
-          "key": "lammens",
-          "name": "Senne Lammens",
-          "slug": "senne-lammens",
-          "pos": "GKP",
-          "team": "MUN"
-        },
-        {
-          "key": "semenyo",
-          "name": "Antoine Semenyo",
-          "slug": "antoine-semenyo",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "cherki",
-          "name": "Rayan Cherki",
-          "slug": "rayan-cherki",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "wirtz",
-          "name": "Florian Wirtz",
-          "slug": "florian-wirtz",
-          "pos": "MID",
-          "team": "LIV"
-        },
-        {
-          "key": "mbeumo",
-          "name": "Bryan Mbeumo",
-          "slug": "bryan-mbeumo",
-          "pos": "MID",
-          "team": "MUN"
-        },
-        {
-          "key": "alexander isak",
-          "name": "Alexander Isak",
-          "slug": "alexander-isak",
-          "pos": "FWD",
-          "team": "LIV"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Our writers' predictions for the 2026-27 Premier League season - video",
-          "url": "https://www.theguardian.com/football/video/2026/aug/21/our-writers-predictions-for-the-2026-27-premier-league-season",
-          "publisher": "Guardian Football",
-          "kind": "video",
-          "snippet": "Our writers gaze into their crystal balls and deliver their predictions for the Premier League season ahead Continue reading...",
-          "published": "Fri, 21 Aug 2026 11:02:47 GMT"
-        },
-        {
-          "title": "Premier League 2026-27 preseason winners and losers",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTUlwbzlTMkxyWGs3MzNrSGZHWHN2SnNlUmNiMUdlRVBFamJpUWhCeDFYdGxvNFZOUTVWRzVEZS1ERDdUQkFnQkFaUnlLMHluc1RaU0VKUUZxRmVHakV2OEFuTWxoNHlQajg1Vjg0TG5kOUdqX29ZM3B3SUp2dV96YktyTEt2UmRPbE9UME9aV0V5bUhBRXRVVk8zeWJpdHJoWnFDRUNlbHQ1QndOTE96ZTVRNnZGc0VaUTVIM0E5WWlYREhpQmJ4a3MyWDJaSUpUb0xvX242RFc?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Premier League 2026-27 preseason winners and losers ESPN",
-          "published": "Sat, 15 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "LA FÁBRICA TO THE PREMIER LEAGUE. ⭐️⚪️",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nSTltMmNsYjB6LWdRdXVWUFF2NktpLVhkZFFKUXpVTjdfM2lKMGVGVi1NSkFGa0xXQW45d0tmcDBkUDFKM3BPczVTcXgzcDJyWnliVmREMC1Yakd5RjNpNA?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "LA FÁBRICA TO THE PREMIER LEAGUE. ⭐️⚪️ x.com",
-          "published": "Tue, 01 Sep 2026 23:09:43 GMT"
-        },
-        {
-          "title": "Antoine Semenyo nominated for Premier League Player of the Season",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWG1MOEd3TXhaMGhTNXdfWGN2M3ZBRDdVMVBqek9uUnhIZ0lXZm9SOGpVTW1lWWlMSHJyaHU2S3ZsODlxOHhvWEhIc1FacURpRno5Y21XWXFMTXF6aXR0d1hhYXdOU2l0a1BfY2oyXzZkRDlUQW1jY0RHMGFxbFZSYlo4U054a1RENHNuVktvbkhpcEFwcXVoUElPdGRnRG9JMTJ1S2xFN3lXRC1oVk9lZGlCLU1Rc2dhRFlvZXZqcXhLQ0NrWFRFckJxaEE?oc=5",
-          "publisher": "flashscore.com",
-          "kind": "article",
-          "snippet": "Antoine Semenyo nominated for Premier League Player of the Season flashscore.com",
-          "published": "Thu, 14 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "How Semenyo turned rejection into Premier League stardom",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQYnpuYmllcVZyX19QdkRvQ2x0dUUxU3gwZFJWUTFkZWJvVTIxX05iWWMyQ3FpbV9mdXV5c0hpbE5sQTRWU202RTRuSlA3RzY4aDV0WWpQM1ZoSWVmUmJVVkZCTFpSZGt0bVBuR0o2RHlfR0ZVTVltTzVqNTlwaTc5VW5zYTlrUUpxbHpuMWhpWVdYUVFMWlloR2ZJbERWdTRaelhYRGNVN25KWmtRajRFbUZuT3Zab0wtQTZubUtmZ0NXT2FpRHU5Ni1XWQ?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "How Semenyo turned rejection into Premier League stardom Premier League",
-          "published": "Fri, 09 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "The BEST OF Antoine Semenyo for Bournemouth",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYmwxYWd0bHBUYmU3SHB1SHN0bHlUVVdoZTMzNk9RdHdoRHJ2QVg3SzlKNldOVTdTaFN6VmRoMTB6dGtGNHJQTFNMMGw2dzROYnMwdnF2UjFQY1V4dDIxMHpmblVjLW9LUHBVWm5lVDQtMnA3am54OUJhdkZxTEpHRVRfYzlPMnRuVDJIaA?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The BEST OF Antoine Semenyo for Bournemouth Premier League",
-          "published": "Fri, 09 Jan 2026 09:29:12 GMT"
-        },
-        {
-          "title": "Who won the Premier League Player of the Month for February?",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORzZSTkg4Q01kNVVreGNkZVBmcXkxdVViazNQVVplTHJ0cjVZUVYteVFVWWo1RHJHdVhBbUtCRW04MFh1M21USl91MXRfdnJwSEtPbkcxYThpajFDUk5SWGdkcVJuUi13RDZqMFBJVEhpUThUZzhDRTVkVGpyaHVLa1JOSGtnUEl4NlpjS0Z5M0N3eWQyYXQ2LXhPYzhRWWxIdkhnV1B3YXczN2RmcWxkNnh3cTdJZVN1VkVSQUg3MzdoLTNGVjdaRU5rT2U?oc=5",
-          "publisher": "flashscore.com",
-          "kind": "article",
-          "snippet": "Who won the Premier League Player of the Month for February? flashscore.com",
-          "published": "Fri, 13 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Antoine Semenyo: Manchester City transfer target's Premier League goals this season",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9FWUUwM29qOHFFd09XaUR2VjYzZWF3cHdTcUx2TkFUNHNoUVJiaXhwUDVHNzNOa0xNRXFBT1lwZTNFR2dXem9ncHlLd0YtT0dxTDlVRGhEQUltM1JuTl9lc1lWdnk?oc=5",
-          "publisher": "bbc.com",
-          "kind": "article",
-          "snippet": "Antoine Semenyo: Manchester City transfer target's Premier League goals this season bbc.com",
-          "published": "Tue, 30 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Antoine Semenyo: Manchester City transfer target's Premier League goals this season",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ZTS0yeHUzSTVXNjhsZ082V08yeEdaNzdQNUV4QWRwOUJ6Tlg5X09PTUVrTTZDYTR2QXhpaENpaVNueE5HSE5EbU8xV0lLR0dPbzQycEJZQXJyNmxuT3dFTG1KZDBDbHc?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Antoine Semenyo: Manchester City transfer target's Premier League goals this season BBC",
-          "published": "Tue, 30 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Antoine Semenyo reacts to winning Premier League player of the month award",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOVlqNjNZOUd1SVA1VlFiNkdTUTZLZWlXaWtJT2xsQjB3cmtKX0h0OEFHUnN4OS10R19LSU1GSWhZdUFaaDA5WjBOUFRXTV9GWHAyOGM4a2o4a0dpSVNnc0NoSlZyM01uWHgwY1U4cjc0R0MxTjlJNmJXZW00UmY0WnZlUmNvalRZUHJoVHVWOUFpUGpJQXAtaVlyM3ZNVWVCdnNYVThIRWg2X1VtUWFV?oc=5",
-          "publisher": "Read Man City",
-          "kind": "article",
-          "snippet": "Antoine Semenyo reacts to winning Premier League player of the month award Read Man City",
-          "published": "Fri, 13 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Antoine Semenyo picks two Chelsea players in his Premier League Team of the Season so far",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRWJXQnZYVTJ0aWl1RWFQSmUyT1h3cktsVmpkSUczbFZaenBpcHM1Mmw0eVlGYXAwVV9naG5vVks3V0xLV3NCWmhuWVk4cHc5NGV3WXBfcDZGemRqek1PUDVvUi1XZ1A2SVN3LWQtWUlIUjZsRkRQb3l0Nnk2eVc4c3YtWjhBeFlnMU5xWjBBdzl1aS1PM2RoOEQwVjBNbjI1MHBJd1lTYk9qU2MwdFlPbXZ6LTE1am5Fd2lwb1cyeFk5aTZ2UGpVeHJJUQ?oc=5",
-          "publisher": "The Chelsea Chronicle",
-          "kind": "article",
-          "snippet": "Antoine Semenyo picks two Chelsea players in his Premier League Team of the Season so far The Chelsea Chronicle",
-          "published": "Sat, 07 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Antoine Semenyo joins forgotten Champions League winner in exclusive two-man club",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbGtCdE9tZjNjSllYOUhSRW9IUExtd0dBTkhFcUtDakdJUnpMeWQ5aGptQnV1R202WHZJMWY3TUVEOTN3SzhpM0RYdE0tWmF4S0hzTHF5WGhaWWVlWHVmUXhsYzZzRFRZTGNzdmROVDlNWmEtT21OUDFpSlgwOWFRNGNMRlp1blpPYnRFTS1ndFRlUmpPV1o1ZTNTR1g?oc=5",
-          "publisher": "talkSPORT",
-          "kind": "article",
-          "snippet": "Antoine Semenyo joins forgotten Champions League winner in exclusive two-man club talkSPORT",
-          "published": "Wed, 11 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "30 Premier League Players With Biggest Value Decrease in 2025/26 Season",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQi01RDNnUlJHT0twUWZWSU9DU3ZyX0d1aVZVNmhoN2dBUmFaOE9wbnpwOU9sZ0xWUldaU0VkS2hXVVlabVFJblJfaWVvN0FxMnotRGhCdTYyMEZoMWU1SHJwVDFKS2ttMHRlU2hmQV9sSnRIa1dqb05ZQkJ5OG51NUpaeGVHNXRQLW1PT0Rsam1EZUVBd1IxNmZEcHE?oc=5",
-          "publisher": "GiveMeSport",
-          "kind": "article",
-          "snippet": "30 Premier League Players With Biggest Value Decrease in 2025/26 Season - Alexander Isak 4th GiveMeSport",
-          "published": "Fri, 12 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cherki and Semenyo up for new Premier League award",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZFd1eUJjcDBBSnJpLUs5M09NaElzSlFKVGZrZEd2WTdUekRuZTd0c3A0WUVuNFNFRTVkR2NWVHVTcmtMQ0Q2M3hDZ1BnV1AyWmF0NmljNldudFE1VjdWMWpDZUJJd0Ewek5EbENlUWc3WG5JWHZjWnZLdTlwVW81RU90SWZWNzV1RTdfRC1BMko1Q05xaWQyREpMTQ?oc=5",
-          "publisher": "mancity.com",
-          "kind": "article",
-          "snippet": "Cherki and Semenyo up for new Premier League award mancity.com",
-          "published": "Wed, 27 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Rayan Cherki humiliates Florian Wirtz and £616m Premier League disappointments",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRHR3Ni0ydWJnQ1dOVDZXc3RhZnRMZzhPZDVJbktJZExUT19JeU80dy14QWM1bmFra1FKZWF0aWx6UVJudW1GTmRMckZOMWhGREdJYVlVYVFVdk5ZNDI3ZUpKc2RreDVkZzRaSDNYTmMxSGd2RVljMHZfWkxnbGdDbnpRZF9HaUlaWE1DREV4V1FfZXlmbjE2VVJNTTk5eUV2MGZuYzBTWlhxMkk?oc=5",
-          "publisher": "Football365",
-          "kind": "article",
-          "snippet": "Rayan Cherki humiliates Florian Wirtz and £616m Premier League disappointments Football365",
-          "published": "Wed, 17 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Raya, Cherki & Co. - The 24 TM Premier League Player of the Season nominees revealed",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNU2pGSVgtdF9XZUR5Rm9TZTZIUWZDYktBOXlMZi1hRGhKcWlhRDFyUkdKM0FMellsQjRZRlFMRFJtZ05fX0p0aUlpVGtHODhGWFd4UmpubG9taF92SS1STDVVS2diT1pMTlBwWHBlWk42WmkzV1FjZERPMUZNSU0zenVYRGJ2dWxlTVlCMDFZNXp2eGI4OGY0ZG1HNXdINXM3Wk40WEFjZVVBQVJuN2labkdDcDQ5U0JLWGFkMUJJQXl6OUtXR28yOHRMZw?oc=5",
-          "publisher": "Transfermarkt",
-          "kind": "article",
-          "snippet": "Raya, Cherki & Co. - The 24 TM Premier League Player of the Season nominees revealed Transfermarkt",
-          "published": "Wed, 13 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Bryan Mbeumo wins Premier League Player of the Month award",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdDZyc1RMUHRGQ1FKRHhKa1g1bUdQRFd2TS1KcFYtbjBBako4OTlUd21wRXpmSGVzbTB5ZmZ1N2IyMWRlRzFaMkZIVTBPOWRKMW5LMXlacFZGU1BPZDFsdUE0cWsyUjJFTVZBZFNMVXJsZ2VsbnRTX2x1aGNSNVpsNXROVURLSDBtdThUbUEyN0k5TDVvZklLdzNOS2VPQWpVYXJveWJZeFlzUQ?oc=5",
-          "publisher": "The Peoples Person",
-          "kind": "article",
-          "snippet": "Bryan Mbeumo wins Premier League Player of the Month award - Man United News And Transfer News The Peoples Person",
-          "published": "Fri, 11 Jul 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Five Premier League Clubs Most Likely to Sign Antoine Semenyo",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9UNndUWGNsWDczamtHVUg2blNVcWhVYkZoXzRqQTYxX0Jxc2xpeGxycTJSaW5fdEthN0IwcWFybW9QQUNWdFBuN1ZtSDZVV2dKOUlpNURULW5Ic0dsVU9OOGNvN3RxOW1tOWhFamVmb2hZaW1mRDl0TDkwZlY?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Five Premier League Clubs Most Likely to Sign Antoine Semenyo Sports Illustrated",
-          "published": "Wed, 19 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League players who have played most minutes this season",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdzNINE0wMzJtT1gyYWU2dy05T25iZDVhUi1YS3JrZ0pRYmFwQ2NNa0pBTkFUM3pIUmhyRGRYTldib0I0MW9LN241a3lCRk1LUzVsUXRJcFVOLUpXUm5Lb1AwQ1YyRlpSYUI3bm9POU5XWnA0WThwNzc2N2RobVlUWC04ODdLWXRuc1NhelV2NDhUSExyLUpHaVpXWTl1eGE2ejc0c08zRzlxYUhLYXc?oc=5",
-          "publisher": "Football365",
-          "kind": "article",
-          "snippet": "Premier League players who have played most minutes this season Football365",
-          "published": "Tue, 24 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Senne Lammens picks up Premier League award ahead of seven players after Man Utd debut season",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRFlWc2NScVFCa3RsUDhydnJOalI5clZwcVhjMmJYSmotVl83SFNqTDhaVnl0dUxmcmpKU1p0c2Z6VjBkQ0NjREdlMDBuSE9FUFJGVlNNaEtCWnRWRFd4ZHNFdWxSWWtHQ3F2M2lNVm1qNW82WUQ4eXpHM0xvUTdlTlU4S3Y5T0t1eDdBenUyRkNwdlpLUFJObGlFM1lSRS1mbVo2TzBpakhETnJoc3lWN1VqRzJIRktzOF81bExZdi1ZaXVLbG9CMQ?oc=5",
-          "publisher": "unitedinfocus.com",
-          "kind": "article",
-          "snippet": "Senne Lammens picks up Premier League award ahead of seven players after Man Utd debut season unitedinfocus.com",
-          "published": "Mon, 01 Jun 2026 07:00:00 GMT"
         }
       ]
     }
