@@ -1,19 +1,26 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-04T07:26:04Z",
-  "fresh": 141,
+  "updated": "2026-09-04T08:28:17Z",
+  "fresh": 136,
   "stories": [
     {
       "id": "clippers-vehemently-reject-s-findings-kawhi-leonard-investigation-18d83b9d",
       "slug": "clippers-vehemently-reject-s-findings-kawhi-leonard-investigation-18d83b9d",
       "sport": "basketball",
       "headline": "What's next after NBA's Clippers punishment? Five lingering questions about Kawhi Leonard trade, appeals, more",
-      "blurb": "Raptors Receive Great News on Kawhi Leonard Trade After Clippers Scandal Yahoo Sports",
-      "summary": "Raptors Receive Great News on Kawhi Leonard Trade After Clippers Scandal Yahoo Sports The NBA hammered the Clippers with penalties following an investigation into salary cap circumvention Kawhi says he had “no knowledge of any intent on anyone's part to circumvent the salary cap” Aggregated from Yahoo Sports, CBS NBA, SB Nation, USA Today, bleacherreport.com and 21 more.",
+      "blurb": "Clippers Can Add Third Star Next to Kawhi Leonard & Darius Garland With This Trade Sports Illustrated",
+      "summary": "Clippers Can Add Third Star Next to Kawhi Leonard & Darius Garland With This Trade Sports Illustrated The NBA hammered the Clippers with penalties following an investigation into salary cap circumvention Kawhi says he had “no knowledge of any intent on anyone's part to circumvent the salary cap” Aggregated from Sports Illustrated, CBS NBA, SB Nation, USA Today, bleacherreport.com and 21 more.",
       "category": "trade",
       "published": "2026-05-22T07:00:00Z",
       "updated": "2026-09-03T21:57:59Z",
       "players": [
+        {
+          "key": "darius garland",
+          "name": "Darius Garland",
+          "slug": "darius-garland",
+          "pos": "PG",
+          "team": "CLE"
+        },
         {
           "key": "kawhi leonard",
           "name": "Kawhi Leonard",
@@ -322,6 +329,14 @@
           "kind": "article",
           "snippet": "Raptors Receive Great News on Kawhi Leonard Trade After Clippers Scandal Yahoo Sports",
           "published": "Thu, 03 Sep 2026 15:38:30 GMT"
+        },
+        {
+          "title": "Clippers Can Add Third Star Next to Kawhi Leonard & Darius Garland With This Trade",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaDBKVXlhMWN0dlpYeGtrOHNEWHljT0lwZGlFNzFDa2EwNjIxYmZpTV9CY2FxRDMtUXlSSkZlZVVwX0pvSHZCRVBBem9HZ1Q2Unk2YW5icnUzY2NjT3N2YkJFbUk2THBmYjRaczZ1V3IzcVU4S2JySmZ1Q3gzdHJ5T2Jlc21xa2ZzdWowRjd4UXh3NXRvWUpKMjZsR2dFVUhsWHBfTjJ5bDEzcHFESFVqY1BDaw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Can Add Third Star Next to Kawhi Leonard & Darius Garland With This Trade Sports Illustrated",
+          "published": "Tue, 09 Jun 2026 07:00:00 GMT"
         }
       ]
     },
@@ -701,6 +716,164 @@
       ]
     },
     {
+      "id": "steve-ballmer-suspended-one-year-clippers-lose-5-95a1aad8",
+      "slug": "steve-ballmer-suspended-one-year-clippers-lose-5-95a1aad8",
+      "sport": "basketball",
+      "headline": "Why wasn't Kawhi Leonard's contract wasn't voided? The differences vs. NBA's last major cap circumvention case",
+      "blurb": "While the Clippers got hammered for cap circumvention, Kawhi Leonard avoided a suspension or voided contract from the NBA",
+      "summary": "While the Clippers got hammered for cap circumvention, Kawhi Leonard avoided a suspension or voided contract from the NBA The NBA released the findings of its nearly year-long investigation into salary cap circumvention allegations on Wednesday There is more, Adam Silver and the NBA have thrown the book at the Clippers for salary cap circumvention. Aggregated from CBS NBA, NBC Sports, LA Times, USA TODAY Sports, Yahoo Sports and 4 more.",
+      "category": "roster",
+      "published": "2026-09-02T20:26:31Z",
+      "updated": "2026-09-03T23:06:59Z",
+      "players": [
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA hammers Clippers, Steve Ballmer for salary cap circumvention as Kawhi Leonard avoids suspension",
+          "url": "https://www.cbssports.com/nba/news/nba-punishes-clippers-steve-ballmer-salary-cap-circumvention-kawhi-leonard/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "The NBA released the findings of its nearly year-long investigation into salary cap circumvention allegations on Wednesday",
+          "published": "Wed, 02 Sep 2026 21:10:02 +0000"
+        },
+        {
+          "title": "Steve Ballmer suspended one year, Clippers to lose 5 first-round picks in Kawhi Leonard endorsement scandal",
+          "url": "https://sports.yahoo.com/articles/steve-ballmer-suspended-one-clippers-210031885.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "There is more, Adam Silver and the NBA have thrown the book at the Clippers for salary cap circumvention.",
+          "published": "Wed, 02 Sep 2026 21:00:31 +0000"
+        },
+        {
+          "title": "NBA hammers Clippers, Steve Ballmer and Kawhi Leonard following investigation",
+          "url": "https://sports.yahoo.com/articles/nba-hammers-clippers-steve-ballmer-205348049.html",
+          "publisher": "LA Times",
+          "kind": "article",
+          "snippet": "The NBA handed down sweeping penalties to Clippers owner Steve Ballmer, team executives, the team and Kawhi Leonard following an investigation.",
+          "published": "Wed, 02 Sep 2026 20:53:48 +0000"
+        },
+        {
+          "title": "NBA fines Clippers $30M, drops hammer on Steve Ballmer, Kawhi Leonard: Live updates",
+          "url": "https://sports.yahoo.com/articles/nba-announces-big-penalties-clippers-203951012.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "An NBA-backed investigation found that the Clippers circumvented the salary cap by facilitating a \"no-show\" endorsement deal for Kawhi Leonard.",
+          "published": "Wed, 02 Sep 2026 20:39:51 +0000"
+        },
+        {
+          "title": "NBA strips Clippers of 5 first-round draft picks, fines Steve Ballmer $30M in Kawhi Leonard salary cap circumvention probe",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/nba-reportedly-strips-clipper-of-5-first-round-draft-picks-fines-steve-ballmer-30m-in-kawhi-leonard-salary-cap-circumvention-probe-202637985.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The NBA has stripped the Los Angeles Clippers of five first-round draft picks and fined owner Steve Ballmer $30 million at the conclusion of it’s probe into alleged salary cap circumvention with Kawhi Leonard, ESPN’s Shams Charania reports.",
+          "published": "Wed, 02 Sep 2026 20:26:37 +0000"
+        },
+        {
+          "title": "Kawhi Leonard: Fined, avoids suspension",
+          "url": "https://www.rotowire.com//basketball/player/kawhi-leonard-3195",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Leonard has been fined $700,000 in restitution for improper benefits due to his involvement in the Clippers' salary cap circumvention, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 02 Sep 2026 1:34:00 PM PDT"
+        },
+        {
+          "title": "Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts. Clippers owner Steve Ballmer is suspended from all league and team activities for one year for knowingly seeking to help Mr. Leona",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HcDY5ZzB6OWN0NFFnMDlUVGp4TmZiTWpkS3hrRmdGR2RZS0h4R2ZtRzBmTlVYMmFMbEd4b3lCZFhEVlJyOFRJYWdEQ3lRR3NpTm0yNHRUbEJ0TDBGSGx2cmIwTXg?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts. Clippers owner Steve Ballmer is suspended from all league and team activities for one year for knowingly seeking to help Mr. Leona x.com",
+          "published": "Wed, 02 Sep 2026 20:26:31 GMT"
+        },
+        {
+          "title": "Read the NBA's investigation of the Clippers, Steve Ballmer, Kawhi Leonard",
+          "url": "https://sports.yahoo.com/articles/read-nbas-investigation-clippers-steve-214136815.html",
+          "publisher": "LA Times",
+          "kind": "article",
+          "snippet": "Here is the NBA's investigation into allegations the Los Angeles Clippers the team circumvented the league's Collective Bargaining Agreement.",
+          "published": "Wed, 02 Sep 2026 21:41:36 +0000"
+        },
+        {
+          "title": "Read Kawhi Leonard statement on NBA's significant punishments, fines",
+          "url": "https://sports.yahoo.com/articles/read-kawhi-leonard-statement-nbas-211211969.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "NBA star Kawhi Leonard released a statement on Sept. 2 addressing the punishments and fines the league dropped on him and the LA Clippers.",
+          "published": "Wed, 02 Sep 2026 21:12:11 +0000"
+        },
+        {
+          "title": "Why wasn't Kawhi Leonard's contract wasn't voided? The differences vs. NBA's last major cap circumvention case",
+          "url": "https://www.cbssports.com/nba/news/kawhi-leonard-contract-voided-differences-nba-joe-smith/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "While the Clippers got hammered for cap circumvention, Kawhi Leonard avoided a suspension or voided contract from the NBA",
+          "published": "Wed, 02 Sep 2026 22:57:24 +0000"
+        },
+        {
+          "title": "What does severe NBA Kawhi punishment mean for Clippers future?",
+          "url": "https://sports.yahoo.com/articles/does-severe-nba-kawhi-punishment-010015029.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "The league dropped the hammer in the wake of the Kawhi Leonard scandal, the Clippers are left to pick up the pieces.",
+          "published": "Thu, 03 Sep 2026 01:00:15 +0000"
+        },
+        {
+          "title": "Is the Clippers’ Kawhi Leonard punishment the NBA’s harshest ever?",
+          "url": "https://sports.yahoo.com/articles/clippers-kawhi-leonard-punishment-nba-210628631.html",
+          "publisher": "NY Post Sports",
+          "kind": "article",
+          "snippet": "The NBA has dropped the hammer on the Los Angeles Clippers. After a yearlong investigation into salary-cap circumvention involving Kawhi Leonard, the league is stripping the Clippers of five first-round...",
+          "published": "Wed, 02 Sep 2026 21:06:28 +0000"
+        },
+        {
+          "title": "Within a month of Clippers team president introducing Kawhi Leonard's uncle to execs at Boingo, Daktronics, and Lockton in June 2020, Leonard signed multi-year, multi-million dollar deals with 2 of the companies on the same day. Next month, he signed anot",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyNDRKWjJ1d0ZUMFdxX3VVSXY1bTloMnZWOWlaOS0zeTVwN2JYZGRaajlqTmRXTkFJVGQwOWthQm00TlNiWEl2cXhIMXpkRkctSkZrcWFDZkZQZDE0Qzg0dE1nbw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Within a month of Clippers team president introducing Kawhi Leonard's uncle to execs at Boingo, Daktronics, and Lockton in June 2020, Leonard signed multi-year, multi-million dollar deals with 2 of the companies on the same day. Next month, he signed anot x.com",
+          "published": "Wed, 02 Sep 2026 21:18:38 GMT"
+        },
+        {
+          "title": "BREAKING: Los Angeles Clippers PUNISHED For Kawhi Leonard Contract, What It Means For Phoenix Suns",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB2cEtUSEhZYUg0cGhicXBwZmY0X1Y2a1hZWWtrd3BEU3FDQ21vQU9tVEpSMXlVR2FXWVphU0o1THIwVWgteUx0MUw4c0Y4RHE4SDgxSTBn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "BREAKING: Los Angeles Clippers PUNISHED For Kawhi Leonard Contract, What It Means For Phoenix Suns YouTube",
+          "published": "Thu, 03 Sep 2026 11:12:42 GMT"
+        },
+        {
+          "title": "Clippers rat turns over 6-year notes of ‘illicit deals’ in Kawhi Leonard investigation",
+          "url": "https://sports.yahoo.com/articles/clippers-rat-turns-over-6-170704765.html",
+          "publisher": "NY Post Sports",
+          "kind": "article",
+          "snippet": "The Los Angeles Clippers have been punished for violating salary cap circumvention rules when the team signed Kawhi Leonard to an extension in 2021. According to ESPN insider Brian Windhorst,...",
+          "published": "Thu, 03 Sep 2026 17:07:04 +0000"
+        },
+        {
+          "title": "Kawhi Leonard said he had no knowledge any of the endorsement deals he signed were to circumvent the cap. NBA fined him $700k + said he violated circumvention rules by pressuring Clippers for off-court income thru his uncle. NBA's report specifies one in",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1PcTRROFI1eDQ1UTN4OFhNMnlMZmFHOGZ1cHpwVUxzOGNhbGUzQ3Z2UDJ5aU5hckhhQUNYdGF2cDdPYkItbzFXMldLUGZubnA4cGlWM3VBNzF4QVc0akdibGhLaw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Kawhi Leonard said he had no knowledge any of the endorsement deals he signed were to circumvent the cap. NBA fined him $700k + said he violated circumvention rules by pressuring Clippers for off-court income thru his uncle. NBA's report specifies one in x.com",
+          "published": "Thu, 03 Sep 2026 14:13:27 GMT"
+        },
+        {
+          "title": "The Clippers just lost 5 first-round draft picks as punishment from the Kawhi Leonard scandal. What do they have left?",
+          "url": "https://sports.yahoo.com/nba/article/the-clippers-just-lost-5-first-round-draft-picks-as-punishment-from-the-kawhi-leonard-scandal-what-do-they-have-left-230659404.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The Clippers now have decidedly fewer roster-shaping tools when they appeared ready to a take longer-term approach and build through the draft.",
+          "published": "Thu, 03 Sep 2026 23:06:59 +0000"
+        }
+      ]
+    },
+    {
       "id": "jazz-trade-cody-williams-john-konchar-timberwolves-josh-6d01dedd",
       "slug": "jazz-trade-cody-williams-john-konchar-timberwolves-josh-6d01dedd",
       "sport": "basketball",
@@ -907,164 +1080,6 @@
           "kind": "article",
           "snippet": "NBA Trade Rumors: Lakers’ Next Deals, Knicks Being Monitored & More heavy.com",
           "published": "Wed, 02 Sep 2026 12:59:40 GMT"
-        }
-      ]
-    },
-    {
-      "id": "steve-ballmer-suspended-one-year-clippers-lose-5-95a1aad8",
-      "slug": "steve-ballmer-suspended-one-year-clippers-lose-5-95a1aad8",
-      "sport": "basketball",
-      "headline": "Why wasn't Kawhi Leonard's contract wasn't voided? The differences vs. NBA's last major cap circumvention case",
-      "blurb": "The NBA released the findings of its nearly year-long investigation into salary cap circumvention allegations on Wednesday",
-      "summary": "Kawhi Leonard: The NBA released the findings of its nearly year-long investigation into salary cap circumvention allegations on Wednesday There is more, Adam Silver and the NBA have thrown the book at the Clippers for salary cap circumvention. The NBA handed down sweeping penalties to Clippers owner Steve Ballmer, team executives, the team and Kawhi Leonard following an investigation. Aggregated from CBS NBA, NBC Sports, LA Times, USA TODAY Sports, Yahoo Sports and 4 more.",
-      "category": "roster",
-      "published": "2026-09-02T20:26:31Z",
-      "updated": "2026-09-03T23:06:59Z",
-      "players": [
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA hammers Clippers, Steve Ballmer for salary cap circumvention as Kawhi Leonard avoids suspension",
-          "url": "https://www.cbssports.com/nba/news/nba-punishes-clippers-steve-ballmer-salary-cap-circumvention-kawhi-leonard/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "The NBA released the findings of its nearly year-long investigation into salary cap circumvention allegations on Wednesday",
-          "published": "Wed, 02 Sep 2026 21:10:02 +0000"
-        },
-        {
-          "title": "Steve Ballmer suspended one year, Clippers to lose 5 first-round picks in Kawhi Leonard endorsement scandal",
-          "url": "https://sports.yahoo.com/articles/steve-ballmer-suspended-one-clippers-210031885.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "There is more, Adam Silver and the NBA have thrown the book at the Clippers for salary cap circumvention.",
-          "published": "Wed, 02 Sep 2026 21:00:31 +0000"
-        },
-        {
-          "title": "NBA hammers Clippers, Steve Ballmer and Kawhi Leonard following investigation",
-          "url": "https://sports.yahoo.com/articles/nba-hammers-clippers-steve-ballmer-205348049.html",
-          "publisher": "LA Times",
-          "kind": "article",
-          "snippet": "The NBA handed down sweeping penalties to Clippers owner Steve Ballmer, team executives, the team and Kawhi Leonard following an investigation.",
-          "published": "Wed, 02 Sep 2026 20:53:48 +0000"
-        },
-        {
-          "title": "NBA fines Clippers $30M, drops hammer on Steve Ballmer, Kawhi Leonard: Live updates",
-          "url": "https://sports.yahoo.com/articles/nba-announces-big-penalties-clippers-203951012.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "An NBA-backed investigation found that the Clippers circumvented the salary cap by facilitating a \"no-show\" endorsement deal for Kawhi Leonard.",
-          "published": "Wed, 02 Sep 2026 20:39:51 +0000"
-        },
-        {
-          "title": "NBA strips Clippers of 5 first-round draft picks, fines Steve Ballmer $30M in Kawhi Leonard salary cap circumvention probe",
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/nba-reportedly-strips-clipper-of-5-first-round-draft-picks-fines-steve-ballmer-30m-in-kawhi-leonard-salary-cap-circumvention-probe-202637985.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The NBA has stripped the Los Angeles Clippers of five first-round draft picks and fined owner Steve Ballmer $30 million at the conclusion of it’s probe into alleged salary cap circumvention with Kawhi Leonard, ESPN’s Shams Charania reports.",
-          "published": "Wed, 02 Sep 2026 20:26:37 +0000"
-        },
-        {
-          "title": "Kawhi Leonard: Fined, avoids suspension",
-          "url": "https://www.rotowire.com//basketball/player/kawhi-leonard-3195",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "Leonard has been fined $700,000 in restitution for improper benefits due to his involvement in the Clippers' salary cap circumvention, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 02 Sep 2026 1:34:00 PM PDT"
-        },
-        {
-          "title": "Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts. Clippers owner Steve Ballmer is suspended from all league and team activities for one year for knowingly seeking to help Mr. Leona",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HcDY5ZzB6OWN0NFFnMDlUVGp4TmZiTWpkS3hrRmdGR2RZS0h4R2ZtRzBmTlVYMmFMbEd4b3lCZFhEVlJyOFRJYWdEQ3lRR3NpTm0yNHRUbEJ0TDBGSGx2cmIwTXg?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Per NBA: The Clippers shall forfeit five first-round draft picks, one in each of the 2029, 2030, 2031, 2032, and 2033 NBA Drafts. Clippers owner Steve Ballmer is suspended from all league and team activities for one year for knowingly seeking to help Mr. Leona x.com",
-          "published": "Wed, 02 Sep 2026 20:26:31 GMT"
-        },
-        {
-          "title": "Read the NBA's investigation of the Clippers, Steve Ballmer, Kawhi Leonard",
-          "url": "https://sports.yahoo.com/articles/read-nbas-investigation-clippers-steve-214136815.html",
-          "publisher": "LA Times",
-          "kind": "article",
-          "snippet": "Here is the NBA's investigation into allegations the Los Angeles Clippers the team circumvented the league's Collective Bargaining Agreement.",
-          "published": "Wed, 02 Sep 2026 21:41:36 +0000"
-        },
-        {
-          "title": "Read Kawhi Leonard statement on NBA's significant punishments, fines",
-          "url": "https://sports.yahoo.com/articles/read-kawhi-leonard-statement-nbas-211211969.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "NBA star Kawhi Leonard released a statement on Sept. 2 addressing the punishments and fines the league dropped on him and the LA Clippers.",
-          "published": "Wed, 02 Sep 2026 21:12:11 +0000"
-        },
-        {
-          "title": "Why wasn't Kawhi Leonard's contract wasn't voided? The differences vs. NBA's last major cap circumvention case",
-          "url": "https://www.cbssports.com/nba/news/kawhi-leonard-contract-voided-differences-nba-joe-smith/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "While the Clippers got hammered for cap circumvention, Kawhi Leonard avoided a suspension or voided contract from the NBA",
-          "published": "Wed, 02 Sep 2026 22:57:24 +0000"
-        },
-        {
-          "title": "What does severe NBA Kawhi punishment mean for Clippers future?",
-          "url": "https://sports.yahoo.com/articles/does-severe-nba-kawhi-punishment-010015029.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "The league dropped the hammer in the wake of the Kawhi Leonard scandal, the Clippers are left to pick up the pieces.",
-          "published": "Thu, 03 Sep 2026 01:00:15 +0000"
-        },
-        {
-          "title": "Is the Clippers’ Kawhi Leonard punishment the NBA’s harshest ever?",
-          "url": "https://sports.yahoo.com/articles/clippers-kawhi-leonard-punishment-nba-210628631.html",
-          "publisher": "NY Post Sports",
-          "kind": "article",
-          "snippet": "The NBA has dropped the hammer on the Los Angeles Clippers. After a yearlong investigation into salary-cap circumvention involving Kawhi Leonard, the league is stripping the Clippers of five first-round...",
-          "published": "Wed, 02 Sep 2026 21:06:28 +0000"
-        },
-        {
-          "title": "Within a month of Clippers team president introducing Kawhi Leonard's uncle to execs at Boingo, Daktronics, and Lockton in June 2020, Leonard signed multi-year, multi-million dollar deals with 2 of the companies on the same day. Next month, he signed anot",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAyNDRKWjJ1d0ZUMFdxX3VVSXY1bTloMnZWOWlaOS0zeTVwN2JYZGRaajlqTmRXTkFJVGQwOWthQm00TlNiWEl2cXhIMXpkRkctSkZrcWFDZkZQZDE0Qzg0dE1nbw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Within a month of Clippers team president introducing Kawhi Leonard's uncle to execs at Boingo, Daktronics, and Lockton in June 2020, Leonard signed multi-year, multi-million dollar deals with 2 of the companies on the same day. Next month, he signed anot x.com",
-          "published": "Wed, 02 Sep 2026 21:18:38 GMT"
-        },
-        {
-          "title": "BREAKING: Los Angeles Clippers PUNISHED For Kawhi Leonard Contract, What It Means For Phoenix Suns",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB2cEtUSEhZYUg0cGhicXBwZmY0X1Y2a1hZWWtrd3BEU3FDQ21vQU9tVEpSMXlVR2FXWVphU0o1THIwVWgteUx0MUw4c0Y4RHE4SDgxSTBn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "BREAKING: Los Angeles Clippers PUNISHED For Kawhi Leonard Contract, What It Means For Phoenix Suns YouTube",
-          "published": "Thu, 03 Sep 2026 11:12:42 GMT"
-        },
-        {
-          "title": "Clippers rat turns over 6-year notes of ‘illicit deals’ in Kawhi Leonard investigation",
-          "url": "https://sports.yahoo.com/articles/clippers-rat-turns-over-6-170704765.html",
-          "publisher": "NY Post Sports",
-          "kind": "article",
-          "snippet": "The Los Angeles Clippers have been punished for violating salary cap circumvention rules when the team signed Kawhi Leonard to an extension in 2021. According to ESPN insider Brian Windhorst,...",
-          "published": "Thu, 03 Sep 2026 17:07:04 +0000"
-        },
-        {
-          "title": "Kawhi Leonard said he had no knowledge any of the endorsement deals he signed were to circumvent the cap. NBA fined him $700k + said he violated circumvention rules by pressuring Clippers for off-court income thru his uncle. NBA's report specifies one in",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1PcTRROFI1eDQ1UTN4OFhNMnlMZmFHOGZ1cHpwVUxzOGNhbGUzQ3Z2UDJ5aU5hckhhQUNYdGF2cDdPYkItbzFXMldLUGZubnA4cGlWM3VBNzF4QVc0akdibGhLaw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Kawhi Leonard said he had no knowledge any of the endorsement deals he signed were to circumvent the cap. NBA fined him $700k + said he violated circumvention rules by pressuring Clippers for off-court income thru his uncle. NBA's report specifies one in x.com",
-          "published": "Thu, 03 Sep 2026 14:13:27 GMT"
-        },
-        {
-          "title": "The Clippers just lost 5 first-round draft picks as punishment from the Kawhi Leonard scandal. What do they have left?",
-          "url": "https://sports.yahoo.com/nba/article/the-clippers-just-lost-5-first-round-draft-picks-as-punishment-from-the-kawhi-leonard-scandal-what-do-they-have-left-230659404.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The Clippers now have decidedly fewer roster-shaping tools when they appeared ready to a take longer-term approach and build through the draft.",
-          "published": "Thu, 03 Sep 2026 23:06:59 +0000"
         }
       ]
     },
@@ -1850,18 +1865,32 @@
       "slug": "jalen-williams-injury-history-19412fe1",
       "sport": "basketball",
       "headline": "Spurs-Thunder injury updates: Dylan Harper, De'Aaron Fox cleared to play, Jalen Williams ruled out for Game 3",
-      "blurb": "Is De'Aaron Fox Playing Tonight?",
-      "summary": "Is De'Aaron Fox Playing Tonight? (Injury Update, Betting Impact for Spurs vs. Thunder Game 1) Sports Illustrated Aggregated from Sports Illustrated, youtube.com, sportskeeda.com, si.com, heavy.com and 13 more.",
+      "blurb": "Are De'Aaron Fox and Dylan Harper playing tonight?",
+      "summary": "Are De'Aaron Fox and Dylan Harper playing tonight? Injury update for Thunder vs Spurs, Game 4 FanSided Jalen Johnson Injury Update: Is Johnson Playing Tonight vs. Aggregated from FanSided, PrizePicks, youtube.com, sportskeeda.com, si.com and 14 more.",
       "category": "injury",
       "published": "2025-04-05T07:00:00Z",
       "updated": "2026-09-02T16:38:18Z",
       "players": [
+        {
+          "key": "dylan harper",
+          "name": "Dylan Harper",
+          "slug": "dylan-harper",
+          "pos": "PG",
+          "team": "WAS"
+        },
         {
           "key": "deaaron fox",
           "name": "De'Aaron Fox",
           "slug": "de-aaron-fox",
           "pos": "PG",
           "team": "SAS"
+        },
+        {
+          "key": "jalen johnson",
+          "name": "Jalen Johnson",
+          "slug": "jalen-johnson",
+          "pos": "PF",
+          "team": "ATL"
         },
         {
           "key": "domantas sabonis",
@@ -1883,13 +1912,6 @@
           "slug": "ajay-mitchell",
           "pos": "PG",
           "team": "OKC"
-        },
-        {
-          "key": "dylan harper",
-          "name": "Dylan Harper",
-          "slug": "dylan-harper",
-          "pos": "PG",
-          "team": "WAS"
         },
         {
           "key": "bam adebayo",
@@ -2231,6 +2253,22 @@
           "kind": "article",
           "snippet": "Is Domantas Sabonis Playing Tonight? (Injury Update, Betting Impact for Nuggets vs. Kings) Sports Illustrated",
           "published": "Tue, 11 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Are De'Aaron Fox and Dylan Harper playing tonight? Injury update for Thunder vs Spurs, Game 4",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTEVLU2g1RUc5ZWxaS21HNlhDX2Jhb0JZaWpYNFRGQl9PN0x2bmE4d05rUG1vOUpjSTlsSWhnRkRIRjBCOXVHV2h4blNHWl9mZHQwWDNEbkJqTVlUekpGTW9sUWZtQjl2Z1B3LVk0ME5YYnFCeXlhTUlZRlNoc0ZMQXI2c1h2V3BfU3B1SjZQU0ZLdkY3V0dRS0d3a2NYSnM5SlFINHJJdjFXeTYxWmxYYjBoRE45SEJERFJvTTlZemdPTkFWQlRzUg?oc=5",
+          "publisher": "FanSided",
+          "kind": "article",
+          "snippet": "Are De'Aaron Fox and Dylan Harper playing tonight? Injury update for Thunder vs Spurs, Game 4 FanSided",
+          "published": "Sun, 24 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jalen Johnson Injury Update: Is Johnson Playing Tonight vs. Grizzlies?",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVmNfb195SGRnN05rQ2ZCWmlodW9JVWtBT0pzYm90b2ctV2I2U0taam01SFhGaTZuVHI3aW82bWEwU0EwcVBId1AzMWh3eFBodVhlOUp1VTNvTmZGcWtFb1lZMzNpbnJWaldJem5ESXZMZ1hURkktV0hoSnJtY0NsMF9mT09LZ212NWsyb0Y5TjQ?oc=5",
+          "publisher": "PrizePicks",
+          "kind": "article",
+          "snippet": "Jalen Johnson Injury Update: Is Johnson Playing Tonight vs. Grizzlies? PrizePicks",
+          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
         }
       ]
     },
@@ -2239,8 +2277,8 @@
       "slug": "proposed-steph-curry-hornets-blockbuster-trade-would-shock-d6d9e1bb",
       "sport": "basketball",
       "headline": "Warriors predicted to trade for $364M 10x All-Star, ex-Lakers NBA champion to pair with Steph Curry",
-      "blurb": "Report: Warriors Ended Trade Deadline Bid for 2-Time All-Star to Pursue Giannis Sports Illustrated",
-      "summary": "Alperen Sengun, Kevin Durant, Stephen Curry, Jaden Hardy, De'Aaron Fox, Andrew Wiggins, Chet Holmgren, Dalton Knecht, Giannis Antetokounmpo, Klay Thompson, Jimmy Butler, Jonathan Kuminga, Kawhi Leonard, Myles Turner, Luka Doncic and Jrue Holiday: Report: Warriors Ended Trade Deadline Bid for 2-Time All-Star to Pursue Giannis Sports Illustrated Proposed Steph Curry-to-Hornets blockbuster trade would shock the NBA Hoops Habit Jrue Holiday Proposed to Join Miami Heat in Blockbuster 3-Team NBA Trade heavy.com Aggregated from Sports Illustrated, Hoops Habit, heavy.com, Yahoo Sports, The Big Lead and 5 more.",
+      "blurb": "Steve Kerr explains why Warriors are resting Steph Curry vs.",
+      "summary": "Alperen Sengun, Kevin Durant, Stephen Curry, Jaden Hardy, De'Aaron Fox, Andrew Wiggins, Chet Holmgren, Dalton Knecht, Giannis Antetokounmpo, Klay Thompson, Jimmy Butler, Jonathan Kuminga, Kawhi Leonard, Myles Turner, Luka Doncic and Jrue Holiday: Steve Kerr explains why Warriors are resting Steph Curry vs. Lakers, not Kings NBC Sports Bay Area & California Proposed Steph Curry-to-Hornets blockbuster trade would shock the NBA Hoops Habit Aggregated from NBC Sports Bay Area & California, Hoops Habit, heavy.com, Yahoo Sports, The Big Lead and 6 more.",
       "category": "injury",
       "published": "2025-10-03T07:00:00Z",
       "updated": "2026-09-02T15:21:20Z",
@@ -2686,6 +2724,51 @@
           "kind": "article",
           "snippet": "Report: Warriors Ended Trade Deadline Bid for 2-Time All-Star to Pursue Giannis Sports Illustrated",
           "published": "Wed, 02 Sep 2026 15:21:20 GMT"
+        },
+        {
+          "title": "Steve Kerr explains why Warriors are resting Steph Curry vs. Lakers, not Kings",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdkc1T0x1OTZBdXFiWTZ6dGdnTzAyOHY5Q3ZtcG9RWm9DenhQOXBReUt3VW5VVEd5Z3NBWXRjU1BNcUVyZDFGLWJxVEQyS0VhQmRtMDU0aWV1Vy1Qd1E0Z1NDbDBWYVFRbEVoc2J0Nnk5azlxR0g2cmg1Q2dLNmptWHpVWkdib1R6ZlhGZHpXOTdSRk1tblctVnlZcnHSAaQBQVVfeXFMTzZ2TW9RLWY4YXVlaXdYYWhPSXFpNlFwOFVOQmE2TXpDcjhmQkNDRkY2S2lraTRMLVNYcWV6U3ZfNnJqY0xNVC16M0x2X19WNWU1QzIzc2g3QTRBUWtQUHRlYmsya0VBS1VDUnpnUUNSOVdfZnA1d0dKT05DYno2OHFvVDlJcmx5WFNNYXFhNWtvUTRvMDNRWHJLUnR0akF2WVAxOHY?oc=5",
+          "publisher": "NBC Sports Bay Area & California",
+          "kind": "article",
+          "snippet": "Steve Kerr explains why Warriors are resting Steph Curry vs. Lakers, not Kings NBC Sports Bay Area & California",
+          "published": "Thu, 09 Apr 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "brandon-ingram-trade-expected-become-official-soon-7e79438e",
+      "slug": "brandon-ingram-trade-expected-become-official-soon-7e79438e",
+      "sport": "basketball",
+      "headline": "Brandon Ingram: Trade expected to become official soon",
+      "blurb": "The NBA has concluded its investigation into salary cap circumvention involving Kawhi Leonard and the Clippers, and the trade sending Ingram (heel) to Los Angeles is expected…",
+      "summary": "Brandon Ingram and Kawhi Leonard: The NBA has concluded its investigation into salary cap circumvention involving Kawhi Leonard and the Clippers, and the trade sending Ingram (heel) to Los Angeles is expected to be finalized in the coming days, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
+      "category": "trade",
+      "published": "2026-09-04T08:28:17Z",
+      "updated": "2026-09-04T08:28:17Z",
+      "players": [
+        {
+          "key": "brandon ingram",
+          "name": "Brandon Ingram",
+          "slug": "brandon-ingram",
+          "pos": "SF",
+          "team": "TOR"
+        },
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Brandon Ingram: Trade expected to become official soon",
+          "url": "https://www.rotowire.com//basketball/player/brandon-ingram-3861",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "The NBA has concluded its investigation into salary cap circumvention involving Kawhi Leonard and the Clippers, and the trade sending Ingram (heel) to Los Angeles is expected to be finalized in the coming days, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis ",
+          "published": "Wed, 02 Sep 2026 3:44:00 PM PDT"
         }
       ]
     },
@@ -2813,6 +2896,51 @@
       ]
     },
     {
+      "id": "did-nets-lose-mikal-bridges-trade-knicks-won-4b05439d",
+      "slug": "did-nets-lose-mikal-bridges-trade-knicks-won-4b05439d",
+      "sport": "basketball",
+      "headline": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade",
+      "blurb": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade New York Post",
+      "summary": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade New York Post Did the Nets lose Mikal Bridges trade after the Knicks won NBA title? Aggregated from New York Post, Nets Wire.",
+      "category": "trade",
+      "published": "2024-06-26T07:00:00Z",
+      "updated": "2026-09-03T15:50:00Z",
+      "players": [
+        {
+          "key": "mikal bridges",
+          "name": "Mikal Bridges",
+          "slug": "mikal-bridges",
+          "pos": "SF",
+          "team": "NYK"
+        },
+        {
+          "key": "bam adebayo",
+          "name": "Bam Adebayo",
+          "slug": "bam-adebayo",
+          "pos": "C",
+          "team": "MIA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Did the Nets lose Mikal Bridges trade after the Knicks won NBA title?",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQa1JPa2lmYXp2Z1VTaGhPTXp2clhTOU1xTGYyeWVHT2hEclR3RVpuUmZjMFlRa3RVUHpHWHIyUWJNaS1zc2FuSk5oSFRrQmNtMWNtZU5lazFaMTJoUG5ia2pMTlptNGRROEppQ3Y1ZDAtbC1GaTYwNkRkRFVVYmlkV0tSTWVqdEZ6MlJYZXBwVmpITFN4bVI4THpBUmdWcDlpaEpsd05GdEVNVG1CTF9NMFFiSGl6M3R6X0xvVmpkcEVIUFRkcWk1bzlKdUJ6Uk5MRHpDYVNvdDAtcHI1?oc=5",
+          "publisher": "Nets Wire",
+          "kind": "article",
+          "snippet": "Did the Nets lose Mikal Bridges trade after the Knicks won NBA title? Nets Wire",
+          "published": "Thu, 03 Sep 2026 15:50:00 GMT"
+        },
+        {
+          "title": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRWVRdG96NUtLZEF4WkZneUsxVWFpbUxjUk9oZFNaeEtzbFhJbHVGdEJEdzZMTEI3MTJxUlY2Y1UwZUd2NVMyT2lTY04wQTdjeGdiMXRaSXJ6eG4zbmNYNExDb2tzS29lbDN2TGg3aEtnZG5KTGpZdDRxaWRQR0h6dExRUFluR19FVlRhLWVYSzZrSVZraFZCRkNubWtjbkVVTE1xN2V3?oc=5",
+          "publisher": "New York Post",
+          "kind": "article",
+          "snippet": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade New York Post",
+          "published": "Wed, 26 Jun 2024 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "warriors-predicted-trade-brandin-podziemski-88m-rim-runner-7d2cc19d",
       "slug": "warriors-predicted-trade-brandin-podziemski-88m-rim-runner-7d2cc19d",
       "sport": "basketball",
@@ -2876,51 +3004,6 @@
           "kind": "article",
           "snippet": "Desmond Bane Trade Still Shaping NBA Market as Trey Murphy Price Emerges sports.yahoo.com",
           "published": "Wed, 02 Sep 2026 04:30:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "did-nets-lose-mikal-bridges-trade-knicks-won-4b05439d",
-      "slug": "did-nets-lose-mikal-bridges-trade-knicks-won-4b05439d",
-      "sport": "basketball",
-      "headline": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade",
-      "blurb": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade New York Post",
-      "summary": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade New York Post Did the Nets lose Mikal Bridges trade after the Knicks won NBA title? Aggregated from New York Post, Nets Wire.",
-      "category": "trade",
-      "published": "2024-06-26T07:00:00Z",
-      "updated": "2026-09-03T15:50:00Z",
-      "players": [
-        {
-          "key": "mikal bridges",
-          "name": "Mikal Bridges",
-          "slug": "mikal-bridges",
-          "pos": "SF",
-          "team": "NYK"
-        },
-        {
-          "key": "bam adebayo",
-          "name": "Bam Adebayo",
-          "slug": "bam-adebayo",
-          "pos": "C",
-          "team": "MIA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Did the Nets lose Mikal Bridges trade after the Knicks won NBA title?",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQa1JPa2lmYXp2Z1VTaGhPTXp2clhTOU1xTGYyeWVHT2hEclR3RVpuUmZjMFlRa3RVUHpHWHIyUWJNaS1zc2FuSk5oSFRrQmNtMWNtZU5lazFaMTJoUG5ia2pMTlptNGRROEppQ3Y1ZDAtbC1GaTYwNkRkRFVVYmlkV0tSTWVqdEZ6MlJYZXBwVmpITFN4bVI4THpBUmdWcDlpaEpsd05GdEVNVG1CTF9NMFFiSGl6M3R6X0xvVmpkcEVIUFRkcWk1bzlKdUJ6Uk5MRHpDYVNvdDAtcHI1?oc=5",
-          "publisher": "Nets Wire",
-          "kind": "article",
-          "snippet": "Did the Nets lose Mikal Bridges trade after the Knicks won NBA title? Nets Wire",
-          "published": "Thu, 03 Sep 2026 15:50:00 GMT"
-        },
-        {
-          "title": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRWVRdG96NUtLZEF4WkZneUsxVWFpbUxjUk9oZFNaeEtzbFhJbHVGdEJEdzZMTEI3MTJxUlY2Y1UwZUd2NVMyT2lTY04wQTdjeGdiMXRaSXJ6eG4zbmNYNExDb2tzS29lbDN2TGg3aEtnZG5KTGpZdDRxaWRQR0h6dExRUFluR19FVlRhLWVYSzZrSVZraFZCRkNubWtjbkVVTE1xN2V3?oc=5",
-          "publisher": "New York Post",
-          "kind": "article",
-          "snippet": "Knicks accused by Bam Adebayo of tampering in massive Mikal Bridges trade New York Post",
-          "published": "Wed, 26 Jun 2024 07:00:00 GMT"
         }
       ]
     },
@@ -3182,6 +3265,44 @@
       ]
     },
     {
+      "id": "lakers-linked-24-year-old-superstar-pf-potential-7797eaf3",
+      "slug": "lakers-linked-24-year-old-superstar-pf-potential-7797eaf3",
+      "sport": "basketball",
+      "headline": "Lakers Linked to 24-Year-Old Superstar PF in Potential Austin Reaves Trade",
+      "blurb": "Ex-Lakers Star Tabbed As Top Potential NBA Trade Candidate heavy.com",
+      "summary": "Austin Reaves: Ex-Lakers Star Tabbed As Top Potential NBA Trade Candidate heavy.com Lakers Linked to 24-Year-Old Superstar PF in Potential Austin Reaves Trade heavy.com Board reading of heavy.com.",
+      "category": "trade",
+      "published": "2026-09-02T13:45:04Z",
+      "updated": "2026-09-03T20:01:47Z",
+      "players": [
+        {
+          "key": "austin reaves",
+          "name": "Austin Reaves",
+          "slug": "austin-reaves",
+          "pos": "SG",
+          "team": "LAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lakers Linked to 24-Year-Old Superstar PF in Potential Austin Reaves Trade",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWG9lNjQ5cW93djhWRDFScHRuT01VckNzQi00bU1rdG1QN2VxQkt3TmI4N0pqOVUyNHJTRWlQYm9JREJoOEpjQkxjUk4zQ2hkcGlGUnAzZDQ3bVpnUUc4LTRkTzVocmhiM1U0WDRZSXdxRHFSODJWYmdneXJTNGdqdHU3YnpHZ0dQR1NfVzJR?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Lakers Linked to 24-Year-Old Superstar PF in Potential Austin Reaves Trade heavy.com",
+          "published": "Thu, 03 Sep 2026 20:01:47 GMT"
+        },
+        {
+          "title": "Ex-Lakers Star Tabbed As Top Potential NBA Trade Candidate",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQN3Q1bmR2VDljWWpzM3VIMnJMeW1jZFI3RkthSTNDUldFb194MGs3dkp0YndleERoQnJOU0h4b1BpdHdweWZUV3FybHdDX3JuUGwxSzE4T3VVQWIwdWxyM3NRQmdUb0ZtU1d0SjZNZ2ZwSkdyTU9TVm5FMTJGNHdWQnBFRV9WZUt0TC00eUw1TEk3WmIxV1l5WENR?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Ex-Lakers Star Tabbed As Top Potential NBA Trade Candidate heavy.com",
+          "published": "Wed, 02 Sep 2026 13:45:04 GMT"
+        }
+      ]
+    },
+    {
       "id": "trade-rumors-deal-cost-kyrie-irving-trey-murphy-9c8a5835",
       "slug": "trade-rumors-deal-cost-kyrie-irving-trey-murphy-9c8a5835",
       "sport": "basketball",
@@ -3317,44 +3438,6 @@
           "kind": "article",
           "snippet": "Kyrie Irving NBA Trade Rumors Gives Pistons Unfortunate Update heavy.com",
           "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "lakers-linked-24-year-old-superstar-pf-potential-7797eaf3",
-      "slug": "lakers-linked-24-year-old-superstar-pf-potential-7797eaf3",
-      "sport": "basketball",
-      "headline": "Lakers Linked to 24-Year-Old Superstar PF in Potential Austin Reaves Trade",
-      "blurb": "Ex-Lakers Star Tabbed As Top Potential NBA Trade Candidate heavy.com",
-      "summary": "Austin Reaves: Ex-Lakers Star Tabbed As Top Potential NBA Trade Candidate heavy.com Lakers Linked to 24-Year-Old Superstar PF in Potential Austin Reaves Trade heavy.com Board reading of heavy.com.",
-      "category": "trade",
-      "published": "2026-09-02T13:45:04Z",
-      "updated": "2026-09-03T20:01:47Z",
-      "players": [
-        {
-          "key": "austin reaves",
-          "name": "Austin Reaves",
-          "slug": "austin-reaves",
-          "pos": "SG",
-          "team": "LAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Lakers Linked to 24-Year-Old Superstar PF in Potential Austin Reaves Trade",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWG9lNjQ5cW93djhWRDFScHRuT01VckNzQi00bU1rdG1QN2VxQkt3TmI4N0pqOVUyNHJTRWlQYm9JREJoOEpjQkxjUk4zQ2hkcGlGUnAzZDQ3bVpnUUc4LTRkTzVocmhiM1U0WDRZSXdxRHFSODJWYmdneXJTNGdqdHU3YnpHZ0dQR1NfVzJR?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Lakers Linked to 24-Year-Old Superstar PF in Potential Austin Reaves Trade heavy.com",
-          "published": "Thu, 03 Sep 2026 20:01:47 GMT"
-        },
-        {
-          "title": "Ex-Lakers Star Tabbed As Top Potential NBA Trade Candidate",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQN3Q1bmR2VDljWWpzM3VIMnJMeW1jZFI3RkthSTNDUldFb194MGs3dkp0YndleERoQnJOU0h4b1BpdHdweWZUV3FybHdDX3JuUGwxSzE4T3VVQWIwdWxyM3NRQmdUb0ZtU1d0SjZNZ2ZwSkdyTU9TVm5FMTJGNHdWQnBFRV9WZUt0TC00eUw1TEk3WmIxV1l5WENR?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Ex-Lakers Star Tabbed As Top Potential NBA Trade Candidate heavy.com",
-          "published": "Wed, 02 Sep 2026 13:45:04 GMT"
         }
       ]
     },
@@ -3497,8 +3580,8 @@
       "slug": "clippers-docked-five-first-round-draft-picks-fined-2ea8cc2b",
       "sport": "basketball",
       "headline": "NBA: Sixers' 2029 first-round pick swap rights with Clippers unaffected by salary cap circumvention penalties",
-      "blurb": "NBA strips Clippers of 5 first-round draft picks, fines Steve Ballmer $30M in Kawhi Leonard salary cap circumvention probe sports.yahoo.com",
-      "summary": "NBA strips Clippers of 5 first-round draft picks, fines Steve Ballmer $30M in Kawhi Leonard salary cap circumvention probe sports.yahoo.com NBA: Sixers' 2029 first-round pick swap rights with Clippers unaffected by salary cap circumvention penalties PhillyVoice The LA Clippers are fined $30m (£22.2m) by the NBA for violating salary rules over the acquisition of star player Kawhi Leonard. Aggregated from sports.yahoo.com, PhillyVoice, BBC, The Guardian, NBC Sports Boston and 2 more.",
+      "blurb": "NBA strips Clippers of 5 first-round draft picks, fines Steve Ballmer $30M in Kawhi Leonard salary cap circumvention probe Yahoo Sports",
+      "summary": "NBA strips Clippers of 5 first-round draft picks, fines Steve Ballmer $30M in Kawhi Leonard salary cap circumvention probe Yahoo Sports The LA Clippers are fined $30m (£22.2m) by the NBA for violating salary rules over the acquisition of star player Kawhi Leonard. The NBA has handed down one of the biggest punishments in the history of the league to the Los Angeles Clippers after finding that the franchise circumvented salary cap rules when it courted Kawhi Leonard as a free agent. Aggregated from Yahoo Sports, BBC, The Guardian, NBC Sports Boston, NBC Sports Philadelphia and 3 more.",
       "category": "wire",
       "published": "2026-09-02T13:55:41Z",
       "updated": "2026-09-02T22:48:14Z",
@@ -3741,80 +3824,6 @@
           "kind": "x",
           "snippet": "Longtime NBA assistant Roy Rogers will coach Liverpool's new basketball club, NBA teams are scouting Dyson Daniels' younger brother in Australia, and more odds and ends: https://t.co/fz5lvyDX3C x.com",
           "published": "Thu, 03 Sep 2026 16:40:56 GMT"
-        }
-      ]
-    },
-    {
-      "id": "stephon-castle-luke-kornet-win-dunk-block-year-c3dc935a",
-      "slug": "stephon-castle-luke-kornet-win-dunk-block-year-c3dc935a",
-      "sport": "basketball",
-      "headline": "Stephon Castle and Luke Kornet win Dunk and Block of the Year",
-      "blurb": "The WCF were good to the Spurs’ highlights reals, especially against Isaiah Hartenstein.",
-      "summary": "The WCF were good to the Spurs’ highlights reals, especially against Isaiah Hartenstein. Board reading of SB Nation.",
-      "category": "wire",
-      "published": "2026-09-02T18:25:45Z",
-      "updated": "2026-09-02T18:25:45Z",
-      "players": [
-        {
-          "key": "isaiah hartenstein",
-          "name": "Isaiah Hartenstein",
-          "slug": "isaiah-hartenstein",
-          "pos": "C",
-          "team": "OKC"
-        },
-        {
-          "key": "stephon castle",
-          "name": "Stephon Castle",
-          "slug": "stephon-castle",
-          "pos": "PG",
-          "team": "SAS"
-        },
-        {
-          "key": "luke kornet",
-          "name": "Luke Kornet",
-          "slug": "luke-kornet",
-          "pos": "C",
-          "team": "BOS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Stephon Castle and Luke Kornet win Dunk and Block of the Year",
-          "url": "https://sports.yahoo.com/articles/stephon-castle-luke-kornet-win-182545477.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The WCF were good to the Spurs’ highlights reals, especially against Isaiah Hartenstein.",
-          "published": "Wed, 02 Sep 2026 18:25:45 +0000"
-        }
-      ]
-    },
-    {
-      "id": "jalen-duren-extension-still-close-902b96e5",
-      "slug": "jalen-duren-extension-still-close-902b96e5",
-      "sport": "basketball",
-      "headline": "Jalen Duren: Extension still not close",
-      "blurb": "Duren and the Pistons remain apart in contract negotiations, with Detroit offering approximately $35 million annually while Duren is seeking more than $40 million per year,…",
-      "summary": "Jalen Duren: Duren and the Pistons remain apart in contract negotiations, with Detroit offering approximately $35 million annually while Duren is seeking more than $40 million per year, according to Tim MacMahon of ESPN.com. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
-      "category": "roster",
-      "published": "2026-09-03T07:27:08Z",
-      "updated": "2026-09-03T07:27:08Z",
-      "players": [
-        {
-          "key": "jalen duren",
-          "name": "Jalen Duren",
-          "slug": "jalen-duren",
-          "pos": "C",
-          "team": "DET"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jalen Duren: Extension still not close",
-          "url": "https://www.rotowire.com//basketball/player/jalen-duren-5703",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "Duren and the Pistons remain apart in contract negotiations, with Detroit offering approximately $35 million annually while Duren is seeking more than $40 million per year, according to Tim MacMahon of ESPN.com. Visit RotoWire.com for more analysis on this update.",
-          "published": "Tue, 01 Sep 2026 10:21:00 AM PDT"
         }
       ]
     },
@@ -10022,25 +10031,25 @@
       "slug": "final-injury-pistons-timberwolves-anthony-edwards-jalen-duren-2e8cf360",
       "sport": "basketball",
       "headline": "Hawks Update the Status Of Jalen Johnson and Nickeil Alexander-Walker Ahead of Tonight's Game vs The Clippers",
-      "blurb": "Hawks’ Nickeil Alexander-Walker, Jalen Johnson battling for Most Improved Player The New York Times",
-      "summary": "Hawks’ Nickeil Alexander-Walker, Jalen Johnson battling for Most Improved Player The New York Times Ron Holland out in Pistons game vs buzzing Hornets, Jalen Duren update Detroit Free Press Where does Jalen Duren go from here with Pistons in restricted free agency? Aggregated from The New York Times, Detroit Free Press, Sports Illustrated, Athlon Sports, FanSided and 14 more.",
+      "blurb": "Hawks Announce Jalen Johnson's Final Playing Status For Tonight's Game vs Memphis Sports Illustrated",
+      "summary": "Hawks Announce Jalen Johnson's Final Playing Status For Tonight's Game vs Memphis Sports Illustrated Could this be Atlanta Hawks Jalen Johnson's Breakout Season? Ron Holland out in Pistons game vs buzzing Hornets, Jalen Duren update Detroit Free Press Aggregated from Sports Illustrated, Detroit Free Press, The New York Times, Athlon Sports, FanSided and 14 more.",
       "category": "injury",
       "published": "2023-10-31T07:00:00Z",
       "updated": "2026-08-08T07:00:00Z",
       "players": [
-        {
-          "key": "nickeil alexander-walker",
-          "name": "Nickeil Alexander-Walker",
-          "slug": "nickeil-alexander-walker",
-          "pos": "SG",
-          "team": "MIN"
-        },
         {
           "key": "jalen johnson",
           "name": "Jalen Johnson",
           "slug": "jalen-johnson",
           "pos": "PF",
           "team": "ATL"
+        },
+        {
+          "key": "nickeil alexander-walker",
+          "name": "Nickeil Alexander-Walker",
+          "slug": "nickeil-alexander-walker",
+          "pos": "SG",
+          "team": "MIN"
         },
         {
           "key": "cedric coward",
@@ -12568,6 +12577,348 @@
           "kind": "article",
           "snippet": "How tall is Donovan Clingan? UConn freshman towers over rest of 2023 Final Four players sportingnews.com",
           "published": "Mon, 03 Apr 2023 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "clippers-timberwolves-injury-darius-garland-kawhi-leonard-john-8b749171",
+      "slug": "clippers-timberwolves-injury-darius-garland-kawhi-leonard-john-8b749171",
+      "sport": "basketball",
+      "headline": "Clippers vs. Timberwolves Injury Report: Latest on Darius Garland, Kawhi Leonard & John Collins",
+      "blurb": "John Collins Will Benefit Greatly From Darius Garland Upon Return Sports Illustrated",
+      "summary": "John Collins Will Benefit Greatly From Darius Garland Upon Return Sports Illustrated Kawhi Leonard Headlines Today’s NBA Injury Report: Wednesday 3/18/26 DraftKings Network Jalen Suggs Headlines Today’s NBA Injury Report: Saturday 2/21/26 DraftKings Network Aggregated from Sports Illustrated, DraftKings Network, The New York Times, Cavs Nation, news.bet365.com and 1 more.",
+      "category": "injury",
+      "published": "2019-10-05T07:00:00Z",
+      "updated": "2026-06-12T07:00:00Z",
+      "players": [
+        {
+          "key": "darius garland",
+          "name": "Darius Garland",
+          "slug": "darius-garland",
+          "pos": "PG",
+          "team": "CLE"
+        },
+        {
+          "key": "john collins",
+          "name": "John Collins",
+          "slug": "john-collins",
+          "pos": "PF",
+          "team": "UTA"
+        },
+        {
+          "key": "james harden",
+          "name": "James Harden",
+          "slug": "james-harden",
+          "pos": "PG",
+          "team": "LAC"
+        },
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        },
+        {
+          "key": "jalen suggs",
+          "name": "Jalen Suggs",
+          "slug": "jalen-suggs",
+          "pos": "SG",
+          "team": "ORL"
+        },
+        {
+          "key": "alex sarr",
+          "name": "Alex Sarr",
+          "slug": "alex-sarr",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "deaaron fox",
+          "name": "De'Aaron Fox",
+          "slug": "de-aaron-fox",
+          "pos": "PG",
+          "team": "SAS"
+        },
+        {
+          "key": "luke kornet",
+          "name": "Luke Kornet",
+          "slug": "luke-kornet",
+          "pos": "C",
+          "team": "BOS"
+        },
+        {
+          "key": "ja morant",
+          "name": "Ja Morant",
+          "slug": "ja-morant",
+          "pos": "PG",
+          "team": "MEM"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kawhi Leonard Headlines Today’s NBA Injury Report: Wednesday 3/18/26",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYVZWdUI4cElhbGdHMXFXMkdyYk1XN09VYU9vcUJTc1dJVVlrTXpoMU10NnNXWEhEZ2t3RGdpYnd5WDVGcWFwSXdrN2NsWDJoSmczR3dOdFVTa2lieFM0WjFBMHFrUkNXYWlKS052QlpMQWhnd2hSWXhFQndTZGowTXl2Z3JQVVpVNjd6SkhndlYwcHktVGVyNnA5UDdORDM3Qm9iYVhTSUMwd2d0Zzl3Ng?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Kawhi Leonard Headlines Today’s NBA Injury Report: Wednesday 3/18/26 DraftKings Network",
+          "published": "Tue, 17 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jalen Suggs Headlines Today’s NBA Injury Report: Saturday 2/21/26",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUE1vVTNUWGc0N0EwUlJzdlhzTlgzQmNGV1VWOEtuQmFkVE04bFZWeEJwbVloYUtjZUk2TUxOZ1FfV0xGS2lUcF9hOVp0TVFJN1Eya0xKdUh3MDVyeGNtODFselVYOTJxQmtGYU5zcDNTSVJuWUFGSjZVYVZQZGItXzl1U1dEakppcEhINC1DT2s2aXd2Wmw3VUMzSjdINXFxRE1nblg2YUpOMmZh?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Jalen Suggs Headlines Today’s NBA Injury Report: Saturday 2/21/26 DraftKings Network",
+          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Alex Sarr Headlines Today’s NBA Injury Report: Saturday 4/4/26",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOemVfODM0a0doQ1dCQktXeGJreXFwcWJoM0JFMDBKNFVNM0JuWnREejQ0VGxvb2s2ZWdIaWtTZWlzTGtXMWF1ZW9jblEySEdPTXk4U2haV2VJSHVIVDJ5WXJEdEZuTC1WY2szWG96bG5QZmszelhaRUplTmJmUXdleTlSQ3BfS1U1ZHRzSEJ0bG5leEg0N3lMVjgtLUxmMnR2cm9hRlY4SWFOUVk?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Alex Sarr Headlines Today’s NBA Injury Report: Saturday 4/4/26 DraftKings Network",
+          "published": "Fri, 03 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "De’Aaron Fox Headlines Today’s NBA Injury Report: Monday 5/18/26",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUFdZb2YySk9fOE1HcEwxbHFTRmI3eVNlQllWWDRqbWNuSERkcHBGMXk4ZkFDdE52NlJ4bm11S29PR3hzcDZySjh6UHo4RzJOOElETTRPVlB5ZTU0elBqM1FyME56SmZHYTJxWHZFT19UYWQ0VUhfcVR6ZkhjcmI5WWp4b2Y1NW42ZWR5Z1J5WXd4dW55RW1JMFhxZGMyTkd5R1cydUZWZHFOWGx6?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "De’Aaron Fox Headlines Today’s NBA Injury Report: Monday 5/18/26 DraftKings Network",
+          "published": "Sun, 17 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luke Kornet Headlines Today’s NBA Injury Report: Saturday 6/13/26",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbHBTOXVHTU9YQWFKQWZjemRVTDFKZ2haZFYzWllhaXJNYVQ1aG0wQ3pSUnRvQkhqZ0lkQVZtVDVyaTNHUE15RXYxZ1RLR2dQTU9GNllyLUNYTVR5MnQ5dkFnVjJrcC00ZDBXWUhkcUFrcVl1NUpvRVROMzBQRFFmZjNSWWgyQ2NHb0ZDMUJONXhuNVNuVnJTUmtuOWphRE9KQ0c3M0F6dzVLQ2MwS09Z?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Luke Kornet Headlines Today’s NBA Injury Report: Saturday 6/13/26 DraftKings Network",
+          "published": "Fri, 12 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Ja Morant Headlines Today’s NBA Injury Report: Friday 10/24/25",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOajBkXzNhWmVnV3RoazFZMVFMcjVEOFl3ek1jVXJXelgyNWNCU0VkVDF2NEs4dzNFaHk5N1V6NUZFdlVuak04VWZyZFBoZDhqZm1SRWpYRVRBSnVNVUpGbmhYeW5vN2xzS3BxOWJMYW5VWGlQN2RHQkZIc3BTTlV5T2VmVE9PcWpqYzZZRDNsaTlibXVWR1BYalhWZFRyeVozMzk3YjZLdEhYNDQ?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Ja Morant Headlines Today’s NBA Injury Report: Friday 10/24/25 DraftKings Network",
+          "published": "Thu, 23 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Clippers Injury Report vs. Warriors: Will Darius Garland & Kawhi Leonard Play?",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNVZsei11T2hCNHYzcXZfRVk0eWJOUC1WUExzeDlZVWVVbmZ1LWh1NEJ4Nk5kR0xsZlE4VklGV2FXWkhWdF9lRFQ0VWxqOHQzVkpFblFhXzVFS1M1elZrcFZreVNyREpCa2lLb0ZGOXdKdjlfdFdTaXp3RGUwNXY3NmVGSTFCMEZtTnVfQmZ6Y3Zxd1ZaZ1NLMFlLSExWckZ1NnBQSUlCZ2RMbUFER2QwN0dYTFpFU2dWdER3Ull1OEFqUUk?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Injury Report vs. Warriors: Will Darius Garland & Kawhi Leonard Play? Sports Illustrated",
+          "published": "Sun, 12 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Clippers Injury Report vs. Pelicans: Will Kawhi Leonard & Darius Garland Play?",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaHlmMDZBQ3FlcE1VVzZ1WTZ6N1RHYklZUWxlOUlsbG9WU1FfUlM2di1UZTFtT1E5dHFGa2ZfTWp0RjdaOUVoOEFQT1RpTnBQMENBMGFNMnFPQVNrMnFTbXVTVUhUWXRiUmlGb25JLVdjcTJ3TlNreVVTbHlqWmZPLXk1SGNVSk1WYy0zZEhoeWlVckhRckFyMGJEN2NYSlZCd3E2LUp0OEpfbEVua0pURGhaQVgwX3lTLVp5RFBxb3pBLWM?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Injury Report vs. Pelicans: Will Kawhi Leonard & Darius Garland Play? Sports Illustrated",
+          "published": "Wed, 18 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Clippers vs. Timberwolves Injury Report: Latest on Darius Garland, Kawhi Leonard & John Collins",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYTFnZlBiSzhranBVWnNvQWZ5YTgzRmlwZzNJc24yRjRWWUhCN0xOU2tacUNRMUxRV09Wc2wwYkVvd1FHNTBhRF9ORWN3T2dlcFF2TVJfTTdaR3U2R2NsYVc5VDVCTGJ2dWk3a2FkQ3cwNzhNSUpjb3NQcVJmWHNoVEllZ01LVnRzc0NaazU1ZXVpN2xVSEtuQmdGN2NReWYxTnZTdjdCaE1KVlZseDY5cmZGMUE5b3ZJaVBUTGFXcWN4ZVNnbTB6MUVKVklEVXlWd3pzdDlB?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers vs. Timberwolves Injury Report: Latest on Darius Garland, Kawhi Leonard & John Collins Sports Illustrated",
+          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Darius Garland to make Clippers debut Monday at Warriors",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNalRPeFMyUTB1QUE3LUk3bVNERVRHN1o0UWdUaEhRTDJmU0FrY1R3T01yNE9CMFc1aC1BYTROZDJiZndxaS01cHJ6cTZTeTdVMU1nQ29FYjRrX3pEbHYtT0ZLUVdsWHR0SklKSUU1N09tWU9LS0l0Y0QxcUpnQ3pkUjN6aldSNWlPZTQ4YUtOSGZDc00yY2c?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Darius Garland to make Clippers debut Monday at Warriors The New York Times",
+          "published": "Sun, 01 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "4 Potential Darius Garland Landing Spots if Clippers Decide to Pivot",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNSktaRHdSckV5MDl1bWREMTU1MEhTWXctcGJOZHJ5Y0dyRjM5VFYzblNfemdERHdadlVFUkRiTXo5eHhWOTVaOE9WV3NIcUJiTE5sUU4wemVQRlQ5Tmg1NnRGUi1fS3g2ZmxMLU9tYlhucS1mRDlMeHJWRjBuM2ZOajRweWp0Vm1VVXhkdnk4SGV3R1owalRhYV9WaXZmTm1MQllkZElnUHg5eDJzSkNR?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "4 Potential Darius Garland Landing Spots if Clippers Decide to Pivot Sports Illustrated",
+          "published": "Mon, 08 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "James Harden traded to Cavaliers, Clippers get Darius Garland in return: Sources",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSzJzWUI1aEx3N1pGNGl0LUdBRlJMZl91ZzBpaUF2UXl6NVVXdElWaXF5SjVwSEJJN29pcUE1MGdRUzZSZWkwWDBfbEotQkZNN0xNVXp3WklFVkVaaTRQZ0RRaFB3X2liR2N5SlNvVDlrVU9qR0dXUWZNTVNLZDRlZHpvSEdJd0FPazB1c3F5aGUxY2xaMUFZNDBNd2R5eXZ5WUE?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "James Harden traded to Cavaliers, Clippers get Darius Garland in return: Sources The New York Times",
+          "published": "Tue, 03 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Darius Garland's Clippers Debut Is Postponed After Disappointing Injury Update",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVUlsX2kxeXE2SF9OT0lBbnBoWGZGQkEyXy1wem14b2c0WHVlanRaNFc1NDZ3a1hUdnd0cGdOMjlIYWFfSFlfalhVZ1M3dmpwczgxVmFLTjdqRlU1UGpVaUw5NkNCbUFKOXpCa2owYVItRmZ3M0VDVG44Sl9Ua1JQTFVjZGlyMlBQdlpXNF94NFNZN0QxMUxYdmdmU1Z0TXM2bGNLZ2JMeGo5VXFveTdmYnRDZWphNFR4OXVHdDJvUVR1dUF4MTNV?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Darius Garland's Clippers Debut Is Postponed After Disappointing Injury Update Sports Illustrated",
+          "published": "Wed, 18 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Clippers, Cavs have talked James Harden-Darius Garland deal: Sources",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeVlSWEYzU1FsaENaamNmbTBGMnA5SVh0ZjU3eEFITzdJTGVOdEN4SWtCSDF0NzZIdGRCVEphUHhfNkx4ZTJBdmNnYnluck9LcHRMcTJLeWJNSVA0YU1keTVvWUZOVm9aV3czVmxYMXNJVTY0ODFDLWxPMC1vT2FWT3JudXl5bWhuREtGZUF0WlI1dm9HOEhfZ3RfUnRYdVJHUkE?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Clippers, Cavs have talked James Harden-Darius Garland deal: Sources The New York Times",
+          "published": "Mon, 02 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Is Darius Garland Playing Tonight? (Injury Update, Betting Impact for Clippers vs. Rockets)",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOc0RvdXlHakNENW9ObmNTaXFwTXBlc1JENFgtMUpCd1hELURtWUhDbG9hRnBONlJRZUlhRlVXV05FV3Z1MHRBcmxZY0FlaktpVDVOMnJmZTBKaEpvdURxSTdGNjBaRGs4V3pEQmFBUFp4enNPR2xvbE9rNUdSbkV5Um03TUhKWnZMN1NOOGItN29LME4xUGVrdlhkWDZDdmkxM2JZ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Darius Garland Playing Tonight? (Injury Update, Betting Impact for Clippers vs. Rockets) Sports Illustrated",
+          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Cavaliers’ Darius Garland could make season debut Wednesday vs. 76ers: Sources",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZnNGU0tEZXQxWnc5RzFNcGE4UUdFcGxWXy1STzcxZ2tDMk5uMEVVM0NEZEoydmdJY2psd2x1bmQyUTVuWWliMWhraEtXaTMweEpLSkFqUXd1LUEtSjBzSDNuTGU1OUo4ejBrSDVGRVMtSjBzZnBXWkQwVUJ2WC1MM2d6MGdsOE9mYnJlQWFKMWo0NzQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Cavaliers’ Darius Garland could make season debut Wednesday vs. 76ers: Sources The New York Times",
+          "published": "Tue, 04 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Clippers Give Fans a Disappointing Darius Garland Injury Update",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxONlRZbE9BWHl4bXpBRkx6RmFMOGlydndBR3p1LVZOLWRJTUk2SzR5bExkbWVrVVFQaVZVWUNjOGlSa0k4MU40eEowZUR4Q19Ya0pXeE5iSzFuYzlyRjlKOTQyMVNUV1QzUEp6UDEtcDJXb3NpR2lvem1MWEtRTDR4SWlOQVNRUHRZaVRLYVNQNk13OU1QSU9MN2wwMF9KQkU2RGM5ZkE4QzdwUHluRkR4QmkteG1vMkk?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Give Fans a Disappointing Darius Garland Injury Update Sports Illustrated",
+          "published": "Mon, 09 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Clippers Injury Report vs. Knicks: Will Darius Garland & John Collins Play?",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcV9Vc3RiMFJEZUJLS3hyUXhQU2xkYmhrOGJBdFpyeE9HcWdUOWwzLTdYZml4SlF4c1NZTzVoeTlrSXppUUU5Wm9hb2c4bXBIRmxWd1JuYUZ3TDdINTFhTy13MzUwdHdFeHIyOVVwYkV2RzRDSllkRy1VS2oyYXlrU1VqSWlkVFNEUzFEVVNDbDlfM1AydGVmYmptTV9QNzBrTWZrTUdNVlotTlcxelc2bEtpd2RZU1p4T2xVbnJ5aw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Injury Report vs. Knicks: Will Darius Garland & John Collins Play? Sports Illustrated",
+          "published": "Tue, 10 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Clippers Injury Report vs. Pacers: Will Darius Garland & John Collins Play?",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZFZ3WkNpMnhxOE5tNlEzdmNRT1d3eGF6WFotMVMzR1IzbFhvYU10MEZFRlRNMll1YnY5eGs0bDJvLUNLZUtkWHNXMVZFRHlWVTB6cEJzanhRN1FhY1RxNi1EekxKT1BpVW9CX2E5NFl0UVRzRlBKZ05HbUdDODBiR28zOGhVN1hBYTZqNzd2aXVaT0tNaFVuc1EwR3U4cjdiMmFjcWJPaHFHeUNkdjRJeVRHcjhaMml6?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Injury Report vs. Pacers: Will Darius Garland & John Collins Play? Sports Illustrated",
+          "published": "Wed, 04 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Clippers Injury Report vs. Rockets: Will Darius Garland and Ben Mathurin Play?",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdW93M1BuMVBsWlN6SWwtVVk5SjlnTlFMRE5WTlJxQUJXQ3pOX1d2TTFqd2ljWGZJb3hZazFlbEJpMGdYS1gzZjFXRm1KeWlObmJwWC1FSUZpQWEzZzhGeTRYXzhuckMwVzFNMDZ0aXMxd2RoMlhWb2dUaFBLMGpELXhvN0hNbnkyWEJjNkVJVk5hdi1XbDZ3U1Bld1NSX3F0RTd2eTJBUlVWZ1ZDWVpYbjJZcHNwQ0hQUXpKTTFvdm4?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Injury Report vs. Rockets: Will Darius Garland and Ben Mathurin Play? Sports Illustrated",
+          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Clippers Injury Report vs. Kings: Will Darius Garland & Ben Mathurin Play?",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVl82SmdOVWVfWGRhV0pZSk1wSjc5TnozdzdnemlFTXVHb3p0bEpBN3A4N2VMZk5rVkhtZkNkdk02V0tlSGRNUl9WNUdPZzZmN3NXT3VweDhGazNrNklyNmVmX3VVYktuVWpwck9mOE1HLUhsYjdnaDdHNVozVnZJek12d0tiNUVMSFVBMGNsZHktczhMZzM3TkhOUUtwb1RUNGhDS29qb3RueE55dGFPRno4bnE3S1k?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Injury Report vs. Kings: Will Darius Garland & Ben Mathurin Play? Sports Illustrated",
+          "published": "Fri, 06 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Kings vs. Clippers Injury Report Reveals Darius Garland's Status",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObW5DMDBNTWE0Nnl5YkdRV2U0dkxwNURyNXp5clF0OTdJQXdnYTVybzdiMU1DelJIZDhYUzU1VkM3ZUNEamd5R0JpbUozbnB3R2ZkdTFtaEVJT1dCLWpIWW1HVWFud3kzb0x4VWZsTmlRUFBZc1JFNVJST1hnZS1aaGNCcW9wR3Nibm9GQWcxeXA3enJYVzVkTExiQlFCVkRkcmZaUzd3VTlQeWt3Smh5N2RSbndnUk5iZV8xZUZsWmlXX1ZRSERv?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Kings vs. Clippers Injury Report Reveals Darius Garland's Status Sports Illustrated",
+          "published": "Fri, 06 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Darius Garland's Injury Status Raises Serious Questions About Clippers Trade",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPU2hFb3lnTUpickdBU2hNQ2tWMTZ1OEVJSzRsSkVFa2FtUm41UnJRNnhXZGFWSW1IRExmZ3RSbUx5TW5qRUZjN0RNYkFzZXBFM3JTUTIyWVNyTF95bkFkQk1kcUQ0M0tkOTY1OGVockdnbU9ZSzI0ZlEydkRXS1lkWGV0RFd5VXFpQ3ROcGY1Z1NITnE2cmRINnBpaEFUQ0dwNjBGQXQzNEEyT3VmbWdlSm9aeEpNZHNxalBQSmpLS1A?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Darius Garland's Injury Status Raises Serious Questions About Clippers Trade Sports Illustrated",
+          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Darius Garland's injury reason for concern for Cavaliers",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNR2tQLTJndTFsVkNrNTlUM3kxajAwTGhnb3JfWHF6YXFlNnpHVmV3ajN5U0p1dW9RMFF1TjdBdjhiNXptYjNtb0k0Z3VWUlJNMHh0MC12LThqSkhGODZuY3NTQ2RUdjVBQXhhS2t3YUp6SklVcTNFNk4zTHBBelk5N2Z5dWRBSVJiRmNCb0pOLUI4VTQtWnhJRk5JM1ViaWV1bkZ4UUZTaXdRRGpoLVRpQW93?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Darius Garland's injury reason for concern for Cavaliers Sports Illustrated",
+          "published": "Mon, 15 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Projecting Clippers Depth Chart After Darius Garland's Return",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOd0lEN1o4MllKSzZrNUxHS09EeEYyQzJYUDZmWEdVNWYwbjgwTUkwbS1FN1RjNTYtR1J0cl9MR0ZtMmJoc3ZxMklCdVRwWEJOSy1PNHcyc01MNU1ySi1ReDdOcDM0LXA0ZWJReGlaelFhZUxYUG53YnljMHAwWGo0eUNwSjMxZVBZR2tmMS1xUDBFVzBrQnlVb0x2YWhRN2dxUk45bGQ2SGxWRnY2?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Projecting Clippers Depth Chart After Darius Garland's Return Sports Illustrated",
+          "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Cavs star Darius Garland’s injury-plagued season dealt another setback",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPMldQOExlS2IycldteEEyUS1CdlZBWFEzQ0hfVmQtWkZCNy1OZTEtQkpnNmRZTHQ2M09BTHVTUUhlX01qZ0RNYVk1NzBPQmFjcVBXWmZIYm96Nm1aY2RWN0c1cjNmczc0bU5OMFpzRE1fOHFvamNBNHRqVVdPQm92WkZhVkRsZ1laQ0E?oc=5",
+          "publisher": "Cavs Nation",
+          "kind": "article",
+          "snippet": "Cavs star Darius Garland’s injury-plagued season dealt another setback Cavs Nation",
+          "published": "Sun, 18 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Cavaliers’ Darius Garland Exits Game at 76ers With Foot Injury",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZGloekNMcERvekJqd0x0TWFRa2tJbHE1SHQwelVpa1BwVXlrNnNuaVRIUElTeTR4RE44QzBwQVNVRktrVWhOMTVncjFFZzc2YTkzNEZtSXlNWGFxTklSWU1qUFRYNFJyek80bkhVT3oyTVZXbzU2THdTbkNFUVdzZTFn?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Cavaliers’ Darius Garland Exits Game at 76ers With Foot Injury Sports Illustrated",
+          "published": "Thu, 15 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Darius Garland injury hurts Cleveland Cavaliers in NBA power rankings",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMVQyN0JKMl9ueUpvTGRmMDB3eGtOM1RoZ2JMdENxVm93NEhUdXo5UUVrTU1iSFN2bmF4Z2RlMGhCS2xBNG1OaUw0WjRZUkZpSjJVel9BSzB1aG04VThDRzRybVZ0cWRaRmN6ZVpJVDgyNVJ0X2NhaXpnaUJHQ0pYaGJhM3Vva2RRNHQ2Rk50bms2Tmg4MDNqMGhlY19CN2t1MUYwTi12cUhad0wxb25jbDI4bEZnOVZDZHRUblJDamFTRkU?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Darius Garland injury hurts Cleveland Cavaliers in NBA power rankings Sports Illustrated",
+          "published": "Mon, 17 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Delayed by foot injury, Cavs rookie Darius Garland participates in his first practice",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPRDBEeGVmNHZZQ2NSSkhqaV9YeU5rbE5LV1FERGc0R0FOeHA3dHpySWlEaG9QN0FPNUhDMV9VLUtsd2t3Wkdod2ZaZXJuQ0Y2WDdES29HRFFQYVI2Ykw1cEFIUllJcjNJcUxQLU12enZ1Nm5hSEs2RmxlZndxek4xQzNzSEljOGRBUXZWSU1SelRWSjNmM3FVVk1Qb2ltaEZzVFp1clNsclBpUi0zYTdWRVpTWnd6VzZQTXYwcndQOG9OdjZPTWlNWGVvUG1LNHo1ZE9N?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Delayed by foot injury, Cavs rookie Darius Garland participates in his first practice The New York Times",
+          "published": "Sat, 05 Oct 2019 07:00:00 GMT"
+        },
+        {
+          "title": "Darius Garland Injury Update Before Nuggets Game: March Return?",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV1JjR0VWRmNYb1ZQR3I3X1RkQUxpaXJDakYwb3ludDJzdkZqMnpINUhiMHBuaGx0b004NlMxUDlzcHhUdDc3dUczdnFKRmxvWmJPYmIxY0NBdFlBWEFCUjduTVBGdnBBU3FISjNUaEhKV0J1Y0ZjY0EzRC12dkltaGlTUkFmNU9VbHVqSm52U05tREFsMGtsTWtwWlp0V2Z2TVF0eE04Q3l2S3AwMGQyZVVUWDhDU1FSNUZF?oc=5",
+          "publisher": "news.bet365.com",
+          "kind": "article",
+          "snippet": "Darius Garland Injury Update Before Nuggets Game: March Return? news.bet365.com",
+          "published": "Wed, 18 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Darius Garland Injury History",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1QRjlQYTNxdG85MnFha3hpcDJmVlhQel9Dcjdya3A1aDRGelBfT0lQRjZ2cU1iS2Z4RHNFcndYNmtQdGNLU3MzWnF3a2lndjFvbWFIbFFyd3Q5b2E4UG9OU01iZmRQRWM2Q1RoZDQyaFNHUFpnRDFn?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "Darius Garland Injury History Sportskeeda",
+          "published": "Tue, 25 Mar 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Reports: Darius Garland to make return against Boston after suffering eye injury",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVWRkQVplTW5MNlNWMW40TjladkZUZ2p4ZjdEZ3lRUXBQdHhXbEFyS3dGMlY2bkVyRm1ZNG9NNWtvVTFGTUx1OUtSZkhaTExkYzkxUTQ5eVNxbllZQm94eTdxbktCU0hHaVZlRWlMb2ZmdzVtYXRRVVJWamJHN0tJaDJwdllDNTA3cWRGMFpqc0Y1b2hIYks2dzliblZXdnZUSzhEVmZUVllGdw?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "Reports: Darius Garland to make return against Boston after suffering eye injury Sportskeeda",
+          "published": "Wed, 16 Nov 2022 08:00:00 GMT"
+        },
+        {
+          "title": "John Collins Will Benefit Greatly From Darius Garland Upon Return",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPb0s5Qjc1S1FCNkoyTEk5b3kzWjNPeHAzMkdmQmt1NDRaSXNzOEZGRmRyOXpCQmlRdWdCeHAxSEFBREU5V1pxTFVnQWt3LWtMaHBNbTREaENnOVBqRGd1V0RLQy1qMmJGTlE4c3F3c2ROcExqVE55aUNuZFctejZIOW9ubHg4RGQ1VUZhZTJJSHpsUml5MnVRRERwWC1fdFBDRTdOdzVHenFzSk5ucENv?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "John Collins Will Benefit Greatly From Darius Garland Upon Return Sports Illustrated",
+          "published": "Wed, 11 Mar 2026 07:00:00 GMT"
         }
       ]
     },
