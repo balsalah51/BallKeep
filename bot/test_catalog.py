@@ -150,11 +150,11 @@ def main():
     assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"
     fence = cat.raw.get("fence") or []
     assert len(fence) == 400, f"fence {len(fence)}"
-    assert fence[0]["name"] == "Drake Maye"
+    assert fence[0]["name"] == "Josh Allen"
     assert fence[0].get("bk") == 1
-    assert cat.list_for("fence")[0]["name"] == "Drake Maye"
-    assert cat.list_for("idp")[0]["name"] == "Drake Maye"
-    assert any(r["name"] == "Josh Allen" and r.get("bk") == 2 for r in fence[:3])
+    assert cat.list_for("fence")[0]["name"] == "Josh Allen"
+    assert cat.list_for("idp")[0]["name"] == "Josh Allen"
+    assert any(r["name"] == "Drake Maye" and r.get("bk") == 2 for r in fence[:3])
     assert any(r["name"] == "Aidan Hutchinson" for r in fence)
     bpl = cat.raw.get("bpl") or []
     assert len(bpl) == 380, f"bpl {len(bpl)}"
