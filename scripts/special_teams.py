@@ -71,6 +71,12 @@ CBS_DST = {
     "LAR": 1, "HOU": 2, "SEA": 3, "DEN": 4, "PIT": 5,
     "JAX": 6, "MIN": 7, "NE": 8, "BAL": 9, "PHI": 10,
 }
+# Field Yates overall PPR, refreshed Sep 5. DST slice only.
+# https://www.espn.com/fantasy/football/story/_/id/48711830
+YATES_DST = {
+    "HOU": 1, "DEN": 2, "SEA": 3, "LAR": 4, "PIT": 5,
+    "LAC": 6, "NE": 7, "MIN": 8, "PHI": 9, "GB": 10,
+}
 
 DST_SOURCES = [
     ("FantasyPros DST ECR", "https://www.fantasypros.com/2026/08/fantasy-football-draft-rankings-targets-defenses-d-st-picks/", "Expert consensus, Aug 2026. All 32 clubs."),
@@ -81,6 +87,7 @@ DST_SOURCES = [
     ("STACKED DST", "https://www.stackedfantasy.com/nfl/draft-guide/dst", "Full 32, updated Aug 31. Houston first."),
     ("Draft Sharks DST", "https://www.draftsharks.com/rankings/def", "Partial board, Aug 31. Unranked clubs skipped."),
     ("CBS DST", "https://www.4for4.com/fantasy-football-rankings/cbs/def/2026", "Top 10 published Aug 30 via 4for4. Rams first."),
+    ("Field Yates DST", "https://www.espn.com/fantasy/football/story/_/id/48711830", "PPR overall slice, Sep 5. Houston first. Unranked clubs skipped."),
 ]
 
 KICKERS = [
@@ -133,6 +140,12 @@ RW_K = {
     "Wil Lutz": 13, "Eddy Pineiro": 14, "Cairo Santos": 16, "Nick Folk": 17,
     "Evan McPherson": 18, "Trey Smack": 19, "Blake Grupe": 20,
 }
+# Field Yates overall PPR, refreshed Sep 5. Kicker slice only.
+YATES_K = {
+    "Brandon Aubrey": 1, "Cameron Dicker": 2, "Ka'imi Fairbairn": 3, "Eddy Pineiro": 4,
+    "Chris Boswell": 5, "Harrison Butker": 6, "Jason Myers": 7, "Will Reichard": 8,
+    "Cam Little": 9, "Harrison Mevis": 10,
+}
 
 K_SOURCES = [
     ("FantasyPros Kicker ECR", "https://www.fantasypros.com/2026/08/fantasy-football-draft-rankings-tiers-kickers-2026-little-bates-aubrey/", "Expert consensus, Aug 2026. Aubrey locked first."),
@@ -140,6 +153,7 @@ K_SOURCES = [
     ("Pat Fitzmaurice K", "https://www.fantasypros.com/nfl/fantasy-football-rankings/k.php", "FantasyPros expert, Aug 26. Little over Myers, Mevis inside the 6."),
     ("Draft Sharks K", "https://www.draftsharks.com/rankings/pk", "Updated Aug 31. Trey Smack (GB) inside the 12. Unnamed slots skipped."),
     ("RotoWire K", "https://www.rotowire.com/football/article/2026-fantasy-football-rankings-kickers-85924", "Jerry Donabedian, Aug 27. Skip the Carlson/Smyth slot."),
+    ("Field Yates K", "https://www.espn.com/fantasy/football/story/_/id/48711830", "PPR overall slice, Sep 5. Aubrey first, Dicker second."),
 ]
 
 
@@ -180,6 +194,7 @@ def dst_board():
         "stacked": STACKED_DST,
         "ds": DS_DST,
         "cbs": CBS_DST,
+        "yates": YATES_DST,
     }, "DST")
 
 
@@ -190,4 +205,5 @@ def kicker_board():
         "fitz": FITZ_K,
         "ds": DS_K,
         "rw": RW_K,
+        "yates": YATES_K,
     }, "K")

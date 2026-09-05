@@ -209,8 +209,8 @@ def test_ppr_extra_boards():
     from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps
     spine = ["Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson"]
     maps = extra_ppr_maps(spine)
-    assert len(PPR_EXTRA_SOURCES) == 10
-    assert len(maps) == 10
+    assert len(PPR_EXTRA_SOURCES) == 12
+    assert len(maps) == 12
     for label, _url, _note in PPR_EXTRA_SOURCES:
         assert label in maps
         assert maps[label]
@@ -293,6 +293,35 @@ def test_bpl_slate():
     weeks = {g["week"] for g in games}
     assert weeks == set(range(1, 39))
     assert all(g["home_abbr"] in CLUBS and g["away_abbr"] in CLUBS for g in games)
+
+
+def test_week1_boards():
+    from week1_boards import (
+        MATCH_SOURCES,
+        W1_DST_SOURCES,
+        W1_K_SOURCES,
+        week1_dst_board,
+        week1_kicker_board,
+        week1_matchups,
+    )
+    assert len(W1_DST_SOURCES) >= 16
+    assert len(W1_K_SOURCES) >= 16
+    assert len(MATCH_SOURCES) == 26
+    dst = week1_dst_board()
+    assert dst[0]["name"] == "Jacksonville Jaguars"
+    assert dst[0]["bk"] == 1
+    assert dst[0]["n"] >= 10
+    kickers = week1_kicker_board()
+    assert kickers[0]["name"] in {"Brandon Aubrey", "Cameron Dicker"}
+    assert kickers[0]["bk"] == 1
+    games = week1_matchups()
+    assert len(games) == 16
+    keys = {g["key"] for g in games}
+    assert "NE@SEA" in keys
+    assert "SF@LAR" in keys
+    assert "DEN@KC" in keys
+    assert all(g["pick"] in {g["away"], g["home"]} for g in games)
+    assert all(g["n"] >= 10 for g in games)
 
 
 def test_half_ppr_classic_tax():
