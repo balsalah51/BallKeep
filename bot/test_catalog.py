@@ -150,11 +150,11 @@ def main():
     assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"
     fence = cat.raw.get("fence") or []
     assert len(fence) == 400, f"fence {len(fence)}"
-    assert fence[0]["name"] == "Drake Maye"
+    assert fence[0]["name"] == "Josh Allen"
     assert fence[0].get("bk") == 1
-    assert cat.list_for("fence")[0]["name"] == "Drake Maye"
-    assert cat.list_for("idp")[0]["name"] == "Drake Maye"
-    assert any(r["name"] == "Josh Allen" and r.get("bk") == 2 for r in fence[:3])
+    assert cat.list_for("fence")[0]["name"] == "Josh Allen"
+    assert cat.list_for("idp")[0]["name"] == "Josh Allen"
+    assert any(r["name"] == "Drake Maye" and r.get("bk") == 2 for r in fence[:3])
     assert any(r["name"] == "Aidan Hutchinson" for r in fence)
     bpl = cat.raw.get("bpl") or []
     assert len(bpl) == 380, f"bpl {len(bpl)}"
@@ -282,8 +282,11 @@ def main():
     assert "board.html" not in lists
     assert "defenses.html" in lists
     assert "kickers.html" in lists
+    assert "week1-dst.html" in lists
+    assert "week1-kickers.html" in lists
     assert "The D (DST)" in lists
     assert "Top Kickers" in lists
+    assert "week1-matchups.html" not in lists
     assert "the-fence.html" in lists
     assert "The Fence (IDP)" in lists
     fence_i = lists.find("the-fence.html")
@@ -293,13 +296,16 @@ def main():
     assert "nfl-schedule.html" in slates
     assert "mlb-schedule.html" in slates
     assert "bpl-schedule.html" in slates
+    assert "week1-matchups.html" in slates
+    assert "week1-dst.html" not in slates
+    assert "week1-kickers.html" not in slates
     assert 'href="trade.html"' in home[tools_at:extra_at]
     assert "Player Pages" in home[tools_at:extra_at]
     assert "Trade Calculators" not in home[home.find("home-intro"):lists_at]
     assert "this desk" not in home
     assert "\u2014" not in home
     assert "On this board" in home
-    assert "32 boards mashed" in home
+    assert "33 boards mashed" in home
     hc = html_of("hot-n-cold.html")
     assert "this desk" not in hc
     assert "\u2014" not in hc
@@ -354,7 +360,7 @@ def main():
     assert "2026 Redraft · PPR" in board_html
     assert "<h1>The Board</h1>" in board_html
     assert "redraft ppr" in board_html.lower()
-    assert "13 boards" in board_html
+    assert "15 boards" in board_html
     assert "Derek Brown" in board_html
     assert "4for4" in board_html
     dst_html = html_of("defenses.html")
@@ -364,6 +370,16 @@ def main():
     k_html = html_of("kickers.html")
     assert "<h1>Top Kickers</h1>" in k_html
     assert "Brandon Aubrey" in k_html
+    w1_dst_html = html_of("week1-dst.html")
+    assert "<h1>Week 1 DST</h1>" in w1_dst_html
+    assert "Jacksonville Jaguars" in w1_dst_html
+    w1_k_html = html_of("week1-kickers.html")
+    assert "<h1>Week 1 Kickers</h1>" in w1_k_html
+    assert "Brandon Aubrey" in w1_k_html or "Cameron Dicker" in w1_k_html
+    w1_m_html = html_of("week1-matchups.html")
+    assert "<h1>Week 1 Matchups</h1>" in w1_m_html
+    assert "26 sources" in w1_m_html
+    assert "NE at SEA" in w1_m_html or "SEA" in w1_m_html
     fence_html = html_of("the-fence.html")
     assert "<h1>The Fence</h1>" in fence_html
     assert "Aidan Hutchinson" in fence_html
@@ -490,6 +506,8 @@ def main():
         "redraft-superflex.html",
         "defenses.html",
         "kickers.html",
+        "week1-dst.html",
+        "week1-kickers.html",
         "the-fence.html",
         "rookies-2026.html",
         "bk/the-keep.html",
