@@ -1,0 +1,3276 @@
+{
+  "season": 2026,
+  "teams": [
+    {
+      "team": "ARI",
+      "slots": {
+        "WR": [
+          {
+            "name": "Marvin Harrison",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Michael Wilson",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Kendrick Bourne",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jalen Brooks",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Reggie Virgil",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
+            "name": "Devin Duvernay",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "Simi Fehoko",
+            "order": 8,
+            "slot": "RWR"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Jeremiyah Love",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Tyler Allgeier",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Zonovan Knight",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "James Conner",
+            "order": 4,
+            "slot": "RB"
+          },
+          {
+            "name": "Trey Benson",
+            "order": 6,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Jacoby Brissett",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Gardner Minshew",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Carson Beck",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Trey McBride",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Elijah Higgins",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Hunter Long",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Tip Reiman",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "Jameson Geers",
+            "order": 7,
+            "slot": "TE"
+          }
+        ]
+      }
+    },
+    {
+      "team": "ATL",
+      "slots": {
+        "TE": [
+          {
+            "name": "Kyle Pitts",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Austin Hooper",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Charlie Woerner",
+            "order": 3,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Bijan Robinson",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Brian Robinson",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Trey Sermon",
+            "order": 3,
+            "slot": "RB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Drake London",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jahan Dotson",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Olamide Zaccheaus",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Zachariah Branch",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Chris Blair",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
+            "name": "Beaux Collins",
+            "order": 8,
+            "slot": "WR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Tua Tagovailoa",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Cooper Rush",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Michael Penix",
+            "order": 3,
+            "slot": "QB"
+          },
+          {
+            "name": "Jack Strand",
+            "order": 4,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "BAL",
+      "slots": {
+        "RB": [
+          {
+            "name": "Derrick Henry",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Justice Hill",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Rasheen Ali",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Adam Randall",
+            "order": 5,
+            "slot": "RB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Zay Flowers",
+            "order": 1,
+            "slot": "SWR"
+          },
+          {
+            "name": "Rashod Bateman",
+            "order": 2,
+            "slot": "LWR"
+          },
+          {
+            "name": "Ja'Kobi Lane",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Devontez Walker",
+            "order": 4,
+            "slot": "RWR"
+          },
+          {
+            "name": "Elijah Sarratt",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
+            "name": "LaJohntay Wester",
+            "order": 6,
+            "slot": "SWR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Mark Andrews",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Durham Smythe",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Matt Hibner",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Josh Cuevas",
+            "order": 4,
+            "slot": "TE"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Lamar Jackson",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Tyler Huntley",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Skylar Thompson",
+            "order": 3,
+            "slot": "QB"
+          },
+          {
+            "name": "Aaron Bailey",
+            "order": 4,
+            "slot": "QB"
+          },
+          {
+            "name": "Joe Fagnano",
+            "order": 4,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "BUF",
+      "slots": {
+        "WR": [
+          {
+            "name": "DJ Moore",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Khalil Shakir",
+            "order": 2,
+            "slot": "SWR"
+          },
+          {
+            "name": "Keon Coleman",
+            "order": 3,
+            "slot": "LWR"
+          },
+          {
+            "name": "Joshua Palmer",
+            "order": 4,
+            "slot": "RWR"
+          },
+          {
+            "name": "Skyler Bell",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Tyrell Shavers",
+            "order": 8,
+            "slot": "RWR"
+          }
+        ],
+        "RB": [
+          {
+            "name": "James Cook",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Ty Johnson",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Ray Davis",
+            "order": 3,
+            "slot": "RB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Dalton Kincaid",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Dawson Knox",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Jackson Hawes",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Keleki Latu",
+            "order": 4,
+            "slot": "TE"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Josh Allen",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Kyle Allen",
+            "order": 2,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "CAR",
+      "slots": {
+        "WR": [
+          {
+            "name": "Tetairoa McMillan",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jalen Coker",
+            "order": 2,
+            "slot": "SWR"
+          },
+          {
+            "name": "Xavier Legette",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "John Metchie",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jimmy Horn",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Brycen Tremayne",
+            "order": 6,
+            "slot": "RWR"
+          },
+          {
+            "name": "Chris Brazzell",
+            "order": 10,
+            "slot": "WR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Bryce Young",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Kenny Pickett",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Haynes King",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Darren Waller",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Tommy Tremble",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Ja'Tavion Sanders",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Mitchell Evans",
+            "order": 4,
+            "slot": "TE"
+          },
+          {
+            "name": "Feleipe Franks",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "Wyatt Houston",
+            "order": 40,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Chuba Hubbard",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Jonathon Brooks",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "AJ Dillon",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Trevor Etienne",
+            "order": 4,
+            "slot": "RB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "CHI",
+      "slots": {
+        "TE": [
+          {
+            "name": "Colston Loveland",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Cole Kmet",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Sam Roush",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Nikola Kalinic",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "Hayden Large",
+            "order": 7,
+            "slot": "TE"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Rome Odunze",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Luther Burden",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Kalif Raymond",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Zavion Thomas",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jahdae Walker",
+            "order": 5,
+            "slot": "LWR"
+          }
+        ],
+        "RB": [
+          {
+            "name": "D'Andre Swift",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Kyle Monangai",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Roschon Johnson",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Brittain Brown",
+            "order": 5,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Caleb Williams",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Case Keenum",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Tyson Bagent",
+            "order": 3,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "CIN",
+      "slots": {
+        "QB": [
+          {
+            "name": "Joe Burrow",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Joe Flacco",
+            "order": 2,
+            "slot": "QB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Ja'Marr Chase",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Tee Higgins",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Andrei Iosivas",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Colbie Young",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Dohnte Meyers",
+            "order": 5,
+            "slot": "RWR"
+          },
+          {
+            "name": "Ke'Shawn Williams",
+            "order": 7,
+            "slot": "SWR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Mike Gesicki",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Erick All",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Drew Sample",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Jack Endries",
+            "order": 4,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Chase Brown",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Samaje Perine",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Tahj Brooks",
+            "order": 3,
+            "slot": "RB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "CLE",
+      "slots": {
+        "WR": [
+          {
+            "name": "Jerry Jeudy",
+            "order": 1,
+            "slot": "RWR"
+          },
+          {
+            "name": "KC Concepcion",
+            "order": 2,
+            "slot": "SWR"
+          },
+          {
+            "name": "Denzel Boston",
+            "order": 3,
+            "slot": "LWR"
+          },
+          {
+            "name": "Isaiah Bond",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Malachi Corley",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Tylan Wallace",
+            "order": 6,
+            "slot": "RWR"
+          },
+          {
+            "name": "Jamari Thrash",
+            "order": 7,
+            "slot": "WR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Deshaun Watson",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Dillon Gabriel",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Shedeur Sanders",
+            "order": 3,
+            "slot": "QB"
+          },
+          {
+            "name": "Taylen Green",
+            "order": 4,
+            "slot": "QB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Harold Fannin",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Blake Whiteheart",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Carsen Ryan",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Joe Royer",
+            "order": 5,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Quinshon Judkins",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Dylan Sampson",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Raheim Sanders",
+            "order": 3,
+            "slot": "RB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "DAL",
+      "slots": {
+        "WR": [
+          {
+            "name": "CeeDee Lamb",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "George Pickens",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Ryan Flournoy",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "KaVontae Turpin",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jonathan Mingo",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
+            "name": "Camden Brown",
+            "order": 6,
+            "slot": "RWR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Dak Prescott",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Sam Howell",
+            "order": 2,
+            "slot": "QB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Jake Ferguson",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Luke Schoonmaker",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Brevyn Spann-Ford",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Princeton Fant",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "DJ Rogers",
+            "order": 6,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Javonte Williams",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Malik Davis",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Emari Demercado",
+            "order": 3,
+            "slot": "RB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "DEN",
+      "slots": {
+        "WR": [
+          {
+            "name": "Jaylen Waddle",
+            "order": 1,
+            "slot": "RWR"
+          },
+          {
+            "name": "Courtland Sutton",
+            "order": 2,
+            "slot": "LWR"
+          },
+          {
+            "name": "Pat Bryant",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Marvin Mims",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Troy Franklin",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Lil'Jordan Humphrey",
+            "order": 6,
+            "slot": "LWR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Bo Nix",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Jarrett Stidham",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Sam Ehlinger",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Evan Engram",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Adam Trautman",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Nate Adkins",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Caleb Lohner",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "Dallen Bentley",
+            "order": 6,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "J.K. Dobbins",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "RJ Harvey",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Jonah Coleman",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Tyler Badie",
+            "order": 4,
+            "slot": "RB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "DET",
+      "slots": {
+        "WR": [
+          {
+            "name": "Amon-Ra St. Brown",
+            "order": 1,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jameson Williams",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Isaac TeSlaa",
+            "order": 3,
+            "slot": "LWR"
+          },
+          {
+            "name": "Tay Martin",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Kendrick Law",
+            "order": 8,
+            "slot": "WR"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Jahmyr Gibbs",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Jacob Saylors",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Sione Vaki",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Isiah Pacheco",
+            "order": 4,
+            "slot": "RB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Sam LaPorta",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Brock Wright",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Tyler Conklin",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Jackson Meeks",
+            "order": 4,
+            "slot": "TE"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Jared Goff",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Joshua Dobbs",
+            "order": 2,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "GB",
+      "slots": {
+        "WR": [
+          {
+            "name": "Christian Watson",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jayden Reed",
+            "order": 2,
+            "slot": "SWR"
+          },
+          {
+            "name": "Matthew Golden",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Bo Melton",
+            "order": 4,
+            "slot": "RWR"
+          },
+          {
+            "name": "Skyy Moore",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Savion Williams",
+            "order": 7,
+            "slot": "LWR"
+          },
+          {
+            "name": "J. Michael Sturdivant",
+            "order": 9,
+            "slot": "LWR"
+          }
+        ],
+        "RB": [
+          {
+            "name": "MarShawn Lloyd",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Chris Brooks",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Kaleb Johnson",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Josh Jacobs",
+            "order": 4,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Jordan Love",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Tyrod Taylor",
+            "order": 2,
+            "slot": "QB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Tucker Kraft",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Jonnu Smith",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Josh Whyle",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Luke Musgrave",
+            "order": 4,
+            "slot": "TE"
+          },
+          {
+            "name": "Thomas Yassmin",
+            "order": 6,
+            "slot": "TE"
+          },
+          {
+            "name": "Mark Redman",
+            "order": 7,
+            "slot": "TE"
+          }
+        ]
+      }
+    },
+    {
+      "team": "HOU",
+      "slots": {
+        "WR": [
+          {
+            "name": "Nico Collins",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Kayshon Boutte",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Jaylin Noel",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Xavier Hutchinson",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Tank Dell",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jayden Higgins",
+            "order": 9,
+            "slot": "WR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "C.J. Stroud",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Davis Mills",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Graham Mertz",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "RB": [
+          {
+            "name": "David Montgomery",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Woody Marks",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "British Brooks",
+            "order": 3,
+            "slot": "RB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Dalton Schultz",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Marlin Klein",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Cade Stover",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Foster Moreau",
+            "order": 4,
+            "slot": "TE"
+          },
+          {
+            "name": "Brevin Jordan",
+            "order": 5,
+            "slot": "TE"
+          }
+        ]
+      }
+    },
+    {
+      "team": "IND",
+      "slots": {
+        "TE": [
+          {
+            "name": "Tyler Warren",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Mo Alie-Cox",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Drew Ogletree",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Will Mallory",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "Carson Towt",
+            "order": 6,
+            "slot": "TE"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Daniel Jones",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Anthony Richardson",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Riley Leonard",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Jonathan Taylor",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Seth McGowan",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "DJ Giddens",
+            "order": 3,
+            "slot": "RB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Alec Pierce",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Josh Downs",
+            "order": 2,
+            "slot": "SWR"
+          },
+          {
+            "name": "Keenan Allen",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Ashton Dulin",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Laquon Treadwell",
+            "order": 5,
+            "slot": "RWR"
+          },
+          {
+            "name": "Deion Burks",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "D.J. Montgomery",
+            "order": 7,
+            "slot": "WR"
+          },
+          {
+            "name": "Coleman Owen",
+            "order": 10,
+            "slot": "WR"
+          }
+        ]
+      }
+    },
+    {
+      "team": "JAX",
+      "slots": {
+        "WR": [
+          {
+            "name": "Parker Washington",
+            "order": 1,
+            "slot": "SWR"
+          },
+          {
+            "name": "Brian Thomas",
+            "order": 2,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jakobi Meyers",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Josh Cameron",
+            "order": 5,
+            "slot": "RWR"
+          },
+          {
+            "name": "CJ Williams",
+            "order": 9,
+            "slot": "LWR"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Bhayshul Tuten",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Chris Rodriguez",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "LeQuint Allen",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Ameer Abdullah",
+            "order": 4,
+            "slot": "RB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Brenton Strange",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Nate Boerkircher",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Tanner Koziol",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Quintin Morris",
+            "order": 4,
+            "slot": "TE"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Trevor Lawrence",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Carter Bradley",
+            "order": 3,
+            "slot": "QB"
+          },
+          {
+            "name": "Quinn Ewers",
+            "order": 4,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "KC",
+      "slots": {
+        "TE": [
+          {
+            "name": "Travis Kelce",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Noah Gray",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Jared Wiley",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Jake Briningstool",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "John Michael Gyllenborg",
+            "order": 6,
+            "slot": "TE"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Patrick Mahomes",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Justin Fields",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Garrett Nussmeier",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Kenneth Walker",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Emmett Johnson",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Brashard Smith",
+            "order": 3,
+            "slot": "RB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Rashee Rice",
+            "order": 1,
+            "slot": "SWR"
+          },
+          {
+            "name": "Xavier Worthy",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Joe Forson",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Tyquan Thornton",
+            "order": 3,
+            "slot": "LWR"
+          },
+          {
+            "name": "Cyrus Allen",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jalen Royals",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
+            "name": "Nikko Remigio",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jeff Caldwell",
+            "order": 8,
+            "slot": "WR"
+          }
+        ]
+      }
+    },
+    {
+      "team": "LAC",
+      "slots": {
+        "RB": [
+          {
+            "name": "Omarion Hampton",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Keaton Mitchell",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Kimani Vidal",
+            "order": 3,
+            "slot": "RB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Oronde Gadsden",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "David Njoku",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Charlie Kolar",
+            "order": 3,
+            "slot": "TE"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Ladd McConkey",
+            "order": 1,
+            "slot": "SWR"
+          },
+          {
+            "name": "Quentin Johnston",
+            "order": 2,
+            "slot": "LWR"
+          },
+          {
+            "name": "Tre' Harris",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Brenen Thompson",
+            "order": 4,
+            "slot": "RWR"
+          },
+          {
+            "name": "KeAndre Lambert-Smith",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
+            "name": "Derius Davis",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "Dalevon Campbell",
+            "order": 9,
+            "slot": "WR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Justin Herbert",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Trey Lance",
+            "order": 2,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "LAR",
+      "slots": {
+        "QB": [
+          {
+            "name": "Matthew Stafford",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Stetson Bennett",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Ty Simpson",
+            "order": 3,
+            "slot": "QB"
+          },
+          {
+            "name": "Matthew Caldwell",
+            "order": 4,
+            "slot": "QB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Puka Nacua",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Davante Adams",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "CJ Daniels",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Tutu Atwell",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jordan Whittington",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Xavier Smith",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "Konata Mumpfield",
+            "order": 7,
+            "slot": "LWR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Colby Parkinson",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Terrance Ferguson",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Tyler Higbee",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Max Klare",
+            "order": 4,
+            "slot": "TE"
+          },
+          {
+            "name": "Davis Allen",
+            "order": 5,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Kyren Williams",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Blake Corum",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Ronnie Rivers",
+            "order": 3,
+            "slot": "RB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "LV",
+      "slots": {
+        "WR": [
+          {
+            "name": "Tre Tucker",
+            "order": 1,
+            "slot": "RWR"
+          },
+          {
+            "name": "Jalen Nailor",
+            "order": 2,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jack Bech",
+            "order": 3,
+            "slot": "LWR"
+          },
+          {
+            "name": "Malik Benson",
+            "order": 4,
+            "slot": "RWR"
+          },
+          {
+            "name": "Dareke Young",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Justin Shorter",
+            "order": 9,
+            "slot": "WR"
+          },
+          {
+            "name": "Dont'e Thornton",
+            "order": 10,
+            "slot": "LWR"
+          },
+          {
+            "name": "Corey Rucker",
+            "order": 11,
+            "slot": "WR"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Ashton Jeanty",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Mike Washington",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Connor Heyward",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Dylan Laube",
+            "order": 4,
+            "slot": "RB"
+          },
+          {
+            "name": "Chris Collier",
+            "order": 7,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Kirk Cousins",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Aidan O'Connell",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Fernando Mendoza",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Brock Bowers",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Michael Mayer",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Ian Thomas",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Carter Runyon",
+            "order": 5,
+            "slot": "TE"
+          }
+        ]
+      }
+    },
+    {
+      "team": "MIA",
+      "slots": {
+        "WR": [
+          {
+            "name": "Malik Washington",
+            "order": 1,
+            "slot": "SWR"
+          },
+          {
+            "name": "Caleb Douglas",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Jalen Tolbert",
+            "order": 3,
+            "slot": "LWR"
+          },
+          {
+            "name": "Chris Bell",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Kevin Coleman",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Ryan Miller",
+            "order": 6,
+            "slot": "RWR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Greg Dulcich",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Will Kacmarek",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Seydou Traore",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Justin Joly",
+            "order": 4,
+            "slot": "TE"
+          },
+          {
+            "name": "Cole Turner",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "Ben Sims",
+            "order": 6,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "De'Von Achane",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Jaylen Wright",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Ollie Gordon",
+            "order": 3,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Malik Willis",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Brady Cook",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Kyle McCord",
+            "order": 3,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "MIN",
+      "slots": {
+        "WR": [
+          {
+            "name": "Justin Jefferson",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jordan Addison",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Jauan Jennings",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Tai Felton",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jeshaun Jones",
+            "order": 5,
+            "slot": "RWR"
+          },
+          {
+            "name": "Myles Price",
+            "order": 6,
+            "slot": "SWR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "T.J. Hockenson",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Josh Oliver",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Ben Yurosek",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Gavin Bartholomew",
+            "order": 5,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Aaron Jones",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Jordan Mason",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Demond Claiborne",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Max Bredeson",
+            "order": 4,
+            "slot": "RB"
+          },
+          {
+            "name": "Jermar Jefferson",
+            "order": 6,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Kyler Murray",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Carson Wentz",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "J.J. McCarthy",
+            "order": 3,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "NE",
+      "slots": {
+        "QB": [
+          {
+            "name": "Drake Maye",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Tommy DeVito",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Behren Morton",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "A.J. Brown",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Romeo Doubs",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "DeMario Douglas",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Mack Hollins",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Kyle Williams",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Efton Chism",
+            "order": 6,
+            "slot": "RWR"
+          },
+          {
+            "name": "Jeremiah Webb",
+            "order": 7,
+            "slot": "WR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Hunter Henry",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Eli Raridon",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Cameron Latu",
+            "order": 4,
+            "slot": "TE"
+          },
+          {
+            "name": "Julian Hill",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "Tanner Arkin",
+            "order": 6,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Rhamondre Stevenson",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Corey Kiner",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Reggie Gilliam",
+            "order": 4,
+            "slot": "RB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "NO",
+      "slots": {
+        "RB": [
+          {
+            "name": "Travis Etienne",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Kendre Miller",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Audric Estime",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Alvin Kamara",
+            "order": 4,
+            "slot": "RB"
+          },
+          {
+            "name": "Ty Chandler",
+            "order": 5,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Tyler Shough",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Zach Wilson",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Spencer Rattler",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Chris Olave",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Devaughn Vele",
+            "order": 2,
+            "slot": "SWR"
+          },
+          {
+            "name": "Bryce Lance",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Barion Brown",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Mason Tipton",
+            "order": 9,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jordyn Tyson",
+            "order": 10,
+            "slot": "RWR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Juwan Johnson",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Noah Fant",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Oscar Delp",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Moliki Matavao",
+            "order": 6,
+            "slot": "TE"
+          }
+        ]
+      }
+    },
+    {
+      "team": "NYG",
+      "slots": {
+        "RB": [
+          {
+            "name": "Cam Skattebo",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Najee Harris",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Tyrone Tracy",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Devin Singletary",
+            "order": 4,
+            "slot": "RB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Isaiah Likely",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Theo Johnson",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Chris Manhertz",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Thomas Fidone",
+            "order": 4,
+            "slot": "TE"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Malik Nabers",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Darius Slayton",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Malachi Fields",
+            "order": 3,
+            "slot": "LWR"
+          },
+          {
+            "name": "Darnell Mooney",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Odell Beckham",
+            "order": 5,
+            "slot": "RWR"
+          },
+          {
+            "name": "Gunner Olszewski",
+            "order": 7,
+            "slot": "WR"
+          },
+          {
+            "name": "Calvin Austin",
+            "order": 8,
+            "slot": "WR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Jaxson Dart",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Jameis Winston",
+            "order": 2,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "NYJ",
+      "slots": {
+        "RB": [
+          {
+            "name": "Breece Hall",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Braelon Allen",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Isaiah Davis",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Andrew Beck",
+            "order": 4,
+            "slot": "RB"
+          },
+          {
+            "name": "Kene Nwangwu",
+            "order": 5,
+            "slot": "RB"
+          },
+          {
+            "name": "DeaMonte Trayanum",
+            "order": 6,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Geno Smith",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Cade Klubnik",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Garrett Wilson",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Adonai Mitchell",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Omar Cooper",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Isaiah Williams",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Myles White",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Tim Patrick",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
+            "name": "Arian Smith",
+            "order": 6,
+            "slot": "RWR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Mason Taylor",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Kenyon Sadiq",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Jeremy Ruckert",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Jelani Woods",
+            "order": 4,
+            "slot": "TE"
+          }
+        ]
+      }
+    },
+    {
+      "team": "PHI",
+      "slots": {
+        "TE": [
+          {
+            "name": "Dallas Goedert",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Eli Stowers",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Johnny Mundt",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Grant Calcaterra",
+            "order": 4,
+            "slot": "TE"
+          },
+          {
+            "name": "E.J. Jenkins",
+            "order": 5,
+            "slot": "TE"
+          }
+        ],
+        "WR": [
+          {
+            "name": "DeVonta Smith",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Dontayvion Wicks",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Makai Lemon",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Marquise Brown",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Darius Cooper",
+            "order": 5,
+            "slot": "RWR"
+          },
+          {
+            "name": "Elijah Moore",
+            "order": 6,
+            "slot": "LWR"
+          },
+          {
+            "name": "Johnny Wilson",
+            "order": 9,
+            "slot": "WR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Jalen Hurts",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Andy Dalton",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Tanner McKee",
+            "order": 3,
+            "slot": "QB"
+          },
+          {
+            "name": "Cole Payton",
+            "order": 4,
+            "slot": "QB"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Saquon Barkley",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Tank Bigsby",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Will Shipley",
+            "order": 3,
+            "slot": "RB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "PIT",
+      "slots": {
+        "QB": [
+          {
+            "name": "Aaron Rodgers",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Mason Rudolph",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Will Howard",
+            "order": 3,
+            "slot": "QB"
+          },
+          {
+            "name": "Drew Allar",
+            "order": 4,
+            "slot": "QB"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Jaylen Warren",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Rico Dowdle",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Eli Heidenreich",
+            "order": 4,
+            "slot": "RB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "DK Metcalf",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Michael Pittman",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Germie Bernard",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Roman Wilson",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Ben Skowronek",
+            "order": 5,
+            "slot": "RWR"
+          },
+          {
+            "name": "Kaden Wetjen",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "Cole Burgess",
+            "order": 9,
+            "slot": "WR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Pat Freiermuth",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Darnell Washington",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Robert Tonyan",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Riley Nowakowski",
+            "order": 3,
+            "slot": "RB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "SEA",
+      "slots": {
+        "QB": [
+          {
+            "name": "Sam Darnold",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Drew Lock",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Jalen Milroe",
+            "order": 3,
+            "slot": "QB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Jaxon Smith-Njigba",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Rashid Shaheed",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Cooper Kupp",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Tory Horton",
+            "order": 4,
+            "slot": "RWR"
+          },
+          {
+            "name": "Irv Charles",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jake Bobo",
+            "order": 6,
+            "slot": "WR"
+          },
+          {
+            "name": "Montorie Foster",
+            "order": 9,
+            "slot": "SWR"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Jadarian Price",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "George Holani",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Emanuel Wilson",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Zach Charbonnet",
+            "order": 4,
+            "slot": "RB"
+          },
+          {
+            "name": "Brady Russell",
+            "order": 6,
+            "slot": "RB"
+          },
+          {
+            "name": "Robbie Ouzts",
+            "order": 7,
+            "slot": "RB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "AJ Barner",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Elijah Arroyo",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Eric Saubert",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Nick Kallerup",
+            "order": 4,
+            "slot": "TE"
+          }
+        ]
+      }
+    },
+    {
+      "team": "SF",
+      "slots": {
+        "WR": [
+          {
+            "name": "Mike Evans",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Deebo Samuel",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "De'Zhaun Stribling",
+            "order": 3,
+            "slot": "LWR"
+          },
+          {
+            "name": "Demarcus Robinson",
+            "order": 4,
+            "slot": "RWR"
+          },
+          {
+            "name": "Jacob Cowing",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jordan Watkins",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "Christian Kirk",
+            "order": 7,
+            "slot": "SWR"
+          },
+          {
+            "name": "Brandon Aiyuk",
+            "order": 9,
+            "slot": "WR"
+          },
+          {
+            "name": "Ricky Pearsall",
+            "order": 10,
+            "slot": "WR"
+          }
+        ],
+        "TE": [
+          {
+            "name": "George Kittle",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Jake Tonges",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Luke Farrell",
+            "order": 3,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Christian McCaffrey",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Kaelon Black",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Jordan James",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Isaac Guerendo",
+            "order": 6,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Brock Purdy",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Mac Jones",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Kurtis Rourke",
+            "order": 3,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "TB",
+      "slots": {
+        "RB": [
+          {
+            "name": "Bucky Irving",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Kenny Gainwell",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Sean Tucker",
+            "order": 3,
+            "slot": "RB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Cade Otton",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Payne Durham",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Ko Kieft",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Bauer Sharp",
+            "order": 5,
+            "slot": "TE"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Emeka Egbuka",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Chris Godwin",
+            "order": 2,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jalen McMillan",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Ted Hurst",
+            "order": 4,
+            "slot": "LWR"
+          },
+          {
+            "name": "Tez Johnson",
+            "order": 5,
+            "slot": "RWR"
+          },
+          {
+            "name": "Kameron Johnson",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "David Sills",
+            "order": 7,
+            "slot": "RWR"
+          },
+          {
+            "name": "Dennis Houston",
+            "order": 8,
+            "slot": "WR"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Baker Mayfield",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Jalon Daniels",
+            "order": 3,
+            "slot": "QB"
+          }
+        ]
+      }
+    },
+    {
+      "team": "TEN",
+      "slots": {
+        "TE": [
+          {
+            "name": "Gunnar Helm",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "Daniel Bellinger",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Kylen Granson",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "David Martin-Robinson",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "Jaren Kanak",
+            "order": 6,
+            "slot": "TE"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Tony Pollard",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Tyjae Spears",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Nicholas Singleton",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Julius Chestnut",
+            "order": 4,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Cam Ward",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Mitchell Trubisky",
+            "order": 2,
+            "slot": "QB"
+          }
+        ],
+        "WR": [
+          {
+            "name": "Carnell Tate",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Wan'Dale Robinson",
+            "order": 2,
+            "slot": "SWR"
+          },
+          {
+            "name": "Calvin Ridley",
+            "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Chimere Dike",
+            "order": 4,
+            "slot": "SWR"
+          },
+          {
+            "name": "Elic Ayomanor",
+            "order": 5,
+            "slot": "LWR"
+          }
+        ]
+      }
+    },
+    {
+      "team": "WAS",
+      "slots": {
+        "WR": [
+          {
+            "name": "Terry McLaurin",
+            "order": 1,
+            "slot": "LWR"
+          },
+          {
+            "name": "Stefon Diggs",
+            "order": 2,
+            "slot": "RWR"
+          },
+          {
+            "name": "Antonio Williams",
+            "order": 3,
+            "slot": "SWR"
+          },
+          {
+            "name": "Treylon Burks",
+            "order": 4,
+            "slot": "RWR"
+          },
+          {
+            "name": "Jaylin Lane",
+            "order": 5,
+            "slot": "SWR"
+          },
+          {
+            "name": "Dyami Brown",
+            "order": 6,
+            "slot": "LWR"
+          },
+          {
+            "name": "Luke McCaffrey",
+            "order": 7,
+            "slot": "SWR"
+          },
+          {
+            "name": "Jacoby Jones",
+            "order": 8,
+            "slot": "WR"
+          }
+        ],
+        "RB": [
+          {
+            "name": "Jacory Croskey-Merritt",
+            "order": 1,
+            "slot": "RB"
+          },
+          {
+            "name": "Rachaad White",
+            "order": 2,
+            "slot": "RB"
+          },
+          {
+            "name": "Kaytron Allen",
+            "order": 3,
+            "slot": "RB"
+          },
+          {
+            "name": "Jeremy McNichols",
+            "order": 4,
+            "slot": "RB"
+          }
+        ],
+        "QB": [
+          {
+            "name": "Jayden Daniels",
+            "order": 1,
+            "slot": "QB"
+          },
+          {
+            "name": "Marcus Mariota",
+            "order": 2,
+            "slot": "QB"
+          },
+          {
+            "name": "Athan Kaliakmanis",
+            "order": 4,
+            "slot": "QB"
+          }
+        ],
+        "TE": [
+          {
+            "name": "Chig Okonkwo",
+            "order": 1,
+            "slot": "TE"
+          },
+          {
+            "name": "John Bates",
+            "order": 2,
+            "slot": "TE"
+          },
+          {
+            "name": "Ben Sinnott",
+            "order": 3,
+            "slot": "TE"
+          },
+          {
+            "name": "Colson Yankoff",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
+            "name": "Quentin Moore",
+            "order": 7,
+            "slot": "TE"
+          }
+        ]
+      }
+    }
+  ]
+}
