@@ -1,8 +1,410 @@
 {
   "sport": "football",
-  "updated": "2026-09-06T15:24:05Z",
-  "fresh": 182,
+  "updated": "2026-09-06T16:24:58Z",
+  "fresh": 220,
   "stories": [
+    {
+      "id": "49ers-christian-mccaffrey-s-absence-joint-practice-gets-c76f7c88",
+      "slug": "49ers-christian-mccaffrey-s-absence-joint-practice-gets-c76f7c88",
+      "sport": "football",
+      "headline": "49ers player gets cut after flying 16 hours to Australia: Why he might be sent home and why they made the move",
+      "blurb": "San Francisco made room for long snapper Jon Weeks ahead of the opener in Melbourne, a move that could signal George Kittle is ready to return from an Achilles tear.",
+      "summary": "San Francisco made room for long snapper Jon Weeks ahead of the opener in Melbourne, a move that could signal George Kittle is ready to return from an Achilles tear. Fantasy football injuries: Updates on Ja'Marr Chase, Patrick Mahomes, George Kittle and more PhillyVoice 49ers coach explains Christian McCaffrey’s absence, shares positive news on other RBs 49ers Webzone Aggregated from CBS NFL, PhillyVoice, 49ers Webzone, Yahoo Sports, ninerswire.usatoday.com and 13 more.",
+      "category": "injury",
+      "published": "2026-08-10T07:00:00Z",
+      "updated": "2026-09-06T15:22:23Z",
+      "players": [
+        {
+          "key": "george kittle",
+          "name": "George Kittle",
+          "slug": "george-kittle",
+          "pos": "TE",
+          "team": "SF"
+        },
+        {
+          "key": "patrick mahomes",
+          "name": "Patrick Mahomes",
+          "slug": "patrick-mahomes",
+          "pos": "QB",
+          "team": "KC"
+        },
+        {
+          "key": "jamarr chase",
+          "name": "Ja'Marr Chase",
+          "slug": "jamarr-chase",
+          "pos": "WR",
+          "team": "CIN"
+        },
+        {
+          "key": "christian mccaffrey",
+          "name": "Christian McCaffrey",
+          "slug": "christian-mccaffrey",
+          "pos": "RB",
+          "team": "SF"
+        },
+        {
+          "key": "kaelon black",
+          "name": "Kaelon Black",
+          "slug": "kaelon-black",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "49ers coach explains Christian McCaffrey’s absence, shares positive news on other RBs",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPd0hRakZQTjM0OEt3U3c3RkwydnNiWWN5ZTVJWUE5X1hQRlF3Ql9GcXhmNkQzbHNxdTJBUGE5TnotM2FyUjB3UW9aQ3VDeHB0Y2hLTW00eFFUZ0R6Y3NWYjUta2x3V0JRTXM2eWo5Y2tNS0ZUU2ppczhfbVlkRVJocjMtbVBqb2JCYnFzRTdNaFZnNmttYlNn?oc=5",
+          "publisher": "49ers Webzone",
+          "kind": "article",
+          "snippet": "49ers coach explains Christian McCaffrey’s absence, shares positive news on other RBs 49ers Webzone",
+          "published": "Thu, 03 Sep 2026 12:10:01 GMT"
+        },
+        {
+          "title": "49ers Fans Shouldn't Worry About Christian McCaffrey's Recent Absence From Practice",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeXpka2U2QXJGMktRcDZBWHQxVmdjeENnS21yUXphTmdwUUtXUXlBOEQ2ZU8zME0yaGJzV0hHVnphWHJONFYwT2NCYWRmM2tkV29PZGNFWE5FZk82WVFRRFg5REpSVkw5RnRXRmluRjYyMHhPd3BEbDhHV2xaOVdsUVRCc2hNTzBaQU5sbA?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "49ers Fans Shouldn't Worry About Christian McCaffrey's Recent Absence From Practice Yahoo Sports",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers coach gives positive update on RB Christian McCaffrey",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNX2RsbFFBVXUxXy1VcDhEclRjc2RXcnFwbmhNVkIzNS1XNzM1OWdnMWxjcVhpMWlmOXA4NXlIeVMtaUhscVFnby1nYlg1Z2tpMzVBbmwtakJKVDd4Z3ItY1l1TXdyYXAyNE9PNmRCN09hbHVIT0xiV3RzVzlGQTlFR3FkNUJCblFNUWxpUm9EcVUzeFUwa1lkTHpZYU9lLVJIRXhGYm5TS0E1aFdEaVNmcEFWZE5CN216M3JfTVRZbw?oc=5",
+          "publisher": "ninerswire.usatoday.com",
+          "kind": "article",
+          "snippet": "49ers coach gives positive update on RB Christian McCaffrey ninerswire.usatoday.com",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdFA2THJpWk1pRV84T1FGZU5IbFVzSl9KMTlVa0lfekFQYnNpRzYxT21rWFFtSVVUNmxxVlRsMlY0a2tEQVNGXzUxY2Y3a0lYc29tVkQzRVRLNUdMR3JBblVOMjBwa2U3QW50akRTWGdsdVBUUUZxMUFDQnJKM05QelhqQlNUZVNUQmNtNEhCWWo1Zw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays Yahoo Sports",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers news: Christian McCaffrey's absence from joint practice gets Kyle Shanahan update",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRmVpNnRwS3dmQTB5OU9mTmdzMU1kb1dQREloX0Q2Nk1fWDRkNXdLQ0ZOR1hKQmJZN3NiajJJVU1HOEY3d3luR2xBLXp4dFN5LUU4SnpEUjhMS2ItcDcwWnFqMktrT3ZaalZMbjBuOTcwckxGRklGcFVaUS1rTGVzdUhNWXFIUk1sWjZRb1JzWjk4Zw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "49ers news: Christian McCaffrey's absence from joint practice gets Kyle Shanahan update Yahoo Sports",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5NRFdoZWtPcVRrc0VMZHVZVmczMU9uRVl5aW1JY2NMa2pVRUFUcmxkQ2dMLVQ3UFNBdDhDSVIwaE15WXBTNmFYN1lkLUxYX09XNXVtaGpyYTRYdHZEQ1BmVFBybmNCamxOOGxBMkFuLXltbEhTVGJmSi1EYkI?oc=5",
+          "publisher": "The Big Lead",
+          "kind": "article",
+          "snippet": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays The Big Lead",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey misses 49ers training camp practice ahead of joint session",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaGlyM1J4b0tBTTZsQ1RrUmFlZ3ZIZDNqdXZZMkZqTUFCdHc5VmpRZXhMVVZwUjFEM3JrNjVFV0ZSYzUyRktvaHJ0MWlwSnVhNUdCWmhXMGtRMkl5VGtwcl9PcDFzOTN2NWw5QU5VVHlrV2NqVVhGT1plaVJFUnI4bHlqN2RYeVBtZmpLUkloU0QyRFg5?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Christian McCaffrey misses 49ers training camp practice ahead of joint session Yahoo Sports",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers All-Pro Nick Bosa dealing with tendinitis in surgically repaired right knee; Christian McCaffrey misses another practice",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPdktMODRxWmN2Mmx3MWttdVhfZEtaWHBsczRyWVh2NkprbXFfTlBBbGdjZ1BUZWhIWkNReGU0MmJtOGJWbDlLcFpwSE1WWldieGJSVmd2MUlreWdaMkplVzExcU9DZUZJdHhIaGktbVM2VjJvTW8tVUNPOG52UWxJNGtyQkY5bkR1ZUJNQnd6T3dTZmFmNDVNLUotSDFCeVNzOXlfbnpXd0dFeTRnb25YT0pZUmExT2h5ZUlQVFYxY0hIZHV4YWNudVpSTUJjaE1fSE4zaWZkOExIX2trMFV2bzVSbGQ2LTZDOHBrRHJ0dWhLYVI4LVc1RU1Mc1FIQW4zYXJaZXFPX00?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "49ers All-Pro Nick Bosa dealing with tendinitis in surgically repaired right knee; Christian McCaffrey misses another practice Yahoo Sports",
+          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "“I Am Sick and Tired”: Radio Host Goes on Fiery Rant Over 49ers Injury Issues as Christian McCaffrey & Nick Bosa Miss Practice",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1LQnJXVlQwd19SNXh1MzBydGhsOWNXdVBwVHVPMDVnV2lIcm11YlVJVFFRbmU2b2tkRjFXTktsUnkzdXdlX3dQMUJGNVVjaWRnSmNzeTNqVmhOSUY1U20wUTZsWkJSQlU1OWhMd18wREpmdmxkSmQwbHllT21BUQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "“I Am Sick and Tired”: Radio Host Goes on Fiery Rant Over 49ers Injury Issues as Christian McCaffrey & Nick Bosa Miss Practice Yahoo Sports",
+          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey Fantasy Football Injury Update: Is CMC Healthy Ahead of Week 1?",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSGVfRWd4MGdwUHdDR2xSR0lMd3F5N2luNE5nWVBZc3FjWlpYaHBQUnlYai1IYzlYUnJna3RJNkJDRVA0ZUpsbTVRMFJXbGxWOXlFVk81em9aM2RTWWlxMUU4NUJlQmViSGQtdjFlaGVnWTVva09SQmtmR2pfcnVtQ2RzaWlYZF9fSGI5OHhRalJ1LV92VUpJ?oc=5",
+          "publisher": "Complex",
+          "kind": "article",
+          "snippet": "Christian McCaffrey Fantasy Football Injury Update: Is CMC Healthy Ahead of Week 1? Complex",
+          "published": "Fri, 04 Sep 2026 18:06:15 GMT"
+        },
+        {
+          "title": "49ers injury news: Kyle Shanahan shares updates on Christian McCaffrey, Nick Bosa",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQllPTUF1d01FcEhXU0lKWDVFY2ZST3p0VTN6LXJZTUlLdkZ3c3ZhbHpLSUdnMVhadjRDdTBvTFFrdEZ4aTJacm9sSUtsOGF6aHR4a2pzSWM2d3NOUy1sUDZ6T2VJeVNwaVNCNndjeTFTQ2FORTBTaWxWcWVUc3hBeFFwX1VrSGVkZ1k4Wm1BT0Q3bjQ?oc=5",
+          "publisher": "49ers Webzone",
+          "kind": "article",
+          "snippet": "49ers injury news: Kyle Shanahan shares updates on Christian McCaffrey, Nick Bosa 49ers Webzone",
+          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey takes encouraging injury step toward 49ers return at practice",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbTZjWnNMWmlsTlNJT2c0TTZORC1kQUpmaUhzU0pyaTAwQXZIRVktNU5QV0ZpODJsQ25GRmtJVmhLX0tkaTBKcERnNi05SjRRcXN3MGpuWUJnV2ZRaHVYNk4tdGtaT2lvaXNybnp0YXN1V3I4SFZGR2lXeUlCTkhzeDU0aWtKem00RFV1MEY2TVc4aTJ2OVdFaw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Christian McCaffrey takes encouraging injury step toward 49ers return at practice Yahoo Sports",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey Injury Update: What’s the Latest on the 49ers Superstar and Will He Play in Week 1?",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSWRSWUotZnRFNnhDbEdlUFBsWVZpcWlGTlF2ZVdKYmZoTkZXVVlRNXZWZkxpUGs4RmlDZG13cUZad1pxNUY1azlTSl9UbjQ1TmZnRXlkdWFKemJXVlZ5NFc4aDE1R0dzTzRNMDlMVE5vN0VNaGs4Zk8zOS1wd0VObW9YSzQ2VTc1QzBLOGR0YXVQQQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Christian McCaffrey Injury Update: What’s the Latest on the 49ers Superstar and Will He Play in Week 1? Yahoo Sports",
+          "published": "Wed, 02 Sep 2026 17:17:45 GMT"
+        },
+        {
+          "title": "San Francisco 49ers Receive Promising Christian McCaffrey Update Amid Injury Concern",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVkpBdE4xWEp2VGtMS25kT3piR0JKckRDbEJzQ21qcXVScldPcnVXSTZMR1lRY2ptWDJlNzNCTEY2RTB2dXZoYzEwVFJKVjF6Umw1OXlIc2VYZi1MN3dQQi1wS1lmWEF5ZWJ1dV9mU25nMzhrZ3l3d09PU19SNTRBVWU1Zlk4RzhUYzQ3cWJyTl9xZUJMTGtmQWJUWS13X05pNFRZZFpmNlZYaXVsNHhsbi1LYUlOdjdoQnpUWGQ0clp2UQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "San Francisco 49ers Receive Promising Christian McCaffrey Update Amid Injury Concern heavy.com",
+          "published": "Tue, 01 Sep 2026 20:18:12 GMT"
+        },
+        {
+          "title": "Christian McCaffrey Injury Update, Latest on 49ers' Star's Practice Status Ahead of 2026 NFL Season",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQb2RpaldYdjlFeEdpdFdObVRnZDBRejFqc2RkcEIwSHI1aFd5R0JIdmJrY3FOLThuMGZPbWhqMFRocXllcHE5QmRiM0IydkoxMUlfWVhvWmItR3VsVFprcHBlV3FiNnhoeFAwUzc0aldlaWwzVEpUUUJuTUM3cnJaWDBkeHVIZ2c1elVqOFBlZFlYREpPU3BCY2VNd1ZmMmxVUjJHNzBrT0VpYXdzeUJkdi1yNzExNTIwV3lYWll5MWUtOE93YVFxdHdSRUJZM2sx?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "Christian McCaffrey Injury Update, Latest on 49ers' Star's Practice Status Ahead of 2026 NFL Season Bleacher Report",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey takes encouraging injury step toward 49ers return at practice",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNDI5QkpEakltcmNXd3Y4WWFpTDY0bzB3X0c1RmRUWFJKaEhTVTlZSm5mX01jUmdvb2dtZ0Q2ejBHT1lPdHlTSGIzQjZTSWVKME9xMWJjdC1ZTnI4MWNmcjR6WElwTUZwYzgyQ3pYd1FMbG5URktkRjB3RWJDbEhNcXVEMWRkazB6cFdtTjhMLU5zZHpwLXFfMXNjelQ4eWVhdG15WFJRTHc?oc=5",
+          "publisher": "New York Post",
+          "kind": "article",
+          "snippet": "Christian McCaffrey takes encouraging injury step toward 49ers return at practice New York Post",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "San Francisco 49ers Receive Promising Christian McCaffrey Update Amid Injury Concern",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMnFqRmNpeVhEc05lUmlFTGJfWnA1UmZQbVFnLVI2OHJLWExzb0RqZVVJdzJBeURKckZYRUh5ZVNmbVJSN1FtSl9kQWxLVEhZcVlHTXppRjYzWnRDcjVPWExjSTFVYUxFeVN5d3E4blI3b0dlZ0hWMGpTaEJJdVNBekluX1lWazdZUDBBNTBVdw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "San Francisco 49ers Receive Promising Christian McCaffrey Update Amid Injury Concern Yahoo Sports",
+          "published": "Tue, 01 Sep 2026 23:09:38 GMT"
+        },
+        {
+          "title": "Christian McCaffrey injury update: Shanahan explains why RB's missing practice",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVEphMzR6Y0VheG5CN21Ddm9USS0wTFpFcmF5OG96TDNTY3I1NWlTWnVVVnduMlVOWmVmcXkyM2xkTVdSSmV5RzY4aGJOeEFNT1VfVUVUeE9HYmstNGJEVkJVLUhIVk1SZ3BndGU1VTU0NGdhUGhyZWJ3bGQ3Tk52dHlqTE5ZQnNTMk9ibERCUHNGcWpkTU1BQw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Christian McCaffrey injury update: Shanahan explains why RB's missing practice Yahoo Sports",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey tightness injury revealed to be true as other veteran RB released",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOT3RSRFBGTzdHOFVoMDdVOEhOOXNOVG4zSGNHc2tBUHpWeDlvQTFzZW1mOUFCVkNXNVl4UU1iMHVqbjAxRl9RbmtTQnZ4RUV3M0RtV2RxRjBDbmRnaVRrNFNXV1YtQm1JandhNlhnaDFwTHRCVlRNM3hWdW54aC11ZHd4N0pBbWRWYl9Ld2Nnbk1PZw?oc=5",
+          "publisher": "New York Post",
+          "kind": "article",
+          "snippet": "Christian McCaffrey tightness injury revealed to be true as other veteran RB released New York Post",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers RB Christian McCaffrey injury conspiracy shut down by Ian Rapoport",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQR0hRS2ktdmRBNWpkVWZ3bnBST0JLWTZ2TG9McWRrNlBTRnJHYnNYamxkazExakxqaDdOMHhvYVM3OU1GT2ZwVEI2ZHZ0Y1kwSHNtdFR6aWZOZmRIYzNicDBQWmc3cFQ1QVgzU3dxWjNIcHhFNGhOcW8xaFhncFBIanNxR2JKaEllcU90VmVKcXA4NmRaMnow?oc=5",
+          "publisher": "49ers Webzone",
+          "kind": "article",
+          "snippet": "49ers RB Christian McCaffrey injury conspiracy shut down by Ian Rapoport 49ers Webzone",
+          "published": "Tue, 18 Aug 2026 00:14:34 GMT"
+        },
+        {
+          "title": "49ers news: Christian McCaffrey makes 'fresh' admission after return from mystery injury",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNX2hIUUw0VGhLRThDUHNXeHBXV1gzN2RsSnM4bm1GSGlSa3lXVUZuVzRpOXNCc3R0WGF2NzZhYndxdUxSWXFDQlVZRW1vcnFBUkFud0h3Ml9xMVhBQlpqcVZEVHY3MFdXWTI1LUIyVk9nSFc4SWkxc056VUhYZ0lEZVJUcFlaUHhZMTByZEt3?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "49ers news: Christian McCaffrey makes 'fresh' admission after return from mystery injury Yahoo Sports",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers Receive Intriguing Christian McCaffrey Claim Amid Injury",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcGVLRXcyNWNfTXZpRnRFSE5ock5FcmUzR04wNUQ0T0JrM0RMZVJSaGRXSHVYd2VoNzJXRUtqcWM1Y0swbVktNTZRaW83VE1iSWRIWTlLOVFqY3Jic3BRV3JkeXdwMkJlMzExb2hid1oyWjUzMFFxUWdidk52VkV5Z3QzWWtiN2FybVpKajByd214ZHlyTzllUQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "49ers Receive Intriguing Christian McCaffrey Claim Amid Injury Yahoo Sports",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey Fantasy Prediction 2026: The Injury Risk Is Worth It at Pick 5",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNd1hhUWVCRmVBRTk4M2puXzRyOWNOTnJKTnZpVXI3eVpQd2VXZmYzSHdSSG9FZTJGUkJlMHhHMnB3NzJBZGQ3WXFQRFQ0VV9zMkpnTkdqRTBjVEFub1BQRnpoZzdvQmhDSTcwQWFVZG9lelY2d1hETGZ1T2NMVUhTRTRtZ2IxZmk0NGhLS2gtUVA?oc=5",
+          "publisher": "AOL.com",
+          "kind": "article",
+          "snippet": "Christian McCaffrey Fantasy Prediction 2026: The Injury Risk Is Worth It at Pick 5 AOL.com",
+          "published": "Sat, 05 Sep 2026 14:37:30 GMT"
+        },
+        {
+          "title": "NFL insiders suggest Christian McCaffrey is in contract dispute with 49ers",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTXhBcW1wOWlJOFI4RDVFTE1JX002OEwzYXVCZkNpbkdjaFhQVzkxSmQxQ0dfX0hUM19nZVdmdEhkbFY5UVhuby00NTk3V2l6LXhOQ0s3YmdGS19oSjFVWDN2WGQyRV9WaVlacjhHRTNyUGRwdGJGN0xiZEFwLW1ib1VrUXBBbnlBRkE?oc=5",
+          "publisher": "SFGATE",
+          "kind": "article",
+          "snippet": "NFL insiders suggest Christian McCaffrey is in contract dispute with 49ers SFGATE",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers RB Christian McCaffrey returned to practice Sunday | 'The NFL Report'",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWDdBcnQ2TENPRUd6U3liVzlXMzg4ZVIwc093YUtxUEsxd1llTmd3XzN3N0laeS0zYlVoS2Fvb1g1ajQ5TWhHVVFyX2h2Tm5YQXo4NlBWdXQxNnZ3RUNlSTNEODFFeGI4VHFzZU84TUNnZmJDei00TEFTc3VrLXltLTJxVlowMUtieVBPQ1FYZVVQQkRPcDBZRkUwZEV6VUk?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "49ers RB Christian McCaffrey returned to practice Sunday | 'The NFL Report' NFL.com",
+          "published": "Mon, 24 Aug 2026 23:49:45 GMT"
+        },
+        {
+          "title": "NFL Analyst Warns 49ers Amid Christian McCaffery’s Contract Delays",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQ1pVVWRINUlZQ2NoWTdEdENQWFFuUTFVZE94TkZkT1Q0TjJrM0hFSFlhVnBvWTFEV0NydkJac0VNZkFFNUxXblNjcnNidDNRaTY3bjlkXy1zN3dYaE1keFJOYTFvcTJlaXA4UEhfOG9vbEZUdkpHUjNMNERDaFJiOWRCcw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "NFL Analyst Warns 49ers Amid Christian McCaffery’s Contract Delays Yahoo Sports",
+          "published": "Thu, 27 Aug 2026 22:44:02 GMT"
+        },
+        {
+          "title": "49ers dismiss report of Christian McCaffrey ‘hold-in,’ as Kaelon Black impresses vs. Chargers",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZ2pkS0RQdldRc29acjFUTnRVSzc1bDVDMnRYNVA4eFBzR2RmajlQWUhFT2ZGd0tQdldfdlNwXzdXb3Z0YWN6WWNxd0hTVndSOFBLQ2lxcEh6bzdzWTlrOFZQcjVPWmlJVnZYRFhtQUpYTUZrRDNYTWhmMEs0ZE4tM3RKaEFOM2VaLUJOUDRzdGZJbnU0NTlrZnFhOVhjZVk?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "49ers dismiss report of Christian McCaffrey ‘hold-in,’ as Kaelon Black impresses vs. Chargers - The Athletic The New York Times",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NFL Rumors: Christian McCaffrey Contract Holdout Underway?",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTGstb3k3VEdEdWR6LVZWbXdOTEpoWnp2Yko2YXBYcUVtRV9ma3h3TkdZS3lTaHM0cnNzNEN3ZG94amRUeHVWNUxsRUloT1Z5ZXpMQzF6TWRRY0lRaW4wd2Y5TkRIVURURjNHRThlRzFYRlRBRUVxWlZjb2FONGI0dG9JOXptWG1iUlJWdXprTWJQQQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "NFL Rumors: Christian McCaffrey Contract Holdout Underway? Yahoo Sports",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers confirm ominous ‘tightness’ for Christian McCaffrey",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZnc1cU1IUnVrZVdMOHVjRTdHNjhNLUc1MFlyUENCZExUN0JXT0dSZG9USHhpek8tbUVPa2c0dy1TcGViVW15cURoZXkteXVCN1BxVzFnSmRiTmhuandMUkE1dmRJWlNwQm4wdTU4aVpQbWl2MjEzUWtwYW1sb09rc2ZXV1ZLa2FfR3dSdV9obVBnRDBf?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "49ers confirm ominous ‘tightness’ for Christian McCaffrey Yahoo Sports",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "San Francisco 49ers Announce Christian McCaffrey News After Final Preseason Game",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZUp2YUlXa3lsN25HNFVSQVRSZ0E4QUwtX3FMNHp6QV9UMXBkX3hlczVSMjNrTXBRMC0zX2NfU0pQNFlJSktEQjlodmlweFlfSmJjLVhYZEdVeUc0Q3ZmeHpoTVZtaXJsWVpJRVVuNUlLa1VOQzVydjljeXJiLXMtbnY3ZERfQkZuMjV0X2tZZWU?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "San Francisco 49ers Announce Christian McCaffrey News After Final Preseason Game Yahoo Sports",
+          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "What injury does Christian McCaffrey have? 49ers RB still not practicing",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNc0xLVjFMbU9xcUdWYVpKdGJ4d1pBY3hSOG1HcXI4bkk5M3JMTHdhRVpjcHBhelVMQ3BCWm1jcWpEcE1vOWFfWFJWSU9XYmtWVmFhT0lBYldydWNHTTFTMy1aSlZQX2dsYVRYcTZnNU1yUVo4VUZLZ0NMLUNfaEVNdGU3bGRndmJqTEt2SEF6TkZyWFZyOVZRYkg4LUpTcTdlRHVDbi1aONIBuwFBVV95cUxPUjB6c1pwLV9xN0JBcGo0ZkMyV3gyYW43aWpweU16NVdQZmpZUlJXNmZSM01OSFVKb0NvYWl0M2RhV1ZUV3lmZG0xX0ZRQ05UQ2lhS3VjZFFXZUdnR0phc0ZDcVFseGJDUk1RWllfX3Q3OTF1cG5Eb3RDakVRUXRLYlhNdHZuY2FWQW9vXzVVUEFtX0kxdnhyUC1hdFoyTnRIN0ltT3F6LUZHaXc5ZmE2RHRRWFZUemlhWkRJ?oc=5",
+          "publisher": "Diario AS",
+          "kind": "article",
+          "snippet": "What injury does Christian McCaffrey have? 49ers RB still not practicing Diario AS",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers Star Christian McCaffrey Makes Personal Announcement Before NFL Season",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb1oyYUtEa25lSUI5YVV6aG15b09YbFp0cnZReWFvZDUwdHh4RnFVUWRYNnBLQTc4M3owRHU5LXR1Tno4WTBEUnZyT1B4U3E1LXZCR2NRUFd1TjNPQ1VNalpia3YzNVc4M2FjR2loMVltR2cycWk4UEhON2VtZlFVd0hkNU9NMkhBOUVTcV93?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "49ers Star Christian McCaffrey Makes Personal Announcement Before NFL Season Yahoo Sports",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kyle Shanahan: Christian McCaffrey’s absence is not contract-related",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWkZubGFPZ3NOaEhESWYtZXBobHFETnVOTzBka0V5VXlzdEZqVVZQYmhMU0VpaGlENVVtcmV0MzlDcllWOWhMeEh4Sk01ZTk1cDRNdklYUnphUEpfbGZfOHBvcEVRRDRwZWVJREgwNG0tNHd2UVBxTS04OUQyLTFyd0l4NEc5OV9BbkpUS1hfalVIY05tVkNmQXNrYlFqbGN0QklqOWdKaDBTVllJcy1YTDlNM3E3T0tNOGI0NGUwV2REWlN6aG9z?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Kyle Shanahan: Christian McCaffrey’s absence is not contract-related NBC Sports",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey Says Missing 49ers Practice was 'Part of the Plan' amid Injury, Contract Rumors",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSU9jYWFlS3prODRlYmxDTkVUUWJuNEZvRU8xNlBpZkFublhOaVhRVnowSkE2WkdQdDlsbUJKaTdhMUN3U3gtaXQ2NmpRTDRLMDlZMnhoZkdHWVoxWEItZFJvcTVUMmdYNldKRHRZVGJqM1ZmRlRhcndrMjdJTmhrN0Y0MzE1Yk9IS3haQkplRmMxaUlxaXpJQS1MaVdlME1nVlV4RFVtQTgxd2pHdmcteERHZXUyQmJta1h6MWxvTzJzVzUtRGpITjJHSXc2QWM?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "Christian McCaffrey Says Missing 49ers Practice was 'Part of the Plan' amid Injury, Contract Rumors Bleacher Report",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "New Christian McCaffrey Injury Update Given By Kyle Shanahan Amid RB's Absence From 49ers Practice",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNMHIxT1c3RHpYcDJJMnJmUC1UZ1JocVVwZUkxdU5lWnlHR1gzXzMteGFKelAwM1lQX200aTN0VF85MDBZbkZBOGo2MkxLd1lXaTJkazRCaFZ5amRlZ0d3QXV4S04yZWpDVzEwRkN6Z0xrUmlzNGxvYjVLUW9ZLW8zZEExX2swbWUxUW15Y2hrLW5uWGl1dEFDQXhOYk5xMUF6bGVzWDcxSGJ1c2lXejZpckp5MWE2VXN6ZzZxZjhFVEh4U09UdjdTa21mRDZqMEk?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "New Christian McCaffrey Injury Update Given By Kyle Shanahan Amid RB's Absence From 49ers Practice Bleacher Report",
+          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers Remove George Kittle From PUP List, Christian McCaffrey Returns To Practice",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTlFETHZaZUlEMm5ON01uVGVVU1J0WGFiU0EwTWZJRk5FQ3ZQWUhJeUQxWW12eFRBMDlsbmRueGpGcGpXZ3pVcGhuVDNEMjFGUTAwZG5HMi1iYXJCWmJUdGoybWlTNUg5VFMwQ1A5clNBVTVBSkpkeHItcV9GWjNhMGo0VzlUc3pKVVlCZjRLajV0NEZ0VUZ5Ty1qWGU3SVhBeUdyM3hGaG0wcXdTa2hYLU51M2NRQQ?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "49ers Remove George Kittle From PUP List, Christian McCaffrey Returns To Practice FOX Sports",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers Sign Running Back Zamir White Amid Christian McCaffrey Injury",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWi13MGtobWZrQnVzOTlIX0xnYklVakdBSmF5SW1OVEJXNHpzc3M1dHdCUjBEaFU2SVNyQ1V0TmZpOFI3NzFKMlYzWnFUZG1XLUswWFZhQzBsakg2NUU5djdRdDRYMHFQVHFNbkJaVWdldnlQTjQtVlRuNVZ0cHhLRkVOQTI?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "49ers Sign Running Back Zamir White Amid Christian McCaffrey Injury Yahoo Sports",
+          "published": "Wed, 12 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey addresses injury ‘tightness’ after missing weeks of practice",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbTZTNEhZT0hDTm9SV0IycjFPY0hHOGpNUWVyYkRWZWppY2Y5SGprdlk5amo0Q1JsMlNsVUdpNkpYVkd0N21PMUVaTm5KcnlLMnNhYlNxemRmZDZleU9UbkV2cDN3NzVZWVhpQXNzeDJ1RC1zVHlaN0VSX1JyY2FfazlUa1JVcDVxQURtcll3WnRrNXNLbUFqWmNObw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Christian McCaffrey addresses injury ‘tightness’ after missing weeks of practice Yahoo Sports",
+          "published": "Mon, 24 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kyle Shanahan Addresses Concerns Over Christian McCaffrey",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQXzFEb0lRR2JxeTJJSDJVbnBldEtHVWlWRGZwSndzbUVhSUR2QXRra3VVLVdUMklpbkRCbERvMktILXJqUmVsSUZaajI0Z0FxeXdqTTB0Q0Y2bG5SVC15NWFQMG1Zb2NIWWFrWHBrOGh4OEpVTHUwZUdXa090T3BxM0FyZGlaWnE3cXVwYg?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Kyle Shanahan Addresses Concerns Over Christian McCaffrey Yahoo Sports",
+          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey missing practice not a concern for Kyle Shanahan, 49ers",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTlhuZzlhbThKOWhmNVpmbzk1d3UydHNqZ3RVeUljZ0pyR2ZOZlhaVXNEZUhrcXpwM0xoWGpyeW9VMmxGTUN0WGV5cjBnSHdyNVdMS2lvRERzal9nc28zbUNYTy01ekJOcHBFMnlaWEJtRjVDYzFrT0hQNFU5ZTA3elNwazZDV1RsSnZ6NXo5cHUyckU?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Christian McCaffrey missing practice not a concern for Kyle Shanahan, 49ers Yahoo Sports",
+          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "San Francisco 49ers Star Christian McCaffrey Gives Encouraging Injury Update",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQ3Y4RllxVTVMZWZMVXJwZEVuaFdVSHltRUU2ZzhrX1Q1c3RwZ0VpZW5CRmlwcEEzbE1lX1pXTFdUbjBFNWVJODU5cnVhY0xHbVFKSGZVenJ5MlJvd3prZUVROWVUWnhYMGlkM1F5YjVzblR4S0loRDhUeVppVGI0Y0F5YXJxR09rOXBLemNsS0xjUQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "San Francisco 49ers Star Christian McCaffrey Gives Encouraging Injury Update heavy.com",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Christian McCaffrey, George Kittle provide ‘energy' in return to 49ers practice",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNVFGTEJNaXBYX25SYVpJT1NQTkxNT25ULS1IUll4QndGOFp3QjJmY0RNNi1kc0FqUHhuLXFyS1llOGxOQkJycWJwZEVVY3dnWG9PRHFOZktCQTJGM3F2NHZPemhjMURDVWNhNnV2ek5TZVhYZjNUUlExT05qajl1TDRPUi14WTFRanczM3AtWU5JR0U3ZjhBOTV3SzZsT0dOOWFQTzVObkNMeVdFdFdCeXN2VGZWd9IBvgFBVV95cUxPNmhPN1ZxRkhJeThsYWFzU2RBaHEwZk00N05GRG52SHJxMWtUTzNVUXhEWE16M3V5RVZUYUdYNDdLTnVwcFlReVNYYkZjTlZiNzlGS1J5M2NUTmhIMHVJSFZIRjhCMjdEWVpqSmsxalk0U20zUGdscHhhUVpxYXhRNF9YVldLeVJmeWZsOU5HM3R2Sm9peU9MZW4tMlV0RFUyTlRzeUZkQXlmbU9iREtVVnpmSEZBODU0SVhMSnhn?oc=5",
+          "publisher": "NBC Sports Bay Area & California",
+          "kind": "article",
+          "snippet": "Christian McCaffrey, George Kittle provide ‘energy' in return to 49ers practice NBC Sports Bay Area & California",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "49ers player gets cut after flying 16 hours to Australia: Why he might be sent home and why they made the move",
+          "url": "https://www.cbssports.com/nfl/news/49ers-player-gets-cut-after-flying-16-hours-to-australia/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "San Francisco made room for long snapper Jon Weeks ahead of the opener in Melbourne, a move that could signal George Kittle is ready to return from an Achilles tear.",
+          "published": "Sun, 06 Sep 2026 15:22:23 +0000"
+        },
+        {
+          "title": "Fantasy football injuries: Updates on Ja'Marr Chase, Patrick Mahomes, George Kittle and more",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdVlNSTVWbVhDdjI5aUdxX3dYS2xlMmptbFk3NUc0LUctdGh3X3Zsd1pKUWE5eEw3NjR5U2NpSXIwYkc5WVBxUmxWYVNBNHRkUmhRMGpsdkNRYVNPOU9oVERZVWswbnAzQlJFUkpYMjJ0ZmZ1bWVZOUZnbjJCRndHdWo4MVFPNHpsWklacDlLVVplQjRLQ2xkaXhUeVVpcF9Xekg0dGlKc0U1c3JiZE9yZUZDTTRacEZOZnNB?oc=5",
+          "publisher": "PhillyVoice",
+          "kind": "article",
+          "snippet": "Fantasy football injuries: Updates on Ja'Marr Chase, Patrick Mahomes, George Kittle and more PhillyVoice",
+          "published": "Sat, 05 Sep 2026 15:03:12 GMT"
+        }
+      ]
+    },
     {
       "id": "patriots-practice-treveyon-henderson-remains-sidelined-seattle-prep-2a8b28dc",
       "slug": "patriots-practice-treveyon-henderson-remains-sidelined-seattle-prep-2a8b28dc",
@@ -637,8 +1039,8 @@
       "slug": "ja-marr-chase-doesn-t-practice-wednesday-4f75b620",
       "sport": "football",
       "headline": "NFL Week 6 Fantasy Football Injury Report: Latest news and updates on Ja'Marr Chase, Kyler Murray, more",
-      "blurb": "Ja'Marr Chase \"good\" after injury scare at Bengals practice https://t.co/bil8SXmfqS x.com",
-      "summary": "Ja'Marr Chase \"good\" after injury scare at Bengals practice https://t.co/bil8SXmfqS x.com NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News FOX Sports Chase (knee) was present at Wednesday's practice but not suited up, Gabi Sorrentino of Fox 19 Cincinnati reports. Aggregated from x.com, FOX Sports, RotoWire NFL, Fantasy Footballers Podcast, CBS Sports and 15 more.",
+      "blurb": "Injury Report: George Kittle, Ashton Jeanty, Ja’Marr Chase, & More!",
+      "summary": "Ja'Marr Chase, Ashton Jeanty, George Kittle, Patrick Mahomes, Lamar Jackson, Malik Nabers, Darnell Mooney, TreVeyon Henderson, Luther Burden III, Tee Higgins, Kenneth Walker III, Kyler Murray, Amon-Ra St. Brown, Shedeur Sanders and Alec Pierce: Injury Report: George Kittle, Ashton Jeanty, Ja’Marr Chase, & More! 2026 Fantasy Football Advice YouTube Chase (knee) was present at Wednesday's practice but not suited up, Gabi Sorrentino of Fox 19 Cincinnati reports. Aggregated from YouTube, RotoWire NFL, Fantasy Footballers Podcast, CBS Sports, x.com and 15 more.",
       "category": "injury",
       "published": "2025-10-11T07:00:00Z",
       "updated": "2026-09-05T15:03:12Z",
@@ -649,6 +1051,20 @@
           "slug": "jamarr-chase",
           "pos": "WR",
           "team": "CIN"
+        },
+        {
+          "key": "ashton jeanty",
+          "name": "Ashton Jeanty",
+          "slug": "ashton-jeanty",
+          "pos": "RB",
+          "team": "LV"
+        },
+        {
+          "key": "george kittle",
+          "name": "George Kittle",
+          "slug": "george-kittle",
+          "pos": "TE",
+          "team": "SF"
         },
         {
           "key": "patrick mahomes",
@@ -677,20 +1093,6 @@
           "slug": "darnell-mooney",
           "pos": "WR",
           "team": "NYG"
-        },
-        {
-          "key": "ashton jeanty",
-          "name": "Ashton Jeanty",
-          "slug": "ashton-jeanty",
-          "pos": "RB",
-          "team": "LV"
-        },
-        {
-          "key": "george kittle",
-          "name": "George Kittle",
-          "slug": "george-kittle",
-          "pos": "TE",
-          "team": "SF"
         },
         {
           "key": "treveyon henderson",
@@ -2088,378 +2490,6 @@
       ]
     },
     {
-      "id": "49ers-christian-mccaffrey-s-absence-joint-practice-gets-c76f7c88",
-      "slug": "49ers-christian-mccaffrey-s-absence-joint-practice-gets-c76f7c88",
-      "sport": "football",
-      "headline": "Christian McCaffrey Injury Update: What’s the Latest on the 49ers Superstar and Will He Play in Week 1?",
-      "blurb": "New Christian McCaffrey Injury Update Given By Kyle Shanahan Amid RB's Absence From 49ers Practice Bleacher Report",
-      "summary": "New Christian McCaffrey Injury Update Given By Kyle Shanahan Amid RB's Absence From 49ers Practice Bleacher Report 49ers Remove George Kittle From PUP List, Christian McCaffrey Returns To Practice FOX Sports 49ers Sign Running Back Zamir White Amid Christian McCaffrey Injury Yahoo Sports Aggregated from Bleacher Report, FOX Sports, Yahoo Sports, heavy.com, NBC Sports Bay Area & California and 11 more.",
-      "category": "injury",
-      "published": "2026-08-10T07:00:00Z",
-      "updated": "2026-09-05T14:37:30Z",
-      "players": [
-        {
-          "key": "christian mccaffrey",
-          "name": "Christian McCaffrey",
-          "slug": "christian-mccaffrey",
-          "pos": "RB",
-          "team": "SF"
-        },
-        {
-          "key": "george kittle",
-          "name": "George Kittle",
-          "slug": "george-kittle",
-          "pos": "TE",
-          "team": "SF"
-        },
-        {
-          "key": "kaelon black",
-          "name": "Kaelon Black",
-          "slug": "kaelon-black",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "49ers coach explains Christian McCaffrey’s absence, shares positive news on other RBs",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPd0hRakZQTjM0OEt3U3c3RkwydnNiWWN5ZTVJWUE5X1hQRlF3Ql9GcXhmNkQzbHNxdTJBUGE5TnotM2FyUjB3UW9aQ3VDeHB0Y2hLTW00eFFUZ0R6Y3NWYjUta2x3V0JRTXM2eWo5Y2tNS0ZUU2ppczhfbVlkRVJocjMtbVBqb2JCYnFzRTdNaFZnNmttYlNn?oc=5",
-          "publisher": "49ers Webzone",
-          "kind": "article",
-          "snippet": "49ers coach explains Christian McCaffrey’s absence, shares positive news on other RBs 49ers Webzone",
-          "published": "Thu, 03 Sep 2026 12:10:01 GMT"
-        },
-        {
-          "title": "49ers Fans Shouldn't Worry About Christian McCaffrey's Recent Absence From Practice",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeXpka2U2QXJGMktRcDZBWHQxVmdjeENnS21yUXphTmdwUUtXUXlBOEQ2ZU8zME0yaGJzV0hHVnphWHJONFYwT2NCYWRmM2tkV29PZGNFWE5FZk82WVFRRFg5REpSVkw5RnRXRmluRjYyMHhPd3BEbDhHV2xaOVdsUVRCc2hNTzBaQU5sbA?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "49ers Fans Shouldn't Worry About Christian McCaffrey's Recent Absence From Practice Yahoo Sports",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers coach gives positive update on RB Christian McCaffrey",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNX2RsbFFBVXUxXy1VcDhEclRjc2RXcnFwbmhNVkIzNS1XNzM1OWdnMWxjcVhpMWlmOXA4NXlIeVMtaUhscVFnby1nYlg1Z2tpMzVBbmwtakJKVDd4Z3ItY1l1TXdyYXAyNE9PNmRCN09hbHVIT0xiV3RzVzlGQTlFR3FkNUJCblFNUWxpUm9EcVUzeFUwa1lkTHpZYU9lLVJIRXhGYm5TS0E1aFdEaVNmcEFWZE5CN216M3JfTVRZbw?oc=5",
-          "publisher": "ninerswire.usatoday.com",
-          "kind": "article",
-          "snippet": "49ers coach gives positive update on RB Christian McCaffrey ninerswire.usatoday.com",
-          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdFA2THJpWk1pRV84T1FGZU5IbFVzSl9KMTlVa0lfekFQYnNpRzYxT21rWFFtSVVUNmxxVlRsMlY0a2tEQVNGXzUxY2Y3a0lYc29tVkQzRVRLNUdMR3JBblVOMjBwa2U3QW50akRTWGdsdVBUUUZxMUFDQnJKM05QelhqQlNUZVNUQmNtNEhCWWo1Zw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays Yahoo Sports",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers news: Christian McCaffrey's absence from joint practice gets Kyle Shanahan update",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRmVpNnRwS3dmQTB5OU9mTmdzMU1kb1dQREloX0Q2Nk1fWDRkNXdLQ0ZOR1hKQmJZN3NiajJJVU1HOEY3d3luR2xBLXp4dFN5LUU4SnpEUjhMS2ItcDcwWnFqMktrT3ZaalZMbjBuOTcwckxGRklGcFVaUS1rTGVzdUhNWXFIUk1sWjZRb1JzWjk4Zw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "49ers news: Christian McCaffrey's absence from joint practice gets Kyle Shanahan update Yahoo Sports",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5NRFdoZWtPcVRrc0VMZHVZVmczMU9uRVl5aW1JY2NMa2pVRUFUcmxkQ2dMLVQ3UFNBdDhDSVIwaE15WXBTNmFYN1lkLUxYX09XNXVtaGpyYTRYdHZEQ1BmVFBybmNCamxOOGxBMkFuLXltbEhTVGJmSi1EYkI?oc=5",
-          "publisher": "The Big Lead",
-          "kind": "article",
-          "snippet": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays The Big Lead",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey misses 49ers training camp practice ahead of joint session",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaGlyM1J4b0tBTTZsQ1RrUmFlZ3ZIZDNqdXZZMkZqTUFCdHc5VmpRZXhMVVZwUjFEM3JrNjVFV0ZSYzUyRktvaHJ0MWlwSnVhNUdCWmhXMGtRMkl5VGtwcl9PcDFzOTN2NWw5QU5VVHlrV2NqVVhGT1plaVJFUnI4bHlqN2RYeVBtZmpLUkloU0QyRFg5?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Christian McCaffrey misses 49ers training camp practice ahead of joint session Yahoo Sports",
-          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers All-Pro Nick Bosa dealing with tendinitis in surgically repaired right knee; Christian McCaffrey misses another practice",
-          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPdktMODRxWmN2Mmx3MWttdVhfZEtaWHBsczRyWVh2NkprbXFfTlBBbGdjZ1BUZWhIWkNReGU0MmJtOGJWbDlLcFpwSE1WWldieGJSVmd2MUlreWdaMkplVzExcU9DZUZJdHhIaGktbVM2VjJvTW8tVUNPOG52UWxJNGtyQkY5bkR1ZUJNQnd6T3dTZmFmNDVNLUotSDFCeVNzOXlfbnpXd0dFeTRnb25YT0pZUmExT2h5ZUlQVFYxY0hIZHV4YWNudVpSTUJjaE1fSE4zaWZkOExIX2trMFV2bzVSbGQ2LTZDOHBrRHJ0dWhLYVI4LVc1RU1Mc1FIQW4zYXJaZXFPX00?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "49ers All-Pro Nick Bosa dealing with tendinitis in surgically repaired right knee; Christian McCaffrey misses another practice Yahoo Sports",
-          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "“I Am Sick and Tired”: Radio Host Goes on Fiery Rant Over 49ers Injury Issues as Christian McCaffrey & Nick Bosa Miss Practice",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1LQnJXVlQwd19SNXh1MzBydGhsOWNXdVBwVHVPMDVnV2lIcm11YlVJVFFRbmU2b2tkRjFXTktsUnkzdXdlX3dQMUJGNVVjaWRnSmNzeTNqVmhOSUY1U20wUTZsWkJSQlU1OWhMd18wREpmdmxkSmQwbHllT21BUQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "“I Am Sick and Tired”: Radio Host Goes on Fiery Rant Over 49ers Injury Issues as Christian McCaffrey & Nick Bosa Miss Practice Yahoo Sports",
-          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey Fantasy Football Injury Update: Is CMC Healthy Ahead of Week 1?",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSGVfRWd4MGdwUHdDR2xSR0lMd3F5N2luNE5nWVBZc3FjWlpYaHBQUnlYai1IYzlYUnJna3RJNkJDRVA0ZUpsbTVRMFJXbGxWOXlFVk81em9aM2RTWWlxMUU4NUJlQmViSGQtdjFlaGVnWTVva09SQmtmR2pfcnVtQ2RzaWlYZF9fSGI5OHhRalJ1LV92VUpJ?oc=5",
-          "publisher": "Complex",
-          "kind": "article",
-          "snippet": "Christian McCaffrey Fantasy Football Injury Update: Is CMC Healthy Ahead of Week 1? Complex",
-          "published": "Fri, 04 Sep 2026 18:06:15 GMT"
-        },
-        {
-          "title": "49ers injury news: Kyle Shanahan shares updates on Christian McCaffrey, Nick Bosa",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQllPTUF1d01FcEhXU0lKWDVFY2ZST3p0VTN6LXJZTUlLdkZ3c3ZhbHpLSUdnMVhadjRDdTBvTFFrdEZ4aTJacm9sSUtsOGF6aHR4a2pzSWM2d3NOUy1sUDZ6T2VJeVNwaVNCNndjeTFTQ2FORTBTaWxWcWVUc3hBeFFwX1VrSGVkZ1k4Wm1BT0Q3bjQ?oc=5",
-          "publisher": "49ers Webzone",
-          "kind": "article",
-          "snippet": "49ers injury news: Kyle Shanahan shares updates on Christian McCaffrey, Nick Bosa 49ers Webzone",
-          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey takes encouraging injury step toward 49ers return at practice",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbTZjWnNMWmlsTlNJT2c0TTZORC1kQUpmaUhzU0pyaTAwQXZIRVktNU5QV0ZpODJsQ25GRmtJVmhLX0tkaTBKcERnNi05SjRRcXN3MGpuWUJnV2ZRaHVYNk4tdGtaT2lvaXNybnp0YXN1V3I4SFZGR2lXeUlCTkhzeDU0aWtKem00RFV1MEY2TVc4aTJ2OVdFaw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Christian McCaffrey takes encouraging injury step toward 49ers return at practice Yahoo Sports",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey Injury Update: What’s the Latest on the 49ers Superstar and Will He Play in Week 1?",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSWRSWUotZnRFNnhDbEdlUFBsWVZpcWlGTlF2ZVdKYmZoTkZXVVlRNXZWZkxpUGs4RmlDZG13cUZad1pxNUY1azlTSl9UbjQ1TmZnRXlkdWFKemJXVlZ5NFc4aDE1R0dzTzRNMDlMVE5vN0VNaGs4Zk8zOS1wd0VObW9YSzQ2VTc1QzBLOGR0YXVQQQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Christian McCaffrey Injury Update: What’s the Latest on the 49ers Superstar and Will He Play in Week 1? Yahoo Sports",
-          "published": "Wed, 02 Sep 2026 17:17:45 GMT"
-        },
-        {
-          "title": "San Francisco 49ers Receive Promising Christian McCaffrey Update Amid Injury Concern",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVkpBdE4xWEp2VGtMS25kT3piR0JKckRDbEJzQ21qcXVScldPcnVXSTZMR1lRY2ptWDJlNzNCTEY2RTB2dXZoYzEwVFJKVjF6Umw1OXlIc2VYZi1MN3dQQi1wS1lmWEF5ZWJ1dV9mU25nMzhrZ3l3d09PU19SNTRBVWU1Zlk4RzhUYzQ3cWJyTl9xZUJMTGtmQWJUWS13X05pNFRZZFpmNlZYaXVsNHhsbi1LYUlOdjdoQnpUWGQ0clp2UQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "San Francisco 49ers Receive Promising Christian McCaffrey Update Amid Injury Concern heavy.com",
-          "published": "Tue, 01 Sep 2026 20:18:12 GMT"
-        },
-        {
-          "title": "Christian McCaffrey Injury Update, Latest on 49ers' Star's Practice Status Ahead of 2026 NFL Season",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQb2RpaldYdjlFeEdpdFdObVRnZDBRejFqc2RkcEIwSHI1aFd5R0JIdmJrY3FOLThuMGZPbWhqMFRocXllcHE5QmRiM0IydkoxMUlfWVhvWmItR3VsVFprcHBlV3FiNnhoeFAwUzc0aldlaWwzVEpUUUJuTUM3cnJaWDBkeHVIZ2c1elVqOFBlZFlYREpPU3BCY2VNd1ZmMmxVUjJHNzBrT0VpYXdzeUJkdi1yNzExNTIwV3lYWll5MWUtOE93YVFxdHdSRUJZM2sx?oc=5",
-          "publisher": "Bleacher Report",
-          "kind": "article",
-          "snippet": "Christian McCaffrey Injury Update, Latest on 49ers' Star's Practice Status Ahead of 2026 NFL Season Bleacher Report",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey takes encouraging injury step toward 49ers return at practice",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNDI5QkpEakltcmNXd3Y4WWFpTDY0bzB3X0c1RmRUWFJKaEhTVTlZSm5mX01jUmdvb2dtZ0Q2ejBHT1lPdHlTSGIzQjZTSWVKME9xMWJjdC1ZTnI4MWNmcjR6WElwTUZwYzgyQ3pYd1FMbG5URktkRjB3RWJDbEhNcXVEMWRkazB6cFdtTjhMLU5zZHpwLXFfMXNjelQ4eWVhdG15WFJRTHc?oc=5",
-          "publisher": "New York Post",
-          "kind": "article",
-          "snippet": "Christian McCaffrey takes encouraging injury step toward 49ers return at practice New York Post",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "San Francisco 49ers Receive Promising Christian McCaffrey Update Amid Injury Concern",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMnFqRmNpeVhEc05lUmlFTGJfWnA1UmZQbVFnLVI2OHJLWExzb0RqZVVJdzJBeURKckZYRUh5ZVNmbVJSN1FtSl9kQWxLVEhZcVlHTXppRjYzWnRDcjVPWExjSTFVYUxFeVN5d3E4blI3b0dlZ0hWMGpTaEJJdVNBekluX1lWazdZUDBBNTBVdw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "San Francisco 49ers Receive Promising Christian McCaffrey Update Amid Injury Concern Yahoo Sports",
-          "published": "Tue, 01 Sep 2026 23:09:38 GMT"
-        },
-        {
-          "title": "Christian McCaffrey injury update: Shanahan explains why RB's missing practice",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVEphMzR6Y0VheG5CN21Ddm9USS0wTFpFcmF5OG96TDNTY3I1NWlTWnVVVnduMlVOWmVmcXkyM2xkTVdSSmV5RzY4aGJOeEFNT1VfVUVUeE9HYmstNGJEVkJVLUhIVk1SZ3BndGU1VTU0NGdhUGhyZWJ3bGQ3Tk52dHlqTE5ZQnNTMk9ibERCUHNGcWpkTU1BQw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Christian McCaffrey injury update: Shanahan explains why RB's missing practice Yahoo Sports",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey tightness injury revealed to be true as other veteran RB released",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOT3RSRFBGTzdHOFVoMDdVOEhOOXNOVG4zSGNHc2tBUHpWeDlvQTFzZW1mOUFCVkNXNVl4UU1iMHVqbjAxRl9RbmtTQnZ4RUV3M0RtV2RxRjBDbmRnaVRrNFNXV1YtQm1JandhNlhnaDFwTHRCVlRNM3hWdW54aC11ZHd4N0pBbWRWYl9Ld2Nnbk1PZw?oc=5",
-          "publisher": "New York Post",
-          "kind": "article",
-          "snippet": "Christian McCaffrey tightness injury revealed to be true as other veteran RB released New York Post",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers RB Christian McCaffrey injury conspiracy shut down by Ian Rapoport",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQR0hRS2ktdmRBNWpkVWZ3bnBST0JLWTZ2TG9McWRrNlBTRnJHYnNYamxkazExakxqaDdOMHhvYVM3OU1GT2ZwVEI2ZHZ0Y1kwSHNtdFR6aWZOZmRIYzNicDBQWmc3cFQ1QVgzU3dxWjNIcHhFNGhOcW8xaFhncFBIanNxR2JKaEllcU90VmVKcXA4NmRaMnow?oc=5",
-          "publisher": "49ers Webzone",
-          "kind": "article",
-          "snippet": "49ers RB Christian McCaffrey injury conspiracy shut down by Ian Rapoport 49ers Webzone",
-          "published": "Tue, 18 Aug 2026 00:14:34 GMT"
-        },
-        {
-          "title": "49ers news: Christian McCaffrey makes 'fresh' admission after return from mystery injury",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNX2hIUUw0VGhLRThDUHNXeHBXV1gzN2RsSnM4bm1GSGlSa3lXVUZuVzRpOXNCc3R0WGF2NzZhYndxdUxSWXFDQlVZRW1vcnFBUkFud0h3Ml9xMVhBQlpqcVZEVHY3MFdXWTI1LUIyVk9nSFc4SWkxc056VUhYZ0lEZVJUcFlaUHhZMTByZEt3?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "49ers news: Christian McCaffrey makes 'fresh' admission after return from mystery injury Yahoo Sports",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers Receive Intriguing Christian McCaffrey Claim Amid Injury",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcGVLRXcyNWNfTXZpRnRFSE5ock5FcmUzR04wNUQ0T0JrM0RMZVJSaGRXSHVYd2VoNzJXRUtqcWM1Y0swbVktNTZRaW83VE1iSWRIWTlLOVFqY3Jic3BRV3JkeXdwMkJlMzExb2hid1oyWjUzMFFxUWdidk52VkV5Z3QzWWtiN2FybVpKajByd214ZHlyTzllUQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "49ers Receive Intriguing Christian McCaffrey Claim Amid Injury Yahoo Sports",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey Fantasy Prediction 2026: The Injury Risk Is Worth It at Pick 5",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNd1hhUWVCRmVBRTk4M2puXzRyOWNOTnJKTnZpVXI3eVpQd2VXZmYzSHdSSG9FZTJGUkJlMHhHMnB3NzJBZGQ3WXFQRFQ0VV9zMkpnTkdqRTBjVEFub1BQRnpoZzdvQmhDSTcwQWFVZG9lelY2d1hETGZ1T2NMVUhTRTRtZ2IxZmk0NGhLS2gtUVA?oc=5",
-          "publisher": "AOL.com",
-          "kind": "article",
-          "snippet": "Christian McCaffrey Fantasy Prediction 2026: The Injury Risk Is Worth It at Pick 5 AOL.com",
-          "published": "Sat, 05 Sep 2026 14:37:30 GMT"
-        },
-        {
-          "title": "NFL insiders suggest Christian McCaffrey is in contract dispute with 49ers",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTXhBcW1wOWlJOFI4RDVFTE1JX002OEwzYXVCZkNpbkdjaFhQVzkxSmQxQ0dfX0hUM19nZVdmdEhkbFY5UVhuby00NTk3V2l6LXhOQ0s3YmdGS19oSjFVWDN2WGQyRV9WaVlacjhHRTNyUGRwdGJGN0xiZEFwLW1ib1VrUXBBbnlBRkE?oc=5",
-          "publisher": "SFGATE",
-          "kind": "article",
-          "snippet": "NFL insiders suggest Christian McCaffrey is in contract dispute with 49ers SFGATE",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers RB Christian McCaffrey returned to practice Sunday | 'The NFL Report'",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWDdBcnQ2TENPRUd6U3liVzlXMzg4ZVIwc093YUtxUEsxd1llTmd3XzN3N0laeS0zYlVoS2Fvb1g1ajQ5TWhHVVFyX2h2Tm5YQXo4NlBWdXQxNnZ3RUNlSTNEODFFeGI4VHFzZU84TUNnZmJDei00TEFTc3VrLXltLTJxVlowMUtieVBPQ1FYZVVQQkRPcDBZRkUwZEV6VUk?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "49ers RB Christian McCaffrey returned to practice Sunday | 'The NFL Report' NFL.com",
-          "published": "Mon, 24 Aug 2026 23:49:45 GMT"
-        },
-        {
-          "title": "NFL Analyst Warns 49ers Amid Christian McCaffery’s Contract Delays",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQ1pVVWRINUlZQ2NoWTdEdENQWFFuUTFVZE94TkZkT1Q0TjJrM0hFSFlhVnBvWTFEV0NydkJac0VNZkFFNUxXblNjcnNidDNRaTY3bjlkXy1zN3dYaE1keFJOYTFvcTJlaXA4UEhfOG9vbEZUdkpHUjNMNERDaFJiOWRCcw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "NFL Analyst Warns 49ers Amid Christian McCaffery’s Contract Delays Yahoo Sports",
-          "published": "Thu, 27 Aug 2026 22:44:02 GMT"
-        },
-        {
-          "title": "49ers dismiss report of Christian McCaffrey ‘hold-in,’ as Kaelon Black impresses vs. Chargers",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZ2pkS0RQdldRc29acjFUTnRVSzc1bDVDMnRYNVA4eFBzR2RmajlQWUhFT2ZGd0tQdldfdlNwXzdXb3Z0YWN6WWNxd0hTVndSOFBLQ2lxcEh6bzdzWTlrOFZQcjVPWmlJVnZYRFhtQUpYTUZrRDNYTWhmMEs0ZE4tM3RKaEFOM2VaLUJOUDRzdGZJbnU0NTlrZnFhOVhjZVk?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "49ers dismiss report of Christian McCaffrey ‘hold-in,’ as Kaelon Black impresses vs. Chargers - The Athletic The New York Times",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NFL Rumors: Christian McCaffrey Contract Holdout Underway?",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOTGstb3k3VEdEdWR6LVZWbXdOTEpoWnp2Yko2YXBYcUVtRV9ma3h3TkdZS3lTaHM0cnNzNEN3ZG94amRUeHVWNUxsRUloT1Z5ZXpMQzF6TWRRY0lRaW4wd2Y5TkRIVURURjNHRThlRzFYRlRBRUVxWlZjb2FONGI0dG9JOXptWG1iUlJWdXprTWJQQQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "NFL Rumors: Christian McCaffrey Contract Holdout Underway? Yahoo Sports",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers confirm ominous ‘tightness’ for Christian McCaffrey",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZnc1cU1IUnVrZVdMOHVjRTdHNjhNLUc1MFlyUENCZExUN0JXT0dSZG9USHhpek8tbUVPa2c0dy1TcGViVW15cURoZXkteXVCN1BxVzFnSmRiTmhuandMUkE1dmRJWlNwQm4wdTU4aVpQbWl2MjEzUWtwYW1sb09rc2ZXV1ZLa2FfR3dSdV9obVBnRDBf?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "49ers confirm ominous ‘tightness’ for Christian McCaffrey Yahoo Sports",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "San Francisco 49ers Announce Christian McCaffrey News After Final Preseason Game",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQZUp2YUlXa3lsN25HNFVSQVRSZ0E4QUwtX3FMNHp6QV9UMXBkX3hlczVSMjNrTXBRMC0zX2NfU0pQNFlJSktEQjlodmlweFlfSmJjLVhYZEdVeUc0Q3ZmeHpoTVZtaXJsWVpJRVVuNUlLa1VOQzVydjljeXJiLXMtbnY3ZERfQkZuMjV0X2tZZWU?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "San Francisco 49ers Announce Christian McCaffrey News After Final Preseason Game Yahoo Sports",
-          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "What injury does Christian McCaffrey have? 49ers RB still not practicing",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNc0xLVjFMbU9xcUdWYVpKdGJ4d1pBY3hSOG1HcXI4bkk5M3JMTHdhRVpjcHBhelVMQ3BCWm1jcWpEcE1vOWFfWFJWSU9XYmtWVmFhT0lBYldydWNHTTFTMy1aSlZQX2dsYVRYcTZnNU1yUVo4VUZLZ0NMLUNfaEVNdGU3bGRndmJqTEt2SEF6TkZyWFZyOVZRYkg4LUpTcTdlRHVDbi1aONIBuwFBVV95cUxPUjB6c1pwLV9xN0JBcGo0ZkMyV3gyYW43aWpweU16NVdQZmpZUlJXNmZSM01OSFVKb0NvYWl0M2RhV1ZUV3lmZG0xX0ZRQ05UQ2lhS3VjZFFXZUdnR0phc0ZDcVFseGJDUk1RWllfX3Q3OTF1cG5Eb3RDakVRUXRLYlhNdHZuY2FWQW9vXzVVUEFtX0kxdnhyUC1hdFoyTnRIN0ltT3F6LUZHaXc5ZmE2RHRRWFZUemlhWkRJ?oc=5",
-          "publisher": "Diario AS",
-          "kind": "article",
-          "snippet": "What injury does Christian McCaffrey have? 49ers RB still not practicing Diario AS",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers Star Christian McCaffrey Makes Personal Announcement Before NFL Season",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb1oyYUtEa25lSUI5YVV6aG15b09YbFp0cnZReWFvZDUwdHh4RnFVUWRYNnBLQTc4M3owRHU5LXR1Tno4WTBEUnZyT1B4U3E1LXZCR2NRUFd1TjNPQ1VNalpia3YzNVc4M2FjR2loMVltR2cycWk4UEhON2VtZlFVd0hkNU9NMkhBOUVTcV93?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "49ers Star Christian McCaffrey Makes Personal Announcement Before NFL Season Yahoo Sports",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Kyle Shanahan: Christian McCaffrey’s absence is not contract-related",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQWkZubGFPZ3NOaEhESWYtZXBobHFETnVOTzBka0V5VXlzdEZqVVZQYmhMU0VpaGlENVVtcmV0MzlDcllWOWhMeEh4Sk01ZTk1cDRNdklYUnphUEpfbGZfOHBvcEVRRDRwZWVJREgwNG0tNHd2UVBxTS04OUQyLTFyd0l4NEc5OV9BbkpUS1hfalVIY05tVkNmQXNrYlFqbGN0QklqOWdKaDBTVllJcy1YTDlNM3E3T0tNOGI0NGUwV2REWlN6aG9z?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Kyle Shanahan: Christian McCaffrey’s absence is not contract-related NBC Sports",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey Says Missing 49ers Practice was 'Part of the Plan' amid Injury, Contract Rumors",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSU9jYWFlS3prODRlYmxDTkVUUWJuNEZvRU8xNlBpZkFublhOaVhRVnowSkE2WkdQdDlsbUJKaTdhMUN3U3gtaXQ2NmpRTDRLMDlZMnhoZkdHWVoxWEItZFJvcTVUMmdYNldKRHRZVGJqM1ZmRlRhcndrMjdJTmhrN0Y0MzE1Yk9IS3haQkplRmMxaUlxaXpJQS1MaVdlME1nVlV4RFVtQTgxd2pHdmcteERHZXUyQmJta1h6MWxvTzJzVzUtRGpITjJHSXc2QWM?oc=5",
-          "publisher": "Bleacher Report",
-          "kind": "article",
-          "snippet": "Christian McCaffrey Says Missing 49ers Practice was 'Part of the Plan' amid Injury, Contract Rumors Bleacher Report",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "New Christian McCaffrey Injury Update Given By Kyle Shanahan Amid RB's Absence From 49ers Practice",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNMHIxT1c3RHpYcDJJMnJmUC1UZ1JocVVwZUkxdU5lWnlHR1gzXzMteGFKelAwM1lQX200aTN0VF85MDBZbkZBOGo2MkxLd1lXaTJkazRCaFZ5amRlZ0d3QXV4S04yZWpDVzEwRkN6Z0xrUmlzNGxvYjVLUW9ZLW8zZEExX2swbWUxUW15Y2hrLW5uWGl1dEFDQXhOYk5xMUF6bGVzWDcxSGJ1c2lXejZpckp5MWE2VXN6ZzZxZjhFVEh4U09UdjdTa21mRDZqMEk?oc=5",
-          "publisher": "Bleacher Report",
-          "kind": "article",
-          "snippet": "New Christian McCaffrey Injury Update Given By Kyle Shanahan Amid RB's Absence From 49ers Practice Bleacher Report",
-          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers Remove George Kittle From PUP List, Christian McCaffrey Returns To Practice",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTlFETHZaZUlEMm5ON01uVGVVU1J0WGFiU0EwTWZJRk5FQ3ZQWUhJeUQxWW12eFRBMDlsbmRueGpGcGpXZ3pVcGhuVDNEMjFGUTAwZG5HMi1iYXJCWmJUdGoybWlTNUg5VFMwQ1A5clNBVTVBSkpkeHItcV9GWjNhMGo0VzlUc3pKVVlCZjRLajV0NEZ0VUZ5Ty1qWGU3SVhBeUdyM3hGaG0wcXdTa2hYLU51M2NRQQ?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "49ers Remove George Kittle From PUP List, Christian McCaffrey Returns To Practice FOX Sports",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers Sign Running Back Zamir White Amid Christian McCaffrey Injury",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWi13MGtobWZrQnVzOTlIX0xnYklVakdBSmF5SW1OVEJXNHpzc3M1dHdCUjBEaFU2SVNyQ1V0TmZpOFI3NzFKMlYzWnFUZG1XLUswWFZhQzBsakg2NUU5djdRdDRYMHFQVHFNbkJaVWdldnlQTjQtVlRuNVZ0cHhLRkVOQTI?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "49ers Sign Running Back Zamir White Amid Christian McCaffrey Injury Yahoo Sports",
-          "published": "Wed, 12 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey addresses injury ‘tightness’ after missing weeks of practice",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbTZTNEhZT0hDTm9SV0IycjFPY0hHOGpNUWVyYkRWZWppY2Y5SGprdlk5amo0Q1JsMlNsVUdpNkpYVkd0N21PMUVaTm5KcnlLMnNhYlNxemRmZDZleU9UbkV2cDN3NzVZWVhpQXNzeDJ1RC1zVHlaN0VSX1JyY2FfazlUa1JVcDVxQURtcll3WnRrNXNLbUFqWmNObw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Christian McCaffrey addresses injury ‘tightness’ after missing weeks of practice Yahoo Sports",
-          "published": "Mon, 24 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Kyle Shanahan Addresses Concerns Over Christian McCaffrey",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQXzFEb0lRR2JxeTJJSDJVbnBldEtHVWlWRGZwSndzbUVhSUR2QXRra3VVLVdUMklpbkRCbERvMktILXJqUmVsSUZaajI0Z0FxeXdqTTB0Q0Y2bG5SVC15NWFQMG1Zb2NIWWFrWHBrOGh4OEpVTHUwZUdXa090T3BxM0FyZGlaWnE3cXVwYg?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Kyle Shanahan Addresses Concerns Over Christian McCaffrey Yahoo Sports",
-          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey missing practice not a concern for Kyle Shanahan, 49ers",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTlhuZzlhbThKOWhmNVpmbzk1d3UydHNqZ3RVeUljZ0pyR2ZOZlhaVXNEZUhrcXpwM0xoWGpyeW9VMmxGTUN0WGV5cjBnSHdyNVdMS2lvRERzal9nc28zbUNYTy01ekJOcHBFMnlaWEJtRjVDYzFrT0hQNFU5ZTA3elNwazZDV1RsSnZ6NXo5cHUyckU?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Christian McCaffrey missing practice not a concern for Kyle Shanahan, 49ers Yahoo Sports",
-          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "San Francisco 49ers Star Christian McCaffrey Gives Encouraging Injury Update",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQ3Y4RllxVTVMZWZMVXJwZEVuaFdVSHltRUU2ZzhrX1Q1c3RwZ0VpZW5CRmlwcEEzbE1lX1pXTFdUbjBFNWVJODU5cnVhY0xHbVFKSGZVenJ5MlJvd3prZUVROWVUWnhYMGlkM1F5YjVzblR4S0loRDhUeVppVGI0Y0F5YXJxR09rOXBLemNsS0xjUQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "San Francisco 49ers Star Christian McCaffrey Gives Encouraging Injury Update heavy.com",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Christian McCaffrey, George Kittle provide ‘energy' in return to 49ers practice",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNVFGTEJNaXBYX25SYVpJT1NQTkxNT25ULS1IUll4QndGOFp3QjJmY0RNNi1kc0FqUHhuLXFyS1llOGxOQkJycWJwZEVVY3dnWG9PRHFOZktCQTJGM3F2NHZPemhjMURDVWNhNnV2ek5TZVhYZjNUUlExT05qajl1TDRPUi14WTFRanczM3AtWU5JR0U3ZjhBOTV3SzZsT0dOOWFQTzVObkNMeVdFdFdCeXN2VGZWd9IBvgFBVV95cUxPNmhPN1ZxRkhJeThsYWFzU2RBaHEwZk00N05GRG52SHJxMWtUTzNVUXhEWE16M3V5RVZUYUdYNDdLTnVwcFlReVNYYkZjTlZiNzlGS1J5M2NUTmhIMHVJSFZIRjhCMjdEWVpqSmsxalk0U20zUGdscHhhUVpxYXhRNF9YVldLeVJmeWZsOU5HM3R2Sm9peU9MZW4tMlV0RFUyTlRzeUZkQXlmbU9iREtVVnpmSEZBODU0SVhMSnhn?oc=5",
-          "publisher": "NBC Sports Bay Area & California",
-          "kind": "article",
-          "snippet": "Christian McCaffrey, George Kittle provide ‘energy' in return to 49ers practice NBC Sports Bay Area & California",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "where-would-you-rank-kyle-shanahan-brock-purdy-56075f82",
       "slug": "where-would-you-rank-kyle-shanahan-brock-purdy-56075f82",
       "sport": "football",
@@ -3164,162 +3194,6 @@
       ]
     },
     {
-      "id": "ravens-jesse-minter-reset-creates-difficult-timeline-question-f86fcc7a",
-      "slug": "ravens-jesse-minter-reset-creates-difficult-timeline-question-f86fcc7a",
-      "sport": "football",
-      "headline": "Ravens' Jesse Minter reset creates a difficult timeline question for Lamar Jackson and Derrick Henry",
-      "blurb": "Lamar Jackson's Expectations + Top 5 Defenses to watch out for | The NFL Report YouTube",
-      "summary": "Lamar Jackson's Expectations + Top 5 Defenses to watch out for | The NFL Report YouTube How Jesse Minter has motivated Lamar Jackson, Ravens to 'Be The Best' ESPN Ravens DFS Managers: Here’s How an NFL Optimizer Changes the Way You Build Lamar Jackson Lineups Russell Street Report Aggregated from YouTube, ESPN, Russell Street Report, Yahoo Sports, The New York Times and 5 more.",
-      "category": "injury",
-      "published": "2025-12-24T08:00:00Z",
-      "updated": "2026-09-05T00:42:20Z",
-      "players": [
-        {
-          "key": "lamar jackson",
-          "name": "Lamar Jackson",
-          "slug": "lamar-jackson",
-          "pos": "QB",
-          "team": "BAL"
-        },
-        {
-          "key": "derrick henry",
-          "name": "Derrick Henry",
-          "slug": "derrick-henry",
-          "pos": "RB",
-          "team": "BAL"
-        },
-        {
-          "key": "mark andrews",
-          "name": "Mark Andrews",
-          "slug": "mark-andrews",
-          "pos": "TE",
-          "team": "BAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "How Jesse Minter has motivated Lamar Jackson, Ravens to 'Be The Best'",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSmdMOUtJajZMSThDTlhNMjlkbEJHQUtGR3JUNGRuRzZIUjN3Z1cwMjJjVFByMTRDUkhWV3VtcW1PQVk4bUk1YV95bDlseGdXbVh2VTl1OS10VXF1WnFOZWZfWnBvSFhmS1k0SFBWcnNDMEdOMUwtUURYSEo2MHRKdDdHQWtZa19uWm03WkVrZ0tEXzhSR1lfb0NqMFd0QQ?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "How Jesse Minter has motivated Lamar Jackson, Ravens to 'Be The Best' ESPN",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Ravens DFS Managers: Here’s How an NFL Optimizer Changes the Way You Build Lamar Jackson Lineups",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1rcTNNVVQ5dmZnTmJQa2hodTF1Mlh4WWxsb2lBVzRwS0h6OWhudkdLY2Y3YmFBaHJSRFp4V2Q2TjRCbVMyR1dmRHhVVlRzd2x5RDhjSnhFZzJTdlJjV2tpck1vVFRkVTgzYjVZNV9ra21MLWF0U0E?oc=5",
-          "publisher": "Russell Street Report",
-          "kind": "article",
-          "snippet": "Ravens DFS Managers: Here’s How an NFL Optimizer Changes the Way You Build Lamar Jackson Lineups Russell Street Report",
-          "published": "Thu, 03 Sep 2026 18:13:45 GMT"
-        },
-        {
-          "title": "Ravens' Jesse Minter reset creates a difficult timeline question for Lamar Jackson and Derrick Henry",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWmY4VGJDMWY3UFJqVFUyaTAxcXVEWXRENkpxMGVlWjlZWmcybUk2UkZ0SFdsVUVZb1ZNYjVPMEVEcnJ6ZGxyT3N0ZzBmcWJmVFBSQno2U3U0WGh3LTNOdElHaWUzQUJPc3ZheFk0X0FITmplYVJHY2s4N3M4V01jODZ3czRWMEJPRXc?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Ravens' Jesse Minter reset creates a difficult timeline question for Lamar Jackson and Derrick Henry Yahoo Sports",
-          "published": "Sat, 29 Aug 2026 14:30:00 GMT"
-        },
-        {
-          "title": "Ravens HC Jesse Minter Scoffs at Lamar Jackson Top 100 NFL Ranking",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcDNOVWVqcGU0RExDSmREZGR2YW5BZFhraUZaODV5bDFJdVBrT0EtVXNTUVRGYnpuQUo1MVZHZjd1eWtHZy1aWHhVb0Y5ZVcwLVh3bzYzUm0wN0ttTWpzTkVmTTRQaG5sMVltcDgzdEc2SEMwRlFEcUxzcERPTkc3QmVhZTI?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Ravens HC Jesse Minter Scoffs at Lamar Jackson Top 100 NFL Ranking Yahoo Sports",
-          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Lamar Jackson expressing a sense of urgency as Ravens begin camp under Jesse Minter",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYl82Q2h0Ykl0M3l6TWFPVk11SWdPaTcwWkowbVdkNm1sLU9IRTUwdTlYdFVkRnNVVTBySWhPZVBFSC02UTY5UXM4aUp4Z2FwdGItYTZJbTViTjRWenRnT3lMMEZUMW51MXgtWUYzMVJ0bEVIaVROdVBNb0hrNDkxWDh3eG9sRjBTY1RSUXAzTnVJcTJnd3lkek5VUFZJX1ZfeWc?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Lamar Jackson expressing a sense of urgency as Ravens begin camp under Jesse Minter The New York Times",
-          "published": "Wed, 29 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "‘Durability Concerns’ Drop Ravens QB Lamar Jackson in NFL Rankings",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONmlmbDhSb1o3NHVXNFBIYXBaeXVGaDJNNmN2VlFEeVhBMXVzTjBPYmRidjRUdTVqMHctd0hRc2Y2cUlYY3B2TWJuNnk2RGp0MEJRREpSTFRPVFlMWDZWQU9wQUlJZExoWmYxRjRqSktLVmNrdG5fRGllLUl1eGlfVm10OFlfVGFUdy04?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "‘Durability Concerns’ Drop Ravens QB Lamar Jackson in NFL Rankings Yahoo Sports",
-          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Ravens QB Lamar Jackson Dealt Unfortunate News Before 9th NFL Season",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbXZOWU5hOEg3YXNtREx5T3RobWdmdjBKRi12c3Q5TGFzbXlRRUZsQWgtSngzZFM4SThQMDd6ZnI2b0ZSSXFkZ1RpRUw3Y3luUmJWZGluT25VcmhBbEJDcktZazdibmxxc2RhSE9XYmhlVWZ4eGFyLUpnY3puNXpoaUJLbUZRa2RVNmM3V2JSbk5vS2FlVXVweE5tTVFqbGpPbVNHVVhRNWp3QQ?oc=5",
-          "publisher": "Athlon Sports",
-          "kind": "article",
-          "snippet": "Ravens QB Lamar Jackson Dealt Unfortunate News Before 9th NFL Season Athlon Sports",
-          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Ravens QB Lamar Jackson (back) inactive at Packers",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNVo3NXlhcVZMZDhjN1RMM2tlbm50d1Q1cjFUay1USm5BZm5LOXQwOVRSU1czUGI0U3ZLeGFDdDNJLV8xWTFLbmd6NVFqZHFFUmZUQmtpVmxBNjVpc1V6SkF2cXNqWVdDVWdxNWZ3bG4zQ3BXVW15RFpLVlpuTGVRWXFRMl9leWhkQnhpSkVUcVhUN3Fk?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Ravens QB Lamar Jackson (back) inactive at Packers ESPN",
-          "published": "Sat, 27 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Is Lamar Jackson playing Week 17? Status, injury update for Ravens QB",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbkstcEtyY3JLTEVrYzVKNzd0TGZWZ2tBMTlHZzViZ3BTYTkxdGN3dVNaT2lNT1dBcGhJTTFDRHV1X1hrNnBScS02UGZjOTcwZnFzMGZ3ak15VmNCN0s5U21YOC1BQUFrRnFrazVMeWNZU3Z1cENBSUE2VURRY05RU3V3Yzk?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Is Lamar Jackson playing Week 17? Status, injury update for Ravens QB Yahoo Sports",
-          "published": "Sat, 27 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Jesse Minter: There aren’t 68 better players than Lamar Jackson",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa1BDa2t4RGpyOThzV3YyOEU1WTBzbml4ZG83SHVLZEdiUWdvR2xkZ3N3Y3psZ2gtVEQwVUsxR2RqMFVNR3FzLWp1VGh1Wko3RS1hV25yY0M5cUw3RHFGWnZxbGdpY19HMmQ5MUdlRVZXemhvU0VYUmluZHBmWUFHSFNNWTNfNGdFdDlvaEFpdzJWOFJOQUMySEhZbzVwQUlSQmFXbXZ5Qk1GZncyRzFtSEhyZ0JYVmJscGg4clFMVlQ?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Jesse Minter: There aren’t 68 better players than Lamar Jackson NBC Sports",
-          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Has Lamar Jackson Played His Final Game for the Baltimore Ravens?",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVjFpSDdiYjV4TkFraVRzdUx2eEE1QmtqWmJWNGhDT0poVE9Zd19nOFZQTldkNE5RTmh4SWF4SnAyNVhLZ2JWQThLZjQ1bWR3WjFLWU5rbjdRNmd4NjR1cnBrNXg5R0daa2N3djVaT00tZXozZ2x3NUN5clF6cTlDVTRaXzVzelRzb1lrTHY3OWMxTmF2bkx4Ukx30gGaAUFVX3lxTFBRTWNmRjd3QzFTTkpYQm1oeGRPODYzUWJhcE9aUmN2SkY5cVB1b1ZQVGtzLTdWR1JDdlV4WnRscldRZ1lnQWJNb0VfQ2pHRXRET2FXUjF2MXB2eDg4LVpoNWtRbUFtOGhVVW9icFk1YnZrTWV3ODZjeTJXU3dOYmJnbnc4ZWppdm82MUw0TnExMnZNOTJQTEU5SkE?oc=5",
-          "publisher": "foxsports.com",
-          "kind": "article",
-          "snippet": "Has Lamar Jackson Played His Final Game for the Baltimore Ravens? foxsports.com",
-          "published": "Wed, 24 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Mark Andrews says Lamar Jackson will be 'a scary sight' in Ravens' new offense, praises Jesse Minter",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMUpSU1cwMmRUTTA1TGRNZDhMNWpQeVp4c2h3QktsTmZhVXRGWDJlR1N0WnZjY1c4d3ZmRUNFWWJJUUZwdDdmbDBQVmVMUlJSUWNXVVFSWG93NzFGTkNSTmx0WkhMaS1pYUpBV1JMaVZVckQ0S0pZTlZSZUNiWHdIQWpkUkVIdW9a?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "Mark Andrews says Lamar Jackson will be 'a scary sight' in Ravens' new offense, praises Jesse Minter CBS Sports",
-          "published": "Thu, 25 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "How does Jesse Minter get Lamar Jackson, Ravens to next level? | 'GMFB'",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOa2V2U0xxZ1hWMFRqOVYtbWJRaHM4Uy1ZMUtoal8zQWJwRUxaSHRfT25XQ3N2X0RPOU5PME5CeElLQWtndUFGV3VxRWRqSGdDS0l1QldjcGhyRG05OGZSTEVKdTNzWHdoZzRLUVJRYnEtNE1vUlBrSTNndzJoRk5yLVVEb3cxWF9faUhzcDlUeWJJRTlfbFJV?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "How does Jesse Minter get Lamar Jackson, Ravens to next level? | 'GMFB' NFL.com",
-          "published": "Tue, 07 Apr 2026 13:30:46 GMT"
-        },
-        {
-          "title": "Ravens' Coach Jesse Minter Dismisses Concern Over Lamar Jackson’s OTA Absence",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTWd1NzBmNmptSDFDamNHTzJtbWVOaW1HX01JUDladHVyd09KdnViY0YyWUVqZzhDMnduSThCRWdtejVmZGdkOTZRa0ZTZ1UwbmhZcjhDVmVUZ1ZnX29HZ3VKbjVMeU41MXBuU0FybWctUVRPcDFoT3RwaDZhZ3JwNVczSWxkNGxPNDAwTkFqWFdNUS1VTlpkOXNkRmhtZGVZUWg1VEtvZndVOThlNUl3TTJZZ9IBswFBVV95cUxOcWdGRE9MY3Q2LUd4bFlURVhabkNmX3lHU3dVZm5QZVJ0SXJvSEVJR2ZkdWhLVjRIaEstSG5MaVJrR0lVOHZRUWgzc3Y4SWk5UG1JcUZwTlBxa3pvbElaeEUwNmsybWk3QnpvX0R2OHpldXdoTkhYTFltbHZOUXY1dklaY3A4MzBvMzAtZmdlVmx0SllFTUxXN09EbEp0Z3N3Yl9xRWpTdWFST2RSLTl0VFJhUQ?oc=5",
-          "publisher": "foxsports.com",
-          "kind": "article",
-          "snippet": "Ravens' Coach Jesse Minter Dismisses Concern Over Lamar Jackson’s OTA Absence foxsports.com",
-          "published": "Tue, 19 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Lamar Jackson's Expectations + Top 5 Defenses to watch out for | The NFL Report",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1vSTA2M0JJN2VBdHNnaDEtOUxubEVNRXNCTm0wTFRFSXZPWG5FeThZdDZ2TlgwMnppV2lNRkQyM2t1dzJTMkh6S0dFeDRSME5iMzNxcFRn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Lamar Jackson's Expectations + Top 5 Defenses to watch out for | The NFL Report YouTube",
-          "published": "Sat, 05 Sep 2026 00:42:20 GMT"
-        }
-      ]
-    },
-    {
       "id": "commanders-play-starters-detroit-unsure-jayden-daniels-d52f849e",
       "slug": "commanders-play-starters-detroit-unsure-jayden-daniels-d52f849e",
       "sport": "football",
@@ -3510,6 +3384,162 @@
       ]
     },
     {
+      "id": "ravens-jesse-minter-reset-creates-difficult-timeline-question-f86fcc7a",
+      "slug": "ravens-jesse-minter-reset-creates-difficult-timeline-question-f86fcc7a",
+      "sport": "football",
+      "headline": "Ravens' Jesse Minter reset creates a difficult timeline question for Lamar Jackson and Derrick Henry",
+      "blurb": "Lamar Jackson's Expectations + Top 5 Defenses to watch out for | The NFL Report YouTube",
+      "summary": "Lamar Jackson's Expectations + Top 5 Defenses to watch out for | The NFL Report YouTube How Jesse Minter has motivated Lamar Jackson, Ravens to 'Be The Best' ESPN Ravens DFS Managers: Here’s How an NFL Optimizer Changes the Way You Build Lamar Jackson Lineups Russell Street Report Aggregated from YouTube, ESPN, Russell Street Report, Yahoo Sports, The New York Times and 5 more.",
+      "category": "injury",
+      "published": "2025-12-24T08:00:00Z",
+      "updated": "2026-09-05T00:42:20Z",
+      "players": [
+        {
+          "key": "lamar jackson",
+          "name": "Lamar Jackson",
+          "slug": "lamar-jackson",
+          "pos": "QB",
+          "team": "BAL"
+        },
+        {
+          "key": "derrick henry",
+          "name": "Derrick Henry",
+          "slug": "derrick-henry",
+          "pos": "RB",
+          "team": "BAL"
+        },
+        {
+          "key": "mark andrews",
+          "name": "Mark Andrews",
+          "slug": "mark-andrews",
+          "pos": "TE",
+          "team": "BAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "How Jesse Minter has motivated Lamar Jackson, Ravens to 'Be The Best'",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSmdMOUtJajZMSThDTlhNMjlkbEJHQUtGR3JUNGRuRzZIUjN3Z1cwMjJjVFByMTRDUkhWV3VtcW1PQVk4bUk1YV95bDlseGdXbVh2VTl1OS10VXF1WnFOZWZfWnBvSFhmS1k0SFBWcnNDMEdOMUwtUURYSEo2MHRKdDdHQWtZa19uWm03WkVrZ0tEXzhSR1lfb0NqMFd0QQ?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "How Jesse Minter has motivated Lamar Jackson, Ravens to 'Be The Best' ESPN",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Ravens DFS Managers: Here’s How an NFL Optimizer Changes the Way You Build Lamar Jackson Lineups",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1rcTNNVVQ5dmZnTmJQa2hodTF1Mlh4WWxsb2lBVzRwS0h6OWhudkdLY2Y3YmFBaHJSRFp4V2Q2TjRCbVMyR1dmRHhVVlRzd2x5RDhjSnhFZzJTdlJjV2tpck1vVFRkVTgzYjVZNV9ra21MLWF0U0E?oc=5",
+          "publisher": "Russell Street Report",
+          "kind": "article",
+          "snippet": "Ravens DFS Managers: Here’s How an NFL Optimizer Changes the Way You Build Lamar Jackson Lineups Russell Street Report",
+          "published": "Thu, 03 Sep 2026 18:13:45 GMT"
+        },
+        {
+          "title": "Ravens' Jesse Minter reset creates a difficult timeline question for Lamar Jackson and Derrick Henry",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOWmY4VGJDMWY3UFJqVFUyaTAxcXVEWXRENkpxMGVlWjlZWmcybUk2UkZ0SFdsVUVZb1ZNYjVPMEVEcnJ6ZGxyT3N0ZzBmcWJmVFBSQno2U3U0WGh3LTNOdElHaWUzQUJPc3ZheFk0X0FITmplYVJHY2s4N3M4V01jODZ3czRWMEJPRXc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Ravens' Jesse Minter reset creates a difficult timeline question for Lamar Jackson and Derrick Henry Yahoo Sports",
+          "published": "Sat, 29 Aug 2026 14:30:00 GMT"
+        },
+        {
+          "title": "Ravens HC Jesse Minter Scoffs at Lamar Jackson Top 100 NFL Ranking",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQcDNOVWVqcGU0RExDSmREZGR2YW5BZFhraUZaODV5bDFJdVBrT0EtVXNTUVRGYnpuQUo1MVZHZjd1eWtHZy1aWHhVb0Y5ZVcwLVh3bzYzUm0wN0ttTWpzTkVmTTRQaG5sMVltcDgzdEc2SEMwRlFEcUxzcERPTkc3QmVhZTI?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Ravens HC Jesse Minter Scoffs at Lamar Jackson Top 100 NFL Ranking Yahoo Sports",
+          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Lamar Jackson expressing a sense of urgency as Ravens begin camp under Jesse Minter",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYl82Q2h0Ykl0M3l6TWFPVk11SWdPaTcwWkowbVdkNm1sLU9IRTUwdTlYdFVkRnNVVTBySWhPZVBFSC02UTY5UXM4aUp4Z2FwdGItYTZJbTViTjRWenRnT3lMMEZUMW51MXgtWUYzMVJ0bEVIaVROdVBNb0hrNDkxWDh3eG9sRjBTY1RSUXAzTnVJcTJnd3lkek5VUFZJX1ZfeWc?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Lamar Jackson expressing a sense of urgency as Ravens begin camp under Jesse Minter The New York Times",
+          "published": "Wed, 29 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "‘Durability Concerns’ Drop Ravens QB Lamar Jackson in NFL Rankings",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONmlmbDhSb1o3NHVXNFBIYXBaeXVGaDJNNmN2VlFEeVhBMXVzTjBPYmRidjRUdTVqMHctd0hRc2Y2cUlYY3B2TWJuNnk2RGp0MEJRREpSTFRPVFlMWDZWQU9wQUlJZExoWmYxRjRqSktLVmNrdG5fRGllLUl1eGlfVm10OFlfVGFUdy04?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "‘Durability Concerns’ Drop Ravens QB Lamar Jackson in NFL Rankings Yahoo Sports",
+          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Ravens QB Lamar Jackson Dealt Unfortunate News Before 9th NFL Season",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbXZOWU5hOEg3YXNtREx5T3RobWdmdjBKRi12c3Q5TGFzbXlRRUZsQWgtSngzZFM4SThQMDd6ZnI2b0ZSSXFkZ1RpRUw3Y3luUmJWZGluT25VcmhBbEJDcktZazdibmxxc2RhSE9XYmhlVWZ4eGFyLUpnY3puNXpoaUJLbUZRa2RVNmM3V2JSbk5vS2FlVXVweE5tTVFqbGpPbVNHVVhRNWp3QQ?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Ravens QB Lamar Jackson Dealt Unfortunate News Before 9th NFL Season Athlon Sports",
+          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Ravens QB Lamar Jackson (back) inactive at Packers",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNVo3NXlhcVZMZDhjN1RMM2tlbm50d1Q1cjFUay1USm5BZm5LOXQwOVRSU1czUGI0U3ZLeGFDdDNJLV8xWTFLbmd6NVFqZHFFUmZUQmtpVmxBNjVpc1V6SkF2cXNqWVdDVWdxNWZ3bG4zQ3BXVW15RFpLVlpuTGVRWXFRMl9leWhkQnhpSkVUcVhUN3Fk?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Ravens QB Lamar Jackson (back) inactive at Packers ESPN",
+          "published": "Sat, 27 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Is Lamar Jackson playing Week 17? Status, injury update for Ravens QB",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbkstcEtyY3JLTEVrYzVKNzd0TGZWZ2tBMTlHZzViZ3BTYTkxdGN3dVNaT2lNT1dBcGhJTTFDRHV1X1hrNnBScS02UGZjOTcwZnFzMGZ3ak15VmNCN0s5U21YOC1BQUFrRnFrazVMeWNZU3Z1cENBSUE2VURRY05RU3V3Yzk?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Is Lamar Jackson playing Week 17? Status, injury update for Ravens QB Yahoo Sports",
+          "published": "Sat, 27 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Jesse Minter: There aren’t 68 better players than Lamar Jackson",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa1BDa2t4RGpyOThzV3YyOEU1WTBzbml4ZG83SHVLZEdiUWdvR2xkZ3N3Y3psZ2gtVEQwVUsxR2RqMFVNR3FzLWp1VGh1Wko3RS1hV25yY0M5cUw3RHFGWnZxbGdpY19HMmQ5MUdlRVZXemhvU0VYUmluZHBmWUFHSFNNWTNfNGdFdDlvaEFpdzJWOFJOQUMySEhZbzVwQUlSQmFXbXZ5Qk1GZncyRzFtSEhyZ0JYVmJscGg4clFMVlQ?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Jesse Minter: There aren’t 68 better players than Lamar Jackson NBC Sports",
+          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Has Lamar Jackson Played His Final Game for the Baltimore Ravens?",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVjFpSDdiYjV4TkFraVRzdUx2eEE1QmtqWmJWNGhDT0poVE9Zd19nOFZQTldkNE5RTmh4SWF4SnAyNVhLZ2JWQThLZjQ1bWR3WjFLWU5rbjdRNmd4NjR1cnBrNXg5R0daa2N3djVaT00tZXozZ2x3NUN5clF6cTlDVTRaXzVzelRzb1lrTHY3OWMxTmF2bkx4Ukx30gGaAUFVX3lxTFBRTWNmRjd3QzFTTkpYQm1oeGRPODYzUWJhcE9aUmN2SkY5cVB1b1ZQVGtzLTdWR1JDdlV4WnRscldRZ1lnQWJNb0VfQ2pHRXRET2FXUjF2MXB2eDg4LVpoNWtRbUFtOGhVVW9icFk1YnZrTWV3ODZjeTJXU3dOYmJnbnc4ZWppdm82MUw0TnExMnZNOTJQTEU5SkE?oc=5",
+          "publisher": "foxsports.com",
+          "kind": "article",
+          "snippet": "Has Lamar Jackson Played His Final Game for the Baltimore Ravens? foxsports.com",
+          "published": "Wed, 24 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Mark Andrews says Lamar Jackson will be 'a scary sight' in Ravens' new offense, praises Jesse Minter",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMUpSU1cwMmRUTTA1TGRNZDhMNWpQeVp4c2h3QktsTmZhVXRGWDJlR1N0WnZjY1c4d3ZmRUNFWWJJUUZwdDdmbDBQVmVMUlJSUWNXVVFSWG93NzFGTkNSTmx0WkhMaS1pYUpBV1JMaVZVckQ0S0pZTlZSZUNiWHdIQWpkUkVIdW9a?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Mark Andrews says Lamar Jackson will be 'a scary sight' in Ravens' new offense, praises Jesse Minter CBS Sports",
+          "published": "Thu, 25 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "How does Jesse Minter get Lamar Jackson, Ravens to next level? | 'GMFB'",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOa2V2U0xxZ1hWMFRqOVYtbWJRaHM4Uy1ZMUtoal8zQWJwRUxaSHRfT25XQ3N2X0RPOU5PME5CeElLQWtndUFGV3VxRWRqSGdDS0l1QldjcGhyRG05OGZSTEVKdTNzWHdoZzRLUVJRYnEtNE1vUlBrSTNndzJoRk5yLVVEb3cxWF9faUhzcDlUeWJJRTlfbFJV?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "How does Jesse Minter get Lamar Jackson, Ravens to next level? | 'GMFB' NFL.com",
+          "published": "Tue, 07 Apr 2026 13:30:46 GMT"
+        },
+        {
+          "title": "Ravens' Coach Jesse Minter Dismisses Concern Over Lamar Jackson’s OTA Absence",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTWd1NzBmNmptSDFDamNHTzJtbWVOaW1HX01JUDladHVyd09KdnViY0YyWUVqZzhDMnduSThCRWdtejVmZGdkOTZRa0ZTZ1UwbmhZcjhDVmVUZ1ZnX29HZ3VKbjVMeU41MXBuU0FybWctUVRPcDFoT3RwaDZhZ3JwNVczSWxkNGxPNDAwTkFqWFdNUS1VTlpkOXNkRmhtZGVZUWg1VEtvZndVOThlNUl3TTJZZ9IBswFBVV95cUxOcWdGRE9MY3Q2LUd4bFlURVhabkNmX3lHU3dVZm5QZVJ0SXJvSEVJR2ZkdWhLVjRIaEstSG5MaVJrR0lVOHZRUWgzc3Y4SWk5UG1JcUZwTlBxa3pvbElaeEUwNmsybWk3QnpvX0R2OHpldXdoTkhYTFltbHZOUXY1dklaY3A4MzBvMzAtZmdlVmx0SllFTUxXN09EbEp0Z3N3Yl9xRWpTdWFST2RSLTl0VFJhUQ?oc=5",
+          "publisher": "foxsports.com",
+          "kind": "article",
+          "snippet": "Ravens' Coach Jesse Minter Dismisses Concern Over Lamar Jackson’s OTA Absence foxsports.com",
+          "published": "Tue, 19 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Lamar Jackson's Expectations + Top 5 Defenses to watch out for | The NFL Report",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1vSTA2M0JJN2VBdHNnaDEtOUxubEVNRXNCTm0wTFRFSXZPWG5FeThZdDZ2TlgwMnppV2lNRkQyM2t1dzJTMkh6S0dFeDRSME5iMzNxcFRn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Lamar Jackson's Expectations + Top 5 Defenses to watch out for | The NFL Report YouTube",
+          "published": "Sat, 05 Sep 2026 00:42:20 GMT"
+        }
+      ]
+    },
+    {
       "id": "lamar-jackson-raves-louisville-isaac-brown-entering-2026-5def2b46",
       "slug": "lamar-jackson-raves-louisville-isaac-brown-entering-2026-5def2b46",
       "sport": "football",
@@ -3674,6 +3704,112 @@
           "kind": "article",
           "snippet": "NFL fines Ravens $100K for incorrectly listing Lamar Jackson on Week 8 injury report NFL.com",
           "published": "Fri, 31 Oct 2025 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "2026-minnesota-vikings-betting-preview-predictions-four-player-f7fb8dc3",
+      "slug": "2026-minnesota-vikings-betting-preview-predictions-four-player-f7fb8dc3",
+      "sport": "football",
+      "headline": "2026 Minnesota Vikings betting preview, predictions: Four NFL player props to target before Week 1",
+      "blurb": "The WCG Crew is predicting the 2026 NFL Awards, and next up is Defensive Player of the Year.",
+      "summary": "Justin Jefferson and Aaron Jones Sr.: The WCG Crew is predicting the 2026 NFL Awards, and next up is Defensive Player of the Year. Lock in these NFL player props for Justin Jefferson and Aaron Jones before Minnesota's Week 1 matchup against the Packers The WCG Crew is predicting the 2026 NFL Awards, and next up is Offensive Player of the Year, and most of us went with an NFC North player. Aggregated from SB Nation, CBS NFL.",
+      "category": "wire",
+      "published": "2026-09-04T19:35:32Z",
+      "updated": "2026-09-06T15:00:00Z",
+      "players": [
+        {
+          "key": "justin jefferson",
+          "name": "Justin Jefferson",
+          "slug": "justin-jefferson",
+          "pos": "WR",
+          "team": "MIN"
+        },
+        {
+          "key": "aaron jones",
+          "name": "Aaron Jones Sr.",
+          "slug": "aaron-jones",
+          "pos": "RB",
+          "team": "MIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "2026 Minnesota Vikings betting preview, predictions: Four NFL player props to target before Week 1",
+          "url": "https://www.cbssports.com/betting/news/2026-minnesota-vikings-betting-preview-predictions-four-nfl-player-props-to-target-before-week-1/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "Lock in these NFL player props for Justin Jefferson and Aaron Jones before Minnesota's Week 1 matchup against the Packers",
+          "published": "Fri, 04 Sep 2026 19:35:32 +0000"
+        },
+        {
+          "title": "2026 NFL Season Award Predictions: Offensive Player of the Year",
+          "url": "https://sports.yahoo.com/articles/2026-nfl-season-award-predictions-163000018.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The WCG Crew is predicting the 2026 NFL Awards, and next up is Offensive Player of the Year, and most of us went with an NFC North player.",
+          "published": "Sat, 05 Sep 2026 16:30:00 +0000"
+        },
+        {
+          "title": "2026 NFL Season Award Predictions: Defensive Player of the Year",
+          "url": "https://sports.yahoo.com/articles/2026-nfl-season-award-predictions-150000986.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The WCG Crew is predicting the 2026 NFL Awards, and next up is Defensive Player of the Year.",
+          "published": "Sun, 06 Sep 2026 15:00:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "nfc-jayden-daniels-broderick-jones-darius-slayton-commanders-053b7fd3",
+      "slug": "nfc-jayden-daniels-broderick-jones-darius-slayton-commanders-053b7fd3",
+      "sport": "football",
+      "headline": "NFC Notes: Jayden Daniels, Broderick Jones, Darius Slayton, Commanders, Cowboys, Giants",
+      "blurb": "How many games do you think Broderick Jones will start this season?",
+      "summary": "Jayden Daniels and Darius Slayton: How many games do you think Broderick Jones will start this season? NFC Notes: Jayden Daniels, Broderick Jones, Darius Slayton, Commanders, Cowboys, Giants nfltraderumors.co NFC Notes: Jayden Daniels, DeMarvion Overshown, Commanders, Cowboys, Eagles NFLTradeRumors.co Aggregated from SB Nation, nfltraderumors.co, NFLTradeRumors.co.",
+      "category": "wire",
+      "published": "2026-09-04T20:00:26Z",
+      "updated": "2026-09-06T15:00:00Z",
+      "players": [
+        {
+          "key": "jayden daniels",
+          "name": "Jayden Daniels",
+          "slug": "jayden-daniels",
+          "pos": "QB",
+          "team": "WAS"
+        },
+        {
+          "key": "darius slayton",
+          "name": "Darius Slayton",
+          "slug": "darius-slayton",
+          "pos": "WR",
+          "team": "NYG"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NFC Notes: Jayden Daniels, Broderick Jones, Darius Slayton, Commanders, Cowboys, Giants",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbEdxS0kwRGdmX3ZxZU9VMVJ4WTNXaVU0d1VvSExyOUtfcmNhM2dZQ0I3amhNUWhVUGIwY3FxckUtSUZENmFoVkkxU2VMRHVKRlkzdmlFMVFybC1hVXZfZFRjSkdodEZOYXFJd3VBQ0NzV0RPeVVGWkQwajdHS1lHb3JSaVlDV0lKOG4ycE1JYVA5aGs5ZkR4QU5yMlgxRXQ1dkJHVjUtVGF5dWts?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Jayden Daniels, Broderick Jones, Darius Slayton, Commanders, Cowboys, Giants NFLTradeRumors.co",
+          "published": "Sat, 05 Sep 2026 14:10:34 GMT"
+        },
+        {
+          "title": "NFC Notes: Jayden Daniels, DeMarvion Overshown, Commanders, Cowboys, Eagles",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNR2Vmd0w1TWZaNmRodlMzc3FFUnl3UmFUdW4wMk9iQTlrbGRWMUZfc0ZIZ2tNSk5hZk8yRHAwVmRvV29tSEpJdmRkQUc0WWYxTjFkbXV3RDg2YXE2blRjTXBpQmRJNjdxOGRvMzRFRmtEUHE2SUdBTVJ0d05YZHRuWml5Q21GZE84dGJ2V1h5RFMwZ0dxbUFfZkJvdjhjZw?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Jayden Daniels, DeMarvion Overshown, Commanders, Cowboys, Eagles NFLTradeRumors.co",
+          "published": "Fri, 04 Sep 2026 20:00:26 GMT"
+        },
+        {
+          "title": "Pittsburgh perspective of new Cowboys OT Broderick Jones",
+          "url": "https://sports.yahoo.com/articles/pittsburgh-perspective-cowboys-ot-broderick-150000613.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "How many games do you think Broderick Jones will start this season?",
+          "published": "Sun, 06 Sep 2026 15:00:00 +0000"
         }
       ]
     },
@@ -4044,112 +4180,6 @@
       ]
     },
     {
-      "id": "2026-minnesota-vikings-betting-preview-predictions-four-player-f7fb8dc3",
-      "slug": "2026-minnesota-vikings-betting-preview-predictions-four-player-f7fb8dc3",
-      "sport": "football",
-      "headline": "2026 Minnesota Vikings betting preview, predictions: Four NFL player props to target before Week 1",
-      "blurb": "The WCG Crew is predicting the 2026 NFL Awards, and next up is Defensive Player of the Year.",
-      "summary": "Justin Jefferson and Aaron Jones Sr.: The WCG Crew is predicting the 2026 NFL Awards, and next up is Defensive Player of the Year. Lock in these NFL player props for Justin Jefferson and Aaron Jones before Minnesota's Week 1 matchup against the Packers The WCG Crew is predicting the 2026 NFL Awards, and next up is Offensive Player of the Year, and most of us went with an NFC North player. Aggregated from SB Nation, CBS NFL.",
-      "category": "wire",
-      "published": "2026-09-04T19:35:32Z",
-      "updated": "2026-09-06T15:00:00Z",
-      "players": [
-        {
-          "key": "justin jefferson",
-          "name": "Justin Jefferson",
-          "slug": "justin-jefferson",
-          "pos": "WR",
-          "team": "MIN"
-        },
-        {
-          "key": "aaron jones",
-          "name": "Aaron Jones Sr.",
-          "slug": "aaron-jones",
-          "pos": "RB",
-          "team": "MIN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "2026 Minnesota Vikings betting preview, predictions: Four NFL player props to target before Week 1",
-          "url": "https://www.cbssports.com/betting/news/2026-minnesota-vikings-betting-preview-predictions-four-nfl-player-props-to-target-before-week-1/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "Lock in these NFL player props for Justin Jefferson and Aaron Jones before Minnesota's Week 1 matchup against the Packers",
-          "published": "Fri, 04 Sep 2026 19:35:32 +0000"
-        },
-        {
-          "title": "2026 NFL Season Award Predictions: Offensive Player of the Year",
-          "url": "https://sports.yahoo.com/articles/2026-nfl-season-award-predictions-163000018.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The WCG Crew is predicting the 2026 NFL Awards, and next up is Offensive Player of the Year, and most of us went with an NFC North player.",
-          "published": "Sat, 05 Sep 2026 16:30:00 +0000"
-        },
-        {
-          "title": "2026 NFL Season Award Predictions: Defensive Player of the Year",
-          "url": "https://sports.yahoo.com/articles/2026-nfl-season-award-predictions-150000986.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The WCG Crew is predicting the 2026 NFL Awards, and next up is Defensive Player of the Year.",
-          "published": "Sun, 06 Sep 2026 15:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "nfc-jayden-daniels-broderick-jones-darius-slayton-commanders-053b7fd3",
-      "slug": "nfc-jayden-daniels-broderick-jones-darius-slayton-commanders-053b7fd3",
-      "sport": "football",
-      "headline": "NFC Notes: Jayden Daniels, Broderick Jones, Darius Slayton, Commanders, Cowboys, Giants",
-      "blurb": "How many games do you think Broderick Jones will start this season?",
-      "summary": "Jayden Daniels and Darius Slayton: How many games do you think Broderick Jones will start this season? NFC Notes: Jayden Daniels, Broderick Jones, Darius Slayton, Commanders, Cowboys, Giants nfltraderumors.co NFC Notes: Jayden Daniels, DeMarvion Overshown, Commanders, Cowboys, Eagles NFLTradeRumors.co Aggregated from SB Nation, nfltraderumors.co, NFLTradeRumors.co.",
-      "category": "wire",
-      "published": "2026-09-04T20:00:26Z",
-      "updated": "2026-09-06T15:00:00Z",
-      "players": [
-        {
-          "key": "jayden daniels",
-          "name": "Jayden Daniels",
-          "slug": "jayden-daniels",
-          "pos": "QB",
-          "team": "WAS"
-        },
-        {
-          "key": "darius slayton",
-          "name": "Darius Slayton",
-          "slug": "darius-slayton",
-          "pos": "WR",
-          "team": "NYG"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NFC Notes: Jayden Daniels, Broderick Jones, Darius Slayton, Commanders, Cowboys, Giants",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbEdxS0kwRGdmX3ZxZU9VMVJ4WTNXaVU0d1VvSExyOUtfcmNhM2dZQ0I3amhNUWhVUGIwY3FxckUtSUZENmFoVkkxU2VMRHVKRlkzdmlFMVFybC1hVXZfZFRjSkdodEZOYXFJd3VBQ0NzV0RPeVVGWkQwajdHS1lHb3JSaVlDV0lKOG4ycE1JYVA5aGs5ZkR4QU5yMlgxRXQ1dkJHVjUtVGF5dWts?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "NFC Notes: Jayden Daniels, Broderick Jones, Darius Slayton, Commanders, Cowboys, Giants NFLTradeRumors.co",
-          "published": "Sat, 05 Sep 2026 14:10:34 GMT"
-        },
-        {
-          "title": "NFC Notes: Jayden Daniels, DeMarvion Overshown, Commanders, Cowboys, Eagles",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNR2Vmd0w1TWZaNmRodlMzc3FFUnl3UmFUdW4wMk9iQTlrbGRWMUZfc0ZIZ2tNSk5hZk8yRHAwVmRvV29tSEpJdmRkQUc0WWYxTjFkbXV3RDg2YXE2blRjTXBpQmRJNjdxOGRvMzRFRmtEUHE2SUdBTVJ0d05YZHRuWml5Q21GZE84dGJ2V1h5RFMwZ0dxbUFfZkJvdjhjZw?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "NFC Notes: Jayden Daniels, DeMarvion Overshown, Commanders, Cowboys, Eagles NFLTradeRumors.co",
-          "published": "Fri, 04 Sep 2026 20:00:26 GMT"
-        },
-        {
-          "title": "Pittsburgh perspective of new Cowboys OT Broderick Jones",
-          "url": "https://sports.yahoo.com/articles/pittsburgh-perspective-cowboys-ot-broderick-150000613.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "How many games do you think Broderick Jones will start this season?",
-          "published": "Sun, 06 Sep 2026 15:00:00 +0000"
-        }
-      ]
-    },
-    {
       "id": "can-garrett-wilson-finally-deliver-first-round-2026-863e2dbc",
       "slug": "can-garrett-wilson-finally-deliver-first-round-2026-863e2dbc",
       "sport": "football",
@@ -4476,6 +4506,99 @@
       ]
     },
     {
+      "id": "who-should-i-draft-outlooks-trevor-lawrence-jalen-6ad2d162",
+      "slug": "who-should-i-draft-outlooks-trevor-lawrence-jalen-6ad2d162",
+      "sport": "football",
+      "headline": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Jordan Love, Jayden…",
+      "blurb": "Who Should I Draft for Fantasy Football?",
+      "summary": "Trevor Lawrence, Jayden Daniels, Tyler Shough, Kyler Murray, Jalen Hurts, Jaxson Dart, Brock Purdy, Jordan Love, Drake Maye and Joe Burrow: Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Jordan Love, Jayden Daniels, Joe Burrow, Tyler Shough, Brock Purdy, Drake Maye rotoballer.com Board reading of rotoballer.com.",
+      "category": "wire",
+      "published": "2026-09-05T13:25:29Z",
+      "updated": "2026-09-05T13:25:29Z",
+      "players": [
+        {
+          "key": "trevor lawrence",
+          "name": "Trevor Lawrence",
+          "slug": "trevor-lawrence",
+          "pos": "QB",
+          "team": "JAX"
+        },
+        {
+          "key": "jayden daniels",
+          "name": "Jayden Daniels",
+          "slug": "jayden-daniels",
+          "pos": "QB",
+          "team": "WAS"
+        },
+        {
+          "key": "tyler shough",
+          "name": "Tyler Shough",
+          "slug": "tyler-shough",
+          "pos": "QB",
+          "team": "NO"
+        },
+        {
+          "key": "kyler murray",
+          "name": "Kyler Murray",
+          "slug": "kyler-murray",
+          "pos": "QB",
+          "team": "MIN"
+        },
+        {
+          "key": "jalen hurts",
+          "name": "Jalen Hurts",
+          "slug": "jalen-hurts",
+          "pos": "QB",
+          "team": "PHI"
+        },
+        {
+          "key": "jaxson dart",
+          "name": "Jaxson Dart",
+          "slug": "jaxson-dart",
+          "pos": "QB",
+          "team": "NYG"
+        },
+        {
+          "key": "brock purdy",
+          "name": "Brock Purdy",
+          "slug": "brock-purdy",
+          "pos": "QB",
+          "team": "SF"
+        },
+        {
+          "key": "jordan love",
+          "name": "Jordan Love",
+          "slug": "jordan-love",
+          "pos": "QB",
+          "team": "GB"
+        },
+        {
+          "key": "drake maye",
+          "name": "Drake Maye",
+          "slug": "drake-maye",
+          "pos": "QB",
+          "team": "NE"
+        },
+        {
+          "key": "joe burrow",
+          "name": "Joe Burrow",
+          "slug": "joe-burrow",
+          "pos": "QB",
+          "team": "CIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Jordan Love, Jayden Daniels, Joe Burrow, Tyler Shough, Brock Purdy, Drake Maye",
+          "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQSWd1UDBOWDYxVkd6cTBkeUhtcG5MeWJ2UTZWVERDQ3F6ZWhYaUVsNG1Hck1CNWpzaUhpZG5hV2QxbDFTUV9lSDJWWmhqTG9uM21FSmJBU2tULXdUaVlFN3BiMlFlbzZodTRJb3VPNFg2ejNldjcyNFdvLUloTElWenZlY1ZTaWZ6dlY4LTc1eDVlTFlwX2hLajZHZzIwV1paeW9heTc2cEl1WHRDNXNvME1vc2xOR3lKdnc0V2tnM2RLaUV5WF81a2R3cnJQZWh0UTFrT19WeHBfTXlzU2ZxQUhYVnBmTDE1ajNwenFIZ1pUSGZwejFiMjZsTl9DVVB2NTk3d2VLU3cwSlU2bV81NlhrMlFqSXVodG9pSWp5cV9sMzN0S3F3V1FqNDlGcWRjZVlJWWFhbEZiQQ?oc=5",
+          "publisher": "rotoballer.com",
+          "kind": "article",
+          "snippet": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Jordan Love, Jayden Daniels, Joe Burrow, Tyler Shough, Brock Purdy, Drake Maye rotoballer.com",
+          "published": "Sat, 05 Sep 2026 13:25:29 GMT"
+        }
+      ]
+    },
+    {
       "id": "bears-offense-qb-caleb-williams-rb-d-andre-ff30f6b0",
       "slug": "bears-offense-qb-caleb-williams-rb-d-andre-ff30f6b0",
       "sport": "football",
@@ -4619,99 +4742,6 @@
       ]
     },
     {
-      "id": "who-should-i-draft-outlooks-trevor-lawrence-jalen-6ad2d162",
-      "slug": "who-should-i-draft-outlooks-trevor-lawrence-jalen-6ad2d162",
-      "sport": "football",
-      "headline": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Jordan Love, Jayden…",
-      "blurb": "Who Should I Draft for Fantasy Football?",
-      "summary": "Trevor Lawrence, Jayden Daniels, Tyler Shough, Kyler Murray, Jalen Hurts, Jaxson Dart, Brock Purdy, Jordan Love, Drake Maye and Joe Burrow: Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Jordan Love, Jayden Daniels, Joe Burrow, Tyler Shough, Brock Purdy, Drake Maye rotoballer.com Board reading of rotoballer.com.",
-      "category": "wire",
-      "published": "2026-09-05T13:25:29Z",
-      "updated": "2026-09-05T13:25:29Z",
-      "players": [
-        {
-          "key": "trevor lawrence",
-          "name": "Trevor Lawrence",
-          "slug": "trevor-lawrence",
-          "pos": "QB",
-          "team": "JAX"
-        },
-        {
-          "key": "jayden daniels",
-          "name": "Jayden Daniels",
-          "slug": "jayden-daniels",
-          "pos": "QB",
-          "team": "WAS"
-        },
-        {
-          "key": "tyler shough",
-          "name": "Tyler Shough",
-          "slug": "tyler-shough",
-          "pos": "QB",
-          "team": "NO"
-        },
-        {
-          "key": "kyler murray",
-          "name": "Kyler Murray",
-          "slug": "kyler-murray",
-          "pos": "QB",
-          "team": "MIN"
-        },
-        {
-          "key": "jalen hurts",
-          "name": "Jalen Hurts",
-          "slug": "jalen-hurts",
-          "pos": "QB",
-          "team": "PHI"
-        },
-        {
-          "key": "jaxson dart",
-          "name": "Jaxson Dart",
-          "slug": "jaxson-dart",
-          "pos": "QB",
-          "team": "NYG"
-        },
-        {
-          "key": "brock purdy",
-          "name": "Brock Purdy",
-          "slug": "brock-purdy",
-          "pos": "QB",
-          "team": "SF"
-        },
-        {
-          "key": "jordan love",
-          "name": "Jordan Love",
-          "slug": "jordan-love",
-          "pos": "QB",
-          "team": "GB"
-        },
-        {
-          "key": "drake maye",
-          "name": "Drake Maye",
-          "slug": "drake-maye",
-          "pos": "QB",
-          "team": "NE"
-        },
-        {
-          "key": "joe burrow",
-          "name": "Joe Burrow",
-          "slug": "joe-burrow",
-          "pos": "QB",
-          "team": "CIN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Jordan Love, Jayden Daniels, Joe Burrow, Tyler Shough, Brock Purdy, Drake Maye",
-          "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQSWd1UDBOWDYxVkd6cTBkeUhtcG5MeWJ2UTZWVERDQ3F6ZWhYaUVsNG1Hck1CNWpzaUhpZG5hV2QxbDFTUV9lSDJWWmhqTG9uM21FSmJBU2tULXdUaVlFN3BiMlFlbzZodTRJb3VPNFg2ejNldjcyNFdvLUloTElWenZlY1ZTaWZ6dlY4LTc1eDVlTFlwX2hLajZHZzIwV1paeW9heTc2cEl1WHRDNXNvME1vc2xOR3lKdnc0V2tnM2RLaUV5WF81a2R3cnJQZWh0UTFrT19WeHBfTXlzU2ZxQUhYVnBmTDE1ajNwenFIZ1pUSGZwejFiMjZsTl9DVVB2NTk3d2VLU3cwSlU2bV81NlhrMlFqSXVodG9pSWp5cV9sMzN0S3F3V1FqNDlGcWRjZVlJWWFhbEZiQQ?oc=5",
-          "publisher": "rotoballer.com",
-          "kind": "article",
-          "snippet": "Who Should I Draft for Fantasy Football? Outlooks for Trevor Lawrence, Jalen Hurts, Jaxson Dart, Kyler Murray, Jordan Love, Jayden Daniels, Joe Burrow, Tyler Shough, Brock Purdy, Drake Maye rotoballer.com",
-          "published": "Sat, 05 Sep 2026 13:25:29 GMT"
-        }
-      ]
-    },
-    {
       "id": "when-should-raiders-start-fernando-mendoza-too-early-16eb5f69",
       "slug": "when-should-raiders-start-fernando-mendoza-too-early-16eb5f69",
       "sport": "football",
@@ -4843,6 +4873,36 @@
       ]
     },
     {
+      "id": "chargers-aim-super-bowl-title-amid-key-injuries-cd70c692",
+      "slug": "chargers-aim-super-bowl-title-amid-key-injuries-cd70c692",
+      "sport": "football",
+      "headline": "Chargers aim for a Super Bowl title amid key injuries and a brutal schedule",
+      "blurb": "The Chargers are looking for real gains under Jim Harbaugh after two one-and-done playoff campaigns, but can Justin Herbert lead them to a home Super Bowl?",
+      "summary": "The Chargers are looking for real gains under Jim Harbaugh after two one-and-done playoff campaigns, but can Justin Herbert lead them to a home Super Bowl? Board reading of LA Times.",
+      "category": "injury",
+      "published": "2026-09-06T11:00:00Z",
+      "updated": "2026-09-06T11:00:00Z",
+      "players": [
+        {
+          "key": "justin herbert",
+          "name": "Justin Herbert",
+          "slug": "justin-herbert",
+          "pos": "QB",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Chargers aim for a Super Bowl title amid key injuries and a brutal schedule",
+          "url": "https://sports.yahoo.com/articles/chargers-aim-super-bowl-title-110000694.html",
+          "publisher": "LA Times",
+          "kind": "article",
+          "snippet": "The Chargers are looking for real gains under Jim Harbaugh after two one-and-done playoff campaigns, but can Justin Herbert lead them to a home Super Bowl?",
+          "published": "Sun, 06 Sep 2026 11:00:00 +0000"
+        }
+      ]
+    },
+    {
       "id": "mock-draft-puka-nacua-jeremiyah-love-drop-due-67606e25",
       "slug": "mock-draft-puka-nacua-jeremiyah-love-drop-due-67606e25",
       "sport": "football",
@@ -4948,36 +5008,6 @@
           "kind": "article",
           "snippet": "Puka Nacua Injury Update: Will Nacua Play for Rams in Week 1? PrizePicks",
           "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "chargers-aim-super-bowl-title-amid-key-injuries-cd70c692",
-      "slug": "chargers-aim-super-bowl-title-amid-key-injuries-cd70c692",
-      "sport": "football",
-      "headline": "Chargers aim for a Super Bowl title amid key injuries and a brutal schedule",
-      "blurb": "The Chargers are looking for real gains under Jim Harbaugh after two one-and-done playoff campaigns, but can Justin Herbert lead them to a home Super Bowl?",
-      "summary": "The Chargers are looking for real gains under Jim Harbaugh after two one-and-done playoff campaigns, but can Justin Herbert lead them to a home Super Bowl? Board reading of LA Times.",
-      "category": "injury",
-      "published": "2026-09-06T11:00:00Z",
-      "updated": "2026-09-06T11:00:00Z",
-      "players": [
-        {
-          "key": "justin herbert",
-          "name": "Justin Herbert",
-          "slug": "justin-herbert",
-          "pos": "QB",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Chargers aim for a Super Bowl title amid key injuries and a brutal schedule",
-          "url": "https://sports.yahoo.com/articles/chargers-aim-super-bowl-title-110000694.html",
-          "publisher": "LA Times",
-          "kind": "article",
-          "snippet": "The Chargers are looking for real gains under Jim Harbaugh after two one-and-done playoff campaigns, but can Justin Herbert lead them to a home Super Bowl?",
-          "published": "Sun, 06 Sep 2026 11:00:00 +0000"
         }
       ]
     },
@@ -5324,6 +5354,123 @@
           "kind": "article",
           "snippet": "One Big Thing: How Bears Rookie Colston Loveland Became Caleb Williams’ Top Target FOX Sports",
           "published": "Sat, 17 Jan 2026 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "commanders-jayden-daniels-frustrated-premature-ending-focused-longevity-817f9286",
+      "slug": "commanders-jayden-daniels-frustrated-premature-ending-focused-longevity-817f9286",
+      "sport": "football",
+      "headline": "Commanders' Jayden Daniels frustrated by premature ending to season, focused on 'longevity'",
+      "blurb": "Insider Gets Blunt on Commanders’ Jayden Daniels Before Eagles Game heavy.com",
+      "summary": "Insider Gets Blunt on Commanders’ Jayden Daniels Before Eagles Game heavy.com Jayden Daniels Fantasy Football Outlook (2026) FantasyPros Commanders’ Jayden Daniels Gets Big Update Before Lions Preseason Game Yahoo Sports Aggregated from heavy.com, FantasyPros, Yahoo Sports, The New York Times, NBC Sports and 3 more.",
+      "category": "practice",
+      "published": "2025-12-17T08:00:00Z",
+      "updated": "2026-09-04T21:50:49Z",
+      "players": [
+        {
+          "key": "jayden daniels",
+          "name": "Jayden Daniels",
+          "slug": "jayden-daniels",
+          "pos": "QB",
+          "team": "WAS"
+        },
+        {
+          "key": "lamar jackson",
+          "name": "Lamar Jackson",
+          "slug": "lamar-jackson",
+          "pos": "QB",
+          "team": "BAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Insider Gets Blunt on Commanders’ Jayden Daniels Before Eagles Game",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeW9ES3M0clZRSmxJc0lCeGtEUVBibzZCNXg4V2d2MjdBaE1Ibm14U0VrQ1lNWERaZ3NXcDNFcHNQcW1oOGI3ekxZSlRBeDk4TVZzcENHYVl1b2w4Mmh5Ujg5Nm50WWM3d3pwZXFDRUNHS0phV1RKWkxEbDhIN3pHVzh6a3I4UUs0dDkxTmo2TllnYkxHdUJmX21aZEFfbGV3QlVUbkJPbE9vV0dOYjE1Rk9RQVhpcm93dVE?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Insider Gets Blunt on Commanders’ Jayden Daniels Before Eagles Game heavy.com",
+          "published": "Fri, 04 Sep 2026 21:50:49 GMT"
+        },
+        {
+          "title": "Jayden Daniels Fantasy Football Outlook (2026)",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONUtqYXNWV3AtN2dwZmFVZDM5ZG9hVHVubmF1RG44UEFrWUppV1NCWmtfcHZFTVpBR2txZFZPbXA5MkNBLWtoNkVNVTBKS0pMaTV6Z2d4NDAxNGpqa05wMjBBOWdiWXpzbzl1QXU0ekFsZW9UWU02bG5DNFNQQkEtcnh30gGHAUFVX3lxTE04dDB0MTEzbFY5bDJQSjNNYlBVSjUwUkRnNnpGb1VMbzQ4WlF3Ym0xMVFOcFUwVUVlREtWU04yLWdBenJtR09tcTNRcjVzbWxsWUR0SXJod2IzNG9HZ0dFa0syZlpfZlE4T3BiYWVobGtNZnNNbnZRVjd1aFdHUlBZcDBmS1p0UQ?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Jayden Daniels Fantasy Football Outlook (2026) FantasyPros",
+          "published": "Thu, 03 Sep 2026 01:17:00 GMT"
+        },
+        {
+          "title": "Commanders’ Jayden Daniels Gets Big Update Before Lions Preseason Game",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQajlfTnlhQkFxMDlQNGZjaERzenlBUEYzaC1xdGxjcDJSb1Y3bklVRzQwb09xZUZ5UUV0ZGlobWVDX2hsNm5ZU0Rya1pjdzFWQml3VWNSdzNhbEhJbFA2TEI5dElkcF84UTNxcjY5bUhoUjBvbUphNS1BMmJwbHdaUGt2Uk5OZ1ZJaEc0?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Commanders’ Jayden Daniels Gets Big Update Before Lions Preseason Game Yahoo Sports",
+          "published": "Sun, 16 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Commanders’ Jayden Daniels, offense struggle against Ravens: ‘Not the best day’",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcS1teXVCOTFuZ3FFUThhU2RmeHl6WDNPMHZrS0RoNVNaazBXc3VSLUdpV2VGWHFxZFBWVEp3T0lqdHV5b2pOTXYydWhORWM4OC1KOVFrdTRTMDhCSkJEUXA1VXFsWDFjdUZCUWxZU0x3azZPUWZSQ0dIek9KTnlKclJrVjc4VHRYU0xSOTFrSmpfLWlERUFHM29pQVM5TWxLVGFlcw?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Commanders’ Jayden Daniels, offense struggle against Ravens: ‘Not the best day’ - The Athletic The New York Times",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Commanders’ Jayden Daniels Speaks out on Offensive Line Amid Severe Struggles",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeGt5WDczWS1KTVk1VlNvYkcwcUY5WWNScnctSndnZzJHdE1Oa1VfOERFVlF1S1BTSjJ3WE1Vc1lGRUZNVVRVUXhfYUduQlh2LVdyZGFyYzhIczZDWWREZGwwZ3VYZkJ4WFN2MXZqUVB4bHFEaXlQQktRVEZueHdTOENSbGU4d3JFLVh3dTVTNWd3WUNGTWc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Commanders’ Jayden Daniels Speaks out on Offensive Line Amid Severe Struggles Yahoo Sports",
+          "published": "Thu, 27 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jayden Daniels addresses LSU squabble: \"My sole personal focus is on Commanders' football\"",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQdE1QTHRydGdpTGM3dkdjTjQ1RmxtcTRvY00wYUVRUW5SVGtFbEw4cDJ2ZFExUVQta0RnNkZwSFEzbFFUUU9ZZ2FkdHZMNFBHVGRtaWxHQmpBVU9YendEbERJc3dJUW93MW1CMjl1RFduY1M1YlFoeGpwUXZkSkhsTmloVXBlMkZqWUVJc3dHS0NvSE93RFQ4Z0lvWE85S1ZWQWhqY2dPZDV6cnpvV19aLUFNeGwtVTRxV3hESEtfQU1NanMtcW9JNHlNcHRfUWFkTGp5XzcwcC1hU1ZLTWUxak13?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Jayden Daniels addresses LSU squabble: \"My sole personal focus is on Commanders' football\" NBC Sports",
+          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Review of Commanders’ OL from Ravens practice is troubling for Jayden Daniels",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUWpLQmg5aFg3U0loRGVtNWZPVjVxLUxPODl2ZzFka0ZtV092eVlwV2VDUVJfNDZSNHdjLXdmNGVOdlRoU2UwQWRpZE1kTnExUFRQb1ZMMHdUeEpIeHV5dWdZakp3UW9nU3hWbW1tdkRuclNWMzRjRHgyMmM3allwV01qY2ljV0VIOXJVc1M0OVlmTi15Unc?oc=5",
+          "publisher": "The Big Lead",
+          "kind": "article",
+          "snippet": "Review of Commanders’ OL from Ravens practice is troubling for Jayden Daniels The Big Lead",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "David Blough's offense changes things for Commanders' Jayden Daniels",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNjV4RmIyOHdTeDV4RVN4TGswcnp6VFk1bl9RQkNNQk9vdGtxMVBMNVd5VXNPVENSM0VUSGtKbTRJa2N3akJ2anpGWDhrM19QdnVsUVdZdUpRZmhTYTFZSWxicTRwblNja0dSbnNnVzVIbnJkcFZsUGJqMU5sYTFweFM5Y0NUTDVVbkRiZGxJdU5rbUt4bm00S1ZqUDZyVmwySU9GNzJWMHhtaXFvQzYwZDZRT1pHcjNiclgyTEp0VEVacDhXdG95TGZHYWs1OVBaSDhEdC10RXdyeE5ROE5Wa3lfYw?oc=5",
+          "publisher": "Commanders Wire",
+          "kind": "article",
+          "snippet": "David Blough's offense changes things for Commanders' Jayden Daniels Commanders Wire",
+          "published": "Mon, 24 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Commanders' Jayden Daniels frustrated by premature ending to season, focused on 'longevity'",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYzhrQlpEZDFEZ3JyeDJWd1lvNUZtb2dzWVhVampFU3Z3WGdVaWRxMG01R09lVlBSN29yUzBoZXdLVmRUa0xyNzFzcS16VHhMTGFQUDJwNllZOXUtU3FzTXk4cWxiMVZrdzE5Y3JwQ3V6WlVUQ0ZsaVJUcGZKZzhVeVgyOTBLQmpEVF9ERGFoaElVemotbkRZbTVuOXdSalFu?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "Commanders' Jayden Daniels frustrated by premature ending to season, focused on 'longevity' NFL.com",
+          "published": "Wed, 17 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Commanders’ Jayden Daniels Gets Blunt About Ravens’ Lamar Jackson",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQd21qa3BTNnRBYzhMbmxya1UwRmZ5YkpxMnR3QUdxRGVGclhBcEszbDhVaVV2bW5HUUdvLTBVaXZlOXFrSlhTLWR3eW1MOVFaa1hrMVhRUnJwYjJVZ1VVYjdlWDBuSG13SmhJM0VGVWw0dkFoUDhSemFpNGU1bzJpM0VDWGhBbU1weDFDNFMzVWJyT3loSzVVRw?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Commanders’ Jayden Daniels Gets Blunt About Ravens’ Lamar Jackson heavy.com",
+          "published": "Thu, 27 Aug 2026 03:44:00 GMT"
+        },
+        {
+          "title": "Commanders’ Jayden Daniels Makes Thoughts on Rookie QB Perfectly Clear",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQS2FMYlp3aF8zeF9BVTRqMk1Yb0dPdDZLbkxpQ0UwYUlLTFU3Ul9LRlAwQTlsTU5SQXo4aW0tRXpJd1hXbjNEWVE2VDBTMEk0bk8yRGtWMVRDaElWa0ZwTW9hRUsycjFHS0V2ZWFSRUE0SS00RzVRN3Q1OWphUzlTamtvMXZHYlU0NUdFNFNQblNBWXlWNmk2MA?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Commanders’ Jayden Daniels Makes Thoughts on Rookie QB Perfectly Clear heavy.com",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -6581,123 +6728,6 @@
       ]
     },
     {
-      "id": "commanders-jayden-daniels-frustrated-premature-ending-focused-longevity-817f9286",
-      "slug": "commanders-jayden-daniels-frustrated-premature-ending-focused-longevity-817f9286",
-      "sport": "football",
-      "headline": "Commanders' Jayden Daniels frustrated by premature ending to season, focused on 'longevity'",
-      "blurb": "Insider Gets Blunt on Commanders’ Jayden Daniels Before Eagles Game heavy.com",
-      "summary": "Insider Gets Blunt on Commanders’ Jayden Daniels Before Eagles Game heavy.com Jayden Daniels Fantasy Football Outlook (2026) FantasyPros Commanders’ Jayden Daniels Gets Big Update Before Lions Preseason Game Yahoo Sports Aggregated from heavy.com, FantasyPros, Yahoo Sports, The New York Times, NBC Sports and 3 more.",
-      "category": "practice",
-      "published": "2025-12-17T08:00:00Z",
-      "updated": "2026-09-04T21:50:49Z",
-      "players": [
-        {
-          "key": "jayden daniels",
-          "name": "Jayden Daniels",
-          "slug": "jayden-daniels",
-          "pos": "QB",
-          "team": "WAS"
-        },
-        {
-          "key": "lamar jackson",
-          "name": "Lamar Jackson",
-          "slug": "lamar-jackson",
-          "pos": "QB",
-          "team": "BAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Insider Gets Blunt on Commanders’ Jayden Daniels Before Eagles Game",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeW9ES3M0clZRSmxJc0lCeGtEUVBibzZCNXg4V2d2MjdBaE1Ibm14U0VrQ1lNWERaZ3NXcDNFcHNQcW1oOGI3ekxZSlRBeDk4TVZzcENHYVl1b2w4Mmh5Ujg5Nm50WWM3d3pwZXFDRUNHS0phV1RKWkxEbDhIN3pHVzh6a3I4UUs0dDkxTmo2TllnYkxHdUJmX21aZEFfbGV3QlVUbkJPbE9vV0dOYjE1Rk9RQVhpcm93dVE?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Insider Gets Blunt on Commanders’ Jayden Daniels Before Eagles Game heavy.com",
-          "published": "Fri, 04 Sep 2026 21:50:49 GMT"
-        },
-        {
-          "title": "Jayden Daniels Fantasy Football Outlook (2026)",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxONUtqYXNWV3AtN2dwZmFVZDM5ZG9hVHVubmF1RG44UEFrWUppV1NCWmtfcHZFTVpBR2txZFZPbXA5MkNBLWtoNkVNVTBKS0pMaTV6Z2d4NDAxNGpqa05wMjBBOWdiWXpzbzl1QXU0ekFsZW9UWU02bG5DNFNQQkEtcnh30gGHAUFVX3lxTE04dDB0MTEzbFY5bDJQSjNNYlBVSjUwUkRnNnpGb1VMbzQ4WlF3Ym0xMVFOcFUwVUVlREtWU04yLWdBenJtR09tcTNRcjVzbWxsWUR0SXJod2IzNG9HZ0dFa0syZlpfZlE4T3BiYWVobGtNZnNNbnZRVjd1aFdHUlBZcDBmS1p0UQ?oc=5",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "Jayden Daniels Fantasy Football Outlook (2026) FantasyPros",
-          "published": "Thu, 03 Sep 2026 01:17:00 GMT"
-        },
-        {
-          "title": "Commanders’ Jayden Daniels Gets Big Update Before Lions Preseason Game",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQajlfTnlhQkFxMDlQNGZjaERzenlBUEYzaC1xdGxjcDJSb1Y3bklVRzQwb09xZUZ5UUV0ZGlobWVDX2hsNm5ZU0Rya1pjdzFWQml3VWNSdzNhbEhJbFA2TEI5dElkcF84UTNxcjY5bUhoUjBvbUphNS1BMmJwbHdaUGt2Uk5OZ1ZJaEc0?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Commanders’ Jayden Daniels Gets Big Update Before Lions Preseason Game Yahoo Sports",
-          "published": "Sun, 16 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Commanders’ Jayden Daniels, offense struggle against Ravens: ‘Not the best day’",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcS1teXVCOTFuZ3FFUThhU2RmeHl6WDNPMHZrS0RoNVNaazBXc3VSLUdpV2VGWHFxZFBWVEp3T0lqdHV5b2pOTXYydWhORWM4OC1KOVFrdTRTMDhCSkJEUXA1VXFsWDFjdUZCUWxZU0x3azZPUWZSQ0dIek9KTnlKclJrVjc4VHRYU0xSOTFrSmpfLWlERUFHM29pQVM5TWxLVGFlcw?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Commanders’ Jayden Daniels, offense struggle against Ravens: ‘Not the best day’ - The Athletic The New York Times",
-          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Commanders’ Jayden Daniels Speaks out on Offensive Line Amid Severe Struggles",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeGt5WDczWS1KTVk1VlNvYkcwcUY5WWNScnctSndnZzJHdE1Oa1VfOERFVlF1S1BTSjJ3WE1Vc1lGRUZNVVRVUXhfYUduQlh2LVdyZGFyYzhIczZDWWREZGwwZ3VYZkJ4WFN2MXZqUVB4bHFEaXlQQktRVEZueHdTOENSbGU4d3JFLVh3dTVTNWd3WUNGTWc?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Commanders’ Jayden Daniels Speaks out on Offensive Line Amid Severe Struggles Yahoo Sports",
-          "published": "Thu, 27 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Jayden Daniels addresses LSU squabble: \"My sole personal focus is on Commanders' football\"",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQdE1QTHRydGdpTGM3dkdjTjQ1RmxtcTRvY00wYUVRUW5SVGtFbEw4cDJ2ZFExUVQta0RnNkZwSFEzbFFUUU9ZZ2FkdHZMNFBHVGRtaWxHQmpBVU9YendEbERJc3dJUW93MW1CMjl1RFduY1M1YlFoeGpwUXZkSkhsTmloVXBlMkZqWUVJc3dHS0NvSE93RFQ4Z0lvWE85S1ZWQWhqY2dPZDV6cnpvV19aLUFNeGwtVTRxV3hESEtfQU1NanMtcW9JNHlNcHRfUWFkTGp5XzcwcC1hU1ZLTWUxak13?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Jayden Daniels addresses LSU squabble: \"My sole personal focus is on Commanders' football\" NBC Sports",
-          "published": "Thu, 13 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Review of Commanders’ OL from Ravens practice is troubling for Jayden Daniels",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUWpLQmg5aFg3U0loRGVtNWZPVjVxLUxPODl2ZzFka0ZtV092eVlwV2VDUVJfNDZSNHdjLXdmNGVOdlRoU2UwQWRpZE1kTnExUFRQb1ZMMHdUeEpIeHV5dWdZakp3UW9nU3hWbW1tdkRuclNWMzRjRHgyMmM3allwV01qY2ljV0VIOXJVc1M0OVlmTi15Unc?oc=5",
-          "publisher": "The Big Lead",
-          "kind": "article",
-          "snippet": "Review of Commanders’ OL from Ravens practice is troubling for Jayden Daniels The Big Lead",
-          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "David Blough's offense changes things for Commanders' Jayden Daniels",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNjV4RmIyOHdTeDV4RVN4TGswcnp6VFk1bl9RQkNNQk9vdGtxMVBMNVd5VXNPVENSM0VUSGtKbTRJa2N3akJ2anpGWDhrM19QdnVsUVdZdUpRZmhTYTFZSWxicTRwblNja0dSbnNnVzVIbnJkcFZsUGJqMU5sYTFweFM5Y0NUTDVVbkRiZGxJdU5rbUt4bm00S1ZqUDZyVmwySU9GNzJWMHhtaXFvQzYwZDZRT1pHcjNiclgyTEp0VEVacDhXdG95TGZHYWs1OVBaSDhEdC10RXdyeE5ROE5Wa3lfYw?oc=5",
-          "publisher": "Commanders Wire",
-          "kind": "article",
-          "snippet": "David Blough's offense changes things for Commanders' Jayden Daniels Commanders Wire",
-          "published": "Mon, 24 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Commanders' Jayden Daniels frustrated by premature ending to season, focused on 'longevity'",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYzhrQlpEZDFEZ3JyeDJWd1lvNUZtb2dzWVhVampFU3Z3WGdVaWRxMG01R09lVlBSN29yUzBoZXdLVmRUa0xyNzFzcS16VHhMTGFQUDJwNllZOXUtU3FzTXk4cWxiMVZrdzE5Y3JwQ3V6WlVUQ0ZsaVJUcGZKZzhVeVgyOTBLQmpEVF9ERGFoaElVemotbkRZbTVuOXdSalFu?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "Commanders' Jayden Daniels frustrated by premature ending to season, focused on 'longevity' NFL.com",
-          "published": "Wed, 17 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Commanders’ Jayden Daniels Gets Blunt About Ravens’ Lamar Jackson",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQd21qa3BTNnRBYzhMbmxya1UwRmZ5YkpxMnR3QUdxRGVGclhBcEszbDhVaVV2bW5HUUdvLTBVaXZlOXFrSlhTLWR3eW1MOVFaa1hrMVhRUnJwYjJVZ1VVYjdlWDBuSG13SmhJM0VGVWw0dkFoUDhSemFpNGU1bzJpM0VDWGhBbU1weDFDNFMzVWJyT3loSzVVRw?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Commanders’ Jayden Daniels Gets Blunt About Ravens’ Lamar Jackson heavy.com",
-          "published": "Thu, 27 Aug 2026 03:44:00 GMT"
-        },
-        {
-          "title": "Commanders’ Jayden Daniels Makes Thoughts on Rookie QB Perfectly Clear",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQS2FMYlp3aF8zeF9BVTRqMk1Yb0dPdDZLbkxpQ0UwYUlLTFU3Ul9LRlAwQTlsTU5SQXo4aW0tRXpJd1hXbjNEWVE2VDBTMEk0bk8yRGtWMVRDaElWa0ZwTW9hRUsycjFHS0V2ZWFSRUE0SS00RzVRN3Q1OWphUzlTamtvMXZHYlU0NUdFNFNQblNBWXlWNmk2MA?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Commanders’ Jayden Daniels Makes Thoughts on Rookie QB Perfectly Clear heavy.com",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "do-touch-patrick-mahomes-ex-super-bowl-winner-73e495bc",
       "slug": "do-touch-patrick-mahomes-ex-super-bowl-winner-73e495bc",
       "sport": "football",
@@ -6891,6 +6921,44 @@
       ]
     },
     {
+      "id": "final-cuts-jets-move-38-players-reduce-active-9244cb13",
+      "slug": "final-cuts-jets-move-38-players-reduce-active-9244cb13",
+      "sport": "football",
+      "headline": "Final Cuts | Jets Move 38 Players to Reduce Active Roster to 52 Players",
+      "blurb": "Patriots DT sends strong message to NFL players after roster cuts Patriots Wire",
+      "summary": "Patriots DT sends strong message to NFL players after roster cuts Patriots Wire Patriots Withdrew Claims On Three Players During Roster Cuts nfltraderumors.co Final Cuts | Jets Move 38 Players to Reduce Active Roster to 52 Players New York Jets Aggregated from Patriots Wire, nfltraderumors.co, New York Jets.",
+      "category": "roster",
+      "published": "2026-08-31T00:48:11Z",
+      "updated": "2026-09-06T14:30:16Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Patriots Withdrew Claims On Three Players During Roster Cuts",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRzhYdS15ODJpUDh4dHVLdzJKRTVuOWUtTmw5c0hoalFlZG1VMWdUcU02aEZlcTJ4MElJMTlFYmRXVWNOdnRjQk9admlRRG03c29ZSkVZU25oQjZ1T3JSVEJUeGdkTEhyeXBuT1ptcjNQS2JVdk05aWx5SjNUUFhZYzRodUtYQTBWR3R3OC02Zno?oc=5",
+          "publisher": "nfltraderumors.co",
+          "kind": "article",
+          "snippet": "Patriots Withdrew Claims On Three Players During Roster Cuts nfltraderumors.co",
+          "published": "Sun, 06 Sep 2026 14:30:16 GMT"
+        },
+        {
+          "title": "Final Cuts | Jets Move 38 Players to Reduce Active Roster to 52 Players",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9scnlsN2lhaVFFQTZJLVNHemtxeGU3ZGtBd0s1MlNEM0szWk9UenBrLXhHdFVIalNYUXZGQWdSRi1vbkhqb0Zhd3EyZjlieE05TDEyZ0x5aFpMeFl6aWNxeTNzOElYcThQdzFnMDJmcVdRd1lyWnl3?oc=5",
+          "publisher": "New York Jets",
+          "kind": "article",
+          "snippet": "Final Cuts | Jets Move 38 Players to Reduce Active Roster to 52 Players New York Jets",
+          "published": "Mon, 31 Aug 2026 00:48:11 GMT"
+        },
+        {
+          "title": "Patriots DT sends strong message to NFL players after roster cuts",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNVEdzZ0lQR1dEOVNieDlOWnVuLVpNbDFkMktncWRPYlRQMHlTRnViS2x2Vk9xamQ1T1RhR2N4OFNBNnBmclpaRmJfd2l4ZTk4VFNlRDRpMWNXYUozVmVfRWRuRFdPaGY4RjBQRk1tdFIwWUNKajZxVDc0X2U3UC1nSUpIOG1zTGx6SWplQmxBaWw0NkE3Y2hDdGktOVltRGRuY0RsenpQNnp1eEVPaHV3di1RdGdTaWdhdTEyZkdkNVREVmM5MHpqcEg3M2d6WnVqR1BFTUxueTA5Zw?oc=5",
+          "publisher": "Patriots Wire",
+          "kind": "article",
+          "snippet": "Patriots DT sends strong message to NFL players after roster cuts Patriots Wire",
+          "published": "Thu, 03 Sep 2026 15:20:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "mike-tomlin-explains-why-steelers-chose-dk-metcalf-39e54cce",
       "slug": "mike-tomlin-explains-why-steelers-chose-dk-metcalf-39e54cce",
       "sport": "football",
@@ -6980,6 +7048,60 @@
           "kind": "article",
           "snippet": "Mike Tomlin finally reveals why Steelers traded George Pickens to Cowboys bolavip.com",
           "published": "Fri, 04 Sep 2026 17:23:17 GMT"
+        }
+      ]
+    },
+    {
+      "id": "1-college-injury-dae-quan-wright-playing-ace9d773",
+      "slug": "1-college-injury-dae-quan-wright-playing-ace9d773",
+      "sport": "football",
+      "headline": "College Football Injury Report: Latest Week 1 updates at Clemson, Texas & more",
+      "blurb": "Week 1 College Football injury report📋 Latest on Clemson, Tennessee, Alabama, Oklahoma, Louisville and more injuries heading into game day.",
+      "summary": "Dae'Quan Wright: Week 1 College Football injury report📋 Latest on Clemson, Tennessee, Alabama, Oklahoma, Louisville and more injuries heading into game day. View: https://t.co/OQtO5PFjGw x.com Week 1 College Football Injury Report: Is Dae’Quan Wright Playing? Aggregated from x.com, Sports Betting Dime, On3.",
+      "category": "injury",
+      "published": "2026-08-28T14:01:19Z",
+      "updated": "2026-09-05T09:00:00Z",
+      "players": [
+        {
+          "key": "daequan wright",
+          "name": "Dae'Quan Wright",
+          "slug": "daequan-wright",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Week 1 College Football Injury Report: Is Dae’Quan Wright Playing?",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRHFNZnhnWDl3S1lBZ1VBZWc3dC1DcmxtOF84QkVhZ0gyT0xiYTR2RnUwd05lWGktTkF1YmRwWUt2dlFyVjY0Y3g5U2dQRV8zUWhGUm1KbTdMbzBPQVNxQ2x2TjMzUnRzamgtMzR3c3FkWUJibUUzUEVfaV9tUnc5bnVQOUNsQXhpOHpVLXl0cmw1ajVxdWt1aEJHb3ltX1JYVXg3bnJ3?oc=5",
+          "publisher": "Sports Betting Dime",
+          "kind": "article",
+          "snippet": "Week 1 College Football Injury Report: Is Dae’Quan Wright Playing? Sports Betting Dime",
+          "published": "Sat, 05 Sep 2026 09:00:00 GMT"
+        },
+        {
+          "title": "College Football Injury Report: Latest Week 0 updates at TCU, Virginia & more",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbzVIeGdtMWpPLXI1Vy0zRVIzaE9MMUdqdFlkWEVxaEZZT013R0d2Vkl0MXVOTFRDejhYeEhDVnlsNzRWRWpFMm5ENEJPUXhoVnRFeXYwamMzTkNMbTU2VENLaUotWS1KMmhsNWtHV0FTMk9Gby0yd1hxZkpBZFZkTldxWkJQem84TUhwOWxoVmxfWUY3S3dRY0xoZWtzZ1Jj?oc=5",
+          "publisher": "On3",
+          "kind": "article",
+          "snippet": "College Football Injury Report: Latest Week 0 updates at TCU, Virginia & more On3",
+          "published": "Fri, 28 Aug 2026 14:01:19 GMT"
+        },
+        {
+          "title": "College Football Injury Report: Latest Week 1 updates at Clemson, Texas & more",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdkFSTldmZktTQnBFYWdEZFFwT2hGS2pMajBpTVMycENOUmI5azdmR2FJRHpyMGNmQS1BY0dxN0hielRxT1otbXhzbC0tLTFnbHl4SXNUY0gwbmktWmpvTXdLeGhvU3RzNEhsQTd1Q1VvaUdsdHZ3NXE3Y3pqZi04WWg1aHZXR1U4a1VKQndQUERZa21uNHJaV2VJX2FmOXFOVGc?oc=5",
+          "publisher": "On3",
+          "kind": "article",
+          "snippet": "College Football Injury Report: Latest Week 1 updates at Clemson, Texas & more On3",
+          "published": "Fri, 04 Sep 2026 13:52:45 GMT"
+        },
+        {
+          "title": "Week 1 College Football injury report📋 Latest on Clemson, Tennessee, Alabama, Oklahoma, Louisville and more injuries heading into game day. View: https://t.co/OQtO5PFjGw",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA0TWV2emMwYTV5bWFDWkhwaVFRdVM5QVFranNXRy1QY1RXYkdVdEYyeEZuMVBTRXlMM1M5cHhiTnZ2SGJMck5sV1VtZzdMdk5kWU91TGNHZw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Week 1 College Football injury report📋 Latest on Clemson, Tennessee, Alabama, Oklahoma, Louisville and more injuries heading into game day. View: https://t.co/OQtO5PFjGw x.com",
+          "published": "Fri, 04 Sep 2026 15:37:01 GMT"
         }
       ]
     },
@@ -7093,6 +7215,36 @@
           "kind": "article",
           "snippet": "Rashee Rice, C.J. Stroud, De'Von Achane, and More NFL News Footballguys",
           "published": "Sat, 05 Sep 2026 09:21:15 GMT"
+        }
+      ]
+    },
+    {
+      "id": "rams-release-player-who-injured-reserve-e5a8ba38",
+      "slug": "rams-release-player-who-injured-reserve-e5a8ba38",
+      "sport": "football",
+      "headline": "Rams release player who was on injured reserve",
+      "blurb": "Rams release player who was on injured reserve Yahoo Sports",
+      "summary": "Rams release player who was on injured reserve Yahoo Sports Rams make roster change and other news Aggregated from Yahoo Sports, SB Nation.",
+      "category": "injury",
+      "published": "2026-09-06T13:00:00Z",
+      "updated": "2026-09-06T13:00:00Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Rams release player who was on injured reserve",
+          "url": "https://sports.yahoo.com/articles/rams-release-player-injured-130000789.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Rams make roster change and other news",
+          "published": "Sun, 06 Sep 2026 13:00:00 +0000"
+        },
+        {
+          "title": "Rams release player who was on injured reserve",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLUVQdmNlUEhZT1ZUSmRITWh4bkEtRHdHRlR6RlMzb1JpSm9TaTZaNlozeE9UQ2FnN1VLQU83N2VJLUFWOC1jTXZaWEFJRzBRX3NpdExlX1BpdzM3U0dEUEV5VkM0NzZFaHllMTkweHJQcjNqMlhlckd4cHdhTU1PdXBR?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Rams release player who was on injured reserve Yahoo Sports",
+          "published": "Sun, 06 Sep 2026 13:00:00 GMT"
         }
       ]
     },
@@ -7228,52 +7380,6 @@
           "kind": "article",
           "snippet": "Jordyn Tyson Fantasy Football Injury Update: When Will Saints WR Return? Complex",
           "published": "Sat, 05 Sep 2026 18:16:34 GMT"
-        }
-      ]
-    },
-    {
-      "id": "1-college-injury-dae-quan-wright-playing-ace9d773",
-      "slug": "1-college-injury-dae-quan-wright-playing-ace9d773",
-      "sport": "football",
-      "headline": "College Football Injury Report: Latest Week 1 updates at Clemson, Texas & more",
-      "blurb": "Week 1 College Football Injury Report: Is Dae’Quan Wright Playing?",
-      "summary": "Dae'Quan Wright: Week 1 College Football Injury Report: Is Dae’Quan Wright Playing? College Football Injury Report: Latest Week 0 updates at TCU, Virginia & more On3 College Football Injury Report: Latest Week 1 updates at Clemson, Texas & more On3 Aggregated from Sports Betting Dime, On3.",
-      "category": "injury",
-      "published": "2026-08-28T14:01:19Z",
-      "updated": "2026-09-05T09:00:00Z",
-      "players": [
-        {
-          "key": "daequan wright",
-          "name": "Dae'Quan Wright",
-          "slug": "daequan-wright",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Week 1 College Football Injury Report: Is Dae’Quan Wright Playing?",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRHFNZnhnWDl3S1lBZ1VBZWc3dC1DcmxtOF84QkVhZ0gyT0xiYTR2RnUwd05lWGktTkF1YmRwWUt2dlFyVjY0Y3g5U2dQRV8zUWhGUm1KbTdMbzBPQVNxQ2x2TjMzUnRzamgtMzR3c3FkWUJibUUzUEVfaV9tUnc5bnVQOUNsQXhpOHpVLXl0cmw1ajVxdWt1aEJHb3ltX1JYVXg3bnJ3?oc=5",
-          "publisher": "Sports Betting Dime",
-          "kind": "article",
-          "snippet": "Week 1 College Football Injury Report: Is Dae’Quan Wright Playing? Sports Betting Dime",
-          "published": "Sat, 05 Sep 2026 09:00:00 GMT"
-        },
-        {
-          "title": "College Football Injury Report: Latest Week 0 updates at TCU, Virginia & more",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbzVIeGdtMWpPLXI1Vy0zRVIzaE9MMUdqdFlkWEVxaEZZT013R0d2Vkl0MXVOTFRDejhYeEhDVnlsNzRWRWpFMm5ENEJPUXhoVnRFeXYwamMzTkNMbTU2VENLaUotWS1KMmhsNWtHV0FTMk9Gby0yd1hxZkpBZFZkTldxWkJQem84TUhwOWxoVmxfWUY3S3dRY0xoZWtzZ1Jj?oc=5",
-          "publisher": "On3",
-          "kind": "article",
-          "snippet": "College Football Injury Report: Latest Week 0 updates at TCU, Virginia & more On3",
-          "published": "Fri, 28 Aug 2026 14:01:19 GMT"
-        },
-        {
-          "title": "College Football Injury Report: Latest Week 1 updates at Clemson, Texas & more",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdkFSTldmZktTQnBFYWdEZFFwT2hGS2pMajBpTVMycENOUmI5azdmR2FJRHpyMGNmQS1BY0dxN0hielRxT1otbXhzbC0tLTFnbHl4SXNUY0gwbmktWmpvTXdLeGhvU3RzNEhsQTd1Q1VvaUdsdHZ3NXE3Y3pqZi04WWg1aHZXR1U4a1VKQndQUERZa21uNHJaV2VJX2FmOXFOVGc?oc=5",
-          "publisher": "On3",
-          "kind": "article",
-          "snippet": "College Football Injury Report: Latest Week 1 updates at Clemson, Texas & more On3",
-          "published": "Fri, 04 Sep 2026 13:52:45 GMT"
         }
       ]
     },
@@ -7418,36 +7524,6 @@
       ]
     },
     {
-      "id": "final-cuts-jets-move-38-players-reduce-active-9244cb13",
-      "slug": "final-cuts-jets-move-38-players-reduce-active-9244cb13",
-      "sport": "football",
-      "headline": "Final Cuts | Jets Move 38 Players to Reduce Active Roster to 52 Players",
-      "blurb": "Patriots Withdrew Claims On Three Players During Roster Cuts nfltraderumors.co",
-      "summary": "Patriots Withdrew Claims On Three Players During Roster Cuts nfltraderumors.co Final Cuts | Jets Move 38 Players to Reduce Active Roster to 52 Players New York Jets Aggregated from nfltraderumors.co, New York Jets.",
-      "category": "roster",
-      "published": "2026-08-31T00:48:11Z",
-      "updated": "2026-09-06T14:30:16Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Patriots Withdrew Claims On Three Players During Roster Cuts",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRzhYdS15ODJpUDh4dHVLdzJKRTVuOWUtTmw5c0hoalFlZG1VMWdUcU02aEZlcTJ4MElJMTlFYmRXVWNOdnRjQk9admlRRG03c29ZSkVZU25oQjZ1T3JSVEJUeGdkTEhyeXBuT1ptcjNQS2JVdk05aWx5SjNUUFhZYzRodUtYQTBWR3R3OC02Zno?oc=5",
-          "publisher": "nfltraderumors.co",
-          "kind": "article",
-          "snippet": "Patriots Withdrew Claims On Three Players During Roster Cuts nfltraderumors.co",
-          "published": "Sun, 06 Sep 2026 14:30:16 GMT"
-        },
-        {
-          "title": "Final Cuts | Jets Move 38 Players to Reduce Active Roster to 52 Players",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9scnlsN2lhaVFFQTZJLVNHemtxeGU3ZGtBd0s1MlNEM0szWk9UenBrLXhHdFVIalNYUXZGQWdSRi1vbkhqb0Zhd3EyZjlieE05TDEyZ0x5aFpMeFl6aWNxeTNzOElYcThQdzFnMDJmcVdRd1lyWnl3?oc=5",
-          "publisher": "New York Jets",
-          "kind": "article",
-          "snippet": "Final Cuts | Jets Move 38 Players to Reduce Active Roster to 52 Players New York Jets",
-          "published": "Mon, 31 Aug 2026 00:48:11 GMT"
-        }
-      ]
-    },
-    {
       "id": "detroit-lions-fans-pick-favorite-rb2-role-b44aaf4c",
       "slug": "detroit-lions-fans-pick-favorite-rb2-role-b44aaf4c",
       "sport": "football",
@@ -7478,6 +7554,28 @@
       ]
     },
     {
+      "id": "dallas-cowboys-injury-entering-1-2026-80237bc7",
+      "slug": "dallas-cowboys-injury-entering-1-2026-80237bc7",
+      "sport": "football",
+      "headline": "Dallas Cowboys Injury Updates Entering Week 1 of 2026 NFL Season",
+      "blurb": "Dallas Cowboys Injury Updates Entering Week 1 of 2026 NFL Season Sports Illustrated",
+      "summary": "Dallas Cowboys Injury Updates Entering Week 1 of 2026 NFL Season Sports Illustrated Board reading of Sports Illustrated.",
+      "category": "injury",
+      "published": "2026-09-06T15:00:00Z",
+      "updated": "2026-09-06T15:00:00Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Dallas Cowboys Injury Updates Entering Week 1 of 2026 NFL Season",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeUhSZDlHOWRfX3RDQmkxRUN5OXpyY05lcW51YkRnUnhTN1AzeTFfOUpWUXBxR3VqeVFiYTdxTUlOTWNfVUo0V1puS0xHUEYxaHBfeVVLNGpsQTdWdXo0ZXRzTnpSMlJ4U1RKR2J4ZktyelRGNGpwcWs5U0xySnJIWEtXb2NhUGktUVJjZExIb0ZJU2FxbzR6UW85T0loUQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Dallas Cowboys Injury Updates Entering Week 1 of 2026 NFL Season Sports Illustrated",
+          "published": "Sun, 06 Sep 2026 15:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "malachi-fields-big-time-potential-during-rookie-giants-eb874735",
       "slug": "malachi-fields-big-time-potential-during-rookie-giants-eb874735",
       "sport": "football",
@@ -7504,6 +7602,28 @@
           "kind": "article",
           "snippet": "Watch out for Giants rookie wide receiver Malachi Fields.",
           "published": "Sat, 05 Sep 2026 13:44:01 +0000"
+        }
+      ]
+    },
+    {
+      "id": "early-miami-dolphins-las-vegas-raiders-1-preview-9b560edd",
+      "slug": "early-miami-dolphins-las-vegas-raiders-1-preview-9b560edd",
+      "sport": "football",
+      "headline": "EARLY Miami Dolphins vs. Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory",
+      "blurb": "Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory YouTube",
+      "summary": "Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory YouTube Board reading of YouTube.",
+      "category": "injury",
+      "published": "2026-09-06T14:10:24Z",
+      "updated": "2026-09-06T14:10:24Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "EARLY Miami Dolphins vs. Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQMDlsd2dGSVBBWXp1bjhlSGE5NGhjMnl3SVo0RnY1U2RYQTAxOXpjNHJMUzR2RVdXN050VEVXelp4Wlp6QXZaUEs4TFhtTVZBVlpYQkZn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "EARLY Miami Dolphins vs. Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory YouTube",
+          "published": "Sun, 06 Sep 2026 14:10:24 GMT"
         }
       ]
     },
@@ -7549,6 +7669,58 @@
           "kind": "article",
           "snippet": "49ers-Titans joint practice roundup: Brock Purdy continues to shine Yahoo Sports",
           "published": "Tue, 11 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "plaschke-rams-go-undefeated-way-winning-another-home-133d889b",
+      "slug": "plaschke-rams-go-undefeated-way-winning-another-home-133d889b",
+      "sport": "football",
+      "headline": "Plaschke: Rams will go undefeated on their way to winning another home Super Bowl title",
+      "blurb": "After an offseason of blockbuster trades and Aaron Donald's return, the Rams enter the season as overwhelming favorites to win another title at SoFi Stadium.",
+      "summary": "After an offseason of blockbuster trades and Aaron Donald's return, the Rams enter the season as overwhelming favorites to win another title at SoFi Stadium. A Rams team loaded with star talent not only will win the Super Bowl, but they'll become the first NFL team to go 20-0. Board reading of LA Times.",
+      "category": "trade",
+      "published": "2026-09-06T11:00:00Z",
+      "updated": "2026-09-06T11:30:00Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "'We're like the new Dodgers.' Rams know it's another Super Bowl-or-bust season",
+          "url": "https://sports.yahoo.com/articles/were-dodgers-rams-know-another-113000296.html",
+          "publisher": "LA Times",
+          "kind": "article",
+          "snippet": "After an offseason of blockbuster trades and Aaron Donald's return, the Rams enter the season as overwhelming favorites to win another title at SoFi Stadium.",
+          "published": "Sun, 06 Sep 2026 11:30:00 +0000"
+        },
+        {
+          "title": "Plaschke: Rams will go undefeated on their way to winning another home Super Bowl title",
+          "url": "https://sports.yahoo.com/articles/plaschke-rams-undefeated-way-winning-110000816.html",
+          "publisher": "LA Times",
+          "kind": "article",
+          "snippet": "Watch out '72 Dolphins. A Rams team loaded with star talent not only will win the Super Bowl, but they'll become the first NFL team to go 20-0.",
+          "published": "Sun, 06 Sep 2026 11:00:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "wisconsin-badgers-slim-hopes-get-slight-boost-injury-cc3240ab",
+      "slug": "wisconsin-badgers-slim-hopes-get-slight-boost-injury-cc3240ab",
+      "sport": "football",
+      "headline": "Wisconsin football news: Badgers' slim hopes get slight boost with injury update",
+      "blurb": "Wisconsin football news: Badgers' slim hopes get slight boost with injury update Yahoo Sports",
+      "summary": "Wisconsin football news: Badgers' slim hopes get slight boost with injury update Yahoo Sports Board reading of Yahoo Sports.",
+      "category": "injury",
+      "published": "2026-09-06T13:19:40Z",
+      "updated": "2026-09-06T13:19:40Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Wisconsin football news: Badgers' slim hopes get slight boost with injury update",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZldYS1pVQW4xRnJJT3FGdk44eFFzeVhGTE4ybUM4RE9IQ0VUekdrY2Q4UXVJc3BfRmNKbFhPRTVlMjlsVzRjU2NLSFJJektBYkpMYkNScWM1bUtwMXFSM2tqb19nSGFpb0pNaDdfSFBHbkVqdG85MjlBWEhNQlpWeTI4TGo0M1J2YjlEU0l3?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Wisconsin football news: Badgers' slim hopes get slight boost with injury update Yahoo Sports",
+          "published": "Sun, 06 Sep 2026 13:19:40 GMT"
         }
       ]
     },
@@ -7679,244 +7851,180 @@
       ]
     },
     {
-      "id": "early-miami-dolphins-las-vegas-raiders-1-preview-9b560edd",
-      "slug": "early-miami-dolphins-las-vegas-raiders-1-preview-9b560edd",
+      "id": "luther-burden-iii-injury-bears-wr-ahead-drafts-0f5f3108",
+      "slug": "luther-burden-iii-injury-bears-wr-ahead-drafts-0f5f3108",
       "sport": "football",
-      "headline": "EARLY Miami Dolphins vs. Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory",
-      "blurb": "Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory YouTube",
-      "summary": "Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory YouTube Board reading of YouTube.",
+      "headline": "What Happened to Luther Burden III? Latest on the Bears WR’s Injury and Whether He’ll Be Ready for Week 1",
+      "blurb": "What Happened to Luther Burden III?",
+      "summary": "What Happened to Luther Burden III? Latest on the Bears WR’s Injury and Whether He’ll Be Ready for Week 1 Yahoo Sports Rome Odunze sounds off on Bears WR Luther Burden's injury recovery Bears Wire Aggregated from Yahoo Sports, Bears Wire, Sports Illustrated, Bleacher Report, FantasyPros and 3 more.",
       "category": "injury",
-      "published": "2026-09-06T14:10:24Z",
-      "updated": "2026-09-06T14:10:24Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "EARLY Miami Dolphins vs. Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQMDlsd2dGSVBBWXp1bjhlSGE5NGhjMnl3SVo0RnY1U2RYQTAxOXpjNHJMUzR2RVdXN050VEVXelp4Wlp6QXZaUEs4TFhtTVZBVlpYQkZn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "EARLY Miami Dolphins vs. Las Vegas Raiders NFL Week 1 Preview, Injury Report, Keys To Victory YouTube",
-          "published": "Sun, 06 Sep 2026 14:10:24 GMT"
-        }
-      ]
-    },
-    {
-      "id": "plaschke-rams-go-undefeated-way-winning-another-home-133d889b",
-      "slug": "plaschke-rams-go-undefeated-way-winning-another-home-133d889b",
-      "sport": "football",
-      "headline": "Plaschke: Rams will go undefeated on their way to winning another home Super Bowl title",
-      "blurb": "After an offseason of blockbuster trades and Aaron Donald's return, the Rams enter the season as overwhelming favorites to win another title at SoFi Stadium.",
-      "summary": "After an offseason of blockbuster trades and Aaron Donald's return, the Rams enter the season as overwhelming favorites to win another title at SoFi Stadium. A Rams team loaded with star talent not only will win the Super Bowl, but they'll become the first NFL team to go 20-0. Board reading of LA Times.",
-      "category": "trade",
-      "published": "2026-09-06T11:00:00Z",
-      "updated": "2026-09-06T11:30:00Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "'We're like the new Dodgers.' Rams know it's another Super Bowl-or-bust season",
-          "url": "https://sports.yahoo.com/articles/were-dodgers-rams-know-another-113000296.html",
-          "publisher": "LA Times",
-          "kind": "article",
-          "snippet": "After an offseason of blockbuster trades and Aaron Donald's return, the Rams enter the season as overwhelming favorites to win another title at SoFi Stadium.",
-          "published": "Sun, 06 Sep 2026 11:30:00 +0000"
-        },
-        {
-          "title": "Plaschke: Rams will go undefeated on their way to winning another home Super Bowl title",
-          "url": "https://sports.yahoo.com/articles/plaschke-rams-undefeated-way-winning-110000816.html",
-          "publisher": "LA Times",
-          "kind": "article",
-          "snippet": "Watch out '72 Dolphins. A Rams team loaded with star talent not only will win the Super Bowl, but they'll become the first NFL team to go 20-0.",
-          "published": "Sun, 06 Sep 2026 11:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "rams-release-player-who-injured-reserve-e5a8ba38",
-      "slug": "rams-release-player-who-injured-reserve-e5a8ba38",
-      "sport": "football",
-      "headline": "Rams release player who was on injured reserve",
-      "blurb": "Rams make roster change and other news",
-      "summary": "Rams make roster change and other news Board reading of SB Nation.",
-      "category": "injury",
-      "published": "2026-09-06T13:00:00Z",
-      "updated": "2026-09-06T13:00:00Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Rams release player who was on injured reserve",
-          "url": "https://sports.yahoo.com/articles/rams-release-player-injured-130000789.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Rams make roster change and other news",
-          "published": "Sun, 06 Sep 2026 13:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "grand-expectations-sofi-stadium-s-first-full-super-fad90939",
-      "slug": "grand-expectations-sofi-stadium-s-first-full-super-fad90939",
-      "sport": "football",
-      "headline": "NFL has grand expectations for SoFi Stadium's first 'full-on' Super Bowl",
-      "blurb": "In February 2027, SoFi Stadium will play host to Super Bowl LXI, and the NFL is excited about the possibilities after the stadium's first Super Bowl was limited by COVID…",
-      "summary": "In February 2027, SoFi Stadium will play host to Super Bowl LXI, and the NFL is excited about the possibilities after the stadium's first Super Bowl was limited by COVID restrictions. Board reading of LA Times.",
-      "category": "injury",
-      "published": "2026-09-06T12:00:00Z",
-      "updated": "2026-09-06T12:00:00Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "NFL has grand expectations for SoFi Stadium's first 'full-on' Super Bowl",
-          "url": "https://sports.yahoo.com/articles/nfl-grand-expectations-sofi-stadiums-120000433.html",
-          "publisher": "LA Times",
-          "kind": "article",
-          "snippet": "In February 2027, SoFi Stadium will play host to Super Bowl LXI, and the NFL is excited about the possibilities after the stadium's first Super Bowl was limited by COVID restrictions.",
-          "published": "Sun, 06 Sep 2026 12:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "chicago-bears-make-3-new-changes-offense-release-bfdef53c",
-      "slug": "chicago-bears-make-3-new-changes-offense-release-bfdef53c",
-      "sport": "football",
-      "headline": "Chicago Bears Make 3 NEW CHANGES On Offense | Release WR + Re-Sign RB & Roschon Johnson News",
-      "blurb": "Chicago Bears Make 3 NEW CHANGES On Offense | Release WR + Re-Sign RB & Roschon Johnson News YouTube",
-      "summary": "Chicago Bears Make 3 NEW CHANGES On Offense | Release WR + Re-Sign RB & Roschon Johnson News YouTube Board reading of YouTube.",
-      "category": "roster",
-      "published": "2026-09-05T15:44:12Z",
-      "updated": "2026-09-05T15:44:12Z",
+      "published": "2026-08-04T07:00:00Z",
+      "updated": "2026-09-01T23:57:07Z",
       "players": [
         {
-          "key": "roschon johnson",
-          "name": "Roschon Johnson",
-          "slug": "roschon-johnson",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Chicago Bears Make 3 NEW CHANGES On Offense | Release WR + Re-Sign RB & Roschon Johnson News",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5BcmRib3V3VXNjUjFrRXR4SlF0WDhEVDhBVzdpU0pVVXkyV0dDc1k3ODMxNFk0bDNZNWJ6ZncyUDE5dEhzTXVUS09tNF9ybTNaRGRkbjV3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Chicago Bears Make 3 NEW CHANGES On Offense | Release WR + Re-Sign RB & Roschon Johnson News YouTube",
-          "published": "Sat, 05 Sep 2026 15:44:12 GMT"
-        }
-      ]
-    },
-    {
-      "id": "trade-rumors-eight-players-who-could-change-teams-daf5cada",
-      "slug": "trade-rumors-eight-players-who-could-change-teams-daf5cada",
-      "sport": "football",
-      "headline": "NFL trade rumors: Eight players who could change teams before 2026 season kicks off",
-      "blurb": "4 players the Jaguars could trade before the 2026 NFL deadline Black and Teal",
-      "summary": "4 players the Jaguars could trade before the 2026 NFL deadline Black and Teal NFL trade rumors: Eight players who could change teams before 2026 season kicks off CBS Sports Aggregated from Black and Teal, CBS Sports.",
-      "category": "trade",
-      "published": "2026-07-02T07:00:00Z",
-      "updated": "2026-09-06T10:00:01Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "4 players the Jaguars could trade before the 2026 NFL deadline",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMlFsSVZMOUZudTZTWGRRT1h5Z1hTai1reVN1bndDSkgxTUZRMnJaZmdSQjFYeU5KNGx3NEZzTnRob1I1SWhtOHM1dXJ3emk3S3otSlVOMXhVS3JjcmZYTzltTHNEeHB3aUM3T1Bzd1MzZXU1UDR2dmxJX01mVlJORjROcG5fOHRPVGxwaHpCdldQYXptcUo4TkdyVTg4VGt1dFRJ?oc=5",
-          "publisher": "Black and Teal",
-          "kind": "article",
-          "snippet": "4 players the Jaguars could trade before the 2026 NFL deadline Black and Teal",
-          "published": "Sun, 06 Sep 2026 10:00:01 GMT"
+          "key": "luther burden",
+          "name": "Luther Burden III",
+          "slug": "luther-burden",
+          "pos": "WR",
+          "team": "CHI"
         },
         {
-          "title": "NFL trade rumors: Eight players who could change teams before 2026 season kicks off",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOLV9fb2ZIczh4MTBPRm1NaEdaS01PWlRYSmpQY2o5bjNEVTRzN1ZZM0FiU2lZMlhxcDVueEV4a0IyV0pTbFFtOGkydVk5VzZfalpfbHg3WlBhaW1JUG9rM1I4a3BCams4SVhXei1La1dFdk5Ib3ZzcmxiMzVRZHVKSHhTMjNKaGxIWFVCNktn?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "NFL trade rumors: Eight players who could change teams before 2026 season kicks off CBS Sports",
-          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "insider-shares-conspiracy-theory-real-reason-behind-christian-b99048df",
-      "slug": "insider-shares-conspiracy-theory-real-reason-behind-christian-b99048df",
-      "sport": "football",
-      "headline": "NFL Insider Shares Conspiracy Theory on Real Reason Behind Christian McCaffrey’s Absence From 49ers’ Practice",
-      "blurb": "NFL insider’s cunning theory on reason behind Christian McCaffrey’s mystery ‘tightness’ New York Post",
-      "summary": "NFL insider’s cunning theory on reason behind Christian McCaffrey’s mystery ‘tightness’ New York Post 49ers coach explains Christian McCaffrey’s absence, shares positive news on other RBs 49ers Webzone 49ers Fans Shouldn't Worry About Christian McCaffrey's Recent Absence From Practice Yahoo Sports Aggregated from New York Post, 49ers Webzone, Yahoo Sports, The Big Lead.",
-      "category": "coach",
-      "published": "2026-08-10T07:00:00Z",
-      "updated": "2026-09-04T19:14:47Z",
-      "players": [
+          "key": "rome odunze",
+          "name": "Rome Odunze",
+          "slug": "rome-odunze",
+          "pos": "WR",
+          "team": "CHI"
+        },
         {
-          "key": "christian mccaffrey",
-          "name": "Christian McCaffrey",
-          "slug": "christian-mccaffrey",
+          "key": "kyle monangai",
+          "name": "Kyle Monangai",
+          "slug": "kyle-monangai",
           "pos": "RB",
-          "team": "SF"
+          "team": "CHI"
+        },
+        {
+          "key": "jamarr chase",
+          "name": "Ja'Marr Chase",
+          "slug": "jamarr-chase",
+          "pos": "WR",
+          "team": "CIN"
+        },
+        {
+          "key": "caleb williams",
+          "name": "Caleb Williams",
+          "slug": "caleb-williams",
+          "pos": "QB",
+          "team": "CHI"
         }
       ],
       "sources": [
         {
-          "title": "49ers coach explains Christian McCaffrey’s absence, shares positive news on other RBs",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPd0hRakZQTjM0OEt3U3c3RkwydnNiWWN5ZTVJWUE5X1hQRlF3Ql9GcXhmNkQzbHNxdTJBUGE5TnotM2FyUjB3UW9aQ3VDeHB0Y2hLTW00eFFUZ0R6Y3NWYjUta2x3V0JRTXM2eWo5Y2tNS0ZUU2ppczhfbVlkRVJocjMtbVBqb2JCYnFzRTdNaFZnNmttYlNn?oc=5",
-          "publisher": "49ers Webzone",
+          "title": "Fantasy Football Impact: Luther Burden III and Kyle Monangai Injury Updates",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYmVkV1oxbzZhaUQxbjQtb1g0UFBkZ3c4X00ydl9aSTB4alNRc29QREF0Y2QyUm1mLU0zQloyV3F4VGhZOUp1a0lFc3ZreUkxMnRNcFRNbHJLcGFNOVpXZURaM3psa1pReHN2VE0tVUNkZGJSZXNva3FnNkE3ZERYLWxIV2p0TkFiZWZLQ1NueFVMVUpLREJoa2cyOGNMMUNxV1k2RFhKNUc2c0RvX1JHOEtkRWdUZw?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "49ers coach explains Christian McCaffrey’s absence, shares positive news on other RBs 49ers Webzone",
-          "published": "Fri, 04 Sep 2026 19:14:47 GMT"
+          "snippet": "Fantasy Football Impact: Luther Burden III and Kyle Monangai Injury Updates Sports Illustrated",
+          "published": "Tue, 01 Sep 2026 20:02:08 GMT"
         },
         {
-          "title": "49ers Fans Shouldn't Worry About Christian McCaffrey's Recent Absence From Practice",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeXpka2U2QXJGMktRcDZBWHQxVmdjeENnS21yUXphTmdwUUtXUXlBOEQ2ZU8zME0yaGJzV0hHVnphWHJONFYwT2NCYWRmM2tkV29PZGNFWE5FZk82WVFRRFg5REpSVkw5RnRXRmluRjYyMHhPd3BEbDhHV2xaOVdsUVRCc2hNTzBaQU5sbA?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Luther Burden Injury Update From Bears Brings More Optimism For Week 1 Status",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZUhqMkZMLWcyT3IzcE45Y1V1bWdQV2Q5NS1QcDNCbGtFMHVNZnF2RWlsZW85TGpKMUhNV05IMHcxb1hHNTFib2xhNm9sV2hTMTF6RTdFb1JyUDJTZlBoTFNYQ29zNHYyZHd4emZWaTNkMUtUbkV4MUswMkhlVFFmTUN0cURrTExyMnUxMkFvVFd3ZUhOaEJwV0ZjTm1ZOXNmZmVHUmNDaFVILUdWLTgyZA?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "49ers Fans Shouldn't Worry About Christian McCaffrey's Recent Absence From Practice Yahoo Sports",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+          "snippet": "Luther Burden Injury Update From Bears Brings More Optimism For Week 1 Status Sports Illustrated",
+          "published": "Tue, 01 Sep 2026 20:00:01 GMT"
         },
         {
-          "title": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdFA2THJpWk1pRV84T1FGZU5IbFVzSl9KMTlVa0lfekFQYnNpRzYxT21rWFFtSVVUNmxxVlRsMlY0a2tEQVNGXzUxY2Y3a0lYc29tVkQzRVRLNUdMR3JBblVOMjBwa2U3QW50akRTWGdsdVBUUUZxMUFDQnJKM05QelhqQlNUZVNUQmNtNEhCWWo1Zw?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Luther Burden III Injury Updates, Latest on Bears WR Ahead of NFL Season, Fantasy Football Drafts",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQM19xVWl2OUF2V04yNkVFT0dUelBFRmR3VVoxRVlqVlowTTRHcjFla2I1MW1zblB1cXhGcjhBblQ2X3ZOdjBlZWl0REU2M0p1S1JXZmhSTmtMYTNPeUFNWnZBSXN5SnlkZm1FSm5oZWR4YzJnVXdVZnJhR1RvSjNKNVQ0Sk5xVmxpSEFOeFE0X3FGQ085X0ZqWUlYc1pfYWlCcnRPRjk4ZzVsTXJSa0xublFSRTlNR1puZ0Fhc1FvNU54aHpXUXR2SzJYM2x6Wkk?oc=5",
+          "publisher": "Bleacher Report",
           "kind": "article",
-          "snippet": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays Yahoo Sports",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "49ers coach gives positive update on RB Christian McCaffrey",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMDByelZJU21YV0NjZkZfaFVVdTNSRlhBQjB4YkVwSmEwbXFaQXBxTkxsdkh1MXlFZDhDbnYxV1BzMU9TVjZJOVl5Tmpnems3aG1TdzJIdHpuLUM3SXd2ekJMNm5ZY0ltSkJjenFQMG1LUy15ck9rV0ZCZ05OZkR2MGNTeEg?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "49ers coach gives positive update on RB Christian McCaffrey Yahoo Sports",
+          "snippet": "Luther Burden III Injury Updates, Latest on Bears WR Ahead of NFL Season, Fantasy Football Drafts Bleacher Report",
           "published": "Mon, 10 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "NFL Insider Shares Conspiracy Theory on Real Reason Behind Christian McCaffrey’s Absence From 49ers’ Practice",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObzFOLS1qWDBqVWFsLTd2cEJ0MVBIWFhCRmFYMVdUdllSM1l4bXFMdEZHVU9oMGl4bmFEQWEwYTdud1hUTnl0Z2J3c0xVbHBRS241M01MamMwekhIM1N6Wmx5UGVsVkFJVnpiaGhGd1duckFMN0Y3UmZpT1I5d2E5ZW5OMGJ4ZE5fdHl5ckdR?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Luther Burden III (groin) practices Tuesday",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPcEpsT0VkemZlTHZtV2NoSXh6SURQZWJLU3hBajA4YWY1LXdzNkRKbHVpLUR4Ym92S3lHbVRaSFlNSUZGeE0wOUNEazJ6RVdKS25ZdE1EWXFPMkQ3TDZCNDJ3cFI3OVhyNnNjelA5ZEFNWTdXb0JocDFWMUVTWWdEcUVvVTBWMXR5VXlaVTRlT3c0VGfSAZgBQVVfeXFMTnZHNjVCMjBCa05aTVlVVWVXY0RBbk91SENtZElvR1VZUmswZVVrY3BENXRIbzA5YTREa2I1T2hQZ0ZXVVRXT1lNRUtwamRPSEN6aWxrMlZLTHBDdVN2ak1oU2lyMnV4SlBWWVlqTW92cUZLTVZTQTZldFdsZUxqd040eHBRN3VvLXo1OGJ0cmJzMFNuZEFhTEc?oc=5",
+          "publisher": "FantasyPros",
           "kind": "article",
-          "snippet": "NFL Insider Shares Conspiracy Theory on Real Reason Behind Christian McCaffrey’s Absence From 49ers’ Practice Yahoo Sports",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+          "snippet": "Luther Burden III (groin) practices Tuesday FantasyPros",
+          "published": "Tue, 01 Sep 2026 23:57:07 GMT"
         },
         {
-          "title": "49ers news: Christian McCaffrey's absence from joint practice gets Kyle Shanahan update",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRmVpNnRwS3dmQTB5OU9mTmdzMU1kb1dQREloX0Q2Nk1fWDRkNXdLQ0ZOR1hKQmJZN3NiajJJVU1HOEY3d3luR2xBLXp4dFN5LUU4SnpEUjhMS2ItcDcwWnFqMktrT3ZaalZMbjBuOTcwckxGRklGcFVaUS1rTGVzdUhNWXFIUk1sWjZRb1JzWjk4Zw?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Fantasy Impact: Ja’Marr Chase, Luther Burden III, and 3 Other Injury Updates",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPS1hkNUZGaHhid09rM0N1OVc3c2Z1bGFJV3B4ZVZjcm9yUFVud1RJQnZRLVMxSG1mdTliUUFMLTVJbDU2V1VlZUctcktRRmlIX0VyS1FvandfYlZCMlFBenZ0NV8wZUNTcVQ5aTczQmpOLWg2UXVsQmVfeUhnMTN6QkV5c0dZcExkcERqWXYyVkVkQkVaLWZ0S1Z4ZlZzcXRtV1lSYVQzRUFndEkzWFZhdUYzR2E?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "49ers news: Christian McCaffrey's absence from joint practice gets Kyle Shanahan update Yahoo Sports",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+          "snippet": "Fantasy Impact: Ja’Marr Chase, Luther Burden III, and 3 Other Injury Updates Sports Illustrated",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5NRFdoZWtPcVRrc0VMZHVZVmczMU9uRVl5aW1JY2NMa2pVRUFUcmxkQ2dMLVQ3UFNBdDhDSVIwaE15WXBTNmFYN1lkLUxYX09XNXVtaGpyYTRYdHZEQ1BmVFBybmNCamxOOGxBMkFuLXltbEhTVGJmSi1EYkI?oc=5",
+          "title": "Luther Burden III Exits practice with apparent injury",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONkZpZkNPSUdXQVNEeXhWTkZLc1hUSGRHYzZOYXlybUV2ZFVHV1VUQVFDUUc1SFNCVnVzaTJGVTgwRmRuZzgwTUxPUVlWTWRfRjBKVkliYUV6SHBZTTZfWlJFbjNYMnRmOGVPOEstVlMzcmljQlNvcHB4QkRSN1dJYWdGZDVyQTF6RmdmTW96c0I5MThQU2Z5c3NmeXg2ZHlFWjNEWHlhbw?oc=5",
+          "publisher": "Fantasy Footballers Podcast",
+          "kind": "article",
+          "snippet": "Luther Burden III Exits practice with apparent injury Fantasy Footballers Podcast",
+          "published": "Sat, 08 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden III Will miss time with groin injury",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZlhyS3hHOVpxXzRJMkhZOGIycEhSQlRiTzlVOEZTcDM5R19pbktSSjM2UDFzaXI1UzVhbkI4N3l5RjBCajVwclhNMDNiVnhYRFNTby04bVNjY0N5M29LLThrOUgwcnlYN0J4eG41ZWRlbGhCcW50dm54enBuVl9zVGNXVDRzZzd4T0hpSzctMXoxQkNacFpnOG0wN254QmZSTW5r?oc=5",
+          "publisher": "Fantasy Footballers Podcast",
+          "kind": "article",
+          "snippet": "Luther Burden III Will miss time with groin injury Fantasy Footballers Podcast",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears Superstar WR Luther Burden III Gets Major Injury Update Ahead Of Week 1",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOalFkSXBBSnZ3UE9aUENESmZxR1Y0OV9Cc2VUUWxlam85bzlNaHU2ZHpRWHdvcVRfVGk2cVB0UkY2b1l2djBkZzloTXdZTGhCekVLbXJZSjVCTEpLMUd1MmNOU3hWWEQweFA0amp4S3owZ2FyWEIxYkJYN21rcDltQVhMcTduTDFCajVOX3F3VEVXT0djdkxPckFqZ1FzdV9Nc1E1dHAzNjRYUWthV0EzOEJQSmRGcnMyelNfWDV4TmR2SFJta2UyOTlhRVphOFB3?oc=5",
+          "publisher": "Yardbarker",
+          "kind": "article",
+          "snippet": "Bears Superstar WR Luther Burden III Gets Major Injury Update Ahead Of Week 1 Yardbarker",
+          "published": "Tue, 01 Sep 2026 13:04:04 GMT"
+        },
+        {
+          "title": "Luther Burden III Avoids injury after hard hit",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWjc2U2dNcnRHQlFvdmtkS21JcS1sYmtNY0F4azhqTFduN2VYbTk4TlRLSzZ3OHQzX0h3NlRxX1BIU0RINC1HbW9uYjBQelNfZHhkZ1ZJR29WWmpYN2Y5YWpoNHU1clNUaEJmYTZRRS1ZRjBITVE2Y3htVWJQNkJMN2dWMXJrZXUyWEI3X1I3YkdZU3owdFUtT0lwTk5udw?oc=5",
+          "publisher": "Fantasy Footballers Podcast",
+          "kind": "article",
+          "snippet": "Luther Burden III Avoids injury after hard hit Fantasy Footballers Podcast",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NFL insider gives mysterious Luther Burden III injury update",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcWdFQUp0X09rdXlJcjBYUTM2V0hYNjh1Z1NranZoLVE1bTR4eFY0ZVNmZDhJX0REVThwRTlqaGlkbEVDcmJDY3YwZlZBTk9XRHVFdTdzbWdoZTdDQVJOTFlUMUlBUGRVc1ZDME9uTDBZU2tOS2VXOTdSaDIzZ3VMTHFZRW0?oc=5",
           "publisher": "The Big Lead",
           "kind": "article",
-          "snippet": "Christian McCaffrey’s 49ers absence could be related to major NFL RB paydays The Big Lead",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+          "snippet": "NFL insider gives mysterious Luther Burden III injury update The Big Lead",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "NFL insider’s cunning theory on reason behind Christian McCaffrey’s mystery ‘tightness’",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQY0ZWRzhSOGdMT29KSzJtTkFmbHZqQVR6ZWFCNXBWdXpwS0xocnptTHFJQ0pUUkxFT3RCdmx4UDhjTUtCWmlXUFFWXzliYktSandaZnV1V0Rqcng2VTZSRHo1YS1UbFVWaW11bGRQYW1tZnVndm1wX1NZSXY0b2QxcndJNENWTThyWUpwODMydGZEMldneVZZMzhPbw?oc=5",
-          "publisher": "New York Post",
+          "title": "Bears WR Luther Burden III Injury Could Impact Caleb Williams, Bears Ahead of 2026 Season",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTTZuODRORkxobVpCa3VsR1NNcTNEdHlfSEVCbV8weFBocC1nUjFDWWlCaFlaSl83SGd0Uk5OVTVzTkVmMHdGOF9CT2pDUm9qcm05WjJlZmdJNkk5VTliX2xrYWgzNGZ4REFDVnBieThBVUNtTGQ1WHlRTnV1aEprUg?oc=5",
+          "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "NFL insider’s cunning theory on reason behind Christian McCaffrey’s mystery ‘tightness’ New York Post",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+          "snippet": "Bears WR Luther Burden III Injury Could Impact Caleb Williams, Bears Ahead of 2026 Season Yahoo Sports",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Latest injury update on Bears WR Luther Burden III",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPODJpSmxrYi1Uc09obFVjTFZIMHRNVGJBX0l6bVR2eHE2OW5YMm9nUm1nbVVFbHIzbG56VllqZ01wQTZhc2dYXzNkZmJlbjFmdE1kY1pweDFQT3RTbXJUdG5qTHhYaVFnY0taNU9XZUY1LVhWbGJyVGhmUVM4dWM2bVFFcHU4WXJjR3AzNWVBeWFrWHpjUmlsX1pLTXRTSi1HZkk0azdQRWFod0EyNllkWnNkM0E0MXhZbExHWGp1Z05fZUZqd1E?oc=5",
+          "publisher": "Bears Wire",
+          "kind": "article",
+          "snippet": "Latest injury update on Bears WR Luther Burden III Bears Wire",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kyle Monangai, Luther Burden and More Bears Injury News for Preseason Week 2",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeFp1ZEtnZVVmN243cGtmckIxZ3o3VmhVNm9vRElQLWxVaGdmSVJ6YXE0Tm15cEIzT1BmOXd1WTdYUTVZU3FibmN3eTdPV1MzaUw3SjRyUXhnNGNheVVDdGJldEJzdEdMRmZmNS1vRlBHblhzSE1JUGtub2xxaUhaMjdPdDRTMEFDanJFVTdEUFlNM1lMLUN6Qkx1bGc?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Kyle Monangai, Luther Burden and More Bears Injury News for Preseason Week 2 Sports Illustrated",
+          "published": "Sat, 22 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "What Happened to Luther Burden III? Latest on the Bears WR’s Injury and Whether He’ll Be Ready for Week 1",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWDYyLWFINVhub1R0SnN0QUFHR2pJRWEzTDgyQ2NEZlRfa1BQVDlDY1hYVnNrN3AzdGtUQ28tTnlCaUFPYjZjclcxRWR3M28yanlHYXlPOWl5WjdORjJOeV9NWlVtQkRtcGFaeW5HY2ZSalBfX2hSbFB2SjFPOXhxSkY3VlJVSFdPVFE?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "What Happened to Luther Burden III? Latest on the Bears WR’s Injury and Whether He’ll Be Ready for Week 1 Yahoo Sports",
+          "published": "Sat, 22 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Rome Odunze sounds off on Bears WR Luther Burden's injury recovery",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOTVZ2cTdBcDdCT3NKeTRNeHdzeWJtRlRDVlhlWDZ5VGw3aS1FM1ZTY3dtUm4zVkV3aFJONWdLV1p1blhGeFdFaC1UY1hRbTVaQVlzc3RuRW94YlZIcjJvQ2Exd0Y5c3pvNFY4QUUzSDFuYkh4VFZIMWZIbWVoa1dOMEFGZmtiU2o5a1djU243Q0F5bm4wZFFDRURfeFR0bTIwRnRnNnBGUTM5cDQ5b2hCQTlLc0ZvTEV2bXNHa25ZQjY3cTNyMS1uNFBLbVY?oc=5",
+          "publisher": "Bears Wire",
+          "kind": "article",
+          "snippet": "Rome Odunze sounds off on Bears WR Luther Burden's injury recovery Bears Wire",
+          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden Injury Update From Rome Odunze as Bears WR Continues Recovery",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdUpLaHFYdzFCaF9jejRyYS1FTzBFU0lJSDROSmdMdlNPeWNlUGZnc0JXV0pmcjI1UzJsZy1fTmxiTzMzRGtodVV0OEdoMF9fVjlFZ3lCV3ZQTU1oTGRZXzF4Uk9VYVYxT3BMN3Z3bzAybEl4RmZfcHdwWGJIdUh3NlVXa1ZrRDNBclRoZFk0dm5LcEo4VkZTVW1NTE9wdU1YV3RtSVhKZmxpTGx4VWc?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Luther Burden Injury Update From Rome Odunze as Bears WR Continues Recovery Sports Illustrated",
+          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -8088,6 +8196,281 @@
           "kind": "article",
           "snippet": "5 things to learn about the Titans in training camp, from Carnell Tate's press coverage battle to the right guard competition A to Z Sports",
           "published": "Sun, 02 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "bears-receiver-luther-burden-expected-miss-groin-injury-5c6411b8",
+      "slug": "bears-receiver-luther-burden-expected-miss-groin-injury-5c6411b8",
+      "sport": "football",
+      "headline": "Luther Burden III recovery timeline revealed with Bears receiver battling groin injury ahead of sophomore season",
+      "blurb": "Luther Burden III recovery timeline revealed with Bears receiver battling groin injury ahead of sophomore season the-sun.com",
+      "summary": "Luther Burden III recovery timeline revealed with Bears receiver battling groin injury ahead of sophomore season the-sun.com Luther Burden injury, fantasy football fallout: What it means for 2026 drafts Yahoo Sports Caleb Williams, Bears receive encouraging news on Luther Burden’s injury ahead of 2026 NFL season opener bolavip.com Aggregated from the-sun.com, Yahoo Sports, bolavip.com, ESPN, The New York Times and 8 more.",
+      "category": "injury",
+      "published": "2026-08-08T07:00:00Z",
+      "updated": "2026-08-10T07:00:00Z",
+      "players": [
+        {
+          "key": "luther burden",
+          "name": "Luther Burden III",
+          "slug": "luther-burden",
+          "pos": "WR",
+          "team": "CHI"
+        },
+        {
+          "key": "caleb williams",
+          "name": "Caleb Williams",
+          "slug": "caleb-williams",
+          "pos": "QB",
+          "team": "CHI"
+        },
+        {
+          "key": "rome odunze",
+          "name": "Rome Odunze",
+          "slug": "rome-odunze",
+          "pos": "WR",
+          "team": "CHI"
+        },
+        {
+          "key": "zavion thomas",
+          "name": "Zavion Thomas",
+          "slug": "zavion-thomas",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Sources: Bears' Luther Burden III expected to miss preseason",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPLThCaUI3WEh0VnM2c1lfdi1LdEFsdzRqSEhrajZhRU55d1kxdm5abk9uUnFSc1dJQWI5UjJ3VlB2TGZwa2VVR1VJOS1XVmp4ZkYyNXpPVzE3VkxlT1JZZFlaeFlBZ0hCeGZvSjZXRlRkQnprRVJPZ3BRcXlyaTlaTm9FX21RcVg2ak9BWjlxNXE2Z3NINkJ1RWEtNTZtQVdqOXc?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Sources: Bears' Luther Burden III expected to miss preseason ESPN",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears' Luther Burden III injured after tangle with Stevenson",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNUhFUnl0eXVFNUM2djB3bklQZ0lGUjJfR3FJNFdJcWE0Zm5qb25rNjAyaTBVOTI4RjJFTnJhRTZnVUdLcm1aNUxhUFdYOE1fZm1GNzFyUlRxM3JlV291WmtxRmRLU1M5aGM5QnFSM2VxQTV3NVIxMVJia0lueV9YbzFSOWgyRGZsUVdNQVpQQ1B0YlE3eEZfWA?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Bears' Luther Burden III injured after tangle with Stevenson ESPN",
+          "published": "Sat, 08 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears receiver Luther Burden expected to miss preseason with groin injury: Source",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNXFxOTBCQXE3X055eFB6YjRSVGozWjNDaUxIUzJVbkk5d19iTDdPbHYzWkZ6b1p5VVpVRTAtakhjU1lTSEZGWU9HeWNIT1BjMmlaeFF4R01zX3h1dmRnaEIwSkZrc21NUWJ1TGtBTVdPeGN0NXhYdW5WeWpDOFhGdWo3MDJudWFSeUxTdE1R?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Bears receiver Luther Burden expected to miss preseason with groin injury: Source - The Athletic The New York Times",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden III Expected to miss one month",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQlhibmZRa2NYNlZYckYxQXJCOFhHSzJad19QZjJDckYxYmlHRWwtRjd0VnBVUWFwMERpWFZMM3hodXl1UmJTcnd5WFd1dlhibXVtTEQtZnpEOHFjdk82Z2FTbW1yN2VLUHFyOHRHa0ZEQnlDTVJobzB0UENWUWQwbzJNUnRsT0owYmwxNkduWGFxbGUzdTFLTmc2Zw?oc=5",
+          "publisher": "Fantasy Footballers Podcast",
+          "kind": "article",
+          "snippet": "Luther Burden III Expected to miss one month Fantasy Footballers Podcast",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden III injured in Bears’ training camp",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWkVnOGxtczFwRFBILXo2LWNLNVF2NVphYU1YWmJDWmhjOERlbm13OWoyWVRfdzJDZWlLWTFYVDdweUlrVWdwUjE0S19vTVduY1dKZHp1X3FEem5WWm1NR3l2a2lWX0ZldU5XUFR6UVI2RW1xTzJQYS1YOWEyZkFtVjZzWWJLRUk?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Luther Burden III injured in Bears’ training camp Yahoo Sports",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Report: Bears WR Luther Burden III (groin) to miss preseason",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUnVhMXo2eUhTWUpMTkV5aThEUFREcXFrTmhQYVdINjI4RHAtNDVnZTduMTdLLWJ6N1g1YXY4LXR6QWZ5bGZ4aE1VUFFJbHpaMnZ6dDl5THlTME9mc2ZlTVlOMW5XSUNqZ00tNU1RWUFESHFWQ3NVeVd1QmxiUlZFcGJDRWJMaF9UVEswZW5vWklpRWFyZ2tUd0hLNmRpRUZxeUFZNw?oc=5",
+          "publisher": "reuters.com",
+          "kind": "article",
+          "snippet": "Report: Bears WR Luther Burden III (groin) to miss preseason reuters.com",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden III Set to miss preseason, should play Week 1",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTnZXRFM5LWxmYjNFelM0bXR2cFBkVkhLT0ctdjRUTVdHX2R3anlFaGMycUJLQzJYWGQ3c2JUSkFUZmFrQnBqQVR5d0otZEN5QUYzY0RoYWowUDFmRzhTODdHMlJ0eUFaaGQ1bkV2aU9WcjlVRDJ0Tzh5eS12eGpqREdramxQbXp2UHQ4UHhNMWw4WDZmOWVSOWtxenNIWXhOVi0yR3pkYkZPUy0wMnc?oc=5",
+          "publisher": "Fantasy Footballers Podcast",
+          "kind": "article",
+          "snippet": "Luther Burden III Set to miss preseason, should play Week 1 Fantasy Footballers Podcast",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Sources: Bears' Luther Burden III expected to miss preseason",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9hSkVYZFlodHhjU2lqVVFoX3dHM0JXbFc0WnBBWUFXeHdpSVJRNlJyTzVCVFByaC1ZMkEwblVQY2pKcHdpbFlUQQ?oc=5",
+          "publisher": "ABC7 Chicago",
+          "kind": "article",
+          "snippet": "Sources: Bears' Luther Burden III expected to miss preseason ABC7 Chicago",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden III set to miss time with groin injury, depleting Bears' already-thin WR depth",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPeDJlNFhWcW1Lb191U1pKRmxKZTIyWTI1SEZmb0RSZEZvN3VYckc4SWlHVmFxM2sxc2JxVnU5VFptWXhaU29VSmFVRUhDc2NTdWhHeHZSWlhGUzFQRWllVjdEQnp3MGNFajZaUEhzU2FKOEhrU2kycU5pMkRwNUNYZWJUMHB4bXpnYzlwM2Z4WWJKemtQRzVQc0pzM2xaTkFfc2F6TElhdDJoMXNMa3FwSkcxb3BITXdsWkNXU25RaEFFbWZhdVlqbVk1am5WajNab0tTOUdfZjc4dw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Luther Burden III set to miss time with groin injury, depleting Bears' already-thin WR depth Yahoo Sports",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears' Luther Burden III sidelined with groin injury: Here's when breakout candidate could return",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQlVSNllFcnlkelVwc2lFR1NZWGQ5ZUxsTUhLUTVkcEpTODZpSEZOM1A0dXNMWXlvN1VnYjdYVnVhVUpLWEw1QUxtdWowVUFPSWN6ZEVOd2JvbjR5blVLLUZpeUJaaGN3NVFKdkNfRTl4QW92NU5Kb1pvU1pMZWZ5NUxLRQ?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Bears' Luther Burden III sidelined with groin injury: Here's when breakout candidate could return CBS Sports",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears WR Luther Burden III to miss a month with groin injury, Week 1 return possible",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPcEdKaWhoSGdzNTA0U05KbE1GSDFDQ3NXcW5sZlAyN2U2eXRHRzRqb29IbVZtMVpEeHpWQ2lYd0RZano3WVptRGRqZGdYSHFVZ1Z4MHM0RXhod2pkTmFxSWwwenFxQTNCbXNXX3JxdWhjOUlGMWRzdnpQbF8yUGNHQg?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Bears WR Luther Burden III to miss a month with groin injury, Week 1 return possible Yahoo Sports",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Latest Luther Burden Injury Update is a Mixed Bag for the Bears",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONjI1UWVTZzJQaU5HcUlyM1dYNVBaZDFRcjduenJIX0x0TlFPcUVnd0V1OHRrdmpKWXB5eVlqdmVUVU5iYTJ0R3ZYQ1NOMXlRdGkxZ2hndGpiRkxJQi1QQkhrTkxpZjZrY3EzSDh1U1g4aHNDQkZhWFFHeVNKZ3Vub3BKWG9Hd0RBVjN0Q0Vn?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Latest Luther Burden Injury Update is a Mixed Bag for the Bears Sports Illustrated",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden injury update after Bears WR limps off field at practice",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdFlpQ3R1Q21zVTZtenRFV0huU0RtTE5Nanlidm1wcUQzSlpHS3FObG4ydi1jU3NmMUllR29PX2tTRkE4N2RzQVBZbG40eVh5aW9hTTZpejdBNWp6c1ZPT3o3OGpPMmFqOXJKZ1MtUUVEcWxzNTBER0thdFdKcDRiWmJseEJ6U0tVM2hicC10emxuTlNnSWxjcjlCY09XMk5QZDl1ZnlPUWlKX1gyS2dWODhkS1Y?oc=5",
+          "publisher": "USA Today",
+          "kind": "article",
+          "snippet": "Luther Burden injury update after Bears WR limps off field at practice USA Today",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears Training Camp Day 9: Luther Burden III, Cam Lewis Injured",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9uNHFobnhyZEZJTlYxejNfeEgwWGJCeHctUTRIajVDZDRVWFhUZ2x0Y05HdzktSDdjeEJwWEVMT25Nd3l5Tm9xaDl3djNuaTlDRHVRSm1ORWRDZnFYNW5kdEVZSEtQcHVnTS1qX2ZYaHVWUW1MbEZMOXIxcGs?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Bears Training Camp Day 9: Luther Burden III, Cam Lewis Injured Yahoo Sports",
+          "published": "Sat, 08 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Latest Luther Burden III Injury Update: Rome Odunze And Another Sleeper Get A Fantasy Football Boost",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxObk5DQWUtdW5tUnpMaXdRTlNRb2JNbnNpUWNWREk2Y0d1ZC05RjZFSHNqQWZpZndKSkVfUEI4WHJpTThRX20wSUhBbFQ0MWgyZEdHTWRkT3BoWFlVUm91MTV5ODlyQmZJNE15TVFzclJCS1BLaExnMkY5eUNoaWR1aGlRNDU1NmFsSU1MQUlybHp0R18xeXBjOWFOcktPN2xqank2WEduMy1UWlQwM1JWRmo5V0dUSWoxUjJBWEhLRmZDdHpqWHRJRnVDZDFYR0F6d1c1LVVVTQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Latest Luther Burden III Injury Update: Rome Odunze And Another Sleeper Get A Fantasy Football Boost Sports Illustrated",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears Receive Injury News Update Regarding WR Luther Burden",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOS1BkTTN0OTdRazVPSXFLZ19uczZVWWczZWs2c3c5V2ZnLXdFNXJveEJGd19NQ0YtVG1reUxST1RtbTh0dHZvWjN4alUwdmVJb2gzTEJBNzlTWWVHUkozU2trV1hWcFNhaFlFY1Izcy1nZ2JVbW1WWjgyeVpuZlpXd0VGUzk1MzZCUTZNTw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Bears Receive Injury News Update Regarding WR Luther Burden Yahoo Sports",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears receive concerning Luther Burden injury update amid breakout buzz",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNRC1XN1ZNMTNkeUVvbFpQVm1CcW9JTjhmejBOeDR0a0NnYnBZMS1MUENPNW83Zk1hdGRFc1FYdnM3OWtjd0pWRnJfNEFqODUzY3JlMDR2WnVrVFVhbEJYQjc3cGs1SndZV3hWRkswRnk4NWd5OUZnOTZkSDhhamtMcDJSMklEX0g4c1RtWFcyOXo?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Bears receive concerning Luther Burden injury update amid breakout buzz Yahoo Sports",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jahdae Walker reacts to Bears WR Luther Burden's injury",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaEZTRnd2b2dQNkp4ZGI0NUJCS0JkOVMtRnI5bUdWaFNLQkF0bUFlTjA4aEJIeHJNNU1NSERDdHlReVE5OEprQnpLRlFlWmJOMjRfRkNnOElYdW5taVpOclpENlZ1RzdGb2Y3WVRTNzg4WTJVWjZNckM4NHh5Wnd4cVFHdWJhWHJETTJoVnNMWm5CTFcwLTZsSnpUX0VmcGZFTFRLNmlhb3hPMTdwMkFnUjBDSHFTbEI4NlRvWEtFUmhuRmt4ZUE?oc=5",
+          "publisher": "Bears Wire",
+          "kind": "article",
+          "snippet": "Jahdae Walker reacts to Bears WR Luther Burden's injury Bears Wire",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears Sign Veteran Wide Receiver Amid Luther Burden Injury",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbm1COE0tbks3VENUeVRxX19FWVpVcktubkFnbWt4UEdZTTYySjNfNnpHMHBRQlFndzdxdi1Db1BDRG1saFhDQjY5VlpsNjlGSnlGc0pNOTRSaE9waXVmaGNGVVNna3U0X2lOZDVIdnBXbmtLazN6bUFCUzliSEhaeHNMdDNDVjY1?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Bears Sign Veteran Wide Receiver Amid Luther Burden Injury Yahoo Sports",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears Injury Updates for Ozzy Trapilo, Zavion Thomas, and Luther Burden III",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTDJrNkZKTzFRbEZiNkZSSU5qc3pkTzBvQUxISVBhVHRHZlNNSDdCM0UxODJVeWtTZHRxdkw0MF82SlFSd2xyU2I0dXE0bEV1bEk0YWJTMjhlZjJCQ085VFBhRURpamJLY1g3dzdiNlhlb28ydWpyOWZCRUdKY0l4Q3hwUVJTcjFHWHc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Bears Injury Updates for Ozzy Trapilo, Zavion Thomas, and Luther Burden III Yahoo Sports",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "What a Luther Burden injury would mean for the Bears passing attack",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcjN0VmVfLXNyTWY3SmQ2dG9yVXRxMm4ybTF0OENRdUlKdnFheHFHYkg0X3ljZE83QUl3MWhEVXVTcHRjbmszVWRHaXk0QTFvVTBFZFBHWGxEMkZLRXA4R0FaN29tQ2FWMWJQVEtKaHREdjRfZzhCaGtmSk15WXBWTUNMVFZyWGs?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "What a Luther Burden injury would mean for the Bears passing attack Yahoo Sports",
+          "published": "Sat, 08 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears Receive Injury News Update Regarding WR Luther Burden",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSlA1RWh4WUF5Mk5zRThnNWJRMTdLMVY0cV82aDRkZjh1MnpQbzdTQUpGc2J1WnJxLTNRX3R2aHZ3VGhhN3N4d3dfejZ4cGpybmI0ekRDbWg2ZElHZDBkMHppczgyNm04Z05GOEkyc3ZqQ3luMnExbEFqZVZyeUlqaXlwcmI2a195?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Bears Receive Injury News Update Regarding WR Luther Burden heavy.com",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears WR Luther Burden has groin injury, source says",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQlZFaFhVSWplVzIyQVlTY1ljQnZiLWZsSkhFcE9EYjd6QmFMN3J5a05mbFVoa2dBUF96cWRoUHpuak9fZFJ0cHV3ay1ndGV5RUxPb1NQY3lYZzN6X3pFQy1aNlE5Q3dhb3VlNUdSUkpOQzFzbDlyQVp3Yjl6NTh1RUtHZTVlZHNyY0t3alkwZkNlZDRQ?oc=5",
+          "publisher": "ABC7 Chicago",
+          "kind": "article",
+          "snippet": "Bears WR Luther Burden has groin injury, source says ABC7 Chicago",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden injury update after Bears WR limps off field at practice",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTlBSX1lpZUxpc09EejRUZVhxT3Rqd2ZEY09IRXNXeVc5RXNQNmFSWTNKTWRSMVJOVFVMelZET1MteS15ZFpKV0lXT3pxblRPN3d0Qk9JN0xaZE5yaU05YktZaHU0U3pBTFF6b0xmY3RBRnlqUXlvZjFwUkpjUHQxcVFETW8?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Luther Burden injury update after Bears WR limps off field at practice Yahoo Sports",
+          "published": "Sat, 08 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden Exits Chicago Bears Training Camp Practice With Injury",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNGVqTTVjZGNnTkJXd2JwQi11bDdrWmx6NVg5R3dEdXJ2T184RjZUYkxBSWtPWHF0NEpwR2FHXzlENm1JcXBUTEtBQy1MYzFPVmQxblg1emxmQXZHdjhsR3lDNTZ3NzVYX1BxUTVDMjF1X1pBVGFRSExydkpHXzZTQUI4ZXlzenBva2E1NDRfSmJITzdtNm9TLVV6U21rdTd2ZTVGcFV3?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Luther Burden Exits Chicago Bears Training Camp Practice With Injury Sports Illustrated",
+          "published": "Sat, 08 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bears WR Luther Burden limps off field with leg injury",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVUVnUHFzT1gteVpTNUVDVGlia2d1VHUxUlllX19hX2ZCUC03cjY2aDM3eHplWUU4bnd5Rlk0VXpMZUpzT25qcUVMYUJmNXJQS0dKamo2a1hObmhwMzNMMDdzTjRHc0VDQl95M0xLVkdwVENVaGhBWENHVlRWR1RubURVekNJVm5jbF8zNno1VDNNRHFHZGRPR1k0eVZaUU50MlIxSA?oc=5",
+          "publisher": "reuters.com",
+          "kind": "article",
+          "snippet": "Bears WR Luther Burden limps off field with leg injury reuters.com",
+          "published": "Sat, 08 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden III recovery timeline revealed with Bears receiver battling groin injury ahead of sophomore season",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVmxxUEJrWjhzaUx0UlJFMHN1bV9seld0LTctU0hXMjlNVEhyMTRRSTgzeXVWSDkzR21wbGRGdEpIbWNSX2pNYVhqa0NnNEwzRGNEbWJzVXdvYU1GMHBreGV4VWZWUlZnaDR2dF92SndRckFpRGkzR0FqOEI4MVctTWxfQ3dWODBReDFvVw?oc=5",
+          "publisher": "the-sun.com",
+          "kind": "article",
+          "snippet": "Luther Burden III recovery timeline revealed with Bears receiver battling groin injury ahead of sophomore season the-sun.com",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Luther Burden injury, fantasy football fallout: What it means for 2026 drafts",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUEQ5Ri1OUTRvRVQ1YVpONm4xTWJzUlUwbk1SSmVlck01OGJtcHFHZUE1ekU5emw1SlltOTRYaThhaE8zTVFvM0s5ajg5NU1YVHdwb0phcUswemgyRE5SZXYtV3o1b1FwLW5iTzdwYmVnQmMtd1l4QnRndU1wN29iU3FYZTlMczhTRHkwUVNWZw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Luther Burden injury, fantasy football fallout: What it means for 2026 drafts Yahoo Sports",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Caleb Williams, Bears receive encouraging news on Luther Burden’s injury ahead of 2026 NFL season opener",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZFJTYURoR2JnZHNsVUhzY2d1ZVJEQUlsSDZvODFkY1ByS0doeVhkcFloanRSZ2JwdnFaM1pMVUktY3V5bHV5VFBZWFRNZVpGT281Z1QyOFZkWFl5emV2Sm5KU3dJUFlwdVBHMlg5V3R1ZExuWFZSYXpNRWJsY3Nxd0xpaEUyN2lWQ25RM0hrVTRGWXdqLWw5OFBJZDVYM2g3WHB3b1gxNUJfTkF6WnNFYThFcTRianhoWm5YWWg3NWJ4Q193ZGJzdNIBzgFBVV95cUxNSTMyaEw4VDdKc3hZbGx2MXNLX0hBLXNWNzd5Sk1sSldrV3E1OFBJM2d4N1NDQ0xuTWdlU1pvTHItMGg5ejZIZ3dndWJIWXgxc2k0RUpuWWtfNVBtTTN2SGhMRHZfX0hiX0tQUHZyVHNoSGktSWx0VDduRjFRemhJSHJKOFdxeHdNRFpFR0J5eVhVckFzNkN2VlpfNXdQWTNzQVlZQzFFVzFacGFnMXI2U2RjMkRnMVIyZ1ViWDJtWWpoVHEyNXFPajRocVI0dw?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Caleb Williams, Bears receive encouraging news on Luther Burden’s injury ahead of 2026 NFL season opener bolavip.com",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
         }
       ]
     }
