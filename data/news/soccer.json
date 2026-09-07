@@ -1,7 +1,7 @@
 {
   "sport": "soccer",
-  "updated": "2026-09-07T03:26:58Z",
-  "fresh": 133,
+  "updated": "2026-09-07T04:26:57Z",
+  "fresh": 121,
   "stories": [
     {
       "id": "chelsea-transfer-rumours-gossip-live-deals-signings-loans-42e97c9f",
@@ -494,12 +494,19 @@
       "slug": "newcastle-lineup-brighton-predicted-xi-premier-league-clash-1dc58333",
       "sport": "soccer",
       "headline": "Liverpool XI vs Ipswich: Barcola debut, predicted lineup, confirmed team news, injury latest for Premier League",
-      "blurb": "Premier League injury news, Arsenal, Man United, Liverpool predicted XIs ESPN",
-      "summary": "Conor Bradley, Bruno Fernandes, Mateus Fernandes, Dominic Calvert-Lewin, Caoimhín Kelleher, Jacob Murphy, Carlos Baleba, Jordan Henderson, Moisés Caicedo Corozo, Yankuba Minteh, Dominik Szoboszlai, Joe Rodon, Matheus Cunha, Florian Wirtz, Kiernan Dewsbury-Hall, Jack Grealish, Hugo Ekitiké, Bukayo Saka, Gabriel Magalhães, Alexander Isak, Daniel James, Gabriel Martinelli Silva, Nico O'Reilly, Martin Ødegaard, Cole Palmer, Emiliano Martínez Romero, Reece James and Cristian Romero: Premier League injury news, Arsenal, Man United, Liverpool predicted XIs ESPN Premier League injury news, predicted lineups, fantasy updates ESPN Premier League injury table 2024-25: Club by club injuries, tracker, updates NBC Sports Aggregated from ESPN, NBC Sports, The Mirror, Football London, BBC and 52 more.",
+      "blurb": "Premier League injury update on Liverpool striker FourFourTwo",
+      "summary": "Hugo Ekitiké, Conor Bradley, Bruno Fernandes, Mateus Fernandes, Dominic Calvert-Lewin, Caoimhín Kelleher, Jacob Murphy, Carlos Baleba, Jordan Henderson, Moisés Caicedo Corozo, Yankuba Minteh, Dominik Szoboszlai, Joe Rodon, Matheus Cunha, Florian Wirtz, Kiernan Dewsbury-Hall, Jack Grealish, Bukayo Saka, Gabriel Magalhães, Alexander Isak, Daniel James, Gabriel Martinelli Silva, Nico O'Reilly, Martin Ødegaard, Cole Palmer, Emiliano Martínez Romero, Reece James and Cristian Romero: Premier League injury update on Liverpool striker FourFourTwo Premier League: A season of injuries - how does your club rank? Premier League to crack down on goalkeepers 'feigning injury' Sportsnet.ca Aggregated from FourFourTwo, BBC, Sportsnet.ca, Yahoo Sports, Realnews Magazine and 52 more.",
       "category": "injury",
       "published": "2016-01-15T08:00:00Z",
       "updated": "2026-09-06T20:07:11Z",
       "players": [
+        {
+          "key": "ekitike",
+          "name": "Hugo Ekitiké",
+          "slug": "hugo-ekitik",
+          "pos": "FWD",
+          "team": "LIV"
+        },
         {
           "key": "bradley",
           "name": "Conor Bradley",
@@ -611,13 +618,6 @@
           "slug": "jack-grealish",
           "pos": "MID",
           "team": "MCI"
-        },
-        {
-          "key": "ekitike",
-          "name": "Hugo Ekitiké",
-          "slug": "hugo-ekitik",
-          "pos": "FWD",
-          "team": "LIV"
         },
         {
           "key": "saka",
@@ -3612,12 +3612,26 @@
       "slug": "fpl-challenge-expert-reveals-gameweek-1-41084a2c",
       "sport": "soccer",
       "headline": "Saka, Guimarães & Watkins: Latest FPL injury news for Gameweek 25 before Arsenal take on Sunderland",
-      "blurb": "Konsa, Mosquera, Timber: Arsenal injury latest for FPL Gameweek 3 fantasyfootballscout.co.uk",
-      "summary": "Cristhian Mosquera, Tino Livramento, Bryan Mbeumo, Declan Rice, Carlos Baleba and Ollie Watkins: Konsa, Mosquera, Timber: Arsenal injury latest for FPL Gameweek 3 fantasyfootballscout.co.uk Osula, Livramento, Burn: Newcastle injury latest for FPL Gameweek 3 fantasyfootballscout.co.uk Saka, Mbeumo & Gordon: Latest FPL injury news for Gameweek 34 before Arsenal v Newcastle 3 Added Minutes Aggregated from fantasyfootballscout.co.uk, 3 Added Minutes, Premier League, RotoWire, YouTube and 2 more.",
+      "blurb": "Caicedo + Palestra: Chelsea injury latest for FPL Gameweek 3 fantasyfootballscout.co.uk",
+      "summary": "Moisés Caicedo Corozo, James Maddison, Cristhian Mosquera, Tino Livramento, Bryan Mbeumo, Declan Rice, Carlos Baleba and Ollie Watkins: Caicedo + Palestra: Chelsea injury latest for FPL Gameweek 3 fantasyfootballscout.co.uk Savio, Maddison, Mudryk: Tottenham injury latest for FPL Gameweek 3 fantasyfootballscout.co.uk FPL Challenge: Expert reveals their Gameweek 1 team Premier League Aggregated from fantasyfootballscout.co.uk, Premier League, RotoWire, YouTube, 3addedminutes.com and 2 more.",
       "category": "injury",
       "published": "2025-11-05T08:00:00Z",
       "updated": "2026-09-06T18:28:56Z",
       "players": [
+        {
+          "key": "caicedo",
+          "name": "Moisés Caicedo Corozo",
+          "slug": "mois-s-caicedo-corozo",
+          "pos": "MID",
+          "team": "CHE"
+        },
+        {
+          "key": "maddison",
+          "name": "James Maddison",
+          "slug": "james-maddison",
+          "pos": "MID",
+          "team": "TOT"
+        },
         {
           "key": "mosquera",
           "name": "Cristhian Mosquera",
@@ -3781,6 +3795,22 @@
           "kind": "article",
           "snippet": "Saka, Mbeumo & Gordon: Latest FPL injury news for Gameweek 34 before Arsenal v Newcastle 3 Added Minutes",
           "published": "Thu, 23 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Caicedo + Palestra: Chelsea injury latest for FPL Gameweek 3",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLUxJNFlqcDdtcjFFTTZVNHV1Q0dERzQzdG5uWVVkdlZySWhNYllpUEJhX0RBelk1UUFxRHJBeU9IWVRocjdnWDdtVVJLQU9QTTNnSW81djRxaURxOUZ0bTJBUVRZT29CY0tvWEFDT2lUZi1LbnlMUjBmdTF3MGVveElQSk43end2S2RFblgxb1lqaDkxQllMMlprTnJSbEVSbkRiY0ZmazNnWFBE?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "Caicedo + Palestra: Chelsea injury latest for FPL Gameweek 3 fantasyfootballscout.co.uk",
+          "published": "Fri, 04 Sep 2026 15:33:33 GMT"
+        },
+        {
+          "title": "Savio, Maddison, Mudryk: Tottenham injury latest for FPL Gameweek 3",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRnB4V2hOYUp3Z3hYMlU1OFc1OVAtQmtaWTJxa2xqZjFpLUlxLUhvaG9WSjIycjMxM1FYUUxMZ2dUdmpWTFVzUVFGcTNlbGd4RUZlay1sLUhYM2dmRXVWT00wYzB6Q0o0U29ISUloYzdVZUNCNXpXQkxpMnVmczVvZlpBRV9YQ0tsSDJoUERqMjcxU19mSGFnMFhLVGlMVlRzWW5lVnY3d2tVVmpUQW9qSm44TnI4dw?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "Savio, Maddison, Mudryk: Tottenham injury latest for FPL Gameweek 3 fantasyfootballscout.co.uk",
+          "published": "Fri, 04 Sep 2026 14:39:18 GMT"
         }
       ]
     },
@@ -3789,8 +3819,8 @@
       "slug": "arsenal-host-chelsea-manchester-united-travel-everton-matchday-57c82a9d",
       "sport": "soccer",
       "headline": "Manchester United transfer news: January move for 'unsettled' Premier League defender rumoured with Ruben Amorim keen",
-      "blurb": "Minute-by-minute updates from the action at Hill Dickinson Stadium Transfer failures leave Everton scrambling | Mail Tim “Selected scuttlebut,” says Ian Copestake, promisingly,…",
-      "summary": "Youri Tielemans, Eberechi Eze, Martín Zubimendi Ibáñez and Mikel Merino Zazón: Minute-by-minute updates from the action at Hill Dickinson Stadium Transfer failures leave Everton scrambling | Mail Tim “Selected scuttlebut,” says Ian Copestake, promisingly, “from Everton fans on the train from Birkenhead to the game is that the fans have been lied to. Promises made by the new owners (shiny new stadium not mentioned) have not been fulfilled. Mutiny is round the corner (probably at Sandhills).” An unexpected proposal from John Stedman. Aggregated from Guardian Football, ESPN, YouTube, readliverpoolfc.com, Tottenham Hotspur and 4 more.",
+      "blurb": "Ruben Neves targeted for sensational Premier League transfer in surprise return https://t.co/2fofW7aO0b x.com",
+      "summary": "Youri Tielemans, Eberechi Eze, Martín Zubimendi Ibáñez and Mikel Merino Zazón: Ruben Neves targeted for sensational Premier League transfer in surprise return https://t.co/2fofW7aO0b x.com Buildup, news and discussion before Sunday’s games This weekend’s fixtures | Mail us with your thoughts No panic at Arsenal despite the lack of a major addition to the forward line. At Aston Villa on Monday night , Arteta introduced two of Spain’s World Cup winning squad - Mikel Aggregated from x.com, Guardian Football, Tottenham Hotspur, YouTube, CaughtOffside and 5 more.",
       "category": "injury",
       "published": "2024-07-26T07:00:00Z",
       "updated": "2026-09-06T15:14:36Z",
@@ -3936,6 +3966,14 @@
           "kind": "article",
           "snippet": "Liverpool Joined By Manchester United in Race For £55m Premier League Star readliverpoolfc.com",
           "published": "Sat, 21 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Ruben Neves targeted for sensational Premier League transfer in surprise return https://t.co/2fofW7aO0b",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8wT090ZTUtMFFXa2ozSDg1MktSTXpPQnNuNkNxdFJ0MkFyN3B0eEtWdHR6UTF5QnJIb3FLVDdaendQOFZNM1FsMXRQWlZtck1kWjBtYVh5MEpocG15VEVR?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Ruben Neves targeted for sensational Premier League transfer in surprise return https://t.co/2fofW7aO0b x.com",
+          "published": "Mon, 22 Dec 2025 08:00:00 GMT"
         }
       ]
     },
@@ -8518,6 +8556,163 @@
       ]
     },
     {
+      "id": "erling-haaland-man-city-leeds-injury-why-premier-b0d0e502",
+      "slug": "erling-haaland-man-city-leeds-injury-why-premier-b0d0e502",
+      "sport": "soccer",
+      "headline": "Erling Haaland out of Man City vs. Leeds: Injury latest, why Premier League top scorer missed key clash",
+      "blurb": "Haaland guides Man City past Coventry; Spurs goalless again | Premier League Update | NBC Sports YouTube",
+      "summary": "Antoine Semenyo and Erling Haaland: Haaland guides Man City past Coventry; Spurs goalless again | Premier League Update | NBC Sports YouTube Haaland keeps Man City perfect in Premier League, blunt Spurs held Dhaka Tribune Premier League: Erling Haaland Leads Manchester City to 1-0 Win Over Coventry Tempo.co English Aggregated from YouTube, Dhaka Tribune, Tempo.co English, english.ahram.org.eg, FOX Sports and 7 more.",
+      "category": "injury",
+      "published": "2026-01-19T08:00:00Z",
+      "updated": "2026-09-06T03:36:54Z",
+      "players": [
+        {
+          "key": "semenyo",
+          "name": "Antoine Semenyo",
+          "slug": "antoine-semenyo",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "erling haaland",
+          "name": "Erling Haaland",
+          "slug": "erling-haaland",
+          "pos": "FWD",
+          "team": "MCI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Haaland keeps Man City perfect in Premier League, blunt Spurs held",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNczI3dkVkQ0dtT3cyZzN2b3p3WExZUVlSemszRUI0ZVFHcWJuZTRYWVdOa1B0V1c4Q1lqamdfVDlUYU1BenVoVENESW5MZUNCRUJKeks0aFhZMk1zSnNxem5saXRhQ2pfdVh1cGZWSFN0ZTFZdU1Ub0xfbmxnZEdTbkM0ZzAyekhaUDdDSy1fVlFOUkdnNDVibGxCbnlZZWlPWFJ2bjNB0gGmAUFVX3lxTE1zMjd2RWRDR21PdzJnM3ZvendYTFlRWVJ6azNFQjRlUUdxYm5lNFhZV05rUHRXVzhDWWpqZ19UOVRhTUF6dWhUQ0RJbkxlQ0JFQkp6SzRoWFkyTXNKc3F6bmxpdGFDal91WHVwZlZIU3RlMVl1TVRvTF9ubGdkR1NuQzRnMDJ6SFpQN0NLLV9WUU5SR2c0NWJsbEJueVllaU9YUnZuM0E?oc=5",
+          "publisher": "Dhaka Tribune",
+          "kind": "article",
+          "snippet": "Haaland keeps Man City perfect in Premier League, blunt Spurs held Dhaka Tribune",
+          "published": "Sun, 06 Sep 2026 03:36:54 GMT"
+        },
+        {
+          "title": "Premier League: Erling Haaland Leads Manchester City to 1-0 Win Over Coventry",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOa3h0bllZT2IxMTFnRkFjUTktckprTnc3bjRvSDVHXzloRVZLVjhDNS12elYxTlhHZk5Gc3k1enNCSFlpcmxLb09UcFMwWUg3ZFQycGc2STRHNWJfZ2xpWHNJa2VQUVFuMWhvNDZoUmNUMkNubUNWM3p1Sk1SRFRhN3JabThtZHduamw2VGg0bGV2M1c2TU9HMzN5V0J5bkh0WUdVUW40TnJHaVFvQnc?oc=5",
+          "publisher": "Tempo.co English",
+          "kind": "article",
+          "snippet": "Premier League: Erling Haaland Leads Manchester City to 1-0 Win Over Coventry Tempo.co English",
+          "published": "Sun, 06 Sep 2026 00:08:52 GMT"
+        },
+        {
+          "title": "Haaland keeps new-look Man City perfect in Premier League, blunt Spurs held - World",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaXBBVjJmdUtTZDhST2RlcHA5OTJwTURCLUFIV1g1MVItcjhUZ08zVlNLLV9ER3FjRHNOclZfa3N3Q09WdThrX0RjZVo3b1dwZG1QWV8wY1dPS2VNVXRhVWduVGtDcVJOZzZZTXAzakZKaHZkQ1k2V3pwd2JoaDJKMHkwS1JaTzAtQWNqdkotWnV0TUlDOGprcXRyTkJ4b1d1LUpuR0hxLWpjcnZEVmJkX1c2RQ?oc=5",
+          "publisher": "english.ahram.org.eg",
+          "kind": "article",
+          "snippet": "Haaland keeps new-look Man City perfect in Premier League, blunt Spurs held - World - Sports english.ahram.org.eg",
+          "published": "Sat, 05 Sep 2026 17:10:47 GMT"
+        },
+        {
+          "title": "Man City wins without Haaland to keep pressure on Arsenal in Premier League title race",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcW0xcGJhZzJKQUJuaW9XV2dhT0FsRTBqR0pfcXV0bTFlZ0JmbW5Wbzd1dVJ1bU4yRlE1eHNQUWlRdk4yV0I4V2h4SFVaWFZ2VXg1WXVwTDZsNk5xYWxJTS10OGM0eW0wcTJoeWJvOG5tcW1OSFdWS01wWWNmTWFmOWJRWEs1c0syNTFiRFY4WVFUMGFrekw2bjROQlVqUTNFdjhnOHJ5X1ZlYnNsLVNRTEN4RUdDcVdlbXpndUx4akdOTGVfNGRN?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "Man City wins without Haaland to keep pressure on Arsenal in Premier League title race FOX Sports",
+          "published": "Sat, 28 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Erling Haaland out of Man City vs. Leeds: Injury latest, why Premier League top scorer missed key clash",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWjYyTVVrdWswS3VEaFlMbXNIVzV1MTd2MWJtNDJuWFp0U0ZJdEFfS092R29LS3B3cEtjblg5RGd1dmdmSWo0RXgzbWlMUE5PclhQWW5DbW84S1lqUklzYjJPWmJ0MXNNSFlQQzFUOUpWVWhoYkktYjVMQ2dLX2NoT1hoa0c4NzlQRkh5RUhabExsa1RjTk1MUkU3emFzc1ZqdllRSWctbkhucHk4OWJrSThjenFLVkxUWXdMRW9fRjlzVVBCLV9oTG1uYS1kUzAyakp3REFWUkNsUEE1RjlnM0lBSUs?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Erling Haaland out of Man City vs. Leeds: Injury latest, why Premier League top scorer missed key clash sportingnews.com",
+          "published": "Sun, 01 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Man City & Barca hold Haaland talks",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1vWVBkSUR5OHVXYVZtTGFqUjNnVm1JWk02dGdPQmVWdnFDNFg1bUROQnBCUXowUmxoc25CMV8zYjRKZmRJV3FDZXlzS0JtYUhDZjFodmhRMHJNYWRVeFhGd0h2cnNBYWs?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Man City & Barca hold Haaland talks - Friday's gossip BBC",
+          "published": "Thu, 12 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Barcelona 'dream' transfer admission over Erling Haaland after Man City Champions League blow",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOR2M4VGV6TURncng1b3dVOVdldkh4UW9kYlMwX21OOHh1a29sNWdzRDFTVGhDNkxpeE5fQmlfTW9CUlQ3cFhvZ3VRcmdIbHhUQWViY1hDclFiTkEtN3R5bEQtM19QcWVqUEdoZEpaQ0NQN2ExUmViMGo5Sk42b19TR3R0anRQWlE2TV9GVVVWdVpRR2lsNm5JN0NKUHNJOU05UFV0dTdyZHdVSWhZRkExUDJiWlFxeVHSAbwBQVVfeXFMTkpGdkE0aTB3SGlMYkN0RURfdHVOUmdSZU5oalgweTBvV2xETXI3czQ4d1l5bjJaVmRwTlhtTE9ac1A2eU9jTGl6bk9scG1WUDBVandRejJUdHBVUEh5THIzd1QtcGxRZE04U0owODY0eWhKdnpwRndsYTNacGtacDdJNTZJa2JMZGE1eHo3VmdYa3Z5LXRxQmkzSzlvaUFrNUlHbmNRX0NpenJNQmFheUxmUkZGSDd4TEhRb2E?oc=5",
+          "publisher": "Manchester Evening News",
+          "kind": "article",
+          "snippet": "Barcelona 'dream' transfer admission over Erling Haaland after Man City Champions League blow Manchester Evening News",
+          "published": "Fri, 13 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "‘Erling Haaland leaving Man City one day is inevitable’ - Prediction made on when record-breaking striker will push for a transfer away from Premier League giants",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbHZpN0NSbWttTW94cTZrREN6Sl84ak9ISWFOYUR3alZ0bXBUVlR1X2tXSjk0TmNCVVh2YjFwZjFOV25fS3pZbW1rQ0Z0dGVDT2t3bEFNeWlVZEhqLUZBcEhOZTIza0FTRDZsRkhYajlnMVRwbjFPVFRqTU92RDVvZ3ZUSlJBRGs?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "‘Erling Haaland leaving Man City one day is inevitable’ - Prediction made on when record-breaking striker will push for a transfer away from Premier League giants sports.yahoo.com",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Erling Haaland injury: Pep Guardiola unsure on when Man City striker will return and complains about fixture schedule",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQcktGcTUtdV9kY3p0TlBCaVo1THFNMVF2cl9CTEVRUUh6VXVQdGFQckk0dUpKSG5rRThGaWprd0FmNDZMbHNsdGRxQ09EWVVJQ0ZDdHpxSFM4RW9TYzhIZXJUYzdNM2hGRDA3VlpwN3BfZlB1cGNnVDhBRE1fckJpQ0c4d0hmZ2JOOHZla2JaUGh4NGZGUWFPUE1sN2ZyWkZHOXZpRFN1WktxZGxGY2NEVXBJX3cyckZ2dDBJbDZ4Q1hFQUpQUEJvOE9QY04zZ2pIdUVqVGZlTGQzS0R5am9sRnl3NGdhdzZNVDI3NU5xS3RfaG9RbE82SFplekJMQmtI?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Erling Haaland injury: Pep Guardiola unsure on when Man City striker will return and complains about fixture schedule Sky Sports",
+          "published": "Sat, 28 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Why Erling Haaland is not involved for Man City on final day of the season",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVU1RYklOd2Z0OHFETHRZRUlEZUtwUUg2al9nTTcwcmo4RG5WVm90dThwWElRNTNubkNLM195NnFuRjBLYlVIODdsZlJYUUFlRmFab0xubXBnckhHV05ZQmRWMnc5el9ibW1jbG4yT3Nrajg5UU9EdnpXSUZ3bXZoU2dCNTBBek5TcTc1ZGtDYl9tX0NFelowb0t30gGfAUFVX3lxTE1VUjdrYWpjaE5WMnpkTkhlYnppejh1QTdfMmY2bTdUb2ExaHN4dm1JYUw5NUFOdTREdjBxT0xPVWtBaFlhaEMyUl83ZDJaYTd1U2pJamFkT0tWX0lUT0VHdXlPa1FoYmNBZnN4UWgyVHlQdHFjd1doWVpoNHUxZGhhQWhzLWlsUTBzOHowTDF6UnpSQW52NVJxVWQ2NG1CTQ?oc=5",
+          "publisher": "Metro.co.uk",
+          "kind": "article",
+          "snippet": "Why Erling Haaland is not involved for Man City on final day of the season Metro.co.uk",
+          "published": "Sun, 24 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pep Guardiola delivers new update on Erling Haaland injury as Man City sweat on star striker's availability for Nottingham Forest clash",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNcWFKbkJfaUllTDUyM0ZQZ1Q1RzN5TFVpNUZ1NW05bkgzZm9QM293YXI0clBSOUgzNUpDQVFURFdJTWw4MWJEenNMbVNyUnhTOU81Wk1rRk9xSENZVTJyZFM5SERCeFdqc0lmMWp5SnRIWnhSVTdQOVpjSDNrRW41MFdndS1OUzUyUTNibUItRjFIVlZPYTZaanV2SXNMX3F0ZWNncFVjUV9jV2JKR0FldFRtYlNjZVdJMmNBZk95SE5DR0JZbUdwOGxsUTdrb3N4OC1JUnVoMENscHJ2MEJFM3ozbVJNeml2Rm5ab3NFbXQ3WkJtNGMwX3FVZ0g4cmEwdlctNzhGVQ?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "Pep Guardiola delivers new update on Erling Haaland injury as Man City sweat on star striker's availability for Nottingham Forest clash FOX Sports",
+          "published": "Tue, 03 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Real Madrid keeping tabs on Erling Haaland as Man City prepare for post-Pep Guardiola era- Paper Talk",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNMl9TRTBwcDd6aTMxOExETWZuWk5abzFFT2htMmIwVVNsbjN4SHlmZnByaUZFMzFiUDdPanJkLXRrc1Z3TjlxdVBHd3I0aS05NnNSaTVQUlBFMDlFRDNjRDJqLU9GSnVnSllPT2xEX3VIU3JRWEo4QTlvNEVDR3FNdTNBOXpvQTd2Nlk5MmttZ3ZudHVHOWFtTUw5V3V4MnMzS25TYVdOQ1JkWFMtMVhJMGs3RUttZGVudjAxU3pDaFBTTTFaOFNGc3ppLVRDTTFiYUFHOGdHaExiM3dPZGVRa2ctMFBucGc3SGRoaWpDZUxGZWFFWTdwLXNTQ3ExNXM?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Real Madrid keeping tabs on Erling Haaland as Man City prepare for post-Pep Guardiola era- Paper Talk Sky Sports",
+          "published": "Sat, 23 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pep Guardiola offers fresh Erling Haaland injury update after he missed Leeds win",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNFhTbG52akdVSUdZZ2NWR2hkRXFXVG1DYWVxN3ladDRKSDQyM3lFSFJENE13SThoRHI0Z3J3RnRRcE1fU0YzcHdTWUY4M0h3OXBRaFp3RFFacUNScVVIaGx2WENtVndkU2ZGS2VHcDMwWWUybzhkQ3hSYWhVRHBwSkJCMU1GSmNrbFJVZtIBkgFBVV95cUxNLVd1SHdTSXFKZHJ2UjhzLVN0aHdvZElsblh4OE9udW84dGpvaVNQOUR4bXVjVzkxRVc1M3JqYnEzdWo1elktYjJIZVdTcmt5dHI3OFViXzgwZGhnR3QzdWpZdzNYbHpNUVVQWlZjOGdyZHE2R2Q5d2dJT1MxY3FHbmZuNE5CYUV0THFfMTVoNmh4Zw?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Pep Guardiola offers fresh Erling Haaland injury update after he missed Leeds win The Mirror",
+          "published": "Mon, 02 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Leeds 0-1 Man City: Antoine Semenyo takes goalsoring burden off Erling Haaland",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qLUk0UDF3Rzg4SHlHeHN0bUp5bDBLbHlvcmp5RmkzY2c0eC1IOU9KNG8tY0E4MXRTaDFZVlhmQm51dldxamR6UGJuMi1BSHpDRWM4SmZMUmI1d2N3eUZyYmtuelpOSUU?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Leeds 0-1 Man City: Antoine Semenyo takes goalsoring burden off Erling Haaland BBC",
+          "published": "Sat, 28 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Man City news: Marc Guehi and Antoine Semenyo deals show long-term thinking",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1sWUdxVWFKM3kyMTllS3h5bnJ5STdwT2tXemZxX1l5cERJb1RCRGxXUEZrWmRLcFV5V2o3VWhILUFpdzlqcnUyV2F3UGcwRk80Z0Q3R3dGOGNuNzg?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Man City news: Marc Guehi and Antoine Semenyo deals show long-term thinking BBC",
+          "published": "Mon, 19 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Haaland guides Man City past Coventry; Spurs goalless again | Premier League Update | NBC Sports",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tdnIweldZV0t6UU1mcFhzdm54c2I1LUIzQWU4a25ndEF3SzBWR2xfUFh3a2Q3b0RpUmdqOEdZNDRVTDczUklESHJneDJvOUNFUm03a3RR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Haaland guides Man City past Coventry; Spurs goalless again | Premier League Update | NBC Sports YouTube",
+          "published": "Sat, 05 Sep 2026 19:46:48 GMT"
+        }
+      ]
+    },
+    {
       "id": "premier-league-s-best-worst-serie-signings-transfer-a7d87d58",
       "slug": "premier-league-s-best-worst-serie-signings-transfer-a7d87d58",
       "sport": "soccer",
@@ -9157,163 +9352,6 @@
           "kind": "article",
           "snippet": "Newcastle fear Premier League rivals will hijack £70m Joao Pedro transfer talkSPORT",
           "published": "Tue, 17 Jun 2025 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "erling-haaland-man-city-leeds-injury-why-premier-b0d0e502",
-      "slug": "erling-haaland-man-city-leeds-injury-why-premier-b0d0e502",
-      "sport": "soccer",
-      "headline": "Erling Haaland out of Man City vs. Leeds: Injury latest, why Premier League top scorer missed key clash",
-      "blurb": "Haaland guides Man City past Coventry; Spurs goalless again | Premier League Update | NBC Sports YouTube",
-      "summary": "Antoine Semenyo and Erling Haaland: Haaland guides Man City past Coventry; Spurs goalless again | Premier League Update | NBC Sports YouTube Haaland keeps Man City perfect in Premier League, blunt Spurs held Dhaka Tribune Premier League: Erling Haaland Leads Manchester City to 1-0 Win Over Coventry Tempo.co English Aggregated from YouTube, Dhaka Tribune, Tempo.co English, english.ahram.org.eg, FOX Sports and 7 more.",
-      "category": "injury",
-      "published": "2026-01-19T08:00:00Z",
-      "updated": "2026-09-06T03:36:54Z",
-      "players": [
-        {
-          "key": "semenyo",
-          "name": "Antoine Semenyo",
-          "slug": "antoine-semenyo",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "erling haaland",
-          "name": "Erling Haaland",
-          "slug": "erling-haaland",
-          "pos": "FWD",
-          "team": "MCI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Haaland keeps Man City perfect in Premier League, blunt Spurs held",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNczI3dkVkQ0dtT3cyZzN2b3p3WExZUVlSemszRUI0ZVFHcWJuZTRYWVdOa1B0V1c4Q1lqamdfVDlUYU1BenVoVENESW5MZUNCRUJKeks0aFhZMk1zSnNxem5saXRhQ2pfdVh1cGZWSFN0ZTFZdU1Ub0xfbmxnZEdTbkM0ZzAyekhaUDdDSy1fVlFOUkdnNDVibGxCbnlZZWlPWFJ2bjNB0gGmAUFVX3lxTE1zMjd2RWRDR21PdzJnM3ZvendYTFlRWVJ6azNFQjRlUUdxYm5lNFhZV05rUHRXVzhDWWpqZ19UOVRhTUF6dWhUQ0RJbkxlQ0JFQkp6SzRoWFkyTXNKc3F6bmxpdGFDal91WHVwZlZIU3RlMVl1TVRvTF9ubGdkR1NuQzRnMDJ6SFpQN0NLLV9WUU5SR2c0NWJsbEJueVllaU9YUnZuM0E?oc=5",
-          "publisher": "Dhaka Tribune",
-          "kind": "article",
-          "snippet": "Haaland keeps Man City perfect in Premier League, blunt Spurs held Dhaka Tribune",
-          "published": "Sun, 06 Sep 2026 03:36:54 GMT"
-        },
-        {
-          "title": "Premier League: Erling Haaland Leads Manchester City to 1-0 Win Over Coventry",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOa3h0bllZT2IxMTFnRkFjUTktckprTnc3bjRvSDVHXzloRVZLVjhDNS12elYxTlhHZk5Gc3k1enNCSFlpcmxLb09UcFMwWUg3ZFQycGc2STRHNWJfZ2xpWHNJa2VQUVFuMWhvNDZoUmNUMkNubUNWM3p1Sk1SRFRhN3JabThtZHduamw2VGg0bGV2M1c2TU9HMzN5V0J5bkh0WUdVUW40TnJHaVFvQnc?oc=5",
-          "publisher": "Tempo.co English",
-          "kind": "article",
-          "snippet": "Premier League: Erling Haaland Leads Manchester City to 1-0 Win Over Coventry Tempo.co English",
-          "published": "Sun, 06 Sep 2026 00:08:52 GMT"
-        },
-        {
-          "title": "Haaland keeps new-look Man City perfect in Premier League, blunt Spurs held - World",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaXBBVjJmdUtTZDhST2RlcHA5OTJwTURCLUFIV1g1MVItcjhUZ08zVlNLLV9ER3FjRHNOclZfa3N3Q09WdThrX0RjZVo3b1dwZG1QWV8wY1dPS2VNVXRhVWduVGtDcVJOZzZZTXAzakZKaHZkQ1k2V3pwd2JoaDJKMHkwS1JaTzAtQWNqdkotWnV0TUlDOGprcXRyTkJ4b1d1LUpuR0hxLWpjcnZEVmJkX1c2RQ?oc=5",
-          "publisher": "english.ahram.org.eg",
-          "kind": "article",
-          "snippet": "Haaland keeps new-look Man City perfect in Premier League, blunt Spurs held - World - Sports english.ahram.org.eg",
-          "published": "Sat, 05 Sep 2026 17:10:47 GMT"
-        },
-        {
-          "title": "Man City wins without Haaland to keep pressure on Arsenal in Premier League title race",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcW0xcGJhZzJKQUJuaW9XV2dhT0FsRTBqR0pfcXV0bTFlZ0JmbW5Wbzd1dVJ1bU4yRlE1eHNQUWlRdk4yV0I4V2h4SFVaWFZ2VXg1WXVwTDZsNk5xYWxJTS10OGM0eW0wcTJoeWJvOG5tcW1OSFdWS01wWWNmTWFmOWJRWEs1c0syNTFiRFY4WVFUMGFrekw2bjROQlVqUTNFdjhnOHJ5X1ZlYnNsLVNRTEN4RUdDcVdlbXpndUx4akdOTGVfNGRN?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "Man City wins without Haaland to keep pressure on Arsenal in Premier League title race FOX Sports",
-          "published": "Sat, 28 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Erling Haaland out of Man City vs. Leeds: Injury latest, why Premier League top scorer missed key clash",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWjYyTVVrdWswS3VEaFlMbXNIVzV1MTd2MWJtNDJuWFp0U0ZJdEFfS092R29LS3B3cEtjblg5RGd1dmdmSWo0RXgzbWlMUE5PclhQWW5DbW84S1lqUklzYjJPWmJ0MXNNSFlQQzFUOUpWVWhoYkktYjVMQ2dLX2NoT1hoa0c4NzlQRkh5RUhabExsa1RjTk1MUkU3emFzc1ZqdllRSWctbkhucHk4OWJrSThjenFLVkxUWXdMRW9fRjlzVVBCLV9oTG1uYS1kUzAyakp3REFWUkNsUEE1RjlnM0lBSUs?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Erling Haaland out of Man City vs. Leeds: Injury latest, why Premier League top scorer missed key clash sportingnews.com",
-          "published": "Sun, 01 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Man City & Barca hold Haaland talks",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1vWVBkSUR5OHVXYVZtTGFqUjNnVm1JWk02dGdPQmVWdnFDNFg1bUROQnBCUXowUmxoc25CMV8zYjRKZmRJV3FDZXlzS0JtYUhDZjFodmhRMHJNYWRVeFhGd0h2cnNBYWs?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Man City & Barca hold Haaland talks - Friday's gossip BBC",
-          "published": "Thu, 12 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Barcelona 'dream' transfer admission over Erling Haaland after Man City Champions League blow",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOR2M4VGV6TURncng1b3dVOVdldkh4UW9kYlMwX21OOHh1a29sNWdzRDFTVGhDNkxpeE5fQmlfTW9CUlQ3cFhvZ3VRcmdIbHhUQWViY1hDclFiTkEtN3R5bEQtM19QcWVqUEdoZEpaQ0NQN2ExUmViMGo5Sk42b19TR3R0anRQWlE2TV9GVVVWdVpRR2lsNm5JN0NKUHNJOU05UFV0dTdyZHdVSWhZRkExUDJiWlFxeVHSAbwBQVVfeXFMTkpGdkE0aTB3SGlMYkN0RURfdHVOUmdSZU5oalgweTBvV2xETXI3czQ4d1l5bjJaVmRwTlhtTE9ac1A2eU9jTGl6bk9scG1WUDBVandRejJUdHBVUEh5THIzd1QtcGxRZE04U0owODY0eWhKdnpwRndsYTNacGtacDdJNTZJa2JMZGE1eHo3VmdYa3Z5LXRxQmkzSzlvaUFrNUlHbmNRX0NpenJNQmFheUxmUkZGSDd4TEhRb2E?oc=5",
-          "publisher": "Manchester Evening News",
-          "kind": "article",
-          "snippet": "Barcelona 'dream' transfer admission over Erling Haaland after Man City Champions League blow Manchester Evening News",
-          "published": "Fri, 13 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "‘Erling Haaland leaving Man City one day is inevitable’ - Prediction made on when record-breaking striker will push for a transfer away from Premier League giants",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbHZpN0NSbWttTW94cTZrREN6Sl84ak9ISWFOYUR3alZ0bXBUVlR1X2tXSjk0TmNCVVh2YjFwZjFOV25fS3pZbW1rQ0Z0dGVDT2t3bEFNeWlVZEhqLUZBcEhOZTIza0FTRDZsRkhYajlnMVRwbjFPVFRqTU92RDVvZ3ZUSlJBRGs?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "‘Erling Haaland leaving Man City one day is inevitable’ - Prediction made on when record-breaking striker will push for a transfer away from Premier League giants sports.yahoo.com",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Erling Haaland injury: Pep Guardiola unsure on when Man City striker will return and complains about fixture schedule",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQcktGcTUtdV9kY3p0TlBCaVo1THFNMVF2cl9CTEVRUUh6VXVQdGFQckk0dUpKSG5rRThGaWprd0FmNDZMbHNsdGRxQ09EWVVJQ0ZDdHpxSFM4RW9TYzhIZXJUYzdNM2hGRDA3VlpwN3BfZlB1cGNnVDhBRE1fckJpQ0c4d0hmZ2JOOHZla2JaUGh4NGZGUWFPUE1sN2ZyWkZHOXZpRFN1WktxZGxGY2NEVXBJX3cyckZ2dDBJbDZ4Q1hFQUpQUEJvOE9QY04zZ2pIdUVqVGZlTGQzS0R5am9sRnl3NGdhdzZNVDI3NU5xS3RfaG9RbE82SFplekJMQmtI?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Erling Haaland injury: Pep Guardiola unsure on when Man City striker will return and complains about fixture schedule Sky Sports",
-          "published": "Sat, 28 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Why Erling Haaland is not involved for Man City on final day of the season",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVU1RYklOd2Z0OHFETHRZRUlEZUtwUUg2al9nTTcwcmo4RG5WVm90dThwWElRNTNubkNLM195NnFuRjBLYlVIODdsZlJYUUFlRmFab0xubXBnckhHV05ZQmRWMnc5el9ibW1jbG4yT3Nrajg5UU9EdnpXSUZ3bXZoU2dCNTBBek5TcTc1ZGtDYl9tX0NFelowb0t30gGfAUFVX3lxTE1VUjdrYWpjaE5WMnpkTkhlYnppejh1QTdfMmY2bTdUb2ExaHN4dm1JYUw5NUFOdTREdjBxT0xPVWtBaFlhaEMyUl83ZDJaYTd1U2pJamFkT0tWX0lUT0VHdXlPa1FoYmNBZnN4UWgyVHlQdHFjd1doWVpoNHUxZGhhQWhzLWlsUTBzOHowTDF6UnpSQW52NVJxVWQ2NG1CTQ?oc=5",
-          "publisher": "Metro.co.uk",
-          "kind": "article",
-          "snippet": "Why Erling Haaland is not involved for Man City on final day of the season Metro.co.uk",
-          "published": "Sun, 24 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pep Guardiola delivers new update on Erling Haaland injury as Man City sweat on star striker's availability for Nottingham Forest clash",
-          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNcWFKbkJfaUllTDUyM0ZQZ1Q1RzN5TFVpNUZ1NW05bkgzZm9QM293YXI0clBSOUgzNUpDQVFURFdJTWw4MWJEenNMbVNyUnhTOU81Wk1rRk9xSENZVTJyZFM5SERCeFdqc0lmMWp5SnRIWnhSVTdQOVpjSDNrRW41MFdndS1OUzUyUTNibUItRjFIVlZPYTZaanV2SXNMX3F0ZWNncFVjUV9jV2JKR0FldFRtYlNjZVdJMmNBZk95SE5DR0JZbUdwOGxsUTdrb3N4OC1JUnVoMENscHJ2MEJFM3ozbVJNeml2Rm5ab3NFbXQ3WkJtNGMwX3FVZ0g4cmEwdlctNzhGVQ?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "Pep Guardiola delivers new update on Erling Haaland injury as Man City sweat on star striker's availability for Nottingham Forest clash FOX Sports",
-          "published": "Tue, 03 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Real Madrid keeping tabs on Erling Haaland as Man City prepare for post-Pep Guardiola era- Paper Talk",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNMl9TRTBwcDd6aTMxOExETWZuWk5abzFFT2htMmIwVVNsbjN4SHlmZnByaUZFMzFiUDdPanJkLXRrc1Z3TjlxdVBHd3I0aS05NnNSaTVQUlBFMDlFRDNjRDJqLU9GSnVnSllPT2xEX3VIU3JRWEo4QTlvNEVDR3FNdTNBOXpvQTd2Nlk5MmttZ3ZudHVHOWFtTUw5V3V4MnMzS25TYVdOQ1JkWFMtMVhJMGs3RUttZGVudjAxU3pDaFBTTTFaOFNGc3ppLVRDTTFiYUFHOGdHaExiM3dPZGVRa2ctMFBucGc3SGRoaWpDZUxGZWFFWTdwLXNTQ3ExNXM?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Real Madrid keeping tabs on Erling Haaland as Man City prepare for post-Pep Guardiola era- Paper Talk Sky Sports",
-          "published": "Sat, 23 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pep Guardiola offers fresh Erling Haaland injury update after he missed Leeds win",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNFhTbG52akdVSUdZZ2NWR2hkRXFXVG1DYWVxN3ladDRKSDQyM3lFSFJENE13SThoRHI0Z3J3RnRRcE1fU0YzcHdTWUY4M0h3OXBRaFp3RFFacUNScVVIaGx2WENtVndkU2ZGS2VHcDMwWWUybzhkQ3hSYWhVRHBwSkJCMU1GSmNrbFJVZtIBkgFBVV95cUxNLVd1SHdTSXFKZHJ2UjhzLVN0aHdvZElsblh4OE9udW84dGpvaVNQOUR4bXVjVzkxRVc1M3JqYnEzdWo1elktYjJIZVdTcmt5dHI3OFViXzgwZGhnR3QzdWpZdzNYbHpNUVVQWlZjOGdyZHE2R2Q5d2dJT1MxY3FHbmZuNE5CYUV0THFfMTVoNmh4Zw?oc=5",
-          "publisher": "The Mirror",
-          "kind": "article",
-          "snippet": "Pep Guardiola offers fresh Erling Haaland injury update after he missed Leeds win The Mirror",
-          "published": "Mon, 02 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Leeds 0-1 Man City: Antoine Semenyo takes goalsoring burden off Erling Haaland",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qLUk0UDF3Rzg4SHlHeHN0bUp5bDBLbHlvcmp5RmkzY2c0eC1IOU9KNG8tY0E4MXRTaDFZVlhmQm51dldxamR6UGJuMi1BSHpDRWM4SmZMUmI1d2N3eUZyYmtuelpOSUU?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Leeds 0-1 Man City: Antoine Semenyo takes goalsoring burden off Erling Haaland BBC",
-          "published": "Sat, 28 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Man City news: Marc Guehi and Antoine Semenyo deals show long-term thinking",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1sWUdxVWFKM3kyMTllS3h5bnJ5STdwT2tXemZxX1l5cERJb1RCRGxXUEZrWmRLcFV5V2o3VWhILUFpdzlqcnUyV2F3UGcwRk80Z0Q3R3dGOGNuNzg?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Man City news: Marc Guehi and Antoine Semenyo deals show long-term thinking BBC",
-          "published": "Mon, 19 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Haaland guides Man City past Coventry; Spurs goalless again | Premier League Update | NBC Sports",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tdnIweldZV0t6UU1mcFhzdm54c2I1LUIzQWU4a25ndEF3SzBWR2xfUFh3a2Q3b0RpUmdqOEdZNDRVTDczUklESHJneDJvOUNFUm03a3RR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Haaland guides Man City past Coventry; Spurs goalless again | Premier League Update | NBC Sports YouTube",
-          "published": "Sat, 05 Sep 2026 19:46:48 GMT"
         }
       ]
     },
@@ -10086,6 +10124,50 @@
       ]
     },
     {
+      "id": "exceptional-performance-arteta-hails-fightback-win-best-yet-ab655198",
+      "slug": "exceptional-performance-arteta-hails-fightback-win-best-yet-ab655198",
+      "sport": "soccer",
+      "headline": "‘Exceptional performance’: Arteta hails fightback win and says best yet to come",
+      "blurb": "Manager delighted by reaction to Chelsea’s opener Alonso says his side must be ‘tighter’ Mikel Arteta warned that Arsenal are capable of hitting even greater heights after the…",
+      "summary": "Martin Ødegaard, Morgan Rogers and Kai Havertz: Manager delighted by reaction to Chelsea’s opener Alonso says his side must be ‘tighter’ Mikel Arteta warned that Arsenal are capable of hitting even greater heights after the Premier League champions sent a statement to their title rivals by fighting back from a goal down to beat Chelsea on Sunday. Arteta’s side were under pressure after conceding for the first time this season when Morgan Rogers struck early at the Emirates Stadium, but the response to the setback was outstanding. Kai Havertz equalised before conjuring a brilliant dummy for a rejuvenated Martin Ødegaard to make it 2-1, ensur Board reading of Guardian Football.",
+      "category": "coach",
+      "published": "2026-09-06T19:52:24Z",
+      "updated": "2026-09-06T19:52:24Z",
+      "players": [
+        {
+          "key": "ødegaard",
+          "name": "Martin Ødegaard",
+          "slug": "martin-degaard",
+          "pos": "MID",
+          "team": "ARS"
+        },
+        {
+          "key": "rogers",
+          "name": "Morgan Rogers",
+          "slug": "morgan-rogers",
+          "pos": "MID",
+          "team": "CHE"
+        },
+        {
+          "key": "havertz",
+          "name": "Kai Havertz",
+          "slug": "kai-havertz",
+          "pos": "FWD",
+          "team": "ARS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "‘Exceptional performance’: Arteta hails fightback win and says best yet to come",
+          "url": "https://www.theguardian.com/football/2026/sep/06/exceptional-arteta-arsenal-fightback-win-chelsea",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Manager delighted by reaction to Chelsea’s opener Alonso says his side must be ‘tighter’ Mikel Arteta warned that Arsenal are capable of hitting even greater heights after the Premier League champions sent a statement to their title rivals by fighting back from a goal down to bea",
+          "published": "Sun, 06 Sep 2026 19:52:24 GMT"
+        }
+      ]
+    },
+    {
       "id": "fern-ndez-completes-record-equalling-125m-move-chelsea-1fb03da3",
       "slug": "fern-ndez-completes-record-equalling-125m-move-chelsea-1fb03da3",
       "sport": "soccer",
@@ -10492,50 +10574,6 @@
           "kind": "article",
           "snippet": "Every confirmed Premier League summer transfer as Man City and Spurs seal deadline day deals mirror.co.uk",
           "published": "Tue, 01 Sep 2026 21:27:09 GMT"
-        }
-      ]
-    },
-    {
-      "id": "exceptional-performance-arteta-hails-fightback-win-best-yet-ab655198",
-      "slug": "exceptional-performance-arteta-hails-fightback-win-best-yet-ab655198",
-      "sport": "soccer",
-      "headline": "‘Exceptional performance’: Arteta hails fightback win and says best yet to come",
-      "blurb": "Manager delighted by reaction to Chelsea’s opener Alonso says his side must be ‘tighter’ Mikel Arteta warned that Arsenal are capable of hitting even greater heights after the…",
-      "summary": "Martin Ødegaard, Morgan Rogers and Kai Havertz: Manager delighted by reaction to Chelsea’s opener Alonso says his side must be ‘tighter’ Mikel Arteta warned that Arsenal are capable of hitting even greater heights after the Premier League champions sent a statement to their title rivals by fighting back from a goal down to beat Chelsea on Sunday. Arteta’s side were under pressure after conceding for the first time this season when Morgan Rogers struck early at the Emirates Stadium, but the response to the setback was outstanding. Kai Havertz equalised before conjuring a brilliant dummy for a rejuvenated Martin Ødegaard to make it 2-1, ensur Board reading of Guardian Football.",
-      "category": "coach",
-      "published": "2026-09-06T19:52:24Z",
-      "updated": "2026-09-06T19:52:24Z",
-      "players": [
-        {
-          "key": "ødegaard",
-          "name": "Martin Ødegaard",
-          "slug": "martin-degaard",
-          "pos": "MID",
-          "team": "ARS"
-        },
-        {
-          "key": "rogers",
-          "name": "Morgan Rogers",
-          "slug": "morgan-rogers",
-          "pos": "MID",
-          "team": "CHE"
-        },
-        {
-          "key": "havertz",
-          "name": "Kai Havertz",
-          "slug": "kai-havertz",
-          "pos": "FWD",
-          "team": "ARS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "‘Exceptional performance’: Arteta hails fightback win and says best yet to come",
-          "url": "https://www.theguardian.com/football/2026/sep/06/exceptional-arteta-arsenal-fightback-win-chelsea",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Manager delighted by reaction to Chelsea’s opener Alonso says his side must be ‘tighter’ Mikel Arteta warned that Arsenal are capable of hitting even greater heights after the Premier League champions sent a statement to their title rivals by fighting back from a goal down to bea",
-          "published": "Sun, 06 Sep 2026 19:52:24 GMT"
         }
       ]
     },
@@ -10947,6 +10985,50 @@
       ]
     },
     {
+      "id": "no-blockbuster-signing-arsenal-s-attack-still-finding-54bbb18d",
+      "slug": "no-blockbuster-signing-arsenal-s-attack-still-finding-54bbb18d",
+      "sport": "soccer",
+      "headline": "No blockbuster signing but Arsenal's attack still finding another level",
+      "blurb": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick…",
+      "summary": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick allowed the onrushing Bukayo Saka to test Emiliano Martinez. Board reading of Sky Sports Football.",
+      "category": "wire",
+      "published": "2026-09-06T19:22:29Z",
+      "updated": "2026-09-06T19:22:29Z",
+      "players": [
+        {
+          "key": "saka",
+          "name": "Bukayo Saka",
+          "slug": "bukayo-saka",
+          "pos": "MID",
+          "team": "ARS"
+        },
+        {
+          "key": "havertz",
+          "name": "Kai Havertz",
+          "slug": "kai-havertz",
+          "pos": "FWD",
+          "team": "ARS"
+        },
+        {
+          "key": "martinez",
+          "name": "Emiliano Martínez Romero",
+          "slug": "emiliano-mart-nez-romero",
+          "pos": "GKP",
+          "team": "AVL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "No blockbuster signing but Arsenal's attack still finding another level",
+          "url": "https://www.skysports.com/football/news/12040/13582329/martin-odegaard-kai-havertz-and-bukayo-saka-show-arsenal-can-level-up-their-attack-even-without-the-blockbuster-signing-they-craved",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick allowed the onrushing Bukayo Saka to test Emiliano Martinez.",
+          "published": "Sun, 06 Sep 2026 14:41:00 BST"
+        }
+      ]
+    },
+    {
       "id": "liverpool-open-talks-crystal-palace-ismaila-sarr-transfer-474c9833",
       "slug": "liverpool-open-talks-crystal-palace-ismaila-sarr-transfer-474c9833",
       "sport": "soccer",
@@ -11271,50 +11353,6 @@
           "kind": "article",
           "snippet": "Leeds United injury latest and return dates - Stach, Struijk and Calvert-Lewin Leeds Live",
           "published": "Thu, 12 Feb 2026 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "no-blockbuster-signing-arsenal-s-attack-still-finding-54bbb18d",
-      "slug": "no-blockbuster-signing-arsenal-s-attack-still-finding-54bbb18d",
-      "sport": "soccer",
-      "headline": "No blockbuster signing but Arsenal's attack still finding another level",
-      "blurb": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick…",
-      "summary": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick allowed the onrushing Bukayo Saka to test Emiliano Martinez. Board reading of Sky Sports Football.",
-      "category": "wire",
-      "published": "2026-09-06T19:22:29Z",
-      "updated": "2026-09-06T19:22:29Z",
-      "players": [
-        {
-          "key": "saka",
-          "name": "Bukayo Saka",
-          "slug": "bukayo-saka",
-          "pos": "MID",
-          "team": "ARS"
-        },
-        {
-          "key": "havertz",
-          "name": "Kai Havertz",
-          "slug": "kai-havertz",
-          "pos": "FWD",
-          "team": "ARS"
-        },
-        {
-          "key": "martinez",
-          "name": "Emiliano Martínez Romero",
-          "slug": "emiliano-mart-nez-romero",
-          "pos": "GKP",
-          "team": "AVL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "No blockbuster signing but Arsenal's attack still finding another level",
-          "url": "https://www.skysports.com/football/news/12040/13582329/martin-odegaard-kai-havertz-and-bukayo-saka-show-arsenal-can-level-up-their-attack-even-without-the-blockbuster-signing-they-craved",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "Midway through the second half at the Emirates Stadium, Martin Odegaard picked up the ball in an inside-right position and threaded a pass towards Kai Havertz, whose flick allowed the onrushing Bukayo Saka to test Emiliano Martinez.",
-          "published": "Sun, 06 Sep 2026 14:41:00 BST"
         }
       ]
     },
@@ -14551,8 +14589,8 @@
       "slug": "women-s-transfer-window-summer-2026-all-deals-204b498b",
       "sport": "soccer",
       "headline": "English Premier League transfers 2026/27: Biggest signings, deadline-day deals and club updates",
-      "blurb": "The 10 best Premier League signings of the season footballtransfers.com",
-      "summary": "James Trafford: The 10 best Premier League signings of the season footballtransfers.com Di Africans to watch for 2025-26 Premier League BBC The 16 Best Premier League Signings of the 2025/26 Season Have Been Named and Ranked GiveMeSport Aggregated from footballtransfers.com, BBC, GiveMeSport, Guardian Football, The Guardian and 24 more.",
+      "blurb": "The Premier League clubs with the biggest net spend in summer 2026 Yahoo Sports",
+      "summary": "James Trafford: The Premier League clubs with the biggest net spend in summer 2026 Yahoo Sports All the latest Premier League, La Liga, Bundesliga, Ligue 1 and Serie A deals and a club-by-club guide Women’s transfer window interactive guide Continue reading... Every deal in the NWSL, WSL, Liga F, Frauen-Bundesliga, Première Ligue and Serie A Femminile as well as a club-by-club guide Men’s transfer window interactive guide Continue reading... Aggregated from Yahoo Sports, Guardian Football, The Guardian, YouTube, heavy.com and 24 more.",
       "category": "injury",
       "published": "2025-08-14T07:00:00Z",
       "updated": "2026-09-05T16:42:18Z",
@@ -14957,6 +14995,14 @@
           "kind": "article",
           "snippet": "The 16 Best Premier League Signings of the 2025/26 Season Have Been Named and Ranked GiveMeSport",
           "published": "Sun, 01 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "The Premier League clubs with the biggest net spend in summer 2026",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQzlGcUJ4U2NGblo5ejBhOEV6TjV4YmNMeW1XZjljVUFkU1l0MUgtV2hoMGplbjVjbnJpMW50SnRxaGVLNXVlTXVKeUIxOWh1MDhwWmNTLXhFbnZCUE1iWTl4Z29UUTNZMTZ0WkVDVnhEeVZDZHdEbEdhVlNER3VzMlhObkdtU0F0?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The Premier League clubs with the biggest net spend in summer 2026 Yahoo Sports",
+          "published": "Fri, 04 Sep 2026 12:15:00 GMT"
         }
       ]
     },
@@ -15031,12 +15077,72 @@
       ]
     },
     {
+      "id": "glasner-claims-var-guessing-forest-denied-winner-against-b436a0d3",
+      "slug": "glasner-claims-var-guessing-forest-denied-winner-against-b436a0d3",
+      "sport": "soccer",
+      "headline": "Glasner claims VAR was ‘guessing’ after Forest are denied winner against Spurs",
+      "blurb": "Nottingham Forest manager Oliver Glasner and Neco Williams believe VAR should not have ruled out defender's goal against Tottenham.",
+      "summary": "Nottingham Forest manager Oliver Glasner and Neco Williams believe VAR should not have ruled out defender's goal against Tottenham. Oliver Glasner argued there was insufficient evidence to disallow Neco Williams’s goal against Tottenham, accusing the video assistant referee Peter Bankes of guessing that the Nottingham Forest defender handled and said ruling it out weakens the officials’ authority. Midway through the second half, Williams stooped to head in on the goalline as Sandro Tonali attempted to hook the ball clear after Morgan Gibbs-White’s deflected effort bobbled towards the net. Aggregated from BBC Football, Guardian Football, Glasner.",
+      "category": "coach",
+      "published": "2026-09-05T17:59:25Z",
+      "updated": "2026-09-05T18:36:28Z",
+      "players": [
+        {
+          "key": "n williams",
+          "name": "Neco Williams",
+          "slug": "neco-williams",
+          "pos": "DEF",
+          "team": "NFO"
+        },
+        {
+          "key": "gibbs white",
+          "name": "Morgan Gibbs-White",
+          "slug": "morgan-gibbs-white",
+          "pos": "MID",
+          "team": "NFO"
+        },
+        {
+          "key": "tonali",
+          "name": "Sandro Tonali",
+          "slug": "sandro-tonali",
+          "pos": "MID",
+          "team": "TOT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Glasner claims VAR was ‘guessing’ after Forest are denied winner against Spurs",
+          "url": "https://www.theguardian.com/football/2026/sep/05/nottingham-forest-tottenham-premier-league-match-report",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Oliver Glasner argued there was insufficient evidence to disallow Neco Williams’s goal against Tottenham, accusing the video assistant referee Peter Bankes of guessing that the Nottingham Forest defender handled and said ruling it out weakens the officials’ authority. Midway thro",
+          "published": "Sat, 05 Sep 2026 17:59:25 GMT"
+        },
+        {
+          "title": "Glasner and Williams dispute VAR call over Forest handball",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c3v4537e60yo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "Nottingham Forest manager Oliver Glasner and Neco Williams believe VAR should not have ruled out defender's goal against Tottenham.",
+          "published": "Sat, 05 Sep 2026 18:36:28 GMT"
+        },
+        {
+          "title": "Williams goal 'should not have been disallowed'",
+          "url": "https://www.bbc.co.uk/sport/football/videos/c4gj7rlw1yjo?at_medium=RSS&at_campaign=rss",
+          "publisher": "Glasner",
+          "kind": "video",
+          "snippet": "Nottingham Forest manager Oliver Glasner says his side \"lost two points\" following their goalless draw against Tottenham Hotspur. The Austrian insists and says Neco Williams' second-half disallowed goal should have stood.",
+          "published": "Sat, 05 Sep 2026 18:34:27 GMT"
+        }
+      ]
+    },
+    {
       "id": "premier-league-transfer-spending-so-far-lowest-highest-0f951f79",
       "slug": "premier-league-transfer-spending-so-far-lowest-highest-0f951f79",
       "sport": "soccer",
       "headline": "Elliot Anderson: New Man City signing sends Man Utd message after completing £116m move from Nottingham Forest",
-      "blurb": "Romano reveals Man City ‘new official bid’ for Anderson as Man Utd hijack hinges on two conditions Football365",
-      "summary": "Elliot Anderson: Romano reveals Man City ‘new official bid’ for Anderson as Man Utd hijack hinges on two conditions Football365 Premier League transfer spending so far, from lowest to highest: Crystal Palace - £0m Nottingham Forest - £0m Sunderland - £0m Hull City - £3.5m Fulham - £5.2m Bournemouth - £21.4m Brentford - £29.0m Ipswich Town - £32.7m Leeds United - £34.1m Cove x.com NOTTINGHAM FOREST VS TOTTENHAM LIVE |PREMIER LEAGUE WATCHALONG with EXPRESSIONS YouTube Aggregated from Football365, x.com, YouTube, talkSPORT, The New York Times and 9 more.",
+      "blurb": "Elliot Anderson becomes third most expensive Premier League signing with £116m Man City move but he's only 31st when adjusting historic fees Sky Sports",
+      "summary": "Elliot Anderson becomes third most expensive Premier League signing with £116m Man City move but he's only 31st when adjusting historic fees Sky Sports Premier League transfer spending so far, from lowest to highest: Crystal Palace - £0m Nottingham Forest - £0m Sunderland - £0m Hull City - £3.5m Fulham - £5.2m Bournemouth - £21.4m Brentford - £29.0m Ipswich Town - £32.7m Leeds United - £34.1m Cove x.com NOTTINGHAM FOREST VS TOTTENHAM LIVE |PREMIER LEAGUE WATCHALONG with EXPRESSIONS YouTube Aggregated from Sky Sports, x.com, YouTube, talkSPORT, The New York Times and 9 more.",
       "category": "trade",
       "published": "2026-06-08T07:00:00Z",
       "updated": "2026-09-05T16:02:09Z",
@@ -15241,66 +15347,14 @@
           "kind": "article",
           "snippet": "Romano reveals Man City ‘new official bid’ for Anderson as Man Utd hijack hinges on two conditions Football365",
           "published": "Mon, 08 Jun 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "glasner-claims-var-guessing-forest-denied-winner-against-b436a0d3",
-      "slug": "glasner-claims-var-guessing-forest-denied-winner-against-b436a0d3",
-      "sport": "soccer",
-      "headline": "Glasner claims VAR was ‘guessing’ after Forest are denied winner against Spurs",
-      "blurb": "Nottingham Forest manager Oliver Glasner and Neco Williams believe VAR should not have ruled out defender's goal against Tottenham.",
-      "summary": "Nottingham Forest manager Oliver Glasner and Neco Williams believe VAR should not have ruled out defender's goal against Tottenham. Oliver Glasner argued there was insufficient evidence to disallow Neco Williams’s goal against Tottenham, accusing the video assistant referee Peter Bankes of guessing that the Nottingham Forest defender handled and said ruling it out weakens the officials’ authority. Midway through the second half, Williams stooped to head in on the goalline as Sandro Tonali attempted to hook the ball clear after Morgan Gibbs-White’s deflected effort bobbled towards the net. Aggregated from BBC Football, Guardian Football, Glasner.",
-      "category": "coach",
-      "published": "2026-09-05T17:59:25Z",
-      "updated": "2026-09-05T18:36:28Z",
-      "players": [
-        {
-          "key": "n williams",
-          "name": "Neco Williams",
-          "slug": "neco-williams",
-          "pos": "DEF",
-          "team": "NFO"
         },
         {
-          "key": "gibbs white",
-          "name": "Morgan Gibbs-White",
-          "slug": "morgan-gibbs-white",
-          "pos": "MID",
-          "team": "NFO"
-        },
-        {
-          "key": "tonali",
-          "name": "Sandro Tonali",
-          "slug": "sandro-tonali",
-          "pos": "MID",
-          "team": "TOT"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Glasner claims VAR was ‘guessing’ after Forest are denied winner against Spurs",
-          "url": "https://www.theguardian.com/football/2026/sep/05/nottingham-forest-tottenham-premier-league-match-report",
-          "publisher": "Guardian Football",
+          "title": "Elliot Anderson becomes third most expensive Premier League signing with £116m Man City move but he's only 31st when adjusting historic fees",
+          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPVGlvZ0pwaTB5ZDBJNDJqckN1dmFjX0U4MWZxZUNqUUkxMlc4MFVvdGI3VnRoV2pxOHowdVFDMEdNMXdnM2VPS2xpOEFqdkZkWnRtTTlDd0RJMlZWeFNzbVBQXzc0dlBxVmMtYjB4M1VCOElyZUt2MkxiYmxCX2J4cFg3WEtVYXVyanBmTTZPZjhrZWZmQ3FDTkFBVlVsMUJuUzNLSlY3M3YxZlBLQUhvV3V3R1hPM0dfOHViUG8zOGVTZFQ3QVl4dGRwR0ZtQkM1WGg0Q0FERmdRZjhUdVJkTFJLdkNfTm94S193dDlUR0FtaUV6ODBUNTlmUkk2aTNEVzhkendZdFlUd2cyMkV4WEpXQktyY0F2bEFERk05dEo?oc=5",
+          "publisher": "Sky Sports",
           "kind": "article",
-          "snippet": "Oliver Glasner argued there was insufficient evidence to disallow Neco Williams’s goal against Tottenham, accusing the video assistant referee Peter Bankes of guessing that the Nottingham Forest defender handled and said ruling it out weakens the officials’ authority. Midway thro",
-          "published": "Sat, 05 Sep 2026 17:59:25 GMT"
-        },
-        {
-          "title": "Glasner and Williams dispute VAR call over Forest handball",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c3v4537e60yo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Nottingham Forest manager Oliver Glasner and Neco Williams believe VAR should not have ruled out defender's goal against Tottenham.",
-          "published": "Sat, 05 Sep 2026 18:36:28 GMT"
-        },
-        {
-          "title": "Williams goal 'should not have been disallowed'",
-          "url": "https://www.bbc.co.uk/sport/football/videos/c4gj7rlw1yjo?at_medium=RSS&at_campaign=rss",
-          "publisher": "Glasner",
-          "kind": "video",
-          "snippet": "Nottingham Forest manager Oliver Glasner says his side \"lost two points\" following their goalless draw against Tottenham Hotspur. The Austrian insists and says Neco Williams' second-half disallowed goal should have stood.",
-          "published": "Sat, 05 Sep 2026 18:34:27 GMT"
+          "snippet": "Elliot Anderson becomes third most expensive Premier League signing with £116m Man City move but he's only 31st when adjusting historic fees Sky Sports",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -15396,6 +15450,73 @@
       ]
     },
     {
+      "id": "liverpool-signed-another-hugo-ekitike-98ef4e69",
+      "slug": "liverpool-signed-another-hugo-ekitike-98ef4e69",
+      "sport": "soccer",
+      "headline": "Have Liverpool signed another Hugo Ekitike?",
+      "blurb": "Have Liverpool signed another Hugo Ekitike?",
+      "summary": "Have Liverpool signed another Hugo Ekitike? Board reading of YouTube.",
+      "category": "roster",
+      "published": "2026-09-06T19:00:00Z",
+      "updated": "2026-09-06T19:00:00Z",
+      "players": [
+        {
+          "key": "ekitike",
+          "name": "Hugo Ekitiké",
+          "slug": "hugo-ekitik",
+          "pos": "FWD",
+          "team": "LIV"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Have Liverpool signed another Hugo Ekitike?",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12QlVYdloxQk94NC1rMEM3YXVMUzVpeFB2c0swWXRfeFY5ZkZadVowbUZ6bm1CdmQ0dGV1RllvYmR6ZVVyWDhtdGtveHVhc1RmdkRMLU9R?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Have Liverpool signed another Hugo Ekitike? YouTube",
+          "published": "Sun, 06 Sep 2026 19:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "manchester-united-s-front-four-show-flashes-need-b9a4c71f",
+      "slug": "manchester-united-s-front-four-show-flashes-need-b9a4c71f",
+      "sport": "soccer",
+      "headline": "Manchester United’s front four show flashes but need more time to become fantastic | Will Unwin",
+      "blurb": "Mbeumo’s goal was a moment of solo inspiration but Michael Carrick will want more from Fernandes, Cunha and Rashford Tunnel vision allowed Bryan Mbeumo seconds of focus,…",
+      "summary": "Mbeumo’s goal was a moment of solo inspiration but Michael Carrick will want more from Fernandes, Cunha and Rashford Tunnel vision allowed Bryan Mbeumo seconds of focus, ignoring everyone in red around him, while those in blue provided a guard of honour. In a team game, it was an act of selfishness but sometimes they are the most satisfying, and Manchester United celebrated the single-mindedness when the ball rippled the inside of the netting. This is a new front four for United after Marcus Rashford spent last season at Barcelona but there should be greater familiarity between those who have Board reading of Guardian Football.",
+      "category": "wire",
+      "published": "2026-09-06T18:00:11Z",
+      "updated": "2026-09-06T18:00:11Z",
+      "players": [
+        {
+          "key": "mbeumo",
+          "name": "Bryan Mbeumo",
+          "slug": "bryan-mbeumo",
+          "pos": "MID",
+          "team": "MUN"
+        },
+        {
+          "key": "fernandes",
+          "name": "Mateus Fernandes",
+          "slug": "mateus-fernandes",
+          "pos": "MID",
+          "team": "TOT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Manchester United’s front four show flashes but need more time to become fantastic | Will Unwin",
+          "url": "https://www.theguardian.com/football/2026/sep/06/manchester-uniteds-front-four-show-flashes-but-need-more-time-to-become-fantastic",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Mbeumo’s goal was a moment of solo inspiration but Michael Carrick will want more from Fernandes, Cunha and Rashford Tunnel vision allowed Bryan Mbeumo seconds of focus, ignoring everyone in red around him, while those in blue provided a guard of honour. In a team game, it was an",
+          "published": "Sun, 06 Sep 2026 18:00:11 GMT"
+        }
+      ]
+    },
+    {
       "id": "every-word-mikel-arteta-arsenal-chelsea-injuries-martinelli-cb2eb827",
       "slug": "every-word-mikel-arteta-arsenal-chelsea-injuries-martinelli-cb2eb827",
       "sport": "soccer",
@@ -15485,73 +15606,6 @@
           "kind": "article",
           "snippet": "Martin Odegaard tops Premier League stat ahead of Chelsea and Liverpool stars despite injury absence talkSPORT",
           "published": "Wed, 13 Nov 2024 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "liverpool-signed-another-hugo-ekitike-98ef4e69",
-      "slug": "liverpool-signed-another-hugo-ekitike-98ef4e69",
-      "sport": "soccer",
-      "headline": "Have Liverpool signed another Hugo Ekitike?",
-      "blurb": "Have Liverpool signed another Hugo Ekitike?",
-      "summary": "Have Liverpool signed another Hugo Ekitike? Board reading of YouTube.",
-      "category": "roster",
-      "published": "2026-09-06T19:00:00Z",
-      "updated": "2026-09-06T19:00:00Z",
-      "players": [
-        {
-          "key": "ekitike",
-          "name": "Hugo Ekitiké",
-          "slug": "hugo-ekitik",
-          "pos": "FWD",
-          "team": "LIV"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Have Liverpool signed another Hugo Ekitike?",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12QlVYdloxQk94NC1rMEM3YXVMUzVpeFB2c0swWXRfeFY5ZkZadVowbUZ6bm1CdmQ0dGV1RllvYmR6ZVVyWDhtdGtveHVhc1RmdkRMLU9R?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Have Liverpool signed another Hugo Ekitike? YouTube",
-          "published": "Sun, 06 Sep 2026 19:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "manchester-united-s-front-four-show-flashes-need-b9a4c71f",
-      "slug": "manchester-united-s-front-four-show-flashes-need-b9a4c71f",
-      "sport": "soccer",
-      "headline": "Manchester United’s front four show flashes but need more time to become fantastic | Will Unwin",
-      "blurb": "Mbeumo’s goal was a moment of solo inspiration but Michael Carrick will want more from Fernandes, Cunha and Rashford Tunnel vision allowed Bryan Mbeumo seconds of focus,…",
-      "summary": "Mbeumo’s goal was a moment of solo inspiration but Michael Carrick will want more from Fernandes, Cunha and Rashford Tunnel vision allowed Bryan Mbeumo seconds of focus, ignoring everyone in red around him, while those in blue provided a guard of honour. In a team game, it was an act of selfishness but sometimes they are the most satisfying, and Manchester United celebrated the single-mindedness when the ball rippled the inside of the netting. This is a new front four for United after Marcus Rashford spent last season at Barcelona but there should be greater familiarity between those who have Board reading of Guardian Football.",
-      "category": "wire",
-      "published": "2026-09-06T18:00:11Z",
-      "updated": "2026-09-06T18:00:11Z",
-      "players": [
-        {
-          "key": "mbeumo",
-          "name": "Bryan Mbeumo",
-          "slug": "bryan-mbeumo",
-          "pos": "MID",
-          "team": "MUN"
-        },
-        {
-          "key": "fernandes",
-          "name": "Mateus Fernandes",
-          "slug": "mateus-fernandes",
-          "pos": "MID",
-          "team": "TOT"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Manchester United’s front four show flashes but need more time to become fantastic | Will Unwin",
-          "url": "https://www.theguardian.com/football/2026/sep/06/manchester-uniteds-front-four-show-flashes-but-need-more-time-to-become-fantastic",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Mbeumo’s goal was a moment of solo inspiration but Michael Carrick will want more from Fernandes, Cunha and Rashford Tunnel vision allowed Bryan Mbeumo seconds of focus, ignoring everyone in red around him, while those in blue provided a guard of honour. In a team game, it was an",
-          "published": "Sun, 06 Sep 2026 18:00:11 GMT"
         }
       ]
     },
@@ -16635,131 +16689,6 @@
       ]
     },
     {
-      "id": "isak-s-rapid-double-sinks-ipswich-give-andoni-3256cc27",
-      "slug": "isak-s-rapid-double-sinks-ipswich-give-andoni-3256cc27",
-      "sport": "soccer",
-      "headline": "Andoni Iraola press conference: Newcastle v Liverpool, first-game excitement, transfers and more",
-      "blurb": "Liverpool reporter ‘blown away’ by Andoni Iraola during ‘note perfect’ first press conference Yahoo Sports",
-      "summary": "Alexander Isak and Conor Bradley: Liverpool reporter ‘blown away’ by Andoni Iraola during ‘note perfect’ first press conference Yahoo Sports A first win for Andoni Iraola’s Liverpool, the introduction of the latest star signing in Bradley Barcola making for a successful Friday night. Better yet, continuing signs that Alexander Isak, last year’s model, is coming back to life, his two, well-taken early goals securing th Aggregated from Yahoo Sports, Guardian Football, Sky Sports Football, BBC Football, YouTube and 4 more.",
-      "category": "injury",
-      "published": "2026-02-08T08:00:00Z",
-      "updated": "2026-09-04T22:39:01Z",
-      "players": [
-        {
-          "key": "alexander isak",
-          "name": "Alexander Isak",
-          "slug": "alexander-isak",
-          "pos": "FWD",
-          "team": "LIV"
-        },
-        {
-          "key": "bradley",
-          "name": "Conor Bradley",
-          "slug": "conor-bradley",
-          "pos": "DEF",
-          "team": "LIV"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Isak’s rapid double sinks Ipswich to give Andoni Iraola first Liverpool win",
-          "url": "https://www.theguardian.com/football/2026/sep/04/ipswich-liverpool-premier-league-match-report",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "A first win for Andoni Iraola’s Liverpool, the introduction of the latest star signing in Bradley Barcola making for a successful Friday night. Better yet, continuing signs that Alexander Isak, last year’s model, is coming back to life, his two, well-taken early goals securing th",
-          "published": "Fri, 04 Sep 2026 21:07:54 GMT"
-        },
-        {
-          "title": "Iraola up and running at Liverpool as Isak nets double at Ipswich",
-          "url": "https://www.skysports.com/football/ipswich-town-vs-liverpool/report/559470",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "Andoni Iraola registered his first win as Liverpool head coach as Alexander Isak scored twice inside nine minutes to beat Ipswich 2-0.",
-          "published": "Fri, 04 Sep 2026 21:49:00 BST"
-        },
-        {
-          "title": "Isak's early double gives Liverpool victory over Ipswich",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cgmr1z492k9o?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "video",
-          "snippet": "Alexander Isak scores twice in the opening ten minutes as Liverpool pick up their first win of the season with a 2-0 victory at Ipswich.",
-          "published": "Fri, 04 Sep 2026 21:31:56 GMT"
-        },
-        {
-          "title": "HUGE WIN FOR IRAOLA AND THE PLAYERS! | Ipswich 0-2 Liverpool reaction",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE53U0ttejVmUHVuNlZfSkE1dlZCdTB0WTlkaEZMNkw0MXIxQXFKSzV5NFBiMERRSG4xUHNhcHc4S09rQkU3V2xlRXBtcUs4NUdZSDVINHR3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "HUGE WIN FOR IRAOLA AND THE PLAYERS! | Ipswich 0-2 Liverpool reaction YouTube",
-          "published": "Fri, 04 Sep 2026 22:28:47 GMT"
-        },
-        {
-          "title": "Isak's Early Double Earns Liverpool Season's First Premier League Victory",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZ1dORnRzYW11LVo0b2xWYmRsdUU4b1pmby16SDZ0WEQ0Nzg4QmRLSzVWY01BLUdzX2pQc0NjVm93ZXZqMGpaWWh2ZFdmVFVlYnEzaTBSb0dWTHlCZXpKUFdScW5nY0NrRHBTV3l1ZXU3VW9COTl2OUQyMlJPTXFJMUpya05nUFFPNXVGX01UZTlxYnlPX1IwcUc1WlozWlRfUmdWa212bHM5NURwVjdoS0gxWWJoQXVUeXdPWjlab05CbUZWZE1xeUlrZGtjZkxH0gHTAUFVX3lxTE9fZkpSMk9BSXZQOWp2d3dBYk5MOUpqZGtIX29rOU92SEJDX1k2bTdoWG54SnV5c3VhazBWaHBTUVRlQUJsaGhXVGZ6ZlVMVHpTcFFRRzdYa2lJRGs5ZmlETU5PaVoxdjA1ek04NmsyclFQYUUwTkRvcXZiY1dCdEQ5VHRhLVhaV0pnRFdkVUZSM1lpY1lCTUIxNGpVaktJMHJDQmpuajM3SFU3WFNVa194TWxOZnZ2NDlMeDloMFpleTloUTZXVVZ2UVpxdDg3VGdQb1k?oc=5",
-          "publisher": "Rediff",
-          "kind": "article",
-          "snippet": "Isak's Early Double Earns Liverpool Season's First Premier League Victory Rediff",
-          "published": "Fri, 04 Sep 2026 22:39:01 GMT"
-        },
-        {
-          "title": "Andoni Iraola shares plans in first press conference as Liverpool boss",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeV80MXdabFVZeUM1R0lMS3BqZ2dNM2Fkczhub09NUVNGQS1Ha0hpSG96TGJiZGttTFlzcVlpUzYzVTl0d0RtRERvVjQ1TUgwU0phdF9qS3cwRVZSVzhyWC13NnJfc19NNTJCaTh4R3VZT05FOUdiV2Nrb1JzODV4UmJSNlc0LWNkSEExS2xFamFtYkl0aDFwYS1UN3VNSmVBS2ZaZVBzV2tkNDBFa25xZjlqRW5DUQ?oc=5",
-          "publisher": "Flashscore.com",
-          "kind": "article",
-          "snippet": "Andoni Iraola shares plans in first press conference as Liverpool boss Flashscore.com",
-          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Andoni Iraola provides Liverpool injury update ahead of Ipswich Town clash",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNc3U2NmZCM1lXLThBdWJ2NDB2RmJidE5fc0VFbGlLLXlTdVgyek0tRk1OTDRlV05PVjlIRFgwOVRTZXFvbjN1YnF4cUQzV0VMZnNFZzZyMGxXZ2hRUmZra1h6TGdqWU9BVzVmWGs5UVpDUGl5OTRXRXJDMnVzdVY5RDdUY1l2OFYzb0pYQi1yZkdNWVF1WXFaVXNPeXdGdWRURWVCR2RZbXBPSjA?oc=5",
-          "publisher": "EPL Index",
-          "kind": "article",
-          "snippet": "Andoni Iraola provides Liverpool injury update ahead of Ipswich Town clash EPL Index",
-          "published": "Fri, 04 Sep 2026 12:50:00 GMT"
-        },
-        {
-          "title": "Andoni Iraola press conference: Newcastle v Liverpool, first-game excitement, transfers and more",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTUo3ZFNTNl9xSzZ5d05JbjZ3TzVzTU5jMXpUVUJWQUNablcxMmtxajIwWjRSSlRvS0hveWlYajJzdndiTDJNU29IX0xhREZBU0tYNktteVlZczA3QWhWdmR5RG1vcDRydkxIa2RBaThvMkZQSVFfSTRPelVPai0zSFJrUnZDcnp1U09WcnNUY3Z5NkdxSkZpd1A4WkxyVDBtTDJzcXBhc01DUXFjUjRlT3BhNlA3WV9WN1lGM3d6U2dzNU9J0gHMAUFVX3lxTE9DTktwV2dfYzMwRFcyMlVDY19TNXFMOVVrcVZTcEhhazlmZDJlYkFUV2xxX0hOSmpjSkQzYk9vYjRCMS1lTVRGRURpdVI1NXdzZzJvSVVLU09jeVlsUzJCTTV4RnhVZUZPNG5Oa3hLRFpOVm1PZEJvN3ZlQVRZLXVlYS1DQTNHZ29OWlQ1dzhLRGhvUkVMaF94bEZjcUZjaUI0Z1g3TXRaV1lUWU8teHVrOGhvVmluakY2Q2Jnak1Db1U4NjUtdGZaOW1YQw?oc=5",
-          "publisher": "Liverpool FC",
-          "kind": "article",
-          "snippet": "Andoni Iraola press conference: Newcastle v Liverpool, first-game excitement, transfers and more Liverpool FC",
-          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "On demand: Watch Andoni Iraola's press conference ahead of Ipswich v Liverpool",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdUx5cE9VOE1qRnYyZmY3WXNzdU5tLXYtMXQ3c082MTdVaEgxQ0s4bVpEN05OaFNXREVsd0RZc3NXSzI0N0JzdXBrc0xfSUdqeXhaOEhnbVpaUG1sMWF4RngwTy1KcFprbUZiZjcyX1NpNkJPZDFkUXc2X205c3laS1B3aTlFSWRGMGdiZXpOSVg2TzI5ZGRTVE81dVBTX0piRERfbkFkVVXSAbABQVVfeXFMTVp1VUgtR04tVXRLYlNfQ0phQWZrOXoxZGJFT2hMYVNLZGhXOGh2QS1vdXBBQXBpckJyc2FHOXV6YWJMY2R2Y19uTEpISjVhbU8yWENzSXo3dFZITHdlX3hrUm9FTl9UcHdMeDZVcG90dV90WktJZmZrU1lBYVpULWUzb2tFeEFKZU1qbEhkdFNpQzZTcHNoZzdSQURIT3k0OVpZdGxoTHRjMEpWMm90S2I?oc=5",
-          "publisher": "Liverpool FC",
-          "kind": "article",
-          "snippet": "On demand: Watch Andoni Iraola's press conference ahead of Ipswich v Liverpool Liverpool FC",
-          "published": "Thu, 03 Sep 2026 07:01:26 GMT"
-        },
-        {
-          "title": "Watch Andoni Iraola's Newcastle v Liverpool press conference on demand",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZExUYUJfMGhSSjd4dGdUZnFXOUpJaHlLX2o4VzhFUWI4cEZtM0YwcTlZOGZXamI3akNMd2ZhelN6U2JndjUyUEREYk1TSXNtT2U1eDc1VDNvUTVmZjVLRllLd19EWmItWkZQMEhsM2xJVDQyVzZBVHU3MzRPVUpxVG5mVmlkQ2pDT2RxYk1qOWltem5wMjZKVnF2dW5WVTIx0gGoAUFVX3lxTE5oS0R1WXZORHA0UF9BUWJ4ekhvRDNKM2FUcThiQk1KeWJlQk1EblNLeHJEdjVOZnVJeFV4WVc1ZUMxTW13Q1pNbnFtTUNqZndmeEEta05KSkhfWHRWcGJscE5SOHY1bzVXRDJMQ2wwR3JkMklTVFAwOUIxYjh2WEIxdnN0ZTZ6bktfM1A2ZHZnREZ4eHJvYy1XOE10dEZmNmdWZ3ZZWmpiNw?oc=5",
-          "publisher": "Liverpool FC",
-          "kind": "article",
-          "snippet": "Watch Andoni Iraola's Newcastle v Liverpool press conference on demand Liverpool FC",
-          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Arne Slot press conference: Verdict on Liverpool 1-2 Manchester City",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTDQ3ckxLX1c5dDNkVXI2dG9TNmwwWlRfUmNTZ3dvTzZmTl83Z3A1QXFldTEyenJHX1A3YldoSGpSUnBva2twQ3dvX3ZkZUJmNnZNMWx1VXY5MjYydVAwX1duZ1RNZjBqN3RpTzdId2dxVndTdUxoQTdWcnZITXlGTldoRjZZMVVYR1A1UXBRcXh5cGpUUURhajdsRUx2QdIBpgFBVV95cUxOMjNnZm9yR1VsdFRlXzdGTGV1S3RnQ0dFTlpDZFpQOE1XbzFFZEZTaTlwUS1PeTJuR1VIWGZxUzhOeVMtd1BFWlFUSUsydzl6MkkyNGhodG1vdkM2NWl6MExoNml3WnE0aGlCVHdKZHNLbi1nYlRBUUh5bE84UXZObFBQenREelk0MEhvU2g1R3U2UWNaWUZvSW5lSVQyLXNTUWY0anZR?oc=5",
-          "publisher": "Liverpool FC",
-          "kind": "article",
-          "snippet": "Arne Slot press conference: Verdict on Liverpool 1-2 Manchester City Liverpool FC",
-          "published": "Sun, 08 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Liverpool reporter ‘blown away’ by Andoni Iraola during ‘note perfect’ first press conference",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMDdCeXdiV1d4V1JPNHBrTHV3TDJ4RWllVWhPZ0xpWVl3TkNZWktZc3gxSDQyMzBaMWRINXBUMlFwYlRFaDNrdUZrZXJDNmMxZVgzTF9ScTVwYWRrN1lBM1o2Wm85YjBKZ01IclA2X1JXdzlqcmc0bkNwNnVjSnIyN1B3SXhwSVB0S2xCSmlR?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Liverpool reporter ‘blown away’ by Andoni Iraola during ‘note perfect’ first press conference Yahoo Sports",
-          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "arsenal-transfer-alvarez-jesus-deadline-day-a89a98bf",
       "slug": "arsenal-transfer-alvarez-jesus-deadline-day-a89a98bf",
       "sport": "soccer",
@@ -17805,6 +17734,372 @@
       ]
     },
     {
+      "id": "alexander-isak-injury-liverpool-striker-miss-trip-manchester-a50fa75d",
+      "slug": "alexander-isak-injury-liverpool-striker-miss-trip-manchester-a50fa75d",
+      "sport": "soccer",
+      "headline": "Alexander Isak injury: Liverpool confirm Sweden striker suffered leg fracture after Micky van de Ven challenge",
+      "blurb": "Alexander Isak injury update - Liverpool star out indefinitely after surgery on broken leg NBC Sports",
+      "summary": "Alexander Isak injury update - Liverpool star out indefinitely after surgery on broken leg NBC Sports Is Alexander Isak injured tonight? Liverpool injury news and fitness latest on Reds striker FourFourTwo Aggregated from NBC Sports, FourFourTwo, BBC, The Guardian, Sky Sports and 13 more.",
+      "category": "injury",
+      "published": "2025-12-20T08:00:00Z",
+      "updated": "2026-05-03T07:00:00Z",
+      "players": [
+        {
+          "key": "alexander isak",
+          "name": "Alexander Isak",
+          "slug": "alexander-isak",
+          "pos": "FWD",
+          "team": "LIV"
+        },
+        {
+          "key": "van de ven",
+          "name": "Van de Ven",
+          "slug": "van-de-ven",
+          "pos": "DEF",
+          "team": "TOT"
+        },
+        {
+          "key": "a becker",
+          "name": "Alisson Becker",
+          "slug": "alisson-becker",
+          "pos": "GKP",
+          "team": "LIV"
+        },
+        {
+          "key": "bradley",
+          "name": "Conor Bradley",
+          "slug": "conor-bradley",
+          "pos": "DEF",
+          "team": "LIV"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Alexander Isak injured and set to miss Liverpool's clash vs. Man Utd",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbVBVaWp1enBOMHU5TVNlR2QybnJYUWhPVW9qeGhBM2Y1R3pLQkswUk5tUTR0YV9YU1ZWdndKWjl2QkFhQ0hHVFV1VE1UbVRYSGllRy1xV04xb2FhbTZ1NE9wNlk3dWUwanRjLU5Fb01TekJvU3VkQ2d0TDNNSmF2ZVpYNFgxUEk2bXVNdEQ3a2tMMmYyRzVGWmxRaDgwZHpxdURrQzRyamNnNFZ3?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "Alexander Isak injured and set to miss Liverpool's clash vs. Man Utd FOX Sports",
+          "published": "Sat, 02 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool's Alexander Isak limps off injured after scoring at Spurs",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMVVvMzdUdE53ZTZVM2pyemdIaGYtTjRJaWlvVUh0eHRVdng1VXpQZDF3QjItdXBEQ0d0elFmX1oyMXJYWWxpZk92NnFfekdILUthX2NwVnBzWWtteTFMcDVjdUJveHcyM0M1alJ0QjF6OVJHbVV3NEJodGt1clNJclMwVklfeEFMZjZqeDZicGpPbWpwYzJRMGRWZXhxN2txZFE?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Liverpool's Alexander Isak limps off injured after scoring at Spurs ESPN",
+          "published": "Sat, 20 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury: Liverpool striker to miss trip to Manchester United due to groin strain",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNUkIwZkxsNzMzMVQxMWltX3dlclFnTE1rYlJnbkJtQUVQNHpwemZfTWFnbjVPLWdjM1NQb0ZVQzRCeGgxNDlNcW1paGJaeU9lTnZLVjJoT0hkQW9aQ2xJLVpGb25CRjZfQm5NNGJtMFhXdVBjOFNPc0Z2NjNSVk1wRXg1dGpONU5KTlhZVy1HUGlLWHhVVUpBT2VWM21XdU1kOWNXWlFvVEdGYy1WSlBxc25aRVhvWlNoMWVEdVd1ZmhPQjFnaWJZQmFlQjN3eE9jVUhLN3ZqaS1vbXFmSlBUcmFyTkdnNGZ5ZUtwYlBvV0dCempFUkczQnc3UnhvRkVGWDhQdA?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Alexander Isak injury: Liverpool striker to miss trip to Manchester United due to groin strain - Paper Talk Sky Sports",
+          "published": "Sat, 02 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool’s Alexander Isak set for scan on injury sustained after scoring against Tottenham",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSGdUbXNiV2l2OTJsQ3VZcjBGVzlOWURhcVkwMHd1UF9rV2pJSWlvdGFnRS1WMDg4RjlGa2R3ODJzczliZXY4YXRRM0x3NUdVaW5meG5paE4ybUdiVDdPYzB1ckxEN0dGQ1FISmp1dzYyMk9SUHV0MkRLeHZVdExLelNMZUcxNEtJS3hVQ0gwNVFHMGgxamc?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Liverpool’s Alexander Isak set for scan on injury sustained after scoring against Tottenham - The Athletic The New York Times",
+          "published": "Sat, 20 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury update: Arne Slot rejects ‘season-ender’ question",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQb29HRWhCUmItaTJsNUxudzV0TGtycE1LSVMwa2RwMjVWcDU2T3JTZTFBRlp3WHF3NFJwU0VqbnNZZnpEUFNncFVCQklKdVRVMFl5YzBWSWgyVTVCcWJDR09XcS1qenJUSFNTdGdTY3NmZ0g5X291cy1ETVpCUTJpdTlHR3RROGhCNzRpUmJ0SXJrakpyUmUzVg?oc=5",
+          "publisher": "This Is Anfield",
+          "kind": "article",
+          "snippet": "Alexander Isak injury update: Arne Slot rejects ‘season-ender’ question This Is Anfield",
+          "published": "Sun, 03 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury claim ahead of Man United clash potentially huge blow for Liverpool",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSkRRaDRlMWJBczVxcE1SOUVxWGU5WjB6YlcySXh4Q0FuMG1GcXQwbF95QWY3LWhXT3dJdVpWakp3ZkdvSllBYUQ5R3VQNVpxbDVqeWxmM0ppQjZNNGNNTndGVmNIUkxJekZPQ1h3UzFvbDZSRUZfWXVsUEVZWEZCSmNJS25lM3VzZWFuMjRjM3NrdnVuTThlVDRnSlp4N1pMRnFDazFXTEtQNmfSAbABQVVfeXFMTlIzaFZrNVJXUnZ0SzlfTFl4TUREM2FaNXpzRlZiVDBYSmJwWF9lWEt3UnUzTWtqc0N0aTZJaC1XYk9iZlJGX1pfU0pjNWVsdHZhVlN5ZVY1SW1Cb3g2MjRId1g3cGt5TzhwdjZGSkZzME1lUlBMZWhCVHR0ODRxX2dRNDhJOWltZm0xYzgxMFF4Qy14dFBjOTR4WXgxaHlvSTR2QXBNc1FEZXRqQV9HdDg?oc=5",
+          "publisher": "Manchester Evening News",
+          "kind": "article",
+          "snippet": "Alexander Isak injury claim ahead of Man United clash potentially huge blow for Liverpool Manchester Evening News",
+          "published": "Sat, 02 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injured AGAIN as Liverpool striker to miss Man Utd clash",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOE10WHg0Mlp5bUZjTFZ2WjI0X1ZkOUotWHZDM1k2V1A3NHZzb1JhRUdVNDRqTTVPekJFNTBXSE9PZmxPVkNvcWpmMlBOV28zN01xUy1qV2FQdkIxcElMQkQzS2NYMjl3NEVtalQ4NFJCTW9MQkMtVmpVWHFhRjlsLUdqbXRYYmZfVk5iSFp5ZVI?oc=5",
+          "publisher": "Goal.com",
+          "kind": "article",
+          "snippet": "Alexander Isak injured AGAIN as Liverpool striker to miss Man Utd clash Goal.com",
+          "published": "Sun, 03 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury update - Liverpool star out indefinitely after surgery on broken leg",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNb0xJSkJlV1R3aklVQ2xrdVhvNXBEcV9GSE5zTnJDTFB4OUswaXRWX1B3d19MWEhVOGVFbDdsRGx0UVA4d1d2MEJ4bWhFRTFueXdneHVfSjdVWV9fMGN3VVl5blBVZ0tBQlVzRVFwS1lOWFVCN1ZocGNiVEw3Y0FGX3dBdkxmeDhlZE44NjB1TTI1ZURCYkVNV0RHekhGTEtnci16YVZZeUpZSWtna25zV1loTzlydGtfUU1fSTEwTUFsWkxzNFhv?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Alexander Isak injury update - Liverpool star out indefinitely after surgery on broken leg NBC Sports",
+          "published": "Mon, 22 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Is Alexander Isak injured tonight? Liverpool injury news and fitness latest on Reds striker",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOSjNIcWQ5Q2xWbnlneXBpR1R6RnQ0a2NWeWsyTU1fTnB6MGZacjI1MUJjSXR5dzNEZDVYaHNFUjZxQmU1T2thdEIzMWE2VU5aSWljT2JNVUlkejlET2RRbzdvNGlGYmdKdjN4RUlZUjdjS0RJT1ZpUW5qT3Q1aFRBWXJTaTFYUzZrT215SHNSY1JvR3h5NWtyYzhTbnl3TlptMlZsWURaNmVLN3ZPeHJpaUJwZDgzd0hpLVAyb3RZR2RuMXVrbDVnVHI0c1Q?oc=5",
+          "publisher": "FourFourTwo",
+          "kind": "article",
+          "snippet": "Is Alexander Isak injured tonight? Liverpool injury news and fitness latest on Reds striker FourFourTwo",
+          "published": "Wed, 18 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool fear significant lower leg injury for Isak",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9PR2xXeWtrNjZyZzZJYkc2LUozWVN0ZXI1bVBvc0NrQWNVYXpyNGZRaklQdk81Snc3bXdOTDZkTW1lbHhhamxOWlZmUC1xa3B0WkNtLTk4VC05N0V4ZlN2andfR1EybUE?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Liverpool fear significant lower leg injury for Isak BBC",
+          "published": "Sun, 21 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Liverpool fear Alexander Isak has fractured leg after horror injury against Spurs",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZGF4di1ZUG5mTVZ5MjQxMnh1ektDWldRbDVydTZjTG5pcU5LLVVWT0hJTXRVQ1ZLUlY4aF9YcF9yOEs3eGRkcmJ6ME9PTWwxYjBkNGZCWmlTak82eGpBdUpOdERlWlk3eWJPcUZ4RHVLRjNWckJkdUQwdWVjREZuNjVPeXpYR2R2Vk1OdWRhUU5wdUNaa21JOHA4V1haQnNuc1JHUVlPLVNrbVFMTG5MWm1ldHhOV19ua2lkQg?oc=5",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "Liverpool fear Alexander Isak has fractured leg after horror injury against Spurs The Guardian",
+          "published": "Sun, 21 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury: Should Micky van de Ven have seen red for tackle on Liverpool forward?",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE92R2NWWUhXWndoZ3dUQU1qTWNwcjV6MWhqWUFYQWF1eVZQQnhnVnlRNUdXa0ZOV1JqNmZsWDZWZHBKRGMyRm5PT2ZXRzk0aXYyUXVDWEtQS25rZmQxXy11d1hINjhVZ2M?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Alexander Isak injury: Should Micky van de Ven have seen red for tackle on Liverpool forward? BBC",
+          "published": "Mon, 22 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury: Does the striker's absence mean Liverpool must act in January market",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOUlVOVXNrVnZFVVBSdXA3MzhXTlJ0TmQ3Q1NvcnFQLS1GX185eEZVRGhEMGQ3cWk3V21OMTdnc1JtdFR1ZTBrTVhUM1lfVDU0MHhuOEpxaVVvRVZqM2NuQkgwMlJRVmpETTZiU1F4TmFNTExPQktSZ05iSjBhcnhTY2JmV1RTa2RjeUN3VkJ2eExYTFZYdlhhLWJ6QmpNUHR4TE9GMG5yemctTHhwbzJRTkJ3N0k0U043WFpSQ3dJWEdodUlQcV9fZWg5YXlGallOSEt0SVAzLXc0ZFlJeDlKVDAza0NCQWM1ZWxqNklwak9QWDNpeVpkc1dhTVoxeTg?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Alexander Isak injury: Does the striker's absence mean Liverpool must act in January market - or are there alternatives? Sky Sports",
+          "published": "Tue, 23 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Isak undergoes successful surgery after Tottenham injury",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRHpZRVIxbGowU1F5eFIzWmpFWHNBWUd4ZGtWRm5IdUlmbXptUVV0Q2hCT2VFNWdibDBIUWVRZDRCU0EzSmVTaU9zRTNHVEYxSW1HblU4WllYdUJ5WDFCdFZMMFpBWkpSQnd6QUtQcWExRkU2R01WM043T21BZzAxNWZ2WVRaZHhnODFfZHRhVGY4NFVIVHZpd1V0bHZnbGpCR2plNHhZYUE?oc=5",
+          "publisher": "Sportsnet.ca",
+          "kind": "article",
+          "snippet": "Isak undergoes successful surgery after Tottenham injury Sportsnet.ca",
+          "published": "Mon, 22 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury: Liverpool confirm Sweden striker suffered leg fracture after Micky van de Ven challenge",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOU1pyVkxHSHBvbEJxWVgzVEw5c3UwSjRwb25QS091cF9mZmZzV0dFdjVhVXNsZ1lWaHhmNXpnRnhLaG1XNTJ0bTRHMTNpWmgyZjd6R1d3OTU2V3BZUy1YVV9Gd2stZlp4TXRDcEl3QzRBQ3U3MEU2bFpSdTlocW41LWczMUN3ME5OemkxSklRSDlrbVpnYVY1LXVPanRjdWp1Z0Jpem8zRVlEZEpnWk5BbDRvdVBoSzFqaUxjZHE1TjN0T3RUdEJERTc3ZTFtWGRiM1h5cDNEZW0xeEpMcldUekk5VzlfLWZFQ2k5SGVDZUtCbFVBenk0?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Alexander Isak injury: Liverpool confirm Sweden striker suffered leg fracture after Micky van de Ven challenge Sky Sports",
+          "published": "Tue, 23 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Why Alexander Isak transfer has not worked out for Liverpool or Newcastle",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNakJyaUR0eVBQYUp0dkZhMmNKNXRxSWVqYTdJZ3hPZy1TZFdUMUEwaGs5QTc0UTZfZjhNVGhRSDV6U3JlY0R4aGZRdGhpTTVIQ0FYRlRlclViZ2dhbGJtRW9fZUJ0NzlhQ2pUbE1GUkxUdUJicHNUd05TV2Fxa2puVHdKYVl2b2Z5UzZORkMxMXNGOEtZSXYwRnBTbE9rTWFqRXc0aHlTZHlWVDg?oc=5",
+          "publisher": "The Telegraph",
+          "kind": "article",
+          "snippet": "Why Alexander Isak transfer has not worked out for Liverpool or Newcastle The Telegraph",
+          "published": "Fri, 30 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak, Alisson Becker, Stefan Bajcetic: Full Liverpool injury list and potential returns",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOejlCZzQ2QlpoNHc0cjJhUmpPbGdYaTkwc0V2V1lKUnNad3gxVWNFSlZEWGc0ODNYTEQ4eDBhRUlWUFRYRS1oZ182Sl9EcU5LUkJ5eFpBVThMQVpiVGZVZ282c1Q0cG1aZHRpeC1vVHp2Y3FreFJVblZtVDV5T0k5MUREMWFTbk5zaUVxaERUMUxSNktidTVYUWMweW5qenFFSHNDS3dnWjR3a0hQeVZqVTdNTEVEUGFHR3NIaTRfOURpVElHY0tlMHBTUzhSQnhNcWpIdlRldlQwLVFValZHbFhWUk5rNmswMlN5U0R3?oc=5",
+          "publisher": "LiverpoolWorld",
+          "kind": "article",
+          "snippet": "Alexander Isak, Alisson Becker, Stefan Bajcetic: Full Liverpool injury list and potential returns LiverpoolWorld",
+          "published": "Thu, 12 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool injury update: Isak, Endo, Bradley latest return dates",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeEhVTXBOYjc4RkRRS01RRjc4bWhvclBCRXVGN3RQWjJhLW9QVGVjcWphMElVa2J3NVdTT2dlMGpPWWRXcDVfcWtacVR3a05Ra3hKYmdGYUVwTnpOS1c3T2VpYXpFV0ZiUllPU2xUMThnb1FTNEVKSWhRSl9Za09Oc2tub05MZEJvM1BQTkkzMDd2clNWcGpfam1fZXFueUNlSGxkRzlqVG82YUFxYmNsb2poUWVCUGJMR3Y5ZExWR1hnTzg?oc=5",
+          "publisher": "London Evening Standard",
+          "kind": "article",
+          "snippet": "Liverpool injury update: Isak, Endo, Bradley latest return dates London Evening Standard",
+          "published": "Mon, 16 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Isak undergoes surgery on ankle injury, Liverpool confirm",
+          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPWFJOR2JUVERXN0x4dkVtZXZnbzlyQUhCNW5CUjd4WU5zVmYzYUJmcGNOMThHeW1lSVljLVNJNHlkcVFmV0dFV1RoNEkwSEllaDBXd2NzSjdRWlpzTDhhcUhLLUs2X0pHSkJ6M0RGSXNBQ0t2RmdzSjJaYWRhZ1pqWWdfQjZOOFIxRUgyOS1PR1VDQVhsTW41R2tXMXJWNkxRSV9ZOTYtTC1vbHJmT2NGWm5xTk5PUUM2RDNFMWtqeFVMWEdwNVQzcEhtMEFVU2lMS1BVWlFCVXduYUV6SHhGcUlCbkxqU2ZKYmJDOWRna0JEc254d1A5R1d3Ny1rX2p2NVVYNC1DTWVscVBCc0Mxb1ZFNWI?oc=5",
+          "publisher": "TNT Sports",
+          "kind": "article",
+          "snippet": "Isak undergoes surgery on ankle injury, Liverpool confirm TNT Sports",
+          "published": "Mon, 22 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury update - Liverpool suspects broken leg to add to Premier League woes",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPdlhKcHNLeTE3bFJkeUdPc1JLM0pwUXVoNFhLNUVwRnMwbE1lOTNDS0VWVmpHWDZZQWNOYlpwa3hTYTNtZm05RWZITkk0YVcxWXJ5eEZXaFNNQm53Si1UMlJhcHVMcDZQWEFfLTV3SXV6WC1OcEhNM3VVSjA3SDg0dkZ4MWJHci1yMmIzcEE0UzJWdkJSdlpmY3hoamh5M1ZuNElQMmhaRlFSc0tPX1N2d1dJUjRtQ0wyTmpJcFpkdjR3bUhFVU01c1dYZTZSQ1gwajlhTGQ4bFV0VERqVnNEOUQtNTFOaWcwMlI0ZjRR0gH0AUFVX3lxTE5tcVBveENGVjVRZlNpbk5JeEJVeXJhc1Btbm1OUHFsWXZTcEQta3o2RzJERV9NbkN4TE9yM0FWdFM1dGNET1llNWNfU2FWNFBNUW5lQk0tSlhtdFN1ZDlGX0FUNVNtenJEeXdrd2FaVWUtelJ0U2tPczRsX2pMcktWbzR4WnJsWHlzUnV4aHB5bzZ5c0ZoS3hJMFBZNWJGSlB5R2I1dFBLME56WFdRMUxxWlhXUm5hdXpFZnF2dGJOSFRMaktMUmdVSFJ0RzJKSURyV0Vzc0hpRC1IVVdrNEtsUUg5NWJ0Qll4NlNWeHpGbnRQMFI?oc=5",
+          "publisher": "Sportstar",
+          "kind": "article",
+          "snippet": "Alexander Isak injury update - Liverpool suspects broken leg to add to Premier League woes Sportstar",
+          "published": "Mon, 22 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak's brutal injury confirmed as Liverpool star undergoes surgery",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONDNCQ1Vfd2tXV2ZtNWd1Q2tmb3pKNExoa3psYXN4NUJkQmNvT21HeWUtY1owSlNWTVp5S09MMkczT0lqQXA3R0tNQ3ZMWEVBTVpMdG91ckZjZk8wR0JRUG1oRnJYMDc5N19hTDBHRmRGS2dpWDlzSGp4dEdjRjZHYi1kZXhrRVVpTlpiRnhTa3dYNVhCS3hSYlV30gGfAUFVX3lxTE9xV21vN2xnMmJDcGVRUC1RUlEwX083UkJnREExTE1HRVBpVzVOeGNaUE56aXk4TlNhd2g1b1NnbmY4ajc5MHphLWtYWVZsQ2NaaEtIaEdudWlMM2JrclFlRzVoZURKZGxtZ0hRcG5GRGs0LWJ5clJ2ZW1VMExBUmNTc2xvVmRQWDcweWFXbXBfSXZPX3lpWWhMc09sM0J3TQ?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Alexander Isak's brutal injury confirmed as Liverpool star undergoes surgery The Mirror",
+          "published": "Mon, 22 Dec 2025 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "alexander-isak-liverpool-striker-suffers-groin-injury-eintracht-402b5d60",
+      "slug": "alexander-isak-liverpool-striker-suffers-groin-injury-eintracht-402b5d60",
+      "sport": "soccer",
+      "headline": "Alexander Isak: Liverpool striker suffers groin injury in Eintracht Frankfurt win, Arne Slot confirms",
+      "blurb": "Alan Shearer delivers blunt Alexander Isak verdict and makes Arne Slot Liverpool job prediction Liverpool Echo",
+      "summary": "Alan Shearer delivers blunt Alexander Isak verdict and makes Arne Slot Liverpool job prediction Liverpool Echo Arne Slot Confirms Alexander Isak Return Date After Hugo Ekitike Injury Blow Sports Illustrated Arne Slot confident Alexander Isak will return for Liverpool this season after ankle surgery - The Athletic The New York Times Aggregated from Liverpool Echo, Sports Illustrated, The New York Times, Diario AS, BBC and 4 more.",
+      "category": "injury",
+      "published": "2025-10-17T07:00:00Z",
+      "updated": "2026-04-25T07:00:00Z",
+      "players": [
+        {
+          "key": "alexander isak",
+          "name": "Alexander Isak",
+          "slug": "alexander-isak",
+          "pos": "FWD",
+          "team": "LIV"
+        },
+        {
+          "key": "ekitike",
+          "name": "Hugo Ekitiké",
+          "slug": "hugo-ekitik",
+          "pos": "FWD",
+          "team": "LIV"
+        },
+        {
+          "key": "van de ven",
+          "name": "Van de Ven",
+          "slug": "van-de-ven",
+          "pos": "DEF",
+          "team": "TOT"
+        },
+        {
+          "key": "frimpong",
+          "name": "Jeremie Frimpong",
+          "slug": "jeremie-frimpong",
+          "pos": "DEF",
+          "team": "LIV"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Arne Slot Confirms Alexander Isak Return Date After Hugo Ekitike Injury Blow",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUlRZVUhZd2Q2SVg3UGEyNGZlNl8wemhjWHZ4VUcyb3Y5X1ROdkRyYTEzMzhSSTF4U3lXa1B3TFVRbDg4RWtrd2laOGpqUWUyZEU4eGdxVHBuUzJheGNSaVQ1SjBtNTRYZmprbGNNZ0ExdHJZX0pNZjlaREduRlVtOUJmZzJqU1FWYVdqbmIzdUpBenZyUTZSN2VNSzd6ZUlwdFJiMA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Arne Slot Confirms Alexander Isak Return Date After Hugo Ekitike Injury Blow Sports Illustrated",
+          "published": "Sat, 21 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arne Slot confident Alexander Isak will return for Liverpool this season after ankle surgery",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWVBBd1hJVTg5X0M4eWVEU3RlbzV6cUl5NzR0VlN0SUpqM1R5Z0MzSzZqVmhEaGxoZjFFYmlfdmp4U0VYR3htZ1ZvRlg4THEwUXFQQ2RvRDN5UkxSS1VTUy1CQ3dOZmJwWWtkS2hia1VXMGFmX3J2bU5zNklSX3hsWTg5VkdiUXhyTmxLb3lB?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Arne Slot confident Alexander Isak will return for Liverpool this season after ankle surgery - The Athletic The New York Times",
+          "published": "Tue, 23 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury update: Arne Slot reveals when Liverpool striker could return",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMThaNFgtajRtbENmMl9sb1A1dHFkN0VxS0ZEaWhVUTR2X1JDZEtWaWRqT05TalhKaHFLS05rVzlfUmZaZzRWcmlIMDhJNkN1YkFDMkdZTWloWnJaWlJrSkRmTHVrVHkyNkFqZkl1RnF5VDFSLUtrdDNNejl3WUJYRmh1Ql9rWThpNUhURHV3ZzQteTlMWGZHN1F6RUVMSFFucjJGbW4wUUN5dWpiLVcwYTl0Rkx0REVtcmfSAc4BQVVfeXFMTnY1dHBlRk4xVGRvcFhRZlEwT3pYQnBYOXVDVlV2VTRJMnItSnBjT2Jjd25maVlqdnJWUWJoeDNPV0tmYmp2ejcxWkxVcndCYTd5X0dybFphWUhBc3Z2LW1ZUlBBMnFIRGlyNDBBNGpmVzBYRnBRS1pOQmdMNnc4VktlQXlDMDZfZExlOV9PYm5pQmcxSXhxNXBEbVVwYzFrdDlva3o0Nm9DVndTZldWclhvbmFtTUN3MHFBanExZlRGLVVjV2YwNTBrTHh1Q0E?oc=5",
+          "publisher": "Diario AS",
+          "kind": "article",
+          "snippet": "Alexander Isak injury update: Arne Slot reveals when Liverpool striker could return Diario AS",
+          "published": "Thu, 19 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak: Liverpool striker could feature against Manchester City on injury return",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE45N0tNVzYwWElsWUMwN2Q0SnBELXZlQllOSTVaZ2dyaDhwMEQ0XzNkbC1BYzg2ZzJCaGJpZl82WUlKY3hudW13TkE5SG5QWkZoQ2ZxWTJsSnh2LWlpZ1hiX1N0VVBUR1E?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Alexander Isak: Liverpool striker could feature against Manchester City on injury return BBC",
+          "published": "Thu, 02 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Games Alexander Isak Could Miss if Arne Slot Injury Prediction Comes True",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObnNLVXYtRFdGcVVYNGtXVWpTVUI0TWtKc19oT2l1b0Y4TTlBZExaQ1Rua1FpSVVYYlJTM213RERUNlNqN1d4T0FfOTlwUlRyZDBMRzN4RFpzZGxjdU50SVQzdGhjaVp6akJJakJhVjE2ODhkaG02MkdtUzRreXJXZGRlMXZsMXMtQXRvWHlB?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "The Games Alexander Isak Could Miss if Arne Slot Injury Prediction Comes True Sports Illustrated",
+          "published": "Fri, 26 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak Is Getting Closer to Returning to the Liverpool Pitch, Assures Arne Slot",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTVZrWC1COHgwNzFidm4weUo3Ui12Q1dMQ1dOMm9QRXA3RWdDeXRYeGE4VmRFdlBwZUltSXNFUkRKUHA4aGZ0a2lGYjlmb3JNOHdsd2NDUXNSRGZ4MWlGdXl3ZEliNUtZcUVhbWtobmFROEFodnNhdmZTc0dKX2NtczRBRGprbjlPOGtxeWIzRFBEYUdLN1RCUnROVWVqM0VNUEZNdHpMREFHQ1Q5a25jTHNPQ0NJZ3JJTWVfNWdSQ2tmUW5NNHh6VHpfekFMN2ljSlNIYXN3MFRwZzVrQ0Faa0NiVWVzZmFUYWdQUW9HenVKdFU?oc=5",
+          "publisher": "beIN SPORTS",
+          "kind": "article",
+          "snippet": "Alexander Isak Is Getting Closer to Returning to the Liverpool Pitch, Assures Arne Slot beIN SPORTS",
+          "published": "Thu, 19 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak now up to speed after ‘six-week pre-season’ at Liverpool, says Arne Slot",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMVJ0UU9PMGRLbzJqV1lEb2xtRHZMazF6VWVhV2JLT1ZSOEV1elo3d19hcVpyQWU2UFZtVzRLZkVUcUJpZW8yQ2RNQjhVTVk3cTRhX1Brd0lGM1hzWllTMDRRNHgyaGRYOHgwMDZRZGtvZnE1RHB3UUZHVHIwWnZsZFVpamtTOXllcVE?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Alexander Isak now up to speed after ‘six-week pre-season’ at Liverpool, says Arne Slot The New York Times",
+          "published": "Fri, 17 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak injury: Liverpool striker set for lengthy absence after 'reckless' Micky van de Ven challenge, says Arne Slot",
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPdC1EN3VER2F0cWdWTE1iTjFNZnl6QU9RMXBJTkdpN0xnUFNkUjA2OXJTbFB1ZUNiQzJEVmZaV3hfTFhyU195NTVEbG5nOTVWWmt5RmFkQkJEMWpORHlwZUJtMlo4LUp1WXF2d25SZFk4dl9WUG5YUWR1N09pS1NLc3VLLU1DMzZkU3d5RnZoOVJ0VHlxX0hBS3NROWt3QWNXZVk2aUc4VWNQc2M1S2R0QU94WjJQc01YZWpzMjB0S3pXbVM5ZUVlcmhKUDl2cWNQYWtlQlpWbFZRYVdheTFZbFNsWHBxSTA0SElUenRvUllLa0JVY2JXcHNUVWRFZFptZ01UcjR3?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Alexander Isak injury: Liverpool striker set for lengthy absence after 'reckless' Micky van de Ven challenge, says Arne Slot Sky Sports",
+          "published": "Tue, 23 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Arne Slot delivers Alexander Isak injury update as Liverpool boss plays down Hugo Ekitike fitness concerns ahead of Man City and PSG clashes",
+          "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQNDA1YmdBM0s0Q3ByWW45MG9mczZRcDFYV3ppcjc0VHRRbVJwWEdrSEQyQXAyQ0pVZkZIUE1tNWkyRk1tRmp4cHhaaUViT014OHo3N1VnVVYySDltRDFCS1pmMFhoNFBNNXFxQ3RKa0gtMVEycVlhYW14b3B0LTc3SW0wZUkzQklBanZldFExUXZ0Z25YcDItYVhmNDlwZndfXzZSMVRRMV9QRkpUUnBrOUhqdmg2aWdjVEFUb1g1Mjc4UXNuZlczSVhicUVWNFVtcXgxQ3BYWGgtN2p2blItRWxlaUFmRXRUc2VEODhpS2I2bF9iYzA5a3k3cndHQ1JEaDgwNjJaVEJYYTBqZTdJX0pScVdDV2lMZVE?oc=5",
+          "publisher": "Goal.com",
+          "kind": "article",
+          "snippet": "Arne Slot delivers Alexander Isak injury update as Liverpool boss plays down Hugo Ekitike fitness concerns ahead of Man City and PSG clashes Goal.com",
+          "published": "Sun, 22 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak suffers groin injury, Jeremie Frimpong likely out ‘weeks’ - Liverpool boss Arne Slot",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbHFSYzZQSGlkZWtyZTd1b0tIZlZnTTNZdzZxVm8tRWFMUHRNVVE2d1o5cXlhR0c4QktrUHE3d2s0dHp6SlJhTVJVQVlWOEFoTXV4cDBnZHJveFJaN25ldzdVcUM3SHNZR25Qc3NiSV9maTI1ZGhySUJidnVPZ1pLTmZXSk42SmN1cjFZM01SRmhrTjRwemo2TjRFY2pUVE9TQ2hB?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Alexander Isak suffers groin injury, Jeremie Frimpong likely out ‘weeks’ - Liverpool boss Arne Slot The New York Times",
+          "published": "Wed, 22 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Arne Slot says Alexander Isak a doubt for Brentford, not worried about Mohamed Salah’s goalscoring",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPb3kwLThhdFRjLUxxUDJjVkhhSjBxRVFFQzJYMXc5cWtyeHI1NDZHQVl6d0RuMkZfMHlIclU3N1NsdUROdy1RSFJndFVOMy1OWkJyVFhHakVUQldGSUsxQVNvLVZBZW56anRNUXpFeUtrZFBOeDlfTXduLUZyZ29jZm9JVHpsV3JxaDlIX2MwMTNaRktPdG1hMkJR?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Arne Slot says Alexander Isak a doubt for Brentford, not worried about Mohamed Salah’s goalscoring The New York Times",
+          "published": "Fri, 24 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak: Liverpool striker suffers groin injury in Eintracht Frankfurt win, Arne Slot confirms",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOWWFab3J4YWF3MHhSUklzTlVESDl6MUpCTjgtLXI2SVZQVUdiSGZFZ09aR2JCekNqSmxmby03NHBnMzdwNDNpbUxWVXVJd1dDZzk4VXJZX085UUVIa0JXWFFKWFVCRkZLeGVFZk5ndU9MMjktUG9IYjdtMlUtczF1WlVkVk50dDVfZ29XMktaQV92MHRuakkwNzR4TEk5U0trdjZCZ1VBZ0RzSFIxZTNWR0pueWh2S09wRGRZenpXSzNISUN5QzF5aDBHdmttakxZTVBNS3ZEdGxLRVprQlg2ZGVPZmhvajlGR2c?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Alexander Isak: Liverpool striker suffers groin injury in Eintracht Frankfurt win, Arne Slot confirms Sky Sports",
+          "published": "Thu, 23 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Arne Slot reveals fresh Alexander Isak return date after nightmare injury layoff",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNdGJXbzJDQkR1NnhVQ1NTMUxiSUVDdzRITWxvZ1JXMEJkOTR4bnFEMGNqVDhmR2h3U3VHajItWHBaQ05wdlQ1dFNqX2M1WUVHeW1zNVlBQzRoSWNsWmJKTmVISEIzVzhCdk5scTFraEdYNjlZOU5LV0psQlh6X0xwSzB3V0VzaXFlV1FCU2hwSkNFajVwZ0RKako5XzJPMVB3YjlTQllhbW0wcm5aMnhoTzVNVU1yOTVvN2ozS3V5MHh6UDVHUngxLVg2SFZkTWwybnNzWkRaanUyQ3RhVWVscDNiNDJicjA?oc=5",
+          "publisher": "Irish Independent",
+          "kind": "article",
+          "snippet": "Arne Slot reveals fresh Alexander Isak return date after nightmare injury layoff Irish Independent",
+          "published": "Sat, 21 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Alan Shearer delivers blunt Alexander Isak verdict and makes Arne Slot Liverpool job prediction",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNXZFa0txel9ma0JSQk9uNldoaWZFNWtXUklhVG13NXAtdWJaRHJCOTk2US10LU9qYmc1SUd6X0tBN2VkV3YwTlRSeURnbnFJTG44QS1PcHgyNnI0RkFkMDhRUjhlM0ludDVOYTN0Z0VRLTd2eEh5XzJYbFJPRWhzNDNOS1RSam52NkxKbHFzOFhqQzhESFJmRXFOaW55cjBZTV9rQUhWMm1FdXM?oc=5",
+          "publisher": "Liverpool Echo",
+          "kind": "article",
+          "snippet": "Alan Shearer delivers blunt Alexander Isak verdict and makes Arne Slot Liverpool job prediction Liverpool Echo",
+          "published": "Sat, 25 Apr 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "man-utd-now-want-repeat-bryan-mbeumo-matheus-c88298fb",
       "slug": "man-utd-now-want-repeat-bryan-mbeumo-matheus-c88298fb",
       "sport": "soccer",
@@ -17932,470 +18227,6 @@
           "kind": "article",
           "snippet": "FPL injury news: Saka, Timber, Mbeumo, Beto, Estevao latest for GW34 Daily Express",
           "published": "Fri, 24 Apr 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "transfer-rumors-tottenham-eye-move-man-city-s-f2d80b8e",
-      "slug": "transfer-rumors-tottenham-eye-move-man-city-s-f2d80b8e",
-      "sport": "soccer",
-      "headline": "Cody Gakpo: Tottenham interested in signing Liverpool forward as Roberto De Zerbi aims to improve Spurs attack",
-      "blurb": "Bradley Barcola Transfer to Liverpool to Unlock Tottenham Move for Cody Gakpo roundtable.io",
-      "summary": "Bradley Barcola Transfer to Liverpool to Unlock Tottenham Move for Cody Gakpo roundtable.io Transfer rumors, news: Chelsea eye ex-Liverpool star Wijnaldum ESPN Transfer rumors, news: Tottenham eye move for Man City's Savinho ESPN Aggregated from roundtable.io, ESPN, BBC, Yahoo Sports UK, Transfermarkt and 28 more.",
-      "category": "trade",
-      "published": "2020-03-25T07:00:00Z",
-      "updated": "2026-09-04T17:39:51Z",
-      "players": [
-        {
-          "key": "gakpo",
-          "name": "Cody Gakpo",
-          "slug": "cody-gakpo",
-          "pos": "MID",
-          "team": "LIV"
-        },
-        {
-          "key": "bradley",
-          "name": "Conor Bradley",
-          "slug": "conor-bradley",
-          "pos": "DEF",
-          "team": "LIV"
-        },
-        {
-          "key": "hughes",
-          "name": "Will Hughes",
-          "slug": "will-hughes",
-          "pos": "MID",
-          "team": "CRY"
-        },
-        {
-          "key": "thiaw",
-          "name": "Malick Thiaw",
-          "slug": "malick-thiaw",
-          "pos": "DEF",
-          "team": "NEW"
-        },
-        {
-          "key": "nwaneri",
-          "name": "Ethan Nwaneri",
-          "slug": "ethan-nwaneri",
-          "pos": "MID",
-          "team": "ARS"
-        },
-        {
-          "key": "savinho",
-          "name": "Sávio Oliveira",
-          "slug": "s-vio-oliveira",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "ndiaye",
-          "name": "Iliman Ndiaye",
-          "slug": "iliman-ndiaye",
-          "pos": "MID",
-          "team": "EVE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Transfer rumors, news: Chelsea eye ex-Liverpool star Wijnaldum",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOY3JuaFBpLWIwZFdja1o4STAxVEluenhIemVHNGVaRmlMWS1STm4zb25kRV9CRVRVOXFCUkhzY3ZMLXdKS3hSTXZaT0YxemZaOHQzaURIWGNMNHRibXBZQUdwcFBjRnQzdG1qVWdyc084WU96YUw5NzE0Vi1PbWpGX3llSEJ0Y0Z0OS1ydlhldGMxNnVGSFNkTTYxUkJtWjNEMlp6X3VuZGEtZk04?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Chelsea eye ex-Liverpool star Wijnaldum ESPN",
-          "published": "Thu, 03 Sep 2026 12:35:00 GMT"
-        },
-        {
-          "title": "Transfer rumors, news: Tottenham eye move for Man City's Savinho",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOa2NsZlY0RHdhbzJqQ1hJWmR0WWZpNDZLZEN0bWcyWVdoYk40V2dQdHE2OUxGb050MmZURDVISXZsMkREc2pmdXBEZWxPUGduS2NkZU9Ldi1nWlE0RjFFOEoyXzU5OTRHQlJpaEdVM2wtUURLdkszUnlhWFdDTnl1WkZIRzBkNFdQTDcwQUUyRk9TLVkzaTNNM1hjeUtjcVFrbG15M2V6OFphcFc4b2Y4UHdXNm1fYkJUSUkxLW4wQS1pMTBhVlN5alBjRmhzZw?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Tottenham eye move for Man City's Savinho ESPN",
-          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Transfer rumors, news: Man City eye move for Everton's Ndiaye",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdWxMZy1HcWxfMVdzMTEwOExTQ3A1a1FKSHJjbDE5aTRIVXp3N0dmdXRQRFVOUTdyeC16ZFRlUWs0QWJXNWM3UUtGVzQtMGxqQXRYMHBNZXZLX1pyUWRRNHlNb24xeWpDMWdlS1hSdnQ0bGxVeGJEU0hDTFFKMDdwUUcySXZsS3pNTVlZS0t3U2VnekxvY3pZV2pKampISU5nVmEwSHJQVkxFdm54d0s4?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Man City eye move for Everton's Ndiaye ESPN",
-          "published": "Tue, 09 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Transfer rumors, news: Tottenham eye move for Man City's Savinho",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZktFZlZyanJ4ajhUN093ZE93Zm5Ia1FlUmdtTUJ1S2xsSEZPN0gxamJZd3BHOElkNnowd25uTlE4R3BVRlhrc0NhSW9Ud182N2ZadkUwQkxJU2d3Qm05UktXNFB3S1FaVGJuODBFRWdHVkZCUFJDeEpSdFVoUTJsYUdXUnJ4Qm9uSGNuV3NoYUtCd09Kd0xJYU9xcGVYdFhqNm1KMUJuRmVNT3gwa3BjUkM3WTIxcDVsZjFmUGE2MEVKMHYyVk1yNA?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Tottenham eye move for Man City's Savinho ESPN",
-          "published": "Wed, 29 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cody Gakpo transfer news: Man City's proposed £80m move for Liverpool forward close to collapse",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9PTHBKMWE1c2VWQ1p5QnFSRmQ1UW0tc0R0R0pTSUlTeGI5czd6OWpnT1A5dXh5NjgxLWtpVDRsdmxuYjNQREFuNWJ2aC1IeERaU0s2R1NaTml6WGtaNDZBODRVYlZjODA?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Cody Gakpo transfer news: Man City's proposed £80m move for Liverpool forward close to collapse BBC",
-          "published": "Mon, 31 Aug 2026 16:53:46 GMT"
-        },
-        {
-          "title": "'Quite incredible' - Man City's transfer plan revealed after Cody Gakpo agreement",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaE8yUlFCNnNxVUlzangzOGV0SnJDQnB4cXRkWUY4MFNaYUtHQmhDQ3NxRzZMSEZUWlU4NkFPX3h0RkxDTGpwR1FnZkREUFU5RkpJcUhpRUU4aG9VelNyY0w4b0pmNW9UUVFXQTVrSVdKQ3kxd1BJeUI3cldmdHd6OVNLakgyTU03Vnhv?oc=5",
-          "publisher": "Yahoo Sports UK",
-          "kind": "article",
-          "snippet": "'Quite incredible' - Man City's transfer plan revealed after Cody Gakpo agreement Yahoo Sports UK",
-          "published": "Sun, 30 Aug 2026 11:36:47 GMT"
-        },
-        {
-          "title": "Transfer news LIVE: Cody Gakpo to stay at Liverpool as Dortmund want Nwaneri loan",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVUdGM2lJZjVpLWJVc0Q5bHF2dkNLcGxEaWhVU0VjY2ROLUpNSWRiTlNHSEt2Qy1YMHVob2w0eXNJVUZ0YUVBQ3BSS3JvQm1EeFcwZkQ2bVRuY0JCcnJ4YVZ6cjJ1SG5Fcl9pTzNTU1FlaU91X2k2d2pQeDhRc3dxel94Ykw3RnRrRXZtQ3l6S0gtQ1Vicmg1Um5fZDZXamJlN0VWWjZiOTI1Q0Z3ZkdfTlFwN0FjOUw4emU4UUtBc1lWbnlrczdMSlYxQQ?oc=5",
-          "publisher": "Transfermarkt",
-          "kind": "article",
-          "snippet": "Transfer news LIVE: Cody Gakpo to stay at Liverpool as Dortmund want Nwaneri loan Transfermarkt",
-          "published": "Mon, 31 Aug 2026 18:21:33 GMT"
-        },
-        {
-          "title": "Cody Gakpo makes decision over Tottenham transfer as Liverpool set asking price",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNl9HSW4xOFo2MVF0VEFKTm5Hbkg1eFNoSnNHVUFHNnI5Z01FUDk0emF3LUV2aXA0SkpVbl9BOHQteGJ2dS1LMzVKblRFZmpicXZZVVp3N0lmMTR3dlVzQXd6czFoRjl3VE1UdmlIRW5SQ25rUTNXMkI0MDV3LVNwOTQ4dTR3SENva3dJNzZmUzNWcFlwdTFzbVZ6aFE0S3Q1clNtWGN3MDRXT3ZKcUNpY3Z30gG3AUFVX3lxTE5ESnE2aFFCOGNvT0F6alc4c3VaM2pNd2ZxQ3NEVzQ0QnRhc1g1ZGpNYmVKV3VaeHB4VVRhVEtpRXZ6VTlUY1padWRVdldFSWw5bkxqVUpRWFlWcWdFTTFocHhtaEIycTVmQUxrYm1EX0huQWJKcTVnZ2plS25GeGtKLVpJVjQ5VHF3QnZHYVA5YjdYY3NrMTBZSTU1Ul9NOHNsWm14aDFuc1JRazRfZUVlWEM1WVA5OA?oc=5",
-          "publisher": "Metro.co.uk",
-          "kind": "article",
-          "snippet": "Cody Gakpo makes decision over Tottenham transfer as Liverpool set asking price Metro.co.uk",
-          "published": "Fri, 14 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Liverpool set firm transfer stance on Cody Gakpo as Tottenham interest intensifies",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQa0RWRGl3d2NJdlNERDF1azcyaWdXLVRRa0FRTHdRTm5qWDAtNDJjX2xKSlc5M01OVzVZRFdWckdXQS1EMkZVanE3cTRadTVDUDhudWJmWmt0SHVWcnoycHhVbS04MW5oLUFSYUt6Sk56cGs3anpMdUR5OHpSWEF0b2tEN3hSWktGRm9nUXUwS2dFc1U?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "Liverpool set firm transfer stance on Cody Gakpo as Tottenham interest intensifies Goal.com",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Liverpool latest: Cody Gakpo update issued as transfer talks for exit reignited",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMm5wODFWb3o3S0c2ekNWQkFDOHdmc3JzQmhQQS03eVNJQzJNdlQ4VjIzZDY2RGpvRk40UGtIRnNUTU5uZ3djUVpJcHpyWlB5SF9fa1gyR2F4VkdYTjktaHlvTXJxZy11TFQyVG9rRlVWOW9vdnFhNDJidmhJQV94ZXJNRUU4UXNwUkQ5Q0hUUHB6TkZZS0Z1NkoxODE1dmk0cWZsWHQ1MUFTMEVDcWRV0gG0AUFVX3lxTE1xSWJGRXVhT1pGQVhRck5BcDNzOXZJd0ZFT2dIb3B3TkFKbnZrdE52NDF6Y1FpcnFvT2h4Q1cwX2lOS0dLdEhFRG83YndrbC1zd3FjaDVzc3VBLVRVQXVuMmFtbmNHeTE2cXl3ZjlFTGZMRmIwZGFnc0RMZ1lWalRsVWJCNkVaN0tpR3dWYmZuZG5ydDZyTXNCalVJQXVJMXAyRWs2VmdvSW42Z0VnQVhodlY2WQ?oc=5",
-          "publisher": "Liverpool Echo",
-          "kind": "article",
-          "snippet": "Liverpool latest: Cody Gakpo update issued as transfer talks for exit reignited Liverpool Echo",
-          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Deal struck! Cody Gakpo agrees Tottenham move but Liverpool face Bradley Barcola transfer stand-off",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOU21fY1FJM3A1TlcxS1VnLTJXVlhEcDBUSUsxX2NkSXJkSHpDQUJwXzdPYnczZXdJTVVOU0dOclNHZlVHMTBqRmJmenV0dTRtUUw3eng5VUI5N0lHQUR3bUdMZWhHSHZMcGxYLUVSNWtNX3dINkRHV0lQS3NNaWNPRUlXN2VmNHp2UmstZVE3SGM4NlZCT2xOZzNMbFpZX0dnMnpjQzNqNUV3YVFzcXgybFFtUnZfdw?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "Deal struck! Cody Gakpo agrees Tottenham move but Liverpool face Bradley Barcola transfer stand-off Goal.com",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cody Gakpo holds crunch talks with Liverpool owners over failed transfer",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMFdndjU2SGpHN3hUekdzbUJCNm9LazBIdVNWVDVHRUliVUVmM3paRDJRbTFtTUhqeG1yQWNuaDJhVnE0cVc3c18xVDkwVHMwZnkzd1ZDR3BocldjNXhxUE9IZVg3aEVhdmlZNW51UzMzQklIYTZCQXlqNHJWeE1CWFZGeHJ2UWJOUGxHREhMWWFyU19hMjVUT3Q4VTQzSnE2Vjl2ZElR0gGrAUFVX3lxTE5QRXhOLUhqZS1vQnNMSE5SQnZ6d0gwWTM1OUNDbHo5cHhWZmhadTRMOWVYMHpQcXNGUVVBYzZNZmhXdjZpcFBvck5GbkRNNFBpbWZhcTFoNnk5LWppMXFaUzZDeFVtdWJ2eGxGZjE3bWd1ZzZBdzY1aVluMzJaTS1uUUZnWkQ0LS1fbjRiQktWSjBxUUFHQ0hLZFQtTUo5bDFjLXJjZXZiMkU2WQ?oc=5",
-          "publisher": "Liverpool.com",
-          "kind": "article",
-          "snippet": "Cody Gakpo holds crunch talks with Liverpool owners over failed transfer Liverpool.com",
-          "published": "Tue, 01 Sep 2026 20:48:21 GMT"
-        },
-        {
-          "title": "Liverpool transfer news as contact made for goalkeeper while Cody Gakpo replacements eyed",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVWRNbzhzTWw0WEQtZGpsa0RRTmFNTWFtdkZRMTR5T0lzWGJtenFoMnFjeDFQNk5Ob2hPYU1yVWRWWkxfcHVHbktGOGJZa1UwMGNOV3RscUdZeUZiRlJHbjlsRkJfSzZSMVVZZGFmV1NqSmdTNVJnNW1VSjdCa1dUVEpYNGxiX2EwbU1vWEw4dnowVVNOT1hQWDhrX0l3ZVROVjEyR2MwU2Mzel9OZHfSAbMBQVVfeXFMTVE0cnZ1N2VRV3Nzb2hJOGs0QjU0ZmgyUVF6LUp1a3ZlR29XeDk5ZXpqUTk0RlhDcDRNZzQ2Mk5uZ3RnYlJkNVV0dEJuZm5MeGY4UWNKWEVKMDJYdFBlZEZlVHF2RU11aEFkbnZ0NmtjTkwwUlpEdVJGcTYzR0JfTkxZMWxJQVRpcmNMcHdZYk8yZGQ0WjllSGg5eTFVRFMyelltNzhVb2tvVXhfdC14NEtuTjg?oc=5",
-          "publisher": "Liverpool.com",
-          "kind": "article",
-          "snippet": "Liverpool transfer news as contact made for goalkeeper while Cody Gakpo replacements eyed Liverpool.com",
-          "published": "Mon, 31 Aug 2026 04:02:33 GMT"
-        },
-        {
-          "title": "Liverpool could increase Cody Gakpo transfer fee after Chelsea valuation",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRTZmNDVUT0lhUVpyNnZ6bWNObGp0Vm1xVFdPNWRpcXJfMTI4emZDV0Rtc1lRVjg3N25XazVheER2WXQ3aEpOSmJta3YxU0x1dlRlR1B2RGJIQTRwX2g3Sl96d3FjekttaTVtTlhWa25sTnM3Sk9BSHdwVWRVM0c1elhXQ19EbXhfa1ZWNXZsaHJMN0p0YWstWm9CMnFaQdIBowFBVV95cUxQWDI3R0lCU3dLb2ZBUHZ5MFE5b1B1SVZBdEplZnU2YmJ4RGozTGdHMEpIZGRZZWNhdDZSRUF3bFZRc0RVd0xBb1dscWxfR1FFSVU0cWJXOUFtVjFsWm5wbVpKMG5FT1RNNW9lV1l1ejVYWXE5TjRHRGJ4aHY2aWplVUI0TlFBbkdaRFV3dk5PNVdXUmdjWF9HSW1pZHJnV1VmbTRB?oc=5",
-          "publisher": "Liverpool.com",
-          "kind": "article",
-          "snippet": "Liverpool could increase Cody Gakpo transfer fee after Chelsea valuation Liverpool.com",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Julian Alvarez to Arsenal transfer boost thanks to Liverpool selling Cody Gakpo",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUEZFSDJmNjVRZ2Zoa1NKcWo2cXZqa0FlUkhXT1FPME1WbTJSMEdNMjJMSGFhdFE4V2F6c1JUSm9kVV9HOVV0TmlwRWN3b1M3V05QaEVMWnRkTUVvZDJiS0ROcFRGeXU5OVRkVXpzNjIzMGZNSnEyTnRXOW5FZEZmWEYtdERvV1NoQ2sweXE5bWp4NjVPSkR4NnoxOFLSAaIBQVVfeXFMUGdRLVgxMnlkTjYtZjlDX19mMWFEV1MyLU85alFJSUF2cGh1RWJfN2k0V0ZRNTlVb196Y3kxeDA3d3FYckhlYXhrbHlNeG55X3BXNGJrbmtveWlkazA4bUVWd2hoLUN6SGpOYUVoTnNDeEpkemxTZTA1ZVFLRFI2VkVHQ3JTVFkwcHlKd2xKWGl6OTRQVHlTby0xSTh5cll3bm5B?oc=5",
-          "publisher": "Daily Express",
-          "kind": "article",
-          "snippet": "Julian Alvarez to Arsenal transfer boost thanks to Liverpool selling Cody Gakpo Daily Express",
-          "published": "Sun, 30 Aug 2026 12:27:00 GMT"
-        },
-        {
-          "title": "Tottenham double transfer plan could have major impact on Cody Gakpo and Liverpool",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObE4tNFlDVlJzejdqMUZhdDBvZjJ2RVhzbWsxQzFreXJBQ3dScWkzMkc4dEZKd21LeDE2NmpjQU5PcDVvUlJyQTNndkdUb3BTYW9yVVNDZ0pSaUlYb3Z2anVWVTM3akxEUC01bDdUS0cwRnFvZzM3NTU1WldEbVVObDVDa1VEWlpmZnFXZ2UzMjNGclFDX2N1UkprRmxPN1hFQ3A0b2RiT3lyb3F60gGyAUFVX3lxTFA2aC1MdEZibWZMLWlQX0dPVXpVaTZvejF2cHVhbzNiRWM5M1QxUHRjaGNnUzRIWENLVTJWa29Bc19BQkhSeFRDbTB2NkNyWGJadkVIWERxQU16V2tUXzlSZW5pVjBWcXRjNGU5a3dEd2NCOElCX3BpZGdjWjhzYUZGVmJqQWtGd21FSVMySDVxcTI2aWtiZDJtdHZieU1xZk9qOGREc3Jpd3BFLTM5bWQtR0E?oc=5",
-          "publisher": "Liverpool.com",
-          "kind": "article",
-          "snippet": "Tottenham double transfer plan could have major impact on Cody Gakpo and Liverpool Liverpool.com",
-          "published": "Wed, 19 Aug 2026 18:35:10 GMT"
-        },
-        {
-          "title": "Transfer rumors, news: Tottenham eye move for Liverpool's Gakpo",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZVlXS2t6VVBSem4yN0pJdUNKVmk5aUI4bFo5MllFR3F0Y2VlNGFIdXpHeFFYZ2V0LXdnbC1JWENLaVZyNmtZN2oyM2lScEJRUm1CdlF4VTJsTnBIcnBYelo4RDlZeFFMbjZ6c0RhdFo3WkE2bmdJaldEb1pwTkpENnBpY0QxWGNyQ2hRaG41aFQ3UW5CbU5CVlRZd0JZaTh2WGtoZ0EwMnZ5dE5Bc1V4elk4N09KZ3FSb19PSmNieHJGQVhfN1pLLThuMA?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Tottenham eye move for Liverpool's Gakpo ESPN",
-          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Why Tottenham want Liverpool forward Cody Gakpo",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zNjNqNmpWY3ZscTVJYS1FbkZkanVrTHM5ZmNSbnVaM09lRFkzbFhZaldiblRfZ0RtVkJGY1JFSG1vVDlvQjRXSy1UdFlJZzducHFHNkhTek9halZPdmg0cXdwRmdvNk0?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Why Tottenham want Liverpool forward Cody Gakpo BBC",
-          "published": "Thu, 06 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Liverpool make final Cody Gakpo decision after Man City bid",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdnFXeWk3T3dGdG83c250RTJXN2g5SzhrUDhwQnExUjhPT2JMOTlEUEwxVHZyYzMzNVNWRFVzV3hOQnl6ZXQzTUtjOXUzS216aWtmQWczX2VweXlSZnRyUWowTTdpN3FNbVJDNzJlVi0tc0IwQWtmSEFJd0d3NUhOVXZkWFZLQ2Z6NHV2VU1oRmVkbWdsS3hSbGJkUFVxSng5SzVBZmJYUms1b3ExYjh0Zks3cVllUUFpQVJpdFZHS0M4cG9hb3o0MFdzVVU3d0Zn?oc=5",
-          "publisher": "footballtransfers.com",
-          "kind": "article",
-          "snippet": "Liverpool make final Cody Gakpo decision after Man City bid - David Ornstein footballtransfers.com",
-          "published": "Mon, 31 Aug 2026 16:11:00 GMT"
-        },
-        {
-          "title": "Ornstein Makes Cody Gakpo to Tottenham Claim After Liverpool Agree Barcola Deal",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNXZLeWI2Y3JHWUJwN0J6Q3ZaY0pzenA4dk1mbC1aYlYzbmljNVpjdGNBZEhtaml3S0E3YU9WTGlsQ3NPNDlVaDc1LS1DdkUwQ0Y0YnI5VkZveUZEczEwNUZETGY5c1RfblI4aHFYV2dBd254MTRqbGJtUE1ZQlR4QndvckpQenVQU2FB?oc=5",
-          "publisher": "GiveMeSport",
-          "kind": "article",
-          "snippet": "Ornstein Makes Cody Gakpo to Tottenham Claim After Liverpool Agree Barcola Deal GiveMeSport",
-          "published": "Thu, 27 Aug 2026 11:16:12 GMT"
-        },
-        {
-          "title": "Tottenham interested in signing Liverpool forward Cody Gakpo",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYzJqbVY0SHY2LW5lZmVoTkRxNnJDUWMyVkktWnpvX3ptZGRNcl9PV1NqMWpKNTlqNjRZQV9URVE4NVpGdExzS3gtUV9pNW10YkpqbThlcTNiRVBvWE1rbDRFeFlNRkZlWDdiWUdaYm5WUGNESnZlb21HVHFGOGt1RWhkRHhGWTVUWmRKN3JmYmt0bWpiSlE?oc=5",
-          "publisher": "K24 Digital",
-          "kind": "article",
-          "snippet": "Tottenham interested in signing Liverpool forward Cody Gakpo K24 Digital",
-          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "What Next for Cody Gakpo at Liverpool After Bradley Barcola Transfer ‘Finalized’",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd2FQWGM3SjE1cm5USE1xNW5SaTlmZVI1X3NKVTVxSlVXa2szc0lBeVh1N29zNnFLUVpNOHVaNXZIRzFQR05HSklEaXE1VWZzMXlnaFVwTHNBX2E5Tkh1UlNqenVSVE5UbmJLazlNNjVLc2luVmZlRkcwNjZ1NHdqMlFyNGxUcWJQR0JEcWdMMmxCVWZwNFE?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "What Next for Cody Gakpo at Liverpool After Bradley Barcola Transfer ‘Finalized’ Sports Illustrated",
-          "published": "Sat, 29 Aug 2026 19:30:00 GMT"
-        },
-        {
-          "title": "Manchester City join Tottenham in transfer race for Liverpool star Cody Gakpo as transfer deadline approaches",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOby10X3h2bzZGLUhXckZ6aGp2dmpxTm1XUFFGRzB3OC15RW16NEpPSTlJbVlUSEFwRUFZSnhpZ1pKVFF0RjlfRERoV3ZPNnNwblFIVzBoQmhUM2Q2NkJDdk5ZZDl6TXE4ZzVtWTdiV3FwbC13SThVd3AzZTMyVHRNb0Ftc1lKQnhEVTEtd3dSNlA5RzZmQXF0U0dVVHExOHpWMXh2SnlFQ0xfQXRlM2N1NXQ4OFlEbVJZX1JDcXM2MGwxNnRBcjFLV3h5LWZiZGt0aE1rU3FB?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "Manchester City join Tottenham in transfer race for Liverpool star Cody Gakpo as transfer deadline approaches Goal.com",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Transfer news: Is Liverpool's Cody Gakpo joining Tottenham?",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBObWlrMUZhenJmQllJemhWQWVkWGhlLUswcURkalc1NU1zN0lsblg1R1VrMHFWbzJTRDJvelAxaEd4SjY5U01CTUpNOVBPMzN6SksxWU9Edkw3MllSZ0NtMFQ5Z2NvdWc?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Transfer news: Is Liverpool's Cody Gakpo joining Tottenham? BBC",
-          "published": "Wed, 12 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man City make contact for Cody Gakpo transfer",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBub1RUQnpZWkxSUmhudmYzeEcwbXczYkNuVm0zMklHRk5DaVNOcTBMTW9BTWFudC15Nzg3S0ZuM01xZFJaYTkyT2lSYkMyMWlfcmxoekY5Z1djV1dqbjh0TlRETThYaFIzWlE5RXctUlVaQUFhd3c?oc=5",
-          "publisher": "This Is Anfield",
-          "kind": "article",
-          "snippet": "Man City make contact for Cody Gakpo transfer This Is Anfield",
-          "published": "Mon, 24 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Liverpool make transfer call on Spurs target Gakpo",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQTFlYQlowdzc5YVpaTzN5eEJKdzJjLWJ6OXRUUWxfWjFEUHpoR0hQUDAxTkVKcm8wR2hjVkZSSHVpQmE4TncxVzc3Vy02THJHaUN0bG8yTF82X19udWQyNEZkckthM25ZVmFNZkh1UDZsMUtKLTRsY2dkeVRoZmZzcmlFMUVXNURJalpqZHQ0eWtibnJmUk5ZYUhaQ0VqeUZDUEgzNVQ2WVd5REhoS01jMWg1dGg4MkdTSjM0RGo3RjZMOUR3b1lhYXN6bS10alhtSV9oUG50Yzdha04zOWZydXNCeDliZ21RWGpKbGQwRjNuWS1zT0hmRg?oc=5",
-          "publisher": "TribalFootball",
-          "kind": "article",
-          "snippet": "Liverpool make transfer call on Spurs target Gakpo TribalFootball",
-          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Tottenham ‘strike Cody Gakpo agreement’ as Liverpool decide on Bradley Barcola bid",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQjhDQ0N2cDJQMGVuc2d1UDVjQXJfZ1VOUXZYNkxaUG1Kc294anlTeERkMXRXUG9TX01uajlvSVA3MTdSb21sczRlZFVuZjlpWDM5dEYwcmJkWnF0NTR2X3V6VGdFaUs3ZEl1OVloZG5EeUh2dTNPQ3BUSmJQWFU5WTBvVUlPcHJaakdhZWRGUDlCMFJNZnE0c3JJRkFKbHV1aV9Z0gGoAUFVX3lxTE91dmh6eXoxa2FUS1QzTUhxWWtFcUs1VE9jZGlqdnpjdEExZlVuWWNYRjc4UVF3V0lyeU9FM3R3NlZrdEstYXlXb241WVhhWjlPQ19YSW4yTHlLTEZrbUNhdlRxVEh2YlRscThsZU9FUkJUU2hhcUlwZVhxaUl5ajJBbWkyYnpBRng0NDFjR3I0WXFaNjNTZFgzbHhOb1FjNmFjZEpJSllTRg?oc=5",
-          "publisher": "Daily Mirror",
-          "kind": "article",
-          "snippet": "Tottenham ‘strike Cody Gakpo agreement’ as Liverpool decide on Bradley Barcola bid Daily Mirror",
-          "published": "Sat, 15 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Tottenham Hotspur receive major boost in pursuit of Cody Gakpo after Liverpool agreement",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNXdjeUwzVC1idzE3Wi15Mk91aHlja2NBdElIYmRHRy0zbklTNWNSTDhmUHhZaU5aTDQwSUZBcmNFZ2ZGN3E5R0xyendLTVhqYkRiUExSLUVRcmg1RHpaWXdTQS1NY2VjdVJLbTFRcnJaOFZldHZoQW1CVEsxWDdpVWdmMWctUDM5MTlUR05acWlPRXg2dEZod19jODZrLThRb0N2cHYxcHprdUdnbzhHUC1xa2V4X1lyOVgzZFBR?oc=5",
-          "publisher": "eplindex.com",
-          "kind": "x",
-          "snippet": "Tottenham Hotspur receive major boost in pursuit of Cody Gakpo after Liverpool agreement eplindex.com",
-          "published": "Sat, 29 Aug 2026 14:30:03 GMT"
-        },
-        {
-          "title": "Andoni Iraola has new Cody Gakpo plan after Liverpool transfer collapse",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNT24xakJsY1FqQ29Oa2xSTFdFMnZYT1hiU3k2eDRpdFUzZkVZOWladTltX051OTAwRUgySUxjN1lySGNHN3N0aHRpTDJHQzNLVGx6OTdtZ2tQMUIzakRJdnlBdnUwM3J5QlVlV09yZHlLRW1iRFc5bk9yY19hX3drbWs3WEM?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Andoni Iraola has new Cody Gakpo plan after Liverpool transfer collapse Yahoo Sports",
-          "published": "Fri, 04 Sep 2026 09:34:30 GMT"
-        },
-        {
-          "title": "Arsenal and Man City join Liverpool in transfer race to sign Schalke wonderkid defender Malick Thiaw",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMHNYb2N0cnZEWE5KTFlnOWdjbWRJQ1c5WFhVN2czNzgyeWFRZHE4eXA0ODQ3RUtDQjdoNTJMQjlXYUlLMkZYdHlHbC16dVUxZ1d4UEllRWNzSTk2bGRxdVBOYjFxQ1VRS0dEOG1KMlBBMzA2Tkdjc09pR1JONlUyQ2xEX1Awa3AyUE5IVXdsOWNJQS1qOTl5Y2VHcklIZWdqNWRuRmIzeUs?oc=5",
-          "publisher": "The Sun",
-          "kind": "article",
-          "snippet": "Arsenal and Man City join Liverpool in transfer race to sign Schalke wonderkid defender Malick Thiaw The Sun",
-          "published": "Wed, 25 Mar 2020 07:00:00 GMT"
-        },
-        {
-          "title": "Liverpool Joined By Manchester United in Race For £55m Premier League Star",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQREtBYU95ZjdjTWFDdHhURG1mNVBNX0FXTjVMV24xdk5tOU5HUGVMRXVZbnVSMW5MOWZtRjBWeXk4UTBvcDN5SHh5MDFsOURwVXhXMnNHUzBRSE9IYXpMOEgzSko2ZzVYa1FWZTEyRnJzSXpRdERuVkZhY1JkT1J5Q2Y5U3ZyX1VVUXRLNXJ4THFaMFptWUtMVVE0ZzRoc21jVUlrbWZlUEJXSFpOMzRFNnpYXzZaR043?oc=5",
-          "publisher": "readliverpoolfc.com",
-          "kind": "article",
-          "snippet": "Liverpool Joined By Manchester United in Race For £55m Premier League Star readliverpoolfc.com",
-          "published": "Sat, 21 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Leeds United star 'looked at' by Premier League rivals as potential swoop mooted",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMUJlLXRhV2s2WnM0M1diOHVBSnRuOUZEWkxzRE54UUVDT3h4c2NRbHRNcjYtS3oweFcyZnFJdWNlYldTdVlQeWxzQmlNUy1ZNWpnRGRuNTVBNTZkS0NILWo2OGRDVHRlckwwMUVNRFNRbzltdXdldlI5OE90ZHBwejYtU1pzajZ1Yzg2YUM4eUhjNzVOakxYRTRNdkprS3AyZmI0czNlQ0dIbVdkODE3R19oSG1LZVRJSU1kOWFScEdJRmlyRW9PalRuM2RkUQ?oc=5",
-          "publisher": "yorkshirepost.co.uk",
-          "kind": "article",
-          "snippet": "Leeds United star 'looked at' by Premier League rivals as potential swoop mooted yorkshirepost.co.uk",
-          "published": "Thu, 25 Sep 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Liverpool Get Good Cody Gakpo News After Failed Deadline Transfer",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQXlxQl81cElfQXJ2b283WnNZQ3FEV1Flc0dVOThQWkJCYlptdk02WFFXMk9tRzcxYlRtV0hIYlQ5SEF3cXd6b2RhazJFeG1ETHI2LWQ5elF1MnBnN1dlcFN1a2ZiYjlLaVZ0SDRTSDRSUWF1cUwycE1pMFRVVWRWYTlKb3lYdw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Liverpool Get Good Cody Gakpo News After Failed Deadline Transfer Yahoo Sports",
-          "published": "Fri, 04 Sep 2026 17:39:51 GMT"
-        },
-        {
-          "title": "Tottenham suffer new £65m transfer blow hours after Liverpool block Cody Gakpo deal",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa1hKVURwZHBqa3ZHZ24zVl9Mdk5QbERFTEZ4RTczU2haWUlvek5rTVBHOGtjNnk0VFpUT2VyM0Q0dHdwRDJJVVlXUDBZdXRGS0c4RmRrUVNWVEJWLU5xcmpGa241Tk9WYUtud0xCSi1VSnhreUIzTXVKTjZIVFh1NmNFb05RUjJWUDFMek5BVGtiQnpW0gGaAUFVX3lxTE1jcXpYY2g4VGluRl9ycEtZdmhjdVNjT1AzMExnMElQSm9QRUIzeVFDOFJqN0JjazdYOTZKdWJaNUNjRW0xM19ta3M1TzVOcm5mTHNWSVlLdTgtWWV2dWlXUFljQlpPeEszS3c1UTlLTU54VkdKb2k1TFdFNlllMjJpZExyd05sNF80R09iNGtFNlJVTll5cVJRZnc?oc=5",
-          "publisher": "Daily Express",
-          "kind": "article",
-          "snippet": "Tottenham suffer new £65m transfer blow hours after Liverpool block Cody Gakpo deal Daily Express",
-          "published": "Mon, 31 Aug 2026 20:05:00 GMT"
-        },
-        {
-          "title": "Football transfer rumours: Manchester City and Spurs chase Cody Gakpo?",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaVpaRUVMWnBEeklhU2tfUXc0Y0pVNlkyTmU3Z1VqYnh6QWdfaFVRLW1wOTVkOUsxMjlzZlB6NTkzNlFJMnRsX19QNjBqVjZHdTBiSy1PeXJBRUdSZ3pGNHZ1MDdweEF2Zm1OemZhemM0TFhvT01Yek5mQksyU2xmZC1QMjBLaWt4dklOaFcxamxzRkVQMGdGZXg2MEUzRGJuQzNFQjRtUUNDVmZrdkRFRg?oc=5",
-          "publisher": "The Guardian",
-          "kind": "article",
-          "snippet": "Football transfer rumours: Manchester City and Spurs chase Cody Gakpo? The Guardian",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Richard Hughes takes Cody Gakpo transfer decision amid interest from Spurs and Man City",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcF9ndHRISDRvb3pmMm9qamJJbzFoYlBWM3c0Z0pvclZVemRjWWxvaDRNbUNhVzZURjFJMmR3TUVNOXpwVjNTQjFHZ01TNldYZWFRTEJlSnFxcS1JTGdLbElUR3BHRUhjRDZEdDZFS1BlaEhnUjhTWkZZU3RXRnh6TXp5aUMtelU?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Richard Hughes takes Cody Gakpo transfer decision amid interest from Spurs and Man City Yahoo Sports",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Liverpool’s Cody Gakpo wants to join Manchester City, clubs in talks to reach agreement",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWHp1VHBISnUyZXh4Z3lLVGRSM25oVWpPV2FDVl9zVG5FZE9RWVZodXlRMFZQRzljUG12Y3U1U1g3RGlNcDNRQTFXYzFFdTdyNjBpbDlXTEQyRmx5RUFMQXBZeExfY3daaGNHV3dxbFRfUVFQenZOZ01nS2QzZ0VOeDk3eWJ6SmNOLS1OVXpRVlFvRHphZWVCal9HWXViZndi?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Liverpool’s Cody Gakpo wants to join Manchester City, clubs in talks to reach agreement - The Athletic The New York Times",
-          "published": "Sat, 29 Aug 2026 21:20:50 GMT"
-        },
-        {
-          "title": "Manchester City join Tottenham in transfer race for Liverpool star Cody Gakpo as transfer deadline approaches",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcnZ5c3JKN1dlbHlGT2UwUHBrSGhIZ2gyVndzTTF3cnBTRnpsbWNJYXJXTVdQWkxNby1USzdyOGY1SkZtRGFMM3RrQ19Ub3psRTA0d3JiaUVLdldqTEdHU0ZZOE1DcF9MclJMWjhVYUl4Zm9NdkgzbjhyTzg3QzBIcHlybE8wYWxXSFpRQmVXT0dFZw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Manchester City join Tottenham in transfer race for Liverpool star Cody Gakpo as transfer deadline approaches Yahoo Sports",
-          "published": "Mon, 24 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Manchester City Step Up Pursuit of Cody Gakpo",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaTVLd1ZSSS1MNG14aTUybTFUdFdvc2d4M3RjV0o1SVVxcFYxNFRtRjRtblRqdDBNWDUwV0E3MGh5bmhKSWUwalJVZVp0SUxZQ2MyZzNGZ05TY2NlUjJlbTcwOFpmbFo3SzRVUHlQUTFEWTFRVEhaUm5MUWx1ckRkcFoxNGtvTVRYQ0N4ZHVDbDg5blUxdzJKdDBJSjRINk9MNTN2MG53M1M1YjlWczhRUFUyMzd5M2M2cjVDVg?oc=5",
-          "publisher": "beIN SPORTS",
-          "kind": "article",
-          "snippet": "Manchester City Step Up Pursuit of Cody Gakpo beIN SPORTS",
-          "published": "Sat, 29 Aug 2026 22:26:59 GMT"
-        },
-        {
-          "title": "Liverpool star tells club it must keep Cody Gakpo despite Dutch star wanting Manchester City move",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMGVVT25jRWlaZ1VVcEJmNXpIN2FMbWlURTFaR1NRbTRDQVd3d3hsYTVPVFdsRmxFYmUyQlFGWU01MXJnVW1zMG5yS1hXOXJ5OEpSN0JoaHUxVnV4eklrN085MVYxV2ttSlgxQjFmZnZsM005NERQeGZ0ZnI1bmtJSDQwM0lnQThVWWFLcHh3?oc=5",
-          "publisher": "talkSPORT",
-          "kind": "article",
-          "snippet": "Liverpool star tells club it must keep Cody Gakpo despite Dutch star wanting Manchester City move talkSPORT",
-          "published": "Sun, 30 Aug 2026 15:42:25 GMT"
-        },
-        {
-          "title": "Liverpool receive HUGE Bradley Barcola transfer boost as Cody Gakpo exit looms",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaW5fU05zSy1XR2RGZHRmQmV5bjhkUkJoOUljUURKUXRpT2VLdTJNYm5Cc2J5cVN2NXBXUHd2azBHeklhOExZUWVCSF9FcDN6Um1FZmI4TzRrZHlaOUtwWDVWclBDVHZtNTZ6N2pMSXBSank2VEh3Wktlbzl0TGsyREtrVjgyVHlHY0FQOWJscHVsZHhDVnZSdkxZSVRsanJHdldUMlIxZDlwVzhhRFJCT0RqbUZwUzdaTjg5QndtWFFUYmNWSGpnVlNFcDBhUUV0dlJkeHB2UldXZw?oc=5",
-          "publisher": "LiveScore",
-          "kind": "article",
-          "snippet": "Liverpool receive HUGE Bradley Barcola transfer boost as Cody Gakpo exit looms LiveScore",
-          "published": "Wed, 26 Aug 2026 05:10:35 GMT"
-        },
-        {
-          "title": "Cody Gakpo signs, Man City agreement, 10 leave - Tottenham's dream end to the transfer window",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSlZUUU8tS0dmTjd2eS1XMFVMTW1ZOE1XZTBndjN4bW5UbmZkMVVReXhERjNoTFBiU0FMNTVOeXRUemNuZS1uNEdoWDZmRjhoMDFJQWNDYjNwMEVXYTZDcmJKemlaN1IzbW9qTWN2aklpYk5WbEV4SFFpNC10LW9OSHFrVkZEYmg2WVZGNENrUVhDWVpVN3NIZ1VOQ2hkQdIBowFBVV95cUxNZU1Pd2I1T0dvQ2pzZl92N3hJSEhkRmZjcVBzTUt3WlgyN0g3ZVFoTURENmVudmxGNWRoSlFES0g2STVyTkZPUGloZ1A3YkVnb200WEpDMXFTVWFCU1BqNFdETXJIRkxzcU9rQlFUcE1WNTU0cERQTmwxcHdPLWp6ajZDSnFpLWtJMUNVTmNPWXhJUWxMOE5GX1Zpem5IUFBsQU5r?oc=5",
-          "publisher": "Football London",
-          "kind": "article",
-          "snippet": "Cody Gakpo signs, Man City agreement, 10 leave - Tottenham's dream end to the transfer window Football London",
-          "published": "Fri, 07 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Manchester City want to break the Dutch transfer record for Cody Gakpo",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOZUowYXh1YjdYMzRpdGJ3aFhHTXYtVUUyeTc3eTNjSEo5OUdTR3VwWVFZTk9JbkNkUzR4QVhNellHOGl3d3BLdUtHNTM0cWxmM1o3bzJzZW9ZU1FMTGlPN3lWY2pGZ3NxSnByb3hOS0FSZ3E0UHdmZnE5bW1NaGZXVW5iWkRRX1RGeTFPWm5hazQzZWZkZkMzcE5BRjdGUVFEM1RiX0oxRXJ3LUptdUlTMlVmSkpyN09RMHhUWVVTQQ?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "Manchester City want to break the Dutch transfer record for Cody Gakpo Goal.com",
-          "published": "Sat, 29 Aug 2026 20:49:45 GMT"
-        },
-        {
-          "title": "Cody Gakpo chooses Manchester City over Spurs",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPS0U3YjI1bGRDMkVLazlZbC1GQWFwLVZWendoQy1iVU1Pc00wMnFYNlJjTUZvMVVQOG9veThOZEl4Uk1ESlZ6UnUzWEJaODBKMHFyTzhsMGVJd1pCMnhLVHZha1o2c2ZESUNoTEVvWXlHaFl1RUF1VHNrd0FGRXRMRkswZGVMWFk?oc=5",
-          "publisher": "soccernews.com",
-          "kind": "article",
-          "snippet": "Cody Gakpo chooses Manchester City over Spurs soccernews.com",
-          "published": "Sun, 30 Aug 2026 09:08:52 GMT"
-        },
-        {
-          "title": "Cody Gakpo 'agrees Liverpool exit' and picks between Man City and Tottenham transfer",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNaUhYbHBfTmxMOHZIS3ZOcEM3THVzMW9iVkhCeURzWEtCanpCZFdxY19vcWQtUFVCLW92QjI4ZkgwWEd1dWlrMEVTVEV3ekUzSF9vM2RWLTZTZDQyRUh6eXZWMTFpcFpXa1RSWV93LTJxcnJQb21fellCRWI1ckNaZ09xRUc2dzNUdlc4N0Q1blZoNTM1dTJsSGQ0cmhQQdIBowFBVV95cUxPcHFDamZ3SDdhTDFIalJBV2lwQUhmMjlNYW1oRTlxZXRqSkp1M2FSbWlIcUltelloTjlzQlc4RE5hZ2hsZVJ5MnhocTRCUWxGNDhQSEVWZG1LdFRhRlNIWHl0SnY0b2h6OU52Rm5VMUtGNlhHLWNCazlOZENMSEJUTXp6b1FrNGIyZTVmdUxld3owNWFLemIwSjVnZHpKM0x5Wlpr?oc=5",
-          "publisher": "Daily Express",
-          "kind": "article",
-          "snippet": "Cody Gakpo 'agrees Liverpool exit' and picks between Man City and Tottenham transfer Daily Express",
-          "published": "Sat, 29 Aug 2026 19:24:00 GMT"
-        },
-        {
-          "title": "Cody Gakpo: Tottenham growing in hope of signing £70m-rated star",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOUGswNmZjRUw1dUdOT194ZTlUclRyLTlIMmt4bUR5d0hGX2hsS3lyMGpnZkZzVUphXzBHdUJEWnVTOGJicGVUVUw5d1hteGl4UGlULUM2SzN0TF9VdFppSzJ1NlF4TW1CbDh3WmVfX0dUaWJlOFdKcHptNFptdURIZ2RnaE1MR25pcWFoRDQ5ZmpOcThOZE9rdW5JVVh2Ti1JYTZXYkhGZFJzdER3cUphVF9RaTFhanpjdFZxVEhYRXJxcFM0TkY1VG5Ic1Q5UlQwSFo0YnRBQQ?oc=5",
-          "publisher": "Flashscore.com",
-          "kind": "article",
-          "snippet": "Cody Gakpo: Tottenham growing in hope of signing £70m-rated star Flashscore.com",
-          "published": "Fri, 14 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cody Gakpo: Tottenham interested in signing Liverpool forward as Roberto De Zerbi aims to improve Spurs attack",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQUzlUWjZzOVhKUWFLVFQ2OVRxNWVhQUNmV2NSdExPdGh6Zm5PYXExOHVtNDJVMzA3c24yQkl6Yy1kVFc2b2V6aWJtaDEyVk9KNFo3MXdrcUJyQnZreGh6YktmSzZ3WElLeHNGNGU2RndqNjNsT0tuNmxlUGMzT2UzTWJUYmdpMVpBV3JMeWpFVHhjRkgtZTZwRU5KdTFVRzVWcUU0VXBKWnZCczRfUEpJVUl0UGpNTERnb2Y0SE5ydUdNRGtzN3dHOFg0SUdOQ2pheVFDWm5Qbkx1YUcxWHEyaU8zZmRpLWM0TnJUTGpnVGU2bV94QnU0?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Cody Gakpo: Tottenham interested in signing Liverpool forward as Roberto De Zerbi aims to improve Spurs attack Sky Sports",
-          "published": "Mon, 03 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cody Gakpo transfer news: Man City interested in signing Tottenham target from Liverpool but Reds don't want to sell",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNWGhaeUlPWWYyZWw2N2ZkNFIyTHk2TGVEWWpMTHlXcmw4MlJ0Y05ZZ1VSc2N4Y3B5Y05aOVFyRmNrVzZoZjYwSEI2WE5iMkg4MmJlWjFRMWg4UEJJY1lhamRFMGRkOW0zZ2JHSmlOMUViT3hfV0N2eVpfbHQzV2pQUE5MZzByTnBmYzFDMWN3bjBGTnVJaURCRm1jZW1kVk04WkxHa1FEeGN6T3htXzVwY3FlblJJbFlxZTNKVHJSVHFuNXRGYzhTa0hseHMzWUtZOV9nNk01TDhULVNRbnpacmlUc2FHT2gyam4tR1ZqYkxGOGRM?oc=5",
-          "publisher": "Manx Radio Motorsport",
-          "kind": "article",
-          "snippet": "Cody Gakpo transfer news: Man City interested in signing Tottenham target from Liverpool but Reds don't want to sell Manx Radio Motorsport",
-          "published": "Tue, 25 Aug 2026 00:29:47 GMT"
-        },
-        {
-          "title": "Cody Gakpo: Tottenham growing in hope of signing £70m-rated star",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZGk1V1NyOTNiZk1ETXgxUzFLZGlqOUpzTmp6Um9zUWkweUQyYm5EaUtfUWFlYVAwdHhHdkR5eFhtWDJrNlM1R2x4RjZteHRsQU40TGcwV0FQZ3l2R3FkUDJSLU12RnVHSHBtR3BES0Nmc1B2V2NBS3lhOFhIMjZLTTZ5OGtSNDRmTHliZDNRd3JLVlpmbDRVeDZHYkNKb1FJUlVScVFuLVVhb05JZ3ZBcGd0bkNFRU9maEE4VTNlNHFVUmYzMm5zazZHcGlYdW42QnFjTDc2cG50UQ?oc=5",
-          "publisher": "Flashscore.co.za",
-          "kind": "article",
-          "snippet": "Cody Gakpo: Tottenham growing in hope of signing £70m-rated star Flashscore.co.za",
-          "published": "Fri, 14 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Bradley Barcola Transfer to Liverpool to Unlock Tottenham Move for Cody Gakpo",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOQkdlXzBkSURJbGxiaU5DY3UybWEwUzY0MzVVMnJOYkJnZ1BEZGRBclNJc19aV0VRVkpheTBCLXRHMWg1ZkVhUWVyUF92NXdleU1YQ2RCNEMwQl9XTUc3bXlMMHYtX2R2cldsa2gyazdYWXAzbmtyd0xmMG9QcDBuWTJYZnVNUEhyZWlVMmZrclJfb1o1d2ZEbEZuUk9JNHBmb1RrTm9aQ1ZkM09BWlFZSlZDMUNXazNHV0p2Y1ZzeHNSTTZpUVhXdWRPZDVvT0lhTHlmeEZVYnpEQVk?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Bradley Barcola Transfer to Liverpool to Unlock Tottenham Move for Cody Gakpo roundtable.io",
-          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
         }
       ]
     }
