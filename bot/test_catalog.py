@@ -12,6 +12,7 @@ from catalog import Catalog, bk_value, compact, norm
 def main():
     cat = Catalog()
     assert cat.raw["keep"][0]["name"] == "Josh Allen"
+    assert all("win_pct" not in g for g in (cat.raw.get("week1_matchups") or []))
     assert bk_value(1) == 12000
     assert bk_value(40) == 5333
     assert bk_value(80) == 3469
@@ -306,8 +307,9 @@ def main():
     assert "week1-matchups.html" in week1
     assert "waiver.html" in week1
     assert "Week 1 Waivers" in week1
-    assert "start-sit.html" in week1
-    assert "weekly-check.html" in week1
+    assert "start-sit.html" not in week1
+    assert "weekly-check.html" not in week1
+    assert "sos.html" not in week1
     assert "injuries.html" in week1
     assert "the-fence.html" not in week1
     assert "hot-n-cold.html" in tape
@@ -317,7 +319,7 @@ def main():
     assert "the-fence.html" not in tape
     assert 'href="trade.html"' in tools
     assert "adp.html" in tools
-    assert "sos.html" in tools
+    assert "sos.html" not in tools
     assert "depth-charts.html" in tools
     assert "Player Pages" not in tools
     assert "start-sit.html" not in tools
@@ -333,6 +335,9 @@ def main():
     assert "the-fence.html" not in ros_skill
     assert "the-fence.html" not in ros_st
     assert "Trade Calculators" not in main
+    assert "start-sit.html" not in home
+    assert "weekly-check.html" not in home
+    assert "sos.html" not in home
     nav = home[home.find("<nav>"):home.find("</nav>")]
     assert nav.find("the-keep.html") < nav.find("board.html") < nav.find("the-fence.html")
     assert nav.rfind("the-fence.html") == nav.find("the-fence.html")
@@ -401,30 +406,39 @@ def main():
     assert "<h1>Top Defenses</h1>" in dst_html
     assert "Houston Texans" in dst_html
     assert "class=\"draft-check\"" not in dst_html
+    assert "is 1.01" not in dst_html
     k_html = html_of("kickers.html")
     assert "<h1>Top Kickers</h1>" in k_html
     assert "Brandon Aubrey" in k_html
+    assert "is 1.01" not in k_html
     w1_dst_html = html_of("week1-dst.html")
     assert "<h1>Week 1 DST</h1>" in w1_dst_html
     assert "Jacksonville Jaguars" in w1_dst_html
+    assert "is 1.01" not in w1_dst_html
     w1_k_html = html_of("week1-kickers.html")
     assert "<h1>Week 1 Kickers</h1>" in w1_k_html
     assert "Brandon Aubrey" in w1_k_html or "Cameron Dicker" in w1_k_html
+    assert "is 1.01" not in w1_k_html
     w1_m_html = html_of("week1-matchups.html")
     assert "<h1>Week 1 Matchups</h1>" in w1_m_html
     assert "26 sources" in w1_m_html
     assert "NE at SEA" in w1_m_html or "SEA" in w1_m_html
+    assert "Win%" not in w1_m_html
+    assert "100.0%" not in w1_m_html
+    assert "win percent" not in w1_m_html.lower()
+    assert "win chance" in w1_m_html.lower()
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
     assert "Jahmyr Gibbs" in weekly_html
-    assert "start-sit.html" in weekly_html
+    assert "start-sit.html" not in weekly_html
+    assert "weekly-check.html" not in weekly_html
+    assert "sos.html" not in weekly_html
+    assert weekly_html.count("is 1.01") == 0
     assert "\u2014" not in weekly_html
     qb_html = html_of("weekly-qb.html")
     assert "Lamar Jackson" in qb_html
     assert "Proj" in qb_html
-    sit_html = html_of("start-sit.html")
-    assert "sit-pick" in sit_html
-    assert "Lamar Jackson" in sit_html
+    assert "is 1.01" not in qb_html
     adp_html = html_of("adp.html")
     assert "ESPN ADP" in adp_html
     assert "Jahmyr Gibbs" in adp_html
@@ -433,13 +447,14 @@ def main():
     assert "Mike Washington" in waiver_html
     assert "RotoBaller" in waiver_html
     assert "preseason" in waiver_html.lower() or "before Week 1" in waiver_html or "before kickoff" in waiver_html
-    check_html = html_of("weekly-check.html")
-    assert "Monday and Tuesday" in check_html
-    assert "Injuries" in check_html
+    assert "is 1.01" not in waiver_html
+    assert not (root / "start-sit.html").exists()
+    assert not (root / "weekly-check.html").exists()
+    assert not (root / "sos.html").exists()
     inj_html = html_of("injuries.html")
     assert "<h1>Injuries</h1>" in inj_html
-    sos_html = html_of("sos.html")
-    assert "Strength of Schedule" in sos_html
+    assert "start-sit.html" not in inj_html
+    assert "sos.html" not in inj_html
     depth_html = html_of("depth-charts.html")
     assert "Josh Allen" in depth_html
     gibbs = html_of("players/jahmyr-gibbs.html")
@@ -454,6 +469,7 @@ def main():
     assert "Dynasty Nerds" in fence_html
     assert 'class="idp-row"' in fence_html
     assert "marked in red" in fence_html
+    assert "is 1.01" not in fence_html
     bpl_html = html_of("bpl-schedule.html")
     assert "<h1>BPL Schedule</h1>" in bpl_html
     assert "bpl-weeks" in bpl_html

@@ -126,7 +126,7 @@ _RAW = [
 ]
 
 FARM_SOURCES = [
-    ("MLB Pipeline in-season 100", "https://www.mlb.com/news/top-100-prospects-updated-in-season-rankings-2026", "Midseason refresh after the draft and deadline. Made is 1.01."),
+    ("MLB Pipeline in-season 100", "https://www.mlb.com/news/top-100-prospects-updated-in-season-rankings-2026", "Midseason refresh after the draft and deadline. Made leads the list."),
     ("Baseball America August 100", "https://www.baseballamerica.com/stories/risers-fallers-new-additions-to-august-2026-top-100-prospects-update/", "Final in-season 100, Aug 5. Risers and 2026 draftees."),
     ("ESPN Kiley McDaniel", "https://www.espn.com/mlb/story/_/id/49659961/2026-mlb-prospect-rankings-update-top-100-jesus-made-franklin-arias-kade-anderson", "Long-term FV board. Rookie-eligible names only."),
     ("Sports Illustrated midseason 50", "https://www.si.com/mlb/top-50-prospects-2026-midseason-update", "Ryan Phillips, Aug 21. Top 50 with ETAs."),
