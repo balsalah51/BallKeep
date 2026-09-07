@@ -295,6 +295,51 @@ def test_bpl_slate():
     assert all(g["home_abbr"] in CLUBS and g["away_abbr"] in CLUBS for g in games)
 
 
+def test_weekly_kit():
+    from weekly_kit import (
+        WEEK1_WAIVER_SOURCES,
+        depth_rows,
+        injury_rows,
+        week_num,
+        week1_waiver_board,
+        weekly_board,
+        weekly_flex,
+        waiver_board,
+    )
+    assert week_num() == 1
+    qb = weekly_board("QB")
+    assert qb[0]["name"] == "Lamar Jackson"
+    assert qb[0]["bk"] == 1
+    assert qb[0]["n"] >= 3
+    assert qb[0].get("fpts")
+    rb = weekly_board("RB")
+    assert rb[0]["name"] == "Jahmyr Gibbs"
+    wr = weekly_board("WR")
+    assert wr[0]["name"] == "Puka Nacua"
+    te = weekly_board("TE")
+    assert te[0]["name"] == "Brock Bowers"
+    flex = weekly_flex()
+    assert flex[0]["name"] == "Jahmyr Gibbs"
+    assert flex[0]["n"] >= 2
+    waivers = waiver_board()
+    assert len(waivers) >= 20
+    assert waivers[0]["name"] not in {"Jahmyr Gibbs", "Puka Nacua", "Ja'Marr Chase"}
+    w1w = week1_waiver_board()
+    assert len(WEEK1_WAIVER_SOURCES) >= 5
+    assert 20 <= len(w1w) <= 40
+    assert w1w[0]["name"] == "Mike Washington Jr."
+    assert w1w[0]["bk"] == 1
+    assert w1w[0]["n"] >= 3
+    assert all(r["n"] >= 2 for r in w1w)
+    assert all(r["pos"] not in {"DST", "K"} for r in w1w)
+    inj = injury_rows()
+    assert len(inj) >= 20
+    assert any(r["status"] == "Out" for r in inj)
+    depth = depth_rows()
+    assert len(depth) == 32
+    assert any(t["team"] == "BUF" and "Josh Allen" in t["qb"] for t in depth)
+
+
 def test_week1_boards():
     from week1_boards import (
         MATCH_SOURCES,

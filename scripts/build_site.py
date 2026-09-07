@@ -707,25 +707,31 @@ def superflex_redraft(keep, ppr):
 NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
-    ("the-fence.html", "The Fence (IDP)"),
-    ("news.html", "News"),
-    ("the-x.html", "The X"),
-    ("trade.html", "Trade"),
+    ("board.html", "The Board"),
     ("redraft-superflex.html", "Redraft Superflex"),
     ("the-classic.html", "The Classic"),
     ("redraft-standard.html", "Redraft STD"),
     ("rookies-2026.html", "2026 Rookies"),
-    ("hot-n-cold.html", "Hot 'n' Cold"),
-    ("board.html", "The Board"),
-    ("players/index.html", "Players"),
     ("defenses.html", "The D (DST)"),
     ("kickers.html", "Kickers"),
+    ("weekly.html", "Weekly"),
     ("week1-dst.html", "Week 1 DST"),
     ("week1-kickers.html", "Week 1 K"),
     ("week1-matchups.html", "Week 1 Matchups"),
+    ("waiver.html", "Week 1 Waivers"),
+    ("start-sit.html", "Start/Sit"),
+    ("weekly-check.html", "Weekly Check"),
+    ("injuries.html", "Injuries"),
+    ("adp.html", "ADP"),
+    ("trade.html", "Trade"),
+    ("players/index.html", "Players"),
+    ("news.html", "News"),
+    ("the-x.html", "The X"),
+    ("hot-n-cold.html", "Hot 'n' Cold"),
     ("nfl-schedule.html", "NFL"),
     ("mlb-schedule.html", "MLB"),
     ("bpl-schedule.html", "BPL"),
+    ("the-fence.html", "The Fence (IDP)"),
 ]
 
 PLAYER_PAGES = {}  # key -> slug
@@ -983,6 +989,66 @@ FB_SEO = {
         "Top Kickers is Ball Keep's aggregate kicking board. Mean of six boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks, RotoWire, and Field Yates. Brandon Aubrey is 1.01.",
         "img/logo.jpg",
     ),
+    "weekly.html": (
+        "Week 1 2026 Fantasy Football Rankings | Ball Keep",
+        "Week 1 skill start/sit. Flex plus QB, RB, WR, and TE boards mashed from FantasyPros, RotoWire, and 4for4. Unranked is a skip.",
+        "img/logo.jpg",
+    ),
+    "weekly-qb.html": (
+        "Week 1 2026 QB Rankings | Ball Keep",
+        "Week 1 quarterback start/sit from four weekly boards. Projected PPR points sit next to the rank.",
+        "img/logo.jpg",
+    ),
+    "weekly-rb.html": (
+        "Week 1 2026 RB Rankings | Ball Keep",
+        "Week 1 running back start/sit from four weekly boards. Projected PPR points sit next to the rank.",
+        "img/logo.jpg",
+    ),
+    "weekly-wr.html": (
+        "Week 1 2026 WR Rankings | Ball Keep",
+        "Week 1 receiver start/sit from four weekly boards. Projected PPR points sit next to the rank.",
+        "img/logo.jpg",
+    ),
+    "weekly-te.html": (
+        "Week 1 2026 TE Rankings | Ball Keep",
+        "Week 1 tight end start/sit from four weekly boards. Projected PPR points sit next to the rank.",
+        "img/logo.jpg",
+    ),
+    "weekly-check.html": (
+        "Week 1 2026 Fantasy Football Weekly Check | Ball Keep",
+        "Monday and Tuesday digest: starts, waiver names, injuries, and leftover schedules.",
+        "img/logo.jpg",
+    ),
+    "start-sit.html": (
+        "Week 1 Start Sit Tool | Ball Keep",
+        "Compare two names on the Week 1 mash. Week rank first, then projected points.",
+        "img/logo.jpg",
+    ),
+    "waiver.html": (
+        "Week 1 Fantasy Football Waiver Wire | Ball Keep",
+        "Week 1 consensus waivers before kickoff. Mash of published pickup lists. Unranked is a skip.",
+        "img/logo.jpg",
+    ),
+    "adp.html": (
+        "2026 Fantasy Football ADP vs The Board | Ball Keep",
+        "The Board redraft PPR rank next to ESPN ADP. Plus delta means the room is later than we are.",
+        "img/logo.jpg",
+    ),
+    "injuries.html": (
+        "NFL Injury Report | Ball Keep",
+        "Skill-position injury designations from ESPN club tables, tied to Week 1 boards.",
+        "img/logo.jpg",
+    ),
+    "depth-charts.html": (
+        "2026 NFL Depth Charts | Ball Keep",
+        "Sleeper depth order for all 32 clubs. First name in a cell is the listed starter.",
+        "img/logo.jpg",
+    ),
+    "sos.html": (
+        "2026 Fantasy Football Strength of Schedule | Ball Keep",
+        "Remaining opponents scored against Ball Keep season DST ranks. Higher leftover average is easier.",
+        "img/logo.jpg",
+    ),
     "week1-dst.html": (
         "Week 1 2026 Fantasy Football DST Rankings | Ball Keep",
         "Week 1 team DST start/sit. Mean of 16 weekly boards. Jacksonville is 1.01 against Cleveland.",
@@ -1047,7 +1113,8 @@ FB_SEO = {
 
 HOME_FAQ = [
     ("What is Ball Keep?", "The Keep is Superflex Dynasty - 33 boards, top 400. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
-    ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. Unranked is a skip."),
+    ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 1 boards, Weekly, Start/Sit, and Week 1 Waivers are this week's stream."),
+    ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. Unranked is a skip. IDP names are marked in red."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player. Unranked names are skipped, never treated as 999."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
@@ -1072,6 +1139,7 @@ FENCE_FAQ = [
     ("What is The Fence?", "Ball Keep's mixed Superflex + IDP dynasty list. Top 400 names, skill and IDP on one board. The board IDP startups actually draft from."),
     ("How is the rank built?", "Published core is Dynasty Nerds Glossery mixed 725 (Aug 21, 2026). Then the IDP Show stitch: The Keep skill ranks and the 20-market IDP mean dropped into Glossery startup slots. Unranked on a board is a skip, never 999."),
     ("How is this different from The Keep and Top Defenses?", "The Keep is Superflex skill players only. Top Defenses is team DST. The Fence is the combined board: QB, RB, WR, TE, DL, LB, DB."),
+    ("Why are some names red?", "DL, LB, and DB rows are marked in red so the IDP names stand out while you scroll."),
 ]
 NEWS_FAQ = [
     ("Where does BK News come from?", "Hourly clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with links back to the original boards and to Keep player files."),
@@ -1197,21 +1265,98 @@ FB_ALSO = {
         ("board.html", "The Board", "Skill-player PPR."),
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
+    "weekly.html": [
+        ("weekly-check.html", "Weekly Check", "Monday and Tuesday digest."),
+        ("start-sit.html", "Start/Sit", "Compare two names."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("adp.html", "ADP", "Board vs ESPN."),
+        ("week1-dst.html", "Week 1 DST", "This week's stream."),
+    ],
+    "weekly-qb.html": [
+        ("weekly.html", "Weekly", "Flex plus every position."),
+        ("start-sit.html", "Start/Sit", "Compare two names."),
+        ("weekly-rb.html", "Week 1 RB", "Backs."),
+        ("weekly-check.html", "Weekly Check", "Monday and Tuesday digest."),
+    ],
+    "weekly-rb.html": [
+        ("weekly.html", "Weekly", "Flex plus every position."),
+        ("weekly-wr.html", "Week 1 WR", "Receivers."),
+        ("start-sit.html", "Start/Sit", "Compare two names."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+    ],
+    "weekly-wr.html": [
+        ("weekly.html", "Weekly", "Flex plus every position."),
+        ("weekly-te.html", "Week 1 TE", "Tight ends."),
+        ("start-sit.html", "Start/Sit", "Compare two names."),
+        ("adp.html", "ADP", "Board vs ESPN."),
+    ],
+    "weekly-te.html": [
+        ("weekly.html", "Weekly", "Flex plus every position."),
+        ("weekly-qb.html", "Week 1 QB", "Quarterbacks."),
+        ("start-sit.html", "Start/Sit", "Compare two names."),
+        ("injuries.html", "Injuries", "ESPN designations."),
+    ],
+    "weekly-check.html": [
+        ("weekly.html", "Weekly", "This week's skill boards."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("injuries.html", "Injuries", "ESPN designations."),
+        ("sos.html", "Strength of Schedule", "Leftover opponents."),
+        ("start-sit.html", "Start/Sit", "Compare two names."),
+    ],
+    "start-sit.html": [
+        ("weekly.html", "Weekly", "The ranks behind the call."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("injuries.html", "Injuries", "Check designations first."),
+        ("weekly-check.html", "Weekly Check", "Monday and Tuesday digest."),
+    ],
+    "waiver.html": [
+        ("weekly.html", "Weekly", "Full Week N boards."),
+        ("adp.html", "ADP", "Who is still on the board."),
+        ("injuries.html", "Injuries", "ESPN designations."),
+        ("weekly-check.html", "Weekly Check", "Monday and Tuesday digest."),
+    ],
+    "adp.html": [
+        ("board.html", "The Board", "Season PPR ranks."),
+        ("weekly.html", "Weekly", "This week's skill boards."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("the-classic.html", "The Classic", "Half-PPR draft check."),
+    ],
+    "injuries.html": [
+        ("weekly.html", "Weekly", "Start/sit around the report."),
+        ("depth-charts.html", "Depth Charts", "Who is next up."),
+        ("news.html", "BK News", "Hourly wire."),
+        ("weekly-check.html", "Weekly Check", "Monday and Tuesday digest."),
+    ],
+    "depth-charts.html": [
+        ("injuries.html", "Injuries", "Who is actually up."),
+        ("weekly.html", "Weekly", "This week's skill boards."),
+        ("sos.html", "Strength of Schedule", "Leftover opponents."),
+        ("nfl-schedule.html", "NFL Schedule", "Full slate."),
+    ],
+    "sos.html": [
+        ("weekly.html", "Weekly", "This week's skill boards."),
+        ("nfl-schedule.html", "NFL Schedule", "Full 2026 slate."),
+        ("defenses.html", "Top Defenses", "Season DST board."),
+        ("week1-matchups.html", "Week 1 Matchups", "Win picks."),
+    ],
     "week1-dst.html": [
         ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
         ("week1-matchups.html", "Week 1 Matchups", "Win picks, 26 sources."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
         ("defenses.html", "Top Defenses", "Season-long DST."),
-        ("nfl-schedule.html", "NFL Schedule", "Full slate."),
+        ("weekly.html", "Weekly", "Skill start/sit."),
     ],
     "week1-kickers.html": [
         ("week1-dst.html", "Week 1 DST", "This week's stream."),
         ("week1-matchups.html", "Week 1 Matchups", "Win picks, 26 sources."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("nfl-schedule.html", "NFL Schedule", "Full slate."),
     ],
     "week1-matchups.html": [
         ("week1-dst.html", "Week 1 DST", "Start/sit defenses."),
         ("week1-kickers.html", "Week 1 Kickers", "Start/sit kickers."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
         ("nfl-schedule.html", "NFL Schedule", "Full 2026 slate."),
         ("defenses.html", "Top Defenses", "Season-long DST."),
     ],
@@ -1247,7 +1392,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=43" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=45" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1342,8 +1487,9 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
                 f"</label>"
             )
         dn = rank_search_key(r.get("name"), pos, team)
+        row_cls = ' class="idp-row"' if pos in {"DL", "LB", "DB"} else ""
         body.append(
-            f'<tr data-pos="{esc(pos)}" data-name="{dn}">'
+            f'<tr{row_cls} data-pos="{esc(pos)}" data-name="{dn}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
             f'<td class="c-name">{mark}{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
@@ -1875,6 +2021,7 @@ def ff_related(profiles, p):
 
 
 def render_player_pages(profiles):
+    from weekly_pages import usage_html
     media = {}
     media_path = ROOT / "data" / "player_media.json"
     if media_path.exists():
@@ -1956,6 +2103,7 @@ def render_player_pages(profiles):
     </div>
     {ff_facts(p, college, is_rook)}
     {ff_rank_cards(p)}
+    {usage_html(p["name"])}
     {take_html("The tape", copy.get("grafs") or [], limit=2)}
     {plusminus_html(plus, minus)}
     {rank_spread_graph(p.get("ranks") or {}, fill="#c8102e")}
@@ -2514,7 +2662,7 @@ def main():
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
       <h2>The Keep and The Board</h2>
-      <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR. Everything else on this page supports these.</p>
+      <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR. Both are rest-of-season values. Week 1 start/sit lives further down.</p>
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
@@ -2528,32 +2676,46 @@ def main():
         </a>
       </div>
     </section>
-    {desk_block("lists", "Lists", "The other boards.", "Superflex + IDP, redraft, rookies, the market tape, DST, kickers, and Week 1 streams.", [
-        ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
+    {desk_block("ros-skill", "Rest of season", "Skill boards.", "Rest-of-season redraft and rookies. Not this week's stream.", [
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("the-classic.html", "The Classic", "Half-PPR, this year."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
-        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
-        ("defenses.html", "The D (DST)", "Aggregate team DST."),
-        ("kickers.html", "Top Kickers", "Aggregate K."),
+    ])}
+    {desk_block("ros-st", "Rest of season", "Top DST and Kickers.", "Rest-of-season values. Not this week's stream. Week 1 DST and Kickers sit in the Week 1 block.", [
+        ("defenses.html", "The D (DST)", "Season-long team DST."),
+        ("kickers.html", "Top Kickers", "Season-long K."),
+    ])}
+    {desk_block("week1", "Week 1", "This week's stream.", "Start/sit, matchups, and the preseason waiver mash. Not rest-of-season values.", [
+        ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
         ("week1-dst.html", "Week 1 DST", "This week's stream."),
         ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
-    ])}
-    {desk_block("schedules", "Slates", "The schedules.", "Football, baseball, and the Premier League.", [
         ("week1-matchups.html", "Week 1 Matchups", "Win picks from 26 sources."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("start-sit.html", "Start/Sit", "Compare two names this week."),
+        ("weekly-check.html", "Weekly Check", "Monday and Tuesday digest."),
+        ("injuries.html", "Injuries", "ESPN designations."),
+    ])}
+    {desk_block("tape", "Tape", "The non-ranking lists.", "The wire, the market notes, and the pictures. Not rank boards.", [
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
+        ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
+        ("news.html", "BK News", "Injuries, roster, coaches."),
+        ("the-x.html", "The X", "Memes. Pictures on the card."),
+    ], extra_news)}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, ADP vs The Board, leftover schedules, depth charts.", [
+        ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
+        ("adp.html", "ADP", "The Board vs ESPN."),
+        ("sos.html", "Strength of Schedule", "Leftover opponents."),
+        ("depth-charts.html", "Depth Charts", "32 clubs."),
+    ])}
+    {desk_block("slates", "Slates", "The schedules.", "Football, baseball, and the Premier League.", [
         ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
         ("mlb-schedule.html", "MLB Schedule", "September slate."),
         ("bpl-schedule.html", "BPL Schedule", "2026/27 Premier League."),
     ])}
-    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
-        ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
-        ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
+    {desk_block("fence", "The Fence", "Superflex + IDP.", "Mixed dynasty board. Last on purpose. IDP names are marked in red.", [
+        ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
     ])}
-    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
-        ("the-x.html", "The X", "Memes. Pictures on the card."),
-        ("news.html", "BK News", "Injuries, roster, coaches."),
-    ], extra_news)}
     {faq_html(HOME_FAQ, heading="How Ball Keep works.")}
     """
     write("index.html", page(
@@ -2601,22 +2763,31 @@ def main():
     ))
 
     # REDRAFT
+    from weekly_kit import _info_bank, _norm as weekly_norm
+    week_bank = _info_bank()
     def ppr_extra(r):
+        info = week_bank.get(weekly_norm(r["name"])) or {}
+        fpts = info.get("fpts")
+        adp = info.get("espn_adp")
+        fpts_txt = f"{float(fpts):.1f}" if isinstance(fpts, (int, float)) else ""
+        adp_txt = f"{float(adp):.1f}" if isinstance(adp, (int, float)) else ""
         return (
             f'<td class="desk-only">{r["avg"]}</td>'
             f'<td class="desk-only">{r["n"]}</td>'
             f'<td class="desk-only">{r["yates"]}</td>'
             f'<td class="desk-only">{r["fp"]}</td>'
             f'<td class="desk-only">{r["karabell"]}</td>'
+            f'<td class="c-val val">{fpts_txt}</td>'
+            f'<td class="desk-only">{adp_txt}</td>'
             f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
     board_chips, board_js = pos_filter("board-pos")
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR · {len(PPR_SOURCES)} boards</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Mean of {len(PPR_SOURCES)} boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then twelve more from Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, 4for4, NBC Sports, and Footballguys. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Mean of {len(PPR_SOURCES)} boards: Field Yates, FantasyPros PPR ECR, Eric Karabell Flex, then twelve more from Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, 4for4, NBC Sports, and Footballguys. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. Proj is this week's RotoWire PPR points. ESPN ADP sits next to the rank. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
     {rank_search_bar(board_chips)}
-    <div class="panel">{rank_table(ppr, ["Avg", "Boards", "Yates", "FP ECR", "Karabell", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(ppr, ["Avg", "Boards", "Yates", "FP ECR", "Karabell", "Proj", "ESPN ADP", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Aggregate")}
     {faq_html(BOARD_FAQ, heading="How The Board is built.")}
@@ -2776,7 +2947,7 @@ def main():
     dst_body = f"""
     <p class="kicker">2026 Redraft · DST</p>
     <h1>Top Defenses</h1>
-    <p class="note">The skill boards skip kickers and DST. This is the DST mean of nine boards: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, Pat Fitzmaurice, STACKED (Aug 31), Draft Sharks, CBS (top 10, Aug 30), and Field Yates (Sep 5). Unranked on a board is a skip. Houston is 1.01. Seattle and Denver sit right behind. Sort with Find a player.</p>
+    <p class="note">Rest of season values, not this week's stream. The skill boards skip kickers and DST. This is the DST mean of nine boards: FantasyPros ECR, NBC Sports, Derek Brown, Andrew Erickson, Pat Fitzmaurice, STACKED (Aug 31), Draft Sharks, CBS (top 10, Aug 30), and Field Yates (Sep 5). Unranked on a board is a skip. Houston is 1.01. Seattle and Denver sit right behind. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(dst, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(DST_SOURCES, heading="Boards in This Aggregate")}
@@ -2796,7 +2967,7 @@ def main():
     k_body = f"""
     <p class="kicker">2026 Redraft · K</p>
     <h1>Top Kickers</h1>
-    <p class="note">The kicking board. Mean of six boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks (Aug 31), RotoWire (Aug 27), and Field Yates (Sep 5). Unranked on a board is a skip. Brandon Aubrey is 1.01. Fairbairn and Dicker follow. Trey Smack (GB) is on the list. Sort with Find a player.</p>
+    <p class="note">Rest of season values, not this week's stream. The kicking board. Mean of six boards: FantasyPros ECR, Derek Brown, Pat Fitzmaurice, Draft Sharks (Aug 31), RotoWire (Aug 27), and Field Yates (Sep 5). Unranked on a board is a skip. Brandon Aubrey is 1.01. Fairbairn and Dicker follow. Trey Smack (GB) is on the list. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(kickers, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(K_SOURCES, heading="Boards in This Aggregate")}
@@ -2876,11 +3047,14 @@ def main():
         extra_jsonld=[faq_jsonld(W1_MATCH_FAQ)],
     ))
 
+    from weekly_pages import write_weekly_pages
+    weekly_pack = write_weekly_pages(sys.modules[__name__], nfl, media, ppr)
+
     fence_chips, fence_js = pos_filter("fence-pos", ["QB", "RB", "WR", "TE", "DL", "LB", "DB"])
     fence_body = f"""
     <p class="kicker">Dynasty Superflex + IDP · Super Aggregate · {len(FENCE_MIXED_SOURCES)} boards</p>
     <h1>The Fence</h1>
-    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Published core is Dynasty Nerds Glossery mixed 725. Then the IDP Show stitch: The Keep skill ranks and the 20-market IDP mean dropped into those startup slots. Unranked on a board is a skip. Josh Allen is 1.01. Aidan Hutchinson is the first IDP. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
+    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Published core is Dynasty Nerds Glossery mixed 725. Then the IDP Show stitch: The Keep skill ranks and the 20-market IDP mean dropped into those startup slots. Unranked on a board is a skip. Josh Allen is 1.01. Aidan Hutchinson is the first IDP. IDP names (DL, LB, DB) are marked in red so they stand out while you scroll. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
     {rank_search_bar(fence_chips)}
     <div class="panel">{rank_table(fence, ["Avg", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(fence, 12, "#c8102e", "Fence value graph")}
@@ -3117,6 +3291,18 @@ def main():
         "https://ballkeep.com/bpl-schedule.html",
         "https://ballkeep.com/defenses.html",
         "https://ballkeep.com/kickers.html",
+        "https://ballkeep.com/weekly.html",
+        "https://ballkeep.com/weekly-qb.html",
+        "https://ballkeep.com/weekly-rb.html",
+        "https://ballkeep.com/weekly-wr.html",
+        "https://ballkeep.com/weekly-te.html",
+        "https://ballkeep.com/weekly-check.html",
+        "https://ballkeep.com/start-sit.html",
+        "https://ballkeep.com/waiver.html",
+        "https://ballkeep.com/adp.html",
+        "https://ballkeep.com/injuries.html",
+        "https://ballkeep.com/depth-charts.html",
+        "https://ballkeep.com/sos.html",
         "https://ballkeep.com/week1-dst.html",
         "https://ballkeep.com/week1-kickers.html",
         "https://ballkeep.com/week1-matchups.html",
@@ -3141,10 +3327,13 @@ def main():
     cat = write_discord_catalog(
         keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk,
         sf_redraft, classic, dst, kickers, bpl, fence, w1_dst, w1_kickers, w1_match,
+        weekly_pack,
     )
     print(
         f"Keep {len(keep)} Board {len(board)} (redraft PPR) Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} BPL {len(bpl)} DST {len(dst)} K {len(kickers)} Fence {len(fence)} "
         f"W1 DST {len(w1_dst)} W1 K {len(w1_kickers)} W1 games {len(w1_match)} "
+        f"W{weekly_pack.get('week')} QB {len(weekly_pack.get('qb') or [])} "
+        f"Waiver {len(weekly_pack.get('waiver') or [])} "
         f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
         f"BB News {bb.get('n_news', 0)} BK Keep {bk['n_keep']} Pitch {pl['n_pitch']} "
         f"Premier {pl.get('n_premier', 0)} Catalog {cat.name} NewsSitemap {n_news}"
@@ -3167,7 +3356,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None, dst=None, kickers=None, bpl=None, fence=None, week1_dst=None, week1_kickers=None, week1_match=None):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None, dst=None, kickers=None, bpl=None, fence=None, week1_dst=None, week1_kickers=None, week1_match=None, weekly=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -3234,6 +3423,24 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         "kickers": [slim_row(r, ("n", "avg")) for r in (kickers or [])],
         "week1_dst": [slim_row(r, ("n", "avg")) for r in (week1_dst or [])],
         "week1_kickers": [slim_row(r, ("n", "avg")) for r in (week1_kickers or [])],
+        "weekly_week": (weekly or {}).get("week"),
+        "weekly_qb": [slim_row(r, ("n", "avg", "fpts", "opp")) for r in ((weekly or {}).get("qb") or [])],
+        "weekly_rb": [slim_row(r, ("n", "avg", "fpts", "opp")) for r in ((weekly or {}).get("rb") or [])],
+        "weekly_wr": [slim_row(r, ("n", "avg", "fpts", "opp")) for r in ((weekly or {}).get("wr") or [])],
+        "weekly_te": [slim_row(r, ("n", "avg", "fpts", "opp")) for r in ((weekly or {}).get("te") or [])],
+        "weekly_flex": [slim_row(r, ("n", "avg", "fpts", "opp")) for r in ((weekly or {}).get("flex") or [])],
+        "waiver": [slim_row(r, ("n", "avg", "fpts")) for r in ((weekly or {}).get("waiver") or [])],
+        "adp": [
+            {
+                "name": r.get("name"),
+                "pos": r.get("pos") or "",
+                "team": r.get("team") or "",
+                "board": r.get("board"),
+                "espn_adp": r.get("espn_adp"),
+                "delta": r.get("delta"),
+            }
+            for r in ((weekly or {}).get("adp") or [])[:200]
+        ],
         "week1_matchups": [
             {
                 "key": r.get("key"),

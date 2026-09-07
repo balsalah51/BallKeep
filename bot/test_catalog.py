@@ -242,9 +242,10 @@ def main():
     assert "Ball Keep Football" not in home
     assert "FootKeep" not in home
     assert "BaseBallKeep" not in home
-    assert 'class="desk-block extra"' in home
+    assert 'class="desk-block extra"' not in home
     assert "home-intro" in home
     assert "The Keep is Superflex Dynasty. The Board is Redraft PPR." in home
+    assert "Both are rest-of-season values." in home
     assert "Dynasty · Redraft" in home
     assert "Superflex Dynasty · Superflex Redraft" not in home
     assert "Kids pay a tax" not in home
@@ -266,42 +267,75 @@ def main():
     assert 'href="recent-trades.html"' not in home[home.find("<nav>"):home.find("</nav>")]
     assert "The D (DST)" in home
     assert "The Fence (IDP)" in home
-    lists_at = home.find('class="desk-block lists"')
-    schedules_at = home.find('class="desk-block schedules"')
+    ros_skill_at = home.find('class="desk-block ros-skill"')
+    ros_st_at = home.find('class="desk-block ros-st"')
+    week1_at = home.find('class="desk-block week1"')
+    tape_at = home.find('class="desk-block tape"')
     tools_at = home.find('class="desk-block tools"')
-    extra_at = home.find('class="desk-block extra"')
+    slates_at = home.find('class="desk-block slates"')
+    fence_at = home.find('class="desk-block fence"')
     main_at = home.find("home-intro")
-    assert 0 < main_at < lists_at < schedules_at < tools_at < extra_at
-    main = home[main_at:lists_at]
-    lists = home[lists_at:schedules_at]
-    slates = home[schedules_at:tools_at]
+    assert 0 < main_at < ros_skill_at < ros_st_at < week1_at < tape_at < tools_at < slates_at < fence_at
+    main = home[main_at:ros_skill_at]
+    ros_skill = home[ros_skill_at:ros_st_at]
+    ros_st = home[ros_st_at:week1_at]
+    week1 = home[week1_at:tape_at]
+    tape = home[tape_at:tools_at]
+    tools = home[tools_at:slates_at]
+    slates = home[slates_at:fence_at]
+    fence = home[fence_at:]
     assert "the-keep.html" in main
     assert "board.html" in main
     assert "The Keep and The Board" in main
-    assert "the-keep.html" not in lists
-    assert "board.html" not in lists
-    assert "defenses.html" in lists
-    assert "kickers.html" in lists
-    assert "week1-dst.html" in lists
-    assert "week1-kickers.html" in lists
-    assert "The D (DST)" in lists
-    assert "Top Kickers" in lists
-    assert "week1-matchups.html" not in lists
-    assert "the-fence.html" in lists
-    assert "The Fence (IDP)" in lists
-    fence_i = lists.find("the-fence.html")
-    assert 0 <= fence_i
-    assert "nfl-schedule.html" not in lists
-    assert "mlb-schedule.html" not in lists
+    assert "the-keep.html" not in ros_skill
+    assert "board.html" not in ros_skill
+    assert "redraft-superflex.html" in ros_skill
+    assert "the-classic.html" in ros_skill
+    assert "redraft-standard.html" in ros_skill
+    assert "rookies-2026.html" in ros_skill
+    assert "defenses.html" in ros_st
+    assert "kickers.html" in ros_st
+    assert "The D (DST)" in ros_st
+    assert "Top Kickers" in ros_st
+    assert "Rest-of-season values" in ros_st
+    assert "week1-dst.html" not in ros_st
+    assert "week1-kickers.html" not in ros_st
+    assert "weekly.html" in week1
+    assert "week1-dst.html" in week1
+    assert "week1-kickers.html" in week1
+    assert "week1-matchups.html" in week1
+    assert "waiver.html" in week1
+    assert "Week 1 Waivers" in week1
+    assert "start-sit.html" in week1
+    assert "weekly-check.html" in week1
+    assert "injuries.html" in week1
+    assert "the-fence.html" not in week1
+    assert "hot-n-cold.html" in tape
+    assert "players/index.html" in tape
+    assert "news.html" in tape
+    assert "the-x.html" in tape
+    assert "the-fence.html" not in tape
+    assert 'href="trade.html"' in tools
+    assert "adp.html" in tools
+    assert "sos.html" in tools
+    assert "depth-charts.html" in tools
+    assert "Player Pages" not in tools
+    assert "start-sit.html" not in tools
+    assert "waiver.html" not in tools
     assert "nfl-schedule.html" in slates
     assert "mlb-schedule.html" in slates
     assert "bpl-schedule.html" in slates
-    assert "week1-matchups.html" in slates
-    assert "week1-dst.html" not in slates
-    assert "week1-kickers.html" not in slates
-    assert 'href="trade.html"' in home[tools_at:extra_at]
-    assert "Player Pages" in home[tools_at:extra_at]
-    assert "Trade Calculators" not in home[home.find("home-intro"):lists_at]
+    assert "week1-matchups.html" not in slates
+    assert "weekly-check.html" not in slates
+    assert "the-fence.html" in fence
+    assert "The Fence (IDP)" in fence
+    assert "the-fence.html" not in main
+    assert "the-fence.html" not in ros_skill
+    assert "the-fence.html" not in ros_st
+    assert "Trade Calculators" not in main
+    nav = home[home.find("<nav>"):home.find("</nav>")]
+    assert nav.find("the-keep.html") < nav.find("board.html") < nav.find("the-fence.html")
+    assert nav.rfind("the-fence.html") == nav.find("the-fence.html")
     assert "this desk" not in home
     assert "\u2014" not in home
     assert "On this board" in home
@@ -380,12 +414,46 @@ def main():
     assert "<h1>Week 1 Matchups</h1>" in w1_m_html
     assert "26 sources" in w1_m_html
     assert "NE at SEA" in w1_m_html or "SEA" in w1_m_html
+    weekly_html = html_of("weekly.html")
+    assert "<h1>Weekly</h1>" in weekly_html
+    assert "Jahmyr Gibbs" in weekly_html
+    assert "start-sit.html" in weekly_html
+    assert "\u2014" not in weekly_html
+    qb_html = html_of("weekly-qb.html")
+    assert "Lamar Jackson" in qb_html
+    assert "Proj" in qb_html
+    sit_html = html_of("start-sit.html")
+    assert "sit-pick" in sit_html
+    assert "Lamar Jackson" in sit_html
+    adp_html = html_of("adp.html")
+    assert "ESPN ADP" in adp_html
+    assert "Jahmyr Gibbs" in adp_html
+    waiver_html = html_of("waiver.html")
+    assert "<h1>Week 1 Waivers</h1>" in waiver_html
+    assert "Mike Washington" in waiver_html
+    assert "RotoBaller" in waiver_html
+    assert "preseason" in waiver_html.lower() or "before Week 1" in waiver_html or "before kickoff" in waiver_html
+    check_html = html_of("weekly-check.html")
+    assert "Monday and Tuesday" in check_html
+    assert "Injuries" in check_html
+    inj_html = html_of("injuries.html")
+    assert "<h1>Injuries</h1>" in inj_html
+    sos_html = html_of("sos.html")
+    assert "Strength of Schedule" in sos_html
+    depth_html = html_of("depth-charts.html")
+    assert "Josh Allen" in depth_html
+    gibbs = html_of("players/jahmyr-gibbs.html")
+    assert "2025 usage" in gibbs
+    assert "Targets" in gibbs
+    assert "ESPN ADP" in board_html
     fence_html = html_of("the-fence.html")
     assert "<h1>The Fence</h1>" in fence_html
     assert "Aidan Hutchinson" in fence_html
     assert 'id="fence-pos"' in fence_html
     assert 'data-pos="DL"' in fence_html
     assert "Dynasty Nerds" in fence_html
+    assert 'class="idp-row"' in fence_html
+    assert "marked in red" in fence_html
     bpl_html = html_of("bpl-schedule.html")
     assert "<h1>BPL Schedule</h1>" in bpl_html
     assert "bpl-weeks" in bpl_html
@@ -508,6 +576,10 @@ def main():
         "kickers.html",
         "week1-dst.html",
         "week1-kickers.html",
+        "weekly.html",
+        "weekly-qb.html",
+        "waiver.html",
+        "adp.html",
         "the-fence.html",
         "rookies-2026.html",
         "bk/the-keep.html",
@@ -565,7 +637,10 @@ def main():
     assert 'data-pos="LB"' in fence_page
     assert 'data-pos="DB"' in fence_page
     assert "Josh Allen" in fence_page
+    assert 'class="idp-row"' in fence_page
     assert fence_page.find("rank-search-input") < fence_page.find("fence-pos")
+    css = Path("css/site.css").read_text()
+    assert "tr.idp-row" in css
 
 
 if __name__ == "__main__":
