@@ -622,12 +622,17 @@ def week1_matchups():
             "pick": winner,
             "n": n,
             "win_n": win_n,
-            "win_pct": round(100.0 * win_n / n, 1),
             "away_n": counts.get(away, 0),
             "home_n": counts.get(home, 0),
             "picks": picks,
         })
-    rows.sort(key=lambda r: (-r["win_pct"], -r["n"], r["day"], r["key"]))
+    day_ord = {"Wed": 0, "Thu": 1, "Fri": 2, "Sat": 3, "Sun": 4, "Mon": 5}
+    rows.sort(key=lambda r: (
+        day_ord.get((r["day"] or "").split()[0], 9),
+        -r["win_n"],
+        -r["n"],
+        r["key"],
+    ))
     for i, r in enumerate(rows, 1):
         r["bk"] = i
     return rows

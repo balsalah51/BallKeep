@@ -153,7 +153,7 @@ BK_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Dynasty Basketball Rankings (Top 400) | BasketKeep",
-        "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama is the 1.01. BK Value starts at 12,000.",
+        "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board. BK Value starts at 12,000.",
         "img/bk-logo.jpg",
     ),
     "board.html": (
@@ -288,7 +288,7 @@ BK_HOME_FAQ = [
     ("Where is the NBA news?", "BK News on this board clusters injury, roster, and coach tape hourly, with links back to Keep player files."),
 ]
 BK_KEEP_FAQ = [
-    ("What is The Keep on BasketKeep?", "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama is the 1.01 on this board."),
+    ("What is The Keep on BasketKeep?", "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board."),
     ("How does BK Value work here?", "Keep rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%. The Keep calculator uses this board."),
     ("What is The Board?", "This-year basketball redraft. Use it for 2026-27 startups. The Keep is dynasty."),
 ]
@@ -1003,7 +1003,7 @@ def write_basket_site():
     b_body = f"""
     <p class="kicker">Centers only</p>
     <h1>Bigs</h1>
-    <p class="note">The fives. Wemby is the 1.01. Jokic is the this-year argument.</p>
+    <p class="note">The fives. Wemby opens the centers. Jokic is the this-year argument.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(bigs, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
     """

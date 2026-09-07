@@ -133,7 +133,7 @@ PL_SEO = {
     ),
     "the-premier.html": (
         "The Premier - Hybrid Premier League Rankings (Top 400) | PitchKeep",
-        "PitchKeep flagship 400: 25 published 2026/27 pro lists. Haaland is 1.01. Palmer, Saka, and Isak climb off last-year volume. Full names and ages on the row.",
+        "PitchKeep flagship 400: 25 published 2026/27 pro lists. Haaland leads the board. Palmer, Saka, and Isak climb off last-year volume. Full names and ages on the row.",
         "img/pl-logo.jpg",
     ),
     "the-pitch.html": (
