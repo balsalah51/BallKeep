@@ -284,6 +284,8 @@ def main():
     assert "kickers.html" in lists
     assert "week1-dst.html" in lists
     assert "week1-kickers.html" in lists
+    assert "weekly.html" in lists
+    assert "weekly-check.html" not in lists
     assert "The D (DST)" in lists
     assert "Top Kickers" in lists
     assert "week1-matchups.html" not in lists
@@ -297,10 +299,15 @@ def main():
     assert "mlb-schedule.html" in slates
     assert "bpl-schedule.html" in slates
     assert "week1-matchups.html" in slates
+    assert "weekly-check.html" in slates
     assert "week1-dst.html" not in slates
     assert "week1-kickers.html" not in slates
+    assert "weekly.html" not in slates
     assert 'href="trade.html"' in home[tools_at:extra_at]
     assert "Player Pages" in home[tools_at:extra_at]
+    assert "start-sit.html" in home[tools_at:extra_at]
+    assert "waiver.html" in home[tools_at:extra_at]
+    assert "adp.html" in home[tools_at:extra_at]
     assert "Trade Calculators" not in home[home.find("home-intro"):lists_at]
     assert "this desk" not in home
     assert "\u2014" not in home
@@ -380,6 +387,35 @@ def main():
     assert "<h1>Week 1 Matchups</h1>" in w1_m_html
     assert "26 sources" in w1_m_html
     assert "NE at SEA" in w1_m_html or "SEA" in w1_m_html
+    weekly_html = html_of("weekly.html")
+    assert "<h1>Weekly</h1>" in weekly_html
+    assert "Jahmyr Gibbs" in weekly_html
+    assert "start-sit.html" in weekly_html
+    assert "\u2014" not in weekly_html
+    qb_html = html_of("weekly-qb.html")
+    assert "Lamar Jackson" in qb_html
+    assert "Proj" in qb_html
+    sit_html = html_of("start-sit.html")
+    assert "sit-pick" in sit_html
+    assert "Lamar Jackson" in sit_html
+    adp_html = html_of("adp.html")
+    assert "ESPN ADP" in adp_html
+    assert "Jahmyr Gibbs" in adp_html
+    waiver_html = html_of("waiver.html")
+    assert "<h1>Waiver</h1>" in waiver_html
+    check_html = html_of("weekly-check.html")
+    assert "Monday and Tuesday" in check_html
+    assert "Injuries" in check_html
+    inj_html = html_of("injuries.html")
+    assert "<h1>Injuries</h1>" in inj_html
+    sos_html = html_of("sos.html")
+    assert "Strength of Schedule" in sos_html
+    depth_html = html_of("depth-charts.html")
+    assert "Josh Allen" in depth_html
+    gibbs = html_of("players/jahmyr-gibbs.html")
+    assert "2025 usage" in gibbs
+    assert "Targets" in gibbs
+    assert "ESPN ADP" in board_html
     fence_html = html_of("the-fence.html")
     assert "<h1>The Fence</h1>" in fence_html
     assert "Aidan Hutchinson" in fence_html
@@ -508,6 +544,10 @@ def main():
         "kickers.html",
         "week1-dst.html",
         "week1-kickers.html",
+        "weekly.html",
+        "weekly-qb.html",
+        "waiver.html",
+        "adp.html",
         "the-fence.html",
         "rookies-2026.html",
         "bk/the-keep.html",
