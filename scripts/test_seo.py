@@ -297,9 +297,11 @@ def test_bpl_slate():
 
 def test_weekly_kit():
     from weekly_kit import (
+        WEEK1_WAIVER_SOURCES,
         depth_rows,
         injury_rows,
         week_num,
+        week1_waiver_board,
         weekly_board,
         weekly_flex,
         waiver_board,
@@ -322,6 +324,14 @@ def test_weekly_kit():
     waivers = waiver_board()
     assert len(waivers) >= 20
     assert waivers[0]["name"] not in {"Jahmyr Gibbs", "Puka Nacua", "Ja'Marr Chase"}
+    w1w = week1_waiver_board()
+    assert len(WEEK1_WAIVER_SOURCES) >= 5
+    assert 20 <= len(w1w) <= 40
+    assert w1w[0]["name"] == "Mike Washington Jr."
+    assert w1w[0]["bk"] == 1
+    assert w1w[0]["n"] >= 3
+    assert all(r["n"] >= 2 for r in w1w)
+    assert all(r["pos"] not in {"DST", "K"} for r in w1w)
     inj = injury_rows()
     assert len(inj) >= 20
     assert any(r["status"] == "Out" for r in inj)

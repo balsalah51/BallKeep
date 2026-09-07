@@ -291,6 +291,70 @@ WAIVER_SOURCES = [
 ]
 
 
+def _week1_waiver_payload() -> dict:
+    path = WEEKLY / "week1_waiver_sources.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text())
+
+
+def week1_waiver_maps() -> dict:
+    """Published pre-Week 1 waiver ranks. Kickers and DST stay off."""
+    skip = {"DST", "K", "DEF", "D/ST"}
+    maps = {}
+    for src in (_week1_waiver_payload().get("sources") or []):
+        mp = {}
+        for row in src.get("players") or []:
+            pos = (row.get("pos") or "").upper()
+            if pos in skip:
+                continue
+            name = row.get("name") or ""
+            rk = int(row.get("rank") or 0)
+            if name and rk:
+                mp[_norm(name)] = rk
+        if mp:
+            maps[src["name"]] = mp
+    return maps
+
+
+def week1_waiver_board(cap: int = 60) -> list:
+    """Pre-Week 1 consensus adds from published waiver lists."""
+    payload = _week1_waiver_payload()
+    maps = week1_waiver_maps()
+    bank = dict(_info_bank())
+    for src in (payload.get("sources") or []):
+        for row in src.get("players") or []:
+            name = row.get("name") or ""
+            if not name:
+                continue
+            k = _norm(name)
+            cur = dict(bank.get(k) or {"name": name, "key": k})
+            if not cur.get("name"):
+                cur["name"] = name
+            if row.get("pos") and not cur.get("pos"):
+                cur["pos"] = row["pos"]
+            if row.get("team") and not cur.get("team"):
+                cur["team"] = row["team"]
+            if name and len(name) > len(cur.get("name") or ""):
+                cur["name"] = name
+            bank[k] = cur
+    rows = [r for r in _mash(maps, bank) if r["n"] >= 2]
+    out = []
+    for i, r in enumerate(rows[:cap], 1):
+        out.append({**r, "bk": i, "value": bk_value(i)})
+    return out
+
+
+def week1_waiver_sources() -> list:
+    out = []
+    for src in (_week1_waiver_payload().get("sources") or []):
+        out.append((src["name"], src.get("url") or "", src.get("note") or ""))
+    return out
+
+
+WEEK1_WAIVER_SOURCES = week1_waiver_sources()
+
+
 def injury_rows() -> list:
     bank = _info_bank()
     skill = {"QB", "RB", "WR", "TE", "K", "FB"}
@@ -441,7 +505,7 @@ def weekly_check_bits(nfl_games: list) -> dict:
     rb = weekly_board("RB")
     wr = weekly_board("WR")
     te = weekly_board("TE")
-    waivers = waiver_board()
+    waivers = week1_waiver_board()
     inj = [r for r in injury_rows() if r["status"] in {"Out", "Doubtful", "Questionable"}][:12]
     sos = sos_rows(nfl_games, week)
     return {

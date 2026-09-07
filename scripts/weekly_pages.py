@@ -14,7 +14,7 @@ from weekly_kit import (
     DEPTH_SOURCES,
     INJURY_SOURCES,
     SOS_SOURCES,
-    WAIVER_SOURCES,
+    WEEK1_WAIVER_SOURCES,
     WEEKLY_FLEX_SOURCES,
     adp_rows,
     depth_rows,
@@ -24,11 +24,11 @@ from weekly_kit import (
     start_sit_players,
     usage_for,
     week_num,
+    week1_waiver_board,
     weekly_board,
     weekly_check_bits,
     weekly_flex,
     weekly_sources,
-    waiver_board,
 )
 
 
@@ -88,7 +88,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     flex = weekly_flex()
     boards = {pos: weekly_board(pos) for pos in ("QB", "RB", "WR", "TE")}
     adp = adp_rows(board_rows)
-    waivers = waiver_board()
+    waivers = week1_waiver_board()
     injuries = injury_rows()
     depth = depth_rows()
     sos = sos_rows(nfl, week)
@@ -143,6 +143,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
       <a class="tile" href="weekly-wr.html"><h3>Week {week} WR</h3><p>{(boards['WR'] or [{'name':''}])[0]['name']} is 1.01.</p></a>
       <a class="tile" href="weekly-te.html"><h3>Week {week} TE</h3><p>{(boards['TE'] or [{'name':''}])[0]['name']} is 1.01.</p></a>
       <a class="tile" href="start-sit.html"><h3>Start/Sit</h3><p>Compare two names on this week's mash.</p></a>
+      <a class="tile" href="waiver.html"><h3>Week 1 Waivers</h3><p>Preseason consensus adds.</p></a>
       <a class="tile" href="weekly-check.html"><h3>Weekly Check</h3><p>Monday and Tuesday digest.</p></a>
     </div>
     {rank_search_bar(chips)}
@@ -188,22 +189,24 @@ def write_weekly_pages(b, nfl, media, board_rows):
     """
     write("adp.html", board_page("ADP", "adp.html", adp_body, adp_js, extra_jsonld=[faq_jsonld(adp_faq)]))
 
-    # --- waiver ---
+    # --- Week 1 consensus waivers ---
     w_chips, w_js = pos_filter("waiver-pos")
     w_faq = [
-        ("Who makes this list?", "Week N ranks, minus names already rostered in most rooms (70% owned or ADP inside the top 50)."),
-        ("Is this FAAB advice?", "No dollar bids. It is the weekly mash of names that are still likely sitting out there."),
+        ("What is this list?", "A pre-Week 1 consensus of published waiver articles. Season has not started. A name needs two lists. Unranked on a board is a skip."),
+        ("Is this FAAB advice?", "No dollar bids. It is the mash of names the public waiver desks actually ranked."),
+        ("Why is a drafted star missing?", "If a desk did not put him on their waiver list, that desk is a skip for him."),
     ]
+    w_lead = waivers[0]["name"] if waivers else ""
     w_body = f"""
-    <p class="kicker">{label} · adds</p>
-    <h1>Waiver</h1>
-    <p class="note">Football waiver and stash list. Same Week {week} boards, cut down to names that are not roster locks. Unranked on a board is a skip.</p>
+    <p class="kicker">{label} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
+    <h1>Week 1 Waivers</h1>
+    <p class="note">Preseason waiver mash, before Week 1 kickoff. Mean of {len(WEEK1_WAIVER_SOURCES)} published pickup lists. A name needs two lists. Unranked on a board is a skip. {w_lead} is 1.01. Kickers and team DST stay on their own Week 1 boards.</p>
     {rank_search_bar(w_chips)}
     <div class="panel">{weekly_table(waivers)}</div>
-    {sources_panel(WAIVER_SOURCES, heading="How the waiver cut is made")}
-    {faq_html(w_faq, heading="How the waiver list is built.")}
+    {sources_panel(WEEK1_WAIVER_SOURCES, heading="Lists in This Aggregate")}
+    {faq_html(w_faq, heading="How Week 1 Waivers is built.")}
     """
-    write("waiver.html", board_page("Waiver", "waiver.html", w_body, w_js, extra_jsonld=[faq_jsonld(w_faq)]))
+    write("waiver.html", board_page("Week 1 Waivers", "waiver.html", w_body, w_js, extra_jsonld=[faq_jsonld(w_faq)]))
 
     # --- injuries ---
     def inj_extra(r):
@@ -361,7 +364,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     <div class="grid-3">
       <a class="tile" href="weekly.html"><h3>Weekly boards</h3><p>QB, RB, WR, TE, flex.</p></a>
       <a class="tile" href="start-sit.html"><h3>Start/Sit</h3><p>Compare two names.</p></a>
-      <a class="tile" href="waiver.html"><h3>Waiver</h3><p>Adds that are not locks.</p></a>
+      <a class="tile" href="waiver.html"><h3>Week 1 Waivers</h3><p>Preseason consensus adds.</p></a>
       <a class="tile" href="injuries.html"><h3>Injuries</h3><p>ESPN designations.</p></a>
       <a class="tile" href="adp.html"><h3>ADP</h3><p>Board vs ESPN.</p></a>
       <a class="tile" href="sos.html"><h3>Strength of Schedule</h3><p>Leftover opponents.</p></a>
