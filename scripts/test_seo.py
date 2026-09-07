@@ -368,7 +368,7 @@ def test_week1_boards():
     assert all(g["pick"] in {g["away"], g["home"]} for g in games)
     assert all(g["n"] >= 10 for g in games)
     assert "win_pct" not in games[0]
-    assert games[0]["day"] in {"Wed", "Thu", "Fri"}
+    assert games[0]["day"].startswith("Wed")
     assert games[0]["key"] == "NE@SEA"
 
 
