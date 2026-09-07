@@ -2625,7 +2625,7 @@ def main():
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
       <h2>The Keep and The Board</h2>
-      <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR. Both are rest-of-season values. Week 1 start/sit lives further down.</p>
+      <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR. Both are rest-of-season values. Week 1 boards live further down.</p>
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
@@ -2649,7 +2649,7 @@ def main():
         ("defenses.html", "The D (DST)", "Season-long team DST."),
         ("kickers.html", "Top Kickers", "Season-long K."),
     ])}
-    {desk_block("week1", "Week 1", "This week's stream.", "Start/sit, matchups, and the preseason waiver mash. Not rest-of-season values.", [
+    {desk_block("week1", "Week 1", "This week's stream.", "Weekly boards, matchups, and the preseason waiver mash. Not rest-of-season values.", [
         ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
         ("week1-dst.html", "Week 1 DST", "This week's stream."),
         ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
