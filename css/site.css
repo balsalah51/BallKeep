@@ -55,12 +55,12 @@ nav a:hover, nav a[aria-current="page"] { color: var(--red); }
 .nav-group.nav-leads { background: #fff5f6; border-color: #f0c4cb; }
 .nav-group.nav-leads .nav-lab, .nav-group.nav-leads a { color: #c8102e; }
 .nav-group.nav-leads a:hover, .nav-group.nav-leads a[aria-current="page"] { color: #8e0b20; }
-.nav-group.nav-ros { background: #eef3f7; border-color: #c5d2de; }
-.nav-group.nav-ros .nav-lab, .nav-group.nav-ros a { color: #3d5268; }
+.nav-group.nav-ros { background: #e3edf5; border-color: #b4c7d8; }
+.nav-group.nav-ros .nav-lab, .nav-group.nav-ros a { color: #2c4a63; }
 .nav-group.nav-ros a:hover, .nav-group.nav-ros a[aria-current="page"] { color: #102033; }
-.nav-group.nav-st { background: #f3eef4; border-color: #d4c5de; }
-.nav-group.nav-st .nav-lab, .nav-group.nav-st a { color: #5a3d68; }
-.nav-group.nav-st a:hover, .nav-group.nav-st a[aria-current="page"] { color: #3a2048; }
+.nav-group.nav-st { background: #efe3f5; border-color: #c9a8d8; }
+.nav-group.nav-st .nav-lab, .nav-group.nav-st a { color: #6b2d86; }
+.nav-group.nav-st a:hover, .nav-group.nav-st a[aria-current="page"] { color: #4a1c62; }
 .nav-group.nav-week { background: #e4f1f8; border-color: #b5d4e4; }
 .nav-group.nav-week .nav-lab, .nav-group.nav-week a { color: #17688a; }
 .nav-group.nav-week a:hover, .nav-group.nav-week a[aria-current="page"] { color: #0d4a64; }
