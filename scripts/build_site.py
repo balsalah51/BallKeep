@@ -3513,5 +3513,25 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
     return dest
 
 
+def render_news_only():
+    """Hourly wire: story HTML and feeds only. Do not rewrite ranking or player pages."""
+    from build_bb import render_bb_news_pages
+    from build_bk import render_bk_news_pages
+    from build_pl import render_pl_news_pages
+
+    fb = render_news_pages()
+    bb = render_bb_news_pages(load_news_stories("baseball"))
+    bk = render_bk_news_pages(load_news_stories("basketball"))
+    pl = render_pl_news_pages(load_news_stories("soccer"))
+    n_map = write_discovery_feeds()
+    print(
+        f"News-only Football {max(0, len(fb) - 1)} BB {max(0, len(bb) - 1)} "
+        f"BK {max(0, len(bk) - 1)} PL {max(0, len(pl) - 1)} NewsSitemap {n_map}"
+    )
+
+
 if __name__ == "__main__":
-    main()
+    if "--news-only" in sys.argv:
+        render_news_only()
+    else:
+        main()

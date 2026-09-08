@@ -1,5 +1,10 @@
 name: BK News hourly
 
+# Story HTML rotates every hour. Rebuild news hubs and feeds only, then
+# commit those paths — never git add -A. A full site rebuild was rewriting
+# ranking pages and leftover story files, which produced modify/delete
+# conflicts on every open PR.
+
 on:
   schedule:
     # 12 minutes past every hour — cheap RSS + a rotating player slice.
@@ -44,17 +49,36 @@ jobs:
       - name: Pull The X tape
         run: python3 scripts/x_tape.py --sport all
 
-      - name: Rebuild site
-        run: python3 scripts/build_site.py
+      - name: Rebuild news pages only
+        run: python3 scripts/build_site.py --news-only
 
       - name: Catalog smoke test
         run: python3 bot/test_catalog.py
 
-      - name: Commit and push if the wire moved
+      - name: Commit news files only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
+          # Never git add -A. Ranking boards and player files stay off this
+          # hourly commit so open PRs do not inherit modify/delete conflicts
+          # when stories rotate.
+          git add \
+            data/news \
+            data/x-tape \
+            img/x-tape \
+            news.html \
+            news \
+            bb/news.html \
+            bb/news \
+            bk/news.html \
+            bk/news \
+            pl/news.html \
+            pl/news \
+            feed.xml \
+            bb/feed.xml \
+            bk/feed.xml \
+            pl/feed.xml \
+            sitemap-news.xml
           if git diff --cached --quiet; then
             echo "No news changes"
             exit 0
