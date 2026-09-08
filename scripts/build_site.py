@@ -58,7 +58,8 @@ from seo import (  # noqa: E402
     face_alt,
     faq_html,
     faq_jsonld,
-    footer_nav,
+    flatten_nav_groups,
+    grouped_nav,
     head_tags,
     legal_links,
     news_sitemap_xml,
@@ -704,33 +705,51 @@ def superflex_redraft(keep, ppr):
     return rows
 
 
-NAV = [
-    ("index.html", "Home"),
-    ("the-keep.html", "The Keep"),
-    ("board.html", "The Board"),
-    ("redraft-superflex.html", "Redraft Superflex"),
-    ("the-classic.html", "The Classic"),
-    ("redraft-standard.html", "Redraft STD"),
-    ("rookies-2026.html", "2026 Rookies"),
-    ("defenses.html", "The D (DST)"),
-    ("kickers.html", "Kickers"),
-    ("weekly.html", "Weekly"),
-    ("week1-dst.html", "Week 1 DST"),
-    ("week1-kickers.html", "Week 1 K"),
-    ("week1-matchups.html", "Week 1 Matchups"),
-    ("waiver.html", "Week 1 Waivers"),
-    ("injuries.html", "Injuries"),
-    ("adp.html", "ADP"),
-    ("trade.html", "Trade"),
-    ("players/index.html", "Players"),
-    ("news.html", "News"),
-    ("the-x.html", "The X"),
-    ("hot-n-cold.html", "Hot 'n' Cold"),
-    ("nfl-schedule.html", "NFL"),
-    ("mlb-schedule.html", "MLB"),
-    ("bpl-schedule.html", "BPL"),
-    ("the-fence.html", "The Fence (IDP)"),
+NAV_GROUPS = [
+    ("leads", "Boards", [
+        ("index.html", "Home"),
+        ("the-keep.html", "The Keep"),
+        ("board.html", "The Board"),
+    ]),
+    ("ros", "ROS", [
+        ("redraft-superflex.html", "Redraft Superflex"),
+        ("the-classic.html", "The Classic"),
+        ("redraft-standard.html", "Redraft STD"),
+        ("rookies-2026.html", "2026 Rookies"),
+    ]),
+    ("st", "ST", [
+        ("defenses.html", "The D (DST)"),
+        ("kickers.html", "Kickers"),
+    ]),
+    ("week", "Week 1", [
+        ("weekly.html", "Weekly"),
+        ("week1-dst.html", "Week 1 DST"),
+        ("week1-kickers.html", "Week 1 K"),
+        ("week1-matchups.html", "Week 1 Matchups"),
+        ("waiver.html", "Week 1 Waivers"),
+        ("injuries.html", "Injuries"),
+    ]),
+    ("tools", "Tools", [
+        ("adp.html", "ADP"),
+        ("trade.html", "Trade"),
+    ]),
+    ("tape", "Tape", [
+        ("players/index.html", "Players"),
+        ("news.html", "News"),
+        ("the-x.html", "The X"),
+        ("hot-n-cold.html", "Hot 'n' Cold"),
+    ]),
+    ("slates", "Slates", [
+        ("nfl-schedule.html", "NFL"),
+        ("mlb-schedule.html", "MLB"),
+        ("bpl-schedule.html", "BPL"),
+    ]),
+    ("fence", "Fence", [
+        ("the-fence.html", "The Fence (IDP)"),
+    ]),
 ]
+NAV = flatten_nav_groups(NAV_GROUPS)
+CSS_VER = 46
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -751,6 +770,35 @@ def nav_href(target: str, depth: int) -> str:
     if target.startswith("news/"):
         return target[len("news/") :]
     return "../" + target
+
+
+def fb_is_current(href: str, path: str) -> bool:
+    news_here = path == "news.html" or path.startswith("news/")
+    return href == path or (href == "news.html" and news_here) or (
+        href == "board.html" and path == "redraft-ppr.html"
+    )
+
+
+def fb_header_nav(path: str, depth: int) -> str:
+    return grouped_nav(
+        NAV_GROUPS,
+        lambda href: nav_href(href, depth),
+        lambda href: fb_is_current(href, path),
+        nav_class="site-nav",
+        aria_label="Ball Keep",
+    )
+
+
+def fb_footer_nav(path: str, depth: int) -> str:
+    return grouped_nav(
+        NAV_GROUPS,
+        lambda href: nav_href(href, depth),
+        lambda href: fb_is_current(href, path),
+        skip_home=True,
+        skip_current=True,
+        nav_class="footer-nav site-nav",
+        aria_label="On this board",
+    )
 
 
 def asset(path: str, depth: int) -> str:
@@ -1336,19 +1384,11 @@ FB_ALSO = {
 def page(title, path, body, extra_js="", depth=0, description=None, image=None, doc_title=None,
          crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
          robots=None):
-    links = []
-    news_here = path == "news.html" or path.startswith("news/")
-    for href, label in NAV:
-        on = href == path or (href == "news.html" and news_here) or (
-            href == "board.html" and path == "redraft-ppr.html"
-        )
-        cur = ' aria-current="page"' if on else ""
-        links.append(f'<a href="{nav_href(href, depth)}"{cur}>{esc(label)}</a>')
     packed = FB_SEO.get(path)
     full_title = doc_title or (packed[0] if packed else f"{title} | Ball Keep")
     desc = description or (packed[1] if packed else f"{title} on Ball Keep. Superflex dynasty rankings, BK Value trade calculator, and BK News. Updated {UPDATED}.")
     img = image or (packed[2] if packed else "img/logo.jpg")
-    foot = footer_nav([(nav_href(h, depth), lab) for h, lab in NAV], nav_href(path, depth))
+    foot = fb_footer_nav(path, depth)
     crumb_html = crumbs or ""
     return f"""<!doctype html>
 <html lang="en">
@@ -1356,7 +1396,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=45" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v={CSS_VER}" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
@@ -1369,7 +1409,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
           <p>Dynasty · Redraft</p>
         </div>
       </a>
-      <nav>{''.join(links)}</nav>
+      {fb_header_nav(path, depth)}
     </header>
     {sports_top("fb", depth)}
     {crumb_html}
@@ -3513,5 +3553,41 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
     return dest
 
 
+def rewrite_football_navs() -> int:
+    """Patch header/footer nav on existing football HTML without a full rebuild."""
+    skip_roots = {"bb", "bk", "pl"}
+    header_re = re.compile(
+        r'(<header class="site">[\s\S]*?</a>\s*)<nav(?: class="site-nav")?[^>]*>[\s\S]*?</nav>',
+        re.S,
+    )
+    footer_re = re.compile(r'<nav class="footer-nav"[^>]*>[\s\S]*?</nav>', re.S)
+    css_re = re.compile(r"css/site\.css\?v=\d+")
+    n = 0
+    for path in sorted(ROOT.rglob("*.html")):
+        rel = path.relative_to(ROOT)
+        if rel.parts and rel.parts[0] in skip_roots:
+            continue
+        site_path = rel.as_posix()
+        depth = 0 if "/" not in site_path else 1
+        raw = path.read_text()
+        if '<header class="site">' not in raw:
+            continue
+        updated, h_n = header_re.subn(
+            lambda m, p=site_path, d=depth: m.group(1) + fb_header_nav(p, d),
+            raw,
+            count=1,
+        )
+        updated, f_n = footer_re.subn(fb_footer_nav(site_path, depth), updated, count=1)
+        updated, c_n = css_re.subn(f"css/site.css?v={CSS_VER}", updated, count=1)
+        if h_n or f_n or c_n:
+            path.write_text(strip_em(updated))
+            n += 1
+    print(f"rewrote nav on {n} football pages")
+    return n
+
+
 if __name__ == "__main__":
-    main()
+    if "--nav-only" in sys.argv:
+        rewrite_football_navs()
+    else:
+        main()

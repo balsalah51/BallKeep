@@ -565,6 +565,63 @@ def also_on_desk(
     )
 
 
+def flatten_nav_groups(groups: list) -> list:
+    """groups: [(key, label, [(href, text), ...]), ...] -> flat [(href, text), ...]"""
+    out = []
+    for _key, _lab, items in groups or []:
+        for href, text in items or []:
+            if href and text:
+                out.append((href, text))
+    return out
+
+
+def grouped_nav(
+    groups: list,
+    href_fn,
+    is_current,
+    *,
+    skip_home: bool = False,
+    skip_current: bool = False,
+    nav_class: str = "site-nav",
+    aria_label: str = "Site",
+) -> str:
+    """Render header/footer nav as color-coded category groups.
+
+    groups: [(key, label, [(href, text), ...]), ...]
+    href_fn(href) -> resolved href
+    is_current(href) -> bool
+    """
+    blocks = []
+    for key, lab, items in groups or []:
+        links = []
+        here = False
+        for href, text in items or []:
+            if not href or not text:
+                continue
+            if skip_home and text == "Home":
+                continue
+            resolved = href_fn(href)
+            on = bool(is_current(href))
+            if skip_current and on:
+                continue
+            if on:
+                here = True
+            cur = ' aria-current="page"' if on else ""
+            links.append(f'<a href="{esc(resolved)}"{cur}>{esc(text)}</a>')
+        if not links:
+            continue
+        cls = f"nav-group nav-{esc(key)}"
+        if here:
+            cls += " is-here"
+        lab_html = f'<span class="nav-lab" aria-hidden="true">{esc(lab)}</span>' if lab else ""
+        blocks.append(
+            f'<div class="{cls}" role="group" aria-label="{esc(lab or key)}">{lab_html}{"".join(links)}</div>'
+        )
+    if not blocks:
+        return ""
+    return f'<nav class="{esc(nav_class)}" aria-label="{esc(aria_label)}">{"".join(blocks)}</nav>'
+
+
 def footer_nav(items: list, current_path: str = "") -> str:
     """items: [(href, label), ...] with hrefs already resolved for the page depth."""
     bits = []
