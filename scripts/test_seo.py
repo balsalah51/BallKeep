@@ -29,6 +29,9 @@ from seo import (  # noqa: E402
     draft_check_js,
     strip_em,
     sitemap_xml,
+    theme_boot_script,
+    theme_js,
+    theme_toggle,
     video_jsonld,
     website_jsonld,
 )
@@ -38,6 +41,17 @@ def test_branded_titles():
     assert branded("The Keep", "Ball Keep") == "The Keep | Ball Keep"
     assert branded("Home", "Ball Keep") != "Home"
     assert "Untitled" not in branded("The Keep 2026 Superflex Dynasty Rankings (Top 400)", "Ball Keep")
+
+
+def test_theme_helpers():
+    boot = theme_boot_script()
+    assert "bk-theme" in boot
+    assert "data-theme" in boot
+    toggle = theme_toggle()
+    assert "data-theme-toggle" in toggle
+    assert "Dark mode" in toggle
+    assert theme_js(0) == '<script src="js/theme.js" defer></script>'
+    assert theme_js(2) == '<script src="../../js/theme.js" defer></script>'
 
 
 def test_face_alt():

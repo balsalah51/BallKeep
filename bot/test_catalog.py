@@ -365,7 +365,32 @@ def main():
     assert "BaseKeep" in privacy
     assert "BasketKeep" in privacy
     assert "PitchKeep" in privacy
+    assert "bk-theme" in privacy
     assert "Kids pay a tax" not in privacy
+    theme_js = Path("js/theme.js").read_text()
+    assert 'COOKIE = "bk-theme"' in theme_js
+    assert "Path=/" in theme_js
+    assert "SameSite=Lax" in theme_js
+    css = Path("css/site.css").read_text()
+    assert 'html[data-theme="dark"]' in css
+    assert ".theme-toggle" in css
+    for rel in (
+        "index.html",
+        "the-keep.html",
+        "board.html",
+        "privacy.html",
+        "404.html",
+        "news.html",
+        "players/josh-allen.html",
+        "bb/index.html",
+        "bk/index.html",
+        "pl/index.html",
+    ):
+        page = html_of(rel)
+        assert 'data-theme-toggle' in page, rel
+        assert "bk-theme" in page, rel
+        assert "js/theme.js" in page, rel
+        assert "Dark mode" in page, rel
     assert "the-ones.html" not in home
     assert "The Ones" not in home
     assert 'href="discord.html"' not in home

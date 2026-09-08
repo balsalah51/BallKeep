@@ -74,6 +74,9 @@ from seo import (  # noqa: E402
     sitemap_xml,
     sports_footer,
     sports_top,
+    theme_boot_script,
+    theme_js,
+    theme_toggle,
     strip_em,
     strip_em_tree,
     value_bars,
@@ -1355,12 +1358,15 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  {theme_boot_script()}
 {head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=45" />
+  <link rel="stylesheet" href="{asset("css/site.css", depth)}?v=46" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
+  {theme_js(depth)}
 </head>
 <body>
   <div class="wrap">
+    {theme_toggle()}
     <header class="site">
       <a class="brand" href="{nav_href("index.html", depth)}">
         <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" width="56" height="56" />
@@ -3179,7 +3185,7 @@ def main():
     <section class="panel policy">
       <p class="kicker">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="note">Last updated: August 31, 2026</p>
+      <p class="note">Last updated: September 8, 2026</p>
       <p>Ball Keep ("we," "us," or "this site") respects your privacy. This Privacy Policy explains what information we collect when you visit ballkeep.com (and its BaseKeep, BasketKeep, and PitchKeep sections), how we use it, and the choices you have.</p>
 
       <h3>Information We Collect</h3>
@@ -3190,7 +3196,7 @@ def main():
       <p>We use cookies and similar tracking technologies to:</p>
       <ul>
         <li>Understand how visitors use the site (analytics)</li>
-        <li>Remember basic preferences</li>
+        <li>Remember your light or dark mode choice in a cookie named bk-theme so the next visit stays on that setting</li>
         <li>Support advertising, if and when ads are enabled on the site</li>
       </ul>
       <p>You can disable cookies through your browser settings. Doing so may affect some site functionality.</p>

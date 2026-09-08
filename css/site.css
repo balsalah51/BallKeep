@@ -564,3 +564,77 @@ table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
   }
   table.rank-table .c-price ~ .c-val { grid-row: 2; align-self: start; font-size: 13px; }
 }
+
+.theme-bar { display: flex; justify-content: flex-end; margin: 0 0 10px; }
+.theme-toggle {
+  border: 2px solid var(--line); background: var(--white); color: var(--ink);
+  border-radius: 999px; padding: 7px 14px; font: inherit; font-weight: 800;
+  font-size: 13px; letter-spacing: 0.04em; cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--red); color: var(--red); }
+html[data-theme="dark"] .theme-label-light { display: none; }
+html:not([data-theme="dark"]) .theme-label-dark { display: none; }
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --powder: #152033;
+  --powder-deep: #1e2d40;
+  --white: #1a2534;
+  --ink: #e8eef5;
+  --muted: #9eb0c4;
+  --line: rgba(232, 238, 245, 0.14);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --red-dark: #ff8a97;
+}
+html[data-theme="dark"] body {
+  background: linear-gradient(180deg, #0b1220 0%, #121a26 40%, #0b1220 100%);
+}
+html[data-theme="dark"] .desk-block.main,
+html[data-theme="dark"] .desk-block.ros-st .tile,
+html[data-theme="dark"] .desk-block.week1 .tile,
+html[data-theme="dark"] .desk-block.schedules .tile,
+html[data-theme="dark"] .desk-block.slates .tile,
+html[data-theme="dark"] .desk-block.tape .tile,
+html[data-theme="dark"] .desk-block.extra .tile,
+html[data-theme="dark"] .desk-block.tools .tile,
+html[data-theme="dark"] .desk-block.fence .tile,
+html[data-theme="dark"] .trade-clear,
+html[data-theme="dark"] .trade-hit.picked,
+html[data-theme="dark"] .trade-hit:hover {
+  background: var(--white);
+}
+html[data-theme="dark"] .desk-block.ros-skill,
+html[data-theme="dark"] .desk-block.lists { background: #152033; border-color: #2a3d52; }
+html[data-theme="dark"] .desk-block.ros-skill .kicker,
+html[data-theme="dark"] .desk-block.lists .kicker { color: var(--muted); }
+html[data-theme="dark"] .desk-block.ros-st { background: #1c1830; border-color: #3a3150; }
+html[data-theme="dark"] .desk-block.ros-st .kicker { color: #c9b4d8; }
+html[data-theme="dark"] .desk-block.week1,
+html[data-theme="dark"] .desk-block.schedules,
+html[data-theme="dark"] .desk-block.slates { background: #132432; border-color: #2a4a5c; }
+html[data-theme="dark"] .desk-block.week1 .kicker,
+html[data-theme="dark"] .desk-block.schedules .kicker,
+html[data-theme="dark"] .desk-block.slates .kicker { color: #8ec6e0; }
+html[data-theme="dark"] .desk-block.tape,
+html[data-theme="dark"] .desk-block.extra,
+html[data-theme="dark"] .desk-block.tools { background: #161c26; border-color: #2a3340; }
+html[data-theme="dark"] .desk-block.tape .kicker,
+html[data-theme="dark"] .desk-block.extra .kicker,
+html[data-theme="dark"] .desk-block.tools .kicker { color: var(--muted); }
+html[data-theme="dark"] .desk-block.fence { background: #26141a; border-color: #4a2830; }
+html[data-theme="dark"] .desk-block.fence .kicker { color: #ff8a97; }
+html[data-theme="dark"] .desk-block.main .home-leads .tile.lead.keep,
+html[data-theme="dark"] .desk-block.lists .tile.lead.keep { background: #2a1a1e; }
+html[data-theme="dark"] .desk-block.main .home-leads .tile.lead.board,
+html[data-theme="dark"] .desk-block.lists .tile.lead.board { background: #1a2433; }
+html[data-theme="dark"] .rank-table tr.idp-row .pos { background: #3a2026; color: #ff8a97; }
+html[data-theme="dark"] .chip.hot { background: #3a2026; }
+html[data-theme="dark"] table.rank-table tbody tr { background: var(--white); }
+html[data-theme="dark"] table.rank-table tbody tr.idp-row { background: #2a1a1e; }
+html[data-theme="dark"] .trade-search input,
+html[data-theme="dark"] input[type="search"],
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  background: #121a26;
+  color: var(--ink);
+  border-color: var(--line);
+}
