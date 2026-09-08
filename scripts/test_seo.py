@@ -318,6 +318,16 @@ def test_pos_filter_chips():
     assert "applyRankFilter" in js
 
 
+def test_super_avg():
+    from aggregate_protocol import super_avg
+    ranks = {"Yates": 2, "FantasyPros ECR": 4, "Karabell": 6, "CBS": 20, "Yahoo": 10}
+    assert super_avg(ranks, ("Yates", "FantasyPros ECR", "Karabell")) == 9.5
+    assert super_avg({"Yates": 2, "Karabell": 4}, ("Yates", "Karabell")) == 3.0
+    assert super_avg({"CBS": 10, "Yahoo": 20}, ("Yates",)) == 15.0
+    assert super_avg({"Yates": 1}, ("Yates", "FP")) == 1.0
+    assert super_avg({}, ("Yates",)) == 0.0
+
+
 def test_dst_and_kicker_boards():
     from special_teams import dst_board, kicker_board
     dst = dst_board()

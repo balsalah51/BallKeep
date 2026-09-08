@@ -2,7 +2,7 @@
 
 The three long tapes stay Yates, FantasyPros ECR, and Karabell Flex.
 Published expert tops, Draft Sharks, NBC Sports, and Footballguys join
-the mean. Unranked names are skipped - never treated as 999.
+the Super Aggregate extras. Unranked names are skipped - never treated as 999.
 """
 from __future__ import annotations
 
