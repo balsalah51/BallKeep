@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from aggregate_protocol import blend_maps, remap  # noqa: E402
+from aggregate_protocol import blend_maps, remap, super_avg  # noqa: E402
 from bk_curve import bk_value  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,7 +62,7 @@ FENCE_MIXED_SOURCES = [
     ("Glossery Mixed", "https://www.dynastynerds.com/idp/glossery-mixed-idp-rankings/", "Dynasty Nerds Glossery Superflex + IDP top 725, Aug 21 2026. Long core."),
     ("Consensus stitch", "https://www.theidpshow.com/p/combined-idp-offense-dynasty-rankings-fantasy-football", "IDP Show method: Keep skill + Fence IDP dropped into Glossery startup slots."),
     ("The Keep", "https://ballkeep.com/the-keep.html", "Superflex skill-player 400. IDP names are a skip."),
-    ("Fence IDP", "https://ballkeep.com/the-fence.html", "IDP-only mean of 20 markets. Skill names are a skip."),
+    ("Fence IDP", "https://ballkeep.com/the-fence.html", "IDP-only Super Aggregate of 20 markets. Skill names are a skip."),
     ("IDP Show startup", "https://www.theidpshow.com/p/combined-idp-offense-dynasty-rankings-fantasy-football", "Same stitch, IDP slots a few rounds earlier the way Sleeper IDP startups run."),
     ("Youth mixed", "", "Kids climb on the consensus stitch."),
     ("Contender mixed", "", "Win-now vets climb on the consensus stitch."),
@@ -227,7 +227,7 @@ def expand_idp_leagues(core: dict[str, dict], meta: dict) -> dict[str, dict]:
 
 
 def idp_only_board() -> list[dict]:
-    """IDP-only mean of 20 markets. Hutchinson is 1.01 on this slice."""
+    """IDP-only Super Aggregate of 20 markets. Hutchinson is 1.01 on this slice."""
     dn = _load_rows("idp-dn")
     pff = _load_rows("idp-pff")
     dealer = _load_rows("idp-dealer")
@@ -248,7 +248,7 @@ def idp_only_board() -> list[dict]:
             continue
         if not any(name in ranks for name in IDP_LONG):
             continue
-        avg = round(sum(ranks.values()) / len(ranks), 2)
+        avg = super_avg(ranks, IDP_LONG)
         info = meta.get(key) or {}
         rows.append({
             "key": key,
@@ -419,7 +419,7 @@ def fence_board() -> list[dict]:
             continue
         if not any(name in ranks for name in MIXED_LONG):
             continue
-        avg = round(sum(ranks.values()) / len(ranks), 2)
+        avg = super_avg(ranks, MIXED_LONG)
         info = meta.get(key) or {}
         rows.append({
             "key": key,

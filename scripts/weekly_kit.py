@@ -1,6 +1,8 @@
 """Week N skill boards, ADP, waivers, injuries, SOS, and usage.
 
 Published lists only. Unranked on a board is a skip, never 999.
+Skill boards use Super Aggregate: 50% FantasyPros ECR, 50% every other
+desk that ranked the name.
 """
 from __future__ import annotations
 
@@ -12,6 +14,7 @@ from pathlib import Path
 from bk_curve import bk_value
 from scrape_weekly import current_week
 from special_teams import DST_TEAMS, dst_board
+from aggregate_protocol import super_avg
 
 ROOT = Path(__file__).resolve().parents[1]
 WEEKLY = ROOT / "data" / "weekly"
@@ -119,6 +122,9 @@ def _info_bank() -> dict:
     return bank
 
 
+WEEKLY_LONG = ("FantasyPros ECR",)
+
+
 def weekly_maps(pos: str) -> dict:
     pos = pos.upper()
     maps = {
@@ -141,7 +147,7 @@ def weekly_sources(pos: str) -> list:
     ]
 
 
-def _mash(maps: dict, bank: dict, pos: str | None = None, cap: int | None = None) -> list:
+def _mash(maps: dict, bank: dict, pos: str | None = None, cap: int | None = None, long_core=None) -> list:
     keys = set()
     for mp in maps.values():
         keys.update(mp)
@@ -153,20 +159,18 @@ def _mash(maps: dict, bank: dict, pos: str | None = None, cap: int | None = None
             if not any(k in mp for mp in maps.values()):
                 continue
         shown = {}
-        nums = []
         for src, mp in maps.items():
             rk = mp.get(k)
             if rk:
                 shown[src] = rk
-                nums.append(rk)
-        if not nums:
+        if not shown:
             continue
         rows.append({
             **info,
             "key": k,
             "pos": (info.get("pos") or pos or "").upper(),
-            "n": len(nums),
-            "avg": round(sum(nums) / len(nums), 2),
+            "n": len(shown),
+            "avg": super_avg(shown, long_core if long_core is not None else WEEKLY_LONG),
             "ranks": shown,
         })
     rows.sort(key=lambda r: (r["avg"], r["name"]))
@@ -202,7 +206,7 @@ def weekly_flex(cap: int = 150) -> list:
             )
         },
     }
-    return _mash(maps, _info_bank(), cap=cap)
+    return _mash(maps, _info_bank(), cap=cap, long_core=("FantasyPros Flex ECR",))
 
 
 WEEKLY_FLEX_SOURCES = [
@@ -249,7 +253,7 @@ def adp_rows(board_rows: list) -> list:
 
 
 ADP_SOURCES = [
-    ("The Board", "https://ballkeep.com/board.html", "Ball Keep redraft PPR mean. Fifteen boards."),
+    ("The Board", "https://ballkeep.com/board.html", "Ball Keep redraft PPR Super Aggregate. Fifteen boards."),
     ("ESPN ADP", "https://fantasy.espn.com/", "Public ESPN average draft position, 2026 PPR."),
     ("Underdog / Sleeper ADP", "https://sleeper.com/", "adp_dd_ppr on the RotoWire projection feed."),
 ]
@@ -338,7 +342,7 @@ def week1_waiver_board(cap: int = 60) -> list:
             if name and len(name) > len(cur.get("name") or ""):
                 cur["name"] = name
             bank[k] = cur
-    rows = [r for r in _mash(maps, bank) if r["n"] >= 2]
+    rows = [r for r in _mash(maps, bank, long_core=("FantasyPros WW ECR",)) if r["n"] >= 2]
     out = []
     for i, r in enumerate(rows[:cap], 1):
         out.append({**r, "bk": i, "value": bk_value(i)})
@@ -474,7 +478,7 @@ def sos_rows(nfl_games: list, week: int | None = None) -> list:
 
 
 SOS_SOURCES = [
-    ("Season DST board", "https://ballkeep.com/defenses.html", "Remaining opponents scored by our nine-board DST mean. Higher average means easier leftover clubs."),
+    ("Season DST board", "https://ballkeep.com/defenses.html", "Remaining opponents scored by our nine-board DST Super Aggregate. Higher average means easier leftover clubs."),
     ("2026 NFL schedule", "https://ballkeep.com/nfl-schedule.html", "Weeks still in front of each club."),
 ]
 

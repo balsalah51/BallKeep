@@ -317,12 +317,16 @@ W1_K_SOURCES = [
 ]
 
 
+W1_DST_LONG = ("FantasyPros ECR", "Draft Sharks consensus")
+W1_K_LONG = ("FantasyPros ECR",)
+
+
 def week1_dst_board():
-    return _mean_rows(DST_TEAMS, week1_dst_maps(), "DST")
+    return _mean_rows(DST_TEAMS, week1_dst_maps(), "DST", long_core=W1_DST_LONG)
 
 
 def week1_kicker_board():
-    return _mean_rows(WEEK1_KICKERS, week1_k_maps(), "K")
+    return _mean_rows(WEEK1_KICKERS, week1_k_maps(), "K", long_core=W1_K_LONG)
 
 
 # Week 1 games: away, home. Neutral Melbourne is SF vs LAR.

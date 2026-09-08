@@ -1,6 +1,7 @@
-"""2026 redraft DST and kicker aggregates.
+"""2026 redraft DST and kicker Super Aggregates.
 
 Published boards only. Unranked names are skipped, never treated as 999.
+50% long-core mean, 50% every other desk that ranked the name.
 """
 from __future__ import annotations
 
@@ -9,6 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from bk_curve import bk_value  # noqa: E402
+from aggregate_protocol import super_avg  # noqa: E402
 
 
 # Full team names match the football schedule board. FantasyPros writes JAC; we use JAX.
@@ -157,24 +159,23 @@ K_SOURCES = [
 ]
 
 
-def _mean_rows(universe, maps, pos):
+def _mean_rows(universe, maps, pos, long_core=()):
     rows = []
     for name, team in universe:
-        nums = []
         shown = {}
         for label, mp in maps.items():
             rk = mp.get(team) if pos == "DST" else mp.get(name)
             if rk:
-                nums.append(float(rk))
                 shown[label] = int(rk)
-        if not nums:
+        if not shown:
             continue
+        avg = super_avg(shown, long_core) if long_core else round(sum(shown.values()) / len(shown), 2)
         rows.append({
             "name": name,
             "pos": pos,
             "team": team,
-            "n": len(nums),
-            "avg": round(sum(nums) / len(nums), 2),
+            "n": len(shown),
+            "avg": avg,
             "ranks": shown,
         })
     rows.sort(key=lambda r: (r["avg"], r["name"]))
@@ -182,6 +183,10 @@ def _mean_rows(universe, maps, pos):
     for i, r in enumerate(rows, 1):
         out.append({**r, "bk": i, "value": bk_value(i)})
     return out
+
+
+DST_LONG = ("fp", "nbc", "stacked")
+K_LONG = ("fp", "ds", "rw")
 
 
 def dst_board():
@@ -195,7 +200,7 @@ def dst_board():
         "ds": DS_DST,
         "cbs": CBS_DST,
         "yates": YATES_DST,
-    }, "DST")
+    }, "DST", long_core=DST_LONG)
 
 
 def kicker_board():
@@ -206,4 +211,4 @@ def kicker_board():
         "ds": DS_K,
         "rw": RW_K,
         "yates": YATES_K,
-    }, "K")
+    }, "K", long_core=K_LONG)
