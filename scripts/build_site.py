@@ -2672,7 +2672,7 @@ def main():
         <a class="tile lead keep" href="the-keep.html">
           <h3>The Keep</h3>
           <p class="lead-sub">Superflex dynasty · top 400</p>
-          <p>33 boards mashed into one rank.</p>
+          <p>Super Aggregate of 33 boards.</p>
         </a>
         <a class="tile lead board" href="board.html">
           <h3>The Board</h3>
