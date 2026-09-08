@@ -77,6 +77,19 @@ def test_related_stories():
     assert "Chase practice" in html
 
 
+def test_football_nav_skips_rotating_news():
+    from pathlib import Path
+    from build_site import is_football_nav_target
+    assert is_football_nav_target(Path("board.html"))
+    assert is_football_nav_target(Path("news.html"))
+    assert is_football_nav_target(Path("players/jahmyr-gibbs.html"))
+    assert not is_football_nav_target(Path("news/some-story.html"))
+    assert not is_football_nav_target(Path("bb/news.html"))
+    assert not is_football_nav_target(Path("bb/the-keep.html"))
+    assert not is_football_nav_target(Path("bk/news/nba-story.html"))
+    assert not is_football_nav_target(Path("pl/news/pl-story.html"))
+
+
 def test_grouped_nav_sections():
     groups = [
         ("leads", "Boards", [("index.html", "Home"), ("the-keep.html", "The Keep")]),

@@ -3561,9 +3561,35 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
     return dest
 
 
+def is_football_nav_target(rel: Path) -> bool:
+    """Ranking and hub pages only. Rotating news stories stay off feature-branch diffs."""
+    parts = rel.parts
+    if parts and parts[0] in {"bb", "bk", "pl"}:
+        return False
+    if len(parts) >= 2 and parts[0] == "news":
+        return False
+    return True
+
+
+def render_news_only():
+    """Hourly wire: story HTML and feeds only. Do not rewrite ranking or player pages."""
+    from build_bb import render_bb_news_pages
+    from build_bk import render_bk_news_pages
+    from build_pl import render_pl_news_pages
+
+    fb = render_news_pages()
+    bb = render_bb_news_pages(load_news_stories("baseball"))
+    bk = render_bk_news_pages(load_news_stories("basketball"))
+    pl = render_pl_news_pages(load_news_stories("soccer"))
+    n_map = write_discovery_feeds()
+    print(
+        f"News-only Football {max(0, len(fb) - 1)} BB {max(0, len(bb) - 1)} "
+        f"BK {max(0, len(bk) - 1)} PL {max(0, len(pl) - 1)} NewsSitemap {n_map}"
+    )
+
+
 def rewrite_football_navs() -> int:
     """Patch header/footer nav on existing football HTML without a full rebuild."""
-    skip_roots = {"bb", "bk", "pl"}
     header_re = re.compile(
         r'(<header class="site">[\s\S]*?</a>\s*)<nav(?: class="site-nav")?[^>]*>[\s\S]*?</nav>',
         re.S,
@@ -3573,7 +3599,7 @@ def rewrite_football_navs() -> int:
     n = 0
     for path in sorted(ROOT.rglob("*.html")):
         rel = path.relative_to(ROOT)
-        if rel.parts and rel.parts[0] in skip_roots:
+        if not is_football_nav_target(rel):
             continue
         site_path = rel.as_posix()
         depth = 0 if "/" not in site_path else 1
@@ -3597,5 +3623,7 @@ def rewrite_football_navs() -> int:
 if __name__ == "__main__":
     if "--nav-only" in sys.argv:
         rewrite_football_navs()
+    elif "--news-only" in sys.argv:
+        render_news_only()
     else:
         main()
