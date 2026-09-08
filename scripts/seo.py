@@ -73,6 +73,34 @@ def sports_top(here: str, depth: int = 0) -> str:
     return f'<div class="sports-top">{sport_pills(here, depth)}</div>'
 
 
+def theme_boot_script() -> str:
+    """Apply the saved theme cookie before first paint so the page does not flash."""
+    return (
+        "<script>"
+        "(function(){try{var m=document.cookie.match(/(?:^|; )bk-theme=(dark|light)/);"
+        'document.documentElement.setAttribute("data-theme",m?m[1]:"light");}'
+        'catch(e){document.documentElement.setAttribute("data-theme","light");}})();'
+        "</script>"
+    )
+
+
+def theme_toggle() -> str:
+    return (
+        '<div class="theme-bar">'
+        '<button type="button" class="theme-toggle" data-theme-toggle '
+        'aria-pressed="false" aria-label="Switch to dark mode">'
+        '<span class="theme-label-light">Dark mode</span>'
+        '<span class="theme-label-dark">Light mode</span>'
+        "</button>"
+        "</div>"
+    )
+
+
+def theme_js(depth: int = 0) -> str:
+    prefix = "../" * depth
+    return f'<script src="{prefix}js/theme.js" defer></script>'
+
+
 def sports_footer(here: str, depth: int = 0) -> str:
     return f"<div>{sport_pills(here, depth)}</div>"
 

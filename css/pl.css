@@ -396,3 +396,55 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
   }
   table.rank-table .c-price ~ .c-val { grid-row: 2; align-self: start; font-size: 13px; }
 }
+
+.theme-bar { display: flex; justify-content: flex-end; margin: 0 0 10px; }
+.theme-toggle {
+  border: 2px solid var(--line); background: #fff; color: var(--ink);
+  border-radius: 999px; padding: 7px 14px; font: inherit; font-weight: 800;
+  font-size: 13px; letter-spacing: 0.04em; cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--purple); color: var(--purple); }
+html[data-theme="dark"] .theme-label-light { display: none; }
+html:not([data-theme="dark"]) .theme-label-dark { display: none; }
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #f3eaf6;
+  --muted: #c4b0cc;
+  --line: rgba(243, 234, 246, 0.14);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --ivory: #1a1220;
+  --ivory-2: #140e18;
+}
+html[data-theme="dark"] body {
+  background: linear-gradient(180deg, #140818 0%, #1a0e20 40%, #140818 100%);
+}
+html[data-theme="dark"] header.site,
+html[data-theme="dark"] .panel,
+html[data-theme="dark"] .tile,
+html[data-theme="dark"] .faq,
+html[data-theme="dark"] .related,
+html[data-theme="dark"] .desk-block.main,
+html[data-theme="dark"] .desk-block .tile,
+html[data-theme="dark"] .player-hero,
+html[data-theme="dark"] .rank-card,
+html[data-theme="dark"] .fact,
+html[data-theme="dark"] .pm,
+html[data-theme="dark"] .trade-search,
+html[data-theme="dark"] .trade-clear,
+html[data-theme="dark"] .trade-verdict,
+html[data-theme="dark"] .filters button,
+html[data-theme="dark"] .filters a,
+html[data-theme="dark"] .rank-search-input,
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] table.rank-table tbody tr {
+  background: #1a1220;
+  color: var(--ink);
+}
+html[data-theme="dark"] .trade-search input,
+html[data-theme="dark"] input[type="search"],
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  background: #120c18;
+  color: var(--ink);
+  border-color: var(--line);
+}

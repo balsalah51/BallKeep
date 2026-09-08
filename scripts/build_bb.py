@@ -55,6 +55,9 @@ from seo import (  # noqa: E402
     related_stories_html,
     sports_footer,
     sports_top,
+    theme_boot_script,
+    theme_js,
+    theme_toggle,
     strip_em,
     value_bars,
     website_jsonld,
@@ -366,12 +369,15 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  {theme_boot_script()}
 {head_tags(title=full_title, description=desc, canonical=canon(path, "bb/"), image=img, brand="BaseKeep", brand_url="https://ballkeep.com/bb/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=38" />
+  <link rel="stylesheet" href="{prefix}css/bb.css?v=39" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
+  {theme_js(depth)}
 </head>
 <body>
   <div class="wrap">
+    {theme_toggle()}
     <header class="site">
       <a class="brand" href="{'index.html' if depth == 1 else '../index.html'}">
         <img src="{prefix}img/bb-logo.jpg" alt="BaseKeep circular baseball logo" width="56" height="56" />
