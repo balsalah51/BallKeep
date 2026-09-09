@@ -56,6 +56,8 @@ def extract_js_assign(text: str, var: str):
     i = m.end()
     while i < len(text) and text[i] in " \n\r\t":
         i += 1
+    if i >= len(text) or text[i] not in "{[":
+        return None
     opener = text[i]
     closer = "}" if opener == "{" else "]"
     depth = 0
@@ -81,8 +83,25 @@ def extract_js_assign(text: str, var: str):
         elif c == closer:
             depth -= 1
             if depth == 0:
-                return json.loads(text[i : j + 1])
+                try:
+                    return json.loads(text[i : j + 1])
+                except json.JSONDecodeError:
+                    return None
     return None
+
+
+def extract_json_script(html: str, elem_id: str):
+    m = re.search(
+        rf'<script[^>]*\bid=["\']{re.escape(elem_id)}["\'][^>]*>(.*?)</script>',
+        html,
+        re.I | re.S,
+    )
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(1))
+    except json.JSONDecodeError:
+        return None
 
 
 def unique_names(names: list[str]) -> list[str]:
@@ -111,19 +130,41 @@ def fp_names(html: str) -> list[str]:
     return names
 
 
-def ktc_names(html: str) -> list[str]:
-    arr = extract_js_assign(html, "playersArray") or []
+def ktc_rows(html: str) -> list[dict]:
+    arr = extract_json_script(html, "ktc-players") or extract_js_assign(html, "playersArray") or []
     scored = []
     for p in arr:
         sf = p.get("superflexValues") or {}
         rank = sf.get("rank")
         if not rank:
             continue
-        scored.append((int(rank), p.get("playerName") or ""))
+        age = p.get("age")
+        try:
+            age_i = int(age)
+        except (TypeError, ValueError):
+            age_i = ""
+        scored.append((int(rank), {
+            "name": p.get("playerName") or "",
+            "pos": p.get("position") or "",
+            "team": p.get("team") or "",
+            "age": age_i,
+        }))
     scored.sort()
-    names = unique_names([n for _r, n in scored])
-    print(f"  KeepTradeCut Superflex n={len(names)} top={names[:5]}")
-    return names
+    rows = []
+    seen = set()
+    for _rank, row in scored:
+        name = (row.get("name") or "").strip()
+        key = name.lower()
+        if not name or key in seen:
+            continue
+        seen.add(key)
+        rows.append(row)
+    print(f"  KeepTradeCut Superflex n={len(rows)} top={[r['name'] for r in rows[:5]]}")
+    return rows
+
+
+def ktc_names(html: str) -> list[str]:
+    return [r["name"] for r in ktc_rows(html) if r.get("name")]
 
 
 def dn_names(html: str) -> list[str]:
@@ -421,7 +462,14 @@ def main() -> int:
     if "fp_nba" in pages:
         dump_names("fp-nba-dynasty", fp_names(pages["fp_nba"]))
     if "ktc" in pages:
-        dump_names("ktc-sf", ktc_names(pages["ktc"]))
+        try:
+            rows = ktc_rows(pages["ktc"])
+            if rows:
+                dump_names("ktc-sf", rows)
+            else:
+                print("  keep existing KTC tape (parser got 0 rows)")
+        except Exception as exc:
+            print(f"  keep existing KTC tape: {type(exc).__name__}: {exc}")
     if "dn" in pages:
         dump_names("dn-sf", dn_names(pages["dn"]))
     if "pfn" in pages:

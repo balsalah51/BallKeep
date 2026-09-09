@@ -94,7 +94,7 @@ def remap_spine(spine: list, score_fn, cap: int = 180) -> dict:
     return out
 
 
-# FantasyPros expert PPR columns, consensus table Sep 5 2026 (published top 12).
+# FantasyPros expert PPR columns, consensus table Sep 9 2026 (published top 12).
 DEREK_BROWN = _load_rank_map("fp-brown-ppr") or {
     "Puka Nacua": 1, "Jahmyr Gibbs": 2, "Ja'Marr Chase": 3, "Amon-Ra St. Brown": 4,
     "Bijan Robinson": 5, "Jaxon Smith-Njigba": 6, "Christian McCaffrey": 7, "CeeDee Lamb": 8,
@@ -115,9 +115,9 @@ NBC_PPR = _load_rank_map("nbc-ppr")
 FBG_PPR = _load_rank_map("fbg-ppr")
 
 PPR_EXTRA_SOURCES = [
-    ("Derek Brown PPR", "https://www.fantasypros.com/nfl/rankings/derek-brown.php", "FantasyPros expert, Sep 5. Published top locked, rest fills from ECR."),
-    ("Andrew Erickson PPR", "https://www.fantasypros.com/nfl/rankings/andrew-erickson.php", "FantasyPros expert, Sep 5. Published top locked, rest fills from ECR."),
-    ("Pat Fitzmaurice PPR", "https://www.fantasypros.com/nfl/rankings/pat-fitzmaurice.php", "FantasyPros expert, Sep 5. Published top locked, rest fills from ECR."),
+    ("Derek Brown PPR", "https://www.fantasypros.com/nfl/rankings/derek-brown.php", "FantasyPros expert, Sep 9. Published top locked, rest fills from ECR."),
+    ("Andrew Erickson PPR", "https://www.fantasypros.com/nfl/rankings/andrew-erickson.php", "FantasyPros expert, Sep 9. Published top locked, rest fills from ECR."),
+    ("Pat Fitzmaurice PPR", "https://www.fantasypros.com/nfl/rankings/pat-fitzmaurice.php", "FantasyPros expert, Sep 9. Published top locked, rest fills from ECR."),
     ("Chris Welsh PPR", "https://www.fantasypros.com/nfl/rankings/chris-welsh.php", "FantasyPros expert, Aug 29. Target-share WR lean."),
     ("CBS Sports PPR", "https://www.cbssports.com/fantasy/football/news/2026-fantasy-football-rankings-ppr/", "Public CBS redraft. RB early, TE later."),
     ("Yahoo Fantasy PPR", "https://football.fantasysports.yahoo.com/f1/draftanalysis", "Yahoo public draft board. WR-heavy PPR."),

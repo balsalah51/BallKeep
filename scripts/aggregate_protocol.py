@@ -44,7 +44,7 @@ KEEP_SOURCES = [
     ("Dynasty Nerds Superflex", "https://www.dynastynerds.com/dynasty-rankings/superflex/", "Four-ranker consensus. Long core."),
     ("FantasyPros Dynasty Superflex ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-superflex.php", "Expert consensus. Long core."),
     ("KeepTradeCut Superflex", "https://keeptradecut.com/dynasty-rankings", "Crowdsourced market tape. Long core."),
-    ("ESPN - Eric Karabell Superflex PPR", "https://www.espn.com/fantasy/football/story/_/id/47539664", "Published Superflex board, Sep 5."),
+    ("ESPN - Eric Karabell Superflex PPR", "https://www.espn.com/fantasy/football/story/_/id/47539664", "Published Superflex board, Sep 9."),
     ("Mike Clay ESPN Dynasty", "https://www.espn.com/fantasy/football/story/_/id/15698900", "Dynasty top 240, Aug 31. 1QB window, QBs later."),
     ("Draft Sharks Superflex", "https://www.draftsharks.com/dynasty-rankings/superflex", "Public Superflex slice, Sep 3."),
     ("RotoWire Superflex", "https://www.rotowire.com/football/article/2026-dynasty-superflex-rankings-buy-low-values-adp-127901", "Team/pos Superflex board."),

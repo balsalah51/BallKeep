@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 5, 2026"
-LASTMOD = "2026-09-05"
+UPDATED = "September 9, 2026"
+LASTMOD = "2026-09-09"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -192,6 +192,8 @@ def load_rank_names(stem: str) -> dict:
     names = json.loads(path.read_text())
     out = {}
     for i, name in enumerate(names, 1):
+        if isinstance(name, dict):
+            name = name.get("name") or ""
         if isinstance(name, str) and name.strip():
             out[name] = i
     return out
@@ -850,6 +852,18 @@ def load_age_bank():
                     bank[key] = p["age"]
         except Exception:
             pass
+    ktc = ROOT / "data/ranks/ktc-sf.json"
+    if ktc.exists():
+        try:
+            blob = json.loads(ktc.read_text())
+            for p in blob if isinstance(blob, list) else []:
+                if not isinstance(p, dict):
+                    continue
+                key = norm_name(p.get("name") or "")
+                if key and p.get("age") not in (None, "") and key not in bank:
+                    bank[key] = int(p["age"])
+        except Exception:
+            pass
     try:
         from fetch_player_media import ensure_sleeper, sleeper_index
         if ensure_sleeper():
@@ -930,12 +944,12 @@ def sources_panel(items, heading="Boards in This Super Aggregate"):
 
 PPR_SOURCES = [
     ("Field Yates, ESPN", "https://www.espn.com/fantasy/football/", "2026 full-PPR redraft board, updated Sep 5."),
-    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Sep 5."),
+    ("FantasyPros Redraft ECR", "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php", "Full-PPR expert consensus, Sep 9."),
     ("ESPN - Eric Karabell Flex (no QB)", "https://www.espn.com/fantasy/football/story/_/id/47539664", "PPR skill-player board, Sep 5."),
 ] + PPR_EXTRA_SOURCES
 ROOKIE_SOURCES = [
     ("Dynasty Dealer Superflex rookie board", "", "13-analyst team board, July 30."),
-    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Sep 1."),
+    ("FantasyPros Superflex Rookie ECR", "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php", "Expert consensus, Sep 7."),
     ("PFF Superflex Rookie Column", "https://www.pff.com/", "Love / Mendoza / Tate locked 1-2-3."),
 ]
 
@@ -949,7 +963,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt September 5, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
+        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt September 9, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -1153,7 +1167,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 33 public boards, rebuilt September 5, 2026."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 33 public boards, rebuilt September 9, 2026."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
