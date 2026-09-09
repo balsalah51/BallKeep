@@ -1,8 +1,99 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-09T20:27:18Z",
-  "fresh": 62,
+  "updated": "2026-09-09T21:24:36Z",
+  "fresh": 34,
   "stories": [
+    {
+      "id": "jordan-hawkins-traded-memphis-a6a8d652",
+      "slug": "jordan-hawkins-traded-memphis-a6a8d652",
+      "sport": "basketball",
+      "headline": "Pelicans reportedly trading Jordan Hawkins, Micah Peavy to Grizzlies for AJ Johnson, Taj Gibson",
+      "blurb": "Pelicans waive Taj Gibson after acquiring veteran in multi-player trade Grizzlies Sportsnet.ca",
+      "summary": "Pelicans waive Taj Gibson after acquiring veteran in multi-player trade Grizzlies Sportsnet.ca Hawkins was traded to the Grizzlies on Tuesday along with Micah Peavy, a future second-round pick and a future second-round pick swap in exchange for AJ Johnson and Taj Gibson, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis on this update. Aggregated from Sportsnet.ca, RotoWire NBA, ESPN, NBA.com, NBC Sports and 1 more.",
+      "category": "trade",
+      "published": "2026-09-08T12:48:00Z",
+      "updated": "2026-09-09T20:39:00Z",
+      "players": [
+        {
+          "key": "taj gibson",
+          "name": "Taj Gibson",
+          "slug": "taj-gibson",
+          "pos": "C",
+          "team": "CHA"
+        },
+        {
+          "key": "jordan hawkins",
+          "name": "Jordan Hawkins",
+          "slug": "jordan-hawkins",
+          "pos": "SG",
+          "team": "NOP"
+        },
+        {
+          "key": "bennedict mathurin",
+          "name": "Bennedict Mathurin",
+          "slug": "bennedict-mathurin",
+          "pos": "SG",
+          "team": "IND"
+        },
+        {
+          "key": "micah peavy",
+          "name": "Micah Peavy",
+          "slug": "micah-peavy",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jordan Hawkins: Traded to Memphis",
+          "url": "https://www.rotowire.com//basketball/player/jordan-hawkins-5935",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Hawkins was traded to the Grizzlies on Tuesday along with Micah Peavy, a future second-round pick and a future second-round pick swap in exchange for AJ Johnson and Taj Gibson, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Tue, 08 Sep 2026 7:04:00 AM PDT"
+        },
+        {
+          "title": "Sources: Pelicans trade Jordan Hawkins to Grizzlies in 4-player deal",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYlhrSVBrbjBhV3J6cWF4UFE5ZWktV3IxVTlMZDlpb19hMXNBNFliUDZmREtyNzNFSTlYYlBXVWxObGgwRlJfNTNzNFpjbjN6TWhrZmR5Szl2dk1nSTREZXBzajh1ajFvV2FIWmZxS0lORmtYTTZoNWgwWXFKd2ljZW9HWjJHaHBHb2hLeW5wZW5kRlNfa29kdkhRbUhaWHRjRk9oYjBsWnVZUQ?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Sources: Pelicans trade Jordan Hawkins to Grizzlies in 4-player deal ESPN",
+          "published": "Tue, 08 Sep 2026 12:48:00 GMT"
+        },
+        {
+          "title": "Reports: Grizzlies, Pelicans agree to 4-player trade",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9VM3ZCeHhtOTJLNEI3VXZXc1JrUmlOaXQ5Vk41UHpzRmd6MDdub3hHS3NlM3FPOUpva1V3d0Y5aFN2QTZfWFdJeW5jQjZBdmFWT0F6QVNNUEFnRnNfd1QzTF9ocnR2N01NX2Y5am9YX29VUDg?oc=5",
+          "publisher": "NBA.com",
+          "kind": "article",
+          "snippet": "Reports: Grizzlies, Pelicans agree to 4-player trade NBA.com",
+          "published": "Tue, 08 Sep 2026 15:18:10 GMT"
+        },
+        {
+          "title": "Pelicans reportedly trading Jordan Hawkins, Micah Peavy to Grizzlies for AJ Johnson, Taj Gibson",
+          "url": "https://sports.yahoo.com/articles/pelicans-reportedly-trading-jordan-hawkins-154941429.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "This is a cost-cutting move for the Pelicans, giving them the room to sign Bennedict Mathurin.",
+          "published": "Tue, 08 Sep 2026 15:49:41 +0000"
+        },
+        {
+          "title": "Jordan Hawkins traded to Memphis Grizzlies",
+          "url": "https://sports.yahoo.com/articles/jordan-hawkins-traded-memphis-grizzlies-015915570.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The 2023 national champ is set to join his second NBA franchise.",
+          "published": "Wed, 09 Sep 2026 01:59:15 +0000"
+        },
+        {
+          "title": "Pelicans waive Taj Gibson after acquiring veteran in multi-player trade Grizzlies",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUGZTMVp3S1MwR2dXMktmemJpS2FWZ3VVWU9rR0FEUGdYdmZqVF82dl9nRGV4eGMwbkEtUHBuZ01HLUV4Zk1XTXhONlFNNVFwZmRKV1huZTNCUDhJcGlQT1Qyc0Q5b3hIbE1zUkx2MUtuRnBRTVo3NXF3U21EckRSRmk1VTJocjZBVnc4c2FFa3V4NE5FYV9vUU1ubVpNanB4YTJ5M0xUSkxRNXM4V0hfbnRlSGZiYUV4cTZR?oc=5",
+          "publisher": "Sportsnet.ca",
+          "kind": "article",
+          "snippet": "Pelicans waive Taj Gibson after acquiring veteran in multi-player trade Grizzlies Sportsnet.ca",
+          "published": "Wed, 09 Sep 2026 20:39:00 GMT"
+        }
+      ]
+    },
     {
       "id": "clippers-finalizing-trade-sends-kawhi-leonard-raptors-blockbuster-ed7651c0",
       "slug": "clippers-finalizing-trade-sends-kawhi-leonard-raptors-blockbuster-ed7651c0",
@@ -416,110 +507,27 @@
       ]
     },
     {
-      "id": "jordan-hawkins-traded-memphis-a6a8d652",
-      "slug": "jordan-hawkins-traded-memphis-a6a8d652",
-      "sport": "basketball",
-      "headline": "Pelicans reportedly trading Jordan Hawkins, Micah Peavy to Grizzlies for AJ Johnson, Taj Gibson",
-      "blurb": "The 2023 national champ is set to join his second NBA franchise.",
-      "summary": "Jordan Hawkins, Bennedict Mathurin, Micah Peavy and Taj Gibson: The 2023 national champ is set to join his second NBA franchise. Pelicans trade Jordan Hawkins to Grizzlies in 4-player deal ESPN Hawkins was traded to the Grizzlies on Tuesday along with Micah Peavy, a future second-round pick and a future second-round pick swap in exchange for AJ Johnson and Taj Gibson, Shams Charania of ESPN reports. Aggregated from SB Nation, ESPN, RotoWire NBA, NBA.com, NBC Sports.",
-      "category": "trade",
-      "published": "2026-09-08T12:48:00Z",
-      "updated": "2026-09-09T01:59:15Z",
-      "players": [
-        {
-          "key": "jordan hawkins",
-          "name": "Jordan Hawkins",
-          "slug": "jordan-hawkins",
-          "pos": "SG",
-          "team": "NOP"
-        },
-        {
-          "key": "bennedict mathurin",
-          "name": "Bennedict Mathurin",
-          "slug": "bennedict-mathurin",
-          "pos": "SG",
-          "team": "IND"
-        },
-        {
-          "key": "micah peavy",
-          "name": "Micah Peavy",
-          "slug": "micah-peavy",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "taj gibson",
-          "name": "Taj Gibson",
-          "slug": "taj-gibson",
-          "pos": "C",
-          "team": "CHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jordan Hawkins: Traded to Memphis",
-          "url": "https://www.rotowire.com//basketball/player/jordan-hawkins-5935",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "Hawkins was traded to the Grizzlies on Tuesday along with Micah Peavy, a future second-round pick and a future second-round pick swap in exchange for AJ Johnson and Taj Gibson, Shams Charania of ESPN reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Tue, 08 Sep 2026 7:04:00 AM PDT"
-        },
-        {
-          "title": "Sources: Pelicans trade Jordan Hawkins to Grizzlies in 4-player deal",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYlhrSVBrbjBhV3J6cWF4UFE5ZWktV3IxVTlMZDlpb19hMXNBNFliUDZmREtyNzNFSTlYYlBXVWxObGgwRlJfNTNzNFpjbjN6TWhrZmR5Szl2dk1nSTREZXBzajh1ajFvV2FIWmZxS0lORmtYTTZoNWgwWXFKd2ljZW9HWjJHaHBHb2hLeW5wZW5kRlNfa29kdkhRbUhaWHRjRk9oYjBsWnVZUQ?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Sources: Pelicans trade Jordan Hawkins to Grizzlies in 4-player deal ESPN",
-          "published": "Tue, 08 Sep 2026 12:48:00 GMT"
-        },
-        {
-          "title": "Reports: Grizzlies, Pelicans agree to 4-player trade",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9VM3ZCeHhtOTJLNEI3VXZXc1JrUmlOaXQ5Vk41UHpzRmd6MDdub3hHS3NlM3FPOUpva1V3d0Y5aFN2QTZfWFdJeW5jQjZBdmFWT0F6QVNNUEFnRnNfd1QzTF9ocnR2N01NX2Y5am9YX29VUDg?oc=5",
-          "publisher": "NBA.com",
-          "kind": "article",
-          "snippet": "Reports: Grizzlies, Pelicans agree to 4-player trade NBA.com",
-          "published": "Tue, 08 Sep 2026 15:18:10 GMT"
-        },
-        {
-          "title": "Pelicans reportedly trading Jordan Hawkins, Micah Peavy to Grizzlies for AJ Johnson, Taj Gibson",
-          "url": "https://sports.yahoo.com/articles/pelicans-reportedly-trading-jordan-hawkins-154941429.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "This is a cost-cutting move for the Pelicans, giving them the room to sign Bennedict Mathurin.",
-          "published": "Tue, 08 Sep 2026 15:49:41 +0000"
-        },
-        {
-          "title": "Jordan Hawkins traded to Memphis Grizzlies",
-          "url": "https://sports.yahoo.com/articles/jordan-hawkins-traded-memphis-grizzlies-015915570.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The 2023 national champ is set to join his second NBA franchise.",
-          "published": "Wed, 09 Sep 2026 01:59:15 +0000"
-        }
-      ]
-    },
-    {
       "id": "s-just-crazy-legend-rips-celtics-jaylen-brown-27b64970",
       "slug": "s-just-crazy-legend-rips-celtics-jaylen-brown-27b64970",
       "sport": "basketball",
-      "headline": "Jaylen Brown trade debate: Should Celtics drop the hammer on a blockbuster deal?",
-      "blurb": "Celtics Nixed Derrick White Trade Offers After Jaylen Brown Deal Yahoo Sports",
-      "summary": "Celtics Nixed Derrick White Trade Offers After Jaylen Brown Deal Yahoo Sports Celtics’ Jaylen Brown Trade Has NBA Hall of Famer Stumped Yahoo Sports 'That's Just Crazy': NBA Legend Rips Celtics for Jaylen Brown Trade NESN Aggregated from Yahoo Sports, NESN, heavy.com, The New York Times.",
+      "headline": "Celtics owner Bill Chisholm says 'best brains in basketball' convinced him to trade Jaylen Brown",
+      "blurb": "Chisholm had trepidation, but Brad Stevens and Boston's front office had 'conviction' about trading Brown, he said",
+      "summary": "Jaylen Brown and Derrick White: Chisholm had trepidation, but Brad Stevens and Boston's front office had 'conviction' about trading Brown, he said 'That's Just Crazy': NBA Legend Rips Celtics for Jaylen Brown Trade Yahoo Sports Jaylen Brown trade debate: Should Celtics drop the hammer on a blockbuster deal? Aggregated from CBS NBA, Yahoo Sports, The New York Times, NESN, heavy.com.",
       "category": "trade",
       "published": "2026-06-30T07:00:00Z",
       "updated": "2026-09-09T07:59:26Z",
       "players": [
         {
-          "key": "derrick white",
-          "name": "Derrick White",
-          "slug": "derrick-white",
+          "key": "jaylen brown",
+          "name": "Jaylen Brown",
+          "slug": "jaylen-brown",
           "pos": "SG",
           "team": "BOS"
         },
         {
-          "key": "jaylen brown",
-          "name": "Jaylen Brown",
-          "slug": "jaylen-brown",
+          "key": "derrick white",
+          "name": "Derrick White",
+          "slug": "derrick-white",
           "pos": "SG",
           "team": "BOS"
         }
@@ -572,6 +580,14 @@
           "kind": "article",
           "snippet": "Celtics Nixed Derrick White Trade Offers After Jaylen Brown Deal heavy.com",
           "published": "Tue, 08 Sep 2026 20:12:52 GMT"
+        },
+        {
+          "title": "Celtics owner Bill Chisholm says 'best brains in basketball' convinced him to trade Jaylen Brown",
+          "url": "https://www.cbssports.com/nba/news/celtics-bill-chisholm-brad-stevens-jaylen-brown-trade-76ers/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "Chisholm had trepidation, but Brad Stevens and Boston's front office had 'conviction' about trading Brown, he said",
+          "published": "Tue, 18 Aug 2026 16:43:48 +0000"
         }
       ]
     },
@@ -836,6 +852,44 @@
       ]
     },
     {
+      "id": "taj-gibson-waived-pelicans-willguillory-e26bd4e7",
+      "slug": "taj-gibson-waived-pelicans-willguillory-e26bd4e7",
+      "sport": "basketball",
+      "headline": "Pelicans waive Taj Gibson, 41, one day after trade",
+      "blurb": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media",
+      "summary": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media Taj Gibson to be waived by the Pelicans, per @WillGuillory. Aggregated from Field Level Media, x.com.",
+      "category": "trade",
+      "published": "2026-09-08T14:14:59Z",
+      "updated": "2026-09-09T18:10:36Z",
+      "players": [
+        {
+          "key": "taj gibson",
+          "name": "Taj Gibson",
+          "slug": "taj-gibson",
+          "pos": "C",
+          "team": "CHA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Taj Gibson to be waived by the Pelicans, per @WillGuillory.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40QU9XaU9wS1Q5b0hXSFNHV2hONlhFRXFha25RNXBzQVhCX0ZfSmpHZ2pyamY4MGtsbjlNenY5djVnbktvRVk4Ny1tM2ZkUnFMcGhHai1iWERaYkVjYTM1SHRB?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Taj Gibson to be waived by the Pelicans, per @WillGuillory. x.com",
+          "published": "Tue, 08 Sep 2026 14:14:59 GMT"
+        },
+        {
+          "title": "Pelicans waive Taj Gibson, 41, one day after trade",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeEJUR0JpazAzY2doeUZJVlhKNXJmYVFtZHpVV0I1ZFlKeU82QXMtSElRR1h5QmZoXzg3Z29nbFVHdE1JR0lMYVkxRFFDdG9jRHlqVHBTMFhRdEQ0bXEyNEtSWm1idmZFMjAzcHU0S0JKMFZ3eFRkZ2x2aXdNMS0wcXExdGRfWGo1?oc=5",
+          "publisher": "Field Level Media",
+          "kind": "article",
+          "snippet": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media",
+          "published": "Wed, 09 Sep 2026 18:10:36 GMT"
+        }
+      ]
+    },
+    {
       "id": "why-kawhi-leonard-trade-raptors-hasn-t-happened-979c88dc",
       "slug": "why-kawhi-leonard-trade-raptors-hasn-t-happened-979c88dc",
       "sport": "basketball",
@@ -1073,44 +1127,6 @@
           "kind": "article",
           "snippet": "Plus Ryan Wilson's preseason 2027 NFL Draft big board",
           "published": "Fri, 04 Sep 2026 12:58:11 +0000"
-        }
-      ]
-    },
-    {
-      "id": "taj-gibson-waived-pelicans-willguillory-e26bd4e7",
-      "slug": "taj-gibson-waived-pelicans-willguillory-e26bd4e7",
-      "sport": "basketball",
-      "headline": "Pelicans waive Taj Gibson, 41, one day after trade",
-      "blurb": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media",
-      "summary": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media Taj Gibson to be waived by the Pelicans, per @WillGuillory. Aggregated from Field Level Media, x.com.",
-      "category": "trade",
-      "published": "2026-09-08T14:14:59Z",
-      "updated": "2026-09-09T18:10:36Z",
-      "players": [
-        {
-          "key": "taj gibson",
-          "name": "Taj Gibson",
-          "slug": "taj-gibson",
-          "pos": "C",
-          "team": "CHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Taj Gibson to be waived by the Pelicans, per @WillGuillory.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40QU9XaU9wS1Q5b0hXSFNHV2hONlhFRXFha25RNXBzQVhCX0ZfSmpHZ2pyamY4MGtsbjlNenY5djVnbktvRVk4Ny1tM2ZkUnFMcGhHai1iWERaYkVjYTM1SHRB?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Taj Gibson to be waived by the Pelicans, per @WillGuillory. x.com",
-          "published": "Tue, 08 Sep 2026 14:14:59 GMT"
-        },
-        {
-          "title": "Pelicans waive Taj Gibson, 41, one day after trade",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeEJUR0JpazAzY2doeUZJVlhKNXJmYVFtZHpVV0I1ZFlKeU82QXMtSElRR1h5QmZoXzg3Z29nbFVHdE1JR0lMYVkxRFFDdG9jRHlqVHBTMFhRdEQ0bXEyNEtSWm1idmZFMjAzcHU0S0JKMFZ3eFRkZ2x2aXdNMS0wcXExdGRfWGo1?oc=5",
-          "publisher": "Field Level Media",
-          "kind": "article",
-          "snippet": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media",
-          "published": "Wed, 09 Sep 2026 18:10:36 GMT"
         }
       ]
     },
@@ -1417,13 +1433,20 @@
       "id": "insider-reveals-celtics-jaylen-brown-discussions-timberwolves-lamelo-30795fa3",
       "slug": "insider-reveals-celtics-jaylen-brown-discussions-timberwolves-lamelo-30795fa3",
       "sport": "basketball",
-      "headline": "LaMelo Ball trade details: Timberwolves pair Hornets star with Anthony Edwards in deal involving Naz Reid",
-      "blurb": "LaMelo Ball Lands in Minnesota: Breaking Down the Timberwolves-Hornets Blockbuster FantasySP",
-      "summary": "LaMelo Ball Lands in Minnesota: Breaking Down the Timberwolves-Hornets Blockbuster FantasySP Why Is LaMelo Ball Being Sued After Shocking Timberwolves Trade? Minnesota Star's Legal Trouble Explored Sportskeeda Aggregated from FantasySP, Sportskeeda, Yahoo Sports, basketballnews.com, Sports Illustrated and 5 more.",
+      "headline": "Giannis Antetokounmpos Brother Endorses Explosive LaMelo Ball-Anthony Edwards Duo After Timberwolves Blockbuster",
+      "blurb": "Timberwolves interested in uniting Anthony Edwards and LaMelo Ball: Sources - The Athletic The New York Times",
+      "summary": "Timberwolves interested in uniting Anthony Edwards and LaMelo Ball: Sources - The Athletic The New York Times Fantasy basketball: LaMelo takes some heat off Anthony Edwards ESPN Giannis Antetokounmpos Brother Endorses Explosive LaMelo Ball-Anthony Edwards Duo After Timberwolves Blockbuster Al Bat Aggregated from The New York Times, ESPN, Al Bat, Yahoo Sports, basketballnews.com and 7 more.",
       "category": "trade",
       "published": "2025-09-25T07:00:00Z",
       "updated": "2026-09-07T19:46:27Z",
       "players": [
+        {
+          "key": "anthony edwards",
+          "name": "Anthony Edwards",
+          "slug": "anthony-edwards",
+          "pos": "SG",
+          "team": "MIN"
+        },
         {
           "key": "lamelo ball",
           "name": "LaMelo Ball",
@@ -1451,13 +1474,6 @@
           "slug": "ja-morant",
           "pos": "PG",
           "team": "MEM"
-        },
-        {
-          "key": "anthony edwards",
-          "name": "Anthony Edwards",
-          "slug": "anthony-edwards",
-          "pos": "SG",
-          "team": "MIN"
         },
         {
           "key": "jaylen brown",
@@ -1603,6 +1619,68 @@
           "kind": "article",
           "snippet": "Why Is LaMelo Ball Being Sued After Shocking Timberwolves Trade? Minnesota Star's Legal Trouble Explored Sportskeeda",
           "published": "Wed, 29 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Timberwolves interested in uniting Anthony Edwards and LaMelo Ball: Sources",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNUUQwSlJ1MG9DaTd0WlktOTJXRGNUeWNDdGxqclp2UXFPWUNQTXMyd00yWWp6MHdYOFFGOHl5R2dmLWRabTJPSzVKTXE0TThkNDk0aC14b1JkS1dScXdoWFdUZHJ3M2lud3hzTHJ6TXI4SUVLUlI4UG5Mdl9GQWVFaTlfY2gxMlRXZllGRTlmaUxHVzVWb2dtUXNhaThBYVNVT2pVRVhxeVdZWHdtNUE?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Timberwolves interested in uniting Anthony Edwards and LaMelo Ball: Sources - The Athletic The New York Times",
+          "published": "Sat, 04 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Fantasy basketball: LaMelo takes some heat off Anthony Edwards",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZ1pvMVlDSTlCZGJfbWxvOVB4R1c1N01IclVQQTFueWtmZEJqWWR0UTI1RFNmWkFwcUt3T2M4V25uRW5IbGUwLWxVaE1fYU5DREpIUzJUTU5xZlJwQVd4NFF5cXJxZG5lVUVuU2J3ZGp0ZTZaNGlKMFJaVVp1TGhWTUV0RFdXSlJsUXFlb1pydVIzRDVZN1BxLTI4WFdmdXRkZ0tWNGZrb0pWeE1BX0J4ZE5Bc2MwSmttNHVhMmxmVFBfY1po?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Fantasy basketball: LaMelo takes some heat off Anthony Edwards ESPN",
+          "published": "Fri, 26 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Giannis Antetokounmpos Brother Endorses Explosive LaMelo Ball-Anthony Edwards Duo After Timberwolves Blockbuster",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPYW1USFV0SE16Zmo3WV9Da1dsNGRCVXdMcngwb3ZLMndmNEJDb2ttbGlaS2RUeWxPcTZCY000N0tXekxsNWhXb2Z1eV9SZ01CQ0dDcVNoT01CeWIxVHhRMEVicnEtUThHb3dyUU8wMnM0WVFOczRLZ3FIOExzRmNvLXg1bkNKTEhOcFZ5YTA1NU1DVEgxbHdHVVQxR2cybi01ckc0QXA5QzZGTTFrLTF4SDEtcXBxMWVwa1I2Q1BWUDFTdzJYLURmX2RzUkYyQ1lYNDUwdnJ6d0FVYXNnMTc3ZHd5M29pT3BWMDhvOThPelQ1eGPSAfgBQVVfeXFMTzhvenNLSVR2LU1CSFdJb2FSbF8wbjVEWm9XWHV3M01oc0lmZDRzZzFtWHp2QmZncU5CamJNakpDemt5WFUyeUVZbktsSVlIYVo0Q0pfWXZuNGU1UEg3cGdxcWVNTUpKa0V0RDBadFZDLVlBRUx3UHdDaFdSSmpJZTVOWmVSMEVmYWdmUUl6M1hDamJQVXllUlNyel8xNHVrVEZ4YWVRU2oxcXF1Q0hGNlRvbE5ZZFkxMmk1MmFzaHNBUklvS1JsT1psWmk2NThLTGhuYzJjZFRrXzlUdnlIQXBKeC04WHFzZ29FcFJFQnJDMFJpaDZTZU4?oc=5",
+          "publisher": "Al Bat",
+          "kind": "article",
+          "snippet": "Giannis Antetokounmpos Brother Endorses Explosive LaMelo Ball-Anthony Edwards Duo After Timberwolves Blockbuster Al Bat",
+          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "why-nuggets-excited-trade-return-peyton-watson-deal-e6106e6a",
+      "slug": "why-nuggets-excited-trade-return-peyton-watson-deal-e6106e6a",
+      "sport": "basketball",
+      "headline": "Peyton Watson trade grades: Cavaliers grab breakout wing, Nuggets have serious questions around Nikola Jokić",
+      "blurb": "Watson is heading to Cleveland as the Nuggets' championship window closes even further",
+      "summary": "Peyton Watson: Watson is heading to Cleveland as the Nuggets' championship window closes even further Why Nuggets Are Excited About Trade Return From Peyton Watson Deal Yahoo Sports Aggregated from CBS NBA, Yahoo Sports.",
+      "category": "trade",
+      "published": "2026-08-20T02:08:38Z",
+      "updated": "2026-09-09T13:00:59Z",
+      "players": [
+        {
+          "key": "peyton watson",
+          "name": "Peyton Watson",
+          "slug": "peyton-watson",
+          "pos": "SF",
+          "team": "DEN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Why Nuggets Are Excited About Trade Return From Peyton Watson Deal",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRVk5RFBpTVdSODJqSmdlTzR4bWZJbXVSckF2SUg3Z0QyQUdqLU40d25maVZlUXo5U3hXRkdpM2lLTlJRaDctZGFiaFJrT3UteU5pX2E2VlVsVDB6TUUwSzcxbXpTUzBMRU9YY3E0YTg1d1pKYXVGRFZ0aVJrYWwwSjZZZXJObkJr?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Why Nuggets Are Excited About Trade Return From Peyton Watson Deal Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 13:00:59 GMT"
+        },
+        {
+          "title": "Peyton Watson trade grades: Cavaliers grab breakout wing, Nuggets have serious questions around Nikola Jokić",
+          "url": "https://www.cbssports.com/nba/news/peyton-watson-trade-grades-cavaliers-nuggets-nikola-jokic/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "Watson is heading to Cleveland as the Nuggets' championship window closes even further",
+          "published": "Thu, 20 Aug 2026 02:08:38 +0000"
         }
       ]
     },
@@ -1723,6 +1801,90 @@
           "kind": "article",
           "snippet": "Harden still played at a high level last season. How long that can continue is anyone’s guess.",
           "published": "Wed, 09 Sep 2026 17:00:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "live-king-new-york-jalen-brunson-host-premiere-ab65b153",
+      "slug": "live-king-new-york-jalen-brunson-host-premiere-ab65b153",
+      "sport": "basketball",
+      "headline": "Live, from the King of New York: Jalen Brunson will host the season premiere of 'Saturday Night Live'",
+      "blurb": "Saturday Night Live announced that their 52nd season will premiere on September 26, and Knicks point guard Jalen Brunson will be the host.",
+      "summary": "Saturday Night Live announced that their 52nd season will premiere on September 26, and Knicks point guard Jalen Brunson will be the host. The All-Star point guard's “King of New York” superstar bona fides are about to get the kind of boost that can only come from standing at home base to deliver a monologue at Studio 8H. Knicks star Jalen Brunson is just the fifth NBA star to be tapped as a host by the long-running late-night sketch comedy show. Aggregated from SNY, Yahoo Sports, USA TODAY Sports, NBC Sports.",
+      "category": "wire",
+      "published": "2026-09-09T17:22:01Z",
+      "updated": "2026-09-09T18:09:28Z",
+      "players": [
+        {
+          "key": "jalen brunson",
+          "name": "Jalen Brunson",
+          "slug": "jalen-brunson",
+          "pos": "PG",
+          "team": "NYK"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Live, from the King of New York: Jalen Brunson will host the season premiere of 'Saturday Night Live'",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/live-from-the-king-of-new-york-jalen-brunson-will-host-the-season-premiere-of-saturday-night-live-180928983.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The All-Star point guard's “King of New York” superstar bona fides are about to get the kind of boost that can only come from standing at home base to deliver a monologue at Studio 8H.",
+          "published": "Wed, 09 Sep 2026 18:09:28 +0000"
+        },
+        {
+          "title": "Knicks star Jalen Brunson set to host SNL Season 52 premiere",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/knicks-star-jalen-brunson-set-175803193.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "Knicks star Jalen Brunson is just the fifth NBA star to be tapped as a host by the long-running late-night sketch comedy show. Who are the other four?",
+          "published": "Wed, 09 Sep 2026 17:58:03 +0000"
+        },
+        {
+          "title": "Jalen Brunson to host the season opener of Saturday Night Live on Sept. 26",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/jalen-brunson-host-season-opener-172201491.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Brunson became a New York legend and icon as the NBA Finals MVP, leading the Knicks to their first title in 53 years.",
+          "published": "Wed, 09 Sep 2026 17:22:01 +0000"
+        },
+        {
+          "title": "Knicks' Jalen Brunson to host 52nd season premiere of 'Saturday Night Live'",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/knicks-jalen-brunson-host-52nd-180815528.html",
+          "publisher": "SNY",
+          "kind": "article",
+          "snippet": "Saturday Night Live announced that their 52nd season will premiere on September 26, and Knicks point guard Jalen Brunson will be the host.",
+          "published": "Wed, 09 Sep 2026 18:08:15 +0000"
+        }
+      ]
+    },
+    {
+      "id": "did-kevin-durant-s-trade-value-plummet-summer-ec4f453d",
+      "slug": "did-kevin-durant-s-trade-value-plummet-summer-ec4f453d",
+      "sport": "basketball",
+      "headline": "Did Kevin Durant’s Trade Value Plummet This Summer?",
+      "blurb": "Did Kevin Durant’s Trade Value Plummet This Summer?",
+      "summary": "Did Kevin Durant’s Trade Value Plummet This Summer? Board reading of Sports Illustrated.",
+      "category": "trade",
+      "published": "2026-09-09T15:23:42Z",
+      "updated": "2026-09-09T15:23:42Z",
+      "players": [
+        {
+          "key": "kevin durant",
+          "name": "Kevin Durant",
+          "slug": "kevin-durant",
+          "pos": "PF",
+          "team": "HOU"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Did Kevin Durant’s Trade Value Plummet This Summer?",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZzg3VGhIRzlGbXFGX0JNSzRrZXZ3SHZnX3dvVmhfdkFEUUkyX200MXh3bVVwWXFfQUNkT2p1MG5fcEhZd0ZuZ18xTjBXcTdyMzJER0lGRWxHOGM3Z2JWbm9tTEt3V3YyeHFWOHNmWWtidUNGX2RuQW10bTVsSERzTjlPZ2NSa1V2WWVRUGhBWkVwRkNGR05PMWluYm5BTWdt?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Did Kevin Durant’s Trade Value Plummet This Summer? Sports Illustrated",
+          "published": "Wed, 09 Sep 2026 15:23:42 GMT"
         }
       ]
     },
@@ -2009,36 +2171,6 @@
       ]
     },
     {
-      "id": "did-kevin-durant-s-trade-value-plummet-summer-ec4f453d",
-      "slug": "did-kevin-durant-s-trade-value-plummet-summer-ec4f453d",
-      "sport": "basketball",
-      "headline": "Did Kevin Durant’s Trade Value Plummet This Summer?",
-      "blurb": "Did Kevin Durant’s Trade Value Plummet This Summer?",
-      "summary": "Did Kevin Durant’s Trade Value Plummet This Summer? Board reading of Sports Illustrated.",
-      "category": "trade",
-      "published": "2026-09-09T15:23:42Z",
-      "updated": "2026-09-09T15:23:42Z",
-      "players": [
-        {
-          "key": "kevin durant",
-          "name": "Kevin Durant",
-          "slug": "kevin-durant",
-          "pos": "PF",
-          "team": "HOU"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Did Kevin Durant’s Trade Value Plummet This Summer?",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZzg3VGhIRzlGbXFGX0JNSzRrZXZ3SHZnX3dvVmhfdkFEUUkyX200MXh3bVVwWXFfQUNkT2p1MG5fcEhZd0ZuZ18xTjBXcTdyMzJER0lGRWxHOGM3Z2JWbm9tTEt3V3YyeHFWOHNmWWtidUNGX2RuQW10bTVsSERzTjlPZ2NSa1V2WWVRUGhBWkVwRkNGR05PMWluYm5BTWdt?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Did Kevin Durant’s Trade Value Plummet This Summer? Sports Illustrated",
-          "published": "Wed, 09 Sep 2026 15:23:42 GMT"
-        }
-      ]
-    },
-    {
       "id": "tyler-herro-bitter-breakup-model-heat-trade-66978ce9",
       "slug": "tyler-herro-bitter-breakup-model-heat-trade-66978ce9",
       "sport": "basketball",
@@ -2136,32 +2268,32 @@
       ]
     },
     {
-      "id": "why-nuggets-excited-trade-return-peyton-watson-deal-e6106e6a",
-      "slug": "why-nuggets-excited-trade-return-peyton-watson-deal-e6106e6a",
+      "id": "why-lakers-bronny-james-unlikely-waived-la-s-dd459733",
+      "slug": "why-lakers-bronny-james-unlikely-waived-la-s-dd459733",
       "sport": "basketball",
-      "headline": "Why Nuggets Are Excited About Trade Return From Peyton Watson Deal",
-      "blurb": "Why Nuggets Are Excited About Trade Return From Peyton Watson Deal Yahoo Sports",
-      "summary": "Why Nuggets Are Excited About Trade Return From Peyton Watson Deal Yahoo Sports Board reading of Yahoo Sports.",
-      "category": "trade",
-      "published": "2026-09-09T13:00:59Z",
-      "updated": "2026-09-09T13:00:59Z",
+      "headline": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms",
+      "blurb": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms sportingnews.com",
+      "summary": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms sportingnews.com Board reading of sportingnews.com.",
+      "category": "roster",
+      "published": "2026-09-09T09:45:22Z",
+      "updated": "2026-09-09T09:45:22Z",
       "players": [
         {
-          "key": "peyton watson",
-          "name": "Peyton Watson",
-          "slug": "peyton-watson",
-          "pos": "SF",
-          "team": "DEN"
+          "key": "bronny james",
+          "name": "Bronny James",
+          "slug": "bronny-james",
+          "pos": "SG",
+          "team": "LAL"
         }
       ],
       "sources": [
         {
-          "title": "Why Nuggets Are Excited About Trade Return From Peyton Watson Deal",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRVk5RFBpTVdSODJqSmdlTzR4bWZJbXVSckF2SUg3Z0QyQUdqLU40d25maVZlUXo5U3hXRkdpM2lLTlJRaDctZGFiaFJrT3UteU5pX2E2VlVsVDB6TUUwSzcxbXpTUzBMRU9YY3E0YTg1d1pKYXVGRFZ0aVJrYWwwSjZZZXJObkJr?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQOEtJRlNIY0RKNmp2Q2F5RkEwRXRoS2V5ZDBNck1kZ2Z3TEdKT3pjQVRfYW5pakJvM1lfT3JqVFp0NmpZckV0MDY5aUwwRF9rZ2o0dzFWRldTeC1yZ0xiRnRrbm9KTjA1ZmFSUTFmQ284UjdFek9OSVVpQXVxTm9Cdk9jcjl1Y1lZQ0tYT1hQc1k3b1VpZ3l6WG1LUGZ2a0NPTFJiRmwwMUxXbnBXN25ucHlJTmQyYjBGblJVQ0ExeHJ1d2xwaTdabGZkN2dIZ0dOUUZrTUJMUzF4V2pmR3lfMGtHNXhYZFB2RHhWYVFGY0RWcjBZY3dRQ2lIMA?oc=5",
+          "publisher": "sportingnews.com",
           "kind": "article",
-          "snippet": "Why Nuggets Are Excited About Trade Return From Peyton Watson Deal Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 13:00:59 GMT"
+          "snippet": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms sportingnews.com",
+          "published": "Wed, 09 Sep 2026 09:45:22 GMT"
         }
       ]
     },
@@ -3176,36 +3308,6 @@
       ]
     },
     {
-      "id": "why-lakers-bronny-james-unlikely-waived-la-s-dd459733",
-      "slug": "why-lakers-bronny-james-unlikely-waived-la-s-dd459733",
-      "sport": "basketball",
-      "headline": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms",
-      "blurb": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms sportingnews.com",
-      "summary": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms sportingnews.com Board reading of sportingnews.com.",
-      "category": "roster",
-      "published": "2026-09-09T09:45:22Z",
-      "updated": "2026-09-09T09:45:22Z",
-      "players": [
-        {
-          "key": "bronny james",
-          "name": "Bronny James",
-          "slug": "bronny-james",
-          "pos": "SG",
-          "team": "LAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQOEtJRlNIY0RKNmp2Q2F5RkEwRXRoS2V5ZDBNck1kZ2Z3TEdKT3pjQVRfYW5pakJvM1lfT3JqVFp0NmpZckV0MDY5aUwwRF9rZ2o0dzFWRldTeC1yZ0xiRnRrbm9KTjA1ZmFSUTFmQ284UjdFek9OSVVpQXVxTm9Cdk9jcjl1Y1lZQ0tYT1hQc1k3b1VpZ3l6WG1LUGZ2a0NPTFJiRmwwMUxXbnBXN25ucHlJTmQyYjBGblJVQ0ExeHJ1d2xwaTdabGZkN2dIZ0dOUUZrTUJMUzF4V2pmR3lfMGtHNXhYZFB2RHhWYVFGY0RWcjBZY3dRQ2lIMA?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Why Lakers' Bronny James is unlikely to be waived as LA's roster decision looms sportingnews.com",
-          "published": "Wed, 09 Sep 2026 09:45:22 GMT"
-        }
-      ]
-    },
-    {
       "id": "pelicans-send-former-first-round-pick-jordan-hawkins-7549159f",
       "slug": "pelicans-send-former-first-round-pick-jordan-hawkins-7549159f",
       "sport": "basketball",
@@ -3247,52 +3349,6 @@
           "kind": "article",
           "snippet": "Report: Pelicans and Grizzlies working on four-player, two-pick trade sportsnet.ca",
           "published": "Tue, 08 Sep 2026 12:58:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "live-king-new-york-jalen-brunson-host-premiere-ab65b153",
-      "slug": "live-king-new-york-jalen-brunson-host-premiere-ab65b153",
-      "sport": "basketball",
-      "headline": "Live, from the King of New York: Jalen Brunson will host the season premiere of 'Saturday Night Live'",
-      "blurb": "The All-Star point guard's “King of New York” superstar bona fides are about to get the kind of boost that can only come from standing at home base to deliver a monologue at…",
-      "summary": "Jalen Brunson: The All-Star point guard's “King of New York” superstar bona fides are about to get the kind of boost that can only come from standing at home base to deliver a monologue at Studio 8H. Knicks star Jalen Brunson is just the fifth NBA star to be tapped as a host by the long-running late-night sketch comedy show. Brunson became a New York legend and icon as the NBA Finals MVP, leading the Knicks to their first title in 53 years. Aggregated from Yahoo Sports, USA TODAY Sports, NBC Sports.",
-      "category": "wire",
-      "published": "2026-09-09T17:22:01Z",
-      "updated": "2026-09-09T18:09:28Z",
-      "players": [
-        {
-          "key": "jalen brunson",
-          "name": "Jalen Brunson",
-          "slug": "jalen-brunson",
-          "pos": "PG",
-          "team": "NYK"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Live, from the King of New York: Jalen Brunson will host the season premiere of 'Saturday Night Live'",
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/live-from-the-king-of-new-york-jalen-brunson-will-host-the-season-premiere-of-saturday-night-live-180928983.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The All-Star point guard's “King of New York” superstar bona fides are about to get the kind of boost that can only come from standing at home base to deliver a monologue at Studio 8H.",
-          "published": "Wed, 09 Sep 2026 18:09:28 +0000"
-        },
-        {
-          "title": "Knicks star Jalen Brunson set to host SNL Season 52 premiere",
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/knicks-star-jalen-brunson-set-175803193.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "Knicks star Jalen Brunson is just the fifth NBA star to be tapped as a host by the long-running late-night sketch comedy show. Who are the other four?",
-          "published": "Wed, 09 Sep 2026 17:58:03 +0000"
-        },
-        {
-          "title": "Jalen Brunson to host the season opener of Saturday Night Live on Sept. 26",
-          "url": "https://www.yahoo.com/entertainment/tv/articles/jalen-brunson-host-season-opener-172201491.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Brunson became a New York legend and icon as the NBA Finals MVP, leading the Knicks to their first title in 53 years.",
-          "published": "Wed, 09 Sep 2026 17:22:01 +0000"
         }
       ]
     },
@@ -3498,66 +3554,6 @@
           "kind": "article",
           "snippet": "\"We’re all super close\" - Dylan Harper Shuts Down Rumors Of Friction With 'Uncle' De'Aaron Fox Over Spurs Starting Spot Sportskeeda",
           "published": "Tue, 08 Sep 2026 23:04:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "unrealistic-trade-idea-sends-clippers-darius-garland-hawks-a9736a5f",
-      "slug": "unrealistic-trade-idea-sends-clippers-darius-garland-hawks-a9736a5f",
-      "sport": "basketball",
-      "headline": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks",
-      "blurb": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks roundtable.io",
-      "summary": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks roundtable.io Board reading of roundtable.io.",
-      "category": "trade",
-      "published": "2026-09-08T21:07:59Z",
-      "updated": "2026-09-08T21:07:59Z",
-      "players": [
-        {
-          "key": "darius garland",
-          "name": "Darius Garland",
-          "slug": "darius-garland",
-          "pos": "PG",
-          "team": "CLE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeFIzRTJIdXFhMTdJRTFwajZ5VmE5RDFZcWp4NlRMcHNwQ09LRmlhd1psT05rRFZCYk9IQ3ZudzVsNXJFcTRBdW9iNWx6SllpWW5aZ0pRVWh3cGNPR0toQUFCazhjUFJBQVJrbjBId0dpRjc4bWwtTFJ5c0RFenlib1dnYW1JVHpnNG5XQXYzMXByeTlXd3BNVEU0MndJQUpPODdOcTlaX1AyZUtjMEE?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks roundtable.io",
-          "published": "Tue, 08 Sep 2026 21:07:59 GMT"
-        }
-      ]
-    },
-    {
-      "id": "lakers-trade-proposal-swaps-dalton-knecht-elite-defensive-ff0a0be7",
-      "slug": "lakers-trade-proposal-swaps-dalton-knecht-elite-defensive-ff0a0be7",
-      "sport": "basketball",
-      "headline": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard",
-      "blurb": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard heavy.com",
-      "summary": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard heavy.com Board reading of heavy.com.",
-      "category": "trade",
-      "published": "2026-09-08T20:52:21Z",
-      "updated": "2026-09-08T20:52:21Z",
-      "players": [
-        {
-          "key": "dalton knecht",
-          "name": "Dalton Knecht",
-          "slug": "dalton-knecht",
-          "pos": "SF",
-          "team": "LAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZTZwN3lLbEU4X3owSTlvUDB0NHNsczNuaGRiM25BNHpwR0s3UXFldlhYb0VOeFVuT1V3WU1lS0hHLWNwZ0pzZmJGVF96cmtTQzJUVWxEejhpVEhscHRGZDVwNkNjeXItdGhOdHYweFBBQTZNVEhfQS02MTBzWWtkSlZ1VlpQQVU0TUlaQkRueHY?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard heavy.com",
-          "published": "Tue, 08 Sep 2026 20:52:21 GMT"
         }
       ]
     },
@@ -14052,6 +14048,66 @@
           "kind": "article",
           "snippet": "Portland Trail Blazers at Chicago Bulls - Starting Lineups, Injury News, How to Watch Sports Illustrated",
           "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "unrealistic-trade-idea-sends-clippers-darius-garland-hawks-a9736a5f",
+      "slug": "unrealistic-trade-idea-sends-clippers-darius-garland-hawks-a9736a5f",
+      "sport": "basketball",
+      "headline": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks",
+      "blurb": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks roundtable.io",
+      "summary": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks roundtable.io Board reading of roundtable.io.",
+      "category": "trade",
+      "published": "2026-09-08T21:07:59Z",
+      "updated": "2026-09-08T21:07:59Z",
+      "players": [
+        {
+          "key": "darius garland",
+          "name": "Darius Garland",
+          "slug": "darius-garland",
+          "pos": "PG",
+          "team": "CLE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeFIzRTJIdXFhMTdJRTFwajZ5VmE5RDFZcWp4NlRMcHNwQ09LRmlhd1psT05rRFZCYk9IQ3ZudzVsNXJFcTRBdW9iNWx6SllpWW5aZ0pRVWh3cGNPR0toQUFCazhjUFJBQVJrbjBId0dpRjc4bWwtTFJ5c0RFenlib1dnYW1JVHpnNG5XQXYzMXByeTlXd3BNVEU0MndJQUpPODdOcTlaX1AyZUtjMEE?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Unrealistic NBA Trade Idea Sends Clippers' Darius Garland to Hawks roundtable.io",
+          "published": "Tue, 08 Sep 2026 21:07:59 GMT"
+        }
+      ]
+    },
+    {
+      "id": "lakers-trade-proposal-swaps-dalton-knecht-elite-defensive-ff0a0be7",
+      "slug": "lakers-trade-proposal-swaps-dalton-knecht-elite-defensive-ff0a0be7",
+      "sport": "basketball",
+      "headline": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard",
+      "blurb": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard heavy.com",
+      "summary": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard heavy.com Board reading of heavy.com.",
+      "category": "trade",
+      "published": "2026-09-08T20:52:21Z",
+      "updated": "2026-09-08T20:52:21Z",
+      "players": [
+        {
+          "key": "dalton knecht",
+          "name": "Dalton Knecht",
+          "slug": "dalton-knecht",
+          "pos": "SF",
+          "team": "LAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZTZwN3lLbEU4X3owSTlvUDB0NHNsczNuaGRiM25BNHpwR0s3UXFldlhYb0VOeFVuT1V3WU1lS0hHLWNwZ0pzZmJGVF96cmtTQzJUVWxEejhpVEhscHRGZDVwNkNjeXItdGhOdHYweFBBQTZNVEhfQS02MTBzWWtkSlZ1VlpQQVU0TUlaQkRueHY?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Lakers Trade Proposal Swaps Dalton Knecht For Elite Defensive Guard heavy.com",
+          "published": "Tue, 08 Sep 2026 20:52:21 GMT"
         }
       ]
     }
