@@ -1,19 +1,157 @@
 {
   "sport": "football",
-  "updated": "2026-09-09T21:23:42Z",
-  "fresh": 261,
+  "updated": "2026-09-09T22:24:18Z",
+  "fresh": 247,
   "stories": [
+    {
+      "id": "alec-pierce-expected-play-colts-1-60b416e4",
+      "slug": "alec-pierce-expected-play-colts-1-60b416e4",
+      "sport": "football",
+      "headline": "Colts WR Alec Pierce expected to be ready for regular season opener against Ravens",
+      "blurb": "Breece Hall, Isaiah Davis and Kenyon Sadiq are all listed as full participants on today's injury report x.com",
+      "summary": "Breece Hall, Isaiah Davis and Kenyon Sadiq are all listed as full participants on today's injury report x.com Colts wide receiver Alec Pierce has been back at practice for a little over a week, but that's been enough time for the team to see what they needed from the wideout. Coach Shan Steichen said Monday that Pierce (ankle) \"should be good to go\" for Sunday's game against the Ravens, Joel A. Aggregated from x.com, PFT feed, RotoWire NFL, SB Nation, espn.com and 4 more.",
+      "category": "injury",
+      "published": "2026-08-17T07:00:00Z",
+      "updated": "2026-09-09T21:00:30Z",
+      "players": [
+        {
+          "key": "kenyon sadiq",
+          "name": "Kenyon Sadiq",
+          "slug": "kenyon-sadiq",
+          "pos": "TE",
+          "team": "NYJ"
+        },
+        {
+          "key": "isaiah davis",
+          "name": "Isaiah Davis",
+          "slug": "isaiah-davis",
+          "pos": "RB",
+          "team": "NYJ"
+        },
+        {
+          "key": "breece hall",
+          "name": "Breece Hall",
+          "slug": "breece-hall",
+          "pos": "RB",
+          "team": "NYJ"
+        },
+        {
+          "key": "alec pierce",
+          "name": "Alec Pierce",
+          "slug": "alec-pierce",
+          "pos": "WR",
+          "team": "IND"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Alec Pierce is expected to play for the Colts in Week 1",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/alec-pierce-is-expected-to-play-for-the-colts-in-week-1",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Colts wide receiver Alec Pierce has been back at practice for a little over a week, but that's been enough time for the team to see what they needed from the wideout.",
+          "published": "Mon, 07 Sep 2026 15:52:08 -0400"
+        },
+        {
+          "title": "Alec Pierce: Expected to play Week 1",
+          "url": "https://www.rotowire.com//football/player/alec-pierce-16022",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Coach Shan Steichen said Monday that Pierce (ankle) \"should be good to go\" for Sunday's game against the Ravens, Joel A. Erickson of The Indianapolis Star reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Mon, 07 Sep 2026 12:50:00 PM PDT"
+        },
+        {
+          "title": "Colts coach Shane Steichen says WR Alec Pierce (ankle) will play Week 1 vs. Ravens https://t.co/S7fJv90g2O",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1SEF0MGZveHpiTVpKSklXaGxEOHcwNHZMNTdKaVNhZ2hFMDZpbmpmQmc0UTIwOVJ3UUlFSExLdTNDRm9oblRXemV6SGR5UzNxLVBwSXE0VzBpWEJITDRJWmg0QQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Colts coach Shane Steichen says WR Alec Pierce (ankle) will play Week 1 vs. Ravens https://t.co/S7fJv90g2O x.com",
+          "published": "Mon, 07 Sep 2026 19:47:55 GMT"
+        },
+        {
+          "title": "Colts WR Alec Pierce expected to be ready for regular season opener against Ravens",
+          "url": "https://sports.yahoo.com/articles/colts-wr-alec-pierce-expected-233054603.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Colts received some promising injury news on returning lead wideout Alec Pierce-although not unexpected.",
+          "published": "Mon, 07 Sep 2026 23:30:54 +0000"
+        },
+        {
+          "title": "Jets RB Hall expected to miss 2-3 weeks, be ready for opener",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOeG5NQlgtemI1TTB1YjRVQ3dnLVFWNTVTNldNcGktNXV6RzEzbmVROUlYb2w4WjFpUmhIN0ZHYS1BSGtDbUJRbzlwTURUbEFRZzNqbDR3Wm9rS21mdHZUbThqZDh5b0dsczFfN2V6S3c4SEEtaFR1X0dNMmJjV1lhVU1ZYWFxV19GeUJyTXprZlRmdHRTNjlSeHRR?oc=5",
+          "publisher": "espn.com",
+          "kind": "article",
+          "snippet": "Jets RB Hall expected to miss 2-3 weeks, be ready for opener espn.com",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "New York Jets RB Breece Hall to miss 2-3 weeks, ready for opener",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaXBET0dJVG9yeXBvTG82cEpIeW13eGJ4dG1yNHFkcFlLUnhtbHZWemFfUklGVmttejU4elNGZGFnU09hM3dEckItOEFlMXd4akh5cXlaYkNVYW1BTU1nUmNXd3E3YVVfWnZTZzU3VEVDRjVld2F4Sko5b0FLclNhcWpRLWswbW1uNmpZdzBaSkFiRjR5QTRGVWR3QXFJaW1FNm9IX1MzeWU?oc=5",
+          "publisher": "upi.com",
+          "kind": "article",
+          "snippet": "New York Jets RB Breece Hall to miss 2-3 weeks, ready for opener upi.com",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jets' Breece Hall to miss multiple weeks, will be ready for Week 1",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOE5FdGR3dm93dk9FeG9USXhlRGRlUDV2LTRLZm5CV3FYdHMxRjE3ZDdpSTRSMUd0UUVNUTJSX0tJcXFFc1BoSGRzdjRYZS1JWnJNM3NtY0JPdVhHUHVJTUZ5OW82a3JiOVlLQ3hDMlZhNkp0eDVlNTVneDlERmJjVTlCM01FX3F0WEtkMGwzbkdxVWFYRF8yQUVadS03N2Nvd3dYNVpfZzVKeURBNFBLOG9VUUx1NlU?oc=5",
+          "publisher": "Bergen Record",
+          "kind": "article",
+          "snippet": "Jets' Breece Hall to miss multiple weeks, will be ready for Week 1 Bergen Record",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jets news: Breece Hall Week 1 injury update will fire up fantasy managers",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNd0V6VnctOTZjb21UbGpwSmtYSXl3Si1YTG5pMGxKNjdQc2pGTUtjSWl2Q0FhSE1XZzlYZ19qQ2h4MkdFTjlCZU9vaWxwcWgwM1RkYUJRaHJNbVFTM2dBNFJuVnJ5ZXpKb1Rab1B2bmZ5ZWRnV2xpeko4aDdESUNzMA?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Jets news: Breece Hall Week 1 injury update will fire up fantasy managers Yahoo Sports",
+          "published": "Tue, 08 Sep 2026 17:53:49 GMT"
+        },
+        {
+          "title": "Alec Pierce listed as limited on Wednesday",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/alec-pierce-listed-as-limited-on-wednesday",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "While Colts receiver Alec Pierce is expected to play in Sunday’s season opener against the Ravens, he is not yet practicing in full.",
+          "published": "Wed, 09 Sep 2026 16:50:07 -0400"
+        },
+        {
+          "title": "Alec Pierce Logs limited practice Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOelhZS1NManNQTnZfYzNSMjRXWjNlSGttNEVlM1JtMXFUQ1ZZdFA1eHllZWFKMlpIVXVBMEN5VWFGM3dXc3lJMGpuUGlzWVBkVnlxYWQ5cHJ1SzVSdmhTeUZsZTUyN0hBaXNGX1BKdzRVdU5NbVlNRndjd3k4V245ZVZ6cE9vTEJ6ZjRtRFJRTmEyZW1xUU9zdUV3?oc=5",
+          "publisher": "Fantasy Footballers Podcast",
+          "kind": "article",
+          "snippet": "Alec Pierce Logs limited practice Wednesday Fantasy Footballers Podcast",
+          "published": "Wed, 09 Sep 2026 21:00:30 GMT"
+        },
+        {
+          "title": "Breece Hall, Isaiah Davis and Kenyon Sadiq are all listed as full participants on today's injury report",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE10bEh6NUV0RXVMNThlZjNpOWh5YmJVV3IzcFVHejR5STgxY05TaEtJSFo3X0dDWlpGbjJFbXdwLUVreTl6SW0yaUhNcExtT1NNdnByZVgyc3NBU0E?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Breece Hall, Isaiah Davis and Kenyon Sadiq are all listed as full participants on today's injury report x.com",
+          "published": "Wed, 09 Sep 2026 20:00:01 GMT"
+        }
+      ]
+    },
     {
       "id": "injury-1-player-including-surprise-brock-bowers-3608c411",
       "slug": "injury-1-player-including-surprise-brock-bowers-3608c411",
       "sport": "football",
       "headline": "NFL Injury Report, Week 1: Latest player news, updates for fantasy football, including surprise Brock Bowers news",
-      "blurb": "Here is Wednesday's injury report for the Dallas Cowboys.",
-      "summary": "Malik Nabers, Jonathan Taylor, Brock Bowers and TreVeyon Henderson: Here is Wednesday's injury report for the Dallas Cowboys. Wide receiver Malik Nabers has not played in almost a year, since tearing his right ACL in a Sept. 28 game against the Chargers. Aggregated from SB Nation, ProFootball Talk on NBC Sports, PFT feed, Yahoo Sports, FantasyLife and 7 more.",
+      "blurb": "NFL Injury Report, Week 1: Latest player news, updates for fantasy football, including surprise Brock Bowers news Yahoo Sports Canada",
+      "summary": "NFL Injury Report, Week 1: Latest player news, updates for fantasy football, including surprise Brock Bowers news Yahoo Sports Canada Raiders’ Brock Bowers injury update reveals recent surgery, timeline for return Yahoo Sports The worst part about Brock Bowers' injury is that he'll probably miss 4 weeks and never actually be placed on IR. Aggregated from Yahoo Sports Canada, Yahoo Sports, x.com, USA TODAY Sports, Fantasy Alarm and 8 more.",
       "category": "injury",
       "published": "2026-08-09T07:00:00Z",
       "updated": "2026-09-09T20:59:56Z",
       "players": [
+        {
+          "key": "brock bowers",
+          "name": "Brock Bowers",
+          "slug": "brock-bowers",
+          "pos": "TE",
+          "team": "LV"
+        },
         {
           "key": "malik nabers",
           "name": "Malik Nabers",
@@ -27,13 +165,6 @@
           "slug": "jonathan-taylor",
           "pos": "RB",
           "team": "IND"
-        },
-        {
-          "key": "brock bowers",
-          "name": "Brock Bowers",
-          "slug": "brock-bowers",
-          "pos": "TE",
-          "team": "LV"
         },
         {
           "key": "treveyon henderson",
@@ -187,6 +318,30 @@
           "kind": "article",
           "snippet": "Fantasy Football Mock Draft: A Jonathan Taylor-Malik Nabers Start In 14-Team Mock FantasyLife",
           "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NFL Injury Report, Week 1: Latest player news, updates for fantasy football, including surprise Brock Bowers news",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZlNLN2tCbkdPU2NkRzJtV3Rqb183Unp3Vk00TzFkZHpSbV9EZkJQMnFWMVVuWncyQzAzdmM2cXI1U05hTzFkMnNzMHNIamZwZE5rX3FKQzNvSGtiYTVVX3JPZmJlM1h2UW54bTI5RFhTSUZhbElRaTFxVVlPWlJCc0lBaWtOWnJWcnhvdE9MUGtTNDlpeXg4aF9PNlBDc0dlZmxRTk9obDBaeGRBZXB0ZTVzckVPT2gtNHNBWQ?oc=5",
+          "publisher": "Yahoo Sports Canada",
+          "kind": "article",
+          "snippet": "NFL Injury Report, Week 1: Latest player news, updates for fantasy football, including surprise Brock Bowers news Yahoo Sports Canada",
+          "published": "Wed, 09 Sep 2026 20:42:09 GMT"
+        },
+        {
+          "title": "NFL Injury Report, Week 1: Latest player news, updates for fantasy football, including surprise Brock Bowers news",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOLTFqS1VMMTNZNjN3THNLdFBoY3BwVDg0UTBIWDhYNjNQY3kyUlNWRC1ZT215YjA2MloyZFJQSk5WZk5VQTBLNE9GOFh2bWZGcjM4RHl6ZDY1elpnV1dhdXE2eFZqTWk5UU1Xc09KR3JQSm1jTmRibEJqVjFjSHZUYW05cnl1ejNZNmxHODNCSDBxR3dpTF81aXlFYkx6Tk45S2kzVGZiclRQTTZPXzZGTEtVM251LWc2RDdJUk9QcnNYLWQ2Q0tOUlVUV2NxUFZidnVhd0ZXeUVGejlvbkJFMUR0R3FQZEFpSnFhakFJYnFnbnFhVlVuQw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "NFL Injury Report, Week 1: Latest player news, updates for fantasy football, including surprise Brock Bowers news Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 20:42:09 GMT"
+        },
+        {
+          "title": "The worst part about Brock Bowers' injury is that he'll probably miss 4 weeks and never actually be placed on IR.",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5GR1pmSThNQ0hHd3FwUl8xeFIwNHdvdU9MT18zYnZ3TERSREtvZTlLbzg3N05Rc0g3LTU5ZTk1NXRCSlRtSWtmOURXdDJ2SmRBcGE0eWJ1MFpBVDBpM1FlWTdnSFI?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The worst part about Brock Bowers' injury is that he'll probably miss 4 weeks and never actually be placed on IR. x.com",
+          "published": "Wed, 09 Sep 2026 20:37:30 GMT"
         }
       ]
     },
@@ -195,8 +350,8 @@
       "slug": "patriots-practice-treveyon-henderson-remains-sidelined-seattle-prep-2a8b28dc",
       "sport": "football",
       "headline": "NFL news roundup: Patriots RB TreVeyon Henderson (ankle) doesn't practice; Niners sign DL Khalid Kareem",
-      "blurb": "The Patriots listed three players as out of practice on Sunday and they got one of them back on the field Monday.",
-      "summary": "TreVeyon Henderson, Ja'Marr Chase, Josh Allen, Drake Maye and Romeo Doubs: The Patriots listed three players as out of practice on Sunday and they got one of them back on the field Monday. Seahawks vs Patriots Injury Reports for Season-Opener - Will TreVeyon Henderson Play? The Patriots returned to practice on Thursday. Aggregated from PFT feed, Sports Betting Dime, SB Nation, RotoWire NFL, ProFootball Talk on NBC Sports and 11 more.",
+      "blurb": "Is TreVeyon Henderson playing Week 1?",
+      "summary": "Is TreVeyon Henderson playing Week 1? Latest injury update for Patriots RB Yahoo Sports The Patriots returned to practice on Thursday. Aggregated from Yahoo Sports, SB Nation, RotoWire NFL, ProFootball Talk on NBC Sports, PFT feed and 11 more.",
       "category": "injury",
       "published": "2025-12-28T08:00:00Z",
       "updated": "2026-09-09T18:26:00Z",
@@ -477,6 +632,14 @@
           "kind": "article",
           "snippet": "Seahawks vs Patriots Injury Reports for Season-Opener - Will TreVeyon Henderson Play? Sports Betting Dime",
           "published": "Wed, 09 Sep 2026 18:26:00 GMT"
+        },
+        {
+          "title": "Is TreVeyon Henderson playing Week 1? Latest injury update for Patriots RB",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOX05vSUs2S3A5R2lnaTRYOUZOeXBLYS1qZWNYR3NTWDQzVUZSN2VlbVlmNDBQVkE3cFJVdkY2cEQ3bW9uQk8zM3ZPbUxKTHdLbHVJeWR4czhjRlR2dDB5TjVFN0ZTTXVTUEVFNTA3MWwxSWppVlJqTTVybTJFTTU2cmJVaXBicXltWGc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Is TreVeyon Henderson playing Week 1? Latest injury update for Patriots RB Yahoo Sports",
+          "published": "Tue, 08 Sep 2026 21:03:05 GMT"
         }
       ]
     },
@@ -1339,6 +1502,270 @@
       ]
     },
     {
+      "id": "buccaneers-name-captains-2026-bfce2772",
+      "slug": "buccaneers-name-captains-2026-bfce2772",
+      "sport": "football",
+      "headline": "Falcons agree to $141 million, 4-year contract extension with top receiver Drake London",
+      "blurb": "Buccaneers quarterback Baker Mayfield has signed his new contract.",
+      "summary": "Buccaneers quarterback Baker Mayfield has signed his new contract. The Tampa Bay Buccaneers have selected their team captains for the 2026 season, with six veterans earning the honor through a vote by their teammates. Quarterback Baker Mayfield, tackle Tristan Wirfs, wide receiver Chris Godwin, nose tackle Vita Vea, linebacker Alex Anzalone and Aggregated from PFT feed, SB Nation, CBS NFL, NFLTradeRumors.co, x.com and 5 more.",
+      "category": "roster",
+      "published": "2026-06-02T07:00:00Z",
+      "updated": "2026-09-09T21:36:16Z",
+      "players": [
+        {
+          "key": "baker mayfield",
+          "name": "Baker Mayfield",
+          "slug": "baker-mayfield",
+          "pos": "QB",
+          "team": "TB"
+        },
+        {
+          "key": "drake london",
+          "name": "Drake London",
+          "slug": "drake-london",
+          "pos": "WR",
+          "team": "ATL"
+        },
+        {
+          "key": "chris godwin",
+          "name": "Chris Godwin",
+          "slug": "chris-godwin",
+          "pos": "WR",
+          "team": "TB"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Buccaneers name captains for the 2026 season",
+          "url": "https://sports.yahoo.com/articles/buccaneers-name-captains-2026-season-183223989.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Tampa Bay Buccaneers have selected their team captains for the 2026 season, with six veterans earning the honor through a vote by their teammates. Quarterback Baker Mayfield, tackle Tristan Wirfs, wide receiver Chris Godwin, nose tackle Vita Vea, linebacker Alex Anzalone and ",
+          "published": "Mon, 07 Sep 2026 18:32:23 +0000"
+        },
+        {
+          "title": "Green Bay Packers name team captains for 2026",
+          "url": "https://sports.yahoo.com/articles/green-bay-packers-name-team-232108344.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "New linebacker Zaire Franklin has been named a team captain for the Packers",
+          "published": "Mon, 07 Sep 2026 23:21:08 +0000"
+        },
+        {
+          "title": "Green Bay Roster: Breaking down the new Packers for 2026 and their roles",
+          "url": "https://sports.yahoo.com/articles/green-bay-roster-breaking-down-100000326.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "DL Javon Hargrave’s role with the Green Bay Packers is undefined going into the regular season",
+          "published": "Tue, 08 Sep 2026 10:00:00 +0000"
+        },
+        {
+          "title": "Baker Mayfield, Buccaneers agree to massive three-year contract extension",
+          "url": "https://www.cbssports.com/nfl/news/baker-mayfield-buccaneers-contract-extension/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "The massive contract ends tense negotiations which seemingly came to a pause at the start of training camp",
+          "published": "Tue, 08 Sep 2026 22:10:29 +0000"
+        },
+        {
+          "title": "Bucs announce three-year extension with Baker Mayfield",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bucs-announce-three-year-extension-with-baker-mayfield",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "The third deal the QB has signed with the Bucs will keep him under contract with the team through the 2029 season.",
+          "published": "Tue, 08 Sep 2026 18:15:21 -0400"
+        },
+        {
+          "title": "BREAKING: Buccaneers Signing QB Baker Mayfield To Three-Year, $165 Extension",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM3hxcjRxN1E1T0FYblJBQkRLQnZCd1FzOTdGUHFQV1FDSHZOTUM1b19vNnRaNWZSblhmMm02SmdzSjhGa2FPWjBxR1Y4dnVHckFYdGt3U01qSW1KdFQtZkxSajE1UlczQlRBYzlWcjRMYUJvQjhzak5jTlNNcTJaWHRhTlV2ZU5YMXZ1Y0NrUFZmQVlGdkVOMmlMZ2o?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "BREAKING: Buccaneers Signing QB Baker Mayfield To Three-Year, $165 Extension NFLTradeRumors.co",
+          "published": "Tue, 08 Sep 2026 21:09:57 GMT"
+        },
+        {
+          "title": "Buccaneers, QB Baker Mayfield agree to a three-year, $165M extension. (via @RapSheet, @AdamSchefter)",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE93NGoyN0EzSzFPQUFVbFpleG4zUkZzQXl6aWhrNWZycjBTSWZvYmVaUzRfTUNGSHh1RUJCZlZyZ09wVjM2N3F4MWF6VVlwSlhTb0YzYXpqbw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Buccaneers, QB Baker Mayfield agree to a three-year, $165M extension. (via @RapSheet, @AdamSchefter) x.com",
+          "published": "Tue, 08 Sep 2026 21:16:47 GMT"
+        },
+        {
+          "title": "NFL world reacts to Drake London's massive contract extension",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPOVg0VERXbXdmSHl4ME9mN0VDLU5TNS1HVXhIN0JkUnQ1NjNwWWcyaTNqSW9iUkN6REhUd1FIczdaa3F5clk0WFlsRHI3a0JkYWV4T0RGZkVJV2Z1S0xOQ1liUE5hYXJQMkpsczlqNzdTVHFldkxob1Vjd250VzJ5RDZxRVJ4Zw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "NFL world reacts to Drake London's massive contract extension Yahoo Sports",
+          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NFL world reacts to Drake London's massive contract extension",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQZnBPYmRvN3pRVm9LTkRIejZuekRkUnB6TF9uU2REbmtwTnVxLWZNNk5QUTNRc0RWdEtCTWd1LUhTRS1YM1BMZHIxY3BZeHBwNnJ2Z3VyVjBhb3ZQdHVodzhpemo4YzRsSVdfc2hlOW00Z21ESXNsZjlraHZ2TkpxVmo1bFM0OGZNN09ycldYRzQyXzlzWEVHQUNDZEhWMnI3bTRWU0R0WWhkMXhGSElBd0VuN1lvVWE0ZmxWNmNLZ3RvakozblRhaHN1UXdlWExHVGxpNEFHX0R2bzJHY0Jj?oc=5",
+          "publisher": "Falcons Wire",
+          "kind": "article",
+          "snippet": "NFL world reacts to Drake London's massive contract extension Falcons Wire",
+          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Falcons agree to $141 million, 4-year contract extension with top receiver Drake London",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdXRKbFZ6S2ZDYjE2bEduZ190YTJSUi1VNjhKSjgwMkZHcFZHUG5EMHdiUmtTQzUybFBNRGhjejFVSVJkaFJTc2dOekViTVNONVpGUndsbHhyOGYtbUwwR2NzWDZkLXpVVXRNbXlsY1h6RkkxY2NBVEQ0SVdUd0JONnp3?oc=5",
+          "publisher": "Newsday",
+          "kind": "article",
+          "snippet": "Falcons agree to $141 million, 4-year contract extension with top receiver Drake London Newsday",
+          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Falcons, Drake London reach 4-year, $141M extension, agent says",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTElVWTRrMnlrbVliU2gyZDI0RnFPcUJ0VXRNMXlvZEliUlFhQzMwRlhaWF9MZWtNaWJvVHJHWEgzSWtiTWZSS0N5M2FBdkxFakVmR09od1hRMjFtTnRmMEhOT0plcDg4RU40aHJjcWN6b1A0Y0hRM1Bidkx6MDhzbTBDdVNDN3FsdVJZME1tbWxFektCV05CZ0pRbC01MTlpQ1FzaUFBNA?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Falcons, Drake London reach 4-year, $141M extension, agent says ESPN",
+          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Drake London reacts to heartfelt messages from loved ones after NFL extension",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOXJ5Y195MXJBbjU5R0RIZ1dJWnZZTXRJTFJhUWpzQ1VlTDZ6OEt3bFV0cHFtZWpaTnBoY3NzRVRVTXYwaVBYWVI0a2h3S1lLbDlETTZlYjlmU0xlYmJxMVRicXJyOTQ2bUcyUTNZZmFPd21ycmZzM3N2cVNsWENyNGtYeGRQZ2pCOXRKM1QtVHYyM3JKTXdFOGZZY0llRURxLWlWa3ZHcGVzdkpUVzg3Z1k5OWhxVkFYMDBvbUlJWThEVWpUUXphT0p3?oc=5",
+          "publisher": "Atlanta Falcons",
+          "kind": "article",
+          "snippet": "Drake London reacts to heartfelt messages from loved ones after NFL extension Atlanta Falcons",
+          "published": "Mon, 08 Jun 2026 22:04:25 GMT"
+        },
+        {
+          "title": "Drake London reportedly agrees to 4-year, $141 million contract extension with Falcons",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMDZuLWh0YlJzTDJ1WFN6SmZBZHJtbmFpVklJYnluX2NjUGxYbVhYenh0V3RsUDVPeGlVUmdoLXhGVWp5RUxxV0pac0JVOEZybWViYkdpWjNtaXFJRXc2NXdrdkdCdTdXNlpSM09zTVRjaVpXQWpmd0hZeVZ4ZGZFYmo4RmpXQzh1MXRoQ21Kdkt3aXMzWVYwWmtDdFhnT19OenN6cUl2ajZ5dmFoZ0M1QThhemRFZ0ZFRUJLLUFTSEdoMWY0Q0ttaV93UUNmUEQ5aVNOcnlEcjIyZWROOEdNbXRHV24?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Drake London reportedly agrees to 4-year, $141 million contract extension with Falcons Yahoo Sports",
+          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Baker Mayfield didn't know contract talks were back on until Monday night",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/baker-mayfield-didnt-know-contract-talks-were-back-on-until-monday-night",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "News that Buccaneers quarterback Baker Mayfield agreed to a contract extension on Tuesday came as a surprise to many people and the news that talks were even going was the source of an earlier surprise to Mayfield.",
+          "published": "Wed, 09 Sep 2026 15:17:55 -0400"
+        },
+        {
+          "title": "Inside the new Baker Mayfield deal",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/inside-the-new-baker-mayfield-deal",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Buccaneers quarterback Baker Mayfield has signed his new contract.",
+          "published": "Wed, 09 Sep 2026 17:36:16 -0400"
+        }
+      ]
+    },
+    {
+      "id": "puka-nacua-listed-rams-first-injury-85035355",
+      "slug": "puka-nacua-listed-rams-first-injury-85035355",
+      "sport": "football",
+      "headline": "Agent's Take: George Pickens, Puka Nacua headline non-quarterbacks who are at a crossroads entering 2026",
+      "blurb": "NFL Week 1 Fantasy Football injury report: Puka Nacua, Malik Nabers, more Yahoo Sports",
+      "summary": "NFL Week 1 Fantasy Football injury report: Puka Nacua, Malik Nabers, more Yahoo Sports Cowboys-Giants initial Week 1 Injury Report: Malik Nabers update Yahoo Sports Good news: #Giants WR Malik Nabers, returning from a torn ACL, was a full participant in practice today - the team’s first official practice of the 2026 regular season, per HC John Harbaugh. Aggregated from Yahoo Sports, x.com, Fantasy Footballers Podcast, FantasyPros, CBS NFL and 1 more.",
+      "category": "injury",
+      "published": "2026-09-08T15:00:31Z",
+      "updated": "2026-09-09T21:07:27Z",
+      "players": [
+        {
+          "key": "malik nabers",
+          "name": "Malik Nabers",
+          "slug": "malik-nabers",
+          "pos": "WR",
+          "team": "NYG"
+        },
+        {
+          "key": "puka nacua",
+          "name": "Puka Nacua",
+          "slug": "puka-nacua",
+          "pos": "WR",
+          "team": "LAR"
+        },
+        {
+          "key": "george pickens",
+          "name": "George Pickens",
+          "slug": "george-pickens",
+          "pos": "WR",
+          "team": "DAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Puka Nacua Avoids injury report",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbklBY3ExRV9WaEhKYU9HVmxLSzUySUVBQWFld3dTZUhhcjEzSUQ0WEJFU2NvLXhTVHBoRWF1bGlzOTVKVzZqTzNnUm56U3B4TC1kRi1mLUpmbmVHXzRfal8tR1EwZ3lpSlBzU0ZGRnpvOW9xQ2VvYXJnOGgwVTVtWVkweFlVX1RXWEE?oc=5",
+          "publisher": "Fantasy Footballers Podcast",
+          "kind": "article",
+          "snippet": "Puka Nacua Avoids injury report Fantasy Footballers Podcast",
+          "published": "Tue, 08 Sep 2026 23:44:26 GMT"
+        },
+        {
+          "title": "Puka Nacua not listed on Rams first injury report",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUzZONlFpWXQweDBEVDJUbG9DX2NWWC1lMU5ZeUVrSE91WjE1ZGptcllQaWxQN004RmxuLXJwVlhYeWJvOHBMWDhIb21oWFVUdG92TGdZbjhmWEROdFlDU1UwcXctTGkwY3lnM3RCUkxtalYxRHpReEhWdDdsQktWZTVCY2JSS3l2VEJrM0x6aGpmQ1dCX05naU9RQnVuQdIBowFBVV95cUxPd21reldWTWlRR0xUaDltRFotUTVnQVRRRFh6aDZfSXFEZTJuemhqOGlTdnQxRnY3enp2SmxyRUFiUG96OE5hemhTU1V3ZTBqM2Z0WGFSdDRveExhMkMyNkJfTDRiOGdDU19GVlRTYkw5QXB1YVR6X3czeWJldHRKRlhnMDNuVjdFRUZaWHl0ZkVEX2ZHQjg1N083ZjUwM0JfVEg0?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Puka Nacua not listed on Rams first injury report FantasyPros",
+          "published": "Tue, 08 Sep 2026 22:32:59 GMT"
+        },
+        {
+          "title": "Puka Nacua (psoas) not listed on injury report for Week 1.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB3bDl5aHhlSHVtcWVheVFtNW5WQm1Ec3JTQ0pnbW5ZWDFpdXZyT25MT00wMnVmcThpbjlvTXJNRFNwM1hjSFl2NW1LRVpNN0w3RkRDS1BvdG1TMm5jd05pNDdn?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Puka Nacua (psoas) not listed on injury report for Week 1. x.com",
+          "published": "Tue, 08 Sep 2026 22:15:20 GMT"
+        },
+        {
+          "title": "Puka Nacua (psoas) not listed on injury report for Week 1.",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvWDdPM2hQOGIwOUx0bVd3Tk1MTTRyV2g4MFVZbGhmNnp1Ql9HV3BKTHZPVWlzNzdQT29RNnNuQXZDRi1GdGpWNHVPWlJxMjJuSl9BU1ROeXhJZlNzNE1sbktYX2JQU1c4NFhCZ21NMGtza1k?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Puka Nacua (psoas) not listed on injury report for Week 1. x.com",
+          "published": "Tue, 08 Sep 2026 22:15:20 GMT"
+        },
+        {
+          "title": "Agent's Take: George Pickens, Puka Nacua headline non-quarterbacks who are at a crossroads entering 2026",
+          "url": "https://www.cbssports.com/nfl/news/agents-take-george-pickens-puka-nacua-headline-non-quarterbacks-who-are-at-a-crossroads-entering-2026/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "From George Pickens seeking a massive extension with the Cowboys to Nick Bosa returning from a torn ACL for the 49ers, these key non-quarterbacks face crucial contract and health hurdles in 2026",
+          "published": "Wed, 09 Sep 2026 18:37:41 +0000"
+        },
+        {
+          "title": "Jerry Jones On The Cowboys Offseason, Tyler Smith's Injury, George Pickens & More | Shan & RJ",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE43eWVDdERZd2htbWNZbjRZby1SXzJuZjg1U2VjZG9hTndHQnlIMGdyUmxFUmU5cEUteXBmZGt0dUswazhtOTBWQzNLMHdPRFhMR1Z5eEJR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Jerry Jones On The Cowboys Offseason, Tyler Smith's Injury, George Pickens & More | Shan & RJ YouTube",
+          "published": "Tue, 08 Sep 2026 15:00:31 GMT"
+        },
+        {
+          "title": "NFL Week 1 Fantasy Football injury report: Puka Nacua, Malik Nabers, more",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZFI4MUhRN0hVa2owck84VUg4SHNOakc2Mk82dkxwRWtBUEx0blg0MEhUekEzUVo2dmQzWmoydXhQT19RbGhUV3ViT0NoRU55LUlBSVdWREl0M2dLb2djdWhnSzM5eXFDQkwzeFlKT2I3YjR5Q0Npd1o1UDFrdklFT2Z3?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "NFL Week 1 Fantasy Football injury report: Puka Nacua, Malik Nabers, more Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 19:58:03 GMT"
+        },
+        {
+          "title": "Cowboys-Giants initial Week 1 Injury Report: Malik Nabers update",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNakxsMExxVV8yMm94WVBtdWJRa2xERXFzUVJRUjhad2ZmZElhOWNyN2JSQ2R3dlVNSDlRd3cxVHpTbTZMMjJQeUF4SmR3YVB2MUV4RHdndWJuTXE2Qi1fM09nSVVHVkN4aE1KeTRRVUN5eC1iaVZsSGUzazB0MzBod0xlRU8?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Cowboys-Giants initial Week 1 Injury Report: Malik Nabers update Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 21:07:27 GMT"
+        },
+        {
+          "title": "Good news: #Giants WR Malik Nabers, returning from a torn ACL, was a full participant in practice today - the team’s first official practice of the 2026 regular season, per HC John Harbaugh. The Giants host the Dallas Cowboys on Sunday Night.",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1Ea3p2TDRPRXVWQVB1akpIOE05QzMyQWtwSUVxYzduWHIzajk4Z2N4d3psaEhldWdiVkNIY2c2OUNnekRqLXhxZ0xWXzlrbFhvMHBmSmNRSWNZMFNzajRNVXpoUFk3UQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Good news: #Giants WR Malik Nabers, returning from a torn ACL, was a full participant in practice today - the team’s first official practice of the 2026 regular season, per HC John Harbaugh. The Giants host the Dallas Cowboys on Sunday Night. x.com",
+          "published": "Wed, 09 Sep 2026 19:27:02 GMT"
+        }
+      ]
+    },
+    {
       "id": "darius-slayton-cut-loose-giants-e68ee81f",
       "slug": "darius-slayton-cut-loose-giants-e68ee81f",
       "sport": "football",
@@ -1515,154 +1942,6 @@
           "kind": "article",
           "snippet": "The Giants kept wide receiver Darius Slayton on their initial 53-player roster, but released him on Monday.",
           "published": "Wed, 09 Sep 2026 15:54:16 -0400"
-        }
-      ]
-    },
-    {
-      "id": "buccaneers-name-captains-2026-bfce2772",
-      "slug": "buccaneers-name-captains-2026-bfce2772",
-      "sport": "football",
-      "headline": "Falcons agree to $141 million, 4-year contract extension with top receiver Drake London",
-      "blurb": "News that Buccaneers quarterback Baker Mayfield agreed to a contract extension on Tuesday came as a surprise to many people and the news that talks were even going was the…",
-      "summary": "News that Buccaneers quarterback Baker Mayfield agreed to a contract extension on Tuesday came as a surprise to many people and the news that talks were even going was the source of an earlier surprise to Mayfield. The Tampa Bay Buccaneers have selected their team captains for the 2026 season, with six veterans earning the honor through a vote by their teammates. Quarterback Baker Mayfield, tackle Tristan Wirfs, wide receiver Chris Godwin, nose tackle Vita Vea, linebacker Alex Anzalone and Aggregated from PFT feed, SB Nation, CBS NFL, NFLTradeRumors.co, x.com and 5 more.",
-      "category": "roster",
-      "published": "2026-06-02T07:00:00Z",
-      "updated": "2026-09-09T19:17:55Z",
-      "players": [
-        {
-          "key": "baker mayfield",
-          "name": "Baker Mayfield",
-          "slug": "baker-mayfield",
-          "pos": "QB",
-          "team": "TB"
-        },
-        {
-          "key": "drake london",
-          "name": "Drake London",
-          "slug": "drake-london",
-          "pos": "WR",
-          "team": "ATL"
-        },
-        {
-          "key": "chris godwin",
-          "name": "Chris Godwin",
-          "slug": "chris-godwin",
-          "pos": "WR",
-          "team": "TB"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Buccaneers name captains for the 2026 season",
-          "url": "https://sports.yahoo.com/articles/buccaneers-name-captains-2026-season-183223989.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Tampa Bay Buccaneers have selected their team captains for the 2026 season, with six veterans earning the honor through a vote by their teammates. Quarterback Baker Mayfield, tackle Tristan Wirfs, wide receiver Chris Godwin, nose tackle Vita Vea, linebacker Alex Anzalone and ",
-          "published": "Mon, 07 Sep 2026 18:32:23 +0000"
-        },
-        {
-          "title": "Green Bay Packers name team captains for 2026",
-          "url": "https://sports.yahoo.com/articles/green-bay-packers-name-team-232108344.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "New linebacker Zaire Franklin has been named a team captain for the Packers",
-          "published": "Mon, 07 Sep 2026 23:21:08 +0000"
-        },
-        {
-          "title": "Green Bay Roster: Breaking down the new Packers for 2026 and their roles",
-          "url": "https://sports.yahoo.com/articles/green-bay-roster-breaking-down-100000326.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "DL Javon Hargrave’s role with the Green Bay Packers is undefined going into the regular season",
-          "published": "Tue, 08 Sep 2026 10:00:00 +0000"
-        },
-        {
-          "title": "Baker Mayfield, Buccaneers agree to massive three-year contract extension",
-          "url": "https://www.cbssports.com/nfl/news/baker-mayfield-buccaneers-contract-extension/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "The massive contract ends tense negotiations which seemingly came to a pause at the start of training camp",
-          "published": "Tue, 08 Sep 2026 22:10:29 +0000"
-        },
-        {
-          "title": "Bucs announce three-year extension with Baker Mayfield",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bucs-announce-three-year-extension-with-baker-mayfield",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "The third deal the QB has signed with the Bucs will keep him under contract with the team through the 2029 season.",
-          "published": "Tue, 08 Sep 2026 18:15:21 -0400"
-        },
-        {
-          "title": "BREAKING: Buccaneers Signing QB Baker Mayfield To Three-Year, $165 Extension",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOM3hxcjRxN1E1T0FYblJBQkRLQnZCd1FzOTdGUHFQV1FDSHZOTUM1b19vNnRaNWZSblhmMm02SmdzSjhGa2FPWjBxR1Y4dnVHckFYdGt3U01qSW1KdFQtZkxSajE1UlczQlRBYzlWcjRMYUJvQjhzak5jTlNNcTJaWHRhTlV2ZU5YMXZ1Y0NrUFZmQVlGdkVOMmlMZ2o?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "BREAKING: Buccaneers Signing QB Baker Mayfield To Three-Year, $165 Extension NFLTradeRumors.co",
-          "published": "Tue, 08 Sep 2026 21:09:57 GMT"
-        },
-        {
-          "title": "Buccaneers, QB Baker Mayfield agree to a three-year, $165M extension. (via @RapSheet, @AdamSchefter)",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE93NGoyN0EzSzFPQUFVbFpleG4zUkZzQXl6aWhrNWZycjBTSWZvYmVaUzRfTUNGSHh1RUJCZlZyZ09wVjM2N3F4MWF6VVlwSlhTb0YzYXpqbw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Buccaneers, QB Baker Mayfield agree to a three-year, $165M extension. (via @RapSheet, @AdamSchefter) x.com",
-          "published": "Tue, 08 Sep 2026 21:16:47 GMT"
-        },
-        {
-          "title": "NFL world reacts to Drake London's massive contract extension",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPOVg0VERXbXdmSHl4ME9mN0VDLU5TNS1HVXhIN0JkUnQ1NjNwWWcyaTNqSW9iUkN6REhUd1FIczdaa3F5clk0WFlsRHI3a0JkYWV4T0RGZkVJV2Z1S0xOQ1liUE5hYXJQMkpsczlqNzdTVHFldkxob1Vjd250VzJ5RDZxRVJ4Zw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "NFL world reacts to Drake London's massive contract extension Yahoo Sports",
-          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NFL world reacts to Drake London's massive contract extension",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQZnBPYmRvN3pRVm9LTkRIejZuekRkUnB6TF9uU2REbmtwTnVxLWZNNk5QUTNRc0RWdEtCTWd1LUhTRS1YM1BMZHIxY3BZeHBwNnJ2Z3VyVjBhb3ZQdHVodzhpemo4YzRsSVdfc2hlOW00Z21ESXNsZjlraHZ2TkpxVmo1bFM0OGZNN09ycldYRzQyXzlzWEVHQUNDZEhWMnI3bTRWU0R0WWhkMXhGSElBd0VuN1lvVWE0ZmxWNmNLZ3RvakozblRhaHN1UXdlWExHVGxpNEFHX0R2bzJHY0Jj?oc=5",
-          "publisher": "Falcons Wire",
-          "kind": "article",
-          "snippet": "NFL world reacts to Drake London's massive contract extension Falcons Wire",
-          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Falcons agree to $141 million, 4-year contract extension with top receiver Drake London",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdXRKbFZ6S2ZDYjE2bEduZ190YTJSUi1VNjhKSjgwMkZHcFZHUG5EMHdiUmtTQzUybFBNRGhjejFVSVJkaFJTc2dOekViTVNONVpGUndsbHhyOGYtbUwwR2NzWDZkLXpVVXRNbXlsY1h6RkkxY2NBVEQ0SVdUd0JONnp3?oc=5",
-          "publisher": "Newsday",
-          "kind": "article",
-          "snippet": "Falcons agree to $141 million, 4-year contract extension with top receiver Drake London Newsday",
-          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Falcons, Drake London reach 4-year, $141M extension, agent says",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTElVWTRrMnlrbVliU2gyZDI0RnFPcUJ0VXRNMXlvZEliUlFhQzMwRlhaWF9MZWtNaWJvVHJHWEgzSWtiTWZSS0N5M2FBdkxFakVmR09od1hRMjFtTnRmMEhOT0plcDg4RU40aHJjcWN6b1A0Y0hRM1Bidkx6MDhzbTBDdVNDN3FsdVJZME1tbWxFektCV05CZ0pRbC01MTlpQ1FzaUFBNA?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Falcons, Drake London reach 4-year, $141M extension, agent says ESPN",
-          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Drake London reacts to heartfelt messages from loved ones after NFL extension",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOXJ5Y195MXJBbjU5R0RIZ1dJWnZZTXRJTFJhUWpzQ1VlTDZ6OEt3bFV0cHFtZWpaTnBoY3NzRVRVTXYwaVBYWVI0a2h3S1lLbDlETTZlYjlmU0xlYmJxMVRicXJyOTQ2bUcyUTNZZmFPd21ycmZzM3N2cVNsWENyNGtYeGRQZ2pCOXRKM1QtVHYyM3JKTXdFOGZZY0llRURxLWlWa3ZHcGVzdkpUVzg3Z1k5OWhxVkFYMDBvbUlJWThEVWpUUXphT0p3?oc=5",
-          "publisher": "Atlanta Falcons",
-          "kind": "article",
-          "snippet": "Drake London reacts to heartfelt messages from loved ones after NFL extension Atlanta Falcons",
-          "published": "Mon, 08 Jun 2026 22:04:25 GMT"
-        },
-        {
-          "title": "Drake London reportedly agrees to 4-year, $141 million contract extension with Falcons",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMDZuLWh0YlJzTDJ1WFN6SmZBZHJtbmFpVklJYnluX2NjUGxYbVhYenh0V3RsUDVPeGlVUmdoLXhGVWp5RUxxV0pac0JVOEZybWViYkdpWjNtaXFJRXc2NXdrdkdCdTdXNlpSM09zTVRjaVpXQWpmd0hZeVZ4ZGZFYmo4RmpXQzh1MXRoQ21Kdkt3aXMzWVYwWmtDdFhnT19OenN6cUl2ajZ5dmFoZ0M1QThhemRFZ0ZFRUJLLUFTSEdoMWY0Q0ttaV93UUNmUEQ5aVNOcnlEcjIyZWROOEdNbXRHV24?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Drake London reportedly agrees to 4-year, $141 million contract extension with Falcons Yahoo Sports",
-          "published": "Tue, 02 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Baker Mayfield didn't know contract talks were back on until Monday night",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/baker-mayfield-didnt-know-contract-talks-were-back-on-until-monday-night",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "News that Buccaneers quarterback Baker Mayfield agreed to a contract extension on Tuesday came as a surprise to many people and the news that talks were even going was the source of an earlier surprise to Mayfield.",
-          "published": "Wed, 09 Sep 2026 15:17:55 -0400"
         }
       ]
     },
@@ -2198,6 +2477,131 @@
       ]
     },
     {
+      "id": "1-picks-predictions-kalshi-polymarket-underdog-seahawks-patriots-5bd5967b",
+      "slug": "1-picks-predictions-kalshi-polymarket-underdog-seahawks-patriots-5bd5967b",
+      "sport": "football",
+      "headline": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Seahawks-Patriots, Packers-Vikings markets",
+      "blurb": "SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations",
+      "summary": "Sam Darnold and Elijah Arroyo: SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations NFL expert picks and moneyline, spread, and Over/Under predictions for the Sept. 9 game between the Patriots and Seahawks. Aggregated from CBS NFL, COVERS, SB Nation, PFT feed, FantasyPros and 2 more.",
+      "category": "injury",
+      "published": "2026-09-07T12:17:10Z",
+      "updated": "2026-09-09T21:10:37Z",
+      "players": [
+        {
+          "key": "sam darnold",
+          "name": "Sam Darnold",
+          "slug": "sam-darnold",
+          "pos": "QB",
+          "team": "SEA"
+        },
+        {
+          "key": "elijah arroyo",
+          "name": "Elijah Arroyo",
+          "slug": "elijah-arroyo",
+          "pos": "TE",
+          "team": "SEA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NFL picks and predictions 2026: Patriots vs. Seahawks Week 1 odds, winners",
+          "url": "https://sports.yahoo.com/articles/nfl-picks-predictions-2026-patriots-180202735.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Our first picks for the 2026 NFL season are here as the Patriots face the Seahawks in a Super Bowl rematch.",
+          "published": "Wed, 09 Sep 2026 18:02:02 +0000"
+        },
+        {
+          "title": "2026 NFL season predictions using FanDuel odds",
+          "url": "https://sports.yahoo.com/articles/2026-nfl-season-predictions-using-170000295.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Let’s look at the NFL season’s odds through a Kansas City lens.",
+          "published": "Wed, 09 Sep 2026 17:00:00 +0000"
+        },
+        {
+          "title": "Patriots vs Seahawks AI Predictions for Week 1: ATS Pick & TD Projection",
+          "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-ai-predictions-170000955.html",
+          "publisher": "COVERS",
+          "kind": "article",
+          "snippet": "We trained ChatGPT to project the final score of Patriots vs. Seahawks to kick off NFL Week 1, featuring an ATS and O/U prediction and a touchdown pick tonight.",
+          "published": "Wed, 09 Sep 2026 17:00:00 +0000"
+        },
+        {
+          "title": "Seahawks vs. Patriots: 5 game predictions for Seattle’s season opener",
+          "url": "https://sports.yahoo.com/articles/seahawks-vs-patriots-5-game-160000518.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "From Sam Darnold’s stat line to Elijah Arroyo’s breakout, here are our calls for Seattle’s season opener against New England.",
+          "published": "Wed, 09 Sep 2026 16:00:00 +0000"
+        },
+        {
+          "title": "PFT's 2026 NFL season predictions",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/pfts-2026-nfl-season-predictions",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "A new year means a new slate of eventually inaccurate guesses.",
+          "published": "Mon, 07 Sep 2026 08:17:10 -0400"
+        },
+        {
+          "title": "15 Fantasy Football Player Bold Predictions (2026)",
+          "url": "https://www.fantasypros.com/2026/09/15-fantasy-football-player-bold-predictions-2026/",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Now that Opening Night is here, our Featured Pros weigh in with their biggest and boldest fantasy football player predictions. Waiver Wire Advice Weekly Fantasy Football Expert Rankings Fantasy Football Start/Sit Advice Fantasy Football Trade Analyzer Fantasy Football Bold Predic",
+          "published": "Wed, 09 Sep 2026 16:14:49 +0000"
+        },
+        {
+          "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Seahawks-Patriots, Packers-Vikings markets",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNnVLZ3pWT3JFZXA4T3VmRHhvcERsb0Yza3ViT0JxNzNxYUxSMmQxaHE5RExNRUVlVFpYOWdxbnZERVZCYkphUHN3UTBCWXFwZEZ1bkVMREtxMUpTcm54R3J3UVE1eGE0SHQwa1poTzhRdmpGMkpKQTVRa0c4TmtIaUg1bC1vaUhYWGY4azVRUmRVYW04azVka3hMMUxrdVR4TGlxUlR2Zy1haGc2RFRHcHZERldHZTRlMG0xeURsR3BSNzFLdmNsMmxUOTcxRm1VTEV0TlM4QQ?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Seahawks-Patriots, Packers-Vikings markets CBS Sports",
+          "published": "Wed, 09 Sep 2026 14:28:26 GMT"
+        },
+        {
+          "title": "FINAL New England Patriots vs. Seattle Seahawks Predictions, Injury News, NFL Week 1 Preview",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wVWhlSVRlQlRlaFBjdUF5SFY5SUVfcEs0TnBxZEgwZXFLWVF3Z2YtM1dqYmRnamxmUkp0cHFyNjkybllhX1hRZ1BJbE1aVXcwS2EzMEln?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "FINAL New England Patriots vs. Seattle Seahawks Predictions, Injury News, NFL Week 1 Preview YouTube",
+          "published": "Wed, 09 Sep 2026 15:47:09 GMT"
+        },
+        {
+          "title": "🚨JUST IN🚨 Seattle Seahawks Got BAD Injury News + BIG NFL News That Impacts Sam Darnold",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjY2VuWGFhZE12YW1zb210ODlsdjZDYldLRmg2c2QwYW81SWlqZDhRQnM5RmduZXFxbnd4aG9tYWxhS1FBZUN3SHppMzIzSjBGQkxyekJB?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "🚨JUST IN🚨 Seattle Seahawks Got BAD Injury News + BIG NFL News That Impacts Sam Darnold YouTube",
+          "published": "Tue, 08 Sep 2026 22:49:04 GMT"
+        },
+        {
+          "title": "Seahawks vs. Patriots odds, picks, predictions, best bets: Betting preview for 2026 NFL Kickoff Game",
+          "url": "https://www.cbssports.com/betting/news/seahawks-patriots-odds-picks-predictions-best-bets-betting-preview-2026-nfl-kickoff-game/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "Best bets and betting preview for Patriots vs. Seahawks in 2026 NFL Kickoff Game on Wednesday",
+          "published": "Wed, 09 Sep 2026 19:43:15 +0000"
+        },
+        {
+          "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Patriots-Seahawks, Packers-Vikings markets",
+          "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-underdog-patriots-seahawks-packers-vikings-markets/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations",
+          "published": "Wed, 09 Sep 2026 21:10:37 +0000"
+        },
+        {
+          "title": "Patriots vs Seahawks Expert Picks & Predictions for Sept. 9",
+          "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-expert-picks-200000341.html",
+          "publisher": "COVERS",
+          "kind": "article",
+          "snippet": "NFL expert picks and moneyline, spread, and Over/Under predictions for the Sept. 9 game between the Patriots and Seahawks.",
+          "published": "Wed, 09 Sep 2026 20:00:00 +0000"
+        }
+      ]
+    },
+    {
       "id": "cardinals-rookie-rb-jeremiyah-love-play-hof-wr-959a8b8c",
       "slug": "cardinals-rookie-rb-jeremiyah-love-play-hof-wr-959a8b8c",
       "sport": "football",
@@ -2706,240 +3110,6 @@
       ]
     },
     {
-      "id": "1-picks-predictions-kalshi-polymarket-underdog-seahawks-patriots-5bd5967b",
-      "slug": "1-picks-predictions-kalshi-polymarket-underdog-seahawks-patriots-5bd5967b",
-      "sport": "football",
-      "headline": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Seahawks-Patriots, Packers-Vikings markets",
-      "blurb": "SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations",
-      "summary": "Sam Darnold and Elijah Arroyo: SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations NFL expert picks and moneyline, spread, and Over/Under predictions for the Sept. 9 game between the Patriots and Seahawks. Aggregated from CBS NFL, COVERS, SB Nation, PFT feed, FantasyPros and 2 more.",
-      "category": "injury",
-      "published": "2026-09-07T12:17:10Z",
-      "updated": "2026-09-09T21:10:37Z",
-      "players": [
-        {
-          "key": "sam darnold",
-          "name": "Sam Darnold",
-          "slug": "sam-darnold",
-          "pos": "QB",
-          "team": "SEA"
-        },
-        {
-          "key": "elijah arroyo",
-          "name": "Elijah Arroyo",
-          "slug": "elijah-arroyo",
-          "pos": "TE",
-          "team": "SEA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NFL picks and predictions 2026: Patriots vs. Seahawks Week 1 odds, winners",
-          "url": "https://sports.yahoo.com/articles/nfl-picks-predictions-2026-patriots-180202735.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Our first picks for the 2026 NFL season are here as the Patriots face the Seahawks in a Super Bowl rematch.",
-          "published": "Wed, 09 Sep 2026 18:02:02 +0000"
-        },
-        {
-          "title": "2026 NFL season predictions using FanDuel odds",
-          "url": "https://sports.yahoo.com/articles/2026-nfl-season-predictions-using-170000295.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Let’s look at the NFL season’s odds through a Kansas City lens.",
-          "published": "Wed, 09 Sep 2026 17:00:00 +0000"
-        },
-        {
-          "title": "Patriots vs Seahawks AI Predictions for Week 1: ATS Pick & TD Projection",
-          "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-ai-predictions-170000955.html",
-          "publisher": "COVERS",
-          "kind": "article",
-          "snippet": "We trained ChatGPT to project the final score of Patriots vs. Seahawks to kick off NFL Week 1, featuring an ATS and O/U prediction and a touchdown pick tonight.",
-          "published": "Wed, 09 Sep 2026 17:00:00 +0000"
-        },
-        {
-          "title": "Seahawks vs. Patriots: 5 game predictions for Seattle’s season opener",
-          "url": "https://sports.yahoo.com/articles/seahawks-vs-patriots-5-game-160000518.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "From Sam Darnold’s stat line to Elijah Arroyo’s breakout, here are our calls for Seattle’s season opener against New England.",
-          "published": "Wed, 09 Sep 2026 16:00:00 +0000"
-        },
-        {
-          "title": "PFT's 2026 NFL season predictions",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/pfts-2026-nfl-season-predictions",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "A new year means a new slate of eventually inaccurate guesses.",
-          "published": "Mon, 07 Sep 2026 08:17:10 -0400"
-        },
-        {
-          "title": "15 Fantasy Football Player Bold Predictions (2026)",
-          "url": "https://www.fantasypros.com/2026/09/15-fantasy-football-player-bold-predictions-2026/",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "Now that Opening Night is here, our Featured Pros weigh in with their biggest and boldest fantasy football player predictions. Waiver Wire Advice Weekly Fantasy Football Expert Rankings Fantasy Football Start/Sit Advice Fantasy Football Trade Analyzer Fantasy Football Bold Predic",
-          "published": "Wed, 09 Sep 2026 16:14:49 +0000"
-        },
-        {
-          "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Seahawks-Patriots, Packers-Vikings markets",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNnVLZ3pWT3JFZXA4T3VmRHhvcERsb0Yza3ViT0JxNzNxYUxSMmQxaHE5RExNRUVlVFpYOWdxbnZERVZCYkphUHN3UTBCWXFwZEZ1bkVMREtxMUpTcm54R3J3UVE1eGE0SHQwa1poTzhRdmpGMkpKQTVRa0c4TmtIaUg1bC1vaUhYWGY4azVRUmRVYW04azVka3hMMUxrdVR4TGlxUlR2Zy1haGc2RFRHcHZERldHZTRlMG0xeURsR3BSNzFLdmNsMmxUOTcxRm1VTEV0TlM4QQ?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Seahawks-Patriots, Packers-Vikings markets CBS Sports",
-          "published": "Wed, 09 Sep 2026 14:28:26 GMT"
-        },
-        {
-          "title": "FINAL New England Patriots vs. Seattle Seahawks Predictions, Injury News, NFL Week 1 Preview",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wVWhlSVRlQlRlaFBjdUF5SFY5SUVfcEs0TnBxZEgwZXFLWVF3Z2YtM1dqYmRnamxmUkp0cHFyNjkybllhX1hRZ1BJbE1aVXcwS2EzMEln?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "FINAL New England Patriots vs. Seattle Seahawks Predictions, Injury News, NFL Week 1 Preview YouTube",
-          "published": "Wed, 09 Sep 2026 15:47:09 GMT"
-        },
-        {
-          "title": "🚨JUST IN🚨 Seattle Seahawks Got BAD Injury News + BIG NFL News That Impacts Sam Darnold",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjY2VuWGFhZE12YW1zb210ODlsdjZDYldLRmg2c2QwYW81SWlqZDhRQnM5RmduZXFxbnd4aG9tYWxhS1FBZUN3SHppMzIzSjBGQkxyekJB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "🚨JUST IN🚨 Seattle Seahawks Got BAD Injury News + BIG NFL News That Impacts Sam Darnold YouTube",
-          "published": "Tue, 08 Sep 2026 22:49:04 GMT"
-        },
-        {
-          "title": "Seahawks vs. Patriots odds, picks, predictions, best bets: Betting preview for 2026 NFL Kickoff Game",
-          "url": "https://www.cbssports.com/betting/news/seahawks-patriots-odds-picks-predictions-best-bets-betting-preview-2026-nfl-kickoff-game/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "Best bets and betting preview for Patriots vs. Seahawks in 2026 NFL Kickoff Game on Wednesday",
-          "published": "Wed, 09 Sep 2026 19:43:15 +0000"
-        },
-        {
-          "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Patriots-Seahawks, Packers-Vikings markets",
-          "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-underdog-patriots-seahawks-packers-vikings-markets/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations",
-          "published": "Wed, 09 Sep 2026 21:10:37 +0000"
-        },
-        {
-          "title": "Patriots vs Seahawks Expert Picks & Predictions for Sept. 9",
-          "url": "https://sports.yahoo.com/articles/patriots-vs-seahawks-expert-picks-200000341.html",
-          "publisher": "COVERS",
-          "kind": "article",
-          "snippet": "NFL expert picks and moneyline, spread, and Over/Under predictions for the Sept. 9 game between the Patriots and Seahawks.",
-          "published": "Wed, 09 Sep 2026 20:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "alec-pierce-expected-play-colts-1-60b416e4",
-      "slug": "alec-pierce-expected-play-colts-1-60b416e4",
-      "sport": "football",
-      "headline": "Colts WR Alec Pierce expected to be ready for regular season opener against Ravens",
-      "blurb": "While Colts receiver Alec Pierce is expected to play in Sunday’s season opener against the Ravens, he is not yet practicing in full.",
-      "summary": "While Colts receiver Alec Pierce is expected to play in Sunday’s season opener against the Ravens, he is not yet practicing in full. Alec Pierce Logs limited practice Wednesday Fantasy Footballers Podcast Colts wide receiver Alec Pierce has been back at practice for a little over a week, but that's been enough time for the team to see what they needed from the wideout. Aggregated from PFT feed, Fantasy Footballers Podcast, RotoWire NFL, x.com, SB Nation and 4 more.",
-      "category": "injury",
-      "published": "2026-08-17T07:00:00Z",
-      "updated": "2026-09-09T21:00:30Z",
-      "players": [
-        {
-          "key": "alec pierce",
-          "name": "Alec Pierce",
-          "slug": "alec-pierce",
-          "pos": "WR",
-          "team": "IND"
-        },
-        {
-          "key": "breece hall",
-          "name": "Breece Hall",
-          "slug": "breece-hall",
-          "pos": "RB",
-          "team": "NYJ"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Alec Pierce is expected to play for the Colts in Week 1",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/alec-pierce-is-expected-to-play-for-the-colts-in-week-1",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Colts wide receiver Alec Pierce has been back at practice for a little over a week, but that's been enough time for the team to see what they needed from the wideout.",
-          "published": "Mon, 07 Sep 2026 15:52:08 -0400"
-        },
-        {
-          "title": "Alec Pierce: Expected to play Week 1",
-          "url": "https://www.rotowire.com//football/player/alec-pierce-16022",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Coach Shan Steichen said Monday that Pierce (ankle) \"should be good to go\" for Sunday's game against the Ravens, Joel A. Erickson of The Indianapolis Star reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Mon, 07 Sep 2026 12:50:00 PM PDT"
-        },
-        {
-          "title": "Colts coach Shane Steichen says WR Alec Pierce (ankle) will play Week 1 vs. Ravens https://t.co/S7fJv90g2O",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1SEF0MGZveHpiTVpKSklXaGxEOHcwNHZMNTdKaVNhZ2hFMDZpbmpmQmc0UTIwOVJ3UUlFSExLdTNDRm9oblRXemV6SGR5UzNxLVBwSXE0VzBpWEJITDRJWmg0QQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Colts coach Shane Steichen says WR Alec Pierce (ankle) will play Week 1 vs. Ravens https://t.co/S7fJv90g2O x.com",
-          "published": "Mon, 07 Sep 2026 19:47:55 GMT"
-        },
-        {
-          "title": "Colts WR Alec Pierce expected to be ready for regular season opener against Ravens",
-          "url": "https://sports.yahoo.com/articles/colts-wr-alec-pierce-expected-233054603.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Colts received some promising injury news on returning lead wideout Alec Pierce-although not unexpected.",
-          "published": "Mon, 07 Sep 2026 23:30:54 +0000"
-        },
-        {
-          "title": "Jets RB Hall expected to miss 2-3 weeks, be ready for opener",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOeG5NQlgtemI1TTB1YjRVQ3dnLVFWNTVTNldNcGktNXV6RzEzbmVROUlYb2w4WjFpUmhIN0ZHYS1BSGtDbUJRbzlwTURUbEFRZzNqbDR3Wm9rS21mdHZUbThqZDh5b0dsczFfN2V6S3c4SEEtaFR1X0dNMmJjV1lhVU1ZYWFxV19GeUJyTXprZlRmdHRTNjlSeHRR?oc=5",
-          "publisher": "espn.com",
-          "kind": "article",
-          "snippet": "Jets RB Hall expected to miss 2-3 weeks, be ready for opener espn.com",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "New York Jets RB Breece Hall to miss 2-3 weeks, ready for opener",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaXBET0dJVG9yeXBvTG82cEpIeW13eGJ4dG1yNHFkcFlLUnhtbHZWemFfUklGVmttejU4elNGZGFnU09hM3dEckItOEFlMXd4akh5cXlaYkNVYW1BTU1nUmNXd3E3YVVfWnZTZzU3VEVDRjVld2F4Sko5b0FLclNhcWpRLWswbW1uNmpZdzBaSkFiRjR5QTRGVWR3QXFJaW1FNm9IX1MzeWU?oc=5",
-          "publisher": "upi.com",
-          "kind": "article",
-          "snippet": "New York Jets RB Breece Hall to miss 2-3 weeks, ready for opener upi.com",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Jets' Breece Hall to miss multiple weeks, will be ready for Week 1",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOE5FdGR3dm93dk9FeG9USXhlRGRlUDV2LTRLZm5CV3FYdHMxRjE3ZDdpSTRSMUd0UUVNUTJSX0tJcXFFc1BoSGRzdjRYZS1JWnJNM3NtY0JPdVhHUHVJTUZ5OW82a3JiOVlLQ3hDMlZhNkp0eDVlNTVneDlERmJjVTlCM01FX3F0WEtkMGwzbkdxVWFYRF8yQUVadS03N2Nvd3dYNVpfZzVKeURBNFBLOG9VUUx1NlU?oc=5",
-          "publisher": "Bergen Record",
-          "kind": "article",
-          "snippet": "Jets' Breece Hall to miss multiple weeks, will be ready for Week 1 Bergen Record",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Jets news: Breece Hall Week 1 injury update will fire up fantasy managers",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNd0V6VnctOTZjb21UbGpwSmtYSXl3Si1YTG5pMGxKNjdQc2pGTUtjSWl2Q0FhSE1XZzlYZ19qQ2h4MkdFTjlCZU9vaWxwcWgwM1RkYUJRaHJNbVFTM2dBNFJuVnJ5ZXpKb1Rab1B2bmZ5ZWRnV2xpeko4aDdESUNzMA?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Jets news: Breece Hall Week 1 injury update will fire up fantasy managers Yahoo Sports",
-          "published": "Tue, 08 Sep 2026 17:53:49 GMT"
-        },
-        {
-          "title": "Alec Pierce listed as limited on Wednesday",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/alec-pierce-listed-as-limited-on-wednesday",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "While Colts receiver Alec Pierce is expected to play in Sunday’s season opener against the Ravens, he is not yet practicing in full.",
-          "published": "Wed, 09 Sep 2026 16:50:07 -0400"
-        },
-        {
-          "title": "Alec Pierce Logs limited practice Wednesday",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOelhZS1NManNQTnZfYzNSMjRXWjNlSGttNEVlM1JtMXFUQ1ZZdFA1eHllZWFKMlpIVXVBMEN5VWFGM3dXc3lJMGpuUGlzWVBkVnlxYWQ5cHJ1SzVSdmhTeUZsZTUyN0hBaXNGX1BKdzRVdU5NbVlNRndjd3k4V245ZVZ6cE9vTEJ6ZjRtRFJRTmEyZW1xUU9zdUV3?oc=5",
-          "publisher": "Fantasy Footballers Podcast",
-          "kind": "article",
-          "snippet": "Alec Pierce Logs limited practice Wednesday Fantasy Footballers Podcast",
-          "published": "Wed, 09 Sep 2026 21:00:30 GMT"
-        }
-      ]
-    },
-    {
       "id": "injury-analysis-drake-london-suffers-knee-injury-46ea6000",
       "slug": "injury-analysis-drake-london-suffers-knee-injury-46ea6000",
       "sport": "football",
@@ -3360,6 +3530,90 @@
           "kind": "x",
           "snippet": "Christian McCaffrey (tightness) not listed on injury report for Week 1. x.com",
           "published": "Tue, 08 Sep 2026 22:13:04 GMT"
+        }
+      ]
+    },
+    {
+      "id": "jonathon-brooks-practicing-pads-wednesday-00b9adf3",
+      "slug": "jonathon-brooks-practicing-pads-wednesday-00b9adf3",
+      "sport": "football",
+      "headline": "Ravens injury report: Flowers, Madubuike limited in Wednesday’s practice",
+      "blurb": "Ravens injury report: Flowers, Madubuike limited in Wednesday’s practice Capital Gazette",
+      "summary": "Jonathon Brooks, Brock Bowers and Tucker Kraft: Ravens injury report: Flowers, Madubuike limited in Wednesday’s practice Capital Gazette Brooks (general soreness) is in uniform and pads at Wednesday's practice, Mike Kaye of ESPN.com reports. Visit RotoWire.com for more analysis on this update. Aggregated from Capital Gazette, RotoWire NFL, ProFootball Talk on NBC Sports, PFT feed.",
+      "category": "injury",
+      "published": "2026-09-09T18:29:36Z",
+      "updated": "2026-09-09T21:11:15Z",
+      "players": [
+        {
+          "key": "jonathon brooks",
+          "name": "Jonathon Brooks",
+          "slug": "jonathon-brooks",
+          "pos": "RB",
+          "team": "CAR"
+        },
+        {
+          "key": "brock bowers",
+          "name": "Brock Bowers",
+          "slug": "brock-bowers",
+          "pos": "TE",
+          "team": "LV"
+        },
+        {
+          "key": "tucker kraft",
+          "name": "Tucker Kraft",
+          "slug": "tucker-kraft",
+          "pos": "TE",
+          "team": "GB"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jonathon Brooks: Practicing in pads Wednesday",
+          "url": "https://www.rotowire.com//football/player/jonathon-brooks-17747",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Brooks (general soreness) is in uniform and pads at Wednesday's practice, Mike Kaye of ESPN.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 09 Sep 2026 10:59:00 AM PDT"
+        },
+        {
+          "title": "Tucker Kraft: In full pads Wednesday",
+          "url": "https://www.rotowire.com//football/player/tucker-kraft-16649",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Kraft (knee) is in full pads at Wednesday's practice, Matt Schneidman of The Athletic reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 09 Sep 2026 10:48:00 AM PDT"
+        },
+        {
+          "title": "RB Jonathon Brooks limited in Wednesday's Panthers practice",
+          "url": "https://sports.yahoo.com/articles/rb-jonathon-brooks-limited-wednesdays-194037172.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "Running back Jonathon Brooks is on the Panthers' injury report for Week 1, but it sounds like he's in good shape to make his first regular season appearance since Week 14 of the 2024 season.",
+          "published": "Wed, 09 Sep 2026 19:40:37 +0000"
+        },
+        {
+          "title": "RB Jonathon Brooks limited in Wednesday's Panthers practice",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/rb-jonathon-brooks-limited-in-wednesdays-panthers-practice",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Running back Jonathon Brooks is on the Panthers' injury report for Week 1, but it sounds like he's in good shape to make his first regular season appearance since Week 14 of the 2024 season.",
+          "published": "Wed, 09 Sep 2026 15:40:37 -0400"
+        },
+        {
+          "title": "Brock Bowers: Not spotted at Wednesday's practice",
+          "url": "https://www.rotowire.com//football/player/brock-bowers-17693",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Bowers wasn't seen on the field during the open portion of Wednesday's practice, Ryan McFadden of ESPN.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 09 Sep 2026 12:58:00 PM PDT"
+        },
+        {
+          "title": "Ravens injury report: Flowers, Madubuike limited in Wednesday’s practice",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPUTd5dDlFWXQtWXNkQzBPMkVOQ0dWVkd6eE1tUklGV3laVVk5T2l5MGE4WENJdGJUNGRlZHdVZU5KSGJxUUtjVXBKMGU2VlNtT3k0alBRa1M5eDM0M0ltRjBFRWRheHNidEJ5aGJaT3dVU2J5N29MX05fNjZfUGhFcDZXS0JEOUJLZ2hmOEpmcE9xd3FzQXU3Q3BScWhUYTIyWmlKYXQ0ampaMHpiMnlHYjdsOGc2c19SRVRj?oc=5",
+          "publisher": "Capital Gazette",
+          "kind": "article",
+          "snippet": "Ravens injury report: Flowers, Madubuike limited in Wednesday’s practice Capital Gazette",
+          "published": "Wed, 09 Sep 2026 21:11:15 GMT"
         }
       ]
     },
@@ -4000,82 +4254,6 @@
           "kind": "article",
           "snippet": "Our NFL handicapper gives his power ratings for all 32 teams.",
           "published": "Tue, 08 Sep 2026 16:37:08 +0000"
-        }
-      ]
-    },
-    {
-      "id": "jonathon-brooks-practicing-pads-wednesday-00b9adf3",
-      "slug": "jonathon-brooks-practicing-pads-wednesday-00b9adf3",
-      "sport": "football",
-      "headline": "RB Jonathon Brooks limited in Wednesday's Panthers practice",
-      "blurb": "Running back Jonathon Brooks is on the Panthers' injury report for Week 1, but it sounds like he's in good shape to make his first regular season appearance since Week 14 of…",
-      "summary": "Running back Jonathon Brooks is on the Panthers' injury report for Week 1, but it sounds like he's in good shape to make his first regular season appearance since Week 14 of the 2024 season. Bowers wasn't seen on the field during the open portion of Wednesday's practice, Ryan McFadden of ESPN.com reports. Visit RotoWire.com for more analysis on this update. Aggregated from ProFootball Talk on NBC Sports, PFT feed, RotoWire NFL.",
-      "category": "injury",
-      "published": "2026-09-09T18:29:36Z",
-      "updated": "2026-09-09T19:40:37Z",
-      "players": [
-        {
-          "key": "jonathon brooks",
-          "name": "Jonathon Brooks",
-          "slug": "jonathon-brooks",
-          "pos": "RB",
-          "team": "CAR"
-        },
-        {
-          "key": "brock bowers",
-          "name": "Brock Bowers",
-          "slug": "brock-bowers",
-          "pos": "TE",
-          "team": "LV"
-        },
-        {
-          "key": "tucker kraft",
-          "name": "Tucker Kraft",
-          "slug": "tucker-kraft",
-          "pos": "TE",
-          "team": "GB"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jonathon Brooks: Practicing in pads Wednesday",
-          "url": "https://www.rotowire.com//football/player/jonathon-brooks-17747",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Brooks (general soreness) is in uniform and pads at Wednesday's practice, Mike Kaye of ESPN.com reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 09 Sep 2026 10:59:00 AM PDT"
-        },
-        {
-          "title": "Tucker Kraft: In full pads Wednesday",
-          "url": "https://www.rotowire.com//football/player/tucker-kraft-16649",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Kraft (knee) is in full pads at Wednesday's practice, Matt Schneidman of The Athletic reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 09 Sep 2026 10:48:00 AM PDT"
-        },
-        {
-          "title": "RB Jonathon Brooks limited in Wednesday's Panthers practice",
-          "url": "https://sports.yahoo.com/articles/rb-jonathon-brooks-limited-wednesdays-194037172.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Running back Jonathon Brooks is on the Panthers' injury report for Week 1, but it sounds like he's in good shape to make his first regular season appearance since Week 14 of the 2024 season.",
-          "published": "Wed, 09 Sep 2026 19:40:37 +0000"
-        },
-        {
-          "title": "RB Jonathon Brooks limited in Wednesday's Panthers practice",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/rb-jonathon-brooks-limited-in-wednesdays-panthers-practice",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Running back Jonathon Brooks is on the Panthers' injury report for Week 1, but it sounds like he's in good shape to make his first regular season appearance since Week 14 of the 2024 season.",
-          "published": "Wed, 09 Sep 2026 15:40:37 -0400"
-        },
-        {
-          "title": "Brock Bowers: Not spotted at Wednesday's practice",
-          "url": "https://www.rotowire.com//football/player/brock-bowers-17693",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Bowers wasn't seen on the field during the open portion of Wednesday's practice, Ryan McFadden of ESPN.com reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 09 Sep 2026 12:58:00 PM PDT"
         }
       ]
     },
@@ -4787,6 +4965,132 @@
       ]
     },
     {
+      "id": "bears-rome-odunze-ozzy-trapilo-wednesday-injury-73f91bcd",
+      "slug": "bears-rome-odunze-ozzy-trapilo-wednesday-injury-73f91bcd",
+      "sport": "football",
+      "headline": "Steelers vs. Falcons Week 1, Wednesday injury report: What fans should know",
+      "blurb": "Wednesday injury report for Chicago Yahoo Sports",
+      "summary": "Rome Odunze: Wednesday injury report for Chicago Yahoo Sports Lions, Saints injury report: Only 3 players limited on Wednesday Yahoo Sports Latest on Bears' Rome Odunze, Ozzy Trapilo in Wednesday injury report Yahoo Sports Aggregated from Yahoo Sports, Sports Illustrated, YouTube, USA TODAY Sports, SB Nation and 1 more.",
+      "category": "injury",
+      "published": "2026-09-09T18:07:27Z",
+      "updated": "2026-09-09T21:32:39Z",
+      "players": [
+        {
+          "key": "rome odunze",
+          "name": "Rome Odunze",
+          "slug": "rome-odunze",
+          "pos": "WR",
+          "team": "CHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wednesday injury report for NYJ",
+          "url": "https://sports.yahoo.com/articles/wednesday-injury-report-nyj-205803529.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "Jets DE Joseph Ossai and Tim Patrick miss practice",
+          "published": "Wed, 09 Sep 2026 20:58:03 +0000"
+        },
+        {
+          "title": "Lions, Saints injury report: Only 3 players limited on Wednesday",
+          "url": "https://sports.yahoo.com/articles/lions-saints-injury-report-only-201625729.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Detroit Lions released their Week 1 injury report of the 2026 season.",
+          "published": "Wed, 09 Sep 2026 20:16:25 +0000"
+        },
+        {
+          "title": "Wednesday injury report for NYJ",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaHEwRUdISU1JQ3BLMjNwc0JGLXhVd1BLNTJoUnpmMjk2R0Joa3RqOHZ0SG93R3hENHlpMnFvSGZZNXVIOGhFTmxjY0c3ei15Yy10T3BVVnhZcUh2dWlhUWhXdE5qcF95R1A1YW9PMm5BRVZiWTZNVGdtc2hEZS1ZV2V3?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Wednesday injury report for NYJ Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 20:58:03 GMT"
+        },
+        {
+          "title": "Latest on Bears' Rome Odunze, Ozzy Trapilo in Wednesday injury report",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeUh6NGRqMkJ6dmtNdzhOaGRHTWFmVGVIYWxLSk1wbE4zOGtKbjlacTVrZ2t2dXBwZlhpbjh6c1l3eUNwMVQ0cmNOVXg4QUd1alMxSTBzeGVQZWVzYnRGMHlBY1h5X2pkRDFWMWswVWV0RUNaRnZjRmRsUDlVUXJrS0ZJbkFkUW1yMjZ3MlZjdXN3V0xvMHlUaDhZb0dnN2s0ZlJ6UkJnSUNadEk0SXoxZEx4OFlWNjBnM2l2R04zeTE3enVsRWpaVnVUZkszZzZmMkcxYjdzWDI?oc=5",
+          "publisher": "Bears Wire",
+          "kind": "article",
+          "snippet": "Latest on Bears' Rome Odunze, Ozzy Trapilo in Wednesday injury report Bears Wire",
+          "published": "Wed, 09 Sep 2026 20:05:00 GMT"
+        },
+        {
+          "title": "Rome Odunze and More Chicago Bears Injury Updates From Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRDhYdTNMZGRnSXpkU3dyZUlfeS1LcWpGOUk1TUZEWTVOVHhTMFRfSkxLdWk1R1Y5OFVhODF0TnE0ZFVQcnl3aHZNQURIS0VKS0RUTnFYZ1dacVZtenhXcDRDQ0RjMTBRUXp0WVVGUUxpR0JCM0tFR254MzdMNzYzQkFNeXJVWmdvZDlTRg?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Rome Odunze and More Chicago Bears Injury Updates From Wednesday Sports Illustrated",
+          "published": "Wed, 09 Sep 2026 20:31:37 GMT"
+        },
+        {
+          "title": "Trio of Lions defenders headline Wednesday injury report vs. Saints",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQaGYyV1JWNmFpazZvRERMaHQxZ0RDWk5MSkNaVzdCYWtLNmNnbTlUMlNMWUgweWhzY2lPc2xpSjh3MHFrbWFZdmxtWlVLY0lYODgwQjZmRzU1TENhV0VCdHNGVk9hdms4dHhwSjlpLUdaNWUyRHQzYUFLaDFsQ29WNG0yYWI5Y0lsR2JaU3J2M1JoUQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Trio of Lions defenders headline Wednesday injury report vs. Saints Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 20:36:37 GMT"
+        },
+        {
+          "title": "Wednesday injury report for Chicago",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZXEyazVIdWxKM2FIcWk5RHJDYXZYOWxYcF9kaHYtMWJQT2hzelBxOVM1Zml1YXB0cGhXVng2TlYyX3RBX2J1ZVVJeGJMaUk3NVZSTER0QS0tSm0wMVdXWjlkb2dhOVVKSC1jMHVSOWdxZ25lVHFUV2lDUkhsU21hTHB3djNYWmc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Wednesday injury report for Chicago Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 20:24:47 GMT"
+        },
+        {
+          "title": "Lions, Saints injury report: Only 3 players limited on Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSURSbFpJbEhDNXl2MTNvZUxLcXhRWWNYUHR0dDJTbjhud3ltQ0VUZHd3bzQ2ZEpBS3hPUmM3Mk1FMHpreU5oYWdhdklPTU4tLUNqZ09TLXE1TW82emowR0dqU0Q2blZYZXpDak9PTlN6ajNxc3U5LTlNbm9FSDBKRmRRYUFxT0k?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Lions, Saints injury report: Only 3 players limited on Wednesday Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 20:16:25 GMT"
+        },
+        {
+          "title": "Latest on Bears' Rome Odunze, Ozzy Trapilo in Wednesday injury report",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY2tLTlhYRTRQR2s4Y2Z5Y3dSZW43NDV5TEpFelJXVExsVTdKNm81NENTV1p0dTdKdUY5TWQtT1E4Z0ZEQmFSUzRuRWNBQzBlUWd2cGNNeGFfSG5pTHQyMHB6dDQ1VVRQOFloakRWTElTM3pDekRoc04za3MxQzlNTzI3eXc?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Latest on Bears' Rome Odunze, Ozzy Trapilo in Wednesday injury report Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 20:05:33 GMT"
+        },
+        {
+          "title": "Steelers vs. Falcons Week 1, Wednesday injury report: What fans should know",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZDFJTWpaWTZMbEZjeVVqRXotb3FJYjBIYnYwY29zQ3pFRVhxMzI2aVpyTnQyU01OS1cwZnlSQmNkR3Z1TWFhTTc5aTBuODJuMmIyNGZEMkY1bUpDWTJBdEVpem5RSVR6SXpEbUt0cm9tLUdERzFVOEVBVjVHWTY0bw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Steelers vs. Falcons Week 1, Wednesday injury report: What fans should know Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 20:41:29 GMT"
+        },
+        {
+          "title": "Wednesday injury report for Browns",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNa0xwbkpYRHNJVW5aN0hESmJyTnJHQXViaXU0SXZUTTB0RFc0RFREQ3g1ckJ2VjNmWGVRZS1oWi1BVmxIbzRoUDczdi11SEViOXIzQ2ZQYU5ncHBYNFpVSEVvSEZZQWxKYnFzQ1lZSXBJMmpVQXFwVVhlNGRfeHNsclJsRnNkUQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Wednesday injury report for Browns Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 21:32:39 GMT"
+        },
+        {
+          "title": "Packers Wednesday Injury Update From the Field: Setback at RB vs. Vikings",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPU1cweDBkYXp1R2NUdTd4blp0eFlJX1hLTjZSSWhqbDhTYmdLN3BpSGhIVjI0LVpoUVk3cVFjQnRMV095UGVFSGNZVThOa2cxRnR1c2F6bG14QzQ5VFAtSlZjb0hEaGp2TW4wa2xJbWpJYWpEZURubEZPdzQ1SXNxWkhxVmZDZVd0bHJUWThyMk5YUFdyZ2xDR1pVWERxV2FnemlhUGprcnk0MEE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Packers Wednesday Injury Update From the Field: Setback at RB vs. Vikings Sports Illustrated",
+          "published": "Wed, 09 Sep 2026 18:07:27 GMT"
+        },
+        {
+          "title": "🚨Today’s Chicago Bears Injury Report #shorts #bears #nfl",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9zMDhKREI3bk8yZHo2djNlYVNQRHozeXJYQU42WWdzTU5xVlJiNHRfR1lPdEFoeWV1RWZoc09SbjFhTWdkdHYwTmVoeGRiR05FRi1vNQ?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "🚨Today’s Chicago Bears Injury Report #shorts #bears #nfl YouTube",
+          "published": "Wed, 09 Sep 2026 21:22:50 GMT"
+        }
+      ]
+    },
+    {
       "id": "49ers-injury-encouraging-christian-mccaffrey-nick-bosa-mike-64c786b3",
       "slug": "49ers-injury-encouraging-christian-mccaffrey-nick-bosa-mike-64c786b3",
       "sport": "football",
@@ -5052,79 +5356,112 @@
       ]
     },
     {
-      "id": "puka-nacua-listed-rams-first-injury-85035355",
-      "slug": "puka-nacua-listed-rams-first-injury-85035355",
+      "id": "2026-jacksonville-jaguars-training-camp-intel-4b6c793c",
+      "slug": "2026-jacksonville-jaguars-training-camp-intel-4b6c793c",
       "sport": "football",
-      "headline": "Agent's Take: George Pickens, Puka Nacua headline non-quarterbacks who are at a crossroads entering 2026",
-      "blurb": "From George Pickens seeking a massive extension with the Cowboys to Nick Bosa returning from a torn ACL for the 49ers, these key non-quarterbacks face crucial contract and…",
-      "summary": "From George Pickens seeking a massive extension with the Cowboys to Nick Bosa returning from a torn ACL for the 49ers, these key non-quarterbacks face crucial contract and health hurdles in 2026 Jerry Jones On The Cowboys Offseason, Tyler Smith's Injury, George Pickens & More | Shan & RJ YouTube Puka Nacua Avoids injury report Fantasy Footballers Podcast Aggregated from CBS NFL, YouTube, Fantasy Footballers Podcast, FantasyPros, x.com.",
+      "headline": "Good and Not So Good From Day 7 of Jaguars Training Camp: Trevor Lawrence's Accuracy",
+      "blurb": "Trevor Lawrence says he found a 'groove' during Jaguars' training camp Yahoo Sports",
+      "summary": "Trevor Lawrence says he found a 'groove' during Jaguars' training camp Yahoo Sports Trevor Lawrence injury: Latest update from Jaguars' Week 15 practice Jaguars Wire See which cities get to watch the Browns vs. Aggregated from Yahoo Sports, Jaguars Wire, SB Nation, Defector, ESPN and 2 more.",
       "category": "injury",
-      "published": "2026-09-08T15:00:31Z",
-      "updated": "2026-09-09T18:37:41Z",
+      "published": "2025-12-11T08:00:00Z",
+      "updated": "2026-09-09T15:26:52Z",
       "players": [
         {
-          "key": "george pickens",
-          "name": "George Pickens",
-          "slug": "george-pickens",
-          "pos": "WR",
-          "team": "DAL"
-        },
-        {
-          "key": "puka nacua",
-          "name": "Puka Nacua",
-          "slug": "puka-nacua",
-          "pos": "WR",
-          "team": "LAR"
+          "key": "trevor lawrence",
+          "name": "Trevor Lawrence",
+          "slug": "trevor-lawrence",
+          "pos": "QB",
+          "team": "JAX"
         }
       ],
       "sources": [
         {
-          "title": "Puka Nacua Avoids injury report",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbklBY3ExRV9WaEhKYU9HVmxLSzUySUVBQWFld3dTZUhhcjEzSUQ0WEJFU2NvLXhTVHBoRWF1bGlzOTVKVzZqTzNnUm56U3B4TC1kRi1mLUpmbmVHXzRfal8tR1EwZ3lpSlBzU0ZGRnpvOW9xQ2VvYXJnOGgwVTVtWVkweFlVX1RXWEE?oc=5",
-          "publisher": "Fantasy Footballers Podcast",
+          "title": "Cleveland Browns vs. Jacksonville Jaguars: Week 1 TV Map",
+          "url": "https://sports.yahoo.com/articles/cleveland-browns-vs-jacksonville-jaguars-152652761.html",
+          "publisher": "SB Nation",
           "kind": "article",
-          "snippet": "Puka Nacua Avoids injury report Fantasy Footballers Podcast",
-          "published": "Tue, 08 Sep 2026 23:44:26 GMT"
+          "snippet": "See which cities get to watch the Browns vs. Jaguars game on television this week.",
+          "published": "Wed, 09 Sep 2026 15:26:52 +0000"
         },
         {
-          "title": "Puka Nacua not listed on Rams first injury report",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPUzZONlFpWXQweDBEVDJUbG9DX2NWWC1lMU5ZeUVrSE91WjE1ZGptcllQaWxQN004RmxuLXJwVlhYeWJvOHBMWDhIb21oWFVUdG92TGdZbjhmWEROdFlDU1UwcXctTGkwY3lnM3RCUkxtalYxRHpReEhWdDdsQktWZTVCY2JSS3l2VEJrM0x6aGpmQ1dCX05naU9RQnVuQdIBowFBVV95cUxPd21reldWTWlRR0xUaDltRFotUTVnQVRRRFh6aDZfSXFEZTJuemhqOGlTdnQxRnY3enp2SmxyRUFiUG96OE5hemhTU1V3ZTBqM2Z0WGFSdDRveExhMkMyNkJfTDRiOGdDU19GVlRTYkw5QXB1YVR6X3czeWJldHRKRlhnMDNuVjdFRUZaWHl0ZkVEX2ZHQjg1N083ZjUwM0JfVEg0?oc=5",
-          "publisher": "FantasyPros",
+          "title": "Why Your Team Sucks 2026: Jacksonville Jaguars",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mRHlyWEYwYU1vVGRWUU9zQUFRYm42VWZmWVItX0dhTFBzQTB3d1BDLU1kTTFlanB6SzZ3VjlKT2Q1SE02Ym1kOHZ5dXFETUloaTdLYkxKM0JSY2k4LXFETllVeFlfTm5fUXpZQWh4YXZxNGtw?oc=5",
+          "publisher": "Defector",
           "kind": "article",
-          "snippet": "Puka Nacua not listed on Rams first injury report FantasyPros",
-          "published": "Tue, 08 Sep 2026 22:32:59 GMT"
+          "snippet": "Why Your Team Sucks 2026: Jacksonville Jaguars Defector",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Puka Nacua (psoas) not listed on injury report for Week 1.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB3bDl5aHhlSHVtcWVheVFtNW5WQm1Ec3JTQ0pnbW5ZWDFpdXZyT25MT00wMnVmcThpbjlvTXJNRFNwM1hjSFl2NW1LRVpNN0w3RkRDS1BvdG1TMm5jd05pNDdn?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Puka Nacua (psoas) not listed on injury report for Week 1. x.com",
-          "published": "Tue, 08 Sep 2026 22:15:20 GMT"
-        },
-        {
-          "title": "Puka Nacua (psoas) not listed on injury report for Week 1.",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBvWDdPM2hQOGIwOUx0bVd3Tk1MTTRyV2g4MFVZbGhmNnp1Ql9HV3BKTHZPVWlzNzdQT29RNnNuQXZDRi1GdGpWNHVPWlJxMjJuSl9BU1ROeXhJZlNzNE1sbktYX2JQU1c4NFhCZ21NMGtza1k?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Puka Nacua (psoas) not listed on injury report for Week 1. x.com",
-          "published": "Tue, 08 Sep 2026 22:15:20 GMT"
-        },
-        {
-          "title": "Agent's Take: George Pickens, Puka Nacua headline non-quarterbacks who are at a crossroads entering 2026",
-          "url": "https://www.cbssports.com/nfl/news/agents-take-george-pickens-puka-nacua-headline-non-quarterbacks-who-are-at-a-crossroads-entering-2026/",
-          "publisher": "CBS NFL",
+          "title": "2026 Jacksonville Jaguars training camp: Latest intel, updates",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdkNQbGptWjNNY1JJQkN3MGlvZmNLMXdMN1BEem5sWnYyRTVVWDc2eGpnTTVHblVRNzkzamRYdGlvc2RpNkw5bmxsSElkTWNrS1V1R1BuSnVsMUhPOGNVX2s0bnMtWVZubzBzVGF5dWJVMHlZVlBCUk5PaHpvOU9QNEFPUDRHOXRMMTRtVHNhRnZIUDR4QnViSVNYQURHOEE?oc=5",
+          "publisher": "ESPN",
           "kind": "article",
-          "snippet": "From George Pickens seeking a massive extension with the Cowboys to Nick Bosa returning from a torn ACL for the 49ers, these key non-quarterbacks face crucial contract and health hurdles in 2026",
-          "published": "Wed, 09 Sep 2026 18:37:41 +0000"
+          "snippet": "2026 Jacksonville Jaguars training camp: Latest intel, updates ESPN",
+          "published": "Wed, 19 Aug 2026 07:00:00 GMT"
         },
         {
-          "title": "Jerry Jones On The Cowboys Offseason, Tyler Smith's Injury, George Pickens & More | Shan & RJ",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE43eWVDdERZd2htbWNZbjRZby1SXzJuZjg1U2VjZG9hTndHQnlIMGdyUmxFUmU5cEUteXBmZGt0dUswazhtOTBWQzNLMHdPRFhMR1Z5eEJR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Jerry Jones On The Cowboys Offseason, Tyler Smith's Injury, George Pickens & More | Shan & RJ YouTube",
-          "published": "Tue, 08 Sep 2026 15:00:31 GMT"
+          "title": "Eagles Day 9 Training Camp Observations",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNekY5VGQxX20xSi1LelVOSk9HLTZMVE1wY0VXTjFjMFJ2TW9zTWhwNFZTaVc3X2lnV2JUdGMtaVRRR0lJcnFKMV9uM29XZDI2dnVNdXVMMFZwdWQydjFQNlU3eTRpLV9zUTN0bWdrSjd3V3R4MmxwWWxYOUl4dlB3b29TZldBM2xrSDlHU1gxNmVjVEwxY0VxUWFkRTRvaXNoVnZLa1M1dHo2bG1uV2JjbWNyY053QXUxeE9heGNoOHUzSFN4OTlwNVRxOHRrVTljV1BMeTRoRQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Eagles Day 9 Training Camp Observations Sports Illustrated",
+          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "2026 Philadelphia Eagles training camp: Latest intel, updates",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN1gxU09jcFVaZnEzQ01EX1BUVkstZ3g4Q3BkX3loQ3poZDFNandkUHNNaGIyQUo3TE5pdXpyVmYxNlI5dGtEYzVuMXI5VEFzdEd1bmp1cU5jNE95bHE0S1AwTkJxNVZIbmdXSl85TlNnMlJnUHpWME1WcnRVaExWbkRKN1JiS0E5Z0duOVRHTmt6dHUzZi1yVC1zX1h0UQ?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "2026 Philadelphia Eagles training camp: Latest intel, updates ESPN",
+          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Good and Not So Good From Day 7 of Jaguars Training Camp: Trevor Lawrence's Accuracy",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUmVzdzlDdWZ3WmRLQXpWaGd2S1NidDRfd3BUblduOHRaYlBOUHY1MHE0aWVaMnpjaFUxR0I5Wmw4ZFlFNnhURFhpYldyeGZnLTcxQW9CeXE4LV9JQ2p0SHFObmY4RFZTeWlTQ252YjRIUXhIS3dZdk5KRHhBRklfZzcyU0FlWjlveUliV09lZG1MMC1IN2hfaWhUSmkxaFNHQzZVWVBaNl9iVGFKUHpkN05DUlAtVXRQMDJfM3k3bmRyQQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Good and Not So Good From Day 7 of Jaguars Training Camp: Trevor Lawrence's Accuracy Sports Illustrated",
+          "published": "Thu, 06 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Good and Not So Good From Day 6 of Jaguars Training Camp: Trevor Lawrence Struggles",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcmJBbElqVWNyR01OUXlBS1FNV1U5UnhDYWZEbnRBa3ZRNUc3d3VWakhJVmdJcWdzdEhXSlZCWGZUVk1LZFB6aTlwT3BmTElZY1Mxa0hTSFRNY3lyR2I2Zm9Rc0NkS1l1LTU4dXZqVmJIMFd2WjRQY1YzaUxsRnVvNEpCT0pGOEZLN2xfVG9hNnZVeGFoZ2dReUM3ZEtDUUxoWGVIOXl5MHFBWThXdzRZUE81WmIwMm5lZGRYUmw0Y0I?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Good and Not So Good From Day 6 of Jaguars Training Camp: Trevor Lawrence Struggles Sports Illustrated",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Everything I Saw at Day 3 of Jaguars Training Camp: Trevor Lawrence Has a Day",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNREF3eFladmpUdmlLOWw3OVlaZWpXcVNoMzh1bnk0WGVSSV9Vam03dHB5THZJbWdWWGFodm9oWHZfb1d1QmRtT0VURlRRWUhwZW5ENHBWZ2g0QkE0SjVHWGZNMEY1NTZ0a3BFNlJvYWtVY3BEME5zN0xyT001WGNiYW5GWUVzbUxjSWdrMFlNV3U2cFBWbnJHTEtLNzlMWF93NXBDbXQwWUJ1T0tmaldKSnRGSE5icDV2?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Everything I Saw at Day 3 of Jaguars Training Camp: Trevor Lawrence Has a Day Sports Illustrated",
+          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jaguars already have the answer to Trevor Lawrence's NFL poll problem",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcF9UbktFMTJOcVBwMWU0UUxlMHZBenFMYVItT2ZRS2tQTlREVkt5d3dSZ2tEcnBKbWRZYXdNdmEzR3psTXpuVFdTMHJPbVdVVTM1UWNjMmNmMlBjNkpLYjhKOFFodk1CWE9tYndKZ1RmZ3p0LTJtTWhrWG9RbjctdU54enp0cEYyN3IwNTBFUlI0ZFdNUWVHRjZPNkhJRlJMVlluSUkyVVNaMFJ5Wmk1dmF0QQ?oc=5",
+          "publisher": "Black and Teal",
+          "kind": "article",
+          "snippet": "Jaguars already have the answer to Trevor Lawrence's NFL poll problem Black and Teal",
+          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Trevor Lawrence says he found a 'groove' during Jaguars' training camp",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUndQY2p2ZE0yaGt5SG83eVk1Q19pLVFKcUs4TlhvdGt0bld6MjZocEkyd3lwMldyUlFXYkg1bTVsZUs1QWs3VDBGQW9GX05yZG1ZTXByUllCRGxOSGlRQjM4Q0lMd1doVUk2WjZ6VXVyT1lkcEFqOGk2YWxuSlJhOUc2TkZZMTVXekE?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Trevor Lawrence says he found a 'groove' during Jaguars' training camp Yahoo Sports",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Trevor Lawrence injury: Latest update from Jaguars' Week 15 practice",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNE01QVJYTVRKelduNF9HNHhJSF9GY0hCc3ZURFBYX04yb3BCT0dzWURPT1Y1UGxfc05za1Bqamg1NFNrUzRXX09QZEY5aWlySV9hMGVUQWpmM1dOWWdsb3lyeHZhWGg5U0l2MF9neURwc1Y4d1ZwYTB6TXZST09XY2ctczdmV1R2RXpEY0FFVUFYM1lBME1hd0pUdHRxLVlZcDhtWjJnN2RkSE1kODBxX2t4d2NEcHRaZkptOGhGcDh6Qmx3TnpqamdiekNDVUNZV1NfRWNMNm1vNTVRM0NNT2lB?oc=5",
+          "publisher": "Jaguars Wire",
+          "kind": "article",
+          "snippet": "Trevor Lawrence injury: Latest update from Jaguars' Week 15 practice Jaguars Wire",
+          "published": "Thu, 11 Dec 2025 08:00:00 GMT"
         }
       ]
     },
@@ -5369,6 +5706,67 @@
       ]
     },
     {
+      "id": "wednesday-s-saints-lions-injury-alvin-kamara-returns-9c3d75a1",
+      "slug": "wednesday-s-saints-lions-injury-alvin-kamara-returns-9c3d75a1",
+      "sport": "football",
+      "headline": "Wednesday’s Saints vs. Lions injury report: Alvin Kamara returns",
+      "blurb": "The Saints had 3 players miss practice on Wednesday.",
+      "summary": "Alvin Kamara and DK Metcalf: The Saints had 3 players miss practice on Wednesday. Lions injury report: Alvin Kamara returns Yahoo Sports DK Metcalf Not listed on Wednesday's injury report Fantasy Footballers Podcast Aggregated from SB Nation, Yahoo Sports, Fantasy Footballers Podcast, WWLTV.com.",
+      "category": "injury",
+      "published": "2026-09-09T21:13:36Z",
+      "updated": "2026-09-09T21:34:38Z",
+      "players": [
+        {
+          "key": "alvin kamara",
+          "name": "Alvin Kamara",
+          "slug": "alvin-kamara",
+          "pos": "RB",
+          "team": "NO"
+        },
+        {
+          "key": "dk metcalf",
+          "name": "DK Metcalf",
+          "slug": "dk-metcalf",
+          "pos": "WR",
+          "team": "PIT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wednesday’s Saints vs. Lions injury report: Alvin Kamara returns",
+          "url": "https://sports.yahoo.com/articles/wednesday-saints-vs-lions-injury-211336363.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Saints had 3 players miss practice on Wednesday.",
+          "published": "Wed, 09 Sep 2026 21:13:36 +0000"
+        },
+        {
+          "title": "Wednesday’s Saints vs. Lions injury report: Alvin Kamara returns",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUFBELS1MUThOMWRIaERYNWpBRVhadmdhRWZVd2tPQjVLMFlVN0hqLVhtVFR6T2JWLWxOdXJ1Z2FpbFNoaGtBS09EeG9ubE9qN1RIaEI3dDMxMnBObGl6OHBtTEt3NkFVcWdlMXpiUUtMX0FrdlkxcnU4ZEJhdFJvdlk5SURxdXh6?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Wednesday’s Saints vs. Lions injury report: Alvin Kamara returns Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 21:13:36 GMT"
+        },
+        {
+          "title": "DK Metcalf Not listed on Wednesday's injury report",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQnEyZmszWC12RFMyeXB3bGgtQ1VOSnU5Z0pQczg1Tlo4U0QySjJrdlUwLTlwV2c3Z1hacTViUzMwekpQTmpydXdnU2hLYTBwZTh2QjhQcmxaUWJaU29sekVWUFZyN3RPZEMzOC1ZNDVhN0N0Y1FrUFNaNHllV1dLREJGVm5yQWw1S2FQTnQza1F2MnR2cmpuWFU5STc2T1Fyb1E?oc=5",
+          "publisher": "Fantasy Footballers Podcast",
+          "kind": "article",
+          "snippet": "DK Metcalf Not listed on Wednesday's injury report Fantasy Footballers Podcast",
+          "published": "Wed, 09 Sep 2026 21:34:38 GMT"
+        },
+        {
+          "title": "Saints injury report: Alvin Kamara returns, Cameron Jordan out",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOV2JoRlJHTHh0LWhWckJQcjdwUmo1N1F2VUIyNVA1RVFmSUNiTFdMZmF6ZzZRb0xVaVowNHo1Ym5ZN0N5M21ocXoyUDA0bnM5dmIwZE1VY1QxeTRVMzRpbGh3dk10WGIyTmRNQnI4NmlUZXlpbWltekJBeGNnUWtUb3Zibkp2WTVOQV83YjlxZklHZXVsbHg3aWFxRGdTaExpcFk4YlNueVZrdDh4aUFheGhaeTBWRnlsSk5PSTdlN09qRTBKcDVIaDFHM215dHRZVEliR3RaSUNRTVNJa3hhendIdw?oc=5",
+          "publisher": "WWLTV.com",
+          "kind": "article",
+          "snippet": "Saints injury report: Alvin Kamara returns, Cameron Jordan out WWLTV.com",
+          "published": "Wed, 09 Sep 2026 21:32:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "bengals-wr-ja-marr-chase-limited-practice-knee-11674f77",
       "slug": "bengals-wr-ja-marr-chase-limited-practice-knee-11674f77",
       "sport": "football",
@@ -5426,6 +5824,92 @@
           "kind": "article",
           "snippet": "While Bengals head coach Zac Taylor told reporters on Wednesday that defensive end Shemar Stewart was more uncertain to play in Sunday's season opener than receivers Ja'Marr Chase and Tee Higgins, the injury report indicates more optimism.",
           "published": "Wed, 09 Sep 2026 17:05:15 -0400"
+        }
+      ]
+    },
+    {
+      "id": "lsu-roster-finalized-lane-kiffin-doesn-t-add-a190caf3",
+      "slug": "lsu-roster-finalized-lane-kiffin-doesn-t-add-a190caf3",
+      "sport": "football",
+      "headline": "LSU roster finalized: Lane Kiffin doesn't add ex-NFL players Dae'Quan Wright, Zxavian Harris to team",
+      "blurb": "\"I do think that his lawyers are looking at legal action potentially against the SEC for keeping him out of LSU.\" Drew Rosenhaus details what's next for his client Dae'Quan…",
+      "summary": "\"I do think that his lawyers are looking at legal action potentially against the SEC for keeping him out of LSU.\" Drew Rosenhaus details what's next for his client Dae'Quan Wright who did not make the LSU football roster after leaving the NFL. Tight end Dae'Quan Wright's bid to return to college football came to an end on Tuesday when LSU filled out their roster with other players amid threats from the SEC to pursue expelling the school from the conference due to their desire to add players who spent time in the NFL th LSU roster finalized: Lane Kiffin doesn't add ex-NFL players Dae'Quan Wright, Zxavian Harris to team CBS Sports Aggregated from x.com, PFT feed, CBS Sports, Yahoo Sports.",
+      "category": "roster",
+      "published": "2026-09-09T01:24:44Z",
+      "updated": "2026-09-09T19:29:42Z",
+      "players": [
+        {
+          "key": "daequan wright",
+          "name": "Dae'Quan Wright",
+          "slug": "daequan-wright",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "TE Dae'Quan Wright waiting to hear if he can return to NFL with LSU door closed",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/te-daequan-wright-waiting-to-hear-if-he-can-return-to-nfl-after-flirtation-with-lsu",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Tight end Dae'Quan Wright's bid to return to college football came to an end on Tuesday when LSU filled out their roster with other players amid threats from the SEC to pursue expelling the school from the conference due to their desire to add players who spent time in the NFL th",
+          "published": "Wed, 09 Sep 2026 13:43:59 -0400"
+        },
+        {
+          "title": "LSU roster finalized: Lane Kiffin doesn't add ex-NFL players Dae'Quan Wright, Zxavian Harris to team",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdGlpc2Fxamx2WFA5ajNxRklkdU9jV241Uk9DZVZIUFgzTEw2NDZJemdHeWVsYjR2UmxRYTBEcUhGZWRkMFZwT1pERFhDOWZqdlFfZGRTcnRBSHFNNkF3akpkQ193UWEwUWhab0tkQzFJSGlvMGZPaGxyMllHSF83VlJ6cWtGRWFRNjJvRGM2VXZ6R2NNZ3VWMEJPSXRESHo5djJiVGlqSUhlWHprREhRaFp1aUFnWWc?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "LSU roster finalized: Lane Kiffin doesn't add ex-NFL players Dae'Quan Wright, Zxavian Harris to team CBS Sports",
+          "published": "Wed, 09 Sep 2026 01:54:00 GMT"
+        },
+        {
+          "title": "NEWS: LSU football is adding two players to the school’s roster, which will complete it at 105 players, per ESPN sources. This will lock LSU’s roster for the rest of the year, which will eliminate the program’s ability to add Dae’Quan Wright and Zxavian Harris.",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92ajI4elZjNlAtWDhGeC1GU2luXzdralB3d08xdkZIM1lnSEVmQXkzYkNxdzZTX1FmaG8xLVNnZllaU2NYbGcwbXoyeWl5R0I1alh4UzE5RkQyOTA3aEZHcQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "NEWS: LSU football is adding two players to the school’s roster, which will complete it at 105 players, per ESPN sources. This will lock LSU’s roster for the rest of the year, which will eliminate the program’s ability to add Dae’Quan Wright and Zxavian Harris. x.com",
+          "published": "Wed, 09 Sep 2026 01:24:44 GMT"
+        },
+        {
+          "title": "Free-agent TE Dae’Quan Wright still is waiting to hear from the NFL about whether he is eligible to play this season. He never signed with LSU nor joined its roster, and his agent Drew Rosenhaus said multiple teams are now interested in signing him. Wright al",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1HTWlLTERGdmFPSGlIMklpd05jc1pmVUpuRm5FRkl6RTV3Y2ZzR3lxNmozZU9qbnlHd1BqLTVqNlJVU0VSNHE2MkZfdUNrcjgzTExFT2dzS2VkMnpQRUVvcjFCcw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Free-agent TE Dae’Quan Wright still is waiting to hear from the NFL about whether he is eligible to play this season. He never signed with LSU nor joined its roster, and his agent Drew Rosenhaus said multiple teams are now interested in signing him. Wright al x.com",
+          "published": "Wed, 09 Sep 2026 17:24:41 GMT"
+        },
+        {
+          "title": "LSU will add two players to its football roster, maxing it out at 105 players, per @RossDellenger. Therefore, Dae'Quan Wright and Zxavian Harris - who went to NFL training camps - will not suit up for the Tigers this season.",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5pLVdNV3dibjlEcVNGTW52c0pYUjNmVF93QzMwMmhfc2FlR0tyY1ZVMVdFSmFwajRMcWMzdTdwaC1PcDEteWc0NWtFbUl6M2FVTk5CdHdJeEFFbmhhVHQxWnAyYw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "LSU will add two players to its football roster, maxing it out at 105 players, per @RossDellenger. Therefore, Dae'Quan Wright and Zxavian Harris - who went to NFL training camps - will not suit up for the Tigers this season. x.com",
+          "published": "Wed, 09 Sep 2026 02:10:20 GMT"
+        },
+        {
+          "title": "LSU president confirms program will not roster Dae’Quan Wright, Zxavian Harris",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lsu-president-confirms-program-will-not-roster-daequan-wright-zxavian-harris",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "LSU has officially waived the white flag.",
+          "published": "Wed, 09 Sep 2026 15:27:00 -0400"
+        },
+        {
+          "title": "LSU locks its roster, won't add players who signed NFL contracts",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZVRUTHk4UFRDcjNCaGJkbWYyUVlvV1E2N0ZfOENEQ0lPa0NhY0lBdjFJdVpDZE1KUHY4aENlVF9rN0J0b0RGS1pURFZQRU96R0tkYmh1LXo4am9aYmZoZ2gzVS1nOUkwb0RVWHh6TE0xc2Y0WldnbFhveERFLWVQUWdQODJDMmVuUUNoanIzTHpuSWJMV0hlZE12enhNTkFDeFl3bHh6aVFhVnJr?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "LSU locks its roster, won't add players who signed NFL contracts Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 19:29:42 GMT"
+        },
+        {
+          "title": "\"I do think that his lawyers are looking at legal action potentially against the SEC for keeping him out of LSU.\" Drew Rosenhaus details what's next for his client Dae'Quan Wright who did not make the LSU football roster after leaving the NFL. (via @PatMcAfeeS",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1DTFNnMzRFdlZWZFJiYlBMU2pLRkFNOTR1enlFMkdFVHJlUUZDeVF1ZlEyS0lwR0ltWnhJLTB1TThPWjBZTTMwMDFFZkItclhzT0NKcjFRZl9kRmxL?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "\"I do think that his lawyers are looking at legal action potentially against the SEC for keeping him out of LSU.\" Drew Rosenhaus details what's next for his client Dae'Quan Wright who did not make the LSU football roster after leaving the NFL. (via @PatMcAfeeS x.com",
+          "published": "Wed, 09 Sep 2026 17:44:47 GMT"
         }
       ]
     },
@@ -6035,163 +6519,15 @@
       ]
     },
     {
-      "id": "bears-rome-odunze-ozzy-trapilo-wednesday-injury-73f91bcd",
-      "slug": "bears-rome-odunze-ozzy-trapilo-wednesday-injury-73f91bcd",
-      "sport": "football",
-      "headline": "Latest on Bears' Rome Odunze, Ozzy Trapilo in Wednesday injury report",
-      "blurb": "Jets DE Joseph Ossai and Tim Patrick miss practice",
-      "summary": "Rome Odunze: Jets DE Joseph Ossai and Tim Patrick miss practice The Detroit Lions released their Week 1 injury report of the 2026 season. Wednesday injury report for NYJ Yahoo Sports Aggregated from USA TODAY Sports, SB Nation, Yahoo Sports, Bears Wire, Sports Illustrated.",
-      "category": "injury",
-      "published": "2026-09-09T20:05:00Z",
-      "updated": "2026-09-09T20:58:03Z",
-      "players": [
-        {
-          "key": "rome odunze",
-          "name": "Rome Odunze",
-          "slug": "rome-odunze",
-          "pos": "WR",
-          "team": "CHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Wednesday injury report for NYJ",
-          "url": "https://sports.yahoo.com/articles/wednesday-injury-report-nyj-205803529.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "Jets DE Joseph Ossai and Tim Patrick miss practice",
-          "published": "Wed, 09 Sep 2026 20:58:03 +0000"
-        },
-        {
-          "title": "Lions, Saints injury report: Only 3 players limited on Wednesday",
-          "url": "https://sports.yahoo.com/articles/lions-saints-injury-report-only-201625729.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Detroit Lions released their Week 1 injury report of the 2026 season.",
-          "published": "Wed, 09 Sep 2026 20:16:25 +0000"
-        },
-        {
-          "title": "Wednesday injury report for NYJ",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaHEwRUdISU1JQ3BLMjNwc0JGLXhVd1BLNTJoUnpmMjk2R0Joa3RqOHZ0SG93R3hENHlpMnFvSGZZNXVIOGhFTmxjY0c3ei15Yy10T3BVVnhZcUh2dWlhUWhXdE5qcF95R1A1YW9PMm5BRVZiWTZNVGdtc2hEZS1ZV2V3?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Wednesday injury report for NYJ Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 20:58:03 GMT"
-        },
-        {
-          "title": "Latest on Bears' Rome Odunze, Ozzy Trapilo in Wednesday injury report",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeUh6NGRqMkJ6dmtNdzhOaGRHTWFmVGVIYWxLSk1wbE4zOGtKbjlacTVrZ2t2dXBwZlhpbjh6c1l3eUNwMVQ0cmNOVXg4QUd1alMxSTBzeGVQZWVzYnRGMHlBY1h5X2pkRDFWMWswVWV0RUNaRnZjRmRsUDlVUXJrS0ZJbkFkUW1yMjZ3MlZjdXN3V0xvMHlUaDhZb0dnN2s0ZlJ6UkJnSUNadEk0SXoxZEx4OFlWNjBnM2l2R04zeTE3enVsRWpaVnVUZkszZzZmMkcxYjdzWDI?oc=5",
-          "publisher": "Bears Wire",
-          "kind": "article",
-          "snippet": "Latest on Bears' Rome Odunze, Ozzy Trapilo in Wednesday injury report Bears Wire",
-          "published": "Wed, 09 Sep 2026 20:05:00 GMT"
-        },
-        {
-          "title": "Rome Odunze and More Chicago Bears Injury Updates From Wednesday",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRDhYdTNMZGRnSXpkU3dyZUlfeS1LcWpGOUk1TUZEWTVOVHhTMFRfSkxLdWk1R1Y5OFVhODF0TnE0ZFVQcnl3aHZNQURIS0VKS0RUTnFYZ1dacVZtenhXcDRDQ0RjMTBRUXp0WVVGUUxpR0JCM0tFR254MzdMNzYzQkFNeXJVWmdvZDlTRg?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Rome Odunze and More Chicago Bears Injury Updates From Wednesday Sports Illustrated",
-          "published": "Wed, 09 Sep 2026 20:31:37 GMT"
-        },
-        {
-          "title": "Trio of Lions defenders headline Wednesday injury report vs. Saints",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQaGYyV1JWNmFpazZvRERMaHQxZ0RDWk5MSkNaVzdCYWtLNmNnbTlUMlNMWUgweWhzY2lPc2xpSjh3MHFrbWFZdmxtWlVLY0lYODgwQjZmRzU1TENhV0VCdHNGVk9hdms4dHhwSjlpLUdaNWUyRHQzYUFLaDFsQ29WNG0yYWI5Y0lsR2JaU3J2M1JoUQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Trio of Lions defenders headline Wednesday injury report vs. Saints Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 20:36:37 GMT"
-        }
-      ]
-    },
-    {
-      "id": "lsu-roster-finalized-lane-kiffin-doesn-t-add-a190caf3",
-      "slug": "lsu-roster-finalized-lane-kiffin-doesn-t-add-a190caf3",
-      "sport": "football",
-      "headline": "LSU roster finalized: Lane Kiffin doesn't add ex-NFL players Dae'Quan Wright, Zxavian Harris to team",
-      "blurb": "LSU locks its roster, won't add players who signed NFL contracts Yahoo Sports",
-      "summary": "Dae'Quan Wright: LSU locks its roster, won't add players who signed NFL contracts Yahoo Sports Tight end Dae'Quan Wright's bid to return to college football came to an end on Tuesday when LSU filled out their roster with other players amid threats from the SEC to pursue expelling the school from the conference due to their desire to add players who spent time in the NFL th LSU roster finalized: Lane Kiffin doesn't add ex-NFL players Dae'Quan Wright, Zxavian Harris to team CBS Sports Aggregated from Yahoo Sports, PFT feed, CBS Sports, x.com.",
-      "category": "roster",
-      "published": "2026-09-09T01:24:44Z",
-      "updated": "2026-09-09T19:29:42Z",
-      "players": [
-        {
-          "key": "daequan wright",
-          "name": "Dae'Quan Wright",
-          "slug": "daequan-wright",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "TE Dae'Quan Wright waiting to hear if he can return to NFL with LSU door closed",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/te-daequan-wright-waiting-to-hear-if-he-can-return-to-nfl-after-flirtation-with-lsu",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Tight end Dae'Quan Wright's bid to return to college football came to an end on Tuesday when LSU filled out their roster with other players amid threats from the SEC to pursue expelling the school from the conference due to their desire to add players who spent time in the NFL th",
-          "published": "Wed, 09 Sep 2026 13:43:59 -0400"
-        },
-        {
-          "title": "LSU roster finalized: Lane Kiffin doesn't add ex-NFL players Dae'Quan Wright, Zxavian Harris to team",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdGlpc2Fxamx2WFA5ajNxRklkdU9jV241Uk9DZVZIUFgzTEw2NDZJemdHeWVsYjR2UmxRYTBEcUhGZWRkMFZwT1pERFhDOWZqdlFfZGRTcnRBSHFNNkF3akpkQ193UWEwUWhab0tkQzFJSGlvMGZPaGxyMllHSF83VlJ6cWtGRWFRNjJvRGM2VXZ6R2NNZ3VWMEJPSXRESHo5djJiVGlqSUhlWHprREhRaFp1aUFnWWc?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "LSU roster finalized: Lane Kiffin doesn't add ex-NFL players Dae'Quan Wright, Zxavian Harris to team CBS Sports",
-          "published": "Wed, 09 Sep 2026 01:54:00 GMT"
-        },
-        {
-          "title": "NEWS: LSU football is adding two players to the school’s roster, which will complete it at 105 players, per ESPN sources. This will lock LSU’s roster for the rest of the year, which will eliminate the program’s ability to add Dae’Quan Wright and Zxavian Harris.",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92ajI4elZjNlAtWDhGeC1GU2luXzdralB3d08xdkZIM1lnSEVmQXkzYkNxdzZTX1FmaG8xLVNnZllaU2NYbGcwbXoyeWl5R0I1alh4UzE5RkQyOTA3aEZHcQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "NEWS: LSU football is adding two players to the school’s roster, which will complete it at 105 players, per ESPN sources. This will lock LSU’s roster for the rest of the year, which will eliminate the program’s ability to add Dae’Quan Wright and Zxavian Harris. x.com",
-          "published": "Wed, 09 Sep 2026 01:24:44 GMT"
-        },
-        {
-          "title": "Free-agent TE Dae’Quan Wright still is waiting to hear from the NFL about whether he is eligible to play this season. He never signed with LSU nor joined its roster, and his agent Drew Rosenhaus said multiple teams are now interested in signing him. Wright al",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1HTWlLTERGdmFPSGlIMklpd05jc1pmVUpuRm5FRkl6RTV3Y2ZzR3lxNmozZU9qbnlHd1BqLTVqNlJVU0VSNHE2MkZfdUNrcjgzTExFT2dzS2VkMnpQRUVvcjFCcw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Free-agent TE Dae’Quan Wright still is waiting to hear from the NFL about whether he is eligible to play this season. He never signed with LSU nor joined its roster, and his agent Drew Rosenhaus said multiple teams are now interested in signing him. Wright al x.com",
-          "published": "Wed, 09 Sep 2026 17:24:41 GMT"
-        },
-        {
-          "title": "LSU will add two players to its football roster, maxing it out at 105 players, per @RossDellenger. Therefore, Dae'Quan Wright and Zxavian Harris - who went to NFL training camps - will not suit up for the Tigers this season.",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5pLVdNV3dibjlEcVNGTW52c0pYUjNmVF93QzMwMmhfc2FlR0tyY1ZVMVdFSmFwajRMcWMzdTdwaC1PcDEteWc0NWtFbUl6M2FVTk5CdHdJeEFFbmhhVHQxWnAyYw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "LSU will add two players to its football roster, maxing it out at 105 players, per @RossDellenger. Therefore, Dae'Quan Wright and Zxavian Harris - who went to NFL training camps - will not suit up for the Tigers this season. x.com",
-          "published": "Wed, 09 Sep 2026 02:10:20 GMT"
-        },
-        {
-          "title": "LSU president confirms program will not roster Dae’Quan Wright, Zxavian Harris",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lsu-president-confirms-program-will-not-roster-daequan-wright-zxavian-harris",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "LSU has officially waived the white flag.",
-          "published": "Wed, 09 Sep 2026 15:27:00 -0400"
-        },
-        {
-          "title": "LSU locks its roster, won't add players who signed NFL contracts",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZVRUTHk4UFRDcjNCaGJkbWYyUVlvV1E2N0ZfOENEQ0lPa0NhY0lBdjFJdVpDZE1KUHY4aENlVF9rN0J0b0RGS1pURFZQRU96R0tkYmh1LXo4am9aYmZoZ2gzVS1nOUkwb0RVWHh6TE0xc2Y0WldnbFhveERFLWVQUWdQODJDMmVuUUNoanIzTHpuSWJMV0hlZE12enhNTkFDeFl3bHh6aVFhVnJr?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "LSU locks its roster, won't add players who signed NFL contracts Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 19:29:42 GMT"
-        }
-      ]
-    },
-    {
       "id": "use-draftkings-promo-code-get-200-bonus-bets-7136affa",
       "slug": "use-draftkings-promo-code-get-200-bonus-bets-7136affa",
       "sport": "football",
       "headline": "Use DraftKings promo code to get $200 in bonus bets by targeting Seahawks-Patriots in NFL Kickoff Game 2026",
       "blurb": "DraftKings offers $200 in bonus bets after your first $5 wager for Seahawks vs.",
-      "summary": "DraftKings offers $200 in bonus bets after your first $5 wager for Seahawks vs. Patriots betting in 2026 NFL opener on Wednesday Sign up and bet with the latest FanDuel promo code on Wednesday to make your NFL Week 1 picks Aggregated from CBS NFL, Yahoo Sports, amNewYork, WTOP News, CBS Sports.",
+      "summary": "DraftKings offers $200 in bonus bets after your first $5 wager for Seahawks vs. Patriots betting in 2026 NFL opener on Wednesday Novig Promo Code STIFFS: Get $25 Trade Credits for Patriots vs. Aggregated from CBS NFL, Denver Stiffs, Yahoo Sports, amNewYork, WTOP News and 1 more.",
       "category": "trade",
       "published": "2026-09-07T11:05:00Z",
-      "updated": "2026-09-09T20:37:48Z",
+      "updated": "2026-09-09T22:18:41Z",
       "players": [],
       "sources": [
         {
@@ -6289,100 +6625,116 @@
           "kind": "article",
           "snippet": "DraftKings offers $200 in bonus bets after your first $5 wager for Seahawks vs. Patriots betting in 2026 NFL opener on Wednesday",
           "published": "Wed, 09 Sep 2026 20:37:48 +0000"
+        },
+        {
+          "title": "Use DraftKings promo code to get $200 in bonus bets by targeting Seahawks-Patriots in NFL Kickoff Game 2026",
+          "url": "https://www.cbssports.com/betting/news/use-draftkings-promo-code-to-get-200-bonus-bets-seahawks-vs-patriots-in-nfl-kickoff-game-2026-wednesday/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "DraftKings offers $200 in bonus bets after your first $5 wager for Seahawks vs. Patriots betting in 2026 NFL opener on Wednesday",
+          "published": "Wed, 09 Sep 2026 22:18:41 +0000"
+        },
+        {
+          "title": "Novig Promo Code STIFFS: Get $25 Trade Credits for Patriots vs. Seahawks NFL Kickoff Game",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWVlka3BKS0NhYkxjTXJxU0F4UXN3blZwcTNXUHlfZ0l6cDZXVk52bWVac2o5ekNOZ2I4TWZfWXprcS1CYUpUS3hFNGxSRnZYamFKY3dOM3pwOUR5QW1qYkg0VHo0MzRkaTBZMkFHeTN2cFlaZE9WUTk5T3NQOXI0X2ktZHlxeHltWUFiWDBKODFrSF9FZ3N2WFRJMkcxM1h3cWNKY3B0ZnVwSnIxVG1WY0VBQUlRRlk?oc=5",
+          "publisher": "Denver Stiffs",
+          "kind": "article",
+          "snippet": "Novig Promo Code STIFFS: Get $25 Trade Credits for Patriots vs. Seahawks NFL Kickoff Game Denver Stiffs",
+          "published": "Wed, 09 Sep 2026 22:08:27 GMT"
         }
       ]
     },
     {
-      "id": "2026-jacksonville-jaguars-training-camp-intel-4b6c793c",
-      "slug": "2026-jacksonville-jaguars-training-camp-intel-4b6c793c",
+      "id": "new-england-patriots-release-final-injury-1-tilt-f7980ae5",
+      "slug": "new-england-patriots-release-final-injury-1-tilt-f7980ae5",
       "sport": "football",
-      "headline": "Good and Not So Good From Day 7 of Jaguars Training Camp: Trevor Lawrence's Accuracy",
-      "blurb": "Jaguars already have the answer to Trevor Lawrence's NFL poll problem Black and Teal",
-      "summary": "Jaguars already have the answer to Trevor Lawrence's NFL poll problem Black and Teal See which cities get to watch the Browns vs. Jaguars game on television this week. Aggregated from Black and Teal, SB Nation, Defector, ESPN, Sports Illustrated.",
-      "category": "practice",
-      "published": "2026-07-13T07:00:00Z",
-      "updated": "2026-09-09T15:26:52Z",
-      "players": [
-        {
-          "key": "trevor lawrence",
-          "name": "Trevor Lawrence",
-          "slug": "trevor-lawrence",
-          "pos": "QB",
-          "team": "JAX"
-        }
-      ],
+      "headline": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game",
+      "blurb": "MAJOR Seattle Seahawks Rumors Going Into NFL Week 1 Game Against New England Patriots YouTube",
+      "summary": "MAJOR Seattle Seahawks Rumors Going Into NFL Week 1 Game Against New England Patriots YouTube Week 1 injury report for the New England Patriots Yahoo Sports New England Patriots release final injury report for Week 1 tilt vs. Aggregated from YouTube, Yahoo Sports, A to Z Sports, heavy.com, NFL.com and 1 more.",
+      "category": "injury",
+      "published": "2026-02-05T08:00:00Z",
+      "updated": "2026-09-09T17:53:59Z",
+      "players": [],
       "sources": [
         {
-          "title": "Cleveland Browns vs. Jacksonville Jaguars: Week 1 TV Map",
-          "url": "https://sports.yahoo.com/articles/cleveland-browns-vs-jacksonville-jaguars-152652761.html",
-          "publisher": "SB Nation",
+          "title": "Week 1 injury report for the New England Patriots",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQy0wcHVaVkYwbEpBOElia0o3bEtkSTMxeWZVTHNERUN2el9fbk9zZUZxLVRTRERnLXdsbUstUkQzc2RVczhsTjAwbGN0N0lGenc0UzYxd0hsVWpjUmJpejA3dE1UNlppc01zQ1dsbXBBYTd3elQyUUxUMUVIbEpWX1ZoQQ?oc=5",
+          "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "See which cities get to watch the Browns vs. Jaguars game on television this week.",
-          "published": "Wed, 09 Sep 2026 15:26:52 +0000"
+          "snippet": "Week 1 injury report for the New England Patriots Yahoo Sports",
+          "published": "Tue, 08 Sep 2026 21:24:11 GMT"
         },
         {
-          "title": "Why Your Team Sucks 2026: Jacksonville Jaguars",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mRHlyWEYwYU1vVGRWUU9zQUFRYm42VWZmWVItX0dhTFBzQTB3d1BDLU1kTTFlanB6SzZ3VjlKT2Q1SE02Ym1kOHZ5dXFETUloaTdLYkxKM0JSY2k4LXFETllVeFlfTm5fUXpZQWh4YXZxNGtw?oc=5",
-          "publisher": "Defector",
+          "title": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVzNlV3BlTlphLURoajdHSWVwYkxqM2E4T05JZXk4alZpZ0RtcEZKQ0NyaXJ4MDhlRU5iN0Y3NEJCX1dLV3A5M1VtcW9kei0ybDhrdGd4a2J3Z2xvS2Q4OVVESkZQb0hfV1RwTTcwNHIyVXh6OVYtQVNjSWtvenR4cHcxQnp2Z3lLZGlHVWpJaUVadzVHXy1iTVlZa3ROUHlsRzlNWWNQRXU2dEFPbEdZM0FoYTlMX3RxVzVXZ3Jwd3Nzbko1LTliSEExS3dmdHhUTUhMakw3M0gyanVLaWdSX0tmaVZDQQ?oc=5",
+          "publisher": "A to Z Sports",
           "kind": "article",
-          "snippet": "Why Your Team Sucks 2026: Jacksonville Jaguars Defector",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+          "snippet": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game A to Z Sports",
+          "published": "Tue, 08 Sep 2026 22:38:52 GMT"
         },
         {
-          "title": "2026 Jacksonville Jaguars training camp: Latest intel, updates",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdkNQbGptWjNNY1JJQkN3MGlvZmNLMXdMN1BEem5sWnYyRTVVWDc2eGpnTTVHblVRNzkzamRYdGlvc2RpNkw5bmxsSElkTWNrS1V1R1BuSnVsMUhPOGNVX2s0bnMtWVZubzBzVGF5dWJVMHlZVlBCUk5PaHpvOU9QNEFPUDRHOXRMMTRtVHNhRnZIUDR4QnViSVNYQURHOEE?oc=5",
-          "publisher": "ESPN",
+          "title": "New England Patriots Named Trade Fit for $100 Million Star, Former Top-5 Pick",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdGpWT1g0UmdNYTZJaXFvcHFMTk01ZW1PX1ZWd2NXMjF6RDEyaE1zbldJd0Y3SEl2bUd2NWhfUjdJWWItaXlwSm1ydzVWUU1yNGpZUW5IZ2NuRG9wVlJ1OF9nZTRlUnZLRTNqdGdIc0JjckcyOWluWGxzMDY3cTZqY1FvV080SUFV?oc=5",
+          "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "2026 Jacksonville Jaguars training camp: Latest intel, updates ESPN",
-          "published": "Wed, 19 Aug 2026 07:00:00 GMT"
+          "snippet": "New England Patriots Named Trade Fit for $100 Million Star, Former Top-5 Pick Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 17:53:59 GMT"
         },
         {
-          "title": "Eagles Day 9 Training Camp Observations",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNekY5VGQxX20xSi1LelVOSk9HLTZMVE1wY0VXTjFjMFJ2TW9zTWhwNFZTaVc3X2lnV2JUdGMtaVRRR0lJcnFKMV9uM29XZDI2dnVNdXVMMFZwdWQydjFQNlU3eTRpLV9zUTN0bWdrSjd3V3R4MmxwWWxYOUl4dlB3b29TZldBM2xrSDlHU1gxNmVjVEwxY0VxUWFkRTRvaXNoVnZLa1M1dHo2bG1uV2JjbWNyY053QXUxeE9heGNoOHUzSFN4OTlwNVRxOHRrVTljV1BMeTRoRQ?oc=5",
-          "publisher": "Sports Illustrated",
+          "title": "New England Patriots Named Trade Fit for $100 Million Star, Former Top-5 Pick",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWU80dlZTZFNqNzV2ZGRjYm5xbjh6azJnR21rZ2M2aENQLTdtSllMaTZtMFFLdFpkZkdoWUpTbGI4Mk80LXNOa19EQlZiOXRmT1NycmFDbmhiT2FyOVdaMmRnTVdaaTY4ajlqMDZTZXEzb0prU2VQT1pDZmQ2Yld2bUhQc3piZ0JRTjJ4bDI4QlFxSW9SUjMxLUo0TmdMcEtQ?oc=5",
+          "publisher": "heavy.com",
           "kind": "article",
-          "snippet": "Eagles Day 9 Training Camp Observations Sports Illustrated",
-          "published": "Mon, 10 Aug 2026 07:00:00 GMT"
+          "snippet": "New England Patriots Named Trade Fit for $100 Million Star, Former Top-5 Pick heavy.com",
+          "published": "Wed, 09 Sep 2026 14:54:02 GMT"
         },
         {
-          "title": "2026 Philadelphia Eagles training camp: Latest intel, updates",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN1gxU09jcFVaZnEzQ01EX1BUVkstZ3g4Q3BkX3loQ3poZDFNandkUHNNaGIyQUo3TE5pdXpyVmYxNlI5dGtEYzVuMXI5VEFzdEd1bmp1cU5jNE95bHE0S1AwTkJxNVZIbmdXSl85TlNnMlJnUHpWME1WcnRVaExWbkRKN1JiS0E5Z0duOVRHTmt6dHUzZi1yVC1zX1h0UQ?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "2026 Philadelphia Eagles training camp: Latest intel, updates ESPN",
-          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
+          "title": "The New England Patriots Just Proved They Have Entered A NEW ERA After Christian Gonzalez Extension",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9hZzVNdzJRZXJYQmN2cm55Xzk4c0VyNUdiSldjVE04Wi02MmZ1dXpqTDV4VnFVNHA4Rnd0YnVZekFYbzhPLWF2d2FGYUJ6SWNjMmJUd09B?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "The New England Patriots Just Proved They Have Entered A NEW ERA After Christian Gonzalez Extension YouTube",
+          "published": "Tue, 08 Sep 2026 18:16:46 GMT"
         },
         {
-          "title": "Good and Not So Good From Day 7 of Jaguars Training Camp: Trevor Lawrence's Accuracy",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUmVzdzlDdWZ3WmRLQXpWaGd2S1NidDRfd3BUblduOHRaYlBOUHY1MHE0aWVaMnpjaFUxR0I5Wmw4ZFlFNnhURFhpYldyeGZnLTcxQW9CeXE4LV9JQ2p0SHFObmY4RFZTeWlTQ252YjRIUXhIS3dZdk5KRHhBRklfZzcyU0FlWjlveUliV09lZG1MMC1IN2hfaWhUSmkxaFNHQzZVWVBaNl9iVGFKUHpkN05DUlAtVXRQMDJfM3k3bmRyQQ?oc=5",
-          "publisher": "Sports Illustrated",
+          "title": "Super Bowl LX injury report: Seattle Seahawks vs. New England Patriots",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTlBrVUl0RWF4TzYwUTZyS1ZBdHNkT1ZJbE5LWVBKZFh3ZFEtdXFvRWJEZEpwWi1mX0JyczZ4TFpNT00zaW9JbVdzSlZUTUtCOTVIdWl4UG9UWl8wRHJmUkhadXNFdWNPR2wxQ2dmNTdwVXZDVHI2ZWxmTVVHX3pyUm50MndIMEI1Y3p2S1RWYmJTYnEyU0dSMg?oc=5",
+          "publisher": "NFL.com",
           "kind": "article",
-          "snippet": "Good and Not So Good From Day 7 of Jaguars Training Camp: Trevor Lawrence's Accuracy Sports Illustrated",
-          "published": "Thu, 06 Aug 2026 07:00:00 GMT"
+          "snippet": "Super Bowl LX injury report: Seattle Seahawks vs. New England Patriots NFL.com",
+          "published": "Fri, 06 Feb 2026 08:00:00 GMT"
         },
         {
-          "title": "Good and Not So Good From Day 6 of Jaguars Training Camp: Trevor Lawrence Struggles",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcmJBbElqVWNyR01OUXlBS1FNV1U5UnhDYWZEbnRBa3ZRNUc3d3VWakhJVmdJcWdzdEhXSlZCWGZUVk1LZFB6aTlwT3BmTElZY1Mxa0hTSFRNY3lyR2I2Zm9Rc0NkS1l1LTU4dXZqVmJIMFd2WjRQY1YzaUxsRnVvNEpCT0pGOEZLN2xfVG9hNnZVeGFoZ2dReUM3ZEtDUUxoWGVIOXl5MHFBWThXdzRZUE81WmIwMm5lZGRYUmw0Y0I?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Good and Not So Good From Day 6 of Jaguars Training Camp: Trevor Lawrence Struggles Sports Illustrated",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+          "title": "The 2025 AP NFL Coach of the Year is New England Patriots HC Mike Vrabel.",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBmdVpfazlUSlNYMXN4UjlWVERNTHVnV3k1NmNaZFduempxbjFvcDdua0VORnJ0ZUhCMEhMVHhoR3prUmo0Qlp0RlJHS3p5SGlGUkxNZTE1clRLbURTTHJjTWdDSQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The 2025 AP NFL Coach of the Year is New England Patriots HC Mike Vrabel. x.com",
+          "published": "Thu, 05 Feb 2026 08:00:00 GMT"
         },
         {
-          "title": "Everything I Saw at Day 3 of Jaguars Training Camp: Trevor Lawrence Has a Day",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNREF3eFladmpUdmlLOWw3OVlaZWpXcVNoMzh1bnk0WGVSSV9Vam03dHB5THZJbWdWWGFodm9oWHZfb1d1QmRtT0VURlRRWUhwZW5ENHBWZ2g0QkE0SjVHWGZNMEY1NTZ0a3BFNlJvYWtVY3BEME5zN0xyT001WGNiYW5GWUVzbUxjSWdrMFlNV3U2cFBWbnJHTEtLNzlMWF93NXBDbXQwWUJ1T0tmaldKSnRGSE5icDV2?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Everything I Saw at Day 3 of Jaguars Training Camp: Trevor Lawrence Has a Day Sports Illustrated",
-          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+          "title": "NOT GOOD Seattle Seahawks Injury News On Nick Emmanwori #seahawks #nfl #shorts",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wUTdGaTBOeUh0ZTZrbVluN3JQZDJvdXlKZ2pfeDhCdDFQZXJNZExLNGVhN1pJdDZiYmtHaHEyTjJGaEJXa1M0Mm54bzRBcFR2SHlDWg?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "NOT GOOD Seattle Seahawks Injury News On Nick Emmanwori #seahawks #nfl #shorts YouTube",
+          "published": "Sun, 06 Sep 2026 22:23:37 GMT"
         },
         {
-          "title": "Jaguars already have the answer to Trevor Lawrence's NFL poll problem",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcF9UbktFMTJOcVBwMWU0UUxlMHZBenFMYVItT2ZRS2tQTlREVkt5d3dSZ2tEcnBKbWRZYXdNdmEzR3psTXpuVFdTMHJPbVdVVTM1UWNjMmNmMlBjNkpLYjhKOFFodk1CWE9tYndKZ1RmZ3p0LTJtTWhrWG9RbjctdU54enp0cEYyN3IwNTBFUlI0ZFdNUWVHRjZPNkhJRlJMVlluSUkyVVNaMFJ5Wmk1dmF0QQ?oc=5",
-          "publisher": "Black and Teal",
+          "title": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORHZLNVJ4c29yTU9uSjliT0M5YTNRZzJpSjZaQlhKR25rVjZBVHRpYURFWURLNmJIdHFMX3BZYV81aU1JQjM1a21qTGRqVDdWLWNZZXlOcnhmVkJ4MDNmMUpJQWdjUzZtQ1lmb1N3ZVpieER1WWRpNThpTDRvNVBEY3dJTTZzeUo3SmZGXzA1RQ?oc=5",
+          "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "Jaguars already have the answer to Trevor Lawrence's NFL poll problem Black and Teal",
-          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
+          "snippet": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game Yahoo Sports",
+          "published": "Tue, 08 Sep 2026 22:38:52 GMT"
+        },
+        {
+          "title": "MAJOR Seattle Seahawks Rumors Going Into NFL Week 1 Game Against New England Patriots",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1QN1pUQnBVQkt5UHdhZWc4TXNvQXIzRGJZV001Tmh3UFFXX0xKYW1NWXJLMzRWOWNwUUFHeFI0aDhOblNaRW1RQjhQUWZyX0pUS1Q3ZnF3?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "MAJOR Seattle Seahawks Rumors Going Into NFL Week 1 Game Against New England Patriots YouTube",
+          "published": "Tue, 08 Sep 2026 17:23:49 GMT"
         }
       ]
     },
@@ -6562,92 +6914,6 @@
           "kind": "article",
           "snippet": "Cardinals handling of Jeremiyah Love backfired in record time with preseason injury Yahoo Sports",
           "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "new-england-patriots-release-final-injury-1-tilt-f7980ae5",
-      "slug": "new-england-patriots-release-final-injury-1-tilt-f7980ae5",
-      "sport": "football",
-      "headline": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game",
-      "blurb": "New England Patriots release final injury report for Week 1 tilt vs.",
-      "summary": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game Yahoo Sports Week 1 injury report for the New England Patriots Yahoo Sports Aggregated from Yahoo Sports, A to Z Sports, heavy.com, YouTube, NFL.com and 1 more.",
-      "category": "injury",
-      "published": "2026-02-05T08:00:00Z",
-      "updated": "2026-09-09T17:53:59Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Week 1 injury report for the New England Patriots",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQy0wcHVaVkYwbEpBOElia0o3bEtkSTMxeWZVTHNERUN2el9fbk9zZUZxLVRTRERnLXdsbUstUkQzc2RVczhsTjAwbGN0N0lGenc0UzYxd0hsVWpjUmJpejA3dE1UNlppc01zQ1dsbXBBYTd3elQyUUxUMUVIbEpWX1ZoQQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Week 1 injury report for the New England Patriots Yahoo Sports",
-          "published": "Tue, 08 Sep 2026 21:24:11 GMT"
-        },
-        {
-          "title": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVzNlV3BlTlphLURoajdHSWVwYkxqM2E4T05JZXk4alZpZ0RtcEZKQ0NyaXJ4MDhlRU5iN0Y3NEJCX1dLV3A5M1VtcW9kei0ybDhrdGd4a2J3Z2xvS2Q4OVVESkZQb0hfV1RwTTcwNHIyVXh6OVYtQVNjSWtvenR4cHcxQnp2Z3lLZGlHVWpJaUVadzVHXy1iTVlZa3ROUHlsRzlNWWNQRXU2dEFPbEdZM0FoYTlMX3RxVzVXZ3Jwd3Nzbko1LTliSEExS3dmdHhUTUhMakw3M0gyanVLaWdSX0tmaVZDQQ?oc=5",
-          "publisher": "A to Z Sports",
-          "kind": "article",
-          "snippet": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game A to Z Sports",
-          "published": "Tue, 08 Sep 2026 22:38:52 GMT"
-        },
-        {
-          "title": "New England Patriots Named Trade Fit for $100 Million Star, Former Top-5 Pick",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdGpWT1g0UmdNYTZJaXFvcHFMTk01ZW1PX1ZWd2NXMjF6RDEyaE1zbldJd0Y3SEl2bUd2NWhfUjdJWWItaXlwSm1ydzVWUU1yNGpZUW5IZ2NuRG9wVlJ1OF9nZTRlUnZLRTNqdGdIc0JjckcyOWluWGxzMDY3cTZqY1FvV080SUFV?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "New England Patriots Named Trade Fit for $100 Million Star, Former Top-5 Pick Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 17:53:59 GMT"
-        },
-        {
-          "title": "New England Patriots Named Trade Fit for $100 Million Star, Former Top-5 Pick",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWU80dlZTZFNqNzV2ZGRjYm5xbjh6azJnR21rZ2M2aENQLTdtSllMaTZtMFFLdFpkZkdoWUpTbGI4Mk80LXNOa19EQlZiOXRmT1NycmFDbmhiT2FyOVdaMmRnTVdaaTY4ajlqMDZTZXEzb0prU2VQT1pDZmQ2Yld2bUhQc3piZ0JRTjJ4bDI4QlFxSW9SUjMxLUo0TmdMcEtQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "New England Patriots Named Trade Fit for $100 Million Star, Former Top-5 Pick heavy.com",
-          "published": "Wed, 09 Sep 2026 14:54:02 GMT"
-        },
-        {
-          "title": "The New England Patriots Just Proved They Have Entered A NEW ERA After Christian Gonzalez Extension",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9hZzVNdzJRZXJYQmN2cm55Xzk4c0VyNUdiSldjVE04Wi02MmZ1dXpqTDV4VnFVNHA4Rnd0YnVZekFYbzhPLWF2d2FGYUJ6SWNjMmJUd09B?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "The New England Patriots Just Proved They Have Entered A NEW ERA After Christian Gonzalez Extension YouTube",
-          "published": "Tue, 08 Sep 2026 18:16:46 GMT"
-        },
-        {
-          "title": "Super Bowl LX injury report: Seattle Seahawks vs. New England Patriots",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTlBrVUl0RWF4TzYwUTZyS1ZBdHNkT1ZJbE5LWVBKZFh3ZFEtdXFvRWJEZEpwWi1mX0JyczZ4TFpNT00zaW9JbVdzSlZUTUtCOTVIdWl4UG9UWl8wRHJmUkhadXNFdWNPR2wxQ2dmNTdwVXZDVHI2ZWxmTVVHX3pyUm50MndIMEI1Y3p2S1RWYmJTYnEyU0dSMg?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "Super Bowl LX injury report: Seattle Seahawks vs. New England Patriots NFL.com",
-          "published": "Fri, 06 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "The 2025 AP NFL Coach of the Year is New England Patriots HC Mike Vrabel.",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBmdVpfazlUSlNYMXN4UjlWVERNTHVnV3k1NmNaZFduempxbjFvcDdua0VORnJ0ZUhCMEhMVHhoR3prUmo0Qlp0RlJHS3p5SGlGUkxNZTE1clRLbURTTHJjTWdDSQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "The 2025 AP NFL Coach of the Year is New England Patriots HC Mike Vrabel. x.com",
-          "published": "Thu, 05 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "NOT GOOD Seattle Seahawks Injury News On Nick Emmanwori #seahawks #nfl #shorts",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wUTdGaTBOeUh0ZTZrbVluN3JQZDJvdXlKZ2pfeDhCdDFQZXJNZExLNGVhN1pJdDZiYmtHaHEyTjJGaEJXa1M0Mm54bzRBcFR2SHlDWg?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "NOT GOOD Seattle Seahawks Injury News On Nick Emmanwori #seahawks #nfl #shorts YouTube",
-          "published": "Sun, 06 Sep 2026 22:23:37 GMT"
-        },
-        {
-          "title": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORHZLNVJ4c29yTU9uSjliT0M5YTNRZzJpSjZaQlhKR25rVjZBVHRpYURFWURLNmJIdHFMX3BZYV81aU1JQjM1a21qTGRqVDdWLWNZZXlOcnhmVkJ4MDNmMUpJQWdjUzZtQ1lmb1N3ZVpieER1WWRpNThpTDRvNVBEY3dJTTZzeUo3SmZGXzA1RQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "New England Patriots release final injury report for Week 1 tilt vs. Seattle Seahawks with a key absence threatening to alter the game Yahoo Sports",
-          "published": "Tue, 08 Sep 2026 22:38:52 GMT"
         }
       ]
     },
@@ -7136,6 +7402,96 @@
       ]
     },
     {
+      "id": "7-questions-1-dj-moore-jonathon-brooks-patrick-98cde365",
+      "slug": "7-questions-1-dj-moore-jonathon-brooks-patrick-98cde365",
+      "sport": "football",
+      "headline": "7 Questions for Week 1! DJ Moore, Jonathon Brooks, Patrick Mahomes, & More! | Reality vs. Fantasy",
+      "blurb": "DJ Moore, Jonathon Brooks, Patrick Mahomes, & More!",
+      "summary": "DJ Moore, Jonathon Brooks, Patrick Mahomes, & More! Board reading of YouTube.",
+      "category": "wire",
+      "published": "2026-09-09T20:12:46Z",
+      "updated": "2026-09-09T20:12:46Z",
+      "players": [
+        {
+          "key": "patrick mahomes",
+          "name": "Patrick Mahomes",
+          "slug": "patrick-mahomes",
+          "pos": "QB",
+          "team": "KC"
+        },
+        {
+          "key": "jonathon brooks",
+          "name": "Jonathon Brooks",
+          "slug": "jonathon-brooks",
+          "pos": "RB",
+          "team": "CAR"
+        },
+        {
+          "key": "dj moore",
+          "name": "DJ Moore",
+          "slug": "dj-moore",
+          "pos": "WR",
+          "team": "BUF"
+        }
+      ],
+      "sources": [
+        {
+          "title": "7 Questions for Week 1! DJ Moore, Jonathon Brooks, Patrick Mahomes, & More! | Reality vs. Fantasy",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBKbGV4dWtsN3M3Tmt0cDJGMi0ySUdUMlIyYmlVM0plUE5zd1E0RjJPZUZKRWxib0RYSk9GTklBd1YyV1FwN09IMllYa3EwODllTnhiRElR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "7 Questions for Week 1! DJ Moore, Jonathon Brooks, Patrick Mahomes, & More! | Reality vs. Fantasy YouTube",
+          "published": "Wed, 09 Sep 2026 20:12:46 GMT"
+        }
+      ]
+    },
+    {
+      "id": "zay-flowers-nnamdi-madubuike-listed-limited-ravens-practice-bc826eaf",
+      "slug": "zay-flowers-nnamdi-madubuike-listed-limited-ravens-practice-bc826eaf",
+      "sport": "football",
+      "headline": "Zay Flowers, Nnamdi Madubuike listed as limited in Ravens practice",
+      "blurb": "Zay Flowers That ‘lower body injury’ was a hamstring strain.",
+      "summary": "Zay Flowers That ‘lower body injury’ was a hamstring strain. He dealt with a quad contusion earlier in August, but the hamstring strain is more concerning. The good news is that he is limited in practice (as opposed to not practicing). Aggregated from x.com, ProFootball Talk on NBC Sports, PFT feed.",
+      "category": "injury",
+      "published": "2026-09-09T20:28:35Z",
+      "updated": "2026-09-09T20:32:35Z",
+      "players": [
+        {
+          "key": "zay flowers",
+          "name": "Zay Flowers",
+          "slug": "zay-flowers",
+          "pos": "WR",
+          "team": "BAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Zay Flowers, Nnamdi Madubuike listed as limited in Ravens practice",
+          "url": "https://sports.yahoo.com/articles/zay-flowers-nnamdi-madubuike-listed-203235942.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "Ravens wide receiver Zay Flowers returned to practice after an extended absence last week and he was back on the field with the team on Wednesday.",
+          "published": "Wed, 09 Sep 2026 20:32:35 +0000"
+        },
+        {
+          "title": "Zay Flowers, Nnamdi Madubuike listed as limited in Ravens practice",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/zay-flowers-nnamdi-madubuike-listed-as-limited-in-ravens-practice",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Ravens wide receiver Zay Flowers returned to practice after an extended absence last week and he was back on the field with the team on Wednesday.",
+          "published": "Wed, 09 Sep 2026 16:32:35 -0400"
+        },
+        {
+          "title": "Zay Flowers That ‘lower body injury’ was a hamstring strain. He dealt with a quad contusion earlier in August, but the hamstring strain is more concerning. The good news is that he is limited in practice (as opposed to not practicing). He’s at increased risk of rei",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAxT3BqZDhQU19LdjQxSVB1NUpMVGhTT05OTHlYMlZIZkRWLUJ4ZmNwbzBrWjNwZWVYSWtOS2h3NmtidnB6YXNXWjJsZGJYQW1hZXQtbWQ0MHoxR2xDWVhQeHRjSQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Zay Flowers That ‘lower body injury’ was a hamstring strain. He dealt with a quad contusion earlier in August, but the hamstring strain is more concerning. The good news is that he is limited in practice (as opposed to not practicing). He’s at increased risk of rei x.com",
+          "published": "Wed, 09 Sep 2026 20:28:35 GMT"
+        }
+      ]
+    },
+    {
       "id": "sam-laporta-listed-injury-d01b4105",
       "slug": "sam-laporta-listed-injury-d01b4105",
       "sport": "football",
@@ -7178,6 +7534,60 @@
           "kind": "x",
           "snippet": "Sam LaPorta (hip) not listed on injury report for Week 1. x.com",
           "published": "Wed, 09 Sep 2026 20:03:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "eagles-nick-sirianni-remains-cautious-revealing-jalen-hurts-72815b13",
+      "slug": "eagles-nick-sirianni-remains-cautious-revealing-jalen-hurts-72815b13",
+      "sport": "football",
+      "headline": "Eagles’ Nick Sirianni remains cautious about revealing Jalen Hurts’ backup QB for the 2026 NFL season",
+      "blurb": "Eagles’ Nick Sirianni: ‘Edgy’ Riq Woolen, Jalen Hurts’ transition, practice vs.",
+      "summary": "Eagles’ Nick Sirianni: ‘Edgy’ Riq Woolen, Jalen Hurts’ transition, practice vs. Patriots - The Athletic The New York Times The Eagles did not specify whether Tanner McKee or Andy Dalton will be their backup quarterback when they released their depth chart for Week 1 and head coach Nick Sirianni passed on a chance to do so during a Wednesday press conference as well. Aggregated from The New York Times, PFT feed, bolavip.com, Athlon Sports.",
+      "category": "roster",
+      "published": "2026-05-20T07:00:00Z",
+      "updated": "2026-09-09T17:47:12Z",
+      "players": [
+        {
+          "key": "jalen hurts",
+          "name": "Jalen Hurts",
+          "slug": "jalen-hurts",
+          "pos": "QB",
+          "team": "PHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nick Sirianni declines to name a backup quarterback for Week 1",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nick-sirianni-declines-to-name-a-backup-quarterback-for-week-1",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "The Eagles did not specify whether Tanner McKee or Andy Dalton will be their backup quarterback when they released their depth chart for Week 1 and head coach Nick Sirianni passed on a chance to do so during a Wednesday press conference as well.",
+          "published": "Wed, 09 Sep 2026 12:51:01 -0400"
+        },
+        {
+          "title": "Eagles’ Nick Sirianni remains cautious about revealing Jalen Hurts’ backup QB for the 2026 NFL season",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSm8yNXVuNzFpWnVkWWlRZ2V6TDJsMlZodTFTRUFLS0JWQ2FiQWdCa2tPS0NEYlNmSXItdUFuQlE0cUdDRVc0SDFJWjZIQVRpeEh4RzJSZHhKNDM3b0FNbTFjZFZfUkVMbmpIOFlSUzRiMGNkazVTb3VHeVl3ZVpvX2hUenJPUTNyRWE0Z3ZaRTYtYlZYXzVJc2Z1TmhCMTQtSmp0UFd2dXNnaHpiY3hYZ3RxYmdrSTVDUlM4cWtRZi1Xa1N00gHKAUFVX3lxTFBnR0paSTFpSTJaLXc3LVN2ZjFROFc4VjdLbnVqSEFwdnhjYWNzNGY1YXRfTEZFcUY0aEIxaDF0T0dsd09JWmJGYjdPRW5kX0h4UjdtT1RfM2Q1b1lqLXlMeFNDNjNHd1dwYWo3YXI0cDN6c2REMkRpWUpHaDhPWnlTRGxCaE5CM2pjd214VzRHcUtGdnRhMjNQWmRpU1JjbWdYT1NHWGJ2bHJJdm1XMi0zcE9TckFRVFRFQU53TWFmQzFlbWstZkdJMEE?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Eagles’ Nick Sirianni remains cautious about revealing Jalen Hurts’ backup QB for the 2026 NFL season bolavip.com",
+          "published": "Wed, 09 Sep 2026 17:47:12 GMT"
+        },
+        {
+          "title": "Jalen Hurts and Nick Sirianni Ranked 8th Best Quarterback-Coach Duo",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlg0SlVQWDJGRGJJdklDYWp5NHRJNVRSNWVWRXpSR1JNTjZ1S0xJZmxkcWlNeHFNRWJwOXFuRFZvWUJDYUtHdnRKOElaWUN2dnlzMWh3V0lNbWdvalFybVJNY1JiQVFwcG5WM2IyRTZVSllXSW5YdlhVdml2alpxWU9pTDFsMXBoNTB1UE1UYlBacEpCdUUxZWZaay1WMnJLWE9LOVFLN0s0QTloYW1WcXJVZ18xZk0?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Jalen Hurts and Nick Sirianni Ranked 8th Best Quarterback-Coach Duo Athlon Sports",
+          "published": "Sat, 05 Sep 2026 01:42:00 GMT"
+        },
+        {
+          "title": "Eagles’ Nick Sirianni: ‘Edgy’ Riq Woolen, Jalen Hurts’ transition, practice vs. Patriots",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQX0ZoZGFVWU5HV1V2TjlaNE5qa3cwZTZnaU9tZ0k1LTljSE5SNzNKZHdMNl9FVzZEVVRBYnVFeGJkR1NFTWVjN2JDQjRfYnNaRHo1bjBud0hSYlZCZ0JMV1Q4RVRhVVhBd3dRRkZiVmlYeFFZYlh5UmZwWTBrT0VKeThUaE5PMmFiY0RZY193UFBKYkU2Uy00aGs5VEc3N0NEbkJkNUVDeGJ1TFJLUlBFRkRUOEQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Eagles’ Nick Sirianni: ‘Edgy’ Riq Woolen, Jalen Hurts’ transition, practice vs. Patriots - The Athletic The New York Times",
+          "published": "Wed, 20 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -7272,60 +7682,6 @@
           "kind": "article",
           "snippet": "What's making Jonathan Taylor the NFL's best running back? | The Colts Show Colts.com",
           "published": "Thu, 23 Oct 2025 21:08:20 GMT"
-        }
-      ]
-    },
-    {
-      "id": "eagles-nick-sirianni-remains-cautious-revealing-jalen-hurts-72815b13",
-      "slug": "eagles-nick-sirianni-remains-cautious-revealing-jalen-hurts-72815b13",
-      "sport": "football",
-      "headline": "Eagles’ Nick Sirianni remains cautious about revealing Jalen Hurts’ backup QB for the 2026 NFL season",
-      "blurb": "Eagles’ Nick Sirianni: ‘Edgy’ Riq Woolen, Jalen Hurts’ transition, practice vs.",
-      "summary": "Eagles’ Nick Sirianni: ‘Edgy’ Riq Woolen, Jalen Hurts’ transition, practice vs. Patriots - The Athletic The New York Times The Eagles did not specify whether Tanner McKee or Andy Dalton will be their backup quarterback when they released their depth chart for Week 1 and head coach Nick Sirianni passed on a chance to do so during a Wednesday press conference as well. Aggregated from The New York Times, PFT feed, bolavip.com, Athlon Sports.",
-      "category": "roster",
-      "published": "2026-05-20T07:00:00Z",
-      "updated": "2026-09-09T17:47:12Z",
-      "players": [
-        {
-          "key": "jalen hurts",
-          "name": "Jalen Hurts",
-          "slug": "jalen-hurts",
-          "pos": "QB",
-          "team": "PHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Nick Sirianni declines to name a backup quarterback for Week 1",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nick-sirianni-declines-to-name-a-backup-quarterback-for-week-1",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "The Eagles did not specify whether Tanner McKee or Andy Dalton will be their backup quarterback when they released their depth chart for Week 1 and head coach Nick Sirianni passed on a chance to do so during a Wednesday press conference as well.",
-          "published": "Wed, 09 Sep 2026 12:51:01 -0400"
-        },
-        {
-          "title": "Eagles’ Nick Sirianni remains cautious about revealing Jalen Hurts’ backup QB for the 2026 NFL season",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSm8yNXVuNzFpWnVkWWlRZ2V6TDJsMlZodTFTRUFLS0JWQ2FiQWdCa2tPS0NEYlNmSXItdUFuQlE0cUdDRVc0SDFJWjZIQVRpeEh4RzJSZHhKNDM3b0FNbTFjZFZfUkVMbmpIOFlSUzRiMGNkazVTb3VHeVl3ZVpvX2hUenJPUTNyRWE0Z3ZaRTYtYlZYXzVJc2Z1TmhCMTQtSmp0UFd2dXNnaHpiY3hYZ3RxYmdrSTVDUlM4cWtRZi1Xa1N00gHKAUFVX3lxTFBnR0paSTFpSTJaLXc3LVN2ZjFROFc4VjdLbnVqSEFwdnhjYWNzNGY1YXRfTEZFcUY0aEIxaDF0T0dsd09JWmJGYjdPRW5kX0h4UjdtT1RfM2Q1b1lqLXlMeFNDNjNHd1dwYWo3YXI0cDN6c2REMkRpWUpHaDhPWnlTRGxCaE5CM2pjd214VzRHcUtGdnRhMjNQWmRpU1JjbWdYT1NHWGJ2bHJJdm1XMi0zcE9TckFRVFRFQU53TWFmQzFlbWstZkdJMEE?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Eagles’ Nick Sirianni remains cautious about revealing Jalen Hurts’ backup QB for the 2026 NFL season bolavip.com",
-          "published": "Wed, 09 Sep 2026 17:47:12 GMT"
-        },
-        {
-          "title": "Jalen Hurts and Nick Sirianni Ranked 8th Best Quarterback-Coach Duo",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTlg0SlVQWDJGRGJJdklDYWp5NHRJNVRSNWVWRXpSR1JNTjZ1S0xJZmxkcWlNeHFNRWJwOXFuRFZvWUJDYUtHdnRKOElaWUN2dnlzMWh3V0lNbWdvalFybVJNY1JiQVFwcG5WM2IyRTZVSllXSW5YdlhVdml2alpxWU9pTDFsMXBoNTB1UE1UYlBacEpCdUUxZWZaay1WMnJLWE9LOVFLN0s0QTloYW1WcXJVZ18xZk0?oc=5",
-          "publisher": "Athlon Sports",
-          "kind": "article",
-          "snippet": "Jalen Hurts and Nick Sirianni Ranked 8th Best Quarterback-Coach Duo Athlon Sports",
-          "published": "Sat, 05 Sep 2026 01:42:00 GMT"
-        },
-        {
-          "title": "Eagles’ Nick Sirianni: ‘Edgy’ Riq Woolen, Jalen Hurts’ transition, practice vs. Patriots",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQX0ZoZGFVWU5HV1V2TjlaNE5qa3cwZTZnaU9tZ0k1LTljSE5SNzNKZHdMNl9FVzZEVVRBYnVFeGJkR1NFTWVjN2JDQjRfYnNaRHo1bjBud0hSYlZCZ0JMV1Q4RVRhVVhBd3dRRkZiVmlYeFFZYlh5UmZwWTBrT0VKeThUaE5PMmFiY0RZY193UFBKYkU2Uy00aGs5VEc3N0NEbkJkNUVDeGJ1TFJLUlBFRkRUOEQ?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Eagles’ Nick Sirianni: ‘Edgy’ Riq Woolen, Jalen Hurts’ transition, practice vs. Patriots - The Athletic The New York Times",
-          "published": "Wed, 20 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -7658,170 +8014,40 @@
       ]
     },
     {
-      "id": "tyrone-tracy-jr-no-listing-1-injury-6453da25",
-      "slug": "tyrone-tracy-jr-no-listing-1-injury-6453da25",
+      "id": "rachaad-white-clear-injury-4ebbc6f9",
+      "slug": "rachaad-white-clear-injury-4ebbc6f9",
       "sport": "football",
-      "headline": "Tyrone Tracy Jr. No listing on Week 1 injury report",
-      "blurb": "No listing on Week 1 injury report Fantasy Footballers Podcast",
-      "summary": "Tyrone Tracy Jr.: No listing on Week 1 injury report Fantasy Footballers Podcast (neck) not listed on injury report for Week 1. Aggregated from Fantasy Footballers Podcast, x.com.",
+      "headline": "Rachaad White: Clear of injury report",
+      "blurb": "White (hamstring) wasn't listed on the Commanders' initial Week 1 injury report Wednesday.",
+      "summary": "Rachaad White: White (hamstring) wasn't listed on the Commanders' initial Week 1 injury report Wednesday. Visit RotoWire.com for more analysis on this update. Rachaad White Clear of injury report Fantasy Footballers Podcast Aggregated from RotoWire NFL, Fantasy Footballers Podcast.",
       "category": "injury",
-      "published": "2026-09-09T20:20:55Z",
-      "updated": "2026-09-09T21:01:44Z",
+      "published": "2026-09-09T21:52:43Z",
+      "updated": "2026-09-09T21:52:43Z",
       "players": [
         {
-          "key": "tyrone tracy",
-          "name": "Tyrone Tracy Jr.",
-          "slug": "tyrone-tracy",
+          "key": "rachaad white",
+          "name": "Rachaad White",
+          "slug": "rachaad-white",
           "pos": "RB",
-          "team": "NYG"
+          "team": "WAS"
         }
       ],
       "sources": [
         {
-          "title": "Tyrone Tracy Jr. No listing on Week 1 injury report",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVlZXZldWOUhwTzJWYTZmZlRjWGcwNUI1SE05YzVweGFxazhnMkx1MHNRdHBCalR1OXI4R0NLZkM2YnVicnFHTy1LLTN4VmxIejFmcVBhY1ByamFLS3ZVR0xYdGZMdmlEa0tDck52aWNqNVFZQnlsUzJxSUNIb2FNcUNYV2dNbHdrcklyVm9TcC1HdERWRmVxMFBPa0Zxc28wd1hZ?oc=5",
+          "title": "Rachaad White: Clear of injury report",
+          "url": "https://www.rotowire.com//football/player/rachaad-white-15802",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "White (hamstring) wasn't listed on the Commanders' initial Week 1 injury report Wednesday. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 09 Sep 2026 2:49:00 PM PDT"
+        },
+        {
+          "title": "Rachaad White Clear of injury report",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPME11S0MyeXVzRjRjaVVndy1odW5XRkpMazhVMk51dlBEQXNFSzljMUJROXlDZzJQV1R3SlFxaEtNZG4yTlUweDVBNkV0dXZxOGFOcEE3UDh2TG9SS2w0V1VrTjl2T1lhVVYzVldHSTlRU010M3VlNDl4TUpQaGhOYmFMU1gtNm02dU05WGNtZlY?oc=5",
           "publisher": "Fantasy Footballers Podcast",
           "kind": "article",
-          "snippet": "Tyrone Tracy Jr. No listing on Week 1 injury report Fantasy Footballers Podcast",
-          "published": "Wed, 09 Sep 2026 21:01:44 GMT"
-        },
-        {
-          "title": "Tyrone Tracy Jr. (neck) not listed on injury report for Week 1.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE81bEQwMVVIZDJuSlNHQl9YcVR5Tks3VHp2TXctVzEtNnRfRVdiMlFVMXdTYmZGTC16Q1VlVzF6OUJ0X3kyVURLeERzTUd6NGJDanF3ZGw3aGZ2RUFPVzJUR193?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Tyrone Tracy Jr. (neck) not listed on injury report for Week 1. x.com",
-          "published": "Wed, 09 Sep 2026 20:20:55 GMT"
-        }
-      ]
-    },
-    {
-      "id": "carnell-tate-off-injury-fde73f6b",
-      "slug": "carnell-tate-off-injury-fde73f6b",
-      "sport": "football",
-      "headline": "Carnell Tate Off injury report",
-      "blurb": "Carnell Tate Off injury report Fantasy Footballers Podcast",
-      "summary": "Carnell Tate Off injury report Fantasy Footballers Podcast Carnell Tate (stiffness) not listed on injury report for Week 1. Aggregated from Fantasy Footballers Podcast, x.com.",
-      "category": "injury",
-      "published": "2026-09-09T20:02:04Z",
-      "updated": "2026-09-09T20:44:31Z",
-      "players": [
-        {
-          "key": "carnell tate",
-          "name": "Carnell Tate",
-          "slug": "carnell-tate",
-          "pos": "WR",
-          "team": "TEN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Carnell Tate Off injury report",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdURTQklNcEJaR1pBTUctQ1lMdWtnMGdQc2RVU1FhQ0xYOHh4ZDktYUNENDM4VFlHaGVxVkxoaUg1ZFY1b2IyTXZrSzZEZ0NTMmZwNHgycncyR3pXYTVlRVVnSWlTbkt5TUtRUHBWVUdETHkxdmg2b1NlQ0tHTlZ6VXJQRE04VV9p?oc=5",
-          "publisher": "Fantasy Footballers Podcast",
-          "kind": "article",
-          "snippet": "Carnell Tate Off injury report Fantasy Footballers Podcast",
-          "published": "Wed, 09 Sep 2026 20:44:31 GMT"
-        },
-        {
-          "title": "Carnell Tate (stiffness) not listed on injury report for Week 1.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBjb2xIZUpNd1hycmRUSml1M29wS0xqQldydTI5TnlJczlNSVFJS0d4UmpvNE9jcmF0bDdRVG00dkU2TGcyWF9WTGRQOExwRnJmcThCSTROWHRNRDBBQnZHQ2ZR?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Carnell Tate (stiffness) not listed on injury report for Week 1. x.com",
-          "published": "Wed, 09 Sep 2026 20:02:04 GMT"
-        }
-      ]
-    },
-    {
-      "id": "transcript-hc-jeff-hafley-gm-jon-eric-sullivan-7e411ad0",
-      "slug": "transcript-hc-jeff-hafley-gm-jon-eric-sullivan-7e411ad0",
-      "sport": "football",
-      "headline": "Transcript: HC Jeff Hafley and GM Jon-Eric Sullivan Introductory Press Conference",
-      "blurb": "Top quotes from Fernando Mendoza's introductory press conference Raiders.com",
-      "summary": "Top quotes from Fernando Mendoza's introductory press conference Raiders.com Transcript: HC Jeff Hafley and GM Jon-Eric Sullivan Introductory Press Conference - Jan. Zac Taylor Press Conference - September 9 YouTube Aggregated from Raiders.com, Miami Dolphins, YouTube.",
-      "category": "coach",
-      "published": "2026-01-22T08:00:00Z",
-      "updated": "2026-09-09T18:27:35Z",
-      "players": [
-        {
-          "key": "fernando mendoza",
-          "name": "Fernando Mendoza",
-          "slug": "fernando-mendoza",
-          "pos": "QB",
-          "team": "LV"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Top quotes from Fernando Mendoza's introductory press conference",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNk1nYkNsUzB5N2VJNUNHZVNZMVpZWUFVRFB4blF6RWNCRzVFUXhabWVJZ0hfN1Y0X21KY29weUh2Rzdic2tCTVNwaVFrbWpiblFGQmcwbGhGcjk2bTVFU2F2bmJJaDBhUDJISUQ3MXYzVTlJWEpzUnkwTkFwZncwb05iaHBacUxiYWNJN0x1ZEV4OXVsRUN2VGZiUnNTTldDeDJ6MjMzdEhJaEU1Mnc?oc=5",
-          "publisher": "Raiders.com",
-          "kind": "article",
-          "snippet": "Top quotes from Fernando Mendoza's introductory press conference Raiders.com",
-          "published": "Fri, 24 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Transcript: HC Jeff Hafley and GM Jon-Eric Sullivan Introductory Press Conference",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUmFTVTgxeXVoU2kzVFRadW4xdjdKcDJGOG5uc0dsX0RmWi11cjlUR1ZCMXBlUFhqUzF0TkV4UXFBU3VHUzkzZ3pPZFhkU2ZVTlYzeHhzQ2h5TGwyeVM3cXFtOGxKblA5dTItTURTaEtQMzU1SzFiZE1xdW9GS3FoRXZYWGh6T2dVeTFUTlRVeWNZc2o0WVFXNHI1QkFXZXk3RkhxQW1nNUoxcGROR2M0WWdTU0JfSk92NUNjNE9FWQ?oc=5",
-          "publisher": "Miami Dolphins",
-          "kind": "article",
-          "snippet": "Transcript: HC Jeff Hafley and GM Jon-Eric Sullivan Introductory Press Conference - Jan. 22 Miami Dolphins",
-          "published": "Thu, 22 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Zac Taylor Press Conference",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBranRia3hNeVMySDREbWhZZG5XLXdBa1p2M3l6cDZTbURnUVE3cTFJM183VEo1UUt1VkRkSG9raVowdnZrRHdMVUVKVjFCbEdKWnJyVWR3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Zac Taylor Press Conference - September 9 YouTube",
-          "published": "Wed, 09 Sep 2026 18:27:35 GMT"
-        },
-        {
-          "title": "Panthers Live Press Conference",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5BMmFDZlJzNUVfcHI5LTdYSkpPazF2NkVLOFR1a1RoN3A1MUxKaEtqcTJTejF5Y2lESWQ0MHY5ckV4Q29FcWhmWkdvY092NW16?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Panthers Live Press Conference YouTube",
-          "published": "Mon, 07 Sep 2026 16:20:50 GMT"
-        }
-      ]
-    },
-    {
-      "id": "zay-flowers-nnamdi-madubuike-listed-limited-ravens-practice-bc826eaf",
-      "slug": "zay-flowers-nnamdi-madubuike-listed-limited-ravens-practice-bc826eaf",
-      "sport": "football",
-      "headline": "Zay Flowers, Nnamdi Madubuike listed as limited in Ravens practice",
-      "blurb": "Ravens wide receiver Zay Flowers returned to practice after an extended absence last week and he was back on the field with the team on Wednesday.",
-      "summary": "Ravens wide receiver Zay Flowers returned to practice after an extended absence last week and he was back on the field with the team on Wednesday. Aggregated from ProFootball Talk on NBC Sports, PFT feed.",
-      "category": "injury",
-      "published": "2026-09-09T20:32:35Z",
-      "updated": "2026-09-09T20:32:35Z",
-      "players": [
-        {
-          "key": "zay flowers",
-          "name": "Zay Flowers",
-          "slug": "zay-flowers",
-          "pos": "WR",
-          "team": "BAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Zay Flowers, Nnamdi Madubuike listed as limited in Ravens practice",
-          "url": "https://sports.yahoo.com/articles/zay-flowers-nnamdi-madubuike-listed-203235942.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Ravens wide receiver Zay Flowers returned to practice after an extended absence last week and he was back on the field with the team on Wednesday.",
-          "published": "Wed, 09 Sep 2026 20:32:35 +0000"
-        },
-        {
-          "title": "Zay Flowers, Nnamdi Madubuike listed as limited in Ravens practice",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/zay-flowers-nnamdi-madubuike-listed-as-limited-in-ravens-practice",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Ravens wide receiver Zay Flowers returned to practice after an extended absence last week and he was back on the field with the team on Wednesday.",
-          "published": "Wed, 09 Sep 2026 16:32:35 -0400"
+          "snippet": "Rachaad White Clear of injury report Fantasy Footballers Podcast",
+          "published": "Wed, 09 Sep 2026 21:52:43 GMT"
         }
       ]
     }
