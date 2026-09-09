@@ -16,7 +16,9 @@ from seo import (  # noqa: E402
     face_alt,
     faq_html,
     faq_jsonld,
+    flatten_nav_groups,
     footer_nav,
+    grouped_nav,
     head_tags,
     item_list_jsonld,
     news_sitemap_xml,
@@ -73,6 +75,86 @@ def test_related_stories():
     assert "two.html" in html
     assert "one.html" not in html
     assert "Chase practice" in html
+
+
+def test_football_nav_skips_rotating_news():
+    from pathlib import Path
+    from build_site import is_football_nav_target
+    assert is_football_nav_target(Path("board.html"))
+    assert is_football_nav_target(Path("news.html"))
+    assert is_football_nav_target(Path("players/jahmyr-gibbs.html"))
+    assert not is_football_nav_target(Path("news/some-story.html"))
+    assert not is_football_nav_target(Path("bb/news.html"))
+    assert not is_football_nav_target(Path("bb/the-keep.html"))
+    assert not is_football_nav_target(Path("bk/news/nba-story.html"))
+    assert not is_football_nav_target(Path("pl/news/pl-story.html"))
+
+
+def test_grouped_nav_sections():
+    groups = [
+        ("leads", "Boards", [("index.html", "Home"), ("the-keep.html", "The Keep")]),
+        ("week", "Week 1", [("weekly.html", "Weekly"), ("waiver.html", "Week 1 Waivers")]),
+        ("empty", "Skip", []),
+    ]
+    html = grouped_nav(
+        groups,
+        lambda href: href,
+        lambda href: href == "weekly.html",
+        nav_class="site-nav",
+        aria_label="Ball Keep",
+    )
+    assert 'class="site-nav"' in html
+    assert 'aria-label="Ball Keep"' in html
+    assert 'class="nav-group nav-leads"' in html
+    assert 'class="nav-group nav-week is-here"' in html
+    assert "nav-empty" not in html
+    assert 'aria-current="page">Weekly</a>' in html
+    assert ">Home</a>" in html
+    assert "Skip" not in html
+    flat = flatten_nav_groups(groups)
+    assert flat[0] == ("index.html", "Home")
+    assert ("weekly.html", "Weekly") in flat
+    foot = grouped_nav(
+        groups,
+        lambda href: href,
+        lambda href: href == "weekly.html",
+        skip_home=True,
+        skip_current=True,
+        nav_class="footer-nav site-nav",
+        aria_label="On this board",
+    )
+    assert "Home" not in foot
+    assert "Weekly</a>" not in foot
+    assert "Week 1 Waivers" in foot
+    assert "The Keep" in foot
+
+
+def test_football_nav_keeps_every_link():
+    from build_site import NAV, NAV_GROUPS, fb_header_nav, fb_footer_nav
+    assert [lab for _h, lab in NAV] == [
+        "Home", "The Keep", "The Board",
+        "Redraft Superflex", "The Classic", "Redraft STD", "2026 Rookies",
+        "The D (DST)", "Kickers",
+        "Weekly", "Week 1 DST", "Week 1 K", "Week 1 Matchups", "Week 1 Waivers", "Injuries",
+        "ADP", "Trade",
+        "Players", "News", "The X", "Hot 'n' Cold",
+        "NFL", "MLB", "BPL",
+        "The Fence (IDP)",
+    ]
+    keys = [k for k, _lab, _items in NAV_GROUPS]
+    assert keys == ["leads", "ros", "st", "week", "tools", "tape", "slates", "fence"]
+    header = fb_header_nav("weekly.html", 0)
+    assert 'aria-current="page">Weekly</a>' in header
+    assert 'class="nav-group nav-week is-here"' in header
+    assert "nav-lab" in header
+    assert "../" not in header
+    nested = fb_header_nav("players/zay-flowers.html", 1)
+    assert 'href="../the-keep.html"' in nested
+    assert 'href="index.html">Players</a>' in nested
+    foot = fb_footer_nav("the-keep.html", 0)
+    assert "Home" not in foot
+    assert "The Keep</a>" not in foot
+    assert "The Board" in foot
 
 
 def test_breadcrumbs_and_footer():
@@ -247,6 +329,16 @@ def test_pos_filter_chips():
     assert 'data-pos="DL"' in idp
     assert 'data-pos="QB"' in idp
     assert "applyRankFilter" in js
+
+
+def test_super_avg():
+    from aggregate_protocol import super_avg
+    ranks = {"Yates": 2, "FantasyPros ECR": 4, "Karabell": 6, "CBS": 20, "Yahoo": 10}
+    assert super_avg(ranks, ("Yates", "FantasyPros ECR", "Karabell")) == 9.5
+    assert super_avg({"Yates": 2, "Karabell": 4}, ("Yates", "Karabell")) == 3.0
+    assert super_avg({"CBS": 10, "Yahoo": 20}, ("Yates",)) == 15.0
+    assert super_avg({"Yates": 1}, ("Yates", "FP")) == 1.0
+    assert super_avg({}, ("Yates",)) == 0.0
 
 
 def test_dst_and_kicker_boards():

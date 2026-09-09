@@ -17,6 +17,12 @@ THE BOARD - Long tape
 
 Boards that do not publish a full 400 are still boards. Their ranks count
 for the names they ranked and are ignored for everyone else.
+
+FOOTBALL LISTS share this Super formula. Each list names its own long core
+(The Board: Yates / FantasyPros / Karabell; weekly: FantasyPros ECR; DST:
+FantasyPros / NBC / STACKED; and so on). Missing ranks skip, never 999.
+Classic and Standard start from the PPR Super score, then apply a tax.
+Week 1 matchups stay a vote mash, not Super Aggregate.
 """
 from __future__ import annotations
 
@@ -86,6 +92,23 @@ def _age(meta: dict, key: str, default: int = 25) -> int:
 
 def _pos(meta: dict, key: str) -> str:
     return (meta.get(key, {}).get("pos") or "").upper()
+
+
+def super_avg(ranks: dict, long_core) -> float:
+    """50% long-core mean + 50% every other desk that ranked the name.
+
+    Unranked on a board is already absent from `ranks`. If only the long
+    tapes (or only the extras) ranked him, that side is the whole vote.
+    """
+    if not ranks:
+        return 0.0
+    core_names = set(long_core or ())
+    core = [float(rk) for name, rk in ranks.items() if name in core_names]
+    extra = [float(rk) for name, rk in ranks.items() if name not in core_names]
+    if core and extra:
+        return round(0.5 * (sum(core) / len(core)) + 0.5 * (sum(extra) / len(extra)), 2)
+    vals = core or extra
+    return round(sum(vals) / len(vals), 2)
 
 
 def blend_maps(maps: list[dict], cap: int | None = None) -> dict:
@@ -182,8 +205,9 @@ def expand_super_desks(core: dict[str, dict], meta: dict) -> dict[str, dict]:
     return sources
 
 
-def rank_rows(sources: dict[str, dict], meta: dict, *, require_long: bool, limit: int | None, super_blend: bool = False):
-    """Score names. super_blend is The Keep (50% long core / 50% other desks)."""
+def rank_rows(sources: dict[str, dict], meta: dict, *, require_long: bool, limit: int | None, super_blend: bool = False, long_core=None):
+    """Score names. super_blend is 50% long core / 50% other desks."""
+    long_names = tuple(long_core) if long_core is not None else LONG_CORE
     names = set()
     for src in sources.values():
         names.update(src)
@@ -194,16 +218,13 @@ def rank_rows(sources: dict[str, dict], meta: dict, *, require_long: bool, limit
         ranks = {name: src[key] for name, src in sources.items() if key in src}
         if not ranks:
             continue
-        if require_long and not any(name in ranks for name in LONG_CORE):
+        if require_long and not any(name in ranks for name in long_names):
             continue
-        core = [rk for name, rk in ranks.items() if name in LONG_CORE]
-        extra = [rk for name, rk in ranks.items() if name not in LONG_CORE]
-        if super_blend and core and extra:
-            avg = round(0.5 * (sum(core) / len(core)) + 0.5 * (sum(extra) / len(extra)), 2)
-        elif core:
-            avg = round(sum(core) / len(core), 2)
+        if super_blend:
+            avg = super_avg(ranks, long_names)
         else:
-            avg = round(sum(ranks.values()) / len(ranks), 2)
+            core = [rk for name, rk in ranks.items() if name in long_names]
+            avg = round(sum(core) / len(core), 2) if core else round(sum(ranks.values()) / len(ranks), 2)
         info = meta.get(key) or {}
         display = info.get("name") or ""
         rows.append({
