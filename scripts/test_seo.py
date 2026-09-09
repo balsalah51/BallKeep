@@ -400,7 +400,7 @@ def test_weekly_kit():
     )
     assert week_num() == 1
     qb = weekly_board("QB")
-    assert qb[0]["name"] == "Lamar Jackson"
+    assert qb[0]["name"] == "Joe Burrow"
     assert qb[0]["bk"] == 1
     assert qb[0]["n"] >= 3
     assert qb[0].get("fpts")

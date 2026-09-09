@@ -265,7 +265,9 @@ def main():
     assert "home-leads" in home
     assert 'class="tile lead keep"' in home
     assert 'class="tile lead board"' in home
-    assert 'href="recent-trades.html"' not in home[home.find("<nav>"):home.find("</nav>")]
+    nav_start = home.find("<nav")
+    header_nav = home[nav_start:home.find("</nav>", nav_start)]
+    assert 'href="recent-trades.html"' not in header_nav
     assert "The D (DST)" in home
     assert "The Fence (IDP)" in home
     ros_skill_at = home.find('class="desk-block ros-skill"')
@@ -338,13 +340,14 @@ def main():
     assert "start-sit.html" not in home
     assert "weekly-check.html" not in home
     assert "sos.html" not in home
-    nav = home[home.find("<nav>"):home.find("</nav>")]
+    nav_start = home.find("<nav")
+    nav = home[nav_start:home.find("</nav>", nav_start)]
     assert nav.find("the-keep.html") < nav.find("board.html") < nav.find("the-fence.html")
     assert nav.rfind("the-fence.html") == nav.find("the-fence.html")
     assert "this desk" not in home
     assert "\u2014" not in home
     assert "On this board" in home
-    assert "33 boards mashed" in home
+    assert "Super Aggregate of 33 boards" in home
     hc = html_of("hot-n-cold.html")
     assert "this desk" not in hc
     assert "\u2014" not in hc
