@@ -30,8 +30,8 @@ header.site {
 .brand h1, .brand .brand-title { margin: 0; font-size: 22px; letter-spacing: 0.04em; font-weight: 800; }
 .brand h1 .word-ball, .brand .brand-title .word-ball { color: #1788c2; }
 .brand h1 .word-keep, .brand .brand-title .word-keep { color: var(--red); }
-.hero-card h1 .word-ball, .hero-card h2 .word-ball { color: var(--ink); }
-.hero-card h1 .word-keep, .hero-card h2 .word-keep { color: var(--red); }
+.hero-card h1 .word-ball, .hero-card h2 .word-ball, .hero-card .mast-title .word-ball { color: var(--ink); }
+.hero-card h1 .word-keep, .hero-card h2 .word-keep, .hero-card .mast-title .word-keep { color: var(--red); }
 .home-intro h1 .word-ball, .home-intro h2 .word-ball { color: #1788c2; }
 .home-intro h1 .word-keep, .home-intro h2 .word-keep { color: var(--red); }
 .brand p { margin: 2px 0 0; color: var(--muted); font-size: 13px; font-weight: 700; }
@@ -109,7 +109,8 @@ nav a:hover, nav a[aria-current="page"] { color: var(--red); }
   padding: 12px 16px 12px 22px;
 }
 .hero.masthead .hero-card h1,
-.hero.masthead .hero-card h2 {
+.hero.masthead .hero-card h2,
+.hero.masthead .hero-card .mast-title {
   margin: 0;
   font-size: clamp(14px, 10cqi, 30px);
   letter-spacing: 0.03em;
@@ -531,6 +532,13 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
 .player-card p { margin: 2px 0 0; }
 .rank-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0; }
 .rank-card { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+a.rank-card { text-decoration: none; color: inherit; display: block; }
+a.rank-card:hover { border-color: var(--red); }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.hub-search { margin: 10px 0 12px; }
 .rank-card small { display: block; color: var(--red); font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11px; }
 .rank-card strong { display: block; font-size: 28px; color: var(--ink); }
 .rank-card span { color: var(--muted); font-weight: 700; }

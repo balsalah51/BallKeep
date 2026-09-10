@@ -45,6 +45,7 @@ from seo import (  # noqa: E402
     head_tags,
     legal_links,
     person_jsonld,
+    rank_card,
     rank_list_jsonld,
     rank_search_bar,
     rank_search_key,
@@ -52,9 +53,12 @@ from seo import (  # noqa: E402
     related_stories_html,
     sports_footer,
     sports_top,
+    sr_h1,
     strip_em,
     value_bars,
     website_jsonld,
+    hub_search_bar,
+    hub_search_js,
 )
 
 
@@ -117,8 +121,9 @@ def masthead(kicker, mark, sub, url="ballkeep.com/bk"):
         f'<div class="mast-row">'
         f'<img class="mast-mark" src="../img/bk-logo.jpg" alt="BasketKeep circular basketball logo" />'
         f'<div class="mast-copy">'
+        f"{sr_h1('Fantasy Basketball Dynasty Rankings')}"
         f'<p class="mast-kicker">{esc(kicker)}</p>'
-        f"<h1>{mark}</h1>"
+        f'<p class="mast-title">{mark}</p>'
         f'<span class="mast-rule" aria-hidden="true"></span>'
         f'<p class="mast-sub">{esc(sub)}</p>'
         f'<p class="mast-url">{esc(url)}</p>'
@@ -147,17 +152,17 @@ def bk_nav_current(href: str, path: str) -> bool:
 
 BK_SEO = {
     "index.html": (
-        "BasketKeep | Dynasty Basketball Rankings and Trade Calculator",
-        "BasketKeep boards. The Keep is dynasty basketball top 400. The Board is this-year redraft. Guards, wings, bigs, BK News, and The X.",
+        "Fantasy Basketball Dynasty Rankings | BasketKeep",
+        "2026 dynasty basketball top 400, this-year redraft, position boards, BK Value, and hourly NBA news.",
         "img/bk-hero.jpg",
     ),
     "the-keep.html": (
-        "The Keep 2026 Dynasty Basketball Rankings (Top 400) | BasketKeep",
+        "2026 Dynasty Basketball Rankings (Top 400) | BasketKeep",
         "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board. BK Value starts at 12,000.",
         "img/bk-logo.jpg",
     ),
     "board.html": (
-        "The Board - 2026 Redraft Basketball Rankings | BasketKeep",
+        "2026 Fantasy Basketball Redraft Rankings | BasketKeep",
         "This-year basketball redraft. Same BK Value curve as The Keep.",
         "img/bk-logo.jpg",
     ),
@@ -304,7 +309,7 @@ BK_NEWS_FAQ = [
 
 def bk_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None,
             crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
-            robots=None):
+            robots=None, canonical=None, schema_type=None):
     prefix = "../" * depth
     links = []
     for href, label in BK_NAV:
@@ -322,8 +327,8 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-{head_tags(title=full_title, description=desc, canonical=canon(path, "bk/"), image=img, brand="BasketKeep", brand_url="https://ballkeep.com/bk/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=37" />
+{head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "bk/"), image=img, brand="BasketKeep", brand_url="https://ballkeep.com/bk/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=38" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
 <body>
@@ -368,6 +373,7 @@ def bk_board_page(title, path, body, extra_js="", depth=1, extra_jsonld=None):
         title, path, body + extra, extra_js, depth=depth,
         crumbs=breadcrumbs([("BasketKeep", home), (title, None)]),
         extra_jsonld=ld,
+        schema_type="CollectionPage",
     )
 
 
@@ -708,8 +714,8 @@ def write_player_pages(keep, board, news_by_player):
       </div>
     </div>
     <div class="rank-grid">
-      <div class="rank-card"><small>The Keep</small><strong>{r["bk"]}</strong><span>Dynasty</span></div>
-      <div class="rank-card"><small>The Board</small><strong>{br["bk"] if br else "-"}</strong><span>Redraft</span></div>
+      <a class="rank-card" href="../the-keep.html"><small>The Keep</small><strong>#{r["bk"]}</strong><span>Dynasty</span></a>
+      {f'<a class="rank-card" href="../board.html"><small>The Board</small><strong>#{br["bk"]}</strong><span>Redraft</span></a>' if br else '<div class="rank-card"><small>The Board</small><strong>-</strong><span>Redraft</span></div>'}
       <div class="rank-card"><small>Boards</small><strong>{r.get("n") or "-"}</strong><span>avg {r.get("avg") or "-"}</span></div>
     </div>
     <div class="plusminus">
@@ -726,7 +732,7 @@ def write_player_pages(keep, board, news_by_player):
     {related_players_html(keep, r, lambda p: f"{slugify(p['name'])}.html", nearby_label="On The Keep nearby", pos_label="Same position", team_label="Same club")}
     <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-keep.html">The Keep</a> · <a href="../board.html">The Board</a> · <a href="../news.html">BK News</a> · <a href="../trade-keep.html">Calculator</a></p>
     """
-        seo_title = f"{r['name']} Dynasty Rank #{r['bk']} ({r.get('pos') or ''} {r.get('team') or ''})".strip()
+        seo_title = f"{r['name']} Fantasy Basketball Rankings (#{r['bk']} {r.get('pos') or ''} {r.get('team') or ''})".strip()
         seo_desc = clip(
             f"{r['name']} is BasketKeep Keep #{r['bk']}, {r.get('pos') or ''} {r.get('team') or ''}. "
             f"Average {r.get('avg')} across {r.get('n') or 0} boards. BK Value {fmt_val(r.get('value'))}. Updated {UPDATED}."
@@ -782,7 +788,7 @@ def write_player_pages(keep, board, news_by_player):
     for r in keep:
         slug = slugify(r["name"])
         cards.append(
-            f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}">'
+            f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}" data-name="{esc((r.get("name") or "").lower())}">'
             f'<img src="../../img/bk-logo.jpg" alt="{esc(face_alt(r["name"]))}" />'
             f'<h3>{esc(r["name"])}</h3>'
             f'<p class="note">{esc(r.get("pos") or "")} {esc(r.get("team") or "")} · Keep #{r["bk"]}</p></a>'
@@ -792,6 +798,7 @@ def write_player_pages(keep, board, news_by_player):
     <p class="kicker">Player files</p>
     <h1>The Keep, one name at a time</h1>
     <p class="note">The Keep top {len(keep)}. Rank, The Board redraft slot, every board, plus/minus. Filter the grid.</p>
+    {hub_search_bar()}
     {flt}
     <div class="player-grid">{''.join(cards)}</div>
     {also_on_desk([
@@ -802,7 +809,7 @@ def write_player_pages(keep, board, news_by_player):
     ])}
     """
     write("bk/players/index.html", bk_page(
-        "Players", "players/index.html", hub, js, depth=2,
+        "Players", "players/index.html", hub, hub_search_js(), depth=2,
         crumbs=breadcrumbs([("BasketKeep", "../index.html"), ("Players", None)]),
         extra_jsonld=[breadcrumb_jsonld([
             ("BasketKeep", "https://ballkeep.com/bk/"),
