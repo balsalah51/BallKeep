@@ -753,7 +753,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 47
+CSS_VER = 48
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -921,6 +921,25 @@ def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ba
         f"</div>"
         f'<div class="mast-art" aria-hidden="true"><img src="{esc(art)}" alt="" /></div>'
         f"</div></div></section>"
+    )
+
+
+def home_lead_chair(row, media):
+    if not row:
+        return ""
+    bits = [row.get("team") or "", row.get("pos") or ""]
+    age = row.get("age")
+    if age not in (None, ""):
+        bits.append(str(age))
+    meta = " · ".join(b for b in bits if b)
+    return (
+        f'<span class="lead-chair">'
+        f'<img src="{esc(face_src(row, media))}" alt="" width="72" height="72" />'
+        f'<span class="lead-chair-copy">'
+        f'<span class="lead-chair-rk">1.01</span>'
+        f'<span class="lead-chair-name">{esc(row.get("name") or "")}</span>'
+        f'<span class="lead-chair-meta">{esc(meta)}</span>'
+        f"</span></span>"
     )
 
 
@@ -1399,7 +1418,7 @@ FB_ALSO = {
 
 def page(title, path, body, extra_js="", depth=0, description=None, image=None, doc_title=None,
          crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
-         robots=None):
+         robots=None, wrap_class=""):
     packed = FB_SEO.get(path)
     full_title = doc_title or (packed[0] if packed else f"{title} | Ball Keep")
     desc = description or (packed[1] if packed else f"{title} on Ball Keep. Superflex dynasty rankings, BK Value trade calculator, and BK News. Updated {UPDATED}.")
@@ -1416,7 +1435,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap{(' ' + wrap_class) if wrap_class else ''}">
     <header class="site">
       <a class="brand" href="{nav_href("index.html", depth)}">
         <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" width="56" height="56" />
@@ -2676,22 +2695,34 @@ def main():
             + "</div>"
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
+    keep_chair = home_lead_chair(keep[0] if keep else None, media)
+    board_chair = home_lead_chair(ppr[0] if ppr else None, media)
     home_body = f"""
-    {masthead("Football rankings", wordmark(), "Dynasty · Redraft")}
+    <div class="home-mast">{masthead("Football rankings", wordmark(), "Dynasty · Redraft")}</div>
     <section class="desk-block main home-intro">
-      <p class="kicker">Updated {UPDATED}</p>
+      <p class="kicker">Super Aggregate · Updated {UPDATED}</p>
       <h2>The Keep and The Board</h2>
       <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR. Both are rest-of-season values. Week 1 boards live further down.</p>
+      <div class="super-strip" aria-label="Super Aggregate facts">
+        <div class="super-stat"><b>{len(KEEP_SOURCES)}</b><span>dynasty boards</span></div>
+        <div class="super-stat"><b>{KEEP_N}</b><span>Keep names</span></div>
+        <div class="super-stat"><b>{len(PPR_SOURCES)}</b><span>Board lists</span></div>
+        <div class="super-stat"><b>12,000</b><span>BK Value at 1.01</span></div>
+      </div>
       <div class="home-leads">
         <a class="tile lead keep" href="the-keep.html">
+          <span class="super-chip">Super Aggregate</span>
           <h3>The Keep</h3>
           <p class="lead-sub">Superflex dynasty · top 400</p>
           <p>Super Aggregate of 33 boards.</p>
+          {keep_chair}
         </a>
         <a class="tile lead board" href="board.html">
+          <span class="super-chip">Super Aggregate</span>
           <h3>The Board</h3>
           <p class="lead-sub">Redraft PPR · this year</p>
           <p>Super Aggregate of 15 boards.</p>
+          {board_chair}
         </a>
       </div>
     </section>
@@ -2738,6 +2769,7 @@ def main():
         "Home", "index.html", home_body,
         extra_jsonld=[website_jsonld("Ball Keep"), faq_jsonld(HOME_FAQ)],
         modified=LASTMOD,
+        wrap_class="is-home",
     ))
 
     # THE KEEP
