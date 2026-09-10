@@ -164,12 +164,54 @@ nav a:hover, nav a[aria-current="page"] { color: var(--red); }
   display: block; width: 100%; height: 100%;
   object-fit: contain; object-position: center;
 }
+.home-mast .hero.masthead {
+  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  box-shadow: 0 22px 56px rgba(16, 32, 51, 0.28);
+}
+.home-mast .hero.masthead .mast-row {
+  grid-template-columns: 96px minmax(0, 1fr) 280px;
+  height: 168px;
+}
+.home-mast .hero.masthead .mast-mark {
+  width: 96px; height: 96px; border-width: 4px;
+}
+.home-mast .hero.masthead .hero-card h1 {
+  font-size: clamp(22px, 12cqi, 44px);
+}
+.home-mast .hero.masthead p.mast-kicker {
+  font-size: 12px; letter-spacing: 0.2em;
+}
+.home-mast .hero.masthead .mast-art {
+  width: 280px;
+  height: 156px;
+  border-radius: 14px;
+}
 .desk-block.main.home-intro { margin-top: 0; }
+.is-home .home-intro {
+  position: relative;
+  overflow: hidden;
+  padding: 28px 28px 24px;
+  border-width: 2px;
+}
+.is-home .home-intro::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #1788c2 0%, #c8102e 100%);
+}
 .home-intro h2 {
   display: inline-block;
   margin: 0 0 10px;
   font-size: 40px; letter-spacing: 0.04em; line-height: 1; font-weight: 800;
 }
+.is-home .home-intro h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  letter-spacing: -0.03em;
+}
+.is-home .home-intro .note { font-size: 16px; max-width: 68ch; }
 .home-intro .word-ball { color: #1788c2 !important; }
 .home-intro .word-keep { color: #c8102e !important; }
 .hero-card {
@@ -432,6 +474,33 @@ h1.page-h { font-size: 32px; letter-spacing: -0.03em; line-height: 1.15; margin:
 }
 .sports-top .sport-switch { margin: 0; }
 .home-leads { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0 14px; }
+.super-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 18px 0 4px;
+}
+.super-stat {
+  background: #102033;
+  color: #fff;
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+.super-stat b {
+  display: block;
+  font-size: 28px;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.super-stat span {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #93c5fd;
+}
 .tile.lead { padding: 20px 20px 18px; }
 .tile.lead.keep { border-color: var(--red); }
 .tile.lead.board { border-color: var(--ink); }
@@ -440,9 +509,67 @@ h1.page-h { font-size: 32px; letter-spacing: -0.03em; line-height: 1.15; margin:
 .tile.lead h3 { font-size: 24px; margin: 0 0 4px; }
 .tile.lead .lead-sub { margin: 0 0 8px; color: var(--ink); font-weight: 800; }
 .tile.lead p { margin: 0; }
+.super-chip {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 3px 8px;
+  margin-bottom: 10px;
+}
+.tile.lead.keep .super-chip { background: #c8102e; color: #fff; }
+.tile.lead.board .super-chip { background: #102033; color: #fff; }
+.lead-chair {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.lead-chair img {
+  width: 72px; height: 72px;
+  border-radius: 14px;
+  object-fit: cover;
+  object-position: top;
+  background: var(--powder-deep);
+}
+.tile.lead.keep .lead-chair img { border: 3px solid #c8102e; }
+.tile.lead.board .lead-chair img { border: 3px solid #102033; }
+.lead-chair-rk {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.tile.lead.board .lead-chair-rk { color: #102033; }
+.lead-chair-name {
+  display: block;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+.lead-chair-meta {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
 .desk-block.main .home-leads .tile.lead { border-width: 2px; }
 .desk-block.main .home-leads .tile.lead.keep { background: #fff5f6; }
 .desk-block.main .home-leads .tile.lead.board { background: #e8eef5; }
+.is-home .tile {
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+.is-home .tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(16, 32, 51, 0.12);
+}
+.is-home .desk-block h2 { letter-spacing: -0.02em; }
 .x-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-top: 12px; }
 a.x-card { color: inherit; padding: 0; overflow: hidden; }
 a.x-card img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--powder-deep); display: block; }
@@ -550,6 +677,18 @@ table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
   .player-grid, .facts, .rank-grid { grid-template-columns: repeat(2, 1fr); }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
   .hero.masthead { height: 120px; min-height: 120px; max-height: 120px; }
+  .home-mast .hero.masthead {
+    height: 148px; min-height: 148px; max-height: 148px;
+  }
+  .home-mast .hero.masthead .mast-row {
+    grid-template-columns: 64px minmax(0, 1fr);
+    height: 124px;
+  }
+  .home-mast .hero.masthead .mast-mark { width: 64px; height: 64px; }
+  .home-mast .hero.masthead .mast-art { display: none; }
+  .home-mast .hero.masthead .hero-card h1 {
+    font-size: clamp(20px, 11cqi, 28px);
+  }
   .hero-card { padding: 22px 16px 18px; }
   .hero.masthead .hero-card { padding: 12px 12px 12px 16px; }
   .hero-card h1, .hero-card h2 { font-size: 28px; }
@@ -559,6 +698,8 @@ table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
   .mast-mark { width: 56px; height: 56px; border-width: 2px; }
   .hero.masthead .mast-art { display: none; }
   .home-leads { grid-template-columns: 1fr; }
+  .super-strip { grid-template-columns: 1fr 1fr; }
+  .is-home .home-intro { padding: 22px 16px 18px; }
   table { font-size: 15px; }
   .trade-hits, .trade-board, .deal-grid { grid-template-columns: 1fr; }
   .player-hero img { width: 100%; height: 220px; object-fit: cover; object-position: top center; }
