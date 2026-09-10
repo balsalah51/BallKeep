@@ -237,6 +237,11 @@ def test_rematch_fills_baseball_players():
     assert out[0]["players"][0]["slug"] == "aaron-judge"
 
 
+def test_news_only_helper_exists():
+    from build_site import render_news_only
+    assert callable(render_news_only)
+
+
 def test_x_tape_skips_google_news_icons_and_profile_pages():
     assert is_junk_title("Falcons Esports (@FalconsEsport) / Posts / X")
     assert is_junk_title("Yahoo Fantasy Sports (@YahooFantasy) / Posts / X")
