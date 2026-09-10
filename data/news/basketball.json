@@ -1,204 +1,18 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-10T20:24:58Z",
-  "fresh": 95,
+  "updated": "2026-09-10T21:23:39Z",
+  "fresh": 89,
   "stories": [
-    {
-      "id": "anthony-edwards-history-point-guards-82a7832c",
-      "slug": "anthony-edwards-history-point-guards-82a7832c",
-      "sport": "basketball",
-      "headline": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’",
-      "blurb": "Lakers coach JJ Redick on Luka Dončić’s first game vs.",
-      "summary": "Anthony Davis, Luka Doncic, LeBron James, Anthony Edwards and LaMelo Ball: Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’ - The Athletic nytimes.com Each point guard Edwards has played with has imparted wisdom. Aggregated from nytimes.com, SB Nation, NBA.com, FanSided.",
-      "category": "injury",
-      "published": "2025-02-02T08:00:00Z",
-      "updated": "2026-09-10T12:00:00Z",
-      "players": [
-        {
-          "key": "anthony davis",
-          "name": "Anthony Davis",
-          "slug": "anthony-davis",
-          "pos": "C",
-          "team": "DAL"
-        },
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
-        },
-        {
-          "key": "lebron james",
-          "name": "LeBron James",
-          "slug": "lebron-james",
-          "pos": "SF",
-          "team": "LAL"
-        },
-        {
-          "key": "anthony edwards",
-          "name": "Anthony Edwards",
-          "slug": "anthony-edwards",
-          "pos": "SG",
-          "team": "MIN"
-        },
-        {
-          "key": "lamelo ball",
-          "name": "LaMelo Ball",
-          "slug": "lamelo-ball",
-          "pos": "PG",
-          "team": "CHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA: Anthony Edwards History of Point Guards",
-          "url": "https://sports.yahoo.com/articles/nba-anthony-edwards-history-point-120000049.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Each point guard Edwards has played with has imparted wisdom. What has he learned and what is next alongside LaMelo Ball?",
-          "published": "Thu, 10 Sep 2026 12:00:00 +0000"
-        },
-        {
-          "title": "Anthony Edwards Injury Update | Minnesota Timberwolves",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55amZPUGUwaU11eGZ1eGVVekh4c19ZZVhVR3BIMElEdlZ0dmN2c2dMQVlmemM3b3QzTGJxcTF6XzhRWm1iX0RtdHlBYnU0b2FlQlc0dmltbmhjTWVIaDJUM0tRZUQwazJPVUpYYm9R?oc=5",
-          "publisher": "NBA.com",
-          "kind": "article",
-          "snippet": "Anthony Edwards Injury Update | Minnesota Timberwolves NBA.com",
-          "published": "Sun, 03 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Mavs, Timberwolves discussed Luka Dončić-Anthony Edwards trade. But Lakers fit is working",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaFFiazg5a25HX3k4eTU3NFd6R1RyaGNnZ3VSaDhoUG1zVktPN052TkpUZTFNcTNuTnRncXFPV1RISUIxbjJWRGpzVFR1RUp5MWtUWkZLdk9ld2s0UXNyV2VORjRwVm9kWTVWemJSYWQzYkVNNV8xdHlENkVBYkNEUjV1dUJSNUhGWDBPVTdlT3dvUUo3?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Mavs, Timberwolves discussed Luka Dončić-Anthony Edwards trade. But Lakers fit is working - The Athletic nytimes.com",
-          "published": "Fri, 28 Feb 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Anthony Davis on Luka Dončić trade: ‘I had no idea this was happening’",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUlg1d19mWS1IQlozOTdqSnhTWnZ1TmFKSjg5WnNvLURmM0gtRW04OGRnTjJkcjU2eHdJTXdhakFYNWtSa1BUTHlMUTdXOV9GeFBKQUlJR0ZoQzVhN0RuUmlKMldQbXRLd0VwNEs5bGw0SjhidnNUUTFGazJGTlQ0bVpqRjFNUlBiRlViY3Y2aHJpaXp1UWZNREpGQVNVaEpHUTlUQVBEVQ?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Anthony Davis on Luka Dončić trade: ‘I had no idea this was happening’ nytimes.com",
-          "published": "Wed, 08 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Mavs’ Luka Dončić trade will never make sense, but dealing Anthony Davis turns a page",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVWl2ajltOGlVek9SQmtEWkp6bWJKQUdlcXZ5cGNBeUI1emJBMTFQZk1JMjFiRU5ndGJDRnRSSVk4WGk1cVEyblluTHNwTll3dEJ3cjdpZjkwNEhUNUcyc0M5ZlhBY3JIMWxkNGd4SGRxZGFkbVlHNVd0M2RPQ3hsZ2JtMDZ6Z1djQVJZbS1xQjdUM3kycjJZSEdFOS1WR2hqaDRUTw?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Mavs’ Luka Dončić trade will never make sense, but dealing Anthony Davis turns a page nytimes.com",
-          "published": "Thu, 05 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Anthony Davis injury conjures dark echoes of Luka Dončić",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNejFpNXBFOVRfT0c4S3F2YkI4WkhueG5xWGo5ZHppME9aVVE2OXhuemFuVVR3d3VpSmhpUDlXUUc5YzluMVNJaF94SUxfOUJ0MWZoMXRTU2hvRXpQUFNYWWY3OVM5ZWZELU9BMTcxSWZ4OFE2YXFITXlyaW84R2FEZ1pnNS1KeGxwNUJXY0FrOUJPLUwzVmRCNWtR?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Anthony Davis injury conjures dark echoes of Luka Dončić nytimes.com",
-          "published": "Fri, 07 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Anthony Davis traded from Mavericks to Wizards, capping Luka Dončić deal fallout: Sources",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb19wVDBKTzVlN0o3aW8yTVFwUGZNeW5rWndZUUJTUlpucGdqVmtkUFdvbG9CNEtRRldCQXZSNnpRTWg3TnhLdHRTTk1WeWRwb2RSQnB0OFJJU2tVN203YTZWTGpPVmpidWJpYlpUNE1mNk1IeVVJMTd2Y0ZtN3hBNHFubGUwcVgtTG1HZVRTTHlGOUdFSWZ1dDhvVnlfS2lPWXJwZ0tR?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Anthony Davis traded from Mavericks to Wizards, capping Luka Dončić deal fallout: Sources - The Athletic nytimes.com",
-          "published": "Wed, 04 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Luka Dončić traded to Lakers from Mavericks for Anthony Davis in NBA blockbuster",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWlBkMlIteGl4MWRxOF8yQkdNMy1pa0V0ZnhVNFNrVXNwQmZ6THlHeDZZd2JWZHBUV203Z3hQUUdtYTFQY0xNX20yMXNBU1RjcFluQTJoQWQ4V1dnT2tYdk1ibk5nREk3bXFTWGNJci1uWXczQWJ3aVNmX3V3ckp6elhzamZqU0QxQWdkalBOUEQzWUtsLVlMUzJLdVFUVFJ6LUFF?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Luka Dončić traded to Lakers from Mavericks for Anthony Davis in NBA blockbuster nytimes.com",
-          "published": "Sun, 02 Feb 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Is there a soccer equivalent of the Luka Doncic-Anthony Davis trade?",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaG9LZEtaZ01VYkp1V3dlNjdOenlSTUtQNVlsMlV3cVoyM1Q3MUd0SDNzZzAySUphQTYtWThvRGptdE4wem9DZnZ2UXA1aDZleFJteG5IcVdDcUpnb09SaFg0VE9WNTVBSmpJUlVBSDdqVDNyUmpoc1k0Qm81dzBzNGxWSEE4ZzBXX1pxUEVySDdDeEd0S25zQWMzdnBBWFY4U0FZdTFBcS02eUpFZHN5NG1aZ1VJZ0FhaW1KSVY5NjVBOEE?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Is there a soccer equivalent of the Luka Doncic-Anthony Davis trade? nytimes.com",
-          "published": "Thu, 20 Feb 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Luka Dončić-Anthony Davis trade grades: How will Lakers, Mavericks, Jazz fare after blockbuster?",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVHpTSkk1T1lIN3hsQmtINldKR0hVQXV6Y3pGcUtWQXJQd3RGdkRnTS1iT3F2OHBtaWpfRWgyaTNNVlhkQnZyc3FFejJsWEo2UWwxM3B3TV92S2YyalhMZzZUVkN1dHpWNjF5ZEJOOG14SDFrUXBPVjFBR1E2eDh4Vi1BTFhCcmhJc1RfTVRnX082MEdvaEQwNW1sdEJWLWxLbnYtcnZGZ0Q1dHBW?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Luka Dončić-Anthony Davis trade grades: How will Lakers, Mavericks, Jazz fare after blockbuster? - The Athletic nytimes.com",
-          "published": "Thu, 06 Feb 2025 08:00:00 GMT"
-        },
-        {
-          "title": "LeBron James talks Luka Dončić-Anthony Davis trade: ‘I ain’t never seen this one’",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTVgwaklfZ29ZZjVibkUyVXphaFFXZWhKMkx5OEZiLVJhanhpMHlZZG5hVm5XRE5VUUFVUkNNQjBNQ2QtUkRiV1ZNTG9HSXVVT2FLQzdwUWNvenl6eHpTamk4Tkd6MEpGXzdCUWhNYVZuY2R1ZV9YM3cweHlKbVVuRmhJMXJuWTgtWTJDNXJfbzc3RUlpVHhEWmhabUZTQQ?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "LeBron James talks Luka Dončić-Anthony Davis trade: ‘I ain’t never seen this one’ nytimes.com",
-          "published": "Tue, 04 Mar 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Explain it in MLB terms: Lakers trade Anthony Davis to Mavericks for Luka Doncic",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWXlzYnUyazRadjVFdXZRWHppaExoS2J6TjVFQ2RaREJXNms3XzN2elhnYlhhVElLc1hDZEJJYXdheWJOSTlwaXJjbzc0eEN2U1JBcjk3QW95YmhVcUhpWkk2RmZScWdEMjNfQS1aZ0dSZFdyNnNSMFhvNnNtVG8zamdiUTRjZmdC?oc=5",
-          "publisher": "FanSided",
-          "kind": "article",
-          "snippet": "Explain it in MLB terms: Lakers trade Anthony Davis to Mavericks for Luka Doncic FanSided",
-          "published": "Sun, 02 Feb 2025 08:00:00 GMT"
-        },
-        {
-          "title": "The man who traded Luka Dončić: How Mavericks GM Nico Harrison operates",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOeWNEbkRwZW92OHhXRlladG93NXNmdmxrMVZlZWV4Mi15cjVLVkdYSV9ZbWw5Qkpsa3VZNzQ5eGdEcTBlZ29VTVhWby1yeXlpdUhUbjdZTE5qTHpack11T1BKdGc2Q1k3TFpNTXFod0FtdktqenFCb1dmR21ZYVpCYXRNOEwtaHZBSUpLeVZnRlBNN3BmMDFzMkhBSDVyRnlHWUJj?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "The man who traded Luka Dončić: How Mavericks GM Nico Harrison operates - The Athletic nytimes.com",
-          "published": "Tue, 11 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Nico Harrison fired as Mavericks’ GM, 9 months after Luka Dončić trade",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPN1ZDOHEtRGxxUGE1SEEzRFZ0RGptQ0FtaHJ6clhWcUV6UlBOdVVELUxaN3pva2JTdzR5dEY5VFRuSDBGNGVodjYzWlhmUnlGVGs2WFpMekJUM3BoQXJBdk4tWlZ4MnpTeV9NcVE3VUR2b09US1Ixc3pHckxEeWlXbFY3RkVBdk1NMm1aYkh0TQ?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Nico Harrison fired as Mavericks’ GM, 9 months after Luka Dončić trade - The Athletic nytimes.com",
-          "published": "Tue, 11 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Luka Dončić comments on Nico Harrison firing, ‘focused’ on Lakers",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUlZRQTBwaGpiV2lhUU0zYllDanVyY29veGI5WmtETmNxZnNNV2RiRHlkOFdoLWlYbkxDSEx3Rl81MkRqbnctMnNWdnMwZzJkQWwzeWI2emRiNUhOQ1BnUVItNkl5SURtUG1DRERuUDl4VzRndHZIcWYxdEE5WEpGNno1REhaLXF0Z1pmWTZPaXQwb3JldmVNdmNEVFVsamVodjhF?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Luka Dončić comments on Nico Harrison firing, ‘focused’ on Lakers nytimes.com",
-          "published": "Thu, 13 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Nico Harrison got fired for trading Luka Dončić, but he didn’t make that call by himself",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLTktX2xfcFl3djJqLXFidy16S0o4bGhTOHBQZzhYdF9IcjFudTNwTjAzeW5zdWFIYkNMTm05S3piRmE0LUVzZVpScHNESTJmazI0TVNRYVdjaDNNNHNfQkt4SS16XzRHenQ1eTZZSjQ2eVFhZHNTUzF3d0N1NTlnMVBqWW1GalVXbWxQdlkxbldBQXBZZi15aVJnb2owZw?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Nico Harrison got fired for trading Luka Dončić, but he didn’t make that call by himself - The Athletic nytimes.com",
-          "published": "Wed, 12 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRUtrbFpqM201Tm9LU3pwRVBaaVlrSktuQXFQc1B1My1IM3RoOEFRSlo5aXVKVkJXRjVWUVhkbElnbHFDWmRzcDZGWTRmTUg0Z2hFR3NzMDVvXzNaSTAzb1Ffd2xQYXFJTzViYTRlY1BlTkZ3YVgydTh5T2NfTTh0TFZhRlZ6ejRQU1FlWjdyamVPWFBBc20zWm9WT1M0TTQ?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’ - The Athletic nytimes.com",
-          "published": "Wed, 26 Feb 2025 08:00:00 GMT"
-        }
-      ]
-    },
     {
       "id": "clippers-finalizing-trade-sends-kawhi-leonard-raptors-blockbuster-ed7651c0",
       "slug": "clippers-finalizing-trade-sends-kawhi-leonard-raptors-blockbuster-ed7651c0",
       "sport": "basketball",
       "headline": "Could Toronto Raptors Pair Kawhi Leonard With Kyrie Irving in 2026-27? New Rumor Opens Door to Blockbuster Trade",
-      "blurb": "NBA insider provided insight into the holdout of Kawhi Leonard's trade BasketNews.com",
-      "summary": "NBA insider provided insight into the holdout of Kawhi Leonard's trade BasketNews.com When the NBA announced the findings and penalties from the investigation into the Clippers’ alleged salary cap circumvention for star forward Kawhi Leonard, the summary report prepared by Wachtell Lipton... Clippers Projected Starting Lineup After the Kawhi Leonard Trade si.com Aggregated from BasketNews.com, NY Post Sports, si.com, New York Post, NBC Sports and 10 more.",
+      "blurb": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard Yahoo Sports",
+      "summary": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard Yahoo Sports Stunning NBA Rumor Claims LA Clippers Could Scrap Kawhi Leonard-Raptors Trade For PETTY Reason Sportsnaut Is the NBA going to BLOCK the Kawhi Leonard trade to Toronto? Aggregated from Yahoo Sports, Sportsnaut, YouTube, NY Post Sports, si.com and 12 more.",
       "category": "trade",
       "published": "2026-06-30T07:00:00Z",
-      "updated": "2026-09-10T16:56:38Z",
+      "updated": "2026-09-10T20:21:02Z",
       "players": [
         {
           "key": "kawhi leonard",
@@ -206,6 +20,13 @@
           "slug": "kawhi-leonard",
           "pos": "SF",
           "team": "LAC"
+        },
+        {
+          "key": "rj barrett",
+          "name": "RJ Barrett",
+          "slug": "rj-barrett",
+          "pos": "SG",
+          "team": "TOR"
         },
         {
           "key": "kyrie irving",
@@ -422,6 +243,224 @@
           "kind": "article",
           "snippet": "NBA insider provided insight into the holdout of Kawhi Leonard's trade BasketNews.com",
           "published": "Thu, 10 Sep 2026 16:31:00 GMT"
+        },
+        {
+          "title": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYU1NYjY5ZDNpQ0ZXanltd1NqQ0xLNkpwczZKb0lwQUd0UVMzN0RvMXpLSlhNcEpyX0s3LVdjT3U4bjluU3oyMjh3OFNJcnpSbmR0RV9JZlVlUnlCSmhIbGpvMjJyYWVSQmJJOVhjUWdyTndZY3BGaUtfalNMTkFmX0dsYmo5bm40aVo4?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard Yahoo Sports",
+          "published": "Thu, 10 Sep 2026 16:39:16 GMT"
+        },
+        {
+          "title": "Stunning NBA Rumor Claims LA Clippers Could Scrap Kawhi Leonard-Raptors Trade For PETTY Reason",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSWJtd0dzR1hxZzl2OWpYT2hDTHZsOTFIQmRhNWdNdm1vRjVCZXgxOUFsSWFvN0VtbGlVVkdFeXdLaVRJSDVFc1lIc2ZEODVITG9ka3JLbzVYVGlCS3p6ZXRDaGMweHBrWkRxZHJYeXFsaXBocWZxYlF2akJPUVZjTjM4bk9IUWw1amZZQVdBWQ?oc=5",
+          "publisher": "Sportsnaut",
+          "kind": "article",
+          "snippet": "Stunning NBA Rumor Claims LA Clippers Could Scrap Kawhi Leonard-Raptors Trade For PETTY Reason Sportsnaut",
+          "published": "Thu, 10 Sep 2026 20:21:02 GMT"
+        },
+        {
+          "title": "Is the NBA going to BLOCK the Kawhi Leonard trade to Toronto?",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJeE9BUUFSTDhybUpJN1VqZVJQa0VyMHBrMGMzZGxnZXRnUGlOcnN6czlPMXRUb2tCLW1UZDZXb3R0b2NiUzlWQkk3UTIycHE2QkM4cVlB?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Is the NBA going to BLOCK the Kawhi Leonard trade to Toronto? YouTube",
+          "published": "Thu, 10 Sep 2026 14:30:07 GMT"
+        }
+      ]
+    },
+    {
+      "id": "anthony-edwards-history-point-guards-82a7832c",
+      "slug": "anthony-edwards-history-point-guards-82a7832c",
+      "sport": "basketball",
+      "headline": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’",
+      "blurb": "Trump unloads on Mavericks for Luka Dončić trade: ‘We got to redo that deal’ Yahoo Sports",
+      "summary": "Anthony Davis, Luka Doncic, LeBron James, Anthony Edwards and LaMelo Ball: Trump unloads on Mavericks for Luka Dončić trade: ‘We got to redo that deal’ Yahoo Sports Each point guard Edwards has played with has imparted wisdom. What has he learned and what is next alongside LaMelo Ball? Aggregated from Yahoo Sports, SB Nation, NBA.com, nytimes.com, FanSided.",
+      "category": "injury",
+      "published": "2025-02-02T08:00:00Z",
+      "updated": "2026-09-10T12:00:00Z",
+      "players": [
+        {
+          "key": "anthony davis",
+          "name": "Anthony Davis",
+          "slug": "anthony-davis",
+          "pos": "C",
+          "team": "DAL"
+        },
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
+        },
+        {
+          "key": "lebron james",
+          "name": "LeBron James",
+          "slug": "lebron-james",
+          "pos": "SF",
+          "team": "LAL"
+        },
+        {
+          "key": "anthony edwards",
+          "name": "Anthony Edwards",
+          "slug": "anthony-edwards",
+          "pos": "SG",
+          "team": "MIN"
+        },
+        {
+          "key": "lamelo ball",
+          "name": "LaMelo Ball",
+          "slug": "lamelo-ball",
+          "pos": "PG",
+          "team": "CHA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA: Anthony Edwards History of Point Guards",
+          "url": "https://sports.yahoo.com/articles/nba-anthony-edwards-history-point-120000049.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Each point guard Edwards has played with has imparted wisdom. What has he learned and what is next alongside LaMelo Ball?",
+          "published": "Thu, 10 Sep 2026 12:00:00 +0000"
+        },
+        {
+          "title": "Anthony Edwards Injury Update | Minnesota Timberwolves",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55amZPUGUwaU11eGZ1eGVVekh4c19ZZVhVR3BIMElEdlZ0dmN2c2dMQVlmemM3b3QzTGJxcTF6XzhRWm1iX0RtdHlBYnU0b2FlQlc0dmltbmhjTWVIaDJUM0tRZUQwazJPVUpYYm9R?oc=5",
+          "publisher": "NBA.com",
+          "kind": "article",
+          "snippet": "Anthony Edwards Injury Update | Minnesota Timberwolves NBA.com",
+          "published": "Sun, 03 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mavs, Timberwolves discussed Luka Dončić-Anthony Edwards trade. But Lakers fit is working",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaFFiazg5a25HX3k4eTU3NFd6R1RyaGNnZ3VSaDhoUG1zVktPN052TkpUZTFNcTNuTnRncXFPV1RISUIxbjJWRGpzVFR1RUp5MWtUWkZLdk9ld2s0UXNyV2VORjRwVm9kWTVWemJSYWQzYkVNNV8xdHlENkVBYkNEUjV1dUJSNUhGWDBPVTdlT3dvUUo3?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Mavs, Timberwolves discussed Luka Dončić-Anthony Edwards trade. But Lakers fit is working - The Athletic nytimes.com",
+          "published": "Fri, 28 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Anthony Davis on Luka Dončić trade: ‘I had no idea this was happening’",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUlg1d19mWS1IQlozOTdqSnhTWnZ1TmFKSjg5WnNvLURmM0gtRW04OGRnTjJkcjU2eHdJTXdhakFYNWtSa1BUTHlMUTdXOV9GeFBKQUlJR0ZoQzVhN0RuUmlKMldQbXRLd0VwNEs5bGw0SjhidnNUUTFGazJGTlQ0bVpqRjFNUlBiRlViY3Y2aHJpaXp1UWZNREpGQVNVaEpHUTlUQVBEVQ?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Anthony Davis on Luka Dončić trade: ‘I had no idea this was happening’ nytimes.com",
+          "published": "Wed, 08 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mavs’ Luka Dončić trade will never make sense, but dealing Anthony Davis turns a page",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVWl2ajltOGlVek9SQmtEWkp6bWJKQUdlcXZ5cGNBeUI1emJBMTFQZk1JMjFiRU5ndGJDRnRSSVk4WGk1cVEyblluTHNwTll3dEJ3cjdpZjkwNEhUNUcyc0M5ZlhBY3JIMWxkNGd4SGRxZGFkbVlHNVd0M2RPQ3hsZ2JtMDZ6Z1djQVJZbS1xQjdUM3kycjJZSEdFOS1WR2hqaDRUTw?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Mavs’ Luka Dončić trade will never make sense, but dealing Anthony Davis turns a page nytimes.com",
+          "published": "Thu, 05 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Anthony Davis injury conjures dark echoes of Luka Dončić",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNejFpNXBFOVRfT0c4S3F2YkI4WkhueG5xWGo5ZHppME9aVVE2OXhuemFuVVR3d3VpSmhpUDlXUUc5YzluMVNJaF94SUxfOUJ0MWZoMXRTU2hvRXpQUFNYWWY3OVM5ZWZELU9BMTcxSWZ4OFE2YXFITXlyaW84R2FEZ1pnNS1KeGxwNUJXY0FrOUJPLUwzVmRCNWtR?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Anthony Davis injury conjures dark echoes of Luka Dončić nytimes.com",
+          "published": "Fri, 07 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Anthony Davis traded from Mavericks to Wizards, capping Luka Dončić deal fallout: Sources",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb19wVDBKTzVlN0o3aW8yTVFwUGZNeW5rWndZUUJTUlpucGdqVmtkUFdvbG9CNEtRRldCQXZSNnpRTWg3TnhLdHRTTk1WeWRwb2RSQnB0OFJJU2tVN203YTZWTGpPVmpidWJpYlpUNE1mNk1IeVVJMTd2Y0ZtN3hBNHFubGUwcVgtTG1HZVRTTHlGOUdFSWZ1dDhvVnlfS2lPWXJwZ0tR?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Anthony Davis traded from Mavericks to Wizards, capping Luka Dončić deal fallout: Sources - The Athletic nytimes.com",
+          "published": "Wed, 04 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Luka Dončić traded to Lakers from Mavericks for Anthony Davis in NBA blockbuster",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWlBkMlIteGl4MWRxOF8yQkdNMy1pa0V0ZnhVNFNrVXNwQmZ6THlHeDZZd2JWZHBUV203Z3hQUUdtYTFQY0xNX20yMXNBU1RjcFluQTJoQWQ4V1dnT2tYdk1ibk5nREk3bXFTWGNJci1uWXczQWJ3aVNmX3V3ckp6elhzamZqU0QxQWdkalBOUEQzWUtsLVlMUzJLdVFUVFJ6LUFF?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Luka Dončić traded to Lakers from Mavericks for Anthony Davis in NBA blockbuster nytimes.com",
+          "published": "Sun, 02 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Is there a soccer equivalent of the Luka Doncic-Anthony Davis trade?",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaG9LZEtaZ01VYkp1V3dlNjdOenlSTUtQNVlsMlV3cVoyM1Q3MUd0SDNzZzAySUphQTYtWThvRGptdE4wem9DZnZ2UXA1aDZleFJteG5IcVdDcUpnb09SaFg0VE9WNTVBSmpJUlVBSDdqVDNyUmpoc1k0Qm81dzBzNGxWSEE4ZzBXX1pxUEVySDdDeEd0S25zQWMzdnBBWFY4U0FZdTFBcS02eUpFZHN5NG1aZ1VJZ0FhaW1KSVY5NjVBOEE?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Is there a soccer equivalent of the Luka Doncic-Anthony Davis trade? nytimes.com",
+          "published": "Thu, 20 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Luka Dončić-Anthony Davis trade grades: How will Lakers, Mavericks, Jazz fare after blockbuster?",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVHpTSkk1T1lIN3hsQmtINldKR0hVQXV6Y3pGcUtWQXJQd3RGdkRnTS1iT3F2OHBtaWpfRWgyaTNNVlhkQnZyc3FFejJsWEo2UWwxM3B3TV92S2YyalhMZzZUVkN1dHpWNjF5ZEJOOG14SDFrUXBPVjFBR1E2eDh4Vi1BTFhCcmhJc1RfTVRnX082MEdvaEQwNW1sdEJWLWxLbnYtcnZGZ0Q1dHBW?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Luka Dončić-Anthony Davis trade grades: How will Lakers, Mavericks, Jazz fare after blockbuster? - The Athletic nytimes.com",
+          "published": "Thu, 06 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "LeBron James talks Luka Dončić-Anthony Davis trade: ‘I ain’t never seen this one’",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTVgwaklfZ29ZZjVibkUyVXphaFFXZWhKMkx5OEZiLVJhanhpMHlZZG5hVm5XRE5VUUFVUkNNQjBNQ2QtUkRiV1ZNTG9HSXVVT2FLQzdwUWNvenl6eHpTamk4Tkd6MEpGXzdCUWhNYVZuY2R1ZV9YM3cweHlKbVVuRmhJMXJuWTgtWTJDNXJfbzc3RUlpVHhEWmhabUZTQQ?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "LeBron James talks Luka Dončić-Anthony Davis trade: ‘I ain’t never seen this one’ nytimes.com",
+          "published": "Tue, 04 Mar 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Explain it in MLB terms: Lakers trade Anthony Davis to Mavericks for Luka Doncic",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWXlzYnUyazRadjVFdXZRWHppaExoS2J6TjVFQ2RaREJXNms3XzN2elhnYlhhVElLc1hDZEJJYXdheWJOSTlwaXJjbzc0eEN2U1JBcjk3QW95YmhVcUhpWkk2RmZScWdEMjNfQS1aZ0dSZFdyNnNSMFhvNnNtVG8zamdiUTRjZmdC?oc=5",
+          "publisher": "FanSided",
+          "kind": "article",
+          "snippet": "Explain it in MLB terms: Lakers trade Anthony Davis to Mavericks for Luka Doncic FanSided",
+          "published": "Sun, 02 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "The man who traded Luka Dončić: How Mavericks GM Nico Harrison operates",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOeWNEbkRwZW92OHhXRlladG93NXNmdmxrMVZlZWV4Mi15cjVLVkdYSV9ZbWw5Qkpsa3VZNzQ5eGdEcTBlZ29VTVhWby1yeXlpdUhUbjdZTE5qTHpack11T1BKdGc2Q1k3TFpNTXFod0FtdktqenFCb1dmR21ZYVpCYXRNOEwtaHZBSUpLeVZnRlBNN3BmMDFzMkhBSDVyRnlHWUJj?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "The man who traded Luka Dončić: How Mavericks GM Nico Harrison operates - The Athletic nytimes.com",
+          "published": "Tue, 11 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Nico Harrison fired as Mavericks’ GM, 9 months after Luka Dončić trade",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPN1ZDOHEtRGxxUGE1SEEzRFZ0RGptQ0FtaHJ6clhWcUV6UlBOdVVELUxaN3pva2JTdzR5dEY5VFRuSDBGNGVodjYzWlhmUnlGVGs2WFpMekJUM3BoQXJBdk4tWlZ4MnpTeV9NcVE3VUR2b09US1Ixc3pHckxEeWlXbFY3RkVBdk1NMm1aYkh0TQ?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Nico Harrison fired as Mavericks’ GM, 9 months after Luka Dončić trade - The Athletic nytimes.com",
+          "published": "Tue, 11 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Luka Dončić comments on Nico Harrison firing, ‘focused’ on Lakers",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUlZRQTBwaGpiV2lhUU0zYllDanVyY29veGI5WmtETmNxZnNNV2RiRHlkOFdoLWlYbkxDSEx3Rl81MkRqbnctMnNWdnMwZzJkQWwzeWI2emRiNUhOQ1BnUVItNkl5SURtUG1DRERuUDl4VzRndHZIcWYxdEE5WEpGNno1REhaLXF0Z1pmWTZPaXQwb3JldmVNdmNEVFVsamVodjhF?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Luka Dončić comments on Nico Harrison firing, ‘focused’ on Lakers nytimes.com",
+          "published": "Thu, 13 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Nico Harrison got fired for trading Luka Dončić, but he didn’t make that call by himself",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLTktX2xfcFl3djJqLXFidy16S0o4bGhTOHBQZzhYdF9IcjFudTNwTjAzeW5zdWFIYkNMTm05S3piRmE0LUVzZVpScHNESTJmazI0TVNRYVdjaDNNNHNfQkt4SS16XzRHenQ1eTZZSjQ2eVFhZHNTUzF3d0N1NTlnMVBqWW1GalVXbWxQdlkxbldBQXBZZi15aVJnb2owZw?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Nico Harrison got fired for trading Luka Dončić, but he didn’t make that call by himself - The Athletic nytimes.com",
+          "published": "Wed, 12 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRUtrbFpqM201Tm9LU3pwRVBaaVlrSktuQXFQc1B1My1IM3RoOEFRSlo5aXVKVkJXRjVWUVhkbElnbHFDWmRzcDZGWTRmTUg0Z2hFR3NzMDVvXzNaSTAzb1Ffd2xQYXFJTzViYTRlY1BlTkZ3YVgydTh5T2NfTTh0TFZhRlZ6ejRQU1FlWjdyamVPWFBBc20zWm9WT1M0TTQ?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’ - The Athletic nytimes.com",
+          "published": "Wed, 26 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Trump unloads on Mavericks for Luka Dončić trade: ‘We got to redo that deal’",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTkkzWlREak15c000dkkzMUdyd3dQYjRQSklTUzUyTmpIYnNvamZ2a3hUNm5XSi1aUkZ2Z0R3bnY5b3BFeThKaXU3dEdlbkczUE56T3hsbFVmc0t1T3FLZlRmU3NfRE5yMGF6cXJQU3R2czdpVVplZXhvSDNUU1JhSmVEbkpZcEdu?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Trump unloads on Mavericks for Luka Dončić trade: ‘We got to redo that deal’ Yahoo Sports",
+          "published": "Thu, 10 Sep 2026 07:08:01 GMT"
         }
       ]
     },
@@ -761,6 +800,187 @@
           "kind": "article",
           "snippet": "Pelicans trade Jordan Hawkins, Micah Peavy to Grizzlies in four-player deal Yahoo Sports",
           "published": "Tue, 08 Sep 2026 13:07:59 GMT"
+        }
+      ]
+    },
+    {
+      "id": "trade-rumors-celtics-stance-bulls-idea-paolo-banchero-ec948519",
+      "slug": "trade-rumors-celtics-stance-bulls-idea-paolo-banchero-ec948519",
+      "sport": "basketball",
+      "headline": "Is Paolo Banchero playing? Star player's puzzling setback worsen as Orlando Magic faces unsettling intern",
+      "blurb": "Star player's puzzling setback worsen as Orlando Magic faces unsettling intern The Times of India",
+      "summary": "Paolo Banchero and Giannis Antetokounmpo: Star player's puzzling setback worsen as Orlando Magic faces unsettling intern The Times of India Orlando Magic will go as far as Paolo Banchero takes them Sports Illustrated Is Paolo Banchero playing today, December 5, for the Orlando Magic vs Miami Heat? Aggregated from The Times of India, Sports Illustrated, bolavip.com, heavy.com, The New York Times and 1 more.",
+      "category": "injury",
+      "published": "2025-09-24T07:00:00Z",
+      "updated": "2026-09-09T22:26:40Z",
+      "players": [
+        {
+          "key": "paolo banchero",
+          "name": "Paolo Banchero",
+          "slug": "paolo-banchero",
+          "pos": "PF",
+          "team": "ORL"
+        },
+        {
+          "key": "giannis antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "slug": "giannis-antetokounmpo",
+          "pos": "PF",
+          "team": "MIL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObzRaOGM4UnJEUnZocGFEcWNjVzk2VUNRajFIdG9sTVp0dWhQZkp3RzJDcmM2MlFkUndya2U3aWdoYUFTYnhOeG5aOUVWSVZ4bV8wU2dENTNrTjAtMEk3SnlsZG03UTJsUDA2ZTZUVHNYWE53OVFMZkxYaGlndFFYVDV2c0NtLXJXcldOWQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? heavy.com",
+          "published": "Wed, 09 Sep 2026 13:06:11 GMT"
+        },
+        {
+          "title": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVjBlUllEOElWNHctek1WUlVFaTc0XzlCOEZlbHNqQWswRVlaMXZrSFZrZWRGcDBjVUplbDRDWjk2TGd3cll6Mk9MNGllOU1EcXF2cjZrVU5SdXI2N2VENUx0WlZ2aVFOdExGNnVDaUppWDhrSHo0SzZxZDVxUFhueXBvUzVYZ1k?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? heavy.com",
+          "published": "Wed, 09 Sep 2026 22:26:40 GMT"
+        },
+        {
+          "title": "What It Would Take For Magic to Trade Paolo Banchero",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVUVLQ0JmQjRtb0JRNEN0bXhJNWhJYXFOVWRkalZRZ1ZDVjBmbEJ6R0duTklqNWxUaTJsYVBpSF9OamxaTVJVY09CVllKYnoxR045eWJFLUJJU3FJWFRiNGtKOElJUVdjRmdLYnpzb3NiaEpVZlBMUEprTnBmM3hBc2ZR?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "What It Would Take For Magic to Trade Paolo Banchero Sports Illustrated",
+          "published": "Tue, 12 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Paolo Banchero Becomes the New Face of the Lakers in this Potential Trade Scenario",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRC1KaXpxMW1NQnVLeTRhVF8yczRGMEdzamREUVo0aDlwSDVwWjRBay1ZU2JjOV95cGowSHJqcmxlY25FTE9teFZUWW42UVU0M2dkNld4UnhvVTNWQVF0azJCRmxhRFd1SlZfVXB5UHVqSFhkRm5tNVotaG5yOXhrOVVfTklLQy1GcEY0QXJwT253cGpBbkZoLVkwZUJXQVU?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Paolo Banchero Becomes the New Face of the Lakers in this Potential Trade Scenario Sports Illustrated",
+          "published": "Thu, 19 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Magic Star Paolo Banchero to Miss Time With Groin Injury",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE14MWdBZ1JJb0pLbnBQWWpKZlNqdzJFWFFycXlFWFRXWUdMSGJjS2FkYTVuV1lrZFE1RWxsM2dlVm9DUEY1SjU2ajBkRHpzTl9nZmdwRi1IalV6TjFSNUZVX3QzWGJBOXpIX0IwZ2szMzRRLTFaU3ktV2Y3dw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Magic Star Paolo Banchero to Miss Time With Groin Injury Sports Illustrated",
+          "published": "Thu, 13 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Magic take leap in NBA power rankings after Paolo Banchero injury",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdUZnZWhTMHBEX2FfaUxnQ1RPLWRDRkVaZjNWV0llbEJnTjE1MV95YWxvOXNUeF83OEgxWG5vT0pSS3J5d2VZR3lVTmItVl9QRUxSWEFMZ1NuUnNoSTczbGxSSTJSU3lhdHpsR1hNYzM3QTNHTE5PRkNqRTliemZsa3ZncXJmMkxoeWdUVy1TV0lTckpuUnJMNHlQUEV5QzZYNUwzXzJEYWJ6ZkFhTlE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Magic take leap in NBA power rankings after Paolo Banchero injury Sports Illustrated",
+          "published": "Tue, 18 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Is Paolo Banchero Playing Tonight? (Injury Update, Betting Impact for Warriors vs. Magic)",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVnZUcmZOdGhpUE5RcVBlenpmOW9nZVpzLUV5d3VSSHdBWkdIdHlwek8yN0V2WHpOcDBkalNOaHdOeXhkazh1Mzgxbl91ejV0eThnbWhheHQyNDdBTklhd2x3T1kyaWRkSldBeFRWUUF0ckZWMmVxU3FDWjZGNzVBeDZOSVJIOS1Wam1zWjNMM0s5MVVQMi1n?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Paolo Banchero Playing Tonight? (Injury Update, Betting Impact for Warriors vs. Magic) Sports Illustrated",
+          "published": "Tue, 18 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Paolo Banchero and the Magic are all-in: ‘We should be a deep playoff team’",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYlNBZWdSM1Y2TnFJNGtfbHh2bjNOcENWTDk2VzUxNGhzRldmc3o1MFNoN2RuVDlPaFF6dFRneXFzRXp1ektQN2MxTktJWlhJWFk4T2kwWFNtMllpY2VzSkh6Q1JTdEZveV9jelIyanZEUEFJWXl2eXEtbm0tNDVCNGJPNUkzT1Z4dlh4THBDYXNZcmN0czVqSkhn?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Paolo Banchero and the Magic are all-in: ‘We should be a deep playoff team’ The New York Times",
+          "published": "Sat, 27 Sep 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Paolo Banchero injury spoils Magic upset vs. Knicks",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWjB2eFA0TGRtNExsamthTEZ3OVhTOWlhWXIxd2wwdDFLSEV1VUtUb1VlbkhHenF2d3FKaUNBNEJPcDc1dlVqNFZJeFNjMFh3aUl6ajhXQWpibjdqUFBKZXlHU1ZYaUVyX0U5ZEtHV3JTR2VtY3hUR3FpODkxVE9tRTRoRDJTNW9EY0FMV1Jtc1RKYTl0MkJBQk0xOXZxQQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Paolo Banchero injury spoils Magic upset vs. Knicks Sports Illustrated",
+          "published": "Thu, 13 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Magic get bad Paolo Banchero injury update after Knicks game",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONDY2YUkwcXRBcllvOHU2LWlfd1VCY2JNU3hxR2N6X21McHJmdjVKZjF6WHJYUVJjeFlJZlUzcW1zTlJVSS1DREgtVkhzNUpwd2FDVy1QSzFYUzZkWUxIM1NkUWN3Mll3Z2lJSHEyMW9uRmtGNURXbF9Lci03cUlBei1UOFFLZW1HOGNBYm9TYXpNQXJuekp3Z2VuczdoSVhBSHhYTGZjZmR3TDA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Magic get bad Paolo Banchero injury update after Knicks game Sports Illustrated",
+          "published": "Thu, 13 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Magic give Paolo Banchero injury update ahead of NBA Cup match vs. Heat",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQelA5RmFtTHNyMENkVGRHd1BOSzQxV005TGFaSHNrWVNwMWlUNEVOa2pPY1FlNVl0MlRXWEpfT1lFSjdtMm5VVXNZRjg2X1BEMmVWSldLbHNvLXE0YW12cmFJck1rdW9hYmo4S09sSThnbmFyc0E5NUFyejVscWd0TDBpVEc0MXM0U0FlSGVoU1dYWERvYnJXQ05QTEZXTENpdlFzUDk1MlM3T0FJZjg1OEZsQThjU184?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Magic give Paolo Banchero injury update ahead of NBA Cup match vs. Heat Sports Illustrated",
+          "published": "Tue, 09 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "People need to relax on Magic star Paolo Banchero",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUWNQdGJZaEc5OEJYZ1JxdkJ1cmZXUzhxUWFQLUpaLW1PbzFBelBMd1VfcUJ4UGxfVjZmZm16dFRnak9GYV8wRXVuOVBremZfc3JzRW5PeWJ0T1dYQmUyZUR6b0hIZGtsNHBWMHBPNXNUXzhqRThUSFNmUjBIQWhvelJXbllfUWNrMGNaZlVrU2tWWmNIb1N5NQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "People need to relax on Magic star Paolo Banchero Sports Illustrated",
+          "published": "Mon, 22 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Paolo Banchero Has to Make Changes For Magic",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPcEJPdW9WOG9zT3BBSGVxd0dkNDRxRWdNdU9vejVBeXZ0ejlNNy0tUGZqMjdvVVI5WEhINUFfdVpmaHFYcjR2MndLMFg1Yl91Q3QtbUtVWmlnZHoxRFN4Q1pORVdLQVVhR2xRSnZhOFl0UW0wTDQyQlh6TWxGel9TMTdDbFEwbXFleEZHMXdheWdxaWJFYXc?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Paolo Banchero Has to Make Changes For Magic Sports Illustrated",
+          "published": "Thu, 12 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Magic can't wait for Paolo Banchero to return from injury",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVTRudkJjU04yWWtwOTdMNG5VSmVlU05yZkdnckFoMlZIejNjeTByQTZDNkVLc1ljZXNaMGh1UnJRUmtfb3B3Um05TWZpNUhvb1pnd0hNdUVzZmZQbTl0eFp3dTI2UzFfd3BnU0FoZUUxc1p0bG00U3BtZzFKRENxMnY4R19jZUpVMGFsTHJCZjMwNGRuTlNXeWRTbDhMamhQY1MzMzln?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Magic can't wait for Paolo Banchero to return from injury Sports Illustrated",
+          "published": "Wed, 26 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Should Magic trade or build around Paolo Banchero?",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbXM5TDNIR2lyR3ZXWnRkbDY4Nk9vU0J1bEVhQ0htU3BtaEhtX1RNNXpzLVk4ajVuZDdfamZVelpMZ05BR2pfQ0ktWG9OR19DeUNpQXBDNUxfTFZuaV9uRUNGRzZfTHRwTHplMHh1dlh3LU9QVEE1SzhNcUVaNGY3NGc0TTB4SXdoeDZKWTVZQVNLS2Jub010MEhURQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Should Magic trade or build around Paolo Banchero? Yahoo Sports",
+          "published": "Thu, 16 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Would the Orlando Magic Trade Paolo Banchero for Giannis Antetokounmpo?",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZl90LWpQQ01UeC0xT1pQQWtDWXoxSWQwVEJiV0UxU0ZycUZab1hyVHhoN0x1S1R6VHZMYUtDLS11MHVvNnAySUxIbGVhOEJoeWFaZkJ5UmhfNjBiS1NSeWktcjd6Ujlhcm8xSlUtdzA4VXItMDkzalFKeDBxRXVmbERUTDhXc1NoWXM0?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Would the Orlando Magic Trade Paolo Banchero for Giannis Antetokounmpo? Yahoo Sports",
+          "published": "Mon, 25 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Paolo Banchero playing? Star player's puzzling setback worsen as Orlando Magic faces unsettling intern",
+          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPMzVWbUFtUFgzVW85dDhNQUpGWEhmR2xHdGRUV1pucDhfWVJKRmQ1dGZ3M3oxc3ZZcmVKZlhEVnA4bV9VbFJCQzA0RnpSQXZFd3lkejdLNXFRRFA3bUhKN2IzeHFoNm9BajgwUEppcGVrT0JrQkNhNEFrakM3TUYwSTMwWWkzZHlrd0pzaXAwcXN2YmlFMVZ3SUNycTRhN1dMbWktellfMUxWeFBuVzVQWG1TRlZ6WUFGQUJNVlRCdWtUNVE4T2hDV2Rhc1BpUklUdVlXNHpDa1h4MnhXWVBIZTgwUVNxQjlqRC1sRmh2T005Vm0xTDFrVkx2OG4xQU5WS3pNWk5xNHpfZ05Wb1J0VkJOaUVvd0diWi1aTV9yMWd2VEnSAagCQVVfeXFMTTlMaHN5by1Pb2ltZEVpdTBuNFAxREtzWHFMM2l3VzFZdGxtekxwM3BldFlrdEw4elBMNm9fNFlRNTNaa1N2eEJVWUkxaGFDSmdjMlc4YmlSZEFTRnJiazlLTVlmUXZOelQzVElvVVo3TThQeGN0ZmlzaWRNSW02cEc4M3ZvaGROTUp2S2tmRXlhdFY5TFVLTndRM2lQNmtjQjhGM3VYNms4eEJmQVRvbTYxOWY1ajVVRDFXaE05aDNoN0gwbzRrNGVsWjFjZDNWU3FtNWtLMkVWSGk4c3licS1ac1pDUVYzNDFuZmxnaE9xREdzbV9mZEtDX0thQXlyVWJfbmg4UlhsQzMyQVFqaEVlWjZpSFZwTWtBWEx1alp2TkROY1dvclc?oc=5",
+          "publisher": "The Times of India",
+          "kind": "article",
+          "snippet": "Is Paolo Banchero playing? Star player's puzzling setback worsen as Orlando Magic faces unsettling intern The Times of India",
+          "published": "Wed, 19 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Orlando Magic will go as far as Paolo Banchero takes them",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUlRoQ2l1VHUyb0hOLWNMYTExSEtrckN0MWtfN0FpRGVaVXpwWW9yRGM1MkdjbkhPX3JXeXZZOThfbVVqZDh1RDQ2cWw4NmQxYmtCUURMMlRCOWxFSkV2UmNSZFhtZkZuVnRKdE43S1ZTZ1l4RDVJQVhlMkpXdHNMYnRrQXZxTWdXa3JGYVlKQVJpQ3ZfVXltaHpDQU4yVzJYU0U1NVRfUFFsd3Vlbnc?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Orlando Magic will go as far as Paolo Banchero takes them Sports Illustrated",
+          "published": "Wed, 24 Sep 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Is Paolo Banchero playing today, December 5, for the Orlando Magic vs Miami Heat?",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVUFadW56MG5WOFY5cWxXOERxMmxWdjZSeURnN2FDQk1BNGtIY3RCcUlZMHQwTmxOUmJyRnk1XzNESGdOenFYb3RTdVRaSXNIRG0wYXkwQ1k0TlhlV0t0dFJOaWN4NEROWHM3dlVCbzN6MzMwMUNYeGpJeHVQaFp4ZU16eUhqU3hYcktZZnd5QzBjcUo2dnpzdmRROHVVdHpYRDBWVDFIRkbSAa4BQVVfeXFMUDctaW5STjZOWktGNDhaWW9JZWlFeGdoNW5pWW1uTmlKaTRjUEotQnE3bm9rbElyeEs0RExkRnBfdG42cDdVbHlsNHI3d1o1YlMyWktteHJfNVBHWFBDeTJjRFFTWjBSdU9zbGtXZG9ieWw0TkJNRmc0aW9NSXY5LWVqcFZSNmFORXFNRHdrbVAyTVRmbG9GQTRZb1pRSnljaGpaV0hELWtvRnhEOTN3?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Is Paolo Banchero playing today, December 5, for the Orlando Magic vs Miami Heat? bolavip.com",
+          "published": "Fri, 05 Dec 2025 08:00:00 GMT"
         }
       ]
     },
@@ -1360,6 +1580,43 @@
       ]
     },
     {
+      "id": "memphis-grizzlies-cut-four-players-make-opening-roster-eb33e813",
+      "slug": "memphis-grizzlies-cut-four-players-make-opening-roster-eb33e813",
+      "sport": "basketball",
+      "headline": "\"The Memphis Grizzlies have to cut four players to make their opening roster down to 15 players. I do think its going to be Micah Peavy,…",
+      "blurb": "\"The Memphis Grizzlies have to cut four players to make their opening roster down to 15 players.",
+      "summary": "D'Angelo Russell and Micah Peavy: \"The Memphis Grizzlies have to cut four players to make their opening roster down to 15 players. I do think its going to be Micah Peavy, D'Angelo Russell, Walter Clayton Jr, Kris Murray,\" per @JakeLFischer. Board reading of x.com.",
+      "category": "roster",
+      "published": "2026-09-09T23:00:00Z",
+      "updated": "2026-09-09T23:00:00Z",
+      "players": [
+        {
+          "key": "dangelo russell",
+          "name": "D'Angelo Russell",
+          "slug": "d-angelo-russell",
+          "pos": "PG",
+          "team": "BKN"
+        },
+        {
+          "key": "micah peavy",
+          "name": "Micah Peavy",
+          "slug": "micah-peavy",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "\"The Memphis Grizzlies have to cut four players to make their opening roster down to 15 players. I do think its going to be Micah Peavy, D'Angelo Russell, Walter Clayton Jr, Kris Murray,\" per @JakeLFischer.",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0zbHFHWFMzOGs4dlFSMGVHOUsyTUE4VFdTVHd4M01WOGo1bXVoTmtkQ2pSQUNhN0w3MTNrTWtJeHVfTGM3Zi1iRkJZb0t5Vlc4NldiLW1BMVFTYV9TbGM0?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "\"The Memphis Grizzlies have to cut four players to make their opening roster down to 15 players. I do think its going to be Micah Peavy, D'Angelo Russell, Walter Clayton Jr, Kris Murray,\" per @JakeLFischer. x.com",
+          "published": "Wed, 09 Sep 2026 23:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "clippers-another-pr-problem-two-former-suns-involved-4136ba6c",
       "slug": "clippers-another-pr-problem-two-former-suns-involved-4136ba6c",
       "sport": "basketball",
@@ -1393,6 +1650,43 @@
           "kind": "article",
           "snippet": "Bradley Beal takes Chris Paul’s historic number three with the Clippers and fans are not happy.",
           "published": "Thu, 10 Sep 2026 18:13:08 +0000"
+        }
+      ]
+    },
+    {
+      "id": "clippers-spark-new-controversy-giving-chris-paul-s-8abd7421",
+      "slug": "clippers-spark-new-controversy-giving-chris-paul-s-8abd7421",
+      "sport": "basketball",
+      "headline": "Clippers spark new controversy by giving Chris Paul's No. 3 jersey number to Bradley Beal",
+      "blurb": "No other Clipper than CP3 has worn No.",
+      "summary": "Bradley Beal and Chris Paul: No other Clipper than CP3 has worn No. 3 since 2011, but that appears set to change this season Board reading of CBS NBA.",
+      "category": "wire",
+      "published": "2026-09-10T16:38:21Z",
+      "updated": "2026-09-10T16:38:21Z",
+      "players": [
+        {
+          "key": "bradley beal",
+          "name": "Bradley Beal",
+          "slug": "bradley-beal",
+          "pos": "SG",
+          "team": "PHX"
+        },
+        {
+          "key": "chris paul",
+          "name": "Chris Paul",
+          "slug": "chris-paul",
+          "pos": "PG",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Clippers spark new controversy by giving Chris Paul's No. 3 jersey number to Bradley Beal",
+          "url": "https://www.cbssports.com/nba/news/clippers-new-controversy-chris-pauls-no-3-jersey-number-bradley-beal/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "No other Clipper than CP3 has worn No. 3 since 2011, but that appears set to change this season",
+          "published": "Thu, 10 Sep 2026 16:38:21 +0000"
         }
       ]
     },
@@ -1447,43 +1741,6 @@
           "kind": "article",
           "snippet": "Pacers Predicted to Sign Bennedict Mathurin to Nearly $100 Million Extension si.com",
           "published": "Thu, 02 Oct 2025 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "clippers-spark-new-controversy-giving-chris-paul-s-8abd7421",
-      "slug": "clippers-spark-new-controversy-giving-chris-paul-s-8abd7421",
-      "sport": "basketball",
-      "headline": "Clippers spark new controversy by giving Chris Paul's No. 3 jersey number to Bradley Beal",
-      "blurb": "No other Clipper than CP3 has worn No.",
-      "summary": "Bradley Beal and Chris Paul: No other Clipper than CP3 has worn No. 3 since 2011, but that appears set to change this season Board reading of CBS NBA.",
-      "category": "wire",
-      "published": "2026-09-10T16:38:21Z",
-      "updated": "2026-09-10T16:38:21Z",
-      "players": [
-        {
-          "key": "bradley beal",
-          "name": "Bradley Beal",
-          "slug": "bradley-beal",
-          "pos": "SG",
-          "team": "PHX"
-        },
-        {
-          "key": "chris paul",
-          "name": "Chris Paul",
-          "slug": "chris-paul",
-          "pos": "PG",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Clippers spark new controversy by giving Chris Paul's No. 3 jersey number to Bradley Beal",
-          "url": "https://www.cbssports.com/nba/news/clippers-new-controversy-chris-pauls-no-3-jersey-number-bradley-beal/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "No other Clipper than CP3 has worn No. 3 since 2011, but that appears set to change this season",
-          "published": "Thu, 10 Sep 2026 16:38:21 +0000"
         }
       ]
     },
@@ -1691,44 +1948,6 @@
       ]
     },
     {
-      "id": "trade-rumors-celtics-stance-bulls-idea-paolo-banchero-ec948519",
-      "slug": "trade-rumors-celtics-stance-bulls-idea-paolo-banchero-ec948519",
-      "sport": "basketball",
-      "headline": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
-      "blurb": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
-      "summary": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? Board reading of heavy.com.",
-      "category": "trade",
-      "published": "2026-09-09T13:06:11Z",
-      "updated": "2026-09-09T22:26:40Z",
-      "players": [
-        {
-          "key": "paolo banchero",
-          "name": "Paolo Banchero",
-          "slug": "paolo-banchero",
-          "pos": "PF",
-          "team": "ORL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObzRaOGM4UnJEUnZocGFEcWNjVzk2VUNRajFIdG9sTVp0dWhQZkp3RzJDcmM2MlFkUndya2U3aWdoYUFTYnhOeG5aOUVWSVZ4bV8wU2dENTNrTjAtMEk3SnlsZG03UTJsUDA2ZTZUVHNYWE53OVFMZkxYaGlndFFYVDV2c0NtLXJXcldOWQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? heavy.com",
-          "published": "Wed, 09 Sep 2026 13:06:11 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVjBlUllEOElWNHctek1WUlVFaTc0XzlCOEZlbHNqQWswRVlaMXZrSFZrZWRGcDBjVUplbDRDWjk2TGd3cll6Mk9MNGllOU1EcXF2cjZrVU5SdXI2N2VENUx0WlZ2aVFOdExGNnVDaUppWDhrSHo0SzZxZDVxUFhueXBvUzVYZ1k?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? heavy.com",
-          "published": "Wed, 09 Sep 2026 22:26:40 GMT"
-        }
-      ]
-    },
-    {
       "id": "why-nuggets-excited-trade-return-peyton-watson-deal-e6106e6a",
       "slug": "why-nuggets-excited-trade-return-peyton-watson-deal-e6106e6a",
       "sport": "basketball",
@@ -1779,6 +1998,36 @@
           "kind": "article",
           "snippet": "NBA trade grades: Is Peyton Watson a good fit with Cavs? What’s next for Nuggets? The New York Times",
           "published": "Wed, 19 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "sabonis-trade-incoming-how-much-offense-improve-grayson-4e704351",
+      "slug": "sabonis-trade-incoming-how-much-offense-improve-grayson-4e704351",
+      "sport": "basketball",
+      "headline": "Is a Sabonis Trade INCOMING? | How much will the Offense IMPROVE? | Grayson Allen Injury CONCERNS??",
+      "blurb": "Is a Sabonis Trade INCOMING?",
+      "summary": "Grayson Allen: Is a Sabonis Trade INCOMING? | How much will the Offense IMPROVE? | Grayson Allen Injury CONCERNS?? Board reading of KHOU.",
+      "category": "injury",
+      "published": "2026-09-09T21:48:00Z",
+      "updated": "2026-09-09T21:48:00Z",
+      "players": [
+        {
+          "key": "grayson allen",
+          "name": "Grayson Allen",
+          "slug": "grayson-allen",
+          "pos": "SG",
+          "team": "PHX"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Is a Sabonis Trade INCOMING? | How much will the Offense IMPROVE? | Grayson Allen Injury CONCERNS??",
+          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPRjZBbURTRmtBdXA0OFEtdHpiXzNUU19XaEMtTV8zeHBFOHdueFZrVHFWdnIzRThRbzVIZk5rVmp3dlh5bDhxV3FJanFaRV9CTHV6ei04SmI0YXpNbmVKZmExUXRkVE1wSVhyTnJtUFF4bF82bXh0NmhjZVN3TzhQOU5LVHVQMzR0Y0NiTWNsUHk0RlZRWTBlUHpCTEYzbmZtb0hNdktlSlJtSGFFRnVSNVVrNXFCZ3JRWE9QR3owWFo2WnVTNkd0TC1MTV9uUGp4NTFDZXhvME9ReEhyZTlYbkZSYnBuaXB0VkVoNFdzNEtvelZ4cGNaa2thQlBNdk8zV0VlNmJuMGhpa1RYSFlFRUx3NWNET2JKQzcxazFVMHJrZWs5RkFta3hn?oc=5",
+          "publisher": "KHOU",
+          "kind": "article",
+          "snippet": "Is a Sabonis Trade INCOMING? | How much will the Offense IMPROVE? | Grayson Allen Injury CONCERNS?? KHOU",
+          "published": "Wed, 09 Sep 2026 21:48:00 GMT"
         }
       ]
     },
@@ -1860,36 +2109,6 @@
       ]
     },
     {
-      "id": "sabonis-trade-incoming-how-much-offense-improve-grayson-4e704351",
-      "slug": "sabonis-trade-incoming-how-much-offense-improve-grayson-4e704351",
-      "sport": "basketball",
-      "headline": "Is a Sabonis Trade INCOMING? | How much will the Offense IMPROVE? | Grayson Allen Injury CONCERNS??",
-      "blurb": "Is a Sabonis Trade INCOMING?",
-      "summary": "Grayson Allen: Is a Sabonis Trade INCOMING? | How much will the Offense IMPROVE? | Grayson Allen Injury CONCERNS?? Board reading of KHOU.",
-      "category": "injury",
-      "published": "2026-09-09T21:48:00Z",
-      "updated": "2026-09-09T21:48:00Z",
-      "players": [
-        {
-          "key": "grayson allen",
-          "name": "Grayson Allen",
-          "slug": "grayson-allen",
-          "pos": "SG",
-          "team": "PHX"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Is a Sabonis Trade INCOMING? | How much will the Offense IMPROVE? | Grayson Allen Injury CONCERNS??",
-          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPRjZBbURTRmtBdXA0OFEtdHpiXzNUU19XaEMtTV8zeHBFOHdueFZrVHFWdnIzRThRbzVIZk5rVmp3dlh5bDhxV3FJanFaRV9CTHV6ei04SmI0YXpNbmVKZmExUXRkVE1wSVhyTnJtUFF4bF82bXh0NmhjZVN3TzhQOU5LVHVQMzR0Y0NiTWNsUHk0RlZRWTBlUHpCTEYzbmZtb0hNdktlSlJtSGFFRnVSNVVrNXFCZ3JRWE9QR3owWFo2WnVTNkd0TC1MTV9uUGp4NTFDZXhvME9ReEhyZTlYbkZSYnBuaXB0VkVoNFdzNEtvelZ4cGNaa2thQlBNdk8zV0VlNmJuMGhpa1RYSFlFRUx3NWNET2JKQzcxazFVMHJrZWs5RkFta3hn?oc=5",
-          "publisher": "KHOU",
-          "kind": "article",
-          "snippet": "Is a Sabonis Trade INCOMING? | How much will the Offense IMPROVE? | Grayson Allen Injury CONCERNS?? KHOU",
-          "published": "Wed, 09 Sep 2026 21:48:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "top-plays-2025-26-no-33-jayson-tatum-361f06e5",
       "slug": "top-plays-2025-26-no-33-jayson-tatum-361f06e5",
       "sport": "basketball",
@@ -1954,116 +2173,6 @@
           "kind": "article",
           "snippet": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media",
           "published": "Wed, 09 Sep 2026 18:10:36 GMT"
-        }
-      ]
-    },
-    {
-      "id": "chicago-bulls-projected-15-man-roster-2026-27-a29baa88",
-      "slug": "chicago-bulls-projected-15-man-roster-2026-27-a29baa88",
-      "sport": "basketball",
-      "headline": "Can Matas Buzelis take the reins as the primary playmaker for the injury-depleted Chicago Bulls?",
-      "blurb": "How Matas Buzelis has made the Chicago Bulls believers: ‘He has tremendous upside’ The New York Times",
-      "summary": "How Matas Buzelis has made the Chicago Bulls believers: ‘He has tremendous upside’ The New York Times The Chicago Bulls projected 15-man roster for the 2026-27 season: PG: Josh Giddey SG: Norman Powell SF: Matas Buzelis PF: Caleb Wilson C: Nic Claxton Bench: • Tre Jones • Isaac Okoro • Dailyn Swain • Patrick Williams • Jalen Smith • Rob Dillingham • No x.com Are Matas Buzelis, Josh Giddey playing tonight? Aggregated from The New York Times, x.com, Yahoo Sports, Chicago Tribune.",
-      "category": "injury",
-      "published": "2024-10-14T07:00:00Z",
-      "updated": "2026-09-08T14:46:10Z",
-      "players": [
-        {
-          "key": "matas buzelis",
-          "name": "Matas Buzelis",
-          "slug": "matas-buzelis",
-          "pos": "SF",
-          "team": "CHI"
-        },
-        {
-          "key": "josh giddey",
-          "name": "Josh Giddey",
-          "slug": "josh-giddey",
-          "pos": "SG",
-          "team": "CHI"
-        },
-        {
-          "key": "patrick williams",
-          "name": "Patrick Williams",
-          "slug": "patrick-williams",
-          "pos": "PF",
-          "team": "CHI"
-        },
-        {
-          "key": "rob dillingham",
-          "name": "Rob Dillingham",
-          "slug": "rob-dillingham",
-          "pos": "PG",
-          "team": "MIN"
-        },
-        {
-          "key": "norman powell",
-          "name": "Norman Powell",
-          "slug": "norman-powell",
-          "pos": "SG",
-          "team": "LAC"
-        },
-        {
-          "key": "nic claxton",
-          "name": "Nic Claxton",
-          "slug": "nic-claxton",
-          "pos": "C",
-          "team": "BKN"
-        },
-        {
-          "key": "isaac okoro",
-          "name": "Isaac Okoro",
-          "slug": "isaac-okoro",
-          "pos": "SF",
-          "team": "CLE"
-        },
-        {
-          "key": "jalen smith",
-          "name": "Jalen Smith",
-          "slug": "jalen-smith",
-          "pos": "C",
-          "team": "CHI"
-        },
-        {
-          "key": "tre jones",
-          "name": "Tre Jones",
-          "slug": "tre-jones",
-          "pos": "PG",
-          "team": "CHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "The Chicago Bulls projected 15-man roster for the 2026-27 season: PG: Josh Giddey SG: Norman Powell SF: Matas Buzelis PF: Caleb Wilson C: Nic Claxton Bench: • Tre Jones • Isaac Okoro • Dailyn Swain • Patrick Williams • Jalen Smith • Rob Dillingham • No",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBlc2puY3pKQXpEaXVBZTlfckVQcS00TzRtS1N4amhXckV4SExIaHZqbE9IWmg1d2w4X0tpSWFGaWIwOElycGhzTmtUNjFkN0IwM1Bwd1MwZzNNdw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "The Chicago Bulls projected 15-man roster for the 2026-27 season: PG: Josh Giddey SG: Norman Powell SF: Matas Buzelis PF: Caleb Wilson C: Nic Claxton Bench: • Tre Jones • Isaac Okoro • Dailyn Swain • Patrick Williams • Jalen Smith • Rob Dillingham • No x.com",
-          "published": "Tue, 08 Sep 2026 14:46:10 GMT"
-        },
-        {
-          "title": "Are Matas Buzelis, Josh Giddey playing tonight? Bulls vs Warriors injury report",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOeUotTnN3Y3B6aWs3WWZGSmxmVndpS2RnRjc1ZjhBQ2wta3cwMXR2N2gyc3ZTb2NsbEkyTWNuN0Q4dVRBa3RsNmdQRDliT0x2TTJYb0VGVFVTTnM4ckFEU2lJbEZoUm0xbllyb1dLWkhlWGxKenZqOGlEYkEyczV5eElkNFcwckRCTnc?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Are Matas Buzelis, Josh Giddey playing tonight? Bulls vs Warriors injury report Yahoo Sports",
-          "published": "Tue, 10 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Can Matas Buzelis take the reins as the primary playmaker for the injury-depleted Chicago Bulls?",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdElwby1Zd0lUR0lDX3YwOUphWDhKMEV1UERFemxKSFozYmRXdHRCdG1nSDVGLWEwQzlaQ05uMDhhSDFLVkRELTNzTjZPamhwYnVad3hMdnN1OHlHMWxTVTRpTnlSblZ2Tk4xcjk0SGN1cWFwZDdxdHB4cC10ZWZyN0NhQkNZQWR1SmotUQ?oc=5",
-          "publisher": "Chicago Tribune",
-          "kind": "article",
-          "snippet": "Can Matas Buzelis take the reins as the primary playmaker for the injury-depleted Chicago Bulls? Chicago Tribune",
-          "published": "Sun, 04 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "How Matas Buzelis has made the Chicago Bulls believers: ‘He has tremendous upside’",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNa20wNHNKNzRKN3hyV2lFOElNWU1wd0FkUFgwb2xIRU1CSTlLZjl2M0tIN05PMWFRcWZYTmNqaWd1VGNoR0FQV2VLbWpQNzY3NUNldl9pWmJuTnhOWFBvSGx4eWFETFRmS3FtVjQzX0dCeDc4TTV1cWlaYmRnS3hvdThHb0R2ejNXLTNPZA?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "How Matas Buzelis has made the Chicago Bulls believers: ‘He has tremendous upside’ The New York Times",
-          "published": "Mon, 14 Oct 2024 07:00:00 GMT"
         }
       ]
     },
