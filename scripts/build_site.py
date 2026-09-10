@@ -446,28 +446,28 @@ ROOKIES = [
 ]
 
 HOT = [
-    {"name": "De'Zhaun Stribling", "pos": "WR", "team": "SF", "why": "SI (Aug 25) + FantasyPros (Aug 26): 13 targets, 11-109 in his first two preseason games. Pearsall is out on a PCL; Shanahan is moving him all over the formation.", "src": "Sports Illustrated, FantasyPros"},
-    {"name": "Jonah Coleman", "pos": "RB", "team": "DEN", "why": "SI (Aug 25) + FantasyPros: Payton pulled him after one preseason series because he'd already seen enough. Pass-pro trust is the three-down unlock in Denver.", "src": "Sports Illustrated, FantasyPros"},
-    {"name": "Parker Washington", "pos": "WR", "team": "JAX", "why": "SI (Aug 25): WR8 over the last five weeks of 2025. Jacksonville is manufacturing touches in space; he is no longer a depth piece.", "src": "Sports Illustrated"},
-    {"name": "Rome Odunze", "pos": "WR", "team": "CHI", "why": "PlayerProfiler (Aug 7): cheapest Chicago WR after the Burden/Loveland run-up. WR11 Weeks 1-8 last year before the foot; PP WR19 vs KTC WR20.", "src": "PlayerProfiler"},
-    {"name": "Kyle Pitts", "pos": "TE", "team": "ATL", "why": "PlayerProfiler: TE2 finish last year, Stefanski TE volume, still 25. KTC TE8 is a discount on a name who just got paid through 2028.", "src": "PlayerProfiler"},
-    {"name": "Zay Flowers", "pos": "WR", "team": "BAL", "why": "PlayerProfiler would take him straight up over KTC WR14 Ladd McConkey. New contract, 1,200 yards on a run-leaning Ravens offense.", "src": "PlayerProfiler"},
-    {"name": "Bryce Lance", "pos": "WR", "team": "NO", "why": "SI (Aug 25): Tyson is expected to miss time; Lance went 5-5-2 in joint practice with Shough. Deep-bench buy before the Saints room fills back in.", "src": "Sports Illustrated"},
-    {"name": "Jelani Woods", "pos": "TE", "team": "NYJ", "why": "SI (Aug 25): healthier camp, elevated preseason reps, empty middle of the Jets offense. Reclamation TE with size/speed and a clean runway.", "src": "Sports Illustrated"},
-    {"name": "Christian Watson", "pos": "WR", "team": "GB", "why": "Sports Arena + Draft Sharks: WR21 in FPPG Weeks 8-18 last year on a 68% route share with Doubs/Wicks gone. Still the buy vs. packed rookie rooms.", "src": "Sports Arena, Draft Sharks"},
-    {"name": "Kyler Murray", "pos": "QB", "team": "MIN", "why": "DLF: healthy years were locked top-10 SF QBs; still priced like a mid-1st rookie pick heading into Week 1 in Minnesota.", "src": "Dynasty League Football"},
+    {"name": "Parker Washington", "pos": "WR", "team": "JAX", "why": "RotoWire (Sep 9): Coen runs through the slot. Ranked with Higgins, Odunze, and Burden. Still acquirable while Jacksonville opens against a hard slate.", "src": "RotoWire"},
+    {"name": "De'Zhaun Stribling", "pos": "WR", "team": "SF", "why": "FantasyPros (Sep 8): projected Niners slot next to Evans and Deebo. Dynasty WR41. A 2027 second plus a third is the ask.", "src": "FantasyPros"},
+    {"name": "Garrett Wilson", "pos": "WR", "team": "NYJ", "why": "FantasyLife (Sep 8): 26, three 1,000-yard seasons already. Buy before the Week 1 reminder. Clean swap for Tate, or even a Nabers downgrade.", "src": "FantasyLife"},
+    {"name": "Oronde Gadsden II", "pos": "TE", "team": "LAC", "why": "FantasyPros + RotoBaller: Njoku and Kolar stole camp reps. Still a TE10 long view. Mid-to-late second is the buy.", "src": "FantasyPros, RotoBaller"},
+    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "Footballguys (Sep 9): ankle, out Week 1, market down to RB20. Buy the dip. Do not pay a future first.", "src": "Footballguys"},
+    {"name": "Javonte Williams", "pos": "RB", "team": "DAL", "why": "FantasyPros: Jaydon Blue cut. RB12 last year on 35 catches. Contenders can pay a late 2027 first.", "src": "FantasyPros"},
+    {"name": "Kaleb Johnson", "pos": "RB", "team": "GB", "why": "FantasyLife: Jacobs is exempt, Lloyd's health is the concern. A 2028 second is the price on the cheaper Packers path.", "src": "FantasyLife"},
+    {"name": "Kaelon Black", "pos": "RB", "team": "SF", "why": "FantasyLife (Sep 9): Shanahan third-rounder behind CMC. If you roster McCaffrey, get Black now.", "src": "FantasyLife"},
+    {"name": "Malachi Fields", "pos": "WR", "team": "NYG", "why": "RotoWire: penciled Giants WR2. Nabers may not be 100 percent. Stash while the room is cheap.", "src": "RotoWire"},
+    {"name": "Chris Bell", "pos": "WR", "team": "MIA", "why": "RotoWire: listed as a Dolphins starter. Biggest obstacle is Jalen Tolbert. Low-risk dart.", "src": "RotoWire"},
 ]
 COLD = [
-    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "The Athletic (Aug 26): ADP RB12, ranked RB16. Stevenson still has the job; sell the camp premium before a quiet September.", "src": "The Athletic"},
-    {"name": "Ladd McConkey", "pos": "WR", "team": "LAC", "why": "PlayerProfiler (Aug 7): KTC WR14 is a ceiling smash. Year-2 dip, McDaniel 12-personnel, Njoku in the building. Flowers/Olave/Smith are the ask.", "src": "PlayerProfiler"},
-    {"name": "Jonathan Taylor", "pos": "RB", "team": "IND", "why": "PlayerProfiler: 27, last look at peak. Age-28 lead backs lose ~41% of peak PPR. Contenders hold; everyone else moves him a year early.", "src": "PlayerProfiler"},
-    {"name": "Kyren Williams", "pos": "RB", "team": "LAR", "why": "FantasyPros (August): Corum's role keeps growing, Williams turns 26, 2027 cap-cut candidate. Sell the name equity to a contender.", "src": "FantasyPros"},
-    {"name": "Kenneth Walker", "pos": "RB", "team": "KC", "why": "FantasyPros (August): Super Bowl MVP + Chiefs lead-back hype is peak value. Durability and a receiving back in the room say timeshare.", "src": "FantasyPros"},
-    {"name": "Carnell Tate", "pos": "WR", "team": "TEN", "why": "FantasyPros (Aug 9): dynasty ECR WR14. Titans OL ranked 31st and he was never a 900-yard college WR. Sell the rookie-class premium.", "src": "FantasyPros"},
-    {"name": "Ricky Pearsall", "pos": "WR", "team": "SF", "why": "FantasyPros: season-ending PCL, age 27 on return. Clear sell for win-now clubs; the 49ers room already moved on to Stribling.", "src": "FantasyPros"},
-    {"name": "RJ Harvey", "pos": "RB", "team": "DEN", "why": "Draft Sharks + SI: Dobbins is back and Coleman just won Payton's trust. Not a locked lead back.", "src": "Draft Sharks, Sports Illustrated"},
-    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "DLF + SI: Parker Washington is now a foundational piece. ADP still treats BTJ like a locked high WR2.", "src": "DLF, Sports Illustrated"},
-    {"name": "Davante Adams", "pos": "WR", "team": "LAR", "why": "The Athletic: 33-year-old coming off a 14-TD outlier. If you roster him, cash to a contender before Week 1.", "src": "The Athletic"},
+    {"name": "Josh Jacobs", "pos": "RB", "team": "GB", "why": "FantasyPros: Commissioner's Exempt List, 28, nearly 2,000 career carries. FP would take a 2027 second.", "src": "FantasyPros"},
+    {"name": "Kyle Pitts", "pos": "TE", "team": "ATL", "why": "FantasyLife: the three-week spike was London-out volume. Take Likely or Strange plus a pick.", "src": "FantasyLife"},
+    {"name": "Cam Skattebo", "pos": "RB", "team": "NYG", "why": "FantasyLife: coming back from a bad injury, and Najee Harris is in the room. The one-to-two-year window is already leaking.", "src": "FantasyLife"},
+    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "RotoWire + RotoBaller: Parker Washington is the Jags WR1 now. BTJ is a WR2 or WR3 in this room.", "src": "RotoWire, RotoBaller"},
+    {"name": "Keenan Allen", "pos": "WR", "team": "IND", "why": "FantasyPros: 34, two DUI charges, Downs is the Colts WR1. Sell for a third.", "src": "FantasyPros"},
+    {"name": "Jonathon Brooks", "pos": "RB", "team": "CAR", "why": "RotoWire: Hubbard is listed RB1, knee tightness, a worse version of the Henderson backup problem.", "src": "RotoWire"},
+    {"name": "Cam Ward", "pos": "QB", "team": "TEN", "why": "RotoWire: Year 2 tape still shows the same timing issues. Titans weapons improved. The player has not.", "src": "RotoWire"},
+    {"name": "Travis Hunter", "pos": "WR", "team": "JAX", "why": "RotoBaller: camp snaps are mostly corner. Flip after a spike week for more than a late second.", "src": "RotoBaller"},
+    {"name": "MarShawn Lloyd", "pos": "RB", "team": "GB", "why": "RotoBaller: six NFL carries, KTC jumped to RB28. Sell the spike before Jacobs or Johnson eat it.", "src": "RotoBaller"},
+    {"name": "Tua Tagovailoa", "pos": "QB", "team": "ATL", "why": "RotoBaller: one-year deal in Atlanta, starter not named, 20:15 last year. Look for a real QB3 instead.", "src": "RotoBaller"},
 ]
 
 
@@ -1012,7 +1012,7 @@ FB_SEO = {
     ),
     "hot-n-cold.html": (
         "Dynasty Hot and Cold Board - Buys and Sells | Ball Keep",
-        "Late-August dynasty buys and sells from PlayerProfiler, FantasyPros, SI, and The Athletic, tied to The Keep ranks.",
+        "Ball Keep Hot 'n' Cold: Week 1 dynasty buys and sells from FantasyPros, FantasyLife, Footballguys, RotoWire, and RotoBaller, tied to The Keep ranks.",
         "img/logo.jpg",
     ),
     "trade.html": (
@@ -3013,7 +3013,7 @@ def main():
     hc_body = f"""
     <p class="kicker">Market Tape · {UPDATED}</p>
     <h1>BK Hot 'n' Cold</h1>
-    <p class="note">Rising names to Buy and aging / overpriced names to Sell, pulled from PlayerProfiler (Aug 7), FantasyPros dynasty trade columns (Aug 9 and August sell list), Sports Illustrated preseason risers (Aug 25), The Athletic dynasty sells (Aug 26), plus DLF, Sports Arena, and Draft Sharks camp notes.</p>
+    <p class="note">Week 1 tape. Rising names to Buy and aging or overpriced names to Sell, pulled from FantasyPros risers and fallers (Sep 8), FantasyLife buy/sells and handcuff targets (Sep 8-9), Footballguys buy-the-dip (Sep 9), RotoWire Week 1 movers (Sep 9), and RotoBaller market watch.</p>
     <div class="grid">
       <div>
         <h3 class="hc-hot">Hot: Buy</h3>
@@ -3025,11 +3025,12 @@ def main():
       </div>
     </div>
     {sources_panel([
-        ("PlayerProfiler", "https://www.playerprofiler.com/article/dynasty-trade-targets-2026-buy-low-sell-high-before-kickoff/", "Buy low / sell high, Aug 7."),
-        ("FantasyPros", "https://www.fantasypros.com/2026/08/14-players-to-sell-in-dynasty-leagues-2026-fantasy-football/", "Dynasty sells and trade-now notes, August."),
-        ("Sports Illustrated", "https://www.si.com/onsi/fantasy/rankings/parker-washington-headlines-dynasty-fantasy-football-risers-making-the-biggest-leap-in-2026", "Preseason risers, Aug 25."),
-        ("The Athletic", "https://www.nytimes.com/athletic/7538068/2026/08/26/fantasy-football-top-5-dynasty-sells-treveyon-henderson/", "Top dynasty sells, Aug 26."),
-        ("Draft Sharks", "https://www.draftsharks.com/dynasty-rankings/superflex", "Camp market notes."),
+        ("FantasyPros", "https://www.fantasypros.com/2026/09/6-dynasty-risers-fallers-2026-fantasy-football/", "Dynasty risers and fallers, Sep 8."),
+        ("FantasyLife", "https://www.fantasylife.com/articles/fantasy/dynasty-buy-sells-week-1-2026", "Week 1 buy/sells, Sep 8."),
+        ("FantasyLife", "https://www.fantasylife.com/articles/dynasty/dynasty-fantasy-football-trade-targets-ahead-of-week-1-buy-kaelo", "Handcuff trade targets, Sep 9."),
+        ("Footballguys", "https://www.footballguys.com/article/2026-dynasty-trading-post-buy-the-dip", "Buy the dip on injured and exempt names, Sep 9."),
+        ("RotoWire", "https://www.rotowire.com/football/article/dynasty-risers-and-fallers-week-1-133148", "Week 1 risers and fallers, Sep 9."),
+        ("RotoBaller", "https://www.rotoballer.com/dynasty-fantasy-football-risers-and-fallers-players-to-buy-sell-2026/1920801", "KTC market watch into Week 1."),
     ], heading="Boards in This Aggregate")}
     """
     write("hot-n-cold.html", board_page("Hot 'n' Cold", "hot-n-cold.html", hc_body))
