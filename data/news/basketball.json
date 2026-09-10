@@ -1,8 +1,194 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-10T18:28:16Z",
-  "fresh": 103,
+  "updated": "2026-09-10T19:22:59Z",
+  "fresh": 113,
   "stories": [
+    {
+      "id": "anthony-edwards-history-point-guards-82a7832c",
+      "slug": "anthony-edwards-history-point-guards-82a7832c",
+      "sport": "basketball",
+      "headline": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’",
+      "blurb": "Lakers coach JJ Redick on Luka Dončić’s first game vs.",
+      "summary": "Anthony Davis, Luka Doncic, LeBron James, Anthony Edwards and LaMelo Ball: Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’ - The Athletic nytimes.com Each point guard Edwards has played with has imparted wisdom. Aggregated from nytimes.com, SB Nation, NBA.com, FanSided.",
+      "category": "injury",
+      "published": "2025-02-02T08:00:00Z",
+      "updated": "2026-09-10T12:00:00Z",
+      "players": [
+        {
+          "key": "anthony davis",
+          "name": "Anthony Davis",
+          "slug": "anthony-davis",
+          "pos": "C",
+          "team": "DAL"
+        },
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
+        },
+        {
+          "key": "lebron james",
+          "name": "LeBron James",
+          "slug": "lebron-james",
+          "pos": "SF",
+          "team": "LAL"
+        },
+        {
+          "key": "anthony edwards",
+          "name": "Anthony Edwards",
+          "slug": "anthony-edwards",
+          "pos": "SG",
+          "team": "MIN"
+        },
+        {
+          "key": "lamelo ball",
+          "name": "LaMelo Ball",
+          "slug": "lamelo-ball",
+          "pos": "PG",
+          "team": "CHA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA: Anthony Edwards History of Point Guards",
+          "url": "https://sports.yahoo.com/articles/nba-anthony-edwards-history-point-120000049.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Each point guard Edwards has played with has imparted wisdom. What has he learned and what is next alongside LaMelo Ball?",
+          "published": "Thu, 10 Sep 2026 12:00:00 +0000"
+        },
+        {
+          "title": "Anthony Edwards Injury Update | Minnesota Timberwolves",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55amZPUGUwaU11eGZ1eGVVekh4c19ZZVhVR3BIMElEdlZ0dmN2c2dMQVlmemM3b3QzTGJxcTF6XzhRWm1iX0RtdHlBYnU0b2FlQlc0dmltbmhjTWVIaDJUM0tRZUQwazJPVUpYYm9R?oc=5",
+          "publisher": "NBA.com",
+          "kind": "article",
+          "snippet": "Anthony Edwards Injury Update | Minnesota Timberwolves NBA.com",
+          "published": "Sun, 03 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mavs, Timberwolves discussed Luka Dončić-Anthony Edwards trade. But Lakers fit is working",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaFFiazg5a25HX3k4eTU3NFd6R1RyaGNnZ3VSaDhoUG1zVktPN052TkpUZTFNcTNuTnRncXFPV1RISUIxbjJWRGpzVFR1RUp5MWtUWkZLdk9ld2s0UXNyV2VORjRwVm9kWTVWemJSYWQzYkVNNV8xdHlENkVBYkNEUjV1dUJSNUhGWDBPVTdlT3dvUUo3?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Mavs, Timberwolves discussed Luka Dončić-Anthony Edwards trade. But Lakers fit is working - The Athletic nytimes.com",
+          "published": "Fri, 28 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Anthony Davis on Luka Dončić trade: ‘I had no idea this was happening’",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUlg1d19mWS1IQlozOTdqSnhTWnZ1TmFKSjg5WnNvLURmM0gtRW04OGRnTjJkcjU2eHdJTXdhakFYNWtSa1BUTHlMUTdXOV9GeFBKQUlJR0ZoQzVhN0RuUmlKMldQbXRLd0VwNEs5bGw0SjhidnNUUTFGazJGTlQ0bVpqRjFNUlBiRlViY3Y2aHJpaXp1UWZNREpGQVNVaEpHUTlUQVBEVQ?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Anthony Davis on Luka Dončić trade: ‘I had no idea this was happening’ nytimes.com",
+          "published": "Wed, 08 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mavs’ Luka Dončić trade will never make sense, but dealing Anthony Davis turns a page",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVWl2ajltOGlVek9SQmtEWkp6bWJKQUdlcXZ5cGNBeUI1emJBMTFQZk1JMjFiRU5ndGJDRnRSSVk4WGk1cVEyblluTHNwTll3dEJ3cjdpZjkwNEhUNUcyc0M5ZlhBY3JIMWxkNGd4SGRxZGFkbVlHNVd0M2RPQ3hsZ2JtMDZ6Z1djQVJZbS1xQjdUM3kycjJZSEdFOS1WR2hqaDRUTw?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Mavs’ Luka Dončić trade will never make sense, but dealing Anthony Davis turns a page nytimes.com",
+          "published": "Thu, 05 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Anthony Davis injury conjures dark echoes of Luka Dončić",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNejFpNXBFOVRfT0c4S3F2YkI4WkhueG5xWGo5ZHppME9aVVE2OXhuemFuVVR3d3VpSmhpUDlXUUc5YzluMVNJaF94SUxfOUJ0MWZoMXRTU2hvRXpQUFNYWWY3OVM5ZWZELU9BMTcxSWZ4OFE2YXFITXlyaW84R2FEZ1pnNS1KeGxwNUJXY0FrOUJPLUwzVmRCNWtR?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Anthony Davis injury conjures dark echoes of Luka Dončić nytimes.com",
+          "published": "Fri, 07 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Anthony Davis traded from Mavericks to Wizards, capping Luka Dončić deal fallout: Sources",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOb19wVDBKTzVlN0o3aW8yTVFwUGZNeW5rWndZUUJTUlpucGdqVmtkUFdvbG9CNEtRRldCQXZSNnpRTWg3TnhLdHRTTk1WeWRwb2RSQnB0OFJJU2tVN203YTZWTGpPVmpidWJpYlpUNE1mNk1IeVVJMTd2Y0ZtN3hBNHFubGUwcVgtTG1HZVRTTHlGOUdFSWZ1dDhvVnlfS2lPWXJwZ0tR?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Anthony Davis traded from Mavericks to Wizards, capping Luka Dončić deal fallout: Sources - The Athletic nytimes.com",
+          "published": "Wed, 04 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Luka Dončić traded to Lakers from Mavericks for Anthony Davis in NBA blockbuster",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWlBkMlIteGl4MWRxOF8yQkdNMy1pa0V0ZnhVNFNrVXNwQmZ6THlHeDZZd2JWZHBUV203Z3hQUUdtYTFQY0xNX20yMXNBU1RjcFluQTJoQWQ4V1dnT2tYdk1ibk5nREk3bXFTWGNJci1uWXczQWJ3aVNmX3V3ckp6elhzamZqU0QxQWdkalBOUEQzWUtsLVlMUzJLdVFUVFJ6LUFF?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Luka Dončić traded to Lakers from Mavericks for Anthony Davis in NBA blockbuster nytimes.com",
+          "published": "Sun, 02 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Is there a soccer equivalent of the Luka Doncic-Anthony Davis trade?",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaG9LZEtaZ01VYkp1V3dlNjdOenlSTUtQNVlsMlV3cVoyM1Q3MUd0SDNzZzAySUphQTYtWThvRGptdE4wem9DZnZ2UXA1aDZleFJteG5IcVdDcUpnb09SaFg0VE9WNTVBSmpJUlVBSDdqVDNyUmpoc1k0Qm81dzBzNGxWSEE4ZzBXX1pxUEVySDdDeEd0S25zQWMzdnBBWFY4U0FZdTFBcS02eUpFZHN5NG1aZ1VJZ0FhaW1KSVY5NjVBOEE?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Is there a soccer equivalent of the Luka Doncic-Anthony Davis trade? nytimes.com",
+          "published": "Thu, 20 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Luka Dončić-Anthony Davis trade grades: How will Lakers, Mavericks, Jazz fare after blockbuster?",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVHpTSkk1T1lIN3hsQmtINldKR0hVQXV6Y3pGcUtWQXJQd3RGdkRnTS1iT3F2OHBtaWpfRWgyaTNNVlhkQnZyc3FFejJsWEo2UWwxM3B3TV92S2YyalhMZzZUVkN1dHpWNjF5ZEJOOG14SDFrUXBPVjFBR1E2eDh4Vi1BTFhCcmhJc1RfTVRnX082MEdvaEQwNW1sdEJWLWxLbnYtcnZGZ0Q1dHBW?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Luka Dončić-Anthony Davis trade grades: How will Lakers, Mavericks, Jazz fare after blockbuster? - The Athletic nytimes.com",
+          "published": "Thu, 06 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "LeBron James talks Luka Dončić-Anthony Davis trade: ‘I ain’t never seen this one’",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTVgwaklfZ29ZZjVibkUyVXphaFFXZWhKMkx5OEZiLVJhanhpMHlZZG5hVm5XRE5VUUFVUkNNQjBNQ2QtUkRiV1ZNTG9HSXVVT2FLQzdwUWNvenl6eHpTamk4Tkd6MEpGXzdCUWhNYVZuY2R1ZV9YM3cweHlKbVVuRmhJMXJuWTgtWTJDNXJfbzc3RUlpVHhEWmhabUZTQQ?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "LeBron James talks Luka Dončić-Anthony Davis trade: ‘I ain’t never seen this one’ nytimes.com",
+          "published": "Tue, 04 Mar 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Explain it in MLB terms: Lakers trade Anthony Davis to Mavericks for Luka Doncic",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWXlzYnUyazRadjVFdXZRWHppaExoS2J6TjVFQ2RaREJXNms3XzN2elhnYlhhVElLc1hDZEJJYXdheWJOSTlwaXJjbzc0eEN2U1JBcjk3QW95YmhVcUhpWkk2RmZScWdEMjNfQS1aZ0dSZFdyNnNSMFhvNnNtVG8zamdiUTRjZmdC?oc=5",
+          "publisher": "FanSided",
+          "kind": "article",
+          "snippet": "Explain it in MLB terms: Lakers trade Anthony Davis to Mavericks for Luka Doncic FanSided",
+          "published": "Sun, 02 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "The man who traded Luka Dončić: How Mavericks GM Nico Harrison operates",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOeWNEbkRwZW92OHhXRlladG93NXNmdmxrMVZlZWV4Mi15cjVLVkdYSV9ZbWw5Qkpsa3VZNzQ5eGdEcTBlZ29VTVhWby1yeXlpdUhUbjdZTE5qTHpack11T1BKdGc2Q1k3TFpNTXFod0FtdktqenFCb1dmR21ZYVpCYXRNOEwtaHZBSUpLeVZnRlBNN3BmMDFzMkhBSDVyRnlHWUJj?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "The man who traded Luka Dončić: How Mavericks GM Nico Harrison operates - The Athletic nytimes.com",
+          "published": "Tue, 11 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Nico Harrison fired as Mavericks’ GM, 9 months after Luka Dončić trade",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPN1ZDOHEtRGxxUGE1SEEzRFZ0RGptQ0FtaHJ6clhWcUV6UlBOdVVELUxaN3pva2JTdzR5dEY5VFRuSDBGNGVodjYzWlhmUnlGVGs2WFpMekJUM3BoQXJBdk4tWlZ4MnpTeV9NcVE3VUR2b09US1Ixc3pHckxEeWlXbFY3RkVBdk1NMm1aYkh0TQ?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Nico Harrison fired as Mavericks’ GM, 9 months after Luka Dončić trade - The Athletic nytimes.com",
+          "published": "Tue, 11 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Luka Dončić comments on Nico Harrison firing, ‘focused’ on Lakers",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUlZRQTBwaGpiV2lhUU0zYllDanVyY29veGI5WmtETmNxZnNNV2RiRHlkOFdoLWlYbkxDSEx3Rl81MkRqbnctMnNWdnMwZzJkQWwzeWI2emRiNUhOQ1BnUVItNkl5SURtUG1DRERuUDl4VzRndHZIcWYxdEE5WEpGNno1REhaLXF0Z1pmWTZPaXQwb3JldmVNdmNEVFVsamVodjhF?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Luka Dončić comments on Nico Harrison firing, ‘focused’ on Lakers nytimes.com",
+          "published": "Thu, 13 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Nico Harrison got fired for trading Luka Dončić, but he didn’t make that call by himself",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLTktX2xfcFl3djJqLXFidy16S0o4bGhTOHBQZzhYdF9IcjFudTNwTjAzeW5zdWFIYkNMTm05S3piRmE0LUVzZVpScHNESTJmazI0TVNRYVdjaDNNNHNfQkt4SS16XzRHenQ1eTZZSjQ2eVFhZHNTUzF3d0N1NTlnMVBqWW1GalVXbWxQdlkxbldBQXBZZi15aVJnb2owZw?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Nico Harrison got fired for trading Luka Dončić, but he didn’t make that call by himself - The Athletic nytimes.com",
+          "published": "Wed, 12 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRUtrbFpqM201Tm9LU3pwRVBaaVlrSktuQXFQc1B1My1IM3RoOEFRSlo5aXVKVkJXRjVWUVhkbElnbHFDWmRzcDZGWTRmTUg0Z2hFR3NzMDVvXzNaSTAzb1Ffd2xQYXFJTzViYTRlY1BlTkZ3YVgydTh5T2NfTTh0TFZhRlZ6ejRQU1FlWjdyamVPWFBBc20zWm9WT1M0TTQ?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’ - The Athletic nytimes.com",
+          "published": "Wed, 26 Feb 2025 08:00:00 GMT"
+        }
+      ]
+    },
     {
       "id": "clippers-finalizing-trade-sends-kawhi-leonard-raptors-blockbuster-ed7651c0",
       "slug": "clippers-finalizing-trade-sends-kawhi-leonard-raptors-blockbuster-ed7651c0",
@@ -612,6 +798,68 @@
           "kind": "article",
           "snippet": "Would Jalen Duren really take the risk of leaving generational wealth on the table in this situation?",
           "published": "Thu, 10 Sep 2026 17:15:41 +0000"
+        }
+      ]
+    },
+    {
+      "id": "trump-calls-luka-don-i-trade-one-worst-06bae406",
+      "slug": "trump-calls-luka-don-i-trade-one-worst-06bae406",
+      "sport": "basketball",
+      "headline": "Trump calls Luka Dončić trade one of the worst in sports history, suggests Mavericks ‘redo’ deal",
+      "blurb": "Trump calls Luka Dončić trade one of the worst in sports history, suggests Mavericks ‘redo’ deal nytimes.com",
+      "summary": "Max Christie: Trump calls Luka Dončić trade one of the worst in sports history, suggests Mavericks ‘redo’ deal nytimes.com Post-Luka Dončić trade, Max Christie making mark for Mavericks nytimes.com Where Lakers and Mavericks stand 10 months after Luka Dončić blockbuster trade nytimes.com Board reading of nytimes.com.",
+      "category": "trade",
+      "published": "2025-04-18T07:00:00Z",
+      "updated": "2026-09-10T15:58:28Z",
+      "players": [
+        {
+          "key": "max christie",
+          "name": "Max Christie",
+          "slug": "max-christie",
+          "pos": "SG",
+          "team": "DAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Trump calls Luka Dončić trade one of the worst in sports history, suggests Mavericks ‘redo’ deal",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSGZXdFUwVnZOZE05TDNCbEpsa3NaMVhUZzRuZ2w4aTBDZi1KYlE1amJNVllrbGZiUlBZN09LTEFXdTFaU1FfaXN2MTdGZGk5VEJfNVF1andqTkFxaFB0MWpKNHNBd0Q3NmRBVTQ0ek1LYUVFUUtRdUhHU2xKa1lmSHJ5UExaWW9aOC00WnlRV3pOWHlBdmowVnZQZk1MVnpIQnkxbzZmaw?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Trump calls Luka Dončić trade one of the worst in sports history, suggests Mavericks ‘redo’ deal nytimes.com",
+          "published": "Thu, 10 Sep 2026 15:58:28 GMT"
+        },
+        {
+          "title": "Post-Luka Dončić trade, Max Christie making mark for Mavericks",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVTFTNEJ1WVZYQlUzM29VeGdtSm5pQndkSVZZVWo4WUZuSUF3MFNaMTlZa0VBbFVVY1EteWdIeVFodjdSMnNxWm8waVJHU0pxMVNHMGpJbWh6ZnEtd284eGR0d3ZTSi1yN1lBbUlvakFuN0NWaThqTlJUNEpuNEdybUtjbFFWeTRwQ0hqQmQ4Qnc0X0JCMDg2WnpKaVdvcVZmME9Sdi13?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Post-Luka Dončić trade, Max Christie making mark for Mavericks nytimes.com",
+          "published": "Tue, 20 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Where Lakers and Mavericks stand 10 months after Luka Dončić blockbuster trade",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQU0RVNG5pb2xlaktjRHhwV0tNTXp3eTJNNlZnMmRVbVRCM3VSeGUzeC0tUzdnXzFDWlVDYjM1VF8wQkZleU43TWhDQ01WRU9oTUxUa0pvZmZQSFpvYjB2VDY4U2dTd2VkNTJpQUZBV2I4cFdVZVE0MXR4VTB5RnQwY21FcGdOd0xZZmUtN1NqZTdkMmgwSV8zODZueElNYlJGVDNjbTVwLWVmQXJL?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Where Lakers and Mavericks stand 10 months after Luka Dončić blockbuster trade nytimes.com",
+          "published": "Fri, 28 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Hall of Famer Don Nelson roasts Mavericks in ‘protest’ over Luka Dončić trade",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbHYtejdZS29OZkhTb1U2bzhZYmdLVVA0ZzdEcEtFOVpMZld3aC1NYUFvM1hHSVBYeWxPaGJHM294UUI0SV9oaGVwX2JLdEloaFBrLVdHdkxsVkR1RzRfZDJmWFBEb0ljMW5GdWdTck0tNXZLd0c1S0g4TGlIQ0htVTQ0VFhWMkEtNU9MMkFiTTlPLUE?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Hall of Famer Don Nelson roasts Mavericks in ‘protest’ over Luka Dončić trade - The Athletic nytimes.com",
+          "published": "Sun, 08 Jun 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Hurt by Mavericks trade, Luka Dončić is now feeling the love in L.A. and beyond",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcUNDU1FDbXJWcENQVlRoZzQ2Z0hSOXIzaThvemtoZzVCUWlUVE1BbzNPcGpZMkJPV056dEJieVVFX3M1TkxGLVBRWVF0VW5Say1OZlJzSW9SLVA2SHM4a0V6SDh6UGNDSVRTQXhOUDhINXVNODNJLWdDU01lblA5ZnJFMkVTZGZPM2p5SWYweThzM3RDUTladg?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Hurt by Mavericks trade, Luka Dončić is now feeling the love in L.A. and beyond nytimes.com",
+          "published": "Fri, 18 Apr 2025 07:00:00 GMT"
         }
       ]
     },
@@ -1300,43 +1548,6 @@
       ]
     },
     {
-      "id": "anthony-edwards-history-point-guards-82a7832c",
-      "slug": "anthony-edwards-history-point-guards-82a7832c",
-      "sport": "basketball",
-      "headline": "NBA: Anthony Edwards History of Point Guards",
-      "blurb": "Each point guard Edwards has played with has imparted wisdom.",
-      "summary": "Anthony Edwards and LaMelo Ball: Each point guard Edwards has played with has imparted wisdom. What has he learned and what is next alongside LaMelo Ball? Board reading of SB Nation.",
-      "category": "wire",
-      "published": "2026-09-10T12:00:00Z",
-      "updated": "2026-09-10T12:00:00Z",
-      "players": [
-        {
-          "key": "anthony edwards",
-          "name": "Anthony Edwards",
-          "slug": "anthony-edwards",
-          "pos": "SG",
-          "team": "MIN"
-        },
-        {
-          "key": "lamelo ball",
-          "name": "LaMelo Ball",
-          "slug": "lamelo-ball",
-          "pos": "PG",
-          "team": "CHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA: Anthony Edwards History of Point Guards",
-          "url": "https://sports.yahoo.com/articles/nba-anthony-edwards-history-point-120000049.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Each point guard Edwards has played with has imparted wisdom. What has he learned and what is next alongside LaMelo Ball?",
-          "published": "Thu, 10 Sep 2026 12:00:00 +0000"
-        }
-      ]
-    },
-    {
       "id": "kyrie-irving-injury-ramping-up-toward-return-450af2d5",
       "slug": "kyrie-irving-injury-ramping-up-toward-return-450af2d5",
       "sport": "basketball",
@@ -1427,6 +1638,44 @@
       ]
     },
     {
+      "id": "trade-rumors-celtics-stance-bulls-idea-paolo-banchero-ec948519",
+      "slug": "trade-rumors-celtics-stance-bulls-idea-paolo-banchero-ec948519",
+      "sport": "basketball",
+      "headline": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
+      "blurb": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
+      "summary": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? Board reading of heavy.com.",
+      "category": "trade",
+      "published": "2026-09-09T13:06:11Z",
+      "updated": "2026-09-09T22:26:40Z",
+      "players": [
+        {
+          "key": "paolo banchero",
+          "name": "Paolo Banchero",
+          "slug": "paolo-banchero",
+          "pos": "PF",
+          "team": "ORL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObzRaOGM4UnJEUnZocGFEcWNjVzk2VUNRajFIdG9sTVp0dWhQZkp3RzJDcmM2MlFkUndya2U3aWdoYUFTYnhOeG5aOUVWSVZ4bV8wU2dENTNrTjAtMEk3SnlsZG03UTJsUDA2ZTZUVHNYWE53OVFMZkxYaGlndFFYVDV2c0NtLXJXcldOWQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? heavy.com",
+          "published": "Wed, 09 Sep 2026 13:06:11 GMT"
+        },
+        {
+          "title": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVjBlUllEOElWNHctek1WUlVFaTc0XzlCOEZlbHNqQWswRVlaMXZrSFZrZWRGcDBjVUplbDRDWjk2TGd3cll6Mk9MNGllOU1EcXF2cjZrVU5SdXI2N2VENUx0WlZ2aVFOdExGNnVDaUppWDhrSHo0SzZxZDVxUFhueXBvUzVYZ1k?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? heavy.com",
+          "published": "Wed, 09 Sep 2026 22:26:40 GMT"
+        }
+      ]
+    },
+    {
       "id": "former-star-proposes-wild-stephen-curry-trade-idea-09d4d065",
       "slug": "former-star-proposes-wild-stephen-curry-trade-idea-09d4d065",
       "sport": "basketball",
@@ -1500,44 +1749,6 @@
           "kind": "article",
           "snippet": "Warriors predicted to trade Steph Curry to Spurs for $285M complimentary duo in monster deal Yahoo Sports",
           "published": "Tue, 08 Sep 2026 18:46:06 GMT"
-        }
-      ]
-    },
-    {
-      "id": "trade-rumors-celtics-stance-bulls-idea-paolo-banchero-ec948519",
-      "slug": "trade-rumors-celtics-stance-bulls-idea-paolo-banchero-ec948519",
-      "sport": "basketball",
-      "headline": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
-      "blurb": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
-      "summary": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? Board reading of heavy.com.",
-      "category": "trade",
-      "published": "2026-09-09T13:06:11Z",
-      "updated": "2026-09-09T22:26:40Z",
-      "players": [
-        {
-          "key": "paolo banchero",
-          "name": "Paolo Banchero",
-          "slug": "paolo-banchero",
-          "pos": "PF",
-          "team": "ORL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObzRaOGM4UnJEUnZocGFEcWNjVzk2VUNRajFIdG9sTVp0dWhQZkp3RzJDcmM2MlFkUndya2U3aWdoYUFTYnhOeG5aOUVWSVZ4bV8wU2dENTNrTjAtMEk3SnlsZG03UTJsUDA2ZTZUVHNYWE53OVFMZkxYaGlndFFYVDV2c0NtLXJXcldOWQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? heavy.com",
-          "published": "Wed, 09 Sep 2026 13:06:11 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next?",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVjBlUllEOElWNHctek1WUlVFaTc0XzlCOEZlbHNqQWswRVlaMXZrSFZrZWRGcDBjVUplbDRDWjk2TGd3cll6Mk9MNGllOU1EcXF2cjZrVU5SdXI2N2VENUx0WlZ2aVFOdExGNnVDaUppWDhrSHo0SzZxZDVxUFhueXBvUzVYZ1k?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Celtics’ Stance, Bulls Idea & Paolo Banchero Next? heavy.com",
-          "published": "Wed, 09 Sep 2026 22:26:40 GMT"
         }
       ]
     },
@@ -1656,6 +1867,44 @@
       ]
     },
     {
+      "id": "taj-gibson-waived-pelicans-willguillory-e26bd4e7",
+      "slug": "taj-gibson-waived-pelicans-willguillory-e26bd4e7",
+      "sport": "basketball",
+      "headline": "Pelicans waive Taj Gibson, 41, one day after trade",
+      "blurb": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media",
+      "summary": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media Taj Gibson to be waived by the Pelicans, per @WillGuillory. Aggregated from Field Level Media, x.com.",
+      "category": "trade",
+      "published": "2026-09-08T14:14:59Z",
+      "updated": "2026-09-09T18:10:36Z",
+      "players": [
+        {
+          "key": "taj gibson",
+          "name": "Taj Gibson",
+          "slug": "taj-gibson",
+          "pos": "C",
+          "team": "CHA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Taj Gibson to be waived by the Pelicans, per @WillGuillory.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40QU9XaU9wS1Q5b0hXSFNHV2hONlhFRXFha25RNXBzQVhCX0ZfSmpHZ2pyamY4MGtsbjlNenY5djVnbktvRVk4Ny1tM2ZkUnFMcGhHai1iWERaYkVjYTM1SHRB?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Taj Gibson to be waived by the Pelicans, per @WillGuillory. x.com",
+          "published": "Tue, 08 Sep 2026 14:14:59 GMT"
+        },
+        {
+          "title": "Pelicans waive Taj Gibson, 41, one day after trade",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeEJUR0JpazAzY2doeUZJVlhKNXJmYVFtZHpVV0I1ZFlKeU82QXMtSElRR1h5QmZoXzg3Z29nbFVHdE1JR0lMYVkxRFFDdG9jRHlqVHBTMFhRdEQ0bXEyNEtSWm1idmZFMjAzcHU0S0JKMFZ3eFRkZ2x2aXdNMS0wcXExdGRfWGo1?oc=5",
+          "publisher": "Field Level Media",
+          "kind": "article",
+          "snippet": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media",
+          "published": "Wed, 09 Sep 2026 18:10:36 GMT"
+        }
+      ]
+    },
+    {
       "id": "chicago-bulls-projected-15-man-roster-2026-27-a29baa88",
       "slug": "chicago-bulls-projected-15-man-roster-2026-27-a29baa88",
       "sport": "basketball",
@@ -1766,44 +2015,6 @@
       ]
     },
     {
-      "id": "taj-gibson-waived-pelicans-willguillory-e26bd4e7",
-      "slug": "taj-gibson-waived-pelicans-willguillory-e26bd4e7",
-      "sport": "basketball",
-      "headline": "Pelicans waive Taj Gibson, 41, one day after trade",
-      "blurb": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media",
-      "summary": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media Taj Gibson to be waived by the Pelicans, per @WillGuillory. Aggregated from Field Level Media, x.com.",
-      "category": "trade",
-      "published": "2026-09-08T14:14:59Z",
-      "updated": "2026-09-09T18:10:36Z",
-      "players": [
-        {
-          "key": "taj gibson",
-          "name": "Taj Gibson",
-          "slug": "taj-gibson",
-          "pos": "C",
-          "team": "CHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Taj Gibson to be waived by the Pelicans, per @WillGuillory.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40QU9XaU9wS1Q5b0hXSFNHV2hONlhFRXFha25RNXBzQVhCX0ZfSmpHZ2pyamY4MGtsbjlNenY5djVnbktvRVk4Ny1tM2ZkUnFMcGhHai1iWERaYkVjYTM1SHRB?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Taj Gibson to be waived by the Pelicans, per @WillGuillory. x.com",
-          "published": "Tue, 08 Sep 2026 14:14:59 GMT"
-        },
-        {
-          "title": "Pelicans waive Taj Gibson, 41, one day after trade",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeEJUR0JpazAzY2doeUZJVlhKNXJmYVFtZHpVV0I1ZFlKeU82QXMtSElRR1h5QmZoXzg3Z29nbFVHdE1JR0lMYVkxRFFDdG9jRHlqVHBTMFhRdEQ0bXEyNEtSWm1idmZFMjAzcHU0S0JKMFZ3eFRkZ2x2aXdNMS0wcXExdGRfWGo1?oc=5",
-          "publisher": "Field Level Media",
-          "kind": "article",
-          "snippet": "Pelicans waive Taj Gibson, 41, one day after trade Field Level Media",
-          "published": "Wed, 09 Sep 2026 18:10:36 GMT"
-        }
-      ]
-    },
-    {
       "id": "how-major-impacts-49ers-final-49ers-rams-sam-49ca4a2b",
       "slug": "how-major-impacts-49ers-final-49ers-rams-sam-49ca4a2b",
       "sport": "basketball",
@@ -1844,36 +2055,6 @@
           "kind": "video",
           "snippet": "🚨Patriots Get BAD NEWS On AJ Brown Ankle Injury After Loss To Seattle Seahawks YouTube",
           "published": "Thu, 10 Sep 2026 15:43:21 GMT"
-        }
-      ]
-    },
-    {
-      "id": "domantas-sabonis-wants-sacramento-5-trade-destinations-training-f8dc10dd",
-      "slug": "domantas-sabonis-wants-sacramento-5-trade-destinations-training-f8dc10dd",
-      "sport": "basketball",
-      "headline": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics",
-      "blurb": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics Sportsnaut",
-      "summary": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics Sportsnaut Board reading of Sportsnaut.",
-      "category": "trade",
-      "published": "2026-09-09T18:57:47Z",
-      "updated": "2026-09-09T18:57:47Z",
-      "players": [
-        {
-          "key": "domantas sabonis",
-          "name": "Domantas Sabonis",
-          "slug": "domantas-sabonis",
-          "pos": "C",
-          "team": "SAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSEFXc0hqbTFPQUI3LUJRSm9pZmFrVVV4Ml9KSW43Y1FrenpoUmRXdkpxMjBoMWt0bURmZ1VFMG43MURsaDMtSTNqYkZnOEFDM2J2aGRoOEJGNGRnRVk1TXpSdjBOek9HU3BSUktfQnBMWnB5VG5zZ3NlX3B5eW9YamdDOFpXZUdwd0ZYcDRQakctQQ?oc=5",
-          "publisher": "Sportsnaut",
-          "kind": "article",
-          "snippet": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics Sportsnaut",
-          "published": "Wed, 09 Sep 2026 18:57:47 GMT"
         }
       ]
     },
@@ -7165,17 +7346,31 @@
       "slug": "jalen-williams-injury-history-19412fe1",
       "sport": "basketball",
       "headline": "Spurs-Thunder injury updates: Dylan Harper, De'Aaron Fox cleared to play, Jalen Williams ruled out for Game 3",
-      "blurb": "Dylan Harper, De’Aaron Fox will both play in Spurs-Thunder Game 3; Jalen Williams out - The Athletic The New York Times",
-      "summary": "Dylan Harper, De’Aaron Fox will both play in Spurs-Thunder Game 3; Jalen Williams out - The Athletic The New York Times Caleb Williams is already the GREATEST QB in Chicago Bears HISTORY! Jalen Williams Injury History sportskeeda.com Aggregated from The New York Times, youtube.com, sportskeeda.com, si.com, heavy.com and 24 more.",
+      "blurb": "Thunder provide injury updates for Shai Gilgeous-Alexander, Jalen Williams, Ajay Mitchell sports.yahoo.com",
+      "summary": "Thunder provide injury updates for Shai Gilgeous-Alexander, Jalen Williams, Ajay Mitchell sports.yahoo.com Shai Gilgeous-Alexander not on injury report, set to return to Thunder Friday vs. Shai Gilgeous-Alexander, Thunder pull away to take Game 2 against Suns: Takeaways nytimes.com Aggregated from sports.yahoo.com, nbcsports.com, nytimes.com, youtube.com, sportskeeda.com and 25 more.",
       "category": "injury",
       "published": "2025-04-05T07:00:00Z",
       "updated": "2026-09-02T16:38:18Z",
       "players": [
         {
+          "key": "shai gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "slug": "shai-gilgeous-alexander",
+          "pos": "PG",
+          "team": "OKC"
+        },
+        {
           "key": "jalen williams",
           "name": "Jalen Williams",
           "slug": "jalen-williams",
           "pos": "SF",
+          "team": "OKC"
+        },
+        {
+          "key": "ajay mitchell",
+          "name": "Ajay Mitchell",
+          "slug": "ajay-mitchell",
+          "pos": "PG",
           "team": "OKC"
         },
         {
@@ -7191,13 +7386,6 @@
           "slug": "de-aaron-fox",
           "pos": "PG",
           "team": "SAS"
-        },
-        {
-          "key": "ajay mitchell",
-          "name": "Ajay Mitchell",
-          "slug": "ajay-mitchell",
-          "pos": "PG",
-          "team": "OKC"
         },
         {
           "key": "franz wagner",
@@ -7296,13 +7484,6 @@
           "slug": "mark-williams",
           "pos": "C",
           "team": "CHA"
-        },
-        {
-          "key": "shai gilgeous-alexander",
-          "name": "Shai Gilgeous-Alexander",
-          "slug": "shai-gilgeous-alexander",
-          "pos": "PG",
-          "team": "OKC"
         },
         {
           "key": "alex caruso",
@@ -8435,6 +8616,38 @@
           "kind": "article",
           "snippet": "Final Injury Report for Thunder-Spurs WCF Game 4: Will Jalen Williams, De'Aaron Fox Play? Yahoo Sports",
           "published": "Sun, 24 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Thunder provide injury updates for Shai Gilgeous-Alexander, Jalen Williams, Ajay Mitchell",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUXRpMFJOZUktaWI2WS1Fei1sU0dGVkNUZWNOSDVueTFjYWoxVy1nMkV0RkgyYkRVX2lLRGl5RU5zWFlBQ3BYY2lIbmZHQXVud0hlWHNZMWFmN0pseHFSbjd1VDJsRHpHYmdoVkc1eVltXzhYaGFvTXRmUjEzdGlDWmpTaGtvdkNaaGhJVkl3?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Thunder provide injury updates for Shai Gilgeous-Alexander, Jalen Williams, Ajay Mitchell sports.yahoo.com",
+          "published": "Thu, 19 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Shai Gilgeous-Alexander not on injury report, set to return to Thunder Friday vs. Nuggets",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTnU4aTJtTmF1U0hYTXBXY29JejB2YkJhUG9RSWl6TFBneWVrQWRsVzZITGlVNlY3LWxxQTJJVVd4UnJfZlZ3YVNPak1hR2dweE5XWk44aGhvM295dTVOVjRrYUxzZXlxOHBkTHFFZkZ5WTRaY1llVTBGT0lBTmtxbWcxVEZBM2lPd055eC03OTU4cmNKd0lZX29BUnhZWHZweWN5WVBLUGljMktFNkxpX1dneGFmbFMxN2JqNV9MWQ?oc=5",
+          "publisher": "nbcsports.com",
+          "kind": "article",
+          "snippet": "Shai Gilgeous-Alexander not on injury report, set to return to Thunder Friday vs. Nuggets nbcsports.com",
+          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Shai Gilgeous-Alexander, Thunder pull away to take Game 2 against Suns: Takeaways",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSkJBSm9VLVpiT1dmdGplYlp5SmRvWndrcnRsdzd0cjNHTVhja1ZHLTNMbE1MU3QzdDkwQ2JTUmlxemE5eFBrX29VT3hydXRhbGNVLXZrZ0k4eEtJUWN1VGtrQnN1dDIzX0dhZDJyWl9NVm1yVTM5RjQ3b1hNT3ZGanRIZF90NUtqZUt4UW5Kbw?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Shai Gilgeous-Alexander, Thunder pull away to take Game 2 against Suns: Takeaways nytimes.com",
+          "published": "Thu, 23 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Shai Gilgeous-Alexander, Thunder agree to 4-year supermax extension worth estimated $285 million: Sources",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQX2lncFBnREFGUzVQMml1UDMzMlJRYVg4djE0ZDItUUpoeHRidFRoWmhxS3F0dzBVZnRUUlRjLW1DS1dUQnJVOXhIbkRhMDBELUhzVUdwTDBkbFI4T2Z3ZHJkMUJaWTNENi1SbFhPczhwOWpxYWRBa0llbkNUMHl6MVAtZzJ3M3p4RnkxRUtlbWJ4Rk5CTDhGSkRpVU85cjBiQ0hTLW1HTDV5azcyT0U5T1Fn?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Shai Gilgeous-Alexander, Thunder agree to 4-year supermax extension worth estimated $285 million: Sources nytimes.com",
+          "published": "Tue, 01 Jul 2025 07:00:00 GMT"
         }
       ]
     },
@@ -13746,8 +13959,8 @@
       "slug": "shai-gilgeous-alexander-playing-tonight-injury-betting-impact-ab9e54eb",
       "sport": "basketball",
       "headline": "Shai Gilgeous-Alexander sends scary message for Spurs and Victor Wembanyama after Thunder win in Game 5 of ...",
-      "blurb": "Shai Gilgeous-Alexander delivers again as Thunder top Suns: Game 3 takeaways The New York Times",
-      "summary": "Shai Gilgeous-Alexander delivers again as Thunder top Suns: Game 3 takeaways The New York Times Shai Gilgeous-Alexander drops 55 as Thunder edge Pacers in double OT in NBA Finals rematch The New York Times Is Shai Gilgeous-Alexander Playing Tonight? Aggregated from The New York Times, Sports Illustrated, bolavip.com, sportingnews.com, Tulsa World and 3 more.",
+      "blurb": "Spurs fan holds up fake Oscar after Shai Gilgeous-Alexander falls right at her feet nytimes.com",
+      "summary": "Spurs fan holds up fake Oscar after Shai Gilgeous-Alexander falls right at her feet nytimes.com Shai Gilgeous-Alexander sidelined until after NBA All-Star break with abdominal injury The New York Times Fantasy Basketball Impact: Shai Gilgeous-Alexander Injury Update Sports Illustrated Aggregated from nytimes.com, The New York Times, Sports Illustrated, sportingnews.com, bolavip.com and 4 more.",
       "category": "injury",
       "published": "2023-02-26T08:00:00Z",
       "updated": "2026-07-27T01:03:38Z",
@@ -13760,18 +13973,18 @@
           "team": "OKC"
         },
         {
-          "key": "paul george",
-          "name": "Paul George",
-          "slug": "paul-george",
-          "pos": "SF",
-          "team": "PHI"
-        },
-        {
           "key": "victor wembanyama",
           "name": "Victor Wembanyama",
           "slug": "victor-wembanyama",
           "pos": "C",
           "team": "SAS"
+        },
+        {
+          "key": "paul george",
+          "name": "Paul George",
+          "slug": "paul-george",
+          "pos": "SF",
+          "team": "PHI"
         },
         {
           "key": "chet holmgren",
@@ -13988,36 +14201,52 @@
           "kind": "article",
           "snippet": "How long is Shai Gilgeous-Alexander out? Knee injury timeline, return date, latest updates on Thunder star sportingnews.com",
           "published": "Thu, 02 Nov 2023 07:00:00 GMT"
+        },
+        {
+          "title": "All-NBA teams headlined by Shai Gilgeous-Alexander, Victor Wembanyama, Nikola Jokić",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVUs3a0tlUHdxQnUyYk0tMGJLdDIyY2pXTVhfcFFlMHA5UHhZSDZ4XzZJUjNBY0R1SkFEN013bm9Ta29rNXBuWmExcFN4MVB1ckVFUkNoTzFjS0xsb1VNcnhIcElodEFTbm96Y2lfV3BDWkVSXzc5ZEphZm9MQjhJOXE2eEQyaV9RXzA5ZzV4MA?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "All-NBA teams headlined by Shai Gilgeous-Alexander, Victor Wembanyama, Nikola Jokić - The Athletic nytimes.com",
+          "published": "Sun, 24 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Spurs fan holds up fake Oscar after Shai Gilgeous-Alexander falls right at her feet",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPczBqSGh2RzJ1SlM3YU4tcXVXRTNoU1VJNE04cXRiV21uNkQ5ZXEybEg5a3BUU0d2aGRnby1TdDZLaUpNMzcycWJGUTI0RWpqYnlPamJtMmNGWGxZeUdvYzhmV3prcHJ4M3BnNFZMVXQ3c21Mc3VCbmRhT0tyLVo3aTNXdk1hbHJQYU5OdE9NV0lKMnlmZU1CQWlpendOY196aE1n?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Spurs fan holds up fake Oscar after Shai Gilgeous-Alexander falls right at her feet nytimes.com",
+          "published": "Wed, 27 May 2026 07:00:00 GMT"
         }
       ]
     },
     {
-      "id": "star-giannis-antetokounmpo-picks-up-13-5-million-7e4f76e0",
-      "slug": "star-giannis-antetokounmpo-picks-up-13-5-million-7e4f76e0",
+      "id": "domantas-sabonis-wants-sacramento-5-trade-destinations-training-f8dc10dd",
+      "slug": "domantas-sabonis-wants-sacramento-5-trade-destinations-training-f8dc10dd",
       "sport": "basketball",
-      "headline": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade",
-      "blurb": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade Realtor.com",
-      "summary": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade Realtor.com Board reading of Realtor.com.",
+      "headline": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics",
+      "blurb": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics Sportsnaut",
+      "summary": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics Sportsnaut Board reading of Sportsnaut.",
       "category": "trade",
-      "published": "2026-09-09T17:19:23Z",
-      "updated": "2026-09-09T17:19:23Z",
+      "published": "2026-09-09T18:57:47Z",
+      "updated": "2026-09-09T18:57:47Z",
       "players": [
         {
-          "key": "giannis antetokounmpo",
-          "name": "Giannis Antetokounmpo",
-          "slug": "giannis-antetokounmpo",
-          "pos": "PF",
-          "team": "MIL"
+          "key": "domantas sabonis",
+          "name": "Domantas Sabonis",
+          "slug": "domantas-sabonis",
+          "pos": "C",
+          "team": "SAC"
         }
       ],
       "sources": [
         {
-          "title": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUXhuOW00WEkxU3dNbE9VTjJqWnVkODFzb1RMOTNTOXhFNHkyS0tUdEFhTi1mS3Jsam4yaklyUmRFWlRndTFWWExVa1NnWmdiajNJQTBqM0tXM2hKbUVTUUlZZ3ZvMTJENS1abm51UWNhWmxoU1Fsei1kV0pRdkFZdjctYlJqUWpFOFNjQ0NJUzFhbTNsazRLZENwRHB2Q1V5VVZQTUdESENJdw?oc=5",
-          "publisher": "Realtor.com",
+          "title": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSEFXc0hqbTFPQUI3LUJRSm9pZmFrVVV4Ml9KSW43Y1FrenpoUmRXdkpxMjBoMWt0bURmZ1VFMG43MURsaDMtSTNqYkZnOEFDM2J2aGRoOEJGNGRnRVk1TXpSdjBOek9HU3BSUktfQnBMWnB5VG5zZ3NlX3B5eW9YamdDOFpXZUdwd0ZYcDRQakctQQ?oc=5",
+          "publisher": "Sportsnaut",
           "kind": "article",
-          "snippet": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade Realtor.com",
-          "published": "Wed, 09 Sep 2026 17:19:23 GMT"
+          "snippet": "'Domantas Sabonis Wants Out of Sacramento': 5 Trade Destinations Before Training Camp, Including the Boston Celtics Sportsnaut",
+          "published": "Wed, 09 Sep 2026 18:57:47 GMT"
         }
       ]
     },
@@ -14480,32 +14709,32 @@
       ]
     },
     {
-      "id": "history-suggests-james-harden-s-new-contract-age-c2ffea07",
-      "slug": "history-suggests-james-harden-s-new-contract-age-c2ffea07",
+      "id": "star-giannis-antetokounmpo-picks-up-13-5-million-7e4f76e0",
+      "slug": "star-giannis-antetokounmpo-picks-up-13-5-million-7e4f76e0",
       "sport": "basketball",
-      "headline": "History suggests that James Harden’s new contract will age poorly",
-      "blurb": "Harden still played at a high level last season.",
-      "summary": "James Harden: Harden still played at a high level last season. How long that can continue is anyone’s guess. Board reading of SB Nation.",
-      "category": "roster",
-      "published": "2026-09-09T17:00:00Z",
-      "updated": "2026-09-09T17:00:00Z",
+      "headline": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade",
+      "blurb": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade Realtor.com",
+      "summary": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade Realtor.com Board reading of Realtor.com.",
+      "category": "trade",
+      "published": "2026-09-09T17:19:23Z",
+      "updated": "2026-09-09T17:19:23Z",
       "players": [
         {
-          "key": "james harden",
-          "name": "James Harden",
-          "slug": "james-harden",
-          "pos": "PG",
-          "team": "LAC"
+          "key": "giannis antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "slug": "giannis-antetokounmpo",
+          "pos": "PF",
+          "team": "MIL"
         }
       ],
       "sources": [
         {
-          "title": "History suggests that James Harden’s new contract will age poorly",
-          "url": "https://sports.yahoo.com/articles/history-suggests-james-harden-contract-170000984.html",
-          "publisher": "SB Nation",
+          "title": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUXhuOW00WEkxU3dNbE9VTjJqWnVkODFzb1RMOTNTOXhFNHkyS0tUdEFhTi1mS3Jsam4yaklyUmRFWlRndTFWWExVa1NnWmdiajNJQTBqM0tXM2hKbUVTUUlZZ3ZvMTJENS1abm51UWNhWmxoU1Fsei1kV0pRdkFZdjctYlJqUWpFOFNjQ0NJUzFhbTNsazRLZENwRHB2Q1V5VVZQTUdESENJdw?oc=5",
+          "publisher": "Realtor.com",
           "kind": "article",
-          "snippet": "Harden still played at a high level last season. How long that can continue is anyone’s guess.",
-          "published": "Wed, 09 Sep 2026 17:00:00 +0000"
+          "snippet": "NBA Star Giannis Antetokounmpo Picks Up $13.5 Million Florida Mansion-Months After Miami Heat Trade Realtor.com",
+          "published": "Wed, 09 Sep 2026 17:19:23 GMT"
         }
       ]
     }
