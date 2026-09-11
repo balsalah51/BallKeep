@@ -760,7 +760,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 50
+CSS_VER = 51
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -967,17 +967,17 @@ ROOKIE_SOURCES = [
 FB_SEO = {
     "index.html": (
         "Fantasy Football Superflex Dynasty Rankings | Ball Keep",
-        "2026 Superflex dynasty and redraft PPR rankings from 33 boards. BK Value trade calculator, player files, and hourly NFL news.",
+        "2026 Superflex dynasty and redraft PPR rankings from 40 boards. BK Value trade calculator, player files, and hourly NFL news.",
         "img/hero.jpg",
     ),
     "the-keep.html": (
         "2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Superflex dynasty top 400 from 33 boards, rebuilt September 9, 2026. Rank 1 is 12,000 BK Value. Unranked names are skipped.",
+        "Superflex dynasty top 400 from 40 boards, rebuilt September 9, 2026. Rank 1 is 12,000 BK Value. Unranked names are skipped.",
         "img/logo.jpg",
     ),
     "board.html": (
         "2026 Fantasy Football PPR Rankings | The Board | Ball Keep",
-        "Redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players from 15 boards. Kickers and DST omitted.",
+        "Redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players from 40 boards. Kickers and DST omitted.",
         "img/logo.jpg",
     ),
     "the-x.html": (
@@ -1052,7 +1052,7 @@ FB_SEO = {
     ),
     "defenses.html": (
         "2026 Fantasy Football DST Rankings | Ball Keep",
-        "DST Super Aggregate. 50% FantasyPros, NBC, and STACKED, 50% every other desk that ranked the club. Houston leads.",
+        "DST Super Aggregate. 50% FantasyPros, NBC, and STACKED, 50% every other board that ranked the club. Houston leads.",
         "img/logo.jpg",
     ),
     "kickers.html": (
@@ -1173,7 +1173,7 @@ FB_SEO = {
 }
 
 HOME_FAQ = [
-    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 33 boards, top 400. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
+    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 40 boards, top 400. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
     ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 1 boards, Weekly, and Week 1 Waivers are this week's stream."),
     ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. Unranked is a skip. IDP names are marked in red."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player. Unranked names are skipped, never treated as 999."),
@@ -1181,13 +1181,13 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 33 public boards, rebuilt September 9, 2026."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 9, 2026."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
 BOARD_FAQ = [
-    ("What is The Board?", "Ball Keep's 2026 redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players. Fifteen boards: Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex as the long core, then Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, 4for4, NBC Sports, and Footballguys. Kickers and DST omitted."),
-    ("How is the rank built?", "Super Aggregate: 50% the mean of Yates, FantasyPros ECR, and Karabell, 50% every other desk that ranked the name. Unranked on a board is a skip, never a last-place dump. The three long tapes stay on the table so you can see them against the Super score."),
+    ("What is The Board?", "Ball Keep's 2026 redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players. Forty boards: Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex as the long core, then Derek Brown, 4for4, and the rest of the public redraft tape. Kickers and DST omitted."),
+    ("How is the rank built?", "Super Aggregate: 50% the mean of Yates, FantasyPros ECR, and Karabell, 50% every other board that ranked the name. Unranked on a board is a skip, never a last-place dump. The three long tapes stay on the table so you can see them against the Super score."),
     ("How is this different from The Keep?", "The Keep is Superflex Dynasty. The Board is this year only, one quarterback, a point per catch."),
     ("Does BK Value use this rank?", "Yes. The PPR calculator prices The Board rank on the same 12,000 curve."),
 ]
@@ -1198,7 +1198,7 @@ TRADE_FAQ = [
 ]
 FENCE_FAQ = [
     ("What is The Fence?", "Ball Keep's mixed Superflex + IDP dynasty Super Aggregate. Top 400 names, skill and IDP on one board. The board IDP startups actually draft from."),
-    ("How is the rank built?", "Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed desk that ranked the name. Unranked is a skip, never 999."),
+    ("How is the rank built?", "Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed board that ranked the name. Unranked is a skip, never 999."),
     ("How is this different from The Keep and Top Defenses?", "The Keep is Superflex skill players only. Top Defenses is team DST. The Fence is the combined board: QB, RB, WR, TE, DL, LB, DB."),
     ("Why are some names red?", "DL, LB, and DB rows are marked in red so the IDP names stand out while you scroll."),
 ]
@@ -1707,21 +1707,12 @@ def home_body_html(keep, board, media, stories=None):
         {sr_h1("Fantasy Football Superflex Dynasty Rankings")}
         <p class="home-eyebrow">Updated {UPDATED} · Superflex dynasty · Redraft PPR</p>
         <p class="home-mark">{wordmark()}</p>
-        <p class="home-tag">Consensus rankings, priced the way leagues actually trade.</p>
-        <p class="home-lede">The Keep is Superflex dynasty from {keep_n} boards, top 400. The Board is this-year redraft PPR. Rank 1 is 12,000 BK Value. Unranked is a skip, never 999.</p>
         <div class="home-ctas">
-          <a class="cta" href="the-keep.html">Open The Keep</a>
-          <a class="cta alt" href="board.html">Open The Board</a>
-          <a class="cta ghost" href="trade.html">Price a trade</a>
+          <a class="cta" href="the-keep.html">The Keep</a>
+          <a class="cta alt" href="board.html">The Board</a>
         </div>
       </div>
     </section>
-    <ul class="home-proof">
-      <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
-      <li><strong>{board_n}</strong><span>redraft desks</span></li>
-      <li><strong>{KEEP_N}</strong><span>Keep names</span></li>
-      <li><strong>Hourly</strong><span>BK News</span></li>
-    </ul>
     <section class="home-snapshot" aria-label="Top of the boards">
       <article class="home-snap keep">
         <header class="home-snap-head">
@@ -1736,31 +1727,22 @@ def home_body_html(keep, board, media, stories=None):
         <header class="home-snap-head">
           <p class="kicker">The Board</p>
           <h2>Redraft PPR</h2>
-          <p>This year · 1QB · {board_n} desks</p>
+          <p>This year · 1QB · {board_n} boards</p>
           <a class="home-snap-link" href="board.html">Full board</a>
         </header>
         {home_rank_preview(board, media)}
       </article>
     </section>
-    <section class="home-method" aria-label="How the Super Aggregate works">
-      <p class="kicker">Method</p>
-      <h2>How the Super Aggregate works.</h2>
-      <ol class="home-steps">
-        <li><strong>Half the vote is the long boards.</strong> The tapes that actually go deep enough to matter.</li>
-        <li><strong>Half is every other desk that ranked the name.</strong> Short lists still move the names they published.</li>
-        <li><strong>Unranked is a skip, never 999.</strong> Rank 1 is 12,000 BK Value. Fair is within 8%.</li>
-      </ol>
-    </section>
-    {wire}
     {desk_block("ros-skill", "Rest of season", "Skill boards.", "Rest-of-season redraft and rookies. Not this week's stream.", [
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("the-classic.html", "The Classic", "Half-PPR, this year."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
     ])}
-    {desk_block("ros-st", "Rest of season", "Top DST and Kickers.", "Rest-of-season values. Not this week's stream. Week 1 DST and Kickers sit in the Week 1 block.", [
+    {desk_block("ros-st", "More ranks", "DST, Kickers, The Fence.", "Rest-of-season values and the mixed Superflex + IDP board. Week 1 DST and Kickers sit in the Week 1 block.", [
         ("defenses.html", "The D (DST)", "Season-long team DST."),
         ("kickers.html", "Top Kickers", "Season-long K."),
+        ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
     ])}
     {desk_block("week1", "Week 1", "This week's stream.", "Weekly boards, matchups, and the preseason waiver mash. Not rest-of-season values.", [
         ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
@@ -1786,8 +1768,24 @@ def home_body_html(keep, board, media, stories=None):
         ("mlb-schedule.html", "MLB Schedule", "September slate."),
         ("bpl-schedule.html", "BPL Schedule", "2026/27 Premier League."),
     ])}
+    <ul class="home-proof">
+      <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
+      <li><strong>{board_n}</strong><span>redraft boards</span></li>
+      <li><strong>{KEEP_N}</strong><span>Keep names</span></li>
+      <li><strong>Hourly</strong><span>BK News</span></li>
+    </ul>
+    <section class="home-method" aria-label="How the Super Aggregate works">
+      <p class="kicker">Method</p>
+      <h2>How the Super Aggregate works.</h2>
+      <ol class="home-steps">
+        <li><strong>Half the vote is the long boards.</strong> The tapes that actually go deep enough to matter.</li>
+        <li><strong>Half is every other board that ranked the name.</strong> Short lists still move the names they published.</li>
+        <li><strong>Unranked is a skip, never 999.</strong> Rank 1 is 12,000 BK Value. Fair is within 8%.</li>
+      </ol>
+    </section>
+    {wire}
     <section class="home-network" aria-label="Other sports">
-      <p class="kicker">The other desks</p>
+      <p class="kicker">The other boards</p>
       <h2>Same curve, separate palettes.</h2>
       <p class="note">BaseKeep, BasketKeep, and PitchKeep use the same rank-to-value idea. Football stays here.</p>
       <div class="home-network-grid">
@@ -1796,9 +1794,6 @@ def home_body_html(keep, board, media, stories=None):
         <a class="home-net pl" href="pl/index.html"><span>PitchKeep</span><span>Premier League. The Premier and The Pitch.</span></a>
       </div>
     </section>
-    {desk_block("fence", "The Fence", "Superflex + IDP.", "Mixed dynasty board. Last on purpose. IDP names are marked in red.", [
-        ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
-    ])}
     {faq_html(HOME_FAQ, heading="How Ball Keep works.")}
     """
 
@@ -2994,7 +2989,7 @@ def main():
                 "https://ballkeep.com/the-keep.html",
                 keep,
                 lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
-                description="Superflex dynasty top 400 from 33 boards.",
+                description="Superflex dynasty top 400 from 40 boards.",
             ),
             faq_jsonld(KEEP_FAQ),
         ],
@@ -3023,7 +3018,7 @@ def main():
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR Super Aggregate · {len(PPR_SOURCES)} boards</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Super Aggregate of {len(PPR_SOURCES)} boards: 50% Yates, FantasyPros PPR ECR, and Karabell, 50% every other desk that ranked the name (Derek Brown, Andrew Erickson, Pat Fitzmaurice, Chris Welsh, CBS, Yahoo, Draft Sharks, RotoWire, NFL.com, 4for4, NBC Sports, and Footballguys). Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. Proj is this week's RotoWire PPR points. ESPN ADP sits next to the rank. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Super Aggregate of {len(PPR_SOURCES)} boards: 50% Yates, FantasyPros PPR ECR, and Karabell, 50% every other board that ranked the name, including Derek Brown and 4for4. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. Proj is this week's RotoWire PPR points. ESPN ADP sits next to the rank. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
     {rank_search_bar(board_chips)}
     <div class="panel">{rank_table(ppr, ["Super", "Boards", "Yates", "FP ECR", "Karabell", "Proj", "ESPN ADP", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}

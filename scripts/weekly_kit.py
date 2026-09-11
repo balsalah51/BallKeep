@@ -253,7 +253,7 @@ def adp_rows(board_rows: list) -> list:
 
 
 ADP_SOURCES = [
-    ("The Board", "https://ballkeep.com/board.html", "Ball Keep redraft PPR Super Aggregate. Fifteen boards."),
+    ("The Board", "https://ballkeep.com/board.html", "Ball Keep redraft PPR Super Aggregate. Forty boards."),
     ("ESPN ADP", "https://fantasy.espn.com/", "Public ESPN average draft position, 2026 PPR."),
     ("Underdog / Sleeper ADP", "https://sleeper.com/", "adp_dd_ppr on the RotoWire projection feed."),
 ]

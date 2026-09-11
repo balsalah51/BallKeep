@@ -325,7 +325,7 @@ def pl_nav_target(href: str, path: str, depth: int) -> str:
 
 def pl_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None,
             crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
-            robots=None, canonical=None, schema_type=None):
+            robots=None, canonical=None, schema_type=None, body_class=""):
     prefix = "../" * depth
     links = []
     for href, label in PL_NAV:
@@ -347,10 +347,10 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=39" />
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=40" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
-<body>
+<body{f' class="{esc(body_class)}"' if body_class else ""}>
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{'index.html' if depth == 1 else '../index.html'}">
@@ -416,6 +416,42 @@ def face_src(r, media, depth=1):
     img = m.get("image") or "img/pl-logo.jpg"
     prefix = "../" * depth
     return prefix + img
+
+
+def fmt_val(n):
+    try:
+        return f"{int(n):,}"
+    except (TypeError, ValueError):
+        return ""
+
+
+def home_rank_preview(rows, media, n=8):
+    items = []
+    for r in rows[:n]:
+        name = r.get("name") or ""
+        href = f"players/{slugify(name)}.html" if name else ""
+        pos = r.get("pos") or ""
+        team = r.get("team") or ""
+        val = fmt_val(r.get("value"))
+        face = (
+            f'<img class="face" src="{esc(face_src(r, media))}" '
+            f'alt="{esc(face_alt(name))}" width="40" height="40" loading="lazy" />'
+        )
+        name_html = (
+            f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
+            if href else f"<strong>{esc(name)}</strong>"
+        )
+        items.append(
+            "<li>"
+            f'<div class="home-rank-row">'
+            f'<span class="home-rk">{esc(r.get("bk") or "")}</span>'
+            f"{face}"
+            f'<span class="home-rank-meta">{name_html}'
+            f'<span>{esc(pos)} · {esc(team)}</span></span>'
+            f'<span class="home-val">{esc(val)}</span>'
+            "</div></li>"
+        )
+    return f'<ol class="home-rank-list">{"".join(items)}</ol>'
 
 
 def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", media=None, faces=False, depth=1, full_names=False, show_age=False):
@@ -1245,13 +1281,41 @@ def write_pitch_site():
             + "</div>"
             '<p class="note" style="margin-top:12px"><a href="news.html">All PK News</a></p>'
         )
+    premier_n = 25
     home = f"""
-    {masthead("Premier League rankings", wordmark(), "The Premier · The Pitch")}
-    {desk_block("main", "Main", "The Premier and The Pitch.", "Premier: 25 published 2026/27 lists. Pitch: Sleeper points.", [
-        ("the-premier.html", "The Premier", "Hybrid 400."),
-        ("the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
-    ])}
-    {desk_block("lists", "Lists", "The position boards.", "Forwards, mids, defenders, keepers. Sleeper-ranked.", [
+    <section class="home-hero" aria-label="Premier League rankings">
+      <div class="home-hero-media" aria-hidden="true"></div>
+      <div class="home-hero-copy">
+        {sr_h1("Fantasy Premier League Rankings")}
+        <p class="home-eyebrow">Updated {UPDATED} · Hybrid · Sleeper</p>
+        <p class="home-mark">{wordmark()}</p>
+        <div class="home-ctas">
+          <a class="cta" href="the-premier.html">The Premier</a>
+          <a class="cta alt" href="the-pitch.html">The Pitch</a>
+        </div>
+      </div>
+    </section>
+    <section class="home-snapshot" aria-label="Top of the boards">
+      <article class="home-snap keep">
+        <header class="home-snap-head">
+          <p class="kicker">The Premier</p>
+          <h2>Hybrid 400</h2>
+          <p>{premier_n} published lists · 2026/27</p>
+          <a class="home-snap-link" href="the-premier.html">Full board</a>
+        </header>
+        {home_rank_preview(premier, media)}
+      </article>
+      <article class="home-snap board">
+        <header class="home-snap-head">
+          <p class="kicker">The Pitch</p>
+          <h2>Sleeper BPL 2025</h2>
+          <p>This scoring · last season's line</p>
+          <a class="home-snap-link" href="the-pitch.html">Full board</a>
+        </header>
+        {home_rank_preview(pitch, media)}
+      </article>
+    </section>
+    {desk_block("lists", "More ranks", "The position boards.", "Forwards, mids, defenders, keepers. Sleeper-ranked.", [
         ("attack.html", "Attack", "Forwards."),
         ("midfield.html", "Midfield", "Mids."),
         ("defence.html", "Defence", "Defenders."),
@@ -1264,15 +1328,41 @@ def write_pitch_site():
         ("trade.html", "Trade Calculators", "Premier, Pitch, the lists."),
         ("players/index.html", "Player Files", "Headshot, line, boards, tape."),
     ])}
-    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
+    {desk_block("tape", "Tape", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "PL memes. Pictures on the card."),
         ("news.html", "PK News", "Injuries, transfers, managers."),
     ], extra_news)}
+    <ul class="home-proof">
+      <li><strong>{premier_n}</strong><span>published lists</span></li>
+      <li><strong>400</strong><span>Premier names</span></li>
+      <li><strong>400</strong><span>Pitch names</span></li>
+      <li><strong>Hourly</strong><span>PK News</span></li>
+    </ul>
+    <section class="home-method" aria-label="How PitchKeep ranks">
+      <p class="kicker">Method</p>
+      <h2>How the ranks are built.</h2>
+      <ol class="home-steps">
+        <li><strong>The Premier is half Sleeper, half the published lists.</strong> {premier_n} 2026/27 boards plus official FPL metrics.</li>
+        <li><strong>Unranked is a skip, never 999.</strong> Missing ranks do not dump a name.</li>
+        <li><strong>Rank 1 is 12,000 BK Value.</strong> Same curve as football. Fair is within 8%.</li>
+      </ol>
+    </section>
+    <section class="home-network" aria-label="Other sports">
+      <p class="kicker">The other boards</p>
+      <h2>Same curve, separate palettes.</h2>
+      <p class="note">Football, baseball, and basketball use the same rank-to-value idea. The Premier League stays here.</p>
+      <div class="home-network-grid">
+        <a class="home-net fb" href="../index.html"><span>Ball Keep</span><span>Superflex dynasty. The Keep and The Board.</span></a>
+        <a class="home-net bb" href="../bb/index.html"><span>BaseKeep</span><span>Dynasty baseball. The Keep, The Diamond, The Farm.</span></a>
+        <a class="home-net bk" href="../bk/index.html"><span>BasketKeep</span><span>Dynasty basketball. The Keep and The Board.</span></a>
+      </div>
+    </section>
     {faq_html(PL_HOME_FAQ, heading="How PitchKeep works.")}
     """
     write("pl/index.html", pl_page(
         "Home", "index.html", home,
         extra_jsonld=[website_jsonld("PitchKeep", "https://ballkeep.com/pl/"), faq_jsonld(PL_HOME_FAQ)],
+        body_class="home",
     ))
 
     flt, js = filter_js(["FWD", "MID", "DEF", "GKP"])

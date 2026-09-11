@@ -353,7 +353,7 @@ BB_NEWS_FAQ = [
 
 def bb_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None,
             crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
-            robots=None, canonical=None, schema_type=None):
+            robots=None, canonical=None, schema_type=None, body_class=""):
     prefix = "../" * depth
     links = []
     for href, label in BB_NAV:
@@ -372,10 +372,10 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "bb/"), image=img, brand="BaseKeep", brand_url="https://ballkeep.com/bb/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=39" />
+  <link rel="stylesheet" href="{prefix}css/bb.css?v=40" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
 </head>
-<body>
+<body{f' class="{esc(body_class)}"' if body_class else ""}>
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{'index.html' if depth == 1 else '../index.html'}">
@@ -443,6 +443,42 @@ def face_src(r, media, depth=1):
     m = (media or {}).get(key) or (media or {}).get(slug) or {}
     img = m.get("image") or "img/bb-logo.jpg"
     return "../" * depth + img
+
+
+def fmt_val(n):
+    try:
+        return f"{int(n):,}"
+    except (TypeError, ValueError):
+        return ""
+
+
+def home_rank_preview(rows, media, n=8):
+    items = []
+    for r in rows[:n]:
+        name = r.get("name") or ""
+        href = f"players/{slugify(name)}.html" if name else ""
+        pos = r.get("pos") or ""
+        team = r.get("team") or ""
+        val = fmt_val(r.get("value"))
+        face = (
+            f'<img class="face" src="{esc(face_src(r, media))}" '
+            f'alt="{esc(face_alt(name))}" width="40" height="40" loading="lazy" />'
+        )
+        name_html = (
+            f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
+            if href else f"<strong>{esc(name)}</strong>"
+        )
+        items.append(
+            "<li>"
+            f'<div class="home-rank-row">'
+            f'<span class="home-rk">{esc(r.get("bk") or "")}</span>'
+            f"{face}"
+            f'<span class="home-rank-meta">{name_html}'
+            f'<span>{esc(pos)} · {esc(team)}</span></span>'
+            f'<span class="home-val">{esc(val)}</span>'
+            "</div></li>"
+        )
+    return f'<ol class="home-rank-list">{"".join(items)}</ol>'
 
 
 def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", media=None, faces=False, show_age=False, depth=1):
@@ -1649,15 +1685,43 @@ def write_baseball_site():
             + "</div>"
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
+    keep_n = 23
     home = f"""
-    {masthead("Baseball rankings", wordmark(), "The Keep · The Diamond · The Farm")}
-    {desk_block("main", "Main", "The Keep and The Diamond.", "Dynasty overall, then the redraft ranking. Everything else on this page supports these.", [
-        ("the-keep.html", "The Keep", "Overall dynasty top 400."),
-        ("the-diamond.html", "The Diamond", "Redraft ranking. This year only."),
+    <section class="home-hero" aria-label="Baseball rankings">
+      <div class="home-hero-media" aria-hidden="true"></div>
+      <div class="home-hero-copy">
+        {sr_h1("Fantasy Baseball Dynasty Rankings")}
+        <p class="home-eyebrow">Updated {UPDATED} · Dynasty · Redraft</p>
+        <p class="home-mark">{wordmark()}</p>
+        <div class="home-ctas">
+          <a class="cta" href="the-keep.html">The Keep</a>
+          <a class="cta alt" href="the-diamond.html">The Diamond</a>
+        </div>
+      </div>
+    </section>
+    <section class="home-snapshot" aria-label="Top of the boards">
+      <article class="home-snap keep">
+        <header class="home-snap-head">
+          <p class="kicker">The Keep</p>
+          <h2>Overall dynasty</h2>
+          <p>Top 400 · {keep_n} boards</p>
+          <a class="home-snap-link" href="the-keep.html">Full board</a>
+        </header>
+        {home_rank_preview(keep, media)}
+      </article>
+      <article class="home-snap board">
+        <header class="home-snap-head">
+          <p class="kicker">The Diamond</p>
+          <h2>Redraft ranking</h2>
+          <p>This year only</p>
+          <a class="home-snap-link" href="the-diamond.html">Full board</a>
+        </header>
+        {home_rank_preview(redraft, media)}
+      </article>
+    </section>
+    {desk_block("lists", "More ranks", "Lineup, arms, and the Farm.", "Hitters, pitchers, prospects, and the bullpen.", [
         ("the-lineup.html", "The Lineup", "Hitters only."),
         ("pitchers.html", "BK's Pitchers", "Top 150 arms."),
-    ])}
-    {desk_block("lists", "Lists", "The other boards.", "Prospects, bullpen, and the files.", [
         ("the-farm.html", "The Farm", "Top 100 prospects. Arrival and path."),
         ("bullpen.html", "Bullpen - Saves", "Top 100 relievers."),
         ("bullpen-holds.html", "Bullpen - SV+H", "Holds counted."),
@@ -1666,15 +1730,41 @@ def write_baseball_site():
         ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, The Diamond."),
         ("players/index.html", "Player Files", "Keep top 400."),
     ])}
-    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
+    {desk_block("tape", "Tape", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "MLB memes. Pictures on the card."),
         ("news.html", "BK News", "IL, roster, managers."),
     ], extra_news)}
+    <ul class="home-proof">
+      <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
+      <li><strong>400</strong><span>Keep names</span></li>
+      <li><strong>100</strong><span>Farm names</span></li>
+      <li><strong>Hourly</strong><span>BK News</span></li>
+    </ul>
+    <section class="home-method" aria-label="How BaseKeep ranks">
+      <p class="kicker">Method</p>
+      <h2>How the ranks are built.</h2>
+      <ol class="home-steps">
+        <li><strong>Every board that ranked the name votes.</strong> Two of them go 500 names deep.</li>
+        <li><strong>Unranked is a skip, never 999.</strong> Missing ranks do not dump a name.</li>
+        <li><strong>Rank 1 is 12,000 BK Value.</strong> Same curve as football. Fair is within 8%.</li>
+      </ol>
+    </section>
+    <section class="home-network" aria-label="Other sports">
+      <p class="kicker">The other boards</p>
+      <h2>Same curve, separate palettes.</h2>
+      <p class="note">Football, basketball, and the Premier League use the same rank-to-value idea. Baseball stays here.</p>
+      <div class="home-network-grid">
+        <a class="home-net fb" href="../index.html"><span>Ball Keep</span><span>Superflex dynasty. The Keep and The Board.</span></a>
+        <a class="home-net bk" href="../bk/index.html"><span>BasketKeep</span><span>Dynasty basketball. The Keep and The Board.</span></a>
+        <a class="home-net pl" href="../pl/index.html"><span>PitchKeep</span><span>Premier League. The Premier and The Pitch.</span></a>
+      </div>
+    </section>
     {faq_html(BB_HOME_FAQ, heading="How BaseKeep works.")}
     """
     write("bb/index.html", bb_page(
         "Home", "index.html", home,
         extra_jsonld=[website_jsonld("BaseKeep", "https://ballkeep.com/bb/"), faq_jsonld(BB_HOME_FAQ)],
+        body_class="home",
     ))
 
     flt, js = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
