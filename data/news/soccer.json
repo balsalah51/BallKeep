@@ -1,8 +1,163 @@
 {
   "sport": "soccer",
-  "updated": "2026-09-11T00:33:13Z",
-  "fresh": 184,
+  "updated": "2026-09-11T01:25:03Z",
+  "fresh": 204,
   "stories": [
+    {
+      "id": "bruno-fernandes-man-utd-future-depend-champions-league-b43b1b24",
+      "slug": "bruno-fernandes-man-utd-future-depend-champions-league-b43b1b24",
+      "sport": "soccer",
+      "headline": "Bruno Fernandes' Man Utd future will depend on Champions League qualification and Michael Carrick",
+      "blurb": "Man United latest: Michael Carrick receives £43m update as Bruno Fernandes contract talks begin Manchester Evening News",
+      "summary": "Man United latest: Michael Carrick receives £43m update as Bruno Fernandes contract talks begin Manchester Evening News Man United latest: Bruno Fernandes speaks about his future as transfer target free to leave Manchester Evening News Man Utd Open Talks to Sign Forward With More Assists Than Bruno Fernandes GiveMeSport Aggregated from Manchester Evening News, GiveMeSport, YouTube, Sky Sports, London Evening Standard and 5 more.",
+      "category": "injury",
+      "published": "2026-03-03T08:00:00Z",
+      "updated": "2026-09-10T21:01:24Z",
+      "players": [
+        {
+          "key": "bruno fernandes",
+          "name": "Bruno Fernandes",
+          "slug": "bruno-fernandes",
+          "pos": "MID",
+          "team": "MUN"
+        },
+        {
+          "key": "fernandes",
+          "name": "Mateus Fernandes",
+          "slug": "mateus-fernandes",
+          "pos": "MID",
+          "team": "TOT"
+        },
+        {
+          "key": "trafford",
+          "name": "James Trafford",
+          "slug": "james-trafford",
+          "pos": "GKP",
+          "team": "LEE"
+        },
+        {
+          "key": "shaw",
+          "name": "Luke Shaw",
+          "slug": "luke-shaw",
+          "pos": "DEF",
+          "team": "MUN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "CARRICK: “IT FEELS LIKE A DEFEAT!” 😞 Everton 2-2 Man Utd ⚽ Premier League",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8xSEVhMnVteXFnd1ZtZlgtZlM3MGwyV0o3Z2pxaWl0TW1UUjNEaVVQZEFDTjY3ZjRQYzhhb1NBYmNUVUthSkRtUDZsMFh1cjU1andBenln?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "CARRICK: “IT FEELS LIKE A DEFEAT!” 😞 Everton 2-2 Man Utd ⚽ Premier League YouTube",
+          "published": "Sun, 06 Sep 2026 15:38:11 GMT"
+        },
+        {
+          "title": "Bruno Fernandes: Man Utd captain breaks Premier League assists record for a single season",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPTlJRTGUzQzFBNWpqcjBUWFhJTzBNbElERlUxbk40T1prX3lfcUFfTnNfWW1vNVlVT1VwT21MdXktYllNYXU5dTl2dnFSaUtvNFpQQjZsbXJ5NnJndFlZN1dRU2hYNmN6X3B2QkRSRXhneTN5bnhXS1pUajdBOUxLN3d3ZlFHeDJneWVWTW1tU0xkd01sRzB4RU1QY1FLQUVLZjZPSWl3bldtWG5MVnBIWF9KbEI0UndsY0dvdHNmR015QXVtcTFPVGhjLXc5R1I4V2xPLXU4cjYzckk?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Bruno Fernandes: Man Utd captain breaks Premier League assists record for a single season Sky Sports",
+          "published": "Sun, 24 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bruno Fernandes' Man Utd future will depend on Champions League qualification and Michael Carrick",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQSHFxZ25ZbC1xZWhPQVZKTnlvRXcwU2hDRncwYWZtcS1zWW1NcC1WSzJxQ3djbjJSOXFmSXRqSjR2LXRQMTE5RHVsWkVBQlRJZ000bFZQRXVvbE1PYzJhOEhPVGh4Qkg1QVU1NnRWRGk4VHI4RlNQclVhc05Dc045SWJBTUROTHQyR1N3MERQTGFOMmpXNXZtT3pYRTRzT2U5SWlSY0oxZkdLa2RnczBqbElsdHUwX28tQW4xQUtJbHhRalBFc0xhTWZ3NVZRMFBBYnFTaHdNeGxnS3VsTjRrTW9YcFNXT0ZXYklrZEh2WVBDZEc2dkVaYTM3X0JHWGtJYVpycHdKSQ?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Bruno Fernandes' Man Utd future will depend on Champions League qualification and Michael Carrick - Paper Talk and transfer gossip Sky Sports",
+          "published": "Tue, 03 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Fernandes equals Premier League assist record as Man Utd beat Forest",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONGNpWXdhdFkyMDlYQU9mYXRQVzZ5WGRrbkVzUF85T2dLVVV0VzR3dTVBOXo4Y3JFaWJmVm9XZDZoVjNtZHRaSlpzSFA5Yl9GUi1RMk5wREoxSWZyeElFZHVaNWdFU1hlbVVKMDBZYXI5cmF6TXRhMGJyLXNIOTJHUGVaVlBLNjk2ckhJZi1nU0VZV1F4ZXp0U3pnbEtjTm1MbnN0bVctTTQ3SUdV?oc=5",
+          "publisher": "London Evening Standard",
+          "kind": "article",
+          "snippet": "Fernandes equals Premier League assist record as Man Utd beat Forest London Evening Standard",
+          "published": "Sun, 17 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man Utd: Decision Made on Bruno Fernandes' Future Amid Saudi Interest",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTUwzWTQ5Q1RKdmk3ajY2R2lFem84WGZHMU9wbWE0X29Za2VxYWNCeFBNcWNUZkt3Tm56MlZGU09NeWFLMnpOaTYxNnZ4UW1OYVRZU29vNGRLMF80emRLRnMwVHpGN1BPVFdQdE9CZE1iRmRfV1FocWlaZ1JTUU5nOGNLTXE3WF91UEN6bWpB?oc=5",
+          "publisher": "GiveMeSport",
+          "kind": "article",
+          "snippet": "Man Utd: Decision Made on Bruno Fernandes' Future Amid Saudi Interest GiveMeSport",
+          "published": "Sun, 19 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQkNFOVBtSlJWeVBlRnFVZXFwQV96a0VYaG5tYUcwaHVzUVNtQVRQZGdHV0pCYlJiczJGSlJFSnRnX1g1Z2JtTTltM1RteXdjZHNTUWtLODVYRVhQRWhTb2JETzgzSnY3U01naTY1dDdmc3RGbjdLMGpsNm5tUGVjNlRnMFFZTENKZHZKUUVqM0VTdEZqNktjUjE5UWxhWm94cmVuaEFXd0g5VnZSM3VjQjJlc2FGNlNockNwQ2hWeDNtYkV6bWZWbUNQTnE4cG81cThSRExsRQ?oc=5",
+          "publisher": "Sports Mole",
+          "kind": "article",
+          "snippet": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup Sports Mole",
+          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Rwandan eyeing Champions League history against Man Utd",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c4g7zxezj9lo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "Rwanda forward Joy-Lance Mickels has helped Azerbaijan's Sabah reach the Champions League proper on their competition debut, and is now looking to down the team he supports.",
+          "published": "Wed, 09 Sep 2026 14:41:38 GMT"
+        },
+        {
+          "title": "Why Luke Shaw misses Man Utd training after Champions League injury scare",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYUQxTld6ZkhiWnJNN0xvdFlPVkdOWGhkY3BoVEpVcTVGYWNpZWxBaEZIOG5iVV9ITUxYcWlJRGMxT2NDSjFwaHZYaFZfWXFrTGtzeTVTeUpuZGRYUXpWMXJEUWszbW8yTDNpUXRKRlNWM3pNRVpISko5SmJnQzNjWXJhaEprUG1EN01neDF4Z1NRX1pvUUEyZTh4QThvd18ydFVMQk1kZ9IBrAFBVV95cUxOdXAtR19oZ0VZRVNRcXp3aTFvRURYQ3lQSU9nSVhQTXd1cnFRTTJhVTE3Q2hLNndLZkN4bXRSeHJ3QUxjeThadXJZQnJDYXhpM1dqdDdhYUdDbjgwWWZycUJ0TVFxc2pDNmlkZEdSa1o5MFVoMHpHLU9xYl85WWtyN09OSGliNmNvcDVBeHhJblBIRVllaUpMS3JLWGNnWHZsb0FIQWlHNG5JTFQ5?oc=5",
+          "publisher": "Metro.co.uk",
+          "kind": "article",
+          "snippet": "Why Luke Shaw misses Man Utd training after Champions League injury scare Metro.co.uk",
+          "published": "Wed, 09 Sep 2026 11:25:00 GMT"
+        },
+        {
+          "title": "Every Man Utd Injury Ahead of Champions League Return vs. Sabah",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZWFHaDFiYk5lRk1ORTBXSzZkWU9zWUJEdkFFcHMwRW5URk1jMnNGSllJMlI0SDFWWHMxNEZSWVlrLWs5OTRUTmZmYkljMnNxWGQyVE5DQlZMMmlzU2JWc1A2WEVCUC16anRWTXlrTFM0aEJqUklFX3FJbW5DM1NvZlB5eDBORDRJUkw0RGxPcUtNMEQwMzZwa05TOUNOWk9mN28zd255X01xZ0xHRVZWWVVWM0FwTFpoXy1yNjBQaEdtdw?oc=5",
+          "publisher": "LiveScore",
+          "kind": "article",
+          "snippet": "Every Man Utd Injury Ahead of Champions League Return vs. Sabah LiveScore",
+          "published": "Thu, 10 Sep 2026 10:15:57 GMT"
+        },
+        {
+          "title": "Major update on Bruno Fernandes' Man Utd future as he enters last year of deal",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVTNCSkJIYnFQMW5OR1JnV1lnMDJ4V1A0dHVqVjEtclBtYUpCZ09oVTM4TXA1R3MtdDVZOTRlYTQ3THZ2UjF4dHgxVjZJcktNTml5R0JTbktucGF4WGZoNkZweVUteEkyLXcxNDV6cllYVzFHRFJBWGI5Q001TVBzVkxoR0lmSmh6VERfaEhrTXJQTnBpMVpLTWpaeUZ4bFpOVkJZRmY0R0dybzJvbkdN?oc=5",
+          "publisher": "The Sun",
+          "kind": "article",
+          "snippet": "Major update on Bruno Fernandes' Man Utd future as he enters last year of deal The Sun",
+          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man Utd put four past Sabah on Champions League return",
+          "url": "https://www.bbc.co.uk/sport/football/videos/crl600nz58lo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "video",
+          "snippet": "Manchester United recorded their biggest Champions League victory since 2020 as they swept Sabah FK aside at Old Trafford.",
+          "published": "Thu, 10 Sep 2026 21:01:24 GMT"
+        },
+        {
+          "title": "Man United latest: Michael Carrick receives £43m update as Bruno Fernandes contract talks begin",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNU5EVDhWcFVVWmppck5obkpHWHlqRnp4Z2hUS1VaTmlKUnhCQkV4UDZDam9MS1ZvSF9pNmY5cGdqb2tBUE1saG05U29sTXZzTnB3NWtMTkphV3Q1VHAzdUd0THd0dHJENkdNbU9KcGw3TUpST0xmRmJjY2xaMTJIYkxzdE1aalVqS1QxYlA0RVdYa2FLZnRyTXk3YktqSFJodXRqVVdyM1FsbjlDRlpyUW50Mkxia0pXWEpB0gHAAUFVX3lxTE1MZ2VYbkFfai14MWJidG9WNFNQSDIxcldtOG9sR1ktVjQ3Ujd3YWlGanVWNG5PNnY5T2p1ZWR0TDAwOGppNlZWaGdNYW53VWc1ZklleENFN2lBNkJJQVNuaDZ5anl0VmlIemhiVklwekRUWlhESWE2dEY2dGt5cXNDOW5aYVR2emk1RUM1WHFrQWc4aDhwd0Zjd3JHSS1VMnRNbFJidmZtU1k0QzFvS1kzMUxlQTk2ZzNpRHB5bmxYNg?oc=5",
+          "publisher": "Manchester Evening News",
+          "kind": "article",
+          "snippet": "Man United latest: Michael Carrick receives £43m update as Bruno Fernandes contract talks begin Manchester Evening News",
+          "published": "Wed, 19 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man United latest: Bruno Fernandes speaks about his future as transfer target free to leave",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSk5yaGotZlRUNE4yQkhTY2V6XzI1SlhOeEhZbDdUU3RuMER6VV9kRVlHWU5wTUJ4QWNESGlxMkVzbGxaQmR2eVlWZjZYQVJVSXdEanpSM0wza0dyZ3hodl90aEJvS1JZWlhVQ2llLWh6dXpKaFRiV0ZMZndvbUlUS3Zzd1UtYlRKTlZ2LV8wYlptbk5FYUt1YlUxd0RxNnVXcEVBYVVHd0NscEY3a2pscdIBtgFBVV95cUxNZXFTU1FyNWducVhyNVBTTDl2U3pQZ2txY211OE5IaElDTWZsejVHak9aa1JubXJNalFFSE02WXhnUlVkM0RGcWhzcVJ2clliWlhOeXc0bnR2eE1lNmhUODgxT3JnQlZtRzBXeUR6RF95LTdPMUVKZV9yQU9OY202RUZHS082YUs3ME8ybGhMYWtFUFRvekIyQWxvX0hCMUREdDRleW9lS1pZSGNEYUIxR0tKbGVWQQ?oc=5",
+          "publisher": "Manchester Evening News",
+          "kind": "article",
+          "snippet": "Man United latest: Bruno Fernandes speaks about his future as transfer target free to leave Manchester Evening News",
+          "published": "Sat, 16 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man Utd Open Talks to Sign Forward With More Assists Than Bruno Fernandes",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYjNJUWlDOUF3V0hkNnJsZ0lCeGtHa3EtdDFEV1loYkZfVlFoTE80U0czWmRtSDdYTE1JM2w5Zm5xR3pnaTFnSUJIWTV0UFh6ZmpBRl9JMlE0ajlBOTQwaFdnTUswbU9CTUJlQ0hlc0FrS1RvSkRDYXVnZkU4THNCb01hekJ2ZjVjYVVsNng2NHdoeTdJbDJN?oc=5",
+          "publisher": "GiveMeSport",
+          "kind": "article",
+          "snippet": "Man Utd Open Talks to Sign Forward With More Assists Than Bruno Fernandes GiveMeSport",
+          "published": "Sun, 17 May 2026 07:00:00 GMT"
+        }
+      ]
+    },
     {
       "id": "cody-gakpo-injury-issued-andoni-iraola-explains-liverpool-34c9a277",
       "slug": "cody-gakpo-injury-issued-andoni-iraola-explains-liverpool-34c9a277",
@@ -449,13 +604,41 @@
       "id": "who-best-fpl-captain-double-gameweek-36-eea3229a",
       "slug": "who-best-fpl-captain-double-gameweek-36-eea3229a",
       "sport": "soccer",
-      "headline": "Isak, Raya & João Pedro: Latest FPL injury news for Gameweek 38 before Liverpool v Brentford",
-      "blurb": "FPL Gameweek 2 team news: Wednesday’s live injury updates fantasyfootballscout.co.uk",
-      "summary": "João Pedro, Antoine Semenyo, Callum Wilson, Dango Ouattara, Cole Palmer and Morgan Gibbs-White: FPL Gameweek 2 team news: Wednesday’s live injury updates fantasyfootballscout.co.uk Who is the best FPL captain for Gameweek 30? Who is the best FPL captain for Blank Gameweek 31? Aggregated from fantasyfootballscout.co.uk, Premier League, Fantasy Football Fix, 3 Added Minutes, premierleague.com and 3 more.",
+      "headline": "Salah, Gibbs-White, Casemiro and more: Latest FPL injury news for Gameweek 37 ahead of Liverpool v Aston Villa",
+      "blurb": "Glasner reveals Gibbs-White injury latest before Forest face Liverpool London Evening Standard",
+      "summary": "Morgan Gibbs-White, Jack Hinshelwood, Van de Ven, Dominic Solanke-Mitchell, João Pedro, Antoine Semenyo, Callum Wilson, Dango Ouattara and Cole Palmer: Glasner reveals Gibbs-White injury latest before Forest face Liverpool London Evening Standard Injuries & suspensions update for Gameweek 2: Latest news on Morgan Gibbs-White, Jack Hinshelwood The Sun Salah, Gibbs-White, Casemiro and more: Latest FPL injury news for Gameweek 37 ahead of Liverpool v Aston Villa 3 Added Minutes Aggregated from London Evening Standard, The Sun, 3 Added Minutes, premierleague.com, YouTube and 5 more.",
       "category": "injury",
       "published": "2021-01-25T08:00:00Z",
       "updated": "2026-09-10T14:50:45Z",
       "players": [
+        {
+          "key": "gibbs white",
+          "name": "Morgan Gibbs-White",
+          "slug": "morgan-gibbs-white",
+          "pos": "MID",
+          "team": "NFO"
+        },
+        {
+          "key": "hinshelwood",
+          "name": "Jack Hinshelwood",
+          "slug": "jack-hinshelwood",
+          "pos": "MID",
+          "team": "BHA"
+        },
+        {
+          "key": "van de ven",
+          "name": "Van de Ven",
+          "slug": "van-de-ven",
+          "pos": "DEF",
+          "team": "TOT"
+        },
+        {
+          "key": "solanke",
+          "name": "Dominic Solanke-Mitchell",
+          "slug": "dominic-solanke-mitchell",
+          "pos": "FWD",
+          "team": "TOT"
+        },
         {
           "key": "joao pedro",
           "name": "João Pedro",
@@ -492,11 +675,11 @@
           "team": "CHE"
         },
         {
-          "key": "gibbs white",
-          "name": "Morgan Gibbs-White",
-          "slug": "morgan-gibbs-white",
-          "pos": "MID",
-          "team": "NFO"
+          "key": "mitchell",
+          "name": "Tyrick Mitchell",
+          "slug": "tyrick-mitchell",
+          "pos": "DEF",
+          "team": "CRY"
         }
       ],
       "sources": [
@@ -707,6 +890,70 @@
           "kind": "article",
           "snippet": "Isak, Raya & João Pedro: Latest FPL injury news for Gameweek 38 before Liverpool v Brentford 3 Added Minutes",
           "published": "Thu, 21 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Gameweek 2 team news: Friday’s live injury updates",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdjlMYnE4Uk5rR0JheExXVVNrRURST0hWUGY1bmhBSDBnbGJZb3FqcjJ1dUQybkR5TjdSQVlrWHlZeUxBNXhNMmF6TVFDNzB0TEVqbGl6UWcyZWo5bEtaNHFuY09Xd1p2d01YR1d0N1VBZE9PNEp3WXdteGVpUkNLWm9DeDZFNzZSZ3dyYWRBLXlxQXVyX2lNY2tha0QzMUZjc0lleC03QmE?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "FPL Gameweek 2 team news: Friday’s live injury updates fantasyfootballscout.co.uk",
+          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Porro, Solanke, van de Ven: Tottenham injury latest for FPL Gameweek 1",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMG9tTFE3Q3FhOTRhVDhaaTVYQXlnVEVTTmJSa0FwNmRPcHZhZUtZaGlEWDl4WGlHQjZwU3RMYVVWQXdITzZnd1pLaEZEc1BDYTVfcU1GZHhNbF82OFZDaVQ1cUVNbGhXSEdhNWEzZTZmRDlKRlMyOTVIVjlEVS0yLWVYMUFsbGVzbExTRlN6a1NTX2tRWjhRTjRIQ1U1VFQ2SXlzeklzT055ZGlvTmpUQjhqLXNYWkRscWc?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "Porro, Solanke, van de Ven: Tottenham injury latest for FPL Gameweek 1 fantasyfootballscout.co.uk",
+          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Scout's FPL Gameweek 12 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYmJQZFFuemxwQl9HelM4RDJCWEtQay1iY1p2N3htdTRDSTNGRF9jYzFNTkpqNllOdE40b0xvMFdyeEVsQXhLamlYVnhxVVIzeGFzajZoWHA0ZzBGVUkwMGlNemRmbHVJRVdIU3RvbXFCTG5TTWpXRHBtbXhuUFp4NlkzOUZHei1HMEJBaUszczE?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout's FPL Gameweek 12 transfer radar Premier League",
+          "published": "Thu, 20 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Double Gameweek 33 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS3d5eXAyVTIwNUFaWDduSklBVXdYVGJfN25ndTVTQmxkTk5yaXN4SHNxVmpSUDRFNDVFQ1VVdnBZTHl5bTdaZEl6THNsUkZjdEJvd214Z3d1a1V5TU1BMlB5VnhJMUJDcXNBc240ZkJXNUNrbkFpbDlIWmNjTnVtcGRvc3Rhb0Rka0dHQ0tyQzRpU3FSdGNnMXF3?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Double Gameweek 33 transfer radar Premier League",
+          "published": "Thu, 16 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Salah, Gibbs-White, Timber and more: Latest FPL injury news for Gameweek 36 ahead of Liverpool v Chelsea",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQ0NkdmExbUZ0S3BZcmpWblR0LXJHSWQyYVhUaGFOTjIzdnVqTm9xMWVEdnBTZEh3RlVNdGpuMlFNa3ZVeW1Eb3RGWDJFb1JGUEpYbGpMVEFNWU5FTWRqcGVVdXNIeEFSb1J4d0tMaGkyOFM4bGhmMHZiMVlSSWZFWHc2MHJjU040UEdyRzNnYW9ISTFKakZLUzM1YnRaTGxtUjZRMExMTk9fbHFoekJvNW1GYWRrekpQVHg4c0dGd2xYWmJnSXZhYUt2UEhMSmc?oc=5",
+          "publisher": "3 Added Minutes",
+          "kind": "article",
+          "snippet": "Salah, Gibbs-White, Timber and more: Latest FPL injury news for Gameweek 36 ahead of Liverpool v Chelsea 3 Added Minutes",
+          "published": "Thu, 07 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Glasner reveals Gibbs-White injury latest before Forest face Liverpool",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObzZ2UFRuakQtcElaSnV0R2pGdTlVRzRMYWt5SnRwcHVjZ0Q3a0ZPWWFLd3MzRW54RmpMYXFZOWdLWnFqTjhCSE0wZnh0ckJJMk0teDJIR0Z6aDE5cW53X0Etc3Z1WXdJUWRmVmx6TmZiQW5CMnJKZGNULXJ2TzRuYno0bDVOcnJOcW91ZjdzNzJYTVVFd1ZDeFlKcEw1cVlhRDRIb3RERXhWV0JHVXlnUzdwdnR5ZzVaN0t6ag?oc=5",
+          "publisher": "London Evening Standard",
+          "kind": "article",
+          "snippet": "Glasner reveals Gibbs-White injury latest before Forest face Liverpool London Evening Standard",
+          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Injuries & suspensions update for Gameweek 2: Latest news on Morgan Gibbs-White, Jack Hinshelwood",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWDFEZjJPY3NqYzV0eTQ4WWh0VjN0NlBLc2Y2NUJpMS1MTTc4NFFVY3FZMFdYc2tTSzVkeUttOFNQbWJMbGFGZWxHZWNvODJQMDFKODZOU04ydHFtdFNVcUNOczNjMkRDZVVTZHJjajVXdzg5c2lDYVI2U3h0bUFpWmluSzBYNGdRV2lZd0JqaTIzYjhQMC1aZEpUb21JUFJGX0E?oc=5",
+          "publisher": "The Sun",
+          "kind": "article",
+          "snippet": "Injuries & suspensions update for Gameweek 2: Latest news on Morgan Gibbs-White, Jack Hinshelwood The Sun",
+          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Salah, Gibbs-White, Casemiro and more: Latest FPL injury news for Gameweek 37 ahead of Liverpool v Aston Villa",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPRFgydVlub0dRLVF3Y3pDaEgwWVV1Rjg3aTJ0djIzMmx1V3ZHUWUxSGd6UkRSMGdMMFUzY1FqakNIaUtobi1ncllEWExKZGczY0ExTVBSNEJxa041ZjRhM0ZJZTRRbzYyUndQdVdSY1p3aGNoaE1VY00zMzhkeURtWVlTRDBXQ29nVEwwNzFENkxHOHkwNm0tVS1ibXI4MUNfUmFOM1pRdGFrUmF6djJDVjVvQUhvcG1zT256QVJldi0tN3dfMUh0SS1Gcw?oc=5",
+          "publisher": "3 Added Minutes",
+          "kind": "article",
+          "snippet": "Salah, Gibbs-White, Casemiro and more: Latest FPL injury news for Gameweek 37 ahead of Liverpool v Aston Villa 3 Added Minutes",
+          "published": "Thu, 14 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -1151,8 +1398,8 @@
       "slug": "gyokeres-starts-arsenal-make-four-changes-against-napoli-43f7f2a0",
       "sport": "soccer",
       "headline": "Bruno Fernandes transfer news: Manchester United captain not for sale at any price despite Galatasaray interest",
-      "blurb": "Manchester United make decision on selling Bruno Fernandes this summer LiveScore",
-      "summary": "Manchester United make decision on selling Bruno Fernandes this summer LiveScore Man United told to sell Bruno Fernandes as ‘assists are meaningless’ talkSPORT Bruno Fernandes - Stats 26/27 Transfermarkt Aggregated from LiveScore, talkSPORT, Transfermarkt, Sky Sports Football, 大分トリニータオフィシャルサイト and 14 more.",
+      "blurb": "Manchester United to instantly reject European club’s audacious bid for Bruno Fernandes talkSPORT",
+      "summary": "Manchester United to instantly reject European club’s audacious bid for Bruno Fernandes talkSPORT Bruno Fernandes hits milestone as Manchester United boost Champions League hopes with Villa victory Irish Independent Manchester United make decision on selling Bruno Fernandes this summer LiveScore Man United told to sell Bruno Fernandes as ‘assists are meaningless’ talkSPORT Bruno Fernandes - Stats 26/27 Transfermarkt Aggregated from LiveScore, talkSPORT, Transfermarkt, Sky Sports Football, 大分トリニータオフィシャルサイト and 14 more. Aggregated from talkSPORT, Irish Independent, Sky Sports Football, 大分トリニータオフィシャルサイト, oita-trinita.co.jp and 14 more.",
       "category": "trade",
       "published": "2025-12-17T08:00:00Z",
       "updated": "2026-09-10T18:40:18Z",
@@ -1483,6 +1730,22 @@
           "kind": "article",
           "snippet": "Bruno Fernandes - Stats 26/27 Transfermarkt",
           "published": "Wed, 03 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Manchester United to instantly reject European club’s audacious bid for Bruno Fernandes",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSGNGWDhlWHJ1WGxjUGVSWGV2RDJLWENRMW93b1pGZDBHNUJoN2VHVjZ2LWdoX1JNajRVZUtkbm5DWXZFZ0NsbS04OEI5MmxGSGdOY3JCdFBvYjEyUk9Yd3g5VmhVNklVSVNGam8zeE9FX0ZIMmNjdTJYbHItREVfVnR5WFV0XzFQdjRqTFNMRzhnVXVQZ3BXbTNR?oc=5",
+          "publisher": "talkSPORT",
+          "kind": "article",
+          "snippet": "Manchester United to instantly reject European club’s audacious bid for Bruno Fernandes talkSPORT",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bruno Fernandes hits milestone as Manchester United boost Champions League hopes with Villa victory",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPV3ZtNU5JZldYdEV4LUxKRTBGUzJCTjdqaDJ5Rm50VGlwY3prNzhPZEREWUtscXNNRHhjRm1CUUdQeXY0R3l1WVlucVN4VUxhVWFMTldNWHVod2RndXNIYWVFaXF3eWRiSWl4TW9mSmppbnJJeHBRN0lXOVR3dENUcV9vdTdnUVlKUUVSRENvSFh0dDBQdi1XdFYtbWZaemxBTW00TkhKblo4bHNKX3BrMzhoX1lsU2JRZkVrVDBPRXM1ZVFLMkxGVmNPalBwcW8tTDB1dllURnlYVll4cHFSVGJ2a0hqRk5nMjEwVDlvckJKRXhvVF9TOFhLS3BJc3Zu?oc=5",
+          "publisher": "Irish Independent",
+          "kind": "article",
+          "snippet": "Bruno Fernandes hits milestone as Manchester United boost Champions League hopes with Villa victory Irish Independent",
+          "published": "Sun, 15 Mar 2026 07:00:00 GMT"
         }
       ]
     },
@@ -1491,8 +1754,8 @@
       "slug": "fpl-gw4-wildcard-active-2-111th-overall-world-aee492f9",
       "sport": "soccer",
       "headline": "Transfer Tracker 2026: Summer window updates, deals, talks and more from the Premier League and beyond",
-      "blurb": "Honestly Ranking Every Single Premier League Transfer This Summer From The Top 8 Clubs..",
-      "summary": "Bryan Mbeumo, Morgan Rogers, Antoine Semenyo, Rayan Cherki and Cole Palmer: Honestly Ranking Every Single Premier League Transfer This Summer From The Top 8 Clubs.. FPL GW4: TEAM SELECTION | Save Wildcard & Captain Palmer? | Fantasy Premier League Tips 2026/27 YouTube Aggregated from youtube.com, YouTube, The New York Times, Yahoo Sports, Yahoo Sports UK and 13 more.",
+      "blurb": "The Premier League transfer window opened on June 15.",
+      "summary": "Bryan Mbeumo, Morgan Rogers, Antoine Semenyo, Rayan Cherki and Cole Palmer: The Premier League transfer window opened on June 15. ♻️ MY FPL GW4 TRANSFER PLANS 📝 | Fantasy Premier League 2026/27 YouTube Man Utd summer transfer 'stalls' for Premier League star Football365 Aggregated from x.com, YouTube, Football365, The New York Times, Yahoo Sports and 13 more.",
       "category": "injury",
       "published": "2025-09-02T17:01:19Z",
       "updated": "2026-09-10T08:30:14Z",
@@ -1813,6 +2076,30 @@
           "kind": "video",
           "snippet": "Honestly Ranking Every Single Premier League Transfer This Summer From The Top 8 Clubs.. youtube.com",
           "published": "Thu, 03 Sep 2026 10:37:26 GMT"
+        },
+        {
+          "title": "The Premier League transfer window opened on June 15.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1SUkplWjEzMUFPaTZYekVBb3JxV05SM0JRQl9vVEpwOXZSLS1qUjdwa0Rqa2h1X01JU2h2NzJxSXVKY0s5d1VnM3dGcTM5U2IyMGpmcUtSRE9JR19oN3hWLWZ3?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The Premier League transfer window opened on June 15. x.com",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "3x TRANSFERS CONFIRMED! OR WILDCARD? ♻️ MY FPL GW4 TRANSFER PLANS 📝 | Fantasy Premier League 2026/27",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5pMXNJaGtVbXRJOGlPbTJkd09CRkdEUzZoQ0RFWUtMVXI5Z2x3UU9Ldi1Zd2VpcllGU1dScFI3RXlwNDBUbmd1M3dhV3J0ODJDb1JyMG5n?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "3x TRANSFERS CONFIRMED! OR WILDCARD? ♻️ MY FPL GW4 TRANSFER PLANS 📝 | Fantasy Premier League 2026/27 YouTube",
+          "published": "Sun, 06 Sep 2026 17:30:29 GMT"
+        },
+        {
+          "title": "Man Utd summer transfer 'stalls' for Premier League star",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPV3dhNy01WnNVaXRMZXVwTGhhUjljV1RZQVRnUjJfNERoNm1fLVpiUjJpa282ZDBGV0c2M2FBNGNNM3NZOW1fQmFRM2hwdjMwdnFpb3JGMnFZVG5DUk51S215M3VLaFZXeHkyWXlVcDdUUHNuZXFCS3dvcGJPOFVLVTJaa1VvRjRxUU5RQkZfdnZQMzAxeWlPenNObjBuZ0VkQWJCZXRNbFlVQzNQRmZ6bTJ0dldJX0FPdGc?oc=5",
+          "publisher": "Football365",
+          "kind": "article",
+          "snippet": "Man Utd summer transfer 'stalls' for Premier League star Football365",
+          "published": "Tue, 28 Apr 2026 07:00:00 GMT"
         }
       ]
     },
@@ -4119,9 +4406,9 @@
       "id": "carragher-refuses-forgive-mac-allister-liverpool-press-conference-c7727dad",
       "slug": "carragher-refuses-forgive-mac-allister-liverpool-press-conference-c7727dad",
       "sport": "soccer",
-      "headline": "Arne Slot press conference: Facing Tottenham, Liverpool's form, Ekitike, Jones and more",
-      "blurb": "Arne Slot press conference: Fulham draw, Ekitike injury, Wirtz fitness and more Liverpool FC",
-      "summary": "Hugo Ekitiké, Mac Allister and Jeremie Frimpong: Arne Slot press conference: Fulham draw, Ekitike injury, Wirtz fitness and more Liverpool FC Arne Slot press conference: Verdict on Liverpool 1-2 Manchester City Liverpool FC Carragher refuses to forgive Mac Allister for Liverpool press conference LiveScore Aggregated from Liverpool FC, LiveScore, YouTube, Football365, footballtoday.com.",
+      "headline": "Arne Slot press conference: UCL qualification, season review, Robbo and Salah receptions and more",
+      "blurb": "Arne Slot press conference: UCL qualification, season review, Robbo and Salah receptions and more Liverpool FC",
+      "summary": "Hugo Ekitiké, Mac Allister and Jeremie Frimpong: Arne Slot press conference: UCL qualification, season review, Robbo and Salah receptions and more Liverpool FC Arne Slot press conference: Sunderland, Champions League qualification, challenges and more Liverpool FC Carragher refuses to forgive Mac Allister for Liverpool press conference LiveScore Aggregated from Liverpool FC, LiveScore, YouTube, Football365, footballtoday.com.",
       "category": "injury",
       "published": "2025-12-19T08:00:00Z",
       "updated": "2026-09-10T14:00:12Z",
@@ -4236,6 +4523,22 @@
           "kind": "article",
           "snippet": "Arne Slot press conference: Verdict on Liverpool 1-2 Manchester City Liverpool FC",
           "published": "Sun, 08 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arne Slot press conference: UCL qualification, season review, Robbo and Salah receptions and more",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMXU5SWVTbHlDN2pDeWlvam1mQTBvTE5EMXZrNENtLXNBTXpQeXJVM21xRmhBdWVfTWd0RDB0Z2t3TkRzbXRfczFsNEpIZW1vR2dNUzlvNzJ3ZnZLallQbjRmbXlQS3d2d2Z2bENFVkJzVkhlSkZ2bXBGNVhTMnE2dUtOSEtWX2xQb05hSEhQRHJRTi1YTGliQnF1Tl91RjBFLXY0LUVKNXRDc25LQ2NpVFdva04tdndWYkhhWXhURkZnR3RWRlHSAc4BQVVfeXFMTTZzbmlqajdMSjB2cUxkU0d2TDZLanBiSmp1YmF1X3pYVEJSdWpxZzZhY29vZkZobDcxVHo4Sld4aUk4Nmg0UEZpUFdWU2wzV1pybXM2cnBoSVNackNiQkc1cThabkhybUR6YUUzblpXeXlWdnllUEV3S3ZlZTJ0TDh0WUt3SUxMbnBNWFdQeWVjaS0tNk1KZWdFTEx3ekRRV1F4YTZaU2x6NUdzZ3FIZGthWFVGUEhmblhpQVJZbE9yTGVHcW5KaWdBcUpaSnc?oc=5",
+          "publisher": "Liverpool FC",
+          "kind": "article",
+          "snippet": "Arne Slot press conference: UCL qualification, season review, Robbo and Salah receptions and more Liverpool FC",
+          "published": "Sun, 24 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arne Slot press conference: Sunderland, Champions League qualification, challenges and more",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOS3cwWlBEWFZxWVZFWjZKVFdaNEQtWWVLa2ZBbm1sTE45MHZ5c19TTlYzVlpSaUhfMFFPY0l6WDcwUEJtUUZBMjZBcnZORmVNbWJWd1pPTEI0aUVObGtFTHVFZG1UMVYzQlNLM3pVUXhJaUlxcUtMQzZhWTV1U3VLMGc0YkpBb0Uwa282WE9OU3lGSkIwNUliOEdJYTQ0RzcyTE41V2xCbzB3QXVzbXo5cmszOUxJY2JwTzdDNTZR0gHGAUFVX3lxTE5nWmVabmo0Q3lrOUZDMDBMLXVVb0UzcExYeFBmSjBRMWQ5Z0EtQ19uT3BpdUlJTWxZaDB4SXVCdnZjejNET21NQ0lTcWJaOTJFRnJzM0hxUEJCREhSUEpaV2NKR3pSLUh4YmE3WUxrSHlWYi1YWE1MSmNTRjQ3am1KM0VrcGZrZ3kxaFFMNWphanBQM1EybE8zNUlieEtxeU4ydDFBakZIaFVCT0hUSDJqdkxMbjJVbzIwZ2E1TlJ4R1RhTC1nZw?oc=5",
+          "publisher": "Liverpool FC",
+          "kind": "article",
+          "snippet": "Arne Slot press conference: Sunderland, Champions League qualification, challenges and more Liverpool FC",
+          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
         }
       ]
     },
@@ -4610,128 +4913,12 @@
       ]
     },
     {
-      "id": "bruno-fernandes-man-utd-future-depend-champions-league-b43b1b24",
-      "slug": "bruno-fernandes-man-utd-future-depend-champions-league-b43b1b24",
-      "sport": "soccer",
-      "headline": "Bruno Fernandes' Man Utd future will depend on Champions League qualification and Michael Carrick",
-      "blurb": "Major update on Bruno Fernandes' Man Utd future as he enters last year of deal The Sun",
-      "summary": "Major update on Bruno Fernandes' Man Utd future as he enters last year of deal The Sun CARRICK: “IT FEELS LIKE A DEFEAT!” 😞 Everton 2-2 Man Utd ⚽ Premier League YouTube Bruno Fernandes: Man Utd captain breaks Premier League assists record for a single season Sky Sports Aggregated from The Sun, YouTube, Sky Sports, London Evening Standard, GiveMeSport and 4 more.",
-      "category": "injury",
-      "published": "2026-03-03T08:00:00Z",
-      "updated": "2026-09-10T10:15:57Z",
-      "players": [
-        {
-          "key": "bruno fernandes",
-          "name": "Bruno Fernandes",
-          "slug": "bruno-fernandes",
-          "pos": "MID",
-          "team": "MUN"
-        },
-        {
-          "key": "fernandes",
-          "name": "Mateus Fernandes",
-          "slug": "mateus-fernandes",
-          "pos": "MID",
-          "team": "TOT"
-        },
-        {
-          "key": "shaw",
-          "name": "Luke Shaw",
-          "slug": "luke-shaw",
-          "pos": "DEF",
-          "team": "MUN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "CARRICK: “IT FEELS LIKE A DEFEAT!” 😞 Everton 2-2 Man Utd ⚽ Premier League",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8xSEVhMnVteXFnd1ZtZlgtZlM3MGwyV0o3Z2pxaWl0TW1UUjNEaVVQZEFDTjY3ZjRQYzhhb1NBYmNUVUthSkRtUDZsMFh1cjU1andBenln?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "CARRICK: “IT FEELS LIKE A DEFEAT!” 😞 Everton 2-2 Man Utd ⚽ Premier League YouTube",
-          "published": "Sun, 06 Sep 2026 15:38:11 GMT"
-        },
-        {
-          "title": "Bruno Fernandes: Man Utd captain breaks Premier League assists record for a single season",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPTlJRTGUzQzFBNWpqcjBUWFhJTzBNbElERlUxbk40T1prX3lfcUFfTnNfWW1vNVlVT1VwT21MdXktYllNYXU5dTl2dnFSaUtvNFpQQjZsbXJ5NnJndFlZN1dRU2hYNmN6X3B2QkRSRXhneTN5bnhXS1pUajdBOUxLN3d3ZlFHeDJneWVWTW1tU0xkd01sRzB4RU1QY1FLQUVLZjZPSWl3bldtWG5MVnBIWF9KbEI0UndsY0dvdHNmR015QXVtcTFPVGhjLXc5R1I4V2xPLXU4cjYzckk?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Bruno Fernandes: Man Utd captain breaks Premier League assists record for a single season Sky Sports",
-          "published": "Sun, 24 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Bruno Fernandes' Man Utd future will depend on Champions League qualification and Michael Carrick",
-          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQSHFxZ25ZbC1xZWhPQVZKTnlvRXcwU2hDRncwYWZtcS1zWW1NcC1WSzJxQ3djbjJSOXFmSXRqSjR2LXRQMTE5RHVsWkVBQlRJZ000bFZQRXVvbE1PYzJhOEhPVGh4Qkg1QVU1NnRWRGk4VHI4RlNQclVhc05Dc045SWJBTUROTHQyR1N3MERQTGFOMmpXNXZtT3pYRTRzT2U5SWlSY0oxZkdLa2RnczBqbElsdHUwX28tQW4xQUtJbHhRalBFc0xhTWZ3NVZRMFBBYnFTaHdNeGxnS3VsTjRrTW9YcFNXT0ZXYklrZEh2WVBDZEc2dkVaYTM3X0JHWGtJYVpycHdKSQ?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Bruno Fernandes' Man Utd future will depend on Champions League qualification and Michael Carrick - Paper Talk and transfer gossip Sky Sports",
-          "published": "Tue, 03 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Fernandes equals Premier League assist record as Man Utd beat Forest",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONGNpWXdhdFkyMDlYQU9mYXRQVzZ5WGRrbkVzUF85T2dLVVV0VzR3dTVBOXo4Y3JFaWJmVm9XZDZoVjNtZHRaSlpzSFA5Yl9GUi1RMk5wREoxSWZyeElFZHVaNWdFU1hlbVVKMDBZYXI5cmF6TXRhMGJyLXNIOTJHUGVaVlBLNjk2ckhJZi1nU0VZV1F4ZXp0U3pnbEtjTm1MbnN0bVctTTQ3SUdV?oc=5",
-          "publisher": "London Evening Standard",
-          "kind": "article",
-          "snippet": "Fernandes equals Premier League assist record as Man Utd beat Forest London Evening Standard",
-          "published": "Sun, 17 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man Utd: Decision Made on Bruno Fernandes' Future Amid Saudi Interest",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTUwzWTQ5Q1RKdmk3ajY2R2lFem84WGZHMU9wbWE0X29Za2VxYWNCeFBNcWNUZkt3Tm56MlZGU09NeWFLMnpOaTYxNnZ4UW1OYVRZU29vNGRLMF80emRLRnMwVHpGN1BPVFdQdE9CZE1iRmRfV1FocWlaZ1JTUU5nOGNLTXE3WF91UEN6bWpB?oc=5",
-          "publisher": "GiveMeSport",
-          "kind": "article",
-          "snippet": "Man Utd: Decision Made on Bruno Fernandes' Future Amid Saudi Interest GiveMeSport",
-          "published": "Sun, 19 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQkNFOVBtSlJWeVBlRnFVZXFwQV96a0VYaG5tYUcwaHVzUVNtQVRQZGdHV0pCYlJiczJGSlJFSnRnX1g1Z2JtTTltM1RteXdjZHNTUWtLODVYRVhQRWhTb2JETzgzSnY3U01naTY1dDdmc3RGbjdLMGpsNm5tUGVjNlRnMFFZTENKZHZKUUVqM0VTdEZqNktjUjE5UWxhWm94cmVuaEFXd0g5VnZSM3VjQjJlc2FGNlNockNwQ2hWeDNtYkV6bWZWbUNQTnE4cG81cThSRExsRQ?oc=5",
-          "publisher": "Sports Mole",
-          "kind": "article",
-          "snippet": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup Sports Mole",
-          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Rwandan eyeing Champions League history against Man Utd",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c4g7zxezj9lo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Rwanda forward Joy-Lance Mickels has helped Azerbaijan's Sabah reach the Champions League proper on their competition debut, and is now looking to down the team he supports.",
-          "published": "Wed, 09 Sep 2026 14:41:38 GMT"
-        },
-        {
-          "title": "Why Luke Shaw misses Man Utd training after Champions League injury scare",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYUQxTld6ZkhiWnJNN0xvdFlPVkdOWGhkY3BoVEpVcTVGYWNpZWxBaEZIOG5iVV9ITUxYcWlJRGMxT2NDSjFwaHZYaFZfWXFrTGtzeTVTeUpuZGRYUXpWMXJEUWszbW8yTDNpUXRKRlNWM3pNRVpISko5SmJnQzNjWXJhaEprUG1EN01neDF4Z1NRX1pvUUEyZTh4QThvd18ydFVMQk1kZ9IBrAFBVV95cUxOdXAtR19oZ0VZRVNRcXp3aTFvRURYQ3lQSU9nSVhQTXd1cnFRTTJhVTE3Q2hLNndLZkN4bXRSeHJ3QUxjeThadXJZQnJDYXhpM1dqdDdhYUdDbjgwWWZycUJ0TVFxc2pDNmlkZEdSa1o5MFVoMHpHLU9xYl85WWtyN09OSGliNmNvcDVBeHhJblBIRVllaUpMS3JLWGNnWHZsb0FIQWlHNG5JTFQ5?oc=5",
-          "publisher": "Metro.co.uk",
-          "kind": "article",
-          "snippet": "Why Luke Shaw misses Man Utd training after Champions League injury scare Metro.co.uk",
-          "published": "Wed, 09 Sep 2026 11:25:00 GMT"
-        },
-        {
-          "title": "Every Man Utd Injury Ahead of Champions League Return vs. Sabah",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZWFHaDFiYk5lRk1ORTBXSzZkWU9zWUJEdkFFcHMwRW5URk1jMnNGSllJMlI0SDFWWHMxNEZSWVlrLWs5OTRUTmZmYkljMnNxWGQyVE5DQlZMMmlzU2JWc1A2WEVCUC16anRWTXlrTFM0aEJqUklFX3FJbW5DM1NvZlB5eDBORDRJUkw0RGxPcUtNMEQwMzZwa05TOUNOWk9mN28zd255X01xZ0xHRVZWWVVWM0FwTFpoXy1yNjBQaEdtdw?oc=5",
-          "publisher": "LiveScore",
-          "kind": "article",
-          "snippet": "Every Man Utd Injury Ahead of Champions League Return vs. Sabah LiveScore",
-          "published": "Thu, 10 Sep 2026 10:15:57 GMT"
-        },
-        {
-          "title": "Major update on Bruno Fernandes' Man Utd future as he enters last year of deal",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVTNCSkJIYnFQMW5OR1JnV1lnMDJ4V1A0dHVqVjEtclBtYUpCZ09oVTM4TXA1R3MtdDVZOTRlYTQ3THZ2UjF4dHgxVjZJcktNTml5R0JTbktucGF4WGZoNkZweVUteEkyLXcxNDV6cllYVzFHRFJBWGI5Q001TVBzVkxoR0lmSmh6VERfaEhrTXJQTnBpMVpLTWpaeUZ4bFpOVkJZRmY0R0dybzJvbkdN?oc=5",
-          "publisher": "The Sun",
-          "kind": "article",
-          "snippet": "Major update on Bruno Fernandes' Man Utd future as he enters last year of deal The Sun",
-          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
       "slug": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
       "sport": "soccer",
       "headline": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
-      "blurb": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-      "summary": "Alexander Isak and Carlos Baleba: Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC Alexander Isak and Carlos Baleba: The Alternative Premier League Table: No 12 - Who have injuries hurt most? - The Athletic The New York Times Man Utd 15th & Liverpool 5th - Which Premier League clubs have suffered most from injuries? Aggregated from BBC, The Guardian, RotoWire, Yahoo Sports, Sports Illustrated and 18 more.",
+      "blurb": "Who's Missing: Premier League injuries & suspensions for GW36 Flashscore UK",
+      "summary": "Alexander Isak and Carlos Baleba: Who's Missing: Premier League injuries & suspensions for GW36 Flashscore UK Alexander Isak and Carlos Baleba: Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC Alexander Isak and Carlos Baleba: The Alternative Premier League Table: No 12 - Who have injuries hurt most? - The Athletic The New York Times Man Utd 15th & Liverpool 5th - Which Premier League clubs have suffered most from injuries? Aggregated from Flashscore UK, The Guardian, RotoWire, Yahoo Sports, Sports Illustrated and 19 more.",
       "category": "injury",
       "published": "2025-10-13T09:10:16Z",
       "updated": "2026-09-10T16:03:00Z",
@@ -5007,6 +5194,14 @@
           "kind": "article",
           "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
           "published": "Fri, 22 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Who's Missing: Premier League injuries & suspensions for GW36",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdG11RzlmLXByLUpuTWltek03a0c5ZmkxcXMyQzlVM1N3TnVuLXMzLXJTZTBYbGNKaGRHODJJV0FXTUh4VHNrRjhFckNwWVRYU1FjUmpuc0lWTFhxaEl6SXNISzdRcVRqU2Q0Q1QzemlGeFFOQVVESzdIalo5WFkyX0JYTHBpbEE5Q3hScU4tNk1yekU0TU10OHlwQmZNMDZfZWhaZkRyNzNLNVhDN2FsQ2VxM1k?oc=5",
+          "publisher": "Flashscore UK",
+          "kind": "article",
+          "snippet": "Who's Missing: Premier League injuries & suspensions for GW36 Flashscore UK",
+          "published": "Fri, 08 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -6042,11 +6237,11 @@
       "slug": "reddit-streams-san-francisco-49ers-v-los-angeles-c0ca8792",
       "sport": "soccer",
       "headline": "[Reddit/Streams]!! San Francisco 49ers v Los Angeles Rams Football LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026",
-      "blurb": "+!(BBC-TV) San Francisco 49ers vs Los Angeles Rams 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 29 July Cal Poly Pomona",
-      "summary": "+!(BBC-TV) San Francisco 49ers vs Los Angeles Rams 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 29 July Cal Poly Pomona [LIVE*sTrEaMs] Los Angeles Rams v San Francisco 49ers Football Live Reddit Cal Poly Pomona (++LIVE&STREAM..!!) San Francisco 49ers vs Los Angeles Rams National Football League Live Streaming Cal Poly Pomona Board reading of Cal Poly Pomona.",
+      "blurb": "Los Angeles Rams Football ＬｉｖｅＦｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+      "summary": "Los Angeles Rams Football ＬｉｖｅＦｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona Rams v 49ers Football LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona 49ers Game 1 LIVE Coverage ON TV Channel 10 September 2026 Cal Poly Pomona Board reading of Cal Poly Pomona.",
       "category": "wire",
       "published": "2026-09-10T23:04:40Z",
-      "updated": "2026-09-11T00:27:26Z",
+      "updated": "2026-09-11T01:23:26Z",
       "players": [],
       "sources": [
         {
@@ -6208,6 +6403,294 @@
           "kind": "article",
           "snippet": "[!WATCHLIVE]4K!] Los Angeles Rams vs San Francisco 49ers LIVE STREAM Free REDDIT Cal Poly Pomona",
           "published": "Thu, 10 Sep 2026 23:04:40 GMT"
+        },
+        {
+          "title": "*[WATCHLIvE]HQ*!] Los Angeles Rams v San Francisco 49ers Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZW9PM3pJOEc0VWVSZzVxeHVKNnNyWjRaTUJGTkUwSHFZNGlzMTE3djB4bDVWLXB3NS11YkFWcU5KMkhlNUY1bURTaTNQdVFTTVRvdFFZLWJYcGZpZjdQZFdpeExpbXVNQ0RrSTV5R25JX3VYNW1MclZ1bVUzazJ4dU1nTkV5OGZkN291NnU4di1qOXdSOG5NRGVPeWpvWWhXQXJCck9YLWNDeTEzZFhzTWRCUm04UmpxcnpxNXlEbkQ5NWhzdlFCMF9wTlJRd2p6TTVQS0NEUk5udkdDcm1NRzZvUjdCS2dLcXdZRUIyUmtneDJxM0dleTRR?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "*[WATCHLIvE]HQ*!] Los Angeles Rams v San Francisco 49ers Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:06:20 GMT"
+        },
+        {
+          "title": "[**LIVE@STREAMs**] San Francisco 49ers vs Los Angeles Rams Nfl Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQeEZXT2Rzc25teW9uLVRtV0JxQm9HMThGZjVBME1ySm1oY043SXZ4d1l6M1Z0aTNmWWx5VGhObjJ4N3E0dTQyR2tXMVhTZ2hJQkVjaHc0SWcyME9GX3FEeUM3TTZJUGU1RHhJSmJaUDN3TWpVa0FjT0MwcHAyU2RFcjZKai1qaGF1Z2ZEN0p2V2Q1MjUwemE2VFBEbHg4ZVlxdDBPWUpMOXNoeG5JRC1OcGhTcF9rRGhnMTdJVWNJRDZuS1NNaVhpSGNkVTk5TzhROTVDRmNydUthYTVZajFWd0pOVkJRV0g0RFM0Nm00THRadTdYS3hqOFdPSWd5Vzg2?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[**LIVE@STREAMs**] San Francisco 49ers vs Los Angeles Rams Nfl Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:21:46 GMT"
+        },
+        {
+          "title": "(sTrEaMs Coverage)! San Francisco 49ers v Los Angeles Rams Nfl Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPOFp4UzMyM0ltYkItNmtqUjJEYndnWTdVT1VGN2lteFhIZklvZFZIaWt3d0szWmo1UUJKUmp0UGV4QTk0TjZ4a1Itdno1c1RlSUNnUmE1b1BmUm5iM3lxWWdfdjVjOUZKS0sya0o1N0ZHUkFTczBCdURqUjU5Z05jWEc2SkZEVzhuWU5ITk9zUmQ2ZmpNbFlYS3hfbEdjaVNGUktLWHVadzBtVE9QUjMyS1BIMDVBcy0xOFRJSWxaTTJZbEptSGFWWGdwMGdHSm51Si0tTGlCblRyZjBiYmxCTFVlbGtDbDRRNEJwZmpSamxfY0VsTDh0cUlVREc?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(sTrEaMs Coverage)! San Francisco 49ers v Los Angeles Rams Nfl Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:22:53 GMT"
+        },
+        {
+          "title": "[**LIVE@STREAMs**] San Francisco 49ers vs Los Angeles Rams Nfl Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNMDdwaVNER3JqWU92UDkzWlFnZVlMd1lmYlRsaURiSzFqMlR0bS1sR1BsNm9tc3EyR0FtNWlYRkFZYTZjSHU2TWFIRFRGTFMxejRqYVp0UEFBQksySG12QTFEU3VOQThPMFpYSVNuOXdBZTQ2TDdIUjNzVGF1T0Y3SmxSTEl2LV9rTkgyVFdnSGNhUjJ3d1lvNW1XcXR4T3k4d3B0Umx2RzhlSlh6NjlVdHVCajkxVVhjMk13SzJSRGkwRmxGeEViVE5Ua3JXVXVtaEhZX3pVVlVTQ1VqbWhqdzNnTlk4b245LUExUWVfREE1eE9pcUF5SjVxZ1lyZw?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[**LIVE@STREAMs**] San Francisco 49ers vs Los Angeles Rams Nfl Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:10:19 GMT"
+        },
+        {
+          "title": "[LIVESTREAM]FREE!!] Los Angeles Rams v San Francisco 49ers Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxObThPR3E1cEJ0ZWRwYWZEb1lsazJQdFpUTkhLU1ZWNGpzUU03LTZLWDVPelcweTVLcm90dlJpODRidldaTF9Id2ZybTQyWHBud3M3T2xfVEdHSWJxRXpNRWcxdDdtLUpuYlVNTkF4UzV3U2libXdZbGZfbmxfUDA5ZzdkYms2alh4RjlfU3hVdE1HYW1zdEJMamcxS1hHTkkwc2dNd0RNdFNESlR1c3QwWlhYVDJrUmdhRG1JZkFqVjkzVnhXZ3RsRjRZMEpfcHpteVgtRFdhYkw2LWNuYXhGNktJYUd4ZTJzOVh6UERIZEp1TWdTemFz?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[LIVESTREAM]FREE!!] Los Angeles Rams v San Francisco 49ers Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:06:01 GMT"
+        },
+        {
+          "title": "(ＬＩＶＥ!) Los Angeles Rams vs San Francisco 49ers LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOSEtYN3k5dmZuS0dNVkZvZkQtbXhBT1EzUVhVeVJvYXhIWUtlZVZwQVBWekhrenp2TEdvMkR3NVZDSUZSMHNuZjRZTFBGSHlibzlxaGJ5a2NuZkppLXFvQ2lmMm5GTDV4ZFdiYm84UzRyRUJMR3ltODEyV1ZEdzFSdkplSjZKclBwM1Q1M0RNT3lQbnpabWV5TEZUQzE4SGREUzRFT0c1d0tDTE5WUmkyZVh1UXdldmpWaDlteGVBYXV6Zm5CTUdXV3hVYXNLLVZJcTZ4SzlfaXpXZGk3cDROVFp4bWpVcE4tQ2hMSHVQZw?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(ＬＩＶＥ!) Los Angeles Rams vs San Francisco 49ers LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:14:58 GMT"
+        },
+        {
+          "title": "[CBS TV ]] San Francisco 49ers vs Los Angeles Rams Reddit Live Free",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZV9WdjJ1SmJsa0hqMnZyM0tTY1RIb3ZENnBpUG9ydFdvTU9LdEtDeUdoTHhZaTVadDIxZ0h2QnhLWjRPY014OUtSNlRIeHdXUE1OcWxHRzBzNTdNcW5va0hFNEVwbDN0Q1JzS0pWVjM0Z2lwakctLVUtMWdNal9Oc3BKUGJKMFg4c2RIX21yWkJXSG5QQkdGdWgwblkxeC14N29mU1pNaGhxZEtJcDNmRGFXSG96SWFWTjlKaFBTOUlUblNObDdvcGxibVNxSk0wMzg1UlRYUUxIZ1RYM3lFSDFDNTJvY185Mk1ZVw?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[CBS TV ]] San Francisco 49ers vs Los Angeles Rams Reddit Live Free Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:14:57 GMT"
+        },
+        {
+          "title": "[LIVE*sTrEaMs] San Francisco 49ers v Los Angeles Rams Nfl Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNOHZiQTl2Tnc2VFN0VzBYYTFPY01RV1I1amE4UjhIU1ZrWXI1YU5Xb29UdHM3RWFGb3dyaktrNDhsSnRuLUh4dTVaUWNxc2lfYTU4THFwVkRXeHM5N1M2bVZNTV8tc3lwcmdMd3Z6Z2FhRThrdGkxRUlob2FKRUpiVWxlQmFkNUx6Y09ja1d5ejhWUGhTOFFHUDNKLVc3ZnYtTk1sQW9IRVRjSjdCVWt2QWtUVFlzakN1d0RLSGh1SHRfNXlvX1VOM2xVcUNJWmg5WldEYVN0Y1d1TGlXUmJ1SFBEQ0c2SF9xaW9kalFiUTZSbHpWVmtZVURtUQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[LIVE*sTrEaMs] San Francisco 49ers v Los Angeles Rams Nfl Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:12:21 GMT"
+        },
+        {
+          "title": "(ＬＩＶＥ!) San Francisco 49ers vs Los Angeles Rams Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQN1lIMWFaOXM1ZXZ4d1VGUTgtSEptdkZyUmhUOWk3dVJNdE1jUGl5dU9nbGZNSEtCWEFMTjdhMUo0UkFVVjQxejB4WTc2MDZLX09LUW9RZGRtU3Ficnl1amlrS2hNaUlfNTFCcUhzaVZwc3FMWWRiemszNFVFM1M2RV80aU5zY2kybTNKaDlzOGY3R2Jyejh5QWZPaHBGcEk4dU5nSExqcE5jbnNxOTE3WWswOE82NF8xMS05WDdnaTl5b1hJM2pKZlZCVUd6SkRUcm1pbjlybTZ0R2dEb0kybmgyRE9LUTZWRGJfd2pPZlV5eXlYVEw0V1ppSQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(ＬＩＶＥ!) San Francisco 49ers vs Los Angeles Rams Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:15:58 GMT"
+        },
+        {
+          "title": "Los Angeles Rams v San Francisco 49ers Football live: Los Angeles Rams v San Francisco 49ers Football look to seize control of thrilling Los Angeles Rams v San Francisco 49ers Football. Every team in the Los Angeles Rams v San Francisco 49ers Football",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPWFk0YnlsMHpJaDJMWWhIb0RqbkdfNXZnTFpITl9kUU1YcC1mM1UtbEI0NWc2UjFaQmxPNzVyblFUdXBObFlXWnZaVVc0RVF3eTRqUlVVaS03ZjZFUi1wTlpsOTR2NkFycUF3ckhLNVJDQWJZYlprdHZYeHpwOHpXNkxkVnJJV0J5c092bDFJajU4M0pmVmt6Z1NPbWRRa2VNMUtPTGUyZmtlUXh4VjlTM0c2dnpydXJjd0V2M3RxWUpqRGRQdDNFa1dSUzQ3TkdVazVmOFZEM2NsUDBWQjU2Vk93NzhEOGVNemZMMUl5QjhSZl91SllV?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "Los Angeles Rams v San Francisco 49ers Football live: Los Angeles Rams v San Francisco 49ers Football look to seize control of thrilling Los Angeles Rams v San Francisco 49ers Football. Every team in the Los Angeles Rams v San Francisco 49ers Football Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:07:51 GMT"
+        },
+        {
+          "title": "(WATCHLIVE!FREE) 49ers vs Rams Nfl Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOYlVmZTF6U1ZpcE1fS1cyWnhTUldINTZGcUc0d2hINm1zYXM2V2IzejNieXhmcm52LURycHZwSnlndzNhRURQY0thNVFrRTczSEE5VGZ4cXRNSEFhNkxGbTA3aVZGZGdmeDdqWk1ldjRUa3d1THlleFg2MDJvaUhjMlpVb3ZEM0pfcmNZSjd1VmxWWXpSWldQdUR2cjBOOHRLLVNhdjIyYzZYVm9nREtCOEtrSlZscUY4NWpBU3phNGRrZXFqWDFndEFEWXJtQ0VzUGZ5MTh0V051R0hHT0E?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(WATCHLIVE!FREE) 49ers vs Rams Nfl Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:21:11 GMT"
+        },
+        {
+          "title": "[LIVESTREAM]TV!!] Los Angeles Rams Football Reddit Live Free",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQzR3bE13VW9jZGxZMmd6cmswRFB6TG8xd0NiaTlCcWp4NmQ1b0xlUXI3RE0yd245b0ZCLWhYbzNBY2dKVXVDRk5ZYVFuRzhBbWpzMGVMYWxGcVpwYmpoVUlTRnZWa1YyM1ZNeHJzUVFTaENjTHNPVXBxU2wzeHR6SVc3NE1yaU5jZ2x6Y2FQckNrN3d2T0pBdGJacHFsOUU3Y2dYNW5zUF9HdVM4bFVxcFViTFA4NTZqVV9NR1p4M3Q1WkZqVDZjX2daX0JKdE1GdHc?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[LIVESTREAM]TV!!] Los Angeles Rams Football Reddit Live Free Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:08:29 GMT"
+        },
+        {
+          "title": "(NFL-FREE) Rams v 49ers Nfl Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZkxVR01KSFRDQ0NNTUdIWklvMFZNMnBBdUlnbDhIVGZQaWh3a0lnNGJYNG9qVW5UUUVBSmNxZ2ZVZ0FVU25aV3JwNHM4WTIzRGlmeE82QzltSGloRTd3T21taS1KVDItZ2NIWjNzSFJUZDdjOVRZRWtVUDh5TWNzemZDc280a0QwdDg1RVNSVllUTXdVa3k4QXA3OGtvdm1yV3gtZXVTUHhFelZobC03ck4zY0djYVNGalowbGY5c1c1ckxsakc1YXZETlJpQmlaMFkwYjVkSHd2Zw?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(NFL-FREE) Rams v 49ers Nfl Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:07:52 GMT"
+        },
+        {
+          "title": "(ＬＩＶＥ!) 49ers v Rams Nfl Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPcXAtWXE3cTlqSzlhNDZncXpqY2NYYW0yWVBzdDd0RThuYXo2SHI0TUtJY3hGNjlRR0doQXFhTDh1MXYwdEI4TTdMekNUYXdDenNUZ2hWZ3hsRmhrYUROckZLYXRsWS1Pck43ckJSV2dEUGctWEk2UTVYcHNDcEx3cms3RGFSM3RORENMVy1TR2NWUDdZWG9ZNEVPU2Zya29oSE8wOWhST1dsUzcwaWNIT0pnUXdzZV9UQzAzdXByY18yN015NEN4cUh3VjFzLXNYZG9rMHJJQjdfZnhk?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(ＬＩＶＥ!) 49ers v Rams Nfl Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:20:31 GMT"
+        },
+        {
+          "title": "[STream]HERE'S*! San Francisco 49ers vs Los Angeles Rams Football Live Stream",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPSnNBZEYtVjNmWEw3cXNLelVuUFVZbmFaQW83a0JVS0xXMzZvNXJZdDVMV0hXdEw0c2JjWDhZSkt2Y2lMTTBwMmZma1NkSjNKdDhHbWxMbUtpWG93M21BanBWN3hoSEtoVV9sa2lxNEdrQm0weWJWLWRyWU9UZ3J0Y0FBMHd0VVZ2Y1ZDcFM1ZngwVmtRZ21jSVFrcFI5NWx1djNMb0tyU2kwT0piUzQza2tvMGtSejNOaVZhUWFlOVpYdF9IdUs5bndwSFkxcjcyLWtnSTgwSWpUOE9wMnhMcGJxb2RtelRzcEZONXRMQzU4S2lMbmNB?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[STream]HERE'S*! San Francisco 49ers vs Los Angeles Rams Football Live Stream Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:14:58 GMT"
+        },
+        {
+          "title": "(NFL-FREE) Los Angeles Rams v San Francisco 49ers Nfl Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQWmJndldwWVR6TkZqczZrc2w0ZFdQemlFX0lOaVoxWG9CYmdmQWY0amVQcFY5YlktVGtsUmMxWGpQRGg1cnBqazRZc1VwMzlDQnZDUUt1VnRmdjgzZmlSTnoxc1dYVmZhZXc3ZWJVSlp3LWpKRXdJQmJrV3JiaU9BLW1JSGlYakxIZVRYem1ZNlVOUFAtTy11MC1HSkREQ0t1eUJCc2pUajRmNkEtdkpIOFJ3TEN5cUZ2MVczV21fTGdHS3RsTlRPbXA2bkk1M3Z5QmlLNjVwdXl5eTRoNjY2aVR4bUttZFptY1JhZkFCSXpmQ0RGTTlFOTFrbjU?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(NFL-FREE) Los Angeles Rams v San Francisco 49ers Nfl Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:07:52 GMT"
+        },
+        {
+          "title": "[Nfl/Streams]!! San Francisco 49ers v Los Angeles Rams Live Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOaTRZVXMzYks0QmVsVmtNaXQtQnJSMEVEdWU5dE1FUGIwNXFXZnJLMFZYYnphV0cxQzNYOWNMV1JmRml2bXBqZWFHTS1MaEZwWEtxLVZYeU1STEh5UEtpTHhmcThRYkdRckJQcnpYb0U0b1NTQ1ZRTVNSSzJhcUdkN1VWRDN3Mld4bG9tUkZlWXZaWXR0cXFqRGo3ZDV2eG1jaTZNX0tZclRZbFZULU5kbDE0U3Y4WERzakdHQk5pc0liZzA1TEQ1d0o2b3BaRUQ3VzNlanUyeEl0dThDRDYyYTBDLXVJeWM0dXc?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[Nfl/Streams]!! San Francisco 49ers v Los Angeles Rams Live Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:18:19 GMT"
+        },
+        {
+          "title": "【【Live Streaming!! NOW】】 San Francisco 49ers v Los Angeles Rams Football Live Reddit",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQaV9Nc1FSeU1TajhHby1KNTBuRzBrQW05d3F2MUpGUXlodWM3Wi04VGlmT3FDY0p5VUlaN1ZKdmRSam1jNmhGb0FRUzh2QVNxOFRod3lrR3NmbXpIMTFKV1cwc09INS01MGNZUDlUWk9zLXdYdXdwdUhhWk5aRDY0S0R0NzBEdGZFbTFZUFlzRUlobWNOSC13Z3huNVI5Sjg0U2UzYUE2aDVHODdxbXAxaUJjdEFaVkRTeXdXQ0JyY3M1QTZaZU5LVk5fX3NITUxHbnBDRV9iektqa3k2M1dqMklES1BaOWwtWWcyWW1UZ2xOQ1lUbFZn?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "【【Live Streaming!! NOW】】 San Francisco 49ers v Los Angeles Rams Football Live Reddit Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:11:11 GMT"
+        },
+        {
+          "title": "[LIVESTREAM]FREE!!] Los Angeles Rams Football Live Broadcast",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMFgzXzNvWWY1WTNrSGVyRjk3Zy0zbnR0OGVNVC1xYkhYSV9nemlRWGdUZjJjYkg4cmhsVjJLVFFtV2p4ZmpuRXhGdURTWnVzNXlqNGtPeDY4RTMtcFByRXNWY1VMM0RnVnBmNmFqaEZUSXhkdkl4M0d1WkxGd1RUZDdzdzg4Znozb2Q3N3lyQXBPSG9lcXV0a3FSdDdRbDROM3V1R0dLT1M2a3gzZmhNRHJDUlVmeE4zVmw2QnR0R0Q5cmJvUmZia3JXa25xNVRMZEl5amlRTTJzQQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[LIVESTREAM]FREE!!] Los Angeles Rams Football Live Broadcast Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:22:46 GMT"
+        },
+        {
+          "title": "[CBS TV ]] San Francisco 49ers vs Los Angeles Rams LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdXk0bHRueHpjOC1wckg2bXlZcEpjVzN5bUhadWRUbEM2LXhrYVpKcjJsM19GaDB4N3hzdUQxbDVsUkwxTkFyRU5scmt2UzNmWW4ySklBMTNsUXB6YTRDUDB3UUh5Y2ltM0VYX0Jualh1SlF1akVibU45QWhaRC1DeF9ibGI3XzR1RFpnZHVaWXNxb1dmVEpZeEdPMlNHYk8tSk94aEMzNm9xazFkSW55eVRBc2lodnpCTDFLWnlSaGpLREVuSl90cVBpbEt3cDhjWnVEd055QzhMREJjODJEYldxNzVBWm5jQ3pEQ3VXYw?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[CBS TV ]] San Francisco 49ers vs Los Angeles Rams LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:22:34 GMT"
+        },
+        {
+          "title": "[**LIVE@STREAMs**] Los Angeles Rams vs San Francisco 49ers LIVE Coverage ON TV Channel 10 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQbDhEY2JIcWRvMlFZV1JxUll3czFYRWc1dkFRR2lHcFpMYXJwemRBUjhreTAyNG9VS29PRnY4amNZYk1hMkhaNFlEdjVJR0EyUVZIOWktNFR6TG9BQmtWc0hZRWNZSVJsNTk2Y2dZVURUc0tHbkp2eFFtd29aNTEwVjlPVHZnNTNTRzVJY3g4XzlmUGRlaGpXVXZEaU9EbXdPM0tYTzNxaG9uZ3Zia2pWb1ZQS1dCdllNQWc3SzNrOUQ5bjNlMC1xZDR3V1QtUHFUMlZveDJnWnd5SkZjVmxWUlNmdGNuR2V2cktoNQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[**LIVE@STREAMs**] Los Angeles Rams vs San Francisco 49ers LIVE Coverage ON TV Channel 10 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:20:40 GMT"
+        },
+        {
+          "title": "!+【LIVESTREAMS Los Angeles Rams v San Francisco 49ers Game ＬｉｖｅＦｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNMDJlSF9QX1A4UGY0Q3ozamItakRSYjd4Vms4VVhncUtVVEUwdkFWcTNpbE9LcHc3eU5jQVRLYmxPY3hEZHlyckhPTG5oNUhQQ0MxUmFLZHptTXpRUXhLREc0M0w3Wk93c0tpRHllR1I5R0ZKTjFUb3dqMU5uUDJjZXpENkVqTUVIME5ia3ZjR1dPcnNHTjFpamRrVkVjbGY2YnVXRGpfMThRRTRCWW5jZ1lqcEhxSWJxUjQ3U2xWWDF1bDcxRnRxRGhfWGFTaGtzc2lkWHUzVFNfR094bEUwbUZvSWIzaFctekoxSG82MHVyUQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "!+【LIVESTREAMS Los Angeles Rams v San Francisco 49ers Game ＬｉｖｅＦｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:17:41 GMT"
+        },
+        {
+          "title": "*[WATCHLIvE]HQ*!] San Francisco 49ers vs Los Angeles Rams Nfl Football Live Free Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOSkVYc0haOENYU2J2Y1lFcTRBUUpHUFQya1BfT0tueDA0T2pnMHhMSUEtWFJ6d0lFU0t0RzZUaVVnNk01VU1qbjBnMHdFVTM3dFpUSm1udlpGalB4RWJSYUNoWWt5UDB4ZVVucmpPdXlySEtaZHRnVndWYmZwOXVFcjJfQkdpekh0N0ZlRlZuMEQyU3pmbmM0bmlibTRWbmNIOC1HNWk0azladXd6VHhMdXlpVVlaVFFaTW54NkxfYXByMl8za0c5WUpoN3Q2cjZEMlFNZkZ1aC16YjNlb1Q3MEpVOElvWEtlME9yQUROU3VPT2J0QkVkVndyXzg?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "*[WATCHLIvE]HQ*!] San Francisco 49ers vs Los Angeles Rams Nfl Football Live Free Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 00:48:52 GMT"
+        },
+        {
+          "title": "[WATCHLIVE]GAME] San Francisco 49ers vs Los Angeles Rams Football 𝐋𝐈𝐕𝐄 ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 10 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOaE90OTVGYnotNWc0V2xyWUl3YUpLWkFSVmZQT2M4aGtKSk5CczVPSlI2TnNXVUhxdlk3OC1scl9zTHdtRlkzRlpwWUFKZzdZcl94RzNnN0VrdWhRa2pUcnR2YlY3dDh6U04zeHlIeDJKcTJtYUFrUW5BZFNRQzVYYmdfUmpIM2ZFdnpfay1WUGpSTS1zOVhYdmVjNk10NHZxaVVZSzByMVdJRDhCcTJLazY2NFlnekFyckpUWUlTbDFDOG5HY3VzczJBMXRET1du?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[WATCHLIVE]GAME] San Francisco 49ers vs Los Angeles Rams Football 𝐋𝐈𝐕𝐄 ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 10 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:23:26 GMT"
+        },
+        {
+          "title": "[CBS TV ]] San Francisco 49ers v Los Angeles Rams Football LIVE Coverage ON TV Channel 10 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQRG1tTnhxQVVDYXRHdTZVRmZ0eDljMlNhWjlLYjZudjVrcElDb0dlVVBjZVdGaGZldG5sVnNqUTE1a3ZWYktIYUdHVWJwZUFIbTFfZzB2UnEwODBRbDl1TS1GQjFmOThRcXpsYk1iYktfUjdnT1BJY1R5MGpueWxXSEU5U0FjZ1drR2ZHNkpDSzZWNjdRaU14VkVvMWxkZXpvYUk1b2ZDQ2ZJMnE1QThlS2o5TTFGYVM3bWh2T0FheWZGb25zRjE0RlFXQ05qZVNtVEhfWGN1R0VkeFRYbFp5MHZqZlA4cFowWVhPQ2lHX256TWdfenVN?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[CBS TV ]] San Francisco 49ers v Los Angeles Rams Football LIVE Coverage ON TV Channel 10 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:18:25 GMT"
+        },
+        {
+          "title": "!+【【4K】】 San Francisco 49ers vs Los Angeles Rams Nfl Football Live Soccer Match",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPbGEtUmxLZW1KT1dIR0ZrSTlDS3JSYWU1ZUZwNWJhOUFSakUzWHd5cFlLR25jZElQaV9aZ0pWejdDTE8yd1R2ZFc1VHJHVUxrdV9rRFhLRXJsdE5QTGlTY0pST1M1NnBSQ25fMjhiM2dsTEx2cGZqQjYwaTZVeEZGTHdINlR2allENjRCMVcxZUhDMF9ZS1RzSGdzbFVtZmdPeEFXdFhKY3RIN0N3OHVGaUhTTmJ5ZEtrZl9aWkNwOHhMZmhOUzdlaTZWSzFTMkNCT1hVajFEUkdoVG9BTHk1QlhwS09OaTYxcVJNYmlDSUxTZzhUR2J3cURmM25LUVow?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "!+【【4K】】 San Francisco 49ers vs Los Angeles Rams Nfl Football Live Soccer Match Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 00:55:28 GMT"
+        },
+        {
+          "title": "(sTrEaMs Coverage)! Los Angeles Rams Football ＬｉｖｅＦｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNV1pwNEotNTNmeXdoZG96TFJiZEZNak1nd0hHYWpNWWdPN3VFcExmVXdHUkZGV1lXQ3ZkYVFzb0lKZXN4cTBBSW0yX2IxbUJTSUExTW9BMFpDY3VjZXo4X0dzQ0pOVzRSR3RyYXlPVGEwZks1eXVBOU4xeXVIZG5JckFKUm9oYzlORmxfeXBmNm1Kb01JY2E5N1ZDRG1BZFdOYnh6Si1jdGlzNWV2MU94VDhlX0gwbTFDZlZEdWptUl92dnEwRUZUZFltdEdNamZsRWZ0dnpGYUY?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(sTrEaMs Coverage)! Los Angeles Rams Football ＬｉｖｅＦｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:13:20 GMT"
+        },
+        {
+          "title": "(sTrEaMs Coverage)! Rams v 49ers Football LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQc01Dd0JqY0RhQUdIZHEtR005X1N6THFUQ1FTMktGVnlTVG9RdGZSYUg3TUdBU3FXMG5HdUhNTWlJQ2pUWEEya3owZ2wxeHNJeDZBMGw1b1dqbkRCVWw4VzQ2SkdONU9FeFVwRzFHSXJOQjlQRXRGczlSQS0tN0ozUW9LaUhKWTFUYWJhUF9TT1ZESEgxcW83WWFha3NxMjh0cjBreGZaZUNlMHRTSUR2WDJtZnhqMEo1RldSdzQ4cE5Wa1lLNC1mUWJoZzNUZ2lTaFl3?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(sTrEaMs Coverage)! Rams v 49ers Football LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:17:44 GMT"
+        },
+        {
+          "title": "[Reddit/Streams]!! 49ers Game 1 LIVE Coverage ON TV Channel 10 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZjhCczcwOHVGYjVwUVkzR0NyUHktc054dU9GcV93NjdXemlyOVY2X2lmckhoWXVfdXUxaTlKOGZyd0JoSjV2TzRCNGh4d0MwcWpwRVdwbi15d2h0azRGWndWdGZfOWJSbEZDQnM1X0NvM2d6ZzAwRW9GT2MtV1hmTmxVTnFVbEpsc0dmSDVMMWVLQ3k5TENjYWdPMGM4bUVSUWNYMkJ4TVBXdkw1Tm13WVNmU1ppR3o4Tl9zRXBocnhBaXNLbnE4?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[Reddit/Streams]!! 49ers Game 1 LIVE Coverage ON TV Channel 10 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:18:14 GMT"
+        },
+        {
+          "title": "[LIVE*sTrEaMs] 49ers Football 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPM0I1ZzBHNkJST3pxWTQ0T3ZleFgyWklzLTk2eWN3S21PdFNPS1Q4elhMX0J0d05zdDlHaTF5aU1yMmxNNURZVHJTbWh0Tzd1RXE2eHBhNmR1cF9pcC02SmQ2N3ZIRnVObHdKOVVWcmFQcjgwZm1PeUdsM3owYkVEcmVoNUtjb3d3MnNBT3l4dF9QcmVUeFZRaHd3aDlBSXZCeUVyNTFkVllRYnRzYmhhWk5yZnFjTG02ZFRfTlAxbF9HeWFvV2NvbDExVTJlQQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[LIVE*sTrEaMs] 49ers Football 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:17:44 GMT"
+        },
+        {
+          "title": "[CBS TV ]] 49ers Football 𝐋𝐈𝐕𝐄 Ｆｒｅｅ Ｓｔｒｅａｍｓ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPX3pqcU5TLUtwa2xwT18zY2lJRXNwbllieVRvWmpDdXdtMXNBUTllNXRQSnM3OUpoYml1TTVNUVIyRkYyd3hGS0lQNTU5V3A3dXhHeElKekFEOEFCbDB5THFBRW1yTHFvdGNVaDV0Y09VUDJWcnlrUU80aXRSbjd1NVNMdXFkYWlLa3d6T2JrZkE4ODlYUlBwdTNsZnI0VUVoclkwRVIwQlpuUzZMWUJNcXc0UWNjNVJGa2I0Mm5CYXA5bGxXVTlObXI0bndBQQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[CBS TV ]] 49ers Football 𝐋𝐈𝐕𝐄 Ｆｒｅｅ Ｓｔｒｅａｍｓ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:12:18 GMT"
+        },
+        {
+          "title": "(ＬＩＶＥ!) 49ers v Rams Football LIVE Coverage ON TV Channel 10 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYjFzMVpYSElZOEljdDdMMjlScjRuY1VSb2R3ZkhnSlNpMzllZl9tNkxEVFpycmRfNGo3a0VwMWRvUWEzTVhSSkIxZEtJUlR0S2JCRTJTcENjYUsxXzhsV1VscVFvSUhXYXJ5U0diR0MtLWJVVUtmMHVPdjBwbFpKeVp0cWNHMnM1X2g2aVc0TGFLX1dRZ1FGYjhjLW1EUW0tRkhBSk9SNnROOC1NcTVzYU1tbkoxWWlnZVcyX3VWTkpZREw2cGRteldNNGp6am9pbUFqU0Q0WQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(ＬＩＶＥ!) 49ers v Rams Football LIVE Coverage ON TV Channel 10 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:11:31 GMT"
+        },
+        {
+          "title": "!+【LIVESTREAMS 49ers v Rams 𝐋𝐈𝐕𝐄 Ｆｒｅｅ Ｓｔｒｅａｍｓ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSUlYS19WejE1d0dpSC0wX29aMjNtLUpMN2xEZEFkUmZxd1BuNHhKNlh4aDllb0lvS05kRWM0TG8zR1dZNEdpaHNibTVtMVptNGFiTWpTQ2xSZG9tT3FIVktONlBIVGliZFhrOWI5NXp5MGdVRnRpZWJsZkU0cGg0b0lXU1l6cmlhM1VJRXBkaU54S1U1NllOMU5qWFRsN2k2enRNUmJLTjNOS1pxc0dmbUxfY1BrTzlPRmdEZXBhMnB1ZENyYXBR?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "!+【LIVESTREAMS 49ers v Rams 𝐋𝐈𝐕𝐄 Ｆｒｅｅ Ｓｔｒｅａｍｓ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:21:24 GMT"
+        },
+        {
+          "title": "[LIVESTREAM]FREE!!] 49ers v Rams ＬｉｖｅＦｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdFJNN3VwV3V3YmFhcmdxLWhhRXNBMzdMdl9OMkxKQ21IYU9OVTE0X0k2VElNbjNUdFIzUFZYSWViZW1pZDdqZklzTjd1a05CMWQwQXpKbE5DZng4bkJNTVpiTllhNU9EWEJYQWZLNy1qa05IMmxmRS1IWTc2NGR4R182eEtRanZmZkw0d3pwU3FpeGx4N2REbFNZTkNlX2tTdkp3S05DR3RsM0Z4aDV5MFFJR29jcGVjMHhudDd2cmdta2JlMVRj?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[LIVESTREAM]FREE!!] 49ers v Rams ＬｉｖｅＦｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:18:30 GMT"
+        },
+        {
+          "title": "!+*∇#[+[!LIVESTREAMs!]TV] 49ers v Rams Football LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVHNJZzkyLVNtUVVwdC11Z1o2cnRVWU1CUUFuTm5TbldiWWdMSU1ZZ2Rua084emNuY05jblB0cG95dzJxbHRPUkpUZVY0OUZmZmhHMkhVdi1hWGJyZ0VvdlJNWDNyMWY5a1VubFhtOE4wUWlfTnk1ZWl1aWNFMjdYVm1UZV81ZF9TQkpWc1JJSlZPWWxrdjNkNG5fQjl0ZzJtMllTZHBwMlBmQ1VneUNZaENGNWNmenBqWlBrYm1ZNk16Q0F5Qk9RUS02b1ZwZGZ5Ym83eC1UMA?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "!+*∇#[+[!LIVESTREAMs!]TV] 49ers v Rams Football LIVE 𝐒𝐭𝐫𝐞𝐚𝐦 Ｆｒｅｅ Ｃｈａｎｎｅｌ 11 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:05:59 GMT"
+        },
+        {
+          "title": "!(OFFICIAL-TV) 49ers vs Rams Football LIVE Coverage ON TV Channel 10 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQT0F6QUluUERvV3VlUV9lMkRjS3VpTGJJdkJDRVRKc09xV2R5TmtiRVZJdnMtRFFnUWF5OW8yNGR3YjdyNGVwTjY2X0dIRHBrU1d5V2Y3SFFJTkVYOXN0YURESEF4NEZhVWl0WG9RdTNqVXNYZ2V2aGlIaWtaUDFxX2Y4ajFGWVlQeGk0c0V4T29mdEN2YzVCZVFucWJWWkNfUzhsRWl3RjF5cmJTS09OOV9IU2cwNGlPdUhuMU8tWVZvOUdNaEVsak5tQ0lPaGttY3BicTVB?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "!(OFFICIAL-TV) 49ers vs Rams Football LIVE Coverage ON TV Channel 10 September 2026 Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 00:56:08 GMT"
         }
       ]
     },
@@ -6216,11 +6699,11 @@
       "slug": "here-s-way-49ers-rams-thursday-night-live-24fa8154",
       "sport": "soccer",
       "headline": "++[ＬＩＶＥＳｔｒｅａｍ]NOW!!] Thursday Night Football : Live stream, TV channel & start time for HS Football in 2026",
-      "blurb": "#√[[LIVE NFL_FOOTBALL+!]] 49ers vs Rams Thursday Night Football LIVE | Watch on Hulu + Live TV Cal Poly Pomona",
-      "summary": "#√[[LIVE NFL_FOOTBALL+!]] 49ers vs Rams Thursday Night Football LIVE | Watch on Hulu + Live TV Cal Poly Pomona !?(-TOTAL_SPORTEK-) Rams vs 49ers Thursday Night Football LIVE | Watch on YouTube TV Cal Poly Pomona !$>[LIVE!#GAME]* 49ers vs Rams Thursday Night Football Live Score Cal Poly Pomona Board reading of Cal Poly Pomona.",
+      "blurb": "[WATCHLIVE]GAME] Thursday Night Football Live Broadcast Cal Poly Pomona",
+      "summary": "[WATCHLIVE]GAME] Thursday Night Football Live Broadcast Cal Poly Pomona $+⚽️+【Live Sports)@+!】 Thursday Night Football 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 29 July Cal Poly Pomona 𝚆𝙰𝚃𝙲𝙷 (𝐓ODAY) Thursday Night Football Live Stream Free TV Cal Poly Pomona Board reading of Cal Poly Pomona.",
       "category": "wire",
       "published": "2026-09-10T22:47:10Z",
-      "updated": "2026-09-11T00:27:14Z",
+      "updated": "2026-09-11T01:22:28Z",
       "players": [],
       "sources": [
         {
@@ -6646,6 +7129,78 @@
           "kind": "article",
           "snippet": "[LIVESTREAM]TV!!] Thursday Night Football LIVE Free Broadcast ON Tv Channel 10 September ２０２6 Cal Poly Pomona",
           "published": "Fri, 11 Sep 2026 00:25:45 GMT"
+        },
+        {
+          "title": "[WATCHLIVE]GAME] Thursday Night Football Live Broadcast",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPcWIwcjFzZUM1VzdHaVgyMjdXRTNJSEp1NTNFWHZBcXFKZ2tGR0twV256UDl1dlFKT3d5dk44LU5sQS1JUVFtc2xnUkc2SEZvY0hxclRpaFdPM2NDcjRNbC1pdm1DclBqeW1ZRHJvM0dYSWN6WWM2NXo3NWd5Mm5nNTNQYlVTemc5MWxaeTFIdjRnTTh0cEdwNnB5N3k5dEhhSUZzS3lqUlRBZU1UaDJocko1NEQtcnhLMXVGSVhmRFpVcnlCalRmUEh0Z3h5RlREdXVBSzZ5bw?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[WATCHLIVE]GAME] Thursday Night Football Live Broadcast Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:20:21 GMT"
+        },
+        {
+          "title": "$+⚽️+【Live Sports)@+!】 Thursday Night Football 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 29 July",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUGpJZU92allmY2t1V2FOemkySHJWUkpTWEplTDJyVld2bzRMRVJfZWN6OVEtcE1GWHphWUVNVFBFTjl0eW5Pd1ZtOHFDTFBxaXF1T1RYMTlyRVkxVzZ0bDNGLVh0SXB6Snh1YXo2SDNTSng1MEZZVmFXVzY5bDU4b1RiOEoySUdkcU8taGNPWUxpX3UwTWVGNHBqLXJBZWQ5cUZ0S19qQXlveTRKRnJyc2lpVE1RUUEwUENiV3BhNkh5cElJVHZVaC1IanNfcFpleGpBQXNpNlMydw?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "$+⚽️+【Live Sports)@+!】 Thursday Night Football 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 29 July Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:21:29 GMT"
+        },
+        {
+          "title": "𝚆𝙰𝚃𝙲𝙷 (𝐓ODAY) Thursday Night Football Live Stream Free TV",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQd1FBWDNDalhlcWlJbHhydjRSYTQyOHBEYVNyZDlQajFhbTdVdm10aXIyaktDdE5KQkxXcl9nVXRBS3ZWQzh1UkhXdV9fWVU4Zmd3MG5JSnoxeWMwdWZmUWJTSEJpaXBHeTBsWVZwYTdfUGp3bVdIZjJTbFhiUmgwaUhyWDlEc2J1b1VnZzNTcTFPOGJBR3U1enpOUHoxSjFJUDlvU2RybXROUkhxckE4OVk5ZF94WDZoNkt5T0FpQXExeXRDY28yU2lxS0lhV1VqdDNnNm9xeWFCUQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "𝚆𝙰𝚃𝙲𝙷 (𝐓ODAY) Thursday Night Football Live Stream Free TV Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:20:39 GMT"
+        },
+        {
+          "title": "[Reddit/Streams]!! Thursday Night Football 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 29 July",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQOHdJTU02djdvd3g1NUEwbWR5Wk14U2NrNWdhQS1LWEctNmc0b3YwWEROVVhCYzlNYVk5Ymo4cHMzdmUwanc5R0liZ2xFM0JpNDZkM1BxcGZydVd5dHhVUVhTM0JaSVpUVV9KckJiOElvdUJYNHpVekZrVmlTTkFfR1VIakhTUG9XUmdIREppUUNhUi11T0VwS1Q4ZTEwamJaWG8yelZQTm9PWTFRejlzWlhUaFVhamVtRGZxUjVQQmNyd1NBT2lQNE9FVkpvNTZBczRrNk9HM2RVdw?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "[Reddit/Streams]!! Thursday Night Football 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 29 July Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:21:32 GMT"
+        },
+        {
+          "title": "(ＬＩＶＥ!) Thursday Night Football 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 29 July",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQOWdxVWU0V1FJZVpUYjQwVS03bWF1R3dRdzh6akV6Vzk5RFlEb0NYQUZxQXhGWGlndUZ4a0pjaUNiS3VRUmJSVmx5aG03RHZuTmZ1WmtsNkpFZ2o4N2FDOEt4RUU4bS1FWGMwTzhqSkR3ekh2T2FwMDEzX0d3c0ExUmVNM0kxcFo3bTR2bW9Fb253VGJBQnFqQy1vOFZFUXlNX1c4SjNWNUZScmlmcmJxY3pVb01uQ0Jhd3l3MUkzbGNwblpGRmVpeGV4TXJ0V1cwaTZXMEZn?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "(ＬＩＶＥ!) Thursday Night Football 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦 Ｔｖ Ｃｈａｎｎｅｌ 29 July Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:20:35 GMT"
+        },
+        {
+          "title": "( YOUTUBE LIVE ) Thursday Night Football 𝐋𝐈𝐕𝐄 Ｆｒｅｅ Ｓｔｒｅａｍ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPd3FEckxyQkdNT2RQMzFuTVFUVE9EdDlVSlJWcG56T2UtU3Nod0VCdE5XQ25jTGtYZUMzSkJNb1paYWx5THcxMmc1MUZ6bGxUVWpFMTItUEVXVnhjMGs2N3NCOUpZRHBPcV8zcEc1ZGprRDktRVIyTWNJRHFqbm4yLU4wMFpONGJHRGw2bGV3VVdkLXpIME5QZlRfbUhsNVNCWkRmc3FWUUlUTVQ2OWRSbXNUeV9PMlhNbTRmVlg0YTRpY3pFOF9zOEZWZWtXVXdFS3J0RWlpOA?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "video",
+          "snippet": "( YOUTUBE LIVE ) Thursday Night Football 𝐋𝐈𝐕𝐄 Ｆｒｅｅ Ｓｔｒｅａｍ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:22:28 GMT"
+        },
+        {
+          "title": "PLAY@~ Thursday Night Football Live Stream Free TV",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdUdkUUtlcXBlWHNERmU1ZllCUFZZNHhBeXQ5clNNSkFFX25tVDE5dzdzM3ExM2JKQ01uZVJvSjNwdjdPckp3NUNwdVJrV3Voa3I3MDk3WWhNeGtHWTRtYjNldWlvdzI3c0ExbTNSeWFld2lXckpvWXRxR0Y4QWhoQnA5LVF2Q2ppMU9VQUt3T1hGOS1nZ0dsUkE2ZFowUGNWd3NCdHVyZHVNNEgyTVRSb2ZyTXhpXzNmaEpJSnFDNXcxU0lKS0gwT2lEa21OSjZTbHV6bFd5VQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "PLAY@~ Thursday Night Football Live Stream Free TV Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:15:11 GMT"
+        },
+        {
+          "title": "$+⚽️+【Live Sports)@+!】 Thursday Night Football Match Live Free TV",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQ1N3cGpXRWRVSXFvU0tiYS1QSlRxWGtaWmU3X0Z6eVptNGkzV0Z1dTl5M2FLckVseExMd0tUT3Z5TlFwMDdENjQ4WGRnQUYxNGlKX0gxcEdDbUpuUENmbUdRNkRSNERPY2xmY2p3OHJFYmdURm5jQ1Z0X1Y0X0xWT0I3SDZFM0ZfTEtQcGc0eHdVdlJ4THV2cnloSHFMNWRSR09HeUtXLXM4NFUtVFFJQXZvN1F1MzFpbEx1WHhLS1kxYkc2eExjNkRkZUx0WFd1UnQ5RjVn?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "$+⚽️+【Live Sports)@+!】 Thursday Night Football Match Live Free TV Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:14:57 GMT"
+        },
+        {
+          "title": "!!~^√Redd𝚒t![LIVESTREAMs!TV] Thursday Night Football LIVE STreams",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPNVBUN2NMQ1BlcFJmODV1MzB1UzVzbzljS1FZVWZ2ellVMzhWWG1WenU4Y1B3c29rdkNIQlBRRFBiQlNmR0VVdDNrVUF0ZTFpcWVONV83RXE4QnlOUXNKTUdLdmR3QWt0blR4LXVxR1RiN05tWVp1aGJ5ZkUtSkdWX29Ic3R5Y2VsMkp1a3REUzRndUgwRnhpb1pBeGRNTlZiZDRJZTlaRmhfTC1iZnpEQnU2eWcwTFZuTHFFM1NmRWc0ZllIQmpMQnYzRVpBZ0V3MTdMbW9EQTh5UQ?oc=5",
+          "publisher": "Cal Poly Pomona",
+          "kind": "article",
+          "snippet": "!!~^√Redd𝚒t![LIVESTREAMs!TV] Thursday Night Football LIVE STreams Cal Poly Pomona",
+          "published": "Fri, 11 Sep 2026 01:21:09 GMT"
         }
       ]
     },
@@ -11638,44 +12193,6 @@
       ]
     },
     {
-      "id": "fpl-dedic-injury-mendy-sub-explained-another-hall-12fcfcfc",
-      "slug": "fpl-dedic-injury-mendy-sub-explained-another-hall-12fcfcfc",
-      "sport": "soccer",
-      "headline": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist",
-      "blurb": "⚠️ Dedic injury 🗣️ Mendy sub explained 🅰️ Another Hall assist Bournemouth, Crystal Palace, Newcastle, Sunderland and Hull were all in midweek action ⤵️ https://t.co/Na2tfP0g33…",
-      "summary": "⚠️ Dedic injury 🗣️ Mendy sub explained 🅰️ Another Hall assist Bournemouth, Crystal Palace, Newcastle, Sunderland and Hull were all in midweek action ⤵️ https://t.co/Na2tfP0g33 x.com FPL notes: Dedic injury, Mendy sub explained + another Hall assist fantasyfootballscout.co.uk Aggregated from x.com, fantasyfootballscout.co.uk.",
-      "category": "injury",
-      "published": "2026-09-09T16:57:55Z",
-      "updated": "2026-09-10T08:15:04Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMnV0M1FPeG16OU80VmJHNGJoenVMNGVQMDlac3kyNlM0OUNfTlRiM2pBRW9DNm51c2JxNFVuVTlxZjZZZWktZ0VZdS04aE9rQ0JZOU5DaG9rOW9SZlFlX1NoOGc3U2Ric0dhQ0Rab3Q0YnZubkxYTTV0NmRaSGtrWFk0Z181d3RNWTVrU2JnSGZGTFhrcWYzalJ1bDF5akFWV0lYcjR1N1FkcTRPeUwyLURn?oc=5",
-          "publisher": "fantasyfootballscout.co.uk",
-          "kind": "article",
-          "snippet": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist fantasyfootballscout.co.uk",
-          "published": "Wed, 09 Sep 2026 16:57:55 GMT"
-        },
-        {
-          "title": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd002WmFnT3hQdjIxd2dKZ01EeUhBQThEQXZuRERieVo4M0lYdnppZmlBX0ExUjUyQTM3cWtNR2N6bi1iNXlyTktDdFIyV1pJb1EyNHByaV92YW5TZWdRV3pnSTZsNnhNT1A0S3NDYmdPQTYzSmxGR0gxSVdrVjNRUmhqQUtRemREZjllWWo5cGtLRHNwMWo0d2YwRExJVzFxdEU3ZUgyVVNHOFhZNDF4dG9PWQ?oc=5",
-          "publisher": "fantasyfootballscout.co.uk",
-          "kind": "article",
-          "snippet": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist fantasyfootballscout.co.uk",
-          "published": "Wed, 09 Sep 2026 20:48:45 GMT"
-        },
-        {
-          "title": "⚠️ Dedic injury 🗣️ Mendy sub explained 🅰️ Another Hall assist Bournemouth, Crystal Palace, Newcastle, Sunderland and Hull were all in midweek action ⤵️ https://t.co/Na2tfP0g33",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9jZjBjbExWUnZHT29kVXhucXdIczRPeDd6RzFyZ0pGdUx2LThvdWpGbEdYM0Q3S1lXVGVzazJNZUNnNGRUWkxlQ2VxdTRWTkRKd0JwdENpSVhHNTVm?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "⚠️ Dedic injury 🗣️ Mendy sub explained 🅰️ Another Hall assist Bournemouth, Crystal Palace, Newcastle, Sunderland and Hull were all in midweek action ⤵️ https://t.co/Na2tfP0g33 x.com",
-          "published": "Thu, 10 Sep 2026 08:15:04 GMT"
-        }
-      ]
-    },
-    {
       "id": "champions-league-manager-immediately-resigns-minutes-opening-match-1f6115ba",
       "slug": "champions-league-manager-immediately-resigns-minutes-opening-match-1f6115ba",
       "sport": "soccer",
@@ -11710,6 +12227,44 @@
           "kind": "article",
           "snippet": "Champions League manager immediately resigns minutes after opening match talkSPORT",
           "published": "Thu, 10 Sep 2026 20:18:53 GMT"
+        }
+      ]
+    },
+    {
+      "id": "fpl-dedic-injury-mendy-sub-explained-another-hall-12fcfcfc",
+      "slug": "fpl-dedic-injury-mendy-sub-explained-another-hall-12fcfcfc",
+      "sport": "soccer",
+      "headline": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist",
+      "blurb": "⚠️ Dedic injury 🗣️ Mendy sub explained 🅰️ Another Hall assist Bournemouth, Crystal Palace, Newcastle, Sunderland and Hull were all in midweek action ⤵️ https://t.co/Na2tfP0g33…",
+      "summary": "⚠️ Dedic injury 🗣️ Mendy sub explained 🅰️ Another Hall assist Bournemouth, Crystal Palace, Newcastle, Sunderland and Hull were all in midweek action ⤵️ https://t.co/Na2tfP0g33 x.com FPL notes: Dedic injury, Mendy sub explained + another Hall assist fantasyfootballscout.co.uk Aggregated from x.com, fantasyfootballscout.co.uk.",
+      "category": "injury",
+      "published": "2026-09-09T16:57:55Z",
+      "updated": "2026-09-10T08:15:04Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMnV0M1FPeG16OU80VmJHNGJoenVMNGVQMDlac3kyNlM0OUNfTlRiM2pBRW9DNm51c2JxNFVuVTlxZjZZZWktZ0VZdS04aE9rQ0JZOU5DaG9rOW9SZlFlX1NoOGc3U2Ric0dhQ0Rab3Q0YnZubkxYTTV0NmRaSGtrWFk0Z181d3RNWTVrU2JnSGZGTFhrcWYzalJ1bDF5akFWV0lYcjR1N1FkcTRPeUwyLURn?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist fantasyfootballscout.co.uk",
+          "published": "Wed, 09 Sep 2026 16:57:55 GMT"
+        },
+        {
+          "title": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPd002WmFnT3hQdjIxd2dKZ01EeUhBQThEQXZuRERieVo4M0lYdnppZmlBX0ExUjUyQTM3cWtNR2N6bi1iNXlyTktDdFIyV1pJb1EyNHByaV92YW5TZWdRV3pnSTZsNnhNT1A0S3NDYmdPQTYzSmxGR0gxSVdrVjNRUmhqQUtRemREZjllWWo5cGtLRHNwMWo0d2YwRExJVzFxdEU3ZUgyVVNHOFhZNDF4dG9PWQ?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "FPL notes: Dedic injury, Mendy sub explained + another Hall assist fantasyfootballscout.co.uk",
+          "published": "Wed, 09 Sep 2026 20:48:45 GMT"
+        },
+        {
+          "title": "⚠️ Dedic injury 🗣️ Mendy sub explained 🅰️ Another Hall assist Bournemouth, Crystal Palace, Newcastle, Sunderland and Hull were all in midweek action ⤵️ https://t.co/Na2tfP0g33",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9jZjBjbExWUnZHT29kVXhucXdIczRPeDd6RzFyZ0pGdUx2LThvdWpGbEdYM0Q3S1lXVGVzazJNZUNnNGRUWkxlQ2VxdTRWTkRKd0JwdENpSVhHNTVm?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "⚠️ Dedic injury 🗣️ Mendy sub explained 🅰️ Another Hall assist Bournemouth, Crystal Palace, Newcastle, Sunderland and Hull were all in midweek action ⤵️ https://t.co/Na2tfP0g33 x.com",
+          "published": "Thu, 10 Sep 2026 08:15:04 GMT"
         }
       ]
     },
@@ -14891,8 +15446,8 @@
       "slug": "premier-league-arsenal-v-chelsea-2026-hs-6718f883",
       "sport": "soccer",
       "headline": "[LIVESTREAM]TV!!] EPL 2026: Chelsea v Arsenal Premier League 𝐋𝐈𝐕𝐄 Stream ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 06 September 2026",
-      "blurb": "Our writers gaze into their crystal balls and deliver their predictions for the Premier League season ahead Continue reading...",
-      "summary": "Kai Havertz, Moisés Caicedo Corozo, Emiliano Martínez Romero, Hugo Ekitiké, Enzo Le Fée, Cole Palmer, Thierno Barry, Jack Grealish and Cristian Romero: Our writers gaze into their crystal balls and deliver their predictions for the Premier League season ahead Continue reading... Fulham need a win, Tottenham show some spirit and Jack Grealish offers Everton much-needed energy With 25 minutes to go against Manchester United, the Everton supporters had something to roar about as Jack Grealish made his return after rejoining on loan. [[[Premier League]] Arsenal v Chelsea in the 2026 HS Football rikkyo.ac.jp Aggregated from Guardian Football, rikkyo.ac.jp, The Chelsea Chronicle, YouTube, Premier League and 17 more.",
+      "blurb": "Arsenal vs Chelsea injury news as eight players could miss huge Premier League clash The Mirror",
+      "summary": "Kai Havertz, Moisés Caicedo Corozo, Emiliano Martínez Romero, Hugo Ekitiké, Enzo Le Fée, Cole Palmer, Thierno Barry, Jack Grealish and Cristian Romero: Arsenal vs Chelsea injury news as eight players could miss huge Premier League clash The Mirror Premier League injury table 🤕 x.com Fulham need a win, Tottenham show some spirit and Jack Grealish offers Everton much-needed energy With 25 minutes to go against Manchester United, the Everton supporters had something to roar about as Jack Grealish made his return after rejoining on loan. Aggregated from The Mirror, x.com, Guardian Football, rikkyo.ac.jp, The Chelsea Chronicle and 18 more.",
       "category": "injury",
       "published": "2022-08-05T06:00:04Z",
       "updated": "2026-09-07T14:03:20Z",
@@ -15657,6 +16212,14 @@
           "kind": "video",
           "snippet": "ODEGAARD & HAVERTZ TAME THE LIONS | HIGHLIGHTS | Arsenal vs Chelsea (2-1) | Premier League YouTube",
           "published": "Sun, 06 Sep 2026 21:00:33 GMT"
+        },
+        {
+          "title": "Premier League injury table 🤕",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBpM3JlX1ptVlptT2I2WVQtOWJFRnEzc2w0OFRVbkFTN3c4UmxwbGZfN1BEODRQZTM0VFhIUkdCS0t4SDRaWDhuTGNjNjJ4LVFibWNBNUtwS2RpbmthSEpZX1VsRXI?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Premier League injury table 🤕 x.com",
+          "published": "Fri, 01 Mar 2024 08:00:00 GMT"
         }
       ]
     },
