@@ -440,6 +440,10 @@ def main():
     assert "49ers 27, Rams 7" in opening_html
     assert "13-10" in opening_html
     assert "27-7" in opening_html
+    assert "Melbourne 27-7" not in opening_html
+    assert "Seattle 13-10" not in opening_html
+    assert "high-ankle sprain" in opening_html
+    assert "looking at" not in opening_html
     assert "img/players/drew-lock.png" in opening_html
     assert "img/players/brock-purdy.jpg" in opening_html
     assert "img/players/a-j-brown.png" in opening_html

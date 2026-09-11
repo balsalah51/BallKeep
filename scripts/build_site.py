@@ -1068,7 +1068,7 @@ FB_SEO = {
     ),
     "week1-opening.html": (
         "Week 1 Opening: SEA 13-10, SF 27-7 | Ball Keep",
-        "Hand analysis of the first two Week 1 games. Seahawks 13, Patriots 10. 49ers 27, Rams 7. Fantasy notes for Sunday lineups and Week 2 waivers.",
+        "Hand analysis of the first two Week 1 games. Seahawks 13, Patriots 10. 49ers 27, Rams 7. Darnold hip injury, A.J. Brown high-ankle sprain, Sunday lineups, and Week 2 waivers.",
         "img/players/jaxon-smith-njigba.jpg",
     ),
     "weekly-qb.html": (
@@ -1759,7 +1759,7 @@ def home_body_html(keep, board, media, stories=None):
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
     ])}
     {desk_block("week1", "Week 1", "This week's stream.", "Weekly boards, matchups, and the preseason waiver mash. Not rest-of-season values.", [
-        ("week1-opening.html", "Opening", "Seahawks 13, Patriots 10. 49ers 27, Rams 7. Sunday lineups and Week 2 waivers."),
+        ("week1-opening.html", "Opening", "Seahawks 13, Patriots 10. 49ers 27, Rams 7. Darnold hip, Brown high-ankle sprain."),
         ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
         ("week1-dst.html", "Week 1 DST", "This week's stream."),
         ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
