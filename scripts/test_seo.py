@@ -142,7 +142,7 @@ def test_football_nav_keeps_every_link():
         "Home", "The Keep", "The Board",
         "Redraft Superflex", "The Classic", "Redraft STD", "2026 Rookies",
         "The D (DST)", "Kickers",
-        "Weekly", "Week 1 DST", "Week 1 K", "Week 1 Matchups", "Week 1 Waivers", "Injuries",
+        "Weekly", "Opening", "Week 1 DST", "Week 1 K", "Week 1 Matchups", "Week 1 Waivers", "Injuries",
         "ADP", "Trade",
         "Players", "News", "The X", "Hot 'n' Cold",
         "NFL", "MLB", "BPL",

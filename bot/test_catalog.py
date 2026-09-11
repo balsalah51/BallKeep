@@ -303,6 +303,7 @@ def main():
     assert "week1-dst.html" not in ros_st
     assert "week1-kickers.html" not in ros_st
     assert "weekly.html" in week1
+    assert "week1-opening.html" in week1
     assert "week1-dst.html" in week1
     assert "week1-kickers.html" in week1
     assert "week1-matchups.html" in week1
@@ -431,7 +432,23 @@ def main():
     assert "win chance" in w1_m_html.lower()
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
+    assert "week1-opening.html" in weekly_html
+    assert "Seahawks 13, Patriots 10" in weekly_html
     assert "Jahmyr Gibbs" in weekly_html
+    opening_html = html_of("week1-opening.html")
+    assert "Seahawks 13, Patriots 10" in opening_html
+    assert "49ers 27, Rams 7" in opening_html
+    assert "13-10" in opening_html
+    assert "27-7" in opening_html
+    assert "img/players/drew-lock.png" in opening_html
+    assert "img/players/brock-purdy.jpg" in opening_html
+    assert "img/players/a-j-brown.png" in opening_html
+    assert "Drew Lock" in opening_html
+    assert "A.J. Brown" in opening_html
+    assert "De'Zhaun Stribling" in opening_html
+    assert "\u2014" not in opening_html
+    assert " is the " not in opening_html
+    assert (root / "img/players/drew-lock.png").exists()
     assert "start-sit.html" not in weekly_html
     assert "weekly-check.html" not in weekly_html
     assert "sos.html" not in weekly_html
@@ -605,6 +622,7 @@ def main():
         "week1-dst.html",
         "week1-kickers.html",
         "weekly.html",
+        "week1-opening.html",
         "weekly-qb.html",
         "waiver.html",
         "adp.html",
