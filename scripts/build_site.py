@@ -734,6 +734,7 @@ NAV_GROUPS = [
     ]),
     ("week", "Week 1", [
         ("weekly.html", "Weekly"),
+        ("week1-opening.html", "Opening"),
         ("week1-dst.html", "Week 1 DST"),
         ("week1-kickers.html", "Week 1 K"),
         ("week1-matchups.html", "Week 1 Matchups"),
@@ -1066,6 +1067,11 @@ FB_SEO = {
         "Week 1 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros, RotoWire, and 4for4.",
         "img/logo.jpg",
     ),
+    "week1-opening.html": (
+        "Week 1 Opening: SEA 13-10, SF 27-7 | Ball Keep",
+        "Hand analysis of the first two Week 1 games. Seahawks 13, Patriots 10. 49ers 27, Rams 7. Darnold hip injury, A.J. Brown high-ankle sprain, Sunday lineups, and Week 2 waivers.",
+        "img/players/jaxon-smith-njigba.jpg",
+    ),
     "weekly-qb.html": (
         "Week 1 Fantasy Football QB Rankings 2026 | Ball Keep",
         "Week 1 quarterback Super Aggregate from four weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
@@ -1334,10 +1340,18 @@ FB_ALSO = {
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
     "weekly.html": [
+        ("week1-opening.html", "Opening", "First two games, Sunday and Week 2."),
         ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
         ("adp.html", "ADP", "Board vs ESPN."),
         ("week1-dst.html", "Week 1 DST", "This week's stream."),
         ("injuries.html", "Injuries", "ESPN designations."),
+    ],
+    "week1-opening.html": [
+        ("weekly.html", "Weekly", "Flex plus every position."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("injuries.html", "Injuries", "ESPN designations."),
+        ("week1-matchups.html", "Week 1 Matchups", "Win picks, 26 sources."),
+        ("weekly-qb.html", "Week 1 QB", "Quarterbacks."),
     ],
     "weekly-qb.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
@@ -1758,6 +1772,7 @@ def home_body_html(keep, board, media, stories=None):
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
     ])}
     {desk_block("week1", "Week 1", "This week's stream.", "Weekly boards, matchups, and the preseason waiver mash. Not rest-of-season values.", [
+        ("week1-opening.html", "Opening", "Seahawks 13, Patriots 10. 49ers 27, Rams 7. Darnold hip, Brown high-ankle sprain."),
         ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
         ("week1-dst.html", "Week 1 DST", "This week's stream."),
         ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
@@ -2857,6 +2872,7 @@ def write_explore_page():
         ("defenses.html", "Top DST", "Season-long DST."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("weekly.html", "Weekly", "Week 1 start/sit."),
+        ("week1-opening.html", "Opening", "First two games."),
         ("waiver.html", "Week 1 Waivers", "Consensus adds."),
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
@@ -3552,6 +3568,7 @@ def main():
         "https://ballkeep.com/defenses.html",
         "https://ballkeep.com/kickers.html",
         "https://ballkeep.com/weekly.html",
+        "https://ballkeep.com/week1-opening.html",
         "https://ballkeep.com/weekly-qb.html",
         "https://ballkeep.com/weekly-rb.html",
         "https://ballkeep.com/weekly-wr.html",

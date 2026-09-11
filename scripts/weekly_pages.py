@@ -9,6 +9,7 @@ from seo import (
     rank_list_jsonld,
     rank_search_bar,
 )
+from weekly_analysis import opening_teaser, write_week1_opening
 from weekly_kit import (
     ADP_SOURCES,
     DEPTH_SOURCES,
@@ -139,6 +140,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     <p class="kicker">{label} · skill · Flex plus positions</p>
     <h1>Weekly</h1>
     <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points. Unranked is a skip.</p>
+    {opening_teaser()}
     <div class="grid-3">
       <a class="tile" href="weekly-qb.html"><h3>Week {week} QB</h3><p>{(boards['QB'] or [{'name':''}])[0]['name']} leads the quarterbacks.</p></a>
       <a class="tile" href="weekly-rb.html"><h3>Week {week} RB</h3><p>{(boards['RB'] or [{'name':''}])[0]['name']} opens the backfield.</p></a>
@@ -249,6 +251,8 @@ def write_weekly_pages(b, nfl, media, board_rows):
     {sources_panel(DEPTH_SOURCES, heading="Source")}
     """
     write("depth-charts.html", board_page("Depth Charts", "depth-charts.html", d_body))
+
+    write_week1_opening(b)
 
     for rel in ("sos.html", "start-sit.html", "weekly-check.html"):
         old = ROOT / rel
