@@ -275,17 +275,8 @@ def scrape_fp_stats() -> None:
         dump(f"fp-stats-{pos}", {"season": 2025, "players": players})
 
 
-def scrape_sleeper_usage(week: int) -> None:
-    print("fetch sleeper players, 2025 stats, week projections")
-    try:
-        players = fetch_json("https://api.sleeper.app/v1/players/nfl")
-        stats = fetch_json("https://api.sleeper.app/v1/stats/nfl/regular/2025")
-        projs = fetch_json(f"https://api.sleeper.app/projections/nfl/2026/{week}?season_type=regular")
-    except Exception as exc:
-        print(f"  skip sleeper: {type(exc).__name__}: {exc}")
-        return
+def _usage_from_sleeper(players, stats) -> dict:
     out = {}
-    depth = {}
     for pid, p in (players or {}).items():
         if not isinstance(p, dict):
             continue
@@ -293,14 +284,8 @@ def scrape_sleeper_usage(week: int) -> None:
         if pos not in {"QB", "RB", "WR", "TE"}:
             continue
         name = p.get("full_name") or ""
-        team = _team(p.get("team") or "")
         if not name:
             continue
-        order = p.get("depth_chart_order")
-        if team and order:
-            depth.setdefault(team, {}).setdefault(pos, []).append({
-                "name": name, "order": int(order), "slot": p.get("depth_chart_position") or pos,
-            })
         st = (stats or {}).get(pid) or {}
         if not st:
             continue
@@ -312,7 +297,7 @@ def scrape_sleeper_usage(week: int) -> None:
         out[name] = {
             "name": name,
             "pos": pos,
-            "team": team,
+            "team": _team(p.get("team") or ""),
             "gp": st.get("gp"),
             "off_snp": off,
             "tm_off_snp": tm,
@@ -329,11 +314,43 @@ def scrape_sleeper_usage(week: int) -> None:
             "pass_td": st.get("pass_td"),
             "pts_ppr": st.get("pts_ppr"),
         }
+    return out
+
+
+def scrape_sleeper_usage(week: int) -> None:
+    print("fetch sleeper players, 2025 and 2026 stats, week projections")
+    try:
+        players = fetch_json("https://api.sleeper.app/v1/players/nfl")
+        stats_2025 = fetch_json("https://api.sleeper.app/v1/stats/nfl/regular/2025")
+        stats_2026 = fetch_json("https://api.sleeper.app/v1/stats/nfl/regular/2026")
+        projs = fetch_json(f"https://api.sleeper.app/projections/nfl/2026/{week}?season_type=regular")
+    except Exception as exc:
+        print(f"  skip sleeper: {type(exc).__name__}: {exc}")
+        return
+    depth = {}
+    for pid, p in (players or {}).items():
+        if not isinstance(p, dict):
+            continue
+        pos = p.get("position") or ""
+        if pos not in {"QB", "RB", "WR", "TE"}:
+            continue
+        name = p.get("full_name") or ""
+        team = _team(p.get("team") or "")
+        if not name:
+            continue
+        order = p.get("depth_chart_order")
+        if team and order:
+            depth.setdefault(team, {}).setdefault(pos, []).append({
+                "name": name, "order": int(order), "slot": p.get("depth_chart_position") or pos,
+            })
     for team, slots in depth.items():
         for pos, rows in slots.items():
             rows.sort(key=lambda r: r["order"])
-    print(f"  sleeper usage n={len(out)} depth teams={len(depth)}")
-    dump("usage-2025", {"season": 2025, "players": out})
+    out_2025 = _usage_from_sleeper(players, stats_2025)
+    out_2026 = _usage_from_sleeper(players, stats_2026)
+    print(f"  sleeper usage 2025 n={len(out_2025)} 2026 n={len(out_2026)} depth teams={len(depth)}")
+    dump("usage-2025", {"season": 2025, "players": out_2025})
+    dump("usage-2026", {"season": 2026, "players": out_2026})
     dump("depth-charts", {"season": 2026, "teams": [
         {"team": team, "slots": slots} for team, slots in sorted(depth.items())
     ]})

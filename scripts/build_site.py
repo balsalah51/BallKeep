@@ -765,7 +765,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 54
+CSS_VER = 56
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1017,7 +1017,7 @@ FB_SEO = {
     ),
     "touches.html": (
         "NFL Touches and Targets 2025 | Fantasy Football | Ball Keep",
-        "2025 targets, rushes, receptions, and skill TDs for every skill player. Sort by stat. Keep and Board BK Value on each name.",
+        "2026 targets, rushes, receptions, and skill TDs. Early season. Sort by stat. Keep and Board BK Value on each name.",
         "img/logo.jpg",
     ),
     "hot-n-cold.html": (
@@ -1250,7 +1250,7 @@ FB_ALSO = {
         ("trade-superflex.html", "Superflex Calculator", "Keep ranks as BK Value."),
         ("players/index.html", "Player Pages", "Every Keep name, tape included."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
-        ("touches.html", "Touches and Targets", "2025 targets, rushes, receptions, TDs."),
+        ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
     ],
     "board.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
@@ -1260,7 +1260,7 @@ FB_ALSO = {
         ("trade-ppr.html", "PPR Calculator", "Board ranks as BK Value."),
         ("players/index.html", "Player Pages", "Tape and plus/minus."),
         ("news.html", "BK News", "Injuries and roster tape."),
-        ("touches.html", "Touches and Targets", "2025 targets, rushes, receptions, TDs."),
+        ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
     ],
     "touches.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty."),
@@ -1297,7 +1297,7 @@ FB_ALSO = {
     ],
     "hot-n-cold.html": [
         ("the-keep.html", "The Keep", "The ranks behind the tape."),
-        ("touches.html", "Touches and Targets", "2025 targets and rushes."),
+        ("touches.html", "Touches and Targets", "2026 targets and rushes."),
         ("recent-trades.html", "Recent Deals", "Packages that actually closed."),
         ("news.html", "BK News", "Injuries moving the market."),
         ("trade-superflex.html", "Superflex Calculator", "Price the buy."),
@@ -1807,7 +1807,7 @@ def home_body_html(keep, board, media, stories=None):
         ("depth-charts.html", "Depth Charts", "32 clubs."),
     ])}
     {desk_block("tape", "Tape", "The non-ranking lists.", "The market notes, the player files, and the pictures.", [
-        ("touches.html", "Touches and Targets", "2025 targets, rushes, receptions, TDs."),
+        ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
         ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
         ("the-x.html", "The X", "Memes. Pictures on the card."),
@@ -2898,7 +2898,7 @@ def write_explore_page():
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
         ("league.html", "My Team", "Your Sleeper league."),
-        ("touches.html", "Touches and Targets", "2025 targets and rushes."),
+        ("touches.html", "Touches and Targets", "2026 targets and rushes."),
         ("players/index.html", "Player Files", "Keep 400 plus tape."),
         ("news.html", "BK News", "Hourly football wire."),
         ("the-x.html", "The X", "Football memes."),

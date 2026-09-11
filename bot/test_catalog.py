@@ -719,24 +719,34 @@ def main():
     assert ".board-val" in css
     touches = html_of("touches.html")
     assert "<h1>Touches and Targets</h1>" in touches
+    assert "2026 NFL season" in touches
+    assert "2025 regular-season" not in touches
     assert 'id="touch-sort"' in touches
     assert 'id="touch-pos"' in touches
+    assert 'id="touch-list"' in touches
     assert 'data-sort="targets"' in touches
     assert 'data-sort="touches"' in touches
     assert 'data-sort="rec"' in touches
     assert 'data-sort="td"' in touches
     assert "keep-val" in touches
     assert "board-val" in touches
-    assert "CeeDee Lamb" in touches or "Jahmyr Gibbs" in touches
+    assert 'class="stat-lab">Targets</span>' in touches
+    assert 'class="stat-lab">Touches</span>' in touches
+    assert 'class="stat-lab">Rec</span>' in touches
+    assert 'class="stat-lab">TDs</span>' in touches
+    assert 'class="stat-lab">Keep</span>' in touches
+    assert 'class="stat-lab">Board</span>' in touches
+    assert "Jaxon Smith-Njigba" in touches or "Puka Nacua" in touches or "no names yet" in touches
     assert "yahoo" not in touches.lower()
     assert "\u2014" not in touches
     assert " is the " not in touches
     assert 'class="face"' in touches
     assert "players/" in touches
-    assert "players/jamarr-chase.html" in touches
-    assert 'class="pos WR"' in touches
-    assert 'class="pos RB"' in touches
-    assert 'class="pos TE"' in touches
+    assert 'class="pos WR"' in touches or "no names yet" in touches
+    css = Path("css/site.css").read_text()
+    assert ".touch-row" in css
+    assert ".stat-lab" in css
+    assert ".touch-stat" in css
 
 
 if __name__ == "__main__":

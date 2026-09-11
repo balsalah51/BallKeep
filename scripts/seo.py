@@ -1236,7 +1236,7 @@ def rank_search_js() -> str:
   window.applyRankFilter = function () {
     var q = needle();
     var pos = wantPos();
-    document.querySelectorAll("table.rank-table tbody tr").forEach(function (tr) {
+    document.querySelectorAll("table.rank-table tbody tr, .touch-row").forEach(function (tr) {
       var hay = (tr.getAttribute("data-name") || "").toLowerCase();
       var nameOk = !q || hay.indexOf(q) !== -1;
       var rowPos = (tr.getAttribute("data-pos") || "").toLowerCase();

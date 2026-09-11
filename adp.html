@@ -33,7 +33,7 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ball Keep", "item": "https://ballkeep.com/"}, {"@type": "ListItem", "position": 2, "name": "ADP", "item": "https://ballkeep.com/adp.html"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Delta?", "acceptedAnswer": {"@type": "Answer", "text": "ESPN ADP minus The Board rank. A plus means the room is drafting him later than we rank him."}}, {"@type": "Question", "name": "Who is in this table?", "acceptedAnswer": {"@type": "Answer", "text": "Anyone on The Board or with a public ESPN ADP. Kickers and DST stay off."}}]}</script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/site.css?v=54" />
+  <link rel="stylesheet" href="css/site.css?v=56" />
   <link rel="icon" href="img/logo.jpg" />
 </head>
 <body>
@@ -69,7 +69,7 @@
   window.applyRankFilter = function () {
     var q = needle();
     var pos = wantPos();
-    document.querySelectorAll("table.rank-table tbody tr").forEach(function (tr) {
+    document.querySelectorAll("table.rank-table tbody tr, .touch-row").forEach(function (tr) {
       var hay = (tr.getAttribute("data-name") || "").toLowerCase();
       var nameOk = !q || hay.indexOf(q) !== -1;
       var rowPos = (tr.getAttribute("data-pos") || "").toLowerCase();

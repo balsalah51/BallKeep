@@ -1,4 +1,4 @@
-"""Touches and Targets: 2025 Sleeper counting stats plus Keep and Board BK Value."""
+"""Touches and Targets: 2026 Sleeper counting stats plus Keep and Board BK Value."""
 from __future__ import annotations
 
 import json
@@ -7,7 +7,8 @@ from pathlib import Path
 from seo import also_on_desk, breadcrumbs, breadcrumb_jsonld, rank_search_bar, rank_search_key
 
 ROOT = Path(__file__).resolve().parents[1]
-USAGE_PATH = ROOT / "data/weekly/usage-2025.json"
+USAGE_PATH = ROOT / "data/weekly/usage-2026.json"
+SEASON = 2026
 
 
 def _num(v) -> int:
@@ -32,7 +33,7 @@ def _player_href(name: str, key: str, media: dict) -> str:
 
 
 def load_usage_rows(keep, board, media=None):
-    """One row per skill player with 2025 volume. Default sort is targets."""
+    """One row per skill player with 2026 volume. Default sort is targets."""
     from build_site import esc, face_src, fmt_val, norm_name
 
     media = media or {}
@@ -102,31 +103,45 @@ def load_usage_rows(keep, board, media=None):
     return rows
 
 
-def _sort_js() -> str:
+def _page_js() -> str:
     return """<script>
 (function () {
   var box = document.getElementById("touch-sort");
-  var table = document.querySelector("table.touches-table");
-  if (!box || !table) return;
+  var list = document.getElementById("touch-list");
+  if (!list) return;
+  function rows() {
+    return Array.prototype.slice.call(list.querySelectorAll(".touch-row"));
+  }
+  window.applyRankFilter = function () {
+    var inp = document.querySelector(".rank-search-input");
+    var q = inp ? String(inp.value || "").trim().toLowerCase() : "";
+    var posBtn = document.querySelector("#touch-pos button.active");
+    var pos = posBtn ? String(posBtn.getAttribute("data-pos") || "all").toLowerCase() : "all";
+    rows().forEach(function (row) {
+      var hay = (row.getAttribute("data-name") || "").toLowerCase();
+      var nameOk = !q || hay.indexOf(q) !== -1;
+      var rowPos = (row.getAttribute("data-pos") || "").toLowerCase();
+      var posOk = pos === "all" || rowPos === pos;
+      row.style.display = (nameOk && posOk) ? "" : "none";
+    });
+  };
   function paint() {
-    var btn = box.querySelector("button.active");
+    var btn = box ? box.querySelector("button.active") : null;
     var key = btn ? btn.getAttribute("data-sort") : "targets";
-    var tbody = table.querySelector("tbody");
-    var rows = Array.prototype.slice.call(tbody.querySelectorAll("tr"));
-    rows.sort(function (a, b) {
+    var ordered = rows().sort(function (a, b) {
       var av = Number(a.getAttribute("data-" + key) || 0);
       var bv = Number(b.getAttribute("data-" + key) || 0);
       if (bv !== av) return bv - av;
       return String(a.getAttribute("data-name") || "").localeCompare(String(b.getAttribute("data-name") || ""));
     });
-    rows.forEach(function (tr, i) {
-      var rk = tr.querySelector(".c-rank");
+    ordered.forEach(function (row, i) {
+      var rk = row.querySelector(".c-rank");
       if (rk) rk.textContent = String(i + 1);
-      tbody.appendChild(tr);
+      list.appendChild(row);
     });
     if (window.applyRankFilter) window.applyRankFilter();
   }
-  box.addEventListener("click", function (e) {
+  if (box) box.addEventListener("click", function (e) {
     var b = e.target.closest("button");
     if (!b) return;
     box.querySelectorAll("button").forEach(function (x) { x.classList.remove("active"); });
@@ -138,9 +153,26 @@ def _sort_js() -> str:
 """
 
 
-def _table(rows) -> str:
+def _stat(lab: str, val, extra="") -> str:
     from build_site import esc
 
+    cls = f"touch-stat {extra}".strip()
+    return (
+        f'<div class="{cls}">'
+        f'<span class="stat-lab">{esc(lab)}</span>'
+        f'<span class="stat-num">{esc(str(val))}</span>'
+        "</div>"
+    )
+
+
+def _cards(rows) -> str:
+    from build_site import esc
+
+    if not rows:
+        return (
+            '<p class="note">No 2026 regular-season targets, rushes, receptions, or skill TDs on the tape yet. '
+            "Week 1 is still filling in.</p>"
+        )
     body = []
     for r in rows:
         pos = r.get("pos") or ""
@@ -148,40 +180,36 @@ def _table(rows) -> str:
         dn = rank_search_key(r.get("name"), pos, team)
         face = (
             f'<img class="face" src="{esc(r["_face"])}" alt="{esc(r["name"])} headshot" '
-            f'width="28" height="28" loading="lazy" />'
+            f'width="40" height="40" loading="lazy" />'
         )
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
             f" · {esc(team)}</div>"
         )
-        stack = f'<span class="name-stack">{r["_anchor"]}{meta}</span>'
         keep_cls = "keep-val" if r["keep_value"] else "skip-val"
         board_cls = "board-val" if r["board_value"] else "skip-val"
         body.append(
-            f'<tr data-pos="{esc(pos)}" data-name="{dn}" '
+            f'<article class="touch-row" data-pos="{esc(pos)}" data-name="{dn}" '
             f'data-targets="{r["targets"]}" data-touches="{r["rushes"]}" '
             f'data-rec="{r["rec"]}" data-td="{r["tds"]}">'
-            f'<td class="rk c-rank">{r["bk"]}</td>'
-            f'<td class="c-name">{face}{stack}</td>'
-            f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
-            f'<td class="c-team">{esc(team)}</td>'
-            f'<td class="c-stat">{r["targets"]}</td>'
-            f'<td class="c-stat">{r["rushes"]}</td>'
-            f'<td class="c-stat">{r["rec"]}</td>'
-            f'<td class="c-stat">{r["tds"]}</td>'
-            f'<td class="c-val {keep_cls}">{esc(r["keep_txt"])}</td>'
-            f'<td class="c-val {board_cls}">{esc(r["board_txt"])}</td>'
-            "</tr>"
+            f'<div class="touch-who">'
+            f'<span class="rk c-rank">{r["bk"]}</span>'
+            f"{face}"
+            f'<span class="name-stack">{r["_anchor"]}{meta}</span>'
+            f"</div>"
+            f'<div class="touch-stats">'
+            f'{_stat("Targets", r["targets"])}'
+            f'{_stat("Touches", r["rushes"])}'
+            f'{_stat("Rec", r["rec"])}'
+            f'{_stat("TDs", r["tds"])}'
+            f"</div>"
+            f'<div class="touch-bk">'
+            f'{_stat("Keep", r["keep_txt"], keep_cls)}'
+            f'{_stat("Board", r["board_txt"], board_cls)}'
+            f"</div>"
+            "</article>"
         )
-    return (
-        '<div class="table-wrap"><table class="rank-table faces touches-table">'
-        "<thead><tr>"
-        "<th>BK</th><th>Player</th><th>Pos</th><th>Team</th>"
-        "<th>Targets</th><th>Touches</th><th>Rec</th><th>TDs</th>"
-        '<th class="c-val">Keep</th><th class="c-val">Board</th>'
-        "</tr></thead>"
-        f"<tbody>{''.join(body)}</tbody></table></div>"
-    )
+    return f'<div class="touches-list" id="touch-list">{"".join(body)}</div>'
 
 
 def write_touches_page(b, keep, board, media):
@@ -198,18 +226,19 @@ def write_touches_page(b, keep, board, media):
         "</div>"
     )
     extra = also_on_desk(b.FB_ALSO.get("touches.html") or [])
+    count = f"{len(rows)} names" if rows else "no names yet"
     body = f"""
-    <p class="kicker">2025 NFL season · Counting stats · {len(rows)} names</p>
+    <p class="kicker">{SEASON} NFL season · Week 1 so far · {count}</p>
     <h1>Touches and Targets</h1>
-    <p class="note">Sleeper 2025 regular-season totals. Touches are rushes. Receptions sit in their own column. TDs are rushing plus receiving, not passing. Keep is Superflex dynasty BK Value. Board is redraft PPR BK Value. Unranked on a board is a skip. Sort with the buttons. Filter by position with the chips.</p>
+    <p class="note">Sleeper {SEASON} regular-season totals only. Early tape. Each number sits on its own label. Touches are rushes. Receptions sit in their own box. TDs are rushing plus receiving, not passing. Keep is Superflex dynasty BK Value. Board is redraft PPR BK Value. Unranked on a board is a skip. Sort with the buttons. Filter by position with the chips.</p>
     {rank_search_bar(chips)}
     {sorts}
-    <div class="panel">{_table(rows)}</div>
+    <div class="panel touches-panel">{_cards(rows)}</div>
     <section class="sources">
       <p class="kicker">Source</p>
       <h2>Where the numbers come from.</h2>
       <ul>
-        <li><a href="https://sleeper.com/">Sleeper</a> NFL regular-season stats, 2025. Targets, rushes, receptions, and skill TDs.</li>
+        <li><a href="https://sleeper.com/">Sleeper</a> NFL regular-season stats, {SEASON}. Targets, rushes, receptions, and skill TDs.</li>
         <li>Keep BK Value from <a href="the-keep.html">The Keep</a>. Board BK Value from <a href="board.html">The Board</a>.</li>
       </ul>
     </section>
@@ -221,7 +250,7 @@ def write_touches_page(b, keep, board, media):
             "Touches and Targets",
             "touches.html",
             body,
-            extra_js=chip_js + _sort_js(),
+            extra_js=chip_js + _page_js(),
             crumbs=breadcrumbs([
                 ("Ball Keep", "index.html"),
                 ("Touches and Targets", None),
