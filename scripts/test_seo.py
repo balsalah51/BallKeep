@@ -143,13 +143,14 @@ def test_football_nav_keeps_every_link():
         "Redraft Superflex", "The Classic", "Redraft STD", "2026 Rookies",
         "The D (DST)", "Kickers",
         "Weekly", "Opening", "Week 1 DST", "Week 1 K", "Week 1 Matchups", "Week 1 Waivers", "Injuries",
-        "ADP", "Trade", "League",
+        "ADP", "Trade",
+        "My Team",
         "Players", "News", "The X", "Hot 'n' Cold",
         "NFL", "MLB", "BPL",
         "The Fence (IDP)",
     ]
     keys = [k for k, _lab, _items in NAV_GROUPS]
-    assert keys == ["leads", "ros", "st", "week", "tools", "tape", "slates", "fence"]
+    assert keys == ["leads", "ros", "st", "week", "tools", "mine", "tape", "slates", "fence"]
     header = fb_header_nav("weekly.html", 0)
     assert 'aria-current="page">Weekly</a>' in header
     assert 'class="nav-group nav-week is-here"' in header
@@ -603,7 +604,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=52" in doc
+    assert "css/site.css?v=53" in doc
 
 
 if __name__ == "__main__":
