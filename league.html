@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fantasy League Analyzer (Sleeper, Yahoo) | Ball Keep</title>
-  <meta name="description" content="Load a Sleeper league ID or paste Yahoo rosters. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle." />
+  <title>Fantasy League Analyzer (Sleeper) | Ball Keep</title>
+  <meta name="description" content="Load a public Sleeper league ID. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#c8102e" />
@@ -17,22 +17,22 @@
   <link rel="alternate" type="application/rss+xml" title="BK News" href="https://ballkeep.com/feed.xml" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Ball Keep" />
-  <meta property="og:title" content="Fantasy League Analyzer (Sleeper, Yahoo) | Ball Keep" />
-  <meta property="og:description" content="Load a Sleeper league ID or paste Yahoo rosters. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle." />
+  <meta property="og:title" content="Fantasy League Analyzer (Sleeper) | Ball Keep" />
+  <meta property="og:description" content="Load a public Sleeper league ID. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle." />
   <meta property="og:url" content="https://ballkeep.com/league.html" />
   <meta property="og:image" content="https://ballkeep.com/img/logo.jpg" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:image:alt" content="Fantasy League Analyzer (Sleeper, Yahoo) | Ball Keep" />
+  <meta property="og:image:alt" content="Fantasy League Analyzer (Sleeper) | Ball Keep" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Fantasy League Analyzer (Sleeper, Yahoo) | Ball Keep" />
-  <meta name="twitter:description" content="Load a Sleeper league ID or paste Yahoo rosters. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle." />
+  <meta name="twitter:title" content="Fantasy League Analyzer (Sleeper) | Ball Keep" />
+  <meta name="twitter:description" content="Load a public Sleeper league ID. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle." />
   <meta name="twitter:image" content="https://ballkeep.com/img/logo.jpg" />
-  <meta name="twitter:image:alt" content="Fantasy League Analyzer (Sleeper, Yahoo) | Ball Keep" />
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Fantasy League Analyzer (Sleeper, Yahoo) | Ball Keep", "description": "Load a Sleeper league ID or paste Yahoo rosters. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle.", "url": "https://ballkeep.com/league.html", "inLanguage": "en-US", "isPartOf": {"@type": "WebSite", "name": "Ball Keep", "url": "https://ballkeep.com"}, "publisher": {"@type": "Organization", "name": "Ball Keep", "url": "https://ballkeep.com", "logo": {"@type": "ImageObject", "url": "https://ballkeep.com/img/logo.jpg"}, "sameAs": ["https://github.com/balsalah51/BallKeep"]}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://ballkeep.com/img/logo.jpg"}}</script>
+  <meta name="twitter:image:alt" content="Fantasy League Analyzer (Sleeper) | Ball Keep" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Fantasy League Analyzer (Sleeper) | Ball Keep", "description": "Load a public Sleeper league ID. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle.", "url": "https://ballkeep.com/league.html", "inLanguage": "en-US", "isPartOf": {"@type": "WebSite", "name": "Ball Keep", "url": "https://ballkeep.com"}, "publisher": {"@type": "Organization", "name": "Ball Keep", "url": "https://ballkeep.com", "logo": {"@type": "ImageObject", "url": "https://ballkeep.com/img/logo.jpg"}, "sameAs": ["https://github.com/balsalah51/BallKeep"]}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://ballkeep.com/img/logo.jpg"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ball Keep", "item": "https://ballkeep.com/"}, {"@type": "ListItem", "position": 2, "name": "League", "item": "https://ballkeep.com/league.html"}]}</script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/site.css?v=52" />
+  <link rel="stylesheet" href="css/site.css?v=53" />
   <link rel="icon" href="img/logo.jpg" />
 </head>
 <body>
@@ -50,15 +50,11 @@
     <div class="sports-top"><a class="sport-switch bb" href="bb/index.html">BaseKeep</a><a class="sport-switch bk" href="bk/index.html">BasketKeep</a><a class="sport-switch pl" href="pl/index.html">PitchKeep</a></div>
     <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Ball Keep</a></li><li aria-current="page">League</li></ol></nav>
     
-    <p class="kicker">Tools · Sleeper and Yahoo</p>
+    <p class="kicker">Tools · Sleeper</p>
     <h1>League</h1>
-    <p class="note">Load a Sleeper league by ID. Yahoo keeps rosters behind a login, so paste each team below. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off.</p>
+    <p class="note">Load a public Sleeper league by ID. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off.</p>
     <form class="league-form" id="league-form" action="league.html" method="get">
-      <div class="league-tabs" role="tablist">
-        <button type="button" class="is-on" data-plat="sleeper">Sleeper</button>
-        <button type="button" data-plat="yahoo">Yahoo</button>
-      </div>
-      <div class="league-fields" data-pane="sleeper">
+      <div class="league-fields">
         <label for="sleeper-id">Sleeper league ID</label>
         <div class="league-row">
           <input id="sleeper-id" name="sleeper" type="text" inputmode="numeric" autocomplete="off" placeholder="18-digit league ID" />
@@ -66,17 +62,6 @@
           <button type="button" class="cta alt" data-demo="1">Sample league</button>
         </div>
         <p class="note">Find the ID in the Sleeper league URL or in League settings.</p>
-      </div>
-      <div class="league-fields is-hide" data-pane="yahoo">
-        <label for="yahoo-id">Yahoo league ID</label>
-        <input id="yahoo-id" name="yahoo" type="text" autocomplete="off" placeholder="461.l.123456 or the numeric ID" />
-        <label for="yahoo-paste">Paste Yahoo rosters</label>
-        <textarea id="yahoo-paste" rows="10" placeholder="# Cedar&#10;Josh Allen&#10;Bijan Robinson&#10;&#10;# Harbor&#10;Ja'Marr Chase"></textarea>
-        <div class="league-row">
-          <button type="button" class="cta" data-load="yahoo">Read pasted rosters</button>
-          <button type="button" class="cta alt" data-demo="1">Sample league</button>
-        </div>
-        <p class="note">Yahoo's fantasy API requires a Yahoo login. This site cannot store that login. Paste teams as a heading line starting with #, then one player per line. Or move the league to Sleeper and use the ID.</p>
       </div>
     </form>
     <div id="league-app" class="league-app" hidden></div>

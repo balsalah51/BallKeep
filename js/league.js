@@ -11,7 +11,6 @@
     meta: null,
     teams: [],
     owned: {},
-    platform: "sleeper",
   };
 
   function esc(s) {
@@ -103,16 +102,6 @@
     if (!res.ok) throw new Error("Lookup file missing.");
     state.lookup = await res.json();
     return state.lookup;
-  }
-
-  function setPlat(plat) {
-    state.platform = plat;
-    form.querySelectorAll(".league-tabs button").forEach(function (btn) {
-      btn.classList.toggle("is-on", btn.getAttribute("data-plat") === plat);
-    });
-    form.querySelectorAll(".league-fields").forEach(function (pane) {
-      pane.classList.toggle("is-hide", pane.getAttribute("data-pane") !== plat);
-    });
   }
 
   function detectMode(league) {
@@ -466,53 +455,6 @@
     history.replaceState(null, "", "league.html?sleeper=" + encodeURIComponent(id));
   }
 
-  function parseYahooPaste(text) {
-    const lines = String(text || "").split(/\r?\n/);
-    const teams = [];
-    let cur = null;
-    lines.forEach(function (line) {
-      const raw = line.trim();
-      if (!raw) return;
-      if (/^#/.test(raw) || /:$/.test(raw)) {
-        const name = raw.replace(/^#\s*/, "").replace(/:$/, "").trim();
-        if (!name) return;
-        cur = { id: teams.length + 1, name: name, owner: name, wins: 0, losses: 0, fpts: 0, rawPlayers: [], picks: [] };
-        teams.push(cur);
-        return;
-      }
-      if (!cur) {
-        cur = { id: 1, name: "Team 1", owner: "", wins: 0, losses: 0, fpts: 0, rawPlayers: [], picks: [] };
-        teams.push(cur);
-      }
-      const name = raw.replace(/,.*$/, "").replace(/\s+\((QB|RB|WR|TE|K|DEF|DST)\)$/i, "").trim();
-      if (!name || /^player$/i.test(name)) return;
-      cur.rawPlayers.push({ pack: packFromName(name), name: name, pos: "" });
-    });
-    return teams;
-  }
-
-  function loadYahoo(id, paste) {
-    const teams = parseYahooPaste(paste);
-    if (!teams.length) throw new Error("Paste at least one team. Start a team with # Name, then one player per line.");
-    state.meta = {
-      name: id ? "Yahoo league " + id : "Yahoo paste",
-      season: "2026",
-      kind: "dynasty",
-      scoring: "PPR",
-      platform: "Yahoo",
-    };
-    state.mode = "sf";
-    state.includePicks = false;
-    state.teams = teams;
-    paint();
-    const q = id ? "yahoo=" + encodeURIComponent(id) : "yahoo=paste";
-    history.replaceState(null, "", "league.html?" + q);
-  }
-
-  form.querySelectorAll(".league-tabs button").forEach(function (btn) {
-    btn.addEventListener("click", function () { setPlat(btn.getAttribute("data-plat")); });
-  });
-
   form.addEventListener("click", async function (e) {
     const demo = e.target.closest("[data-demo]");
     const load = e.target.closest("[data-load]");
@@ -521,11 +463,7 @@
     try {
       await loadLookup();
       if (demo) applyDemo();
-      else if (load.getAttribute("data-load") === "sleeper") {
-        await loadSleeper(document.getElementById("sleeper-id").value);
-      } else {
-        loadYahoo(document.getElementById("yahoo-id").value, document.getElementById("yahoo-paste").value);
-      }
+      else await loadSleeper(document.getElementById("sleeper-id").value);
     } catch (err) {
       showError(err.message || "Could not load that league.");
     }
@@ -535,11 +473,7 @@
     e.preventDefault();
     try {
       await loadLookup();
-      if (state.platform === "yahoo") {
-        loadYahoo(document.getElementById("yahoo-id").value, document.getElementById("yahoo-paste").value);
-      } else {
-        await loadSleeper(document.getElementById("sleeper-id").value);
-      }
+      await loadSleeper(document.getElementById("sleeper-id").value);
     } catch (err) {
       showError(err.message || "Could not load that league.");
     }
@@ -559,7 +493,6 @@
   });
 
   const params = new URLSearchParams(location.search);
-  if (params.get("yahoo") && !params.get("sleeper")) setPlat("yahoo");
   loadLookup().then(function () {
     if (params.get("demo")) applyDemo();
     else if (params.get("sleeper")) {
