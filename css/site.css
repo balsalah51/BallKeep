@@ -550,7 +550,71 @@ table.boards { font-size: 15px; }
 table.boards tr.hi td, table.boards tr.lo td { font-weight: 800; }
 .row-meta { display: none; }
 .news-flag { border-left: 6px solid var(--red); }
+.league-form {
+  background: var(--white); border: 1px solid var(--line); border-radius: 16px;
+  padding: 18px; box-shadow: var(--shadow); margin: 8px 0 22px;
+}
+.league-tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+.league-tabs button, .league-chip {
+  border: 1px solid var(--line); background: var(--powder); border-radius: 999px;
+  padding: 7px 14px; font: inherit; font-weight: 800; cursor: pointer;
+}
+.league-tabs button.is-on, .league-chip.is-on { background: #fff; border-color: var(--red); color: var(--red-dark); }
+.league-fields.is-hide { display: none; }
+.league-fields label { display: block; font-weight: 800; margin: 10px 0 6px; }
+.league-fields input[type="text"], .league-fields textarea {
+  width: 100%; font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px;
+}
+.league-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; align-items: center; }
+.league-app { margin-top: 8px; }
+.league-head { margin-bottom: 18px; }
+.league-head h2 { margin: 4px 0 8px; font-size: 30px; letter-spacing: -0.03em; }
+.league-controls { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: center; margin-top: 12px; }
+.league-toggle { font-weight: 800; }
+.league-error {
+  background: #fff5f6; border: 1px solid #f0c4cb; border-radius: 14px; padding: 16px; color: var(--red-dark);
+}
+.league-team-cell { display: flex; align-items: center; gap: 10px; }
+.league-team-cell small { display: block; color: var(--muted); }
+.league-faces { display: flex; }
+.league-faces img, .league-faces a {
+  width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: top center;
+  border: 2px solid #fff; box-shadow: 0 0 0 1px var(--line); background: var(--powder-deep);
+}
+.league-faces a { display: block; margin-left: -10px; }
+.league-faces a:first-child, .league-faces img:first-child { margin-left: 0; }
+.league-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 18px 0; }
+.league-card {
+  background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 16px; box-shadow: var(--shadow);
+}
+.league-card h3 { margin: 0 0 4px; }
+.league-total { margin: 0 0 12px; font-size: 28px; font-weight: 800; color: var(--red); }
+.league-heroes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+.league-hero-face img {
+  width: 100%; aspect-ratio: 1; object-fit: cover; object-position: top center;
+  border-radius: 12px; border: 1px solid var(--line); background: var(--powder-deep);
+}
+.league-hero-face span { display: block; font-size: 12px; font-weight: 800; margin-top: 4px; }
+.league-card ol { margin: 0; padding: 0; list-style: none; }
+.league-card li {
+  display: flex; justify-content: space-between; gap: 8px; padding: 5px 0;
+  border-bottom: 1px solid var(--line); font-size: 14px;
+}
+.league-card li small { color: var(--muted); font-weight: 700; }
+.stack-chart { display: flex; flex-direction: column; gap: 8px; }
+.stack-row { display: grid; grid-template-columns: minmax(7rem, 28%) 1fr; gap: 8px; align-items: center; }
+.pos-stack { display: flex; height: 12px; border-radius: 999px; overflow: hidden; background: var(--powder-deep); }
+.pos-stack .ps { display: block; height: 100%; }
+.pos-stack .qb, .dot.qb { background: #c8102e; }
+.pos-stack .rb, .dot.rb { background: #1788c2; }
+.pos-stack .wr, .dot.wr { background: #102033; }
+.pos-stack .te, .dot.te { background: #6b2d86; }
+.pos-stack .pk, .dot.pk { background: #c9a227; }
+.stack-key { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.stack-key .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+small.wire { color: var(--red); font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
 @media (max-width: 860px) {
+  .league-grid { grid-template-columns: 1fr; }
   header.site { flex-direction: column; align-items: flex-start; }
   nav { justify-content: flex-start; }
   nav.site-nav { justify-content: flex-start; flex: 1 1 auto; width: 100%; }
