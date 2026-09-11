@@ -744,6 +744,7 @@ NAV_GROUPS = [
     ("tools", "Tools", [
         ("adp.html", "ADP"),
         ("trade.html", "Trade"),
+        ("league.html", "League"),
     ]),
     ("tape", "Tape", [
         ("players/index.html", "Players"),
@@ -1101,6 +1102,11 @@ FB_SEO = {
         "The Board redraft PPR rank next to ESPN ADP. Plus delta means the room is later than we are.",
         "img/logo.jpg",
     ),
+    "league.html": (
+        "Fantasy League Analyzer (Sleeper, Yahoo) | Ball Keep",
+        "Load a Sleeper league ID or paste Yahoo rosters. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle.",
+        "img/logo.jpg",
+    ),
     "injuries.html": (
         "NFL Injury Report | Fantasy Football | Ball Keep",
         "Skill-position injury designations from ESPN club tables, tied to Week 1 fantasy football boards.",
@@ -1382,6 +1388,13 @@ FB_ALSO = {
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
         ("the-classic.html", "The Classic", "Half-PPR draft check."),
+    ],
+    "league.html": [
+        ("trade.html", "Trade Calculators", "Price a deal."),
+        ("the-keep.html", "The Keep", "Superflex dynasty."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("adp.html", "ADP", "Board vs ESPN."),
+        ("weekly.html", "Weekly", "This week's skill boards."),
     ],
     "injuries.html": [
         ("weekly.html", "Weekly", "Start/sit around the report."),
@@ -1767,7 +1780,8 @@ def home_body_html(keep, board, media, stories=None):
         ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ])}
-    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, ADP vs The Board, and depth charts.", [
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, load a league, ADP vs The Board, and depth charts.", [
+        ("league.html", "League", "Sleeper ID or Yahoo paste. BK Value on every roster."),
         ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
         ("adp.html", "ADP", "The Board vs ESPN."),
         ("depth-charts.html", "Depth Charts", "32 clubs."),
@@ -2862,6 +2876,7 @@ def write_explore_page():
         ("waiver.html", "Week 1 Waivers", "Consensus adds."),
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
+        ("league.html", "League", "Sleeper or Yahoo paste."),
         ("players/index.html", "Player Files", "Keep 400 plus tape."),
         ("news.html", "BK News", "Hourly football wire."),
         ("the-x.html", "The X", "Football memes."),
@@ -3307,6 +3322,8 @@ def main():
 
     from weekly_pages import write_weekly_pages
     weekly_pack = write_weekly_pages(sys.modules[__name__], nfl, media, ppr)
+    from league_hub import write_league_page
+    write_league_page(sys.modules[__name__], keep, board, ppr, classic, std, weekly_pack.get("waiver") or [], media)
 
     fence_chips, fence_js = pos_filter("fence-pos", ["QB", "RB", "WR", "TE", "DL", "LB", "DB"])
     fence_body = f"""
@@ -3558,6 +3575,7 @@ def main():
         "https://ballkeep.com/weekly-te.html",
         "https://ballkeep.com/waiver.html",
         "https://ballkeep.com/adp.html",
+        "https://ballkeep.com/league.html",
         "https://ballkeep.com/injuries.html",
         "https://ballkeep.com/depth-charts.html",
         "https://ballkeep.com/week1-dst.html",

@@ -143,7 +143,7 @@ def test_football_nav_keeps_every_link():
         "Redraft Superflex", "The Classic", "Redraft STD", "2026 Rookies",
         "The D (DST)", "Kickers",
         "Weekly", "Opening", "Week 1 DST", "Week 1 K", "Week 1 Matchups", "Week 1 Waivers", "Injuries",
-        "ADP", "Trade",
+        "ADP", "Trade", "League",
         "Players", "News", "The X", "Hot 'n' Cold",
         "NFL", "MLB", "BPL",
         "The Fence (IDP)",
@@ -561,6 +561,17 @@ def test_farm_top_100():
     assert all(r.get("ranks") for r in farm)
     keys = [r["key"] for r in farm]
     assert len(keys) == len(set(keys))
+
+
+def test_league_pick_math():
+    from league_hub import pick_band, pick_label
+    assert pick_band(0, 12) == "Early"
+    assert pick_band(5, 12) == "Mid"
+    assert pick_band(11, 12) == "Late"
+    assert pick_label(2027, 1, "Early") == "2027 Early 1st"
+    assert pick_label(2027, 2, "Mid") == "2027 Mid 2nd"
+    assert pick_label(2028, 2, "Late") == "2028 2nd"
+    assert pick_label(2027, 3, "Early") == "2027 3rd"
 
 
 def test_home_page_markup():

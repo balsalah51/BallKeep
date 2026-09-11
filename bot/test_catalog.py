@@ -2,6 +2,7 @@
 """Smoke-test catalog search and trade math without Discord."""
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
@@ -320,6 +321,7 @@ def main():
     assert "the-x.html" in tape
     assert "the-fence.html" not in tape
     assert 'href="trade.html"' in tools
+    assert "league.html" in tools
     assert "adp.html" in tools
     assert "sos.html" not in tools
     assert "depth-charts.html" in tools
@@ -430,6 +432,19 @@ def main():
     assert "100.0%" not in w1_m_html
     assert "win percent" not in w1_m_html.lower()
     assert "win chance" in w1_m_html.lower()
+    league_html = html_of("league.html")
+    assert "<h1>League</h1>" in league_html
+    assert "sleeper-id" in league_html
+    assert "yahoo-paste" in league_html
+    assert "js/league.js" in league_html
+    assert "Sample league" in league_html
+    assert "\u2014" not in league_html
+    assert " is the " not in league_html
+    assert (root / "data/league-lookup.json").exists()
+    lookup = json.loads((root / "data/league-lookup.json").read_text())
+    assert lookup["bySleeper"]["4984"]["name"] == "Josh Allen"
+    assert lookup["bySleeper"]["4984"]["sf"] == 12000
+    assert lookup["demo"]["teams"]
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
     assert "week1-opening.html" in weekly_html
