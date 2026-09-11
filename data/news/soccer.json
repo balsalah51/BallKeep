@@ -1,8 +1,571 @@
 {
   "sport": "soccer",
-  "updated": "2026-09-11T18:29:27Z",
-  "fresh": 165,
+  "updated": "2026-09-11T19:24:21Z",
+  "fresh": 160,
   "stories": [
+    {
+      "id": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
+      "slug": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
+      "sport": "soccer",
+      "headline": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
+      "blurb": "Tottenham: Premier League club launches season review after injury woe BBC",
+      "summary": "Bryan Mbeumo, Hugo Ekitiké, Alexander Isak and Carlos Baleba: Tottenham: Premier League club launches season review after injury woe BBC Bryan Mbeumo, Hugo Ekitiké, Alexander Isak and Carlos Baleba: Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC Bryan Mbeumo, Hugo Ekitiké, Alexander Isak and Carlos Baleba: Predicted line-ups for every Premier League team in Matchweek 4 Premier League Predicted line-ups for Premier League teams in Matchweek 29 Premier League Everton: Predicted Black Cats XI for Premier League fixture Sports Mole Aggregated from Premier League, Sports Mole, The Guardian, RotoWire, Yahoo Sports and 24 more. Premier League Injuries: Latest Injury News, Updates & Suspensions RotoWire Aggregated from BBC, The Guardian, RotoWire, Yahoo Sports, Sports Illustrated and 24 more. Aggregated from BBC, The Guardian, RotoWire, Yahoo Sports, Sports Illustrated and 24 more.",
+      "category": "injury",
+      "published": "2019-08-21T07:00:00Z",
+      "updated": "2026-09-11T16:37:24Z",
+      "players": [
+        {
+          "key": "mbeumo",
+          "name": "Bryan Mbeumo",
+          "slug": "bryan-mbeumo",
+          "pos": "MID",
+          "team": "MUN"
+        },
+        {
+          "key": "ekitike",
+          "name": "Hugo Ekitiké",
+          "slug": "hugo-ekitik",
+          "pos": "FWD",
+          "team": "LIV"
+        },
+        {
+          "key": "alexander isak",
+          "name": "Alexander Isak",
+          "slug": "alexander-isak",
+          "pos": "FWD",
+          "team": "LIV"
+        },
+        {
+          "key": "baleba",
+          "name": "Carlos Baleba",
+          "slug": "carlos-baleba",
+          "pos": "MID",
+          "team": "BHA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "fined £10.75m by the Premier League",
+          "url": "https://www.theguardian.com/football/2026/mar/16/chelsea-fined-suspended-transfer-ban-historical-rule-breaking",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Thu, 10 Sep 2026 06:00:18 GMT"
+        },
+        {
+          "title": "Premier League Injuries: Latest Injury News, Updates & Suspensions",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVFlsRkNUbUtNNWV4aXdQYk9oc0x4cHlGZ05YODY5NjBmVC1STENGQUpMN1ZncnVqVlJ2emhNeXhaaWdibUpVczU1R040djdNeDBvbUNHdEFIVEJjaFgxNGlaMDRTTzJVcVg5ajZCMlJXYV9PRjBRSUZpZkxFcm5KYnJtLUw4ODIwdENiNE9GLVZYa24xYWczems1N29uc3JUeENMcmk0c1NxS0pkZHc?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Premier League Injuries: Latest Injury News, Updates & Suspensions RotoWire",
+          "published": "Tue, 08 Sep 2026 15:02:00 GMT"
+        },
+        {
+          "title": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdmFEWC1WdUNHWXlsc2F4X2RoOW1YRS1tY1lBSGg0alF5emdhZmRmVjhHR0dNOFFMVnJXeC1KbDZPNWt3VHY5MHFlR0FRc2pGeEZjU1NFWU1zUFh3WGZNcmRwb2NlX19kNmZnSnQ4T1R1akl3YlFSenJBQWhtSVA2OXRsZ0czeGlj?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions Yahoo Sports",
+          "published": "Fri, 13 Mar 2026 15:09:08 GMT"
+        },
+        {
+          "title": "Premier League Injuries for Gameweek 28: Wirtz, Saka Among Possible Absentees",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNGU3RlFSNjZvT0lOUjdabHdMcEhIajQ0YjNwQWI4WXpMVkp6OTcwNjJHcUNKMTkwMGhUNkRLd0RoZXRidVRTVjRNT3B6N0FrMWlIVzZ3MU81UkFUNnpTdi1fa2h4Zkc4TEZDdV94dmNWQTh0RnNNVjNhRkl3Z3cyaFBtUmt0T2FkX0FDWUFMdzY0OTJWY0E?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Premier League Injuries for Gameweek 28: Wirtz, Saka Among Possible Absentees Sports Illustrated",
+          "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Which Premier League players have withdrawn through injury this international break?",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQanZOYW9ZLW45SVFEODlzZHdsdmYtcjd2QmR0ZEhNWEdRQTBxUm9yOERaNnpNUlZRaWJSS0RUTEFqTmJnTkVyR3VMNVY2WEpTekp1NlFxYjUwU3ZyUVl0Wi1mUWRBTHoyM2hwc1htdXlmMzNwcGpRUk5RVjJCUkRwMk10Q05seEktVThiWFVUVFozbDUxUExHdzRnRTRHSHlNcU9wbQ?oc=5",
+          "publisher": "nytimes.com",
+          "kind": "article",
+          "snippet": "Which Premier League players have withdrawn through injury this international break? nytimes.com",
+          "published": "Mon, 30 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Next Generation 2025: 20 of the best talents at Premier League clubs",
+          "url": "https://www.theguardian.com/football/ng-interactive/2025/oct/13/next-generation-2025-20-of-the-best-talents-at-premier-league-clubs",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "We pick the best youngsters at each club born between 1 September 2008 and 31 August 2009, an age band known as first-year scholars. Check the progress of our classes of 2024 | 2023 | 2022 | 2021 | 2020 … and go even further back . Here’s our 2025 world picks Continue reading...",
+          "published": "Mon, 13 Oct 2025 09:10:16 GMT"
+        },
+        {
+          "title": "Premier League transfer windfall a lifeline for ailing French clubs https://t.co/3wDmqCB8G1",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xa1oxVUxpVmx2SGtIMWF5TjlwODUwRDVwNzRMV2ZmVi1pMnI5U3hiRnlJQ25oc0FXUUFWUWVEZUQyVEJmRDdzSWVxYWVQTVB1QnVnQTMzVmZTMmMzYUg5djBrWXE3NXM?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Premier League transfer windfall a lifeline for ailing French clubs https://t.co/3wDmqCB8G1 x.com",
+          "published": "Sat, 05 Sep 2026 18:06:28 GMT"
+        },
+        {
+          "title": "Three Premier League clubs enter transfer race for £30m star aiming to be Brazil's next No. 9",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeHlQYmJBM0pCejJndVduN1JJWElFVjRmZDRQNEJpWE41QTFUajM1YXBRSENOcVViTGlreWlJcFFhRFNvSnBoTE10S3lMWlhsMnZGQzcwMnE2bTF1U21BOGkySkhNZ09oVnB2QnNoRVloWGw4b2dEU2pHUnFKOXJKVEtqc2JzQmZsRFJYYkVJNkJyd2RC0gGaAUFVX3lxTFA1VmF1RkUxdW9IMnk5S0FZckd2LXpOR3VudURUYk1kSERiUWNHZlJHUFozdG04S1d3ajg3UG9ESURCU2ItSHFBbEhNT1MxcXF3bGh6M2NuMlhGZXJEb1hWaGxaY0s0U0dGTGREWXhyVGg5alBRYkVmcF9FejNaYkRsUDBnUEdKblFjQTYweGRldmJEM3ZLcFNfNnc?oc=5",
+          "publisher": "Daily Mirror",
+          "kind": "article",
+          "snippet": "Three Premier League clubs enter transfer race for £30m star aiming to be Brazil's next No. 9 Daily Mirror",
+          "published": "Thu, 13 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Wrexham's Premier League Promotion Could Be Lost After Sheaf Knee Injury",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQbDFZTEZJMVdsRTFSRl9NRC00RUZiWjBuU1Q4YmFZSzdvTkZCbVNWRExyVkJPM3lHU25OSFUwLVVSVWpFUGY3aG1UdlBZSTc1M0s2X2M0eUQxRHNHZ2VsNHd3OUZlaDBRWG1XUklTemliVm1lbVZVQnJKbmRxOVdHSGh3M0psdlhnRWpVR0lNZklNWDUzRlJJSUFuTTdoNy1mNm9fdjFxWDJjVW1LVXE1ZmV1TDR2NEZEOXJRSTRWNTJWZjJvci13RS1PdGlYa2ZZbmdsN0p2RXJfS25qSXdtQ0h6UVBkNnI5c0HSAeoBQVVfeXFMTTFBamdSMWVLNEV3ZnBING5iRi1VWnhTeU8yNnlzemtlUW8wUXhka252b1VMV05GdUs1NmpIQWN4M1lUeDh1OUlKS1J1UFBkUl9qTXFESjNONTRiUlhsbld4ZFZXZkdCaFhnRlhHREN3SVZiLXE0MzVOb2E1Sk1jS1BTd2Q1UEIxenRMemY5WDdhbG5kSU4yUU1hMHFUVUppLUZwM0RydnBtdkhTd3RPdVBab0pZREg5NXZ4a1Vrckk0azF3ZGg0UE8xcnp1SVVGNUlDRTVmUkZ4YlhiQ1hRNjZweS1ndlM4YnRn?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "Wrexham's Premier League Promotion Could Be Lost After Sheaf Knee Injury FOX Sports",
+          "published": "Tue, 24 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DdThlSm5Ubk1mRXlEbTZBck0yQVJpZ0duSG1rRG1ZeW5EU3FiMU9TUW05UENjVFUtZXYtRXEtN1A5eU1rQjg5Y3ZadUkyTTlWcjNFeHh5OERqMVh1TXc?oc=5",
+          "publisher": "bbc.co.uk",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place bbc.co.uk",
+          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBblFfaE5id0NvWjRPaTd6STJHdUhGWmNUc0tpQmZhNGItUGdaWFBsem1QeXVXVHV4a2R5UXpDLXNCX3FpRExQMDdhalljU1kwcmRIVmJDTUx0eGM?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "How every Premier League club could line up in 2026/27",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQOWZGX1pKYURkbDFXbXk2aDV5RExJZWM5QkhDcG5ROXRsTkhwblA2aGVGTGNCbHY5QkVHcWRxeXRmVDJlY1IxZnQwbjFwOTlOaERhcDNmVEVrVGR4dDFMcU1ENDQ5R0RJQUZKel81d3NOZjJaaEdtLTFrZmsyek5PQ1pVQlpGNkR6eEdqTTNlMHVxRUZGWHpWSmQtS2xfbHhw?oc=5",
+          "publisher": "premierleague.com",
+          "kind": "article",
+          "snippet": "How every Premier League club could line up in 2026/27 premierleague.com",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Predicted line-ups for Premier League teams in Matchweek 35",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSGpzVURGMWdibmw1a3pWMThQZzFMWl9LZGJJMlNkY0FCLThsakpxQnJTTmlDTzhuNGlOVm9wbjJIczhGTlB0RFJKSDNOWFhVSlU3bGhGLTVTTzBuc29XZHRtaUdJVWVHS2I4LU1zcC04YnJrZjJjendaX0FJZmRDRTg1Sjg4LTV2bU13SlJ6Z2FIcW5FQmU5YnBwZEpIcFk0cnlIaklXWXc?oc=5",
+          "publisher": "premierleague.com",
+          "kind": "article",
+          "snippet": "Predicted line-ups for Premier League teams in Matchweek 35 premierleague.com",
+          "published": "Fri, 01 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League titans' injury woes and when 18 superstars expected to return",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMUhXQ2lzVnhKTEJoMDU4ZjhralMyZXQya3ZSTU41TV9feDNCWnZsendpZGtFdUVBY2xIVmZ5ak56X3NjdFJtajJyRzRiZmJMUGpkLTNkZi0xWnBIeVZ5QjhvTmd3TlBIMWdDVXp2SDNOb3BEU2pHYmtLZ2lIWmVwaWF5bXpNLVhMeEZhSkFMaG5Oc3BCMDMtTmtR?oc=5",
+          "publisher": "Daily Star",
+          "kind": "article",
+          "snippet": "Premier League titans' injury woes and when 18 superstars expected to return Daily Star",
+          "published": "Thu, 10 Sep 2026 11:04:00 GMT"
+        },
+        {
+          "title": "Mount, Amad, Baleba: Man Utd Injury Updates vs Ipswich (Premier League)",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9CbTJ0TURzZDg0RXcxdlJndU8tdU56aEwwT3E4bWtpQVczRFVaU0U4RGswNnJBaDhkMVhDZG0td1lFTUFLa1dXeUdyX3JwOVRIME96QjdZQ1M2a25XMUhJSHk0WDU4VURRcFdVbkRaSVo4bDZ3YzFncU9Rc2xGSms?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Mount, Amad, Baleba: Man Utd Injury Updates vs Ipswich (Premier League) Yahoo Sports",
+          "published": "Thu, 27 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Amad, Baleba, Mount: Man Utd Injury Updates vs Ipswich Town (Premier League)",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1IT0xlTU5pODA2ZUNsX1JfOXllY09tS2NnS2dUZjRtUVFFN2dQa09maVp3X2FjQ2traHNvQnRsWlFjWjIwR25qYmV0OV9QUVZGSjk0Sl9EcHRWUUhvSEhPbUU5Z0tFRkxRMDlmMnRuZEtCSGI4SzhFRjd1ZkNrc2s?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Amad, Baleba, Mount: Man Utd Injury Updates vs Ipswich Town (Premier League) Yahoo Sports",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Tottenham: Premier League club launches season review after injury woe",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hYjJYZWJPRXFILXpEWHVQRlF6QlJycnVRRkNXNjVHOXBDYV9ra3lTSExyWXpSWVZWZlJQRWRZNGZJSDU5NU80ZWhvaUExcEFwSkZGLVpEQW51ekdkYklrOUFGb25VLXM?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Tottenham: Premier League club launches season review after injury woe BBC",
+          "published": "Tue, 26 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nWktZQUIzUnNsUVFKRno5SU5ZMW9IWnVHd2xHZl9GbmxtWVR5N19xeUp6cnlXaV9CY2xKTDNabHVrRnVYVWgwRzh1NEJ4dzQya0JWelppUWZ4THM?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 08 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal vs Sunderland Premier League preview: Injuries, Suspensions, and Predicted Lineups",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQY0lPZjlZS2EtNFJnOU1sWXlvTWpSTGh5V0RfVjFGaDRFeFRPQnNBVjlfbFZTeEVJajNSV1U4RGNKaDNNNlJ0VGJYaVR3NXR4TE9RMGVPM05Ta1BKMkZaalNiRnduaU9ZZFY4eWpVT2F1Z01laGFnZGJkX0E2OWhpSzRPR2p2UVJKWC1RYkF4YjB6bkZCX0JEUWdfY0xVMzB4N3pQTW9RR21adEZKb1VNNlQ3RDBKbGJhTEhxUVlSZGNQSDZ6SVJLNDVIc1dpS1BtdVpxOFYwTzVNRkFxcHpjbVd4b2N4ZHVBYkdqZG5MMWRNalpSQUMw?oc=5",
+          "publisher": "theshortfuse.sbnation.com",
+          "kind": "article",
+          "snippet": "Arsenal vs Sunderland Premier League preview: Injuries, Suspensions, and Predicted Lineups theshortfuse.sbnation.com",
+          "published": "Thu, 10 Sep 2026 16:00:00 GMT"
+        },
+        {
+          "title": "Sunderland vs Arsenal Prediction, Lineups & Team News",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObkh0TlNEMXNsSEIyTnJNdzBrTGVNVUx2WmoyWDYxYjh3YVJ5WHh6dmZVVTBjYUJhcjdnT3pNM1RwSURfbHp2X1FTeDhrZTJMNEhYX00zT19ORThvMDhfN0NDNjBBZVVoNm5KNXlJYmZTWE5jcHJlLW05MnJqV1U1NUVWMEVWbFlmbmpxSWtZdEJPcFhTX05ESlp2Q0hKYndVTWJMelNVYU9NYTQ?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Sunderland vs Arsenal Prediction, Lineups & Team News RotoWire",
+          "published": "Thu, 10 Sep 2026 16:03:00 GMT"
+        },
+        {
+          "title": "Five Premier League teams one injury away from disaster",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ2U4NmY5b1VJUE51amRZdlRFVDhjNDRCSHJsbWJSb1NGa1FWcmRVQmZYX1J4X01CUjZyQWVuSGx6dUVoRUhMb1N4b3ozcGJZcFdYMEFKbnZkbllQMXBTZGFNY2hDRDVUdW5Dd1JaT0NMX1NXRDAzZWdrYnZTcGtTQ2ZnZFRxR0lGdnNPWndDU3NvemE0aS1ZSi1odEF6MHhxcVJQRWhkVQ?oc=5",
+          "publisher": "Football365",
+          "kind": "article",
+          "snippet": "Five Premier League teams one injury away from disaster Football365",
+          "published": "Fri, 04 Sep 2026 10:35:40 GMT"
+        },
+        {
+          "title": "Premier League injuries this weekend: Club-by-club updates and FPL latest",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZ3NZNk04aDZCZERad0NIcGJVdnk3eWU5MGRhNlhSUXhwQ09wZ3BxakNmWjcxLWdRdDFhSF9TMWZVOWJnLWtGaUJScmJMdDgwSmo1YzAteXpZUW11LVFYUTBKS0dNU01FcjZmMDdLQlVseHdOakc5VFpHTTQ0WGh5M3Uwc3BKal9zaXNCM1p0N2Y4bGlINkFzQW9lam81ZENydFBTa0JJNnlSTEl4QjBJWU9VTjY?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Premier League injuries this weekend: Club-by-club updates and FPL latest ESPN",
+          "published": "Fri, 30 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "BACK IN THE PREMIER LEAGUE! (FIFA 17 The Journey #3)",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB4YURTNlRBNkNHckdCU2FWWmotTlUyd2tqZTFKczloWHdvWE1XQkl2OEtoLUQ1aWs4eENGU0tza0hKdnFCUGh3NlNHWTFFY2lFbTJjVnNR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "BACK IN THE PREMIER LEAGUE! (FIFA 17 The Journey #3) YouTube",
+          "published": "Tue, 08 Sep 2026 14:30:29 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xbDhuQzdhcXVjTUhVcXVJN0xXRmFDSTVEWlF5QWpUX2Z3UDd5d3lGcm15SktkRUUwajE5NmhHeTJMYk0zQ0hCMFktc0pLWTBaWld4ODBCTWhHYnM?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 13 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "30 Premier League Players With Biggest Value Decrease in 2025/26 Season",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQi01RDNnUlJHT0twUWZWSU9DU3ZyX0d1aVZVNmhoN2dBUmFaOE9wbnpwOU9sZ0xWUldaU0VkS2hXVVlabVFJblJfaWVvN0FxMnotRGhCdTYyMEZoMWU1SHJwVDFKS2ttMHRlU2hmQV9sSnRIa1dqb05ZQkJ5OG51NUpaeGVHNXRQLW1PT0Rsam1EZUVBd1IxNmZEcHE?oc=5",
+          "publisher": "GiveMeSport",
+          "kind": "article",
+          "snippet": "30 Premier League Players With Biggest Value Decrease in 2025/26 Season - Alexander Isak 4th GiveMeSport",
+          "published": "Fri, 12 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQc1hwX3lxRVlEcGp2NXpKVVN1YVZuZERxWkZ2S2FSbEV5Z0hZQnJuNEd0emZpUE80WHdrWE1MckVEZTc1X243dHNoa3FrQTFZQ0tQZFNyNUtXMmxKdzZ5dl83Z0RHSUJxUFR5VVhqMWh6X1pMTnpsM2I5dkh2c1RYcXhDRGNjU1NKR1BDR1NKOWQ1eWVFeGVPVWM0aXgzS1RnUFBSTEQ2dWg5UmlmR21TYWpsdWNZYjlWTFdpbTlIUjRrSmdRSmFVV1V4Q3Vwbzc4b25TNzVBV2NXaGQ4NFZwRTZfWk90Tkg5?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club Sky Sports",
+          "published": "Mon, 27 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Which side has suffered most from Premier League injuries this season?",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0YWdEVEYxX2tydjd1YkdvMjN0UmlUdm0wYVZ5TEl5Z3dPb3ozQWlIVFJ1Q2pDenJMSWxsTGNSUkx5SjhDZWQ1QmZfbDNkUVBrbXlnbTBaZm04YzA1ZWxvc2R1Z3d3NG8?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Which side has suffered most from Premier League injuries this season? BBC",
+          "published": "Thu, 19 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League 2025-26: Which teams have had most injuries this season?",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1HT1B6QTNKNWNhUkpRQXdRMG5vUC0tLWI2dHI1bGRPaEhqQ3Zwck1nOE1nWldQTFZKRWx1dTA0ZGpTSWRuMUJRUXNTUjg1V19pZTFVUks4UTRmam5fcElHeVF1dUxIODA?oc=5",
+          "publisher": "bbc.com",
+          "kind": "article",
+          "snippet": "Premier League 2025-26: Which teams have had most injuries this season? bbc.com",
+          "published": "Wed, 21 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Predicted line-ups for Premier League teams in Matchweek 28",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONndZd2VxVWVtMkNSTHBoblVBUkx4X09Ob21UN3E3T1BaSEVycDBYLW9PdV9jM2xpNTdPTXJvSzAzYUpWaUx5WThtbUFTUTFnanZSZzdzS3Z2MXpJVjQwOWhHdV9wVF9EVElnenRMVHFZVWN3a1d6OXk4enFBZGVlUzl6aXpYcEQ2YmkwOVVsclZxZ0xoMldHal9UeFVDd0FYTktOYlBTTXk?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Predicted line-ups for Premier League teams in Matchweek 28 Premier League",
+          "published": "Wed, 25 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "The Alternative Premier League Table: No 12 - Who have injuries hurt most?",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT1RuMVJ6RFR2bEV4V1ZXMndKWVRPSXdyUEhhTTF0b0EtcjhIMnZ4VUhKbG5hTzNsLXRpWi14WlJCT0Q0dGZvSXd0Yzc3SmtFZTkzdmZxc3h6WW8wVFpfUzROQkRBcVdLN1ltcy04QXRmSncwTkc5V3ROM244a29kWDlYVnJ6RWdicFFYdzN5Ukhjb1lId3JZcXlrd3AzY2xBYW5Fa1Fkcw?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "The Alternative Premier League Table: No 12 - Who have injuries hurt most? - The Athletic The New York Times",
+          "published": "Wed, 19 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Man Utd 15th & Liverpool 5th - Which Premier League clubs have suffered most from injuries?",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPeWw4dm9fSks5QnQ0YzJXTVk3MklPVFVQOWozczBtb1V4MEpqNDlUZXZ0MHNib0xtMGNxXzY5M1pCektRY2xaREhCc3ZqaHN1N2Jlc09pYW5KNlY0czhSODdoYnE0dlZWckRfWDFIbUVFUVlFcDRIQU1udHJmaV94TERWOFFjSFVYYzhuSXR0R195YVEySFh6R3hNMTBSUThHOGZVaUJQaFMzWDA4eXpwaWozNjRQN0dpamw2bURieUUtNWVOMEpyb0VkSDdHZ2dVY2hORg?oc=5",
+          "publisher": "Transfermarkt",
+          "kind": "article",
+          "snippet": "Man Utd 15th & Liverpool 5th - Which Premier League clubs have suffered most from injuries? Transfermarkt",
+          "published": "Fri, 01 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BRVNvYkg3aFlkMlJzdENjWEp4WmFvX1FXSUtJOE5TY2FIa05RSWpubFNlOVhoVmF4dVQ2UzZtSmZRZ3dES0I5SFpFSmExSTdHRVhVbEVWOEo4WWc?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 22 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Who's Missing: Premier League injuries & suspensions for GW36",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdG11RzlmLXByLUpuTWltek03a0c5ZmkxcXMyQzlVM1N3TnVuLXMzLXJTZTBYbGNKaGRHODJJV0FXTUh4VHNrRjhFckNwWVRYU1FjUmpuc0lWTFhxaEl6SXNISzdRcVRqU2Q0Q1QzemlGeFFOQVVESzdIalo5WFkyX0JYTHBpbEE5Q3hScU4tNk1yekU0TU10OHlwQmZNMDZfZWhaZkRyNzNLNVhDN2FsQ2VxM1k?oc=5",
+          "publisher": "Flashscore UK",
+          "kind": "article",
+          "snippet": "Who's Missing: Premier League injuries & suspensions for GW36 Flashscore UK",
+          "published": "Fri, 08 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League: A season of injuries",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5YXy1meExJS0pUTDQzWlB2eGRIeEQtX2hVRW84MmZHZDJOQmZvSGFZdFQ2ajV4WTlCTU5PdlpnbWRuX1Jzc3dTUFNabGpGZ19WWGh2aWx0Y05pX3VYeXBYSURLcXBvakU?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League: A season of injuries - how does your club rank? BBC",
+          "published": "Thu, 22 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "The £50m ordinary player: Has the Premier League broken the football transfer market?",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1SdWgwVFdKaGZJVVNoNEpUZFFibndVaDFTR21pbTBUTnY3MGZLVUpSWDh3NHlfMWJxbzdnR014WDRnaFI4NFVvbU5lSGx4b1d0TzZoWE1B?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The £50m ordinary player: Has the Premier League broken the football transfer market? x.com",
+          "published": "Mon, 07 Sep 2026 22:00:51 GMT"
+        },
+        {
+          "title": "Premier League Transfer Spending",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE54bk96T2swVkFFWnhIZ3V5VHdmUUlCTDVtdnl5enNUYldCWGtoSXZkSXhfM0hWcm9DLVNvbm8wNnQ5QWF4czYxSEUyMDB1MV8wM1BxVjN3?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Premier League Transfer Spending YouTube",
+          "published": "Thu, 07 Sep 2023 12:00:32 GMT"
+        },
+        {
+          "title": "Premier League players with the most pre-season goals, assists and minutes",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5QMU9ZYUFsMWRVbXZmVE43Z2xaMVU5LWREVHY2NGtQWVMtQlQ3R1Awb1NhZWFFNGl4SVM0akpkcTFBVmVqRUhyeFRNNkZkWlhnS3gwTmluS08?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Premier League players with the most pre-season goals, assists and minutes Premier League",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The 16 Best Premier League Signings of the 2025/26 Season Have Been Named and Ranked",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNWJ1b0p2SmU1TG5iak9zTER0OEhCN3lja0pqUkFfX3lxX0k2akh0bEF2ZWJMTlhGN0R2ZXhRMWhhdFU1Mng0emRtMmI2em9HSi0wZXo3QkN3NzZXWkMyRUhYak1UVHZsTnpHR19jNEpLR0VNU3dQNHpUODlVeG5QUEVnSDI4ZndPQXV6TUdn?oc=5",
+          "publisher": "GiveMeSport",
+          "kind": "article",
+          "snippet": "The 16 Best Premier League Signings of the 2025/26 Season Have Been Named and Ranked GiveMeSport",
+          "published": "Sun, 01 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Bryan Mbeumo wins Premier League Player of the Month award",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdDZyc1RMUHRGQ1FKRHhKa1g1bUdQRFd2TS1KcFYtbjBBako4OTlUd21wRXpmSGVzbTB5ZmZ1N2IyMWRlRzFaMkZIVTBPOWRKMW5LMXlacFZGU1BPZDFsdUE0cWsyUjJFTVZBZFNMVXJsZ2VsbnRTX2x1aGNSNVpsNXROVURLSDBtdThUbUEyN0k5TDVvZklLdzNOS2VPQWpVYXJveWJZeFlzUQ?oc=5",
+          "publisher": "The Peoples Person",
+          "kind": "article",
+          "snippet": "Bryan Mbeumo wins Premier League Player of the Month award - Man United News And Transfer News The Peoples Person",
+          "published": "Fri, 11 Jul 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Darke's Premier League flops so far, from Isak to Sesko",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTVc2NzFqY2xLaGdKSHpTUHozV25sR3ByRkFpcWhfVHBzblRrYjNlUDFVZlUtajZha0hYekJyOW84QlRYLUxhU1ZTUWNJaFdPY1ZsY29TUnpQb0JiSDhwZE16cnlVUl9OajZnaDl2UGd4RkhvQk9wcC1XVWdDQ0VTN3ZTNFNvOG9LT3BVTHF2UDVhcjBqX1Z5RFhTa0FzQmdTMEFmWjA5OXhSa2tsUDNkTEJHM0FLYlRKdmtlakFqRXJiNF83dGNGaw?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Darke's Premier League flops so far, from Isak to Sesko ESPN",
+          "published": "Wed, 31 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "The BIGGEST transfers between Premier League clubs",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONlBKVEJSdllFbjVOWVFoMGFWUm5oX09PaXFUN0F0NjlkWnNjUkxteEdLUnl3NGxMMTlNem9kNkNHODZiTWlqQnU1NXFxbVVDcFJZNFhuS1Z0cjFDS29sUDl4VVhCZHhaay1PVWRMbHZxNV8weEZqNjVIVXlxbXlkWmlPM09CaTUxQ20wWDVnUnV4VE9KUFFmVjFBMDQ?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The BIGGEST transfers between Premier League clubs Premier League",
+          "published": "Mon, 06 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Hugo Ekitike injured? Premier League injury update on Liverpool striker",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQmJpcVFmYk9NMXJCZmxNXzVTQk52LTkybDVQMnZ4NDJjUkJtb2F3VVk0bkRtQzZxOTFqbzhqV2JhWTBSdTRwU0RiWU82RG5jZUFVSU9tV3FleWF1djhWeTJ0SnFZNGtUWFpSUjNSS3FtRjUtX25ZX05XRC1vVXh1ejFyaHBadmVPRHhuUENObXUxUktGY0Nyc21tc2huLWxQMUt6ZE1RVE93QmpWMHp2aHVoR3pDQQ?oc=5",
+          "publisher": "FourFourTwo",
+          "kind": "article",
+          "snippet": "Is Hugo Ekitike injured? Premier League injury update on Liverpool striker FourFourTwo",
+          "published": "Fri, 09 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Is Alexander Isak the floppiest flop in all of Premier League flopsville?",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQWpkcUxoMjdyZXduQnZROEY4RnNpZU5EaS1lUmw5Zm84cDB0VXNWRHktU0txZ3pDWURqM2NvcnVxSlpMZ21TaWdJTFktOFZSVTRUMEQyaE5XclJSZUFvWHY4YXVVVkpGWERHRl9hLTAycjNMRjZ6T3llZ216UmZCOFE0OC1nRW5nZV9Fd2t1bmJnN2Q5SGFPcERTbWdyWEdwS2lSREl3ZmU?oc=5",
+          "publisher": "Football365",
+          "kind": "article",
+          "snippet": "Is Alexander Isak the floppiest flop in all of Premier League flopsville? Football365",
+          "published": "Mon, 24 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak ‘Snubbed Premier League Rivals’ Before Liverpool Transfer",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVU00bWJra3AyYmhpYVVlQnVja0hYT1lialRaSHhkYlJrV0V4SDZ6OWdnOVgtY0J0WGNPd2cxc0p1ZlQ3WlljcW9NVEhtbnVRMFFMMDJJQ1gtZTJ1VVBsWHJtdWhwYTduaEI4MFlxNnIyZkpJVC0tQmE3Q2cteGZ6eFZ5VWZzRktDZzV5bGI3Q2QweE5rVmx2cnpvTHE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Alexander Isak ‘Snubbed Premier League Rivals’ Before Liverpool Transfer Sports Illustrated",
+          "published": "Thu, 04 Sep 2025 07:00:00 GMT"
+        },
+        {
+          "title": "What to look out for in the Premier League transfer window",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMGlJZWxxY1hXb2tkN29teEN5NHlLekpsTG9kcThYLUVjcXl3TFZ4SmVWa2NXVUhmNm9PNDJlaWFKdDU3TGlhSklfWDNOdTQzeDdTdHgxMkl5VUpKc0QwYkF2QjJYWXpBTzhxZGdOVkthbXRsYk5CV3cyd2JRQUJKVEd5b1RVVjUwelp0X05hQzlZNF9INHNuMzV4UllsaTdEYmlj?oc=5",
+          "publisher": "Bangkok Post",
+          "kind": "article",
+          "snippet": "What to look out for in the Premier League transfer window Bangkok Post",
+          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DZC1lcDl1c0VweFBqX3N6Ym9xSF9KUkVjZTl6YzlIT0NNZGFFc2l3SmxMRzNHN1BVYmlueURTbDkwNTJWVU12RFA5Z05RZzJqdVV5ZXV3ZHRfYTg?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1M21fZTFXVXhrTzI4cVJDMk1BanNCTHgyVFJ2aTduZHlXOVpDQTJoQjR1SHZhT0R1UHdTTjlOWW5ia29OUTRoRzJUaDVHUjB4QVFhY19nQWxIakU?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 24 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League Funny Bloopers and Silly Injuries",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3SGxTRTgyS1c2TV8xRVFuZ0xaUWt0eThiU082dUZvXzdRQ0ZYMWRIaTAwYndyc20wY0RFbE5sQU9RMmVtT3FZVUZfT1FNTUJDV2tNMVFn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Premier League Funny Bloopers and Silly Injuries YouTube",
+          "published": "Mon, 17 Mar 2025 16:01:15 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uUWtfQWwyZXZhMEExZjVkMWtvcGdpcnN0Mk1SUFNjMXdyVjNvcGJNQ0ZFRDQzWVBxQXV3UG91bjk1U3BNbE9Jd2ZvQnpsenNNazQwVk9DYmtUMzA?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 15 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "#FIFA20 CAREER MODE PREMIER LEAGUE TRANSFER BUDGETS! 🔥 The transfer budgets of every Premier League club in Career Mode in FIFA 20! 👀",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBTUjJZMnRFT3g1N0ptRXQ4Q2d6cnZhNGdNQ0Z5bGZHR2xqUG5RLXM0X1NuS3FWN0dNX3BjQ295OXR0LUwtYXpwTDA2dk16U2JETG9FdFVYdi11cEZzZ0E?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "#FIFA20 CAREER MODE PREMIER LEAGUE TRANSFER BUDGETS! 🔥 The transfer budgets of every Premier League club in Career Mode in FIFA 20! 👀 x.com",
+          "published": "Wed, 21 Aug 2019 07:00:00 GMT"
+        },
+        {
+          "title": "Latest Premier League player injuries",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQek9QaVVPcWo0RWNQbmR3UWdfeV9OMHJfMlVDY0ZtcEg4MlNjY1Y0RVEyVDRtRVdWR1dVX2dTeXhQaEowY1NUbzI3eTdFcmQ5YW1QX1NINWJKaW41dEV1VUpUWWNHQVd3M1VXa3pBN3hBWEd1d05xaHVxWGxIMEJFcXVldFNRbVpXQndPWV9SejVBSTEtYjd3cjlsc2I5TjVFVEM4?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Latest Premier League player injuries - club by club news Premier League",
+          "published": "Wed, 09 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal vs Chelsea Premier League preview: Injuries, Suspensions, Predicted Lineups",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNaTgxSVpnTkFWbjhndVhib3RyLV9zWk9DRTFlRmJ5cUx5d2FCemkxTXdjSGx2V2pXSHNXX0YweEwtd1JqNGc3alc3YXFfYjlreDJ1QlRmRGg2ZzhCT01ocHppMlc2RnFrZURtd1RoZXk4M2FMZEdza3Y3TF9QOFJwSm5vdUgwY1NHTEpRdGNNTUFUT01YY0NPbmhMMi1hWDNJT0owd1V6SEY2STdEWWc1cHNOeHVkWE5DbWtycUcwUXV5UVA5YVptTWtVeEJYa3YzVW9oaVEyWEtDU1ZTUlVrWVpMcWJBWGpCSE1TbDRFTkJFeG8?oc=5",
+          "publisher": "The Short Fuse",
+          "kind": "article",
+          "snippet": "Arsenal vs Chelsea Premier League preview: Injuries, Suspensions, Predicted Lineups The Short Fuse",
+          "published": "Fri, 04 Sep 2026 13:00:00 GMT"
+        },
+        {
+          "title": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNVVhhX3NvWHcwZ0tJMzBGT1QxMUhWYml3aHVnanJsZWl6LTNoYVhLTjV5YzQ5XzNZcDdrZDhMdk5YakZJZmZyOTVfcGdKd3I4QkZCT0ZURjhya0ZkUU9uVF9Ua0ZWX0FTeWZ4NTVsWXBGd0NpVmR5UlNZQ1UtaFBIdEZpN3hGb0ctam1RNlpLdDhNM0xEUEtMOEdwOVBCZ2YzaUpOTkl1bnJ5dnZYaTcwVjJBZGMtNFdObjU4Z0dSekVCVzJHVWpHdWpnOXZQV2hDekREZkFSVFNfam9TUmh4VGE3UEJwQndN?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club Sky Sports",
+          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League (@premierleague)",
+          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBrMnYyUnZkRF9nZnRIb3FqM0RuRVFQT2hrUk9fSlRKVF91MlJhQXRsWUxTckpvSkx5Tnh2blppQlU?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Premier League (@premierleague) x.com",
+          "published": "Fri, 22 Dec 2023 13:07:33 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VeFpTN0R0Y0RlU3FuQkFWRkFKUm1Zd3A3U2plSW42bXpBZ0xfWThVTmozcnBNYkdYeWppWjZGOHdsbUVpYVFVdFVyZE83clVqT1k1MFc4dmpFaVU?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZemlWcDBHMExQaUR2Q2FaUGhaTWY0LVJwdm43c2NQOUlQdFRhaEMtVl85N3pmRHk4X0Z2M2tpTmQ5T2V5cU9ZdmlSU0N1ZGx4Qmhva1BhX2JpTXc?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 06 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sQkRldmVOWlBDcy1vUkpDVW4xS0FhMWxXdU5VYm1Da3VBODhKQjlPNUlBcUZlLXNKUG83RmFIY2hlMFpEOXE5enBodFZFWi1vR1dCSkNQRi1Fb0VZUEtUb0xzeWkybEU?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Mon, 29 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League to crack down on goalkeepers faking injury",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWUFGNUUwTUVXRnl6emVieVpITGxoS2x3NTZ3SlllZE5MVElNMmk5SUhQMzR1dHJlMVpLRGRRM1kybm1Yczc1N0RQUEdwanNlVWFBUkVoZVltZlJIZW1MLWFzWXg0WjA1UXIzZVZ4MUotYl9mUjVEVHRRN2hRVjlRYmlQd2ZHRFI4X0JKYkh2RW1DcVl2SjAwMG5R?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Premier League to crack down on goalkeepers faking injury ESPN",
+          "published": "Mon, 27 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League 2026/27 preview, team news, analysis, injury latest, suspensions and Fantasy Football",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOOWVVQ3RPUzF2YkhTeHhmVHlPbk45aVgwN0xlVXk4dUJWb3dLLW5IWXJLZ0dUYmlOczdKNjU2RXc4NG54ajRSdHljQ3ptbXN6ZEVBZUJSaWFXVkg4SmVuMHh1c25Fcm12MGpObS1PYW5uUUpMejVyWjdOWlZYUkVqeUtHQnh1S255V1B1UzhicTVGV3VHTjJpZ2NWc1drcmxwSjE0QUtiNFgweUZicVIteE9HVlJEMXFQMmozX2tkdWNXdzNmdTlwT1FLTVprQzR2RHoxdTlzNHFxSFU5RkVtcE41bjlzcm44eS1CWg?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Premier League 2026/27 preview, team news, analysis, injury latest, suspensions and Fantasy Football Sky Sports",
+          "published": "Sat, 22 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5ekFadFRFdjZyS2dQMUZ5WVUxbU0zNlVCMjJZN3I5RDcwS2FIZ0k1MjYtWER4MkhxQkZGSDl5MWhvbDUwd0Rsb3EwNVRrS25NVXExTTE3ZmlyZWc?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 01 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fckQ0OTZrME0tM19kMF9kaUhsRThha0NvNTZHaFRFYWFtZEt1aFppT0hPVUlCV3ZvbV84MnpZeE1PanI1OGRobDdLekhKZGRoYnFrUEVkaUpsVEk?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Fri, 30 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5SRlRWcXpwenJvOF8xX2FkeHRiNmNFQ1FXN1NXbFUwNkR6SGdNVElzZDNtSktfbGF6LWx1WnZuaWRTQTB3X1RPcHBkWGZPSEwtV0FmUDRsajNmWGM?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Predicted line-ups for every Premier League team in Matchweek 4",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5BYk5TYldaSlplMFpkcVJlRng1U2lZMHJzaXBRMUJydTJCVy13S0hLUEcyQjZSWkdwUlV3alNSMDNzOHRsZld0NkdFZTdWRGNWUjM3Q3lVR1Q?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Predicted line-ups for every Premier League team in Matchweek 4 Premier League",
+          "published": "Fri, 11 Sep 2026 16:37:24 GMT"
+        },
+        {
+          "title": "Predicted line-ups for Premier League teams in Matchweek 29",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYllyMGJwX1ZYcFQ1VWNwX2ZpM3IxS3BwMzIwMXFZZ2RyVEtKbzhBV1RCMnBBbTlCbkVhcUVSU3dybEtHdWd1M1AtOWtkakpjdU1nRW5qZ0x3MzlGZ1ZCbkVUbm9uT0ZBZG95T3JVOGpLM2hWX2lBM1FadFpNNDc2NUs0aGJlMmNtbjhraExpbHRCcWF4NXNRQmxDSGFkTGhFOTR3WDJZc2M?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Predicted line-ups for Premier League teams in Matchweek 29 Premier League",
+          "published": "Tue, 03 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Sunderland lineup vs. Everton: Predicted Black Cats XI for Premier League fixture",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQeGprbUJnaDhRejhEUHJ0WHpTMlhiY1ZOb09Ub3dnbk1kOGZtVlVBc0lVQWlCWGV5M1MtYXlwa3o0MkNfMVdEYjUyQjZ2RHdwSUdjVXJESUlsTVFfTEtfU00wMDFqZDc0WFJYdUxOWk1PRUxyc19pU0R2Y3AwdDJFTW1Hd2pja1FLT2hnM0tqbjZMaFJWWUc1SmFuNUZkdU5xYjdmVXFUNlNSVzFST28zWk9DdTNzdnVpS2V2U1ZIdUw4VUc4Zl9UbkVQcFNLWmJhb0hvbndud2I?oc=5",
+          "publisher": "Sports Mole",
+          "kind": "article",
+          "snippet": "Sunderland lineup vs. Everton: Predicted Black Cats XI for Premier League fixture Sports Mole",
+          "published": "Fri, 15 May 2026 07:00:00 GMT"
+        }
+      ]
+    },
     {
       "id": "fpl-challenge-expert-reveals-gameweek-1-41084a2c",
       "slug": "fpl-challenge-expert-reveals-gameweek-1-41084a2c",
@@ -697,12 +1260,26 @@
       "slug": "who-best-fpl-captain-double-gameweek-36-eea3229a",
       "sport": "soccer",
       "headline": "Salah, Gibbs-White, Casemiro and more: Latest FPL injury news for Gameweek 37 ahead of Liverpool v Aston Villa",
-      "blurb": "Gakpo, Barcola, Kerkez: Liverpool injury latest for FPL Gameweek 4 fantasyfootballscout.co.uk",
-      "summary": "Milos Kerkez, Bruno G., Cristhian Mosquera, Yankuba Minteh, Mitoma Kaoru, Morgan Gibbs-White, Florian Wirtz, Jack Hinshelwood, Van de Ven, Dominic Solanke-Mitchell, João Pedro, Antoine Semenyo, Callum Wilson, Dango Ouattara, Cole Palmer and Tyrick Mitchell: Gakpo, Barcola, Kerkez: Liverpool injury latest for FPL Gameweek 4 fantasyfootballscout.co.uk Konsa, Bruno G, Timber: Arsenal injury latest for FPL Gameweek 2 fantasyfootballscout.co.uk The Scout’s FPL Gameweek 4 transfer radar premierleague.com Aggregated from fantasyfootballscout.co.uk, premierleague.com, YouTube, RotoWire, Premier League and 8 more.",
+      "blurb": "White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4 fantasyfootballscout.co.uk",
+      "summary": "Cristhian Mosquera, Morgan Rogers, Milos Kerkez, Bruno G., Yankuba Minteh, Mitoma Kaoru, Morgan Gibbs-White, Florian Wirtz, Jack Hinshelwood, Van de Ven, Dominic Solanke-Mitchell, João Pedro, Antoine Semenyo, Callum Wilson, Dango Ouattara, Cole Palmer and Tyrick Mitchell: White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4 fantasyfootballscout.co.uk O’Reilly, Doku, Enzo: Man City injury latest for FPL Gameweek 4 fantasyfootballscout.co.uk What Gameweek 29 Taught Us in FPL: Injury Updates, the Haaland Question and the Rogers Dilemma Never Manage Alone Aggregated from fantasyfootballscout.co.uk, Never Manage Alone, premierleague.com, YouTube, RotoWire and 9 more.",
       "category": "injury",
       "published": "2021-01-25T08:00:00Z",
       "updated": "2026-09-11T15:35:43Z",
       "players": [
+        {
+          "key": "mosquera",
+          "name": "Cristhian Mosquera",
+          "slug": "cristhian-mosquera",
+          "pos": "DEF",
+          "team": "ARS"
+        },
+        {
+          "key": "rogers",
+          "name": "Morgan Rogers",
+          "slug": "morgan-rogers",
+          "pos": "MID",
+          "team": "CHE"
+        },
         {
           "key": "kerkez",
           "name": "Milos Kerkez",
@@ -715,13 +1292,6 @@
           "name": "Bruno G.",
           "slug": "bruno-g",
           "pos": "MID",
-          "team": "ARS"
-        },
-        {
-          "key": "mosquera",
-          "name": "Cristhian Mosquera",
-          "slug": "cristhian-mosquera",
-          "pos": "DEF",
           "team": "ARS"
         },
         {
@@ -1200,6 +1770,30 @@
           "kind": "article",
           "snippet": "Konsa, Bruno G, Timber: Arsenal injury latest for FPL Gameweek 2 fantasyfootballscout.co.uk",
           "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPb2hvenVLZTJKUjU5Y2FtME9SQXZpanhPMTl3d0dBRlp0V2g5UVB1dElicEhhOVBPcnJ1dTVySjdveFhmWTJyUEgtdzNwaDkxc0VLUl9ReVA5YVA1d2hsdEZfdTh6eGxpS3pwV0s4czlNMldrZXFKWHRKQXhJa3ZQWTFTUEl4dEhjbndldk1qUENwMENCMFRfSE5QaEtZZi1YM2Y2Wmszc21NUldGS00yWkpMYw?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "White, Timber, Mosquera: Arsenal injury latest for FPL Gameweek 4 fantasyfootballscout.co.uk",
+          "published": "Fri, 11 Sep 2026 15:05:37 GMT"
+        },
+        {
+          "title": "O’Reilly, Doku, Enzo: Man City injury latest for FPL Gameweek 4",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYWtwc1J0WGZIWFNsWGdpQlozeG13M21PczhudzJYZnZFbE1YN2pKVGg1cm5iYnh3a1N4b2hJdEtnUlFhU3ZxUmktXzhhSUFlRnhHUGp1UGdGUGE4WDdnQVl0QnB2OHU0ejduYUxvMDBzYzBLdnVkTy1SakFRcS1MWldTc0h6S2hKYUtNblJfQ01HaU5lSlRCNnlTWUxPR1lrRkUwMGhpU1hqUUlTMV9B?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "O’Reilly, Doku, Enzo: Man City injury latest for FPL Gameweek 4 fantasyfootballscout.co.uk",
+          "published": "Fri, 11 Sep 2026 15:09:40 GMT"
+        },
+        {
+          "title": "What Gameweek 29 Taught Us in FPL: Injury Updates, the Haaland Question and the Rogers Dilemma",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS3NxeWdWcTlDeDJlSjJldDVRQnZvMFNzT2NVT3hwQWNjZDhrVTV6bXRpb0syM2x1X09iM3ZURzZOaThySHk3MGlSaUZXSFljWnowREtkOFFSak1lUHVQZE5ReTlBMmtNNDU1MmxUdXRKU2hwUXJXcjZuOHMyMGpKZ2labXQ3aVYxMEJwWVpuR0tmeG9TVl9meDB2MEw4OG5TMUFCNzFIdGZfWi1KNS1aSVdwS0h0em9VYVlpTWdvNGlQaXNWQnBfZThtWUxGN0hMNy1jZmlEQTlBNm8?oc=5",
+          "publisher": "Never Manage Alone",
+          "kind": "article",
+          "snippet": "What Gameweek 29 Taught Us in FPL: Injury Updates, the Haaland Question and the Rogers Dilemma Never Manage Alone",
+          "published": "Fri, 06 Mar 2026 08:00:00 GMT"
         }
       ]
     },
@@ -2565,121 +3159,6 @@
       ]
     },
     {
-      "id": "man-utd-star-exciting-premier-league-replacement-wants-0fe05609",
-      "slug": "man-utd-star-exciting-premier-league-replacement-wants-0fe05609",
-      "sport": "soccer",
-      "headline": "Tottenham eye late move for 25-year-old Premier League star but face major transfer obstacle",
-      "blurb": "Long-serving Premier League star agrees to leave club as Nottingham Forest eye move footballfancast.com",
-      "summary": "Sávio Oliveira, Phil Foden, Mateus Fernandes and Carlos Baleba: Long-serving Premier League star agrees to leave club as Nottingham Forest eye move footballfancast.com Fernandes, Baleba, Amad: Man Utd Injury Updates vs Man City (Premier League) roundtable.io Game over for Man Utd star as exciting Premier League replacement wants move Football365 Aggregated from footballfancast.com, roundtable.io, Football365, CaughtOffside, ESPN and 3 more.",
-      "category": "injury",
-      "published": "2025-08-10T07:00:00Z",
-      "updated": "2026-09-11T07:29:27Z",
-      "players": [
-        {
-          "key": "savinho",
-          "name": "Sávio Oliveira",
-          "slug": "s-vio-oliveira",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "foden",
-          "name": "Phil Foden",
-          "slug": "phil-foden",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "fernandes",
-          "name": "Mateus Fernandes",
-          "slug": "mateus-fernandes",
-          "pos": "MID",
-          "team": "TOT"
-        },
-        {
-          "key": "baleba",
-          "name": "Carlos Baleba",
-          "slug": "carlos-baleba",
-          "pos": "MID",
-          "team": "BHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Fernandes, Baleba, Amad: Man Utd Injury Updates vs Man City (Premier League)",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbnctZXBPcmVoSGE0bHJ0a0hWd1liSGZQeVhhbVBzR0dVY3BIelRLTE5CRFk4U0R2djh2dXJvTG5VaFo2d2psRTZPOEZlTndTMi1QaWs2Z3Jmc3dMazl5N3BtclZrUkh5R2d5NGJ4UG5vN3Z5d05Oa1dXczFaNmh0ZF9uclRTRWdiYUFzZzNRV0JBOENSZHRyaFIyS2tOODJQWWNaaDBFQTNmcWFZY1dmS0VzNzBQR3lvdmFuVHlHcG45WHVQeFgwcDNVN2g3d1huUnB1OXhYVlpQM3NHblE?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Fernandes, Baleba, Amad: Man Utd Injury Updates vs Man City (Premier League) roundtable.io",
-          "published": "Fri, 11 Sep 2026 07:29:27 GMT"
-        },
-        {
-          "title": "Game over for Man Utd star as exciting Premier League replacement wants move",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWnJZWG50dXBxQ3I1UFpXa3F0bDJuNnNiblU1cFBMV1pEMmgyelZuSXdZdllBNDR6MnZ2cnZhNHk2Y2ZNS3RmWUF1YU9mdUxKRmhYcHRnTzVIRnVaSTN4d19EZXRJeTloamoyRU93b0RaUnNHb09lQ2lkeDJkaTFfd1pwdlFiMXhWYThDQ3JXOERtc1hvS1IteW44NElPTVQ3?oc=5",
-          "publisher": "Football365",
-          "kind": "article",
-          "snippet": "Game over for Man Utd star as exciting Premier League replacement wants move Football365",
-          "published": "Wed, 15 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Tottenham eye late move for 25-year-old Premier League star but face major transfer obstacle",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUm40ekdSOUwtWUV3SUNYTkdvTlZrQlhGWUtzeWxld0lrRGxSeFI4aXpKMFRGb2VQZTJpZWVLWlJ2TnFSNXp2cUd4VjBsbDZUOUxreE5qVFpBUkJuMHZHeVQ3RmpHWGoyVDNkOHJ4VU9MRkhaX285WDNWcldvcW5kbXJJZ0JZd0M4anpYajFJNW83SVd5TXIyb0RGMkVyd19rT2IxUHVpbkFkR0lDSlF2d0hvcndOb09fTkRJdkZHekx5cGZXWnZGb1ZvUVJmc1HSAdQBQVVfeXFMT2M2djhRQVRGUXdGWVhyMHdlNElRVXRWVGo1YkN1T1RuN1VmQUphM0FtUXF3N0hVNFhrMklvQmY2aERoWWV2eHhVdEF5MWYxaEZjdnRnajFoekp5Y1dmVWRJaDk2M2c3MFpJbVRUVVZ4NWdWWTJYWlRUNWIxQi12OFA3QUR4MGZidHNsOUVCa2ZsOExSYWZVOTZySkpjdW9SSjdPTFBuamVpNE93TWljSE1ESURJSFcyZWVpRmVEazM0YXE4cklMa2hGX2Y5ZzhMZXZjUXc?oc=5",
-          "publisher": "CaughtOffside",
-          "kind": "article",
-          "snippet": "Tottenham eye late move for 25-year-old Premier League star but face major transfer obstacle CaughtOffside",
-          "published": "Tue, 01 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Sources: Enquiries made by Man United for 25‑year‑old versatile Premier League star",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWU1nejRIcmZfWElJMGphdGJ3NVpGUGFMZGRLY0gwSjFYRHA1aGs1eW5XSW5XT1U0emFTV2xBWUdrMGFTNUNlbzFiQTR6d2prbmFXZTdTbndualphbXllWmV3aUtMQjFNdWdiTDlyUXBNRGJGcFNkM0FlSVgybGNMY0dlMktrRjNmYUI5U1FEbTBHT256bmxfclRCZVpYcEIwNmF6SkR0VkI2MzFIMU1ELW5Oc2VWN0E2SWNVcjJIVW5OYldkbGlLdmU1eUhhLVVxMlUyLTM2c9IB3AFBVV95cUxNaTAxdXc1TVlHWWVSQXRPcGxpejJmemZXWkFIMXlPZldlUWNJeWRTMXhlSHdMWVR1UmhiX3JWSFNMaERJVGlWV0VPOGVkTjFxYVJTSjNIeElWTDc0bWRWVXFvMGVzU1QzeVJTRThiRnlBWmdTWkVrOFZhT0UtQ0tEeHJ3LW80X3VXT0FsM1BhQTE1LXE1dFNfM1hPUGctM1FmS3JjTXpUZjFtYWtfX1dVYl96Q2oyQUVMX0Uwbi1ib1dPaEFFZlB2OXJnMW53Ujl1ckJWVzhCVkFiYlpz?oc=5",
-          "publisher": "CaughtOffside",
-          "kind": "article",
-          "snippet": "Sources: Enquiries made by Man United for 25‑year‑old versatile Premier League star CaughtOffside",
-          "published": "Sun, 24 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Transfer rumors, news: Tottenham eye move for Man City's Savinho",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZktFZlZyanJ4ajhUN093ZE93Zm5Ia1FlUmdtTUJ1S2xsSEZPN0gxamJZd3BHOElkNnowd25uTlE4R3BVRlhrc0NhSW9Ud182N2ZadkUwQkxJU2d3Qm05UktXNFB3S1FaVGJuODBFRWdHVkZCUFJDeEpSdFVoUTJsYUdXUnJ4Qm9uSGNuV3NoYUtCd09Kd0xJYU9xcGVYdFhqNm1KMUJuRmVNT3gwa3BjUkM3WTIxcDVsZjFmUGE2MEVKMHYyVk1yNA?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Transfer rumors, news: Tottenham eye move for Man City's Savinho ESPN",
-          "published": "Wed, 29 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "PREMIER LEAGUE TRANSFER ROUND-UP: Savinho Joins Tottenham in Big-Money Move From Man City",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51X1BKUkxlbG5rXzFmQWxRTTF4YnIxSmp6OG5DeXVIdzJxMnVPWTc2dzBNY09lWUQ5MVAtREUwTE8xTzF6YXdMZjFYVUs1NzkxNGJIUWpB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "PREMIER LEAGUE TRANSFER ROUND-UP: Savinho Joins Tottenham in Big-Money Move From Man City YouTube",
-          "published": "Tue, 25 Aug 2026 12:08:51 GMT"
-        },
-        {
-          "title": "‘Phil Foden’s not happening’ but Frank Lampard backed to bring ‘big name’ to Coventry as another Man City title winner is added to Premier League transfer discussion",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNLVpRbVN0QVNKb00wQURjYlJNLXU0Vl9WcXZld2lwRUFUTEhqdTNBb1dZa25Fb1lyTjUxOXZiX2dOZzZ5cFp4RzkyMzQ3YW82TFpUamdMZk9COXJ2OGgwS1gxT3JWQ0JzbmctY3JOQXFzbW1HWnpoRTBDWkZLdVpYd0w0ZS1yYmZlT29nYlBuUXJVSGxUUGl4TlBXbFRlc3Y0LXliOUlnMjR5d1pVNWNkTG1tNzNpSkEwR014Z0Fmenl0c1Myb2xJ?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "‘Phil Foden’s not happening’ but Frank Lampard backed to bring ‘big name’ to Coventry as another Man City title winner is added to Premier League transfer discussion Goal.com",
-          "published": "Sat, 16 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Man City face Phil Foden injury wait before Premier League begins",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSUhJYXNYRGNKUWVpeXBGVWlHSThmTktPajBwTUwwbkl1R1Zud0k3cnlpUEF5dXBqbjY2bS1EcVBleE9zNkJ2N0dmQk45NWpXaXZDUEtSVVphVFNrNDlkRURGaFhDUThIMHhqc0xQZVRrTW5GMWF2bU9JV180amxrcW5NWXRibVhvdDBoRC14bWFMaVgzWnFYZG0xN2EwbWYyS1U5etIBqgFBVV95cUxQRkZkUkNDWGlZeGJOWnRUdmprX012dU9HTHJfdlhzNTAtR0U4NzdEcmp2VG1qN1RHdFdoUjI3REl4ejl1UGxTa1EyMHpnR0EwalZwb1IwOW9YVWFrRDlPeXg1Wm1TM2JLQkZqRUJPNUxXSUQ1TnVUSVFOM3V2LVAySU5vRl9EMjVLOG1IY0xtQzNkTzdHQWQ0YjBWQTB5NXVOYXZTTHh1cnhMZw?oc=5",
-          "publisher": "Manchester Evening News",
-          "kind": "article",
-          "snippet": "Man City face Phil Foden injury wait before Premier League begins Manchester Evening News",
-          "published": "Sun, 10 Aug 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Long-serving Premier League star agrees to leave club as Nottingham Forest eye move",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTHJnSTJZbXlFcVJ0NW91UTd1cnU5V0Q0bHBKZV9rWDlWbXE2QURCWEN0dzhpNlBlTWE2VlFwZmYtUTBvUHhMQlc2Z3FQZjFrTEgwbE9MU1VsQlV2Rno1czJjVDdPb3ZCNEZlanNQczNidV9UTUY5enh5SlJQUFdOaHZ4QzJPQVNu?oc=5",
-          "publisher": "footballfancast.com",
-          "kind": "article",
-          "snippet": "Long-serving Premier League star agrees to leave club as Nottingham Forest eye move footballfancast.com",
-          "published": "Mon, 25 May 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "arsenal-star-who-snubbed-liverpool-transfer-heartbroken-champions-4e88ecc5",
       "slug": "arsenal-star-who-snubbed-liverpool-transfer-heartbroken-champions-4e88ecc5",
       "sport": "soccer",
@@ -2983,6 +3462,180 @@
           "kind": "article",
           "snippet": "Rodri transfer, Foden form and speculation - Five problems facing Enzo Maresca at Man City Manchester Evening News",
           "published": "Tue, 09 Jun 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "man-utd-star-exciting-premier-league-replacement-wants-0fe05609",
+      "slug": "man-utd-star-exciting-premier-league-replacement-wants-0fe05609",
+      "sport": "soccer",
+      "headline": "Tottenham eye late move for 25-year-old Premier League star but face major transfer obstacle",
+      "blurb": "Long-serving Premier League star agrees to leave club as Nottingham Forest eye move footballfancast.com",
+      "summary": "Sávio Oliveira, Phil Foden, Mateus Fernandes and Carlos Baleba: Long-serving Premier League star agrees to leave club as Nottingham Forest eye move footballfancast.com Fernandes, Baleba, Amad: Man Utd Injury Updates vs Man City (Premier League) roundtable.io Game over for Man Utd star as exciting Premier League replacement wants move Football365 Aggregated from footballfancast.com, roundtable.io, Football365, CaughtOffside, ESPN and 3 more.",
+      "category": "injury",
+      "published": "2025-08-10T07:00:00Z",
+      "updated": "2026-09-11T07:29:27Z",
+      "players": [
+        {
+          "key": "savinho",
+          "name": "Sávio Oliveira",
+          "slug": "s-vio-oliveira",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "foden",
+          "name": "Phil Foden",
+          "slug": "phil-foden",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "fernandes",
+          "name": "Mateus Fernandes",
+          "slug": "mateus-fernandes",
+          "pos": "MID",
+          "team": "TOT"
+        },
+        {
+          "key": "baleba",
+          "name": "Carlos Baleba",
+          "slug": "carlos-baleba",
+          "pos": "MID",
+          "team": "BHA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fernandes, Baleba, Amad: Man Utd Injury Updates vs Man City (Premier League)",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbnctZXBPcmVoSGE0bHJ0a0hWd1liSGZQeVhhbVBzR0dVY3BIelRLTE5CRFk4U0R2djh2dXJvTG5VaFo2d2psRTZPOEZlTndTMi1QaWs2Z3Jmc3dMazl5N3BtclZrUkh5R2d5NGJ4UG5vN3Z5d05Oa1dXczFaNmh0ZF9uclRTRWdiYUFzZzNRV0JBOENSZHRyaFIyS2tOODJQWWNaaDBFQTNmcWFZY1dmS0VzNzBQR3lvdmFuVHlHcG45WHVQeFgwcDNVN2g3d1huUnB1OXhYVlpQM3NHblE?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Fernandes, Baleba, Amad: Man Utd Injury Updates vs Man City (Premier League) roundtable.io",
+          "published": "Fri, 11 Sep 2026 07:29:27 GMT"
+        },
+        {
+          "title": "Game over for Man Utd star as exciting Premier League replacement wants move",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWnJZWG50dXBxQ3I1UFpXa3F0bDJuNnNiblU1cFBMV1pEMmgyelZuSXdZdllBNDR6MnZ2cnZhNHk2Y2ZNS3RmWUF1YU9mdUxKRmhYcHRnTzVIRnVaSTN4d19EZXRJeTloamoyRU93b0RaUnNHb09lQ2lkeDJkaTFfd1pwdlFiMXhWYThDQ3JXOERtc1hvS1IteW44NElPTVQ3?oc=5",
+          "publisher": "Football365",
+          "kind": "article",
+          "snippet": "Game over for Man Utd star as exciting Premier League replacement wants move Football365",
+          "published": "Wed, 15 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Tottenham eye late move for 25-year-old Premier League star but face major transfer obstacle",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUm40ekdSOUwtWUV3SUNYTkdvTlZrQlhGWUtzeWxld0lrRGxSeFI4aXpKMFRGb2VQZTJpZWVLWlJ2TnFSNXp2cUd4VjBsbDZUOUxreE5qVFpBUkJuMHZHeVQ3RmpHWGoyVDNkOHJ4VU9MRkhaX285WDNWcldvcW5kbXJJZ0JZd0M4anpYajFJNW83SVd5TXIyb0RGMkVyd19rT2IxUHVpbkFkR0lDSlF2d0hvcndOb09fTkRJdkZHekx5cGZXWnZGb1ZvUVJmc1HSAdQBQVVfeXFMT2M2djhRQVRGUXdGWVhyMHdlNElRVXRWVGo1YkN1T1RuN1VmQUphM0FtUXF3N0hVNFhrMklvQmY2aERoWWV2eHhVdEF5MWYxaEZjdnRnajFoekp5Y1dmVWRJaDk2M2c3MFpJbVRUVVZ4NWdWWTJYWlRUNWIxQi12OFA3QUR4MGZidHNsOUVCa2ZsOExSYWZVOTZySkpjdW9SSjdPTFBuamVpNE93TWljSE1ESURJSFcyZWVpRmVEazM0YXE4cklMa2hGX2Y5ZzhMZXZjUXc?oc=5",
+          "publisher": "CaughtOffside",
+          "kind": "article",
+          "snippet": "Tottenham eye late move for 25-year-old Premier League star but face major transfer obstacle CaughtOffside",
+          "published": "Tue, 01 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Sources: Enquiries made by Man United for 25‑year‑old versatile Premier League star",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWU1nejRIcmZfWElJMGphdGJ3NVpGUGFMZGRLY0gwSjFYRHA1aGs1eW5XSW5XT1U0emFTV2xBWUdrMGFTNUNlbzFiQTR6d2prbmFXZTdTbndualphbXllWmV3aUtMQjFNdWdiTDlyUXBNRGJGcFNkM0FlSVgybGNMY0dlMktrRjNmYUI5U1FEbTBHT256bmxfclRCZVpYcEIwNmF6SkR0VkI2MzFIMU1ELW5Oc2VWN0E2SWNVcjJIVW5OYldkbGlLdmU1eUhhLVVxMlUyLTM2c9IB3AFBVV95cUxNaTAxdXc1TVlHWWVSQXRPcGxpejJmemZXWkFIMXlPZldlUWNJeWRTMXhlSHdMWVR1UmhiX3JWSFNMaERJVGlWV0VPOGVkTjFxYVJTSjNIeElWTDc0bWRWVXFvMGVzU1QzeVJTRThiRnlBWmdTWkVrOFZhT0UtQ0tEeHJ3LW80X3VXT0FsM1BhQTE1LXE1dFNfM1hPUGctM1FmS3JjTXpUZjFtYWtfX1dVYl96Q2oyQUVMX0Uwbi1ib1dPaEFFZlB2OXJnMW53Ujl1ckJWVzhCVkFiYlpz?oc=5",
+          "publisher": "CaughtOffside",
+          "kind": "article",
+          "snippet": "Sources: Enquiries made by Man United for 25‑year‑old versatile Premier League star CaughtOffside",
+          "published": "Sun, 24 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Transfer rumors, news: Tottenham eye move for Man City's Savinho",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZktFZlZyanJ4ajhUN093ZE93Zm5Ia1FlUmdtTUJ1S2xsSEZPN0gxamJZd3BHOElkNnowd25uTlE4R3BVRlhrc0NhSW9Ud182N2ZadkUwQkxJU2d3Qm05UktXNFB3S1FaVGJuODBFRWdHVkZCUFJDeEpSdFVoUTJsYUdXUnJ4Qm9uSGNuV3NoYUtCd09Kd0xJYU9xcGVYdFhqNm1KMUJuRmVNT3gwa3BjUkM3WTIxcDVsZjFmUGE2MEVKMHYyVk1yNA?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Transfer rumors, news: Tottenham eye move for Man City's Savinho ESPN",
+          "published": "Wed, 29 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "PREMIER LEAGUE TRANSFER ROUND-UP: Savinho Joins Tottenham in Big-Money Move From Man City",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51X1BKUkxlbG5rXzFmQWxRTTF4YnIxSmp6OG5DeXVIdzJxMnVPWTc2dzBNY09lWUQ5MVAtREUwTE8xTzF6YXdMZjFYVUs1NzkxNGJIUWpB?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "PREMIER LEAGUE TRANSFER ROUND-UP: Savinho Joins Tottenham in Big-Money Move From Man City YouTube",
+          "published": "Tue, 25 Aug 2026 12:08:51 GMT"
+        },
+        {
+          "title": "‘Phil Foden’s not happening’ but Frank Lampard backed to bring ‘big name’ to Coventry as another Man City title winner is added to Premier League transfer discussion",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNLVpRbVN0QVNKb00wQURjYlJNLXU0Vl9WcXZld2lwRUFUTEhqdTNBb1dZa25Fb1lyTjUxOXZiX2dOZzZ5cFp4RzkyMzQ3YW82TFpUamdMZk9COXJ2OGgwS1gxT3JWQ0JzbmctY3JOQXFzbW1HWnpoRTBDWkZLdVpYd0w0ZS1yYmZlT29nYlBuUXJVSGxUUGl4TlBXbFRlc3Y0LXliOUlnMjR5d1pVNWNkTG1tNzNpSkEwR014Z0Fmenl0c1Myb2xJ?oc=5",
+          "publisher": "Goal.com",
+          "kind": "article",
+          "snippet": "‘Phil Foden’s not happening’ but Frank Lampard backed to bring ‘big name’ to Coventry as another Man City title winner is added to Premier League transfer discussion Goal.com",
+          "published": "Sat, 16 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man City face Phil Foden injury wait before Premier League begins",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSUhJYXNYRGNKUWVpeXBGVWlHSThmTktPajBwTUwwbkl1R1Zud0k3cnlpUEF5dXBqbjY2bS1EcVBleE9zNkJ2N0dmQk45NWpXaXZDUEtSVVphVFNrNDlkRURGaFhDUThIMHhqc0xQZVRrTW5GMWF2bU9JV180amxrcW5NWXRibVhvdDBoRC14bWFMaVgzWnFYZG0xN2EwbWYyS1U5etIBqgFBVV95cUxQRkZkUkNDWGlZeGJOWnRUdmprX012dU9HTHJfdlhzNTAtR0U4NzdEcmp2VG1qN1RHdFdoUjI3REl4ejl1UGxTa1EyMHpnR0EwalZwb1IwOW9YVWFrRDlPeXg1Wm1TM2JLQkZqRUJPNUxXSUQ1TnVUSVFOM3V2LVAySU5vRl9EMjVLOG1IY0xtQzNkTzdHQWQ0YjBWQTB5NXVOYXZTTHh1cnhMZw?oc=5",
+          "publisher": "Manchester Evening News",
+          "kind": "article",
+          "snippet": "Man City face Phil Foden injury wait before Premier League begins Manchester Evening News",
+          "published": "Sun, 10 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Long-serving Premier League star agrees to leave club as Nottingham Forest eye move",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTHJnSTJZbXlFcVJ0NW91UTd1cnU5V0Q0bHBKZV9rWDlWbXE2QURCWEN0dzhpNlBlTWE2VlFwZmYtUTBvUHhMQlc2Z3FQZjFrTEgwbE9MU1VsQlV2Rno1czJjVDdPb3ZCNEZlanNQczNidV9UTUY5enh5SlJQUFdOaHZ4QzJPQVNu?oc=5",
+          "publisher": "footballfancast.com",
+          "kind": "article",
+          "snippet": "Long-serving Premier League star agrees to leave club as Nottingham Forest eye move footballfancast.com",
+          "published": "Mon, 25 May 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "ballon-d-shortlist-shows-up-premier-league-s-d54cd961",
+      "slug": "ballon-d-shortlist-shows-up-premier-league-s-d54cd961",
+      "sport": "soccer",
+      "headline": "Ballon d’Or shortlist shows up Premier League’s attacking failings - but tide could be turning",
+      "blurb": "English top flight’s forwards are not well represented on the list, reflecting a season of set-piece grapple, but 2026-27 already looks brighter Premier League representation…",
+      "summary": "Bruno Fernandes, Erling Haaland, Cole Palmer and Mateus Fernandes: English top flight’s forwards are not well represented on the list, reflecting a season of set-piece grapple, but 2026-27 already looks brighter Premier League representation is low when it comes to the 16 attacking players on this year’s Ballon d’Or shortlist . Manchester United’s Bruno Fernandes and Manchester City’s Erling Haaland are there but Cole Palmer, one of the nominees in 2025, is out after an injury-hit year and English football’s shift towards physicality and set pieces last season is summed up by none of the forwards from the best team in the country making the cut. this year’s Ballon d’Or shortlist Aggregated from Guardian Football, The Guardian.",
+      "category": "injury",
+      "published": "2026-09-11T19:00:13Z",
+      "updated": "2026-09-11T19:00:13Z",
+      "players": [
+        {
+          "key": "bruno fernandes",
+          "name": "Bruno Fernandes",
+          "slug": "bruno-fernandes",
+          "pos": "MID",
+          "team": "MUN"
+        },
+        {
+          "key": "erling haaland",
+          "name": "Erling Haaland",
+          "slug": "erling-haaland",
+          "pos": "FWD",
+          "team": "MCI"
+        },
+        {
+          "key": "palmer",
+          "name": "Cole Palmer",
+          "slug": "cole-palmer",
+          "pos": "MID",
+          "team": "CHE"
+        },
+        {
+          "key": "fernandes",
+          "name": "Mateus Fernandes",
+          "slug": "mateus-fernandes",
+          "pos": "MID",
+          "team": "TOT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ballon d’Or shortlist shows up Premier League’s attacking failings - but tide could be turning",
+          "url": "https://www.theguardian.com/football/2026/sep/11/ballon-dor-shortlist-shows-up-premier-leagues-attacking-failings-but-tide-could-be-turning",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "English top flight’s forwards are not well represented on the list, reflecting a season of set-piece grapple, but 2026-27 already looks brighter Premier League representation is low when it comes to the 16 attacking players on this year’s Ballon d’Or shortlist . Manchester United",
+          "published": "Fri, 11 Sep 2026 19:00:13 GMT"
+        },
+        {
+          "title": "this year’s Ballon d’Or shortlist",
+          "url": "https://www.theguardian.com/football/2026/sep/08/harry-kane-alessia-russo-nominees-ballon-dor-2026",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Fri, 11 Sep 2026 19:00:13 GMT"
         }
       ]
     },
@@ -3919,541 +4572,70 @@
       ]
     },
     {
-      "id": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
-      "slug": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
+      "id": "richarlison-james-maddison-back-training-ahead-everton-open-43ec96c8",
+      "slug": "richarlison-james-maddison-back-training-ahead-everton-open-43ec96c8",
       "sport": "soccer",
-      "headline": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
-      "blurb": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-      "summary": "Bryan Mbeumo, Hugo Ekitiké, Alexander Isak and Carlos Baleba: Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC Bryan Mbeumo, Hugo Ekitiké, Alexander Isak and Carlos Baleba: Premier League to crack down on goalkeepers faking injury ESPN Premier League 2026/27 preview, team news, analysis, injury latest, suspensions and Fantasy Football Sky Sports Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC Aggregated from ESPN, Sky Sports, BBC, The Guardian, RotoWire and 23 more. Premier League Injuries: Latest Injury News, Updates & Suspensions RotoWire Aggregated from BBC, The Guardian, RotoWire, Yahoo Sports, Sports Illustrated and 23 more.",
+      "headline": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski",
+      "blurb": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london",
+      "summary": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session YouTube Toffees train for Spurs (A) | EVERTON IN TRAINING YouTube Aggregated from football.london, YouTube, metro.co.uk.",
       "category": "injury",
-      "published": "2019-08-21T07:00:00Z",
-      "updated": "2026-09-10T16:03:00Z",
+      "published": "2026-03-20T07:00:00Z",
+      "updated": "2026-09-11T13:58:47Z",
       "players": [
         {
-          "key": "mbeumo",
-          "name": "Bryan Mbeumo",
-          "slug": "bryan-mbeumo",
-          "pos": "MID",
-          "team": "MUN"
-        },
-        {
-          "key": "ekitike",
-          "name": "Hugo Ekitiké",
-          "slug": "hugo-ekitik",
+          "key": "richarlison",
+          "name": "Richarlison de Andrade",
+          "slug": "richarlison-de-andrade",
           "pos": "FWD",
-          "team": "LIV"
+          "team": "TOT"
         },
         {
-          "key": "alexander isak",
-          "name": "Alexander Isak",
-          "slug": "alexander-isak",
-          "pos": "FWD",
-          "team": "LIV"
+          "key": "tarkowski",
+          "name": "James Tarkowski",
+          "slug": "james-tarkowski",
+          "pos": "DEF",
+          "team": "EVE"
         },
         {
-          "key": "baleba",
-          "name": "Carlos Baleba",
-          "slug": "carlos-baleba",
+          "key": "maddison",
+          "name": "James Maddison",
+          "slug": "james-maddison",
           "pos": "MID",
-          "team": "BHA"
+          "team": "TOT"
         }
       ],
       "sources": [
         {
-          "title": "fined £10.75m by the Premier League",
-          "url": "https://www.theguardian.com/football/2026/mar/16/chelsea-fined-suspended-transfer-ban-historical-rule-breaking",
-          "publisher": "The Guardian",
-          "kind": "article",
-          "snippet": "",
-          "published": "Thu, 10 Sep 2026 06:00:18 GMT"
-        },
-        {
-          "title": "Premier League Injuries: Latest Injury News, Updates & Suspensions",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVFlsRkNUbUtNNWV4aXdQYk9oc0x4cHlGZ05YODY5NjBmVC1STENGQUpMN1ZncnVqVlJ2emhNeXhaaWdibUpVczU1R040djdNeDBvbUNHdEFIVEJjaFgxNGlaMDRTTzJVcVg5ajZCMlJXYV9PRjBRSUZpZkxFcm5KYnJtLUw4ODIwdENiNE9GLVZYa24xYWczems1N29uc3JUeENMcmk0c1NxS0pkZHc?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Premier League Injuries: Latest Injury News, Updates & Suspensions RotoWire",
-          "published": "Tue, 08 Sep 2026 15:02:00 GMT"
-        },
-        {
-          "title": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdmFEWC1WdUNHWXlsc2F4X2RoOW1YRS1tY1lBSGg0alF5emdhZmRmVjhHR0dNOFFMVnJXeC1KbDZPNWt3VHY5MHFlR0FRc2pGeEZjU1NFWU1zUFh3WGZNcmRwb2NlX19kNmZnSnQ4T1R1akl3YlFSenJBQWhtSVA2OXRsZ0czeGlj?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions Yahoo Sports",
-          "published": "Fri, 13 Mar 2026 15:09:08 GMT"
-        },
-        {
-          "title": "Premier League Injuries for Gameweek 28: Wirtz, Saka Among Possible Absentees",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNGU3RlFSNjZvT0lOUjdabHdMcEhIajQ0YjNwQWI4WXpMVkp6OTcwNjJHcUNKMTkwMGhUNkRLd0RoZXRidVRTVjRNT3B6N0FrMWlIVzZ3MU81UkFUNnpTdi1fa2h4Zkc4TEZDdV94dmNWQTh0RnNNVjNhRkl3Z3cyaFBtUmt0T2FkX0FDWUFMdzY0OTJWY0E?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Premier League Injuries for Gameweek 28: Wirtz, Saka Among Possible Absentees Sports Illustrated",
-          "published": "Fri, 27 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Which Premier League players have withdrawn through injury this international break?",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQanZOYW9ZLW45SVFEODlzZHdsdmYtcjd2QmR0ZEhNWEdRQTBxUm9yOERaNnpNUlZRaWJSS0RUTEFqTmJnTkVyR3VMNVY2WEpTekp1NlFxYjUwU3ZyUVl0Wi1mUWRBTHoyM2hwc1htdXlmMzNwcGpRUk5RVjJCUkRwMk10Q05seEktVThiWFVUVFozbDUxUExHdzRnRTRHSHlNcU9wbQ?oc=5",
-          "publisher": "nytimes.com",
-          "kind": "article",
-          "snippet": "Which Premier League players have withdrawn through injury this international break? nytimes.com",
-          "published": "Mon, 30 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Next Generation 2025: 20 of the best talents at Premier League clubs",
-          "url": "https://www.theguardian.com/football/ng-interactive/2025/oct/13/next-generation-2025-20-of-the-best-talents-at-premier-league-clubs",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "We pick the best youngsters at each club born between 1 September 2008 and 31 August 2009, an age band known as first-year scholars. Check the progress of our classes of 2024 | 2023 | 2022 | 2021 | 2020 … and go even further back . Here’s our 2025 world picks Continue reading...",
-          "published": "Mon, 13 Oct 2025 09:10:16 GMT"
-        },
-        {
-          "title": "Premier League transfer windfall a lifeline for ailing French clubs https://t.co/3wDmqCB8G1",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xa1oxVUxpVmx2SGtIMWF5TjlwODUwRDVwNzRMV2ZmVi1pMnI5U3hiRnlJQ25oc0FXUUFWUWVEZUQyVEJmRDdzSWVxYWVQTVB1QnVnQTMzVmZTMmMzYUg5djBrWXE3NXM?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Premier League transfer windfall a lifeline for ailing French clubs https://t.co/3wDmqCB8G1 x.com",
-          "published": "Sat, 05 Sep 2026 18:06:28 GMT"
-        },
-        {
-          "title": "Three Premier League clubs enter transfer race for £30m star aiming to be Brazil's next No. 9",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeHlQYmJBM0pCejJndVduN1JJWElFVjRmZDRQNEJpWE41QTFUajM1YXBRSENOcVViTGlreWlJcFFhRFNvSnBoTE10S3lMWlhsMnZGQzcwMnE2bTF1U21BOGkySkhNZ09oVnB2QnNoRVloWGw4b2dEU2pHUnFKOXJKVEtqc2JzQmZsRFJYYkVJNkJyd2RC0gGaAUFVX3lxTFA1VmF1RkUxdW9IMnk5S0FZckd2LXpOR3VudURUYk1kSERiUWNHZlJHUFozdG04S1d3ajg3UG9ESURCU2ItSHFBbEhNT1MxcXF3bGh6M2NuMlhGZXJEb1hWaGxaY0s0U0dGTGREWXhyVGg5alBRYkVmcF9FejNaYkRsUDBnUEdKblFjQTYweGRldmJEM3ZLcFNfNnc?oc=5",
-          "publisher": "Daily Mirror",
-          "kind": "article",
-          "snippet": "Three Premier League clubs enter transfer race for £30m star aiming to be Brazil's next No. 9 Daily Mirror",
-          "published": "Thu, 13 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Wrexham's Premier League Promotion Could Be Lost After Sheaf Knee Injury",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQbDFZTEZJMVdsRTFSRl9NRC00RUZiWjBuU1Q4YmFZSzdvTkZCbVNWRExyVkJPM3lHU25OSFUwLVVSVWpFUGY3aG1UdlBZSTc1M0s2X2M0eUQxRHNHZ2VsNHd3OUZlaDBRWG1XUklTemliVm1lbVZVQnJKbmRxOVdHSGh3M0psdlhnRWpVR0lNZklNWDUzRlJJSUFuTTdoNy1mNm9fdjFxWDJjVW1LVXE1ZmV1TDR2NEZEOXJRSTRWNTJWZjJvci13RS1PdGlYa2ZZbmdsN0p2RXJfS25qSXdtQ0h6UVBkNnI5c0HSAeoBQVVfeXFMTTFBamdSMWVLNEV3ZnBING5iRi1VWnhTeU8yNnlzemtlUW8wUXhka252b1VMV05GdUs1NmpIQWN4M1lUeDh1OUlKS1J1UFBkUl9qTXFESjNONTRiUlhsbld4ZFZXZkdCaFhnRlhHREN3SVZiLXE0MzVOb2E1Sk1jS1BTd2Q1UEIxenRMemY5WDdhbG5kSU4yUU1hMHFUVUppLUZwM0RydnBtdkhTd3RPdVBab0pZREg5NXZ4a1Vrckk0azF3ZGg0UE8xcnp1SVVGNUlDRTVmUkZ4YlhiQ1hRNjZweS1ndlM4YnRn?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "Wrexham's Premier League Promotion Could Be Lost After Sheaf Knee Injury FOX Sports",
-          "published": "Tue, 24 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DdThlSm5Ubk1mRXlEbTZBck0yQVJpZ0duSG1rRG1ZeW5EU3FiMU9TUW05UENjVFUtZXYtRXEtN1A5eU1rQjg5Y3ZadUkyTTlWcjNFeHh5OERqMVh1TXc?oc=5",
-          "publisher": "bbc.co.uk",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place bbc.co.uk",
-          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBBblFfaE5id0NvWjRPaTd6STJHdUhGWmNUc0tpQmZhNGItUGdaWFBsem1QeXVXVHV4a2R5UXpDLXNCX3FpRExQMDdhalljU1kwcmRIVmJDTUx0eGM?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "How every Premier League club could line up in 2026/27",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQOWZGX1pKYURkbDFXbXk2aDV5RExJZWM5QkhDcG5ROXRsTkhwblA2aGVGTGNCbHY5QkVHcWRxeXRmVDJlY1IxZnQwbjFwOTlOaERhcDNmVEVrVGR4dDFMcU1ENDQ5R0RJQUZKel81d3NOZjJaaEdtLTFrZmsyek5PQ1pVQlpGNkR6eEdqTTNlMHVxRUZGWHpWSmQtS2xfbHhw?oc=5",
-          "publisher": "premierleague.com",
-          "kind": "article",
-          "snippet": "How every Premier League club could line up in 2026/27 premierleague.com",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Predicted line-ups for Premier League teams in Matchweek 35",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSGpzVURGMWdibmw1a3pWMThQZzFMWl9LZGJJMlNkY0FCLThsakpxQnJTTmlDTzhuNGlOVm9wbjJIczhGTlB0RFJKSDNOWFhVSlU3bGhGLTVTTzBuc29XZHRtaUdJVWVHS2I4LU1zcC04YnJrZjJjendaX0FJZmRDRTg1Sjg4LTV2bU13SlJ6Z2FIcW5FQmU5YnBwZEpIcFk0cnlIaklXWXc?oc=5",
-          "publisher": "premierleague.com",
-          "kind": "article",
-          "snippet": "Predicted line-ups for Premier League teams in Matchweek 35 premierleague.com",
-          "published": "Fri, 01 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League titans' injury woes and when 18 superstars expected to return",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMUhXQ2lzVnhKTEJoMDU4ZjhralMyZXQya3ZSTU41TV9feDNCWnZsendpZGtFdUVBY2xIVmZ5ak56X3NjdFJtajJyRzRiZmJMUGpkLTNkZi0xWnBIeVZ5QjhvTmd3TlBIMWdDVXp2SDNOb3BEU2pHYmtLZ2lIWmVwaWF5bXpNLVhMeEZhSkFMaG5Oc3BCMDMtTmtR?oc=5",
-          "publisher": "Daily Star",
-          "kind": "article",
-          "snippet": "Premier League titans' injury woes and when 18 superstars expected to return Daily Star",
-          "published": "Thu, 10 Sep 2026 11:04:00 GMT"
-        },
-        {
-          "title": "Mount, Amad, Baleba: Man Utd Injury Updates vs Ipswich (Premier League)",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9CbTJ0TURzZDg0RXcxdlJndU8tdU56aEwwT3E4bWtpQVczRFVaU0U4RGswNnJBaDhkMVhDZG0td1lFTUFLa1dXeUdyX3JwOVRIME96QjdZQ1M2a25XMUhJSHk0WDU4VURRcFdVbkRaSVo4bDZ3YzFncU9Rc2xGSms?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Mount, Amad, Baleba: Man Utd Injury Updates vs Ipswich (Premier League) Yahoo Sports",
-          "published": "Thu, 27 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Amad, Baleba, Mount: Man Utd Injury Updates vs Ipswich Town (Premier League)",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1IT0xlTU5pODA2ZUNsX1JfOXllY09tS2NnS2dUZjRtUVFFN2dQa09maVp3X2FjQ2traHNvQnRsWlFjWjIwR25qYmV0OV9QUVZGSjk0Sl9EcHRWUUhvSEhPbUU5Z0tFRkxRMDlmMnRuZEtCSGI4SzhFRjd1ZkNrc2s?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Amad, Baleba, Mount: Man Utd Injury Updates vs Ipswich Town (Premier League) Yahoo Sports",
-          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Tottenham: Premier League club launches season review after injury woe",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hYjJYZWJPRXFILXpEWHVQRlF6QlJycnVRRkNXNjVHOXBDYV9ra3lTSExyWXpSWVZWZlJQRWRZNGZJSDU5NU80ZWhvaUExcEFwSkZGLVpEQW51ekdkYklrOUFGb25VLXM?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Tottenham: Premier League club launches season review after injury woe BBC",
-          "published": "Tue, 26 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nWktZQUIzUnNsUVFKRno5SU5ZMW9IWnVHd2xHZl9GbmxtWVR5N19xeUp6cnlXaV9CY2xKTDNabHVrRnVYVWgwRzh1NEJ4dzQya0JWelppUWZ4THM?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 08 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Arsenal vs Sunderland Premier League preview: Injuries, Suspensions, and Predicted Lineups",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQY0lPZjlZS2EtNFJnOU1sWXlvTWpSTGh5V0RfVjFGaDRFeFRPQnNBVjlfbFZTeEVJajNSV1U4RGNKaDNNNlJ0VGJYaVR3NXR4TE9RMGVPM05Ta1BKMkZaalNiRnduaU9ZZFY4eWpVT2F1Z01laGFnZGJkX0E2OWhpSzRPR2p2UVJKWC1RYkF4YjB6bkZCX0JEUWdfY0xVMzB4N3pQTW9RR21adEZKb1VNNlQ3RDBKbGJhTEhxUVlSZGNQSDZ6SVJLNDVIc1dpS1BtdVpxOFYwTzVNRkFxcHpjbVd4b2N4ZHVBYkdqZG5MMWRNalpSQUMw?oc=5",
-          "publisher": "theshortfuse.sbnation.com",
-          "kind": "article",
-          "snippet": "Arsenal vs Sunderland Premier League preview: Injuries, Suspensions, and Predicted Lineups theshortfuse.sbnation.com",
-          "published": "Thu, 10 Sep 2026 16:00:00 GMT"
-        },
-        {
-          "title": "Sunderland vs Arsenal Prediction, Lineups & Team News",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObkh0TlNEMXNsSEIyTnJNdzBrTGVNVUx2WmoyWDYxYjh3YVJ5WHh6dmZVVTBjYUJhcjdnT3pNM1RwSURfbHp2X1FTeDhrZTJMNEhYX00zT19ORThvMDhfN0NDNjBBZVVoNm5KNXlJYmZTWE5jcHJlLW05MnJqV1U1NUVWMEVWbFlmbmpxSWtZdEJPcFhTX05ESlp2Q0hKYndVTWJMelNVYU9NYTQ?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Sunderland vs Arsenal Prediction, Lineups & Team News RotoWire",
-          "published": "Thu, 10 Sep 2026 16:03:00 GMT"
-        },
-        {
-          "title": "Five Premier League teams one injury away from disaster",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ2U4NmY5b1VJUE51amRZdlRFVDhjNDRCSHJsbWJSb1NGa1FWcmRVQmZYX1J4X01CUjZyQWVuSGx6dUVoRUhMb1N4b3ozcGJZcFdYMEFKbnZkbllQMXBTZGFNY2hDRDVUdW5Dd1JaT0NMX1NXRDAzZWdrYnZTcGtTQ2ZnZFRxR0lGdnNPWndDU3NvemE0aS1ZSi1odEF6MHhxcVJQRWhkVQ?oc=5",
-          "publisher": "Football365",
-          "kind": "article",
-          "snippet": "Five Premier League teams one injury away from disaster Football365",
-          "published": "Fri, 04 Sep 2026 10:35:40 GMT"
-        },
-        {
-          "title": "Premier League injuries this weekend: Club-by-club updates and FPL latest",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZ3NZNk04aDZCZERad0NIcGJVdnk3eWU5MGRhNlhSUXhwQ09wZ3BxakNmWjcxLWdRdDFhSF9TMWZVOWJnLWtGaUJScmJMdDgwSmo1YzAteXpZUW11LVFYUTBKS0dNU01FcjZmMDdLQlVseHdOakc5VFpHTTQ0WGh5M3Uwc3BKal9zaXNCM1p0N2Y4bGlINkFzQW9lam81ZENydFBTa0JJNnlSTEl4QjBJWU9VTjY?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Premier League injuries this weekend: Club-by-club updates and FPL latest ESPN",
-          "published": "Fri, 30 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "BACK IN THE PREMIER LEAGUE! (FIFA 17 The Journey #3)",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB4YURTNlRBNkNHckdCU2FWWmotTlUyd2tqZTFKczloWHdvWE1XQkl2OEtoLUQ1aWs4eENGU0tza0hKdnFCUGh3NlNHWTFFY2lFbTJjVnNR?oc=5",
+          "title": "Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4zTDM3dExjVlJwYVVoT3dvaFFqSGI1V01FZUE1QkpJMzVRVnRYU3pXa0NyZFVtd1Y2b0ctWTY1eGZnVWhpNGsxSEFGWjFVY3pQWEhGamxR?oc=5",
           "publisher": "YouTube",
           "kind": "video",
-          "snippet": "BACK IN THE PREMIER LEAGUE! (FIFA 17 The Journey #3) YouTube",
-          "published": "Tue, 08 Sep 2026 14:30:29 GMT"
+          "snippet": "Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session YouTube",
+          "published": "Thu, 10 Sep 2026 11:46:13 GMT"
         },
         {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xbDhuQzdhcXVjTUhVcXVJN0xXRmFDSTVEWlF5QWpUX2Z3UDd5d3lGcm15SktkRUUwajE5NmhHeTJMYk0zQ0hCMFktc0pLWTBaWld4ODBCTWhHYnM?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 13 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "30 Premier League Players With Biggest Value Decrease in 2025/26 Season",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQi01RDNnUlJHT0twUWZWSU9DU3ZyX0d1aVZVNmhoN2dBUmFaOE9wbnpwOU9sZ0xWUldaU0VkS2hXVVlabVFJblJfaWVvN0FxMnotRGhCdTYyMEZoMWU1SHJwVDFKS2ttMHRlU2hmQV9sSnRIa1dqb05ZQkJ5OG51NUpaeGVHNXRQLW1PT0Rsam1EZUVBd1IxNmZEcHE?oc=5",
-          "publisher": "GiveMeSport",
-          "kind": "article",
-          "snippet": "30 Premier League Players With Biggest Value Decrease in 2025/26 Season - Alexander Isak 4th GiveMeSport",
-          "published": "Fri, 12 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQc1hwX3lxRVlEcGp2NXpKVVN1YVZuZERxWkZ2S2FSbEV5Z0hZQnJuNEd0emZpUE80WHdrWE1MckVEZTc1X243dHNoa3FrQTFZQ0tQZFNyNUtXMmxKdzZ5dl83Z0RHSUJxUFR5VVhqMWh6X1pMTnpsM2I5dkh2c1RYcXhDRGNjU1NKR1BDR1NKOWQ1eWVFeGVPVWM0aXgzS1RnUFBSTEQ2dWg5UmlmR21TYWpsdWNZYjlWTFdpbTlIUjRrSmdRSmFVV1V4Q3Vwbzc4b25TNzVBV2NXaGQ4NFZwRTZfWk90Tkg5?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club Sky Sports",
-          "published": "Mon, 27 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Which side has suffered most from Premier League injuries this season?",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA0YWdEVEYxX2tydjd1YkdvMjN0UmlUdm0wYVZ5TEl5Z3dPb3ozQWlIVFJ1Q2pDenJMSWxsTGNSUkx5SjhDZWQ1QmZfbDNkUVBrbXlnbTBaZm04YzA1ZWxvc2R1Z3d3NG8?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Which side has suffered most from Premier League injuries this season? BBC",
-          "published": "Thu, 19 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League 2025-26: Which teams have had most injuries this season?",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1HT1B6QTNKNWNhUkpRQXdRMG5vUC0tLWI2dHI1bGRPaEhqQ3Zwck1nOE1nWldQTFZKRWx1dTA0ZGpTSWRuMUJRUXNTUjg1V19pZTFVUks4UTRmam5fcElHeVF1dUxIODA?oc=5",
-          "publisher": "bbc.com",
-          "kind": "article",
-          "snippet": "Premier League 2025-26: Which teams have had most injuries this season? bbc.com",
-          "published": "Wed, 21 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Predicted line-ups for Premier League teams in Matchweek 28",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONndZd2VxVWVtMkNSTHBoblVBUkx4X09Ob21UN3E3T1BaSEVycDBYLW9PdV9jM2xpNTdPTXJvSzAzYUpWaUx5WThtbUFTUTFnanZSZzdzS3Z2MXpJVjQwOWhHdV9wVF9EVElnenRMVHFZVWN3a1d6OXk4enFBZGVlUzl6aXpYcEQ2YmkwOVVsclZxZ0xoMldHal9UeFVDd0FYTktOYlBTTXk?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Predicted line-ups for Premier League teams in Matchweek 28 Premier League",
-          "published": "Wed, 25 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "The Alternative Premier League Table: No 12 - Who have injuries hurt most?",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT1RuMVJ6RFR2bEV4V1ZXMndKWVRPSXdyUEhhTTF0b0EtcjhIMnZ4VUhKbG5hTzNsLXRpWi14WlJCT0Q0dGZvSXd0Yzc3SmtFZTkzdmZxc3h6WW8wVFpfUzROQkRBcVdLN1ltcy04QXRmSncwTkc5V3ROM244a29kWDlYVnJ6RWdicFFYdzN5Ukhjb1lId3JZcXlrd3AzY2xBYW5Fa1Fkcw?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "The Alternative Premier League Table: No 12 - Who have injuries hurt most? - The Athletic The New York Times",
-          "published": "Wed, 19 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Man Utd 15th & Liverpool 5th - Which Premier League clubs have suffered most from injuries?",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPeWw4dm9fSks5QnQ0YzJXTVk3MklPVFVQOWozczBtb1V4MEpqNDlUZXZ0MHNib0xtMGNxXzY5M1pCektRY2xaREhCc3ZqaHN1N2Jlc09pYW5KNlY0czhSODdoYnE0dlZWckRfWDFIbUVFUVlFcDRIQU1udHJmaV94TERWOFFjSFVYYzhuSXR0R195YVEySFh6R3hNMTBSUThHOGZVaUJQaFMzWDA4eXpwaWozNjRQN0dpamw2bURieUUtNWVOMEpyb0VkSDdHZ2dVY2hORg?oc=5",
-          "publisher": "Transfermarkt",
-          "kind": "article",
-          "snippet": "Man Utd 15th & Liverpool 5th - Which Premier League clubs have suffered most from injuries? Transfermarkt",
-          "published": "Fri, 01 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BRVNvYkg3aFlkMlJzdENjWEp4WmFvX1FXSUtJOE5TY2FIa05RSWpubFNlOVhoVmF4dVQ2UzZtSmZRZ3dES0I5SFpFSmExSTdHRVhVbEVWOEo4WWc?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 22 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Who's Missing: Premier League injuries & suspensions for GW36",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdG11RzlmLXByLUpuTWltek03a0c5ZmkxcXMyQzlVM1N3TnVuLXMzLXJTZTBYbGNKaGRHODJJV0FXTUh4VHNrRjhFckNwWVRYU1FjUmpuc0lWTFhxaEl6SXNISzdRcVRqU2Q0Q1QzemlGeFFOQVVESzdIalo5WFkyX0JYTHBpbEE5Q3hScU4tNk1yekU0TU10OHlwQmZNMDZfZWhaZkRyNzNLNVhDN2FsQ2VxM1k?oc=5",
-          "publisher": "Flashscore UK",
-          "kind": "article",
-          "snippet": "Who's Missing: Premier League injuries & suspensions for GW36 Flashscore UK",
-          "published": "Fri, 08 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League: A season of injuries",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5YXy1meExJS0pUTDQzWlB2eGRIeEQtX2hVRW84MmZHZDJOQmZvSGFZdFQ2ajV4WTlCTU5PdlpnbWRuX1Jzc3dTUFNabGpGZ19WWGh2aWx0Y05pX3VYeXBYSURLcXBvakU?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League: A season of injuries - how does your club rank? BBC",
-          "published": "Thu, 22 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "The £50m ordinary player: Has the Premier League broken the football transfer market?",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1SdWgwVFdKaGZJVVNoNEpUZFFibndVaDFTR21pbTBUTnY3MGZLVUpSWDh3NHlfMWJxbzdnR014WDRnaFI4NFVvbU5lSGx4b1d0TzZoWE1B?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "The £50m ordinary player: Has the Premier League broken the football transfer market? x.com",
-          "published": "Mon, 07 Sep 2026 22:00:51 GMT"
-        },
-        {
-          "title": "Premier League Transfer Spending",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE54bk96T2swVkFFWnhIZ3V5VHdmUUlCTDVtdnl5enNUYldCWGtoSXZkSXhfM0hWcm9DLVNvbm8wNnQ5QWF4czYxSEUyMDB1MV8wM1BxVjN3?oc=5",
+          "title": "Toffees train for Spurs (A) | EVERTON IN TRAINING",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaeUZ3RFJnM29yTVpiOHloMkFZQW9CVGZyeERqcFVWTUI5N0lDZS1uMElrZTRUMU5YVmRKU3piX2RhNE96QnZkNVZ3RHZEQWdHaFhDeEFR?oc=5",
           "publisher": "YouTube",
           "kind": "video",
-          "snippet": "Premier League Transfer Spending YouTube",
-          "published": "Thu, 07 Sep 2023 12:00:32 GMT"
+          "snippet": "Toffees train for Spurs (A) | EVERTON IN TRAINING YouTube",
+          "published": "Thu, 10 Sep 2026 14:00:01 GMT"
         },
         {
-          "title": "Premier League players with the most pre-season goals, assists and minutes",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5QMU9ZYUFsMWRVbXZmVE43Z2xaMVU5LWREVHY2NGtQWVMtQlQ3R1Awb1NhZWFFNGl4SVM0akpkcTFBVmVqRUhyeFRNNkZkWlhnS3gwTmluS08?oc=5",
-          "publisher": "Premier League",
+          "title": "James Tarkowski injury update ahead of Everton vs Chelsea",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNHZVY09qdVkwcG9QVi0zTVVuSFdtWDRPczlaMWxZeVpOSWJQN0tDMk9yLWE2RXRzLUdXOFlSNUktb1RFa29vYVdHazlaS2pQTHZDNXhLSmNxU254VEV4Zkw4dUNDSXowX0E3dFBTUXRWVmJXMHpaQXEyUFhxZFFWXzl1Z19mQ1FrNElhRXJ1UDh6ZTJVWVZCR1lRQdIBoAFBVV95cUxNRjM5R0ZlRkVabTVxelprWFpEUkhHcWdpRmFCdDJ2MmctM1BPOFAwM1JrOV9sUTNRRnRYcmlVVnpsTzQxOWlRRW5USlB3SE5YUzdjUTk2akd6YWNLUmpHWno3NW5SMmZaSWtXWWU0My11SGdsU1hCLVVzNzBYSklYZGFjY1pGb0xNQzNvWWhhX21XNGVuWHdoeGNUNHpJcTcy?oc=5",
+          "publisher": "metro.co.uk",
           "kind": "article",
-          "snippet": "Premier League players with the most pre-season goals, assists and minutes Premier League",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+          "snippet": "James Tarkowski injury update ahead of Everton vs Chelsea metro.co.uk",
+          "published": "Fri, 20 Mar 2026 07:00:00 GMT"
         },
         {
-          "title": "The 16 Best Premier League Signings of the 2025/26 Season Have Been Named and Ranked",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNWJ1b0p2SmU1TG5iak9zTER0OEhCN3lja0pqUkFfX3lxX0k2akh0bEF2ZWJMTlhGN0R2ZXhRMWhhdFU1Mng0emRtMmI2em9HSi0wZXo3QkN3NzZXWkMyRUhYak1UVHZsTnpHR19jNEpLR0VNU3dQNHpUODlVeG5QUEVnSDI4ZndPQXV6TUdn?oc=5",
-          "publisher": "GiveMeSport",
+          "title": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRExSUk5ES3hNdkt2UzFwbW5VLTZXd0FQSlhVb0VpY1pnQmVQOWlWUV9EN0lrQ09lLTlWbkowZWRuQTZRWEl3RGd6LXNBdExVd1F2MTl6TFY1OS1abmtyUFpQaGRUQ3A3cVhfdHlRYTRWQUd6SVNwMkVjX1RxR3lwWkpUR3F2d05HaW5lV2JOMDVnT1hNUkI4bVNyZEJ6OUd3?oc=5",
+          "publisher": "football.london",
           "kind": "article",
-          "snippet": "The 16 Best Premier League Signings of the 2025/26 Season Have Been Named and Ranked GiveMeSport",
-          "published": "Sun, 01 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Bryan Mbeumo wins Premier League Player of the Month award",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdDZyc1RMUHRGQ1FKRHhKa1g1bUdQRFd2TS1KcFYtbjBBako4OTlUd21wRXpmSGVzbTB5ZmZ1N2IyMWRlRzFaMkZIVTBPOWRKMW5LMXlacFZGU1BPZDFsdUE0cWsyUjJFTVZBZFNMVXJsZ2VsbnRTX2x1aGNSNVpsNXROVURLSDBtdThUbUEyN0k5TDVvZklLdzNOS2VPQWpVYXJveWJZeFlzUQ?oc=5",
-          "publisher": "The Peoples Person",
-          "kind": "article",
-          "snippet": "Bryan Mbeumo wins Premier League Player of the Month award - Man United News And Transfer News The Peoples Person",
-          "published": "Fri, 11 Jul 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Darke's Premier League flops so far, from Isak to Sesko",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTVc2NzFqY2xLaGdKSHpTUHozV25sR3ByRkFpcWhfVHBzblRrYjNlUDFVZlUtajZha0hYekJyOW84QlRYLUxhU1ZTUWNJaFdPY1ZsY29TUnpQb0JiSDhwZE16cnlVUl9OajZnaDl2UGd4RkhvQk9wcC1XVWdDQ0VTN3ZTNFNvOG9LT3BVTHF2UDVhcjBqX1Z5RFhTa0FzQmdTMEFmWjA5OXhSa2tsUDNkTEJHM0FLYlRKdmtlakFqRXJiNF83dGNGaw?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Darke's Premier League flops so far, from Isak to Sesko ESPN",
-          "published": "Wed, 31 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "The BIGGEST transfers between Premier League clubs",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONlBKVEJSdllFbjVOWVFoMGFWUm5oX09PaXFUN0F0NjlkWnNjUkxteEdLUnl3NGxMMTlNem9kNkNHODZiTWlqQnU1NXFxbVVDcFJZNFhuS1Z0cjFDS29sUDl4VVhCZHhaay1PVWRMbHZxNV8weEZqNjVIVXlxbXlkWmlPM09CaTUxQ20wWDVnUnV4VE9KUFFmVjFBMDQ?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The BIGGEST transfers between Premier League clubs Premier League",
-          "published": "Mon, 06 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Is Hugo Ekitike injured? Premier League injury update on Liverpool striker",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQmJpcVFmYk9NMXJCZmxNXzVTQk52LTkybDVQMnZ4NDJjUkJtb2F3VVk0bkRtQzZxOTFqbzhqV2JhWTBSdTRwU0RiWU82RG5jZUFVSU9tV3FleWF1djhWeTJ0SnFZNGtUWFpSUjNSS3FtRjUtX25ZX05XRC1vVXh1ejFyaHBadmVPRHhuUENObXUxUktGY0Nyc21tc2huLWxQMUt6ZE1RVE93QmpWMHp2aHVoR3pDQQ?oc=5",
-          "publisher": "FourFourTwo",
-          "kind": "article",
-          "snippet": "Is Hugo Ekitike injured? Premier League injury update on Liverpool striker FourFourTwo",
-          "published": "Fri, 09 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Is Alexander Isak the floppiest flop in all of Premier League flopsville?",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQWpkcUxoMjdyZXduQnZROEY4RnNpZU5EaS1lUmw5Zm84cDB0VXNWRHktU0txZ3pDWURqM2NvcnVxSlpMZ21TaWdJTFktOFZSVTRUMEQyaE5XclJSZUFvWHY4YXVVVkpGWERHRl9hLTAycjNMRjZ6T3llZ216UmZCOFE0OC1nRW5nZV9Fd2t1bmJnN2Q5SGFPcERTbWdyWEdwS2lSREl3ZmU?oc=5",
-          "publisher": "Football365",
-          "kind": "article",
-          "snippet": "Is Alexander Isak the floppiest flop in all of Premier League flopsville? Football365",
-          "published": "Mon, 24 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Alexander Isak ‘Snubbed Premier League Rivals’ Before Liverpool Transfer",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVU00bWJra3AyYmhpYVVlQnVja0hYT1lialRaSHhkYlJrV0V4SDZ6OWdnOVgtY0J0WGNPd2cxc0p1ZlQ3WlljcW9NVEhtbnVRMFFMMDJJQ1gtZTJ1VVBsWHJtdWhwYTduaEI4MFlxNnIyZkpJVC0tQmE3Q2cteGZ6eFZ5VWZzRktDZzV5bGI3Q2QweE5rVmx2cnpvTHE?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Alexander Isak ‘Snubbed Premier League Rivals’ Before Liverpool Transfer Sports Illustrated",
-          "published": "Thu, 04 Sep 2025 07:00:00 GMT"
-        },
-        {
-          "title": "What to look out for in the Premier League transfer window",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMGlJZWxxY1hXb2tkN29teEN5NHlLekpsTG9kcThYLUVjcXl3TFZ4SmVWa2NXVUhmNm9PNDJlaWFKdDU3TGlhSklfWDNOdTQzeDdTdHgxMkl5VUpKc0QwYkF2QjJYWXpBTzhxZGdOVkthbXRsYk5CV3cyd2JRQUJKVEd5b1RVVjUwelp0X05hQzlZNF9INHNuMzV4UllsaTdEYmlj?oc=5",
-          "publisher": "Bangkok Post",
-          "kind": "article",
-          "snippet": "What to look out for in the Premier League transfer window Bangkok Post",
-          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5DZC1lcDl1c0VweFBqX3N6Ym9xSF9KUkVjZTl6YzlIT0NNZGFFc2l3SmxMRzNHN1BVYmlueURTbDkwNTJWVU12RFA5Z05RZzJqdVV5ZXV3ZHRfYTg?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1M21fZTFXVXhrTzI4cVJDMk1BanNCTHgyVFJ2aTduZHlXOVpDQTJoQjR1SHZhT0R1UHdTTjlOWW5ia29OUTRoRzJUaDVHUjB4QVFhY19nQWxIakU?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 24 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League Funny Bloopers and Silly Injuries",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA3SGxTRTgyS1c2TV8xRVFuZ0xaUWt0eThiU082dUZvXzdRQ0ZYMWRIaTAwYndyc20wY0RFbE5sQU9RMmVtT3FZVUZfT1FNTUJDV2tNMVFn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Premier League Funny Bloopers and Silly Injuries YouTube",
-          "published": "Mon, 17 Mar 2025 16:01:15 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uUWtfQWwyZXZhMEExZjVkMWtvcGdpcnN0Mk1SUFNjMXdyVjNvcGJNQ0ZFRDQzWVBxQXV3UG91bjk1U3BNbE9Jd2ZvQnpsenNNazQwVk9DYmtUMzA?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 15 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "#FIFA20 CAREER MODE PREMIER LEAGUE TRANSFER BUDGETS! 🔥 The transfer budgets of every Premier League club in Career Mode in FIFA 20! 👀",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBTUjJZMnRFT3g1N0ptRXQ4Q2d6cnZhNGdNQ0Z5bGZHR2xqUG5RLXM0X1NuS3FWN0dNX3BjQ295OXR0LUwtYXpwTDA2dk16U2JETG9FdFVYdi11cEZzZ0E?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "#FIFA20 CAREER MODE PREMIER LEAGUE TRANSFER BUDGETS! 🔥 The transfer budgets of every Premier League club in Career Mode in FIFA 20! 👀 x.com",
-          "published": "Wed, 21 Aug 2019 07:00:00 GMT"
-        },
-        {
-          "title": "Latest Premier League player injuries",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQek9QaVVPcWo0RWNQbmR3UWdfeV9OMHJfMlVDY0ZtcEg4MlNjY1Y0RVEyVDRtRVdWR1dVX2dTeXhQaEowY1NUbzI3eTdFcmQ5YW1QX1NINWJKaW41dEV1VUpUWWNHQVd3M1VXa3pBN3hBWEd1d05xaHVxWGxIMEJFcXVldFNRbVpXQndPWV9SejVBSTEtYjd3cjlsc2I5TjVFVEM4?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Latest Premier League player injuries - club by club news Premier League",
-          "published": "Wed, 09 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Arsenal vs Chelsea Premier League preview: Injuries, Suspensions, Predicted Lineups",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNaTgxSVpnTkFWbjhndVhib3RyLV9zWk9DRTFlRmJ5cUx5d2FCemkxTXdjSGx2V2pXSHNXX0YweEwtd1JqNGc3alc3YXFfYjlreDJ1QlRmRGg2ZzhCT01ocHppMlc2RnFrZURtd1RoZXk4M2FMZEdza3Y3TF9QOFJwSm5vdUgwY1NHTEpRdGNNTUFUT01YY0NPbmhMMi1hWDNJT0owd1V6SEY2STdEWWc1cHNOeHVkWE5DbWtycUcwUXV5UVA5YVptTWtVeEJYa3YzVW9oaVEyWEtDU1ZTUlVrWVpMcWJBWGpCSE1TbDRFTkJFeG8?oc=5",
-          "publisher": "The Short Fuse",
-          "kind": "article",
-          "snippet": "Arsenal vs Chelsea Premier League preview: Injuries, Suspensions, Predicted Lineups The Short Fuse",
-          "published": "Fri, 04 Sep 2026 13:00:00 GMT"
-        },
-        {
-          "title": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNVVhhX3NvWHcwZ0tJMzBGT1QxMUhWYml3aHVnanJsZWl6LTNoYVhLTjV5YzQ5XzNZcDdrZDhMdk5YakZJZmZyOTVfcGdKd3I4QkZCT0ZURjhya0ZkUU9uVF9Ua0ZWX0FTeWZ4NTVsWXBGd0NpVmR5UlNZQ1UtaFBIdEZpN3hGb0ctam1RNlpLdDhNM0xEUEtMOEdwOVBCZ2YzaUpOTkl1bnJ5dnZYaTcwVjJBZGMtNFdObjU4Z0dSekVCVzJHVWpHdWpnOXZQV2hDekREZkFSVFNfam9TUmh4VGE3UEJwQndN?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club Sky Sports",
-          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League (@premierleague)",
-          "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTFBrMnYyUnZkRF9nZnRIb3FqM0RuRVFQT2hrUk9fSlRKVF91MlJhQXRsWUxTckpvSkx5Tnh2blppQlU?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Premier League (@premierleague) x.com",
-          "published": "Fri, 22 Dec 2023 13:07:33 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VeFpTN0R0Y0RlU3FuQkFWRkFKUm1Zd3A3U2plSW42bXpBZ0xfWThVTmozcnBNYkdYeWppWjZGOHdsbUVpYVFVdFVyZE83clVqT1k1MFc4dmpFaVU?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZemlWcDBHMExQaUR2Q2FaUGhaTWY0LVJwdm43c2NQOUlQdFRhaEMtVl85N3pmRHk4X0Z2M2tpTmQ5T2V5cU9ZdmlSU0N1ZGx4Qmhva1BhX2JpTXc?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 06 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sQkRldmVOWlBDcy1vUkpDVW4xS0FhMWxXdU5VYm1Da3VBODhKQjlPNUlBcUZlLXNKUG83RmFIY2hlMFpEOXE5enBodFZFWi1vR1dCSkNQRi1Fb0VZUEtUb0xzeWkybEU?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Mon, 29 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League to crack down on goalkeepers faking injury",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWUFGNUUwTUVXRnl6emVieVpITGxoS2x3NTZ3SlllZE5MVElNMmk5SUhQMzR1dHJlMVpLRGRRM1kybm1Yczc1N0RQUEdwanNlVWFBUkVoZVltZlJIZW1MLWFzWXg0WjA1UXIzZVZ4MUotYl9mUjVEVHRRN2hRVjlRYmlQd2ZHRFI4X0JKYkh2RW1DcVl2SjAwMG5R?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Premier League to crack down on goalkeepers faking injury ESPN",
-          "published": "Mon, 27 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League 2026/27 preview, team news, analysis, injury latest, suspensions and Fantasy Football",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOOWVVQ3RPUzF2YkhTeHhmVHlPbk45aVgwN0xlVXk4dUJWb3dLLW5IWXJLZ0dUYmlOczdKNjU2RXc4NG54ajRSdHljQ3ptbXN6ZEVBZUJSaWFXVkg4SmVuMHh1c25Fcm12MGpObS1PYW5uUUpMejVyWjdOWlZYUkVqeUtHQnh1S255V1B1UzhicTVGV3VHTjJpZ2NWc1drcmxwSjE0QUtiNFgweUZicVIteE9HVlJEMXFQMmozX2tkdWNXdzNmdTlwT1FLTVprQzR2RHoxdTlzNHFxSFU5RkVtcE41bjlzcm44eS1CWg?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Premier League 2026/27 preview, team news, analysis, injury latest, suspensions and Fantasy Football Sky Sports",
-          "published": "Sat, 22 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5ekFadFRFdjZyS2dQMUZ5WVUxbU0zNlVCMjJZN3I5RDcwS2FIZ0k1MjYtWER4MkhxQkZGSDl5MWhvbDUwd0Rsb3EwNVRrS25NVXExTTE3ZmlyZWc?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 01 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fckQ0OTZrME0tM19kMF9kaUhsRThha0NvNTZHaFRFYWFtZEt1aFppT0hPVUlCV3ZvbV84MnpZeE1PanI1OGRobDdLekhKZGRoYnFrUEVkaUpsVEk?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Fri, 30 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5SRlRWcXpwenJvOF8xX2FkeHRiNmNFQ1FXN1NXbFUwNkR6SGdNVElzZDNtSktfbGF6LWx1WnZuaWRTQTB3X1RPcHBkWGZPSEwtV0FmUDRsajNmWGM?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
-          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
+          "snippet": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london",
+          "published": "Fri, 11 Sep 2026 13:58:47 GMT"
         }
       ]
     },
@@ -4746,74 +4928,6 @@
       ]
     },
     {
-      "id": "richarlison-james-maddison-back-training-ahead-everton-open-43ec96c8",
-      "slug": "richarlison-james-maddison-back-training-ahead-everton-open-43ec96c8",
-      "sport": "soccer",
-      "headline": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski",
-      "blurb": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london",
-      "summary": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session YouTube Toffees train for Spurs (A) | EVERTON IN TRAINING YouTube Aggregated from football.london, YouTube, metro.co.uk.",
-      "category": "injury",
-      "published": "2026-03-20T07:00:00Z",
-      "updated": "2026-09-11T13:58:47Z",
-      "players": [
-        {
-          "key": "richarlison",
-          "name": "Richarlison de Andrade",
-          "slug": "richarlison-de-andrade",
-          "pos": "FWD",
-          "team": "TOT"
-        },
-        {
-          "key": "tarkowski",
-          "name": "James Tarkowski",
-          "slug": "james-tarkowski",
-          "pos": "DEF",
-          "team": "EVE"
-        },
-        {
-          "key": "maddison",
-          "name": "James Maddison",
-          "slug": "james-maddison",
-          "pos": "MID",
-          "team": "TOT"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4zTDM3dExjVlJwYVVoT3dvaFFqSGI1V01FZUE1QkpJMzVRVnRYU3pXa0NyZFVtd1Y2b0ctWTY1eGZnVWhpNGsxSEFGWjFVY3pQWEhGamxR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session YouTube",
-          "published": "Thu, 10 Sep 2026 11:46:13 GMT"
-        },
-        {
-          "title": "Toffees train for Spurs (A) | EVERTON IN TRAINING",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaeUZ3RFJnM29yTVpiOHloMkFZQW9CVGZyeERqcFVWTUI5N0lDZS1uMElrZTRUMU5YVmRKU3piX2RhNE96QnZkNVZ3RHZEQWdHaFhDeEFR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Toffees train for Spurs (A) | EVERTON IN TRAINING YouTube",
-          "published": "Thu, 10 Sep 2026 14:00:01 GMT"
-        },
-        {
-          "title": "James Tarkowski injury update ahead of Everton vs Chelsea",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNHZVY09qdVkwcG9QVi0zTVVuSFdtWDRPczlaMWxZeVpOSWJQN0tDMk9yLWE2RXRzLUdXOFlSNUktb1RFa29vYVdHazlaS2pQTHZDNXhLSmNxU254VEV4Zkw4dUNDSXowX0E3dFBTUXRWVmJXMHpaQXEyUFhxZFFWXzl1Z19mQ1FrNElhRXJ1UDh6ZTJVWVZCR1lRQdIBoAFBVV95cUxNRjM5R0ZlRkVabTVxelprWFpEUkhHcWdpRmFCdDJ2MmctM1BPOFAwM1JrOV9sUTNRRnRYcmlVVnpsTzQxOWlRRW5USlB3SE5YUzdjUTk2akd6YWNLUmpHWno3NW5SMmZaSWtXWWU0My11SGdsU1hCLVVzNzBYSklYZGFjY1pGb0xNQzNvWWhhX21XNGVuWHdoeGNUNHpJcTcy?oc=5",
-          "publisher": "metro.co.uk",
-          "kind": "article",
-          "snippet": "James Tarkowski injury update ahead of Everton vs Chelsea metro.co.uk",
-          "published": "Fri, 20 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRExSUk5ES3hNdkt2UzFwbW5VLTZXd0FQSlhVb0VpY1pnQmVQOWlWUV9EN0lrQ09lLTlWbkowZWRuQTZRWEl3RGd6LXNBdExVd1F2MTl6TFY1OS1abmtyUFpQaGRUQ3A3cVhfdHlRYTRWQUd6SVNwMkVjX1RxR3lwWkpUR3F2d05HaW5lV2JOMDVnT1hNUkI4bVNyZEJ6OUd3?oc=5",
-          "publisher": "football.london",
-          "kind": "article",
-          "snippet": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london",
-          "published": "Fri, 11 Sep 2026 13:58:47 GMT"
-        }
-      ]
-    },
-    {
       "id": "jack-hinshelwood-injured-weekend-premier-league-injury-f1e7f0b4",
       "slug": "jack-hinshelwood-injured-weekend-premier-league-injury-f1e7f0b4",
       "sport": "soccer",
@@ -5057,12 +5171,19 @@
       "slug": "carragher-refuses-forgive-mac-allister-liverpool-press-conference-c7727dad",
       "sport": "soccer",
       "headline": "Arne Slot press conference: UCL qualification, season review, Robbo and Salah receptions and more",
-      "blurb": "Arne Slot press conference: Salah form, Alisson importance, West Ham and Ngumoha Liverpool FC",
-      "summary": "Rio Ngumoha, Milos Kerkez, Florian Wirtz, Hugo Ekitiké, Mac Allister and Jeremie Frimpong: Arne Slot press conference: Salah form, Alisson importance, West Ham and Ngumoha Liverpool FC Carragher refuses to forgive Mac Allister for Liverpool press conference LiveScore LIVERPOOL 2-1 ATLETICO MADRID | Andoni Iraola Press Conference YouTube Aggregated from Liverpool FC, LiveScore, YouTube, Football365, footballtoday.com and 2 more.",
+      "blurb": "Arne Slot press conference: Liverpool 2-0 Brighton, Salah, Ekitike and more liverpoolfc.com",
+      "summary": "Hugo Ekitiké, Rio Ngumoha, Milos Kerkez, Florian Wirtz, Mac Allister and Jeremie Frimpong: Arne Slot press conference: Liverpool 2-0 Brighton, Salah, Ekitike and more liverpoolfc.com Carragher refuses to forgive Mac Allister for Liverpool press conference LiveScore LIVERPOOL 2-1 ATLETICO MADRID | Andoni Iraola Press Conference YouTube Aggregated from liverpoolfc.com, LiveScore, YouTube, Football365, footballtoday.com and 2 more.",
       "category": "injury",
-      "published": "2025-12-19T08:00:00Z",
+      "published": "2025-12-13T08:00:00Z",
       "updated": "2026-09-10T14:00:12Z",
       "players": [
+        {
+          "key": "ekitike",
+          "name": "Hugo Ekitiké",
+          "slug": "hugo-ekitik",
+          "pos": "FWD",
+          "team": "LIV"
+        },
         {
           "key": "ngumoha",
           "name": "Rio Ngumoha",
@@ -5082,13 +5203,6 @@
           "name": "Florian Wirtz",
           "slug": "florian-wirtz",
           "pos": "MID",
-          "team": "LIV"
-        },
-        {
-          "key": "ekitike",
-          "name": "Hugo Ekitiké",
-          "slug": "hugo-ekitik",
-          "pos": "FWD",
           "team": "LIV"
         },
         {
@@ -5266,6 +5380,14 @@
           "kind": "article",
           "snippet": "Arne Slot press conference: Salah form, Alisson importance, West Ham and Ngumoha Liverpool FC",
           "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arne Slot press conference: Liverpool 2-0 Brighton, Salah, Ekitike and more",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPN0ZWaXRXUVBINUEzdm15b2Qwb2hvcDAxZi0xaUZFc0xSQmVnMXZLMVFwTVBocVI2TFJWd1hLeVE3cU5CQTZRb24wdFRTVF9neHppbmlsRUtlVjU4Zklpd1BLR3ZlVEdQVUhjMUJ3YUFtS3RTOURWNzc0bGt1dTgwNmVxLVB2bThBRnRUb1dteVdHVmhWblpuaGV6VFlkRTdndGhCWTBtNVTSAbABQVVfeXFMTTNDZkpJc29yRmdIV01zZUhLSm52ZGtKQlRTVW5yc3Z4Uk9Xa0dURmw0M1ZXN1VyTzQ1NkxvdmhDQVRjX0QyM3RfRExobDNmMDR3Skk3S25fYV9kZ3VlNmFjSURLZzdLNGZnV05XSFhxVUZWYnE1U0xmQm83OVRvMHJrODM3Z1lHYmdKQjFBM0VpZzMzZmxOZGJXV28xTUotM24zMHVrVXlFUnQ2c2NURzQ?oc=5",
+          "publisher": "liverpoolfc.com",
+          "kind": "article",
+          "snippet": "Arne Slot press conference: Liverpool 2-0 Brighton, Salah, Ekitike and more liverpoolfc.com",
+          "published": "Sat, 13 Dec 2025 08:00:00 GMT"
         }
       ]
     },
@@ -5736,12 +5858,26 @@
       "slug": "fpl-gw4-wildcard-active-2-111th-overall-world-aee492f9",
       "sport": "soccer",
       "headline": "Liverpool injury news: Joe Gomez to miss start of Premier League season, but will it affect summer transfer plans?",
-      "blurb": "The Premier League belongs to Erling Haaland after summer transfer window ESPN",
-      "summary": "The Premier League belongs to Erling Haaland after summer transfer window ESPN Premier League's summer transfer market is dangerously out of control ESPN Can a doughnut play up front? Aggregated from ESPN, The New York Times, BBC, Sports Illustrated, Anadolu Ajansı and 32 more.",
+      "blurb": "Cunha, Shaw & De Ligt - Manchester United injury news for Liverpool Premier League clash Khel Now",
+      "summary": "Matthijs de Ligt, Enzo Le Fée, Erling Haaland, Iliman Ndiaye, Florian Wirtz, Joe Gomez, Alexander Isak, João Pedro, Viktor Gyökeres, Antoine Semenyo, Rayan Cherki, Alejandro Garnacho Ferreyra, Jean-Philippe Mateta, Morgan Rogers, Granit Xhaka, Hugo Ekitiké, Bryan Mbeumo and Cole Palmer: Cunha, Shaw & De Ligt - Manchester United injury news for Liverpool Premier League clash Khel Now FPL GW4: TEAM SELECTION | Save Wildcard & Captain Palmer? | Fantasy Premier League Tips 2026/27 YouTube Aggregated from Khel Now, YouTube, The New York Times, Yahoo Sports, Yahoo Sports UK and 35 more.",
       "category": "injury",
       "published": "2020-05-05T20:48:11Z",
       "updated": "2026-09-10T08:30:14Z",
       "players": [
+        {
+          "key": "de ligt",
+          "name": "Matthijs de Ligt",
+          "slug": "matthijs-de-ligt",
+          "pos": "DEF",
+          "team": "MUN"
+        },
+        {
+          "key": "e le fee",
+          "name": "Enzo Le Fée",
+          "slug": "enzo-le-f-e",
+          "pos": "MID",
+          "team": "SUN"
+        },
         {
           "key": "erling haaland",
           "name": "Erling Haaland",
@@ -6591,6 +6727,38 @@
           "kind": "article",
           "snippet": "Every confirmed Premier League transfer in the 2026 summer window Squawka",
           "published": "Wed, 02 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Why 'winning the summer transfer window' doesn't help Premier League clubs",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTkd6SkQtS2g5N3dDTmpfTjBpSDJiNkhSbGkxUnI0VW5lYzlzUzU0MjNFM0FpWTdZUzVSalFndE5Za1lMbXRENFBOWlc5UDNlTjNNX1czWFd2c09wMVp5MWpucGpyVGFCTE52dURnWTd2ZEV4YmdVQzduSTRVS0d4NnZnXy1BRmpDaGtKSTZCWFJaTWRGNXVoWUdvN0loQVVkSHdJ?oc=5",
+          "publisher": "espn.com",
+          "kind": "article",
+          "snippet": "Why 'winning the summer transfer window' doesn't help Premier League clubs espn.com",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League summer transfer window: What your club still needs to do in the week before Deadline Day",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQS1ZNWWZ3TkVYTmN6WndqRkRpZlJkMktGbWg1VTZDeGV1MjdXNm5LTjNYVXBBQjFSQU5BNlJzWWFITFczSm1JWXRwTjl4WHA1STlwRFN4S00tMFU0NUpXTlJzTUVfeExwX0daV1FGUVVvWVZqc0FsNENfZFRycThya3plbzVUYjJoQ04yMGh4ZC1tRWRENGVXUVFPRGMtNDlkcWJsNDg3N3BFQVVXeFF5VTl3M1dZYnRyWFFucnNWM3hELV9QTXhNWTVFSXc2MWxuYWVIWFBjWmx5ZnJBR190SUtTMzUxMjNmZi1yY2p3?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Premier League summer transfer window: What your club still needs to do in the week before Deadline Day Sky Sports",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Enzo Le Fée attracting interest from Premier League clubs",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdm1mRWhNZmZLMnZvRnZ1alJMeFRpVHlFRFZPejJ6QkxINmlRbjVGWkVtVHdCc19qZW5aZmpSVjlRUnJ6eWhwdEZOREpzUHNpeUczOFcxMzRlYzZad2wwR1pCZHZuN2ZmcTE5S2ZjUDliTU5FWUtDSlpZZHNpbW5QblZ2ZXUtaTdfQWc3TWxuOU9GQXhsRGVFU1pmd0FQbkNIUDNGVGlBa1pVa0lQWkd6R1dBTnM5QdIBuwFBVV95cUxPZHNUbjNhRXVnQk55M0JsbUotNHhKSGs2SmZUY1NyNWsyQXZJZmFSeE13WVk2TDNZelhUQUdkcWZsRUlZdHpndnc1dzdoWE5mejlpUktkMkNfaHBOVXoxZmJ6OWdJUGdVNllOcy1WUk9RSWZQbHg1NG1HWVBpRng3M3hqZWJXd2xzSDZVNV9MbDhQcDEyWnFLTktBU3VSSEx5VGw1cUd3My14b2hMQUN2dGNKOWdLQWxrNUNj?oc=5",
+          "publisher": "World Soccer Talk",
+          "kind": "article",
+          "snippet": "Enzo Le Fée attracting interest from Premier League clubs World Soccer Talk",
+          "published": "Wed, 28 Dec 2022 08:00:00 GMT"
+        },
+        {
+          "title": "Cunha, Shaw & De Ligt - Manchester United injury news for Liverpool Premier League clash",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVWhuZDhOQUxtR2lRMXVXZ2E3elFOb3BUSjVnSFpfNmgyUHFsZ2ZKTXYzTVUwYTd3ay1yNG5iX1g3M192U1JzU2NPdGJRc3dpdnNnQUM2NEJTT0NCb1FUenYyTnVrQ1R3Rl9UZmYtbWFHLXZuS0NrUEREb1hQMXAyeEZiLW9FUjU3RmMzOUR3VmVwUFZDUE83Vml0RWtMZFJDVTZzNjdxLTFiU0JEOUZlZg?oc=5",
+          "publisher": "Khel Now",
+          "kind": "article",
+          "snippet": "Cunha, Shaw & De Ligt - Manchester United injury news for Liverpool Premier League clash Khel Now",
+          "published": "Fri, 01 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -9375,6 +9543,195 @@
       ]
     },
     {
+      "id": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
+      "slug": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
+      "sport": "soccer",
+      "headline": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions",
+      "blurb": "Mount, Amad, Baleba: Man Utd Injury Updates vs Ipswich (Premier League) sports.yahoo.com",
+      "summary": "Carlos Baleba and Dominic Calvert-Lewin: Mount, Amad, Baleba: Man Utd Injury Updates vs Ipswich (Premier League) sports.yahoo.com Amad, Baleba, Mount: Man Utd Injury Updates vs Ipswich Town (Premier League) sports.yahoo.com Dominic Calvert-Lewin: Premier League club 'regret' missing out on Leeds United star Yorkshire Post Chelsea boss hails Leeds United pair ahead of Premier League clash Yorkshire Post Calvert-Lewin 2.0: Leeds could see £40m bid accepted to sign Premier League star Football FanCast Aggregated from Yorkshire Post, Football FanCast, The Guardian, RotoWire, Yahoo Sports and 11 more. Aggregated from sports.yahoo.com, The Guardian, RotoWire, Yahoo Sports, Premier League and 12 more.",
+      "category": "injury",
+      "published": "2025-10-13T09:10:16Z",
+      "updated": "2026-09-10T16:15:00Z",
+      "players": [
+        {
+          "key": "baleba",
+          "name": "Carlos Baleba",
+          "slug": "carlos-baleba",
+          "pos": "MID",
+          "team": "BHA"
+        },
+        {
+          "key": "calvert lewin",
+          "name": "Dominic Calvert-Lewin",
+          "slug": "dominic-calvert-lewin",
+          "pos": "FWD",
+          "team": "LEE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "fined £10.75m by the Premier League",
+          "url": "https://www.theguardian.com/football/2026/mar/16/chelsea-fined-suspended-transfer-ban-historical-rule-breaking",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Thu, 10 Sep 2026 06:00:18 GMT"
+        },
+        {
+          "title": "Premier League Injuries: Latest Injury News, Updates & Suspensions",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVFlsRkNUbUtNNWV4aXdQYk9oc0x4cHlGZ05YODY5NjBmVC1STENGQUpMN1ZncnVqVlJ2emhNeXhaaWdibUpVczU1R040djdNeDBvbUNHdEFIVEJjaFgxNGlaMDRTTzJVcVg5ajZCMlJXYV9PRjBRSUZpZkxFcm5KYnJtLUw4ODIwdENiNE9GLVZYa24xYWczems1N29uc3JUeENMcmk0c1NxS0pkZHc?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Premier League Injuries: Latest Injury News, Updates & Suspensions RotoWire",
+          "published": "Thu, 10 Sep 2026 16:15:00 GMT"
+        },
+        {
+          "title": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdmFEWC1WdUNHWXlsc2F4X2RoOW1YRS1tY1lBSGg0alF5emdhZmRmVjhHR0dNOFFMVnJXeC1KbDZPNWt3VHY5MHFlR0FRc2pGeEZjU1NFWU1zUFh3WGZNcmRwb2NlX19kNmZnSnQ4T1R1akl3YlFSenJBQWhtSVA2OXRsZ0czeGlj?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions Yahoo Sports",
+          "published": "Fri, 15 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Predicted line-ups for every Premier League team in Matchweek 33",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeU5XcW80aHV6bGIzclRxOEExZjNsUXBZQTFMYmJTUERNbWpBM29haTNZR2I0WnFoQzJ4VVkxb3lkV25FejRjZE11a1d6aE5NeU41dHBZbV9fOVhEUl92dmFVV0gtTENvcFZsUl9SUWs5bmFZdVdQek5rX1d0V0RhU0pNR1hHWXc1U3Itam9INE1Pem5Ld0tNOWhoNDBVRnVESnZqRUpvLVZYOFlGalpGTQ?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Predicted line-ups for every Premier League team in Matchweek 33 Premier League",
+          "published": "Fri, 17 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League Transfer Window Winners and Losers",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQkw5QlpGLWJPMjN1LWpoYWZtaG1Fckh5eXNxbXRkZ3lVenFKazF2bjRIMWJnWWJMV3pQZDRWblZFRW5fWFlGQnFfN3FBS0I0R0hvRjRqMEJXbmZRY0Q0ZUZIOGZPX2tQZU9ZalhZWlRuMEZGTUtjbDI5MGRvUU1DRkZDR2w0c0xSSU9PZnNjRlBfdEp1T2FsUw?oc=5",
+          "publisher": "Northern Iowan",
+          "kind": "article",
+          "snippet": "Premier League Transfer Window Winners and Losers Northern Iowan",
+          "published": "Wed, 09 Sep 2026 19:22:44 GMT"
+        },
+        {
+          "title": "Premier League Transfer Show https://t.co/l4ldqMlgbw",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1oUGdTWEdwRGV2MEk0U2EwaC0wZXU5eGpSOTJfNWQzcDZhb1hpVm9NcmVtSktNaFl1M19XVEVFbDE4WU1wZjNxNWI5ejhXT1BGZDFsellqWURKUXZLT25TZnZqTmc?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Premier League Transfer Show https://t.co/l4ldqMlgbw x.com",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Can you guess the Premier League transfer? (Quiz)",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5meng1QUNIRnJaTjJvajV2SFdsbkVxdG9UZjJCbUhxQi16ZFhMSWQ3eWpqRW5laXpDZlJEcFVDY29ERTQ1NVMxTXhMd2Jyc1RIeDZzVHhn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Can you guess the Premier League transfer? (Quiz) YouTube",
+          "published": "Thu, 16 Jul 2026 11:00:08 GMT"
+        },
+        {
+          "title": "Premier League 2025-26 review: signings of the season",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdW95RHdTb0luM3NMU1k4dW5PUzliVFlQbDRmM3VGcXctZjRuLXh4LVZFZ3ZCbHVNdXZ0NzNGdXFOaFNYemdBUnY0Q3hYTkQyUnMxQkROMEVoLWc5WkF4YXpTeTU5bW1RWWJJNEdhUkdMLWhsZnczOEo0dWZjTE9vR2FyUWdvdlQwaXlZMVJjWkpvZmlqaGxWZEI1dGN1OG9YRDlV?oc=5",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "Premier League 2025-26 review: signings of the season The Guardian",
+          "published": "Mon, 25 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Leeds fight back to draw 1-1 with Brentford in Premier League",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRS1QZFNKZy1HVlAwYnNzSjE4WDNQQm1Sck1pc3NNLVpMYUg5b1JTQ0lnLW1tX0RoSkUtMzNpQnhNTzZrZWhpM3dZOHZwXzJORlB3cUNJUnpaVDJyWDc3ckRHajhxc3hUWlc0V2V2ZU90OVZIbDFNZ0x0RURVZk9CX1RkWnJScnhMNG5iejVHTG5YNE54Y1Q4amVB?oc=5",
+          "publisher": "EPL Index",
+          "kind": "article",
+          "snippet": "Leeds fight back to draw 1-1 with Brentford in Premier League EPL Index",
+          "published": "Sun, 14 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Next Generation 2025: 20 of the best talents at Premier League clubs",
+          "url": "https://www.theguardian.com/football/ng-interactive/2025/oct/13/next-generation-2025-20-of-the-best-talents-at-premier-league-clubs",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "We pick the best youngsters at each club born between 1 September 2008 and 31 August 2009, an age band known as first-year scholars. Check the progress of our classes of 2024 | 2023 | 2022 | 2021 | 2020 … and go even further back . Here’s our 2025 world picks Continue reading...",
+          "published": "Mon, 13 Oct 2025 09:10:16 GMT"
+        },
+        {
+          "title": "Who should win Premier League Transfer of the Season Award 2025-26?",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTHY5NmoyY29VVEFPU0ozUEk3RDN6dC1oX1VtTGM2SWpRaVJUSGFOT09fSTRJNTdsT2xDX1pkakk2TnhQd0tGUzJscFFTblRrS1NoaXJPZnVQVkJXRzNGdWZWaVF1RUpSQXZ3X0ltUk5KN0hWbWxNc1RUSUtzVG1oQnNwMVNDazNXX2tJMDdMcHdRNVVJak8wT1NVOFR0ekxBeG5aLW9XWHBIN0VGd2c?oc=5",
+          "publisher": "Khel Now",
+          "kind": "article",
+          "snippet": "Who should win Premier League Transfer of the Season Award 2025-26? Khel Now",
+          "published": "Thu, 28 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League Injuries for Gameweek 28: Wirtz, Saka Among Possible Absentees",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNGU3RlFSNjZvT0lOUjdabHdMcEhIajQ0YjNwQWI4WXpMVkp6OTcwNjJHcUNKMTkwMGhUNkRLd0RoZXRidVRTVjRNT3B6N0FrMWlIVzZ3MU81UkFUNnpTdi1fa2h4Zkc4TEZDdV94dmNWQTh0RnNNVjNhRkl3Z3cyaFBtUmt0T2FkX0FDWUFMdzY0OTJWY0E?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Premier League Injuries for Gameweek 28: Wirtz, Saka Among Possible Absentees Sports Illustrated",
+          "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Which Premier League players have withdrawn through injury this international break?",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQanZOYW9ZLW45SVFEODlzZHdsdmYtcjd2QmR0ZEhNWEdRQTBxUm9yOERaNnpNUlZRaWJSS0RUTEFqTmJnTkVyR3VMNVY2WEpTekp1NlFxYjUwU3ZyUVl0Wi1mUWRBTHoyM2hwc1htdXlmMzNwcGpRUk5RVjJCUkRwMk10Q05seEktVThiWFVUVFozbDUxUExHdzRnRTRHSHlNcU9wbQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Which Premier League players have withdrawn through injury this international break? The New York Times",
+          "published": "Mon, 30 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Wrexham's Premier League Promotion Could Be Lost After Sheaf Knee Injury",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQbDFZTEZJMVdsRTFSRl9NRC00RUZiWjBuU1Q4YmFZSzdvTkZCbVNWRExyVkJPM3lHU25OSFUwLVVSVWpFUGY3aG1UdlBZSTc1M0s2X2M0eUQxRHNHZ2VsNHd3OUZlaDBRWG1XUklTemliVm1lbVZVQnJKbmRxOVdHSGh3M0psdlhnRWpVR0lNZklNWDUzRlJJSUFuTTdoNy1mNm9fdjFxWDJjVW1LVXE1ZmV1TDR2NEZEOXJRSTRWNTJWZjJvci13RS1PdGlYa2ZZbmdsN0p2RXJfS25qSXdtQ0h6UVBkNnI5c0HSAeoBQVVfeXFMTTFBamdSMWVLNEV3ZnBING5iRi1VWnhTeU8yNnlzemtlUW8wUXhka252b1VMV05GdUs1NmpIQWN4M1lUeDh1OUlKS1J1UFBkUl9qTXFESjNONTRiUlhsbld4ZFZXZkdCaFhnRlhHREN3SVZiLXE0MzVOb2E1Sk1jS1BTd2Q1UEIxenRMemY5WDdhbG5kSU4yUU1hMHFUVUppLUZwM0RydnBtdkhTd3RPdVBab0pZREg5NXZ4a1Vrckk0azF3ZGg0UE8xcnp1SVVGNUlDRTVmUkZ4YlhiQ1hRNjZweS1ndlM4YnRn?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "Wrexham's Premier League Promotion Could Be Lost After Sheaf Knee Injury FOX Sports",
+          "published": "Tue, 24 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Spurs handed injury boost as star named in Premier League squad",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRlhVVy1fbzJsMkx6OVdBTGtBVk9rZC10V3V5T052RUdXcXg5ekpNT0hIXy1pN3ppY002T2VWQjROcS1aZlBXYzNUMDY3cXRUUWZnaG9LQzdmTVowRzVqdnFuZUhBVlIwVDdjX2tRSFRLV0dFcVBkcWlkMW95ckM0V2k0MGU3bmZQd3RiUHBKVldKQWVGT21FZ1U5eS1KY18waE5sWGFCNlBlQ2V0UlE?oc=5",
+          "publisher": "London Evening Standard",
+          "kind": "article",
+          "snippet": "Spurs handed injury boost as star named in Premier League squad London Evening Standard",
+          "published": "Thu, 03 Sep 2026 17:59:01 GMT"
+        },
+        {
+          "title": "Premier League club 'regret' missing out on Leeds United star",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcFgxSFZqQV9VUm5DdWJ3WTFtMm5ZUTNOcUhWZnBvX3NuZXBSNzZqZmFEYm9aWTBnYkV2ZGZBc0ktZlI0SjhkRWJMVnNvaDM4YktzUGNJTkRNNDJFZVFpd3kycGxaR0dEZW1CQnZ3dWdNbzdIY3J3WWoyME5vUVIzd2VJX3k2UW9fTzZ4TUJOQk5RUWt4NUtBOUNiRExJTms?oc=5",
+          "publisher": "Yorkshire Post",
+          "kind": "article",
+          "snippet": "Premier League club 'regret' missing out on Leeds United star Yorkshire Post",
+          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Chelsea boss hails Leeds United pair ahead of Premier League clash",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPX1VjQ2ttd09IQnRKTWpkc3BVSkpBSWdYNGgycTJ0SUkzVXhzNWNiVG9CdHVUbXVaamFuN0V2alNKc1MwSTlRRF95aU5uY0xKQzRJb0VYVlZ6djFSUHo5dkVsb0NxV0E3dUdSVm9XY21mMkstZ2QwOWhvbHl6R3RNYUFCaXZNeDFfbVFSNXlTN0FxaGtjYUFaNW1KM2xhcTNRU2RHYWZFUzJNZEV4TVFWclBBdmZCNVNMbmhGUUU3eDN5dw?oc=5",
+          "publisher": "Yorkshire Post",
+          "kind": "article",
+          "snippet": "Chelsea boss hails Leeds United pair ahead of Premier League clash Yorkshire Post",
+          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Calvert-Lewin 2.0: Leeds could see £40m bid accepted to sign Premier League star",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPV2J2aElMSXpEZ1RFWFNhSzJwTnRGakpWLVljUzZZaHc4NmxpMmpjejEzNXpYUzJCd2JjUzZvVWgtVUNYWGh4aEJSVVlhU25Cbk5jNGVsN2h2MmRDbjZxTnYxNllva1NaMkl6UlFraHpObUJ1Q3dCazFaRENIdVgybllESktlbXRyRGpYOHk3bnlpWWd1aWZCeTRn?oc=5",
+          "publisher": "Football FanCast",
+          "kind": "article",
+          "snippet": "Calvert-Lewin 2.0: Leeds could see £40m bid accepted to sign Premier League star Football FanCast",
+          "published": "Fri, 01 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mount, Amad, Baleba: Man Utd Injury Updates vs Ipswich (Premier League)",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9CbTJ0TURzZDg0RXcxdlJndU8tdU56aEwwT3E4bWtpQVczRFVaU0U4RGswNnJBaDhkMVhDZG0td1lFTUFLa1dXeUdyX3JwOVRIME96QjdZQ1M2a25XMUhJSHk0WDU4VURRcFdVbkRaSVo4bDZ3YzFncU9Rc2xGSms?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Mount, Amad, Baleba: Man Utd Injury Updates vs Ipswich (Premier League) sports.yahoo.com",
+          "published": "Thu, 27 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Amad, Baleba, Mount: Man Utd Injury Updates vs Ipswich Town (Premier League)",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1IT0xlTU5pODA2ZUNsX1JfOXllY09tS2NnS2dUZjRtUVFFN2dQa09maVp3X2FjQ2traHNvQnRsWlFjWjIwR25qYmV0OV9QUVZGSjk0Sl9EcHRWUUhvSEhPbUU5Z0tFRkxRMDlmMnRuZEtCSGI4SzhFRjd1ZkNrc2s?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Amad, Baleba, Mount: Man Utd Injury Updates vs Ipswich Town (Premier League) sports.yahoo.com",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "he-ll-adapt-quicker-florian-wirtz-bradley-barcola-a6a71544",
       "slug": "he-ll-adapt-quicker-florian-wirtz-bradley-barcola-a6a71544",
       "sport": "soccer",
@@ -9543,180 +9900,14 @@
       ]
     },
     {
-      "id": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
-      "slug": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
-      "sport": "soccer",
-      "headline": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions",
-      "blurb": "Premier League club 'regret' missing out on Leeds United star Yorkshire Post",
-      "summary": "Dominic Calvert-Lewin: Premier League club 'regret' missing out on Leeds United star Yorkshire Post Chelsea boss hails Leeds United pair ahead of Premier League clash Yorkshire Post Calvert-Lewin 2.0: Leeds could see £40m bid accepted to sign Premier League star Football FanCast Aggregated from Yorkshire Post, Football FanCast, The Guardian, RotoWire, Yahoo Sports and 11 more.",
-      "category": "injury",
-      "published": "2025-10-13T09:10:16Z",
-      "updated": "2026-09-10T16:15:00Z",
-      "players": [
-        {
-          "key": "calvert lewin",
-          "name": "Dominic Calvert-Lewin",
-          "slug": "dominic-calvert-lewin",
-          "pos": "FWD",
-          "team": "LEE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "fined £10.75m by the Premier League",
-          "url": "https://www.theguardian.com/football/2026/mar/16/chelsea-fined-suspended-transfer-ban-historical-rule-breaking",
-          "publisher": "The Guardian",
-          "kind": "article",
-          "snippet": "",
-          "published": "Thu, 10 Sep 2026 06:00:18 GMT"
-        },
-        {
-          "title": "Premier League Injuries: Latest Injury News, Updates & Suspensions",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVFlsRkNUbUtNNWV4aXdQYk9oc0x4cHlGZ05YODY5NjBmVC1STENGQUpMN1ZncnVqVlJ2emhNeXhaaWdibUpVczU1R040djdNeDBvbUNHdEFIVEJjaFgxNGlaMDRTTzJVcVg5ajZCMlJXYV9PRjBRSUZpZkxFcm5KYnJtLUw4ODIwdENiNE9GLVZYa24xYWczems1N29uc3JUeENMcmk0c1NxS0pkZHc?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Premier League Injuries: Latest Injury News, Updates & Suspensions RotoWire",
-          "published": "Thu, 10 Sep 2026 16:15:00 GMT"
-        },
-        {
-          "title": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdmFEWC1WdUNHWXlsc2F4X2RoOW1YRS1tY1lBSGg0alF5emdhZmRmVjhHR0dNOFFMVnJXeC1KbDZPNWt3VHY5MHFlR0FRc2pGeEZjU1NFWU1zUFh3WGZNcmRwb2NlX19kNmZnSnQ4T1R1akl3YlFSenJBQWhtSVA2OXRsZ0czeGlj?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Premier League injury news for 2025-26 season: Latest injuries, club-by-club updates, suspensions Yahoo Sports",
-          "published": "Fri, 15 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Predicted line-ups for every Premier League team in Matchweek 33",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeU5XcW80aHV6bGIzclRxOEExZjNsUXBZQTFMYmJTUERNbWpBM29haTNZR2I0WnFoQzJ4VVkxb3lkV25FejRjZE11a1d6aE5NeU41dHBZbV9fOVhEUl92dmFVV0gtTENvcFZsUl9SUWs5bmFZdVdQek5rX1d0V0RhU0pNR1hHWXc1U3Itam9INE1Pem5Ld0tNOWhoNDBVRnVESnZqRUpvLVZYOFlGalpGTQ?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Predicted line-ups for every Premier League team in Matchweek 33 Premier League",
-          "published": "Fri, 17 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League Transfer Window Winners and Losers",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQkw5QlpGLWJPMjN1LWpoYWZtaG1Fckh5eXNxbXRkZ3lVenFKazF2bjRIMWJnWWJMV3pQZDRWblZFRW5fWFlGQnFfN3FBS0I0R0hvRjRqMEJXbmZRY0Q0ZUZIOGZPX2tQZU9ZalhZWlRuMEZGTUtjbDI5MGRvUU1DRkZDR2w0c0xSSU9PZnNjRlBfdEp1T2FsUw?oc=5",
-          "publisher": "Northern Iowan",
-          "kind": "article",
-          "snippet": "Premier League Transfer Window Winners and Losers Northern Iowan",
-          "published": "Wed, 09 Sep 2026 19:22:44 GMT"
-        },
-        {
-          "title": "Premier League Transfer Show https://t.co/l4ldqMlgbw",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1oUGdTWEdwRGV2MEk0U2EwaC0wZXU5eGpSOTJfNWQzcDZhb1hpVm9NcmVtSktNaFl1M19XVEVFbDE4WU1wZjNxNWI5ejhXT1BGZDFsellqWURKUXZLT25TZnZqTmc?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Premier League Transfer Show https://t.co/l4ldqMlgbw x.com",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Can you guess the Premier League transfer? (Quiz)",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5meng1QUNIRnJaTjJvajV2SFdsbkVxdG9UZjJCbUhxQi16ZFhMSWQ3eWpqRW5laXpDZlJEcFVDY29ERTQ1NVMxTXhMd2Jyc1RIeDZzVHhn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Can you guess the Premier League transfer? (Quiz) YouTube",
-          "published": "Thu, 16 Jul 2026 11:00:08 GMT"
-        },
-        {
-          "title": "Premier League 2025-26 review: signings of the season",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdW95RHdTb0luM3NMU1k4dW5PUzliVFlQbDRmM3VGcXctZjRuLXh4LVZFZ3ZCbHVNdXZ0NzNGdXFOaFNYemdBUnY0Q3hYTkQyUnMxQkROMEVoLWc5WkF4YXpTeTU5bW1RWWJJNEdhUkdMLWhsZnczOEo0dWZjTE9vR2FyUWdvdlQwaXlZMVJjWkpvZmlqaGxWZEI1dGN1OG9YRDlV?oc=5",
-          "publisher": "The Guardian",
-          "kind": "article",
-          "snippet": "Premier League 2025-26 review: signings of the season The Guardian",
-          "published": "Mon, 25 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Leeds fight back to draw 1-1 with Brentford in Premier League",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRS1QZFNKZy1HVlAwYnNzSjE4WDNQQm1Sck1pc3NNLVpMYUg5b1JTQ0lnLW1tX0RoSkUtMzNpQnhNTzZrZWhpM3dZOHZwXzJORlB3cUNJUnpaVDJyWDc3ckRHajhxc3hUWlc0V2V2ZU90OVZIbDFNZ0x0RURVZk9CX1RkWnJScnhMNG5iejVHTG5YNE54Y1Q4amVB?oc=5",
-          "publisher": "EPL Index",
-          "kind": "article",
-          "snippet": "Leeds fight back to draw 1-1 with Brentford in Premier League EPL Index",
-          "published": "Sun, 14 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Next Generation 2025: 20 of the best talents at Premier League clubs",
-          "url": "https://www.theguardian.com/football/ng-interactive/2025/oct/13/next-generation-2025-20-of-the-best-talents-at-premier-league-clubs",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "We pick the best youngsters at each club born between 1 September 2008 and 31 August 2009, an age band known as first-year scholars. Check the progress of our classes of 2024 | 2023 | 2022 | 2021 | 2020 … and go even further back . Here’s our 2025 world picks Continue reading...",
-          "published": "Mon, 13 Oct 2025 09:10:16 GMT"
-        },
-        {
-          "title": "Who should win Premier League Transfer of the Season Award 2025-26?",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTHY5NmoyY29VVEFPU0ozUEk3RDN6dC1oX1VtTGM2SWpRaVJUSGFOT09fSTRJNTdsT2xDX1pkakk2TnhQd0tGUzJscFFTblRrS1NoaXJPZnVQVkJXRzNGdWZWaVF1RUpSQXZ3X0ltUk5KN0hWbWxNc1RUSUtzVG1oQnNwMVNDazNXX2tJMDdMcHdRNVVJak8wT1NVOFR0ekxBeG5aLW9XWHBIN0VGd2c?oc=5",
-          "publisher": "Khel Now",
-          "kind": "article",
-          "snippet": "Who should win Premier League Transfer of the Season Award 2025-26? Khel Now",
-          "published": "Thu, 28 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League Injuries for Gameweek 28: Wirtz, Saka Among Possible Absentees",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNGU3RlFSNjZvT0lOUjdabHdMcEhIajQ0YjNwQWI4WXpMVkp6OTcwNjJHcUNKMTkwMGhUNkRLd0RoZXRidVRTVjRNT3B6N0FrMWlIVzZ3MU81UkFUNnpTdi1fa2h4Zkc4TEZDdV94dmNWQTh0RnNNVjNhRkl3Z3cyaFBtUmt0T2FkX0FDWUFMdzY0OTJWY0E?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Premier League Injuries for Gameweek 28: Wirtz, Saka Among Possible Absentees Sports Illustrated",
-          "published": "Fri, 27 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Which Premier League players have withdrawn through injury this international break?",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQanZOYW9ZLW45SVFEODlzZHdsdmYtcjd2QmR0ZEhNWEdRQTBxUm9yOERaNnpNUlZRaWJSS0RUTEFqTmJnTkVyR3VMNVY2WEpTekp1NlFxYjUwU3ZyUVl0Wi1mUWRBTHoyM2hwc1htdXlmMzNwcGpRUk5RVjJCUkRwMk10Q05seEktVThiWFVUVFozbDUxUExHdzRnRTRHSHlNcU9wbQ?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Which Premier League players have withdrawn through injury this international break? The New York Times",
-          "published": "Mon, 30 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Wrexham's Premier League Promotion Could Be Lost After Sheaf Knee Injury",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQbDFZTEZJMVdsRTFSRl9NRC00RUZiWjBuU1Q4YmFZSzdvTkZCbVNWRExyVkJPM3lHU25OSFUwLVVSVWpFUGY3aG1UdlBZSTc1M0s2X2M0eUQxRHNHZ2VsNHd3OUZlaDBRWG1XUklTemliVm1lbVZVQnJKbmRxOVdHSGh3M0psdlhnRWpVR0lNZklNWDUzRlJJSUFuTTdoNy1mNm9fdjFxWDJjVW1LVXE1ZmV1TDR2NEZEOXJRSTRWNTJWZjJvci13RS1PdGlYa2ZZbmdsN0p2RXJfS25qSXdtQ0h6UVBkNnI5c0HSAeoBQVVfeXFMTTFBamdSMWVLNEV3ZnBING5iRi1VWnhTeU8yNnlzemtlUW8wUXhka252b1VMV05GdUs1NmpIQWN4M1lUeDh1OUlKS1J1UFBkUl9qTXFESjNONTRiUlhsbld4ZFZXZkdCaFhnRlhHREN3SVZiLXE0MzVOb2E1Sk1jS1BTd2Q1UEIxenRMemY5WDdhbG5kSU4yUU1hMHFUVUppLUZwM0RydnBtdkhTd3RPdVBab0pZREg5NXZ4a1Vrckk0azF3ZGg0UE8xcnp1SVVGNUlDRTVmUkZ4YlhiQ1hRNjZweS1ndlM4YnRn?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "Wrexham's Premier League Promotion Could Be Lost After Sheaf Knee Injury FOX Sports",
-          "published": "Tue, 24 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Spurs handed injury boost as star named in Premier League squad",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRlhVVy1fbzJsMkx6OVdBTGtBVk9rZC10V3V5T052RUdXcXg5ekpNT0hIXy1pN3ppY002T2VWQjROcS1aZlBXYzNUMDY3cXRUUWZnaG9LQzdmTVowRzVqdnFuZUhBVlIwVDdjX2tRSFRLV0dFcVBkcWlkMW95ckM0V2k0MGU3bmZQd3RiUHBKVldKQWVGT21FZ1U5eS1KY18waE5sWGFCNlBlQ2V0UlE?oc=5",
-          "publisher": "London Evening Standard",
-          "kind": "article",
-          "snippet": "Spurs handed injury boost as star named in Premier League squad London Evening Standard",
-          "published": "Thu, 03 Sep 2026 17:59:01 GMT"
-        },
-        {
-          "title": "Premier League club 'regret' missing out on Leeds United star",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcFgxSFZqQV9VUm5DdWJ3WTFtMm5ZUTNOcUhWZnBvX3NuZXBSNzZqZmFEYm9aWTBnYkV2ZGZBc0ktZlI0SjhkRWJMVnNvaDM4YktzUGNJTkRNNDJFZVFpd3kycGxaR0dEZW1CQnZ3dWdNbzdIY3J3WWoyME5vUVIzd2VJX3k2UW9fTzZ4TUJOQk5RUWt4NUtBOUNiRExJTms?oc=5",
-          "publisher": "Yorkshire Post",
-          "kind": "article",
-          "snippet": "Premier League club 'regret' missing out on Leeds United star Yorkshire Post",
-          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Chelsea boss hails Leeds United pair ahead of Premier League clash",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPX1VjQ2ttd09IQnRKTWpkc3BVSkpBSWdYNGgycTJ0SUkzVXhzNWNiVG9CdHVUbXVaamFuN0V2alNKc1MwSTlRRF95aU5uY0xKQzRJb0VYVlZ6djFSUHo5dkVsb0NxV0E3dUdSVm9XY21mMkstZ2QwOWhvbHl6R3RNYUFCaXZNeDFfbVFSNXlTN0FxaGtjYUFaNW1KM2xhcTNRU2RHYWZFUzJNZEV4TVFWclBBdmZCNVNMbmhGUUU3eDN5dw?oc=5",
-          "publisher": "Yorkshire Post",
-          "kind": "article",
-          "snippet": "Chelsea boss hails Leeds United pair ahead of Premier League clash Yorkshire Post",
-          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Calvert-Lewin 2.0: Leeds could see £40m bid accepted to sign Premier League star",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPV2J2aElMSXpEZ1RFWFNhSzJwTnRGakpWLVljUzZZaHc4NmxpMmpjejEzNXpYUzJCd2JjUzZvVWgtVUNYWGh4aEJSVVlhU25Cbk5jNGVsN2h2MmRDbjZxTnYxNllva1NaMkl6UlFraHpObUJ1Q3dCazFaRENIdVgybllESktlbXRyRGpYOHk3bnlpWWd1aWZCeTRn?oc=5",
-          "publisher": "Football FanCast",
-          "kind": "article",
-          "snippet": "Calvert-Lewin 2.0: Leeds could see £40m bid accepted to sign Premier League star Football FanCast",
-          "published": "Fri, 01 May 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "here-s-way-49ers-rams-thursday-night-live-24fa8154",
       "slug": "here-s-way-49ers-rams-thursday-night-live-24fa8154",
       "sport": "soccer",
       "headline": "++[ＬＩＶＥＳｔｒｅａｍ]NOW!!] Thursday Night Football : Live stream, TV channel & start time for HS Football in 2026",
-      "blurb": "⚡️🎞️~ TODAY: Thursday Night Football LIVE | Watch on Hulu + Live TV Cal Poly Pomona",
-      "summary": "⚡️🎞️~ TODAY: Thursday Night Football LIVE | Watch on Hulu + Live TV Cal Poly Pomona Thursday Night Football 𝐋𝐈𝐕𝐄 World Cup 2526 Ｔｖ Ｃｈａｎｎｅｌ 29 July 26 Cal Poly Pomona [𝐒𝐓ream]HERE'S*!Best WAY TO WATCH Thursday Night Football 2026 Game LIVE 10/09/2026 Cal Poly Pomona Aggregated from Cal Poly Pomona, ESPN, cpp.edu.",
+      "blurb": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news espn.com",
+      "summary": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news espn.com Thursday Night Football 𝐋𝐈𝐕𝐄 World Cup 2526 Ｔｖ Ｃｈａｎｎｅｌ 29 July 26 Cal Poly Pomona [𝐒𝐓ream]HERE'S*!Best WAY TO WATCH Thursday Night Football 2026 Game LIVE 10/09/2026 Cal Poly Pomona Aggregated from espn.com, Cal Poly Pomona, ESPN, cpp.edu.",
       "category": "injury",
-      "published": "2026-05-03T07:00:00Z",
+      "published": "2026-03-22T07:00:00Z",
       "updated": "2026-09-11T01:22:28Z",
       "players": [],
       "sources": [
@@ -10295,6 +10486,51 @@
           "kind": "article",
           "snippet": "⚡️🎞️~ TODAY: Thursday Night Football LIVE | Watch on Hulu + Live TV Cal Poly Pomona",
           "published": "Fri, 11 Sep 2026 00:35:22 GMT"
+        },
+        {
+          "title": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLWR3M0d1RnFGXzA1QkEtamRyYjZUaWVsdFpwcEc5bVExUE9HYURoeHhYSE1SbFpTb2pGVFFhWnR2dVBWdEpsR0RNa2VIWUx5bDFyajFUV0NOb1JheFZyWlYxRERKZ1Z4VDF2RTRxX0E1aHEwYkhScUZLamx0X082dzllYlJtN3hEM1p5YnFaQXB2SWpxTVRpSnEtSWNRQmdveTNJclB5M0J2UllnNWhBY2dnVDRfWjkxcHFqNHdVSXhYZw?oc=5",
+          "publisher": "espn.com",
+          "kind": "article",
+          "snippet": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news espn.com",
+          "published": "Sun, 22 Mar 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "maresca-backs-anderson-kings-manchester-dig-derby-clash-50b1fc31",
+      "slug": "maresca-backs-anderson-kings-manchester-dig-derby-clash-50b1fc31",
+      "sport": "soccer",
+      "headline": "Maresca backs Anderson over ‘kings of Manchester’ dig before derby clash",
+      "blurb": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City…",
+      "summary": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City are the “ kings of Manchester ” as he prepares for his first derby in charge of the club. City travel to Old Trafford on Sunday seeking to continue their perfect start to life under Maresca and further prove Anderson’s point. The 23-year-old midfielder made his claim upon signing from Nottingham Forest for £116m in the summer and having from afar witnessed City win eight Premier League titles during the past 14 years, comp Board reading of Guardian Football.",
+      "category": "injury",
+      "published": "2026-09-11T11:02:07Z",
+      "updated": "2026-09-11T11:02:07Z",
+      "players": [
+        {
+          "key": "anderson",
+          "name": "Elliot Anderson",
+          "slug": "elliot-anderson",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "trafford",
+          "name": "James Trafford",
+          "slug": "james-trafford",
+          "pos": "GKP",
+          "team": "LEE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Maresca backs Anderson over ‘kings of Manchester’ dig before derby clash",
+          "url": "https://www.theguardian.com/football/2026/sep/11/maresca-backs-elliot-anderson-kings-of-manchester-derby",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City are the “ kings of Manchester ” as he prepares for his first derby in charge of the club. City travel to O",
+          "published": "Fri, 11 Sep 2026 11:02:07 GMT"
         }
       ]
     },
@@ -10537,43 +10773,6 @@
       ]
     },
     {
-      "id": "maresca-backs-anderson-kings-manchester-dig-derby-clash-50b1fc31",
-      "slug": "maresca-backs-anderson-kings-manchester-dig-derby-clash-50b1fc31",
-      "sport": "soccer",
-      "headline": "Maresca backs Anderson over ‘kings of Manchester’ dig before derby clash",
-      "blurb": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City…",
-      "summary": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City are the “ kings of Manchester ” as he prepares for his first derby in charge of the club. City travel to Old Trafford on Sunday seeking to continue their perfect start to life under Maresca and further prove Anderson’s point. The 23-year-old midfielder made his claim upon signing from Nottingham Forest for £116m in the summer and having from afar witnessed City win eight Premier League titles during the past 14 years, comp Board reading of Guardian Football.",
-      "category": "injury",
-      "published": "2026-09-11T11:02:07Z",
-      "updated": "2026-09-11T11:02:07Z",
-      "players": [
-        {
-          "key": "anderson",
-          "name": "Elliot Anderson",
-          "slug": "elliot-anderson",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "trafford",
-          "name": "James Trafford",
-          "slug": "james-trafford",
-          "pos": "GKP",
-          "team": "LEE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Maresca backs Anderson over ‘kings of Manchester’ dig before derby clash",
-          "url": "https://www.theguardian.com/football/2026/sep/11/maresca-backs-elliot-anderson-kings-of-manchester-derby",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City are the “ kings of Manchester ” as he prepares for his first derby in charge of the club. City travel to O",
-          "published": "Fri, 11 Sep 2026 11:02:07 GMT"
-        }
-      ]
-    },
-    {
       "id": "fpl-daily-injury-part-i-11-09-26-e0d5ed44",
       "slug": "fpl-daily-injury-part-i-11-09-26-e0d5ed44",
       "sport": "soccer",
@@ -10619,7 +10818,7 @@
       "summary": "Home Losses CONTINUE - Spurs 0-2 Newcastle Reaction YouTube Desk reading of The Guardian. Board reading of The Guardian. Aggregated from The Guardian, YouTube. Aggregated from The Guardian, YouTube.",
       "category": "wire",
       "published": "2017-05-15T11:00:43Z",
-      "updated": "2026-09-11T17:16:43Z",
+      "updated": "2026-09-11T19:00:13Z",
       "players": [],
       "sources": [
         {
@@ -14125,6 +14324,84 @@
           "kind": "article",
           "snippet": "",
           "published": "Fri, 11 Sep 2026 17:16:43 GMT"
+        },
+        {
+          "title": "Continue reading...",
+          "url": "https://www.theguardian.com/football/2026/sep/11/kobbie-mainoo-outsider-main-man-summer-of-hurt-derby",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Fri, 11 Sep 2026 19:00:12 GMT"
+        },
+        {
+          "title": "Continue reading...",
+          "url": "https://www.theguardian.com/football/2026/sep/11/ballon-dor-shortlist-shows-up-premier-leagues-attacking-failings-but-tide-could-be-turning",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Fri, 11 Sep 2026 19:00:13 GMT"
+        }
+      ]
+    },
+    {
+      "id": "delay-meals-mikel-arteta-reveals-maverick-arsenal-methods-9ba9e484",
+      "slug": "delay-meals-mikel-arteta-reveals-maverick-arsenal-methods-9ba9e484",
+      "sport": "soccer",
+      "headline": "‘Delay the meals’: Mikel Arteta reveals latest maverick Arsenal methods",
+      "blurb": "Mikel Arteta: I sabotage Arsenal players so they’re ready for anything The Times",
+      "summary": "Kai Havertz: Mikel Arteta: I sabotage Arsenal players so they’re ready for anything The Times Manager wants players to cope with things going wrong Other tactics include making dressing room even hotter Mikel Arteta has revealed that he likes to set players challenges, such as delaying their meals before matches and making the dressing room hotter, to ensure they are full Havertz is always 10 SECONDS AHEAD! Aggregated from The Times, Guardian Football, YouTube, BBC.",
+      "category": "coach",
+      "published": "2026-02-20T08:00:00Z",
+      "updated": "2026-09-11T13:17:30Z",
+      "players": [
+        {
+          "key": "havertz",
+          "name": "Kai Havertz",
+          "slug": "kai-havertz",
+          "pos": "FWD",
+          "team": "ARS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "‘Delay the meals’: Mikel Arteta reveals latest maverick Arsenal methods",
+          "url": "https://www.theguardian.com/football/2026/sep/11/mikel-arteta-maverick-arsenal-methods-player-challenges-delayed-meals",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Manager wants players to cope with things going wrong Other tactics include making dressing room even hotter Mikel Arteta has revealed that he likes to set players challenges, such as delaying their meals before matches and making the dressing room hotter, to ensure they are full",
+          "published": "Fri, 11 Sep 2026 10:04:37 GMT"
+        },
+        {
+          "title": "Havertz is always 10 SECONDS AHEAD! | Mikel Arteta | Sunderland v Arsenal",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSUXZ6dHRTcGQwTHJEdUFyVlRNbG5nQUhRTzNqNU5PQy1uWnVzRE1jd2FvX2hWOEZTQWFKOVVUSUhONndldDlxR1N4Ym9PVFBSNTBYVnR3?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Havertz is always 10 SECONDS AHEAD! | Mikel Arteta | Sunderland v Arsenal YouTube",
+          "published": "Fri, 11 Sep 2026 08:51:52 GMT"
+        },
+        {
+          "title": "Mikel Arteta press conference: Spurs v Arsenal",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wQVdQZmM0QzEybl84alRCWlpCMEYzbHRBSmc5dFR6R2JWV3NwcUhBdmpJYTdXaGhObWJZWUk3Z3BROEx1eVlZd1p4ZVJOWWhLLUpGc0pyN1VPTllOU1JQN1ljazB1WnM?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Mikel Arteta press conference: Spurs v Arsenal BBC",
+          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Mikel Arteta press conference: Crystal Palace vs Arsenal",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2ejZ0cldES2RHMVF3OVBwQ0tXN3kxdkI3MzZMT0lEYjZmRy1KMXFobGR5ZDduaXNtc0lBUEJ0bkpMM0VreTNhU2VVc1V4WDREbFU1Qk1oU1p6MG01N1FPODBmWVQ1Tk0?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Mikel Arteta press conference: Crystal Palace vs Arsenal BBC",
+          "published": "Thu, 21 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mikel Arteta: I sabotage Arsenal players so they’re ready for anything",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMy1hbm1CMWdqTVRfY3NYeDI4OGZpQ2Z1N09vVHhuTms1TEdjQWJBZ1VTOXFsbGltMWlRT1VtZk9sV0lJRUtaMXdoT2pCVkpvV0tYazZoQnk2VDl3Y29uRGdLX3M0cWJjWnYzQU1MbXRjbnJyS0x2S00yQXNlRnFYYnVMTW1fSk9zSjhqdEhKZ3R4VVRFTEhfTUc4eGIwRUlXWHdVTkFiNi1fZlk0RkpRRnFacw?oc=5",
+          "publisher": "The Times",
+          "kind": "article",
+          "snippet": "Mikel Arteta: I sabotage Arsenal players so they’re ready for anything The Times",
+          "published": "Fri, 11 Sep 2026 13:17:30 GMT"
         }
       ]
     },
@@ -14375,6 +14652,44 @@
           "kind": "x",
           "snippet": "KEY INJURY ROUND UP FOR FPL GAMEWEEK 4 🔴 Barcola/Gakpo Latest ⛴️ O’Reilly Latest 🛡️ Timber Return? 🔴 Shaw Injury? ⚫️ Dedic Latest Click link below for full summary of FPL relevant injuries. 👇 👇 https://t.co/nEVWTMdT6I x.com",
           "published": "Fri, 11 Sep 2026 15:20:49 GMT"
+        }
+      ]
+    },
+    {
+      "id": "lewis-hall-agrees-long-term-newcastle-deal-chelsea-2f18d5c3",
+      "slug": "lewis-hall-agrees-long-term-newcastle-deal-chelsea-2f18d5c3",
+      "sport": "soccer",
+      "headline": "Lewis Hall agrees long-term Newcastle deal, Chelsea buy-out close: football news",
+      "blurb": "Manchester United bans 685 fan accounts after a ticket touting investigation and insists innocent fans have not been punished.",
+      "summary": "Lewis Hall: Manchester United bans 685 fan accounts after a ticket touting investigation and insists innocent fans have not been punished. ⚽️ News and updates before the weekend’s football action ⚽️ Premier League: 10 things to watch out for | Mail Tom The French Football Federation’s president, Philippe Diallo, said Gianni Infantino had “seriously damaged the image and the unity of football” as he announced the end Aggregated from BBC Football, Guardian Football.",
+      "category": "injury",
+      "published": "2026-09-11T09:02:36Z",
+      "updated": "2026-09-11T15:09:39Z",
+      "players": [
+        {
+          "key": "hall",
+          "name": "Lewis Hall",
+          "slug": "lewis-hall",
+          "pos": "DEF",
+          "team": "NEW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lewis Hall agrees long-term Newcastle deal, Chelsea buy-out close: football news - live",
+          "url": "https://www.theguardian.com/football/live/2026/sep/11/football-news-live-champions-league-review-weekend-preview",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "⚽️ News and updates before the weekend’s football action ⚽️ Premier League: 10 things to watch out for | Mail Tom The French Football Federation’s president, Philippe Diallo, said Gianni Infantino had “seriously damaged the image and the unity of football” as he announced the end",
+          "published": "Fri, 11 Sep 2026 09:02:36 GMT"
+        },
+        {
+          "title": "Man Utd ban 685 fan accounts after ticket touting probe",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c1j4zydzk2zo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "Manchester United bans 685 fan accounts after a ticket touting investigation and insists innocent fans have not been punished.",
+          "published": "Fri, 11 Sep 2026 11:33:17 GMT"
         }
       ]
     },
@@ -15379,60 +15694,6 @@
       ]
     },
     {
-      "id": "delay-meals-mikel-arteta-reveals-maverick-arsenal-methods-9ba9e484",
-      "slug": "delay-meals-mikel-arteta-reveals-maverick-arsenal-methods-9ba9e484",
-      "sport": "soccer",
-      "headline": "‘Delay the meals’: Mikel Arteta reveals latest maverick Arsenal methods",
-      "blurb": "Mikel Arteta press conference: Crystal Palace vs Arsenal BBC",
-      "summary": "Kai Havertz: Mikel Arteta press conference: Crystal Palace vs Arsenal BBC Manager wants players to cope with things going wrong Other tactics include making dressing room even hotter Mikel Arteta has revealed that he likes to set players challenges, such as delaying their meals before matches and making the dressing room hotter, to ensure they are full Havertz is always 10 SECONDS AHEAD! Aggregated from BBC, Guardian Football, YouTube.",
-      "category": "coach",
-      "published": "2026-02-20T08:00:00Z",
-      "updated": "2026-09-11T10:04:37Z",
-      "players": [
-        {
-          "key": "havertz",
-          "name": "Kai Havertz",
-          "slug": "kai-havertz",
-          "pos": "FWD",
-          "team": "ARS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "‘Delay the meals’: Mikel Arteta reveals latest maverick Arsenal methods",
-          "url": "https://www.theguardian.com/football/2026/sep/11/mikel-arteta-maverick-arsenal-methods-player-challenges-delayed-meals",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Manager wants players to cope with things going wrong Other tactics include making dressing room even hotter Mikel Arteta has revealed that he likes to set players challenges, such as delaying their meals before matches and making the dressing room hotter, to ensure they are full",
-          "published": "Fri, 11 Sep 2026 10:04:37 GMT"
-        },
-        {
-          "title": "Havertz is always 10 SECONDS AHEAD! | Mikel Arteta | Sunderland v Arsenal",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSUXZ6dHRTcGQwTHJEdUFyVlRNbG5nQUhRTzNqNU5PQy1uWnVzRE1jd2FvX2hWOEZTQWFKOVVUSUhONndldDlxR1N4Ym9PVFBSNTBYVnR3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Havertz is always 10 SECONDS AHEAD! | Mikel Arteta | Sunderland v Arsenal YouTube",
-          "published": "Fri, 11 Sep 2026 08:51:52 GMT"
-        },
-        {
-          "title": "Mikel Arteta press conference: Spurs v Arsenal",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wQVdQZmM0QzEybl84alRCWlpCMEYzbHRBSmc5dFR6R2JWV3NwcUhBdmpJYTdXaGhObWJZWUk3Z3BROEx1eVlZd1p4ZVJOWWhLLUpGc0pyN1VPTllOU1JQN1ljazB1WnM?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Mikel Arteta press conference: Spurs v Arsenal BBC",
-          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Mikel Arteta press conference: Crystal Palace vs Arsenal",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2ejZ0cldES2RHMVF3OVBwQ0tXN3kxdkI3MzZMT0lEYjZmRy1KMXFobGR5ZDduaXNtc0lBUEJ0bkpMM0VreTNhU2VVc1V4WDREbFU1Qk1oU1p6MG01N1FPODBmWVQ1Tk0?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Mikel Arteta press conference: Crystal Palace vs Arsenal BBC",
-          "published": "Thu, 21 May 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "kiernan-dewsbury-hall-i-ve-seen-all-meltdowns-37abb999",
       "slug": "kiernan-dewsbury-hall-i-ve-seen-all-meltdowns-37abb999",
       "sport": "soccer",
@@ -15521,36 +15782,6 @@
           "kind": "article",
           "snippet": "Wildcard in Gameweek 4? How and when to use your FPL chips premierleague.com",
           "published": "Mon, 07 Sep 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "lewis-hall-agrees-long-term-newcastle-deal-chelsea-2f18d5c3",
-      "slug": "lewis-hall-agrees-long-term-newcastle-deal-chelsea-2f18d5c3",
-      "sport": "soccer",
-      "headline": "Manchester United ban 685 season-ticket holders over touting; Watford sign Antonio: football news - live",
-      "blurb": "⚽️ News and updates before the weekend’s football action ⚽️ Premier League: 10 things to watch out for | Mail John Matthias Jaissle revealed that summer signing Matias…",
-      "summary": "Lewis Hall: ⚽️ News and updates before the weekend’s football action ⚽️ Premier League: 10 things to watch out for | Mail John Matthias Jaissle revealed that summer signing Matias Fernandez-Pardo is edging closer to starting for Newcastle . The 21-year-old forward arrived on Tyneside from Lille on deadline day and has featured as a substitute in Newcastle’s last two matches. Speaking ahead of Monday’s clash with Leeds, Jaissle said: “Yeah, he’s getting closer. Board reading of Guardian Football.",
-      "category": "injury",
-      "published": "2026-09-11T09:02:36Z",
-      "updated": "2026-09-11T15:09:39Z",
-      "players": [
-        {
-          "key": "hall",
-          "name": "Lewis Hall",
-          "slug": "lewis-hall",
-          "pos": "DEF",
-          "team": "NEW"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Lewis Hall agrees long-term Newcastle deal, Chelsea buy-out close: football news - live",
-          "url": "https://www.theguardian.com/football/live/2026/sep/11/football-news-live-champions-league-review-weekend-preview",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "⚽️ News and updates before the weekend’s football action ⚽️ Premier League: 10 things to watch out for | Mail Tom The French Football Federation’s president, Philippe Diallo, said Gianni Infantino had “seriously damaged the image and the unity of football” as he announced the end",
-          "published": "Fri, 11 Sep 2026 09:02:36 GMT"
         }
       ]
     },
@@ -17142,43 +17373,6 @@
           "kind": "article",
           "snippet": "Transfer rumors, news: Could Brazil offer Richarlison a route out of Tottenham? ESPN",
           "published": "Fri, 11 Sep 2026 07:43:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "rogers-palmer-helping-each-other-thrive-157ecedd",
-      "slug": "rogers-palmer-helping-each-other-thrive-157ecedd",
-      "sport": "soccer",
-      "headline": "Rogers and Palmer helping each other thrive",
-      "blurb": "Rogers and Palmer helping each other thrive",
-      "summary": "Cole Palmer and Morgan Rogers: Rogers and Palmer helping each other thrive Board reading of Sky Sports Football.",
-      "category": "wire",
-      "published": "2026-09-11T07:26:46Z",
-      "updated": "2026-09-11T07:26:46Z",
-      "players": [
-        {
-          "key": "palmer",
-          "name": "Cole Palmer",
-          "slug": "cole-palmer",
-          "pos": "MID",
-          "team": "CHE"
-        },
-        {
-          "key": "rogers",
-          "name": "Morgan Rogers",
-          "slug": "morgan-rogers",
-          "pos": "MID",
-          "team": "CHE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Rogers and Palmer helping each other thrive",
-          "url": "https://www.skysports.com/football/news/12040/13584004/cole-palmer-and-morgan-rogers-becoming-one-of-premier-leagues-most-dangerous-double-acts-the-radar",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "",
-          "published": "Fri, 11 Sep 2026 08:00:00 BST"
         }
       ]
     }
