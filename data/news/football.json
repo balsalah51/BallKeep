@@ -1,25 +1,39 @@
 {
   "sport": "football",
-  "updated": "2026-09-11T21:23:41Z",
-  "fresh": 232,
+  "updated": "2026-09-11T22:24:23Z",
+  "fresh": 225,
   "stories": [
     {
       "id": "injury-1-implications-tua-tagovailoa-oblique-day-day-626da33d",
       "slug": "injury-1-implications-tua-tagovailoa-oblique-day-day-626da33d",
       "sport": "football",
       "headline": "Fantasy Football waiver wire impact of Tua Tagovailoa being ruled out and more from Week 1 injury report",
-      "blurb": "Fantasy Football waiver wire impact of Tua Tagovailoa being ruled out and more from Week 1 injury report CBS Sports",
-      "summary": "Fantasy Football waiver wire impact of Tua Tagovailoa being ruled out and more from Week 1 injury report CBS Sports From @GMFB: The latest on injuries to #49ers WR De'Zhaun Stribling, #Seahawks QB Sam Darnold, #Patriots WR AJ Brown, and #Falcons QB Tua Tagovailoa. Here's everything you need to know injury-wise for Week 1 of the NFL season. Aggregated from CBS Sports, x.com, Yahoo Sports, prizepicks.com, sports.yahoo.com and 9 more.",
+      "blurb": "practices fully on Wednesday",
+      "summary": "Michael Penix Jr., Tua Tagovailoa, Patrick Mahomes, De'Zhaun Stribling, Sam Darnold, Jeremiyah Love, Brock Bowers and Cooper Rush: practices fully on Wednesday Latest NFL News: Tua Tagovailoa exits practice with oblique injury, Patrick Mahomes update & MORE YouTube Here's everything you need to know injury-wise for Week 1 of the NFL season. Aggregated from SB Nation, YouTube, Yahoo Sports, prizepicks.com, sports.yahoo.com and 9 more.",
       "category": "injury",
       "published": "2026-09-08T15:42:33Z",
-      "updated": "2026-09-11T18:24:20Z",
+      "updated": "2026-09-11T22:10:37Z",
       "players": [
+        {
+          "key": "michael penix",
+          "name": "Michael Penix Jr.",
+          "slug": "michael-penix",
+          "pos": "QB",
+          "team": "ATL"
+        },
         {
           "key": "tua tagovailoa",
           "name": "Tua Tagovailoa",
           "slug": "tua-tagovailoa",
           "pos": "QB",
           "team": "ATL"
+        },
+        {
+          "key": "patrick mahomes",
+          "name": "Patrick Mahomes",
+          "slug": "patrick-mahomes",
+          "pos": "QB",
+          "team": "KC"
         },
         {
           "key": "dezhaun stribling",
@@ -48,13 +62,6 @@
           "slug": "brock-bowers",
           "pos": "TE",
           "team": "LV"
-        },
-        {
-          "key": "michael penix",
-          "name": "Michael Penix Jr.",
-          "slug": "michael-penix",
-          "pos": "QB",
-          "team": "ATL"
         },
         {
           "key": "cooper rush",
@@ -280,6 +287,22 @@
           "kind": "x",
           "snippet": "From @GMFB: The latest on injuries to #49ers WR De'Zhaun Stribling, #Seahawks QB Sam Darnold, #Patriots WR AJ Brown, and #Falcons QB Tua Tagovailoa. x.com",
           "published": "Fri, 11 Sep 2026 12:54:06 GMT"
+        },
+        {
+          "title": "Tua Tagovailoa ruled out for Sunday",
+          "url": "https://sports.yahoo.com/articles/tua-tagovailoa-ruled-sunday-221037084.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Falcons’ Michael Penix Jr. practices fully on Wednesday",
+          "published": "Fri, 11 Sep 2026 22:10:37 +0000"
+        },
+        {
+          "title": "Latest NFL News: Tua Tagovailoa exits practice with oblique injury, Patrick Mahomes update & MORE",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZR0N1bUJicnpLTUREU1BrV1BsS3hDaXR3ZHQyNlNVTHpMUkN3ZkpFVGowNVpFWDVDQzFXT3l2VzRhdGRhXzRrVVI3WFVURXIwOTlSaS1R?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Latest NFL News: Tua Tagovailoa exits practice with oblique injury, Patrick Mahomes update & MORE YouTube",
+          "published": "Fri, 11 Sep 2026 00:32:43 GMT"
         }
       ]
     },
@@ -2498,6 +2521,358 @@
       ]
     },
     {
+      "id": "keaton-mitchell-stays-limited-practice-24c2413a",
+      "slug": "keaton-mitchell-stays-limited-practice-24c2413a",
+      "sport": "football",
+      "headline": "Giants Receiver Malik Nabers Full Practice Participant as He Inches Closer Toward Return From Torn ACL",
+      "blurb": "The decision will be left to Nabers himself.",
+      "summary": "Malik Nabers, Jakobi Meyers and Keaton Mitchell: The decision will be left to Nabers himself. The #Giants list WR Malik Nabers as questionable for Sunday against the #Cowboys. John Harbaugh not saying anything definitive on Malik Nabers. Aggregated from SB Nation, x.com, RotoWire NFL, Yahoo Sports, Sports Illustrated and 4 more.",
+      "category": "injury",
+      "published": "2026-09-08T16:09:09Z",
+      "updated": "2026-09-11T21:47:39Z",
+      "players": [
+        {
+          "key": "malik nabers",
+          "name": "Malik Nabers",
+          "slug": "malik-nabers",
+          "pos": "WR",
+          "team": "NYG"
+        },
+        {
+          "key": "jakobi meyers",
+          "name": "Jakobi Meyers",
+          "slug": "jakobi-meyers",
+          "pos": "WR",
+          "team": "JAX"
+        },
+        {
+          "key": "keaton mitchell",
+          "name": "Keaton Mitchell",
+          "slug": "keaton-mitchell",
+          "pos": "RB",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Keaton Mitchell: Stays limited in practice",
+          "url": "https://www.rotowire.com//football/player/keaton-mitchell-16810",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Mitchell (hamstring) was a limited participant in Thursday's practice. Visit RotoWire.com for more analysis on this update.",
+          "published": "Thu, 10 Sep 2026 2:55:00 PM PDT"
+        },
+        {
+          "title": "Jakobi Meyers: Stays limited in practice",
+          "url": "https://www.rotowire.com//football/player/jakobi-meyers-13517",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Meyers (thumb) was a limited participant in Thursday's practice. Visit RotoWire.com for more analysis on this update.",
+          "published": "Thu, 10 Sep 2026 2:25:00 PM PDT"
+        },
+        {
+          "title": "Jaguars Get Positive Word on Jakobi Meyers Despite Week 1 Injury Report",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQV2lsNVZwT2pUb2x0TkhGYzI2TmJLU1pXU3NGMm5aMm9TQURib2M2VzJYT3c5ckZHSHh1NFE1MnlBdXprejJaVng1TzFkWmhfbU1ucTI3OEk1QjdmaUhuUUwzWWFKNUdhMWF2d0lYMDNlRXplUWxsR1VDanNWNFkyT2l3WDdRRU43bEpwSg?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Jaguars Get Positive Word on Jakobi Meyers Despite Week 1 Injury Report Yahoo Sports",
+          "published": "Thu, 10 Sep 2026 07:16:15 GMT"
+        },
+        {
+          "title": "Malik Nabers Injury Update: Fantasy Football Managers Get Positive Week 1 News",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUldEeDVKVk91QmdBWnY1b21XTElGTnJSMWg5NjdiR0N0aW0zSDRIUWtZc1Z6VGlCSzcxVjBSSklkS1dJaV9ybkRQY0ExUlpBV3J5UDRUUEtmaVEwS3NmeEx3cGRMOHZCVjVGN2Fyc2V2SGVyLU5ENmFTd1dNUGhtbExFd1JPLWdINDBMWDZJTU15TzZqRV9POHhRalE2UkNialVGaTJlaTB6elVpRkR4MkdsV1VoNXlIQXc?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Malik Nabers Injury Update: Fantasy Football Managers Get Positive Week 1 News Sports Illustrated",
+          "published": "Tue, 08 Sep 2026 16:09:09 GMT"
+        },
+        {
+          "title": "Malik Nabers Injury Update: Giants WR Expected To Play in Week 1",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcW10TVg4cjlWWU41YW5RUUtWamdKUEEwLV9uZnRpNTU1T1VCWmpVa1FHWXBYNmZORHhPR2FzaVN0T3M3Z092d1lzTGtZb0EzQUdILXBySnlWVWN3UWdSSHhaYm5MYlhqMG92WEg2bzB6MjFNRng2QnJuWmQ0bkM0QmJzTkg?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Malik Nabers Injury Update: Giants WR Expected To Play in Week 1 Yahoo Sports",
+          "published": "Tue, 08 Sep 2026 20:03:41 GMT"
+        },
+        {
+          "title": "Malik Nabers (knee) practices in full on Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZHd6VFFNVm5xcm42cHlRaWgwUy1GOExGUkU3UzQxQ3I0NnM3cmlpdzkxbjU4ekxEQ3pjWWdmU1dNYk1Eb3cxS0V4OHowMDlpWm4tRlUyTW9sVTFkckx6MlFuZXZMcTdwMWtaZ0I3cnh5bFNkNWJYTzRVQVc2M1R5ZDJ4Vk1BNlM1Zm5GZ3hOQVk3UUxERTJHY1BHTWRiS1NfNjl5OWhxaXl4ZEV2cXZQUkZBSjI?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Malik Nabers (knee) practices in full on Wednesday NBC Sports",
+          "published": "Wed, 09 Sep 2026 19:32:00 GMT"
+        },
+        {
+          "title": "Giants HC Reveals Major Injury Update on Malik Nabers For Week 1",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQY19wcks2ZU1DdDBLMmd5MkpOY3pMdk9NMGI3Qm93alI4YjdQeHhHN1Q2OE9OS0U4anZsTHd0VmctVV9BRkRJNUtsenY3VkctYTVpOElYQjdWYlpjNjJUS3dRblFiQWdkSkFLUVd1SHNyZDk2WFh3NURBTVQ1ZVdZQ1k3enBSSnlqeUlXTUtqbWV6WnVIbXM4YWFpSXNPTjYtanIwWFgxWnNTZjVmdEw5Ng?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Giants HC Reveals Major Injury Update on Malik Nabers For Week 1 roundtable.io",
+          "published": "Wed, 09 Sep 2026 23:00:41 GMT"
+        },
+        {
+          "title": "Giants Receiver Malik Nabers Full Practice Participant as He Inches Closer Toward Return From Torn ACL",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeVNfMktKODVZNVlfT2w4aFJicHBPVWR3NlBPMGF0eTA2QWNHRERVcTFXWDB2SzNleHJyZTNnM3lqajNDOEpEQmZUdDhpWTkwTU8waDRCWGlUNHlMdkJ4N0t1RUczNzJaSlF1RmpfV0F6VHdVaGNzVnRXMGUwdUp2Qkx2YTdreWlvWVhQNlRyQVViTnFERXU3c0tXaVI?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Giants Receiver Malik Nabers Full Practice Participant as He Inches Closer Toward Return From Torn ACL Sports Illustrated",
+          "published": "Wed, 09 Sep 2026 22:23:11 GMT"
+        },
+        {
+          "title": "Malik Nabers (knee) logs full practice Wednesday, likely to play Sunday",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPN1FWRDc0d1M3VFBORFBiRjQ3TU8xbHd1eUM3RVBINzFLbFZFcXNuUEpMd180NDlzWFZqWUlHYlBXR3dUZE0tVHU3dUNMTEhpbUd1NF9scHpaS2hIaWlNSXJDVnpEMEZTb29ubHd0Z011UFJGSm9JSmFMY1VwZ3plYXp6U3lmbnJLd0NLYUpzNmxUOURqOXVvT0ZCeXZQdGc5SGZMSVZDb1pLYjh0Qzdnd3R5VmhHZVnSAbwBQVVfeXFMUC14YkhBUlRMX2h6S2xWSllkbFF2X29xWkpmLUIxaUxna0tUN19JSVh3eHJHSnRTLUsxOUhEcmhwbGdkT1h1bVN2U0RabVZudzBIU3NMV3hJYk5zT2lPelhhRVJzQkQwMFN6amJGVld4Z0o2LVFVT2JWYUR6LUV6MGRhRDN3NkJVay1WLWItcVNCdUpqUEE4SGNkN3lVeW1pX280UmV5Wl9fUHU5Wm92THZ6ZUpCOXF6MHp3LTg?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Malik Nabers (knee) logs full practice Wednesday, likely to play Sunday FantasyPros",
+          "published": "Wed, 09 Sep 2026 19:46:51 GMT"
+        },
+        {
+          "title": "Malik Nabers (knee) seen practicing Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPS0xCWVJoanlSbWdzZGlEeFk2d3FkV1RxaVNpenRDbmJrT0x6WGJ0dl9DeUVfVm1xXzVSU2hnZGd6OGExbVAxMHFNWGFrZEtQQTJuY1dJV0VwQWFodW1HOWVTbmJaSnBSczVWb2dVaENXSE9wcnppdnNieHgzU2ZPbWR2elNWY0t5WkpWdm1GVWZ2Zll4alHSAZsBQVVfeXFMTnE4eHlKVDZNbF9rTUdLYUFUZUhKWkszbEpSeUVIRkZJYXdBV2g5X3c2VXRmWHZaTXM0SDlOd2FkWEtCLTRSUDQ5RURVYkdPLUZMakpJZlhxdXpLZ09tLUNBMndfZzUwYUZSanVib2xxVGVIRHBUcGR1bGlqRFlRWTdjUUhqM3NkeXN5NVpZZTVQbmdBRDhmX0VsRDA?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Malik Nabers (knee) seen practicing Wednesday FantasyPros",
+          "published": "Wed, 09 Sep 2026 17:56:08 GMT"
+        },
+        {
+          "title": "Malik Nabers (knee) logs full practice Wednesday, likely to play Sunday",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQbi03ZXZIbk5HSzZaZDR6aW5DbXE5TGNkSTE0WUZoTk1SQzJzV0djbGhSbnRmSl9xT3dMcTBwUlZDSmRBUk5ick9TT2h1aFhCSm1McXRvUHBncWI2c1NjZ0FnYkNTQ0tZaU5jSWVqcFluV3ZNZGd4R2xaZ1cyMjZLb1lVS2JyNG16TjlYd3dWSjZmaTBlbWFEYVB0SXZ0blhsT2JhWDY0aUtlRXRiMUpDNFd1S1prSDJuVW9qeWI0RHQ4MG04SFJnQkhXVU9rajhTMFVSdzk5emladXVYMV96dXk4b2Z2aUZUemhvWWJkbzbSAbwBQVVfeXFMUC14YkhBUlRMX2h6S2xWSllkbFF2X29xWkpmLUIxaUxna0tUN19JSVh3eHJHSnRTLUsxOUhEcmhwbGdkT1h1bVN2U0RabVZudzBIU3NMV3hJYk5zT2lPelhhRVJzQkQwMFN6amJGVld4Z0o2LVFVT2JWYUR6LUV6MGRhRDN3NkJVay1WLWItcVNCdUpqUEE4SGNkN3lVeW1pX280UmV5Wl9fUHU5Wm92THZ6ZUpCOXF6MHp3LTg?oc=5",
+          "publisher": "FantasyPros",
+          "kind": "article",
+          "snippet": "Malik Nabers (knee) logs full practice Wednesday, likely to play Sunday FantasyPros",
+          "published": "Wed, 09 Sep 2026 19:46:51 GMT"
+        },
+        {
+          "title": "Keaton Mitchell Off the Injury Report, Cleared for Week 1",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUGVZX0kyNjZVU2FhdDlGeWtQNlNWaGNPUDdueFBlenprLWZlRHpfV3ZHZXNoLUtkdGltc182bTQ3UmxhTDBmQnZENHhWMHZYUnZraVd6cXN0emJhN3VkeDkzT05kY2thU3EteGJwN1hqRGVJNDJIZDZ0ZDFlY1Z3WFM0YThJWjVlWjJUSGVVQkdnRG1WNUlmTWc3MEhNN3FZNVk0b1Z3?oc=5",
+          "publisher": "RotoBaller",
+          "kind": "article",
+          "snippet": "Keaton Mitchell Off the Injury Report, Cleared for Week 1 - NFL News | Fantasy Football RotoBaller",
+          "published": "Fri, 11 Sep 2026 20:37:06 GMT"
+        },
+        {
+          "title": "Keaton Mitchell (hamstring) not listed on injury report for Week 1.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1GckQ0bWtyU01rRVZZb2tXTGI3cU94TmVRbXkwUUpORTcwelhqTndGSXdFay1ERGNVZkVkeWl0MHBQZ0t2MzMtV0ZBTGtCZDhpWFpNMXVHcndRTnhMVnNJZ3RR?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Keaton Mitchell (hamstring) not listed on injury report for Week 1. x.com",
+          "published": "Fri, 11 Sep 2026 20:04:57 GMT"
+        },
+        {
+          "title": "Malik Nabers questionable for NY Giants vs. Cowboys on Sunday",
+          "url": "https://sports.yahoo.com/articles/malik-nabers-questionable-ny-giants-214739030.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The decision will be left to Nabers himself.",
+          "published": "Fri, 11 Sep 2026 21:47:39 +0000"
+        },
+        {
+          "title": "The #Giants list WR Malik Nabers as questionable for Sunday against the #Cowboys.",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBmUkxZWHZqMENZU1hFOUJ5V1p3emZ0SzhhSU1aMklfWVRRLVEwbXBKZDRxc2pSSFhVSnFmWF92V1NMZV9rVEpyUjdZdFdxelU1SGROSzJJdC1hZWJEVkE?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The #Giants list WR Malik Nabers as questionable for Sunday against the #Cowboys. x.com",
+          "published": "Fri, 11 Sep 2026 20:13:16 GMT"
+        },
+        {
+          "title": "John Harbaugh not saying anything definitive on Malik Nabers. He says Nabers will be on the final injury report but says we have to wait for the game designations to come out to find out his status He says today was a short and light practice so it wouldn’t be fa",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0wYWxJaTMwY29oRTN4UXVmcVJvdE10X3MxZUc4dUwtQTJ1eXBuSGpxaTZZYVJkQnlnRlZuU1YzMGV0Z3A5ZkdPaER5emtfS09tcWctNWl3UHQ3NXdMbGh6ak1KOA?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "John Harbaugh not saying anything definitive on Malik Nabers. He says Nabers will be on the final injury report but says we have to wait for the game designations to come out to find out his status He says today was a short and light practice so it wouldn’t be fa x.com",
+          "published": "Fri, 11 Sep 2026 17:24:55 GMT"
+        }
+      ]
+    },
+    {
+      "id": "injury-cheat-sheet-jeremiyah-love-jordyn-tyson-others-5edd6ad2",
+      "slug": "injury-cheat-sheet-jeremiyah-love-jordyn-tyson-others-5edd6ad2",
+      "sport": "football",
+      "headline": "Cardinals RB Jeremiyah Love reportedly expected to play in season opener after dealing with high-ankle sprain",
+      "blurb": "Patriots reportedly make IR decision on A.J.",
+      "summary": "Patriots reportedly make IR decision on A.J. Brown after latest injury update bolavip.com Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says Bozeman Daily Chronicle Aggregated from bolavip.com, Bozeman Daily Chronicle, Ottumwa Courier, Mankato Free Press, x.com and 10 more.",
+      "category": "injury",
+      "published": "2026-08-16T07:00:00Z",
+      "updated": "2026-09-11T21:17:57Z",
+      "players": [
+        {
+          "key": "a j brown",
+          "name": "A.J. Brown",
+          "slug": "a-j-brown",
+          "pos": "WR",
+          "team": "NE"
+        },
+        {
+          "key": "jeremiyah love",
+          "name": "Jeremiyah Love",
+          "slug": "jeremiyah-love",
+          "pos": "RB",
+          "team": "ARI"
+        },
+        {
+          "key": "jordyn tyson",
+          "name": "Jordyn Tyson",
+          "slug": "jordyn-tyson",
+          "pos": "WR",
+          "team": "NO"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cardinals news: Jeremiyah Love injury update gives Chargers another problem",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd0NlQXBOZlJ3MFdwd0ZLR3FvYUhyTE5yT21MUjBiM2FGQ3otcWxPRi1tV0lxeV9Pd0o1M3pieUEwQVB2SGRJLXlheUFiN1QxNGhtYmFKY0lwWVUwV205Q2d1T1lGT2pUcVlYMkJkcFBWckVhazVQSURvS2FtVmtDb1VTVEV2dzNRc1hTYlVR?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Cardinals news: Jeremiyah Love injury update gives Chargers another problem sports.yahoo.com",
+          "published": "Mon, 07 Sep 2026 23:56:32 GMT"
+        },
+        {
+          "title": "Fantasy Football Injury Cheat Sheet: Updates to Jeremiyah Love, Jordyn Tyson, Others",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdUxxY3Bncy1SY2Z2cXpSUkphZnVLbmh3NmptTUNScTh4bTlkOUdSYy1VQmNINDNIaFI5dElZMWNRYUtIRnVPcVo3ZFlqWVBBcjhBMnVYTHd1SjBScDhUY0pOdzhldG5YQ1hrVnJqaHRGdTlqT2xTaWU5c0dqY2lNLW96YTBzSVJZUHNmZ0E1VXhVVnQwbGFIR0tXMi1TYXZwR043dEw4LTN2TGx0SWVudQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Fantasy Football Injury Cheat Sheet: Updates to Jeremiyah Love, Jordyn Tyson, Others Sports Illustrated",
+          "published": "Wed, 19 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Jeremiyah Love Injury Update Emerges Ahead of Cardinals-Chargers Game",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOM0ZUNWdyNXMzVGNRUTR1dVBzTkdhM1ltYmtMbFhvVS1zWnR4dmJMaF8xWDZOblRsbDhZcmNaUUt2SG1nUDJzdzhSU2o2azlNeGQ1YzllMnNZOVQzUlpTbGhQT1ZNMG05OVd4S3gxaXFKWFMwQ211OUNraXgzS0Fkc0pzNnRXUWVLcUlKdjBUN0s2NVNEN24zWFh1MHVuUk9lODhCUENvVkIxc28?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Jeremiyah Love Injury Update Emerges Ahead of Cardinals-Chargers Game Athlon Sports",
+          "published": "Fri, 11 Sep 2026 15:20:09 GMT"
+        },
+        {
+          "title": "Jeremiyah Love Headlines Loaded Cardinals-Chargers Week 1 Injury Report",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMFBTa0xRXzU3ZW5jLUxPZFg1TlFPUkpNZU5oanFkNk4xa2FWZ2diSk9jMldzOHVHekhpLVFMTHVYRUdxa2JzRUNoMVltVmV4bGlFWWxqblowWWExVzNxYVJVYktkT05GTzk4ZzgzcFB3ZjQxS1dnb21PS3lpVUtqOXRneExHYlpNNTFSSEIxY25UcTN3?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Jeremiyah Love Headlines Loaded Cardinals-Chargers Week 1 Injury Report sports.yahoo.com",
+          "published": "Thu, 10 Sep 2026 01:44:00 GMT"
+        },
+        {
+          "title": "Cardinals’ Jeremiyah Love unsure about Week 1 status after ankle injury",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSTZMNzhxdXNzT19Td0pjTGlZU0hLMVJrdk5sTHBkZDJfQkwwa0FWSW5QRFRKaWxaZ0NBQ3pBQzJicVVvVmoyb2MtelM1V0lDNEY2ZnlSZGZQcmd6cG43ZXFZMU1CM1VwWWV6ZEllN0w4aUgtUjJ1ZmZUZElkUnNOZXBfUGFNY0VqQ0k1OXhLRVB3cVJsMTBiOHJiNUUyRzZiMkE5bzlZVHd0RjNmX0FCQzdfTzhtREV5aDdYZ3pnc0NEQ1J3cV9R?oc=5",
+          "publisher": "yardbarker.com",
+          "kind": "article",
+          "snippet": "Cardinals’ Jeremiyah Love unsure about Week 1 status after ankle injury yardbarker.com",
+          "published": "Thu, 10 Sep 2026 23:11:28 GMT"
+        },
+        {
+          "title": "Cardinals RB Jeremiyah Love limited in practice",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORXp3Y0FVcVhFNDRXTjNoUnFibzFXM0djVlJyQ0wycXJ0WFFHUTFaelhHV1pBWVZKWU43TjVsaXFKNEs2WFdaUzNsQ1FMa0d5dkRQLVlFMlViWmI2T005TU5DN1BCM0RJY3FKb2ZIQkZFbW1WN3M5MW1yNUk3WFAwVlItOEhQLUNxMjE0?oc=5",
+          "publisher": "WSAW",
+          "kind": "article",
+          "snippet": "Cardinals RB Jeremiyah Love limited in practice WSAW",
+          "published": "Thu, 10 Sep 2026 05:57:00 GMT"
+        },
+        {
+          "title": "Cardinals’ Jeremiyah Love unsure about Week 1 status after ankle injury",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYXNDTmJLaE16dVZvdUN0b2oyeFpMU3JMS3MwTmppQnBIT2lFdS1QYng2YWI2UmdibnpJWmI1MnVhUXAxX2VWMERTZnplaXFoOFpJQ2o0dlpvNzhyWUZueFlwcEdOLVpRVGN2TERNWHhFaml3blNfMnlOY2d4d21YaDRoX0FQOFh4V3A0RFl3?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Cardinals’ Jeremiyah Love unsure about Week 1 status after ankle injury Yahoo Sports",
+          "published": "Thu, 10 Sep 2026 23:04:47 GMT"
+        },
+        {
+          "title": "Deeper concern on injury to Cardinals' Jeremiyah Love, report says",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOenJQQm1UV1p2dE5aWG0zR043cDh0VWhFblNaanpfdjdmZVN5aGp3dnRQdHB6c1dPdHNrMXRIZm1aN0NETGtTYkNHb2w5WktCN3pGVzFYeUFaRXM1WE9UdE5qLWhKN3VmcHlndS1sRUF6ak5GbHhCNXhNSUE1dDJjRE0zTV9sSWxKT3BBY3JfWFZJa3Vq?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Deeper concern on injury to Cardinals' Jeremiyah Love, report says Yahoo Sports",
+          "published": "Sun, 16 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Cardinals RB Jeremiyah Love reportedly expected to play in season opener after dealing with high-ankle sprain",
+          "url": "https://sports.yahoo.com/nfl/article/cardinals-rb-jeremiyah-love-reportedly-expected-to-play-in-season-opener-after-dealing-with-high-ankle-sprain-181224740.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Love's poised to make his regular-season debut in Week 1 on the road against the Los Angeles Chargers.",
+          "published": "Fri, 11 Sep 2026 18:12:24 +0000"
+        },
+        {
+          "title": "Is Jeremiyah Love expected to play for the Cardinals in Week 1?",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQUMyQUNzdmpQcmYzc3pTeHcyM1RTYUZzQ1JzU2stZV9nZXpSZi13YkREQVFvdkNUQkxxSXNUVWh2bS04ZDQ4REVMQkhMNW42d0NmTjhad3hBbGpyYXhqVWR4RDFMR0lsYXl6R0RacHFOVWVjTXcyTThueVIzU3E5cA?oc=5",
+          "publisher": "Burn City Sports",
+          "kind": "article",
+          "snippet": "Is Jeremiyah Love expected to play for the Cardinals in Week 1? Burn City Sports",
+          "published": "Fri, 11 Sep 2026 17:24:27 GMT"
+        },
+        {
+          "title": "Patriots' A.J. Brown believed to have suffered high ankle sprain, expected to miss four weeks",
+          "url": "https://www.cbssports.com/nfl/news/patriots-a-j-brown-injures-ankle-ruled-out/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "Brown will have an MRI today to determine the severity of the injury",
+          "published": "Thu, 10 Sep 2026 23:58:23 +0000"
+        },
+        {
+          "title": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVk5xbjRyUVRubzBLT2RBN2ZwZXo0WmVHMURSNVh1MUlCSU40X1EzRmRfd011MHJDVWlpMUpJS3FNcFFMdi1BX0RVRmcyck5tcXdTUHdfNmROUFJUTzh4d2dpTjlMMzNackdPaFR3WVNydExObDBHVFpyQ3lSdk5LdG50UlRnS1FQaDUtekxzOA?oc=5",
+          "publisher": "Newsday",
+          "kind": "article",
+          "snippet": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says Newsday",
+          "published": "Fri, 11 Sep 2026 21:17:57 GMT"
+        },
+        {
+          "title": "A.J. Brown Expected To Be Out At Least Four Weeks With High-Ankle Sprain",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaHdXc1ZyV2RacURQTk5SdWVvNG9VTlVjNEx1LTVzR1JZemhqUV9EUTNBSjI1OW9VNXlvaDN1WjYzTzhOejdTMU1fWmhzem5sTURUT0xSUWctY2U1RmxzQy1FTDV0bG9OV2docHo2dTlmRmJPczJLeVFvMzFYU1A0T3RjeG5mUEFjZVNSQ0IwNlpQLVpaYk9YWTl1VzdKNTg?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "A.J. Brown Expected To Be Out At Least Four Weeks With High-Ankle Sprain NFLTradeRumors.co",
+          "published": "Thu, 10 Sep 2026 23:32:10 GMT"
+        },
+        {
+          "title": "Patriots WR A.J. Brown (ankle) is questionable to return vs. Seahawks https://t.co/7AqZWh4uGu",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5VMVJoTTNTMV90VG0xMFVuZjFWQnNpRlV3TG9Fb0E2VnRUWHBwOS1Bb0xZSDAyTXlsb3oxb2pYUTRkSkFBMWx5RWZQbUJSRXVtc0NLNEZPblNMYjI1R2h0OGFuZw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Patriots WR A.J. Brown (ankle) is questionable to return vs. Seahawks https://t.co/7AqZWh4uGu x.com",
+          "published": "Thu, 10 Sep 2026 02:11:45 GMT"
+        },
+        {
+          "title": "Patriots reportedly make IR decision on A.J. Brown after latest injury update",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSHRQV2JYNmZ2eGtaekJ5SzE4X2RfcU5aN3M0Sy1zd2FFTThtY2pLcFF3bGZkZkxhbG1vVzZ6LW5XaGN3SDJKcTlBN3N6QmM1NE50MXdRemJIaFhnVzFaUG1ENWdFQ3FhWkNyLXVsUWtwblpaaEdOdlRVR2NVeWIwenQtN1JyVmdLaFN3SDI1Uk9jVTJ0UDh1bDRSc2tXVHBMQ3JadlFn0gGrAUFVX3lxTE1DY3JvaktqenRpSUVPQVFzVHdaQkRuY3lKM0N6NHd0NlFlRUdiUkk2bkMxTzliLVo0ajVoUjduQ1VKWklodUVFcDhDUFJpMnZFNjBCczRqSHYxdXNqWU1NelR1b3dNR1Znck1JNldiWHVnWG1sWk92YVVUampiTVZhMFp1WjB4Q3R3eVFNdmJWUF9qVU1fMGJoZEpaMDZpck1XeHNVSWMzUzNUZw?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Patriots reportedly make IR decision on A.J. Brown after latest injury update bolavip.com",
+          "published": "Fri, 11 Sep 2026 20:57:59 GMT"
+        },
+        {
+          "title": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQQVJ6dFIxTmo3dEtHQ3dEZ1JDaDBTeHVJLTIzeVlJZ3Zfc29ReVRmazlvbWFzN2poSlItc21PZUhVeWltdWtWdXZsdG1HWkF0cXpxc0pmTW1PSFBMTWdhWVFfaEtOVnI3eXVBTHNRbmliRnFaa0lTUFFUTEF1MFVVX215TlNwRWhtcExJOGM0U243TnhGd09Ral8teTFVQnV3bGF5SzZveEFJSjdTV2hDcklxcHZxWk9nMk50RUprOE9uckFpQThwRWFoRUxnanVTaWNRbzR6X01wRUtBMWVOc2NPSW5GMzd1SV9TRkxBb3l3VFJRck9RemxGbzgyRU1mS2xFag?oc=5",
+          "publisher": "Bozeman Daily Chronicle",
+          "kind": "article",
+          "snippet": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says Bozeman Daily Chronicle",
+          "published": "Fri, 11 Sep 2026 21:16:14 GMT"
+        },
+        {
+          "title": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOUXNRd1c3Nm1aWW1MV0EweUxrWmVydTZFN2VuZVZMQTFLZDJDSDk4MnFvT0N4VHVOa0YzQW44VVVYbjRubXhkWXZqMXlwQWlTc2Z2RE5pUHYyOFBTb2s2dlVLTFA2V0hZWmstdmhSMzg0Y0U2MVFLUWwwRnpQb0FsV0I1M2Fsa1dDbU8zM1dxRU9LWlh6Y1hvTmFMQmE2S3JhVFp0VlItYk1jMVpPMGZjdGE2d3JnbUVRd09kOF9hcjlHeDJaQnZrb2hpeDJHWHJlUF83cDQ0NzhxcXg0ZkZ0ZGhXVElMcHJVZzRqWXFGRC0tcGZvbDdYcVpoa01fYV95ZUZLeGt0YUZTZw?oc=5",
+          "publisher": "Ottumwa Courier",
+          "kind": "article",
+          "snippet": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says Ottumwa Courier",
+          "published": "Fri, 11 Sep 2026 21:16:14 GMT"
+        },
+        {
+          "title": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPU1R5SUVwSTB6UkhVUW1FYUpsbjNDd2Y4ekRtUjY4dEdHRFpmRm1jdldWeEVYQkdYcjktNmd5NEI0ck5kZExYbGdSUWdpVXZBbDd6bm81QV9wWDdRZ193ZEtScFptWUJHVTRQMnFwbzVwMW4yYWotY21qRUh1dVFlYUNteGVfUTNka3JVVUJBMW96aHVwNkdpTThucGJCRTh0QVdHSEY0QzhNX3A5U0JJZnNLUTJMZFNiNTRrcVljNGpQVEEyVThicjZSQ0JGRXZJNTM3dzJvNTA4cEZZSzhwajBLMlBvWTN0R0xENGFSQ1dDNXNGSWhzX2tlOA?oc=5",
+          "publisher": "Mankato Free Press",
+          "kind": "article",
+          "snippet": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says Mankato Free Press",
+          "published": "Fri, 11 Sep 2026 21:16:14 GMT"
+        },
+        {
+          "title": "Question (via @JonesandKeefe): How does A.J. Brown going on IR change what you want to do on offense? Patriots OC Josh McDaniels: “Any injury that you get at this time of the season, you kind of approach it with an all-hands-on-deck approach. We got a l",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1sMWNMSjNnckx5WHFnZThGS1BtMTZhQS1HWXVERG9Nc09VTTdORm1fVjZWeG5xRnZEZU1rN1dBdlJTWnQzc3p6a3F3V1VWZ1c0ZXJvejlnUUpjR0F3eUx3?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Question (via @JonesandKeefe): How does A.J. Brown going on IR change what you want to do on offense? Patriots OC Josh McDaniels: “Any injury that you get at this time of the season, you kind of approach it with an all-hands-on-deck approach. We got a l x.com",
+          "published": "Fri, 11 Sep 2026 17:26:03 GMT"
+        }
+      ]
+    },
+    {
       "id": "49ers-injury-encouraging-christian-mccaffrey-nick-bosa-mike-64c786b3",
       "slug": "49ers-injury-encouraging-christian-mccaffrey-nick-bosa-mike-64c786b3",
       "sport": "football",
@@ -2937,12 +3312,19 @@
       "slug": "nfc-jeremiyah-love-terrance-ferguson-sam-darnold-cardinals-7491f16e",
       "sport": "football",
       "headline": "NFC Notes: Jeremiyah Love, Terrance Ferguson, Sam Darnold, Cardinals, Rams, Seahawks",
-      "blurb": "Cardinals RB Jeremiyah Love '50-50' For Week 1 ProFootballRumors.com",
-      "summary": "Cardinals RB Jeremiyah Love '50-50' For Week 1 ProFootballRumors.com NFC Notes: Jeremiyah Love, Terrance Ferguson, Sam Darnold, Cardinals, Rams, Seahawks NFLTradeRumors.co 🚨BREAKING Sam Darnold Injury News For The Seattle Seahawks YouTube Aggregated from ProFootballRumors.com, NFLTradeRumors.co, YouTube, Fantasy Footballers Podcast, Yahoo Sports and 8 more.",
+      "blurb": "NFC Notes: Jeremiyah Love, Terrance Ferguson, Sam Darnold, Cardinals, Rams, Seahawks NFLTradeRumors.co",
+      "summary": "NFC Notes: Jeremiyah Love, Terrance Ferguson, Sam Darnold, Cardinals, Rams, Seahawks NFLTradeRumors.co 🚨BREAKING Sam Darnold Injury News For The Seattle Seahawks YouTube Jeremiyah Love Stays limited at practice Fantasy Footballers Podcast Aggregated from NFLTradeRumors.co, YouTube, Fantasy Footballers Podcast, Yahoo Sports, FantasyPros and 8 more.",
       "category": "injury",
       "published": "2026-08-17T07:00:00Z",
       "updated": "2026-09-11T12:51:45Z",
       "players": [
+        {
+          "key": "terrance ferguson",
+          "name": "Terrance Ferguson",
+          "slug": "terrance-ferguson",
+          "pos": "TE",
+          "team": "LAR"
+        },
         {
           "key": "jeremiyah love",
           "name": "Jeremiyah Love",
@@ -2970,13 +3352,6 @@
           "slug": "patrick-mahomes",
           "pos": "QB",
           "team": "KC"
-        },
-        {
-          "key": "terrance ferguson",
-          "name": "Terrance Ferguson",
-          "slug": "terrance-ferguson",
-          "pos": "TE",
-          "team": "LAR"
         },
         {
           "key": "drew lock",
@@ -3138,294 +3513,6 @@
           "kind": "article",
           "snippet": "Cardinals RB Jeremiyah Love '50-50' For Week 1 ProFootballRumors.com",
           "published": "Wed, 02 Sep 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "injury-cheat-sheet-jeremiyah-love-jordyn-tyson-others-5edd6ad2",
-      "slug": "injury-cheat-sheet-jeremiyah-love-jordyn-tyson-others-5edd6ad2",
-      "sport": "football",
-      "headline": "Cardinals RB Jeremiyah Love reportedly expected to play in season opener after dealing with high-ankle sprain",
-      "blurb": "Brown will have an MRI today to determine the severity of the injury",
-      "summary": "A.J. Brown, Jeremiyah Love and Jordyn Tyson: Brown will have an MRI today to determine the severity of the injury Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says Newsday Brown Expected To Be Out At Least Four Weeks With High-Ankle Sprain NFLTradeRumors.co Aggregated from CBS NFL, Newsday, NFLTradeRumors.co, x.com, sports.yahoo.com and 6 more.",
-      "category": "injury",
-      "published": "2026-08-16T07:00:00Z",
-      "updated": "2026-09-11T21:17:57Z",
-      "players": [
-        {
-          "key": "a j brown",
-          "name": "A.J. Brown",
-          "slug": "a-j-brown",
-          "pos": "WR",
-          "team": "NE"
-        },
-        {
-          "key": "jeremiyah love",
-          "name": "Jeremiyah Love",
-          "slug": "jeremiyah-love",
-          "pos": "RB",
-          "team": "ARI"
-        },
-        {
-          "key": "jordyn tyson",
-          "name": "Jordyn Tyson",
-          "slug": "jordyn-tyson",
-          "pos": "WR",
-          "team": "NO"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Cardinals news: Jeremiyah Love injury update gives Chargers another problem",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd0NlQXBOZlJ3MFdwd0ZLR3FvYUhyTE5yT21MUjBiM2FGQ3otcWxPRi1tV0lxeV9Pd0o1M3pieUEwQVB2SGRJLXlheUFiN1QxNGhtYmFKY0lwWVUwV205Q2d1T1lGT2pUcVlYMkJkcFBWckVhazVQSURvS2FtVmtDb1VTVEV2dzNRc1hTYlVR?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Cardinals news: Jeremiyah Love injury update gives Chargers another problem sports.yahoo.com",
-          "published": "Mon, 07 Sep 2026 23:56:32 GMT"
-        },
-        {
-          "title": "Fantasy Football Injury Cheat Sheet: Updates to Jeremiyah Love, Jordyn Tyson, Others",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdUxxY3Bncy1SY2Z2cXpSUkphZnVLbmh3NmptTUNScTh4bTlkOUdSYy1VQmNINDNIaFI5dElZMWNRYUtIRnVPcVo3ZFlqWVBBcjhBMnVYTHd1SjBScDhUY0pOdzhldG5YQ1hrVnJqaHRGdTlqT2xTaWU5c0dqY2lNLW96YTBzSVJZUHNmZ0E1VXhVVnQwbGFIR0tXMi1TYXZwR043dEw4LTN2TGx0SWVudQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Fantasy Football Injury Cheat Sheet: Updates to Jeremiyah Love, Jordyn Tyson, Others Sports Illustrated",
-          "published": "Wed, 19 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Jeremiyah Love Injury Update Emerges Ahead of Cardinals-Chargers Game",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOM0ZUNWdyNXMzVGNRUTR1dVBzTkdhM1ltYmtMbFhvVS1zWnR4dmJMaF8xWDZOblRsbDhZcmNaUUt2SG1nUDJzdzhSU2o2azlNeGQ1YzllMnNZOVQzUlpTbGhQT1ZNMG05OVd4S3gxaXFKWFMwQ211OUNraXgzS0Fkc0pzNnRXUWVLcUlKdjBUN0s2NVNEN24zWFh1MHVuUk9lODhCUENvVkIxc28?oc=5",
-          "publisher": "Athlon Sports",
-          "kind": "article",
-          "snippet": "Jeremiyah Love Injury Update Emerges Ahead of Cardinals-Chargers Game Athlon Sports",
-          "published": "Fri, 11 Sep 2026 15:20:09 GMT"
-        },
-        {
-          "title": "Jeremiyah Love Headlines Loaded Cardinals-Chargers Week 1 Injury Report",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMFBTa0xRXzU3ZW5jLUxPZFg1TlFPUkpNZU5oanFkNk4xa2FWZ2diSk9jMldzOHVHekhpLVFMTHVYRUdxa2JzRUNoMVltVmV4bGlFWWxqblowWWExVzNxYVJVYktkT05GTzk4ZzgzcFB3ZjQxS1dnb21PS3lpVUtqOXRneExHYlpNNTFSSEIxY25UcTN3?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Jeremiyah Love Headlines Loaded Cardinals-Chargers Week 1 Injury Report sports.yahoo.com",
-          "published": "Thu, 10 Sep 2026 01:44:00 GMT"
-        },
-        {
-          "title": "Cardinals’ Jeremiyah Love unsure about Week 1 status after ankle injury",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSTZMNzhxdXNzT19Td0pjTGlZU0hLMVJrdk5sTHBkZDJfQkwwa0FWSW5QRFRKaWxaZ0NBQ3pBQzJicVVvVmoyb2MtelM1V0lDNEY2ZnlSZGZQcmd6cG43ZXFZMU1CM1VwWWV6ZEllN0w4aUgtUjJ1ZmZUZElkUnNOZXBfUGFNY0VqQ0k1OXhLRVB3cVJsMTBiOHJiNUUyRzZiMkE5bzlZVHd0RjNmX0FCQzdfTzhtREV5aDdYZ3pnc0NEQ1J3cV9R?oc=5",
-          "publisher": "yardbarker.com",
-          "kind": "article",
-          "snippet": "Cardinals’ Jeremiyah Love unsure about Week 1 status after ankle injury yardbarker.com",
-          "published": "Thu, 10 Sep 2026 23:11:28 GMT"
-        },
-        {
-          "title": "Cardinals RB Jeremiyah Love limited in practice",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORXp3Y0FVcVhFNDRXTjNoUnFibzFXM0djVlJyQ0wycXJ0WFFHUTFaelhHV1pBWVZKWU43TjVsaXFKNEs2WFdaUzNsQ1FMa0d5dkRQLVlFMlViWmI2T005TU5DN1BCM0RJY3FKb2ZIQkZFbW1WN3M5MW1yNUk3WFAwVlItOEhQLUNxMjE0?oc=5",
-          "publisher": "WSAW",
-          "kind": "article",
-          "snippet": "Cardinals RB Jeremiyah Love limited in practice WSAW",
-          "published": "Thu, 10 Sep 2026 05:57:00 GMT"
-        },
-        {
-          "title": "Cardinals’ Jeremiyah Love unsure about Week 1 status after ankle injury",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYXNDTmJLaE16dVZvdUN0b2oyeFpMU3JMS3MwTmppQnBIT2lFdS1QYng2YWI2UmdibnpJWmI1MnVhUXAxX2VWMERTZnplaXFoOFpJQ2o0dlpvNzhyWUZueFlwcEdOLVpRVGN2TERNWHhFaml3blNfMnlOY2d4d21YaDRoX0FQOFh4V3A0RFl3?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Cardinals’ Jeremiyah Love unsure about Week 1 status after ankle injury Yahoo Sports",
-          "published": "Thu, 10 Sep 2026 23:04:47 GMT"
-        },
-        {
-          "title": "Deeper concern on injury to Cardinals' Jeremiyah Love, report says",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOenJQQm1UV1p2dE5aWG0zR043cDh0VWhFblNaanpfdjdmZVN5aGp3dnRQdHB6c1dPdHNrMXRIZm1aN0NETGtTYkNHb2w5WktCN3pGVzFYeUFaRXM1WE9UdE5qLWhKN3VmcHlndS1sRUF6ak5GbHhCNXhNSUE1dDJjRE0zTV9sSWxKT3BBY3JfWFZJa3Vq?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Deeper concern on injury to Cardinals' Jeremiyah Love, report says Yahoo Sports",
-          "published": "Sun, 16 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cardinals RB Jeremiyah Love reportedly expected to play in season opener after dealing with high-ankle sprain",
-          "url": "https://sports.yahoo.com/nfl/article/cardinals-rb-jeremiyah-love-reportedly-expected-to-play-in-season-opener-after-dealing-with-high-ankle-sprain-181224740.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Love's poised to make his regular-season debut in Week 1 on the road against the Los Angeles Chargers.",
-          "published": "Fri, 11 Sep 2026 18:12:24 +0000"
-        },
-        {
-          "title": "Is Jeremiyah Love expected to play for the Cardinals in Week 1?",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQUMyQUNzdmpQcmYzc3pTeHcyM1RTYUZzQ1JzU2stZV9nZXpSZi13YkREQVFvdkNUQkxxSXNUVWh2bS04ZDQ4REVMQkhMNW42d0NmTjhad3hBbGpyYXhqVWR4RDFMR0lsYXl6R0RacHFOVWVjTXcyTThueVIzU3E5cA?oc=5",
-          "publisher": "Burn City Sports",
-          "kind": "article",
-          "snippet": "Is Jeremiyah Love expected to play for the Cardinals in Week 1? Burn City Sports",
-          "published": "Fri, 11 Sep 2026 17:24:27 GMT"
-        },
-        {
-          "title": "Patriots' A.J. Brown believed to have suffered high ankle sprain, expected to miss four weeks",
-          "url": "https://www.cbssports.com/nfl/news/patriots-a-j-brown-injures-ankle-ruled-out/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "Brown will have an MRI today to determine the severity of the injury",
-          "published": "Thu, 10 Sep 2026 23:58:23 +0000"
-        },
-        {
-          "title": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVk5xbjRyUVRubzBLT2RBN2ZwZXo0WmVHMURSNVh1MUlCSU40X1EzRmRfd011MHJDVWlpMUpJS3FNcFFMdi1BX0RVRmcyck5tcXdTUHdfNmROUFJUTzh4d2dpTjlMMzNackdPaFR3WVNydExObDBHVFpyQ3lSdk5LdG50UlRnS1FQaDUtekxzOA?oc=5",
-          "publisher": "Newsday",
-          "kind": "article",
-          "snippet": "A.J. Brown heading to injured reserve, will miss at least 4 weeks with ankle injury, AP source says Newsday",
-          "published": "Fri, 11 Sep 2026 21:17:57 GMT"
-        },
-        {
-          "title": "A.J. Brown Expected To Be Out At Least Four Weeks With High-Ankle Sprain",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaHdXc1ZyV2RacURQTk5SdWVvNG9VTlVjNEx1LTVzR1JZemhqUV9EUTNBSjI1OW9VNXlvaDN1WjYzTzhOejdTMU1fWmhzem5sTURUT0xSUWctY2U1RmxzQy1FTDV0bG9OV2docHo2dTlmRmJPczJLeVFvMzFYU1A0T3RjeG5mUEFjZVNSQ0IwNlpQLVpaYk9YWTl1VzdKNTg?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "A.J. Brown Expected To Be Out At Least Four Weeks With High-Ankle Sprain NFLTradeRumors.co",
-          "published": "Thu, 10 Sep 2026 23:32:10 GMT"
-        },
-        {
-          "title": "Patriots WR A.J. Brown (ankle) is questionable to return vs. Seahawks https://t.co/7AqZWh4uGu",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5VMVJoTTNTMV90VG0xMFVuZjFWQnNpRlV3TG9Fb0E2VnRUWHBwOS1Bb0xZSDAyTXlsb3oxb2pYUTRkSkFBMWx5RWZQbUJSRXVtc0NLNEZPblNMYjI1R2h0OGFuZw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Patriots WR A.J. Brown (ankle) is questionable to return vs. Seahawks https://t.co/7AqZWh4uGu x.com",
-          "published": "Thu, 10 Sep 2026 02:11:45 GMT"
-        }
-      ]
-    },
-    {
-      "id": "keaton-mitchell-stays-limited-practice-24c2413a",
-      "slug": "keaton-mitchell-stays-limited-practice-24c2413a",
-      "sport": "football",
-      "headline": "Giants Receiver Malik Nabers Full Practice Participant as He Inches Closer Toward Return From Torn ACL",
-      "blurb": "Jaguars Get Positive Word on Jakobi Meyers Despite Week 1 Injury Report Yahoo Sports",
-      "summary": "Jaguars Get Positive Word on Jakobi Meyers Despite Week 1 Injury Report Yahoo Sports Mitchell (hamstring) was a limited participant in Thursday's practice. Visit RotoWire.com for more analysis on this update. Aggregated from Yahoo Sports, RotoWire NFL, Sports Illustrated, NBC Sports, roundtable.io and 3 more.",
-      "category": "injury",
-      "published": "2026-09-08T16:09:09Z",
-      "updated": "2026-09-11T20:37:06Z",
-      "players": [
-        {
-          "key": "jakobi meyers",
-          "name": "Jakobi Meyers",
-          "slug": "jakobi-meyers",
-          "pos": "WR",
-          "team": "JAX"
-        },
-        {
-          "key": "keaton mitchell",
-          "name": "Keaton Mitchell",
-          "slug": "keaton-mitchell",
-          "pos": "RB",
-          "team": "LAC"
-        },
-        {
-          "key": "malik nabers",
-          "name": "Malik Nabers",
-          "slug": "malik-nabers",
-          "pos": "WR",
-          "team": "NYG"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Keaton Mitchell: Stays limited in practice",
-          "url": "https://www.rotowire.com//football/player/keaton-mitchell-16810",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Mitchell (hamstring) was a limited participant in Thursday's practice. Visit RotoWire.com for more analysis on this update.",
-          "published": "Thu, 10 Sep 2026 2:55:00 PM PDT"
-        },
-        {
-          "title": "Jakobi Meyers: Stays limited in practice",
-          "url": "https://www.rotowire.com//football/player/jakobi-meyers-13517",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Meyers (thumb) was a limited participant in Thursday's practice. Visit RotoWire.com for more analysis on this update.",
-          "published": "Thu, 10 Sep 2026 2:25:00 PM PDT"
-        },
-        {
-          "title": "Jaguars Get Positive Word on Jakobi Meyers Despite Week 1 Injury Report",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQV2lsNVZwT2pUb2x0TkhGYzI2TmJLU1pXU3NGMm5aMm9TQURib2M2VzJYT3c5ckZHSHh1NFE1MnlBdXprejJaVng1TzFkWmhfbU1ucTI3OEk1QjdmaUhuUUwzWWFKNUdhMWF2d0lYMDNlRXplUWxsR1VDanNWNFkyT2l3WDdRRU43bEpwSg?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Jaguars Get Positive Word on Jakobi Meyers Despite Week 1 Injury Report Yahoo Sports",
-          "published": "Thu, 10 Sep 2026 07:16:15 GMT"
-        },
-        {
-          "title": "Malik Nabers Injury Update: Fantasy Football Managers Get Positive Week 1 News",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUldEeDVKVk91QmdBWnY1b21XTElGTnJSMWg5NjdiR0N0aW0zSDRIUWtZc1Z6VGlCSzcxVjBSSklkS1dJaV9ybkRQY0ExUlpBV3J5UDRUUEtmaVEwS3NmeEx3cGRMOHZCVjVGN2Fyc2V2SGVyLU5ENmFTd1dNUGhtbExFd1JPLWdINDBMWDZJTU15TzZqRV9POHhRalE2UkNialVGaTJlaTB6elVpRkR4MkdsV1VoNXlIQXc?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Malik Nabers Injury Update: Fantasy Football Managers Get Positive Week 1 News Sports Illustrated",
-          "published": "Tue, 08 Sep 2026 16:09:09 GMT"
-        },
-        {
-          "title": "Malik Nabers Injury Update: Giants WR Expected To Play in Week 1",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcW10TVg4cjlWWU41YW5RUUtWamdKUEEwLV9uZnRpNTU1T1VCWmpVa1FHWXBYNmZORHhPR2FzaVN0T3M3Z092d1lzTGtZb0EzQUdILXBySnlWVWN3UWdSSHhaYm5MYlhqMG92WEg2bzB6MjFNRng2QnJuWmQ0bkM0QmJzTkg?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Malik Nabers Injury Update: Giants WR Expected To Play in Week 1 Yahoo Sports",
-          "published": "Tue, 08 Sep 2026 20:03:41 GMT"
-        },
-        {
-          "title": "Malik Nabers (knee) practices in full on Wednesday",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZHd6VFFNVm5xcm42cHlRaWgwUy1GOExGUkU3UzQxQ3I0NnM3cmlpdzkxbjU4ekxEQ3pjWWdmU1dNYk1Eb3cxS0V4OHowMDlpWm4tRlUyTW9sVTFkckx6MlFuZXZMcTdwMWtaZ0I3cnh5bFNkNWJYTzRVQVc2M1R5ZDJ4Vk1BNlM1Zm5GZ3hOQVk3UUxERTJHY1BHTWRiS1NfNjl5OWhxaXl4ZEV2cXZQUkZBSjI?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Malik Nabers (knee) practices in full on Wednesday NBC Sports",
-          "published": "Wed, 09 Sep 2026 19:32:00 GMT"
-        },
-        {
-          "title": "Giants HC Reveals Major Injury Update on Malik Nabers For Week 1",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQY19wcks2ZU1DdDBLMmd5MkpOY3pMdk9NMGI3Qm93alI4YjdQeHhHN1Q2OE9OS0U4anZsTHd0VmctVV9BRkRJNUtsenY3VkctYTVpOElYQjdWYlpjNjJUS3dRblFiQWdkSkFLUVd1SHNyZDk2WFh3NURBTVQ1ZVdZQ1k3enBSSnlqeUlXTUtqbWV6WnVIbXM4YWFpSXNPTjYtanIwWFgxWnNTZjVmdEw5Ng?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Giants HC Reveals Major Injury Update on Malik Nabers For Week 1 roundtable.io",
-          "published": "Wed, 09 Sep 2026 23:00:41 GMT"
-        },
-        {
-          "title": "Giants Receiver Malik Nabers Full Practice Participant as He Inches Closer Toward Return From Torn ACL",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeVNfMktKODVZNVlfT2w4aFJicHBPVWR3NlBPMGF0eTA2QWNHRERVcTFXWDB2SzNleHJyZTNnM3lqajNDOEpEQmZUdDhpWTkwTU8waDRCWGlUNHlMdkJ4N0t1RUczNzJaSlF1RmpfV0F6VHdVaGNzVnRXMGUwdUp2Qkx2YTdreWlvWVhQNlRyQVViTnFERXU3c0tXaVI?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Giants Receiver Malik Nabers Full Practice Participant as He Inches Closer Toward Return From Torn ACL Sports Illustrated",
-          "published": "Wed, 09 Sep 2026 22:23:11 GMT"
-        },
-        {
-          "title": "Malik Nabers (knee) logs full practice Wednesday, likely to play Sunday",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPN1FWRDc0d1M3VFBORFBiRjQ3TU8xbHd1eUM3RVBINzFLbFZFcXNuUEpMd180NDlzWFZqWUlHYlBXR3dUZE0tVHU3dUNMTEhpbUd1NF9scHpaS2hIaWlNSXJDVnpEMEZTb29ubHd0Z011UFJGSm9JSmFMY1VwZ3plYXp6U3lmbnJLd0NLYUpzNmxUOURqOXVvT0ZCeXZQdGc5SGZMSVZDb1pLYjh0Qzdnd3R5VmhHZVnSAbwBQVVfeXFMUC14YkhBUlRMX2h6S2xWSllkbFF2X29xWkpmLUIxaUxna0tUN19JSVh3eHJHSnRTLUsxOUhEcmhwbGdkT1h1bVN2U0RabVZudzBIU3NMV3hJYk5zT2lPelhhRVJzQkQwMFN6amJGVld4Z0o2LVFVT2JWYUR6LUV6MGRhRDN3NkJVay1WLWItcVNCdUpqUEE4SGNkN3lVeW1pX280UmV5Wl9fUHU5Wm92THZ6ZUpCOXF6MHp3LTg?oc=5",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "Malik Nabers (knee) logs full practice Wednesday, likely to play Sunday FantasyPros",
-          "published": "Wed, 09 Sep 2026 19:46:51 GMT"
-        },
-        {
-          "title": "Malik Nabers (knee) seen practicing Wednesday",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPS0xCWVJoanlSbWdzZGlEeFk2d3FkV1RxaVNpenRDbmJrT0x6WGJ0dl9DeUVfVm1xXzVSU2hnZGd6OGExbVAxMHFNWGFrZEtQQTJuY1dJV0VwQWFodW1HOWVTbmJaSnBSczVWb2dVaENXSE9wcnppdnNieHgzU2ZPbWR2elNWY0t5WkpWdm1GVWZ2Zll4alHSAZsBQVVfeXFMTnE4eHlKVDZNbF9rTUdLYUFUZUhKWkszbEpSeUVIRkZJYXdBV2g5X3c2VXRmWHZaTXM0SDlOd2FkWEtCLTRSUDQ5RURVYkdPLUZMakpJZlhxdXpLZ09tLUNBMndfZzUwYUZSanVib2xxVGVIRHBUcGR1bGlqRFlRWTdjUUhqM3NkeXN5NVpZZTVQbmdBRDhmX0VsRDA?oc=5",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "Malik Nabers (knee) seen practicing Wednesday FantasyPros",
-          "published": "Wed, 09 Sep 2026 17:56:08 GMT"
-        },
-        {
-          "title": "Malik Nabers (knee) logs full practice Wednesday, likely to play Sunday",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQbi03ZXZIbk5HSzZaZDR6aW5DbXE5TGNkSTE0WUZoTk1SQzJzV0djbGhSbnRmSl9xT3dMcTBwUlZDSmRBUk5ick9TT2h1aFhCSm1McXRvUHBncWI2c1NjZ0FnYkNTQ0tZaU5jSWVqcFluV3ZNZGd4R2xaZ1cyMjZLb1lVS2JyNG16TjlYd3dWSjZmaTBlbWFEYVB0SXZ0blhsT2JhWDY0aUtlRXRiMUpDNFd1S1prSDJuVW9qeWI0RHQ4MG04SFJnQkhXVU9rajhTMFVSdzk5emladXVYMV96dXk4b2Z2aUZUemhvWWJkbzbSAbwBQVVfeXFMUC14YkhBUlRMX2h6S2xWSllkbFF2X29xWkpmLUIxaUxna0tUN19JSVh3eHJHSnRTLUsxOUhEcmhwbGdkT1h1bVN2U0RabVZudzBIU3NMV3hJYk5zT2lPelhhRVJzQkQwMFN6amJGVld4Z0o2LVFVT2JWYUR6LUV6MGRhRDN3NkJVay1WLWItcVNCdUpqUEE4SGNkN3lVeW1pX280UmV5Wl9fUHU5Wm92THZ6ZUpCOXF6MHp3LTg?oc=5",
-          "publisher": "FantasyPros",
-          "kind": "article",
-          "snippet": "Malik Nabers (knee) logs full practice Wednesday, likely to play Sunday FantasyPros",
-          "published": "Wed, 09 Sep 2026 19:46:51 GMT"
-        },
-        {
-          "title": "Keaton Mitchell Off the Injury Report, Cleared for Week 1",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUGVZX0kyNjZVU2FhdDlGeWtQNlNWaGNPUDdueFBlenprLWZlRHpfV3ZHZXNoLUtkdGltc182bTQ3UmxhTDBmQnZENHhWMHZYUnZraVd6cXN0emJhN3VkeDkzT05kY2thU3EteGJwN1hqRGVJNDJIZDZ0ZDFlY1Z3WFM0YThJWjVlWjJUSGVVQkdnRG1WNUlmTWc3MEhNN3FZNVk0b1Z3?oc=5",
-          "publisher": "RotoBaller",
-          "kind": "article",
-          "snippet": "Keaton Mitchell Off the Injury Report, Cleared for Week 1 - NFL News | Fantasy Football RotoBaller",
-          "published": "Fri, 11 Sep 2026 20:37:06 GMT"
-        },
-        {
-          "title": "Keaton Mitchell (hamstring) not listed on injury report for Week 1.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1GckQ0bWtyU01rRVZZb2tXTGI3cU94TmVRbXkwUUpORTcwelhqTndGSXdFay1ERGNVZkVkeWl0MHBQZ0t2MzMtV0ZBTGtCZDhpWFpNMXVHcndRTnhMVnNJZ3RR?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Keaton Mitchell (hamstring) not listed on injury report for Week 1. x.com",
-          "published": "Fri, 11 Sep 2026 20:04:57 GMT"
         }
       ]
     },
@@ -5023,12 +5110,19 @@
       "slug": "sam-darnold-questionable-return-71d1a406",
       "sport": "football",
       "headline": "Sam Darnold Injury Update: What Happened to the Seahawks QB, and Will He Return vs. the Patriots in Week 1?",
-      "blurb": "Brown injury update is not great news for Patriots New York Post",
-      "summary": "A.J. Brown, DeMario Douglas, Romeo Doubs, Sam Darnold and Drake Maye: Brown injury update is not great news for Patriots New York Post Brown Injury Update For Fantasy Football: Add Romeo Doubs, DeMario Douglas Value & More FantasyLife 🚨Patriots Get BRUTAL Injury Update on AJ Brown... Aggregated from New York Post, FantasyLife, YouTube, RotoWire NFL, x.com and 14 more.",
+      "blurb": "Sam Darnold \"Expected To Miss Some Time\" With Hip Injury...",
+      "summary": "Sam Darnold \"Expected To Miss Some Time\" With Hip Injury... Darnold (hip) left Wednesday night's contest against the Patriots in the first quarter, Curtis Crabtree of Fox 13 Seattle reports. Visit RotoWire.com for more analysis on this update. Aggregated from YouTube, RotoWire NFL, x.com, NFLTradeRumors.co, Yahoo Sports and 14 more.",
       "category": "injury",
       "published": "2026-09-10T00:43:09Z",
       "updated": "2026-09-11T05:40:01Z",
       "players": [
+        {
+          "key": "sam darnold",
+          "name": "Sam Darnold",
+          "slug": "sam-darnold",
+          "pos": "QB",
+          "team": "SEA"
+        },
         {
           "key": "a j brown",
           "name": "A.J. Brown",
@@ -5049,13 +5143,6 @@
           "slug": "romeo-doubs",
           "pos": "WR",
           "team": "NE"
-        },
-        {
-          "key": "sam darnold",
-          "name": "Sam Darnold",
-          "slug": "sam-darnold",
-          "pos": "QB",
-          "team": "SEA"
         },
         {
           "key": "drake maye",
@@ -5709,25 +5796,25 @@
       "slug": "patrick-mahomes-goal-remains-play-chiefs-1-against-f0376547",
       "sport": "football",
       "headline": "‘You Can’t Fool Him’ - Eli Manning Warns NFL Teams as Patrick Mahomes Returns From Brutal Knee Injury for Week 1",
-      "blurb": "Here's your weekly dose of John Breech's NFL picks for every game as Seattle hosts a Super Bowl rematch and Patrick Mahomes returns from injury",
-      "summary": "Here's your weekly dose of John Breech's NFL picks for every game as Seattle hosts a Super Bowl rematch and Patrick Mahomes returns from injury The Miami Dolphins are underdogs heading into Week 1 at the Las Vegas Raiders - but they could pull off the upset. Our prop bet predictions are here. Aggregated from CBS NFL, SB Nation, CBS Sports, espn.com, prizepicks.com and 14 more.",
+      "blurb": "Sean Payton gives update on Bo Nix’s injury status yardbarker.com",
+      "summary": "Sean Payton gives update on Bo Nix’s injury status yardbarker.com Broncos coach Sean Payton pleased with Bo Nix's return from injury Broncos Wire Chiefs' Mahomes expects to play with no limitations in opener espn.com Aggregated from yardbarker.com, Broncos Wire, espn.com, prizepicks.com, FOX4KC.com and 16 more.",
       "category": "injury",
       "published": "2026-07-15T07:00:00Z",
       "updated": "2026-09-11T18:31:13Z",
       "players": [
-        {
-          "key": "patrick mahomes",
-          "name": "Patrick Mahomes",
-          "slug": "patrick-mahomes",
-          "pos": "QB",
-          "team": "KC"
-        },
         {
           "key": "bo nix",
           "name": "Bo Nix",
           "slug": "bo-nix",
           "pos": "QB",
           "team": "DEN"
+        },
+        {
+          "key": "patrick mahomes",
+          "name": "Patrick Mahomes",
+          "slug": "patrick-mahomes",
+          "pos": "QB",
+          "team": "KC"
         }
       ],
       "sources": [
@@ -6010,6 +6097,22 @@
           "kind": "article",
           "snippet": "NFL Week 1: Patrick Mahomes Returning From Injury Stream of National Football League CBS Sports",
           "published": "Fri, 11 Sep 2026 17:32:33 GMT"
+        },
+        {
+          "title": "Sean Payton gives update on Bo Nix’s injury status",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVEtUZ1E2S0tDazlVc0lJNjFBbUx4MW1JUDRMb0twQ3JGNUZ6bUZlbFdoUVNaMThjdEg4MjdTdVNEemtaaGgxZEtVcXZNTTJKSE9FbDhkcGI3WWMwSTBZcDFIR1ZEbVlIbDFqVTQ5OEdtU0JtYUNibUp6b1ZUOEplbFM5UExpOGRtOWd2YVdHXzc2ZkhYMV9QUF85aGVabXFtR2VWMGQ5NHJLUUU?oc=5",
+          "publisher": "yardbarker.com",
+          "kind": "article",
+          "snippet": "Sean Payton gives update on Bo Nix’s injury status yardbarker.com",
+          "published": "Fri, 11 Sep 2026 15:51:25 GMT"
+        },
+        {
+          "title": "Broncos coach Sean Payton pleased with Bo Nix's return from injury",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZkx0QzJxQjFBZ0M1eGlUVEFydzlaU0JIb1RsRmRTVDVBa3B1SjMxaV95VFpGSXhBQ001eU9CRHN1SEJPSFBPamN2djhvTWV4bVhfVzh4OEdJbTY5SVhSaDFPYzd0YkxBNXRzN1Bxejd1REM0ZDBzbldrRzZKT2xMVXpPM2NYc3RaMUNSTmlSckdyRzdvQl9jVGdJT1dmZ1l3N2otQVVOM1BJWVFTWHY5c2lONFp2dUFoel9NcHdLVlRhdw?oc=5",
+          "publisher": "Broncos Wire",
+          "kind": "article",
+          "snippet": "Broncos coach Sean Payton pleased with Bo Nix's return from injury Broncos Wire",
+          "published": "Sat, 01 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -7971,12 +8074,19 @@
       "slug": "ashton-jeanty-s-updated-injury-status-outlook-raiders-90326218",
       "sport": "football",
       "headline": "Ashton Jeanty's Updated Injury Status and Fantasy Outlook for Raiders vs. Dolphins in NFL Week 1",
-      "blurb": "#NFL Injury Updates #Cardinals Jeremiyah Love - LP.",
-      "summary": "#NFL Injury Updates #Cardinals Jeremiyah Love - LP. Data favors playing but w/dip in touches + efficiency. Typically lasts ~4 wks into return #Raiders Ashton Jeanty - FP. Aggregated from x.com, Yahoo Sports, Bleacher Report, Sports Illustrated, New York Post and 5 more.",
+      "blurb": "Updated Bo Nix Fantasy Outlook 2026: Can the Broncos QB Excel After Injury?",
+      "summary": "Updated Bo Nix Fantasy Outlook 2026: Can the Broncos QB Excel After Injury? Ashton Jeanty's Updated Injury Status and Fantasy Outlook for Raiders vs. Dolphins in NFL Week 1 Bleacher Report Aggregated from Yahoo Sports, Bleacher Report, Sports Illustrated, New York Post, A to Z Sports and 5 more.",
       "category": "injury",
       "published": "2026-08-23T07:00:00Z",
       "updated": "2026-09-10T21:22:00Z",
       "players": [
+        {
+          "key": "bo nix",
+          "name": "Bo Nix",
+          "slug": "bo-nix",
+          "pos": "QB",
+          "team": "DEN"
+        },
         {
           "key": "jeremiyah love",
           "name": "Jeremiyah Love",
@@ -8142,6 +8252,14 @@
           "kind": "article",
           "snippet": "Ashton Jeanty Injury Update: Latest on Raiders Star’s Status for Week 1 Matchup vs. Dolphins Yahoo Sports",
           "published": "Wed, 09 Sep 2026 18:52:26 GMT"
+        },
+        {
+          "title": "Updated Bo Nix Fantasy Outlook 2026: Can the Broncos QB Excel After Injury?",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZWs0MkRCZi1aeWM5Ykw4VFVJVGd3Ujc3NzRYNmcwN1RtMjBDY1pnSmVYZHlmc1pmbnNLSUhvUWl3RGk3RmlTSHBDZXhkWGlOVjVKYy1PajYzM19CVm56a2tfdVVzMmRCc0s5aGJheUxTb3pZM1FKU3dOeGs2QTVwbzBROE5TQQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Updated Bo Nix Fantasy Outlook 2026: Can the Broncos QB Excel After Injury? Yahoo Sports",
+          "published": "Sat, 29 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -8149,13 +8267,20 @@
       "id": "jonathon-brooks-practicing-pads-wednesday-00b9adf3",
       "slug": "jonathon-brooks-practicing-pads-wednesday-00b9adf3",
       "sport": "football",
-      "headline": "Raiders’ Brock Bowers injury update reveals recent surgery, timeline for return",
-      "blurb": "Raiders’ Brock Bowers expected to miss opener vs.",
-      "summary": "Raiders’ Brock Bowers expected to miss opener vs. Dolphins after surgery Las Vegas Review-Journal Brooks (general soreness) is in uniform and pads at Wednesday's practice, Mike Kaye of ESPN.com reports. Aggregated from Las Vegas Review-Journal, RotoWire NFL, ProFootball Talk on NBC Sports, PFT feed, Capital Gazette and 7 more.",
+      "headline": "Bo Nix Gives Injury Update, Broncos QB Reveals 2nd Surgery on Ankle and Talks Return Timeline",
+      "blurb": "Bo Nix Gives Injury Update, Broncos QB Reveals 2nd Surgery on Ankle and Talks Return Timeline Bleacher Report",
+      "summary": "Bo Nix Gives Injury Update, Broncos QB Reveals 2nd Surgery on Ankle and Talks Return Timeline Bleacher Report Bo Nix receives promising injury timeline before Broncos minicamp Ducks Wire Brooks (general soreness) is in uniform and pads at Wednesday's practice, Mike Kaye of ESPN.com reports. Aggregated from Bleacher Report, Ducks Wire, RotoWire NFL, ProFootball Talk on NBC Sports, PFT feed and 9 more.",
       "category": "injury",
-      "published": "2026-09-09T18:29:36Z",
+      "published": "2026-06-09T07:00:00Z",
       "updated": "2026-09-10T21:12:26Z",
       "players": [
+        {
+          "key": "bo nix",
+          "name": "Bo Nix",
+          "slug": "bo-nix",
+          "pos": "QB",
+          "team": "DEN"
+        },
         {
           "key": "brock bowers",
           "name": "Brock Bowers",
@@ -8305,6 +8430,22 @@
           "kind": "article",
           "snippet": "Raiders’ Brock Bowers expected to miss opener vs. Dolphins after surgery Las Vegas Review-Journal",
           "published": "Wed, 09 Sep 2026 20:15:00 GMT"
+        },
+        {
+          "title": "Bo Nix Gives Injury Update, Broncos QB Reveals 2nd Surgery on Ankle and Talks Return Timeline",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPb2ZjQWNxRUtxMTVteFRDY3ktSE5KMF83UXdJRGlLZGowWndWLUxEY1M0NWxFaFRTNm1yY2dvZ1pZMzlFUnhNRjdaNXd1VVpySklSbkk1cVU4T1JLdjZhRjhBV1hUQWdNVk9mYm50dlBPWnpoTDF4T05iLS10a2ZBT1FRajNDcjRRTmFUaW1ncmJlNVA1UWFqSVpMaW1KeGthUnZ4OFJ3Sk05VHBCMDdPRmgxUDh2MzQtT09zNFdVT2F2MnA2TndwYm0xTmpCbFU?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "Bo Nix Gives Injury Update, Broncos QB Reveals 2nd Surgery on Ankle and Talks Return Timeline Bleacher Report",
+          "published": "Wed, 17 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bo Nix receives promising injury timeline before Broncos minicamp",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNd3d4S0psY0lEQXpkR0tOd3cwVS1DclBpMDJVY2d6UDJvdElsVnZqZExlaE9fT1NUSTJHaHJuVlRGWUhYSWJPSXJaYllHOTlENndVX0xnbDcta3cteXhkN25hVW03MGhIbVh6R0k1cVMtR0tyUk5xcDlnNVNSbnFFNmhfLW1SbXdEU2Z3UjNicUJWNkpxWmhIV0k4NnVHVEZhUDZGdjFYRnI5bmZfNC1PXy1ZeTQ4bWRhbHB3Y05Na3g4Ymk1R3lMV1NSREY5OWQtSndqUnZpTk5ZdHM?oc=5",
+          "publisher": "Ducks Wire",
+          "kind": "article",
+          "snippet": "Bo Nix receives promising injury timeline before Broncos minicamp Ducks Wire",
+          "published": "Tue, 09 Jun 2026 07:00:00 GMT"
         }
       ]
     },
@@ -8822,6 +8963,100 @@
       ]
     },
     {
+      "id": "giants-predictions-2026-154e2bed",
+      "slug": "giants-predictions-2026-154e2bed",
+      "sport": "football",
+      "headline": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets",
+      "blurb": "What are your bold predictions for Sunday night?",
+      "summary": "Shedeur Sanders: What are your bold predictions for Sunday night? Cowboys at Giants Game Preview | NFL Week 1 Picks & Predictions YouTube Which one of these fantasy football predictions is most likely to come true? Aggregated from SB Nation, YouTube, Yahoo Sports, SNY, CBS NFL and 1 more.",
+      "category": "injury",
+      "published": "2026-09-10T16:04:01Z",
+      "updated": "2026-09-11T22:00:00Z",
+      "players": [
+        {
+          "key": "shedeur sanders",
+          "name": "Shedeur Sanders",
+          "slug": "shedeur-sanders",
+          "pos": "QB",
+          "team": "CLE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bold Fantasy Football Predictions for Week 1",
+          "url": "https://sports.yahoo.com/fantasy/article/bold-fantasy-football-predictions-for-week-1-152312670.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Which one of these fantasy football predictions is most likely to come true?",
+          "published": "Fri, 11 Sep 2026 15:23:12 +0000"
+        },
+        {
+          "title": "Giants game-by-game predictions for 2026 NFL season",
+          "url": "https://sports.yahoo.com/articles/giants-game-game-predictions-2026-133000142.html",
+          "publisher": "SNY",
+          "kind": "article",
+          "snippet": "How will things shake out for the Giants during the 2026 NFL season?",
+          "published": "Fri, 11 Sep 2026 13:30:00 +0000"
+        },
+        {
+          "title": "Jets game-by-game predictions for 2026 NFL season",
+          "url": "https://sports.yahoo.com/articles/jets-game-game-predictions-2026-132500788.html",
+          "publisher": "SNY",
+          "kind": "article",
+          "snippet": "How will the Jets' 2026 season shake out?",
+          "published": "Fri, 11 Sep 2026 13:25:00 +0000"
+        },
+        {
+          "title": "Cleveland Browns Injury News & BOLD Predictions For 2026 NFL Season Ft. Shedeur Sanders",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaYkdhT3NaQlFSaTRqT1kzUW83QTBPWG04ZFBNekFfMFExYnc3Q2tJcEtIbzE1NDV2dzlRdzlRMC1PT3JiQmo3VmlBcFJOZUx5TF92T3Bn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Cleveland Browns Injury News & BOLD Predictions For 2026 NFL Season Ft. Shedeur Sanders YouTube",
+          "published": "Thu, 10 Sep 2026 16:04:01 GMT"
+        },
+        {
+          "title": "NFL Week 1 picks, predictions: BBV staff split on Giants-Cowboys outcome",
+          "url": "https://sports.yahoo.com/articles/nfl-week-1-picks-predictions-140000406.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Here’s how the BBV staff sees Week 1 of the NFL season.",
+          "published": "Fri, 11 Sep 2026 14:00:00 +0000"
+        },
+        {
+          "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets",
+          "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-prophetx-vikings-packers-cowboys-giants-markets/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "SportsLine's advanced model has locked in its Week 1 NFL predictions from 10,000 simulations",
+          "published": "Fri, 11 Sep 2026 15:41:00 +0000"
+        },
+        {
+          "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbUFsZHBDMXV5N1dRUVJIQlZ2dEVWdXZUTGl1aHJzQUZGeEZuMXVwT0Y2Z1BweklDTEtGN0RocnpGZnJkSks0dDNXLWpYMFIzeG9keVVLNHZGSndISVhxOS0zTm5ad0pJTElvcUhVY1kyemlWM00xZXQzaWFJV1paYUVkRGNlQ3pQbUZsMDJmVVNsd1g5LVhWc2l2ZkIyNmNVM0FPVzJqWm1ESUhBX1Jsdml5R2RpMENteVhqV3F3SHQyakR0WWNSSFItcHNlVjhTd0ZF?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets CBS Sports",
+          "published": "Fri, 11 Sep 2026 15:41:00 GMT"
+        },
+        {
+          "title": "3 bold predictions for the Cowboys at Giants game",
+          "url": "https://sports.yahoo.com/articles/3-bold-predictions-cowboys-giants-220000060.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "What are your bold predictions for Sunday night?",
+          "published": "Fri, 11 Sep 2026 22:00:00 +0000"
+        },
+        {
+          "title": "Cowboys at Giants Game Preview | NFL Week 1 Picks & Predictions",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9BYW52WjBrZ2xyV2tmcVRjWFpzRjRDcnlqM2FzN0lVajJNclpTSVFGMmluM0NWbERibVp1ckQxZmJFOVhZU3NYNEJ6dlBoa3VWZGZuaDBR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Cowboys at Giants Game Preview | NFL Week 1 Picks & Predictions YouTube",
+          "published": "Fri, 11 Sep 2026 20:27:06 GMT"
+        }
+      ]
+    },
+    {
       "id": "nfc-harrison-smith-contract-d-andre-swift-roschon-da53caf6",
       "slug": "nfc-harrison-smith-contract-d-andre-swift-roschon-da53caf6",
       "sport": "football",
@@ -8925,6 +9160,167 @@
           "kind": "article",
           "snippet": "Vikings Receive Stern Justin Jefferson Warning Amid Uncertainty heavy.com",
           "published": "Tue, 06 Jan 2026 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "lamar-jackson-misses-thursday-practice-due-ankle-injury-dbaac44a",
+      "slug": "lamar-jackson-misses-thursday-practice-due-ankle-injury-dbaac44a",
+      "sport": "football",
+      "headline": "Where to watch Colts vs. Ravens: TV channel, live stream, prediction, pick, odds, spread",
+      "blurb": "Lamar Jackson and Daniel Jones look to bounce back from injury-plagued seasons",
+      "summary": "Lamar Jackson and Daniel Jones look to bounce back from injury-plagued seasons Week 1 Thursday practice report for the New York Jets Lamar Jackson Misses Thursday Practice Due to Ankle Injury Baltimore Ravens Aggregated from CBS NFL, USA TODAY Sports, Baltimore Ravens, NFL.com.",
+      "category": "injury",
+      "published": "2025-12-04T08:00:00Z",
+      "updated": "2026-09-11T12:12:21Z",
+      "players": [
+        {
+          "key": "lamar jackson",
+          "name": "Lamar Jackson",
+          "slug": "lamar-jackson",
+          "pos": "QB",
+          "team": "BAL"
+        },
+        {
+          "key": "daniel jones",
+          "name": "Daniel Jones",
+          "slug": "daniel-jones",
+          "pos": "QB",
+          "team": "IND"
+        },
+        {
+          "key": "justin herbert",
+          "name": "Justin Herbert",
+          "slug": "justin-herbert",
+          "pos": "QB",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Thursday practice report for Jets",
+          "url": "https://sports.yahoo.com/articles/thursday-practice-report-jets-015601996.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "Week 1 Thursday practice report for the New York Jets",
+          "published": "Fri, 11 Sep 2026 01:56:01 +0000"
+        },
+        {
+          "title": "Lamar Jackson Misses Thursday Practice Due to Ankle Injury",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMzUzWnhpLUpkeW1hZUpRUHFETmowdklMY3lxUzltTnA2N1NOXzdISWpVdkpNT09JYUJPWFBuLWthTlB6cEZ5N1RZUEFvRjhJOVo3ZHpmVGlOSUJGVGYtNUhDQ1VYU3U1eHMzSXNJYzk4UmRoOXBjaVY2dlN4RXJXX1NfczBiNXdVZF9idUdsZkh2d2pudmc?oc=5",
+          "publisher": "Baltimore Ravens",
+          "kind": "article",
+          "snippet": "Lamar Jackson Misses Thursday Practice Due to Ankle Injury Baltimore Ravens",
+          "published": "Thu, 04 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "NFL news roundup: Lamar Jackson (ankle) sits out practice; Justin Herbert (hand) limited",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdTBnbl85SjZIWjVVMTc2UFRON3dqU2ZjMmdiWkNFR3ExeGRISnBiaW9ZSzd5Zk9RZlFvOTRSN3gwRVh3U2lsTlRUSkgyV2RPRzRoeGtwNm1PNmE2SHhET2pFdk1LQWFmLW9yY1FiaURZdUx1dXFKejhkai1XblVGLTZNZUU3amRWNlBR?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "NFL news roundup: Lamar Jackson (ankle) sits out practice; Justin Herbert (hand) limited NFL.com",
+          "published": "Thu, 04 Dec 2025 18:46:53 GMT"
+        },
+        {
+          "title": "Where to watch Colts vs. Ravens: TV channel, live stream, prediction, pick, odds, spread",
+          "url": "https://www.cbssports.com/nfl/news/where-to-watch-colts-vs-ravens-stream-picks-odds/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "Lamar Jackson and Daniel Jones look to bounce back from injury-plagued seasons",
+          "published": "Fri, 11 Sep 2026 12:12:21 +0000"
+        }
+      ]
+    },
+    {
+      "id": "ny-giants-receive-another-positive-malik-nabers-injury-324603ba",
+      "slug": "ny-giants-receive-another-positive-malik-nabers-injury-324603ba",
+      "sport": "football",
+      "headline": "NY Giants receive another positive Malik Nabers’ injury update for Week 1 game vs Cowboys",
+      "blurb": "New York Giants headlines for Friday.",
+      "summary": "Malik Nabers and Jaxson Dart: New York Giants headlines for Friday. Malik Nabers' Updated Injury Status, Fantasy Outlook for Giants vs. Cowboys Week 1 Bleacher Report Aggregated from SB Nation, Bleacher Report, bolavip.com, Bergen Record, dailyrecord.com and 1 more.",
+      "category": "injury",
+      "published": "2026-09-01T07:00:00Z",
+      "updated": "2026-09-11T10:00:00Z",
+      "players": [
+        {
+          "key": "malik nabers",
+          "name": "Malik Nabers",
+          "slug": "malik-nabers",
+          "pos": "WR",
+          "team": "NYG"
+        },
+        {
+          "key": "jaxson dart",
+          "name": "Jaxson Dart",
+          "slug": "jaxson-dart",
+          "pos": "QB",
+          "team": "NYG"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Giants news: Malik Nabers’ startus, C.J. Okoye, Jaxson Dart, more",
+          "url": "https://sports.yahoo.com/articles/giants-news-malik-nabers-startus-100000958.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "New York Giants headlines for Friday.",
+          "published": "Fri, 11 Sep 2026 10:00:00 +0000"
+        },
+        {
+          "title": "Malik Nabers' Updated Injury Status, Fantasy Outlook for Giants vs. Cowboys Week 1",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaTZzek5LMDQ4X213cXFsbnBWenJuVTJaeXZYQ2tTc0ZhcE85UnZCLTQ1RG5lcDJqRzRlNVAzQndsTGdEUFFiSzRlV0N4aF8wTjJtZVk2TU16RExfWmUyMDgxamk0X1RwWHZhUHBRN1E4T3VEY0RCRGpCTGxCa2k1VUxDcl9lSWdYWDhDY3Z2XzZmX3ZIcmN5eVpna1NhNmhTczZYN1pLQ0pMSWNtTXFNazVqdW1TdE9xWmNwag?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "Malik Nabers' Updated Injury Status, Fantasy Outlook for Giants vs. Cowboys Week 1 Bleacher Report",
+          "published": "Wed, 09 Sep 2026 21:51:49 GMT"
+        },
+        {
+          "title": "NY Giants receive another positive Malik Nabers’ injury update for Week 1 game vs Cowboys",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWXVJMk04QktWQXlHZzJjMWI1ZG1XWkRka1BhZUhRTnhZN3BSYWNUeXRvbVFySlh0YzF2NTJ4QnZtSEFzVGhUU3d2MFFxU2kzS05iWm1ZMlQwREhvc2J5Q1R4bmxoMkQyX01jSmNhNjY2Y1MwSjRNZk1HVEFPTGtwWjE5c1NwTVFiY0pfUTgyT1hGSjZfSXl0S3I5UUJMYzBubFF3VXRLV0tKUnNKX1NJbGpoNTEyd9IBuwFBVV95cUxPMGx3MjNQSi1HMWx6WjNyWHNQc2hHdHhxcWczT3JBQkZmTEQwc25iMzhhQU5iSVkzNnNLbXQ3NmxoS19sdnJGZzRSYzhrMTNMNmhmSXlsTEFMalN2cjN1Y1FVWHo0Q3h0WDQ4Qjk4R3hXdlIyZHBYcXpWdzdEV0w1MTlYZ1F1SExwMVA5OXVUbEt3aUxsSU10MmE4ekpWanRpcmQtd2VVc1I2c3hjVl9GZk1yOHRpWW9scG5z?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "NY Giants receive another positive Malik Nabers’ injury update for Week 1 game vs Cowboys bolavip.com",
+          "published": "Wed, 09 Sep 2026 14:24:43 GMT"
+        },
+        {
+          "title": "Giants vs Cowboys injury update: Malik Nabers' status will get clearer",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRDEwcHRubFdYS05OTlJZY19La1daYnlnN3dFQXNkdS1fbDRIZDlLMTF5LVp1NnpaYzVrcjNpb2gyakFkM01NV0JzT3dFWDZ3NldqbzktS2tXZXpvWEM2VnpIX19hUjB5WUFTVWpMVXZibE9rbU5FR1hXV0xxU1hrWFFaTTdDQ2NacVU5UHFnRG1UYXI1NzhVQUx5b1F1S3pnUkhLTUdFV0xtX21WNHhVNTFQczIyb3lTQ0lCUGluOWtySzdhSVRQSUtIdXkyTmM?oc=5",
+          "publisher": "Bergen Record",
+          "kind": "article",
+          "snippet": "Giants vs Cowboys injury update: Malik Nabers' status will get clearer Bergen Record",
+          "published": "Wed, 09 Sep 2026 20:36:00 GMT"
+        },
+        {
+          "title": "Giants vs Cowboys injury update: Malik Nabers' status will get clearer",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM0JXM2xFLUFtaU9seVZZWkhPMUtMeDdVSGZBSzNBRDBJeTRBT09mcWhLV1RRSjNKTzFqc2N5cEdDSi02a0xwUEZQeHJUVTNmbFB4ckU5dFd0clpTeXpsRlRXTWlpSGtES0tOMkNjdGtpUHViY0NpcF8tVmlRc0JONEtONThsa0FKT3ExdnV2ZDZYbjhmMGJ1RjVPYXNxSVZGSTU5VVhnTXFMSTRmbUVYVHZ5dS1qd2RScC1nRDNndmE5a0tHVERsWXVZX3cycmc?oc=5",
+          "publisher": "dailyrecord.com",
+          "kind": "article",
+          "snippet": "Giants vs Cowboys injury update: Malik Nabers' status will get clearer dailyrecord.com",
+          "published": "Wed, 09 Sep 2026 16:49:00 GMT"
+        },
+        {
+          "title": "NY Giants confirm major Malik Nabers’ injury update ahead of Week 1 game vs Cowboys",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQM3ZRWVRRS2I1RVZobERJajhLT0JZYzZQN2VVeFBfNTRtWi1PdlI0REI5Q0owYnhDdU5rZHY5a3pxQjItLVcyZlcxUndSUjh6R2U3NE5pcVBvbUJHME85YWREZjN6ZnZyU0R5SWlsU2s2cEtTOVR5LXVWMmhpa21FNnZiTC1nQ19NLTRfWHFBaTR2NHBkd3dKMl9UNGUxcG84R3B3RERZVnJrZXJXQXfSAbMBQVVfeXFMTVBkblprWll2aUtUZmZrZGRrbXZHbnJaVTllbGg5RTl4SnptMlhKNTI1TU5aTmFTMEdSVHE3bVZqOHRvSk5zZ3ZWWEc0TDVSRVBOanQ3Nm1ydllHRGNZMTZ5VHhtZVRTZDF0djhmUGJfTlhsOVJpTG5CMXV0eUpQalNIN3Y0UFlaSWpzSksxdE93ZlBXU2RxVUprRThGQlQ1STdRTS1XQkFxbERiMzhaSzBYVG8?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "NY Giants confirm major Malik Nabers’ injury update ahead of Week 1 game vs Cowboys bolavip.com",
+          "published": "Fri, 04 Sep 2026 14:46:04 GMT"
+        },
+        {
+          "title": "Giants news: Malik Nabers' injury update will worry fantasy managers for Week 1",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZ1BDbHBLdnA2WksxUlRtWDRxLUlVZHhYd09DSTVCX1FDRDBCdG9Oc3d1a2RpejA5VU41YVk1QlBLYnZ1MThqNmhpdjN2Q1VPUGZTZFRqLXJFLVl6TlFPN2dpU3dpdHVDeUF3VGxKeWVqLWdjQjA1YmQ3ZzVpU3JMelgxbXprenpMMFF4VVZB?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Giants news: Malik Nabers' injury update will worry fantasy managers for Week 1 Yahoo Sports",
+          "published": "Tue, 01 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NY Giants unofficially confirm Malik Nabers’ role during Week 1 vs Cowboys",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcmdyTXg2Nk5KQ2ltYktZcExHZk9HRzRhV0FrcEQ1bjAxWUJoTHdCQ1BpZmVZakRkdUp4VzdqYzh2cTRodlJ4UDB3Zmc2M0l5S0tZdXVTRlpMelctT0pBdGV5SEk2Z1lwbGhqMUpfaXUtSkNWR196UlVnVWlNdzlvUG1uaVBoOUNudDBXZHlBS09wdngyZ1FSU0x4OHI5bjFaVnfSAacBQVVfeXFMT1d3X093RTVGLWVfR1pYbFo1a3F2amFNak14UlNncWZJQjQ5cnhzV1p3RkNmNXhzQUJ0Z3BfUnFYZWRLNU4xWk1RUjZNQkJiY1FIM3BlenNVS1RxeFJCQ2dqNlJVRlRabVlrNktnU2V4R0xUVFdKUGJQN3V2YjR2aURrSW56LVY3SW5hT0lzT1pkQVo5ZTh5eFFRN2Zwa2hmZEJBd1lDUTQ?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "NY Giants unofficially confirm Malik Nabers’ role during Week 1 vs Cowboys bolavip.com",
+          "published": "Tue, 08 Sep 2026 17:25:27 GMT"
         }
       ]
     },
@@ -9112,167 +9508,6 @@
           "kind": "video",
           "snippet": "🚨BREAKING: Seattle Seahawks Just Got Bad Injury News #seahawks #nfl #shorts YouTube",
           "published": "Tue, 08 Sep 2026 20:46:38 GMT"
-        }
-      ]
-    },
-    {
-      "id": "lamar-jackson-misses-thursday-practice-due-ankle-injury-dbaac44a",
-      "slug": "lamar-jackson-misses-thursday-practice-due-ankle-injury-dbaac44a",
-      "sport": "football",
-      "headline": "Where to watch Colts vs. Ravens: TV channel, live stream, prediction, pick, odds, spread",
-      "blurb": "Lamar Jackson and Daniel Jones look to bounce back from injury-plagued seasons",
-      "summary": "Lamar Jackson and Daniel Jones look to bounce back from injury-plagued seasons Week 1 Thursday practice report for the New York Jets Lamar Jackson Misses Thursday Practice Due to Ankle Injury Baltimore Ravens Aggregated from CBS NFL, USA TODAY Sports, Baltimore Ravens, NFL.com.",
-      "category": "injury",
-      "published": "2025-12-04T08:00:00Z",
-      "updated": "2026-09-11T12:12:21Z",
-      "players": [
-        {
-          "key": "lamar jackson",
-          "name": "Lamar Jackson",
-          "slug": "lamar-jackson",
-          "pos": "QB",
-          "team": "BAL"
-        },
-        {
-          "key": "daniel jones",
-          "name": "Daniel Jones",
-          "slug": "daniel-jones",
-          "pos": "QB",
-          "team": "IND"
-        },
-        {
-          "key": "justin herbert",
-          "name": "Justin Herbert",
-          "slug": "justin-herbert",
-          "pos": "QB",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Thursday practice report for Jets",
-          "url": "https://sports.yahoo.com/articles/thursday-practice-report-jets-015601996.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "Week 1 Thursday practice report for the New York Jets",
-          "published": "Fri, 11 Sep 2026 01:56:01 +0000"
-        },
-        {
-          "title": "Lamar Jackson Misses Thursday Practice Due to Ankle Injury",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMzUzWnhpLUpkeW1hZUpRUHFETmowdklMY3lxUzltTnA2N1NOXzdISWpVdkpNT09JYUJPWFBuLWthTlB6cEZ5N1RZUEFvRjhJOVo3ZHpmVGlOSUJGVGYtNUhDQ1VYU3U1eHMzSXNJYzk4UmRoOXBjaVY2dlN4RXJXX1NfczBiNXdVZF9idUdsZkh2d2pudmc?oc=5",
-          "publisher": "Baltimore Ravens",
-          "kind": "article",
-          "snippet": "Lamar Jackson Misses Thursday Practice Due to Ankle Injury Baltimore Ravens",
-          "published": "Thu, 04 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "NFL news roundup: Lamar Jackson (ankle) sits out practice; Justin Herbert (hand) limited",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQdTBnbl85SjZIWjVVMTc2UFRON3dqU2ZjMmdiWkNFR3ExeGRISnBiaW9ZSzd5Zk9RZlFvOTRSN3gwRVh3U2lsTlRUSkgyV2RPRzRoeGtwNm1PNmE2SHhET2pFdk1LQWFmLW9yY1FiaURZdUx1dXFKejhkai1XblVGLTZNZUU3amRWNlBR?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "NFL news roundup: Lamar Jackson (ankle) sits out practice; Justin Herbert (hand) limited NFL.com",
-          "published": "Thu, 04 Dec 2025 18:46:53 GMT"
-        },
-        {
-          "title": "Where to watch Colts vs. Ravens: TV channel, live stream, prediction, pick, odds, spread",
-          "url": "https://www.cbssports.com/nfl/news/where-to-watch-colts-vs-ravens-stream-picks-odds/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "Lamar Jackson and Daniel Jones look to bounce back from injury-plagued seasons",
-          "published": "Fri, 11 Sep 2026 12:12:21 +0000"
-        }
-      ]
-    },
-    {
-      "id": "ny-giants-receive-another-positive-malik-nabers-injury-324603ba",
-      "slug": "ny-giants-receive-another-positive-malik-nabers-injury-324603ba",
-      "sport": "football",
-      "headline": "NY Giants receive another positive Malik Nabers’ injury update for Week 1 game vs Cowboys",
-      "blurb": "New York Giants headlines for Friday.",
-      "summary": "Malik Nabers and Jaxson Dart: New York Giants headlines for Friday. Malik Nabers' Updated Injury Status, Fantasy Outlook for Giants vs. Cowboys Week 1 Bleacher Report Aggregated from SB Nation, Bleacher Report, bolavip.com, Bergen Record, dailyrecord.com and 1 more.",
-      "category": "injury",
-      "published": "2026-09-01T07:00:00Z",
-      "updated": "2026-09-11T10:00:00Z",
-      "players": [
-        {
-          "key": "malik nabers",
-          "name": "Malik Nabers",
-          "slug": "malik-nabers",
-          "pos": "WR",
-          "team": "NYG"
-        },
-        {
-          "key": "jaxson dart",
-          "name": "Jaxson Dart",
-          "slug": "jaxson-dart",
-          "pos": "QB",
-          "team": "NYG"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Giants news: Malik Nabers’ startus, C.J. Okoye, Jaxson Dart, more",
-          "url": "https://sports.yahoo.com/articles/giants-news-malik-nabers-startus-100000958.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "New York Giants headlines for Friday.",
-          "published": "Fri, 11 Sep 2026 10:00:00 +0000"
-        },
-        {
-          "title": "Malik Nabers' Updated Injury Status, Fantasy Outlook for Giants vs. Cowboys Week 1",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaTZzek5LMDQ4X213cXFsbnBWenJuVTJaeXZYQ2tTc0ZhcE85UnZCLTQ1RG5lcDJqRzRlNVAzQndsTGdEUFFiSzRlV0N4aF8wTjJtZVk2TU16RExfWmUyMDgxamk0X1RwWHZhUHBRN1E4T3VEY0RCRGpCTGxCa2k1VUxDcl9lSWdYWDhDY3Z2XzZmX3ZIcmN5eVpna1NhNmhTczZYN1pLQ0pMSWNtTXFNazVqdW1TdE9xWmNwag?oc=5",
-          "publisher": "Bleacher Report",
-          "kind": "article",
-          "snippet": "Malik Nabers' Updated Injury Status, Fantasy Outlook for Giants vs. Cowboys Week 1 Bleacher Report",
-          "published": "Wed, 09 Sep 2026 21:51:49 GMT"
-        },
-        {
-          "title": "NY Giants receive another positive Malik Nabers’ injury update for Week 1 game vs Cowboys",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWXVJMk04QktWQXlHZzJjMWI1ZG1XWkRka1BhZUhRTnhZN3BSYWNUeXRvbVFySlh0YzF2NTJ4QnZtSEFzVGhUU3d2MFFxU2kzS05iWm1ZMlQwREhvc2J5Q1R4bmxoMkQyX01jSmNhNjY2Y1MwSjRNZk1HVEFPTGtwWjE5c1NwTVFiY0pfUTgyT1hGSjZfSXl0S3I5UUJMYzBubFF3VXRLV0tKUnNKX1NJbGpoNTEyd9IBuwFBVV95cUxPMGx3MjNQSi1HMWx6WjNyWHNQc2hHdHhxcWczT3JBQkZmTEQwc25iMzhhQU5iSVkzNnNLbXQ3NmxoS19sdnJGZzRSYzhrMTNMNmhmSXlsTEFMalN2cjN1Y1FVWHo0Q3h0WDQ4Qjk4R3hXdlIyZHBYcXpWdzdEV0w1MTlYZ1F1SExwMVA5OXVUbEt3aUxsSU10MmE4ekpWanRpcmQtd2VVc1I2c3hjVl9GZk1yOHRpWW9scG5z?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "NY Giants receive another positive Malik Nabers’ injury update for Week 1 game vs Cowboys bolavip.com",
-          "published": "Wed, 09 Sep 2026 14:24:43 GMT"
-        },
-        {
-          "title": "Giants vs Cowboys injury update: Malik Nabers' status will get clearer",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRDEwcHRubFdYS05OTlJZY19La1daYnlnN3dFQXNkdS1fbDRIZDlLMTF5LVp1NnpaYzVrcjNpb2gyakFkM01NV0JzT3dFWDZ3NldqbzktS2tXZXpvWEM2VnpIX19hUjB5WUFTVWpMVXZibE9rbU5FR1hXV0xxU1hrWFFaTTdDQ2NacVU5UHFnRG1UYXI1NzhVQUx5b1F1S3pnUkhLTUdFV0xtX21WNHhVNTFQczIyb3lTQ0lCUGluOWtySzdhSVRQSUtIdXkyTmM?oc=5",
-          "publisher": "Bergen Record",
-          "kind": "article",
-          "snippet": "Giants vs Cowboys injury update: Malik Nabers' status will get clearer Bergen Record",
-          "published": "Wed, 09 Sep 2026 20:36:00 GMT"
-        },
-        {
-          "title": "Giants vs Cowboys injury update: Malik Nabers' status will get clearer",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM0JXM2xFLUFtaU9seVZZWkhPMUtMeDdVSGZBSzNBRDBJeTRBT09mcWhLV1RRSjNKTzFqc2N5cEdDSi02a0xwUEZQeHJUVTNmbFB4ckU5dFd0clpTeXpsRlRXTWlpSGtES0tOMkNjdGtpUHViY0NpcF8tVmlRc0JONEtONThsa0FKT3ExdnV2ZDZYbjhmMGJ1RjVPYXNxSVZGSTU5VVhnTXFMSTRmbUVYVHZ5dS1qd2RScC1nRDNndmE5a0tHVERsWXVZX3cycmc?oc=5",
-          "publisher": "dailyrecord.com",
-          "kind": "article",
-          "snippet": "Giants vs Cowboys injury update: Malik Nabers' status will get clearer dailyrecord.com",
-          "published": "Wed, 09 Sep 2026 16:49:00 GMT"
-        },
-        {
-          "title": "NY Giants confirm major Malik Nabers’ injury update ahead of Week 1 game vs Cowboys",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQM3ZRWVRRS2I1RVZobERJajhLT0JZYzZQN2VVeFBfNTRtWi1PdlI0REI5Q0owYnhDdU5rZHY5a3pxQjItLVcyZlcxUndSUjh6R2U3NE5pcVBvbUJHME85YWREZjN6ZnZyU0R5SWlsU2s2cEtTOVR5LXVWMmhpa21FNnZiTC1nQ19NLTRfWHFBaTR2NHBkd3dKMl9UNGUxcG84R3B3RERZVnJrZXJXQXfSAbMBQVVfeXFMTVBkblprWll2aUtUZmZrZGRrbXZHbnJaVTllbGg5RTl4SnptMlhKNTI1TU5aTmFTMEdSVHE3bVZqOHRvSk5zZ3ZWWEc0TDVSRVBOanQ3Nm1ydllHRGNZMTZ5VHhtZVRTZDF0djhmUGJfTlhsOVJpTG5CMXV0eUpQalNIN3Y0UFlaSWpzSksxdE93ZlBXU2RxVUprRThGQlQ1STdRTS1XQkFxbERiMzhaSzBYVG8?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "NY Giants confirm major Malik Nabers’ injury update ahead of Week 1 game vs Cowboys bolavip.com",
-          "published": "Fri, 04 Sep 2026 14:46:04 GMT"
-        },
-        {
-          "title": "Giants news: Malik Nabers' injury update will worry fantasy managers for Week 1",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZ1BDbHBLdnA2WksxUlRtWDRxLUlVZHhYd09DSTVCX1FDRDBCdG9Oc3d1a2RpejA5VU41YVk1QlBLYnZ1MThqNmhpdjN2Q1VPUGZTZFRqLXJFLVl6TlFPN2dpU3dpdHVDeUF3VGxKeWVqLWdjQjA1YmQ3ZzVpU3JMelgxbXprenpMMFF4VVZB?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Giants news: Malik Nabers' injury update will worry fantasy managers for Week 1 Yahoo Sports",
-          "published": "Tue, 01 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NY Giants unofficially confirm Malik Nabers’ role during Week 1 vs Cowboys",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcmdyTXg2Nk5KQ2ltYktZcExHZk9HRzRhV0FrcEQ1bjAxWUJoTHdCQ1BpZmVZakRkdUp4VzdqYzh2cTRodlJ4UDB3Zmc2M0l5S0tZdXVTRlpMelctT0pBdGV5SEk2Z1lwbGhqMUpfaXUtSkNWR196UlVnVWlNdzlvUG1uaVBoOUNudDBXZHlBS09wdngyZ1FSU0x4OHI5bjFaVnfSAacBQVVfeXFMT1d3X093RTVGLWVfR1pYbFo1a3F2amFNak14UlNncWZJQjQ5cnhzV1p3RkNmNXhzQUJ0Z3BfUnFYZWRLNU4xWk1RUjZNQkJiY1FIM3BlenNVS1RxeFJCQ2dqNlJVRlRabVlrNktnU2V4R0xUVFdKUGJQN3V2YjR2aURrSW56LVY3SW5hT0lzT1pkQVo5ZTh5eFFRN2Zwa2hmZEJBd1lDUTQ?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "NY Giants unofficially confirm Malik Nabers’ role during Week 1 vs Cowboys bolavip.com",
-          "published": "Tue, 08 Sep 2026 17:25:27 GMT"
         }
       ]
     },
@@ -10152,6 +10387,67 @@
       ]
     },
     {
+      "id": "ashton-jeanty-jeremiyah-love-injury-statuses-impact-1-71ad0202",
+      "slug": "ashton-jeanty-jeremiyah-love-injury-statuses-impact-1-71ad0202",
+      "sport": "football",
+      "headline": "Ashton Jeanty, Jeremiyah Love, NFL Injury Statuses and Fantasy Impact for Week 1",
+      "blurb": "Injury Report: Statuses for Giants at Lions Giants.com",
+      "summary": "Ashton Jeanty and Jeremiyah Love: Injury Report: Statuses for Giants at Lions Giants.com Ashton Jeanty off injury report, set to play Week 1 vs. Ashton Jeanty, Jeremiyah Love, NFL Injury Statuses and Fantasy Impact for Week 1 Bleacher Report Aggregated from Giants.com, NBC Sports, Bleacher Report, x.com.",
+      "category": "injury",
+      "published": "2025-11-21T08:00:00Z",
+      "updated": "2026-09-11T21:33:27Z",
+      "players": [
+        {
+          "key": "ashton jeanty",
+          "name": "Ashton Jeanty",
+          "slug": "ashton-jeanty",
+          "pos": "RB",
+          "team": "LV"
+        },
+        {
+          "key": "jeremiyah love",
+          "name": "Jeremiyah Love",
+          "slug": "jeremiyah-love",
+          "pos": "RB",
+          "team": "ARI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ashton Jeanty off injury report, set to play Week 1 vs. Dolphins",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQWMyMmg5ZXdfV1B2Vm9qS1ZtMGxidW1RVjdOTF96MUdGM3pTQXBHUkllN2RmbmZjRTZtZWZHQl9XbUJVTXNlaC0taVNjUENOT050REY3bXJjMEY1Mi1XOTNnQjY4RVJnbDN5bE40QkZOMEx0bmRRcnVDcmxEX0tzbGE2RHM3blFURkhtVGVvdE4yWUpheTJhc1FaSFA4OHNQODgxUkxYLXdWaXpLWVVCRnl6M0tGc0ZDUnJRN2dzODVaQQ?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Ashton Jeanty off injury report, set to play Week 1 vs. Dolphins NBC Sports",
+          "published": "Fri, 11 Sep 2026 21:02:18 GMT"
+        },
+        {
+          "title": "Ashton Jeanty, Jeremiyah Love, NFL Injury Statuses and Fantasy Impact for Week 1",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUGJOdVZWbHdTMl9mZVQ5RG1OQmJWalhWbFF3LTlUQVNBRHVEUF9EQm9hRzFQYlBWOWZJYkVXLVlyNWMxU0J5VjUtR1NUWUJVYUNXbWxXZVVUMk9tOTZZckR1X2Jldl9nYzZMQWUtYlI2bE14ZmF0NnJhSHRnZGk3N1A1T1VLWWxoQk1PZTlZVjB4RldMYXE2U25FY0dCbzhKRVU0SVJRUXZkUU5heU55NUlwaGh6bWlDRTFr?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "Ashton Jeanty, Jeremiyah Love, NFL Injury Statuses and Fantasy Impact for Week 1 Bleacher Report",
+          "published": "Fri, 11 Sep 2026 21:31:37 GMT"
+        },
+        {
+          "title": "Raiders' Ashton Jeanty has no injury designation, good to go for opener vs. Dolphins https://t.co/W1QJxIlydK",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rM21jYXF0VHk2VXlEMWp2cDZIVzlvX0w5WC1JTEtZQ3Y1bVhYTElFM05CZ2Z3YTYtVnlKR0J2bmJZZkxhdEg5T21Ed2I1ekt2WmQ2WmRPQzVid25QT1BiN29nTQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Raiders' Ashton Jeanty has no injury designation, good to go for opener vs. Dolphins https://t.co/W1QJxIlydK x.com",
+          "published": "Fri, 11 Sep 2026 21:33:27 GMT"
+        },
+        {
+          "title": "Injury Report: Statuses for Giants at Lions",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOHZNVm9LSjFhdmVDQUpGdFFTTHZqU1dtai1nZkMzNENHWmthNDhsTzdVck1FdWNhOFFFNkdVNXRkTTV4SXY3enhtVEVDdzY3WDhTZ2lzRUlBRGc4cGNqYUZMRG92N29DOFJrWGhvV0EzTVEzY3dkOVAwUW1YN1R0N05Ga3FqVmVGb1hRRXFxQkxlazdOcmNhZHlSdVBQZEVaRVRoclgwdw?oc=5",
+          "publisher": "Giants.com",
+          "kind": "article",
+          "snippet": "Injury Report: Statuses for Giants at Lions Giants.com",
+          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "vikings-justin-jefferson-dishes-kyler-murray-jj-mccarthy-5ab18fdc",
       "slug": "vikings-justin-jefferson-dishes-kyler-murray-jj-mccarthy-5ab18fdc",
       "sport": "football",
@@ -10248,6 +10544,151 @@
           "kind": "article",
           "snippet": "What Kyler Murray signing means for Vikings, J.J. McCarthy ESPN",
           "published": "Thu, 12 Mar 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "bears-extend-rb-d-andre-swift-three-year-846828d3",
+      "slug": "bears-extend-rb-d-andre-swift-three-year-846828d3",
+      "sport": "football",
+      "headline": "Bears extend RB D'Andre Swift to three-year, $33.75 million deal, per report",
+      "blurb": "Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed.",
+      "summary": "D'Andre Swift: Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed. This is now Swift’s third NFL contract. Trevon Smith and David Mulugheta of Athletes First and the Bears just x.com Aggregated from x.com, CBS NFL, USA TODAY Sports, SB Nation, ProFootball Talk on NBC Sports and 3 more.",
+      "category": "roster",
+      "published": "2026-09-11T19:33:59Z",
+      "updated": "2026-09-11T20:03:55Z",
+      "players": [
+        {
+          "key": "dandre swift",
+          "name": "D'Andre Swift",
+          "slug": "dandre-swift",
+          "pos": "RB",
+          "team": "CHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bears extend RB D'Andre Swift to three-year, $33.75 million deal, per report",
+          "url": "https://www.cbssports.com/nfl/news/bears-re-sign-dandre-swift-to-three-year-deal/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "Swift is fresh off producing career highs in scrimmage yards (1,386) and touchdowns (10) under Ben Johnson in 2025",
+          "published": "Fri, 11 Sep 2026 20:03:55 +0000"
+        },
+        {
+          "title": "Bears lock in RB D'Andre Swift with contract extension",
+          "url": "https://sports.yahoo.com/articles/bears-lock-rb-dandre-swift-194806668.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "D'Andre Swift was entering the final year of his deal with the Chicago Bears. Now he'll be in the Windy City much longer.",
+          "published": "Fri, 11 Sep 2026 19:48:06 +0000"
+        },
+        {
+          "title": "Bears extend D’Andre Swift to three-year, $33.75 million deal",
+          "url": "https://sports.yahoo.com/articles/bears-extend-d-andre-swift-194738460.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Bears have paid one of their own, signing D’Andre Swift to a three-year contract extension.",
+          "published": "Fri, 11 Sep 2026 19:47:38 +0000"
+        },
+        {
+          "title": "Bears, D'Andre Swift agree to three-year contract extension",
+          "url": "https://sports.yahoo.com/articles/bears-dandre-swift-agree-three-194518212.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "Bears running back D'Andre Swift will kick off the new season with a new contract.",
+          "published": "Fri, 11 Sep 2026 19:45:18 +0000"
+        },
+        {
+          "title": "Bears, D'Andre Swift agree to three-year contract extension",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-dandre-swift-agree-to-three-year-contract-extension",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Bears running back D'Andre Swift will kick off the new season with a new contract.",
+          "published": "Fri, 11 Sep 2026 15:45:18 -0400"
+        },
+        {
+          "title": "BREAKING: Bears Signing RB D’Andre Swift To Three-Year, $33.75M Extension",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaHIzcWg4X3pJekZnc0dyN0s1NUItdzRyNkhSTEJBRkRmQmtvUWdJQzlyZFdiVFF1WHdQU0w2TmRxMVVUUm5uWXdiLVFtM3djdGJhbEtmaEVkOGk0cDVPTXFveGtEYTVSQzZ0YkFkel9jcnZTRF9SRnM0dEFOc3pjMzFCZDRNcXhiWGUxa1dYRHVyaDNmYjhONktIaGU?oc=5",
+          "publisher": "nfltraderumors.co",
+          "kind": "article",
+          "snippet": "BREAKING: Bears Signing RB D’Andre Swift To Three-Year, $33.75M Extension nfltraderumors.co",
+          "published": "Fri, 11 Sep 2026 19:39:15 GMT"
+        },
+        {
+          "title": "RB D'Andre Swift becomes latest key Bears player to earn a big extension",
+          "url": "https://sports.yahoo.com/nfl/article/rb-dandre-swift-becomes-latest-key-bears-player-to-earn-a-big-extension-195342263.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The Bears and RB D’Andre Swift have agreed to a three-year extension worth $33.75 million.",
+          "published": "Fri, 11 Sep 2026 19:53:42 +0000"
+        },
+        {
+          "title": "Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed. This is now Swift’s third NFL contract. Trevon Smith and David Mulugheta of Athletes First and the Bears just",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5Telc0WXVfcG15TGMtZmJNQVlUeml4YzlRaVZrSDFMMU9BTmVlTFROcE8xWDdYZ3d1c0stSER1cDIzaklCRXNkTDBYN01fVnBHbjk1bi1XazZJdDZVR1JwM2RKZw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed. This is now Swift’s third NFL contract. Trevon Smith and David Mulugheta of Athletes First and the Bears just x.com",
+          "published": "Fri, 11 Sep 2026 19:33:59 GMT"
+        }
+      ]
+    },
+    {
+      "id": "some-league-s-more-notable-injuries-monitor-1-51452922",
+      "slug": "some-league-s-more-notable-injuries-monitor-1-51452922",
+      "sport": "football",
+      "headline": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News",
+      "blurb": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News FOX Sports",
+      "summary": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News FOX Sports Some of the league's more notable injuries to monitor in Week 1 🤕 -- WR Ja'Marr Chase (Knee) -- RB Ashton Jeanty (Ankle) -- WR Malik Nabers (ACL) -- QB Patrick Mahomes (ACL) See the full tracker here: https://t.co/PpGR7FUz8m x.com Aggregated from FOX Sports, x.com.",
+      "category": "injury",
+      "published": "2026-08-25T07:00:00Z",
+      "updated": "2026-09-11T00:11:32Z",
+      "players": [
+        {
+          "key": "patrick mahomes",
+          "name": "Patrick Mahomes",
+          "slug": "patrick-mahomes",
+          "pos": "QB",
+          "team": "KC"
+        },
+        {
+          "key": "jamarr chase",
+          "name": "Ja'Marr Chase",
+          "slug": "jamarr-chase",
+          "pos": "WR",
+          "team": "CIN"
+        },
+        {
+          "key": "ashton jeanty",
+          "name": "Ashton Jeanty",
+          "slug": "ashton-jeanty",
+          "pos": "RB",
+          "team": "LV"
+        },
+        {
+          "key": "malik nabers",
+          "name": "Malik Nabers",
+          "slug": "malik-nabers",
+          "pos": "WR",
+          "team": "NYG"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Some of the league's more notable injuries to monitor in Week 1 🤕 -- WR Ja'Marr Chase (Knee) -- RB Ashton Jeanty (Ankle) -- WR Malik Nabers (ACL) -- QB Patrick Mahomes (ACL) See the full tracker here: https://t.co/PpGR7FUz8m",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WQm9SMm0wM0YwdFhUVnNtVk5WNWtwV2VVLTd3dldzYVFaRGdvdS02RDBBaTRJNTlYZTdsaUNWdUszY0ItV0JVMlRfc1kyVXdqVVpkSUpNdkRVVi1yM19ld3JZMDlBUQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Some of the league's more notable injuries to monitor in Week 1 🤕 -- WR Ja'Marr Chase (Knee) -- RB Ashton Jeanty (Ankle) -- WR Malik Nabers (ACL) -- QB Patrick Mahomes (ACL) See the full tracker here: https://t.co/PpGR7FUz8m x.com",
+          "published": "Fri, 11 Sep 2026 00:11:32 GMT"
+        },
+        {
+          "title": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQV9aaExPZm5scU9SSUExNmhJS0dMMExGTUo1aGJtMVVuRDl6Y0tzX2dSc09fbHBwNG9BcGhPSkdEcjMwNnZtUFlLdUVUeGdZVmxrM2p3eUxqdlptWGE5WTg0WVVHNlEyV3ZtTjNHNVBsNkotaWJzeW9leDlQWHdSb1VwSFNRTHlLRHJGM18tUVN2OFBCVml6MG52RXNGTEpBaExxc29VWGJvNjJYTk1RUmRWWFZyZ9IBtgFBVV95cUxOVjFfWUdRZlJ3NDlONktkcjU3X1JXVHFqRjB6OGoyR3BGVzNSc2diMlBNc05pTk5lUGpiWUFWdXB4ZW9Ub2NheEVueVVnZEUwOEZ6UDE1eGRtTVZmcXo5c0VVQ1RlTVgxT05pSE1mb21pS0hmYVRVSTRzX1JrSmJoVFVpZjdNZ001QTZpQ1drMm0yRFpSRS1QR0xRQnBWRk1QUnFBMmlqRGtrcDZPN3AzbEsxNnh0dw?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News FOX Sports",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -10484,221 +10925,6 @@
       ]
     },
     {
-      "id": "some-league-s-more-notable-injuries-monitor-1-51452922",
-      "slug": "some-league-s-more-notable-injuries-monitor-1-51452922",
-      "sport": "football",
-      "headline": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News",
-      "blurb": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News FOX Sports",
-      "summary": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News FOX Sports Some of the league's more notable injuries to monitor in Week 1 🤕 -- WR Ja'Marr Chase (Knee) -- RB Ashton Jeanty (Ankle) -- WR Malik Nabers (ACL) -- QB Patrick Mahomes (ACL) See the full tracker here: https://t.co/PpGR7FUz8m x.com Aggregated from FOX Sports, x.com.",
-      "category": "injury",
-      "published": "2026-08-25T07:00:00Z",
-      "updated": "2026-09-11T00:11:32Z",
-      "players": [
-        {
-          "key": "patrick mahomes",
-          "name": "Patrick Mahomes",
-          "slug": "patrick-mahomes",
-          "pos": "QB",
-          "team": "KC"
-        },
-        {
-          "key": "jamarr chase",
-          "name": "Ja'Marr Chase",
-          "slug": "jamarr-chase",
-          "pos": "WR",
-          "team": "CIN"
-        },
-        {
-          "key": "ashton jeanty",
-          "name": "Ashton Jeanty",
-          "slug": "ashton-jeanty",
-          "pos": "RB",
-          "team": "LV"
-        },
-        {
-          "key": "malik nabers",
-          "name": "Malik Nabers",
-          "slug": "malik-nabers",
-          "pos": "WR",
-          "team": "NYG"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Some of the league's more notable injuries to monitor in Week 1 🤕 -- WR Ja'Marr Chase (Knee) -- RB Ashton Jeanty (Ankle) -- WR Malik Nabers (ACL) -- QB Patrick Mahomes (ACL) See the full tracker here: https://t.co/PpGR7FUz8m",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WQm9SMm0wM0YwdFhUVnNtVk5WNWtwV2VVLTd3dldzYVFaRGdvdS02RDBBaTRJNTlYZTdsaUNWdUszY0ItV0JVMlRfc1kyVXdqVVpkSUpNdkRVVi1yM19ld3JZMDlBUQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Some of the league's more notable injuries to monitor in Week 1 🤕 -- WR Ja'Marr Chase (Knee) -- RB Ashton Jeanty (Ankle) -- WR Malik Nabers (ACL) -- QB Patrick Mahomes (ACL) See the full tracker here: https://t.co/PpGR7FUz8m x.com",
-          "published": "Fri, 11 Sep 2026 00:11:32 GMT"
-        },
-        {
-          "title": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOQV9aaExPZm5scU9SSUExNmhJS0dMMExGTUo1aGJtMVVuRDl6Y0tzX2dSc09fbHBwNG9BcGhPSkdEcjMwNnZtUFlLdUVUeGdZVmxrM2p3eUxqdlptWGE5WTg0WVVHNlEyV3ZtTjNHNVBsNkotaWJzeW9leDlQWHdSb1VwSFNRTHlLRHJGM18tUVN2OFBCVml6MG52RXNGTEpBaExxc29VWGJvNjJYTk1RUmRWWFZyZ9IBtgFBVV95cUxOVjFfWUdRZlJ3NDlONktkcjU3X1JXVHFqRjB6OGoyR3BGVzNSc2diMlBNc05pTk5lUGpiWUFWdXB4ZW9Ub2NheEVueVVnZEUwOEZ6UDE1eGRtTVZmcXo5c0VVQ1RlTVgxT05pSE1mb21pS0hmYVRVSTRzX1JrSmJoVFVpZjdNZ001QTZpQ1drMm0yRFpSRS1QR0xRQnBWRk1QUnFBMmlqRGtrcDZPN3AzbEsxNnh0dw?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News FOX Sports",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "bears-extend-rb-d-andre-swift-three-year-846828d3",
-      "slug": "bears-extend-rb-d-andre-swift-three-year-846828d3",
-      "sport": "football",
-      "headline": "Bears extend RB D'Andre Swift to three-year, $33.75 million deal, per report",
-      "blurb": "The Bears and RB D’Andre Swift have agreed to a three-year extension worth $33.75 million.",
-      "summary": "D'Andre Swift: The Bears and RB D’Andre Swift have agreed to a three-year extension worth $33.75 million. Swift is fresh off producing career highs in scrimmage yards (1,386) and touchdowns (10) under Ben Johnson in 2025 D'Andre Swift was entering the final year of his deal with the Chicago Bears. Aggregated from Yahoo Sports, CBS NFL, USA TODAY Sports, SB Nation, ProFootball Talk on NBC Sports and 2 more.",
-      "category": "roster",
-      "published": "2026-09-11T19:39:15Z",
-      "updated": "2026-09-11T20:03:55Z",
-      "players": [
-        {
-          "key": "dandre swift",
-          "name": "D'Andre Swift",
-          "slug": "dandre-swift",
-          "pos": "RB",
-          "team": "CHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Bears extend RB D'Andre Swift to three-year, $33.75 million deal, per report",
-          "url": "https://www.cbssports.com/nfl/news/bears-re-sign-dandre-swift-to-three-year-deal/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "Swift is fresh off producing career highs in scrimmage yards (1,386) and touchdowns (10) under Ben Johnson in 2025",
-          "published": "Fri, 11 Sep 2026 20:03:55 +0000"
-        },
-        {
-          "title": "Bears lock in RB D'Andre Swift with contract extension",
-          "url": "https://sports.yahoo.com/articles/bears-lock-rb-dandre-swift-194806668.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "D'Andre Swift was entering the final year of his deal with the Chicago Bears. Now he'll be in the Windy City much longer.",
-          "published": "Fri, 11 Sep 2026 19:48:06 +0000"
-        },
-        {
-          "title": "Bears extend D’Andre Swift to three-year, $33.75 million deal",
-          "url": "https://sports.yahoo.com/articles/bears-extend-d-andre-swift-194738460.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Bears have paid one of their own, signing D’Andre Swift to a three-year contract extension.",
-          "published": "Fri, 11 Sep 2026 19:47:38 +0000"
-        },
-        {
-          "title": "Bears, D'Andre Swift agree to three-year contract extension",
-          "url": "https://sports.yahoo.com/articles/bears-dandre-swift-agree-three-194518212.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Bears running back D'Andre Swift will kick off the new season with a new contract.",
-          "published": "Fri, 11 Sep 2026 19:45:18 +0000"
-        },
-        {
-          "title": "Bears, D'Andre Swift agree to three-year contract extension",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-dandre-swift-agree-to-three-year-contract-extension",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Bears running back D'Andre Swift will kick off the new season with a new contract.",
-          "published": "Fri, 11 Sep 2026 15:45:18 -0400"
-        },
-        {
-          "title": "BREAKING: Bears Signing RB D’Andre Swift To Three-Year, $33.75M Extension",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaHIzcWg4X3pJekZnc0dyN0s1NUItdzRyNkhSTEJBRkRmQmtvUWdJQzlyZFdiVFF1WHdQU0w2TmRxMVVUUm5uWXdiLVFtM3djdGJhbEtmaEVkOGk0cDVPTXFveGtEYTVSQzZ0YkFkel9jcnZTRF9SRnM0dEFOc3pjMzFCZDRNcXhiWGUxa1dYRHVyaDNmYjhONktIaGU?oc=5",
-          "publisher": "nfltraderumors.co",
-          "kind": "article",
-          "snippet": "BREAKING: Bears Signing RB D’Andre Swift To Three-Year, $33.75M Extension nfltraderumors.co",
-          "published": "Fri, 11 Sep 2026 19:39:15 GMT"
-        },
-        {
-          "title": "RB D'Andre Swift becomes latest key Bears player to earn a big extension",
-          "url": "https://sports.yahoo.com/nfl/article/rb-dandre-swift-becomes-latest-key-bears-player-to-earn-a-big-extension-195342263.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The Bears and RB D’Andre Swift have agreed to a three-year extension worth $33.75 million.",
-          "published": "Fri, 11 Sep 2026 19:53:42 +0000"
-        }
-      ]
-    },
-    {
-      "id": "giants-predictions-2026-154e2bed",
-      "slug": "giants-predictions-2026-154e2bed",
-      "sport": "football",
-      "headline": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets",
-      "blurb": "SportsLine's advanced model has locked in its Week 1 NFL predictions from 10,000 simulations",
-      "summary": "Shedeur Sanders: SportsLine's advanced model has locked in its Week 1 NFL predictions from 10,000 simulations Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets CBS Sports Which one of these fantasy football predictions is most likely to come true? Aggregated from CBS NFL, CBS Sports, Yahoo Sports, SNY, YouTube and 1 more.",
-      "category": "injury",
-      "published": "2026-09-10T16:04:01Z",
-      "updated": "2026-09-11T15:41:00Z",
-      "players": [
-        {
-          "key": "shedeur sanders",
-          "name": "Shedeur Sanders",
-          "slug": "shedeur-sanders",
-          "pos": "QB",
-          "team": "CLE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Bold Fantasy Football Predictions for Week 1",
-          "url": "https://sports.yahoo.com/fantasy/article/bold-fantasy-football-predictions-for-week-1-152312670.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Which one of these fantasy football predictions is most likely to come true?",
-          "published": "Fri, 11 Sep 2026 15:23:12 +0000"
-        },
-        {
-          "title": "Giants game-by-game predictions for 2026 NFL season",
-          "url": "https://sports.yahoo.com/articles/giants-game-game-predictions-2026-133000142.html",
-          "publisher": "SNY",
-          "kind": "article",
-          "snippet": "How will things shake out for the Giants during the 2026 NFL season?",
-          "published": "Fri, 11 Sep 2026 13:30:00 +0000"
-        },
-        {
-          "title": "Jets game-by-game predictions for 2026 NFL season",
-          "url": "https://sports.yahoo.com/articles/jets-game-game-predictions-2026-132500788.html",
-          "publisher": "SNY",
-          "kind": "article",
-          "snippet": "How will the Jets' 2026 season shake out?",
-          "published": "Fri, 11 Sep 2026 13:25:00 +0000"
-        },
-        {
-          "title": "Cleveland Browns Injury News & BOLD Predictions For 2026 NFL Season Ft. Shedeur Sanders",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaYkdhT3NaQlFSaTRqT1kzUW83QTBPWG04ZFBNekFfMFExYnc3Q2tJcEtIbzE1NDV2dzlRdzlRMC1PT3JiQmo3VmlBcFJOZUx5TF92T3Bn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Cleveland Browns Injury News & BOLD Predictions For 2026 NFL Season Ft. Shedeur Sanders YouTube",
-          "published": "Thu, 10 Sep 2026 16:04:01 GMT"
-        },
-        {
-          "title": "NFL Week 1 picks, predictions: BBV staff split on Giants-Cowboys outcome",
-          "url": "https://sports.yahoo.com/articles/nfl-week-1-picks-predictions-140000406.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Here’s how the BBV staff sees Week 1 of the NFL season.",
-          "published": "Fri, 11 Sep 2026 14:00:00 +0000"
-        },
-        {
-          "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets",
-          "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-prophetx-vikings-packers-cowboys-giants-markets/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "SportsLine's advanced model has locked in its Week 1 NFL predictions from 10,000 simulations",
-          "published": "Fri, 11 Sep 2026 15:41:00 +0000"
-        },
-        {
-          "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbUFsZHBDMXV5N1dRUVJIQlZ2dEVWdXZUTGl1aHJzQUZGeEZuMXVwT0Y2Z1BweklDTEtGN0RocnpGZnJkSks0dDNXLWpYMFIzeG9keVVLNHZGSndISVhxOS0zTm5ad0pJTElvcUhVY1kyemlWM00xZXQzaWFJV1paYUVkRGNlQ3pQbUZsMDJmVVNsd1g5LVhWc2l2ZkIyNmNVM0FPVzJqWm1ESUhBX1Jsdml5R2RpMENteVhqV3F3SHQyakR0WWNSSFItcHNlVjhTd0ZF?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets CBS Sports",
-          "published": "Fri, 11 Sep 2026 15:41:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "shemar-stewart-doubtful-ja-marr-chase-tee-higgins-d30b8616",
       "slug": "shemar-stewart-doubtful-ja-marr-chase-tee-higgins-d30b8616",
       "sport": "football",
@@ -10851,6 +11077,57 @@
       ]
     },
     {
+      "id": "what-records-could-bills-players-set-houston-990e474c",
+      "slug": "what-records-could-bills-players-set-houston-990e474c",
+      "sport": "football",
+      "headline": "What records could Bills players set in Houston?",
+      "blurb": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb.",
+      "summary": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb. Board reading of SB Nation.",
+      "category": "wire",
+      "published": "2026-09-11T10:00:00Z",
+      "updated": "2026-09-11T10:00:00Z",
+      "players": [
+        {
+          "key": "khalil shakir",
+          "name": "Khalil Shakir",
+          "slug": "khalil-shakir",
+          "pos": "WR",
+          "team": "BUF"
+        },
+        {
+          "key": "dawson knox",
+          "name": "Dawson Knox",
+          "slug": "dawson-knox",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "josh allen",
+          "name": "Josh Allen",
+          "slug": "josh-allen",
+          "pos": "QB",
+          "team": "BUF"
+        },
+        {
+          "key": "james cook",
+          "name": "James Cook",
+          "slug": "james-cook",
+          "pos": "RB",
+          "team": "BUF"
+        }
+      ],
+      "sources": [
+        {
+          "title": "What records could Bills players set in Houston?",
+          "url": "https://sports.yahoo.com/articles/records-could-bills-players-set-100000761.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb.",
+          "published": "Fri, 11 Sep 2026 10:00:00 +0000"
+        }
+      ]
+    },
+    {
       "id": "ny-giants-john-harbaugh-give-positive-malik-nabers-3b0200f0",
       "slug": "ny-giants-john-harbaugh-give-positive-malik-nabers-3b0200f0",
       "sport": "football",
@@ -10984,53 +11261,128 @@
       ]
     },
     {
-      "id": "what-records-could-bills-players-set-houston-990e474c",
-      "slug": "what-records-could-bills-players-set-houston-990e474c",
+      "id": "puka-nacua-playing-today-rams-49ers-1-2026-889e623f",
+      "slug": "puka-nacua-playing-today-rams-49ers-1-2026-889e623f",
       "sport": "football",
-      "headline": "What records could Bills players set in Houston?",
-      "blurb": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb.",
-      "summary": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb. Board reading of SB Nation.",
-      "category": "wire",
-      "published": "2026-09-11T10:00:00Z",
-      "updated": "2026-09-11T10:00:00Z",
+      "headline": "Will Puka Nacua Be Suspended? A Look at the Rams Superstar’s Legal Issues, Whether He’ll Play in Week 1, More",
+      "blurb": "Will Puka Nacua Be Suspended?",
+      "summary": "Will Puka Nacua Be Suspended? A Look at the Rams Superstar’s Legal Issues, Whether He’ll Play in Week 1, More sports.yahoo.com San Francisco 49ers edge rusher Nick Bosa is set to return to the field after his 2025 season was limited to three games. Aggregated from sports.yahoo.com, USA TODAY Sports, bolavip.com, Yahoo Sports, CBS Sports and 2 more.",
+      "category": "injury",
+      "published": "2026-08-20T07:00:00Z",
+      "updated": "2026-09-10T23:03:13Z",
       "players": [
         {
-          "key": "khalil shakir",
-          "name": "Khalil Shakir",
-          "slug": "khalil-shakir",
+          "key": "puka nacua",
+          "name": "Puka Nacua",
+          "slug": "puka-nacua",
           "pos": "WR",
-          "team": "BUF"
-        },
-        {
-          "key": "dawson knox",
-          "name": "Dawson Knox",
-          "slug": "dawson-knox",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "josh allen",
-          "name": "Josh Allen",
-          "slug": "josh-allen",
-          "pos": "QB",
-          "team": "BUF"
-        },
-        {
-          "key": "james cook",
-          "name": "James Cook",
-          "slug": "james-cook",
-          "pos": "RB",
-          "team": "BUF"
+          "team": "LAR"
         }
       ],
       "sources": [
         {
-          "title": "What records could Bills players set in Houston?",
-          "url": "https://sports.yahoo.com/articles/records-could-bills-players-set-100000761.html",
-          "publisher": "SB Nation",
+          "title": "Is Nick Bosa playing today? Injury update for 49ers star",
+          "url": "https://sports.yahoo.com/articles/nick-bosa-playing-today-injury-230313310.html",
+          "publisher": "USA TODAY Sports",
           "kind": "article",
-          "snippet": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb.",
-          "published": "Fri, 11 Sep 2026 10:00:00 +0000"
+          "snippet": "San Francisco 49ers edge rusher Nick Bosa is set to return to the field after his 2025 season was limited to three games.",
+          "published": "Thu, 10 Sep 2026 23:03:13 +0000"
+        },
+        {
+          "title": "Is Puka Nacua playing today for Rams vs 49ers in Week 1 of 2026 NFL season?",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaFlBS2ltRDVRMVRnVU9hbW11ZnFRenpPWWczeVo1enlxZmh2TDlJLXNzVlhTcXhQMGFmMXFvWklvYTNnaDV5V1Uyd2xySjVGOENfT1A0bUVQQVJ6VUpOMnMxQjdBeDVSNVhVUUt5eDJTcGc1a25IU0N2Mk5RbVJvZUswZExVbXZKQmZtOXlucHloR3JLamQtT29HcERTbjRWa0lV0gGoAUFVX3lxTE9vSVpVc1lQNnZLY0hGX2Y4VmIzS1pGbUh1eF9vbDdRVWdRQXNDTW94TXZhRF9TQUQ2NUhuWDgxNFNWU0pzVHVRX2dWRUJ4ZFVXNTZQT0JVNFBXUWx2cFpOSWNCeWd0NkEwY3N3by1PeUdHRExRRjZGTDh1T05hTXpETDh0elkzaUE1bGFVQVNTQ3QycU5qc2duSnEwMktPSzQ3UmhxRkhWeQ?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Is Puka Nacua playing today for Rams vs 49ers in Week 1 of 2026 NFL season? bolavip.com",
+          "published": "Thu, 10 Sep 2026 15:58:51 GMT"
+        },
+        {
+          "title": "Is Puka Nacua Playing in Week 1? Latest on the Rams Superstar’s Status vs. 49ers As a Potential Suspension Looms",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5May1pYV9sNFpSellGYlhndmtjdDROSDFBdXo3ZjZZUzRqUTZUV2NjOFVUbkNnNjZENEJnRTN5SlNTd1p0NWR0RjFvZm13ckdWS1NjTEEzTDBVSFFyX3RWTWt2MW5RM0xobmM4NkFnNGRrNzFGVWFkWXlseHdscFk?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Is Puka Nacua Playing in Week 1? Latest on the Rams Superstar’s Status vs. 49ers As a Potential Suspension Looms Yahoo Sports",
+          "published": "Thu, 10 Sep 2026 12:01:48 GMT"
+        },
+        {
+          "title": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.?",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVEcyYWZ6LWJTV05QZ0VJYms4QmpPWVZjRDdxbFU4OW9JWV9sTFIxMDV4MEtfVXFYemRYcFV6YVBOb1ktSVVSWDZuM2dQa1RqblotTlR0R0NSYmVPcDlEZ3pKZXRyWmhoMjg1Y1dlOHItMjA0SVVsLUpNaFoxUjFsYWUxdjRQSEFkYy05SWxuQ3BId3ZrSXJ3Qg?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.? CBS Sports",
+          "published": "Thu, 03 Sep 2026 18:53:00 GMT"
+        },
+        {
+          "title": "Puka Nacua Injury Update: Psoas Concern, Suspension Risk and Week 1 Status",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNV1BGLW4tUmZta2N0MklPZlo5X19zazNLUkpRSlVjNUZNVENqNTZBR0J4WklaMi1zbFJ1aF9kWU1xU3JVVkpkaU5WUVhQNjUwYksxVmktem5ObjNJNTNOeVNvUGx3eWo2eDBWeFFNeFV0bGt3VS13T1kwUHJRdmZzalVHaXZQSmZQY3NLeEh1dmJJLWM?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Puka Nacua Injury Update: Psoas Concern, Suspension Risk and Week 1 Status Sports Illustrated",
+          "published": "Mon, 07 Sep 2026 19:36:58 GMT"
+        },
+        {
+          "title": "Adam Schefter drops major Puka Nacua suspension update that changes Rams season outlook",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR3RralVzazZJejR2dnlycDZVSTIwODFJd01NZTdRdjZmMFVVMkRUZHdZMUhZZFVGNEU4UDlMT0l2bVJZdVJpMkUxaXRCN2UzYTVfclRDclNXUS1EUFhTaG02R1lxRmdlNFNzZmpRck8zWTZVSVJIVTB0VnZfdWVuNnZnUjlzQQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Adam Schefter drops major Puka Nacua suspension update that changes Rams season outlook Yahoo Sports",
+          "published": "Mon, 07 Sep 2026 20:05:07 GMT"
+        },
+        {
+          "title": "Puka Nacua suspension could be avoided, per NFL insider",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMHB0c3B0NUJaTDkzS01PXzJRUV91ZVFjckUxZF85TEg1NUVFSmx5VzN0M2R2cHN6U25XX0xBZ1JuX2tUU1NsaFktODRLRndTRGEyel9XZ2hab2dmVjhCbC1PZlBaVEUyc1UzQzJfeGNCREpCcWF4TFVCMlVUTWVRcXJaaw?oc=5",
+          "publisher": "The Big Lead",
+          "kind": "article",
+          "snippet": "Puka Nacua suspension could be avoided, per NFL insider The Big Lead",
+          "published": "Mon, 07 Sep 2026 18:06:01 GMT"
+        },
+        {
+          "title": "Rams’ Puka Nacua reportedly hopeful to play vs 49ers amid suspension rumors",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOME0wX3N3aFJxVGRFMkpUZEJUa0J6N08tZ0tsQWpFRUVGcXlsWmVIY2Q2NHJWN195dElkSFhhYUU3dF9ianByNjYxZDhsT2g4dWVCVEZORG1jb0NRTVBsYWpER25QdUw3aS1ZSGZndXoyLUJKV3owaVk4RTZqaGlzbGNNTUtNS0N4QWx5VWFfNWRLSUlwWUlvLTk2ZUNWbEpxUzkw0gGoAUFVX3lxTFBmRzFLX1hTSmQ4ckp1aFFpdUk4SmhwZURlMVlwT0NTU0lpWGZ5UE5STFhiZUU1TFZfTnZFLUJIMVA3RzNkRm9lbXIzWGFibEJaMzRTME5VUl9DZWRieGhTMDVrcWgwcEFYNDF4dGJELXZJQWRSLVRGam9menBJNl90bEFwcWNVUHl5S1g5bkF5ZW9KSHczemI1dHRMQlFmZ3hYZGRpcExQeg?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Rams’ Puka Nacua reportedly hopeful to play vs 49ers amid suspension rumors bolavip.com",
+          "published": "Tue, 08 Sep 2026 01:01:48 GMT"
+        },
+        {
+          "title": "How Likely Is a Suspension for Rams WR Puka Nacua?",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE45eEtrUUFnYWpfbTRZd0UyQ2FNeEN1MUpxYWtuZ2JFY2Faa2l4S1l5c0RhcldyMjZCWDRTbm16dmNERlhFLWpaVlhULU5mUjBkcnEzczE0VnZWejR0Y2FQOER5azg5N0RqRE5KNmdwa3FWOWVEbVZV?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "How Likely Is a Suspension for Rams WR Puka Nacua? Sports Illustrated",
+          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Puka Nacua suspension coming? Why NFL should punish Rams star",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWnlsZkVtOS1JUWUwT0RJQjVpYkRqaHdGcW8yNG16dnJKWEJ5cl9laUtSWmVlbnc2SzFndmZMSlEwaTl6RWljemo3YzVPUGNndFF3MU9rMXJLVnhLb2kwc2JDWWl6bHlTSHJCZ240WEV6alo2RzZ5MG9jQkptM0ViTm50bDhPWkx4eHNMNGRVMXNjUmlWS1E?oc=5",
+          "publisher": "The Big Lead",
+          "kind": "article",
+          "snippet": "Is Puka Nacua suspension coming? Why NFL should punish Rams star The Big Lead",
+          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Puka Nacua suspension could be avoided, per NFL insider",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObnNpMGo3a0k5b0w0WnU2Z3pqMjdEQzJxcHQzSGl6OUJfdjROZGE1N08xMVNsY1RDV1pINWg5QjdibFZTdDZWUzZQbHlSTTZ4am9PbWRaX1lHczF2bDFPSUpEM3RrQjVqZEhGUmVHdVFWQzZUbVpQS2h4V2xlMk9qWHMxb1psTGdNcU5Hdw?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Puka Nacua suspension could be avoided, per NFL insider sports.yahoo.com",
+          "published": "Mon, 07 Sep 2026 18:04:36 GMT"
+        },
+        {
+          "title": "NFL Insider Drops Promising Puka Nacua Suspension Update for Rams",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUFZpd3FCMGlyUEx4cDROU19DWURGcDVUY1JMRjBoaFpDR1JzTzlxSU9laFRUR3duUTFEQjZ4dmtQSU9nUUp5WnB5TTZkM0Y0Ylo1RmllVDhIbFpFYkdoSGpsREtSX3Z1VGhqOWdEd1JEWGc5RDYxb3hYbkNFdkpvSF9fclBjOVAt?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "NFL Insider Drops Promising Puka Nacua Suspension Update for Rams sports.yahoo.com",
+          "published": "Mon, 07 Sep 2026 20:16:03 GMT"
+        },
+        {
+          "title": "Will Puka Nacua Be Suspended? A Look at the Rams Superstar’s Legal Issues, Whether He’ll Play in Week 1, More",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVlVQekZKMkRjS3hKbTY1dmdoNDJncGxQSE1GSy1EcHZ2TWtMTE1uVUpHdGtSYkVJeGtjVlJzZTdSM1RXZlRxalprNng1TU5NeE1McGk4VTFYcDlxNE5UWnhJSWRjc3p2aG81cDltekZDMzdJLWVjaXBfeGVnVmY4OVN2MGVmZw?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Will Puka Nacua Be Suspended? A Look at the Rams Superstar’s Legal Issues, Whether He’ll Play in Week 1, More sports.yahoo.com",
+          "published": "Thu, 27 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -11167,128 +11519,56 @@
       ]
     },
     {
-      "id": "puka-nacua-playing-today-rams-49ers-1-2026-889e623f",
-      "slug": "puka-nacua-playing-today-rams-49ers-1-2026-889e623f",
+      "id": "malik-davis-injury-cowboys-rb-miss-extended-time-db2cdf3f",
+      "slug": "malik-davis-injury-cowboys-rb-miss-extended-time-db2cdf3f",
       "sport": "football",
-      "headline": "Will Puka Nacua Be Suspended? A Look at the Rams Superstar’s Legal Issues, Whether He’ll Play in Week 1, More",
-      "blurb": "Will Puka Nacua Be Suspended?",
-      "summary": "Will Puka Nacua Be Suspended? A Look at the Rams Superstar’s Legal Issues, Whether He’ll Play in Week 1, More sports.yahoo.com San Francisco 49ers edge rusher Nick Bosa is set to return to the field after his 2025 season was limited to three games. Aggregated from sports.yahoo.com, USA TODAY Sports, bolavip.com, Yahoo Sports, CBS Sports and 2 more.",
+      "headline": "Malik Davis injury update: Cowboys RB to miss extended time with hip injury",
+      "blurb": "Cowboys RB Malik Davis to miss Week 1 after suffering injury Friday",
+      "summary": "Cowboys RB Malik Davis to miss Week 1 after suffering injury Friday Malik Davis injury update: Cowboys RB to miss extended time with hip injury On3 Cowboys RB Malik Davis has been ruled out of Sunday’s game vs. Aggregated from USA TODAY Sports, On3, x.com.",
       "category": "injury",
-      "published": "2026-08-20T07:00:00Z",
-      "updated": "2026-09-10T23:03:13Z",
+      "published": "2026-09-11T19:50:44Z",
+      "updated": "2026-09-11T21:38:59Z",
       "players": [
         {
-          "key": "puka nacua",
-          "name": "Puka Nacua",
-          "slug": "puka-nacua",
-          "pos": "WR",
-          "team": "LAR"
+          "key": "malik davis",
+          "name": "Malik Davis",
+          "slug": "malik-davis",
+          "pos": "",
+          "team": ""
         }
       ],
       "sources": [
         {
-          "title": "Is Nick Bosa playing today? Injury update for 49ers star",
-          "url": "https://sports.yahoo.com/articles/nick-bosa-playing-today-injury-230313310.html",
+          "title": "Malik Davis ruled out for Week 1",
+          "url": "https://sports.yahoo.com/articles/malik-davis-ruled-week-1-213859561.html",
           "publisher": "USA TODAY Sports",
           "kind": "article",
-          "snippet": "San Francisco 49ers edge rusher Nick Bosa is set to return to the field after his 2025 season was limited to three games.",
-          "published": "Thu, 10 Sep 2026 23:03:13 +0000"
+          "snippet": "Cowboys RB Malik Davis to miss Week 1 after suffering injury Friday",
+          "published": "Fri, 11 Sep 2026 21:38:59 +0000"
         },
         {
-          "title": "Is Puka Nacua playing today for Rams vs 49ers in Week 1 of 2026 NFL season?",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaFlBS2ltRDVRMVRnVU9hbW11ZnFRenpPWWczeVo1enlxZmh2TDlJLXNzVlhTcXhQMGFmMXFvWklvYTNnaDV5V1Uyd2xySjVGOENfT1A0bUVQQVJ6VUpOMnMxQjdBeDVSNVhVUUt5eDJTcGc1a25IU0N2Mk5RbVJvZUswZExVbXZKQmZtOXlucHloR3JLamQtT29HcERTbjRWa0lV0gGoAUFVX3lxTE9vSVpVc1lQNnZLY0hGX2Y4VmIzS1pGbUh1eF9vbDdRVWdRQXNDTW94TXZhRF9TQUQ2NUhuWDgxNFNWU0pzVHVRX2dWRUJ4ZFVXNTZQT0JVNFBXUWx2cFpOSWNCeWd0NkEwY3N3by1PeUdHRExRRjZGTDh1T05hTXpETDh0elkzaUE1bGFVQVNTQ3QycU5qc2duSnEwMktPSzQ3UmhxRkhWeQ?oc=5",
-          "publisher": "bolavip.com",
+          "title": "Malik Davis injury update: Cowboys RB to miss extended time with hip injury",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUHAwcXItT1preDN2UV83TFVGaUtMMml2cXFqRXA4ai1pVE8zYzRnMW1NczRzWkI1MENhN1MzamtZeXRfNzZiWFM5ZGtRU0wzdnBuOVI5UXNaLXJFTXdYS0E5ME44VTEtS3BOQXR0UUZVQUJhNmNTdWZIS3VrRGhlTmIyUGx6NlgyZlJXTk12UTlxZWR2UmlpRk15eDNUcVphVWMtc3dQV090djdXX29Hd3RiMFZZRVJ5?oc=5",
+          "publisher": "On3",
           "kind": "article",
-          "snippet": "Is Puka Nacua playing today for Rams vs 49ers in Week 1 of 2026 NFL season? bolavip.com",
-          "published": "Thu, 10 Sep 2026 15:58:51 GMT"
+          "snippet": "Malik Davis injury update: Cowboys RB to miss extended time with hip injury On3",
+          "published": "Fri, 11 Sep 2026 20:35:25 GMT"
         },
         {
-          "title": "Is Puka Nacua Playing in Week 1? Latest on the Rams Superstar’s Status vs. 49ers As a Potential Suspension Looms",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5May1pYV9sNFpSellGYlhndmtjdDROSDFBdXo3ZjZZUzRqUTZUV2NjOFVUbkNnNjZENEJnRTN5SlNTd1p0NWR0RjFvZm13ckdWS1NjTEEzTDBVSFFyX3RWTWt2MW5RM0xobmM4NkFnNGRrNzFGVWFkWXlseHdscFk?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Is Puka Nacua Playing in Week 1? Latest on the Rams Superstar’s Status vs. 49ers As a Potential Suspension Looms Yahoo Sports",
-          "published": "Thu, 10 Sep 2026 12:01:48 GMT"
+          "title": "Cowboys RB Malik Davis has been ruled out of Sunday’s game vs. the Giants because of a hip injury suffered in Friday’s practice, per sources. He is undergoing further examination to determine severity of the injury.",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qcGNtQUpxUVVRX0dXdGFNWk00NHl1c19qSWFUT1NTdmJ1bXM4eHBpMk56cWc5VG5ycVBURFk4UmZpdXJGZVQ2MnZOa3huV1dwZFlwZWN2OEJTWUx4RnhlVw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Cowboys RB Malik Davis has been ruled out of Sunday’s game vs. the Giants because of a hip injury suffered in Friday’s practice, per sources. He is undergoing further examination to determine severity of the injury. x.com",
+          "published": "Fri, 11 Sep 2026 19:50:44 GMT"
         },
         {
-          "title": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.?",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVEcyYWZ6LWJTV05QZ0VJYms4QmpPWVZjRDdxbFU4OW9JWV9sTFIxMDV4MEtfVXFYemRYcFV6YVBOb1ktSVVSWDZuM2dQa1RqblotTlR0R0NSYmVPcDlEZ3pKZXRyWmhoMjg1Y1dlOHItMjA0SVVsLUpNaFoxUjFsYWUxdjRQSEFkYy05SWxuQ3BId3ZrSXJ3Qg?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.? CBS Sports",
-          "published": "Thu, 03 Sep 2026 18:53:00 GMT"
-        },
-        {
-          "title": "Puka Nacua Injury Update: Psoas Concern, Suspension Risk and Week 1 Status",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNV1BGLW4tUmZta2N0MklPZlo5X19zazNLUkpRSlVjNUZNVENqNTZBR0J4WklaMi1zbFJ1aF9kWU1xU3JVVkpkaU5WUVhQNjUwYksxVmktem5ObjNJNTNOeVNvUGx3eWo2eDBWeFFNeFV0bGt3VS13T1kwUHJRdmZzalVHaXZQSmZQY3NLeEh1dmJJLWM?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Puka Nacua Injury Update: Psoas Concern, Suspension Risk and Week 1 Status Sports Illustrated",
-          "published": "Mon, 07 Sep 2026 19:36:58 GMT"
-        },
-        {
-          "title": "Adam Schefter drops major Puka Nacua suspension update that changes Rams season outlook",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOR3RralVzazZJejR2dnlycDZVSTIwODFJd01NZTdRdjZmMFVVMkRUZHdZMUhZZFVGNEU4UDlMT0l2bVJZdVJpMkUxaXRCN2UzYTVfclRDclNXUS1EUFhTaG02R1lxRmdlNFNzZmpRck8zWTZVSVJIVTB0VnZfdWVuNnZnUjlzQQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Adam Schefter drops major Puka Nacua suspension update that changes Rams season outlook Yahoo Sports",
-          "published": "Mon, 07 Sep 2026 20:05:07 GMT"
-        },
-        {
-          "title": "Puka Nacua suspension could be avoided, per NFL insider",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMHB0c3B0NUJaTDkzS01PXzJRUV91ZVFjckUxZF85TEg1NUVFSmx5VzN0M2R2cHN6U25XX0xBZ1JuX2tUU1NsaFktODRLRndTRGEyel9XZ2hab2dmVjhCbC1PZlBaVEUyc1UzQzJfeGNCREpCcWF4TFVCMlVUTWVRcXJaaw?oc=5",
-          "publisher": "The Big Lead",
-          "kind": "article",
-          "snippet": "Puka Nacua suspension could be avoided, per NFL insider The Big Lead",
-          "published": "Mon, 07 Sep 2026 18:06:01 GMT"
-        },
-        {
-          "title": "Rams’ Puka Nacua reportedly hopeful to play vs 49ers amid suspension rumors",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOME0wX3N3aFJxVGRFMkpUZEJUa0J6N08tZ0tsQWpFRUVGcXlsWmVIY2Q2NHJWN195dElkSFhhYUU3dF9ianByNjYxZDhsT2g4dWVCVEZORG1jb0NRTVBsYWpER25QdUw3aS1ZSGZndXoyLUJKV3owaVk4RTZqaGlzbGNNTUtNS0N4QWx5VWFfNWRLSUlwWUlvLTk2ZUNWbEpxUzkw0gGoAUFVX3lxTFBmRzFLX1hTSmQ4ckp1aFFpdUk4SmhwZURlMVlwT0NTU0lpWGZ5UE5STFhiZUU1TFZfTnZFLUJIMVA3RzNkRm9lbXIzWGFibEJaMzRTME5VUl9DZWRieGhTMDVrcWgwcEFYNDF4dGJELXZJQWRSLVRGam9menBJNl90bEFwcWNVUHl5S1g5bkF5ZW9KSHczemI1dHRMQlFmZ3hYZGRpcExQeg?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Rams’ Puka Nacua reportedly hopeful to play vs 49ers amid suspension rumors bolavip.com",
-          "published": "Tue, 08 Sep 2026 01:01:48 GMT"
-        },
-        {
-          "title": "How Likely Is a Suspension for Rams WR Puka Nacua?",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE45eEtrUUFnYWpfbTRZd0UyQ2FNeEN1MUpxYWtuZ2JFY2Faa2l4S1l5c0RhcldyMjZCWDRTbm16dmNERlhFLWpaVlhULU5mUjBkcnEzczE0VnZWejR0Y2FQOER5azg5N0RqRE5KNmdwa3FWOWVEbVZV?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "How Likely Is a Suspension for Rams WR Puka Nacua? Sports Illustrated",
-          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Is Puka Nacua suspension coming? Why NFL should punish Rams star",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWnlsZkVtOS1JUWUwT0RJQjVpYkRqaHdGcW8yNG16dnJKWEJ5cl9laUtSWmVlbnc2SzFndmZMSlEwaTl6RWljemo3YzVPUGNndFF3MU9rMXJLVnhLb2kwc2JDWWl6bHlTSHJCZ240WEV6alo2RzZ5MG9jQkptM0ViTm50bDhPWkx4eHNMNGRVMXNjUmlWS1E?oc=5",
-          "publisher": "The Big Lead",
-          "kind": "article",
-          "snippet": "Is Puka Nacua suspension coming? Why NFL should punish Rams star The Big Lead",
-          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Puka Nacua suspension could be avoided, per NFL insider",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObnNpMGo3a0k5b0w0WnU2Z3pqMjdEQzJxcHQzSGl6OUJfdjROZGE1N08xMVNsY1RDV1pINWg5QjdibFZTdDZWUzZQbHlSTTZ4am9PbWRaX1lHczF2bDFPSUpEM3RrQjVqZEhGUmVHdVFWQzZUbVpQS2h4V2xlMk9qWHMxb1psTGdNcU5Hdw?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Puka Nacua suspension could be avoided, per NFL insider sports.yahoo.com",
-          "published": "Mon, 07 Sep 2026 18:04:36 GMT"
-        },
-        {
-          "title": "NFL Insider Drops Promising Puka Nacua Suspension Update for Rams",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUFZpd3FCMGlyUEx4cDROU19DWURGcDVUY1JMRjBoaFpDR1JzTzlxSU9laFRUR3duUTFEQjZ4dmtQSU9nUUp5WnB5TTZkM0Y0Ylo1RmllVDhIbFpFYkdoSGpsREtSX3Z1VGhqOWdEd1JEWGc5RDYxb3hYbkNFdkpvSF9fclBjOVAt?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "NFL Insider Drops Promising Puka Nacua Suspension Update for Rams sports.yahoo.com",
-          "published": "Mon, 07 Sep 2026 20:16:03 GMT"
-        },
-        {
-          "title": "Will Puka Nacua Be Suspended? A Look at the Rams Superstar’s Legal Issues, Whether He’ll Play in Week 1, More",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVlVQekZKMkRjS3hKbTY1dmdoNDJncGxQSE1GSy1EcHZ2TWtMTE1uVUpHdGtSYkVJeGtjVlJzZTdSM1RXZlRxalprNng1TU5NeE1McGk4VTFYcDlxNE5UWnhJSWRjc3p2aG81cDltekZDMzdJLWVjaXBfeGVnVmY4OVN2MGVmZw?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Will Puka Nacua Be Suspended? A Look at the Rams Superstar’s Legal Issues, Whether He’ll Play in Week 1, More sports.yahoo.com",
-          "published": "Thu, 27 Aug 2026 07:00:00 GMT"
+          "title": "Stephen Jones: Malik Davis suffered \"pretty serious\" hip injury that \"could keep him out for some period of time,\" per @tommy_yarrish.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1fd2c1RnUwQWFxS3U3SkgzenZSNkwzcFhMYmowQzZUWFBfa015dFdxdmtPb2xIOHhOVlBOdkNGRmI1dTU1Z1RyVU5DSmRTZjRNbV95ak1IbmNYY0ZZNERMa1Rn?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Stephen Jones: Malik Davis suffered \"pretty serious\" hip injury that \"could keep him out for some period of time,\" per @tommy_yarrish. x.com",
+          "published": "Fri, 11 Sep 2026 20:05:59 GMT"
         }
       ]
     },
@@ -11476,6 +11756,185 @@
           "kind": "article",
           "snippet": "Will Patrick Mahomes play vs. Broncos? Injury update for Chiefs QB Chiefs Wire",
           "published": "Thu, 10 Sep 2026 22:10:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "jalen-mcmillan-doubtful-bucs-emeka-egbuka-set-play-1f39f1f2",
+      "slug": "jalen-mcmillan-doubtful-bucs-emeka-egbuka-set-play-1f39f1f2",
+      "sport": "football",
+      "headline": "Jalen McMillan doubtful for Bucs, but Emeka Egbuka is set to play",
+      "blurb": "The Buccaneers will likely be down one wide receiver when they open the regular season against the Bengals on Sunday.",
+      "summary": "Jalen McMillan and Emeka Egbuka: The Buccaneers will likely be down one wide receiver when they open the regular season against the Bengals on Sunday. Board reading of PFT feed.",
+      "category": "injury",
+      "published": "2026-09-11T18:43:45Z",
+      "updated": "2026-09-11T18:43:45Z",
+      "players": [
+        {
+          "key": "jalen mcmillan",
+          "name": "Jalen McMillan",
+          "slug": "jalen-mcmillan",
+          "pos": "WR",
+          "team": "TB"
+        },
+        {
+          "key": "emeka egbuka",
+          "name": "Emeka Egbuka",
+          "slug": "emeka-egbuka",
+          "pos": "WR",
+          "team": "TB"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jalen McMillan doubtful for Bucs, but Emeka Egbuka is set to play",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jalen-mcmillan-doubtful-for-bucs-but-emeka-egbuka-is-set-to-play",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "The Buccaneers will likely be down one wide receiver when they open the regular season against the Bengals on Sunday.",
+          "published": "Fri, 11 Sep 2026 14:43:45 -0400"
+        }
+      ]
+    },
+    {
+      "id": "andy-reid-chiefs-schedule-no-hint-patrick-mahomes-d1d72238",
+      "slug": "andy-reid-chiefs-schedule-no-hint-patrick-mahomes-d1d72238",
+      "sport": "football",
+      "headline": "Andy Reid: Chiefs' schedule no hint on Patrick Mahomes' health; QB 'making progress' on knee injury",
+      "blurb": "Quiet optimism Patrick Mahomes returns to elite level after injury | Pro Football Talk | NFL on NBC YouTube",
+      "summary": "Quiet optimism Patrick Mahomes returns to elite level after injury | Pro Football Talk | NFL on NBC YouTube Patrick Mahomes Injury Update Provided by Andy Reid, Latest on Chiefs QB's Status for NFL Week 1 Bleacher Report Patrick Mahomes Reportedly Starting Week 1 For Chiefs Barring Setback foxsports.com Aggregated from YouTube, Bleacher Report, foxsports.com, A to Z Sports, Yahoo Sports and 6 more.",
+      "category": "injury",
+      "published": "2026-05-15T07:00:00Z",
+      "updated": "2026-09-10T21:03:30Z",
+      "players": [
+        {
+          "key": "patrick mahomes",
+          "name": "Patrick Mahomes",
+          "slug": "patrick-mahomes",
+          "pos": "QB",
+          "team": "KC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Patrick Mahomes Injury Update Provided by Andy Reid, Latest on Chiefs QB's Status for NFL Week 1",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZ1lreDNqM3lORS1RcGFkSnpuVndZRzlJTi1rc0t1R0VObmY1Tzh0MDZMWjhQTHdLR3VCSHFWalF6QV9PQW1qSTdiRjJGSFNodEtsWEo5QkxjelZ2YVh4aVVWRy1rWGhERFNoOUlSZy1KWDFYNjdWcDZDSFVSeGJPTFNFVFNORVcxM2IzVDRCZi1LeGgzaldWTnpaZmxNc3lkcS1HeG9NS05YQzI5SGw1NzJQY2dGbkwtNThmN1BETTJRRExsVDhORg?oc=5",
+          "publisher": "Bleacher Report",
+          "kind": "article",
+          "snippet": "Patrick Mahomes Injury Update Provided by Andy Reid, Latest on Chiefs QB's Status for NFL Week 1 Bleacher Report",
+          "published": "Tue, 08 Sep 2026 17:14:33 GMT"
+        },
+        {
+          "title": "Patrick Mahomes Reportedly Starting Week 1 For Chiefs Barring Setback",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS05kY193VTF0MndWZ2tHWG56bjBrbkJhOVQtMFdYTFlhRUZHRnotVGl1Sm56WFlGTlJvdzhqUGZIU3F6R2ZkcUxkUGV4dFd1STIteVZRV05XN3VpdkVBRG9xWlJoXzBnMDNKd1FmYnJYNkV2LTEyZ1NyOHBWX01OTFkySGVjTXJWWV9COVVhaU95LWJleDRzVkxR0gGaAUFVX3lxTE5NSk5Mam1hTm9ia1Awc2JSNlM0RUR1ZE9VT1N0ZUxRNGQ2T1c1dEVuS3BSSFNRZUdjdUZfVVpHS3FwMlp3NDBLZkNSMjNQQWR6VVRFOFNxT2V6dXdZb3RTNzdKZEg2aGNibTM1VGJybHVkb2RsaGR5Y3B2dllTVlJySnN2MjJnYUNrdm81VnBMU2VrU05uakxJWnc?oc=5",
+          "publisher": "foxsports.com",
+          "kind": "article",
+          "snippet": "Patrick Mahomes Reportedly Starting Week 1 For Chiefs Barring Setback foxsports.com",
+          "published": "Tue, 08 Sep 2026 19:10:34 GMT"
+        },
+        {
+          "title": "'That's the beauty of football' - Andy Reid and Patrick Mahomes are embracing one of the KC Chiefs' biggest Week 1 challenges",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVy15UmpISzNWQUlvWGhMRlg1Y0ZiMS1iTFEzTFBheGVuU1ZOb1NBb0NlRENCRDVWTzlaaDJubEYzcmhzWFhyc19RaG5SX2NUVUNTbkl3dndOZTB5TUpjOG9tVVFlb3BBQ1dwVzd3OW05N2N1Z1cyeXZVeF94aER2RHVMNkRqUUtTdWFOUjNrcGx5ZG1SQ3NDNlN4RDNoNGZXbGRjOGR2STczTlM1NUtXMVg2ckxsem5ja0dOUjRjOVZfZ1FPVG5Z?oc=5",
+          "publisher": "A to Z Sports",
+          "kind": "article",
+          "snippet": "'That's the beauty of football' - Andy Reid and Patrick Mahomes are embracing one of the KC Chiefs' biggest Week 1 challenges A to Z Sports",
+          "published": "Thu, 10 Sep 2026 21:03:30 GMT"
+        },
+        {
+          "title": "Andy Reid Officially Confirms Patrick Mahomes’ Week 1 Status",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQb3l1UHZzRVNNZ1lWRDlaODhETzNCdmNCRHVMTVI0NExsaGdPdEFoRVE3NTNxTF9KUXBJSDBQaUEtLTVDRWRKZGpYRWNJSTM2Y2dHeGp3NTVHVnBTbFdHXzZaZzBhZ0ZSOG9TbGdhMHJGb2pBdWtHcFl3VmVfZmZtUkNkd21aQWxtWUVqVXR0NA?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Andy Reid Officially Confirms Patrick Mahomes’ Week 1 Status Yahoo Sports",
+          "published": "Tue, 08 Sep 2026 21:17:40 GMT"
+        },
+        {
+          "title": "Should you draft Patrick Mahomes in fantasy? Injury update, outlook for Chiefs QB",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONUNwM0FuNG9vTUM5ZkJVa19obmNYSGJ5aUpzUEJqTnU0ak5jM2xTSGN6Q1FxellrWmR1eGdpNnpnMzhKS0ZIR1RCN1o2eVUtczgwamJzazl0MUxibEVfdjUwNWU4UENpRG5VclVvTHkwMDVpSWRXTXNYTWQ3UGVXMjBvNkU1LWhsanNBSlVGYzR0alBaX0stTHZxVHRIaThJQ2ozdnJPajVlX1JVejJIV19VM3Q4S0V5X1BOVnNHbS1fZTVfUnRCc3g3QklxSlRqbWYzdEdn?oc=5",
+          "publisher": "USA Today",
+          "kind": "article",
+          "snippet": "Should you draft Patrick Mahomes in fantasy? Injury update, outlook for Chiefs QB USA Today",
+          "published": "Sat, 29 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Patrick Mahomes Warned of ACL Injury Danger Due to Josh Simmons’ Flaw",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMUM0V0Raa1BqbGFpSE1UQ3lodktuQnpNV2JJMmpQSXRObC1EZDJRemFsTGs0YjFuTmRWWkdQT3YxWHR2dzRQWXlQWWhnTWlRWk5MM1B2SjRad0lLVHJrWlJZUkhpa04za0lkb3M4aERENjhVbkFza3JaN05jVENpaGNOOEVmY2lUQ2I4LWVJWFI3YWlFRGV2SGJhYw?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Patrick Mahomes Warned of ACL Injury Danger Due to Josh Simmons’ Flaw heavy.com",
+          "published": "Tue, 08 Sep 2026 02:08:00 GMT"
+        },
+        {
+          "title": "Chiefs confirm expected Patrick Mahomes status (plus an OL update)",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdTFvVDBrb1BZZVdjM3lqb0Vrc3F4ODBQY3ltcjNWV2pHYVpGcGJiU2JTQUhyZUs1RjdoT0l2UnlXdE45WExudXBSVWFsNkZhNDBqQ2x4V0lEVjdRVjNWcl9hMm9tUUpUS1FQMVIxVEw4UnNQaFdWNnB6ZWlBdWVkS2cyc05GSDlfR3V6dVFaZzhFOHRzUGM3WmVPUjQ0bHh3QkNlMlEtRzVIOVhSdWFidEhUM2pNR2d3UUYtUnd2bDhhYXZRMHJmWHRoX0Q4aFRTaEs0d1dscw?oc=5",
+          "publisher": "Broncos Wire",
+          "kind": "article",
+          "snippet": "Chiefs confirm expected Patrick Mahomes status (plus an OL update) Broncos Wire",
+          "published": "Tue, 08 Sep 2026 21:58:00 GMT"
+        },
+        {
+          "title": "Patrick Mahomes faces ACL injury warning as his father encounters new hurdle over Chiefs games",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPV2oyVXUzWnJ3TGVwSFUzNzdJOGlkZ3JSa1ZEckZZa3lUMkpIRGhMcWVmMWNNbjBTQk0wUENJeDA3T3RRQ04yY0VvdTU0NzVLNzBNVFpjS0s3VU8yeWkxU1BsejZDSkd4WVNfX0RvMVJsOHRFdmhwSjFMRHByemNzR1h6bWl3OUZpV3hBRjkzLUNBRVJWVEJzUy1ELXE4MG4zbHpzLWRZUk1LS3BzRUNUcmc4V2NqeDkxUWszSnBucHBpZndZOVRmQmVpOV9tdnBLNVZ4a3FVQXFYbkxUQ2ctUDB4a0dxdVE?oc=5",
+          "publisher": "Yardbarker",
+          "kind": "article",
+          "snippet": "Patrick Mahomes faces ACL injury warning as his father encounters new hurdle over Chiefs games Yardbarker",
+          "published": "Tue, 08 Sep 2026 03:34:44 GMT"
+        },
+        {
+          "title": "Patrick Mahomes reveals knee injury progress as Chiefs QB eyes Week 1 return",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObUNkaVRvUUQzSFEtT1Jja0FVb2x0T2xKUENQbl9uYjJWU01odGl1TERfc21EQW5iTXNlZGVKRmFNYzNCYk5ndkw1RTNKNWlPQ0R5dHJiS0N2cUx2a3l1cmw2MDVsT0U1ZlpDZUhFYk53bjNSX3plYlRTelZNYW9oS3R5UTd2U0VMVzROdw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Patrick Mahomes reveals knee injury progress as Chiefs QB eyes Week 1 return Yahoo Sports",
+          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Andy Reid: Chiefs' schedule no hint on Patrick Mahomes' health; QB 'making progress' on knee injury",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdlhuVG5sWEQ1SjlOTDJHWXJpcUNvSHctNUx5eVdHS1BGaGxwT1o4Tm1RUXQ0dktUSGdMclNaOUYyeXV3S0JyTE12UnJuTTM3b3dtSFR4OC1GRzFXWTNRLXJsb0U5VFRiRU84Mms2U0xFS2R1WVJiYXZHZVZZNENvdGt5ekdtdw?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "Andy Reid: Chiefs' schedule no hint on Patrick Mahomes' health; QB 'making progress' on knee injury NFL.com",
+          "published": "Fri, 15 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chiefs QB Patrick Mahomes Raises Concern With Actions at Practice",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMVFET0s0aTczMmUyeExXcmZVT2JNS0xXTjFyTWVDWDJkcnVDRnVkRXpPOE5rSmo1XzhuYmZjbjBiVkw3ckdoSnpsTmk5RUZNcmVXd2QzWDFRaWd1bFFDdXlORUpBNlRQRkVyRExwWW5vZVN4eWFiamdGZHpzbnNaNHUtREdHU251?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Chiefs QB Patrick Mahomes Raises Concern With Actions at Practice Yahoo Sports",
+          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chiefs To Sit Patrick Mahomes In Preseason Finale vs. Seahawks Friday",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZnBSem1aeVdQejdRY1VXV0NwQ0NnS3ZOblE5c1ZSbkptY1BqcHlWQ29GejQ5LVlHV1lSOXN4V3dvX0JoWHpDMnpkbkN0ZFZJeTFLdlpFamVtSEVuZ3F3TEFDLVRSSkhwZ25Zc3JwU3VROUpqV3RVOHp0WkpwXzhPY04zSEMwaTRPVnlpQWtIYzlKM3JMM2RucDd6b3prWER6NzRyUG81bzJ5WkEtOXN0eTJ0VUt2X0RuNTY1NVlXeFlVOW9KZ3U2dUlJZUs4bEJCb3Y00gHTAUFVX3lxTE9nNEN2NjM5NGtHQlotYWpiZ2ZBNGZiWFYzNWcxSUFOT2pGZ3JfeHpZQzV3QmRPVlF3aGFqNnlFQ0tNQ1pXc2g1b2E1VzB6SWdlVkdWQUgwT1Z5dVpXbFA4OXUxQlptYURfUGJ0dHBUNkI4elhOd00wYm9Edmpjc0dBMnpMcHNDX3YwanlYUldaYzhOZS1TeXlrZFdZSllzaE1YOXNDNVR5SUE3S0JKd3NjRmtmUHcyT3h3Ykd4OWpvQ3NiZkR2dmVWbGx6TzNkM2tub3M?oc=5",
+          "publisher": "foxsports.com",
+          "kind": "article",
+          "snippet": "Chiefs To Sit Patrick Mahomes In Preseason Finale vs. Seahawks Friday foxsports.com",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObG9QLWc1bmxvdFc5LXJzNjJMRXV5Y3g2dFotb1NEN3ZXMHd0WjZ4dFByXzhMeV9la1dZQXk4bm5iRTRfdTVSMkxkR3VMc2JZdU9FNFBnOUh5Rjc1WE15c1pjTlI3UkkxZXNDUWxCZ0NOSW5FbnUxSTJRUVVqQnlqeHRMMnA1UDVv?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season Yahoo Sports",
+          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chiefs’ Andy Reid Shares Update on Patrick Mahomes Before Broncos Game",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMjdWT1JwWE5CRlhPY0ZkOF9mc0FNWjh3MWJxRWo1a3Z2dFVOQUJ4eHh0cVBGOXZSNHpsWE5SN09KM0M2Tlc4dUhUb3VkdldwcnVibjdETThBMWRxOUJxTk9tNVgwdl9VMWpYT2dCbmhuMzNNUnlnSjI1NGhHT2JxaXU1cFdpekk?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Chiefs’ Andy Reid Shares Update on Patrick Mahomes Before Broncos Game sports.yahoo.com",
+          "published": "Thu, 10 Sep 2026 17:12:07 GMT"
+        },
+        {
+          "title": "Quiet optimism Patrick Mahomes returns to elite level after injury | Pro Football Talk | NFL on NBC",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5uTlYtcUFPS2hVMko0alZ5cXdieW8tenFkV2gxMmViUjFETXFac184dEN4WmZwUXFnaVlfdHRtVWJDVGZvOXF5SW50TEEyZ0g3cU5aLTVn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Quiet optimism Patrick Mahomes returns to elite level after injury | Pro Football Talk | NFL on NBC YouTube",
+          "published": "Wed, 09 Sep 2026 13:35:33 GMT"
         }
       ]
     },
@@ -11711,284 +12170,6 @@
           "kind": "article",
           "snippet": "Patrick Mahomes fighting to play Week 1 after recovering from brutal ACL injury - 'always been the plan' the-sun.com",
           "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "jalen-mcmillan-doubtful-bucs-emeka-egbuka-set-play-1f39f1f2",
-      "slug": "jalen-mcmillan-doubtful-bucs-emeka-egbuka-set-play-1f39f1f2",
-      "sport": "football",
-      "headline": "Jalen McMillan doubtful for Bucs, but Emeka Egbuka is set to play",
-      "blurb": "The Buccaneers will likely be down one wide receiver when they open the regular season against the Bengals on Sunday.",
-      "summary": "Jalen McMillan and Emeka Egbuka: The Buccaneers will likely be down one wide receiver when they open the regular season against the Bengals on Sunday. Board reading of PFT feed.",
-      "category": "injury",
-      "published": "2026-09-11T18:43:45Z",
-      "updated": "2026-09-11T18:43:45Z",
-      "players": [
-        {
-          "key": "jalen mcmillan",
-          "name": "Jalen McMillan",
-          "slug": "jalen-mcmillan",
-          "pos": "WR",
-          "team": "TB"
-        },
-        {
-          "key": "emeka egbuka",
-          "name": "Emeka Egbuka",
-          "slug": "emeka-egbuka",
-          "pos": "WR",
-          "team": "TB"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jalen McMillan doubtful for Bucs, but Emeka Egbuka is set to play",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jalen-mcmillan-doubtful-for-bucs-but-emeka-egbuka-is-set-to-play",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "The Buccaneers will likely be down one wide receiver when they open the regular season against the Bengals on Sunday.",
-          "published": "Fri, 11 Sep 2026 14:43:45 -0400"
-        }
-      ]
-    },
-    {
-      "id": "andy-reid-chiefs-schedule-no-hint-patrick-mahomes-d1d72238",
-      "slug": "andy-reid-chiefs-schedule-no-hint-patrick-mahomes-d1d72238",
-      "sport": "football",
-      "headline": "Andy Reid: Chiefs' schedule no hint on Patrick Mahomes' health; QB 'making progress' on knee injury",
-      "blurb": "Quiet optimism Patrick Mahomes returns to elite level after injury | Pro Football Talk | NFL on NBC YouTube",
-      "summary": "Quiet optimism Patrick Mahomes returns to elite level after injury | Pro Football Talk | NFL on NBC YouTube Patrick Mahomes Injury Update Provided by Andy Reid, Latest on Chiefs QB's Status for NFL Week 1 Bleacher Report Patrick Mahomes Reportedly Starting Week 1 For Chiefs Barring Setback foxsports.com Aggregated from YouTube, Bleacher Report, foxsports.com, A to Z Sports, Yahoo Sports and 6 more.",
-      "category": "injury",
-      "published": "2026-05-15T07:00:00Z",
-      "updated": "2026-09-10T21:03:30Z",
-      "players": [
-        {
-          "key": "patrick mahomes",
-          "name": "Patrick Mahomes",
-          "slug": "patrick-mahomes",
-          "pos": "QB",
-          "team": "KC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Patrick Mahomes Injury Update Provided by Andy Reid, Latest on Chiefs QB's Status for NFL Week 1",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZ1lreDNqM3lORS1RcGFkSnpuVndZRzlJTi1rc0t1R0VObmY1Tzh0MDZMWjhQTHdLR3VCSHFWalF6QV9PQW1qSTdiRjJGSFNodEtsWEo5QkxjelZ2YVh4aVVWRy1rWGhERFNoOUlSZy1KWDFYNjdWcDZDSFVSeGJPTFNFVFNORVcxM2IzVDRCZi1LeGgzaldWTnpaZmxNc3lkcS1HeG9NS05YQzI5SGw1NzJQY2dGbkwtNThmN1BETTJRRExsVDhORg?oc=5",
-          "publisher": "Bleacher Report",
-          "kind": "article",
-          "snippet": "Patrick Mahomes Injury Update Provided by Andy Reid, Latest on Chiefs QB's Status for NFL Week 1 Bleacher Report",
-          "published": "Tue, 08 Sep 2026 17:14:33 GMT"
-        },
-        {
-          "title": "Patrick Mahomes Reportedly Starting Week 1 For Chiefs Barring Setback",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS05kY193VTF0MndWZ2tHWG56bjBrbkJhOVQtMFdYTFlhRUZHRnotVGl1Sm56WFlGTlJvdzhqUGZIU3F6R2ZkcUxkUGV4dFd1STIteVZRV05XN3VpdkVBRG9xWlJoXzBnMDNKd1FmYnJYNkV2LTEyZ1NyOHBWX01OTFkySGVjTXJWWV9COVVhaU95LWJleDRzVkxR0gGaAUFVX3lxTE5NSk5Mam1hTm9ia1Awc2JSNlM0RUR1ZE9VT1N0ZUxRNGQ2T1c1dEVuS3BSSFNRZUdjdUZfVVpHS3FwMlp3NDBLZkNSMjNQQWR6VVRFOFNxT2V6dXdZb3RTNzdKZEg2aGNibTM1VGJybHVkb2RsaGR5Y3B2dllTVlJySnN2MjJnYUNrdm81VnBMU2VrU05uakxJWnc?oc=5",
-          "publisher": "foxsports.com",
-          "kind": "article",
-          "snippet": "Patrick Mahomes Reportedly Starting Week 1 For Chiefs Barring Setback foxsports.com",
-          "published": "Tue, 08 Sep 2026 19:10:34 GMT"
-        },
-        {
-          "title": "'That's the beauty of football' - Andy Reid and Patrick Mahomes are embracing one of the KC Chiefs' biggest Week 1 challenges",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVy15UmpISzNWQUlvWGhMRlg1Y0ZiMS1iTFEzTFBheGVuU1ZOb1NBb0NlRENCRDVWTzlaaDJubEYzcmhzWFhyc19RaG5SX2NUVUNTbkl3dndOZTB5TUpjOG9tVVFlb3BBQ1dwVzd3OW05N2N1Z1cyeXZVeF94aER2RHVMNkRqUUtTdWFOUjNrcGx5ZG1SQ3NDNlN4RDNoNGZXbGRjOGR2STczTlM1NUtXMVg2ckxsem5ja0dOUjRjOVZfZ1FPVG5Z?oc=5",
-          "publisher": "A to Z Sports",
-          "kind": "article",
-          "snippet": "'That's the beauty of football' - Andy Reid and Patrick Mahomes are embracing one of the KC Chiefs' biggest Week 1 challenges A to Z Sports",
-          "published": "Thu, 10 Sep 2026 21:03:30 GMT"
-        },
-        {
-          "title": "Andy Reid Officially Confirms Patrick Mahomes’ Week 1 Status",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQb3l1UHZzRVNNZ1lWRDlaODhETzNCdmNCRHVMTVI0NExsaGdPdEFoRVE3NTNxTF9KUXBJSDBQaUEtLTVDRWRKZGpYRWNJSTM2Y2dHeGp3NTVHVnBTbFdHXzZaZzBhZ0ZSOG9TbGdhMHJGb2pBdWtHcFl3VmVfZmZtUkNkd21aQWxtWUVqVXR0NA?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Andy Reid Officially Confirms Patrick Mahomes’ Week 1 Status Yahoo Sports",
-          "published": "Tue, 08 Sep 2026 21:17:40 GMT"
-        },
-        {
-          "title": "Should you draft Patrick Mahomes in fantasy? Injury update, outlook for Chiefs QB",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONUNwM0FuNG9vTUM5ZkJVa19obmNYSGJ5aUpzUEJqTnU0ak5jM2xTSGN6Q1FxellrWmR1eGdpNnpnMzhKS0ZIR1RCN1o2eVUtczgwamJzazl0MUxibEVfdjUwNWU4UENpRG5VclVvTHkwMDVpSWRXTXNYTWQ3UGVXMjBvNkU1LWhsanNBSlVGYzR0alBaX0stTHZxVHRIaThJQ2ozdnJPajVlX1JVejJIV19VM3Q4S0V5X1BOVnNHbS1fZTVfUnRCc3g3QklxSlRqbWYzdEdn?oc=5",
-          "publisher": "USA Today",
-          "kind": "article",
-          "snippet": "Should you draft Patrick Mahomes in fantasy? Injury update, outlook for Chiefs QB USA Today",
-          "published": "Sat, 29 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Patrick Mahomes Warned of ACL Injury Danger Due to Josh Simmons’ Flaw",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMUM0V0Raa1BqbGFpSE1UQ3lodktuQnpNV2JJMmpQSXRObC1EZDJRemFsTGs0YjFuTmRWWkdQT3YxWHR2dzRQWXlQWWhnTWlRWk5MM1B2SjRad0lLVHJrWlJZUkhpa04za0lkb3M4aERENjhVbkFza3JaN05jVENpaGNOOEVmY2lUQ2I4LWVJWFI3YWlFRGV2SGJhYw?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Patrick Mahomes Warned of ACL Injury Danger Due to Josh Simmons’ Flaw heavy.com",
-          "published": "Tue, 08 Sep 2026 02:08:00 GMT"
-        },
-        {
-          "title": "Chiefs confirm expected Patrick Mahomes status (plus an OL update)",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdTFvVDBrb1BZZVdjM3lqb0Vrc3F4ODBQY3ltcjNWV2pHYVpGcGJiU2JTQUhyZUs1RjdoT0l2UnlXdE45WExudXBSVWFsNkZhNDBqQ2x4V0lEVjdRVjNWcl9hMm9tUUpUS1FQMVIxVEw4UnNQaFdWNnB6ZWlBdWVkS2cyc05GSDlfR3V6dVFaZzhFOHRzUGM3WmVPUjQ0bHh3QkNlMlEtRzVIOVhSdWFidEhUM2pNR2d3UUYtUnd2bDhhYXZRMHJmWHRoX0Q4aFRTaEs0d1dscw?oc=5",
-          "publisher": "Broncos Wire",
-          "kind": "article",
-          "snippet": "Chiefs confirm expected Patrick Mahomes status (plus an OL update) Broncos Wire",
-          "published": "Tue, 08 Sep 2026 21:58:00 GMT"
-        },
-        {
-          "title": "Patrick Mahomes faces ACL injury warning as his father encounters new hurdle over Chiefs games",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPV2oyVXUzWnJ3TGVwSFUzNzdJOGlkZ3JSa1ZEckZZa3lUMkpIRGhMcWVmMWNNbjBTQk0wUENJeDA3T3RRQ04yY0VvdTU0NzVLNzBNVFpjS0s3VU8yeWkxU1BsejZDSkd4WVNfX0RvMVJsOHRFdmhwSjFMRHByemNzR1h6bWl3OUZpV3hBRjkzLUNBRVJWVEJzUy1ELXE4MG4zbHpzLWRZUk1LS3BzRUNUcmc4V2NqeDkxUWszSnBucHBpZndZOVRmQmVpOV9tdnBLNVZ4a3FVQXFYbkxUQ2ctUDB4a0dxdVE?oc=5",
-          "publisher": "Yardbarker",
-          "kind": "article",
-          "snippet": "Patrick Mahomes faces ACL injury warning as his father encounters new hurdle over Chiefs games Yardbarker",
-          "published": "Tue, 08 Sep 2026 03:34:44 GMT"
-        },
-        {
-          "title": "Patrick Mahomes reveals knee injury progress as Chiefs QB eyes Week 1 return",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObUNkaVRvUUQzSFEtT1Jja0FVb2x0T2xKUENQbl9uYjJWU01odGl1TERfc21EQW5iTXNlZGVKRmFNYzNCYk5ndkw1RTNKNWlPQ0R5dHJiS0N2cUx2a3l1cmw2MDVsT0U1ZlpDZUhFYk53bjNSX3plYlRTelZNYW9oS3R5UTd2U0VMVzROdw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Patrick Mahomes reveals knee injury progress as Chiefs QB eyes Week 1 return Yahoo Sports",
-          "published": "Sun, 09 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Andy Reid: Chiefs' schedule no hint on Patrick Mahomes' health; QB 'making progress' on knee injury",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdlhuVG5sWEQ1SjlOTDJHWXJpcUNvSHctNUx5eVdHS1BGaGxwT1o4Tm1RUXQ0dktUSGdMclNaOUYyeXV3S0JyTE12UnJuTTM3b3dtSFR4OC1GRzFXWTNRLXJsb0U5VFRiRU84Mms2U0xFS2R1WVJiYXZHZVZZNENvdGt5ekdtdw?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "Andy Reid: Chiefs' schedule no hint on Patrick Mahomes' health; QB 'making progress' on knee injury NFL.com",
-          "published": "Fri, 15 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chiefs QB Patrick Mahomes Raises Concern With Actions at Practice",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMVFET0s0aTczMmUyeExXcmZVT2JNS0xXTjFyTWVDWDJkcnVDRnVkRXpPOE5rSmo1XzhuYmZjbjBiVkw3ckdoSnpsTmk5RUZNcmVXd2QzWDFRaWd1bFFDdXlORUpBNlRQRkVyRExwWW5vZVN4eWFiamdGZHpzbnNaNHUtREdHU251?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Chiefs QB Patrick Mahomes Raises Concern With Actions at Practice Yahoo Sports",
-          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chiefs To Sit Patrick Mahomes In Preseason Finale vs. Seahawks Friday",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZnBSem1aeVdQejdRY1VXV0NwQ0NnS3ZOblE5c1ZSbkptY1BqcHlWQ29GejQ5LVlHV1lSOXN4V3dvX0JoWHpDMnpkbkN0ZFZJeTFLdlpFamVtSEVuZ3F3TEFDLVRSSkhwZ25Zc3JwU3VROUpqV3RVOHp0WkpwXzhPY04zSEMwaTRPVnlpQWtIYzlKM3JMM2RucDd6b3prWER6NzRyUG81bzJ5WkEtOXN0eTJ0VUt2X0RuNTY1NVlXeFlVOW9KZ3U2dUlJZUs4bEJCb3Y00gHTAUFVX3lxTE9nNEN2NjM5NGtHQlotYWpiZ2ZBNGZiWFYzNWcxSUFOT2pGZ3JfeHpZQzV3QmRPVlF3aGFqNnlFQ0tNQ1pXc2g1b2E1VzB6SWdlVkdWQUgwT1Z5dVpXbFA4OXUxQlptYURfUGJ0dHBUNkI4elhOd00wYm9Edmpjc0dBMnpMcHNDX3YwanlYUldaYzhOZS1TeXlrZFdZSllzaE1YOXNDNVR5SUE3S0JKd3NjRmtmUHcyT3h3Ykd4OWpvQ3NiZkR2dmVWbGx6TzNkM2tub3M?oc=5",
-          "publisher": "foxsports.com",
-          "kind": "article",
-          "snippet": "Chiefs To Sit Patrick Mahomes In Preseason Finale vs. Seahawks Friday foxsports.com",
-          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObG9QLWc1bmxvdFc5LXJzNjJMRXV5Y3g2dFotb1NEN3ZXMHd0WjZ4dFByXzhMeV9la1dZQXk4bm5iRTRfdTVSMkxkR3VMc2JZdU9FNFBnOUh5Rjc1WE15c1pjTlI3UkkxZXNDUWxCZ0NOSW5FbnUxSTJRUVVqQnlqeHRMMnA1UDVv?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Chiefs QB Patrick Mahomes Injury Update: Latest Recovery Status Before 2026 NFL Season Yahoo Sports",
-          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chiefs’ Andy Reid Shares Update on Patrick Mahomes Before Broncos Game",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMjdWT1JwWE5CRlhPY0ZkOF9mc0FNWjh3MWJxRWo1a3Z2dFVOQUJ4eHh0cVBGOXZSNHpsWE5SN09KM0M2Tlc4dUhUb3VkdldwcnVibjdETThBMWRxOUJxTk9tNVgwdl9VMWpYT2dCbmhuMzNNUnlnSjI1NGhHT2JxaXU1cFdpekk?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Chiefs’ Andy Reid Shares Update on Patrick Mahomes Before Broncos Game sports.yahoo.com",
-          "published": "Thu, 10 Sep 2026 17:12:07 GMT"
-        },
-        {
-          "title": "Quiet optimism Patrick Mahomes returns to elite level after injury | Pro Football Talk | NFL on NBC",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5uTlYtcUFPS2hVMko0alZ5cXdieW8tenFkV2gxMmViUjFETXFac184dEN4WmZwUXFnaVlfdHRtVWJDVGZvOXF5SW50TEEyZ0g3cU5aLTVn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Quiet optimism Patrick Mahomes returns to elite level after injury | Pro Football Talk | NFL on NBC YouTube",
-          "published": "Wed, 09 Sep 2026 13:35:33 GMT"
-        }
-      ]
-    },
-    {
-      "id": "rome-odunze-xavier-woods-questionable-bears-panthers-3ae88c87",
-      "slug": "rome-odunze-xavier-woods-questionable-bears-panthers-3ae88c87",
-      "sport": "football",
-      "headline": "Rome Odunze, Xavier Woods questionable for Bears vs. Panthers",
-      "blurb": "Two Bears starters are questionable for Sunday's opener against the Panthers.",
-      "summary": "Rome Odunze: Two Bears starters are questionable for Sunday's opener against the Panthers. Bears Rome Odunze Injury Update Throws Week 1 Status In Doubt heavy.com Bears injury report: WR Rome Odunze (calf) questionable to play Sunday vs. Aggregated from ProFootball Talk on NBC Sports, PFT feed, heavy.com, x.com.",
-      "category": "injury",
-      "published": "2026-09-11T18:49:19Z",
-      "updated": "2026-09-11T19:12:32Z",
-      "players": [
-        {
-          "key": "rome odunze",
-          "name": "Rome Odunze",
-          "slug": "rome-odunze",
-          "pos": "WR",
-          "team": "CHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Rome Odunze, Xavier Woods questionable for Bears vs. Panthers",
-          "url": "https://sports.yahoo.com/articles/rome-odunze-xavier-woods-questionable-191232243.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Two Bears starters are questionable for Sunday's opener against the Panthers.",
-          "published": "Fri, 11 Sep 2026 19:12:32 +0000"
-        },
-        {
-          "title": "Rome Odunze, Xavier Woods questionable for Bears vs. Panthers",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/rome-odunze-xavier-woods-questionable-for-bears-vs-panthers",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Two Bears starters are questionable for Sunday's opener against the Panthers.",
-          "published": "Fri, 11 Sep 2026 15:12:32 -0400"
-        },
-        {
-          "title": "Bears Rome Odunze Injury Update Throws Week 1 Status In Doubt",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQYWk0TzNNam9kZlFlbnk1T3JaUUM1MDJVdmxEVGJ2UE53anhpTk82WXlHaFIxR3JFNVNfYVJWOHgweVh4dUxqMGtXLUpaSTc3dk02T0lTaGxTOHJtOEJTWGU1emMzcEhCWUxZeDR3Vm9VLUE1NEI1S1drNU5ZR1JIbFVn?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Bears Rome Odunze Injury Update Throws Week 1 Status In Doubt heavy.com",
-          "published": "Fri, 11 Sep 2026 18:49:19 GMT"
-        },
-        {
-          "title": "Bears injury report: WR Rome Odunze (calf) questionable to play Sunday vs. Panthers https://t.co/V2bTWvz3AT",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE54ekFzRjNwOEVidERNYnc3ekhZa2FuazVqWU1HUkJHX3VvbjV4LS1vbnlLN2pQTEZwaE9NY0gwUmFERUE2Uzl6OFBIa1BIaURuX2VtOHgyUnlSdVRMRUlTby04cw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Bears injury report: WR Rome Odunze (calf) questionable to play Sunday vs. Panthers https://t.co/V2bTWvz3AT x.com",
-          "published": "Fri, 11 Sep 2026 19:06:41 GMT"
-        }
-      ]
-    },
-    {
-      "id": "klint-kubiak-confirms-fernando-mendoza-no-2-qb-fce7f914",
-      "slug": "klint-kubiak-confirms-fernando-mendoza-no-2-qb-fce7f914",
-      "sport": "football",
-      "headline": "Klint Kubiak confirms Fernando Mendoza is the No. 2 QB",
-      "blurb": "Raiders head coach Klint Kubiak confirmed rookie Fernando Mendoza will serve as the backup to Kirk Cousins.",
-      "summary": "Raiders head coach Klint Kubiak confirmed rookie Fernando Mendoza will serve as the backup to Kirk Cousins. Aggregated from ProFootball Talk on NBC Sports, PFT feed.",
-      "category": "coach",
-      "published": "2026-09-11T20:23:28Z",
-      "updated": "2026-09-11T20:23:28Z",
-      "players": [
-        {
-          "key": "fernando mendoza",
-          "name": "Fernando Mendoza",
-          "slug": "fernando-mendoza",
-          "pos": "QB",
-          "team": "LV"
-        },
-        {
-          "key": "kirk cousins",
-          "name": "Kirk Cousins",
-          "slug": "kirk-cousins",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Klint Kubiak confirms Fernando Mendoza is the No. 2 QB",
-          "url": "https://sports.yahoo.com/articles/klint-kubiak-confirms-fernando-mendoza-202328661.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Raiders head coach Klint Kubiak confirmed rookie Fernando Mendoza will serve as the backup to Kirk Cousins.",
-          "published": "Fri, 11 Sep 2026 20:23:28 +0000"
-        },
-        {
-          "title": "Klint Kubiak confirms Fernando Mendoza is the No. 2 QB",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/klint-kubiak-confirms-fernando-mendoza-is-the-no-2-qb",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Raiders head coach Klint Kubiak confirmed rookie Fernando Mendoza will serve as the backup to Kirk Cousins.",
-          "published": "Fri, 11 Sep 2026 16:23:28 -0400"
         }
       ]
     }
