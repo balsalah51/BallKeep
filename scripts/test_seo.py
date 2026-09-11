@@ -145,7 +145,7 @@ def test_football_nav_keeps_every_link():
         "Weekly", "Opening", "Week 1 DST", "Week 1 K", "Week 1 Matchups", "Week 1 Waivers", "Injuries",
         "ADP", "Trade",
         "My Team",
-        "Players", "News", "The X", "Hot 'n' Cold",
+        "Touches", "Players", "News", "The X", "Hot 'n' Cold",
         "NFL", "MLB", "BPL",
         "The Fence (IDP)",
     ]
@@ -604,7 +604,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=53" in doc
+    assert "css/site.css?v=54" in doc
 
 
 if __name__ == "__main__":
