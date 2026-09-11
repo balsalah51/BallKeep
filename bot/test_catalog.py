@@ -622,7 +622,6 @@ def main():
         "week1-dst.html",
         "week1-kickers.html",
         "weekly.html",
-        "week1-opening.html",
         "weekly-qb.html",
         "waiver.html",
         "adp.html",

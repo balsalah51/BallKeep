@@ -592,7 +592,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=51" in doc
+    assert "css/site.css?v=52" in doc
 
 
 if __name__ == "__main__":
