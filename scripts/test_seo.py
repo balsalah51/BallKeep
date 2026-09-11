@@ -33,6 +33,13 @@ from seo import (  # noqa: E402
     sitemap_xml,
     video_jsonld,
     website_jsonld,
+    clip_meta,
+    howto_jsonld,
+    hub_search_bar,
+    hub_search_js,
+    llms_txt,
+    rank_card,
+    sr_h1,
 )
 
 
@@ -263,16 +270,68 @@ def test_sitemap_images_and_website():
     xml = sitemap_xml([
         "https://ballkeep.com/",
         {"loc": "https://ballkeep.com/players/josh-allen.html", "image": "https://ballkeep.com/img/players/josh-allen.png", "image_title": "Josh Allen"},
+        {"loc": "https://ballkeep.com/news/chase.html", "lastmod": "2026-09-10"},
     ], "2026-08-27")
     assert "xmlns:image=" in xml
     assert "josh-allen.png" in xml
+    assert "<lastmod>2026-09-10</lastmod>" in xml
     site = website_jsonld("Ball Keep")
     assert site["@type"] == "WebSite"
     assert site["url"] == "https://ballkeep.com"
+    assert site["potentialAction"]["@type"] == "SearchAction"
 
 
 def test_clip():
     assert len(clip("word " * 80, 168)) <= 168
+
+
+def test_clip_meta_no_ellipsis():
+    short = clip_meta("Short description.")
+    assert short == "Short description."
+    long = clip_meta("The Board is Ball Keep's redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players. 50% Yates, FantasyPros ECR, and Karabell, 50% every other desk that ranked the name. Kickers and DST omitted.")
+    assert "…" not in long
+    assert len(long) <= 155
+    assert long.endswith(".") or " " in long
+
+
+def test_searchaction_and_schema():
+    site = website_jsonld("Ball Keep")
+    assert site["potentialAction"]["@type"] == "SearchAction"
+    assert "{search_term_string}" in site["potentialAction"]["target"]["urlTemplate"]
+    html = head_tags(
+        title="The Keep",
+        description="Superflex dynasty top 400.",
+        canonical="https://ballkeep.com/the-keep.html",
+        image="img/logo.jpg",
+        brand="Ball Keep",
+        schema_type="CollectionPage",
+    )
+    assert "CollectionPage" in html
+    assert "twitter:image:alt" in html
+    assert "sameAs" in html
+    howto = howto_jsonld(
+        "How to price a trade",
+        "Add both sides.",
+        [("Pick a board", "Choose Superflex or PPR."), ("Add both sides", "Rank becomes BK Value.")],
+        url="https://ballkeep.com/trade.html",
+    )
+    assert howto["@type"] == "HowTo"
+    assert len(howto["step"]) == 2
+    txt = llms_txt()
+    assert "https://ballkeep.com/the-keep.html" in txt
+    assert "https://ballkeep.com/bb/" in txt
+    card = rank_card("The Keep", 4, 9769, "../the-keep.html")
+    assert 'href="../the-keep.html"' in card
+    assert "class=\"rank-card\"" in card
+    assert sr_h1("Fantasy Football Superflex Dynasty Rankings").startswith('<h1 class="sr-only">')
+    bar = hub_search_bar()
+    assert "hub-search-input" in bar
+    js = hub_search_js()
+    assert "search_term_string" not in js
+    assert "applyHubFilter" in js
+    bots = robots_txt(["https://ballkeep.com/sitemap.xml"])
+    assert "GPTBot" in bots
+    assert "ClaudeBot" in bots
 
 
 def test_rank_search_bar():

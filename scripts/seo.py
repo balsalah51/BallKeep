@@ -79,7 +79,12 @@ def sports_footer(here: str, depth: int = 0) -> str:
 
 def legal_links(depth: int = 0) -> str:
     prefix = "../" * depth
-    return f'<p class="legal-links"><a href="{prefix}privacy.html">Privacy Policy</a></p>'
+    return (
+        f'<p class="legal-links">'
+        f'<a href="{prefix}explore.html">Site map</a> · '
+        f'<a href="{prefix}privacy.html">Privacy Policy</a>'
+        f"</p>"
+    )
 
 
 def esc(s):
@@ -145,6 +150,163 @@ def clip(text: str, n: int = 168) -> str:
     return (cut or t[: n - 1]).rstrip(".,;:") + "…"
 
 
+def clip_meta(text: str, n: int = 155) -> str:
+    """Meta description: complete words, no ellipsis. Prefer a finished sentence."""
+    t = re.sub(r"\s+", " ", (text or "")).strip()
+    if len(t) <= n:
+        return t
+    cut = t[:n].rsplit(" ", 1)[0]
+    cut = (cut or t[:n]).rstrip(".,;:…")
+    if ". " in cut:
+        sent = cut.rsplit(". ", 1)[0] + "."
+        if len(sent) >= 80:
+            return sent
+    return cut
+
+
+def sr_h1(text: str) -> str:
+    t = (text or "").strip()
+    if not t:
+        return ""
+    return f'<h1 class="sr-only">{esc(t)}</h1>'
+
+
+def rank_card(label: str, rank, value=None, href: str | None = None) -> str:
+    """One Keep/Board rank chip. Links to the board when href is set."""
+    try:
+        val_txt = f"{int(value):,}" if value not in (None, "") else ""
+    except (TypeError, ValueError):
+        val_txt = str(value or "")
+    extra = f"<span>BK {esc(val_txt)}</span>" if val_txt else ""
+    inner = f"<small>{esc(label)}</small><strong>#{esc(rank)}</strong>{extra}"
+    if href:
+        return f'<a class="rank-card" href="{esc(href)}">{inner}</a>'
+    return f'<div class="rank-card">{inner}</div>'
+
+
+def hub_search_bar() -> str:
+    return (
+        '<p class="rank-search hub-search">'
+        '<input type="search" class="hub-search-input rank-search-input" '
+        'placeholder="Find a player" aria-label="Find a player" '
+        'autocomplete="off" spellcheck="false">'
+        "</p>"
+    )
+
+
+def hub_search_js() -> str:
+    """Filter player-hub cards by ?q= and position chips. Powers WebSite SearchAction."""
+    return """<script>
+(function () {
+  function needle() {
+    var inp = document.querySelector(".hub-search-input");
+    var q = inp ? String(inp.value || "").trim().toLowerCase() : "";
+    if (!q) {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var fromUrl = String(params.get("q") || "").trim();
+        if (fromUrl && inp && !inp.value) inp.value = fromUrl;
+        q = fromUrl.toLowerCase();
+      } catch (err) {}
+    }
+    return q;
+  }
+  function wantPos() {
+    var btn = document.querySelector(".filters button.active");
+    if (!btn) return "all";
+    return String(btn.getAttribute("data-pos") || "all").toLowerCase();
+  }
+  function applyHubFilter() {
+    var q = needle();
+    var pos = wantPos();
+    document.querySelectorAll(".player-grid .player-card, .player-grid .tile").forEach(function (card) {
+      var hay = (card.getAttribute("data-name") || card.textContent || "").toLowerCase();
+      var nameOk = !q || hay.indexOf(q) !== -1;
+      var cardPos = (card.getAttribute("data-pos") || "").toLowerCase();
+      var cardGroup = (card.getAttribute("data-group") || "").toLowerCase();
+      var posOk = pos === "all" || cardPos === pos || cardGroup === pos;
+      card.style.display = (nameOk && posOk) ? "" : "none";
+    });
+  }
+  window.applyHubFilter = applyHubFilter;
+  document.addEventListener("input", function (e) {
+    if (e.target && e.target.classList && e.target.classList.contains("hub-search-input")) {
+      applyHubFilter();
+    }
+  });
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest(".filters button");
+    if (!b) return;
+    var box = b.closest(".filters");
+    if (box) {
+      box.querySelectorAll("button").forEach(function (x) { x.classList.remove("active"); });
+      b.classList.add("active");
+    }
+    applyHubFilter();
+  });
+  applyHubFilter();
+})();
+</script>
+"""
+
+
+def howto_jsonld(name: str, description: str, steps: list, url: str = "") -> dict | None:
+    """steps: [(name, text), ...]"""
+    shown = [(str(n or "").strip(), str(t or "").strip()) for n, t in (steps or []) if n and t]
+    if len(shown) < 2:
+        return None
+    obj = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": name,
+        "description": clip_meta(description, 200),
+        "step": [
+            {"@type": "HowToStep", "position": i, "name": n, "text": t}
+            for i, (n, t) in enumerate(shown, 1)
+        ],
+    }
+    if url:
+        obj["url"] = url
+    return obj
+
+
+def llms_txt() -> str:
+    return """# Ball Keep
+> Fantasy rankings for NFL, MLB, NBA, and Premier League. Super Aggregates, BK Value trade calculators, player files, and hourly news.
+
+Site: https://ballkeep.com
+
+## Football (Ball Keep)
+- Superflex dynasty top 400: https://ballkeep.com/the-keep.html
+- Redraft PPR: https://ballkeep.com/board.html
+- Superflex + IDP: https://ballkeep.com/the-fence.html
+- Trade calculators: https://ballkeep.com/trade.html
+- Player files: https://ballkeep.com/players/
+- Hourly NFL news: https://ballkeep.com/news.html
+- Week 1 rankings: https://ballkeep.com/weekly.html
+
+## Baseball (BaseKeep)
+- Dynasty top 400: https://ballkeep.com/bb/
+- The Farm prospects: https://ballkeep.com/bb/the-farm.html
+- News: https://ballkeep.com/bb/news.html
+
+## Basketball (BasketKeep)
+- Dynasty top 400: https://ballkeep.com/bk/
+- News: https://ballkeep.com/bk/news.html
+
+## Premier League (PitchKeep)
+- The Premier hybrid 400: https://ballkeep.com/pl/
+- The Pitch (Sleeper BPL): https://ballkeep.com/pl/the-pitch.html
+- News: https://ballkeep.com/pl/news.html
+
+## Feeds
+- Football RSS: https://ballkeep.com/feed.xml
+- Sitemap: https://ballkeep.com/sitemap.xml
+- News sitemap: https://ballkeep.com/sitemap-news.xml
+- HTML site map: https://ballkeep.com/explore.html
+"""
+
+
 def grafs_html(kicker: str, grafs, limit: int = 2) -> str:
     grafs = [g for g in (grafs or []) if g]
     if not grafs:
@@ -200,10 +362,18 @@ def org_jsonld(brand: str, brand_url: str | None = None) -> dict:
     return obj
 
 
-def website_jsonld(brand: str, brand_url: str | None = None) -> dict:
+SEARCH_TEMPLATES = {
+    "Ball Keep": f"{SITE}/players/index.html?q={{search_term_string}}",
+    "BasketKeep": f"{SITE}/bk/players/index.html?q={{search_term_string}}",
+    "BaseKeep": f"{SITE}/bb/players/index.html?q={{search_term_string}}",
+    "PitchKeep": f"{SITE}/pl/players/index.html?q={{search_term_string}}",
+}
+
+
+def website_jsonld(brand: str, brand_url: str | None = None, search_url: str | None = None) -> dict:
     meta = _brand_meta(brand, brand_url)
     home = meta["url"]
-    return {
+    obj = {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": brand,
@@ -211,6 +381,14 @@ def website_jsonld(brand: str, brand_url: str | None = None) -> dict:
         "inLanguage": "en-US",
         "publisher": org_jsonld(brand, brand_url),
     }
+    target = search_url if search_url is not None else SEARCH_TEMPLATES.get(brand)
+    if target:
+        obj["potentialAction"] = {
+            "@type": "SearchAction",
+            "target": {"@type": "EntryPoint", "urlTemplate": target},
+            "query-input": "required name=search_term_string",
+        }
+    return obj
 
 
 def head_tags(
@@ -227,28 +405,32 @@ def head_tags(
     brand_url: str | None = None,
     robots: str | None = None,
     rss: tuple | None = None,
+    schema_type: str | None = None,
 ) -> str:
     full = branded(title, brand)
-    desc = clip(description, 168)
+    desc = clip_meta(description, 155)
     meta = _brand_meta(brand, brand_url)
     img = abs_img(image, meta["logo"])
     logo = abs_img(meta["logo"], meta["logo"])
     home = meta["url"]
     robots_content = robots or "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    publisher = {
+        "@type": "Organization",
+        "name": brand,
+        "url": home,
+        "logo": {"@type": "ImageObject", "url": logo},
+    }
+    if meta.get("sameAs"):
+        publisher["sameAs"] = list(meta["sameAs"])
     jsonld = {
         "@context": "https://schema.org",
-        "@type": "WebPage",
+        "@type": schema_type or "WebPage",
         "name": full,
         "description": desc,
         "url": canonical,
         "inLanguage": "en-US",
         "isPartOf": {"@type": "WebSite", "name": brand, "url": home},
-        "publisher": {
-            "@type": "Organization",
-            "name": brand,
-            "url": home,
-            "logo": {"@type": "ImageObject", "url": logo},
-        },
+        "publisher": publisher,
         "primaryImageOfPage": {"@type": "ImageObject", "url": img},
     }
     if published:
@@ -300,6 +482,7 @@ def head_tags(
         f'  <meta name="twitter:title" content="{esc(full)}" />\n'
         f'  <meta name="twitter:description" content="{esc(desc)}" />\n'
         f'  <meta name="twitter:image" content="{esc(img)}" />\n'
+        f'  <meta name="twitter:image:alt" content="{esc(full)}" />\n'
         f"{scripts}\n"
         f'  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" '
         f'crossorigin="anonymous"></script>'
@@ -1127,6 +1310,27 @@ def robots_txt(sitemaps: list) -> str:
         "Allow: /",
         "",
         "User-agent: Googlebot-Image",
+        "Allow: /",
+        "",
+        "User-agent: GPTBot",
+        "Allow: /",
+        "",
+        "User-agent: ChatGPT-User",
+        "Allow: /",
+        "",
+        "User-agent: ClaudeBot",
+        "Allow: /",
+        "",
+        "User-agent: PerplexityBot",
+        "Allow: /",
+        "",
+        "User-agent: Google-Extended",
+        "Allow: /",
+        "",
+        "User-agent: Applebot-Extended",
+        "Allow: /",
+        "",
+        "User-agent: Amazonbot",
         "Allow: /",
         "",
     ]

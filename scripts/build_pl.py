@@ -41,6 +41,7 @@ from seo import (  # noqa: E402
     head_tags,
     legal_links,
     person_jsonld,
+    rank_card,
     rank_list_jsonld,
     rank_search_bar,
     rank_search_key,
@@ -49,10 +50,13 @@ from seo import (  # noqa: E402
     related_stories_html,
     sports_footer,
     sports_top,
+    sr_h1,
     strip_em,
     value_bars,
     video_jsonld,
     website_jsonld,
+    hub_search_bar,
+    hub_search_js,
 )
 
 
@@ -114,8 +118,9 @@ def masthead(kicker, mark, sub, url="ballkeep.com/pl"):
         f'<div class="mast-row">'
         f'<img class="mast-mark" src="../img/pl-logo.jpg" alt="PitchKeep circular soccer logo" />'
         f'<div class="mast-copy">'
+        f"{sr_h1('Fantasy Premier League Rankings')}"
         f'<p class="mast-kicker">{esc(kicker)}</p>'
-        f"<h1>{mark}</h1>"
+        f'<p class="mast-title">{mark}</p>'
         f'<span class="mast-rule" aria-hidden="true"></span>'
         f'<p class="mast-sub">{esc(sub)}</p>'
         f'<p class="mast-url">{esc(url)}</p>'
@@ -127,12 +132,12 @@ def masthead(kicker, mark, sub, url="ballkeep.com/pl"):
 
 PL_SEO = {
     "index.html": (
-        "PitchKeep | The Premier Hybrid Rankings and Sleeper BPL 2025",
-        "Purple-and-pitch boards for the Premier League. The Premier is 25 published 2026/27 pro lists. The Pitch is Sleeper only. Haaland is #1.",
+        "Fantasy Premier League Rankings | PitchKeep",
+        "2026/27 Premier League rankings from 25 pro lists. The Premier is the hybrid 400. The Pitch is Sleeper BPL 2025. Haaland is #1.",
         "img/pl-hero.jpg",
     ),
     "the-premier.html": (
-        "The Premier - Hybrid Premier League Rankings (Top 400) | PitchKeep",
+        "Fantasy Premier League Rankings (Top 400) | PitchKeep",
         "PitchKeep flagship 400: 25 published 2026/27 pro lists. Haaland leads the board. Palmer, Saka, and Isak climb off last-year volume. Full names and ages on the row.",
         "img/pl-logo.jpg",
     ),
@@ -320,7 +325,7 @@ def pl_nav_target(href: str, path: str, depth: int) -> str:
 
 def pl_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None,
             crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
-            robots=None):
+            robots=None, canonical=None, schema_type=None):
     prefix = "../" * depth
     links = []
     for href, label in PL_NAV:
@@ -341,8 +346,8 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-{head_tags(title=full_title, description=desc, canonical=canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=38" />
+{head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=39" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
 <body>
@@ -387,6 +392,7 @@ def pl_board_page(title, path, body, extra_js="", depth=1, extra_jsonld=None):
         title, path, body + extra, extra_js, depth=depth,
         crumbs=breadcrumbs([("PitchKeep", home), (title, None)]),
         extra_jsonld=ld,
+        schema_type="CollectionPage",
     )
 
 
@@ -811,22 +817,19 @@ def take_html(grafs):
 
 def list_cards(lists, r):
     items = [
-        ("The Premier", lists.get("The Premier"), r.get("value") if lists.get("The Premier") == r.get("premier") else None),
-        ("The Pitch", lists.get("The Pitch"), None),
-        ("Attack", lists.get("Attack"), None),
-        ("Midfield", lists.get("Midfield"), None),
-        ("Defence", lists.get("Defence"), None),
-        ("Keepers", lists.get("Keepers"), None),
+        ("The Premier", lists.get("The Premier"), r.get("value") if lists.get("The Premier") == r.get("premier") else None, "../the-premier.html"),
+        ("The Pitch", lists.get("The Pitch"), None, "../the-pitch.html"),
+        ("Attack", lists.get("Attack"), None, "../attack.html"),
+        ("Midfield", lists.get("Midfield"), None, "../midfield.html"),
+        ("Defence", lists.get("Defence"), None, "../defence.html"),
+        ("Keepers", lists.get("Keepers"), None, "../keepers.html"),
     ]
     cards = []
-    for label, rank, val in items:
+    for label, rank, val, href in items:
         if not rank:
             continue
         value = bk_value(rank)
-        cards.append(
-            f'<div class="rank-card"><small>{esc(label)}</small>'
-            f"<strong>#{rank}</strong><span>BK {int(value):,}</span></div>"
-        )
+        cards.append(rank_card(label, rank, value, href))
     return f'<div class="rank-grid">{"".join(cards)}</div>' if cards else ""
 
 
@@ -928,7 +931,7 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp, news_by_player=No
     {neighbors(ordered, i, "On The Premier nearby")}
     <p class="note" style="margin-top:18px"><a href="index.html">All players</a> · <a href="../the-premier.html">The Premier</a> · <a href="../the-pitch.html">The Pitch</a> · <a href="../news.html">PK News</a> · <a href="../trade.html">Calculator</a></p>
     """
-        seo_title = f"{label} The Premier Rank #{prem_rk or r['bk']} ({r.get('pos') or ''} {r.get('team') or ''})".strip()
+        seo_title = f"{label} Fantasy Premier League Rankings (#{prem_rk or r['bk']} {r.get('pos') or ''} {r.get('team') or ''})".strip()
         seo_desc = clip(
             f"{label} is PitchKeep Premier #{prem_rk or r['bk']}. "
             f"Sleeper BPL 2025 {r.get('sleeper_pts') or '-'} pts ({r.get('gls') or 0}G {r.get('ast') or 0}A). "
@@ -974,7 +977,7 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp, news_by_player=No
         )
         keep_html.add(f"{slug}.html")
         cards.append(
-            f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}" data-group="{esc(r.get("group") or "")}">'
+            f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}" data-group="{esc(r.get("group") or "")}" data-name="{esc((label or "").lower())}">'
             f'<img src="../../{esc(img)}" alt="{esc(face_alt(label))}" />'
             f'<h3>{esc(label)}</h3>'
             f'<p>{esc(r.get("pos") or "")} {esc(r.get("team") or "")} · Premier #{prem_rk or "-"}</p></a>'
@@ -1015,6 +1018,7 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp, news_by_player=No
     <p class="kicker">Player files</p>
     <h1>The Premier, one name at a time</h1>
     <p class="note">Headshot, 2025/26 line, boards, tape.</p>
+    {hub_search_bar()}
     {flt}
     <div class="player-grid" id="pl-cards">{''.join(cards)}</div>
     {also_on_desk([
@@ -1024,7 +1028,7 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp, news_by_player=No
         ("../trade.html", "Trade Calculators", "Price any name."),
     ])}
     """
-    hub_js = js.replace("tbody tr", "#pl-cards .tile")
+    hub_js = hub_search_js()
     write("pl/players/index.html", pl_page(
         "Players", "players/index.html", hub, hub_js, depth=2,
         crumbs=breadcrumbs([("PitchKeep", "../index.html"), ("Players", None)]),

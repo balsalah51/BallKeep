@@ -212,7 +212,8 @@ def main():
 
     allen = html_of("players/josh-allen.html")
     allen_title = page_title(allen)
-    assert "Rank #1" in allen_title, allen_title
+    assert "Fantasy Football Rankings" in allen_title, allen_title
+    assert "#1" in allen_title, allen_title
     assert generic not in meta_desc(allen)
     assert "bar-chart" in allen
     assert "<h1>Josh Allen</h1>" in allen
@@ -225,12 +226,12 @@ def main():
 
     haaland = html_of("pl/players/erling-haaland.html")
     haaland_title = page_title(haaland)
-    assert "Pitch" in haaland_title or "317" in haaland_title, haaland_title
+    assert "Fantasy Premier League Rankings" in haaland_title, haaland_title
     assert "bar-chart" in haaland
     assert "<h1>Erling Haaland</h1>" in haaland
 
     ohtani = html_of("bb/players/shohei-ohtani.html")
-    assert "Rank #" in page_title(ohtani)
+    assert "Fantasy Baseball Rankings" in page_title(ohtani)
     assert "bar-chart" in ohtani
 
     home = html_of("index.html")

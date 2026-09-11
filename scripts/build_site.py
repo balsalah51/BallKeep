@@ -55,6 +55,7 @@ from seo import (  # noqa: E402
     canon,
     card_alt,
     clip,
+    clip_meta,
     draft_check_js,
     face_alt,
     faq_html,
@@ -62,9 +63,14 @@ from seo import (  # noqa: E402
     flatten_nav_groups,
     grouped_nav,
     head_tags,
+    howto_jsonld,
+    hub_search_bar,
+    hub_search_js,
     legal_links,
+    llms_txt,
     news_sitemap_xml,
     person_jsonld,
+    rank_card,
     rank_list_jsonld,
     rank_search_bar,
     rank_search_key,
@@ -76,6 +82,7 @@ from seo import (  # noqa: E402
     sitemap_xml,
     sports_footer,
     sports_top,
+    sr_h1,
     strip_em,
     strip_em_tree,
     value_bars,
@@ -753,7 +760,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 47
+CSS_VER = 48
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -906,15 +913,17 @@ def wordmark():
     )
 
 
-def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ball Keep circular logo", art="img/mast-ballkeep.jpg"):
+def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ball Keep circular logo", art="img/mast-ballkeep.jpg", sr_title=None):
+    heading = f'<p class="mast-title">{mark}</p>' if sr_title else f"<h1>{mark}</h1>"
     return (
         f'<section class="hero masthead" aria-label="{esc(kicker)}">'
         f'<div class="hero-card">'
         f'<div class="mast-row">'
         f'<img class="mast-mark" src="{esc(logo)}" alt="{esc(alt)}" />'
         f'<div class="mast-copy">'
+        f"{sr_h1(sr_title) if sr_title else ''}"
         f'<p class="mast-kicker">{esc(kicker)}</p>'
-        f"<h1>{mark}</h1>"
+        f"{heading}"
         f'<span class="mast-rule" aria-hidden="true"></span>'
         f'<p class="mast-sub">{esc(sub)}</p>'
         f'<p class="mast-url">{esc(url)}</p>'
@@ -957,48 +966,48 @@ ROOKIE_SOURCES = [
 
 FB_SEO = {
     "index.html": (
-        "Ball Keep | Superflex Dynasty Rankings and Redraft PPR",
-        "The Keep is Superflex Dynasty - 33 boards, top 400. The Board is Redraft PPR. BK Value trade calculator, The X, and hourly BK News.",
+        "Fantasy Football Superflex Dynasty Rankings | Ball Keep",
+        "2026 Superflex dynasty and redraft PPR rankings from 33 boards. BK Value trade calculator, player files, and hourly NFL news.",
         "img/hero.jpg",
     ),
     "the-keep.html": (
-        "The Keep 2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Ball Keep Super Aggregate Superflex dynasty top 400, rebuilt September 9, 2026. 50% the four long boards, 50% every other board that ranked the player. Rank 1 is 12,000 BK Value.",
+        "2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
+        "Superflex dynasty top 400 from 33 boards, rebuilt September 9, 2026. Rank 1 is 12,000 BK Value. Unranked names are skipped.",
         "img/logo.jpg",
     ),
     "board.html": (
-        "The Board - 2026 Redraft PPR Rankings | Ball Keep",
-        "The Board is Ball Keep's redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players. 50% Yates, FantasyPros ECR, and Karabell, 50% every other desk that ranked the name. Kickers and DST omitted.",
+        "2026 Fantasy Football PPR Rankings | The Board | Ball Keep",
+        "Redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players from 15 boards. Kickers and DST omitted.",
         "img/logo.jpg",
     ),
     "the-x.html": (
-        "The X - Football Memes from X | Ball Keep",
-        "Fun tape, not news. Memes and shitposts pulled from X via Google News. Pictures when the wire carries them.",
+        "Football Memes from X | The X | Ball Keep",
+        "Fun tape, not news. NFL memes and shitposts pulled from X via Google News, with pictures when the wire carries them.",
         "img/logo.jpg",
     ),
     "redraft-ppr.html": (
-        "The Board - 2026 Redraft PPR Rankings | Ball Keep",
-        "The Board is Ball Keep's redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players. 50% Yates, FantasyPros ECR, and Karabell, 50% every other desk that ranked the name. Kickers and DST omitted.",
+        "2026 Fantasy Football PPR Rankings | The Board | Ball Keep",
+        "Redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players. Moved to The Board.",
         "img/logo.jpg",
     ),
     "redraft-superflex.html": (
-        "2026 Superflex Redraft Rankings | Ball Keep",
-        "This-year Superflex redraft. Quarterbacks stay expensive. Built from The Keep SF premium plus the PPR board.",
+        "2026 Superflex Redraft Rankings | Fantasy Football | Ball Keep",
+        "This-year Superflex redraft rankings. Quarterbacks stay expensive. Built from The Keep SF premium plus the PPR board.",
         "img/logo.jpg",
     ),
     "the-classic.html": (
-        "The Classic - 2026 Half-PPR Rankings | Ball Keep",
-        "The Classic is Ball Keep's 0.5 PPR redraft list. Same PPR Super Aggregate as The Board, then half the Standard tax: RB −2.25, WR +1.5, TE +1, QB +0.25.",
+        "2026 Half-PPR Rankings | The Classic | Ball Keep",
+        "0.5 PPR redraft list. Same PPR Super Aggregate as The Board, then half the Standard tax: RB -2.25, WR +1.5, TE +1.",
         "img/logo.jpg",
     ),
     "redraft-standard.html": (
         "2026 Fantasy Football Standard Rankings (Top 200) | Ball Keep",
-        "Standard (no PPR) redraft board. Same PPR Super Aggregate as The Board, then RB −4.5 ranks, WR +3, TE +2. Bijan, Gibbs, and CMC climb.",
+        "Standard (no PPR) redraft board. Same PPR Super Aggregate as The Board, then RB -4.5, WR +3, TE +2. Bijan and Gibbs climb.",
         "img/logo.jpg",
     ),
     "rookies-2026.html": (
-        "2026 NFL Rookie Superflex Rankings | Ball Keep",
-        "Drafted-class Superflex rookie Super Aggregate. FantasyPros ECR is the long-core half; Dynasty Dealer and PFF are the extras. Love, Mendoza, and Tate lock the top.",
+        "2026 NFL Rookie Superflex Rankings | Fantasy Football | Ball Keep",
+        "Drafted-class Superflex rookie Super Aggregate. FantasyPros ECR is the long-core half. Love, Mendoza, and Tate lock the top.",
         "img/logo.jpg",
     ),
     "hot-n-cold.html": (
@@ -1008,22 +1017,22 @@ FB_SEO = {
     ),
     "trade.html": (
         "Fantasy Football Trade Calculator (Superflex, 1QB, PPR) | Ball Keep",
-        "Four calculators. Rank becomes BK Value on a decaying curve (12,000 at 1.01). Fair is within 8%. Superflex, 1QB, PPR, and standard.",
+        "Six calculators. Rank becomes BK Value on a decaying curve (12,000 at 1.01). Fair is within 8%. Superflex, 1QB, PPR, and standard.",
         "img/logo.jpg",
     ),
     "recent-trades.html": (
-        "Recent Superflex Dynasty Trades | Ball Keep",
+        "Recent Superflex Dynasty Trades | Fantasy Football | Ball Keep",
         "Type a player. See every Superflex package he actually moved in, with BK Value on both sides.",
         "img/logo.jpg",
     ),
     "news.html": (
-        "BK News - NFL Injury, Roster, and Coach Tape | Ball Keep",
-        "Hourly football injury, roster, and coach reports clustered from league RSS, Google News, X, and YouTube, linked to Keep player files.",
+        "NFL Injury News and Fantasy Football Wire | Ball Keep",
+        "Hourly football injury, roster, and coach reports clustered from RSS, Google News, X, and YouTube, linked to player files.",
         "img/logo.jpg",
     ),
     "players/index.html": (
-        "NFL Dynasty Player Files - Keep, Redraft, Tape | Ball Keep",
-        "Every Keep 400 and Board name: Superflex Keep rank, Redraft PPR Board rank, BK Value, 2025 tape, and BK News hits.",
+        "NFL Fantasy Football Player Rankings | Ball Keep",
+        "Every Keep 400 and Board name: Superflex Keep rank, Redraft PPR rank, BK Value, 2025 tape, and BK News hits.",
         "img/logo.jpg",
     ),
     "nfl-schedule.html": (
@@ -1043,42 +1052,42 @@ FB_SEO = {
     ),
     "defenses.html": (
         "2026 Fantasy Football DST Rankings | Ball Keep",
-        "Top Defenses is Ball Keep's DST Super Aggregate. 50% FantasyPros, NBC, and STACKED, 50% every other desk that ranked the club. Houston leads the board.",
+        "DST Super Aggregate. 50% FantasyPros, NBC, and STACKED, 50% every other desk that ranked the club. Houston leads.",
         "img/logo.jpg",
     ),
     "kickers.html": (
         "2026 Fantasy Football Kicker Rankings | Ball Keep",
-        "Top Kickers is Ball Keep's kicker Super Aggregate. 50% FantasyPros, Draft Sharks, and RotoWire, 50% every other desk that ranked the name. Aubrey leads. Fairbairn and Dicker follow.",
+        "Kicker Super Aggregate. 50% FantasyPros, Draft Sharks, and RotoWire. Aubrey leads. Fairbairn and Dicker follow.",
         "img/logo.jpg",
     ),
     "weekly.html": (
-        "Week 1 2026 Fantasy Football Rankings | Ball Keep",
-        "Week 1 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros, RotoWire, and 4for4. Unranked is a skip.",
+        "Week 1 Fantasy Football Rankings 2026 | Ball Keep",
+        "Week 1 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros, RotoWire, and 4for4.",
         "img/logo.jpg",
     ),
     "weekly-qb.html": (
-        "Week 1 2026 QB Rankings | Ball Keep",
+        "Week 1 Fantasy Football QB Rankings 2026 | Ball Keep",
         "Week 1 quarterback Super Aggregate from four weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-rb.html": (
-        "Week 1 2026 RB Rankings | Ball Keep",
+        "Week 1 Fantasy Football RB Rankings 2026 | Ball Keep",
         "Week 1 running back Super Aggregate from four weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-wr.html": (
-        "Week 1 2026 WR Rankings | Ball Keep",
+        "Week 1 Fantasy Football WR Rankings 2026 | Ball Keep",
         "Week 1 receiver Super Aggregate from four weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-te.html": (
-        "Week 1 2026 TE Rankings | Ball Keep",
+        "Week 1 Fantasy Football TE Rankings 2026 | Ball Keep",
         "Week 1 tight end Super Aggregate from four weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "waiver.html": (
         "Week 1 Fantasy Football Waiver Wire | Ball Keep",
-        "Week 1 consensus waivers before kickoff. Super Aggregate of published pickup lists. 50% FantasyPros WW ECR. Unranked is a skip.",
+        "Week 1 consensus waivers before kickoff. Super Aggregate of published pickup lists. 50% FantasyPros WW ECR.",
         "img/logo.jpg",
     ),
     "adp.html": (
@@ -1087,33 +1096,33 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "injuries.html": (
-        "NFL Injury Report | Ball Keep",
-        "Skill-position injury designations from ESPN club tables, tied to Week 1 boards.",
+        "NFL Injury Report | Fantasy Football | Ball Keep",
+        "Skill-position injury designations from ESPN club tables, tied to Week 1 fantasy football boards.",
         "img/logo.jpg",
     ),
     "depth-charts.html": (
-        "2026 NFL Depth Charts | Ball Keep",
+        "2026 NFL Depth Charts | Fantasy Football | Ball Keep",
         "Sleeper depth order for all 32 clubs. First name in a cell is the listed starter.",
         "img/logo.jpg",
     ),
     "week1-dst.html": (
-        "Week 1 2026 Fantasy Football DST Rankings | Ball Keep",
-        "Week 1 team DST Super Aggregate of 16 weekly boards. 50% FantasyPros ECR and Draft Sharks consensus. Jacksonville against Cleveland leads the stream.",
+        "Week 1 Fantasy Football DST Rankings 2026 | Ball Keep",
+        "Week 1 team DST Super Aggregate of 16 weekly boards. Jacksonville against Cleveland leads the stream.",
         "img/logo.jpg",
     ),
     "week1-kickers.html": (
-        "Week 1 2026 Fantasy Football Kicker Rankings | Ball Keep",
+        "Week 1 Fantasy Football Kicker Rankings 2026 | Ball Keep",
         "Week 1 kicker Super Aggregate of 16 weekly boards. 50% FantasyPros ECR. Aubrey and Dicker lead the stream.",
         "img/logo.jpg",
     ),
     "week1-matchups.html": (
-        "Week 1 2026 NFL Matchups and Win Predictions | Ball Keep",
+        "Week 1 NFL Matchups and Win Predictions 2026 | Ball Keep",
         "Week 1 win picks mashed from 26 published sources: CBS experts, sportsbooks, power ranks, and models.",
         "img/logo.jpg",
     ),
     "the-fence.html": (
-        "The Fence 2026 Superflex + IDP Rankings | Ball Keep",
-        "The Fence is Ball Keep's mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. Josh Allen opens the board. Aidan Hutchinson is the first IDP.",
+        "2026 Superflex IDP Rankings | The Fence | Ball Keep",
+        "Mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. Josh Allen opens. Hutchinson is first IDP.",
         "img/logo.jpg",
     ),
     "privacy.html": (
@@ -1122,38 +1131,43 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "discord.html": (
-        "Ball Keep Discord Bot - Ranks, Trades, Tape",
-        "The circular mark plus a Discord bot that searches The Keep, runs the trade calculator, drops tape, and can publish the site into a server.",
+        "Ball Keep Discord Bot - Fantasy Football Ranks and Trades",
+        "A Discord bot that searches The Keep, runs the trade calculator, drops tape, and can publish the site into a server.",
         "img/logo.jpg",
     ),
     "trade-superflex.html": (
-        "Superflex Dynasty Trade Calculator | Ball Keep",
+        "Superflex Dynasty Trade Calculator | Fantasy Football | Ball Keep",
         "Add two sides. Superflex Keep ranks become BK Value (12,000 at 1.01). Fair is within 8%. Future picks map to equivalent ranks.",
         "img/logo.jpg",
     ),
     "trade-sf-redraft.html": (
-        "Superflex Redraft Trade Calculator | Ball Keep",
+        "Superflex Redraft Trade Calculator | Fantasy Football | Ball Keep",
         "Trade calculator on the Redraft Superflex ranks. This-year Superflex. Fair is within 8%.",
         "img/logo.jpg",
     ),
     "trade-1qb.html": (
-        "1QB Dynasty Trade Calculator | Ball Keep",
+        "1QB Dynasty Trade Calculator | Fantasy Football | Ball Keep",
         "Same Superflex ranks, quarterbacks taxed to 38% of BK Value. Fair is within 8%.",
         "img/logo.jpg",
     ),
     "trade-ppr.html": (
-        "PPR Redraft Trade Calculator | Ball Keep",
+        "PPR Redraft Trade Calculator | Fantasy Football | Ball Keep",
         "Trade calculator on The Board Redraft PPR ranks. Rank becomes BK Value. Fair is within 8%.",
         "img/logo.jpg",
     ),
     "trade-standard.html": (
-        "Standard Redraft Trade Calculator | Ball Keep",
+        "Standard Redraft Trade Calculator | Fantasy Football | Ball Keep",
         "Trade calculator on the 2026 standard (no PPR) board. Rank becomes BK Value. Fair is within 8%.",
         "img/logo.jpg",
     ),
     "trade-classic.html": (
-        "The Classic Half-PPR Trade Calculator | Ball Keep",
+        "Half-PPR Trade Calculator | The Classic | Ball Keep",
         "Trade calculator on The Classic 0.5 PPR ranks. Rank becomes BK Value. Fair is within 8%.",
+        "img/logo.jpg",
+    ),
+    "explore.html": (
+        "Site Map | Ball Keep",
+        "Every Ball Keep, BaseKeep, BasketKeep, and PitchKeep board, calculator, news hub, and player hub in one crawlable list.",
         "img/logo.jpg",
     ),
 }
@@ -1399,7 +1413,7 @@ FB_ALSO = {
 
 def page(title, path, body, extra_js="", depth=0, description=None, image=None, doc_title=None,
          crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
-         robots=None):
+         robots=None, canonical=None, schema_type=None):
     packed = FB_SEO.get(path)
     full_title = doc_title or (packed[0] if packed else f"{title} | Ball Keep")
     desc = description or (packed[1] if packed else f"{title} on Ball Keep. Superflex dynasty rankings, BK Value trade calculator, and BK News. Updated {UPDATED}.")
@@ -1411,7 +1425,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-{head_tags(title=full_title, description=desc, canonical=canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots)}
+{head_tags(title=full_title, description=desc, canonical=canonical or canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
   <link rel="stylesheet" href="{asset("css/site.css", depth)}?v={CSS_VER}" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
@@ -1459,6 +1473,7 @@ def board_page(title, path, body, extra_js="", extra_jsonld=None):
         extra_js,
         crumbs=breadcrumbs([("Ball Keep", "index.html"), (title, None)]),
         extra_jsonld=ld,
+        schema_type="CollectionPage",
     )
 
 
@@ -1773,7 +1788,8 @@ def render_news_pages():
                 modified=s.get("updated"),
             ),
         )
-        urls.append(f"https://ballkeep.com/news/{slug}.html")
+        when = (s.get("updated") or s.get("published") or LASTMOD)[:10]
+        urls.append({"loc": f"https://ballkeep.com/news/{slug}.html", "lastmod": when})
     return urls
 
 
@@ -1951,42 +1967,39 @@ def ff_player_seo(p):
     name = p["name"]
     loc = f"{pos} {team}".strip()
     if keep:
-        title = f"{name} Superflex Dynasty Rank #{keep} ({loc})"
+        title = f"{name} Fantasy Football Rankings (#{keep} {loc})"
         desc = (
-            f"{name} is Ball Keep Superflex Keep #{keep}, {loc}. "
+            f"{name} fantasy football rankings: Superflex Keep #{keep}, {loc}. "
             f"Average {p.get('keep_avg')} across {p.get('keep_n') or 0} boards. "
-            f"BK Value {bk_value(keep):,}. Updated {UPDATED}."
+            f"BK Value {bk_value(keep):,}."
         )
     elif ppr:
-        title = f"{name} PPR Rank #{ppr} ({loc})"
-        desc = f"{name} ranks #{ppr} on Ball Keep full-PPR redraft ({loc}). Updated {UPDATED}."
+        title = f"{name} Fantasy Football Rankings (#{ppr} {loc})"
+        desc = f"{name} ranks #{ppr} on Ball Keep full-PPR redraft ({loc}). 2026 fantasy football rankings."
     elif lists.get("2026 Rookies"):
-        title = f"{name} 2026 Rookie Rank #{lists['2026 Rookies']} ({loc})"
+        title = f"{name} 2026 Rookie Rankings (#{lists['2026 Rookies']} {loc})"
         desc = f"{name} is #{lists['2026 Rookies']} on the Ball Keep 2026 Superflex rookie board ({loc})."
     else:
-        title = f"{name} Dynasty File ({loc})"
+        title = f"{name} Fantasy Football Rankings ({loc})"
         desc = f"{name} player file on Ball Keep: dynasty and redraft ranks, board dump, and tape. {loc}."
-    return title, clip(desc)
+    return title, clip_meta(desc)
 
 
 def ff_rank_cards(p):
     lists = p.get("lists") or {}
     items = [
-        ("The Keep", lists.get("The Keep")),
-        ("The Board", lists.get("The Board") or lists.get("Redraft PPR")),
-        ("The Classic", lists.get("The Classic") or lists.get("Redraft Half-PPR")),
-        ("SF Redraft", lists.get("Redraft Superflex")),
-        ("STD", lists.get("Redraft Standard")),
-        ("Rookies", lists.get("2026 Rookies")),
+        ("The Keep", lists.get("The Keep"), "../the-keep.html"),
+        ("The Board", lists.get("The Board") or lists.get("Redraft PPR"), "../board.html"),
+        ("The Classic", lists.get("The Classic") or lists.get("Redraft Half-PPR"), "../the-classic.html"),
+        ("SF Redraft", lists.get("Redraft Superflex"), "../redraft-superflex.html"),
+        ("STD", lists.get("Redraft Standard"), "../redraft-standard.html"),
+        ("Rookies", lists.get("2026 Rookies"), "../rookies-2026.html"),
     ]
     cards = []
-    for label, rank in items:
+    for label, rank, href in items:
         if not rank:
             continue
-        cards.append(
-            f'<div class="rank-card"><small>{esc(label)}</small>'
-            f"<strong>#{rank}</strong><span>BK {bk_value(rank):,}</span></div>"
-        )
+        cards.append(rank_card(label, rank, bk_value(rank), href))
     return f'<div class="rank-grid">{"".join(cards)}</div>' if cards else ""
 
 
@@ -2170,13 +2183,14 @@ def render_player_pages(profiles):
                     (p["name"], None),
                 ]),
                 extra_jsonld=extra_ld,
+                modified=LASTMOD,
             ),
         )
         keep_html.add(f"{p['slug']}.html")
 
         thumb = asset(img, 1) if img else asset("img/logo.jpg", 1)
         cards.append(
-            f'<a class="tile player-card" href="{p["slug"]}.html" data-pos="{esc(p.get("pos") or "")}">'
+            f'<a class="tile player-card" href="{p["slug"]}.html" data-pos="{esc(p.get("pos") or "")}" data-name="{esc((p.get("name") or "").lower())}">'
             f'<img src="{thumb}" alt="{esc(face_alt(p["name"]))}" />'
             f'<h3>{esc(p["name"])}</h3>'
             f'<p class="note">{esc(p["pos"])} {esc(p["team"])}</p></a>'
@@ -2189,7 +2203,8 @@ def render_player_pages(profiles):
     hub = f"""
     <p class="kicker">Depth Chart · {UPDATED}</p>
     <h1>Player Pages</h1>
-    <p class="note">The Keep top 400, The Board (redraft PPR), Superflex redraft, 2026 rookies, and Hot 'n' Cold. Ranks, board dump, tape. Filter by position.</p>
+    <p class="note">The Keep top 400, The Board (redraft PPR), Superflex redraft, 2026 rookies, and Hot 'n' Cold. Ranks, board dump, tape. Filter by name or position.</p>
+    {hub_search_bar()}
     <p class="note">Position</p>
     <div class="filters" id="hub-pos"><button type="button" class="active" data-pos="all">All</button>
       <button type="button" data-pos="QB">QB</button>
@@ -2205,18 +2220,7 @@ def render_player_pages(profiles):
         ("../trade.html", "Trade Calculators", "Price any name."),
     ])}
     """
-    hub_js = """<script>
-    const box = document.getElementById('hub-pos');
-    if (box) box.addEventListener('click', e => {
-      const b = e.target.closest('button'); if (!b) return;
-      box.querySelectorAll('button').forEach(x => x.classList.remove('active'));
-      b.classList.add('active');
-      const p = b.dataset.pos;
-      document.querySelectorAll('.player-grid .player-card').forEach(card => {
-        card.style.display = (p === 'all' || card.dataset.pos === p) ? '' : 'none';
-      });
-    });
-    </script>"""
+    hub_js = hub_search_js()
     write("players/index.html", page(
         "Players", "players/index.html", hub, hub_js, depth=1,
         crumbs=breadcrumbs([("Ball Keep", "../index.html"), ("Players", None)]),
@@ -2357,7 +2361,19 @@ def write_trade_pages(keep, board, ppr, std, classic=None):
     """
     write("trade.html", board_page(
         "Trade Calculators", "trade.html", hub,
-        extra_jsonld=[faq_jsonld(TRADE_FAQ)],
+        extra_jsonld=[
+            faq_jsonld(TRADE_FAQ),
+            howto_jsonld(
+                "How to price a fantasy football trade",
+                "Pick a Ball Keep board, add both sides, and compare BK Value. Fair is within 8%.",
+                [
+                    ("Pick a board", "Use Superflex Dynasty for two-QB leagues, 1QB when a passer is just another starter, and a redraft calculator when the deal is for this season only."),
+                    ("Add both sides", "Every name has a rank. That rank becomes BK Value on a decaying curve. Rank 1 is 12,000."),
+                    ("Check the gap", "Fair means the two sides are within 8%. Superflex keeps quarterback price. 1QB taxes passers to 38% of that number."),
+                ],
+                url="https://ballkeep.com/trade.html",
+            ),
+        ],
     ))
 
 
@@ -2543,10 +2559,14 @@ def merge_sitemap_images(urls: list) -> list:
         if not loc or loc in seen:
             continue
         seen.add(loc)
+        extra = u if isinstance(u, dict) else {"loc": loc}
         if loc in images:
-            merged.append(images[loc])
+            row = dict(images[loc])
+            if extra.get("lastmod"):
+                row["lastmod"] = extra["lastmod"]
+            merged.append(row)
         else:
-            merged.append(loc)
+            merged.append(extra)
     return merged
 
 
@@ -2607,6 +2627,90 @@ def write_discovery_feeds():
             })
     (ROOT / "sitemap-news.xml").write_text(strip_em(news_sitemap_xml(news_entries)))
     return len(news_entries)
+
+
+def write_explore_page():
+    def group(kicker, heading, tiles):
+        cards = "".join(
+            f'<a class="tile" href="{esc(h)}"><h3>{esc(t)}</h3><p>{esc(p)}</p></a>'
+            for h, t, p in tiles
+        )
+        cols = "grid" if len(tiles) <= 2 else "grid-3"
+        return (
+            f'<section class="desk-block">'
+            f'<p class="kicker">{esc(kicker)}</p>'
+            f"<h2>{esc(heading)}</h2>"
+            f'<div class="{cols}">{cards}</div>'
+            "</section>"
+        )
+
+    body = f"""
+    <p class="kicker">Site map</p>
+    <h1>Every board, in one list</h1>
+    <p class="note">A crawlable map of Ball Keep, BaseKeep, BasketKeep, and PitchKeep. Player files and news stories live on their hubs.</p>
+    {group("Football", "Ball Keep boards", [
+        ("the-keep.html", "The Keep", "Superflex dynasty top 400."),
+        ("board.html", "The Board", "Redraft PPR."),
+        ("the-classic.html", "The Classic", "Half-PPR."),
+        ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
+        ("redraft-standard.html", "Redraft Standard", "No reception point."),
+        ("the-fence.html", "The Fence", "Superflex + IDP."),
+        ("rookies-2026.html", "2026 Rookies", "Drafted class."),
+        ("defenses.html", "Top DST", "Season-long DST."),
+        ("kickers.html", "Top Kickers", "Season-long K."),
+        ("weekly.html", "Weekly", "Week 1 start/sit."),
+        ("waiver.html", "Week 1 Waivers", "Consensus adds."),
+        ("injuries.html", "Injuries", "ESPN designations."),
+        ("trade.html", "Trade Calculators", "BK Value."),
+        ("players/index.html", "Player Files", "Keep 400 plus tape."),
+        ("news.html", "BK News", "Hourly football wire."),
+        ("the-x.html", "The X", "Football memes."),
+        ("nfl-schedule.html", "NFL Schedule", "2026 slate."),
+        ("discord.html", "Discord Bot", "Ranks in a server."),
+    ])}
+    {group("Baseball", "BaseKeep", [
+        ("bb/index.html", "BaseKeep Home", "Dynasty baseball."),
+        ("bb/the-keep.html", "The Keep", "Dynasty top 400."),
+        ("bb/the-diamond.html", "The Diamond", "Redraft."),
+        ("bb/the-farm.html", "The Farm", "Top 100 prospects."),
+        ("bb/the-lineup.html", "The Lineup", "Hitters."),
+        ("bb/pitchers.html", "Pitchers", "SP and two-way."),
+        ("bb/news.html", "BK News", "Hourly baseball wire."),
+        ("bb/players/index.html", "Player Files", "Keep 400."),
+        ("bb/trade.html", "Trade Calculators", "BK Value."),
+    ])}
+    {group("Basketball", "BasketKeep", [
+        ("bk/index.html", "BasketKeep Home", "Dynasty basketball."),
+        ("bk/the-keep.html", "The Keep", "Dynasty top 400."),
+        ("bk/board.html", "The Board", "This-year redraft."),
+        ("bk/guards.html", "Guards", "PG and SG."),
+        ("bk/wings.html", "Wings", "SF and PF."),
+        ("bk/bigs.html", "Bigs", "Centers."),
+        ("bk/news.html", "BK News", "Hourly NBA wire."),
+        ("bk/players/index.html", "Player Files", "Keep 400."),
+        ("bk/trade.html", "Trade Calculators", "BK Value."),
+    ])}
+    {group("Premier League", "PitchKeep", [
+        ("pl/index.html", "PitchKeep Home", "Premier League ranks."),
+        ("pl/the-premier.html", "The Premier", "Hybrid 400."),
+        ("pl/the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
+        ("pl/attack.html", "Attack", "Forwards."),
+        ("pl/midfield.html", "Midfield", "Mids."),
+        ("pl/defence.html", "Defence", "Defenders."),
+        ("pl/keepers.html", "Keepers", "Goalkeepers."),
+        ("pl/news.html", "PK News", "Hourly PL wire."),
+        ("pl/players/index.html", "Player Files", "Premier 400."),
+        ("pl/trade.html", "Trade Calculators", "BK Value."),
+    ])}
+    """
+    write("explore.html", page(
+        "Site map", "explore.html", body,
+        crumbs=breadcrumbs([("Ball Keep", "index.html"), ("Site map", None)]),
+        extra_jsonld=[breadcrumb_jsonld([
+            ("Ball Keep", "https://ballkeep.com/"),
+            ("Site map", "https://ballkeep.com/explore.html"),
+        ])],
+    ))
 
 
 def write_not_found_page():
@@ -2677,7 +2781,7 @@ def main():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     home_body = f"""
-    {masthead("Football rankings", wordmark(), "Dynasty · Redraft")}
+    {masthead("Football rankings", wordmark(), "Dynasty · Redraft", sr_title="Fantasy Football Superflex Dynasty Rankings")}
     <section class="desk-block main home-intro">
       <p class="kicker">Updated {UPDATED}</p>
       <h2>The Keep and The Board</h2>
@@ -2827,6 +2931,8 @@ def main():
         '<p class="kicker">Moved</p><h1>The Board</h1>'
         '<p class="note">Redraft PPR now lives on <a href="board.html">The Board</a>.</p>'
         '<p><a class="cta" href="board.html">The Board · Redraft PPR</a></p>',
+        robots="noindex, follow",
+        canonical="https://ballkeep.com/board.html",
     ))
 
     std_chips, std_js = pos_filter("std-pos")
@@ -3286,6 +3392,8 @@ def main():
     """
     write("privacy.html", page("Privacy Policy", "privacy.html", privacy))
 
+    write_explore_page()
+
     player_urls = render_player_pages(profiles)
     news_urls = render_news_pages()
     sitemap = [
@@ -3303,7 +3411,6 @@ def main():
         "https://ballkeep.com/trade-classic.html",
         "https://ballkeep.com/trade-standard.html",
         "https://ballkeep.com/the-classic.html",
-        "https://ballkeep.com/redraft-ppr.html",
         "https://ballkeep.com/redraft-superflex.html",
         "https://ballkeep.com/redraft-standard.html",
         "https://ballkeep.com/rookies-2026.html",
@@ -3328,6 +3435,7 @@ def main():
         "https://ballkeep.com/week1-matchups.html",
         "https://ballkeep.com/the-fence.html",
         "https://ballkeep.com/discord.html",
+        "https://ballkeep.com/explore.html",
     ] + news_urls[1:] + player_urls
     bb = write_baseball_site()
     sitemap.extend(bb.get("urls") or [])
@@ -3342,6 +3450,7 @@ def main():
         "https://ballkeep.com/sitemap.xml",
         "https://ballkeep.com/sitemap-news.xml",
     ]))
+    (ROOT / "llms.txt").write_text(llms_txt())
     (ROOT / "ads.txt").write_text(ads_txt())
 
     cat = write_discord_catalog(
