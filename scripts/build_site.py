@@ -749,6 +749,7 @@ NAV_GROUPS = [
         ("league.html", "My Team"),
     ]),
     ("tape", "Tape", [
+        ("touches.html", "Touches"),
         ("players/index.html", "Players"),
         ("news.html", "News"),
         ("the-x.html", "The X"),
@@ -764,7 +765,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 53
+CSS_VER = 54
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1014,6 +1015,11 @@ FB_SEO = {
         "Drafted-class Superflex rookie Super Aggregate. FantasyPros ECR is the long-core half. Love, Mendoza, and Tate lock the top.",
         "img/logo.jpg",
     ),
+    "touches.html": (
+        "NFL Touches and Targets 2025 | Fantasy Football | Ball Keep",
+        "2025 targets, rushes, receptions, and skill TDs for every skill player. Sort by stat. Keep and Board BK Value on each name.",
+        "img/logo.jpg",
+    ),
     "hot-n-cold.html": (
         "Dynasty Hot and Cold Board - Buys and Sells | Ball Keep",
         "Ball Keep Hot 'n' Cold: Week 1 dynasty buys and sells from FantasyPros, FantasyLife, Footballguys, RotoWire, and RotoBaller, tied to The Keep ranks.",
@@ -1244,6 +1250,7 @@ FB_ALSO = {
         ("trade-superflex.html", "Superflex Calculator", "Keep ranks as BK Value."),
         ("players/index.html", "Player Pages", "Every Keep name, tape included."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
+        ("touches.html", "Touches and Targets", "2025 targets, rushes, receptions, TDs."),
     ],
     "board.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
@@ -1253,6 +1260,14 @@ FB_ALSO = {
         ("trade-ppr.html", "PPR Calculator", "Board ranks as BK Value."),
         ("players/index.html", "Player Pages", "Tape and plus/minus."),
         ("news.html", "BK News", "Injuries and roster tape."),
+        ("touches.html", "Touches and Targets", "2025 targets, rushes, receptions, TDs."),
+    ],
+    "touches.html": [
+        ("the-keep.html", "The Keep", "Superflex dynasty."),
+        ("board.html", "The Board", "Redraft PPR."),
+        ("players/index.html", "Player Pages", "Tape and plus/minus."),
+        ("weekly.html", "Weekly", "This week's skill boards."),
+        ("adp.html", "ADP", "Board vs ESPN."),
     ],
     "the-classic.html": [
         ("board.html", "The Board", "Full-PPR redraft."),
@@ -1282,6 +1297,7 @@ FB_ALSO = {
     ],
     "hot-n-cold.html": [
         ("the-keep.html", "The Keep", "The ranks behind the tape."),
+        ("touches.html", "Touches and Targets", "2025 targets and rushes."),
         ("recent-trades.html", "Recent Deals", "Packages that actually closed."),
         ("news.html", "BK News", "Injuries moving the market."),
         ("trade-superflex.html", "Superflex Calculator", "Price the buy."),
@@ -1791,6 +1807,7 @@ def home_body_html(keep, board, media, stories=None):
         ("depth-charts.html", "Depth Charts", "32 clubs."),
     ])}
     {desk_block("tape", "Tape", "The non-ranking lists.", "The market notes, the player files, and the pictures.", [
+        ("touches.html", "Touches and Targets", "2025 targets, rushes, receptions, TDs."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
         ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
         ("the-x.html", "The X", "Memes. Pictures on the card."),
@@ -2881,6 +2898,7 @@ def write_explore_page():
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
         ("league.html", "My Team", "Your Sleeper league."),
+        ("touches.html", "Touches and Targets", "2025 targets and rushes."),
         ("players/index.html", "Player Files", "Keep 400 plus tape."),
         ("news.html", "BK News", "Hourly football wire."),
         ("the-x.html", "The X", "Football memes."),
@@ -3328,6 +3346,8 @@ def main():
     weekly_pack = write_weekly_pages(sys.modules[__name__], nfl, media, ppr)
     from league_hub import write_league_page
     write_league_page(sys.modules[__name__], keep, board, ppr, classic, std, weekly_pack.get("waiver") or [], media)
+    from usage_board import write_touches_page
+    write_touches_page(sys.modules[__name__], keep, board, media)
 
     fence_chips, fence_js = pos_filter("fence-pos", ["QB", "RB", "WR", "TE", "DL", "LB", "DB"])
     fence_body = f"""
@@ -3565,6 +3585,7 @@ def main():
         "https://ballkeep.com/redraft-standard.html",
         "https://ballkeep.com/rookies-2026.html",
         "https://ballkeep.com/hot-n-cold.html",
+        "https://ballkeep.com/touches.html",
         "https://ballkeep.com/board.html",
         "https://ballkeep.com/nfl-schedule.html",
         "https://ballkeep.com/mlb-schedule.html",

@@ -255,6 +255,10 @@ tr:hover td { background: rgba(200,16,46,0.04); }
 .trade-verdict.fair { border-color: #157a3a; }
 .trade-verdict h3 { margin: 0; font-size: 28px; }
 .pos { display: inline-block; min-width: 42px; padding: 2px 7px; border-radius: 999px; background: var(--powder-deep); font-weight: 800; font-size: 12px; }
+.pos.QB { background: #f7d5db; color: #c8102e; }
+.pos.RB { background: #d4eaf6; color: #17688a; }
+.pos.WR { background: #dce3ec; color: #102033; }
+.pos.TE { background: #ead6f2; color: #6b2d86; }
 .rank-table tr.idp-row td.c-rank { color: var(--red); }
 .rank-table tr.idp-row td.c-name a { color: var(--red); }
 .rank-table tr.idp-row .pos { background: #f7d5db; color: var(--red-dark); }
@@ -292,6 +296,11 @@ tr.crossed-off .draft-off { display: inline; }
   border-radius: 999px; padding: 7px 12px; font-weight: 800; cursor: pointer; text-decoration: none; font-size: 13px;
 }
 .filters button.active, .filters a.active { background: var(--red); color: #fff; border-color: var(--red); }
+.sort-bar button.active { background: #17688a; border-color: #17688a; }
+.keep-val { color: #c8102e; font-weight: 800; }
+.board-val { color: #1788c2; font-weight: 800; }
+.skip-val { color: var(--muted); font-weight: 700; }
+table.touches-table .c-stat { font-variant-numeric: tabular-nums; font-weight: 800; }
 .rank-bar {
   display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 4px 0 16px;
 }

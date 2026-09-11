@@ -318,6 +318,8 @@ def main():
     assert "injuries.html" in week1
     assert "the-fence.html" not in week1
     assert "hot-n-cold.html" in tape
+    assert "touches.html" in tape
+    assert "Touches and Targets" in tape
     assert "players/index.html" in tape
     assert "news.html" in tape
     assert "the-x.html" in tape
@@ -651,6 +653,7 @@ def main():
         "waiver.html",
         "adp.html",
         "the-fence.html",
+        "touches.html",
         "rookies-2026.html",
         "bk/the-keep.html",
         "bk/board.html",
@@ -711,6 +714,29 @@ def main():
     assert fence_page.find("rank-search-input") < fence_page.find("fence-pos")
     css = Path("css/site.css").read_text()
     assert "tr.idp-row" in css
+    assert ".pos.QB" in css
+    assert ".keep-val" in css
+    assert ".board-val" in css
+    touches = html_of("touches.html")
+    assert "<h1>Touches and Targets</h1>" in touches
+    assert 'id="touch-sort"' in touches
+    assert 'id="touch-pos"' in touches
+    assert 'data-sort="targets"' in touches
+    assert 'data-sort="touches"' in touches
+    assert 'data-sort="rec"' in touches
+    assert 'data-sort="td"' in touches
+    assert "keep-val" in touches
+    assert "board-val" in touches
+    assert "CeeDee Lamb" in touches or "Jahmyr Gibbs" in touches
+    assert "yahoo" not in touches.lower()
+    assert "\u2014" not in touches
+    assert " is the " not in touches
+    assert 'class="face"' in touches
+    assert "players/" in touches
+    assert "players/jamarr-chase.html" in touches
+    assert 'class="pos WR"' in touches
+    assert 'class="pos RB"' in touches
+    assert 'class="pos TE"' in touches
 
 
 if __name__ == "__main__":
