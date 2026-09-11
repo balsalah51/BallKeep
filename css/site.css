@@ -300,7 +300,67 @@ tr.crossed-off .draft-off { display: inline; }
 .keep-val { color: #c8102e; font-weight: 800; }
 .board-val { color: #1788c2; font-weight: 800; }
 .skip-val { color: var(--muted); font-weight: 700; }
-table.touches-table .c-stat { font-variant-numeric: tabular-nums; font-weight: 800; }
+.touches-panel { padding: 12px; }
+.touches-list { display: flex; flex-direction: column; gap: 10px; }
+.touch-row {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1.2fr) minmax(0, 2fr) minmax(9rem, 0.9fr);
+  gap: 12px 16px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--white);
+}
+.touch-who { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.touch-who .c-rank { flex: 0 0 2rem; width: auto; margin: 0; }
+.touch-who img.face { width: 40px; height: 40px; flex: 0 0 40px; margin: 0; }
+.touch-row .row-meta { display: block; margin-top: 2px; font-size: 13px; color: var(--muted); font-weight: 700; }
+.touch-stats, .touch-bk {
+  display: grid;
+  gap: 8px;
+}
+.touch-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.touch-bk { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.touch-stat {
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f7fbfe;
+}
+.touch-stat .stat-lab {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.touch-stat .stat-num {
+  display: block;
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.15;
+  color: var(--ink);
+}
+.touch-stat.keep-val { background: #fff5f6; }
+.touch-stat.keep-val .stat-lab { color: #c8102e; }
+.touch-stat.keep-val .stat-num { color: #c8102e; }
+.touch-stat.board-val { background: #eef7fc; }
+.touch-stat.board-val .stat-lab { color: #17688a; }
+.touch-stat.board-val .stat-num { color: #1788c2; }
+.touch-stat.skip-val { background: #f4f6f8; }
+.touch-stat.skip-val .stat-num { color: var(--muted); font-size: 16px; }
+@media (max-width: 1040px) {
+  .touch-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .touch-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 .rank-bar {
   display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 4px 0 16px;
 }
