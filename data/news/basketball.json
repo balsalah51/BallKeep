@@ -1,7 +1,7 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-11T02:26:56Z",
-  "fresh": 94,
+  "updated": "2026-09-11T03:26:41Z",
+  "fresh": 101,
   "stories": [
     {
       "id": "raptors-reportedly-sign-ex-lakers-champion-while-waiting-7195aab2",
@@ -907,12 +907,19 @@
       "slug": "tyrese-haliburton-injury-could-limited-begin-2026-27-5463a873",
       "sport": "basketball",
       "headline": "Is Tyrese Haliburton playing tonight? Latest hamstring injury update on Pacers star for Game 3 vs. Celtics",
-      "blurb": "Ayo Dosunmu Injury Update: Is Dosunmu Playing Tonight vs.",
-      "summary": "Ayo Dosunmu Injury Update: Is Dosunmu Playing Tonight vs. Kevin Durant Injury Update: Is KD Playing Tonight vs. Is Paolo Banchero Playing Tonight? Aggregated from PrizePicks, Sports Illustrated, RotoWire NBA, RotoWire, sportingnews.com and 4 more.",
+      "blurb": "De'Aaron Fox Injury Update: Is Fox Playing Tonight vs.",
+      "summary": "De'Aaron Fox Injury Update: Is Fox Playing Tonight vs. The Pacers may opt to slowly bring Haliburton back up to speed as he aims to return from a torn Achilles suffered in Game 7 of the 2025 NBA Finals, Jamal Collier of ESPN reports. Visit RotoWire.com for more analysis on this update. Aggregated from PrizePicks, RotoWire NBA, RotoWire, sportingnews.com, Sportskeeda and 4 more.",
       "category": "injury",
       "published": "2024-05-25T07:00:00Z",
       "updated": "2026-09-09T23:48:16Z",
       "players": [
+        {
+          "key": "deaaron fox",
+          "name": "De'Aaron Fox",
+          "slug": "de-aaron-fox",
+          "pos": "PG",
+          "team": "SAS"
+        },
         {
           "key": "ayo dosunmu",
           "name": "Ayo Dosunmu",
@@ -1112,6 +1119,14 @@
           "kind": "article",
           "snippet": "Is Amen Thompson Playing Tonight? (Injury Update, Betting Impact for Magic vs. Rockets) Sports Illustrated",
           "published": "Mon, 10 Mar 2025 07:00:00 GMT"
+        },
+        {
+          "title": "De'Aaron Fox Injury Update: Is Fox Playing Tonight vs. Timberwolves in Game 5?",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUWtUWWUxUjhzSTRlWXR4anhXcXJnX1ZleVB0OTk2NGdteGZscVhlVlU5WjJaSU1WclRuUjlEb25lVlVWdlhmemJ1X3ItSHh0a0pGZjBhZUpQaXBJS3FFbTF1LXRQQVV6dHZWcDdhWUh3ZlN4X0hUR2V6T0czRUxxeHdqWGZYLXJEa3NYMFM2YlVQMmtSSVpseE4yZFQzM05qSFZVNFVQend2eFVBTUhhR3VLN25jZw?oc=5",
+          "publisher": "PrizePicks",
+          "kind": "article",
+          "snippet": "De'Aaron Fox Injury Update: Is Fox Playing Tonight vs. Timberwolves in Game 5? PrizePicks",
+          "published": "Tue, 12 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -2458,6 +2473,58 @@
       ]
     },
     {
+      "id": "ranking-suns-three-best-players-975061fc",
+      "slug": "ranking-suns-three-best-players-975061fc",
+      "sport": "basketball",
+      "headline": "Best NBA Players Drafted Out Of High School",
+      "blurb": "Best NBA Players Drafted Out Of High School thesportster.com",
+      "summary": "Dillon Brooks, Devin Booker and Jalen Green: Best NBA Players Drafted Out Of High School thesportster.com Devin Booker, Dillon Brooks and Jalen Green represent the players Phoenix is counting on most to make an impact every night. Aggregated from thesportster.com, SB Nation.",
+      "category": "wire",
+      "published": "2025-04-11T07:00:00Z",
+      "updated": "2026-09-09T12:00:00Z",
+      "players": [
+        {
+          "key": "dillon brooks",
+          "name": "Dillon Brooks",
+          "slug": "dillon-brooks",
+          "pos": "SF",
+          "team": "HOU"
+        },
+        {
+          "key": "devin booker",
+          "name": "Devin Booker",
+          "slug": "devin-booker",
+          "pos": "SG",
+          "team": "PHX"
+        },
+        {
+          "key": "jalen green",
+          "name": "Jalen Green",
+          "slug": "jalen-green",
+          "pos": "SG",
+          "team": "PHX"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ranking the Suns’ three best players",
+          "url": "https://sports.yahoo.com/articles/ranking-suns-three-best-players-120000081.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Devin Booker, Dillon Brooks and Jalen Green represent the players Phoenix is counting on most to make an impact every night.",
+          "published": "Wed, 09 Sep 2026 12:00:00 +0000"
+        },
+        {
+          "title": "Best NBA Players Drafted Out Of High School",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5nS1RuTENLekwzTlgyaTA3cGMxR3VtZzJ2VmpkZnU3QXhiSUtXV0xtdVVRZWpGZk5jSGc4MEY4Y2sxRldmUk9NdWN5ZENYTE1GOWV6c2htMGxqbFotZTlGcWl4M29yWE53NllqVkNaUDh3bE1a?oc=5",
+          "publisher": "thesportster.com",
+          "kind": "article",
+          "snippet": "Best NBA Players Drafted Out Of High School thesportster.com",
+          "published": "Fri, 11 Apr 2025 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "anthony-edwards-injury-0144cc2a",
       "slug": "anthony-edwards-injury-0144cc2a",
       "sport": "basketball",
@@ -2530,58 +2597,6 @@
           "kind": "article",
           "snippet": "Kevin Durant + Anthony Edwards? Inside Timberwolves’ NBA trade deadline what-if scenario The New York Times",
           "published": "Thu, 27 Feb 2025 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "ranking-suns-three-best-players-975061fc",
-      "slug": "ranking-suns-three-best-players-975061fc",
-      "sport": "basketball",
-      "headline": "Best NBA Players Drafted Out Of High School",
-      "blurb": "Best NBA Players Drafted Out Of High School thesportster.com",
-      "summary": "Dillon Brooks, Devin Booker and Jalen Green: Best NBA Players Drafted Out Of High School thesportster.com Devin Booker, Dillon Brooks and Jalen Green represent the players Phoenix is counting on most to make an impact every night. Aggregated from thesportster.com, SB Nation.",
-      "category": "wire",
-      "published": "2025-04-11T07:00:00Z",
-      "updated": "2026-09-09T12:00:00Z",
-      "players": [
-        {
-          "key": "dillon brooks",
-          "name": "Dillon Brooks",
-          "slug": "dillon-brooks",
-          "pos": "SF",
-          "team": "HOU"
-        },
-        {
-          "key": "devin booker",
-          "name": "Devin Booker",
-          "slug": "devin-booker",
-          "pos": "SG",
-          "team": "PHX"
-        },
-        {
-          "key": "jalen green",
-          "name": "Jalen Green",
-          "slug": "jalen-green",
-          "pos": "SG",
-          "team": "PHX"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ranking the Suns’ three best players",
-          "url": "https://sports.yahoo.com/articles/ranking-suns-three-best-players-120000081.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Devin Booker, Dillon Brooks and Jalen Green represent the players Phoenix is counting on most to make an impact every night.",
-          "published": "Wed, 09 Sep 2026 12:00:00 +0000"
-        },
-        {
-          "title": "Best NBA Players Drafted Out Of High School",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5nS1RuTENLekwzTlgyaTA3cGMxR3VtZzJ2VmpkZnU3QXhiSUtXV0xtdVVRZWpGZk5jSGc4MEY4Y2sxRldmUk9NdWN5ZENYTE1GOWV6c2htMGxqbFotZTlGcWl4M29yWE53NllqVkNaUDh3bE1a?oc=5",
-          "publisher": "thesportster.com",
-          "kind": "article",
-          "snippet": "Best NBA Players Drafted Out Of High School thesportster.com",
-          "published": "Fri, 11 Apr 2025 07:00:00 GMT"
         }
       ]
     },
@@ -2904,12 +2919,19 @@
       "slug": "harper-karl-anthony-towns-trade-what-it-transaction-9c168bb7",
       "sport": "basketball",
       "headline": "NBA Trade Rumors: Blockbuster 3-Team Giannis Antetokounmpo Deal Reunites Ja Morant With Former Grizzlies Coach",
-      "blurb": "New NBA Trade Rumors on Domantas Sabonis as Ja Morant, Giannis Available Before Draft, Free Agency Bleacher Report",
-      "summary": "New NBA Trade Rumors on Domantas Sabonis as Ja Morant, Giannis Available Before Draft, Free Agency Bleacher Report Will Karl-Anthony Towns get an extension? What if LeBron James comes East? Aggregated from Bleacher Report, The New York Times, DraftKings Network, sportingnews.com, Sports Illustrated and 27 more.",
+      "blurb": "NBA Mock Trade: San Antonio Spurs Acquire Giannis Antetokounmpo in Blockbuster Deal si.com",
+      "summary": "NBA Mock Trade: San Antonio Spurs Acquire Giannis Antetokounmpo in Blockbuster Deal si.com Will Karl-Anthony Towns get an extension? What if LeBron James comes East? Aggregated from si.com, The New York Times, DraftKings Network, sportingnews.com, Sports Illustrated and 29 more.",
       "category": "injury",
       "published": "2020-01-03T08:00:00Z",
       "updated": "2026-09-07T15:28:27Z",
       "players": [
+        {
+          "key": "giannis antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "slug": "giannis-antetokounmpo",
+          "pos": "PF",
+          "team": "MIL"
+        },
         {
           "key": "domantas sabonis",
           "name": "Domantas Sabonis",
@@ -2923,13 +2945,6 @@
           "slug": "ja-morant",
           "pos": "PG",
           "team": "MEM"
-        },
-        {
-          "key": "giannis antetokounmpo",
-          "name": "Giannis Antetokounmpo",
-          "slug": "giannis-antetokounmpo",
-          "pos": "PF",
-          "team": "MIL"
         },
         {
           "key": "zach lavine",
@@ -3921,6 +3936,38 @@
           "kind": "article",
           "snippet": "New NBA Trade Rumors on Domantas Sabonis as Ja Morant, Giannis Available Before Draft, Free Agency Bleacher Report",
           "published": "Sat, 06 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Heat NBA title odds skyrocket after Giannis Antetokounmpo trade",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQSjdNWGJwVS1Id3c3Z0FNV19ianRySzgwbUtDa0g3WF9SdEw0Y2hIMXRKWDJ5dFl1OG14RXBZZWVOa2o4bTllOWN3YjFpVkJMOWNkSEhBeHdLN1VFWThHdmhpSGJFNjAxeGxZVVo5dTBhUjJWSEZiU2U3aHhpTTQ5azZ0Z3NucGRsYWtXQ3lHb3JqMUNYRVNjM3BnMHN2V2JQMVE?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Heat NBA title odds skyrocket after Giannis Antetokounmpo trade The New York Times",
+          "published": "Wed, 24 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bucks’ Giannis Antetokounmpo trade offers remain underwhelming",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVEFweTM2V0pDRFNXM1owSjIzQWRyeElXNWJzUFI5TEIybUw5Wm1LWHZFNmhjZk91a3liRDFPWmNFT3FPRHZrMUk3Uzh2b25XNWI1SGdTbENmTC15QUtiWnc4WGkzMjYySlZub2dtaUFGejBJNTIwWkk5aUhlenpMMnlYQnhTZVlHMDh6RnlaVTNCQkM5N3FwUEF4RQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Bucks’ Giannis Antetokounmpo trade offers remain underwhelming The New York Times",
+          "published": "Tue, 03 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Giannis Antetokounmpo Traded to Heat: Full Bucks Trade Details, Fantasy and Betting Fallout",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQM2pVay15Q3NuTlhlZzNzVkxvUVROWXllY1VsSURzQ1lJQXpGbHp0UEdVOHM4Qk1LaHhCb0Rrb2dLZ1JxUjE4Vjd0dm5WOEdMRDJyMXpoSVctTzhWUE5zZXJVWXJrUldUeFZkMFZkalNhYUpWMjJSMEZ4Yjk5eVdBcmZ6MWFqa0RrZmptWlNiZVlHUTAtZzN1dnRWQ1RISmFk?oc=5",
+          "publisher": "Fantasy Alarm",
+          "kind": "article",
+          "snippet": "Giannis Antetokounmpo Traded to Heat: Full Bucks Trade Details, Fantasy and Betting Fallout Fantasy Alarm",
+          "published": "Mon, 22 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Projecting the 2026 Milwaukee Bucks starting lineup after Giannis Antetokounmpo trade",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00Mms5cTh5MFlnaHpvSTkxQUFQY2hoQllwTWJzSTRhUl9CVXI0T2szbmxIMHZ2cExkQjc4NHY5UWUwSWJGOVRlb01TWUREeWlsTTJfTWdSdnFyNFZIUlUwZ0pKTzM?oc=5",
+          "publisher": "The Big Lead",
+          "kind": "article",
+          "snippet": "Projecting the 2026 Milwaukee Bucks starting lineup after Giannis Antetokounmpo trade The Big Lead",
+          "published": "Tue, 23 Jun 2026 07:00:00 GMT"
         }
       ]
     },
@@ -9111,12 +9158,19 @@
       "slug": "amen-thompson-raises-questions-kevin-durant-s-situation-4be27ef0",
       "sport": "basketball",
       "headline": "Amen Thompson raises questions on Kevin Durant’s situation with Rockets amid series vs Lakers",
-      "blurb": "Amen Thompson raises questions on Kevin Durant’s situation with Rockets amid series vs Lakers bolavip.com",
-      "summary": "Amen Thompson raises questions on Kevin Durant’s situation with Rockets amid series vs Lakers bolavip.com Amen Thompson Reveals What He Learned from Kevin Durant After Rockets Trade Bleacher Report Rockets Reportedly 'Unwilling' to Trade Amen Thompson, Alperen Sengun for Kevin Durant Bleacher Report Aggregated from bolavip.com, Bleacher Report, Sports Illustrated, Yahoo Sports Canada, RotoBaller and 3 more.",
+      "blurb": "Kevin Durant Watched Extensive Film on Alperen Sengun, Amen Thompson After Rockets Trade si.com",
+      "summary": "Kevin Durant Watched Extensive Film on Alperen Sengun, Amen Thompson After Rockets Trade si.com Amen Thompson Is the Future of the Houston Rockets Sports Illustrated The role Amen Thompson would play in a Rockets trade for Giannis Antetokounmpo Yahoo Sports Canada Aggregated from si.com, Sports Illustrated, Yahoo Sports Canada, bolavip.com, RotoBaller and 4 more.",
       "category": "injury",
       "published": "2025-01-18T08:00:00Z",
       "updated": "2026-09-01T19:38:08Z",
       "players": [
+        {
+          "key": "alperen sengun",
+          "name": "Alperen Sengun",
+          "slug": "alperen-sengun",
+          "pos": "C",
+          "team": "HOU"
+        },
         {
           "key": "amen thompson",
           "name": "Amen Thompson",
@@ -9129,13 +9183,6 @@
           "name": "Kevin Durant",
           "slug": "kevin-durant",
           "pos": "PF",
-          "team": "HOU"
-        },
-        {
-          "key": "alperen sengun",
-          "name": "Alperen Sengun",
-          "slug": "alperen-sengun",
-          "pos": "C",
           "team": "HOU"
         },
         {
