@@ -46,7 +46,7 @@ QUIPS = [
     "Nicknames work. JSN, CMC, Sun God, BTJ, TLaw. You're welcome.",
     "The Keep is a 10-board average. One tweet is not a board.",
     "Publish the desk once. Search Discord forever.",
-    "BaseBallKeep is the other door. Navy, cream, 23 boards.",
+    "BaseBallKeep is the other door. Navy, cream, 40 boards.",
     "Saves and SV+H are different sports. Use the right bullpen page.",
     "PitchKeep: The Premier, The Pitch, the lists, the files.",
     "Haaland scores. Bruno creates. Sleeper pays both. The rest of the 400 is who you own.",

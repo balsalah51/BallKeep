@@ -389,9 +389,10 @@ def _rank_th(label):
     return f"<th{attr}>{esc(label)}</th>"
 
 
-def rank_table(rows, extra_headers=None, extra_cells=None, show_age=True):
+def rank_table(rows, extra_headers=None, extra_cells=None, show_age=True, media=None, faces=False, depth=1):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
+    media = media or {}
     cols = ["BK", "Player", "Pos", "Team"]
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
@@ -407,19 +408,26 @@ def rank_table(rows, extra_headers=None, extra_cells=None, show_age=True):
         )
         href = f"players/{slugify(r['name'])}.html"
         name = f'<a class="player-link" href="{href}"><strong>{esc(r["name"])}</strong></a>'
+        face = ""
+        if faces:
+            face = (
+                f'<img class="face" src="{esc(face_src(r, media, depth))}" '
+                f'alt="{esc(face_alt(r.get("name")))}" loading="lazy" />'
+            )
         stack = f'<span class="name-stack">{name}{age_span}{meta}</span>'
         dn = rank_search_key(r.get("name"), pos, team, r.get("group"))
         body.append(
             f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or "")}" data-name="{dn}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name">{stack}</td>'
+            f'<td class="c-name">{face}{stack}</td>'
             f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
             f'<td class="c-team">{esc(team)}</td>'
             f"{extra_cells(r)}"
             "</tr>"
         )
+    cls = "rank-table faces" if faces else "rank-table"
     return (
-        '<div class="table-wrap"><table class="rank-table">'
+        f'<div class="table-wrap"><table class="{cls}">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
     )
 
@@ -461,6 +469,35 @@ def fmt_val(n):
         return "-"
 
 
+def load_bk_media():
+    path = ROOT / "data" / "bk-media.json"
+    raw = json.loads(path.read_text()) if path.exists() else {}
+    out = dict(raw)
+    for rec in raw.values():
+        if not isinstance(rec, dict):
+            continue
+        if rec.get("slug"):
+            out.setdefault(rec["slug"], rec)
+        if rec.get("key"):
+            out.setdefault(rec["key"], rec)
+    return out
+
+
+def face_src(r, media, depth=1):
+    key = r.get("key") or ""
+    slug = slugify(r.get("name") or "")
+    m = (media or {}).get(key) or (media or {}).get(slug) or {}
+    img = m.get("image") or "img/bk-logo.jpg"
+    return "../" * depth + img
+
+
+def player_image(r, media):
+    key = r.get("key") or ""
+    slug = slugify(r.get("name") or "")
+    m = (media or {}).get(key) or (media or {}).get(slug) or {}
+    return m.get("image") or "img/bk-logo.jpg"
+
+
 def val_cell(r):
     return (
         f'<td class="desk-only">{r.get("avg", "-")}</td>'
@@ -473,7 +510,7 @@ def player_href(name, depth=1):
     return f"{'../' * (depth - 1)}players/{slugify(name)}.html" if depth > 1 else f"players/{slugify(name)}.html"
 
 
-def home_rank_preview(rows, n=8):
+def home_rank_preview(rows, media, n=8):
     items = []
     for r in rows[:n]:
         name = r.get("name") or ""
@@ -482,7 +519,7 @@ def home_rank_preview(rows, n=8):
         team = r.get("team") or ""
         val = fmt_val(r.get("value"))
         face = (
-            f'<img class="face" src="../img/bk-logo.jpg" '
+            f'<img class="face" src="{esc(face_src(r, media))}" '
             f'alt="{esc(face_alt(name))}" width="40" height="40" loading="lazy" />'
         )
         name_html = (
@@ -702,7 +739,8 @@ def render_bk_news_pages(stories):
     return urls
 
 
-def write_player_pages(keep, board, news_by_player):
+def write_player_pages(keep, board, news_by_player, media=None):
+    media = media or {}
     board_map = {r["key"]: r for r in board}
     (ROOT / "bk/players").mkdir(parents=True, exist_ok=True)
     urls = []
@@ -728,9 +766,11 @@ def write_player_pages(keep, board, news_by_player):
         board_rows = "".join(
             f"<tr><td>{esc(src)}</td><td>{rk}</td></tr>" for src, rk in sorted(ranks.items(), key=lambda kv: kv[1])[:12]
         )
+        hero_src = html.escape(face_src(r, media, 2))
+        og_img = player_image(r, media)
         body = f"""
     <div class="player-hero">
-      <img src="../../img/bk-logo.jpg" alt="{esc(face_alt(r['name']))}" />
+      <img src="{hero_src}" alt="{esc(face_alt(r['name']))}" />
       <div>
         <p class="kicker">{esc(r.get("pos") or "")} · {esc(r.get("team") or "")}</p>
         <h1>{esc(r["name"])}</h1>
@@ -771,7 +811,7 @@ def write_player_pages(keep, board, news_by_player):
             f"bk/players/{slug}.html",
             bk_page(
                 r["name"], f"players/{slug}.html", body, depth=2,
-                doc_title=seo_title, description=seo_desc, image="img/bk-logo.jpg",
+                doc_title=seo_title, description=seo_desc, image=og_img,
                 crumbs=breadcrumbs([
                     ("BasketKeep", "../index.html"),
                     ("Players", "index.html"),
@@ -787,7 +827,7 @@ def write_player_pages(keep, board, news_by_player):
                         r["name"], player_abs,
                         pos=r.get("pos") or "",
                         team=r.get("team") or "",
-                        image="img/bk-logo.jpg",
+                        image=og_img,
                         description=seo_desc,
                         sport="Basketball",
                     ),
@@ -818,7 +858,7 @@ def write_player_pages(keep, board, news_by_player):
         slug = slugify(r["name"])
         cards.append(
             f'<a class="tile player-card" href="{slug}.html" data-pos="{esc(r.get("pos") or "")}" data-name="{esc((r.get("name") or "").lower())}">'
-            f'<img src="../../img/bk-logo.jpg" alt="{esc(face_alt(r["name"]))}" />'
+            f'<img src="{esc(face_src(r, media, 2))}" alt="{esc(face_alt(r["name"]))}" />'
             f'<h3>{esc(r["name"])}</h3>'
             f'<p class="note">{esc(r.get("pos") or "")} {esc(r.get("team") or "")} · Keep #{r["bk"]}</p></a>'
         )
@@ -914,6 +954,7 @@ def waiver_page(title, path, kicker, note, items, hot=False, keep_slugs=None):
 
 def write_basket_site():
     u = load_universe()
+    media = load_bk_media()
     keep, board = u["keep"], u["board"]
     guards, wings, bigs = u["guards"], u["wings"], u["bigs"]
     rookies = u["rookies"]
@@ -958,7 +999,7 @@ def write_basket_site():
           <p>Top {len(keep)} · {keep_n} boards</p>
           <a class="home-snap-link" href="the-keep.html">Full board</a>
         </header>
-        {home_rank_preview(keep)}
+        {home_rank_preview(keep, media)}
       </article>
       <article class="home-snap board">
         <header class="home-snap-head">
@@ -967,7 +1008,7 @@ def write_basket_site():
           <p>This year only</p>
           <a class="home-snap-link" href="board.html">Full board</a>
         </header>
-        {home_rank_preview(board)}
+        {home_rank_preview(board, media)}
       </article>
     </section>
     {desk_block("lists", "More ranks", "Positions, rookies, and the wires.", "Guards, wings, bigs, and the stash boards.", [
@@ -1025,7 +1066,7 @@ def write_basket_site():
     <h1>The Keep</h1>
     <p class="note">This is the big one. Dynasty basketball top {len(keep)}, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - 18 boards. Unranked is skipped, never 999. BK Value uses the same decaying curve as football (12,000 at 1.01). The Board next door is this-year redraft.</p>
     {rank_search_bar(flt)}
-    <div class="panel">{rank_table(keep, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(keep, ["Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True)}</div>
     {value_bars(keep, 12, "#e87722", "Keep value graph")}
     {sources_panel()}
     {faq_html(BK_KEEP_FAQ, heading="How The Keep is built.")}
@@ -1054,7 +1095,7 @@ def write_basket_site():
     <h1>The Board</h1>
     <p class="note">The Board is redraft - {len(board)} names, this season only. Use this list for 2026-27 startups. The Keep is dynasty.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(board, ["Keep", "BK Value"], board_extra)}</div>
+    <div class="panel">{rank_table(board, ["Keep", "BK Value"], board_extra, media=media, faces=True)}</div>
     {value_bars(board, 12, "#1a1208", "Board value graph")}
     """
     write("bk/board.html", bk_board_page("The Board", "board.html", board_body))
@@ -1064,7 +1105,7 @@ def write_basket_site():
     <h1>Guards</h1>
     <p class="note">Point guards and shooting guards, re-ranked among themselves from The Keep.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(guards, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(guards, ["Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True)}</div>
     """
     write("bk/guards.html", bk_board_page("Guards", "guards.html", g_body))
 
@@ -1073,7 +1114,7 @@ def write_basket_site():
     <h1>Wings</h1>
     <p class="note">Small forwards and power forwards. The Keep, forwards only.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(wings, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(wings, ["Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True)}</div>
     """
     write("bk/wings.html", bk_board_page("Wings", "wings.html", w_body))
 
@@ -1082,7 +1123,7 @@ def write_basket_site():
     <h1>Bigs</h1>
     <p class="note">The fives. Wemby opens the centers. Jokic is the this-year argument.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(bigs, ["Avg", "# Boards", "BK Value"], val_cell)}</div>
+    <div class="panel">{rank_table(bigs, ["Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True)}</div>
     """
     write("bk/bigs.html", bk_board_page("Bigs", "bigs.html", b_body))
 
@@ -1137,7 +1178,7 @@ def write_basket_site():
         keep_slugs=keep_slugs_set,
     )
 
-    player_urls, player_files = write_player_pages(keep, board, news_by_player)
+    player_urls, player_files = write_player_pages(keep, board, news_by_player, media)
     news_urls = render_bk_news_pages(stories)
     x_body = f"""
     <p class="kicker">Fun tape · not news</p>

@@ -361,6 +361,15 @@ def test_ppr_extra_boards():
         assert maps[label]
 
 
+def test_baseball_keep_boards():
+    from bb_data import BB_BULLPEN_SOURCES, BB_KEEP_SOURCES, build_meta, build_sources, load_raw
+    assert len(BB_KEEP_SOURCES) == 40
+    assert len(BB_BULLPEN_SOURCES) == 3
+    rg, tdg = load_raw()
+    sources = build_sources(rg, tdg, build_meta(rg, tdg))
+    assert len(sources) == 40
+
+
 def test_draft_check_js():
     html = draft_check_js()
     assert "draft-check" in html
