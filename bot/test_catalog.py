@@ -131,7 +131,7 @@ def main():
     assert not tprem["missing"], tprem["missing"]
     assert tpl["total_a"] and tpl["total_b"]
     assert not tpl["missing"], tpl["missing"]
-    assert len(cat.raw.get("sources") or []) >= 30, "The Keep Super Aggregate needs 30+ desks"
+    assert len(cat.raw.get("sources") or []) >= 40, "The Keep Super Aggregate needs 40 boards"
     keep0 = cat.raw["keep"][0]
     board0 = cat.raw["board"][0]
     assert (keep0.get("n") or 0) >= 10, keep0
@@ -245,9 +245,10 @@ def main():
     assert "FootKeep" not in home
     assert "BaseBallKeep" not in home
     assert 'class="desk-block extra"' not in home
-    assert "home-intro" in home
-    assert "The Keep is Superflex Dynasty. The Board is Redraft PPR." in home
-    assert "Both are rest-of-season values." in home
+    assert "home-snapshot" in home
+    assert "home-hero" in home
+    assert "Superflex dynasty" in home
+    assert "Redraft PPR" in home
     assert "Dynasty · Redraft" in home
     assert "Superflex Dynasty · Superflex Redraft" not in home
     assert "Kids pay a tax" not in home
@@ -255,17 +256,15 @@ def main():
     assert "Redraft Superflex" in home
     assert 'href="redraft-superflex.html"' in home
     assert "hero-lead" not in home
-    assert '<section class="hero' in home
-    assert 'class="hero masthead"' in home
+    assert 'class="hero masthead"' not in home
     assert "Football rankings" in home
     assert "Football desk" not in home
-    assert "mast-art" in home
-    assert "mast-ballkeep.jpg" in home
-    assert 'class="mast-mark"' in home
     assert "background-image:url" not in home
-    assert "home-leads" in home
-    assert 'class="tile lead keep"' in home
-    assert 'class="tile lead board"' in home
+    assert "Open The Keep" not in home
+    assert "Open The Board" not in home
+    assert "Price a trade" not in home
+    assert "redraft desks" not in home
+    assert "The other desks" not in home
     nav_start = home.find("<nav")
     header_nav = home[nav_start:home.find("</nav>", nav_start)]
     assert 'href="recent-trades.html"' not in header_nav
@@ -277,20 +276,19 @@ def main():
     tape_at = home.find('class="desk-block tape"')
     tools_at = home.find('class="desk-block tools"')
     slates_at = home.find('class="desk-block slates"')
-    fence_at = home.find('class="desk-block fence"')
-    main_at = home.find("home-intro")
-    assert 0 < main_at < ros_skill_at < ros_st_at < week1_at < tape_at < tools_at < slates_at < fence_at
-    main = home[main_at:ros_skill_at]
+    snap_at = home.find('class="home-snapshot"')
+    proof_at = home.find('class="home-proof"')
+    assert 0 < snap_at < ros_skill_at < ros_st_at < week1_at < tools_at < tape_at < slates_at < proof_at
+    assert 'class="desk-block fence"' not in home
+    main = home[snap_at:ros_skill_at]
     ros_skill = home[ros_skill_at:ros_st_at]
     ros_st = home[ros_st_at:week1_at]
-    week1 = home[week1_at:tape_at]
-    tape = home[tape_at:tools_at]
-    tools = home[tools_at:slates_at]
-    slates = home[slates_at:fence_at]
-    fence = home[fence_at:]
+    week1 = home[week1_at:tools_at]
+    tools = home[tools_at:tape_at]
+    tape = home[tape_at:slates_at]
+    slates = home[slates_at:proof_at]
     assert "the-keep.html" in main
     assert "board.html" in main
-    assert "The Keep and The Board" in main
     assert "the-keep.html" not in ros_skill
     assert "board.html" not in ros_skill
     assert "redraft-superflex.html" in ros_skill
@@ -332,11 +330,11 @@ def main():
     assert "bpl-schedule.html" in slates
     assert "week1-matchups.html" not in slates
     assert "weekly-check.html" not in slates
-    assert "the-fence.html" in fence
-    assert "The Fence (IDP)" in fence
+    assert "the-fence.html" in ros_st
+    assert "The Fence (IDP)" in ros_st
     assert "the-fence.html" not in main
     assert "the-fence.html" not in ros_skill
-    assert "the-fence.html" not in ros_st
+    assert "the-fence.html" not in slates
     assert "Trade Calculators" not in main
     assert "start-sit.html" not in home
     assert "weekly-check.html" not in home
@@ -347,8 +345,8 @@ def main():
     assert nav.rfind("the-fence.html") == nav.find("the-fence.html")
     assert "this desk" not in home
     assert "\u2014" not in home
-    assert "On this board" in home
-    assert "Super Aggregate of 33 boards" in home
+    assert "40 boards" in home
+    assert "40 dynasty boards" in home or "dynasty boards" in home
     hc = html_of("hot-n-cold.html")
     assert "this desk" not in hc
     assert "\u2014" not in hc
@@ -383,9 +381,9 @@ def main():
     assert "background: #37003c" in css
     assert "background: #d6ebf7" in css
     assert "box-shadow:0 0 0 3px #c8102e" not in home
-    assert "style=\"color:#1788c2\"" in home
     assert "font-size: 40px" in css
-    assert ".home-intro" in css
+    assert ".home-hero" in css
+    assert ".home-snapshot" in css
     assert "--powder-ink" in css
     assert ".tile.cold h3" in css
     assert "height: 120px" in css
@@ -403,7 +401,7 @@ def main():
     assert "2026 Redraft · PPR" in board_html
     assert "<h1>The Board</h1>" in board_html
     assert "redraft ppr" in board_html.lower()
-    assert "15 boards" in board_html
+    assert "40 boards" in board_html
     assert "Derek Brown" in board_html
     assert "4for4" in board_html
     dst_html = html_of("defenses.html")
@@ -519,13 +517,13 @@ def main():
     assert "The Farm" in bb_home
     assert "the-farm.html" in bb_home
     assert 'href="../privacy.html"' in bb_home
-    assert 'class="hero masthead"' in bb_home
+    assert 'class="home-hero"' in bb_home
     assert "Baseball rankings" in bb_home
     assert "Baseball desk" not in bb_home
-    assert 'class="mast-mark"' in bb_home
-    assert "mast-art" in bb_home
-    assert "mast-ballkeep.jpg" in bb_home
+    assert 'class="hero masthead"' not in bb_home
     assert "background-image:url" not in bb_home
+    assert "Open The Keep" not in bb_home
+    assert "Price a trade" not in bb_home
     lineup = html_of("bb/the-lineup.html")
     assert "page-label" in lineup
     assert "bb-lineup.jpg" not in lineup
@@ -556,23 +554,25 @@ def main():
     assert "the-keep.html" in bk_home
     assert "board.html" in bk_home
     assert 'href="../privacy.html"' in bk_home
-    assert 'class="hero masthead"' in bk_home
+    assert 'class="home-hero"' in bk_home
     assert "Basketball rankings" in bk_home
     assert "Basketball desk" not in bk_home
-    assert "mast-art" in bk_home
-    assert "mast-ballkeep.jpg" in bk_home
+    assert 'class="hero masthead"' not in bk_home
     assert "background-image:url" not in bk_home
     assert "hero-lead" not in bk_home
+    assert "Open The Keep" not in bk_home
+    assert "Price a trade" not in bk_home
     pl_home = html_of("pl/index.html")
     assert 'class="desk-block schedules"' in pl_home
     assert "schedule.html" in pl_home
     assert 'href="../privacy.html"' in pl_home
-    assert 'class="hero masthead"' in pl_home
+    assert 'class="home-hero"' in pl_home
     assert "Premier League rankings" in pl_home
     assert "Premier League desk" not in pl_home
-    assert "mast-art" in pl_home
-    assert "mast-ballkeep.jpg" in pl_home
+    assert 'class="hero masthead"' not in pl_home
     assert "background-image:url" not in pl_home
+    assert "Open The Premier" not in pl_home
+    assert "Price a trade" not in pl_home
     bk_keep = html_of("bk/the-keep.html")
     assert "Victor Wembanyama" in bk_keep
     assert "bar-chart" in bk_keep

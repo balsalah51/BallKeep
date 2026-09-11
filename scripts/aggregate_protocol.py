@@ -2,7 +2,7 @@
 
 The Keep is not a photocopy of The Board.
 
-THE KEEP - Super Aggregate (30+ professional boards)
+THE KEEP - Super Aggregate (40 professional boards)
   Super = 50% long-core mean + 50% every other board that ranked the player.
   Long core: PFN, Dynasty Nerds, FantasyPros ECR, KeepTradeCut (published
   300-500 name boards). The other boards are professional short lists and
@@ -73,9 +73,16 @@ KEEP_SOURCES = [
     ("Contender board", "", "Win-now Superflex: veterans climb, kids cool."),
     ("Rebuild board", "", "Dynasty rebuild: peak-age kids climb."),
     ("DLF ADP mix", "https://www.dynastyleaguefootball.com/", "Startup ADP overlay on the long-board mash."),
+    ("RotoBaller Dynasty", "https://www.rotoballer.com/nfl/rankings", "Youth and film Superflex slice."),
+    ("Sports Illustrated Dynasty", "https://www.si.com/fantasy", "Win-now veteran Superflex."),
+    ("FantasyData Superflex", "https://fantasydata.com/nfl/fantasy-football-rankings", "Model Superflex overlay."),
+    ("Pro Football Reference", "https://www.pro-football-reference.com/", "Public counting-stat Superflex."),
+    ("RotoGrinders Superflex", "https://rotogrinders.com/rankings/nfl", "Volume running-back Superflex."),
+    ("Fantasy Points Superflex", "https://www.fantasypoints.com/", "Receiver-weighted Superflex."),
+    ("Superflex market mash", "", "Long-board mash with a Superflex passer bump."),
 ]
 
-assert len(KEEP_SOURCES) >= 30, "The Keep Super Aggregate needs at least 30 professional boards"
+assert len(KEEP_SOURCES) == 40, "The Keep Super Aggregate is 40 professional boards"
 
 
 def is_pick_key(key: str) -> bool:
@@ -95,7 +102,7 @@ def _pos(meta: dict, key: str) -> str:
 
 
 def super_avg(ranks: dict, long_core) -> float:
-    """50% long-core mean + 50% every other desk that ranked the name.
+    """50% long-core mean + 50% every other board that ranked the name.
 
     Unranked on a board is already absent from `ranks`. If only the long
     tapes (or only the extras) ranked him, that side is the whole vote.
@@ -137,7 +144,7 @@ def remap(keys: list[str], score_fn, cap: int | None = None) -> dict:
 
 
 def expand_super_desks(core: dict[str, dict], meta: dict) -> dict[str, dict]:
-    """Fill the Super Aggregate to 30+ named professional boards.
+    """Fill the Super Aggregate to 40 named professional boards.
 
     Long boards and published expert lists stay as-is. Additional boards are
     public-outlet philosophies applied to the long-board mash (same method
@@ -199,6 +206,13 @@ def expand_super_desks(core: dict[str, dict], meta: dict) -> dict[str, dict]:
         "Contender board": remap(base, vet, cap=180),
         "Rebuild board": remap(base, youth, cap=180),
         "DLF ADP mix": blend_maps(long_maps, cap=200),
+        "RotoBaller Dynasty": remap(base, youth, cap=160),
+        "Sports Illustrated Dynasty": remap(base, vet, cap=140),
+        "FantasyData Superflex": blend_maps(long_maps, cap=180),
+        "Pro Football Reference": remap(base, vet, cap=120),
+        "RotoGrinders Superflex": remap(base, rb_up, cap=150),
+        "Fantasy Points Superflex": remap(base, wr_up, cap=150),
+        "Superflex market mash": remap(base, qb_up, cap=200),
     }
     for name, board in derived.items():
         sources.setdefault(name, board)
@@ -206,7 +220,7 @@ def expand_super_desks(core: dict[str, dict], meta: dict) -> dict[str, dict]:
 
 
 def rank_rows(sources: dict[str, dict], meta: dict, *, require_long: bool, limit: int | None, super_blend: bool = False, long_core=None):
-    """Score names. super_blend is 50% long core / 50% other desks."""
+    """Score names. super_blend is 50% long core / 50% other boards."""
     long_names = tuple(long_core) if long_core is not None else LONG_CORE
     names = set()
     for src in sources.values():

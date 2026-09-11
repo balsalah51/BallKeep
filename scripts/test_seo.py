@@ -348,10 +348,14 @@ def test_rank_search_bar():
 
 def test_ppr_extra_boards():
     from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps
+    from build_site import PPR_SOURCES
+    from aggregate_protocol import KEEP_SOURCES
     spine = ["Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson"]
     maps = extra_ppr_maps(spine)
-    assert len(PPR_EXTRA_SOURCES) == 12
-    assert len(maps) == 12
+    assert len(KEEP_SOURCES) == 40
+    assert len(PPR_EXTRA_SOURCES) == 37
+    assert len(PPR_SOURCES) == 40
+    assert len(maps) == 37
     for label, _url, _note in PPR_EXTRA_SOURCES:
         assert label in maps
         assert maps[label]
@@ -564,13 +568,22 @@ def test_home_page_markup():
     assert "Fantasy Football Superflex Dynasty Rankings" in html
     assert "Josh Allen" in html
     assert "Jahmyr Gibbs" in html
-    assert "Open The Keep" in html
+    assert ">The Keep</a>" in html
+    assert ">The Board</a>" in html
+    assert "Open The Keep" not in html
+    assert "Open The Board" not in html
+    assert "Price a trade" not in html
     assert "home-proof" in html
     assert "home-method" in html
     assert "home-network" in html
+    assert "home-snapshot" in html
+    assert "the-fence.html" in html
+    assert 'class="desk-block fence"' not in html
+    assert "redraft desks" not in html
+    assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=50" in doc
+    assert "css/site.css?v=51" in doc
 
 
 if __name__ == "__main__":

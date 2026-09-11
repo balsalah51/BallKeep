@@ -309,7 +309,7 @@ BK_NEWS_FAQ = [
 
 def bk_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None,
             crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
-            robots=None, canonical=None, schema_type=None):
+            robots=None, canonical=None, schema_type=None, body_class=""):
     prefix = "../" * depth
     links = []
     for href, label in BK_NAV:
@@ -328,10 +328,10 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "bk/"), image=img, brand="BasketKeep", brand_url="https://ballkeep.com/bk/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=38" />
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=39" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
-<body>
+<body{f' class="{esc(body_class)}"' if body_class else ""}>
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{'index.html' if depth == 1 else '../index.html'}">
@@ -471,6 +471,35 @@ def val_cell(r):
 
 def player_href(name, depth=1):
     return f"{'../' * (depth - 1)}players/{slugify(name)}.html" if depth > 1 else f"players/{slugify(name)}.html"
+
+
+def home_rank_preview(rows, n=8):
+    items = []
+    for r in rows[:n]:
+        name = r.get("name") or ""
+        href = player_href(name) if name else ""
+        pos = r.get("pos") or ""
+        team = r.get("team") or ""
+        val = fmt_val(r.get("value"))
+        face = (
+            f'<img class="face" src="../img/bk-logo.jpg" '
+            f'alt="{esc(face_alt(name))}" width="40" height="40" loading="lazy" />'
+        )
+        name_html = (
+            f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
+            if href else f"<strong>{esc(name)}</strong>"
+        )
+        items.append(
+            "<li>"
+            f'<div class="home-rank-row">'
+            f'<span class="home-rk">{esc(r.get("bk") or "")}</span>'
+            f"{face}"
+            f'<span class="home-rank-meta">{name_html}'
+            f'<span>{esc(pos)} · {esc(team)}</span></span>'
+            f'<span class="home-val">{esc(val)}</span>'
+            "</div></li>"
+        )
+    return f'<ol class="home-rank-list">{"".join(items)}</ol>'
 
 
 def keep_as_roster(keep):
@@ -907,26 +936,41 @@ def write_basket_site():
             + "</div>"
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
+    keep_n = len(BK_SOURCES)
     home = f"""
-    {masthead("Basketball rankings", wordmark(), "The Keep · The Board")}
-    <section class="desk-block main">
-      <p class="kicker">Hardwood</p>
-      <h2>The Keep and The Board</h2>
-      <p class="note">Two lists. Everything else on this page supports these.</p>
-      <div class="home-leads">
-        <a class="tile lead keep" href="the-keep.html">
-          <h3>The Keep</h3>
-          <p class="lead-sub">Dynasty basketball · top 400</p>
-          <p>18 boards mashed into one rank.</p>
-        </a>
-        <a class="tile lead board" href="board.html">
-          <h3>The Board</h3>
-          <p class="lead-sub">Redraft basketball · this year</p>
-          <p>This season only. The names you start in 2026-27.</p>
-        </a>
+    <section class="home-hero" aria-label="Basketball rankings">
+      <div class="home-hero-media" aria-hidden="true"></div>
+      <div class="home-hero-copy">
+        {sr_h1("Fantasy Basketball Dynasty Rankings")}
+        <p class="home-eyebrow">Updated {UPDATED} · Dynasty · Redraft</p>
+        <p class="home-mark">{wordmark()}</p>
+        <div class="home-ctas">
+          <a class="cta" href="the-keep.html">The Keep</a>
+          <a class="cta alt" href="board.html">The Board</a>
+        </div>
       </div>
     </section>
-    {desk_block("lists", "Lists", "The other boards.", "Positions, rookies, and the wires.", [
+    <section class="home-snapshot" aria-label="Top of the boards">
+      <article class="home-snap keep">
+        <header class="home-snap-head">
+          <p class="kicker">The Keep</p>
+          <h2>Dynasty basketball</h2>
+          <p>Top {len(keep)} · {keep_n} boards</p>
+          <a class="home-snap-link" href="the-keep.html">Full board</a>
+        </header>
+        {home_rank_preview(keep)}
+      </article>
+      <article class="home-snap board">
+        <header class="home-snap-head">
+          <p class="kicker">The Board</p>
+          <h2>Redraft basketball</h2>
+          <p>This year only</p>
+          <a class="home-snap-link" href="board.html">Full board</a>
+        </header>
+        {home_rank_preview(board)}
+      </article>
+    </section>
+    {desk_block("lists", "More ranks", "Positions, rookies, and the wires.", "Guards, wings, bigs, and the stash boards.", [
         ("guards.html", "Guards", "PG and SG, Keep-ranked."),
         ("wings.html", "Wings", "SF and PF."),
         ("bigs.html", "Bigs", "Centers."),
@@ -938,15 +982,41 @@ def write_basket_site():
         ("trade.html", "Trade Calculators", "Keep and Board. Rank becomes BK Value."),
         ("players/index.html", "Player Files", "Keep top 400."),
     ])}
-    {desk_block("extra", "Extra", "News and The X.", "Memes and the wire.", [
+    {desk_block("tape", "Tape", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "NBA memes. Pictures on the card."),
         ("news.html", "BK News", "Injuries, roster, coaches."),
     ], extra_news)}
+    <ul class="home-proof">
+      <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
+      <li><strong>{len(keep)}</strong><span>Keep names</span></li>
+      <li><strong>{len(board)}</strong><span>Board names</span></li>
+      <li><strong>Hourly</strong><span>BK News</span></li>
+    </ul>
+    <section class="home-method" aria-label="How BasketKeep ranks">
+      <p class="kicker">Method</p>
+      <h2>How the ranks are built.</h2>
+      <ol class="home-steps">
+        <li><strong>Every board that ranked the name votes.</strong> {keep_n} public boards mashed into one rank.</li>
+        <li><strong>Unranked is a skip, never 999.</strong> Missing ranks do not dump a name.</li>
+        <li><strong>Rank 1 is 12,000 BK Value.</strong> Same curve as football. Fair is within 8%.</li>
+      </ol>
+    </section>
+    <section class="home-network" aria-label="Other sports">
+      <p class="kicker">The other boards</p>
+      <h2>Same curve, separate palettes.</h2>
+      <p class="note">Football, baseball, and the Premier League use the same rank-to-value idea. Basketball stays here.</p>
+      <div class="home-network-grid">
+        <a class="home-net fb" href="../index.html"><span>Ball Keep</span><span>Superflex dynasty. The Keep and The Board.</span></a>
+        <a class="home-net bb" href="../bb/index.html"><span>BaseKeep</span><span>Dynasty baseball. The Keep, The Diamond, The Farm.</span></a>
+        <a class="home-net pl" href="../pl/index.html"><span>PitchKeep</span><span>Premier League. The Premier and The Pitch.</span></a>
+      </div>
+    </section>
     {faq_html(BK_HOME_FAQ, heading="How BasketKeep works.")}
     """
     write("bk/index.html", bk_page(
         "Home", "index.html", home,
         extra_jsonld=[website_jsonld("BasketKeep", "https://ballkeep.com/bk/"), faq_jsonld(BK_HOME_FAQ)],
+        body_class="home",
     ))
 
     flt, js = filter_js(["G", "F", "C", "PG", "SG", "SF", "PF"])
