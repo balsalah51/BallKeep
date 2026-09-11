@@ -33,7 +33,7 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ball Keep", "item": "https://ballkeep.com/"}, {"@type": "ListItem", "position": 2, "name": "Week 1 Waivers", "item": "https://ballkeep.com/waiver.html"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is this list?", "acceptedAnswer": {"@type": "Answer", "text": "A pre-Week 1 Super Aggregate of published waiver articles. Season has not started. A name needs two lists. Unranked on a board is a skip."}}, {"@type": "Question", "name": "Is this FAAB advice?", "acceptedAnswer": {"@type": "Answer", "text": "No dollar bids. Super Aggregate: 50% FantasyPros WW ECR, 50% every other desk that ranked the name."}}, {"@type": "Question", "name": "Why is a drafted star missing?", "acceptedAnswer": {"@type": "Answer", "text": "If a desk did not put him on their waiver list, that desk is a skip for him."}}]}</script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/site.css?v=55" />
+  <link rel="stylesheet" href="css/site.css?v=56" />
   <link rel="icon" href="img/logo.jpg" />
 </head>
 <body>
@@ -69,7 +69,7 @@
   window.applyRankFilter = function () {
     var q = needle();
     var pos = wantPos();
-    document.querySelectorAll("table.rank-table tbody tr").forEach(function (tr) {
+    document.querySelectorAll("table.rank-table tbody tr, .touch-row").forEach(function (tr) {
       var hay = (tr.getAttribute("data-name") || "").toLowerCase();
       var nameOk = !q || hay.indexOf(q) !== -1;
       var rowPos = (tr.getAttribute("data-pos") || "").toLowerCase();

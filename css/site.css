@@ -302,6 +302,7 @@ tr.crossed-off .draft-off { display: inline; }
 .skip-val { color: var(--muted); font-weight: 700; }
 .touches-panel { padding: 12px; }
 .touches-list { display: flex; flex-direction: column; gap: 10px; }
+.touch-row[hidden] { display: none !important; }
 .touch-row {
   display: grid;
   grid-template-columns: minmax(12rem, 1.2fr) minmax(0, 2fr) minmax(9rem, 0.9fr);

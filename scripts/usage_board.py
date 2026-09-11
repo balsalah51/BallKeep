@@ -122,7 +122,7 @@ def _page_js() -> str:
       var nameOk = !q || hay.indexOf(q) !== -1;
       var rowPos = (row.getAttribute("data-pos") || "").toLowerCase();
       var posOk = pos === "all" || rowPos === pos;
-      row.hidden = !(nameOk && posOk);
+      row.style.display = (nameOk && posOk) ? "" : "none";
     });
   };
   function paint() {

@@ -342,6 +342,7 @@ def test_rank_search_bar():
     assert 'type="search"' in html
     assert "Find a player" in html
     assert "applyRankFilter" in html
+    assert ".touch-row" in html
     assert "keep-pos" in html
     assert rank_search_key("Josh Allen", "QB", "BUF") == "josh allen qb buf"
     assert "&#x27;" in rank_search_key("Ja'Marr Chase")
@@ -604,7 +605,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=55" in doc
+    assert "css/site.css?v=56" in doc
 
 
 if __name__ == "__main__":
