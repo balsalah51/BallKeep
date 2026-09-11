@@ -570,7 +570,7 @@ def test_home_page_markup():
     assert "home-network" in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=49" in doc
+    assert "css/site.css?v=50" in doc
 
 
 if __name__ == "__main__":

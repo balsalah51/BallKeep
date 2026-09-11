@@ -681,7 +681,8 @@ body.home .home-ctas .cta {
   margin-top: 0; box-shadow: 0 10px 24px rgba(200, 16, 46, 0.32);
 }
 body.home .home-ctas .cta.alt {
-  background: #102033; box-shadow: 0 8px 22px rgba(8, 16, 26, 0.4);
+  background: #fff; color: #102033;
+  box-shadow: 0 8px 22px rgba(8, 16, 26, 0.22);
 }
 body.home .home-ctas .cta.ghost {
   background: transparent; color: #fff;
@@ -836,8 +837,8 @@ body.home footer {
   body.home a.tile:hover { transform: none; }
 }
 @media (max-width: 860px) {
-  body.home .home-hero { min-height: 360px; }
-  body.home .home-hero-copy { padding: 26px 18px 22px; }
+  body.home .home-hero { min-height: 0; }
+  body.home .home-hero-copy { padding: 26px 18px 28px; }
   body.home .home-proof {
     margin: 12px 0 18px; grid-template-columns: 1fr 1fr;
   }

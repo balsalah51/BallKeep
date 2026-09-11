@@ -760,7 +760,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 49
+CSS_VER = 50
 
 PLAYER_PAGES = {}  # key -> slug
 
