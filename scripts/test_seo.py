@@ -550,6 +550,29 @@ def test_farm_top_100():
     assert len(keys) == len(set(keys))
 
 
+def test_home_page_markup():
+    from build_site import home_body_html, page
+    keep = [{
+        "name": "Josh Allen", "pos": "QB", "team": "BUF", "bk": 1,
+        "value": 12000, "key": "josh allen",
+    }]
+    board = [{
+        "name": "Jahmyr Gibbs", "pos": "RB", "team": "DET", "bk": 1, "value": 12000,
+    }]
+    html = home_body_html(keep, board, {}, [])
+    assert 'class="home-hero"' in html
+    assert "Fantasy Football Superflex Dynasty Rankings" in html
+    assert "Josh Allen" in html
+    assert "Jahmyr Gibbs" in html
+    assert "Open The Keep" in html
+    assert "home-proof" in html
+    assert "home-method" in html
+    assert "home-network" in html
+    doc = page("Home", "index.html", html, body_class="home")
+    assert '<body class="home">' in doc
+    assert "css/site.css?v=50" in doc
+
+
 if __name__ == "__main__":
     tests = [v for k, v in list(globals().items()) if k.startswith("test_")]
     for fn in tests:

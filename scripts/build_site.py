@@ -760,7 +760,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 48
+CSS_VER = 50
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1413,13 +1413,14 @@ FB_ALSO = {
 
 def page(title, path, body, extra_js="", depth=0, description=None, image=None, doc_title=None,
          crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
-         robots=None, canonical=None, schema_type=None):
+         robots=None, canonical=None, schema_type=None, body_class=""):
     packed = FB_SEO.get(path)
     full_title = doc_title or (packed[0] if packed else f"{title} | Ball Keep")
     desc = description or (packed[1] if packed else f"{title} on Ball Keep. Superflex dynasty rankings, BK Value trade calculator, and BK News. Updated {UPDATED}.")
     img = image or (packed[2] if packed else "img/logo.jpg")
     foot = fb_footer_nav(path, depth)
     crumb_html = crumbs or ""
+    body_attr = f' class="{esc(body_class)}"' if body_class else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -1429,7 +1430,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <link rel="stylesheet" href="{asset("css/site.css", depth)}?v={CSS_VER}" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
 </head>
-<body>
+<body{body_attr}>
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{nav_href("index.html", depth)}">
@@ -1597,7 +1598,7 @@ def news_player_anchor(player: dict, depth: int = 0) -> str:
     return f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
 
 
-def news_card(story: dict, depth: int = 0) -> str:
+def news_card(story: dict, depth: int = 0, featured: bool = False) -> str:
     cat = story.get("category") or "wire"
     label = CATEGORY_LABEL.get(cat, cat.title())
     href = f"{'../' * depth}news/{esc(story['slug'])}.html"
@@ -1612,8 +1613,9 @@ def news_card(story: dict, depth: int = 0) -> str:
         bits.append("X")
     if "video" in kinds:
         bits.append("video")
+    klass = "news-item tile" + (" is-lead" if featured else "")
     return (
-        f'<a class="news-item tile" href="{href}">'
+        f'<a class="{klass}" href="{href}">'
         f'<div class="news-meta"><span class="kind {esc(cat)}">{esc(label)}</span> '
         f'{esc(news_when(story.get("updated") or story.get("published") or ""))} · {esc(" · ".join(bits))}</div>'
         f'<h3>{esc(story.get("headline") or "Update")}</h3>'
@@ -1621,6 +1623,193 @@ def news_card(story: dict, depth: int = 0) -> str:
         f'<div class="news-players">{players}</div>'
         f"</a>"
     )
+
+
+def seed_player_pages():
+    """Fill PLAYER_PAGES from the last roster dump so home previews can link files."""
+    PLAYER_PAGES.clear()
+    roster = ROOT / "data/player_roster.json"
+    if not roster.exists():
+        return
+    try:
+        rows = json.loads(roster.read_text())
+    except Exception:
+        return
+    for p in rows:
+        k = p.get("key") or norm_name(p.get("name") or "")
+        slug = p.get("slug") or slugify(p.get("name") or "")
+        if k and slug:
+            PLAYER_PAGES[k] = slug
+
+
+def home_rank_preview(rows, media, n=8):
+    items = []
+    for r in rows[:n]:
+        name = r.get("name") or ""
+        href = player_url(name) or ""
+        pos = r.get("pos") or ""
+        team = r.get("team") or ""
+        val = fmt_val(r["value"]) if r.get("value") not in (None, "") else ""
+        face = (
+            f'<img class="face" src="{esc(face_src(r, media))}" '
+            f'alt="{esc(face_alt(name))}" width="40" height="40" loading="lazy" />'
+        )
+        name_html = (
+            f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
+            if href else f"<strong>{esc(name)}</strong>"
+        )
+        items.append(
+            "<li>"
+            f'<div class="home-rank-row">'
+            f'<span class="home-rk">{esc(r.get("bk") or "")}</span>'
+            f"{face}"
+            f'<span class="home-rank-meta">{name_html}'
+            f'<span>{esc(pos)} · {esc(team)}</span></span>'
+            f'<span class="home-val">{esc(val)}</span>'
+            "</div></li>"
+        )
+    return f'<ol class="home-rank-list">{"".join(items)}</ol>'
+
+
+def home_news_html(stories):
+    if not stories:
+        return ""
+    lead = news_card(stories[0], featured=True)
+    rest = "".join(news_card(s) for s in stories[1:])
+    rest_box = f'<div class="news-list">{rest}</div>' if rest else ""
+    return (
+        f'<div class="home-wire-layout">{lead}{rest_box}</div>'
+        '<p class="note home-wire-more"><a href="news.html">All BK News</a></p>'
+    )
+
+
+def home_body_html(keep, board, media, stories=None):
+    stories = stories or []
+    keep_n = len(KEEP_SOURCES)
+    board_n = len(PPR_SOURCES)
+    news_block = home_news_html(stories)
+    wire = ""
+    if news_block:
+        wire = (
+            '<section class="desk-block tape home-wire">'
+            '<div class="home-sec-head">'
+            '<p class="kicker">BK News</p>'
+            "<h2>The hourly wire.</h2>"
+            '<p class="note">Injuries, roster, and coach tape clustered every hour.</p>'
+            "</div>"
+            f"{news_block}"
+            "</section>"
+        )
+    return f"""
+    <section class="home-hero" aria-label="Football rankings">
+      <div class="home-hero-media" aria-hidden="true"></div>
+      <div class="home-hero-copy">
+        {sr_h1("Fantasy Football Superflex Dynasty Rankings")}
+        <p class="home-eyebrow">Updated {UPDATED} · Superflex dynasty · Redraft PPR</p>
+        <p class="home-mark">{wordmark()}</p>
+        <p class="home-tag">Consensus rankings, priced the way leagues actually trade.</p>
+        <p class="home-lede">The Keep is Superflex dynasty from {keep_n} boards, top 400. The Board is this-year redraft PPR. Rank 1 is 12,000 BK Value. Unranked is a skip, never 999.</p>
+        <div class="home-ctas">
+          <a class="cta" href="the-keep.html">Open The Keep</a>
+          <a class="cta alt" href="board.html">Open The Board</a>
+          <a class="cta ghost" href="trade.html">Price a trade</a>
+        </div>
+      </div>
+    </section>
+    <ul class="home-proof">
+      <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
+      <li><strong>{board_n}</strong><span>redraft desks</span></li>
+      <li><strong>{KEEP_N}</strong><span>Keep names</span></li>
+      <li><strong>Hourly</strong><span>BK News</span></li>
+    </ul>
+    <section class="home-snapshot" aria-label="Top of the boards">
+      <article class="home-snap keep">
+        <header class="home-snap-head">
+          <p class="kicker">The Keep</p>
+          <h2>Superflex dynasty</h2>
+          <p>Top {KEEP_N} · {keep_n} boards · rest of season</p>
+          <a class="home-snap-link" href="the-keep.html">Full board</a>
+        </header>
+        {home_rank_preview(keep, media)}
+      </article>
+      <article class="home-snap board">
+        <header class="home-snap-head">
+          <p class="kicker">The Board</p>
+          <h2>Redraft PPR</h2>
+          <p>This year · 1QB · {board_n} desks</p>
+          <a class="home-snap-link" href="board.html">Full board</a>
+        </header>
+        {home_rank_preview(board, media)}
+      </article>
+    </section>
+    <section class="home-method" aria-label="How the Super Aggregate works">
+      <p class="kicker">Method</p>
+      <h2>How the Super Aggregate works.</h2>
+      <ol class="home-steps">
+        <li><strong>Half the vote is the long boards.</strong> The tapes that actually go deep enough to matter.</li>
+        <li><strong>Half is every other desk that ranked the name.</strong> Short lists still move the names they published.</li>
+        <li><strong>Unranked is a skip, never 999.</strong> Rank 1 is 12,000 BK Value. Fair is within 8%.</li>
+      </ol>
+    </section>
+    {wire}
+    {desk_block("ros-skill", "Rest of season", "Skill boards.", "Rest-of-season redraft and rookies. Not this week's stream.", [
+        ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
+        ("the-classic.html", "The Classic", "Half-PPR, this year."),
+        ("redraft-standard.html", "Redraft Standard", "No reception point."),
+        ("rookies-2026.html", "2026 Rookies", "Drafted class."),
+    ])}
+    {desk_block("ros-st", "Rest of season", "Top DST and Kickers.", "Rest-of-season values. Not this week's stream. Week 1 DST and Kickers sit in the Week 1 block.", [
+        ("defenses.html", "The D (DST)", "Season-long team DST."),
+        ("kickers.html", "Top Kickers", "Season-long K."),
+    ])}
+    {desk_block("week1", "Week 1", "This week's stream.", "Weekly boards, matchups, and the preseason waiver mash. Not rest-of-season values.", [
+        ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
+        ("week1-dst.html", "Week 1 DST", "This week's stream."),
+        ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
+        ("week1-matchups.html", "Week 1 Matchups", "Win picks from 26 sources."),
+        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("injuries.html", "Injuries", "ESPN designations."),
+    ])}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, ADP vs The Board, and depth charts.", [
+        ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
+        ("adp.html", "ADP", "The Board vs ESPN."),
+        ("depth-charts.html", "Depth Charts", "32 clubs."),
+    ])}
+    {desk_block("tape", "Tape", "The non-ranking lists.", "The market notes, the player files, and the pictures.", [
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
+        ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
+        ("the-x.html", "The X", "Memes. Pictures on the card."),
+        ("news.html", "BK News", "Injuries, roster, coaches."),
+    ])}
+    {desk_block("slates", "Slates", "The schedules.", "Football, baseball, and the Premier League.", [
+        ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
+        ("mlb-schedule.html", "MLB Schedule", "September slate."),
+        ("bpl-schedule.html", "BPL Schedule", "2026/27 Premier League."),
+    ])}
+    <section class="home-network" aria-label="Other sports">
+      <p class="kicker">The other desks</p>
+      <h2>Same curve, separate palettes.</h2>
+      <p class="note">BaseKeep, BasketKeep, and PitchKeep use the same rank-to-value idea. Football stays here.</p>
+      <div class="home-network-grid">
+        <a class="home-net bb" href="bb/index.html"><span>BaseKeep</span><span>Dynasty baseball. The Keep, The Diamond, The Farm.</span></a>
+        <a class="home-net bk" href="bk/index.html"><span>BasketKeep</span><span>Dynasty basketball. The Keep and The Board.</span></a>
+        <a class="home-net pl" href="pl/index.html"><span>PitchKeep</span><span>Premier League. The Premier and The Pitch.</span></a>
+      </div>
+    </section>
+    {desk_block("fence", "The Fence", "Superflex + IDP.", "Mixed dynasty board. Last on purpose. IDP names are marked in red.", [
+        ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
+    ])}
+    {faq_html(HOME_FAQ, heading="How Ball Keep works.")}
+    """
+
+
+def write_home_page(keep, board, media, stories=None):
+    write("index.html", page(
+        "Home", "index.html", home_body_html(keep, board, media, stories),
+        extra_jsonld=[website_jsonld("Ball Keep"), faq_jsonld(HOME_FAQ)],
+        modified=LASTMOD,
+        body_class="home",
+    ))
 
 
 def render_news_pages():
@@ -2771,78 +2960,7 @@ def main():
     write_recent_trades_page(deals)
 
     # HOME
-    latest_news = load_news_stories("football")[:5]
-    extra_news = ""
-    if latest_news:
-        extra_news = (
-            '<div class="news-list">'
-            + "".join(news_card(s) for s in latest_news)
-            + "</div>"
-            '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
-        )
-    home_body = f"""
-    {masthead("Football rankings", wordmark(), "Dynasty · Redraft", sr_title="Fantasy Football Superflex Dynasty Rankings")}
-    <section class="desk-block main home-intro">
-      <p class="kicker">Updated {UPDATED}</p>
-      <h2>The Keep and The Board</h2>
-      <p class="note">The Keep is Superflex Dynasty. The Board is Redraft PPR. Both are rest-of-season values. Week 1 boards live further down.</p>
-      <div class="home-leads">
-        <a class="tile lead keep" href="the-keep.html">
-          <h3>The Keep</h3>
-          <p class="lead-sub">Superflex dynasty · top 400</p>
-          <p>Super Aggregate of 33 boards.</p>
-        </a>
-        <a class="tile lead board" href="board.html">
-          <h3>The Board</h3>
-          <p class="lead-sub">Redraft PPR · this year</p>
-          <p>Super Aggregate of 15 boards.</p>
-        </a>
-      </div>
-    </section>
-    {desk_block("ros-skill", "Rest of season", "Skill boards.", "Rest-of-season redraft and rookies. Not this week's stream.", [
-        ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
-        ("the-classic.html", "The Classic", "Half-PPR, this year."),
-        ("redraft-standard.html", "Redraft Standard", "No reception point."),
-        ("rookies-2026.html", "2026 Rookies", "Drafted class."),
-    ])}
-    {desk_block("ros-st", "Rest of season", "Top DST and Kickers.", "Rest-of-season values. Not this week's stream. Week 1 DST and Kickers sit in the Week 1 block.", [
-        ("defenses.html", "The D (DST)", "Season-long team DST."),
-        ("kickers.html", "Top Kickers", "Season-long K."),
-    ])}
-    {desk_block("week1", "Week 1", "This week's stream.", "Weekly boards, matchups, and the preseason waiver mash. Not rest-of-season values.", [
-        ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
-        ("week1-dst.html", "Week 1 DST", "This week's stream."),
-        ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
-        ("week1-matchups.html", "Week 1 Matchups", "Win picks from 26 sources."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
-        ("injuries.html", "Injuries", "ESPN designations."),
-    ])}
-    {desk_block("tape", "Tape", "The non-ranking lists.", "The wire, the market notes, and the pictures. Not rank boards.", [
-        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
-        ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
-        ("news.html", "BK News", "Injuries, roster, coaches."),
-        ("the-x.html", "The X", "Memes. Pictures on the card."),
-    ], extra_news)}
-    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, ADP vs The Board, and depth charts.", [
-        ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
-        ("adp.html", "ADP", "The Board vs ESPN."),
-        ("depth-charts.html", "Depth Charts", "32 clubs."),
-    ])}
-    {desk_block("slates", "Slates", "The schedules.", "Football, baseball, and the Premier League.", [
-        ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
-        ("mlb-schedule.html", "MLB Schedule", "September slate."),
-        ("bpl-schedule.html", "BPL Schedule", "2026/27 Premier League."),
-    ])}
-    {desk_block("fence", "The Fence", "Superflex + IDP.", "Mixed dynasty board. Last on purpose. IDP names are marked in red.", [
-        ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
-    ])}
-    {faq_html(HOME_FAQ, heading="How Ball Keep works.")}
-    """
-    write("index.html", page(
-        "Home", "index.html", home_body,
-        extra_jsonld=[website_jsonld("Ball Keep"), faq_jsonld(HOME_FAQ)],
-        modified=LASTMOD,
-    ))
+    write_home_page(keep, board, media, load_news_stories("football")[:5])
 
     # THE KEEP
     def src_td(r, name):
@@ -3744,10 +3862,23 @@ def rewrite_football_navs() -> int:
     return n
 
 
+def render_home_only():
+    """Rewrite the football home page from saved Keep / Board dumps."""
+    keep_path = ROOT / "data/the-keep.json"
+    board_path = ROOT / "data/board.json"
+    keep = json.loads(keep_path.read_text()).get("players") or [] if keep_path.exists() else []
+    board = json.loads(board_path.read_text()).get("players") or [] if board_path.exists() else []
+    seed_player_pages()
+    write_home_page(keep, board, load_player_media(), load_news_stories("football")[:5])
+    print(f"wrote index.html keep={len(keep)} board={len(board)}")
+
+
 if __name__ == "__main__":
     if "--nav-only" in sys.argv:
         rewrite_football_navs()
     elif "--news-only" in sys.argv:
         render_news_only()
+    elif "--home-only" in sys.argv:
+        render_home_only()
     else:
         main()

@@ -6,7 +6,7 @@ import json
 import re
 
 SITE = "https://ballkeep.com"
-FONT_HREF = "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap"
+FONT_HREF = "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;600;700&display=swap"
 ADSENSE_CLIENT = "ca-pub-1074015774205047"
 ADSENSE_CERT = "f08c47fec0942fa0"
 
