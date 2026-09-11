@@ -744,7 +744,9 @@ NAV_GROUPS = [
     ("tools", "Tools", [
         ("adp.html", "ADP"),
         ("trade.html", "Trade"),
-        ("league.html", "League"),
+    ]),
+    ("mine", "Yours", [
+        ("league.html", "My Team"),
     ]),
     ("tape", "Tape", [
         ("players/index.html", "Players"),
@@ -762,7 +764,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 52
+CSS_VER = 53
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1103,8 +1105,8 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "league.html": (
-        "Fantasy League Analyzer (Sleeper, Yahoo) | Ball Keep",
-        "Load a Sleeper league ID or paste Yahoo rosters. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle.",
+        "My Team | Load Your Sleeper League | Ball Keep",
+        "Put in your Sleeper league ID. Power rankings, BK Value on every roster, leftover waivers, and a dynasty pick toggle.",
         "img/logo.jpg",
     ),
     "injuries.html": (
@@ -1780,8 +1782,10 @@ def home_body_html(keep, board, media, stories=None):
         ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ])}
-    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, load a league, ADP vs The Board, and depth charts.", [
-        ("league.html", "League", "Sleeper ID or Yahoo paste. BK Value on every roster."),
+    {desk_block("mine", "Yours", "Put in your own team.", "Load your Sleeper league. BK Value on every roster.", [
+        ("league.html", "My Team", "Your Sleeper league. Power rankings and leftover values."),
+    ])}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, ADP vs The Board, and depth charts.", [
         ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
         ("adp.html", "ADP", "The Board vs ESPN."),
         ("depth-charts.html", "Depth Charts", "32 clubs."),
@@ -2876,7 +2880,7 @@ def write_explore_page():
         ("waiver.html", "Week 1 Waivers", "Consensus adds."),
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
-        ("league.html", "League", "Sleeper or Yahoo paste."),
+        ("league.html", "My Team", "Your Sleeper league."),
         ("players/index.html", "Player Files", "Keep 400 plus tape."),
         ("news.html", "BK News", "Hourly football wire."),
         ("the-x.html", "The X", "Football memes."),

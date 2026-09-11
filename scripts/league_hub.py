@@ -1,4 +1,4 @@
-"""League hub: BK Value picture of a Sleeper or Yahoo roster set."""
+"""My Team: BK Value picture of a Sleeper league you load yourself."""
 from __future__ import annotations
 
 import json
@@ -183,33 +183,18 @@ def _demo_league(keep, by_name):
 
 def league_body():
     return """
-    <p class="kicker">Tools · Sleeper and Yahoo</p>
-    <h1>League</h1>
-    <p class="note">Load a Sleeper league by ID. Yahoo keeps rosters behind a login, so paste each team below. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off.</p>
+    <p class="kicker mine-kicker">Yours · Sleeper</p>
+    <h1>My Team</h1>
+    <p class="note">Put in your Sleeper league ID. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off.</p>
     <form class="league-form" id="league-form" action="league.html" method="get">
-      <div class="league-tabs" role="tablist">
-        <button type="button" class="is-on" data-plat="sleeper">Sleeper</button>
-        <button type="button" data-plat="yahoo">Yahoo</button>
-      </div>
       <div class="league-fields" data-pane="sleeper">
         <label for="sleeper-id">Sleeper league ID</label>
         <div class="league-row">
           <input id="sleeper-id" name="sleeper" type="text" inputmode="numeric" autocomplete="off" placeholder="18-digit league ID" />
-          <button type="submit" class="cta" data-load="sleeper">Load league</button>
+          <button type="submit" class="cta" data-load="sleeper">Load my team</button>
           <button type="button" class="cta alt" data-demo="1">Sample league</button>
         </div>
-        <p class="note">Find the ID in the Sleeper league URL or in League settings.</p>
-      </div>
-      <div class="league-fields is-hide" data-pane="yahoo">
-        <label for="yahoo-id">Yahoo league ID</label>
-        <input id="yahoo-id" name="yahoo" type="text" autocomplete="off" placeholder="461.l.123456 or the numeric ID" />
-        <label for="yahoo-paste">Paste Yahoo rosters</label>
-        <textarea id="yahoo-paste" rows="10" placeholder="# Cedar&#10;Josh Allen&#10;Bijan Robinson&#10;&#10;# Harbor&#10;Ja'Marr Chase"></textarea>
-        <div class="league-row">
-          <button type="button" class="cta" data-load="yahoo">Read pasted rosters</button>
-          <button type="button" class="cta alt" data-demo="1">Sample league</button>
-        </div>
-        <p class="note">Yahoo's fantasy API requires a Yahoo login. This site cannot store that login. Paste teams as a heading line starting with #, then one player per line. Or move the league to Sleeper and use the ID.</p>
+        <p class="note">Find the ID in the Sleeper URL or in league settings.</p>
       </div>
     </form>
     <div id="league-app" class="league-app" hidden></div>
@@ -226,19 +211,20 @@ def write_league_page(b, keep, board, ppr, classic, std, waiver, media):
     b.write(
         "league.html",
         b.page(
-            "League",
+            "My Team",
             "league.html",
             body,
             extra_js=js,
             crumbs=breadcrumbs([
                 ("Ball Keep", "index.html"),
-                ("League", None),
+                ("My Team", None),
             ]),
             extra_jsonld=[
                 breadcrumb_jsonld([
                     ("Ball Keep", "https://ballkeep.com/"),
-                    ("League", "https://ballkeep.com/league.html"),
+                    ("My Team", "https://ballkeep.com/league.html"),
                 ]),
             ],
+            body_class="mine-page",
         ),
     )

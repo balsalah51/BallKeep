@@ -276,15 +276,17 @@ def main():
     week1_at = home.find('class="desk-block week1"')
     tape_at = home.find('class="desk-block tape"')
     tools_at = home.find('class="desk-block tools"')
+    mine_at = home.find('class="desk-block mine"')
     slates_at = home.find('class="desk-block slates"')
     snap_at = home.find('class="home-snapshot"')
     proof_at = home.find('class="home-proof"')
-    assert 0 < snap_at < ros_skill_at < ros_st_at < week1_at < tools_at < tape_at < slates_at < proof_at
+    assert 0 < snap_at < ros_skill_at < ros_st_at < week1_at < mine_at < tools_at < tape_at < slates_at < proof_at
     assert 'class="desk-block fence"' not in home
     main = home[snap_at:ros_skill_at]
     ros_skill = home[ros_skill_at:ros_st_at]
     ros_st = home[ros_st_at:week1_at]
-    week1 = home[week1_at:tools_at]
+    week1 = home[week1_at:mine_at]
+    mine = home[mine_at:tools_at]
     tools = home[tools_at:tape_at]
     tape = home[tape_at:slates_at]
     slates = home[slates_at:proof_at]
@@ -321,7 +323,9 @@ def main():
     assert "the-x.html" in tape
     assert "the-fence.html" not in tape
     assert 'href="trade.html"' in tools
-    assert "league.html" in tools
+    assert "league.html" in mine
+    assert "My Team" in mine
+    assert "league.html" not in tools
     assert "adp.html" in tools
     assert "sos.html" not in tools
     assert "depth-charts.html" in tools
@@ -433,11 +437,13 @@ def main():
     assert "win percent" not in w1_m_html.lower()
     assert "win chance" in w1_m_html.lower()
     league_html = html_of("league.html")
-    assert "<h1>League</h1>" in league_html
+    assert "<h1>My Team</h1>" in league_html
     assert "sleeper-id" in league_html
-    assert "yahoo-paste" in league_html
+    assert "yahoo-paste" not in league_html
+    assert "Yahoo" not in league_html
     assert "js/league.js" in league_html
     assert "Sample league" in league_html
+    assert ">My Team</a>" in html_of("index.html")
     assert "\u2014" not in league_html
     assert " is the " not in league_html
     assert (root / "data/league-lookup.json").exists()

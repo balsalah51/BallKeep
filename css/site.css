@@ -67,6 +67,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--red); }
 .nav-group.nav-tools { background: #eef6ee; border-color: #c5dcc5; }
 .nav-group.nav-tools .nav-lab, .nav-group.nav-tools a { color: #2f6b3a; }
 .nav-group.nav-tools a:hover, .nav-group.nav-tools a[aria-current="page"] { color: #1d4a26; }
+.nav-group.nav-mine { background: #fff4e4; border-color: #e8c48a; }
+.nav-group.nav-mine .nav-lab, .nav-group.nav-mine a { color: #b86a12; }
+.nav-group.nav-mine a:hover, .nav-group.nav-mine a[aria-current="page"] { color: #8a4c0a; }
 .nav-group.nav-tape { background: #f0f1f4; border-color: #d5d7de; }
 .nav-group.nav-tape .nav-lab, .nav-group.nav-tape a { color: #4b5563; }
 .nav-group.nav-tape a:hover, .nav-group.nav-tape a[aria-current="page"] { color: #1f2937; }
@@ -381,6 +384,11 @@ a.news-item:hover h3 { color: var(--red); }
 .desk-block.tools .kicker { color: #4b5563; }
 .desk-block.tools .tile { background: #fff; }
 .desk-block.tools .tile:hover { border-color: #9aa1ad; }
+.desk-block.mine { background: #fff6ea; border: 1px solid #e8c48a; }
+.desk-block.mine .kicker { color: #b86a12; }
+.desk-block.mine .tile { background: #fff; }
+.desk-block.mine .tile:hover { border-color: #d4a25a; }
+.desk-block.mine h2 { color: #8a4c0a; }
 .desk-block.fence { background: #f8eef0; border: 1px solid #e4c4ca; }
 .desk-block.fence .kicker { color: #8e0b20; }
 .desk-block.fence .tile { background: #fff; }
@@ -766,8 +774,10 @@ body.opening-page .opening {
   .opening-teaser h2 { font-size: 1.05rem; }
 }
 
+body.mine-page .mine-kicker { color: #b86a12; }
+body.mine-page h1 { color: #8a4c0a; }
 .league-form {
-  background: var(--white); border: 1px solid var(--line); border-radius: 16px;
+  background: #fffaf2; border: 1px solid #e8c48a; border-radius: 16px;
   padding: 18px; box-shadow: var(--shadow); margin: 8px 0 22px;
 }
 .league-tabs { display: flex; gap: 8px; margin-bottom: 14px; }
@@ -1067,6 +1077,7 @@ body.home .desk-block.ros-skill { border-top: 3px solid #2c4a63; }
 body.home .desk-block.ros-st { border-top: 3px solid #6b2d86; }
 body.home .desk-block.week1 { border-top: 3px solid #17688a; }
 body.home .desk-block.tools { border-top: 3px solid #2f6b3a; }
+body.home .desk-block.mine { border-top: 3px solid #b86a12; }
 body.home .desk-block.tape { border-top: 3px solid #4b5563; }
 body.home .desk-block.slates { border-top: 3px solid #2b4c7e; }
 body.home .desk-block.fence { border-top: 3px solid #8e0b20; }
