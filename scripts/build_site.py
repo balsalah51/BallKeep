@@ -761,7 +761,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 52
+CSS_VER = 53
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1097,8 +1097,8 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "league.html": (
-        "Fantasy League Analyzer (Sleeper, Yahoo) | Ball Keep",
-        "Load a Sleeper league ID or paste Yahoo rosters. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle.",
+        "Fantasy League Analyzer (Sleeper) | Ball Keep",
+        "Load a public Sleeper league ID. Power rankings, BK Value, leftover waivers, and a dynasty pick toggle.",
         "img/logo.jpg",
     ),
     "injuries.html": (
@@ -1766,7 +1766,7 @@ def home_body_html(keep, board, media, stories=None):
         ("injuries.html", "Injuries", "ESPN designations."),
     ])}
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, load a league, ADP vs The Board, and depth charts.", [
-        ("league.html", "League", "Sleeper ID or Yahoo paste. BK Value on every roster."),
+        ("league.html", "League", "Sleeper league ID. BK Value on every roster."),
         ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
         ("adp.html", "ADP", "The Board vs ESPN."),
         ("depth-charts.html", "Depth Charts", "32 clubs."),
@@ -2860,7 +2860,7 @@ def write_explore_page():
         ("waiver.html", "Week 1 Waivers", "Consensus adds."),
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
-        ("league.html", "League", "Sleeper or Yahoo paste."),
+        ("league.html", "League", "Sleeper league ID."),
         ("players/index.html", "Player Files", "Keep 400 plus tape."),
         ("news.html", "BK News", "Hourly football wire."),
         ("the-x.html", "The X", "Football memes."),

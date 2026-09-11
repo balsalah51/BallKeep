@@ -1,4 +1,4 @@
-"""League hub: BK Value picture of a Sleeper or Yahoo roster set."""
+"""League hub: BK Value picture of a Sleeper roster set."""
 from __future__ import annotations
 
 import json
@@ -183,15 +183,11 @@ def _demo_league(keep, by_name):
 
 def league_body():
     return """
-    <p class="kicker">Tools · Sleeper and Yahoo</p>
+    <p class="kicker">Tools · Sleeper</p>
     <h1>League</h1>
-    <p class="note">Load a Sleeper league by ID. Yahoo keeps rosters behind a login, so paste each team below. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off.</p>
+    <p class="note">Load a public Sleeper league by ID. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off.</p>
     <form class="league-form" id="league-form" action="league.html" method="get">
-      <div class="league-tabs" role="tablist">
-        <button type="button" class="is-on" data-plat="sleeper">Sleeper</button>
-        <button type="button" data-plat="yahoo">Yahoo</button>
-      </div>
-      <div class="league-fields" data-pane="sleeper">
+      <div class="league-fields">
         <label for="sleeper-id">Sleeper league ID</label>
         <div class="league-row">
           <input id="sleeper-id" name="sleeper" type="text" inputmode="numeric" autocomplete="off" placeholder="18-digit league ID" />
@@ -199,17 +195,6 @@ def league_body():
           <button type="button" class="cta alt" data-demo="1">Sample league</button>
         </div>
         <p class="note">Find the ID in the Sleeper league URL or in League settings.</p>
-      </div>
-      <div class="league-fields is-hide" data-pane="yahoo">
-        <label for="yahoo-id">Yahoo league ID</label>
-        <input id="yahoo-id" name="yahoo" type="text" autocomplete="off" placeholder="461.l.123456 or the numeric ID" />
-        <label for="yahoo-paste">Paste Yahoo rosters</label>
-        <textarea id="yahoo-paste" rows="10" placeholder="# Cedar&#10;Josh Allen&#10;Bijan Robinson&#10;&#10;# Harbor&#10;Ja'Marr Chase"></textarea>
-        <div class="league-row">
-          <button type="button" class="cta" data-load="yahoo">Read pasted rosters</button>
-          <button type="button" class="cta alt" data-demo="1">Sample league</button>
-        </div>
-        <p class="note">Yahoo's fantasy API requires a Yahoo login. This site cannot store that login. Paste teams as a heading line starting with #, then one player per line. Or move the league to Sleeper and use the ID.</p>
       </div>
     </form>
     <div id="league-app" class="league-app" hidden></div>
