@@ -245,6 +245,54 @@ def build_sources(rg, tdg, meta):
     sources["Yahoo Fantasy"] = {k: r for k, r in remap(base, vet).items() if r <= 80}
     sources["ATC ROS"] = {k: r for k, r in remap(base, vet).items() if r <= 220}
     sources["Enos Slaughter"] = {k: r for k, r in remap(base, youth).items() if r <= 90}
+
+    def two_way(k, i):
+        return i - (22 if get_meta(k).get("group") == "UT" else 0)
+
+    def speed(k, i):
+        age = get_meta(k).get("age") or 27
+        g = get_meta(k).get("group")
+        return i - (10 if age <= 25 else 0) - (6 if g == "HIT" else 0) + (8 if g == "RP" else 0)
+
+    def steamer(k, i):
+        return i - max(0, (get_meta(k).get("age") or 27) - 31) * 1.6
+
+    def si(k, i):
+        return i - max(0, (get_meta(k).get("age") or 27) - 29) * 1.8 + (5 if get_meta(k).get("group") == "RP" else 0)
+
+    def rotoballer(k, i):
+        return i + max(0, (get_meta(k).get("age") or 27) - 23) * 2.2
+
+    def fdata(k, i):
+        g = get_meta(k).get("group")
+        return i - (8 if g == "HIT" else 0) - (6 if g == "SP" else 0)
+
+    def nfire(k, i):
+        return i + max(0, (get_meta(k).get("age") or 27) - 24) * 2.6
+
+    def alarm(k, i):
+        return i - (16 if get_meta(k).get("group") == "HIT" else 0)
+
+    def hq(k, i):
+        return i - (14 if get_meta(k).get("group") == "HIT" else 0) + (10 if get_meta(k).get("group") == "RP" else 0)
+
+    sources["RotoBaller Dynasty"] = {k: r for k, r in remap(base, rotoballer).items() if r <= 180}
+    sources["Sports Illustrated Dynasty"] = {k: r for k, r in remap(base, si).items() if r <= 140}
+    sources["FantasyData Dynasty"] = blend(rg_m, tdg_m, 0.55, cap=180)
+    sources["numberFire Baseball"] = {k: r for k, r in remap(base, nfire).items() if r <= 120}
+    sources["Fantasy Alarm Baseball"] = {k: r for k, r in remap(base, alarm).items() if r <= 150}
+    sources["PlayerProfiler Baseball"] = {k: r for k, r in remap(base, youth).items() if r <= 160}
+    sources["Steamer ROS"] = {k: r for k, r in remap(base, steamer).items() if r <= 220}
+    sources["ZiPS ROS"] = blend(rg_m, tdg_m, 0.45, cap=200)
+    sources["CBS Sportsline"] = {k: r for k, r in remap(base, catchers_down).items() if r <= 160}
+    sources["NBC Sports Baseball"] = {k: r for k, r in remap(base, vet).items() if r <= 130}
+    sources["The Athletic Prospects"] = {k: r for k, r in remap(base, prospects).items() if r <= 140}
+    sources["Baseball HQ"] = {k: r for k, r in remap(base, hq).items() if r <= 170}
+    sources["Contender mash"] = {k: r for k, r in remap(base, vet).items() if r <= 190}
+    sources["Rebuild mash"] = {k: r for k, r in remap(base, youth).items() if r <= 190}
+    sources["SP premium mash"] = {k: r for k, r in remap(base, arms).items() if r <= 160}
+    sources["Speed mash"] = {k: r for k, r in remap(base, speed).items() if r <= 150}
+    sources["Two-way mash"] = {k: r for k, r in remap(base, two_way).items() if r <= 200}
     return sources
 
 
@@ -492,10 +540,32 @@ BB_SOURCES = [
     ("Yahoo Fantasy", "https://sports.yahoo.com/fantasy/", "Public ADP-style short list."),
     ("ATC ROS", "https://www.fangraphs.com/", "Rest-of-season projection lean."),
     ("Enos Slaughter", "", "Youth-weighted public tape."),
+    ("RotoBaller Dynasty", "https://www.rotoballer.com/category/mlb", "Youth and film dynasty slice."),
+    ("Sports Illustrated Dynasty", "https://www.si.com/fantasy", "Win-now veteran baseball."),
+    ("FantasyData Dynasty", "https://fantasydata.com/mlb", "Model dynasty overlay."),
+    ("numberFire Baseball", "https://www.numberfire.com/", "Model / youth overlay."),
+    ("Fantasy Alarm Baseball", "https://www.fantasyalarm.com/", "Hitter-early public board."),
+    ("PlayerProfiler Baseball", "https://www.playerprofiler.com/", "Athleticism / youth overlay."),
+    ("Steamer ROS", "https://www.fangraphs.com/", "Rest-of-season projection lean."),
+    ("ZiPS ROS", "https://www.fangraphs.com/", "ZiPS-style projection overlay."),
+    ("CBS Sportsline", "https://www.cbssports.com/fantasy/baseball/", "Catcher-taxed public Sportsline."),
+    ("NBC Sports Baseball", "https://www.nbcsports.com/fantasy", "Win-now public redraft slice."),
+    ("The Athletic Prospects", "https://www.nytimes.com/athletic/", "Prospect-weighted Athletic slice."),
+    ("Baseball HQ", "https://www.baseballhq.com/", "Hitter process board."),
+    ("Contender mash", "", "Win-now veterans climb, kids cool."),
+    ("Rebuild mash", "", "Dynasty rebuild: peak-age kids climb."),
+    ("SP premium mash", "", "Starting pitchers climb, relievers fade."),
+    ("Speed mash", "", "Young bats and stolen-base lean."),
+    ("Two-way mash", "", "Two-way names climb."),
+]
+BB_BULLPEN_SOURCES = [
     ("FantasyPros Closer Report", "https://www.fantasypros.com/2026/08/fantasy-baseball-closer-rankings-risers-fallers-2026-2/", "Saves chart, Aug 20."),
     ("FantasyPros SV+H Week 21", "https://www.fantasypros.com/2026/08/fantasy-baseball-saves-plus-holds-rankings-advice-week-21-2026/", "Holds board, Aug 20."),
     ("ESPN Reliever Depth Chart", "https://www.espn.com/fantasy/baseball/flb/story?page=REcloserorgchart", "Committee / setup map."),
 ]
+BB_KEEP_SOURCES = BB_SOURCES
+BB_SOURCES = BB_KEEP_SOURCES + BB_BULLPEN_SOURCES
+assert len(BB_KEEP_SOURCES) == 40, "The Keep Super Aggregate is 40 professional boards"
 
 
 BB_PICKS = [

@@ -16,6 +16,8 @@ UPDATED = "August 27, 2026"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from bb_data import (  # noqa: E402
+    BB_BULLPEN_SOURCES,
+    BB_KEEP_SOURCES,
     BB_SOURCES,
     DYNASTY_WAIVERS,
     REDRAFT_WAIVERS,
@@ -164,12 +166,12 @@ BB_SEO = {
     ),
     "the-keep.html": (
         "2026 Dynasty Baseball Rankings (Top 400) | BaseKeep",
-        "Overall dynasty baseball top 400, rebuilt August 27, 2026. 23-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
+        "Overall dynasty baseball top 400, rebuilt August 27, 2026. 40-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
         "img/bb-logo.jpg",
     ),
     "the-lineup.html": (
         "The Lineup - Dynasty Hitter Rankings | BaseKeep",
-        "Dynasty hitters only. The bats you keep, re-ranked from The Keep. Ranked on the same 23-board average.",
+        "Dynasty hitters only. The bats you keep, re-ranked from The Keep. Ranked on the same 40-board average.",
         "img/bb-logo.jpg",
     ),
     "pitchers.html": (
@@ -327,7 +329,7 @@ BB_ALSO = {
 }
 
 BB_HOME_FAQ = [
-    ("What is BaseKeep?", "BaseKeep is baseball on Ball Keep. The Keep is dynasty overall top 400 from 23 boards. The Diamond is this-year redraft. The Farm is the top 100 prospects. Same BK Value curve as football."),
+    ("What is BaseKeep?", "BaseKeep is baseball on Ball Keep. The Keep is dynasty overall top 400 from 40 boards. The Diamond is this-year redraft. The Farm is the top 100 prospects. Same BK Value curve as football."),
     ("How is The Keep ranked?", "Average of every source that ranked the player. Unranked is skipped, never 999. Two of the boards run 500 names long."),
     ("Where is the MLB news?", "BK News on this board clusters IL, roster, DFA, and manager tape hourly."),
 ]
@@ -337,7 +339,7 @@ BB_FARM_FAQ = [
     ("What is arrival and path?", "Estimated arrival is the year the name is most likely to stick. Path is the cleanest route to everyday playtime: the job, the blocker, and the level in front of them."),
 ]
 BB_KEEP_FAQ = [
-    ("What is The Keep on BaseKeep?", "Dynasty baseball top 400, rebuilt August 27, 2026. 23-board aggregate including RotoGraphs and The Dynasty Guru."),
+    ("What is The Keep on BaseKeep?", "Dynasty baseball top 400, rebuilt August 27, 2026. 40-board aggregate including RotoGraphs and The Dynasty Guru."),
     ("How does BK Value work here?", "Keep rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%."),
     ("Where are hitters and pitchers split?", "The Lineup is bats. BK's Pitchers is arms. Ohtani lives on both sides of that split."),
 ]
@@ -528,7 +530,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
 
 
 def sources_panel(sources=None, heading="Boards in This Aggregate", note=None):
-    rows = sources if sources is not None else BB_SOURCES
+    rows = sources if sources is not None else BB_KEEP_SOURCES
     lis = []
     for name, url, src_note in rows:
         if url:
@@ -536,7 +538,7 @@ def sources_panel(sources=None, heading="Boards in This Aggregate", note=None):
         else:
             lis.append(f"<li><strong>{esc(name)}</strong> - {esc(src_note)}</li>")
     footer = note or (
-        "23 public boards and compiled expert slices, August 2026. "
+        "40 public boards and compiled expert slices, August 2026. "
         "Unranked names are skipped in the mean - never treated as 999."
     )
     return (
@@ -1685,7 +1687,7 @@ def write_baseball_site():
             + "</div>"
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
-    keep_n = 23
+    keep_n = len(BB_KEEP_SOURCES)
     home = f"""
     <section class="home-hero" aria-label="Baseball rankings">
       <div class="home-hero-media" aria-hidden="true"></div>
@@ -1771,7 +1773,7 @@ def write_baseball_site():
     keep_body = f"""
     <p class="kicker">Keystone · Overall Dynasty</p>
     <h1>The Keep</h1>
-    <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - 23 boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
+    <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - {len(BB_KEEP_SOURCES)} boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
     {rank_search_bar(flt)}
     <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#1f6b3a", "Keep value graph")}
@@ -1786,7 +1788,7 @@ def write_baseball_site():
                 "https://ballkeep.com/bb/the-keep.html",
                 keep,
                 lambda r: f"https://ballkeep.com/bb/players/{slugify(r['name'])}.html",
-                description="Dynasty baseball top 400 from 23 boards.",
+                description="Dynasty baseball top 400 from 40 boards.",
             ),
             faq_jsonld(BB_KEEP_FAQ),
         ],
@@ -1818,7 +1820,7 @@ def write_baseball_site():
     {rank_search_bar()}
     <div class="panel">{rank_table(saves, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {value_bars(saves, 12, "#1f6b3a", "Saves value graph")}
-    {sources_panel()}
+    {sources_panel(BB_BULLPEN_SOURCES)}
     """
     write("bb/bullpen.html", bb_board_page("Bullpen Saves", "bullpen.html", sv_body))
 
@@ -1828,7 +1830,7 @@ def write_baseball_site():
     {rank_search_bar()}
     <div class="panel">{rank_table(svh, ["BK Value"], lambda r: f'<td class="c-val val">{int(r["value"]):,}</td>')}</div>
     {value_bars(svh, 12, "#1f6b3a", "SV+H value graph")}
-    {sources_panel()}
+    {sources_panel(BB_BULLPEN_SOURCES)}
     """
     write("bb/bullpen-holds.html", bb_board_page("Bullpen SV+H", "bullpen-holds.html", svh_body))
 

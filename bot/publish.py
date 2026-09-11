@@ -275,7 +275,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
         "BaseBallKeep - The Keep (dynasty 300)",
         cat.raw.get("bb_keep") or [],
         cat,
-        "23-board baseball aggregate. Navy desk at https://ballkeep.com/bb/the-keep.html",
+        "40-board baseball aggregate. Navy ranks at https://ballkeep.com/bb/the-keep.html",
     )
     await _wipe(channels["bb-lineup"])
     await _post_list(channels["bb-lineup"], "The Lineup - dynasty hitters", cat.raw.get("bb_lineup") or [], cat)

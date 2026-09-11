@@ -524,6 +524,10 @@ def main():
     assert "background-image:url" not in bb_home
     assert "Open The Keep" not in bb_home
     assert "Price a trade" not in bb_home
+    assert "40" in bb_home
+    assert "dynasty boards" in bb_home
+    assert "23-board" not in html_of("bb/the-keep.html")
+    assert "40-board" in html_of("bb/the-keep.html") or "40 boards" in html_of("bb/the-keep.html")
     lineup = html_of("bb/the-lineup.html")
     assert "page-label" in lineup
     assert "bb-lineup.jpg" not in lineup
@@ -562,6 +566,10 @@ def main():
     assert "hero-lead" not in bk_home
     assert "Open The Keep" not in bk_home
     assert "Price a trade" not in bk_home
+    assert "img/bk-players/" in bk_home
+    assert bk_home.count('class="face"') >= 16
+    assert "img/bk-players/" in html_of("bk/the-keep.html")
+    assert "img/bk-players/" in html_of("bk/players/victor-wembanyama.html")
     pl_home = html_of("pl/index.html")
     assert 'class="desk-block schedules"' in pl_home
     assert "schedule.html" in pl_home

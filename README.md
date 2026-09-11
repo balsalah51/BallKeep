@@ -22,7 +22,7 @@ Powder-blue **BallKeep** boards. Navy-and-cream **BaseKeep**, hardwood **BasketK
 ## BaseKeep (`/bb`)
 Separate sport, separate palette. Footer crossover only - baseball does not live in the football nav.
 
-- **The Keep** - overall dynasty top 400, 23-board aggregate (RotoGraphs + The Dynasty Guru long boards, plus compiled expert slices)
+- **The Keep** - overall dynasty top 400, 40-board aggregate (RotoGraphs + The Dynasty Guru long boards, plus compiled expert slices)
 - **BK News** - live at `bb/news.html`. Same hourly pipeline as football: IL, roster, DFA/call-up, and manager tape, clustered with links back to Keep player files
 - **The Lineup** - dynasty hitters only (the bats on the long boards, up to 400)
 - **BK's Pitchers** - top 150 overall dynasty pitchers
@@ -44,7 +44,7 @@ Separate sport, separate palette. Hardwood orange and night. Footer / header cro
 - **The X** - NBA memes
 - **Trade calculators** - Keep and Board. Same BK Value curve.
 - **Wires** - 15 dynasty stashes, redraft priority 1-50
-- **Player files** - Keep 400, one hardwood card each
+- **Player files** - Keep 400, one hardwood card and a headshot each
 
 ## PitchKeep (`/pl`)
 Separate sport, separate palette. Premier League purple, pitch green, gold. Footer crossover only.
