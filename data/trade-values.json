@@ -18,21 +18,12 @@
           "href": "players/josh-allen.html"
         },
         {
-          "id": "drake-maye",
-          "name": "Drake Maye",
-          "pos": "QB",
-          "team": "NE",
-          "rank": 2,
-          "value": 10873,
-          "href": "players/drake-maye.html"
-        },
-        {
           "id": "bijan-robinson",
           "name": "Bijan Robinson",
           "pos": "RB",
           "team": "ATL",
-          "rank": 3,
-          "value": 10228,
+          "rank": 2,
+          "value": 10873,
           "href": "players/bijan-robinson.html"
         },
         {
@@ -40,8 +31,8 @@
           "name": "Ja'Marr Chase",
           "pos": "WR",
           "team": "CIN",
-          "rank": 4,
-          "value": 9769,
+          "rank": 3,
+          "value": 10228,
           "href": "players/jamarr-chase.html"
         },
         {
@@ -49,8 +40,8 @@
           "name": "Jahmyr Gibbs",
           "pos": "RB",
           "team": "DET",
-          "rank": 5,
-          "value": 9409,
+          "rank": 4,
+          "value": 9769,
           "href": "players/jahmyr-gibbs.html"
         },
         {
@@ -58,9 +49,18 @@
           "name": "Jaxon Smith-Njigba",
           "pos": "WR",
           "team": "SEA",
+          "rank": 5,
+          "value": 9409,
+          "href": "players/jaxon-smith-njigba.html"
+        },
+        {
+          "id": "drake-maye",
+          "name": "Drake Maye",
+          "pos": "QB",
+          "team": "NE",
           "rank": 6,
           "value": 9111,
-          "href": "players/jaxon-smith-njigba.html"
+          "href": "players/drake-maye.html"
         },
         {
           "id": "puka-nacua",
@@ -3763,39 +3763,30 @@
           "href": "players/jamarr-chase.html"
         },
         {
-          "id": "puka-nacua",
-          "name": "Puka Nacua",
-          "pos": "WR",
-          "team": "LAR",
-          "rank": 5,
-          "value": 9409,
-          "href": "players/puka-nacua.html"
-        },
-        {
           "id": "jahmyr-gibbs",
           "name": "Jahmyr Gibbs",
           "pos": "RB",
           "team": "DET",
-          "rank": 6,
-          "value": 9111,
+          "rank": 5,
+          "value": 9409,
           "href": "players/jahmyr-gibbs.html"
         },
         {
-          "id": "drake-maye",
-          "name": "Drake Maye",
-          "pos": "QB",
-          "team": "NE",
-          "rank": 7,
-          "value": 8855,
-          "href": "players/drake-maye.html"
+          "id": "puka-nacua",
+          "name": "Puka Nacua",
+          "pos": "WR",
+          "team": "LAR",
+          "rank": 6,
+          "value": 9111,
+          "href": "players/puka-nacua.html"
         },
         {
           "id": "bijan-robinson",
           "name": "Bijan Robinson",
           "pos": "RB",
           "team": "ATL",
-          "rank": 8,
-          "value": 8629,
+          "rank": 7,
+          "value": 8855,
           "href": "players/bijan-robinson.html"
         },
         {
@@ -3803,8 +3794,8 @@
           "name": "Amon-Ra St. Brown",
           "pos": "WR",
           "team": "DET",
-          "rank": 9,
-          "value": 8426,
+          "rank": 8,
+          "value": 8629,
           "href": "players/amon-ra-st-brown.html"
         },
         {
@@ -3812,8 +3803,8 @@
           "name": "Jayden Daniels",
           "pos": "QB",
           "team": "WAS",
-          "rank": 10,
-          "value": 8241,
+          "rank": 9,
+          "value": 8426,
           "href": "players/jayden-daniels.html"
         },
         {
@@ -3821,8 +3812,8 @@
           "name": "Justin Jefferson",
           "pos": "WR",
           "team": "MIN",
-          "rank": 11,
-          "value": 8070,
+          "rank": 10,
+          "value": 8241,
           "href": "players/justin-jefferson.html"
         },
         {
@@ -3830,8 +3821,8 @@
           "name": "Jaxon Smith-Njigba",
           "pos": "WR",
           "team": "SEA",
-          "rank": 12,
-          "value": 7912,
+          "rank": 11,
+          "value": 8070,
           "href": "players/jaxon-smith-njigba.html"
         },
         {
@@ -3839,8 +3830,8 @@
           "name": "CeeDee Lamb",
           "pos": "WR",
           "team": "DAL",
-          "rank": 13,
-          "value": 7764,
+          "rank": 12,
+          "value": 7912,
           "href": "players/ceedee-lamb.html"
         },
         {
@@ -3848,8 +3839,8 @@
           "name": "Caleb Williams",
           "pos": "QB",
           "team": "CHI",
-          "rank": 14,
-          "value": 7624,
+          "rank": 13,
+          "value": 7764,
           "href": "players/caleb-williams.html"
         },
         {
@@ -3857,8 +3848,8 @@
           "name": "Christian McCaffrey",
           "pos": "RB",
           "team": "SF",
-          "rank": 15,
-          "value": 7492,
+          "rank": 14,
+          "value": 7624,
           "href": "players/christian-mccaffrey.html"
         },
         {
@@ -3866,9 +3857,18 @@
           "name": "Justin Herbert",
           "pos": "QB",
           "team": "LAC",
+          "rank": 15,
+          "value": 7492,
+          "href": "players/justin-herbert.html"
+        },
+        {
+          "id": "drake-maye",
+          "name": "Drake Maye",
+          "pos": "QB",
+          "team": "NE",
           "rank": 16,
           "value": 7367,
-          "href": "players/justin-herbert.html"
+          "href": "players/drake-maye.html"
         },
         {
           "id": "jonathan-taylor",
@@ -4195,22 +4195,22 @@
           "href": "players/javonte-williams.html"
         },
         {
-          "id": "emeka-egbuka",
-          "name": "Emeka Egbuka",
-          "pos": "WR",
-          "team": "TB",
-          "rank": 53,
-          "value": 4603,
-          "href": "players/emeka-egbuka.html"
-        },
-        {
           "id": "tee-higgins",
           "name": "Tee Higgins",
           "pos": "WR",
           "team": "CIN",
+          "rank": 53,
+          "value": 4603,
+          "href": "players/tee-higgins.html"
+        },
+        {
+          "id": "emeka-egbuka",
+          "name": "Emeka Egbuka",
+          "pos": "WR",
+          "team": "TB",
           "rank": 54,
           "value": 4553,
-          "href": "players/tee-higgins.html"
+          "href": "players/emeka-egbuka.html"
         },
         {
           "id": "jeremiyah-love",
@@ -4285,12 +4285,21 @@
           "href": "players/kyler-murray.html"
         },
         {
+          "id": "dandre-swift",
+          "name": "D'Andre Swift",
+          "pos": "RB",
+          "team": "CHI",
+          "rank": 63,
+          "value": 4134,
+          "href": "players/dandre-swift.html"
+        },
+        {
           "id": "dj-moore",
           "name": "DJ Moore",
           "pos": "WR",
           "team": "BUF",
-          "rank": 63,
-          "value": 4134,
+          "rank": 64,
+          "value": 4091,
           "href": "players/dj-moore.html"
         },
         {
@@ -4298,8 +4307,8 @@
           "name": "Fernando Mendoza",
           "pos": "QB",
           "team": "LV",
-          "rank": 64,
-          "value": 4091,
+          "rank": 65,
+          "value": 4048,
           "href": "players/fernando-mendoza.html"
         },
         {
@@ -4307,18 +4316,9 @@
           "name": "Cam Skattebo",
           "pos": "RB",
           "team": "NYG",
-          "rank": 65,
-          "value": 4048,
-          "href": "players/cam-skattebo.html"
-        },
-        {
-          "id": "dandre-swift",
-          "name": "D'Andre Swift",
-          "pos": "RB",
-          "team": "CHI",
           "rank": 66,
           "value": 4006,
-          "href": "players/dandre-swift.html"
+          "href": "players/cam-skattebo.html"
         },
         {
           "id": "bucky-irving",
@@ -7345,21 +7345,12 @@
           "href": "players/josh-allen.html"
         },
         {
-          "id": "drake-maye",
-          "name": "Drake Maye",
-          "pos": "QB",
-          "team": "NE",
-          "rank": 2,
-          "value": 4132,
-          "href": "players/drake-maye.html"
-        },
-        {
           "id": "bijan-robinson",
           "name": "Bijan Robinson",
           "pos": "RB",
           "team": "ATL",
-          "rank": 3,
-          "value": 10228,
+          "rank": 2,
+          "value": 10873,
           "href": "players/bijan-robinson.html"
         },
         {
@@ -7367,8 +7358,8 @@
           "name": "Ja'Marr Chase",
           "pos": "WR",
           "team": "CIN",
-          "rank": 4,
-          "value": 9769,
+          "rank": 3,
+          "value": 10228,
           "href": "players/jamarr-chase.html"
         },
         {
@@ -7376,8 +7367,8 @@
           "name": "Jahmyr Gibbs",
           "pos": "RB",
           "team": "DET",
-          "rank": 5,
-          "value": 9409,
+          "rank": 4,
+          "value": 9769,
           "href": "players/jahmyr-gibbs.html"
         },
         {
@@ -7385,9 +7376,18 @@
           "name": "Jaxon Smith-Njigba",
           "pos": "WR",
           "team": "SEA",
-          "rank": 6,
-          "value": 9111,
+          "rank": 5,
+          "value": 9409,
           "href": "players/jaxon-smith-njigba.html"
+        },
+        {
+          "id": "drake-maye",
+          "name": "Drake Maye",
+          "pos": "QB",
+          "team": "NE",
+          "rank": 6,
+          "value": 3462,
+          "href": "players/drake-maye.html"
         },
         {
           "id": "puka-nacua",
@@ -11423,21 +11423,12 @@
           "href": "players/emeka-egbuka.html"
         },
         {
-          "id": "drake-maye",
-          "name": "Drake Maye",
-          "pos": "QB",
-          "team": "NE",
-          "rank": 42,
-          "value": 5210,
-          "href": "players/drake-maye.html"
-        },
-        {
           "id": "tee-higgins",
           "name": "Tee Higgins",
           "pos": "WR",
           "team": "CIN",
-          "rank": 43,
-          "value": 5150,
+          "rank": 42,
+          "value": 5210,
           "href": "players/tee-higgins.html"
         },
         {
@@ -11445,8 +11436,8 @@
           "name": "Travis Etienne",
           "pos": "RB",
           "team": "NO",
-          "rank": 44,
-          "value": 5091,
+          "rank": 43,
+          "value": 5150,
           "href": "players/travis-etienne.html"
         },
         {
@@ -11454,8 +11445,8 @@
           "name": "Davante Adams",
           "pos": "WR",
           "team": "LAR",
-          "rank": 45,
-          "value": 5033,
+          "rank": 44,
+          "value": 5091,
           "href": "players/davante-adams.html"
         },
         {
@@ -11463,9 +11454,18 @@
           "name": "D'Andre Swift",
           "pos": "RB",
           "team": "CHI",
+          "rank": 45,
+          "value": 5033,
+          "href": "players/dandre-swift.html"
+        },
+        {
+          "id": "drake-maye",
+          "name": "Drake Maye",
+          "pos": "QB",
+          "team": "NE",
           "rank": 46,
           "value": 4976,
-          "href": "players/dandre-swift.html"
+          "href": "players/drake-maye.html"
         },
         {
           "id": "terry-mclaurin",
@@ -13232,21 +13232,12 @@
           "href": "players/travis-etienne.html"
         },
         {
-          "id": "drake-maye",
-          "name": "Drake Maye",
-          "pos": "QB",
-          "team": "NE",
-          "rank": 42,
-          "value": 5210,
-          "href": "players/drake-maye.html"
-        },
-        {
           "id": "emeka-egbuka",
           "name": "Emeka Egbuka",
           "pos": "WR",
           "team": "TB",
-          "rank": 43,
-          "value": 5150,
+          "rank": 42,
+          "value": 5210,
           "href": "players/emeka-egbuka.html"
         },
         {
@@ -13254,8 +13245,8 @@
           "name": "Tee Higgins",
           "pos": "WR",
           "team": "CIN",
-          "rank": 44,
-          "value": 5091,
+          "rank": 43,
+          "value": 5150,
           "href": "players/tee-higgins.html"
         },
         {
@@ -13263,8 +13254,8 @@
           "name": "D'Andre Swift",
           "pos": "RB",
           "team": "CHI",
-          "rank": 45,
-          "value": 5033,
+          "rank": 44,
+          "value": 5091,
           "href": "players/dandre-swift.html"
         },
         {
@@ -13272,9 +13263,18 @@
           "name": "Davante Adams",
           "pos": "WR",
           "team": "LAR",
+          "rank": 45,
+          "value": 5033,
+          "href": "players/davante-adams.html"
+        },
+        {
+          "id": "drake-maye",
+          "name": "Drake Maye",
+          "pos": "QB",
+          "team": "NE",
           "rank": 46,
           "value": 4976,
-          "href": "players/davante-adams.html"
+          "href": "players/drake-maye.html"
         },
         {
           "id": "terry-mclaurin",
@@ -15023,21 +15023,12 @@
           "href": "players/jaylen-waddle.html"
         },
         {
-          "id": "drake-maye",
-          "name": "Drake Maye",
-          "pos": "QB",
-          "team": "NE",
-          "rank": 40,
-          "value": 5333,
-          "href": "players/drake-maye.html"
-        },
-        {
           "id": "tetairoa-mcmillan",
           "name": "Tetairoa McMillan",
           "pos": "WR",
           "team": "CAR",
-          "rank": 41,
-          "value": 5271,
+          "rank": 40,
+          "value": 5333,
           "href": "players/tetairoa-mcmillan.html"
         },
         {
@@ -15045,8 +15036,8 @@
           "name": "Ladd McConkey",
           "pos": "WR",
           "team": "LAC",
-          "rank": 42,
-          "value": 5210,
+          "rank": 41,
+          "value": 5271,
           "href": "players/ladd-mcconkey.html"
         },
         {
@@ -15054,8 +15045,8 @@
           "name": "Emeka Egbuka",
           "pos": "WR",
           "team": "TB",
-          "rank": 43,
-          "value": 5150,
+          "rank": 42,
+          "value": 5210,
           "href": "players/emeka-egbuka.html"
         },
         {
@@ -15063,9 +15054,18 @@
           "name": "D'Andre Swift",
           "pos": "RB",
           "team": "CHI",
+          "rank": 43,
+          "value": 5150,
+          "href": "players/dandre-swift.html"
+        },
+        {
+          "id": "drake-maye",
+          "name": "Drake Maye",
+          "pos": "QB",
+          "team": "NE",
           "rank": 44,
           "value": 5091,
-          "href": "players/dandre-swift.html"
+          "href": "players/drake-maye.html"
         },
         {
           "id": "tee-higgins",

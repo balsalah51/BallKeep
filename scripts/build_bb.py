@@ -330,12 +330,12 @@ BB_ALSO = {
 
 BB_HOME_FAQ = [
     ("What is BaseKeep?", "BaseKeep is baseball on Ball Keep. The Keep is dynasty overall top 400 from 40 boards. The Diamond is this-year redraft. The Farm is the top 100 prospects. Same BK Value curve as football."),
-    ("How is The Keep ranked?", "Average of every source that ranked the player. Unranked is skipped, never 999. Two of the boards run 500 names long."),
+    ("How is The Keep ranked?", "Average of every source that ranked the player. Two of the boards run 500 names long."),
     ("Where is the MLB news?", "BK News on this board clusters IL, roster, DFA, and manager tape hourly."),
 ]
 BB_FARM_FAQ = [
     ("What is The Farm?", "BaseKeep's top 100 prospects. Five boards: MLB Pipeline in-season 100, Baseball America August 100, ESPN Kiley McDaniel, Sports Illustrated midseason 50, and FanGraphs The Board."),
-    ("Who qualifies?", "Minor-league names and MLB rookies with 142 career games or fewer. Graduates over that cap drop off. Unranked on a board is a skip, not a last-place dump."),
+    ("Who qualifies?", "Minor-league names and MLB rookies with 142 career games or fewer. Graduates over that cap drop off."),
     ("What is arrival and path?", "Estimated arrival is the year the name is most likely to stick. Path is the cleanest route to everyday playtime: the job, the blocker, and the level in front of them."),
 ]
 BB_KEEP_FAQ = [
@@ -537,10 +537,7 @@ def sources_panel(sources=None, heading="Boards in This Aggregate", note=None):
             lis.append(f'<li><a href="{esc(url)}">{esc(name)}</a> - {esc(src_note)}</li>')
         else:
             lis.append(f"<li><strong>{esc(name)}</strong> - {esc(src_note)}</li>")
-    footer = note or (
-        "40 public boards and compiled expert slices, August 2026. "
-        "Unranked names are skipped in the mean - never treated as 999."
-    )
+    footer = note or "40 public boards and compiled expert slices, August 2026."
     return (
         '<section class="sources-box panel">'
         '<p class="kicker">Sources</p>'
@@ -1747,7 +1744,6 @@ def write_baseball_site():
       <h2>How the ranks are built.</h2>
       <ol class="home-steps">
         <li><strong>Every board that ranked the name votes.</strong> Two of them go 500 names deep.</li>
-        <li><strong>Unranked is a skip, never 999.</strong> Missing ranks do not dump a name.</li>
         <li><strong>Rank 1 is 12,000 BK Value.</strong> Same curve as football. Fair is within 8%.</li>
       </ol>
     </section>
@@ -1855,11 +1851,11 @@ def write_baseball_site():
     farm_body = f"""
     <p class="kicker">Prospects · top 100</p>
     <h1>The Farm</h1>
-    <p class="note">Top 100 names still on a prospect clock: minor-league or MLB rookies with 142 career games or fewer. Mean of MLB Pipeline, Baseball America, ESPN Kiley McDaniel, Sports Illustrated, and FanGraphs. Unranked on a board is a skip. Every row has a photo, an estimated arrival year, and the best path to playtime.</p>
+    <p class="note">Top 100 names still on a prospect clock: minor-league or MLB rookies with 142 career games or fewer. Mean of MLB Pipeline, Baseball America, ESPN Kiley McDaniel, Sports Illustrated, and FanGraphs. Every row has a photo, an estimated arrival year, and the best path to playtime.</p>
     {rank_search_bar(farm_flt)}
     <div class="panel">{rank_table(farm, ["Level", "MLB G", "Arrival", "Path", "Pipeline", "Boards", "BK Value"], farm_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(farm, 12, "#1f6b3a", "Farm value graph")}
-    {sources_panel(FARM_SOURCES, heading="Prospect boards in this aggregate", note="Five public prospect lists, midseason / August 2026. Unranked names are skipped in the mean - never treated as 999. Eligibility is 142 MLB games or fewer.")}
+    {sources_panel(FARM_SOURCES, heading="Prospect boards in this aggregate", note="Five public prospect lists, midseason / August 2026. Eligibility is 142 MLB games or fewer.")}
     {faq_html(BB_FARM_FAQ, heading="How The Farm is built.")}
     """
     write("bb/the-farm.html", bb_board_page(

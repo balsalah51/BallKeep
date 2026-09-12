@@ -470,7 +470,7 @@ def write_meta(week: int) -> None:
         "week": week,
         "kickoff": KICKOFF.isoformat(),
         "scraped": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
-        "note": "Monday and Tuesday refresh. Unranked on a board is a skip.",
+        "note": "Monday and Tuesday refresh.",
     })
 
 

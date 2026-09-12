@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from aggregate_protocol import blend_maps, remap, super_avg  # noqa: E402
+from aggregate_protocol import apply_rank_drops, blend_maps, remap, super_avg  # noqa: E402
 from bk_curve import bk_value  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -265,6 +265,7 @@ def idp_only_board() -> list[dict]:
     out = []
     for i, r in enumerate(rows, 1):
         out.append({**r, "bk": i, "value": bk_value(i)})
+    apply_rank_drops(out)
     return out
 
 
@@ -436,4 +437,5 @@ def fence_board() -> list[dict]:
     out = []
     for i, r in enumerate(rows, 1):
         out.append({**r, "bk": i, "value": bk_value(i)})
+    apply_rank_drops(out)
     return out

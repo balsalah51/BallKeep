@@ -14,7 +14,7 @@ from pathlib import Path
 from bk_curve import bk_value
 from scrape_weekly import current_week
 from special_teams import DST_TEAMS, dst_board
-from aggregate_protocol import super_avg
+from aggregate_protocol import apply_rank_drops, super_avg
 
 ROOT = Path(__file__).resolve().parents[1]
 WEEKLY = ROOT / "data" / "weekly"
@@ -140,7 +140,7 @@ def weekly_sources(pos: str) -> list:
     week = week_num()
     pos = pos.lower()
     return [
-        ("FantasyPros ECR", f"https://www.fantasypros.com/nfl/rankings/{pos}.php", f"Week {week} expert consensus. Unranked is a skip."),
+        ("FantasyPros ECR", f"https://www.fantasypros.com/nfl/rankings/{pos}.php", f"Week {week} expert consensus."),
         ("RotoWire projections", "https://www.rotowire.com/football/", f"Week {week} PPR points via Sleeper. Ranked by projected points."),
         ("FantasyPros projections", f"https://www.fantasypros.com/nfl/projections/{pos}.php?week={week}", "Public projection table. Partial board."),
         ("4for4", f"https://www.4for4.com/fantasy-football-rankings/{pos}/2026/week{week}", "Public top of the weekly board. Partial board."),
@@ -180,6 +180,7 @@ def _mash(maps: dict, bank: dict, pos: str | None = None, cap: int | None = None
     for i, r in enumerate(rows, 1):
         fpts = r.get("fpts") or r.get("fpts_fp")
         out.append({**r, "bk": i, "value": bk_value(i), "fpts": fpts})
+    apply_rank_drops(out)
     return out
 
 
@@ -210,7 +211,7 @@ def weekly_flex(cap: int = 150) -> list:
 
 
 WEEKLY_FLEX_SOURCES = [
-    ("FantasyPros Flex ECR", "https://www.fantasypros.com/nfl/rankings/ppr-flex.php", "Week N PPR flex consensus. Unranked is a skip."),
+    ("FantasyPros Flex ECR", "https://www.fantasypros.com/nfl/rankings/ppr-flex.php", "Week N PPR flex consensus."),
     ("RotoWire projections", "https://www.rotowire.com/football/", "RB/WR/TE ranked by Week N PPR points."),
 ]
 
@@ -346,6 +347,7 @@ def week1_waiver_board(cap: int = 60) -> list:
     out = []
     for i, r in enumerate(rows[:cap], 1):
         out.append({**r, "bk": i, "value": bk_value(i)})
+    apply_rank_drops(out)
     return out
 
 

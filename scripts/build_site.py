@@ -41,6 +41,7 @@ from bpl_schedule import bpl_games, bpl_schedule_parts  # noqa: E402
 from aggregate_protocol import (  # noqa: E402
     KEEP_SOURCES,
     LONG_CORE,
+    apply_rank_drops,
     expand_super_desks,
     rank_rows,
     super_avg,
@@ -579,6 +580,7 @@ def aggregate(pfn_rows):
         r["bk"] = i
     for i, r in enumerate(board, 1):
         r["bk"] = i
+    apply_rank_drops(keep)
     attach_values(keep)
     attach_values(board)
     return keep, board, sources
@@ -650,11 +652,14 @@ def redraft_lists():
     ppr = ppr[:PPR_N]
     for i, r in enumerate(ppr, 1):
         r["bk"] = i
+    apply_rank_drops(ppr)
     attach_values(ppr)
     # Standard: bump RB, slight WR/TE tax vs PPR
     std = score_from_ppr(ppr, {"RB": -4.5, "WR": 3.0, "TE": 2.0, "QB": 0.5})
+    apply_rank_drops(std)
     # Half-PPR sits between full PPR and Standard: half those taxes.
     classic = score_from_ppr(ppr, {"RB": -2.25, "WR": 1.5, "TE": 1.0, "QB": 0.25})
+    apply_rank_drops(classic)
     return ppr, std, classic
 
 
@@ -713,6 +718,7 @@ def superflex_redraft(keep, ppr):
             "ranks": {k: v for k, v in {"Keep SF": kr["bk"] if kr else None, "PPR": pr["bk"] if pr else None}.items() if v},
             "value": bk_value(i),
         })
+    apply_rank_drops(rows)
     return rows
 
 
@@ -950,8 +956,7 @@ def sources_panel(items, heading="Boards in This Super Aggregate"):
         '<p class="kicker">Sources</p>'
         f"<h3>{esc(heading)}</h3>"
         f"<ol>{''.join(lis)}</ol>"
-        '<p class="note">Unranked names are skipped in the Super Aggregate - never treated as 999. '
-        "Short expert lists still move the names they actually ranked.</p>"
+        '<p class="note">Short expert lists still move the names they actually ranked.</p>'
         "</section>"
     )
 
@@ -977,7 +982,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Superflex dynasty top 400 from 40 boards, rebuilt September 9, 2026. Rank 1 is 12,000 BK Value. Unranked names are skipped.",
+        "Superflex dynasty top 400 from 40 boards, rebuilt September 9, 2026. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -1195,8 +1200,8 @@ FB_SEO = {
 HOME_FAQ = [
     ("What is Ball Keep?", "The Keep is Superflex Dynasty - 40 boards, top 400. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
     ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 1 boards, Weekly, and Week 1 Waivers are this week's stream."),
-    ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. Unranked is a skip. IDP names are marked in red."),
-    ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player. Unranked names are skipped, never treated as 999."),
+    ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. IDP names are marked in red."),
+    ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
@@ -1207,7 +1212,7 @@ KEEP_FAQ = [
 ]
 BOARD_FAQ = [
     ("What is The Board?", "Ball Keep's 2026 redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players. Forty boards: Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex as the long core, then Derek Brown, 4for4, and the rest of the public redraft tape. Kickers and DST omitted."),
-    ("How is the rank built?", "Super Aggregate: 50% the mean of Yates, FantasyPros ECR, and Karabell, 50% every other board that ranked the name. Unranked on a board is a skip, never a last-place dump. The three long tapes stay on the table so you can see them against the Super score."),
+    ("How is the rank built?", "Super Aggregate: 50% the mean of Yates, FantasyPros ECR, and Karabell, 50% every other board that ranked the name. The three long tapes stay on the table so you can see them against the Super score."),
     ("How is this different from The Keep?", "The Keep is Superflex Dynasty. The Board is this year only, one quarterback, a point per catch."),
     ("Does BK Value use this rank?", "Yes. The PPR calculator prices The Board rank on the same 12,000 curve."),
 ]
@@ -1218,7 +1223,7 @@ TRADE_FAQ = [
 ]
 FENCE_FAQ = [
     ("What is The Fence?", "Ball Keep's mixed Superflex + IDP dynasty Super Aggregate. Top 400 names, skill and IDP on one board. The board IDP startups actually draft from."),
-    ("How is the rank built?", "Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed board that ranked the name. Unranked is a skip, never 999."),
+    ("How is the rank built?", "Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed board that ranked the name."),
     ("How is this different from The Keep and Top Defenses?", "The Keep is Superflex skill players only. Top Defenses is team DST. The Fence is the combined board: QB, RB, WR, TE, DL, LB, DB."),
     ("Why are some names red?", "DL, LB, and DB rows are marked in red so the IDP names stand out while you scroll."),
 ]
@@ -1228,11 +1233,11 @@ NEWS_FAQ = [
     ("Why do stories link to player pages?", "Named Keep, Board, and rookie files sit on the cluster so you can jump from the injury to the rank."),
 ]
 W1_DST_FAQ = [
-    ("What is Week 1 DST?", "A weekly start/sit board, not the season-long Top Defenses list. Super Aggregate of 16 published Week 1 boards. 50% FantasyPros ECR and Draft Sharks consensus. Unranked is a skip."),
+    ("What is Week 1 DST?", "A weekly start/sit board, not the season-long Top Defenses list. Super Aggregate of 16 published Week 1 boards. 50% FantasyPros ECR and Draft Sharks consensus."),
     ("Who leads the stream?", "Jacksonville against Cleveland. Most weekly boards have the Jaguars first."),
 ]
 W1_K_FAQ = [
-    ("What is Week 1 Kickers?", "A weekly start/sit board, not the season-long kicking list. Super Aggregate of 16 published Week 1 boards. 50% FantasyPros ECR. Unranked is a skip."),
+    ("What is Week 1 Kickers?", "A weekly start/sit board, not the season-long kicking list. Super Aggregate of 16 published Week 1 boards. 50% FantasyPros ECR."),
     ("Who leads the stream?", "Aubrey and Dicker sit at the top after the 16 boards vote."),
 ]
 W1_MATCH_FAQ = [
@@ -1830,7 +1835,7 @@ def home_body_html(keep, board, media, stories=None):
       <ol class="home-steps">
         <li><strong>Half the vote is the long boards.</strong> The tapes that actually go deep enough to matter.</li>
         <li><strong>Half is every other board that ranked the name.</strong> Short lists still move the names they published.</li>
-        <li><strong>Unranked is a skip, never 999.</strong> Rank 1 is 12,000 BK Value. Fair is within 8%.</li>
+        <li><strong>Rank 1 is 12,000 BK Value.</strong> Fair is within 8%.</li>
       </ol>
     </section>
     {wire}
@@ -3071,7 +3076,7 @@ def main():
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR Super Aggregate · {len(PPR_SOURCES)} boards</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Super Aggregate of {len(PPR_SOURCES)} boards: 50% Yates, FantasyPros PPR ECR, and Karabell, 50% every other board that ranked the name, including Derek Brown and 4for4. Unranked on a board is a skip. Kickers and DST are omitted so this stays a skill-player draft sheet. Proj is this week's RotoWire PPR points. ESPN ADP sits next to the rank. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {PPR_N} names. Super Aggregate of {len(PPR_SOURCES)} boards: 50% Yates, FantasyPros PPR ECR, and Karabell, 50% every other board that ranked the name, including Derek Brown and 4for4. Kickers and DST are omitted so this stays a skill-player draft sheet. Proj is this week's RotoWire PPR points. ESPN ADP sits next to the rank. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
     {rank_search_bar(board_chips)}
     <div class="panel">{rank_table(ppr, ["Super", "Boards", "Yates", "FP ECR", "Karabell", "Proj", "ESPN ADP", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
@@ -3242,7 +3247,7 @@ def main():
     dst_body = f"""
     <p class="kicker">2026 Redraft · DST Super Aggregate</p>
     <h1>Top Defenses</h1>
-    <p class="note">Rest of season values, not this week's stream. The skill boards skip kickers and DST. DST Super Aggregate of nine boards: 50% FantasyPros ECR, NBC Sports, and STACKED, 50% Derek Brown, Andrew Erickson, Pat Fitzmaurice, Draft Sharks, CBS (top 10, Aug 30), and Field Yates (Sep 5). Unranked on a board is a skip. Houston leads the board. Seattle and Denver sit right behind. Sort with Find a player.</p>
+    <p class="note">Rest of season values, not this week's stream. The skill boards skip kickers and DST. DST Super Aggregate of nine boards: 50% FantasyPros ECR, NBC Sports, and STACKED, 50% Derek Brown, Andrew Erickson, Pat Fitzmaurice, Draft Sharks, CBS (top 10, Aug 30), and Field Yates (Sep 5). Houston leads the board. Seattle and Denver sit right behind. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(DST_SOURCES, heading="Boards in This Super Aggregate")}
@@ -3262,7 +3267,7 @@ def main():
     k_body = f"""
     <p class="kicker">2026 Redraft · K Super Aggregate</p>
     <h1>Top Kickers</h1>
-    <p class="note">Rest of season values, not this week's stream. Kicker Super Aggregate of six boards: 50% FantasyPros ECR, Draft Sharks (Aug 31), and RotoWire (Aug 27), 50% Derek Brown, Pat Fitzmaurice, and Field Yates (Sep 5). Unranked on a board is a skip. Aubrey leads. Fairbairn and Dicker follow. Trey Smack (GB) is on the list. Sort with Find a player.</p>
+    <p class="note">Rest of season values, not this week's stream. Kicker Super Aggregate of six boards: 50% FantasyPros ECR, Draft Sharks (Aug 31), and RotoWire (Aug 27), 50% Derek Brown, Pat Fitzmaurice, and Field Yates (Sep 5). Aubrey leads. Fairbairn and Dicker follow. Trey Smack (GB) is on the list. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(K_SOURCES, heading="Boards in This Super Aggregate")}
@@ -3288,7 +3293,7 @@ def main():
     w1_dst_body = f"""
     <p class="kicker">2026 Week 1 · DST Super Aggregate · {len(W1_DST_SOURCES)} boards</p>
     <h1>Week 1 DST</h1>
-    <p class="note">This week's stream, not the season-long Top Defenses board. Super Aggregate of {len(W1_DST_SOURCES)} published Week 1 boards: 50% FantasyPros ECR and Draft Sharks consensus, 50% eight ESPN rankers, Draft Sharks, 4for4, FantasyPros projections, RotoWire, ESPN road map, and RotoBaller. Unranked on a board is a skip. {w1_dst_lead} leads the stream. Sort with Find a player.</p>
+    <p class="note">This week's stream, not the season-long Top Defenses board. Super Aggregate of {len(W1_DST_SOURCES)} published Week 1 boards: 50% FantasyPros ECR and Draft Sharks consensus, 50% eight ESPN rankers, Draft Sharks, 4for4, FantasyPros projections, RotoWire, ESPN road map, and RotoBaller. {w1_dst_lead} leads the stream. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(w1_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(W1_DST_SOURCES, heading="Boards in This Super Aggregate")}
@@ -3310,7 +3315,7 @@ def main():
     w1_k_body = f"""
     <p class="kicker">2026 Week 1 · K Super Aggregate · {len(W1_K_SOURCES)} boards</p>
     <h1>Week 1 Kickers</h1>
-    <p class="note">This week's stream, not the season-long kicking board. Super Aggregate of {len(W1_K_SOURCES)} published Week 1 boards: 50% FantasyPros ECR, 50% eight ESPN rankers, FantasyPros projections, Andrew Swanson, Draft Sharks, 4for4, RotoBaller, CBS Jamey Eisenberg, and CBS Dave Richard. Unranked on a board is a skip. {w1_k_lead} sits first among the kickers. Sort with Find a player.</p>
+    <p class="note">This week's stream, not the season-long kicking board. Super Aggregate of {len(W1_K_SOURCES)} published Week 1 boards: 50% FantasyPros ECR, 50% eight ESPN rankers, FantasyPros projections, Andrew Swanson, Draft Sharks, 4for4, RotoBaller, CBS Jamey Eisenberg, and CBS Dave Richard. {w1_k_lead} sits first among the kickers. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(w1_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(W1_K_SOURCES, heading="Boards in This Super Aggregate")}
@@ -3353,7 +3358,7 @@ def main():
     fence_body = f"""
     <p class="kicker">Dynasty Superflex + IDP · Super Aggregate · {len(FENCE_MIXED_SOURCES)} boards</p>
     <h1>The Fence</h1>
-    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed desk that ranked the name. Unranked on a board is a skip. Josh Allen opens the board. Aidan Hutchinson is the first IDP. IDP names (DL, LB, DB) are marked in red so they stand out while you scroll. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
+    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed desk that ranked the name. Josh Allen opens the board. Aidan Hutchinson is the first IDP. IDP names (DL, LB, DB) are marked in red so they stand out while you scroll. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
     {rank_search_bar(fence_chips)}
     <div class="panel">{rank_table(fence, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(fence, 12, "#c8102e", "Fence value graph")}

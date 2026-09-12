@@ -681,9 +681,7 @@ def generate_take(r, lists=None, neighbors=None):
         f"and Keepers re-rank the same Sleeper table by position. BK Value on this page follows "
         f"The Premier when you are on the hybrid calculator and The Pitch when you are on the "
         f"Sleeper calculator. Same curve either way - 12,000 at 1.01."
-        f"{yc_bit} "
-        f"Unranked sources are skipped, never treated as 999, which is why a player missing from "
-        f"Yahoo's XI is not secretly ranked 400th."
+        f"{yc_bit}"
     )
 
     grafs = [g.strip() for g in grafs if g and g.strip()]

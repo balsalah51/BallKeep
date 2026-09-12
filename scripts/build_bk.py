@@ -289,7 +289,7 @@ BK_ALSO = {
 
 BK_HOME_FAQ = [
     ("What is BasketKeep?", "BasketKeep is basketball on Ball Keep. The Keep is dynasty basketball top 400 from 18 boards. The Board is this-year redraft. BK Value uses the same 12,000 curve as football."),
-    ("How is The Keep ranked?", "Average of every source that ranked the player. Unranked is skipped, never 999."),
+    ("How is The Keep ranked?", "Average of every source that ranked the player."),
     ("Where is the NBA news?", "BK News on this board clusters injury, roster, and coach tape hourly, with links back to Keep player files."),
 ]
 BK_KEEP_FAQ = [
@@ -794,7 +794,7 @@ def write_player_pages(keep, board, news_by_player, media=None):
     <section class="panel">
       <p class="kicker">Boards</p>
       <h3>Where the boards put him</h3>
-      <p class="note">High {hi} · low {lo}. Unranked boards are skipped.</p>
+      <p class="note">High {hi} · low {lo}.</p>
       <div class="table-wrap"><table class="boards"><thead><tr><th>Board</th><th>Rank</th></tr></thead><tbody>{board_rows}</tbody></table></div>
     </section>
     {news_html}
@@ -1038,7 +1038,6 @@ def write_basket_site():
       <h2>How the ranks are built.</h2>
       <ol class="home-steps">
         <li><strong>Every board that ranked the name votes.</strong> {keep_n} public boards mashed into one rank.</li>
-        <li><strong>Unranked is a skip, never 999.</strong> Missing ranks do not dump a name.</li>
         <li><strong>Rank 1 is 12,000 BK Value.</strong> Same curve as football. Fair is within 8%.</li>
       </ol>
     </section>
@@ -1064,7 +1063,7 @@ def write_basket_site():
     keep_body = f"""
     <p class="kicker">Keystone · Dynasty basketball</p>
     <h1>The Keep</h1>
-    <p class="note">This is the big one. Dynasty basketball top {len(keep)}, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - 18 boards. Unranked is skipped, never 999. BK Value uses the same decaying curve as football (12,000 at 1.01). The Board next door is this-year redraft.</p>
+    <p class="note">This is the big one. Dynasty basketball top {len(keep)}, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - 18 boards. BK Value uses the same decaying curve as football (12,000 at 1.01). The Board next door is this-year redraft.</p>
     {rank_search_bar(flt)}
     <div class="panel">{rank_table(keep, ["Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True)}</div>
     {value_bars(keep, 12, "#e87722", "Keep value graph")}

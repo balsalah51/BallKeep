@@ -67,7 +67,7 @@ def _esc(s):
 
 
 WEEKLY_FAQ = [
-    ("How is the weekly board built?", "Super Aggregate of every Week N board that ranked the name: 50% FantasyPros ECR, 50% RotoWire projections, FantasyPros projections, and 4for4. Unranked on a board is a skip, never a last-place dump."),
+    ("How is the weekly board built?", "Super Aggregate of every Week N board that ranked the name: 50% FantasyPros ECR, 50% RotoWire projections, FantasyPros projections, and 4for4."),
     ("What is the Proj column?", "RotoWire PPR points for this week, via Sleeper. Blank means that model skipped the name."),
     ("When does this refresh?", "A Monday and Tuesday job re-scrapes the public boards and rebuilds the pages."),
 ]
@@ -115,7 +115,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
         body = f"""
     <p class="kicker">{label} · {pos} · {len(src)} boards</p>
     <h1>Week {week} {pos}</h1>
-    <p class="note">This week's stream, not the season-long Board. Super Aggregate of {len(src)} published Week {week} boards. 50% FantasyPros ECR, 50% every other desk that ranked the name. Unranked on a board is a skip. {chairs.get(pos, lead + ' sits first.')} Proj is RotoWire PPR points.</p>
+    <p class="note">This week's stream, not the season-long Board. Super Aggregate of {len(src)} published Week {week} boards. 50% FantasyPros ECR, 50% every other desk that ranked the name. {chairs.get(pos, lead + ' sits first.')} Proj is RotoWire PPR points.</p>
     {rank_search_bar()}
     <div class="panel">{weekly_table(rows)}</div>
     {sources_panel(src, heading="Boards in This Super Aggregate")}
@@ -139,7 +139,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     flex_body = f"""
     <p class="kicker">{label} · skill · Flex plus positions</p>
     <h1>Weekly</h1>
-    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points. Unranked is a skip.</p>
+    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points.</p>
     {opening_teaser()}
     <div class="grid-3">
       <a class="tile" href="weekly-qb.html"><h3>Week {week} QB</h3><p>{(boards['QB'] or [{'name':''}])[0]['name']} leads the quarterbacks.</p></a>
@@ -195,15 +195,15 @@ def write_weekly_pages(b, nfl, media, board_rows):
     # --- Week 1 consensus waivers ---
     w_chips, w_js = pos_filter("waiver-pos")
     w_faq = [
-        ("What is this list?", "A pre-Week 1 Super Aggregate of published waiver articles. Season has not started. A name needs two lists. Unranked on a board is a skip."),
+        ("What is this list?", "A pre-Week 1 Super Aggregate of published waiver articles. Season has not started. A name needs two lists."),
         ("Is this FAAB advice?", "No dollar bids. Super Aggregate: 50% FantasyPros WW ECR, 50% every other desk that ranked the name."),
-        ("Why is a drafted star missing?", "If a desk did not put him on their waiver list, that desk is a skip for him."),
+        ("Why is a drafted star missing?", "If a list did not put him on their waiver board, that list does not vote for him."),
     ]
     w_lead = waivers[0]["name"] if waivers else ""
     w_body = f"""
     <p class="kicker">{label} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
     <h1>Week 1 Waivers</h1>
-    <p class="note">Preseason waiver Super Aggregate, before Week 1 kickoff. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. 50% FantasyPros WW ECR, 50% every other desk that ranked the name. A name needs two lists. Unranked on a board is a skip. {w_lead} leads the mash. Kickers and team DST stay on their own Week 1 boards.</p>
+    <p class="note">Preseason waiver Super Aggregate, before Week 1 kickoff. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. 50% FantasyPros WW ECR, 50% every other desk that ranked the name. A name needs two lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week 1 boards.</p>
     {rank_search_bar(w_chips)}
     <div class="panel">{weekly_table(waivers)}</div>
     {sources_panel(WEEK1_WAIVER_SOURCES, heading="Lists in This Super Aggregate")}
