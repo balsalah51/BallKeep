@@ -879,7 +879,7 @@ body.mine-page h1 { color: #8a4c0a; }
 }
 .league-faces a { display: block; margin-left: -10px; }
 .league-faces a:first-child, .league-faces img:first-child { margin-left: 0; }
-.league-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 18px 0; }
+.league-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 18px 0; align-items: start; }
 .league-card {
   background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 16px; box-shadow: var(--shadow);
 }
@@ -891,6 +891,7 @@ body.mine-page h1 { color: #8a4c0a; }
   border-radius: 12px; border: 1px solid var(--line); background: var(--powder-deep);
 }
 .league-hero-face span { display: block; font-size: 12px; font-weight: 800; margin-top: 4px; }
+.league-card .roster-count { margin: 0 0 8px; font-size: 13px; color: var(--muted); font-weight: 700; }
 .league-card ol { margin: 0; padding: 0; list-style: none; }
 .league-card li {
   display: flex; justify-content: space-between; gap: 8px; padding: 5px 0;

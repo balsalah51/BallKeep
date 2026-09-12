@@ -38,6 +38,11 @@ def main():
     pick = cat.resolve_asset("2027 Mid 1st", "sf")
     assert pick and pick["kind"] == "pick"
     assert cat.resolve_asset("27 mid 1st", "sf")["name"] == "2027 Mid 1st"
+    early28 = cat.resolve_asset("2028 Early 1st", "sf")
+    early29 = cat.resolve_asset("2029 Early 1st", "sf")
+    assert early28 and early28["rank"] == 18
+    assert early29 and early29["rank"] == 22
+    assert early29["value"] < early28["value"]
     t2 = cat.trade("sf", "Josh Allen, 2027 Mid 1st", "Bijan, Ja'Marr Chase")
     assert not t2["missing"], t2["missing"]
     assert cat.youtube(cat.one("Josh Allen"))
@@ -453,6 +458,21 @@ def main():
     assert lookup["bySleeper"]["4984"]["name"] == "Josh Allen"
     assert lookup["bySleeper"]["4984"]["sf"] == 12000
     assert lookup["demo"]["teams"]
+    demo_sizes = [len(t.get("players") or []) for t in lookup["demo"]["teams"]]
+    assert min(demo_sizes) >= 20, demo_sizes
+    pick_names = {p["name"]: p for p in lookup.get("picks") or []}
+    assert pick_names["2028 Early 1st"]["rank"] == 18
+    assert pick_names["2029 Early 1st"]["rank"] == 22
+    assert pick_names["2029 Early 1st"]["value"] < pick_names["2028 Early 1st"]["value"]
+    league_js = (root / "js/league.js").read_text()
+    assert "slice(0, 8)" not in league_js
+    assert "year + 3" in league_js
+    assert "r.taxi" in league_js
+    assert "r.reserve" in league_js
+    assert "Full roster on each card" in league_js
+    assert "2029" in league_js
+    assert "taxi" in league_html
+    assert "2027-2029" in league_html
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
     assert "week1-opening.html" in weekly_html
