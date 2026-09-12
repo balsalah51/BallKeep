@@ -24622,233 +24622,350 @@
       "value": 5876
     }
   ],
-  "kickers": [
-    {
-      "name": "Brandon Aubrey",
-      "pos": "K",
-      "team": "DAL",
-      "bk": 1,
-      "avg": 1.0,
-      "n": 6,
-      "value": 12000
-    },
-    {
-      "name": "Cameron Dicker",
-      "pos": "K",
-      "team": "LAC",
-      "bk": 2,
-      "avg": 2.5,
-      "n": 6,
-      "value": 10873
-    },
-    {
-      "name": "Ka'imi Fairbairn",
-      "pos": "K",
-      "team": "HOU",
-      "bk": 3,
-      "avg": 2.5,
-      "n": 6,
-      "value": 10228
-    },
-    {
-      "name": "Cam Little",
-      "pos": "K",
-      "team": "JAX",
-      "bk": 4,
-      "avg": 5.33,
-      "n": 6,
-      "value": 9769
-    },
-    {
-      "name": "Jason Myers",
-      "pos": "K",
-      "team": "SEA",
-      "bk": 5,
-      "avg": 5.33,
-      "n": 6,
-      "value": 9409
-    },
-    {
-      "name": "Eddy Pineiro",
-      "pos": "K",
-      "team": "SF",
-      "bk": 6,
-      "avg": 7.33,
-      "n": 6,
-      "value": 9111
-    },
-    {
-      "name": "Jake Bates",
-      "pos": "K",
-      "team": "DET",
-      "bk": 7,
-      "avg": 8.33,
-      "n": 3,
-      "value": 8855
-    },
-    {
-      "name": "Chris Boswell",
-      "pos": "K",
-      "team": "PIT",
-      "bk": 8,
-      "avg": 9.5,
-      "n": 4,
-      "value": 8629
-    },
-    {
-      "name": "Harrison Butker",
-      "pos": "K",
-      "team": "KC",
-      "bk": 9,
-      "avg": 9.5,
-      "n": 4,
-      "value": 8426
-    },
-    {
-      "name": "Tyler Loop",
-      "pos": "K",
-      "team": "BAL",
-      "bk": 10,
-      "avg": 9.67,
-      "n": 5,
-      "value": 8241
-    },
-    {
-      "name": "Will Reichard",
-      "pos": "K",
-      "team": "MIN",
-      "bk": 11,
-      "avg": 9.67,
-      "n": 4,
-      "value": 8070
-    },
-    {
-      "name": "Harrison Mevis",
-      "pos": "K",
-      "team": "LAR",
-      "bk": 12,
-      "avg": 9.83,
-      "n": 6,
-      "value": 7912
-    },
-    {
-      "name": "Evan McPherson",
-      "pos": "K",
-      "team": "CIN",
-      "bk": 13,
-      "avg": 10.0,
-      "n": 5,
-      "value": 7764
-    },
-    {
-      "name": "Cairo Santos",
-      "pos": "K",
-      "team": "CHI",
-      "bk": 14,
-      "avg": 10.83,
-      "n": 5,
-      "value": 7624
-    },
-    {
-      "name": "Chase McLaughlin",
-      "pos": "K",
-      "team": "TB",
-      "bk": 15,
-      "avg": 11.67,
-      "n": 5,
-      "value": 7492
-    },
-    {
-      "name": "Andy Borregales",
-      "pos": "K",
-      "team": "NE",
-      "bk": 16,
-      "avg": 12.0,
-      "n": 4,
-      "value": 7367
-    },
-    {
-      "name": "Wil Lutz",
-      "pos": "K",
-      "team": "DEN",
-      "bk": 17,
-      "avg": 14.33,
-      "n": 3,
-      "value": 7247
-    },
-    {
-      "name": "Trey Smack",
-      "pos": "K",
-      "team": "GB",
-      "bk": 18,
-      "avg": 15.0,
-      "n": 2,
-      "value": 7132
-    },
-    {
-      "name": "Jake Elliott",
-      "pos": "K",
-      "team": "PHI",
-      "bk": 19,
-      "avg": 19.5,
-      "n": 2,
-      "value": 7023
-    },
-    {
-      "name": "Tyler Bass",
-      "pos": "K",
-      "team": "BUF",
-      "bk": 20,
-      "avg": 20.0,
-      "n": 2,
-      "value": 6917
-    },
-    {
-      "name": "Charlie Smyth",
-      "pos": "K",
-      "team": "NO",
-      "bk": 21,
-      "avg": 20.5,
-      "n": 2,
-      "value": 6815
-    },
-    {
-      "name": "Nick Folk",
-      "pos": "K",
-      "team": "ATL",
-      "bk": 22,
-      "avg": 20.5,
-      "n": 2,
-      "value": 6717
-    },
-    {
-      "name": "Blake Grupe",
-      "pos": "K",
-      "team": "IND",
-      "bk": 23,
-      "avg": 21.67,
-      "n": 3,
-      "value": 6621
-    },
-    {
-      "name": "Chad Ryland",
-      "pos": "K",
-      "team": "ARI",
-      "bk": 24,
-      "avg": 22.0,
-      "n": 1,
-      "value": 6529
-    },
-    {
-      "name": "Joey Slye",
-      "pos": "K",
-      "team": "TEN",
-      "bk": 25,
-      "avg": 23.0,
-      "n": 1,
-      "value": 6440
-    }
-  ],
+"kickers": [
+  {
+    "name": "Brandon Aubrey",
+    "pos": "K",
+    "team": "DAL",
+    "bk": 1,
+    "avg": 1.03,
+    "n": 20,
+    "value": 12000
+  },
+  {
+    "name": "Ka'imi Fairbairn",
+    "pos": "K",
+    "team": "HOU",
+    "bk": 2,
+    "avg": 2.5,
+    "n": 20,
+    "value": 10873
+  },
+  {
+    "name": "Cameron Dicker",
+    "pos": "K",
+    "team": "LAC",
+    "bk": 3,
+    "avg": 2.91,
+    "n": 20,
+    "value": 10228
+  },
+  {
+    "name": "Jason Myers",
+    "pos": "K",
+    "team": "SEA",
+    "bk": 4,
+    "avg": 4.81,
+    "n": 20,
+    "value": 9769
+  },
+  {
+    "name": "Cam Little",
+    "pos": "K",
+    "team": "JAX",
+    "bk": 5,
+    "avg": 5.25,
+    "n": 18,
+    "value": 9409
+  },
+  {
+    "name": "Eddy Pineiro",
+    "pos": "K",
+    "team": "SF",
+    "bk": 6,
+    "avg": 6.71,
+    "n": 19,
+    "value": 9111
+  },
+  {
+    "name": "Evan McPherson",
+    "pos": "K",
+    "team": "CIN",
+    "bk": 7,
+    "avg": 8.68,
+    "n": 17,
+    "value": 8855
+  },
+  {
+    "name": "Jake Bates",
+    "pos": "K",
+    "team": "DET",
+    "bk": 8,
+    "avg": 9.21,
+    "n": 16,
+    "value": 8629
+  },
+  {
+    "name": "Cairo Santos",
+    "pos": "K",
+    "team": "CHI",
+    "bk": 9,
+    "avg": 10.23,
+    "n": 19,
+    "value": 8426
+  },
+  {
+    "name": "Tyler Loop",
+    "pos": "K",
+    "team": "BAL",
+    "bk": 10,
+    "avg": 10.37,
+    "n": 17,
+    "value": 8241
+  },
+  {
+    "name": "Harrison Mevis",
+    "pos": "K",
+    "team": "LAR",
+    "bk": 11,
+    "avg": 10.5,
+    "n": 20,
+    "value": 8070
+  },
+  {
+    "name": "Chase McLaughlin",
+    "pos": "K",
+    "team": "TB",
+    "bk": 12,
+    "avg": 12.06,
+    "n": 19,
+    "value": 7912
+  },
+  {
+    "name": "Andy Borregales",
+    "pos": "K",
+    "team": "NE",
+    "bk": 13,
+    "avg": 12.49,
+    "n": 16,
+    "value": 7764
+  },
+  {
+    "name": "Harrison Butker",
+    "pos": "K",
+    "team": "KC",
+    "bk": 14,
+    "avg": 12.88,
+    "n": 16,
+    "value": 7624
+  },
+  {
+    "name": "Will Reichard",
+    "pos": "K",
+    "team": "MIN",
+    "bk": 15,
+    "avg": 13.04,
+    "n": 16,
+    "value": 7492
+  },
+  {
+    "name": "Chris Boswell",
+    "pos": "K",
+    "team": "PIT",
+    "bk": 16,
+    "avg": 14.39,
+    "n": 17,
+    "value": 7367
+  },
+  {
+    "name": "Wil Lutz",
+    "pos": "K",
+    "team": "DEN",
+    "bk": 17,
+    "avg": 15.56,
+    "n": 15,
+    "value": 7247
+  },
+  {
+    "name": "Trey Smack",
+    "pos": "K",
+    "team": "GB",
+    "bk": 18,
+    "avg": 18.32,
+    "n": 13,
+    "value": 7132
+  },
+  {
+    "name": "Spencer Shrader",
+    "pos": "K",
+    "team": "IND",
+    "bk": 19,
+    "avg": 18.75,
+    "n": 13,
+    "value": 7023
+  },
+  {
+    "name": "Tyler Bass",
+    "pos": "K",
+    "team": "BUF",
+    "bk": 20,
+    "avg": 19.48,
+    "n": 14,
+    "value": 6917
+  },
+  {
+    "name": "Jake Elliott",
+    "pos": "K",
+    "team": "PHI",
+    "bk": 21,
+    "avg": 19.9,
+    "n": 14,
+    "value": 6815
+  },
+  {
+    "name": "Charlie Smyth",
+    "pos": "K",
+    "team": "NO",
+    "bk": 22,
+    "avg": 22.25,
+    "n": 7,
+    "value": 6717
+  },
+  {
+    "name": "Nick Folk",
+    "pos": "K",
+    "team": "ATL",
+    "bk": 23,
+    "avg": 24.33,
+    "n": 14,
+    "value": 6621
+  },
+  {
+    "name": "Chad Ryland",
+    "pos": "K",
+    "team": "ARI",
+    "bk": 24,
+    "avg": 25.02,
+    "n": 13,
+    "value": 6529
+  },
+  {
+    "name": "Daniel Carlson",
+    "pos": "K",
+    "team": "NO",
+    "bk": 25,
+    "avg": 25.25,
+    "n": 12,
+    "value": 6440
+  },
+  {
+    "name": "Joey Slye",
+    "pos": "K",
+    "team": "TEN",
+    "bk": 26,
+    "avg": 25.48,
+    "n": 13,
+    "value": 6353
+  },
+  {
+    "name": "Blake Grupe",
+    "pos": "K",
+    "team": "NYJ",
+    "bk": 27,
+    "avg": 25.95,
+    "n": 14,
+    "value": 6268
+  },
+  {
+    "name": "Zane Gonzalez",
+    "pos": "K",
+    "team": "FA",
+    "bk": 28,
+    "avg": 26.0,
+    "n": 2,
+    "value": 6186
+  },
+  {
+    "name": "Ryan Fitzgerald",
+    "pos": "K",
+    "team": "CAR",
+    "bk": 29,
+    "avg": 27.35,
+    "n": 12,
+    "value": 6105
+  },
+  {
+    "name": "Drew Stevens",
+    "pos": "K",
+    "team": "WAS",
+    "bk": 30,
+    "avg": 27.82,
+    "n": 9,
+    "value": 6027
+  },
+  {
+    "name": "Matt Gay",
+    "pos": "K",
+    "team": "LV",
+    "bk": 31,
+    "avg": 29.5,
+    "n": 9,
+    "value": 5951
+  },
+  {
+    "name": "Brandon McManus",
+    "pos": "K",
+    "team": "FA",
+    "bk": 32,
+    "avg": 29.75,
+    "n": 3,
+    "value": 5876
+  },
+  {
+    "name": "Riley Patterson",
+    "pos": "K",
+    "team": "MIA",
+    "bk": 33,
+    "avg": 30.38,
+    "n": 9,
+    "value": 5803
+  },
+  {
+    "name": "Dominic Zvada",
+    "pos": "K",
+    "team": "NYG",
+    "bk": 34,
+    "avg": 30.5,
+    "n": 8,
+    "value": 5732
+  },
+  {
+    "name": "Jason Sanders",
+    "pos": "K",
+    "team": "NYJ",
+    "bk": 35,
+    "avg": 32.0,
+    "n": 3,
+    "value": 5662
+  },
+  {
+    "name": "Andre Szmyt",
+    "pos": "K",
+    "team": "CLE",
+    "bk": 36,
+    "avg": 32.75,
+    "n": 9,
+    "value": 5593
+  },
+  {
+    "name": "Jake Moody",
+    "pos": "K",
+    "team": "FA",
+    "bk": 37,
+    "avg": 32.75,
+    "n": 3,
+    "value": 5526
+  },
+  {
+    "name": "Ben Sauls",
+    "pos": "K",
+    "team": "NYG",
+    "bk": 38,
+    "avg": 33.5,
+    "n": 3,
+    "value": 5460
+  }
+],
   "week1_dst": [
     {
       "name": "Jacksonville Jaguars",

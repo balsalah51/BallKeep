@@ -416,16 +416,18 @@ def test_super_avg():
 
 
 def test_dst_and_kicker_boards():
-    from special_teams import dst_board, kicker_board
+    from special_teams import K_SOURCES, dst_board, kicker_board
     dst = dst_board()
     assert len(dst) == 32
     assert dst[0]["name"] == "Houston Texans"
     assert dst[0]["bk"] == 1
     assert dst[0]["n"] >= 5
+    assert len(K_SOURCES) >= 20
     kickers = kicker_board()
-    assert len(kickers) == 25
+    assert len(kickers) >= 30
     assert kickers[0]["name"] == "Brandon Aubrey"
     assert kickers[0]["bk"] == 1
+    assert kickers[0]["n"] >= 15
 
 
 def test_fence_idp_board():

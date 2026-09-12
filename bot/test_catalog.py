@@ -146,7 +146,7 @@ def main():
     assert dst[0]["name"] == "Houston Texans"
     assert dst[0].get("bk") == 1
     kickers = cat.raw.get("kickers") or []
-    assert len(kickers) == 25, f"kickers {len(kickers)}"
+    assert len(kickers) >= 30, f"kickers {len(kickers)}"
     assert kickers[0]["name"] == "Brandon Aubrey"
     assert cat.list_for("dst")[0]["name"] == "Houston Texans"
     assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"
@@ -421,6 +421,8 @@ def main():
     k_html = html_of("kickers.html")
     assert "<h1>Top Kickers</h1>" in k_html
     assert "Brandon Aubrey" in k_html
+    assert "20 boards" in k_html or "20 published" in k_html
+    assert "img/players/brandon-aubrey" in k_html
     assert "is 1.01" not in k_html
     w1_dst_html = html_of("week1-dst.html")
     assert "<h1>Week 1 DST</h1>" in w1_dst_html

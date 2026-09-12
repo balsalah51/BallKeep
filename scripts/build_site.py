@@ -1067,8 +1067,8 @@ FB_SEO = {
     ),
     "kickers.html": (
         "2026 Fantasy Football Kicker Rankings | Ball Keep",
-        "Kicker Super Aggregate. 50% FantasyPros, Draft Sharks, and RotoWire. Aubrey leads. Fairbairn and Dicker follow.",
-        "img/logo.jpg",
+        "Kicker Super Aggregate of 20 boards. 50% FantasyPros draft ECR, FantasyPros ROS, STACKED, and Draft Sharks. Aubrey leads. Pictures on every row.",
+        "img/players/brandon-aubrey.png",
     ),
     "weekly.html": (
         "Week 1 Fantasy Football Rankings 2026 | Ball Keep",
@@ -1230,6 +1230,10 @@ NEWS_FAQ = [
 W1_DST_FAQ = [
     ("What is Week 1 DST?", "A weekly start/sit board, not the season-long Top Defenses list. Super Aggregate of 16 published Week 1 boards. 50% FantasyPros ECR and Draft Sharks consensus. Unranked is a skip."),
     ("Who leads the stream?", "Jacksonville against Cleveland. Most weekly boards have the Jaguars first."),
+]
+K_FAQ = [
+    ("How many kicker boards are in this Super Aggregate?", "Twenty published rest-of-season boards. 50% FantasyPros draft ECR, FantasyPros ROS ECR, STACKED, and Draft Sharks. The other half is every other desk that ranked the name."),
+    ("Do the rows have pictures?", "Yes. Each kicker has a headshot next to the name."),
 ]
 W1_K_FAQ = [
     ("What is Week 1 Kickers?", "A weekly start/sit board, not the season-long kicking list. Super Aggregate of 16 published Week 1 boards. 50% FantasyPros ECR. Unranked is a skip."),
@@ -3259,13 +3263,15 @@ def main():
             ),
         ],
     ))
+    k_lead = kickers[0]["name"] if kickers else "Brandon Aubrey"
     k_body = f"""
-    <p class="kicker">2026 Redraft · K Super Aggregate</p>
+    <p class="kicker">2026 Redraft · K Super Aggregate · {len(K_SOURCES)} boards</p>
     <h1>Top Kickers</h1>
-    <p class="note">Rest of season values, not this week's stream. Kicker Super Aggregate of six boards: 50% FantasyPros ECR, Draft Sharks (Aug 31), and RotoWire (Aug 27), 50% Derek Brown, Pat Fitzmaurice, and Field Yates (Sep 5). Unranked on a board is a skip. Aubrey leads. Fairbairn and Dicker follow. Trey Smack (GB) is on the list. Sort with Find a player.</p>
+    <p class="note">Rest of season values, not this week's stream. Super Aggregate of {len(K_SOURCES)} published kicker boards: 50% FantasyPros draft ECR, FantasyPros ROS ECR, STACKED, and Draft Sharks, 50% every other desk that ranked the name. {k_lead} leads. Every row has a picture. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(K_SOURCES, heading="Boards in This Super Aggregate")}
+    {faq_html(K_FAQ, heading="How Top Kickers is built.")}
     """
     write("kickers.html", board_page(
         "Top Kickers", "kickers.html", k_body,
@@ -3275,8 +3281,9 @@ def main():
                 "https://ballkeep.com/kickers.html",
                 kickers,
                 lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html" if slugify(r["name"]) in PLAYER_PAGES.values() else "https://ballkeep.com/kickers.html",
-                description="Redraft kicker Super Aggregate.",
+                description="Redraft kicker Super Aggregate from 20 boards.",
             ),
+            faq_jsonld(K_FAQ),
         ],
     ))
 
