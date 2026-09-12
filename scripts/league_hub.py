@@ -208,7 +208,7 @@ def write_league_page(b, keep, board, ppr, classic, std, waiver, media):
     write_league_lookup(keep, board, ppr, classic, std, waiver, media, UPDATED)
     extra = also_on_desk(b.FB_ALSO.get("league.html") or [])
     body = league_body() + extra
-    js = '<script src="js/league.js?v=2" defer></script>'
+    js = '<script src="js/league.js?v=3" defer></script>'
     b.write(
         "league.html",
         b.page(
