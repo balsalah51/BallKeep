@@ -1,5 +1,7 @@
 (function () {
   const SLEEPER = "https://api.sleeper.app/v1";
+  const STORE = "bk-sleeper-leagues";
+  const STORE_MAX = 8;
   const form = document.getElementById("league-form");
   const app = document.getElementById("league-app");
   if (!form || !app) return;
@@ -12,6 +14,66 @@
     teams: [],
     owned: {},
   };
+
+  function readSaved() {
+    try {
+      const raw = window.localStorage.getItem(STORE);
+      const list = raw ? JSON.parse(raw) : [];
+      if (!Array.isArray(list)) return [];
+      return list.filter(function (x) {
+        return x && x.id && /^\d{6,24}$/.test(String(x.id));
+      });
+    } catch (err) {
+      return [];
+    }
+  }
+
+  function writeSaved(list) {
+    try {
+      window.localStorage.setItem(STORE, JSON.stringify(list.slice(0, STORE_MAX)));
+    } catch (err) {}
+  }
+
+  function rememberLeague(id, name) {
+    id = String(id || "").trim();
+    if (!/^\d{6,24}$/.test(id)) return;
+    const label = String(name || id).trim() || id;
+    const rest = readSaved().filter(function (x) { return String(x.id) !== id; });
+    rest.unshift({ id: id, name: label });
+    writeSaved(rest);
+    paintSaved();
+  }
+
+  function forgetLeague(id) {
+    writeSaved(readSaved().filter(function (x) { return String(x.id) !== String(id); }));
+    paintSaved();
+  }
+
+  function forgetAll() {
+    try { window.localStorage.removeItem(STORE); } catch (err) {}
+    paintSaved();
+  }
+
+  function paintSaved() {
+    const box = document.getElementById("saved-leagues");
+    if (!box) return;
+    const list = readSaved();
+    if (!list.length) {
+      box.hidden = true;
+      box.innerHTML = "";
+      return;
+    }
+    box.hidden = false;
+    const chips = list.map(function (x) {
+      return '<button type="button" class="league-chip" data-saved-id="' + esc(x.id) + '">' +
+        esc(x.name || x.id) + "</button>" +
+        '<button type="button" class="league-forget" data-forget-id="' + esc(x.id) + '" aria-label="Forget ' + esc(x.name || x.id) + '">Forget</button>';
+    }).join("");
+    box.innerHTML =
+      '<p class="kicker">Saved on this browser</p>' +
+      '<div class="league-row">' + chips +
+      '<button type="button" class="cta alt" data-forget-all="1">Forget all</button></div>';
+  }
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -452,12 +514,38 @@
       };
     });
     paint();
+    rememberLeague(id, state.meta.name);
     history.replaceState(null, "", "league.html?sleeper=" + encodeURIComponent(id));
   }
 
   form.addEventListener("click", async function (e) {
+    const forgetAllBtn = e.target.closest("[data-forget-all]");
+    const forgetOne = e.target.closest("[data-forget-id]");
+    const saved = e.target.closest("[data-saved-id]");
     const demo = e.target.closest("[data-demo]");
     const load = e.target.closest("[data-load]");
+    if (forgetAllBtn) {
+      e.preventDefault();
+      forgetAll();
+      return;
+    }
+    if (forgetOne) {
+      e.preventDefault();
+      forgetLeague(forgetOne.getAttribute("data-forget-id"));
+      return;
+    }
+    if (saved) {
+      e.preventDefault();
+      const id = saved.getAttribute("data-saved-id");
+      document.getElementById("sleeper-id").value = id;
+      try {
+        await loadLookup();
+        await loadSleeper(id);
+      } catch (err) {
+        showError(err.message || "Could not load that league.");
+      }
+      return;
+    }
     if (!demo && !load) return;
     e.preventDefault();
     try {
@@ -493,11 +581,17 @@
   });
 
   const params = new URLSearchParams(location.search);
+  paintSaved();
   loadLookup().then(function () {
     if (params.get("demo")) applyDemo();
     else if (params.get("sleeper")) {
       document.getElementById("sleeper-id").value = params.get("sleeper");
       return loadSleeper(params.get("sleeper"));
+    }
+    const last = readSaved()[0];
+    if (last) {
+      document.getElementById("sleeper-id").value = last.id;
+      return loadSleeper(last.id);
     }
   }).catch(function () {});
 })();

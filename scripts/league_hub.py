@@ -185,7 +185,7 @@ def league_body():
     return """
     <p class="kicker mine-kicker">Yours · Sleeper</p>
     <h1>My Team</h1>
-    <p class="note">Put in your Sleeper league ID. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off.</p>
+    <p class="note">Put in your Sleeper league ID. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off. This browser keeps the IDs you load so they are here next time.</p>
     <form class="league-form" id="league-form" action="league.html" method="get">
       <div class="league-fields" data-pane="sleeper">
         <label for="sleeper-id">Sleeper league ID</label>
@@ -194,7 +194,8 @@ def league_body():
           <button type="submit" class="cta" data-load="sleeper">Load my team</button>
           <button type="button" class="cta alt" data-demo="1">Sample league</button>
         </div>
-        <p class="note">Find the ID in the Sleeper URL or in league settings.</p>
+        <div id="saved-leagues" class="saved-leagues" hidden></div>
+        <p class="note">Find the ID in the Sleeper URL or in league settings. Saved IDs stay on this device. Forget one or forget all from the list.</p>
       </div>
     </form>
     <div id="league-app" class="league-app" hidden></div>
@@ -207,7 +208,7 @@ def write_league_page(b, keep, board, ppr, classic, std, waiver, media):
     write_league_lookup(keep, board, ppr, classic, std, waiver, media, UPDATED)
     extra = also_on_desk(b.FB_ALSO.get("league.html") or [])
     body = league_body() + extra
-    js = '<script src="js/league.js" defer></script>'
+    js = '<script src="js/league.js?v=2" defer></script>'
     b.write(
         "league.html",
         b.page(

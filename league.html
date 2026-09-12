@@ -32,7 +32,7 @@
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "My Team | Load Your Sleeper League | Ball Keep", "description": "Put in your Sleeper league ID. Power rankings, BK Value on every roster, leftover waivers, and a dynasty pick toggle.", "url": "https://ballkeep.com/league.html", "inLanguage": "en-US", "isPartOf": {"@type": "WebSite", "name": "Ball Keep", "url": "https://ballkeep.com"}, "publisher": {"@type": "Organization", "name": "Ball Keep", "url": "https://ballkeep.com", "logo": {"@type": "ImageObject", "url": "https://ballkeep.com/img/logo.jpg"}, "sameAs": ["https://github.com/balsalah51/BallKeep"]}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://ballkeep.com/img/logo.jpg"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ball Keep", "item": "https://ballkeep.com/"}, {"@type": "ListItem", "position": 2, "name": "My Team", "item": "https://ballkeep.com/league.html"}]}</script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1074015774205047" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/site.css?v=56" />
+  <link rel="stylesheet" href="css/site.css?v=57" />
   <link rel="icon" href="img/logo.jpg" />
 </head>
 <body class="mine-page">
@@ -52,7 +52,7 @@
     
     <p class="kicker mine-kicker">Yours · Sleeper</p>
     <h1>My Team</h1>
-    <p class="note">Put in your Sleeper league ID. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off.</p>
+    <p class="note">Put in your Sleeper league ID. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off. This browser keeps the IDs you load so they are here next time.</p>
     <form class="league-form" id="league-form" action="league.html" method="get">
       <div class="league-fields" data-pane="sleeper">
         <label for="sleeper-id">Sleeper league ID</label>
@@ -61,7 +61,8 @@
           <button type="submit" class="cta" data-load="sleeper">Load my team</button>
           <button type="button" class="cta alt" data-demo="1">Sample league</button>
         </div>
-        <p class="note">Find the ID in the Sleeper URL or in league settings.</p>
+        <div id="saved-leagues" class="saved-leagues" hidden></div>
+        <p class="note">Find the ID in the Sleeper URL or in league settings. Saved IDs stay on this device. Forget one or forget all from the list.</p>
       </div>
     </form>
     <div id="league-app" class="league-app" hidden></div>
@@ -73,6 +74,6 @@
       <div><a class="sport-switch bb" href="bb/index.html">BaseKeep</a><a class="sport-switch bk" href="bk/index.html">BasketKeep</a><a class="sport-switch pl" href="pl/index.html">PitchKeep</a></div>
     </footer>
   </div>
-    <script src="js/league.js" defer></script>
+    <script src="js/league.js?v=2" defer></script>
 </body>
 </html>
