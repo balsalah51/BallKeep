@@ -1,19 +1,26 @@
 {
   "sport": "soccer",
-  "updated": "2026-09-12T07:23:36Z",
-  "fresh": 99,
+  "updated": "2026-09-12T08:25:59Z",
+  "fresh": 68,
   "stories": [
     {
       "id": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
       "slug": "premier-league-injury-2025-26-injuries-club-club-4a7ad06a",
       "sport": "soccer",
       "headline": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
-      "blurb": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place bbc.com",
-      "summary": "Bryan Mbeumo, Hugo Ekitiké, Alexander Isak and Carlos Baleba: Premier League and FPL team news: All your injury and Fantasy Premier League info in one place bbc.com Bryan Mbeumo, Hugo Ekitiké, Alexander Isak and Carlos Baleba: Predicted line-ups for every Premier League team in Matchweek 4 Premier League Nottingham Forest lineup vs. Sunderland: Predicted XI for Premier League clash Sports Mole Aggregated from Premier League, Sports Mole, The Guardian, RotoWire, Yahoo Sports and 26 more. Aggregated from bbc.com, The Guardian, RotoWire, Yahoo Sports, Sports Illustrated and 26 more.",
+      "blurb": "Bournemouth v Brentford Premier League team news: Nathan Collins injury update Brentford FC",
+      "summary": "Bournemouth v Brentford Premier League team news: Nathan Collins injury update Brentford FC Bryan Mbeumo, Hugo Ekitiké, Alexander Isak and Carlos Baleba: Premier League and FPL team news: All your injury and Fantasy Premier League info in one place bbc.com Bryan Mbeumo, Hugo Ekitiké, Alexander Isak and Carlos Baleba: Predicted line-ups for every Premier League team in Matchweek 4 Premier League Nottingham Forest lineup vs. Sunderland: Predicted XI for Premier League clash Sports Mole Aggregated from Premier League, Sports Mole, The Guardian, RotoWire, Yahoo Sports and 26 more. Aggregated from Brentford FC, The Guardian, RotoWire, Yahoo Sports, Sports Illustrated and 27 more.",
       "category": "injury",
       "published": "2019-08-21T07:00:00Z",
       "updated": "2026-09-11T16:56:05Z",
       "players": [
+        {
+          "key": "collins",
+          "name": "Nathan Collins",
+          "slug": "nathan-collins",
+          "pos": "DEF",
+          "team": "BRE"
+        },
         {
           "key": "mbeumo",
           "name": "Bryan Mbeumo",
@@ -635,6 +642,14 @@
           "kind": "article",
           "snippet": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place bbc.com",
           "published": "Fri, 05 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Bournemouth v Brentford Premier League team news: Nathan Collins injury update",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQMDg3RUVBQ2wxS3pBVkFCSWhQakV1Q3UyZkxRY1E1OXNmQ2xZU0Q2UjlTRV9aU3pmNkg2dnpHeVBfYWNTaWFrWjdlOC14cjVRTk5RM1dTWjlsYWhqRFhyUnVWbkl2WUF2WnowMWUyaHA1Z0Z4TGRKeG1xM1lzWjJqM1BCZkN4R3AwOFpYaHROekJIYXhSN1g0U1BaSVZaRlplTVBKcDhubHZLX2FGQzFBcnVGbnlhRmUwYlJJUGV1dDkwSTU1QXR5VnlGa3NtZkI4RHJnOWliNA?oc=5",
+          "publisher": "Brentford FC",
+          "kind": "article",
+          "snippet": "Bournemouth v Brentford Premier League team news: Nathan Collins injury update Brentford FC",
+          "published": "Fri, 11 Sep 2026 12:56:57 GMT"
         }
       ]
     },
@@ -3458,185 +3473,6 @@
       ]
     },
     {
-      "id": "fpl-gameweek-2-tips-transfers-captain-799e5947",
-      "slug": "fpl-gameweek-2-tips-transfers-captain-799e5947",
-      "sport": "soccer",
-      "headline": "FPL gameweek 29 tips - Captain Antoine Semenyo, pick Harry Wilson and Hugo Ekitike",
-      "blurb": "Who is the best FPL captain for Gameweek 4?",
-      "summary": "Antoine Semenyo, Harry Wilson, Hugo Ekitiké and Callum Wilson: Who is the best FPL captain for Gameweek 4? FPL Gameweek 2 Tips: Transfers, Captain & Team News fantasyfootballfix.com Are the most popular FPL players actually the best picks for Gameweek 1? Aggregated from Premier League, fantasyfootballfix.com, RotoWire, TheHardTackle.com, Fantasy Football Fix and 2 more.",
-      "category": "trade",
-      "published": "2025-08-28T07:00:00Z",
-      "updated": "2026-09-11T10:41:03Z",
-      "players": [
-        {
-          "key": "semenyo",
-          "name": "Antoine Semenyo",
-          "slug": "antoine-semenyo",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "wilson lee",
-          "name": "Harry Wilson",
-          "slug": "harry-wilson",
-          "pos": "MID",
-          "team": "LEE"
-        },
-        {
-          "key": "ekitike",
-          "name": "Hugo Ekitiké",
-          "slug": "hugo-ekitik",
-          "pos": "FWD",
-          "team": "LIV"
-        },
-        {
-          "key": "wilson",
-          "name": "Callum Wilson",
-          "slug": "callum-wilson",
-          "pos": "FWD",
-          "team": "BRE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "FPL Gameweek 2 Tips: Transfers, Captain & Team News",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14RzVwMW9BRGlFZmdwMjY5Zkp1TGJvX0hUQlNJbHhEbkNIQUduLXlsdF94ZHdqVm02b0tyLVRlT0g3SVJBVnJZUmEtRzFueGhjb2t6bFBiZ19KNzg4aVNzd2Rkcmd5VmNYRTJib3ZGV25xYjh6?oc=5",
-          "publisher": "Fantasy Football Fix",
-          "kind": "article",
-          "snippet": "FPL Gameweek 2 Tips: Transfers, Captain & Team News Fantasy Football Fix",
-          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Gameweek 4 | FPL BlackBox​ | Fantasy Premier League Tips 26/27 | Blues Brothers",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSOXFSaXEzalRNM3Q3d0VPSUtqX2hoTUNWSEdKRXlmTFg4YXJZRFZxTUR6SlQtUjRGdEFDM0llbk5MRHJLaHhWSExGV1pDaDZRZFlKRHZB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Gameweek 4 | FPL BlackBox​ | Fantasy Premier League Tips 26/27 | Blues Brothers YouTube",
-          "published": "Wed, 09 Sep 2026 18:05:37 GMT"
-        },
-        {
-          "title": "The Scout’s FPL Blank Gameweek 34 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ3haU1VNeWVtZThPOXdDajdrcGtiX0stZGZMZFdmOG53R3Y0Q0dmR2NMV0t1TW5IdEZqeGxFaGtsbWVPdEh5LWtoVnp3M2IyckhNeklTV0VsdkdqYmRQRUhqcnpHd096aFFld0R0a09iOFRBaTJNVUpGMHR5bnFiVW9TZlpwWExiMkNJNXhpU2U?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout’s FPL Blank Gameweek 34 transfer radar Premier League",
-          "published": "Thu, 23 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Scout’s FPL Gameweek 3 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdXVaYk5hY3QwNmdVU1UwNjdURHRac3EwV1cxM1pJSDFIc0dBaFYxRjZQUExWXzI0RXZLa0IyMThkZGtQWTFVclFqUnhET3ZFRHVwUHgyT2tjM0R6dHFEeHZseHpwckJkNTB5MkI4VkN1NFBPQzJtcjE2X0RibDZmQkgwNW5BMHV0T3lESTZJOA?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout’s FPL Gameweek 3 transfer radar Premier League",
-          "published": "Thu, 03 Sep 2026 12:11:01 GMT"
-        },
-        {
-          "title": "Gameweek 4 Pod | The FPL Wire | Fantasy Premier League Tips 2026/27",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBKR19DVVFjdkRheFlVRFRpVS1MUFBieEpMa2N0aVlfMzV6NVFtY2YwRDFWTmEtbWZESFpMV2c1c1FZdHl4U2dTM3U1dmdZZEU4YU01R3hB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Gameweek 4 Pod | The FPL Wire | Fantasy Premier League Tips 2026/27 YouTube",
-          "published": "Tue, 08 Sep 2026 15:14:18 GMT"
-        },
-        {
-          "title": "FPL gameweek 29 tips - Captain Antoine Semenyo, pick Harry Wilson and Hugo Ekitike",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5tSTlwRnpsb3dLYzRmZ0RrczIzSXZMdTdCSUx6TmZHUE9HNVdOWHZQb3ZGUUhkNDN2T0JRc19EekhEcnQzYkJ6VXpZTjVscXB4eTZCVTg1Z0VQUTdfZS11TnROQnhmTDg?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "FPL gameweek 29 tips - Captain Antoine Semenyo, pick Harry Wilson and Hugo Ekitike BBC",
-          "published": "Mon, 02 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Who is the best FPL captain for Gameweek 37?",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeG5Tb08tNGxUSmZoMnZKT2RLeHpNalBnSnVmUE1FUHZpNlNicUp2eFlaT1VIMXJHWnB6VTFiVkVXZ3o5LXV1MTNvSE1oNHYySlBQNUJXZVFXcnB2U2V3Yl9kYUpON2hQMmUxQ29sbHRYUUdiN0NBLXFsNkJ6dFRGVDRoYXl0YXJ0T1FZRVBja0VxVEk?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Who is the best FPL captain for Gameweek 37? Premier League",
-          "published": "Fri, 15 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW38 Differentials: Best Low-Owned Picks for Gameweek 38",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONzU5UUdLY2hNdEZyMzliMC0yLWRoazB0bHZRY1NEcHA2U08waE8weXRCM1VNY3pnQ21iV1k0Q29EbEtmOGs3OEVoM2VEMFBRMk10S2ViV3hwenZMY1liaGo1OTFWQk5RemhILTZ1UHpuS2pCV2JDekhwc013WmVTbXdKMUJnUUhyUFdyMnU5OGxPYW5uWWpDS3dkVzJkaDNxdkhCcWNaSk9sQQ?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW38 Differentials: Best Low-Owned Picks for Gameweek 38 RotoWire",
-          "published": "Fri, 22 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Who is the best FPL captain for Gameweek 4?",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9MSllJWkdqbEoxZ2NVd2xuVHNJRFlnUDdUX2U0YjA3ODdlcDlKRk92X2Z0YnBKcmp3WUh0SFBYZDdRWGdKRGhJenNRSXV5d0tuTG5IeUtPNlI?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Who is the best FPL captain for Gameweek 4? Premier League",
-          "published": "Fri, 11 Sep 2026 10:41:03 GMT"
-        },
-        {
-          "title": "Who to keep and who to sell in Blank Gameweek 31",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbjlOT3ZzcTlNdHhZZ3B5NHF0bzJIQnkxcE9Qd0hIVERhREx0NnpuZlV1aF9xRXEtYlNfMTNxNkE3RF94UkRoTGV3NGpoblVUOVJ0NlZneUtTZGhUZHdMVF9YQjkxNGxaREJmSzdHYkdja241TXB0UjRTeHZzNWx0VDBDWHZSVmxhLUZsMGtsbWxvenpLdlhkQTNn?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Who to keep and who to sell in Blank Gameweek 31 Premier League",
-          "published": "Thu, 19 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Scout's FPL Gameweek 18 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWTVOTjZqdk81Mk53czVqcWVqSkZZcXdfTS1tLXFGTUFkSElZOUdRMmw2eVpuSGU5VXJNRDR6WFY3czNsQXRSV0J6UU1HeDczNkpuVTVmdndMR1FHZmxMZ1E1dWFhVnRkbURJUFNoVGlZMnlpWV9aQUJkQTUxSzJFUzNGWF9MaXc1T2F0cHo4eEs?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout's FPL Gameweek 18 transfer radar Premier League",
-          "published": "Tue, 23 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Who is the best FPL captain for Gameweek 4?",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZ2puaFFTcWNLR290Z0RwTVVzNmlFbjFxY01uMzN4SkxpUWMyNnNNU0hJUm9SbC1BMW1YU3lnTk1tSWNKeWxxUVYxVFhtbHlwRjVfbDY1a1FMWGY1WUZkX1h0SC1mUVFmTmY2MUVsc2xzbl94a2FIRnBldm9Fc09xQVdIWDNwaGd2dmZRU1ZfRWJMQQ?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Who is the best FPL captain for Gameweek 4? Premier League",
-          "published": "Fri, 11 Sep 2026 10:41:03 GMT"
-        },
-        {
-          "title": "Are the most popular FPL players actually the best picks for Gameweek 1?",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOamZWcUcyTnZ1WWJCZDhFRVdBaC1zWU0yc3dsNGJtY1NuMzUzOE9KV1dZaHdlc1NBTy0zUjByNUwzUnlSREUxaEhGV1ZEZ2tKbGF1ZmxXTDZwWTJFR1Jad2ZXYkdUWTdmZG16X19idTItTzQ0RC03djNGS1BPbUlpdjZDM2h6TllUWjRvVDAwamNPMHowSW1melNFTks1NzJ3Y0MycDFlWUg2a29yU05aMjhETF9EZlRB?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Are the most popular FPL players actually the best picks for Gameweek 1? Premier League",
-          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW38 Free Hit Team: Best Draft & Strategy for Gameweek 38",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOa2g2R0JuOGNoOXctRnZwNVdIcmNOZDU4RFo2Ni1uaTNlZWtfYndIamlqT3RKRzd1U3Q2ZUlWVmJYX1hqeG5IWmNpMV9XQUVkSV9GeEdXd0UwTTRmNkRIRFF1TXZEZURyamhZcm5VeFRQSUJWaDFyVVd5Z3ZtTlJVUmE1OWRTZ2V5U0lYMEFBRUJKUlZzVEZGVjV3NjlBMG5Lb0RV?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW38 Free Hit Team: Best Draft & Strategy for Gameweek 38 RotoWire",
-          "published": "Fri, 22 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Scout’s FPL Gameweek 37 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORTlBWXdWQ0ZYaUhEQzBZU2tkUVg2OWJTQUJOeEI2Mm1GczFPRjhaZjU2T2ZJUWRsUFlRSWkyMU03V3JoNGx0OTFYT2dQSUxMdWViVU1TQ2NHRS1VQ0VkcklSLXlRY2NnWERNR3J2U01ra0dQZUczanMwZDRKa0E3U1lYYlQwVW1ocFJ2amNLSEg?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout’s FPL Gameweek 37 transfer radar Premier League",
-          "published": "Thu, 14 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Scout’s FPL Gameweek 3 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRnh2bGpTY1NiZDUxQWZyajJPOTlyX2swOHdSTzNTb2o0ek5veFRhZWtEUm91amlBYnpNQkNZR2VLdTg3RGtIVWVnSjNZbHREbEdKdkdPaHpBREpaV1RkRjVRcEtSX19wTEhjaEpWN2cxZnI2aklvYi1YMWNYNkkzYkNONnJaNVY0Mi1xN1prbw?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout’s FPL Gameweek 3 transfer radar Premier League",
-          "published": "Thu, 28 Aug 2025 07:00:00 GMT"
-        },
-        {
-          "title": "THT FPL Top Transfer Recommendations: Gameweek 21",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZVQ0alBiYXBRYlFESC0yOGxscUlpSUYtWkt3SldLQW55aWpNbHh5VVc3OFp6NjdpWUMwQTJvRmdPNjVReUZGQlpKRUhTT0s0Y1Fka3hQS2VocVh2MHRLUG96QURxOFpEVlQ5M0ZQZ0t1QWV2Sl9ibkpPUE1raUdwbHBONzhrOFJaRHNB0gGQAUFVX3lxTFBKVE1kR2k2R1hzZ0VRcjV5eFhIT016bWx4dmpZSkRwbXczV25oQkRCdlRER3JhT3dVZWhPVWdrTGhUSlQ4MzFNQ0NVTTJPZFJkUU5XcWQ4UDdnTk4wRjFzaTkwbHVvV1Y3X2RxRzhNaTV4dlV1X1JUS1h2QzNaYVlPVFNrQUtzUjcxUnRLWTNtNA?oc=5",
-          "publisher": "TheHardTackle.com",
-          "kind": "article",
-          "snippet": "THT FPL Top Transfer Recommendations: Gameweek 21 TheHardTackle.com",
-          "published": "Sun, 04 Jan 2026 08:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "scout-selection-best-gameweek-35-268eb069",
       "slug": "scout-selection-best-gameweek-35-268eb069",
       "sport": "soccer",
@@ -3821,6 +3657,185 @@
           "kind": "article",
           "snippet": "FPL Gameweek 3 Tips: Fantasy Football Must-Haves, Captain Picks and Injury Report Extratime Talk",
           "published": "Fri, 04 Sep 2026 10:48:41 GMT"
+        }
+      ]
+    },
+    {
+      "id": "fpl-gameweek-2-tips-transfers-captain-799e5947",
+      "slug": "fpl-gameweek-2-tips-transfers-captain-799e5947",
+      "sport": "soccer",
+      "headline": "FPL gameweek 29 tips - Captain Antoine Semenyo, pick Harry Wilson and Hugo Ekitike",
+      "blurb": "Who is the best FPL captain for Gameweek 4?",
+      "summary": "Antoine Semenyo, Harry Wilson, Hugo Ekitiké and Callum Wilson: Who is the best FPL captain for Gameweek 4? FPL Gameweek 2 Tips: Transfers, Captain & Team News fantasyfootballfix.com Are the most popular FPL players actually the best picks for Gameweek 1? Aggregated from Premier League, fantasyfootballfix.com, RotoWire, TheHardTackle.com, Fantasy Football Fix and 2 more.",
+      "category": "trade",
+      "published": "2025-08-28T07:00:00Z",
+      "updated": "2026-09-11T10:41:03Z",
+      "players": [
+        {
+          "key": "semenyo",
+          "name": "Antoine Semenyo",
+          "slug": "antoine-semenyo",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "wilson lee",
+          "name": "Harry Wilson",
+          "slug": "harry-wilson",
+          "pos": "MID",
+          "team": "LEE"
+        },
+        {
+          "key": "ekitike",
+          "name": "Hugo Ekitiké",
+          "slug": "hugo-ekitik",
+          "pos": "FWD",
+          "team": "LIV"
+        },
+        {
+          "key": "wilson",
+          "name": "Callum Wilson",
+          "slug": "callum-wilson",
+          "pos": "FWD",
+          "team": "BRE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "FPL Gameweek 2 Tips: Transfers, Captain & Team News",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14RzVwMW9BRGlFZmdwMjY5Zkp1TGJvX0hUQlNJbHhEbkNIQUduLXlsdF94ZHdqVm02b0tyLVRlT0g3SVJBVnJZUmEtRzFueGhjb2t6bFBiZ19KNzg4aVNzd2Rkcmd5VmNYRTJib3ZGV25xYjh6?oc=5",
+          "publisher": "Fantasy Football Fix",
+          "kind": "article",
+          "snippet": "FPL Gameweek 2 Tips: Transfers, Captain & Team News Fantasy Football Fix",
+          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Gameweek 4 | FPL BlackBox​ | Fantasy Premier League Tips 26/27 | Blues Brothers",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSOXFSaXEzalRNM3Q3d0VPSUtqX2hoTUNWSEdKRXlmTFg4YXJZRFZxTUR6SlQtUjRGdEFDM0llbk5MRHJLaHhWSExGV1pDaDZRZFlKRHZB?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Gameweek 4 | FPL BlackBox​ | Fantasy Premier League Tips 26/27 | Blues Brothers YouTube",
+          "published": "Wed, 09 Sep 2026 18:05:37 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Blank Gameweek 34 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ3haU1VNeWVtZThPOXdDajdrcGtiX0stZGZMZFdmOG53R3Y0Q0dmR2NMV0t1TW5IdEZqeGxFaGtsbWVPdEh5LWtoVnp3M2IyckhNeklTV0VsdkdqYmRQRUhqcnpHd096aFFld0R0a09iOFRBaTJNVUpGMHR5bnFiVW9TZlpwWExiMkNJNXhpU2U?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Blank Gameweek 34 transfer radar Premier League",
+          "published": "Thu, 23 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Gameweek 3 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdXVaYk5hY3QwNmdVU1UwNjdURHRac3EwV1cxM1pJSDFIc0dBaFYxRjZQUExWXzI0RXZLa0IyMThkZGtQWTFVclFqUnhET3ZFRHVwUHgyT2tjM0R6dHFEeHZseHpwckJkNTB5MkI4VkN1NFBPQzJtcjE2X0RibDZmQkgwNW5BMHV0T3lESTZJOA?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Gameweek 3 transfer radar Premier League",
+          "published": "Thu, 03 Sep 2026 12:11:01 GMT"
+        },
+        {
+          "title": "Gameweek 4 Pod | The FPL Wire | Fantasy Premier League Tips 2026/27",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBKR19DVVFjdkRheFlVRFRpVS1MUFBieEpMa2N0aVlfMzV6NVFtY2YwRDFWTmEtbWZESFpMV2c1c1FZdHl4U2dTM3U1dmdZZEU4YU01R3hB?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Gameweek 4 Pod | The FPL Wire | Fantasy Premier League Tips 2026/27 YouTube",
+          "published": "Tue, 08 Sep 2026 15:14:18 GMT"
+        },
+        {
+          "title": "FPL gameweek 29 tips - Captain Antoine Semenyo, pick Harry Wilson and Hugo Ekitike",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5tSTlwRnpsb3dLYzRmZ0RrczIzSXZMdTdCSUx6TmZHUE9HNVdOWHZQb3ZGUUhkNDN2T0JRc19EekhEcnQzYkJ6VXpZTjVscXB4eTZCVTg1Z0VQUTdfZS11TnROQnhmTDg?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "FPL gameweek 29 tips - Captain Antoine Semenyo, pick Harry Wilson and Hugo Ekitike BBC",
+          "published": "Mon, 02 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Who is the best FPL captain for Gameweek 37?",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeG5Tb08tNGxUSmZoMnZKT2RLeHpNalBnSnVmUE1FUHZpNlNicUp2eFlaT1VIMXJHWnB6VTFiVkVXZ3o5LXV1MTNvSE1oNHYySlBQNUJXZVFXcnB2U2V3Yl9kYUpON2hQMmUxQ29sbHRYUUdiN0NBLXFsNkJ6dFRGVDRoYXl0YXJ0T1FZRVBja0VxVEk?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Who is the best FPL captain for Gameweek 37? Premier League",
+          "published": "Fri, 15 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW38 Differentials: Best Low-Owned Picks for Gameweek 38",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONzU5UUdLY2hNdEZyMzliMC0yLWRoazB0bHZRY1NEcHA2U08waE8weXRCM1VNY3pnQ21iV1k0Q29EbEtmOGs3OEVoM2VEMFBRMk10S2ViV3hwenZMY1liaGo1OTFWQk5RemhILTZ1UHpuS2pCV2JDekhwc013WmVTbXdKMUJnUUhyUFdyMnU5OGxPYW5uWWpDS3dkVzJkaDNxdkhCcWNaSk9sQQ?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW38 Differentials: Best Low-Owned Picks for Gameweek 38 RotoWire",
+          "published": "Fri, 22 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Who is the best FPL captain for Gameweek 4?",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9MSllJWkdqbEoxZ2NVd2xuVHNJRFlnUDdUX2U0YjA3ODdlcDlKRk92X2Z0YnBKcmp3WUh0SFBYZDdRWGdKRGhJenNRSXV5d0tuTG5IeUtPNlI?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Who is the best FPL captain for Gameweek 4? Premier League",
+          "published": "Fri, 11 Sep 2026 10:41:03 GMT"
+        },
+        {
+          "title": "Who to keep and who to sell in Blank Gameweek 31",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbjlOT3ZzcTlNdHhZZ3B5NHF0bzJIQnkxcE9Qd0hIVERhREx0NnpuZlV1aF9xRXEtYlNfMTNxNkE3RF94UkRoTGV3NGpoblVUOVJ0NlZneUtTZGhUZHdMVF9YQjkxNGxaREJmSzdHYkdja241TXB0UjRTeHZzNWx0VDBDWHZSVmxhLUZsMGtsbWxvenpLdlhkQTNn?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Who to keep and who to sell in Blank Gameweek 31 Premier League",
+          "published": "Thu, 19 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Scout's FPL Gameweek 18 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWTVOTjZqdk81Mk53czVqcWVqSkZZcXdfTS1tLXFGTUFkSElZOUdRMmw2eVpuSGU5VXJNRDR6WFY3czNsQXRSV0J6UU1HeDczNkpuVTVmdndMR1FHZmxMZ1E1dWFhVnRkbURJUFNoVGlZMnlpWV9aQUJkQTUxSzJFUzNGWF9MaXc1T2F0cHo4eEs?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout's FPL Gameweek 18 transfer radar Premier League",
+          "published": "Tue, 23 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Who is the best FPL captain for Gameweek 4?",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZ2puaFFTcWNLR290Z0RwTVVzNmlFbjFxY01uMzN4SkxpUWMyNnNNU0hJUm9SbC1BMW1YU3lnTk1tSWNKeWxxUVYxVFhtbHlwRjVfbDY1a1FMWGY1WUZkX1h0SC1mUVFmTmY2MUVsc2xzbl94a2FIRnBldm9Fc09xQVdIWDNwaGd2dmZRU1ZfRWJMQQ?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Who is the best FPL captain for Gameweek 4? Premier League",
+          "published": "Fri, 11 Sep 2026 10:41:03 GMT"
+        },
+        {
+          "title": "Are the most popular FPL players actually the best picks for Gameweek 1?",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOamZWcUcyTnZ1WWJCZDhFRVdBaC1zWU0yc3dsNGJtY1NuMzUzOE9KV1dZaHdlc1NBTy0zUjByNUwzUnlSREUxaEhGV1ZEZ2tKbGF1ZmxXTDZwWTJFR1Jad2ZXYkdUWTdmZG16X19idTItTzQ0RC03djNGS1BPbUlpdjZDM2h6TllUWjRvVDAwamNPMHowSW1melNFTks1NzJ3Y0MycDFlWUg2a29yU05aMjhETF9EZlRB?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Are the most popular FPL players actually the best picks for Gameweek 1? Premier League",
+          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW38 Free Hit Team: Best Draft & Strategy for Gameweek 38",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOa2g2R0JuOGNoOXctRnZwNVdIcmNOZDU4RFo2Ni1uaTNlZWtfYndIamlqT3RKRzd1U3Q2ZUlWVmJYX1hqeG5IWmNpMV9XQUVkSV9GeEdXd0UwTTRmNkRIRFF1TXZEZURyamhZcm5VeFRQSUJWaDFyVVd5Z3ZtTlJVUmE1OWRTZ2V5U0lYMEFBRUJKUlZzVEZGVjV3NjlBMG5Lb0RV?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW38 Free Hit Team: Best Draft & Strategy for Gameweek 38 RotoWire",
+          "published": "Fri, 22 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Gameweek 37 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORTlBWXdWQ0ZYaUhEQzBZU2tkUVg2OWJTQUJOeEI2Mm1GczFPRjhaZjU2T2ZJUWRsUFlRSWkyMU03V3JoNGx0OTFYT2dQSUxMdWViVU1TQ2NHRS1VQ0VkcklSLXlRY2NnWERNR3J2U01ra0dQZUczanMwZDRKa0E3U1lYYlQwVW1ocFJ2amNLSEg?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Gameweek 37 transfer radar Premier League",
+          "published": "Thu, 14 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Gameweek 3 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRnh2bGpTY1NiZDUxQWZyajJPOTlyX2swOHdSTzNTb2o0ek5veFRhZWtEUm91amlBYnpNQkNZR2VLdTg3RGtIVWVnSjNZbHREbEdKdkdPaHpBREpaV1RkRjVRcEtSX19wTEhjaEpWN2cxZnI2aklvYi1YMWNYNkkzYkNONnJaNVY0Mi1xN1prbw?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Gameweek 3 transfer radar Premier League",
+          "published": "Thu, 28 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "THT FPL Top Transfer Recommendations: Gameweek 21",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZVQ0alBiYXBRYlFESC0yOGxscUlpSUYtWkt3SldLQW55aWpNbHh5VVc3OFp6NjdpWUMwQTJvRmdPNjVReUZGQlpKRUhTT0s0Y1Fka3hQS2VocVh2MHRLUG96QURxOFpEVlQ5M0ZQZ0t1QWV2Sl9ibkpPUE1raUdwbHBONzhrOFJaRHNB0gGQAUFVX3lxTFBKVE1kR2k2R1hzZ0VRcjV5eFhIT016bWx4dmpZSkRwbXczV25oQkRCdlRER3JhT3dVZWhPVWdrTGhUSlQ4MzFNQ0NVTTJPZFJkUU5XcWQ4UDdnTk4wRjFzaTkwbHVvV1Y3X2RxRzhNaTV4dlV1X1JUS1h2QzNaYVlPVFNrQUtzUjcxUnRLWTNtNA?oc=5",
+          "publisher": "TheHardTackle.com",
+          "kind": "article",
+          "snippet": "THT FPL Top Transfer Recommendations: Gameweek 21 TheHardTackle.com",
+          "published": "Sun, 04 Jan 2026 08:00:00 GMT"
         }
       ]
     },
@@ -5031,6 +5046,82 @@
       ]
     },
     {
+      "id": "richarlison-james-maddison-back-training-ahead-everton-open-43ec96c8",
+      "slug": "richarlison-james-maddison-back-training-ahead-everton-open-43ec96c8",
+      "sport": "soccer",
+      "headline": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski",
+      "blurb": "De Zerbi reveals Kulusevski injury latest before naming Tottenham squad standard.co.uk",
+      "summary": "Richarlison de Andrade, James Tarkowski and James Maddison: De Zerbi reveals Kulusevski injury latest before naming Tottenham squad standard.co.uk Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session YouTube Toffees train for Spurs (A) | EVERTON IN TRAINING YouTube Aggregated from standard.co.uk, YouTube, metro.co.uk, football.london.",
+      "category": "injury",
+      "published": "2026-03-20T07:00:00Z",
+      "updated": "2026-09-11T13:58:47Z",
+      "players": [
+        {
+          "key": "richarlison",
+          "name": "Richarlison de Andrade",
+          "slug": "richarlison-de-andrade",
+          "pos": "FWD",
+          "team": "TOT"
+        },
+        {
+          "key": "tarkowski",
+          "name": "James Tarkowski",
+          "slug": "james-tarkowski",
+          "pos": "DEF",
+          "team": "EVE"
+        },
+        {
+          "key": "maddison",
+          "name": "James Maddison",
+          "slug": "james-maddison",
+          "pos": "MID",
+          "team": "TOT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4zTDM3dExjVlJwYVVoT3dvaFFqSGI1V01FZUE1QkpJMzVRVnRYU3pXa0NyZFVtd1Y2b0ctWTY1eGZnVWhpNGsxSEFGWjFVY3pQWEhGamxR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session YouTube",
+          "published": "Thu, 10 Sep 2026 11:46:13 GMT"
+        },
+        {
+          "title": "Toffees train for Spurs (A) | EVERTON IN TRAINING",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaeUZ3RFJnM29yTVpiOHloMkFZQW9CVGZyeERqcFVWTUI5N0lDZS1uMElrZTRUMU5YVmRKU3piX2RhNE96QnZkNVZ3RHZEQWdHaFhDeEFR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Toffees train for Spurs (A) | EVERTON IN TRAINING YouTube",
+          "published": "Thu, 10 Sep 2026 14:00:01 GMT"
+        },
+        {
+          "title": "James Tarkowski injury update ahead of Everton vs Chelsea",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNHZVY09qdVkwcG9QVi0zTVVuSFdtWDRPczlaMWxZeVpOSWJQN0tDMk9yLWE2RXRzLUdXOFlSNUktb1RFa29vYVdHazlaS2pQTHZDNXhLSmNxU254VEV4Zkw4dUNDSXowX0E3dFBTUXRWVmJXMHpaQXEyUFhxZFFWXzl1Z19mQ1FrNElhRXJ1UDh6ZTJVWVZCR1lRQdIBoAFBVV95cUxNRjM5R0ZlRkVabTVxelprWFpEUkhHcWdpRmFCdDJ2MmctM1BPOFAwM1JrOV9sUTNRRnRYcmlVVnpsTzQxOWlRRW5USlB3SE5YUzdjUTk2akd6YWNLUmpHWno3NW5SMmZaSWtXWWU0My11SGdsU1hCLVVzNzBYSklYZGFjY1pGb0xNQzNvWWhhX21XNGVuWHdoeGNUNHpJcTcy?oc=5",
+          "publisher": "metro.co.uk",
+          "kind": "article",
+          "snippet": "James Tarkowski injury update ahead of Everton vs Chelsea metro.co.uk",
+          "published": "Fri, 20 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRExSUk5ES3hNdkt2UzFwbW5VLTZXd0FQSlhVb0VpY1pnQmVQOWlWUV9EN0lrQ09lLTlWbkowZWRuQTZRWEl3RGd6LXNBdExVd1F2MTl6TFY1OS1abmtyUFpQaGRUQ3A3cVhfdHlRYTRWQUd6SVNwMkVjX1RxR3lwWkpUR3F2d05HaW5lV2JOMDVnT1hNUkI4bVNyZEJ6OUd3?oc=5",
+          "publisher": "football.london",
+          "kind": "article",
+          "snippet": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london",
+          "published": "Fri, 11 Sep 2026 13:58:47 GMT"
+        },
+        {
+          "title": "De Zerbi reveals Kulusevski injury latest before naming Tottenham squad",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeF8zZEhabmx3UFJfTmRzbjJOcDF1UnhETjMtdExzVEEwdDFJQWl4MTl6ZWNBM3BITmNvMnFKRVRjajBLX01wSDN3NnAtQ0dKOEtYWTNxenZvYldBTjVKUlhRc1o1UHBaWk5wcFVydzVacmwxUVo0cEJZTnNaQTNENnVGcTBRMzIwQ2NhVzVPZFlhWjJyajJZSHZ4WmpXVmZ6cDhYbFlXcjVjMXZTNTFKYlp2bw?oc=5",
+          "publisher": "standard.co.uk",
+          "kind": "article",
+          "snippet": "De Zerbi reveals Kulusevski injury latest before naming Tottenham squad standard.co.uk",
+          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "bruno-fernandes-man-utd-future-depend-champions-league-b43b1b24",
       "slug": "bruno-fernandes-man-utd-future-depend-champions-league-b43b1b24",
       "sport": "soccer",
@@ -5197,74 +5288,6 @@
           "kind": "article",
           "snippet": "Matheus Cunha injury update after Man Utd forward suffers 'accident' in training Daily Express",
           "published": "Sun, 23 Nov 2025 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "richarlison-james-maddison-back-training-ahead-everton-open-43ec96c8",
-      "slug": "richarlison-james-maddison-back-training-ahead-everton-open-43ec96c8",
-      "sport": "soccer",
-      "headline": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski",
-      "blurb": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london",
-      "summary": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session YouTube Toffees train for Spurs (A) | EVERTON IN TRAINING YouTube Aggregated from football.london, YouTube, metro.co.uk.",
-      "category": "injury",
-      "published": "2026-03-20T07:00:00Z",
-      "updated": "2026-09-11T13:58:47Z",
-      "players": [
-        {
-          "key": "richarlison",
-          "name": "Richarlison de Andrade",
-          "slug": "richarlison-de-andrade",
-          "pos": "FWD",
-          "team": "TOT"
-        },
-        {
-          "key": "tarkowski",
-          "name": "James Tarkowski",
-          "slug": "james-tarkowski",
-          "pos": "DEF",
-          "team": "EVE"
-        },
-        {
-          "key": "maddison",
-          "name": "James Maddison",
-          "slug": "james-maddison",
-          "pos": "MID",
-          "team": "TOT"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4zTDM3dExjVlJwYVVoT3dvaFFqSGI1V01FZUE1QkpJMzVRVnRYU3pXa0NyZFVtd1Y2b0ctWTY1eGZnVWhpNGsxSEFGWjFVY3pQWEhGamxR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Richarlison and James Maddison back in training ahead of Everton | Open Spurs training session YouTube",
-          "published": "Thu, 10 Sep 2026 11:46:13 GMT"
-        },
-        {
-          "title": "Toffees train for Spurs (A) | EVERTON IN TRAINING",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaeUZ3RFJnM29yTVpiOHloMkFZQW9CVGZyeERqcFVWTUI5N0lDZS1uMElrZTRUMU5YVmRKU3piX2RhNE96QnZkNVZ3RHZEQWdHaFhDeEFR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Toffees train for Spurs (A) | EVERTON IN TRAINING YouTube",
-          "published": "Thu, 10 Sep 2026 14:00:01 GMT"
-        },
-        {
-          "title": "James Tarkowski injury update ahead of Everton vs Chelsea",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNHZVY09qdVkwcG9QVi0zTVVuSFdtWDRPczlaMWxZeVpOSWJQN0tDMk9yLWE2RXRzLUdXOFlSNUktb1RFa29vYVdHazlaS2pQTHZDNXhLSmNxU254VEV4Zkw4dUNDSXowX0E3dFBTUXRWVmJXMHpaQXEyUFhxZFFWXzl1Z19mQ1FrNElhRXJ1UDh6ZTJVWVZCR1lRQdIBoAFBVV95cUxNRjM5R0ZlRkVabTVxelprWFpEUkhHcWdpRmFCdDJ2MmctM1BPOFAwM1JrOV9sUTNRRnRYcmlVVnpsTzQxOWlRRW5USlB3SE5YUzdjUTk2akd6YWNLUmpHWno3NW5SMmZaSWtXWWU0My11SGdsU1hCLVVzNzBYSklYZGFjY1pGb0xNQzNvWWhhX21XNGVuWHdoeGNUNHpJcTcy?oc=5",
-          "publisher": "metro.co.uk",
-          "kind": "article",
-          "snippet": "James Tarkowski injury update ahead of Everton vs Chelsea metro.co.uk",
-          "published": "Fri, 20 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRExSUk5ES3hNdkt2UzFwbW5VLTZXd0FQSlhVb0VpY1pnQmVQOWlWUV9EN0lrQ09lLTlWbkowZWRuQTZRWEl3RGd6LXNBdExVd1F2MTl6TFY1OS1abmtyUFpQaGRUQ3A3cVhfdHlRYTRWQUd6SVNwMkVjX1RxR3lwWkpUR3F2d05HaW5lV2JOMDVnT1hNUkI4bVNyZEJ6OUd3?oc=5",
-          "publisher": "football.london",
-          "kind": "article",
-          "snippet": "Every word De Zerbi said on 'stupid' Mudryk injury, Richarlison transfer and Kulusevski football.london",
-          "published": "Fri, 11 Sep 2026 13:58:47 GMT"
         }
       ]
     },
@@ -11159,6 +11182,67 @@
       ]
     },
     {
+      "id": "he-ll-adapt-quicker-florian-wirtz-bradley-barcola-a6a71544",
+      "slug": "he-ll-adapt-quicker-florian-wirtz-bradley-barcola-a6a71544",
+      "sport": "soccer",
+      "headline": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
+      "blurb": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Yahoo Sports Canada",
+      "summary": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Yahoo Sports Canada Aggregated from Yahoo Sports Canada, LiveScore, Goal.com.",
+      "category": "trade",
+      "published": "2026-09-11T04:58:00Z",
+      "updated": "2026-09-11T07:09:50Z",
+      "players": [
+        {
+          "key": "wirtz",
+          "name": "Florian Wirtz",
+          "slug": "florian-wirtz",
+          "pos": "MID",
+          "team": "LIV"
+        },
+        {
+          "key": "bradley",
+          "name": "Conor Bradley",
+          "slug": "conor-bradley",
+          "pos": "DEF",
+          "team": "LIV"
+        }
+      ],
+      "sources": [
+        {
+          "title": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
+          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNSzQteUZlZl8zVm9UWEJBNDRzSWJyejRaMHJVaUp5Nkk2cUExbmRYMVZad1hjSjVUUnB1dDVBUnZSTXBmbEhhUk8wdHlzMVJwYk96NDJDbWgzTS01VUFpWTc3UEVaRnJOSUtvcENqSFJHOHVCcmhRYTlTdDJfTDRBMXQyVE5hNHRoSi1mVnJlU1JKaEEzMVZqVjU0U3dfbE1vOTdiUnhseDJhMnlialNqUDIyQmlBZjRYQjVuWl9TQkNMdDJtenFhb01EbHhyMDNseWplcUVtMjg4dUZLVFBac3ZwMkVJRkctTW5RNDZ6TUgwamFMRFRYVE51eHhXWWRyLWlHWWFiUWYwbC1OdFkzSm9jWQ?oc=5",
+          "publisher": "LiveScore",
+          "kind": "article",
+          "snippet": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool LiveScore",
+          "published": "Fri, 11 Sep 2026 07:09:50 GMT"
+        },
+        {
+          "title": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWnl5ZGkwYTJzMzFKQkNaUG1DMjlTaGlIMlV1SEltdXJXM2RLMy1tTlpuT2VaLV9TQ2l0QWtJbXlNel95OWhVd0UtUDVUOTR2cGFMTzY4d3p2ZTdoNDJSYXJqMTFIVC1vbnR6MHdIOV9sVWtlRkJkSWdMOERMQ3hCaDlhSXZCM3RHRldzTnpGdTE2cWxHeTBfODQxamI5VUFRSWROQ1lLOUozVmxRa2FYT3lBQlpuZU5SMHpQUGxkbFkyLXY1U2ZxVkZJbVpnUQ?oc=5",
+          "publisher": "Goal.com",
+          "kind": "article",
+          "snippet": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Goal.com",
+          "published": "Fri, 11 Sep 2026 06:58:43 GMT"
+        },
+        {
+          "title": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcFdNaXJ2YTBOUURFbWhiLUJBQXB5Um9kcVBWUmpiZ3VaWnlkNlBFNC00b2FvZElvMFdEZFAwMnJ1WnpDclV5eDE0RldsUUZhYTlmWlUzbjVrRmJKcG4wbGg5QUZlMXJNMkZmNUtlbXlZM05tbW5ucmZJSFIzVi1NSHItQjJyekdseXNFT0U2SEhxZlYtZVJjc0ZSd3NlcGUyVUl0Tms3V0l5NnlZbGhfSUZ0Vk1RS1o0LXNJaTFBcGJhRWtXalBhYndB?oc=5",
+          "publisher": "Goal.com",
+          "kind": "article",
+          "snippet": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Goal.com",
+          "published": "Fri, 11 Sep 2026 07:02:25 GMT"
+        },
+        {
+          "title": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYmR5dHNnbWdKZ0U3Q1NHS0tfOXExMEk0UFViUXJhWExQV2ZJQWlmbmxZM1FhbHRIaVp2dGFWeENNVkxtYnNWbnpQQWtHRkx2NXJEdnVaaXBTam95TUp0MDVtMFNZckhQaDM5UVdwZ055T0FoQ3lGcG5EQ2xpT095V1FnVWM?oc=5",
+          "publisher": "Yahoo Sports Canada",
+          "kind": "article",
+          "snippet": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Yahoo Sports Canada",
+          "published": "Fri, 11 Sep 2026 04:58:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "fpl-gw4-wildcard-active-2-111th-overall-world-aee492f9",
       "slug": "fpl-gw4-wildcard-active-2-111th-overall-world-aee492f9",
       "sport": "soccer",
@@ -14399,67 +14483,6 @@
       ]
     },
     {
-      "id": "he-ll-adapt-quicker-florian-wirtz-bradley-barcola-a6a71544",
-      "slug": "he-ll-adapt-quicker-florian-wirtz-bradley-barcola-a6a71544",
-      "sport": "soccer",
-      "headline": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
-      "blurb": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Yahoo Sports Canada",
-      "summary": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Yahoo Sports Canada Aggregated from Yahoo Sports Canada, LiveScore, Goal.com.",
-      "category": "trade",
-      "published": "2026-09-11T04:58:00Z",
-      "updated": "2026-09-11T07:09:50Z",
-      "players": [
-        {
-          "key": "wirtz",
-          "name": "Florian Wirtz",
-          "slug": "florian-wirtz",
-          "pos": "MID",
-          "team": "LIV"
-        },
-        {
-          "key": "bradley",
-          "name": "Conor Bradley",
-          "slug": "conor-bradley",
-          "pos": "DEF",
-          "team": "LIV"
-        }
-      ],
-      "sources": [
-        {
-          "title": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNSzQteUZlZl8zVm9UWEJBNDRzSWJyejRaMHJVaUp5Nkk2cUExbmRYMVZad1hjSjVUUnB1dDVBUnZSTXBmbEhhUk8wdHlzMVJwYk96NDJDbWgzTS01VUFpWTc3UEVaRnJOSUtvcENqSFJHOHVCcmhRYTlTdDJfTDRBMXQyVE5hNHRoSi1mVnJlU1JKaEEzMVZqVjU0U3dfbE1vOTdiUnhseDJhMnlialNqUDIyQmlBZjRYQjVuWl9TQkNMdDJtenFhb01EbHhyMDNseWplcUVtMjg4dUZLVFBac3ZwMkVJRkctTW5RNDZ6TUgwamFMRFRYVE51eHhXWWRyLWlHWWFiUWYwbC1OdFkzSm9jWQ?oc=5",
-          "publisher": "LiveScore",
-          "kind": "article",
-          "snippet": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool LiveScore",
-          "published": "Fri, 11 Sep 2026 07:09:50 GMT"
-        },
-        {
-          "title": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNWnl5ZGkwYTJzMzFKQkNaUG1DMjlTaGlIMlV1SEltdXJXM2RLMy1tTlpuT2VaLV9TQ2l0QWtJbXlNel95OWhVd0UtUDVUOTR2cGFMTzY4d3p2ZTdoNDJSYXJqMTFIVC1vbnR6MHdIOV9sVWtlRkJkSWdMOERMQ3hCaDlhSXZCM3RHRldzTnpGdTE2cWxHeTBfODQxamI5VUFRSWROQ1lLOUozVmxRa2FYT3lBQlpuZU5SMHpQUGxkbFkyLXY1U2ZxVkZJbVpnUQ?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Goal.com",
-          "published": "Fri, 11 Sep 2026 06:58:43 GMT"
-        },
-        {
-          "title": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQcFdNaXJ2YTBOUURFbWhiLUJBQXB5Um9kcVBWUmpiZ3VaWnlkNlBFNC00b2FvZElvMFdEZFAwMnJ1WnpDclV5eDE0RldsUUZhYTlmWlUzbjVrRmJKcG4wbGg5QUZlMXJNMkZmNUtlbXlZM05tbW5ucmZJSFIzVi1NSHItQjJyekdseXNFT0U2SEhxZlYtZVJjc0ZSd3NlcGUyVUl0Tms3V0l5NnlZbGhfSUZ0Vk1RS1o0LXNJaTFBcGJhRWtXalBhYndB?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Goal.com",
-          "published": "Fri, 11 Sep 2026 07:02:25 GMT"
-        },
-        {
-          "title": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYmR5dHNnbWdKZ0U3Q1NHS0tfOXExMEk0UFViUXJhWExQV2ZJQWlmbmxZM1FhbHRIaVp2dGFWeENNVkxtYnNWbnpQQWtHRkx2NXJEdnVaaXBTam95TUp0MDVtMFNZckhQaDM5UVdwZ055T0FoQ3lGcG5EQ2xpT095V1FnVWM?oc=5",
-          "publisher": "Yahoo Sports Canada",
-          "kind": "article",
-          "snippet": "‘He’ll adapt quicker than Florian Wirtz’ - Bradley Barcola ‘tailor-made’ for the Premier League after £123m transfer to Liverpool Yahoo Sports Canada",
-          "published": "Fri, 11 Sep 2026 04:58:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "who-record-champions-league-goalscorers-74e26587",
       "slug": "who-record-champions-league-goalscorers-74e26587",
       "sport": "soccer",
@@ -14772,6 +14795,80 @@
           "kind": "article",
           "snippet": "Arsenal learn Champions League final opponents as Bukayo Saka gets his ideal scenario Daily Star",
           "published": "Thu, 07 May 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "maresca-backs-anderson-kings-manchester-dig-derby-clash-50b1fc31",
+      "slug": "maresca-backs-anderson-kings-manchester-dig-derby-clash-50b1fc31",
+      "sport": "soccer",
+      "headline": "Maresca backs Anderson over ‘kings of Manchester’ dig before derby clash",
+      "blurb": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City…",
+      "summary": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City are the “ kings of Manchester ” as he prepares for his first derby in charge of the club. City travel to Old Trafford on Sunday seeking to continue their perfect start to life under Maresca and further prove Anderson’s point. The 23-year-old midfielder made his claim upon signing from Nottingham Forest for £116m in the summer and having from afar witnessed City win eight Premier League titles during the past 14 years, comp Board reading of Guardian Football.",
+      "category": "injury",
+      "published": "2026-09-11T11:02:07Z",
+      "updated": "2026-09-11T11:02:07Z",
+      "players": [
+        {
+          "key": "anderson",
+          "name": "Elliot Anderson",
+          "slug": "elliot-anderson",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "trafford",
+          "name": "James Trafford",
+          "slug": "james-trafford",
+          "pos": "GKP",
+          "team": "LEE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Maresca backs Anderson over ‘kings of Manchester’ dig before derby clash",
+          "url": "https://www.theguardian.com/football/2026/sep/11/maresca-backs-elliot-anderson-kings-of-manchester-derby",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City are the “ kings of Manchester ” as he prepares for his first derby in charge of the club. City travel to O",
+          "published": "Fri, 11 Sep 2026 11:02:07 GMT"
+        }
+      ]
+    },
+    {
+      "id": "fpl-daily-injury-part-i-11-09-26-e0d5ed44",
+      "slug": "fpl-daily-injury-part-i-11-09-26-e0d5ed44",
+      "sport": "soccer",
+      "headline": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless…",
+      "blurb": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless something goes wrong Summer signing Femi Azeez…",
+      "summary": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless something goes wrong Summer signing Femi Azeez is in training today and could be an option. Kaoru Mitoma could be availabl x.com Board reading of x.com.",
+      "category": "injury",
+      "published": "2026-09-11T10:28:31Z",
+      "updated": "2026-09-11T10:28:31Z",
+      "players": [
+        {
+          "key": "georginio",
+          "name": "Georginio Rutter",
+          "slug": "georginio-rutter",
+          "pos": "FWD",
+          "team": "BHA"
+        },
+        {
+          "key": "mitoma",
+          "name": "Mitoma Kaoru",
+          "slug": "mitoma-kaoru",
+          "pos": "MID",
+          "team": "BHA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless something goes wrong Summer signing Femi Azeez is in training today and could be an option. Kaoru Mitoma could be availabl",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41UGZRM3VFYld2aEpIRFVzS3RpYldTU3FjaXozUC1WR2RsaktaQ053R2h5VENpOUYxU3J2TDVvM3F0RWZCR1J5NXRMeExfbkVtYUFkaUo2Nk54MmhXVlVkelZHeTJEYUk?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless something goes wrong Summer signing Femi Azeez is in training today and could be an option. Kaoru Mitoma could be availabl x.com",
+          "published": "Fri, 11 Sep 2026 10:28:31 GMT"
         }
       ]
     },
@@ -15162,80 +15259,6 @@
       ]
     },
     {
-      "id": "maresca-backs-anderson-kings-manchester-dig-derby-clash-50b1fc31",
-      "slug": "maresca-backs-anderson-kings-manchester-dig-derby-clash-50b1fc31",
-      "sport": "soccer",
-      "headline": "Maresca backs Anderson over ‘kings of Manchester’ dig before derby clash",
-      "blurb": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City…",
-      "summary": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City are the “ kings of Manchester ” as he prepares for his first derby in charge of the club. City travel to Old Trafford on Sunday seeking to continue their perfect start to life under Maresca and further prove Anderson’s point. The 23-year-old midfielder made his claim upon signing from Nottingham Forest for £116m in the summer and having from afar witnessed City win eight Premier League titles during the past 14 years, comp Board reading of Guardian Football.",
-      "category": "injury",
-      "published": "2026-09-11T11:02:07Z",
-      "updated": "2026-09-11T11:02:07Z",
-      "players": [
-        {
-          "key": "anderson",
-          "name": "Elliot Anderson",
-          "slug": "elliot-anderson",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "trafford",
-          "name": "James Trafford",
-          "slug": "james-trafford",
-          "pos": "GKP",
-          "team": "LEE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Maresca backs Anderson over ‘kings of Manchester’ dig before derby clash",
-          "url": "https://www.theguardian.com/football/2026/sep/11/maresca-backs-elliot-anderson-kings-of-manchester-derby",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Maresca: ‘City dominant when Anderson grew up’ O’Reilly due to return but Doku not fit after injury Enzo Maresca has backed Elliot Anderson’s assessment that Manchester City are the “ kings of Manchester ” as he prepares for his first derby in charge of the club. City travel to O",
-          "published": "Fri, 11 Sep 2026 11:02:07 GMT"
-        }
-      ]
-    },
-    {
-      "id": "fpl-daily-injury-part-i-11-09-26-e0d5ed44",
-      "slug": "fpl-daily-injury-part-i-11-09-26-e0d5ed44",
-      "sport": "soccer",
-      "headline": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless…",
-      "blurb": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless something goes wrong Summer signing Femi Azeez…",
-      "summary": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless something goes wrong Summer signing Femi Azeez is in training today and could be an option. Kaoru Mitoma could be availabl x.com Board reading of x.com.",
-      "category": "injury",
-      "published": "2026-09-11T10:28:31Z",
-      "updated": "2026-09-11T10:28:31Z",
-      "players": [
-        {
-          "key": "georginio",
-          "name": "Georginio Rutter",
-          "slug": "georginio-rutter",
-          "pos": "FWD",
-          "team": "BHA"
-        },
-        {
-          "key": "mitoma",
-          "name": "Mitoma Kaoru",
-          "slug": "mitoma-kaoru",
-          "pos": "MID",
-          "team": "BHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless something goes wrong Summer signing Femi Azeez is in training today and could be an option. Kaoru Mitoma could be availabl",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41UGZRM3VFYld2aEpIRFVzS3RpYldTU3FjaXozUC1WR2RsaktaQ053R2h5VENpOUYxU3J2TDVvM3F0RWZCR1J5NXRMeExfbkVtYUFkaUo2Nk54MmhXVlVkelZHeTJEYUk?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "FPL Daily Injury Updates PART I (11/09/26) : 🕊 Brighton - Georginio Rutter should be close, he should be available though, unless something goes wrong Summer signing Femi Azeez is in training today and could be an option. Kaoru Mitoma could be availabl x.com",
-          "published": "Fri, 11 Sep 2026 10:28:31 GMT"
-        }
-      ]
-    },
-    {
       "id": "bruno-fernandes-mun-injury-forced-my-hand-wildcard-312d970d",
       "slug": "bruno-fernandes-mun-injury-forced-my-hand-wildcard-312d970d",
       "sport": "soccer",
@@ -15269,6 +15292,68 @@
           "kind": "x",
           "snippet": "Bruno Fernandes MUN injury has forced my hand to Wildcard in GW4 late missing on all the price rises. It is well. We are called Elite FPL managers for some good analytical processes, skills and decisions. #FPL x.com",
           "published": "Fri, 11 Sep 2026 09:30:47 GMT"
+        }
+      ]
+    },
+    {
+      "id": "delay-meals-mikel-arteta-reveals-maverick-arsenal-methods-9ba9e484",
+      "slug": "delay-meals-mikel-arteta-reveals-maverick-arsenal-methods-9ba9e484",
+      "sport": "soccer",
+      "headline": "‘Delay the meals’: Mikel Arteta reveals latest maverick Arsenal methods",
+      "blurb": "Mikel Arteta: I sabotage Arsenal players so they’re ready for anything The Times",
+      "summary": "Kai Havertz: Mikel Arteta: I sabotage Arsenal players so they’re ready for anything The Times Manager wants players to cope with things going wrong Other tactics include making dressing room even hotter Mikel Arteta has revealed that he likes to set players challenges, such as delaying their meals before matches and making the dressing room hotter, to ensure they are full Havertz is always 10 SECONDS AHEAD! Aggregated from The Times, Guardian Football, YouTube, BBC.",
+      "category": "coach",
+      "published": "2026-02-20T08:00:00Z",
+      "updated": "2026-09-11T13:17:30Z",
+      "players": [
+        {
+          "key": "havertz",
+          "name": "Kai Havertz",
+          "slug": "kai-havertz",
+          "pos": "FWD",
+          "team": "ARS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "‘Delay the meals’: Mikel Arteta reveals latest maverick Arsenal methods",
+          "url": "https://www.theguardian.com/football/2026/sep/11/mikel-arteta-maverick-arsenal-methods-player-challenges-delayed-meals",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Manager wants players to cope with things going wrong Other tactics include making dressing room even hotter Mikel Arteta has revealed that he likes to set players challenges, such as delaying their meals before matches and making the dressing room hotter, to ensure they are full",
+          "published": "Fri, 11 Sep 2026 10:04:37 GMT"
+        },
+        {
+          "title": "Havertz is always 10 SECONDS AHEAD! | Mikel Arteta | Sunderland v Arsenal",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSUXZ6dHRTcGQwTHJEdUFyVlRNbG5nQUhRTzNqNU5PQy1uWnVzRE1jd2FvX2hWOEZTQWFKOVVUSUhONndldDlxR1N4Ym9PVFBSNTBYVnR3?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Havertz is always 10 SECONDS AHEAD! | Mikel Arteta | Sunderland v Arsenal YouTube",
+          "published": "Fri, 11 Sep 2026 08:51:52 GMT"
+        },
+        {
+          "title": "Mikel Arteta press conference: Spurs v Arsenal",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wQVdQZmM0QzEybl84alRCWlpCMEYzbHRBSmc5dFR6R2JWV3NwcUhBdmpJYTdXaGhObWJZWUk3Z3BROEx1eVlZd1p4ZVJOWWhLLUpGc0pyN1VPTllOU1JQN1ljazB1WnM?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Mikel Arteta press conference: Spurs v Arsenal BBC",
+          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Mikel Arteta press conference: Crystal Palace vs Arsenal",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2ejZ0cldES2RHMVF3OVBwQ0tXN3kxdkI3MzZMT0lEYjZmRy1KMXFobGR5ZDduaXNtc0lBUEJ0bkpMM0VreTNhU2VVc1V4WDREbFU1Qk1oU1p6MG01N1FPODBmWVQ1Tk0?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Mikel Arteta press conference: Crystal Palace vs Arsenal BBC",
+          "published": "Thu, 21 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mikel Arteta: I sabotage Arsenal players so they’re ready for anything",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMy1hbm1CMWdqTVRfY3NYeDI4OGZpQ2Z1N09vVHhuTms1TEdjQWJBZ1VTOXFsbGltMWlRT1VtZk9sV0lJRUtaMXdoT2pCVkpvV0tYazZoQnk2VDl3Y29uRGdLX3M0cWJjWnYzQU1MbXRjbnJyS0x2S00yQXNlRnFYYnVMTW1fSk9zSjhqdEhKZ3R4VVRFTEhfTUc4eGIwRUlXWHdVTkFiNi1fZlk0RkpRRnFacw?oc=5",
+          "publisher": "The Times",
+          "kind": "article",
+          "snippet": "Mikel Arteta: I sabotage Arsenal players so they’re ready for anything The Times",
+          "published": "Fri, 11 Sep 2026 13:17:30 GMT"
         }
       ]
     },
@@ -15887,64 +15972,62 @@
       ]
     },
     {
-      "id": "delay-meals-mikel-arteta-reveals-maverick-arsenal-methods-9ba9e484",
-      "slug": "delay-meals-mikel-arteta-reveals-maverick-arsenal-methods-9ba9e484",
+      "id": "granit-xhaka-reveals-why-he-snubbed-chelsea-transfer-f607140f",
+      "slug": "granit-xhaka-reveals-why-he-snubbed-chelsea-transfer-f607140f",
       "sport": "soccer",
-      "headline": "‘Delay the meals’: Mikel Arteta reveals latest maverick Arsenal methods",
-      "blurb": "Mikel Arteta: I sabotage Arsenal players so they’re ready for anything The Times",
-      "summary": "Kai Havertz: Mikel Arteta: I sabotage Arsenal players so they’re ready for anything The Times Manager wants players to cope with things going wrong Other tactics include making dressing room even hotter Mikel Arteta has revealed that he likes to set players challenges, such as delaying their meals before matches and making the dressing room hotter, to ensure they are full Havertz is always 10 SECONDS AHEAD! Aggregated from The Times, Guardian Football, YouTube, BBC.",
-      "category": "coach",
-      "published": "2026-02-20T08:00:00Z",
-      "updated": "2026-09-11T13:17:30Z",
+      "headline": "Granit Xhaka reveals why he snubbed Chelsea transfer to stay at Sunderland",
+      "blurb": "Granit Xhaka reveals why he snubbed Chelsea transfer to stay at Sunderland Goal.com",
+      "summary": "Granit Xhaka reveals why he snubbed Chelsea transfer to stay at Sunderland Goal.com Board reading of Goal.com.",
+      "category": "trade",
+      "published": "2026-09-12T08:08:04Z",
+      "updated": "2026-09-12T08:08:04Z",
       "players": [
         {
-          "key": "havertz",
-          "name": "Kai Havertz",
-          "slug": "kai-havertz",
-          "pos": "FWD",
-          "team": "ARS"
+          "key": "xhaka",
+          "name": "Granit Xhaka",
+          "slug": "granit-xhaka",
+          "pos": "MID",
+          "team": "SUN"
         }
       ],
       "sources": [
         {
-          "title": "‘Delay the meals’: Mikel Arteta reveals latest maverick Arsenal methods",
-          "url": "https://www.theguardian.com/football/2026/sep/11/mikel-arteta-maverick-arsenal-methods-player-challenges-delayed-meals",
-          "publisher": "Guardian Football",
+          "title": "Granit Xhaka reveals why he snubbed Chelsea transfer to stay at Sunderland",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUmNXWHJmX1g0VkZMdC1nNVY1TmtjejQwZHdyMU9TWXRsVjNkaVRPbVhUXzFwRW54LXE0NlJCaTJqVWRJaUk5WHgtMWN6VjZONVRYR2ZrVndtSHNNaWZydmRKVWtQYVdIb2pBdC1kUkZ1MEszZ0NvQnRES25Iay03aDNoTy0wU3F0LWdrOWQzUHM3Z1BJR1p2ZQ?oc=5",
+          "publisher": "Goal.com",
           "kind": "article",
-          "snippet": "Manager wants players to cope with things going wrong Other tactics include making dressing room even hotter Mikel Arteta has revealed that he likes to set players challenges, such as delaying their meals before matches and making the dressing room hotter, to ensure they are full",
-          "published": "Fri, 11 Sep 2026 10:04:37 GMT"
-        },
+          "snippet": "Granit Xhaka reveals why he snubbed Chelsea transfer to stay at Sunderland Goal.com",
+          "published": "Sat, 12 Sep 2026 08:08:04 GMT"
+        }
+      ]
+    },
+    {
+      "id": "signed-instead-rashford-gordon-proving-worth-barca-84c2956a",
+      "slug": "signed-instead-rashford-gordon-proving-worth-barca-84c2956a",
+      "sport": "soccer",
+      "headline": "Signed instead of Rashford, Gordon is proving worth at Barca",
+      "blurb": "Anthony Gordon's £70m move to Barcelona was questioned by some - but the England winger is already proving his worth for the free-scoring Spanish giants.",
+      "summary": "Jaidon Anthony: Anthony Gordon's £70m move to Barcelona was questioned by some - but the England winger is already proving his worth for the free-scoring Spanish giants. Board reading of BBC Football.",
+      "category": "roster",
+      "published": "2026-09-12T06:14:51Z",
+      "updated": "2026-09-12T06:14:51Z",
+      "players": [
         {
-          "title": "Havertz is always 10 SECONDS AHEAD! | Mikel Arteta | Sunderland v Arsenal",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBSUXZ6dHRTcGQwTHJEdUFyVlRNbG5nQUhRTzNqNU5PQy1uWnVzRE1jd2FvX2hWOEZTQWFKOVVUSUhONndldDlxR1N4Ym9PVFBSNTBYVnR3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Havertz is always 10 SECONDS AHEAD! | Mikel Arteta | Sunderland v Arsenal YouTube",
-          "published": "Fri, 11 Sep 2026 08:51:52 GMT"
-        },
+          "key": "anthony",
+          "name": "Jaidon Anthony",
+          "slug": "jaidon-anthony",
+          "pos": "MID",
+          "team": "BRE"
+        }
+      ],
+      "sources": [
         {
-          "title": "Mikel Arteta press conference: Spurs v Arsenal",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1wQVdQZmM0QzEybl84alRCWlpCMEYzbHRBSmc5dFR6R2JWV3NwcUhBdmpJYTdXaGhObWJZWUk3Z3BROEx1eVlZd1p4ZVJOWWhLLUpGc0pyN1VPTllOU1JQN1ljazB1WnM?oc=5",
-          "publisher": "BBC",
+          "title": "Signed instead of Rashford, Gordon is proving worth at Barca",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cgk5n3xpkv2o?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
           "kind": "article",
-          "snippet": "Mikel Arteta press conference: Spurs v Arsenal BBC",
-          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Mikel Arteta press conference: Crystal Palace vs Arsenal",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB2ejZ0cldES2RHMVF3OVBwQ0tXN3kxdkI3MzZMT0lEYjZmRy1KMXFobGR5ZDduaXNtc0lBUEJ0bkpMM0VreTNhU2VVc1V4WDREbFU1Qk1oU1p6MG01N1FPODBmWVQ1Tk0?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Mikel Arteta press conference: Crystal Palace vs Arsenal BBC",
-          "published": "Thu, 21 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Mikel Arteta: I sabotage Arsenal players so they’re ready for anything",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMy1hbm1CMWdqTVRfY3NYeDI4OGZpQ2Z1N09vVHhuTms1TEdjQWJBZ1VTOXFsbGltMWlRT1VtZk9sV0lJRUtaMXdoT2pCVkpvV0tYazZoQnk2VDl3Y29uRGdLX3M0cWJjWnYzQU1MbXRjbnJyS0x2S00yQXNlRnFYYnVMTW1fSk9zSjhqdEhKZ3R4VVRFTEhfTUc4eGIwRUlXWHdVTkFiNi1fZlk0RkpRRnFacw?oc=5",
-          "publisher": "The Times",
-          "kind": "article",
-          "snippet": "Mikel Arteta: I sabotage Arsenal players so they’re ready for anything The Times",
-          "published": "Fri, 11 Sep 2026 13:17:30 GMT"
+          "snippet": "Anthony Gordon's £70m move to Barcelona was questioned by some - but the England winger is already proving his worth for the free-scoring Spanish giants.",
+          "published": "Sat, 12 Sep 2026 06:14:51 GMT"
         }
       ]
     },
@@ -15953,8 +16036,8 @@
       "slug": "liverpool-andoni-iraola-premier-league-transfer-alisson-alexis-027d7b3f",
       "sport": "soccer",
       "headline": "Liverpool, Andoni Iraola | Premier League transfer news | Alisson, Alexis Mac Allister rumours | What he said",
-      "blurb": "Liverpool transfer news: Andoni Iraola wants Alexis Mac Allister and Alisson to stay at Anfield bbc.com",
-      "summary": "Liverpool transfer news: Andoni Iraola wants Alexis Mac Allister and Alisson to stay at Anfield bbc.com 'Very sad' - Mac Allister drops Liverpool transfer bombshell after contract snub talkSPORT Transfer Rumors: Liverpool Agree Barcola Deal; Man City Chase Mac Allister Sports Illustrated Aggregated from bbc.com, talkSPORT, Sports Illustrated, football360.com.au, footballtoday.com and 20 more.",
+      "blurb": "‘Very sad’ - Alexis Mac Allister drops Liverpool transfer bombshell after contract snub talkSPORT",
+      "summary": "‘Very sad’ - Alexis Mac Allister drops Liverpool transfer bombshell after contract snub talkSPORT 'Very sad' - Mac Allister drops Liverpool transfer bombshell after contract snub talkSPORT Transfer Rumors: Liverpool Agree Barcola Deal; Man City Chase Mac Allister Sports Illustrated Aggregated from talkSPORT, Sports Illustrated, football360.com.au, footballtoday.com, FourFourTwo and 20 more.",
       "category": "injury",
       "published": "2023-05-28T07:00:00Z",
       "updated": "2026-09-10T11:12:56Z",
@@ -16306,36 +16389,6 @@
       ]
     },
     {
-      "id": "signed-instead-rashford-gordon-proving-worth-barca-84c2956a",
-      "slug": "signed-instead-rashford-gordon-proving-worth-barca-84c2956a",
-      "sport": "soccer",
-      "headline": "Signed instead of Rashford, Gordon is proving worth at Barca",
-      "blurb": "Anthony Gordon's £70m move to Barcelona was questioned by some - but the England winger is already proving his worth for the free-scoring Spanish giants.",
-      "summary": "Jaidon Anthony: Anthony Gordon's £70m move to Barcelona was questioned by some - but the England winger is already proving his worth for the free-scoring Spanish giants. Board reading of BBC Football.",
-      "category": "roster",
-      "published": "2026-09-12T06:14:51Z",
-      "updated": "2026-09-12T06:14:51Z",
-      "players": [
-        {
-          "key": "anthony",
-          "name": "Jaidon Anthony",
-          "slug": "jaidon-anthony",
-          "pos": "MID",
-          "team": "BRE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Signed instead of Rashford, Gordon is proving worth at Barca",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cgk5n3xpkv2o?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Anthony Gordon's £70m move to Barcelona was questioned by some - but the England winger is already proving his worth for the free-scoring Spanish giants.",
-          "published": "Sat, 12 Sep 2026 06:14:51 GMT"
-        }
-      ]
-    },
-    {
       "id": "manzambi-madjo-watkins-aston-villa-injury-fpl-gameweek-e608aa6c",
       "slug": "manzambi-madjo-watkins-aston-villa-injury-fpl-gameweek-e608aa6c",
       "sport": "soccer",
@@ -16544,6 +16597,82 @@
           "kind": "article",
           "snippet": "=+!$*! The Uprising 2026- Dailymotion (2026) FullMovie Online Cal Poly Pomona",
           "published": "Fri, 11 Sep 2026 13:18:54 GMT"
+        }
+      ]
+    },
+    {
+      "id": "fpl-injury-shaw-gakpo-o-reilly-dedic-timber-9aff8fd9",
+      "slug": "fpl-injury-shaw-gakpo-o-reilly-dedic-timber-9aff8fd9",
+      "sport": "soccer",
+      "headline": "FPL injury news: Shaw, Gakpo, O'Reilly, Dedic, Timber, Garner latest for GW4",
+      "blurb": "KEY INJURY ROUND UP FOR FPL GAMEWEEK 4 🔴 Barcola/Gakpo Latest ⛴️ O’Reilly Latest 🛡️ Timber Return?",
+      "summary": "James Garner: KEY INJURY ROUND UP FOR FPL GAMEWEEK 4 🔴 Barcola/Gakpo Latest ⛴️ O’Reilly Latest 🛡️ Timber Return? ⚫️ Dedic Latest Click link below for full summary of FPL relevant injuries. 👇 👇 https://t.co/nEVWTMdT6I x.com Aggregated from x.com, AOL.co.uk.",
+      "category": "injury",
+      "published": "2026-09-11T10:13:27Z",
+      "updated": "2026-09-11T15:20:49Z",
+      "players": [
+        {
+          "key": "garner",
+          "name": "James Garner",
+          "slug": "james-garner",
+          "pos": "MID",
+          "team": "EVE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "FPL injury news: Shaw, Gakpo, O'Reilly, Dedic, Timber, Garner latest for GW4",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5CZFZldHRVcEZ3UkFUN21sMThCNk52dV9tQl9sTzU5R1V1RFhBUkNTZkZTcFRDclVKZFFyMW8wZnVSN1ViMWhEbUpHSFdPR0MyNFZ6M2tyN2h6VmhUM2docVg1WHhIVGFkVmo0TVU5YUY0NWpRbm9jYjlCT2U?oc=5",
+          "publisher": "AOL.co.uk",
+          "kind": "article",
+          "snippet": "FPL injury news: Shaw, Gakpo, O'Reilly, Dedic, Timber, Garner latest for GW4 AOL.co.uk",
+          "published": "Fri, 11 Sep 2026 10:13:27 GMT"
+        },
+        {
+          "title": "KEY INJURY ROUND UP FOR FPL GAMEWEEK 4 🔴 Barcola/Gakpo Latest ⛴️ O’Reilly Latest 🛡️ Timber Return? 🔴 Shaw Injury? ⚫️ Dedic Latest Click link below for full summary of FPL relevant injuries. 👇 👇 https://t.co/nEVWTMdT6I",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIenBmVjl4RnBBYlEybHhjOWwtU0JqT2FlcUg2RkhpejFnSXdyOW9OYWtyTkJ1T19Qd1N2WEdpUXBBOERpNHpySEduQmVJa214NmhBSC1xZnZ1Z3haUTE4LVBR?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "KEY INJURY ROUND UP FOR FPL GAMEWEEK 4 🔴 Barcola/Gakpo Latest ⛴️ O’Reilly Latest 🛡️ Timber Return? 🔴 Shaw Injury? ⚫️ Dedic Latest Click link below for full summary of FPL relevant injuries. 👇 👇 https://t.co/nEVWTMdT6I x.com",
+          "published": "Fri, 11 Sep 2026 15:20:49 GMT"
+        }
+      ]
+    },
+    {
+      "id": "lewis-hall-agrees-long-term-newcastle-deal-chelsea-2f18d5c3",
+      "slug": "lewis-hall-agrees-long-term-newcastle-deal-chelsea-2f18d5c3",
+      "sport": "soccer",
+      "headline": "Lewis Hall agrees long-term Newcastle deal, Chelsea buy-out close: football news",
+      "blurb": "Manchester United bans 685 fan accounts after a ticket touting investigation and insists innocent fans have not been punished.",
+      "summary": "Lewis Hall: Manchester United bans 685 fan accounts after a ticket touting investigation and insists innocent fans have not been punished. ⚽️ News and updates before the weekend’s football action ⚽️ Premier League: 10 things to watch out for | Mail Tom The French Football Federation’s president, Philippe Diallo, said Gianni Infantino had “seriously damaged the image and the unity of football” as he announced the end Aggregated from BBC Football, Guardian Football.",
+      "category": "injury",
+      "published": "2026-09-11T09:02:36Z",
+      "updated": "2026-09-11T15:09:39Z",
+      "players": [
+        {
+          "key": "hall",
+          "name": "Lewis Hall",
+          "slug": "lewis-hall",
+          "pos": "DEF",
+          "team": "NEW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lewis Hall agrees long-term Newcastle deal, Chelsea buy-out close: football news - live",
+          "url": "https://www.theguardian.com/football/live/2026/sep/11/football-news-live-champions-league-review-weekend-preview",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "⚽️ News and updates before the weekend’s football action ⚽️ Premier League: 10 things to watch out for | Mail Tom The French Football Federation’s president, Philippe Diallo, said Gianni Infantino had “seriously damaged the image and the unity of football” as he announced the end",
+          "published": "Fri, 11 Sep 2026 09:02:36 GMT"
+        },
+        {
+          "title": "Man Utd ban 685 fan accounts after ticket touting probe",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c1j4zydzk2zo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "Manchester United bans 685 fan accounts after a ticket touting investigation and insists innocent fans have not been punished.",
+          "published": "Fri, 11 Sep 2026 11:33:17 GMT"
         }
       ]
     },
@@ -16782,82 +16911,6 @@
           "kind": "article",
           "snippet": "Player Ratings: Ollie Watkins shines as Aston Villa are held by Burnley EPL Index",
           "published": "Sun, 10 May 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "fpl-injury-shaw-gakpo-o-reilly-dedic-timber-9aff8fd9",
-      "slug": "fpl-injury-shaw-gakpo-o-reilly-dedic-timber-9aff8fd9",
-      "sport": "soccer",
-      "headline": "FPL injury news: Shaw, Gakpo, O'Reilly, Dedic, Timber, Garner latest for GW4",
-      "blurb": "KEY INJURY ROUND UP FOR FPL GAMEWEEK 4 🔴 Barcola/Gakpo Latest ⛴️ O’Reilly Latest 🛡️ Timber Return?",
-      "summary": "James Garner: KEY INJURY ROUND UP FOR FPL GAMEWEEK 4 🔴 Barcola/Gakpo Latest ⛴️ O’Reilly Latest 🛡️ Timber Return? ⚫️ Dedic Latest Click link below for full summary of FPL relevant injuries. 👇 👇 https://t.co/nEVWTMdT6I x.com Aggregated from x.com, AOL.co.uk.",
-      "category": "injury",
-      "published": "2026-09-11T10:13:27Z",
-      "updated": "2026-09-11T15:20:49Z",
-      "players": [
-        {
-          "key": "garner",
-          "name": "James Garner",
-          "slug": "james-garner",
-          "pos": "MID",
-          "team": "EVE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "FPL injury news: Shaw, Gakpo, O'Reilly, Dedic, Timber, Garner latest for GW4",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5CZFZldHRVcEZ3UkFUN21sMThCNk52dV9tQl9sTzU5R1V1RFhBUkNTZkZTcFRDclVKZFFyMW8wZnVSN1ViMWhEbUpHSFdPR0MyNFZ6M2tyN2h6VmhUM2docVg1WHhIVGFkVmo0TVU5YUY0NWpRbm9jYjlCT2U?oc=5",
-          "publisher": "AOL.co.uk",
-          "kind": "article",
-          "snippet": "FPL injury news: Shaw, Gakpo, O'Reilly, Dedic, Timber, Garner latest for GW4 AOL.co.uk",
-          "published": "Fri, 11 Sep 2026 10:13:27 GMT"
-        },
-        {
-          "title": "KEY INJURY ROUND UP FOR FPL GAMEWEEK 4 🔴 Barcola/Gakpo Latest ⛴️ O’Reilly Latest 🛡️ Timber Return? 🔴 Shaw Injury? ⚫️ Dedic Latest Click link below for full summary of FPL relevant injuries. 👇 👇 https://t.co/nEVWTMdT6I",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBIenBmVjl4RnBBYlEybHhjOWwtU0JqT2FlcUg2RkhpejFnSXdyOW9OYWtyTkJ1T19Qd1N2WEdpUXBBOERpNHpySEduQmVJa214NmhBSC1xZnZ1Z3haUTE4LVBR?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "KEY INJURY ROUND UP FOR FPL GAMEWEEK 4 🔴 Barcola/Gakpo Latest ⛴️ O’Reilly Latest 🛡️ Timber Return? 🔴 Shaw Injury? ⚫️ Dedic Latest Click link below for full summary of FPL relevant injuries. 👇 👇 https://t.co/nEVWTMdT6I x.com",
-          "published": "Fri, 11 Sep 2026 15:20:49 GMT"
-        }
-      ]
-    },
-    {
-      "id": "lewis-hall-agrees-long-term-newcastle-deal-chelsea-2f18d5c3",
-      "slug": "lewis-hall-agrees-long-term-newcastle-deal-chelsea-2f18d5c3",
-      "sport": "soccer",
-      "headline": "Lewis Hall agrees long-term Newcastle deal, Chelsea buy-out close: football news",
-      "blurb": "Manchester United bans 685 fan accounts after a ticket touting investigation and insists innocent fans have not been punished.",
-      "summary": "Lewis Hall: Manchester United bans 685 fan accounts after a ticket touting investigation and insists innocent fans have not been punished. ⚽️ News and updates before the weekend’s football action ⚽️ Premier League: 10 things to watch out for | Mail Tom The French Football Federation’s president, Philippe Diallo, said Gianni Infantino had “seriously damaged the image and the unity of football” as he announced the end Aggregated from BBC Football, Guardian Football.",
-      "category": "injury",
-      "published": "2026-09-11T09:02:36Z",
-      "updated": "2026-09-11T15:09:39Z",
-      "players": [
-        {
-          "key": "hall",
-          "name": "Lewis Hall",
-          "slug": "lewis-hall",
-          "pos": "DEF",
-          "team": "NEW"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Lewis Hall agrees long-term Newcastle deal, Chelsea buy-out close: football news - live",
-          "url": "https://www.theguardian.com/football/live/2026/sep/11/football-news-live-champions-league-review-weekend-preview",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "⚽️ News and updates before the weekend’s football action ⚽️ Premier League: 10 things to watch out for | Mail Tom The French Football Federation’s president, Philippe Diallo, said Gianni Infantino had “seriously damaged the image and the unity of football” as he announced the end",
-          "published": "Fri, 11 Sep 2026 09:02:36 GMT"
-        },
-        {
-          "title": "Man Utd ban 685 fan accounts after ticket touting probe",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c1j4zydzk2zo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Manchester United bans 685 fan accounts after a ticket touting investigation and insists innocent fans have not been punished.",
-          "published": "Fri, 11 Sep 2026 11:33:17 GMT"
         }
       ]
     },
@@ -17254,6 +17307,36 @@
           "kind": "video",
           "snippet": "Ekitike ‘Back In January’? | Gakpo & Barcola Injury Updates | Press Conference Reaction YouTube",
           "published": "Fri, 11 Sep 2026 13:18:32 GMT"
+        }
+      ]
+    },
+    {
+      "id": "all-change-maresca-data-behind-manchester-city-s-ad7b04a2",
+      "slug": "all-change-maresca-data-behind-manchester-city-s-ad7b04a2",
+      "sport": "soccer",
+      "headline": "All change for Maresca: the data behind Manchester City’s rapid player turnover",
+      "blurb": "Squad was a model of stability under Guardiola but many of the group the new coach oversees are recent recruits Manchester City have experienced a level of player turnover…",
+      "summary": "James Trafford: Squad was a model of stability under Guardiola but many of the group the new coach oversees are recent recruits Manchester City have experienced a level of player turnover unthinkable in the Pep Guardiola era. Where Arne Slot benefited in his first Liverpool season by retaining the squad Jürgen Klopp bequeathed, Enzo Maresca must oversee the evolution of City while winning every week. Relying on relatively new players has not cost them Premier League points yet, but there could be reasons for concern before their derby at Old Trafford on Sunday. Board reading of Guardian Football.",
+      "category": "coach",
+      "published": "2026-09-12T07:00:27Z",
+      "updated": "2026-09-12T07:00:27Z",
+      "players": [
+        {
+          "key": "trafford",
+          "name": "James Trafford",
+          "slug": "james-trafford",
+          "pos": "GKP",
+          "team": "LEE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "All change for Maresca: the data behind Manchester City’s rapid player turnover",
+          "url": "https://www.theguardian.com/football/2026/sep/12/all-change-for-maresca-the-data-behind-manchester-citys-rapid-player-turnover",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Squad was a model of stability under Guardiola but many of the group the new coach oversees are recent recruits Manchester City have experienced a level of player turnover unthinkable in the Pep Guardiola era. Where Arne Slot benefited in his first Liverpool season by retaining t",
+          "published": "Sat, 12 Sep 2026 07:00:27 GMT"
         }
       ]
     },
@@ -17810,74 +17893,6 @@
           "kind": "article",
           "snippet": "[WATCHLIVE]GAME] Knights vs Rabbitohs NRL Ｌｉｖｅ 𝓢𝓽𝓻𝓮𝓪𝓶𝓼 𝓕𝓻𝓮𝓮 ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 11 September 2026 cpp.edu",
           "published": "Fri, 11 Sep 2026 09:55:31 GMT"
-        }
-      ]
-    },
-    {
-      "id": "all-change-maresca-data-behind-manchester-city-s-ad7b04a2",
-      "slug": "all-change-maresca-data-behind-manchester-city-s-ad7b04a2",
-      "sport": "soccer",
-      "headline": "All change for Maresca: the data behind Manchester City’s rapid player turnover",
-      "blurb": "Squad was a model of stability under Guardiola but many of the group the new coach oversees are recent recruits Manchester City have experienced a level of player turnover…",
-      "summary": "James Trafford: Squad was a model of stability under Guardiola but many of the group the new coach oversees are recent recruits Manchester City have experienced a level of player turnover unthinkable in the Pep Guardiola era. Where Arne Slot benefited in his first Liverpool season by retaining the squad Jürgen Klopp bequeathed, Enzo Maresca must oversee the evolution of City while winning every week. Relying on relatively new players has not cost them Premier League points yet, but there could be reasons for concern before their derby at Old Trafford on Sunday. Board reading of Guardian Football.",
-      "category": "coach",
-      "published": "2026-09-12T07:00:27Z",
-      "updated": "2026-09-12T07:00:27Z",
-      "players": [
-        {
-          "key": "trafford",
-          "name": "James Trafford",
-          "slug": "james-trafford",
-          "pos": "GKP",
-          "team": "LEE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "All change for Maresca: the data behind Manchester City’s rapid player turnover",
-          "url": "https://www.theguardian.com/football/2026/sep/12/all-change-for-maresca-the-data-behind-manchester-citys-rapid-player-turnover",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Squad was a model of stability under Guardiola but many of the group the new coach oversees are recent recruits Manchester City have experienced a level of player turnover unthinkable in the Pep Guardiola era. Where Arne Slot benefited in his first Liverpool season by retaining t",
-          "published": "Sat, 12 Sep 2026 07:00:27 GMT"
-        }
-      ]
-    },
-    {
-      "id": "kiernan-dewsbury-hall-i-ve-seen-all-meltdowns-37abb999",
-      "slug": "kiernan-dewsbury-hall-i-ve-seen-all-meltdowns-37abb999",
-      "sport": "soccer",
-      "headline": "Kiernan Dewsbury-Hall: ‘I’ve seen all of the meltdowns and it annoyed me’",
-      "blurb": "Midfielder on rising above the negativity after Everton’s struggles in the transfer window, becoming a leader in the dressing room and a possible England call-up Transfer…",
-      "summary": "Midfielder on rising above the negativity after Everton’s struggles in the transfer window, becoming a leader in the dressing room and a possible England call-up Transfer deadline day may be “exciting for everyone,” as Kiernan Dewsbury-Hall puts it, but his experience of that transfer deadline day at Everton hauled him through the same gamut of emotions as every Evertonian. Excitement turned to bewilderment before the conclusion of the window left the midfielder exasperated, but for entirely different reasons to a fanbase left questioning the club’s direction under The Friedkin Group. Kiernan Dewsbury-Hall: Everton fans’ transfer meltdowns annoyed me The Telegraph Aggregated from Guardian Football, The Telegraph.",
-      "category": "trade",
-      "published": "2026-09-11T16:00:00Z",
-      "updated": "2026-09-11T16:00:09Z",
-      "players": [
-        {
-          "key": "dewsbury hall",
-          "name": "Kiernan Dewsbury-Hall",
-          "slug": "kiernan-dewsbury-hall",
-          "pos": "MID",
-          "team": "EVE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Kiernan Dewsbury-Hall: ‘I’ve seen all of the meltdowns and it annoyed me’",
-          "url": "https://www.theguardian.com/football/2026/sep/11/kiernan-dewsbury-hall-ive-seen-all-of-the-meltdowns-and-it-annoyed-me",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Midfielder on rising above the negativity after Everton’s struggles in the transfer window, becoming a leader in the dressing room and a possible England call-up Transfer deadline day may be “exciting for everyone,” as Kiernan Dewsbury-Hall puts it, but his experience of that tra",
-          "published": "Fri, 11 Sep 2026 16:00:09 GMT"
-        },
-        {
-          "title": "Kiernan Dewsbury-Hall: Everton fans’ transfer meltdowns annoyed me",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbWVGWnJBdFlMU1Q1N1pxU3kxTUVtSWNUdXNJb3FZMVMwcl94cURUaHFka3ZxZEJrMmhyWU8ta3ZKSlVFSWxPQlJTcWoxNkc1XzVFZ2h2WC1ydzhmbXNBLWM0Wk90U1ZyLU9uWXgzQlY4SjFjNk9fSVlkYS1BWWRJaW9Ccl90b09ESmNUdVNIc1Bua0tnY2ZON0ZQNmsyYVNhRHdaR3ZVNA?oc=5",
-          "publisher": "The Telegraph",
-          "kind": "article",
-          "snippet": "Kiernan Dewsbury-Hall: Everton fans’ transfer meltdowns annoyed me The Telegraph",
-          "published": "Fri, 11 Sep 2026 16:00:00 GMT"
         }
       ]
     }
