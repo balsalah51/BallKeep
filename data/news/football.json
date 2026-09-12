@@ -1,7 +1,7 @@
 {
   "sport": "football",
-  "updated": "2026-09-12T01:23:22Z",
-  "fresh": 168,
+  "updated": "2026-09-12T02:25:36Z",
+  "fresh": 143,
   "stories": [
     {
       "id": "injury-1-implications-tua-tagovailoa-oblique-day-day-626da33d",
@@ -686,16 +686,153 @@
       ]
     },
     {
+      "id": "nfc-harrison-smith-contract-d-andre-swift-roschon-da53caf6",
+      "slug": "nfc-harrison-smith-contract-d-andre-swift-roschon-da53caf6",
+      "sport": "football",
+      "headline": "NFC Notes: Justin Jefferson, Harrison Smith, Ozzy Trapilo, Bears, Packers, Vikings",
+      "blurb": "NFC Notes: Caleb Williams, Justin Jefferson, Bears, Eagles, Vikings NFLTradeRumors.co",
+      "summary": "NFC Notes: Caleb Williams, Justin Jefferson, Bears, Eagles, Vikings NFLTradeRumors.co NFC Notes: Harrison Smith Contract, D’Andre Swift, Roschon Johnson, Bears, Vikings NFLTradeRumors.co NFC Notes: Harrison Smith, Jared Goff, Bears, Lions, Vikings NFLTradeRumors.co Aggregated from NFLTradeRumors.co, ProFootball Talk on NBC Sports, PFT feed, heavy.com.",
+      "category": "roster",
+      "published": "2026-01-06T08:00:00Z",
+      "updated": "2026-09-12T00:30:17Z",
+      "players": [
+        {
+          "key": "justin jefferson",
+          "name": "Justin Jefferson",
+          "slug": "justin-jefferson",
+          "pos": "WR",
+          "team": "MIN"
+        },
+        {
+          "key": "caleb williams",
+          "name": "Caleb Williams",
+          "slug": "caleb-williams",
+          "pos": "QB",
+          "team": "CHI"
+        },
+        {
+          "key": "jared goff",
+          "name": "Jared Goff",
+          "slug": "jared-goff",
+          "pos": "QB",
+          "team": "DET"
+        },
+        {
+          "key": "roschon johnson",
+          "name": "Roschon Johnson",
+          "slug": "roschon-johnson",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "dandre swift",
+          "name": "D'Andre Swift",
+          "slug": "dandre-swift",
+          "pos": "RB",
+          "team": "CHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NFC Notes: Harrison Smith Contract, D’Andre Swift, Roschon Johnson, Bears, Vikings",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaUp5WU9Gd1BfNlh1cXVMeUhXdENwSmtvZlFxUUZMcVEzWU4zYWpSM09FLTlrV3ZNWlAwRTJRMGp0eXFfVkZnb1FLQ2VfWGVadUFYNHllS1llcFhRQmM5X0o4RUVTWkpQbHoxaTZPYkdTcGpUdV9uR29oQkZnZTl4MkF0LUc2Ykh2YkRHeGdpN3NHWjVIZjA3bWZrTzE0dnpIYVFMM3Jn?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Harrison Smith Contract, D’Andre Swift, Roschon Johnson, Bears, Vikings NFLTradeRumors.co",
+          "published": "Mon, 07 Sep 2026 23:00:40 GMT"
+        },
+        {
+          "title": "NFC Notes: Harrison Smith, Jared Goff, Bears, Lions, Vikings",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdEp0OGppQlYtX2ZBZFFZaGpmLVZSNFdPX0xFbHIwd0RjanFkV2NGMmVvWE5nVGRTdHZ3aGVBMUYwbmFzaVBwaWhVc2pPRlRDeWVVZnh6aldSbGdPNFVidUFMeTFVUFY2T08wZGx6b2o3OElBaXBRcXZOQ295TjBXQUxzRUdScThnWnc?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Harrison Smith, Jared Goff, Bears, Lions, Vikings NFLTradeRumors.co",
+          "published": "Wed, 09 Sep 2026 00:00:56 GMT"
+        },
+        {
+          "title": "Vikings Officially Signed S Harrison Smith, Made Corresponding Move",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRF9TSXFDNGZ3NWt0MkRsd1dQLURzb3prNi1tX2w1OXAzSHozUmhqejVGbW9hdnk0NHc4UXlSbGw4RG85NkpHamhseVVCcGRQa21tOVhwcDBEZjkwdzc3ajQ1YlJRbTVZaU9ULXFRM1dJV2s1TnVnZ1plRmlfb2pEUUlXSU8tUG5tTDdTYkItQ2pTQjQ2bzFxRQ?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "Vikings Officially Signed S Harrison Smith, Made Corresponding Move NFLTradeRumors.co",
+          "published": "Tue, 08 Sep 2026 20:50:47 GMT"
+        },
+        {
+          "title": "Vikings unsure if Harrison Smith will play on Sunday",
+          "url": "https://sports.yahoo.com/articles/vikings-unsure-harrison-smith-play-184436217.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "Safety Harrison Smith is back with the Vikings, but it remains to be seen if he will be in their secondary against the Packers on Sunday.",
+          "published": "Wed, 09 Sep 2026 18:44:36 +0000"
+        },
+        {
+          "title": "Vikings unsure if Harrison Smith will play on Sunday",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/vikings-unsure-if-harrison-smith-will-play-on-sunday",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Safety Harrison Smith is back with the Vikings, but it remains to be seen if he will be in their secondary against the Packers on Sunday.",
+          "published": "Wed, 09 Sep 2026 14:44:36 -0400"
+        },
+        {
+          "title": "NFC Notes: Justin Jefferson, Harrison Smith, Ozzy Trapilo, Bears, Packers, Vikings",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUVZobWlOYjA3X1dKZ2VnMWFoS0Z3SzFYWS1iTGY1bTZ4MHhXck9wY252NjFGS19MelZZUElub2hkX3EtTjdCQnhSM2NSeUM4NHlmM1JHbzlOdkk2YjFNWkJ5dktacGRTZXAxQVE0ckdLY3pJbElWSTJPZXAxb0hGRnVYekJHbW5KZzZRVFNJbDc1TUJyNVIzZElJRTROX25pbDEtU21B?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Justin Jefferson, Harrison Smith, Ozzy Trapilo, Bears, Packers, Vikings NFLTradeRumors.co",
+          "published": "Thu, 10 Sep 2026 23:00:56 GMT"
+        },
+        {
+          "title": "NFC Notes: Justin Jefferson, Malik Muhammad, Bears, Lions, Vikings",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUnpTMjZ0RzRxMzRGQVNIZHVKVzc1QXVQTUQzUXlmYlNIOUMxNUZKNUgyS01mWW14ZW9GX2hXWUlWSkk1WXpGU2Jpa2YyQkI0ZFhta2dsVkt0dkxmblhPbW1EOHdkWEozOUh2bl9QX2VIN1RDVjFsMDhmMUZyMnM3V3FUTU8tbHVnbmpXajJHYWR2UQ?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Justin Jefferson, Malik Muhammad, Bears, Lions, Vikings NFLTradeRumors.co",
+          "published": "Sun, 24 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Vikings Receive Stern Justin Jefferson Warning Amid Uncertainty",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU21lTlRicFVDVXBSTWY3YkRiOHpHTFhCNTBTZE1MN2lIc2w1RlJObXM4U0RxUnFNTExKaGZGRzhZTmdWd1lPSGJxOEt4YkdSSWs5bl9HTURBMXl2Tjh3LXJRbktoM3d2SHRreFJOb29EYm5ZR1ZQYVQ1cmg5a0h0S0tGc2YzS29VN2hwWFFwRzBLVWlK?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Vikings Receive Stern Justin Jefferson Warning Amid Uncertainty heavy.com",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "NFC Notes: Harrison Smith, Aidan Hutchinson, Bears, Lions, Vikings",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObHFvOVVJVmhhS1dDSk14SjdacDI1NEZ3My00TzFIQnFGUWx5ODI0NEQ1X0ozWFE2YkR6V3lSMXYwRTVLS3I3cHMtOGVleUQ3WmhGZTBFT3lEOW9yb21iLVFscm9RNHBQdVZSTDFLNzhibERmYl9PMkZNY1hrZFhuT25kX2s4Q0lQV1l5QUFWcWUydw?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Harrison Smith, Aidan Hutchinson, Bears, Lions, Vikings NFLTradeRumors.co",
+          "published": "Fri, 11 Sep 2026 23:30:21 GMT"
+        },
+        {
+          "title": "NFC Notes: Caleb Williams, Justin Jefferson, Bears, Eagles, Vikings",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbkk5Q25LTV85NGRxdnhPdG1kOVhvbW8xMFRScnd2dW1OLVNUQjRGSHZCM1kxUE1OVDNrSWE0TU1tZ2ZNUGNvU0JQeDJCOFkwYXVXaE9iY2V4VHhxZ2VqZVl4bTlwUnliaGxIRlV1VUpmaUY4SlNFY0wwTXB6OFNkZFZ2dmcwaXN5VVRwM3RYS3RyeTQ?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "NFC Notes: Caleb Williams, Justin Jefferson, Bears, Eagles, Vikings NFLTradeRumors.co",
+          "published": "Sat, 12 Sep 2026 00:30:17 GMT"
+        }
+      ]
+    },
+    {
       "id": "sam-darnold-questionable-return-71d1a406",
       "slug": "sam-darnold-questionable-return-71d1a406",
       "sport": "football",
       "headline": "Sam Darnold Injury Update: What Happened to the Seahawks QB, and Will He Return vs. the Patriots in Week 1?",
-      "blurb": "MAJOR Sam Darnold Injury News | Seattle Seahawks vs.",
-      "summary": "MAJOR Sam Darnold Injury News | Seattle Seahawks vs. New England Patriots INSTANT REACTION YouTube Darnold (hip) left Wednesday night's contest against the Patriots in the first quarter, Curtis Crabtree of Fox 13 Seattle reports. Aggregated from YouTube, RotoWire NFL, x.com, NFLTradeRumors.co, Yahoo Sports and 14 more.",
+      "blurb": "Patriots-Seahawks REACTION: Seattle survives Darnold injury, DEFENSE dominates Drake Maye | Sherman YouTube",
+      "summary": "Patriots-Seahawks REACTION: Seattle survives Darnold injury, DEFENSE dominates Drake Maye | Sherman YouTube Darnold (hip) left Wednesday night's contest against the Patriots in the first quarter, Curtis Crabtree of Fox 13 Seattle reports. Visit RotoWire.com for more analysis on this update. Aggregated from YouTube, RotoWire NFL, x.com, NFLTradeRumors.co, Yahoo Sports and 14 more.",
       "category": "injury",
       "published": "2026-09-10T00:43:09Z",
       "updated": "2026-09-11T22:00:07Z",
       "players": [
+        {
+          "key": "drake maye",
+          "name": "Drake Maye",
+          "slug": "drake-maye",
+          "pos": "QB",
+          "team": "NE"
+        },
         {
           "key": "sam darnold",
           "name": "Sam Darnold",
@@ -722,13 +859,6 @@
           "name": "Romeo Doubs",
           "slug": "romeo-doubs",
           "pos": "WR",
-          "team": "NE"
-        },
-        {
-          "key": "drake maye",
-          "name": "Drake Maye",
-          "slug": "drake-maye",
-          "pos": "QB",
           "team": "NE"
         },
         {
@@ -1267,121 +1397,6 @@
           "kind": "article",
           "snippet": "Seattle Seahawks Get Positive Timeline Update After Sam Darnold Injury heavy.com",
           "published": "Fri, 11 Sep 2026 22:00:07 GMT"
-        }
-      ]
-    },
-    {
-      "id": "nfc-harrison-smith-contract-d-andre-swift-roschon-da53caf6",
-      "slug": "nfc-harrison-smith-contract-d-andre-swift-roschon-da53caf6",
-      "sport": "football",
-      "headline": "NFC Notes: Justin Jefferson, Harrison Smith, Ozzy Trapilo, Bears, Packers, Vikings",
-      "blurb": "NFC Notes: Harrison Smith, Aidan Hutchinson, Bears, Lions, Vikings NFLTradeRumors.co",
-      "summary": "Justin Jefferson, Jared Goff, Roschon Johnson and D'Andre Swift: NFC Notes: Harrison Smith, Aidan Hutchinson, Bears, Lions, Vikings NFLTradeRumors.co NFC Notes: Harrison Smith Contract, D’Andre Swift, Roschon Johnson, Bears, Vikings NFLTradeRumors.co NFC Notes: Harrison Smith, Jared Goff, Bears, Lions, Vikings NFLTradeRumors.co Aggregated from NFLTradeRumors.co, ProFootball Talk on NBC Sports, PFT feed, heavy.com.",
-      "category": "roster",
-      "published": "2026-01-06T08:00:00Z",
-      "updated": "2026-09-11T23:30:21Z",
-      "players": [
-        {
-          "key": "justin jefferson",
-          "name": "Justin Jefferson",
-          "slug": "justin-jefferson",
-          "pos": "WR",
-          "team": "MIN"
-        },
-        {
-          "key": "jared goff",
-          "name": "Jared Goff",
-          "slug": "jared-goff",
-          "pos": "QB",
-          "team": "DET"
-        },
-        {
-          "key": "roschon johnson",
-          "name": "Roschon Johnson",
-          "slug": "roschon-johnson",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "dandre swift",
-          "name": "D'Andre Swift",
-          "slug": "dandre-swift",
-          "pos": "RB",
-          "team": "CHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NFC Notes: Harrison Smith Contract, D’Andre Swift, Roschon Johnson, Bears, Vikings",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaUp5WU9Gd1BfNlh1cXVMeUhXdENwSmtvZlFxUUZMcVEzWU4zYWpSM09FLTlrV3ZNWlAwRTJRMGp0eXFfVkZnb1FLQ2VfWGVadUFYNHllS1llcFhRQmM5X0o4RUVTWkpQbHoxaTZPYkdTcGpUdV9uR29oQkZnZTl4MkF0LUc2Ykh2YkRHeGdpN3NHWjVIZjA3bWZrTzE0dnpIYVFMM3Jn?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "NFC Notes: Harrison Smith Contract, D’Andre Swift, Roschon Johnson, Bears, Vikings NFLTradeRumors.co",
-          "published": "Mon, 07 Sep 2026 23:00:40 GMT"
-        },
-        {
-          "title": "NFC Notes: Harrison Smith, Jared Goff, Bears, Lions, Vikings",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdEp0OGppQlYtX2ZBZFFZaGpmLVZSNFdPX0xFbHIwd0RjanFkV2NGMmVvWE5nVGRTdHZ3aGVBMUYwbmFzaVBwaWhVc2pPRlRDeWVVZnh6aldSbGdPNFVidUFMeTFVUFY2T08wZGx6b2o3OElBaXBRcXZOQ295TjBXQUxzRUdScThnWnc?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "NFC Notes: Harrison Smith, Jared Goff, Bears, Lions, Vikings NFLTradeRumors.co",
-          "published": "Wed, 09 Sep 2026 00:00:56 GMT"
-        },
-        {
-          "title": "Vikings Officially Signed S Harrison Smith, Made Corresponding Move",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRF9TSXFDNGZ3NWt0MkRsd1dQLURzb3prNi1tX2w1OXAzSHozUmhqejVGbW9hdnk0NHc4UXlSbGw4RG85NkpHamhseVVCcGRQa21tOVhwcDBEZjkwdzc3ajQ1YlJRbTVZaU9ULXFRM1dJV2s1TnVnZ1plRmlfb2pEUUlXSU8tUG5tTDdTYkItQ2pTQjQ2bzFxRQ?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "Vikings Officially Signed S Harrison Smith, Made Corresponding Move NFLTradeRumors.co",
-          "published": "Tue, 08 Sep 2026 20:50:47 GMT"
-        },
-        {
-          "title": "Vikings unsure if Harrison Smith will play on Sunday",
-          "url": "https://sports.yahoo.com/articles/vikings-unsure-harrison-smith-play-184436217.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Safety Harrison Smith is back with the Vikings, but it remains to be seen if he will be in their secondary against the Packers on Sunday.",
-          "published": "Wed, 09 Sep 2026 18:44:36 +0000"
-        },
-        {
-          "title": "Vikings unsure if Harrison Smith will play on Sunday",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/vikings-unsure-if-harrison-smith-will-play-on-sunday",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Safety Harrison Smith is back with the Vikings, but it remains to be seen if he will be in their secondary against the Packers on Sunday.",
-          "published": "Wed, 09 Sep 2026 14:44:36 -0400"
-        },
-        {
-          "title": "NFC Notes: Justin Jefferson, Harrison Smith, Ozzy Trapilo, Bears, Packers, Vikings",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUVZobWlOYjA3X1dKZ2VnMWFoS0Z3SzFYWS1iTGY1bTZ4MHhXck9wY252NjFGS19MelZZUElub2hkX3EtTjdCQnhSM2NSeUM4NHlmM1JHbzlOdkk2YjFNWkJ5dktacGRTZXAxQVE0ckdLY3pJbElWSTJPZXAxb0hGRnVYekJHbW5KZzZRVFNJbDc1TUJyNVIzZElJRTROX25pbDEtU21B?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "NFC Notes: Justin Jefferson, Harrison Smith, Ozzy Trapilo, Bears, Packers, Vikings NFLTradeRumors.co",
-          "published": "Thu, 10 Sep 2026 23:00:56 GMT"
-        },
-        {
-          "title": "NFC Notes: Justin Jefferson, Malik Muhammad, Bears, Lions, Vikings",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUnpTMjZ0RzRxMzRGQVNIZHVKVzc1QXVQTUQzUXlmYlNIOUMxNUZKNUgyS01mWW14ZW9GX2hXWUlWSkk1WXpGU2Jpa2YyQkI0ZFhta2dsVkt0dkxmblhPbW1EOHdkWEozOUh2bl9QX2VIN1RDVjFsMDhmMUZyMnM3V3FUTU8tbHVnbmpXajJHYWR2UQ?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "NFC Notes: Justin Jefferson, Malik Muhammad, Bears, Lions, Vikings NFLTradeRumors.co",
-          "published": "Sun, 24 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Vikings Receive Stern Justin Jefferson Warning Amid Uncertainty",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU21lTlRicFVDVXBSTWY3YkRiOHpHTFhCNTBTZE1MN2lIc2w1RlJObXM4U0RxUnFNTExKaGZGRzhZTmdWd1lPSGJxOEt4YkdSSWs5bl9HTURBMXl2Tjh3LXJRbktoM3d2SHRreFJOb29EYm5ZR1ZQYVQ1cmg5a0h0S0tGc2YzS29VN2hwWFFwRzBLVWlK?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Vikings Receive Stern Justin Jefferson Warning Amid Uncertainty heavy.com",
-          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "NFC Notes: Harrison Smith, Aidan Hutchinson, Bears, Lions, Vikings",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObHFvOVVJVmhhS1dDSk14SjdacDI1NEZ3My00TzFIQnFGUWx5ODI0NEQ1X0ozWFE2YkR6V3lSMXYwRTVLS3I3cHMtOGVleUQ3WmhGZTBFT3lEOW9yb21iLVFscm9RNHBQdVZSTDFLNzhibERmYl9PMkZNY1hrZFhuT25kX2s4Q0lQV1l5QUFWcWUydw?oc=5",
-          "publisher": "NFLTradeRumors.co",
-          "kind": "article",
-          "snippet": "NFC Notes: Harrison Smith, Aidan Hutchinson, Bears, Lions, Vikings NFLTradeRumors.co",
-          "published": "Fri, 11 Sep 2026 23:30:21 GMT"
         }
       ]
     },
@@ -3265,6 +3280,113 @@
       ]
     },
     {
+      "id": "raiders-klint-kubiak-injured-ashton-jeanty-mend-1fd0ecce",
+      "slug": "raiders-klint-kubiak-injured-ashton-jeanty-mend-1fd0ecce",
+      "sport": "football",
+      "headline": "Cardinals RB Jeremiyah Love limited in practice, but coach Mike LaFleur is optimistic on progress",
+      "blurb": "Cardinals injury report: RB Jeremiyah Love (ankle) officially questionable to play Sunday after Mike LaFleur says he'll be game-time decision https://t.co/V2bTWvz3AT x.com",
+      "summary": "Cardinals injury report: RB Jeremiyah Love (ankle) officially questionable to play Sunday after Mike LaFleur says he'll be game-time decision https://t.co/V2bTWvz3AT x.com #NFL Injury Updates #Raiders Ashton Jeanty - Best case = low ankle, Wk 1 return w/mild dip. Avg = 3-5 wks, Wk 1 TBD but data suggests Wk 2-3 more likely. Aggregated from x.com, ABC7 Los Angeles, Yardbarker, heavy.com, Toronto Star and 1 more.",
+      "category": "injury",
+      "published": "2026-08-25T07:00:00Z",
+      "updated": "2026-09-11T20:43:26Z",
+      "players": [
+        {
+          "key": "jeremiyah love",
+          "name": "Jeremiyah Love",
+          "slug": "jeremiyah-love",
+          "pos": "RB",
+          "team": "ARI"
+        },
+        {
+          "key": "fernando mendoza",
+          "name": "Fernando Mendoza",
+          "slug": "fernando-mendoza",
+          "pos": "QB",
+          "team": "LV"
+        },
+        {
+          "key": "ashton jeanty",
+          "name": "Ashton Jeanty",
+          "slug": "ashton-jeanty",
+          "pos": "RB",
+          "team": "LV"
+        },
+        {
+          "key": "puka nacua",
+          "name": "Puka Nacua",
+          "slug": "puka-nacua",
+          "pos": "WR",
+          "team": "LAR"
+        }
+      ],
+      "sources": [
+        {
+          "title": "#NFL Injury Updates #Raiders Ashton Jeanty - Best case = low ankle, Wk 1 return w/mild dip. Worst = high ankle. Avg = 3-5 wks, Wk 1 TBD but data suggests Wk 2-3 more likely. Dip ~4-6 wks #Rams Puka Nacua - Running. Suspect return next wk. Mild (~10%)",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE14SllnYll1TG5tWXNSUm1sVmJhYVBSem5WOGQ2VlpYN0NIUk90TThvX3EyRVZwSGptWXo0NVo3MzJLRVVYazJWbHNXMEpjMWRzbElwSWZIcndHanZUZEtDamIxS2xKM0E?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "#NFL Injury Updates #Raiders Ashton Jeanty - Best case = low ankle, Wk 1 return w/mild dip. Worst = high ankle. Avg = 3-5 wks, Wk 1 TBD but data suggests Wk 2-3 more likely. Dip ~4-6 wks #Rams Puka Nacua - Running. Suspect return next wk. Mild (~10%) x.com",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Raiders' Klint Kubiak says injured Ashton Jeanty 'on the mend'",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOLTM1dmxuVkt2bE5kYWY0cnd5bXJRNTlLLThmZERvaDRxeG9vZE9KRzY0NGV3cXcxaHRvUFRzVklJaU42YUdMWmcxRnVMb2hBZktxSW1SNlB4bldNVmtEcTQ0bWQycS1RZkktS184VVp4dFBFVjdVeXR2ZXlGekNlYXRTN0hUSEdndGgxXw?oc=5",
+          "publisher": "ABC7 Los Angeles",
+          "kind": "article",
+          "snippet": "Raiders' Klint Kubiak says injured Ashton Jeanty 'on the mend' ABC7 Los Angeles",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Raiders' Ashton Jeanty shares major injury update after report",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOLXBBaGxSZGVzN3Jwc1Q2ak9zNzROejdXZTNveXFlODFweTl2MnRnZGNoRVUxNDJHMTBjdm0yMmtzMnd0MTJxcnNuaXpLMng1YmNreE1zcThLZzBEX1FNdjFrYUlBYXVlTnJaOFlJams0b3FtY2FfLUtBWF84U1ZrNldadWI5ZDM4a3QxOWFXRFpIQTFRVzFMTHVIckRka3V3YWEyZ0ZWeFdfeWVRVEZxTmoyVUktY3p5NXJJ?oc=5",
+          "publisher": "Yardbarker",
+          "kind": "article",
+          "snippet": "Raiders' Ashton Jeanty shares major injury update after report Yardbarker",
+          "published": "Fri, 11 Sep 2026 12:51:09 GMT"
+        },
+        {
+          "title": "Raiders’ Ashton Jeanty Decision Speaks Volumes About Injury Timeline",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVm1IcG1UMXlpM2c5dWtvajVxcHh4NnlDcEhvZ0c4ZWluZFdyaGhDeVotUlNJQjhXT2NTOWFOai1COUJadUZ5VVMxd3NDSDdVRGJsUE9ZNzM4OVpMVGtqOU9Uazg5NnE0SDNEYkRtQ2JRNG1vbTdVTmxlRUZIYjRCT1p6WDg1bjNYc1hyU1lB?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Raiders’ Ashton Jeanty Decision Speaks Volumes About Injury Timeline heavy.com",
+          "published": "Sun, 30 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "#NFL Injury Updates #Cardinals Jeremiyah Love - Lean playing. Data favors elevated re-injury risk + dip in touches. Being listed as 2nd RB strengthens that suspicion #Raiders Ashton Jeanty - Assuming mostly low ankle = favorable. Lean playing. Expect extr",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2UTFGd0VPdTZmUFlXRWtnUi1ZMVFjSlA0V1BUTjZtVHJGZGxXb1VTamxSYXE5R3BSZDdwTUhKSWhNQnpaUDNrMXFhdzNiUWR6dFpvLWlEZU9pNDZPNlRwN0ZoVUhhOEU?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "#NFL Injury Updates #Cardinals Jeremiyah Love - Lean playing. Data favors elevated re-injury risk + dip in touches. Being listed as 2nd RB strengthens that suspicion #Raiders Ashton Jeanty - Assuming mostly low ankle = favorable. Lean playing. Expect extr x.com",
+          "published": "Wed, 09 Sep 2026 13:15:03 GMT"
+        },
+        {
+          "title": "Cardinals RB Jeremiyah Love limited in practice, but coach Mike LaFleur is optimistic on progress",
+          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNS1d3dWxfdU1PdXVjbmU0SUtEaWhjQTI0NDVrQ2xhTnc5X2VMa3lJaGpVOVNTb2F1bFpLcVotRkRnVlJRYVlOYXg5UWFLOEtCSHNrUUhlcFdlTi16T0NoMVFTRzJyRTVpUzhUWHd6eno4cG5NR2JkWEwwNDFodkNiaGd6YnZDb2NjbnFMUnI5bjlWWWF5OXZTZm1ic1pvYkgzbmU4RWI2eFhrdFZqNzFIODJEZmE5ZUkxbV9ZODRNcW5qRXh6bVc2akxtYmU3b2VLZEJDdXhpSFFjNFkwTXhxckRFT0pRMVhfMFN6NGdnS1Vvcmc0MmRBcmY5emlyb2h5OEpfMkdwdEpSY3IzZ2h3VXdSOUE?oc=5",
+          "publisher": "Toronto Star",
+          "kind": "article",
+          "snippet": "Cardinals RB Jeremiyah Love limited in practice, but coach Mike LaFleur is optimistic on progress Toronto Star",
+          "published": "Thu, 10 Sep 2026 00:17:44 GMT"
+        },
+        {
+          "title": "Ashton Jeanty will play, Fernando Mendoza No. 2 Sunday against Miami",
+          "url": "https://sports.yahoo.com/articles/ashton-jeanty-play-fernando-mendoza-191036734.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Running back has been trending right way with ankle injury",
+          "published": "Fri, 11 Sep 2026 19:10:36 +0000"
+        },
+        {
+          "title": "Cardinals injury report: RB Jeremiyah Love (ankle) officially questionable to play Sunday after Mike LaFleur says he'll be game-time decision https://t.co/V2bTWvz3AT",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0QUdaUmhYZGkzWmNGd3F1SHhxUkx0cldTMjhaclEzT1k0V1p0Z3JySVY3TFFjQWZuTHF5OU1janRMZUY3MVBvT21iNUVzVzVaaHA2MS01VUtQWHNHMWl5RjJJOA?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Cardinals injury report: RB Jeremiyah Love (ankle) officially questionable to play Sunday after Mike LaFleur says he'll be game-time decision https://t.co/V2bTWvz3AT x.com",
+          "published": "Fri, 11 Sep 2026 20:43:26 GMT"
+        }
+      ]
+    },
+    {
       "id": "jeremiyah-love-injury-mike-lafleur-optimistic-rookie-rb-277d8c72",
       "slug": "jeremiyah-love-injury-mike-lafleur-optimistic-rookie-rb-277d8c72",
       "sport": "football",
@@ -3516,119 +3638,12 @@
       ]
     },
     {
-      "id": "raiders-klint-kubiak-injured-ashton-jeanty-mend-1fd0ecce",
-      "slug": "raiders-klint-kubiak-injured-ashton-jeanty-mend-1fd0ecce",
-      "sport": "football",
-      "headline": "Cardinals RB Jeremiyah Love limited in practice, but coach Mike LaFleur is optimistic on progress",
-      "blurb": "Cardinals injury report: RB Jeremiyah Love (ankle) officially questionable to play Sunday after Mike LaFleur says he'll be game-time decision https://t.co/V2bTWvz3AT x.com",
-      "summary": "Cardinals injury report: RB Jeremiyah Love (ankle) officially questionable to play Sunday after Mike LaFleur says he'll be game-time decision https://t.co/V2bTWvz3AT x.com #NFL Injury Updates #Raiders Ashton Jeanty - Best case = low ankle, Wk 1 return w/mild dip. Avg = 3-5 wks, Wk 1 TBD but data suggests Wk 2-3 more likely. Aggregated from x.com, ABC7 Los Angeles, Yardbarker, heavy.com, Toronto Star and 1 more.",
-      "category": "injury",
-      "published": "2026-08-25T07:00:00Z",
-      "updated": "2026-09-11T20:43:26Z",
-      "players": [
-        {
-          "key": "jeremiyah love",
-          "name": "Jeremiyah Love",
-          "slug": "jeremiyah-love",
-          "pos": "RB",
-          "team": "ARI"
-        },
-        {
-          "key": "fernando mendoza",
-          "name": "Fernando Mendoza",
-          "slug": "fernando-mendoza",
-          "pos": "QB",
-          "team": "LV"
-        },
-        {
-          "key": "ashton jeanty",
-          "name": "Ashton Jeanty",
-          "slug": "ashton-jeanty",
-          "pos": "RB",
-          "team": "LV"
-        },
-        {
-          "key": "puka nacua",
-          "name": "Puka Nacua",
-          "slug": "puka-nacua",
-          "pos": "WR",
-          "team": "LAR"
-        }
-      ],
-      "sources": [
-        {
-          "title": "#NFL Injury Updates #Raiders Ashton Jeanty - Best case = low ankle, Wk 1 return w/mild dip. Worst = high ankle. Avg = 3-5 wks, Wk 1 TBD but data suggests Wk 2-3 more likely. Dip ~4-6 wks #Rams Puka Nacua - Running. Suspect return next wk. Mild (~10%)",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE14SllnYll1TG5tWXNSUm1sVmJhYVBSem5WOGQ2VlpYN0NIUk90TThvX3EyRVZwSGptWXo0NVo3MzJLRVVYazJWbHNXMEpjMWRzbElwSWZIcndHanZUZEtDamIxS2xKM0E?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "#NFL Injury Updates #Raiders Ashton Jeanty - Best case = low ankle, Wk 1 return w/mild dip. Worst = high ankle. Avg = 3-5 wks, Wk 1 TBD but data suggests Wk 2-3 more likely. Dip ~4-6 wks #Rams Puka Nacua - Running. Suspect return next wk. Mild (~10%) x.com",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Raiders' Klint Kubiak says injured Ashton Jeanty 'on the mend'",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOLTM1dmxuVkt2bE5kYWY0cnd5bXJRNTlLLThmZERvaDRxeG9vZE9KRzY0NGV3cXcxaHRvUFRzVklJaU42YUdMWmcxRnVMb2hBZktxSW1SNlB4bldNVmtEcTQ0bWQycS1RZkktS184VVp4dFBFVjdVeXR2ZXlGekNlYXRTN0hUSEdndGgxXw?oc=5",
-          "publisher": "ABC7 Los Angeles",
-          "kind": "article",
-          "snippet": "Raiders' Klint Kubiak says injured Ashton Jeanty 'on the mend' ABC7 Los Angeles",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Raiders' Ashton Jeanty shares major injury update after report",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOLXBBaGxSZGVzN3Jwc1Q2ak9zNzROejdXZTNveXFlODFweTl2MnRnZGNoRVUxNDJHMTBjdm0yMmtzMnd0MTJxcnNuaXpLMng1YmNreE1zcThLZzBEX1FNdjFrYUlBYXVlTnJaOFlJams0b3FtY2FfLUtBWF84U1ZrNldadWI5ZDM4a3QxOWFXRFpIQTFRVzFMTHVIckRka3V3YWEyZ0ZWeFdfeWVRVEZxTmoyVUktY3p5NXJJ?oc=5",
-          "publisher": "Yardbarker",
-          "kind": "article",
-          "snippet": "Raiders' Ashton Jeanty shares major injury update after report Yardbarker",
-          "published": "Fri, 11 Sep 2026 12:51:09 GMT"
-        },
-        {
-          "title": "Raiders’ Ashton Jeanty Decision Speaks Volumes About Injury Timeline",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVm1IcG1UMXlpM2c5dWtvajVxcHh4NnlDcEhvZ0c4ZWluZFdyaGhDeVotUlNJQjhXT2NTOWFOai1COUJadUZ5VVMxd3NDSDdVRGJsUE9ZNzM4OVpMVGtqOU9Uazg5NnE0SDNEYkRtQ2JRNG1vbTdVTmxlRUZIYjRCT1p6WDg1bjNYc1hyU1lB?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Raiders’ Ashton Jeanty Decision Speaks Volumes About Injury Timeline heavy.com",
-          "published": "Sun, 30 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "#NFL Injury Updates #Cardinals Jeremiyah Love - Lean playing. Data favors elevated re-injury risk + dip in touches. Being listed as 2nd RB strengthens that suspicion #Raiders Ashton Jeanty - Assuming mostly low ankle = favorable. Lean playing. Expect extr",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2UTFGd0VPdTZmUFlXRWtnUi1ZMVFjSlA0V1BUTjZtVHJGZGxXb1VTamxSYXE5R3BSZDdwTUhKSWhNQnpaUDNrMXFhdzNiUWR6dFpvLWlEZU9pNDZPNlRwN0ZoVUhhOEU?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "#NFL Injury Updates #Cardinals Jeremiyah Love - Lean playing. Data favors elevated re-injury risk + dip in touches. Being listed as 2nd RB strengthens that suspicion #Raiders Ashton Jeanty - Assuming mostly low ankle = favorable. Lean playing. Expect extr x.com",
-          "published": "Wed, 09 Sep 2026 13:15:03 GMT"
-        },
-        {
-          "title": "Cardinals RB Jeremiyah Love limited in practice, but coach Mike LaFleur is optimistic on progress",
-          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNS1d3dWxfdU1PdXVjbmU0SUtEaWhjQTI0NDVrQ2xhTnc5X2VMa3lJaGpVOVNTb2F1bFpLcVotRkRnVlJRYVlOYXg5UWFLOEtCSHNrUUhlcFdlTi16T0NoMVFTRzJyRTVpUzhUWHd6eno4cG5NR2JkWEwwNDFodkNiaGd6YnZDb2NjbnFMUnI5bjlWWWF5OXZTZm1ic1pvYkgzbmU4RWI2eFhrdFZqNzFIODJEZmE5ZUkxbV9ZODRNcW5qRXh6bVc2akxtYmU3b2VLZEJDdXhpSFFjNFkwTXhxckRFT0pRMVhfMFN6NGdnS1Vvcmc0MmRBcmY5emlyb2h5OEpfMkdwdEpSY3IzZ2h3VXdSOUE?oc=5",
-          "publisher": "Toronto Star",
-          "kind": "article",
-          "snippet": "Cardinals RB Jeremiyah Love limited in practice, but coach Mike LaFleur is optimistic on progress Toronto Star",
-          "published": "Thu, 10 Sep 2026 00:17:44 GMT"
-        },
-        {
-          "title": "Ashton Jeanty will play, Fernando Mendoza No. 2 Sunday against Miami",
-          "url": "https://sports.yahoo.com/articles/ashton-jeanty-play-fernando-mendoza-191036734.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Running back has been trending right way with ankle injury",
-          "published": "Fri, 11 Sep 2026 19:10:36 +0000"
-        },
-        {
-          "title": "Cardinals injury report: RB Jeremiyah Love (ankle) officially questionable to play Sunday after Mike LaFleur says he'll be game-time decision https://t.co/V2bTWvz3AT",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB0QUdaUmhYZGkzWmNGd3F1SHhxUkx0cldTMjhaclEzT1k0V1p0Z3JySVY3TFFjQWZuTHF5OU1janRMZUY3MVBvT21iNUVzVzVaaHA2MS01VUtQWHNHMWl5RjJJOA?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Cardinals injury report: RB Jeremiyah Love (ankle) officially questionable to play Sunday after Mike LaFleur says he'll be game-time decision https://t.co/V2bTWvz3AT x.com",
-          "published": "Fri, 11 Sep 2026 20:43:26 GMT"
-        }
-      ]
-    },
-    {
       "id": "injury-cheat-sheet-jeremiyah-love-jordyn-tyson-others-5edd6ad2",
       "slug": "injury-cheat-sheet-jeremiyah-love-jordyn-tyson-others-5edd6ad2",
       "sport": "football",
       "headline": "Cardinals RB Jeremiyah Love reportedly expected to play in season opener after dealing with high-ankle sprain",
-      "blurb": "Brown hurts in the present but could be a future problem, too.",
-      "summary": "A.J. Brown, Jeremiyah Love and Jordyn Tyson: Brown hurts in the present but could be a future problem, too. Cardinals news: Jeremiyah Love injury update gives Chargers another problem sports.yahoo.com Fantasy Football Injury Cheat Sheet: Updates to Jeremiyah Love, Jordyn Tyson, Others Sports Illustrated Aggregated from NBC Sports Boston, sports.yahoo.com, Sports Illustrated, Athlon Sports, yardbarker.com and 15 more.",
+      "blurb": "Brown to IR for ankle injury suffered in loss to Seahawks sports.mynorthwest.com",
+      "summary": "A.J. Brown, Jeremiyah Love and Jordyn Tyson: Brown to IR for ankle injury suffered in loss to Seahawks sports.mynorthwest.com Cardinals news: Jeremiyah Love injury update gives Chargers another problem sports.yahoo.com Fantasy Football Injury Cheat Sheet: Updates to Jeremiyah Love, Jordyn Tyson, Others Sports Illustrated Aggregated from sports.mynorthwest.com, sports.yahoo.com, Sports Illustrated, Athlon Sports, yardbarker.com and 16 more.",
       "category": "injury",
       "published": "2026-08-16T07:00:00Z",
       "updated": "2026-09-11T22:44:47Z",
@@ -3847,6 +3862,14 @@
           "kind": "article",
           "snippet": "The loss of A.J. Brown hurts in the present but could be a future problem, too.",
           "published": "Fri, 11 Sep 2026 21:10:28 +0000"
+        },
+        {
+          "title": "Patriots WR A.J. Brown to IR for ankle injury suffered in loss to Seahawks",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUUhXNTQxNXdGU2FySWJnZnVkcFUwMTBMRnBKU3ltV3RXdW5iSTVkRnRGcVhQc2E1NERTVUxXMWU1UVBQT0lqZ21sOVk4TDlCVk1ERDlXMG9aYzZPR2NLRmNaWmpaSkt0STBSTDlPUHZnaldSUlhHSmFHaUd3dkRoQXQ0OHZaRjA5VFExY0xxc1daaDBWaDJDelNVTTlQTUluQkhoa3FaOUhGXzVWVWQyRTZR?oc=5",
+          "publisher": "sports.mynorthwest.com",
+          "kind": "article",
+          "snippet": "Patriots WR A.J. Brown to IR for ankle injury suffered in loss to Seahawks sports.mynorthwest.com",
+          "published": "Fri, 11 Sep 2026 22:10:17 GMT"
         }
       ]
     },
@@ -8496,6 +8519,66 @@
       ]
     },
     {
+      "id": "jalen-mcmillan-doubtful-bucs-emeka-egbuka-set-play-1f39f1f2",
+      "slug": "jalen-mcmillan-doubtful-bucs-emeka-egbuka-set-play-1f39f1f2",
+      "sport": "football",
+      "headline": "Jalen McMillan doubtful for Bucs, but Emeka Egbuka is set to play",
+      "blurb": "The Tampa Bay Buccaneers will enter Sunday’s season opener against the Cincinnati Bengals with three players listed as doubtful and another questionable on the final injury report.",
+      "summary": "Jalen McMillan, Sean Tucker and Emeka Egbuka: The Tampa Bay Buccaneers will enter Sunday’s season opener against the Cincinnati Bengals with three players listed as doubtful and another questionable on the final injury report. Wide receiver Jalen McMillan (knee), offensive tackle Justin Skule (oblique) and running back Sean Tucker (hamstring) are doubtful after all three were limited during Friday’s practice. Buccaneers at Bengals: Final Injury Report for Week 1 bucsnation.com Aggregated from SB Nation, bucsnation.com, PFT feed.",
+      "category": "injury",
+      "published": "2026-09-11T18:43:45Z",
+      "updated": "2026-09-11T22:21:17Z",
+      "players": [
+        {
+          "key": "jalen mcmillan",
+          "name": "Jalen McMillan",
+          "slug": "jalen-mcmillan",
+          "pos": "WR",
+          "team": "TB"
+        },
+        {
+          "key": "sean tucker",
+          "name": "Sean Tucker",
+          "slug": "sean-tucker",
+          "pos": "RB",
+          "team": "TB"
+        },
+        {
+          "key": "emeka egbuka",
+          "name": "Emeka Egbuka",
+          "slug": "emeka-egbuka",
+          "pos": "WR",
+          "team": "TB"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jalen McMillan doubtful for Bucs, but Emeka Egbuka is set to play",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jalen-mcmillan-doubtful-for-bucs-but-emeka-egbuka-is-set-to-play",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "The Buccaneers will likely be down one wide receiver when they open the regular season against the Bengals on Sunday.",
+          "published": "Fri, 11 Sep 2026 14:43:45 -0400"
+        },
+        {
+          "title": "Buccaneers at Bengals: Final Injury Report for Week 1",
+          "url": "https://sports.yahoo.com/articles/buccaneers-bengals-final-injury-report-222117885.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Tampa Bay Buccaneers will enter Sunday’s season opener against the Cincinnati Bengals with three players listed as doubtful and another questionable on the final injury report. Wide receiver Jalen McMillan (knee), offensive tackle Justin Skule (oblique) and running back Sean ",
+          "published": "Fri, 11 Sep 2026 22:21:17 +0000"
+        },
+        {
+          "title": "Buccaneers at Bengals: Final Injury Report for Week 1",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMU5kSUxDY1BVV3lIMll6aVkzQWVzeTVKbWpGOTl4VHdjazJwS0lLeVVMRFREMjhxSjhfbExsbUlpTXJyQXJfYmQxX3d6cmx2cWlEWDhTd1RCbUplZnZCUUhmSHNxeXYtcE9GZUZZbHFZeC1TOGVhdHJmaTdzSmVORVFwbHE0NEN5ak03cE5xOVp5UDRWclE1dUpyYUtHWnBhbXBsejlEQkZpcUMzRW5pNlln?oc=5",
+          "publisher": "bucsnation.com",
+          "kind": "article",
+          "snippet": "Buccaneers at Bengals: Final Injury Report for Week 1 bucsnation.com",
+          "published": "Fri, 11 Sep 2026 22:21:17 GMT"
+        }
+      ]
+    },
+    {
       "id": "ashton-jeanty-s-updated-injury-status-outlook-raiders-90326218",
       "slug": "ashton-jeanty-s-updated-injury-status-outlook-raiders-90326218",
       "sport": "football",
@@ -8690,6 +8773,124 @@
       ]
     },
     {
+      "id": "ravens-wr-zay-flowers-estimated-full-practice-participant-3ec2ecb6",
+      "slug": "ravens-wr-zay-flowers-estimated-full-practice-participant-3ec2ecb6",
+      "sport": "football",
+      "headline": "NFL news roundup: Bucs' OLB Rueben Bain Jr. (shoulder), Ravens WR Zay Flowers (hamstring) full participants",
+      "blurb": "Ravens injury report: WR Zay Flowers (hamstring) good to go for Sunday vs.",
+      "summary": "Ravens injury report: WR Zay Flowers (hamstring) good to go for Sunday vs. Colts https://t.co/Cb4cD5KBZJ x.com Zay Flowers (hamstring) not listed on injury report for Week 1. Aggregated from x.com, PFT feed, RotoWire NFL, Fantasy Footballers Podcast, NBC Sports and 4 more.",
+      "category": "injury",
+      "published": "2026-09-09T20:35:49Z",
+      "updated": "2026-09-11T20:35:34Z",
+      "players": [
+        {
+          "key": "zay flowers",
+          "name": "Zay Flowers",
+          "slug": "zay-flowers",
+          "pos": "WR",
+          "team": "BAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ravens WR Zay Flowers estimated as full practice participant",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-wr-zay-flowers-estimated-as-full-practice-participant",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "The Ravens did not hold a full practice on Thursday, but their estimated practice report included an encouraging upgrade.",
+          "published": "Thu, 10 Sep 2026 17:15:11 -0400"
+        },
+        {
+          "title": "Zay Flowers: Upgrades to full Thursday",
+          "url": "https://www.rotowire.com//football/player/zay-flowers-16919",
+          "publisher": "RotoWire NFL",
+          "kind": "article",
+          "snippet": "Flowers (hamstring) was a full participant at Thursday's practice. Visit RotoWire.com for more analysis on this update.",
+          "published": "Thu, 10 Sep 2026 1:42:00 PM PDT"
+        },
+        {
+          "title": "Zay Flowers Upgrades to full Thursday",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWk9HY1hSQTB4S2JsbzB3UTFVTE96YVZieXFDWEhwNHh0NlFJeC01VWFsclFWSmdhQU5FQmZhVFBURml0a3FaTWdUUWhIb1g0U1FOWWRrdlEyMmd5ZWZ5TUUzRTdRZjE4akJST21VYmhEY1BFSGk4eGFLZ0hBYnY4N1hJY1NJWkFrYVJLbkg3ZFdjQQ?oc=5",
+          "publisher": "Fantasy Footballers Podcast",
+          "kind": "article",
+          "snippet": "Zay Flowers Upgrades to full Thursday Fantasy Footballers Podcast",
+          "published": "Thu, 10 Sep 2026 20:53:40 GMT"
+        },
+        {
+          "title": "Ravens WR Zay Flowers estimated as full practice participant",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQXZyOHZ0SzhlaTcxTDZlc0ZxSTMxZ1VhTk92TlQ2R1d4bW9aWDluZjFtSV9kcW1tdmh2LWZOTU44X2UwT2dQV2EzUUR4aDdxRUtSdi0xcFotTHFoUjFkaHNER0xmdi1hUXdpRzJ5eUVJQ2JCRHY1aWFJZzMxQmctOUF4d3c3TE1SOW91bzVWSTNkdXBmRUlYUlF5SjJ1X2M1bVpTcEEyOTRwb3Y3anAxa1BhQmRuYnRXQ0NJVUdpMA?oc=5",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Ravens WR Zay Flowers estimated as full practice participant NBC Sports",
+          "published": "Thu, 10 Sep 2026 21:16:26 GMT"
+        },
+        {
+          "title": "Ravens WR Zay Flowers estimated as full practice participant",
+          "url": "https://sports.yahoo.com/articles/ravens-wr-zay-flowers-estimated-211511723.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "The Ravens did not hold a full practice on Thursday, but their estimated practice report included an encouraging upgrade.",
+          "published": "Thu, 10 Sep 2026 21:15:11 +0000"
+        },
+        {
+          "title": "Ravens injury report: Zay Flowers among 4 limited participants on Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWkt5MG05X1RPY3pfWnVoZGJ6ek1Pc1ZJaWF2cFR3MnVjVnRJV0dYZlMtOG4tcVpJa2Q4aGVKaFhTbTYwNWZHN21CNkdGclNRSzlSajBNNEg5QzFTVUR2SHU5YnJ4Q3VHSzlUT0NWVUxIeGI5Vk1iWXJ1eU9yN1J6R1BCOURxcmFw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Ravens injury report: Zay Flowers among 4 limited participants on Wednesday Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 20:35:49 GMT"
+        },
+        {
+          "title": "NFL news roundup: Bucs' OLB Rueben Bain Jr. (shoulder), Ravens WR Zay Flowers (hamstring) full participants",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeGRVSjdTbmEtM19CaUxKek5VQzNKNHJyeGFNclE2Y05WU0NFdkFObWpsOVZNUmZJWlVwa3lnMDNPbEEtUnBoVWJ3VnRWcXJlV2tyWEZJa2JPQjNBdnN0ajRnWlU1amxoT0VtWV9YWE1hSUJRWEk2NDBQME52NXRHVENuNFRfZUhSVGd5MlNn?oc=5",
+          "publisher": "NFL.com",
+          "kind": "article",
+          "snippet": "NFL news roundup: Bucs' OLB Rueben Bain Jr. (shoulder), Ravens WR Zay Flowers (hamstring) full participants NFL.com",
+          "published": "Thu, 10 Sep 2026 19:18:15 GMT"
+        },
+        {
+          "title": "Zay Flowers upgraded on Ravens’ Week 1 injury report",
+          "url": "https://sports.yahoo.com/articles/zay-flowers-upgraded-ravens-week-110000379.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Ravens’ star wide receiver should be good to go for Baltimore’s Week 1 against the Indianapolis Colts.",
+          "published": "Fri, 11 Sep 2026 11:00:00 +0000"
+        },
+        {
+          "title": "Zay Flowers upgraded on Ravens’ Week 1 injury report",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRk1CekYzQ0l4T00ybWU0TklrY0xHcllYakdMcWt4UENabGpTamNEVEoxQmpES1pCak5TSzZZaVlEQWh1QUhGeUN6VnBxWWY5OFJxVWhlQ3U5RjVJbzlYWk5ab2wxTHB0WlJFRFRMdjRtRzdNckV4ZWtlZ0s0TXk1eVlEdEZBLXBa?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Zay Flowers upgraded on Ravens’ Week 1 injury report Yahoo Sports",
+          "published": "Fri, 11 Sep 2026 11:00:00 GMT"
+        },
+        {
+          "title": "Rueben Bain Jr. (shoulder) not listed on injury report for Week 1.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1TSE5MQXFDaVhCQXZBUlVxVWlBU2tRUHdOQmJiQ2VXZ0U4R1dJZnVZeWdjVHQ5OUtCaDVrTm9XczRkT3padWpNTmlQamRDUHQzVjRsY2o3T3BQMDZLS3hsZnRR?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Rueben Bain Jr. (shoulder) not listed on injury report for Week 1. x.com",
+          "published": "Fri, 11 Sep 2026 18:32:28 GMT"
+        },
+        {
+          "title": "Ravens injury report: WR Zay Flowers (hamstring) good to go for Sunday vs. Colts https://t.co/Cb4cD5KBZJ",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE10dGRxWmdtR1A0TzlTWDYtOWxuemZDQUdXZC0tSUtnV1dySjFJWG5GaGluSXdXN2dFbGxRZmVtV3NjWENFTXVTcEQta1lEdVJsbllOQlp4dnN6ODYwLU1mQ3Nabw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Ravens injury report: WR Zay Flowers (hamstring) good to go for Sunday vs. Colts https://t.co/Cb4cD5KBZJ x.com",
+          "published": "Fri, 11 Sep 2026 20:35:34 GMT"
+        },
+        {
+          "title": "Zay Flowers (hamstring) not listed on injury report for Week 1.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5SSWNLbUtLNGtmUkJ0V253Tkh4VW9kaklPRjhSLTVNbUMyV1NUdDZfRW1SQW44ZTJDd0dyTGNzdVcwbnRyanI5TEZqMGllelVKLWZ4LWFNVmN5Ymp2MlFEUjJB?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Zay Flowers (hamstring) not listed on injury report for Week 1. x.com",
+          "published": "Fri, 11 Sep 2026 20:06:40 GMT"
+        }
+      ]
+    },
+    {
       "id": "jonathon-brooks-practicing-pads-wednesday-00b9adf3",
       "slug": "jonathon-brooks-practicing-pads-wednesday-00b9adf3",
       "sport": "football",
@@ -8872,184 +9073,6 @@
           "kind": "article",
           "snippet": "Bo Nix receives promising injury timeline before Broncos minicamp Ducks Wire",
           "published": "Tue, 09 Jun 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "jalen-mcmillan-doubtful-bucs-emeka-egbuka-set-play-1f39f1f2",
-      "slug": "jalen-mcmillan-doubtful-bucs-emeka-egbuka-set-play-1f39f1f2",
-      "sport": "football",
-      "headline": "Jalen McMillan doubtful for Bucs, but Emeka Egbuka is set to play",
-      "blurb": "The Tampa Bay Buccaneers will enter Sunday’s season opener against the Cincinnati Bengals with three players listed as doubtful and another questionable on the final injury report.",
-      "summary": "Jalen McMillan, Sean Tucker and Emeka Egbuka: The Tampa Bay Buccaneers will enter Sunday’s season opener against the Cincinnati Bengals with three players listed as doubtful and another questionable on the final injury report. Wide receiver Jalen McMillan (knee), offensive tackle Justin Skule (oblique) and running back Sean Tucker (hamstring) are doubtful after all three were limited during Friday’s practice. Buccaneers at Bengals: Final Injury Report for Week 1 bucsnation.com Aggregated from SB Nation, bucsnation.com, PFT feed.",
-      "category": "injury",
-      "published": "2026-09-11T18:43:45Z",
-      "updated": "2026-09-11T22:21:17Z",
-      "players": [
-        {
-          "key": "jalen mcmillan",
-          "name": "Jalen McMillan",
-          "slug": "jalen-mcmillan",
-          "pos": "WR",
-          "team": "TB"
-        },
-        {
-          "key": "sean tucker",
-          "name": "Sean Tucker",
-          "slug": "sean-tucker",
-          "pos": "RB",
-          "team": "TB"
-        },
-        {
-          "key": "emeka egbuka",
-          "name": "Emeka Egbuka",
-          "slug": "emeka-egbuka",
-          "pos": "WR",
-          "team": "TB"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jalen McMillan doubtful for Bucs, but Emeka Egbuka is set to play",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jalen-mcmillan-doubtful-for-bucs-but-emeka-egbuka-is-set-to-play",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "The Buccaneers will likely be down one wide receiver when they open the regular season against the Bengals on Sunday.",
-          "published": "Fri, 11 Sep 2026 14:43:45 -0400"
-        },
-        {
-          "title": "Buccaneers at Bengals: Final Injury Report for Week 1",
-          "url": "https://sports.yahoo.com/articles/buccaneers-bengals-final-injury-report-222117885.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Tampa Bay Buccaneers will enter Sunday’s season opener against the Cincinnati Bengals with three players listed as doubtful and another questionable on the final injury report. Wide receiver Jalen McMillan (knee), offensive tackle Justin Skule (oblique) and running back Sean ",
-          "published": "Fri, 11 Sep 2026 22:21:17 +0000"
-        },
-        {
-          "title": "Buccaneers at Bengals: Final Injury Report for Week 1",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMU5kSUxDY1BVV3lIMll6aVkzQWVzeTVKbWpGOTl4VHdjazJwS0lLeVVMRFREMjhxSjhfbExsbUlpTXJyQXJfYmQxX3d6cmx2cWlEWDhTd1RCbUplZnZCUUhmSHNxeXYtcE9GZUZZbHFZeC1TOGVhdHJmaTdzSmVORVFwbHE0NEN5ak03cE5xOVp5UDRWclE1dUpyYUtHWnBhbXBsejlEQkZpcUMzRW5pNlln?oc=5",
-          "publisher": "bucsnation.com",
-          "kind": "article",
-          "snippet": "Buccaneers at Bengals: Final Injury Report for Week 1 bucsnation.com",
-          "published": "Fri, 11 Sep 2026 22:21:17 GMT"
-        }
-      ]
-    },
-    {
-      "id": "ravens-wr-zay-flowers-estimated-full-practice-participant-3ec2ecb6",
-      "slug": "ravens-wr-zay-flowers-estimated-full-practice-participant-3ec2ecb6",
-      "sport": "football",
-      "headline": "NFL news roundup: Bucs' OLB Rueben Bain Jr. (shoulder), Ravens WR Zay Flowers (hamstring) full participants",
-      "blurb": "Ravens injury report: WR Zay Flowers (hamstring) good to go for Sunday vs.",
-      "summary": "Ravens injury report: WR Zay Flowers (hamstring) good to go for Sunday vs. Colts https://t.co/Cb4cD5KBZJ x.com Zay Flowers (hamstring) not listed on injury report for Week 1. Aggregated from x.com, PFT feed, RotoWire NFL, Fantasy Footballers Podcast, NBC Sports and 4 more.",
-      "category": "injury",
-      "published": "2026-09-09T20:35:49Z",
-      "updated": "2026-09-11T20:35:34Z",
-      "players": [
-        {
-          "key": "zay flowers",
-          "name": "Zay Flowers",
-          "slug": "zay-flowers",
-          "pos": "WR",
-          "team": "BAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ravens WR Zay Flowers estimated as full practice participant",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ravens-wr-zay-flowers-estimated-as-full-practice-participant",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "The Ravens did not hold a full practice on Thursday, but their estimated practice report included an encouraging upgrade.",
-          "published": "Thu, 10 Sep 2026 17:15:11 -0400"
-        },
-        {
-          "title": "Zay Flowers: Upgrades to full Thursday",
-          "url": "https://www.rotowire.com//football/player/zay-flowers-16919",
-          "publisher": "RotoWire NFL",
-          "kind": "article",
-          "snippet": "Flowers (hamstring) was a full participant at Thursday's practice. Visit RotoWire.com for more analysis on this update.",
-          "published": "Thu, 10 Sep 2026 1:42:00 PM PDT"
-        },
-        {
-          "title": "Zay Flowers Upgrades to full Thursday",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWk9HY1hSQTB4S2JsbzB3UTFVTE96YVZieXFDWEhwNHh0NlFJeC01VWFsclFWSmdhQU5FQmZhVFBURml0a3FaTWdUUWhIb1g0U1FOWWRrdlEyMmd5ZWZ5TUUzRTdRZjE4akJST21VYmhEY1BFSGk4eGFLZ0hBYnY4N1hJY1NJWkFrYVJLbkg3ZFdjQQ?oc=5",
-          "publisher": "Fantasy Footballers Podcast",
-          "kind": "article",
-          "snippet": "Zay Flowers Upgrades to full Thursday Fantasy Footballers Podcast",
-          "published": "Thu, 10 Sep 2026 20:53:40 GMT"
-        },
-        {
-          "title": "Ravens WR Zay Flowers estimated as full practice participant",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQXZyOHZ0SzhlaTcxTDZlc0ZxSTMxZ1VhTk92TlQ2R1d4bW9aWDluZjFtSV9kcW1tdmh2LWZOTU44X2UwT2dQV2EzUUR4aDdxRUtSdi0xcFotTHFoUjFkaHNER0xmdi1hUXdpRzJ5eUVJQ2JCRHY1aWFJZzMxQmctOUF4d3c3TE1SOW91bzVWSTNkdXBmRUlYUlF5SjJ1X2M1bVpTcEEyOTRwb3Y3anAxa1BhQmRuYnRXQ0NJVUdpMA?oc=5",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Ravens WR Zay Flowers estimated as full practice participant NBC Sports",
-          "published": "Thu, 10 Sep 2026 21:16:26 GMT"
-        },
-        {
-          "title": "Ravens WR Zay Flowers estimated as full practice participant",
-          "url": "https://sports.yahoo.com/articles/ravens-wr-zay-flowers-estimated-211511723.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "The Ravens did not hold a full practice on Thursday, but their estimated practice report included an encouraging upgrade.",
-          "published": "Thu, 10 Sep 2026 21:15:11 +0000"
-        },
-        {
-          "title": "Ravens injury report: Zay Flowers among 4 limited participants on Wednesday",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWkt5MG05X1RPY3pfWnVoZGJ6ek1Pc1ZJaWF2cFR3MnVjVnRJV0dYZlMtOG4tcVpJa2Q4aGVKaFhTbTYwNWZHN21CNkdGclNRSzlSajBNNEg5QzFTVUR2SHU5YnJ4Q3VHSzlUT0NWVUxIeGI5Vk1iWXJ1eU9yN1J6R1BCOURxcmFw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Ravens injury report: Zay Flowers among 4 limited participants on Wednesday Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 20:35:49 GMT"
-        },
-        {
-          "title": "NFL news roundup: Bucs' OLB Rueben Bain Jr. (shoulder), Ravens WR Zay Flowers (hamstring) full participants",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeGRVSjdTbmEtM19CaUxKek5VQzNKNHJyeGFNclE2Y05WU0NFdkFObWpsOVZNUmZJWlVwa3lnMDNPbEEtUnBoVWJ3VnRWcXJlV2tyWEZJa2JPQjNBdnN0ajRnWlU1amxoT0VtWV9YWE1hSUJRWEk2NDBQME52NXRHVENuNFRfZUhSVGd5MlNn?oc=5",
-          "publisher": "NFL.com",
-          "kind": "article",
-          "snippet": "NFL news roundup: Bucs' OLB Rueben Bain Jr. (shoulder), Ravens WR Zay Flowers (hamstring) full participants NFL.com",
-          "published": "Thu, 10 Sep 2026 19:18:15 GMT"
-        },
-        {
-          "title": "Zay Flowers upgraded on Ravens’ Week 1 injury report",
-          "url": "https://sports.yahoo.com/articles/zay-flowers-upgraded-ravens-week-110000379.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Ravens’ star wide receiver should be good to go for Baltimore’s Week 1 against the Indianapolis Colts.",
-          "published": "Fri, 11 Sep 2026 11:00:00 +0000"
-        },
-        {
-          "title": "Zay Flowers upgraded on Ravens’ Week 1 injury report",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRk1CekYzQ0l4T00ybWU0TklrY0xHcllYakdMcWt4UENabGpTamNEVEoxQmpES1pCak5TSzZZaVlEQWh1QUhGeUN6VnBxWWY5OFJxVWhlQ3U5RjVJbzlYWk5ab2wxTHB0WlJFRFRMdjRtRzdNckV4ZWtlZ0s0TXk1eVlEdEZBLXBa?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Zay Flowers upgraded on Ravens’ Week 1 injury report Yahoo Sports",
-          "published": "Fri, 11 Sep 2026 11:00:00 GMT"
-        },
-        {
-          "title": "Rueben Bain Jr. (shoulder) not listed on injury report for Week 1.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1TSE5MQXFDaVhCQXZBUlVxVWlBU2tRUHdOQmJiQ2VXZ0U4R1dJZnVZeWdjVHQ5OUtCaDVrTm9XczRkT3padWpNTmlQamRDUHQzVjRsY2o3T3BQMDZLS3hsZnRR?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Rueben Bain Jr. (shoulder) not listed on injury report for Week 1. x.com",
-          "published": "Fri, 11 Sep 2026 18:32:28 GMT"
-        },
-        {
-          "title": "Ravens injury report: WR Zay Flowers (hamstring) good to go for Sunday vs. Colts https://t.co/Cb4cD5KBZJ",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE10dGRxWmdtR1A0TzlTWDYtOWxuemZDQUdXZC0tSUtnV1dySjFJWG5GaGluSXdXN2dFbGxRZmVtV3NjWENFTXVTcEQta1lEdVJsbllOQlp4dnN6ODYwLU1mQ3Nabw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Ravens injury report: WR Zay Flowers (hamstring) good to go for Sunday vs. Colts https://t.co/Cb4cD5KBZJ x.com",
-          "published": "Fri, 11 Sep 2026 20:35:34 GMT"
-        },
-        {
-          "title": "Zay Flowers (hamstring) not listed on injury report for Week 1.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5SSWNLbUtLNGtmUkJ0V253Tkh4VW9kaklPRjhSLTVNbUMyV1NUdDZfRW1SQW44ZTJDd0dyTGNzdVcwbnRyanI5TEZqMGllelVKLWZ4LWFNVmN5Ymp2MlFEUjJB?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Zay Flowers (hamstring) not listed on injury report for Week 1. x.com",
-          "published": "Fri, 11 Sep 2026 20:06:40 GMT"
         }
       ]
     },
@@ -10080,6 +10103,59 @@
       ]
     },
     {
+      "id": "1-picks-odds-best-bets-aaron-rodgers-beats-deb92d5b",
+      "slug": "1-picks-odds-best-bets-aaron-rodgers-beats-deb92d5b",
+      "sport": "football",
+      "headline": "NFL Week 1 picks, odds, best bets: Aaron Rodgers beats Falcons, Broncos upset Patrick Mahomes and the Chiefs",
+      "blurb": "AFC Notes: Patrick Mahomes, Treydan Stukes, Broncos, Chiefs, Raiders NFLTradeRumors.co",
+      "summary": "AFC Notes: Patrick Mahomes, Treydan Stukes, Broncos, Chiefs, Raiders NFLTradeRumors.co Reigning picks champ Jordan Dajani gives his picks for Week 1 of the 2025 NFL season Will Patrick Mahomes play vs. Aggregated from NFLTradeRumors.co, CBS NFL, Chiefs Wire.",
+      "category": "injury",
+      "published": "2026-09-10T22:10:00Z",
+      "updated": "2026-09-12T01:00:18Z",
+      "players": [
+        {
+          "key": "patrick mahomes",
+          "name": "Patrick Mahomes",
+          "slug": "patrick-mahomes",
+          "pos": "QB",
+          "team": "KC"
+        },
+        {
+          "key": "aaron rodgers",
+          "name": "Aaron Rodgers",
+          "slug": "aaron-rodgers",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "NFL Week 1 picks, odds, best bets: Aaron Rodgers beats Falcons, Broncos upset Patrick Mahomes and the Chiefs",
+          "url": "https://www.cbssports.com/nfl/news/nfl-week-1-picks-odds-best-bets-steelers-broncos/",
+          "publisher": "CBS NFL",
+          "kind": "article",
+          "snippet": "Reigning picks champ Jordan Dajani gives his picks for Week 1 of the 2025 NFL season",
+          "published": "Fri, 11 Sep 2026 13:49:06 +0000"
+        },
+        {
+          "title": "Will Patrick Mahomes play vs. Broncos? Injury update for Chiefs QB",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPSzR3MmE2QnBQb203eGtjWVlNSW1lRk1KT0N0YTB5OVJYWkxlaVN5MnVZci1yWG52bFotTzBMVHdZQmtmdUpxUFEtZHpuMl9DTFZpSmdVeE9ZWjlnVi1WMHlQUHRRN2VzbnpzNmNoeDJuN0wyS19ELUVUN0NUdDlzMGJjcndmRTI1UjlyRUFLd2N1RVdvQzJuTVI0YXVVSEVVU2Z3VEs1ZmpGeFZqMG1HU1NwWHo1UzdrQUIyRlRrWVNFYWlEclc2cHh3cUlYU0JJVWtIYzhPVTViOWt4YmNfeDJLN010TDlIMVNVb0RzM01zSXhlU2RRR3UzRlZLTUM2X2pIS1A0OA?oc=5",
+          "publisher": "Chiefs Wire",
+          "kind": "article",
+          "snippet": "Will Patrick Mahomes play vs. Broncos? Injury update for Chiefs QB Chiefs Wire",
+          "published": "Thu, 10 Sep 2026 22:10:00 GMT"
+        },
+        {
+          "title": "AFC Notes: Patrick Mahomes, Treydan Stukes, Broncos, Chiefs, Raiders",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbVZJUFNSV3J6Yld2c01CX3BRU3JZbzQ5V3ZjeWxhXzFudmcxcUxUZ2ExSVVwVmk0QkNoTEVLQVdNekE0ZWFWRUJXM1JqbmZFbk1ITVJJYzVlYmNhSjBsSko1bTVFMWlmWTBqZ0hXMXZRYm1GVnlzTEc0cWRXS2hlaWpNLW9pUzI0eHlNQmNNNlZOanRD?oc=5",
+          "publisher": "NFLTradeRumors.co",
+          "kind": "article",
+          "snippet": "AFC Notes: Patrick Mahomes, Treydan Stukes, Broncos, Chiefs, Raiders NFLTradeRumors.co",
+          "published": "Sat, 12 Sep 2026 01:00:18 GMT"
+        }
+      ]
+    },
+    {
       "id": "review-commanders-ol-ravens-practice-troubling-jayden-daniels-a6c1c4ab",
       "slug": "review-commanders-ol-ravens-practice-troubling-jayden-daniels-a6c1c4ab",
       "sport": "football",
@@ -10245,55 +10321,88 @@
       ]
     },
     {
-      "id": "1-picks-odds-best-bets-aaron-rodgers-beats-deb92d5b",
-      "slug": "1-picks-odds-best-bets-aaron-rodgers-beats-deb92d5b",
+      "id": "bears-extend-rb-d-andre-swift-three-year-846828d3",
+      "slug": "bears-extend-rb-d-andre-swift-three-year-846828d3",
       "sport": "football",
-      "headline": "NFL Week 1 picks, odds, best bets: Aaron Rodgers beats Falcons, Broncos upset Patrick Mahomes and the Chiefs",
-      "blurb": "AFC Notes: Patrick Mahomes, Treydan Stukes, Broncos, Chiefs, Raiders NFLTradeRumors.co",
-      "summary": "AFC Notes: Patrick Mahomes, Treydan Stukes, Broncos, Chiefs, Raiders NFLTradeRumors.co Reigning picks champ Jordan Dajani gives his picks for Week 1 of the 2025 NFL season Will Patrick Mahomes play vs. Aggregated from NFLTradeRumors.co, CBS NFL, Chiefs Wire.",
-      "category": "injury",
-      "published": "2026-09-10T22:10:00Z",
-      "updated": "2026-09-12T01:00:18Z",
+      "headline": "Bears extend RB D'Andre Swift to three-year, $33.75 million deal, per report",
+      "blurb": "Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed.",
+      "summary": "D'Andre Swift: Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed. This is now Swift’s third NFL contract. Trevon Smith and David Mulugheta of Athletes First and the Bears just x.com Aggregated from x.com, CBS NFL, USA TODAY Sports, SB Nation, ProFootball Talk on NBC Sports and 3 more.",
+      "category": "roster",
+      "published": "2026-09-11T19:33:59Z",
+      "updated": "2026-09-11T20:03:55Z",
       "players": [
         {
-          "key": "patrick mahomes",
-          "name": "Patrick Mahomes",
-          "slug": "patrick-mahomes",
-          "pos": "QB",
-          "team": "KC"
-        },
-        {
-          "key": "aaron rodgers",
-          "name": "Aaron Rodgers",
-          "slug": "aaron-rodgers",
-          "pos": "",
-          "team": ""
+          "key": "dandre swift",
+          "name": "D'Andre Swift",
+          "slug": "dandre-swift",
+          "pos": "RB",
+          "team": "CHI"
         }
       ],
       "sources": [
         {
-          "title": "NFL Week 1 picks, odds, best bets: Aaron Rodgers beats Falcons, Broncos upset Patrick Mahomes and the Chiefs",
-          "url": "https://www.cbssports.com/nfl/news/nfl-week-1-picks-odds-best-bets-steelers-broncos/",
+          "title": "Bears extend RB D'Andre Swift to three-year, $33.75 million deal, per report",
+          "url": "https://www.cbssports.com/nfl/news/bears-re-sign-dandre-swift-to-three-year-deal/",
           "publisher": "CBS NFL",
           "kind": "article",
-          "snippet": "Reigning picks champ Jordan Dajani gives his picks for Week 1 of the 2025 NFL season",
-          "published": "Fri, 11 Sep 2026 13:49:06 +0000"
+          "snippet": "Swift is fresh off producing career highs in scrimmage yards (1,386) and touchdowns (10) under Ben Johnson in 2025",
+          "published": "Fri, 11 Sep 2026 20:03:55 +0000"
         },
         {
-          "title": "Will Patrick Mahomes play vs. Broncos? Injury update for Chiefs QB",
-          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPSzR3MmE2QnBQb203eGtjWVlNSW1lRk1KT0N0YTB5OVJYWkxlaVN5MnVZci1yWG52bFotTzBMVHdZQmtmdUpxUFEtZHpuMl9DTFZpSmdVeE9ZWjlnVi1WMHlQUHRRN2VzbnpzNmNoeDJuN0wyS19ELUVUN0NUdDlzMGJjcndmRTI1UjlyRUFLd2N1RVdvQzJuTVI0YXVVSEVVU2Z3VEs1ZmpGeFZqMG1HU1NwWHo1UzdrQUIyRlRrWVNFYWlEclc2cHh3cUlYU0JJVWtIYzhPVTViOWt4YmNfeDJLN010TDlIMVNVb0RzM01zSXhlU2RRR3UzRlZLTUM2X2pIS1A0OA?oc=5",
-          "publisher": "Chiefs Wire",
+          "title": "Bears lock in RB D'Andre Swift with contract extension",
+          "url": "https://sports.yahoo.com/articles/bears-lock-rb-dandre-swift-194806668.html",
+          "publisher": "USA TODAY Sports",
           "kind": "article",
-          "snippet": "Will Patrick Mahomes play vs. Broncos? Injury update for Chiefs QB Chiefs Wire",
-          "published": "Thu, 10 Sep 2026 22:10:00 GMT"
+          "snippet": "D'Andre Swift was entering the final year of his deal with the Chicago Bears. Now he'll be in the Windy City much longer.",
+          "published": "Fri, 11 Sep 2026 19:48:06 +0000"
         },
         {
-          "title": "AFC Notes: Patrick Mahomes, Treydan Stukes, Broncos, Chiefs, Raiders",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNbVZJUFNSV3J6Yld2c01CX3BRU3JZbzQ5V3ZjeWxhXzFudmcxcUxUZ2ExSVVwVmk0QkNoTEVLQVdNekE0ZWFWRUJXM1JqbmZFbk1ITVJJYzVlYmNhSjBsSko1bTVFMWlmWTBqZ0hXMXZRYm1GVnlzTEc0cWRXS2hlaWpNLW9pUzI0eHlNQmNNNlZOanRD?oc=5",
-          "publisher": "NFLTradeRumors.co",
+          "title": "Bears extend D’Andre Swift to three-year, $33.75 million deal",
+          "url": "https://sports.yahoo.com/articles/bears-extend-d-andre-swift-194738460.html",
+          "publisher": "SB Nation",
           "kind": "article",
-          "snippet": "AFC Notes: Patrick Mahomes, Treydan Stukes, Broncos, Chiefs, Raiders NFLTradeRumors.co",
-          "published": "Sat, 12 Sep 2026 01:00:18 GMT"
+          "snippet": "The Bears have paid one of their own, signing D’Andre Swift to a three-year contract extension.",
+          "published": "Fri, 11 Sep 2026 19:47:38 +0000"
+        },
+        {
+          "title": "Bears, D'Andre Swift agree to three-year contract extension",
+          "url": "https://sports.yahoo.com/articles/bears-dandre-swift-agree-three-194518212.html",
+          "publisher": "ProFootball Talk on NBC Sports",
+          "kind": "article",
+          "snippet": "Bears running back D'Andre Swift will kick off the new season with a new contract.",
+          "published": "Fri, 11 Sep 2026 19:45:18 +0000"
+        },
+        {
+          "title": "Bears, D'Andre Swift agree to three-year contract extension",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-dandre-swift-agree-to-three-year-contract-extension",
+          "publisher": "PFT feed",
+          "kind": "article",
+          "snippet": "Bears running back D'Andre Swift will kick off the new season with a new contract.",
+          "published": "Fri, 11 Sep 2026 15:45:18 -0400"
+        },
+        {
+          "title": "BREAKING: Bears Signing RB D’Andre Swift To Three-Year, $33.75M Extension",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaHIzcWg4X3pJekZnc0dyN0s1NUItdzRyNkhSTEJBRkRmQmtvUWdJQzlyZFdiVFF1WHdQU0w2TmRxMVVUUm5uWXdiLVFtM3djdGJhbEtmaEVkOGk0cDVPTXFveGtEYTVSQzZ0YkFkel9jcnZTRF9SRnM0dEFOc3pjMzFCZDRNcXhiWGUxa1dYRHVyaDNmYjhONktIaGU?oc=5",
+          "publisher": "nfltraderumors.co",
+          "kind": "article",
+          "snippet": "BREAKING: Bears Signing RB D’Andre Swift To Three-Year, $33.75M Extension nfltraderumors.co",
+          "published": "Fri, 11 Sep 2026 19:39:15 GMT"
+        },
+        {
+          "title": "RB D'Andre Swift becomes latest key Bears player to earn a big extension",
+          "url": "https://sports.yahoo.com/nfl/article/rb-dandre-swift-becomes-latest-key-bears-player-to-earn-a-big-extension-195342263.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The Bears and RB D’Andre Swift have agreed to a three-year extension worth $33.75 million.",
+          "published": "Fri, 11 Sep 2026 19:53:42 +0000"
+        },
+        {
+          "title": "Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed. This is now Swift’s third NFL contract. Trevon Smith and David Mulugheta of Athletes First and the Bears just",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5Telc0WXVfcG15TGMtZmJNQVlUeml4YzlRaVZrSDFMMU9BTmVlTFROcE8xWDdYZ3d1c0stSER1cDIzaklCRXNkTDBYN01fVnBHbjk1bi1XazZJdDZVR1JwM2RKZw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed. This is now Swift’s third NFL contract. Trevon Smith and David Mulugheta of Athletes First and the Bears just x.com",
+          "published": "Fri, 11 Sep 2026 19:33:59 GMT"
         }
       ]
     },
@@ -10948,92 +11057,6 @@
       ]
     },
     {
-      "id": "bears-extend-rb-d-andre-swift-three-year-846828d3",
-      "slug": "bears-extend-rb-d-andre-swift-three-year-846828d3",
-      "sport": "football",
-      "headline": "Bears extend RB D'Andre Swift to three-year, $33.75 million deal, per report",
-      "blurb": "Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed.",
-      "summary": "D'Andre Swift: Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed. This is now Swift’s third NFL contract. Trevon Smith and David Mulugheta of Athletes First and the Bears just x.com Aggregated from x.com, CBS NFL, USA TODAY Sports, SB Nation, ProFootball Talk on NBC Sports and 3 more.",
-      "category": "roster",
-      "published": "2026-09-11T19:33:59Z",
-      "updated": "2026-09-11T20:03:55Z",
-      "players": [
-        {
-          "key": "dandre swift",
-          "name": "D'Andre Swift",
-          "slug": "dandre-swift",
-          "pos": "RB",
-          "team": "CHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Bears extend RB D'Andre Swift to three-year, $33.75 million deal, per report",
-          "url": "https://www.cbssports.com/nfl/news/bears-re-sign-dandre-swift-to-three-year-deal/",
-          "publisher": "CBS NFL",
-          "kind": "article",
-          "snippet": "Swift is fresh off producing career highs in scrimmage yards (1,386) and touchdowns (10) under Ben Johnson in 2025",
-          "published": "Fri, 11 Sep 2026 20:03:55 +0000"
-        },
-        {
-          "title": "Bears lock in RB D'Andre Swift with contract extension",
-          "url": "https://sports.yahoo.com/articles/bears-lock-rb-dandre-swift-194806668.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "D'Andre Swift was entering the final year of his deal with the Chicago Bears. Now he'll be in the Windy City much longer.",
-          "published": "Fri, 11 Sep 2026 19:48:06 +0000"
-        },
-        {
-          "title": "Bears extend D’Andre Swift to three-year, $33.75 million deal",
-          "url": "https://sports.yahoo.com/articles/bears-extend-d-andre-swift-194738460.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Bears have paid one of their own, signing D’Andre Swift to a three-year contract extension.",
-          "published": "Fri, 11 Sep 2026 19:47:38 +0000"
-        },
-        {
-          "title": "Bears, D'Andre Swift agree to three-year contract extension",
-          "url": "https://sports.yahoo.com/articles/bears-dandre-swift-agree-three-194518212.html",
-          "publisher": "ProFootball Talk on NBC Sports",
-          "kind": "article",
-          "snippet": "Bears running back D'Andre Swift will kick off the new season with a new contract.",
-          "published": "Fri, 11 Sep 2026 19:45:18 +0000"
-        },
-        {
-          "title": "Bears, D'Andre Swift agree to three-year contract extension",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bears-dandre-swift-agree-to-three-year-contract-extension",
-          "publisher": "PFT feed",
-          "kind": "article",
-          "snippet": "Bears running back D'Andre Swift will kick off the new season with a new contract.",
-          "published": "Fri, 11 Sep 2026 15:45:18 -0400"
-        },
-        {
-          "title": "BREAKING: Bears Signing RB D’Andre Swift To Three-Year, $33.75M Extension",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaHIzcWg4X3pJekZnc0dyN0s1NUItdzRyNkhSTEJBRkRmQmtvUWdJQzlyZFdiVFF1WHdQU0w2TmRxMVVUUm5uWXdiLVFtM3djdGJhbEtmaEVkOGk0cDVPTXFveGtEYTVSQzZ0YkFkel9jcnZTRF9SRnM0dEFOc3pjMzFCZDRNcXhiWGUxa1dYRHVyaDNmYjhONktIaGU?oc=5",
-          "publisher": "nfltraderumors.co",
-          "kind": "article",
-          "snippet": "BREAKING: Bears Signing RB D’Andre Swift To Three-Year, $33.75M Extension nfltraderumors.co",
-          "published": "Fri, 11 Sep 2026 19:39:15 GMT"
-        },
-        {
-          "title": "RB D'Andre Swift becomes latest key Bears player to earn a big extension",
-          "url": "https://sports.yahoo.com/nfl/article/rb-dandre-swift-becomes-latest-key-bears-player-to-earn-a-big-extension-195342263.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The Bears and RB D’Andre Swift have agreed to a three-year extension worth $33.75 million.",
-          "published": "Fri, 11 Sep 2026 19:53:42 +0000"
-        },
-        {
-          "title": "Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed. This is now Swift’s third NFL contract. Trevon Smith and David Mulugheta of Athletes First and the Bears just",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5Telc0WXVfcG15TGMtZmJNQVlUeml4YzlRaVZrSDFMMU9BTmVlTFROcE8xWDdYZ3d1c0stSER1cDIzaklCRXNkTDBYN01fVnBHbjk1bi1XazZJdDZVR1JwM2RKZw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Sources: RB D’Andre Swift and the Chicago Bears have reached agreeement on a 3-year, $33.75 million extension that includes $27.5M guaranteed. This is now Swift’s third NFL contract. Trevon Smith and David Mulugheta of Athletes First and the Bears just x.com",
-          "published": "Fri, 11 Sep 2026 19:33:59 GMT"
-        }
-      ]
-    },
-    {
       "id": "vikings-justin-jefferson-dishes-kyler-murray-jj-mccarthy-5ab18fdc",
       "slug": "vikings-justin-jefferson-dishes-kyler-murray-jj-mccarthy-5ab18fdc",
       "sport": "football",
@@ -11189,6 +11212,68 @@
           "kind": "article",
           "snippet": "NFL Catchup: Patrick Mahomes Update, Ja'Marr Chase Injures Knee, More Injury News FOX Sports",
           "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "malik-davis-injury-cowboys-rb-miss-extended-time-db2cdf3f",
+      "slug": "malik-davis-injury-cowboys-rb-miss-extended-time-db2cdf3f",
+      "sport": "football",
+      "headline": "Malik Davis injury update: Cowboys RB to miss extended time with hip injury",
+      "blurb": "Cowboys' Malik Davis (hip) injured in practice, out for opener ESPN",
+      "summary": "Cowboys' Malik Davis (hip) injured in practice, out for opener ESPN Cowboys RB Malik Davis to miss Week 1 after suffering injury Friday Malik Davis injury update: Cowboys RB to miss extended time with hip injury On3 Aggregated from ESPN, USA TODAY Sports, On3, x.com.",
+      "category": "injury",
+      "published": "2026-09-11T19:50:44Z",
+      "updated": "2026-09-11T21:38:59Z",
+      "players": [
+        {
+          "key": "malik davis",
+          "name": "Malik Davis",
+          "slug": "malik-davis",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Malik Davis ruled out for Week 1",
+          "url": "https://sports.yahoo.com/articles/malik-davis-ruled-week-1-213859561.html",
+          "publisher": "USA TODAY Sports",
+          "kind": "article",
+          "snippet": "Cowboys RB Malik Davis to miss Week 1 after suffering injury Friday",
+          "published": "Fri, 11 Sep 2026 21:38:59 +0000"
+        },
+        {
+          "title": "Malik Davis injury update: Cowboys RB to miss extended time with hip injury",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUHAwcXItT1preDN2UV83TFVGaUtMMml2cXFqRXA4ai1pVE8zYzRnMW1NczRzWkI1MENhN1MzamtZeXRfNzZiWFM5ZGtRU0wzdnBuOVI5UXNaLXJFTXdYS0E5ME44VTEtS3BOQXR0UUZVQUJhNmNTdWZIS3VrRGhlTmIyUGx6NlgyZlJXTk12UTlxZWR2UmlpRk15eDNUcVphVWMtc3dQV090djdXX29Hd3RiMFZZRVJ5?oc=5",
+          "publisher": "On3",
+          "kind": "article",
+          "snippet": "Malik Davis injury update: Cowboys RB to miss extended time with hip injury On3",
+          "published": "Fri, 11 Sep 2026 20:35:25 GMT"
+        },
+        {
+          "title": "Cowboys RB Malik Davis has been ruled out of Sunday’s game vs. the Giants because of a hip injury suffered in Friday’s practice, per sources. He is undergoing further examination to determine severity of the injury.",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qcGNtQUpxUVVRX0dXdGFNWk00NHl1c19qSWFUT1NTdmJ1bXM4eHBpMk56cWc5VG5ycVBURFk4UmZpdXJGZVQ2MnZOa3huV1dwZFlwZWN2OEJTWUx4RnhlVw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Cowboys RB Malik Davis has been ruled out of Sunday’s game vs. the Giants because of a hip injury suffered in Friday’s practice, per sources. He is undergoing further examination to determine severity of the injury. x.com",
+          "published": "Fri, 11 Sep 2026 19:50:44 GMT"
+        },
+        {
+          "title": "Stephen Jones: Malik Davis suffered \"pretty serious\" hip injury that \"could keep him out for some period of time,\" per @tommy_yarrish.",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1fd2c1RnUwQWFxS3U3SkgzenZSNkwzcFhMYmowQzZUWFBfa015dFdxdmtPb2xIOHhOVlBOdkNGRmI1dTU1Z1RyVU5DSmRTZjRNbV95ak1IbmNYY0ZZNERMa1Rn?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Stephen Jones: Malik Davis suffered \"pretty serious\" hip injury that \"could keep him out for some period of time,\" per @tommy_yarrish. x.com",
+          "published": "Fri, 11 Sep 2026 20:05:59 GMT"
+        },
+        {
+          "title": "Cowboys' Malik Davis (hip) injured in practice, out for opener",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSHM0NFpQSk01bkV2cjlHdlNrUWhJZzVBTk83LWtBMlV3TjdxVFhMSmd3VEtoWlVMU3ZEYUE5WFkyT0Ewb2QxMmV0c0tGejZBZzRjU1lrUXRHaVNxVF9iUWJxdFd4S3NENkQyYjBZbU4zS2VoRzdYMkoxMlJsbEphRjJHc3kwdURxdjNxcDdYdjJ1TVNLTzZJ?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Cowboys' Malik Davis (hip) injured in practice, out for opener ESPN",
+          "published": "Fri, 11 Sep 2026 20:18:00 GMT"
         }
       ]
     },
@@ -11532,6 +11617,57 @@
       ]
     },
     {
+      "id": "what-records-could-bills-players-set-houston-990e474c",
+      "slug": "what-records-could-bills-players-set-houston-990e474c",
+      "sport": "football",
+      "headline": "What records could Bills players set in Houston?",
+      "blurb": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb.",
+      "summary": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb. Board reading of SB Nation.",
+      "category": "wire",
+      "published": "2026-09-11T10:00:00Z",
+      "updated": "2026-09-11T10:00:00Z",
+      "players": [
+        {
+          "key": "khalil shakir",
+          "name": "Khalil Shakir",
+          "slug": "khalil-shakir",
+          "pos": "WR",
+          "team": "BUF"
+        },
+        {
+          "key": "dawson knox",
+          "name": "Dawson Knox",
+          "slug": "dawson-knox",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "josh allen",
+          "name": "Josh Allen",
+          "slug": "josh-allen",
+          "pos": "QB",
+          "team": "BUF"
+        },
+        {
+          "key": "james cook",
+          "name": "James Cook",
+          "slug": "james-cook",
+          "pos": "RB",
+          "team": "BUF"
+        }
+      ],
+      "sources": [
+        {
+          "title": "What records could Bills players set in Houston?",
+          "url": "https://sports.yahoo.com/articles/records-could-bills-players-set-100000761.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb.",
+          "published": "Fri, 11 Sep 2026 10:00:00 +0000"
+        }
+      ]
+    },
+    {
       "id": "what-we-learned-49ers-training-camp-leaning-brock-ef14630a",
       "slug": "what-we-learned-49ers-training-camp-leaning-brock-ef14630a",
       "sport": "football",
@@ -11620,111 +11756,6 @@
           "kind": "article",
           "snippet": "49ers training camp day 7: Injuries continue to pile up, Brock Purdy shines, more quick hits 49ers Webzone",
           "published": "Wed, 05 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "what-records-could-bills-players-set-houston-990e474c",
-      "slug": "what-records-could-bills-players-set-houston-990e474c",
-      "sport": "football",
-      "headline": "What records could Bills players set in Houston?",
-      "blurb": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb.",
-      "summary": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb. Board reading of SB Nation.",
-      "category": "wire",
-      "published": "2026-09-11T10:00:00Z",
-      "updated": "2026-09-11T10:00:00Z",
-      "players": [
-        {
-          "key": "khalil shakir",
-          "name": "Khalil Shakir",
-          "slug": "khalil-shakir",
-          "pos": "WR",
-          "team": "BUF"
-        },
-        {
-          "key": "dawson knox",
-          "name": "Dawson Knox",
-          "slug": "dawson-knox",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "josh allen",
-          "name": "Josh Allen",
-          "slug": "josh-allen",
-          "pos": "QB",
-          "team": "BUF"
-        },
-        {
-          "key": "james cook",
-          "name": "James Cook",
-          "slug": "james-cook",
-          "pos": "RB",
-          "team": "BUF"
-        }
-      ],
-      "sources": [
-        {
-          "title": "What records could Bills players set in Houston?",
-          "url": "https://sports.yahoo.com/articles/records-could-bills-players-set-100000761.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Josh Allen, James Cook, Dawson Knox, and Khalil Shakir enter Week 1 with records to extend and franchise lists to climb.",
-          "published": "Fri, 11 Sep 2026 10:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "malik-davis-injury-cowboys-rb-miss-extended-time-db2cdf3f",
-      "slug": "malik-davis-injury-cowboys-rb-miss-extended-time-db2cdf3f",
-      "sport": "football",
-      "headline": "Malik Davis injury update: Cowboys RB to miss extended time with hip injury",
-      "blurb": "Cowboys RB Malik Davis to miss Week 1 after suffering injury Friday",
-      "summary": "Cowboys RB Malik Davis to miss Week 1 after suffering injury Friday Malik Davis injury update: Cowboys RB to miss extended time with hip injury On3 Cowboys RB Malik Davis has been ruled out of Sunday’s game vs. Aggregated from USA TODAY Sports, On3, x.com.",
-      "category": "injury",
-      "published": "2026-09-11T19:50:44Z",
-      "updated": "2026-09-11T21:38:59Z",
-      "players": [
-        {
-          "key": "malik davis",
-          "name": "Malik Davis",
-          "slug": "malik-davis",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Malik Davis ruled out for Week 1",
-          "url": "https://sports.yahoo.com/articles/malik-davis-ruled-week-1-213859561.html",
-          "publisher": "USA TODAY Sports",
-          "kind": "article",
-          "snippet": "Cowboys RB Malik Davis to miss Week 1 after suffering injury Friday",
-          "published": "Fri, 11 Sep 2026 21:38:59 +0000"
-        },
-        {
-          "title": "Malik Davis injury update: Cowboys RB to miss extended time with hip injury",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUHAwcXItT1preDN2UV83TFVGaUtMMml2cXFqRXA4ai1pVE8zYzRnMW1NczRzWkI1MENhN1MzamtZeXRfNzZiWFM5ZGtRU0wzdnBuOVI5UXNaLXJFTXdYS0E5ME44VTEtS3BOQXR0UUZVQUJhNmNTdWZIS3VrRGhlTmIyUGx6NlgyZlJXTk12UTlxZWR2UmlpRk15eDNUcVphVWMtc3dQV090djdXX29Hd3RiMFZZRVJ5?oc=5",
-          "publisher": "On3",
-          "kind": "article",
-          "snippet": "Malik Davis injury update: Cowboys RB to miss extended time with hip injury On3",
-          "published": "Fri, 11 Sep 2026 20:35:25 GMT"
-        },
-        {
-          "title": "Cowboys RB Malik Davis has been ruled out of Sunday’s game vs. the Giants because of a hip injury suffered in Friday’s practice, per sources. He is undergoing further examination to determine severity of the injury.",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qcGNtQUpxUVVRX0dXdGFNWk00NHl1c19qSWFUT1NTdmJ1bXM4eHBpMk56cWc5VG5ycVBURFk4UmZpdXJGZVQ2MnZOa3huV1dwZFlwZWN2OEJTWUx4RnhlVw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Cowboys RB Malik Davis has been ruled out of Sunday’s game vs. the Giants because of a hip injury suffered in Friday’s practice, per sources. He is undergoing further examination to determine severity of the injury. x.com",
-          "published": "Fri, 11 Sep 2026 19:50:44 GMT"
-        },
-        {
-          "title": "Stephen Jones: Malik Davis suffered \"pretty serious\" hip injury that \"could keep him out for some period of time,\" per @tommy_yarrish.",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1fd2c1RnUwQWFxS3U3SkgzenZSNkwzcFhMYmowQzZUWFBfa015dFdxdmtPb2xIOHhOVlBOdkNGRmI1dTU1Z1RyVU5DSmRTZjRNbV95ak1IbmNYY0ZZNERMa1Rn?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Stephen Jones: Malik Davis suffered \"pretty serious\" hip injury that \"could keep him out for some period of time,\" per @tommy_yarrish. x.com",
-          "published": "Fri, 11 Sep 2026 20:05:59 GMT"
         }
       ]
     },
