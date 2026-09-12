@@ -441,10 +441,16 @@ def main():
     league_html = html_of("league.html")
     assert "<h1>My Team</h1>" in league_html
     assert "sleeper-id" in league_html
+    assert 'id="saved-leagues"' in league_html
     assert "yahoo-paste" not in league_html
     assert "Yahoo" not in league_html
     assert "js/league.js" in league_html
     assert "Sample league" in league_html
+    league_js = (root / "js/league.js").read_text()
+    assert "localStorage" in league_js
+    assert "bk-sleeper-leagues" in league_js
+    assert "rememberLeague" in league_js
+    assert "forgetAll" in league_js
     assert ">My Team</a>" in html_of("index.html")
     assert "\u2014" not in league_html
     assert " is the " not in league_html

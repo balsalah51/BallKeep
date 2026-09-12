@@ -765,7 +765,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 56
+CSS_VER = 57
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -3524,6 +3524,7 @@ def main():
       <h3>Information We Collect</h3>
       <p><strong>Automatically collected information.</strong> Like most websites, we automatically collect certain information when you visit, including your IP address, browser type, device type, pages viewed, and time spent on the site. This is collected through cookies, log files, and similar technologies.</p>
       <p><strong>Information you provide.</strong> We do not require account creation or collect personal information such as your name, email address, or payment details through this site.</p>
+      <p><strong>Sleeper league IDs on My Team.</strong> If you load a Sleeper league, this browser stores that league ID and name on your device so the page can open it again. Those IDs stay in your browser. They are not sent to Ball Keep servers. You can forget one ID or forget all of them on My Team.</p>
 
       <h3>Cookies</h3>
       <p>We use cookies and similar tracking technologies to:</p>

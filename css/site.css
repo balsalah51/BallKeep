@@ -862,6 +862,14 @@ body.mine-page h1 { color: #8a4c0a; }
   width: 100%; font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px;
 }
 .league-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; align-items: center; }
+.saved-leagues { margin-top: 12px; }
+.saved-leagues[hidden] { display: none; }
+.saved-leagues .kicker { margin: 0 0 8px; }
+.league-forget {
+  border: 0; background: transparent; color: var(--muted); font: inherit; font-weight: 800;
+  cursor: pointer; padding: 7px 4px;
+}
+.league-forget:hover { color: var(--red-dark); }
 .league-app { margin-top: 8px; }
 .league-head { margin-bottom: 18px; }
 .league-head h2 { margin: 4px 0 8px; font-size: 30px; letter-spacing: -0.03em; }
