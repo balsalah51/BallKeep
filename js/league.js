@@ -50,6 +50,18 @@
     return (state.lookup.bySleeper || {})[String(id)] || null;
   }
 
+  function rosterIds(r) {
+    const seen = {};
+    const out = [];
+    (r.players || []).concat(r.taxi || []).concat(r.reserve || []).forEach(function (sid) {
+      const id = String(sid || "");
+      if (!id || seen[id]) return;
+      seen[id] = true;
+      out.push(id);
+    });
+    return out;
+  }
+
   function packFromName(name) {
     return (state.lookup.byName || {})[norm(name)] || null;
   }
@@ -79,7 +91,9 @@
     }
     const m = label.match(/(\d{4})\s+(Early|Mid|Late)?\s*(1st|2nd|3rd)/);
     if (!m) return 0;
-    const fallback = "2028 " + (m[3] === "1st" ? (m[2] || "Mid") + " 1st" : m[3] === "2nd" ? "2nd" : "3rd");
+    const yr = parseInt(m[1], 10);
+    const year = yr >= 2029 ? "2029" : "2028";
+    const fallback = year + " " + (m[3] === "1st" ? (m[2] || "Mid") + " 1st" : m[3] === "2nd" ? "2nd" : "3rd");
     for (let i = 0; i < hits.length; i++) {
       if (hits[i].name === fallback) return hits[i].value || 0;
     }
@@ -286,16 +300,21 @@
         const img = '<img src="' + esc(f.image) + '" alt="' + esc(f.name) + '" width="160" height="160" />';
         return '<div class="league-hero-face">' + (f.href ? '<a href="' + esc(f.href) + '">' + img + "</a>" : img) + "<span>" + esc(f.name) + "</span></div>";
       }).join("");
-      const top = t.assets.slice(0, 8).map(function (a) {
+      const roster = t.assets.map(function (a) {
         const name = a.href ? '<a href="' + esc(a.href) + '">' + esc(a.name) + "</a>" : esc(a.name);
         return "<li><span>" + name + ' <small>' + esc(a.pos) + "</small></span><strong>" + (a.matched ? fmt(a.value) : "skip") + "</strong></li>";
       }).join("");
+      const nPlayers = t.assets.filter(function (a) { return a.kind === "player"; }).length;
+      const nPicks = t.assets.filter(function (a) { return a.kind === "pick"; }).length;
+      const count = nPlayers + " player" + (nPlayers === 1 ? "" : "s") +
+        (nPicks ? " · " + nPicks + " pick" + (nPicks === 1 ? "" : "s") : "");
       return '<article class="league-card">' +
         '<p class="kicker">#' + t.power + (t.wins != null ? " · " + t.wins + "-" + (t.losses || 0) : "") + "</p>" +
         "<h3>" + esc(t.name) + "</h3>" +
         '<p class="league-total">' + fmt(t.total) + "</p>" +
         '<div class="league-heroes">' + faces + "</div>" +
-        "<ol>" + top + "</ol></article>";
+        '<p class="roster-count">' + count + "</p>" +
+        "<ol>" + roster + "</ol></article>";
     }).join("");
 
     const adds = waivers().map(function (p, i) {
@@ -309,7 +328,7 @@
       '<section class="league-head">' +
         "<p class=\"kicker\">" + esc(state.meta.platform) + " · " + esc(state.meta.season) + " · " + esc(state.meta.kind) + " · " + esc(state.meta.scoring) + "</p>" +
         "<h2>" + esc(state.meta.name) + "</h2>" +
-        '<p class="note">' + state.teams.length + " teams. Values use the " + (state.mode === "sf" ? "Superflex Keep" : state.mode === "oneqb" ? "1QB Keep" : state.mode === "classic" ? "Classic" : "PPR Board") + " curve. Unranked roster names stay a skip.</p>" +
+        '<p class="note">' + state.teams.length + " teams. Full roster on each card. Values use the " + (state.mode === "sf" ? "Superflex Keep" : state.mode === "oneqb" ? "1QB Keep" : state.mode === "classic" ? "Classic" : "PPR Board") + " curve. Unranked roster names stay a skip.</p>" +
         '<div class="league-controls">' +
           '<div class="league-modes">' + modeBtns + "</div>" +
           (dynasty ? '<label class="league-toggle"><input type="checkbox" data-picks ' + (picksOn ? "checked" : "") + " /> Include draft picks</label>" : "") +
@@ -377,6 +396,9 @@
           { season: "2028", round: 1 },
           { season: "2028", round: 2 },
           { season: "2028", round: 3 },
+          { season: "2029", round: 1 },
+          { season: "2029", round: 2 },
+          { season: "2029", round: 3 },
         ],
       };
     });
@@ -413,7 +435,7 @@
     state.mode = detectMode(league);
     state.includePicks = state.meta.kind !== "redraft";
     const year = parseInt(league.season, 10) || 2026;
-    const seasons = [year + 1, year + 2];
+    const seasons = [year + 1, year + 2, year + 3];
     const rounds = Math.min(3, ((league.settings) || {}).draft_rounds || 3);
     const owned = {};
     (rosters || []).forEach(function (r) {
@@ -437,7 +459,7 @@
     state.teams = (rosters || []).map(function (r) {
       const user = byUser[r.owner_id] || {};
       const teamName = (user.metadata && user.metadata.team_name) || user.display_name || ("Roster " + r.roster_id);
-      const ids = r.players || [];
+      const ids = rosterIds(r);
       return {
         id: r.roster_id,
         name: teamName,

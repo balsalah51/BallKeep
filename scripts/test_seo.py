@@ -574,6 +574,33 @@ def test_league_pick_math():
     assert pick_label(2027, 2, "Mid") == "2027 Mid 2nd"
     assert pick_label(2028, 2, "Late") == "2028 2nd"
     assert pick_label(2027, 3, "Early") == "2027 3rd"
+    assert pick_label(2029, 1, "Late") == "2029 Late 1st"
+    assert pick_label(2029, 2, "Early") == "2029 2nd"
+    assert pick_label(2029, 3, "Mid") == "2029 3rd"
+
+
+def test_dynasty_pick_curve():
+    from build_site import DYNASTY_PICKS
+    from bk_curve import bk_value
+
+    by = dict(DYNASTY_PICKS)
+    assert by["2027 Early 1st"] == 8
+    assert by["2028 Early 1st"] == 18
+    assert by["2028 Mid 1st"] == 29
+    assert by["2028 Late 1st"] == 40
+    assert by["2028 2nd"] == 58
+    assert by["2028 3rd"] == 85
+    assert by["2029 Early 1st"] == 22
+    assert by["2029 Mid 1st"] == 32
+    assert by["2029 Late 1st"] == 44
+    assert by["2029 2nd"] == 64
+    assert by["2029 3rd"] == 92
+    assert by["2028 Early 1st"] > 16
+    assert by["2029 Early 1st"] > by["2028 Early 1st"]
+    assert by["2029 Mid 1st"] > by["2028 Mid 1st"]
+    assert bk_value(by["2028 Early 1st"]) < bk_value(16)
+    assert bk_value(by["2029 Early 1st"]) < bk_value(by["2028 Early 1st"])
+    assert bk_value(by["2029 2nd"]) < bk_value(by["2028 2nd"])
 
 
 def test_home_page_markup():

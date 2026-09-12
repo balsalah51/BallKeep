@@ -490,6 +490,8 @@ def attach_values(rows, qb_mult_for_qb: float = 1.0):
 
 
 # Future firsts priced as equivalent ranks on the Superflex curve.
+# Later years sit a few ranks cheaper. 2028 is a small step down from the
+# prior curve. 2029 sits a bit cheaper than the matching 2028 slot.
 DYNASTY_PICKS = [
     ("2027 Early 1st", 8),
     ("2027 Mid 1st", 18),
@@ -498,11 +500,16 @@ DYNASTY_PICKS = [
     ("2027 Mid 2nd", 44),
     ("2027 Late 2nd", 52),
     ("2027 3rd", 68),
-    ("2028 Early 1st", 16),
-    ("2028 Mid 1st", 26),
-    ("2028 Late 1st", 36),
-    ("2028 2nd", 54),
-    ("2028 3rd", 80),
+    ("2028 Early 1st", 18),
+    ("2028 Mid 1st", 29),
+    ("2028 Late 1st", 40),
+    ("2028 2nd", 58),
+    ("2028 3rd", 85),
+    ("2029 Early 1st", 22),
+    ("2029 Mid 1st", 32),
+    ("2029 Late 1st", 44),
+    ("2029 2nd", 64),
+    ("2029 3rd", 92),
 ]
 
 

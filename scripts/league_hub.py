@@ -143,7 +143,7 @@ def write_league_lookup(keep, board, ppr, classic, std, waiver, media, updated="
 def _demo_league(keep, by_name):
     from build_site import norm_name
 
-    names = [r["name"] for r in (keep or [])[:120]]
+    names = [r["name"] for r in (keep or [])[:250]]
     teams = []
     for i, label in enumerate(DEMO_TEAMS):
         teams.append({
@@ -185,7 +185,7 @@ def league_body():
     return """
     <p class="kicker mine-kicker">Yours · Sleeper</p>
     <h1>My Team</h1>
-    <p class="note">Put in your Sleeper league ID. Every matched name gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn future picks on or off.</p>
+    <p class="note">Put in your Sleeper league ID. Every matched name on the roster, taxi, and IR gets a Keep or Board BK Value. Unranked names are a skip. Dynasty rooms can turn 2027-2029 picks on or off.</p>
     <form class="league-form" id="league-form" action="league.html" method="get">
       <div class="league-fields" data-pane="sleeper">
         <label for="sleeper-id">Sleeper league ID</label>
