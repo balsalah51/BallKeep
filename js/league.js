@@ -585,7 +585,9 @@
 
   const params = new URLSearchParams(location.search);
   paintSaved();
+  window.addEventListener("pageshow", function () { paintSaved(); });
   loadLookup().then(function () {
+    paintSaved();
     if (params.get("demo")) applyDemo();
     else if (params.get("sleeper")) {
       document.getElementById("sleeper-id").value = params.get("sleeper");
@@ -596,5 +598,7 @@
       document.getElementById("sleeper-id").value = last.id;
       return loadSleeper(last.id);
     }
-  }).catch(function () {});
+  }).catch(function () {
+    paintSaved();
+  });
 })();
