@@ -156,7 +156,8 @@ def main():
     assert fence[0].get("bk") == 1
     assert cat.list_for("fence")[0]["name"] == "Josh Allen"
     assert cat.list_for("idp")[0]["name"] == "Josh Allen"
-    assert any(r["name"] == "Drake Maye" and r.get("bk") == 2 for r in fence[:3])
+    maye = next(r for r in fence if r["name"] == "Drake Maye")
+    assert maye.get("bk") >= 6
     assert any(r["name"] == "Aidan Hutchinson" for r in fence)
     bpl = cat.raw.get("bpl") or []
     assert len(bpl) == 380, f"bpl {len(bpl)}"

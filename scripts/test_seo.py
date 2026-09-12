@@ -405,6 +405,33 @@ def test_pos_filter_chips():
     assert "applyRankFilter" in js
 
 
+def test_drop_player():
+    from aggregate_protocol import drop_player
+    rows = [{"name": n, "bk": i} for i, n in enumerate(["A", "Drake Maye", "C", "D", "E", "F", "G"], 1)]
+    drop_player(rows, "Drake Maye", 4)
+    assert [r["name"] for r in rows] == ["A", "C", "D", "E", "F", "Drake Maye", "G"]
+    assert next(r for r in rows if r["name"] == "Drake Maye")["bk"] == 6
+
+
+def test_keep_maye_drop():
+    from pathlib import Path
+    from build_site import ROOT, aggregate, parse_pfn
+    keep, _, _ = aggregate(parse_pfn(ROOT / "data/pfn-dynasty.txt"))
+    maye = next(r for r in keep if r["name"] == "Drake Maye")
+    assert maye["bk"] >= 6
+    assert keep[0]["name"] == "Josh Allen"
+
+
+def test_skip_line_removed_from_builders():
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[0]
+    banned = ("Unranked is a skip, never 999", "Missing ranks do not dump a name")
+    for name in ("build_site.py", "build_bk.py", "build_bb.py", "build_pl.py"):
+        text = (root / name).read_text()
+        for phrase in banned:
+            assert phrase not in text, f"{name} still has {phrase!r}"
+
+
 def test_super_avg():
     from aggregate_protocol import super_avg
     ranks = {"Yates": 2, "FantasyPros ECR": 4, "Karabell": 6, "CBS": 20, "Yahoo": 10}
@@ -441,7 +468,8 @@ def test_fence_idp_board():
     assert fence[0]["name"] == "Josh Allen"
     assert fence[0]["bk"] == 1
     assert fence[0]["pos"] == "QB"
-    assert any(r["name"] == "Drake Maye" and r["bk"] == 2 for r in fence[:3])
+    maye = next(r for r in fence if r["name"] == "Drake Maye")
+    assert maye["bk"] >= 6
     assert fence[0]["n"] >= 6
     assert {r["pos"] for r in fence} >= {"QB", "RB", "WR", "TE", "DL", "LB", "DB"}
     first_idp = next(r for r in fence if r["pos"] in {"DL", "LB", "DB"})
@@ -597,6 +625,8 @@ def test_home_page_markup():
     assert "Price a trade" not in html
     assert "home-proof" in html
     assert "home-method" in html
+    assert "Unranked is a skip" not in html
+    assert "never 999" not in html
     assert "home-network" in html
     assert "home-snapshot" in html
     assert "the-fence.html" in html

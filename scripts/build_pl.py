@@ -300,7 +300,7 @@ PL_HOME_FAQ = [
     ("Where is the soccer news?", "PK News clusters injury, transfer, and manager tape hourly, with links back to PitchKeep player files."),
 ]
 PL_PREMIER_FAQ = [
-    ("What is The Premier?", "Top 400 from 25 published 2026/27 pro lists plus official FPL metrics. Half Sleeper BPL 2025, half the boards. Unranked skipped."),
+    ("What is The Premier?", "Top 400 from 25 published 2026/27 pro lists plus official FPL metrics. Half Sleeper BPL 2025, half the boards."),
     ("How does BK Value work here?", "Premier rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%."),
     ("What is The Pitch?", "The same 400 names ranked on Sleeper BPL 2025 scoring of 2025/26 counting stats."),
 ]
@@ -1343,7 +1343,6 @@ def write_pitch_site():
       <h2>How the ranks are built.</h2>
       <ol class="home-steps">
         <li><strong>The Premier is half Sleeper, half the published lists.</strong> {premier_n} 2026/27 boards plus official FPL metrics.</li>
-        <li><strong>Unranked is a skip, never 999.</strong> Missing ranks do not dump a name.</li>
         <li><strong>Rank 1 is 12,000 BK Value.</strong> Same curve as football. Fair is within 8%.</li>
       </ol>
     </section>
@@ -1369,7 +1368,7 @@ def write_pitch_site():
     premier_body = f"""
     <p class="kicker">Hybrid 400 · {UPDATED}</p>
     <h1>The Premier</h1>
-    <p class="note">Top 400. Half Sleeper BPL 2025, half 25 published pro lists plus official FPL metrics. Unranked skipped. Rank 1 is 12,000.</p>
+    <p class="note">Top 400. Half Sleeper BPL 2025, half 25 published pro lists plus official FPL metrics. Rank 1 is 12,000.</p>
     {rank_search_bar(flt)}
     <div class="panel">{rank_table(premier, ["Hybrid", "Sleeper rk", "Cons.", "Sleeper", "FPL", "G", "A", "Boards", "£", "BK Value"], premier_cell, media=media, faces=True, full_names=True, show_age=True)}</div>
     {value_bars(premier, 12, "#e8c547", "Premier value graph")}

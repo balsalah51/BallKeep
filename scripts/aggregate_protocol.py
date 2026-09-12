@@ -28,6 +28,8 @@ from __future__ import annotations
 
 import re
 
+from bk_curve import bk_value
+
 _PICK_YEAR = re.compile(r"\b20\d{2}\b")
 _PICK_ROUND = re.compile(r"\b(1st|2nd|3rd|4th|5th|pick)\b")
 
@@ -256,4 +258,32 @@ def rank_rows(sources: dict[str, dict], meta: dict, *, require_long: bool, limit
         rows = rows[:limit]
     for i, row in enumerate(rows, 1):
         row["bk"] = i
+    return rows
+
+
+def drop_player(rows: list[dict], name: str, spots: int = 4) -> list[dict]:
+    """Move a named player down `spots` ranks. Names between slide up."""
+    if not rows or spots < 1:
+        return rows
+    idx = next((i for i, r in enumerate(rows) if (r.get("name") or "") == name), None)
+    if idx is None:
+        return rows
+    dest = min(idx + spots, len(rows) - 1)
+    if dest <= idx:
+        return rows
+    player = rows.pop(idx)
+    rows.insert(dest, player)
+    for i, r in enumerate(rows, 1):
+        r["bk"] = i
+        r["value"] = bk_value(i)
+    return rows
+
+
+# Editorial drops applied to every published Ball Keep list after the mash.
+RANK_DROPS = (("Drake Maye", 4),)
+
+
+def apply_rank_drops(rows: list[dict]) -> list[dict]:
+    for name, spots in RANK_DROPS:
+        drop_player(rows, name, spots)
     return rows

@@ -230,7 +230,7 @@ def write_touches_page(b, keep, board, media):
     body = f"""
     <p class="kicker">{SEASON} NFL season · Week 1 so far · {count}</p>
     <h1>Touches and Targets</h1>
-    <p class="note">Sleeper {SEASON} regular-season totals only. Early tape. Each number sits on its own label. Touches are rushes. Receptions sit in their own box. TDs are rushing plus receiving, not passing. Keep is Superflex dynasty BK Value. Board is redraft PPR BK Value. Unranked on a board is a skip. Sort with the buttons. Filter by position with the chips.</p>
+    <p class="note">Sleeper {SEASON} regular-season totals only. Early tape. Each number sits on its own label. Touches are rushes. Receptions sit in their own box. TDs are rushing plus receiving, not passing. Keep is Superflex dynasty BK Value. Board is redraft PPR BK Value. Sort with the buttons. Filter by position with the chips.</p>
     {rank_search_bar(chips)}
     {sorts}
     <div class="panel touches-panel">{_cards(rows)}</div>
