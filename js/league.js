@@ -514,7 +514,10 @@
       };
     });
     paint();
-    rememberLeague(id, state.meta.name);
+    const label = state.meta.season && String(state.meta.name || "").indexOf(String(state.meta.season)) === -1
+      ? String(state.meta.name) + " " + String(state.meta.season)
+      : (state.meta.name || id);
+    rememberLeague(id, label);
     history.replaceState(null, "", "league.html?sleeper=" + encodeURIComponent(id));
   }
 
