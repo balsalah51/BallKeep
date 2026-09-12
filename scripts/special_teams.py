@@ -5,6 +5,7 @@ Published boards only. Unranked names are skipped, never treated as 999.
 """
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
@@ -92,17 +93,24 @@ DST_SOURCES = [
     ("Field Yates DST", "https://www.espn.com/fantasy/football/story/_/id/48711830", "PPR overall slice, Sep 5. Houston first. Unranked clubs skipped."),
 ]
 
-KICKERS = [
-    ("Brandon Aubrey", "DAL"), ("Ka'imi Fairbairn", "HOU"), ("Cameron Dicker", "LAC"),
-    ("Jason Myers", "SEA"), ("Cam Little", "JAX"), ("Eddy Pineiro", "SF"),
-    ("Tyler Loop", "BAL"), ("Evan McPherson", "CIN"), ("Jake Bates", "DET"),
-    ("Cairo Santos", "CHI"), ("Andy Borregales", "NE"), ("Harrison Mevis", "LAR"),
-    ("Chase McLaughlin", "TB"), ("Chris Boswell", "PIT"), ("Harrison Butker", "KC"),
-    ("Will Reichard", "MIN"), ("Wil Lutz", "DEN"), ("Charlie Smyth", "NO"),
-    ("Jake Elliott", "PHI"), ("Blake Grupe", "IND"), ("Tyler Bass", "BUF"),
-    ("Chad Ryland", "ARI"), ("Joey Slye", "TEN"), ("Nick Folk", "ATL"),
-    ("Trey Smack", "GB"),
-]
+KICKER_TEAMS = {
+    "Brandon Aubrey": "DAL", "Ka'imi Fairbairn": "HOU", "Cameron Dicker": "LAC",
+    "Jason Myers": "SEA", "Cam Little": "JAX", "Eddy Pineiro": "SF",
+    "Tyler Loop": "BAL", "Evan McPherson": "CIN", "Jake Bates": "DET",
+    "Cairo Santos": "CHI", "Andy Borregales": "NE", "Harrison Mevis": "LAR",
+    "Chase McLaughlin": "TB", "Chris Boswell": "PIT", "Harrison Butker": "KC",
+    "Will Reichard": "MIN", "Wil Lutz": "DEN", "Charlie Smyth": "NO",
+    "Jake Elliott": "PHI", "Blake Grupe": "NYJ", "Tyler Bass": "BUF",
+    "Chad Ryland": "ARI", "Joey Slye": "TEN", "Nick Folk": "ATL",
+    "Trey Smack": "GB", "Spencer Shrader": "IND", "Daniel Carlson": "NO",
+    "Drew Stevens": "WAS", "Ryan Fitzgerald": "CAR", "Matt Gay": "LV",
+    "Dominic Zvada": "NYG", "Riley Patterson": "MIA", "Andre Szmyt": "CLE",
+    "Jake Moody": "FA", "Jason Sanders": "NYJ", "Ben Sauls": "NYG",
+    "Brandon McManus": "FA",
+}
+
+# Core names always stay on the universe even if a short board skipped them.
+KICKERS = list(KICKER_TEAMS.items())
 
 # FantasyPros kicker ECR, Aug 2026 draft article.
 FP_K = {
@@ -149,13 +157,29 @@ YATES_K = {
     "Cam Little": 9, "Harrison Mevis": 10,
 }
 
-K_SOURCES = [
+K_CORE_SOURCES = [
     ("FantasyPros Kicker ECR", "https://www.fantasypros.com/2026/08/fantasy-football-draft-rankings-tiers-kickers-2026-little-bates-aubrey/", "Expert consensus, Aug 2026. Aubrey locked first."),
     ("Derek Brown K", "https://www.fantasypros.com/nfl/fantasy-football-rankings/k.php", "FantasyPros expert, Aug 13."),
     ("Pat Fitzmaurice K", "https://www.fantasypros.com/nfl/fantasy-football-rankings/k.php", "FantasyPros expert, Aug 26. Little over Myers, Mevis inside the 6."),
     ("Draft Sharks K", "https://www.draftsharks.com/rankings/pk", "Updated Aug 31. Trey Smack (GB) inside the 12. Unnamed slots skipped."),
     ("RotoWire K", "https://www.rotowire.com/football/article/2026-fantasy-football-rankings-kickers-85924", "Jerry Donabedian, Aug 27. Skip the Carlson/Smyth slot."),
     ("Field Yates K", "https://www.espn.com/fantasy/football/story/_/id/48711830", "PPR overall slice, Sep 5. Aubrey first, Dicker second."),
+]
+
+
+def _load_kicker_extras():
+    path = Path(__file__).resolve().parents[1] / "data/ranks/kicker-boards-2026.json"
+    if not path.exists():
+        return []
+    try:
+        return json.loads(path.read_text()).get("boards") or []
+    except Exception:
+        return []
+
+
+K_EXTRA_BOARDS = _load_kicker_extras()
+K_SOURCES = K_CORE_SOURCES + [
+    (b["name"], b["url"], b["note"]) for b in K_EXTRA_BOARDS
 ]
 
 
@@ -186,7 +210,7 @@ def _mean_rows(universe, maps, pos, long_core=()):
 
 
 DST_LONG = ("fp", "nbc", "stacked")
-K_LONG = ("fp", "ds", "rw")
+K_LONG = ("fp", "fp_ros", "stacked", "ds")
 
 
 def dst_board():
@@ -203,12 +227,42 @@ def dst_board():
     }, "DST", long_core=DST_LONG)
 
 
-def kicker_board():
-    return _mean_rows(KICKERS, {
+def kicker_maps():
+    maps = {
         "fp": FP_K,
         "brown": BROWN_K,
         "fitz": FITZ_K,
         "ds": DS_K,
         "rw": RW_K,
         "yates": YATES_K,
-    }, "K", long_core=K_LONG)
+    }
+    for board in K_EXTRA_BOARDS:
+        ranks = board.get("ranks") or {}
+        if ranks:
+            maps[board["id"]] = ranks
+    return maps
+
+
+def kicker_universe(maps):
+    """Keep the named list, plus anyone ranked on at least two boards."""
+    counts = {}
+    for mp in maps.values():
+        for name in mp:
+            counts[name] = counts.get(name, 0) + 1
+    seen = set()
+    out = []
+    for name, team in KICKERS:
+        seen.add(name)
+        out.append((name, team))
+    extras = sorted(
+        (name, KICKER_TEAMS.get(name, "FA"))
+        for name, n in counts.items()
+        if n >= 2 and name not in seen
+    )
+    out.extend(extras)
+    return out
+
+
+def kicker_board():
+    maps = kicker_maps()
+    return _mean_rows(kicker_universe(maps), maps, "K", long_core=K_LONG)
