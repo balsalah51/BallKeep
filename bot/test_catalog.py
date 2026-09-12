@@ -141,6 +141,15 @@ def main():
     classic = cat.raw.get("classic") or []
     assert len(classic) == 200, f"classic {len(classic)}"
     assert classic[0].get("bk") == 1
+    best_ball = cat.raw.get("best_ball") or []
+    assert len(best_ball) == 200, f"best_ball {len(best_ball)}"
+    assert best_ball[0].get("name")
+    assert best_ball[0].get("bk") == 1
+    assert len(cat.raw.get("best_ball_sources") or []) == 40
+    assert cat.list_for("bestball")[0]["name"] == best_ball[0]["name"]
+    assert cat.list_for("best ball")[0]["name"] == best_ball[0]["name"]
+    maye_bb = next(r for r in best_ball if r["name"] == "Drake Maye")
+    assert maye_bb.get("bk") >= 6
     dst = cat.raw.get("dst") or []
     assert len(dst) == 32, f"dst {len(dst)}"
     assert dst[0]["name"] == "Houston Texans"
@@ -298,6 +307,7 @@ def main():
     assert "redraft-superflex.html" in ros_skill
     assert "the-classic.html" in ros_skill
     assert "redraft-standard.html" in ros_skill
+    assert "best-ball.html" in ros_skill
     assert "rookies-2026.html" in ros_skill
     assert "defenses.html" in ros_st
     assert "kickers.html" in ros_st
@@ -534,6 +544,18 @@ def main():
     assert "until you refresh" in classic_html
     assert "localStorage" not in classic_html
     assert "sessionStorage" not in classic_html
+    bb_html = html_of("best-ball.html")
+    assert "<h1>Best Ball</h1>" in bb_html
+    assert "40 boards" in bb_html
+    assert "Underdog ADP" in bb_html
+    assert "FantasyPros" in bb_html
+    assert "ESPN ADP" in bb_html
+    assert "Kickers and DST stay off" in bb_html
+    assert 'class="draft-check"' in bb_html
+    assert "localStorage" not in bb_html
+    assert "Unranked is a skip" not in bb_html
+    assert "never 999" not in bb_html
+    assert "best-ball.html" in html_of("index.html")
     assert 'class="draft-check"' not in board_html
     assert 'class="draft-check"' not in html_of("the-keep.html")
     assert 'class="draft-check"' not in html_of("redraft-standard.html")
@@ -644,6 +666,7 @@ def main():
         "board.html",
         "redraft-standard.html",
         "the-classic.html",
+        "best-ball.html",
         "redraft-superflex.html",
         "defenses.html",
         "kickers.html",
@@ -696,6 +719,7 @@ def main():
     for rel, box in (
         ("board.html", "board-pos"),
         ("the-classic.html", "classic-pos"),
+        ("best-ball.html", "best-ball-pos"),
         ("redraft-standard.html", "std-pos"),
         ("redraft-superflex.html", "sf-pos"),
     ):

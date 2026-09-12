@@ -267,6 +267,9 @@ class Catalog:
             "half ppr": "classic",
             "0.5 ppr": "classic",
             "half-ppr": "classic",
+            "bestball": "best_ball",
+            "best ball": "best_ball",
+            "best_ball": "best_ball",
             "dst": "dst",
             "defense": "dst",
             "defenses": "dst",
@@ -405,7 +408,7 @@ class Catalog:
             if len(out) >= limit:
                 break
         if len(out) < limit and sport != "baseball":
-            for board_key in ("keep", "board", "ppr", "standard", "classic", "dst", "kickers", "rookies"):
+            for board_key in ("keep", "board", "ppr", "standard", "classic", "best_ball", "dst", "kickers", "rookies"):
                 for r in self.raw.get(board_key) or []:
                     name = norm(r.get("name", ""))
                     if not name:
