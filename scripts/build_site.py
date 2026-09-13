@@ -27,6 +27,13 @@ from extra_ranks import (  # noqa: E402
     as_ranks,
 )
 from ppr_boards import PPR_EXTRA_SOURCES, extra_ppr_maps, _norm as ppr_norm  # noqa: E402
+from best_ball_boards import (  # noqa: E402
+    BEST_BALL_LONG,
+    BEST_BALL_SOURCES,
+    extra_best_ball_maps,
+    load_espn_ranks,
+    load_ud_ranks,
+)
 from special_teams import DST_SOURCES, K_SOURCES, dst_board, kicker_board  # noqa: E402
 from week1_boards import (  # noqa: E402
     MATCH_SOURCES,
@@ -663,6 +670,77 @@ def redraft_lists():
     return ppr, std, classic
 
 
+def best_ball_list():
+    fp_ppr_named = load_rank_names("fp-ppr") or FP_PPR
+    fp_ppr = {norm_name(n): r for n, r in fp_ppr_named.items()}
+    pfn_meta = {norm_name(r["name"]): r for r in parse_pfn(ROOT / "data/pfn-dynasty.txt")}
+    ud = load_ud_ranks()
+    espn = load_espn_ranks()
+    universe = []
+    seen = set()
+    for name, pos, team in YATES_PPR:
+        k = norm_name(name)
+        if k in seen:
+            continue
+        seen.add(k)
+        universe.append((name, pos, team))
+    for name, _rk in sorted(fp_ppr_named.items(), key=lambda kv: kv[1]):
+        k = norm_name(name)
+        if k in seen:
+            continue
+        info = pfn_meta.get(k) or {}
+        pos = info.get("pos") or ""
+        team = info.get("team") or ""
+        if pos not in ("QB", "RB", "WR", "TE"):
+            continue
+        seen.add(k)
+        universe.append((name, pos, team))
+        if len(universe) >= PPR_N:
+            break
+    spine = [n for n, _rk in sorted(fp_ppr_named.items(), key=lambda kv: kv[1])]
+    pos_of = {ppr_norm(n): p for n, p, _t in universe}
+    extra_maps = extra_best_ball_maps(spine or [n for n, _p, _t in universe], pos_of)
+    rows = []
+    for name, pos, team in universe:
+        k = norm_name(name)
+        pk = ppr_norm(name)
+        shown = {}
+        ud_rk = ud.get(pk) or ud.get(k)
+        fp_rk = fp_ppr.get(k) or FP_PPR.get(name)
+        espn_rk = espn.get(pk) or espn.get(k)
+        if ud_rk:
+            shown["Underdog ADP"] = float(ud_rk)
+        if fp_rk:
+            shown["FantasyPros PPR ECR"] = float(fp_rk)
+        if espn_rk:
+            shown["ESPN ADP"] = float(espn_rk)
+        for lab, emap in extra_maps.items():
+            rk = emap.get(pk) or emap.get(k)
+            if rk:
+                shown[lab] = float(rk)
+        if not shown:
+            continue
+        avg = super_avg(shown, BEST_BALL_LONG)
+        rows.append({
+            "bk": 0,
+            "name": name,
+            "pos": pos,
+            "team": team,
+            "ud": ud_rk or "-",
+            "fp": fp_rk or "-",
+            "espn": espn_rk or "-",
+            "n": len(shown),
+            "avg": avg,
+        })
+    rows.sort(key=lambda r: (r["avg"], r["name"]))
+    rows = rows[:PPR_N]
+    for i, r in enumerate(rows, 1):
+        r["bk"] = i
+    apply_rank_drops(rows)
+    attach_values(rows)
+    return rows
+
+
 def score_from_ppr(ppr, taxes):
     rows = []
     for r in ppr:
@@ -732,6 +810,7 @@ NAV_GROUPS = [
         ("redraft-superflex.html", "Redraft Superflex"),
         ("the-classic.html", "The Classic"),
         ("redraft-standard.html", "Redraft STD"),
+        ("best-ball.html", "Best Ball"),
         ("rookies-2026.html", "2026 Rookies"),
     ]),
     ("st", "ST", [
@@ -1015,6 +1094,11 @@ FB_SEO = {
         "Standard (no PPR) redraft board. Same PPR Super Aggregate as The Board, then RB -4.5, WR +3, TE +2. Bijan and Gibbs climb.",
         "img/logo.jpg",
     ),
+    "best-ball.html": (
+        "2026 Best Ball Rankings | Super Aggregate of 40 Boards | Ball Keep",
+        "Best ball Super Aggregate. 200 skill players from 40 boards. Half the vote is Underdog ADP, FantasyPros ECR, and ESPN ADP.",
+        "img/logo.jpg",
+    ),
     "rookies-2026.html": (
         "2026 NFL Rookie Superflex Rankings | Fantasy Football | Ball Keep",
         "Drafted-class Superflex rookie Super Aggregate. FantasyPros ECR is the long-core half. Love, Mendoza, and Tate lock the top.",
@@ -1199,7 +1283,7 @@ FB_SEO = {
 
 HOME_FAQ = [
     ("What is Ball Keep?", "The Keep is Superflex Dynasty - 40 boards, top 400. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
-    ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 1 boards, Weekly, and Week 1 Waivers are this week's stream."),
+    ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 1 boards, Weekly, and Week 1 Waivers are this week's stream."),
     ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. IDP names are marked in red."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
@@ -1215,6 +1299,11 @@ BOARD_FAQ = [
     ("How is the rank built?", "Super Aggregate: 50% the mean of Yates, FantasyPros ECR, and Karabell, 50% every other board that ranked the name. The three long tapes stay on the table so you can see them against the Super score."),
     ("How is this different from The Keep?", "The Keep is Superflex Dynasty. The Board is this year only, one quarterback, a point per catch."),
     ("Does BK Value use this rank?", "Yes. The PPR calculator prices The Board rank on the same 12,000 curve."),
+]
+BEST_BALL_FAQ = [
+    ("What is Best Ball?", "Ball Keep's 2026 best-ball Super Aggregate. Full-PPR, 1QB, 200 skill players. Forty boards. Kickers and DST stay off. Best ball pays boom weeks, so receivers and late quarterbacks move more than they do on The Board."),
+    ("How is the Super rank built?", "Half the vote is Underdog ADP, FantasyPros PPR ECR, and ESPN ADP. Half is every other board that ranked the name. The three market tapes stay on the table so you can see them against the Super score."),
+    ("How is this different from The Board?", "The Board is season-long redraft PPR for a lineup you set each week. Best Ball is draft-only. You draft a pool. Boom weeks pay. There is no weekly lineup and no trade calculator on this list."),
 ]
 TRADE_FAQ = [
     ("How does the trade calculator work?", "Every name on a Ball Keep list has a rank. That rank becomes BK Value on a decaying curve. Add the numbers on two sides."),
@@ -1259,6 +1348,7 @@ FB_ALSO = {
     ],
     "board.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("best-ball.html", "Best Ball", "40-board boom-week list."),
         ("the-classic.html", "The Classic", "Half-PPR redraft."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
@@ -1266,6 +1356,14 @@ FB_ALSO = {
         ("players/index.html", "Player Pages", "Tape and plus/minus."),
         ("news.html", "BK News", "Injuries and roster tape."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
+    ],
+    "best-ball.html": [
+        ("board.html", "The Board", "Season-long redraft PPR."),
+        ("the-classic.html", "The Classic", "Half-PPR with draft check."),
+        ("redraft-standard.html", "Redraft Standard", "No reception point."),
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("adp.html", "ADP", "Board vs ESPN."),
+        ("players/index.html", "Player Pages", "Tape and plus/minus."),
     ],
     "touches.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty."),
@@ -1276,6 +1374,7 @@ FB_ALSO = {
     ],
     "the-classic.html": [
         ("board.html", "The Board", "Full-PPR redraft."),
+        ("best-ball.html", "Best Ball", "40-board boom-week list."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
         ("trade-classic.html", "Classic Calculator", "0.5 PPR values."),
         ("the-keep.html", "The Keep", "Superflex dynasty."),
@@ -1787,6 +1886,7 @@ def home_body_html(keep, board, media, stories=None):
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("the-classic.html", "The Classic", "Half-PPR, this year."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
+        ("best-ball.html", "Best Ball", "40-board Super Aggregate. Boom weeks. Kickers and DST stay off."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
     ])}
     {desk_block("ros-st", "More ranks", "DST, Kickers, The Fence.", "Rest-of-season values and the mixed Superflex + IDP board. Week 1 DST and Kickers sit in the Week 1 block.", [
@@ -2033,7 +2133,7 @@ def render_news_pages():
 
 
 
-def collect_profiles(keep, ppr, std, sf_redraft, classic=None):
+def collect_profiles(keep, ppr, std, sf_redraft, classic=None, best_ball=None):
     """Union of The Keep top 400, The Board (redraft PPR), Superflex redraft, and Hot/Cold."""
     players = OrderedDict()
 
@@ -2094,6 +2194,9 @@ def collect_profiles(keep, ppr, std, sf_redraft, classic=None):
             f"The Classic #{r['bk']} Half-PPR")
         add(r["name"], r["pos"], r["team"], "Redraft Half-PPR", r["bk"],
             f"The Classic #{r['bk']} Half-PPR")
+    for r in (best_ball or []):
+        add(r["name"], r["pos"], r["team"], "Best Ball", r["bk"],
+            f"Best Ball #{r['bk']} Super Aggregate ({r['n']} boards)")
     for i, r in enumerate(ROOKIES, 1):
         add(r["name"], r["pos"], r["team"], "2026 Rookies", i, r["value"])
     for i, r in enumerate(HOT, 1):
@@ -2230,6 +2333,7 @@ def ff_rank_cards(p):
         ("The Keep", lists.get("The Keep"), "../the-keep.html"),
         ("The Board", lists.get("The Board") or lists.get("Redraft PPR"), "../board.html"),
         ("The Classic", lists.get("The Classic") or lists.get("Redraft Half-PPR"), "../the-classic.html"),
+        ("Best Ball", lists.get("Best Ball"), "../best-ball.html"),
         ("SF Redraft", lists.get("Redraft Superflex"), "../redraft-superflex.html"),
         ("STD", lists.get("Redraft Standard"), "../redraft-standard.html"),
         ("Rookies", lists.get("2026 Rookies"), "../rookies-2026.html"),
@@ -2893,6 +2997,7 @@ def write_explore_page():
         ("the-classic.html", "The Classic", "Half-PPR."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
+        ("best-ball.html", "Best Ball", "40-board boom-week list."),
         ("the-fence.html", "The Fence", "Superflex + IDP."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
         ("defenses.html", "Top DST", "Season-long DST."),
@@ -2983,6 +3088,7 @@ def main():
     if len(long_board) > BOARD_N:
         long_board = long_board[:BOARD_N]
     ppr, std, classic = redraft_lists()
+    best_ball = best_ball_list()
     media = load_player_media()
     ages = load_age_bank()
     apply_media_ages(keep, media, ages)
@@ -2990,10 +3096,11 @@ def main():
     apply_media_ages(ppr, media, ages)
     apply_media_ages(std, media, ages)
     apply_media_ages(classic, media, ages)
+    apply_media_ages(best_ball, media, ages)
     sf_redraft = superflex_redraft(keep, ppr)
     apply_media_ages(sf_redraft, media, ages)
     board = ppr
-    profiles = collect_profiles(keep, ppr, std, sf_redraft, classic)
+    profiles = collect_profiles(keep, ppr, std, sf_redraft, classic, best_ball)
     apply_media_ages(profiles, media, ages)
     (ROOT / "data" / "player_roster.json").write_text(json.dumps(profiles, indent=2))
 
@@ -3006,6 +3113,12 @@ def main():
         "format": "redraft PPR",
         "updated": UPDATED,
         "players": board,
+    }, indent=2))
+    (ROOT / "data/best-ball.json").write_text(json.dumps({
+        "format": "best ball",
+        "updated": UPDATED,
+        "sources": [name for name, _url, _note in BEST_BALL_SOURCES],
+        "players": best_ball,
     }, indent=2))
 
     write_trade_pages(keep, sf_redraft, ppr, std, classic)
@@ -3139,6 +3252,32 @@ def main():
                 lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
                 description="Redraft 0.5 PPR skill-player board.",
             ),
+        ],
+    ))
+
+    bb_chips, bb_js = pos_filter("best-ball-pos")
+    bb_js = bb_js + draft_check_js()
+    bb_body = f"""
+    <p class="kicker">2026 Best Ball · Super Aggregate · {len(BEST_BALL_SOURCES)} boards</p>
+    <h1>Best Ball</h1>
+    <p class="note">Best ball pays boom weeks. Receivers and late quarterbacks move more than they do on The Board. Super Aggregate of {len(BEST_BALL_SOURCES)} boards: 50% Underdog ADP, FantasyPros PPR ECR, and ESPN ADP, 50% every other board that ranked the name. Full-PPR, 1QB, {PPR_N} skill players. Kickers and DST stay off. Check a name when they are off the board in your room. Crossed-off names stay on the list until you refresh.</p>
+    {rank_search_bar(bb_chips)}
+    <div class="panel">{rank_table(best_ball, ["Super", "Boards", "UD ADP", "FP ECR", "ESPN ADP", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="desk-only">{r["ud"]}</td><td class="desk-only">{r["fp"]}</td><td class="desk-only">{r["espn"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True, draft_check=True)}</div>
+    {value_bars(best_ball, 12, "#c8102e", "Best Ball value graph")}
+    {sources_panel(BEST_BALL_SOURCES, heading="Boards in This Super Aggregate")}
+    {faq_html(BEST_BALL_FAQ, heading="How Best Ball is built.")}
+    """
+    write("best-ball.html", board_page(
+        "Best Ball", "best-ball.html", bb_body, bb_js,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "Best Ball 2026 Super Aggregate Rankings",
+                "https://ballkeep.com/best-ball.html",
+                best_ball,
+                lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html",
+                description="Best ball Super Aggregate skill-player board from forty public lists.",
+            ),
+            faq_jsonld(BEST_BALL_FAQ),
         ],
     ))
 
@@ -3588,6 +3727,7 @@ def main():
         "https://ballkeep.com/the-classic.html",
         "https://ballkeep.com/redraft-superflex.html",
         "https://ballkeep.com/redraft-standard.html",
+        "https://ballkeep.com/best-ball.html",
         "https://ballkeep.com/rookies-2026.html",
         "https://ballkeep.com/hot-n-cold.html",
         "https://ballkeep.com/touches.html",
@@ -3634,10 +3774,10 @@ def main():
     cat = write_discord_catalog(
         keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk,
         sf_redraft, classic, dst, kickers, bpl, fence, w1_dst, w1_kickers, w1_match,
-        weekly_pack,
+        weekly_pack, best_ball,
     )
     print(
-        f"Keep {len(keep)} Board {len(board)} (redraft PPR) Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} BPL {len(bpl)} DST {len(dst)} K {len(kickers)} Fence {len(fence)} "
+        f"Keep {len(keep)} Board {len(board)} Best Ball {len(best_ball)} Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} BPL {len(bpl)} DST {len(dst)} K {len(kickers)} Fence {len(fence)} "
         f"W1 DST {len(w1_dst)} W1 K {len(w1_kickers)} W1 games {len(w1_match)} "
         f"W{weekly_pack.get('week')} QB {len(weekly_pack.get('qb') or [])} "
         f"Waiver {len(weekly_pack.get('waiver') or [])} "
@@ -3663,7 +3803,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None, dst=None, kickers=None, bpl=None, fence=None, week1_dst=None, week1_kickers=None, week1_match=None, weekly=None):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None, dst=None, kickers=None, bpl=None, fence=None, week1_dst=None, week1_kickers=None, week1_match=None, weekly=None, best_ball=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -3726,6 +3866,8 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         "sf_redraft": [slim_row(r, ("n", "avg", "keep", "ppr")) for r in (sf_redraft or [])],
         "standard": [slim_row(r) for r in std],
         "classic": [slim_row(r) for r in (classic or [])],
+        "best_ball": [slim_row(r, ("ud", "fp", "espn", "n", "avg")) for r in (best_ball or [])],
+        "best_ball_sources": [name for name, _url, _note in BEST_BALL_SOURCES],
         "dst": [slim_row(r, ("n", "avg")) for r in (dst or [])],
         "kickers": [slim_row(r, ("n", "avg")) for r in (kickers or [])],
         "week1_dst": [slim_row(r, ("n", "avg")) for r in (week1_dst or [])],

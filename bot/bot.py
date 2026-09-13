@@ -245,6 +245,7 @@ def build_bot():
         app_commands.Choice(name="The Board", value="board"),
         app_commands.Choice(name="Redraft PPR", value="ppr"),
         app_commands.Choice(name="The Classic", value="classic"),
+        app_commands.Choice(name="Best Ball", value="best_ball"),
         app_commands.Choice(name="Redraft Standard", value="standard"),
         app_commands.Choice(name="2026 Rookies", value="rookies"),
     ]
@@ -920,7 +921,7 @@ def build_bot():
     @bot.command(name="top")
     async def prefix_top(ctx: commands.Context, board: str = "keep"):
         rows = desk.cat.list_for(board)[:15]
-        label = {"keep": "The Keep", "board": "The Board", "ppr": "Redraft PPR", "classic": "The Classic", "standard": "Redraft Standard", "rookies": "2026 Rookies"}.get(board.lower(), board)
+        label = {"keep": "The Keep", "board": "The Board", "ppr": "Redraft PPR", "classic": "The Classic", "best_ball": "Best Ball", "bestball": "Best Ball", "standard": "Redraft Standard", "rookies": "2026 Rookies"}.get(board.lower(), board)
         await ctx.reply(embed=list_embed(discord, label, rows, RED if board.lower() in ("keep", "sf") else BLUE))
 
     @bot.event

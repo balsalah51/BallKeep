@@ -140,7 +140,7 @@ def test_football_nav_keeps_every_link():
     from build_site import NAV, NAV_GROUPS, fb_header_nav, fb_footer_nav
     assert [lab for _h, lab in NAV] == [
         "Home", "The Keep", "The Board",
-        "Redraft Superflex", "The Classic", "Redraft STD", "2026 Rookies",
+        "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
         "Weekly", "Opening", "Week 1 DST", "Week 1 K", "Week 1 Matchups", "Week 1 Waivers", "Injuries",
         "ADP", "Trade",
@@ -320,6 +320,7 @@ def test_searchaction_and_schema():
     assert len(howto["step"]) == 2
     txt = llms_txt()
     assert "https://ballkeep.com/the-keep.html" in txt
+    assert "https://ballkeep.com/best-ball.html" in txt
     assert "https://ballkeep.com/bb/" in txt
     card = rank_card("The Keep", 4, 9769, "../the-keep.html")
     assert 'href="../the-keep.html"' in card
@@ -361,6 +362,51 @@ def test_ppr_extra_boards():
     for label, _url, _note in PPR_EXTRA_SOURCES:
         assert label in maps
         assert maps[label]
+
+
+def test_best_ball_boards():
+    from best_ball_boards import (
+        BEST_BALL_EXTRA_SOURCES,
+        BEST_BALL_LONG,
+        BEST_BALL_SOURCES,
+        extra_best_ball_maps,
+        load_espn_ranks,
+        load_ud_ranks,
+    )
+    spine = ["Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson"]
+    pos_of = {
+        "ja marr chase": "WR",
+        "jahmyr gibbs": "RB",
+        "puka nacua": "WR",
+        "bijan robinson": "RB",
+    }
+    maps = extra_best_ball_maps(spine, pos_of)
+    assert len(BEST_BALL_LONG) == 3
+    assert len(BEST_BALL_EXTRA_SOURCES) == 37
+    assert len(BEST_BALL_SOURCES) == 40
+    assert len(maps) == 37
+    for label, _url, _note in BEST_BALL_EXTRA_SOURCES:
+        assert label in maps
+        assert maps[label]
+    ud = load_ud_ranks()
+    espn = load_espn_ranks()
+    assert ud
+    assert espn
+    assert ud.get("jahmyr gibbs") == 1 or espn.get("jahmyr gibbs") == 1
+
+
+def test_best_ball_mash():
+    from build_site import best_ball_list
+    rows = best_ball_list()
+    assert len(rows) == 200
+    assert rows[0]["name"] in {
+        "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
+        "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",
+    }
+    maye = next(r for r in rows if r["name"] == "Drake Maye")
+    assert maye["bk"] >= 6
+    assert all(r.get("pos") in {"QB", "RB", "WR", "TE"} for r in rows)
+    assert all(r.get("n") for r in rows)
 
 
 def test_baseball_keep_boards():
@@ -426,7 +472,7 @@ def test_skip_line_removed_from_builders():
     from pathlib import Path
     root = Path(__file__).resolve().parents[0]
     banned = ("Unranked is a skip, never 999", "Missing ranks do not dump a name")
-    for name in ("build_site.py", "build_bk.py", "build_bb.py", "build_pl.py"):
+    for name in ("build_site.py", "build_bk.py", "build_bb.py", "build_pl.py", "best_ball_boards.py"):
         text = (root / name).read_text()
         for phrase in banned:
             assert phrase not in text, f"{name} still has {phrase!r}"
