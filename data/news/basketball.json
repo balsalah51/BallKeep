@@ -1,8 +1,557 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-13T10:29:00Z",
-  "fresh": 64,
+  "updated": "2026-09-13T11:24:26Z",
+  "fresh": 84,
   "stories": [
+    {
+      "id": "raptors-reportedly-sign-ex-lakers-champion-while-waiting-7195aab2",
+      "slug": "raptors-reportedly-sign-ex-lakers-champion-while-waiting-7195aab2",
+      "sport": "basketball",
+      "headline": "NBA ready to approve Kawhi Leonard to Raptors trade, league is waiting on Clippers and Raptors to submit trade",
+      "blurb": "Clippers may punish Kawhi Leonard with Raptors trade still pending Yardbarker",
+      "summary": "Clippers may punish Kawhi Leonard with Raptors trade still pending Yardbarker Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade Yahoo Sports Raptors Projected to Land 11-Time All-Star Guard if Kawhi Leonard Trade Fails heavy.com Aggregated from Yardbarker, Yahoo Sports, sportingnews.com, heavy.com, Sports Illustrated and 20 more.",
+      "category": "injury",
+      "published": "2023-06-22T07:00:00Z",
+      "updated": "2026-09-12T23:43:28Z",
+      "players": [
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        },
+        {
+          "key": "rj barrett",
+          "name": "RJ Barrett",
+          "slug": "rj-barrett",
+          "pos": "SG",
+          "team": "TOR"
+        },
+        {
+          "key": "gradey dick",
+          "name": "Gradey Dick",
+          "slug": "gradey-dick",
+          "pos": "SG",
+          "team": "TOR"
+        },
+        {
+          "key": "brandon ingram",
+          "name": "Brandon Ingram",
+          "slug": "brandon-ingram",
+          "pos": "SF",
+          "team": "TOR"
+        },
+        {
+          "key": "bennedict mathurin",
+          "name": "Bennedict Mathurin",
+          "slug": "bennedict-mathurin",
+          "pos": "SG",
+          "team": "IND"
+        },
+        {
+          "key": "scottie barnes",
+          "name": "Scottie Barnes",
+          "slug": "scottie-barnes",
+          "pos": "SF",
+          "team": "TOR"
+        },
+        {
+          "key": "kevin durant",
+          "name": "Kevin Durant",
+          "slug": "kevin-durant",
+          "pos": "PF",
+          "team": "HOU"
+        },
+        {
+          "key": "jalen duren",
+          "name": "Jalen Duren",
+          "slug": "jalen-duren",
+          "pos": "C",
+          "team": "DET"
+        },
+        {
+          "key": "jordan miller",
+          "name": "Jordan Miller",
+          "slug": "jordan-miller",
+          "pos": "SF",
+          "team": "LAC"
+        },
+        {
+          "key": "daniel gafford",
+          "name": "Daniel Gafford",
+          "slug": "daniel-gafford",
+          "pos": "C",
+          "team": "DAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOd2hjYy05NHBxLTZCNnlSNU5Ca1ozdDYyUjJ4TjlybEtWUUpLLW9fc1lINy1vOEJtNXMzU0ZvQkREMGJFSjVCMjAwanQwN0VyY1NwTGp4UTBwYUp1czdnSU92TVFBOURYM19rR1ZoekEwR2tDTVpUX281QVVLSVpvY0xnY2xUaVAyVEE?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade Yahoo Sports",
+          "published": "Mon, 07 Sep 2026 16:54:15 GMT"
+        },
+        {
+          "title": "Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPcVdLUHdnOG1ZZ2ZWVm0yZmJyRGNDcGdrbXFqbFVpdzl4bFRNU1lSaXBJclhfVDMyZFBOdmJXZ2dKUklkSXVBZFJLbjZTRVFQams0NmFibWhWNFA3My1VRHBrRHlHa0FXNXVWaVpCNVNuMmJfS2V5Zzl4U0VpbktoMXE1Q094ZHB2RloyQnpkX1ozVk00NzFudEtLV1FGay1qT05yUG55MkRxdENPY0oxQ0pYd1BaNlJ6Sm5TTm41OVlueDY2Q2F4ZGUwY1IwRE5aYWZhSzgtVjFKek9qZ2U5MWM4cXlSTVdpNzBEVHJrSjNQLUNlRnZoOU81UjhINkgy?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade sportingnews.com",
+          "published": "Mon, 07 Sep 2026 16:54:15 GMT"
+        },
+        {
+          "title": "Raptors Projected to Land 11-Time All-Star Guard if Kawhi Leonard Trade Fails",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lUWdhWUxQWWxJYjRsVlctOVQzalNnMW5RWnRMa094ODBCcG5pMUV6Sm1aMDJWUlRJV3BCLVBQcnU3d0hWZi1iekYyNXlnTXRZc3QybjdKb0ZuQU1Ia3hmem1JZXNxRnNwTk9aTHVoRXhQRnJBVTFPaUdqWQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Raptors Projected to Land 11-Time All-Star Guard if Kawhi Leonard Trade Fails heavy.com",
+          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NBA Trade Rumors: Clippers-Kawhi Leonard Fallout Touches Celtics, Sixers & More",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRF9ldHMwVVcwUHF3VHdUUnMySlotVW5oM2ZiWEZ2eksybzg4S3BBdEZ1WHJFVnZkU1hNVUhEZ0gzWlE1Q3V0ODVwSXNvc3FWZU1OSW1wNVRuYVBxOE5GSHBTamh1dDJlSmp5YTFTX3U4UVRWZTEtbTZTS2xHRnpHS2o1QXRURmgzRHkxTg?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Clippers-Kawhi Leonard Fallout Touches Celtics, Sixers & More heavy.com",
+          "published": "Thu, 03 Sep 2026 23:51:56 GMT"
+        },
+        {
+          "title": "Why the Kawhi Leonard Trade to the Raptors Hasn't Happened Yet",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVXhUOVdJRFhnUUd5QUs3aFZNeFVTRDFTMnFuXzBScUxaaWM3a21HT2VjWmlFcTNwX3JkVGZZOEdCdWtERmtpd3gtWThVc05idVV4dWhTVlY0UlluODU0dVU5cmZmSlRZT0dfSXQxdGMyNUFqVjJlZG8zRzRQd0hYRHFUc1FFTjhDWUNhM2NBaFY?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Why the Kawhi Leonard Trade to the Raptors Hasn't Happened Yet Sports Illustrated",
+          "published": "Sun, 06 Sep 2026 16:00:01 GMT"
+        },
+        {
+          "title": "Clippers Must Let Bennedict Mathurin Walk After the Kawhi Leonard Trade",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeUFFQ0Fvb2RVNDRuc0FWVnVQRWdQaXZqMW1PRVRhNGVEQVdVMTA4a0VBaDZQUHlVeXQzVEozZlgwbDRDaENhZlFQVHg1WHpNRk9RelVKVUMtSUg5end3ZENCcDFzYTlDY2l2ZkE2Wng1RE1OQ3NjQTlfQUpXaF9PYmpaakExUDFJZ2Q5SXdjVU5XLWlVWVVuU1ViWXNqeGxMN01McEFqZXR3YXJiNVozRkZR?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Must Let Bennedict Mathurin Walk After the Kawhi Leonard Trade Sports Illustrated",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Clippers Can Land Their Starting Center With This Mock Bennedict Mathurin Trade",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYTVSRlV2Smtkc2tuZnlDM1ZqTHZNY2RfTHZubUEyXy1tckt3ZlI0eXpKTWZudU9KalpCRF9xa19qODR6MjFKcU9Cc0VzSlAwNXBuT3VETW5Hd19mbnAxVFg3VktrTVNDR0g1eVRqTWpsUlFCVGhaNEJPWFYzVXFwWmwzajlWN09zWkhzdUFfRnd6Rmd1djRjUi14S01nR2tMS1VBWG9ROEt5N2R5S0E?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Clippers Can Land Their Starting Center With This Mock Bennedict Mathurin Trade Sports Illustrated",
+          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NBA Trade Rumor: Bennedict Mathurin 'Likes' Mavs Move; Daniel Gafford To Clippers?",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQnp4aHBqLTV2M0o1NFROR0J4UUxOQkp0Q01Wb3pPVGRvODVsNzVZVDZzM0ZrSF9QWkJ1TW13S0xWT0IzZTlQU01jQnJQb3A3QmRBV2ZERk5wMFcxdTZieFFSazlzWXJiQlFQZExac2IzTE1XbWx3di1EOWYtQXJVQnFLbW9Pd0MzdlJF?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "NBA Trade Rumor: Bennedict Mathurin 'Likes' Mavs Move; Daniel Gafford To Clippers? Yahoo Sports",
+          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Projecting a Pistons-Clippers Trade Involving Kawhi Leonard After Detroit's Playoff Exit",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSzNDc2pZV29CQ05CZ3ZlLXZ3dF9OZkZHMHpQR2xjUXEwOTRuVWRLMmw2N2ZVTWVJMzJMS0NmaC1JeXFkN1ZPTGY4dlAxa2I0Nkk4U2Z1ZWM1V3Q3OUNCaDZOYzdpZWdlTWN2enNaaV9iRHkxY3BwVEZMN0pJN1daTkk5RExYUnF6VXFYQTBEUklYc3FpMlhCMTlYbVcyRHFuSC1penJpdTF2ZDNhRl85MEw1UTN0MjNacU1abFM0b2NlTXlXaVNKNzV1clRGc1E?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Projecting a Pistons-Clippers Trade Involving Kawhi Leonard After Detroit's Playoff Exit Sports Illustrated",
+          "published": "Mon, 18 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Who is Gradey Dick? Unheralded return in Kawhi Leonard trade has potential for Clippers",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQTF1Q3BTZkU3UjI3R1ljSl9lSmdTM2tsbkMyS1A1VjJyT2FBVUtQNFJyY3pRU0Y3VHJkVW1hT3ZYU3FOTDZHcWVCU3hXckR1QkxMVTQ1d2RSeDJuU0lVNDVhZHJBOG8zMV8wS2xoOWp4bDZ1NzVGV0hYaVJuZm1vcDdndTBBbmJDU3BiUA?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Who is Gradey Dick? Unheralded return in Kawhi Leonard trade has potential for Clippers Yahoo Sports",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Report: Gradey Dick traded to Clippers",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYlV3YkhiRS1heU1JSi1jZmU2QjNNMlFjRjhvckZLQ01naVd5ZkNKRklhdUVzVGk5azlTc29LbXI4MWpUazdVNzB2RzVtblJNVzVQdUFUbWJ6dW9TaldsZldCVmpNcVhvaVhfa2FaOU5fZG1yMDhtZlhWU0tXOVhGRkxoVUNvb043bzFQV1V4eXBrLW81TTJHNkZqeExyRkhyeEFEekkwLVQ?oc=5",
+          "publisher": "nbcsports.com",
+          "kind": "article",
+          "snippet": "Report: Gradey Dick traded to Clippers nbcsports.com",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kawhi Leonard trade grades: Why Raptors reunion is worth the risk",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVFFLM0hGM3ZqbTVyakxDWm5KZUNKV05MUmhHZmJQZEc2QzdXdWk3REx5eVk0dmNCYlljUnVQdUs3dEcwMml4bXBfWHdaLTZhSzdjSUFEaVpfREVwcjNpX3liZUFVWTVSa1dQTjVRMzhzT3dheXZRNkszcUcteW1lQngtN25IRWdlSVpZbEpCUXJYUEM1c0dmTHVfcm0?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Kawhi Leonard trade grades: Why Raptors reunion is worth the risk The New York Times",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kawhi Leonard Trade: Clippers Deal Star to Toronto Raptors for Brandon Ingram, Gradey Dick",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbVluaVJTX2dDNk9QRmhGVXhuZ0lCTVY1ek5FQUpDdUFDb2ZXaENzSHJLaUg0M01aaFhCOG1uREIzWGhGZm41cE1WTmJ2SFVsVmpFRWdITXBGX1VBWGctYUFxMlJYSl90bGcwVW9QVWZVQ2pvcWFFekdJX2RwM0g1aVQzT29SSkVTZkJpNEdaY01oM2l0OTAxUndB?oc=5",
+          "publisher": "Fantasy Alarm",
+          "kind": "article",
+          "snippet": "Kawhi Leonard Trade: Clippers Deal Star to Toronto Raptors for Brandon Ingram, Gradey Dick Fantasy Alarm",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Former Kansas Star Gradey Dick Headed To Clippers In Blockbuster Kawhi Leonard Trade",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONFdHdmZHZ2EydTZZTFYycG03TkRtYmRvVUVBWTNMZll1Y1MzV3l2a2xhLXQweGd5T2I5RkZsNDByUjQ4ZHp6aDc2a1JlVGdiMk1zTlBSbmtuelJOcExpLVBydnR5UUlQb244RmJWUWp0STZuY29GLWlnUWhuMFZjM3liOFFOUQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Former Kansas Star Gradey Dick Headed To Clippers In Blockbuster Kawhi Leonard Trade Yahoo Sports",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Gradey Dick Trade Rumors: Analyzing the Raptors Guard's Future and Potential Landing Spots",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUzNOV3JISGZTZWlSRzVIQlhaNzVqRE5RRDM4dm9SWU5BdWpJQ2RJZV9mTmhxTDdWMXB1akFnQjAyOXJqbWVhQzFadEZZMVFxYWVRZ2lEODFUVzh2ck5DSFplTmRXekVxQUo1d2txbWhDTm0yWXFYbjdnVEdUZ3N2dUtHcVI3RUl2cFdhaEM1cTI0aEE1LUxBWWZVUDhqNWtMVElEU1RBWWpyQjdwVE5XTDlid3JVOHF2YkdEdG1oQUhEQXh1cTNj?oc=5",
+          "publisher": "si.com",
+          "kind": "article",
+          "snippet": "Gradey Dick Trade Rumors: Analyzing the Raptors Guard's Future and Potential Landing Spots si.com",
+          "published": "Wed, 01 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Gradey Dick Could Be Intriguing Buy-Low Trade Option for Clippers",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb25BOVRQT21tSzIxdVk4eGwxYU9DNjVuUU5MaVNyekVfMWlqNFJmYTVZb2l1ZVQtRVpVdXVIUVREQzBZdV9wd3pOX3hrNWtJMVpWOTN6SkRHUV8zNUZIVlFuZ05iRkZvS0pQYmtZQ3UyZFVISG5yRFprYmhIeXhLR2xZZTlod0FNbjVFeDFUb3lxZzJycWJsb0pGUmFxYVpNZ3E1NU5HN3hJVDV4?oc=5",
+          "publisher": "si.com",
+          "kind": "article",
+          "snippet": "Gradey Dick Could Be Intriguing Buy-Low Trade Option for Clippers si.com",
+          "published": "Thu, 07 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Former Jayhawk Gradey Dick among Raptors players, picks headed to Clippers in trade for Kawhi Leonard",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOTXVBSzNVV3VXdmJhMGFCY2d2R21QUUlUWjV2bldkLW56VFh5SUdJV1NGMXJRVU01ZTlGUXVtdml0VjVVcmNsdzA4WjZLM083MEhyX1pUeWM0TzVXTnBVaWVIQzgtdVEzQmx1ZnoxSmdHeXFzSVJYb3hjYXMtU3JiTTFaLW9ELUFQM1ozWWF6U2lvZnh4eVZTcVdreXh6NEpsMExzSGtWOGs5QnVzNkZOZzRHRGh3RFNNWkhJSzhvNVdNZ01OMDdNaUhxVFBESHB2cXNoZWNqcDNwQlhIQkt0MG1KbXF2VU5zQ0VXeG9YZlJjNlQweHFMRmdWQWJUWTQ?oc=5",
+          "publisher": "KU Sports",
+          "kind": "article",
+          "snippet": "Former Jayhawk Gradey Dick among Raptors players, picks headed to Clippers in trade for Kawhi Leonard KU Sports",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Former Kansas star Gradey Dick traded to the Los Angeles Clippers",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSWdKWV9Va281dnd4WEJFNERYV1lLdjRfenFpU2tQYi05LWo0NUM3a1pYOXRNU1lPVjFDaUQxdm92WW1ZV2dncXF1cmNNaEM1QjhLR0RZVlJTdU1pdVo3NUtLVDJUZDZ1V2UwMWhHdm1RSUtBTzVFd2FGRjkxUlVGUzBmTzNSZw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Former Kansas star Gradey Dick traded to the Los Angeles Clippers Yahoo Sports",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Gradey Dick Open To Trade From Raptors",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONEc4WWNpZXdtSjl4NERWeU91U1ZYNFdxUU9VT3hIQm9XZzdKaG9VemNiVlpEbXlBMWFjQ3ctTHVxUENPbktHWFBEUFMtLXdjcUtjVDE1dHJGUHA3TTdGa2ctbkQwSTd6eS10QUFMT2hzUU1nRU52S2I2NHlvRGNKMkxld0FEZnk3YjhR?oc=5",
+          "publisher": "basketball.realgm.com",
+          "kind": "article",
+          "snippet": "Gradey Dick Open To Trade From Raptors basketball.realgm.com",
+          "published": "Tue, 05 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Raptors vs. Pacers: Gradey Dick breaks out in wire-to-wire Toronto road win",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNUDlySnpxdklWb1RDYmhvU1JHTTBOeVNTTTFFUk92cG93NFVuTzUwbjlnTkFRcHBuUjYwdHFjYjhOM0NHZXJkQ3pnSGxjU1RUV1d4ZlF1bTRncVl5d0paTGlTWkdZTHB1S1ZRNVdqWFZ3N0JiNl9td2VxaVBXaDFWallVV01MelRXVllKYkEtZmNqQWJwZFFwWDl5Y3g3UXY3ZG9kX2FpSEZzeDFDV3pkVGxEMTE4M2c1ME9sOENRUjYwdG4yTXlPNFNwQW1PdXd4Q1FOU0xxTlhqYlhESVp5MkoxVXdXNkNsS2RZZmtrci01eXpJ?oc=5",
+          "publisher": "Toronto Star",
+          "kind": "article",
+          "snippet": "Raptors vs. Pacers: Gradey Dick breaks out in wire-to-wire Toronto road win Toronto Star",
+          "published": "Wed, 14 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Raptors Gradey Dick talks offseason, rookie lessons learned ahead of NBA Summer League",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOTmE1N0pXSHFGV0tGdHhFZi1NbmYwSEZFUEhnSmpRTENIOFkyN3RfbVFWd0ZBUGNweGYxdmlqbHVfV0NvcEJpMm8yYndWX1NlRGlfTDZCSmFPNS0yUGtOdU9rNF81X2g4VWpHX1NGSlNDemZQLTJyM3FOSk43UjcwNFNsLVU5RThoVzRtM3VrcW9WbDRXLWZ2VlMyalZwU0E?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Raptors Gradey Dick talks offseason, rookie lessons learned ahead of NBA Summer League The New York Times",
+          "published": "Fri, 12 Jul 2024 07:00:00 GMT"
+        },
+        {
+          "title": "Raptors Should Seek the Most Out of Gradey Dick Trade",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRjUzVnBjQWhIUXJrY0RTb255RGdpclBoV05mUWJweW4wM1duUW1IVHk3MW5OcmdsSExnMjhNRmJZMW0tZl84cmsyV2NMbldYS1VaRmc3eXN1MGVOOGF4VTJnSWxKTlhRYzd6SVRqQXRoS0hkb0twd0Myb0xyTWhFa0lrUGI?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Raptors Should Seek the Most Out of Gradey Dick Trade Yahoo Sports",
+          "published": "Sun, 31 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "What Happened to Gradey Dick? Raptors Star Exits Pacers Game With Injury",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNM05pbTduVHFZcnJmYmpIRXRKbXBraHNadXRXb2ZZeXBmb3g2anJEZFdkTlZBSGlKNmhhUXRSMm1EMTZheWhYdmNzNUJ2VFVLeGZTMWl0b092cjlOSVhVLWdFOUNlb0hScTVQV2kwZXdvTlFmNHJtbURUOXd4SGhTM2JSa3RENmpSWHdBWVc2ckdWVGZqYnJaX0JpZ1hEZ0xiX3FkdkxHNUhVMkhOZlhhZGswdG1Wei12OXR4dURtYmIxamEweWg0VA?oc=5",
+          "publisher": "Yardbarker",
+          "kind": "article",
+          "snippet": "What Happened to Gradey Dick? Raptors Star Exits Pacers Game With Injury Yardbarker",
+          "published": "Thu, 27 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Gradey Dick Open to Trade from Raptors",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPalAyX0FWSE1ZV2JGc1BXdE15dFJPU2ZsVjBzX0lNS1drazJjSEtKOG9OWUZlMld1Z0U1LVBfcDUxazRiUDRlN3ZkaFg5UnV2M3hiOURSZWY1X1RfQTg3TE5DemJjdlRhMFJrRGlxclkxQ3VPbTcwS0JHeTBLZVVkYTV1bVVuR3Nm?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Gradey Dick Open to Trade from Raptors heavy.com",
+          "published": "Tue, 05 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Toronto Raptors G Gradey Dick to miss game vs. Pelicans with left calf injury",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNN0ZtSm5YZmtnZ2doYXlIVGRlRVZDTWE5cG5NR1NtZkpXMmh2Y3JlOUp4WlNVemtYMV94dEZJT1dNUVVFQjhIMHA0dU1mQTlRSGUwX2lqdE9sdW5VM0pJSzBMYUpZdHk1M2V6ZzEtaEhwSTdES004MzlxR3otZ0lXWVRHa2RtenhlOW1uVVBuRXM3Nl9xelI2SDE3M1NoekI0TlBFMWJ1c09fT0lzX2c?oc=5",
+          "publisher": "TSN",
+          "kind": "article",
+          "snippet": "Toronto Raptors G Gradey Dick to miss game vs. Pelicans with left calf injury TSN",
+          "published": "Tue, 26 Nov 2024 08:00:00 GMT"
+        },
+        {
+          "title": "Toronto Raptors select Gradey Dick with the 13th overall pick of the NBA draft",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNSmxnLVJmLXE2V29zd3VtS2RYQ0FSOGhKbmR2QzFHTWpXMF9KZ2NveG85MzV0ZlNQMmdmOEplWFV0aERKeTdUWFhkVk9GNVk3X0hyeG85SHMzMUoyNkpwNEY3amNHVzI1ZXBVelBCREg3N2RVNWJBc2lUb2dOZnhka0dZa1ZsbWZ4Q0xtbDlVc3Jsc2ZUSF9OVGFnLWNTXzlqYWo1NjlCUXB1YnBwQS1iZ0ZaZkpzNVdmUEU1VUkwaXhmY08zZEtmVkhGMDlLalBUbGc0OUNCUHIwbEYxd3JwTXg2OXpKTEpwM2E4ZThQN3dQR0VSOTlyMC1waw?oc=5",
+          "publisher": "Toronto Star",
+          "kind": "article",
+          "snippet": "Toronto Raptors select Gradey Dick with the 13th overall pick of the NBA draft Toronto Star",
+          "published": "Thu, 22 Jun 2023 07:00:00 GMT"
+        },
+        {
+          "title": "Raptors add confident sharpshooter Gradey Dick as free-agent decisions loom",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVU9rNVMtQ3FzWnRVZ3pwQXctTFdabkVrc2tjbWFEYzJrTXM0Y1BuMGdEMlVxZTNTX2pqbEdWQ3VlZ3JMNS1ROVo3ZmRPOW5ISVloRS1LQTJlbXgtcW1td3hWUHB0RU9YWXBsTm1iSWpDc0NZUU1LRHctWWNTYnhGQjVyLVN2VllibU5kTlFjX2FobWx3akZ4UTZ3R2xzVURPdTNTVVRLQ05BNjlGdUJzWEhKdw?oc=5",
+          "publisher": "Sportsnet.ca",
+          "kind": "article",
+          "snippet": "Raptors add confident sharpshooter Gradey Dick as free-agent decisions loom Sportsnet.ca",
+          "published": "Fri, 23 Jun 2023 07:00:00 GMT"
+        },
+        {
+          "title": "Once top prospect Gradey Dick drops out of Raptors rotation",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcTZtc0k2cEJMXzJCT3NYcnIyMm96S2M4UUc4RF9mZ3VnZ3hRUUZ6UlV6VEg1Q3ctY0lqY2h3d3NNUzhCR0hUVW9XeDZzTG9sLVBzcmp2Zkd2SVdaRjItanJxeGRKMmhnQWFLQ1VBaGpZRURnT1IteWEwR0JFdHUzMUJ6ZHZnQ0VVYWJ4b1hXTVBVQjgzQ1E?oc=5",
+          "publisher": "Toronto Sun",
+          "kind": "article",
+          "snippet": "Once top prospect Gradey Dick drops out of Raptors rotation Toronto Sun",
+          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Kawhi Leonard Trade Means Raptors Are All In for a Title",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JVSDdjTGU1aUdWQ0ZtRDgxSEFZMzByWDd2bE9aN2hhSXc3VXRld2xNZWp6TjVGSXlEcTVPLVMtckpZWmZaMFFMSVVpcW1mNDIycUlUSG5DRmQxdkpaeUUxX3ptYjZ2VUFKRU5TemdnVC1fbkYzZFdtY2lNTlFzbTMxOA?oc=5",
+          "publisher": "si.com",
+          "kind": "article",
+          "snippet": "Kawhi Leonard Trade Means Raptors Are All In for a Title si.com",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Clippers Face a Trust Problem as Kawhi Leonard Trade Stays Frozen",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNckJnRFpvOUFicEhxTmtmRkwxejVxQXEwbzctcDBfVkdOeWV1S3RlVnViSVVkOVdIV3JtMWlSZ050YkgxREc5aG9oMHNONGZVdkxBOC1zak5uZzRlV3VpblhLc0NvU1ljQnZjSlRSSlU3eThKU2VLM1kwWW9LWm5hOEhUcC1kVlZneXVObWE2ZkE0U0d5eS1COUJKMnphZy15c3hfMUlwckR6VWdvcFRoaGVR?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Clippers Face a Trust Problem as Kawhi Leonard Trade Stays Frozen roundtable.io",
+          "published": "Fri, 11 Sep 2026 00:10:59 GMT"
+        },
+        {
+          "title": "Clippers offseason summary: - Drafted Keaton Wagler 5th overall (shot 39% at Summer League) - Agreed to trade Kawhi Leonard to Raptors for Brandon Ingram, Gradey Dick, 2 first-rounders, 1 first-round swap, 2 second-rounders",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBXVkVOZGhpQU5wbkhHczhxMEtpdnlJZFJ1MlZzQVpXc1QxTzI2dVNobnV5ZS1zaEZfMjNYUU9QdnpCZXZfNXVZd0p3dGdxMUxjTThPOUZwRldQZ201QmpwMnZn?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Clippers offseason summary: - Drafted Keaton Wagler 5th overall (shot 39% at Summer League) - Agreed to trade Kawhi Leonard to Raptors for Brandon Ingram, Gradey Dick, 2 first-rounders, 1 first-round swap, 2 second-rounders - Re-signed Jordan Miller (u x.com",
+          "published": "Fri, 11 Sep 2026 00:59:07 GMT"
+        },
+        {
+          "title": "Clippers could be delaying Kawhi Leonard Raptors trade amid NBA punishment",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWnltaXZtWnZDdzAxek5nNENfODY0ZDQ5a0ZiOTJzX1B4RzlhdVFaMGJwRU56US1jWTNONktvNEQ1ZFpjM0tYWEIyZWtrWW9Zck5zODNCUFY4WlJ2MGlaNUlrUkI2N0x0SWRSUHpWRy1fcUtYOVl2NWVTR08wMHBER3RsajFLZ0NzRExJSm5IQ2paZHJOcktOemk1SnNZbmxrdkYtWldvbTR4YXN6VUdxUDRJNVc?oc=5",
+          "publisher": "BasketNews.com",
+          "kind": "article",
+          "snippet": "Clippers could be delaying Kawhi Leonard Raptors trade amid NBA punishment BasketNews.com",
+          "published": "Thu, 10 Sep 2026 21:59:24 GMT"
+        },
+        {
+          "title": "College football picks for Week 1; how Clippers can rebound from Kawhi Leonard saga",
+          "url": "https://www.cbssports.com/college-football/news/college-football-picks-for-week-1-how-clippers-can-rebound-from-kawhi-leonard-saga/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "Plus Ryan Wilson's preseason 2027 NFL Draft big board",
+          "published": "Fri, 04 Sep 2026 12:58:11 +0000"
+        },
+        {
+          "title": "Raptors Predicted to Abandon Kawhi Leonard Trade After Major Development",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5kX1J6QjdUb0ZVd01uQ1FkNG9xSmd1anI0Ym9PX1hBTjhUWkt2R2FMSkY4cl9pc3licThWZmlaMmtpdG02WlZLZjFlZEhaZ3V3eU9iMzZzNVp3MlFDLWxURjNyOVliZ3dYVE5RTDlmQ09UYmM0MDJnd2xUQ1BIdw?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Raptors Predicted to Abandon Kawhi Leonard Trade After Major Development heavy.com",
+          "published": "Fri, 11 Sep 2026 12:07:02 GMT"
+        },
+        {
+          "title": "Raptors Trade Idea Lands Kawhi Leonard and Jalen Duren",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZlEydnZpbmt0bWVGT0duYTdCZTJZWFlZTGdvamVqVzc4S3o1SzNSVXdFeTEtY2hUdEVfMHVwc1RkT3YzQzkyVHJ5dnJoa3BrWTFSRjlFTTNwRWxHVVhEdEZNdzd4UnVZU25qcW5IWXJqbExXdDhWUWxkdnM3NWdLejBYUTJLeld1S2EyS1ZWc0ZTQQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Raptors Trade Idea Lands Kawhi Leonard and Jalen Duren Sports Illustrated",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kawhi Leonard-Raptors Trade Takes Unexpected Turn After Clippers Punishment",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkZMRGN5dFNVR29GNDd6QTZWdnhTLWNkUGFVZWtmV1NYWjJZeGJtc19CYTh5WGhReEFyc1ZDM21HMkJNMGhzTmM3VU9ySlNwOEVTQ3Vub1g1eXFnbkFJQTZjVDZkaHNVWEpyVDAzcG5zajhGSTJvN25iRFJfcElVNGQyVHZaaEpNMHc?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Kawhi Leonard-Raptors Trade Takes Unexpected Turn After Clippers Punishment sports.yahoo.com",
+          "published": "Thu, 10 Sep 2026 19:14:05 GMT"
+        },
+        {
+          "title": "Why is the Kawhi Leonard trade still on hold? Uncertain Clippers leadership reportedly among reasons",
+          "url": "https://www.cbssports.com/nba/news/kawhi-leonard-trade-still-on-hold-clippers-raptors/",
+          "publisher": "CBS NBA",
+          "kind": "article",
+          "snippet": "The blockbuster trade between the Clippers and Raptors remains in limbo after the league handed down L.A.'s punishment",
+          "published": "Fri, 11 Sep 2026 15:51:34 +0000"
+        },
+        {
+          "title": "Raptors Predicted to Abandon Kawhi Leonard Trade After Major Development",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMDZqX21KdGpkdlZ0c2NRVHdkRFNJclZaLXZaVi0wekxkSndkcEktUklidVlDSFZaQkNFSVNVWjdQbTYyZ3ptU0k3SkNJdWZubTFqOWRXQ2VsV0NCanUzaGp6anh0R3pCQVNoOW9kdG9ySjd6QW53aGNDN3ZzeVhsYVgyR25HdzlpRm9mNkVsTjZRQQ?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Raptors Predicted to Abandon Kawhi Leonard Trade After Major Development sports.yahoo.com",
+          "published": "Fri, 11 Sep 2026 15:06:19 GMT"
+        },
+        {
+          "title": "Scottie Barnes knows the Raptors are dangerous if the Kawhi Leonard trade pushes through",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNQkhmblNyd00yeE10SjRfajgtOFJ5c1JzaEpHRlEzbC01eWlSU29BdWk3RnYwU2VtUVFJa0VFWEY2Z1FxdEhXcmhjZG1BVWFJTmJrTnlqN2NOTjQ5dDFIR3VDVVBZaTVqckVCRENOLUsxRTZRenM2WFd1a19ESmtVUUpFYTVZa1I5T1d4NmR1cC1YbjhPUy1JVnN3dGRYWVNaNUtRUnl6VnFXa05lQmhxRmVvOXg3MlBra3JlUEQzSjZYeWlyZ1h4MHZqQVZIRHhfTzhlMzc1cmE?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Scottie Barnes knows the Raptors are dangerous if the Kawhi Leonard trade pushes through sportingnews.com",
+          "published": "Fri, 10 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "How Kawhi Leonard fits alongside Scottie Barnes with Raptors after trade from Clippers",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNXpJZ092V2gtZHhUenRpYXZFN0k3LXlpRUQ0bXEwQlVmUG9PVlotSHk4RmJ6cU9SZEk3cUFMenU0UUpHUkYtVjlITFRfdzhyMUFfN3AwQUctSkQwSnU1RmluNVEzVUVqTU52VWtSSldjQ2RVVzFtU3YxNVhQUEt0alpZODFPOHFrQm9xeHI5QU1Oa2FGb29MVFhSbHk5WEVreGF6NGdjWWdub25yWHJHZkxocTdoeDltQzl6aUV5SXQxdjh1THpoMXVua0l6T1hXTGFTS0NhaUtqMFlYMkZmYzQ3c1Q3d3d0OHpaWWplSQ?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "How Kawhi Leonard fits alongside Scottie Barnes with Raptors after trade from Clippers sportingnews.com",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Kawhi Leonard trade is a big risk for the Raptors. It’s worth it",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZHlvaE54cTFvUjNYZzVJazJDVWVfWEg1VXYzaEJCR3hmMktrVTlScDltN2NiNGZjbHF0S3VYeklVVHhPZDZMcloza2pfa3ZBMVdyUk4tYUtWOG14N1Voa1QyUGd5a1FLWmptNUtTUTNCRkE0LS1wbU5Bb2d4al94ZGlsbFNNU2tGLTJULUNCYVMtWWpQM05DT19vYlRWeHFUMFVIUmtUNDc2SkF5VVpnVXhIRWZzcm5CQjdv?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "The Kawhi Leonard trade is a big risk for the Raptors. It’s worth it The New York Times",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kevin Durant trade idea gives Raptors perfect player to pair with Kawhi Leonard and Scottie Barnes",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSWQ2b1lESFdPOGtUaGNsYjV3dC1FUUdCSjc4YktNMUsxTXRBRGNVVnVyVVZsSFA0TUJpMHpGTmlDang4TjJNU1V1U3NFQ28yOXhibFVYQWVEWnQzdXdGcHR1Z2prUGowM0M1MG4tSk1HQl9FZW9HT0dyQ0FFZjBmUmNwV2s3RExtek5WdEpQWTI2cFZqTzZMbldEZ0M1ZDVHOVR3N2lueTNDQnBoS3ZRVm1wMUM0Q2dTN0dWOF9kTnhfTGZyVFl4YjVCc1hRUEV6UzNmM1Rn?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Kevin Durant trade idea gives Raptors perfect player to pair with Kawhi Leonard and Scottie Barnes sportingnews.com",
+          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NBA ready to approve Kawhi Leonard to Raptors trade, league is waiting on Clippers and Raptors to submit trade",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOWjQ2RlRHVnVidXVnRC1UNVRNbEllMlJOanM5QUpNcUdfX2I3VlpyTDFORDRldzBTekhvc25NUll4Ym41Qjh5YlRKTDlXbVdSbDM3T0hYdkVRaFc1cVh0WlVzMGdJbmZwSmM3Wms1cjY4Z2FKMGhlSUlZVXF1X3pzU3h5bkdqdDV4R3BpbEJhak5veE5UVnIwV0FHTVQ4aEFlYmJtbHBmSWo2WjFIcWxHbm9TcldzSFZnT0taNHNfR0dGUWFWTXNvTzVpS1BGTU96ZVF6QWprdWU4VlAyd0NSZEVNNS1yU1N1d1hiWGhxUjNSOHlhWmYtUkdRN3dlM3FHN2FINw?oc=5",
+          "publisher": "HoopsHype",
+          "kind": "article",
+          "snippet": "NBA ready to approve Kawhi Leonard to Raptors trade, league is waiting on Clippers and Raptors to submit trade HoopsHype",
+          "published": "Fri, 11 Sep 2026 19:10:00 GMT"
+        },
+        {
+          "title": "Why is the Kawhi Leonard trade still on hold? Uncertain Clippers leadership reportedly among reasons",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdDU2Nl92N1otMnhMMGIzNFd5cDlLUDBBR3NfY3JLeUdEcFdKS0V4UnItWGhoLU93TkhxcEh4dy01bEVJZS1OQ0dWbjFQLUlBbXpRQUlqTHZnb0VmZklkakRPQkV1MnUwRm5VUVo5SmpudkhReTl4NFhpdkUzOVhyamVIaTloaFZKM29JOUktVQ?oc=5",
+          "publisher": "CBS Sports",
+          "kind": "article",
+          "snippet": "Why is the Kawhi Leonard trade still on hold? Uncertain Clippers leadership reportedly among reasons CBS Sports",
+          "published": "Fri, 11 Sep 2026 15:47:00 GMT"
+        },
+        {
+          "title": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOOGlQaUk4U0dqRkZma1hyMW5UV2szVTAyZkdEbk5LU01sUVNXdGx4VmFrUHp1bnhTcWF2V3hoQWdKenZULW5RN0FVbTFtdnBtbjVIV0xXTEdsV2lQOElEdFNKSFJSdHdDWjVpNTNPU3pFV0RtUlRmOV8wMUVLVWd4djR3?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard sports.yahoo.com",
+          "published": "Fri, 11 Sep 2026 03:50:00 GMT"
+        },
+        {
+          "title": "NBA insider provides latest update on Kawhi Leonard-Raptors trade holdup",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWdzQzNIdGJ3bnNDZGg1bDRjMElrZDU0dEF3Rk1sVmJSbWlaaHZpN05oQTdnX05MRTIwa1RYNUJFc1VwSnAyaWVscE92Y0V6UW9CczB4UjI3LXRjSjhXNEFSYXVNb2hjcUpZaWdwMk1ETUVaamN6TWpDd0tzNFUzN0RSS0p4YmxkVmlaUERUalYwcUY0S2tkblJHc1B1QklERHhOWk05Qy11b0RSaVBvcmRhMA?oc=5",
+          "publisher": "BasketNews.com",
+          "kind": "article",
+          "snippet": "NBA insider provides latest update on Kawhi Leonard-Raptors trade holdup BasketNews.com",
+          "published": "Fri, 11 Sep 2026 19:13:00 GMT"
+        },
+        {
+          "title": "Kawhi Leonard-Raptors trade faces no holdup from NBA",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcS1wbFdyZF83cmNtTkp0WkNLTmxSUnQwLVZzQ3paYlBQMlJzaUpIOFJzZHp4TTBGLVAtWXRuM09yajJQelIzek5ROGZiSEJlQ19OenpJeG1pc2dvMWNZc2RZODgzOEVMVzhjMW5zTkE1VzZlUUpRU2FkUXlwYXRWb25qRS15dG9vbDROWmdn?oc=5",
+          "publisher": "Sportando",
+          "kind": "article",
+          "snippet": "Kawhi Leonard-Raptors trade faces no holdup from NBA Sportando",
+          "published": "Fri, 11 Sep 2026 19:17:57 GMT"
+        },
+        {
+          "title": "Blockbuster NBA Trade Proposal Lands Steph Curry Next to Kawhi on Raptors",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdERoUkFIUWhNNWh4ZGE5UXlZY00xeFE4YkhOenNQdzl5RzFhcjhGZko0ekJHMldYdnF6WDlhSXBTV0JhdlBMaW5OeExhUXlZdk9yN05hU0cwSmRuQUpGS0k4TGNFaWFPTzhDUW9TYU9COTQ5eVo2eThuOFVkTm9HZlBkRkNWWW50NFpDRzZn?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Blockbuster NBA Trade Proposal Lands Steph Curry Next to Kawhi on Raptors sports.yahoo.com",
+          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kawhi Leonard trade to Rockets reportedly on hold as NBA investigation signals bigger trouble for Clippers",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQczF0Q0VQNENMYmtEZGpTQW03c055WFFDZU04N0hsTGZvUklPVGZaQjFCb21QOG1iYzcyeDdYd2d0WnNYUzJyVGloSnItakNfWDB6Y2JFME9KbUJEblczeDFfSFhmeWFyUjJVT25nSkpmanhxVFZRQUFXYmh6LWxRUFVSZVgtUU1uQlhod2FuOHRUd0hXZUlNZmhyWXpIdmFBdG13WEI1QjUtdjk1dm4td3VRQTdqSmtMYmM1emdDN01ORGQzQlRCLXlKS1NKQdIB0wFBVV95cUxQN1AweW5fVXFadlQzd2hLZEFuMzRVOXZwVUQwOFZ2T01LazV3V3pmTmpMOWttVi1XOEpKZW5lZWpaeGJFbzBLSHhCNWxaZzZPRXVCRGU1SnhRNnRwVFNMb0ExempSOE5pc3U0SlQtN3BwZ095SllGV2czRnQyVFUzN2hXc0liRUViYkxVS21oaEJfWGJFZzF6ZVl2UkJjMFFFOENlT1JVdGVEQzQ3b212OVpKVzNWSTBtVnlpRV9IWDVqSU51OUVlSWlDcjdvS1NDWTBN?oc=5",
+          "publisher": "bolavip.com",
+          "kind": "article",
+          "snippet": "Kawhi Leonard trade to Rockets reportedly on hold as NBA investigation signals bigger trouble for Clippers bolavip.com",
+          "published": "Fri, 11 Sep 2026 21:03:06 GMT"
+        },
+        {
+          "title": "Where the Clippers-Raptors, Kawhi Leonard trade stands amidst federal investigation",
+          "url": "https://sports.yahoo.com/articles/where-clippers-raptors-kawhi-leonard-194646251.html",
+          "publisher": "NY Post Sports",
+          "kind": "article",
+          "snippet": "Why hasn't the Kawhi Leonard trade involving the Clippers and Raptors been resolved yet?",
+          "published": "Fri, 11 Sep 2026 19:46:46 +0000"
+        },
+        {
+          "title": "Kawhi Leonard Trade Hits Another Clippers Snag After NBA Punishment",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPN3NuMUc5VXhtbmI5d1BmMGJrM3gxNHVMOGo3eUJpZUNtbTFnWmJFRmdMVW9DUHQ3TS1SMFlaRklqYi1Bb09LR0Y3bVZfdzlON1I3aDBDMUl1NXdoT2pJRjFEWkZxMUxSTjNmTlNrV09lUDFEajVMb1ByWjhUVE9TWU5LR3JXU1lL?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Kawhi Leonard Trade Hits Another Clippers Snag After NBA Punishment Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 11:51:11 GMT"
+        },
+        {
+          "title": "En route to tape today’s @BleacherReport stream at 5pm ET. Kawhi Leonard, sources say, is in Miami among an organized minicamp of Raptors players. Toronto is waiting for Los Angeles to move forward with the agreed-upon trade that Leonard and the Rapt",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoUG1EM3lDNm51ZDUwN3YxdEtRZXludk5kcjRoNkFUNmlBY2hpUC1QMWhvTlhMVllxcVMzdVFUdWxXODRRbGdnTUVLdWo2Zkt3M19TTEZOLTVoc1FRaVBxV1ZLNA?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "En route to tape today’s @BleacherReport stream at 5pm ET. Kawhi Leonard, sources say, is in Miami among an organized minicamp of Raptors players. Toronto is waiting for Los Angeles to move forward with the agreed-upon trade that Leonard and the Rapt x.com",
+          "published": "Tue, 08 Sep 2026 20:15:37 GMT"
+        },
+        {
+          "title": "Kawhi Leonard Gives Hopeful 3-Word Answer on Raptors Trade After NBA’s Explosive Clippers Investigation",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX1liQzljcWx1ZlNjOEhtZk4zWXBWZ0RpRFM3OUtGUDJVWk1oM1NqOWl3YjlpWWNmTUtvUldmMm4tVGVoUVJHR29palZhejhVc1d5UmpZWW41QzVla0k2OFVXVTh5LXh2M0EyTnEzSHZZdmxzOGN6R1lGcXJaSDRoRXphdU8?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Kawhi Leonard Gives Hopeful 3-Word Answer on Raptors Trade After NBA’s Explosive Clippers Investigation Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 09:36:08 GMT"
+        },
+        {
+          "title": "Clippers 'pissed' after Kawhi Leonard's NBA punishment as Raptors trade sits in limbo",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUHI4TGFfUjBpbV9MWTlsV0d4TzdHV29UMlphYVpuN1dKYlc1S2xzS2ZNUkt6bVRiNEFaVzVReW04c09va2JOWV9RX2F4Q2NzWGtRTXRlTWliMi1iQzRFWHp6QmNCendqakFJNFFaUmJVQ1FDRWsyTGUzeEtJVzFSWklhOW1DdUFaVUFv?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Clippers 'pissed' after Kawhi Leonard's NBA punishment as Raptors trade sits in limbo Yahoo Sports",
+          "published": "Wed, 09 Sep 2026 14:56:15 GMT"
+        },
+        {
+          "title": "Raptors Get Brutal Kawhi Leonard Trade News After Major Clippers Development",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMjh6NERpTW5ZMDBhRW8xaFBlNjkwM2hJdV9IVzJpRkRkYWJ0cDlVemNPaHFYSlVoU0Uybm56b3dWeXdXcjRYUjRQLVJkWHhhOWpCb3R5Z2lSblVDeEFLaGFxSEhsSWVCTTlhYlIweVRLUUw2NW5HTHVWbzlubk52TG11RnJWWmkyQWIwcEd4WQ?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Raptors Get Brutal Kawhi Leonard Trade News After Major Clippers Development heavy.com",
+          "published": "Sat, 12 Sep 2026 12:40:19 GMT"
+        },
+        {
+          "title": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYU1NYjY5ZDNpQ0ZXanltd1NqQ0xLNkpwczZKb0lwQUd0UVMzN0RvMXpLSlhNcEpyX0s3LVdjT3U4bjluU3oyMjh3OFNJcnpSbmR0RV9JZlVlUnlCSmhIbGpvMjJyYWVSQmJJOVhjUWdyTndZY3BGaUtfalNMTkFmX0dsYmo5bm40aVo4?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard Yahoo Sports",
+          "published": "Thu, 10 Sep 2026 16:39:16 GMT"
+        },
+        {
+          "title": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaFZhX0hwa25ub1lTZ1RpZmVCMzN0amtnMlY2VDZYbzdvbnBadUVNeVZFVGdCbWRWOFMtNEtuRU9WbVMzRFVfMWtSUzZtTkg0WEJBcDBHVlFIVzBCTlVXQVdnV0I2dmtxd2NTdHlNdTgyR29mc0tFdnVUU2tCTVhYX1p6cTFVOW8zcEE?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard heavy.com",
+          "published": "Fri, 11 Sep 2026 00:58:00 GMT"
+        },
+        {
+          "title": "Clippers may punish Kawhi Leonard with Raptors trade still pending",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTkctbWFVTFYyVEctX3lRelNGT1hGVWc0OGFneV9kZUg2Q3pvclpLdjhOUmR4U0p5aGJxU2FxV2FfWDk3NjUxQmNTRGcwSlZtTG5PTUFDbjNsWS1qRGx2QldibzRzMmw3c1JReGc5OHBkTHFmblh6Qk9HUTZSQ0ZvMkZ4ZXRsaGxad3hpZVlpOHc5SmlUNHIzejJETURIajBrUVQtNjAxWVN3NEduQ2FXQU9oeWxaSHBydC1WdlVieDhsZw?oc=5",
+          "publisher": "Yardbarker",
+          "kind": "article",
+          "snippet": "Clippers may punish Kawhi Leonard with Raptors trade still pending Yardbarker",
+          "published": "Sat, 12 Sep 2026 23:43:28 GMT"
+        }
+      ]
+    },
     {
       "id": "trade-rumors-wait-see-anthony-davis-jimmy-butler-691d7161",
       "slug": "trade-rumors-wait-see-anthony-davis-jimmy-butler-691d7161",
@@ -569,564 +1118,16 @@
       ]
     },
     {
-      "id": "raptors-reportedly-sign-ex-lakers-champion-while-waiting-7195aab2",
-      "slug": "raptors-reportedly-sign-ex-lakers-champion-while-waiting-7195aab2",
-      "sport": "basketball",
-      "headline": "NBA ready to approve Kawhi Leonard to Raptors trade, league is waiting on Clippers and Raptors to submit trade",
-      "blurb": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard heavy.com",
-      "summary": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard heavy.com Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade Yahoo Sports Raptors Projected to Land 11-Time All-Star Guard if Kawhi Leonard Trade Fails heavy.com Aggregated from heavy.com, Yahoo Sports, sportingnews.com, Sports Illustrated, nbcsports.com and 20 more.",
-      "category": "injury",
-      "published": "2023-06-22T07:00:00Z",
-      "updated": "2026-09-12T12:40:19Z",
-      "players": [
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        },
-        {
-          "key": "rj barrett",
-          "name": "RJ Barrett",
-          "slug": "rj-barrett",
-          "pos": "SG",
-          "team": "TOR"
-        },
-        {
-          "key": "gradey dick",
-          "name": "Gradey Dick",
-          "slug": "gradey-dick",
-          "pos": "SG",
-          "team": "TOR"
-        },
-        {
-          "key": "brandon ingram",
-          "name": "Brandon Ingram",
-          "slug": "brandon-ingram",
-          "pos": "SF",
-          "team": "TOR"
-        },
-        {
-          "key": "bennedict mathurin",
-          "name": "Bennedict Mathurin",
-          "slug": "bennedict-mathurin",
-          "pos": "SG",
-          "team": "IND"
-        },
-        {
-          "key": "scottie barnes",
-          "name": "Scottie Barnes",
-          "slug": "scottie-barnes",
-          "pos": "SF",
-          "team": "TOR"
-        },
-        {
-          "key": "kevin durant",
-          "name": "Kevin Durant",
-          "slug": "kevin-durant",
-          "pos": "PF",
-          "team": "HOU"
-        },
-        {
-          "key": "jalen duren",
-          "name": "Jalen Duren",
-          "slug": "jalen-duren",
-          "pos": "C",
-          "team": "DET"
-        },
-        {
-          "key": "jordan miller",
-          "name": "Jordan Miller",
-          "slug": "jordan-miller",
-          "pos": "SF",
-          "team": "LAC"
-        },
-        {
-          "key": "daniel gafford",
-          "name": "Daniel Gafford",
-          "slug": "daniel-gafford",
-          "pos": "C",
-          "team": "DAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOd2hjYy05NHBxLTZCNnlSNU5Ca1ozdDYyUjJ4TjlybEtWUUpLLW9fc1lINy1vOEJtNXMzU0ZvQkREMGJFSjVCMjAwanQwN0VyY1NwTGp4UTBwYUp1czdnSU92TVFBOURYM19rR1ZoekEwR2tDTVpUX281QVVLSVpvY0xnY2xUaVAyVEE?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade Yahoo Sports",
-          "published": "Mon, 07 Sep 2026 16:54:15 GMT"
-        },
-        {
-          "title": "Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPcVdLUHdnOG1ZZ2ZWVm0yZmJyRGNDcGdrbXFqbFVpdzl4bFRNU1lSaXBJclhfVDMyZFBOdmJXZ2dKUklkSXVBZFJLbjZTRVFQams0NmFibWhWNFA3My1VRHBrRHlHa0FXNXVWaVpCNVNuMmJfS2V5Zzl4U0VpbktoMXE1Q094ZHB2RloyQnpkX1ozVk00NzFudEtLV1FGay1qT05yUG55MkRxdENPY0oxQ0pYd1BaNlJ6Sm5TTm41OVlueDY2Q2F4ZGUwY1IwRE5aYWZhSzgtVjFKek9qZ2U5MWM4cXlSTVdpNzBEVHJrSjNQLUNlRnZoOU81UjhINkgy?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade sportingnews.com",
-          "published": "Mon, 07 Sep 2026 16:54:15 GMT"
-        },
-        {
-          "title": "Raptors Projected to Land 11-Time All-Star Guard if Kawhi Leonard Trade Fails",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9lUWdhWUxQWWxJYjRsVlctOVQzalNnMW5RWnRMa094ODBCcG5pMUV6Sm1aMDJWUlRJV3BCLVBQcnU3d0hWZi1iekYyNXlnTXRZc3QybjdKb0ZuQU1Ia3hmem1JZXNxRnNwTk9aTHVoRXhQRnJBVTFPaUdqWQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Raptors Projected to Land 11-Time All-Star Guard if Kawhi Leonard Trade Fails heavy.com",
-          "published": "Tue, 11 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Clippers-Kawhi Leonard Fallout Touches Celtics, Sixers & More",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRF9ldHMwVVcwUHF3VHdUUnMySlotVW5oM2ZiWEZ2eksybzg4S3BBdEZ1WHJFVnZkU1hNVUhEZ0gzWlE1Q3V0ODVwSXNvc3FWZU1OSW1wNVRuYVBxOE5GSHBTamh1dDJlSmp5YTFTX3U4UVRWZTEtbTZTS2xHRnpHS2o1QXRURmgzRHkxTg?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Clippers-Kawhi Leonard Fallout Touches Celtics, Sixers & More heavy.com",
-          "published": "Thu, 03 Sep 2026 23:51:56 GMT"
-        },
-        {
-          "title": "Why the Kawhi Leonard Trade to the Raptors Hasn't Happened Yet",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVXhUOVdJRFhnUUd5QUs3aFZNeFVTRDFTMnFuXzBScUxaaWM3a21HT2VjWmlFcTNwX3JkVGZZOEdCdWtERmtpd3gtWThVc05idVV4dWhTVlY0UlluODU0dVU5cmZmSlRZT0dfSXQxdGMyNUFqVjJlZG8zRzRQd0hYRHFUc1FFTjhDWUNhM2NBaFY?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Why the Kawhi Leonard Trade to the Raptors Hasn't Happened Yet Sports Illustrated",
-          "published": "Sun, 06 Sep 2026 16:00:01 GMT"
-        },
-        {
-          "title": "Clippers Must Let Bennedict Mathurin Walk After the Kawhi Leonard Trade",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeUFFQ0Fvb2RVNDRuc0FWVnVQRWdQaXZqMW1PRVRhNGVEQVdVMTA4a0VBaDZQUHlVeXQzVEozZlgwbDRDaENhZlFQVHg1WHpNRk9RelVKVUMtSUg5end3ZENCcDFzYTlDY2l2ZkE2Wng1RE1OQ3NjQTlfQUpXaF9PYmpaakExUDFJZ2Q5SXdjVU5XLWlVWVVuU1ViWXNqeGxMN01McEFqZXR3YXJiNVozRkZR?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Clippers Must Let Bennedict Mathurin Walk After the Kawhi Leonard Trade Sports Illustrated",
-          "published": "Wed, 01 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Clippers Can Land Their Starting Center With This Mock Bennedict Mathurin Trade",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYTVSRlV2Smtkc2tuZnlDM1ZqTHZNY2RfTHZubUEyXy1tckt3ZlI0eXpKTWZudU9KalpCRF9xa19qODR6MjFKcU9Cc0VzSlAwNXBuT3VETW5Hd19mbnAxVFg3VktrTVNDR0g1eVRqTWpsUlFCVGhaNEJPWFYzVXFwWmwzajlWN09zWkhzdUFfRnd6Rmd1djRjUi14S01nR2tMS1VBWG9ROEt5N2R5S0E?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Clippers Can Land Their Starting Center With This Mock Bennedict Mathurin Trade Sports Illustrated",
-          "published": "Tue, 04 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NBA Trade Rumor: Bennedict Mathurin 'Likes' Mavs Move; Daniel Gafford To Clippers?",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQnp4aHBqLTV2M0o1NFROR0J4UUxOQkp0Q01Wb3pPVGRvODVsNzVZVDZzM0ZrSF9QWkJ1TW13S0xWT0IzZTlQU01jQnJQb3A3QmRBV2ZERk5wMFcxdTZieFFSazlzWXJiQlFQZExac2IzTE1XbWx3di1EOWYtQXJVQnFLbW9Pd0MzdlJF?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "NBA Trade Rumor: Bennedict Mathurin 'Likes' Mavs Move; Daniel Gafford To Clippers? Yahoo Sports",
-          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Projecting a Pistons-Clippers Trade Involving Kawhi Leonard After Detroit's Playoff Exit",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSzNDc2pZV29CQ05CZ3ZlLXZ3dF9OZkZHMHpQR2xjUXEwOTRuVWRLMmw2N2ZVTWVJMzJMS0NmaC1JeXFkN1ZPTGY4dlAxa2I0Nkk4U2Z1ZWM1V3Q3OUNCaDZOYzdpZWdlTWN2enNaaV9iRHkxY3BwVEZMN0pJN1daTkk5RExYUnF6VXFYQTBEUklYc3FpMlhCMTlYbVcyRHFuSC1penJpdTF2ZDNhRl85MEw1UTN0MjNacU1abFM0b2NlTXlXaVNKNzV1clRGc1E?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Projecting a Pistons-Clippers Trade Involving Kawhi Leonard After Detroit's Playoff Exit Sports Illustrated",
-          "published": "Mon, 18 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Who is Gradey Dick? Unheralded return in Kawhi Leonard trade has potential for Clippers",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQTF1Q3BTZkU3UjI3R1ljSl9lSmdTM2tsbkMyS1A1VjJyT2FBVUtQNFJyY3pRU0Y3VHJkVW1hT3ZYU3FOTDZHcWVCU3hXckR1QkxMVTQ1d2RSeDJuU0lVNDVhZHJBOG8zMV8wS2xoOWp4bDZ1NzVGV0hYaVJuZm1vcDdndTBBbmJDU3BiUA?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Who is Gradey Dick? Unheralded return in Kawhi Leonard trade has potential for Clippers Yahoo Sports",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Report: Gradey Dick traded to Clippers",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYlV3YkhiRS1heU1JSi1jZmU2QjNNMlFjRjhvckZLQ01naVd5ZkNKRklhdUVzVGk5azlTc29LbXI4MWpUazdVNzB2RzVtblJNVzVQdUFUbWJ6dW9TaldsZldCVmpNcVhvaVhfa2FaOU5fZG1yMDhtZlhWU0tXOVhGRkxoVUNvb043bzFQV1V4eXBrLW81TTJHNkZqeExyRkhyeEFEekkwLVQ?oc=5",
-          "publisher": "nbcsports.com",
-          "kind": "article",
-          "snippet": "Report: Gradey Dick traded to Clippers nbcsports.com",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Kawhi Leonard trade grades: Why Raptors reunion is worth the risk",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVFFLM0hGM3ZqbTVyakxDWm5KZUNKV05MUmhHZmJQZEc2QzdXdWk3REx5eVk0dmNCYlljUnVQdUs3dEcwMml4bXBfWHdaLTZhSzdjSUFEaVpfREVwcjNpX3liZUFVWTVSa1dQTjVRMzhzT3dheXZRNkszcUcteW1lQngtN25IRWdlSVpZbEpCUXJYUEM1c0dmTHVfcm0?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Kawhi Leonard trade grades: Why Raptors reunion is worth the risk The New York Times",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Kawhi Leonard Trade: Clippers Deal Star to Toronto Raptors for Brandon Ingram, Gradey Dick",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbVluaVJTX2dDNk9QRmhGVXhuZ0lCTVY1ek5FQUpDdUFDb2ZXaENzSHJLaUg0M01aaFhCOG1uREIzWGhGZm41cE1WTmJ2SFVsVmpFRWdITXBGX1VBWGctYUFxMlJYSl90bGcwVW9QVWZVQ2pvcWFFekdJX2RwM0g1aVQzT29SSkVTZkJpNEdaY01oM2l0OTAxUndB?oc=5",
-          "publisher": "Fantasy Alarm",
-          "kind": "article",
-          "snippet": "Kawhi Leonard Trade: Clippers Deal Star to Toronto Raptors for Brandon Ingram, Gradey Dick Fantasy Alarm",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Former Kansas Star Gradey Dick Headed To Clippers In Blockbuster Kawhi Leonard Trade",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONFdHdmZHZ2EydTZZTFYycG03TkRtYmRvVUVBWTNMZll1Y1MzV3l2a2xhLXQweGd5T2I5RkZsNDByUjQ4ZHp6aDc2a1JlVGdiMk1zTlBSbmtuelJOcExpLVBydnR5UUlQb244RmJWUWp0STZuY29GLWlnUWhuMFZjM3liOFFOUQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Former Kansas Star Gradey Dick Headed To Clippers In Blockbuster Kawhi Leonard Trade Yahoo Sports",
-          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Gradey Dick Trade Rumors: Analyzing the Raptors Guard's Future and Potential Landing Spots",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUzNOV3JISGZTZWlSRzVIQlhaNzVqRE5RRDM4dm9SWU5BdWpJQ2RJZV9mTmhxTDdWMXB1akFnQjAyOXJqbWVhQzFadEZZMVFxYWVRZ2lEODFUVzh2ck5DSFplTmRXekVxQUo1d2txbWhDTm0yWXFYbjdnVEdUZ3N2dUtHcVI3RUl2cFdhaEM1cTI0aEE1LUxBWWZVUDhqNWtMVElEU1RBWWpyQjdwVE5XTDlid3JVOHF2YkdEdG1oQUhEQXh1cTNj?oc=5",
-          "publisher": "si.com",
-          "kind": "article",
-          "snippet": "Gradey Dick Trade Rumors: Analyzing the Raptors Guard's Future and Potential Landing Spots si.com",
-          "published": "Wed, 01 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Gradey Dick Could Be Intriguing Buy-Low Trade Option for Clippers",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb25BOVRQT21tSzIxdVk4eGwxYU9DNjVuUU5MaVNyekVfMWlqNFJmYTVZb2l1ZVQtRVpVdXVIUVREQzBZdV9wd3pOX3hrNWtJMVpWOTN6SkRHUV8zNUZIVlFuZ05iRkZvS0pQYmtZQ3UyZFVISG5yRFprYmhIeXhLR2xZZTlod0FNbjVFeDFUb3lxZzJycWJsb0pGUmFxYVpNZ3E1NU5HN3hJVDV4?oc=5",
-          "publisher": "si.com",
-          "kind": "article",
-          "snippet": "Gradey Dick Could Be Intriguing Buy-Low Trade Option for Clippers si.com",
-          "published": "Thu, 07 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Former Jayhawk Gradey Dick among Raptors players, picks headed to Clippers in trade for Kawhi Leonard",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOTXVBSzNVV3VXdmJhMGFCY2d2R21QUUlUWjV2bldkLW56VFh5SUdJV1NGMXJRVU01ZTlGUXVtdml0VjVVcmNsdzA4WjZLM083MEhyX1pUeWM0TzVXTnBVaWVIQzgtdVEzQmx1ZnoxSmdHeXFzSVJYb3hjYXMtU3JiTTFaLW9ELUFQM1ozWWF6U2lvZnh4eVZTcVdreXh6NEpsMExzSGtWOGs5QnVzNkZOZzRHRGh3RFNNWkhJSzhvNVdNZ01OMDdNaUhxVFBESHB2cXNoZWNqcDNwQlhIQkt0MG1KbXF2VU5zQ0VXeG9YZlJjNlQweHFMRmdWQWJUWTQ?oc=5",
-          "publisher": "KU Sports",
-          "kind": "article",
-          "snippet": "Former Jayhawk Gradey Dick among Raptors players, picks headed to Clippers in trade for Kawhi Leonard KU Sports",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Former Kansas star Gradey Dick traded to the Los Angeles Clippers",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSWdKWV9Va281dnd4WEJFNERYV1lLdjRfenFpU2tQYi05LWo0NUM3a1pYOXRNU1lPVjFDaUQxdm92WW1ZV2dncXF1cmNNaEM1QjhLR0RZVlJTdU1pdVo3NUtLVDJUZDZ1V2UwMWhHdm1RSUtBTzVFd2FGRjkxUlVGUzBmTzNSZw?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Former Kansas star Gradey Dick traded to the Los Angeles Clippers Yahoo Sports",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Gradey Dick Open To Trade From Raptors",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxONEc4WWNpZXdtSjl4NERWeU91U1ZYNFdxUU9VT3hIQm9XZzdKaG9VemNiVlpEbXlBMWFjQ3ctTHVxUENPbktHWFBEUFMtLXdjcUtjVDE1dHJGUHA3TTdGa2ctbkQwSTd6eS10QUFMT2hzUU1nRU52S2I2NHlvRGNKMkxld0FEZnk3YjhR?oc=5",
-          "publisher": "basketball.realgm.com",
-          "kind": "article",
-          "snippet": "Gradey Dick Open To Trade From Raptors basketball.realgm.com",
-          "published": "Tue, 05 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Raptors vs. Pacers: Gradey Dick breaks out in wire-to-wire Toronto road win",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNUDlySnpxdklWb1RDYmhvU1JHTTBOeVNTTTFFUk92cG93NFVuTzUwbjlnTkFRcHBuUjYwdHFjYjhOM0NHZXJkQ3pnSGxjU1RUV1d4ZlF1bTRncVl5d0paTGlTWkdZTHB1S1ZRNVdqWFZ3N0JiNl9td2VxaVBXaDFWallVV01MelRXVllKYkEtZmNqQWJwZFFwWDl5Y3g3UXY3ZG9kX2FpSEZzeDFDV3pkVGxEMTE4M2c1ME9sOENRUjYwdG4yTXlPNFNwQW1PdXd4Q1FOU0xxTlhqYlhESVp5MkoxVXdXNkNsS2RZZmtrci01eXpJ?oc=5",
-          "publisher": "Toronto Star",
-          "kind": "article",
-          "snippet": "Raptors vs. Pacers: Gradey Dick breaks out in wire-to-wire Toronto road win Toronto Star",
-          "published": "Wed, 14 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Raptors Gradey Dick talks offseason, rookie lessons learned ahead of NBA Summer League",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOTmE1N0pXSHFGV0tGdHhFZi1NbmYwSEZFUEhnSmpRTENIOFkyN3RfbVFWd0ZBUGNweGYxdmlqbHVfV0NvcEJpMm8yYndWX1NlRGlfTDZCSmFPNS0yUGtOdU9rNF81X2g4VWpHX1NGSlNDemZQLTJyM3FOSk43UjcwNFNsLVU5RThoVzRtM3VrcW9WbDRXLWZ2VlMyalZwU0E?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Raptors Gradey Dick talks offseason, rookie lessons learned ahead of NBA Summer League The New York Times",
-          "published": "Fri, 12 Jul 2024 07:00:00 GMT"
-        },
-        {
-          "title": "Raptors Should Seek the Most Out of Gradey Dick Trade",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRjUzVnBjQWhIUXJrY0RTb255RGdpclBoV05mUWJweW4wM1duUW1IVHk3MW5OcmdsSExnMjhNRmJZMW0tZl84cmsyV2NMbldYS1VaRmc3eXN1MGVOOGF4VTJnSWxKTlhRYzd6SVRqQXRoS0hkb0twd0Myb0xyTWhFa0lrUGI?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Raptors Should Seek the Most Out of Gradey Dick Trade Yahoo Sports",
-          "published": "Sun, 31 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "What Happened to Gradey Dick? Raptors Star Exits Pacers Game With Injury",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNM05pbTduVHFZcnJmYmpIRXRKbXBraHNadXRXb2ZZeXBmb3g2anJEZFdkTlZBSGlKNmhhUXRSMm1EMTZheWhYdmNzNUJ2VFVLeGZTMWl0b092cjlOSVhVLWdFOUNlb0hScTVQV2kwZXdvTlFmNHJtbURUOXd4SGhTM2JSa3RENmpSWHdBWVc2ckdWVGZqYnJaX0JpZ1hEZ0xiX3FkdkxHNUhVMkhOZlhhZGswdG1Wei12OXR4dURtYmIxamEweWg0VA?oc=5",
-          "publisher": "Yardbarker",
-          "kind": "article",
-          "snippet": "What Happened to Gradey Dick? Raptors Star Exits Pacers Game With Injury Yardbarker",
-          "published": "Thu, 27 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Gradey Dick Open to Trade from Raptors",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPalAyX0FWSE1ZV2JGc1BXdE15dFJPU2ZsVjBzX0lNS1drazJjSEtKOG9OWUZlMld1Z0U1LVBfcDUxazRiUDRlN3ZkaFg5UnV2M3hiOURSZWY1X1RfQTg3TE5DemJjdlRhMFJrRGlxclkxQ3VPbTcwS0JHeTBLZVVkYTV1bVVuR3Nm?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Gradey Dick Open to Trade from Raptors heavy.com",
-          "published": "Tue, 05 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Toronto Raptors G Gradey Dick to miss game vs. Pelicans with left calf injury",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNN0ZtSm5YZmtnZ2doYXlIVGRlRVZDTWE5cG5NR1NtZkpXMmh2Y3JlOUp4WlNVemtYMV94dEZJT1dNUVVFQjhIMHA0dU1mQTlRSGUwX2lqdE9sdW5VM0pJSzBMYUpZdHk1M2V6ZzEtaEhwSTdES004MzlxR3otZ0lXWVRHa2RtenhlOW1uVVBuRXM3Nl9xelI2SDE3M1NoekI0TlBFMWJ1c09fT0lzX2c?oc=5",
-          "publisher": "TSN",
-          "kind": "article",
-          "snippet": "Toronto Raptors G Gradey Dick to miss game vs. Pelicans with left calf injury TSN",
-          "published": "Tue, 26 Nov 2024 08:00:00 GMT"
-        },
-        {
-          "title": "Toronto Raptors select Gradey Dick with the 13th overall pick of the NBA draft",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNSmxnLVJmLXE2V29zd3VtS2RYQ0FSOGhKbmR2QzFHTWpXMF9KZ2NveG85MzV0ZlNQMmdmOEplWFV0aERKeTdUWFhkVk9GNVk3X0hyeG85SHMzMUoyNkpwNEY3amNHVzI1ZXBVelBCREg3N2RVNWJBc2lUb2dOZnhka0dZa1ZsbWZ4Q0xtbDlVc3Jsc2ZUSF9OVGFnLWNTXzlqYWo1NjlCUXB1YnBwQS1iZ0ZaZkpzNVdmUEU1VUkwaXhmY08zZEtmVkhGMDlLalBUbGc0OUNCUHIwbEYxd3JwTXg2OXpKTEpwM2E4ZThQN3dQR0VSOTlyMC1waw?oc=5",
-          "publisher": "Toronto Star",
-          "kind": "article",
-          "snippet": "Toronto Raptors select Gradey Dick with the 13th overall pick of the NBA draft Toronto Star",
-          "published": "Thu, 22 Jun 2023 07:00:00 GMT"
-        },
-        {
-          "title": "Raptors add confident sharpshooter Gradey Dick as free-agent decisions loom",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVU9rNVMtQ3FzWnRVZ3pwQXctTFdabkVrc2tjbWFEYzJrTXM0Y1BuMGdEMlVxZTNTX2pqbEdWQ3VlZ3JMNS1ROVo3ZmRPOW5ISVloRS1LQTJlbXgtcW1td3hWUHB0RU9YWXBsTm1iSWpDc0NZUU1LRHctWWNTYnhGQjVyLVN2VllibU5kTlFjX2FobWx3akZ4UTZ3R2xzVURPdTNTVVRLQ05BNjlGdUJzWEhKdw?oc=5",
-          "publisher": "Sportsnet.ca",
-          "kind": "article",
-          "snippet": "Raptors add confident sharpshooter Gradey Dick as free-agent decisions loom Sportsnet.ca",
-          "published": "Fri, 23 Jun 2023 07:00:00 GMT"
-        },
-        {
-          "title": "Once top prospect Gradey Dick drops out of Raptors rotation",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcTZtc0k2cEJMXzJCT3NYcnIyMm96S2M4UUc4RF9mZ3VnZ3hRUUZ6UlV6VEg1Q3ctY0lqY2h3d3NNUzhCR0hUVW9XeDZzTG9sLVBzcmp2Zkd2SVdaRjItanJxeGRKMmhnQWFLQ1VBaGpZRURnT1IteWEwR0JFdHUzMUJ6ZHZnQ0VVYWJ4b1hXTVBVQjgzQ1E?oc=5",
-          "publisher": "Toronto Sun",
-          "kind": "article",
-          "snippet": "Once top prospect Gradey Dick drops out of Raptors rotation Toronto Sun",
-          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Kawhi Leonard Trade Means Raptors Are All In for a Title",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JVSDdjTGU1aUdWQ0ZtRDgxSEFZMzByWDd2bE9aN2hhSXc3VXRld2xNZWp6TjVGSXlEcTVPLVMtckpZWmZaMFFMSVVpcW1mNDIycUlUSG5DRmQxdkpaeUUxX3ptYjZ2VUFKRU5TemdnVC1fbkYzZFdtY2lNTlFzbTMxOA?oc=5",
-          "publisher": "si.com",
-          "kind": "article",
-          "snippet": "Kawhi Leonard Trade Means Raptors Are All In for a Title si.com",
-          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Clippers Face a Trust Problem as Kawhi Leonard Trade Stays Frozen",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNckJnRFpvOUFicEhxTmtmRkwxejVxQXEwbzctcDBfVkdOeWV1S3RlVnViSVVkOVdIV3JtMWlSZ050YkgxREc5aG9oMHNONGZVdkxBOC1zak5uZzRlV3VpblhLc0NvU1ljQnZjSlRSSlU3eThKU2VLM1kwWW9LWm5hOEhUcC1kVlZneXVObWE2ZkE0U0d5eS1COUJKMnphZy15c3hfMUlwckR6VWdvcFRoaGVR?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Clippers Face a Trust Problem as Kawhi Leonard Trade Stays Frozen roundtable.io",
-          "published": "Fri, 11 Sep 2026 00:10:59 GMT"
-        },
-        {
-          "title": "Clippers offseason summary: - Drafted Keaton Wagler 5th overall (shot 39% at Summer League) - Agreed to trade Kawhi Leonard to Raptors for Brandon Ingram, Gradey Dick, 2 first-rounders, 1 first-round swap, 2 second-rounders",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBXVkVOZGhpQU5wbkhHczhxMEtpdnlJZFJ1MlZzQVpXc1QxTzI2dVNobnV5ZS1zaEZfMjNYUU9QdnpCZXZfNXVZd0p3dGdxMUxjTThPOUZwRldQZ201QmpwMnZn?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Clippers offseason summary: - Drafted Keaton Wagler 5th overall (shot 39% at Summer League) - Agreed to trade Kawhi Leonard to Raptors for Brandon Ingram, Gradey Dick, 2 first-rounders, 1 first-round swap, 2 second-rounders - Re-signed Jordan Miller (u x.com",
-          "published": "Fri, 11 Sep 2026 00:59:07 GMT"
-        },
-        {
-          "title": "Clippers could be delaying Kawhi Leonard Raptors trade amid NBA punishment",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWnltaXZtWnZDdzAxek5nNENfODY0ZDQ5a0ZiOTJzX1B4RzlhdVFaMGJwRU56US1jWTNONktvNEQ1ZFpjM0tYWEIyZWtrWW9Zck5zODNCUFY4WlJ2MGlaNUlrUkI2N0x0SWRSUHpWRy1fcUtYOVl2NWVTR08wMHBER3RsajFLZ0NzRExJSm5IQ2paZHJOcktOemk1SnNZbmxrdkYtWldvbTR4YXN6VUdxUDRJNVc?oc=5",
-          "publisher": "BasketNews.com",
-          "kind": "article",
-          "snippet": "Clippers could be delaying Kawhi Leonard Raptors trade amid NBA punishment BasketNews.com",
-          "published": "Thu, 10 Sep 2026 21:59:24 GMT"
-        },
-        {
-          "title": "College football picks for Week 1; how Clippers can rebound from Kawhi Leonard saga",
-          "url": "https://www.cbssports.com/college-football/news/college-football-picks-for-week-1-how-clippers-can-rebound-from-kawhi-leonard-saga/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "Plus Ryan Wilson's preseason 2027 NFL Draft big board",
-          "published": "Fri, 04 Sep 2026 12:58:11 +0000"
-        },
-        {
-          "title": "Raptors Predicted to Abandon Kawhi Leonard Trade After Major Development",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5kX1J6QjdUb0ZVd01uQ1FkNG9xSmd1anI0Ym9PX1hBTjhUWkt2R2FMSkY4cl9pc3licThWZmlaMmtpdG02WlZLZjFlZEhaZ3V3eU9iMzZzNVp3MlFDLWxURjNyOVliZ3dYVE5RTDlmQ09UYmM0MDJnd2xUQ1BIdw?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Raptors Predicted to Abandon Kawhi Leonard Trade After Major Development heavy.com",
-          "published": "Fri, 11 Sep 2026 12:07:02 GMT"
-        },
-        {
-          "title": "Raptors Trade Idea Lands Kawhi Leonard and Jalen Duren",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZlEydnZpbmt0bWVGT0duYTdCZTJZWFlZTGdvamVqVzc4S3o1SzNSVXdFeTEtY2hUdEVfMHVwc1RkT3YzQzkyVHJ5dnJoa3BrWTFSRjlFTTNwRWxHVVhEdEZNdzd4UnVZU25qcW5IWXJqbExXdDhWUWxkdnM3NWdLejBYUTJLeld1S2EyS1ZWc0ZTQQ?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Raptors Trade Idea Lands Kawhi Leonard and Jalen Duren Sports Illustrated",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Kawhi Leonard-Raptors Trade Takes Unexpected Turn After Clippers Punishment",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkZMRGN5dFNVR29GNDd6QTZWdnhTLWNkUGFVZWtmV1NYWjJZeGJtc19CYTh5WGhReEFyc1ZDM21HMkJNMGhzTmM3VU9ySlNwOEVTQ3Vub1g1eXFnbkFJQTZjVDZkaHNVWEpyVDAzcG5zajhGSTJvN25iRFJfcElVNGQyVHZaaEpNMHc?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Kawhi Leonard-Raptors Trade Takes Unexpected Turn After Clippers Punishment sports.yahoo.com",
-          "published": "Thu, 10 Sep 2026 19:14:05 GMT"
-        },
-        {
-          "title": "Why is the Kawhi Leonard trade still on hold? Uncertain Clippers leadership reportedly among reasons",
-          "url": "https://www.cbssports.com/nba/news/kawhi-leonard-trade-still-on-hold-clippers-raptors/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "The blockbuster trade between the Clippers and Raptors remains in limbo after the league handed down L.A.'s punishment",
-          "published": "Fri, 11 Sep 2026 15:51:34 +0000"
-        },
-        {
-          "title": "Raptors Predicted to Abandon Kawhi Leonard Trade After Major Development",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMDZqX21KdGpkdlZ0c2NRVHdkRFNJclZaLXZaVi0wekxkSndkcEktUklidVlDSFZaQkNFSVNVWjdQbTYyZ3ptU0k3SkNJdWZubTFqOWRXQ2VsV0NCanUzaGp6anh0R3pCQVNoOW9kdG9ySjd6QW53aGNDN3ZzeVhsYVgyR25HdzlpRm9mNkVsTjZRQQ?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Raptors Predicted to Abandon Kawhi Leonard Trade After Major Development sports.yahoo.com",
-          "published": "Fri, 11 Sep 2026 15:06:19 GMT"
-        },
-        {
-          "title": "Scottie Barnes knows the Raptors are dangerous if the Kawhi Leonard trade pushes through",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNQkhmblNyd00yeE10SjRfajgtOFJ5c1JzaEpHRlEzbC01eWlSU29BdWk3RnYwU2VtUVFJa0VFWEY2Z1FxdEhXcmhjZG1BVWFJTmJrTnlqN2NOTjQ5dDFIR3VDVVBZaTVqckVCRENOLUsxRTZRenM2WFd1a19ESmtVUUpFYTVZa1I5T1d4NmR1cC1YbjhPUy1JVnN3dGRYWVNaNUtRUnl6VnFXa05lQmhxRmVvOXg3MlBra3JlUEQzSjZYeWlyZ1h4MHZqQVZIRHhfTzhlMzc1cmE?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Scottie Barnes knows the Raptors are dangerous if the Kawhi Leonard trade pushes through sportingnews.com",
-          "published": "Fri, 10 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "How Kawhi Leonard fits alongside Scottie Barnes with Raptors after trade from Clippers",
-          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNXpJZ092V2gtZHhUenRpYXZFN0k3LXlpRUQ0bXEwQlVmUG9PVlotSHk4RmJ6cU9SZEk3cUFMenU0UUpHUkYtVjlITFRfdzhyMUFfN3AwQUctSkQwSnU1RmluNVEzVUVqTU52VWtSSldjQ2RVVzFtU3YxNVhQUEt0alpZODFPOHFrQm9xeHI5QU1Oa2FGb29MVFhSbHk5WEVreGF6NGdjWWdub25yWHJHZkxocTdoeDltQzl6aUV5SXQxdjh1THpoMXVua0l6T1hXTGFTS0NhaUtqMFlYMkZmYzQ3c1Q3d3d0OHpaWWplSQ?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "How Kawhi Leonard fits alongside Scottie Barnes with Raptors after trade from Clippers sportingnews.com",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Kawhi Leonard trade is a big risk for the Raptors. It’s worth it",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZHlvaE54cTFvUjNYZzVJazJDVWVfWEg1VXYzaEJCR3hmMktrVTlScDltN2NiNGZjbHF0S3VYeklVVHhPZDZMcloza2pfa3ZBMVdyUk4tYUtWOG14N1Voa1QyUGd5a1FLWmptNUtTUTNCRkE0LS1wbU5Bb2d4al94ZGlsbFNNU2tGLTJULUNCYVMtWWpQM05DT19vYlRWeHFUMFVIUmtUNDc2SkF5VVpnVXhIRWZzcm5CQjdv?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "The Kawhi Leonard trade is a big risk for the Raptors. It’s worth it The New York Times",
-          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Kevin Durant trade idea gives Raptors perfect player to pair with Kawhi Leonard and Scottie Barnes",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSWQ2b1lESFdPOGtUaGNsYjV3dC1FUUdCSjc4YktNMUsxTXRBRGNVVnVyVVZsSFA0TUJpMHpGTmlDang4TjJNU1V1U3NFQ28yOXhibFVYQWVEWnQzdXdGcHR1Z2prUGowM0M1MG4tSk1HQl9FZW9HT0dyQ0FFZjBmUmNwV2s3RExtek5WdEpQWTI2cFZqTzZMbldEZ0M1ZDVHOVR3N2lueTNDQnBoS3ZRVm1wMUM0Q2dTN0dWOF9kTnhfTGZyVFl4YjVCc1hRUEV6UzNmM1Rn?oc=5",
-          "publisher": "sportingnews.com",
-          "kind": "article",
-          "snippet": "Kevin Durant trade idea gives Raptors perfect player to pair with Kawhi Leonard and Scottie Barnes sportingnews.com",
-          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "NBA ready to approve Kawhi Leonard to Raptors trade, league is waiting on Clippers and Raptors to submit trade",
-          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOWjQ2RlRHVnVidXVnRC1UNVRNbEllMlJOanM5QUpNcUdfX2I3VlpyTDFORDRldzBTekhvc25NUll4Ym41Qjh5YlRKTDlXbVdSbDM3T0hYdkVRaFc1cVh0WlVzMGdJbmZwSmM3Wms1cjY4Z2FKMGhlSUlZVXF1X3pzU3h5bkdqdDV4R3BpbEJhak5veE5UVnIwV0FHTVQ4aEFlYmJtbHBmSWo2WjFIcWxHbm9TcldzSFZnT0taNHNfR0dGUWFWTXNvTzVpS1BGTU96ZVF6QWprdWU4VlAyd0NSZEVNNS1yU1N1d1hiWGhxUjNSOHlhWmYtUkdRN3dlM3FHN2FINw?oc=5",
-          "publisher": "HoopsHype",
-          "kind": "article",
-          "snippet": "NBA ready to approve Kawhi Leonard to Raptors trade, league is waiting on Clippers and Raptors to submit trade HoopsHype",
-          "published": "Fri, 11 Sep 2026 19:10:00 GMT"
-        },
-        {
-          "title": "Why is the Kawhi Leonard trade still on hold? Uncertain Clippers leadership reportedly among reasons",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdDU2Nl92N1otMnhMMGIzNFd5cDlLUDBBR3NfY3JLeUdEcFdKS0V4UnItWGhoLU93TkhxcEh4dy01bEVJZS1OQ0dWbjFQLUlBbXpRQUlqTHZnb0VmZklkakRPQkV1MnUwRm5VUVo5SmpudkhReTl4NFhpdkUzOVhyamVIaTloaFZKM29JOUktVQ?oc=5",
-          "publisher": "CBS Sports",
-          "kind": "article",
-          "snippet": "Why is the Kawhi Leonard trade still on hold? Uncertain Clippers leadership reportedly among reasons CBS Sports",
-          "published": "Fri, 11 Sep 2026 15:47:00 GMT"
-        },
-        {
-          "title": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOOGlQaUk4U0dqRkZma1hyMW5UV2szVTAyZkdEbk5LU01sUVNXdGx4VmFrUHp1bnhTcWF2V3hoQWdKenZULW5RN0FVbTFtdnBtbjVIV0xXTEdsV2lQOElEdFNKSFJSdHdDWjVpNTNPU3pFV0RtUlRmOV8wMUVLVWd4djR3?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard sports.yahoo.com",
-          "published": "Fri, 11 Sep 2026 03:50:00 GMT"
-        },
-        {
-          "title": "NBA insider provides latest update on Kawhi Leonard-Raptors trade holdup",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUWdzQzNIdGJ3bnNDZGg1bDRjMElrZDU0dEF3Rk1sVmJSbWlaaHZpN05oQTdnX05MRTIwa1RYNUJFc1VwSnAyaWVscE92Y0V6UW9CczB4UjI3LXRjSjhXNEFSYXVNb2hjcUpZaWdwMk1ETUVaamN6TWpDd0tzNFUzN0RSS0p4YmxkVmlaUERUalYwcUY0S2tkblJHc1B1QklERHhOWk05Qy11b0RSaVBvcmRhMA?oc=5",
-          "publisher": "BasketNews.com",
-          "kind": "article",
-          "snippet": "NBA insider provides latest update on Kawhi Leonard-Raptors trade holdup BasketNews.com",
-          "published": "Fri, 11 Sep 2026 19:13:00 GMT"
-        },
-        {
-          "title": "Kawhi Leonard-Raptors trade faces no holdup from NBA",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcS1wbFdyZF83cmNtTkp0WkNLTmxSUnQwLVZzQ3paYlBQMlJzaUpIOFJzZHp4TTBGLVAtWXRuM09yajJQelIzek5ROGZiSEJlQ19OenpJeG1pc2dvMWNZc2RZODgzOEVMVzhjMW5zTkE1VzZlUUpRU2FkUXlwYXRWb25qRS15dG9vbDROWmdn?oc=5",
-          "publisher": "Sportando",
-          "kind": "article",
-          "snippet": "Kawhi Leonard-Raptors trade faces no holdup from NBA Sportando",
-          "published": "Fri, 11 Sep 2026 19:17:57 GMT"
-        },
-        {
-          "title": "Blockbuster NBA Trade Proposal Lands Steph Curry Next to Kawhi on Raptors",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdERoUkFIUWhNNWh4ZGE5UXlZY00xeFE4YkhOenNQdzl5RzFhcjhGZko0ekJHMldYdnF6WDlhSXBTV0JhdlBMaW5OeExhUXlZdk9yN05hU0cwSmRuQUpGS0k4TGNFaWFPTzhDUW9TYU9COTQ5eVo2eThuOFVkTm9HZlBkRkNWWW50NFpDRzZn?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Blockbuster NBA Trade Proposal Lands Steph Curry Next to Kawhi on Raptors sports.yahoo.com",
-          "published": "Mon, 17 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Kawhi Leonard trade to Rockets reportedly on hold as NBA investigation signals bigger trouble for Clippers",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQczF0Q0VQNENMYmtEZGpTQW03c055WFFDZU04N0hsTGZvUklPVGZaQjFCb21QOG1iYzcyeDdYd2d0WnNYUzJyVGloSnItakNfWDB6Y2JFME9KbUJEblczeDFfSFhmeWFyUjJVT25nSkpmanhxVFZRQUFXYmh6LWxRUFVSZVgtUU1uQlhod2FuOHRUd0hXZUlNZmhyWXpIdmFBdG13WEI1QjUtdjk1dm4td3VRQTdqSmtMYmM1emdDN01ORGQzQlRCLXlKS1NKQdIB0wFBVV95cUxQN1AweW5fVXFadlQzd2hLZEFuMzRVOXZwVUQwOFZ2T01LazV3V3pmTmpMOWttVi1XOEpKZW5lZWpaeGJFbzBLSHhCNWxaZzZPRXVCRGU1SnhRNnRwVFNMb0ExempSOE5pc3U0SlQtN3BwZ095SllGV2czRnQyVFUzN2hXc0liRUViYkxVS21oaEJfWGJFZzF6ZVl2UkJjMFFFOENlT1JVdGVEQzQ3b212OVpKVzNWSTBtVnlpRV9IWDVqSU51OUVlSWlDcjdvS1NDWTBN?oc=5",
-          "publisher": "bolavip.com",
-          "kind": "article",
-          "snippet": "Kawhi Leonard trade to Rockets reportedly on hold as NBA investigation signals bigger trouble for Clippers bolavip.com",
-          "published": "Fri, 11 Sep 2026 21:03:06 GMT"
-        },
-        {
-          "title": "Where the Clippers-Raptors, Kawhi Leonard trade stands amidst federal investigation",
-          "url": "https://sports.yahoo.com/articles/where-clippers-raptors-kawhi-leonard-194646251.html",
-          "publisher": "NY Post Sports",
-          "kind": "article",
-          "snippet": "Why hasn't the Kawhi Leonard trade involving the Clippers and Raptors been resolved yet?",
-          "published": "Fri, 11 Sep 2026 19:46:46 +0000"
-        },
-        {
-          "title": "Kawhi Leonard Trade Hits Another Clippers Snag After NBA Punishment",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPN3NuMUc5VXhtbmI5d1BmMGJrM3gxNHVMOGo3eUJpZUNtbTFnWmJFRmdMVW9DUHQ3TS1SMFlaRklqYi1Bb09LR0Y3bVZfdzlON1I3aDBDMUl1NXdoT2pJRjFEWkZxMUxSTjNmTlNrV09lUDFEajVMb1ByWjhUVE9TWU5LR3JXU1lL?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Kawhi Leonard Trade Hits Another Clippers Snag After NBA Punishment Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 11:51:11 GMT"
-        },
-        {
-          "title": "En route to tape today’s @BleacherReport stream at 5pm ET. Kawhi Leonard, sources say, is in Miami among an organized minicamp of Raptors players. Toronto is waiting for Los Angeles to move forward with the agreed-upon trade that Leonard and the Rapt",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoUG1EM3lDNm51ZDUwN3YxdEtRZXludk5kcjRoNkFUNmlBY2hpUC1QMWhvTlhMVllxcVMzdVFUdWxXODRRbGdnTUVLdWo2Zkt3M19TTEZOLTVoc1FRaVBxV1ZLNA?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "En route to tape today’s @BleacherReport stream at 5pm ET. Kawhi Leonard, sources say, is in Miami among an organized minicamp of Raptors players. Toronto is waiting for Los Angeles to move forward with the agreed-upon trade that Leonard and the Rapt x.com",
-          "published": "Tue, 08 Sep 2026 20:15:37 GMT"
-        },
-        {
-          "title": "Kawhi Leonard Gives Hopeful 3-Word Answer on Raptors Trade After NBA’s Explosive Clippers Investigation",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX1liQzljcWx1ZlNjOEhtZk4zWXBWZ0RpRFM3OUtGUDJVWk1oM1NqOWl3YjlpWWNmTUtvUldmMm4tVGVoUVJHR29palZhejhVc1d5UmpZWW41QzVla0k2OFVXVTh5LXh2M0EyTnEzSHZZdmxzOGN6R1lGcXJaSDRoRXphdU8?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Kawhi Leonard Gives Hopeful 3-Word Answer on Raptors Trade After NBA’s Explosive Clippers Investigation Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 09:36:08 GMT"
-        },
-        {
-          "title": "Clippers 'pissed' after Kawhi Leonard's NBA punishment as Raptors trade sits in limbo",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUHI4TGFfUjBpbV9MWTlsV0d4TzdHV29UMlphYVpuN1dKYlc1S2xzS2ZNUkt6bVRiNEFaVzVReW04c09va2JOWV9RX2F4Q2NzWGtRTXRlTWliMi1iQzRFWHp6QmNCendqakFJNFFaUmJVQ1FDRWsyTGUzeEtJVzFSWklhOW1DdUFaVUFv?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Clippers 'pissed' after Kawhi Leonard's NBA punishment as Raptors trade sits in limbo Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 14:56:15 GMT"
-        },
-        {
-          "title": "Raptors Get Brutal Kawhi Leonard Trade News After Major Clippers Development",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMjh6NERpTW5ZMDBhRW8xaFBlNjkwM2hJdV9IVzJpRkRkYWJ0cDlVemNPaHFYSlVoU0Uybm56b3dWeXdXcjRYUjRQLVJkWHhhOWpCb3R5Z2lSblVDeEFLaGFxSEhsSWVCTTlhYlIweVRLUUw2NW5HTHVWbzlubk52TG11RnJWWmkyQWIwcEd4WQ?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Raptors Get Brutal Kawhi Leonard Trade News After Major Clippers Development heavy.com",
-          "published": "Sat, 12 Sep 2026 12:40:19 GMT"
-        },
-        {
-          "title": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYU1NYjY5ZDNpQ0ZXanltd1NqQ0xLNkpwczZKb0lwQUd0UVMzN0RvMXpLSlhNcEpyX0s3LVdjT3U4bjluU3oyMjh3OFNJcnpSbmR0RV9JZlVlUnlCSmhIbGpvMjJyYWVSQmJJOVhjUWdyTndZY3BGaUtfalNMTkFmX0dsYmo5bm40aVo4?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard Yahoo Sports",
-          "published": "Thu, 10 Sep 2026 16:39:16 GMT"
-        },
-        {
-          "title": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaFZhX0hwa25ub1lTZ1RpZmVCMzN0amtnMlY2VDZYbzdvbnBadUVNeVZFVGdCbWRWOFMtNEtuRU9WbVMzRFVfMWtSUzZtTkg0WEJBcDBHVlFIVzBCTlVXQVdnV0I2dmtxd2NTdHlNdTgyR29mc0tFdnVUU2tCTVhYX1p6cTFVOW8zcEE?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "Raptors Trade Pitch Lands 3-Time NBA All-Star to Join Kawhi Leonard heavy.com",
-          "published": "Fri, 11 Sep 2026 00:58:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "president-donald-trump-sounds-off-dallas-rally-luka-5f58703b",
       "slug": "president-donald-trump-sounds-off-dallas-rally-luka-5f58703b",
       "sport": "basketball",
       "headline": "'Just tell Josh' - NBA fans say Donald Trump could 'actually redo' Luka Doncic trade if he wanted",
-      "blurb": "Lakers get major trade update on $48M ex-Heat elite 3-and-D wing to pair with Luka Doncic Yahoo Sports",
-      "summary": "Lakers get major trade update on $48M ex-Heat elite 3-and-D wing to pair with Luka Doncic Yahoo Sports President Donald Trump sounds off in Dallas rally about Luka Doncic trade: It might go down as the worst trade in the history of sports HoopsHype President Donald Trump held an event Wednesday at the American Airlines Center in Dallas, home of the Mavericks. Aggregated from Yahoo Sports, HoopsHype, USA TODAY Sports, USA Today, hitc.com and 4 more.",
+      "blurb": "NBA Trade Rumors: Luka Doncic, Nikola Jokic, Anthony Edwards & the Star Trade Meter heavy.com",
+      "summary": "NBA Trade Rumors: Luka Doncic, Nikola Jokic, Anthony Edwards & the Star Trade Meter heavy.com President Donald Trump sounds off in Dallas rally about Luka Doncic trade: It might go down as the worst trade in the history of sports HoopsHype President Donald Trump held an event Wednesday at the American Airlines Center in Dallas, home of the Mavericks. Aggregated from heavy.com, HoopsHype, USA TODAY Sports, Yahoo Sports, USA Today and 4 more.",
       "category": "trade",
       "published": "2026-09-10T02:30:00Z",
       "updated": "2026-09-12T18:01:50Z",
       "players": [
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
-        },
         {
           "key": "anthony edwards",
           "name": "Anthony Edwards",
@@ -1140,6 +1141,13 @@
           "slug": "nikola-jokic",
           "pos": "C",
           "team": "DEN"
+        },
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
         }
       ],
       "sources": [
@@ -2982,6 +2990,43 @@
       ]
     },
     {
+      "id": "trade-rumors-complicated-kevin-durant-deal-aaron-gordon-ba0fa40f",
+      "slug": "trade-rumors-complicated-kevin-durant-deal-aaron-gordon-ba0fa40f",
+      "sport": "basketball",
+      "headline": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board",
+      "blurb": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board heavy.com",
+      "summary": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board heavy.com Board reading of heavy.com.",
+      "category": "trade",
+      "published": "2026-09-12T13:00:12Z",
+      "updated": "2026-09-12T13:00:12Z",
+      "players": [
+        {
+          "key": "kevin durant",
+          "name": "Kevin Durant",
+          "slug": "kevin-durant",
+          "pos": "PF",
+          "team": "HOU"
+        },
+        {
+          "key": "aaron gordon",
+          "name": "Aaron Gordon",
+          "slug": "aaron-gordon",
+          "pos": "PF",
+          "team": "DEN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVWdRYXNIaGdyMFZGMUJFZEZ3VUZFRzFHbC13MTNfRzZkZlR6SlBUZHpVUDhnQ1hMSkphcmh0UVYxV3RsUnB5blkyVHdFbTBHeTFGSFlabXRaSnFnaWM1cGFUMlE1d2xqX2tJS2JMMjRIQW1Cd2xQWTVwT29lVzM3RkhWTm92SlU5MTZsakNIV1FsVHNsem0zLVln?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board heavy.com",
+          "published": "Sat, 12 Sep 2026 13:00:12 GMT"
+        }
+      ]
+    },
+    {
       "id": "heat-predicted-trade-andrew-wiggins-501m-future-hall-bd667b84",
       "slug": "heat-predicted-trade-andrew-wiggins-501m-future-hall-bd667b84",
       "sport": "basketball",
@@ -3062,43 +3107,6 @@
           "kind": "article",
           "snippet": "Heat predicted to trade Andrew Wiggins for $347M NBA champion, 9x All-Star in monster deal Yahoo Sports",
           "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "trade-rumors-complicated-kevin-durant-deal-aaron-gordon-ba0fa40f",
-      "slug": "trade-rumors-complicated-kevin-durant-deal-aaron-gordon-ba0fa40f",
-      "sport": "basketball",
-      "headline": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board",
-      "blurb": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board heavy.com",
-      "summary": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board heavy.com Board reading of heavy.com.",
-      "category": "trade",
-      "published": "2026-09-12T13:00:12Z",
-      "updated": "2026-09-12T13:00:12Z",
-      "players": [
-        {
-          "key": "kevin durant",
-          "name": "Kevin Durant",
-          "slug": "kevin-durant",
-          "pos": "PF",
-          "team": "HOU"
-        },
-        {
-          "key": "aaron gordon",
-          "name": "Aaron Gordon",
-          "slug": "aaron-gordon",
-          "pos": "PF",
-          "team": "DEN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVWdRYXNIaGdyMFZGMUJFZEZ3VUZFRzFHbC13MTNfRzZkZlR6SlBUZHpVUDhnQ1hMSkphcmh0UVYxV3RsUnB5blkyVHdFbTBHeTFGSFlabXRaSnFnaWM1cGFUMlE1d2xqX2tJS2JMMjRIQW1Cd2xQWTVwT29lVzM3RkhWTm92SlU5MTZsakNIV1FsVHNsem0zLVln?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: ‘Complicated’ Kevin Durant Deal, Aaron Gordon & the Big Board heavy.com",
-          "published": "Sat, 12 Sep 2026 13:00:12 GMT"
         }
       ]
     },
@@ -3438,42 +3446,12 @@
       ]
     },
     {
-      "id": "knicks-face-tough-miles-mcbride-decision-contract-talks-33983f51",
-      "slug": "knicks-face-tough-miles-mcbride-decision-contract-talks-33983f51",
-      "sport": "basketball",
-      "headline": "Knicks face tough Miles McBride decision after latest contract-talks update",
-      "blurb": "Miles McBride is entering his contract year, and now we know where things stand between the Knicks and their guard.",
-      "summary": "Miles McBride is entering his contract year, and now we know where things stand between the Knicks and their guard. Board reading of SB Nation.",
-      "category": "roster",
-      "published": "2026-09-12T10:30:00Z",
-      "updated": "2026-09-12T10:30:00Z",
-      "players": [
-        {
-          "key": "miles mcbride",
-          "name": "Miles McBride",
-          "slug": "miles-mcbride",
-          "pos": "PG",
-          "team": "NYK"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Knicks face tough Miles McBride decision after latest contract-talks update",
-          "url": "https://sports.yahoo.com/articles/knicks-face-tough-miles-mcbride-103000666.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Miles McBride is entering his contract year, and now we know where things stand between the Knicks and their guard.",
-          "published": "Sat, 12 Sep 2026 10:30:00 +0000"
-        }
-      ]
-    },
-    {
       "id": "anthony-edwards-history-point-guards-82a7832c",
       "slug": "anthony-edwards-history-point-guards-82a7832c",
       "sport": "basketball",
       "headline": "Lakers coach JJ Redick on Luka Dončić’s first game vs. Mavericks after trade: ‘It’s going to be weird’",
-      "blurb": "Hurt by Mavericks trade, Luka Dončić is now feeling the love in L.A.",
-      "summary": "Max Christie, Anthony Davis, Luka Doncic, LeBron James, Anthony Edwards and LaMelo Ball: Hurt by Mavericks trade, Luka Dončić is now feeling the love in L.A. and beyond The New York Times Each point guard Edwards has played with has imparted wisdom. Aggregated from The New York Times, SB Nation, NBA.com, nytimes.com, FanSided and 2 more.",
+      "blurb": "Trump unloads on Mavericks for Luka Dončić trade: ‘We got to redo that deal’ Yahoo Sports",
+      "summary": "Max Christie, Anthony Davis, Luka Doncic, LeBron James, Anthony Edwards and LaMelo Ball: Trump unloads on Mavericks for Luka Dončić trade: ‘We got to redo that deal’ Yahoo Sports Each point guard Edwards has played with has imparted wisdom. What has he learned and what is next alongside LaMelo Ball? Aggregated from Yahoo Sports, SB Nation, NBA.com, nytimes.com, FanSided and 2 more.",
       "category": "injury",
       "published": "2024-06-10T07:00:00Z",
       "updated": "2026-09-10T12:00:00Z",
@@ -15382,8 +15360,8 @@
       "slug": "final-injury-trail-blazers-clippers-scoot-henderson-bradley-94ed7d48",
       "sport": "basketball",
       "headline": "Scoot Henderson injury update - Portland Trail Blazers star to undergo an MRI hoping for no dislocation on the right shoulder",
-      "blurb": "Scoot Henderson injury update - Portland Trail Blazers star to undergo an MRI hoping for no dislocation on the right shoulder sportskeeda.com",
-      "summary": "Scoot Henderson injury update - Portland Trail Blazers star to undergo an MRI hoping for no dislocation on the right shoulder sportskeeda.com Scoot Henderson Trade Seems Inevitable for the Blazers Sports Illustrated Scoot Henderson Mock Trade: Fixing Hornets' PG Depth with 1 Ironic Move Sports Illustrated Aggregated from sportskeeda.com, Sports Illustrated, Yahoo Sports, The New York Times, athlonsports.com and 3 more.",
+      "blurb": "Scoot Henderson upgraded on Blazers injury report vs.",
+      "summary": "Scoot Henderson upgraded on Blazers injury report vs. Scoot Henderson Trade Seems Inevitable for the Blazers Sports Illustrated Scoot Henderson Mock Trade: Fixing Hornets' PG Depth with 1 Ironic Move Sports Illustrated Aggregated from ClutchPoints, Sports Illustrated, Yahoo Sports, The New York Times, athlonsports.com and 3 more.",
       "category": "injury",
       "published": "2023-06-22T07:00:00Z",
       "updated": "2026-08-19T07:00:00Z",
@@ -15535,6 +15513,152 @@
           "kind": "article",
           "snippet": "Scoot Henderson injury update - Portland Trail Blazers star to undergo an MRI hoping for no dislocation on the right shoulder sportskeeda.com",
           "published": "Sun, 09 Jul 2023 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "final-injury-trail-blazers-clippers-scoot-henderson-bradley-94ed7d48",
+      "slug": "final-injury-trail-blazers-clippers-scoot-henderson-bradley-94ed7d48",
+      "sport": "basketball",
+      "headline": "Final Injury Report for Trail Blazers-Clippers, Will Scoot Henderson, Bradley Beal Play?",
+      "blurb": "Scoot Henderson Trade Seems Inevitable for the Blazers Sports Illustrated",
+      "summary": "Scoot Henderson Trade Seems Inevitable for the Blazers Sports Illustrated Scoot Henderson Mock Trade: Fixing Hornets' PG Depth with 1 Ironic Move Sports Illustrated Scoot Henderson Named Must-Trade Candidate blazersedge.com Aggregated from Sports Illustrated, blazersedge.com, Yahoo Sports, The New York Times, Athlon Sports and 1 more.",
+      "category": "injury",
+      "published": "2023-06-22T07:00:00Z",
+      "updated": "2026-08-19T07:00:00Z",
+      "players": [
+        {
+          "key": "scoot henderson",
+          "name": "Scoot Henderson",
+          "slug": "scoot-henderson",
+          "pos": "PG",
+          "team": "POR"
+        },
+        {
+          "key": "jrue holiday",
+          "name": "Jrue Holiday",
+          "slug": "jrue-holiday",
+          "pos": "PG",
+          "team": "BOS"
+        },
+        {
+          "key": "toumani camara",
+          "name": "Toumani Camara",
+          "slug": "toumani-camara",
+          "pos": "SF",
+          "team": "POR"
+        },
+        {
+          "key": "bradley beal",
+          "name": "Bradley Beal",
+          "slug": "bradley-beal",
+          "pos": "SG",
+          "team": "PHX"
+        },
+        {
+          "key": "victor wembanyama",
+          "name": "Victor Wembanyama",
+          "slug": "victor-wembanyama",
+          "pos": "C",
+          "team": "SAS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Scoot Henderson Trade Seems Inevitable for the Blazers",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRHhlTWx6ZGtpUTJZbUhOMllHbE52ZkFYZzZoemN2ck41QS1QOTcxem1WM05QQUlRRzVNRERDOHJELW1SRW5pd3gyS2o5aTV3MldkOVUtQlVWRmFsSi1VaWFNdVllb1RSZnAzYTBCUEc3T2tKSW1md085UnBUOTBhYmNoVFhtSjhRbnFXQzJmWE90cENqUGo0SlJmYnVYVHFPZjRUcA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Scoot Henderson Trade Seems Inevitable for the Blazers Sports Illustrated",
+          "published": "Wed, 19 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Scoot Henderson Mock Trade: Fixing Hornets' PG Depth with 1 Ironic Move",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTE1Uei1fazRHcFlNYnI0ZmQ1eXNhZDI0TFZQaWI4RzZGZDUtQ3FEY0c4d3oybldsMVRBajlzQ0pJTXJscGNCQVJMemxHLWt0VkZ3SXZyemx3VUdtQ0E1c25LUEdUX0Q2T2dFR3E4aTMxVlF2djNuR2F3WERvX2hnTDBLZkNzUFdjN09vQUtmMWFjODVvX0Nnc20ya1JlbVA1YUxfQTkzS1c?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Scoot Henderson Mock Trade: Fixing Hornets' PG Depth with 1 Ironic Move Sports Illustrated",
+          "published": "Wed, 29 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Scoot Henderson Named Must-Trade Candidate",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONGlBbTlIckEtUmwtSm5GZlFqekFFMDRubXpZZ1ZRd1d1OGhXSXBBTG4xbG9hbFNMSlVETThjNkE2NGd3ckM5c0hIWFVncUNkY2lKWWxaY0NfWDFfWTlRb2xSQlJPOUozWjdULXo4QTZ5aFNVc2NvbkxZNU9ObVA2V1d6MXFsSG80cFVycnc5SjdnUmdkUS05NVdRVFdCU0ZkUnVBS1dyM2x3Qnc?oc=5",
+          "publisher": "blazersedge.com",
+          "kind": "article",
+          "snippet": "Scoot Henderson Named Must-Trade Candidate blazersedge.com",
+          "published": "Mon, 25 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "If Trail Blazers Don't Trade Scoot Henderson, It’s Time to Pay Him",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSlRfZEswakVfMVVfcnpRUXJ1dlA0OHVLNm9Fcmh3TXd5SFJuY3pWa2lfUkRBS05yWmoxRnBwQ191WExXOHlFUVFxMVJ2M1VTeTVxa25qand1cDNwR0ZQaG5rem4ydkRmR3QtdHhYbnhPOXo0SENVYklRaUJFZDRxUk5WVWNLZw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "If Trail Blazers Don't Trade Scoot Henderson, It’s Time to Pay Him Yahoo Sports",
+          "published": "Mon, 27 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Weighing Pros and Cons of Scoot Henderson Trade",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPX2ROOFFxTzlZVlJqODZqUmRFdG9NYnFiemdmTDVFbU9CcFVDYTdIOXFHVEdTNXloY3hQUGxRc3c3a2cxQlJ5NVNacUNEZFlicWFDNG90c2pEdEZxOG1jOUYxb2ZqYlRUMWwwRURzN0U3Q0pjUXZrR1N0Rm1qZ2VrMW0zM19VR2F5Vk9FZG9vV2ZDczlCUEZqcUQtT1cwa1hRRWc?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Weighing Pros and Cons of Scoot Henderson Trade Sports Illustrated",
+          "published": "Sat, 14 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Blazers Announce Troubling Injury Updates on Jrue Holiday, Scoot Henderson",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRU93bm80enhzU2xaOFd5QkxoQ05IeW1SMUNzNTVsQk5IWGJQajVmQmNEYkU2MVJ1OVlsMXlFbC1jdmtGVncwQnBHaFRwblhtS2dQc2h6QWpBV09CUkdxNmlWR293OExpYm02djRGT0VHWjkxX0V5RDRDX1pCa1hSY1kza1J4Vm9PNEJSZXl0RHBYX3Z2NjNzRFRBOWpieDRiVktDQ0wxRTRZTXFROHZGWXlWblBvei1OcXpR?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Blazers Announce Troubling Injury Updates on Jrue Holiday, Scoot Henderson Sports Illustrated",
+          "published": "Sat, 22 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Blazers PG Scoot Henderson Reveals Big Change in His Game After Dominant Performance",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQU1N0SHNabjh5eVoyeF9DMERrLUhjSllkcEwxRl92dVBsUm4xUDhFaW5iNDFVNFNLZDV1UHBNV3NndTVEODFuQUs0b1RXWGR2OXVmWGtUT3hzdkItZjJHZGJGWEkwUjFoUVRJenJvUjRrMWdQLTc3VlpBUm9VcmN1bU82ZG50NlVINi1vRm9yVjBla2JoRlowcDU5NmYxdHhqbVdpcVBrZ1dXaUJtaVJka0o1OGY3OHZHSGZLSjhnSWo4TUhaVGpfZ1RsNnRmcnFjbHBuS3B1STF4QQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Blazers PG Scoot Henderson Reveals Big Change in His Game After Dominant Performance Sports Illustrated",
+          "published": "Tue, 10 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Scoot Henderson, Toumani Camara and their secret dream for the Trail Blazers",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSk1MbVhzQ09rN1lrcC1wSHk5eHZVVjB4TmFBMWFqcml3V2tiaFhaaURWNnUwRTdaQlBZUmdvTF9OeHBvcVhVeXp0YUhHZlVNbFBfc2NfcGNkTTI2ZWVROWNVREN4TWpud3IxYUxzY01SQkJDQk1pc0hZck96cm1TWUJTcndibWtCeFlrZFktanNCcWxQX2tYRS1PX0FPSXhLTjVXQW9LQTBVUTg?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Scoot Henderson, Toumani Camara and their secret dream for the Trail Blazers The New York Times",
+          "published": "Wed, 19 Feb 2025 08:00:00 GMT"
+        },
+        {
+          "title": "In drafting Scoot Henderson, Trail Blazers think they made move that trumps any trade",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaVJUTWJWWldIOGhJa0xCQ2pCR3BUSGEyNHpyZ3ZhM1VGWEdhei15QlZXTHMteTNhXzc1MEdBemljMUpsNFp0MmJMNmlYemNTV0h6UkFRNTlVajRzLTJ3UEdOQmlrQmZIYUtLbmttOFhnQ3MxTmdXRDZwaGJuT1pCNlBvTTZfZUVnc2N4VHg0bjZVOVRJS2tnSzhYQTZuUQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "In drafting Scoot Henderson, Trail Blazers think they made move that trumps any trade The New York Times",
+          "published": "Tue, 16 Jan 2024 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Trail Blazers-Clippers, Will Scoot Henderson, Bradley Beal Play?",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSjJmTW9aQlc0SkUySVJHUHVhMUZlQlJCN2l3ZFRVSFljWnFiSXpreGNER3Y1bi1mWlFQaXplRDhDS2g4b2ZaTmJOWENBUWE5WjA2ejc4NE41eGRFTUNKNERNek4wbEtlVHVBODFSVnBmZThJNVFLZThVVjN5Z1VzUGMzTko2cUFFM1FMdjQyVkZsLXdLLVNhSEJhdzZMSUNYQnJ1VS12eHlISjlRMUIwbFZINHdnWVd0X2plXzZrWEN4ZFBuTU9zV0JCMVZsRmZK?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Trail Blazers-Clippers, Will Scoot Henderson, Bradley Beal Play? Athlon Sports",
+          "published": "Sun, 26 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Scoot Henderson says Blazers are ‘best situation’ for him, but will that change?",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOc0ctVmhmdHBXdXJtX044TDBBTGdWeGhkSVFlVDVvbFZ4THpTRUY3RXFPRGhSQXQ5QkFNWkxPYV9icmFyZFF1SkdDemFuU1NwVUQxYmdTdExSQi1MSlN1UEs0anR6T1hhYmRFM0tTZnBuMENqUVkya2s5N0Zwam9YdUUtU1RRZlpzb1VDRnhZLWhqRmdPZ3c?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Scoot Henderson says Blazers are ‘best situation’ for him, but will that change? The New York Times",
+          "published": "Thu, 22 Jun 2023 07:00:00 GMT"
+        },
+        {
+          "title": "Scoot Henderson and the Trail Blazers want to play a full-strength Victor Wembanyama",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQcGF0SnkyODdCVUJvdUM2WHlaUDZScU0yZVdaVnFEWEdIZXRSNmdrNkN3NHdLOUFWcm1IRTJldDhRM2xqUENIdVZ6S0owV0MzQTNNV2d1NHRnYm1ha3ZGTWRCaHFvRzRhcHlHZE5RbDJkdU45MHh6TFVrSHR2U0I0R19xZXBvVVRya0haU1ljNFQ5OG1IbHZUaG5nNU5IUV83cjdvRmE3eUswbndKcGMxYmJmRTQ0ckZ3aG1ubGJTOHFpRmt0b2lyRHFBcXA0OFByZlhaWnJmN19kT3Bm?oc=5",
+          "publisher": "sportingnews.com",
+          "kind": "article",
+          "snippet": "Scoot Henderson and the Trail Blazers want to play a full-strength Victor Wembanyama sportingnews.com",
+          "published": "Thu, 23 Apr 2026 07:00:00 GMT"
         }
       ]
     },
