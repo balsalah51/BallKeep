@@ -289,7 +289,7 @@ def test_clip():
 def test_clip_meta_no_ellipsis():
     short = clip_meta("Short description.")
     assert short == "Short description."
-    long = clip_meta("The Board is Ball Keep's redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players. 50% Yates, FantasyPros ECR, and Karabell, 50% every other desk that ranked the name. Kickers and DST omitted.")
+    long = clip_meta("The Board is Ball Keep's redraft PPR Super Aggregate. Full-PPR, 1QB, 200 skill players. 50% Yates, FantasyPros ECR, and Karabell, 50% every other board that ranked the name. Kickers and DST omitted.")
     assert "…" not in long
     assert len(long) <= 155
     assert long.endswith(".") or " " in long
@@ -466,6 +466,27 @@ def test_keep_maye_drop():
     maye = next(r for r in keep if r["name"] == "Drake Maye")
     assert maye["bk"] >= 6
     assert keep[0]["name"] == "Josh Allen"
+
+
+def test_visible_desk_copy_removed():
+    from pathlib import Path
+    root = Path(__file__).resolve().parents[0]
+    banned = (
+        "every other desk",
+        "every other mixed desk",
+        "on a desk",
+        "this desk",
+        "Football desk",
+        "Desks in This",
+        '["BK", "Game", "Day", "Spread", "Pick", "Away", "Home", "Desks"]',
+    )
+    for name in (
+        "build_site.py", "weekly_pages.py", "weekly_kit.py", "special_teams.py",
+        "build_bk.py", "build_bb.py", "build_pl.py",
+    ):
+        text = (root / name).read_text()
+        for phrase in banned:
+            assert phrase not in text, f"{name} still has {phrase!r}"
 
 
 def test_skip_line_removed_from_builders():

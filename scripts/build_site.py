@@ -1330,7 +1330,7 @@ W1_K_FAQ = [
     ("Who leads the stream?", "Aubrey and Dicker sit at the top after the 16 boards vote."),
 ]
 W1_MATCH_FAQ = [
-    ("How are the win picks built?", "26 published sources. CBS expert grids, BUSR scores, sportsbook moneylines, power ranks (higher club wins), and short published fades. Unpicked games on a desk are skipped."),
+    ("How are the win picks built?", "26 published sources. CBS expert grids, BUSR scores, sportsbook moneylines, power ranks (higher club wins), and short published fades. Unpicked games on a board are skipped."),
     ("Is this a win chance?", "No. Away and Home are raw vote counts. The pick is the side with more published votes, not a percent chance to win."),
     ("Is this a bet slip?", "No. It is a mash of public picks and 1-32 boards. The market favorite still wins most games because books and power ranks overlap."),
 ]
@@ -1697,7 +1697,7 @@ def matchup_table(rows):
     """Week 1 slate: pick and away/home vote counts. No win percent."""
     head = "".join(
         _rank_th(h)
-        for h in ["BK", "Game", "Day", "Spread", "Pick", "Away", "Home", "Desks"]
+        for h in ["BK", "Game", "Day", "Spread", "Pick", "Away", "Home", "Boards"]
     )
     body = []
     for r in rows:
@@ -3476,9 +3476,9 @@ def main():
     w1_m_body = f"""
     <p class="kicker">2026 Week 1 · Matchups · {len(MATCH_SOURCES)} sources</p>
     <h1>Week 1 Matchups</h1>
-    <p class="note">Win picks from {len(MATCH_SOURCES)} published sources: four CBS straight-up experts, BUSR scores, the current market, seven Action Network books, five 1-32 power boards, the May DraftKings opener, TeamRankings predictive, FOX Sports DraftKings from Sep 3, plus short published fades. Unpicked games on a desk are skipped. The pick is the side with more votes. Away and Home are raw vote counts, not a win chance.</p>
+    <p class="note">Win picks from {len(MATCH_SOURCES)} published sources: four CBS straight-up experts, BUSR scores, the current market, seven Action Network books, five 1-32 power boards, the May DraftKings opener, TeamRankings predictive, FOX Sports DraftKings from Sep 3, plus short published fades. Unpicked games on a board are skipped. The pick is the side with more votes. Away and Home are raw vote counts, not a win chance.</p>
     <div class="panel">{matchup_table(w1_match)}</div>
-    {sources_panel(MATCH_SOURCES, heading="Desks in This Aggregate")}
+    {sources_panel(MATCH_SOURCES, heading="Boards in This Aggregate")}
     {faq_html(W1_MATCH_FAQ, heading="How Week 1 matchups are built.")}
     """
     write("week1-matchups.html", board_page(
@@ -3497,7 +3497,7 @@ def main():
     fence_body = f"""
     <p class="kicker">Dynasty Superflex + IDP · Super Aggregate · {len(FENCE_MIXED_SOURCES)} boards</p>
     <h1>The Fence</h1>
-    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed desk that ranked the name. Josh Allen opens the board. Aidan Hutchinson is the first IDP. IDP names (DL, LB, DB) are marked in red so they stand out while you scroll. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
+    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed board that ranked the name. Josh Allen opens the board. Aidan Hutchinson is the first IDP. IDP names (DL, LB, DB) are marked in red so they stand out while you scroll. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
     {rank_search_bar(fence_chips)}
     <div class="panel">{rank_table(fence, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(fence, 12, "#c8102e", "Fence value graph")}
