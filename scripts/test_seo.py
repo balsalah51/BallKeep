@@ -29,6 +29,7 @@ from seo import (  # noqa: E402
     rank_search_bar,
     rank_search_key,
     draft_check_js,
+    matchup_copy_js,
     strip_em,
     sitemap_xml,
     video_jsonld,
@@ -426,6 +427,45 @@ def test_draft_check_js():
     assert "sessionStorage" not in html
 
 
+def test_matchup_copy_js():
+    html = matchup_copy_js()
+    assert "data-matchup-copy" in html
+    assert "navigator.clipboard" in html
+    assert "localStorage" not in html
+    assert "sessionStorage" not in html
+
+
+def test_matchup_copy_winners():
+    from build_site import matchup_table, matchup_winners_text
+    from week1_boards import week1_matchups
+    rows = week1_matchups()
+    winners = matchup_winners_text(rows)
+    html = matchup_table(rows)
+    assert winners.splitlines()[0] == rows[0]["pick"]
+    assert "SEA" in winners
+    assert "LAR" in winners
+    assert winners.count("\n") == len(rows) - 1
+    assert 'data-matchup-copy' in html
+    assert 'class="sr-only matchup-winners"' in html
+    assert ">Copy</button>" in html
+    assert "navigator.clipboard" in html
+    assert "localStorage" not in html
+    assert "sessionStorage" not in html
+    for pick in (r["pick"] for r in rows):
+        assert pick in winners
+    later = matchup_table([
+        {"bk": 1, "key": "BUF@MIA", "away": "BUF", "home": "MIA", "day": "Sun",
+         "tv": "CBS", "spread": "BUF -3", "pick": "BUF", "n": 12, "away_n": 10, "home_n": 2},
+        {"bk": 2, "key": "KC@DEN", "away": "KC", "home": "DEN", "day": "Mon",
+         "tv": "ABC", "spread": "KC -2.5", "pick": "KC", "n": 12, "away_n": 8, "home_n": 4},
+    ])
+    assert matchup_winners_text([
+        {"pick": "BUF"}, {"pick": "KC"},
+    ]) == "BUF\nKC"
+    assert ">Copy</button>" in later
+    assert "BUF\nKC" in later
+
+
 def test_classic_draft_check_table():
     from build_site import rank_table
     rows = [{"name": "Jahmyr Gibbs", "pos": "RB", "team": "DET", "bk": 1}]
@@ -702,7 +742,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=56" in doc
+    assert "css/site.css?v=57" in doc
 
 
 if __name__ == "__main__":

@@ -458,6 +458,12 @@ def main():
     assert "100.0%" not in w1_m_html
     assert "win percent" not in w1_m_html.lower()
     assert "win chance" in w1_m_html.lower()
+    assert 'data-matchup-copy' in w1_m_html
+    assert 'class="sr-only matchup-winners"' in w1_m_html
+    assert ">Copy</button>" in w1_m_html
+    assert "navigator.clipboard" in w1_m_html
+    assert "localStorage" not in w1_m_html
+    assert "SEA\nLAR" in w1_m_html or "SEA\r\nLAR" in w1_m_html
     league_html = html_of("league.html")
     assert "<h1>My Team</h1>" in league_html
     assert "sleeper-id" in league_html

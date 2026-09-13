@@ -65,6 +65,7 @@ from seo import (  # noqa: E402
     clip,
     clip_meta,
     draft_check_js,
+    matchup_copy_js,
     face_alt,
     faq_html,
     faq_jsonld,
@@ -850,7 +851,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 56
+CSS_VER = 57
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1693,8 +1694,13 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
     )
 
 
+def matchup_winners_text(rows):
+    """Plain list of weekly picks, one winner per line."""
+    return "\n".join(r.get("pick") or "" for r in rows if r.get("pick"))
+
+
 def matchup_table(rows):
-    """Week 1 slate: pick and away/home vote counts. No win percent."""
+    """Weekly slate plus a muted Copy control for the winner list. Later weeks reuse this."""
     head = "".join(
         _rank_th(h)
         for h in ["BK", "Game", "Day", "Spread", "Pick", "Away", "Home", "Boards"]
@@ -1718,10 +1724,36 @@ def matchup_table(rows):
             f'<td class="c-val val">{r.get("n", "")}</td>'
             "</tr>"
         )
+    winners = matchup_winners_text(rows)
     return (
+        '<div class="matchup-board">'
         '<div class="table-wrap"><table class="rank-table">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
+        '<div class="matchup-copy-bar">'
+        f'<textarea class="sr-only matchup-winners" readonly tabindex="-1">{esc(winners)}</textarea>'
+        '<button type="button" class="matchup-copy" data-matchup-copy '
+        'aria-label="Copy weekly winners">Copy</button>'
+        "</div></div>"
+        f"{matchup_copy_js()}"
     )
+
+
+def write_week_matchups(week, rows, sources, faq, note, heading="Boards in This Aggregate"):
+    """Week N matchup page. Copy at the bottom ships with matchup_table."""
+    path = f"week{week}-matchups.html"
+    body = f"""
+    <p class="kicker">2026 Week {week} · Matchups · {len(sources)} sources</p>
+    <h1>Week {week} Matchups</h1>
+    <p class="note">{note}</p>
+    <div class="panel">{matchup_table(rows)}</div>
+    {sources_panel(sources, heading=heading)}
+    {faq_html(faq, heading=f"How Week {week} matchups are built.")}
+    """
+    write(path, board_page(
+        f"Week {week} Matchups", path, body,
+        extra_jsonld=[faq_jsonld(faq)],
+    ))
+    return path
 
 
 def write(path, html_doc):
@@ -3473,18 +3505,19 @@ def main():
             faq_jsonld(W1_K_FAQ),
         ],
     ))
-    w1_m_body = f"""
-    <p class="kicker">2026 Week 1 · Matchups · {len(MATCH_SOURCES)} sources</p>
-    <h1>Week 1 Matchups</h1>
-    <p class="note">Win picks from {len(MATCH_SOURCES)} published sources: four CBS straight-up experts, BUSR scores, the current market, seven Action Network books, five 1-32 power boards, the May DraftKings opener, TeamRankings predictive, FOX Sports DraftKings from Sep 3, plus short published fades. Unpicked games on a board are skipped. The pick is the side with more votes. Away and Home are raw vote counts, not a win chance.</p>
-    <div class="panel">{matchup_table(w1_match)}</div>
-    {sources_panel(MATCH_SOURCES, heading="Boards in This Aggregate")}
-    {faq_html(W1_MATCH_FAQ, heading="How Week 1 matchups are built.")}
-    """
-    write("week1-matchups.html", board_page(
-        "Week 1 Matchups", "week1-matchups.html", w1_m_body,
-        extra_jsonld=[faq_jsonld(W1_MATCH_FAQ)],
-    ))
+    write_week_matchups(
+        1,
+        w1_match,
+        MATCH_SOURCES,
+        W1_MATCH_FAQ,
+        (
+            f"Win picks from {len(MATCH_SOURCES)} published sources: four CBS straight-up experts, "
+            "BUSR scores, the current market, seven Action Network books, five 1-32 power boards, "
+            "the May DraftKings opener, TeamRankings predictive, FOX Sports DraftKings from Sep 3, "
+            "plus short published fades. Unpicked games on a board are skipped. The pick is the side "
+            "with more votes. Away and Home are raw vote counts, not a win chance."
+        ),
+    )
 
     from weekly_pages import write_weekly_pages
     weekly_pack = write_weekly_pages(sys.modules[__name__], nfl, media, ppr)
