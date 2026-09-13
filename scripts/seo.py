@@ -1299,6 +1299,56 @@ def draft_check_js() -> str:
 """
 
 
+def matchup_copy_js() -> str:
+    """Copy weekly winners from the hidden list. No storage."""
+    return """<script>
+(function () {
+  if (window.__bkMatchupCopy) return;
+  window.__bkMatchupCopy = true;
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.left = "-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (err) {}
+    document.body.removeChild(ta);
+  }
+  function markCopied(btn) {
+    if (!btn) return;
+    btn.textContent = "Copied";
+    btn.classList.add("is-copied");
+    window.setTimeout(function () {
+      btn.textContent = "Copy";
+      btn.classList.remove("is-copied");
+    }, 1600);
+  }
+  document.addEventListener("click", function (e) {
+    var btn = e.target && e.target.closest && e.target.closest("[data-matchup-copy]");
+    if (!btn) return;
+    var box = btn.closest(".matchup-board");
+    var ta = box && box.querySelector("textarea.matchup-winners");
+    var text = ta ? String(ta.value || "") : "";
+    if (!text) return;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        markCopied(btn);
+      }).catch(function () {
+        fallbackCopy(text);
+        markCopied(btn);
+      });
+      return;
+    }
+    fallbackCopy(text);
+    markCopied(btn);
+  });
+})();
+</script>
+"""
+
+
 def robots_txt(sitemaps: list) -> str:
     lines = [
         "User-agent: *",
