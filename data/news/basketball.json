@@ -1,7 +1,7 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-13T07:25:08Z",
-  "fresh": 99,
+  "updated": "2026-09-13T08:26:36Z",
+  "fresh": 86,
   "stories": [
     {
       "id": "trade-rumors-wait-see-anthony-davis-jimmy-butler-691d7161",
@@ -1238,12 +1238,19 @@
       "slug": "ausar-thompson-injury-pistons-defender-leaves-spurs-right-6cc3627c",
       "sport": "basketball",
       "headline": "Detroit Pistons Injury Report: Massive Cade Cunningham and Ausar Thompson Concern, Jalen Duren Listed vs Nets (Mar. 7)",
-      "blurb": "The Detroit Pistons projected 15-man roster for the 2026-27 season: PG: Cade Cunningham SG: Duncan Robinson SF: Ausar Thompson PF: John Collins C: Jalen Duren Bench: • Daniss…",
-      "summary": "The Detroit Pistons projected 15-man roster for the 2026-27 season: PG: Cade Cunningham SG: Duncan Robinson SF: Ausar Thompson PF: John Collins C: Jalen Duren Bench: • Daniss Jenkins • Isaiah Joe • Kevin Huerter • Ron Holland II • Paul Reed • Ebuk x.com Ausar Thompson Injury Update: Forward Exits Pistons-Spurs heavy.com Final Injury Report for 76ers-Pistons: Will Joel Embiid, Ausar Thompson Play? Aggregated from x.com, heavy.com, Athlon Sports, Yahoo Sports, Sports Illustrated and 13 more.",
+      "blurb": "Ausar Thompson Injury Update: Forward Exits Pistons-Spurs heavy.com",
+      "summary": "Ausar Thompson Injury Update: Forward Exits Pistons-Spurs heavy.com Final Injury Report for 76ers-Pistons: Will Joel Embiid, Ausar Thompson Play? Final Injury Report for Pistons-Raptors: Will Tobias Harris, Ausar Thompson Play? Aggregated from heavy.com, Athlon Sports, Yahoo Sports, Sports Illustrated, DraftKings Network and 13 more.",
       "category": "injury",
       "published": "2021-06-23T07:00:00Z",
       "updated": "2026-09-11T22:32:31Z",
       "players": [
+        {
+          "key": "ausar thompson",
+          "name": "Ausar Thompson",
+          "slug": "ausar-thompson",
+          "pos": "SF",
+          "team": "DET"
+        },
         {
           "key": "cade cunningham",
           "name": "Cade Cunningham",
@@ -1257,13 +1264,6 @@
           "slug": "duncan-robinson",
           "pos": "SF",
           "team": "MIA"
-        },
-        {
-          "key": "ausar thompson",
-          "name": "Ausar Thompson",
-          "slug": "ausar-thompson",
-          "pos": "SF",
-          "team": "DET"
         },
         {
           "key": "kevin huerter",
@@ -2582,6 +2582,43 @@
       ]
     },
     {
+      "id": "bronny-james-reacts-lakers-free-agent-signing-elsewhere-054b8c98",
+      "slug": "bronny-james-reacts-lakers-free-agent-signing-elsewhere-054b8c98",
+      "sport": "basketball",
+      "headline": "Bronny James reacts to latest Lakers free agent signing elsewhere",
+      "blurb": "The guard signed a one-year deal with Real Madrid in the Euroleague, where Luka Doncic played before making his transition to the...",
+      "summary": "Bronny James and Luka Doncic: The guard signed a one-year deal with Real Madrid in the Euroleague, where Luka Doncic played before making his transition to the... Board reading of NY Post Sports.",
+      "category": "roster",
+      "published": "2026-09-12T22:34:14Z",
+      "updated": "2026-09-12T22:34:14Z",
+      "players": [
+        {
+          "key": "bronny james",
+          "name": "Bronny James",
+          "slug": "bronny-james",
+          "pos": "SG",
+          "team": "LAL"
+        },
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bronny James reacts to latest Lakers free agent signing elsewhere",
+          "url": "https://sports.yahoo.com/articles/bronny-james-reacts-latest-lakers-223414401.html",
+          "publisher": "NY Post Sports",
+          "kind": "article",
+          "snippet": "Nick Smith Jr. is no longer a Laker. The guard signed a one-year deal with Real Madrid in the Euroleague, where Luka Doncic played before making his transition to the...",
+          "published": "Sat, 12 Sep 2026 22:34:14 +0000"
+        }
+      ]
+    },
+    {
       "id": "ben-simmons-signed-one-year-non-guaranteed-deal-263073d2",
       "slug": "ben-simmons-signed-one-year-non-guaranteed-deal-263073d2",
       "sport": "basketball",
@@ -2671,43 +2708,6 @@
           "kind": "article",
           "snippet": "NBA Rumor Increases Chance of Detroit Pistons & Sacramento Kings Trade for Jalen Duren Before Training Camp Opens Yahoo Sports",
           "published": "Fri, 11 Sep 2026 15:34:35 GMT"
-        }
-      ]
-    },
-    {
-      "id": "bronny-james-reacts-lakers-free-agent-signing-elsewhere-054b8c98",
-      "slug": "bronny-james-reacts-lakers-free-agent-signing-elsewhere-054b8c98",
-      "sport": "basketball",
-      "headline": "Bronny James reacts to latest Lakers free agent signing elsewhere",
-      "blurb": "The guard signed a one-year deal with Real Madrid in the Euroleague, where Luka Doncic played before making his transition to the...",
-      "summary": "Bronny James and Luka Doncic: The guard signed a one-year deal with Real Madrid in the Euroleague, where Luka Doncic played before making his transition to the... Board reading of NY Post Sports.",
-      "category": "roster",
-      "published": "2026-09-12T22:34:14Z",
-      "updated": "2026-09-12T22:34:14Z",
-      "players": [
-        {
-          "key": "bronny james",
-          "name": "Bronny James",
-          "slug": "bronny-james",
-          "pos": "SG",
-          "team": "LAL"
-        },
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Bronny James reacts to latest Lakers free agent signing elsewhere",
-          "url": "https://sports.yahoo.com/articles/bronny-james-reacts-latest-lakers-223414401.html",
-          "publisher": "NY Post Sports",
-          "kind": "article",
-          "snippet": "Nick Smith Jr. is no longer a Laker. The guard signed a one-year deal with Real Madrid in the Euroleague, where Luka Doncic played before making his transition to the...",
-          "published": "Sat, 12 Sep 2026 22:34:14 +0000"
         }
       ]
     },
@@ -2811,6 +2811,58 @@
       ]
     },
     {
+      "id": "sunny-mark-williams-72e6b947",
+      "slug": "sunny-mark-williams-72e6b947",
+      "sport": "basketball",
+      "headline": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan'",
+      "blurb": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan' Yahoo Sports Canada",
+      "summary": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan' Yahoo Sports Canada Bad news for Mark Williams is an opportunity for Khaman Maluach Aggregated from Yahoo Sports Canada, SB Nation.",
+      "category": "wire",
+      "published": "2026-05-04T07:00:00Z",
+      "updated": "2026-09-12T11:17:00Z",
+      "players": [
+        {
+          "key": "jalen williams",
+          "name": "Jalen Williams",
+          "slug": "jalen-williams",
+          "pos": "SF",
+          "team": "OKC"
+        },
+        {
+          "key": "khaman maluach",
+          "name": "Khaman Maluach",
+          "slug": "khaman-maluach",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "mark williams",
+          "name": "Mark Williams",
+          "slug": "mark-williams",
+          "pos": "C",
+          "team": "CHA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Not Sunny News For Mark Williams",
+          "url": "https://sports.yahoo.com/articles/not-sunny-news-mark-williams-111700000.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Bad news for Mark Williams is an opportunity for Khaman Maluach",
+          "published": "Sat, 12 Sep 2026 11:17:00 +0000"
+        },
+        {
+          "title": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan'",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNejY4MVBmeU9obUlzNHBiVXJVRkdCeVRlZTRReUNFc25FVGhsQTJpODRhSWNFVkhwYng0dUtKb1A1bzZCQjBLd25VYzVIbTAwNHdaWTlsblhkX0FWdEgtRHRVVWlIZDVrUG9lNGtYcEVCZDA4a1pGZWxkakRVRFlGUnEzUlI0Vkp4TGc?oc=5",
+          "publisher": "Yahoo Sports Canada",
+          "kind": "article",
+          "snippet": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan' Yahoo Sports Canada",
+          "published": "Mon, 04 May 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "heat-predicted-trade-andrew-wiggins-501m-future-hall-bd667b84",
       "slug": "heat-predicted-trade-andrew-wiggins-501m-future-hall-bd667b84",
       "sport": "basketball",
@@ -2891,58 +2943,6 @@
           "kind": "article",
           "snippet": "Heat predicted to trade Andrew Wiggins for $347M NBA champion, 9x All-Star in monster deal Yahoo Sports",
           "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "sunny-mark-williams-72e6b947",
-      "slug": "sunny-mark-williams-72e6b947",
-      "sport": "basketball",
-      "headline": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan'",
-      "blurb": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan' Yahoo Sports Canada",
-      "summary": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan' Yahoo Sports Canada Bad news for Mark Williams is an opportunity for Khaman Maluach Aggregated from Yahoo Sports Canada, SB Nation.",
-      "category": "wire",
-      "published": "2026-05-04T07:00:00Z",
-      "updated": "2026-09-12T11:17:00Z",
-      "players": [
-        {
-          "key": "jalen williams",
-          "name": "Jalen Williams",
-          "slug": "jalen-williams",
-          "pos": "SF",
-          "team": "OKC"
-        },
-        {
-          "key": "khaman maluach",
-          "name": "Khaman Maluach",
-          "slug": "khaman-maluach",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "mark williams",
-          "name": "Mark Williams",
-          "slug": "mark-williams",
-          "pos": "C",
-          "team": "CHA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Not Sunny News For Mark Williams",
-          "url": "https://sports.yahoo.com/articles/not-sunny-news-mark-williams-111700000.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Bad news for Mark Williams is an opportunity for Khaman Maluach",
-          "published": "Sat, 12 Sep 2026 11:17:00 +0000"
-        },
-        {
-          "title": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan'",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNejY4MVBmeU9obUlzNHBiVXJVRkdCeVRlZTRReUNFc25FVGhsQTJpODRhSWNFVkhwYng0dUtKb1A1bzZCQjBLd25VYzVIbTAwNHdaWTlsblhkX0FWdEgtRHRVVWlIZDVrUG9lNGtYcEVCZDA4a1pGZWxkakRVRFlGUnEzUlI0Vkp4TGc?oc=5",
-          "publisher": "Yahoo Sports Canada",
-          "kind": "article",
-          "snippet": "Mark Daigneault on Jalen Williams: 'He's progressing, according to plan' Yahoo Sports Canada",
-          "published": "Mon, 04 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -3283,6 +3283,36 @@
       ]
     },
     {
+      "id": "patrick-beverley-witnessing-miami-heat-lebron-james-practice-e9e3872b",
+      "slug": "patrick-beverley-witnessing-miami-heat-lebron-james-practice-e9e3872b",
+      "sport": "basketball",
+      "headline": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh…",
+      "blurb": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh like 240-250…this is him leaving Cleveland…",
+      "summary": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh like 240-250…this is him leaving Cleveland first, he [LeBron] stepped on that scale and it said 271…like what the f*** is thi x.com Board reading of x.com.",
+      "category": "practice",
+      "published": "2026-09-12T23:52:59Z",
+      "updated": "2026-09-12T23:52:59Z",
+      "players": [
+        {
+          "key": "lebron james",
+          "name": "LeBron James",
+          "slug": "lebron-james",
+          "pos": "SF",
+          "team": "LAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh like 240-250…this is him leaving Cleveland first, he [LeBron] stepped on that scale and it said 271…like what the f*** is thi",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9aQ0dDOXd0dEhrSC1iYUNsUjhFbm45OUpoRklPWGNtSFVvdExwaXZueF83YnF4d3VzN2l1bXpQTUtnWU1JRk1kRlZtcXloZi1EMWJOb1UwTkY5UQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh like 240-250…this is him leaving Cleveland first, he [LeBron] stepped on that scale and it said 271…like what the f*** is thi x.com",
+          "published": "Sat, 12 Sep 2026 23:52:59 GMT"
+        }
+      ]
+    },
+    {
       "id": "bobby-webster-rj-barrett-must-domantas-sabonis-trade-138887a0",
       "slug": "bobby-webster-rj-barrett-must-domantas-sabonis-trade-138887a0",
       "sport": "basketball",
@@ -3316,36 +3346,6 @@
           "kind": "article",
           "snippet": "Bobby Webster and RJ Barrett Must Have A Domantas Sabonis Trade Conversation Yahoo Sports",
           "published": "Fri, 11 Sep 2026 20:43:30 GMT"
-        }
-      ]
-    },
-    {
-      "id": "patrick-beverley-witnessing-miami-heat-lebron-james-practice-e9e3872b",
-      "slug": "patrick-beverley-witnessing-miami-heat-lebron-james-practice-e9e3872b",
-      "sport": "basketball",
-      "headline": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh…",
-      "blurb": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh like 240-250…this is him leaving Cleveland…",
-      "summary": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh like 240-250…this is him leaving Cleveland first, he [LeBron] stepped on that scale and it said 271…like what the f*** is thi x.com Board reading of x.com.",
-      "category": "practice",
-      "published": "2026-09-12T23:52:59Z",
-      "updated": "2026-09-12T23:52:59Z",
-      "players": [
-        {
-          "key": "lebron james",
-          "name": "LeBron James",
-          "slug": "lebron-james",
-          "pos": "SF",
-          "team": "LAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh like 240-250…this is him leaving Cleveland first, he [LeBron] stepped on that scale and it said 271…like what the f*** is thi",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9aQ0dDOXd0dEhrSC1iYUNsUjhFbm45OUpoRklPWGNtSFVvdExwaXZueF83YnF4d3VzN2l1bXpQTUtnWU1JRk1kRlZtcXloZi1EMWJOb1UwTkY5UQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Patrick Beverley on witnessing Miami Heat LeBron James in practice: “We got the body fat thing today…that MF [LeBron] probably weigh like 240-250…this is him leaving Cleveland first, he [LeBron] stepped on that scale and it said 271…like what the f*** is thi x.com",
-          "published": "Sat, 12 Sep 2026 23:52:59 GMT"
         }
       ]
     },
@@ -4656,8 +4656,8 @@
       "slug": "harper-karl-anthony-towns-trade-what-it-transaction-9c168bb7",
       "sport": "basketball",
       "headline": "NBA Trade Rumors: Blockbuster 3-Team Giannis Antetokounmpo Deal Reunites Ja Morant With Former Grizzlies Coach",
-      "blurb": "Giannis Antetokounmpo addresses trade rumors, calf injury: ‘I’m still locked in’ The New York Times",
-      "summary": "Giannis Antetokounmpo addresses trade rumors, calf injury: ‘I’m still locked in’ The New York Times Giannis Antetokounmpo returns from calf injury Saturday vs. Bulls - The Athletic The New York Times Aggregated from The New York Times, FantasySP, Dodgers Way, ClutchPoints, Al Bat and 29 more.",
+      "blurb": "NBA Mock Trade: San Antonio Spurs Acquire Giannis Antetokounmpo in Blockbuster Deal Sports Illustrated",
+      "summary": "NBA Mock Trade: San Antonio Spurs Acquire Giannis Antetokounmpo in Blockbuster Deal Sports Illustrated Will Karl-Anthony Towns get an extension? What if LeBron James comes East? Aggregated from Sports Illustrated, The New York Times, DraftKings Network, sportingnews.com, KSL News and 29 more.",
       "category": "injury",
       "published": "2020-01-03T08:00:00Z",
       "updated": "2026-09-07T15:28:27Z",
@@ -16554,277 +16554,314 @@
       ]
     },
     {
-      "id": "clippers-finalizing-trade-sends-kawhi-leonard-raptors-blockbuster-ed7651c0",
-      "slug": "clippers-finalizing-trade-sends-kawhi-leonard-raptors-blockbuster-ed7651c0",
+      "id": "spurs-devin-vassell-defends-stephon-castle-questionable-fouls-88beaf86",
+      "slug": "spurs-devin-vassell-defends-stephon-castle-questionable-fouls-88beaf86",
       "sport": "basketball",
-      "headline": "Could Toronto Raptors Pair Kawhi Leonard With Kyrie Irving in 2026-27? New Rumor Opens Door to Blockbuster Trade",
-      "blurb": "Clippers could be delaying Kawhi Leonard Raptors trade amid NBA punishment BasketNews.com",
-      "summary": "Clippers could be delaying Kawhi Leonard Raptors trade amid NBA punishment BasketNews.com When the NBA announced the findings and penalties from the investigation into the Clippers’ alleged salary cap circumvention for star forward Kawhi Leonard, the summary report prepared by Wachtell Lipton... Clippers Projected Starting Lineup After the Kawhi Leonard Trade si.com Aggregated from BasketNews.com, NY Post Sports, si.com, New York Post, NBC Sports and 12 more.",
-      "category": "trade",
-      "published": "2026-06-30T07:00:00Z",
-      "updated": "2026-09-10T21:59:24Z",
+      "headline": "Stephon Castle injury update: Latest news on Spurs guard after leaving NBA Finals Game 2 with ankle issue",
+      "blurb": "Final Injury Report for Spurs-Warriors: Will Stephon Castle, Stephen Curry Play?",
+      "summary": "Final Injury Report for Spurs-Warriors: Will Stephon Castle, Stephen Curry Play? Final Injury Report for Trail Blazers-Spurs: Will Victor Wembanyama, Stephon Castle Play? Spurs Get Brutal Stephon Castle Injury Update Before NBC Game vs Grizzlies heavy.com Aggregated from Athlon Sports, heavy.com, thesportsrush.com, CBS Sports, nytimes.com and 5 more.",
+      "category": "injury",
+      "published": "2024-06-14T07:00:00Z",
+      "updated": "2026-06-14T07:00:00Z",
       "players": [
         {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
+          "key": "stephon castle",
+          "name": "Stephon Castle",
+          "slug": "stephon-castle",
+          "pos": "PG",
+          "team": "SAS"
+        },
+        {
+          "key": "stephen curry",
+          "name": "Stephen Curry",
+          "slug": "stephen-curry",
+          "pos": "PG",
+          "team": "GSW"
+        },
+        {
+          "key": "victor wembanyama",
+          "name": "Victor Wembanyama",
+          "slug": "victor-wembanyama",
+          "pos": "C",
+          "team": "SAS"
+        },
+        {
+          "key": "norman powell",
+          "name": "Norman Powell",
+          "slug": "norman-powell",
+          "pos": "SG",
           "team": "LAC"
         },
         {
-          "key": "rj barrett",
-          "name": "RJ Barrett",
-          "slug": "rj-barrett",
-          "pos": "SG",
-          "team": "TOR"
-        },
-        {
-          "key": "kyrie irving",
-          "name": "Kyrie Irving",
-          "slug": "kyrie-irving",
-          "pos": "PG",
-          "team": "DAL"
-        },
-        {
-          "key": "scottie barnes",
-          "name": "Scottie Barnes",
-          "slug": "scottie-barnes",
+          "key": "keldon johnson",
+          "name": "Keldon Johnson",
+          "slug": "keldon-johnson",
           "pos": "SF",
-          "team": "TOR"
+          "team": "SAS"
+        },
+        {
+          "key": "josh hart",
+          "name": "Josh Hart",
+          "slug": "josh-hart",
+          "pos": "SF",
+          "team": "NYK"
+        },
+        {
+          "key": "devin vassell",
+          "name": "Devin Vassell",
+          "slug": "devin-vassell",
+          "pos": "SG",
+          "team": "SAS"
         }
       ],
       "sources": [
         {
-          "title": "Who’s Clippers executive at center of Kawhi Leonard scandal?",
-          "url": "https://sports.yahoo.com/articles/clippers-executive-center-kawhi-leonard-120000385.html",
-          "publisher": "NY Post Sports",
+          "title": "Spurs' Stephon Castle: Goes missing in Game 5 loss",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMnlwLXZscGNRZXRyeGowUHVPMXllNVUxSWg5cDVBY3QyU0piZ2p2MFo2TjRKc0oxOEdNSWozajJwZmZMRzk3WkF2Y3FSSUNSWWxTaGhWdF9GS2VqSVBJT2VxSFFudTFadzFEN2RUWnJjNHRyc0oyZm5WbElmY3d0dE5rNUVBOTlkRXRyY2RTLU14M3dXNC1FdTF3aHVCWmVf?oc=5",
+          "publisher": "CBS Sports",
           "kind": "article",
-          "snippet": "When the NBA announced the findings and penalties from the investigation into the Clippers’ alleged salary cap circumvention for star forward Kawhi Leonard, the summary report prepared by Wachtell Lipton...",
-          "published": "Tue, 08 Sep 2026 12:00:00 +0000"
+          "snippet": "Spurs' Stephon Castle: Goes missing in Game 5 loss CBS Sports",
+          "published": "Sun, 14 Jun 2026 07:00:00 GMT"
         },
         {
-          "title": "Clippers Projected Starting Lineup After the Kawhi Leonard Trade",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdjhtR3lYbkYwUVZOOTN3RTM3bHJGemdvbzhadHk1cER6Y01wOVNXNENFUDJjWkQ0ajhKVWQ1ZlZEcGxkbURuT2pTM2tQWG1qX1p3Z0NOUXRvUUFoWW0zQ0NGX244M1Vua1B3SnFRa1RTV2YwaDgtakhnRlJhSFk5YnRjbDNETlVYQ2RZblltOE5Gcks1bXNTc1ZKY1JkMHNJZ3FHdlFaNA?oc=5",
-          "publisher": "si.com",
+          "title": "Spurs’ Stephon Castle sidelined 1-2 weeks with hip flexor strain",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNk1KQlhrN041OUFBdDlDbmdCSVZ6VjFpRmFKNGxZcFpGWlVaYXlDb1ViaFRGUDhIa1NHajF0RGxxM3FMVEdVcE1QckJlSHY1T3p5cFFpQXZ0UXdtQXRfVGpGOFRZZHVMTk85el95OUxhbjYzZVlINkIwNDg5bUdoNXhrWnJ2S2VrQUtaRUxZclQ1Skk2VXMyYjdtQ3pjU0dYNHFDbFdwYjg?oc=5",
+          "publisher": "nytimes.com",
           "kind": "article",
-          "snippet": "Clippers Projected Starting Lineup After the Kawhi Leonard Trade si.com",
-          "published": "Wed, 01 Jul 2026 07:00:00 GMT"
+          "snippet": "Spurs’ Stephon Castle sidelined 1-2 weeks with hip flexor strain nytimes.com",
+          "published": "Tue, 18 Nov 2025 08:00:00 GMT"
         },
         {
-          "title": "Clippers finalizing trade that sends Kawhi Leonard to Raptors in blockbuster NBA reunion",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQb3VOQWhSWC0tcDZ1amg2Uy1hVkJCMVpWelV5NzZ0TnVoQnhoUnNYaEdnYXN5dmx1RXpZWUFWNHFKcWhHNXRnQllpN0QyakxQSDBiZzhEVFRjejlxNmdsQ205b3Mzc1k0XzhMS1JzYnZSN3ZQT0tTN0xVNV93U2dPOGk4Mi1WV3dkX0d4VmlKX3gxUEUweEs4c3RLMmVrdWxDT0d0WWhkaw?oc=5",
-          "publisher": "New York Post",
+          "title": "Stephon Castle injury update is bad news for Spurs",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQT3ZIVUxBQ0cxaGNHd2lzV3RlVjBEN1d6YTVoN1p3ZFVEc3JQQUtSeURuUV9TNGNjaklQX2QyUlBBZnZucV9NeExwSnhVSUhrdDRSdUREY195VnBIOEJpNW9oYm9TQlk0dzdBV3pJbGJ1YUJjazVnOHNkYWhkM3NOemdMblZQYW5HaFNxWjVNekJiRjdBSGxPMlctRnlhNmdEMmo0bl9aNUhVYjBfWGFZMkVVczVHM011V0ZRdlY0NEpmaVU?oc=5",
+          "publisher": "sportingnews.com",
           "kind": "article",
-          "snippet": "Clippers finalizing trade that sends Kawhi Leonard to Raptors in blockbuster NBA reunion New York Post",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
+          "snippet": "Stephon Castle injury update is bad news for Spurs sportingnews.com",
+          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
         },
         {
-          "title": "Kawhi Leonard trade to Toronto will go through, so what is the holdup?",
-          "url": "https://sports.yahoo.com/articles/kawhi-leonard-trade-toronto-holdup-164927770.html",
-          "publisher": "NBC Sports",
+          "title": "Spurs’ Devin Vassell defends Stephon Castle over questionable fouls received vs OKC",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNeGtjUThpWk1zUU03M3hTLTlaQlJweE56VjhvakdFc0RkOHVRbHpYVVpQbE9LMmpYbGFyb0x6OXVacUJiVXAzb1E2UG93ZWgyMWFaY1I4REFRMTZXNXhKemtXS0g1SEp5RzlKekhvTDU3NER2NVkwWEVWSHJ3eG8yNTdhWC1CV0hieVdhMTg0dG9LNnV1WjAtUUVkanVIMjFUY0xwWWhjV3pwNElIQlHSAbMBQVVfeXFMUHVIQlNNMWxBV3FCUi1xTXJGMGFFcnFYRHJCREdyemlSbDBiWGplWkNnNktYRGVqaTRDTVREVGVyUnBkMzdkbGgxN1dUb1pvLWhiYjIwcDhvdExPTWx4YnN6MkRSSlpsaDY3ZGlHZ2F5U3BXenItVGxqUFlIY1BEZEtickdUYTNqWWtYN2NZRjV2RFBnTUJLdzZRaDJSNTBVRlJaa3g0SEFyM1QxRFRmR0VuVnM?oc=5",
+          "publisher": "bolavip.com",
           "kind": "article",
-          "snippet": "Both sides want the deal to move forward, but the Clippers have to sort out their front office after the suspensions.",
-          "published": "Wed, 09 Sep 2026 16:49:27 +0000"
+          "snippet": "Spurs’ Devin Vassell defends Stephon Castle over questionable fouls received vs OKC bolavip.com",
+          "published": "Sat, 23 May 2026 07:00:00 GMT"
         },
         {
-          "title": "Latest On Kawhi Leonard Trade",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1pWk16U2tVcEhUMmNRZnJ2aDNXODRvOXAwOGNRdVhDRkxRZGtqYUdSamhYdUR5dGJpVnRwZTJTcFk1YjQxSDhXZWxlMDhEZ1BEN0lIc1BIS1JmcDVGdFdmY2M1Mk1pbnUySnIyZy1zTFlNNUxHeVNwM3pn?oc=5",
-          "publisher": "Hoops Rumors",
+          "title": "Who is Stephon Castle Girlfriend ?",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ab3lxRXhaeklsbkxqODZWRGp2TU0wbEcxanFadl96Z2M2UHRicmo3Y1FDTzRjNGhJUXFVSHE3dFdsWDVvRnI3LUVXWk9OWG9lOWw2Z1dtcHlvX0xEOEJlMFNSbC1WeVJ3QUZEQmlaTzFJUQ?oc=5",
+          "publisher": "Sportskeeda",
           "kind": "article",
-          "snippet": "Latest On Kawhi Leonard Trade Hoops Rumors",
-          "published": "Tue, 08 Sep 2026 19:58:45 GMT"
+          "snippet": "Who is Stephon Castle Girlfriend ? Sportskeeda",
+          "published": "Fri, 14 Jun 2024 07:00:00 GMT"
         },
         {
-          "title": "Could Toronto Raptors Pair Kawhi Leonard With Kyrie Irving in 2026-27? New Rumor Opens Door to Blockbuster Trade",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0yT1pTOGlldC1FbVlNRjBfMG14QWlEeHBPeVotTUlhSDhtMXE5MVhsUlp3Q1RtaXNDYlpybHBjckF5aG5vb3dpUUJEVG1LdktYdlpBbnRPLXRnY1NrUDRkeGd6ZzBwOTI5UFNnV2RxS1plRUMxUVRMZ1dielVFUQ?oc=5",
-          "publisher": "sportsnaut.com",
+          "title": "Who are the Stephon Castle Parents?",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ic1ZHZXF4Z0ZSdnBQay1yVjFmckw5N0tGVjJzQ1JoUkswNi12XzJzQzdQMDZLbWFYUDRLR1dlZHgxc0swQ0J2Mkw5aGFrRUlYckE1QldFYi14Uk5RbkJIbVp5Z0tyQm5DQ3pwcDB3?oc=5",
+          "publisher": "Sportskeeda",
           "kind": "article",
-          "snippet": "Could Toronto Raptors Pair Kawhi Leonard With Kyrie Irving in 2026-27? New Rumor Opens Door to Blockbuster Trade sportsnaut.com",
-          "published": "Tue, 08 Sep 2026 21:22:44 GMT"
+          "snippet": "Who are the Stephon Castle Parents? Sportskeeda",
+          "published": "Fri, 14 Jun 2024 07:00:00 GMT"
         },
         {
-          "title": "Kawhi Leonard comments on status of trade to Raptors amid NBA’s historic punishment for the Clippers",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaDFKbHQtanQ5YUdBcGhqcVBCb3Z0SThOeGlpTERDWEVHbnNYOW5xWHM0bkJDNVdsVWUtQmtLMTY3a1E4VkRsTGNyd1dhUVN6ajdVOEREUDdSVHB1R2dCN3hrWUNxUFFXdkEybFpYNGVLajhKNEZPeFRKQzVUeWFhd2xwcnlfWXBnWDVubg?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Spurs Provide Injury Update on Stephon Castle and Devin Vassell",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMGxPN1VQdHQtNGwxdWVKRURGNFFLQUdiNUxNc2R5cGxDQ2E5ZzNodV9iNUdxY0lnbERsYTAwR0JYa00yYmh0cldCX0tSRTN4eHdEaWtFdDlhRXFaRGVkRGZTSlpTMHZqX1JXYkw4am9YV29USHNJNkRoa05qSjVDeEw3a1BBMEo5Q2gyZFMzeEs4Y3hSSDVDb052dlZxdw?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "Kawhi Leonard comments on status of trade to Raptors amid NBA’s historic punishment for the Clippers Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 07:14:45 GMT"
+          "snippet": "Spurs Provide Injury Update on Stephon Castle and Devin Vassell Sports Illustrated",
+          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
         },
         {
-          "title": "Kawhi Leonard Gives Hopeful 3-Word Answer on Raptors Trade After NBA’s Explosive Clippers Investigation",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX1liQzljcWx1ZlNjOEhtZk4zWXBWZ0RpRFM3OUtGUDJVWk1oM1NqOWl3YjlpWWNmTUtvUldmMm4tVGVoUVJHR29palZhejhVc1d5UmpZWW41QzVla0k2OFVXVTh5LXh2M0EyTnEzSHZZdmxzOGN6R1lGcXJaSDRoRXphdU8?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Stephon Castle is always up for the challenge, and the Spurs look ready to join him",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVVlrVHpzeVAzSGdEaHFEOU9UUmNYTlNtaHFqQjlsSWdZc1J3cGZlWkZKRk9hTnhYUEE1YnVweEZmbWExWFZmVmVEVUdfS2poZE5uOEtvUXM5MGRiWHZ1YXM0SS01aUN2bWgyVTFteldTSXZVMGkxQzVyXzd0d1kxVEtJQndsNjEtRnJKcUlwLWVKZm5oc1AzYk5jRVE?oc=5",
+          "publisher": "nytimes.com",
           "kind": "article",
-          "snippet": "Kawhi Leonard Gives Hopeful 3-Word Answer on Raptors Trade After NBA’s Explosive Clippers Investigation Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 09:36:08 GMT"
+          "snippet": "Stephon Castle is always up for the challenge, and the Spurs look ready to join him - The Athletic nytimes.com",
+          "published": "Sat, 23 May 2026 07:00:00 GMT"
         },
         {
-          "title": "Kawhi Leonard Trade Hits Another Clippers Snag After NBA Punishment",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPN3NuMUc5VXhtbmI5d1BmMGJrM3gxNHVMOGo3eUJpZUNtbTFnWmJFRmdMVW9DUHQ3TS1SMFlaRklqYi1Bb09LR0Y3bVZfdzlON1I3aDBDMUl1NXdoT2pJRjFEWkZxMUxSTjNmTlNrV09lUDFEajVMb1ByWjhUVE9TWU5LR3JXU1lL?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Spurs Announce Stephon Castle Injury News After Two Missed Games",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNWdRNkloZk1PaDVKUVhFaURTejBHYTRoc1YyeXNiemszQjNzcXdaWWlkVVYtUkpfYlM5dHdXVVJsdUNXVVpkSGd5OGFtMHE2TDg3cVhiZUpFemNzZkxLaWdHLVRFUFF6UGJETk9Tbk9MTUMxVE8xUXRiTTBvYkxJTGFfUE91WlgyOEVqMHpwS3p5WmN1aUthblpvLV80MmswSFZPZERwNFNEN1U?oc=5",
+          "publisher": "Athlon Sports",
           "kind": "article",
-          "snippet": "Kawhi Leonard Trade Hits Another Clippers Snag After NBA Punishment Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 11:51:11 GMT"
+          "snippet": "Spurs Announce Stephon Castle Injury News After Two Missed Games Athlon Sports",
+          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
         },
         {
-          "title": "Clippers 'pissed' after Kawhi Leonard's NBA punishment as Raptors trade sits in limbo",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQ2VYSFY5akxtSUhFTm1PMjdydnNJeUdIMHF4OUprQXcwN19zZTNkMWYweTF0TmJkVk5rYkdqdUotNThLYnh1cjE0MTctQ3ZsSHhGckFWV0twNUZxdktZRGdJdTV3Z002eGhJdl9NaUpmN1R0clpicFVwMVZIQUd1enp5Z3FrNTdpSE1od0tHX1I0cFlrYk9makJmMW00cWJYZ2V6U1ZmbHpjQ0JGNEpNY05nZ3FmeTJYc3h1U1NNXzFlZnhFT285OXdn?oc=5",
-          "publisher": "USA Today",
+          "title": "Injury Update: Spurs Expect Stephon Castle to be 'Really Sore' After Scary Fall",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOamNDcFJBelduM1ZENUZXd1VETURsS2NNOS02d2JBcndWUXViRERZbERVU2k2M1poR0NndXppNEowNHlwaDY0cnQ4MnpNM1lWdklVclhKaVVjbDkyRDhJWnVEWjMwTWxRQTNjZmNscFdzUC1GSmdaLTI4azlwcF9OUWEwYkxkTS1zLU4yYjlkZDFrWU1SYktDMGU3TFEyM2VjUm00Y1YzcHgzQ2JmS1ZubDR0Z1c2Z1BUNFM0enhR?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "Clippers 'pissed' after Kawhi Leonard's NBA punishment as Raptors trade sits in limbo USA Today",
-          "published": "Wed, 09 Sep 2026 15:06:00 GMT"
+          "snippet": "Injury Update: Spurs Expect Stephon Castle to be 'Really Sore' After Scary Fall Sports Illustrated",
+          "published": "Wed, 11 Feb 2026 08:00:00 GMT"
         },
         {
-          "title": "New Kawhi Leonard Rumors Update Timeline for Clippers-Raptors Trade to Be Finalized After NBA Probe",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbWd3Ni1yckE3dmd4N1kzNkdvVGNiRVBLOVBKMEFQanN6VW9JSTM2eXBINFVYVzZOQmxLRGdXWFhjZXBFbUtQay1qZDZTSnNtNjljOEpzUzNkLTVXeUxhby1saUZRR3NzMGN6b0p3cTNIMkhOOG9qQ1Y1b1k0aHNEZW5VRGF2UFB6YVVnWUg0SHQ3XzF6TFBzQXdOOXl2Zi11Y01VOXBxWHpIME5keUs5b083YWJka1dFVWp0TEYtYTlQY0xpdVpyVTlzSGMtM1BlVG1B?oc=5",
-          "publisher": "Bleacher Report",
+          "title": "Victor Wembanyama, Stephon Castle headline Spurs injury report vs. Nuggets",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZFpjZm5IWlBiMHFMZWxwUWhIRUR3SkJMRENqTUZMTzNNcklQSzVOcktIMDdJMjUtWVhQT1dRT3l0M01ET244ZTREcVR4TTRKc09QUDcxb2l4NkcyWERDczRhM1BqNm9ra2dFS1YybHFMX1VDWnBQeS16ZDl2TXdybnBEcnZuUzlWUjBRRmVlS1kyMmMtb1c2SjJxX2pBZ2ZQajBkVnAyaXhiSnVNQ3k2T05RdjQ5Ym11OUI2RWoxNnlHMF9rTy10ZDhvMlozVEdQZWNPanp6Zms?oc=5",
+          "publisher": "sportingnews.com",
           "kind": "article",
-          "snippet": "New Kawhi Leonard Rumors Update Timeline for Clippers-Raptors Trade to Be Finalized After NBA Probe Bleacher Report",
-          "published": "Tue, 08 Sep 2026 20:01:38 GMT"
+          "snippet": "Victor Wembanyama, Stephon Castle headline Spurs injury report vs. Nuggets sportingnews.com",
+          "published": "Sat, 11 Apr 2026 07:00:00 GMT"
         },
         {
-          "title": "Clippers may be forced to trade $197M elusive 3-time All-Star after Kawhi Leonard punishment",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUVJlMWp1WlJUU3FYZm4zNmFoZEhMd1JpSXJDTWZteExScmJneE52QXdPaDBuY2xnamtRNmpKS3NpcUl0M2xnZDd6WmdmU3l1U2JfUGdGX1BvMzk5SXIzTW5WRmI3ZXNRM0RlMjYxUmhTRUJ6YUItdUYyQmxpX3RXb3lkNmpsZw?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Are Victor Wembanyama, Stephon Castle playing tonight? Spurs vs. Mavericks injury report",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUGFwOXVwZXI1dFcwOXFCa2JvdjBJSld3aC1BUWpnZXZRTGVrZnBqZXZKSGhGV2hCOFk5d1RnY0ZIV2Eyd1dIQzhhZDlwUjVlV09nTlh4Qm9EODNvRFYyUFhkeU1yR3ZsOU9KekhIbFpBTF9KWXRNOVRFejVkWkZ6TlR1X3Znb2dLc2F5QXVrQWxXT3M?oc=5",
+          "publisher": "sports.yahoo.com",
           "kind": "article",
-          "snippet": "Clippers may be forced to trade $197M elusive 3-time All-Star after Kawhi Leonard punishment Yahoo Sports",
-          "published": "Tue, 08 Sep 2026 08:41:55 GMT"
+          "snippet": "Are Victor Wembanyama, Stephon Castle playing tonight? Spurs vs. Mavericks injury report sports.yahoo.com",
+          "published": "Fri, 10 Apr 2026 07:00:00 GMT"
         },
         {
-          "title": "Kawhi Leonard’s Raptors trade is delayed because Clippers are still cleaning up their mess",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdF94MmY0QUZsR0ltNzBqVWtfVzhJakRtdzc0U2ZDWTdaRFZpM1NjdDVnSWh5ZmFSYzA5M2VTTTRzYkM1ZU1uUnVBUjg5cEF0UXVLM1ZEY1M5VnpBNmZyY0lYMlFqVzNVNFZVT2Y0SlByWS1CUmJyRzFlUW5VNDVRdk9xR1Q0R3ZhRWpFMTF0TEdhcHBueGx6UlRNRm9DUHplMGl2YVB3VWJvR2NQVVIwblNURFZuSkZuY3RPMV91WHBkMUk?oc=5",
-          "publisher": "USA Today",
+          "title": "Spurs injury report: Stephon Castle, Keldon Johnson and more ahead of matchup vs. Nets",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZXFoUkY0RDlxa1pfZzJkZTlmZ016cFB2NEw4d1p0U3dkRU9pZGdEWlF0ZWJsQ1RUaXk1Q1RZNVNJV00wT1p1d3RtLXVKUXdOb3BsZzdpeTc5Z2xodmJCZnFDSWw3cVRPSXpHN3BtWWI1VzZYT2t0LTM1X3JYMDhBek55VEhJYm9IV1VGUlB0UGV6VURYVk5GSUVkSmVOWTYxTzZzY3VERjZ5Qlh3SFlwV1VKNk9yUTRFQ3VyeWF6SjVLdmtheUViOFpsaG5iQko5djNlUmk5TE5aRVU?oc=5",
+          "publisher": "sportingnews.com",
           "kind": "article",
-          "snippet": "Kawhi Leonard’s Raptors trade is delayed because Clippers are still cleaning up their mess USA Today",
-          "published": "Tue, 08 Sep 2026 20:55:00 GMT"
+          "snippet": "Spurs injury report: Stephon Castle, Keldon Johnson and more ahead of matchup vs. Nets sportingnews.com",
+          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
         },
         {
-          "title": "En route to tape today’s @BleacherReport stream at 5pm ET. Kawhi Leonard, sources say, is in Miami among an organized minicamp of Raptors players. Toronto is waiting for Los Angeles to move forward with the agreed-upon trade that Leonard and the Rapt",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoUG1EM3lDNm51ZDUwN3YxdEtRZXludk5kcjRoNkFUNmlBY2hpUC1QMWhvTlhMVllxcVMzdVFUdWxXODRRbGdnTUVLdWo2Zkt3M19TTEZOLTVoc1FRaVBxV1ZLNA?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "En route to tape today’s @BleacherReport stream at 5pm ET. Kawhi Leonard, sources say, is in Miami among an organized minicamp of Raptors players. Toronto is waiting for Los Angeles to move forward with the agreed-upon trade that Leonard and the Rapt x.com",
-          "published": "Tue, 08 Sep 2026 20:15:37 GMT"
-        },
-        {
-          "title": "Scottie Barnes Deems Kawhi Leonard-Toronto Raptors Pairing \"Dangerous\"",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSy1lVHd3UVo5Tl9JRWVhUnpXQ3NEbWxVa01QakxMSUFJb05TME5HUmpfZTVmQ0U5ZTBRazBGYXFjXy1abmx6QnFIS3ZPLWEtSkQ0QnhjQlEzMDdtTUYyM2JQOVUyQmVrN04zMXVHU3Y5b2h0MWoyQklaaTN2d3UxTE5lRVNBNXhtUWc?oc=5",
-          "publisher": "Yahoo Sports Canada",
+          "title": "Spurs Star Stephon Castle Gives Injury Update After Pacers Game",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbjFIYzUwYWEzdlJ1TmJ5N0czNnZidncxUTg3b3F2QS1GRzlZQjNxaEF6WklWQjJWZnU4RWRMbmpSUHBwSnBraHFLRTJuS3FlNzVsVjZESHlTbm9qMUJvLV80Z1Q0Uzdkb0EtR2MzV2xRRmE2QnIwUG1ZMFdsLVN6S0FRMGg4UlNxcElMZzdyRkNTOElxbi03UUs1bEZjXzB2TWVpbw?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "Scottie Barnes Deems Kawhi Leonard-Toronto Raptors Pairing \"Dangerous\" Yahoo Sports Canada",
-          "published": "Sun, 12 Jul 2026 07:00:00 GMT"
+          "snippet": "Spurs Star Stephon Castle Gives Injury Update After Pacers Game Sports Illustrated",
+          "published": "Tue, 14 Oct 2025 07:00:00 GMT"
         },
         {
-          "title": "NBA insider makes prediction about the Kawhi Leonard trade",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUTd0QndwazZOMzg3a2QzUVBrNThvQWhHSU9jclNjc1k0UlQ0d1VIUHhjZllMZ29adkhsOTN4eEEzQkt3aVBqNVpGbmE3bTZIWXVEUmwtWmI4YjNWbnZnMExSN2NaaFpJbkxRMnlyNnZnU1lKa2JVdmMxSVBQd0tYQXFyTC1TaUxyakRqUTdSU0FaLVk?oc=5",
-          "publisher": "Larry Brown Sports",
+          "title": "Stephon Castle injury update: Latest news on Spurs guard after leaving NBA Finals Game 2 with ankle issue",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdEtTQjZ1eVNTYWM4em9kdUs1eWFoTVRvTmd6OXpVcmlNejd3RTBNMnhabVpMSW9pdkdnd19yQU5oLXB3ZndGaDBXaTNzOHVkSzFxbl83TlhIU2ZDU2o5bENVSy1mQW80NW5fWE0wY1hJRHFIcS0xMFZyQm5aM2NoallmSTVWMTdiSzFEY2dGaU1sMGg3blVyamxOQlFTNDhTa0dFWTZ5alJOUGZOakdDN21ZMzBTOGZiYUFmZVZ3?oc=5",
+          "publisher": "sportingnews.com",
           "kind": "article",
-          "snippet": "NBA insider makes prediction about the Kawhi Leonard trade Larry Brown Sports",
-          "published": "Tue, 08 Sep 2026 16:41:34 GMT"
+          "snippet": "Stephon Castle injury update: Latest news on Spurs guard after leaving NBA Finals Game 2 with ankle issue sportingnews.com",
+          "published": "Fri, 05 Jun 2026 07:00:00 GMT"
         },
         {
-          "title": "Kyrie Irving landing spots: Where could Mavericks star go if traded?",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbmhhMUxOR3A5SmhnODNETjBkelBFalBxUkRpSnlGcnhUaXhocWMyRmN2RlZwcFZ6d0wwa2E5dG1Fb29LT092VTMxWXFmWml0TEhoclowZ0hTUi1QalN0UDhKLW90UlduYi15NV9XWXZPRXVWYkdiQ2hFTzllLWZhV1NoMEFhVFMy?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Stephon Castle's Final Injury Status for Spurs-Pacers Preseason Game",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYjhkWFF4TDNVcTR5NW1WQ0x1cmlpS0lWa2hVcnpaRzJLNFc4LUR2Y1hLLTd4ejRGb2N1eUVyQ1pIVENKR3Z2WGJuM2c0NU9fR0ZNSjQ0YnI5NXlwTjVwNjQtS3JwRDJDaFNFY0FiQUMxN0dVbm1jMHdocWR2ektjazRyS1o5bEhSZHlSM214ZHFlY1FrQ1FiNUVZT21vUkFydG5wVGFiMk0ybEgxSkdJbWtld3JOdmNWRTJmbQ?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "Kyrie Irving landing spots: Where could Mavericks star go if traded? Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 14:39:43 GMT"
+          "snippet": "Stephon Castle's Final Injury Status for Spurs-Pacers Preseason Game Sports Illustrated",
+          "published": "Mon, 13 Oct 2025 07:00:00 GMT"
         },
         {
-          "title": "Kawhi Leonard trade to Toronto will go through, so what is the holdup?",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNR2VyWmFpZGJiU2hPektPN1NfN0hGbVQ1OElhS0dNYVdxRWxtaGZtU01MY1Vtck5wdzJzaXNfNE9BTVdtcC1fQV9pM3RWZFdvOVZ6bTFRSmtWZHZmWHZCMnk0S01BUWpjM1JLekxRRjlYX3lxd00yTm5KSVlMMGJhOFladXJFNmk5QTdF?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Victor Wembanyama, Stephon Castle headline Spurs injury report vs. Mavericks",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQYkNUeHNWaGFaeTNUYklSeHNlSHBlbTNPdVYxQ1JkX01fSjlQVnl1LVlIbVZiZW83bzV1OEw1R2J3bXV0bDhqNXNic3UtOVpXWFVDTU1HVHk5cktUYzNPT0RwZnlXemFNVXI5NXcxN3RuMjZwX3JrWTNIanhHVEVJQjY1QUxYZ0FnYnpuRkc4OC1QcUZNZXlBVl9qT1czSkYwTnZRanp4WTYxektVQkhPcnBOMURQM0xMaGVMZnIzUS1sQS10UlQxWVY1NFdWVkxjTmpDc09vaEk3Tm8?oc=5",
+          "publisher": "sportingnews.com",
           "kind": "article",
-          "snippet": "Kawhi Leonard trade to Toronto will go through, so what is the holdup? Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 16:49:27 GMT"
+          "snippet": "Victor Wembanyama, Stephon Castle headline Spurs injury report vs. Mavericks sportingnews.com",
+          "published": "Fri, 10 Apr 2026 07:00:00 GMT"
         },
         {
-          "title": "What’s holding up the Clippers’ Kawhi Leonard trade with the Toronto Raptors?",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbGVMazlQNzF2dTBwOC02ZFRIbG5rbWhUc2JyMWlLcU9RVmFXbkFuVFBqdkNFVG5OV1BXYU42bUdwdzBfelIyTmhVSV9naWRGVkYxSjJOWXc4ck5vR0lncGY3R1lPUUtDTERCNnlKU3FDbUxSNUhPY2NBOHpjMTc3VHF2dXZraVZmeG54cWFEaFh0aVBKMEN0M0VBWkQyemROUWdIeUxn?oc=5",
-          "publisher": "The New York Times",
+          "title": "Is Stephon Castle Playing Tonight? (Injury Update, Betting Impact for Spurs vs. Heat)",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNUJ3dTlRc3RUc0pnekRKaHFKOG1PN2JHZTNjWEhDWnhpcGRMMGp6Uk94Wld2UUZ5V1pxMDVpci1DMllOV1FfMUFTTWJ6SHg4X25HNkV0VS0wdGZ3dmlIVzFvYjRVdFB0ajltOXZaR3dwdkEtTDluMUpyTDgtQzFUZU9kMGtCOVhvUzJMM1BnQnZJMXFiLU14XzdLdTFwQQ?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "What’s holding up the Clippers’ Kawhi Leonard trade with the Toronto Raptors? The New York Times",
-          "published": "Wed, 09 Sep 2026 01:32:32 GMT"
+          "snippet": "Is Stephon Castle Playing Tonight? (Injury Update, Betting Impact for Spurs vs. Heat) Sports Illustrated",
+          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
         },
         {
-          "title": "Kawhi Leonard trade to Toronto will go through, so what is the holdup?",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOaUplQlFQYy1ZdDlnZ0lYM2gyR0dyRldLY3hSTF92cGlIeXVtSXVuLV96aW5hUm1fZHhFclZSaF92S3BHRTJlQTVuLTd3SDBabW1MdXYydlhnaFhCbGlLQWRLME1JZU90bmVGNGtWMHNGeDlHVllMQkR5WWplSnlhNGd6b2xMWXpCRTZleTBiMy1qdEx6NEFzcFpHNFNwOE91UGs0czJB?oc=5",
-          "publisher": "NBC Sports",
+          "title": "Spurs Guard Stephon Castle 'Feels Great' Ahead of Midseason Return",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdHhpZndTSE5WU0dsMldpTE9JRVNVRlRPcWJoMlN3YTlNLTZ5aW42SGxtM0JpM0hOTEc2S2t5T2tuQTgwLWlvV0YyRXNiNTJySTBBNTJzYXpoaEhGbXgzNkk2cENvbEFPSXp5V2N1Q0pYVDl0V2tMNkNfelB1WlJvZEFSREhxcTd6Z3RidWo5YUxIMkszUldkaTM0RXdzTmg3RGlNTlQxMzhkeTNOd29neHJqM3RfUQ?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "Kawhi Leonard trade to Toronto will go through, so what is the holdup? NBC Sports",
-          "published": "Wed, 09 Sep 2026 16:59:12 GMT"
+          "snippet": "Spurs Guard Stephon Castle 'Feels Great' Ahead of Midseason Return Sports Illustrated",
+          "published": "Mon, 08 Dec 2025 08:00:00 GMT"
         },
         {
-          "title": "Clippers 'pissed' after Kawhi Leonard's NBA punishment as Raptors trade sits in limbo",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUHI4TGFfUjBpbV9MWTlsV0d4TzdHV29UMlphYVpuN1dKYlc1S2xzS2ZNUkt6bVRiNEFaVzVReW04c09va2JOWV9RX2F4Q2NzWGtRTXRlTWliMi1iQzRFWHp6QmNCendqakFJNFFaUmJVQ1FDRWsyTGUzeEtJVzFSWklhOW1DdUFaVUFv?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Final Injury Report for Spurs-Warriors: Will Stephon Castle, Stephen Curry Play?",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTDRldmxydUFtajhJTWxHenJkY3NlOGNydVZLd1lkVk5aWmhoVTRSOXFlWVRPa1h0d00xdzhNYVRxNHdYV3BPUi15TTlCeklFeWtqUWpHaG1iNGRKWldzUnR1TW56QlNPMm0xSDBISGtNRUJIRjF5ZWpqUmZiQTRaM2dhYTBpbEtzNTY0cGdRZm95NWVEY3RxdVJjUmQ2RVFaZy0tZ3lHVWhkNjc5dzREX2ZiU0hQbXNMN3oxNjk0QUxpSWw4ZFMw?oc=5",
+          "publisher": "Athlon Sports",
           "kind": "article",
-          "snippet": "Clippers 'pissed' after Kawhi Leonard's NBA punishment as Raptors trade sits in limbo Yahoo Sports",
-          "published": "Wed, 09 Sep 2026 14:56:15 GMT"
+          "snippet": "Final Injury Report for Spurs-Warriors: Will Stephon Castle, Stephen Curry Play? Athlon Sports",
+          "published": "Wed, 11 Feb 2026 08:00:00 GMT"
         },
         {
-          "title": "NBA insider provided insight into the holdout of Kawhi Leonard's trade",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMnNPem1sdFV0ZmVRUmJHODdEOHVfTG9TNHc0V0tna1BBLTdMdThIWDJMRmtHWE85Y2l2WGo4MkFGQmVLMmhHRGVJTXQ5ckVISGNVWXdJWVBKRS1zV1pIUUFQcHVHMWRYZW1WMHdvMHpCS2N1MGljUFhNNlFNaGQtNzZxQVp5VHBpdk1hWmJZTVlrUFAtOU9rMHZiS1NHUEtxekg0VWRlZnNsaVN0SkFMOGVB?oc=5",
-          "publisher": "BasketNews.com",
+          "title": "Final Injury Report for Trail Blazers-Spurs: Will Victor Wembanyama, Stephon Castle Play?",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaHJhWU02NkhZVld0MUhKV1RXRjJhemxhbXJMVjZBajFtNFJTZEFGZXVNaDZxcHZ6QzdHQ2ZLT2FXVk9BTEl4ZzJXbldUcWN5TTRLakRwR3RPOXpENHl0aV95R1pmODZ5OHN1THlOMUxtV2JRX2tabEtHeDZQMmZFbGRmcmlwZG13dWliTzBwRklPT2pjOVcwY2xDNTdQZUM4ZFc0aGswcUhHWXFqZzNSQl84Qk0yalQxVktudS1yVG1GRGhrVlp0YUE1RGpiQQ?oc=5",
+          "publisher": "Athlon Sports",
           "kind": "article",
-          "snippet": "NBA insider provided insight into the holdout of Kawhi Leonard's trade BasketNews.com",
-          "published": "Thu, 10 Sep 2026 16:31:00 GMT"
+          "snippet": "Final Injury Report for Trail Blazers-Spurs: Will Victor Wembanyama, Stephon Castle Play? Athlon Sports",
+          "published": "Wed, 08 Apr 2026 07:00:00 GMT"
         },
         {
-          "title": "New Kawhi Leonard Rumors Reveal Raptors Are 'Eager' to Complete Trade with Clippers After NBA Probe",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQzA5M3MtdjNvS2xCcERFekh4OE9pNGVlNjVjdGY4cE9Uc1U5RmZTV0ljMzZ0SUJ0VmhfXzluXzhpejY5NlRJSWcteHFqNHM0V245NTI1ZEdPb3ZfV0cteFJGeHM2bUxna05CVEFZZ2s2WFNoWWdORDZQd3k2b3l0SDNUejloQWg1M3ZZQVdsekJzYy1wMTVEenY2OTd4ZEpycllhX1BlRHJLaE9mZlhTUXR2Rnd3azFhNXAyWXBLZnpCVnltN202dDdSanE3MU0?oc=5",
-          "publisher": "Bleacher Report",
-          "kind": "article",
-          "snippet": "New Kawhi Leonard Rumors Reveal Raptors Are 'Eager' to Complete Trade with Clippers After NBA Probe Bleacher Report",
-          "published": "Thu, 10 Sep 2026 16:56:38 GMT"
-        },
-        {
-          "title": "Clippers Push Back on Kawhi Leonard Trade Rumor After NBA Punishment",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcHZNZzFqUHlud3VjeU9wN3puUmNWRXgxN3Z0WjV1YzlDZW9VMTZLRUt3aWhQMExOT2tBNDhXVkRQZ1ROUHVWbVdGR3lacXRsWC1pMkEzOTBmcWJ3MXJzSmRzUTJHemt6dTNjZnN6VUdhRml1THl6WXZUVXdJbFZENDFxNHU2S0liVi16c0JB?oc=5",
+          "title": "Spurs Get Brutal Stephon Castle Injury Update Before NBC Game vs Grizzlies",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4teDB4UjhGenVPS09FMWQwRFNndENaaHlMT3hsdjg1ekFYbjNXXzNlU2pLS0t4MEJjUE5hUmlnYjZ5cGZJV0hROE5qcW50aGE5bEgtRUhWWDNWMGhxbWZWbDF3Zng?oc=5",
           "publisher": "heavy.com",
           "kind": "article",
-          "snippet": "Clippers Push Back on Kawhi Leonard Trade Rumor After NBA Punishment heavy.com",
-          "published": "Thu, 10 Sep 2026 16:31:03 GMT"
+          "snippet": "Spurs Get Brutal Stephon Castle Injury Update Before NBC Game vs Grizzlies heavy.com",
+          "published": "Tue, 18 Nov 2025 08:00:00 GMT"
         },
         {
-          "title": "NBA insider provided insight into the holdout of Kawhi Leonard's trade",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcjBKMDM3cW5lc3dibXl1NHFEdTRTRDVxNWtES1hnSmJjeFpPMy1NeFNLLWpvNF9zU0lQb2RoU1YyMDJiRTJUb3hVS1M0RzBLSHpaQlRfV3hPN0daR0E5Q1YxTFVzR3hNNDk4V0RHM1ZjWXRuQXJQV2JrcXdaSmVXd1N0blRWQ2RacFZqbHZNMDBaQUt4Ti1qM0x6VFRRQ2xUdktOSUJ4WUQzQ2RkWWc?oc=5",
-          "publisher": "BasketNews.com",
+          "title": "Final Injury Report for Spurs-Heat: Will Stephon Castle, Norman Powell Play?",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNDZWVkdwT0U1WXY0Tk1acEVTWC0wUk1WdWgyR3hFckZKRDkyOWRtSDRzVURleVBHX05SWUJzQklrN2FTYXVjQjRyT3JsN21jLW5oa1M4WkFjcENOQlVkUjRKUUhYYlV2Unc4MXpCZl9TYVV2dlA1RHFpRnN3VnlYcWpXaUJSam9xa2hTb0FieS1SZUhvU0VTbjVPQlRieHFia3lUbS1GVzNPUkRiU2ZmSkFxcVk4Zk1lQW1TUg?oc=5",
+          "publisher": "Athlon Sports",
           "kind": "article",
-          "snippet": "NBA insider provided insight into the holdout of Kawhi Leonard's trade BasketNews.com",
-          "published": "Thu, 10 Sep 2026 16:31:00 GMT"
+          "snippet": "Final Injury Report for Spurs-Heat: Will Stephon Castle, Norman Powell Play? Athlon Sports",
+          "published": "Mon, 23 Mar 2026 07:00:00 GMT"
         },
         {
-          "title": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYU1NYjY5ZDNpQ0ZXanltd1NqQ0xLNkpwczZKb0lwQUd0UVMzN0RvMXpLSlhNcEpyX0s3LVdjT3U4bjluU3oyMjh3OFNJcnpSbmR0RV9JZlVlUnlCSmhIbGpvMjJyYWVSQmJJOVhjUWdyTndZY3BGaUtfalNMTkFmX0dsYmo5bm40aVo4?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Final Injury Report for Spurs-Nets: Will Stephon Castle, Keldon Johnson Play?",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQjdRb1psQ1d2NVc0dkE2YUhpTU9SUzEzaFNPY0VIOVhQMGpCNEhXdFV3V1U4U0E0Qm5QOFdERTBrSkNLQ21JODVocXlHOGJ2SlN4YWxtS3Jsd0s2cTQzOG9UX1VkSEJvYUhxbV9GRk13S0NpN08xNVpySkhmOUM3S3NXM0ptOEVINkJ5b2NRbEJPTEJrWEx4cFVUZUFCdldJclBoOFhKMkQtc0p4VDdicmR0dHVQdGZKM3Fma3NR?oc=5",
+          "publisher": "Athlon Sports",
           "kind": "article",
-          "snippet": "Raptors predicted to trade RJ Barrett for $272M 3-time All-Star to pair with Kawhi Leonard Yahoo Sports",
-          "published": "Thu, 10 Sep 2026 16:39:16 GMT"
+          "snippet": "Final Injury Report for Spurs-Nets: Will Stephon Castle, Keldon Johnson Play? Athlon Sports",
+          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
         },
         {
-          "title": "Stunning NBA Rumor Claims LA Clippers Could Scrap Kawhi Leonard-Raptors Trade For PETTY Reason",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSWJtd0dzR1hxZzl2OWpYT2hDTHZsOTFIQmRhNWdNdm1vRjVCZXgxOUFsSWFvN0VtbGlVVkdFeXdLaVRJSDVFc1lIc2ZEODVITG9ka3JLbzVYVGlCS3p6ZXRDaGMweHBrWkRxZHJYeXFsaXBocWZxYlF2akJPUVZjTjM4bk9IUWw1amZZQVdBWQ?oc=5",
-          "publisher": "Sportsnaut",
+          "title": "Final Injury Report for Mavericks-Spurs: Will Victor Wembanyama, Stephon Castle Play?",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNEFibDU3QnJFZDEweHZRM04wN19xRUZjUHZOZF96WnhoMlRWN3VYYlVKdk9QNWg0Qmt3aDFDNWVMc20xdFNseEVzdXkwWmc5WW9vXzlpNWYwazZqRGtDaml3Q3NVcGY0dWpqSTFrWTZ1OGtETjg4cmpsUlMzU1ZMS3dPNmhYVGd3UGdoOFQwNDAtRUNIcWN1LXY4R3Z3c2pEenNSMUVTMUFBZWxjV0tycUFSbExtRW9zcC1MRkp6eUlPQk9vOXRJTQ?oc=5",
+          "publisher": "Athlon Sports",
           "kind": "article",
-          "snippet": "Stunning NBA Rumor Claims LA Clippers Could Scrap Kawhi Leonard-Raptors Trade For PETTY Reason Sportsnaut",
-          "published": "Thu, 10 Sep 2026 20:21:02 GMT"
+          "snippet": "Final Injury Report for Mavericks-Spurs: Will Victor Wembanyama, Stephon Castle Play? Athlon Sports",
+          "published": "Fri, 10 Apr 2026 07:00:00 GMT"
         },
         {
-          "title": "Is the NBA going to BLOCK the Kawhi Leonard trade to Toronto?",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJeE9BUUFSTDhybUpJN1VqZVJQa0VyMHBrMGMzZGxnZXRnUGlOcnN6czlPMXRUb2tCLW1UZDZXb3R0b2NiUzlWQkk3UTIycHE2QkM4cVlB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Is the NBA going to BLOCK the Kawhi Leonard trade to Toronto? YouTube",
-          "published": "Thu, 10 Sep 2026 14:30:07 GMT"
-        },
-        {
-          "title": "Clippers could be delaying Kawhi Leonard Raptors trade amid NBA punishment",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdDNJMmktWHdjLUNyVTdVbjJrd05ic2FCWnltalFMWW9aWHFPb0tVQjNManlIbjFPM0xFUzQ0M1BJR1dlQW9nUDJxa28wSEt1a2s0ekFKTWEzeGVLRl9IMGVXNGVvWkdRX0xJNUtyRWZzVzBMTWlMWEYxUmxudTJWTGJYYlcxM2MwNlBfTVdqMUR0Z1VnWnRpVGtUeHRta1I4X2tORFlsY0NCWng2Y0k2emx3aWktUVpX?oc=5",
-          "publisher": "BasketNews.com",
+          "title": "Final Injury Report for Pacers-Spurs: Will Victor Wembanyama, Stephon Castle Play?",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZzJKVGlBOFM0Ulo5dTY1LTlZa0Ixc3Zyd0RtczNEWlQzVFZjTWNLcnZGMF9iY0FvWng4bEwzemNIQm9KT01FZjJkU3lUc1RBVTVtMll5VEdFRVJ5RnBkS0FQT0gzekpxWWVsNWhzcXdLc21wci1uWWRSMUNPOWZBaVF2SzNLLVlUZmsyempITGFQeTRRNWR6bDFlTzVFN1d2VXBOeklIVFBVX185U0ZId21qdVUteDRseEFuc2Q1azhsOTA4?oc=5",
+          "publisher": "Athlon Sports",
           "kind": "article",
-          "snippet": "Clippers could be delaying Kawhi Leonard Raptors trade amid NBA punishment BasketNews.com",
-          "published": "Thu, 10 Sep 2026 21:59:24 GMT"
+          "snippet": "Final Injury Report for Pacers-Spurs: Will Victor Wembanyama, Stephon Castle Play? Athlon Sports",
+          "published": "Sat, 21 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Knicks-Spurs, Will Josh Hart, Stephon Castle Play?",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVDFLa3JhN3ZMaDRpZXAxSC0xN252amd4U3c2UDNwME1FNlRVSE8yNDNOcnBYWnlXaWRteDRIb1dnZ280ZGg2a1ZHMDZLdnlyWEhCVEYyWmJsQkFfSC1VT3BvcnJtVmNqSkFQR2JsVFA1eHo4MTAyUnk1aEppSThXQVVjcTJ2WWJuSS1HamlXSDdYMVZwblpSd1hhSkNNZzB6aWUzS28tZnhTNk42bEM2RFB4OUNzWmg5ekE?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Knicks-Spurs, Will Josh Hart, Stephon Castle Play? Athlon Sports",
+          "published": "Wed, 31 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Magic-Spurs: Will Victor Wembanyama, Stephon Castle Play?",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUzRTRjRMNF9EOG1GbWk5Q1pLZzcyU3pHajFVMmExX1B6dHd1ZWRMZUY4UDhEa3dUMmF4WmhTQ1NqaGY3dW1mRGZEdE1BeGFqeHhBbTMtTExjcGhraVBiMm4zWkVhazgyMmpEWVRDX2hnUWU5ZUlZS0RYUTdFbDZQNmtkVHNtdEdXWVJzSzNITGFLLWF3NTEyVDhhYkNpdnI1LTVaTDZ2ZnRvaHRFaFNSNWRKYWZ1cDBsRjRVTXVIYURGUXc?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Magic-Spurs: Will Victor Wembanyama, Stephon Castle Play? Athlon Sports",
+          "published": "Sun, 01 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Spurs-Pelicans, Will Victor Wembanyama, Stephon Castle Play?",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOdXI5WGt1ZVdsNzgxbkhDSTJQQjUyb243TlVGZHUzLTF6Mkp6eUFYTHFnNmRSc0g0R2ZWcGltTXhaUkxtOXlqQkJtNkc5OWZQd2NTbXU3b3NudC0teVBjZ1pSN2lqekFGVmpzSE1jVlU2UnBOZEprX2ZDYkREUjVIMjRMTWZ5SkpoSUFPcGxmNjE2UlVpbTVpR0o1OWxiTHVtN0ViMXh6V2hCdHgyYmpBa1JmMmhzVGx1ZkZJbjlFQktJT3R0WF9B?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Spurs-Pelicans, Will Victor Wembanyama, Stephon Castle Play? Athlon Sports",
+          "published": "Mon, 08 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Spurs-Timberwolves, Will Victor Wembanyama, Stephon Castle Play?",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVWhjN0dnRDdYemw0dXdFTXVnTXV6TEdWWFJ6SzJkVWpydlF6TC1obzZBNmJEbGJ4djZiSHRMTjhpN05mQ3FBckVvZmdWclVQSXh1N0ZaR2c4dTk0encxSE90bjJrQ0FHTUZYOUZDV0owZXhoaEp6Z19wTnNzU3AtUF90QVJEbkxlNTZsSDV4T2xGVHd2eW5hc1NoTHM3M2dUbjBOX19FU1FCTnlBZTVoTG55YWgxeW9JaGlfdG9RYURXX3VIeTFGOUFjWU8?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Spurs-Timberwolves, Will Victor Wembanyama, Stephon Castle Play? Athlon Sports",
+          "published": "Sun, 30 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Reggie Miller: Trade Everyone But Victor Wembanyama and Stephon Castle to Get Stephen Curry",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZG43blRGeUJieFZnWDl0bnZlV2d2SDU0TTlKODMyWnk4dk1TaDFMRVdEYTlwVG5ma3Y5aDlrY3RFTlFqZjNwNl9lRGQ0VVBEN210Z2xuWGQxSGpvSHFXckF4eXZ4bFhjRUl5d0ZGU0NhOEg3WnoyNXRUaldKa2dXZTJZTjVBbmZsX185dWhjY3NGY0N0cGkxcFphWVZoQUF1RXNDRW04RnowdnBzT09YNjFudEFSMlZ3WVlHdjNrNG9HTWhn?oc=5",
+          "publisher": "thesportsrush.com",
+          "kind": "article",
+          "snippet": "Reggie Miller: Trade Everyone But Victor Wembanyama and Stephon Castle to Get Stephen Curry thesportsrush.com",
+          "published": "Mon, 26 Jan 2026 08:00:00 GMT"
         }
       ]
     }
