@@ -441,10 +441,13 @@ def test_matchup_copy_winners():
     rows = week1_matchups()
     winners = matchup_winners_text(rows)
     html = matchup_table(rows)
-    assert winners.splitlines()[0] == rows[0]["pick"]
-    assert "SEA" in winners
-    assert "LAR" in winners
-    assert winners.count("\n") == len(rows) - 1
+    kickoff = [
+        "SEA", "LAR", "CHI", "CIN", "DET", "BUF", "BAL", "JAX",
+        "PIT", "TEN", "LAC", "LV", "GB", "PHI", "DAL", "KC",
+    ]
+    assert winners.splitlines() == kickoff
+    assert rows[2]["pick"] == "JAX"
+    assert winners.splitlines()[2] == "CHI"
     assert 'data-matchup-copy' in html
     assert 'class="sr-only matchup-winners"' in html
     assert ">Copy</button>" in html
@@ -462,6 +465,11 @@ def test_matchup_copy_winners():
     assert matchup_winners_text([
         {"pick": "BUF"}, {"pick": "KC"},
     ]) == "BUF\nKC"
+    assert matchup_winners_text([
+        {"pick": "DAL", "day": "Sun", "time": "8:20p", "key": "DAL@NYG"},
+        {"pick": "CHI", "day": "Sun", "time": "1:00p", "key": "CHI@CAR"},
+        {"pick": "SEA", "day": "Wed", "time": "8:20p", "key": "NE@SEA"},
+    ]) == "SEA\nCHI\nDAL"
     assert ">Copy</button>" in later
     assert "BUF\nKC" in later
 
