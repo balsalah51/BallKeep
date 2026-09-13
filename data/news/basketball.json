@@ -1,7 +1,7 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-13T09:48:43Z",
-  "fresh": 59,
+  "updated": "2026-09-13T10:29:00Z",
+  "fresh": 64,
   "stories": [
     {
       "id": "trade-rumors-wait-see-anthony-davis-jimmy-butler-691d7161",
@@ -1363,12 +1363,19 @@
       "slug": "ausar-thompson-injury-pistons-defender-leaves-spurs-right-6cc3627c",
       "sport": "basketball",
       "headline": "Detroit Pistons Injury Report: Massive Cade Cunningham and Ausar Thompson Concern, Jalen Duren Listed vs Nets (Mar. 7)",
-      "blurb": "Ausar Thompson Injury Update: Forward Exits Pistons-Spurs heavy.com",
-      "summary": "Ausar Thompson Injury Update: Forward Exits Pistons-Spurs heavy.com Final Injury Report for 76ers-Pistons: Will Joel Embiid, Ausar Thompson Play? Final Injury Report for Pistons-Raptors: Will Tobias Harris, Ausar Thompson Play? Aggregated from heavy.com, Athlon Sports, Yahoo Sports, Sports Illustrated, DraftKings Network and 13 more.",
+      "blurb": "Nets Injury Report: Will Ausar Thompson, Michael Porter Jr.",
+      "summary": "Nets Injury Report: Will Ausar Thompson, Michael Porter Jr. Final Injury Report for Pistons-Raptors: Will Tobias Harris, Ausar Thompson Play? Pistons Announce Ausar Thompson's Injury Status for Magic Game Yahoo Sports Aggregated from Athlon Sports, Yahoo Sports, Sports Illustrated, Bleacher Report, DraftKings Network and 13 more.",
       "category": "injury",
       "published": "2021-06-23T07:00:00Z",
       "updated": "2026-09-11T22:32:31Z",
       "players": [
+        {
+          "key": "michael porter",
+          "name": "Michael Porter Jr.",
+          "slug": "michael-porter-jr",
+          "pos": "SF",
+          "team": "DEN"
+        },
         {
           "key": "ausar thompson",
           "name": "Ausar Thompson",
@@ -1377,11 +1384,39 @@
           "team": "DET"
         },
         {
+          "key": "tobias harris",
+          "name": "Tobias Harris",
+          "slug": "tobias-harris",
+          "pos": "PF",
+          "team": "DET"
+        },
+        {
+          "key": "joel embiid",
+          "name": "Joel Embiid",
+          "slug": "joel-embiid",
+          "pos": "C",
+          "team": "PHI"
+        },
+        {
           "key": "cade cunningham",
           "name": "Cade Cunningham",
           "slug": "cade-cunningham",
           "pos": "PG",
           "team": "DET"
+        },
+        {
+          "key": "jalen suggs",
+          "name": "Jalen Suggs",
+          "slug": "jalen-suggs",
+          "pos": "SG",
+          "team": "ORL"
+        },
+        {
+          "key": "lauri markkanen",
+          "name": "Lauri Markkanen",
+          "slug": "lauri-markkanen",
+          "pos": "PF",
+          "team": "UTA"
         },
         {
           "key": "duncan robinson",
@@ -1424,41 +1459,6 @@
           "slug": "isaiah-joe",
           "pos": "SG",
           "team": "OKC"
-        },
-        {
-          "key": "michael porter",
-          "name": "Michael Porter Jr.",
-          "slug": "michael-porter-jr",
-          "pos": "SF",
-          "team": "DEN"
-        },
-        {
-          "key": "tobias harris",
-          "name": "Tobias Harris",
-          "slug": "tobias-harris",
-          "pos": "PF",
-          "team": "DET"
-        },
-        {
-          "key": "joel embiid",
-          "name": "Joel Embiid",
-          "slug": "joel-embiid",
-          "pos": "C",
-          "team": "PHI"
-        },
-        {
-          "key": "lauri markkanen",
-          "name": "Lauri Markkanen",
-          "slug": "lauri-markkanen",
-          "pos": "PF",
-          "team": "UTA"
-        },
-        {
-          "key": "jalen suggs",
-          "name": "Jalen Suggs",
-          "slug": "jalen-suggs",
-          "pos": "SG",
-          "team": "ORL"
         },
         {
           "key": "ace bailey",
@@ -3133,6 +3133,36 @@
       ]
     },
     {
+      "id": "warriors-trade-devin-booker-blockbuster-proposal-new-ef67fcc6",
+      "slug": "warriors-trade-devin-booker-blockbuster-proposal-new-ef67fcc6",
+      "sport": "basketball",
+      "headline": "Warriors Trade for Devin Booker in Blockbuster Proposal After New Report",
+      "blurb": "Warriors Trade for Devin Booker in Blockbuster Proposal After New Report Yahoo Sports",
+      "summary": "Warriors Trade for Devin Booker in Blockbuster Proposal After New Report Yahoo Sports Board reading of Yahoo Sports.",
+      "category": "trade",
+      "published": "2026-09-13T05:44:00Z",
+      "updated": "2026-09-13T05:44:00Z",
+      "players": [
+        {
+          "key": "devin booker",
+          "name": "Devin Booker",
+          "slug": "devin-booker",
+          "pos": "SG",
+          "team": "PHX"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Warriors Trade for Devin Booker in Blockbuster Proposal After New Report",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZTFjS04xbGpkRXA5OVc1X1QxLXpMOFlKUl8ydUpUenVwVDlYR1VwckNBMEE4bFFPRXIxVHg1X0c1NFNXUW41NHg5MUtsdndOYi01SXA1cmxjTFpSeUpQQk5uVkNqclcxTmlfZXZtdk1RbDJYRjZuNFZDUXB2eTM0ZExId3d2SGtyamE0WTVpeUg2dw?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Warriors Trade for Devin Booker in Blockbuster Proposal After New Report Yahoo Sports",
+          "published": "Sun, 13 Sep 2026 05:44:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "derrick-jones-jr-requested-trade-clippers-c806b7a5",
       "slug": "derrick-jones-jr-requested-trade-clippers-c806b7a5",
       "sport": "basketball",
@@ -3434,43 +3464,6 @@
           "kind": "article",
           "snippet": "Miles McBride is entering his contract year, and now we know where things stand between the Knicks and their guard.",
           "published": "Sat, 12 Sep 2026 10:30:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "bobby-webster-rj-barrett-must-domantas-sabonis-trade-138887a0",
-      "slug": "bobby-webster-rj-barrett-must-domantas-sabonis-trade-138887a0",
-      "sport": "basketball",
-      "headline": "Bobby Webster and RJ Barrett Must Have A Domantas Sabonis Trade Conversation",
-      "blurb": "Bobby Webster and RJ Barrett Must Have A Domantas Sabonis Trade Conversation Yahoo Sports",
-      "summary": "Bobby Webster and RJ Barrett Must Have A Domantas Sabonis Trade Conversation Yahoo Sports Board reading of Yahoo Sports.",
-      "category": "trade",
-      "published": "2026-09-11T20:43:30Z",
-      "updated": "2026-09-11T20:43:30Z",
-      "players": [
-        {
-          "key": "domantas sabonis",
-          "name": "Domantas Sabonis",
-          "slug": "domantas-sabonis",
-          "pos": "C",
-          "team": "SAC"
-        },
-        {
-          "key": "rj barrett",
-          "name": "RJ Barrett",
-          "slug": "rj-barrett",
-          "pos": "SG",
-          "team": "TOR"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Bobby Webster and RJ Barrett Must Have A Domantas Sabonis Trade Conversation",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNGNwS05NVUlOdl9JN1RWV0FuWmY2NXRkaXFXTHMxaHpFWEEzMjR3ZE1CdWhKMEh5MlRHZkI1NWZxS3AxSEFacS1vekxocUhNMTlKYzB3bjJKaE42OTRwdk83b2kzTWtYWEFOZnAtZmZjOGNVZzAxTFhJZmRNRTZuWWN2Wnk?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Bobby Webster and RJ Barrett Must Have A Domantas Sabonis Trade Conversation Yahoo Sports",
-          "published": "Fri, 11 Sep 2026 20:43:30 GMT"
         }
       ]
     },
