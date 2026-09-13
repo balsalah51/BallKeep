@@ -1,7 +1,7 @@
 """2026 redraft DST and kicker Super Aggregates.
 
 Published boards only. Unranked names are skipped, never treated as 999.
-50% long-core mean, 50% every other desk that ranked the name.
+50% long-core mean, 50% every other board that ranked the name.
 """
 from __future__ import annotations
 

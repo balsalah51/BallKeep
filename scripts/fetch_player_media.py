@@ -371,9 +371,73 @@ def fill_idp_photos() -> None:
     print("idp photos", n_img, "miss", n_miss, "media", len(media))
 
 
+def fill_kicker_photos() -> None:
+    """Headshots for season-long and Week 1 kickers."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from special_teams import KICKERS
+    from week1_boards import WEEK1_KICKERS
+
+    ensure_sleeper()
+    sleep_idx = sleeper_index() if SLEEPER.exists() else {}
+    media = json.loads(OUT.read_text()) if OUT.exists() else {}
+    IMG.mkdir(parents=True, exist_ok=True)
+    seen = {}
+    for name, team in list(KICKERS) + list(WEEK1_KICKERS):
+        key = norm_name(name)
+        if key and key not in seen:
+            seen[key] = (name, team)
+    n_img = n_miss = 0
+    for key, (name, team) in seen.items():
+        slug = slugify(name)
+        rec = media.get(key) or {}
+        if rec.get("image") and (ROOT / rec["image"]).exists() and "logo" not in rec["image"]:
+            media[key] = rec
+            n_img += 1
+            continue
+        sp = sleep_idx.get(key) or sleep_idx.get(norm_name(name))
+        if sp:
+            rec["sleeper_id"] = sp["sleeper_id"]
+            rec["espn_id"] = sp.get("espn_id") or rec.get("espn_id") or ""
+            if sp.get("age") not in (None, ""):
+                rec["age"] = sp["age"]
+        rec.update({"key": key, "slug": slug, "name": name, "pos": "K", "team": team})
+        urls = []
+        if rec.get("espn_id"):
+            urls.append(f"https://a.espncdn.com/i/headshots/nfl/players/full/{rec['espn_id']}.png")
+        if rec.get("sleeper_id"):
+            urls.append(f"https://sleepercdn.com/content/nfl/players/{rec['sleeper_id']}.jpg")
+        espn = espn_search_headshot(name)
+        if espn:
+            urls.append(espn)
+        wiki = wiki_thumb(name)
+        if wiki:
+            urls.append(wiki)
+        saved = False
+        for u in urls:
+            ext = ".png" if ".png" in u.split("?")[0].lower() else ".jpg"
+            target = IMG / f"{slug}{ext}"
+            if target.exists() or download_image(u, target):
+                rec["image"] = f"img/players/{slug}{ext}"
+                saved = True
+                n_img += 1
+                print("img", name)
+                break
+        if not saved:
+            rec["image"] = rec.get("image") or ""
+            n_miss += 1
+            print("NOIMG", name)
+        media[key] = rec
+        time.sleep(0.04)
+    OUT.write_text(json.dumps(media, indent=2))
+    print("kicker photos", n_img, "miss", n_miss, "media", len(media))
+
+
 def main():
     if "--idp" in sys.argv:
         fill_idp_photos()
+        return
+    if "--kickers" in sys.argv:
+        fill_kicker_photos()
         return
     photos_only = "--photos-only" in sys.argv
     keep_only = "--keep-only" in sys.argv

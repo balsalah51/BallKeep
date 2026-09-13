@@ -2,7 +2,7 @@
 
 Published lists only. Unranked on a board is a skip, never 999.
 Skill boards use Super Aggregate: 50% FantasyPros ECR, 50% every other
-desk that ranked the name.
+board that ranked the name.
 """
 from __future__ import annotations
 

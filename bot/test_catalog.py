@@ -433,6 +433,15 @@ def main():
     assert "<h1>Top Kickers</h1>" in k_html
     assert "Brandon Aubrey" in k_html
     assert "is 1.01" not in k_html
+    assert 'class="face" src="img/players/' in k_html
+    assert 'alt="Brandon Aubrey headshot"' in k_html
+    assert 'class="face" src="img/logo.jpg"' not in k_html
+    assert "on a desk" not in k_html
+    assert "every other desk" not in html_of("the-fence.html")
+    assert "every other desk" not in html_of("weekly-qb.html")
+    assert "every other desk" not in html_of("waiver.html")
+    assert "on a desk" not in html_of("week1-matchups.html")
+    assert ">Desks<" not in html_of("week1-matchups.html")
     w1_dst_html = html_of("week1-dst.html")
     assert "<h1>Week 1 DST</h1>" in w1_dst_html
     assert "Jacksonville Jaguars" in w1_dst_html

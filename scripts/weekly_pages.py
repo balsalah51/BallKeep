@@ -115,7 +115,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
         body = f"""
     <p class="kicker">{label} · {pos} · {len(src)} boards</p>
     <h1>Week {week} {pos}</h1>
-    <p class="note">This week's stream, not the season-long Board. Super Aggregate of {len(src)} published Week {week} boards. 50% FantasyPros ECR, 50% every other desk that ranked the name. {chairs.get(pos, lead + ' sits first.')} Proj is RotoWire PPR points.</p>
+    <p class="note">This week's stream, not the season-long Board. Super Aggregate of {len(src)} published Week {week} boards. 50% FantasyPros ECR, 50% every other board that ranked the name. {chairs.get(pos, lead + ' sits first.')} Proj is RotoWire PPR points.</p>
     {rank_search_bar()}
     <div class="panel">{weekly_table(rows)}</div>
     {sources_panel(src, heading="Boards in This Super Aggregate")}
@@ -196,14 +196,14 @@ def write_weekly_pages(b, nfl, media, board_rows):
     w_chips, w_js = pos_filter("waiver-pos")
     w_faq = [
         ("What is this list?", "A pre-Week 1 Super Aggregate of published waiver articles. Season has not started. A name needs two lists."),
-        ("Is this FAAB advice?", "No dollar bids. Super Aggregate: 50% FantasyPros WW ECR, 50% every other desk that ranked the name."),
+        ("Is this FAAB advice?", "No dollar bids. Super Aggregate: 50% FantasyPros WW ECR, 50% every other board that ranked the name."),
         ("Why is a drafted star missing?", "If a list did not put him on their waiver board, that list does not vote for him."),
     ]
     w_lead = waivers[0]["name"] if waivers else ""
     w_body = f"""
     <p class="kicker">{label} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
     <h1>Week 1 Waivers</h1>
-    <p class="note">Preseason waiver Super Aggregate, before Week 1 kickoff. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. 50% FantasyPros WW ECR, 50% every other desk that ranked the name. A name needs two lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week 1 boards.</p>
+    <p class="note">Preseason waiver Super Aggregate, before Week 1 kickoff. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. 50% FantasyPros WW ECR, 50% every other board that ranked the name. A name needs two lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week 1 boards.</p>
     {rank_search_bar(w_chips)}
     <div class="panel">{weekly_table(waivers)}</div>
     {sources_panel(WEEK1_WAIVER_SOURCES, heading="Lists in This Super Aggregate")}
