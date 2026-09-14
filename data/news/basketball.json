@@ -1,25 +1,39 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-14T12:34:38Z",
-  "fresh": 88,
+  "updated": "2026-09-14T13:30:25Z",
+  "fresh": 99,
   "stories": [
     {
       "id": "raptors-reportedly-sign-ex-lakers-champion-while-waiting-7195aab2",
       "slug": "raptors-reportedly-sign-ex-lakers-champion-while-waiting-7195aab2",
       "sport": "basketball",
       "headline": "NBA ready to approve Kawhi Leonard to Raptors trade, league is waiting on Clippers and Raptors to submit trade",
-      "blurb": "Raptors Get Bad News About Kawhi Leonard Trade With The Clippers Yahoo Sports",
-      "summary": "Raptors Get Bad News About Kawhi Leonard Trade With The Clippers Yahoo Sports Final Injury Report for Clippers-Wizards, Will Kawhi Leonard, Bilal Coulibaly Play? Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade Yahoo Sports Aggregated from Yahoo Sports, sportingnews.com, heavy.com, Sports Illustrated, nbcsports.com and 22 more.",
+      "blurb": "Clippers Must Let Bennedict Mathurin Walk After the Kawhi Leonard Trade Sports Illustrated",
+      "summary": "Clippers Must Let Bennedict Mathurin Walk After the Kawhi Leonard Trade Sports Illustrated Clippers Can Land Their Starting Center With This Mock Bennedict Mathurin Trade Sports Illustrated NBA Trade Rumor: Bennedict Mathurin 'Likes' Mavs Move; Daniel Gafford To Clippers? Aggregated from Sports Illustrated, Yahoo Sports, sportingnews.com, heavy.com, nbcsports.com and 22 more.",
       "category": "injury",
       "published": "2023-06-22T07:00:00Z",
       "updated": "2026-09-14T10:35:32Z",
       "players": [
+        {
+          "key": "bennedict mathurin",
+          "name": "Bennedict Mathurin",
+          "slug": "bennedict-mathurin",
+          "pos": "SG",
+          "team": "IND"
+        },
         {
           "key": "kawhi leonard",
           "name": "Kawhi Leonard",
           "slug": "kawhi-leonard",
           "pos": "SF",
           "team": "LAC"
+        },
+        {
+          "key": "daniel gafford",
+          "name": "Daniel Gafford",
+          "slug": "daniel-gafford",
+          "pos": "C",
+          "team": "DAL"
         },
         {
           "key": "bilal coulibaly",
@@ -78,25 +92,11 @@
           "team": "TOR"
         },
         {
-          "key": "bennedict mathurin",
-          "name": "Bennedict Mathurin",
-          "slug": "bennedict-mathurin",
-          "pos": "SG",
-          "team": "IND"
-        },
-        {
           "key": "jordan miller",
           "name": "Jordan Miller",
           "slug": "jordan-miller",
           "pos": "SF",
           "team": "LAC"
-        },
-        {
-          "key": "daniel gafford",
-          "name": "Daniel Gafford",
-          "slug": "daniel-gafford",
-          "pos": "C",
-          "team": "DAL"
         }
       ],
       "sources": [
@@ -1028,8 +1028,8 @@
       "slug": "trump-calls-luka-don-i-trade-one-worst-06bae406",
       "sport": "basketball",
       "headline": "Worst deal in NBA history? With Clippers' penalties, the Kawhi Leonard signing now rivals Luka Dončić trade",
-      "blurb": "Kawhi Leonard’s Raptors Trade Takes New Turn With Latest Revelation heavy.com",
-      "summary": "Kawhi Leonard’s Raptors Trade Takes New Turn With Latest Revelation heavy.com Trump calls Luka Dončić trade one of the worst in sports history, suggests Mavericks ‘redo’ deal nytimes.com Post-Luka Dončić trade, Max Christie making mark for Mavericks nytimes.com Aggregated from heavy.com, nytimes.com, CBS NBA, BasketNews.com, Yahoo Sports and 2 more.",
+      "blurb": "Kawhi Leonard Trade Is Finally Cleared, But There’s Still A Catch Yahoo Sports",
+      "summary": "Kawhi Leonard Trade Is Finally Cleared, But There’s Still A Catch Yahoo Sports Trump calls Luka Dončić trade one of the worst in sports history, suggests Mavericks ‘redo’ deal nytimes.com Post-Luka Dončić trade, Max Christie making mark for Mavericks nytimes.com Aggregated from Yahoo Sports, nytimes.com, CBS NBA, BasketNews.com, Bleacher Report and 2 more.",
       "category": "trade",
       "published": "2025-04-18T07:00:00Z",
       "updated": "2026-09-14T09:14:38Z",
@@ -2674,6 +2674,51 @@
       ]
     },
     {
+      "id": "why-jimmy-butler-realistic-trade-candidate-warriors-8cd0797f",
+      "slug": "why-jimmy-butler-realistic-trade-candidate-warriors-8cd0797f",
+      "sport": "basketball",
+      "headline": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season",
+      "blurb": "Why a Domantas Sabonis Trade Is Still Realistic for the Kings Sports Illustrated",
+      "summary": "Why a Domantas Sabonis Trade Is Still Realistic for the Kings Sports Illustrated Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season roundtable.io Aggregated from Sports Illustrated, roundtable.io.",
+      "category": "trade",
+      "published": "2026-09-11T18:00:00Z",
+      "updated": "2026-09-13T22:50:34Z",
+      "players": [
+        {
+          "key": "domantas sabonis",
+          "name": "Domantas Sabonis",
+          "slug": "domantas-sabonis",
+          "pos": "C",
+          "team": "SAC"
+        },
+        {
+          "key": "jimmy butler",
+          "name": "Jimmy Butler",
+          "slug": "jimmy-butler",
+          "pos": "SF",
+          "team": "GSW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQk9GYnp3cjlkajRVdHRWX21XTE1pRmdBRnFEMEZscjBKSVZGWWVyZXhDcHhtVnpSSUdjSlMxWkRVeTJWNFJNS0dfU3RyeXdGcC02UkRaZHJiaW5fc21iSG1Dd0Z3U2w3alUtaXRoZ2t4QTJUdmVpTHRENGxIU0tyWURlbWJ6MFRQenVrbTFQblhJd0VreXE1TWdqdWdEd3dab3VlMHlCMkt1Q0hBdlRqMVhJWV96dDIwQmtj?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season roundtable.io",
+          "published": "Sun, 13 Sep 2026 22:50:34 GMT"
+        },
+        {
+          "title": "Why a Domantas Sabonis Trade Is Still Realistic for the Kings",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX3NCRTdyMy1WUnBQMmRZY0dCSl9xZFZ6T3VLRmwxeUpNSVF6UlJDUm5kY0RVUmVhWXJQTFBLZl9PTkwyVE5YcEpzY3FwQUJNbk05eDhJZkplWnV5YkZ4VW1GYVQzZWVHYlYxTWRGZjRRUGZhb2J0aVhTdUJoN25sYkxfOXJJbXV2MFF1aVA4MmN5RWd5WFE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Why a Domantas Sabonis Trade Is Still Realistic for the Kings Sports Illustrated",
+          "published": "Fri, 11 Sep 2026 18:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "ben-simmons-signed-one-year-non-guaranteed-deal-263073d2",
       "slug": "ben-simmons-signed-one-year-non-guaranteed-deal-263073d2",
       "sport": "basketball",
@@ -3263,36 +3308,6 @@
           "kind": "x",
           "snippet": "The Heat’s projected 15-man roster for the 2026-27 season: PG: Davion Mitchell SG: Klay Thompson SF: Andrew Wiggins PF: Giannis Antetokounmpo C: Bam Adebayo Bench: • Dru Smith • Tim Hardaway Jr. • Pelle Larsson • Nikola Jović • Bobby Portis Jr. • Ry x.com",
           "published": "Sat, 12 Sep 2026 15:35:02 GMT"
-        }
-      ]
-    },
-    {
-      "id": "why-jimmy-butler-realistic-trade-candidate-warriors-8cd0797f",
-      "slug": "why-jimmy-butler-realistic-trade-candidate-warriors-8cd0797f",
-      "sport": "basketball",
-      "headline": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season",
-      "blurb": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season roundtable.io",
-      "summary": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season roundtable.io Board reading of roundtable.io.",
-      "category": "trade",
-      "published": "2026-09-13T22:50:34Z",
-      "updated": "2026-09-13T22:50:34Z",
-      "players": [
-        {
-          "key": "jimmy butler",
-          "name": "Jimmy Butler",
-          "slug": "jimmy-butler",
-          "pos": "SF",
-          "team": "GSW"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQk9GYnp3cjlkajRVdHRWX21XTE1pRmdBRnFEMEZscjBKSVZGWWVyZXhDcHhtVnpSSUdjSlMxWkRVeTJWNFJNS0dfU3RyeXdGcC02UkRaZHJiaW5fc21iSG1Dd0Z3U2w3alUtaXRoZ2t4QTJUdmVpTHRENGxIU0tyWURlbWJ6MFRQenVrbTFQblhJd0VreXE1TWdqdWdEd3dab3VlMHlCMkt1Q0hBdlRqMVhJWV96dDIwQmtj?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season roundtable.io",
-          "published": "Sun, 13 Sep 2026 22:50:34 GMT"
         }
       ]
     },
@@ -12884,8 +12899,8 @@
       "slug": "what-bennedict-mathurin-trade-pelicans-would-mean-clippers-8cc33cef",
       "sport": "basketball",
       "headline": "Pacers' Bennedict Mathurin reveals his 2 options for trade deadline amid Bulls, Pelicans rumors",
-      "blurb": "Follow The NBA Trade Deadline At Hoops Rumors MLB Trade Rumors",
-      "summary": "Bennedict Mathurin, Max Strus, Tobias Harris, Myles Turner, Jarrett Allen, Yves Missi, James Harden, Peyton Watson, Luka Doncic, Daniel Gafford, Ivica Zubac, Kawhi Leonard and Darius Garland: Follow The NBA Trade Deadline At Hoops Rumors MLB Trade Rumors Bennedict Mathurin to Bulls? What I’m hearing about Chicago’s interest The New York Times Aggregated from MLB Trade Rumors, The New York Times, Yahoo Sports, bolavip.com, Sports Illustrated and 7 more.",
+      "blurb": "Clippers' Trade Deadline Gamble Is Paying Off Thanks to Bennedict Mathurin Sports Illustrated",
+      "summary": "Clippers' Trade Deadline Gamble Is Paying Off Thanks to Bennedict Mathurin Sports Illustrated Bennedict Mathurin to Bulls? What I’m hearing about Chicago’s interest The New York Times Aggregated from Sports Illustrated, The New York Times, Yahoo Sports, bolavip.com, Bleacher Nation and 7 more.",
       "category": "injury",
       "published": "2022-02-08T08:00:00Z",
       "updated": "2026-08-25T22:11:59Z",
@@ -12898,25 +12913,11 @@
           "team": "IND"
         },
         {
-          "key": "max strus",
-          "name": "Max Strus",
-          "slug": "max-strus",
-          "pos": "SF",
-          "team": "CLE"
-        },
-        {
           "key": "tobias harris",
           "name": "Tobias Harris",
           "slug": "tobias-harris",
           "pos": "PF",
           "team": "DET"
-        },
-        {
-          "key": "myles turner",
-          "name": "Myles Turner",
-          "slug": "myles-turner",
-          "pos": "C",
-          "team": "MIL"
         },
         {
           "key": "jarrett allen",
@@ -12931,6 +12932,20 @@
           "slug": "yves-missi",
           "pos": "C",
           "team": "NOP"
+        },
+        {
+          "key": "max strus",
+          "name": "Max Strus",
+          "slug": "max-strus",
+          "pos": "SF",
+          "team": "CLE"
+        },
+        {
+          "key": "myles turner",
+          "name": "Myles Turner",
+          "slug": "myles-turner",
+          "pos": "C",
+          "team": "MIL"
         },
         {
           "key": "james harden",
@@ -17192,26 +17207,33 @@
       "id": "chicago-bulls-injury-josh-giddey-downgraded-bucks-get-166f85d0",
       "slug": "chicago-bulls-injury-josh-giddey-downgraded-bucks-get-166f85d0",
       "sport": "basketball",
-      "headline": "Chicago Bulls Injury Report: Josh Giddey Downgraded, Bucks Get Huge Giannis News (UPDATE)",
-      "blurb": "OKC Thunder's Chet Holmgren 'Hurt' by Josh Giddey Trade to Chicago Bulls Sports Illustrated",
-      "summary": "OKC Thunder's Chet Holmgren 'Hurt' by Josh Giddey Trade to Chicago Bulls Sports Illustrated Chicago Bulls Injury Report: Step in the Right Direction for Josh Giddey, Tre Jones Sports Illustrated Chicago Bulls Injury Report: Closer to a Josh Giddey Return, Patrick Williams' Status Sports Illustrated Aggregated from Sports Illustrated, The New York Times, heavy.com.",
+      "headline": "Chicago Bulls Injury Report: Latest on Josh Giddey and Zach LaVine's status for game vs. Hornets (Dec. 30)",
+      "blurb": "Chicago Bulls Injury Report: Latest on Josh Giddey and Zach LaVine's status for game vs.",
+      "summary": "Chicago Bulls Injury Report: Latest on Josh Giddey and Zach LaVine's status for game vs. Chicago Bulls Injury Report: Step in the Right Direction for Josh Giddey, Tre Jones Sports Illustrated Chicago Bulls Injury Report: Closer to a Josh Giddey Return, Patrick Williams' Status Sports Illustrated Aggregated from Sportskeeda, Sports Illustrated, The New York Times, heavy.com.",
       "category": "injury",
       "published": "2024-06-21T07:00:00Z",
       "updated": "2026-04-03T07:00:00Z",
       "players": [
-        {
-          "key": "chet holmgren",
-          "name": "Chet Holmgren",
-          "slug": "chet-holmgren",
-          "pos": "C",
-          "team": "OKC"
-        },
         {
           "key": "josh giddey",
           "name": "Josh Giddey",
           "slug": "josh-giddey",
           "pos": "SG",
           "team": "CHI"
+        },
+        {
+          "key": "zach lavine",
+          "name": "Zach LaVine",
+          "slug": "zach-lavine",
+          "pos": "SG",
+          "team": "SAC"
+        },
+        {
+          "key": "chet holmgren",
+          "name": "Chet Holmgren",
+          "slug": "chet-holmgren",
+          "pos": "C",
+          "team": "OKC"
         },
         {
           "key": "coby white",
@@ -17361,6 +17383,14 @@
           "kind": "article",
           "snippet": "OKC Thunder's Chet Holmgren 'Hurt' by Josh Giddey Trade to Chicago Bulls Sports Illustrated",
           "published": "Mon, 19 Aug 2024 07:00:00 GMT"
+        },
+        {
+          "title": "Chicago Bulls Injury Report: Latest on Josh Giddey and Zach LaVine's status for game vs. Hornets (Dec. 30)",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOeDhDZjJHSEk2SmNSYmhFdHhSaHBjVlRUMnJvdGpRQW5wR1FfSFdteDItN1l3UkRDNjRvQWxjSGVmYmZ5MTNyWGpodlRVYzZwdU5Yb29TQV83RXJGM2ZfZXVYNkFDcUxEMU51NUVmLU95T3hKM0V2dUdfdWVGSkloZ2RoYmRJRDJabHRrWlBmS0FmbFFNb1N6djFWX3ZBOXl1OXV6cUpOUjVKdWZ4U045VXZMX0pRZDBoaEMyS1pYSnk4d2JZLVFEaF9XTko5OEk?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "Chicago Bulls Injury Report: Latest on Josh Giddey and Zach LaVine's status for game vs. Hornets (Dec. 30) Sportskeeda",
+          "published": "Tue, 30 Dec 2025 08:00:00 GMT"
         }
       ]
     },
@@ -17643,54 +17673,46 @@
       ]
     },
     {
-      "id": "harry-styles-shouts-jalen-brunson-during-madison-square-db883e92",
-      "slug": "harry-styles-shouts-jalen-brunson-during-madison-square-db883e92",
+      "id": "trade-rumors-lakers-lineup-heat-playmaker-7-holes-efe30139",
+      "slug": "trade-rumors-lakers-lineup-heat-playmaker-7-holes-efe30139",
       "sport": "basketball",
-      "headline": "Harry Styles shouts out Jalen Brunson during Madison Square Garden show",
-      "blurb": "Styles knows who the king of New York is right now",
-      "summary": "Jalen Brunson: Styles knows who the king of New York is right now Board reading of NBC Sports.",
-      "category": "wire",
-      "published": "2026-09-14T12:00:00Z",
-      "updated": "2026-09-14T12:00:00Z",
-      "players": [
-        {
-          "key": "jalen brunson",
-          "name": "Jalen Brunson",
-          "slug": "jalen-brunson",
-          "pos": "PG",
-          "team": "NYK"
-        }
-      ],
+      "headline": "NBA Trade Rumors: Lakers Lineup, Heat Playmaker & 7 Holes to Be Filled by Deals",
+      "blurb": "NBA Trade Rumors: Lakers Lineup, Heat Playmaker & 7 Holes to Be Filled by Deals heavy.com",
+      "summary": "NBA Trade Rumors: Lakers Lineup, Heat Playmaker & 7 Holes to Be Filled by Deals heavy.com Board reading of heavy.com.",
+      "category": "trade",
+      "published": "2026-09-14T13:01:10Z",
+      "updated": "2026-09-14T13:01:10Z",
+      "players": [],
       "sources": [
         {
-          "title": "Harry Styles shouts out Jalen Brunson during Madison Square Garden show",
-          "url": "https://sports.yahoo.com/articles/harry-styles-shouts-jalen-brunson-120000499.html",
-          "publisher": "NBC Sports",
+          "title": "NBA Trade Rumors: Lakers Lineup, Heat Playmaker & 7 Holes to Be Filled by Deals",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeEk4UWtzeXJvX29wZHpUdTJvWU1jTUtkaG9Uc2ZyVTBQS3JZN3J1NENkOTlTbTFETVA0TEY4SkJab09faHdLcnlWcE5vY0dGX0xSVTJLTEd6YmY5WUNjZms5OUZqSDBnbkRNZXNXUUJTd2xUZUdSbmpiRVd5a2tpc0NIRlZxdw?oc=5",
+          "publisher": "heavy.com",
           "kind": "article",
-          "snippet": "Styles knows who the king of New York is right now",
-          "published": "Mon, 14 Sep 2026 12:00:00 +0000"
+          "snippet": "NBA Trade Rumors: Lakers Lineup, Heat Playmaker & 7 Holes to Be Filled by Deals heavy.com",
+          "published": "Mon, 14 Sep 2026 13:01:10 GMT"
         }
       ]
     },
     {
-      "id": "trade-market-suddenly-full-fits-pistons-f14a0610",
-      "slug": "trade-market-suddenly-full-fits-pistons-f14a0610",
+      "id": "mock-trade-brings-young-all-star-san-antonio-0f7fa699",
+      "slug": "mock-trade-brings-young-all-star-san-antonio-0f7fa699",
       "sport": "basketball",
-      "headline": "The NBA trade market is suddenly full of fits for the Pistons",
-      "blurb": "The NBA trade market is suddenly full of fits for the Pistons PistonPowered",
-      "summary": "The NBA trade market is suddenly full of fits for the Pistons PistonPowered Board reading of PistonPowered.",
+      "headline": "NBA Mock Trade Brings Young All-Star to San Antonio Spurs",
+      "blurb": "NBA Mock Trade Brings Young All-Star to San Antonio Spurs Yahoo Sports",
+      "summary": "NBA Mock Trade Brings Young All-Star to San Antonio Spurs Yahoo Sports Board reading of Yahoo Sports.",
       "category": "trade",
-      "published": "2026-09-14T11:48:21Z",
-      "updated": "2026-09-14T11:48:21Z",
+      "published": "2026-09-14T12:10:14Z",
+      "updated": "2026-09-14T12:10:14Z",
       "players": [],
       "sources": [
         {
-          "title": "The NBA trade market is suddenly full of fits for the Pistons",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTzF6SlBYT3daSk1SeUk1d2NvcTV6Q3J6U3VYTUxRWHFwekhBX0I2T2hsM3doY3pZTnF3WmFqVDl5aDZrMzAwcENaQUNuSHF2NTRqdkp5czQyTWRJMl9QczJ6Z2FfbHR4Z2tscF81aFM0SDV0Tmt0bGx6MUdzVWNPTlRoRQ?oc=5",
-          "publisher": "PistonPowered",
+          "title": "NBA Mock Trade Brings Young All-Star to San Antonio Spurs",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNX3VPRHpkTjhiUThXTmt1LXY0dEh3dEJnb19wSG91WDFtX0w5dVl6SFM2S2h4X0FrQnZBQy03dlFtRHFSMlBIekdxeTIxSUUycmlEUGhLVl9JaU1ucURLWUxwZE5LVkFFdWs3b1YwNG9NX0FKQkpwdmZmOTRuY3FRaUJn?oc=5",
+          "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "The NBA trade market is suddenly full of fits for the Pistons PistonPowered",
-          "published": "Mon, 14 Sep 2026 11:48:21 GMT"
+          "snippet": "NBA Mock Trade Brings Young All-Star to San Antonio Spurs Yahoo Sports",
+          "published": "Mon, 14 Sep 2026 12:10:14 GMT"
         }
       ]
     }
