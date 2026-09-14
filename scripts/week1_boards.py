@@ -329,24 +329,25 @@ def week1_kicker_board():
     return _mean_rows(WEEK1_KICKERS, week1_k_maps(), "K", long_core=W1_K_LONG)
 
 
-# Week 1 games: away, home. Neutral Melbourne is SF vs LAR.
+# Week 1 games: away, home, day, TV, kickoff ET. Neutral Melbourne is SF vs LAR.
+# Order is the official slate: Wednesday, Thursday, Sunday windows, Monday.
 WEEK1_GAMES = [
-    ("NE", "SEA", "Wed 9/9", "NBC"),
-    ("SF", "LAR", "Thu 9/10", "Netflix"),
-    ("CHI", "CAR", "Sun 9/13", "FOX"),
-    ("TB", "CIN", "Sun 9/13", "FOX"),
-    ("NO", "DET", "Sun 9/13", "FOX"),
-    ("BUF", "HOU", "Sun 9/13", "CBS"),
-    ("BAL", "IND", "Sun 9/13", "CBS"),
-    ("CLE", "JAX", "Sun 9/13", "CBS"),
-    ("ATL", "PIT", "Sun 9/13", "CBS"),
-    ("NYJ", "TEN", "Sun 9/13", "CBS"),
-    ("ARI", "LAC", "Sun 9/13", "CBS"),
-    ("MIA", "LV", "Sun 9/13", "CBS"),
-    ("GB", "MIN", "Sun 9/13", "FOX"),
-    ("WAS", "PHI", "Sun 9/13", "FOX"),
-    ("DAL", "NYG", "Sun 9/13", "NBC"),
-    ("DEN", "KC", "Mon 9/14", "ABC/ESPN"),
+    ("NE", "SEA", "Wed 9/9", "NBC", "8:20p"),
+    ("SF", "LAR", "Thu 9/10", "Netflix", "8:35p"),
+    ("CHI", "CAR", "Sun 9/13", "FOX", "1:00p"),
+    ("TB", "CIN", "Sun 9/13", "FOX", "1:00p"),
+    ("NO", "DET", "Sun 9/13", "FOX", "1:00p"),
+    ("BUF", "HOU", "Sun 9/13", "CBS", "1:00p"),
+    ("BAL", "IND", "Sun 9/13", "CBS", "1:00p"),
+    ("CLE", "JAX", "Sun 9/13", "CBS", "1:00p"),
+    ("ATL", "PIT", "Sun 9/13", "CBS", "1:00p"),
+    ("NYJ", "TEN", "Sun 9/13", "CBS", "1:00p"),
+    ("ARI", "LAC", "Sun 9/13", "CBS", "4:25p"),
+    ("MIA", "LV", "Sun 9/13", "CBS", "4:25p"),
+    ("GB", "MIN", "Sun 9/13", "FOX", "4:25p"),
+    ("WAS", "PHI", "Sun 9/13", "FOX", "4:25p"),
+    ("DAL", "NYG", "Sun 9/13", "NBC", "8:20p"),
+    ("DEN", "KC", "Mon 9/14", "ABC/ESPN", "8:15p"),
 ]
 
 # Current consensus spreads from CBS SportsLine, early Sep 2026.
@@ -417,7 +418,7 @@ AN_MGM = dict(AN_CONSENSUS, **{"GB@MIN": "GB"})
 def _from_power(order: list[str]) -> dict:
     rank = {abbr: i for i, abbr in enumerate(order, 1)}
     out = {}
-    for away, home, _day, _tv in WEEK1_GAMES:
+    for away, home, _day, _tv, _kick in WEEK1_GAMES:
         key = f"{away}@{home}"
         ra, rh = rank.get(away), rank.get(home)
         if ra is None or rh is None:
@@ -601,7 +602,7 @@ assert len(MATCH_SOURCES) == 26
 def week1_matchups():
     maps = match_maps()
     rows = []
-    for away, home, day, tv in WEEK1_GAMES:
+    for slate, (away, home, day, tv, kick) in enumerate(WEEK1_GAMES):
         key = f"{away}@{home}"
         picks = {}
         for label, mp in maps.items():
@@ -622,6 +623,8 @@ def week1_matchups():
             "home": home,
             "day": day,
             "tv": tv,
+            "time": kick,
+            "slate": slate,
             "spread": SPREADS.get(key, ""),
             "pick": winner,
             "n": n,

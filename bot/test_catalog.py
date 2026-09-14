@@ -463,7 +463,8 @@ def main():
     assert ">Copy</button>" in w1_m_html
     assert "navigator.clipboard" in w1_m_html
     assert "localStorage" not in w1_m_html
-    assert "SEA\nLAR" in w1_m_html or "SEA\r\nLAR" in w1_m_html
+    assert "SEA\nLAR\nCHI" in w1_m_html or "SEA\r\nLAR\r\nCHI" in w1_m_html
+    assert "SEA\nLAR\nJAX" not in w1_m_html
     league_html = html_of("league.html")
     assert "<h1>My Team</h1>" in league_html
     assert "sleeper-id" in league_html

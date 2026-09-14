@@ -1694,9 +1694,31 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
     )
 
 
+def _kick_minutes(t):
+    m = re.match(r"(\d{1,2}):(\d{2})\s*([ap])", (t or "").strip().lower())
+    if not m:
+        return 99 * 60
+    hour, minute, ap = int(m.group(1)), int(m.group(2)), m.group(3)
+    if ap == "p" and hour != 12:
+        hour += 12
+    if ap == "a" and hour == 12:
+        hour = 0
+    return hour * 60 + minute
+
+
 def matchup_winners_text(rows):
-    """Plain list of weekly picks, one winner per line."""
-    return "\n".join(r.get("pick") or "" for r in rows if r.get("pick"))
+    """Weekly picks in kickoff order, one winner per line. Not mash rank."""
+    day_ord = {"Wed": 0, "Thu": 1, "Fri": 2, "Sat": 3, "Sun": 4, "Mon": 5}
+
+    def sort_key(r):
+        if r.get("slate") is not None:
+            return (int(r["slate"]),)
+        parts = (r.get("day") or "").split()
+        day = parts[0] if parts else ""
+        return (day_ord.get(day, 9), _kick_minutes(r.get("time")), r.get("key") or "")
+
+    ordered = sorted((r for r in rows if r.get("pick")), key=sort_key)
+    return "\n".join(r["pick"] for r in ordered)
 
 
 def matchup_table(rows):
