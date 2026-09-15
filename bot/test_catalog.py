@@ -716,8 +716,6 @@ def main():
         "kickers.html",
         "week2-dst.html",
         "week2-kickers.html",
-        "the-recap.html",
-        "the-market.html",
         "archive/week1/dst.html",
         "weekly.html",
         "weekly-qb.html",
