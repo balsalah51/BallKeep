@@ -143,7 +143,7 @@ def test_football_nav_keeps_every_link():
         "Home", "The Keep", "The Board",
         "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
-        "Weekly", "Opening", "Week 1 DST", "Week 1 K", "Week 1 Matchups", "Week 1 Waivers", "Injuries",
+        "Weekly", "The Recap", "Week 2 DST", "Week 2 K", "Week 2 Matchups", "Week 2 Waivers", "The Market", "Injuries",
         "ADP", "Trade",
         "My Team",
         "Touches", "Players", "News", "The X", "Hot 'n' Cold",
@@ -608,6 +608,7 @@ def test_weekly_kit():
     from weekly_kit import (
         WEEK1_WAIVER_SOURCES,
         depth_rows,
+        historic_waiver_board,
         injury_rows,
         week_num,
         week1_waiver_board,
@@ -615,9 +616,9 @@ def test_weekly_kit():
         weekly_flex,
         waiver_board,
     )
-    assert week_num() == 1
+    assert week_num() == 2
     qb = weekly_board("QB")
-    assert qb[0]["name"] == "Joe Burrow"
+    assert qb[0]["name"] == "Josh Allen"
     assert qb[0]["bk"] == 1
     assert qb[0]["n"] >= 3
     assert qb[0].get("fpts")
@@ -626,7 +627,7 @@ def test_weekly_kit():
     wr = weekly_board("WR")
     assert wr[0]["name"] == "Puka Nacua"
     te = weekly_board("TE")
-    assert te[0]["name"] == "Brock Bowers"
+    assert te[0]["name"] == "Trey McBride"
     flex = weekly_flex()
     assert flex[0]["name"] == "Jahmyr Gibbs"
     assert flex[0]["n"] >= 2
@@ -635,12 +636,17 @@ def test_weekly_kit():
     assert waivers[0]["name"] not in {"Jahmyr Gibbs", "Puka Nacua", "Ja'Marr Chase"}
     w1w = week1_waiver_board()
     assert len(WEEK1_WAIVER_SOURCES) >= 5
-    assert 20 <= len(w1w) <= 40
-    assert w1w[0]["name"] == "Mike Washington Jr."
+    assert 8 <= len(w1w) <= 40
+    assert w1w[0]["name"] == "Jalen Coker"
     assert w1w[0]["bk"] == 1
-    assert w1w[0]["n"] >= 3
+    assert w1w[0]["n"] >= 2
     assert all(r["n"] >= 2 for r in w1w)
     assert all(r["pos"] not in {"DST", "K"} for r in w1w)
+    names = {r["name"] for r in w1w}
+    assert "Kaelon Black" in names
+    assert "Tyler Shough" in names
+    old = historic_waiver_board(1)
+    assert old[0]["name"] == "Mike Washington Jr."
     inj = injury_rows()
     assert len(inj) >= 20
     assert any(r["status"] == "Out" for r in inj)
@@ -679,6 +685,37 @@ def test_week1_boards():
     assert "win_pct" not in games[0]
     assert games[0]["day"].startswith("Wed")
     assert games[0]["key"] == "NE@SEA"
+
+
+def test_week2_boards():
+    from week2_boards import (
+        MATCH_SOURCES,
+        W2_DST_SOURCES,
+        W2_K_SOURCES,
+        week2_dst_board,
+        week2_kicker_board,
+        week2_matchups,
+    )
+    assert len(W2_DST_SOURCES) >= 6
+    assert len(W2_K_SOURCES) >= 3
+    assert len(MATCH_SOURCES) >= 6
+    dst = week2_dst_board()
+    assert dst[0]["bk"] == 1
+    assert dst[0]["n"] >= 3
+    assert dst[0]["name"] in {
+        "San Francisco 49ers", "Philadelphia Eagles", "Seattle Seahawks",
+        "Tampa Bay Buccaneers", "Los Angeles Chargers",
+    }
+    kickers = week2_kicker_board()
+    assert kickers[0]["name"] in {"Brandon Aubrey", "Cameron Dicker", "Eddy Pineiro"}
+    games = week2_matchups()
+    assert len(games) == 16
+    keys = {g["key"] for g in games}
+    assert "DET@BUF" in keys
+    assert "NYG@LAR" in keys
+    assert all(g["pick"] in {g["away"], g["home"]} for g in games)
+    assert games[0]["day"].startswith("Thu")
+    assert games[0]["key"] == "DET@BUF"
 
 
 def test_half_ppr_classic_tax():
@@ -750,7 +787,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=57" in doc
+    assert "css/site.css?v=58" in doc
 
 
 if __name__ == "__main__":

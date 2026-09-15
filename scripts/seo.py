@@ -284,7 +284,10 @@ Site: https://ballkeep.com
 - Trade calculators: https://ballkeep.com/trade.html
 - Player files: https://ballkeep.com/players/
 - Hourly NFL news: https://ballkeep.com/news.html
-- Week 1 rankings: https://ballkeep.com/weekly.html
+- Week 2 rankings: https://ballkeep.com/weekly.html
+- The Recap: https://ballkeep.com/the-recap.html
+- The Market: https://ballkeep.com/the-market.html
+- Week 1 archive: https://ballkeep.com/archive/week1/
 
 ## Baseball (BaseKeep)
 - Dynasty top 400: https://ballkeep.com/bb/

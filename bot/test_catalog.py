@@ -283,7 +283,7 @@ def main():
     assert "The Fence (IDP)" in home
     ros_skill_at = home.find('class="desk-block ros-skill"')
     ros_st_at = home.find('class="desk-block ros-st"')
-    week1_at = home.find('class="desk-block week1"')
+    week1_at = home.find('class="desk-block week"')
     tape_at = home.find('class="desk-block tape"')
     tools_at = home.find('class="desk-block tools"')
     mine_at = home.find('class="desk-block mine"')
@@ -316,13 +316,16 @@ def main():
     assert "Rest-of-season values" in ros_st
     assert "week1-dst.html" not in ros_st
     assert "week1-kickers.html" not in ros_st
+    assert "week2-dst.html" not in ros_st
+    assert "week2-kickers.html" not in ros_st
     assert "weekly.html" in week1
-    assert "week1-opening.html" in week1
-    assert "week1-dst.html" in week1
-    assert "week1-kickers.html" in week1
-    assert "week1-matchups.html" in week1
+    assert "the-recap.html" in week1
+    assert "week2-dst.html" in week1
+    assert "week2-kickers.html" in week1
+    assert "week2-matchups.html" in week1
     assert "waiver.html" in week1
-    assert "Week 1 Waivers" in week1
+    assert "Week 2 Waivers" in week1
+    assert "the-market.html" in week1
     assert "start-sit.html" not in week1
     assert "weekly-check.html" not in week1
     assert "sos.html" not in week1
@@ -440,31 +443,43 @@ def main():
     assert "every other desk" not in html_of("the-fence.html")
     assert "every other desk" not in html_of("weekly-qb.html")
     assert "every other desk" not in html_of("waiver.html")
-    assert "on a desk" not in html_of("week1-matchups.html")
-    assert ">Desks<" not in html_of("week1-matchups.html")
-    w1_dst_html = html_of("week1-dst.html")
+    assert "on a desk" not in html_of("week2-matchups.html")
+    assert ">Desks<" not in html_of("week2-matchups.html")
+    w2_dst_html = html_of("week2-dst.html")
+    assert "<h1>Week 2 DST</h1>" in w2_dst_html
+    assert "is 1.01" not in w2_dst_html
+    w2_k_html = html_of("week2-kickers.html")
+    assert "<h1>Week 2 Kickers</h1>" in w2_k_html
+    assert "Brandon Aubrey" in w2_k_html or "Cameron Dicker" in w2_k_html
+    assert "is 1.01" not in w2_k_html
+    w2_m_html = html_of("week2-matchups.html")
+    assert "<h1>Week 2 Matchups</h1>" in w2_m_html
+    assert "DET" in w2_m_html and "BUF" in w2_m_html
+    assert "Win%" not in w2_m_html
+    assert "100.0%" not in w2_m_html
+    assert "win percent" not in w2_m_html.lower()
+    assert 'data-matchup-copy' in w2_m_html
+    assert 'class="sr-only matchup-winners"' in w2_m_html
+    assert ">Copy</button>" in w2_m_html
+    assert "navigator.clipboard" in w2_m_html
+    assert "localStorage" not in w2_m_html
+    w1_dst_html = html_of("archive/week1/dst.html")
     assert "<h1>Week 1 DST</h1>" in w1_dst_html
     assert "Jacksonville Jaguars" in w1_dst_html
     assert "is 1.01" not in w1_dst_html
-    w1_k_html = html_of("week1-kickers.html")
+    w1_k_html = html_of("archive/week1/kickers.html")
     assert "<h1>Week 1 Kickers</h1>" in w1_k_html
     assert "Brandon Aubrey" in w1_k_html or "Cameron Dicker" in w1_k_html
-    assert "is 1.01" not in w1_k_html
-    w1_m_html = html_of("week1-matchups.html")
+    w1_m_html = html_of("archive/week1/matchups.html")
     assert "<h1>Week 1 Matchups</h1>" in w1_m_html
     assert "26 sources" in w1_m_html
-    assert "NE at SEA" in w1_m_html or "SEA" in w1_m_html
+    assert "SEA" in w1_m_html
     assert "Win%" not in w1_m_html
-    assert "100.0%" not in w1_m_html
-    assert "win percent" not in w1_m_html.lower()
-    assert "win chance" in w1_m_html.lower()
     assert 'data-matchup-copy' in w1_m_html
-    assert 'class="sr-only matchup-winners"' in w1_m_html
-    assert ">Copy</button>" in w1_m_html
-    assert "navigator.clipboard" in w1_m_html
-    assert "localStorage" not in w1_m_html
     assert "SEA\nLAR\nCHI" in w1_m_html or "SEA\r\nLAR\r\nCHI" in w1_m_html
     assert "SEA\nLAR\nJAX" not in w1_m_html
+    assert "archive/week1/dst.html" in html_of("week1-dst.html")
+    assert "archive/week1/opening.html" in html_of("week1-opening.html")
     league_html = html_of("league.html")
     assert "<h1>My Team</h1>" in league_html
     assert "sleeper-id" in league_html
@@ -482,10 +497,10 @@ def main():
     assert lookup["demo"]["teams"]
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
-    assert "week1-opening.html" in weekly_html
+    assert "the-recap.html" in weekly_html
     assert "Seahawks 13, Patriots 10" in weekly_html
     assert "Jahmyr Gibbs" in weekly_html
-    opening_html = html_of("week1-opening.html")
+    opening_html = html_of("archive/week1/opening.html")
     assert "Seahawks 13, Patriots 10" in opening_html
     assert "49ers 27, Rams 7" in opening_html
     assert "13-10" in opening_html
@@ -502,6 +517,16 @@ def main():
     assert "De'Zhaun Stribling" in opening_html
     assert "\u2014" not in opening_html
     assert " is the " not in opening_html
+    recap_html = html_of("the-recap.html")
+    assert "Sixteen scores" in recap_html or "sixteen scores" in recap_html.lower() or "Chicago" in recap_html
+    assert "Seahawks 13, Patriots 10" in recap_html
+    assert "youtube.com/embed/" in recap_html
+    assert "\u2014" not in recap_html
+    assert "desk" not in recap_html.lower()
+    market_html = html_of("the-market.html")
+    assert "<h1>The Market</h1>" in market_html
+    assert "Puka Nacua" in market_html
+    assert "\u2014" not in market_html
     assert (root / "img/players/drew-lock.png").exists()
     assert "start-sit.html" not in weekly_html
     assert "weekly-check.html" not in weekly_html
@@ -516,10 +541,13 @@ def main():
     assert "ESPN ADP" in adp_html
     assert "Jahmyr Gibbs" in adp_html
     waiver_html = html_of("waiver.html")
-    assert "<h1>Week 1 Waivers</h1>" in waiver_html
-    assert "Mike Washington" in waiver_html
+    assert "<h1>Week 2 Waivers</h1>" in waiver_html
+    assert "Jalen Coker" in waiver_html
     assert "RotoBaller" in waiver_html
-    assert "preseason" in waiver_html.lower() or "before Week 1" in waiver_html or "before kickoff" in waiver_html
+    assert "archive/week1" in waiver_html
+    w1_w_html = html_of("archive/week1/waivers.html")
+    assert "<h1>Week 1 Waivers</h1>" in w1_w_html
+    assert "Mike Washington" in w1_w_html
     assert "is 1.01" not in waiver_html
     assert not (root / "start-sit.html").exists()
     assert not (root / "weekly-check.html").exists()
@@ -686,8 +714,11 @@ def main():
         "redraft-superflex.html",
         "defenses.html",
         "kickers.html",
-        "week1-dst.html",
-        "week1-kickers.html",
+        "week2-dst.html",
+        "week2-kickers.html",
+        "the-recap.html",
+        "the-market.html",
+        "archive/week1/dst.html",
         "weekly.html",
         "weekly-qb.html",
         "waiver.html",
