@@ -843,6 +843,7 @@ NAV_GROUPS = [
     ("tools", "Tools", [
         ("adp.html", "ADP"),
         ("trade.html", "Trade"),
+        ("the-method.html", "The Method"),
     ]),
     ("mine", "Yours", [
         ("league.html", "My Team"),
@@ -864,7 +865,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 59
+CSS_VER = 60
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1287,6 +1288,11 @@ FB_SEO = {
         "Mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. Josh Allen opens. Hutchinson is first IDP.",
         "img/logo.jpg",
     ),
+    "the-method.html": (
+        "The Method | Super Aggregate Explained | Ball Keep",
+        "How Ball Keep ranks a name. Half the vote is the long boards. Half is every other list that ranked him. Rank 1 is 12,000 BK Value. Fair is within 8%.",
+        "img/players/josh-allen.png",
+    ),
     "privacy.html": (
         "Privacy Policy | Ball Keep",
         "How Ball Keep, BaseKeep, BasketKeep, and PitchKeep collect and use information, including cookies, analytics, and ads.",
@@ -1340,6 +1346,7 @@ HOME_FAQ = [
     ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. IDP names are marked in red."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
+    ("Where is the method written down?", "The Method. Super Aggregate, BK Value, rest of season versus this week, and how to write the site."),
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
@@ -1392,6 +1399,7 @@ FB_ALSO = {
     "the-keep.html": [
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
         ("board.html", "The Board", "Redraft PPR, this year."),
+        ("the-method.html", "The Method", "How the Super Aggregate is built."),
         ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
         ("trade-superflex.html", "Superflex Calculator", "Keep ranks as BK Value."),
@@ -1401,6 +1409,7 @@ FB_ALSO = {
     ],
     "board.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("the-method.html", "The Method", "How the Super Aggregate is built."),
         ("best-ball.html", "Best Ball", "40-board boom-week list."),
         ("the-classic.html", "The Classic", "Half-PPR redraft."),
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
@@ -1617,6 +1626,14 @@ FB_ALSO = {
         ("board.html", "The Board", "Skill-player PPR."),
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
+    "the-method.html": [
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("board.html", "The Board", "Redraft PPR, this year."),
+        ("trade.html", "Trade Calculators", "BK Value on six boards."),
+        ("the-fence.html", "The Fence (IDP)", "Superflex plus IDP."),
+        ("weekly.html", "Weekly", "This week's skill boards."),
+        ("discord.html", "Discord", "Ranks inside a server."),
+    ],
 }
 
 
@@ -1655,7 +1672,11 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
     {crumb_html}
     {body}
     <footer>
-      © {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Not affiliated with the NFL, MLB, NBA, or Premier League.
+      <div class="footer-mast">
+        <p class="footer-mark">{wordmark()}</p>
+        <p>Super Aggregates · BK Value · hourly wire</p>
+      </div>
+      <p class="footer-copy">© {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Independent of the NFL, MLB, NBA, and Premier League.</p>
       {foot}
       {legal_links(depth)}
       {sports_footer("fb", depth)}
@@ -2056,6 +2077,7 @@ def home_body_html(keep, board, media, stories=None):
         ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
         ("adp.html", "ADP", "The Board vs ESPN."),
         ("depth-charts.html", "Depth Charts", "32 clubs."),
+        ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ])}
     {desk_block("tape", "Tape", "The non-ranking lists.", "The market notes, the player files, and the pictures.", [
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
@@ -2084,6 +2106,7 @@ def home_body_html(keep, board, media, stories=None):
         <li><strong>Half is every other board that ranked the name.</strong> Short lists still move the names they published.</li>
         <li><strong>Rank 1 is 12,000 BK Value.</strong> Fair is within 8%.</li>
       </ol>
+      <a class="cta method-cta" href="the-method.html">Read The Method</a>
     </section>
     {wire}
     <section class="home-network" aria-label="Other sports">
@@ -3166,6 +3189,7 @@ def write_explore_page():
         ("the-x.html", "The X", "Football memes."),
         ("nfl-schedule.html", "NFL Schedule", "2026 slate."),
         ("discord.html", "Discord Bot", "Ranks in a server."),
+        ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ])}
     {group("Baseball", "BaseKeep", [
         ("bb/index.html", "BaseKeep Home", "Dynasty baseball."),
@@ -3862,11 +3886,14 @@ def main():
       <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date.</p>
 
       <h3>Contact Us</h3>
-      <p>If you have questions about this Privacy Policy, please reach out through the contact information listed on this site.</p>
+      <p>If you have questions about this Privacy Policy, write through the <a href="the-method.html#write">contact block on The Method</a> or open an issue on the <a href="https://github.com/balsalah51/BallKeep" rel="noopener">Ball Keep GitHub</a>.</p>
       <p>Ball Keep is not affiliated with the NFL, MLB, NBA, or Premier League.</p>
     </section>
     """
     write("privacy.html", page("Privacy Policy", "privacy.html", privacy))
+
+    from the_method import write_the_method
+    write_the_method(sys.modules[__name__])
 
     write_explore_page()
 
@@ -3875,6 +3902,7 @@ def main():
     sitemap = [
         "https://ballkeep.com/",
         "https://ballkeep.com/privacy.html",
+        "https://ballkeep.com/the-method.html",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/news.html",
         "https://ballkeep.com/the-x.html",

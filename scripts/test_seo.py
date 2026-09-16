@@ -144,7 +144,7 @@ def test_football_nav_keeps_every_link():
         "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
         "Weekly", "The Recap", "Week 2 DST", "Week 2 K", "Week 2 Predictions", "Week 2 Waivers", "The Market", "Injuries",
-        "ADP", "Trade",
+        "ADP", "Trade", "The Method",
         "My Team",
         "Touches", "Players", "News", "The X", "Hot 'n' Cold",
         "NFL", "MLB", "BPL",
@@ -322,6 +322,7 @@ def test_searchaction_and_schema():
     txt = llms_txt()
     assert "https://ballkeep.com/the-keep.html" in txt
     assert "https://ballkeep.com/best-ball.html" in txt
+    assert "https://ballkeep.com/the-method.html" in txt
     assert "https://ballkeep.com/bb/" in txt
     card = rank_card("The Keep", 4, 9769, "../the-keep.html")
     assert 'href="../the-keep.html"' in card
@@ -810,7 +811,9 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=59" in doc
+    assert "css/site.css?v=60" in doc
+    assert "the-method.html" in html
+    assert "Read The Method" in html
 
 
 if __name__ == "__main__":

@@ -345,6 +345,8 @@ def main():
     assert "adp.html" in tools
     assert "sos.html" not in tools
     assert "depth-charts.html" in tools
+    assert "the-method.html" in tools
+    assert "The Method" in tools
     assert "Player Pages" not in tools
     assert "start-sit.html" not in tools
     assert "waiver.html" not in tools
@@ -391,6 +393,16 @@ def main():
     assert "BasketKeep" in privacy
     assert "PitchKeep" in privacy
     assert "Kids pay a tax" not in privacy
+    assert "the-method.html#write" in privacy
+    method_html = html_of("the-method.html")
+    assert "<h1>How the Super Aggregate works.</h1>" in method_html
+    assert "12,000" in method_html
+    assert "github.com/balsalah51/BallKeep" in method_html
+    assert "id=\"write\"" in method_html or 'id="write"' in method_html
+    assert "\u2014" not in method_html
+    assert "desk" not in method_html.lower()
+    assert "never 999" not in method_html
+    assert "Unranked is a skip" not in method_html
     assert "the-ones.html" not in home
     assert "The Ones" not in home
     assert 'href="discord.html"' not in home
