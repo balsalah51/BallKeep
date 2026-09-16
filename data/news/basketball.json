@@ -1,19 +1,26 @@
 {
   "sport": "basketball",
-  "updated": "2026-09-16T15:27:06Z",
-  "fresh": 87,
+  "updated": "2026-09-16T16:27:23Z",
+  "fresh": 104,
   "stories": [
     {
       "id": "brandon-ingram-trade-clippers-completed-16321908",
       "slug": "brandon-ingram-trade-clippers-completed-16321908",
       "sport": "basketball",
       "headline": "Clippers, Raptors agree to Kawhi Leonard trade again: Toronto finally poised to move forward as East contender",
-      "blurb": "The dust has settled after the NBA punished the Clippers, and Leonard is set to finally move back to Toronto",
-      "summary": "Kawhi Leonard, Brandon Ingram, Gradey Dick and Nikola Jokic: The dust has settled after the NBA punished the Clippers, and Leonard is set to finally move back to Toronto Just in on NBA Today -- Clippers, Raptors complete the Kawhi Leonard trade: x.com Kawhi Leonard is waiving his entire trade kicker, per a source. Aggregated from CBS NBA, x.com, RotoWire NBA, The New York Times, NY Post Sports and 3 more.",
+      "blurb": "NBA Mock Trade: Memphis Grizzlies Move Ja Morant To The Toronto Raptors Sports Illustrated",
+      "summary": "NBA Mock Trade: Memphis Grizzlies Move Ja Morant To The Toronto Raptors Sports Illustrated The Clippers and Raptors both agreed Monday to finalize the trade sending Leonard to Toronto for Brandon Ingram (heel), Gradey Dick, two unprotected first-round picks, one first-round pick swap and two second-rounders, Shams Charania of ESPN reports. Visit RotoWire.com for more a Aggregated from Sports Illustrated, RotoWire NBA, The New York Times, NY Post Sports, NBC Sports and 3 more.",
       "category": "injury",
-      "published": "2026-01-30T08:00:00Z",
+      "published": "2025-09-16T07:00:00Z",
       "updated": "2026-09-16T12:33:10Z",
       "players": [
+        {
+          "key": "ja morant",
+          "name": "Ja Morant",
+          "slug": "ja-morant",
+          "pos": "PG",
+          "team": "MEM"
+        },
         {
           "key": "kawhi leonard",
           "name": "Kawhi Leonard",
@@ -131,6 +138,22 @@
           "kind": "x",
           "snippet": "Kawhi Leonard is waiving his entire trade kicker, per a source. Was a near-necessity, cap-math wise, unless Raptors expanded the deal. Most of the details within here still hold. Raptors hard-capped, likely to carry just 13 to start the season (or 14 with Bradley x.com",
           "published": "Mon, 14 Sep 2026 19:47:53 GMT"
+        },
+        {
+          "title": "Kawhi Leonard Trade Means Raptors Are All In for a Title",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPT1JVSDdjTGU1aUdWQ0ZtRDgxSEFZMzByWDd2bE9aN2hhSXc3VXRld2xNZWp6TjVGSXlEcTVPLVMtckpZWmZaMFFMSVVpcW1mNDIycUlUSG5DRmQxdkpaeUUxX3ptYjZ2VUFKRU5TemdnVC1fbkYzZFdtY2lNTlFzbTMxOA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Kawhi Leonard Trade Means Raptors Are All In for a Title Sports Illustrated",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "NBA Mock Trade: Memphis Grizzlies Move Ja Morant To The Toronto Raptors",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOU1aMjRPZGtremNjN21ZVk1TcFB2aUFJeFRTcVpXRFZkcGl2cG9CSUFLaGdPbW5Qc3ZwZ1ZPdHVpRXZmWHVRVjlVdkNQZjV2NUtnY3NmTExQRWRnNVExR0lScWoteGtIZEpSdGtXNGRDekU2UDRxNklQUVFrMDFISF9XYlVnNzBvaWNaaHhLQ055MlZzbXB2Uk5TOUZHRGxnYWhWZmxjRHJBdw?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "NBA Mock Trade: Memphis Grizzlies Move Ja Morant To The Toronto Raptors Sports Illustrated",
+          "published": "Tue, 16 Sep 2025 07:00:00 GMT"
         }
       ]
     },
@@ -339,8 +362,8 @@
       "slug": "raptors-reportedly-sign-ex-lakers-champion-while-waiting-7195aab2",
       "sport": "basketball",
       "headline": "NBA ready to approve Kawhi Leonard to Raptors trade, league is waiting on Clippers and Raptors to submit trade",
-      "blurb": "Projecting a Pistons-Clippers Trade Involving Kawhi Leonard After Detroit's Playoff Exit Sports Illustrated",
-      "summary": "Projecting a Pistons-Clippers Trade Involving Kawhi Leonard After Detroit's Playoff Exit Sports Illustrated Raptors reportedly sign ex-Lakers NBA champion while waiting for Clippers-Kawhi Leonard trade Yahoo Sports Raptors Projected to Land 11-Time All-Star Guard if Kawhi Leonard Trade Fails heavy.com Aggregated from Sports Illustrated, Yahoo Sports, sportingnews.com, heavy.com, nbcsports.com and 43 more.",
+      "blurb": "Unheralded return in Kawhi Leonard trade has potential for Clippers Yahoo Sports",
+      "summary": "Unheralded return in Kawhi Leonard trade has potential for Clippers Yahoo Sports Kawhi Leonard Trade: Clippers Deal Star to Toronto Raptors for Brandon Ingram, Gradey Dick Fantasy Alarm Kawhi Leonard trade grades: Why Raptors reunion is worth the risk The New York Times Aggregated from Yahoo Sports, Fantasy Alarm, The New York Times, KU Sports, Sports Illustrated and 43 more.",
       "category": "injury",
       "published": "2023-06-22T07:00:00Z",
       "updated": "2026-09-15T22:29:15Z",
@@ -351,6 +374,20 @@
           "slug": "kawhi-leonard",
           "pos": "SF",
           "team": "LAC"
+        },
+        {
+          "key": "gradey dick",
+          "name": "Gradey Dick",
+          "slug": "gradey-dick",
+          "pos": "SG",
+          "team": "TOR"
+        },
+        {
+          "key": "brandon ingram",
+          "name": "Brandon Ingram",
+          "slug": "brandon-ingram",
+          "pos": "SF",
+          "team": "TOR"
         },
         {
           "key": "scottie barnes",
@@ -379,20 +416,6 @@
           "slug": "jalen-duren",
           "pos": "C",
           "team": "DET"
-        },
-        {
-          "key": "brandon ingram",
-          "name": "Brandon Ingram",
-          "slug": "brandon-ingram",
-          "pos": "SF",
-          "team": "TOR"
-        },
-        {
-          "key": "gradey dick",
-          "name": "Gradey Dick",
-          "slug": "gradey-dick",
-          "pos": "SG",
-          "team": "TOR"
         },
         {
           "key": "bennedict mathurin",
@@ -1624,6 +1647,92 @@
       ]
     },
     {
+      "id": "indiana-pacers-projected-15-man-roster-pg-tyrese-4de38832",
+      "slug": "indiana-pacers-projected-15-man-roster-pg-tyrese-4de38832",
+      "sport": "basketball",
+      "headline": "The Indiana Pacers projected 15-man roster: PG: Tyrese Haliburton SG: Andrew Nembhard SF: Aaron Nesmith PF: Pascal Siakam C: Ivica Zubac…",
+      "blurb": "The Indiana Pacers projected 15-man roster: PG: Tyrese Haliburton SG: Andrew Nembhard SF: Aaron Nesmith PF: Pascal Siakam C: Ivica Zubac Bench: • TJ McConnell • Kelly Oubre Jr.",
+      "summary": "The Indiana Pacers projected 15-man roster: PG: Tyrese Haliburton SG: Andrew Nembhard SF: Aaron Nesmith PF: Pascal Siakam C: Ivica Zubac Bench: • TJ McConnell • Kelly Oubre Jr. • Jarace Walker • Obi Toppin • Jay Huff • Quenton Jackson • Ben Sheppar x.com Board reading of x.com.",
+      "category": "roster",
+      "published": "2026-09-16T15:41:22Z",
+      "updated": "2026-09-16T15:41:22Z",
+      "players": [
+        {
+          "key": "tyrese haliburton",
+          "name": "Tyrese Haliburton",
+          "slug": "tyrese-haliburton",
+          "pos": "PG",
+          "team": "IND"
+        },
+        {
+          "key": "andrew nembhard",
+          "name": "Andrew Nembhard",
+          "slug": "andrew-nembhard",
+          "pos": "SG",
+          "team": "IND"
+        },
+        {
+          "key": "kelly oubre",
+          "name": "Kelly Oubre Jr.",
+          "slug": "kelly-oubre-jr",
+          "pos": "SF",
+          "team": "PHI"
+        },
+        {
+          "key": "pascal siakam",
+          "name": "Pascal Siakam",
+          "slug": "pascal-siakam",
+          "pos": "PF",
+          "team": "IND"
+        },
+        {
+          "key": "aaron nesmith",
+          "name": "Aaron Nesmith",
+          "slug": "aaron-nesmith",
+          "pos": "SF",
+          "team": "IND"
+        },
+        {
+          "key": "jarace walker",
+          "name": "Jarace Walker",
+          "slug": "jarace-walker",
+          "pos": "PF",
+          "team": "IND"
+        },
+        {
+          "key": "ivica zubac",
+          "name": "Ivica Zubac",
+          "slug": "ivica-zubac",
+          "pos": "C",
+          "team": "LAC"
+        },
+        {
+          "key": "obi toppin",
+          "name": "Obi Toppin",
+          "slug": "obi-toppin",
+          "pos": "PF",
+          "team": "IND"
+        },
+        {
+          "key": "jay huff",
+          "name": "Jay Huff",
+          "slug": "jay-huff",
+          "pos": "C",
+          "team": "MEM"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Indiana Pacers projected 15-man roster: PG: Tyrese Haliburton SG: Andrew Nembhard SF: Aaron Nesmith PF: Pascal Siakam C: Ivica Zubac Bench: • TJ McConnell • Kelly Oubre Jr. • Jarace Walker • Obi Toppin • Jay Huff • Quenton Jackson • Ben Sheppar",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNeDA4cDVpalo1TmFadjJjSjNrSnlEVmxya0hRMGFVc09rMnRnYlZ6UmNlRU9ZVzBuQU5PX0o0Zl9Gd01IVXFnYkdQOUdkcVk3U0Q2Q1ByVndGUQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The Indiana Pacers projected 15-man roster: PG: Tyrese Haliburton SG: Andrew Nembhard SF: Aaron Nesmith PF: Pascal Siakam C: Ivica Zubac Bench: • TJ McConnell • Kelly Oubre Jr. • Jarace Walker • Obi Toppin • Jay Huff • Quenton Jackson • Ben Sheppar x.com",
+          "published": "Wed, 16 Sep 2026 15:41:22 GMT"
+        }
+      ]
+    },
+    {
       "id": "paul-george-shares-crucial-injury-intro-presser-4d12f09c",
       "slug": "paul-george-shares-crucial-injury-intro-presser-4d12f09c",
       "sport": "basketball",
@@ -1709,97 +1818,6 @@
           "kind": "article",
           "snippet": "“Paul George is my GOAT” - Brandon Miller clarifies his ‘GOAT’ comments about LeBron James and PG Sportskeeda",
           "published": "Mon, 26 Jun 2023 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "why-jimmy-butler-realistic-trade-candidate-warriors-8cd0797f",
-      "slug": "why-jimmy-butler-realistic-trade-candidate-warriors-8cd0797f",
-      "sport": "basketball",
-      "headline": "NBA Analyst’s Proposed Blockbuster Mock Trade Would Get Steph Curry Major Help at Jimmy Butler, Yaxel Lendeborg’s Expense",
-      "blurb": "The 2026-27 NBA season could determine whether the Golden State Warriors extend their aging foundation or finally tear it down.",
-      "summary": "Draymond Green, Stephen Curry, Jimmy Butler and Domantas Sabonis: The 2026-27 NBA season could determine whether the Golden State Warriors extend their aging foundation or finally tear it down. Stephen Curry, Draymond Green and Jimmy Butler are all playing... Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season roundtable.io Aggregated from NY Post Sports, roundtable.io, Sports Illustrated, sports.yahoo.com, AOL.com.",
-      "category": "trade",
-      "published": "2026-09-11T18:00:00Z",
-      "updated": "2026-09-15T20:44:39Z",
-      "players": [
-        {
-          "key": "draymond green",
-          "name": "Draymond Green",
-          "slug": "draymond-green",
-          "pos": "PF",
-          "team": "GSW"
-        },
-        {
-          "key": "stephen curry",
-          "name": "Stephen Curry",
-          "slug": "stephen-curry",
-          "pos": "PG",
-          "team": "GSW"
-        },
-        {
-          "key": "jimmy butler",
-          "name": "Jimmy Butler",
-          "slug": "jimmy-butler",
-          "pos": "SF",
-          "team": "GSW"
-        },
-        {
-          "key": "domantas sabonis",
-          "name": "Domantas Sabonis",
-          "slug": "domantas-sabonis",
-          "pos": "C",
-          "team": "SAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQk9GYnp3cjlkajRVdHRWX21XTE1pRmdBRnFEMEZscjBKSVZGWWVyZXhDcHhtVnpSSUdjSlMxWkRVeTJWNFJNS0dfU3RyeXdGcC02UkRaZHJiaW5fc21iSG1Dd0Z3U2w3alUtaXRoZ2t4QTJUdmVpTHRENGxIU0tyWURlbWJ6MFRQenVrbTFQblhJd0VreXE1TWdqdWdEd3dab3VlMHlCMkt1Q0hBdlRqMVhJWV96dDIwQmtj?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season roundtable.io",
-          "published": "Sun, 13 Sep 2026 22:50:34 GMT"
-        },
-        {
-          "title": "Why a Domantas Sabonis Trade Is Still Realistic for the Kings",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX3NCRTdyMy1WUnBQMmRZY0dCSl9xZFZ6T3VLRmwxeUpNSVF6UlJDUm5kY0RVUmVhWXJQTFBLZl9PTkwyVE5YcEpzY3FwQUJNbk05eDhJZkplWnV5YkZ4VW1GYVQzZWVHYlYxTWRGZjRRUGZhb2J0aVhTdUJoN25sYkxfOXJJbXV2MFF1aVA4MmN5RWd5WFE?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Why a Domantas Sabonis Trade Is Still Realistic for the Kings Sports Illustrated",
-          "published": "Fri, 11 Sep 2026 18:00:00 GMT"
-        },
-        {
-          "title": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOXy1zZ1ZOM0l1czZrT25IU1F6dEU5bnA4dW9hVHB6b2YtbklyR3pNU0JRX0ZPWFlCWnRsX1BISXlBLWR0U2k1SS1OLWlnb1hfeHY2QVd1dnZyUHB5dWtIZEtDZFdwSGNaZnlOZGQxengyN3V2MUJsZXZtY3JKWjhlMk9kaURVYjlC?oc=5",
-          "publisher": "sports.yahoo.com",
-          "kind": "article",
-          "snippet": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season sports.yahoo.com",
-          "published": "Sun, 13 Sep 2026 22:03:13 GMT"
-        },
-        {
-          "title": "Domantas Sabonis Trade? Kalshi Says Not Before Season",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOREJpWDZMYmMwRHZIczlfYVNreHBXSUtaMk5PNHJFNUNUQlZMSWQybFpfT2lZWmF1ckY2d3c2djJUa0JraDVJeXhxeEZQb0phLUNDQmFPcE5VV2pfemhQSnJHYmFMV0JIUHJtV1Y3Nzk4MlE2cE5QVmhrWVBoVFhlWW9nWHNpU3AzWWx2dTNLWnF2azBHTnlMcjNyOHBmRVhHbzdoTDBR?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Domantas Sabonis Trade? Kalshi Says Not Before Season Sports Illustrated",
-          "published": "Tue, 15 Sep 2026 13:00:00 GMT"
-        },
-        {
-          "title": "NBA Analyst’s Proposed Blockbuster Mock Trade Would Get Steph Curry Major Help at Jimmy Butler, Yaxel Lendeborg’s Expense",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX0tIX3BxWHZMVElhZVVLRWNvOU1QRXlOa0xXQXpCbEM0WjcxVjFCZ2QzX0FVQVJYdjZPendSSUc4UkdET1RLdXBRUjlqcV9XUUltYlJKdDMtRTZndGlmSlo0V3JoTE9jeUUtNmVzWjZsZERaNkJHM25VYUY1N3BwZGplXzk1NkVB?oc=5",
-          "publisher": "AOL.com",
-          "kind": "article",
-          "snippet": "NBA Analyst’s Proposed Blockbuster Mock Trade Would Get Steph Curry Major Help at Jimmy Butler, Yaxel Lendeborg’s Expense AOL.com",
-          "published": "Tue, 15 Sep 2026 11:59:35 GMT"
-        },
-        {
-          "title": "Warriors icon could be dealt in seismic midseason reset: insider",
-          "url": "https://sports.yahoo.com/articles/warriors-icon-could-dealt-seismic-204439749.html",
-          "publisher": "NY Post Sports",
-          "kind": "article",
-          "snippet": "The 2026-27 NBA season could determine whether the Golden State Warriors extend their aging foundation or finally tear it down. Stephen Curry, Draymond Green and Jimmy Butler are all playing...",
-          "published": "Tue, 15 Sep 2026 20:44:39 +0000"
         }
       ]
     },
@@ -1950,6 +1968,97 @@
           "kind": "article",
           "snippet": "Rival Watch: What NBA analysts are saying about Kawhi Leonard trade sportsnet.ca",
           "published": "Wed, 16 Sep 2026 14:41:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "why-jimmy-butler-realistic-trade-candidate-warriors-8cd0797f",
+      "slug": "why-jimmy-butler-realistic-trade-candidate-warriors-8cd0797f",
+      "sport": "basketball",
+      "headline": "NBA Analyst’s Proposed Blockbuster Mock Trade Would Get Steph Curry Major Help at Jimmy Butler, Yaxel Lendeborg’s Expense",
+      "blurb": "The 2026-27 NBA season could determine whether the Golden State Warriors extend their aging foundation or finally tear it down.",
+      "summary": "Draymond Green, Stephen Curry, Jimmy Butler and Domantas Sabonis: The 2026-27 NBA season could determine whether the Golden State Warriors extend their aging foundation or finally tear it down. Stephen Curry, Draymond Green and Jimmy Butler are all playing... Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season roundtable.io Aggregated from NY Post Sports, roundtable.io, Sports Illustrated, sports.yahoo.com, AOL.com.",
+      "category": "trade",
+      "published": "2026-09-11T18:00:00Z",
+      "updated": "2026-09-15T20:44:39Z",
+      "players": [
+        {
+          "key": "draymond green",
+          "name": "Draymond Green",
+          "slug": "draymond-green",
+          "pos": "PF",
+          "team": "GSW"
+        },
+        {
+          "key": "stephen curry",
+          "name": "Stephen Curry",
+          "slug": "stephen-curry",
+          "pos": "PG",
+          "team": "GSW"
+        },
+        {
+          "key": "jimmy butler",
+          "name": "Jimmy Butler",
+          "slug": "jimmy-butler",
+          "pos": "SF",
+          "team": "GSW"
+        },
+        {
+          "key": "domantas sabonis",
+          "name": "Domantas Sabonis",
+          "slug": "domantas-sabonis",
+          "pos": "C",
+          "team": "SAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQk9GYnp3cjlkajRVdHRWX21XTE1pRmdBRnFEMEZscjBKSVZGWWVyZXhDcHhtVnpSSUdjSlMxWkRVeTJWNFJNS0dfU3RyeXdGcC02UkRaZHJiaW5fc21iSG1Dd0Z3U2w3alUtaXRoZ2t4QTJUdmVpTHRENGxIU0tyWURlbWJ6MFRQenVrbTFQblhJd0VreXE1TWdqdWdEd3dab3VlMHlCMkt1Q0hBdlRqMVhJWV96dDIwQmtj?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season roundtable.io",
+          "published": "Sun, 13 Sep 2026 22:50:34 GMT"
+        },
+        {
+          "title": "Why a Domantas Sabonis Trade Is Still Realistic for the Kings",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX3NCRTdyMy1WUnBQMmRZY0dCSl9xZFZ6T3VLRmwxeUpNSVF6UlJDUm5kY0RVUmVhWXJQTFBLZl9PTkwyVE5YcEpzY3FwQUJNbk05eDhJZkplWnV5YkZ4VW1GYVQzZWVHYlYxTWRGZjRRUGZhb2J0aVhTdUJoN25sYkxfOXJJbXV2MFF1aVA4MmN5RWd5WFE?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Why a Domantas Sabonis Trade Is Still Realistic for the Kings Sports Illustrated",
+          "published": "Fri, 11 Sep 2026 18:00:00 GMT"
+        },
+        {
+          "title": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOXy1zZ1ZOM0l1czZrT25IU1F6dEU5bnA4dW9hVHB6b2YtbklyR3pNU0JRX0ZPWFlCWnRsX1BISXlBLWR0U2k1SS1OLWlnb1hfeHY2QVd1dnZyUHB5dWtIZEtDZFdwSGNaZnlOZGQxengyN3V2MUJsZXZtY3JKWjhlMk9kaURVYjlC?oc=5",
+          "publisher": "sports.yahoo.com",
+          "kind": "article",
+          "snippet": "Why Jimmy Butler Is a Realistic Trade Candidate for Warriors This Season sports.yahoo.com",
+          "published": "Sun, 13 Sep 2026 22:03:13 GMT"
+        },
+        {
+          "title": "Domantas Sabonis Trade? Kalshi Says Not Before Season",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOREJpWDZMYmMwRHZIczlfYVNreHBXSUtaMk5PNHJFNUNUQlZMSWQybFpfT2lZWmF1ckY2d3c2djJUa0JraDVJeXhxeEZQb0phLUNDQmFPcE5VV2pfemhQSnJHYmFMV0JIUHJtV1Y3Nzk4MlE2cE5QVmhrWVBoVFhlWW9nWHNpU3AzWWx2dTNLWnF2azBHTnlMcjNyOHBmRVhHbzdoTDBR?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Domantas Sabonis Trade? Kalshi Says Not Before Season Sports Illustrated",
+          "published": "Tue, 15 Sep 2026 13:00:00 GMT"
+        },
+        {
+          "title": "NBA Analyst’s Proposed Blockbuster Mock Trade Would Get Steph Curry Major Help at Jimmy Butler, Yaxel Lendeborg’s Expense",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX0tIX3BxWHZMVElhZVVLRWNvOU1QRXlOa0xXQXpCbEM0WjcxVjFCZ2QzX0FVQVJYdjZPendSSUc4UkdET1RLdXBRUjlqcV9XUUltYlJKdDMtRTZndGlmSlo0V3JoTE9jeUUtNmVzWjZsZERaNkJHM25VYUY1N3BwZGplXzk1NkVB?oc=5",
+          "publisher": "AOL.com",
+          "kind": "article",
+          "snippet": "NBA Analyst’s Proposed Blockbuster Mock Trade Would Get Steph Curry Major Help at Jimmy Butler, Yaxel Lendeborg’s Expense AOL.com",
+          "published": "Tue, 15 Sep 2026 11:59:35 GMT"
+        },
+        {
+          "title": "Warriors icon could be dealt in seismic midseason reset: insider",
+          "url": "https://sports.yahoo.com/articles/warriors-icon-could-dealt-seismic-204439749.html",
+          "publisher": "NY Post Sports",
+          "kind": "article",
+          "snippet": "The 2026-27 NBA season could determine whether the Golden State Warriors extend their aging foundation or finally tear it down. Stephen Curry, Draymond Green and Jimmy Butler are all playing...",
+          "published": "Tue, 15 Sep 2026 20:44:39 +0000"
         }
       ]
     },
@@ -2631,12 +2740,66 @@
       ]
     },
     {
+      "id": "warriors-declined-draymond-green-sign-trade-2023-2b58ca79",
+      "slug": "warriors-declined-draymond-green-sign-trade-2023-2b58ca79",
+      "sport": "basketball",
+      "headline": "Buy or Sell: Warriors Could Trade Draymond Green During 2026-27 NBA Season",
+      "blurb": "Buy or Sell: Warriors Could Trade Draymond Green During 2026-27 NBA Season Yahoo Sports",
+      "summary": "Buy or Sell: Warriors Could Trade Draymond Green During 2026-27 NBA Season Yahoo Sports According to the Warriors’ most prominent podcaster, Green asked his team for a sign-and-trade with Memphis in 2023. The Warriors could trade Draymond Green at the trade deadline if their season goes south, per @ThompsonScribe \"This might be the time, like right now, we’re gonna figure out what happens for the next future. Aggregated from Yahoo Sports, SB Nation, x.com, heavy.com.",
+      "category": "trade",
+      "published": "2026-09-14T23:17:17Z",
+      "updated": "2026-09-16T14:06:05Z",
+      "players": [
+        {
+          "key": "draymond green",
+          "name": "Draymond Green",
+          "slug": "draymond-green",
+          "pos": "PF",
+          "team": "GSW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Warriors declined a Draymond Green sign-and-trade in 2023",
+          "url": "https://sports.yahoo.com/articles/warriors-declined-draymond-green-sign-231717591.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "According to the Warriors’ most prominent podcaster, Green asked his team for a sign-and-trade with Memphis in 2023.",
+          "published": "Mon, 14 Sep 2026 23:17:17 +0000"
+        },
+        {
+          "title": "The Warriors could trade Draymond Green at the trade deadline if their season goes south, per @ThompsonScribe \"This might be the time, like right now, we’re gonna figure out what happens for the next future. I think by the trade deadline, we’ll know ‘this is g",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1IYkNZZE1OcVFUaGZMNG9NamUtZmlBMmVmNjg0aVdQeV96cFp2Z0xnRUVxbmlCaTJ2bkZzSHZlbTNySnFsYXhkZ05PZXpYSG1aTUJJa0ZNQzhucnZIVVI4SklzUVlvUQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The Warriors could trade Draymond Green at the trade deadline if their season goes south, per @ThompsonScribe \"This might be the time, like right now, we’re gonna figure out what happens for the next future. I think by the trade deadline, we’ll know ‘this is g x.com",
+          "published": "Tue, 15 Sep 2026 16:01:43 GMT"
+        },
+        {
+          "title": "NBA Trade Rumors: Warriors’ Draymond Green & Expiring Contracts to Deal",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWU1kdFV2Nk0yN0w1WHdJQWxkc2hDa0tuVjl5M19qa2pYYm1fUlRNUUNhNXVIWF93TzJQZU83U3ZmT2FwMzFvUU9Wc1JPQ2QxQkowN0JLV3JUak1fVXY5RkZsdVZGdzZxbWdNckc5b2pRRV9jTG92MldtTXdQaVVGWWdPbDJmbDdxdGZua19hUzZLNmxiWTlYd0t3?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "NBA Trade Rumors: Warriors’ Draymond Green & Expiring Contracts to Deal heavy.com",
+          "published": "Wed, 16 Sep 2026 13:07:14 GMT"
+        },
+        {
+          "title": "Buy or Sell: Warriors Could Trade Draymond Green During 2026-27 NBA Season",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUlZwaG0tR1hhcnF5VGFmNUtULUcyR1ZLdW1lWlNqR003Y1dDeEpIQTUtLWxMTlFDNHdySExXeUxVRlRqTng5TXZNU1hJWmlvMUFnTTFNc2pTMlpYRWlBUmRyMGlqZlBrdEE3VS1sbFpCY05wQ09Jb1hqNExUVjdicUdOMVE?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Buy or Sell: Warriors Could Trade Draymond Green During 2026-27 NBA Season Yahoo Sports",
+          "published": "Wed, 16 Sep 2026 14:06:05 GMT"
+        }
+      ]
+    },
+    {
       "id": "mock-trade-pistons-solidify-title-contention-trade-domantas-299baf29",
       "slug": "mock-trade-pistons-solidify-title-contention-trade-domantas-299baf29",
       "sport": "basketball",
       "headline": "Blockbuster Trade Idea Sends De’Aaron Fox To Pelicans, Brings Trey Murphy III And Dejounte Murray To Spurs",
-      "blurb": "Spurs Trade Idea Moves De’Aaron Fox To Pair Steph Curry With Wembanyama heavy.com",
-      "summary": "De'Aaron Fox, Scottie Barnes, Giannis Antetokounmpo, Victor Wembanyama, Jamal Murray, Chris Paul, Trey Murphy III, Dejounte Murray, Josh Hart, Domantas Sabonis, RJ Barrett and Tobias Harris: Spurs Trade Idea Moves De’Aaron Fox To Pair Steph Curry With Wembanyama heavy.com Three Domantas Sabonis Trade Destinations With Uncertain Kings Future Sports Illustrated What It Would Actually Cost for the Kings to Trade Domantas Sabonis Sports Illustrated Aggregated from heavy.com, Sports Illustrated, New York Post, ClutchPoints, Yahoo Sports and 1 more.",
+      "blurb": "Spurs Trade Idea Moves De’Aaron Fox To Pair Steph Curry With Wembanyama Yahoo Sports",
+      "summary": "De'Aaron Fox, Scottie Barnes, Giannis Antetokounmpo, Victor Wembanyama, Jamal Murray, Chris Paul, Trey Murphy III, Dejounte Murray, Josh Hart, Domantas Sabonis, RJ Barrett and Tobias Harris: Spurs Trade Idea Moves De’Aaron Fox To Pair Steph Curry With Wembanyama Yahoo Sports Three Domantas Sabonis Trade Destinations With Uncertain Kings Future Sports Illustrated What It Would Actually Cost for the Kings to Trade Domantas Sabonis Sports Illustrated Aggregated from Yahoo Sports, Sports Illustrated, New York Post, ClutchPoints, sportingnews.com and 1 more.",
       "category": "injury",
       "published": "2022-02-08T08:00:00Z",
       "updated": "2026-09-14T20:39:45Z",
@@ -4238,58 +4401,12 @@
       ]
     },
     {
-      "id": "warriors-declined-draymond-green-sign-trade-2023-2b58ca79",
-      "slug": "warriors-declined-draymond-green-sign-trade-2023-2b58ca79",
-      "sport": "basketball",
-      "headline": "NBA Trade Rumors: Warriors’ Draymond Green & Expiring Contracts to Deal",
-      "blurb": "NBA Trade Rumors: Warriors’ Draymond Green & Expiring Contracts to Deal heavy.com",
-      "summary": "NBA Trade Rumors: Warriors’ Draymond Green & Expiring Contracts to Deal heavy.com According to the Warriors’ most prominent podcaster, Green asked his team for a sign-and-trade with Memphis in 2023. The Warriors could trade Draymond Green at the trade deadline if their season goes south, per @ThompsonScribe \"This might be the time, like right now, we’re gonna figure out what happens for the next future. Aggregated from heavy.com, SB Nation, x.com.",
-      "category": "trade",
-      "published": "2026-09-14T23:17:17Z",
-      "updated": "2026-09-16T13:07:14Z",
-      "players": [
-        {
-          "key": "draymond green",
-          "name": "Draymond Green",
-          "slug": "draymond-green",
-          "pos": "PF",
-          "team": "GSW"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Warriors declined a Draymond Green sign-and-trade in 2023",
-          "url": "https://sports.yahoo.com/articles/warriors-declined-draymond-green-sign-231717591.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "According to the Warriors’ most prominent podcaster, Green asked his team for a sign-and-trade with Memphis in 2023.",
-          "published": "Mon, 14 Sep 2026 23:17:17 +0000"
-        },
-        {
-          "title": "The Warriors could trade Draymond Green at the trade deadline if their season goes south, per @ThompsonScribe \"This might be the time, like right now, we’re gonna figure out what happens for the next future. I think by the trade deadline, we’ll know ‘this is g",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1IYkNZZE1OcVFUaGZMNG9NamUtZmlBMmVmNjg0aVdQeV96cFp2Z0xnRUVxbmlCaTJ2bkZzSHZlbTNySnFsYXhkZ05PZXpYSG1aTUJJa0ZNQzhucnZIVVI4SklzUVlvUQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "The Warriors could trade Draymond Green at the trade deadline if their season goes south, per @ThompsonScribe \"This might be the time, like right now, we’re gonna figure out what happens for the next future. I think by the trade deadline, we’ll know ‘this is g x.com",
-          "published": "Tue, 15 Sep 2026 16:01:43 GMT"
-        },
-        {
-          "title": "NBA Trade Rumors: Warriors’ Draymond Green & Expiring Contracts to Deal",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWU1kdFV2Nk0yN0w1WHdJQWxkc2hDa0tuVjl5M19qa2pYYm1fUlRNUUNhNXVIWF93TzJQZU83U3ZmT2FwMzFvUU9Wc1JPQ2QxQkowN0JLV3JUak1fVXY5RkZsdVZGdzZxbWdNckc5b2pRRV9jTG92MldtTXdQaVVGWWdPbDJmbDdxdGZua19hUzZLNmxiWTlYd0t3?oc=5",
-          "publisher": "heavy.com",
-          "kind": "article",
-          "snippet": "NBA Trade Rumors: Warriors’ Draymond Green & Expiring Contracts to Deal heavy.com",
-          "published": "Wed, 16 Sep 2026 13:07:14 GMT"
-        }
-      ]
-    },
-    {
       "id": "los-angeles-lakers-projected-15-man-roster-2026-55650704",
       "slug": "los-angeles-lakers-projected-15-man-roster-2026-55650704",
       "sport": "basketball",
       "headline": "Los Angeles Lakers Star Voted One of the Most Overrated Players in NBA by Peers",
-      "blurb": "Los Angeles Lakers Star Voted One of the Most Overrated Players in NBA by Peers heavy.com",
-      "summary": "Walker Kessler, Quentin Grimes, Austin Reaves, Collin Sexton and Jake LaRavia: Los Angeles Lakers Star Voted One of the Most Overrated Players in NBA by Peers heavy.com The Los Angeles Lakers projected 15-man roster for the 2026-27 season: PG: Luka Dončić SG: Austin Reaves SF: Quentin Grimes PF: Jake LaRavia C: Walker Kessler Bench: • Collin Sexton • Cameron Carr • Mattise Thybulle • Sandro Mamukelashvili • Kevon x.com NBA 2026 Offseason Check-In: Los Angeles Lakers hoopsrumors.com Aggregated from heavy.com, x.com, hoopsrumors.com, sports.yahoo.com.",
+      "blurb": "NBA 2026 Offseason Check-In: Los Angeles Lakers Hoops Rumors",
+      "summary": "Walker Kessler, Quentin Grimes, Austin Reaves, Collin Sexton and Jake LaRavia: NBA 2026 Offseason Check-In: Los Angeles Lakers Hoops Rumors The Los Angeles Lakers projected 15-man roster for the 2026-27 season: PG: Luka Dončić SG: Austin Reaves SF: Quentin Grimes PF: Jake LaRavia C: Walker Kessler Bench: • Collin Sexton • Cameron Carr • Mattise Thybulle • Sandro Mamukelashvili • Kevon x.com NBA 2026 Offseason Check-In: Los Angeles Lakers hoopsrumors.com Aggregated from Hoops Rumors, x.com, hoopsrumors.com, heavy.com, sports.yahoo.com.",
       "category": "injury",
       "published": "2014-01-10T08:00:00Z",
       "updated": "2026-09-14T20:40:20Z",
@@ -4577,6 +4694,44 @@
           "kind": "article",
           "snippet": "When the Washington Wizards started their rebuild in 2023, rotation debates centered around Deni Avdija versus Corey Kispert for a starting spot and whether Mike Muscala or Danilo Gallinari would back up Daniel Gafford. Three years later, Bilal Coulibaly is the lone holdover from",
           "published": "Tue, 15 Sep 2026 12:00:00 +0000"
+        }
+      ]
+    },
+    {
+      "id": "san-antonio-spurs-lebron-james-dream-trade-target-11cfdc30",
+      "slug": "san-antonio-spurs-lebron-james-dream-trade-target-11cfdc30",
+      "sport": "basketball",
+      "headline": "San Antonio Spurs Have LeBron James' Dream Trade Target",
+      "blurb": "NBA 2026 Offseason Check-In: San Antonio Spurs Hoops Rumors",
+      "summary": "LeBron James: NBA 2026 Offseason Check-In: San Antonio Spurs Hoops Rumors San Antonio Spurs Have LeBron James' Dream Trade Target roundtable.io Aggregated from Hoops Rumors, roundtable.io.",
+      "category": "trade",
+      "published": "2026-08-23T07:00:00Z",
+      "updated": "2026-09-16T12:38:47Z",
+      "players": [
+        {
+          "key": "lebron james",
+          "name": "LeBron James",
+          "slug": "lebron-james",
+          "pos": "SF",
+          "team": "LAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "San Antonio Spurs Have LeBron James' Dream Trade Target",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdHNBQkN6MG8zTVhDMHZ2OUhfcTZqZ25qR2xOZE1odVl6cWItNWZNSzk1VF9SUUx6QjhHQXBBb3c2c2xHYngxUmlaLVh3ejJfQno1RzB4QzBQNmM4OTh6dHdMdUlsamx2VThFMlBMSVZSNDlXOW9MN0NDT0x1ZG83cEJIc0FMQVlJV0xqd3lIWWVNQ3lzV1RWYWZSZ2Y4dms?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "San Antonio Spurs Have LeBron James' Dream Trade Target roundtable.io",
+          "published": "Wed, 16 Sep 2026 12:38:47 GMT"
+        },
+        {
+          "title": "NBA 2026 Offseason Check-In: San Antonio Spurs",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOMjBvVkFPUC03cHo0bElETnhmakxFaG5qa2QwM0VIVEV6bFRZT3hyUVBOV2NESUxYeDAtQzBMZEpZcW95VmFWYVdScEs0UnNYVUZJb0dMUThZdms5MTJJUk9MWEFQQzhwdmlZaGtVS1E3Mzh1b1hRb1VxRGxQekNoMkc0eEQyRGdUdkZlT0JJRQ?oc=5",
+          "publisher": "Hoops Rumors",
+          "kind": "article",
+          "snippet": "NBA 2026 Offseason Check-In: San Antonio Spurs Hoops Rumors",
+          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
         }
       ]
     },
@@ -5081,44 +5236,6 @@
       ]
     },
     {
-      "id": "san-antonio-spurs-lebron-james-dream-trade-target-11cfdc30",
-      "slug": "san-antonio-spurs-lebron-james-dream-trade-target-11cfdc30",
-      "sport": "basketball",
-      "headline": "San Antonio Spurs Have LeBron James' Dream Trade Target",
-      "blurb": "NBA 2026 Offseason Check-In: San Antonio Spurs Hoops Rumors",
-      "summary": "LeBron James: NBA 2026 Offseason Check-In: San Antonio Spurs Hoops Rumors San Antonio Spurs Have LeBron James' Dream Trade Target roundtable.io Aggregated from Hoops Rumors, roundtable.io.",
-      "category": "trade",
-      "published": "2026-08-23T07:00:00Z",
-      "updated": "2026-09-16T12:38:47Z",
-      "players": [
-        {
-          "key": "lebron james",
-          "name": "LeBron James",
-          "slug": "lebron-james",
-          "pos": "SF",
-          "team": "LAL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "San Antonio Spurs Have LeBron James' Dream Trade Target",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdHNBQkN6MG8zTVhDMHZ2OUhfcTZqZ25qR2xOZE1odVl6cWItNWZNSzk1VF9SUUx6QjhHQXBBb3c2c2xHYngxUmlaLVh3ejJfQno1RzB4QzBQNmM4OTh6dHdMdUlsamx2VThFMlBMSVZSNDlXOW9MN0NDT0x1ZG83cEJIc0FMQVlJV0xqd3lIWWVNQ3lzV1RWYWZSZ2Y4dms?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "San Antonio Spurs Have LeBron James' Dream Trade Target roundtable.io",
-          "published": "Wed, 16 Sep 2026 12:38:47 GMT"
-        },
-        {
-          "title": "NBA 2026 Offseason Check-In: San Antonio Spurs",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOMjBvVkFPUC03cHo0bElETnhmakxFaG5qa2QwM0VIVEV6bFRZT3hyUVBOV2NESUxYeDAtQzBMZEpZcW95VmFWYVdScEs0UnNYVUZJb0dMUThZdms5MTJJUk9MWEFQQzhwdmlZaGtVS1E3Mzh1b1hRb1VxRGxQekNoMkc0eEQyRGdUdkZlT0JJRQ?oc=5",
-          "publisher": "Hoops Rumors",
-          "kind": "article",
-          "snippet": "NBA 2026 Offseason Check-In: San Antonio Spurs Hoops Rumors",
-          "published": "Sun, 23 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "mike-conley-payton-pritchard-already-connecting-off-court-7fa9d4f6",
       "slug": "mike-conley-payton-pritchard-already-connecting-off-court-7fa9d4f6",
       "sport": "basketball",
@@ -5152,6 +5269,36 @@
           "kind": "article",
           "snippet": "Conley and Pritchard have been playing five-on-five and one-on-one together as the Celtics get ready for training camp.",
           "published": "Wed, 16 Sep 2026 05:13:22 +0000"
+        }
+      ]
+    },
+    {
+      "id": "paul-george-can-still-change-defense-cbfdb59c",
+      "slug": "paul-george-can-still-change-defense-cbfdb59c",
+      "sport": "basketball",
+      "headline": "Paul George Can Still Change Games on Defense",
+      "blurb": "Paul George’s age and injury history raise questions, but his defensive film offers plenty of optimism",
+      "summary": "Paul George’s age and injury history raise questions, but his defensive film offers plenty of optimism Board reading of SB Nation.",
+      "category": "injury",
+      "published": "2026-09-16T10:00:00Z",
+      "updated": "2026-09-16T10:00:00Z",
+      "players": [
+        {
+          "key": "paul george",
+          "name": "Paul George",
+          "slug": "paul-george",
+          "pos": "SF",
+          "team": "PHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paul George Can Still Change Games on Defense",
+          "url": "https://sports.yahoo.com/articles/paul-george-still-change-games-100000752.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Paul George’s age and injury history raise questions, but his defensive film offers plenty of optimism",
+          "published": "Wed, 16 Sep 2026 10:00:00 +0000"
         }
       ]
     },
@@ -5200,32 +5347,32 @@
       ]
     },
     {
-      "id": "paul-george-can-still-change-defense-cbfdb59c",
-      "slug": "paul-george-can-still-change-defense-cbfdb59c",
+      "id": "ranking-roster-caris-levert-slides-16-10b5cada",
+      "slug": "ranking-roster-caris-levert-slides-16-10b5cada",
       "sport": "basketball",
-      "headline": "Paul George Can Still Change Games on Defense",
-      "blurb": "Paul George’s age and injury history raise questions, but his defensive film offers plenty of optimism",
-      "summary": "Paul George’s age and injury history raise questions, but his defensive film offers plenty of optimism Board reading of SB Nation.",
-      "category": "injury",
-      "published": "2026-09-16T10:00:00Z",
-      "updated": "2026-09-16T10:00:00Z",
+      "headline": "Ranking the Roster: Caris LeVert slides in at 16",
+      "blurb": "Ranking the Roster: Caris LeVert slides in at 16",
+      "summary": "Ranking the Roster: Caris LeVert slides in at 16 Board reading of SB Nation.",
+      "category": "roster",
+      "published": "2026-09-16T12:00:00Z",
+      "updated": "2026-09-16T12:00:00Z",
       "players": [
         {
-          "key": "paul george",
-          "name": "Paul George",
-          "slug": "paul-george",
-          "pos": "SF",
-          "team": "PHI"
+          "key": "caris levert",
+          "name": "Caris LeVert",
+          "slug": "caris-levert",
+          "pos": "SG",
+          "team": "ATL"
         }
       ],
       "sources": [
         {
-          "title": "Paul George Can Still Change Games on Defense",
-          "url": "https://sports.yahoo.com/articles/paul-george-still-change-games-100000752.html",
+          "title": "Ranking the Roster: Caris LeVert slides in at 16",
+          "url": "https://sports.yahoo.com/articles/ranking-roster-caris-levert-slides-120000765.html",
           "publisher": "SB Nation",
           "kind": "article",
-          "snippet": "Paul George’s age and injury history raise questions, but his defensive film offers plenty of optimism",
-          "published": "Wed, 16 Sep 2026 10:00:00 +0000"
+          "snippet": "The journeyman is up next.",
+          "published": "Wed, 16 Sep 2026 12:00:00 +0000"
         }
       ]
     },
@@ -5509,36 +5656,6 @@
       ]
     },
     {
-      "id": "ranking-roster-caris-levert-slides-16-10b5cada",
-      "slug": "ranking-roster-caris-levert-slides-16-10b5cada",
-      "sport": "basketball",
-      "headline": "Ranking the Roster: Caris LeVert slides in at 16",
-      "blurb": "Ranking the Roster: Caris LeVert slides in at 16",
-      "summary": "Ranking the Roster: Caris LeVert slides in at 16 Board reading of SB Nation.",
-      "category": "roster",
-      "published": "2026-09-16T12:00:00Z",
-      "updated": "2026-09-16T12:00:00Z",
-      "players": [
-        {
-          "key": "caris levert",
-          "name": "Caris LeVert",
-          "slug": "caris-levert",
-          "pos": "SG",
-          "team": "ATL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ranking the Roster: Caris LeVert slides in at 16",
-          "url": "https://sports.yahoo.com/articles/ranking-roster-caris-levert-slides-120000765.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The journeyman is up next.",
-          "published": "Wed, 16 Sep 2026 12:00:00 +0000"
-        }
-      ]
-    },
-    {
       "id": "why-didn-t-duke-coach-join-cooper-flagg-262663cc",
       "slug": "why-didn-t-duke-coach-join-cooper-flagg-262663cc",
       "sport": "basketball",
@@ -5565,6 +5682,66 @@
           "kind": "article",
           "snippet": "Why Didn't Duke Coach Join Cooper Flagg's Dallas Mavs? roundtable.io",
           "published": "Wed, 16 Sep 2026 12:58:14 GMT"
+        }
+      ]
+    },
+    {
+      "id": "few-hours-ago-mitchell-robinson-posted-facebook-car-9d474349",
+      "slug": "few-hours-ago-mitchell-robinson-posted-facebook-car-9d474349",
+      "sport": "basketball",
+      "headline": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning. \"Prayers for my little…",
+      "blurb": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning.",
+      "summary": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning. \"Prayers for my little brother ✝️ my dawg can’t catch a break 🫤\" Zeek, the man in the photo, was hit by a car while out for a jog. Board reading of x.com.",
+      "category": "injury",
+      "published": "2026-09-15T21:52:13Z",
+      "updated": "2026-09-15T21:52:13Z",
+      "players": [
+        {
+          "key": "mitchell robinson",
+          "name": "Mitchell Robinson",
+          "slug": "mitchell-robinson",
+          "pos": "C",
+          "team": "NYK"
+        }
+      ],
+      "sources": [
+        {
+          "title": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning. \"Prayers for my little brother ✝️ my dawg can’t catch a break 🫤\" Zeek, the man in the photo, was hit by a car while out for a jog. Robinson was going",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRc25fVTdGWUN0WFJzdEtnNm8tVW84aDJmWGltc3lQcUNUSklTeGRiZGVzWmc4Y0swT3pkNGRjSl9zbTMyQkRDZ256WFZSZHZuZTVWdFgwZ1dESWlETXNnMEVqLWU4QQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning. \"Prayers for my little brother ✝️ my dawg can’t catch a break 🫤\" Zeek, the man in the photo, was hit by a car while out for a jog. Robinson was going x.com",
+          "published": "Tue, 15 Sep 2026 21:52:13 GMT"
+        }
+      ]
+    },
+    {
+      "id": "aaron-gordon-he-s-ready-go-4d06b374",
+      "slug": "aaron-gordon-he-s-ready-go-4d06b374",
+      "sport": "basketball",
+      "headline": "Aaron Gordon: Says he's ready to go",
+      "blurb": "Gordon (calf) said he got his mind and body right during the offseason, and he's \"ready to go\" for the 2026-27 season, Harrison Wind of TheDNVR.com reports.",
+      "summary": "Aaron Gordon: Gordon (calf) said he got his mind and body right during the offseason, and he's \"ready to go\" for the 2026-27 season, Harrison Wind of TheDNVR.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
+      "category": "injury",
+      "published": "2026-09-15T21:25:17Z",
+      "updated": "2026-09-15T21:25:17Z",
+      "players": [
+        {
+          "key": "aaron gordon",
+          "name": "Aaron Gordon",
+          "slug": "aaron-gordon",
+          "pos": "PF",
+          "team": "DEN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Aaron Gordon: Says he's ready to go",
+          "url": "https://www.rotowire.com//basketball/player/aaron-gordon-3577",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Gordon (calf) said he got his mind and body right during the offseason, and he's \"ready to go\" for the 2026-27 season, Harrison Wind of TheDNVR.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Sun, 13 Sep 2026 6:28:00 PM PDT"
         }
       ]
     },
@@ -5681,66 +5858,6 @@
           "kind": "article",
           "snippet": "NBA Trade Board 4.0: Giannis Antetokounmpo, Ja Morant and others still available - The Athletic The New York Times",
           "published": "Wed, 04 Feb 2026 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "few-hours-ago-mitchell-robinson-posted-facebook-car-9d474349",
-      "slug": "few-hours-ago-mitchell-robinson-posted-facebook-car-9d474349",
-      "sport": "basketball",
-      "headline": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning. \"Prayers for my little…",
-      "blurb": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning.",
-      "summary": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning. \"Prayers for my little brother ✝️ my dawg can’t catch a break 🫤\" Zeek, the man in the photo, was hit by a car while out for a jog. Board reading of x.com.",
-      "category": "injury",
-      "published": "2026-09-15T21:52:13Z",
-      "updated": "2026-09-15T21:52:13Z",
-      "players": [
-        {
-          "key": "mitchell robinson",
-          "name": "Mitchell Robinson",
-          "slug": "mitchell-robinson",
-          "pos": "C",
-          "team": "NYK"
-        }
-      ],
-      "sources": [
-        {
-          "title": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning. \"Prayers for my little brother ✝️ my dawg can’t catch a break 🫤\" Zeek, the man in the photo, was hit by a car while out for a jog. Robinson was going",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRc25fVTdGWUN0WFJzdEtnNm8tVW84aDJmWGltc3lQcUNUSklTeGRiZGVzWmc4Y0swT3pkNGRjSl9zbTMyQkRDZ256WFZSZHZuZTVWdFgwZ1dESWlETXNnMEVqLWU4QQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "A few hours ago, Mitchell Robinson posted this on Facebook about a car accident that happened this morning. \"Prayers for my little brother ✝️ my dawg can’t catch a break 🫤\" Zeek, the man in the photo, was hit by a car while out for a jog. Robinson was going x.com",
-          "published": "Tue, 15 Sep 2026 21:52:13 GMT"
-        }
-      ]
-    },
-    {
-      "id": "aaron-gordon-he-s-ready-go-4d06b374",
-      "slug": "aaron-gordon-he-s-ready-go-4d06b374",
-      "sport": "basketball",
-      "headline": "Aaron Gordon: Says he's ready to go",
-      "blurb": "Gordon (calf) said he got his mind and body right during the offseason, and he's \"ready to go\" for the 2026-27 season, Harrison Wind of TheDNVR.com reports.",
-      "summary": "Aaron Gordon: Gordon (calf) said he got his mind and body right during the offseason, and he's \"ready to go\" for the 2026-27 season, Harrison Wind of TheDNVR.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
-      "category": "injury",
-      "published": "2026-09-15T21:25:17Z",
-      "updated": "2026-09-15T21:25:17Z",
-      "players": [
-        {
-          "key": "aaron gordon",
-          "name": "Aaron Gordon",
-          "slug": "aaron-gordon",
-          "pos": "PF",
-          "team": "DEN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Aaron Gordon: Says he's ready to go",
-          "url": "https://www.rotowire.com//basketball/player/aaron-gordon-3577",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "Gordon (calf) said he got his mind and body right during the offseason, and he's \"ready to go\" for the 2026-27 season, Harrison Wind of TheDNVR.com reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Sun, 13 Sep 2026 6:28:00 PM PDT"
         }
       ]
     },
@@ -5930,73 +6047,6 @@
           "kind": "x",
           "snippet": "\"We've got an unbelievable roster, unbelievable coach... I've always admired everything Boston has done and stood for.\" Paul George on what he brings to the table for the @celtics and his excitement about joining the team ☘️ He'll make his debut for Boston x.com",
           "published": "Tue, 15 Sep 2026 17:36:44 GMT"
-        }
-      ]
-    },
-    {
-      "id": "nuggets-emerged-pursuit-cam-whitmore-thesteinline-whitmore-recently-efe199a5",
-      "slug": "nuggets-emerged-pursuit-cam-whitmore-thesteinline-whitmore-recently-efe199a5",
-      "sport": "basketball",
-      "headline": "The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine. Whitmore was recently waived by Cleveland…",
-      "blurb": "The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine.",
-      "summary": "Peyton Watson and Cam Whitmore: The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine. Whitmore was recently waived by Cleveland after being acquired in the five-team Peyton Watson trade. (https://t.co/O9ImrooJoG) x.com Board reading of x.com.",
-      "category": "trade",
-      "published": "2026-09-15T02:47:47Z",
-      "updated": "2026-09-15T02:47:47Z",
-      "players": [
-        {
-          "key": "peyton watson",
-          "name": "Peyton Watson",
-          "slug": "peyton-watson",
-          "pos": "SF",
-          "team": "DEN"
-        },
-        {
-          "key": "cam whitmore",
-          "name": "Cam Whitmore",
-          "slug": "cam-whitmore",
-          "pos": "SF",
-          "team": "HOU"
-        }
-      ],
-      "sources": [
-        {
-          "title": "The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine. Whitmore was recently waived by Cleveland after being acquired in the five-team Peyton Watson trade. (https://t.co/O9ImrooJoG)",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xcUFQRlRQYklQWFpDOWZlSy1BMlI5d2huY20xWWxrWGpVb09zeFBmSmlHT3Mwc3pyNmhzRTBQU2ZTOWdZRzU3YzlGSzlOX1dvZmV1RTdMaENFdw?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine. Whitmore was recently waived by Cleveland after being acquired in the five-team Peyton Watson trade. (https://t.co/O9ImrooJoG) x.com",
-          "published": "Tue, 15 Sep 2026 02:47:47 GMT"
-        }
-      ]
-    },
-    {
-      "id": "didn-t-enough-evidence-suspend-kawhi-leonard-shamscharania-ff50211d",
-      "slug": "didn-t-enough-evidence-suspend-kawhi-leonard-shamscharania-ff50211d",
-      "sport": "basketball",
-      "headline": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were…",
-      "blurb": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were going to go down the path of voiding…",
-      "summary": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were going to go down the path of voiding Kawhi Leonard's contract or administering a suspension. Board reading of x.com.",
-      "category": "roster",
-      "published": "2026-09-15T16:05:49Z",
-      "updated": "2026-09-15T16:05:49Z",
-      "players": [
-        {
-          "key": "kawhi leonard",
-          "name": "Kawhi Leonard",
-          "slug": "kawhi-leonard",
-          "pos": "SF",
-          "team": "LAC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were going to go down the path of voiding Kawhi Leonard's contract or administering a suspension. And when you look",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE44TEotU1RRdHZzT2wtUnNCOTgzLWt5X21KaGpLMlNvRjkwbkx3b1AtXzM2a01FVjBJOHZlX2Q1R1plU0VEVkt3ZHV1VUhYUV9qbElWN2Y4dmZIUW5vVmFNZEcxT1ZrUQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were going to go down the path of voiding Kawhi Leonard's contract or administering a suspension. And when you look x.com",
-          "published": "Tue, 15 Sep 2026 16:05:49 GMT"
         }
       ]
     },
@@ -12170,6 +12220,73 @@
       ]
     },
     {
+      "id": "nuggets-emerged-pursuit-cam-whitmore-thesteinline-whitmore-recently-efe199a5",
+      "slug": "nuggets-emerged-pursuit-cam-whitmore-thesteinline-whitmore-recently-efe199a5",
+      "sport": "basketball",
+      "headline": "The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine. Whitmore was recently waived by Cleveland…",
+      "blurb": "The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine.",
+      "summary": "Peyton Watson and Cam Whitmore: The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine. Whitmore was recently waived by Cleveland after being acquired in the five-team Peyton Watson trade. (https://t.co/O9ImrooJoG) x.com Board reading of x.com.",
+      "category": "trade",
+      "published": "2026-09-15T02:47:47Z",
+      "updated": "2026-09-15T02:47:47Z",
+      "players": [
+        {
+          "key": "peyton watson",
+          "name": "Peyton Watson",
+          "slug": "peyton-watson",
+          "pos": "SF",
+          "team": "DEN"
+        },
+        {
+          "key": "cam whitmore",
+          "name": "Cam Whitmore",
+          "slug": "cam-whitmore",
+          "pos": "SF",
+          "team": "HOU"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine. Whitmore was recently waived by Cleveland after being acquired in the five-team Peyton Watson trade. (https://t.co/O9ImrooJoG)",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xcUFQRlRQYklQWFpDOWZlSy1BMlI5d2huY20xWWxrWGpVb09zeFBmSmlHT3Mwc3pyNmhzRTBQU2ZTOWdZRzU3YzlGSzlOX1dvZmV1RTdMaENFdw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The Nuggets have emerged as a team to watch in pursuit of Cam Whitmore, per @TheSteinLine. Whitmore was recently waived by Cleveland after being acquired in the five-team Peyton Watson trade. (https://t.co/O9ImrooJoG) x.com",
+          "published": "Tue, 15 Sep 2026 02:47:47 GMT"
+        }
+      ]
+    },
+    {
+      "id": "didn-t-enough-evidence-suspend-kawhi-leonard-shamscharania-ff50211d",
+      "slug": "didn-t-enough-evidence-suspend-kawhi-leonard-shamscharania-ff50211d",
+      "sport": "basketball",
+      "headline": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were…",
+      "blurb": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were going to go down the path of voiding…",
+      "summary": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were going to go down the path of voiding Kawhi Leonard's contract or administering a suspension. Board reading of x.com.",
+      "category": "roster",
+      "published": "2026-09-15T16:05:49Z",
+      "updated": "2026-09-15T16:05:49Z",
+      "players": [
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were going to go down the path of voiding Kawhi Leonard's contract or administering a suspension. And when you look",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE44TEotU1RRdHZzT2wtUnNCOTgzLWt5X21KaGpLMlNvRjkwbkx3b1AtXzM2a01FVjBJOHZlX2Q1R1plU0VEVkt3ZHV1VUhYUV9qbElWN2Y4dmZIUW5vVmFNZEcxT1ZrUQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The NBA didn’t have enough evidence to suspend Kawhi Leonard, per @ShamsCharania “They had to have every form of evidence if they were going to go down the path of voiding Kawhi Leonard's contract or administering a suspension. And when you look x.com",
+          "published": "Tue, 15 Sep 2026 16:05:49 GMT"
+        }
+      ]
+    },
+    {
       "id": "austin-reaves-gets-concerning-trade-lakers-even-begins-33108ebc",
       "slug": "austin-reaves-gets-concerning-trade-lakers-even-begins-33108ebc",
       "sport": "basketball",
@@ -12248,36 +12365,6 @@
           "kind": "x",
           "snippet": "\"The Celtic fan base don't want to hear that type of nonsense.\" @KendrickPerkins reacts to Paul George's introductory press conference 🏀 x.com",
           "published": "Tue, 15 Sep 2026 19:51:43 GMT"
-        }
-      ]
-    },
-    {
-      "id": "bounce-donovan-mitchell-s-cavaliers-arrival-stems-15-433ae872",
-      "slug": "bounce-donovan-mitchell-s-cavaliers-arrival-stems-15-433ae872",
-      "sport": "basketball",
-      "headline": "The Bounce: Donovan Mitchell’s Cavaliers arrival stems from a 15-year-old trade",
-      "blurb": "The Bounce Newsletter | This is The Athletic’s daily NBA newsletter.",
-      "summary": "Donovan Mitchell: The Bounce Newsletter | This is The Athletic’s daily NBA newsletter. Sign up here to receive The Bounce directly in your inbox. The official meteorological end of summer is approaching. Board reading of The Athletic.",
-      "category": "trade",
-      "published": "2026-09-15T14:31:05Z",
-      "updated": "2026-09-15T14:31:05Z",
-      "players": [
-        {
-          "key": "donovan mitchell",
-          "name": "Donovan Mitchell",
-          "slug": "donovan-mitchell",
-          "pos": "SG",
-          "team": "CLE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "The Bounce: Donovan Mitchell’s Cavaliers arrival stems from a 15-year-old trade",
-          "url": "https://sports.yahoo.com/articles/bounce-donovan-mitchell-cavaliers-arrival-143105740.html",
-          "publisher": "The Athletic",
-          "kind": "article",
-          "snippet": "The Bounce Newsletter | This is The Athletic’s daily NBA newsletter. Sign up here to receive The Bounce directly in your inbox. The official meteorological end of summer is approaching. I felt a crispness in the air this weekend as I stepped outside and sighed, “Ahh, yes, basketb",
-          "published": "Tue, 15 Sep 2026 14:31:05 +0000"
         }
       ]
     }
