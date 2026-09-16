@@ -1,7 +1,7 @@
 {
   "week": 2,
   "season": 2026,
-  "note": "Published Week 2 waiver lists after the opener. Kickers and team DST stay off this mash.",
+  "note": "Published Week 2 waiver lists after the opener, refreshed Sep 16. Kickers and team DST stay off this mash.",
   "long_core": ["RotoBaller (Mariano)", "SI OnSI"],
   "sources": [
     {
@@ -103,7 +103,45 @@
         {"rank": 5, "name": "Romeo Doubs", "pos": "WR", "team": "GB"},
         {"rank": 6, "name": "DeMario Douglas", "pos": "WR", "team": "NE"},
         {"rank": 7, "name": "Wan'Dale Robinson", "pos": "WR", "team": "NYG"},
-        {"rank": 8, "name": "Kyle Monangai", "pos": "RB", "team": "CHI"}
+        {"rank": 8, "name": "Kyle Monangai", "pos": "RB", "team": "CHI"},
+        {"rank": 9, "name": "Caleb Douglas", "pos": "WR", "team": "MIA"},
+        {"rank": 10, "name": "Rashod Bateman", "pos": "WR", "team": "BAL"},
+        {"rank": 11, "name": "Michael Mayer", "pos": "TE", "team": "LV"},
+        {"rank": 12, "name": "Jordan Love", "pos": "QB", "team": "GB"}
+      ]
+    },
+    {
+      "name": "RotoWire (Bartel)",
+      "url": "https://www.rotowire.com/football/article/fantasy-football-waiver-wire-pickups-for-week-2-134360",
+      "note": "Tuesday update. Black, Caleb Douglas, Vele, Lock, Mayer, Bateman.",
+      "players": [
+        {"rank": 1, "name": "Kaelon Black", "pos": "RB", "team": "SF"},
+        {"rank": 2, "name": "Caleb Douglas", "pos": "WR", "team": "MIA"},
+        {"rank": 3, "name": "Devaughn Vele", "pos": "WR", "team": "NO"},
+        {"rank": 4, "name": "Drew Lock", "pos": "QB", "team": "SEA"},
+        {"rank": 5, "name": "Michael Mayer", "pos": "TE", "team": "LV"},
+        {"rank": 6, "name": "Rashod Bateman", "pos": "WR", "team": "BAL"},
+        {"rank": 7, "name": "DeMario Douglas", "pos": "WR", "team": "NE"},
+        {"rank": 8, "name": "Kendre Miller", "pos": "RB", "team": "NO"},
+        {"rank": 9, "name": "Geno Smith", "pos": "QB", "team": "NYJ"},
+        {"rank": 10, "name": "Pat Freiermuth", "pos": "TE", "team": "PIT"},
+        {"rank": 11, "name": "Chris Brooks", "pos": "RB", "team": "GB"},
+        {"rank": 12, "name": "Kendrick Bourne", "pos": "WR", "team": "ARI"},
+        {"rank": 13, "name": "Kalif Raymond", "pos": "WR", "team": "CHI"},
+        {"rank": 14, "name": "Noah Fant", "pos": "TE", "team": "NO"}
+      ]
+    },
+    {
+      "name": "PFF (Jahnke)",
+      "url": "https://www.pff.com/news/fantasy-football-waiver-wire-targets-2026",
+      "note": "Black the headline back. Love, Shough, Willis, Miami receivers.",
+      "players": [
+        {"rank": 1, "name": "Kaelon Black", "pos": "RB", "team": "SF"},
+        {"rank": 2, "name": "Jordan Love", "pos": "QB", "team": "GB"},
+        {"rank": 3, "name": "Tyler Shough", "pos": "QB", "team": "NO"},
+        {"rank": 4, "name": "Malik Willis", "pos": "QB", "team": "MIA"},
+        {"rank": 5, "name": "Caleb Douglas", "pos": "WR", "team": "MIA"},
+        {"rank": 6, "name": "Malik Washington", "pos": "WR", "team": "MIA"}
       ]
     }
   ]

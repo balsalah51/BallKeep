@@ -2,18 +2,18 @@
   "week": 2,
   "players": [
     {
-      "name": "Bijan Robinson",
-      "rank": 1,
-      "team": "ATL",
-      "opp": "CAR",
-      "sos": 29
-    },
-    {
       "name": "Jahmyr Gibbs",
-      "rank": 2,
+      "rank": 1,
       "team": "DET",
       "opp": "@BUF",
       "sos": 25
+    },
+    {
+      "name": "Bijan Robinson",
+      "rank": 2,
+      "team": "ATL",
+      "opp": "CAR",
+      "sos": 29
     },
     {
       "name": "Christian McCaffrey",
@@ -23,18 +23,18 @@
       "sos": 4
     },
     {
-      "name": "Derrick Henry",
+      "name": "Jonathan Taylor",
       "rank": 4,
+      "team": "IND",
+      "opp": "@KC",
+      "sos": 14
+    },
+    {
+      "name": "Derrick Henry",
+      "rank": 5,
       "team": "BAL",
       "opp": "NO",
       "sos": 12
-    },
-    {
-      "name": "Kenneth Walker",
-      "rank": 5,
-      "team": "KC",
-      "opp": "IND",
-      "sos": 15
     },
     {
       "name": "James Cook",
@@ -44,18 +44,18 @@
       "sos": 23
     },
     {
-      "name": "Javonte Williams",
+      "name": "Kenneth Walker",
       "rank": 7,
+      "team": "KC",
+      "opp": "IND",
+      "sos": 15
+    },
+    {
+      "name": "Javonte Williams",
+      "rank": 8,
       "team": "DAL",
       "opp": "WAS",
       "sos": 31
-    },
-    {
-      "name": "Jonathan Taylor",
-      "rank": 8,
-      "team": "IND",
-      "opp": "@KC",
-      "sos": 14
     },
     {
       "name": "Ashton Jeanty",
@@ -65,11 +65,11 @@
       "sos": 6
     },
     {
-      "name": "Bucky Irving",
+      "name": "Omarion Hampton",
       "rank": 10,
-      "team": "TB",
-      "opp": "CLE",
-      "sos": 22
+      "team": "LAC",
+      "opp": "LV",
+      "sos": 27
     }
   ]
 }

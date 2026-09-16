@@ -286,6 +286,7 @@ Site: https://ballkeep.com
 - Hourly NFL news: https://ballkeep.com/news.html
 - Week 2 rankings: https://ballkeep.com/weekly.html
 - The Recap: https://ballkeep.com/the-recap.html
+- Week 2 predictions: https://ballkeep.com/week2-matchups.html
 - The Market: https://ballkeep.com/the-market.html
 - Week 1 archive: https://ballkeep.com/archive/week1/
 

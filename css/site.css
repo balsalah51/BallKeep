@@ -9,6 +9,7 @@
   --red-dark: #8e0b20;
   --line: rgba(16, 32, 51, 0.12);
   --shadow: 0 10px 30px rgba(16, 32, 51, 0.08);
+  --face-pos: center 35%;
   font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
 }
 * { box-sizing: border-box; }
@@ -268,11 +269,12 @@ tr:hover td { background: rgba(200,16,46,0.04); }
 .pos.RB { background: #d4eaf6; color: #17688a; }
 .pos.WR { background: #dce3ec; color: #102033; }
 .pos.TE { background: #ead6f2; color: #6b2d86; }
+.c-pick { font-weight: 800; color: var(--red); letter-spacing: 0.02em; }
 .rank-table tr.idp-row td.c-rank { color: var(--red); }
 .rank-table tr.idp-row td.c-name a { color: var(--red); }
 .rank-table tr.idp-row .pos { background: #f7d5db; color: var(--red-dark); }
 img.face {
-  width: 28px; height: 28px; border-radius: 50%; object-fit: cover; object-position: top center;
+  width: 28px; height: 28px; border-radius: 50%; object-fit: cover; object-position: var(--face-pos);
   border: 1px solid var(--red); background: var(--powder); flex: 0 0 28px;
   vertical-align: middle; margin-right: 8px;
 }
@@ -576,7 +578,7 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
   padding: 18px; box-shadow: var(--shadow); margin: 8px 0 18px;
 }
 .player-hero img {
-  width: 220px; height: 220px; object-fit: cover; object-position: top center;
+  width: 220px; height: 220px; object-fit: cover; object-position: var(--face-pos);
   border-radius: 16px; border: 4px solid var(--red); background: var(--powder-deep);
 }
 .player-hero h1, .player-hero h2 { margin: 0 0 6px; font-size: 34px; letter-spacing: -0.03em; }
@@ -612,7 +614,7 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
 .player-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .player-card { text-align: center; }
 .player-card img {
-  width: 100%; aspect-ratio: 1; object-fit: cover; object-position: top;
+  width: 100%; aspect-ratio: 1; object-fit: cover; object-position: var(--face-pos);
   border-radius: 14px; border: 3px solid var(--red); background: var(--powder-deep);
 }
 .player-card h3 { margin: 8px 0 0; font-size: 15px; }
@@ -651,7 +653,7 @@ body.opening-page .opening {
   font-weight: 800;
   margin: 0 0 10px;
 }
-.opening h1 {
+.opening h1, .opening .pred-hed {
   font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
   font-size: clamp(1.85rem, 4vw, 2.7rem);
   line-height: 1.12;
@@ -725,7 +727,7 @@ body.opening-page .opening {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: var(--face-pos);
   display: block;
 }
 .photo-cap {
@@ -818,7 +820,7 @@ body.opening-page .opening {
   width: 7.5rem;
   height: 7.5rem;
   object-fit: cover;
-  object-position: top;
+  object-position: var(--face-pos);
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--powder-deep);
@@ -877,14 +879,14 @@ body.opening-page .opening {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: var(--face-pos);
   display: block;
 }
 .market-card img {
   width: 100%;
   height: 8.5rem;
   object-fit: cover;
-  object-position: top center;
+  object-position: var(--face-pos);
   border-radius: 10px;
   margin-bottom: 10px;
   border: 1px solid var(--line);
@@ -929,7 +931,7 @@ body.mine-page h1 { color: #8a4c0a; }
 .league-team-cell small { display: block; color: var(--muted); }
 .league-faces { display: flex; }
 .league-faces img, .league-faces a {
-  width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: top center;
+  width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: var(--face-pos);
   border: 2px solid #fff; box-shadow: 0 0 0 1px var(--line); background: var(--powder-deep);
 }
 .league-faces a { display: block; margin-left: -10px; }
@@ -942,7 +944,7 @@ body.mine-page h1 { color: #8a4c0a; }
 .league-total { margin: 0 0 12px; font-size: 28px; font-weight: 800; color: var(--red); }
 .league-heroes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
 .league-hero-face img {
-  width: 100%; aspect-ratio: 1; object-fit: cover; object-position: top center;
+  width: 100%; aspect-ratio: 1; object-fit: cover; object-position: var(--face-pos);
   border-radius: 12px; border: 1px solid var(--line); background: var(--powder-deep);
 }
 .league-hero-face span { display: block; font-size: 12px; font-weight: 800; margin-top: 4px; }
@@ -984,7 +986,7 @@ small.wire { color: var(--red); font-weight: 800; letter-spacing: 0.04em; text-t
   .home-leads { grid-template-columns: 1fr; }
   table { font-size: 15px; }
   .trade-hits, .trade-board, .deal-grid { grid-template-columns: 1fr; }
-  .player-hero img { width: 100%; height: 220px; object-fit: cover; object-position: top center; }
+  .player-hero img { width: 100%; height: 220px; object-fit: cover; object-position: var(--face-pos); }
   .desk-only { display: none !important; }
   .table-wrap:has(table.rank-table) { overflow: visible; }
   table.rank-table thead { display: none; }
@@ -1019,6 +1021,12 @@ small.wire { color: var(--red); font-weight: 800; letter-spacing: 0.04em; text-t
   table.rank-table.faces .c-name a { min-width: 0; }
   table.rank-table .row-meta { display: block; font-size: 13px; color: var(--muted); font-weight: 700; margin-top: 2px; }
   table.rank-table .c-pos, table.rank-table .c-team, table.rank-table .c-age { display: none !important; }
+  table.rank-table .c-pick {
+    grid-column: 3; grid-row: 1 / span 2; align-self: center;
+    text-align: right; white-space: nowrap; font-size: 15px; font-weight: 800;
+    color: var(--red);
+  }
+  table.rank-table .c-pick ~ .c-val { display: none !important; }
   table.rank-table .c-val {
     grid-column: 3; grid-row: 1 / span 2; align-self: center;
     text-align: right; white-space: nowrap; font-size: 14px;
