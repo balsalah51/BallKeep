@@ -143,7 +143,7 @@ def test_football_nav_keeps_every_link():
         "Home", "The Keep", "The Board",
         "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
-        "Weekly", "The Recap", "Week 2 DST", "Week 2 K", "Week 2 Matchups", "Week 2 Waivers", "The Market", "Injuries",
+        "Weekly", "The Recap", "Week 2 DST", "Week 2 K", "Week 2 Predictions", "Week 2 Waivers", "The Market", "Injuries",
         "ADP", "Trade",
         "My Team",
         "Touches", "Players", "News", "The X", "Hot 'n' Cold",
@@ -472,6 +472,11 @@ def test_matchup_copy_winners():
     ]) == "SEA\nCHI\nDAL"
     assert ">Copy</button>" in later
     assert "BUF\nKC" in later
+    assert 'class="c-pick"' in html
+    assert 'class="c-pick"' in later
+    assert "desk-only\">Pick</th>" not in html
+    assert "<th>Pick</th>" in html or ">Pick</th>" in html
+    assert "Pick BUF" in later
 
 
 def test_classic_draft_check_table():
@@ -531,6 +536,7 @@ def test_visible_desk_copy_removed():
     for name in (
         "build_site.py", "weekly_pages.py", "weekly_kit.py", "special_teams.py",
         "build_bk.py", "build_bb.py", "build_pl.py",
+        "week2_boards.py", "week2_predictions.py", "the_recap.py",
     ):
         text = (root / name).read_text()
         for phrase in banned:
@@ -687,6 +693,23 @@ def test_week1_boards():
     assert games[0]["key"] == "NE@SEA"
 
 
+def test_week2_predictions_copy():
+    from week2_predictions import HEADLINE, predictions_article_html, predictions_teaser
+    html = predictions_article_html()
+    teaser = predictions_teaser()
+    assert HEADLINE in html
+    assert "\u2014" not in html
+    assert "desk" not in html.lower()
+    assert "looking at" not in html
+    for club in (
+        "BUF", "ATL", "BAL", "CHI", "CIN", "NE", "GB", "TB",
+        "PHI", "DEN", "LAC", "SEA", "DAL", "SF", "KC", "LAR",
+    ):
+        assert f"Pick: {club}" in html
+    assert "week2-matchups.html" in teaser
+    assert "Bills over Lions" in teaser
+
+
 def test_week2_boards():
     from week2_boards import (
         MATCH_SOURCES,
@@ -787,7 +810,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=58" in doc
+    assert "css/site.css?v=59" in doc
 
 
 if __name__ == "__main__":

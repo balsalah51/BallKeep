@@ -192,8 +192,17 @@ def _fav(spread_map):
 
 
 # Published straight-up cards. Unpicked games stay off that board.
-SN_W2 = {  # Sporting News, Sep 2026
-    "DET@BUF": "BUF", "JAX@DEN": "JAX", "MIA@SF": "SF",
+SN_W2 = {  # Sporting News, Bill Bender SU card, Sep 16
+    "DET@BUF": "BUF", "CAR@ATL": "CAR", "NO@BAL": "BAL", "MIN@CHI": "CHI",
+    "CIN@HOU": "CIN", "PIT@NE": "PIT", "GB@NYJ": "GB", "CLE@TB": "TB",
+    "PHI@TEN": "PHI", "JAX@DEN": "DEN", "LV@LAC": "LAC", "SEA@ARI": "SEA",
+    "WAS@DAL": "DAL", "MIA@SF": "SF", "IND@KC": "KC", "NYG@LAR": "LAR",
+}
+CBS_W2 = {  # John Breech, CBS Sports, Sep 15
+    "DET@BUF": "BUF", "CAR@ATL": "CAR", "NO@BAL": "BAL", "MIN@CHI": "CHI",
+    "CIN@HOU": "CIN", "PIT@NE": "NE", "GB@NYJ": "GB", "CLE@TB": "TB",
+    "PHI@TEN": "PHI", "JAX@DEN": "DEN", "LV@LAC": "LAC", "SEA@ARI": "ARI",
+    "WAS@DAL": "DAL", "MIA@SF": "SF", "IND@KC": "KC", "NYG@LAR": "LAR",
 }
 SPIN_W2 = {  # NFL Spin Zone score card
     "DET@BUF": "BUF",
@@ -229,6 +238,7 @@ POWER_W2 = {
 def match_maps() -> dict:
     return {
         "Sporting News": SN_W2,
+        "CBS Sports": CBS_W2,
         "NFL Spin Zone": SPIN_W2,
         "Sports Brackets": BRACKETS_W2,
         "Sportsnaut": NAUT_W2,
@@ -256,7 +266,8 @@ W2_K_SOURCES = [
 ]
 
 MATCH_SOURCES = [
-    ("Sporting News", "https://www.sportingnews.com/us/nfl/news/nfl-picks-predictions-against-spread-week-2/ac8832bceab0d79753295421", "Bills over Lions. Jaguars over Denver. 49ers over Miami."),
+    ("Sporting News", "https://www.sportingnews.com/us/nfl/news/nfl-picks-predictions-week-2/830bbe1e7598cf3caadc2a70", "Bill Bender's full SU card. Bills, Steelers, Bengals, Broncos."),
+    ("CBS Sports", "https://www.cbssports.com/nfl/news/nfl-week-2-picks-score-predictions/", "John Breech. Bills 38-31. Cardinals over Seattle. Full 16."),
     ("NFL Spin Zone", "https://nflspinzone.com/2026-nfl-picks-score-predictions-for-every-week-2-game-01m2fzpye5s3", "Bills 31-23 over Detroit."),
     ("Sports Brackets", "https://sportsbrackets.net/2026/09/14/2026-nfl-week-2-predictions/", "Full 16-game card. Bengals and Commanders fades."),
     ("Sportsnaut", "https://sportsnaut.com/nfl/nfl-week-2-predictions-2026-nfl-picks-this-week", "Bills 35-31. 49ers 35-17."),
@@ -320,7 +331,7 @@ W2_K_FAQ = [
     ("Who leads?", "Aubrey, Dicker, and Pineiro sit at the top of the mash."),
 ]
 W2_MATCH_FAQ = [
-    ("How are the win picks built?", "Published Week 2 cards: Sporting News, NFL Spin Zone, Sports Brackets, Sportsnaut, The Game Haus, the market favorite, Week 1 winners, and a short post-opener power board. Unpicked games on a board are skipped."),
+    ("How are the win picks built?", "Published Week 2 cards: Sporting News, CBS Sports, NFL Spin Zone, Sports Brackets, Sportsnaut, The Game Haus, the market favorite, Week 1 winners, and a short post-opener power board. Unpicked games on a board are skipped."),
     ("Is this a win chance?", "Away and Home are raw vote counts. The pick is the side with more published votes."),
     ("Is this a bet slip?", "It is a mash of public picks and the market. The favorite still wins most games because books and power boards overlap."),
 ]

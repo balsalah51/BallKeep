@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 15, 2026"
-LASTMOD = "2026-09-15"
+UPDATED = "September 16, 2026"
+LASTMOD = "2026-09-16"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -835,7 +835,7 @@ NAV_GROUPS = [
         ("the-recap.html", "The Recap"),
         ("week2-dst.html", "Week 2 DST"),
         ("week2-kickers.html", "Week 2 K"),
-        ("week2-matchups.html", "Week 2 Matchups"),
+        ("week2-matchups.html", "Week 2 Predictions"),
         ("waiver.html", "Week 2 Waivers"),
         ("the-market.html", "The Market"),
         ("injuries.html", "Injuries"),
@@ -864,7 +864,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 58
+CSS_VER = 59
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1179,7 +1179,7 @@ FB_SEO = {
     ),
     "weekly.html": (
         "Week 2 Fantasy Football Rankings 2026 | Ball Keep",
-        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (36 experts), RotoWire, and 4for4.",
+        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (sixty-plus experts, Sep 16), RotoWire, and 4for4.",
         "img/logo.jpg",
     ),
     "the-recap.html": (
@@ -1249,8 +1249,8 @@ FB_SEO = {
     ),
     "week2-matchups.html": (
         "Week 2 NFL Matchups and Win Predictions 2026 | Ball Keep",
-        "Week 2 win picks mashed from published cards: Sporting News, Sports Brackets, Sportsnaut, the market, and post-Week 1 power.",
-        "img/logo.jpg",
+        "Full Week 2 card with a pick for every game and a long essay. Bills over Lions on Thursday. Sixteen published winners in kickoff order.",
+        "img/players/josh-allen.png",
     ),
     "archive/week1/index.html": (
         "Week 1 Archive | Ball Keep",
@@ -1525,7 +1525,7 @@ FB_ALSO = {
         ("weekly.html", "Weekly", "Flex plus every position."),
         ("the-market.html", "The Market", "Buy low, sell high after the opener."),
         ("waiver.html", "Week 2 Waivers", "Coker, Black, Vele, Shough."),
-        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
+        ("week2-matchups.html", "Week 2 Predictions", "A pick for every game, plus the full essay."),
         ("archive/week1/index.html", "Week 1 archive", "Opening, DST, kickers, matchups, waivers."),
     ],
     "the-market.html": [
@@ -1563,7 +1563,7 @@ FB_ALSO = {
         ("weekly.html", "Weekly", "Full Week N boards."),
         ("the-recap.html", "The Recap", "Why these names moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
-        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
+        ("week2-matchups.html", "Week 2 Predictions", "A pick for every game, plus the full essay."),
     ],
     "adp.html": [
         ("board.html", "The Board", "Season PPR ranks."),
@@ -1582,34 +1582,34 @@ FB_ALSO = {
         ("weekly.html", "Weekly", "Start/sit around the report."),
         ("depth-charts.html", "Depth Charts", "Who is next up."),
         ("news.html", "BK News", "Hourly wire."),
-        ("week2-matchups.html", "Week 2 Matchups", "Win picks."),
+        ("week2-matchups.html", "Week 2 Predictions", "A pick for every game."),
     ],
     "depth-charts.html": [
         ("injuries.html", "Injuries", "Who is actually up."),
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("nfl-schedule.html", "NFL Schedule", "Full slate."),
-        ("week2-matchups.html", "Week 2 Matchups", "Win picks."),
+        ("week2-matchups.html", "Week 2 Predictions", "A pick for every game."),
     ],
     "week2-dst.html": [
         ("week2-kickers.html", "Week 2 Kickers", "This week's stream."),
-        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
+        ("week2-matchups.html", "Week 2 Predictions", "A pick for every game, plus the full essay."),
         ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("defenses.html", "Top Defenses", "Season-long DST."),
         ("weekly.html", "Weekly", "Skill start/sit."),
     ],
     "week2-kickers.html": [
         ("week2-dst.html", "Week 2 DST", "This week's stream."),
-        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
+        ("week2-matchups.html", "Week 2 Predictions", "A pick for every game, plus the full essay."),
         ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("nfl-schedule.html", "NFL Schedule", "Full slate."),
     ],
     "week2-matchups.html": [
+        ("the-recap.html", "The Recap", "The full Week 1 essay."),
         ("week2-dst.html", "Week 2 DST", "Start/sit defenses."),
         ("week2-kickers.html", "Week 2 Kickers", "Start/sit kickers."),
         ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
-        ("nfl-schedule.html", "NFL Schedule", "Full 2026 slate."),
-        ("defenses.html", "Top Defenses", "Season-long DST."),
+        ("weekly.html", "Weekly", "This week's skill boards."),
     ],
     "the-fence.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
@@ -1667,7 +1667,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
 """
 
 
-def board_page(title, path, body, extra_js="", extra_jsonld=None):
+def board_page(title, path, body, extra_js="", extra_jsonld=None, body_class=""):
     extra = also_on_desk(FB_ALSO.get(path) or [])
     ld = [breadcrumb_jsonld([
         ("Ball Keep", "https://ballkeep.com/"),
@@ -1684,6 +1684,7 @@ def board_page(title, path, body, extra_js="", extra_jsonld=None):
         crumbs=breadcrumbs([("Ball Keep", "index.html"), (title, None)]),
         extra_jsonld=ld,
         schema_type="CollectionPage",
+        body_class=body_class,
     )
 
 
@@ -1695,7 +1696,7 @@ def _rank_th(label):
         cls = "c-price"
     elif label == "Age":
         cls = "c-age"
-    elif label not in ("BK", "PK", "Player", "Pos", "Team", "Club"):
+    elif label not in ("BK", "PK", "Player", "Pos", "Team", "Club", "Game", "Day", "Pick"):
         cls = "desk-only"
     attr = f' class="{cls}"' if cls else ""
     return f"<th{attr}>{esc(label)}</th>"
@@ -1792,14 +1793,17 @@ def matchup_table(rows):
         prep = "vs" if r["key"] == "SF@LAR" else "at"
         game = f"{away} {prep} {home}"
         key = rank_search_key(game, "", r.get("spread") or "")
+        pick = r.get("pick") or ""
+        tv = r.get("tv") or ""
+        meta = " · ".join(x for x in (f"Pick {pick}" if pick else "", tv) if x)
         body.append(
             f'<tr data-pos="" data-name="{key}">'
             f'<td class="rk c-rank">{r.get("bk", "")}</td>'
             f'<td class="c-name"><strong>{esc(game)}</strong>'
-            f'<div class="row-meta">{esc(r.get("tv") or "")}</div></td>'
+            f'<div class="row-meta">{esc(meta)}</div></td>'
             f'<td class="c-team">{esc(r.get("day") or "")}</td>'
             f'<td class="desk-only">{esc(r.get("spread") or "")}</td>'
-            f'<td class="c-pos"><strong>{esc(r.get("pick") or "")}</strong></td>'
+            f'<td class="c-pick"><strong>{esc(pick)}</strong></td>'
             f'<td class="desk-only">{away} {r.get("away_n", 0)}</td>'
             f'<td class="desk-only">{home} {r.get("home_n", 0)}</td>'
             f'<td class="c-val val">{r.get("n", "")}</td>'
@@ -1819,7 +1823,7 @@ def matchup_table(rows):
     )
 
 
-def write_week_matchups(week, rows, sources, faq, note, heading="Boards in This Aggregate"):
+def write_week_matchups(week, rows, sources, faq, note, heading="Boards in This Aggregate", extra="", extra_jsonld=None, body_class=""):
     """Week N matchup page. Copy at the bottom ships with matchup_table."""
     path = f"week{week}-matchups.html"
     body = f"""
@@ -1827,12 +1831,18 @@ def write_week_matchups(week, rows, sources, faq, note, heading="Boards in This 
     <h1>Week {week} Matchups</h1>
     <p class="note">{note}</p>
     <div class="panel">{matchup_table(rows)}</div>
+    {extra}
     {sources_panel(sources, heading=heading)}
     {faq_html(faq, heading=f"How Week {week} matchups are built.")}
     """
+    ld = [faq_jsonld(faq)]
+    for blob in extra_jsonld or []:
+        if blob:
+            ld.append(blob)
     write(path, board_page(
         f"Week {week} Matchups", path, body,
-        extra_jsonld=[faq_jsonld(faq)],
+        extra_jsonld=ld,
+        body_class=body_class,
     ))
     return path
 
@@ -1907,6 +1917,7 @@ def seed_player_pages():
 def home_week_faces():
     """Faces and the recap teaser so the home week block feels like a room."""
     from the_recap import recap_teaser
+    from week2_predictions import predictions_teaser
     shots = [
         ("caleb-williams", "jpg", "Caleb Williams"),
         ("kenneth-walker", "jpg", "Kenneth Walker"),
@@ -1922,7 +1933,7 @@ def home_week_faces():
         f'width="120" height="120" loading="lazy" /></a>'
         for slug, ext, name in shots
     )
-    return recap_teaser() + f'<div class="home-faces" aria-label="Faces from Week 1">{pics}</div>'
+    return recap_teaser() + predictions_teaser() + f'<div class="home-faces" aria-label="Faces from Week 1">{pics}</div>'
 
 
 def home_rank_preview(rows, media, n=8):
@@ -2033,7 +2044,7 @@ def home_body_html(keep, board, media, stories=None):
         ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
         ("week2-dst.html", "Week 2 DST", "This week's stream."),
         ("week2-kickers.html", "Week 2 Kickers", "This week's stream."),
-        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
+        ("week2-matchups.html", "Week 2 Predictions", "A pick for every game, plus the full essay."),
         ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("the-market.html", "The Market", "Buy low, sell high after Week 1."),
         ("injuries.html", "Injuries", "ESPN designations."),
@@ -3143,7 +3154,7 @@ def write_explore_page():
         ("the-market.html", "The Market", "Buy low, sell high."),
         ("week2-dst.html", "Week 2 DST", "This week's stream."),
         ("week2-kickers.html", "Week 2 Kickers", "This week's stream."),
-        ("week2-matchups.html", "Week 2 Matchups", "Win picks."),
+        ("week2-matchups.html", "Week 2 Predictions", "A pick for every game."),
         ("waiver.html", "Week 2 Waivers", "Coker, Black, Shough."),
         ("archive/week1/index.html", "Week 1 archive", "Finished Week 1 boards."),
         ("injuries.html", "Injuries", "ESPN designations."),
@@ -3615,17 +3626,22 @@ def main():
             faq_jsonld(W2_K_FAQ),
         ],
     ))
+    from week2_predictions import PREDICTION_LD, predictions_article_html
     write_week_matchups(
         2,
         w2_match,
         W2_MATCH_SOURCES,
         W2_MATCH_FAQ,
         (
-            f"Win picks from {len(W2_MATCH_SOURCES)} published sources: Sporting News, NFL Spin Zone, "
-            "Sports Brackets, Sportsnaut, The Game Haus, the market favorite, Week 1 winners, and a short "
-            "post-opener power board. Unpicked games on a board are skipped. The pick is the side "
-            "with more votes. Away and Home are raw vote counts."
+            f"A pick for every Week 2 game, mashed from {len(W2_MATCH_SOURCES)} published sources: "
+            "Sporting News, CBS Sports, NFL Spin Zone, Sports Brackets, Sportsnaut, The Game Haus, "
+            "the market favorite, Week 1 winners, and a short post-opener power board. Unpicked games "
+            "on a board are skipped. The pick is the side with more votes. The essay under the table "
+            "walks the slate in kickoff order."
         ),
+        extra=predictions_article_html(),
+        extra_jsonld=PREDICTION_LD,
+        body_class="opening-page recap-page",
     )
     w1_pack = write_week1_archive(sys.modules[__name__], media)
     w1_dst = w1_pack["dst"]

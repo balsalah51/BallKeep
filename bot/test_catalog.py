@@ -463,6 +463,17 @@ def main():
     assert ">Copy</button>" in w2_m_html
     assert "navigator.clipboard" in w2_m_html
     assert "localStorage" not in w2_m_html
+    assert 'class="c-pick"' in w2_m_html
+    assert "<strong>BUF</strong>" in w2_m_html
+    assert "Pick BUF" in w2_m_html
+    assert "Sixteen games, a new Highmark" in w2_m_html
+    assert "Pick: BUF" in w2_m_html
+    assert "Pick: SF" in w2_m_html
+    assert "Pick: KC" in w2_m_html
+    assert "Pick: LAR" in w2_m_html
+    assert "\u2014" not in w2_m_html
+    assert "on a desk" not in w2_m_html
+    assert "every other desk" not in w2_m_html
     w1_dst_html = html_of("archive/week1/dst.html")
     assert "<h1>Week 1 DST</h1>" in w1_dst_html
     assert "Jacksonville Jaguars" in w1_dst_html
@@ -498,6 +509,8 @@ def main():
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
     assert "the-recap.html" in weekly_html
+    assert "week2-matchups.html" in weekly_html
+    assert "Bills over Lions" in weekly_html
     assert "Seahawks 13, Patriots 10" in weekly_html
     assert "Jahmyr Gibbs" in weekly_html
     opening_html = html_of("archive/week1/opening.html")

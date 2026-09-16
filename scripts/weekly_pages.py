@@ -11,6 +11,7 @@ from seo import (
 )
 from the_market import write_the_market
 from the_recap import recap_teaser, write_the_recap
+from week2_predictions import predictions_teaser
 from weekly_kit import (
     ADP_SOURCES,
     DEPTH_SOURCES,
@@ -140,8 +141,9 @@ def write_weekly_pages(b, nfl, media, board_rows):
     flex_body = f"""
     <p class="kicker">{label} · skill · Flex plus positions</p>
     <h1>Weekly</h1>
-    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points. The opener lives on <a href="the-recap.html">The Recap</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
+    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points. The opener lives on <a href="the-recap.html">The Recap</a>. The Week 2 card, with a pick on every line, lives on <a href="week2-matchups.html">Week 2 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
     {recap_teaser()}
+    {predictions_teaser()}
     <div class="grid-3">
       <a class="tile" href="weekly-qb.html"><h3>Week {week} QB</h3><p>{(boards['QB'] or [{'name':''}])[0]['name']} leads the quarterbacks.</p></a>
       <a class="tile" href="weekly-rb.html"><h3>Week {week} RB</h3><p>{(boards['RB'] or [{'name':''}])[0]['name']} opens the backfield.</p></a>
