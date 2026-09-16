@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 9, 2026"
-LASTMOD = "2026-09-09"
+UPDATED = "September 15, 2026"
+LASTMOD = "2026-09-15"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -36,12 +36,24 @@ from best_ball_boards import (  # noqa: E402
 )
 from special_teams import DST_SOURCES, K_SOURCES, dst_board, kicker_board  # noqa: E402
 from week1_boards import (  # noqa: E402
-    MATCH_SOURCES,
+    MATCH_SOURCES as W1_MATCH_SOURCES,
     W1_DST_SOURCES,
     W1_K_SOURCES,
     week1_dst_board,
     week1_kicker_board,
     week1_matchups,
+)
+from week1_archive import write_week1_archive  # noqa: E402
+from week2_boards import (  # noqa: E402
+    MATCH_SOURCES as W2_MATCH_SOURCES,
+    W2_DST_FAQ,
+    W2_DST_SOURCES,
+    W2_K_FAQ,
+    W2_K_SOURCES,
+    W2_MATCH_FAQ,
+    week2_dst_board,
+    week2_kicker_board,
+    week2_matchups,
 )
 from idp_board import FENCE_MIXED_SOURCES, fence_board  # noqa: E402
 from bpl_schedule import bpl_games, bpl_schedule_parts  # noqa: E402
@@ -455,28 +467,28 @@ ROOKIES = [
 ]
 
 HOT = [
-    {"name": "Parker Washington", "pos": "WR", "team": "JAX", "why": "RotoWire (Sep 9): Coen runs through the slot. Ranked with Higgins, Odunze, and Burden. Still acquirable while Jacksonville opens against a hard slate.", "src": "RotoWire"},
-    {"name": "De'Zhaun Stribling", "pos": "WR", "team": "SF", "why": "FantasyPros (Sep 8): projected Niners slot next to Evans and Deebo. Dynasty WR41. A 2027 second plus a third is the ask.", "src": "FantasyPros"},
-    {"name": "Garrett Wilson", "pos": "WR", "team": "NYJ", "why": "FantasyLife (Sep 8): 26, three 1,000-yard seasons already. Buy before the Week 1 reminder. Clean swap for Tate, or even a Nabers downgrade.", "src": "FantasyLife"},
-    {"name": "Oronde Gadsden II", "pos": "TE", "team": "LAC", "why": "FantasyPros + RotoBaller: Njoku and Kolar stole camp reps. Still a TE10 long view. Mid-to-late second is the buy.", "src": "FantasyPros, RotoBaller"},
-    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "Footballguys (Sep 9): ankle, out Week 1, market down to RB20. Buy the dip. Do not pay a future first.", "src": "Footballguys"},
-    {"name": "Javonte Williams", "pos": "RB", "team": "DAL", "why": "FantasyPros: Jaydon Blue cut. RB12 last year on 35 catches. Contenders can pay a late 2027 first.", "src": "FantasyPros"},
-    {"name": "Kaleb Johnson", "pos": "RB", "team": "GB", "why": "FantasyLife: Jacobs is exempt, Lloyd's health is the concern. A 2028 second is the price on the cheaper Packers path.", "src": "FantasyLife"},
-    {"name": "Kaelon Black", "pos": "RB", "team": "SF", "why": "FantasyLife (Sep 9): Shanahan third-rounder behind CMC. If you roster McCaffrey, get Black now.", "src": "FantasyLife"},
-    {"name": "Malachi Fields", "pos": "WR", "team": "NYG", "why": "RotoWire: penciled Giants WR2. Nabers may not be 100 percent. Stash while the room is cheap.", "src": "RotoWire"},
-    {"name": "Chris Bell", "pos": "WR", "team": "MIA", "why": "RotoWire: listed as a Dolphins starter. Biggest obstacle is Jalen Tolbert. Low-risk dart.", "src": "RotoWire"},
+    {"name": "Kenneth Walker", "pos": "RB", "team": "KC", "why": "Associated Press after Monday: 173 yards and two scores in a Chiefs debut. Rooms that still have him as a Seahawk leftover will sell cheap. Pay the new city.", "src": "Associated Press"},
+    {"name": "Jalen Coker", "pos": "WR", "team": "CAR", "why": "Sports Illustrated after Charlotte: eight of nine for 138 and two scores. Every major Week 2 waiver list has him first or second. Dynasty rooms can still buy the year-two leap.", "src": "Sports Illustrated"},
+    {"name": "Kaelon Black", "pos": "RB", "team": "SF", "why": "Fourteen carries in Melbourne behind McCaffrey. ESPN and FantasyPros already treat him as the handcuff of the week. Get him before the next cart.", "src": "ESPN, FantasyPros"},
+    {"name": "Drake Maye", "pos": "QB", "team": "NE", "why": "Three fourth-quarter picks in Seattle. The arm and the legs still play. Buy from the manager who watched Wednesday and closed the laptop.", "src": "NFL Network"},
+    {"name": "Puka Nacua", "pos": "WR", "team": "LAR", "why": "Seven points on a Thursday in Australia. The target tree is still his. Week 2 is the Giants at home. Pay the ugly opener.", "src": "The Recap"},
+    {"name": "Devaughn Vele", "pos": "WR", "team": "NO", "why": "Seven of nine for 69 and a score on 82 snaps next to Olave. RotoBaller and FantasyPros already have him on the wire. Stash the snap share.", "src": "RotoBaller, FantasyPros"},
+    {"name": "A.J. Brown", "pos": "WR", "team": "NE", "why": "High-ankle sprain, boot, three-to-four weeks. IR him if the league allows it. Contenders can buy the missed month.", "src": "NFL Network"},
+    {"name": "George Kittle", "pos": "TE", "team": "SF", "why": "Two catches, twelve yards, Achilles in the rearview. Shanahan metered him on purpose. That plan expires.", "src": "The Athletic"},
+    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "Missed the opener. The market already treated him like a ghost. The talent is still a Patriot backfield.", "src": "Footballguys"},
+    {"name": "Jaxon Smith-Njigba", "pos": "WR", "team": "SEA", "why": "Worked after Lock entered. The target stays the target when the quarterback changes. Buy any dip that treats Wednesday like a lost season.", "src": "The Athletic"},
 ]
 COLD = [
-    {"name": "Josh Jacobs", "pos": "RB", "team": "GB", "why": "FantasyPros: Commissioner's Exempt List, 28, nearly 2,000 career carries. FP would take a 2027 second.", "src": "FantasyPros"},
-    {"name": "Kyle Pitts", "pos": "TE", "team": "ATL", "why": "FantasyLife: the three-week spike was London-out volume. Take Likely or Strange plus a pick.", "src": "FantasyLife"},
-    {"name": "Cam Skattebo", "pos": "RB", "team": "NYG", "why": "FantasyLife: coming back from a bad injury, and Najee Harris is in the room. The one-to-two-year window is already leaking.", "src": "FantasyLife"},
-    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "RotoWire + RotoBaller: Parker Washington is the Jags WR1 now. BTJ is a WR2 or WR3 in this room.", "src": "RotoWire, RotoBaller"},
-    {"name": "Keenan Allen", "pos": "WR", "team": "IND", "why": "FantasyPros: 34, two DUI charges, Downs is the Colts WR1. Sell for a third.", "src": "FantasyPros"},
-    {"name": "Jonathon Brooks", "pos": "RB", "team": "CAR", "why": "RotoWire: Hubbard is listed RB1, knee tightness, a worse version of the Henderson backup problem.", "src": "RotoWire"},
-    {"name": "Cam Ward", "pos": "QB", "team": "TEN", "why": "RotoWire: Year 2 tape still shows the same timing issues. Titans weapons improved. The player has not.", "src": "RotoWire"},
-    {"name": "Travis Hunter", "pos": "WR", "team": "JAX", "why": "RotoBaller: camp snaps are mostly corner. Flip after a spike week for more than a late second.", "src": "RotoBaller"},
-    {"name": "MarShawn Lloyd", "pos": "RB", "team": "GB", "why": "RotoBaller: six NFL carries, KTC jumped to RB28. Sell the spike before Jacobs or Johnson eat it.", "src": "RotoBaller"},
-    {"name": "Tua Tagovailoa", "pos": "QB", "team": "ATL", "why": "RotoBaller: one-year deal in Atlanta, starter not named, 20:15 last year. Look for a real QB3 instead.", "src": "RotoBaller"},
+    {"name": "D'Andre Swift", "pos": "RB", "team": "CHI", "why": "Three scores and 124 yards in a 59-point game. Reuters called it a record. Someone in your league now believes he is a top-five back. Take the overpay.", "src": "Reuters"},
+    {"name": "David Montgomery", "pos": "RB", "team": "HOU", "why": "Three scores in a loss to Buffalo. Houston will score again. The touchdown luck will calm down.", "src": "CBS Sports"},
+    {"name": "Kyle Monangai", "pos": "RB", "team": "CHI", "why": "A 61-yard score on ten carries next to Swift. Fun tape. Fragile role. Sell the spike.", "src": "Reuters"},
+    {"name": "Tyler Shough", "pos": "QB", "team": "NO", "why": "410 yards in a 21-0 hole. Superflex adds him. If a manager offers a real QB2 plus a pick, listen.", "src": "ESPN"},
+    {"name": "Carson Wentz", "pos": "QB", "team": "MIN", "why": "A comeback in Green Bay already has people writing poems. The job is still a committee of circumstances.", "src": "PFF"},
+    {"name": "Cairo Santos", "pos": "K", "team": "CHI", "why": "Every streamer list in the country just printed his name. If someone wants to trade a skill piece for a kicker, let them.", "src": "RotoBaller"},
+    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "Parker Washington still ate. Jacksonville won 34-10 and the target tree still looks crowded. Sell a name people drafted as a WR1.", "src": "RotoWire"},
+    {"name": "Josh Jacobs", "pos": "RB", "team": "GB", "why": "The exemption is still the story. Green Bay lost 39-22 and the backfield stays messy. Take a 2027 second if it is still on the table.", "src": "FantasyPros"},
+    {"name": "Cam Ward", "pos": "QB", "team": "TEN", "why": "The Titans scored ten against the Jets. Year 2 tape still asks for time. Flip after a spike week if you can.", "src": "RotoWire"},
+    {"name": "Tua Tagovailoa", "pos": "QB", "team": "ATL", "why": "Oblique language after Pittsburgh. Atlanta still gets Carolina at home. The one-year deal already had a short window. Sell into hope.", "src": "RotoBaller"},
 ]
 
 
@@ -818,13 +830,14 @@ NAV_GROUPS = [
         ("defenses.html", "The D (DST)"),
         ("kickers.html", "Kickers"),
     ]),
-    ("week", "Week 1", [
+    ("week", "Week 2", [
         ("weekly.html", "Weekly"),
-        ("week1-opening.html", "Opening"),
-        ("week1-dst.html", "Week 1 DST"),
-        ("week1-kickers.html", "Week 1 K"),
-        ("week1-matchups.html", "Week 1 Matchups"),
-        ("waiver.html", "Week 1 Waivers"),
+        ("the-recap.html", "The Recap"),
+        ("week2-dst.html", "Week 2 DST"),
+        ("week2-kickers.html", "Week 2 K"),
+        ("week2-matchups.html", "Week 2 Matchups"),
+        ("waiver.html", "Week 2 Waivers"),
+        ("the-market.html", "The Market"),
         ("injuries.html", "Injuries"),
     ]),
     ("tools", "Tools", [
@@ -851,7 +864,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 57
+CSS_VER = 58
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -865,13 +878,13 @@ def slugify(name: str) -> str:
 
 
 def nav_href(target: str, depth: int) -> str:
-    if depth == 0:
+    if depth <= 0:
         return target
-    if target.startswith("players/"):
+    if depth == 1 and target.startswith("players/"):
         return target[len("players/") :]
-    if target.startswith("news/"):
+    if depth == 1 and target.startswith("news/"):
         return target[len("news/") :]
-    return "../" + target
+    return ("../" * depth) + target
 
 
 def fb_is_current(href: str, path: str) -> bool:
@@ -911,7 +924,11 @@ def player_url(name: str, depth: int = 0) -> str | None:
     slug = PLAYER_PAGES.get(norm_name(name))
     if not slug:
         return None
-    return f"{slug}.html" if depth else f"players/{slug}.html"
+    if depth <= 0:
+        return f"players/{slug}.html"
+    if depth == 1:
+        return f"{slug}.html"
+    return f"{'../' * depth}players/{slug}.html"
 
 
 def player_anchor(name: str, depth: int = 0) -> str:
@@ -1112,7 +1129,7 @@ FB_SEO = {
     ),
     "hot-n-cold.html": (
         "Dynasty Hot and Cold Board - Buys and Sells | Ball Keep",
-        "Ball Keep Hot 'n' Cold: Week 1 dynasty buys and sells from FantasyPros, FantasyLife, Footballguys, RotoWire, and RotoBaller, tied to The Keep ranks.",
+        "Ball Keep Hot 'n' Cold: after Week 1 dynasty buys and sells from ESPN, Reuters, the Associated Press, Sports Illustrated, RotoBaller, and FantasyPros, tied to The Keep ranks.",
         "img/logo.jpg",
     ),
     "trade.html": (
@@ -1161,38 +1178,43 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "weekly.html": (
-        "Week 1 Fantasy Football Rankings 2026 | Ball Keep",
-        "Week 1 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros, RotoWire, and 4for4.",
+        "Week 2 Fantasy Football Rankings 2026 | Ball Keep",
+        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (36 experts), RotoWire, and 4for4.",
         "img/logo.jpg",
     ),
-    "week1-opening.html": (
-        "Week 1 Opening: SEA 13-10, SF 27-7 | Ball Keep",
-        "Hand analysis of the first two Week 1 games. Seahawks 13, Patriots 10. 49ers 27, Rams 7. Darnold hip injury, A.J. Brown high-ankle sprain, Sunday lineups, and Week 2 waivers.",
-        "img/players/jaxon-smith-njigba.jpg",
+    "the-recap.html": (
+        "The Recap: Week 1 in full | Ball Keep",
+        "Sixteen scores, one opening week. Chicago 59, Walker 173, Seattle 13-10, Melbourne 27-7. A long essay with pictures and film after every Week 1 snap.",
+        "img/players/caleb-williams.jpg",
+    ),
+    "the-market.html": (
+        "The Market: Buy Low and Sell High after Week 1 | Ball Keep",
+        "Buy the names rooms punished after one ugly night. Sell the names rooms just watched in a carnival. After Week 1 trade board.",
+        "img/logo.jpg",
     ),
     "weekly-qb.html": (
-        "Week 1 Fantasy Football QB Rankings 2026 | Ball Keep",
-        "Week 1 quarterback Super Aggregate from four weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 2 Fantasy Football QB Rankings 2026 | Ball Keep",
+        "Week 2 quarterback Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-rb.html": (
-        "Week 1 Fantasy Football RB Rankings 2026 | Ball Keep",
-        "Week 1 running back Super Aggregate from four weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 2 Fantasy Football RB Rankings 2026 | Ball Keep",
+        "Week 2 running back Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-wr.html": (
-        "Week 1 Fantasy Football WR Rankings 2026 | Ball Keep",
-        "Week 1 receiver Super Aggregate from four weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 2 Fantasy Football WR Rankings 2026 | Ball Keep",
+        "Week 2 receiver Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-te.html": (
-        "Week 1 Fantasy Football TE Rankings 2026 | Ball Keep",
-        "Week 1 tight end Super Aggregate from four weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 2 Fantasy Football TE Rankings 2026 | Ball Keep",
+        "Week 2 tight end Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "waiver.html": (
-        "Week 1 Fantasy Football Waiver Wire | Ball Keep",
-        "Week 1 consensus waivers before kickoff. Super Aggregate of published pickup lists. 50% FantasyPros WW ECR.",
+        "Week 2 Fantasy Football Waiver Wire | Ball Keep",
+        "Week 2 consensus waivers after the opener. Super Aggregate of published pickup lists. Coker, Black, and Shough lead the mash.",
         "img/logo.jpg",
     ),
     "adp.html": (
@@ -1207,7 +1229,7 @@ FB_SEO = {
     ),
     "injuries.html": (
         "NFL Injury Report | Fantasy Football | Ball Keep",
-        "Skill-position injury designations from ESPN club tables, tied to Week 1 fantasy football boards.",
+        "Skill-position injury designations from ESPN club tables, tied to Week 2 fantasy football boards.",
         "img/logo.jpg",
     ),
     "depth-charts.html": (
@@ -1215,19 +1237,49 @@ FB_SEO = {
         "Sleeper depth order for all 32 clubs. First name in a cell is the listed starter.",
         "img/logo.jpg",
     ),
-    "week1-dst.html": (
+    "week2-dst.html": (
+        "Week 2 Fantasy Football DST Rankings 2026 | Ball Keep",
+        "Week 2 team DST Super Aggregate of published weekly boards. San Francisco, Philadelphia, Tampa Bay, and Seattle lead the stream.",
+        "img/logo.jpg",
+    ),
+    "week2-kickers.html": (
+        "Week 2 Fantasy Football Kicker Rankings 2026 | Ball Keep",
+        "Week 2 kicker Super Aggregate. 50% FantasyPros ECR and RotoBaller. Aubrey, Dicker, and Pineiro lead the stream.",
+        "img/logo.jpg",
+    ),
+    "week2-matchups.html": (
+        "Week 2 NFL Matchups and Win Predictions 2026 | Ball Keep",
+        "Week 2 win picks mashed from published cards: Sporting News, Sports Brackets, Sportsnaut, the market, and post-Week 1 power.",
+        "img/logo.jpg",
+    ),
+    "archive/week1/index.html": (
+        "Week 1 Archive | Ball Keep",
+        "Archived Week 1 DST, kickers, matchups, opening essay, and preseason waivers after the opener closed.",
+        "img/players/jaxon-smith-njigba.jpg",
+    ),
+    "archive/week1/opening.html": (
+        "Week 1 Opening: SEA 13-10, SF 27-7 | Ball Keep",
+        "Hand analysis of the first two Week 1 games. Seahawks 13, Patriots 10. 49ers 27, Rams 7. Parked in the archive.",
+        "img/players/jaxon-smith-njigba.jpg",
+    ),
+    "archive/week1/dst.html": (
         "Week 1 Fantasy Football DST Rankings 2026 | Ball Keep",
-        "Week 1 team DST Super Aggregate of 16 weekly boards. Jacksonville against Cleveland leads the stream.",
+        "Archived Week 1 team DST Super Aggregate. Jacksonville against Cleveland led the stream.",
         "img/logo.jpg",
     ),
-    "week1-kickers.html": (
+    "archive/week1/kickers.html": (
         "Week 1 Fantasy Football Kicker Rankings 2026 | Ball Keep",
-        "Week 1 kicker Super Aggregate of 16 weekly boards. 50% FantasyPros ECR. Aubrey and Dicker lead the stream.",
+        "Archived Week 1 kicker Super Aggregate. Aubrey and Dicker led the stream.",
         "img/logo.jpg",
     ),
-    "week1-matchups.html": (
+    "archive/week1/matchups.html": (
         "Week 1 NFL Matchups and Win Predictions 2026 | Ball Keep",
-        "Week 1 win picks mashed from 26 published sources: CBS experts, sportsbooks, power ranks, and models.",
+        "Archived Week 1 win picks mashed from 26 published sources.",
+        "img/logo.jpg",
+    ),
+    "archive/week1/waivers.html": (
+        "Week 1 Fantasy Football Waiver Wire | Ball Keep",
+        "Archived preseason consensus waivers. Super Aggregate of published pickup lists before kickoff.",
         "img/logo.jpg",
     ),
     "the-fence.html": (
@@ -1284,14 +1336,14 @@ FB_SEO = {
 
 HOME_FAQ = [
     ("What is Ball Keep?", "The Keep is Superflex Dynasty - 40 boards, top 400. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
-    ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 1 boards, Weekly, and Week 1 Waivers are this week's stream."),
+    ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 2 boards, Weekly, and Week 2 Waivers are this week's stream."),
     ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. IDP names are marked in red."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 9, 2026."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 15, 2026 after Week 1."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
@@ -1450,72 +1502,79 @@ FB_ALSO = {
         ("mlb-schedule.html", "MLB Schedule", "September baseball."),
     ],
     "defenses.html": [
-        ("week1-dst.html", "Week 1 DST", "This week's stream."),
+        ("week2-dst.html", "Week 2 DST", "This week's stream."),
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP names."),
         ("kickers.html", "Top Kickers", "The kicking board."),
         ("board.html", "The Board", "Skill-player PPR."),
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
     "kickers.html": [
-        ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
+        ("week2-kickers.html", "Week 2 Kickers", "This week's stream."),
         ("defenses.html", "Top Defenses", "Aggregate DST."),
         ("board.html", "The Board", "Skill-player PPR."),
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
     "weekly.html": [
-        ("week1-opening.html", "Opening", "First two games, Sunday and Week 2."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("the-recap.html", "The Recap", "Full Week 1 essay after sixteen scores."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("adp.html", "ADP", "Board vs ESPN."),
-        ("week1-dst.html", "Week 1 DST", "This week's stream."),
+        ("week2-dst.html", "Week 2 DST", "This week's stream."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
-    "week1-opening.html": [
+    "the-recap.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
-        ("injuries.html", "Injuries", "ESPN designations."),
-        ("week1-matchups.html", "Week 1 Matchups", "Win picks, 26 sources."),
-        ("weekly-qb.html", "Week 1 QB", "Quarterbacks."),
+        ("the-market.html", "The Market", "Buy low, sell high after the opener."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, Vele, Shough."),
+        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
+        ("archive/week1/index.html", "Week 1 archive", "Opening, DST, kickers, matchups, waivers."),
+    ],
+    "the-market.html": [
+        ("the-recap.html", "The Recap", "Full Week 1 essay and the sixteen scores."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Dynasty buys and sells after the opener."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, Vele, Shough."),
+        ("trade.html", "Trade", "Price a deal."),
+        ("weekly.html", "Weekly", "This week's skill boards."),
     ],
     "weekly-qb.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
-        ("weekly-rb.html", "Week 1 RB", "Backs."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("weekly-rb.html", "Week 2 RB", "Backs."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "weekly-rb.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
-        ("weekly-wr.html", "Week 1 WR", "Receivers."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("weekly-wr.html", "Week 2 WR", "Receivers."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "weekly-wr.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
-        ("weekly-te.html", "Week 1 TE", "Tight ends."),
+        ("weekly-te.html", "Week 2 TE", "Tight ends."),
         ("adp.html", "ADP", "Board vs ESPN."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "weekly-te.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
-        ("weekly-qb.html", "Week 1 QB", "Quarterbacks."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("weekly-qb.html", "Week 2 QB", "Quarterbacks."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "waiver.html": [
         ("weekly.html", "Weekly", "Full Week N boards."),
-        ("adp.html", "ADP", "Who is still on the board."),
+        ("the-recap.html", "The Recap", "Why these names moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
-        ("week1-matchups.html", "Week 1 Matchups", "Win picks, 26 sources."),
+        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
     ],
     "adp.html": [
         ("board.html", "The Board", "Season PPR ranks."),
         ("weekly.html", "Weekly", "This week's skill boards."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("the-classic.html", "The Classic", "Half-PPR draft check."),
     ],
     "league.html": [
         ("trade.html", "Trade Calculators", "Price a deal."),
         ("the-keep.html", "The Keep", "Superflex dynasty."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("adp.html", "ADP", "Board vs ESPN."),
         ("weekly.html", "Weekly", "This week's skill boards."),
     ],
@@ -1523,32 +1582,32 @@ FB_ALSO = {
         ("weekly.html", "Weekly", "Start/sit around the report."),
         ("depth-charts.html", "Depth Charts", "Who is next up."),
         ("news.html", "BK News", "Hourly wire."),
-        ("week1-matchups.html", "Week 1 Matchups", "Win picks."),
+        ("week2-matchups.html", "Week 2 Matchups", "Win picks."),
     ],
     "depth-charts.html": [
         ("injuries.html", "Injuries", "Who is actually up."),
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("nfl-schedule.html", "NFL Schedule", "Full slate."),
-        ("week1-matchups.html", "Week 1 Matchups", "Win picks."),
+        ("week2-matchups.html", "Week 2 Matchups", "Win picks."),
     ],
-    "week1-dst.html": [
-        ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
-        ("week1-matchups.html", "Week 1 Matchups", "Win picks, 26 sources."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+    "week2-dst.html": [
+        ("week2-kickers.html", "Week 2 Kickers", "This week's stream."),
+        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("defenses.html", "Top Defenses", "Season-long DST."),
         ("weekly.html", "Weekly", "Skill start/sit."),
     ],
-    "week1-kickers.html": [
-        ("week1-dst.html", "Week 1 DST", "This week's stream."),
-        ("week1-matchups.html", "Week 1 Matchups", "Win picks, 26 sources."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+    "week2-kickers.html": [
+        ("week2-dst.html", "Week 2 DST", "This week's stream."),
+        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("nfl-schedule.html", "NFL Schedule", "Full slate."),
     ],
-    "week1-matchups.html": [
-        ("week1-dst.html", "Week 1 DST", "Start/sit defenses."),
-        ("week1-kickers.html", "Week 1 Kickers", "Start/sit kickers."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+    "week2-matchups.html": [
+        ("week2-dst.html", "Week 2 DST", "Start/sit defenses."),
+        ("week2-kickers.html", "Week 2 Kickers", "Start/sit kickers."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("nfl-schedule.html", "NFL Schedule", "Full 2026 slate."),
         ("defenses.html", "Top Defenses", "Season-long DST."),
     ],
@@ -1845,6 +1904,27 @@ def seed_player_pages():
             PLAYER_PAGES[k] = slug
 
 
+def home_week_faces():
+    """Faces and the recap teaser so the home week block feels like a room."""
+    from the_recap import recap_teaser
+    shots = [
+        ("caleb-williams", "jpg", "Caleb Williams"),
+        ("kenneth-walker", "jpg", "Kenneth Walker"),
+        ("jahmyr-gibbs", "jpg", "Jahmyr Gibbs"),
+        ("josh-allen", "png", "Josh Allen"),
+        ("jaxon-smith-njigba", "jpg", "Jaxon Smith-Njigba"),
+        ("brock-purdy", "jpg", "Brock Purdy"),
+        ("jalen-hurts", "png", "Jalen Hurts"),
+        ("patrick-mahomes", "png", "Patrick Mahomes"),
+    ]
+    pics = "".join(
+        f'<a href="the-recap.html"><img src="img/players/{slug}.{ext}" alt="{name}" '
+        f'width="120" height="120" loading="lazy" /></a>'
+        for slug, ext, name in shots
+    )
+    return recap_teaser() + f'<div class="home-faces" aria-label="Faces from Week 1">{pics}</div>'
+
+
 def home_rank_preview(rows, media, n=8):
     items = []
     for r in rows[:n]:
@@ -1943,20 +2023,21 @@ def home_body_html(keep, board, media, stories=None):
         ("best-ball.html", "Best Ball", "40-board Super Aggregate. Boom weeks. Kickers and DST stay off."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
     ])}
-    {desk_block("ros-st", "More ranks", "DST, Kickers, The Fence.", "Rest-of-season values and the mixed Superflex + IDP board. Week 1 DST and Kickers sit in the Week 1 block.", [
+    {desk_block("ros-st", "More ranks", "DST, Kickers, The Fence.", "Rest-of-season values and the mixed Superflex + IDP board. Week 2 DST and Kickers sit in the Week 2 block.", [
         ("defenses.html", "The D (DST)", "Season-long team DST."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, top 400."),
     ])}
-    {desk_block("week1", "Week 1", "This week's stream.", "Weekly boards, matchups, and the preseason waiver mash. Not rest-of-season values.", [
-        ("week1-opening.html", "Opening", "Seahawks 13, Patriots 10. 49ers 27, Rams 7. Darnold hip, Brown high-ankle sprain."),
+    {desk_block("week", "Week 2", "This week's stream.", "Weekly boards, matchups, and the waiver mash after the opener. Rest-of-season values live in the blocks above.", [
+        ("the-recap.html", "The Recap", "Sixteen scores. Chicago 59. Walker 173. Seahawks 13, Patriots 10."),
         ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
-        ("week1-dst.html", "Week 1 DST", "This week's stream."),
-        ("week1-kickers.html", "Week 1 Kickers", "This week's stream."),
-        ("week1-matchups.html", "Week 1 Matchups", "Win picks from 26 sources."),
-        ("waiver.html", "Week 1 Waivers", "Preseason consensus adds."),
+        ("week2-dst.html", "Week 2 DST", "This week's stream."),
+        ("week2-kickers.html", "Week 2 Kickers", "This week's stream."),
+        ("week2-matchups.html", "Week 2 Matchups", "Win picks after the opener."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
+        ("the-market.html", "The Market", "Buy low, sell high after Week 1."),
         ("injuries.html", "Injuries", "ESPN designations."),
-    ])}
+    ], extra=home_week_faces())}
     {desk_block("mine", "Yours", "Put in your own team.", "Load your Sleeper league. BK Value on every roster.", [
         ("league.html", "My Team", "Your Sleeper league. Power rankings and leftover values."),
     ])}
@@ -1967,7 +2048,8 @@ def home_body_html(keep, board, media, stories=None):
     ])}
     {desk_block("tape", "Tape", "The non-ranking lists.", "The market notes, the player files, and the pictures.", [
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
-        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells after Week 1."),
+        ("the-market.html", "The Market", "Buy low, sell high."),
         ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
         ("the-x.html", "The X", "Memes. Pictures on the card."),
         ("news.html", "BK News", "Injuries, roster, coaches."),
@@ -3056,9 +3138,14 @@ def write_explore_page():
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
         ("defenses.html", "Top DST", "Season-long DST."),
         ("kickers.html", "Top Kickers", "Season-long K."),
-        ("weekly.html", "Weekly", "Week 1 start/sit."),
-        ("week1-opening.html", "Opening", "First two games."),
-        ("waiver.html", "Week 1 Waivers", "Consensus adds."),
+        ("weekly.html", "Weekly", "Week 2 start/sit."),
+        ("the-recap.html", "The Recap", "Full Week 1 essay."),
+        ("the-market.html", "The Market", "Buy low, sell high."),
+        ("week2-dst.html", "Week 2 DST", "This week's stream."),
+        ("week2-kickers.html", "Week 2 Kickers", "This week's stream."),
+        ("week2-matchups.html", "Week 2 Matchups", "Win picks."),
+        ("waiver.html", "Week 2 Waivers", "Coker, Black, Shough."),
+        ("archive/week1/index.html", "Week 1 archive", "Finished Week 1 boards."),
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
         ("league.html", "My Team", "Your Sleeper league."),
@@ -3377,7 +3464,7 @@ def main():
     hc_body = f"""
     <p class="kicker">Market Tape · {UPDATED}</p>
     <h1>BK Hot 'n' Cold</h1>
-    <p class="note">Week 1 tape. Rising names to Buy and aging or overpriced names to Sell, pulled from FantasyPros risers and fallers (Sep 8), FantasyLife buy/sells and handcuff targets (Sep 8-9), Footballguys buy-the-dip (Sep 9), RotoWire Week 1 movers (Sep 9), and RotoBaller market watch.</p>
+    <p class="note">After Week 1. Rising names to Buy and aging or overpriced names to Sell, pulled from the opener, ESPN, Reuters, the Associated Press, Sports Illustrated, RotoBaller, FantasyPros, and the recap tape.</p>
     <div class="grid">
       <div>
         <h3 class="hc-hot">Hot: Buy</h3>
@@ -3389,12 +3476,13 @@ def main():
       </div>
     </div>
     {sources_panel([
-        ("FantasyPros", "https://www.fantasypros.com/2026/09/6-dynasty-risers-fallers-2026-fantasy-football/", "Dynasty risers and fallers, Sep 8."),
-        ("FantasyLife", "https://www.fantasylife.com/articles/fantasy/dynasty-buy-sells-week-1-2026", "Week 1 buy/sells, Sep 8."),
-        ("FantasyLife", "https://www.fantasylife.com/articles/dynasty/dynasty-fantasy-football-trade-targets-ahead-of-week-1-buy-kaelo", "Handcuff trade targets, Sep 9."),
-        ("Footballguys", "https://www.footballguys.com/article/2026-dynasty-trading-post-buy-the-dip", "Buy the dip on injured and exempt names, Sep 9."),
-        ("RotoWire", "https://www.rotowire.com/football/article/dynasty-risers-and-fallers-week-1-133148", "Week 1 risers and fallers, Sep 9."),
-        ("RotoBaller", "https://www.rotoballer.com/dynasty-fantasy-football-risers-and-fallers-players-to-buy-sell-2026/1920801", "KTC market watch into Week 1."),
+        ("The Recap", "the-recap.html", "Full Week 1 essay and the sixteen scores."),
+        ("Reuters", "https://www.reuters.com/sports/nfl-roundup-bears-score-59-record-setting-week-1-win-over-panthers--flm-2026-09-14/", "Bears 59, Panthers 37."),
+        ("Associated Press", "https://www.espn.com/nfl/recap?gameId=401872931", "Walker 173, Mahomes in the brace."),
+        ("Sports Illustrated", "https://www.si.com/onsi/fantasy/waiver-wire/fantasy-football-top-overall-waiver-wire-pickups-for-all-positions-week-2-is-jalen-coker-the-panthers-wr1", "Coker the top overall add."),
+        ("ESPN", "https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-49939032/fantasy-football-waiver-wire-free-agent-pickups-nfl-week-2", "Shough, Black, Coker on the wire."),
+        ("RotoBaller", "https://www.rotoballer.com/waiver-wire-rankings-fantasy-football-week-2-2026/1930758", "Mariano Week 2 waiver ranks."),
+        ("FantasyPros", "https://www.fantasypros.com/2026/09/fantasy-football-waiver-wire-rankings-pickups-week-2-2026/", "Week 2 pickup list."),
     ], heading="Boards in This Aggregate")}
     """
     write("hot-n-cold.html", board_page("Hot 'n' Cold", "hot-n-cold.html", hc_body))
@@ -3478,68 +3566,71 @@ def main():
         ],
     ))
 
-    w1_dst = week1_dst_board()
-    w1_kickers = week1_kicker_board()
-    w1_match = week1_matchups()
-    w1_dst_lead = w1_dst[0]["name"] if w1_dst else "Jacksonville Jaguars"
-    w1_k_lead = w1_kickers[0]["name"] if w1_kickers else "Brandon Aubrey"
-    w1_dst_body = f"""
-    <p class="kicker">2026 Week 1 · DST Super Aggregate · {len(W1_DST_SOURCES)} boards</p>
-    <h1>Week 1 DST</h1>
-    <p class="note">This week's stream, not the season-long Top Defenses board. Super Aggregate of {len(W1_DST_SOURCES)} published Week 1 boards: 50% FantasyPros ECR and Draft Sharks consensus, 50% eight ESPN rankers, Draft Sharks, 4for4, FantasyPros projections, RotoWire, ESPN road map, and RotoBaller. {w1_dst_lead} leads the stream. Sort with Find a player.</p>
+    w2_dst = week2_dst_board()
+    w2_kickers = week2_kicker_board()
+    w2_match = week2_matchups()
+    w2_dst_lead = w2_dst[0]["name"] if w2_dst else "San Francisco 49ers"
+    w2_k_lead = w2_kickers[0]["name"] if w2_kickers else "Brandon Aubrey"
+    w2_dst_body = f"""
+    <p class="kicker">2026 Week 2 · DST Super Aggregate · {len(W2_DST_SOURCES)} boards</p>
+    <h1>Week 2 DST</h1>
+    <p class="note">This week's stream. Super Aggregate of {len(W2_DST_SOURCES)} published Week 2 boards: 50% RotoBaller and Pro Football Network, 50% ESPN, 4for4, Roto Street Journal, implied totals, and Week 1 form. {w2_dst_lead} leads the stream. The finished Week 1 board lives in the <a href="archive/week1/dst.html">archive</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w1_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
-    {sources_panel(W1_DST_SOURCES, heading="Boards in This Super Aggregate")}
-    {faq_html(W1_DST_FAQ, heading="How Week 1 DST is built.")}
+    <div class="panel">{rank_table(w2_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    {sources_panel(W2_DST_SOURCES, heading="Boards in This Super Aggregate")}
+    {faq_html(W2_DST_FAQ, heading="How Week 2 DST is built.")}
     """
-    write("week1-dst.html", board_page(
-        "Week 1 DST", "week1-dst.html", w1_dst_body,
+    write("week2-dst.html", board_page(
+        "Week 2 DST", "week2-dst.html", w2_dst_body,
         extra_jsonld=[
             rank_list_jsonld(
-                "Week 1 2026 Fantasy Football DST Rankings",
-                "https://ballkeep.com/week1-dst.html",
-                w1_dst,
-                lambda r: "https://ballkeep.com/week1-dst.html",
-                description="Week 1 DST Super Aggregate from 16 weekly boards.",
+                "Week 2 2026 Fantasy Football DST Rankings",
+                "https://ballkeep.com/week2-dst.html",
+                w2_dst,
+                lambda r: "https://ballkeep.com/week2-dst.html",
+                description="Week 2 DST Super Aggregate from published weekly boards.",
             ),
-            faq_jsonld(W1_DST_FAQ),
+            faq_jsonld(W2_DST_FAQ),
         ],
     ))
-    w1_k_body = f"""
-    <p class="kicker">2026 Week 1 · K Super Aggregate · {len(W1_K_SOURCES)} boards</p>
-    <h1>Week 1 Kickers</h1>
-    <p class="note">This week's stream, not the season-long kicking board. Super Aggregate of {len(W1_K_SOURCES)} published Week 1 boards: 50% FantasyPros ECR, 50% eight ESPN rankers, FantasyPros projections, Andrew Swanson, Draft Sharks, 4for4, RotoBaller, CBS Jamey Eisenberg, and CBS Dave Richard. {w1_k_lead} sits first among the kickers. Sort with Find a player.</p>
+    w2_k_body = f"""
+    <p class="kicker">2026 Week 2 · K Super Aggregate · {len(W2_K_SOURCES)} boards</p>
+    <h1>Week 2 Kickers</h1>
+    <p class="note">This week's stream. Super Aggregate of {len(W2_K_SOURCES)} published Week 2 boards: 50% FantasyPros ECR and RotoBaller, 50% the FantasyPros matchup table. {w2_k_lead} sits first among the kickers. The finished Week 1 board lives in the <a href="archive/week1/kickers.html">archive</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w1_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
-    {sources_panel(W1_K_SOURCES, heading="Boards in This Super Aggregate")}
-    {faq_html(W1_K_FAQ, heading="How Week 1 Kickers is built.")}
+    <div class="panel">{rank_table(w2_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    {sources_panel(W2_K_SOURCES, heading="Boards in This Super Aggregate")}
+    {faq_html(W2_K_FAQ, heading="How Week 2 Kickers is built.")}
     """
-    write("week1-kickers.html", board_page(
-        "Week 1 Kickers", "week1-kickers.html", w1_k_body,
+    write("week2-kickers.html", board_page(
+        "Week 2 Kickers", "week2-kickers.html", w2_k_body,
         extra_jsonld=[
             rank_list_jsonld(
-                "Week 1 2026 Fantasy Football Kicker Rankings",
-                "https://ballkeep.com/week1-kickers.html",
-                w1_kickers,
-                lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html" if slugify(r["name"]) in PLAYER_PAGES.values() else "https://ballkeep.com/week1-kickers.html",
-                description="Week 1 kicker Super Aggregate from 16 weekly boards.",
+                "Week 2 2026 Fantasy Football Kicker Rankings",
+                "https://ballkeep.com/week2-kickers.html",
+                w2_kickers,
+                lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html" if slugify(r["name"]) in PLAYER_PAGES.values() else "https://ballkeep.com/week2-kickers.html",
+                description="Week 2 kicker Super Aggregate from published weekly boards.",
             ),
-            faq_jsonld(W1_K_FAQ),
+            faq_jsonld(W2_K_FAQ),
         ],
     ))
     write_week_matchups(
-        1,
-        w1_match,
-        MATCH_SOURCES,
-        W1_MATCH_FAQ,
+        2,
+        w2_match,
+        W2_MATCH_SOURCES,
+        W2_MATCH_FAQ,
         (
-            f"Win picks from {len(MATCH_SOURCES)} published sources: four CBS straight-up experts, "
-            "BUSR scores, the current market, seven Action Network books, five 1-32 power boards, "
-            "the May DraftKings opener, TeamRankings predictive, FOX Sports DraftKings from Sep 3, "
-            "plus short published fades. Unpicked games on a board are skipped. The pick is the side "
-            "with more votes. Away and Home are raw vote counts, not a win chance."
+            f"Win picks from {len(W2_MATCH_SOURCES)} published sources: Sporting News, NFL Spin Zone, "
+            "Sports Brackets, Sportsnaut, The Game Haus, the market favorite, Week 1 winners, and a short "
+            "post-opener power board. Unpicked games on a board are skipped. The pick is the side "
+            "with more votes. Away and Home are raw vote counts."
         ),
     )
+    w1_pack = write_week1_archive(sys.modules[__name__], media)
+    w1_dst = w1_pack["dst"]
+    w1_kickers = w1_pack["kickers"]
+    w1_match = w1_pack["match"]
 
     from weekly_pages import write_weekly_pages
     weekly_pack = write_weekly_pages(sys.modules[__name__], nfl, media, ppr)
@@ -3793,7 +3884,8 @@ def main():
         "https://ballkeep.com/defenses.html",
         "https://ballkeep.com/kickers.html",
         "https://ballkeep.com/weekly.html",
-        "https://ballkeep.com/week1-opening.html",
+        "https://ballkeep.com/the-recap.html",
+        "https://ballkeep.com/the-market.html",
         "https://ballkeep.com/weekly-qb.html",
         "https://ballkeep.com/weekly-rb.html",
         "https://ballkeep.com/weekly-wr.html",
@@ -3803,9 +3895,15 @@ def main():
         "https://ballkeep.com/league.html",
         "https://ballkeep.com/injuries.html",
         "https://ballkeep.com/depth-charts.html",
-        "https://ballkeep.com/week1-dst.html",
-        "https://ballkeep.com/week1-kickers.html",
-        "https://ballkeep.com/week1-matchups.html",
+        "https://ballkeep.com/week2-dst.html",
+        "https://ballkeep.com/week2-kickers.html",
+        "https://ballkeep.com/week2-matchups.html",
+        "https://ballkeep.com/archive/week1/",
+        "https://ballkeep.com/archive/week1/opening.html",
+        "https://ballkeep.com/archive/week1/dst.html",
+        "https://ballkeep.com/archive/week1/kickers.html",
+        "https://ballkeep.com/archive/week1/matchups.html",
+        "https://ballkeep.com/archive/week1/waivers.html",
         "https://ballkeep.com/the-fence.html",
         "https://ballkeep.com/discord.html",
         "https://ballkeep.com/explore.html",
@@ -3829,11 +3927,12 @@ def main():
     cat = write_discord_catalog(
         keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals, bb, pl, bk,
         sf_redraft, classic, dst, kickers, bpl, fence, w1_dst, w1_kickers, w1_match,
-        weekly_pack, best_ball,
+        weekly_pack, best_ball, w2_dst, w2_kickers, w2_match,
     )
     print(
         f"Keep {len(keep)} Board {len(board)} Best Ball {len(best_ball)} Superflex redraft {len(sf_redraft)} NFL games {len(nfl)} MLB {len(mlb_games)} BPL {len(bpl)} DST {len(dst)} K {len(kickers)} Fence {len(fence)} "
-        f"W1 DST {len(w1_dst)} W1 K {len(w1_kickers)} W1 games {len(w1_match)} "
+        f"W2 DST {len(w2_dst)} W2 K {len(w2_kickers)} W2 games {len(w2_match)} "
+        f"W1 archive DST {len(w1_dst)} W1 K {len(w1_kickers)} W1 games {len(w1_match)} "
         f"W{weekly_pack.get('week')} QB {len(weekly_pack.get('qb') or [])} "
         f"Waiver {len(weekly_pack.get('waiver') or [])} "
         f"Players {len(profiles)} News {len(news_urls) - 1} BB Keep {bb['n_keep']} "
@@ -3858,7 +3957,7 @@ def slim_row(r, extra=()):
     return out
 
 
-def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None, dst=None, kickers=None, bpl=None, fence=None, week1_dst=None, week1_kickers=None, week1_match=None, weekly=None, best_ball=None):
+def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_games, deals=None, bb=None, pl=None, bk=None, sf_redraft=None, classic=None, dst=None, kickers=None, bpl=None, fence=None, week1_dst=None, week1_kickers=None, week1_match=None, weekly=None, best_ball=None, week2_dst=None, week2_kickers=None, week2_match=None):
     """One JSON pack the Discord bot reads instead of scraping HTML."""
     media = {}
     media_path = ROOT / "data/player_media.json"
@@ -3927,6 +4026,8 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
         "kickers": [slim_row(r, ("n", "avg")) for r in (kickers or [])],
         "week1_dst": [slim_row(r, ("n", "avg")) for r in (week1_dst or [])],
         "week1_kickers": [slim_row(r, ("n", "avg")) for r in (week1_kickers or [])],
+        "week2_dst": [slim_row(r, ("n", "avg")) for r in (week2_dst or [])],
+        "week2_kickers": [slim_row(r, ("n", "avg")) for r in (week2_kickers or [])],
         "weekly_week": (weekly or {}).get("week"),
         "weekly_qb": [slim_row(r, ("n", "avg", "fpts", "opp")) for r in ((weekly or {}).get("qb") or [])],
         "weekly_rb": [slim_row(r, ("n", "avg", "fpts", "opp")) for r in ((weekly or {}).get("rb") or [])],
@@ -3959,6 +4060,21 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
                 "bk": r.get("bk"),
             }
             for r in (week1_match or [])
+        ],
+        "week2_matchups": [
+            {
+                "key": r.get("key"),
+                "away": r.get("away"),
+                "home": r.get("home"),
+                "day": r.get("day"),
+                "pick": r.get("pick"),
+                "n": r.get("n"),
+                "away_n": r.get("away_n"),
+                "home_n": r.get("home_n"),
+                "spread": r.get("spread"),
+                "bk": r.get("bk"),
+            }
+            for r in (week2_match or [])
         ],
         "fence": [slim_row(r, ("n", "avg", "age")) for r in (fence or [])],
         "rookies": [slim_row(r, ("dd", "fp", "pff", "blurb")) for r in rook_rows],
@@ -4101,7 +4217,7 @@ def rewrite_football_navs() -> int:
         if not is_football_nav_target(rel):
             continue
         site_path = rel.as_posix()
-        depth = 0 if "/" not in site_path else 1
+        depth = site_path.count("/")
         raw = path.read_text()
         if '<header class="site">' not in raw:
             continue

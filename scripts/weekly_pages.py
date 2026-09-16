@@ -9,7 +9,8 @@ from seo import (
     rank_list_jsonld,
     rank_search_bar,
 )
-from weekly_analysis import opening_teaser, write_week1_opening
+from the_market import write_the_market
+from the_recap import recap_teaser, write_the_recap
 from weekly_kit import (
     ADP_SOURCES,
     DEPTH_SOURCES,
@@ -129,7 +130,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
                     f"https://ballkeep.com/{path}",
                     rows,
                     lambda r: f"https://ballkeep.com/players/{b.slugify(r['name'])}.html",
-                    description=f"Week {week} {pos} start/sit from four weekly boards.",
+                    description=f"Week {week} {pos} start/sit from FantasyPros ECR, RotoWire, and 4for4.",
                 ),
                 faq_jsonld(WEEKLY_FAQ),
             ],
@@ -139,14 +140,14 @@ def write_weekly_pages(b, nfl, media, board_rows):
     flex_body = f"""
     <p class="kicker">{label} · skill · Flex plus positions</p>
     <h1>Weekly</h1>
-    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points.</p>
-    {opening_teaser()}
+    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points. The opener lives on <a href="the-recap.html">The Recap</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
+    {recap_teaser()}
     <div class="grid-3">
       <a class="tile" href="weekly-qb.html"><h3>Week {week} QB</h3><p>{(boards['QB'] or [{'name':''}])[0]['name']} leads the quarterbacks.</p></a>
       <a class="tile" href="weekly-rb.html"><h3>Week {week} RB</h3><p>{(boards['RB'] or [{'name':''}])[0]['name']} opens the backfield.</p></a>
       <a class="tile" href="weekly-wr.html"><h3>Week {week} WR</h3><p>{(boards['WR'] or [{'name':''}])[0]['name']} sits first among receivers.</p></a>
       <a class="tile" href="weekly-te.html"><h3>Week {week} TE</h3><p>{(boards['TE'] or [{'name':''}])[0]['name']} is the top tight end.</p></a>
-      <a class="tile" href="waiver.html"><h3>Week 1 Waivers</h3><p>Preseason consensus adds.</p></a>
+      <a class="tile" href="waiver.html"><h3>Week {week} Waivers</h3><p>Coker, Black, and the names the opener moved.</p></a>
       <a class="tile" href="injuries.html"><h3>Injuries</h3><p>ESPN designations.</p></a>
     </div>
     {rank_search_bar(chips)}
@@ -192,24 +193,24 @@ def write_weekly_pages(b, nfl, media, board_rows):
     """
     write("adp.html", board_page("ADP", "adp.html", adp_body, adp_js, extra_jsonld=[faq_jsonld(adp_faq)]))
 
-    # --- Week 1 consensus waivers ---
+    # --- Week N consensus waivers ---
     w_chips, w_js = pos_filter("waiver-pos")
     w_faq = [
-        ("What is this list?", "A pre-Week 1 Super Aggregate of published waiver articles. Season has not started. A name needs two lists."),
-        ("Is this FAAB advice?", "No dollar bids. Super Aggregate: 50% FantasyPros WW ECR, 50% every other board that ranked the name."),
+        ("What is this list?", f"A Week {week} Super Aggregate of published waiver articles after the opener. A name needs two lists."),
+        ("Is this FAAB advice?", "No dollar bids. Super Aggregate of every list that ranked the name."),
         ("Why is a drafted star missing?", "If a list did not put him on their waiver board, that list does not vote for him."),
     ]
     w_lead = waivers[0]["name"] if waivers else ""
     w_body = f"""
     <p class="kicker">{label} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
-    <h1>Week 1 Waivers</h1>
-    <p class="note">Preseason waiver Super Aggregate, before Week 1 kickoff. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. 50% FantasyPros WW ECR, 50% every other board that ranked the name. A name needs two lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week 1 boards.</p>
+    <h1>Week {week} Waivers</h1>
+    <p class="note">Week {week} waiver Super Aggregate after the opener. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week {week} boards. The preseason wire lives in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
     {rank_search_bar(w_chips)}
     <div class="panel">{weekly_table(waivers)}</div>
     {sources_panel(WEEK1_WAIVER_SOURCES, heading="Lists in This Super Aggregate")}
-    {faq_html(w_faq, heading="How Week 1 Waivers is built.")}
+    {faq_html(w_faq, heading=f"How Week {week} Waivers is built.")}
     """
-    write("waiver.html", board_page("Week 1 Waivers", "waiver.html", w_body, w_js, extra_jsonld=[faq_jsonld(w_faq)]))
+    write("waiver.html", board_page(f"Week {week} Waivers", "waiver.html", w_body, w_js, extra_jsonld=[faq_jsonld(w_faq)]))
 
     # --- injuries ---
     def inj_extra(r):
@@ -252,7 +253,8 @@ def write_weekly_pages(b, nfl, media, board_rows):
     """
     write("depth-charts.html", board_page("Depth Charts", "depth-charts.html", d_body))
 
-    write_week1_opening(b)
+    write_the_recap(b)
+    write_the_market(b)
 
     for rel in ("sos.html", "start-sit.html", "weekly-check.html"):
         old = ROOT / rel

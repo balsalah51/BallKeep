@@ -846,8 +846,54 @@ body.opening-page .opening {
   font-weight: 600;
 }
 
+.recap-film {
+  margin: 1.6rem 0 1.8rem;
+}
+.recap-film .video-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #102033;
+  box-shadow: var(--shadow);
+}
+.recap-scores { grid-template-columns: repeat(4, 1fr); }
+.home-faces {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+  margin-top: 16px;
+}
+.home-faces a {
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--powder-deep);
+}
+.home-faces img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.market-card img {
+  width: 100%;
+  height: 8.5rem;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--line);
+}
+
 @media (max-width: 860px) {
   .score-row, .photo-row, .photo-pair { grid-template-columns: 1fr 1fr; }
+  .recap-scores { grid-template-columns: 1fr 1fr; }
+  .home-faces { grid-template-columns: repeat(4, 1fr); }
   .opening-teaser { grid-template-columns: 5.2rem 1fr; gap: 12px; padding: 12px; }
   .opening-teaser img { width: 5.2rem; height: 5.2rem; }
   .opening-teaser h2 { font-size: 1.05rem; }

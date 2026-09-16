@@ -171,7 +171,7 @@ def _cards(rows) -> str:
     if not rows:
         return (
             '<p class="note">No 2026 regular-season targets, rushes, receptions, or skill TDs on the tape yet. '
-            "Week 1 is still filling in.</p>"
+            "The 2026 tape is still arriving.</p>"
         )
     body = []
     for r in rows:
@@ -228,9 +228,9 @@ def write_touches_page(b, keep, board, media):
     extra = also_on_desk(b.FB_ALSO.get("touches.html") or [])
     count = f"{len(rows)} names" if rows else "no names yet"
     body = f"""
-    <p class="kicker">{SEASON} NFL season · Week 1 so far · {count}</p>
+    <p class="kicker">{SEASON} NFL season · After Week 1 · {count}</p>
     <h1>Touches and Targets</h1>
-    <p class="note">Sleeper {SEASON} regular-season totals only. Early tape. Each number sits on its own label. Touches are rushes. Receptions sit in their own box. TDs are rushing plus receiving, not passing. Keep is Superflex dynasty BK Value. Board is redraft PPR BK Value. Sort with the buttons. Filter by position with the chips.</p>
+    <p class="note">Sleeper {SEASON} Week 1 regular-season totals. Each number sits on its own label. Touches are rushes. Receptions sit in their own box. TDs are rushing plus receiving, passing scores stay off. Keep is Superflex dynasty BK Value. Board is redraft PPR BK Value. Sort with the buttons. Filter by position with the chips.</p>
     {rank_search_bar(chips)}
     {sorts}
     <div class="panel touches-panel">{_cards(rows)}</div>

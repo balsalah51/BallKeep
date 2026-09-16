@@ -6,14 +6,14 @@
       "slots": {
         "WR": [
           {
-            "name": "Marvin Harrison",
+            "name": "Michael Wilson",
             "order": 1,
-            "slot": "LWR"
+            "slot": "RWR"
           },
           {
-            "name": "Michael Wilson",
+            "name": "Marvin Harrison",
             "order": 2,
-            "slot": "RWR"
+            "slot": "LWR"
           },
           {
             "name": "Kendrick Bourne",
@@ -26,19 +26,19 @@
             "slot": "SWR"
           },
           {
-            "name": "Reggie Virgil",
-            "order": 5,
-            "slot": "LWR"
-          },
-          {
             "name": "Devin Duvernay",
-            "order": 6,
+            "order": 5,
             "slot": "SWR"
           },
           {
             "name": "Simi Fehoko",
-            "order": 8,
+            "order": 7,
             "slot": "RWR"
+          },
+          {
+            "name": "Reggie Virgil",
+            "order": 8,
+            "slot": "LWR"
           }
         ],
         "RB": [
@@ -53,12 +53,12 @@
             "slot": "RB"
           },
           {
-            "name": "Zonovan Knight",
+            "name": "James Conner",
             "order": 3,
             "slot": "RB"
           },
           {
-            "name": "James Conner",
+            "name": "Zonovan Knight",
             "order": 4,
             "slot": "RB"
           },
@@ -244,24 +244,24 @@
             "slot": "LWR"
           },
           {
-            "name": "Ja'Kobi Lane",
+            "name": "Devontez Walker",
             "order": 3,
             "slot": "RWR"
           },
           {
-            "name": "Devontez Walker",
-            "order": 4,
-            "slot": "RWR"
-          },
-          {
             "name": "Elijah Sarratt",
-            "order": 5,
+            "order": 4,
             "slot": "LWR"
           },
           {
             "name": "LaJohntay Wester",
             "order": 6,
             "slot": "SWR"
+          },
+          {
+            "name": "Ja'Kobi Lane",
+            "order": 8,
+            "slot": "RWR"
           }
         ],
         "TE": [
@@ -271,12 +271,12 @@
             "slot": "TE"
           },
           {
-            "name": "Matt Hibner",
+            "name": "Durham Smythe",
             "order": 2,
             "slot": "TE"
           },
           {
-            "name": "Durham Smythe",
+            "name": "Matt Hibner",
             "order": 3,
             "slot": "TE"
           },
@@ -357,12 +357,12 @@
             "slot": "RB"
           },
           {
-            "name": "Ray Davis",
+            "name": "Ty Johnson",
             "order": 2,
             "slot": "RB"
           },
           {
-            "name": "Ty Johnson",
+            "name": "Ray Davis",
             "order": 3,
             "slot": "RB"
           }
@@ -472,12 +472,12 @@
             "slot": "TE"
           },
           {
-            "name": "Ja'Tavion Sanders",
+            "name": "Mitchell Evans",
             "order": 3,
             "slot": "TE"
           },
           {
-            "name": "Mitchell Evans",
+            "name": "Ja'Tavion Sanders",
             "order": 4,
             "slot": "TE"
           },
@@ -563,14 +563,14 @@
             "slot": "SWR"
           },
           {
-            "name": "Zavion Thomas",
+            "name": "Jahdae Walker",
             "order": 4,
-            "slot": "SWR"
+            "slot": "LWR"
           },
           {
-            "name": "Jahdae Walker",
+            "name": "Zavion Thomas",
             "order": 5,
-            "slot": "LWR"
+            "slot": "SWR"
           }
         ],
         "RB": [
@@ -646,18 +646,18 @@
             "slot": "SWR"
           },
           {
-            "name": "Colbie Young",
-            "order": 4,
-            "slot": "LWR"
-          },
-          {
             "name": "Dohnte Meyers",
-            "order": 5,
+            "order": 4,
             "slot": "RWR"
           },
           {
+            "name": "Colbie Young",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
             "name": "Ke'Shawn Williams",
-            "order": 6,
+            "order": 7,
             "slot": "SWR"
           }
         ],
@@ -668,12 +668,12 @@
             "slot": "TE"
           },
           {
-            "name": "Erick All",
+            "name": "Drew Sample",
             "order": 2,
             "slot": "TE"
           },
           {
-            "name": "Drew Sample",
+            "name": "Erick All",
             "order": 3,
             "slot": "TE"
           },
@@ -707,14 +707,14 @@
       "slots": {
         "WR": [
           {
-            "name": "Jerry Jeudy",
+            "name": "KC Concepcion",
             "order": 1,
-            "slot": "RWR"
+            "slot": "SWR"
           },
           {
-            "name": "KC Concepcion",
+            "name": "Jerry Jeudy",
             "order": 2,
-            "slot": "SWR"
+            "slot": "RWR"
           },
           {
             "name": "Denzel Boston",
@@ -744,12 +744,12 @@
             "slot": "QB"
           },
           {
-            "name": "Dillon Gabriel",
+            "name": "Shedeur Sanders",
             "order": 2,
             "slot": "QB"
           },
           {
-            "name": "Shedeur Sanders",
+            "name": "Dillon Gabriel",
             "order": 3,
             "slot": "QB"
           },
@@ -788,12 +788,12 @@
             "slot": "RB"
           },
           {
-            "name": "Dylan Sampson",
+            "name": "Raheim Sanders",
             "order": 2,
             "slot": "RB"
           },
           {
-            "name": "Raheim Sanders",
+            "name": "Dylan Sampson",
             "order": 3,
             "slot": "RB"
           }
@@ -865,12 +865,12 @@
           },
           {
             "name": "Princeton Fant",
-            "order": 5,
+            "order": 4,
             "slot": "TE"
           },
           {
             "name": "DJ Rogers",
-            "order": 6,
+            "order": 5,
             "slot": "TE"
           }
         ],
@@ -881,13 +881,23 @@
             "slot": "RB"
           },
           {
-            "name": "Malik Davis",
+            "name": "Emari Demercado",
             "order": 2,
             "slot": "RB"
           },
           {
-            "name": "Emari Demercado",
+            "name": "Israel Abanikanda",
             "order": 4,
+            "slot": "RB"
+          },
+          {
+            "name": "Tyler Goodson",
+            "order": 5,
+            "slot": "RB"
+          },
+          {
+            "name": "Malik Davis",
+            "order": 6,
             "slot": "RB"
           }
         ]
@@ -921,11 +931,6 @@
             "name": "Troy Franklin",
             "order": 5,
             "slot": "SWR"
-          },
-          {
-            "name": "Lil'Jordan Humphrey",
-            "order": 6,
-            "slot": "LWR"
           }
         ],
         "QB": [
@@ -1016,14 +1021,14 @@
             "slot": "LWR"
           },
           {
-            "name": "Tay Martin",
+            "name": "Tom Kennedy",
             "order": 4,
-            "slot": "LWR"
+            "slot": "RWR"
           },
           {
-            "name": "Tom Kennedy",
+            "name": "Tay Martin",
             "order": 5,
-            "slot": "RWR"
+            "slot": "LWR"
           },
           {
             "name": "Kendrick Law",
@@ -1038,12 +1043,12 @@
             "slot": "RB"
           },
           {
-            "name": "Jacob Saylors",
+            "name": "Sione Vaki",
             "order": 2,
             "slot": "RB"
           },
           {
-            "name": "Sione Vaki",
+            "name": "Jacob Saylors",
             "order": 3,
             "slot": "RB"
           },
@@ -1106,6 +1111,11 @@
           {
             "name": "Matthew Golden",
             "order": 3,
+            "slot": "RWR"
+          },
+          {
+            "name": "Bo Melton",
+            "order": 4,
             "slot": "RWR"
           },
           {
@@ -1202,19 +1212,19 @@
             "slot": "LWR"
           },
           {
-            "name": "Kayshon Boutte",
+            "name": "Xavier Hutchinson",
             "order": 2,
+            "slot": "LWR"
+          },
+          {
+            "name": "Kayshon Boutte",
+            "order": 3,
             "slot": "RWR"
           },
           {
             "name": "Jaylin Noel",
-            "order": 3,
-            "slot": "SWR"
-          },
-          {
-            "name": "Xavier Hutchinson",
             "order": 4,
-            "slot": "LWR"
+            "slot": "SWR"
           },
           {
             "name": "Tank Dell",
@@ -1223,7 +1233,7 @@
           },
           {
             "name": "Jayden Higgins",
-            "order": 7,
+            "order": 9,
             "slot": "WR"
           }
         ],
@@ -1268,17 +1278,17 @@
             "slot": "TE"
           },
           {
-            "name": "Cade Stover",
+            "name": "Foster Moreau",
             "order": 2,
             "slot": "TE"
           },
           {
-            "name": "Marlin Klein",
+            "name": "Cade Stover",
             "order": 3,
             "slot": "TE"
           },
           {
-            "name": "Foster Moreau",
+            "name": "Marlin Klein",
             "order": 4,
             "slot": "TE"
           },
@@ -1381,14 +1391,14 @@
             "slot": "RWR"
           },
           {
-            "name": "Deion Burks",
+            "name": "D.J. Montgomery",
             "order": 6,
-            "slot": "SWR"
+            "slot": "WR"
           },
           {
-            "name": "D.J. Montgomery",
-            "order": 7,
-            "slot": "WR"
+            "name": "Deion Burks",
+            "order": 9,
+            "slot": "SWR"
           }
         ]
       }
@@ -1457,12 +1467,12 @@
             "slot": "TE"
           },
           {
-            "name": "Tanner Koziol",
+            "name": "Quintin Morris",
             "order": 3,
             "slot": "TE"
           },
           {
-            "name": "Quintin Morris",
+            "name": "Tanner Koziol",
             "order": 4,
             "slot": "TE"
           }
@@ -1497,7 +1507,7 @@
           },
           {
             "name": "Jared Wiley",
-            "order": 3,
+            "order": 4,
             "slot": "TE"
           },
           {
@@ -1611,12 +1621,12 @@
         ],
         "TE": [
           {
-            "name": "Oronde Gadsden",
+            "name": "David Njoku",
             "order": 1,
             "slot": "TE"
           },
           {
-            "name": "David Njoku",
+            "name": "Oronde Gadsden",
             "order": 2,
             "slot": "TE"
           },
@@ -1648,14 +1658,14 @@
             "slot": "RWR"
           },
           {
-            "name": "KeAndre Lambert-Smith",
+            "name": "Derius Davis",
             "order": 5,
-            "slot": "LWR"
+            "slot": "SWR"
           },
           {
-            "name": "Derius Davis",
+            "name": "KeAndre Lambert-Smith",
             "order": 6,
-            "slot": "SWR"
+            "slot": "LWR"
           }
         ],
         "QB": [
@@ -1682,12 +1692,12 @@
             "slot": "QB"
           },
           {
-            "name": "Ty Simpson",
+            "name": "Stetson Bennett",
             "order": 2,
             "slot": "QB"
           },
           {
-            "name": "Stetson Bennett",
+            "name": "Ty Simpson",
             "order": 3,
             "slot": "QB"
           },
@@ -1709,9 +1719,9 @@
             "slot": "LWR"
           },
           {
-            "name": "Tutu Atwell",
+            "name": "Konata Mumpfield",
             "order": 3,
-            "slot": "RWR"
+            "slot": "LWR"
           },
           {
             "name": "Jordan Whittington",
@@ -1719,29 +1729,29 @@
             "slot": "SWR"
           },
           {
-            "name": "Konata Mumpfield",
-            "order": 5,
-            "slot": "LWR"
-          },
-          {
             "name": "Xavier Smith",
-            "order": 6,
+            "order": 5,
             "slot": "SWR"
           },
           {
+            "name": "Tutu Atwell",
+            "order": 6,
+            "slot": "RWR"
+          },
+          {
             "name": "CJ Daniels",
-            "order": 7,
+            "order": 9,
             "slot": "LWR"
           }
         ],
         "TE": [
           {
-            "name": "Terrance Ferguson",
+            "name": "Colby Parkinson",
             "order": 1,
             "slot": "TE"
           },
           {
-            "name": "Colby Parkinson",
+            "name": "Terrance Ferguson",
             "order": 2,
             "slot": "TE"
           },
@@ -1774,7 +1784,7 @@
           },
           {
             "name": "Ronnie Rivers",
-            "order": 4,
+            "order": 3,
             "slot": "RB"
           }
         ]
@@ -1802,7 +1812,7 @@
           {
             "name": "Malik Benson",
             "order": 4,
-            "slot": "RWR"
+            "slot": "SWR"
           },
           {
             "name": "Dareke Young",
@@ -1871,18 +1881,18 @@
         ],
         "TE": [
           {
-            "name": "Michael Mayer",
+            "name": "Brock Bowers",
             "order": 1,
             "slot": "TE"
           },
           {
-            "name": "Ian Thomas",
+            "name": "Michael Mayer",
             "order": 2,
             "slot": "TE"
           },
           {
-            "name": "Brock Bowers",
-            "order": 4,
+            "name": "Ian Thomas",
+            "order": 3,
             "slot": "TE"
           },
           {
@@ -1908,23 +1918,23 @@
             "slot": "RWR"
           },
           {
-            "name": "Jalen Tolbert",
+            "name": "Chris Bell",
             "order": 3,
             "slot": "LWR"
           },
           {
-            "name": "Chris Bell",
-            "order": 4,
-            "slot": "LWR"
-          },
-          {
             "name": "Kevin Coleman",
-            "order": 5,
+            "order": 4,
             "slot": "SWR"
           },
           {
+            "name": "Jalen Tolbert",
+            "order": 5,
+            "slot": "LWR"
+          },
+          {
             "name": "Ryan Miller",
-            "order": 6,
+            "order": 7,
             "slot": "RWR"
           }
         ],
@@ -1945,13 +1955,13 @@
             "slot": "TE"
           },
           {
-            "name": "Justin Joly",
+            "name": "Cole Turner",
             "order": 4,
             "slot": "TE"
           },
           {
-            "name": "Cole Turner",
-            "order": 5,
+            "name": "Justin Joly",
+            "order": 6,
             "slot": "TE"
           }
         ],
@@ -2016,14 +2026,14 @@
             "slot": "LWR"
           },
           {
-            "name": "Jeshaun Jones",
+            "name": "Myles Price",
             "order": 5,
-            "slot": "RWR"
+            "slot": "SWR"
           },
           {
-            "name": "Myles Price",
+            "name": "Jeshaun Jones",
             "order": 6,
-            "slot": "SWR"
+            "slot": "RWR"
           }
         ],
         "TE": [
@@ -2068,11 +2078,6 @@
             "name": "Max Bredeson",
             "order": 4,
             "slot": "RB"
-          },
-          {
-            "name": "Jermar Jefferson",
-            "order": 6,
-            "slot": "RB"
           }
         ],
         "QB": [
@@ -2104,24 +2109,24 @@
             "slot": "QB"
           },
           {
-            "name": "Behren Morton",
+            "name": "Tommy DeVito",
             "order": 2,
             "slot": "QB"
           },
           {
-            "name": "Tommy DeVito",
+            "name": "Behren Morton",
             "order": 3,
             "slot": "QB"
           }
         ],
         "WR": [
           {
-            "name": "A.J. Brown",
+            "name": "Romeo Doubs",
             "order": 1,
-            "slot": "LWR"
+            "slot": "RWR"
           },
           {
-            "name": "Romeo Doubs",
+            "name": "Mack Hollins",
             "order": 2,
             "slot": "RWR"
           },
@@ -2131,19 +2136,19 @@
             "slot": "SWR"
           },
           {
-            "name": "Mack Hollins",
-            "order": 4,
-            "slot": "RWR"
-          },
-          {
             "name": "Kyle Williams",
-            "order": 5,
+            "order": 4,
             "slot": "SWR"
           },
           {
             "name": "Efton Chism",
-            "order": 6,
+            "order": 5,
             "slot": "SWR"
+          },
+          {
+            "name": "A.J. Brown",
+            "order": 6,
+            "slot": "LWR"
           },
           {
             "name": "Jeremiah Webb",
@@ -2180,23 +2185,23 @@
         ],
         "RB": [
           {
-            "name": "TreVeyon Henderson",
+            "name": "Rhamondre Stevenson",
             "order": 1,
             "slot": "RB"
           },
           {
-            "name": "Rhamondre Stevenson",
+            "name": "TreVeyon Henderson",
             "order": 2,
             "slot": "RB"
           },
           {
-            "name": "Reggie Gilliam",
+            "name": "Corey Kiner",
             "order": 3,
             "slot": "RB"
           },
           {
-            "name": "Corey Kiner",
-            "order": 5,
+            "name": "Reggie Gilliam",
+            "order": 4,
             "slot": "RB"
           }
         ]
@@ -2222,13 +2227,13 @@
             "slot": "RB"
           },
           {
-            "name": "Audric Estime",
+            "name": "Ty Chandler",
             "order": 4,
             "slot": "RB"
           },
           {
-            "name": "Ty Chandler",
-            "order": 5,
+            "name": "Audric Estime",
+            "order": 6,
             "slot": "RB"
           }
         ],
@@ -2239,12 +2244,12 @@
             "slot": "QB"
           },
           {
-            "name": "Zach Wilson",
+            "name": "Spencer Rattler",
             "order": 2,
             "slot": "QB"
           },
           {
-            "name": "Spencer Rattler",
+            "name": "Zach Wilson",
             "order": 3,
             "slot": "QB"
           }
@@ -2298,6 +2303,11 @@
             "slot": "TE"
           },
           {
+            "name": "Treyton Welch",
+            "order": 5,
+            "slot": "TE"
+          },
+          {
             "name": "Moliki Matavao",
             "order": 6,
             "slot": "TE"
@@ -2315,7 +2325,7 @@
             "slot": "RB"
           },
           {
-            "name": "Najee Harris",
+            "name": "Devin Singletary",
             "order": 2,
             "slot": "RB"
           },
@@ -2325,7 +2335,7 @@
             "slot": "RB"
           },
           {
-            "name": "Devin Singletary",
+            "name": "Najee Harris",
             "order": 4,
             "slot": "RB"
           }
@@ -2359,14 +2369,14 @@
             "slot": "LWR"
           },
           {
-            "name": "Darnell Mooney",
+            "name": "Malachi Fields",
             "order": 2,
-            "slot": "SWR"
+            "slot": "RWR"
           },
           {
-            "name": "Malachi Fields",
+            "name": "Darnell Mooney",
             "order": 3,
-            "slot": "RWR"
+            "slot": "SWR"
           },
           {
             "name": "Odell Beckham",
@@ -2418,12 +2428,12 @@
             "slot": "RB"
           },
           {
-            "name": "Andrew Beck",
+            "name": "Kene Nwangwu",
             "order": 4,
             "slot": "RB"
           },
           {
-            "name": "Kene Nwangwu",
+            "name": "Andrew Beck",
             "order": 5,
             "slot": "RB"
           },
@@ -2484,12 +2494,12 @@
         ],
         "TE": [
           {
-            "name": "Mason Taylor",
+            "name": "Kenyon Sadiq",
             "order": 1,
             "slot": "TE"
           },
           {
-            "name": "Kenyon Sadiq",
+            "name": "Mason Taylor",
             "order": 2,
             "slot": "TE"
           },
@@ -2516,22 +2526,22 @@
             "slot": "TE"
           },
           {
-            "name": "Eli Stowers",
+            "name": "Johnny Mundt",
             "order": 2,
             "slot": "TE"
           },
           {
-            "name": "Johnny Mundt",
+            "name": "Grant Calcaterra",
             "order": 3,
             "slot": "TE"
           },
           {
-            "name": "Grant Calcaterra",
+            "name": "E.J. Jenkins",
             "order": 4,
             "slot": "TE"
           },
           {
-            "name": "E.J. Jenkins",
+            "name": "Eli Stowers",
             "order": 5,
             "slot": "TE"
           }
@@ -2553,19 +2563,24 @@
             "slot": "SWR"
           },
           {
-            "name": "Marquise Brown",
-            "order": 4,
-            "slot": "SWR"
-          },
-          {
             "name": "Darius Cooper",
-            "order": 5,
+            "order": 4,
             "slot": "RWR"
           },
           {
             "name": "Elijah Moore",
-            "order": 6,
+            "order": 5,
             "slot": "LWR"
+          },
+          {
+            "name": "Marquise Brown",
+            "order": 6,
+            "slot": "SWR"
+          },
+          {
+            "name": "Danny Gray",
+            "order": 8,
+            "slot": "WR"
           },
           {
             "name": "Johnny Wilson",
@@ -2668,14 +2683,14 @@
             "slot": "RWR"
           },
           {
-            "name": "Germie Bernard",
+            "name": "Roman Wilson",
             "order": 3,
-            "slot": "LWR"
+            "slot": "SWR"
           },
           {
-            "name": "Roman Wilson",
+            "name": "Germie Bernard",
             "order": 4,
-            "slot": "SWR"
+            "slot": "LWR"
           },
           {
             "name": "Ben Skowronek",
@@ -2717,12 +2732,12 @@
       "slots": {
         "QB": [
           {
-            "name": "Sam Darnold",
+            "name": "Drew Lock",
             "order": 1,
             "slot": "QB"
           },
           {
-            "name": "Drew Lock",
+            "name": "Sam Darnold",
             "order": 2,
             "slot": "QB"
           },
@@ -2755,17 +2770,17 @@
           },
           {
             "name": "Irv Charles",
-            "order": 7,
+            "order": 5,
             "slot": "LWR"
           },
           {
             "name": "Jake Bobo",
-            "order": 8,
+            "order": 6,
             "slot": "WR"
           },
           {
             "name": "Montorie Foster",
-            "order": 10,
+            "order": 9,
             "slot": "SWR"
           }
         ],
@@ -2776,7 +2791,7 @@
             "slot": "RB"
           },
           {
-            "name": "Zach Charbonnet",
+            "name": "George Holani",
             "order": 2,
             "slot": "RB"
           },
@@ -2786,18 +2801,18 @@
             "slot": "RB"
           },
           {
-            "name": "George Holani",
+            "name": "Zach Charbonnet",
             "order": 4,
             "slot": "RB"
           },
           {
             "name": "Brady Russell",
-            "order": 7,
+            "order": 6,
             "slot": "RB"
           },
           {
             "name": "Robbie Ouzts",
-            "order": 8,
+            "order": 7,
             "slot": "RB"
           }
         ],
@@ -2840,29 +2855,29 @@
             "slot": "RWR"
           },
           {
-            "name": "De'Zhaun Stribling",
+            "name": "Demarcus Robinson",
             "order": 3,
+            "slot": "LWR"
+          },
+          {
+            "name": "Jordan Watkins",
+            "order": 4,
+            "slot": "RWR"
+          },
+          {
+            "name": "Jacob Cowing",
+            "order": 5,
             "slot": "SWR"
           },
           {
             "name": "Christian Kirk",
-            "order": 4,
+            "order": 6,
             "slot": "SWR"
           },
           {
             "name": "Brandon Aiyuk",
-            "order": 5,
-            "slot": "WR"
-          },
-          {
-            "name": "Demarcus Robinson",
-            "order": 6,
-            "slot": "LWR"
-          },
-          {
-            "name": "Jacob Cowing",
             "order": 8,
-            "slot": "SWR"
+            "slot": "WR"
           },
           {
             "name": "Ricky Pearsall",
@@ -2870,9 +2885,9 @@
             "slot": "WR"
           },
           {
-            "name": "Jordan Watkins",
+            "name": "De'Zhaun Stribling",
             "order": 10,
-            "slot": "RWR"
+            "slot": "SWR"
           }
         ],
         "TE": [
@@ -2905,12 +2920,12 @@
           },
           {
             "name": "Jordan James",
-            "order": 3,
+            "order": 4,
             "slot": "RB"
           },
           {
             "name": "Isaac Guerendo",
-            "order": 5,
+            "order": 6,
             "slot": "RB"
           }
         ],
@@ -3068,12 +3083,12 @@
             "slot": "RB"
           },
           {
-            "name": "Nicholas Singleton",
+            "name": "Julius Chestnut",
             "order": 3,
             "slot": "RB"
           },
           {
-            "name": "Julius Chestnut",
+            "name": "Nicholas Singleton",
             "order": 4,
             "slot": "RB"
           }
@@ -3139,9 +3154,9 @@
             "slot": "SWR"
           },
           {
-            "name": "Treylon Burks",
+            "name": "Dyami Brown",
             "order": 4,
-            "slot": "SWR"
+            "slot": "LWR"
           },
           {
             "name": "Jaylin Lane",
@@ -3149,12 +3164,12 @@
             "slot": "SWR"
           },
           {
-            "name": "Dyami Brown",
+            "name": "Luke McCaffrey",
             "order": 6,
-            "slot": "LWR"
+            "slot": "SWR"
           },
           {
-            "name": "Luke McCaffrey",
+            "name": "Treylon Burks",
             "order": 7,
             "slot": "SWR"
           }
@@ -3205,12 +3220,12 @@
             "slot": "TE"
           },
           {
-            "name": "John Bates",
+            "name": "Ben Sinnott",
             "order": 2,
             "slot": "TE"
           },
           {
-            "name": "Ben Sinnott",
+            "name": "John Bates",
             "order": 3,
             "slot": "TE"
           },

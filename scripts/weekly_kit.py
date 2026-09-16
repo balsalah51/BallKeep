@@ -147,7 +147,7 @@ def weekly_sources(pos: str) -> list:
     ]
 
 
-def _mash(maps: dict, bank: dict, pos: str | None = None, cap: int | None = None, long_core=None) -> list:
+def _mash(maps: dict, bank: dict, pos: str | None = None, cap: int | None = None, long_core=None, editorial: bool = True) -> list:
     keys = set()
     for mp in maps.values():
         keys.update(mp)
@@ -180,7 +180,8 @@ def _mash(maps: dict, bank: dict, pos: str | None = None, cap: int | None = None
     for i, r in enumerate(rows, 1):
         fpts = r.get("fpts") or r.get("fpts_fp")
         out.append({**r, "bk": i, "value": bk_value(i), "fpts": fpts})
-    apply_rank_drops(out)
+    if editorial:
+        apply_rank_drops(out)
     return out
 
 
@@ -303,11 +304,19 @@ def _week1_waiver_payload() -> dict:
     return json.loads(path.read_text())
 
 
-def week1_waiver_maps() -> dict:
-    """Published pre-Week 1 waiver ranks. Kickers and DST stay off."""
+def _waiver_payload() -> dict:
+    week = week_num()
+    path = WEEKLY / f"week{week}_waiver_sources.json"
+    if path.exists():
+        return json.loads(path.read_text())
+    return _week1_waiver_payload()
+
+
+def _maps_from_payload(payload: dict) -> dict:
+    """Published waiver ranks. Kickers and DST stay off."""
     skip = {"DST", "K", "DEF", "D/ST"}
     maps = {}
-    for src in (_week1_waiver_payload().get("sources") or []):
+    for src in (payload.get("sources") or []):
         mp = {}
         for row in src.get("players") or []:
             pos = (row.get("pos") or "").upper()
@@ -322,10 +331,8 @@ def week1_waiver_maps() -> dict:
     return maps
 
 
-def week1_waiver_board(cap: int = 60) -> list:
-    """Pre-Week 1 consensus adds from published waiver lists."""
-    payload = _week1_waiver_payload()
-    maps = week1_waiver_maps()
+def _waiver_board_from(payload: dict, cap: int = 60) -> list:
+    maps = _maps_from_payload(payload)
     bank = dict(_info_bank())
     for src in (payload.get("sources") or []):
         for row in src.get("players") or []:
@@ -343,17 +350,43 @@ def week1_waiver_board(cap: int = 60) -> list:
             if name and len(name) > len(cur.get("name") or ""):
                 cur["name"] = name
             bank[k] = cur
-    rows = [r for r in _mash(maps, bank, long_core=("FantasyPros WW ECR",)) if r["n"] >= 2]
+    core = tuple(payload.get("long_core") or ("FantasyPros WW ECR",))
+    rows = [r for r in _mash(maps, bank, long_core=core, editorial=False) if r["n"] >= 2]
     out = []
     for i, r in enumerate(rows[:cap], 1):
         out.append({**r, "bk": i, "value": bk_value(i)})
-    apply_rank_drops(out)
     return out
+
+
+def week1_waiver_maps() -> dict:
+    """Published waiver ranks for the current week. Kickers and DST stay off."""
+    return _maps_from_payload(_waiver_payload())
+
+
+def week1_waiver_board(cap: int = 60) -> list:
+    """Consensus adds from the published waiver lists for this week."""
+    return _waiver_board_from(_waiver_payload(), cap)
+
+
+def historic_waiver_board(week: int, cap: int = 60) -> list:
+    """Published waiver mash for a finished week, used by the archive."""
+    path = WEEKLY / f"week{week}_waiver_sources.json"
+    if not path.exists():
+        return []
+    return _waiver_board_from(json.loads(path.read_text()), cap)
+
+
+def historic_waiver_sources(week: int) -> list:
+    path = WEEKLY / f"week{week}_waiver_sources.json"
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text())
+    return [(src["name"], src.get("url") or "", src.get("note") or "") for src in (payload.get("sources") or [])]
 
 
 def week1_waiver_sources() -> list:
     out = []
-    for src in (_week1_waiver_payload().get("sources") or []):
+    for src in (_waiver_payload().get("sources") or []):
         out.append((src["name"], src.get("url") or "", src.get("note") or ""))
     return out
 

@@ -279,11 +279,50 @@ def drop_player(rows: list[dict], name: str, spots: int = 4) -> list[dict]:
     return rows
 
 
-# Editorial drops applied to every published Ball Keep list after the mash.
-RANK_DROPS = (("Drake Maye", 4),)
+# Editorial moves after Week 1 tape. Applied to every published Ball Keep list.
+RANK_DROPS = (
+    ("Drake Maye", 4),
+    ("Sam Darnold", 6),
+    ("A.J. Brown", 5),
+)
+RANK_BUMPS = (
+    ("Kenneth Walker", 5),
+    ("Jalen Coker", 10),
+    ("Kaelon Black", 8),
+    ("D'Andre Swift", 3),
+    ("Caleb Williams", 2),
+    ("Tyler Shough", 5),
+)
+TEAM_FIXES = {
+    "Kenneth Walker": "KC",
+}
+
+
+def bump_player(rows: list[dict], name: str, spots: int = 4) -> list[dict]:
+    """Move a named player up `spots` ranks. Names between slide down."""
+    if not rows or spots < 1:
+        return rows
+    idx = next((i for i, r in enumerate(rows) if (r.get("name") or "") == name), None)
+    if idx is None:
+        return rows
+    dest = max(idx - spots, 0)
+    if dest >= idx:
+        return rows
+    player = rows.pop(idx)
+    rows.insert(dest, player)
+    for i, r in enumerate(rows, 1):
+        r["bk"] = i
+        r["value"] = bk_value(i)
+    return rows
 
 
 def apply_rank_drops(rows: list[dict]) -> list[dict]:
     for name, spots in RANK_DROPS:
         drop_player(rows, name, spots)
+    for name, spots in RANK_BUMPS:
+        bump_player(rows, name, spots)
+    for r in rows:
+        fix = TEAM_FIXES.get(r.get("name") or "")
+        if fix:
+            r["team"] = fix
     return rows
