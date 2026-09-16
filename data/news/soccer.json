@@ -1,7 +1,7 @@
 {
   "sport": "soccer",
-  "updated": "2026-09-16T01:25:17Z",
-  "fresh": 51,
+  "updated": "2026-09-16T02:26:48Z",
+  "fresh": 105,
   "stories": [
     {
       "id": "scout-selection-best-gameweek-35-268eb069",
@@ -1320,13 +1320,20 @@
       "id": "manchester-city-brentford-premier-league-tv-channel-kick-f069b09e",
       "slug": "manchester-city-brentford-premier-league-tv-channel-kick-f069b09e",
       "sport": "soccer",
-      "headline": "(Live Updates)! Manchester City vs Manchester United Premier League Live Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 13 September 2026",
-      "blurb": "Maresca relishing Premier League debut as City boss Manchester City FC",
-      "summary": "Morgan Rogers, Phil Foden, Dominic Calvert-Lewin, Mason Mount, Iliman Ndiaye, Matheus Cunha, Harry Maguire, Jérémy Doku, Alexander Isak, Bryan Mbeumo, Anthony Elanga, Jacob Murphy, Joe Willock, Jaidon Anthony, Bruno Fernandes, Mateus Fernandes, Erling Haaland, Youri Tielemans, Cole Palmer, Mac Allister, Ryan Gravenberch, Senne Lammens and Lewis Dunk: Maresca relishing Premier League debut as City boss Manchester City FC I had no doubt about joining City, says Maresca Manchester City FC Crystal Palace in Premier League: TV channel, kick-off time, live stream, referee, injury and team news ESPN Aggregated from Manchester City FC, ESPN, Loughborough University, Guardian Football, lboro.ac.uk and 52 more.",
+      "headline": "Nottingham Forest eyeing Premier League record sale for Elliot Anderson ahead of formal Manchester City talks",
+      "blurb": "Nottingham Forest eyeing Premier League record sale for Elliot Anderson ahead of formal Manchester City talks cityxtra.co.uk",
+      "summary": "Nottingham Forest eyeing Premier League record sale for Elliot Anderson ahead of formal Manchester City talks cityxtra.co.uk Crystal Palace in Premier League: TV channel, kick-off time, live stream, referee, injury and team news ESPN Brentford in Premier League: TV channel, kick-off time, live stream, referee, injury and team news ESPN Aggregated from cityxtra.co.uk, ESPN, Loughborough University, Guardian Football, lboro.ac.uk and 53 more.",
       "category": "injury",
       "published": "2023-06-02T12:27:00Z",
       "updated": "2026-09-15T15:29:32Z",
       "players": [
+        {
+          "key": "anderson",
+          "name": "Elliot Anderson",
+          "slug": "elliot-anderson",
+          "pos": "MID",
+          "team": "MCI"
+        },
         {
           "key": "rogers",
           "name": "Morgan Rogers",
@@ -3809,6 +3816,14 @@
           "kind": "video",
           "snippet": "EVERY Premier League Transfer Sale (2026-27) youtube.com",
           "published": "Wed, 19 Aug 2026 08:58:31 GMT"
+        },
+        {
+          "title": "Nottingham Forest eyeing Premier League record sale for Elliot Anderson ahead of formal Manchester City talks",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZnZ1NE93UUFMMC1DU0ViVTZxOTNsLUt4elhQTWtoSEkyT1ZzYmxfaWthRUc2QTZCbEpBNVBnaWFlbk1Hb0h4NTlLU3ltUlpubkttbFFWazFkeHlhb195ZmhObWl2SzFoYWFiN1ByVmFvTE00NVRjb0NrQ0s4QmMzNE1VeW1QVUtyWm9EMnQ4VWNxQmpQYjQ2ZXJjNmhidUp0U0ZnLTUwV3FTZmZMRG83aTZJR0JtT3J3R2xPekFXZTVIeXBiSjNXdDdfaGZHVHlydnpzOE9FWUs2QQ?oc=5",
+          "publisher": "cityxtra.co.uk",
+          "kind": "article",
+          "snippet": "Nottingham Forest eyeing Premier League record sale for Elliot Anderson ahead of formal Manchester City talks cityxtra.co.uk",
+          "published": "Fri, 17 Apr 2026 07:00:00 GMT"
         }
       ]
     },
@@ -4315,6 +4330,81 @@
           "kind": "video",
           "snippet": "EXTENDED HIGHLIGHTS | Man United 0-1 Man City | Haaland goal wins Manchester derby for 10-man Blues YouTube",
           "published": "Mon, 14 Sep 2026 23:00:34 GMT"
+        }
+      ]
+    },
+    {
+      "id": "should-fernandes-seen-red-along-foden-0f6bfdf7",
+      "slug": "should-fernandes-seen-red-along-foden-0f6bfdf7",
+      "sport": "soccer",
+      "headline": "Webb: Foden red justified but Fernandes escaped yellow for 'petulant' kick",
+      "blurb": "Pro Ref chief Howard Webb has backed the decision to send off Phil Foden in the Manchester derby but revealed VAR could not intervene to caution Bruno Fernandes for the…",
+      "summary": "Pro Ref chief Howard Webb has backed the decision to send off Phil Foden in the Manchester derby but revealed VAR could not intervene to caution Bruno Fernandes for the \"petulant\" kick that sparked the altercation. Pro Ref chief refereeing officer Howard Webb explains to Match Officials Mic'd Up why Manchester United captain Bruno Fernandes escaped any punishment despite his involvement in the incident that saw Phil Foden sent off in the Manchester derby. Dermot Gallagher and Jay Bothroyd discuss whether Bruno Fernandes and Phil Foden should have both been sent off in the Manchester derby? Aggregated from Sky Sports Football, Maresca.",
+      "category": "wire",
+      "published": "2026-09-13T18:26:24Z",
+      "updated": "2026-09-15T16:27:09Z",
+      "players": [
+        {
+          "key": "bruno fernandes",
+          "name": "Bruno Fernandes",
+          "slug": "bruno-fernandes",
+          "pos": "MID",
+          "team": "MUN"
+        },
+        {
+          "key": "foden",
+          "name": "Phil Foden",
+          "slug": "phil-foden",
+          "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "fernandes",
+          "name": "Mateus Fernandes",
+          "slug": "mateus-fernandes",
+          "pos": "MID",
+          "team": "TOT"
+        },
+        {
+          "key": "gallagher",
+          "name": "Conor Gallagher",
+          "slug": "conor-gallagher",
+          "pos": "MID",
+          "team": "TOT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Should Fernandes have seen red along with Foden?",
+          "url": "https://www.skysports.com/watch/video/13585777/ref-watch-should-bruno-fernandes-have-seen-red-along-with-phil-foden",
+          "publisher": "Sky Sports Football",
+          "kind": "video",
+          "snippet": "Dermot Gallagher and Jay Bothroyd discuss whether Bruno Fernandes and Phil Foden should have both been sent off in the Manchester derby?",
+          "published": "Mon, 14 Sep 2026 11:25:00 BST"
+        },
+        {
+          "title": "Fernandes and Foden should have been sent off",
+          "url": "https://www.bbc.co.uk/sport/football/videos/cj061413lmqo?at_medium=RSS&at_campaign=rss",
+          "publisher": "Maresca",
+          "kind": "video",
+          "snippet": "Enzo Maresca believes both Phil Foden and Bruno Fernandes should have been sent off in Manchester City's derby victory against Manchester United.",
+          "published": "Sun, 13 Sep 2026 18:26:24 GMT"
+        },
+        {
+          "title": "Webb: Foden red justified but Fernandes escaped yellow for 'petulant' kick",
+          "url": "https://www.skysports.com/football/news/12040/13586192/pro-ref-chief-howard-webb-agrees-with-phil-foden-red-card-in-manchester-derby-but-admits-bruno-fernandes-should-have-been-booked",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "Pro Ref chief Howard Webb has backed the decision to send off Phil Foden in the Manchester derby but revealed VAR could not intervene to caution Bruno Fernandes for the \"petulant\" kick that sparked the altercation.",
+          "published": "Tue, 15 Sep 2026 17:00:00 BST"
+        },
+        {
+          "title": "Webb explains why Fernandes escaped punishment over Foden red",
+          "url": "https://www.skysports.com/watch/video/13586152/match-officials-micd-up-why-did-bruno-fernandes-escape-punishment-over-phil-foden-red-card",
+          "publisher": "Sky Sports Football",
+          "kind": "video",
+          "snippet": "Pro Ref chief refereeing officer Howard Webb explains to Match Officials Mic'd Up why Manchester United captain Bruno Fernandes escaped any punishment despite his involvement in the incident that saw Phil Foden sent off in the Manchester derby.",
+          "published": "Tue, 15 Sep 2026 17:00:00 BST"
         }
       ]
     },
@@ -5565,81 +5655,6 @@
           "kind": "article",
           "snippet": "Riccardo Calafiori's return from injury 'revealed' ahead of Arsenal's Champions League clash with Real Madrid talkSPORT",
           "published": "Fri, 21 Mar 2025 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "should-fernandes-seen-red-along-foden-0f6bfdf7",
-      "slug": "should-fernandes-seen-red-along-foden-0f6bfdf7",
-      "sport": "soccer",
-      "headline": "Webb: Foden red justified but Fernandes escaped yellow for 'petulant' kick",
-      "blurb": "Pro Ref chief Howard Webb has backed the decision to send off Phil Foden in the Manchester derby but revealed VAR could not intervene to caution Bruno Fernandes for the…",
-      "summary": "Pro Ref chief Howard Webb has backed the decision to send off Phil Foden in the Manchester derby but revealed VAR could not intervene to caution Bruno Fernandes for the \"petulant\" kick that sparked the altercation. Pro Ref chief refereeing officer Howard Webb explains to Match Officials Mic'd Up why Manchester United captain Bruno Fernandes escaped any punishment despite his involvement in the incident that saw Phil Foden sent off in the Manchester derby. Dermot Gallagher and Jay Bothroyd discuss whether Bruno Fernandes and Phil Foden should have both been sent off in the Manchester derby? Aggregated from Sky Sports Football, Maresca.",
-      "category": "wire",
-      "published": "2026-09-13T18:26:24Z",
-      "updated": "2026-09-15T16:27:09Z",
-      "players": [
-        {
-          "key": "bruno fernandes",
-          "name": "Bruno Fernandes",
-          "slug": "bruno-fernandes",
-          "pos": "MID",
-          "team": "MUN"
-        },
-        {
-          "key": "foden",
-          "name": "Phil Foden",
-          "slug": "phil-foden",
-          "pos": "MID",
-          "team": "MCI"
-        },
-        {
-          "key": "fernandes",
-          "name": "Mateus Fernandes",
-          "slug": "mateus-fernandes",
-          "pos": "MID",
-          "team": "TOT"
-        },
-        {
-          "key": "gallagher",
-          "name": "Conor Gallagher",
-          "slug": "conor-gallagher",
-          "pos": "MID",
-          "team": "TOT"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Should Fernandes have seen red along with Foden?",
-          "url": "https://www.skysports.com/watch/video/13585777/ref-watch-should-bruno-fernandes-have-seen-red-along-with-phil-foden",
-          "publisher": "Sky Sports Football",
-          "kind": "video",
-          "snippet": "Dermot Gallagher and Jay Bothroyd discuss whether Bruno Fernandes and Phil Foden should have both been sent off in the Manchester derby?",
-          "published": "Mon, 14 Sep 2026 11:25:00 BST"
-        },
-        {
-          "title": "Fernandes and Foden should have been sent off",
-          "url": "https://www.bbc.co.uk/sport/football/videos/cj061413lmqo?at_medium=RSS&at_campaign=rss",
-          "publisher": "Maresca",
-          "kind": "video",
-          "snippet": "Enzo Maresca believes both Phil Foden and Bruno Fernandes should have been sent off in Manchester City's derby victory against Manchester United.",
-          "published": "Sun, 13 Sep 2026 18:26:24 GMT"
-        },
-        {
-          "title": "Webb: Foden red justified but Fernandes escaped yellow for 'petulant' kick",
-          "url": "https://www.skysports.com/football/news/12040/13586192/pro-ref-chief-howard-webb-agrees-with-phil-foden-red-card-in-manchester-derby-but-admits-bruno-fernandes-should-have-been-booked",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "Pro Ref chief Howard Webb has backed the decision to send off Phil Foden in the Manchester derby but revealed VAR could not intervene to caution Bruno Fernandes for the \"petulant\" kick that sparked the altercation.",
-          "published": "Tue, 15 Sep 2026 17:00:00 BST"
-        },
-        {
-          "title": "Webb explains why Fernandes escaped punishment over Foden red",
-          "url": "https://www.skysports.com/watch/video/13586152/match-officials-micd-up-why-did-bruno-fernandes-escape-punishment-over-phil-foden-red-card",
-          "publisher": "Sky Sports Football",
-          "kind": "video",
-          "snippet": "Pro Ref chief refereeing officer Howard Webb explains to Match Officials Mic'd Up why Manchester United captain Bruno Fernandes escaped any punishment despite his involvement in the incident that saw Phil Foden sent off in the Manchester derby.",
-          "published": "Tue, 15 Sep 2026 17:00:00 BST"
         }
       ]
     },
@@ -8418,6 +8433,74 @@
       ]
     },
     {
+      "id": "arsenal-demand-meeting-pro-ref-unacceptable-penalty-sunderland-c01091c0",
+      "slug": "arsenal-demand-meeting-pro-ref-unacceptable-penalty-sunderland-c01091c0",
+      "sport": "soccer",
+      "headline": "Arsenal demand meeting with Pro Ref over ‘unacceptable’ penalty at Sunderland",
+      "blurb": "Arsenal to contact Pro Ref over penalty vs.",
+      "summary": "Enzo Le Fée, David Raya Martín and Daniel Ballard: Arsenal to contact Pro Ref over penalty vs. Sunderland 👀 | ESPN FC YouTube Club want explanation after spot-kick given against them They are likely to raise penalty not awarded at Aston Villa Arsenal are seeking an explanation from Pro Ref over the penalty awarded to Sunderland on Saturday that Mikel Arteta described as “ unacceptable at this level ”. Aggregated from YouTube, Guardian Football, Sky Sports Football, BBC Football.",
+      "category": "wire",
+      "published": "2026-09-14T11:31:00Z",
+      "updated": "2026-09-15T15:08:53Z",
+      "players": [
+        {
+          "key": "e le fee",
+          "name": "Enzo Le Fée",
+          "slug": "enzo-le-f-e",
+          "pos": "MID",
+          "team": "SUN"
+        },
+        {
+          "key": "david raya",
+          "name": "David Raya Martín",
+          "slug": "david-raya-mart-n",
+          "pos": "GKP",
+          "team": "ARS"
+        },
+        {
+          "key": "ballard",
+          "name": "Daniel Ballard",
+          "slug": "daniel-ballard",
+          "pos": "DEF",
+          "team": "SUN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Arsenal demand meeting with Pro Ref over ‘unacceptable’ penalty at Sunderland",
+          "url": "https://www.theguardian.com/football/2026/sep/14/arsenal-pro-ref-sunderland-penalty-meeting-explanation",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Club want explanation after spot-kick given against them They are likely to raise penalty not awarded at Aston Villa Arsenal are seeking an explanation from Pro Ref over the penalty awarded to Sunderland on Saturday that Mikel Arteta described as “ unacceptable at this level ”. I",
+          "published": "Mon, 14 Sep 2026 12:46:06 GMT"
+        },
+        {
+          "title": "Arsenal latest: Gunners to contact Pro Ref over Sunderland penalty",
+          "url": "https://www.skysports.com/football/live-blog/12040/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "",
+          "published": "Mon, 14 Sep 2026 14:41:00 BST"
+        },
+        {
+          "title": "Arsenal to contact Pro Ref over Konsa penalty",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cmg49n3g7exlo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "Arsenal will contact refereeing body Pro Ref over the incident that saw Ezri Konsa concede a penalty in Saturday's win over Sunderland.",
+          "published": "Mon, 14 Sep 2026 11:31:00 GMT"
+        },
+        {
+          "title": "Arsenal to contact Pro Ref over penalty vs. Sunderland 👀 | ESPN FC",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5LVlEyemZWQWFxTXplVFU4Sk1ndnliNmtzTW5xUHR0NHJMMEhLdjduLWVtdDVqRWh4WlYxWml1RThmQVphNC05azVLYnN6OV84Qm4yNER3?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Arsenal to contact Pro Ref over penalty vs. Sunderland 👀 | ESPN FC YouTube",
+          "published": "Mon, 14 Sep 2026 22:22:50 GMT"
+        }
+      ]
+    },
+    {
       "id": "premier-league-10-talking-points-weekend-s-action-5f849aa5",
       "slug": "premier-league-10-talking-points-weekend-s-action-5f849aa5",
       "sport": "soccer",
@@ -9115,74 +9198,6 @@
       ]
     },
     {
-      "id": "arsenal-demand-meeting-pro-ref-unacceptable-penalty-sunderland-c01091c0",
-      "slug": "arsenal-demand-meeting-pro-ref-unacceptable-penalty-sunderland-c01091c0",
-      "sport": "soccer",
-      "headline": "Arsenal demand meeting with Pro Ref over ‘unacceptable’ penalty at Sunderland",
-      "blurb": "Arsenal to contact Pro Ref over penalty vs.",
-      "summary": "Enzo Le Fée, David Raya Martín and Daniel Ballard: Arsenal to contact Pro Ref over penalty vs. Sunderland 👀 | ESPN FC YouTube Club want explanation after spot-kick given against them They are likely to raise penalty not awarded at Aston Villa Arsenal are seeking an explanation from Pro Ref over the penalty awarded to Sunderland on Saturday that Mikel Arteta described as “ unacceptable at this level ”. Aggregated from YouTube, Guardian Football, Sky Sports Football, BBC Football.",
-      "category": "wire",
-      "published": "2026-09-14T11:31:00Z",
-      "updated": "2026-09-15T15:08:53Z",
-      "players": [
-        {
-          "key": "e le fee",
-          "name": "Enzo Le Fée",
-          "slug": "enzo-le-f-e",
-          "pos": "MID",
-          "team": "SUN"
-        },
-        {
-          "key": "david raya",
-          "name": "David Raya Martín",
-          "slug": "david-raya-mart-n",
-          "pos": "GKP",
-          "team": "ARS"
-        },
-        {
-          "key": "ballard",
-          "name": "Daniel Ballard",
-          "slug": "daniel-ballard",
-          "pos": "DEF",
-          "team": "SUN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Arsenal demand meeting with Pro Ref over ‘unacceptable’ penalty at Sunderland",
-          "url": "https://www.theguardian.com/football/2026/sep/14/arsenal-pro-ref-sunderland-penalty-meeting-explanation",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Club want explanation after spot-kick given against them They are likely to raise penalty not awarded at Aston Villa Arsenal are seeking an explanation from Pro Ref over the penalty awarded to Sunderland on Saturday that Mikel Arteta described as “ unacceptable at this level ”. I",
-          "published": "Mon, 14 Sep 2026 12:46:06 GMT"
-        },
-        {
-          "title": "Arsenal latest: Gunners to contact Pro Ref over Sunderland penalty",
-          "url": "https://www.skysports.com/football/live-blog/12040/13025486/arsenal-transfer-news-rumours-and-gossip-live-updates-and-latest-on-deals-signings-loans-and-contracts",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "",
-          "published": "Mon, 14 Sep 2026 14:41:00 BST"
-        },
-        {
-          "title": "Arsenal to contact Pro Ref over Konsa penalty",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cmg49n3g7exlo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Arsenal will contact refereeing body Pro Ref over the incident that saw Ezri Konsa concede a penalty in Saturday's win over Sunderland.",
-          "published": "Mon, 14 Sep 2026 11:31:00 GMT"
-        },
-        {
-          "title": "Arsenal to contact Pro Ref over penalty vs. Sunderland 👀 | ESPN FC",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5LVlEyemZWQWFxTXplVFU4Sk1ndnliNmtzTW5xUHR0NHJMMEhLdjduLWVtdDVqRWh4WlYxWml1RThmQVphNC05azVLYnN6OV84Qm4yNER3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Arsenal to contact Pro Ref over penalty vs. Sunderland 👀 | ESPN FC YouTube",
-          "published": "Mon, 14 Sep 2026 22:22:50 GMT"
-        }
-      ]
-    },
-    {
       "id": "jj-gabriel-transfer-highly-rated-manchester-united-teenage-0c227969",
       "slug": "jj-gabriel-transfer-highly-rated-manchester-united-teenage-0c227969",
       "sport": "soccer",
@@ -9400,6 +9415,59 @@
       ]
     },
     {
+      "id": "england-confirm-williams-captain-rugby-league-world-cup-69e73a44",
+      "slug": "england-confirm-williams-captain-rugby-league-world-cup-69e73a44",
+      "sport": "soccer",
+      "headline": "Dominic Calvert-Lewin’s England Dream: From Premier League Doubts To A Possible World Cup Recall",
+      "blurb": "Alvarez, Barcola and 10 huge Premier League transfers that could happen after World Cup The Independent",
+      "summary": "Dominic Calvert-Lewin and Tyrique George: Alvarez, Barcola and 10 huge Premier League transfers that could happen after World Cup The Independent England head coach Brian McDermott has confirmed George Williams will be his captain at next month's Rugby League World Cup. Dominic Calvert-Lewin’s England Dream: From Premier League Doubts To A Possible World Cup Recall roundtable.io Aggregated from The Independent, Sky Sports Football, roundtable.io.",
+      "category": "trade",
+      "published": "2026-05-21T07:00:00Z",
+      "updated": "2026-09-15T11:26:31Z",
+      "players": [
+        {
+          "key": "calvert lewin",
+          "name": "Dominic Calvert-Lewin",
+          "slug": "dominic-calvert-lewin",
+          "pos": "FWD",
+          "team": "LEE"
+        },
+        {
+          "key": "george",
+          "name": "Tyrique George",
+          "slug": "tyrique-george",
+          "pos": "MID",
+          "team": "EVE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "England confirm Williams as captain for Rugby League World Cup",
+          "url": "https://www.skysports.com/rugby-league/news/12040/13586102/george-williams-england-coach-brian-mcdermott-confirms-warrington-wolves-star-as-captain-for-rugby-league-world-cup",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "England head coach Brian McDermott has confirmed George Williams will be his captain at next month's Rugby League World Cup.",
+          "published": "Tue, 15 Sep 2026 12:05:00 BST"
+        },
+        {
+          "title": "Dominic Calvert-Lewin’s England Dream: From Premier League Doubts To A Possible World Cup Recall",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQdTJHaHNJN3dTOTlCRFhrMm5SX3FBQ3dVbW0xOWtraDA2X1NhLWVfY01NbG50eGNBWWRKbDIwc0lKMXJUTnpCRTBwRFhIYkNlMUtoaGpQTzk1OS1sZHZTWnhqa21sLTFtVTFNWlc2dGdRckFldllzODJuMUtjcGxIVjFMakxvVFRYaGJKRG40Z1VvS0VoSlFSX3B1QnNxLXBsOUo0QVJhR1U1bVhqZHNqU2xQaFMyZlpMNXQtQ29zcDZGSThqR2pVaXp4UUZNa1RIZUtBNkZYbFQ5Mk5VT2M0QV8yTVpKMGxTTjRIY1dkSzQ5bXU1dlZJ?oc=5",
+          "publisher": "roundtable.io",
+          "kind": "article",
+          "snippet": "Dominic Calvert-Lewin’s England Dream: From Premier League Doubts To A Possible World Cup Recall roundtable.io",
+          "published": "Thu, 21 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Alvarez, Barcola and 10 huge Premier League transfers that could happen after World Cup",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeTF1OWRpZ2NKamo0RUhUanMydU14OWVzNmdWLXIxa2w5YjlmWXMwZkNQUjZjWWZzUFo2cGk5bzVGdDN0dDNiT0JNV3JCaURnbW9hSm83cFV1R0NZN2NsRC1NZW55bG5DSERRS1c1dVVyWHhFRi0yVkdnU3Bkek5meUppaXdHMWNyUGJHWnR6XzZieUo0VUNzQW5pZFg3dWI3elJNc2tNQ0dyRUpic1oxalFiVVRKT0k?oc=5",
+          "publisher": "The Independent",
+          "kind": "article",
+          "snippet": "Alvarez, Barcola and 10 huge Premier League transfers that could happen after World Cup The Independent",
+          "published": "Wed, 22 Jul 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "premier-league-10-talking-points-weekend-s-action-5f849aa5",
       "slug": "premier-league-10-talking-points-weekend-s-action-5f849aa5",
       "sport": "soccer",
@@ -9553,12 +9621,56 @@
       ]
     },
     {
+      "id": "barcelona-monitor-kane-haaland-cd19ce97",
+      "slug": "barcelona-monitor-kane-haaland-cd19ce97",
+      "sport": "soccer",
+      "headline": "Barcelona monitor Kane & Haaland",
+      "blurb": "Barcelona are monitoring Harry Kane and Erling Haaland, Nick Woltemade could be a replacement for Kane at Bayern Munich, and Manchester United are interested in Jarrad…",
+      "summary": "Barcelona are monitoring Harry Kane and Erling Haaland, Nick Woltemade could be a replacement for Kane at Bayern Munich, and Manchester United are interested in Jarrad Branthwaite, plus more. Board reading of Wednesday's gossip.",
+      "category": "wire",
+      "published": "2026-09-15T20:19:31Z",
+      "updated": "2026-09-15T20:19:31Z",
+      "players": [
+        {
+          "key": "branthwaite",
+          "name": "Jarrad Branthwaite",
+          "slug": "jarrad-branthwaite",
+          "pos": "DEF",
+          "team": "EVE"
+        },
+        {
+          "key": "erling haaland",
+          "name": "Erling Haaland",
+          "slug": "erling-haaland",
+          "pos": "FWD",
+          "team": "MCI"
+        },
+        {
+          "key": "woltemade",
+          "name": "Nick Woltemade",
+          "slug": "nick-woltemade",
+          "pos": "FWD",
+          "team": "NEW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Barcelona monitor Kane & Haaland",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cqzezjn3wzjpo?at_medium=RSS&at_campaign=rss",
+          "publisher": "Wednesday's gossip",
+          "kind": "article",
+          "snippet": "Barcelona are monitoring Harry Kane and Erling Haaland, Nick Woltemade could be a replacement for Kane at Bayern Munich, and Manchester United are interested in Jarrad Branthwaite, plus more.",
+          "published": "Tue, 15 Sep 2026 20:19:31 GMT"
+        }
+      ]
+    },
+    {
       "id": "everton-s-premier-league-rivals-make-jack-grealish-8e14c51b",
       "slug": "everton-s-premier-league-rivals-make-jack-grealish-8e14c51b",
       "sport": "soccer",
       "headline": "Every Premier League transfer this summer as window deadline passes and Guehi to Liverpool suffers late collapse",
-      "blurb": "Premier League breaks transfer record for second straight summer Yahoo Sports",
-      "summary": "Enzo Fernández, Elliot Anderson, Richarlison de Andrade, Morgan Rogers, Manuel Ugarte Ribeiro, Florian Wirtz, Joe Gomez, Alexander Isak, Emiliano Martínez Romero, Jack Grealish and Cristian Romero: Premier League breaks transfer record for second straight summer Yahoo Sports Enzo Fernández has broken the Premier League transfer record twice 🤑 #PremierLeague x.com Premier League transfer round-up: A guide to every club's summer plans YouTube Aggregated from Yahoo Sports, x.com, YouTube, CaughtOffside, nbcsports.com and 34 more.",
+      "blurb": "The Premier League's transfer spending compared to every other league is OUTRAGEOUS 💰💰💰 x.com",
+      "summary": "Enzo Fernández, Elliot Anderson, Richarlison de Andrade, Morgan Rogers, Manuel Ugarte Ribeiro, Florian Wirtz, Joe Gomez, Alexander Isak, Emiliano Martínez Romero, Jack Grealish and Cristian Romero: The Premier League's transfer spending compared to every other league is OUTRAGEOUS 💰💰💰 x.com Transfer news: Every Premier League club's plans for summer window 2026 skysports.com Premier League and the transfer fever that has no stopping point Laodong.vn Aggregated from x.com, skysports.com, Laodong.vn, Yahoo Sports, CaughtOffside and 35 more.",
       "category": "injury",
       "published": "2022-09-18T18:00:02Z",
       "updated": "2026-09-14T05:45:00Z",
@@ -10249,80 +10361,44 @@
           "kind": "video",
           "snippet": "Premier League transfer round-up: A guide to every club's summer plans YouTube",
           "published": "Wed, 30 Jul 2025 20:30:01 GMT"
+        },
+        {
+          "title": "The Premier League's transfer spending compared to every other league is OUTRAGEOUS 💰💰💰",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9aVUhUT292QXY5UE9GOFdLT0pvNHROQUhtU2ZDbGdZQ0dRRjJEalg3R2F3UFU4SGxjcGJtanE0WTFsdV9pTXlFQ2lKWDB2VE1OeVZ2dk9MUkZ2RTZJMmFQWHRlRFo5bG8?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "The Premier League's transfer spending compared to every other league is OUTRAGEOUS 💰💰💰 x.com",
+          "published": "Wed, 25 Jan 2023 08:00:00 GMT"
+        },
+        {
+          "title": "Transfer news: Every Premier League club's plans for summer window 2026",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZlg1NlItd0VMbWVaR3dkV3FkQWIzWlg0SWdFeS1VTHFOVVBIb1Q4bko3QnZackdzTDc0MjZ4TkdvT18tVGNCZ1U2OEZ5ek1zTXJhZkZsY014MkZ0UGhOdlR6UlRIMG9RdFRGYmw3QkR2LUpOYVFDLXh5aU1yZ1hPaXlhVHRDTG5rUkVQRWR6TWc3bXVsbDRzeUhMdUR6MUZaNFJZSUVoV0tIb3RmNmZSbThyUGpPQmNvRHZFV3NIbnl5Zw?oc=5",
+          "publisher": "skysports.com",
+          "kind": "article",
+          "snippet": "Transfer news: Every Premier League club's plans for summer window 2026 skysports.com",
+          "published": "Tue, 16 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League and the transfer fever that has no stopping point",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOT2tfSllFb0ViSFZubGJ5UEFteE1ndlZLNXNWdHlCd1pWblBGRG8yUEdUeWJtRWs2Z2ZBMzVFMmlabmVkZ3JPV1FHWTZpT3NKTWZiRWtJLTFiUDVDME5IN1pTS1NsazM0VG4xRTluZnZVWlNPM3lBZUs1SzdqY1FwWmtfdU12Q1p1TFdvODNSRGVwTDg0eXdUOFVGaVhHLTJWbnRxMlBXMlZDTFk3TGc?oc=5",
+          "publisher": "Laodong.vn",
+          "kind": "article",
+          "snippet": "Premier League and the transfer fever that has no stopping point Laodong.vn",
+          "published": "Mon, 27 Jul 2026 07:00:00 GMT"
         }
       ]
     },
     {
-      "id": "england-confirm-williams-captain-rugby-league-world-cup-69e73a44",
-      "slug": "england-confirm-williams-captain-rugby-league-world-cup-69e73a44",
+      "id": "var-controversy-decides-manchester-derby-city-keep-pace-6bcdec55",
+      "slug": "var-controversy-decides-manchester-derby-city-keep-pace-6bcdec55",
       "sport": "soccer",
-      "headline": "Dominic Calvert-Lewin’s England Dream: From Premier League Doubts To A Possible World Cup Recall",
-      "blurb": "Alvarez, Barcola and 10 huge Premier League transfers that could happen after World Cup The Independent",
-      "summary": "Dominic Calvert-Lewin and Tyrique George: Alvarez, Barcola and 10 huge Premier League transfers that could happen after World Cup The Independent England head coach Brian McDermott has confirmed George Williams will be his captain at next month's Rugby League World Cup. Dominic Calvert-Lewin’s England Dream: From Premier League Doubts To A Possible World Cup Recall roundtable.io Aggregated from The Independent, Sky Sports Football, roundtable.io.",
-      "category": "trade",
-      "published": "2026-05-21T07:00:00Z",
-      "updated": "2026-09-15T11:26:31Z",
-      "players": [
-        {
-          "key": "calvert lewin",
-          "name": "Dominic Calvert-Lewin",
-          "slug": "dominic-calvert-lewin",
-          "pos": "FWD",
-          "team": "LEE"
-        },
-        {
-          "key": "george",
-          "name": "Tyrique George",
-          "slug": "tyrique-george",
-          "pos": "MID",
-          "team": "EVE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "England confirm Williams as captain for Rugby League World Cup",
-          "url": "https://www.skysports.com/rugby-league/news/12040/13586102/george-williams-england-coach-brian-mcdermott-confirms-warrington-wolves-star-as-captain-for-rugby-league-world-cup",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "England head coach Brian McDermott has confirmed George Williams will be his captain at next month's Rugby League World Cup.",
-          "published": "Tue, 15 Sep 2026 12:05:00 BST"
-        },
-        {
-          "title": "Dominic Calvert-Lewin’s England Dream: From Premier League Doubts To A Possible World Cup Recall",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQdTJHaHNJN3dTOTlCRFhrMm5SX3FBQ3dVbW0xOWtraDA2X1NhLWVfY01NbG50eGNBWWRKbDIwc0lKMXJUTnpCRTBwRFhIYkNlMUtoaGpQTzk1OS1sZHZTWnhqa21sLTFtVTFNWlc2dGdRckFldllzODJuMUtjcGxIVjFMakxvVFRYaGJKRG40Z1VvS0VoSlFSX3B1QnNxLXBsOUo0QVJhR1U1bVhqZHNqU2xQaFMyZlpMNXQtQ29zcDZGSThqR2pVaXp4UUZNa1RIZUtBNkZYbFQ5Mk5VT2M0QV8yTVpKMGxTTjRIY1dkSzQ5bXU1dlZJ?oc=5",
-          "publisher": "roundtable.io",
-          "kind": "article",
-          "snippet": "Dominic Calvert-Lewin’s England Dream: From Premier League Doubts To A Possible World Cup Recall roundtable.io",
-          "published": "Thu, 21 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Alvarez, Barcola and 10 huge Premier League transfers that could happen after World Cup",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeTF1OWRpZ2NKamo0RUhUanMydU14OWVzNmdWLXIxa2w5YjlmWXMwZkNQUjZjWWZzUFo2cGk5bzVGdDN0dDNiT0JNV3JCaURnbW9hSm83cFV1R0NZN2NsRC1NZW55bG5DSERRS1c1dVVyWHhFRi0yVkdnU3Bkek5meUppaXdHMWNyUGJHWnR6XzZieUo0VUNzQW5pZFg3dWI3elJNc2tNQ0dyRUpic1oxalFiVVRKT0k?oc=5",
-          "publisher": "The Independent",
-          "kind": "article",
-          "snippet": "Alvarez, Barcola and 10 huge Premier League transfers that could happen after World Cup The Independent",
-          "published": "Wed, 22 Jul 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "barcelona-monitor-kane-haaland-cd19ce97",
-      "slug": "barcelona-monitor-kane-haaland-cd19ce97",
-      "sport": "soccer",
-      "headline": "Barcelona monitor Kane & Haaland",
-      "blurb": "Barcelona are monitoring Harry Kane and Erling Haaland, Nick Woltemade could be a replacement for Kane at Bayern Munich, and Manchester United are interested in Jarrad…",
-      "summary": "Barcelona are monitoring Harry Kane and Erling Haaland, Nick Woltemade could be a replacement for Kane at Bayern Munich, and Manchester United are interested in Jarrad Branthwaite, plus more. Board reading of Wednesday's gossip.",
+      "headline": "VAR controversy decides Manchester derby as City keep pace with Arsenal: Football Weekly",
+      "blurb": "Referees' chief Howard Webb admits that the video assistant referee failed to assess the offside offence by Enzo Fernandez for the winning goal in Sunday's Manchester derby.",
+      "summary": "Erling Haaland and James Trafford: Referees' chief Howard Webb admits that the video assistant referee failed to assess the offside offence by Enzo Fernandez for the winning goal in Sunday's Manchester derby. Max Rushden is joined by B arry Glendenning , Barney Ronay and John Brewin to discuss the weekend’s Premier League action On the podcast today: Max Rushden is joined by Barry Glendenning, Barney Ronay, and John Brewin to round up the weekend’s Premier League action. The video assistant referee for the Manchester derby, Matt Donohue, and his assistant VAR, Blake Antrobus, are not appointed for this weekend's Premier League games. Aggregated from Webb, Guardian Football, BBC Football, YouTube.",
       "category": "wire",
-      "published": "2026-09-15T20:19:31Z",
-      "updated": "2026-09-15T20:19:31Z",
+      "published": "2026-09-13T18:51:48Z",
+      "updated": "2026-09-15T16:00:16Z",
       "players": [
-        {
-          "key": "branthwaite",
-          "name": "Jarrad Branthwaite",
-          "slug": "jarrad-branthwaite",
-          "pos": "DEF",
-          "team": "EVE"
-        },
         {
           "key": "erling haaland",
           "name": "Erling Haaland",
@@ -10331,21 +10407,53 @@
           "team": "MCI"
         },
         {
-          "key": "woltemade",
-          "name": "Nick Woltemade",
-          "slug": "nick-woltemade",
-          "pos": "FWD",
-          "team": "NEW"
+          "key": "trafford",
+          "name": "James Trafford",
+          "slug": "james-trafford",
+          "pos": "GKP",
+          "team": "LEE"
         }
       ],
       "sources": [
         {
-          "title": "Barcelona monitor Kane & Haaland",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cqzezjn3wzjpo?at_medium=RSS&at_campaign=rss",
-          "publisher": "Wednesday's gossip",
+          "title": "VAR controversy decides Manchester derby as City keep pace with Arsenal: Football Weekly - podcast",
+          "url": "https://www.theguardian.com/football/audio/2026/sep/14/football-weekly-podcast-manchester-derby-var-controversy-city-united-arsenal",
+          "publisher": "Guardian Football",
           "kind": "article",
-          "snippet": "Barcelona are monitoring Harry Kane and Erling Haaland, Nick Woltemade could be a replacement for Kane at Bayern Munich, and Manchester United are interested in Jarrad Branthwaite, plus more.",
-          "published": "Tue, 15 Sep 2026 20:19:31 GMT"
+          "snippet": "Max Rushden is joined by B arry Glendenning , Barney Ronay and John Brewin to discuss the weekend’s Premier League action On the podcast today: Max Rushden is joined by Barry Glendenning, Barney Ronay, and John Brewin to round up the weekend’s Premier League action. Manchester Ci",
+          "published": "Mon, 14 Sep 2026 12:55:41 GMT"
+        },
+        {
+          "title": "No weekend game for Manchester derby VAR officials",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c6pwlk0kjqwqo?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
+          "kind": "article",
+          "snippet": "The video assistant referee for the Manchester derby, Matt Donohue, and his assistant VAR, Blake Antrobus, are not appointed for this weekend's Premier League games.",
+          "published": "Mon, 14 Sep 2026 17:02:50 GMT"
+        },
+        {
+          "title": "VAR controversy decides Manchester derby as City keep pace with Arsenal | Football Weekly - video",
+          "url": "https://www.theguardian.com/football/video/2026/sep/14/var-controversy-decides-manchester-derby-as-city-keep-pace-with-arsenal-football-weekly-video",
+          "publisher": "Guardian Football",
+          "kind": "video",
+          "snippet": "Max Rushden is joined by B arry Glendenning , Barney Ronay and John Brewin to discuss the weekend’s Premier League action Continue reading...",
+          "published": "Mon, 14 Sep 2026 16:37:39 GMT"
+        },
+        {
+          "title": "Manchester City win the derby, but are Arsenal still favourites? | Tifo Football Live!",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfU0dfN3FfX282WV9BdnVwQzIwaHNBZThKaFAzQWN4RE9MWU1KSFcwNHo1cW5LbEhiZU5GQlFLUm1KTU9FUkNndlBVYlBjR1VPWG5Hd2lB?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Manchester City win the derby, but are Arsenal still favourites? | Tifo Football Live! YouTube",
+          "published": "Sun, 13 Sep 2026 18:51:48 GMT"
+        },
+        {
+          "title": "VAR missed Fernandez offside in Manchester derby",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cv4g5rp56p55o?at_medium=RSS&at_campaign=rss",
+          "publisher": "Webb",
+          "kind": "article",
+          "snippet": "Referees' chief Howard Webb admits that the video assistant referee failed to assess the offside offence by Enzo Fernandez for the winning goal in Sunday's Manchester derby.",
+          "published": "Tue, 15 Sep 2026 16:00:16 GMT"
         }
       ]
     },
@@ -10547,71 +10655,47 @@
       ]
     },
     {
-      "id": "var-controversy-decides-manchester-derby-city-keep-pace-6bcdec55",
-      "slug": "var-controversy-decides-manchester-derby-city-keep-pace-6bcdec55",
+      "id": "man-utd-transfer-michael-carrick-told-sign-exciting-6265ee3e",
+      "slug": "man-utd-transfer-michael-carrick-told-sign-exciting-6265ee3e",
       "sport": "soccer",
-      "headline": "VAR controversy decides Manchester derby as City keep pace with Arsenal: Football Weekly",
-      "blurb": "Referees' chief Howard Webb admits that the video assistant referee failed to assess the offside offence by Enzo Fernandez for the winning goal in Sunday's Manchester derby.",
-      "summary": "Erling Haaland and James Trafford: Referees' chief Howard Webb admits that the video assistant referee failed to assess the offside offence by Enzo Fernandez for the winning goal in Sunday's Manchester derby. Max Rushden is joined by B arry Glendenning , Barney Ronay and John Brewin to discuss the weekend’s Premier League action On the podcast today: Max Rushden is joined by Barry Glendenning, Barney Ronay, and John Brewin to round up the weekend’s Premier League action. The video assistant referee for the Manchester derby, Matt Donohue, and his assistant VAR, Blake Antrobus, are not appointed for this weekend's Premier League games. Aggregated from Webb, Guardian Football, BBC Football, YouTube.",
-      "category": "wire",
-      "published": "2026-09-13T18:51:48Z",
-      "updated": "2026-09-15T16:00:16Z",
+      "headline": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup",
+      "blurb": "Michael Carrick on Carlos Baleba, Luke Shaw and winning trophies | Manchester United v Brighton YouTube",
+      "summary": "Michael Carrick on Carlos Baleba, Luke Shaw and winning trophies | Manchester United v Brighton YouTube Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup Sports Mole Aggregated from YouTube, Sports Mole.",
+      "category": "trade",
+      "published": "2026-07-18T07:00:00Z",
+      "updated": "2026-09-15T12:30:03Z",
       "players": [
         {
-          "key": "erling haaland",
-          "name": "Erling Haaland",
-          "slug": "erling-haaland",
-          "pos": "FWD",
-          "team": "MCI"
+          "key": "baleba",
+          "name": "Carlos Baleba",
+          "slug": "carlos-baleba",
+          "pos": "MID",
+          "team": "BHA"
         },
         {
-          "key": "trafford",
-          "name": "James Trafford",
-          "slug": "james-trafford",
-          "pos": "GKP",
-          "team": "LEE"
+          "key": "shaw",
+          "name": "Luke Shaw",
+          "slug": "luke-shaw",
+          "pos": "DEF",
+          "team": "MUN"
         }
       ],
       "sources": [
         {
-          "title": "VAR controversy decides Manchester derby as City keep pace with Arsenal: Football Weekly - podcast",
-          "url": "https://www.theguardian.com/football/audio/2026/sep/14/football-weekly-podcast-manchester-derby-var-controversy-city-united-arsenal",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "Max Rushden is joined by B arry Glendenning , Barney Ronay and John Brewin to discuss the weekend’s Premier League action On the podcast today: Max Rushden is joined by Barry Glendenning, Barney Ronay, and John Brewin to round up the weekend’s Premier League action. Manchester Ci",
-          "published": "Mon, 14 Sep 2026 12:55:41 GMT"
-        },
-        {
-          "title": "No weekend game for Manchester derby VAR officials",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c6pwlk0kjqwqo?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "The video assistant referee for the Manchester derby, Matt Donohue, and his assistant VAR, Blake Antrobus, are not appointed for this weekend's Premier League games.",
-          "published": "Mon, 14 Sep 2026 17:02:50 GMT"
-        },
-        {
-          "title": "VAR controversy decides Manchester derby as City keep pace with Arsenal | Football Weekly - video",
-          "url": "https://www.theguardian.com/football/video/2026/sep/14/var-controversy-decides-manchester-derby-as-city-keep-pace-with-arsenal-football-weekly-video",
-          "publisher": "Guardian Football",
-          "kind": "video",
-          "snippet": "Max Rushden is joined by B arry Glendenning , Barney Ronay and John Brewin to discuss the weekend’s Premier League action Continue reading...",
-          "published": "Mon, 14 Sep 2026 16:37:39 GMT"
-        },
-        {
-          "title": "Manchester City win the derby, but are Arsenal still favourites? | Tifo Football Live!",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfU0dfN3FfX282WV9BdnVwQzIwaHNBZThKaFAzQWN4RE9MWU1KSFcwNHo1cW5LbEhiZU5GQlFLUm1KTU9FUkNndlBVYlBjR1VPWG5Hd2lB?oc=5",
+          "title": "Michael Carrick on Carlos Baleba, Luke Shaw and winning trophies | Manchester United v Brighton",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBxTVdOSi16YVk2dlJSd3ZTNUNZeVpiRDM1NlQ5dDd4d3UyN0dwVEtSTDh0aEF4VTBGMGFqZ3l4Rkt1aGhKYWlIUFFwcTRoMlVaTE4xZWFB?oc=5",
           "publisher": "YouTube",
           "kind": "video",
-          "snippet": "Manchester City win the derby, but are Arsenal still favourites? | Tifo Football Live! YouTube",
-          "published": "Sun, 13 Sep 2026 18:51:48 GMT"
+          "snippet": "Michael Carrick on Carlos Baleba, Luke Shaw and winning trophies | Manchester United v Brighton YouTube",
+          "published": "Tue, 15 Sep 2026 12:30:03 GMT"
         },
         {
-          "title": "VAR missed Fernandez offside in Manchester derby",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cv4g5rp56p55o?at_medium=RSS&at_campaign=rss",
-          "publisher": "Webb",
+          "title": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQkNFOVBtSlJWeVBlRnFVZXFwQV96a0VYaG5tYUcwaHVzUVNtQVRQZGdHV0pCYlJiczJGSlJFSnRnX1g1Z2JtTTltM1RteXdjZHNTUWtLODVYRVhQRWhTb2JETzgzSnY3U01naTY1dDdmc3RGbjdLMGpsNm5tUGVjNlRnMFFZTENKZHZKUUVqM0VTdEZqNktjUjE5UWxhWm94cmVuaEFXd0g5VnZSM3VjQjJlc2FGNlNockNwQ2hWeDNtYkV6bWZWbUNQTnE4cG81cThSRExsRQ?oc=5",
+          "publisher": "Sports Mole",
           "kind": "article",
-          "snippet": "Referees' chief Howard Webb admits that the video assistant referee failed to assess the offside offence by Enzo Fernandez for the winning goal in Sunday's Manchester derby.",
-          "published": "Tue, 15 Sep 2026 16:00:16 GMT"
+          "snippet": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup Sports Mole",
+          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -10664,51 +10748,6 @@
           "kind": "x",
           "snippet": "🤕 #FPL Status Alert: ⚫ Burn - Ankle injury - Expected back 19 Sep ⚫ Elanga - Unspecified injury - Unknown return date 🌳 Jair Cunha - Hamstring injury - 50% 🌳 Milenković - Hamstring injury - Expected back 11 Oct x.com",
           "published": "Mon, 14 Sep 2026 20:07:43 GMT"
-        }
-      ]
-    },
-    {
-      "id": "man-utd-transfer-michael-carrick-told-sign-exciting-6265ee3e",
-      "slug": "man-utd-transfer-michael-carrick-told-sign-exciting-6265ee3e",
-      "sport": "soccer",
-      "headline": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup",
-      "blurb": "Michael Carrick on Carlos Baleba, Luke Shaw and winning trophies | Manchester United v Brighton YouTube",
-      "summary": "Michael Carrick on Carlos Baleba, Luke Shaw and winning trophies | Manchester United v Brighton YouTube Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup Sports Mole Aggregated from YouTube, Sports Mole.",
-      "category": "trade",
-      "published": "2026-07-18T07:00:00Z",
-      "updated": "2026-09-15T12:30:03Z",
-      "players": [
-        {
-          "key": "baleba",
-          "name": "Carlos Baleba",
-          "slug": "carlos-baleba",
-          "pos": "MID",
-          "team": "BHA"
-        },
-        {
-          "key": "shaw",
-          "name": "Luke Shaw",
-          "slug": "luke-shaw",
-          "pos": "DEF",
-          "team": "MUN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Michael Carrick on Carlos Baleba, Luke Shaw and winning trophies | Manchester United v Brighton",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBxTVdOSi16YVk2dlJSd3ZTNUNZeVpiRDM1NlQ5dDd4d3UyN0dwVEtSTDh0aEF4VTBGMGFqZ3l4Rkt1aGhKYWlIUFFwcTRoMlVaTE4xZWFB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Michael Carrick on Carlos Baleba, Luke Shaw and winning trophies | Manchester United v Brighton YouTube",
-          "published": "Tue, 15 Sep 2026 12:30:03 GMT"
-        },
-        {
-          "title": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQkNFOVBtSlJWeVBlRnFVZXFwQV96a0VYaG5tYUcwaHVzUVNtQVRQZGdHV0pCYlJiczJGSlJFSnRnX1g1Z2JtTTltM1RteXdjZHNTUWtLODVYRVhQRWhTb2JETzgzSnY3U01naTY1dDdmc3RGbjdLMGpsNm5tUGVjNlRnMFFZTENKZHZKUUVqM0VTdEZqNktjUjE5UWxhWm94cmVuaEFXd0g5VnZSM3VjQjJlc2FGNlNockNwQ2hWeDNtYkV6bWZWbUNQTnE4cG81cThSRExsRQ?oc=5",
-          "publisher": "Sports Mole",
-          "kind": "article",
-          "snippet": "Man Utd transfer news: Michael Carrick told to sign \"exciting\" £23.8m Luke Shaw backup Sports Mole",
-          "published": "Sat, 18 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -16009,6 +16048,105 @@
       ]
     },
     {
+      "id": "newcastle-leeds-live-stream-14-september-2026-fb2414cb",
+      "slug": "newcastle-leeds-live-stream-14-september-2026-fb2414cb",
+      "sport": "soccer",
+      "headline": "Aston Villa vs. Liverpool in Premier League: TV channel, kick-off time, live stream, referee, injury and team news",
+      "blurb": "Liverpool in Premier League: TV channel, kick-off time, live stream, referee, injury and team news espn.com",
+      "summary": "Dominic Calvert-Lewin: Liverpool in Premier League: TV channel, kick-off time, live stream, referee, injury and team news espn.com Dominic Calvert-Lewin: Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news ESPN Dominic Calvert-Lewin: Newcastle manager Matthias Jaissle reflects on a \"tough night\" after his side concede four goals to a dominant Leeds United at Elland Road. Dominic Calvert-Lewin: Calvert-Lewin 'unplayable' with Leeds FOUR up vs Newcastle LIVE! Aggregated from espn.com, Sky Sports Football, santeestrie.qc.ca, Jaissle, ESPN.",
+      "category": "injury",
+      "published": "2026-03-22T07:00:00Z",
+      "updated": "2026-09-14T22:08:27Z",
+      "players": [
+        {
+          "key": "calvert lewin",
+          "name": "Dominic Calvert-Lewin",
+          "slug": "dominic-calvert-lewin",
+          "pos": "FWD",
+          "team": "LEE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Calvert-Lewin 'unplayable' with Leeds FOUR up vs Newcastle LIVE!",
+          "url": "https://www.skysports.com/football/leeds-united-vs-newcastle-united/live/559479",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "",
+          "published": "Mon, 14 Sep 2026 18:30:00 BST"
+        },
+        {
+          "title": "WATCHＬＩＶＥ: Newcastle football vs Leeds football Live Stream ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 14 September 2026",
+          "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPcDRaQll0ODgtZDBHeHo4VHJ0Uk5rWmotclVMNlpnclBMejBPUnNhVTVDbEYtR0tzc19ySW1xTWhLOWdIdEFHRndKQWRSVjhrSVY0N1kweW5zUVBCYXpob3JZMWxOOHlpbEpXVHhVREdyYnJJZjRjdHVYOUJUY0QwM1JFZjY5NlozdXJFeUxmd2JtNDRGRTkxT3hiYXBjYkx0d0ZFY3pQcF9Ec0ZqcWFnQU5mWTg5NXU1RzE0alhTTExvSUtianVKWDFrN2NkcmR5aVVQVGQ3RXRHUElLUzNobkFiOVpTZ0t0djU4UjBYVFJhYnJrYWFrTldGVVd0TDNWdGYyQ0RPWWhBS3dGVmRiR2w1UFcyblpqcHptX3lIUFJHellJRTk3aUZJa2lJdF9ueWtybkVDaG02aXFTMUpldGRibXg?oc=5",
+          "publisher": "santeestrie.qc.ca",
+          "kind": "article",
+          "snippet": "WATCHＬＩＶＥ: Newcastle football vs Leeds football Live Stream ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 14 September 2026 santeestrie.qc.ca",
+          "published": "Mon, 14 Sep 2026 19:22:27 GMT"
+        },
+        {
+          "title": "Newcastle couldn't match the physicality of Leeds",
+          "url": "https://www.bbc.co.uk/sport/football/videos/c6p3k9x9gvg7o?at_medium=RSS&at_campaign=rss",
+          "publisher": "Jaissle",
+          "kind": "video",
+          "snippet": "Newcastle manager Matthias Jaissle reflects on a \"tough night\" after his side concede four goals to a dominant Leeds United at Elland Road.",
+          "published": "Mon, 14 Sep 2026 22:08:27 GMT"
+        },
+        {
+          "title": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLWR3M0d1RnFGXzA1QkEtamRyYjZUaWVsdFpwcEc5bVExUE9HYURoeHhYSE1SbFpTb2pGVFFhWnR2dVBWdEpsR0RNa2VIWUx5bDFyajFUV0NOb1JheFZyWlYxRERKZ1Z4VDF2RTRxX0E1aHEwYkhScUZLamx0X082dzllYlJtN3hEM1p5YnFaQXB2SWpxTVRpSnEtSWNRQmdveTNJclB5M0J2UllnNWhBY2dnVDRfWjkxcHFqNHdVSXhYZw?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news ESPN",
+          "published": "Sun, 22 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Aston Villa vs. Liverpool in Premier League: TV channel, kick-off time, live stream, referee, injury and team news",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVDJtaHJ0WjMwZzJ4ZGdEcHY5UzkyRUp2azhITGRuXzEzUEplc1ZsMXV1WTJVZmpYdms2S25jRWV4MU04Yi1PZzVFZ3VGN0NUaDZoWVRmc0IzWjZreVFDUWtwR3hHV2pwbHAxNDZyTExTeGM4UkE2VDNzMUFicG93X1NSTjdSeldIRlotaGVaenlzV0lLcTR3RXprYmZrTTRXZWV5NmZKamFUU1IwaGtkZTYzRGlsNFZtWFpfSWhmNEJWMGJjVnY4TGFnek5wNm5DRUo3U2FvRQ?oc=5",
+          "publisher": "espn.com",
+          "kind": "article",
+          "snippet": "Aston Villa vs. Liverpool in Premier League: TV channel, kick-off time, live stream, referee, injury and team news espn.com",
+          "published": "Fri, 15 May 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "oscar-bobb-takes-fulham-past-stubborn-west-ham-9880155e",
+      "slug": "oscar-bobb-takes-fulham-past-stubborn-west-ham-9880155e",
+      "sport": "soccer",
+      "headline": "Oscar Bobb takes Fulham past stubborn West Ham and into Carabao Cup last 16",
+      "blurb": "Fulham got the job done but it was far from convincing.",
+      "summary": "Oscar Bobb and Josh King: Fulham got the job done but it was far from convincing. Álvaro Arbeloa’s ideas are still taking hold and his side will suffer if they do not improve in defence. West Ham were beaten but far from cowed and will not mind refocusing on their promotion push. Board reading of Guardian Football.",
+      "category": "wire",
+      "published": "2026-09-15T20:54:25Z",
+      "updated": "2026-09-15T20:54:25Z",
+      "players": [
+        {
+          "key": "bobb",
+          "name": "Oscar Bobb",
+          "slug": "oscar-bobb",
+          "pos": "MID",
+          "team": "FUL"
+        },
+        {
+          "key": "king ful",
+          "name": "Josh King",
+          "slug": "josh-king",
+          "pos": "MID",
+          "team": "FUL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Oscar Bobb takes Fulham past stubborn West Ham and into Carabao Cup last 16",
+          "url": "https://www.theguardian.com/football/2026/sep/15/west-ham-fulham-carabao-cup-third-round-match-report",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Fulham got the job done but it was far from convincing. Álvaro Arbeloa’s ideas are still taking hold and his side will suffer if they do not improve in defence. West Ham were beaten but far from cowed and will not mind refocusing on their promotion push. Fulham twice squandered l",
+          "published": "Tue, 15 Sep 2026 20:54:25 GMT"
+        }
+      ]
+    },
+    {
       "id": "david-raya-explains-exactly-why-arsenal-made-75m-e488b9de",
       "slug": "david-raya-explains-exactly-why-arsenal-made-75m-e488b9de",
       "sport": "soccer",
@@ -16093,39 +16231,47 @@
       ]
     },
     {
-      "id": "oscar-bobb-takes-fulham-past-stubborn-west-ham-9880155e",
-      "slug": "oscar-bobb-takes-fulham-past-stubborn-west-ham-9880155e",
+      "id": "wilson-returns-wales-squad-ashford-receives-first-call-d6cae7e0",
+      "slug": "wilson-returns-wales-squad-ashford-receives-first-call-d6cae7e0",
       "sport": "soccer",
-      "headline": "Oscar Bobb takes Fulham past stubborn West Ham and into Carabao Cup last 16",
-      "blurb": "Fulham got the job done but it was far from convincing.",
-      "summary": "Oscar Bobb and Josh King: Fulham got the job done but it was far from convincing. Álvaro Arbeloa’s ideas are still taking hold and his side will suffer if they do not improve in defence. West Ham were beaten but far from cowed and will not mind refocusing on their promotion push. Board reading of Guardian Football.",
+      "headline": "Wilson returns to Wales squad as Ashford receives first call-up",
+      "blurb": "Wilson returns for Wales as Northern Ireland name squad",
+      "summary": "Callum Wilson and Joe Rodon: Wilson returns for Wales as Northern Ireland name squad Craig Bellamy hands a first call-up to Cardiff City forward Cian Ashford for Wales' Nations League A campaign but is without key defender Joe Rodon. Wilson returns to Wales squad as Ashford receives first call-up Aggregated from BBC Football, Sky Sports Football. Aggregated from Sky Sports Football, BBC Football.",
       "category": "wire",
-      "published": "2026-09-15T20:54:25Z",
-      "updated": "2026-09-15T20:54:25Z",
+      "published": "2026-09-15T09:30:13Z",
+      "updated": "2026-09-15T12:31:46Z",
       "players": [
         {
-          "key": "bobb",
-          "name": "Oscar Bobb",
-          "slug": "oscar-bobb",
-          "pos": "MID",
-          "team": "FUL"
+          "key": "wilson",
+          "name": "Callum Wilson",
+          "slug": "callum-wilson",
+          "pos": "FWD",
+          "team": "BRE"
         },
         {
-          "key": "king ful",
-          "name": "Josh King",
-          "slug": "josh-king",
-          "pos": "MID",
-          "team": "FUL"
+          "key": "rodon",
+          "name": "Joe Rodon",
+          "slug": "joe-rodon",
+          "pos": "DEF",
+          "team": "LEE"
         }
       ],
       "sources": [
         {
-          "title": "Oscar Bobb takes Fulham past stubborn West Ham and into Carabao Cup last 16",
-          "url": "https://www.theguardian.com/football/2026/sep/15/west-ham-fulham-carabao-cup-third-round-match-report",
-          "publisher": "Guardian Football",
+          "title": "Rodon absent as Ashford earns first Wales call-up",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c615877d389no?at_medium=RSS&at_campaign=rss",
+          "publisher": "BBC Football",
           "kind": "article",
-          "snippet": "Fulham got the job done but it was far from convincing. Álvaro Arbeloa’s ideas are still taking hold and his side will suffer if they do not improve in defence. West Ham were beaten but far from cowed and will not mind refocusing on their promotion push. Fulham twice squandered l",
-          "published": "Tue, 15 Sep 2026 20:54:25 GMT"
+          "snippet": "Craig Bellamy hands a first call-up to Cardiff City forward Cian Ashford for Wales' Nations League A campaign but is without key defender Joe Rodon.",
+          "published": "Tue, 15 Sep 2026 09:30:13 GMT"
+        },
+        {
+          "title": "Wilson returns to Wales squad as Ashford receives first call-up",
+          "url": "https://www.skysports.com/football/live-blog/12040/12507208/football-latest-news-gossip",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "",
+          "published": "Tue, 15 Sep 2026 10:30:00 BST"
         }
       ]
     },
@@ -16206,47 +16352,32 @@
       ]
     },
     {
-      "id": "wilson-returns-wales-squad-ashford-receives-first-call-d6cae7e0",
-      "slug": "wilson-returns-wales-squad-ashford-receives-first-call-d6cae7e0",
+      "id": "full-audio-released-haaland-s-controversial-manchester-derby-17913c03",
+      "slug": "full-audio-released-haaland-s-controversial-manchester-derby-17913c03",
       "sport": "soccer",
-      "headline": "Wilson returns to Wales squad as Ashford receives first call-up",
-      "blurb": "Wilson returns for Wales as Northern Ireland name squad",
-      "summary": "Callum Wilson and Joe Rodon: Wilson returns for Wales as Northern Ireland name squad Craig Bellamy hands a first call-up to Cardiff City forward Cian Ashford for Wales' Nations League A campaign but is without key defender Joe Rodon. Wilson returns to Wales squad as Ashford receives first call-up Aggregated from BBC Football, Sky Sports Football. Aggregated from Sky Sports Football, BBC Football.",
-      "category": "wire",
-      "published": "2026-09-15T09:30:13Z",
-      "updated": "2026-09-15T12:31:46Z",
+      "headline": "FULL VAR AUDIO released of Haaland's controversial Manchester derby winner",
+      "blurb": "Speaking on Match Officials Mic'd Up, Pro Ref chief Howard Webb says that there will be a review into how the VAR process decided to allow Erling Haaland's goal for Manchester…",
+      "summary": "Speaking on Match Officials Mic'd Up, Pro Ref chief Howard Webb says that there will be a review into how the VAR process decided to allow Erling Haaland's goal for Manchester City against Manchester United to stand. Board reading of Sky Sports Football.",
+      "category": "roster",
+      "published": "2026-09-15T16:27:09Z",
+      "updated": "2026-09-15T17:24:30Z",
       "players": [
         {
-          "key": "wilson",
-          "name": "Callum Wilson",
-          "slug": "callum-wilson",
+          "key": "erling haaland",
+          "name": "Erling Haaland",
+          "slug": "erling-haaland",
           "pos": "FWD",
-          "team": "BRE"
-        },
-        {
-          "key": "rodon",
-          "name": "Joe Rodon",
-          "slug": "joe-rodon",
-          "pos": "DEF",
-          "team": "LEE"
+          "team": "MCI"
         }
       ],
       "sources": [
         {
-          "title": "Rodon absent as Ashford earns first Wales call-up",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c615877d389no?at_medium=RSS&at_campaign=rss",
-          "publisher": "BBC Football",
-          "kind": "article",
-          "snippet": "Craig Bellamy hands a first call-up to Cardiff City forward Cian Ashford for Wales' Nations League A campaign but is without key defender Joe Rodon.",
-          "published": "Tue, 15 Sep 2026 09:30:13 GMT"
-        },
-        {
-          "title": "Wilson returns to Wales squad as Ashford receives first call-up",
-          "url": "https://www.skysports.com/football/live-blog/12040/12507208/football-latest-news-gossip",
+          "title": "FULL AUDIO released of Haaland's controversial Manchester derby winner",
+          "url": "https://www.skysports.com/watch/video/13586149/match-officials-micd-up-where-did-var-go-wrong-with-erling-haaland-goal",
           "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "",
-          "published": "Tue, 15 Sep 2026 10:30:00 BST"
+          "kind": "video",
+          "snippet": "Speaking on Match Officials Mic'd Up, Pro Ref chief Howard Webb says that there will be a review into how the VAR process decided to allow Erling Haaland's goal for Manchester City against Manchester United to stand.",
+          "published": "Tue, 15 Sep 2026 17:00:00 BST"
         }
       ]
     },
@@ -16620,184 +16751,6 @@
       ]
     },
     {
-      "id": "newcastle-leeds-live-stream-14-september-2026-fb2414cb",
-      "slug": "newcastle-leeds-live-stream-14-september-2026-fb2414cb",
-      "sport": "soccer",
-      "headline": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news",
-      "blurb": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news ESPN",
-      "summary": "Dominic Calvert-Lewin: Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news ESPN Dominic Calvert-Lewin: Newcastle manager Matthias Jaissle reflects on a \"tough night\" after his side concede four goals to a dominant Leeds United at Elland Road. Dominic Calvert-Lewin: Calvert-Lewin 'unplayable' with Leeds FOUR up vs Newcastle LIVE! Aggregated from ESPN, Sky Sports Football, santeestrie.qc.ca, Jaissle.",
-      "category": "injury",
-      "published": "2026-03-22T07:00:00Z",
-      "updated": "2026-09-14T22:08:27Z",
-      "players": [
-        {
-          "key": "calvert lewin",
-          "name": "Dominic Calvert-Lewin",
-          "slug": "dominic-calvert-lewin",
-          "pos": "FWD",
-          "team": "LEE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Calvert-Lewin 'unplayable' with Leeds FOUR up vs Newcastle LIVE!",
-          "url": "https://www.skysports.com/football/leeds-united-vs-newcastle-united/live/559479",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "",
-          "published": "Mon, 14 Sep 2026 18:30:00 BST"
-        },
-        {
-          "title": "WATCHＬＩＶＥ: Newcastle football vs Leeds football Live Stream ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 14 September 2026",
-          "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPcDRaQll0ODgtZDBHeHo4VHJ0Uk5rWmotclVMNlpnclBMejBPUnNhVTVDbEYtR0tzc19ySW1xTWhLOWdIdEFHRndKQWRSVjhrSVY0N1kweW5zUVBCYXpob3JZMWxOOHlpbEpXVHhVREdyYnJJZjRjdHVYOUJUY0QwM1JFZjY5NlozdXJFeUxmd2JtNDRGRTkxT3hiYXBjYkx0d0ZFY3pQcF9Ec0ZqcWFnQU5mWTg5NXU1RzE0alhTTExvSUtianVKWDFrN2NkcmR5aVVQVGQ3RXRHUElLUzNobkFiOVpTZ0t0djU4UjBYVFJhYnJrYWFrTldGVVd0TDNWdGYyQ0RPWWhBS3dGVmRiR2w1UFcyblpqcHptX3lIUFJHellJRTk3aUZJa2lJdF9ueWtybkVDaG02aXFTMUpldGRibXg?oc=5",
-          "publisher": "santeestrie.qc.ca",
-          "kind": "article",
-          "snippet": "WATCHＬＩＶＥ: Newcastle football vs Leeds football Live Stream ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 14 September 2026 santeestrie.qc.ca",
-          "published": "Mon, 14 Sep 2026 19:22:27 GMT"
-        },
-        {
-          "title": "Newcastle couldn't match the physicality of Leeds",
-          "url": "https://www.bbc.co.uk/sport/football/videos/c6p3k9x9gvg7o?at_medium=RSS&at_campaign=rss",
-          "publisher": "Jaissle",
-          "kind": "video",
-          "snippet": "Newcastle manager Matthias Jaissle reflects on a \"tough night\" after his side concede four goals to a dominant Leeds United at Elland Road.",
-          "published": "Mon, 14 Sep 2026 22:08:27 GMT"
-        },
-        {
-          "title": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLWR3M0d1RnFGXzA1QkEtamRyYjZUaWVsdFpwcEc5bVExUE9HYURoeHhYSE1SbFpTb2pGVFFhWnR2dVBWdEpsR0RNa2VIWUx5bDFyajFUV0NOb1JheFZyWlYxRERKZ1Z4VDF2RTRxX0E1aHEwYkhScUZLamx0X082dzllYlJtN3hEM1p5YnFaQXB2SWpxTVRpSnEtSWNRQmdveTNJclB5M0J2UllnNWhBY2dnVDRfWjkxcHFqNHdVSXhYZw?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Newcastle vs Sunderland: TV channel, kick-off time, live stream, referee, injury and team news ESPN",
-          "published": "Sun, 22 Mar 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "full-audio-released-haaland-s-controversial-manchester-derby-17913c03",
-      "slug": "full-audio-released-haaland-s-controversial-manchester-derby-17913c03",
-      "sport": "soccer",
-      "headline": "FULL VAR AUDIO released of Haaland's controversial Manchester derby winner",
-      "blurb": "Speaking on Match Officials Mic'd Up, Pro Ref chief Howard Webb says that there will be a review into how the VAR process decided to allow Erling Haaland's goal for Manchester…",
-      "summary": "Speaking on Match Officials Mic'd Up, Pro Ref chief Howard Webb says that there will be a review into how the VAR process decided to allow Erling Haaland's goal for Manchester City against Manchester United to stand. Board reading of Sky Sports Football.",
-      "category": "roster",
-      "published": "2026-09-15T16:27:09Z",
-      "updated": "2026-09-15T17:24:30Z",
-      "players": [
-        {
-          "key": "erling haaland",
-          "name": "Erling Haaland",
-          "slug": "erling-haaland",
-          "pos": "FWD",
-          "team": "MCI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "FULL AUDIO released of Haaland's controversial Manchester derby winner",
-          "url": "https://www.skysports.com/watch/video/13586149/match-officials-micd-up-where-did-var-go-wrong-with-erling-haaland-goal",
-          "publisher": "Sky Sports Football",
-          "kind": "video",
-          "snippet": "Speaking on Match Officials Mic'd Up, Pro Ref chief Howard Webb says that there will be a review into how the VAR process decided to allow Erling Haaland's goal for Manchester City against Manchester United to stand.",
-          "published": "Tue, 15 Sep 2026 17:00:00 BST"
-        }
-      ]
-    },
-    {
-      "id": "transfer-window-2026-what-does-your-premier-league-ed7162a6",
-      "slug": "transfer-window-2026-what-does-your-premier-league-ed7162a6",
-      "sport": "soccer",
-      "headline": "Were there any real winners in the Premier League's chaotic summer transfer window?",
-      "blurb": "Premier League’s $6 Billion Transfer Window: Is English Football Taking Over?",
-      "summary": "Premier League’s $6 Billion Transfer Window: Is English Football Taking Over? Premier League Academy Transfer Market Sees Surge In Big-Club Poaching RealGM Transfer window 2026: What does your Premier League club need with a week to go? Aggregated from YouTube, RealGM, BBC, Sky Sports, DAZN and 3 more.",
-      "category": "trade",
-      "published": "2025-04-25T13:22:11Z",
-      "updated": "2026-09-14T14:44:42Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Premier League Academy Transfer Market Sees Surge In Big-Club Poaching",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQW5KR3pST01uRU1XQ2dLYzhiM05BRzdjOWlINGMzTTJ6aWRjbEg0MzNvVzIzRldpRTE2RnpxWllEMkt5Qi04YXZFNzBnQURYaEswajR4RU9ZOVZJYUVrVG1RdzNlNzNGdmN2bGVVeUpqd3R5Nk5meUE1TDhkODF6Sy1wVHlmRG1sVjVDb09HUXhMLVlkWE92Z0VyNno5cXQ2eUN1Vk1PWG41QjVVbDZ3?oc=5",
-          "publisher": "RealGM",
-          "kind": "article",
-          "snippet": "Premier League Academy Transfer Market Sees Surge In Big-Club Poaching RealGM",
-          "published": "Mon, 14 Sep 2026 14:44:42 GMT"
-        },
-        {
-          "title": "Transfer window 2026: What does your Premier League club need with a week to go?",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5pSm03VVJVQlFqeWs3ZWJVTExZQkpfQjhjTHE2RUotZTlSYTVRckRCeUY4dGpkTk9tNWUtVkZpWUtsUElVbWphNnNuTlpLMWM4TjN3STRBQkNkc3pOdnIxbDJYUl9xdlU?oc=5",
-          "publisher": "BBC",
-          "kind": "article",
-          "snippet": "Transfer window 2026: What does your Premier League club need with a week to go? BBC",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Transfer news: Summer transfer window 2026",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNOUkzY25NSzRMTzdkY0tCa2dQbTlpcV90QmY2c0JOWTFPb0VnRU1rUjJhbGVhRExlc0J2dG04cnZNdEFoRnRuaWQ1RktfTlhVbGFWeTY3R0daWnhuVk1lMGgxYm1BODFMQ1cxTGU5RTl1S1MxeHNaWWNMZWxwQXJ6TGdhYjEtY0M3QjBWWG15TWdBOURwX2pfRnJQUHZPUV9adHBYWVYwVjQzX1JlVW5sN0wtT3F6QmZ6UVM4S1NaVUJFY2M3eERTcmRR?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Transfer news: Summer transfer window 2026 - Premier League deals, ins and outs Sky Sports",
-          "published": "Thu, 03 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Were there any real winners in the Premier League's chaotic summer transfer window?",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQT0dOZDRYQTZYREk5cUlWWlhFMGJ1c1RmaDFYYnppb1hYMDU0TEVzeWMwQ2xjdUd6OWswRW1SdnlQQlNabjJkUW5KNS0wRzhVOS16SFBMbVhfTUU3TnlEQlc4M09Cdko5a25fYjZyNFBPb1hLdXg0U2VqNTB5NUl6R2toNV9LVEtueEpsUkR0X2hNY19ySnFlSmpTLWptVWgwY21hZmllU1V5d050R1Vz?oc=5",
-          "publisher": "DAZN",
-          "kind": "article",
-          "snippet": "Were there any real winners in the Premier League's chaotic summer transfer window? DAZN",
-          "published": "Wed, 02 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Premier League’s obscene transfer window has broken football",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObVFWVDFKc09hTlA4X2VQYlpTT1hWSExHMHA4bUY2NHJCNjZlMUxNazVGb3NKWVpET0lEcDNBWFJUSENBdG1uZTZuRENYN2dIRkMxWGJtUVJwWXNMTUc5elRjcVVsME41Nl9EQVNGbFFPd29lLXdaWlkxcmxmSXR1QnZiemo4TVhmU3d5aXJkZEQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The Premier League’s obscene transfer window has broken football Yahoo Sports",
-          "published": "Wed, 02 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Breaking Premier League Transfer News",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96OGtxU19WaHZjWFk4YWVfcmFnSEY3MHhLS1MtMEpMT0pDbHJxTk5wS2x4andidF9MUFlmQ3lXNGs1ZnE0QXNqSEFORm1BVk8zOGV4RUJB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Breaking Premier League Transfer News - Summer 2025 Updates! | Sport's Up Date YouTube",
-          "published": "Fri, 25 Apr 2025 13:22:11 GMT"
-        },
-        {
-          "title": "“THEY’VE HAD A SHOCKER!” 😳 Premier League Transfer Window TIER LIST",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE01VktLZmtBck1XVEt1VE80aFdhUzlWanNvMXZ6OUg3MG5BdWJaTzZUWm5GQ3BLaGl0M21UcFJCNGd0UFUtMUVORzJIMmlFQ3Y4a2ZwMW53?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "“THEY’VE HAD A SHOCKER!” 😳 Premier League Transfer Window TIER LIST YouTube",
-          "published": "Thu, 03 Sep 2026 09:14:02 GMT"
-        },
-        {
-          "title": "The Premier League’s £3.5bn transfer window smashed all records. Can the boom last?",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMTVyZGZneldxc05LaWdIaWxyel9nSGsxdnpyLUNYVVE0NHBpdFFDQnV3SVhESUxfT0JUT0c4LXU2NFhubzlkSFZ5Nm9hWmllNDRZS1N0YlZlQ0ozUlNSVGszWUNYRGpxRUlNdWNtdUYxTU5uVktBVU9GYnlnbGQzc3BJT01XWWUtdUNhTEV1MXhYYjhLcGJ1aG8tRUNSMEk?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "The Premier League’s £3.5bn transfer window smashed all records. Can the boom last? - The Athletic The New York Times",
-          "published": "Sat, 05 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League's summer transfer market is dangerously out of control",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVERNV3NhemdYVGNQVDhFQUF3UmFtc1ZDWGZ1dlotZUZhRHBpc1ZySVZSQ1l6czNNbnkyeDZDY2d0THFUOFkxVUtvaFNMV0dNOGp6dHBfd0ZZX3FUN2g5eXh6bXdXczZMVGQtSFZFWTU5Szk2cnBwby1iaHMwdjkzV0JLYUJWcVp6UmpWUVVXR2UwcHFjcmVfQlcyajVHNXNnaTE4dDNiTHM1QmZqUHdTUnBIbDJNcFhqQzZVcEY2djVrc25fM3FRTjBn?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Premier League's summer transfer market is dangerously out of control ESPN",
-          "published": "Thu, 03 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Premier League’s $6 Billion Transfer Window: Is English Football Taking Over? | Straight Yellow",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBGZFI0NkhsTjh5RUZ4MHk0Zm9Lc2FRanR4VXNZNFhkenVNaXVjYXRzS0NRSUxlcjA2TjRwODFnVkZybUh1T3UxRTVmV0E3elRKR2xHLVRR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Premier League’s $6 Billion Transfer Window: Is English Football Taking Over? | Straight Yellow YouTube",
-          "published": "Fri, 04 Sep 2026 06:00:28 GMT"
-        }
-      ]
-    },
-    {
       "id": "here-s-way-kansas-city-chiefs-denver-broncos-22f74eef",
       "slug": "here-s-way-kansas-city-chiefs-denver-broncos-22f74eef",
       "sport": "soccer",
@@ -16916,6 +16869,100 @@
       ]
     },
     {
+      "id": "transfer-window-2026-what-does-your-premier-league-ed7162a6",
+      "slug": "transfer-window-2026-what-does-your-premier-league-ed7162a6",
+      "sport": "soccer",
+      "headline": "Were there any real winners in the Premier League's chaotic summer transfer window?",
+      "blurb": "Premier League’s $6 Billion Transfer Window: Is English Football Taking Over?",
+      "summary": "Premier League’s $6 Billion Transfer Window: Is English Football Taking Over? Premier League Academy Transfer Market Sees Surge In Big-Club Poaching RealGM Transfer window 2026: What does your Premier League club need with a week to go? Aggregated from YouTube, RealGM, BBC, Sky Sports, DAZN and 3 more.",
+      "category": "trade",
+      "published": "2025-04-25T13:22:11Z",
+      "updated": "2026-09-14T14:44:42Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Premier League Academy Transfer Market Sees Surge In Big-Club Poaching",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQW5KR3pST01uRU1XQ2dLYzhiM05BRzdjOWlINGMzTTJ6aWRjbEg0MzNvVzIzRldpRTE2RnpxWllEMkt5Qi04YXZFNzBnQURYaEswajR4RU9ZOVZJYUVrVG1RdzNlNzNGdmN2bGVVeUpqd3R5Nk5meUE1TDhkODF6Sy1wVHlmRG1sVjVDb09HUXhMLVlkWE92Z0VyNno5cXQ2eUN1Vk1PWG41QjVVbDZ3?oc=5",
+          "publisher": "RealGM",
+          "kind": "article",
+          "snippet": "Premier League Academy Transfer Market Sees Surge In Big-Club Poaching RealGM",
+          "published": "Mon, 14 Sep 2026 14:44:42 GMT"
+        },
+        {
+          "title": "Transfer window 2026: What does your Premier League club need with a week to go?",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5pSm03VVJVQlFqeWs3ZWJVTExZQkpfQjhjTHE2RUotZTlSYTVRckRCeUY4dGpkTk9tNWUtVkZpWUtsUElVbWphNnNuTlpLMWM4TjN3STRBQkNkc3pOdnIxbDJYUl9xdlU?oc=5",
+          "publisher": "BBC",
+          "kind": "article",
+          "snippet": "Transfer window 2026: What does your Premier League club need with a week to go? BBC",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Transfer news: Summer transfer window 2026",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNOUkzY25NSzRMTzdkY0tCa2dQbTlpcV90QmY2c0JOWTFPb0VnRU1rUjJhbGVhRExlc0J2dG04cnZNdEFoRnRuaWQ1RktfTlhVbGFWeTY3R0daWnhuVk1lMGgxYm1BODFMQ1cxTGU5RTl1S1MxeHNaWWNMZWxwQXJ6TGdhYjEtY0M3QjBWWG15TWdBOURwX2pfRnJQUHZPUV9adHBYWVYwVjQzX1JlVW5sN0wtT3F6QmZ6UVM4S1NaVUJFY2M3eERTcmRR?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Transfer news: Summer transfer window 2026 - Premier League deals, ins and outs Sky Sports",
+          "published": "Thu, 03 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Were there any real winners in the Premier League's chaotic summer transfer window?",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQT0dOZDRYQTZYREk5cUlWWlhFMGJ1c1RmaDFYYnppb1hYMDU0TEVzeWMwQ2xjdUd6OWswRW1SdnlQQlNabjJkUW5KNS0wRzhVOS16SFBMbVhfTUU3TnlEQlc4M09Cdko5a25fYjZyNFBPb1hLdXg0U2VqNTB5NUl6R2toNV9LVEtueEpsUkR0X2hNY19ySnFlSmpTLWptVWgwY21hZmllU1V5d050R1Vz?oc=5",
+          "publisher": "DAZN",
+          "kind": "article",
+          "snippet": "Were there any real winners in the Premier League's chaotic summer transfer window? DAZN",
+          "published": "Wed, 02 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Premier League’s obscene transfer window has broken football",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxObVFWVDFKc09hTlA4X2VQYlpTT1hWSExHMHA4bUY2NHJCNjZlMUxNazVGb3NKWVpET0lEcDNBWFJUSENBdG1uZTZuRENYN2dIRkMxWGJtUVJwWXNMTUc5elRjcVVsME41Nl9EQVNGbFFPd29lLXdaWlkxcmxmSXR1QnZiemo4TVhmU3d5aXJkZEQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The Premier League’s obscene transfer window has broken football Yahoo Sports",
+          "published": "Wed, 02 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Breaking Premier League Transfer News",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96OGtxU19WaHZjWFk4YWVfcmFnSEY3MHhLS1MtMEpMT0pDbHJxTk5wS2x4andidF9MUFlmQ3lXNGs1ZnE0QXNqSEFORm1BVk8zOGV4RUJB?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Breaking Premier League Transfer News - Summer 2025 Updates! | Sport's Up Date YouTube",
+          "published": "Fri, 25 Apr 2025 13:22:11 GMT"
+        },
+        {
+          "title": "“THEY’VE HAD A SHOCKER!” 😳 Premier League Transfer Window TIER LIST",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE01VktLZmtBck1XVEt1VE80aFdhUzlWanNvMXZ6OUg3MG5BdWJaTzZUWm5GQ3BLaGl0M21UcFJCNGd0UFUtMUVORzJIMmlFQ3Y4a2ZwMW53?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "“THEY’VE HAD A SHOCKER!” 😳 Premier League Transfer Window TIER LIST YouTube",
+          "published": "Thu, 03 Sep 2026 09:14:02 GMT"
+        },
+        {
+          "title": "The Premier League’s £3.5bn transfer window smashed all records. Can the boom last?",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMTVyZGZneldxc05LaWdIaWxyel9nSGsxdnpyLUNYVVE0NHBpdFFDQnV3SVhESUxfT0JUT0c4LXU2NFhubzlkSFZ5Nm9hWmllNDRZS1N0YlZlQ0ozUlNSVGszWUNYRGpxRUlNdWNtdUYxTU5uVktBVU9GYnlnbGQzc3BJT01XWWUtdUNhTEV1MXhYYjhLcGJ1aG8tRUNSMEk?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "The Premier League’s £3.5bn transfer window smashed all records. Can the boom last? - The Athletic The New York Times",
+          "published": "Sat, 05 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League's summer transfer market is dangerously out of control",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVERNV3NhemdYVGNQVDhFQUF3UmFtc1ZDWGZ1dlotZUZhRHBpc1ZySVZSQ1l6czNNbnkyeDZDY2d0THFUOFkxVUtvaFNMV0dNOGp6dHBfd0ZZX3FUN2g5eXh6bXdXczZMVGQtSFZFWTU5Szk2cnBwby1iaHMwdjkzV0JLYUJWcVp6UmpWUVVXR2UwcHFjcmVfQlcyajVHNXNnaTE4dDNiTHM1QmZqUHdTUnBIbDJNcFhqQzZVcEY2djVrc25fM3FRTjBn?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Premier League's summer transfer market is dangerously out of control ESPN",
+          "published": "Thu, 03 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League’s $6 Billion Transfer Window: Is English Football Taking Over? | Straight Yellow",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBGZFI0NkhsTjh5RUZ4MHk0Zm9Lc2FRanR4VXNZNFhkenVNaXVjYXRzS0NRSUxlcjA2TjRwODFnVkZybUh1T3UxRTVmV0E3elRKR2xHLVRR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Premier League’s $6 Billion Transfer Window: Is English Football Taking Over? | Straight Yellow YouTube",
+          "published": "Fri, 04 Sep 2026 06:00:28 GMT"
+        }
+      ]
+    },
+    {
       "id": "max-dowman-doubles-up-arsenal-s-back-ups-4bb0db54",
       "slug": "max-dowman-doubles-up-arsenal-s-back-ups-4bb0db54",
       "sport": "soccer",
@@ -16946,12 +16993,50 @@
       ]
     },
     {
+      "id": "fpl-triple-newcastle-injury-blow-4-5m-bogle-ad8e8ff8",
+      "slug": "fpl-triple-newcastle-injury-blow-4-5m-bogle-ad8e8ff8",
+      "sport": "soccer",
+      "headline": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings",
+      "blurb": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings fantasyfootballscout.co.uk",
+      "summary": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings fantasyfootballscout.co.uk Triple Newcastle injury blow 🥴 Plus, £4.5m Bogle leads FPL standings 🤩 FPL Scout Notes from Leeds 4-1 Newcastle ⤵️ https://t.co/4QJsFW5nUq x.com Aggregated from fantasyfootballscout.co.uk, x.com.",
+      "category": "injury",
+      "published": "2026-09-15T13:54:42Z",
+      "updated": "2026-09-15T16:44:55Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcUlhbmFHWUtFVVoxOERPWWltamJZMGNVbTB3Zm9GWWtEb2RJRl9jc3NiYkt1ZTFENHdHMlhaTnhxdEZvUkNxQXJTYVZXaDlFRG4zWDBfSWZMN25hekRxSTlaNERKWi0wZVRfZEVrSENVLWNQT3hScnh1eWI4UkdmLVZaTHB0c29hQjlNWHl6TmlfWE91TWlQdVQ5T2xLZEptcFp3c1dmOTNDR2JZdFVMcXBKLXVQTUR2Qkdr?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings fantasyfootballscout.co.uk",
+          "published": "Tue, 15 Sep 2026 13:54:42 GMT"
+        },
+        {
+          "title": "Triple Newcastle injury blow 🥴 Plus, £4.5m Bogle leads FPL standings 🤩 FPL Scout Notes from Leeds 4-1 Newcastle ⤵️ https://t.co/4QJsFW5nUq",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE96TnNVaDNiNVh3ZW53UXNHdEtCSU5FalRRbWQzT055ZW9xQTdjSTV6WF9WNmRGeFo3bnBMdkw1a2NlMjAzT1ZIX1FLTzNTdHZUWm1kQlNJVkRFZkNl?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Triple Newcastle injury blow 🥴 Plus, £4.5m Bogle leads FPL standings 🤩 FPL Scout Notes from Leeds 4-1 Newcastle ⤵️ https://t.co/4QJsFW5nUq x.com",
+          "published": "Tue, 15 Sep 2026 15:15:17 GMT"
+        },
+        {
+          "title": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbjZiZXlpZHhMZDg2YWloQjZoay1STGZxLXNET2FnYURsNm1ITHJtTjF5RkNwZ1dlbEpaR3ZPV1hhaEF5SEl3WmhCdjRvdjBFNEdFYWpVQWIzTnpPX2UxZmRkLTEwcXl6UEN5Y05XZlNpNlkxSkVBNFJkVnI0OU1Jc0RVRFBqZzBGdDVDOWpfYnRVY2ZFR0R6RUV5WjRYRUdMYzJCZnBfa0lDMU40TVR0alN6RktmSmlHbU1uVA?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings fantasyfootballscout.co.uk",
+          "published": "Tue, 15 Sep 2026 16:44:55 GMT"
+        }
+      ]
+    },
+    {
       "id": "jack-hinshelwood-injured-weekend-premier-league-injury-f1e7f0b4",
       "slug": "jack-hinshelwood-injured-weekend-premier-league-injury-f1e7f0b4",
       "sport": "soccer",
       "headline": "Premier League injuries: Latest news, injury table, suspension tracker and FPL updates for every club",
-      "blurb": "Premier League 2026 summer transfers: All confirmed ins, outs for every club ESPN",
-      "summary": "Nathan Collins, Gabriel Magalhães, William Saliba, Bukayo Saka, Antoine Semenyo, Alexander Isak, Bruno Fernandes, Mateus Fernandes, Jack Hinshelwood, Erling Haaland, Phil Foden, Morgan Rogers, Manuel Ugarte Ribeiro, James Tarkowski, Florian Wirtz and Dominik Szoboszlai: Premier League 2026 summer transfers: All confirmed ins, outs for every club ESPN Premier League transfers for summer 2026: List of every in and out for each club NBC Sports Summer transfers 2026: All to know as Premier League signings break records Al Jazeera Aggregated from ESPN, NBC Sports, Al Jazeera, IndulgExpress, and that worries European clubs and 38 more.",
+      "blurb": "Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC",
+      "summary": "Nathan Collins, Gabriel Magalhães, William Saliba, Bukayo Saka, Antoine Semenyo, Alexander Isak, Bruno Fernandes, Mateus Fernandes, Jack Hinshelwood, Erling Haaland, Phil Foden, Morgan Rogers, Manuel Ugarte Ribeiro, James Tarkowski, Florian Wirtz and Dominik Szoboszlai: Premier League and FPL team news: All your injury and Fantasy Premier League info in one place BBC The old adage used to be that English players came at a premium. Now that appears to simply apply to a player already in the Premier League. Aggregated from BBC, and that worries European clubs, Guardian Football, inkl, ESPN and 39 more.",
       "category": "injury",
       "published": "2019-08-21T07:00:00Z",
       "updated": "2026-09-13T19:29:03Z",
@@ -17813,44 +17898,14 @@
           "kind": "article",
           "snippet": "Premier League Injuries: Latest Injury News, Updates & Suspensions RotoWire",
           "published": "Thu, 10 Sep 2026 16:15:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "fpl-triple-newcastle-injury-blow-4-5m-bogle-ad8e8ff8",
-      "slug": "fpl-triple-newcastle-injury-blow-4-5m-bogle-ad8e8ff8",
-      "sport": "soccer",
-      "headline": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings",
-      "blurb": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings fantasyfootballscout.co.uk",
-      "summary": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings fantasyfootballscout.co.uk Triple Newcastle injury blow 🥴 Plus, £4.5m Bogle leads FPL standings 🤩 FPL Scout Notes from Leeds 4-1 Newcastle ⤵️ https://t.co/4QJsFW5nUq x.com Aggregated from fantasyfootballscout.co.uk, x.com.",
-      "category": "injury",
-      "published": "2026-09-15T13:54:42Z",
-      "updated": "2026-09-15T16:44:55Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcUlhbmFHWUtFVVoxOERPWWltamJZMGNVbTB3Zm9GWWtEb2RJRl9jc3NiYkt1ZTFENHdHMlhaTnhxdEZvUkNxQXJTYVZXaDlFRG4zWDBfSWZMN25hekRxSTlaNERKWi0wZVRfZEVrSENVLWNQT3hScnh1eWI4UkdmLVZaTHB0c29hQjlNWHl6TmlfWE91TWlQdVQ5T2xLZEptcFp3c1dmOTNDR2JZdFVMcXBKLXVQTUR2Qkdr?oc=5",
-          "publisher": "fantasyfootballscout.co.uk",
-          "kind": "article",
-          "snippet": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings fantasyfootballscout.co.uk",
-          "published": "Tue, 15 Sep 2026 13:54:42 GMT"
         },
         {
-          "title": "Triple Newcastle injury blow 🥴 Plus, £4.5m Bogle leads FPL standings 🤩 FPL Scout Notes from Leeds 4-1 Newcastle ⤵️ https://t.co/4QJsFW5nUq",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE96TnNVaDNiNVh3ZW53UXNHdEtCSU5FalRRbWQzT055ZW9xQTdjSTV6WF9WNmRGeFo3bnBMdkw1a2NlMjAzT1ZIX1FLTzNTdHZUWm1kQlNJVkRFZkNl?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Triple Newcastle injury blow 🥴 Plus, £4.5m Bogle leads FPL standings 🤩 FPL Scout Notes from Leeds 4-1 Newcastle ⤵️ https://t.co/4QJsFW5nUq x.com",
-          "published": "Tue, 15 Sep 2026 15:15:17 GMT"
-        },
-        {
-          "title": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbjZiZXlpZHhMZDg2YWloQjZoay1STGZxLXNET2FnYURsNm1ITHJtTjF5RkNwZ1dlbEpaR3ZPV1hhaEF5SEl3WmhCdjRvdjBFNEdFYWpVQWIzTnpPX2UxZmRkLTEwcXl6UEN5Y05XZlNpNlkxSkVBNFJkVnI0OU1Jc0RVRFBqZzBGdDVDOWpfYnRVY2ZFR0R6RUV5WjRYRUdMYzJCZnBfa0lDMU40TVR0alN6RktmSmlHbU1uVA?oc=5",
-          "publisher": "fantasyfootballscout.co.uk",
+          "title": "The most expensive Premier League transfers ranked",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRC1od1p6MVppYXRaSlp2ZldPcUNKa2E4WVllZ0F1NFBkMjJ0YVlJbjlORThnQ1o4aWZabUJnTUJRSUdEaGxnTmpxUUFDWGZfNkdYOXZPa29rZFpubjNfLWVvMXMyRWEzUDAzSTJxa3J3bTZUSzliSHRnM0FFQkRQbzJxWjhFLThPQ0x6NGN1TjJBdw?oc=5",
+          "publisher": "Betway Insider",
           "kind": "article",
-          "snippet": "FPL notes: Triple Newcastle injury blow + £4.5m Bogle leads FPL standings fantasyfootballscout.co.uk",
-          "published": "Tue, 15 Sep 2026 16:44:55 GMT"
+          "snippet": "The most expensive Premier League transfers ranked Betway Insider",
+          "published": "Wed, 24 Jun 2026 07:00:00 GMT"
         }
       ]
     },
@@ -17896,6 +17951,82 @@
           "kind": "article",
           "snippet": "Andoni Iraola press conference: Newcastle v Liverpool, first-game excitement, transfers and more Liverpool FC",
           "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "cowboys-signing-running-back-tyler-goodson-off-falcons-617e1f4c",
+      "slug": "cowboys-signing-running-back-tyler-goodson-off-falcons-617e1f4c",
+      "sport": "soccer",
+      "headline": "Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off…",
+      "blurb": "Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad By Aaron Wilson…",
+      "summary": "Callum Wilson: Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad By Aaron Wilson HOUSTON -- The Dallas Cowboys are signing running back Tyler Goodson x.com Board reading of x.com.",
+      "category": "roster",
+      "published": "2026-09-15T09:46:09Z",
+      "updated": "2026-09-15T09:46:09Z",
+      "players": [
+        {
+          "key": "wilson",
+          "name": "Callum Wilson",
+          "slug": "callum-wilson",
+          "pos": "FWD",
+          "team": "BRE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad By Aaron Wilson HOUSTON -- The Dallas Cowboys are signing running back Tyler Goodson",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85VFdPQU03Y3YyektrQjRuX2R5TzQ3bm1xc3A3dU1wNHBMNUV4QjE1RWc1b0NwOWpwTFF2eGJPajBJN0Vlc2NIeE0yckxCUDVYdGRaV1dUTFVTMWdvd01vX3V3R0RqX0U?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad By Aaron Wilson HOUSTON -- The Dallas Cowboys are signing running back Tyler Goodson x.com",
+          "published": "Tue, 15 Sep 2026 09:46:09 GMT"
+        }
+      ]
+    },
+    {
+      "id": "dowman-starts-arsenal-make-nine-changes-ipswich-live-57de5270",
+      "slug": "dowman-starts-arsenal-make-nine-changes-ipswich-live-57de5270",
+      "sport": "soccer",
+      "headline": "Iraola changes TEN at Anfield as Kudus starts for Spurs LIVE!",
+      "blurb": "Iraola changes TEN at Anfield as Kudus starts for Spurs LIVE!",
+      "summary": "Max Dowman: Iraola changes TEN at Anfield as Kudus starts for Spurs LIVE! Max Dowman: Ipswich v Arsenal - follow it live Dowman starts as Arsenal make nine changes vs Ipswich LIVE! Aggregated from The Guardian, Sky Sports Football. Aggregated from Sky Sports Football, The Guardian.",
+      "category": "wire",
+      "published": "2026-09-15T18:10:03Z",
+      "updated": "2026-09-15T18:28:03Z",
+      "players": [
+        {
+          "key": "dowman",
+          "name": "Max Dowman",
+          "slug": "max-dowman",
+          "pos": "MID",
+          "team": "ARS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ipswich v Arsenal - follow it live",
+          "url": "https://www.theguardian.com/football/live/2026/sep/15/ipswich-town-v-arsenal-carabao-cup-third-round-live",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Tue, 15 Sep 2026 18:10:03 GMT"
+        },
+        {
+          "title": "Dowman starts as Arsenal make nine changes vs Ipswich LIVE!",
+          "url": "https://www.skysports.com/football/ipswich-town-vs-arsenal/live/577577",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "",
+          "published": "Tue, 15 Sep 2026 18:20:00 BST"
+        },
+        {
+          "title": "Iraola changes TEN at Anfield as Kudus starts for Spurs LIVE!",
+          "url": "https://www.skysports.com/football/liverpool-vs-tottenham-hotspur/live/577579",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "",
+          "published": "Tue, 15 Sep 2026 18:30:00 BST"
         }
       ]
     },
@@ -18054,82 +18185,6 @@
       ]
     },
     {
-      "id": "cowboys-signing-running-back-tyler-goodson-off-falcons-617e1f4c",
-      "slug": "cowboys-signing-running-back-tyler-goodson-off-falcons-617e1f4c",
-      "sport": "soccer",
-      "headline": "Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off…",
-      "blurb": "Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad By Aaron Wilson…",
-      "summary": "Callum Wilson: Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad By Aaron Wilson HOUSTON -- The Dallas Cowboys are signing running back Tyler Goodson x.com Board reading of x.com.",
-      "category": "roster",
-      "published": "2026-09-15T09:46:09Z",
-      "updated": "2026-09-15T09:46:09Z",
-      "players": [
-        {
-          "key": "wilson",
-          "name": "Callum Wilson",
-          "slug": "callum-wilson",
-          "pos": "FWD",
-          "team": "BRE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad By Aaron Wilson HOUSTON -- The Dallas Cowboys are signing running back Tyler Goodson",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85VFdPQU03Y3YyektrQjRuX2R5TzQ3bm1xc3A3dU1wNHBMNUV4QjE1RWc1b0NwOWpwTFF2eGJPajBJN0Vlc2NIeE0yckxCUDVYdGRaV1dUTFVTMWdvd01vX3V3R0RqX0U?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad Source: Cowboys signing running back Tyler Goodson off Falcons' practice squad By Aaron Wilson HOUSTON -- The Dallas Cowboys are signing running back Tyler Goodson x.com",
-          "published": "Tue, 15 Sep 2026 09:46:09 GMT"
-        }
-      ]
-    },
-    {
-      "id": "dowman-starts-arsenal-make-nine-changes-ipswich-live-57de5270",
-      "slug": "dowman-starts-arsenal-make-nine-changes-ipswich-live-57de5270",
-      "sport": "soccer",
-      "headline": "Iraola changes TEN at Anfield as Kudus starts for Spurs LIVE!",
-      "blurb": "Iraola changes TEN at Anfield as Kudus starts for Spurs LIVE!",
-      "summary": "Max Dowman: Iraola changes TEN at Anfield as Kudus starts for Spurs LIVE! Max Dowman: Ipswich v Arsenal - follow it live Dowman starts as Arsenal make nine changes vs Ipswich LIVE! Aggregated from The Guardian, Sky Sports Football. Aggregated from Sky Sports Football, The Guardian.",
-      "category": "wire",
-      "published": "2026-09-15T18:10:03Z",
-      "updated": "2026-09-15T18:28:03Z",
-      "players": [
-        {
-          "key": "dowman",
-          "name": "Max Dowman",
-          "slug": "max-dowman",
-          "pos": "MID",
-          "team": "ARS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ipswich v Arsenal - follow it live",
-          "url": "https://www.theguardian.com/football/live/2026/sep/15/ipswich-town-v-arsenal-carabao-cup-third-round-live",
-          "publisher": "The Guardian",
-          "kind": "article",
-          "snippet": "",
-          "published": "Tue, 15 Sep 2026 18:10:03 GMT"
-        },
-        {
-          "title": "Dowman starts as Arsenal make nine changes vs Ipswich LIVE!",
-          "url": "https://www.skysports.com/football/ipswich-town-vs-arsenal/live/577577",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "",
-          "published": "Tue, 15 Sep 2026 18:20:00 BST"
-        },
-        {
-          "title": "Iraola changes TEN at Anfield as Kudus starts for Spurs LIVE!",
-          "url": "https://www.skysports.com/football/liverpool-vs-tottenham-hotspur/live/577579",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "",
-          "published": "Tue, 15 Sep 2026 18:30:00 BST"
-        }
-      ]
-    },
-    {
       "id": "we-can-t-change-rules-d8fa8f09",
       "slug": "we-can-t-change-rules-d8fa8f09",
       "sport": "soccer",
@@ -18272,19 +18327,12 @@
       "slug": "man-utd-handed-welcome-injury-boost-new-premier-0b91154d",
       "sport": "soccer",
       "headline": "Elliot Anderson: New Man City signing sends Man Utd message after completing £116m move from Nottingham Forest",
-      "blurb": "Erling Haaland injury latest for Man City vs Nottingham Forest and FPL update https://t.co/kZ5OozN5fR x.com",
-      "summary": "Erling Haaland injury latest for Man City vs Nottingham Forest and FPL update https://t.co/kZ5OozN5fR x.com Man Utd Handed Welcome Injury Boost As New Premier League Season Nears si.com ~⚡️\"【WATCH-TV】 Man United vs Man City Premier League Live Game Loughborough University Aggregated from x.com, si.com, Loughborough University, Yahoo Sports, The Empire of The Kop and 29 more.",
+      "blurb": "Transfer rumors, news: Man City ahead of Man Utd in Anderson race espn.com",
+      "summary": "Elliot Anderson, Sandro Tonali, Sávio Oliveira, Erling Haaland, Carlos Baleba and Matheus Cunha: Transfer rumors, news: Man City ahead of Man Utd in Anderson race espn.com Transfer rumors, news: Man City could prioritize move for Tonali espn.com Elliot Anderson: New Man City signing sends Man Utd message after completing £116m move from Nottingham Forest skysports.com Aggregated from espn.com, skysports.com, TNT Sports, The Telegraph, mirror.co.uk and 36 more.",
       "category": "injury",
       "published": "2025-08-18T07:00:00Z",
       "updated": "2026-09-13T15:13:25Z",
       "players": [
-        {
-          "key": "erling haaland",
-          "name": "Erling Haaland",
-          "slug": "erling-haaland",
-          "pos": "FWD",
-          "team": "MCI"
-        },
         {
           "key": "anderson",
           "name": "Elliot Anderson",
@@ -18304,6 +18352,13 @@
           "name": "Sávio Oliveira",
           "slug": "s-vio-oliveira",
           "pos": "MID",
+          "team": "MCI"
+        },
+        {
+          "key": "erling haaland",
+          "name": "Erling Haaland",
+          "slug": "erling-haaland",
+          "pos": "FWD",
           "team": "MCI"
         },
         {
@@ -18793,6 +18848,102 @@
           "kind": "x",
           "snippet": "Erling Haaland injury latest for Man City vs Nottingham Forest and FPL update https://t.co/kZ5OozN5fR x.com",
           "published": "Tue, 03 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Manchester City agree £116m deal to sign Elliot Anderson from Nottingham Forest",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa1lJR2FKTHBXSVRwUzd6VUstYTd3SDdNdTFfN1h4YzhBa1JvR0N2bXB6RllBZ0hZUlE3Ni15bGNqQ0V5U05xeE1IbzlUS1JOQVJwZEZNUzdWdGItR1ozVlVWV3BhU2VnVEdjbklrVmZhaEdxX3ZjOVI4ZEc4Q0ZSLWJXdlh3NkFzNTZXUWNYa3d1MGt0WGc?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Manchester City agree £116m deal to sign Elliot Anderson from Nottingham Forest - The Athletic The New York Times",
+          "published": "Fri, 26 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man City Confirm Record-Breaking Elliot Anderson Transfer",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWl81VDVUQ1pvbXBka2VYZzV1V2dXUEJ1cDZMcDd3cXo0dGxWdmpfcWpTcTZNeElwNF9mNUdBTGJETWZ5cjlob1JHb2NWa1pLZ1J4Z0dlOWdhT1NFN1d5UWJ1T0M5T0NLaFZ6d2JwZE8xbU1leVR5eUxtamZqSERMc05JMWNXMTJFamRV?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Man City Confirm Record-Breaking Elliot Anderson Transfer Sports Illustrated",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Manchester City preparing third bid for Nottingham Forest’s Elliot Anderson",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOdWxHTnZhVFpxT0FxU3dWNG5lQTlOa1VHTEstVEhuWVZIVUlsYkRBa3hjX0dCel9CM1RPaDE2YTFscFN2VTZnOHpBU3RkVmlXblZnODV2bWo5WlhnUUVoYkJTZHFMdjU2b19qUmFmYWd1YkRDelJJMVA5QVh6X2FzVGIybERhWWh3UDJfNA?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Manchester City preparing third bid for Nottingham Forest’s Elliot Anderson Yahoo Sports",
+          "published": "Tue, 16 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Is Elliot Anderson Worth $160 Million Amid Record-Breaking Man City Offer?",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbmIyWGt5RENjREVKTGp3QXAxZEVTbGNidXA5UXJQQWEyOWZtWXFnTUtYUTZzMEg2bFRiZ25vM2NJZ096WG9UVWRvdlJxSVRFS0RaeWh2Q010UzdET215T2hueE94THlnUHNVcV9aRUhMcV9XWTQ1bWdNU0F5TVZWT2pMQnlXelNUR3JMQVpwV25LWUkwTFByNA?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Is Elliot Anderson Worth $160 Million Amid Record-Breaking Man City Offer? Sports Illustrated",
+          "published": "Thu, 11 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Manchester City reach Elliot Anderson transfer agreement with Nottingham Forest",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOT05TaHpJTm9ScklXcnBsUE5GQ21LLXRGbWY5Sm9DVzQxTXB6ZVRjWlZjV2tvSUwwU2hacUVDaXNDVFdDQmc0VGdVYkc4bm85MVNrSXF3ZDBEdkdNaXJwMFZKTk53NUdqbDV2NXV0aG9LNUZqbllyUlJibU92aXJZakQ5Y08xRzZ5UDIwRDN6X1VsV0UxYVc0c3I0cFMzRTloNUV4QQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Manchester City reach Elliot Anderson transfer agreement with Nottingham Forest - The Athletic The New York Times",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nottingham Forest want £130 million Elliot Anderson deal with Manchester City",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQd202LW4xcW1XZUhCUnctWElTWkQyT0RNblNqSGg1djZ1LXlKdHB1QzJqRi1sTzIxa1pnMkhab3VqTFQ4OUU2aXJYZE9UTFpPQXdMcjF0QndoV09MUWo2WGNfVWRFV0x1UXVBcGw1M0NvUGgwVGhpV3d6X05zeEI4YzJLQ3ZLRUtPX2xF?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Nottingham Forest want £130 million Elliot Anderson deal with Manchester City Yahoo Sports",
+          "published": "Thu, 11 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Manchester City make opening Elliot Anderson offer to Nottingham Forest",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRHdySndvei1nR0tFaGNfRWFrdFI2TEhiS1Nvc1R5alYtTGdpUDhxaEpYdkRRS0g1UmVpQ25JTFN4ZWtOblZxQmxINGd3OWl4UTdZMDFSa0ZIZk5oamFvNGY4MEJHc1BfNlFQYzhid19PUEk3c3dJS0NxMi00c2pERUdqTmZvR3N2Z3RubjNuSTZkWDBMSkQ0ag?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Manchester City make opening Elliot Anderson offer to Nottingham Forest - The Athletic The New York Times",
+          "published": "Wed, 03 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Elliot Anderson lauds City as ‘kings of Manchester’ after £116m Forest transfer",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNd3FiNUFObnJJLUxkZ2JQck9XM3Zwc1B1VW94MkJUSnZqTVVEZlJWeFpxOFhlQklRT05DeGV2MXI4bTZLdXlLX2toaVdtR0Rlb1oyT3FWYm5FSnBhVUhDbHdkNmViTm01NUVlaVdfaEkyM0sxZkJiejJVd1NKN1hYWmFEOVB4Skp0NEFEYjd5YXZBNmdmWGIwTDE5dFJUcWlGU1BTWVMwMnF0d24wZzA2blJ4YVVoZHItWjZCc1FWaXhhU3VpQ1E?oc=5",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "Elliot Anderson lauds City as ‘kings of Manchester’ after £116m Forest transfer The Guardian",
+          "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man City sign Elliot Anderson from Forest in record British transfer",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOFBuQ3JqSXN6TnJrYzhxaWMzd3Bsdm0yTURfVUR0VUtEUEJqeEd2bWJQSDIyOEtXUXRWbkNRYzBham9scU9jNFFsQ2MyVHVUM0dEemU0YkVGVkFlbEV6dXg1b2dCMWVuc1QyYVVUT0MyZ2hUeGwzTWRDaTRTVWhBTUhmbTFKS0F5blgwaXM2WUJ3QmNZMXBKTnN1Y2J5a1RFQlBOV1BMeDBsZ3BIT2tJ0gG0AUFVX3lxTE9FcjRmc0pyWHJ4d2UxVEVUOURNeFBqbkYyeTlNbkxTeDZGTXZXb3NhbTlWZkpDdml3YjhXUVRxZFRYa19Vak40aHpwZTZsYmctRUFTR0RBbFpFNkJPU2dxNkpkMDNTWFFkM0VyenZIRmNtVkRDVDVpY2JVR3RVNFdDLW9sWGNFZGw4YlJJSlJYcjhEQ3dVdnN1ZFRqa2xfc21GZG9mT3RrckZSVlkxckhuRG1xUA?oc=5",
+          "publisher": "Al Jazeera",
+          "kind": "article",
+          "snippet": "Man City sign Elliot Anderson from Forest in record British transfer Al Jazeera",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Manchester City agree £116m fee with Nottingham Forest for Elliot Anderson",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxON05tN0xZemRjdVViU3ZCenNvX05sRTNjX29JWk1lUlF4RnZiQnlsUmhuTGVqZ0ZfeE5kVVBJYkVFUDdvM0ZwaFBJVHpWWHdPcHZuWXdrRlJQZXdUSWtNV2xlWFJDcExBSkV5M21Ba3UxbG05eVlucGVETXpjT1JqRlJlR2hCa2NBV3RiSExxazgzdEJiYmpod19GUW52TTJIT3ZYY2FmVTdVeWVveGdhT2poZ0lkdlk3OE1FUFNMZFUzNTQyMjdHR0hZWk9IZ1RFUUZF?oc=5",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "Manchester City agree £116m fee with Nottingham Forest for Elliot Anderson The Guardian",
+          "published": "Thu, 25 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Nottingham Forest reject Man City's British record offer for Elliot Anderson",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWFBUS1ROX1dFWE5ROEctRVIxT0VGNjJYSl9VSDRrVTJBWmUzdTd1Z0RTNk5XeHZNWkh0amNmdE5ubXVwSDJ1MUplcTBSSFlPYzZlbFlIX0lFcHdaYnk0NnV0SHY5MWczc095WTVnejlMUVNtUHJIMVNzckpaODE1SXR0SkJOVjdqMkJtdTZCbDFZdkFYMGE5QjVzUQ?oc=5",
+          "publisher": "talkSPORT",
+          "kind": "article",
+          "snippet": "Nottingham Forest reject Man City's British record offer for Elliot Anderson talkSPORT",
+          "published": "Thu, 11 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Man City pay record £130m fee to sign England star Elliot Anderson from Nottingham Forest",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPRU9zcE9DU28wOFlyZUNLczMycEhYcHhRZ1JfR2pXRmIxeG1mVjVTdmdEN0ExbUIyNzI0Rnpoc0xrb3VaRUxOeGRiazZ0aGZ6VEVHOUdpc1BXRG51aWhGVUdDQl9qNXZ5dUkyLVJWRU5JZVBFLTh6N0xUOVpZM2VIdTdrc3RhMUMzbnNhRmNkRy1TRXVXRVI5QVZyOG9EN3RPeXA0QXBrT19IUy1mZnZua09ZamU5RmY3QUpPSEU4OTJOLVdtREJXNmw4a3AwZ1ota2dLTG9sdGRmQW1FRW5ad1REazZrand4cndmbjliQVN6OUhZOEVTSzhn?oc=5",
+          "publisher": "Irish Independent",
+          "kind": "article",
+          "snippet": "Man City pay record £130m fee to sign England star Elliot Anderson from Nottingham Forest Irish Independent",
+          "published": "Thu, 25 Jun 2026 07:00:00 GMT"
         }
       ]
     },
