@@ -158,8 +158,10 @@ def test_football_nav_keeps_every_link():
     assert "nav-lab" in header
     assert "../" not in header
     assert 'class="nav-drawer"' in header
+    assert header.count("nav-drawer") == 1
     assert "<summary>Menu</summary>" in header
     assert 'class="site-nav nav-wide"' in header
+    assert header.count("nav-wide") == 1
     arts = fb_header_nav("the-long-game.html", 0)
     assert 'aria-current="page">Articles</a>' in arts
     assert 'class="nav-group nav-tape is-here"' in arts

@@ -4315,10 +4315,7 @@ def render_news_only():
 def rewrite_football_navs() -> int:
     """Patch header/footer nav on existing football HTML without a full rebuild."""
     header_re = re.compile(
-        r'(<header class="site">[\s\S]*?</a>\s*)'
-        r'(?:<nav class="site-nav nav-wide"[^>]*>[\s\S]*?</nav>\s*<details class="nav-drawer">[\s\S]*?</details>'
-        r'|<details class="nav-drawer">[\s\S]*?</details>'
-        r'|<nav(?: class="site-nav")?[^>]*>[\s\S]*?</nav>)',
+        r'(<header class="site">[\s\S]*?</a>\s*)[\s\S]*?(</header>)',
         re.S,
     )
     footer_re = re.compile(r'<nav class="footer-nav"[^>]*>[\s\S]*?</nav>', re.S)
@@ -4334,7 +4331,7 @@ def rewrite_football_navs() -> int:
         if '<header class="site">' not in raw:
             continue
         updated, h_n = header_re.subn(
-            lambda m, p=site_path, d=depth: m.group(1) + fb_header_nav(p, d),
+            lambda m, p=site_path, d=depth: m.group(1) + fb_header_nav(p, d) + m.group(2),
             raw,
             count=1,
         )
