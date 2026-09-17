@@ -1,8 +1,147 @@
 {
   "sport": "baseball",
-  "updated": "2026-09-17T12:32:24Z",
-  "fresh": 129,
+  "updated": "2026-09-17T13:27:31Z",
+  "fresh": 133,
   "stories": [
+    {
+      "id": "chicago-cubs-star-pete-crow-armstrong-becomes-just-5fc9cb60",
+      "slug": "chicago-cubs-star-pete-crow-armstrong-becomes-just-5fc9cb60",
+      "sport": "baseball",
+      "headline": "Chicago Cubs star Pete Crow-Armstrong becomes just the 4th player in MLB history to accomplish this feat",
+      "blurb": "The Cubs offense just keeps on rolling.",
+      "summary": "Pete Crow-Armstrong, Alex Bregman, Miguel Vargas and Shohei Ohtani: The Cubs offense just keeps on rolling. The two Cubs stars combined to do something Major League Baseball hasn't seen in nearly 70 years on Wednesday night at Wrigley Field. Chicago Cubs star Pete Crow-Armstrong becomes just the 4th player in MLB history to accomplish this feat Yahoo Sports Aggregated from SB Nation, Yahoo Sports, New York Post, ChiCitySports, ESPN and 4 more.",
+      "category": "roster",
+      "published": "2026-06-30T07:00:00Z",
+      "updated": "2026-09-17T13:00:00Z",
+      "players": [
+        {
+          "key": "pete crow-armstrong",
+          "name": "Pete Crow-Armstrong",
+          "slug": "pete-crow-armstrong",
+          "pos": "OF",
+          "team": "CHC"
+        },
+        {
+          "key": "alex bregman",
+          "name": "Alex Bregman",
+          "slug": "alex-bregman",
+          "pos": "3B",
+          "team": "CHC"
+        },
+        {
+          "key": "miguel vargas",
+          "name": "Miguel Vargas",
+          "slug": "miguel-vargas",
+          "pos": "3B",
+          "team": "CWS"
+        },
+        {
+          "key": "shohei ohtani",
+          "name": "Shohei Ohtani",
+          "slug": "shohei-ohtani",
+          "pos": "DH/SP",
+          "team": "LAD"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pete Crow-Armstrong, Alex Bregman make MLB history with rare feat in Cubs' rout over Braves",
+          "url": "https://sports.yahoo.com/mlb/breaking-news/article/pete-crow-armstrong-alex-bregman-make-mlb-history-with-rare-feat-in-cubs-rout-over-braves-023041941.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The two Cubs stars combined to do something Major League Baseball hasn't seen in nearly 70 years on Wednesday night at Wrigley Field.",
+          "published": "Thu, 17 Sep 2026 02:30:41 +0000"
+        },
+        {
+          "title": "Chicago Cubs star Pete Crow-Armstrong becomes just the 4th player in MLB history to accomplish this feat",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOOGlnVXliMHFHX2RucU5wSTZtc2ZVdFYta0xSRnhUWmp2ekxsUEJCb3hCSGN0ek9qZVg0MWRxakxqWG1KXzBKd2cxbzVURnZwc0ZqM0d5WVBsTWc4SkFna0YtSkZ0eDFQUG4tV1hlalB3NnpQOXdJMWFXLXFwUlpkZUlR?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Chicago Cubs star Pete Crow-Armstrong becomes just the 4th player in MLB history to accomplish this feat Yahoo Sports",
+          "published": "Thu, 06 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong makes Cubs history with monster game to cap sweep of Dodgers",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOE5fcFp5ZTdxQThWRWdkSXZnclNiS2l4dmtxT0Z3dU5SZm9JeEoyMjhBQTZoOWtUeVktR1VvSWlCcmVpTjNBV0ZpVWpUSUloRmM0RVB1eXF1d0pnSVd1THVCYTRySENLOWM5cWIxdFdDdU04bXczNlRITGdOVWtibHlOSFZ5TWJHODJYUU4wSXpwMzZyRi1KNXg5cEhBUW9KbnNMSUViNW9FRkVQcWVaM2FVbFhCNlROcmc?oc=5",
+          "publisher": "New York Post",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong makes Cubs history with monster game to cap sweep of Dodgers New York Post",
+          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chicago Cubs: Pete Crow-Armstrong has made MLB history yet again",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMHBjVHVQUGRSTWRCb1RJbmtiaGk3bXA5WlVWdTlWNXdGUEZzQVVqbkVldGdZWW81ODRJSU8tbDN2NHVuR3M1dTlkdnVtM0x5Tk4xYS1ZbllOWW1wNU5qUDZNTkVFbTB2ZVlwdWdpTnVQR0RQUGNrdG5zcVpCcHRkYQ?oc=5",
+          "publisher": "ChiCitySports",
+          "kind": "article",
+          "snippet": "Chicago Cubs: Pete Crow-Armstrong has made MLB history yet again ChiCitySports",
+          "published": "Sat, 25 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Cubs' Pete Crow-Armstrong joins Babe Ruth, Lou Gehrig in MLB history with all-time June",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY2FHV2Vpc3ZRVWtzOXcxd1NURTZSdmlaUHlMNnFPMlJJY0wyS3JkaXBVZ2RQcUItaEp5dmlGc0pGYi0xWHFuN053ekdzelk4RWI2azJiUVF2VkFITVNsZURqVGlEYnYxemdMY2xsS0E0ZjVPT3MwR1VGZ05lbkpqVGdEQWRVUQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Cubs' Pete Crow-Armstrong joins Babe Ruth, Lou Gehrig in MLB history with all-time June Yahoo Sports",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Cubs' Pete Crow-Armstrong says he won't participate in HR Derby",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNckl1SUNIWDcwNjFmQTZpLUg2aDNUSGN1a1VERGVkcTlTaWdaeU10dHhkLU9XRlZ5TUkwc0F5NEtkNmJfdWVsQmtDbWVPd1dpdTN1ZFQzeGF1Z1I0NVFFXzdZTG5TaTNXUWZMYjR4UzZXR2VwYS1CU0x3dmFfU2RFTlRvOUY0dVBrZlB1T1BYd0tiWnJvSkUzVGZKNA?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Cubs' Pete Crow-Armstrong says he won't participate in HR Derby ESPN",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Cubs’ Pete Crow-Armstrong Sends ‘Surprised’ Mets Message",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZzZ2Vzg1TVhwcWtnSWg1OGRPcVBTM0ZXc29UQTVObGwyM2dPUkxIa29sdXdfS2dqWm9lRkR3RGIzUnI3SThmRXY3a1FLNTM0OFBHYUVGODVMa1hfRjNLMFFnUk54X2R5MFFGSXhkWEp3a0w1YXhuaDBoc3lmOWluZUhHVzVIQQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Cubs’ Pete Crow-Armstrong Sends ‘Surprised’ Mets Message Yahoo Sports",
+          "published": "Thu, 09 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Cubs’ Pete Crow-Armstrong makes all kinds of ridiculous MLB history",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkY4TGQzLWcwSHpJOFd3VklMeEYzZS00a3pndDJPTFhpY0R6emZldnp1OTZRYUNfcHl4cU8zNWhJaUI1Y1p6N2tQaVAyNk1HTmJOcXJoVU1RMHh1SGNqUE9qYk9jYVlqR1JGNmo3UHNNSU0wQnlTbFFORFVFdmZ0cmlfc1lGZ3ROUk1waVpaNUc1QVZ1VlYzR2U5X3BJcWFrZzBCNThKMA?oc=5",
+          "publisher": "ClutchPoints",
+          "kind": "article",
+          "snippet": "Cubs’ Pete Crow-Armstrong makes all kinds of ridiculous MLB history ClutchPoints",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong Already Ranks Shockingly High in Power and Speed in Cubs History",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVkxLbktkT0xxMGlPZURPMUdZSDJ1VWpoa3N6ZFBieWVWR2g1TXNPR3VCalNKdXZkN0lqWlhxMVZ6Qld5TUZjeU9KRWNJRTNJRFhZcHRadnIzVFM5OGVWSldjcUp6WVJTelEwYUswazluX3hqQk8xc0xCejR2NzdXVW9kVzUtaEFUQ1RuU21ab0g1ekNZRVkzR0hzelJFclNPcVZxYnBLSEhUUnBGMmhxZ3NUb0lfMTI2MVNJNUxRaDk1Vm1pRTdqXzhPT0FGMU00Z1BZMU1VLWhhYWdtSDI0?oc=5",
+          "publisher": "North Side Baseball",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong Already Ranks Shockingly High in Power and Speed in Cubs History North Side Baseball",
+          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Cubs star Pete Crow-Armstrong moves into NL MVP race: Can he catch Shohei Ohtani?",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZklORVlMQ0R4dkVyNUpJNDJUSE1sc0g5UExJeDY1R3ZVN29RNDN0VU4zd29sbnJKQWdZOThKbDRoUzAyLUFyYW56QmZiM0EwNDk5eEVmRlhHdDBkbVAwU2VDN2Z0d1ZsekxGUER3LVluOG15SVU3VnBmT04zZWRfdWY5RGVndWRXRDN3MlJDemdwUk15aUhYa0N5bmlpRXFZT1Z4aGlRZ3VMRFFSc0ZB?oc=5",
+          "publisher": "FOX 32 Chicago",
+          "kind": "article",
+          "snippet": "Cubs star Pete Crow-Armstrong moves into NL MVP race: Can he catch Shohei Ohtani? FOX 32 Chicago",
+          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chicago Cubs' Pete Crow-Armstrong, White Sox's Miguel Vargas added to MLB All-Star Game rosters",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRkVqdGtxWFhIeEhaUXNXS0V5a1YwNEl1bk1idGhNTW41Snk4aUtiOHpNdFhVWjZibWZ5MU9qQ3VTLUl0ZkhzUGF6cXNLamlLSjBkZEJhQnpNUkFfR0VfV1pBY2J1YmJnUjMxSUUwZEJnaWdMUmt1OVFjcmhJMHBVYnJyV3pxSUFpWFA3T2d0SDJqV2kzZzdsMHlLc1R0b2JRekZHUVlxWmFiaXZFS3lTZ21nRXRJcjFHdUVzNFpMUzJiWHZqNzlYVmF0VDlqYkE?oc=5",
+          "publisher": "ABC7 Chicago",
+          "kind": "article",
+          "snippet": "Chicago Cubs' Pete Crow-Armstrong, White Sox's Miguel Vargas added to MLB All-Star Game rosters ABC7 Chicago",
+          "published": "Sun, 05 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Cubs 8, Braves 4: Pete Crow-Armstrong and Alex Bregman triple their pleasure",
+          "url": "https://sports.yahoo.com/articles/cubs-8-braves-4-pete-130000179.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Cubs offense just keeps on rolling.",
+          "published": "Thu, 17 Sep 2026 13:00:00 +0000"
+        }
+      ]
+    },
     {
       "id": "yankees-clinch-playoff-berth-aaron-judge-homers-comeback-2a7ee0bc",
       "slug": "yankees-clinch-playoff-berth-aaron-judge-homers-comeback-2a7ee0bc",
@@ -1238,137 +1377,6 @@
       ]
     },
     {
-      "id": "chicago-cubs-star-pete-crow-armstrong-becomes-just-5fc9cb60",
-      "slug": "chicago-cubs-star-pete-crow-armstrong-becomes-just-5fc9cb60",
-      "sport": "baseball",
-      "headline": "Chicago Cubs star Pete Crow-Armstrong becomes just the 4th player in MLB history to accomplish this feat",
-      "blurb": "Chicago Cubs' Pete Crow-Armstrong, White Sox's Miguel Vargas added to MLB All-Star Game rosters ABC7 Chicago",
-      "summary": "Chicago Cubs' Pete Crow-Armstrong, White Sox's Miguel Vargas added to MLB All-Star Game rosters ABC7 Chicago The two Cubs stars combined to do something Major League Baseball hasn't seen in nearly 70 years on Wednesday night at Wrigley Field. Chicago Cubs star Pete Crow-Armstrong becomes just the 4th player in MLB history to accomplish this feat Yahoo Sports Aggregated from ABC7 Chicago, Yahoo Sports, New York Post, ChiCitySports, ESPN and 3 more.",
-      "category": "roster",
-      "published": "2026-06-30T07:00:00Z",
-      "updated": "2026-09-17T02:30:41Z",
-      "players": [
-        {
-          "key": "pete crow-armstrong",
-          "name": "Pete Crow-Armstrong",
-          "slug": "pete-crow-armstrong",
-          "pos": "OF",
-          "team": "CHC"
-        },
-        {
-          "key": "miguel vargas",
-          "name": "Miguel Vargas",
-          "slug": "miguel-vargas",
-          "pos": "3B",
-          "team": "CWS"
-        },
-        {
-          "key": "shohei ohtani",
-          "name": "Shohei Ohtani",
-          "slug": "shohei-ohtani",
-          "pos": "DH/SP",
-          "team": "LAD"
-        },
-        {
-          "key": "alex bregman",
-          "name": "Alex Bregman",
-          "slug": "alex-bregman",
-          "pos": "3B",
-          "team": "CHC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Pete Crow-Armstrong, Alex Bregman make MLB history with rare feat in Cubs' rout over Braves",
-          "url": "https://sports.yahoo.com/mlb/breaking-news/article/pete-crow-armstrong-alex-bregman-make-mlb-history-with-rare-feat-in-cubs-rout-over-braves-023041941.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "The two Cubs stars combined to do something Major League Baseball hasn't seen in nearly 70 years on Wednesday night at Wrigley Field.",
-          "published": "Thu, 17 Sep 2026 02:30:41 +0000"
-        },
-        {
-          "title": "Chicago Cubs star Pete Crow-Armstrong becomes just the 4th player in MLB history to accomplish this feat",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOOGlnVXliMHFHX2RucU5wSTZtc2ZVdFYta0xSRnhUWmp2ekxsUEJCb3hCSGN0ek9qZVg0MWRxakxqWG1KXzBKd2cxbzVURnZwc0ZqM0d5WVBsTWc4SkFna0YtSkZ0eDFQUG4tV1hlalB3NnpQOXdJMWFXLXFwUlpkZUlR?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Chicago Cubs star Pete Crow-Armstrong becomes just the 4th player in MLB history to accomplish this feat Yahoo Sports",
-          "published": "Thu, 06 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pete Crow-Armstrong makes Cubs history with monster game to cap sweep of Dodgers",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOE5fcFp5ZTdxQThWRWdkSXZnclNiS2l4dmtxT0Z3dU5SZm9JeEoyMjhBQTZoOWtUeVktR1VvSWlCcmVpTjNBV0ZpVWpUSUloRmM0RVB1eXF1d0pnSVd1THVCYTRySENLOWM5cWIxdFdDdU04bXczNlRITGdOVWtibHlOSFZ5TWJHODJYUU4wSXpwMzZyRi1KNXg5cEhBUW9KbnNMSUViNW9FRkVQcWVaM2FVbFhCNlROcmc?oc=5",
-          "publisher": "New York Post",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong makes Cubs history with monster game to cap sweep of Dodgers New York Post",
-          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chicago Cubs: Pete Crow-Armstrong has made MLB history yet again",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMHBjVHVQUGRSTWRCb1RJbmtiaGk3bXA5WlVWdTlWNXdGUEZzQVVqbkVldGdZWW81ODRJSU8tbDN2NHVuR3M1dTlkdnVtM0x5Tk4xYS1ZbllOWW1wNU5qUDZNTkVFbTB2ZVlwdWdpTnVQR0RQUGNrdG5zcVpCcHRkYQ?oc=5",
-          "publisher": "ChiCitySports",
-          "kind": "article",
-          "snippet": "Chicago Cubs: Pete Crow-Armstrong has made MLB history yet again ChiCitySports",
-          "published": "Sat, 25 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cubs' Pete Crow-Armstrong joins Babe Ruth, Lou Gehrig in MLB history with all-time June",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPY2FHV2Vpc3ZRVWtzOXcxd1NURTZSdmlaUHlMNnFPMlJJY0wyS3JkaXBVZ2RQcUItaEp5dmlGc0pGYi0xWHFuN053ekdzelk4RWI2azJiUVF2VkFITVNsZURqVGlEYnYxemdMY2xsS0E0ZjVPT3MwR1VGZ05lbkpqVGdEQWRVUQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Cubs' Pete Crow-Armstrong joins Babe Ruth, Lou Gehrig in MLB history with all-time June Yahoo Sports",
-          "published": "Wed, 01 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cubs' Pete Crow-Armstrong says he won't participate in HR Derby",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNckl1SUNIWDcwNjFmQTZpLUg2aDNUSGN1a1VERGVkcTlTaWdaeU10dHhkLU9XRlZ5TUkwc0F5NEtkNmJfdWVsQmtDbWVPd1dpdTN1ZFQzeGF1Z1I0NVFFXzdZTG5TaTNXUWZMYjR4UzZXR2VwYS1CU0x3dmFfU2RFTlRvOUY0dVBrZlB1T1BYd0tiWnJvSkUzVGZKNA?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Cubs' Pete Crow-Armstrong says he won't participate in HR Derby ESPN",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cubs’ Pete Crow-Armstrong Sends ‘Surprised’ Mets Message",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZzZ2Vzg1TVhwcWtnSWg1OGRPcVBTM0ZXc29UQTVObGwyM2dPUkxIa29sdXdfS2dqWm9lRkR3RGIzUnI3SThmRXY3a1FLNTM0OFBHYUVGODVMa1hfRjNLMFFnUk54X2R5MFFGSXhkWEp3a0w1YXhuaDBoc3lmOWluZUhHVzVIQQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Cubs’ Pete Crow-Armstrong Sends ‘Surprised’ Mets Message Yahoo Sports",
-          "published": "Thu, 09 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cubs’ Pete Crow-Armstrong makes all kinds of ridiculous MLB history",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVkY4TGQzLWcwSHpJOFd3VklMeEYzZS00a3pndDJPTFhpY0R6emZldnp1OTZRYUNfcHl4cU8zNWhJaUI1Y1p6N2tQaVAyNk1HTmJOcXJoVU1RMHh1SGNqUE9qYk9jYVlqR1JGNmo3UHNNSU0wQnlTbFFORFVFdmZ0cmlfc1lGZ3ROUk1waVpaNUc1QVZ1VlYzR2U5X3BJcWFrZzBCNThKMA?oc=5",
-          "publisher": "ClutchPoints",
-          "kind": "article",
-          "snippet": "Cubs’ Pete Crow-Armstrong makes all kinds of ridiculous MLB history ClutchPoints",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pete Crow-Armstrong Already Ranks Shockingly High in Power and Speed in Cubs History",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQVkxLbktkT0xxMGlPZURPMUdZSDJ1VWpoa3N6ZFBieWVWR2g1TXNPR3VCalNKdXZkN0lqWlhxMVZ6Qld5TUZjeU9KRWNJRTNJRFhZcHRadnIzVFM5OGVWSldjcUp6WVJTelEwYUswazluX3hqQk8xc0xCejR2NzdXVW9kVzUtaEFUQ1RuU21ab0g1ekNZRVkzR0hzelJFclNPcVZxYnBLSEhUUnBGMmhxZ3NUb0lfMTI2MVNJNUxRaDk1Vm1pRTdqXzhPT0FGMU00Z1BZMU1VLWhhYWdtSDI0?oc=5",
-          "publisher": "North Side Baseball",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong Already Ranks Shockingly High in Power and Speed in Cubs History North Side Baseball",
-          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cubs star Pete Crow-Armstrong moves into NL MVP race: Can he catch Shohei Ohtani?",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZklORVlMQ0R4dkVyNUpJNDJUSE1sc0g5UExJeDY1R3ZVN29RNDN0VU4zd29sbnJKQWdZOThKbDRoUzAyLUFyYW56QmZiM0EwNDk5eEVmRlhHdDBkbVAwU2VDN2Z0d1ZsekxGUER3LVluOG15SVU3VnBmT04zZWRfdWY5RGVndWRXRDN3MlJDemdwUk15aUhYa0N5bmlpRXFZT1Z4aGlRZ3VMRFFSc0ZB?oc=5",
-          "publisher": "FOX 32 Chicago",
-          "kind": "article",
-          "snippet": "Cubs star Pete Crow-Armstrong moves into NL MVP race: Can he catch Shohei Ohtani? FOX 32 Chicago",
-          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chicago Cubs' Pete Crow-Armstrong, White Sox's Miguel Vargas added to MLB All-Star Game rosters",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRkVqdGtxWFhIeEhaUXNXS0V5a1YwNEl1bk1idGhNTW41Snk4aUtiOHpNdFhVWjZibWZ5MU9qQ3VTLUl0ZkhzUGF6cXNLamlLSjBkZEJhQnpNUkFfR0VfV1pBY2J1YmJnUjMxSUUwZEJnaWdMUmt1OVFjcmhJMHBVYnJyV3pxSUFpWFA3T2d0SDJqV2kzZzdsMHlLc1R0b2JRekZHUVlxWmFiaXZFS3lTZ21nRXRJcjFHdUVzNFpMUzJiWHZqNzlYVmF0VDlqYkE?oc=5",
-          "publisher": "ABC7 Chicago",
-          "kind": "article",
-          "snippet": "Chicago Cubs' Pete Crow-Armstrong, White Sox's Miguel Vargas added to MLB All-Star Game rosters ABC7 Chicago",
-          "published": "Sun, 05 Jul 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
       "id": "new-york-yankees-minnesota-twins-carlos-rod-n-a17ecc78",
       "slug": "new-york-yankees-minnesota-twins-carlos-rod-n-a17ecc78",
       "sport": "baseball",
@@ -1808,6 +1816,170 @@
       ]
     },
     {
+      "id": "cubs-7-braves-3-pete-crow-armstrong-joins-04de75b9",
+      "slug": "cubs-7-braves-3-pete-crow-armstrong-joins-04de75b9",
+      "sport": "baseball",
+      "headline": "If Pete Crow-Armstrong gets to 40/40 against the Braves, the Cubs should stop the game for a ceremony. Here’s why.",
+      "blurb": "Pete Crow-Armstrong strengthened his MVP resume with another two-homer performance.",
+      "summary": "Pete Crow-Armstrong strengthened his MVP resume with another two-homer performance. News from around baseball as the regular season winds down. The Cubs center fielder had yet another big game. Aggregated from NBC Sports, SB Nation, RotoWire MLB, FOX Sports, ESPN and 6 more.",
+      "category": "wire",
+      "published": "2026-07-05T07:00:00Z",
+      "updated": "2026-09-17T05:11:42Z",
+      "players": [
+        {
+          "key": "pete crow-armstrong",
+          "name": "Pete Crow-Armstrong",
+          "slug": "pete-crow-armstrong",
+          "pos": "OF",
+          "team": "CHC"
+        },
+        {
+          "key": "julio rodriguez",
+          "name": "Julio Rodríguez",
+          "slug": "julio-rodr-guez",
+          "pos": "OF",
+          "team": "SEA"
+        },
+        {
+          "key": "andres munoz",
+          "name": "Andrés Muñoz",
+          "slug": "andr-s-mu-oz",
+          "pos": "RP",
+          "team": "SEA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mariners News: Julio Rodriguez, Andrés Muñoz, and Pete Crow-Armstrong",
+          "url": "https://sports.yahoo.com/articles/mariners-news-julio-rodriguez-andr-140000679.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "News from around baseball as the regular season winds down.",
+          "published": "Tue, 15 Sep 2026 14:00:00 +0000"
+        },
+        {
+          "title": "Cubs 7, Braves 3: Pete Crow-Armstrong joins Billy Williams in Cubs history",
+          "url": "https://sports.yahoo.com/articles/cubs-7-braves-3-pete-130000503.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Cubs center fielder had yet another big game.",
+          "published": "Tue, 15 Sep 2026 13:00:00 +0000"
+        },
+        {
+          "title": "If Pete Crow-Armstrong gets to 40/40 against the Braves, the Cubs should stop the game for a ceremony. Here’s why.",
+          "url": "https://sports.yahoo.com/articles/pete-crow-armstrong-gets-40-170000671.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "It would be payback. Petty payback, admittedly.",
+          "published": "Tue, 15 Sep 2026 17:00:00 +0000"
+        },
+        {
+          "title": "Pete Crow-Armstrong: Huge performance against Atlanta",
+          "url": "https://www.rotowire.com//baseball/player/pete-crow-armstrong-16684",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Crow-Armstrong went 3-for-4 with a triple, two home runs, three RBI and an additional run scored during Wednesday's 8-4 win over Atlanta. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 16 Sep 2026 7:27:00 PM PDT"
+        },
+        {
+          "title": "Pete Crow-Armstrong Joins 35/35 Club, And The Much Rarer 40/40 Is In Reach",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNN1ZNRDdWSGJkLWhDeXdURU02V1BhNkJILTdQV1hjQXdESmdfaWJGVXlsNWRyazV0WG9zckdHQk5RMVFWWWV2NnlDNk95LWx5QkNiYkcwUnBDQV9FZHRETUF2dFQtRTVpWGNzLWxxLWNRakxfVEZ5ZWpENVU1bVdTTng2UmN3Q2hCYWNHY0wwT3QxUGFiZjZqatIBmAFBVV95cUxNTXdZM0NtVEJkYzIzVkxCcWp3V3RPemRabkRiMUk4ZGxjQ2tjOFg0bjZmUXBmNnFSd2tZMkFCYXVWU1Y4OEhlaVdvWE1YM3lCV0pPRXk5YlhtZUpHVlREMDcwbGgzTmI2eHpBcTdfUmRCN1hXcElHYWN2OGZCUjRjZk55MUIzR3d5cC1MSzcxaFlpcUxFTm1oNg?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong Joins 35/35 Club, And The Much Rarer 40/40 Is In Reach FOX Sports",
+          "published": "Tue, 08 Sep 2026 15:49:31 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong bolsters MVP case with 1st career 3-HR game",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNLXZWNHlsLV9HTF95YTZYcXJYY0pTUUVmU1VfYjRGdkVIY3ROcWR5Q3RzRjljVnBZcjVXQUFHQ1ZtNkJWaGZPTTRyXy1OTlppZFNfSDJLd1o3c1o5djhxa0RRMDZVX0ZxNU84WXZ4SWlwY0dzbWszWjlGaHNfSDBIYmk2dU5SSTA4eENXeXBURWR3eEktQW1MYi1SVnB1QmRFcU1j?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong bolsters MVP case with 1st career 3-HR game ESPN",
+          "published": "Sat, 29 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chicago Cubs news - Pete Crow-Armstrong",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQc1E5bDkzMW9QQm5keUdrVzhzTXN4Zl9TYlJCaXNWRjRGM01nem5MUnNWbV8zUlRXbEtiV1VUeG1KLTVkUDZfblhhVVFNT3g2ZjFRaXl4RW1JSlNuYmQyc1Q0SDYtZHpBNllsYXh6Y2ZULVB6Rm44dHRjRjBIbS1nZmQ3d044R3pYTy1teVVWR3FJUXJKcFNKQkln?oc=5",
+          "publisher": "Bleed Cubbie Blue",
+          "kind": "article",
+          "snippet": "Chicago Cubs news - Pete Crow-Armstrong Bleed Cubbie Blue",
+          "published": "Thu, 16 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "How Cubs Star Pete Crow-Armstrong Transformed Into An MVP Frontrunner",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORlJNTlJjbHlzQ0s0bkwzZDluSmVmZzZJWC16UWkyV0VWMGtaYnI3WTUzd1VRR2cxNFFwSW13TE95NmtyM0JtYy1iT081REsybzVBSnNvUFlGWTFnZTU5QmpXTXkxdUxEdHpSMHgzWmtNOUdNRUtYb0xRTjZ0Vl9VQm5uX1dmNk9qSjN2VS1PNTlJZFlLM1dkNXRFSjdBYXRs0gGgAUFVX3lxTFBRUXBVVkcwT1E2djFiQ1ZraTdaandoNlVOTFkySUxPUGlsWDZXTVE0eUFiaHZRazVVeTNfblYxbWdsMzRjNHNBcWhVMzJZZGpydHhpTXZ5a3pXRGZidFpwcHhxaHpNTTMyM0d6dXV4MVdoMHR5bVRYb29OcUhPU2Q0S25kWHZvWXNabU41dEIzWFhMVGxmUU9BZ1RyZUFPTXU?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "How Cubs Star Pete Crow-Armstrong Transformed Into An MVP Frontrunner FOX Sports",
+          "published": "Tue, 01 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong Joins 30-30 Club With Walk-Off Home Run Against White Sox",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTnlnUG9lUndoVXliVVhCSnJCRUFaSzB1am04U0pIRWRiWlNUWDRaaGsybHZSSkhwWlVQVUJwVzl6UDI0MEVld3V3TXpRVlo0bVZHNzEyTlFRdXdYWndCMVlVbFcyaC1WWjAyNFpmZElVV1IyeU9oZGdMb2tYdzRfTklsb3hFMFhJZTVhREVsQkFVWjNKX0ludkVPZzRNSFE0dktSNlkzX1dPQjhPbVVJ0gGvAUFVX3lxTFBob2dRRnlpUWxVMl9wNXhuUVUwU2c2ajVjcjBwX0VKN1VZaEhaS29DeUJ5WmhMS1J3eHlYd0lZNGRHU0RuWFNZQjd0X0xsUUFwSVhjaF9xU0RHZUlfbk9pWHBLZ0JlNGN4MWE5Z3lrV0ZjUDlJeTYybkwxNk5ES1pDd25Ld05GWloybmhlc1V6Zm4xQkhhaTQ5dFB0STJwejlmMFFYdy0yNHFISDl3ZVE?oc=5",
+          "publisher": "FOX Sports",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong Joins 30-30 Club With Walk-Off Home Run Against White Sox FOX Sports",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong talks All-Star Game | 07/13/2026 | Chicago Cubs",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9RemcxTFBmLVQteFJRejVkZi1xdFFZMlMzelhhbUk2cjBfWTNrTllmazhob0t4U1BCdHo5WFZmeXZTamw0NXQ5NHNzY19SYWtENkpDSnVLYjU5UG0zZlpscFZ1RG42cDB0SnU3dkl2VkxXMDFyeUNuRFlB?oc=5",
+          "publisher": "MLB.com",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong talks All-Star Game | 07/13/2026 | Chicago Cubs MLB.com",
+          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong a National League All-Star for second straight season",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNNmM3N1pJZ3U1a0xrbWFFdkwtbnNLSzIySXEzVkFOWmp5UTI4WVhzM0xxMXV5eUdra1hhRXk3TlRaTFpiSW5ZWm92WkMwZk5NdmtRbkY1SEJjS1M4RHVXTzZHM0c5T3JObVRlekhNSEtxYWx4ZDBlR21Ebkk3WVlHTDNnR2MxajJaNUlSR2pmelFHb2JfV0NwNUs2Um0yb203UWctajBETm85eV9YQzVCa2RDam55REV0REdCUWVlWWxRQ05fMzMzUXZhSUZkYURRdi1MMDY2ZXVIdVNpR252UkVCNUsxZHp5bW9qNNIB9AFBVV95cUxOZVhCWkJWNWxjS1BQbFFiZ0lrN0h5WjdFTngtTGJQMFdHaXdJeUEzV3NnY3FUdlFWdlZweEpucVhudDA2aDdvby1yekdzVDRhUlhWUmg1dzJSVnVjcEFrOWJqVDdKeWZLY0JscDY0bG5DVUc5RUhoTXhlZF9EVDRBZ1BDemRnN19vcHlDUFE0NVFCdk1VSTZ0eEthenBua1JhZ3pxSC1MWEV4enZSTklONDVab1BGc0h1ZmF2eXlSM0taRlRSRHhFd3B4T0h4bWF0OWZ2aWxZQ19RYkhvcWNHaHpwMjdVdUoyRlBHZE90VHZ2OEow?oc=5",
+          "publisher": "NBC 5 Chicago",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong a National League All-Star for second straight season NBC 5 Chicago",
+          "published": "Sun, 05 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong nearly ejected in Cubs game, held back by coaches",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRXh2MnFZWU1VelpEMUpBTE00Zno2SndmWEtNOWY1bV9GeDdDU0xwTUgwdUFIclVrM1MyeXB5dG1vZXRndjhkbllKRnNPdW40N3BFT29SWTJ3b3ZuUkphMm1MXy1hNTIyT2NnYzRRM2Z0V3VsT2pnQVpiSFBqUWUtWTJxNjVNZw?oc=5",
+          "publisher": "The Big Lead",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong nearly ejected in Cubs game, held back by coaches The Big Lead",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong: One of the Most Valuable Players in MLB",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBqRVVPb0RDRTgycU5WZndIeWdXR2hicmFYYmJVSkdWLXVnd1lnLUt4NVZLMkczS1ZrMFRpTENvYnJPcHNOMlNHQ0Fia0RWc3N5NDN0TmpTSDRtNXVGREt0cTBGSTJyQjJITlZLQUN5RF93aGdmWXJ1SlhORHAxZw?oc=5",
+          "publisher": "bleachernation.com",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong: One of the Most Valuable Players in MLB bleachernation.com",
+          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Pete Crow-Armstrong Strong NL MVP Favorite Kalshi Over Ohtani",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdmJXeC1zYUxmVHptbHNkTmNUNEZHc1N5UDRYWVlnUDdaMUtjcEJiU00zV2Z5VGdla1VhZkx0RUVDT2NEOUxNYUhGX0N3eEg2V0w2RnhJWklfbkdlcDBJaTlnZENtUWdWUkJPd243U05TelMwcWo4dDdwSjd5ck1pc19JQUFKdU1Yck1CUDRRZkZpdUNhdnI0Yk9vc1dIdnF5elZBWHp0NEkxNG5Hc3YweFRn?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong Strong NL MVP Favorite Kalshi Over Ohtani Sports Illustrated",
+          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Cardinals 3, Cubs 2: Pete Crow-Armstrong homers in the 10th, but…",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPT0lhXzZXbmxxTnJCeFVQczBROVpRWE41djFFNHJWSDRhdDBNX0ZMRkVJVnJDeTBjVGk1a25kY18xUHZwc0IxNW5aS3M3WnZjbE1adUJqMFFHN0NkLXVLcFdWN2E4cnNJVzBwaXlwYzRjN082Z3RDblBkLW1wVUo2OEtVY01pTkJ6aG9MMFJfYlZsSU9zSVJoWjR1QWxtSTFsXzE4VDZHbnhObGJzSWtaUmNNd1FOOGM?oc=5",
+          "publisher": "Bleed Cubbie Blue",
+          "kind": "article",
+          "snippet": "Cardinals 3, Cubs 2: Pete Crow-Armstrong homers in the 10th, but… Bleed Cubbie Blue",
+          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Crow-Armstrong homers twice, Imanaga shines as Cubs beat Braves 8-4",
+          "url": "https://sports.yahoo.com/articles/crow-armstrong-homers-twice-imanaga-051142028.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Pete Crow-Armstrong strengthened his MVP resume with another two-homer performance.",
+          "published": "Thu, 17 Sep 2026 05:11:42 +0000"
+        }
+      ]
+    },
+    {
       "id": "dodgers-yoshinobu-yamamoto-teoscar-hern-ndez-shohei-ohtani-813a7fba",
       "slug": "dodgers-yoshinobu-yamamoto-teoscar-hern-ndez-shohei-ohtani-813a7fba",
       "sport": "baseball",
@@ -2014,170 +2186,6 @@
           "kind": "article",
           "snippet": "Ohtani (knee, biceps) placed on injured list; top prospect De Paula called up MLB.com",
           "published": "Fri, 11 Sep 2026 22:12:46 GMT"
-        }
-      ]
-    },
-    {
-      "id": "cubs-7-braves-3-pete-crow-armstrong-joins-04de75b9",
-      "slug": "cubs-7-braves-3-pete-crow-armstrong-joins-04de75b9",
-      "sport": "baseball",
-      "headline": "If Pete Crow-Armstrong gets to 40/40 against the Braves, the Cubs should stop the game for a ceremony. Here’s why.",
-      "blurb": "Pete Crow-Armstrong strengthened his MVP resume with another two-homer performance.",
-      "summary": "Pete Crow-Armstrong strengthened his MVP resume with another two-homer performance. News from around baseball as the regular season winds down. The Cubs center fielder had yet another big game. Aggregated from NBC Sports, SB Nation, RotoWire MLB, FOX Sports, ESPN and 6 more.",
-      "category": "wire",
-      "published": "2026-07-05T07:00:00Z",
-      "updated": "2026-09-17T05:11:42Z",
-      "players": [
-        {
-          "key": "pete crow-armstrong",
-          "name": "Pete Crow-Armstrong",
-          "slug": "pete-crow-armstrong",
-          "pos": "OF",
-          "team": "CHC"
-        },
-        {
-          "key": "julio rodriguez",
-          "name": "Julio Rodríguez",
-          "slug": "julio-rodr-guez",
-          "pos": "OF",
-          "team": "SEA"
-        },
-        {
-          "key": "andres munoz",
-          "name": "Andrés Muñoz",
-          "slug": "andr-s-mu-oz",
-          "pos": "RP",
-          "team": "SEA"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Mariners News: Julio Rodriguez, Andrés Muñoz, and Pete Crow-Armstrong",
-          "url": "https://sports.yahoo.com/articles/mariners-news-julio-rodriguez-andr-140000679.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "News from around baseball as the regular season winds down.",
-          "published": "Tue, 15 Sep 2026 14:00:00 +0000"
-        },
-        {
-          "title": "Cubs 7, Braves 3: Pete Crow-Armstrong joins Billy Williams in Cubs history",
-          "url": "https://sports.yahoo.com/articles/cubs-7-braves-3-pete-130000503.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Cubs center fielder had yet another big game.",
-          "published": "Tue, 15 Sep 2026 13:00:00 +0000"
-        },
-        {
-          "title": "If Pete Crow-Armstrong gets to 40/40 against the Braves, the Cubs should stop the game for a ceremony. Here’s why.",
-          "url": "https://sports.yahoo.com/articles/pete-crow-armstrong-gets-40-170000671.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "It would be payback. Petty payback, admittedly.",
-          "published": "Tue, 15 Sep 2026 17:00:00 +0000"
-        },
-        {
-          "title": "Pete Crow-Armstrong: Huge performance against Atlanta",
-          "url": "https://www.rotowire.com//baseball/player/pete-crow-armstrong-16684",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Crow-Armstrong went 3-for-4 with a triple, two home runs, three RBI and an additional run scored during Wednesday's 8-4 win over Atlanta. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 16 Sep 2026 7:27:00 PM PDT"
-        },
-        {
-          "title": "Pete Crow-Armstrong Joins 35/35 Club, And The Much Rarer 40/40 Is In Reach",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNN1ZNRDdWSGJkLWhDeXdURU02V1BhNkJILTdQV1hjQXdESmdfaWJGVXlsNWRyazV0WG9zckdHQk5RMVFWWWV2NnlDNk95LWx5QkNiYkcwUnBDQV9FZHRETUF2dFQtRTVpWGNzLWxxLWNRakxfVEZ5ZWpENVU1bVdTTng2UmN3Q2hCYWNHY0wwT3QxUGFiZjZqatIBmAFBVV95cUxNTXdZM0NtVEJkYzIzVkxCcWp3V3RPemRabkRiMUk4ZGxjQ2tjOFg0bjZmUXBmNnFSd2tZMkFCYXVWU1Y4OEhlaVdvWE1YM3lCV0pPRXk5YlhtZUpHVlREMDcwbGgzTmI2eHpBcTdfUmRCN1hXcElHYWN2OGZCUjRjZk55MUIzR3d5cC1MSzcxaFlpcUxFTm1oNg?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong Joins 35/35 Club, And The Much Rarer 40/40 Is In Reach FOX Sports",
-          "published": "Tue, 08 Sep 2026 15:49:31 GMT"
-        },
-        {
-          "title": "Pete Crow-Armstrong bolsters MVP case with 1st career 3-HR game",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNLXZWNHlsLV9HTF95YTZYcXJYY0pTUUVmU1VfYjRGdkVIY3ROcWR5Q3RzRjljVnBZcjVXQUFHQ1ZtNkJWaGZPTTRyXy1OTlppZFNfSDJLd1o3c1o5djhxa0RRMDZVX0ZxNU84WXZ4SWlwY0dzbWszWjlGaHNfSDBIYmk2dU5SSTA4eENXeXBURWR3eEktQW1MYi1SVnB1QmRFcU1j?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong bolsters MVP case with 1st career 3-HR game ESPN",
-          "published": "Sat, 29 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Chicago Cubs news - Pete Crow-Armstrong",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQc1E5bDkzMW9QQm5keUdrVzhzTXN4Zl9TYlJCaXNWRjRGM01nem5MUnNWbV8zUlRXbEtiV1VUeG1KLTVkUDZfblhhVVFNT3g2ZjFRaXl4RW1JSlNuYmQyc1Q0SDYtZHpBNllsYXh6Y2ZULVB6Rm44dHRjRjBIbS1nZmQ3d044R3pYTy1teVVWR3FJUXJKcFNKQkln?oc=5",
-          "publisher": "Bleed Cubbie Blue",
-          "kind": "article",
-          "snippet": "Chicago Cubs news - Pete Crow-Armstrong Bleed Cubbie Blue",
-          "published": "Thu, 16 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "How Cubs Star Pete Crow-Armstrong Transformed Into An MVP Frontrunner",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORlJNTlJjbHlzQ0s0bkwzZDluSmVmZzZJWC16UWkyV0VWMGtaYnI3WTUzd1VRR2cxNFFwSW13TE95NmtyM0JtYy1iT081REsybzVBSnNvUFlGWTFnZTU5QmpXTXkxdUxEdHpSMHgzWmtNOUdNRUtYb0xRTjZ0Vl9VQm5uX1dmNk9qSjN2VS1PNTlJZFlLM1dkNXRFSjdBYXRs0gGgAUFVX3lxTFBRUXBVVkcwT1E2djFiQ1ZraTdaandoNlVOTFkySUxPUGlsWDZXTVE0eUFiaHZRazVVeTNfblYxbWdsMzRjNHNBcWhVMzJZZGpydHhpTXZ5a3pXRGZidFpwcHhxaHpNTTMyM0d6dXV4MVdoMHR5bVRYb29OcUhPU2Q0S25kWHZvWXNabU41dEIzWFhMVGxmUU9BZ1RyZUFPTXU?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "How Cubs Star Pete Crow-Armstrong Transformed Into An MVP Frontrunner FOX Sports",
-          "published": "Tue, 01 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pete Crow-Armstrong Joins 30-30 Club With Walk-Off Home Run Against White Sox",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTnlnUG9lUndoVXliVVhCSnJCRUFaSzB1am04U0pIRWRiWlNUWDRaaGsybHZSSkhwWlVQVUJwVzl6UDI0MEVld3V3TXpRVlo0bVZHNzEyTlFRdXdYWndCMVlVbFcyaC1WWjAyNFpmZElVV1IyeU9oZGdMb2tYdzRfTklsb3hFMFhJZTVhREVsQkFVWjNKX0ludkVPZzRNSFE0dktSNlkzX1dPQjhPbVVJ0gGvAUFVX3lxTFBob2dRRnlpUWxVMl9wNXhuUVUwU2c2ajVjcjBwX0VKN1VZaEhaS29DeUJ5WmhMS1J3eHlYd0lZNGRHU0RuWFNZQjd0X0xsUUFwSVhjaF9xU0RHZUlfbk9pWHBLZ0JlNGN4MWE5Z3lrV0ZjUDlJeTYybkwxNk5ES1pDd25Ld05GWloybmhlc1V6Zm4xQkhhaTQ5dFB0STJwejlmMFFYdy0yNHFISDl3ZVE?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong Joins 30-30 Club With Walk-Off Home Run Against White Sox FOX Sports",
-          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pete Crow-Armstrong talks All-Star Game | 07/13/2026 | Chicago Cubs",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9RemcxTFBmLVQteFJRejVkZi1xdFFZMlMzelhhbUk2cjBfWTNrTllmazhob0t4U1BCdHo5WFZmeXZTamw0NXQ5NHNzY19SYWtENkpDSnVLYjU5UG0zZlpscFZ1RG42cDB0SnU3dkl2VkxXMDFyeUNuRFlB?oc=5",
-          "publisher": "MLB.com",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong talks All-Star Game | 07/13/2026 | Chicago Cubs MLB.com",
-          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pete Crow-Armstrong a National League All-Star for second straight season",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNNmM3N1pJZ3U1a0xrbWFFdkwtbnNLSzIySXEzVkFOWmp5UTI4WVhzM0xxMXV5eUdra1hhRXk3TlRaTFpiSW5ZWm92WkMwZk5NdmtRbkY1SEJjS1M4RHVXTzZHM0c5T3JObVRlekhNSEtxYWx4ZDBlR21Ebkk3WVlHTDNnR2MxajJaNUlSR2pmelFHb2JfV0NwNUs2Um0yb203UWctajBETm85eV9YQzVCa2RDam55REV0REdCUWVlWWxRQ05fMzMzUXZhSUZkYURRdi1MMDY2ZXVIdVNpR252UkVCNUsxZHp5bW9qNNIB9AFBVV95cUxOZVhCWkJWNWxjS1BQbFFiZ0lrN0h5WjdFTngtTGJQMFdHaXdJeUEzV3NnY3FUdlFWdlZweEpucVhudDA2aDdvby1yekdzVDRhUlhWUmg1dzJSVnVjcEFrOWJqVDdKeWZLY0JscDY0bG5DVUc5RUhoTXhlZF9EVDRBZ1BDemRnN19vcHlDUFE0NVFCdk1VSTZ0eEthenBua1JhZ3pxSC1MWEV4enZSTklONDVab1BGc0h1ZmF2eXlSM0taRlRSRHhFd3B4T0h4bWF0OWZ2aWxZQ19RYkhvcWNHaHpwMjdVdUoyRlBHZE90VHZ2OEow?oc=5",
-          "publisher": "NBC 5 Chicago",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong a National League All-Star for second straight season NBC 5 Chicago",
-          "published": "Sun, 05 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pete Crow-Armstrong nearly ejected in Cubs game, held back by coaches",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRXh2MnFZWU1VelpEMUpBTE00Zno2SndmWEtNOWY1bV9GeDdDU0xwTUgwdUFIclVrM1MyeXB5dG1vZXRndjhkbllKRnNPdW40N3BFT29SWTJ3b3ZuUkphMm1MXy1hNTIyT2NnYzRRM2Z0V3VsT2pnQVpiSFBqUWUtWTJxNjVNZw?oc=5",
-          "publisher": "The Big Lead",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong nearly ejected in Cubs game, held back by coaches The Big Lead",
-          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pete Crow-Armstrong: One of the Most Valuable Players in MLB",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBqRVVPb0RDRTgycU5WZndIeWdXR2hicmFYYmJVSkdWLXVnd1lnLUt4NVZLMkczS1ZrMFRpTENvYnJPcHNOMlNHQ0Fia0RWc3N5NDN0TmpTSDRtNXVGREt0cTBGSTJyQjJITlZLQUN5RF93aGdmWXJ1SlhORHAxZw?oc=5",
-          "publisher": "bleachernation.com",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong: One of the Most Valuable Players in MLB bleachernation.com",
-          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Pete Crow-Armstrong Strong NL MVP Favorite Kalshi Over Ohtani",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdmJXeC1zYUxmVHptbHNkTmNUNEZHc1N5UDRYWVlnUDdaMUtjcEJiU00zV2Z5VGdla1VhZkx0RUVDT2NEOUxNYUhGX0N3eEg2V0w2RnhJWklfbkdlcDBJaTlnZENtUWdWUkJPd243U05TelMwcWo4dDdwSjd5ck1pc19JQUFKdU1Yck1CUDRRZkZpdUNhdnI0Yk9vc1dIdnF5elZBWHp0NEkxNG5Hc3YweFRn?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong Strong NL MVP Favorite Kalshi Over Ohtani Sports Illustrated",
-          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Cardinals 3, Cubs 2: Pete Crow-Armstrong homers in the 10th, but…",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPT0lhXzZXbmxxTnJCeFVQczBROVpRWE41djFFNHJWSDRhdDBNX0ZMRkVJVnJDeTBjVGk1a25kY18xUHZwc0IxNW5aS3M3WnZjbE1adUJqMFFHN0NkLXVLcFdWN2E4cnNJVzBwaXlwYzRjN082Z3RDblBkLW1wVUo2OEtVY01pTkJ6aG9MMFJfYlZsSU9zSVJoWjR1QWxtSTFsXzE4VDZHbnhObGJzSWtaUmNNd1FOOGM?oc=5",
-          "publisher": "Bleed Cubbie Blue",
-          "kind": "article",
-          "snippet": "Cardinals 3, Cubs 2: Pete Crow-Armstrong homers in the 10th, but… Bleed Cubbie Blue",
-          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Crow-Armstrong homers twice, Imanaga shines as Cubs beat Braves 8-4",
-          "url": "https://sports.yahoo.com/articles/crow-armstrong-homers-twice-imanaga-051142028.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Pete Crow-Armstrong strengthened his MVP resume with another two-homer performance.",
-          "published": "Thu, 17 Sep 2026 05:11:42 +0000"
         }
       ]
     },
@@ -4832,8 +4840,8 @@
       "slug": "red-sox-reportedly-optimistic-garrett-crochet-ready-playoff-9ab7dc95",
       "sport": "baseball",
       "headline": "Boston Red Sox Announce Roman Anthony, Garrett Crochet Update Before White Sox Series",
-      "blurb": "Boston Red Sox Announce Garrett Crochet, Garrett Whitlock Updates Before Giants Game heavy.com",
-      "summary": "Boston Red Sox Announce Garrett Crochet, Garrett Whitlock Updates Before Giants Game heavy.com Red Sox’s Garrett Crochet Announces Injury Update Before Phillies Game sports.yahoo.com Red Sox's Projected Playoff Pitching Staff When Garrett Crochet Returns Sports Illustrated Aggregated from heavy.com, sports.yahoo.com, Sports Illustrated, NESN, bolavip.com and 5 more.",
+      "blurb": "Red Sox Garrett Crochet Sparks New Timeline Questions Before Diamondbacks Game heavy.com",
+      "summary": "Red Sox Garrett Crochet Sparks New Timeline Questions Before Diamondbacks Game heavy.com Red Sox Ace Garrett Crochet Gives Concerning Injury Update heavy.com Red Sox's Projected Playoff Pitching Staff When Garrett Crochet Returns Sports Illustrated Aggregated from heavy.com, Sports Illustrated, sports.yahoo.com, NESN, bolavip.com and 5 more.",
       "category": "injury",
       "published": "2026-05-13T07:00:00Z",
       "updated": "2026-09-15T21:47:00Z",
@@ -5029,6 +5037,22 @@
           "kind": "article",
           "snippet": "Red Sox’s Garrett Crochet Announces Injury Update Before Phillies Game sports.yahoo.com",
           "published": "Wed, 13 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Red Sox Garrett Crochet Sparks New Timeline Questions Before Diamondbacks Game",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSDFFYTcwWF9na2V2UWVwSGdXWUFNb01SSmMxcnI0UE9IV0tVMEgxMlpqS0diTERFUjVyQk9YUzgzbTg5Q2N5VV83VzUtdFVKN1J6SlRjcDR1NGh5Q1NvUlhlWXNGZTJGZWFsVTAwMXdhSjY1WTgyT2hKSEFJRjI0MFlCSEliX1pOUkRvTw?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Red Sox Garrett Crochet Sparks New Timeline Questions Before Diamondbacks Game heavy.com",
+          "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Red Sox Ace Garrett Crochet Gives Concerning Injury Update",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQRk5uUk5neTM4N2gySU1VcnFRU1Z4bXJKdmdvbE1ZYVIwWEczcVBVNlVUSTFldlpmc1dhcllaWU5VdHY3X21pZU9SWk1ScG85cnlTb0U1WF9oSWVSYy0xSU56ek00STdwV3M2ZC0wX3pNNlIyU2V3emY5RmR2UmQtVk9YZXViOHc?oc=5",
+          "publisher": "heavy.com",
+          "kind": "article",
+          "snippet": "Red Sox Ace Garrett Crochet Gives Concerning Injury Update heavy.com",
+          "published": "Wed, 22 Jul 2026 07:00:00 GMT"
         }
       ]
     },
@@ -5129,6 +5153,52 @@
           "kind": "x",
           "snippet": "Dansby Swanson - SS/CHC - IL Return Watch - Oblique. Per @JesseRogersESPN: \"Craig Counsell reiterated the timeline for Dansby Swanson (oblique) today: Short rehab assignment next week then active next weekend. He's symptom free.\" @Lieutenant x.com",
           "published": "Fri, 11 Sep 2026 18:14:51 GMT"
+        }
+      ]
+    },
+    {
+      "id": "freddie-freeman-back-action-tuesday-ca9dd720",
+      "slug": "freddie-freeman-back-action-tuesday-ca9dd720",
+      "sport": "baseball",
+      "headline": "Freddie Freeman: Back in action Tuesday",
+      "blurb": "The Dodgers’ gambit regarding Freddie Freeman in the closing days of the 2026 regular season",
+      "summary": "The Dodgers’ gambit regarding Freddie Freeman in the closing days of the 2026 regular season Freeman (knee) is starting at first base and batting second Tuesday against the Reds, David Vassegh of AM 570 LA Sports reports. Visit RotoWire.com for more analysis on this update. Aggregated from SB Nation, RotoWire MLB, YouTube.",
+      "category": "injury",
+      "published": "2026-09-15T19:24:30Z",
+      "updated": "2026-09-16T19:02:00Z",
+      "players": [
+        {
+          "key": "freddie freeman",
+          "name": "Freddie Freeman",
+          "slug": "freddie-freeman",
+          "pos": "1B",
+          "team": "LAD"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Freddie Freeman: Back in action Tuesday",
+          "url": "https://www.rotowire.com//baseball/player/freddie-freeman-9902",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Freeman (knee) is starting at first base and batting second Tuesday against the Reds, David Vassegh of AM 570 LA Sports reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Tue, 15 Sep 2026 12:11:00 PM PDT"
+        },
+        {
+          "title": "Dodgers trying to clinch NL West amid injury concern with Freddie Freeman, Ohtani, Edgardo Henriquez",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9sQk1HbU5YemtCQzRaSU9VWEROazdtbkE0elFHeEhZbWJzMG51OTgzMGUybVppak9Hc1N0aVNLeDJic19ZT2FHX0FaS1VsaDEydWFSVTRR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Dodgers trying to clinch NL West amid injury concern with Freddie Freeman, Ohtani, Edgardo Henriquez YouTube",
+          "published": "Wed, 16 Sep 2026 02:22:02 GMT"
+        },
+        {
+          "title": "The Freddie Freeman gambit",
+          "url": "https://sports.yahoo.com/articles/freddie-freeman-gambit-190200850.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Dodgers’ gambit regarding Freddie Freeman in the closing days of the 2026 regular season",
+          "published": "Wed, 16 Sep 2026 19:02:00 +0000"
         }
       ]
     },
@@ -5564,52 +5634,6 @@
       ]
     },
     {
-      "id": "freddie-freeman-back-action-tuesday-ca9dd720",
-      "slug": "freddie-freeman-back-action-tuesday-ca9dd720",
-      "sport": "baseball",
-      "headline": "Freddie Freeman: Back in action Tuesday",
-      "blurb": "The Dodgers’ gambit regarding Freddie Freeman in the closing days of the 2026 regular season",
-      "summary": "The Dodgers’ gambit regarding Freddie Freeman in the closing days of the 2026 regular season Freeman (knee) is starting at first base and batting second Tuesday against the Reds, David Vassegh of AM 570 LA Sports reports. Visit RotoWire.com for more analysis on this update. Aggregated from SB Nation, RotoWire MLB, YouTube.",
-      "category": "injury",
-      "published": "2026-09-15T19:24:30Z",
-      "updated": "2026-09-16T19:02:00Z",
-      "players": [
-        {
-          "key": "freddie freeman",
-          "name": "Freddie Freeman",
-          "slug": "freddie-freeman",
-          "pos": "1B",
-          "team": "LAD"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Freddie Freeman: Back in action Tuesday",
-          "url": "https://www.rotowire.com//baseball/player/freddie-freeman-9902",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Freeman (knee) is starting at first base and batting second Tuesday against the Reds, David Vassegh of AM 570 LA Sports reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Tue, 15 Sep 2026 12:11:00 PM PDT"
-        },
-        {
-          "title": "Dodgers trying to clinch NL West amid injury concern with Freddie Freeman, Ohtani, Edgardo Henriquez",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9sQk1HbU5YemtCQzRaSU9VWEROazdtbkE0elFHeEhZbWJzMG51OTgzMGUybVppak9Hc1N0aVNLeDJic19ZT2FHX0FaS1VsaDEydWFSVTRR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Dodgers trying to clinch NL West amid injury concern with Freddie Freeman, Ohtani, Edgardo Henriquez YouTube",
-          "published": "Wed, 16 Sep 2026 02:22:02 GMT"
-        },
-        {
-          "title": "The Freddie Freeman gambit",
-          "url": "https://sports.yahoo.com/articles/freddie-freeman-gambit-190200850.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Dodgers’ gambit regarding Freddie Freeman in the closing days of the 2026 regular season",
-          "published": "Wed, 16 Sep 2026 19:02:00 +0000"
-        }
-      ]
-    },
-    {
       "id": "phillies-kyle-schwarber-andrew-painter-bryan-rincon-12b28624",
       "slug": "phillies-kyle-schwarber-andrew-painter-bryan-rincon-12b28624",
       "sport": "baseball",
@@ -5643,50 +5667,6 @@
           "kind": "article",
           "snippet": "Ever so slightly walking forward",
           "published": "Thu, 17 Sep 2026 11:00:00 +0000"
-        }
-      ]
-    },
-    {
-      "id": "warning-yoshinobu-yamamoto-october-ready-shohei-ohtani-freddie-25c9f5c3",
-      "slug": "warning-yoshinobu-yamamoto-october-ready-shohei-ohtani-freddie-25c9f5c3",
-      "sport": "baseball",
-      "headline": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP",
-      "blurb": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP YouTube",
-      "summary": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP YouTube Board reading of YouTube.",
-      "category": "wire",
-      "published": "2026-09-16T15:00:16Z",
-      "updated": "2026-09-16T15:00:16Z",
-      "players": [
-        {
-          "key": "yoshinobu yamamoto",
-          "name": "Yoshinobu Yamamoto",
-          "slug": "yoshinobu-yamamoto",
-          "pos": "SP",
-          "team": "LAD"
-        },
-        {
-          "key": "freddie freeman",
-          "name": "Freddie Freeman",
-          "slug": "freddie-freeman",
-          "pos": "1B",
-          "team": "LAD"
-        },
-        {
-          "key": "shohei ohtani",
-          "name": "Shohei Ohtani",
-          "slug": "shohei-ohtani",
-          "pos": "DH/SP",
-          "team": "LAD"
-        }
-      ],
-      "sources": [
-        {
-          "title": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5BcHFBME80MHZ2dUhQMWV3eVVxemkwSjctZldLd0U0dlJhVjZoM2tORlltQngyeTBqSG1xVXI2dEl5Z29NeW9qUElBTTdGQlpNZjdjbnBB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP YouTube",
-          "published": "Wed, 16 Sep 2026 15:00:16 GMT"
         }
       ]
     },
@@ -5747,6 +5727,50 @@
           "kind": "article",
           "snippet": "Manager Skip Schumaker said after Wednesday's game that Gore is dealing with spasms in his back/shoulder, Shawn McFarland of The Dallas Morning News reports. Visit RotoWire.com for more analysis on this update.",
           "published": "Wed, 16 Sep 2026 8:26:00 PM PDT"
+        }
+      ]
+    },
+    {
+      "id": "warning-yoshinobu-yamamoto-october-ready-shohei-ohtani-freddie-25c9f5c3",
+      "slug": "warning-yoshinobu-yamamoto-october-ready-shohei-ohtani-freddie-25c9f5c3",
+      "sport": "baseball",
+      "headline": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP",
+      "blurb": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP YouTube",
+      "summary": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP YouTube Board reading of YouTube.",
+      "category": "wire",
+      "published": "2026-09-16T15:00:16Z",
+      "updated": "2026-09-16T15:00:16Z",
+      "players": [
+        {
+          "key": "yoshinobu yamamoto",
+          "name": "Yoshinobu Yamamoto",
+          "slug": "yoshinobu-yamamoto",
+          "pos": "SP",
+          "team": "LAD"
+        },
+        {
+          "key": "freddie freeman",
+          "name": "Freddie Freeman",
+          "slug": "freddie-freeman",
+          "pos": "1B",
+          "team": "LAD"
+        },
+        {
+          "key": "shohei ohtani",
+          "name": "Shohei Ohtani",
+          "slug": "shohei-ohtani",
+          "pos": "DH/SP",
+          "team": "LAD"
+        }
+      ],
+      "sources": [
+        {
+          "title": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5BcHFBME80MHZ2dUhQMWV3eVVxemkwSjctZldLd0U0dlJhVjZoM2tORlltQngyeTBqSG1xVXI2dEl5Z29NeW9qUElBTTdGQlpNZjdjbnBB?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "WARNING: Yoshinobu Yamamoto Is OCTOBER READY | Shohei Ohtani and Freddie Freeman TRENDING UP YouTube",
+          "published": "Wed, 16 Sep 2026 15:00:16 GMT"
         }
       ]
     },
@@ -5903,6 +5927,66 @@
       ]
     },
     {
+      "id": "connelly-early-tracking-toward-sept-26-return-f4e03e67",
+      "slug": "connelly-early-tracking-toward-sept-26-return-f4e03e67",
+      "sport": "baseball",
+      "headline": "Connelly Early: Tracking toward Sept. 26 return",
+      "blurb": "Nationals president of baseball operations Paul Toboni said Wednesday that Early (elbow) is tentatively scheduled to make his team debut Sept.",
+      "summary": "Connelly Early: Nationals president of baseball operations Paul Toboni said Wednesday that Early (elbow) is tentatively scheduled to make his team debut Sept. 26 against the Mets, Spencer Nusbaum of The Athletic reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "category": "coach",
+      "published": "2026-09-17T13:27:31Z",
+      "updated": "2026-09-17T13:27:31Z",
+      "players": [
+        {
+          "key": "connelly early",
+          "name": "Connelly Early",
+          "slug": "connelly-early",
+          "pos": "SP",
+          "team": "BOS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Connelly Early: Tracking toward Sept. 26 return",
+          "url": "https://www.rotowire.com//baseball/player/connelly-early-19049",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Nationals president of baseball operations Paul Toboni said Wednesday that Early (elbow) is tentatively scheduled to make his team debut Sept. 26 against the Mets, Spencer Nusbaum of The Athletic reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Thu, 17 Sep 2026 6:23:00 AM PDT"
+        }
+      ]
+    },
+    {
+      "id": "blake-snell-lifted-due-groin-injury-62e5ecbd",
+      "slug": "blake-snell-lifted-due-groin-injury-62e5ecbd",
+      "sport": "baseball",
+      "headline": "Blake Snell: Lifted due to groin injury",
+      "blurb": "Snell was removed from the first inning of Wednesday's start against the Reds due to left groin tightness.",
+      "summary": "Blake Snell: Snell was removed from the first inning of Wednesday's start against the Reds due to left groin tightness. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "category": "injury",
+      "published": "2026-09-17T00:32:53Z",
+      "updated": "2026-09-17T00:32:53Z",
+      "players": [
+        {
+          "key": "blake snell",
+          "name": "Blake Snell",
+          "slug": "blake-snell",
+          "pos": "SP",
+          "team": "LAD"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Blake Snell: Lifted due to groin injury",
+          "url": "https://www.rotowire.com//baseball/player/blake-snell-12189",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Snell was removed from the first inning of Wednesday's start against the Reds due to left groin tightness. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 16 Sep 2026 4:26:00 PM PDT"
+        }
+      ]
+    },
+    {
       "id": "ben-rice-finally-heating-up-perfect-time-yankees-e5a55793",
       "slug": "ben-rice-finally-heating-up-perfect-time-yankees-e5a55793",
       "sport": "baseball",
@@ -6008,36 +6092,6 @@
           "kind": "article",
           "snippet": "Ben Rice denies having any extra pressure to carry Yankees’ offense with Aaron Judge out New York Post",
           "published": "Sat, 06 Jun 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "blake-snell-lifted-due-groin-injury-62e5ecbd",
-      "slug": "blake-snell-lifted-due-groin-injury-62e5ecbd",
-      "sport": "baseball",
-      "headline": "Blake Snell: Lifted due to groin injury",
-      "blurb": "Snell was removed from the first inning of Wednesday's start against the Reds due to left groin tightness.",
-      "summary": "Blake Snell: Snell was removed from the first inning of Wednesday's start against the Reds due to left groin tightness. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
-      "category": "injury",
-      "published": "2026-09-17T00:32:53Z",
-      "updated": "2026-09-17T00:32:53Z",
-      "players": [
-        {
-          "key": "blake snell",
-          "name": "Blake Snell",
-          "slug": "blake-snell",
-          "pos": "SP",
-          "team": "LAD"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Blake Snell: Lifted due to groin injury",
-          "url": "https://www.rotowire.com//baseball/player/blake-snell-12189",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Snell was removed from the first inning of Wednesday's start against the Reds due to left groin tightness. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 16 Sep 2026 4:26:00 PM PDT"
         }
       ]
     },
@@ -6185,44 +6239,6 @@
       ]
     },
     {
-      "id": "kaelen-culpepper-returning-minnesota-lineup-12c18d77",
-      "slug": "kaelen-culpepper-returning-minnesota-lineup-12c18d77",
-      "sport": "baseball",
-      "headline": "Kaelen Culpepper: Returning to Minnesota lineup",
-      "blurb": "Kaelen Culpepper is headed to the IL with a mild left hamstring strain.",
-      "summary": "Kaelen Culpepper is headed to the IL with a mild left hamstring strain. But, he might be able to return for final two games. Culpepper (shoulder) will start at shortstop and bat second in Tuesday's contest versus the Yankees. Aggregated from x.com, RotoWire MLB.",
-      "category": "injury",
-      "published": "2026-09-15T20:25:26Z",
-      "updated": "2026-09-16T16:26:42Z",
-      "players": [
-        {
-          "key": "kaelen culpepper",
-          "name": "Kaelen Culpepper",
-          "slug": "kaelen-culpepper",
-          "pos": "SS",
-          "team": "MIN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Kaelen Culpepper: Returning to Minnesota lineup",
-          "url": "https://www.rotowire.com//baseball/player/kaelen-culpepper-19519",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Culpepper (shoulder) will start at shortstop and bat second in Tuesday's contest versus the Yankees. Visit RotoWire.com for more analysis on this update.",
-          "published": "Tue, 15 Sep 2026 12:53:00 PM PDT"
-        },
-        {
-          "title": "Kaelen Culpepper is headed to the IL with a mild left hamstring strain. But, he might be able to return for final two games. #MNTwins",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9nNnZNRGlqNXdpcnVBUV9aclNVV0h3bzQzcDFyeUJxcGR3OF9CQjNydGRMV2ZaMnRRV2Jzb0R4a2JyM2c1Sm5Hb1hjdXNnVnE3aXlXcGQyWFZIdEQtTnhvX3VB?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Kaelen Culpepper is headed to the IL with a mild left hamstring strain. But, he might be able to return for final two games. #MNTwins x.com",
-          "published": "Wed, 16 Sep 2026 15:49:16 GMT"
-        }
-      ]
-    },
-    {
       "id": "dodgers-shockingly-dfa-outfielder-officially-activate-all-star-63e00ec0",
       "slug": "dodgers-shockingly-dfa-outfielder-officially-activate-all-star-63e00ec0",
       "sport": "baseball",
@@ -6257,6 +6273,44 @@
           "kind": "article",
           "snippet": "The Dodgers are finally getting to see one of their under-the-radar trade deadline acquisitions.",
           "published": "Wed, 16 Sep 2026 20:58:37 +0000"
+        }
+      ]
+    },
+    {
+      "id": "kaelen-culpepper-returning-minnesota-lineup-12c18d77",
+      "slug": "kaelen-culpepper-returning-minnesota-lineup-12c18d77",
+      "sport": "baseball",
+      "headline": "Kaelen Culpepper: Returning to Minnesota lineup",
+      "blurb": "Kaelen Culpepper is headed to the IL with a mild left hamstring strain.",
+      "summary": "Kaelen Culpepper is headed to the IL with a mild left hamstring strain. But, he might be able to return for final two games. Culpepper (shoulder) will start at shortstop and bat second in Tuesday's contest versus the Yankees. Aggregated from x.com, RotoWire MLB.",
+      "category": "injury",
+      "published": "2026-09-15T20:25:26Z",
+      "updated": "2026-09-16T16:26:42Z",
+      "players": [
+        {
+          "key": "kaelen culpepper",
+          "name": "Kaelen Culpepper",
+          "slug": "kaelen-culpepper",
+          "pos": "SS",
+          "team": "MIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kaelen Culpepper: Returning to Minnesota lineup",
+          "url": "https://www.rotowire.com//baseball/player/kaelen-culpepper-19519",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Culpepper (shoulder) will start at shortstop and bat second in Tuesday's contest versus the Yankees. Visit RotoWire.com for more analysis on this update.",
+          "published": "Tue, 15 Sep 2026 12:53:00 PM PDT"
+        },
+        {
+          "title": "Kaelen Culpepper is headed to the IL with a mild left hamstring strain. But, he might be able to return for final two games. #MNTwins",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9nNnZNRGlqNXdpcnVBUV9aclNVV0h3bzQzcDFyeUJxcGR3OF9CQjNydGRMV2ZaMnRRV2Jzb0R4a2JyM2c1Sm5Hb1hjdXNnVnE3aXlXcGQyWFZIdEQtTnhvX3VB?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Kaelen Culpepper is headed to the IL with a mild left hamstring strain. But, he might be able to return for final two games. #MNTwins x.com",
+          "published": "Wed, 16 Sep 2026 15:49:16 GMT"
         }
       ]
     },
@@ -6355,6 +6409,44 @@
           "kind": "x",
           "snippet": "Roki Sasaki - SP/LAD - IL Return Watch - Blister. Per @ByJackHarris: \"Roki Sasaki's four-inning/48-pitch live session today went well, per Dave… ∟@ByJackHarris: Roki Sasaki is throwing a live BP in Cincinnati today. @Dodgers x.com",
           "published": "Wed, 16 Sep 2026 21:25:14 GMT"
+        }
+      ]
+    },
+    {
+      "id": "around-empire-postseason-berth-celebrated-job-s-finished-cfd1d614",
+      "slug": "around-empire-postseason-berth-celebrated-job-s-finished-cfd1d614",
+      "sport": "baseball",
+      "headline": "Around the Empire: Postseason berth celebrated, but “Job’s not finished”",
+      "blurb": "Ryan Weathers - SP/NYY - IL Return Watch.",
+      "summary": "Ryan Weathers - SP/NYY - IL Return Watch. Per @GaryHPhillips: \"Yesterday, Ryan Weathers threw his first bullpen since going on the IL. He still hopes to be back before the playoffs, and he's eager to let his stuff \"rip\" out of the #Yankees' bullpen.\" @RyanD x.com Aggregated from x.com, SB Nation.",
+      "category": "injury",
+      "published": "2026-09-16T09:00:00Z",
+      "updated": "2026-09-16T15:09:09Z",
+      "players": [
+        {
+          "key": "ryan weathers",
+          "name": "Ryan Weathers",
+          "slug": "ryan-weathers",
+          "pos": "SP",
+          "team": "NYY"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Around the Empire: Postseason berth celebrated, but “Job’s not finished”",
+          "url": "https://sports.yahoo.com/articles/around-empire-postseason-berth-celebrated-090000914.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The importance of celebrating the small victories; Lombard’s private meeting with Jeter; Ryan Weathers injury update",
+          "published": "Wed, 16 Sep 2026 09:00:00 +0000"
+        },
+        {
+          "title": "Ryan Weathers - SP/NYY - IL Return Watch. Per @GaryHPhillips: \"Yesterday, Ryan Weathers threw his first bullpen since going on the IL. He still hopes to be back before the playoffs, and he's eager to let his stuff \"rip\" out of the #Yankees' bullpen.\" @RyanD",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1YaG9neUJTT1RJM1lrb0RBUmpzSEd4SmhHYkxkcmFWRzg1N3VTeDZaU0c0Yk1LYTNfSlQ5el94Tk9pYTJITW11RmlKSDM4M0wyNUlDQlVId2tFVG90VGk5bWtqRQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Ryan Weathers - SP/NYY - IL Return Watch. Per @GaryHPhillips: \"Yesterday, Ryan Weathers threw his first bullpen since going on the IL. He still hopes to be back before the playoffs, and he's eager to let his stuff \"rip\" out of the #Yankees' bullpen.\" @RyanD x.com",
+          "published": "Wed, 16 Sep 2026 15:09:09 GMT"
         }
       ]
     },
@@ -6509,40 +6601,70 @@
       ]
     },
     {
-      "id": "around-empire-postseason-berth-celebrated-job-s-finished-cfd1d614",
-      "slug": "around-empire-postseason-berth-celebrated-job-s-finished-cfd1d614",
+      "id": "dodgers-made-small-change-tarik-skubal-s-strategy-b309beb1",
+      "slug": "dodgers-made-small-change-tarik-skubal-s-strategy-b309beb1",
       "sport": "baseball",
-      "headline": "Around the Empire: Postseason berth celebrated, but “Job’s not finished”",
-      "blurb": "Ryan Weathers - SP/NYY - IL Return Watch.",
-      "summary": "Ryan Weathers - SP/NYY - IL Return Watch. Per @GaryHPhillips: \"Yesterday, Ryan Weathers threw his first bullpen since going on the IL. He still hopes to be back before the playoffs, and he's eager to let his stuff \"rip\" out of the #Yankees' bullpen.\" @RyanD x.com Aggregated from x.com, SB Nation.",
-      "category": "injury",
-      "published": "2026-09-16T09:00:00Z",
-      "updated": "2026-09-16T15:09:09Z",
+      "headline": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound",
+      "blurb": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound Sports Illustrated",
+      "summary": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound Sports Illustrated Fantasy baseball fallout from Tarik Skubal's trade to the Dodgers ESPN Aggregated from Sports Illustrated, ESPN.",
+      "category": "trade",
+      "published": "2026-08-02T07:00:00Z",
+      "updated": "2026-09-16T18:33:49Z",
       "players": [
         {
-          "key": "ryan weathers",
-          "name": "Ryan Weathers",
-          "slug": "ryan-weathers",
+          "key": "tarik skubal",
+          "name": "Tarik Skubal",
+          "slug": "tarik-skubal",
           "pos": "SP",
-          "team": "NYY"
+          "team": "DET"
         }
       ],
       "sources": [
         {
-          "title": "Around the Empire: Postseason berth celebrated, but “Job’s not finished”",
-          "url": "https://sports.yahoo.com/articles/around-empire-postseason-berth-celebrated-090000914.html",
-          "publisher": "SB Nation",
+          "title": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBrTk5acGhCUlhKWGcyRTNURVZxc1NqeXBnWnZmaFRFcDFJclBkZUdFczdDZkhBQ1owZ0N1Y1dIeFJzUkNWQXJWQnBaMHRDSjFZYVZtdDRTR3hpSW5MaVlPWkxDY1l2ZW9hRGJkVFVjTUdpa0xrcHEyVFU0Zll0ZUU?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "The importance of celebrating the small victories; Lombard’s private meeting with Jeter; Ryan Weathers injury update",
-          "published": "Wed, 16 Sep 2026 09:00:00 +0000"
+          "snippet": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound Sports Illustrated",
+          "published": "Wed, 16 Sep 2026 18:33:49 GMT"
         },
         {
-          "title": "Ryan Weathers - SP/NYY - IL Return Watch. Per @GaryHPhillips: \"Yesterday, Ryan Weathers threw his first bullpen since going on the IL. He still hopes to be back before the playoffs, and he's eager to let his stuff \"rip\" out of the #Yankees' bullpen.\" @RyanD",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1YaG9neUJTT1RJM1lrb0RBUmpzSEd4SmhHYkxkcmFWRzg1N3VTeDZaU0c0Yk1LYTNfSlQ5el94Tk9pYTJITW11RmlKSDM4M0wyNUlDQlVId2tFVG90VGk5bWtqRQ?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "Ryan Weathers - SP/NYY - IL Return Watch. Per @GaryHPhillips: \"Yesterday, Ryan Weathers threw his first bullpen since going on the IL. He still hopes to be back before the playoffs, and he's eager to let his stuff \"rip\" out of the #Yankees' bullpen.\" @RyanD x.com",
-          "published": "Wed, 16 Sep 2026 15:09:09 GMT"
+          "title": "Fantasy baseball fallout from Tarik Skubal's trade to the Dodgers",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNY0JqM255S1NoTjVYNGtjckZPaHV5WXFxVWFzaWxoSGVDMUs4bXZyWWJwSktvTkl2SkNNX3NFYWdyQzNib2tldlhxU196QjZFaUo0bmp0eS1SVjJWbmJ0YUlSOEFFTl9aU012cHdsaEg4R1ZZZkdOQ0NiS2c0dFR0dV9SVFNYck9uSUNsbHRLZEZvUmlFRmVvcGppck9KUml6dGY4TDF3RVA3M1dLZjlRd3JwSHFYMjJTZlN3MEpFcThkaUF4dEFOZlF0ZlprOUFvWmdBcTVUaw?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Fantasy baseball fallout from Tarik Skubal's trade to the Dodgers ESPN",
+          "published": "Sun, 02 Aug 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "colson-montgomery-leaves-bruised-wrist-cbc14480",
+      "slug": "colson-montgomery-leaves-bruised-wrist-cbc14480",
+      "sport": "baseball",
+      "headline": "Colson Montgomery: Leaves game with bruised wrist",
+      "blurb": "Montgomery was removed from Wednesday's game versus the Guardians in the fifth inning with a left wrist contusion.",
+      "summary": "Colson Montgomery: Montgomery was removed from Wednesday's game versus the Guardians in the fifth inning with a left wrist contusion. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
+      "category": "injury",
+      "published": "2026-09-16T19:25:00Z",
+      "updated": "2026-09-16T19:25:00Z",
+      "players": [
+        {
+          "key": "colson montgomery",
+          "name": "Colson Montgomery",
+          "slug": "colson-montgomery",
+          "pos": "SS",
+          "team": "CWS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Colson Montgomery: Leaves game with bruised wrist",
+          "url": "https://www.rotowire.com//baseball/player/colson-montgomery-17323",
+          "publisher": "RotoWire MLB",
+          "kind": "article",
+          "snippet": "Montgomery was removed from Wednesday's game versus the Guardians in the fifth inning with a left wrist contusion. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 16 Sep 2026 11:44:00 AM PDT"
         }
       ]
     },
@@ -6657,104 +6779,6 @@
       ]
     },
     {
-      "id": "dodgers-made-small-change-tarik-skubal-s-strategy-b309beb1",
-      "slug": "dodgers-made-small-change-tarik-skubal-s-strategy-b309beb1",
-      "sport": "baseball",
-      "headline": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound",
-      "blurb": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound Sports Illustrated",
-      "summary": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound Sports Illustrated Fantasy baseball fallout from Tarik Skubal's trade to the Dodgers ESPN Aggregated from Sports Illustrated, ESPN.",
-      "category": "trade",
-      "published": "2026-08-02T07:00:00Z",
-      "updated": "2026-09-16T18:33:49Z",
-      "players": [
-        {
-          "key": "tarik skubal",
-          "name": "Tarik Skubal",
-          "slug": "tarik-skubal",
-          "pos": "SP",
-          "team": "DET"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBrTk5acGhCUlhKWGcyRTNURVZxc1NqeXBnWnZmaFRFcDFJclBkZUdFczdDZkhBQ1owZ0N1Y1dIeFJzUkNWQXJWQnBaMHRDSjFZYVZtdDRTR3hpSW5MaVlPWkxDY1l2ZW9hRGJkVFVjTUdpa0xrcHEyVFU0Zll0ZUU?oc=5",
-          "publisher": "Sports Illustrated",
-          "kind": "article",
-          "snippet": "Dodgers Made a Small Change to Tarik Skubal’s Strategy On the Mound Sports Illustrated",
-          "published": "Wed, 16 Sep 2026 18:33:49 GMT"
-        },
-        {
-          "title": "Fantasy baseball fallout from Tarik Skubal's trade to the Dodgers",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNY0JqM255S1NoTjVYNGtjckZPaHV5WXFxVWFzaWxoSGVDMUs4bXZyWWJwSktvTkl2SkNNX3NFYWdyQzNib2tldlhxU196QjZFaUo0bmp0eS1SVjJWbmJ0YUlSOEFFTl9aU012cHdsaEg4R1ZZZkdOQ0NiS2c0dFR0dV9SVFNYck9uSUNsbHRLZEZvUmlFRmVvcGppck9KUml6dGY4TDF3RVA3M1dLZjlRd3JwSHFYMjJTZlN3MEpFcThkaUF4dEFOZlF0ZlprOUFvWmdBcTVUaw?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Fantasy baseball fallout from Tarik Skubal's trade to the Dodgers ESPN",
-          "published": "Sun, 02 Aug 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "colson-montgomery-leaves-bruised-wrist-cbc14480",
-      "slug": "colson-montgomery-leaves-bruised-wrist-cbc14480",
-      "sport": "baseball",
-      "headline": "Colson Montgomery: Leaves game with bruised wrist",
-      "blurb": "Montgomery was removed from Wednesday's game versus the Guardians in the fifth inning with a left wrist contusion.",
-      "summary": "Colson Montgomery: Montgomery was removed from Wednesday's game versus the Guardians in the fifth inning with a left wrist contusion. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
-      "category": "injury",
-      "published": "2026-09-16T19:25:00Z",
-      "updated": "2026-09-16T19:25:00Z",
-      "players": [
-        {
-          "key": "colson montgomery",
-          "name": "Colson Montgomery",
-          "slug": "colson-montgomery",
-          "pos": "SS",
-          "team": "CWS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Colson Montgomery: Leaves game with bruised wrist",
-          "url": "https://www.rotowire.com//baseball/player/colson-montgomery-17323",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Montgomery was removed from Wednesday's game versus the Guardians in the fifth inning with a left wrist contusion. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 16 Sep 2026 11:44:00 AM PDT"
-        }
-      ]
-    },
-    {
-      "id": "shane-bieber-bullpen-session-pushed-back-22e1e2fb",
-      "slug": "shane-bieber-bullpen-session-pushed-back-22e1e2fb",
-      "sport": "baseball",
-      "headline": "Shane Bieber: Bullpen session pushed back",
-      "blurb": "Bieber's (shoulder) bullpen session has been pushed back again to either Friday or Saturday, Hazel Mae of Sportsnet reports.",
-      "summary": "Shane Bieber: Bieber's (shoulder) bullpen session has been pushed back again to either Friday or Saturday, Hazel Mae of Sportsnet reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
-      "category": "injury",
-      "published": "2026-09-16T17:24:20Z",
-      "updated": "2026-09-16T17:24:20Z",
-      "players": [
-        {
-          "key": "shane bieber",
-          "name": "Shane Bieber",
-          "slug": "shane-bieber",
-          "pos": "SP",
-          "team": "TOR"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Shane Bieber: Bullpen session pushed back",
-          "url": "https://www.rotowire.com//baseball/player/shane-bieber-14383",
-          "publisher": "RotoWire MLB",
-          "kind": "article",
-          "snippet": "Bieber's (shoulder) bullpen session has been pushed back again to either Friday or Saturday, Hazel Mae of Sportsnet reports. Visit RotoWire.com for more analysis on this update.",
-          "published": "Wed, 16 Sep 2026 9:55:00 AM PDT"
-        }
-      ]
-    },
-    {
       "id": "jake-bennett-takes-ball-even-series-angels-a5922771",
       "slug": "jake-bennett-takes-ball-even-series-angels-a5922771",
       "sport": "baseball",
@@ -6785,103 +6809,32 @@
       ]
     },
     {
-      "id": "gamethread-detroit-tigers-toronto-blue-jays-7-07-83499999",
-      "slug": "gamethread-detroit-tigers-toronto-blue-jays-7-07-83499999",
+      "id": "shane-bieber-bullpen-session-pushed-back-22e1e2fb",
+      "slug": "shane-bieber-bullpen-session-pushed-back-22e1e2fb",
       "sport": "baseball",
-      "headline": "Amid deadline uncertainty, Hoffman hopes Blue Jays 'take a leap of faith' on 2026 group",
-      "blurb": "2026 MLB Trade Deadline Buzz, Trades Tracker: Blue Jays Acquire Taillon From Cubs FOX Sports",
-      "summary": "José Soriano and Troy Melton: 2026 MLB Trade Deadline Buzz, Trades Tracker: Blue Jays Acquire Taillon From Cubs FOX Sports Toronto Blue Jays (75-75) Time/Place: 7:07 p.m., Rogers CentreSB Nation Site: Bluebird BanterMedia: Detroit SportsNet, MLB.TV, Tigers Radio NetworkPitching Matchup: RHP Troy Melton (8-4, 2.42 ERA) vs. RHP José Soriano (12-7, 3.48 ERA) Aggregated from FOX Sports, SB Nation, Just Baseball, MLB.com, YouTube and 3 more.",
+      "headline": "Shane Bieber: Bullpen session pushed back",
+      "blurb": "Bieber's (shoulder) bullpen session has been pushed back again to either Friday or Saturday, Hazel Mae of Sportsnet reports.",
+      "summary": "Shane Bieber: Bieber's (shoulder) bullpen session has been pushed back again to either Friday or Saturday, Hazel Mae of Sportsnet reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire MLB.",
       "category": "injury",
-      "published": "2026-07-13T07:00:00Z",
-      "updated": "2026-09-15T12:00:04Z",
+      "published": "2026-09-16T17:24:20Z",
+      "updated": "2026-09-16T17:24:20Z",
       "players": [
         {
-          "key": "jose soriano",
-          "name": "José Soriano",
-          "slug": "jos-soriano",
+          "key": "shane bieber",
+          "name": "Shane Bieber",
+          "slug": "shane-bieber",
           "pos": "SP",
-          "team": "LAA"
-        },
-        {
-          "key": "troy melton",
-          "name": "Troy Melton",
-          "slug": "troy-melton",
-          "pos": "SP",
-          "team": "DET"
+          "team": "TOR"
         }
       ],
       "sources": [
         {
-          "title": "GameThread: Detroit Tigers vs. Toronto Blue Jays, 7:07 p.m.",
-          "url": "https://sports.yahoo.com/articles/gamethread-detroit-tigers-vs-toronto-230000762.html",
-          "publisher": "SB Nation",
+          "title": "Shane Bieber: Bullpen session pushed back",
+          "url": "https://www.rotowire.com//baseball/player/shane-bieber-14383",
+          "publisher": "RotoWire MLB",
           "kind": "article",
-          "snippet": "Detroit Tigers (70-79) vs. Toronto Blue Jays (75-75) Time/Place: 7:07 p.m., Rogers CentreSB Nation Site: Bluebird BanterMedia: Detroit SportsNet, MLB.TV, Tigers Radio NetworkPitching Matchup: RHP Troy Melton (8-4, 2.42 ERA) vs. RHP José Soriano (12-7, 3.48 ERA)",
-          "published": "Mon, 14 Sep 2026 23:00:00 +0000"
-        },
-        {
-          "title": "The Toronto Blue Jays Played the Middle Perfectly at the Trade Deadline",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZjBSMGU1aHhQaVU5cG9LcDJzTWRvUFVYOV8xSDhXYXRwS3ZRRXRrZWpJRTJUOXg3RjNHaDJtMXFGdWVNYWhrc1NieWQ0MEpoT3BXRnc1YWtPWWJ0djdlQmxQU3F1emlIb3VFbkFQUzk5dmNlbTdrOVprd3FwMjhEanN2a3YwTW5kZDdfOTg5ZVpvTlF0OTZaSEl3?oc=5",
-          "publisher": "Just Baseball",
-          "kind": "article",
-          "snippet": "The Toronto Blue Jays Played the Middle Perfectly at the Trade Deadline Just Baseball",
-          "published": "Sun, 13 Sep 2026 14:20:59 GMT"
-        },
-        {
-          "title": "Blue Jays looking to secure long-term solutions at Trade Deadline",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxON1ZmT1RjZFlTS2kyRXQ3ZExNb3drQmRVb3VKdzBtNXU2VW5QVGlCTml5SnFCV01PRndMWDROSWRXeV9ZeF9FTVlybXhTQndsN3dWdjJ1S0NITU1aX2NMSlUyQ1FzODJUWkR6b1Q4Y3pDSnJPMjlUelNnUUpyMzVqb2w2SnBmNURzaUdsNA?oc=5",
-          "publisher": "MLB.com",
-          "kind": "article",
-          "snippet": "Blue Jays looking to secure long-term solutions at Trade Deadline MLB.com",
-          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Jays make MULTIPLE moves... Major Injury Updates | Toronto Blue Jays News",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE95MmNCS2tRck1hYW9YN0Y3TWpYS1JIT3ZnWkExb2lLZGJtOHlSYTYxS0ZZRXI4ZjVibDFGeUlwR2hZZXVkMlRpTEV2Tk9JRUZYMWR2QllB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Jays make MULTIPLE moves... Major Injury Updates | Toronto Blue Jays News YouTube",
-          "published": "Tue, 15 Sep 2026 12:00:04 GMT"
-        },
-        {
-          "title": "2026 MLB Trade Deadline Buzz, Trades Tracker: Blue Jays Acquire Taillon From Cubs",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOEtkTlZaVnFiZVBDY2xBZWc4UjZpSU9FSnVXNzBqdGZfalI1WElDckhWLThyaFFPM0ZQWTZBdjFoQXlobXdQUE9SdXNURGVNMlRrQ0xFd2hQTGtCSlh1M0NJelF3ZUFhU3pNRzBBaVppVGY2WmFkN21nTlB4STh0SFI4eGNjcUHSAYcBQVVfeXFMUEFzMzQtdWNDTWtDWUtFME9qU3NnY1V5SWQ1dEFrY3pMUVpnV0JhVS1GVlhBV0NuOFhhZGhiY25ZRDRlV01QV2dfbEl6VzViRFRHYmpnOVc0SDJuaWQ2SXFqU2VqaFlFWUdUSHpraG9TZHNRTV9xLXl5dWkxVnBJamp3ZUVNSEE4?oc=5",
-          "publisher": "FOX Sports",
-          "kind": "article",
-          "snippet": "2026 MLB Trade Deadline Buzz, Trades Tracker: Blue Jays Acquire Taillon From Cubs FOX Sports",
-          "published": "Sun, 02 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "2026 MLB trade deadline prospect watch for all 30 teams",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxORkd5OGJVSXJTc1ZxM0VQa1o2WC05VldKd085Xy1pU1pkNFowMEp3RGZPWjVfLTd5T01QTk84anloRE53RmpMMGpWRDF5WlpvVi0wQXZRZTMzSVhlVnpjSEVpNnEtMzJoYUEwYUZqZUppU0RGWWZsY0Jya1RYYmVhblUxa3pPeUJqOW8ydjRPenJua2U2R1lkb0JuUGxEQQ?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "2026 MLB trade deadline prospect watch for all 30 teams ESPN",
-          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "10 Realistic Mock Trades I’d Love to See at the 2026 MLB Trade Deadline",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQXBpdFlpdTZ0MEQ0TXJVdU16NHpRR3l3dU5ma3BlNFF1djBYcGZkeldBOUJGZXl1NlFFV2dDTGE4Sk00UDUwdEpmLU1PVEFwd2lVa2dsOGNJbkdFYjNUZG44TlZRMUJuNmxqSGUyMVY4ZEpYMVg0VkFiQmo1QS1PdjNvcDdzUGNF?oc=5",
-          "publisher": "Just Baseball",
-          "kind": "article",
-          "snippet": "10 Realistic Mock Trades I’d Love to See at the 2026 MLB Trade Deadline Just Baseball",
-          "published": "Fri, 24 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "1 trade Orioles must not make at 2026 MLB trade deadline",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBmVEE0OXF2ejFVb1kzT2VIa0Vycm1XWF9sbVNlckYxQ0ZuQUZGOVNZZDBfanN3a3BhcXhpNGJ2UDhBMmNLNmI3bWtEOGNuNHMzcmZXUFJWNC15TDg2azhjeWxKWVVmX2xJa2RvLWxNZ0czSVFVNFFFUVZHazI4QQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "1 trade Orioles must not make at 2026 MLB trade deadline Yahoo Sports",
-          "published": "Mon, 13 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Amid deadline uncertainty, Hoffman hopes Blue Jays 'take a leap of faith' on 2026 group",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMnd4RldqejhlSjNOcTA3UmxqLVpNNy11T2VEU1pRZ1VMSUdHb1VfMnduTmtRNkEySHFTV3k5RDF1cHNkNlh4MzVNM1p0dXRES1RiZ19qVWw3OTZ3b0VIMFp4eS1PTzVlWkNUNG54Q0xFcGZvZWZ5V3IzWXN4RmluVzB5M2w3akZWaHo1bVVmLVhHSzJZeWpiLUhsY0x5UllCTGFOUjZhby01MFpQdmdXT29UQlV1bEN1S2tLSHZkRQ?oc=5",
-          "publisher": "Sportsnet.ca",
-          "kind": "article",
-          "snippet": "Amid deadline uncertainty, Hoffman hopes Blue Jays 'take a leap of faith' on 2026 group Sportsnet.ca",
-          "published": "Sat, 01 Aug 2026 07:00:00 GMT"
+          "snippet": "Bieber's (shoulder) bullpen session has been pushed back again to either Friday or Saturday, Hazel Mae of Sportsnet reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Wed, 16 Sep 2026 9:55:00 AM PDT"
         }
       ]
     }
