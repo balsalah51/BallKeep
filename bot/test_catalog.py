@@ -331,6 +331,9 @@ def main():
     assert "sos.html" not in week1
     assert "injuries.html" in week1
     assert "the-fence.html" not in week1
+    assert "articles.html" in tape
+    assert "the-long-game.html" in tape
+    assert "The Long Game" in tape
     assert "hot-n-cold.html" in tape
     assert "touches.html" in tape
     assert "Touches and Targets" in tape
@@ -403,6 +406,19 @@ def main():
     assert "desk" not in method_html.lower()
     assert "never 999" not in method_html
     assert "Unranked is a skip" not in method_html
+    articles = html_of("articles.html")
+    assert "<h1>The long reads.</h1>" in articles
+    assert "the-long-game.html" in articles
+    assert "The Long Game" in articles
+    assert "\u2014" not in articles
+    assert "desk" not in articles.lower()
+    long_game = html_of("the-long-game.html")
+    assert "Hold the years in your hands when the week is shouting." in long_game
+    assert "Weather and climate" in long_game
+    assert "\u2014" not in long_game
+    assert "desk" not in long_game.lower()
+    assert "Unranked is a skip" not in long_game
+    assert "never 999" not in long_game
     assert "the-ones.html" not in home
     assert "The Ones" not in home
     assert 'href="discord.html"' not in home
@@ -419,6 +435,9 @@ def main():
     assert "font-size: 40px" in css
     assert ".home-hero" in css
     assert ".home-snapshot" in css
+    assert ".nav-drawer" in css
+    assert ".article-rail" in css
+    assert ".article-card.is-lead" in css
     assert "--powder-ink" in css
     assert ".tile.cold h3" in css
     assert "height: 120px" in css

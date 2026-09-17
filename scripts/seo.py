@@ -81,6 +81,7 @@ def legal_links(depth: int = 0) -> str:
     prefix = "../" * depth
     return (
         f'<p class="legal-links">'
+        f'<a href="{prefix}articles.html">Articles</a> · '
         f'<a href="{prefix}the-method.html">The Method</a> · '
         f'<a href="{prefix}explore.html">Site map</a> · '
         f'<a href="{prefix}privacy.html">Privacy Policy</a>'
@@ -290,6 +291,8 @@ Site: https://ballkeep.com
 - Week 2 predictions: https://ballkeep.com/week2-matchups.html
 - The Market: https://ballkeep.com/the-market.html
 - The Method: https://ballkeep.com/the-method.html
+- Articles: https://ballkeep.com/articles.html
+- The Long Game: https://ballkeep.com/the-long-game.html
 - Week 1 archive: https://ballkeep.com/archive/week1/
 
 ## Baseball (BaseKeep)
