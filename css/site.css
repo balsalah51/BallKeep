@@ -48,9 +48,7 @@ header.site {
 .home-intro h1 .word-keep, .home-intro h2 .word-keep { color: var(--red); }
 .brand p { margin: 2px 0 0; color: var(--muted); font-size: 13px; font-weight: 700; }
 nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 12px; }
-.nav-drawer {
-  flex: 1 1 480px; min-width: 0;
-}
+.nav-drawer { display: none; }
 .nav-drawer > summary {
   display: none; list-style: none; cursor: pointer;
 }
@@ -59,6 +57,7 @@ nav.site-nav {
   display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: stretch;
   gap: 6px; flex: 1 1 480px; min-width: 0;
 }
+nav.site-nav.nav-wide { flex: 1 1 480px; }
 .nav-group {
   display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 3px 8px;
   padding: 5px 9px; border-radius: 10px; border: 1px solid transparent;
@@ -1001,7 +1000,8 @@ small.wire { color: var(--red); font-weight: 800; letter-spacing: 0.04em; text-t
   .league-grid { grid-template-columns: 1fr; }
   header.site { flex-direction: column; align-items: flex-start; }
   nav { justify-content: flex-start; }
-  .nav-drawer { flex: 1 1 100%; width: 100%; }
+  nav.site-nav.nav-wide { display: none; }
+  .nav-drawer { display: block; flex: 1 1 100%; width: 100%; }
   .nav-drawer > summary {
     display: flex; align-items: center; justify-content: space-between;
     width: 100%; padding: 10px 14px; border: 1px solid var(--line);

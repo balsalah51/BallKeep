@@ -866,7 +866,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 61
+CSS_VER = 63
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -898,17 +898,27 @@ def fb_is_current(href: str, path: str) -> bool:
 
 
 def fb_header_nav(path: str, depth: int) -> str:
-    nav = grouped_nav(
+    href_fn = lambda href: nav_href(href, depth)
+    here_fn = lambda href: fb_is_current(href, path)
+    desktop = grouped_nav(
         NAV_GROUPS,
-        lambda href: nav_href(href, depth),
-        lambda href: fb_is_current(href, path),
+        href_fn,
+        here_fn,
+        nav_class="site-nav nav-wide",
+        aria_label="Ball Keep",
+    )
+    mobile = grouped_nav(
+        NAV_GROUPS,
+        href_fn,
+        here_fn,
         nav_class="site-nav",
         aria_label="Ball Keep",
     )
     return (
+        f"{desktop}"
         f'<details class="nav-drawer">'
         f"<summary>Menu</summary>"
-        f"{nav}"
+        f"{mobile}"
         f"</details>"
     )
 
@@ -4306,7 +4316,9 @@ def rewrite_football_navs() -> int:
     """Patch header/footer nav on existing football HTML without a full rebuild."""
     header_re = re.compile(
         r'(<header class="site">[\s\S]*?</a>\s*)'
-        r'(?:<details class="nav-drawer">[\s\S]*?</details>|<nav(?: class="site-nav")?[^>]*>[\s\S]*?</nav>)',
+        r'(?:<nav class="site-nav nav-wide"[^>]*>[\s\S]*?</nav>\s*<details class="nav-drawer">[\s\S]*?</details>'
+        r'|<details class="nav-drawer">[\s\S]*?</details>'
+        r'|<nav(?: class="site-nav")?[^>]*>[\s\S]*?</nav>)',
         re.S,
     )
     footer_re = re.compile(r'<nav class="footer-nav"[^>]*>[\s\S]*?</nav>', re.S)

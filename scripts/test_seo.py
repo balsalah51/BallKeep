@@ -159,6 +159,7 @@ def test_football_nav_keeps_every_link():
     assert "../" not in header
     assert 'class="nav-drawer"' in header
     assert "<summary>Menu</summary>" in header
+    assert 'class="site-nav nav-wide"' in header
     arts = fb_header_nav("the-long-game.html", 0)
     assert 'aria-current="page">Articles</a>' in arts
     assert 'class="nav-group nav-tape is-here"' in arts
@@ -818,7 +819,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=61" in doc
+    assert "css/site.css?v=63" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 
