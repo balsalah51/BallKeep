@@ -1,8 +1,765 @@
 {
   "sport": "soccer",
-  "updated": "2026-09-17T22:24:15Z",
-  "fresh": 46,
+  "updated": "2026-09-17T23:22:04Z",
+  "fresh": 125,
   "stories": [
+    {
+      "id": "kai-havertz-injured-weekend-premier-league-injury-0a7d34e4",
+      "slug": "kai-havertz-injured-weekend-premier-league-injury-0a7d34e4",
+      "sport": "soccer",
+      "headline": "Kai Havertz injury: Arsenal forward undergoes knee surgery but Gunners hopeful on German forward's recovery time",
+      "blurb": "Kai Havertz ruled out of Arsenal and Germany games and may need surgery The Guardian",
+      "summary": "Kai Havertz ruled out of Arsenal and Germany games and may need surgery The Guardian Arsenal submit opening offer for €150m Kai Havertz replacement footballtransfers.com Spurs and Villa meet in desperation derby and Andoni Iraola faces test on south-coast return Premier League top scorers: check the latest standings Chelsea have not won this west London derby since Brentford’s first Premier League season. Aggregated from The Guardian, footballtransfers.com, Guardian Football, FourFourTwo, Football London and 9 more.",
+      "category": "injury",
+      "published": "2025-08-22T07:00:00Z",
+      "updated": "2026-09-17T23:01:01Z",
+      "players": [
+        {
+          "key": "havertz",
+          "name": "Kai Havertz",
+          "slug": "kai-havertz",
+          "pos": "FWD",
+          "team": "ARS"
+        },
+        {
+          "key": "eze",
+          "name": "Eberechi Eze",
+          "slug": "eberechi-eze",
+          "pos": "MID",
+          "team": "ARS"
+        },
+        {
+          "key": "gyokeres",
+          "name": "Viktor Gyökeres",
+          "slug": "viktor-gy-keres",
+          "pos": "FWD",
+          "team": "ARS"
+        },
+        {
+          "key": "schade",
+          "name": "Kevin Schade",
+          "slug": "kevin-schade",
+          "pos": "MID",
+          "team": "BRE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Premier League: 10 things to look out for this weekend",
+          "url": "https://www.theguardian.com/football/2026/sep/18/premier-league-10-things-to-look-out-for-this-weekend",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "Spurs and Villa meet in desperation derby and Andoni Iraola faces test on south-coast return Premier League top scorers: check the latest standings Chelsea have not won this west London derby since Brentford’s first Premier League season. Each visit since October 2021’s 1-0 win ,",
+          "published": "Thu, 17 Sep 2026 23:01:01 GMT"
+        },
+        {
+          "title": "Premier League top scorers: check the latest standings",
+          "url": "https://www.theguardian.com/football/2026/sep/10/premier-league-top-scorers-2026-27-race-for-golden-boot",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Thu, 17 Sep 2026 23:01:01 GMT"
+        },
+        {
+          "title": "on his first Premier League start",
+          "url": "https://www.theguardian.com/football/2026/sep/12/bournemouth-brentford-premier-league-match-report",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Thu, 17 Sep 2026 23:01:01 GMT"
+        },
+        {
+          "title": "Is Kai Havertz injured this weekend? Premier League injury update",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOYzZzaFNGNDF1MElfZzNmdlZoRlQyUjZhNFA5aDNTYlB3eEFHOVRtLVhYRmIyc3lnM2NXSXZ0eW1fWlI3ZjlkVVRiWV9PcmlqNFFqM3RkTFJwcHJQS3FYelRnQUxZRVU5TEU0NG40SWhSOU00TzBSeUpxNkc5TFdCRDZ2LTVna2ZnQmNHcjY2X1FJYVNsUDN3N3BfRHh5dw?oc=5",
+          "publisher": "FourFourTwo",
+          "kind": "article",
+          "snippet": "Is Kai Havertz injured this weekend? Premier League injury update FourFourTwo",
+          "published": "Fri, 22 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League explanation as Arsenal star Kai Havertz avoids red card for 'vicious' tackle",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRkZncTV0eldBcWQyczUwQTRuRzl6YkRKdzhCbjFaa01kVC1xVmlZNC1fV0lyZ3dveWNtbTBTTDRua203T09HTzltLVJQRHFmM2xmaU5yVF9wUU1LeVFCUFA3UmVCNGt2VU5ISC1uZEt0OTBUZ21zMWRCcDlaNGNjWGhDVmJ5UdIBiwFBVV95cUxNcXkyZnhvWmhyVlo0TmJXdHVqU2Y0U09TY2MtY1IyRnRhMzV4eEJFSU1xQ1NmbzlhWWFOa0ZtcEpfYVNYOU5BLWZfRnVRc0hkcG1TMjd3VWpDTkdRMl85dEVPRmdmZUlZTEFxVldmZnRGRXhSVmVOUFBjM1RPbnk2ZE1SZlRBeDdBWmZN?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Premier League explanation as Arsenal star Kai Havertz avoids red card for 'vicious' tackle Football London",
+          "published": "Mon, 18 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz injury update with Arsenal star set to miss crunch Champions League clash after KO against Newcastle",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYUdNOHFLa0RTVFVpcjg1UThjNzBQajZrLURwaGJmdnUybVd0TWFyZHZ3TEtVLWdfMFo2aHhiYmRzbzJCY0lGS2VVRjNGQUtlTWlvM1VsRVVSaVpuaEFLLWxTTmRqZWhrNFAzTUhMa2p3RlVSX2twNUdWLUlPTEtxQVdmZ1FURWJYdmN1Wi1MOHQtTXNJWDJNNHFrM2lEUQ?oc=5",
+          "publisher": "The Sun",
+          "kind": "article",
+          "snippet": "Kai Havertz injury update with Arsenal star set to miss crunch Champions League clash after KO against Newcastle The Sun",
+          "published": "Mon, 27 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal get new Kai Havertz penalty verdict as Everton told of Premier League mistake",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOemtmUjJydkNqWHQ4YUJGd1lucXM1aTdLSlk0cjhncXFfb3V1R0Rwa0xlSXNJNXpPeGNDY2tFNWk3cWd0QTVUYXJXd3pPdFByYjVCbEFuY1l2TzFIbWdiVkptSXlMQVZ3TV8ta09xc0dBOGc2QjFtSXM0bGhNcHlYd001MjNmUkJLTUVBY0V0cDR3UdIBlwFBVV95cUxNRzN0QVRBRzA5dTdTVmhzRUQzcTUzVWlIMTN6QmVua0FvZUtYeFpueU9nampWbDhPem9PUnFSbGpUMmo3dzgtbk8wWGJBdlBoQWJ0SlJvWHNPb0k4TUNuTkxOOWNSeS0yQnNmMlRBbWZlSlBsRW1MRHg0WUpISlZNS1NYY19XM1Q2M2FPcnNmWGNFUGJHeDRN?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Arsenal get new Kai Havertz penalty verdict as Everton told of Premier League mistake Football London",
+          "published": "Mon, 16 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal predicted XI vs Brentford: Kai Havertz injured as replacement named (Premier League)",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUmZnMnB4QVhCaDBJSXlOdUpMNWVUbmIwVkpkUFhrN1lISmhuWWp3cWxuYjh6NDFBSWhxdjBIVE1vajZhVFpwdWt0bnAxMno3RHZyRl9WbTdEVEQyN3F3SjdDdWNCcjVFRTFNT0FOcmVGbElBS1RXSDZ0YmlBU1FXSl9vVE1MYW5PY3hBMF9WTkp1Wmx3X0pjMml1RFRjbE5CTThXR1VMZGpMY09kQVFaNExqQTJjVVRIaTZYRVZjUQ?oc=5",
+          "publisher": "aftv.co.uk",
+          "kind": "article",
+          "snippet": "Arsenal predicted XI vs Brentford: Kai Havertz injured as replacement named (Premier League) aftv.co.uk",
+          "published": "Wed, 11 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "'It's a special feeling' - Kai Havertz can fire Arsenal to Premier League title after impressing on return",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOajBSSFNmcVVVeWRxZzJUUGpqc2pSUjZ3WTZZUVJLV0dLV1MtVVJyYkFRTmFhLUw4REpnV3F6eFV6WnJzbENsWHBvcU1sZHVRc2JFcHp0OVNSd1p2LW4xbVZDZDY4UjBBTEtqTWN6d3ZtZFJxcnZfR3RxT2ZWNkxyTl8wRzZEMmswLXp4OWlnQVdHTFhiVnh4ek1aWDVWd2JkaXRkUERZbGFRQlBZTnM4YlgtOE9SaXZuQXFPT2ZsNTRkSXI3YXdoVEdjX0RhR3VpRFJsUnZ3MUM?oc=5",
+          "publisher": "aftv.co.uk",
+          "kind": "article",
+          "snippet": "'It's a special feeling' - Kai Havertz can fire Arsenal to Premier League title after impressing on return aftv.co.uk",
+          "published": "Mon, 12 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "£100m star wanted: How Arsenal could replace Kai Havertz",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSmZJcXdaTVZfT2tvLU00TEEtUEZZSF9ieWVJM2xGVk5tU1E2SE5meVppLXBvaWxfdG9wU1dadV9OWXpESjZzVk8xbnQyOXY2U0NSQ0xWMWVSbHlfYUpEQnEtN2hwcDg1bUpzMWdIUENMTHFKNExuWWJJTVAtQThKU1puMkdTdER5U3pJd0VHZ2IzLVZ0dnBQLQ?oc=5",
+          "publisher": "Football FanCast",
+          "kind": "article",
+          "snippet": "£100m star wanted: How Arsenal could replace Kai Havertz Football FanCast",
+          "published": "Thu, 30 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal dealt double injury blow as Kai Havertz and Eberechi Eze both forced off against Newcastle",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaThZaW80cmVQQ2ZIY21WbzF1WHdnRHVZVFpnUHlmT21HaHkzVXVadi12V0tqU1AxaW5ERVdfVEdEMjhvLW5fWGFkblFVR08zWExiLTlLTWx1VDJ3NTl0LWJXTFVDZkZCVE5XSUtMOVZTTVpkeGx3VWxGcUJzeldFUnA4Yk80Z1BwelpBcWN2b25CVDlqeEVQZTBKVS1WUXFQZkE?oc=5",
+          "publisher": "The Independent",
+          "kind": "article",
+          "snippet": "Arsenal dealt double injury blow as Kai Havertz and Eberechi Eze both forced off against Newcastle The Independent",
+          "published": "Sat, 25 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz and Eberechi Eze forced off with injuries vs Newcastle in worrying blow for Arsenal",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPdkVwTVFBdnRQbXhNQUNIbWpxZEJQWWY2d0ZTYzd3OWxrN2ozZnIwUUtwY0tJYmVOSmhONUtwbmRFSXBsZXliXzd4T3hOeHJlMTBfcEphRXQ0dUxoai1paEcyMkJvNnRnWW10TFFkZjJSYUtkekd1UmJZc2FaZDJfS0VVSDBfMEtvbmN6cDc3RHhkajNX0gGaAUFVX3lxTE1abUZMV0V1Zlc5NV8yMkpIdldYQXJDMXgzLVg3Qk1uSm1kMDFzSEZPLV8tTGNuTHdLZG11Z01sQU5KMm1XRm9OYWh0UkdTVmU0U1VqVHJxa0R4czJmTGN3RzhFQVJ2ZGdWd3hHNjA3Y3BGUXo1UXFUa2paR0Jkbkt5eDQ5M2xQakQzWkNaNzN0NmRjSjlRbUFuMHc?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Kai Havertz and Eberechi Eze forced off with injuries vs Newcastle in worrying blow for Arsenal The Mirror",
+          "published": "Sat, 25 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Ian Wright snubs Viktor Gyokeres and names his replacement for injured Kai Havertz",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcEc1aUdHUndMQW96V0pyei16b19RWklBVE1lWDZwX0lOd3hVanJTQm83dXhxOVcySXVfNkFwMURZMVFfZTFhSGNHRDRLNDZHYXZWRHpVSkNMZERtTUEtWkUxOHhJbDFYSGRFeF84NE4yOF9ZVnhBRFNWcDEtb0pkRU9WMmlkU1JBdkxaZ01DS3VaaEJnXzk2MzhoXzlHcVE4dVl5UEFTczlpUVNCYUFJTdIBtgFBVV95cUxQZ2lDTTU1QTVIV2hQNkRlSmtSbDN2ak1JaUFTdHNUNUxITjBsSklXMENINWNtcWJkRVlEMVlIdnBqMEFJQWNoNXd3NU1BcVhadnRKU0xDQ0p5Z2hWdzRMQVVCYmxnTVV0UWFpUjgwd2NXUHpQNHF3eXVDNVVhZHZCRjBWWFFRTTNlaWJQT2ozX3l4Um5TTnBRNXZNYjBkRTBKcnZMd2JIcENRdjlBNWxKeTQ2Y2xQQQ?oc=5",
+          "publisher": "Metro.co.uk",
+          "kind": "article",
+          "snippet": "Ian Wright snubs Viktor Gyokeres and names his replacement for injured Kai Havertz Metro.co.uk",
+          "published": "Sat, 25 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz forced off pitch with injury in 1st half vs Newcastle",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSkM3ZjJHcHdMajFoYjJjb0hTM0tEdThJcVF3QVBfRHd3YXFtZkNEVEVVTHgzN3R5eTFLSmhuUGxGVjZwNUR6THVCYTE0aHBiUFllNVVmaUFrQVNOTFlDbTQyRTFwWGFOcE5WQ3F2V25CeGNSWDJ2WmtJcHNKT2stcVRsSnVCaDktWENMbkd4SDEwNndzRjRRWWRwTXcycFJ4eGJ0T0QyeGXSAa4BQVVfeXFMUDlnYmpXTjltRVNTOVRPblU1TXpxTWZBSE81UTJuV2JLdXB0NXVNaE43Y0Zxd2xXTzlTMnI1ZktSOVR0UjVOZ2hERnhWTVNmaGJLWDlBUFRHVjdhVE9YWUdSOUF2cmpISHhRNWhmSGdkWkNfQUpLalNSMllhRkVGaGRLdU14OUh4d0xMVF93RjRjdzk2amFHczRRaWxiMGsyenBOZzZTNlF5VU9Db0FR?oc=5",
+          "publisher": "Tribuna.com",
+          "kind": "article",
+          "snippet": "Kai Havertz forced off pitch with injury in 1st half vs Newcastle Tribuna.com",
+          "published": "Sat, 25 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal’s Kai Havertz set for further tests on knee injury",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdW4ybUk0QlM3S0I1UDMydmVVX3dJT0dodE5ydERsNWY1ajB0NUF4SUdFd0FyT1otSzRuWGxRVG1Kb0NHYU0wVnF3SkJ2eGFtZmgydUpmVzVMam1jVWprRTBuLXBXYXV0dXhvUlpVZG9NVG92T18zel80dUN5VFdQRU9pckdTWUlSdVBhejlxdm9aUGxxU29kZ2RhTDU?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Arsenal’s Kai Havertz set for further tests on knee injury The New York Times",
+          "published": "Sun, 24 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz injury: Arsenal forward undergoes knee surgery but Gunners hopeful on German forward's recovery time",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQa0ZnUnBjOFFud1VwSXl5QjE3cDhuMHpGdlpocFYwMWlPUFVJcjN3RklrRm9hajE5UFJhMlJ2dFhQQWFTbHZrQnlNR0V6Q0VHR0RjZ0UxODRFTEhBaGl6ZFdocU4zN3Q3WGYteFFoQVFrQ2Jla3pkejZTeE9IcnVFa0FVcWROU2VLQUFRY3M3bkJ4STItYWpsRDVPOXBpTE9XV3Myck1BM2pDMXNJNUhBdC1UQlVWZl9vbE9DWGw1aW5XS0RBZm85eFVIWlN5akhQMjhRTHluR2hLOW9ETVZSZFkxdGVZUFU2NzBhZXFHVFk4dGpKbGE0VA?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Kai Havertz injury: Arsenal forward undergoes knee surgery but Gunners hopeful on German forward's recovery time Sky Sports",
+          "published": "Thu, 28 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz ruled out of Arsenal and Germany games and may need surgery",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOelNxYlNXNDBSX0RBbjBENTQwSV9jRWFDM2dnRFhYMmdSUUVBSV9fOVNRal92WmFQbnBUR21vQjc5a0MyLUg2TXBJcGRSbVlxMmNZUGVBeVUwVWNiMnhfZThYbGpWVUQ4cXJYS3llb1gxVXJBaS1GOFZTX0M2akdiWWJzaklUcHIwb3ZoVlJHaGhhcVNqbmt1Q0M5NVRjWUxnZUhfUXN6UTlsUHIwUnc?oc=5",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "Kai Havertz ruled out of Arsenal and Germany games and may need surgery The Guardian",
+          "published": "Tue, 26 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal submit opening offer for €150m Kai Havertz replacement",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxONTNNdWw2Ny1Dd3BzRFhVTXdLc0N2eXRVTXZXNEx2Z0w1MUJqZTZZcU84VGxCemV3Tk9JUHVLUngtbktWT2xUdjNkRTFvcUFhaERxcE9hVDVuUzJLNHJ3aTRFNDlKN005YVhmSnBTcjhaSWNOUWxwdm0yM0NuOWNDQm1tZVJOQmcxMFQyU3ZTLVlHOTZqWk8tMVJZZ3Fwa3hRVTFRS0I1Q1NlTWxkbTlnc0xrY3dTUm8xMmROVkNkeGdLZHZlTHBGRVBaVXF0dXk0QS0xQ2J1bHY4QW1vRlh4TnlhTHN6RFQzS2NHUl9pZzAxZDZIcTZyMHB5SQ?oc=5",
+          "publisher": "footballtransfers.com",
+          "kind": "article",
+          "snippet": "Arsenal submit opening offer for €150m Kai Havertz replacement footballtransfers.com",
+          "published": "Tue, 14 Apr 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "fpl-gw5-wildcard-draft-raya-gvardiol-tavernier-premier-c6297ed1",
+      "slug": "fpl-gw5-wildcard-draft-raya-gvardiol-tavernier-premier-c6297ed1",
+      "sport": "soccer",
+      "headline": "Are the most popular FPL players actually the best picks for Gameweek 1?",
+      "blurb": "Who is the best FPL captain for Gameweek 5?",
+      "summary": "Bryan Mbeumo, William Saliba, Mateus Fernandes, Marcus Tavernier and Joško Gvardiol: Who is the best FPL captain for Gameweek 5? The Scout’s FPL Gameweek 4 transfer radar premierleague.com FPL GW5: WILDCARD DRAFT | Raya, Gvardiol & Tavernier | Fantasy Premier League Tips 2026/27 YouTube Aggregated from premierleague.com, YouTube, youtube.com, Premier League, Fantasy Football Fix and 7 more.",
+      "category": "injury",
+      "published": "2024-09-27T07:00:00Z",
+      "updated": "2026-09-17T19:23:22Z",
+      "players": [
+        {
+          "key": "mbeumo",
+          "name": "Bryan Mbeumo",
+          "slug": "bryan-mbeumo",
+          "pos": "MID",
+          "team": "MUN"
+        },
+        {
+          "key": "saliba",
+          "name": "William Saliba",
+          "slug": "william-saliba",
+          "pos": "DEF",
+          "team": "ARS"
+        },
+        {
+          "key": "fernandes",
+          "name": "Mateus Fernandes",
+          "slug": "mateus-fernandes",
+          "pos": "MID",
+          "team": "TOT"
+        },
+        {
+          "key": "tavernier",
+          "name": "Marcus Tavernier",
+          "slug": "marcus-tavernier",
+          "pos": "MID",
+          "team": "BOU"
+        },
+        {
+          "key": "gvardiol",
+          "name": "Joško Gvardiol",
+          "slug": "jo-ko-gvardiol",
+          "pos": "DEF",
+          "team": "MCI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "FPL GW5: WILDCARD DRAFT | Raya, Gvardiol & Tavernier | Fantasy Premier League Tips 2026/27",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5WLWUxNHF1a0g4SVdIWDJXcWlaUElITVpuNDV6bmMya1Z4enIxNjBhTHVBcXE5RXBPNXAzdS1zMXJBZ2dNM2U4MWxsZUtBeHNMLUpfNi1n?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "FPL GW5: WILDCARD DRAFT | Raya, Gvardiol & Tavernier | Fantasy Premier League Tips 2026/27 YouTube",
+          "published": "Mon, 14 Sep 2026 15:20:46 GMT"
+        },
+        {
+          "title": "FPL Gameweek 4: BEST WILDCARD TEAM + FREE HIT | Fantasy Premier League Tips 2026/27",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE94VnZhZUxYeGJ3cGY4UkJzVmxDcm1qVjQ4azQwdS1zSDRYNVJxcU05R0Y4RXdyTjYyMm1paVRBbmtxSHJENVhkald3MnZSaG91YTBQZldR?oc=5",
+          "publisher": "youtube.com",
+          "kind": "video",
+          "snippet": "FPL Gameweek 4: BEST WILDCARD TEAM + FREE HIT | Fantasy Premier League Tips 2026/27 youtube.com",
+          "published": "Fri, 11 Sep 2026 14:00:39 GMT"
+        },
+        {
+          "title": "Who is the best FPL captain for Gameweek 21?",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DVDdWeE1ybXRXbHFiTWdkUWVDWXMxcUNhejZPV0t2ZXlqdXdtN0tlVTlrYnJwcU1DQlJVMENRMmxjWHlTek40Sl9QRHVQaG1CVDNnVkxWX2I?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Who is the best FPL captain for Gameweek 21? Premier League",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Fantasy Premier League Gameweek 34: Top 5 Key Players",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbGtlVGh1QzloOHZycHNKbnhQM2FrZFVfT24yR3ZtRDVMWlA5S2RjWkR0dDIxQXZKdFdXVHFkSkwxcENfR2NlS05YTlJtSUF4M1dWUEtWclVrTklETHlvZld1VG43NVVlNjNyNEp4RXlmUkhweGlocGtFNzU0aGFha2ZkUQ?oc=5",
+          "publisher": "Fantasy Football Fix",
+          "kind": "article",
+          "snippet": "Fantasy Premier League Gameweek 34: Top 5 Key Players Fantasy Football Fix",
+          "published": "Thu, 23 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Gameweek 6: Top Five Key Players",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeXROTVRISzFaT1FzZlRlN3ZlN0Qwdlg1X2RNRU8xc1RveWFzSXVpTnJPN1o4V1d1a3phOXFUWUhLdl8yajJZSkZaRUo2eXdrMktYajRwcmtKWXEwNTdpamEwRWhrRTY2QVRWMDFmUXEzbURGclVCVFZRRkZpamdrVHhB?oc=5",
+          "publisher": "Fantasy Football Fix",
+          "kind": "article",
+          "snippet": "FPL Gameweek 6: Top Five Key Players Fantasy Football Fix",
+          "published": "Thu, 25 Sep 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Top Managers’ Transfers for FPL Gameweek 21 | Key Picks",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaWVaSF9aR0VrdVU0UXRuMmZlZUhJWm8tMExKaVNIcE0zSGJ5UVlERVp5OHlBN0R1aVpTZlNPcXBVNkVwOVRqOEpXSzY2anQ1XzhZXzFraFREYVpmRFUtdE1jZnBZZ3dTM3JlLXBFRkxxcE9sVDhRdnNpcmd5UDhDd1dB?oc=5",
+          "publisher": "Fantasy Football Fix",
+          "kind": "article",
+          "snippet": "Top Managers’ Transfers for FPL Gameweek 21 | Key Picks Fantasy Football Fix",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "FPL Gameweek 1: 6 Must-Have Picks",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOGRpN0Q0dVl1WEZ3d05KR0RSZjlQQk1KYnpmYmRaaFRJa3U2WlVmWDBRUkNYU3dMbUN4NFBKajhDaXJwYVQ3VTY1NXZQMkxkdElpM3NfY0ZrdjdncF81Yzd2b2NXeFFhdmNSS2dET2dVcnB4c1NaN1otejQ5cjRlc2o2ZjJUR1BwRndV?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL Gameweek 1: 6 Must-Have Picks RotoWire",
+          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Gameweek Recap",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpdmhZQ1JLd2dEcG5wcnN2dVBvMDhQdXhaaU0wQ05FdjRHMkthcThySk5Ja1lSdUV4bExOY0RFUkVET1FKMGxIYXB5X042OEFSMXZ5MHQ3T0U3U1NqUGVGQzdsRUt0cS1MdkFUbzdR?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "FPL Gameweek Recap Premier League",
+          "published": "Tue, 28 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Challenge: Expert reveals their Gameweek 12 team",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUU5oSlA0cnpHM1Z5ZExueWo0WXFhbTdCb0dQc0pXSko5TzY4QS0xY3h2cFpTREZxMVVVM2RibzZfdXZoOW5TS3p6MlJCZWNSbXZSWVk0UG5GQUZCQU1VRTFpWERFcWZaR0o5bm5ZR01BNkVhTHBBZmlkYnJyTXcxZU03Tm9Tbk1hUDJOWmNlcm15aTZMdmRuYjRrVldBdw?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "FPL Challenge: Expert reveals their Gameweek 12 team Premier League",
+          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Are the most popular FPL players actually the best picks for Gameweek 1?",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOamZWcUcyTnZ1WWJCZDhFRVdBaC1zWU0yc3dsNGJtY1NuMzUzOE9KV1dZaHdlc1NBTy0zUjByNUwzUnlSREUxaEhGV1ZEZ2tKbGF1ZmxXTDZwWTJFR1Jad2ZXYkdUWTdmZG16X19idTItTzQ0RC03djNGS1BPbUlpdjZDM2h6TllUWjRvVDAwamNPMHowSW1melNFTks1NzJ3Y0MycDFlWUg2a29yU05aMjhETF9EZlRB?oc=5",
+          "publisher": "premierleague.com",
+          "kind": "article",
+          "snippet": "Are the most popular FPL players actually the best picks for Gameweek 1? premierleague.com",
+          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW38 Free Hit Team: Best Draft & Strategy for Gameweek 38",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOa2g2R0JuOGNoOXctRnZwNVdIcmNOZDU4RFo2Ni1uaTNlZWtfYndIamlqT3RKRzd1U3Q2ZUlWVmJYX1hqeG5IWmNpMV9XQUVkSV9GeEdXd0UwTTRmNkRIRFF1TXZEZURyamhZcm5VeFRQSUJWaDFyVVd5Z3ZtTlJVUmE1OWRTZ2V5U0lYMEFBRUJKUlZzVEZGVjV3NjlBMG5Lb0RV?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW38 Free Hit Team: Best Draft & Strategy for Gameweek 38 RotoWire",
+          "published": "Fri, 22 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW4 Rankings: Best Players & Captain Picks",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaDNHUjdJSEpaWXdmck9MVWViYWdzN0dkQ3NCZGhSLUJvYks5dTBDZ2hYUW5WbUVpNEFMZWd2bjZIV3BENWhYdkRmNWpBNi13VnZwWHNWelkxWjJmSnYweVhUbFRFb3oxbkl5ejVQbDBXM0U0MzhWaGYyc2JoamhYbC12N1Y4RVF0SmxSTnRuWFN1TVdKMEowVkpqS3I0bFc0eWRZ?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW4 Rankings: Best Players & Captain Picks RotoWire",
+          "published": "Fri, 11 Sep 2026 20:00:00 GMT"
+        },
+        {
+          "title": "FPL Bargains 2026/27: 10 Best Value Players to Target",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNENNa2EzX01FSkRIZ3RzZHJLZU5RbGlmUndzZklLYnlVWWpVbWNra004YVZ2aHUxRDBTX3BkQy10WWhkdDV3SWMyWV83Y3k5QUg3cXpfWTBDWi1qZlVNSDBSeDlGQmY1R3RuMlY5RkRWOTNwSVQwZmdEY0pjYUxEWU9UUnRTS3lPT0VtWjhIR0JWWlFrR2VDUTMyQlE4MFFR?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL Bargains 2026/27: 10 Best Value Players to Target RotoWire",
+          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Who are the best picks for Blank Gameweek 34 in FPL?",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOVhaX2psWi1WejcyYVVfaHEwc2l0d1pDRnNqUnV4TE43b2QyeW9fR3paWVYzX21fWDctZXhyOWM1Q1h5dzBHMi02ekNWallXcUNRSmpIY00tT2Q3YzI0SnhSbXNuZ2lqTG9kTkpFZ2ZNYVlidDJrZk0wWUw3Z1lvNEQ5cUQ4V3dNQVRtR2tYUmp5UWdrQ3BPR3cwN2dTdw?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Who are the best picks for Blank Gameweek 34 in FPL? Premier League",
+          "published": "Fri, 24 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Gameweek 32 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUzkzQVZnTTZJZzRJcENhWnA3TGx4MzBhZzNLandQRTIzV2MwT0Rac28zVE8zSHh5ZXBERWt5R1J6ZHd3ZVBvbEl2SExlTGF3N0UyM3JIcXJmSGZfZFB0dE9NYXVNUjZxalRLQi1ISE9OdS1Zd0Q2QWFyaXVYTXh1bmxrVjNNMk9ualdjSVY3LUw?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Gameweek 32 transfer radar Premier League",
+          "published": "Wed, 08 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW3 Rankings: Best Players & Captain Picks",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZ25ESG5DRHd6OVh0UTkzdXgtMjREeEpEeDdkNUxuNUl3b0d0dFlTR3FEc3kzWjRBbEJ4VnVHbC1hVTRPZXl5aGwtZlhXZWh6aGlONlZ4dzhZcm51VjF5eFlrcHpkXy1taTBnSXBLek93M1lWaWxfS1J0bjZuUXVvUEVIM0lIdUxtMk0xem56Q1ZTYjFoY0pQTlpiSjZuUmhrY2pz?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW3 Rankings: Best Players & Captain Picks RotoWire",
+          "published": "Fri, 04 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW2 Free Hit Team: Best Squad for Gameweek 2",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOGc2Q2U5V0JsbTg5bDYwQjk2VkJMYmVpbmN4WklEMXJvb1lWSzB1RldHME1Md2l6YXJnRTAzQXQya3ZFaTVBZWpXYVJaRVhLM2dlUXhYNWNyT3JmcDVMSHk0R25JbnJYT2pFclZBNHpsM2FRaVVZZXBTeVhXM05YWUVZZ1N2c0E2MERJbTBUSWg5VVRv?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW2 Free Hit Team: Best Squad for Gameweek 2 RotoWire",
+          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW32 Free Hit Team: Best Draft and Picks for Gameweek 32",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVG1LZnZWWEhmRzBXQU9GcFVFT2ZWc2VMd3NWT3kzWDNkZnVQLVpDcU51SWFWeWhENTFhenp2NFZWUTRMTl9udUhLM25tTmpxTlJ4S0h6aDFwR0N5aWhpeGJZTnphUXlkTDlfMjVLaEtQOXFQSlVVc1otYWlTSVJGNU42czc2RjY3V0d0WWRDZnN6XzY0WEpV?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW32 Free Hit Team: Best Draft and Picks for Gameweek 32 RotoWire",
+          "published": "Fri, 10 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW1: Rankings, Best Players & Captain Picks",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcml5WkVCQlhNSGh4WjNXbTE3R3NrSkJLWmhIRDU5Y2pqM1JYMjE2NFNwbFQ4S3J0YnotcHVaNEF4S3Nmdnp1cjVDay1aMjR0S2sybFAzX1JOZmhGSjkyZGRuQTNGUGkxV2I5YVI3US11VEU1OVdoLUVlYXRVLWV6NEZSRkE4b0pJQjRHOXdfOUR0QldWdnJtT21kSUE1UjZOVkdmNlpjNUhWOUNLSGc?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW1: Rankings, Best Players & Captain Picks RotoWire",
+          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW2 Rankings: Best Players & Captain Picks",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdGdseVlfRUhNc21lbmNtc1l5ZWhhM2ItRVoyNDhsS0dKTU1NcHJjendYVVhjQkxpaFV3R2t6S1NVM04zSVVYeDJlODlOVXhzQVBqeHQwYWVTQ2IxY0wzeEVkWHpHZG5ZczZ6ci1KRmc0aE5QUTRCSThMOE0wTEVhdGRSRFduTkRSVmZVcVlJUlFrZS1ad0pEUlpraWtTZElVcVNj?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW2 Rankings: Best Players & Captain Picks RotoWire",
+          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Tips: 6 Highly Owned Players to Avoid in Gameweek 1",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSWlkNnhtaU9keU9KaERldUhGa3l3Tjh1dzdmRFYtTXFiRVktM09mM3VzMDdZa1gxSnVCOEppUVZETXVXRnNaM0NBTTJrZzZXbUNvenJPbjV1cFZFV2RyXzZ1RnZuSy1KQzByckhkWDRQRERNcXRCaFhkRlFaX1cxN2lSeGF3RUNYcjBvLUhKOWZiXzhxeFZZNUh1MG9XLVlOUmpHVHZIbVY?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL Tips: 6 Highly Owned Players to Avoid in Gameweek 1 RotoWire",
+          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Best FPL Budget Picks for Gameweek 1: Cheap Players by Position",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdElqUjdkRzNJV2U3RXRzMTRaWVNJUVRPZFVhZjBtX21yUVZUTmxIcFhpYVdjTUVnUW9iZWtxYTJQYWNPM3BfQ2J6WS1sZnlQZVFsRzZ0eVplSllRTmpZNV9LRk5ibThHVjNTWUZMU3ZYNkhTY0Z2cllYVHB1aDJ1em0tbTM5dmV5ZThObENaMmxxWmxCTmRRaEl4NUZBMFVJbUxhU1A5eDlYc192cW1KMGpIXzRaZ1ota01ldA?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Best FPL Budget Picks for Gameweek 1: Cheap Players by Position RotoWire",
+          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW36 Free Hit Team: Best Draft, Picks & Strategy for Gameweek 36",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaWxPbUQ3ZjBoQWRFZHN4LVBEbFNrOXVWcXBFel96bHJJZURxTVJiRHBFcmZWdlpqclU3OEZ6OGJUQ2Y0YThVOEx5MHJua2V3Q3V6MWlaend5ZGktbTFFVDgxeDZkR01EMVRuRU11c2ZEaFp5eWdGSzF0am1vb3NWVnJtTHEtWmFfb2QzNFMxQjZTSk9wNkhZaWw4WS16cndpV2tSY2VCOFpvVWtvdVpsQw?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW36 Free Hit Team: Best Draft, Picks & Strategy for Gameweek 36 RotoWire",
+          "published": "Fri, 15 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW38 Differentials: Best Low-Owned Picks for Gameweek 38",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONzU5UUdLY2hNdEZyMzliMC0yLWRoazB0bHZRY1NEcHA2U08waE8weXRCM1VNY3pnQ21iV1k0Q29EbEtmOGs3OEVoM2VEMFBRMk10S2ViV3hwenZMY1liaGo1OTFWQk5RemhILTZ1UHpuS2pCV2JDekhwc013WmVTbXdKMUJnUUhyUFdyMnU5OGxPYW5uWWpDS3dkVzJkaDNxdkhCcWNaSk9sQQ?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW38 Differentials: Best Low-Owned Picks for Gameweek 38 RotoWire",
+          "published": "Fri, 22 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Gameweek 28: Best Teams to Target for Upcoming Fixtures",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOXVIQ1FwQ3pWNFNVeUNIaF9SaDRDYXItZVdTQ1RGOUlvbTd0dk1kSjlFQWNrVmJfMVlPOTd4N0VRc1gtMEc3YXdDQ05zSGdnY0pPNFJEck94cFJRTF91b3haMHdWckdoQUFLaTJqX1pjVHJqSmpVZVRONVVFYVh1Zi1ISUEwa3JNWkVPb2JtdHpqS1h3bHNtZVJwcThsQ0k0YmRhM2lKSVgydVpVVXNibVlQQVE5ZHZ1elFqYVlaM0VMckJOZG1QalpEcUJ5cFRadUk4?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL Gameweek 28: Best Teams to Target for Upcoming Fixtures RotoWire",
+          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Scout Selection: Best Fantasy team for Gameweek 38",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQYXpVTkJGUy04NHpVYXVldVNLM0NicWpiNl9NVGJsOTAwR2tCNGcxeEhJTmg1UG1kc0pXdE5tNkNza3hHVFhjTFZMMmZMTjZsTWpFeE5pYTJ3WFpueGcxVV92UmtJbTU0bV9MSjVXMnZ3TDBfZWEtNmM2R1RBWmdYdWZiSUhFNXplRWtaQXJzbU0tRm1faXRPaF9TWQ?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Scout Selection: Best Fantasy team for Gameweek 38 Premier League",
+          "published": "Thu, 21 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Scout Selection: Best Fantasy team for Gameweek 32",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONDA2OFNZZFBCWHZmd0xvOG8wSWJJUDNiOVcyWGVuSGNsMzBIUExSMmh3NWhNU1FpcmtwUWFaWDBsWmhuUWF3Q0wzcDh1d3JYc0J2RnRRdWp6b21hcGtLOW9JaEh2RHJVYkdlbllJZjZiMTFBS2pnVzk0bElnQ3RxUjcyR1R2NzJ3U2RBSnZyZDZzYkJpdFJwNUlUOA?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Scout Selection: Best Fantasy team for Gameweek 32 Premier League",
+          "published": "Fri, 10 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Scout Selection: Best Fantasy team for Gameweek 22",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZFpYOWp5dkU0UjJ3R2ZxSHNEMzVXZzR5ZS1JX014M1hhLVRWd3VuQlNVbndtdWMyQ1Ezbk0ta0F4VF92aFlKdG1WWWVIMExfSUpaX2xYOHp4WVE5VlR1TEpiQjkzZUdTVk1ZaGFhRm9MbTFFVzZmRDZPQ051SFFZVFFYSW9zb0IzNkZCY1V2ei16MWpuMHRQenJfQQ?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Scout Selection: Best Fantasy team for Gameweek 22 Premier League",
+          "published": "Thu, 15 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "FPL Pod: Who are the best premium players to own?",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1zSWNLMHZwMUlHcDNhT09Ec0RQMkxBUHZLVjIwelEzT0Rsd1Y0T0Z5cjdqZzVzY0plOTdGY251QlB2a2hhUHpVSTk2WDFhUjliVTVUZnByTWU?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "FPL Pod: Who are the best premium players to own? Premier League",
+          "published": "Thu, 10 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Gameweek 5 Preview 🔥 Free Hit 5 Team ✍️ Best Cheap Forward 🤔",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wUGkyeWVRdFdjMWVqckFSOFpnQ29aWjNOOHB6eGxObUJJSjhUcWZYbmVZOS1QeXRqeEVhdTR4bkJ1aU0zVGhWMTJsVGVGaU1pWmxZeHpn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "FPL Gameweek 5 Preview 🔥 Free Hit 5 Team ✍️ Best Cheap Forward 🤔 YouTube",
+          "published": "Wed, 16 Sep 2026 08:00:11 GMT"
+        },
+        {
+          "title": "FPL Gameweek 26 Transfers: Most Popular Moves & Double Gameweek Trends",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdjM2dDdfMmZIVGJlT2lzQ0VZd3AxSDZBRFNFN0xkUFdVM2cwN2RJdkxPNDBLZTFXT2ZGdk94OUlSSEU0Y1lWRlRmeVc2d2c4bWJqbU5GTEFKam1BQzl4S0NHcUdzMWNWUUVEMnp4eWRKVERabm9XRy02bDVwUGxoODFDSTBCMS16ZlQ1cGxn?oc=5",
+          "publisher": "Fantasy Football Fix",
+          "kind": "article",
+          "snippet": "FPL Gameweek 26 Transfers: Most Popular Moves & Double Gameweek Trends Fantasy Football Fix",
+          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Top 5 FPL Differentials for Gameweek 15 | Best Low-Owned Picks",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaG96S3BmUGdPS0MwUmZvb3BqejhUcTlxMHZXODFfWl9tc0ZyTHpjU21WN3hvZmNwTzU2MmQ2S28tb19ZMWNiLWpVSjgwVFdSV2hyOTExcUZLVHlodE1IYmM0YUpiUEhVWUI2bDI0SGQ4bG81RVcwTzRxaUVESlVZSERIUGVUenpYeGRr?oc=5",
+          "publisher": "Fantasy Football Fix",
+          "kind": "article",
+          "snippet": "Top 5 FPL Differentials for Gameweek 15 | Best Low-Owned Picks Fantasy Football Fix",
+          "published": "Thu, 04 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "FPL GW4 Free Hit Team: Best Squad for Gameweek 4",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUERyUlNjcHEycVhYSEViaWtBd0Y2VDlyTDNzY0pZZHRMeXB2eGZhY0xMRFVNTGhHUFdqUDB6S0tPMi1ERnNnZ0lLdTZiS0I1NTdsME56RW41N3dtZEs2YU5GSmx3MlhXVUNZT01yTkhGMnhVMkhnb2FnNzVUaWZNVHd2THJOQm9OZ0JvU2UwOWhkWVBw?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW4 Free Hit Team: Best Squad for Gameweek 4 RotoWire",
+          "published": "Fri, 11 Sep 2026 08:03:00 GMT"
+        },
+        {
+          "title": "Best Free Hit Team for FPL Gameweek 21",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWUNjeFNQSlczX1VubzJRM2dUTjlNYjdWa3FkSndibmtVNnJRMjFYQ3lLYVMxZDZhczhDQi1VTWY2UElvak9QWG14S2JINmx6MjBjSFlpT29DV3JqeGZxRWhBX2VoZGRZdm9RWHJ2RG5neTExbUNXOEJBLU1lZ2ZTUVQ1S19WYjRFTFhicDRiU2lxM2NsekpIVjVHQy11dTBiSlZnYmJqYWJLYy1fSGFlUVRuN1lsUmRYQ3haR2RQQkpDbVptVjg0?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Best Free Hit Team for FPL Gameweek 21 RotoWire",
+          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "FPL GW35 Free Hit Guide: Best Team & Players for Gameweek 35",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNUFNS2JzV3VNZ1NGR21kbVZIYmlrQjVvVlVmbEdUUDgxRndYYlVzc1V0LWswcmZhMkxpWEU4X2xKUm5SRVFiTGtKbnktMFQ5Z0VsbWN1b2dGdkh6TTVIRVBjOFFGWFBfckd1OGxiejJaVi13UWp6bjJocVZQTklNTENpUldSVUpISHFmSVJseUpqdzNaSXFrZ1ZKQlBIQW9UNk9BRVBGd2x4bGs?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW35 Free Hit Guide: Best Team & Players for Gameweek 35 RotoWire",
+          "published": "Fri, 01 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW3 Free Hit Team: Best Squad for Gameweek 3",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNmdDOENMQUxrM3VXazBwRmU0SWNDR1EtbXk0ZVpEQkJMdkdaNE03RVF4R2hiVmVrZE5jS2VaOXFQT3luSnNCM0Vfa2JFclZMcURXUGtoSWs4MU1JTVpZZkZzekNCZUhhcVpwQ01SSlhObGJvVHl1NUhnWktiQlZhX1ZaMVFMUWFmYVNWT0VHQlkyalRq?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW3 Free Hit Team: Best Squad for Gameweek 3 RotoWire",
+          "published": "Fri, 04 Sep 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW36 Differentials: Best Low-Owned Picks for Gameweek 36",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN2RPVk5PeExMdkJsam9NVzJqdXVtOUhXU0lOZDZ6dXJOQm9iNXpmTFpuaFhQS2FIMkRmTXE4RzVoV1hWVll1Z2N3MWlPMTkzY0x4ZS1qcG9mUHFuZHdTcDhHYlltTFhhYlFDV2dLYzFsM1NIUy0tLTljVVRQcElfNzI0OGxSQWR3OVpwamt5ZmRMUG5rcGpLalBjWk4zem1PUXlWZw?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW36 Differentials: Best Low-Owned Picks for Gameweek 36 RotoWire",
+          "published": "Fri, 08 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Fernandes HAULS as most-popular Haaland vice-captain in FPL",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeEVZNXNfX04yY1NmcmtManp0c0t5R1VUMmVIdlI1dVgtNV94VFU4eXpmVXVwR0ZBX0NCSXFKS1FzalpBVXQyUndGWDJFb2Q2YlB2RWpzRzBieEl0czJ4TnFSSlNoTEVYS2pRc2VzXzZkUlVQU3pGSkJwdmZVWWMwRUxuYVFnM0t0ZjFKcFc0dG9oVkU2cVhuaHNWZDhJS05r?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Fernandes HAULS as most-popular Haaland vice-captain in FPL Premier League",
+          "published": "Sat, 28 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "FPL GW34 Teams to Target: Best Fixtures for Gameweek 34-38",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTXBJclREcElNakZURTIxR2FmYVRBWGl2VERIRE5nSEJ0eEdIa3VQQ0lwUkpqNTZpSWlZc2lJRVhxNEJkX1BMTGJjS2NramlNY1puT3pMSkJmUmtVVHc0OUJkSFhGaVUxMG4zeVNIMHZqNlEwbWlCdHBvMlBfR2VBeVpmbXJTdktVVThKMTViZkRSbWpqTmtOSEJ4YlIwczhpY3c?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW34 Teams to Target: Best Fixtures for Gameweek 34-38 RotoWire",
+          "published": "Fri, 24 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Who is the best FPL captain for Gameweek 14?",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNXRYV1VCLVFRVlpXSXhpMGNRLVl5cVZwanhBS2E3SzZrNUJYSTYzQmFKMTZHUkQ5djduRU40UnBiZ29xeFpRcHhjY3MzUFV0Z1JwazFpUThhYjVKRU1pWmJSMGU1TmdKVmJOLVZUVEIxSXFaWlczYkprczlSR0FrNG1XVlh2NzhheWN4UFZfTmcxMzg?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Who is the best FPL captain for Gameweek 14? Premier League",
+          "published": "Tue, 02 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Gameweek 23 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTm9JVWg0NGpkd3FraG82N2UyWF8tblJjTDF6cE5LdmZSMlp4dGp2cEM4ZzdJcHdDMkdrcUdlSm9zSU1aX1YzX0tDYXNZRklobWk3U1ZWdFdQdlN3ZXRhc1FmTmtyTlhBZUQ2V3FNVnhjY3hCNEw2N1EzSmlGUWUxd3BNNFRDeFhkdGNfYm5DUjc?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Gameweek 23 transfer radar Premier League",
+          "published": "Wed, 21 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "FPL GW5 Rankings: Best Players & Captain Picks",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOLUtWUTk2S253ZkpFR2hfV2hKQW82aEJxQ1kyR0RpTmxUbkdxYnlBeHhocWFKV19KVnBZLWhSMDVMT3hXVlg1WkwwM0tsckVNajd1QmhJc09IUXBtX2dodkM4am1LM3NaSHpubXRuSkFCU2ZNSk94S2N2NmI3MVI3SC15TnEySjFVOEFVb3hOX2ZtU2pWOHB0UmJRZmo1b0dKbFMw?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW5 Rankings: Best Players & Captain Picks RotoWire",
+          "published": "Tue, 15 Sep 2026 11:54:00 GMT"
+        },
+        {
+          "title": "Contrasting fortunes for most-bought duo in FPL Gameweek 27",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORmJBanhyRUphRndWODcxOWY1VDFFMXBSTTdXNzFXTFU4RlpIS1VxMHc0ZFQwa3A1Ql80dVd5TTRuM0VUX3NHT1M0VGFlN0ZOcHBMUUlFSndTa2l0RkFSa3FOT2NUN25JZmlSN19DN0dWYnpSSWQyT3FEd3ByTGRyZ1JnRVNIRWVYYkJEZmc3bVYxSFRzU1czYnB3S3V3QjU0NEZmLVB1elE?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Contrasting fortunes for most-bought duo in FPL Gameweek 27 Premier League",
+          "published": "Mon, 23 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "FPL GW2 Transfer Targets: Best Players to Buy",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVGpIYTVPMkwtN0h5NXppQk1MZDgzSEVfb0dsWGd1aE12aEJUdDdBdUFTWVF5ODVBOVotVVAydTFjUWJMR3dNenlGd3oxdkx1YVhnQldGZU9QRTZwZWlrQVNCWjFRbWdOSUVkVlowS09ocG14VnM3TktaMWQxMnUtM2hRMmNYR3BlTXpuZVAwU2NWZUVTa2lRN3lrNEw1QVFwSUE?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "FPL GW2 Transfer Targets: Best Players to Buy DraftKings Network",
+          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Who is the best FPL captain for Gameweek 12?",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNeUxqT3l5UzRmUzdRb240OVhqbGpyN0NEZFlLTDBpRTExTGVWSXdxMEI0aEpqS3pBQ29nUmMwdGZORF9DYjBlS3NjSUlfd1VCSGVQMU5ZbXRfcWc0czdaWnlQdm9WMkRfWmlVQjlJSWZtekZpSlZ0TEpCMG95RHdJSWhZYU42YnVPbjJvWTVR?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Who is the best FPL captain for Gameweek 12? Premier League",
+          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Gameweek 6 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTlBrdTBpRFpKNlVRT3dpM1hOaUZJdDF0MFFxX1BDRHhpWW5aelhuWTVaMUY4RThPbENRS0ZwR2NzNHZsaXAzQWZraFR0bWQ0NlhvQVNLNEdhNERNdDU2dTJmZ3EtcDNVNTk0M0FYVHpXZ0trOUpud0d4b05LaTVLempKNFd4Yi1yZXloUGtLMA?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Gameweek 6 transfer radar Premier League",
+          "published": "Wed, 24 Sep 2025 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Gameweek 6 Transfer Trends: Mbeumo IN, Salah OUT",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB2aklzNnRDSTREUlpPNTFIcFJsNnQ3bURDT0ZsZ1RKczVIaF9aZUFTSldsWkpDSmdRRmNKSWFIZ25HSmd3a21jb0tEbHJYalAxX0RVbmo4RThiSDJrcWhyUnNuZkdjQUYzc084a3RpSkRPMVhnS2tPOUtXUHZ3QQ?oc=5",
+          "publisher": "fantasyfootballfix.com",
+          "kind": "x",
+          "snippet": "FPL Gameweek 6 Transfer Trends: Mbeumo IN, Salah OUT fantasyfootballfix.com",
+          "published": "Fri, 27 Sep 2024 07:00:00 GMT"
+        },
+        {
+          "title": "Salah, Mbeumo & Saliba: Latest FPL injury news for Gameweek 16",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYkQ5MEliQ2ltcVY4QnlWb2NhNkxJbmg2ZDM1emt3MnhYVlU1MEx2MXE5cEM5T0Z3amJsaXdwVUN3Sl9TR204LVVER0p5dTM1WEt4eEJzMDRSNXZjbld5QXAtYWVYQWZlLUF1OGJRQ0JQcjZvbm1YSHZMVVNYRnBVVkJYVnZ0N2VHZXlJdmFIMkFGYlhLV0Y4cUxDODBiZmF1WDFTU0c0RVU5SGRMOTZVdTdybVRVaG1x?oc=5",
+          "publisher": "3 Added Minutes",
+          "kind": "article",
+          "snippet": "Salah, Mbeumo & Saliba: Latest FPL injury news for Gameweek 16 3 Added Minutes",
+          "published": "Fri, 12 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "FPL Challenge: Expert reveals their Gameweek 37 team",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTy1zUFRwclVJTGVTajBQOG5xaC0tRUhMRW9Ed210QkxGUmgtUkhRc3F3dG5QQi1lMXZ6NTV0bFJzUnBtOVNiZ0hORjZBVkZncDdJWlJwdWlhSzV2Y1FrODk3VW5xLVRSVGViMlJGdXhyTnMyVEdKRzZwYURSVmd6UEgxRGFtY3RkZlphdzNSX25EQ0xaeUNWUXZLMFA4dw?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "FPL Challenge: Expert reveals their Gameweek 37 team Premier League",
+          "published": "Thu, 14 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Gameweek 20 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQek9NYnFEajRvc0VvRi1oQ0tWc2c2T0N2aGUyZGxKNDd4d3VxcWNLdUtDUVh3VWJSVkhPNkdQZlRCUy15MGRxcnJYRXgwNkFrRWp2ZHBhb2FtY2ZVSVBYR3N6TFZWUmVURlRzQVFmcmxDbGhpVnRGZWc5VXRobThsbmFOZnFZLXZfWFRITWFJNXQ?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Gameweek 20 transfer radar Premier League",
+          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "The Scout's FPL Gameweek 16 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeW82T0x3MlJxbWJEQ2dxRkU3QVQ2MDVJaktkMzBuZ3NDOF9aQ0x6TVFpcllMeGhMVHR6c3dTbWtza19wRll3S2lOTmctMHp0REhoUHRCSHYzaktoWE1aUC0yTmFpa0RsZE9aTy1NTG05Rm1IUUpicTVSWFY0X3FodjdlVWhvOTBSWnhtcU9BcC0?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "The Scout's FPL Gameweek 16 transfer radar Premier League",
+          "published": "Wed, 10 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Scout Selection: Best Fantasy team for Gameweek 20",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeVc4N3dKNVFOaXphNjROZ0xMUlFtNkJ4X3hhQkhRWnZkSkY2SkNEYWJaY0Nhd3JlRy1HVGZBalRPdHE0dU1OZmc3dmdpWF8yRGZCV185Q3ljaTR2clNaX19FeTRWZlo1SlV2dGtTYTUwZFltYjZzb3k3bnd4ZUdkeTh3UXZ2Vi1yeFZQUldTLUZMN2xlZGxLb053dw?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Scout Selection: Best Fantasy team for Gameweek 20 Premier League",
+          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "The Scout Squad: Our top picks for FPL Gameweek 37",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNjE3Qi1SbzJSWnJxMEJzdVhYV0dMcW5Sc2VDaFNCNjB5blhYaTJWcUZteGpxSVhRZHRycUFXb3FLR2hITF9WaTdndXJ1NXZwa2d5TXB0bFhLUEYxOWNQOVJscjhLMmVDYS01eWJzNEVyNlZtaEtnYUZISUVCN1l2T29WSjdDclFrNUlOd0V3WjZUNEI5cklRQnZBWHpObGpLSHVsVA?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "The Scout Squad: Our top picks for FPL Gameweek 37 fantasyfootballscout.co.uk",
+          "published": "Thu, 14 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Gameweek 31 Tips: Best Free Hit Team, & Top Transfers",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVW0wRjRsbm9ZcFhsR3oxQUw3MmpLVlY4Nms3amhJRzVxWUJ5U25zMlpsUzdMSlFUWF84ZDZXbVM1VXpJUmZBenFoSW1MTG5yZ2dhanVraHFjSGF5cWVfMUZ2QW5NNVcybkVPZnF4b2JNUG1hTVBsejBKazVMajRwZE5xUXp5QQ?oc=5",
+          "publisher": "Fantasy Football Fix",
+          "kind": "article",
+          "snippet": "FPL Gameweek 31 Tips: Best Free Hit Team, & Top Transfers Fantasy Football Fix",
+          "published": "Fri, 20 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL Transfers GW12: Most Popular Moves & Transfer Tips",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaVNwcjFTUmpwdFo2aXY5SFJuVnZRS3pTZGRKeVRIZWF3R3hPSURFZlhkRFNZclZMZDRkYnE5NF9SODZoRkRULXNjbVE0cWRvc2o5Y0I4dDZpT0xPd1gxWXZYck1WS2J1YjZ5ZDNjMTJqWTc3WHJheXhvblJIRS1lRVVn?oc=5",
+          "publisher": "Fantasy Football Fix",
+          "kind": "article",
+          "snippet": "FPL Transfers GW12: Most Popular Moves & Transfer Tips Fantasy Football Fix",
+          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "FPL GW31 Wildcard Team: Best Draft for Gameweek 31",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdWZ2TmlKWW9JWlZJaHExc095VUNYc1ZBRWdGRjRwYTFNSDlQR0NkSmZBTlYtR1Vvc1NxV2doMy1iejc1WFJKYzVtazZtNHJRN0FqRE5XYVNYZUw0TVVrRER5bnVRdEZMQlQ0ZVEyYTk4TVYzUnlnZmpabDJCZEdCR0FTR0ZFUVRHRmpLczBtUGZKSkEtT2Jn?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW31 Wildcard Team: Best Draft for Gameweek 31 RotoWire",
+          "published": "Fri, 20 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Gameweek 37 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORTlBWXdWQ0ZYaUhEQzBZU2tkUVg2OWJTQUJOeEI2Mm1GczFPRjhaZjU2T2ZJUWRsUFlRSWkyMU03V3JoNGx0OTFYT2dQSUxMdWViVU1TQ2NHRS1VQ0VkcklSLXlRY2NnWERNR3J2U01ra0dQZUczanMwZDRKa0E3U1lYYlQwVW1ocFJ2amNLSEg?oc=5",
+          "publisher": "premierleague.com",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Gameweek 37 transfer radar premierleague.com",
+          "published": "Thu, 14 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Scout Selection: Best Fantasy team for Gameweek 29",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeFVaWVUwRk9qRHBOM2drdGFNcWlXVW9TNWpiS1pZWjJVMmlXWUc5Qm80ZHYydVhoNTUxOG02UGFabTBVUmkybmhfUHc1WlZhbTN4OHZ3cjY3YzVZRWdXaHJlTkZXSXU0ZERGNmJqbkRXV2gyeDZDenJEWkU2V2ZvR3Vwem9XSXB5R2ZVT3lSWXBlT01hOWNtQ3J2RQ?oc=5",
+          "publisher": "premierleague.com",
+          "kind": "article",
+          "snippet": "Scout Selection: Best Fantasy team for Gameweek 29 premierleague.com",
+          "published": "Mon, 02 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Fantasy Premier League: Our best picks and hidden gems for Gameweek 17",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPZ1Y3LUh3akZaSkFGaU9ZTG9GRmtwRmNsTkp6MnY5MXV2eDFDeGR1VEsxR24wMjNYZHdEMmc0V05VY3dlOHh2cGNVOXN6RGxpQktYbnlvQmNrY1ZVX3VMSlFmYXJrSHNtcFp0VFdBQTkxbmhiZnhKeGhSZ2FUd0hENjRrbllFRG5KYUc3bFhxMEVfa01jM1pOUzZzMWsteFZWWU9yMkIwYm5Fb2pNOF9oaDh3ZVhGT21NODM0UlVzRWw4Qm1KS3pYUGFXMnRXN0VHaDJ0YXljbWpzaEtaejdzM3NuRVlnVEMyeldSQVVDRk1WVkxYcXNvQzJsZw?oc=5",
+          "publisher": "tribalfootball.com",
+          "kind": "article",
+          "snippet": "Fantasy Premier League: Our best picks and hidden gems for Gameweek 17 tribalfootball.com",
+          "published": "Thu, 18 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "FPL GW37 Free Hit Team: Best Draft & Strategy for Gameweek 37",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONW1jWXZjMWJ1Y1dOY3liOUUwSEYydklaZmtTZWNKVEc3c0dubld1Mm1mdWl6UXUtNExmaUlKLU5oM1lKUWU5WVZXVE1RNlNXS0d3NTlqTWdVYUlIV29sZlI1b1hnX3pqZG1LOUczQTQxVlVFalV2TzhCcHFvOVlieW4zbF84T2lGcG9veE1aQS1rWmJnT3lGQzRHQjlST1ZuUmJF?oc=5",
+          "publisher": "rotowire.com",
+          "kind": "article",
+          "snippet": "FPL GW37 Free Hit Team: Best Draft & Strategy for Gameweek 37 rotowire.com",
+          "published": "Thu, 14 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Mixed fortunes for top FPL captain picks in Gameweek 4",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORmpfSDdFUDJCNWZlMzVPbS12QnZGZGEwb042R00wTzZzbmgtQ1lUVjVTb2pKTkJmRWFPajdTczBPX2VHbkVvUHhHZ0J5NnB2d1ZiS2RkZnBrd1pVTnRIcWIwZHcxRzhrRkxQeWF2UkJYaEdFSFlFZTNWaWxzaUdEeDRaY3FvUXZMSGJQQ3l6S3BKRU9aVkpheldUMmI1U3pWZHc?oc=5",
+          "publisher": "premierleague.com",
+          "kind": "article",
+          "snippet": "Mixed fortunes for top FPL captain picks in Gameweek 4 premierleague.com",
+          "published": "Sat, 12 Sep 2026 21:33:23 GMT"
+        },
+        {
+          "title": "FPL Gameweek 2 Differentials: 5 Low-Owned Picks",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZmppdUE0cWRYT2hzN0hGNWV6YWJ2RW8yX2VDaF9xM3NDLTJJOE84dmRqSi1tTV9OWXZFNVVhZ3paVGpNT1FhMURydU8tX0tENXpuc1QtWDRHZGdmT1Q3WWtZZ0NaMWtoNlhyTHpqdjBFRVJKcnliM3Y1Q3g5TnFxdg?oc=5",
+          "publisher": "Fantasy Football Fix",
+          "kind": "article",
+          "snippet": "FPL Gameweek 2 Differentials: 5 Low-Owned Picks Fantasy Football Fix",
+          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "FPL GW33 Differentials: Best Low-Owned Picks for Gameweek 33",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMV9idWJJNFNXNE5icWdSLXJna0R6ekhoZGYtN0xjTmlUMHdiV3I1MEJXUmNmaTFuVExxWm1IczNZNkVWZDFDNEhQS2xvdEthdjVvdDQ3ZXZHSTZiNmx1TUt6dnJGeXhFLVZqQ05jYzZ0WWdqV2NBbkwwZlVJWG1DenFVWjhCdUlibm1LaWpydUNsWk5QRjFZa1h5cDExNnc1LS0tWk1qdW50WXhlc3ZzclkxUVVha1E3cFE?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "FPL GW33 Differentials: Best Low-Owned Picks for Gameweek 33 RotoWire",
+          "published": "Fri, 17 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Who is the best FPL captain for Gameweek 5?",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZWlXa0NvT1NZZnktSVlPWFZpZUl0NzMyUDVPWGNES3ExRzhhSXhXMzl0RmRyRnI5ZjhMRk5xdU5wRlQ3eEItRE14eUhZZXRPWkw4Y3ozcG5aYUtXWUFVdDJjUGNvV2N5bWV3c2UyX3NrZWlYTVBCd0lNUjFwTkVXb3d4bDMxX09ZRmIyUmFObUp4UQ?oc=5",
+          "publisher": "premierleague.com",
+          "kind": "article",
+          "snippet": "Who is the best FPL captain for Gameweek 5? premierleague.com",
+          "published": "Thu, 17 Sep 2026 19:23:22 GMT"
+        },
+        {
+          "title": "The Scout’s FPL Gameweek 4 transfer radar",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRHI1NHUzRno1ZUFWeDc0N0l1bktlVlpSQ1VSWE9oV2NVanZEdEdFZkNQckNnMDF6czgwVkpzRV83Njh0bl96ZEZDRTNIWV9pVGJUX04waFFLWHJKREJCd19NalRnbmZZMHNYZ0xIdnVjMzNxaU8xajNjZF9TOXY4ZGgzZ2JZbEFxanZhcWZGbw?oc=5",
+          "publisher": "premierleague.com",
+          "kind": "article",
+          "snippet": "The Scout’s FPL Gameweek 4 transfer radar premierleague.com",
+          "published": "Thu, 10 Sep 2026 22:31:03 GMT"
+        }
+      ]
+    },
     {
       "id": "fpl-triple-newcastle-injury-blow-4-5m-bogle-ad8e8ff8",
       "slug": "fpl-triple-newcastle-injury-blow-4-5m-bogle-ad8e8ff8",
@@ -3207,17 +3964,24 @@
       "id": "arsenal-get-jurrien-timber-injury-ahead-man-city-30ca2385",
       "slug": "arsenal-get-jurrien-timber-injury-ahead-man-city-30ca2385",
       "sport": "soccer",
-      "headline": "Arsenal injury update: Bruno Guimaraes, Jurrien Timber and William Saliba latest news and return dates",
-      "blurb": "Ben White and Jurrien Timber injury latest as Arsenal plot to keep duo fit this season Metro.co.uk",
-      "summary": "Declan Rice, Bukayo Saka, Bruno G., William Saliba, Mikel Merino Zazón, Max Dowman, Noni Madueke, Cristhian Mosquera and Nico O'Reilly: Ben White and Jurrien Timber injury latest as Arsenal plot to keep duo fit this season Metro.co.uk Arsenal vs Coventry City injury news as 3 ruled out and 1 doubt Yahoo Sports Nico O’Reilly injury latest after missing Man City win vs Coventry Metro.co.uk Aggregated from Metro.co.uk, Yahoo Sports, football.london, London Evening Standard, The Independent and 11 more.",
+      "headline": "Arsenal injury, suspension list and return dates for Chelsea: Bukayo Saka, Ben White, Kai Havertz latest",
+      "blurb": "Arsenal Transfer News Today: Two strikers wanted after Kai Havertz injury footballtransfers.com",
+      "summary": "Arsenal Transfer News Today: Two strikers wanted after Kai Havertz injury footballtransfers.com Kai Havertz tipped for Arsenal exit amid €90m transfer battle footballtransfers.com Arsenal vs Coventry City injury news as 3 ruled out and 1 doubt Yahoo Sports Aggregated from footballtransfers.com, Yahoo Sports, Metro.co.uk, football.london, London Evening Standard and 14 more.",
       "category": "injury",
-      "published": "2025-12-01T08:00:00Z",
+      "published": "2025-08-28T07:00:00Z",
       "updated": "2026-09-17T13:13:00Z",
       "players": [
         {
-          "key": "declan rice",
-          "name": "Declan Rice",
-          "slug": "declan-rice",
+          "key": "havertz",
+          "name": "Kai Havertz",
+          "slug": "kai-havertz",
+          "pos": "FWD",
+          "team": "ARS"
+        },
+        {
+          "key": "eze",
+          "name": "Eberechi Eze",
+          "slug": "eberechi-eze",
           "pos": "MID",
           "team": "ARS"
         },
@@ -3225,6 +3989,20 @@
           "key": "saka",
           "name": "Bukayo Saka",
           "slug": "bukayo-saka",
+          "pos": "MID",
+          "team": "ARS"
+        },
+        {
+          "key": "merino",
+          "name": "Mikel Merino Zazón",
+          "slug": "mikel-merino-zaz-n",
+          "pos": "MID",
+          "team": "ARS"
+        },
+        {
+          "key": "declan rice",
+          "name": "Declan Rice",
+          "slug": "declan-rice",
           "pos": "MID",
           "team": "ARS"
         },
@@ -3240,13 +4018,6 @@
           "name": "William Saliba",
           "slug": "william-saliba",
           "pos": "DEF",
-          "team": "ARS"
-        },
-        {
-          "key": "merino",
-          "name": "Mikel Merino Zazón",
-          "slug": "mikel-merino-zaz-n",
-          "pos": "MID",
           "team": "ARS"
         },
         {
@@ -3606,6 +4377,118 @@
           "kind": "article",
           "snippet": "Ben White and Jurrien Timber injury latest as Arsenal plot to keep duo fit this season Metro.co.uk",
           "published": "Thu, 17 Sep 2026 13:13:00 GMT"
+        },
+        {
+          "title": "Kai Havertz, Ben White - Arsenal injury latest and possible return dates vs Chelsea",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOT0hydUQ2VlhvUkl1cy1HM0Y2OURtUDRUVEF4QWFWcWcyZGVrM2lYajNwT0xVYTlDTTdMcWhTRzF2Zl80TFBSSmduUWVSZGpvU0xsaWRWV25Uc2FJeWZTSC15NUVPdFFfQVdCVWRYeEt5Q3ZXNGY2ZzZRajYxR1hGWWYyaWcyNlVodm5VUzQ3Uk9Qc0lOV3fSAZsBQVVfeXFMUGtpTDlXRVZqbnVINVAtclpYOVM3TS0wRDdjWVlWQy1hN2paM0VBOTZDRkY1dk5rWC1Ubjg4dktPa0tEaEtrS2pEYl9LZmR4YWZ6MDhFd1NmVWVVcGk0NlBqRmZCelg2dWw3Z0JlR1MzZHRVZ1NOMTJzWjFZcnV2VlU4TmpjYXNJTjBXaENnVVJxNVAzZDltVVlkZHM?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Kai Havertz, Ben White - Arsenal injury latest and possible return dates vs Chelsea Football London",
+          "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz injury timeline and Arsenal games he looks set to miss after crushing new blow",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZTNrX25tRDBnRHRZeHRaenhhMGdPcHljdlRGWHVsYVlSYTlhcnI0eFB5TTg0YTFqLVdhbEo0NV8yS192T2R6YzhrWXNHbXRRSzNxV18xeG0xUzE4NVBMdUJfdUFzV2hlZUJEM0NyS2hCdG1QZmMyeVluTUNacTFfUEY3MkV4SEc1SjFkY0hDRldUd9IBlwFBVV95cUxNNVlTeFZYRm8wZzByYmlCT3Y2c2Zpa1pqNnhMODA1S3lBQUtzVzZEeWx6NlV4bUM5NVJ4MU5ha293QnhfSVAydkVUNDgwUVA5UlJXZkd0MDZsYm9tenRNVzNKMWxIS3p0c0M2TF85STZSRmxFVUtVdG5JTmVrcWE3bXp3MU45OTBSNnRnaEQ4T1dqSUhiVmtr?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Kai Havertz injury timeline and Arsenal games he looks set to miss after crushing new blow Football London",
+          "published": "Thu, 12 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Mikel Arteta gives injury update on Arsenal duo Kai Havertz and Eberechi Eze after latest blow",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZmV2dzNkNVBZMjNYbDd2Nk1sclhuWHdhcnVkckJpVDJIWmlRekh3RVlLclh1aVZBREFwQXlVSzRaTHpXaG5JZ3p2YkVLMVlQWmpIV1M3cDY1MnFLVkRXeUJqcldnbWJyT3dXSXQ3WWFVN1A5RlJQRHljeUFZRGtucTZoelBCZFAwYVp5dUtra9IBlAFBVV95cUxPSE15dFY0VmcxNFQ5dkdyNW5YdlBwU1hraUgta3F1dUxaUlRFR2ZlT3pVc2xLdnkwSEJWb3JKUS1tUlVWekQxdFNMQkdnSjhtZnVpdlV2MVVhU254dHJMUTloS045bFhic3JTM1VGYTM0d1V0SUUwalNVQlRxaHBDaFE1X2JsakFnQkZra2xlSFlqZTFU?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Mikel Arteta gives injury update on Arsenal duo Kai Havertz and Eberechi Eze after latest blow Football London",
+          "published": "Sat, 25 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bukayo Saka, Kai Havertz - Arsenal injury latest and return dates after new scare in Spurs win",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNenp3VVFYWE43eEctdkdyWFRBWXJnQzVyRWJ1MVpCaDA1UG9TTlItYmJBM1YzZzFMeE1pRGxlVGxSdk9JclhFYnRkUFRFSUNDdnB1ME84YmI1ZmZaaVlaVTFtOTdoc25WR0U1c1NScUVYUnV3VUdSc0RLNC01Yzg4MG5tYjRweDNNWkhnWE5GTEjSAZYBQVVfeXFMUHZySk1HWC1xLV8xa1NpVjNOOHpQNDcxUFpvNjdLZVhNbXVZSHd5WF9rR0wwZmdQRXR6LU52UV8yam9aWndoS1JkQ0ZZQzhZNXVLZXNqRnBHNzRuYjNUQVFDVS1qMTJyR1IwV2VmaDhUMkE2QmVLY3hORVhGbXJOMGNKVDFNQ2paaGxqX1pQNUpHR285WFJ3?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Bukayo Saka, Kai Havertz - Arsenal injury latest and return dates after new scare in Spurs win Football London",
+          "published": "Mon, 23 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz and Mikel Merino injury update - will they return to save Arsenal's season?",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSThPMkk1SElBYUVjU0xpRXNpOHYzYkNWcmpZUmZzTkp2cks1S3hzTTBVMVBqVlpzVGtlX0dfU3lqV3dpRkFpNTdPVVF6YjZXaFB3aGxwTmMxcndvTFc0cWpHcmpqaUI5RU5jX29wdF9jUHh2OGlha2dZenRGQ0lqMzYydWhzUHk2bVBjMU52TUVFWjZNeU1ycnJmNjJ2QUZrRWRaZVNZTlJIU1loX3Jkdy1n0gG3AUFVX3lxTE9XdVJaT19ua2tMSVhXSVdXcUl0bnBXaXJWak5OLXd4aHZxYjFwLU5WMEZVNThzbk41dy1nR0x5SHJOSVNTbmNqV0xXVE1wTklVa3g1UHJ5Ump0UGNBSkduR3NXVDEtS3hITmgybTFDSjhxM1poUnFTSi1LejM3TGtvLVdZM0xvTy1qRFJMcGZMOWR4YWdQVmpFMUh1T3huSjNxeGVzbTdHUk4yYTNZSEdYSy05cVZYZw?oc=5",
+          "publisher": "Metro.co.uk",
+          "kind": "article",
+          "snippet": "Kai Havertz and Mikel Merino injury update - will they return to save Arsenal's season? Metro.co.uk",
+          "published": "Thu, 30 Apr 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Two Arsenal stars ruled out vs Liverpool as Mikel Arteta provides Kai Havertz injury update",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbU1oZEI0MzNNTF9KNGtHNmpJcVUyNHlHMURPbWdaLTJ0VzQ0SkhYWTZBRjR6MHlOYWxhWjJKNTFjMnI5WkRsR01pQ0ZqMjh4Mk9nZDR6YUNlR1Y4aDdHZEJnUzZpbFRJZmJZSGFzbXNaVllMcXBwaTFDTnJPNEM3RWxRWkxYdUZ1WDEzNGFUVVd5eU9FN19zS1V3d9IBoAFBVV95cUxQTWpKX3BrMDNGcktaRmVpWFhwdnlNLURQVFFHYlRaczNudUFwUUdRS01LNlVreTdIRVFZNWh5ZTRnd3lLblN0YW5uTmk5OWZKNnVDUkIwdjlDY3o0bTRJemFhc1ZPdHFuR2JsSHhyNy1yVVVHQXJLamFYZS12T01yMV9TRjZTcDhiaWJsZTdqYzlZX3dLZDFxMW9fQ2lXb1h0?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Two Arsenal stars ruled out vs Liverpool as Mikel Arteta provides Kai Havertz injury update The Mirror",
+          "published": "Wed, 07 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arsenal receive worrying Kai Havertz injury update",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQS3Vhc0g2QmNRYm9pTUsxTkdROGxEeXYyMUZwdFYtVjJGUGZzeEszZDQyUEtaNGcyQmp5a3ZxYWd5eG05NW41cFNpRkh1c0FlUUdLXy1qT3dQWWYzcE9QVkpoWHJ4M3YwQTR5UUNwRnBCOFNqaHdlS3g5WWROY0NZUDVJQ2ZaZ3RLUGdMczJJdGNXUEVNZnfSAZsBQVVfeXFMT3RfRWtoaHkxQkE4ZTBVd0lwSm1lb3dVODhwSG56V3lZWVNQeGYwcTdNYnkzVTg3OWcwcERVd0RQX3gzc0ZGbXZFejJzOEQ4OXVDTVpYVDZCYkJfT0J5SndoTFNoelVJZm1zVENVNVBOWWphVm5OdkdfT3FjdFFFU01qMGwzZVdSSzZrMVY4MTZuNVBRWW1EUC1valk?oc=5",
+          "publisher": "Metro.co.uk",
+          "kind": "article",
+          "snippet": "Arsenal receive worrying Kai Havertz injury update Metro.co.uk",
+          "published": "Wed, 19 Nov 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Arsenal injury updates ahead of Liverpool clash: Bukayo Saka, Martin Odegaard, Kai Havertz and more",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdldyd2d3QmlEQnpIMk1mc1drU1lHaGFYZGxWZ0VMZlRPM1hKeldkdXFraS1NTkxHSEp0NHFQTEtWWHJHODVSYkhBdnlNS0VJR0tpM1laMjFuY3VFbmdESDJ4NlFibWFkTENlMVMxV2h3UFhfT19qdjB1TDhpQ1BBZzB2cXV4WVZsUnpzU3U2UQ?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Arsenal injury updates ahead of Liverpool clash: Bukayo Saka, Martin Odegaard, Kai Havertz and more Yahoo Sports",
+          "published": "Fri, 29 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz suffers major injury setback as Arsenal star needs surgery",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOblRKbUJFaThLdzgzMVhFZHpFbXdkOV9Yc3VVdEcxeWtxWjNWQ1BHVHBudGluR3NYMVo1V2h6dmRzQXlTSTlJVy0xRkJpRTVGcDQ4TnZhd0FWRUU3Sk1CTGMzMjZHbVFGUjdZWFdwR1dGYkc0TEc0TE55T2hBWjZMZnh2em1kY0M1LVFlbTNkUUh4NFMwQmpZdA?oc=5",
+          "publisher": "talkSPORT",
+          "kind": "article",
+          "snippet": "Kai Havertz suffers major injury setback as Arsenal star needs surgery talkSPORT",
+          "published": "Thu, 28 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal receive late-night Kai Havertz injury update before they face Chelsea in the Premier League",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMWF3c0czLW4wd0lfUnZoZWxHRDh3VDdPdnFiOGxKa21yRVN1cTB0NVg4OWZ0enJyM2hBSVI4Yjg1cUNIb1BJRkJMSk9Fby0wVWVXeC0xV25MRWd5UVVCVmpvRHRtVnBRX19fUW94MFlfQUIwMG9CYkxSMFBkVDFwb2hXeVQtRkxRcldDaVBRR25hQkh2d29uUE91alZOQk5LRzdnX0JYX0xsU0dEWl92MmdYS2NwV0RaZTR3aU0tSTkxeHFzaWI5UXUzSXU4Mlpu?oc=5",
+          "publisher": "Arsenal Insider",
+          "kind": "article",
+          "snippet": "Arsenal receive late-night Kai Havertz injury update before they face Chelsea in the Premier League Arsenal Insider",
+          "published": "Sun, 01 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz injury situation explained as Arsenal staff verdict on recovery revealed",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUVZqUzJWZHplcUE3cmJ0OEh0M2xUSHpRNUhtN1pvbEJIbVgtaC10dnhEbEViVTFlMzVzeFFaTEJKZFNELXJDdk9RZG5HSGF5cXE2a1NGU0lGYWlwUEJzV0pEYWpQNkNwNTNiWjUybkhudjN5QmhJZU1LWFFNUGxZTnhpeDBJOXZpOEpTamJKNVdKVGg2RVo0bUg3MktiVHhmSXhzdy1lajNNa1phQzZacmpfbEpvLUd4cnE1dDBR?oc=5",
+          "publisher": "Arsenal Insider",
+          "kind": "article",
+          "snippet": "Kai Havertz injury situation explained as Arsenal staff verdict on recovery revealed Arsenal Insider",
+          "published": "Wed, 25 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arsenal injury, suspension list and return dates for Chelsea: Bukayo Saka, Ben White, Kai Havertz latest",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNNGpMUExsT19JUmI5Z1o2SHk3eEJ2dlozTzhGNmFvSVBZTWliNDY4Ty12eGFyY3N0SkRWM1ZXT09zc3pwY1pCeGpNM2tTNnRYVlRfeE81bGhYQ0F6MnJGRlBmQnowbDJTbTRCU1FNRUtUM0NfYndMN3NMNHRSQ01rVS0wR0QyQUZtbHRKMlZQQkUzcXpCWHhYVXFHYTQ3d2l4Ni1zZmlHSVFqUmloeUZLY3hRd1luczI5WXFtTlhGQVR3TENDSWJYM1JVNnJZWkxvQnl1N2MyTkZjaGN6MTBXRFBsU2U1ZXNLM045SVZFT0dSMlU?oc=5",
+          "publisher": "Sports Mole",
+          "kind": "article",
+          "snippet": "Arsenal injury, suspension list and return dates for Chelsea: Bukayo Saka, Ben White, Kai Havertz latest Sports Mole",
+          "published": "Fri, 27 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arsenal Transfer News Today: Two strikers wanted after Kai Havertz injury",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNMWRkZGhqUHhnd3hfaERqbnlqUUl2YzNSNm1Cek45ZzlSalNtb2YzckxESUxzMFdBbTNlaE1pQVVSak1DU0Z4ZVFqU0VOMGo1anZmMHo0MmVCTmJBWGYtbTFiNC1iVl9iRDhCdEJaVnFaZDFWakNoNnNGLVliTERFT2ZkTzMtc2JpR0s1cDc0VDVfMDhJNzZvRlMzeUxfYlJPN1gxQjRpeWNsNDFFOEc2WERpYnNsOHdZZXdPQ1k0dnhlVDhiaHJyUG43Rlk3akxFR0hheWdOUUVCWEZIMUJjQU9RYkE4TEZpVFhyamRR?oc=5",
+          "publisher": "footballtransfers.com",
+          "kind": "article",
+          "snippet": "Arsenal Transfer News Today: Two strikers wanted after Kai Havertz injury footballtransfers.com",
+          "published": "Fri, 13 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Kai Havertz tipped for Arsenal exit amid €90m transfer battle",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOT0ktNlFlMDI1WUY2eHdsN2FEU0dJMU9KMUhQa3FBWDFVTldxbW02MXUyNFZUbnduT1ZpaDhpRjVMRUpwcTZuMEZaZm1Ca2RSX3p1VXpnRmp6MWk5eXRXT0luNzJQMVlmU2k2QWJSeEdreUJ6SldHdF81NWJBUTBqWXc0emYwbU1MTlFxV0RuTTUwWFhxcjRiVHJibURCdGF4c19oRzVmZGJaVUJ1MEplamIwUVBGbmtjeWNQMVB0VGowR1RadUpqNQ?oc=5",
+          "publisher": "footballtransfers.com",
+          "kind": "article",
+          "snippet": "Kai Havertz tipped for Arsenal exit amid €90m transfer battle footballtransfers.com",
+          "published": "Fri, 28 Nov 2025 08:00:00 GMT"
         }
       ]
     },
@@ -5429,6 +6312,122 @@
       ]
     },
     {
+      "id": "joao-pedro-dropped-brazil-national-upcoming-matches-due-a986156a",
+      "slug": "joao-pedro-dropped-brazil-national-upcoming-matches-due-a986156a",
+      "sport": "soccer",
+      "headline": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury",
+      "blurb": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥 x.com",
+      "summary": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥 x.com 🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury reuters.com Aggregated from x.com, reuters.com, YouTube, Premier League.",
+      "category": "injury",
+      "published": "2026-08-24T08:09:34Z",
+      "updated": "2026-09-17T14:29:38Z",
+      "players": [
+        {
+          "key": "james",
+          "name": "Reece James",
+          "slug": "reece-james",
+          "pos": "DEF",
+          "team": "CHE"
+        },
+        {
+          "key": "joao pedro",
+          "name": "João Pedro",
+          "slug": "jo-o-pedro",
+          "pos": "FWD",
+          "team": "CHE"
+        },
+        {
+          "key": "caicedo",
+          "name": "Moisés Caicedo Corozo",
+          "slug": "mois-s-caicedo-corozo",
+          "pos": "MID",
+          "team": "CHE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. (@CBF_Futebol) #CFC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZcWJycF9ldGZFZndCWFNPMUxNdzF1dXRBLWw3dllzSEh4Z3FWMHpiRGhKY2hfWXdSMGhUY2V1WkpJUVMwWjJTNVY3UGR4VUUzcWFHTkJNREFoX2M?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. (@CBF_Futebol) #CFC x.com",
+          "published": "Wed, 16 Sep 2026 17:12:30 GMT"
+        },
+        {
+          "title": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdzhSQ1lVZmdKbWoxQkJhR3RZaVB5REhzQjN3Z0VETndHbVBjSVJ6VjVjNWVocE8xNkZlblNMNFVaYU1VcEw0TUNVRFJyR0RQaHN0SlN6OFlIZHVsVUFJcHJ4UE40MFpJdTkzZ3RSUy1wZzVfRklkZXJDbGd4Vkw3WGJ5djhRRmhnQmo3RkVEbk0zVXRra1ByT1pPRHAtRmdTcVZrbmdHaWlpSUh3cGNaRXBoMkwwMFVTTkJfRUFibHd4WTZGSHFV?oc=5",
+          "publisher": "reuters.com",
+          "kind": "article",
+          "snippet": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury reuters.com",
+          "published": "Thu, 17 Sep 2026 03:15:00 GMT"
+        },
+        {
+          "title": "MY FPL GW5 TEAM SELECTION! 📱JOAO PEDRO INJURED! 🚨🇧🇷 SELL OR KEEP? | Fantasy Premier League 2026/27",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51OUt0UFB1ZHRRRWFyLWZzWF9QalNzaFFGcUpfRWFLYWJaSHJfMHFaVXRLVkZEZ1pfZmFabWJvb3E1eldmVkw0emgyX05PS09mTm11M253?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "MY FPL GW5 TEAM SELECTION! 📱JOAO PEDRO INJURED! 🚨🇧🇷 SELL OR KEEP? | Fantasy Premier League 2026/27 YouTube",
+          "published": "Thu, 17 Sep 2026 08:30:02 GMT"
+        },
+        {
+          "title": "My FPL Team for GW5 🔥 João Pedro INJURED 🚨",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBZRkhhSzkzWDNydURxMmtRQW5sUE5KeGtpZmRTaTdxbGJ2ZTJ5eVJ5ZVdQTTlvdFZiTkFfc09CNXNaOE5pZFFNOFB4cXJoa2ZWRXpLT01n?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "My FPL Team for GW5 🔥 João Pedro INJURED 🚨 YouTube",
+          "published": "Thu, 17 Sep 2026 08:10:46 GMT"
+        },
+        {
+          "title": "FPL GW2 TRANSFER PLANS | BEST RANK 437 🌍 | Fantasy Premier League 2026/27",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51UDB3dWlaUF8zU0tDdmN1dzU2aS1HNk96OVVLZDRxSko2SUd4N2VXYTF3dVRWeFltVUZjZEVOZW9obDB0TExod2ZnWVdfa0JEdjVRX01n?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "FPL GW2 TRANSFER PLANS | BEST RANK 437 🌍 | Fantasy Premier League 2026/27 YouTube",
+          "published": "Mon, 24 Aug 2026 08:09:34 GMT"
+        },
+        {
+          "title": "😬 Xabi Alonso was ruling nothing out in terms of Joao Pedro's injury... Super helpful for FPL!",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uTEd6dlg4Vm9mMXc2V21ZbTViSExNbWRmeEdRYzRXTlJkYzBUelJ3US0xYXR4aElsS1N1UFR3U2diVGc5QW1UMlZqSnQ2R1VSUGMxT3lRRjBVMTVM?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "😬 Xabi Alonso was ruling nothing out in terms of Joao Pedro's injury... Super helpful for FPL! x.com",
+          "published": "Thu, 17 Sep 2026 12:47:38 GMT"
+        },
+        {
+          "title": "Chelsea team news: Is Joao Pedro injured?",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnR1RzeHBNa203SjRUV1lkWGVIUmpwOFVfd25qRTNVY3lNaDdLSWZhSTFlSE5Qb3FMa0NpWUoxZDJWaUd4OFpMc1JXcWdOZVp0dGNWbWw3VWw?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Chelsea team news: Is Joao Pedro injured? Premier League",
+          "published": "Thu, 17 Sep 2026 14:29:38 GMT"
+        },
+        {
+          "title": "🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday. So I prefer to be cautious, and we will wait until tomorrow to take the final decision.\" He was asked if it's possible Joao Pedro could play in GW5 de",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLVE9PUlI4RTc1Xy1Tc1JhM2ROSEloQUpBSXhtVWM2MkFtRFU3NHVQSi1fZ3ZoTVc0bkJqWVRwbkxiSHUxdnlwUE96ZHotNWF2TWNUZTNFUzFETzFfS2c?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday. So I prefer to be cautious, and we will wait until tomorrow to take the final decision.\" He was asked if it's possible Joao Pedro could play in GW5 de x.com",
+          "published": "Thu, 17 Sep 2026 12:44:26 GMT"
+        },
+        {
+          "title": "FPL GW5: FINAL THOUGHTS | Joao Pedro Injured? Plus Free Hit Draft | Fantasy Premier League Tips",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ocVU5RFllZjBOWXBodHljWXQ4NkZZT1Jjd3YzSjV1MzhQUHF3cmVtZC03YzNiMkJwamxxRVdQcUdPeTFGMUwtS2puV3pKZUdjMGtZdUtR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "FPL GW5: FINAL THOUGHTS | Joao Pedro Injured? Plus Free Hit Draft | Fantasy Premier League Tips YouTube",
+          "published": "Thu, 17 Sep 2026 14:14:24 GMT"
+        },
+        {
+          "title": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JWWdMNW9ubl8yUFlUVFhzR21rRkhibWNUbkt2bWlXZFJ2UXNmaVpsQ05acjM3UmNRWkFPQUlVTjhHRVlxNFZLZXE3VHlQRTNjYWlqa2hIc1BuNjBlZHN3bEFR?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥 x.com",
+          "published": "Thu, 17 Sep 2026 13:22:47 GMT"
+        }
+      ]
+    },
+    {
       "id": "iliman-ndiaye-manchester-united-believe-everton-star-attainable-bd97c45f",
       "slug": "iliman-ndiaye-manchester-united-believe-everton-star-attainable-bd97c45f",
       "sport": "soccer",
@@ -5934,6 +6933,66 @@
       ]
     },
     {
+      "id": "junior-kroupi-arsenal-radar-c2a3511b",
+      "slug": "junior-kroupi-arsenal-radar-c2a3511b",
+      "sport": "soccer",
+      "headline": "Arsenal transfer news: Eli Junior Kroupi and Kevin Schade on Mikel Arteta's target list ahead of January",
+      "blurb": "Arsenal transfer news: Eli Junior Kroupi and Kevin Schade on Mikel Arteta's target list ahead of January - Paper Talk Sky Sports",
+      "summary": "Arsenal transfer news: Eli Junior Kroupi and Kevin Schade on Mikel Arteta's target list ahead of January - Paper Talk Sky Sports Arsenal are eyeing Bournemouth youngster Eli Junior Kroupi, Real Madrid are considering a move for Everton's Jarrad Branthwaite, Chelsea are interested in Nico Williams, plus more. The top stories and transfer rumours from Friday's newspapers... Aggregated from Sky Sports, Friday's gossip, Sky Sports Football.",
+      "category": "trade",
+      "published": "2026-09-17T20:41:05Z",
+      "updated": "2026-09-17T22:24:15Z",
+      "players": [
+        {
+          "key": "kroupi",
+          "name": "Junior Kroupi",
+          "slug": "junior-kroupi",
+          "pos": "MID",
+          "team": "BOU"
+        },
+        {
+          "key": "schade",
+          "name": "Kevin Schade",
+          "slug": "kevin-schade",
+          "pos": "MID",
+          "team": "BRE"
+        },
+        {
+          "key": "branthwaite",
+          "name": "Jarrad Branthwaite",
+          "slug": "jarrad-branthwaite",
+          "pos": "DEF",
+          "team": "EVE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Junior Kroupi on Arsenal radar",
+          "url": "https://www.bbc.co.uk/sport/football/articles/crn8ez44ywqdo?at_medium=RSS&at_campaign=rss",
+          "publisher": "Friday's gossip",
+          "kind": "article",
+          "snippet": "Arsenal are eyeing Bournemouth youngster Eli Junior Kroupi, Real Madrid are considering a move for Everton's Jarrad Branthwaite, Chelsea are interested in Nico Williams, plus more.",
+          "published": "Thu, 17 Sep 2026 20:41:05 GMT"
+        },
+        {
+          "title": "Papers: Arsenal eyeing Kroupi and Schade in January",
+          "url": "https://www.skysports.com/football/news/12040/13589073/arsenal-transfer-news-eli-junior-kroupi-and-kevin-schade-on-mikel-artetas-target-list-ahead-of-january-paper-talk",
+          "publisher": "Sky Sports Football",
+          "kind": "article",
+          "snippet": "The top stories and transfer rumours from Friday's newspapers...",
+          "published": "Thu, 17 Sep 2026 22:39:00 BST"
+        },
+        {
+          "title": "Arsenal transfer news: Eli Junior Kroupi and Kevin Schade on Mikel Arteta's target list ahead of January",
+          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQTEp5di1TVGtJTEM5N3N4cjZkOGl3aFRrbGhBODJ2bFFkdXpVODFUV0pvbzNvUS1sS2ZjWlhaLV82aXAwYVcyajhRZ3p3ZWVuS2FxaHRybmVYclF3VUxuTlpEOGQ2S2Y3Y1ppX254TmlwTkhvTzZUSUVpQTN3SGI0bS1KMllGWGxLM2tNN3Y1M2xkdkxGOGNQRlJZREtMNGQyY29wM01kemVEZXlhNC1LT0tQMHk2eXdGaHEzdGxPNzd6bFNBZkptd29aX3gzT1c4b2U0Yng2SmI2SWI0Y2dSMi04RE4xOEItc1ZSenpqMmtnLVB5cnpab0FwOElDTDdIN2lPU0pSRlJMN0pSUTJjcg?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "Arsenal transfer news: Eli Junior Kroupi and Kevin Schade on Mikel Arteta's target list ahead of January - Paper Talk Sky Sports",
+          "published": "Thu, 17 Sep 2026 21:47:32 GMT"
+        }
+      ]
+    },
+    {
       "id": "gameweek-22-premier-league-2025-26-6a66162e",
       "slug": "gameweek-22-premier-league-2025-26-6a66162e",
       "sport": "soccer",
@@ -6048,58 +7107,6 @@
           "kind": "article",
           "snippet": "Enzo Le Fee on the Le Bris text that sparked Sunderland move & his Premier League dream for 'incredible' fans Sunderland Echo",
           "published": "Tue, 06 May 2025 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "junior-kroupi-arsenal-radar-c2a3511b",
-      "slug": "junior-kroupi-arsenal-radar-c2a3511b",
-      "sport": "soccer",
-      "headline": "Papers: Arsenal eyeing Kroupi and Schade in January",
-      "blurb": "The top stories and transfer rumours from Friday's newspapers...",
-      "summary": "Kevin Schade, Junior Kroupi and Jarrad Branthwaite: The top stories and transfer rumours from Friday's newspapers... Arsenal are eyeing Bournemouth youngster Eli Junior Kroupi, Real Madrid are considering a move for Everton's Jarrad Branthwaite, Chelsea are interested in Nico Williams, plus more. Aggregated from Sky Sports Football, Friday's gossip.",
-      "category": "trade",
-      "published": "2026-09-17T20:41:05Z",
-      "updated": "2026-09-17T22:24:15Z",
-      "players": [
-        {
-          "key": "schade",
-          "name": "Kevin Schade",
-          "slug": "kevin-schade",
-          "pos": "MID",
-          "team": "BRE"
-        },
-        {
-          "key": "kroupi",
-          "name": "Junior Kroupi",
-          "slug": "junior-kroupi",
-          "pos": "MID",
-          "team": "BOU"
-        },
-        {
-          "key": "branthwaite",
-          "name": "Jarrad Branthwaite",
-          "slug": "jarrad-branthwaite",
-          "pos": "DEF",
-          "team": "EVE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Junior Kroupi on Arsenal radar",
-          "url": "https://www.bbc.co.uk/sport/football/articles/crn8ez44ywqdo?at_medium=RSS&at_campaign=rss",
-          "publisher": "Friday's gossip",
-          "kind": "article",
-          "snippet": "Arsenal are eyeing Bournemouth youngster Eli Junior Kroupi, Real Madrid are considering a move for Everton's Jarrad Branthwaite, Chelsea are interested in Nico Williams, plus more.",
-          "published": "Thu, 17 Sep 2026 20:41:05 GMT"
-        },
-        {
-          "title": "Papers: Arsenal eyeing Kroupi and Schade in January",
-          "url": "https://www.skysports.com/football/news/12040/13589073/arsenal-transfer-news-eli-junior-kroupi-and-kevin-schade-on-mikel-artetas-target-list-ahead-of-january-paper-talk",
-          "publisher": "Sky Sports Football",
-          "kind": "article",
-          "snippet": "The top stories and transfer rumours from Friday's newspapers...",
-          "published": "Thu, 17 Sep 2026 22:39:00 BST"
         }
       ]
     },
@@ -9642,100 +10649,6 @@
       ]
     },
     {
-      "id": "joao-pedro-dropped-brazil-national-upcoming-matches-due-a986156a",
-      "slug": "joao-pedro-dropped-brazil-national-upcoming-matches-due-a986156a",
-      "sport": "soccer",
-      "headline": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury",
-      "blurb": "🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday.",
-      "summary": "João Pedro: 🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday. So I prefer to be cautious, and we will wait until tomorrow to take the final decision.\" He was asked if it's possible Joao Pedro could play in GW5 de x.com FPL GW5: FINAL THOUGHTS | Joao Pedro Injured? Aggregated from x.com, YouTube, reuters.com, Premier League.",
-      "category": "injury",
-      "published": "2026-08-24T08:09:34Z",
-      "updated": "2026-09-17T14:29:38Z",
-      "players": [
-        {
-          "key": "joao pedro",
-          "name": "João Pedro",
-          "slug": "jo-o-pedro",
-          "pos": "FWD",
-          "team": "CHE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. (@CBF_Futebol) #CFC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZcWJycF9ldGZFZndCWFNPMUxNdzF1dXRBLWw3dllzSEh4Z3FWMHpiRGhKY2hfWXdSMGhUY2V1WkpJUVMwWjJTNVY3UGR4VUUzcWFHTkJNREFoX2M?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. (@CBF_Futebol) #CFC x.com",
-          "published": "Wed, 16 Sep 2026 17:12:30 GMT"
-        },
-        {
-          "title": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdzhSQ1lVZmdKbWoxQkJhR3RZaVB5REhzQjN3Z0VETndHbVBjSVJ6VjVjNWVocE8xNkZlblNMNFVaYU1VcEw0TUNVRFJyR0RQaHN0SlN6OFlIZHVsVUFJcHJ4UE40MFpJdTkzZ3RSUy1wZzVfRklkZXJDbGd4Vkw3WGJ5djhRRmhnQmo3RkVEbk0zVXRra1ByT1pPRHAtRmdTcVZrbmdHaWlpSUh3cGNaRXBoMkwwMFVTTkJfRUFibHd4WTZGSHFV?oc=5",
-          "publisher": "reuters.com",
-          "kind": "article",
-          "snippet": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury reuters.com",
-          "published": "Thu, 17 Sep 2026 03:15:00 GMT"
-        },
-        {
-          "title": "MY FPL GW5 TEAM SELECTION! 📱JOAO PEDRO INJURED! 🚨🇧🇷 SELL OR KEEP? | Fantasy Premier League 2026/27",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51OUt0UFB1ZHRRRWFyLWZzWF9QalNzaFFGcUpfRWFLYWJaSHJfMHFaVXRLVkZEZ1pfZmFabWJvb3E1eldmVkw0emgyX05PS09mTm11M253?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "MY FPL GW5 TEAM SELECTION! 📱JOAO PEDRO INJURED! 🚨🇧🇷 SELL OR KEEP? | Fantasy Premier League 2026/27 YouTube",
-          "published": "Thu, 17 Sep 2026 08:30:02 GMT"
-        },
-        {
-          "title": "My FPL Team for GW5 🔥 João Pedro INJURED 🚨",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBZRkhhSzkzWDNydURxMmtRQW5sUE5KeGtpZmRTaTdxbGJ2ZTJ5eVJ5ZVdQTTlvdFZiTkFfc09CNXNaOE5pZFFNOFB4cXJoa2ZWRXpLT01n?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "My FPL Team for GW5 🔥 João Pedro INJURED 🚨 YouTube",
-          "published": "Thu, 17 Sep 2026 08:10:46 GMT"
-        },
-        {
-          "title": "FPL GW2 TRANSFER PLANS | BEST RANK 437 🌍 | Fantasy Premier League 2026/27",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51UDB3dWlaUF8zU0tDdmN1dzU2aS1HNk96OVVLZDRxSko2SUd4N2VXYTF3dVRWeFltVUZjZEVOZW9obDB0TExod2ZnWVdfa0JEdjVRX01n?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "FPL GW2 TRANSFER PLANS | BEST RANK 437 🌍 | Fantasy Premier League 2026/27 YouTube",
-          "published": "Mon, 24 Aug 2026 08:09:34 GMT"
-        },
-        {
-          "title": "😬 Xabi Alonso was ruling nothing out in terms of Joao Pedro's injury... Super helpful for FPL!",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uTEd6dlg4Vm9mMXc2V21ZbTViSExNbWRmeEdRYzRXTlJkYzBUelJ3US0xYXR4aElsS1N1UFR3U2diVGc5QW1UMlZqSnQ2R1VSUGMxT3lRRjBVMTVM?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "😬 Xabi Alonso was ruling nothing out in terms of Joao Pedro's injury... Super helpful for FPL! x.com",
-          "published": "Thu, 17 Sep 2026 12:47:38 GMT"
-        },
-        {
-          "title": "Chelsea team news: Is Joao Pedro injured?",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnR1RzeHBNa203SjRUV1lkWGVIUmpwOFVfd25qRTNVY3lNaDdLSWZhSTFlSE5Qb3FMa0NpWUoxZDJWaUd4OFpMc1JXcWdOZVp0dGNWbWw3VWw?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Chelsea team news: Is Joao Pedro injured? Premier League",
-          "published": "Thu, 17 Sep 2026 14:29:38 GMT"
-        },
-        {
-          "title": "🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday. So I prefer to be cautious, and we will wait until tomorrow to take the final decision.\" He was asked if it's possible Joao Pedro could play in GW5 de",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLVE9PUlI4RTc1Xy1Tc1JhM2ROSEloQUpBSXhtVWM2MkFtRFU3NHVQSi1fZ3ZoTVc0bkJqWVRwbkxiSHUxdnlwUE96ZHotNWF2TWNUZTNFUzFETzFfS2c?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday. So I prefer to be cautious, and we will wait until tomorrow to take the final decision.\" He was asked if it's possible Joao Pedro could play in GW5 de x.com",
-          "published": "Thu, 17 Sep 2026 12:44:26 GMT"
-        },
-        {
-          "title": "FPL GW5: FINAL THOUGHTS | Joao Pedro Injured? Plus Free Hit Draft | Fantasy Premier League Tips",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ocVU5RFllZjBOWXBodHljWXQ4NkZZT1Jjd3YzSjV1MzhQUHF3cmVtZC03YzNiMkJwamxxRVdQcUdPeTFGMUwtS2puV3pKZUdjMGtZdUtR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "FPL GW5: FINAL THOUGHTS | Joao Pedro Injured? Plus Free Hit Draft | Fantasy Premier League Tips YouTube",
-          "published": "Thu, 17 Sep 2026 14:14:24 GMT"
-        }
-      ]
-    },
-    {
       "id": "man-city-injury-suspension-return-dates-sunderland-premier-ff894b9a",
       "slug": "man-city-injury-suspension-return-dates-sunderland-premier-ff894b9a",
       "sport": "soccer",
@@ -10595,560 +11508,6 @@
           "kind": "video",
           "snippet": "Something is SERIOUSLY WRONG! | Manchester United 2-3 Brighton | Carabao Cup | Match Review YouTube",
           "published": "Wed, 16 Sep 2026 21:30:58 GMT"
-        }
-      ]
-    },
-    {
-      "id": "fpl-gw5-wildcard-draft-raya-gvardiol-tavernier-premier-c6297ed1",
-      "slug": "fpl-gw5-wildcard-draft-raya-gvardiol-tavernier-premier-c6297ed1",
-      "sport": "soccer",
-      "headline": "Are the most popular FPL players actually the best picks for Gameweek 1?",
-      "blurb": "FPL GW33 Differentials: Best Low-Owned Picks for Gameweek 33 RotoWire",
-      "summary": "Bryan Mbeumo, William Saliba, Mateus Fernandes, Marcus Tavernier and Joško Gvardiol: FPL GW33 Differentials: Best Low-Owned Picks for Gameweek 33 RotoWire FPL GW5: WILDCARD DRAFT | Raya, Gvardiol & Tavernier | Fantasy Premier League Tips 2026/27 YouTube FPL Gameweek 4: BEST WILDCARD TEAM + FREE HIT | Fantasy Premier League Tips 2026/27 youtube.com Aggregated from RotoWire, YouTube, youtube.com, Premier League, Fantasy Football Fix and 7 more.",
-      "category": "injury",
-      "published": "2024-09-27T07:00:00Z",
-      "updated": "2026-09-16T08:00:11Z",
-      "players": [
-        {
-          "key": "mbeumo",
-          "name": "Bryan Mbeumo",
-          "slug": "bryan-mbeumo",
-          "pos": "MID",
-          "team": "MUN"
-        },
-        {
-          "key": "saliba",
-          "name": "William Saliba",
-          "slug": "william-saliba",
-          "pos": "DEF",
-          "team": "ARS"
-        },
-        {
-          "key": "fernandes",
-          "name": "Mateus Fernandes",
-          "slug": "mateus-fernandes",
-          "pos": "MID",
-          "team": "TOT"
-        },
-        {
-          "key": "tavernier",
-          "name": "Marcus Tavernier",
-          "slug": "marcus-tavernier",
-          "pos": "MID",
-          "team": "BOU"
-        },
-        {
-          "key": "gvardiol",
-          "name": "Joško Gvardiol",
-          "slug": "jo-ko-gvardiol",
-          "pos": "DEF",
-          "team": "MCI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "FPL GW5: WILDCARD DRAFT | Raya, Gvardiol & Tavernier | Fantasy Premier League Tips 2026/27",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5WLWUxNHF1a0g4SVdIWDJXcWlaUElITVpuNDV6bmMya1Z4enIxNjBhTHVBcXE5RXBPNXAzdS1zMXJBZ2dNM2U4MWxsZUtBeHNMLUpfNi1n?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "FPL GW5: WILDCARD DRAFT | Raya, Gvardiol & Tavernier | Fantasy Premier League Tips 2026/27 YouTube",
-          "published": "Mon, 14 Sep 2026 15:20:46 GMT"
-        },
-        {
-          "title": "FPL Gameweek 4: BEST WILDCARD TEAM + FREE HIT | Fantasy Premier League Tips 2026/27",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE94VnZhZUxYeGJ3cGY4UkJzVmxDcm1qVjQ4azQwdS1zSDRYNVJxcU05R0Y4RXdyTjYyMm1paVRBbmtxSHJENVhkald3MnZSaG91YTBQZldR?oc=5",
-          "publisher": "youtube.com",
-          "kind": "video",
-          "snippet": "FPL Gameweek 4: BEST WILDCARD TEAM + FREE HIT | Fantasy Premier League Tips 2026/27 youtube.com",
-          "published": "Fri, 11 Sep 2026 14:00:39 GMT"
-        },
-        {
-          "title": "Who is the best FPL captain for Gameweek 21?",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DVDdWeE1ybXRXbHFiTWdkUWVDWXMxcUNhejZPV0t2ZXlqdXdtN0tlVTlrYnJwcU1DQlJVMENRMmxjWHlTek40Sl9QRHVQaG1CVDNnVkxWX2I?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Who is the best FPL captain for Gameweek 21? Premier League",
-          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Fantasy Premier League Gameweek 34: Top 5 Key Players",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbGtlVGh1QzloOHZycHNKbnhQM2FrZFVfT24yR3ZtRDVMWlA5S2RjWkR0dDIxQXZKdFdXVHFkSkwxcENfR2NlS05YTlJtSUF4M1dWUEtWclVrTklETHlvZld1VG43NVVlNjNyNEp4RXlmUkhweGlocGtFNzU0aGFha2ZkUQ?oc=5",
-          "publisher": "Fantasy Football Fix",
-          "kind": "article",
-          "snippet": "Fantasy Premier League Gameweek 34: Top 5 Key Players Fantasy Football Fix",
-          "published": "Thu, 23 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL Gameweek 6: Top Five Key Players",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeXROTVRISzFaT1FzZlRlN3ZlN0Qwdlg1X2RNRU8xc1RveWFzSXVpTnJPN1o4V1d1a3phOXFUWUhLdl8yajJZSkZaRUo2eXdrMktYajRwcmtKWXEwNTdpamEwRWhrRTY2QVRWMDFmUXEzbURGclVCVFZRRkZpamdrVHhB?oc=5",
-          "publisher": "Fantasy Football Fix",
-          "kind": "article",
-          "snippet": "FPL Gameweek 6: Top Five Key Players Fantasy Football Fix",
-          "published": "Thu, 25 Sep 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Top Managers’ Transfers for FPL Gameweek 21 | Key Picks",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaWVaSF9aR0VrdVU0UXRuMmZlZUhJWm8tMExKaVNIcE0zSGJ5UVlERVp5OHlBN0R1aVpTZlNPcXBVNkVwOVRqOEpXSzY2anQ1XzhZXzFraFREYVpmRFUtdE1jZnBZZ3dTM3JlLXBFRkxxcE9sVDhRdnNpcmd5UDhDd1dB?oc=5",
-          "publisher": "Fantasy Football Fix",
-          "kind": "article",
-          "snippet": "Top Managers’ Transfers for FPL Gameweek 21 | Key Picks Fantasy Football Fix",
-          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "FPL Gameweek 1: 6 Must-Have Picks",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPOGRpN0Q0dVl1WEZ3d05KR0RSZjlQQk1KYnpmYmRaaFRJa3U2WlVmWDBRUkNYU3dMbUN4NFBKajhDaXJwYVQ3VTY1NXZQMkxkdElpM3NfY0ZrdjdncF81Yzd2b2NXeFFhdmNSS2dET2dVcnB4c1NaN1otejQ5cjRlc2o2ZjJUR1BwRndV?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL Gameweek 1: 6 Must-Have Picks RotoWire",
-          "published": "Thu, 20 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL Gameweek Recap",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpdmhZQ1JLd2dEcG5wcnN2dVBvMDhQdXhaaU0wQ05FdjRHMkthcThySk5Ja1lSdUV4bExOY0RFUkVET1FKMGxIYXB5X042OEFSMXZ5MHQ3T0U3U1NqUGVGQzdsRUt0cS1MdkFUbzdR?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "FPL Gameweek Recap Premier League",
-          "published": "Tue, 28 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL Challenge: Expert reveals their Gameweek 12 team",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUU5oSlA0cnpHM1Z5ZExueWo0WXFhbTdCb0dQc0pXSko5TzY4QS0xY3h2cFpTREZxMVVVM2RibzZfdXZoOW5TS3p6MlJCZWNSbXZSWVk0UG5GQUZCQU1VRTFpWERFcWZaR0o5bm5ZR01BNkVhTHBBZmlkYnJyTXcxZU03Tm9Tbk1hUDJOWmNlcm15aTZMdmRuYjRrVldBdw?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "FPL Challenge: Expert reveals their Gameweek 12 team Premier League",
-          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Are the most popular FPL players actually the best picks for Gameweek 1?",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOamZWcUcyTnZ1WWJCZDhFRVdBaC1zWU0yc3dsNGJtY1NuMzUzOE9KV1dZaHdlc1NBTy0zUjByNUwzUnlSREUxaEhGV1ZEZ2tKbGF1ZmxXTDZwWTJFR1Jad2ZXYkdUWTdmZG16X19idTItTzQ0RC03djNGS1BPbUlpdjZDM2h6TllUWjRvVDAwamNPMHowSW1melNFTks1NzJ3Y0MycDFlWUg2a29yU05aMjhETF9EZlRB?oc=5",
-          "publisher": "premierleague.com",
-          "kind": "article",
-          "snippet": "Are the most popular FPL players actually the best picks for Gameweek 1? premierleague.com",
-          "published": "Wed, 05 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW38 Free Hit Team: Best Draft & Strategy for Gameweek 38",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOa2g2R0JuOGNoOXctRnZwNVdIcmNOZDU4RFo2Ni1uaTNlZWtfYndIamlqT3RKRzd1U3Q2ZUlWVmJYX1hqeG5IWmNpMV9XQUVkSV9GeEdXd0UwTTRmNkRIRFF1TXZEZURyamhZcm5VeFRQSUJWaDFyVVd5Z3ZtTlJVUmE1OWRTZ2V5U0lYMEFBRUJKUlZzVEZGVjV3NjlBMG5Lb0RV?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW38 Free Hit Team: Best Draft & Strategy for Gameweek 38 RotoWire",
-          "published": "Fri, 22 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW4 Rankings: Best Players & Captain Picks",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaDNHUjdJSEpaWXdmck9MVWViYWdzN0dkQ3NCZGhSLUJvYks5dTBDZ2hYUW5WbUVpNEFMZWd2bjZIV3BENWhYdkRmNWpBNi13VnZwWHNWelkxWjJmSnYweVhUbFRFb3oxbkl5ejVQbDBXM0U0MzhWaGYyc2JoamhYbC12N1Y4RVF0SmxSTnRuWFN1TVdKMEowVkpqS3I0bFc0eWRZ?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW4 Rankings: Best Players & Captain Picks RotoWire",
-          "published": "Fri, 11 Sep 2026 20:00:00 GMT"
-        },
-        {
-          "title": "FPL Bargains 2026/27: 10 Best Value Players to Target",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNENNa2EzX01FSkRIZ3RzZHJLZU5RbGlmUndzZklLYnlVWWpVbWNra004YVZ2aHUxRDBTX3BkQy10WWhkdDV3SWMyWV83Y3k5QUg3cXpfWTBDWi1qZlVNSDBSeDlGQmY1R3RuMlY5RkRWOTNwSVQwZmdEY0pjYUxEWU9UUnRTS3lPT0VtWjhIR0JWWlFrR2VDUTMyQlE4MFFR?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL Bargains 2026/27: 10 Best Value Players to Target RotoWire",
-          "published": "Fri, 31 Jul 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Who are the best picks for Blank Gameweek 34 in FPL?",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOVhaX2psWi1WejcyYVVfaHEwc2l0d1pDRnNqUnV4TE43b2QyeW9fR3paWVYzX21fWDctZXhyOWM1Q1h5dzBHMi02ekNWallXcUNRSmpIY00tT2Q3YzI0SnhSbXNuZ2lqTG9kTkpFZ2ZNYVlidDJrZk0wWUw3Z1lvNEQ5cUQ4V3dNQVRtR2tYUmp5UWdrQ3BPR3cwN2dTdw?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Who are the best picks for Blank Gameweek 34 in FPL? Premier League",
-          "published": "Fri, 24 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Scout’s FPL Gameweek 32 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUzkzQVZnTTZJZzRJcENhWnA3TGx4MzBhZzNLandQRTIzV2MwT0Rac28zVE8zSHh5ZXBERWt5R1J6ZHd3ZVBvbEl2SExlTGF3N0UyM3JIcXJmSGZfZFB0dE9NYXVNUjZxalRLQi1ISE9OdS1Zd0Q2QWFyaXVYTXh1bmxrVjNNMk9ualdjSVY3LUw?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout’s FPL Gameweek 32 transfer radar Premier League",
-          "published": "Wed, 08 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW3 Rankings: Best Players & Captain Picks",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZ25ESG5DRHd6OVh0UTkzdXgtMjREeEpEeDdkNUxuNUl3b0d0dFlTR3FEc3kzWjRBbEJ4VnVHbC1hVTRPZXl5aGwtZlhXZWh6aGlONlZ4dzhZcm51VjF5eFlrcHpkXy1taTBnSXBLek93M1lWaWxfS1J0bjZuUXVvUEVIM0lIdUxtMk0xem56Q1ZTYjFoY0pQTlpiSjZuUmhrY2pz?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW3 Rankings: Best Players & Captain Picks RotoWire",
-          "published": "Fri, 04 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW2 Free Hit Team: Best Squad for Gameweek 2",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOGc2Q2U5V0JsbTg5bDYwQjk2VkJMYmVpbmN4WklEMXJvb1lWSzB1RldHME1Md2l6YXJnRTAzQXQya3ZFaTVBZWpXYVJaRVhLM2dlUXhYNWNyT3JmcDVMSHk0R25JbnJYT2pFclZBNHpsM2FRaVVZZXBTeVhXM05YWUVZZ1N2c0E2MERJbTBUSWg5VVRv?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW2 Free Hit Team: Best Squad for Gameweek 2 RotoWire",
-          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW32 Free Hit Team: Best Draft and Picks for Gameweek 32",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVG1LZnZWWEhmRzBXQU9GcFVFT2ZWc2VMd3NWT3kzWDNkZnVQLVpDcU51SWFWeWhENTFhenp2NFZWUTRMTl9udUhLM25tTmpxTlJ4S0h6aDFwR0N5aWhpeGJZTnphUXlkTDlfMjVLaEtQOXFQSlVVc1otYWlTSVJGNU42czc2RjY3V0d0WWRDZnN6XzY0WEpV?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW32 Free Hit Team: Best Draft and Picks for Gameweek 32 RotoWire",
-          "published": "Fri, 10 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW1: Rankings, Best Players & Captain Picks",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcml5WkVCQlhNSGh4WjNXbTE3R3NrSkJLWmhIRDU5Y2pqM1JYMjE2NFNwbFQ4S3J0YnotcHVaNEF4S3Nmdnp1cjVDay1aMjR0S2sybFAzX1JOZmhGSjkyZGRuQTNGUGkxV2I5YVI3US11VEU1OVdoLUVlYXRVLWV6NEZSRkE4b0pJQjRHOXdfOUR0QldWdnJtT21kSUE1UjZOVkdmNlpjNUhWOUNLSGc?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW1: Rankings, Best Players & Captain Picks RotoWire",
-          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW2 Rankings: Best Players & Captain Picks",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdGdseVlfRUhNc21lbmNtc1l5ZWhhM2ItRVoyNDhsS0dKTU1NcHJjendYVVhjQkxpaFV3R2t6S1NVM04zSVVYeDJlODlOVXhzQVBqeHQwYWVTQ2IxY0wzeEVkWHpHZG5ZczZ6ci1KRmc0aE5QUTRCSThMOE0wTEVhdGRSRFduTkRSVmZVcVlJUlFrZS1ad0pEUlpraWtTZElVcVNj?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW2 Rankings: Best Players & Captain Picks RotoWire",
-          "published": "Fri, 28 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL Tips: 6 Highly Owned Players to Avoid in Gameweek 1",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSWlkNnhtaU9keU9KaERldUhGa3l3Tjh1dzdmRFYtTXFiRVktM09mM3VzMDdZa1gxSnVCOEppUVZETXVXRnNaM0NBTTJrZzZXbUNvenJPbjV1cFZFV2RyXzZ1RnZuSy1KQzByckhkWDRQRERNcXRCaFhkRlFaX1cxN2lSeGF3RUNYcjBvLUhKOWZiXzhxeFZZNUh1MG9XLVlOUmpHVHZIbVY?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL Tips: 6 Highly Owned Players to Avoid in Gameweek 1 RotoWire",
-          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Best FPL Budget Picks for Gameweek 1: Cheap Players by Position",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdElqUjdkRzNJV2U3RXRzMTRaWVNJUVRPZFVhZjBtX21yUVZUTmxIcFhpYVdjTUVnUW9iZWtxYTJQYWNPM3BfQ2J6WS1sZnlQZVFsRzZ0eVplSllRTmpZNV9LRk5ibThHVjNTWUZMU3ZYNkhTY0Z2cllYVHB1aDJ1em0tbTM5dmV5ZThObENaMmxxWmxCTmRRaEl4NUZBMFVJbUxhU1A5eDlYc192cW1KMGpIXzRaZ1ota01ldA?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Best FPL Budget Picks for Gameweek 1: Cheap Players by Position RotoWire",
-          "published": "Fri, 21 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW36 Free Hit Team: Best Draft, Picks & Strategy for Gameweek 36",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaWxPbUQ3ZjBoQWRFZHN4LVBEbFNrOXVWcXBFel96bHJJZURxTVJiRHBFcmZWdlpqclU3OEZ6OGJUQ2Y0YThVOEx5MHJua2V3Q3V6MWlaend5ZGktbTFFVDgxeDZkR01EMVRuRU11c2ZEaFp5eWdGSzF0am1vb3NWVnJtTHEtWmFfb2QzNFMxQjZTSk9wNkhZaWw4WS16cndpV2tSY2VCOFpvVWtvdVpsQw?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW36 Free Hit Team: Best Draft, Picks & Strategy for Gameweek 36 RotoWire",
-          "published": "Fri, 15 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW38 Differentials: Best Low-Owned Picks for Gameweek 38",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONzU5UUdLY2hNdEZyMzliMC0yLWRoazB0bHZRY1NEcHA2U08waE8weXRCM1VNY3pnQ21iV1k0Q29EbEtmOGs3OEVoM2VEMFBRMk10S2ViV3hwenZMY1liaGo1OTFWQk5RemhILTZ1UHpuS2pCV2JDekhwc013WmVTbXdKMUJnUUhyUFdyMnU5OGxPYW5uWWpDS3dkVzJkaDNxdkhCcWNaSk9sQQ?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW38 Differentials: Best Low-Owned Picks for Gameweek 38 RotoWire",
-          "published": "Fri, 22 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL Gameweek 28: Best Teams to Target for Upcoming Fixtures",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNOXVIQ1FwQ3pWNFNVeUNIaF9SaDRDYXItZVdTQ1RGOUlvbTd0dk1kSjlFQWNrVmJfMVlPOTd4N0VRc1gtMEc3YXdDQ05zSGdnY0pPNFJEck94cFJRTF91b3haMHdWckdoQUFLaTJqX1pjVHJqSmpVZVRONVVFYVh1Zi1ISUEwa3JNWkVPb2JtdHpqS1h3bHNtZVJwcThsQ0k0YmRhM2lKSVgydVpVVXNibVlQQVE5ZHZ1elFqYVlaM0VMckJOZG1QalpEcUJ5cFRadUk4?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL Gameweek 28: Best Teams to Target for Upcoming Fixtures RotoWire",
-          "published": "Thu, 26 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Scout Selection: Best Fantasy team for Gameweek 38",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQYXpVTkJGUy04NHpVYXVldVNLM0NicWpiNl9NVGJsOTAwR2tCNGcxeEhJTmg1UG1kc0pXdE5tNkNza3hHVFhjTFZMMmZMTjZsTWpFeE5pYTJ3WFpueGcxVV92UmtJbTU0bV9MSjVXMnZ3TDBfZWEtNmM2R1RBWmdYdWZiSUhFNXplRWtaQXJzbU0tRm1faXRPaF9TWQ?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Scout Selection: Best Fantasy team for Gameweek 38 Premier League",
-          "published": "Thu, 21 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Scout Selection: Best Fantasy team for Gameweek 32",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONDA2OFNZZFBCWHZmd0xvOG8wSWJJUDNiOVcyWGVuSGNsMzBIUExSMmh3NWhNU1FpcmtwUWFaWDBsWmhuUWF3Q0wzcDh1d3JYc0J2RnRRdWp6b21hcGtLOW9JaEh2RHJVYkdlbllJZjZiMTFBS2pnVzk0bElnQ3RxUjcyR1R2NzJ3U2RBSnZyZDZzYkJpdFJwNUlUOA?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Scout Selection: Best Fantasy team for Gameweek 32 Premier League",
-          "published": "Fri, 10 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Scout Selection: Best Fantasy team for Gameweek 22",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZFpYOWp5dkU0UjJ3R2ZxSHNEMzVXZzR5ZS1JX014M1hhLVRWd3VuQlNVbndtdWMyQ1Ezbk0ta0F4VF92aFlKdG1WWWVIMExfSUpaX2xYOHp4WVE5VlR1TEpiQjkzZUdTVk1ZaGFhRm9MbTFFVzZmRDZPQ051SFFZVFFYSW9zb0IzNkZCY1V2ei16MWpuMHRQenJfQQ?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Scout Selection: Best Fantasy team for Gameweek 22 Premier League",
-          "published": "Thu, 15 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "FPL Pod: Who are the best premium players to own?",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1zSWNLMHZwMUlHcDNhT09Ec0RQMkxBUHZLVjIwelEzT0Rsd1Y0T0Z5cjdqZzVzY0plOTdGY251QlB2a2hhUHpVSTk2WDFhUjliVTVUZnByTWU?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "FPL Pod: Who are the best premium players to own? Premier League",
-          "published": "Thu, 10 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL Gameweek 5 Preview 🔥 Free Hit 5 Team ✍️ Best Cheap Forward 🤔",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wUGkyeWVRdFdjMWVqckFSOFpnQ29aWjNOOHB6eGxObUJJSjhUcWZYbmVZOS1QeXRqeEVhdTR4bkJ1aU0zVGhWMTJsVGVGaU1pWmxZeHpn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "FPL Gameweek 5 Preview 🔥 Free Hit 5 Team ✍️ Best Cheap Forward 🤔 YouTube",
-          "published": "Wed, 16 Sep 2026 08:00:11 GMT"
-        },
-        {
-          "title": "FPL Gameweek 26 Transfers: Most Popular Moves & Double Gameweek Trends",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdjM2dDdfMmZIVGJlT2lzQ0VZd3AxSDZBRFNFN0xkUFdVM2cwN2RJdkxPNDBLZTFXT2ZGdk94OUlSSEU0Y1lWRlRmeVc2d2c4bWJqbU5GTEFKam1BQzl4S0NHcUdzMWNWUUVEMnp4eWRKVERabm9XRy02bDVwUGxoODFDSTBCMS16ZlQ1cGxn?oc=5",
-          "publisher": "Fantasy Football Fix",
-          "kind": "article",
-          "snippet": "FPL Gameweek 26 Transfers: Most Popular Moves & Double Gameweek Trends Fantasy Football Fix",
-          "published": "Tue, 10 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Top 5 FPL Differentials for Gameweek 15 | Best Low-Owned Picks",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaG96S3BmUGdPS0MwUmZvb3BqejhUcTlxMHZXODFfWl9tc0ZyTHpjU21WN3hvZmNwTzU2MmQ2S28tb19ZMWNiLWpVSjgwVFdSV2hyOTExcUZLVHlodE1IYmM0YUpiUEhVWUI2bDI0SGQ4bG81RVcwTzRxaUVESlVZSERIUGVUenpYeGRr?oc=5",
-          "publisher": "Fantasy Football Fix",
-          "kind": "article",
-          "snippet": "Top 5 FPL Differentials for Gameweek 15 | Best Low-Owned Picks Fantasy Football Fix",
-          "published": "Thu, 04 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "FPL GW4 Free Hit Team: Best Squad for Gameweek 4",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUERyUlNjcHEycVhYSEViaWtBd0Y2VDlyTDNzY0pZZHRMeXB2eGZhY0xMRFVNTGhHUFdqUDB6S0tPMi1ERnNnZ0lLdTZiS0I1NTdsME56RW41N3dtZEs2YU5GSmx3MlhXVUNZT01yTkhGMnhVMkhnb2FnNzVUaWZNVHd2THJOQm9OZ0JvU2UwOWhkWVBw?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW4 Free Hit Team: Best Squad for Gameweek 4 RotoWire",
-          "published": "Fri, 11 Sep 2026 08:03:00 GMT"
-        },
-        {
-          "title": "Best Free Hit Team for FPL Gameweek 21",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWUNjeFNQSlczX1VubzJRM2dUTjlNYjdWa3FkSndibmtVNnJRMjFYQ3lLYVMxZDZhczhDQi1VTWY2UElvak9QWG14S2JINmx6MjBjSFlpT29DV3JqeGZxRWhBX2VoZGRZdm9RWHJ2RG5neTExbUNXOEJBLU1lZ2ZTUVQ1S19WYjRFTFhicDRiU2lxM2NsekpIVjVHQy11dTBiSlZnYmJqYWJLYy1fSGFlUVRuN1lsUmRYQ3haR2RQQkpDbVptVjg0?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Best Free Hit Team for FPL Gameweek 21 RotoWire",
-          "published": "Tue, 06 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "FPL GW35 Free Hit Guide: Best Team & Players for Gameweek 35",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNUFNS2JzV3VNZ1NGR21kbVZIYmlrQjVvVlVmbEdUUDgxRndYYlVzc1V0LWswcmZhMkxpWEU4X2xKUm5SRVFiTGtKbnktMFQ5Z0VsbWN1b2dGdkh6TTVIRVBjOFFGWFBfckd1OGxiejJaVi13UWp6bjJocVZQTklNTENpUldSVUpISHFmSVJseUpqdzNaSXFrZ1ZKQlBIQW9UNk9BRVBGd2x4bGs?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW35 Free Hit Guide: Best Team & Players for Gameweek 35 RotoWire",
-          "published": "Fri, 01 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW3 Free Hit Team: Best Squad for Gameweek 3",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNmdDOENMQUxrM3VXazBwRmU0SWNDR1EtbXk0ZVpEQkJMdkdaNE03RVF4R2hiVmVrZE5jS2VaOXFQT3luSnNCM0Vfa2JFclZMcURXUGtoSWs4MU1JTVpZZkZzekNCZUhhcVpwQ01SSlhObGJvVHl1NUhnWktiQlZhX1ZaMVFMUWFmYVNWT0VHQlkyalRq?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW3 Free Hit Team: Best Squad for Gameweek 3 RotoWire",
-          "published": "Fri, 04 Sep 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW36 Differentials: Best Low-Owned Picks for Gameweek 36",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN2RPVk5PeExMdkJsam9NVzJqdXVtOUhXU0lOZDZ6dXJOQm9iNXpmTFpuaFhQS2FIMkRmTXE4RzVoV1hWVll1Z2N3MWlPMTkzY0x4ZS1qcG9mUHFuZHdTcDhHYlltTFhhYlFDV2dLYzFsM1NIUy0tLTljVVRQcElfNzI0OGxSQWR3OVpwamt5ZmRMUG5rcGpLalBjWk4zem1PUXlWZw?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW36 Differentials: Best Low-Owned Picks for Gameweek 36 RotoWire",
-          "published": "Fri, 08 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Fernandes HAULS as most-popular Haaland vice-captain in FPL",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeEVZNXNfX04yY1NmcmtManp0c0t5R1VUMmVIdlI1dVgtNV94VFU4eXpmVXVwR0ZBX0NCSXFKS1FzalpBVXQyUndGWDJFb2Q2YlB2RWpzRzBieEl0czJ4TnFSSlNoTEVYS2pRc2VzXzZkUlVQU3pGSkJwdmZVWWMwRUxuYVFnM0t0ZjFKcFc0dG9oVkU2cVhuaHNWZDhJS05r?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Fernandes HAULS as most-popular Haaland vice-captain in FPL Premier League",
-          "published": "Sat, 28 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "FPL GW34 Teams to Target: Best Fixtures for Gameweek 34-38",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTXBJclREcElNakZURTIxR2FmYVRBWGl2VERIRE5nSEJ0eEdIa3VQQ0lwUkpqNTZpSWlZc2lJRVhxNEJkX1BMTGJjS2NramlNY1puT3pMSkJmUmtVVHc0OUJkSFhGaVUxMG4zeVNIMHZqNlEwbWlCdHBvMlBfR2VBeVpmbXJTdktVVThKMTViZkRSbWpqTmtOSEJ4YlIwczhpY3c?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW34 Teams to Target: Best Fixtures for Gameweek 34-38 RotoWire",
-          "published": "Fri, 24 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Who is the best FPL captain for Gameweek 14?",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNXRYV1VCLVFRVlpXSXhpMGNRLVl5cVZwanhBS2E3SzZrNUJYSTYzQmFKMTZHUkQ5djduRU40UnBiZ29xeFpRcHhjY3MzUFV0Z1JwazFpUThhYjVKRU1pWmJSMGU1TmdKVmJOLVZUVEIxSXFaWlczYkprczlSR0FrNG1XVlh2NzhheWN4UFZfTmcxMzg?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Who is the best FPL captain for Gameweek 14? Premier League",
-          "published": "Tue, 02 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "The Scout’s FPL Gameweek 23 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPTm9JVWg0NGpkd3FraG82N2UyWF8tblJjTDF6cE5LdmZSMlp4dGp2cEM4ZzdJcHdDMkdrcUdlSm9zSU1aX1YzX0tDYXNZRklobWk3U1ZWdFdQdlN3ZXRhc1FmTmtyTlhBZUQ2V3FNVnhjY3hCNEw2N1EzSmlGUWUxd3BNNFRDeFhkdGNfYm5DUjc?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout’s FPL Gameweek 23 transfer radar Premier League",
-          "published": "Wed, 21 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "FPL GW5 Rankings: Best Players & Captain Picks",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOLUtWUTk2S253ZkpFR2hfV2hKQW82aEJxQ1kyR0RpTmxUbkdxYnlBeHhocWFKV19KVnBZLWhSMDVMT3hXVlg1WkwwM0tsckVNajd1QmhJc09IUXBtX2dodkM4am1LM3NaSHpubXRuSkFCU2ZNSk94S2N2NmI3MVI3SC15TnEySjFVOEFVb3hOX2ZtU2pWOHB0UmJRZmo1b0dKbFMw?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW5 Rankings: Best Players & Captain Picks RotoWire",
-          "published": "Tue, 15 Sep 2026 11:54:00 GMT"
-        },
-        {
-          "title": "Contrasting fortunes for most-bought duo in FPL Gameweek 27",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORmJBanhyRUphRndWODcxOWY1VDFFMXBSTTdXNzFXTFU4RlpIS1VxMHc0ZFQwa3A1Ql80dVd5TTRuM0VUX3NHT1M0VGFlN0ZOcHBMUUlFSndTa2l0RkFSa3FOT2NUN25JZmlSN19DN0dWYnpSSWQyT3FEd3ByTGRyZ1JnRVNIRWVYYkJEZmc3bVYxSFRzU1czYnB3S3V3QjU0NEZmLVB1elE?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Contrasting fortunes for most-bought duo in FPL Gameweek 27 Premier League",
-          "published": "Mon, 23 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "FPL GW2 Transfer Targets: Best Players to Buy",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVGpIYTVPMkwtN0h5NXppQk1MZDgzSEVfb0dsWGd1aE12aEJUdDdBdUFTWVF5ODVBOVotVVAydTFjUWJMR3dNenlGd3oxdkx1YVhnQldGZU9QRTZwZWlrQVNCWjFRbWdOSUVkVlowS09ocG14VnM3TktaMWQxMnUtM2hRMmNYR3BlTXpuZVAwU2NWZUVTa2lRN3lrNEw1QVFwSUE?oc=5",
-          "publisher": "DraftKings Network",
-          "kind": "article",
-          "snippet": "FPL GW2 Transfer Targets: Best Players to Buy DraftKings Network",
-          "published": "Tue, 25 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Who is the best FPL captain for Gameweek 12?",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNeUxqT3l5UzRmUzdRb240OVhqbGpyN0NEZFlLTDBpRTExTGVWSXdxMEI0aEpqS3pBQ29nUmMwdGZORF9DYjBlS3NjSUlfd1VCSGVQMU5ZbXRfcWc0czdaWnlQdm9WMkRfWmlVQjlJSWZtekZpSlZ0TEpCMG95RHdJSWhZYU42YnVPbjJvWTVR?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Who is the best FPL captain for Gameweek 12? Premier League",
-          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "The Scout’s FPL Gameweek 6 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTlBrdTBpRFpKNlVRT3dpM1hOaUZJdDF0MFFxX1BDRHhpWW5aelhuWTVaMUY4RThPbENRS0ZwR2NzNHZsaXAzQWZraFR0bWQ0NlhvQVNLNEdhNERNdDU2dTJmZ3EtcDNVNTk0M0FYVHpXZ0trOUpud0d4b05LaTVLempKNFd4Yi1yZXloUGtLMA?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout’s FPL Gameweek 6 transfer radar Premier League",
-          "published": "Wed, 24 Sep 2025 07:00:00 GMT"
-        },
-        {
-          "title": "FPL Gameweek 6 Transfer Trends: Mbeumo IN, Salah OUT",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB2aklzNnRDSTREUlpPNTFIcFJsNnQ3bURDT0ZsZ1RKczVIaF9aZUFTSldsWkpDSmdRRmNKSWFIZ25HSmd3a21jb0tEbHJYalAxX0RVbmo4RThiSDJrcWhyUnNuZkdjQUYzc084a3RpSkRPMVhnS2tPOUtXUHZ3QQ?oc=5",
-          "publisher": "fantasyfootballfix.com",
-          "kind": "x",
-          "snippet": "FPL Gameweek 6 Transfer Trends: Mbeumo IN, Salah OUT fantasyfootballfix.com",
-          "published": "Fri, 27 Sep 2024 07:00:00 GMT"
-        },
-        {
-          "title": "Salah, Mbeumo & Saliba: Latest FPL injury news for Gameweek 16",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYkQ5MEliQ2ltcVY4QnlWb2NhNkxJbmg2ZDM1emt3MnhYVlU1MEx2MXE5cEM5T0Z3amJsaXdwVUN3Sl9TR204LVVER0p5dTM1WEt4eEJzMDRSNXZjbld5QXAtYWVYQWZlLUF1OGJRQ0JQcjZvbm1YSHZMVVNYRnBVVkJYVnZ0N2VHZXlJdmFIMkFGYlhLV0Y4cUxDODBiZmF1WDFTU0c0RVU5SGRMOTZVdTdybVRVaG1x?oc=5",
-          "publisher": "3 Added Minutes",
-          "kind": "article",
-          "snippet": "Salah, Mbeumo & Saliba: Latest FPL injury news for Gameweek 16 3 Added Minutes",
-          "published": "Fri, 12 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "FPL Challenge: Expert reveals their Gameweek 37 team",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTy1zUFRwclVJTGVTajBQOG5xaC0tRUhMRW9Ed210QkxGUmgtUkhRc3F3dG5QQi1lMXZ6NTV0bFJzUnBtOVNiZ0hORjZBVkZncDdJWlJwdWlhSzV2Y1FrODk3VW5xLVRSVGViMlJGdXhyTnMyVEdKRzZwYURSVmd6UEgxRGFtY3RkZlphdzNSX25EQ0xaeUNWUXZLMFA4dw?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "FPL Challenge: Expert reveals their Gameweek 37 team Premier League",
-          "published": "Thu, 14 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Scout’s FPL Gameweek 20 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQek9NYnFEajRvc0VvRi1oQ0tWc2c2T0N2aGUyZGxKNDd4d3VxcWNLdUtDUVh3VWJSVkhPNkdQZlRCUy15MGRxcnJYRXgwNkFrRWp2ZHBhb2FtY2ZVSVBYR3N6TFZWUmVURlRzQVFmcmxDbGhpVnRGZWc5VXRobThsbmFOZnFZLXZfWFRITWFJNXQ?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout’s FPL Gameweek 20 transfer radar Premier League",
-          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "The Scout's FPL Gameweek 16 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeW82T0x3MlJxbWJEQ2dxRkU3QVQ2MDVJaktkMzBuZ3NDOF9aQ0x6TVFpcllMeGhMVHR6c3dTbWtza19wRll3S2lOTmctMHp0REhoUHRCSHYzaktoWE1aUC0yTmFpa0RsZE9aTy1NTG05Rm1IUUpicTVSWFY0X3FodjdlVWhvOTBSWnhtcU9BcC0?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "The Scout's FPL Gameweek 16 transfer radar Premier League",
-          "published": "Wed, 10 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Scout Selection: Best Fantasy team for Gameweek 20",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeVc4N3dKNVFOaXphNjROZ0xMUlFtNkJ4X3hhQkhRWnZkSkY2SkNEYWJaY0Nhd3JlRy1HVGZBalRPdHE0dU1OZmc3dmdpWF8yRGZCV185Q3ljaTR2clNaX19FeTRWZlo1SlV2dGtTYTUwZFltYjZzb3k3bnd4ZUdkeTh3UXZ2Vi1yeFZQUldTLUZMN2xlZGxLb053dw?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Scout Selection: Best Fantasy team for Gameweek 20 Premier League",
-          "published": "Fri, 02 Jan 2026 08:00:00 GMT"
-        },
-        {
-          "title": "The Scout Squad: Our top picks for FPL Gameweek 37",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNjE3Qi1SbzJSWnJxMEJzdVhYV0dMcW5Sc2VDaFNCNjB5blhYaTJWcUZteGpxSVhRZHRycUFXb3FLR2hITF9WaTdndXJ1NXZwa2d5TXB0bFhLUEYxOWNQOVJscjhLMmVDYS01eWJzNEVyNlZtaEtnYUZISUVCN1l2T29WSjdDclFrNUlOd0V3WjZUNEI5cklRQnZBWHpObGpLSHVsVA?oc=5",
-          "publisher": "fantasyfootballscout.co.uk",
-          "kind": "article",
-          "snippet": "The Scout Squad: Our top picks for FPL Gameweek 37 fantasyfootballscout.co.uk",
-          "published": "Thu, 14 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL Gameweek 31 Tips: Best Free Hit Team, & Top Transfers",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVW0wRjRsbm9ZcFhsR3oxQUw3MmpLVlY4Nms3amhJRzVxWUJ5U25zMlpsUzdMSlFUWF84ZDZXbVM1VXpJUmZBenFoSW1MTG5yZ2dhanVraHFjSGF5cWVfMUZ2QW5NNVcybkVPZnF4b2JNUG1hTVBsejBKazVMajRwZE5xUXp5QQ?oc=5",
-          "publisher": "Fantasy Football Fix",
-          "kind": "article",
-          "snippet": "FPL Gameweek 31 Tips: Best Free Hit Team, & Top Transfers Fantasy Football Fix",
-          "published": "Fri, 20 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL Transfers GW12: Most Popular Moves & Transfer Tips",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaVNwcjFTUmpwdFo2aXY5SFJuVnZRS3pTZGRKeVRIZWF3R3hPSURFZlhkRFNZclZMZDRkYnE5NF9SODZoRkRULXNjbVE0cWRvc2o5Y0I4dDZpT0xPd1gxWXZYck1WS2J1YjZ5ZDNjMTJqWTc3WHJheXhvblJIRS1lRVVn?oc=5",
-          "publisher": "Fantasy Football Fix",
-          "kind": "article",
-          "snippet": "FPL Transfers GW12: Most Popular Moves & Transfer Tips Fantasy Football Fix",
-          "published": "Fri, 21 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "FPL GW31 Wildcard Team: Best Draft for Gameweek 31",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdWZ2TmlKWW9JWlZJaHExc095VUNYc1ZBRWdGRjRwYTFNSDlQR0NkSmZBTlYtR1Vvc1NxV2doMy1iejc1WFJKYzVtazZtNHJRN0FqRE5XYVNYZUw0TVVrRER5bnVRdEZMQlQ0ZVEyYTk4TVYzUnlnZmpabDJCZEdCR0FTR0ZFUVRHRmpLczBtUGZKSkEtT2Jn?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW31 Wildcard Team: Best Draft for Gameweek 31 RotoWire",
-          "published": "Fri, 20 Mar 2026 07:00:00 GMT"
-        },
-        {
-          "title": "The Scout’s FPL Gameweek 37 transfer radar",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORTlBWXdWQ0ZYaUhEQzBZU2tkUVg2OWJTQUJOeEI2Mm1GczFPRjhaZjU2T2ZJUWRsUFlRSWkyMU03V3JoNGx0OTFYT2dQSUxMdWViVU1TQ2NHRS1VQ0VkcklSLXlRY2NnWERNR3J2U01ra0dQZUczanMwZDRKa0E3U1lYYlQwVW1ocFJ2amNLSEg?oc=5",
-          "publisher": "premierleague.com",
-          "kind": "article",
-          "snippet": "The Scout’s FPL Gameweek 37 transfer radar premierleague.com",
-          "published": "Thu, 14 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Scout Selection: Best Fantasy team for Gameweek 29",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOeFVaWVUwRk9qRHBOM2drdGFNcWlXVW9TNWpiS1pZWjJVMmlXWUc5Qm80ZHYydVhoNTUxOG02UGFabTBVUmkybmhfUHc1WlZhbTN4OHZ3cjY3YzVZRWdXaHJlTkZXSXU0ZERGNmJqbkRXV2gyeDZDenJEWkU2V2ZvR3Vwem9XSXB5R2ZVT3lSWXBlT01hOWNtQ3J2RQ?oc=5",
-          "publisher": "premierleague.com",
-          "kind": "article",
-          "snippet": "Scout Selection: Best Fantasy team for Gameweek 29 premierleague.com",
-          "published": "Mon, 02 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Fantasy Premier League: Our best picks and hidden gems for Gameweek 17",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPZ1Y3LUh3akZaSkFGaU9ZTG9GRmtwRmNsTkp6MnY5MXV2eDFDeGR1VEsxR24wMjNYZHdEMmc0V05VY3dlOHh2cGNVOXN6RGxpQktYbnlvQmNrY1ZVX3VMSlFmYXJrSHNtcFp0VFdBQTkxbmhiZnhKeGhSZ2FUd0hENjRrbllFRG5KYUc3bFhxMEVfa01jM1pOUzZzMWsteFZWWU9yMkIwYm5Fb2pNOF9oaDh3ZVhGT21NODM0UlVzRWw4Qm1KS3pYUGFXMnRXN0VHaDJ0YXljbWpzaEtaejdzM3NuRVlnVEMyeldSQVVDRk1WVkxYcXNvQzJsZw?oc=5",
-          "publisher": "tribalfootball.com",
-          "kind": "article",
-          "snippet": "Fantasy Premier League: Our best picks and hidden gems for Gameweek 17 tribalfootball.com",
-          "published": "Thu, 18 Dec 2025 08:00:00 GMT"
-        },
-        {
-          "title": "FPL GW37 Free Hit Team: Best Draft & Strategy for Gameweek 37",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONW1jWXZjMWJ1Y1dOY3liOUUwSEYydklaZmtTZWNKVEc3c0dubld1Mm1mdWl6UXUtNExmaUlKLU5oM1lKUWU5WVZXVE1RNlNXS0d3NTlqTWdVYUlIV29sZlI1b1hnX3pqZG1LOUczQTQxVlVFalV2TzhCcHFvOVlieW4zbF84T2lGcG9veE1aQS1rWmJnT3lGQzRHQjlST1ZuUmJF?oc=5",
-          "publisher": "rotowire.com",
-          "kind": "article",
-          "snippet": "FPL GW37 Free Hit Team: Best Draft & Strategy for Gameweek 37 rotowire.com",
-          "published": "Thu, 14 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Mixed fortunes for top FPL captain picks in Gameweek 4",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORmpfSDdFUDJCNWZlMzVPbS12QnZGZGEwb042R00wTzZzbmgtQ1lUVjVTb2pKTkJmRWFPajdTczBPX2VHbkVvUHhHZ0J5NnB2d1ZiS2RkZnBrd1pVTnRIcWIwZHcxRzhrRkxQeWF2UkJYaEdFSFlFZTNWaWxzaUdEeDRaY3FvUXZMSGJQQ3l6S3BKRU9aVkpheldUMmI1U3pWZHc?oc=5",
-          "publisher": "premierleague.com",
-          "kind": "article",
-          "snippet": "Mixed fortunes for top FPL captain picks in Gameweek 4 premierleague.com",
-          "published": "Sat, 12 Sep 2026 21:33:23 GMT"
-        },
-        {
-          "title": "FPL Gameweek 2 Differentials: 5 Low-Owned Picks",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZmppdUE0cWRYT2hzN0hGNWV6YWJ2RW8yX2VDaF9xM3NDLTJJOE84dmRqSi1tTV9OWXZFNVVhZ3paVGpNT1FhMURydU8tX0tENXpuc1QtWDRHZGdmT1Q3WWtZZ0NaMWtoNlhyTHpqdjBFRVJKcnliM3Y1Q3g5TnFxdg?oc=5",
-          "publisher": "Fantasy Football Fix",
-          "kind": "article",
-          "snippet": "FPL Gameweek 2 Differentials: 5 Low-Owned Picks Fantasy Football Fix",
-          "published": "Wed, 26 Aug 2026 07:00:00 GMT"
-        },
-        {
-          "title": "FPL GW33 Differentials: Best Low-Owned Picks for Gameweek 33",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMV9idWJJNFNXNE5icWdSLXJna0R6ekhoZGYtN0xjTmlUMHdiV3I1MEJXUmNmaTFuVExxWm1IczNZNkVWZDFDNEhQS2xvdEthdjVvdDQ3ZXZHSTZiNmx1TUt6dnJGeXhFLVZqQ05jYzZ0WWdqV2NBbkwwZlVJWG1DenFVWjhCdUlibm1LaWpydUNsWk5QRjFZa1h5cDExNnc1LS0tWk1qdW50WXhlc3ZzclkxUVVha1E3cFE?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "FPL GW33 Differentials: Best Low-Owned Picks for Gameweek 33 RotoWire",
-          "published": "Fri, 17 Apr 2026 07:00:00 GMT"
         }
       ]
     },
@@ -12826,6 +13185,50 @@
       ]
     },
     {
+      "id": "maresca-manchester-city-still-waiting-apology-incorrect-2023-18d7aee9",
+      "slug": "maresca-manchester-city-still-waiting-apology-incorrect-2023-18d7aee9",
+      "sport": "soccer",
+      "headline": "Maresca says Manchester City still waiting for apology after incorrect 2023 derby goal",
+      "blurb": "Maresca waits on 2023 apology",
+      "summary": "Bruno Fernandes, Mateus Fernandes and James Trafford: Maresca waits on 2023 apology United won game after controversial Fernandes equaliser City to blood youngsters for Carabao Cup game against Norwich Enzo Maresca says Manchester United cannot complain about the controversial derby winner on Sunday because Manchester City are still awaiting an apology from the Aggregated from The Guardian, Guardian Football.",
+      "category": "wire",
+      "published": "2026-09-16T11:40:24Z",
+      "updated": "2026-09-17T18:15:41Z",
+      "players": [
+        {
+          "key": "bruno fernandes",
+          "name": "Bruno Fernandes",
+          "slug": "bruno-fernandes",
+          "pos": "MID",
+          "team": "MUN"
+        },
+        {
+          "key": "fernandes",
+          "name": "Mateus Fernandes",
+          "slug": "mateus-fernandes",
+          "pos": "MID",
+          "team": "TOT"
+        },
+        {
+          "key": "trafford",
+          "name": "James Trafford",
+          "slug": "james-trafford",
+          "pos": "GKP",
+          "team": "LEE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Maresca says Manchester City still waiting for apology after incorrect 2023 derby goal",
+          "url": "https://www.theguardian.com/football/2026/sep/16/enzo-maresca-manchester-city-apology-2023-derby-goal",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "United won game after controversial Fernandes equaliser City to blood youngsters for Carabao Cup game against Norwich Enzo Maresca says Manchester United cannot complain about the controversial derby winner on Sunday because Manchester City are still awaiting an apology from the ",
+          "published": "Wed, 16 Sep 2026 11:40:24 GMT"
+        }
+      ]
+    },
+    {
       "id": "setback-another-brighton-injury-blow-confirmed-ahead-manchester-cf726ddb",
       "slug": "setback-another-brighton-injury-blow-confirmed-ahead-manchester-cf726ddb",
       "sport": "soccer",
@@ -12943,50 +13346,6 @@
       ]
     },
     {
-      "id": "maresca-manchester-city-still-waiting-apology-incorrect-2023-18d7aee9",
-      "slug": "maresca-manchester-city-still-waiting-apology-incorrect-2023-18d7aee9",
-      "sport": "soccer",
-      "headline": "Maresca says Manchester City still waiting for apology after incorrect 2023 derby goal",
-      "blurb": "Maresca waits on 2023 apology",
-      "summary": "Bruno Fernandes, Mateus Fernandes and James Trafford: Maresca waits on 2023 apology United won game after controversial Fernandes equaliser City to blood youngsters for Carabao Cup game against Norwich Enzo Maresca says Manchester United cannot complain about the controversial derby winner on Sunday because Manchester City are still awaiting an apology from the Aggregated from The Guardian, Guardian Football.",
-      "category": "wire",
-      "published": "2026-09-16T11:40:24Z",
-      "updated": "2026-09-17T18:15:41Z",
-      "players": [
-        {
-          "key": "bruno fernandes",
-          "name": "Bruno Fernandes",
-          "slug": "bruno-fernandes",
-          "pos": "MID",
-          "team": "MUN"
-        },
-        {
-          "key": "fernandes",
-          "name": "Mateus Fernandes",
-          "slug": "mateus-fernandes",
-          "pos": "MID",
-          "team": "TOT"
-        },
-        {
-          "key": "trafford",
-          "name": "James Trafford",
-          "slug": "james-trafford",
-          "pos": "GKP",
-          "team": "LEE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Maresca says Manchester City still waiting for apology after incorrect 2023 derby goal",
-          "url": "https://www.theguardian.com/football/2026/sep/16/enzo-maresca-manchester-city-apology-2023-derby-goal",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "United won game after controversial Fernandes equaliser City to blood youngsters for Carabao Cup game against Norwich Enzo Maresca says Manchester United cannot complain about the controversial derby winner on Sunday because Manchester City are still awaiting an apology from the ",
-          "published": "Wed, 16 Sep 2026 11:40:24 GMT"
-        }
-      ]
-    },
-    {
       "id": "fpl-gameweek-4-thursday-s-live-injury-917444c6",
       "slug": "fpl-gameweek-4-thursday-s-live-injury-917444c6",
       "sport": "soccer",
@@ -13073,7 +13432,7 @@
       "summary": "Home Losses CONTINUE - Spurs 0-2 Newcastle Reaction YouTube Desk reading of The Guardian. Board reading of The Guardian. Aggregated from The Guardian, YouTube. Aggregated from The Guardian, YouTube.",
       "category": "wire",
       "published": "2017-05-15T11:00:43Z",
-      "updated": "2026-09-17T21:14:08Z",
+      "updated": "2026-09-17T23:01:01Z",
       "players": [],
       "sources": [
         {
@@ -17563,6 +17922,22 @@
           "kind": "article",
           "snippet": "",
           "published": "Thu, 17 Sep 2026 20:29:41 GMT"
+        },
+        {
+          "title": "Continue reading...",
+          "url": "https://www.theguardian.com/football/2026/sep/17/europa-league-celtic-ferencvaros-besiktas-marseille-juventus-nec",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Thu, 17 Sep 2026 22:36:01 GMT"
+        },
+        {
+          "title": "Continue reading...",
+          "url": "https://www.theguardian.com/football/2026/sep/18/premier-league-10-things-to-look-out-for-this-weekend",
+          "publisher": "The Guardian",
+          "kind": "article",
+          "snippet": "",
+          "published": "Thu, 17 Sep 2026 23:01:01 GMT"
         }
       ]
     },
@@ -17636,8 +18011,8 @@
       "slug": "premier-league-best-gabriel-replacements-1ec6252a",
       "sport": "soccer",
       "headline": "Gabriel Magalhaes injury: What games will Arsenal defender miss during Premier League title race? Advantage Manchester City?",
-      "blurb": "Four games is far too soon to be talking about who is in or out of the title race...",
-      "summary": "Gabriel Magalhães and Declan Rice: Four games is far too soon to be talking about who is in or out of the title race... BBC Sport asks if this is already a two-horse race. What Arsenal's Premier League title rivals still need in transfer window ESPN Aggregated from BBC Football, ESPN, YouTube, The Football Faithful, Football London and 3 more.",
+      "blurb": "Arsenal suffer nightmare injury repeat in major Premier League title race twist The Mirror",
+      "summary": "Gabriel Magalhães and Declan Rice: Arsenal suffer nightmare injury repeat in major Premier League title race twist The Mirror Arsenal dealt triple injury blow in Premier League title battle with Man City manchestereveningnews.co.uk Every Premier League injury and suspension with Liverpool and Arsenal facing issues The Mirror Aggregated from The Mirror, manchestereveningnews.co.uk, talkSPORT, GiveMeSport, YouTube and 7 more.",
       "category": "injury",
       "published": "2025-08-07T07:00:00Z",
       "updated": "2026-09-16T07:00:01Z",
@@ -17729,6 +18104,46 @@
           "kind": "article",
           "snippet": "What Arsenal's Premier League title rivals still need in transfer window ESPN",
           "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal suffer nightmare injury repeat in major Premier League title race twist",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeHpMRjBmTGRHZ3RldlZrUElpLVlKLWI2Z05uQzR3dTFRb1loT0trVWZrUnl1cEEyUExUYVBTeDhFa2FxS1I1ckFjcFdCbkVXa1l1MTBfZEppVlZmc2pRcXhHZTRoUDB3OVd1dWVIb0xKdTUzNThHYUk4bDJlMEZmRGZMZnN4cGVacHVINmptSnXSAZYBQVVfeXFMT3N3T1RrcDk5d0Y5bW12azNwVzFRc21tdWZFS2l5YW5Xc2RWRUlMMHpLNmkwSjhMcEZoZVlsb2pic2RLMHYxMVRjMndxZm5DdVBEYi0tV2pubDN0VERIaVZZbGdMSjVHR3Q0Q3BCU0pjN3NIZ2ppYjh0aWhYcVlxVnJ6cnlqU3FMcWhBbENwVDZDT29Zc2ZR?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Arsenal suffer nightmare injury repeat in major Premier League title race twist The Mirror",
+          "published": "Thu, 12 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arsenal dealt triple injury blow in Premier League title battle with Man City",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWjRXd1BueXNJQ1Rldl9kX05XVHh3dVF3RnhSbGNVaUpzSHRfeDNKc21xVlptVC1qRFR3UDdORUIxTTJxSWtCTVlNUlBBVXRMeU5FSjJiMkVsLXNaWmRCcVcybDFzN1NaYWsxcURxamVpbmtSdkRVVVlQSThpVmlVMkJPc0NmZzI4RTNYY0hqRWF4ZGVxdm1DQmR5TC1UeHRQUUtxTV9va1ZpUHMwdVpB0gG0AUFVX3lxTE9pUzV6SmhHUVp3THQ0d0wxY0ZpeWZiREstWTNUZ0h6ak4yNjNKNFlPTXp1ZjhsR2xHLWY5WDN6bDFkQTdKelAwcnZ3bFVreXduR0F6bmpPdWxaQjdNZXJGOE1qOFh4R21VRnBDOVhMOVlRZWZjSlRON25CY2QtMzJVRzZtcEMxQ2FxLWlPUHRkYnRfcWlBbUx3WUUwOExScUtCZ0trQVhMZzNoRmVBcERSdFN1SQ?oc=5",
+          "publisher": "manchestereveningnews.co.uk",
+          "kind": "article",
+          "snippet": "Arsenal dealt triple injury blow in Premier League title battle with Man City manchestereveningnews.co.uk",
+          "published": "Fri, 01 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Every Premier League injury and suspension with Liverpool and Arsenal facing issues",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOEZRWkFyQVFwN08tMTVEZzFmRElNTE52NGREUGhmZ2thSHREMHA3dGVkUm9TMnBjWElMWHVIVXo1eDFlS3pNTkVTU3NkbndzQjdqY3o0OWxEUHYxOUE3aDQ2MFFBM2tGTGttYmRRREhRRHNnV2U1aFhaUnVyZi0yRWExQnpScWg1MThEaGZDemJ0cng2QmfSAZsBQVVfeXFMTm1faWhQT0JCNmZEZTVPbm43M2lLZXdEQ0lCZ0NLeXR3NWd4SXlrNkJ6SGJhbFdwYzBsYTI2bVdldDVnNFRmdEZmS1NiYUtYcEtMYmQ3a2w2YTlCbFNUcDI5b1hXb1pSNy1QOWhOR2FoVHQ5eUdxZ3Jrd0FmVFd1RlViaTBLOWplSzk0VmNyY1hZTlQzYUEyRDNNN3M?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Every Premier League injury and suspension with Liverpool and Arsenal facing issues The Mirror",
+          "published": "Fri, 22 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal rocked by injury blow days into new Premier League season",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNa015LWdFWVhCb1dudEJEVy1ORjlLVEZyWU5odDhIX2huajlVUGVjMFZPSF8ydHoxSzJzb3M0c2d2aF9hM0JvbGNUeHNWU0ZuRjV2MDNTcGZQMjJ3N2hTRmZlMllKNE1Lc1BUX1VybVBCbzM1WFJ3ZWRRNGFpV0tvSXczMlowVzU0RGdCdGRoWQ?oc=5",
+          "publisher": "talkSPORT",
+          "kind": "article",
+          "snippet": "Arsenal rocked by injury blow days into new Premier League season talkSPORT",
+          "published": "Wed, 20 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Arsenal Receive Huge Injury Boost Ahead of Atletico and Title Race With Man City",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNREwyLXRSWFFFY3ZGSUFRek5ob2tRcFpxaUE2b0xLcGFqaXMxcndzcFdSV2ZPVDFHZjdWdV9XUGowNkJqQ3VPX3AxR0VJYTdpSF9PZzR0dEphM0IyaG5xZ1BpREZYTWRlWi1tUGpqOFdkSmZqQjJybzBTX2pHZGxsajBPWFdjNVdlN2Jxck1pMzg?oc=5",
+          "publisher": "GiveMeSport",
+          "kind": "article",
+          "snippet": "Arsenal Receive Huge Injury Boost Ahead of Atletico and Title Race With Man City GiveMeSport",
+          "published": "Sun, 26 Apr 2026 07:00:00 GMT"
         }
       ]
     },
@@ -17815,6 +18230,44 @@
           "kind": "article",
           "snippet": "⚽ Live updates from the 8pm BST kick-offs ⚽ Xhaka promises ‘fire’ | Live scoreboard ⚽ Get in touch! Email Niall with any thoughts Four changes from Sunderland’s narrow defeat to Arsenal at the weekend: Ballard, Brobbey, Angulo and Meunier drop to the bench, with Alderete, Hume, I",
           "published": "Wed, 16 Sep 2026 18:23:25 GMT"
+        }
+      ]
+    },
+    {
+      "id": "liverpool-injury-hugo-ekitike-giovanni-leoni-more-ebb55274",
+      "slug": "liverpool-injury-hugo-ekitike-giovanni-leoni-more-ebb55274",
+      "sport": "soccer",
+      "headline": "The Briefing: How Ekitike injury may hit Liverpool, Casemiro's '6-7' celebration and more",
+      "blurb": "The Briefing: How Ekitike injury may hit Liverpool, Casemiro's '6-7' celebration and more premierleague.com",
+      "summary": "Hugo Ekitiké: The Briefing: How Ekitike injury may hit Liverpool, Casemiro's '6-7' celebration and more premierleague.com Liverpool injury latest: Hugo Ekitike, Giovanni Leoni and more Yahoo Sports Aggregated from premierleague.com, Yahoo Sports.",
+      "category": "injury",
+      "published": "2026-04-15T07:00:00Z",
+      "updated": "2026-09-17T13:55:00Z",
+      "players": [
+        {
+          "key": "ekitike",
+          "name": "Hugo Ekitiké",
+          "slug": "hugo-ekitik",
+          "pos": "FWD",
+          "team": "LIV"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Liverpool injury latest: Hugo Ekitike, Giovanni Leoni and more",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYkF5eVRBY0lDNUJaUURXQ25YbmctZy0tSnRlc25EUkNKSWtUOUdsRXBDTUNKVVlJSW1ibGlJLTlGdVRZQloxd21hXzlaTTlUTVVLMGJhOU5mVTJUelkzWFFjck5CMkhCOV9xM0N1cC1QN0hHdGNNT2FfTElsTHBzTXhDZ3JoUEJSaWk5SWl3?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Liverpool injury latest: Hugo Ekitike, Giovanni Leoni and more Yahoo Sports",
+          "published": "Thu, 17 Sep 2026 13:55:00 GMT"
+        },
+        {
+          "title": "The Briefing: How Ekitike injury may hit Liverpool, Casemiro's '6-7' celebration and more",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPa0hvc1haMUgyb04zMHFseDd2RGI2RThoYzh2enhoWXBQeWRYb0NtbDBfbW9wUFBiczFnT2hwaFgtTUx4d0J3aFlOeEhKeFpKNkx2a0RmYnMwdW5DZ0tuUERDMzdBdmFNY0R0QU9WdUxINk1tZU5GTmJEUUkwaVZPRXJCRjlyYzV1bUlxOXpMWFE5VnFoVWxTWFlwWkc3SnQ0aDg3Q3pIN2ZwbG44NTRTeFlJaE4zSTJTT1JYV2tLTU55eWZ5M0ZLR2RB?oc=5",
+          "publisher": "premierleague.com",
+          "kind": "article",
+          "snippet": "The Briefing: How Ekitike injury may hit Liverpool, Casemiro's '6-7' celebration and more premierleague.com",
+          "published": "Wed, 15 Apr 2026 07:00:00 GMT"
         }
       ]
     },
@@ -18033,36 +18486,6 @@
           "kind": "article",
           "snippet": "The first goal that AFC Bournemouth ever scored in Europe could be heard out on the Bay of Biscay. The second sounded round San Sebastián soon after. A tradition from Real Sociedad’s old Atotxa ground, recovered at Anoeta in 2009, dictates that a single firework is set off every ",
           "published": "Thu, 17 Sep 2026 21:14:08 GMT"
-        }
-      ]
-    },
-    {
-      "id": "liverpool-injury-hugo-ekitike-giovanni-leoni-more-ebb55274",
-      "slug": "liverpool-injury-hugo-ekitike-giovanni-leoni-more-ebb55274",
-      "sport": "soccer",
-      "headline": "Liverpool injury latest: Hugo Ekitike, Giovanni Leoni and more",
-      "blurb": "Liverpool injury latest: Hugo Ekitike, Giovanni Leoni and more Yahoo Sports",
-      "summary": "Liverpool injury latest: Hugo Ekitike, Giovanni Leoni and more Yahoo Sports Board reading of Yahoo Sports.",
-      "category": "injury",
-      "published": "2026-09-17T13:55:00Z",
-      "updated": "2026-09-17T13:55:00Z",
-      "players": [
-        {
-          "key": "ekitike",
-          "name": "Hugo Ekitiké",
-          "slug": "hugo-ekitik",
-          "pos": "FWD",
-          "team": "LIV"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Liverpool injury latest: Hugo Ekitike, Giovanni Leoni and more",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOYkF5eVRBY0lDNUJaUURXQ25YbmctZy0tSnRlc25EUkNKSWtUOUdsRXBDTUNKVVlJSW1ibGlJLTlGdVRZQloxd21hXzlaTTlUTVVLMGJhOU5mVTJUelkzWFFjck5CMkhCOV9xM0N1cC1QN0hHdGNNT2FfTElsTHBzTXhDZ3JoUEJSaWk5SWl3?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Liverpool injury latest: Hugo Ekitike, Giovanni Leoni and more Yahoo Sports",
-          "published": "Thu, 17 Sep 2026 13:55:00 GMT"
         }
       ]
     },
@@ -21043,116 +21466,6 @@
           "kind": "article",
           "snippet": "Cody Gakpo injury latest ahead of Liverpool vs Brighton metro.co.uk",
           "published": "Fri, 12 Dec 2025 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "everton-dealt-further-jarrad-branthwaite-setback-man-utd-ae24d958",
-      "slug": "everton-dealt-further-jarrad-branthwaite-setback-man-utd-ae24d958",
-      "sport": "soccer",
-      "headline": "Everton dealt further Jarrad Branthwaite setback as Man Utd target forced to undergo surgery on troublesome injury",
-      "blurb": "Everton’s Jarrad Branthwaite to undergo surgery after hamstring injury rehab ‘complication’ The New York Times",
-      "summary": "Everton’s Jarrad Branthwaite to undergo surgery after hamstring injury rehab ‘complication’ The New York Times Jarrad Branthwaite ruled out of Everton’s trip to Leeds with injury The New York Times Everton’s Jarrad Branthwaite in line to return against Fulham after recovering from quad injury The New York Times Aggregated from The New York Times, Sky Sports, Flashscore.com, Goal.com, football-talk.co.uk.",
-      "category": "injury",
-      "published": "2024-06-17T07:00:00Z",
-      "updated": "2026-09-15T20:00:43Z",
-      "players": [
-        {
-          "key": "branthwaite",
-          "name": "Jarrad Branthwaite",
-          "slug": "jarrad-branthwaite",
-          "pos": "DEF",
-          "team": "EVE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Man City, Man Utd and Bayern Munich are all watching Everton defender Jarrad Branthwaite",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOczZXQ0d2QTRMc1JvUjR5ZXdoY255UnRsU0JSX0pwcjVkQXEyQTRJRHlCcnI5eE8yN0M5aW4xbU0wVWZ3QmV3ZkFlanNGV0ZZZzY5YmI3OU90d3VkMTA3dE8tWERxNURBMWdnRjZQbWxnSGVjeW1DU2JtLWhOOU5laE9fUzVCWmJNNll1anYxT0ppeGw1Qm5CUmMxdTFyOEV5X1NSZGc4Z2wzajZ4OXJSZ3o4aktENlJiQ2hLYS1qUDhiSjBOd2pqRHpORGY5c0FDMWxLNkVGX2hJZlhTb0RuMWlmZ1ZDVHNneFZOd2F3NWh6T1RfUXlWNVBvQkZxTU0?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Man City, Man Utd and Bayern Munich are all watching Everton defender Jarrad Branthwaite - Paper Talk Sky Sports",
-          "published": "Sat, 13 Jun 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Jarrad Branthwaite given further blow as Everton defender undergoes hamstring surgery",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOaDM3dXY2QmVLLVlZNWY0Tkhfc0g2cldMdnM1NUR6Z2VNOGNIbUwxYmx4Nl8zYXBjTTVNRkFUUThoeDFOdWdvMDZ3S3U4QS1WbmlEU2dwRVVQaXlpUVZ6ZDBKcDYtVmVjSG9jUnYzNHB0TFc5V0kxWm5FRDV4ZXhZVWNOWTVxa1pQVHFwZHp2Vk1GaGE1XzJMdWNKb0hDazNrTzZsLVNBTGpjY1IxcnJBQnlSTFR5ajE4UUFNdVRvMVpUd1RYNW9udE5kZFNGYW5mMXVjOEVtZjVmTDd4Zm91VG9Udw?oc=5",
-          "publisher": "Flashscore.com",
-          "kind": "article",
-          "snippet": "Jarrad Branthwaite given further blow as Everton defender undergoes hamstring surgery Flashscore.com",
-          "published": "Mon, 20 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Everton dealt further Jarrad Branthwaite setback as Man Utd target forced to undergo surgery on troublesome injury",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdDVRelVNRkM2aVJGV29Ud2JKVjhjeXlRMUVhU1I5RlpfWXdmOG9KMktKYmdYRWlFajdzZkNhVnpxN3dXUWZ2OE10MmFjLWpURzNfN2RwUzJDbTNZSnpuMURrcU0weWtMZGNfYWdqY2EtSHF3S0FvLUdUUUxONGNFUXFQYzUtMUdPaEYxRlNWTTlsZHE0SEZqcTU2dFBJdU5zZkd4ZzZ3X0x3RE1KeS1uc2JIMlczTzhFY0RWZm8xbTBlQmxGTkhzbjRfOEc5Zmx5dXE0OUNfYWNlT3NwNjhJ?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "Everton dealt further Jarrad Branthwaite setback as Man Utd target forced to undergo surgery on troublesome injury Goal.com",
-          "published": "Tue, 21 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Jarrad Branthwaite: Man Utd make opening transfer offer for Everton defender",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNRVVOaENlV2NaTmM5RFZSQ1A3NjRfZU1qUVcxSUtsaUp5bkMzWi1Uc1JOZ0JUNHBuSGp6VjU5Uk5WRklSc2VjUWZ5X2d3QWlZTWxnaXVuRXdCdDEyM3RMa3VzZFR3TV9CNlBrWDBRUUpvbERxRWxCdzZTdGtQZXhpczFKWlU2TUJ1dFlDRmJHUE03Q0wzeEM2ejl0Sy1NYzR3c1Z2SVFpM2ttaW5QaGlKYVZKbW0ySnF2M0hPTW9tTUM3a0FRYlJZTFZn?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Jarrad Branthwaite: Man Utd make opening transfer offer for Everton defender Sky Sports",
-          "published": "Mon, 17 Jun 2024 07:00:00 GMT"
-        },
-        {
-          "title": "Jarrad Branthwaite transfer news: Man Utd's improved bid worth up to £50m rejected by Everton",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNczFSS19pSVhGdENXQmdVcFhDSmhyOWo2WXFyN1VNYllSX3QyZUF5cng2NDUxY21Dcm8wekJIb1ZOeG5zUTJ6emRSZnlsUWFxeU5DeTdhNFUwc2p1WjZQOHRVelBkMFItaC1kY3liX3NMZXpUV3ZVeUxwQWRrQUFwRWVjVzNXbXdJTFZQUThkM0pwUDUwWXBrQXNUXzVEWkxXQkJILW1uLVJZYXl2SllCa2xnSFlzdDJFX3lTYjZCS2pKYTd2aEpkQ2wxOXdjQTNDaEU5eHVUdWxkNU90VC0wRg?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Jarrad Branthwaite transfer news: Man Utd's improved bid worth up to £50m rejected by Everton Sky Sports",
-          "published": "Tue, 09 Jul 2024 07:00:00 GMT"
-        },
-        {
-          "title": "Jarrad Branthwaite transfer news: Everton value centre-back at more than £70m amid Man Utd interest",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQc3BBUFRCeDNYTmlXLUNQZ3dwTFRCNzUtLThnZG9hQTZieFRCOFJTTnFUdHV0ODBKTG1ycGJaSDBhcEZyU1BTc2tQdU1fdlkySHd4YnlFanVLOGFMWk1KdXo0ajFvRUNPLUYxYXZsNWRVSzNtalpnLUowcDAtWFpYYkN5bHJrMWJyTXpueVRrWWlaQ3hyV3k1Q3FRdDByRHlpUXlheFM0MElFSUY2aE9nVTBsZFBKV2U4UE92dl9LM08zbjhBMHQwWHdVTk5oVUNZWHFsS1ZYbDRuXzJlWHhPT21XSUlEZm5ldkE?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Jarrad Branthwaite transfer news: Everton value centre-back at more than £70m amid Man Utd interest Sky Sports",
-          "published": "Tue, 18 Jun 2024 07:00:00 GMT"
-        },
-        {
-          "title": "Jarrad Branthwaite transfer news: Man Utd make improved bid worth up to £50m for Everton defender",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVzZNU1pkcFh5TkFTMS1VMHI2YVhFcm1TS0tDdnJ4WDRUVnlSVUtCdWlndmZSS1BFT3hnZWFTWXRWcUVXcXNKbnU3d2RlZlFMR21fNHRtWTJDc0pIMkl1VVM0UTAwVzJuT0hCbllVU1BZRFoySTYwZ2w5cHhhR0dBblJzdnFMRE5GTEU5S3F3dW8taHQ5ck0zWWVYVWYyWkRFUEo2ODhVb1FsS2pGUVNfNWVMZEt6RXI0cUxjeFhBam5RdWJhcjY4TlE2N1RBTmRnUkRSYkkzTEZ6S2F1ekZMMFdoYk03MWM?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "Jarrad Branthwaite transfer news: Man Utd make improved bid worth up to £50m for Everton defender Sky Sports",
-          "published": "Tue, 09 Jul 2024 07:00:00 GMT"
-        },
-        {
-          "title": "Man Utd plan to reignite interest in Jarrad Branthwaite",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZ3lBSnk1ZWxUSml2YXg3cTVrTXA2cTMwYWo2SFFCVmJqUFd4Mms3NElPOGl2NEVtcmJPNnkyS1dfNDV3aUR1TkYydzVqZm40X01wTF90U0xQMFNrcjlLT2w0RjlZOHdaSDdHTlBiRmVBeGNRQlJ4TUN0YXNVQUdsMkdLeDBqWGJ4NFEzVWhuaXFZTmZYMkE?oc=5",
-          "publisher": "football-talk.co.uk",
-          "kind": "article",
-          "snippet": "Man Utd plan to reignite interest in Jarrad Branthwaite football-talk.co.uk",
-          "published": "Tue, 15 Sep 2026 20:00:43 GMT"
-        },
-        {
-          "title": "Everton’s Jarrad Branthwaite to undergo surgery after hamstring injury rehab ‘complication’",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUVd2UHBUSTJfOW1GTi1wZ2cwdHZRa2dzUmstckZ2bldwdnlCaEtobGJhaUczSVY5UTlEZjhfTG1qZXB3eTBkd201T0x5SEl3cm9HN20tbXJWYkp3RWg1dlRkZzZxQml0REdxTERIb1paMXFlMjB3R1BDQzN6ZnZuWU05b3ZsVlRnY3B5YW1rQ0pJdjdYWkk3YXVn?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Everton’s Jarrad Branthwaite to undergo surgery after hamstring injury rehab ‘complication’ The New York Times",
-          "published": "Mon, 20 Oct 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Jarrad Branthwaite ruled out of Everton’s trip to Leeds with injury",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMm5VNXo2Wklna1VFTVVKTjJNYWZrT1V5SWVqNnpqM2FoaFFuOWtzTHVIYVdiZFQ2eEs0dWQtNW12NC1PZW9VRHBEMWxXOW5YcDdmY0tYUTR4NXBKLVZfT2R6dWYwZEZIb09uMGpIbTA2eS1Ua01JQU4zeGZua00tU2tZVWgzS1pXMS1MZ3ZZLUpfNVZJSWpV?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Jarrad Branthwaite ruled out of Everton’s trip to Leeds with injury The New York Times",
-          "published": "Fri, 15 Aug 2025 07:00:00 GMT"
-        },
-        {
-          "title": "Everton’s Jarrad Branthwaite in line to return against Fulham after recovering from quad injury",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTUN4cnRwZTREdVhmNC0yTHYwalRHRlMzR0tvTW81THdxaGJjWmFGSGxYMGRhUjFhakJVRWhCOEM3TWNOVkxScVktdDZCMnNmNUU4WmpFemV0aFUxZmFuTUppUGNnLW4yLWpUbGtuMVRtSGlOSkc4dDNXYXBjVGJfRmk0cWpINWtpeWd3aUlJUQ?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Everton’s Jarrad Branthwaite in line to return against Fulham after recovering from quad injury The New York Times",
-          "published": "Thu, 24 Oct 2024 07:00:00 GMT"
         }
       ]
     }
