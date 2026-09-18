@@ -146,7 +146,7 @@ def test_football_nav_keeps_every_link():
         "Weekly", "The Recap", "Week 2 DST", "Week 2 K", "Week 2 Predictions", "Week 2 Waivers", "The Market", "Injuries",
         "ADP", "Trade", "The Method",
         "My Team",
-        "Touches", "Players", "News", "The X", "Hot 'n' Cold",
+        "Articles", "Touches", "Players", "News", "The X", "Hot 'n' Cold",
         "NFL", "MLB", "BPL",
         "The Fence (IDP)",
     ]
@@ -157,6 +157,14 @@ def test_football_nav_keeps_every_link():
     assert 'class="nav-group nav-week is-here"' in header
     assert "nav-lab" in header
     assert "../" not in header
+    assert 'class="nav-drawer"' in header
+    assert header.count("nav-drawer") == 1
+    assert "<summary>Menu</summary>" in header
+    assert 'class="site-nav nav-wide"' in header
+    assert header.count("nav-wide") == 1
+    arts = fb_header_nav("the-long-game.html", 0)
+    assert 'aria-current="page">Articles</a>' in arts
+    assert 'class="nav-group nav-tape is-here"' in arts
     nested = fb_header_nav("players/zay-flowers.html", 1)
     assert 'href="../the-keep.html"' in nested
     assert 'href="index.html">Players</a>' in nested
@@ -323,6 +331,8 @@ def test_searchaction_and_schema():
     assert "https://ballkeep.com/the-keep.html" in txt
     assert "https://ballkeep.com/best-ball.html" in txt
     assert "https://ballkeep.com/the-method.html" in txt
+    assert "https://ballkeep.com/articles.html" in txt
+    assert "https://ballkeep.com/the-long-game.html" in txt
     assert "https://ballkeep.com/bb/" in txt
     card = rank_card("The Keep", 4, 9769, "../the-keep.html")
     assert 'href="../the-keep.html"' in card
@@ -811,7 +821,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=60" in doc
+    assert "css/site.css?v=63" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 

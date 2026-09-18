@@ -849,6 +849,7 @@ NAV_GROUPS = [
         ("league.html", "My Team"),
     ]),
     ("tape", "Tape", [
+        ("articles.html", "Articles"),
         ("touches.html", "Touches"),
         ("players/index.html", "Players"),
         ("news.html", "News"),
@@ -865,7 +866,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 60
+CSS_VER = 63
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -890,18 +891,35 @@ def nav_href(target: str, depth: int) -> str:
 
 def fb_is_current(href: str, path: str) -> bool:
     news_here = path == "news.html" or path.startswith("news/")
+    articles_here = path in ("articles.html", "the-long-game.html")
     return href == path or (href == "news.html" and news_here) or (
         href == "board.html" and path == "redraft-ppr.html"
-    )
+    ) or (href == "articles.html" and articles_here)
 
 
 def fb_header_nav(path: str, depth: int) -> str:
-    return grouped_nav(
+    href_fn = lambda href: nav_href(href, depth)
+    here_fn = lambda href: fb_is_current(href, path)
+    desktop = grouped_nav(
         NAV_GROUPS,
-        lambda href: nav_href(href, depth),
-        lambda href: fb_is_current(href, path),
+        href_fn,
+        here_fn,
+        nav_class="site-nav nav-wide",
+        aria_label="Ball Keep",
+    )
+    mobile = grouped_nav(
+        NAV_GROUPS,
+        href_fn,
+        here_fn,
         nav_class="site-nav",
         aria_label="Ball Keep",
+    )
+    return (
+        f"{desktop}"
+        f'<details class="nav-drawer">'
+        f"<summary>Menu</summary>"
+        f"{mobile}"
+        f"</details>"
     )
 
 
@@ -1293,6 +1311,16 @@ FB_SEO = {
         "How Ball Keep ranks a name. Half the vote is the long boards. Half is every other list that ranked him. Rank 1 is 12,000 BK Value. Fair is within 8%.",
         "img/players/josh-allen.png",
     ),
+    "articles.html": (
+        "Fantasy Football Articles | Ball Keep",
+        "Essays and long-term Superflex strategy on Ball Keep. The Long Game, The Recap, Week 2 Predictions, The Market, and The Method.",
+        "img/players/josh-allen.png",
+    ),
+    "the-long-game.html": (
+        "The Long Game | Superflex Dynasty Strategy | Ball Keep",
+        "Hold the years when the week is shouting. A Superflex dynasty essay on weather versus climate, youth, picks, and the names Week 1 tried to bury.",
+        "img/players/josh-allen.png",
+    ),
     "privacy.html": (
         "Privacy Policy | Ball Keep",
         "How Ball Keep, BaseKeep, BasketKeep, and PitchKeep collect and use information, including cookies, analytics, and ads.",
@@ -1347,6 +1375,7 @@ HOME_FAQ = [
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player."),
     ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
     ("Where is the method written down?", "The Method. Super Aggregate, BK Value, rest of season versus this week, and how to write the site."),
+    ("Where are the essays?", "Articles. The Long Game is the Superflex strategy piece for the years. The Recap, Week 2 Predictions, The Market, and The Method live there too."),
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
@@ -1531,6 +1560,8 @@ FB_ALSO = {
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "the-recap.html": [
+        ("articles.html", "Articles", "The long reads."),
+        ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("weekly.html", "Weekly", "Flex plus every position."),
         ("the-market.html", "The Market", "Buy low, sell high after the opener."),
         ("waiver.html", "Week 2 Waivers", "Coker, Black, Vele, Shough."),
@@ -1538,6 +1569,7 @@ FB_ALSO = {
         ("archive/week1/index.html", "Week 1 archive", "Opening, DST, kickers, matchups, waivers."),
     ],
     "the-market.html": [
+        ("articles.html", "Articles", "The long reads."),
         ("the-recap.html", "The Recap", "Full Week 1 essay and the sixteen scores."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Dynasty buys and sells after the opener."),
         ("waiver.html", "Week 2 Waivers", "Coker, Black, Vele, Shough."),
@@ -1627,12 +1659,30 @@ FB_ALSO = {
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
     "the-method.html": [
+        ("articles.html", "Articles", "The long reads."),
+        ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
         ("board.html", "The Board", "Redraft PPR, this year."),
         ("trade.html", "Trade Calculators", "BK Value on six boards."),
         ("the-fence.html", "The Fence (IDP)", "Superflex plus IDP."),
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("discord.html", "Discord", "Ranks inside a server."),
+    ],
+    "articles.html": [
+        ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
+        ("the-recap.html", "The Recap", "The full Week 1 essay."),
+        ("week2-matchups.html", "Week 2 Predictions", "A pick on every line."),
+        ("the-market.html", "The Market", "Buy low and sell high after Week 1."),
+        ("the-method.html", "The Method", "How the Super Aggregate is built."),
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+    ],
+    "the-long-game.html": [
+        ("articles.html", "Articles", "Every long read in one list."),
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("the-recap.html", "The Recap", "The full Week 1 essay."),
+        ("the-market.html", "The Market", "Buy low and sell high after Week 1."),
+        ("the-method.html", "The Method", "How the Super Aggregate is built."),
+        ("trade.html", "Trade Calculators", "BK Value on six boards."),
     ],
 }
 
@@ -1937,6 +1987,7 @@ def seed_player_pages():
 
 def home_week_faces():
     """Faces and the recap teaser so the home week block feels like a room."""
+    from the_long_game import long_game_teaser
     from the_recap import recap_teaser
     from week2_predictions import predictions_teaser
     shots = [
@@ -1954,7 +2005,12 @@ def home_week_faces():
         f'width="120" height="120" loading="lazy" /></a>'
         for slug, ext, name in shots
     )
-    return recap_teaser() + predictions_teaser() + f'<div class="home-faces" aria-label="Faces from Week 1">{pics}</div>'
+    return (
+        long_game_teaser()
+        + recap_teaser()
+        + predictions_teaser()
+        + f'<div class="home-faces" aria-label="Faces from Week 1">{pics}</div>'
+    )
 
 
 def home_rank_preview(rows, media, n=8):
@@ -2025,6 +2081,7 @@ def home_body_html(keep, board, media, stories=None):
         <div class="home-ctas">
           <a class="cta" href="the-keep.html">The Keep</a>
           <a class="cta alt" href="board.html">The Board</a>
+          <a class="cta ghost" href="articles.html">Articles</a>
         </div>
       </div>
     </section>
@@ -2079,7 +2136,9 @@ def home_body_html(keep, board, media, stories=None):
         ("depth-charts.html", "Depth Charts", "32 clubs."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ])}
-    {desk_block("tape", "Tape", "The non-ranking lists.", "The market notes, the player files, and the pictures.", [
+    {desk_block("tape", "Tape", "The non-ranking lists.", "The essays, the market notes, the player files, and the pictures.", [
+        ("articles.html", "Articles", "The long reads. Strategy and the week."),
+        ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells after Week 1."),
         ("the-market.html", "The Market", "Buy low, sell high."),
@@ -3190,6 +3249,8 @@ def write_explore_page():
         ("nfl-schedule.html", "NFL Schedule", "2026 slate."),
         ("discord.html", "Discord Bot", "Ranks in a server."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
+        ("articles.html", "Articles", "The long reads."),
+        ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
     ])}
     {group("Baseball", "BaseKeep", [
         ("bb/index.html", "BaseKeep Home", "Dynasty baseball."),
@@ -3894,6 +3955,8 @@ def main():
 
     from the_method import write_the_method
     write_the_method(sys.modules[__name__])
+    from articles import write_articles
+    write_articles(sys.modules[__name__])
 
     write_explore_page()
 
@@ -3903,6 +3966,8 @@ def main():
         "https://ballkeep.com/",
         "https://ballkeep.com/privacy.html",
         "https://ballkeep.com/the-method.html",
+        "https://ballkeep.com/articles.html",
+        "https://ballkeep.com/the-long-game.html",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/news.html",
         "https://ballkeep.com/the-x.html",
@@ -4250,7 +4315,7 @@ def render_news_only():
 def rewrite_football_navs() -> int:
     """Patch header/footer nav on existing football HTML without a full rebuild."""
     header_re = re.compile(
-        r'(<header class="site">[\s\S]*?</a>\s*)<nav(?: class="site-nav")?[^>]*>[\s\S]*?</nav>',
+        r'(<header class="site">[\s\S]*?</a>\s*)[\s\S]*?(</header>)',
         re.S,
     )
     footer_re = re.compile(r'<nav class="footer-nav"[^>]*>[\s\S]*?</nav>', re.S)
@@ -4266,7 +4331,7 @@ def rewrite_football_navs() -> int:
         if '<header class="site">' not in raw:
             continue
         updated, h_n = header_re.subn(
-            lambda m, p=site_path, d=depth: m.group(1) + fb_header_nav(p, d),
+            lambda m, p=site_path, d=depth: m.group(1) + fb_header_nav(p, d) + m.group(2),
             raw,
             count=1,
         )
