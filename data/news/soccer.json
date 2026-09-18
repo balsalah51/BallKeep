@@ -1,7 +1,7 @@
 {
   "sport": "soccer",
-  "updated": "2026-09-18T02:27:50Z",
-  "fresh": 111,
+  "updated": "2026-09-18T03:25:51Z",
+  "fresh": 99,
   "stories": [
     {
       "id": "kai-havertz-injured-weekend-premier-league-injury-0a7d34e4",
@@ -219,8 +219,8 @@
       "slug": "fpl-gw5-wildcard-draft-raya-gvardiol-tavernier-premier-c6297ed1",
       "sport": "soccer",
       "headline": "Are the most popular FPL players actually the best picks for Gameweek 1?",
-      "blurb": "FPL GW4 Free Hit Team: Best Squad for Gameweek 4 RotoWire",
-      "summary": "Bryan Mbeumo, William Saliba, Mateus Fernandes, Marcus Tavernier and Joško Gvardiol: FPL GW4 Free Hit Team: Best Squad for Gameweek 4 RotoWire FPL GW5: WILDCARD DRAFT | Raya, Gvardiol & Tavernier | Fantasy Premier League Tips 2026/27 YouTube FPL Gameweek 4: BEST WILDCARD TEAM + FREE HIT | Fantasy Premier League Tips 2026/27 youtube.com Aggregated from RotoWire, YouTube, youtube.com, Premier League, Fantasy Football Fix and 7 more.",
+      "blurb": "FPL GW35 Free Hit Guide: Best Team & Players for Gameweek 35 rotowire.com",
+      "summary": "Bryan Mbeumo, William Saliba, Mateus Fernandes, Marcus Tavernier and Joško Gvardiol: FPL GW35 Free Hit Guide: Best Team & Players for Gameweek 35 rotowire.com FPL GW5: WILDCARD DRAFT | Raya, Gvardiol & Tavernier | Fantasy Premier League Tips 2026/27 YouTube FPL Gameweek 4: BEST WILDCARD TEAM + FREE HIT | Fantasy Premier League Tips 2026/27 youtube.com Aggregated from rotowire.com, YouTube, youtube.com, Premier League, Fantasy Football Fix and 7 more.",
       "category": "injury",
       "published": "2024-09-27T07:00:00Z",
       "updated": "2026-09-17T19:23:22Z",
@@ -4281,13 +4281,41 @@
       "id": "arsenal-get-jurrien-timber-injury-ahead-man-city-30ca2385",
       "slug": "arsenal-get-jurrien-timber-injury-ahead-man-city-30ca2385",
       "sport": "soccer",
-      "headline": "Arsenal injury, suspension list and return dates for Chelsea: Bukayo Saka, Ben White, Kai Havertz latest",
-      "blurb": "Arsenal predicted XI vs Sunderland with Ben White and Kai Havertz decisions made Football London",
-      "summary": "Arsenal predicted XI vs Sunderland with Ben White and Kai Havertz decisions made Football London Arsenal vs Coventry City injury news as 3 ruled out and 1 doubt Yahoo Sports Nico O’Reilly injury latest after missing Man City win vs Coventry Metro.co.uk Aggregated from Football London, Yahoo Sports, Metro.co.uk, football.london, London Evening Standard and 14 more.",
+      "headline": "Alexander Isak, Ryan Gravenberch latest: Arne Slot gives quadruple Liverpool injury update before Brentford clash",
+      "blurb": "Ryan Gravenberch withdraws from Dutch squad as Liverpool handed major injury scare The Mirror",
+      "summary": "Ryan Gravenberch withdraws from Dutch squad as Liverpool handed major injury scare The Mirror Jurgen Klopp responds to Ryan Gravenberch injury fear after full Liverpool debut metro.co.uk Ryan Gravenberch absent from Liverpool squad vs Crystal Palace despite red card loophole Daily Express Aggregated from The Mirror, metro.co.uk, Daily Express, Yahoo Sports, Metro.co.uk and 19 more.",
       "category": "injury",
-      "published": "2025-08-28T07:00:00Z",
+      "published": "2023-09-21T07:00:00Z",
       "updated": "2026-09-17T13:13:00Z",
       "players": [
+        {
+          "key": "gravenberch",
+          "name": "Ryan Gravenberch",
+          "slug": "ryan-gravenberch",
+          "pos": "MID",
+          "team": "LIV"
+        },
+        {
+          "key": "alexander isak",
+          "name": "Alexander Isak",
+          "slug": "alexander-isak",
+          "pos": "FWD",
+          "team": "LIV"
+        },
+        {
+          "key": "c jones",
+          "name": "Curtis Jones",
+          "slug": "curtis-jones",
+          "pos": "MID",
+          "team": "LIV"
+        },
+        {
+          "key": "calafiori",
+          "name": "Riccardo Calafiori",
+          "slug": "riccardo-calafiori",
+          "pos": "DEF",
+          "team": "ARS"
+        },
         {
           "key": "havertz",
           "name": "Kai Havertz",
@@ -4296,11 +4324,46 @@
           "team": "ARS"
         },
         {
-          "key": "calafiori",
-          "name": "Riccardo Calafiori",
-          "slug": "riccardo-calafiori",
-          "pos": "DEF",
+          "key": "dowman",
+          "name": "Max Dowman",
+          "slug": "max-dowman",
+          "pos": "MID",
           "team": "ARS"
+        },
+        {
+          "key": "saka",
+          "name": "Bukayo Saka",
+          "slug": "bukayo-saka",
+          "pos": "MID",
+          "team": "ARS"
+        },
+        {
+          "key": "frimpong",
+          "name": "Jeremie Frimpong",
+          "slug": "jeremie-frimpong",
+          "pos": "DEF",
+          "team": "LIV"
+        },
+        {
+          "key": "a becker",
+          "name": "Alisson Becker",
+          "slug": "alisson-becker",
+          "pos": "GKP",
+          "team": "LIV"
+        },
+        {
+          "key": "bradley",
+          "name": "Conor Bradley",
+          "slug": "conor-bradley",
+          "pos": "DEF",
+          "team": "LIV"
+        },
+        {
+          "key": "gomez liv",
+          "name": "Joe Gomez",
+          "slug": "joe-gomez",
+          "pos": "DEF",
+          "team": "LIV"
         },
         {
           "key": "hincapie",
@@ -4338,13 +4401,6 @@
           "team": "ARS"
         },
         {
-          "key": "saka",
-          "name": "Bukayo Saka",
-          "slug": "bukayo-saka",
-          "pos": "MID",
-          "team": "ARS"
-        },
-        {
           "key": "merino",
           "name": "Mikel Merino Zazón",
           "slug": "mikel-merino-zaz-n",
@@ -4355,13 +4411,6 @@
           "key": "bruno g",
           "name": "Bruno G.",
           "slug": "bruno-g",
-          "pos": "MID",
-          "team": "ARS"
-        },
-        {
-          "key": "dowman",
-          "name": "Max Dowman",
-          "slug": "max-dowman",
           "pos": "MID",
           "team": "ARS"
         },
@@ -4868,6 +4917,266 @@
           "kind": "article",
           "snippet": "Arsenal predicted XI vs Sunderland with Ben White and Kai Havertz decisions made Football London",
           "published": "Sat, 07 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Havertz, Calafiori, Dowman - Latest Arsenal injury news and return dates ahead of Liverpool",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOb2w3dFcyeXdES3dQUFZFMXgtVGljMFhyOTBsaWZzd0lOSlpJUHIwV1JZMlpMck9uVlJfNHVrc2ZyMXc2alM1YTJ1RTBJUjZoczRJWFpjeTByN2VMRHFLRG12b3pJMmtiNVc5YWtSTmZxTFhrQkx1a2JiNWctVVBtak10WmU3dlRXb0RETF9PeTFhcWhxTXQyX9IBngFBVV95cUxPT2FpUGw5NVhpeHc5XzltX0Zodm14cFZYSXR0QjJRUXFjVGtEd1dZUmc1eE5WME5RemtBM1dlYTJBdHlyd1VXZkhPdlBLbUdrX1owZ2V2cXFwaWotdS1JOUM4dkpBR1g1dy1BNE9iNzZ6VjAyX2FzLVU1RTF5cndMVVJVTGpSenNtbkViMEFiYUJXamhkM2lKRmRIZkVQUQ?oc=5",
+          "publisher": "Football London",
+          "kind": "article",
+          "snippet": "Havertz, Calafiori, Dowman - Latest Arsenal injury news and return dates ahead of Liverpool Football London",
+          "published": "Sun, 04 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Arsenal injury update: Bukayo Saka, Kai Havertz, Ben White latest news and return dates",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVW52SHB1MFNtQ0JJNjNWUzJ5ODctakRSOVk2dUVmOXRkanp1dE1nc3VWLXB6VmdMVEhpRXJiNHh1OHpfM1lsdkF3NTExTnhtNzFhUHN5Wjd6YWRqRURudWhqVWk3dS1BbUlTd1kwLXROMmJvamZ5SGJNdWxLN3ZTZFVXaGdNR2J5X2VVWmZfZHBOOXlJeWlZbmlyRUZXLXVSNDQ1aWlBaWhnNmVWTGgxLS1EWHI5a2ROWGNhLVgyWkN1UQ?oc=5",
+          "publisher": "standard.co.uk",
+          "kind": "article",
+          "snippet": "Arsenal injury update: Bukayo Saka, Kai Havertz, Ben White latest news and return dates standard.co.uk",
+          "published": "Tue, 24 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Liverpool injury update: Alexander Isak, Ryan Gravenberch, Jeremie Frimpong latest news and return dates",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZjNUVmR1YjMtWC1YOW5PLUgyQTNjcWd4ZzFMcnlpZFFNX2tDNDk2Wm81TE4wY2NRby0xSzVOTTdTaG0zWXlnZ0hxQWtYX0tERkFSdDJhM2Z0T1hlWFRzVGJQZWlNSjRvV2RQaVF3VkJ4Ymx0R3hwYm1RWFFmZEFlbzgxaUNGbFR4SldJRU5sZEdsbUdia3Y5M0FrSmNRMzVFZ2stTnI5c1Rjak83WkNMSTJRdUFFQkVnU3RyaXRmMmgycGhtcjNJMUdNLW1Bdw?oc=5",
+          "publisher": "standard.co.uk",
+          "kind": "article",
+          "snippet": "Liverpool injury update: Alexander Isak, Ryan Gravenberch, Jeremie Frimpong latest news and return dates standard.co.uk",
+          "published": "Thu, 30 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool injury update: Ryan Gravenberch, Ibrahima Konate, Alisson Becker latest news and return dates",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbloyVEdUUlZIQW5oWVZRN0hNS3Y0a0VtUUpRYmZpZ1dOcmUzNmtDRmJfWGN2WWcxUEhETlBlanZDWlIzWFZTOG1DbnVLOVNnZUtMMC1sREozSW1hOXk1T0NUT1R1YUJsaWN1bHViWnZ0LWRac0JxbXMzd3Z2WEQwM21HSTl2T1VROVRaSmNVUVBkNVpKQnVuaHFWc1pvSU1kemtRTy03UllmeG5zclhsTmp0bVpKTUZnYjh4Szd2TEVCS2JKRVJFbEhxMklaVU0?oc=5",
+          "publisher": "standard.co.uk",
+          "kind": "article",
+          "snippet": "Liverpool injury update: Ryan Gravenberch, Ibrahima Konate, Alisson Becker latest news and return dates standard.co.uk",
+          "published": "Mon, 13 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool injury update: Ryan Gravenberch, Ibrahima Konate, Alisson Becker latest news and return dates",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVjE2dG1KUEZXcFlDVVlyQXFuQVlER2Nod0c2U2k4dnE2T2xrcVl3MWlnc0JqNVFFUXlfQTl1SnJlc09qNlhkMThES0VxV242Ym95eUR1YU8wemQ3cExJZzgyUjdTY084dTc4eFBuTG1lYkFUSENjeUhWRDZQaEdXMGdKeGlZSVY3SmQzNTMyRDJLdnl4ZDhzdDdXRlJKZjRVay0xVl9GZmdoWVVZU1RHNl9Nc0g3TkVrTUR2dXBadm5CWlVZZ3pIRkNYZHVwckU?oc=5",
+          "publisher": "standard.co.uk",
+          "kind": "article",
+          "snippet": "Liverpool injury update: Ryan Gravenberch, Ibrahima Konate, Alisson Becker latest news and return dates standard.co.uk",
+          "published": "Fri, 17 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool injury update: Ryan Gravenberch, Conor Bradley, and Joe Gomez latest news and return dates",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOSVZOMXB4QXFWZ2JXX2Zfck9aUVUtdFJkUlRwOXlvZ195eHJTNTZfRVp5ZUZ3ZTNmLWI1UjNDMnR5UUN6RmxydVJxQmRPOFBtNmdZVzBFUldkR2tRS0lNNkJ5TjYzY3ktU3MxYWhqWDF4NzRTbGJvRU1lQ2daTElNVEtYWmZvQU4zQVVlWUI0NEFIcUxUeC1saWRJcEhUYUtxRlRoWG1iNFY5ZzQyMUJGcURmbVpYV21Qemx0OFUwWUlEQUt5Y093?oc=5",
+          "publisher": "standard.co.uk",
+          "kind": "article",
+          "snippet": "Liverpool injury update: Ryan Gravenberch, Conor Bradley, and Joe Gomez latest news and return dates standard.co.uk",
+          "published": "Thu, 14 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Isak, Frimpong, Gravenberch - Liverpool injury news and return dates ahead of Brentford",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObVBCNG5pMXNhS0cxWWhNdmFQUEs3QVU1MFo1SEhfSkdsNUJ1T2toZ1prX1BJR1VoZG9WOHRLcXRnel9IRjYwZDV5N0lEMy02aUtmYVNzc045Qk9pc0JnRUNHTVpBdm5mSjFaRmVOWFdtZ0x1U3RwQkxhNTdMV0hyaEpNQUpva2d1OFdZbF91UC1yNkcycFh1bmx3ZVVCS2pLaXBVZzRtTkVSZ9IBrwFBVV95cUxPWTNSUTN1NHl6RGt2UHRzeHpGTWIyR0pkcmsyVUlja3BNdFZEelFBb3Vra2xuUlFKOGd4NVRXR01PRE43a1JDeVlUbVllbldNcE9nRUhFWGRPTXBKQUJPdExScGpYdHRCUzJIY2IxYW9hZHBVazRJUHVvQk5RSzNCaEpvRmwwTFl0M291M3diZFh5T294VURXdl8zMGhBRUlVZ25JQ0JWbTdEYkIzcVRB?oc=5",
+          "publisher": "Liverpool Echo",
+          "kind": "article",
+          "snippet": "Isak, Frimpong, Gravenberch - Liverpool injury news and return dates ahead of Brentford Liverpool Echo",
+          "published": "Fri, 24 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool injury news, return dates - Ryan Gravenberch, Ibrahima Konate, Alisson",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcTVjQkxObW5wRmktT1YtQk4wTGZpRDEwdjZ1SVlyenA5M2VRQWhVNmY5VkN5aVJKRDc0YjVWMXlZbkJRYTlyTGd0OUZMejZ6QnVqdDdpblV0UGpPRklucTRBTnQtR1cxVDQ5UUFSekNMdG85Z1c1amtmMHJOYlFRSmNBN09LdUhBbnU5aXh5M1VBWEt5Tk5TOHJqMjbSAaIBQVVfeXFMUEtJTVZadkFNUEFFWkRjTXNiRlNXNGhXRUljUHVOM0VKVm9xa1FfVF9xTTlpd1U5enZGOC1BaXJ1UjZ2SV95ZEtFQklON0Z4eEc2d0JOd0NxSFlzT1RGVGxhZjREaXJhcHVYejRfWTIyZkMwREsxWnN0WjU5LVJ1WFRoZnhmRXoyOUlTUTcwYVdZMFRObnUxVFdENTdGaFRwQ3d3?oc=5",
+          "publisher": "Liverpool.com",
+          "kind": "article",
+          "snippet": "Liverpool injury news, return dates - Ryan Gravenberch, Ibrahima Konate, Alisson Liverpool.com",
+          "published": "Thu, 16 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool injury, suspension list and return dates for Brentford Premier League game: Ryan Gravenberch, Alexander Isak latest",
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNaVBxdlMwbDJKRWNLc3NCOTdmV0puZjFfMkpVNTQ2WVpMcU1ld1BmZXU1TnZEeUc0YV8zY01nUVFWZDhJdlpUR05QUTVOYzhLYl9GcW9DQlNJVzZlQ2NtV29vS21oNkU5dEFiTTRFb05ZZHU2cS1BWkJ1eUY5bEhPSVZndUF2VnRqXzR1TzR0ZWQ0M1JqQ3J0SHpyUDJYdDNPRjFpblFSa2NTSm8xNDV1NW1jS2pQTDhObDhGbDlwR1p0aG5RWnJ6WUR6MFZDR1pVaVRpLUFmSVlaZ3RUSlBZUWRlZXBxczQ4UGxOQ3BScm5wUW0xd3B2RTlWbFRqWXRJaHNhdU5B?oc=5",
+          "publisher": "Sports Mole",
+          "kind": "article",
+          "snippet": "Liverpool injury, suspension list and return dates for Brentford Premier League game: Ryan Gravenberch, Alexander Isak latest Sports Mole",
+          "published": "Fri, 24 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool injury, suspension list and return dates for Man United: Ryan Gravenberch update",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOVXNiNlVydEE2Q2tlQkNpdGdLNWlnelI5QXhIVDZ3NzFSOHh4WEdmd0NIS2FCZmpLdDY4Tkl2Tm5Lc2pLVGM4UW55MWRMVl95bGhSMTFQMmh4eHIyczFEcDA3NkM4b0tXUThwN1FubzBQeGVZcWZvZWs5SFo0OUUtWlNlNTJORDlHTHp4dzEtS0lTMUc4MXJkSDBwZGZGNlZ6Sm4yWlJHaDQ4TG9PWWt6ZllhX2dNbjNnMUZ3Z0Q4U0w5dHNYSjg0Rm03aEczOWEyVjJaS1lyUWRuV1o5X19XU2ZvZTZnWXlGYUlwN0l5eEF5RXhSbV9XZkxwd2g?oc=5",
+          "publisher": "Sports Mole",
+          "kind": "article",
+          "snippet": "Liverpool injury, suspension list and return dates for Man United: Ryan Gravenberch update Sports Mole",
+          "published": "Thu, 16 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Isak, Gravenberch, Jones: Liverpool injury update ahead of Aston Villa as seven players ruled out of clash",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdnd0THhMQlh3VGRVSlEtSjNMZ2EzZVdVYUVFLUFNeUlKS01GUzZNRXZNdVV4OVhZQWFncW5RRjV5TV9kTVBvNkxMX1lJdmRJVjhPRVZXMlVIZDFZRjFIbXE5WEdVQ2sxdGtOVVNMNHotUWtvMVItWlh2ZHhTdlpLaU1uNm52cUFnN05OWjg3SDJhRGF4QkM5UkxFaWVnYUFLaXhiM0xCcENGendaMElmekViVXZKRl9RVnRXNW5PWWdWcDkwVHRhaUtjTmZsMzZ4a3ZTUQ?oc=5",
+          "publisher": "LiverpoolWorld",
+          "kind": "article",
+          "snippet": "Isak, Gravenberch, Jones: Liverpool injury update ahead of Aston Villa as seven players ruled out of clash LiverpoolWorld",
+          "published": "Fri, 31 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool handed major injury boost ahead of Aston Villa showdown",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNlBuWElqOTYyUXRxT1BxbDZGR3l0NGRncEt1UHUtUGdGLXNnYnVoOUZEOWtnTW5vZ0dtUG9pOTZhdkZCUUVESUN1R3h1WHZQeUdTdnZuT0dzbEpucDRqQTdjYnh2Q2Nob3Zhd0JyeF95UmxPV29Qd0ZxWjB5OHpVT2dRaC12cnBYekhSemRwWmVmYjNoTGZ1czd5bm1Fd0FfRl96ZW5nWQ?oc=5",
+          "publisher": "standard.co.uk",
+          "kind": "article",
+          "snippet": "Liverpool handed major injury boost ahead of Aston Villa showdown standard.co.uk",
+          "published": "Wed, 29 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Alexander Isak, Ryan Gravenberch latest: Arne Slot gives quadruple Liverpool injury update before Brentford clash",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVVItdHdwQ0VlMk5PTXRLbE9lVERoUFRJLVdEcWdQXzNIMldYNk9RazMxdjFvUE5tS0tPZURzLVlIdUdweXBtSWpYQ1pGci1oRDVaZnEwU3BXRkFSdjZLdW1vZFNiUWlQQ252Y29tVFFrRHk4WHI2ZmJLU0ZYLUdrcnU3MkU3cFJMcDQxYnJLaG5leDFoSWtGNGFJUmFUblBEMFhWc29GM0RCTmtta0xqcnpMYmR6Zkx1MkVJY29Wb2U2MkFGTjFzRUwwakRhbkEwd0tYVGdLNlpnbmk4?oc=5",
+          "publisher": "Sports Mole",
+          "kind": "article",
+          "snippet": "Alexander Isak, Ryan Gravenberch latest: Arne Slot gives quadruple Liverpool injury update before Brentford clash Sports Mole",
+          "published": "Fri, 24 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Liverpool injury latest: Arne Slot delivers Alexander Isak, Ryan Gravenberch, Curtis Jones update before Aston Villa",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQbFZwNkRRQWRTakktVFhnekV0RTI4YVhzNUNvUGdXX1ZPX29DV0JCNkEyczM4Y2oyNkFSdHBYakR2ZzR4QS1kMWotdEVtVk9CREhWOTBtejc1dS16eFBwY1lSZzkweFo3UEVZSWdPRG5jT1l0bGI5ZTFEWUhqSDFhdXVHLXRkTXRDUGFjTDdJZGdPWk10SjBVZ0toUGU5QlU4X2FseXNITl9vQWtSbWZpX0UxT3hOSFJqcnd3bXFuSURkZ2lVdUVSNkZjY1pWSmFRWEZBa0x5UDFjRjhwc2syQk9RbXJPakdoM1BYYXBTMA?oc=5",
+          "publisher": "Sports Mole",
+          "kind": "article",
+          "snippet": "Liverpool injury latest: Arne Slot delivers Alexander Isak, Ryan Gravenberch, Curtis Jones update before Aston Villa Sports Mole",
+          "published": "Fri, 31 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Ryan Gravenberch withdraws from Dutch squad as Liverpool handed major injury scare",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVEpwa0VQT3lnNG9aOFIyUnpmNjU2N0JsUk1XaE15SEpuekhKa0U1V3ZSMUR3MzZNN0lSMUNGQ1RHWGVsMG5Cbm1ER1F4RC1Ua19ZVExaa0YwLUtkUS1kY1ZEbTJWNGxPQldIUFJQMk9rLVM2UmZETlM2U0N6MXFOcHhDN0RjU29URU53YnF1NGpBSjA4QVhj0gGcAUFVX3lxTE1HcVdBR0duLXc4NThkVVZaQzJZTE14R1FueGJVZ0ZMQ0l4cHAxakZhSUNmWjRzVkJvakwtM0lRb3hpZTVKV1UxeTE0dGxLRk1CMmp4NzBMZDN2NE5LRlR0X3diNERrcVJuN0ZNZnFpMzRhaTY3aGRGbDY0dUdJZEh3MHRLMklGSmVHMlFPR2xRT3I2ZnVoSzQ5ZXBaQg?oc=5",
+          "publisher": "The Mirror",
+          "kind": "article",
+          "snippet": "Ryan Gravenberch withdraws from Dutch squad as Liverpool handed major injury scare The Mirror",
+          "published": "Thu, 20 Mar 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Jurgen Klopp responds to Ryan Gravenberch injury fear after full Liverpool debut",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWEMtUTJTa3dhN1JfbnVPZEp0Z1hvWVFtRzFjcjRJVVJPQVdNNmpMd21LYUV6TDY4Ym1LQ3I3YjZNZ0d2SXBBWl9EUTZlN1ZfV2ZkWWNicUZfMXViMTNRSC0tbi1VZHdQMlYwVlZwT3VSZE9nT3RwZVFkY1Nrd1FUMVlpRXZPNzkxYkMycVBaTExJTExWMllDZi02aG9xT2pCT0V0dlVOckc1S3F2WXZYalpDS3M5cmNqTUZGUC1n0gHDAUFVX3lxTE1WM2R6UExBbnBILUM2MXdEMTRQbWJKUlJNRGVSX0x0bElaQllTTEx5Q25HNTNrRnpFYmZldkN5TGxDMDItclJYSDBrQ1FqZnRQOFpJQ3FJWnBMaHN5UGRuWTVRLU5WSHMwalB6OGJRLVVfZVNLanNGSDhpd1FqZEpiOW81UDlKZGxZRG4ybEp3cHp5NXZtQTNwMW5MUXZqQ0k3MzRRTlFNVlM3eXpRZ0hKcVA0RFdmU2F2SXdhT18ySWU3Zw?oc=5",
+          "publisher": "metro.co.uk",
+          "kind": "article",
+          "snippet": "Jurgen Klopp responds to Ryan Gravenberch injury fear after full Liverpool debut metro.co.uk",
+          "published": "Thu, 21 Sep 2023 07:00:00 GMT"
+        },
+        {
+          "title": "Ryan Gravenberch absent from Liverpool squad vs Crystal Palace despite red card loophole",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQN1VXN0dGTW1yMjExM2tFYW95NElpdHlhX3NvUlNvVjlUX1Q0aHAyM1pjLUlyR09NWnBQdjZsaTN4aE03REh6SXpsNGI4WTkwVVgwd19vd1EzZ2JmXzN3NWlUekpDRFFBSjNDNUJIbGZWS0hVNFdMb1VZYlFZd0hoZ1BLNWN5aGdYUUo2OWhuQkU2bEZuM204Y1JiTC13akJM0gGmAUFVX3lxTE5teU83dXVac01KNDVlMzZiejlPRGtOYmktZmNCRUEtLXBEWmVneW9zazhpRVFEM1F6RVh0SmxrTWhZdWRwMWZSWGQxa045dGtuX3hGMUc1VTdPRnJwTmJZdVJvSWxJeHNtTUhTMjF0LU1BNWd6TVFMU1BFQVNjVXkzM1Y1Rk90aGJhbG5WamJSZ1NRZHVtNnhQTkxiYU9tdm5ZSFFyTnc?oc=5",
+          "publisher": "Daily Express",
+          "kind": "article",
+          "snippet": "Ryan Gravenberch absent from Liverpool squad vs Crystal Palace despite red card loophole Daily Express",
+          "published": "Sun, 10 Aug 2025 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "joao-pedro-dropped-brazil-national-upcoming-matches-due-a986156a",
+      "slug": "joao-pedro-dropped-brazil-national-upcoming-matches-due-a986156a",
+      "sport": "soccer",
+      "headline": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury",
+      "blurb": "FPL GW5 Team Selection: João Pedro is INJURED!",
+      "summary": "FPL GW5 Team Selection: João Pedro is INJURED! | Transfers & Captain YouTube 🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. Aggregated from YouTube, x.com, reuters.com, Premier League.",
+      "category": "injury",
+      "published": "2026-08-24T08:09:34Z",
+      "updated": "2026-09-17T20:04:44Z",
+      "players": [
+        {
+          "key": "joao pedro",
+          "name": "João Pedro",
+          "slug": "jo-o-pedro",
+          "pos": "FWD",
+          "team": "CHE"
+        },
+        {
+          "key": "james",
+          "name": "Reece James",
+          "slug": "reece-james",
+          "pos": "DEF",
+          "team": "CHE"
+        },
+        {
+          "key": "caicedo",
+          "name": "Moisés Caicedo Corozo",
+          "slug": "mois-s-caicedo-corozo",
+          "pos": "MID",
+          "team": "CHE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. (@CBF_Futebol) #CFC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZcWJycF9ldGZFZndCWFNPMUxNdzF1dXRBLWw3dllzSEh4Z3FWMHpiRGhKY2hfWXdSMGhUY2V1WkpJUVMwWjJTNVY3UGR4VUUzcWFHTkJNREFoX2M?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. (@CBF_Futebol) #CFC x.com",
+          "published": "Wed, 16 Sep 2026 17:12:30 GMT"
+        },
+        {
+          "title": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdzhSQ1lVZmdKbWoxQkJhR3RZaVB5REhzQjN3Z0VETndHbVBjSVJ6VjVjNWVocE8xNkZlblNMNFVaYU1VcEw0TUNVRFJyR0RQaHN0SlN6OFlIZHVsVUFJcHJ4UE40MFpJdTkzZ3RSUy1wZzVfRklkZXJDbGd4Vkw3WGJ5djhRRmhnQmo3RkVEbk0zVXRra1ByT1pPRHAtRmdTcVZrbmdHaWlpSUh3cGNaRXBoMkwwMFVTTkJfRUFibHd4WTZGSHFV?oc=5",
+          "publisher": "reuters.com",
+          "kind": "article",
+          "snippet": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury reuters.com",
+          "published": "Thu, 17 Sep 2026 03:15:00 GMT"
+        },
+        {
+          "title": "MY FPL GW5 TEAM SELECTION! 📱JOAO PEDRO INJURED! 🚨🇧🇷 SELL OR KEEP? | Fantasy Premier League 2026/27",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51OUt0UFB1ZHRRRWFyLWZzWF9QalNzaFFGcUpfRWFLYWJaSHJfMHFaVXRLVkZEZ1pfZmFabWJvb3E1eldmVkw0emgyX05PS09mTm11M253?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "MY FPL GW5 TEAM SELECTION! 📱JOAO PEDRO INJURED! 🚨🇧🇷 SELL OR KEEP? | Fantasy Premier League 2026/27 YouTube",
+          "published": "Thu, 17 Sep 2026 08:30:02 GMT"
+        },
+        {
+          "title": "My FPL Team for GW5 🔥 João Pedro INJURED 🚨",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBZRkhhSzkzWDNydURxMmtRQW5sUE5KeGtpZmRTaTdxbGJ2ZTJ5eVJ5ZVdQTTlvdFZiTkFfc09CNXNaOE5pZFFNOFB4cXJoa2ZWRXpLT01n?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "My FPL Team for GW5 🔥 João Pedro INJURED 🚨 YouTube",
+          "published": "Thu, 17 Sep 2026 08:10:46 GMT"
+        },
+        {
+          "title": "FPL GW2 TRANSFER PLANS | BEST RANK 437 🌍 | Fantasy Premier League 2026/27",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51UDB3dWlaUF8zU0tDdmN1dzU2aS1HNk96OVVLZDRxSko2SUd4N2VXYTF3dVRWeFltVUZjZEVOZW9obDB0TExod2ZnWVdfa0JEdjVRX01n?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "FPL GW2 TRANSFER PLANS | BEST RANK 437 🌍 | Fantasy Premier League 2026/27 YouTube",
+          "published": "Mon, 24 Aug 2026 08:09:34 GMT"
+        },
+        {
+          "title": "😬 Xabi Alonso was ruling nothing out in terms of Joao Pedro's injury... Super helpful for FPL!",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uTEd6dlg4Vm9mMXc2V21ZbTViSExNbWRmeEdRYzRXTlJkYzBUelJ3US0xYXR4aElsS1N1UFR3U2diVGc5QW1UMlZqSnQ2R1VSUGMxT3lRRjBVMTVM?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "😬 Xabi Alonso was ruling nothing out in terms of Joao Pedro's injury... Super helpful for FPL! x.com",
+          "published": "Thu, 17 Sep 2026 12:47:38 GMT"
+        },
+        {
+          "title": "Chelsea team news: Is Joao Pedro injured?",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnR1RzeHBNa203SjRUV1lkWGVIUmpwOFVfd25qRTNVY3lNaDdLSWZhSTFlSE5Qb3FMa0NpWUoxZDJWaUd4OFpMc1JXcWdOZVp0dGNWbWw3VWw?oc=5",
+          "publisher": "Premier League",
+          "kind": "article",
+          "snippet": "Chelsea team news: Is Joao Pedro injured? Premier League",
+          "published": "Thu, 17 Sep 2026 14:29:38 GMT"
+        },
+        {
+          "title": "🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday. So I prefer to be cautious, and we will wait until tomorrow to take the final decision.\" He was asked if it's possible Joao Pedro could play in GW5 de",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLVE9PUlI4RTc1Xy1Tc1JhM2ROSEloQUpBSXhtVWM2MkFtRFU3NHVQSi1fZ3ZoTVc0bkJqWVRwbkxiSHUxdnlwUE96ZHotNWF2TWNUZTNFUzFETzFfS2c?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday. So I prefer to be cautious, and we will wait until tomorrow to take the final decision.\" He was asked if it's possible Joao Pedro could play in GW5 de x.com",
+          "published": "Thu, 17 Sep 2026 12:44:26 GMT"
+        },
+        {
+          "title": "FPL GW5: FINAL THOUGHTS | Joao Pedro Injured? Plus Free Hit Draft | Fantasy Premier League Tips",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ocVU5RFllZjBOWXBodHljWXQ4NkZZT1Jjd3YzSjV1MzhQUHF3cmVtZC03YzNiMkJwamxxRVdQcUdPeTFGMUwtS2puV3pKZUdjMGtZdUtR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "FPL GW5: FINAL THOUGHTS | Joao Pedro Injured? Plus Free Hit Draft | Fantasy Premier League Tips YouTube",
+          "published": "Thu, 17 Sep 2026 14:14:24 GMT"
+        },
+        {
+          "title": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JWWdMNW9ubl8yUFlUVFhzR21rRkhibWNUbkt2bWlXZFJ2UXNmaVpsQ05acjM3UmNRWkFPQUlVTjhHRVlxNFZLZXE3VHlQRTNjYWlqa2hIc1BuNjBlZHN3bEFR?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥 x.com",
+          "published": "Thu, 17 Sep 2026 13:22:47 GMT"
+        },
+        {
+          "title": "FPL GW5 Team Selection: João Pedro is INJURED! ⚠️ What To Do? | Transfers & Captain",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9hUFVsUVNieEhiVFJpSTdEUm5yQTVSVEI4RDlZRjBGNkhnaG1IOG5hRlFtR2pDMXBVY0xCN0pSbTMtNXhtdmRVQ3MtdUl3WVJkYTdubGFR?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "FPL GW5 Team Selection: João Pedro is INJURED! ⚠️ What To Do? | Transfers & Captain YouTube",
+          "published": "Thu, 17 Sep 2026 20:04:44 GMT"
         }
       ]
     },
@@ -5279,12 +5588,19 @@
       "slug": "everton-s-premier-league-rivals-make-jack-grealish-8e14c51b",
       "sport": "soccer",
       "headline": "Every Premier League transfer this summer as window deadline passes and Guehi to Liverpool suffers late collapse",
-      "blurb": "WHO WON THE PREMIER LEAGUE TRANSFER WINDOW?!",
-      "summary": "Morgan Rogers, Iliman Ndiaye, Manuel Ugarte Ribeiro, Florian Wirtz, Enzo Fernández, Elliot Anderson, Alexander Isak, Richarlison de Andrade, Erling Haaland, Joe Gomez, Emiliano Martínez Romero, Jack Grealish and Cristian Romero: WHO WON THE PREMIER LEAGUE TRANSFER WINDOW?! Everton's Premier League rivals make Jack Grealish transfer plan after twist Yahoo Sports Premier League 2026 Transfer Window Awards: Chelsea fix with Martinez; Everton’s chaos Yahoo Sports Aggregated from youtube.com, Yahoo Sports, CaughtOffside, nbcsports.com, Sports Illustrated and 54 more.",
+      "blurb": "Premier League transfer window sponsored by Hijack FC.",
+      "summary": "Piero Hincapié, Morgan Rogers, Iliman Ndiaye, Manuel Ugarte Ribeiro, Florian Wirtz, Enzo Fernández, Elliot Anderson, Alexander Isak, Richarlison de Andrade, Erling Haaland, Joe Gomez, Emiliano Martínez Romero, Jack Grealish and Cristian Romero: Premier League transfer window sponsored by Hijack FC. Premier League transfer spending since Clearlake Capital bought Chelsea FC. Everton's Premier League rivals make Jack Grealish transfer plan after twist Yahoo Sports Aggregated from x.com, Yahoo Sports, CaughtOffside, nbcsports.com, Sports Illustrated and 54 more.",
       "category": "injury",
       "published": "1970-01-01T00:00:00Z",
       "updated": "2026-09-17T10:43:47Z",
       "players": [
+        {
+          "key": "hincapie",
+          "name": "Piero Hincapié",
+          "slug": "piero-hincapi",
+          "pos": "DEF",
+          "team": "ARS"
+        },
         {
           "key": "rogers",
           "name": "Morgan Rogers",
@@ -6505,6 +6821,22 @@
           "kind": "article",
           "snippet": "Every Premier League transfer confirmed in the summer of 2026 Football365",
           "published": "Thu, 17 Sep 2026 10:43:47 GMT"
+        },
+        {
+          "title": "Premier League transfer window sponsored by Hijack FC. #Hincapie",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBPMlNzb082MDdveURDeHFzN21lVVU3WktxaDBsYTBZSE9xODU5dzBvclBLU1B2clpxWmZrZWVWczcwMkVHXzlacWRSZ3FKWmdBaUdONnI4T0pGTVJaZk9xMGFhTWdIZw?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Premier League transfer window sponsored by Hijack FC. #Hincapie x.com",
+          "published": "Mon, 25 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "Premier League transfer spending since Clearlake Capital bought Chelsea FC.",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rT1VFZ3YtRzlhZGJ2YjdCaGNVUU42ZzZFcGlCZ3FkX2RQVElUbldXUWJvbWtxaEVSQ2c3RnFzSlFoOExLTWR0OFpaaEVkakVMT3ViN0Z0R2tnZmNYRF9hX0NqMkM?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Premier League transfer spending since Clearlake Capital bought Chelsea FC. x.com",
+          "published": "Mon, 04 May 2026 07:00:00 GMT"
         }
       ]
     },
@@ -7921,122 +8253,6 @@
           "kind": "article",
           "snippet": "FPL Gameweek 31 team news: Friday’s live injury updates fantasyfootballscout.co.uk",
           "published": "Fri, 20 Mar 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "joao-pedro-dropped-brazil-national-upcoming-matches-due-a986156a",
-      "slug": "joao-pedro-dropped-brazil-national-upcoming-matches-due-a986156a",
-      "sport": "soccer",
-      "headline": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury",
-      "blurb": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥 x.com",
-      "summary": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥 x.com 🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury reuters.com Aggregated from x.com, reuters.com, YouTube, Premier League.",
-      "category": "injury",
-      "published": "2026-08-24T08:09:34Z",
-      "updated": "2026-09-17T14:29:38Z",
-      "players": [
-        {
-          "key": "james",
-          "name": "Reece James",
-          "slug": "reece-james",
-          "pos": "DEF",
-          "team": "CHE"
-        },
-        {
-          "key": "joao pedro",
-          "name": "João Pedro",
-          "slug": "jo-o-pedro",
-          "pos": "FWD",
-          "team": "CHE"
-        },
-        {
-          "key": "caicedo",
-          "name": "Moisés Caicedo Corozo",
-          "slug": "mois-s-caicedo-corozo",
-          "pos": "MID",
-          "team": "CHE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. (@CBF_Futebol) #CFC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZcWJycF9ldGZFZndCWFNPMUxNdzF1dXRBLWw3dllzSEh4Z3FWMHpiRGhKY2hfWXdSMGhUY2V1WkpJUVMwWjJTNVY3UGR4VUUzcWFHTkJNREFoX2M?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "🚨 🏥 BREAKING: Joao Pedro has dropped out of the Brazil national team for the upcoming matches due to injury. (@CBF_Futebol) #CFC x.com",
-          "published": "Wed, 16 Sep 2026 17:12:30 GMT"
-        },
-        {
-          "title": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdzhSQ1lVZmdKbWoxQkJhR3RZaVB5REhzQjN3Z0VETndHbVBjSVJ6VjVjNWVocE8xNkZlblNMNFVaYU1VcEw0TUNVRFJyR0RQaHN0SlN6OFlIZHVsVUFJcHJ4UE40MFpJdTkzZ3RSUy1wZzVfRklkZXJDbGd4Vkw3WGJ5djhRRmhnQmo3RkVEbk0zVXRra1ByT1pPRHAtRmdTcVZrbmdHaWlpSUh3cGNaRXBoMkwwMFVTTkJfRUFibHd4WTZGSHFV?oc=5",
-          "publisher": "reuters.com",
-          "kind": "article",
-          "snippet": "Chelsea's Joao Pedro out of Brazil's friendlies against Australia, India with injury reuters.com",
-          "published": "Thu, 17 Sep 2026 03:15:00 GMT"
-        },
-        {
-          "title": "MY FPL GW5 TEAM SELECTION! 📱JOAO PEDRO INJURED! 🚨🇧🇷 SELL OR KEEP? | Fantasy Premier League 2026/27",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51OUt0UFB1ZHRRRWFyLWZzWF9QalNzaFFGcUpfRWFLYWJaSHJfMHFaVXRLVkZEZ1pfZmFabWJvb3E1eldmVkw0emgyX05PS09mTm11M253?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "MY FPL GW5 TEAM SELECTION! 📱JOAO PEDRO INJURED! 🚨🇧🇷 SELL OR KEEP? | Fantasy Premier League 2026/27 YouTube",
-          "published": "Thu, 17 Sep 2026 08:30:02 GMT"
-        },
-        {
-          "title": "My FPL Team for GW5 🔥 João Pedro INJURED 🚨",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBZRkhhSzkzWDNydURxMmtRQW5sUE5KeGtpZmRTaTdxbGJ2ZTJ5eVJ5ZVdQTTlvdFZiTkFfc09CNXNaOE5pZFFNOFB4cXJoa2ZWRXpLT01n?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "My FPL Team for GW5 🔥 João Pedro INJURED 🚨 YouTube",
-          "published": "Thu, 17 Sep 2026 08:10:46 GMT"
-        },
-        {
-          "title": "FPL GW2 TRANSFER PLANS | BEST RANK 437 🌍 | Fantasy Premier League 2026/27",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51UDB3dWlaUF8zU0tDdmN1dzU2aS1HNk96OVVLZDRxSko2SUd4N2VXYTF3dVRWeFltVUZjZEVOZW9obDB0TExod2ZnWVdfa0JEdjVRX01n?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "FPL GW2 TRANSFER PLANS | BEST RANK 437 🌍 | Fantasy Premier League 2026/27 YouTube",
-          "published": "Mon, 24 Aug 2026 08:09:34 GMT"
-        },
-        {
-          "title": "😬 Xabi Alonso was ruling nothing out in terms of Joao Pedro's injury... Super helpful for FPL!",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uTEd6dlg4Vm9mMXc2V21ZbTViSExNbWRmeEdRYzRXTlJkYzBUelJ3US0xYXR4aElsS1N1UFR3U2diVGc5QW1UMlZqSnQ2R1VSUGMxT3lRRjBVMTVM?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "😬 Xabi Alonso was ruling nothing out in terms of Joao Pedro's injury... Super helpful for FPL! x.com",
-          "published": "Thu, 17 Sep 2026 12:47:38 GMT"
-        },
-        {
-          "title": "Chelsea team news: Is Joao Pedro injured?",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBnR1RzeHBNa203SjRUV1lkWGVIUmpwOFVfd25qRTNVY3lNaDdLSWZhSTFlSE5Qb3FMa0NpWUoxZDJWaUd4OFpMc1JXcWdOZVp0dGNWbWw3VWw?oc=5",
-          "publisher": "Premier League",
-          "kind": "article",
-          "snippet": "Chelsea team news: Is Joao Pedro injured? Premier League",
-          "published": "Thu, 17 Sep 2026 14:29:38 GMT"
-        },
-        {
-          "title": "🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday. So I prefer to be cautious, and we will wait until tomorrow to take the final decision.\" He was asked if it's possible Joao Pedro could play in GW5 de",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBLVE9PUlI4RTc1Xy1Tc1JhM2ROSEloQUpBSXhtVWM2MkFtRFU3NHVQSi1fZ3ZoTVc0bkJqWVRwbkxiSHUxdnlwUE96ZHotNWF2TWNUZTNFUzFETzFfS2c?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "🗣️ Alonso on Joao Pedro: \"We have the last training sessions tomorrow so no-one is ruled out for us, for Friday. So I prefer to be cautious, and we will wait until tomorrow to take the final decision.\" He was asked if it's possible Joao Pedro could play in GW5 de x.com",
-          "published": "Thu, 17 Sep 2026 12:44:26 GMT"
-        },
-        {
-          "title": "FPL GW5: FINAL THOUGHTS | Joao Pedro Injured? Plus Free Hit Draft | Fantasy Premier League Tips",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ocVU5RFllZjBOWXBodHljWXQ4NkZZT1Jjd3YzSjV1MzhQUHF3cmVtZC03YzNiMkJwamxxRVdQcUdPeTFGMUwtS2puV3pKZUdjMGtZdUtR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "FPL GW5: FINAL THOUGHTS | Joao Pedro Injured? Plus Free Hit Draft | Fantasy Premier League Tips YouTube",
-          "published": "Thu, 17 Sep 2026 14:14:24 GMT"
-        },
-        {
-          "title": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JWWdMNW9ubl8yUFlUVFhzR21rRkhibWNUbkt2bWlXZFJ2UXNmaVpsQ05acjM3UmNRWkFPQUlVTjhHRVlxNFZLZXE3VHlQRTNjYWlqa2hIc1BuNjBlZHN3bEFR?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "\"Tomorrow we will decide\" Xabi Alonso provides injury updates for João Pedro, Moisés Caicedo and Reece James 🏥 x.com",
-          "published": "Thu, 17 Sep 2026 13:22:47 GMT"
         }
       ]
     },
@@ -12596,43 +12812,6 @@
       ]
     },
     {
-      "id": "milenkovic-jair-cunha-nott-m-forest-injury-fpl-9879fa8f",
-      "slug": "milenkovic-jair-cunha-nott-m-forest-injury-fpl-9879fa8f",
-      "sport": "soccer",
-      "headline": "Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5",
-      "blurb": "Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5 fantasyfootballscout.co.uk",
-      "summary": "Nikola Milenković and Jair Cunha: Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5 fantasyfootballscout.co.uk Board reading of fantasyfootballscout.co.uk.",
-      "category": "injury",
-      "published": "2026-09-17T15:08:25Z",
-      "updated": "2026-09-17T15:08:25Z",
-      "players": [
-        {
-          "key": "milenkovic",
-          "name": "Nikola Milenković",
-          "slug": "nikola-milenkovi",
-          "pos": "DEF",
-          "team": "NFO"
-        },
-        {
-          "key": "jair cunha",
-          "name": "Jair Cunha",
-          "slug": "jair-cunha",
-          "pos": "DEF",
-          "team": "NFO"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMTV3blBVMHE3SkNDUU1mT2pUNWRMTXR3d3FITmRoX2l3RTV2UEFUdkN0SnpGcHh4XzhzbU1laGhFNk53M2pBbHlDd3hIY2phV3d0Xy1MM1NIbjNqMUFuSFhVdlhTZXRmRkNrUjE5QjQzREZPOElqQ2l6dzNRNG9QRjhyQVdEcjVpT3ZabmU0QjdJcWJ1SDJNYTFVajhxeTNHT3h3SFVxVmZGT0hyVXhiY3NnMUFnTDFTNXc?oc=5",
-          "publisher": "fantasyfootballscout.co.uk",
-          "kind": "article",
-          "snippet": "Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5 fantasyfootballscout.co.uk",
-          "published": "Thu, 17 Sep 2026 15:08:25 GMT"
-        }
-      ]
-    },
-    {
       "id": "continue-reading-0d866c48",
       "slug": "continue-reading-0d866c48",
       "sport": "soccer",
@@ -17159,6 +17338,43 @@
       ]
     },
     {
+      "id": "milenkovic-jair-cunha-nott-m-forest-injury-fpl-9879fa8f",
+      "slug": "milenkovic-jair-cunha-nott-m-forest-injury-fpl-9879fa8f",
+      "sport": "soccer",
+      "headline": "Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5",
+      "blurb": "Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5 fantasyfootballscout.co.uk",
+      "summary": "Nikola Milenković and Jair Cunha: Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5 fantasyfootballscout.co.uk Board reading of fantasyfootballscout.co.uk.",
+      "category": "injury",
+      "published": "2026-09-17T15:08:25Z",
+      "updated": "2026-09-17T15:08:25Z",
+      "players": [
+        {
+          "key": "milenkovic",
+          "name": "Nikola Milenković",
+          "slug": "nikola-milenkovi",
+          "pos": "DEF",
+          "team": "NFO"
+        },
+        {
+          "key": "jair cunha",
+          "name": "Jair Cunha",
+          "slug": "jair-cunha",
+          "pos": "DEF",
+          "team": "NFO"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMTV3blBVMHE3SkNDUU1mT2pUNWRMTXR3d3FITmRoX2l3RTV2UEFUdkN0SnpGcHh4XzhzbU1laGhFNk53M2pBbHlDd3hIY2phV3d0Xy1MM1NIbjNqMUFuSFhVdlhTZXRmRkNrUjE5QjQzREZPOElqQ2l6dzNRNG9QRjhyQVdEcjVpT3ZabmU0QjdJcWJ1SDJNYTFVajhxeTNHT3h3SFVxVmZGT0hyVXhiY3NnMUFnTDFTNXc?oc=5",
+          "publisher": "fantasyfootballscout.co.uk",
+          "kind": "article",
+          "snippet": "Milenkovic + Jair Cunha: Nott’m Forest injury latest for FPL Gameweek 5 fantasyfootballscout.co.uk",
+          "published": "Thu, 17 Sep 2026 15:08:25 GMT"
+        }
+      ]
+    },
+    {
       "id": "enzo-le-f-e-makes-amends-spot-sunderland-e012f669",
       "slug": "enzo-le-f-e-makes-amends-spot-sunderland-e012f669",
       "sport": "soccer",
@@ -17215,6 +17431,95 @@
           "kind": "article",
           "snippet": "Enzo Le Fée delivers transfer verdict after Liverpool links and sends message to Sunderland fans Sunderland Echo",
           "published": "Mon, 11 May 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "lamine-yamal-wouldn-t-suit-man-utd-barcelona-e5439ab5",
+      "slug": "lamine-yamal-wouldn-t-suit-man-utd-barcelona-e5439ab5",
+      "sport": "soccer",
+      "headline": "Lamine Yamal ‘wouldn’t suit’ Man Utd as Barcelona wonderkid sees Xavi Simons & Florian Wirtz used as Premier League transfer warnings",
+      "blurb": "JJ Gabriel transfer news: Man Utd wonderkid attracting interest from Real Madrid, Barcelona, PSG, Bayern Munich and Premier League clubs Sky Sports",
+      "summary": "Florian Wirtz and Xavi Simons: JJ Gabriel transfer news: Man Utd wonderkid attracting interest from Real Madrid, Barcelona, PSG, Bayern Munich and Premier League clubs Sky Sports Lamine Yamal ‘wouldn’t suit’ Man Utd as Barcelona wonderkid sees Xavi Simons & Florian Wirtz used as Premier League transfer warnings Goal.com Aggregated from Sky Sports, Goal.com.",
+      "category": "trade",
+      "published": "2025-11-07T08:00:00Z",
+      "updated": "2026-09-17T13:24:25Z",
+      "players": [
+        {
+          "key": "wirtz",
+          "name": "Florian Wirtz",
+          "slug": "florian-wirtz",
+          "pos": "MID",
+          "team": "LIV"
+        },
+        {
+          "key": "xavi",
+          "name": "Xavi Simons",
+          "slug": "xavi-simons",
+          "pos": "MID",
+          "team": "TOT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "JJ Gabriel transfer news: Man Utd wonderkid attracting interest from Real Madrid, Barcelona, PSG, Bayern Munich and Premier League clubs",
+          "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPVzdOYTZhVmZPeGJfdEtmQUhQUmV4eXFMVUY4MmJsOFRQcElSTUNWMV9EM3hmZU1yWkk1UDVXUXZ5UHhqZ21jcnJLTEJWVThpWEZMUHBGNGlZTHBrZEFJVlo2aVZ4UEM4R2o2bEF0Z0J4dXY5M3lXVmFteFZrY0RNTzdUZ3QtUEtrVVYwdkI1VndNLUUxblVJVDV0YklEYVJIM1FzSUd3TlIyUlNqUVRIeVpIc1BQVzl0UHVuMENlUVdCcld3SDEzc2NEcE5lMV9VS1Fpa2tfWTdVNGxYSmFBT05GellRc0VQWnFFbXJDOWJsLVRQclowVjR5MlY2NFBZaGJJSTFfV3ZJZkV0dXhNRG5EcHlWQQ?oc=5",
+          "publisher": "Sky Sports",
+          "kind": "article",
+          "snippet": "JJ Gabriel transfer news: Man Utd wonderkid attracting interest from Real Madrid, Barcelona, PSG, Bayern Munich and Premier League clubs Sky Sports",
+          "published": "Thu, 17 Sep 2026 13:24:25 GMT"
+        },
+        {
+          "title": "Lamine Yamal ‘wouldn’t suit’ Man Utd as Barcelona wonderkid sees Xavi Simons & Florian Wirtz used as Premier League transfer warnings",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMVltZzRYdUZvVk5mLUxpV1NRS3NkNHJVNUpzWFoxRmZLUmF6RVI3R3Y3MklVc1gzMnhxU210WEZUR0hPOEpYZlVPcGU2OXZSbVk5RFlqZEJCMThkWXU5VWxial9tUllmSFNmbFliMVhmbzl6elhib0xMME8zQjF4OXM3eDhWTk1Ldi1KcVRHZm1qdzRPaTZWWEl5T1k3d0cwZUFONUl3Z042dXgyZ2p1WWJfOXp0TzVzUXByNi01bVpnTk04V0VXX1F0U0UtZUxJYnh3WnYtVV9vcFVFUnpTWldsN0dZRVJjaTBIWVhURzhJLWRW?oc=5",
+          "publisher": "Goal.com",
+          "kind": "article",
+          "snippet": "Lamine Yamal ‘wouldn’t suit’ Man Utd as Barcelona wonderkid sees Xavi Simons & Florian Wirtz used as Premier League transfer warnings Goal.com",
+          "published": "Fri, 07 Nov 2025 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "maresca-manchester-city-still-waiting-apology-incorrect-2023-18d7aee9",
+      "slug": "maresca-manchester-city-still-waiting-apology-incorrect-2023-18d7aee9",
+      "sport": "soccer",
+      "headline": "Maresca says Manchester City still waiting for apology after incorrect 2023 derby goal",
+      "blurb": "Maresca waits on 2023 apology",
+      "summary": "Bruno Fernandes, Mateus Fernandes and James Trafford: Maresca waits on 2023 apology United won game after controversial Fernandes equaliser City to blood youngsters for Carabao Cup game against Norwich Enzo Maresca says Manchester United cannot complain about the controversial derby winner on Sunday because Manchester City are still awaiting an apology from the Aggregated from The Guardian, Guardian Football.",
+      "category": "wire",
+      "published": "2026-09-16T11:40:24Z",
+      "updated": "2026-09-17T18:15:41Z",
+      "players": [
+        {
+          "key": "bruno fernandes",
+          "name": "Bruno Fernandes",
+          "slug": "bruno-fernandes",
+          "pos": "MID",
+          "team": "MUN"
+        },
+        {
+          "key": "fernandes",
+          "name": "Mateus Fernandes",
+          "slug": "mateus-fernandes",
+          "pos": "MID",
+          "team": "TOT"
+        },
+        {
+          "key": "trafford",
+          "name": "James Trafford",
+          "slug": "james-trafford",
+          "pos": "GKP",
+          "team": "LEE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Maresca says Manchester City still waiting for apology after incorrect 2023 derby goal",
+          "url": "https://www.theguardian.com/football/2026/sep/16/enzo-maresca-manchester-city-apology-2023-derby-goal",
+          "publisher": "Guardian Football",
+          "kind": "article",
+          "snippet": "United won game after controversial Fernandes equaliser City to blood youngsters for Carabao Cup game against Norwich Enzo Maresca says Manchester United cannot complain about the controversial derby winner on Sunday because Manchester City are still awaiting an apology from the ",
+          "published": "Wed, 16 Sep 2026 11:40:24 GMT"
         }
       ]
     },
@@ -18539,95 +18844,6 @@
       ]
     },
     {
-      "id": "lamine-yamal-wouldn-t-suit-man-utd-barcelona-e5439ab5",
-      "slug": "lamine-yamal-wouldn-t-suit-man-utd-barcelona-e5439ab5",
-      "sport": "soccer",
-      "headline": "Lamine Yamal ‘wouldn’t suit’ Man Utd as Barcelona wonderkid sees Xavi Simons & Florian Wirtz used as Premier League transfer warnings",
-      "blurb": "JJ Gabriel transfer news: Man Utd wonderkid attracting interest from Real Madrid, Barcelona, PSG, Bayern Munich and Premier League clubs Sky Sports",
-      "summary": "Florian Wirtz and Xavi Simons: JJ Gabriel transfer news: Man Utd wonderkid attracting interest from Real Madrid, Barcelona, PSG, Bayern Munich and Premier League clubs Sky Sports Lamine Yamal ‘wouldn’t suit’ Man Utd as Barcelona wonderkid sees Xavi Simons & Florian Wirtz used as Premier League transfer warnings Goal.com Aggregated from Sky Sports, Goal.com.",
-      "category": "trade",
-      "published": "2025-11-07T08:00:00Z",
-      "updated": "2026-09-17T13:24:25Z",
-      "players": [
-        {
-          "key": "wirtz",
-          "name": "Florian Wirtz",
-          "slug": "florian-wirtz",
-          "pos": "MID",
-          "team": "LIV"
-        },
-        {
-          "key": "xavi",
-          "name": "Xavi Simons",
-          "slug": "xavi-simons",
-          "pos": "MID",
-          "team": "TOT"
-        }
-      ],
-      "sources": [
-        {
-          "title": "JJ Gabriel transfer news: Man Utd wonderkid attracting interest from Real Madrid, Barcelona, PSG, Bayern Munich and Premier League clubs",
-          "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPVzdOYTZhVmZPeGJfdEtmQUhQUmV4eXFMVUY4MmJsOFRQcElSTUNWMV9EM3hmZU1yWkk1UDVXUXZ5UHhqZ21jcnJLTEJWVThpWEZMUHBGNGlZTHBrZEFJVlo2aVZ4UEM4R2o2bEF0Z0J4dXY5M3lXVmFteFZrY0RNTzdUZ3QtUEtrVVYwdkI1VndNLUUxblVJVDV0YklEYVJIM1FzSUd3TlIyUlNqUVRIeVpIc1BQVzl0UHVuMENlUVdCcld3SDEzc2NEcE5lMV9VS1Fpa2tfWTdVNGxYSmFBT05GellRc0VQWnFFbXJDOWJsLVRQclowVjR5MlY2NFBZaGJJSTFfV3ZJZkV0dXhNRG5EcHlWQQ?oc=5",
-          "publisher": "Sky Sports",
-          "kind": "article",
-          "snippet": "JJ Gabriel transfer news: Man Utd wonderkid attracting interest from Real Madrid, Barcelona, PSG, Bayern Munich and Premier League clubs Sky Sports",
-          "published": "Thu, 17 Sep 2026 13:24:25 GMT"
-        },
-        {
-          "title": "Lamine Yamal ‘wouldn’t suit’ Man Utd as Barcelona wonderkid sees Xavi Simons & Florian Wirtz used as Premier League transfer warnings",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOMVltZzRYdUZvVk5mLUxpV1NRS3NkNHJVNUpzWFoxRmZLUmF6RVI3R3Y3MklVc1gzMnhxU210WEZUR0hPOEpYZlVPcGU2OXZSbVk5RFlqZEJCMThkWXU5VWxial9tUllmSFNmbFliMVhmbzl6elhib0xMME8zQjF4OXM3eDhWTk1Ldi1KcVRHZm1qdzRPaTZWWEl5T1k3d0cwZUFONUl3Z042dXgyZ2p1WWJfOXp0TzVzUXByNi01bVpnTk04V0VXX1F0U0UtZUxJYnh3WnYtVV9vcFVFUnpTWldsN0dZRVJjaTBIWVhURzhJLWRW?oc=5",
-          "publisher": "Goal.com",
-          "kind": "article",
-          "snippet": "Lamine Yamal ‘wouldn’t suit’ Man Utd as Barcelona wonderkid sees Xavi Simons & Florian Wirtz used as Premier League transfer warnings Goal.com",
-          "published": "Fri, 07 Nov 2025 08:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "maresca-manchester-city-still-waiting-apology-incorrect-2023-18d7aee9",
-      "slug": "maresca-manchester-city-still-waiting-apology-incorrect-2023-18d7aee9",
-      "sport": "soccer",
-      "headline": "Maresca says Manchester City still waiting for apology after incorrect 2023 derby goal",
-      "blurb": "Maresca waits on 2023 apology",
-      "summary": "Bruno Fernandes, Mateus Fernandes and James Trafford: Maresca waits on 2023 apology United won game after controversial Fernandes equaliser City to blood youngsters for Carabao Cup game against Norwich Enzo Maresca says Manchester United cannot complain about the controversial derby winner on Sunday because Manchester City are still awaiting an apology from the Aggregated from The Guardian, Guardian Football.",
-      "category": "wire",
-      "published": "2026-09-16T11:40:24Z",
-      "updated": "2026-09-17T18:15:41Z",
-      "players": [
-        {
-          "key": "bruno fernandes",
-          "name": "Bruno Fernandes",
-          "slug": "bruno-fernandes",
-          "pos": "MID",
-          "team": "MUN"
-        },
-        {
-          "key": "fernandes",
-          "name": "Mateus Fernandes",
-          "slug": "mateus-fernandes",
-          "pos": "MID",
-          "team": "TOT"
-        },
-        {
-          "key": "trafford",
-          "name": "James Trafford",
-          "slug": "james-trafford",
-          "pos": "GKP",
-          "team": "LEE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Maresca says Manchester City still waiting for apology after incorrect 2023 derby goal",
-          "url": "https://www.theguardian.com/football/2026/sep/16/enzo-maresca-manchester-city-apology-2023-derby-goal",
-          "publisher": "Guardian Football",
-          "kind": "article",
-          "snippet": "United won game after controversial Fernandes equaliser City to blood youngsters for Carabao Cup game against Norwich Enzo Maresca says Manchester United cannot complain about the controversial derby winner on Sunday because Manchester City are still awaiting an apology from the ",
-          "published": "Wed, 16 Sep 2026 11:40:24 GMT"
-        }
-      ]
-    },
-    {
       "id": "fpl-gameweek-4-thursday-s-live-injury-917444c6",
       "slug": "fpl-gameweek-4-thursday-s-live-injury-917444c6",
       "sport": "soccer",
@@ -19230,6 +19446,36 @@
       ]
     },
     {
+      "id": "federico-chiesa-aiming-late-september-return-training-having-e3726ac0",
+      "slug": "federico-chiesa-aiming-late-september-return-training-having-e3726ac0",
+      "sport": "soccer",
+      "headline": "Federico Chiesa is aiming for a late September return to training, having not played for Liverpool since the start of the season due to…",
+      "blurb": "Federico Chiesa is aiming for a late September return to training, having not played for Liverpool since the start of the season due to a muscle injury [@LewisSteele_] x.com",
+      "summary": "Federico Chiesa is aiming for a late September return to training, having not played for Liverpool since the start of the season due to a muscle injury [@LewisSteele_] x.com Board reading of x.com.",
+      "category": "injury",
+      "published": "2026-09-17T09:58:47Z",
+      "updated": "2026-09-17T09:58:47Z",
+      "players": [
+        {
+          "key": "chiesa",
+          "name": "Federico Chiesa",
+          "slug": "federico-chiesa",
+          "pos": "MID",
+          "team": "LIV"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Federico Chiesa is aiming for a late September return to training, having not played for Liverpool since the start of the season due to a muscle injury [@LewisSteele_]",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5BTklKOHh1XzZEa2dqUGlZTDRxOTNpeS1Vb0xIOUM2eTBxZ05NdDByRS1kZ1NudG5uSllxVkprMUR0UXMzNmZ4NHZSTXdnNTdnY05hNXVONmFxblRkNllsNUxvMUJsQQ?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "Federico Chiesa is aiming for a late September return to training, having not played for Liverpool since the start of the season due to a muscle injury [@LewisSteele_] x.com",
+          "published": "Thu, 17 Sep 2026 09:58:47 GMT"
+        }
+      ]
+    },
+    {
       "id": "it-every-fan-who-ever-followed-us-bournemouth-1c2a5441",
       "slug": "it-every-fan-who-ever-followed-us-bournemouth-1c2a5441",
       "sport": "soccer",
@@ -19392,58 +19638,6 @@
           "kind": "article",
           "snippet": "Luke Shaw may leave Manchester United next summer with no new deal in sight - Paper Talk Sky Sports",
           "published": "Wed, 16 Sep 2026 22:26:56 GMT"
-        }
-      ]
-    },
-    {
-      "id": "steelers-fans-just-got-terrible-joey-porter-jr-914c23d2",
-      "slug": "steelers-fans-just-got-terrible-joey-porter-jr-914c23d2",
-      "sport": "soccer",
-      "headline": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr. LEAVES PRACTICE With Another (Fake?) Injury",
-      "blurb": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr.",
-      "summary": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr. LEAVES PRACTICE With Another (Fake?) Injury YouTube Board reading of YouTube.",
-      "category": "injury",
-      "published": "2026-09-17T23:11:25Z",
-      "updated": "2026-09-17T23:11:25Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr. LEAVES PRACTICE With Another (Fake?) Injury",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5GUndOYTQ5a21ZVk5BUEhFMWY5dHJ0VmpSMEZWbDUzNUdBNGQ1MkJBT3E2dXlvZEkyZ0JhSU5NZTFxOGFUVUFERnhpcll3SVk3Y3Zmd1dn?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr. LEAVES PRACTICE With Another (Fake?) Injury YouTube",
-          "published": "Thu, 17 Sep 2026 23:11:25 GMT"
-        }
-      ]
-    },
-    {
-      "id": "luton-town-approached-arsenal-multiple-occasions-summer-regarding-03815909",
-      "slug": "luton-town-approached-arsenal-multiple-occasions-summer-regarding-03815909",
-      "sport": "soccer",
-      "headline": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman.…",
-      "blurb": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman.",
-      "summary": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman. Luton manager Jack Wilshere went out on loan as an Arsenal youngster and felt he could help Dowman's progress in f x.com Board reading of x.com.",
-      "category": "coach",
-      "published": "2026-09-17T07:53:00Z",
-      "updated": "2026-09-17T07:53:00Z",
-      "players": [
-        {
-          "key": "dowman",
-          "name": "Max Dowman",
-          "slug": "max-dowman",
-          "pos": "MID",
-          "team": "ARS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman. Luton manager Jack Wilshere went out on loan as an Arsenal youngster and felt he could help Dowman's progress in f",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBYUE0ySG1ZNEozcnpDajduaWl1RURteGpyVUwtVjkzVm8xdnY2R2Fway1Jakk5dF8wQkpvYk91blk0S1B0cDIxN2RmTDk3VGxaRDF6Z3hVUmxpTW5LMUdtY0IxUl9hUU0?oc=5",
-          "publisher": "x.com",
-          "kind": "x",
-          "snippet": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman. Luton manager Jack Wilshere went out on loan as an Arsenal youngster and felt he could help Dowman's progress in f x.com",
-          "published": "Thu, 17 Sep 2026 07:53:00 GMT"
         }
       ]
     },
@@ -22081,15 +22275,37 @@
       ]
     },
     {
-      "id": "arsenal-rejected-dowman-loan-offers-a314e695",
-      "slug": "arsenal-rejected-dowman-loan-offers-a314e695",
+      "id": "steelers-fans-just-got-terrible-joey-porter-jr-914c23d2",
+      "slug": "steelers-fans-just-got-terrible-joey-porter-jr-914c23d2",
       "sport": "soccer",
-      "headline": "Arsenal rejected Dowman loan offers",
-      "blurb": "Arsenal rejected Dowman loan offers - Thursday's gossip Yahoo Sports",
-      "summary": "Max Dowman and Luke Shaw: Arsenal rejected Dowman loan offers - Thursday's gossip Yahoo Sports Arsenal received loan offers for Max Dowman, Luke Shaw could leave Manchester United next summer, Luca Weinhandl attracting interest from multiple Premier League clubs, plus more. Aggregated from Yahoo Sports, Thursday's gossip.",
-      "category": "wire",
-      "published": "2026-09-16T19:53:12Z",
-      "updated": "2026-09-16T19:53:18Z",
+      "headline": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr. LEAVES PRACTICE With Another (Fake?) Injury",
+      "blurb": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr.",
+      "summary": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr. LEAVES PRACTICE With Another (Fake?) Injury YouTube Board reading of YouTube.",
+      "category": "injury",
+      "published": "2026-09-17T23:11:25Z",
+      "updated": "2026-09-17T23:11:25Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr. LEAVES PRACTICE With Another (Fake?) Injury",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5GUndOYTQ5a21ZVk5BUEhFMWY5dHJ0VmpSMEZWbDUzNUdBNGQ1MkJBT3E2dXlvZEkyZ0JhSU5NZTFxOGFUVUFERnhpcll3SVk3Y3Zmd1dn?oc=5",
+          "publisher": "YouTube",
+          "kind": "video",
+          "snippet": "Steelers Fans Just Got TERRIBLE NEWS - Joey Porter Jr. LEAVES PRACTICE With Another (Fake?) Injury YouTube",
+          "published": "Thu, 17 Sep 2026 23:11:25 GMT"
+        }
+      ]
+    },
+    {
+      "id": "luton-town-approached-arsenal-multiple-occasions-summer-regarding-03815909",
+      "slug": "luton-town-approached-arsenal-multiple-occasions-summer-regarding-03815909",
+      "sport": "soccer",
+      "headline": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman.…",
+      "blurb": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman.",
+      "summary": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman. Luton manager Jack Wilshere went out on loan as an Arsenal youngster and felt he could help Dowman's progress in f x.com Board reading of x.com.",
+      "category": "coach",
+      "published": "2026-09-17T07:53:00Z",
+      "updated": "2026-09-17T07:53:00Z",
       "players": [
         {
           "key": "dowman",
@@ -22097,53 +22313,16 @@
           "slug": "max-dowman",
           "pos": "MID",
           "team": "ARS"
-        },
-        {
-          "key": "shaw",
-          "name": "Luke Shaw",
-          "slug": "luke-shaw",
-          "pos": "DEF",
-          "team": "MUN"
         }
       ],
       "sources": [
         {
-          "title": "Arsenal rejected Dowman loan offers",
-          "url": "https://www.bbc.co.uk/sport/football/articles/c617jz28nkvgo?at_medium=RSS&at_campaign=rss",
-          "publisher": "Thursday's gossip",
-          "kind": "article",
-          "snippet": "Arsenal received loan offers for Max Dowman, Luke Shaw could leave Manchester United next summer, Luca Weinhandl attracting interest from multiple Premier League clubs, plus more.",
-          "published": "Wed, 16 Sep 2026 19:53:12 GMT"
-        },
-        {
-          "title": "Arsenal rejected Dowman loan offers",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRDAwMW9nbnhnMDdWYTdwLXA1Rm1sY3ltVW5aT3FVU2F6cFhyNlRJS1VCclJhV0hPNVlXRVJHRXVyeW8yZm0xbmVaaG9DZjI2YWRINHNFaGpFb1BPbVJKdlEzOUxFb2h3M0NIaGlWdTFuc1cxbTFmNU1CeVBWaERLVXFaZlA5RE82RVlVOA?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Arsenal rejected Dowman loan offers - Thursday's gossip Yahoo Sports",
-          "published": "Wed, 16 Sep 2026 19:53:18 GMT"
-        }
-      ]
-    },
-    {
-      "id": "sam-leavitt-doubtful-ole-miss-saints-ravens-injury-95b4b942",
-      "slug": "sam-leavitt-doubtful-ole-miss-saints-ravens-injury-95b4b942",
-      "sport": "soccer",
-      "headline": "Sam Leavitt DOUBTFUL vs. Ole Miss?!? | Saints-Ravens Injury Report | LSU-Ole Miss Preview",
-      "blurb": "| Saints-Ravens Injury Report | LSU-Ole Miss Preview youtube.com",
-      "summary": "| Saints-Ravens Injury Report | LSU-Ole Miss Preview youtube.com Board reading of youtube.com.",
-      "category": "injury",
-      "published": "2026-09-17T19:59:54Z",
-      "updated": "2026-09-17T19:59:54Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Sam Leavitt DOUBTFUL vs. Ole Miss?!? | Saints-Ravens Injury Report | LSU-Ole Miss Preview",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12NmZ1UDAwdmRZTlFVRFdnN1VOMTRiYU80N2w5dVk1ZHlkXzI4Vi00RmU4SDNPOUZQOGhxd2ZkaF94Z2lPZXBQSHBzNk14SzFQVmJyUzRR?oc=5",
-          "publisher": "youtube.com",
-          "kind": "video",
-          "snippet": "Sam Leavitt DOUBTFUL vs. Ole Miss?!? | Saints-Ravens Injury Report | LSU-Ole Miss Preview youtube.com",
-          "published": "Thu, 17 Sep 2026 19:59:54 GMT"
+          "title": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman. Luton manager Jack Wilshere went out on loan as an Arsenal youngster and felt he could help Dowman's progress in f",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBYUE0ySG1ZNEozcnpDajduaWl1RURteGpyVUwtVjkzVm8xdnY2R2Fway1Jakk5dF8wQkpvYk91blk0S1B0cDIxN2RmTDk3VGxaRDF6Z3hVUmxpTW5LMUdtY0IxUl9hUU0?oc=5",
+          "publisher": "x.com",
+          "kind": "x",
+          "snippet": "🚨 Luton Town approached Arsenal on multiple occasions this summer regarding a loan deal for 16-year-old English attacker Max Dowman. Luton manager Jack Wilshere went out on loan as an Arsenal youngster and felt he could help Dowman's progress in f x.com",
+          "published": "Thu, 17 Sep 2026 07:53:00 GMT"
         }
       ]
     },
@@ -22156,7 +22335,7 @@
       "summary": "Dominik Szoboszlai: FPL notes: Gakpo impresses, Szoboszlai goal + Porro injury boost fantasyfootballscout.co.uk Board reading of fantasyfootballscout.co.uk.",
       "category": "injury",
       "published": "2026-09-16T13:54:28Z",
-      "updated": "2026-09-16T15:33:45Z",
+      "updated": "2026-09-16T17:09:57Z",
       "players": [
         {
           "key": "szoboszlai",
@@ -22182,6 +22361,28 @@
           "kind": "article",
           "snippet": "FPL notes: Gakpo impresses, Szoboszlai goal + Porro injury boost fantasyfootballscout.co.uk",
           "published": "Wed, 16 Sep 2026 15:33:45 GMT"
+        }
+      ]
+    },
+    {
+      "id": "sam-leavitt-doubtful-ole-miss-saints-ravens-injury-95b4b942",
+      "slug": "sam-leavitt-doubtful-ole-miss-saints-ravens-injury-95b4b942",
+      "sport": "soccer",
+      "headline": "Sam Leavitt DOUBTFUL vs. Ole Miss?!? | Saints-Ravens Injury Report | LSU-Ole Miss Preview",
+      "blurb": "| Saints-Ravens Injury Report | LSU-Ole Miss Preview youtube.com",
+      "summary": "| Saints-Ravens Injury Report | LSU-Ole Miss Preview youtube.com Board reading of youtube.com.",
+      "category": "injury",
+      "published": "2026-09-17T19:59:54Z",
+      "updated": "2026-09-17T19:59:54Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Sam Leavitt DOUBTFUL vs. Ole Miss?!? | Saints-Ravens Injury Report | LSU-Ole Miss Preview",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12NmZ1UDAwdmRZTlFVRFdnN1VOMTRiYU80N2w5dVk1ZHlkXzI4Vi00RmU4SDNPOUZQOGhxd2ZkaF94Z2lPZXBQSHBzNk14SzFQVmJyUzRR?oc=5",
+          "publisher": "youtube.com",
+          "kind": "video",
+          "snippet": "Sam Leavitt DOUBTFUL vs. Ole Miss?!? | Saints-Ravens Injury Report | LSU-Ole Miss Preview youtube.com",
+          "published": "Thu, 17 Sep 2026 19:59:54 GMT"
         }
       ]
     }
