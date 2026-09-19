@@ -717,6 +717,7 @@ def test_week2_predictions_copy():
         "PHI", "DEN", "LAC", "SEA", "DAL", "SF", "KC", "LAR",
     ):
         assert f"Pick: {club}" in html
+    assert "BUF 41, DET 31" in html
     assert "week2-matchups.html" in teaser
     assert "Bills over Lions" in teaser
 
@@ -821,7 +822,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=63" in doc
+    assert "css/site.css?v=64" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 

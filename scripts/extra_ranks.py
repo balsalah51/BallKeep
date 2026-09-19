@@ -57,7 +57,7 @@ ESPN_KARABELL_SF = load_names("karabell-sf")
 # ESPN Karabell Flex (no QB), refreshed Sep 9 2026
 ESPN_KARABELL_FLEX = load_names("karabell-flex")
 
-# Draft Sharks Dynasty Superflex public top 25, Sep 3 2026
+# Draft Sharks Dynasty Superflex public top 25, refreshed Sep 19 2026
 # https://www.draftsharks.com/dynasty-rankings/superflex
 DRAFT_SHARKS_SF = load_names("ds-sf")
 

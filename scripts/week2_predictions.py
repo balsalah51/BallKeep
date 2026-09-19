@@ -5,11 +5,13 @@ from seo import article_jsonld
 
 HEADLINE = "Sixteen games, a new Highmark, and a card that already has a memory."
 DEK = (
-    "Thursday in Buffalo opens the week. The mash likes the Bills. Sunday asks "
-    "the rest of the league to prove the opener meant something. This is the "
-    "full Week 2 card, written Wednesday, with a published pick on every line."
+    "Thursday in Buffalo is already in. Buffalo 41, Detroit 31. Sunday still "
+    "has fifteen games and a published side on every remaining line. This is "
+    "the full Week 2 card, with the Thursday final written in and the rest of "
+    "the mash left standing."
 )
 PUBLISHED = "2026-09-16T14:00:00Z"
+MODIFIED = "2026-09-19T12:00:00Z"
 OG_IMAGE = "img/players/josh-allen.png"
 
 PREDICTION_LD = [
@@ -18,7 +20,7 @@ PREDICTION_LD = [
         "https://ballkeep.com/week2-matchups.html",
         DEK,
         published=PUBLISHED,
-        modified=PUBLISHED,
+        modified=MODIFIED,
         image=OG_IMAGE,
         brand="Ball Keep",
         section="Week 2",
@@ -54,9 +56,9 @@ def predictions_teaser():
     <a class="opening-teaser recap-teaser" href="week2-matchups.html">
       <img src="{OG_IMAGE}" alt="Josh Allen" width="160" height="160" />
       <div>
-        <p class="k">Week 2 Predictions · Wednesday, Sep 16</p>
-        <h2>Bills over Lions. A pick on every line.</h2>
-        <p>The mash likes Buffalo on Thursday, San Francisco in a landslide, and Kansas City under the lights. Read the card, then copy the winners in kickoff order.</p>
+        <p class="k">Week 2 Predictions · Saturday, Sep 19</p>
+        <h2>Bills over Lions, 41-31. Fifteen still live.</h2>
+        <p>Thursday paid. Allen threw five. Cook ran for 134. Sunday still has a published winner on every remaining line.</p>
       </div>
     </a>
     """
@@ -65,13 +67,13 @@ def predictions_teaser():
 def predictions_article_html():
     return f"""
     <article class="opening recap">
-      <p class="opening-kicker">Week 2 · Predictions · Wednesday, September 16, 2026</p>
+      <p class="opening-kicker">Week 2 · Predictions · Saturday, September 19, 2026</p>
       <h2 class="pred-hed">{HEADLINE}</h2>
       <p class="dek">{DEK}</p>
-      <p class="byline">Ball Keep · Filed Wednesday before Detroit flies to Buffalo</p>
+      <p class="byline">Ball Keep · Filed Wednesday. Thursday final added Saturday.</p>
 
       <div class="score-row recap-scores">
-        <div class="score-card"><p class="when">Thu · Prime</p><p class="result">Pick: BUF</p><p class="meta">DET at BUF · BUF -4.5</p></div>
+        <div class="score-card is-final"><p class="when">Thu · Final</p><p class="result">BUF 41, DET 31</p><p class="meta">Allen 5 TD · Cook 134 rush</p></div>
         <div class="score-card"><p class="when">Sun · FOX</p><p class="result">Pick: SF</p><p class="meta">MIA at SF · SF -12.5</p></div>
         <div class="score-card"><p class="when">Sun · NBC</p><p class="result">Pick: KC</p><p class="meta">IND at KC · KC -5.5</p></div>
         <div class="score-card"><p class="when">Mon · ESPN</p><p class="result">Pick: LAR</p><p class="meta">NYG at LAR · LAR -9.5</p></div>
@@ -96,6 +98,7 @@ def predictions_article_html():
       <h2>Thursday: Detroit at Buffalo. Pick: BUF</h2>
       <p>The new Highmark Stadium gets its first regular-season night, and the league handed it the two clubs that just scored 67 points between them. Buffalo beat Houston 36-31. Detroit survived New Orleans 31-30 in overtime. Bill Bender at Sporting News has the Bills 28-26. John Breech at CBS Sports has them 38-31. NFL Spin Zone printed 31-23. Sportsnaut printed 35-31. The Game Haus leaned Detroit against the number and still left the favorite on the moneyline. The mash is loud about Buffalo. Seven of the eight boards that bothered to pick this game took the home side. I am taking the home side with them.</p>
       <p>Jahmyr Gibbs already has his first chapter, 156 yards of it, and now he has to spend it on a short week after an overtime. That is a brutal way to open Thursday Night Football. Josh Allen accounted for four scores against a Texans defense that was supposed to be the grown-up in the room. Tyler Shough threw for 410 on that same Detroit secondary. If a Saints backup can find that much grass, Allen will find more. The Lions can still hang 27. The Bills hang 30 and walk out of their own new building with a 2-0 start.</p>
+      <p>Saturday morning now has the receipt. Buffalo 41, Detroit 31. Josh Allen accounted for five scores. James Cook ran for 134. The mash took the home side on Wednesday and the home side cashed on Thursday night in a building that still smelled like paint. The Lions hung 31 and walked out 1-1. Buffalo is 2-0, and the rest of the card is still Sunday and Monday.</p>
       <p>Fantasy rooms already know the start list. Allen. Gibbs. Amon-Ra St. Brown. James Cook. The stream if you like points after turnovers is Buffalo's defense only if you already rostered it. Detroit's defense just watched Shough throw fifty-six times. Sit that one.</p>
 
       <figure>
@@ -172,14 +175,14 @@ def predictions_article_html():
       </figure>
 
       <h2>What the rooms should do with the card</h2>
-      <p>Copy the winners in kickoff order if you came here for the list: BUF, ATL, BAL, CHI, CIN, NE, GB, TB, PHI, DEN, LAC, SEA, DAL, SF, KC, LAR. That is the mash as it stands Wednesday. Thursday can change a line. It cannot change the fact that every game already has a side.</p>
-      <p>The <a href="waiver.html">Week 2 waiver board</a> still opens with Jalen Coker. Kaelon Black is the back. Tyler Shough and Devaughn Vele are the Saints tickets. Michael Mayer is the tight end if Brock Bowers sits. RotoWire spent Tuesday adding DeMario Douglas, Rashod Bateman, and Caleb Douglas. PFF spent Monday adding Jordan Love and Malik Willis. Spend the leftover FAAB on the names the tape actually moved, then come back to this page on Thursday and see if Buffalo did what eight boards said it would do.</p>
+      <p>Copy the winners in kickoff order if you came here for the list: BUF, ATL, BAL, CHI, CIN, NE, GB, TB, PHI, DEN, LAC, SEA, DAL, SF, KC, LAR. Thursday already paid. Sunday still has a side on every remaining line.</p>
+      <p>The <a href="waiver.html">Week 2 waiver board</a> still opens with Jalen Coker. Kaelon Black is the back. Tyler Shough and Devaughn Vele are the Saints tickets. Michael Mayer is the tight end if Brock Bowers sits. RotoWire spent Tuesday adding DeMario Douglas, Rashod Bateman, and Caleb Douglas. PFF spent Monday adding Jordan Love and Malik Willis. Spend the leftover FAAB on the names the tape actually moved.</p>
       <p>The <a href="week2-dst.html">Week 2 DST board</a> still leans San Francisco, Philadelphia, Tampa Bay, and Seattle. The <a href="week2-kickers.html">kicker board</a> still loves Brandon Aubrey and has learned to say Eddy Pineiro out loud. The <a href="weekly.html">weekly skill boards</a> rebuilt this afternoon from FantasyPros ECR, sixty-plus experts, plus RotoWire, 4for4, and the rest of the kit.</p>
 
       <div class="ramif">
         <h3>The sixteen, one more time</h3>
         <ul>
-          <li>BUF over DET on Thursday. Short week, new building, Allen at home.</li>
+          <li>BUF over DET on Thursday. Final 41-31. Allen five scores. Cook 134.</li>
           <li>ATL over CAR. The writers like Carolina. The market and the tiebreak stay in Atlanta.</li>
           <li>BAL over NO. Shough can throw. Baltimore can hit.</li>
           <li>CHI over MIN. Fifty-nine points still count on Wednesday.</li>
@@ -199,7 +202,7 @@ def predictions_article_html():
       </div>
 
       <h2>A last look, because a card this long deserves one</h2>
-      <p>I keep a private list of images from a week that has not happened yet. Allen pointing in a building that still smells like paint. Gibbs on the sideline after a short week that asked too much. Coker in Atlanta colors, or at least Atlanta weather, trying to prove Charlotte was a habit. Maye at home, trying to prove Seattle was a night and not a year. Purdy against a Dolphins club that is already living in a hole. Walker again, in red, under Sunday-night lights. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. Spend both before Thursday kickoff, then spend the wire on the names the opener already moved.</p>
-      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card, Sep 16), John Breech at CBS Sports (Sep 15), Sports Brackets, Sportsnaut, NFL Spin Zone, The Game Haus, the published FanDuel and CBS SportsLine numbers, a Week 1 winners board, and a short post-opener power card. Waiver names from RotoBaller, SI OnSI, ESPN, FantasyPros, RotoWire's Tuesday update, and PFF. Scores from the opener sit on <a href="the-recap.html">The Recap</a>. Finals we are asking this card to beat: BUF over DET; ATL over CAR; BAL over NO; CHI over MIN; CIN over HOU; NE over PIT; GB over NYJ; TB over CLE; PHI over TEN; DEN over JAX; LAC over LV; SEA over ARI; DAL over WAS; SF over MIA; KC over IND; LAR over NYG.</p>
+      <p>I keep a private list of images from a week that is only one night old. Allen pointing in a building that still smelled like paint, and now that picture has a 41 next to it. Gibbs on the sideline after a short week that asked too much. Coker in Atlanta colors, or at least Atlanta weather, trying to prove Charlotte was a habit. Maye at home, trying to prove Seattle was a night and not a year. Purdy against a Dolphins club that is already living in a hole. Walker again, in red, under Sunday-night lights. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. Spend both before Sunday kickoff, then spend the wire on the names the opener already moved.</p>
+      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card, Sep 16), John Breech at CBS Sports (Sep 15), Sports Brackets, Sportsnaut, NFL Spin Zone, The Game Haus, the published FanDuel and CBS SportsLine numbers, a Week 1 winners board, and a short post-opener power card. Thursday final: Buffalo 41, Detroit 31. Allen five scores. Cook 134. Waiver names from RotoBaller, SI OnSI, ESPN, FantasyPros, RotoWire's Tuesday update, and PFF. Scores from the opener sit on <a href="the-recap.html">The Recap</a>. Remaining finals this card is asking to beat: ATL over CAR; BAL over NO; CHI over MIN; CIN over HOU; NE over PIT; GB over NYJ; TB over CLE; PHI over TEN; DEN over JAX; LAC over LV; SEA over ARI; DAL over WAS; SF over MIA; KC over IND; LAR over NYG.</p>
     </article>
     """
