@@ -1098,7 +1098,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Superflex dynasty top 400 from 40 boards, rebuilt September 9, 2026. Rank 1 is 12,000 BK Value.",
+        "Superflex dynasty top 400 from 40 boards, rebuilt September 19, 2026. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -1379,7 +1379,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 15, 2026 after Week 1."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 19, 2026 from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
