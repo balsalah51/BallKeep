@@ -310,6 +310,9 @@ def week2_matchups():
             "home_n": counts.get(home, 0),
             "picks": picks,
         })
+        if key == "DET@BUF":
+            rows[-1]["final"] = "41-31"
+            rows[-1]["day"] = "Thu Final"
     day_ord = {"Wed": 0, "Thu": 1, "Fri": 2, "Sat": 3, "Sun": 4, "Mon": 5}
     rows.sort(key=lambda r: (
         day_ord.get((r["day"] or "").split()[0], 9),

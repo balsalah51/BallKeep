@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 16, 2026"
-LASTMOD = "2026-09-16"
+UPDATED = "September 19, 2026"
+LASTMOD = "2026-09-19"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -866,7 +866,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 63
+CSS_VER = 64
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1198,7 +1198,7 @@ FB_SEO = {
     ),
     "weekly.html": (
         "Week 2 Fantasy Football Rankings 2026 | Ball Keep",
-        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (sixty-plus experts, Sep 16), RotoWire, and 4for4.",
+        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (sixty-plus experts, Sep 19), RotoWire, and 4for4.",
         "img/logo.jpg",
     ),
     "the-recap.html": (
@@ -1268,7 +1268,7 @@ FB_SEO = {
     ),
     "week2-matchups.html": (
         "Week 2 NFL Matchups and Win Predictions 2026 | Ball Keep",
-        "Full Week 2 card with a pick for every game and a long essay. Bills over Lions on Thursday. Sixteen published winners in kickoff order.",
+        "Full Week 2 card. Thursday final is Buffalo 41, Detroit 31. Fifteen Sunday and Monday picks still live, plus the essay.",
         "img/players/josh-allen.png",
     ),
     "archive/week1/index.html": (
@@ -1866,15 +1866,21 @@ def matchup_table(rows):
         key = rank_search_key(game, "", r.get("spread") or "")
         pick = r.get("pick") or ""
         tv = r.get("tv") or ""
-        meta = " · ".join(x for x in (f"Pick {pick}" if pick else "", tv) if x)
+        final = r.get("final") or ""
+        pick_cell = f"{pick} {final}".strip() if final else pick
+        meta = " · ".join(x for x in (
+            f"Final {pick} {final}" if final else (f"Pick {pick}" if pick else ""),
+            tv,
+        ) if x)
+        row_cls = ' class="is-final"' if final else ""
         body.append(
-            f'<tr data-pos="" data-name="{key}">'
+            f'<tr{row_cls} data-pos="" data-name="{key}">'
             f'<td class="rk c-rank">{r.get("bk", "")}</td>'
             f'<td class="c-name"><strong>{esc(game)}</strong>'
             f'<div class="row-meta">{esc(meta)}</div></td>'
             f'<td class="c-team">{esc(r.get("day") or "")}</td>'
             f'<td class="desk-only">{esc(r.get("spread") or "")}</td>'
-            f'<td class="c-pick"><strong>{esc(pick)}</strong></td>'
+            f'<td class="c-pick"><strong>{esc(pick_cell)}</strong></td>'
             f'<td class="desk-only">{away} {r.get("away_n", 0)}</td>'
             f'<td class="desk-only">{home} {r.get("home_n", 0)}</td>'
             f'<td class="c-val val">{r.get("n", "")}</td>'
@@ -3721,8 +3727,8 @@ def main():
             f"A pick for every Week 2 game, mashed from {len(W2_MATCH_SOURCES)} published sources: "
             "Sporting News, CBS Sports, NFL Spin Zone, Sports Brackets, Sportsnaut, The Game Haus, "
             "the market favorite, Week 1 winners, and a short post-opener power board. Unpicked games "
-            "on a board are skipped. The pick is the side with more votes. The essay under the table "
-            "walks the slate in kickoff order."
+            "on a board are skipped. The pick is the side with more votes. Thursday already finished: "
+            "Buffalo 41, Detroit 31. The essay under the table walks the slate in kickoff order."
         ),
         extra=predictions_article_html(),
         extra_jsonld=PREDICTION_LD,

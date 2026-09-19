@@ -498,7 +498,7 @@ def main():
     assert "<strong>BUF</strong>" in w2_m_html
     assert "Pick BUF" in w2_m_html
     assert "Sixteen games, a new Highmark" in w2_m_html
-    assert "Pick: BUF" in w2_m_html
+    assert "BUF 41, DET 31" in w2_m_html
     assert "Pick: SF" in w2_m_html
     assert "Pick: KC" in w2_m_html
     assert "Pick: LAR" in w2_m_html

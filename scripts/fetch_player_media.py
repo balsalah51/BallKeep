@@ -169,10 +169,34 @@ def sleeper_index():
     return by_name
 
 
+def image_ok(path: Path) -> bool:
+    """Reject missing, tiny, or HTML/XML leftovers that used to pass as faces."""
+    if not path or not path.exists():
+        return False
+    try:
+        size = path.stat().st_size
+        head = path.read_bytes()[:16]
+    except OSError:
+        return False
+    if size < 1200:
+        return False
+    low = head[:12].lower()
+    if low.startswith(b"<!doctype") or low.startswith(b"<html") or head[:5] == b"<?xml":
+        return False
+    return True
+
+
+def has_real_face(rec: dict) -> bool:
+    img = (rec or {}).get("image") or ""
+    if not img or "logo" in img:
+        return False
+    return image_ok(ROOT / img)
+
+
 def download_image(url, dest: Path) -> bool:
     try:
         data = get(url)
-        if len(data) < 800 or data[:10].lower().startswith(b"<!doctype") or data[:5] == b"<?xml":
+        if len(data) < 1200 or data[:10].lower().startswith(b"<!doctype") or data[:5] == b"<?xml":
             return False
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(data)
@@ -333,7 +357,7 @@ def fill_idp_photos() -> None:
         name = row.get("name") or key
         slug = slugify(name)
         rec = media.get(key) or media.get(norm_name(name)) or {}
-        if rec.get("image") and (ROOT / rec["image"]).exists() and "logo" not in rec["image"]:
+        if has_real_face(rec):
             media[key] = rec
             continue
         sp = sleep_idx.get(key) or sleep_idx.get(norm_name(name))
@@ -376,13 +400,14 @@ def fill_kicker_photos() -> None:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from special_teams import KICKERS
     from week1_boards import WEEK1_KICKERS
+    from week2_boards import WEEK2_KICKERS
 
     ensure_sleeper()
     sleep_idx = sleeper_index() if SLEEPER.exists() else {}
     media = json.loads(OUT.read_text()) if OUT.exists() else {}
     IMG.mkdir(parents=True, exist_ok=True)
     seen = {}
-    for name, team in list(KICKERS) + list(WEEK1_KICKERS):
+    for name, team in list(KICKERS) + list(WEEK1_KICKERS) + list(WEEK2_KICKERS):
         key = norm_name(name)
         if key and key not in seen:
             seen[key] = (name, team)
@@ -390,7 +415,7 @@ def fill_kicker_photos() -> None:
     for key, (name, team) in seen.items():
         slug = slugify(name)
         rec = media.get(key) or {}
-        if rec.get("image") and (ROOT / rec["image"]).exists() and "logo" not in rec["image"]:
+        if has_real_face(rec):
             media[key] = rec
             n_img += 1
             continue
@@ -494,9 +519,9 @@ def main():
         png = IMG / f"{slug}.png"
         if not dest.exists() and png.exists():
             dest = png
-        have_file = dest.exists() or png.exists()
+        have_file = image_ok(dest) or image_ok(png)
         if have_file:
-            rec["image"] = f"img/players/{dest.name if dest.exists() else png.name}"
+            rec["image"] = f"img/players/{dest.name if image_ok(dest) else png.name}"
         else:
             urls = []
             if rec.get("espn_id"):

@@ -30,9 +30,9 @@ ARTICLES = [
     (
         "week2-matchups.html",
         "Week 2 Predictions",
-        "Wednesday, Sep 16",
-        "Bills over Lions. A pick on every line.",
-        "The mash likes Buffalo on Thursday and San Francisco in a landslide. Sixteen published winners.",
+        "Saturday, Sep 19",
+        "Bills over Lions, 41-31. Fifteen still live.",
+        "Thursday paid the mash. Sunday still has a published winner on every line.",
         "img/players/josh-allen.png",
         "Josh Allen",
         False,
