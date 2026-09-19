@@ -495,8 +495,8 @@ def main():
     assert "navigator.clipboard" in w2_m_html
     assert "localStorage" not in w2_m_html
     assert 'class="c-pick"' in w2_m_html
-    assert "<strong>BUF</strong>" in w2_m_html
-    assert "Pick BUF" in w2_m_html
+    assert "<strong>BUF 41-31</strong>" in w2_m_html
+    assert "Final BUF 41-31" in w2_m_html
     assert "Sixteen games, a new Highmark" in w2_m_html
     assert "BUF 41, DET 31" in w2_m_html
     assert "Pick: SF" in w2_m_html
