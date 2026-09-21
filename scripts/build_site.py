@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 19, 2026"
-LASTMOD = "2026-09-19"
+UPDATED = "September 21, 2026"
+LASTMOD = "2026-09-21"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -866,7 +866,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 64
+CSS_VER = 65
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1098,7 +1098,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Superflex dynasty top 400 from 40 boards, rebuilt September 19, 2026. Rank 1 is 12,000 BK Value.",
+        "Superflex dynasty top 400 from 40 boards, rebuilt September 21, 2026. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -1198,7 +1198,7 @@ FB_SEO = {
     ),
     "weekly.html": (
         "Week 2 Fantasy Football Rankings 2026 | Ball Keep",
-        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (sixty-plus experts, Sep 19), RotoWire, and 4for4.",
+        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Sep 20), RotoWire, and 4for4.",
         "img/logo.jpg",
     ),
     "the-recap.html": (
@@ -1268,7 +1268,7 @@ FB_SEO = {
     ),
     "week2-matchups.html": (
         "Week 2 NFL Matchups and Win Predictions 2026 | Ball Keep",
-        "Full Week 2 card. Thursday final is Buffalo 41, Detroit 31. Fifteen Sunday and Monday picks still live, plus the essay.",
+        "Week 2 card after Sunday. The mash is 10-5 with Monday in Los Angeles still live. Buffalo 41-31, Carolina 34-3, Kansas City in overtime.",
         "img/players/josh-allen.png",
     ),
     "archive/week1/index.html": (
@@ -1379,7 +1379,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 19, 2026 from the live public lists."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 21, 2026 from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
@@ -1867,9 +1867,10 @@ def matchup_table(rows):
         pick = r.get("pick") or ""
         tv = r.get("tv") or ""
         final = r.get("final") or ""
-        pick_cell = f"{pick} {final}".strip() if final else pick
+        final_winner = r.get("final_winner") or pick
+        pick_cell = f"{final_winner} {final}".strip() if final else pick
         meta = " · ".join(x for x in (
-            f"Final {pick} {final}" if final else (f"Pick {pick}" if pick else ""),
+            f"Final {final_winner} {final}" if final else (f"Pick {pick}" if pick else ""),
             tv,
         ) if x)
         row_cls = ' class="is-final"' if final else ""
@@ -3727,8 +3728,9 @@ def main():
             f"A pick for every Week 2 game, mashed from {len(W2_MATCH_SOURCES)} published sources: "
             "Sporting News, CBS Sports, NFL Spin Zone, Sports Brackets, Sportsnaut, The Game Haus, "
             "the market favorite, Week 1 winners, and a short post-opener power board. Unpicked games "
-            "on a board are skipped. The pick is the side with more votes. Thursday already finished: "
-            "Buffalo 41, Detroit 31. The essay under the table walks the slate in kickoff order."
+            "on a board are skipped. The pick is the side with more votes. Fifteen games already "
+            "have a final. The mash is 10-5 on those. Monday in Los Angeles is still live. The essay "
+            "under the table walks the slate in kickoff order."
         ),
         extra=predictions_article_html(),
         extra_jsonld=PREDICTION_LD,

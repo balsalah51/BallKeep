@@ -724,6 +724,7 @@ body.opening-page .opening {
 }
 .score-card.is-final {
   border-top: 3px solid var(--red);
+  background: linear-gradient(180deg, #fff7f8 0%, #fff 62%);
 }
 .score-card.is-final .result { color: var(--red-dark); }
 .score-card .when {

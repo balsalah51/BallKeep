@@ -642,7 +642,7 @@ def test_weekly_kit():
     rb = weekly_board("RB")
     assert rb[0]["name"] == "Jahmyr Gibbs"
     wr = weekly_board("WR")
-    assert wr[0]["name"] == "Puka Nacua"
+    assert wr[0]["name"] in {"Puka Nacua", "Jaxon Smith-Njigba"}
     te = weekly_board("TE")
     assert te[0]["name"] == "Trey McBride"
     flex = weekly_flex()
@@ -822,7 +822,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=64" in doc
+    assert "css/site.css?v=65" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 

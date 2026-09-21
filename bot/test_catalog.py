@@ -497,8 +497,12 @@ def main():
     assert 'class="c-pick"' in w2_m_html
     assert "<strong>BUF 41-31</strong>" in w2_m_html
     assert "Final BUF 41-31" in w2_m_html
+    assert "<strong>CAR 34-3</strong>" in w2_m_html
+    assert "<strong>SF 35-13</strong>" in w2_m_html
+    assert "<strong>KC 33-30 OT</strong>" in w2_m_html
     assert "Sixteen games, a new Highmark" in w2_m_html
     assert "BUF 41, DET 31" in w2_m_html
+    assert "Sunday paid ten" in w2_m_html
     assert "Pick: SF" in w2_m_html
     assert "Pick: KC" in w2_m_html
     assert "Pick: LAR" in w2_m_html

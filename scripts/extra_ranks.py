@@ -50,18 +50,18 @@ def load_rank_map(stem: str) -> dict[str, int]:
     return {n: i for i, n in enumerate(data, 1) if isinstance(n, str) and n.strip()}
 
 
-# ESPN Karabell Superflex PPR, refreshed Sep 9 2026
+# ESPN Karabell Superflex PPR, refreshed Sep 21 2026
 # https://www.espn.com/fantasy/football/story/_/id/47539664
 ESPN_KARABELL_SF = load_names("karabell-sf")
 
-# ESPN Karabell Flex (no QB), refreshed Sep 9 2026
+# ESPN Karabell Flex (no QB), refreshed Sep 21 2026
 ESPN_KARABELL_FLEX = load_names("karabell-flex")
 
-# Draft Sharks Dynasty Superflex public top 25, refreshed Sep 19 2026
+# Draft Sharks Dynasty Superflex public top 25, refreshed Sep 21 2026
 # https://www.draftsharks.com/dynasty-rankings/superflex
 DRAFT_SHARKS_SF = load_names("ds-sf")
 
-# Mike Clay ESPN dynasty top 240, Aug 31 2026
+# Mike Clay ESPN dynasty top 240, refreshed Sep 21 2026
 # https://www.espn.com/fantasy/football/story/_/id/15698900
 MIKE_CLAY_DYNASTY = load_names("clay-dynasty")
 
