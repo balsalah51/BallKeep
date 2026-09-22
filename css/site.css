@@ -285,7 +285,7 @@ tr:hover td { background: rgba(200,16,46,0.04); }
 .trade-verdict.b { border-color: var(--red); }
 .trade-verdict.fair { border-color: #157a3a; }
 .trade-verdict h3 { margin: 0; font-size: 28px; }
-.pos { display: inline-block; min-width: 42px; padding: 2px 7px; border-radius: 999px; background: var(--powder-deep); font-weight: 800; font-size: 12px; }
+.pos { display: inline-block; min-width: 52px; padding: 2px 7px; border-radius: 999px; background: var(--powder-deep); font-weight: 800; font-size: 12px; letter-spacing: 0.01em; text-align: center; }
 .pos.QB { background: #f7d5db; color: #c8102e; }
 .pos.RB { background: #d4eaf6; color: #17688a; }
 .pos.WR { background: #dce3ec; color: #102033; }

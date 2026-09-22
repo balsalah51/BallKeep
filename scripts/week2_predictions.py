@@ -5,13 +5,12 @@ from seo import article_jsonld
 
 HEADLINE = "Sixteen games, a new Highmark, and a card that already has a memory."
 DEK = (
-    "Sunday wrote fifteen scores onto a card that already had a Thursday. "
-    "The mash went ten and five on the finished games. Kansas City needed "
-    "overtime. Carolina hung 34 in Atlanta. Monday in Los Angeles is the "
-    "last line left."
+    "Monday wrote the last score. The Rams hung 28-6 in Inglewood. "
+    "The mash finished eleven and five. Carolina hung 34 in Atlanta. "
+    "Kansas City needed overtime. Stafford threw four."
 )
 PUBLISHED = "2026-09-16T14:00:00Z"
-MODIFIED = "2026-09-21T18:00:00Z"
+MODIFIED = "2026-09-22T18:00:00Z"
 OG_IMAGE = "img/players/josh-allen.png"
 
 PREDICTION_LD = [
@@ -56,9 +55,9 @@ def predictions_teaser():
     <a class="opening-teaser recap-teaser" href="week2-matchups.html">
       <img src="{OG_IMAGE}" alt="Josh Allen" width="160" height="160" />
       <div>
-        <p class="k">Week 2 · Monday, Sep 21</p>
-        <h2>Bills over Lions. Sunday paid ten.</h2>
-        <p>Carolina 34-3. San Francisco 35-13. Kansas City in overtime. The mash is 10-5 with the Rams still live Monday night.</p>
+        <p class="k">Week 2 · Tuesday, Sep 22</p>
+        <h2>Bills over Lions. Monday paid eleven.</h2>
+        <p>Rams 28-6. Carolina 34-3. San Francisco 35-13. Kansas City in overtime. The mash closed 11-5.</p>
       </div>
     </a>
     """
@@ -67,16 +66,16 @@ def predictions_teaser():
 def predictions_article_html():
     return f"""
     <article class="opening recap">
-      <p class="opening-kicker">Week 2 · Sunday receipts · Monday, September 21, 2026</p>
+      <p class="opening-kicker">Week 2 · Sixteen receipts · Tuesday, September 22, 2026</p>
       <h2 class="pred-hed">{HEADLINE}</h2>
       <p class="dek">{DEK}</p>
-      <p class="byline">Ball Keep · Filed Wednesday. Sunday finals added Monday morning.</p>
+      <p class="byline">Ball Keep · Filed Wednesday. Monday final added Tuesday morning.</p>
 
       <div class="score-row recap-scores">
         <div class="score-card is-final"><p class="when">Thu · Final</p><p class="result">BUF 41, DET 31</p><p class="meta">Allen 5 TD · Cook 134 rush</p></div>
         <div class="score-card is-final"><p class="when">Sun · FOX</p><p class="result">SF 35, MIA 13</p><p class="meta">Purdy 20 of 22 · CMC 100th TD</p></div>
         <div class="score-card is-final"><p class="when">Sun · NBC</p><p class="result">KC 33, IND 30 OT</p><p class="meta">Mahomes 382 · Walker 117 · Butker 40</p></div>
-        <div class="score-card"><p class="when">Mon · ESPN</p><p class="result">Pick: LAR</p><p class="meta">NYG at LAR · LAR -9.5</p></div>
+        <div class="score-card is-final"><p class="when">Mon · ESPN</p><p class="result">LAR 28, NYG 6</p><p class="meta">Stafford 4 TD · Adams 8-195-2</p></div>
       </div>
 
       <div class="photo-row" aria-label="Faces from the Week 2 card">
@@ -89,7 +88,7 @@ def predictions_article_html():
         {_shot("drake-maye", "jpg", "Drake Maye")}
         {_shot("christian-mccaffrey", "png", "Christian McCaffrey")}
       </div>
-      <p class="photo-cap">Allen, Gibbs, Purdy, Hurts, Mahomes, Williams, Maye, McCaffrey. Thursday and Sunday already wrote next to most of these names. Monday still has Stafford and Dart.</p>
+      <p class="photo-cap">Allen, Gibbs, Purdy, Hurts, Mahomes, Williams, Maye, McCaffrey. Thursday, Sunday, and Monday all have a number now.</p>
 
       <p class="lede">A prediction page that only prints a table starts to feel like a filing cabinet. A prediction page that also prints the argument starts to feel like a room you can sit in on a Wednesday. The mash above already voted. What follows is the walk: sixteen games, kickoff order, published cards from Sporting News, CBS Sports, Sports Brackets, Sportsnaut, the market, and the tape we just watched. Every game has a side. Copy the winners at the bottom of the table if you want the list without the sentences.</p>
 
@@ -179,17 +178,18 @@ def predictions_article_html():
 
       <h2>Monday: the Giants at the Rams. Pick: LAR</h2>
       <p>Los Angeles scored seven in Melbourne and still opened as a touchdown favorite at home. Breech almost talked himself into the Giants and then printed the Rams 27-24 anyway. Bender has them 28-21. The mash is 3-1 Los Angeles among the full cards, plus the market and the power board. Myles Garrett is on injured reserve. Aaron Donald's first snap since 2023 is a Wednesday question. Jaxson Dart and Cam Skattebo already ran for 135. Matthew Stafford gets a chance to look like himself in a building that speaks his language. I am taking the Rams and telling every room that sat Puka Nacua after Australia to put him back in. Hold Kyren Williams. Hold Davante Adams. Start Wan'Dale Robinson if you added him. The Giants can keep it to a field goal. The Rams still walk out 1-1.</p>
+      <p>Monday receipt: Los Angeles 28, New York 6. Stafford went 22 of 31 for 327 and four scores, two of them to Davante Adams, one to Kyren Williams, one to Terrance Ferguson. Adams caught eight for 195. Dart left with a left knee on the first series. Jameis Winston threw 11 of 27. Puka Nacua was inactive. The mash took the home side on Wednesday and the home side cashed by 22. Both clubs are 1-1.</p>
 
       <figure>
         <div class="photo-pair">
           {_shot("matthew-stafford", "png", "Matthew Stafford")}
           {_shot("jaxson-dart", "jpg", "Jaxson Dart")}
         </div>
-        <figcaption>Stafford after Melbourne. Dart after a Sunday-night win in Dallas. Monday night in Los Angeles is the last line on the card.</figcaption>
+        <figcaption>Stafford after Melbourne, then four scores on Monday. Dart after a Sunday-night win in Dallas, then a left knee on the first series.</figcaption>
       </figure>
 
       <h2>What the rooms should do with the card</h2>
-      <p>Copy the published picks in kickoff order if you came here for the list: BUF, ATL, BAL, CHI, CIN, NE, GB, TB, PHI, DEN, LAC, SEA, DAL, SF, KC, LAR. Thursday paid. Sunday paid ten and missed five. Monday is still Los Angeles.</p>
+      <p>Copy the published picks in kickoff order if you came here for the list: BUF, ATL, BAL, CHI, CIN, NE, GB, TB, PHI, DEN, LAC, SEA, DAL, SF, KC, LAR. Thursday paid. Sunday paid ten and missed five. Monday paid. The mash closed 11-5.</p>
       <p>The <a href="waiver.html">Week 2 waiver board</a> still opens with Jalen Coker, and Coker just played 76 percent of the snaps in a 34-3 win. Kaelon Black is the back. Tyler Shough just beat Baltimore. Michael Mayer is the tight end if Brock Bowers sits. Spend the leftover FAAB on the names Sunday actually moved.</p>
       <p>The <a href="week2-dst.html">Week 2 DST board</a> leaned San Francisco, Philadelphia, Tampa Bay, and Seattle. San Francisco, Philadelphia, and Seattle cashed. Tampa Bay left the points on the grass. The <a href="week2-kickers.html">kicker board</a> still loves Brandon Aubrey. The <a href="weekly.html">weekly skill boards</a> rebuilt this morning from FantasyPros ECR dated September 20, plus RotoWire, 4for4, and the rest of the kit.</p>
 
@@ -211,12 +211,12 @@ def predictions_article_html():
           <li>DAL over WAS. Final 37-20. Paid.</li>
           <li>SF over MIA. Final 35-13. Paid.</li>
           <li>KC over IND. Final 33-30 OT. Paid.</li>
-          <li>LAR over NYG. Monday night. Still live.</li>
+          <li>LAR over NYG. Final 28-6. Paid.</li>
         </ul>
       </div>
 
       <h2>A last look, because a card this long deserves one</h2>
-      <p>I keep a private list of images from a week that now has fifteen receipts. Allen pointing in a building that still smelled like paint, and that picture has a 41 next to it. Young in Atlanta, 287 and three, with Waller twice. Purdy almost perfect in Santa Clara. Lock throwing three on the road. Mahomes and Walker asking Butker to finish an overtime. Maye winning ugly at home. Williams leaving Chicago in the rain. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. Spend both before Monday kickoff, then spend the wire on the names Sunday actually moved.</p>
-      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card, Sep 16), John Breech at CBS Sports (Sep 15), Sports Brackets, Sportsnaut, NFL Spin Zone, The Game Haus, the published FanDuel and CBS SportsLine numbers, a Week 1 winners board, and a short post-opener power card. Sunday and Thursday finals from the published boxes. Mash on the finished card: 10-5. Waiver names from RotoBaller, SI OnSI, ESPN, FantasyPros, RotoWire, and PFF. Scores from the opener sit on <a href="the-recap.html">The Recap</a>. Monday still live: LAR over NYG.</p>
+      <p>I keep a private list of images from a week that now has sixteen receipts. Allen pointing in a building that still smelled like paint, and that picture has a 41 next to it. Young in Atlanta, 287 and three, with Waller twice. Purdy almost perfect in Santa Clara. Lock throwing three on the road. Mahomes and Walker asking Butker to finish an overtime. Maye winning ugly at home. Williams leaving Chicago in the rain. Stafford finding Adams twice on a Monday that finally looked like a favorite. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. Spend both, then spend the wire on the names the card actually moved.</p>
+      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card, Sep 16), John Breech at CBS Sports (Sep 15), Sports Brackets, Sportsnaut, NFL Spin Zone, The Game Haus, the published FanDuel and CBS SportsLine numbers, a Week 1 winners board, and a short post-opener power card. Thursday, Sunday, and Monday finals from the published boxes. Mash on the finished card: 11-5. Waiver names from RotoBaller, SI OnSI, ESPN, FantasyPros, RotoWire, and PFF. Scores from the opener sit on <a href="the-recap.html">The Recap</a>. The full Week 2 tape sits on <a href="week2-tape.html">The Second Sunday</a>.</p>
     </article>
     """

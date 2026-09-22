@@ -278,7 +278,7 @@ MATCH_SOURCES = [
 ]
 
 
-# Sunday and Thursday receipts. Monday stays open.
+# Sixteen receipts. Monday closed in Inglewood.
 WEEK2_FINALS = {
     "DET@BUF": {"score": "41-31", "winner": "BUF", "day": "Thu Final"},
     "CAR@ATL": {"score": "34-3", "winner": "CAR", "day": "Sun Final"},
@@ -295,6 +295,7 @@ WEEK2_FINALS = {
     "WAS@DAL": {"score": "37-20", "winner": "DAL", "day": "Sun Final"},
     "MIA@SF": {"score": "35-13", "winner": "SF", "day": "Sun Final"},
     "IND@KC": {"score": "33-30 OT", "winner": "KC", "day": "Sun Final"},
+    "NYG@LAR": {"score": "28-6", "winner": "LAR", "day": "Mon Final"},
 }
 
 
