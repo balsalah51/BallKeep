@@ -1224,7 +1224,7 @@ FB_SEO = {
     ),
     "weekly.html": (
         "Week 2 Fantasy Football Rankings 2026 | Ball Keep",
-        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Sep 20), RotoWire, and 4for4.",
+        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Sep 22), RotoWire, and 4for4.",
         "img/logo.jpg",
     ),
     "the-recap.html": (

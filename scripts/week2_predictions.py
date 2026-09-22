@@ -191,7 +191,7 @@ def predictions_article_html():
       <h2>What the rooms should do with the card</h2>
       <p>Copy the published picks in kickoff order if you came here for the list: BUF, ATL, BAL, CHI, CIN, NE, GB, TB, PHI, DEN, LAC, SEA, DAL, SF, KC, LAR. Thursday paid. Sunday paid ten and missed five. Monday paid. The mash closed 11-5.</p>
       <p>The <a href="waiver.html">Week 2 waiver board</a> still opens with Jalen Coker, and Coker just played 76 percent of the snaps in a 34-3 win. Kaelon Black is the back. Tyler Shough just beat Baltimore. Michael Mayer is the tight end if Brock Bowers sits. Spend the leftover FAAB on the names Sunday actually moved.</p>
-      <p>The <a href="week2-dst.html">Week 2 DST board</a> leaned San Francisco, Philadelphia, Tampa Bay, and Seattle. San Francisco, Philadelphia, and Seattle cashed. Tampa Bay left the points on the grass. The <a href="week2-kickers.html">kicker board</a> still loves Brandon Aubrey. The <a href="weekly.html">weekly skill boards</a> rebuilt this morning from FantasyPros ECR dated September 20, plus RotoWire, 4for4, and the rest of the kit.</p>
+      <p>The <a href="week2-dst.html">Week 2 DST board</a> leaned San Francisco, Philadelphia, Tampa Bay, and Seattle. San Francisco, Philadelphia, and Seattle cashed. Tampa Bay left the points on the grass. The <a href="week2-kickers.html">kicker board</a> still loves Brandon Aubrey. The <a href="weekly.html">weekly skill boards</a> rebuilt this morning from FantasyPros ECR dated September 22, plus RotoWire, 4for4, and the rest of the kit.</p>
 
       <div class="ramif">
         <h3>The sixteen, one more time</h3>
