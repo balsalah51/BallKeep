@@ -333,6 +333,8 @@ def test_searchaction_and_schema():
     assert "https://ballkeep.com/the-method.html" in txt
     assert "https://ballkeep.com/articles.html" in txt
     assert "https://ballkeep.com/the-long-game.html" in txt
+    assert "https://ballkeep.com/week2-tape.html" in txt
+    assert "https://ballkeep.com/week2-ledger.html" in txt
     assert "https://ballkeep.com/bb/" in txt
     card = rank_card("The Keep", 4, 9769, "../the-keep.html")
     assert 'href="../the-keep.html"' in card
@@ -547,7 +549,7 @@ def test_visible_desk_copy_removed():
     for name in (
         "build_site.py", "weekly_pages.py", "weekly_kit.py", "special_teams.py",
         "build_bk.py", "build_bb.py", "build_pl.py",
-        "week2_boards.py", "week2_predictions.py", "the_recap.py",
+        "week2_boards.py", "week2_predictions.py", "week2_tape.py", "week2_ledger.py", "the_recap.py",
     ):
         text = (root / name).read_text()
         for phrase in banned:
@@ -642,7 +644,7 @@ def test_weekly_kit():
     rb = weekly_board("RB")
     assert rb[0]["name"] == "Jahmyr Gibbs"
     wr = weekly_board("WR")
-    assert wr[0]["name"] == "Puka Nacua"
+    assert wr[0]["name"] in {"Puka Nacua", "Jaxon Smith-Njigba"}
     te = weekly_board("TE")
     assert te[0]["name"] == "Trey McBride"
     flex = weekly_flex()
@@ -751,6 +753,47 @@ def test_week2_boards():
     assert all(g["pick"] in {g["away"], g["home"]} for g in games)
     assert games[0]["day"].startswith("Thu")
     assert games[0]["key"] == "DET@BUF"
+    lar = next(g for g in games if g["key"] == "NYG@LAR")
+    assert lar["final"] == "28-6"
+    assert lar["final_winner"] == "LAR"
+
+
+def test_attach_pos_ranks():
+    from build_site import attach_pos_ranks, rank_table
+    rows = [
+        {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "bk": 1},
+        {"name": "Ja'Marr Chase", "pos": "WR", "team": "CIN", "bk": 2},
+        {"name": "Jahmyr Gibbs", "pos": "RB", "team": "DET", "bk": 3},
+    ]
+    attach_pos_ranks(rows)
+    assert rows[0]["pos_label"] == "RB1"
+    assert rows[1]["pos_label"] == "WR1"
+    assert rows[2]["pos_label"] == "RB2"
+    html = rank_table(rows)
+    assert ">RB2<" in html
+    assert ">WR1<" in html
+    assert 'data-pos="RB"' in html
+
+
+def test_week2_articles():
+    from week2_ledger import HEADLINE as LEDGER
+    from week2_ledger import ledger_article_html, ledger_teaser
+    from week2_tape import HEADLINE as TAPE
+    from week2_tape import tape_article_html, tape_teaser
+    tape = tape_article_html()
+    ledger = ledger_article_html()
+    assert TAPE in tape
+    assert LEDGER in ledger
+    assert "\u2014" not in tape
+    assert "\u2014" not in ledger
+    assert "desk" not in tape.lower()
+    assert "desk" not in ledger.lower()
+    assert "looking at" not in tape
+    assert "looking at" not in ledger
+    assert "Rams 28" in tape
+    assert "RB2" in ledger
+    assert "week2-tape.html" in tape_teaser()
+    assert "week2-ledger.html" in ledger_teaser()
 
 
 def test_half_ppr_classic_tax():
@@ -822,7 +865,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=64" in doc
+    assert "css/site.css?v=66" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 

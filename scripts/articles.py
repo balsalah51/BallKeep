@@ -5,8 +5,34 @@ from seo import also_on_desk, breadcrumb_jsonld, breadcrumbs, esc
 from the_long_game import DEK as LONG_DEK
 from the_long_game import HEADLINE as LONG_HEAD
 from the_long_game import write_the_long_game
+from week2_ledger import DEK as LEDGER_DEK
+from week2_ledger import HEADLINE as LEDGER_HEAD
+from week2_ledger import write_week2_ledger
+from week2_tape import DEK as TAPE_DEK
+from week2_tape import HEADLINE as TAPE_HEAD
+from week2_tape import write_week2_tape
 
 ARTICLES = [
+    (
+        "week2-tape.html",
+        "The Second Sunday",
+        "Tuesday, Sep 22",
+        TAPE_HEAD,
+        TAPE_DEK,
+        "img/players/matthew-stafford.png",
+        "Matthew Stafford",
+        True,
+    ),
+    (
+        "week2-ledger.html",
+        "The Ledger",
+        "Tuesday, Sep 22",
+        LEDGER_HEAD,
+        LEDGER_DEK,
+        "img/players/jamarr-chase.jpg",
+        "Ja'Marr Chase",
+        False,
+    ),
     (
         "the-long-game.html",
         "The Long Game",
@@ -15,7 +41,7 @@ ARTICLES = [
         LONG_DEK,
         "img/players/josh-allen.png",
         "Josh Allen",
-        True,
+        False,
     ),
     (
         "the-recap.html",
@@ -30,9 +56,9 @@ ARTICLES = [
     (
         "week2-matchups.html",
         "Week 2 Predictions",
-        "Saturday, Sep 19",
-        "Bills over Lions, 41-31. Fifteen still live.",
-        "Thursday paid the mash. Sunday still has a published winner on every line.",
+        "Tuesday, Sep 22",
+        "Bills over Lions. Monday paid eleven.",
+        "Rams 28-6. Carolina 34-3. San Francisco 35-13. Kansas City in overtime. Mash 11-5.",
         "img/players/josh-allen.png",
         "Josh Allen",
         False,
@@ -85,6 +111,8 @@ def articles_hub_html() -> str:
 
 def write_articles(b):
     write_the_long_game(b)
+    write_week2_tape(b)
+    write_week2_ledger(b)
     extra = also_on_desk(b.FB_ALSO.get("articles.html") or [])
     b.write(
         "articles.html",

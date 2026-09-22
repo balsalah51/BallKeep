@@ -218,6 +218,7 @@ def main():
     assert "Superflex" in keep_title, keep_title
     assert 'property="og:title"' in keep_html
     assert "bar-chart" in keep_html
+    assert ">QB2<" in keep_html or ">RB2<" in keep_html
     generic = "Ball Keep dynasty and redraft rankings, trade calculators, schedules, and market notes."
     assert generic not in keep_html
 
@@ -380,6 +381,9 @@ def main():
     assert "\u2014" not in hc
     assert 'class="hc-cold"' in hc
     assert 'class="tile cold"' in hc or "tile cold" in hc
+    assert "Jalen Coker" in hc
+    assert "Jonah Coleman" in hc
+    assert "After Week 2" in hc
     assert 'href="privacy.html"' in home
     for x_path in ("the-x.html", "bb/the-x.html", "bk/the-x.html", "pl/the-x.html"):
         x_html = html_of(x_path)
@@ -410,8 +414,22 @@ def main():
     assert "<h1>The long reads.</h1>" in articles
     assert "the-long-game.html" in articles
     assert "The Long Game" in articles
+    assert "week2-tape.html" in articles
+    assert "The Second Sunday" in articles
+    assert "week2-ledger.html" in articles
+    assert "The Ledger" in articles
     assert "\u2014" not in articles
     assert "desk" not in articles.lower()
+    tape = html_of("week2-tape.html")
+    assert "Sixteen more scores, and a Monday that finally looked like a favorite." in tape
+    assert "Rams 28" in tape
+    assert "\u2014" not in tape
+    assert "desk" not in tape.lower()
+    ledger = html_of("week2-ledger.html")
+    assert "Write RB2 on the card" in ledger
+    assert "RB2" in ledger
+    assert "\u2014" not in ledger
+    assert "desk" not in ledger.lower()
     long_game = html_of("the-long-game.html")
     assert "Hold the years in your hands when the week is shouting." in long_game
     assert "Weather and climate" in long_game
@@ -458,6 +476,8 @@ def main():
     assert "40 boards" in board_html
     assert "Derek Brown" in board_html
     assert "4for4" in board_html
+    assert ">RB2<" in board_html
+    assert ">WR1<" in board_html or ">WR2<" in board_html
     dst_html = html_of("defenses.html")
     assert "<h1>Top Defenses</h1>" in dst_html
     assert "Houston Texans" in dst_html
@@ -497,8 +517,14 @@ def main():
     assert 'class="c-pick"' in w2_m_html
     assert "<strong>BUF 41-31</strong>" in w2_m_html
     assert "Final BUF 41-31" in w2_m_html
+    assert "<strong>CAR 34-3</strong>" in w2_m_html
+    assert "<strong>SF 35-13</strong>" in w2_m_html
+    assert "<strong>KC 33-30 OT</strong>" in w2_m_html
+    assert "<strong>LAR 28-6</strong>" in w2_m_html
     assert "Sixteen games, a new Highmark" in w2_m_html
     assert "BUF 41, DET 31" in w2_m_html
+    assert "Monday paid" in w2_m_html
+    assert "11-5" in w2_m_html
     assert "Pick: SF" in w2_m_html
     assert "Pick: KC" in w2_m_html
     assert "Pick: LAR" in w2_m_html

@@ -1,6 +1,6 @@
 {
   "format": "redraft PPR",
-  "updated": "September 19, 2026",
+  "updated": "September 22, 2026",
   "players": [
     {
       "bk": 1,
@@ -13,7 +13,9 @@
       "n": 40,
       "avg": 2.61,
       "value": 12000,
-      "age": 24
+      "age": 24,
+      "pos_rank": 1,
+      "pos_label": "RB1"
     },
     {
       "bk": 2,
@@ -26,7 +28,9 @@
       "n": 40,
       "avg": 2.64,
       "value": 10873,
-      "age": 26
+      "age": 26,
+      "pos_rank": 1,
+      "pos_label": "WR1"
     },
     {
       "bk": 3,
@@ -37,9 +41,11 @@
       "fp": 3,
       "karabell": 2,
       "n": 40,
-      "avg": 3.21,
+      "avg": 3.22,
       "value": 10228,
-      "age": 25
+      "age": 25,
+      "pos_rank": 2,
+      "pos_label": "WR2"
     },
     {
       "bk": 4,
@@ -50,9 +56,11 @@
       "fp": 4,
       "karabell": 4,
       "n": 40,
-      "avg": 3.82,
+      "avg": 3.81,
       "value": 9769,
-      "age": 24
+      "age": 24,
+      "pos_rank": 2,
+      "pos_label": "RB2"
     },
     {
       "bk": 5,
@@ -65,7 +73,9 @@
       "n": 40,
       "avg": 5.68,
       "value": 9409,
-      "age": 26
+      "age": 26,
+      "pos_rank": 3,
+      "pos_label": "WR3"
     },
     {
       "bk": 6,
@@ -76,9 +86,11 @@
       "fp": 6,
       "karabell": 5,
       "n": 40,
-      "avg": 5.78,
+      "avg": 5.81,
       "value": 9111,
-      "age": 24
+      "age": 24,
+      "pos_rank": 4,
+      "pos_label": "WR4"
     },
     {
       "bk": 7,
@@ -89,9 +101,11 @@
       "fp": 7,
       "karabell": 14,
       "n": 40,
-      "avg": 7.84,
+      "avg": 7.85,
       "value": 8855,
-      "age": 30
+      "age": 30,
+      "pos_rank": 3,
+      "pos_label": "RB3"
     },
     {
       "bk": 8,
@@ -104,7 +118,9 @@
       "n": 40,
       "avg": 9.04,
       "value": 8629,
-      "age": 27
+      "age": 27,
+      "pos_rank": 4,
+      "pos_label": "RB4"
     },
     {
       "bk": 9,
@@ -115,9 +131,11 @@
       "fp": 8,
       "karabell": 10,
       "n": 40,
-      "avg": 9.08,
+      "avg": 9.11,
       "value": 8426,
-      "age": 27
+      "age": 27,
+      "pos_rank": 5,
+      "pos_label": "WR5"
     },
     {
       "bk": 10,
@@ -130,7 +148,9 @@
       "n": 40,
       "avg": 9.71,
       "value": 8241,
-      "age": 27
+      "age": 27,
+      "pos_rank": 6,
+      "pos_label": "WR6"
     },
     {
       "bk": 11,
@@ -138,15 +158,32 @@
       "pos": "RB",
       "team": "BUF",
       "yates": 10,
-      "fp": 14,
+      "fp": 16,
       "karabell": 11,
       "n": 40,
-      "avg": 11.98,
+      "avg": 13.33,
       "value": 8070,
-      "age": 26
+      "age": 26,
+      "pos_rank": 5,
+      "pos_label": "RB5"
     },
     {
       "bk": 12,
+      "name": "Chase Brown",
+      "pos": "RB",
+      "team": "CIN",
+      "yates": 14,
+      "fp": 14,
+      "karabell": 13,
+      "n": 40,
+      "avg": 13.35,
+      "value": 7912,
+      "age": 26,
+      "pos_rank": 6,
+      "pos_label": "RB6"
+    },
+    {
+      "bk": 13,
       "name": "Drake London",
       "pos": "WR",
       "team": "ATL",
@@ -154,22 +191,11 @@
       "fp": 12,
       "karabell": 17,
       "n": 40,
-      "avg": 14.03,
-      "value": 7912,
-      "age": 25
-    },
-    {
-      "bk": 13,
-      "name": "Chase Brown",
-      "pos": "RB",
-      "team": "CIN",
-      "yates": 14,
-      "fp": 16,
-      "karabell": 13,
-      "n": 40,
-      "avg": 14.61,
+      "avg": 14.0,
       "value": 7764,
-      "age": 26
+      "age": 25,
+      "pos_rank": 7,
+      "pos_label": "WR7"
     },
     {
       "bk": 14,
@@ -180,9 +206,11 @@
       "fp": 19,
       "karabell": 8,
       "n": 40,
-      "avg": 15.66,
+      "avg": 15.62,
       "value": 7624,
-      "age": 24
+      "age": 24,
+      "pos_rank": 7,
+      "pos_label": "RB7"
     },
     {
       "bk": 15,
@@ -193,9 +221,11 @@
       "fp": 17,
       "karabell": 15,
       "n": 40,
-      "avg": 17.12,
+      "avg": 17.08,
       "value": 7492,
-      "age": 26
+      "age": 26,
+      "pos_rank": 1,
+      "pos_label": "TE1"
     },
     {
       "bk": 16,
@@ -203,12 +233,14 @@
       "pos": "RB",
       "team": "KC",
       "yates": 15,
-      "fp": 24,
+      "fp": 23,
       "karabell": 29,
       "n": 39,
-      "avg": 22.82,
+      "avg": 22.12,
       "value": 7367,
-      "age": 25
+      "age": 25,
+      "pos_rank": 8,
+      "pos_label": "RB8"
     },
     {
       "bk": 17,
@@ -219,9 +251,11 @@
       "fp": 15,
       "karabell": 19,
       "n": 40,
-      "avg": 18.42,
+      "avg": 18.41,
       "value": 7247,
-      "age": 26
+      "age": 26,
+      "pos_rank": 8,
+      "pos_label": "WR8"
     },
     {
       "bk": 18,
@@ -232,9 +266,11 @@
       "fp": 13,
       "karabell": 18,
       "n": 40,
-      "avg": 18.79,
+      "avg": 18.75,
       "value": 7132,
-      "age": 27
+      "age": 27,
+      "pos_rank": 9,
+      "pos_label": "WR9"
     },
     {
       "bk": 19,
@@ -245,9 +281,11 @@
       "fp": 20,
       "karabell": 20,
       "n": 40,
-      "avg": 19.73,
+      "avg": 19.77,
       "value": 7023,
-      "age": 29
+      "age": 29,
+      "pos_rank": 9,
+      "pos_label": "RB9"
     },
     {
       "bk": 20,
@@ -257,10 +295,12 @@
       "yates": 29,
       "fp": 18,
       "karabell": 23,
-      "n": 40,
-      "avg": 21.26,
+      "n": 39,
+      "avg": 21.19,
       "value": 6917,
-      "age": 25
+      "age": 25,
+      "pos_rank": 10,
+      "pos_label": "WR10"
     },
     {
       "bk": 21,
@@ -273,7 +313,9 @@
       "n": 39,
       "avg": 15.78,
       "value": 6815,
-      "age": 29
+      "age": 29,
+      "pos_rank": 11,
+      "pos_label": "WR11"
     },
     {
       "bk": 22,
@@ -286,7 +328,9 @@
       "n": 39,
       "avg": 23.32,
       "value": 6717,
-      "age": 23
+      "age": 23,
+      "pos_rank": 10,
+      "pos_label": "RB10"
     },
     {
       "bk": 23,
@@ -297,9 +341,11 @@
       "fp": 32,
       "karabell": 12,
       "n": 40,
-      "avg": 24.69,
+      "avg": 24.68,
       "value": 6621,
-      "age": 32
+      "age": 32,
+      "pos_rank": 11,
+      "pos_label": "RB11"
     },
     {
       "bk": 24,
@@ -307,12 +353,14 @@
       "pos": "QB",
       "team": "BUF",
       "yates": 28,
-      "fp": 23,
+      "fp": 24,
       "karabell": "-",
       "n": 39,
-      "avg": 24.75,
+      "avg": 25.43,
       "value": 6529,
-      "age": 30
+      "age": 30,
+      "pos_rank": 1,
+      "pos_label": "QB1"
     },
     {
       "bk": 25,
@@ -325,7 +373,9 @@
       "n": 40,
       "avg": 26.1,
       "value": 6440,
-      "age": 22
+      "age": 22,
+      "pos_rank": 12,
+      "pos_label": "RB12"
     },
     {
       "bk": 26,
@@ -338,7 +388,9 @@
       "n": 39,
       "avg": 26.71,
       "value": 6353,
-      "age": 26
+      "age": 26,
+      "pos_rank": 12,
+      "pos_label": "WR12"
     },
     {
       "bk": 27,
@@ -349,25 +401,14 @@
       "fp": 35,
       "karabell": 16,
       "n": 40,
-      "avg": 26.8,
+      "avg": 26.77,
       "value": 6268,
-      "age": 23
+      "age": 23,
+      "pos_rank": 2,
+      "pos_label": "TE2"
     },
     {
       "bk": 28,
-      "name": "Malik Nabers",
-      "pos": "WR",
-      "team": "NYG",
-      "yates": 25,
-      "fp": 22,
-      "karabell": 53,
-      "n": 40,
-      "avg": 27.22,
-      "value": 6186,
-      "age": 23
-    },
-    {
-      "bk": 29,
       "name": "DeVonta Smith",
       "pos": "WR",
       "team": "PHI",
@@ -376,8 +417,25 @@
       "karabell": 32,
       "n": 39,
       "avg": 27.24,
+      "value": 6186,
+      "age": 23,
+      "pos_rank": 13,
+      "pos_label": "WR13"
+    },
+    {
+      "bk": 29,
+      "name": "Malik Nabers",
+      "pos": "WR",
+      "team": "NYG",
+      "yates": 25,
+      "fp": 22,
+      "karabell": 53,
+      "n": 40,
+      "avg": 27.33,
       "value": 6105,
-      "age": 23
+      "age": 23,
+      "pos_rank": 14,
+      "pos_label": "WR14"
     },
     {
       "bk": 30,
@@ -388,9 +446,11 @@
       "fp": 29,
       "karabell": 22,
       "n": 39,
-      "avg": 29.14,
+      "avg": 29.12,
       "value": 6027,
-      "age": 26
+      "age": 26,
+      "pos_rank": 15,
+      "pos_label": "WR15"
     },
     {
       "bk": 31,
@@ -400,10 +460,12 @@
       "yates": 41,
       "fp": 27,
       "karabell": 31,
-      "n": 39,
-      "avg": 30.5,
+      "n": 40,
+      "avg": 30.45,
       "value": 5951,
-      "age": 25
+      "age": 25,
+      "pos_rank": 16,
+      "pos_label": "WR16"
     },
     {
       "bk": 32,
@@ -416,7 +478,9 @@
       "n": 38,
       "avg": 32.42,
       "value": 5876,
-      "age": 29
+      "age": 29,
+      "pos_rank": 2,
+      "pos_label": "QB2"
     },
     {
       "bk": 33,
@@ -429,7 +493,9 @@
       "n": 39,
       "avg": 34.08,
       "value": 5803,
-      "age": 21
+      "age": 21,
+      "pos_rank": 13,
+      "pos_label": "RB13"
     },
     {
       "bk": 34,
@@ -442,7 +508,9 @@
       "n": 39,
       "avg": 34.43,
       "value": 5732,
-      "age": 22
+      "age": 22,
+      "pos_rank": 3,
+      "pos_label": "TE3"
     },
     {
       "bk": 35,
@@ -455,7 +523,9 @@
       "n": 39,
       "avg": 35.36,
       "value": 5662,
-      "age": 26
+      "age": 26,
+      "pos_rank": 14,
+      "pos_label": "RB14"
     },
     {
       "bk": 36,
@@ -468,7 +538,9 @@
       "n": 39,
       "avg": 35.51,
       "value": 5593,
-      "age": 25
+      "age": 25,
+      "pos_rank": 15,
+      "pos_label": "RB15"
     },
     {
       "bk": 37,
@@ -481,7 +553,9 @@
       "n": 39,
       "avg": 36.54,
       "value": 5526,
-      "age": 27
+      "age": 27,
+      "pos_rank": 17,
+      "pos_label": "WR17"
     },
     {
       "bk": 38,
@@ -494,7 +568,9 @@
       "n": 39,
       "avg": 37.74,
       "value": 5460,
-      "age": 23
+      "age": 23,
+      "pos_rank": 18,
+      "pos_label": "WR18"
     },
     {
       "bk": 39,
@@ -507,7 +583,9 @@
       "n": 39,
       "avg": 37.75,
       "value": 5396,
-      "age": 24
+      "age": 24,
+      "pos_rank": 19,
+      "pos_label": "WR19"
     },
     {
       "bk": 40,
@@ -520,7 +598,9 @@
       "n": 39,
       "avg": 38.19,
       "value": 5333,
-      "age": 25
+      "age": 25,
+      "pos_rank": 16,
+      "pos_label": "RB16"
     },
     {
       "bk": 41,
@@ -533,7 +613,9 @@
       "n": 39,
       "avg": 39.74,
       "value": 5271,
-      "age": 23
+      "age": 23,
+      "pos_rank": 20,
+      "pos_label": "WR20"
     },
     {
       "bk": 42,
@@ -546,7 +628,9 @@
       "n": 39,
       "avg": 47.31,
       "value": 5210,
-      "age": 27
+      "age": 27,
+      "pos_rank": 17,
+      "pos_label": "RB17"
     },
     {
       "bk": 43,
@@ -559,7 +643,9 @@
       "n": 39,
       "avg": 40.24,
       "value": 5150,
-      "age": 27
+      "age": 27,
+      "pos_rank": 21,
+      "pos_label": "WR21"
     },
     {
       "bk": 44,
@@ -572,7 +658,9 @@
       "n": 39,
       "avg": 41.76,
       "value": 5091,
-      "age": 27
+      "age": 27,
+      "pos_rank": 18,
+      "pos_label": "RB18"
     },
     {
       "bk": 45,
@@ -585,7 +673,9 @@
       "n": 39,
       "avg": 46.64,
       "value": 5033,
-      "age": 33
+      "age": 33,
+      "pos_rank": 22,
+      "pos_label": "WR22"
     },
     {
       "bk": 46,
@@ -598,7 +688,9 @@
       "n": 38,
       "avg": 39.79,
       "value": 4976,
-      "age": 23
+      "age": 23,
+      "pos_rank": 3,
+      "pos_label": "QB3"
     },
     {
       "bk": 47,
@@ -611,7 +703,9 @@
       "n": 39,
       "avg": 48.06,
       "value": 4920,
-      "age": 30
+      "age": 30,
+      "pos_rank": 23,
+      "pos_label": "WR23"
     },
     {
       "bk": 48,
@@ -624,7 +718,9 @@
       "n": 39,
       "avg": 49.14,
       "value": 4865,
-      "age": 24
+      "age": 24,
+      "pos_rank": 4,
+      "pos_label": "TE4"
     },
     {
       "bk": 49,
@@ -637,23 +733,12 @@
       "n": 38,
       "avg": 51.62,
       "value": 4811,
-      "age": 29
+      "age": 29,
+      "pos_rank": 4,
+      "pos_label": "QB4"
     },
     {
       "bk": 50,
-      "name": "Cam Skattebo",
-      "pos": "RB",
-      "team": "NYG",
-      "yates": 45,
-      "fp": 56,
-      "karabell": 47,
-      "n": 39,
-      "avg": 52.36,
-      "value": 4758,
-      "age": 24
-    },
-    {
-      "bk": 51,
       "name": "Quinshon Judkins",
       "pos": "RB",
       "team": "CLE",
@@ -662,11 +747,13 @@
       "karabell": 43,
       "n": 39,
       "avg": 52.83,
-      "value": 4706,
-      "age": 22
+      "value": 4758,
+      "age": 22,
+      "pos_rank": 19,
+      "pos_label": "RB19"
     },
     {
-      "bk": 52,
+      "bk": 51,
       "name": "DJ Moore",
       "pos": "WR",
       "team": "BUF",
@@ -675,8 +762,25 @@
       "karabell": 52,
       "n": 39,
       "avg": 52.86,
+      "value": 4706,
+      "age": 29,
+      "pos_rank": 24,
+      "pos_label": "WR24"
+    },
+    {
+      "bk": 52,
+      "name": "Cam Skattebo",
+      "pos": "RB",
+      "team": "NYG",
+      "yates": 45,
+      "fp": 57,
+      "karabell": 47,
+      "n": 39,
+      "avg": 53.01,
       "value": 4654,
-      "age": 29
+      "age": 24,
+      "pos_rank": 20,
+      "pos_label": "RB20"
     },
     {
       "bk": 53,
@@ -689,7 +793,9 @@
       "n": 39,
       "avg": 53.14,
       "value": 4603,
-      "age": 24
+      "age": 24,
+      "pos_rank": 21,
+      "pos_label": "RB21"
     },
     {
       "bk": 54,
@@ -702,7 +808,9 @@
       "n": 38,
       "avg": 53.25,
       "value": 4553,
-      "age": 28
+      "age": 28,
+      "pos_rank": 5,
+      "pos_label": "QB5"
     },
     {
       "bk": 55,
@@ -715,7 +823,9 @@
       "n": 39,
       "avg": 53.78,
       "value": 4504,
-      "age": 22
+      "age": 22,
+      "pos_rank": 25,
+      "pos_label": "WR25"
     },
     {
       "bk": 56,
@@ -728,7 +838,9 @@
       "n": 38,
       "avg": 53.83,
       "value": 4455,
-      "age": 25
+      "age": 25,
+      "pos_rank": 6,
+      "pos_label": "QB6"
     },
     {
       "bk": 57,
@@ -741,7 +853,9 @@
       "n": 39,
       "avg": 54.44,
       "value": 4408,
-      "age": 25
+      "age": 25,
+      "pos_rank": 26,
+      "pos_label": "WR26"
     },
     {
       "bk": 58,
@@ -754,7 +868,9 @@
       "n": 39,
       "avg": 56.29,
       "value": 4360,
-      "age": 29
+      "age": 29,
+      "pos_rank": 22,
+      "pos_label": "RB22"
     },
     {
       "bk": 59,
@@ -767,7 +883,9 @@
       "n": 39,
       "avg": 59.17,
       "value": 4314,
-      "age": 22
+      "age": 22,
+      "pos_rank": 23,
+      "pos_label": "RB23"
     },
     {
       "bk": 60,
@@ -780,7 +898,9 @@
       "n": 39,
       "avg": 59.75,
       "value": 4268,
-      "age": 23
+      "age": 23,
+      "pos_rank": 24,
+      "pos_label": "RB24"
     },
     {
       "bk": 61,
@@ -793,10 +913,27 @@
       "n": 39,
       "avg": 62.65,
       "value": 4223,
-      "age": 24
+      "age": 24,
+      "pos_rank": 27,
+      "pos_label": "WR27"
     },
     {
       "bk": 62,
+      "name": "Christian Watson",
+      "pos": "WR",
+      "team": "GB",
+      "yates": 76,
+      "fp": 56,
+      "karabell": 82,
+      "n": 39,
+      "avg": 64.01,
+      "value": 4178,
+      "age": 27,
+      "pos_rank": 28,
+      "pos_label": "WR28"
+    },
+    {
+      "bk": 63,
       "name": "Mike Evans",
       "pos": "WR",
       "team": "SF",
@@ -805,21 +942,10 @@
       "karabell": 54,
       "n": 39,
       "avg": 64.14,
-      "value": 4178,
-      "age": 33
-    },
-    {
-      "bk": 63,
-      "name": "Christian Watson",
-      "pos": "WR",
-      "team": "GB",
-      "yates": 76,
-      "fp": 57,
-      "karabell": 82,
-      "n": 39,
-      "avg": 64.65,
       "value": 4134,
-      "age": 27
+      "age": 33,
+      "pos_rank": 29,
+      "pos_label": "WR29"
     },
     {
       "bk": 64,
@@ -832,7 +958,9 @@
       "n": 39,
       "avg": 64.76,
       "value": 4091,
-      "age": 24
+      "age": 24,
+      "pos_rank": 30,
+      "pos_label": "WR30"
     },
     {
       "bk": 65,
@@ -845,23 +973,12 @@
       "n": 39,
       "avg": 64.82,
       "value": 4048,
-      "age": 28
+      "age": 28,
+      "pos_rank": 25,
+      "pos_label": "RB25"
     },
     {
       "bk": 66,
-      "name": "Harold Fannin",
-      "pos": "TE",
-      "team": "CLE",
-      "yates": 53,
-      "fp": 73,
-      "karabell": 51,
-      "n": 39,
-      "avg": 65.96,
-      "value": 4006,
-      "age": 22
-    },
-    {
-      "bk": 67,
       "name": "Carnell Tate",
       "pos": "WR",
       "team": "TEN",
@@ -869,12 +986,14 @@
       "fp": 67,
       "karabell": 73,
       "n": 39,
-      "avg": 66.39,
-      "value": 3964,
-      "age": 21
+      "avg": 66.38,
+      "value": 4006,
+      "age": 21,
+      "pos_rank": 31,
+      "pos_label": "WR31"
     },
     {
-      "bk": 68,
+      "bk": 67,
       "name": "Marvin Harrison",
       "pos": "WR",
       "team": "ARI",
@@ -883,8 +1002,25 @@
       "karabell": 62,
       "n": 39,
       "avg": 66.49,
+      "value": 3964,
+      "age": 24,
+      "pos_rank": 32,
+      "pos_label": "WR32"
+    },
+    {
+      "bk": 68,
+      "name": "Harold Fannin",
+      "pos": "TE",
+      "team": "CLE",
+      "yates": 53,
+      "fp": 74,
+      "karabell": 51,
+      "n": 39,
+      "avg": 66.6,
       "value": 3923,
-      "age": 24
+      "age": 22,
+      "pos_rank": 5,
+      "pos_label": "TE5"
     },
     {
       "bk": 69,
@@ -897,7 +1033,9 @@
       "n": 38,
       "avg": 66.9,
       "value": 3882,
-      "age": 28
+      "age": 28,
+      "pos_rank": 7,
+      "pos_label": "QB7"
     },
     {
       "bk": 70,
@@ -910,7 +1048,9 @@
       "n": 39,
       "avg": 69.93,
       "value": 3842,
-      "age": 27
+      "age": 27,
+      "pos_rank": 26,
+      "pos_label": "RB26"
     },
     {
       "bk": 71,
@@ -918,12 +1058,14 @@
       "pos": "RB",
       "team": "NE",
       "yates": 66,
-      "fp": 76,
+      "fp": 77,
       "karabell": 57,
       "n": 39,
-      "avg": 70.65,
+      "avg": 71.29,
       "value": 3803,
-      "age": 23
+      "age": 23,
+      "pos_rank": 27,
+      "pos_label": "RB27"
     },
     {
       "bk": 72,
@@ -936,7 +1078,9 @@
       "n": 38,
       "avg": 72.17,
       "value": 3764,
-      "age": 26
+      "age": 26,
+      "pos_rank": 8,
+      "pos_label": "QB8"
     },
     {
       "bk": 73,
@@ -949,7 +1093,9 @@
       "n": 38,
       "avg": 74.6,
       "value": 3725,
-      "age": 24
+      "age": 24,
+      "pos_rank": 9,
+      "pos_label": "QB9"
     },
     {
       "bk": 74,
@@ -962,7 +1108,9 @@
       "n": 39,
       "avg": 72.61,
       "value": 3687,
-      "age": 25
+      "age": 25,
+      "pos_rank": 6,
+      "pos_label": "TE6"
     },
     {
       "bk": 75,
@@ -970,12 +1118,14 @@
       "pos": "WR",
       "team": "PIT",
       "yates": 68,
-      "fp": 74,
+      "fp": 73,
       "karabell": 80,
       "n": 39,
-      "avg": 73.71,
+      "avg": 73.07,
       "value": 3650,
-      "age": 28
+      "age": 28,
+      "pos_rank": 33,
+      "pos_label": "WR33"
     },
     {
       "bk": 76,
@@ -983,15 +1133,32 @@
       "pos": "RB",
       "team": "TEN",
       "yates": 63,
-      "fp": 81,
+      "fp": 83,
       "karabell": 63,
       "n": 39,
-      "avg": 74.78,
+      "avg": 76.06,
       "value": 3613,
-      "age": 29
+      "age": 29,
+      "pos_rank": 28,
+      "pos_label": "RB28"
     },
     {
       "bk": 77,
+      "name": "Dak Prescott",
+      "pos": "QB",
+      "team": "DAL",
+      "yates": 89,
+      "fp": 76,
+      "karabell": "-",
+      "n": 38,
+      "avg": 79.53,
+      "value": 3576,
+      "age": 33,
+      "pos_rank": 10,
+      "pos_label": "QB10"
+    },
+    {
+      "bk": 78,
       "name": "Tucker Kraft",
       "pos": "TE",
       "team": "GB",
@@ -1000,21 +1167,10 @@
       "karabell": 75,
       "n": 39,
       "avg": 79.86,
-      "value": 3576,
-      "age": 25
-    },
-    {
-      "bk": 78,
-      "name": "Dak Prescott",
-      "pos": "QB",
-      "team": "DAL",
-      "yates": 89,
-      "fp": 77,
-      "karabell": "-",
-      "n": 38,
-      "avg": 80.25,
       "value": 3540,
-      "age": 33
+      "age": 25,
+      "pos_rank": 7,
+      "pos_label": "TE7"
     },
     {
       "bk": 79,
@@ -1027,7 +1183,9 @@
       "n": 39,
       "avg": 80.75,
       "value": 3504,
-      "age": 28
+      "age": 28,
+      "pos_rank": 34,
+      "pos_label": "WR34"
     },
     {
       "bk": 80,
@@ -1035,12 +1193,14 @@
       "pos": "TE",
       "team": "DET",
       "yates": 82,
-      "fp": 83,
+      "fp": 82,
       "karabell": 74,
       "n": 39,
-      "avg": 81.46,
+      "avg": 80.82,
       "value": 3469,
-      "age": 25
+      "age": 25,
+      "pos_rank": 8,
+      "pos_label": "TE8"
     },
     {
       "bk": 81,
@@ -1053,7 +1213,9 @@
       "n": 39,
       "avg": 81.72,
       "value": 3434,
-      "age": 30
+      "age": 30,
+      "pos_rank": 35,
+      "pos_label": "WR35"
     },
     {
       "bk": 82,
@@ -1066,7 +1228,9 @@
       "n": 3,
       "avg": 83.0,
       "value": 3399,
-      "age": 27
+      "age": 27,
+      "pos_rank": 29,
+      "pos_label": "RB29"
     },
     {
       "bk": 83,
@@ -1079,7 +1243,9 @@
       "n": 39,
       "avg": 83.62,
       "value": 3365,
-      "age": 32
+      "age": 32,
+      "pos_rank": 36,
+      "pos_label": "WR36"
     },
     {
       "bk": 84,
@@ -1092,7 +1258,9 @@
       "n": 39,
       "avg": 83.88,
       "value": 3331,
-      "age": 30
+      "age": 30,
+      "pos_rank": 37,
+      "pos_label": "WR37"
     },
     {
       "bk": 85,
@@ -1105,10 +1273,27 @@
       "n": 39,
       "avg": 84.42,
       "value": 3298,
-      "age": 26
+      "age": 26,
+      "pos_rank": 38,
+      "pos_label": "WR38"
     },
     {
       "bk": 86,
+      "name": "Rico Dowdle",
+      "pos": "RB",
+      "team": "PIT",
+      "yates": 116,
+      "fp": 81,
+      "karabell": 69,
+      "n": 39,
+      "avg": 84.65,
+      "value": 3265,
+      "age": 28,
+      "pos_rank": 30,
+      "pos_label": "RB30"
+    },
+    {
+      "bk": 87,
       "name": "George Kittle",
       "pos": "TE",
       "team": "SF",
@@ -1117,24 +1302,28 @@
       "karabell": 76,
       "n": 39,
       "avg": 85.24,
-      "value": 3265,
-      "age": 32
-    },
-    {
-      "bk": 87,
-      "name": "Rico Dowdle",
-      "pos": "RB",
-      "team": "PIT",
-      "yates": 116,
-      "fp": 82,
-      "karabell": 69,
-      "n": 39,
-      "avg": 85.29,
       "value": 3233,
-      "age": 28
+      "age": 32,
+      "pos_rank": 9,
+      "pos_label": "TE9"
     },
     {
       "bk": 88,
+      "name": "Jonathon Brooks",
+      "pos": "RB",
+      "team": "CAR",
+      "yates": 101,
+      "fp": 87,
+      "karabell": 65,
+      "n": 39,
+      "avg": 85.56,
+      "value": 3201,
+      "age": 23,
+      "pos_rank": 31,
+      "pos_label": "RB31"
+    },
+    {
+      "bk": 89,
       "name": "Chuba Hubbard",
       "pos": "RB",
       "team": "CAR",
@@ -1143,21 +1332,10 @@
       "karabell": 71,
       "n": 39,
       "avg": 85.96,
-      "value": 3201,
-      "age": 27
-    },
-    {
-      "bk": 89,
-      "name": "Jonathon Brooks",
-      "pos": "RB",
-      "team": "CAR",
-      "yates": 101,
-      "fp": 88,
-      "karabell": 65,
-      "n": 39,
-      "avg": 86.19,
       "value": 3169,
-      "age": 23
+      "age": 27,
+      "pos_rank": 32,
+      "pos_label": "RB32"
     },
     {
       "bk": 90,
@@ -1170,7 +1348,9 @@
       "n": 39,
       "avg": 86.61,
       "value": 3138,
-      "age": 23
+      "age": 23,
+      "pos_rank": 39,
+      "pos_label": "WR39"
     },
     {
       "bk": 91,
@@ -1178,12 +1358,14 @@
       "pos": "WR",
       "team": "TEN",
       "yates": 80,
-      "fp": 87,
+      "fp": 88,
       "karabell": 93,
       "n": 39,
-      "avg": 87.12,
+      "avg": 87.76,
       "value": 3106,
-      "age": 25
+      "age": 25,
+      "pos_rank": 40,
+      "pos_label": "WR40"
     },
     {
       "bk": 92,
@@ -1196,7 +1378,9 @@
       "n": 39,
       "avg": 89.12,
       "value": 3076,
-      "age": 25
+      "age": 25,
+      "pos_rank": 41,
+      "pos_label": "WR41"
     },
     {
       "bk": 93,
@@ -1209,7 +1393,9 @@
       "n": 38,
       "avg": 92.75,
       "value": 3046,
-      "age": 23
+      "age": 23,
+      "pos_rank": 11,
+      "pos_label": "QB11"
     },
     {
       "bk": 94,
@@ -1222,7 +1408,9 @@
       "n": 39,
       "avg": 93.6,
       "value": 3016,
-      "age": 25
+      "age": 25,
+      "pos_rank": 33,
+      "pos_label": "RB33"
     },
     {
       "bk": 95,
@@ -1235,7 +1423,9 @@
       "n": 39,
       "avg": 94.74,
       "value": 2986,
-      "age": 36
+      "age": 36,
+      "pos_rank": 10,
+      "pos_label": "TE10"
     },
     {
       "bk": 96,
@@ -1248,7 +1438,9 @@
       "n": 38,
       "avg": 94.9,
       "value": 2957,
-      "age": 26
+      "age": 26,
+      "pos_rank": 12,
+      "pos_label": "QB12"
     },
     {
       "bk": 97,
@@ -1261,7 +1453,9 @@
       "n": 39,
       "avg": 96.46,
       "value": 2928,
-      "age": 27
+      "age": 27,
+      "pos_rank": 34,
+      "pos_label": "RB34"
     },
     {
       "bk": 98,
@@ -1274,7 +1468,9 @@
       "n": 38,
       "avg": 97.08,
       "value": 2899,
-      "age": 26
+      "age": 26,
+      "pos_rank": 13,
+      "pos_label": "QB13"
     },
     {
       "bk": 99,
@@ -1287,7 +1483,9 @@
       "n": 39,
       "avg": 97.24,
       "value": 2871,
-      "age": 26
+      "age": 26,
+      "pos_rank": 42,
+      "pos_label": "WR42"
     },
     {
       "bk": 100,
@@ -1300,7 +1498,9 @@
       "n": 39,
       "avg": 97.26,
       "value": 2843,
-      "age": 25
+      "age": 25,
+      "pos_rank": 35,
+      "pos_label": "RB35"
     },
     {
       "bk": 101,
@@ -1311,9 +1511,11 @@
       "fp": 101,
       "karabell": "-",
       "n": 38,
-      "avg": 98.46,
+      "avg": 98.47,
       "value": 2815,
-      "age": 30
+      "age": 30,
+      "pos_rank": 14,
+      "pos_label": "QB14"
     },
     {
       "bk": 102,
@@ -1326,7 +1528,9 @@
       "n": 39,
       "avg": 98.61,
       "value": 2788,
-      "age": 24
+      "age": 24,
+      "pos_rank": 43,
+      "pos_label": "WR43"
     },
     {
       "bk": 103,
@@ -1334,12 +1538,14 @@
       "pos": "RB",
       "team": "WAS",
       "yates": 81,
-      "fp": 109,
+      "fp": 112,
       "karabell": 84,
       "n": 39,
-      "avg": 99.92,
+      "avg": 101.83,
       "value": 2760,
-      "age": 27
+      "age": 27,
+      "pos_rank": 36,
+      "pos_label": "RB36"
     },
     {
       "bk": 104,
@@ -1352,7 +1558,9 @@
       "n": 38,
       "avg": 102.58,
       "value": 2734,
-      "age": 38
+      "age": 38,
+      "pos_rank": 15,
+      "pos_label": "QB15"
     },
     {
       "bk": 105,
@@ -1365,7 +1573,9 @@
       "n": 37,
       "avg": 103.62,
       "value": 2707,
-      "age": 31
+      "age": 31,
+      "pos_rank": 16,
+      "pos_label": "QB16"
     },
     {
       "bk": 106,
@@ -1378,23 +1588,12 @@
       "n": 39,
       "avg": 103.68,
       "value": 2681,
-      "age": 25
+      "age": 25,
+      "pos_rank": 37,
+      "pos_label": "RB37"
     },
     {
       "bk": 107,
-      "name": "Aaron Jones",
-      "pos": "RB",
-      "team": "MIN",
-      "yates": 83,
-      "fp": 119,
-      "karabell": 70,
-      "n": 39,
-      "avg": 104.26,
-      "value": 2655,
-      "age": 31
-    },
-    {
-      "bk": 108,
       "name": "Jordan Addison",
       "pos": "WR",
       "team": "MIN",
@@ -1403,8 +1602,25 @@
       "karabell": 95,
       "n": 39,
       "avg": 104.88,
+      "value": 2655,
+      "age": 24,
+      "pos_rank": 44,
+      "pos_label": "WR44"
+    },
+    {
+      "bk": 108,
+      "name": "Aaron Jones",
+      "pos": "RB",
+      "team": "MIN",
+      "yates": 83,
+      "fp": 120,
+      "karabell": 70,
+      "n": 39,
+      "avg": 104.9,
       "value": 2629,
-      "age": 24
+      "age": 31,
+      "pos_rank": 38,
+      "pos_label": "RB38"
     },
     {
       "bk": 109,
@@ -1417,7 +1633,9 @@
       "n": 39,
       "avg": 105.69,
       "value": 2604,
-      "age": 29
+      "age": 29,
+      "pos_rank": 45,
+      "pos_label": "WR45"
     },
     {
       "bk": 110,
@@ -1430,7 +1648,9 @@
       "n": 39,
       "avg": 105.69,
       "value": 2579,
-      "age": 26
+      "age": 26,
+      "pos_rank": 46,
+      "pos_label": "WR46"
     },
     {
       "bk": 111,
@@ -1443,7 +1663,9 @@
       "n": 37,
       "avg": 107.96,
       "value": 2554,
-      "age": 21
+      "age": 21,
+      "pos_rank": 47,
+      "pos_label": "WR47"
     },
     {
       "bk": 112,
@@ -1456,7 +1678,9 @@
       "n": 39,
       "avg": 109.82,
       "value": 2529,
-      "age": 25
+      "age": 25,
+      "pos_rank": 39,
+      "pos_label": "RB39"
     },
     {
       "bk": 113,
@@ -1469,7 +1693,9 @@
       "n": 39,
       "avg": 110.85,
       "value": 2505,
-      "age": 31
+      "age": 31,
+      "pos_rank": 11,
+      "pos_label": "TE11"
     },
     {
       "bk": 114,
@@ -1482,7 +1708,9 @@
       "n": 39,
       "avg": 111.08,
       "value": 2481,
-      "age": 24
+      "age": 24,
+      "pos_rank": 40,
+      "pos_label": "RB40"
     },
     {
       "bk": 115,
@@ -1495,10 +1723,27 @@
       "n": 38,
       "avg": 111.65,
       "value": 2457,
-      "age": 22
+      "age": 22,
+      "pos_rank": 48,
+      "pos_label": "WR48"
     },
     {
       "bk": 116,
+      "name": "Jordan Mason",
+      "pos": "RB",
+      "team": "MIN",
+      "yates": 126,
+      "fp": 109,
+      "karabell": 111,
+      "n": 39,
+      "avg": 112.08,
+      "value": 2434,
+      "age": 27,
+      "pos_rank": 41,
+      "pos_label": "RB41"
+    },
+    {
+      "bk": 117,
       "name": "Matthew Golden",
       "pos": "WR",
       "team": "GB",
@@ -1507,21 +1752,10 @@
       "karabell": 83,
       "n": 39,
       "avg": 112.5,
-      "value": 2434,
-      "age": 23
-    },
-    {
-      "bk": 117,
-      "name": "Dalton Kincaid",
-      "pos": "TE",
-      "team": "BUF",
-      "yates": "-",
-      "fp": 110,
-      "karabell": 123,
-      "n": 38,
-      "avg": 113.46,
       "value": 2410,
-      "age": 26
+      "age": 23,
+      "pos_rank": 49,
+      "pos_label": "WR49"
     },
     {
       "bk": 118,
@@ -1534,20 +1768,24 @@
       "n": 39,
       "avg": 124.75,
       "value": 2387,
-      "age": 24
+      "age": 24,
+      "pos_rank": 50,
+      "pos_label": "WR50"
     },
     {
       "bk": 119,
-      "name": "Jordan Mason",
-      "pos": "RB",
-      "team": "MIN",
-      "yates": 126,
-      "fp": 112,
-      "karabell": 111,
-      "n": 39,
-      "avg": 114.01,
+      "name": "Dalton Kincaid",
+      "pos": "TE",
+      "team": "BUF",
+      "yates": "-",
+      "fp": 110,
+      "karabell": 123,
+      "n": 38,
+      "avg": 113.46,
       "value": 2365,
-      "age": 27
+      "age": 26,
+      "pos_rank": 12,
+      "pos_label": "TE12"
     },
     {
       "bk": 120,
@@ -1560,7 +1798,9 @@
       "n": 38,
       "avg": 114.57,
       "value": 2342,
-      "age": 27
+      "age": 27,
+      "pos_rank": 17,
+      "pos_label": "QB17"
     },
     {
       "bk": 121,
@@ -1573,7 +1813,9 @@
       "n": 39,
       "avg": 114.83,
       "value": 2320,
-      "age": 27
+      "age": 27,
+      "pos_rank": 13,
+      "pos_label": "TE13"
     },
     {
       "bk": 122,
@@ -1586,7 +1828,9 @@
       "n": 38,
       "avg": 115.47,
       "value": 2298,
-      "age": 29
+      "age": 29,
+      "pos_rank": 18,
+      "pos_label": "QB18"
     },
     {
       "bk": 123,
@@ -1594,12 +1838,14 @@
       "pos": "WR",
       "team": "SF",
       "yates": 108,
-      "fp": 120,
+      "fp": 119,
       "karabell": 108,
       "n": 39,
-      "avg": 116.32,
+      "avg": 115.68,
       "value": 2276,
-      "age": 23
+      "age": 23,
+      "pos_rank": 51,
+      "pos_label": "WR51"
     },
     {
       "bk": 124,
@@ -1612,7 +1858,9 @@
       "n": 38,
       "avg": 125.04,
       "value": 2254,
-      "age": 26
+      "age": 26,
+      "pos_rank": 19,
+      "pos_label": "QB19"
     },
     {
       "bk": 125,
@@ -1625,7 +1873,9 @@
       "n": 39,
       "avg": 118.1,
       "value": 2233,
-      "age": 28
+      "age": 28,
+      "pos_rank": 42,
+      "pos_label": "RB42"
     },
     {
       "bk": 126,
@@ -1638,7 +1888,9 @@
       "n": 37,
       "avg": 118.39,
       "value": 2212,
-      "age": 31
+      "age": 31,
+      "pos_rank": 20,
+      "pos_label": "QB20"
     },
     {
       "bk": 127,
@@ -1651,7 +1903,9 @@
       "n": 39,
       "avg": 122.12,
       "value": 2191,
-      "age": 26
+      "age": 26,
+      "pos_rank": 52,
+      "pos_label": "WR52"
     },
     {
       "bk": 128,
@@ -1664,7 +1918,9 @@
       "n": 39,
       "avg": 122.97,
       "value": 2170,
-      "age": 26
+      "age": 26,
+      "pos_rank": 14,
+      "pos_label": "TE14"
     },
     {
       "bk": 129,
@@ -1677,23 +1933,12 @@
       "n": 39,
       "avg": 123.4,
       "value": 2149,
-      "age": 26
+      "age": 26,
+      "pos_rank": 53,
+      "pos_label": "WR53"
     },
     {
       "bk": 130,
-      "name": "Mark Andrews",
-      "pos": "TE",
-      "team": "BAL",
-      "yates": "-",
-      "fp": 134,
-      "karabell": 100,
-      "n": 38,
-      "avg": 125.14,
-      "value": 2129,
-      "age": 30
-    },
-    {
-      "bk": 131,
       "name": "Xavier Worthy",
       "pos": "WR",
       "team": "KC",
@@ -1702,8 +1947,25 @@
       "karabell": 97,
       "n": 39,
       "avg": 125.65,
+      "value": 2129,
+      "age": 23,
+      "pos_rank": 54,
+      "pos_label": "WR54"
+    },
+    {
+      "bk": 131,
+      "name": "Mark Andrews",
+      "pos": "TE",
+      "team": "BAL",
+      "yates": "-",
+      "fp": 135,
+      "karabell": 100,
+      "n": 38,
+      "avg": 125.86,
       "value": 2109,
-      "age": 23
+      "age": 30,
+      "pos_rank": 15,
+      "pos_label": "TE15"
     },
     {
       "bk": 132,
@@ -1716,7 +1978,9 @@
       "n": 39,
       "avg": 127.07,
       "value": 2089,
-      "age": 29
+      "age": 29,
+      "pos_rank": 16,
+      "pos_label": "TE16"
     },
     {
       "bk": 133,
@@ -1729,7 +1993,9 @@
       "n": 39,
       "avg": 127.82,
       "value": 2069,
-      "age": 25
+      "age": 25,
+      "pos_rank": 43,
+      "pos_label": "RB43"
     },
     {
       "bk": 134,
@@ -1742,7 +2008,9 @@
       "n": 39,
       "avg": 129.25,
       "value": 2050,
-      "age": 25
+      "age": 25,
+      "pos_rank": 44,
+      "pos_label": "RB44"
     },
     {
       "bk": 135,
@@ -1755,7 +2023,9 @@
       "n": 39,
       "avg": 131.0,
       "value": 2030,
-      "age": 26
+      "age": 26,
+      "pos_rank": 45,
+      "pos_label": "RB45"
     },
     {
       "bk": 136,
@@ -1768,7 +2038,9 @@
       "n": 37,
       "avg": 131.54,
       "value": 2011,
-      "age": 27
+      "age": 27,
+      "pos_rank": 21,
+      "pos_label": "QB21"
     },
     {
       "bk": 137,
@@ -1781,7 +2053,9 @@
       "n": 39,
       "avg": 131.96,
       "value": 1992,
-      "age": 30
+      "age": 30,
+      "pos_rank": 55,
+      "pos_label": "WR55"
     },
     {
       "bk": 138,
@@ -1794,7 +2068,9 @@
       "n": 38,
       "avg": 132.96,
       "value": 1974,
-      "age": 29
+      "age": 29,
+      "pos_rank": 22,
+      "pos_label": "QB22"
     },
     {
       "bk": 139,
@@ -1802,28 +2078,17 @@
       "pos": "RB",
       "team": "JAX",
       "yates": "-",
-      "fp": 135,
+      "fp": 134,
       "karabell": "-",
       "n": 37,
-      "avg": 134.5,
+      "avg": 133.53,
       "value": 1955,
-      "age": 26
+      "age": 26,
+      "pos_rank": 46,
+      "pos_label": "RB46"
     },
     {
       "bk": 140,
-      "name": "Denzel Boston",
-      "pos": "WR",
-      "team": "CLE",
-      "yates": "-",
-      "fp": 145,
-      "karabell": 107,
-      "n": 38,
-      "avg": 135.33,
-      "value": 1937,
-      "age": 22
-    },
-    {
-      "bk": 141,
       "name": "Rashid Shaheed",
       "pos": "WR",
       "team": "SEA",
@@ -1832,8 +2097,25 @@
       "karabell": 119,
       "n": 38,
       "avg": 135.58,
+      "value": 1937,
+      "age": 27,
+      "pos_rank": 56,
+      "pos_label": "WR56"
+    },
+    {
+      "bk": 141,
+      "name": "Denzel Boston",
+      "pos": "WR",
+      "team": "CLE",
+      "yates": "-",
+      "fp": 146,
+      "karabell": 107,
+      "n": 38,
+      "avg": 136.06,
       "value": 1919,
-      "age": 27
+      "age": 22,
+      "pos_rank": 57,
+      "pos_label": "WR57"
     },
     {
       "bk": 142,
@@ -1846,7 +2128,9 @@
       "n": 37,
       "avg": 139.01,
       "value": 1901,
-      "age": 24
+      "age": 24,
+      "pos_rank": 23,
+      "pos_label": "QB23"
     },
     {
       "bk": 143,
@@ -1859,7 +2143,9 @@
       "n": 39,
       "avg": 140.39,
       "value": 1883,
-      "age": 24
+      "age": 24,
+      "pos_rank": 47,
+      "pos_label": "RB47"
     },
     {
       "bk": 144,
@@ -1872,7 +2158,9 @@
       "n": 38,
       "avg": 143.19,
       "value": 1865,
-      "age": 25
+      "age": 25,
+      "pos_rank": 58,
+      "pos_label": "WR58"
     },
     {
       "bk": 145,
@@ -1885,7 +2173,9 @@
       "n": 37,
       "avg": 144.03,
       "value": 1848,
-      "age": 22
+      "age": 22,
+      "pos_rank": 59,
+      "pos_label": "WR59"
     },
     {
       "bk": 146,
@@ -1898,20 +2188,24 @@
       "n": 39,
       "avg": 144.99,
       "value": 1830,
-      "age": 30
+      "age": 30,
+      "pos_rank": 17,
+      "pos_label": "TE17"
     },
     {
       "bk": 147,
-      "name": "Dylan Sampson",
+      "name": "Mike Washington Jr.",
       "pos": "RB",
-      "team": "CLE",
+      "team": "LV",
       "yates": "-",
-      "fp": 143,
-      "karabell": 154,
-      "n": 38,
-      "avg": 145.93,
+      "fp": 145,
+      "karabell": "-",
+      "n": 37,
+      "avg": 145.22,
       "value": 1813,
-      "age": 21
+      "age": 23,
+      "pos_rank": 48,
+      "pos_label": "RB48"
     },
     {
       "bk": 148,
@@ -1924,20 +2218,24 @@
       "n": 37,
       "avg": 138.04,
       "value": 1796,
-      "age": 29
+      "age": 29,
+      "pos_rank": 24,
+      "pos_label": "QB24"
     },
     {
       "bk": 149,
-      "name": "Mike Washington Jr.",
+      "name": "Dylan Sampson",
       "pos": "RB",
-      "team": "LV",
+      "team": "CLE",
       "yates": "-",
-      "fp": 146,
-      "karabell": "-",
-      "n": 37,
-      "avg": 146.19,
+      "fp": 143,
+      "karabell": 154,
+      "n": 38,
+      "avg": 145.93,
       "value": 1780,
-      "age": 23
+      "age": 21,
+      "pos_rank": 49,
+      "pos_label": "RB49"
     },
     {
       "bk": 150,
@@ -1950,7 +2248,9 @@
       "n": 39,
       "avg": 146.28,
       "value": 1763,
-      "age": 31
+      "age": 31,
+      "pos_rank": 18,
+      "pos_label": "TE18"
     },
     {
       "bk": 151,
@@ -1963,7 +2263,9 @@
       "n": 38,
       "avg": 147.54,
       "value": 1747,
-      "age": 25
+      "age": 25,
+      "pos_rank": 19,
+      "pos_label": "TE19"
     },
     {
       "bk": 152,
@@ -1976,7 +2278,9 @@
       "n": 39,
       "avg": 148.43,
       "value": 1730,
-      "age": 25
+      "age": 25,
+      "pos_rank": 50,
+      "pos_label": "RB50"
     },
     {
       "bk": 153,
@@ -1989,7 +2293,9 @@
       "n": 38,
       "avg": 152.69,
       "value": 1714,
-      "age": 24
+      "age": 24,
+      "pos_rank": 60,
+      "pos_label": "WR60"
     },
     {
       "bk": 154,
@@ -2002,7 +2308,9 @@
       "n": 36,
       "avg": 152.84,
       "value": 1698,
-      "age": 24
+      "age": 24,
+      "pos_rank": 25,
+      "pos_label": "QB25"
     },
     {
       "bk": 155,
@@ -2015,10 +2323,27 @@
       "n": 38,
       "avg": 152.88,
       "value": 1682,
-      "age": 24
+      "age": 24,
+      "pos_rank": 61,
+      "pos_label": "WR61"
     },
     {
       "bk": 156,
+      "name": "Alvin Kamara",
+      "pos": "RB",
+      "team": "NO",
+      "yates": 133,
+      "fp": 159,
+      "karabell": 146,
+      "n": 39,
+      "avg": 152.96,
+      "value": 1667,
+      "age": 31,
+      "pos_rank": 51,
+      "pos_label": "RB51"
+    },
+    {
+      "bk": 157,
       "name": "Chig Okonkwo",
       "pos": "TE",
       "team": "WAS",
@@ -2027,11 +2352,13 @@
       "karabell": "-",
       "n": 37,
       "avg": 152.96,
-      "value": 1667,
-      "age": 26
+      "value": 1651,
+      "age": 26,
+      "pos_rank": 20,
+      "pos_label": "TE20"
     },
     {
-      "bk": 157,
+      "bk": 158,
       "name": "Adonai Mitchell",
       "pos": "WR",
       "team": "NYJ",
@@ -2040,21 +2367,10 @@
       "karabell": 130,
       "n": 38,
       "avg": 153.51,
-      "value": 1651,
-      "age": 23
-    },
-    {
-      "bk": 158,
-      "name": "Alvin Kamara",
-      "pos": "RB",
-      "team": "NO",
-      "yates": 133,
-      "fp": 160,
-      "karabell": 146,
-      "n": 39,
-      "avg": 153.6,
       "value": 1636,
-      "age": 31
+      "age": 23,
+      "pos_rank": 62,
+      "pos_label": "WR62"
     },
     {
       "bk": 159,
@@ -2067,7 +2383,9 @@
       "n": 38,
       "avg": 154.93,
       "value": 1621,
-      "age": 23
+      "age": 23,
+      "pos_rank": 52,
+      "pos_label": "RB52"
     },
     {
       "bk": 160,
@@ -2080,7 +2398,9 @@
       "n": 38,
       "avg": 156.82,
       "value": 1606,
-      "age": 27
+      "age": 27,
+      "pos_rank": 63,
+      "pos_label": "WR63"
     },
     {
       "bk": 161,
@@ -2088,28 +2408,17 @@
       "pos": "WR",
       "team": "IND",
       "yates": 131,
-      "fp": 177,
+      "fp": 176,
       "karabell": 121,
       "n": 37,
-      "avg": 159.24,
+      "avg": 158.6,
       "value": 1591,
-      "age": 34
+      "age": 34,
+      "pos_rank": 64,
+      "pos_label": "WR64"
     },
     {
       "bk": 162,
-      "name": "Bryce Young",
-      "pos": "QB",
-      "team": "CAR",
-      "yates": "-",
-      "fp": 159,
-      "karabell": "-",
-      "n": 36,
-      "avg": 159.64,
-      "value": 1576,
-      "age": 25
-    },
-    {
-      "bk": 163,
       "name": "Dontayvion Wicks",
       "pos": "WR",
       "team": "PHI",
@@ -2118,8 +2427,25 @@
       "karabell": 138,
       "n": 38,
       "avg": 159.93,
+      "value": 1576,
+      "age": 25,
+      "pos_rank": 65,
+      "pos_label": "WR65"
+    },
+    {
+      "bk": 163,
+      "name": "Bryce Young",
+      "pos": "QB",
+      "team": "CAR",
+      "yates": "-",
+      "fp": 160,
+      "karabell": "-",
+      "n": 36,
+      "avg": 160.63,
       "value": 1562,
-      "age": 25
+      "age": 25,
+      "pos_rank": 26,
+      "pos_label": "QB26"
     },
     {
       "bk": 164,
@@ -2127,12 +2453,14 @@
       "pos": "TE",
       "team": "MIN",
       "yates": "-",
-      "fp": 175,
+      "fp": 177,
       "karabell": 122,
       "n": 38,
-      "avg": 161.36,
+      "avg": 162.79,
       "value": 1547,
-      "age": 29
+      "age": 29,
+      "pos_rank": 21,
+      "pos_label": "TE21"
     },
     {
       "bk": 165,
@@ -2140,12 +2468,14 @@
       "pos": "WR",
       "team": "MIA",
       "yates": "-",
-      "fp": 183,
+      "fp": 182,
       "karabell": 129,
       "n": 7,
-      "avg": 163.5,
+      "avg": 162.95,
       "value": 1533,
-      "age": 25
+      "age": 25,
+      "pos_rank": 66,
+      "pos_label": "WR66"
     },
     {
       "bk": 166,
@@ -2158,7 +2488,9 @@
       "n": 37,
       "avg": 163.61,
       "value": 1519,
-      "age": 27
+      "age": 27,
+      "pos_rank": 53,
+      "pos_label": "RB53"
     },
     {
       "bk": 167,
@@ -2169,9 +2501,11 @@
       "fp": 169,
       "karabell": 152,
       "n": 38,
-      "avg": 164.5,
+      "avg": 164.49,
       "value": 1505,
-      "age": 22
+      "age": 22,
+      "pos_rank": 54,
+      "pos_label": "RB54"
     },
     {
       "bk": 168,
@@ -2179,12 +2513,14 @@
       "pos": "RB",
       "team": "BAL",
       "yates": "-",
-      "fp": 220,
+      "fp": 218,
       "karabell": 150,
       "n": 3,
-      "avg": 165.5,
+      "avg": 165.0,
       "value": 1491,
-      "age": 28
+      "age": 28,
+      "pos_rank": 55,
+      "pos_label": "RB55"
     },
     {
       "bk": 169,
@@ -2197,7 +2533,9 @@
       "n": 37,
       "avg": 165.9,
       "value": 1477,
-      "age": 22
+      "age": 22,
+      "pos_rank": 56,
+      "pos_label": "RB56"
     },
     {
       "bk": 170,
@@ -2205,12 +2543,14 @@
       "pos": "WR",
       "team": "MIN",
       "yates": "-",
-      "fp": 176,
+      "fp": 175,
       "karabell": 143,
       "n": 38,
-      "avg": 167.21,
+      "avg": 166.49,
       "value": 1463,
-      "age": 29
+      "age": 29,
+      "pos_rank": 67,
+      "pos_label": "WR67"
     },
     {
       "bk": 171,
@@ -2223,7 +2563,9 @@
       "n": 38,
       "avg": 169.82,
       "value": 1450,
-      "age": 24
+      "age": 24,
+      "pos_rank": 68,
+      "pos_label": "WR68"
     },
     {
       "bk": 172,
@@ -2236,7 +2578,9 @@
       "n": 4,
       "avg": 170.0,
       "value": 1437,
-      "age": 21
+      "age": 21,
+      "pos_rank": 22,
+      "pos_label": "TE22"
     },
     {
       "bk": 173,
@@ -2249,7 +2593,9 @@
       "n": 8,
       "avg": 170.53,
       "value": 1423,
-      "age": 31
+      "age": 31,
+      "pos_rank": 69,
+      "pos_label": "WR69"
     },
     {
       "bk": 174,
@@ -2262,7 +2608,9 @@
       "n": 37,
       "avg": 173.64,
       "value": 1410,
-      "age": 26
+      "age": 26,
+      "pos_rank": 57,
+      "pos_label": "RB57"
     },
     {
       "bk": 175,
@@ -2270,12 +2618,14 @@
       "pos": "WR",
       "team": "JAX",
       "yates": "-",
-      "fp": 210,
+      "fp": 209,
       "karabell": 148,
       "n": 4,
-      "avg": 175.0,
+      "avg": 174.75,
       "value": 1397,
-      "age": 23
+      "age": 23,
+      "pos_rank": 70,
+      "pos_label": "WR70"
     },
     {
       "bk": 176,
@@ -2283,28 +2633,17 @@
       "pos": "TE",
       "team": "LAR",
       "yates": "-",
-      "fp": 194,
+      "fp": 195,
       "karabell": 134,
       "n": 6,
-      "avg": 175.62,
+      "avg": 176.25,
       "value": 1384,
-      "age": 23
+      "age": 23,
+      "pos_rank": 23,
+      "pos_label": "TE23"
     },
     {
       "bk": 177,
-      "name": "Pat Bryant",
-      "pos": "WR",
-      "team": "DEN",
-      "yates": "-",
-      "fp": 181,
-      "karabell": "-",
-      "n": 8,
-      "avg": 179.07,
-      "value": 1372,
-      "age": 23
-    },
-    {
-      "bk": 178,
       "name": "Ray Davis",
       "pos": "RB",
       "team": "BUF",
@@ -2313,11 +2652,13 @@
       "karabell": "-",
       "n": 36,
       "avg": 179.13,
-      "value": 1359,
-      "age": 26
+      "value": 1372,
+      "age": 26,
+      "pos_rank": 58,
+      "pos_label": "RB58"
     },
     {
-      "bk": 179,
+      "bk": 178,
       "name": "Omar Cooper Jr.",
       "pos": "WR",
       "team": "NYJ",
@@ -2326,8 +2667,25 @@
       "karabell": "-",
       "n": 37,
       "avg": 179.71,
+      "value": 1359,
+      "age": 22,
+      "pos_rank": 71,
+      "pos_label": "WR71"
+    },
+    {
+      "bk": 179,
+      "name": "Pat Bryant",
+      "pos": "WR",
+      "team": "DEN",
+      "yates": "-",
+      "fp": 183,
+      "karabell": "-",
+      "n": 6,
+      "avg": 180.1,
       "value": 1347,
-      "age": 22
+      "age": 23,
+      "pos_rank": 72,
+      "pos_label": "WR72"
     },
     {
       "bk": 180,
@@ -2335,38 +2693,44 @@
       "pos": "WR",
       "team": "MIA",
       "yates": "-",
-      "fp": 201,
+      "fp": 203,
       "karabell": 158,
       "n": 4,
-      "avg": 181.25,
+      "avg": 181.75,
       "value": 1334,
-      "age": 22
+      "age": 22,
+      "pos_rank": 73,
+      "pos_label": "WR73"
     },
     {
       "bk": 181,
-      "name": "Tank Dell",
-      "pos": "WR",
-      "team": "HOU",
-      "yates": 137,
-      "fp": 261,
-      "karabell": 109,
-      "n": 4,
-      "avg": 182.0,
-      "value": 1322,
-      "age": 26
-    },
-    {
-      "bk": 182,
       "name": "Rashod Bateman",
       "pos": "WR",
       "team": "BAL",
       "yates": "-",
-      "fp": 225,
+      "fp": 223,
       "karabell": 135,
       "n": 4,
-      "avg": 182.25,
+      "avg": 181.75,
+      "value": 1322,
+      "age": 26,
+      "pos_rank": 74,
+      "pos_label": "WR74"
+    },
+    {
+      "bk": 182,
+      "name": "Tank Dell",
+      "pos": "WR",
+      "team": "HOU",
+      "yates": 137,
+      "fp": 260,
+      "karabell": 109,
+      "n": 4,
+      "avg": 181.83,
       "value": 1310,
-      "age": 26
+      "age": 26,
+      "pos_rank": 75,
+      "pos_label": "WR75"
     },
     {
       "bk": 183,
@@ -2374,12 +2738,14 @@
       "pos": "WR",
       "team": "NO",
       "yates": "-",
-      "fp": 233,
+      "fp": 229,
       "karabell": 128,
       "n": 4,
-      "avg": 184.5,
+      "avg": 183.5,
       "value": 1298,
-      "age": 28
+      "age": 28,
+      "pos_rank": 76,
+      "pos_label": "WR76"
     },
     {
       "bk": 184,
@@ -2387,12 +2753,14 @@
       "pos": "WR",
       "team": "SEA",
       "yates": "-",
-      "fp": 222,
+      "fp": 219,
       "karabell": 160,
       "n": 4,
-      "avg": 185.0,
+      "avg": 184.25,
       "value": 1286,
-      "age": 33
+      "age": 33,
+      "pos_rank": 77,
+      "pos_label": "WR77"
     },
     {
       "bk": 185,
@@ -2400,12 +2768,14 @@
       "pos": "WR",
       "team": "PIT",
       "yates": "-",
-      "fp": 238,
+      "fp": 239,
       "karabell": 147,
       "n": 4,
-      "avg": 189.25,
+      "avg": 189.5,
       "value": 1274,
-      "age": 22
+      "age": 22,
+      "pos_rank": 78,
+      "pos_label": "WR78"
     },
     {
       "bk": 186,
@@ -2413,12 +2783,14 @@
       "pos": "RB",
       "team": "DET",
       "yates": 140,
-      "fp": 234,
+      "fp": 237,
       "karabell": 149,
       "n": 5,
-      "avg": 192.17,
+      "avg": 192.67,
       "value": 1262,
-      "age": 27
+      "age": 27,
+      "pos_rank": 59,
+      "pos_label": "RB59"
     },
     {
       "bk": 187,
@@ -2431,7 +2803,9 @@
       "n": 6,
       "avg": 194.0,
       "value": 1251,
-      "age": 24
+      "age": 24,
+      "pos_rank": 24,
+      "pos_label": "TE24"
     },
     {
       "bk": 188,
@@ -2439,12 +2813,14 @@
       "pos": "WR",
       "team": "HOU",
       "yates": "-",
-      "fp": 203,
+      "fp": 204,
       "karabell": 162,
       "n": 4,
-      "avg": 197.5,
+      "avg": 197.75,
       "value": 1239,
-      "age": 23
+      "age": 23,
+      "pos_rank": 79,
+      "pos_label": "WR79"
     },
     {
       "bk": 189,
@@ -2452,12 +2828,14 @@
       "pos": "TE",
       "team": "PIT",
       "yates": "-",
-      "fp": 218,
+      "fp": 217,
       "karabell": 139,
       "n": 3,
-      "avg": 198.75,
+      "avg": 198.5,
       "value": 1228,
-      "age": 27
+      "age": 27,
+      "pos_rank": 25,
+      "pos_label": "TE25"
     },
     {
       "bk": 190,
@@ -2470,7 +2848,9 @@
       "n": 5,
       "avg": 204.0,
       "value": 1217,
-      "age": 24
+      "age": 24,
+      "pos_rank": 60,
+      "pos_label": "RB60"
     },
     {
       "bk": 191,
@@ -2478,12 +2858,14 @@
       "pos": "RB",
       "team": "NYG",
       "yates": "-",
-      "fp": 227,
+      "fp": 232,
       "karabell": "-",
       "n": 2,
-      "avg": 206.0,
+      "avg": 208.5,
       "value": 1206,
-      "age": 28
+      "age": 28,
+      "pos_rank": 61,
+      "pos_label": "RB61"
     },
     {
       "bk": 192,
@@ -2491,12 +2873,14 @@
       "pos": "WR",
       "team": "DET",
       "yates": "-",
-      "fp": 224,
+      "fp": 226,
       "karabell": "-",
       "n": 3,
-      "avg": 208.25,
+      "avg": 209.25,
       "value": 1195,
-      "age": 24
+      "age": 24,
+      "pos_rank": 80,
+      "pos_label": "WR80"
     },
     {
       "bk": 193,
@@ -2509,7 +2893,9 @@
       "n": 3,
       "avg": 213.25,
       "value": 1184,
-      "age": 22
+      "age": 22,
+      "pos_rank": 62,
+      "pos_label": "RB62"
     },
     {
       "bk": 194,
@@ -2522,7 +2908,9 @@
       "n": 3,
       "avg": 214.0,
       "value": 1173,
-      "age": 24
+      "age": 24,
+      "pos_rank": 63,
+      "pos_label": "RB63"
     },
     {
       "bk": 195,
@@ -2530,12 +2918,14 @@
       "pos": "WR",
       "team": "ATL",
       "yates": "-",
-      "fp": 228,
+      "fp": 231,
       "karabell": "-",
       "n": 3,
-      "avg": 214.0,
+      "avg": 215.5,
       "value": 1162,
-      "age": 22
+      "age": 22,
+      "pos_rank": 81,
+      "pos_label": "WR81"
     },
     {
       "bk": 196,
@@ -2543,12 +2933,14 @@
       "pos": "TE",
       "team": "TB",
       "yates": "-",
-      "fp": 229,
+      "fp": 227,
       "karabell": "-",
       "n": 2,
-      "avg": 219.0,
+      "avg": 218.0,
       "value": 1152,
-      "age": 27
+      "age": 27,
+      "pos_rank": 26,
+      "pos_label": "TE26"
     },
     {
       "bk": 197,
@@ -2561,7 +2953,9 @@
       "n": 2,
       "avg": 220.5,
       "value": 1141,
-      "age": 35
+      "age": 35,
+      "pos_rank": 27,
+      "pos_label": "QB27"
     },
     {
       "bk": 198,
@@ -2574,7 +2968,9 @@
       "n": 3,
       "avg": 223.5,
       "value": 1131,
-      "age": 23
+      "age": 23,
+      "pos_rank": 27,
+      "pos_label": "TE27"
     },
     {
       "bk": 199,
@@ -2587,7 +2983,9 @@
       "n": 2,
       "avg": 234.0,
       "value": 1121,
-      "age": 23
+      "age": 23,
+      "pos_rank": 64,
+      "pos_label": "RB64"
     },
     {
       "bk": 200,
@@ -2595,12 +2993,14 @@
       "pos": "WR",
       "team": "NYG",
       "yates": "-",
-      "fp": 232,
+      "fp": 228,
       "karabell": "-",
       "n": 2,
-      "avg": 250.0,
+      "avg": 248.0,
       "value": 1110,
-      "age": 28
+      "age": 28,
+      "pos_rank": 82,
+      "pos_label": "WR82"
     }
   ]
 }

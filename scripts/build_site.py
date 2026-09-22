@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 19, 2026"
-LASTMOD = "2026-09-19"
+UPDATED = "September 22, 2026"
+LASTMOD = "2026-09-22"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -467,28 +467,28 @@ ROOKIES = [
 ]
 
 HOT = [
-    {"name": "Kenneth Walker", "pos": "RB", "team": "KC", "why": "Associated Press after Monday: 173 yards and two scores in a Chiefs debut. Rooms that still have him as a Seahawk leftover will sell cheap. Pay the new city.", "src": "Associated Press"},
-    {"name": "Jalen Coker", "pos": "WR", "team": "CAR", "why": "Sports Illustrated after Charlotte: eight of nine for 138 and two scores. Every major Week 2 waiver list has him first or second. Dynasty rooms can still buy the year-two leap.", "src": "Sports Illustrated"},
-    {"name": "Kaelon Black", "pos": "RB", "team": "SF", "why": "Fourteen carries in Melbourne behind McCaffrey. ESPN and FantasyPros already treat him as the handcuff of the week. Get him before the next cart.", "src": "ESPN, FantasyPros"},
-    {"name": "Drake Maye", "pos": "QB", "team": "NE", "why": "Three fourth-quarter picks in Seattle. The arm and the legs still play. Buy from the manager who watched Wednesday and closed the laptop.", "src": "NFL Network"},
-    {"name": "Puka Nacua", "pos": "WR", "team": "LAR", "why": "Seven points on a Thursday in Australia. The target tree is still his. Week 2 is the Giants at home. Pay the ugly opener.", "src": "The Recap"},
-    {"name": "Devaughn Vele", "pos": "WR", "team": "NO", "why": "Seven of nine for 69 and a score on 82 snaps next to Olave. RotoBaller and FantasyPros already have him on the wire. Stash the snap share.", "src": "RotoBaller, FantasyPros"},
-    {"name": "A.J. Brown", "pos": "WR", "team": "NE", "why": "High-ankle sprain, boot, three-to-four weeks. IR him if the league allows it. Contenders can buy the missed month.", "src": "NFL Network"},
-    {"name": "George Kittle", "pos": "TE", "team": "SF", "why": "Two catches, twelve yards, Achilles in the rearview. Shanahan metered him on purpose. That plan expires.", "src": "The Athletic"},
-    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "Missed the opener. The market already treated him like a ghost. The talent is still a Patriot backfield.", "src": "Footballguys"},
-    {"name": "Jaxon Smith-Njigba", "pos": "WR", "team": "SEA", "why": "Worked after Lock entered. The target stays the target when the quarterback changes. Buy any dip that treats Wednesday like a lost season.", "src": "The Athletic"},
+    {"name": "Jalen Coker", "pos": "WR", "team": "CAR", "why": "Eight for 138 and two in the opener, then 76 percent of the snaps in a 34-3 win in Atlanta. Young found him again. Rooms that treated the first night like a carnival can still be bought.", "src": "Sports Illustrated, NFL.com"},
+    {"name": "Jonah Coleman", "pos": "RB", "team": "DEN", "why": "Dobbins left with a hamstring and Harvey was already out. Coleman punched the 3-yard score and caught all three targets. Sports Illustrated already has him first on the wire.", "src": "Sports Illustrated"},
+    {"name": "TreVeyon Henderson", "pos": "RB", "team": "NE", "why": "Missed Thursday. On Sunday he ran 39 yards for a score in a 20-3 win. Five rushes of 30-plus since last year lead the league. The ghost price is gone. Pay the role.", "src": "ESPN"},
+    {"name": "Bryce Young", "pos": "QB", "team": "CAR", "why": "287 and three after 361 and four. Fifth in the league through two weeks and still sitting in a lot of Superflex rooms. Cleveland is next. Add him even if you already have a chair.", "src": "Football Garbage Time, ESPN"},
+    {"name": "Caleb Williams", "pos": "QB", "team": "CHI", "why": "Hamstring in the rain, cart, towel over the face, 9-3 after a 59-point opener. Rooms will dump the 59. The Keep still has the years. Buy the manager who watched the cart.", "src": "ESPN"},
+    {"name": "Davante Adams", "pos": "WR", "team": "LAR", "why": "Puka inactive. Adams caught eight for 195 and two, including the 31-yard opener. Stafford threw four. The target tree paid the veteran on Monday.", "src": "Reuters, CBS Sports"},
+    {"name": "Jayden Daniels", "pos": "QB", "team": "WAS", "why": "Left elbow again. ESPN already talks about a month. Superflex rooms that just watched 0-2 will sell a Keep quarterback cheap. Pay the years, sit the month.", "src": "ESPN"},
+    {"name": "Tyler Shough", "pos": "QB", "team": "NO", "why": "Beat Baltimore 24-17. 252, a sneak at 1:28, Olave 86 and a score. Superflex streams that added him after Detroit just cashed. Hold the chair.", "src": "Sportsnet"},
+    {"name": "Darren Waller", "pos": "TE", "team": "CAR", "why": "Two scores in the 34-3. Young spread it around and Waller finished the drives. Tight end rooms that slept on Carolina can still buy the week-after price.", "src": "NFL.com, ESPN"},
+    {"name": "Puka Nacua", "pos": "WR", "team": "LAR", "why": "Inactive Monday with the hip. Stafford still threw for 327 and four. The tree is still his when he dresses. Buy the missed night from the manager who only watched Adams.", "src": "Yahoo Sports, Reuters"},
 ]
 COLD = [
-    {"name": "D'Andre Swift", "pos": "RB", "team": "CHI", "why": "Three scores and 124 yards in a 59-point game. Reuters called it a record. Someone in your league now believes he is a top-five back. Take the overpay.", "src": "Reuters"},
-    {"name": "David Montgomery", "pos": "RB", "team": "HOU", "why": "Three scores in a loss to Buffalo. Houston will score again. The touchdown luck will calm down.", "src": "CBS Sports"},
-    {"name": "Kyle Monangai", "pos": "RB", "team": "CHI", "why": "A 61-yard score on ten carries next to Swift. Fun tape. Fragile role. Sell the spike.", "src": "Reuters"},
-    {"name": "Tyler Shough", "pos": "QB", "team": "NO", "why": "410 yards in a 21-0 hole. Superflex adds him. If a manager offers a real QB2 plus a pick, listen.", "src": "ESPN"},
-    {"name": "Carson Wentz", "pos": "QB", "team": "MIN", "why": "A comeback in Green Bay already has people writing poems. The job is still a committee of circumstances.", "src": "PFF"},
-    {"name": "Cairo Santos", "pos": "K", "team": "CHI", "why": "Every streamer list in the country just printed his name. If someone wants to trade a skill piece for a kicker, let them.", "src": "RotoBaller"},
-    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "Parker Washington still ate. Jacksonville won 34-10 and the target tree still looks crowded. Sell a name people drafted as a WR1.", "src": "RotoWire"},
-    {"name": "Josh Jacobs", "pos": "RB", "team": "GB", "why": "The exemption is still the story. Green Bay lost 39-22 and the backfield stays messy. Take a 2027 second if it is still on the table.", "src": "FantasyPros"},
-    {"name": "Cam Ward", "pos": "QB", "team": "TEN", "why": "The Titans scored ten against the Jets. Year 2 tape still asks for time. Flip after a spike week if you can.", "src": "RotoWire"},
-    {"name": "Tua Tagovailoa", "pos": "QB", "team": "ATL", "why": "Oblique language after Pittsburgh. Atlanta still gets Carolina at home. The one-year deal already had a short window. Sell into hope.", "src": "RotoBaller"},
+    {"name": "D'Andre Swift", "pos": "RB", "team": "CHI", "why": "Three scores in a 59-point opener, then a 9-3 rain night and a quarterback on a cart. If someone still has him as a top-five back, take the overpay before the committee language returns.", "src": "Reuters, ESPN"},
+    {"name": "Jaxson Dart", "pos": "QB", "team": "NYG", "why": "Left knee on the first series Monday. Winston threw 11 of 27. Redraft rooms that just watched a Sunday-night win will still pay starter money. Take it.", "src": "Reuters"},
+    {"name": "J.K. Dobbins", "pos": "RB", "team": "DEN", "why": "Hamstring after ten carries. Harvey already out. Coleman already scored. Hamstrings linger. Sell the starter tag if a manager still wants the name on the card.", "src": "Sports Illustrated"},
+    {"name": "Tua Tagovailoa", "pos": "QB", "team": "ATL", "why": "Oblique, inactive again. Rush threw for 86 with two picks in a 34-3 home loss. Atlanta is 0-2. The one-year window already looks short. Sell into the hope that he dresses next week.", "src": "Sportsnet, RotoBaller"},
+    {"name": "C.J. Stroud", "pos": "QB", "team": "HOU", "why": "Home, 20-6, Burrow found Chase twice. Rooms drafted Stroud like a ceiling. Two weeks have been a floor. If someone still wants the brand, let them pay Superflex money.", "src": "NFL.com"},
+    {"name": "Baker Mayfield", "pos": "QB", "team": "TB", "why": "Revenge script at home, then 23-19 after a two-hour lightning delay and a fourth-down ball past Egbuka. The mash took Tampa. Sell the revenge premium.", "src": "The Recap"},
+    {"name": "David Montgomery", "pos": "RB", "team": "HOU", "why": "Three scores in the opener, then a 20-6 home night that asked the run game for almost nothing. The touchdown luck already spent itself.", "src": "CBS Sports"},
+    {"name": "Brian Thomas Jr.", "pos": "WR", "team": "JAX", "why": "Jacksonville lost in Denver. Parker Washington still ate. A name people drafted as a WR1 is still sharing a crowded tree. Sell the August price.", "src": "RotoWire"},
+    {"name": "Cam Ward", "pos": "QB", "team": "TEN", "why": "Ten in the opener, 20 at home against Philadelphia, and Hurts still found Cooper with nine seconds left. Year 2 still asks for time. Flip after any spike.", "src": "RotoWire"},
+    {"name": "DK Metcalf", "pos": "WR", "team": "PIT", "why": "Nine targets, two catches, and a 20-3 road loss. ESPN already called him a WR3 week. If a room still has him as a WR1, take the memory money.", "src": "NFL.com"},
 ]
 
 
@@ -501,6 +501,30 @@ def meta_map(pfn_rows):
 
 def fmt_val(n: int) -> str:
     return f"{int(n):,}"
+
+
+def attach_pos_ranks(rows):
+    """Tag each row with in-position rank so the second RB on a list reads RB2."""
+    counts = defaultdict(int)
+    for r in rows:
+        pos = (r.get("pos") or "").strip()
+        if not pos:
+            r["pos_rank"] = 0
+            r["pos_label"] = ""
+            continue
+        counts[pos] += 1
+        r["pos_rank"] = counts[pos]
+        r["pos_label"] = f"{pos}{counts[pos]}"
+    return rows
+
+
+def pos_span(row):
+    pos = (row.get("pos") if isinstance(row, dict) else row) or ""
+    if isinstance(row, dict):
+        label = row.get("pos_label") or (f"{pos}{row['pos_rank']}" if row.get("pos_rank") else pos)
+    else:
+        label = pos
+    return f'<span class="pos {esc(pos)}">{esc(label)}</span>'
 
 
 def attach_values(rows, qb_mult_for_qb: float = 1.0):
@@ -866,7 +890,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 64
+CSS_VER = 66
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -891,7 +915,9 @@ def nav_href(target: str, depth: int) -> str:
 
 def fb_is_current(href: str, path: str) -> bool:
     news_here = path == "news.html" or path.startswith("news/")
-    articles_here = path in ("articles.html", "the-long-game.html")
+    articles_here = path in (
+        "articles.html", "the-long-game.html", "week2-tape.html", "week2-ledger.html",
+    )
     return href == path or (href == "news.html" and news_here) or (
         href == "board.html" and path == "redraft-ppr.html"
     ) or (href == "articles.html" and articles_here)
@@ -1098,7 +1124,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Superflex dynasty top 400 from 40 boards, rebuilt September 19, 2026. Rank 1 is 12,000 BK Value.",
+        "Superflex dynasty top 400 from 40 boards, rebuilt September 22, 2026. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -1198,7 +1224,7 @@ FB_SEO = {
     ),
     "weekly.html": (
         "Week 2 Fantasy Football Rankings 2026 | Ball Keep",
-        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (sixty-plus experts, Sep 19), RotoWire, and 4for4.",
+        "Week 2 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Sep 22), RotoWire, and 4for4.",
         "img/logo.jpg",
     ),
     "the-recap.html": (
@@ -1268,7 +1294,7 @@ FB_SEO = {
     ),
     "week2-matchups.html": (
         "Week 2 NFL Matchups and Win Predictions 2026 | Ball Keep",
-        "Full Week 2 card. Thursday final is Buffalo 41, Detroit 31. Fifteen Sunday and Monday picks still live, plus the essay.",
+        "Week 2 card after Monday. The mash closed 11-5. Rams 28-6, Buffalo 41-31, Carolina 34-3, Kansas City in overtime.",
         "img/players/josh-allen.png",
     ),
     "archive/week1/index.html": (
@@ -1313,8 +1339,18 @@ FB_SEO = {
     ),
     "articles.html": (
         "Fantasy Football Articles | Ball Keep",
-        "Essays and long-term Superflex strategy on Ball Keep. The Long Game, The Recap, Week 2 Predictions, The Market, and The Method.",
-        "img/players/josh-allen.png",
+        "Essays and long-term Superflex strategy on Ball Keep. The Second Sunday, The Ledger, The Long Game, The Recap, and The Method.",
+        "img/players/matthew-stafford.png",
+    ),
+    "week2-tape.html": (
+        "The Second Sunday: Week 2 in full | Ball Keep",
+        "Sixteen scores after Monday in Inglewood. Rams 28-6, Carolina 34-3, Kansas City in overtime. The full Week 2 tape.",
+        "img/players/matthew-stafford.png",
+    ),
+    "week2-ledger.html": (
+        "The Ledger: What Week 2 paid | Ball Keep",
+        "Every list now prints RB2 and WR3. Buy the names rooms punished after the card. Sell the ones they just crowned.",
+        "img/players/jamarr-chase.jpg",
     ),
     "the-long-game.html": (
         "The Long Game | Superflex Dynasty Strategy | Ball Keep",
@@ -1379,7 +1415,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 19, 2026 from the live public lists."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 22, 2026 from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
@@ -1669,12 +1705,30 @@ FB_ALSO = {
         ("discord.html", "Discord", "Ranks inside a server."),
     ],
     "articles.html": [
+        ("week2-tape.html", "The Second Sunday", "Sixteen scores after Monday in Inglewood."),
+        ("week2-ledger.html", "The Ledger", "RB2 on the lists, and what Week 2 paid."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("the-recap.html", "The Recap", "The full Week 1 essay."),
         ("week2-matchups.html", "Week 2 Predictions", "A pick on every line."),
         ("the-market.html", "The Market", "Buy low and sell high after Week 1."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+    ],
+    "week2-tape.html": [
+        ("articles.html", "Articles", "Every long read in one list."),
+        ("week2-ledger.html", "The Ledger", "What the lists learned after the card."),
+        ("week2-matchups.html", "Week 2 Predictions", "Every pick, every receipt."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells after Week 2."),
+        ("the-recap.html", "The Recap", "The full Week 1 essay."),
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+    ],
+    "week2-ledger.html": [
+        ("articles.html", "Articles", "Every long read in one list."),
+        ("week2-tape.html", "The Second Sunday", "Sixteen scores after Monday."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells after Week 2."),
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("board.html", "The Board", "Redraft PPR, this year."),
+        ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
     ],
     "the-long-game.html": [
         ("articles.html", "Articles", "Every long read in one list."),
@@ -1777,6 +1831,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
+    attach_pos_ranks(rows)
     cols = ["BK", "Player", "Pos", "Team"]
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
@@ -1787,7 +1842,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
         age_label = f"age {age_txt}" if show_age and age_txt else ""
         age_span = f'<span class="age-desc">{esc(age_label)}</span>' if age_label else ""
         meta = (
-            f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
+            f'<div class="row-meta">{pos_span(r)}'
             f" · {esc(team)}</div>"
         )
         face = ""
@@ -1809,7 +1864,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
             f'<tr{row_cls} data-pos="{esc(pos)}" data-name="{dn}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
             f'<td class="c-name">{mark}{face}{stack}</td>'
-            f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
+            f'<td class="c-pos">{pos_span(r)}</td>'
             f'<td class="c-team">{esc(team)}</td>'
             f"{extra_cells(r)}"
             "</tr>"
@@ -1867,9 +1922,10 @@ def matchup_table(rows):
         pick = r.get("pick") or ""
         tv = r.get("tv") or ""
         final = r.get("final") or ""
-        pick_cell = f"{pick} {final}".strip() if final else pick
+        final_winner = r.get("final_winner") or pick
+        pick_cell = f"{final_winner} {final}".strip() if final else pick
         meta = " · ".join(x for x in (
-            f"Final {pick} {final}" if final else (f"Pick {pick}" if pick else ""),
+            f"Final {final_winner} {final}" if final else (f"Pick {pick}" if pick else ""),
             tv,
         ) if x)
         row_cls = ' class="is-final"' if final else ""
@@ -1995,7 +2051,9 @@ def home_week_faces():
     """Faces and the recap teaser so the home week block feels like a room."""
     from the_long_game import long_game_teaser
     from the_recap import recap_teaser
+    from week2_ledger import ledger_teaser
     from week2_predictions import predictions_teaser
+    from week2_tape import tape_teaser
     shots = [
         ("caleb-williams", "jpg", "Caleb Williams"),
         ("kenneth-walker", "jpg", "Kenneth Walker"),
@@ -2012,7 +2070,9 @@ def home_week_faces():
         for slug, ext, name in shots
     )
     return (
-        long_game_teaser()
+        tape_teaser()
+        + ledger_teaser()
+        + long_game_teaser()
         + recap_teaser()
         + predictions_teaser()
         + f'<div class="home-faces" aria-label="Faces from Week 1">{pics}</div>'
@@ -2020,6 +2080,7 @@ def home_week_faces():
 
 
 def home_rank_preview(rows, media, n=8):
+    attach_pos_ranks(rows)
     items = []
     for r in rows[:n]:
         name = r.get("name") or ""
@@ -2041,7 +2102,7 @@ def home_rank_preview(rows, media, n=8):
             f'<span class="home-rk">{esc(r.get("bk") or "")}</span>'
             f"{face}"
             f'<span class="home-rank-meta">{name_html}'
-            f'<span>{esc(pos)} · {esc(team)}</span></span>'
+            f'<span>{esc(r.get("pos_label") or pos)} · {esc(team)}</span></span>'
             f'<span class="home-val">{esc(val)}</span>'
             "</div></li>"
         )
@@ -3343,6 +3404,13 @@ def main():
     sf_redraft = superflex_redraft(keep, ppr)
     apply_media_ages(sf_redraft, media, ages)
     board = ppr
+    attach_pos_ranks(keep)
+    attach_pos_ranks(long_board)
+    attach_pos_ranks(ppr)
+    attach_pos_ranks(std)
+    attach_pos_ranks(classic)
+    attach_pos_ranks(best_ball)
+    attach_pos_ranks(sf_redraft)
     profiles = collect_profiles(keep, ppr, std, sf_redraft, classic, best_ball)
     apply_media_ages(profiles, media, ages)
     (ROOT / "data" / "player_roster.json").write_text(json.dumps(profiles, indent=2))
@@ -3554,19 +3622,26 @@ def main():
     write("rookies-2026.html", board_page("2026 Rookies", "rookies-2026.html", rook_body))
 
     # HOT COLD
+    board_pos = {norm_name(r["name"]): r.get("pos_label") or r.get("pos") or "" for r in board}
+    keep_pos = {norm_name(r["name"]): r.get("pos_label") or r.get("pos") or "" for r in keep}
+    for bucket in (HOT, COLD):
+        for x in bucket:
+            key = norm_name(x["name"])
+            x["pos_label"] = board_pos.get(key) or keep_pos.get(key) or x.get("pos") or ""
+
     def hc_cards(items, cls):
         out = []
         for i, x in enumerate(items, 1):
             out.append(
                 f'<article class="tile {cls}"><span class="badge">{i}</span> '
-                f'<h3>{player_anchor(x["name"])} <span class="pos {esc(x["pos"])}">{esc(x["pos"])}</span> {esc(x["team"])}</h3>'
+                f'<h3>{player_anchor(x["name"])} {pos_span(x)} {esc(x["team"])}</h3>'
                 f'<p>{esc(x["why"])}</p><p class="note">Source: {esc(x["src"])}</p></article>'
             )
         return "".join(out)
     hc_body = f"""
     <p class="kicker">Market Tape · {UPDATED}</p>
     <h1>BK Hot 'n' Cold</h1>
-    <p class="note">After Week 1. Rising names to Buy and aging or overpriced names to Sell, pulled from the opener, ESPN, Reuters, the Associated Press, Sports Illustrated, RotoBaller, FantasyPros, and the recap tape.</p>
+    <p class="note">After Week 2. Sixteen scores are in. Buy the names rooms punished after a cart, a knee, or a missed Monday. Sell the names rooms just crowned after one loud night. Pulled from Sunday, Monday in Inglewood, ESPN, Reuters, Sports Illustrated, NFL.com, and the Week 2 tape.</p>
     <div class="grid">
       <div>
         <h3 class="hc-hot">Hot: Buy</h3>
@@ -3578,13 +3653,13 @@ def main():
       </div>
     </div>
     {sources_panel([
-        ("The Recap", "the-recap.html", "Full Week 1 essay and the sixteen scores."),
-        ("Reuters", "https://www.reuters.com/sports/nfl-roundup-bears-score-59-record-setting-week-1-win-over-panthers--flm-2026-09-14/", "Bears 59, Panthers 37."),
-        ("Associated Press", "https://www.espn.com/nfl/recap?gameId=401872931", "Walker 173, Mahomes in the brace."),
-        ("Sports Illustrated", "https://www.si.com/onsi/fantasy/waiver-wire/fantasy-football-top-overall-waiver-wire-pickups-for-all-positions-week-2-is-jalen-coker-the-panthers-wr1", "Coker the top overall add."),
-        ("ESPN", "https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-49939032/fantasy-football-waiver-wire-free-agent-pickups-nfl-week-2", "Shough, Black, Coker on the wire."),
-        ("RotoBaller", "https://www.rotoballer.com/waiver-wire-rankings-fantasy-football-week-2-2026/1930758", "Mariano Week 2 waiver ranks."),
-        ("FantasyPros", "https://www.fantasypros.com/2026/09/fantasy-football-waiver-wire-rankings-pickups-week-2-2026/", "Week 2 pickup list."),
+        ("Week 2 Tape", "week2-tape.html", "Sixteen scores after Monday in Inglewood."),
+        ("Week 2 Ledger", "week2-ledger.html", "What the lists learned after the card."),
+        ("Reuters", "https://www.reuters.com/sports/nfl/matthew-stafford-fires-4-touchdown-passes-rams-cruise-past-giants--flm-2026-09-22/", "Stafford four scores, Rams 28-6."),
+        ("Sports Illustrated", "https://www.si.com/onsi/fantasy/injuries/jk-dobbins-injury-opens-the-door-for-jonah-coleman-to-become-a-fantasy-football-waiver-wire-priority", "Coleman first after Dobbins."),
+        ("ESPN", "https://www.espn.com/nfl/story/_/id/49951393/week-2-sunday-games-takeaways-questions-2026", "Young, Henderson, Williams hamstring."),
+        ("NFL.com", "https://www.nfl.com/news/2026-nfl-season-week-2-what-we-learned-from-sunday-s-games", "Sunday tape, Maye splash plays."),
+        ("Sportsnet", "https://www.sportsnet.ca/nfl/article/nfl-week-2-roundup-saints-take-down-ravens/", "Saints 24-17, Patriots 20-3."),
     ], heading="Boards in This Aggregate")}
     """
     write("hot-n-cold.html", board_page("Hot 'n' Cold", "hot-n-cold.html", hc_body))
@@ -3727,8 +3802,9 @@ def main():
             f"A pick for every Week 2 game, mashed from {len(W2_MATCH_SOURCES)} published sources: "
             "Sporting News, CBS Sports, NFL Spin Zone, Sports Brackets, Sportsnaut, The Game Haus, "
             "the market favorite, Week 1 winners, and a short post-opener power board. Unpicked games "
-            "on a board are skipped. The pick is the side with more votes. Thursday already finished: "
-            "Buffalo 41, Detroit 31. The essay under the table walks the slate in kickoff order."
+            "on a board are skipped. The pick is the side with more votes. All sixteen games "
+            "have a final. The mash closed 11-5. Monday in Inglewood was Rams 28, Giants 6. The essay "
+            "under the table walks the slate in kickoff order."
         ),
         extra=predictions_article_html(),
         extra_jsonld=PREDICTION_LD,
@@ -3974,6 +4050,8 @@ def main():
         "https://ballkeep.com/the-method.html",
         "https://ballkeep.com/articles.html",
         "https://ballkeep.com/the-long-game.html",
+        "https://ballkeep.com/week2-tape.html",
+        "https://ballkeep.com/week2-ledger.html",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/news.html",
         "https://ballkeep.com/the-x.html",

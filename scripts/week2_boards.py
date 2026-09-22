@@ -278,6 +278,27 @@ MATCH_SOURCES = [
 ]
 
 
+# Sixteen receipts. Monday closed in Inglewood.
+WEEK2_FINALS = {
+    "DET@BUF": {"score": "41-31", "winner": "BUF", "day": "Thu Final"},
+    "CAR@ATL": {"score": "34-3", "winner": "CAR", "day": "Sun Final"},
+    "NO@BAL": {"score": "24-17", "winner": "NO", "day": "Sun Final"},
+    "MIN@CHI": {"score": "9-3", "winner": "MIN", "day": "Sun Final"},
+    "CIN@HOU": {"score": "20-6", "winner": "CIN", "day": "Sun Final"},
+    "PIT@NE": {"score": "20-3", "winner": "NE", "day": "Sun Final"},
+    "GB@NYJ": {"score": "20-17 OT", "winner": "GB", "day": "Sun Final"},
+    "CLE@TB": {"score": "23-19", "winner": "CLE", "day": "Sun Final"},
+    "PHI@TEN": {"score": "24-20", "winner": "PHI", "day": "Sun Final"},
+    "JAX@DEN": {"score": "20-13", "winner": "DEN", "day": "Sun Final"},
+    "LV@LAC": {"score": "26-14", "winner": "LV", "day": "Sun Final"},
+    "SEA@ARI": {"score": "31-7", "winner": "SEA", "day": "Sun Final"},
+    "WAS@DAL": {"score": "37-20", "winner": "DAL", "day": "Sun Final"},
+    "MIA@SF": {"score": "35-13", "winner": "SF", "day": "Sun Final"},
+    "IND@KC": {"score": "33-30 OT", "winner": "KC", "day": "Sun Final"},
+    "NYG@LAR": {"score": "28-6", "winner": "LAR", "day": "Mon Final"},
+}
+
+
 def week2_matchups():
     maps = match_maps()
     rows = []
@@ -310,16 +331,12 @@ def week2_matchups():
             "home_n": counts.get(home, 0),
             "picks": picks,
         })
-        if key == "DET@BUF":
-            rows[-1]["final"] = "41-31"
-            rows[-1]["day"] = "Thu Final"
-    day_ord = {"Wed": 0, "Thu": 1, "Fri": 2, "Sat": 3, "Sun": 4, "Mon": 5}
-    rows.sort(key=lambda r: (
-        day_ord.get((r["day"] or "").split()[0], 9),
-        -r["win_n"],
-        -r["n"],
-        r["key"],
-    ))
+        fin = WEEK2_FINALS.get(key)
+        if fin:
+            rows[-1]["final"] = fin["score"]
+            rows[-1]["final_winner"] = fin["winner"]
+            rows[-1]["day"] = fin["day"]
+    rows.sort(key=lambda r: int(r.get("slate") or 0))
     for i, r in enumerate(rows, 1):
         r["bk"] = i
     return rows
