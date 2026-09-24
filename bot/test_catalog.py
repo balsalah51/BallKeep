@@ -337,6 +337,8 @@ def main():
     assert "The Long Game" in tape
     assert "two-clocks.html" in tape
     assert "Two Clocks" in tape
+    assert "next-chair.html" in tape
+    assert "The Next Chair" in tape
     assert "hot-n-cold.html" in tape
     assert "touches.html" in tape
     assert "Touches and Targets" in tape
@@ -347,6 +349,8 @@ def main():
     assert 'href="trade.html"' in tools
     assert "the-split.html" in tools
     assert "The Split" in tools
+    assert "the-inheritance.html" in tools
+    assert "The Inheritance" in tools
     assert "league.html" in mine
     assert "My Team" in mine
     assert "league.html" not in tools
@@ -420,6 +424,8 @@ def main():
     assert "The Long Game" in articles
     assert "two-clocks.html" in articles
     assert "Two Clocks" in articles
+    assert "next-chair.html" in articles
+    assert "The Next Chair" in articles
     assert "the-split.html" in articles or "the-split.html" in html_of("two-clocks.html")
     assert "week2-tape.html" in articles
     assert "The Second Sunday" in articles
@@ -449,6 +455,17 @@ def main():
     assert "Keep chair" in split
     assert "Window" in split
     assert "\u2014" not in split
+    chair = html_of("next-chair.html")
+    assert "When a starter sits, the snaps still have to go somewhere." in chair
+    assert "the-inheritance.html" in chair
+    assert "\u2014" not in chair
+    assert "desk" not in chair.lower()
+    inherit = html_of("the-inheritance.html")
+    assert "<h1>The Inheritance</h1>" in inherit
+    assert "inherit-app" in inherit
+    assert "js/inherit.js" in inherit
+    assert "The hole" in inherit
+    assert "\u2014" not in inherit
     long_game = html_of("the-long-game.html")
     assert "Hold the years in your hands when the week is shouting." in long_game
     assert "Weather and climate" in long_game
@@ -811,6 +828,7 @@ def main():
         "waiver.html",
         "adp.html",
         "the-split.html",
+        "the-inheritance.html",
         "the-fence.html",
         "touches.html",
         "rookies-2026.html",
