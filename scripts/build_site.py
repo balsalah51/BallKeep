@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 22, 2026"
-LASTMOD = "2026-09-22"
+UPDATED = "September 24, 2026"
+LASTMOD = "2026-09-24"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -503,18 +503,20 @@ def fmt_val(n: int) -> str:
     return f"{int(n):,}"
 
 
-def attach_pos_ranks(rows):
+def attach_pos_ranks(rows, overwrite=True):
     """Tag each row with in-position rank so the second RB on a list reads RB2."""
     counts = defaultdict(int)
     for r in rows:
         pos = (r.get("pos") or "").strip()
         if not pos:
             r["pos_rank"] = 0
-            r["pos_label"] = ""
+            if overwrite or not r.get("pos_label"):
+                r["pos_label"] = ""
             continue
         counts[pos] += 1
         r["pos_rank"] = counts[pos]
-        r["pos_label"] = f"{pos}{counts[pos]}"
+        if overwrite or not r.get("pos_label"):
+            r["pos_label"] = f"{pos}{counts[pos]}"
     return rows
 
 
@@ -867,6 +869,7 @@ NAV_GROUPS = [
     ("tools", "Tools", [
         ("adp.html", "ADP"),
         ("trade.html", "Trade"),
+        ("the-split.html", "The Split"),
         ("the-method.html", "The Method"),
     ]),
     ("mine", "Yours", [
@@ -890,7 +893,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 66
+CSS_VER = 67
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -917,6 +920,7 @@ def fb_is_current(href: str, path: str) -> bool:
     news_here = path == "news.html" or path.startswith("news/")
     articles_here = path in (
         "articles.html", "the-long-game.html", "week2-tape.html", "week2-ledger.html",
+        "two-clocks.html",
     )
     return href == path or (href == "news.html" and news_here) or (
         href == "board.html" and path == "redraft-ppr.html"
@@ -1124,7 +1128,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Superflex dynasty top 400 from 40 boards, rebuilt September 22, 2026. Rank 1 is 12,000 BK Value.",
+        "Superflex dynasty top 400 from 40 boards, rebuilt September 24, 2026. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -1339,8 +1343,18 @@ FB_SEO = {
     ),
     "articles.html": (
         "Fantasy Football Articles | Ball Keep",
-        "Essays and long-term Superflex strategy on Ball Keep. The Second Sunday, The Ledger, The Long Game, The Recap, and The Method.",
-        "img/players/matthew-stafford.png",
+        "Essays and long-term Superflex strategy on Ball Keep. Two Clocks, The Split, The Second Sunday, The Ledger, and The Long Game.",
+        "img/players/drake-maye.jpg",
+    ),
+    "two-clocks.html": (
+        "Two Clocks | Dynasty vs Redraft | Ball Keep",
+        "A room has two clocks. The Keep is years. The Board is Sunday. The Split prints both and names the window year.",
+        "img/players/drake-maye.jpg",
+    ),
+    "the-split.html": (
+        "The Split | Keep vs Board Window | Ball Keep",
+        "Two clocks on every name. Build a room and see if it is a 2026 club or a 2028 club. Keep BK Value next to Board BK Value.",
+        "img/players/drake-maye.jpg",
     ),
     "week2-tape.html": (
         "The Second Sunday: Week 2 in full | Ball Keep",
@@ -1415,7 +1429,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 22, 2026 from the live public lists."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 24, 2026 from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
@@ -1470,6 +1484,7 @@ FB_ALSO = {
         ("trade-superflex.html", "Superflex Calculator", "Keep ranks as BK Value."),
         ("players/index.html", "Player Pages", "Every Keep name, tape included."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
+        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
     ],
     "board.html": [
@@ -1482,6 +1497,7 @@ FB_ALSO = {
         ("trade-ppr.html", "PPR Calculator", "Board ranks as BK Value."),
         ("players/index.html", "Player Pages", "Tape and plus/minus."),
         ("news.html", "BK News", "Injuries and roster tape."),
+        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
     ],
     "best-ball.html": [
@@ -1537,6 +1553,7 @@ FB_ALSO = {
         ("the-keep.html", "The Keep", "Superflex dynasty ranks."),
         ("board.html", "The Board", "Redraft PPR ranks."),
         ("recent-trades.html", "Recent Deals", "Packages that closed."),
+        ("the-split.html", "The Split", "Two clocks before you price one."),
         ("players/index.html", "Player Pages", "Every name in the calc."),
     ],
     "news.html": [
@@ -1650,6 +1667,7 @@ FB_ALSO = {
     ],
     "league.html": [
         ("trade.html", "Trade Calculators", "Price a deal."),
+        ("the-split.html", "The Split", "Two clocks on the room you actually roster."),
         ("the-keep.html", "The Keep", "Superflex dynasty."),
         ("waiver.html", "Week 2 Waivers", "Coker, Black, and the names the opener moved."),
         ("adp.html", "ADP", "Board vs ESPN."),
@@ -1700,11 +1718,30 @@ FB_ALSO = {
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
         ("board.html", "The Board", "Redraft PPR, this year."),
         ("trade.html", "Trade Calculators", "BK Value on six boards."),
+        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("the-fence.html", "The Fence (IDP)", "Superflex plus IDP."),
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("discord.html", "Discord", "Ranks inside a server."),
     ],
+    "the-split.html": [
+        ("two-clocks.html", "Two Clocks", "The essay that belongs with this page."),
+        ("the-keep.html", "The Keep", "Superflex dynasty, the years clock."),
+        ("board.html", "The Board", "Redraft PPR, the Sunday clock."),
+        ("trade.html", "Trade", "Price one clock."),
+        ("league.html", "My Team", "Load a Sleeper league."),
+        ("the-method.html", "The Method", "How the Super Aggregate is built."),
+    ],
+    "two-clocks.html": [
+        ("the-split.html", "The Split", "Two clocks and a window year."),
+        ("articles.html", "Articles", "Every long read in one list."),
+        ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
+        ("board.html", "The Board", "Redraft PPR, this year."),
+        ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
+        ("the-method.html", "The Method", "How the Super Aggregate is built."),
+    ],
     "articles.html": [
+        ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
+        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("week2-tape.html", "The Second Sunday", "Sixteen scores after Monday in Inglewood."),
         ("week2-ledger.html", "The Ledger", "RB2 on the lists, and what Week 2 paid."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
@@ -1827,11 +1864,11 @@ def _rank_th(label):
     return f"<th{attr}>{esc(label)}</th>"
 
 
-def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, faces=False, show_age=False, draft_check=False):
+def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, faces=False, show_age=False, draft_check=False, overwrite_pos=True):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
-    attach_pos_ranks(rows)
+    attach_pos_ranks(rows, overwrite=overwrite_pos)
     cols = ["BK", "Player", "Pos", "Team"]
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
@@ -2051,6 +2088,7 @@ def home_week_faces():
     """Faces and the recap teaser so the home week block feels like a room."""
     from the_long_game import long_game_teaser
     from the_recap import recap_teaser
+    from two_clocks import clocks_teaser
     from week2_ledger import ledger_teaser
     from week2_predictions import predictions_teaser
     from week2_tape import tape_teaser
@@ -2070,7 +2108,8 @@ def home_week_faces():
         for slug, ext, name in shots
     )
     return (
-        tape_teaser()
+        clocks_teaser()
+        + tape_teaser()
         + ledger_teaser()
         + long_game_teaser()
         + recap_teaser()
@@ -2148,7 +2187,7 @@ def home_body_html(keep, board, media, stories=None):
         <div class="home-ctas">
           <a class="cta" href="the-keep.html">The Keep</a>
           <a class="cta alt" href="board.html">The Board</a>
-          <a class="cta ghost" href="articles.html">Articles</a>
+          <a class="cta ghost" href="the-split.html">The Split</a>
         </div>
       </div>
     </section>
@@ -2196,8 +2235,10 @@ def home_body_html(keep, board, media, stories=None):
     ], extra=home_week_faces())}
     {desk_block("mine", "Yours", "Put in your own team.", "Load your Sleeper league. BK Value on every roster.", [
         ("league.html", "My Team", "Your Sleeper league. Power rankings and leftover values."),
+        ("the-split.html", "The Split", "Two clocks. A window year for the room you actually roster."),
     ])}
-    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, ADP vs The Board, and depth charts.", [
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, read both clocks, ADP vs The Board, and depth charts.", [
+        ("the-split.html", "The Split", "Keep vs Board. Window year. The gap board."),
         ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
         ("adp.html", "ADP", "The Board vs ESPN."),
         ("depth-charts.html", "Depth Charts", "32 clubs."),
@@ -2205,9 +2246,10 @@ def home_body_html(keep, board, media, stories=None):
     ])}
     {desk_block("tape", "Tape", "The non-ranking lists.", "The essays, the market notes, the player files, and the pictures.", [
         ("articles.html", "Articles", "The long reads. Strategy and the week."),
+        ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
-        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells after Week 1."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells after Week 2."),
         ("the-market.html", "The Market", "Buy low, sell high."),
         ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
         ("the-x.html", "The X", "Memes. Pictures on the card."),
@@ -3308,6 +3350,7 @@ def write_explore_page():
         ("archive/week1/index.html", "Week 1 archive", "Finished Week 1 boards."),
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
+        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("league.html", "My Team", "Your Sleeper league."),
         ("touches.html", "Touches and Targets", "2026 targets and rushes."),
         ("players/index.html", "Player Files", "Keep 400 plus tape."),
@@ -3317,6 +3360,7 @@ def write_explore_page():
         ("discord.html", "Discord Bot", "Ranks in a server."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
         ("articles.html", "Articles", "The long reads."),
+        ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
     ])}
     {group("Baseball", "BaseKeep", [
@@ -4039,6 +4083,8 @@ def main():
     write_the_method(sys.modules[__name__])
     from articles import write_articles
     write_articles(sys.modules[__name__])
+    from the_split import write_the_split
+    write_the_split(sys.modules[__name__], keep, board, media)
 
     write_explore_page()
 
@@ -4052,6 +4098,8 @@ def main():
         "https://ballkeep.com/the-long-game.html",
         "https://ballkeep.com/week2-tape.html",
         "https://ballkeep.com/week2-ledger.html",
+        "https://ballkeep.com/two-clocks.html",
+        "https://ballkeep.com/the-split.html",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/news.html",
         "https://ballkeep.com/the-x.html",

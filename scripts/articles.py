@@ -5,6 +5,9 @@ from seo import also_on_desk, breadcrumb_jsonld, breadcrumbs, esc
 from the_long_game import DEK as LONG_DEK
 from the_long_game import HEADLINE as LONG_HEAD
 from the_long_game import write_the_long_game
+from two_clocks import DEK as CLOCK_DEK
+from two_clocks import HEADLINE as CLOCK_HEAD
+from two_clocks import write_two_clocks
 from week2_ledger import DEK as LEDGER_DEK
 from week2_ledger import HEADLINE as LEDGER_HEAD
 from week2_ledger import write_week2_ledger
@@ -14,6 +17,16 @@ from week2_tape import write_week2_tape
 
 ARTICLES = [
     (
+        "two-clocks.html",
+        "Two Clocks",
+        "Thursday, Sep 24",
+        CLOCK_HEAD,
+        CLOCK_DEK,
+        "img/players/drake-maye.jpg",
+        "Drake Maye",
+        True,
+    ),
+    (
         "week2-tape.html",
         "The Second Sunday",
         "Tuesday, Sep 22",
@@ -21,7 +34,7 @@ ARTICLES = [
         TAPE_DEK,
         "img/players/matthew-stafford.png",
         "Matthew Stafford",
-        True,
+        False,
     ),
     (
         "week2-ledger.html",
@@ -111,6 +124,7 @@ def articles_hub_html() -> str:
 
 def write_articles(b):
     write_the_long_game(b)
+    write_two_clocks(b)
     write_week2_tape(b)
     write_week2_ledger(b)
     extra = also_on_desk(b.FB_ALSO.get("articles.html") or [])

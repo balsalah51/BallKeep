@@ -106,7 +106,7 @@ def method_article_html() -> str:
         <p>The Keep, The Board, Redraft Superflex, The Classic, Standard, Best Ball, Rookies, Top Defenses, Top Kickers, and The Fence are rest-of-season values. Week 2 Weekly, DST, Kickers, Predictions, and Waivers are this week's stream. The Recap is the finished Week 1 essay. The Market is the buy-low and sell-high board after the opener. Finished Week 1 lists live in the archive.</p>
         <h2>How to read a board</h2>
         <p>Find a player sits above every rank table. Position chips filter the list. A face next to a name opens the player file: Keep rank, Board rank, BK Value, 2025 tape, and the news that named him. Sources sit under the table. The FAQ on each page says which tapes got the long-core half.</p>
-        <p>Week 2 Predictions is a vote mash of published sides, written as an essay with a pick on every line. The Market and Hot 'n' Cold are editorial boards tied to the ranks. They argue. The mash still holds the chair on the big lists. The Long Game, on Articles, is the Superflex strategy essay for the years after one loud week.</p>
+        <p>The Split sits next to Trade. Type the names you actually roster and it prints Keep money, Board money, and the year that room is trying to win. Week 2 Predictions is a vote mash of published sides, written as an essay with a pick on every line. The Market and Hot 'n' Cold are editorial boards tied to the ranks. They argue. The mash still holds the chair on the big lists. Two Clocks and The Long Game, on Articles, are the Superflex essays for the years after one loud week.</p>
       </section>
       <section class="method-map" aria-label="The boards">
         <p class="kicker">The house</p>
@@ -115,6 +115,7 @@ def method_article_html() -> str:
           <a class="tile" href="the-keep.html"><h3>The Keep</h3><p>Superflex dynasty, top 400, 40 boards.</p></a>
           <a class="tile" href="board.html"><h3>The Board</h3><p>Redraft PPR, this year, 40 boards.</p></a>
           <a class="tile" href="the-fence.html"><h3>The Fence</h3><p>Superflex plus IDP on one mixed board.</p></a>
+          <a class="tile" href="the-split.html"><h3>The Split</h3><p>Two clocks. A window year for the room.</p></a>
           <a class="tile" href="trade.html"><h3>Trade</h3><p>BK Value on six calculators.</p></a>
           <a class="tile" href="weekly.html"><h3>Weekly</h3><p>Week 2 skill start and sit.</p></a>
           <a class="tile" href="week2-matchups.html"><h3>Predictions</h3><p>A published pick on every game.</p></a>

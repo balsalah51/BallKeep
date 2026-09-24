@@ -335,6 +335,8 @@ def main():
     assert "articles.html" in tape
     assert "the-long-game.html" in tape
     assert "The Long Game" in tape
+    assert "two-clocks.html" in tape
+    assert "Two Clocks" in tape
     assert "hot-n-cold.html" in tape
     assert "touches.html" in tape
     assert "Touches and Targets" in tape
@@ -343,6 +345,8 @@ def main():
     assert "the-x.html" in tape
     assert "the-fence.html" not in tape
     assert 'href="trade.html"' in tools
+    assert "the-split.html" in tools
+    assert "The Split" in tools
     assert "league.html" in mine
     assert "My Team" in mine
     assert "league.html" not in tools
@@ -414,6 +418,9 @@ def main():
     assert "<h1>The long reads.</h1>" in articles
     assert "the-long-game.html" in articles
     assert "The Long Game" in articles
+    assert "two-clocks.html" in articles
+    assert "Two Clocks" in articles
+    assert "the-split.html" in articles or "the-split.html" in html_of("two-clocks.html")
     assert "week2-tape.html" in articles
     assert "The Second Sunday" in articles
     assert "week2-ledger.html" in articles
@@ -430,6 +437,18 @@ def main():
     assert "RB2" in ledger
     assert "\u2014" not in ledger
     assert "desk" not in ledger.lower()
+    clocks = html_of("two-clocks.html")
+    assert "A room has two clocks, and most sites only wind one of them." in clocks
+    assert "the-split.html" in clocks
+    assert "\u2014" not in clocks
+    assert "desk" not in clocks.lower()
+    split = html_of("the-split.html")
+    assert "<h1>The Split</h1>" in split
+    assert "split-app" in split
+    assert "js/split.js" in split
+    assert "Keep chair" in split
+    assert "Window" in split
+    assert "\u2014" not in split
     long_game = html_of("the-long-game.html")
     assert "Hold the years in your hands when the week is shouting." in long_game
     assert "Weather and climate" in long_game
@@ -791,6 +810,7 @@ def main():
         "weekly-qb.html",
         "waiver.html",
         "adp.html",
+        "the-split.html",
         "the-fence.html",
         "touches.html",
         "rookies-2026.html",
