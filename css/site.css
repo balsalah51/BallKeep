@@ -1442,3 +1442,31 @@ body.essay-page .opening .lede::first-letter {
   .article-card img, .article-card.is-lead img { width: 5.4rem; height: 5.4rem; }
   .article-card.is-lead h2 { font-size: 1.15rem; }
 }
+.split-tool { margin: 22px 0 28px; }
+.split-search { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+.split-search label { display: block; font-weight: 800; margin-bottom: 8px; }
+.split-search input[type="search"] {
+  width: 100%; font: inherit; font-size: 17px; padding: 10px 12px;
+  border: 1px solid var(--line); border-radius: 10px;
+}
+.split-clocks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
+.split-clock { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 18px; box-shadow: var(--shadow); }
+.split-clock.keep { border-top: 3px solid #1788c2; }
+.split-clock.board { border-top: 3px solid var(--red); }
+.split-clock.window { border-top: 3px solid #157a3a; }
+.split-clock.window.y2026 { border-top-color: var(--red); }
+.split-clock.window.y2028 { border-top-color: #1788c2; }
+.split-clock h3 { margin: 0; font-size: 28px; }
+.split-total { margin: 8px 0 0; font-size: 32px; font-weight: 800; color: var(--red); font-variant-numeric: tabular-nums; }
+.split-clock.keep .split-total { color: #17688a; }
+.split-room { list-style: none; margin: 16px 0 0; padding: 0; background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 8px 16px; }
+.split-room li { display: flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.split-room li:last-child { border-bottom: 0; }
+.split-room small { display: block; color: var(--muted); }
+.split-room .empty { color: var(--muted); border: 0; }
+.split-room button { border: 0; background: transparent; font-size: 20px; cursor: pointer; color: var(--muted); }
+.c-clock { font-weight: 800; }
+@media (max-width: 860px) {
+  .split-clocks { grid-template-columns: 1fr; }
+  .split-total { font-size: 28px; }
+}

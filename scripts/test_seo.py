@@ -144,7 +144,7 @@ def test_football_nav_keeps_every_link():
         "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
         "Weekly", "The Recap", "Week 2 DST", "Week 2 K", "Week 2 Predictions", "Week 2 Waivers", "The Market", "Injuries",
-        "ADP", "Trade", "The Method",
+        "ADP", "Trade", "The Split", "The Method",
         "My Team",
         "Articles", "Touches", "Players", "News", "The X", "Hot 'n' Cold",
         "NFL", "MLB", "BPL",
@@ -333,6 +333,8 @@ def test_searchaction_and_schema():
     assert "https://ballkeep.com/the-method.html" in txt
     assert "https://ballkeep.com/articles.html" in txt
     assert "https://ballkeep.com/the-long-game.html" in txt
+    assert "https://ballkeep.com/two-clocks.html" in txt
+    assert "https://ballkeep.com/the-split.html" in txt
     assert "https://ballkeep.com/week2-tape.html" in txt
     assert "https://ballkeep.com/week2-ledger.html" in txt
     assert "https://ballkeep.com/bb/" in txt
@@ -549,7 +551,8 @@ def test_visible_desk_copy_removed():
     for name in (
         "build_site.py", "weekly_pages.py", "weekly_kit.py", "special_teams.py",
         "build_bk.py", "build_bb.py", "build_pl.py",
-        "week2_boards.py", "week2_predictions.py", "week2_tape.py", "week2_ledger.py", "the_recap.py",
+        "week2_boards.py", "week2_predictions.py", "week2_tape.py", "week2_ledger.py",
+        "two_clocks.py", "the_split.py", "the_recap.py",
     ):
         text = (root / name).read_text()
         for phrase in banned:
@@ -775,6 +778,47 @@ def test_attach_pos_ranks():
     assert 'data-pos="RB"' in html
 
 
+def test_the_split():
+    from the_split import room_window, split_rows
+    keep = [
+        {"name": "Drake Maye", "pos": "QB", "team": "NE", "bk": 8, "value": 8000, "pos_label": "QB3", "age": 23},
+        {"name": "Christian McCaffrey", "pos": "RB", "team": "SF", "bk": 48, "value": 2100, "pos_label": "RB18", "age": 30},
+        {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "bk": 2, "value": 10800, "pos_label": "RB1", "age": 24},
+    ]
+    board = [
+        {"name": "Drake Maye", "pos": "QB", "team": "NE", "bk": 22, "value": 4200, "pos_label": "QB8"},
+        {"name": "Christian McCaffrey", "pos": "RB", "team": "SF", "bk": 7, "value": 8600, "pos_label": "RB3"},
+        {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "bk": 4, "value": 9700, "pos_label": "RB2"},
+    ]
+    rows = split_rows(keep, board)
+    assert len(rows) == 3
+    by_name = {r["name"]: r for r in rows}
+    assert by_name["Christian McCaffrey"]["clock"] == "Sunday"
+    assert by_name["Christian McCaffrey"]["gap"] == 41
+    assert by_name["Drake Maye"]["clock"] == "Years"
+    assert by_name["Drake Maye"]["gap"] == -14
+    assert by_name["Bijan Robinson"]["clock"] == "Even"
+    later = room_window([by_name["Drake Maye"]])
+    assert later["year"] == 2028
+    now = room_window([by_name["Christian McCaffrey"]])
+    assert now["year"] == 2026
+    empty = room_window([])
+    assert empty["year"] is None
+    assert "Add names" in empty["verdict"]
+
+
+def test_two_clocks_article():
+    from two_clocks import HEADLINE, clocks_article_html, clocks_teaser
+    html = clocks_article_html()
+    assert HEADLINE in html
+    assert "\u2014" not in html
+    assert "desk" not in html.lower()
+    assert "looking at" not in html
+    assert "the-split.html" in html
+    assert "2026" in html
+    assert "two-clocks.html" in clocks_teaser()
+
+
 def test_week2_articles():
     from week2_ledger import HEADLINE as LEDGER
     from week2_ledger import ledger_article_html, ledger_teaser
@@ -865,7 +909,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=66" in doc
+    assert "css/site.css?v=67" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 
