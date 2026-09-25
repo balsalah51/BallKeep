@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 24, 2026"
-LASTMOD = "2026-09-24"
+UPDATED = "September 25, 2026"
+LASTMOD = "2026-09-25"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -871,6 +871,7 @@ NAV_GROUPS = [
         ("trade.html", "Trade"),
         ("the-split.html", "The Split"),
         ("the-inheritance.html", "The Inheritance"),
+        ("the-handcuff.html", "The Handcuff"),
         ("the-method.html", "The Method"),
     ]),
     ("mine", "Yours", [
@@ -894,7 +895,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 68
+CSS_VER = 69
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1129,7 +1130,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "2026 Superflex Dynasty Rankings (Top 400) | Ball Keep",
-        "Superflex dynasty top 400 from 40 boards, rebuilt September 24, 2026. Rank 1 is 12,000 BK Value.",
+        "Superflex dynasty top 400 from 40 boards, rebuilt September 25, 2026. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -1362,6 +1363,11 @@ FB_SEO = {
         "If a starter sits, someone inherits the snaps. Price the heir on The Keep and The Board and read the Sunday hole.",
         "img/players/christian-mccaffrey.png",
     ),
+    "the-handcuff.html": (
+        "The Handcuff | Dynasty and Redraft RB Cuffs | Ball Keep",
+        "Running backs only. One list for dynasty Keep money. One list for the Sunday hole. The cuff is the name on the board.",
+        "img/players/christian-mccaffrey.png",
+    ),
     "next-chair.html": (
         "The Next Chair | When a starter sits | Ball Keep",
         "When a starter sits, the snaps still have to go somewhere. The Inheritance prices the next man on both clocks.",
@@ -1440,7 +1446,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 24, 2026 from the live public lists."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt September 25, 2026 from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
@@ -1733,6 +1739,7 @@ FB_ALSO = {
         ("trade.html", "Trade Calculators", "BK Value on six boards."),
         ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("the-inheritance.html", "The Inheritance", "If a starter sits, price the next man."),
+        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("the-fence.html", "The Fence (IDP)", "Superflex plus IDP."),
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("discord.html", "Discord", "Ranks inside a server."),
@@ -1740,6 +1747,7 @@ FB_ALSO = {
     "the-split.html": [
         ("two-clocks.html", "Two Clocks", "The essay that belongs with this page."),
         ("the-inheritance.html", "The Inheritance", "If a starter sits, price the next man."),
+        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("the-keep.html", "The Keep", "Superflex dynasty, the years clock."),
         ("board.html", "The Board", "Redraft PPR, the Sunday clock."),
         ("trade.html", "Trade", "Price one clock."),
@@ -1748,14 +1756,24 @@ FB_ALSO = {
     ],
     "the-inheritance.html": [
         ("next-chair.html", "The Next Chair", "The essay that belongs with this page."),
+        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("the-split.html", "The Split", "Two clocks on a room you type."),
         ("depth-charts.html", "Depth Charts", "Sleeper order for 32 clubs."),
         ("injuries.html", "Injuries", "ESPN designations."),
         ("the-keep.html", "The Keep", "Superflex dynasty, the years clock."),
         ("board.html", "The Board", "Redraft PPR, the Sunday clock."),
     ],
+    "the-handcuff.html": [
+        ("the-inheritance.html", "The Inheritance", "Every position. The hole on any starter."),
+        ("the-keep.html", "The Keep", "Superflex dynasty, the years clock."),
+        ("board.html", "The Board", "Redraft PPR, the Sunday clock."),
+        ("depth-charts.html", "Depth Charts", "Sleeper RB order."),
+        ("injuries.html", "Injuries", "ESPN designations."),
+        ("the-split.html", "The Split", "Two clocks on a room you type."),
+    ],
     "next-chair.html": [
         ("the-inheritance.html", "The Inheritance", "Name a starter. Read the hole."),
+        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("articles.html", "Articles", "Every long read in one list."),
         ("the-split.html", "The Split", "Two clocks and a window year."),
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
@@ -2274,8 +2292,10 @@ def home_body_html(keep, board, media, stories=None):
         ("league.html", "My Team", "Your Sleeper league. Power rankings and leftover values."),
         ("the-split.html", "The Split", "Two clocks. A window year for the room you actually roster."),
         ("the-inheritance.html", "The Inheritance", "If a starter sits, price the next man on both clocks."),
+        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty cuffs and redraft cuffs."),
     ])}
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, read both clocks, price the next man, ADP vs The Board, and depth charts.", [
+        ("the-handcuff.html", "The Handcuff", "RB only. Keep list and Board list."),
         ("the-inheritance.html", "The Inheritance", "Starter sits. Heir walks in. The hole is Sunday money."),
         ("the-split.html", "The Split", "Keep vs Board. Window year. The gap board."),
         ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
@@ -3392,6 +3412,7 @@ def write_explore_page():
         ("trade.html", "Trade Calculators", "BK Value."),
         ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("the-inheritance.html", "The Inheritance", "If a starter sits, price the next man."),
+        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("league.html", "My Team", "Your Sleeper league."),
         ("touches.html", "Touches and Targets", "2026 targets and rushes."),
         ("players/index.html", "Player Files", "Keep 400 plus tape."),
@@ -4129,6 +4150,8 @@ def main():
     write_the_split(sys.modules[__name__], keep, board, media)
     from the_inheritance import write_the_inheritance
     write_the_inheritance(sys.modules[__name__], keep, board, media)
+    from the_handcuff import write_the_handcuff
+    write_the_handcuff(sys.modules[__name__], keep, board, media)
 
     write_explore_page()
 
@@ -4146,6 +4169,7 @@ def main():
         "https://ballkeep.com/the-split.html",
         "https://ballkeep.com/next-chair.html",
         "https://ballkeep.com/the-inheritance.html",
+        "https://ballkeep.com/the-handcuff.html",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/news.html",
         "https://ballkeep.com/the-x.html",
