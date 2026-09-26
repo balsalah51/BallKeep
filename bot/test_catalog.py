@@ -351,6 +351,8 @@ def main():
     assert "The Split" in tools
     assert "the-inheritance.html" in tools
     assert "The Inheritance" in tools
+    assert "the-handcuff.html" in tools
+    assert "The Handcuff" in tools
     assert "league.html" in mine
     assert "My Team" in mine
     assert "league.html" not in tools
@@ -466,6 +468,13 @@ def main():
     assert "js/inherit.js" in inherit
     assert "The hole" in inherit
     assert "\u2014" not in inherit
+    handcuff = html_of("the-handcuff.html")
+    assert "<h1>The Handcuff</h1>" in handcuff
+    assert "handcuff-app" in handcuff
+    assert "js/handcuff.js" in handcuff
+    assert "Years cuffs" in handcuff
+    assert "Sunday cuffs" in handcuff
+    assert "\u2014" not in handcuff
     long_game = html_of("the-long-game.html")
     assert "Hold the years in your hands when the week is shouting." in long_game
     assert "Weather and climate" in long_game
@@ -829,6 +838,7 @@ def main():
         "adp.html",
         "the-split.html",
         "the-inheritance.html",
+        "the-handcuff.html",
         "the-fence.html",
         "touches.html",
         "rookies-2026.html",

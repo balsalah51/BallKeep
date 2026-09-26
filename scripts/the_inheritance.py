@@ -226,7 +226,7 @@ def inherit_rows(keep, board, depth=None, injuries=None):
     return rows
 
 
-def write_inherit_lookup(rows, media, updated):
+def write_inherit_lookup(rows, media, updated, dest=None, samples=None):
     from build_site import face_src, slugify
 
     media = media or {}
@@ -297,12 +297,12 @@ def write_inherit_lookup(rows, media, updated):
         "algorithm": ALGORITHM,
         "rooms": rooms,
         "players": players,
-        "samples": {
+        "samples": samples or {
             "holes": SAMPLE_HOLES,
             "years": SAMPLE_YEARS,
         },
     }
-    dest = ROOT / "data/inherit-lookup.json"
+    dest = dest or (ROOT / "data/inherit-lookup.json")
     dest.write_text(json.dumps(payload, separators=(",", ":"), ensure_ascii=True))
     return payload
 

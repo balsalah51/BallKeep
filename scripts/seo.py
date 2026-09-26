@@ -299,6 +299,7 @@ Site: https://ballkeep.com
 - The Split: https://ballkeep.com/the-split.html
 - The Next Chair: https://ballkeep.com/next-chair.html
 - The Inheritance: https://ballkeep.com/the-inheritance.html
+- The Handcuff: https://ballkeep.com/the-handcuff.html
 - Week 1 archive: https://ballkeep.com/archive/week1/
 
 ## Baseball (BaseKeep)
