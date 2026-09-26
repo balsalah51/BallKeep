@@ -259,6 +259,10 @@ def main():
     assert 'class="desk-block extra"' not in home
     assert "home-snapshot" in home
     assert "home-hero" in home
+    assert "the-inheritance.html" not in home
+    assert "next-chair.html" not in home
+    assert "The Inheritance" not in home
+    assert "The Next Chair" not in home
     assert "Superflex dynasty" in home
     assert "Redraft PPR" in home
     assert "Dynasty · Redraft" in home
@@ -337,8 +341,8 @@ def main():
     assert "The Long Game" in tape
     assert "two-clocks.html" in tape
     assert "Two Clocks" in tape
-    assert "next-chair.html" in tape
-    assert "The Next Chair" in tape
+    assert "next-chair.html" not in tape
+    assert "The Next Chair" not in tape
     assert "hot-n-cold.html" in tape
     assert "touches.html" in tape
     assert "Touches and Targets" in tape
@@ -349,8 +353,8 @@ def main():
     assert 'href="trade.html"' in tools
     assert "the-split.html" in tools
     assert "The Split" in tools
-    assert "the-inheritance.html" in tools
-    assert "The Inheritance" in tools
+    assert "the-inheritance.html" not in tools
+    assert "The Inheritance" not in tools
     assert "the-handcuff.html" in tools
     assert "The Handcuff" in tools
     assert "league.html" in mine
@@ -426,8 +430,8 @@ def main():
     assert "The Long Game" in articles
     assert "two-clocks.html" in articles
     assert "Two Clocks" in articles
-    assert "next-chair.html" in articles
-    assert "The Next Chair" in articles
+    assert "next-chair.html" not in articles
+    assert "The Next Chair" not in articles
     assert "the-split.html" in articles or "the-split.html" in html_of("two-clocks.html")
     assert "week2-tape.html" in articles
     assert "The Second Sunday" in articles
@@ -457,23 +461,18 @@ def main():
     assert "Keep chair" in split
     assert "Window" in split
     assert "\u2014" not in split
-    chair = html_of("next-chair.html")
-    assert "When a starter sits, the snaps still have to go somewhere." in chair
-    assert "the-inheritance.html" in chair
-    assert "\u2014" not in chair
-    assert "desk" not in chair.lower()
-    inherit = html_of("the-inheritance.html")
-    assert "<h1>The Inheritance</h1>" in inherit
-    assert "inherit-app" in inherit
-    assert "js/inherit.js" in inherit
-    assert "The hole" in inherit
-    assert "\u2014" not in inherit
     handcuff = html_of("the-handcuff.html")
     assert "<h1>The Handcuff</h1>" in handcuff
     assert "handcuff-app" in handcuff
     assert "js/handcuff.js" in handcuff
-    assert "Years cuffs" in handcuff
-    assert "Sunday cuffs" in handcuff
+    assert "Dynasty cuffs" in handcuff
+    assert "Redraft cuffs" in handcuff
+    assert "Cuff chair" not in handcuff
+    assert "Cuff $" not in handcuff
+    assert "Years in" not in handcuff
+    assert ">Hole<" not in handcuff
+    assert "Cuff value" in handcuff
+    assert "Behind" in handcuff
     assert "\u2014" not in handcuff
     long_game = html_of("the-long-game.html")
     assert "Hold the years in your hands when the week is shouting." in long_game
@@ -818,6 +817,10 @@ def main():
     assert "The minus is the price" not in embiid
     assert "On The Keep. That is already a rostered name" not in embiid
     assert not (root / "the-ones.html").exists()
+    assert not (root / "the-inheritance.html").exists()
+    assert not (root / "next-chair.html").exists()
+    assert not (root / "js/inherit.js").exists()
+    assert not (root / "data/inherit-lookup.json").exists()
     assert 'href="discord.html"' not in html_of("the-keep.html")
 
     rank_pages = (
@@ -837,7 +840,6 @@ def main():
         "waiver.html",
         "adp.html",
         "the-split.html",
-        "the-inheritance.html",
         "the-handcuff.html",
         "the-fence.html",
         "touches.html",

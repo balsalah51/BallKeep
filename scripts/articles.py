@@ -5,9 +5,6 @@ from seo import also_on_desk, breadcrumb_jsonld, breadcrumbs, esc
 from the_long_game import DEK as LONG_DEK
 from the_long_game import HEADLINE as LONG_HEAD
 from the_long_game import write_the_long_game
-from the_next_chair import DEK as CHAIR_DEK
-from the_next_chair import HEADLINE as CHAIR_HEAD
-from the_next_chair import write_the_next_chair
 from two_clocks import DEK as CLOCK_DEK
 from two_clocks import HEADLINE as CLOCK_HEAD
 from two_clocks import write_two_clocks
@@ -20,16 +17,6 @@ from week2_tape import write_week2_tape
 
 ARTICLES = [
     (
-        "next-chair.html",
-        "The Next Chair",
-        "Thursday, Sep 24",
-        CHAIR_HEAD,
-        CHAIR_DEK,
-        "img/players/christian-mccaffrey.png",
-        "Christian McCaffrey",
-        True,
-    ),
-    (
         "two-clocks.html",
         "Two Clocks",
         "Thursday, Sep 24",
@@ -37,7 +24,7 @@ ARTICLES = [
         CLOCK_DEK,
         "img/players/drake-maye.jpg",
         "Drake Maye",
-        False,
+        True,
     ),
     (
         "week2-tape.html",
@@ -128,7 +115,7 @@ def articles_hub_html() -> str:
     return f"""
     <p class="kicker">Articles</p>
     <h1>The long reads.</h1>
-    <p class="note">Essays and strategy on Ball Keep, written so you can sit with a week that is shouting and still remember the years you paid for in a Superflex room. The boards stay on the boards. These pages are for the manager who wants the story next to the mash.</p>
+    <p class="note">Long reads on Ball Keep, written the way a person talks after sitting with a week, so you can keep the years you paid for in a Superflex room even while Sunday is shouting. The boards stay on the boards. These pages are for the story that belongs next to the mash.</p>
     <section class="article-rail" aria-label="Ball Keep articles">
       {"".join(cards)}
     </section>
@@ -137,7 +124,6 @@ def articles_hub_html() -> str:
 
 def write_articles(b):
     write_the_long_game(b)
-    write_the_next_chair(b)
     write_two_clocks(b)
     write_week2_tape(b)
     write_week2_ledger(b)

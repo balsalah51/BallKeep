@@ -1,5 +1,5 @@
 {
-  "updated": "September 25, 2026",
+  "updated": "September 26, 2026",
   "algorithm": "value = round(12000 * exp(-0.0085 * (rank-1)) / rank**0.13). 1QB multiplies QB value by 0.38. Picks map to equivalent ranks on that curve.",
   "modes": {
     "sf": {

@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "September 25, 2026"
+UPDATED = "September 26, 2026"
 LASTMOD = "2026-09-25"
 KEEP_N = 400
 BOARD_N = 500
@@ -870,7 +870,6 @@ NAV_GROUPS = [
         ("adp.html", "ADP"),
         ("trade.html", "Trade"),
         ("the-split.html", "The Split"),
-        ("the-inheritance.html", "The Inheritance"),
         ("the-handcuff.html", "The Handcuff"),
         ("the-method.html", "The Method"),
     ]),
@@ -895,7 +894,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 69
+CSS_VER = 71
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -922,7 +921,7 @@ def fb_is_current(href: str, path: str) -> bool:
     news_here = path == "news.html" or path.startswith("news/")
     articles_here = path in (
         "articles.html", "the-long-game.html", "week2-tape.html", "week2-ledger.html",
-        "two-clocks.html", "next-chair.html",
+        "two-clocks.html",
     )
     return href == path or (href == "news.html" and news_here) or (
         href == "board.html" and path == "redraft-ppr.html"
@@ -1345,7 +1344,7 @@ FB_SEO = {
     ),
     "articles.html": (
         "Fantasy Football Articles | Ball Keep",
-        "Essays and long-term Superflex strategy on Ball Keep. The Next Chair, Two Clocks, The Split, The Second Sunday, The Ledger, and The Long Game.",
+        "Essays and long-term Superflex strategy on Ball Keep. Two Clocks, The Split, The Second Sunday, The Ledger, and The Long Game.",
         "img/players/drake-maye.jpg",
     ),
     "two-clocks.html": (
@@ -1358,19 +1357,9 @@ FB_SEO = {
         "Two clocks on every name. Build a room and see if it is a 2026 club or a 2028 club. Keep BK Value next to Board BK Value.",
         "img/players/drake-maye.jpg",
     ),
-    "the-inheritance.html": (
-        "The Inheritance | Next Man Priced | Ball Keep",
-        "If a starter sits, someone inherits the snaps. Price the heir on The Keep and The Board and read the Sunday hole.",
-        "img/players/christian-mccaffrey.png",
-    ),
     "the-handcuff.html": (
         "The Handcuff | Dynasty and Redraft RB Cuffs | Ball Keep",
-        "Running backs only. One list for dynasty Keep money. One list for the Sunday hole. The cuff is the name on the board.",
-        "img/players/christian-mccaffrey.png",
-    ),
-    "next-chair.html": (
-        "The Next Chair | When a starter sits | Ball Keep",
-        "When a starter sits, the snaps still have to go somewhere. The Inheritance prices the next man on both clocks.",
+        "Running backs only. One list ranks dynasty backups by Keep value. One list ranks redraft backups by Board value.",
         "img/players/christian-mccaffrey.png",
     ),
     "week2-tape.html": (
@@ -1691,14 +1680,14 @@ FB_ALSO = {
         ("weekly.html", "Weekly", "This week's skill boards."),
     ],
     "injuries.html": [
-        ("the-inheritance.html", "The Inheritance", "Price the next man on both clocks."),
+        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty cuffs and redraft cuffs."),
         ("weekly.html", "Weekly", "Start/sit around the report."),
         ("depth-charts.html", "Depth Charts", "Who is next up."),
         ("news.html", "BK News", "Hourly wire."),
         ("week2-matchups.html", "Week 2 Predictions", "A pick for every game."),
     ],
     "depth-charts.html": [
-        ("the-inheritance.html", "The Inheritance", "Price the next man on both clocks."),
+        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty cuffs and redraft cuffs."),
         ("injuries.html", "Injuries", "Who is actually up."),
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("nfl-schedule.html", "NFL Schedule", "Full slate."),
@@ -1738,7 +1727,6 @@ FB_ALSO = {
         ("board.html", "The Board", "Redraft PPR, this year."),
         ("trade.html", "Trade Calculators", "BK Value on six boards."),
         ("the-split.html", "The Split", "Keep vs Board, and a window year."),
-        ("the-inheritance.html", "The Inheritance", "If a starter sits, price the next man."),
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("the-fence.html", "The Fence (IDP)", "Superflex plus IDP."),
         ("weekly.html", "Weekly", "This week's skill boards."),
@@ -1746,7 +1734,6 @@ FB_ALSO = {
     ],
     "the-split.html": [
         ("two-clocks.html", "Two Clocks", "The essay that belongs with this page."),
-        ("the-inheritance.html", "The Inheritance", "If a starter sits, price the next man."),
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("the-keep.html", "The Keep", "Superflex dynasty, the years clock."),
         ("board.html", "The Board", "Redraft PPR, the Sunday clock."),
@@ -1754,35 +1741,17 @@ FB_ALSO = {
         ("league.html", "My Team", "Load a Sleeper league."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ],
-    "the-inheritance.html": [
-        ("next-chair.html", "The Next Chair", "The essay that belongs with this page."),
-        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
-        ("the-split.html", "The Split", "Two clocks on a room you type."),
-        ("depth-charts.html", "Depth Charts", "Sleeper order for 32 clubs."),
-        ("injuries.html", "Injuries", "ESPN designations."),
-        ("the-keep.html", "The Keep", "Superflex dynasty, the years clock."),
-        ("board.html", "The Board", "Redraft PPR, the Sunday clock."),
-    ],
     "the-handcuff.html": [
-        ("the-inheritance.html", "The Inheritance", "Every position. The hole on any starter."),
         ("the-keep.html", "The Keep", "Superflex dynasty, the years clock."),
         ("board.html", "The Board", "Redraft PPR, the Sunday clock."),
         ("depth-charts.html", "Depth Charts", "Sleeper RB order."),
         ("injuries.html", "Injuries", "ESPN designations."),
         ("the-split.html", "The Split", "Two clocks on a room you type."),
-    ],
-    "next-chair.html": [
-        ("the-inheritance.html", "The Inheritance", "Name a starter. Read the hole."),
-        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
-        ("articles.html", "Articles", "Every long read in one list."),
-        ("the-split.html", "The Split", "Two clocks and a window year."),
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
-        ("injuries.html", "Injuries", "ESPN designations."),
-        ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ],
     "two-clocks.html": [
         ("the-split.html", "The Split", "Two clocks and a window year."),
-        ("the-inheritance.html", "The Inheritance", "If a starter sits, price the next man."),
+        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("articles.html", "Articles", "Every long read in one list."),
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
         ("board.html", "The Board", "Redraft PPR, this year."),
@@ -1790,8 +1759,6 @@ FB_ALSO = {
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ],
     "articles.html": [
-        ("next-chair.html", "The Next Chair", "When a starter sits, the snaps still have to go somewhere."),
-        ("the-inheritance.html", "The Inheritance", "Price the next man on both clocks."),
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
         ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("week2-tape.html", "The Second Sunday", "Sixteen scores after Monday in Inglewood."),
@@ -2140,7 +2107,6 @@ def home_week_faces():
     """Faces and the recap teaser so the home week block feels like a room."""
     from the_long_game import long_game_teaser
     from the_recap import recap_teaser
-    from the_next_chair import next_chair_teaser
     from two_clocks import clocks_teaser
     from week2_ledger import ledger_teaser
     from week2_predictions import predictions_teaser
@@ -2161,8 +2127,7 @@ def home_week_faces():
         for slug, ext, name in shots
     )
     return (
-        next_chair_teaser()
-        + clocks_teaser()
+        clocks_teaser()
         + tape_teaser()
         + ledger_teaser()
         + long_game_teaser()
@@ -2183,7 +2148,7 @@ def home_rank_preview(rows, media, n=8):
         val = fmt_val(r["value"]) if r.get("value") not in (None, "") else ""
         face = (
             f'<img class="face" src="{esc(face_src(r, media))}" '
-            f'alt="{esc(face_alt(name))}" width="40" height="40" loading="lazy" />'
+            f'alt="{esc(face_alt(name))}" width="48" height="48" loading="lazy" />'
         )
         name_html = (
             f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
@@ -2242,7 +2207,6 @@ def home_body_html(keep, board, media, stories=None):
           <a class="cta" href="the-keep.html">The Keep</a>
           <a class="cta alt" href="board.html">The Board</a>
           <a class="cta ghost" href="the-split.html">The Split</a>
-          <a class="cta ghost" href="the-inheritance.html">The Inheritance</a>
         </div>
       </div>
     </section>
@@ -2291,12 +2255,10 @@ def home_body_html(keep, board, media, stories=None):
     {desk_block("mine", "Yours", "Put in your own team.", "Load your Sleeper league. BK Value on every roster.", [
         ("league.html", "My Team", "Your Sleeper league. Power rankings and leftover values."),
         ("the-split.html", "The Split", "Two clocks. A window year for the room you actually roster."),
-        ("the-inheritance.html", "The Inheritance", "If a starter sits, price the next man on both clocks."),
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty cuffs and redraft cuffs."),
     ])}
-    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, read both clocks, price the next man, ADP vs The Board, and depth charts.", [
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, read both clocks, read the cuff, ADP vs The Board, and depth charts.", [
         ("the-handcuff.html", "The Handcuff", "RB only. Keep list and Board list."),
-        ("the-inheritance.html", "The Inheritance", "Starter sits. Heir walks in. The hole is Sunday money."),
         ("the-split.html", "The Split", "Keep vs Board. Window year. The gap board."),
         ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
         ("adp.html", "ADP", "The Board vs ESPN."),
@@ -2305,7 +2267,6 @@ def home_body_html(keep, board, media, stories=None):
     ])}
     {desk_block("tape", "Tape", "The non-ranking lists.", "The essays, the market notes, the player files, and the pictures.", [
         ("articles.html", "Articles", "The long reads. Strategy and the week."),
-        ("next-chair.html", "The Next Chair", "When a starter sits, the snaps still have to go somewhere."),
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
@@ -3411,7 +3372,6 @@ def write_explore_page():
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
         ("the-split.html", "The Split", "Keep vs Board, and a window year."),
-        ("the-inheritance.html", "The Inheritance", "If a starter sits, price the next man."),
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("league.html", "My Team", "Your Sleeper league."),
         ("touches.html", "Touches and Targets", "2026 targets and rushes."),
@@ -3423,7 +3383,6 @@ def write_explore_page():
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
         ("articles.html", "Articles", "The long reads."),
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
-        ("next-chair.html", "The Next Chair", "When a starter sits, the snaps still have to go somewhere."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
     ])}
     {group("Baseball", "BaseKeep", [
@@ -4148,8 +4107,6 @@ def main():
     write_articles(sys.modules[__name__])
     from the_split import write_the_split
     write_the_split(sys.modules[__name__], keep, board, media)
-    from the_inheritance import write_the_inheritance
-    write_the_inheritance(sys.modules[__name__], keep, board, media)
     from the_handcuff import write_the_handcuff
     write_the_handcuff(sys.modules[__name__], keep, board, media)
 
@@ -4167,8 +4124,6 @@ def main():
         "https://ballkeep.com/week2-ledger.html",
         "https://ballkeep.com/two-clocks.html",
         "https://ballkeep.com/the-split.html",
-        "https://ballkeep.com/next-chair.html",
-        "https://ballkeep.com/the-inheritance.html",
         "https://ballkeep.com/the-handcuff.html",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/news.html",
