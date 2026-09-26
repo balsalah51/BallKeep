@@ -144,7 +144,7 @@ def test_football_nav_keeps_every_link():
         "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
         "Weekly", "The Recap", "Week 2 DST", "Week 2 K", "Week 2 Predictions", "Week 2 Waivers", "The Market", "Injuries",
-        "ADP", "Trade", "The Split", "The Inheritance", "The Handcuff", "The Method",
+        "ADP", "Trade", "The Split", "The Handcuff", "The Method",
         "My Team",
         "Articles", "Touches", "Players", "News", "The X", "Hot 'n' Cold",
         "NFL", "MLB", "BPL",
@@ -335,9 +335,9 @@ def test_searchaction_and_schema():
     assert "https://ballkeep.com/the-long-game.html" in txt
     assert "https://ballkeep.com/two-clocks.html" in txt
     assert "https://ballkeep.com/the-split.html" in txt
-    assert "https://ballkeep.com/next-chair.html" in txt
-    assert "https://ballkeep.com/the-inheritance.html" in txt
     assert "https://ballkeep.com/the-handcuff.html" in txt
+    assert "https://ballkeep.com/next-chair.html" not in txt
+    assert "https://ballkeep.com/the-inheritance.html" not in txt
     assert "https://ballkeep.com/week2-tape.html" in txt
     assert "https://ballkeep.com/week2-ledger.html" in txt
     assert "https://ballkeep.com/bb/" in txt
@@ -555,7 +555,7 @@ def test_visible_desk_copy_removed():
         "build_site.py", "weekly_pages.py", "weekly_kit.py", "special_teams.py",
         "build_bk.py", "build_bb.py", "build_pl.py",
         "week2_boards.py", "week2_predictions.py", "week2_tape.py", "week2_ledger.py",
-        "two_clocks.py", "the_split.py", "the_inheritance.py", "the_handcuff.py", "the_next_chair.py", "the_recap.py",
+        "two_clocks.py", "the_split.py", "the_handcuff.py", "the_recap.py",
     ):
         text = (root / name).read_text()
         for phrase in banned:
@@ -822,45 +822,6 @@ def test_two_clocks_article():
     assert "two-clocks.html" in clocks_teaser()
 
 
-def test_the_inheritance():
-    from the_inheritance import inherit_rows, room_verdict
-    keep = [
-        {"name": "Christian McCaffrey", "pos": "RB", "team": "SF", "bk": 47, "value": 4920, "pos_label": "RB12", "age": 30},
-        {"name": "Drake Maye", "pos": "QB", "team": "NE", "bk": 9, "value": 8426, "pos_label": "QB3", "age": 23},
-        {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "bk": 2, "value": 10873, "pos_label": "RB1", "age": 24},
-    ]
-    board = [
-        {"name": "Christian McCaffrey", "pos": "RB", "team": "SF", "bk": 7, "value": 8855, "pos_label": "RB3"},
-        {"name": "Kaelon Black", "pos": "RB", "team": "SF", "bk": 80, "value": 2100, "pos_label": "RB28"},
-        {"name": "Drake Maye", "pos": "QB", "team": "NE", "bk": 46, "value": 4976, "pos_label": "QB8"},
-        {"name": "Jacoby Brissett", "pos": "QB", "team": "NE", "bk": 90, "value": 1800, "pos_label": "QB22"},
-        {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "bk": 4, "value": 9769, "pos_label": "RB2"},
-        {"name": "Tyler Allgeier", "pos": "RB", "team": "ATL", "bk": 55, "value": 4500, "pos_label": "RB18"},
-    ]
-    depth = [
-        {"team": "SF", "slots": {"RB": [{"name": "Christian McCaffrey"}, {"name": "Kaelon Black"}]}},
-        {"team": "NE", "slots": {"QB": [{"name": "Drake Maye"}, {"name": "Jacoby Brissett"}]}},
-        {"team": "ATL", "slots": {"RB": [{"name": "Bijan Robinson"}, {"name": "Tyler Allgeier"}]}},
-    ]
-    injuries = [{"name": "Christian McCaffrey", "status": "Questionable"}]
-    rows = inherit_rows(keep, board, depth=depth, injuries=injuries)
-    by_name = {r["name"]: r for r in rows}
-    assert by_name["Christian McCaffrey"]["heir"] == "Kaelon Black"
-    assert by_name["Christian McCaffrey"]["tag"] == "Hole"
-    assert by_name["Christian McCaffrey"]["hole"] == 6755
-    assert by_name["Christian McCaffrey"]["status"] == "Questionable"
-    assert by_name["Drake Maye"]["heir"] == "Jacoby Brissett"
-    assert by_name["Drake Maye"]["tag"] == "Sunday behind"
-    assert by_name["Bijan Robinson"]["tag"] == "Covered"
-    assert rows[0]["name"] == "Christian McCaffrey"
-    tag, verdict = room_verdict(
-        {"clock": "Sunday", "board_val": 8000},
-        {"clock": "Years", "board_val": 400},
-    )
-    assert tag == "Years in"
-    assert "Years walk" in verdict
-
-
 def test_the_handcuff():
     from the_handcuff import dynasty_handcuffs, handcuff_rooms, redraft_handcuffs
     keep = [
@@ -892,17 +853,6 @@ def test_the_handcuff():
     assert redraft[0]["name"] == "Kaelon Black"
     assert redraft[0]["starter_name"] == "Christian McCaffrey"
     assert redraft[0]["hole"] == 8855
-
-
-def test_next_chair_article():
-    from the_next_chair import HEADLINE, next_chair_article_html, next_chair_teaser
-    html = next_chair_article_html()
-    assert HEADLINE in html
-    assert "\u2014" not in html
-    assert "desk" not in html.lower()
-    assert "looking at" not in html
-    assert "the-inheritance.html" in html
-    assert "next-chair.html" in next_chair_teaser()
 
 
 def test_week2_articles():
@@ -995,7 +945,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=69" in doc
+    assert "css/site.css?v=70" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 

@@ -5,9 +5,6 @@ from seo import also_on_desk, breadcrumb_jsonld, breadcrumbs, esc
 from the_long_game import DEK as LONG_DEK
 from the_long_game import HEADLINE as LONG_HEAD
 from the_long_game import write_the_long_game
-from the_next_chair import DEK as CHAIR_DEK
-from the_next_chair import HEADLINE as CHAIR_HEAD
-from the_next_chair import write_the_next_chair
 from two_clocks import DEK as CLOCK_DEK
 from two_clocks import HEADLINE as CLOCK_HEAD
 from two_clocks import write_two_clocks
@@ -20,16 +17,6 @@ from week2_tape import write_week2_tape
 
 ARTICLES = [
     (
-        "next-chair.html",
-        "The Next Chair",
-        "Thursday, Sep 24",
-        CHAIR_HEAD,
-        CHAIR_DEK,
-        "img/players/christian-mccaffrey.png",
-        "Christian McCaffrey",
-        True,
-    ),
-    (
         "two-clocks.html",
         "Two Clocks",
         "Thursday, Sep 24",
@@ -37,7 +24,7 @@ ARTICLES = [
         CLOCK_DEK,
         "img/players/drake-maye.jpg",
         "Drake Maye",
-        False,
+        True,
     ),
     (
         "week2-tape.html",
@@ -137,7 +124,6 @@ def articles_hub_html() -> str:
 
 def write_articles(b):
     write_the_long_game(b)
-    write_the_next_chair(b)
     write_two_clocks(b)
     write_week2_tape(b)
     write_week2_ledger(b)
