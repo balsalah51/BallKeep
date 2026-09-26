@@ -115,7 +115,7 @@ def articles_hub_html() -> str:
     return f"""
     <p class="kicker">Articles</p>
     <h1>The long reads.</h1>
-    <p class="note">Essays and strategy on Ball Keep, written so you can sit with a week that is shouting and still remember the years you paid for in a Superflex room. The boards stay on the boards. These pages are for the manager who wants the story next to the mash.</p>
+    <p class="note">Long reads on Ball Keep, written the way a person talks after sitting with a week, so you can keep the years you paid for in a Superflex room even while Sunday is shouting. The boards stay on the boards. These pages are for the story that belongs next to the mash.</p>
     <section class="article-rail" aria-label="Ball Keep articles">
       {"".join(cards)}
     </section>

@@ -820,6 +820,36 @@ def test_two_clocks_article():
     assert "the-split.html" in html
     assert "2026" in html
     assert "two-clocks.html" in clocks_teaser()
+    assert "A closing that sounds like a person" not in html
+    assert "If you want the mash" not in html
+    assert "If the year says" not in html
+
+
+def test_essay_prose_avoids_if_then_slop():
+    from the_long_game import long_game_article_html
+    from two_clocks import clocks_article_html
+    from week2_ledger import ledger_article_html
+    from week2_tape import tape_article_html
+    banned = (
+        "A closing that sounds like a person",
+        "If you want the mash",
+        "If you want the stream",
+        "If you want the story",
+        "If you want to write us",
+        "If the year says",
+        "That is the whole Monday market",
+        "That is the whole rebuild.",
+    )
+    for html in (
+        clocks_article_html(),
+        long_game_article_html(),
+        tape_article_html(),
+        ledger_article_html(),
+    ):
+        assert "\u2014" not in html
+        assert "desk" not in html.lower()
+        for phrase in banned:
+            assert phrase not in html, phrase
 
 
 def test_the_handcuff():
