@@ -850,9 +850,13 @@ def test_the_handcuff():
     redraft = redraft_handcuffs(rooms)
     assert dynasty[0]["name"] == "Brian Robinson Jr."
     assert dynasty[0]["starter_name"] == "Bijan Robinson"
-    assert redraft[0]["name"] == "Kaelon Black"
-    assert redraft[0]["starter_name"] == "Christian McCaffrey"
-    assert redraft[0]["hole"] == 8855
+    assert dynasty[0]["keep_val"] == 2800
+    assert redraft[0]["name"] == "Brian Robinson Jr."
+    assert redraft[0]["starter_name"] == "Bijan Robinson"
+    assert redraft[0]["board_val"] == 4000
+    by_starter = {r["name"]: r for r in rooms}
+    assert by_starter["Christian McCaffrey"]["tag"] == "Stash"
+    assert by_starter["Bijan Robinson"]["tag"] == "Open work"
 
 
 def test_week2_articles():
@@ -945,7 +949,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=70" in doc
+    assert "css/site.css?v=71" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 

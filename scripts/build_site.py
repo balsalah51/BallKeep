@@ -894,7 +894,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 70
+CSS_VER = 71
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1359,7 +1359,7 @@ FB_SEO = {
     ),
     "the-handcuff.html": (
         "The Handcuff | Dynasty and Redraft RB Cuffs | Ball Keep",
-        "Running backs only. One list for dynasty Keep money. One list for the Sunday hole. The cuff is the name on the board.",
+        "Running backs only. One list ranks dynasty backups by Keep value. One list ranks redraft backups by Board value.",
         "img/players/christian-mccaffrey.png",
     ),
     "week2-tape.html": (

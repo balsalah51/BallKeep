@@ -465,8 +465,14 @@ def main():
     assert "<h1>The Handcuff</h1>" in handcuff
     assert "handcuff-app" in handcuff
     assert "js/handcuff.js" in handcuff
-    assert "Years cuffs" in handcuff
-    assert "Sunday cuffs" in handcuff
+    assert "Dynasty cuffs" in handcuff
+    assert "Redraft cuffs" in handcuff
+    assert "Cuff chair" not in handcuff
+    assert "Cuff $" not in handcuff
+    assert "Years in" not in handcuff
+    assert ">Hole<" not in handcuff
+    assert "Cuff value" in handcuff
+    assert "Behind" in handcuff
     assert "\u2014" not in handcuff
     long_game = html_of("the-long-game.html")
     assert "Hold the years in your hands when the week is shouting." in long_game

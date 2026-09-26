@@ -1466,11 +1466,12 @@ body.essay-page .opening .lede::first-letter {
 }
 .inherit-tool { margin: 22px 0 28px; }
 .inherit-clocks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px; }
-.split-clock.window.t-hole { border-top-color: var(--red); }
-.split-clock.window.t-years-in { border-top-color: #1788c2; }
-.split-clock.window.t-covered { border-top-color: #157a3a; }
-.split-clock.window.t-sunday-behind { border-top-color: #1788c2; }
-.split-clock.window.t-cheaper { border-top-color: #c48a1a; }
+.split-clock.window.t-open-work { border-top-color: var(--red); }
+.split-clock.window.t-stash { border-top-color: #1788c2; }
+.split-clock.window.t-has-a-role { border-top-color: #157a3a; }
+.split-clock.window.t-play-now { border-top-color: #1788c2; }
+.split-clock.window.t-cheap-backup { border-top-color: #c48a1a; }
+.split-clock.window.t-unranked { border-top-color: #6b7280; }
 @media (max-width: 860px) {
   .inherit-clocks { grid-template-columns: 1fr; }
 }

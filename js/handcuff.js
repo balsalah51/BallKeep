@@ -100,12 +100,12 @@
     root.querySelector("[data-starter-name]").textContent = starter ? starter.name : "Name him";
     root.querySelector("[data-starter-total]").textContent = starter ? fmt(starter.board_val) : "0";
     root.querySelector("[data-starter-meta]").textContent = starter
-      ? sideLine(starter) + " · Board $"
+      ? sideLine(starter) + " · Board value"
       : "Keep and Board on the starter.";
     root.querySelector("[data-heir-name]").textContent = heir ? heir.name : "Next back";
     root.querySelector("[data-heir-total]").textContent = heir ? fmt(heir.board_val) : "0";
     root.querySelector("[data-heir-meta]").textContent = heir
-      ? sideLine(heir) + " · Board $"
+      ? sideLine(heir) + " · Board value"
       : "Keep and Board on the handcuff.";
     root.querySelector("[data-hole-total]").textContent = room ? fmt(room.hole) : "0";
     root.querySelector("[data-verdict]").textContent = room
