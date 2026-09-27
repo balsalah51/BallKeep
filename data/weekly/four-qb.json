@@ -1,5 +1,5 @@
 {
-  "week": 2,
+  "week": 3,
   "players": [
     {
       "name": "Josh Allen",
@@ -16,11 +16,11 @@
       "sos": 32
     },
     {
-      "name": "Dak Prescott",
+      "name": "Patrick Mahomes",
       "rank": 3,
-      "team": "DAL",
-      "opp": "BAL",
-      "sos": 14
+      "team": "KC",
+      "opp": "@MIA",
+      "sos": 22
     },
     {
       "name": "Brock Purdy",
@@ -37,39 +37,39 @@
       "sos": 23
     },
     {
-      "name": "Patrick Mahomes",
+      "name": "Dak Prescott",
       "rank": 6,
-      "team": "KC",
-      "opp": "@MIA",
-      "sos": 22
-    },
-    {
-      "name": "Tyler Shough",
-      "rank": 7,
-      "team": "NO",
-      "opp": "LV",
-      "sos": 12
-    },
-    {
-      "name": "Joe Burrow",
-      "rank": 8,
-      "team": "CIN",
-      "opp": "@PIT",
-      "sos": 21
+      "team": "DAL",
+      "opp": "BAL",
+      "sos": 14
     },
     {
       "name": "Jared Goff",
-      "rank": 9,
+      "rank": 7,
       "team": "DET",
       "opp": "NYJ",
       "sos": 28
     },
     {
+      "name": "Tyler Shough",
+      "rank": 8,
+      "team": "NO",
+      "opp": "LV",
+      "sos": 12
+    },
+    {
       "name": "Trevor Lawrence",
-      "rank": 10,
+      "rank": 9,
       "team": "JAX",
       "opp": "NE",
       "sos": 17
+    },
+    {
+      "name": "Drake Maye",
+      "rank": 10,
+      "team": "NE",
+      "opp": "@JAX",
+      "sos": 11
     }
   ]
 }

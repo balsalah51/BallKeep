@@ -38,7 +38,7 @@ METHOD_FAQ = [
     (
         "Which lists are rest of season?",
         "The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, "
-        "Top Defenses, Top Kickers, and The Fence. Week 2 boards, Weekly, Waivers, "
+        "Top Defenses, Top Kickers, and The Fence. Week 3 boards, Weekly, Waivers, "
         "and Predictions are this week's stream.",
     ),
     (
@@ -118,8 +118,8 @@ def method_article_html() -> str:
           <a class="tile" href="the-split.html"><h3>The Split</h3><p>Two clocks. A window year for the room.</p></a>
           <a class="tile" href="the-handcuff.html"><h3>The Handcuff</h3><p>RB only. Dynasty list and redraft list.</p></a>
           <a class="tile" href="trade.html"><h3>Trade</h3><p>BK Value on six calculators.</p></a>
-          <a class="tile" href="weekly.html"><h3>Weekly</h3><p>Week 2 skill start and sit.</p></a>
-          <a class="tile" href="week2-matchups.html"><h3>Predictions</h3><p>A published pick on every game.</p></a>
+          <a class="tile" href="weekly.html"><h3>Weekly</h3><p>Week 3 skill start and sit.</p></a>
+          <a class="tile" href="week3-matchups.html"><h3>Predictions</h3><p>A published pick on every game.</p></a>
           <a class="tile" href="league.html"><h3>My Team</h3><p>Your Sleeper league, priced on these ranks.</p></a>
           <a class="tile" href="news.html"><h3>BK News</h3><p>Hourly injury, roster, and coach tape.</p></a>
           <a class="tile" href="articles.html"><h3>Articles</h3><p>The long reads, including The Long Game.</p></a>
