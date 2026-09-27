@@ -1,5 +1,5 @@
 {
-  "week": 2,
+  "week": 3,
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -9,60 +9,67 @@
       "sos": 32
     },
     {
-      "name": "Kenneth Walker",
-      "rank": 2,
-      "team": "KC",
-      "opp": "@MIA",
-      "sos": 4
-    },
-    {
-      "name": "Jonathan Taylor",
-      "rank": 3,
-      "team": "IND",
-      "opp": "HOU",
-      "sos": 8
-    },
-    {
       "name": "Bijan Robinson",
-      "rank": 4,
+      "rank": 2,
       "team": "ATL",
       "opp": "@GB",
       "sos": 19
     },
     {
-      "name": "Derrick Henry",
-      "rank": 5,
-      "team": "BAL",
-      "opp": "@DAL",
-      "sos": 26
+      "name": "Kenneth Walker",
+      "rank": 3,
+      "team": "KC",
+      "opp": "@MIA",
+      "sos": 4
     },
     {
       "name": "Christian McCaffrey",
-      "rank": 6,
+      "rank": 4,
       "team": "SF",
       "opp": "ARI",
       "sos": 30
     },
     {
-      "name": "James Cook",
-      "rank": 7,
-      "team": "BUF",
-      "opp": "LAC",
-      "sos": 6
+      "name": "Jonathan Taylor",
+      "rank": 5,
+      "team": "IND",
+      "opp": "HOU",
+      "sos": 8
+    },
+    {
+      "name": "Derrick Henry",
+      "rank": 6,
+      "team": "BAL",
+      "opp": "@DAL",
+      "sos": 26
     },
     {
       "name": "Ashton Jeanty",
-      "rank": 8,
+      "rank": 7,
       "team": "LV",
       "opp": "@NO",
       "sos": 12
     },
     {
-      "name": "Jaylen Warren",
+      "name": "James Cook",
+      "rank": 8,
+      "team": "BUF",
+      "opp": "LAC",
+      "sos": 6
+    },
+    {
+      "name": "Chase Brown",
       "rank": 9,
-      "team": "PIT",
-      "opp": "CIN",
-      "sos": 24
+      "team": "CIN",
+      "opp": "@PIT",
+      "sos": 2
+    },
+    {
+      "name": "Javonte Williams",
+      "rank": 10,
+      "team": "DAL",
+      "opp": "BAL",
+      "sos": 1
     }
   ]
 }
