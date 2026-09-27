@@ -206,7 +206,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     w_body = f"""
     <p class="kicker">{label} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
     <h1>Week {week} Waivers</h1>
-    <p class="note">Week {week} waiver Super Aggregate after the second Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week {week} boards. The finished Week 2 card lives on <a href="week2-matchups.html">Week 2 Predictions</a>.</p>
+    <p class="note">Week {week} waiver Super Aggregate after the second Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week {week} boards. The finished Week 2 card lives on <a href="week2-matchups.html">Week 2 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
     {rank_search_bar(w_chips)}
     <div class="panel">{weekly_table(waivers)}</div>
     {sources_panel(WEEK1_WAIVER_SOURCES, heading="Lists in This Super Aggregate")}
