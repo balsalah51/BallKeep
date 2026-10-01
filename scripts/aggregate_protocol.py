@@ -279,19 +279,23 @@ def drop_player(rows: list[dict], name: str, spots: int = 4) -> list[dict]:
     return rows
 
 
-# Editorial moves after Week 1 tape. Applied to every published Ball Keep list.
+# Editorial moves after Week 3 tape. Applied to every published Ball Keep list.
 RANK_DROPS = (
-    ("Drake Maye", 4),
-    ("Sam Darnold", 6),
-    ("A.J. Brown", 5),
+    ("De'Von Achane", 10),
+    ("Baker Mayfield", 6),
+    ("Jayden Daniels", 5),
+    ("Caleb Williams", 4),
+    ("Breece Hall", 5),
+    ("J.K. Dobbins", 4),
+    ("Drake Maye", 3),
+    ("C.J. Stroud", 3),
 )
 RANK_BUMPS = (
-    ("Kenneth Walker", 5),
-    ("Jalen Coker", 10),
-    ("Kaelon Black", 8),
-    ("D'Andre Swift", 3),
-    ("Caleb Williams", 2),
-    ("Tyler Shough", 5),
+    ("Kenneth Walker", 2),
+    ("Brock Purdy", 2),
+    ("Kenyon Sadiq", 5),
+    ("Braelon Allen", 3),
+    ("Ollie Gordon II", 3),
 )
 TEAM_FIXES = {
     "Kenneth Walker": "KC",

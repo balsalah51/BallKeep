@@ -1,75 +1,75 @@
 {
-  "week": 3,
+  "week": 4,
   "players": [
     {
       "name": "Josh Allen",
       "rank": 1,
       "team": "BUF",
-      "opp": "LAC",
+      "opp": "NE",
       "sos": 2
     },
     {
       "name": "Lamar Jackson",
       "rank": 2,
       "team": "BAL",
-      "opp": "@DAL",
-      "sos": 32
-    },
-    {
-      "name": "Patrick Mahomes",
-      "rank": 3,
-      "team": "KC",
-      "opp": "@MIA",
-      "sos": 22
-    },
-    {
-      "name": "Brock Purdy",
-      "rank": 4,
-      "team": "SF",
-      "opp": "ARI",
-      "sos": 15
-    },
-    {
-      "name": "Jalen Hurts",
-      "rank": 5,
-      "team": "PHI",
-      "opp": "@CHI",
-      "sos": 23
-    },
-    {
-      "name": "Dak Prescott",
-      "rank": 6,
-      "team": "DAL",
-      "opp": "BAL",
-      "sos": 14
-    },
-    {
-      "name": "Jared Goff",
-      "rank": 7,
-      "team": "DET",
-      "opp": "NYJ",
-      "sos": 28
+      "opp": "TEN",
+      "sos": 1
     },
     {
       "name": "Tyler Shough",
-      "rank": 8,
+      "rank": 3,
       "team": "NO",
-      "opp": "LV",
-      "sos": 12
+      "opp": "ATL",
+      "sos": 19
     },
     {
       "name": "Trevor Lawrence",
-      "rank": 9,
+      "rank": 4,
       "team": "JAX",
-      "opp": "NE",
-      "sos": 17
+      "opp": "@CIN",
+      "sos": 28
     },
     {
-      "name": "Drake Maye",
-      "rank": 10,
-      "team": "NE",
-      "opp": "@JAX",
+      "name": "Joe Burrow",
+      "rank": 5,
+      "team": "CIN",
+      "opp": "JAX",
       "sos": 11
+    },
+    {
+      "name": "Jared Goff",
+      "rank": 6,
+      "team": "DET",
+      "opp": "@CAR",
+      "sos": 26
+    },
+    {
+      "name": "Patrick Mahomes",
+      "rank": 7,
+      "team": "KC",
+      "opp": "@LV",
+      "sos": 20
+    },
+    {
+      "name": "Dak Prescott",
+      "rank": 8,
+      "team": "DAL",
+      "opp": "@HOU",
+      "sos": 21
+    },
+    {
+      "name": "Brock Purdy",
+      "rank": 9,
+      "team": "SF",
+      "opp": "DEN",
+      "sos": 7
+    },
+    {
+      "name": "Bryce Young",
+      "rank": 10,
+      "team": "CAR",
+      "opp": "DET",
+      "sos": 31
     }
   ]
 }

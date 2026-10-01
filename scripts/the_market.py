@@ -85,7 +85,7 @@ def write_the_market(b):
     {b.sources_panel([
         ("The Recap", "the-recap.html", "Full Week 1 essay and the sixteen scores."),
         ("Hot 'n' Cold", "hot-n-cold.html", "Dynasty buys and sells after the opener."),
-        ("Week 3 Waivers", "waiver.html", "Coleman, Boston, Wilson, Bigsby."),
+        ("Week 4 Waivers", "waiver.html", "Allen, Gordon, Sadiq, Keenan Allen."),
         ("ESPN waiver wire", "https://www.espn.com/fantasy/football/story/_/page/FFWaiverWirePickUp-49939032/fantasy-football-waiver-wire-free-agent-pickups-nfl-week-2", "Shough, Black, Coker."),
         ("Reuters", "https://www.reuters.com/sports/nfl-roundup-bears-score-59-record-setting-week-1-win-over-panthers--flm-2026-09-14/", "Bears 59, Panthers 37."),
         ("Associated Press", "https://www.espn.com/nfl/recap?gameId=401872931", "Walker 173, Mahomes in the brace."),
