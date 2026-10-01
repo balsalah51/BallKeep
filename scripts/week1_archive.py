@@ -56,8 +56,8 @@ def _also():
     p = "../" * DEPTH
     return also_on_desk([
         (f"{p}the-recap.html", "The Recap", "The full Week 1 essay, written after Monday night."),
-        (f"{p}weekly.html", "Week 3 Weekly", "This week's skill boards."),
-        (f"{p}waiver.html", "Week 3 Waivers", "Coleman, Boston, and the names Week 2 moved."),
+        (f"{p}weekly.html", "Week 4 Weekly", "This week's skill boards."),
+        (f"{p}waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
         ("index.html", "Week 1 archive", "Opening, DST, kickers, matchups, waivers."),
     ])
 
@@ -90,7 +90,7 @@ def write_week1_archive(b, media=None):
     dst_body = f"""
     <p class="kicker">2026 Week 1 · archive · DST Super Aggregate · {len(W1_DST_SOURCES)} boards</p>
     <h1>Week 1 DST</h1>
-    <p class="note">Finished Week 1 stream, parked after the opener. Super Aggregate of {len(W1_DST_SOURCES)} published Week 1 boards. {dst_lead} led the stream. Live start/sit lives on <a href="{live}week3-dst.html">Week 3 DST</a>.</p>
+    <p class="note">Finished Week 1 stream, parked after the opener. Super Aggregate of {len(W1_DST_SOURCES)} published Week 1 boards. {dst_lead} led the stream. Live start/sit lives on <a href="{live}week4-dst.html">Week 4 DST</a>.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(w1_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', depth=DEPTH)}</div>
     {sources_panel(W1_DST_SOURCES, heading="Boards in This Super Aggregate")}
@@ -113,7 +113,7 @@ def write_week1_archive(b, media=None):
     k_body = f"""
     <p class="kicker">2026 Week 1 · archive · K Super Aggregate · {len(W1_K_SOURCES)} boards</p>
     <h1>Week 1 Kickers</h1>
-    <p class="note">Finished Week 1 stream, parked after the opener. Super Aggregate of {len(W1_K_SOURCES)} published Week 1 boards. {k_lead} sat first among the kickers. Live start/sit lives on <a href="{live}week3-kickers.html">Week 3 Kickers</a>.</p>
+    <p class="note">Finished Week 1 stream, parked after the opener. Super Aggregate of {len(W1_K_SOURCES)} published Week 1 boards. {k_lead} sat first among the kickers. Live start/sit lives on <a href="{live}week4-kickers.html">Week 4 Kickers</a>.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(w1_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, depth=DEPTH)}</div>
     {sources_panel(W1_K_SOURCES, heading="Boards in This Super Aggregate")}
@@ -143,7 +143,7 @@ def write_week1_archive(b, media=None):
     match_body = f"""
     <p class="kicker">2026 Week 1 · archive · Matchups · {len(MATCH_SOURCES)} sources</p>
     <h1>Week 1 Matchups</h1>
-    <p class="note">{match_note} Live cards live on <a href="{live}week3-matchups.html">Week 3 Matchups</a>.</p>
+    <p class="note">{match_note} Live cards live on <a href="{live}week4-matchups.html">Week 4 Matchups</a>.</p>
     <div class="panel">{matchup_table(w1_match)}</div>
     {sources_panel(MATCH_SOURCES, heading="Boards in This Aggregate")}
     {faq_html(W1_MATCH_FAQ, heading="How Week 1 matchups were built.")}
@@ -160,7 +160,7 @@ def write_week1_archive(b, media=None):
     w_body = f"""
     <p class="kicker">2026 Week 1 · archive · consensus waivers · {len(w_src)} lists</p>
     <h1>Week 1 Waivers</h1>
-    <p class="note">Preseason consensus adds, parked after the opener. {len(w_src)} published pickup lists. {w_lead} led the mash. The live wire lives on <a href="{live}waiver.html">Week 3 Waivers</a>.</p>
+    <p class="note">Preseason consensus adds, parked after the opener. {len(w_src)} published pickup lists. {w_lead} led the mash. The live wire lives on <a href="{live}waiver.html">Week 4 Waivers</a>.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(waivers, ["Super", "Boards", "Proj", "Opp", "BK Value"], lambda r: f'<td class="desk-only">{r.get("avg", "")}</td><td class="desk-only">{r.get("n", "")}</td><td class="c-val val"></td><td class="desk-only"></td><td class="c-val val">{fmt_val(r.get("value") or 0)}</td>', media=media, faces=True, depth=DEPTH)}</div>
     {sources_panel(w_src, heading="Lists in This Super Aggregate")}

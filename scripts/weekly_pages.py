@@ -11,7 +11,7 @@ from seo import (
 )
 from the_market import write_the_market
 from the_recap import recap_teaser, write_the_recap
-from week3_predictions import predictions_teaser
+from week4_predictions import predictions_teaser
 from weekly_kit import (
     ADP_SOURCES,
     DEPTH_SOURCES,
@@ -141,7 +141,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     flex_body = f"""
     <p class="kicker">{label} · skill · Flex plus positions</p>
     <h1>Weekly</h1>
-    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points. The opener lives on <a href="the-recap.html">The Recap</a>. The Week 3 card, with a pick on every line, lives on <a href="week3-matchups.html">Week 3 Predictions</a>. The finished Week 2 card sits on <a href="week2-matchups.html">Week 2 Predictions</a>.</p>
+    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points. The opener lives on <a href="the-recap.html">The Recap</a>. The Week 4 card, with a pick on every line, lives on <a href="week4-matchups.html">Week 4 Predictions</a>. The finished Week 3 card sits on <a href="week3-matchups.html">Week 3 Predictions</a>.</p>
     {recap_teaser()}
     {predictions_teaser()}
     <div class="grid-3">
@@ -149,7 +149,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
       <a class="tile" href="weekly-rb.html"><h3>Week {week} RB</h3><p>{(boards['RB'] or [{'name':''}])[0]['name']} opens the backfield.</p></a>
       <a class="tile" href="weekly-wr.html"><h3>Week {week} WR</h3><p>{(boards['WR'] or [{'name':''}])[0]['name']} sits first among receivers.</p></a>
       <a class="tile" href="weekly-te.html"><h3>Week {week} TE</h3><p>{(boards['TE'] or [{'name':''}])[0]['name']} is the top tight end.</p></a>
-      <a class="tile" href="waiver.html"><h3>Week {week} Waivers</h3><p>Coleman, Boston, and the names Week 2 moved.</p></a>
+      <a class="tile" href="waiver.html"><h3>Week {week} Waivers</h3><p>Allen, Gordon, Sadiq, and the names Week 3 moved.</p></a>
       <a class="tile" href="injuries.html"><h3>Injuries</h3><p>ESPN designations.</p></a>
     </div>
     {rank_search_bar(chips)}
@@ -198,7 +198,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     # --- Week N consensus waivers ---
     w_chips, w_js = pos_filter("waiver-pos")
     w_faq = [
-        ("What is this list?", f"A Week {week} Super Aggregate of published waiver articles after the second Sunday. A name needs two lists."),
+        ("What is this list?", f"A Week {week} Super Aggregate of published waiver articles after the third Sunday. A name needs two lists."),
         ("Is this FAAB advice?", "No dollar bids. Super Aggregate of every list that ranked the name."),
         ("Why is a drafted star missing?", "If a list did not put him on their waiver board, that list does not vote for him."),
     ]
@@ -206,7 +206,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     w_body = f"""
     <p class="kicker">{label} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
     <h1>Week {week} Waivers</h1>
-    <p class="note">Week {week} waiver Super Aggregate after the second Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week {week} boards. The finished Week 2 card lives on <a href="week2-matchups.html">Week 2 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
+    <p class="note">Week {week} waiver Super Aggregate after the third Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week {week} boards. The finished Week 3 card lives on <a href="week3-matchups.html">Week 3 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
     {rank_search_bar(w_chips)}
     <div class="panel">{weekly_table(waivers)}</div>
     {sources_panel(WEEK1_WAIVER_SOURCES, heading="Lists in This Super Aggregate")}

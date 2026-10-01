@@ -16,8 +16,20 @@ from week2_tape import HEADLINE as TAPE_HEAD
 from week2_tape import write_week2_tape
 from week3_predictions import DEK as W3_DEK
 from week3_predictions import HEADLINE as W3_HEAD
+from week4_predictions import DEK as W4_DEK
+from week4_predictions import HEADLINE as W4_HEAD
 
 ARTICLES = [
+    (
+        "week4-matchups.html",
+        "Week 4 Predictions",
+        "Thursday, Oct 1",
+        W4_HEAD,
+        W4_DEK,
+        "img/players/josh-allen.png",
+        "Josh Allen",
+        True,
+    ),
     (
         "week3-matchups.html",
         "Week 3 Predictions",
@@ -26,7 +38,7 @@ ARTICLES = [
         W3_DEK,
         "img/players/bijan-robinson.jpg",
         "Bijan Robinson",
-        True,
+        False,
     ),
     (
         "two-clocks.html",
