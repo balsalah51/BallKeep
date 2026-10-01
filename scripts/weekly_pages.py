@@ -198,7 +198,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     # --- Week N consensus waivers ---
     w_chips, w_js = pos_filter("waiver-pos")
     w_faq = [
-        ("What is this list?", f"A Week {week} Super Aggregate of published waiver articles after the second Sunday. A name needs two lists."),
+        ("What is this list?", f"A Week {week} Super Aggregate of published waiver articles after the third Sunday. A name needs two lists."),
         ("Is this FAAB advice?", "No dollar bids. Super Aggregate of every list that ranked the name."),
         ("Why is a drafted star missing?", "If a list did not put him on their waiver board, that list does not vote for him."),
     ]

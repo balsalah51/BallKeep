@@ -1201,7 +1201,7 @@ FB_SEO = {
     ),
     "hot-n-cold.html": (
         "Dynasty Hot and Cold Board - Buys and Sells | Ball Keep",
-        "Ball Keep Hot 'n' Cold: after Week 1 dynasty buys and sells from ESPN, Reuters, the Associated Press, Sports Illustrated, RotoBaller, and FantasyPros, tied to The Keep ranks.",
+        "Ball Keep Hot 'n' Cold: into Week 4 dynasty buys and sells from ESPN, Reuters, Sports Illustrated, RotoBaller, and FantasyPros, tied to The Keep ranks.",
         "img/logo.jpg",
     ),
     "trade.html": (
@@ -2366,7 +2366,7 @@ def home_body_html(keep, board, media, stories=None):
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
-        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells into Week 3."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells into Week 4."),
         ("the-market.html", "The Market", "Buy low, sell high."),
         ("players/index.html", "Player Pages", "Keep top 400. Tape, plus/minus."),
         ("the-x.html", "The X", "Memes. Pictures on the card."),
@@ -3821,13 +3821,12 @@ def main():
       </div>
     </div>
     {sources_panel([
+        ("Week 3 Predictions", "week3-matchups.html", "Finished Week 3 card. Twelve one-score games."),
         ("Week 2 Tape", "week2-tape.html", "Sixteen scores after Monday in Inglewood."),
-        ("Week 2 Ledger", "week2-ledger.html", "What the lists learned after the card."),
-        ("Reuters", "https://www.reuters.com/sports/nfl/matthew-stafford-fires-4-touchdown-passes-rams-cruise-past-giants--flm-2026-09-22/", "Stafford four scores, Rams 28-6."),
-        ("Sports Illustrated", "https://www.si.com/onsi/fantasy/injuries/jk-dobbins-injury-opens-the-door-for-jonah-coleman-to-become-a-fantasy-football-waiver-wire-priority", "Coleman first after Dobbins."),
-        ("ESPN", "https://www.espn.com/nfl/story/_/id/49951393/week-2-sunday-games-takeaways-questions-2026", "Young, Henderson, Williams hamstring."),
-        ("NFL.com", "https://www.nfl.com/news/2026-nfl-season-week-2-what-we-learned-from-sunday-s-games", "Sunday tape, Maye splash plays."),
-        ("Sportsnet", "https://www.sportsnet.ca/nfl/article/nfl-week-2-roundup-saints-take-down-ravens/", "Saints 24-17, Patriots 20-3."),
+        ("Yahoo Sports", "https://sports.yahoo.com/fantasy/article/fantasy-football-waiver-wire-week-4-braelon-allen-ollie-gordon-ii-kenyon-sadiq-among-top-pickups-to-target-170104704.html", "Allen first on the Week 4 waiver mash."),
+        ("RotoBaller", "https://www.rotoballer.com/mid-week-waiver-wire-rankings-fantasy-football-week-4-2026/1954249", "Mariano mid-week board. Allen, Gordon, Sadiq."),
+        ("NFL.com", "https://www.nfl.com/news/2026-nfl-fantasy-football-waiver-wire-week-4-te-juwan-johnson-rb-braelon-allen-headline-targets", "Allen and Sadiq on the Week 4 pickup list."),
+        ("FanDuel Research", "https://www.fanduel.com/research/fantasy-waiver-wire-pickups-10-fantasy-football-adds-heading-into-nfl-week-4", "Gordon first after Achane."),
     ], heading="Boards in This Aggregate")}
     """
     write("hot-n-cold.html", board_page("Hot 'n' Cold", "hot-n-cold.html", hc_body))
