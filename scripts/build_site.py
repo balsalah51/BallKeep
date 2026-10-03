@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "October 1, 2026"
-LASTMOD = "2026-10-01"
+UPDATED = "October 3, 2026"
+LASTMOD = "2026-10-03"
 KEEP_N = 400
 BOARD_N = 500
 PPR_N = 200
@@ -492,25 +492,25 @@ HOT = [
     {"name": "Braelon Allen", "pos": "RB", "team": "NYJ", "why": "Hall left Detroit with a thigh and Allen took the last two drives. Every Week 4 waiver list has him first. Chicago is Sunday. Pay the chair before the room remembers the name.", "src": "Yahoo Sports, NFL.com"},
     {"name": "Ollie Gordon II", "pos": "RB", "team": "MIA", "why": "Achane tore the ACL. Gordon took 17 carries, a score, and 84 percent of the snaps. Second on the Week 4 waiver mash. Minnesota is a brutal first week as the feature, and the role is still the role.", "src": "FanDuel Research, RotoBaller"},
     {"name": "Kenyon Sadiq", "pos": "TE", "team": "NYJ", "why": "Seven for 105 and a score on eight targets. Mason Taylor was out. Third on the waiver mash. Rooms that treated a 16th overall tight end like a taxi dart can still be bought.", "src": "Yahoo Sports, NFL.com"},
+    {"name": "Denzel Boston", "pos": "WR", "team": "CLE", "why": "Sixty yards on the first play of a scoring drive Thursday, then a 27-24 win. Watson found him. Rooms that added him last week just got a Thursday chapter. Buy any leftover doubt.", "src": "CBS Sports, clevelandbrowns.com"},
+    {"name": "Nico Collins", "pos": "WR", "team": "HOU", "why": "Cleared. Not on Houston's final Week 4 report. Dallas visits a pass defense that just lost in Rio. Rooms that sat him for the hamstring can still be bought before noon.", "src": "NBC Sports, NFL.com"},
+    {"name": "Puka Nacua", "pos": "WR", "team": "LAR", "why": "Hip is a full practice and no designation. Philadelphia is Sunday. Rooms that faded him after Australia already paid. Buy any leftover sit.", "src": "CBS Sports, NFL.com"},
     {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "why": "194 and two on Thursday in Green Bay, then a Monday night in the dome. 349 through three weeks. Rooms that faded him after 72 in the 34-3 already paid. Buy any leftover doubt.", "src": "Reuters, CBS Sports"},
-    {"name": "Marcus Mariota", "pos": "QB", "team": "WAS", "why": "Three scores and a 33-31 win that ended Seattle's twelve-game streak. Daniels is a month. Superflex streams that added him after the elbow just cashed. London is Sunday morning.", "src": "FOX, NBC Sports"},
-    {"name": "Case Keenum", "pos": "QB", "team": "CHI", "why": "27-7 over Philadelphia. Two throwing scores, one sneak, no sacks. Williams is a hamstring. The Jets visit Sunday. Superflex rooms that still have a hole already know the add.", "src": "FantasyPros, Reuters"},
-    {"name": "Brock Bowers", "pos": "TE", "team": "LV", "why": "Ten for 116 and a score in the first game back. Sits first on the weekly tight end mash. Kansas City visits. Start him even if the Keep price already moved.", "src": "Sporting News, FantasyPros"},
     {"name": "Kenneth Walker", "pos": "RB", "team": "KC", "why": "360 rushing yards, the league lead, in a Chiefs feature. Mahomes is 3-0. Las Vegas is Sunday. Rooms that still have him as a Seahawks memory will sell the year cheap.", "src": "Sporting News"},
-    {"name": "Brock Purdy", "pos": "QB", "team": "SF", "why": "NFL.com just put him first among quarterbacks. Four scores on the Cardinals. Denver visits. Superflex rooms that still have him as a system name can be bought.", "src": "NFL.com"},
+    {"name": "Brock Bowers", "pos": "TE", "team": "LV", "why": "Ten for 116 and a score in the first game back. Sits first on the weekly tight end mash. Kansas City visits. Start him even if the Keep price already moved.", "src": "Sporting News, FantasyPros"},
     {"name": "Tyler Loop", "pos": "K", "team": "BAL", "why": "56 yards at the horn in Rio. Tennessee is Sunday and the number is 11.5. Second or third on every Week 4 kicker mash. Stream him if a room still has a dud.", "src": "FOX, FantasyPros"},
 ]
 COLD = [
     {"name": "De'Von Achane", "pos": "RB", "team": "MIA", "why": "ACL, the year is over. Gordon already took the snaps. Keep rooms that still have him as a first-round chair will sell the memory. Take the years if the price is a 2027 first and sit the rest.", "src": "FanDuel Research, CBS Sports"},
     {"name": "Baker Mayfield", "pos": "QB", "team": "TB", "why": "Dislocated thumb, two or three weeks, Jalon Daniels starts. Green Bay visits. Rooms that still have him as a locked Superflex chair will pay after any spike. Take it.", "src": "FantasyPros, CBS Sports"},
     {"name": "Breece Hall", "pos": "RB", "team": "NYJ", "why": "Thigh in the fourth quarter at Detroit. Allen already took the last two drives and sits first on the wire. Thighs linger. Sell the starter tag if a manager still wants the name on the card.", "src": "NFL.com, Yahoo Sports"},
+    {"name": "Justin Jefferson", "pos": "WR", "team": "MIN", "why": "Ankle. Out for Miami. Addison gets the targets for one Sunday. Rooms that still have Jefferson as a locked flex will sit him anyway. Sell the week, hold the years.", "src": "CBS Sports, NFL.com"},
     {"name": "C.J. Stroud", "pos": "QB", "team": "HOU", "why": "0-3, ten sacks, 19-17 at home after Shrader's 43-yarder. Dallas visits. Rooms drafted him like a ceiling. Three weeks have been a floor. If someone still wants the brand, let them pay Superflex money.", "src": "NBC News, Sporting News"},
     {"name": "Drake Maye", "pos": "QB", "team": "NE", "why": "Six interceptions, one passing score, 36 points as a club. Buffalo is Sunday. Year 2 still asks for time. Flip after any spike before the room remembers the playoff tape.", "src": "CBS Sports, FantasyPros"},
     {"name": "Jalen Hurts", "pos": "QB", "team": "PHI", "why": "Seven points at home against Keenum. No first-quarter score all year. The Rams visit on a short week. If a room still has him as a top-three Superflex chair, take the overpay.", "src": "CBS Sports, Reuters"},
     {"name": "Justin Herbert", "pos": "QB", "team": "LAC", "why": "14.7 points a night, 0-3, four interceptions, and Seattle at home. Rooms drafted him like a ceiling. Three weeks have been a floor. If someone still wants the brand, let them pay it.", "src": "CBS Sports"},
     {"name": "Jayden Daniels", "pos": "QB", "team": "WAS", "why": "Left elbow again. Mariota just won in Seattle. ESPN already talks about a month. Superflex rooms that just watched 1-2 will sell a Keep quarterback cheap. Pay the years, sit the month.", "src": "ESPN, FantasyPros"},
-    {"name": "Caleb Williams", "pos": "QB", "team": "CHI", "why": "Hamstring. Keenum just hung 27 on Philadelphia. The Jets visit. The 59-point opener is a month old. Sell into the hope that he dresses next week.", "src": "FantasyPros, Reuters"},
-    {"name": "Jordan Love", "pos": "QB", "team": "GB", "why": "52 percent, a 35-14 home-opener loss, and Tampa with a rookie under center. Rooms that still have him as a locked Superflex chair will pay after any spike. Take it.", "src": "CBS Sports, Reuters"},
+    {"name": "DeVonta Smith", "pos": "WR", "team": "PHI", "why": "Hamstring. Out against the Rams. Brown is out too. Rooms that still have him as a locked WR2 will sit the week. Sell any leftover start hope.", "src": "CBS Sports, NFL.com"},
 ]
 
 
@@ -916,7 +916,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 73
+CSS_VER = 74
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1251,7 +1251,7 @@ FB_SEO = {
     ),
     "weekly.html": (
         "Week 4 Fantasy Football Rankings 2026 | Ball Keep",
-        "Week 4 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Oct 1), RotoWire, and 4for4.",
+        "Week 4 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Oct 3), RotoWire, and 4for4.",
         "img/logo.jpg",
     ),
     "the-recap.html": (
@@ -1351,7 +1351,7 @@ FB_SEO = {
     ),
     "week4-matchups.html": (
         "Week 4 NFL Matchups and Win Predictions 2026 | Ball Keep",
-        "Week 4 card before Thursday in Cleveland. Steelers at Browns. Sunday and Monday still open.",
+        "Week 4 card after Thursday in Cleveland. Browns 27-24. Sunday and Monday still open.",
         "img/players/josh-allen.png",
     ),
     "archive/week1/index.html": (
@@ -1487,7 +1487,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt October 1, 2026 from the live public lists."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Top 400 names from 40 public boards, rebuilt October 3, 2026 from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
 ]
@@ -1762,7 +1762,7 @@ FB_ALSO = {
         ("nfl-schedule.html", "NFL Schedule", "Full slate."),
     ],
     "week2-matchups.html": [
-        ("week4-matchups.html", "Week 4 Predictions", "This week's card. Thursday is still open."),
+        ("week4-matchups.html", "Week 4 Predictions", "This week's card. Thursday is in."),
         ("the-recap.html", "The Recap", "The full Week 1 essay."),
         ("week2-dst.html", "Week 2 DST", "Finished Week 2 card."),
         ("week2-kickers.html", "Week 2 Kickers", "Finished Week 2 card."),
@@ -1783,7 +1783,7 @@ FB_ALSO = {
         ("week2-kickers.html", "Week 2 Kickers", "Finished Week 2 card."),
     ],
     "week3-matchups.html": [
-        ("week4-matchups.html", "Week 4 Predictions", "This week's card. Thursday is still open."),
+        ("week4-matchups.html", "Week 4 Predictions", "This week's card. Thursday is in."),
         ("week3-dst.html", "Week 3 DST", "Finished Week 3 card."),
         ("week3-kickers.html", "Week 3 Kickers", "Finished Week 3 card."),
         ("weekly.html", "Weekly", "This week's skill boards."),
@@ -1861,7 +1861,7 @@ FB_ALSO = {
         ("week2-ledger.html", "The Ledger", "RB2 on the lists, and what Week 2 paid."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("the-recap.html", "The Recap", "The full Week 1 essay."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick on every line. Thursday is still open."),
+        ("week4-matchups.html", "Week 4 Predictions", "A pick on every line. Thursday is in."),
         ("the-market.html", "The Market", "Buy low and sell high after Week 1."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
@@ -3809,7 +3809,7 @@ def main():
     hc_body = f"""
     <p class="kicker">Market Tape · {UPDATED}</p>
     <h1>BK Hot 'n' Cold</h1>
-    <p class="note">Into Week 4. Thursday in Cleveland is still open. Buy the names rooms punished after an ACL, a thumb, or a thigh. Sell the names rooms just crowned after one loud night. Pulled from the Week 3 tape, ESPN, Reuters, Sports Illustrated, and NFL.com.</p>
+    <p class="note">Into Week 4. Thursday is in, Cleveland 27-24. Buy the names rooms punished after an ACL, a thumb, a thigh, or a Saturday sit. Sell the names rooms just crowned after one loud night. Pulled from the Thursday tape, ESPN, Reuters, Sports Illustrated, and NFL.com.</p>
     <div class="grid">
       <div>
         <h3 class="hc-hot">Hot: Buy</h3>
@@ -4107,7 +4107,7 @@ def main():
             f"A pick for every Week 4 game, mashed from {len(W4_MATCH_SOURCES)} published sources: "
             "Sporting News, two CBS Sports cards, FanSided, the SportsLine model, the market favorite, "
             "Week 3 winners, and a short post-Week 3 power board. Unpicked games on a board are "
-            "skipped. The pick is the side with more votes. Thursday in Cleveland is still open. "
+            "skipped. The pick is the side with more votes. Thursday already has a final, Cleveland 27-24. "
             "Sunday and Monday stay open. The essay under the table walks the slate in kickoff order."
         ),
         extra=w4_predictions_article_html(),

@@ -607,8 +607,9 @@ def main():
     assert "PIT" in w4_m_html and "CLE" in w4_m_html
     assert "Pick: BUF" in w4_m_html
     assert "Pick: MIN" in w4_m_html
-    assert "Steelers at Browns" in w4_m_html
-    assert "Thursday is still open" in w4_m_html
+    assert "Steelers at Browns" in w4_m_html or "Browns 27-24" in w4_m_html
+    assert "CLE 27-24" in w4_m_html or "27-24" in w4_m_html
+    assert "Thursday is in" in w4_m_html
     assert "\u2014" not in w4_m_html
     assert "on a desk" not in w4_m_html
     assert "every other desk" not in w2_m_html
@@ -648,7 +649,7 @@ def main():
     assert "<h1>Weekly</h1>" in weekly_html
     assert "the-recap.html" in weekly_html
     assert "week4-matchups.html" in weekly_html
-    assert "Steelers at Browns" in weekly_html
+    assert "Browns 27-24" in weekly_html
     assert "Seahawks 13, Patriots 10" in weekly_html
     assert "Jahmyr Gibbs" in weekly_html
     opening_html = html_of("archive/week1/opening.html")

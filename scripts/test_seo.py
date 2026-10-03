@@ -834,8 +834,9 @@ def test_week4_predictions_copy():
     ):
         assert f"Pick: {club}" in html
     assert "week4-matchups.html" in teaser
-    assert "Steelers at Browns" in teaser
-    assert "Thursday is still open" in teaser
+    assert "Browns 27-24" in teaser
+    assert "Sunday is still open" in teaser
+    assert "Final: CLE 27-24" in html
 
 
 def test_week4_boards():
@@ -867,7 +868,8 @@ def test_week4_boards():
     assert all(g["pick"] in {g["away"], g["home"]} for g in games)
     assert games[0]["day"].startswith("Thu")
     assert games[0]["key"] == "PIT@CLE"
-    assert "final" not in games[0]
+    assert games[0]["final"] == "27-24"
+    assert games[0]["final_winner"] == "CLE"
 
 
 def test_attach_pos_ranks():
@@ -1085,7 +1087,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=73" in doc
+    assert "css/site.css?v=74" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 
