@@ -498,7 +498,7 @@ HOT = [
     {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "why": "194 and two on Thursday in Green Bay, then a Monday night in the dome. 349 through three weeks. Rooms that faded him after 72 in the 34-3 already paid. Buy any leftover doubt.", "src": "Reuters, CBS Sports"},
     {"name": "Kenneth Walker", "pos": "RB", "team": "KC", "why": "360 rushing yards, the league lead, in a Chiefs feature. Mahomes is 3-0. Las Vegas is Sunday. Rooms that still have him as a Seahawks memory will sell the year cheap.", "src": "Sporting News"},
     {"name": "Brock Bowers", "pos": "TE", "team": "LV", "why": "Ten for 116 and a score in the first game back. Sits first on the weekly tight end mash. Kansas City visits. Start him even if the Keep price already moved.", "src": "Sporting News, FantasyPros"},
-    {"name": "Tyler Loop", "pos": "K", "team": "BAL", "why": "56 yards at the horn in Rio. Tennessee is Sunday and the number is 11.5. Second or third on every Week 4 kicker mash. Stream him if a room still has a dud.", "src": "FOX, FantasyPros"},
+    {"name": "Jordan Addison", "pos": "WR", "team": "MIN", "why": "Jefferson is out. Addison is the first read against Miami. DraftKings and RotoBaller both start him as a WR3 or flex. Sunday is the week the chair opens.", "src": "DraftKings, RotoBaller"},
 ]
 COLD = [
     {"name": "De'Von Achane", "pos": "RB", "team": "MIA", "why": "ACL, the year is over. Gordon already took the snaps. Keep rooms that still have him as a first-round chair will sell the memory. Take the years if the price is a 2027 first and sit the rest.", "src": "FanDuel Research, CBS Sports"},
@@ -916,7 +916,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 74
+CSS_VER = 75
 
 PLAYER_PAGES = {}  # key -> slug
 

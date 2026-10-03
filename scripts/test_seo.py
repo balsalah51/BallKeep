@@ -1087,7 +1087,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=74" in doc
+    assert "css/site.css?v=75" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 
