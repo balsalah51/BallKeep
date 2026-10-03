@@ -298,6 +298,7 @@ RANK_BUMPS = (
     ("Ollie Gordon II", 3),
     ("Denzel Boston", 3),
     ("Nico Collins", 2),
+    ("Jordan Addison", 4),
 )
 TEAM_FIXES = {
     "Kenneth Walker": "KC",
