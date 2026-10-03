@@ -649,7 +649,7 @@ def main():
     assert "<h1>Weekly</h1>" in weekly_html
     assert "the-recap.html" in weekly_html
     assert "week4-matchups.html" in weekly_html
-    assert "Steelers at Browns" in weekly_html
+    assert "Browns 27-24" in weekly_html
     assert "Seahawks 13, Patriots 10" in weekly_html
     assert "Jahmyr Gibbs" in weekly_html
     opening_html = html_of("archive/week1/opening.html")
