@@ -607,8 +607,9 @@ def main():
     assert "PIT" in w4_m_html and "CLE" in w4_m_html
     assert "Pick: BUF" in w4_m_html
     assert "Pick: MIN" in w4_m_html
-    assert "Steelers at Browns" in w4_m_html
-    assert "Thursday is still open" in w4_m_html
+    assert "Steelers at Browns" in w4_m_html or "Browns 27-24" in w4_m_html
+    assert "CLE 27-24" in w4_m_html or "27-24" in w4_m_html
+    assert "Thursday is in" in w4_m_html
     assert "\u2014" not in w4_m_html
     assert "on a desk" not in w4_m_html
     assert "every other desk" not in w2_m_html

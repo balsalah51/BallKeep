@@ -23,7 +23,7 @@ ARTICLES = [
     (
         "week4-matchups.html",
         "Week 4 Predictions",
-        "Thursday, Oct 1",
+        "Saturday, Oct 3",
         W4_HEAD,
         W4_DEK,
         "img/players/josh-allen.png",

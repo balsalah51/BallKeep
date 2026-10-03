@@ -3,14 +3,14 @@ from __future__ import annotations
 
 from seo import article_jsonld
 
-HEADLINE = "Twelve games finished inside a score last Sunday, and Thursday still has two clubs who both just won, waiting on a night in Cleveland that has not kicked yet."
+HEADLINE = "Szmyt found 56 yards with ten seconds left in a building that was supposed to lose, and Sunday still has fifteen games left to argue with."
 DEK = (
-    "Steelers at Browns on Prime. The mash has Pittsburgh by four votes to two. "
-    "Achane is done. Hall is week to week. Mayfield has a thumb. "
-    "Sunday and Monday are still a rumor."
+    "Cleveland hung 27-24 after Rodgers tied it. The mash had Pittsburgh by four votes to two. "
+    "Judkins scored. Boston went 60. Delpit picked the Hail Mary. "
+    "The rest of the slate is still Sunday and Monday."
 )
 PUBLISHED = "2026-10-01T02:30:00Z"
-MODIFIED = "2026-10-01T02:30:00Z"
+MODIFIED = "2026-10-03T04:00:00Z"
 OG_IMAGE = "img/players/josh-allen.png"
 
 PREDICTION_LD = [
@@ -42,9 +42,9 @@ def predictions_teaser():
     <a class="opening-teaser recap-teaser" href="week4-matchups.html">
       <img src="{OG_IMAGE}" alt="Josh Allen" width="160" height="160" />
       <div>
-        <p class="k">Week 4 · Thursday, Oct 1</p>
-        <h2>Steelers at Browns. Thursday is still open.</h2>
-        <p>Pittsburgh 2-1. Cleveland 2-1. The mash takes the Steelers. Sunday still has fifteen games left.</p>
+        <p class="k">Week 4 · Saturday, Oct 3</p>
+        <h2>Browns 27-24. Sunday is still open.</h2>
+        <p>Cleveland 27-24. Szmyt 56. The mash took Pittsburgh on Thursday and missed. Fifteen games left.</p>
       </div>
     </a>
     """
@@ -53,13 +53,13 @@ def predictions_teaser():
 def predictions_article_html():
     return f"""
     <article class="opening recap">
-      <p class="opening-kicker">Week 4 · Thursday is still open · Thursday, October 1, 2026</p>
+      <p class="opening-kicker">Week 4 · Thursday is in · Saturday, October 3, 2026</p>
       <h2 class="pred-hed">{HEADLINE}</h2>
       <p class="dek">{DEK}</p>
-      <p class="byline">Ball Keep · Filed Thursday morning. No Week 4 final yet. The whole slate is still a card.</p>
+      <p class="byline">Ball Keep · Filed Thursday morning. Cleveland final added Saturday. Sunday card still live.</p>
 
       <div class="score-row recap-scores">
-        <div class="score-card"><p class="when">Thu · Prime</p><p class="result">PIT at CLE</p><p class="meta">Rodgers on a short week · Browns +2.5</p></div>
+        <div class="score-card is-final"><p class="when">Thu · Final</p><p class="result">CLE 27, PIT 24</p><p class="meta">Szmyt 56 · ten seconds · Delpit INT</p></div>
         <div class="score-card"><p class="when">Sun · CBS</p><p class="result">NE at BUF</p><p class="meta">Allen after five turnovers and a win</p></div>
         <div class="score-card"><p class="when">Sun · NBC</p><p class="result">DET at CAR</p><p class="meta">Gibbs on the road · Young after 18</p></div>
         <div class="score-card"><p class="when">Mon · ESPN</p><p class="result">ATL at NO</p><p class="meta">Bijan after 194 · Shough at home</p></div>
@@ -77,11 +77,12 @@ def predictions_article_html():
       </div>
       <p class="photo-cap">Allen at home against Maye. Gibbs on Sunday night. Mahomes in Las Vegas. Jackson against Ward. Smith-Njigba after Mariota ended the streak. Robinson on Monday. Purdy at home. Walker already has 360.</p>
 
-      <p class="lede">A prediction page that only prints a table starts to feel like a filing cabinet, and a prediction page that also prints the argument starts to feel like a room you can sit in on a Thursday morning while Prime is still nine hours away and two AFC North clubs are both 2-1. Last Sunday put twelve games inside a single score, which is a league record for a Sunday, and it also took De'Von Achane's year, Baker Mayfield's next three weeks, and whatever Breece Hall thought he still had in his thigh. The mash above already voted. Thursday has not written a receipt. What follows is the walk through sixteen games in kickoff order, using the published cards from Bill Bender at Sporting News, Tyler Sullivan at CBS Sports, John Breech at CBS Sports, Cody Williams at FanSided, the SportsLine model, the market, and the tape we just watched, with a side on every game and the winners copied at the bottom of the table for anyone who wants the list without the sentences.</p>
+      <p class="lede">A prediction page that only prints a table starts to feel like a filing cabinet, and a prediction page that also prints the argument starts to feel like a room you can sit in on a Saturday morning while the first Sunday window is still a rumor. The mash above already voted. Thursday already wrote one receipt, and it wrote it in a building the mash had as a two-and-a-half-point dog. What follows is the walk through sixteen games in kickoff order, using the published cards from Bill Bender at Sporting News, Tyler Sullivan at CBS Sports, John Breech at CBS Sports, Cody Williams at FanSided, the SportsLine model, the market, and the tape we just watched, with a side on every game and the winners copied at the bottom of the table for anyone who wants the list without the sentences.</p>
 
-      <h2>Thursday: Pittsburgh at Cleveland. Pick: PIT</h2>
-      <p>Four of six. Bender printed 21-16 and still laid the two and a half. Sullivan printed 21-17. Breech took the Browns 19-16 because a 42-year-old quarterback on a short week is a sentence he has been waiting to write, and FanSided went with him. The market has Pittsburgh minus 2.5 in a building that has beaten the Steelers in four straight home meetings, which is a habit the mash decided was not enough. Aaron Rodgers threw three scores on Sunday and then had to pack for Cleveland on three days of rest. Deshaun Watson has completed 68 percent and won the last two, and Mason Graham already has four sacks, and none of that moved four cards off the road favorite. I am taking Pittsburgh with the mash because a short week still has T.J. Watt on it, and I am telling every room that streamed Cleveland last week against Carolina that Thursday night is a coin they already spent.</p>
-      <p>Fantasy rooms already know the ugly version of this game. Start Watt if you rostered him. Stream Pittsburgh's defense, which sits fourth on the Week 4 DST mash and gets a Watson who has been sacked in every game. Stream Cleveland only if you enjoy a 38-and-a-half total and you already paid the FAAB. Boswell sits inside the top twelve on the kicker mash. Sit the Browns skill names unless Denzel Boston is the receiver you added last week and you are willing to start him on a Thursday that the published cards do not love.</p>
+      <h2>Thursday: Pittsburgh at Cleveland. Pick: PIT. Final: CLE 27-24</h2>
+      <p>Four of six. Bender printed 21-16 and still laid the two and a half. Sullivan printed 21-17. Breech took the Browns 19-16 because a 42-year-old quarterback on a short week is a sentence he has been waiting to write, and FanSided went with him. The market had Pittsburgh minus 2.5 in a building that has beaten the Steelers in four straight home meetings, which is a habit the mash decided was not enough. I took Pittsburgh with them on Thursday morning because a short week still had T.J. Watt on it, and a habit that long usually gets one more night before it pays.</p>
+      <p>Saturday morning now has the receipt. Cleveland 27, Pittsburgh 24. Andre Szmyt hit a 56-yarder with ten seconds left, a career long, after Watson drove them into range for the third straight week. The Steelers had tied it 24-24 on a three-yard Pat Freiermuth catch and a Rodgers sneak for two. Grant Delpit picked the Hail Mary with one second on the clock. Quinshon Judkins scored from two. Denzel Boston caught the 60-yarder that set up that punch. The Browns are 3-1 for the first time since 2001 and have won eight straight Thursday nights. The mash took the road favorite. The building won by three. Both clubs sit in the middle of the AFC North, and the rest of the card is still Sunday and Monday.</p>
+      <p>Fantasy rooms already know what to do with a night like that. Stream Cleveland's defense if you still have a hole and you already spent Thursday watching Watt. Szmyt is a start next week if a room still has a dud. Boston just got a Thursday chapter. Sit the Steelers skill names unless Freiermuth is already in the lineup and you have no other tight end. The waiver board has already moved on to Allen and Gordon and Sadiq, and Sunday still has fifteen games left to move it again.</p>
 
       <figure>
         <div class="photo-pair">
@@ -141,9 +142,9 @@ def predictions_article_html():
       <p>Four of seven, against the number. Bender took the Saints 29-22. FanSided took the Saints. Sullivan printed Falcons 26-24 and Breech went with him, and the mash landed in Atlanta because a 194-yard Thursday still counts on a short week. Tyler Shough ranks second in passing yards and the dome will be loud on the twentieth anniversary of the first home game after the storm, which is a real sentence and also not a tackle. Bijan Robinson already has 349. Michael Penix Jr. just hung 35 in Lambeau. Start Robinson. Start Shough in Superflex. Start Olave. Sit both defenses. The number is New Orleans minus 2.5 and the votes did not care.</p>
 
       <h2>What the rooms should do with the card</h2>
-      <p>Copy the published picks in kickoff order if you came here for the list: PIT, IND, BAL, BUF, CHI, CIN, DAL, ARI, LAR, GB, MIN, KC, SEA, SF, DET, ATL. Thursday is still live. Sunday and Monday are still live. The mash is a vote, and the vote has not spent a night yet.</p>
-      <p>The <a href="waiver.html">Week 4 waiver board</a> opens with Braelon Allen, then Ollie Gordon, Kenyon Sadiq, and Keenan Allen. Achane is done for the year and Hall is week to week, so the first two backs on the wire are the first two backs on the wire. Sadiq just went 7 for 105 and a score. Spend the leftover FAAB on the names Thursday actually moves.</p>
-      <p>The <a href="week4-dst.html">Week 4 DST board</a> leans Minnesota, Seattle, and Baltimore. Minnesota gets Willis without Achane. Seattle gets Herbert at home. Baltimore gets Ward. The <a href="week4-kickers.html">kicker board</a> still loves Brandon Aubrey and has learned to say Ka'imi Fairbairn and Tyler Loop out loud. The <a href="weekly.html">weekly skill boards</a> rebuilt this morning from FantasyPros ECR dated October 1, plus RotoWire, 4for4, and the rest of the kit. Gibbs opens the flex. Smith-Njigba opens the receivers. Bowers sits first among the tight ends after one night back.</p>
+      <p>Copy the published picks in kickoff order if you came here for the list: PIT, IND, BAL, BUF, CHI, CIN, DAL, ARI, LAR, GB, MIN, KC, SEA, SF, DET, ATL. Thursday already missed. Sunday and Monday are still live. The mash is a vote, and the vote is 0-1 on the night.</p>
+      <p>The <a href="waiver.html">Week 4 waiver board</a> opens with Braelon Allen, then Ollie Gordon, Kenyon Sadiq, and Keenan Allen. Achane is done for the year and Hall is week to week, so the first two backs on the wire are the first two backs on the wire. Sadiq just went 7 for 105 and a score. Spend the leftover FAAB on the names Sunday actually moves.</p>
+      <p>The <a href="week4-dst.html">Week 4 DST board</a> leans Minnesota, Seattle, and Baltimore. Minnesota gets Willis without Achane, and Justin Jefferson is out. Seattle gets Herbert at home. Baltimore gets Ward and a Lamar who practiced fully. The <a href="week4-kickers.html">kicker board</a> still loves Brandon Aubrey and has learned to say Ka'imi Fairbairn and Tyler Loop out loud. The <a href="weekly.html">weekly skill boards</a> rebuilt this morning from FantasyPros ECR dated October 3, plus RotoWire, 4for4, and the rest of the kit. Gibbs opens the flex. Smith-Njigba opens the receivers. Bowers sits first among the tight ends after one night back.</p>
 
       <div class="ramif">
         <h3>The sixteen, one more time</h3>
@@ -168,7 +169,7 @@ def predictions_article_html():
       </div>
 
       <h2>A last look, because a card this long deserves one</h2>
-      <p>I keep a private list of images from a week that still has sixteen arguments and zero receipts. Rodgers packing for Cleveland on a short week after three scores. Watson walking into a building that has owned this meeting. Allen waiting in a Highmark that already has a 24 next to a Chargers night that should have been a loss. Mahomes packing for Las Vegas with Walker already at 360. Darnold walking back into Seattle after Mariota ended the streak. Robinson packing for the dome after 194 in a building that was supposed to own Thursday. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. Spend both, then spend the wire on Allen and Gordon and Sadiq before the room remembers the names.</p>
-      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card), Tyler Sullivan at CBS Sports (Sep 30), John Breech at CBS Sports (Sep 29), Cody Williams at FanSided (Sep 29), the SportsLine model (10,000 sims), the published FanDuel and DraftKings numbers, a Week 3 winners board, and a short post-Week 3 power card. Waiver names from Justin Boone, RotoBaller, NFL.com, and FanDuel Research. Week 3 scores sit on <a href="week3-matchups.html">Week 3 Predictions</a> and <a href="week2-tape.html">The Second Sunday</a>.</p>
+      <p>I keep a private list of images from a week that now has one receipt and fifteen arguments. Szmyt holding the follow-through at 56. Boston after 60. Delpit with the ball and one second left. Allen waiting in a Highmark that already has a 24 next to a Chargers night that should have been a loss. Mahomes packing for Las Vegas with Walker already at 360. Darnold walking back into Seattle after Mariota ended the streak. Robinson packing for the dome after 194 in a building that was supposed to own Thursday. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. Spend both, then spend the wire on Allen and Gordon and Sadiq before the room remembers the names.</p>
+      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card), Tyler Sullivan at CBS Sports (Sep 30), John Breech at CBS Sports (Sep 29), Cody Williams at FanSided (Sep 29), the SportsLine model (10,000 sims), the published FanDuel and DraftKings numbers, a Week 3 winners board, and a short post-Week 3 power card. Thursday final from the published box in Cleveland. Waiver names from Justin Boone, RotoBaller, NFL.com, and FanDuel Research. Week 3 scores sit on <a href="week3-matchups.html">Week 3 Predictions</a> and <a href="week2-tape.html">The Second Sunday</a>.</p>
     </article>
     """

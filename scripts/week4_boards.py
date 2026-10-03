@@ -329,8 +329,10 @@ MATCH_SOURCES = [
 ]
 
 
-# Thursday night has not kicked. The whole slate stays open.
-WEEK4_FINALS = {}
+# Thursday is in. Sunday and Monday stay open.
+WEEK4_FINALS = {
+    "PIT@CLE": {"score": "27-24", "winner": "CLE", "day": "Thu Final"},
+}
 
 
 def week4_matchups():
@@ -387,5 +389,5 @@ W4_K_FAQ = [
 W4_MATCH_FAQ = [
     ("How are the win picks built?", "Published Week 4 cards: Sporting News, two CBS Sports cards, FanSided, the SportsLine model, the market favorite, Week 3 winners, and a short post-Week 3 power board. Unpicked games on a board are skipped."),
     ("Is this a win chance?", "Away and Home are raw vote counts. The pick is the side with more published votes."),
-    ("Is this a bet slip?", "It is a mash of public picks and the market. Thursday night is still open. Sunday and Monday stay open."),
+    ("Is this a bet slip?", "It is a mash of public picks and the market. Thursday already has a final. Sunday and Monday stay open."),
 ]
