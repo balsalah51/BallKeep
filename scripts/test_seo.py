@@ -144,7 +144,7 @@ def test_football_nav_keeps_every_link():
         "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
         "Weekly", "The Recap", "Week 4 DST", "Week 4 K", "Week 4 Predictions", "Week 4 Waivers", "The Market", "Injuries",
-        "ADP", "Trade", "The Split", "The Handcuff", "The Method",
+        "ADP", "Trade", "The Handcuff", "The Method",
         "My Team",
         "Articles", "Touches", "Players", "News", "The X", "Hot 'n' Cold",
         "NFL", "MLB", "BPL",
@@ -334,7 +334,7 @@ def test_searchaction_and_schema():
     assert "https://ballkeep.com/articles.html" in txt
     assert "https://ballkeep.com/the-long-game.html" in txt
     assert "https://ballkeep.com/two-clocks.html" in txt
-    assert "https://ballkeep.com/the-split.html" in txt
+    assert "https://ballkeep.com/the-split.html" not in txt
     assert "https://ballkeep.com/the-handcuff.html" in txt
     assert "https://ballkeep.com/next-chair.html" not in txt
     assert "https://ballkeep.com/the-inheritance.html" not in txt
@@ -558,7 +558,7 @@ def test_visible_desk_copy_removed():
         "week2_boards.py", "week2_predictions.py", "week2_tape.py", "week2_ledger.py",
         "week3_boards.py", "week3_predictions.py",
         "week4_boards.py", "week4_predictions.py",
-        "two_clocks.py", "the_split.py", "the_handcuff.py", "the_recap.py",
+        "two_clocks.py", "the_handcuff.py", "the_recap.py",
     ):
         text = (root / name).read_text()
         for phrase in banned:
@@ -889,35 +889,6 @@ def test_attach_pos_ranks():
     assert 'data-pos="RB"' in html
 
 
-def test_the_split():
-    from the_split import room_window, split_rows
-    keep = [
-        {"name": "Drake Maye", "pos": "QB", "team": "NE", "bk": 8, "value": 8000, "pos_label": "QB3", "age": 23},
-        {"name": "Christian McCaffrey", "pos": "RB", "team": "SF", "bk": 48, "value": 2100, "pos_label": "RB18", "age": 30},
-        {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "bk": 2, "value": 10800, "pos_label": "RB1", "age": 24},
-    ]
-    board = [
-        {"name": "Drake Maye", "pos": "QB", "team": "NE", "bk": 22, "value": 4200, "pos_label": "QB8"},
-        {"name": "Christian McCaffrey", "pos": "RB", "team": "SF", "bk": 7, "value": 8600, "pos_label": "RB3"},
-        {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "bk": 4, "value": 9700, "pos_label": "RB2"},
-    ]
-    rows = split_rows(keep, board)
-    assert len(rows) == 3
-    by_name = {r["name"]: r for r in rows}
-    assert by_name["Christian McCaffrey"]["clock"] == "Sunday"
-    assert by_name["Christian McCaffrey"]["gap"] == 41
-    assert by_name["Drake Maye"]["clock"] == "Years"
-    assert by_name["Drake Maye"]["gap"] == -14
-    assert by_name["Bijan Robinson"]["clock"] == "Even"
-    later = room_window([by_name["Drake Maye"]])
-    assert later["year"] == 2028
-    now = room_window([by_name["Christian McCaffrey"]])
-    assert now["year"] == 2026
-    empty = room_window([])
-    assert empty["year"] is None
-    assert "Add names" in empty["verdict"]
-
-
 def test_two_clocks_article():
     from two_clocks import HEADLINE, clocks_article_html, clocks_teaser
     html = clocks_article_html()
@@ -925,7 +896,8 @@ def test_two_clocks_article():
     assert "\u2014" not in html
     assert "desk" not in html.lower()
     assert "looking at" not in html
-    assert "the-split.html" in html
+    assert "the-split.html" not in html
+    assert "The Split" not in html
     assert "2026" in html
     assert "two-clocks.html" in clocks_teaser()
     assert "A closing that sounds like a person" not in html

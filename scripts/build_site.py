@@ -891,7 +891,6 @@ NAV_GROUPS = [
     ("tools", "Tools", [
         ("adp.html", "ADP"),
         ("trade.html", "Trade"),
-        ("the-split.html", "The Split"),
         ("the-handcuff.html", "The Handcuff"),
         ("the-method.html", "The Method"),
     ]),
@@ -1396,17 +1395,12 @@ FB_SEO = {
     ),
     "articles.html": (
         "Fantasy Football Articles | Ball Keep",
-        "Essays and long-term Superflex strategy on Ball Keep. Two Clocks, The Split, The Second Sunday, The Ledger, and The Long Game.",
+        "Essays and long-term Superflex strategy on Ball Keep. Two Clocks, The Second Sunday, The Ledger, and The Long Game.",
         "img/players/drake-maye.jpg",
     ),
     "two-clocks.html": (
         "Two Clocks | Dynasty vs Redraft | Ball Keep",
-        "A room has two clocks. The Keep is years. The Board is Sunday. The Split prints both and names the window year.",
-        "img/players/drake-maye.jpg",
-    ),
-    "the-split.html": (
-        "The Split | Keep vs Board Window | Ball Keep",
-        "Two clocks on every name. Build a room and see if it is a 2026 club or a 2028 club. Keep BK Value next to Board BK Value.",
+        "A room has two clocks. The Keep is years. The Board is Sunday. A roster has to say which year it is trying to win.",
         "img/players/drake-maye.jpg",
     ),
     "the-handcuff.html": (
@@ -1542,7 +1536,6 @@ FB_ALSO = {
         ("trade-superflex.html", "Superflex Calculator", "Keep ranks as BK Value."),
         ("players/index.html", "Player Pages", "Every Keep name, tape included."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
-        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
     ],
     "board.html": [
@@ -1555,7 +1548,6 @@ FB_ALSO = {
         ("trade-ppr.html", "PPR Calculator", "Board ranks as BK Value."),
         ("players/index.html", "Player Pages", "Tape and plus/minus."),
         ("news.html", "BK News", "Injuries and roster tape."),
-        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
     ],
     "best-ball.html": [
@@ -1611,7 +1603,6 @@ FB_ALSO = {
         ("the-keep.html", "The Keep", "Superflex dynasty ranks."),
         ("board.html", "The Board", "Redraft PPR ranks."),
         ("recent-trades.html", "Recent Deals", "Packages that closed."),
-        ("the-split.html", "The Split", "Two clocks before you price one."),
         ("players/index.html", "Player Pages", "Every name in the calc."),
     ],
     "news.html": [
@@ -1725,7 +1716,6 @@ FB_ALSO = {
     ],
     "league.html": [
         ("trade.html", "Trade Calculators", "Price a deal."),
-        ("the-split.html", "The Split", "Two clocks on the room you actually roster."),
         ("the-keep.html", "The Keep", "Superflex dynasty."),
         ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
         ("adp.html", "ADP", "Board vs ESPN."),
@@ -1822,31 +1812,19 @@ FB_ALSO = {
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
         ("board.html", "The Board", "Redraft PPR, this year."),
         ("trade.html", "Trade Calculators", "BK Value on six boards."),
-        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("the-fence.html", "The Fence (IDP)", "Superflex plus IDP."),
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("discord.html", "Discord", "Ranks inside a server."),
-    ],
-    "the-split.html": [
-        ("two-clocks.html", "Two Clocks", "The essay that belongs with this page."),
-        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
-        ("the-keep.html", "The Keep", "Superflex dynasty, the years clock."),
-        ("board.html", "The Board", "Redraft PPR, the Sunday clock."),
-        ("trade.html", "Trade", "Price one clock."),
-        ("league.html", "My Team", "Load a Sleeper league."),
-        ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ],
     "the-handcuff.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, the years clock."),
         ("board.html", "The Board", "Redraft PPR, the Sunday clock."),
         ("depth-charts.html", "Depth Charts", "Sleeper RB order."),
         ("injuries.html", "Injuries", "ESPN designations."),
-        ("the-split.html", "The Split", "Two clocks on a room you type."),
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
     ],
     "two-clocks.html": [
-        ("the-split.html", "The Split", "Two clocks and a window year."),
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("articles.html", "Articles", "Every long read in one list."),
         ("the-keep.html", "The Keep", "Superflex dynasty, top 400."),
@@ -1856,7 +1834,6 @@ FB_ALSO = {
     ],
     "articles.html": [
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
-        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("week2-tape.html", "The Second Sunday", "Sixteen scores after Monday in Inglewood."),
         ("week2-ledger.html", "The Ledger", "RB2 on the lists, and what Week 2 paid."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
@@ -2302,7 +2279,6 @@ def home_body_html(keep, board, media, stories=None):
         <div class="home-ctas">
           <a class="cta" href="the-keep.html">The Keep</a>
           <a class="cta alt" href="board.html">The Board</a>
-          <a class="cta ghost" href="the-split.html">The Split</a>
         </div>
       </div>
     </section>
@@ -2350,12 +2326,10 @@ def home_body_html(keep, board, media, stories=None):
     ], extra=home_week_faces())}
     {desk_block("mine", "Yours", "Put in your own team.", "Load your Sleeper league. BK Value on every roster.", [
         ("league.html", "My Team", "Your Sleeper league. Power rankings and leftover values."),
-        ("the-split.html", "The Split", "Two clocks. A window year for the room you actually roster."),
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty cuffs and redraft cuffs."),
     ])}
-    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, read both clocks, read the cuff, ADP vs The Board, and depth charts.", [
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, read the cuff, ADP vs The Board, and depth charts.", [
         ("the-handcuff.html", "The Handcuff", "RB only. Keep list and Board list."),
-        ("the-split.html", "The Split", "Keep vs Board. Window year. The gap board."),
         ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
         ("adp.html", "ADP", "The Board vs ESPN."),
         ("depth-charts.html", "Depth Charts", "32 clubs."),
@@ -3473,7 +3447,6 @@ def write_explore_page():
         ("archive/week1/index.html", "Week 1 archive", "Finished Week 1 boards."),
         ("injuries.html", "Injuries", "ESPN designations."),
         ("trade.html", "Trade Calculators", "BK Value."),
-        ("the-split.html", "The Split", "Keep vs Board, and a window year."),
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty list and redraft list."),
         ("league.html", "My Team", "Your Sleeper league."),
         ("touches.html", "Touches and Targets", "2026 targets and rushes."),
@@ -4343,8 +4316,6 @@ def main():
     write_the_method(sys.modules[__name__])
     from articles import write_articles
     write_articles(sys.modules[__name__])
-    from the_split import write_the_split
-    write_the_split(sys.modules[__name__], keep, board, media)
     from the_handcuff import write_the_handcuff
     write_the_handcuff(sys.modules[__name__], keep, board, media)
 
@@ -4361,7 +4332,6 @@ def main():
         "https://ballkeep.com/week2-tape.html",
         "https://ballkeep.com/week2-ledger.html",
         "https://ballkeep.com/two-clocks.html",
-        "https://ballkeep.com/the-split.html",
         "https://ballkeep.com/the-handcuff.html",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/news.html",
