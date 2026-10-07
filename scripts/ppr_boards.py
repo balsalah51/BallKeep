@@ -73,12 +73,12 @@ def fill_board(overrides: dict, spine: list, cap: int = 200) -> dict:
         used_ranks.add(nxt)
         used.add(k)
         nxt += 1
-        if len(placed) >= cap:
+        if cap is not None and len(placed) >= cap:
             break
     return placed
 
 
-def remap_spine(spine: list, score_fn, cap: int = 180) -> dict:
+def remap_spine(spine: list, score_fn, cap: int | None = 180) -> dict:
     scored = []
     for i, name in enumerate(spine or [], 1):
         k = _norm(name)
@@ -88,7 +88,7 @@ def remap_spine(spine: list, score_fn, cap: int = 180) -> dict:
     scored.sort()
     out = {}
     for i, (_s, k) in enumerate(scored, 1):
-        if i > cap:
+        if cap is not None and i > cap:
             break
         out[k] = i
     return out
@@ -155,8 +155,19 @@ PPR_EXTRA_SOURCES = [
 ]
 
 
-def extra_ppr_maps(spine: list) -> dict:
-    """Board label -> {normed name: rank} for the extra boards."""
+def extra_ppr_maps(spine: list, *, full: bool = False) -> dict:
+    """Board label -> {normed name: rank} for the extra boards.
+
+    full=True drops the short-list cap so a thin name can still be ranked.
+    """
+    remap_cap = None if full else 180
+    fill_cap = None if full else 200
+
+    def rs(fn):
+        return remap_spine(spine, fn, cap=remap_cap)
+
+    def fb(overrides):
+        return fill_board(overrides, spine, cap=fill_cap)
     wr = {"puka nacua", "ja marr chase", "jaxon smith-njigba", "amon-ra st brown", "ceedee lamb",
           "justin jefferson", "a j brown", "nico collins", "drake london", "malik nabers"}
     rb = {"jahmyr gibbs", "bijan robinson", "christian mccaffrey", "jonathan taylor",
@@ -260,48 +271,64 @@ def extra_ppr_maps(spine: list) -> dict:
     def tgt_wr(k, i, _n):
         return i - (10 if k in wr else 0)
 
-    ds = {_norm(n): rk for n, rk in DS_PPR.items()} if DS_PPR else remap_spine(
-        spine, lambda k, i, _n: i - (10 if k in young else 0) + (5 if "kelce" in k or "henry" in k or "adams" in k else 0)
-    )
-    nbc = {_norm(n): rk for n, rk in NBC_PPR.items()} if NBC_PPR else {}
-    fbg = {_norm(n): rk for n, rk in FBG_PPR.items()} if FBG_PPR else {}
+    def shark(k, i, _n):
+        return i - (10 if k in young else 0) + (5 if "kelce" in k or "henry" in k or "adams" in k else 0)
+
+    if DS_PPR and not full:
+        ds = {_norm(n): rk for n, rk in DS_PPR.items()}
+    elif DS_PPR:
+        ds = fb(DS_PPR)
+    else:
+        ds = rs(shark)
+    if NBC_PPR and not full:
+        nbc = {_norm(n): rk for n, rk in NBC_PPR.items()}
+    elif NBC_PPR:
+        nbc = fb(NBC_PPR)
+    else:
+        nbc = {}
+    if FBG_PPR and not full:
+        fbg = {_norm(n): rk for n, rk in FBG_PPR.items()}
+    elif FBG_PPR:
+        fbg = fb(FBG_PPR)
+    else:
+        fbg = {}
 
     return {
-        "Derek Brown PPR": fill_board(DEREK_BROWN, spine),
-        "Andrew Erickson PPR": fill_board(ANDREW_ERICKSON, spine),
-        "Pat Fitzmaurice PPR": fill_board(PAT_FITZMAURICE, spine),
-        "Chris Welsh PPR": remap_spine(spine, welsh),
-        "CBS Sports PPR": remap_spine(spine, cbs),
-        "Yahoo Fantasy PPR": remap_spine(spine, yahoo),
+        "Derek Brown PPR": fb(DEREK_BROWN),
+        "Andrew Erickson PPR": fb(ANDREW_ERICKSON),
+        "Pat Fitzmaurice PPR": fb(PAT_FITZMAURICE),
+        "Chris Welsh PPR": rs(welsh),
+        "CBS Sports PPR": rs(cbs),
+        "Yahoo Fantasy PPR": rs(yahoo),
         "Draft Sharks PPR": ds,
-        "RotoWire PPR": remap_spine(spine, rotowire),
-        "NFL.com PPR": remap_spine(spine, nfl),
-        "4for4 PPR": remap_spine(spine, four),
+        "RotoWire PPR": rs(rotowire),
+        "NFL.com PPR": rs(nfl),
+        "4for4 PPR": rs(four),
         "NBC Sports / Rotoworld PPR": nbc,
         "Footballguys PPR": fbg,
-        "Fantasy Life PPR": remap_spine(spine, life),
-        "PFF PPR": remap_spine(spine, pff),
-        "The Athletic PPR": remap_spine(spine, athletic),
-        "Establish The Run PPR": remap_spine(spine, etr),
-        "PlayerProfiler PPR": remap_spine(spine, profiler),
-        "numberFire PPR": remap_spine(spine, nfire),
-        "Fantasy Alarm PPR": remap_spine(spine, alarm),
-        "Sleeper ADP": remap_spine(spine, sleeper),
-        "Underdog Best Ball": remap_spine(spine, underdog),
-        "ESPN Mike Clay PPR": remap_spine(spine, clay),
-        "Fantasy Footballers PPR": remap_spine(spine, footballers),
-        "FFToday PPR": remap_spine(spine, fftoday),
-        "WalterFootball PPR": remap_spine(spine, walter),
-        "Sports Illustrated PPR": remap_spine(spine, si),
-        "Pro Football Network PPR": remap_spine(spine, pfn),
-        "RotoBaller PPR": remap_spine(spine, rotoballer),
-        "FantasyData PPR": remap_spine(spine, fdata),
-        "Fantasy Points PPR": remap_spine(spine, fpts),
-        "Dynasty League Football PPR": remap_spine(spine, dlf),
-        "RotoGrinders PPR": remap_spine(spine, grinders),
-        "Contender PPR": remap_spine(spine, contender),
-        "Youth PPR": remap_spine(spine, youth_board),
-        "TE Premium PPR": remap_spine(spine, te_prem),
-        "Volume RB PPR": remap_spine(spine, vol_rb),
-        "Target-share WR PPR": remap_spine(spine, tgt_wr),
+        "Fantasy Life PPR": rs(life),
+        "PFF PPR": rs(pff),
+        "The Athletic PPR": rs(athletic),
+        "Establish The Run PPR": rs(etr),
+        "PlayerProfiler PPR": rs(profiler),
+        "numberFire PPR": rs(nfire),
+        "Fantasy Alarm PPR": rs(alarm),
+        "Sleeper ADP": rs(sleeper),
+        "Underdog Best Ball": rs(underdog),
+        "ESPN Mike Clay PPR": rs(clay),
+        "Fantasy Footballers PPR": rs(footballers),
+        "FFToday PPR": rs(fftoday),
+        "WalterFootball PPR": rs(walter),
+        "Sports Illustrated PPR": rs(si),
+        "Pro Football Network PPR": rs(pfn),
+        "RotoBaller PPR": rs(rotoballer),
+        "FantasyData PPR": rs(fdata),
+        "Fantasy Points PPR": rs(fpts),
+        "Dynasty League Football PPR": rs(dlf),
+        "RotoGrinders PPR": rs(grinders),
+        "Contender PPR": rs(contender),
+        "Youth PPR": rs(youth_board),
+        "TE Premium PPR": rs(te_prem),
+        "Volume RB PPR": rs(vol_rb),
+        "Target-share WR PPR": rs(tgt_wr),
     }

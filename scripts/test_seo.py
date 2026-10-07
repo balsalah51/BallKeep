@@ -540,6 +540,42 @@ def test_keep_maye_drop():
     assert keep[0]["name"] == "Josh Allen"
 
 
+def test_min_ten_ranks():
+    from build_site import (
+        ROOT, aggregate, apply_media_ages, best_ball_list, collect_profiles,
+        load_age_bank, load_player_media, parse_pfn, publish_aged, redraft_lists,
+        superflex_redraft,
+    )
+    keep, _, _ = aggregate(parse_pfn(ROOT / "data/pfn-dynasty.txt"))
+    assert keep[0]["name"] == "Josh Allen"
+    assert keep[0]["n"] == 40
+    assert min(r["n"] for r in keep) >= 10
+    ppr, std, classic = redraft_lists()
+    for rows in (ppr, std, classic):
+        assert min(r["n"] for r in rows) >= 10
+    assert ppr[0]["name"] == "Jahmyr Gibbs"
+    bb = best_ball_list()
+    assert min(r["n"] for r in bb) >= 10
+    assert bb[0]["name"] == "Jahmyr Gibbs"
+    media = load_player_media()
+    ages = load_age_bank()
+    apply_media_ages(keep, media, ages)
+    published = publish_aged(keep)
+    sf = superflex_redraft(published, ppr)
+    profiles = collect_profiles(published, ppr, std, sf, classic, bb)
+    ranked = [p for p in profiles if p.get("ranks")]
+    assert ranked
+    assert min(len(p["ranks"]) for p in ranked) >= 10
+    assert min(p["keep_n"] for p in ranked) >= 10
+    allen = next(p for p in profiles if p["name"] == "Josh Allen")
+    assert allen["keep_n"] == 40
+    assert "PFN (Katz/Soppe)" in allen["ranks"]
+    browning = next(p for p in profiles if p["name"] == "Jake Browning")
+    assert "The Keep" not in browning["lists"]
+    assert browning["keep_n"] >= 10
+    assert len(browning["ranks"]) >= 10
+
+
 def test_visible_desk_copy_removed():
     from pathlib import Path
     root = Path(__file__).resolve().parents[0]

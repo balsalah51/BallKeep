@@ -188,8 +188,12 @@ def load_espn_ranks() -> dict:
     return adp_skill_ranks(WEEKLY / "espn-adp.json", "adp")
 
 
-def extra_best_ball_maps(spine: list, pos_of: dict | None = None) -> dict:
-    """Board label -> {normed name: rank} for the 37 extra boards."""
+def extra_best_ball_maps(spine: list, pos_of: dict | None = None, *, full: bool = False) -> dict:
+    """Board label -> {normed name: rank} for the 37 extra boards.
+
+    full=True drops the short-list cap so a thin name can still be ranked.
+    """
+    board_cap = None if full else 200
     pos_of = pos_of or {}
 
     def pos(k: str) -> str:
@@ -330,46 +334,54 @@ def extra_best_ball_maps(spine: list, pos_of: dict | None = None) -> dict:
         return i
 
     yates = published_map("yates-ppr")
-    ds = _normed(DS_PPR) if DS_PPR else remap_spine(spine, etr, cap=200)
-    nbc = _normed(NBC_PPR) if NBC_PPR else remap_spine(spine, life, cap=200)
-    fbg = _normed(FBG_PPR) if FBG_PPR else remap_spine(spine, four, cap=200)
+
+    def published(raw, fallback):
+        if raw and not full:
+            return _normed(raw)
+        if raw:
+            return fill_board(raw, spine, cap=board_cap)
+        return remap_spine(spine, fallback, cap=board_cap)
+
+    ds = published(DS_PPR, etr)
+    nbc = published(NBC_PPR, life)
+    fbg = published(FBG_PPR, four)
 
     return {
-        "Derek Brown PPR": fill_board(DEREK_BROWN, spine),
-        "Andrew Erickson PPR": fill_board(ANDREW_ERICKSON, spine),
-        "Pat Fitzmaurice PPR": fill_board(PAT_FITZMAURICE, spine),
+        "Derek Brown PPR": fill_board(DEREK_BROWN, spine, cap=board_cap),
+        "Andrew Erickson PPR": fill_board(ANDREW_ERICKSON, spine, cap=board_cap),
+        "Pat Fitzmaurice PPR": fill_board(PAT_FITZMAURICE, spine, cap=board_cap),
         "Draft Sharks PPR": ds,
         "NBC Sports PPR": nbc,
         "Footballguys PPR": fbg,
-        "Field Yates PPR": fill_board(yates, spine),
-        "DraftKings Best Ball": remap_spine(spine, dk, cap=200),
-        "FFPC Best Ball": remap_spine(spine, ffpc, cap=200),
-        "Sleeper Best Ball": remap_spine(spine, sleeper_bb, cap=200),
-        "CBS Best Ball": remap_spine(spine, cbs, cap=200),
-        "Yahoo Best Ball": remap_spine(spine, yahoo, cap=200),
-        "RotoWire Best Ball": remap_spine(spine, rotowire, cap=200),
-        "4for4 Best Ball": remap_spine(spine, four, cap=200),
-        "Fantasy Life Best Ball": remap_spine(spine, life, cap=200),
-        "Establish The Run BB": remap_spine(spine, etr, cap=200),
-        "The Athletic Best Ball": remap_spine(spine, athletic, cap=200),
-        "Pro Football Focus BB": remap_spine(spine, pff, cap=200),
-        "NumberFire Best Ball": remap_spine(spine, nfire, cap=200),
-        "Fantasy Footballers BB": remap_spine(spine, footballers, cap=200),
-        "Fantasy Points Best Ball": remap_spine(spine, fpts, cap=200),
-        "PlayerProfiler BB": remap_spine(spine, profiler, cap=200),
-        "Underdog Late Round": remap_spine(spine, late_round, cap=200),
-        "Ceiling WR": remap_spine(spine, ceiling_wr, cap=200),
-        "Late QB": remap_spine(spine, late_qb, cap=200),
-        "TE Lottery": remap_spine(spine, te_lotto, cap=200),
-        "Rookie Dart": remap_spine(spine, rookie, cap=200),
-        "Zero RB": remap_spine(spine, zero_rb, cap=200),
-        "Hero RB": remap_spine(spine, hero_rb, cap=200),
-        "Pass-Catch RB": remap_spine(spine, pass_catch, cap=200),
-        "Boom Week": remap_spine(spine, boom, cap=200),
-        "Superflex Lean": remap_spine(spine, superflex, cap=200),
-        "Mid-Round WR": remap_spine(spine, mid_wr, cap=200),
-        "Stack QB": remap_spine(spine, stack, cap=200),
-        "Volume Floor": remap_spine(spine, volume, cap=200),
-        "Underdog Chalk": remap_spine(spine, chalk, cap=200),
-        "Best Ball Contrarian": remap_spine(spine, contra, cap=200),
+        "Field Yates PPR": fill_board(yates, spine, cap=board_cap),
+        "DraftKings Best Ball": remap_spine(spine, dk, cap=board_cap),
+        "FFPC Best Ball": remap_spine(spine, ffpc, cap=board_cap),
+        "Sleeper Best Ball": remap_spine(spine, sleeper_bb, cap=board_cap),
+        "CBS Best Ball": remap_spine(spine, cbs, cap=board_cap),
+        "Yahoo Best Ball": remap_spine(spine, yahoo, cap=board_cap),
+        "RotoWire Best Ball": remap_spine(spine, rotowire, cap=board_cap),
+        "4for4 Best Ball": remap_spine(spine, four, cap=board_cap),
+        "Fantasy Life Best Ball": remap_spine(spine, life, cap=board_cap),
+        "Establish The Run BB": remap_spine(spine, etr, cap=board_cap),
+        "The Athletic Best Ball": remap_spine(spine, athletic, cap=board_cap),
+        "Pro Football Focus BB": remap_spine(spine, pff, cap=board_cap),
+        "NumberFire Best Ball": remap_spine(spine, nfire, cap=board_cap),
+        "Fantasy Footballers BB": remap_spine(spine, footballers, cap=board_cap),
+        "Fantasy Points Best Ball": remap_spine(spine, fpts, cap=board_cap),
+        "PlayerProfiler BB": remap_spine(spine, profiler, cap=board_cap),
+        "Underdog Late Round": remap_spine(spine, late_round, cap=board_cap),
+        "Ceiling WR": remap_spine(spine, ceiling_wr, cap=board_cap),
+        "Late QB": remap_spine(spine, late_qb, cap=board_cap),
+        "TE Lottery": remap_spine(spine, te_lotto, cap=board_cap),
+        "Rookie Dart": remap_spine(spine, rookie, cap=board_cap),
+        "Zero RB": remap_spine(spine, zero_rb, cap=board_cap),
+        "Hero RB": remap_spine(spine, hero_rb, cap=board_cap),
+        "Pass-Catch RB": remap_spine(spine, pass_catch, cap=board_cap),
+        "Boom Week": remap_spine(spine, boom, cap=board_cap),
+        "Superflex Lean": remap_spine(spine, superflex, cap=board_cap),
+        "Mid-Round WR": remap_spine(spine, mid_wr, cap=board_cap),
+        "Stack QB": remap_spine(spine, stack, cap=board_cap),
+        "Volume Floor": remap_spine(spine, volume, cap=board_cap),
+        "Underdog Chalk": remap_spine(spine, chalk, cap=board_cap),
+        "Best Ball Contrarian": remap_spine(spine, contra, cap=board_cap),
     }
