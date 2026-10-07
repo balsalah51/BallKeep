@@ -86,6 +86,7 @@ from aggregate_protocol import (  # noqa: E402
     LONG_CORE,
     apply_rank_drops,
     expand_super_desks,
+    pad_shown,
     rank_rows,
     super_avg,
 )
@@ -724,6 +725,7 @@ def redraft_lists():
         universe.append((name, pos, team))
     spine = [n for n, _rk in sorted(fp_ppr_named.items(), key=lambda kv: kv[1])]
     extra_maps = extra_ppr_maps(spine)
+    full_maps = extra_ppr_maps([n for n, _p, _t in universe], full=True)
     ppr_long = ("Yates", "FantasyPros ECR", "Karabell")
     ppr = []
     for name, pos, team in universe:
@@ -745,6 +747,7 @@ def redraft_lists():
                 shown[lab] = float(rk)
         if not shown:
             continue
+        shown = pad_shown(shown, [pk, k], full_maps)
         avg = super_avg(shown, ppr_long)
         ppr.append({
             "bk": 0,
@@ -756,6 +759,7 @@ def redraft_lists():
             "karabell": kb or "-",
             "n": len(shown),
             "avg": avg,
+            "ranks": shown,
         })
     ppr.sort(key=lambda r: (r["avg"], r["name"]))
     ppr = ppr[:PPR_N]
@@ -798,7 +802,9 @@ def best_ball_list():
         universe.append((name, pos, team))
     spine = [n for n, _rk in sorted(fp_ppr_named.items(), key=lambda kv: kv[1])]
     pos_of = {ppr_norm(n): p for n, p, _t in universe}
-    extra_maps = extra_best_ball_maps(spine or [n for n, _p, _t in universe], pos_of)
+    bb_spine = spine or [n for n, _p, _t in universe]
+    extra_maps = extra_best_ball_maps(bb_spine, pos_of)
+    full_maps = extra_best_ball_maps([n for n, _p, _t in universe], pos_of, full=True)
     rows = []
     for name, pos, team in universe:
         k = norm_name(name)
@@ -819,6 +825,7 @@ def best_ball_list():
                 shown[lab] = float(rk)
         if not shown:
             continue
+        shown = pad_shown(shown, [pk, k], full_maps)
         avg = super_avg(shown, BEST_BALL_LONG)
         rows.append({
             "bk": 0,
@@ -830,6 +837,7 @@ def best_ball_list():
             "espn": espn_rk or "-",
             "n": len(shown),
             "avg": avg,
+            "ranks": shown,
         })
     rows.sort(key=lambda r: (r["avg"], r["name"]))
     rows = rows[:PPR_N]
@@ -1529,16 +1537,17 @@ KEEP_FAQ = [
     ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Every name a long board ranked, from 40 public boards, rebuilt October 3, 2026 from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
+    ("How many boards rank each name?", "At least 10. A two-board average is a coin flip. Short lists stay short for names they already ranked. Thinner names pick up the next ranks those same boards would have given them."),
 ]
 BOARD_FAQ = [
     ("What is The Board?", "Ball Keep's 2026 redraft PPR Super Aggregate. Full-PPR, 1QB, every skill name the redraft boards ranked. Forty boards: Field Yates, FantasyPros PPR ECR, and Eric Karabell Flex as the long core, then Derek Brown, 4for4, and the rest of the public redraft tape. Kickers and DST omitted."),
-    ("How is the rank built?", "Super Aggregate: 50% the mean of Yates, FantasyPros ECR, and Karabell, 50% every other board that ranked the name. The three long tapes stay on the table so you can see them against the Super score."),
+    ("How is the rank built?", "Super Aggregate: 50% the mean of Yates, FantasyPros ECR, and Karabell, 50% every other board that ranked the name. Every name is on at least 10 boards. The three long tapes stay on the table so you can see them against the Super score."),
     ("How is this different from The Keep?", "The Keep is Superflex Dynasty. The Board is this year only, one quarterback, a point per catch."),
     ("Does BK Value use this rank?", "Yes. The PPR calculator prices The Board rank on the same 12,000 curve."),
 ]
 BEST_BALL_FAQ = [
     ("What is Best Ball?", "Ball Keep's 2026 best-ball Super Aggregate. Full-PPR, 1QB, every skill name the best-ball boards ranked. Forty boards. Kickers and DST stay off. Best ball pays boom weeks, so receivers and late quarterbacks move more than they do on The Board."),
-    ("How is the Super rank built?", "Half the vote is Underdog ADP, FantasyPros PPR ECR, and ESPN ADP. Half is every other board that ranked the name. The three market tapes stay on the table so you can see them against the Super score."),
+    ("How is the Super rank built?", "Half the vote is Underdog ADP, FantasyPros PPR ECR, and ESPN ADP. Half is every other board that ranked the name. Every name is on at least 10 boards. The three market tapes stay on the table so you can see them against the Super score."),
     ("How is this different from The Board?", "The Board is season-long redraft PPR for a lineup you set each week. Best Ball is draft-only. You draft a pool. Boom weeks pay. There is no weekly lineup and no trade calculator on this list."),
 ]
 TRADE_FAQ = [
@@ -2635,7 +2644,14 @@ def collect_profiles(keep, ppr, std, sf_redraft, classic=None, best_ball=None):
         if age and not p["age"]:
             p["age"] = age
         if ranks and not p.get("ranks"):
-            p["ranks"] = {src: rk for src, rk in ranks.items() if rk not in (None, "", "-")}
+            cleaned = {}
+            for src, rk in ranks.items():
+                if rk in (None, "", "-"):
+                    continue
+                if isinstance(rk, float) and rk.is_integer():
+                    rk = int(rk)
+                cleaned[src] = rk
+            p["ranks"] = cleaned
         if avg is not None and p.get("keep_avg") is None:
             p["keep_avg"] = avg
         if n is not None and p.get("keep_n") is None:
@@ -2654,7 +2670,10 @@ def collect_profiles(keep, ppr, std, sf_redraft, classic=None, best_ball=None):
             + (f", FantasyPros {r['fp']}" if r["fp"] != "-" else "")
             + ")"
         )
-        add(r["name"], r["pos"], r["team"], "The Board", r["bk"], extra, age=r.get("age"))
+        add(
+            r["name"], r["pos"], r["team"], "The Board", r["bk"], extra,
+            ranks=r.get("ranks"), avg=r.get("avg"), n=r.get("n"), age=r.get("age"),
+        )
         add(r["name"], r["pos"], r["team"], "Redraft PPR", r["bk"], extra)
     for r in sf_redraft:
         add(r["name"], r["pos"], r["team"], "Redraft Superflex", r["bk"],
@@ -2670,7 +2689,8 @@ def collect_profiles(keep, ppr, std, sf_redraft, classic=None, best_ball=None):
             f"The Classic #{r['bk']} Half-PPR")
     for r in (best_ball or []):
         add(r["name"], r["pos"], r["team"], "Best Ball", r["bk"],
-            f"Best Ball #{r['bk']} Super Aggregate ({r['n']} boards)")
+            f"Best Ball #{r['bk']} Super Aggregate ({r['n']} boards)",
+            ranks=r.get("ranks"), avg=r.get("avg"), n=r.get("n"))
     for i, r in enumerate(ROOKIES, 1):
         add(r["name"], r["pos"], r["team"], "2026 Rookies", i, r["value"])
     for i, r in enumerate(HOT, 1):
@@ -2737,7 +2757,8 @@ def ff_facts(p, college, is_rook):
     if is_rook:
         items.append(("Class", "2026 rookie"))
     if p.get("keep_avg") is not None:
-        items.append(("Keep avg", p["keep_avg"]))
+        avg_label = "Keep avg" if lists.get("The Keep") else "Super"
+        items.append((avg_label, p["keep_avg"]))
     if p.get("keep_n"):
         items.append(("# Boards", p["keep_n"]))
     keep = lists.get("The Keep")
@@ -3644,7 +3665,7 @@ def main():
     keep_body = f"""
     <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} boards</p>
     <h1>The Keep</h1>
-    <p class="note">This is the big one. Superflex Dynasty. {len(keep)} names. {len(KEEP_SOURCES)} boards. Half the vote is the four long boards, half is everyone else. The Board next door is Redraft PPR - this year, one quarterback, a point per catch.</p>
+    <p class="note">This is the big one. Superflex Dynasty. {len(keep)} names. {len(KEEP_SOURCES)} boards. Half the vote is the four long boards, half is everyone else. Every name is on at least 10 boards. The Board next door is Redraft PPR - this year, one quarterback, a point per catch.</p>
     {rank_search_bar(keep_chips)}
     <div class="panel">{rank_table(keep, ["Super", "Boards", "PFN", "KTC", "BK Value"], keep_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#c8102e", "Keep value graph")}

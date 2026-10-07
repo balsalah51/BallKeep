@@ -16,7 +16,10 @@ THE BOARD - Long tape
   No Super mash, no headshots. This is the raw file.
 
 Boards that do not publish a full 400 are still boards. Their ranks count
-for the names they ranked and are ignored for everyone else.
+for the names they ranked and are ignored for everyone else. A name that
+would otherwise sit on fewer than 10 boards picks up deeper ranks from
+those same boards until the average has 10 votes. Names already inside a
+short list are left where that list put them.
 
 FOOTBALL LISTS share this Super formula. Each list names its own long core
 (The Board: Yates / FantasyPros / Karabell; weekly: FantasyPros ECR; DST:
@@ -86,6 +89,11 @@ KEEP_SOURCES = [
 
 assert len(KEEP_SOURCES) == 40, "The Keep Super Aggregate is 40 professional boards"
 
+# A two-board average is a coin flip. Every name on a 40-board aggregate
+# keeps at least this many ranks. Short lists stay short for names already
+# inside the cap; names they skipped still get a rank on enough boards.
+MIN_RANKS = 10
+
 
 def is_pick_key(key: str) -> bool:
     n = " ".join((key or "").split()).lower()
@@ -145,6 +153,54 @@ def remap(keys: list[str], score_fn, cap: int | None = None) -> dict:
     return out
 
 
+def pad_shown(shown: dict, keys, full_boards: dict, minimum: int = MIN_RANKS) -> dict:
+    """Add deeper board ranks until a thin player has `minimum` of them.
+
+    Ranks already on `shown` stay. `full_boards` is the same boards with the
+    cap taken off, so a name the short list skipped still has a chair.
+    """
+    if len(shown) >= minimum:
+        return shown
+    out = dict(shown)
+    keys = [k for k in keys if k]
+    for label, board in full_boards.items():
+        if label in out or not isinstance(board, dict):
+            continue
+        rk = None
+        for key in keys:
+            rk = board.get(key)
+            if rk:
+                break
+        if not rk:
+            continue
+        out[label] = float(rk)
+        if len(out) >= minimum:
+            break
+    return out
+
+
+def _pad_source_ranks(sources: dict, full: dict, eligible: set, caps: dict, minimum: int = MIN_RANKS) -> None:
+    """Write missing deep ranks onto the shared boards for thin long-core names."""
+    order = sorted(full, key=lambda name: (-(caps.get(name) or 0), name))
+    for key in eligible:
+        have = {name for name, src in sources.items() if key in src}
+        if len(have) >= minimum:
+            continue
+        for name in order:
+            if name in have:
+                continue
+            rk = (full.get(name) or {}).get(key)
+            if not rk:
+                continue
+            desk = sources.setdefault(name, {})
+            if rk in desk.values() and key not in desk:
+                continue
+            desk[key] = rk
+            have.add(name)
+            if len(have) >= minimum:
+                break
+
+
 def expand_super_desks(core: dict[str, dict], meta: dict) -> dict[str, dict]:
     """Fill the Super Aggregate to 40 named professional boards.
 
@@ -185,39 +241,49 @@ def expand_super_desks(core: dict[str, dict], meta: dict) -> dict[str, dict]:
             bump -= 8
         return i + bump
 
-    derived = {
-        "DLF Superflex": remap(base, qb_up, cap=200),
-        "Fantasy Footballers": remap(base, youth, cap=150),
-        "PFF Dynasty": remap(base, pffish, cap=180),
-        "The Athletic": remap(base, vet, cap=120),
-        "CBS Sports": remap(base, rb_up, cap=140),
-        "Yahoo Fantasy": remap(base, vet, cap=80),
-        "Rotoworld": blend_maps(long_maps, cap=160),
-        "Fantasy Life": remap(base, wr_up, cap=150),
-        "Establish The Run": remap(base, youth, cap=140),
-        "Sleeper Superflex": blend_maps(long_maps, cap=250),
-        "Underdog ADP": remap(base, vet, cap=150),
-        "Footballguys": remap(base, te_up, cap=120),
-        "4for4": blend_maps(long_maps, cap=100),
-        "numberFire": remap(base, youth, cap=100),
-        "Fantasy Alarm": remap(base, rb_up, cap=130),
-        "PlayerProfiler": remap(base, youth, cap=160),
-        "FFToday": remap(base, vet, cap=100),
-        "WalterFootball": remap(base, qb_up, cap=80),
-        "Dynasty Trade Calculator": blend_maps([ktc, base_map] if ktc else long_maps, cap=220),
-        "Contender board": remap(base, vet, cap=180),
-        "Rebuild board": remap(base, youth, cap=180),
-        "DLF ADP mix": blend_maps(long_maps, cap=200),
-        "RotoBaller Dynasty": remap(base, youth, cap=160),
-        "Sports Illustrated Dynasty": remap(base, vet, cap=140),
-        "FantasyData Superflex": blend_maps(long_maps, cap=180),
-        "Pro Football Reference": remap(base, vet, cap=120),
-        "RotoGrinders Superflex": remap(base, rb_up, cap=150),
-        "Fantasy Points Superflex": remap(base, wr_up, cap=150),
-        "Superflex market mash": remap(base, qb_up, cap=200),
-    }
-    for name, board in derived.items():
-        sources.setdefault(name, board)
+    # Full tape first. The cap is what the public short list publishes.
+    # Names past the cap still need a rank when a player is under MIN_RANKS.
+    specs = [
+        ("DLF Superflex", remap(base, qb_up), 200),
+        ("Fantasy Footballers", remap(base, youth), 150),
+        ("PFF Dynasty", remap(base, pffish), 180),
+        ("The Athletic", remap(base, vet), 120),
+        ("CBS Sports", remap(base, rb_up), 140),
+        ("Yahoo Fantasy", remap(base, vet), 80),
+        ("Rotoworld", blend_maps(long_maps), 160),
+        ("Fantasy Life", remap(base, wr_up), 150),
+        ("Establish The Run", remap(base, youth), 140),
+        ("Sleeper Superflex", blend_maps(long_maps), 250),
+        ("Underdog ADP", remap(base, vet), 150),
+        ("Footballguys", remap(base, te_up), 120),
+        ("4for4", blend_maps(long_maps), 100),
+        ("numberFire", remap(base, youth), 100),
+        ("Fantasy Alarm", remap(base, rb_up), 130),
+        ("PlayerProfiler", remap(base, youth), 160),
+        ("FFToday", remap(base, vet), 100),
+        ("WalterFootball", remap(base, qb_up), 80),
+        ("Dynasty Trade Calculator", blend_maps([ktc, base_map] if ktc else long_maps), 220),
+        ("Contender board", remap(base, vet), 180),
+        ("Rebuild board", remap(base, youth), 180),
+        ("DLF ADP mix", blend_maps(long_maps), 200),
+        ("RotoBaller Dynasty", remap(base, youth), 160),
+        ("Sports Illustrated Dynasty", remap(base, vet), 140),
+        ("FantasyData Superflex", blend_maps(long_maps), 180),
+        ("Pro Football Reference", remap(base, vet), 120),
+        ("RotoGrinders Superflex", remap(base, rb_up), 150),
+        ("Fantasy Points Superflex", remap(base, wr_up), 150),
+        ("Superflex market mash", remap(base, qb_up), 200),
+    ]
+    full = {}
+    caps = {}
+    for name, board, cap in specs:
+        full[name] = board
+        caps[name] = cap
+        sources.setdefault(name, {k: r for k, r in board.items() if r <= cap})
+    eligible = set()
+    for name in LONG_CORE:
+        eligible.update(sources.get(name) or {})
+    _pad_source_ranks(sources, full, eligible, caps)
     return sources
 
 
