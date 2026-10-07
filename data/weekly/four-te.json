@@ -1,75 +1,75 @@
 {
-  "week": 4,
+  "week": 5,
   "players": [
     {
       "name": "Brock Bowers",
       "rank": 1,
       "team": "LV",
-      "opp": "KC",
-      "sos": 22
+      "opp": "@NE",
+      "sos": 1
     },
     {
       "name": "Trey McBride",
       "rank": 2,
       "team": "ARI",
-      "opp": "@NYG",
-      "sos": 14
+      "opp": "DET",
+      "sos": 32
     },
     {
-      "name": "Tyler Warren",
+      "name": "George Kittle",
       "rank": 3,
-      "team": "IND",
+      "team": "SF",
+      "opp": "@SEA",
+      "sos": 16
+    },
+    {
+      "name": "Isaiah Likely",
+      "rank": 4,
+      "team": "NYG",
       "opp": "@WAS",
       "sos": 31
     },
     {
-      "name": "George Kittle",
-      "rank": 4,
-      "team": "SF",
-      "opp": "DEN",
-      "sos": 13
+      "name": "Tyler Warren",
+      "rank": 5,
+      "team": "IND",
+      "opp": "@PIT",
+      "sos": 14
+    },
+    {
+      "name": "T.J. Hockenson",
+      "rank": 6,
+      "team": "MIN",
+      "opp": "@NO",
+      "sos": 22
     },
     {
       "name": "Dalton Kincaid",
-      "rank": 5,
+      "rank": 7,
       "team": "BUF",
-      "opp": "NE",
-      "sos": 5
-    },
-    {
-      "name": "Travis Kelce",
-      "rank": 6,
-      "team": "KC",
-      "opp": "@LV",
-      "sos": 29
+      "opp": "@LAR",
+      "sos": 3
     },
     {
       "name": "Sam LaPorta",
-      "rank": 7,
+      "rank": 8,
       "team": "DET",
-      "opp": "@CAR",
-      "sos": 26
+      "opp": "@ARI",
+      "sos": 29
+    },
+    {
+      "name": "Juwan Johnson",
+      "rank": 9,
+      "team": "NO",
+      "opp": "MIN",
+      "sos": 19
     },
     {
       "name": "Tucker Kraft",
-      "rank": 8,
-      "team": "GB",
-      "opp": "@TB",
-      "sos": 21
-    },
-    {
-      "name": "Dalton Schultz",
-      "rank": 9,
-      "team": "HOU",
-      "opp": "DAL",
-      "sos": 30
-    },
-    {
-      "name": "Mark Andrews",
       "rank": 10,
-      "team": "BAL",
-      "opp": "TEN",
-      "sos": 1
+      "team": "GB",
+      "opp": "CHI",
+      "sos": 4
     }
   ]
 }

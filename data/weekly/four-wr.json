@@ -1,61 +1,68 @@
 {
-  "week": 4,
+  "week": 5,
   "players": [
     {
-      "name": "Jaxon Smith-Njigba",
-      "rank": 1,
-      "team": "SEA",
-      "opp": "LAC",
-      "sos": 24
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "rank": 2,
-      "team": "CIN",
-      "opp": "JAX",
-      "sos": 29
-    },
-    {
-      "name": "Chris Olave",
-      "rank": 3,
-      "team": "NO",
-      "opp": "ATL",
-      "sos": 17
-    },
-    {
-      "name": "Drake London",
-      "rank": 4,
-      "team": "ATL",
-      "opp": "@NO",
-      "sos": 9
-    },
-    {
       "name": "CeeDee Lamb",
-      "rank": 6,
+      "rank": 1,
       "team": "DAL",
-      "opp": "@HOU",
-      "sos": 32
-    },
-    {
-      "name": "Garrett Wilson",
-      "rank": 7,
-      "team": "NYJ",
-      "opp": "@CHI",
-      "sos": 8
-    },
-    {
-      "name": "Zay Flowers",
-      "rank": 8,
-      "team": "BAL",
-      "opp": "TEN",
-      "sos": 22
+      "opp": "TB",
+      "sos": 4
     },
     {
       "name": "Puka Nacua",
-      "rank": 9,
+      "rank": 2,
       "team": "LAR",
-      "opp": "@PHI",
+      "opp": "BUF",
+      "sos": 31
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "rank": 3,
+      "team": "SEA",
+      "opp": "SF",
+      "sos": 13
+    },
+    {
+      "name": "Chris Olave",
+      "rank": 4,
+      "team": "NO",
+      "opp": "MIN",
+      "sos": 16
+    },
+    {
+      "name": "Drake London",
+      "rank": 5,
+      "team": "ATL",
+      "opp": "BAL",
       "sos": 21
+    },
+    {
+      "name": "Garrett Wilson",
+      "rank": 6,
+      "team": "NYJ",
+      "opp": "CLE",
+      "sos": 28
+    },
+    {
+      "name": "Tee Higgins",
+      "rank": 7,
+      "team": "CIN",
+      "opp": "@MIA",
+      "sos": 1
+    },
+    {
+      "name": "Christian Watson",
+      "rank": 9,
+      "team": "GB",
+      "opp": "CHI",
+      "sos": 7
+    },
+    {
+      "name": "Zay Flowers",
+      "rank": 10,
+      "team": "BAL",
+      "opp": "@ATL",
+      "sos": 14
     }
   ]
 }

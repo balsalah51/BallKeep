@@ -1,68 +1,75 @@
 {
-  "week": 4,
+  "week": 5,
   "players": [
     {
       "name": "Jahmyr Gibbs",
       "rank": 1,
       "team": "DET",
-      "opp": "@CAR",
-      "sos": 30
+      "opp": "@ARI",
+      "sos": 2
     },
     {
       "name": "Bijan Robinson",
       "rank": 2,
       "team": "ATL",
-      "opp": "@NO",
-      "sos": 7
+      "opp": "BAL",
+      "sos": 10
+    },
+    {
+      "name": "Jaylen Warren",
+      "rank": 3,
+      "team": "PIT",
+      "opp": "IND",
+      "sos": 19
+    },
+    {
+      "name": "Kyren Williams",
+      "rank": 4,
+      "team": "LAR",
+      "opp": "BUF",
+      "sos": 29
     },
     {
       "name": "Jonathan Taylor",
-      "rank": 3,
-      "team": "IND",
-      "opp": "@WAS",
-      "sos": 5
-    },
-    {
-      "name": "Christian McCaffrey",
-      "rank": 4,
-      "team": "SF",
-      "opp": "DEN",
-      "sos": 22
-    },
-    {
-      "name": "Kenneth Walker",
       "rank": 5,
-      "team": "KC",
-      "opp": "@LV",
-      "sos": 16
+      "team": "IND",
+      "opp": "@PIT",
+      "sos": 22
     },
     {
       "name": "Derrick Henry",
       "rank": 6,
       "team": "BAL",
-      "opp": "TEN",
-      "sos": 29
+      "opp": "@ATL",
+      "sos": 7
     },
     {
-      "name": "Jaylen Warren",
+      "name": "Aaron Jones",
       "rank": 7,
-      "team": "PIT",
-      "opp": "@CLE",
-      "sos": 6
+      "team": "MIN",
+      "opp": "@NO",
+      "sos": 28
     },
     {
       "name": "Chase Brown",
       "rank": 8,
       "team": "CIN",
-      "opp": "JAX",
-      "sos": 18
+      "opp": "@MIA",
+      "sos": 30
     },
     {
-      "name": "James Cook",
+      "name": "Ashton Jeanty",
+      "rank": 9,
+      "team": "LV",
+      "opp": "@NE",
+      "sos": 20
+    },
+    {
+      "name": "Javonte Williams",
       "rank": 10,
-      "team": "BUF",
-      "opp": "NE",
-      "sos": 25
+      "team": "DAL",
+      "opp": "TB",
+      "sos": 14
     }
   ]
 }

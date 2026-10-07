@@ -18,8 +18,20 @@ from week3_predictions import DEK as W3_DEK
 from week3_predictions import HEADLINE as W3_HEAD
 from week4_predictions import DEK as W4_DEK
 from week4_predictions import HEADLINE as W4_HEAD
+from week5_predictions import DEK as W5_DEK
+from week5_predictions import HEADLINE as W5_HEAD
 
 ARTICLES = [
+    (
+        "week5-matchups.html",
+        "Week 5 Predictions",
+        "Wednesday, Oct 7",
+        W5_HEAD,
+        W5_DEK,
+        "img/players/dak-prescott.png",
+        "Dak Prescott",
+        True,
+    ),
     (
         "week4-matchups.html",
         "Week 4 Predictions",
@@ -28,7 +40,7 @@ ARTICLES = [
         W4_DEK,
         "img/players/josh-allen.png",
         "Josh Allen",
-        True,
+        False,
     ),
     (
         "week3-matchups.html",

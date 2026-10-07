@@ -423,7 +423,7 @@ def write_the_handcuff(b, keep, board, media):
         ("The Board", "board.html", "Redraft PPR Super Aggregate. The Sunday clock."),
         ("Depth Charts", "depth-charts.html", "Sleeper RB order for 32 clubs."),
         ("Injuries", "injuries.html", "ESPN designations on the starter."),
-        ("The Split", "the-split.html", "Two clocks on a room you type."),
+        ("Trade", "trade.html", "BK Value on six calculators."),
     ], heading="Boards behind The Handcuff")}
     {faq_html(FAQ, heading="How The Handcuff is built.")}
     {extra}
