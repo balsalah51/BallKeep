@@ -137,13 +137,13 @@ PL_SEO = {
         "img/pl-hero.jpg",
     ),
     "the-premier.html": (
-        "Fantasy Premier League Rankings (Top 400) | PitchKeep",
+        "Fantasy Premier League Rankings (Full Tape) | PitchKeep",
         "PitchKeep flagship 400: 25 published 2026/27 pro lists. Haaland leads the board. Palmer, Saka, and Isak climb off last-year volume. Full names and ages on the row.",
         "img/pl-logo.jpg",
     ),
     "the-pitch.html": (
-        "The Pitch - Sleeper BPL 2025 Premier League Rankings (Top 400) | PitchKeep",
-        "Overall Premier League top 400 ranked on Sleeper BPL 2025 points. FWD/MID goals 9, DEF/GKP 10, assists 6/7. Erling Haaland leads at 317.2.",
+        "The Pitch - Sleeper BPL 2025 Premier League Rankings (Full Tape) | PitchKeep",
+        "Overall Premier League full ranked tape on Sleeper BPL 2025 points. FWD/MID goals 9, DEF/GKP 10, assists 6/7. Erling Haaland leads at 317.2.",
         "img/pl-logo.jpg",
     ),
     "attack.html": (
@@ -300,7 +300,7 @@ PL_HOME_FAQ = [
     ("Where is the soccer news?", "PK News clusters injury, transfer, and manager tape hourly, with links back to PitchKeep player files."),
 ]
 PL_PREMIER_FAQ = [
-    ("What is The Premier?", "Top 400 from 25 published 2026/27 pro lists plus official FPL metrics. Half Sleeper BPL 2025, half the boards."),
+    ("What is The Premier?", "The full ranked tape from 25 published 2026/27 pro lists plus official FPL metrics. Half Sleeper BPL 2025, half the boards."),
     ("How does BK Value work here?", "Premier rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%."),
     ("What is The Pitch?", "The same 400 names ranked on Sleeper BPL 2025 scoring of 2025/26 counting stats."),
 ]
@@ -347,7 +347,7 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=40" />
+  <link rel="stylesheet" href="{prefix}css/pl.css?v=41" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
 </head>
 <body{f' class="{esc(body_class)}"' if body_class else ""}>
@@ -425,7 +425,7 @@ def fmt_val(n):
         return ""
 
 
-def home_rank_preview(rows, media, n=8):
+def home_rank_preview(rows, media, n=16):
     items = []
     for r in rows[:n]:
         name = r.get("name") or ""
@@ -935,7 +935,7 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp, news_by_player=No
                 f'<li><a href="../news/{esc(s["slug"])}.html">{esc(s.get("headline") or "Update")}</a> '
                 f'<span class="news-meta">{esc(CATEGORY_LABEL.get(s.get("category") or "", ""))} · '
                 f'{esc(news_when(s.get("updated") or s.get("published") or ""))}</span></li>'
-                for s in news_hits[:5] if s.get("slug")
+                for s in news_hits[:10] if s.get("slug")
             )
             news_block = (
                 '<p class="kicker" style="margin-top:22px">PK News</p>'
@@ -1272,7 +1272,7 @@ def write_pitch_site():
             key = pl.get("key")
             if key:
                 news_by_player[key].append(story)
-    latest_news = stories[:5]
+    latest_news = stories[:10]
     extra_news = ""
     if latest_news:
         extra_news = (
@@ -1366,9 +1366,9 @@ def write_pitch_site():
 
     flt, js = filter_js(["FWD", "MID", "DEF", "GKP"])
     premier_body = f"""
-    <p class="kicker">Hybrid 400 · {UPDATED}</p>
+    <p class="kicker">Hybrid tape · {UPDATED}</p>
     <h1>The Premier</h1>
-    <p class="note">Top 400. Half Sleeper BPL 2025, half 25 published pro lists plus official FPL metrics. Rank 1 is 12,000.</p>
+    <p class="note">{len(premier)} names. Half Sleeper BPL 2025, half 25 published pro lists plus official FPL metrics. Rank 1 is 12,000.</p>
     {rank_search_bar(flt)}
     <div class="panel">{rank_table(premier, ["Hybrid", "Sleeper rk", "Cons.", "Sleeper", "FPL", "G", "A", "Boards", "£", "BK Value"], premier_cell, media=media, faces=True, full_names=True, show_age=True)}</div>
     {value_bars(premier, 12, "#e8c547", "Premier value graph")}
@@ -1383,7 +1383,7 @@ def write_pitch_site():
                 "https://ballkeep.com/pl/the-premier.html",
                 premier,
                 lambda r: f"https://ballkeep.com/pl/players/{slugify(r['name'])}.html",
-                description="Premier League hybrid 400 from 25 published lists.",
+                description="Premier League hybrid tape from 25 published lists.",
             ),
             faq_jsonld(PL_PREMIER_FAQ),
         ],
@@ -1392,7 +1392,7 @@ def write_pitch_site():
     pitch_body = f"""
     <p class="kicker">Sleeper BPL 2025</p>
     <h1>The Pitch</h1>
-    <p class="note">Top 400. Sleeper scoring. Goal 9/10, assist 6/7, clean sheet 0/1/6/8, save 2. Rank 1 is 12,000.</p>
+    <p class="note">{len(pitch)} names. Sleeper scoring. Goal 9/10, assist 6/7, clean sheet 0/1/6/8, save 2. Rank 1 is 12,000.</p>
     {rank_search_bar(flt)}
     <div class="panel">{rank_table(pitch, ["Sleeper", "FPL", "G", "A", "Min", "CS", "Tck", "£", "BK Value"], val_cell, media=media, faces=True)}</div>
     {value_bars(pitch, 12, "#e8c547", "Sleeper points graph", key="sleeper_pts", heading="Sleeper BPL 2025, top 12", note="Default Sleeper soccer scoring on 2025/26 counting stats. Haaland is 317.2. Bruno is 293.8.")}

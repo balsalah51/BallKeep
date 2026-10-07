@@ -430,8 +430,8 @@ def generate_take(r, lists=None, neighbors=None):
     if hi_src and lo_src and hi_rk != lo_rk:
         minus.append(f"Board spread {hi_rk}-{lo_rk} ({hi_src} to {lo_src}).")
 
-    plus = list(dict.fromkeys(plus))[:5]
-    minus = list(dict.fromkeys(minus))[:5]
+    plus = list(dict.fromkeys(plus))[:10]
+    minus = list(dict.fromkeys(minus))[:10]
 
     # --- graf 1: hybrid rank ---
     bits = [f"{name} is a {posw} for {club}"]
@@ -719,8 +719,8 @@ def get_pl_copy(key: str, r=None, lists=None, neighbors=None):
     gen_plus, gen_minus, gen_grafs = generate_take(r or {}, lists, neighbors)
     if not hand:
         return {"plus": gen_plus, "minus": gen_minus, "grafs": gen_grafs}
-    plus = list(dict.fromkeys(list(hand.get("plus") or []) + gen_plus))[:5]
-    minus = list(dict.fromkeys(list(hand.get("minus") or []) + gen_minus))[:5]
+    plus = list(dict.fromkeys(list(hand.get("plus") or []) + gen_plus))[:10]
+    minus = list(dict.fromkeys(list(hand.get("minus") or []) + gen_minus))[:10]
     grafs = list(hand.get("grafs") or [])
     if len(grafs) < 5:
         for g in gen_grafs:

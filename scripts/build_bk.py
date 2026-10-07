@@ -153,12 +153,12 @@ def bk_nav_current(href: str, path: str) -> bool:
 BK_SEO = {
     "index.html": (
         "Fantasy Basketball Dynasty Rankings | BasketKeep",
-        "2026 dynasty basketball top 400, this-year redraft, position boards, BK Value, and hourly NBA news.",
+        "2026 dynasty basketball full ranked tape, this-year redraft, position boards, BK Value, and hourly NBA news.",
         "img/bk-hero.jpg",
     ),
     "the-keep.html": (
-        "2026 Dynasty Basketball Rankings (Top 400) | BasketKeep",
-        "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board. BK Value starts at 12,000.",
+        "2026 Dynasty Basketball Rankings (Full Tape) | BasketKeep",
+        "Dynasty basketball full ranked tape, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board. BK Value starts at 12,000.",
         "img/bk-logo.jpg",
     ),
     "board.html": (
@@ -202,8 +202,8 @@ BK_SEO = {
         "img/bk-logo.jpg",
     ),
     "players/index.html": (
-        "BasketKeep Player Files - The Keep Top 400",
-        "The Keep top 400, one hardwood card each.",
+        "BasketKeep Player Files - The Full Keep Tape",
+        "The full Keep tape, one hardwood card each.",
         "img/bk-logo.jpg",
     ),
     "waivers-dynasty.html": (
@@ -288,12 +288,12 @@ BK_ALSO = {
 }
 
 BK_HOME_FAQ = [
-    ("What is BasketKeep?", "BasketKeep is basketball on Ball Keep. The Keep is dynasty basketball top 400 from 18 boards. The Board is this-year redraft. BK Value uses the same 12,000 curve as football."),
+    ("What is BasketKeep?", "BasketKeep is basketball on Ball Keep. The Keep is dynasty basketball, the full ranked tape, from 18 boards. The Board is this-year redraft. BK Value uses the same 12,000 curve as football."),
     ("How is The Keep ranked?", "Average of every source that ranked the player."),
     ("Where is the NBA news?", "BK News on this board clusters injury, roster, and coach tape hourly, with links back to Keep player files."),
 ]
 BK_KEEP_FAQ = [
-    ("What is The Keep on BasketKeep?", "Dynasty basketball top 400, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board."),
+    ("What is The Keep on BasketKeep?", "Dynasty basketball, the full ranked tape, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board."),
     ("How does BK Value work here?", "Keep rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%. The Keep calculator uses this board."),
     ("What is The Board?", "This-year basketball redraft. Use it for 2026-27 startups. The Keep is dynasty."),
 ]
@@ -328,7 +328,7 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "bk/"), image=img, brand="BasketKeep", brand_url="https://ballkeep.com/bk/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=39" />
+  <link rel="stylesheet" href="{prefix}css/bk.css?v=40" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
 </head>
 <body{f' class="{esc(body_class)}"' if body_class else ""}>
@@ -510,7 +510,7 @@ def player_href(name, depth=1):
     return f"{'../' * (depth - 1)}players/{slugify(name)}.html" if depth > 1 else f"players/{slugify(name)}.html"
 
 
-def home_rank_preview(rows, media, n=8):
+def home_rank_preview(rows, media, n=16):
     items = []
     for r in rows[:n]:
         name = r.get("name") or ""
@@ -968,7 +968,7 @@ def write_basket_site():
             if key:
                 news_by_player[key].append(story)
 
-    latest_news = stories[:5]
+    latest_news = stories[:10]
     extra_news = ""
     if latest_news:
         extra_news = (
@@ -1021,7 +1021,7 @@ def write_basket_site():
     ])}
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
         ("trade.html", "Trade Calculators", "Keep and Board. Rank becomes BK Value."),
-        ("players/index.html", "Player Files", "Keep top 400."),
+        ("players/index.html", "Player Files", "The full Keep tape."),
     ])}
     {desk_block("tape", "Tape", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "NBA memes. Pictures on the card."),
@@ -1078,7 +1078,7 @@ def write_basket_site():
                 "https://ballkeep.com/bk/the-keep.html",
                 keep,
                 lambda r: f"https://ballkeep.com/bk/players/{slugify(r['name'])}.html",
-                description="Dynasty basketball top 400 from 18 boards.",
+                description="Dynasty basketball full ranked tape from 18 boards.",
             ),
             faq_jsonld(BK_KEEP_FAQ),
         ],
