@@ -1682,7 +1682,7 @@ FB_ALSO = {
     ],
     "bpl-schedule.html": [
         ("pl/index.html", "PitchKeep", "Premier League boards."),
-        ("pl/the-premier.html", "The Premier", "Hybrid 400."),
+        ("pl/the-premier.html", "The Premier", "The full hybrid tape."),
         ("nfl-schedule.html", "NFL Schedule", "Football slate."),
         ("mlb-schedule.html", "MLB Schedule", "September baseball."),
     ],
@@ -3529,7 +3529,7 @@ def write_explore_page():
     ])}
     {group("Premier League", "PitchKeep", [
         ("pl/index.html", "PitchKeep Home", "Premier League ranks."),
-        ("pl/the-premier.html", "The Premier", "Hybrid 400."),
+        ("pl/the-premier.html", "The Premier", "The full hybrid tape."),
         ("pl/the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
         ("pl/attack.html", "Attack", "Forwards."),
         ("pl/midfield.html", "Midfield", "Mids."),

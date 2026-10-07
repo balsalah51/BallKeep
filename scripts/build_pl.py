@@ -262,10 +262,10 @@ PL_ALSO = {
         ("defence.html", "Defence", "Defenders."),
         ("the-pitch.html", "The Pitch", "Overall Sleeper 400."),
         ("trade-keepers.html", "Keepers Calculator", "GKs only."),
-        ("the-premier.html", "The Premier", "Hybrid 400."),
+        ("the-premier.html", "The Premier", "The full hybrid tape."),
     ],
     "schedule.html": [
-        ("the-premier.html", "The Premier", "Hybrid 400."),
+        ("the-premier.html", "The Premier", "The full hybrid tape."),
         ("the-pitch.html", "The Pitch", "Sleeper BPL 2025."),
         ("../bpl-schedule.html", "Football BPL slate", "Same slate on Ball Keep."),
         ("../nfl-schedule.html", "NFL Schedule", "Football slate."),
@@ -287,7 +287,7 @@ PL_ALSO = {
         ("players/index.html", "Player Files", "Every name in the calc."),
     ],
     "players/index.html": [
-        ("the-premier.html", "The Premier", "Hybrid 400."),
+        ("the-premier.html", "The Premier", "The full hybrid tape."),
         ("the-pitch.html", "The Pitch", "Sleeper 400."),
         ("news.html", "PK News", "Hourly wire."),
         ("trade.html", "Trade Calculators", "Price any name."),
@@ -1058,7 +1058,7 @@ def write_player_pages(pitch, premier, fwd, mid, defence, gkp, news_by_player=No
     {flt}
     <div class="player-grid" id="pl-cards">{''.join(cards)}</div>
     {also_on_desk([
-        ("../the-premier.html", "The Premier", "Hybrid 400."),
+        ("../the-premier.html", "The Premier", "The full hybrid tape."),
         ("../the-pitch.html", "The Pitch", "Sleeper 400."),
         ("../news.html", "PK News", "Hourly wire."),
         ("../trade.html", "Trade Calculators", "Price any name."),
@@ -1299,8 +1299,8 @@ def write_pitch_site():
       <article class="home-snap keep">
         <header class="home-snap-head">
           <p class="kicker">The Premier</p>
-          <h2>Hybrid 400</h2>
-          <p>{premier_n} published lists · 2026/27</p>
+          <h2>Full tape</h2>
+          <p>{len(premier)} names · {premier_n} lists · 2026/27</p>
           <a class="home-snap-link" href="the-premier.html">Full board</a>
         </header>
         {home_rank_preview(premier, media)}
