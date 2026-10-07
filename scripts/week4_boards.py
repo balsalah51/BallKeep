@@ -329,9 +329,24 @@ MATCH_SOURCES = [
 ]
 
 
-# Thursday is in. Sunday and Monday stay open.
+# Finished Week 4 card. Every final is in.
 WEEK4_FINALS = {
     "PIT@CLE": {"score": "27-24", "winner": "CLE", "day": "Thu Final"},
+    "IND@WAS": {"score": "30-13", "winner": "IND", "day": "Sun Final"},
+    "TEN@BAL": {"score": "24-18", "winner": "BAL", "day": "Sun Final"},
+    "NE@BUF": {"score": "29-26", "winner": "NE", "day": "Sun Final"},
+    "NYJ@CHI": {"score": "23-12", "winner": "CHI", "day": "Sun Final"},
+    "JAX@CIN": {"score": "22-17", "winner": "JAX", "day": "Sun Final"},
+    "DAL@HOU": {"score": "34-30", "winner": "DAL", "day": "Sun Final"},
+    "ARI@NYG": {"score": "36-24", "winner": "NYG", "day": "Sun Final"},
+    "LAR@PHI": {"score": "24-20", "winner": "LAR", "day": "Sun Final"},
+    "GB@TB": {"score": "17-14", "winner": "GB", "day": "Sun Final"},
+    "MIA@MIN": {"score": "15-10", "winner": "MIN", "day": "Sun Final"},
+    "KC@LV": {"score": "30-27", "winner": "KC", "day": "Sun Final"},
+    "LAC@SEA": {"score": "30-23", "winner": "SEA", "day": "Sun Final"},
+    "DEN@SF": {"score": "24-14", "winner": "SF", "day": "Sun Final"},
+    "DET@CAR": {"score": "32-26", "winner": "CAR", "day": "Sun Final"},
+    "ATL@NO": {"score": "45-24", "winner": "ATL", "day": "Mon Final"},
 }
 
 
@@ -389,5 +404,5 @@ W4_K_FAQ = [
 W4_MATCH_FAQ = [
     ("How are the win picks built?", "Published Week 4 cards: Sporting News, two CBS Sports cards, FanSided, the SportsLine model, the market favorite, Week 3 winners, and a short post-Week 3 power board. Unpicked games on a board are skipped."),
     ("Is this a win chance?", "Away and Home are raw vote counts. The pick is the side with more published votes."),
-    ("Is this a bet slip?", "It is a mash of public picks and the market. Thursday already has a final. Sunday and Monday stay open."),
+    ("Is this a bet slip?", "It is a mash of public picks and the market. The finished Week 4 card is in. Live picks live on Week 5 Predictions."),
 ]

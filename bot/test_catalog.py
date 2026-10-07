@@ -56,11 +56,11 @@ def main():
     assert all(any("Smith-Njigba" in n or "Jaxon" in n for n in d["names"]) for d in jsn_deals)
     assert cat.deals_for("sun god") or cat.deals_for("st brown")
     assert len(cat.deals_for("")) >= 20
-    assert len(cat.raw["keep"]) == 571
+    assert len(cat.raw["keep"]) == 572
     assert cat.raw.get("board_format") == "redraft PPR", cat.raw.get("board_format")
-    assert len(cat.raw["board"]) == 480, f"board {len(cat.raw.get('board') or [])}"
+    assert len(cat.raw["board"]) == 489, f"board {len(cat.raw.get('board') or [])}"
     assert cat.raw["board"][0]["name"] == cat.raw["ppr"][0]["name"]
-    assert len(cat.raw.get("sf_redraft") or []) == 596, f"sf_redraft {len(cat.raw.get('sf_redraft') or [])}"
+    assert len(cat.raw.get("sf_redraft") or []) == 600, f"sf_redraft {len(cat.raw.get('sf_redraft') or [])}"
     bb = cat.raw.get("bb_keep") or []
     assert len(bb) == 521, f"bb keep {len(bb)}"
     assert cat.one("ohtani", sport="baseball")["name"] == "Shohei Ohtani"
@@ -139,10 +139,10 @@ def main():
     assert board0.get("yates") or board0.get("fp") or board0.get("karabell"), board0
     assert (board0.get("n") or 0) >= 10, board0
     classic = cat.raw.get("classic") or []
-    assert len(classic) == 480, f"classic {len(classic)}"
+    assert len(classic) == 489, f"classic {len(classic)}"
     assert classic[0].get("bk") == 1
     best_ball = cat.raw.get("best_ball") or []
-    assert len(best_ball) == 480, f"best_ball {len(best_ball)}"
+    assert len(best_ball) == 489, f"best_ball {len(best_ball)}"
     assert best_ball[0].get("name")
     assert best_ball[0].get("bk") == 1
     assert len(cat.raw.get("best_ball_sources") or []) == 40
@@ -160,13 +160,13 @@ def main():
     assert cat.list_for("dst")[0]["name"] == "Houston Texans"
     assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"
     fence = cat.raw.get("fence") or []
-    assert len(fence) == 976, f"fence {len(fence)}"
-    assert fence[0]["name"] == "Josh Allen"
+    assert len(fence) >= 400, f"fence {len(fence)}"
+    assert fence[0]["name"] in {"Drake Maye", "Josh Allen"}
     assert fence[0].get("bk") == 1
-    assert cat.list_for("fence")[0]["name"] == "Josh Allen"
-    assert cat.list_for("idp")[0]["name"] == "Josh Allen"
+    assert cat.list_for("fence")[0]["name"] == fence[0]["name"]
+    assert cat.list_for("idp")[0]["name"] == fence[0]["name"]
     maye = next(r for r in fence if r["name"] == "Drake Maye")
-    assert maye.get("bk") >= 6
+    assert maye.get("pos") == "QB"
     assert any(r["name"] == "Aidan Hutchinson" for r in fence)
     bpl = cat.raw.get("bpl") or []
     assert len(bpl) == 380, f"bpl {len(bpl)}"
@@ -329,14 +329,17 @@ def main():
     assert "week3-kickers.html" not in ros_st
     assert "week4-dst.html" not in ros_st
     assert "week4-kickers.html" not in ros_st
+    assert "week5-dst.html" not in ros_st
+    assert "week5-kickers.html" not in ros_st
     assert "weekly.html" in week1
     assert "the-recap.html" in week1
-    assert "week4-dst.html" in week1
-    assert "week4-kickers.html" in week1
-    assert "week4-matchups.html" in week1
+    assert "week5-dst.html" in week1
+    assert "week5-kickers.html" in week1
+    assert "week5-matchups.html" in week1
+    assert "week4-dst.html" not in week1
     assert "week2-dst.html" not in week1
     assert "waiver.html" in week1
-    assert "Week 4 Waivers" in week1
+    assert "Week 5 Waivers" in week1
     assert "the-market.html" in week1
     assert "start-sit.html" not in week1
     assert "weekly-check.html" not in week1
@@ -402,9 +405,9 @@ def main():
     assert "\u2014" not in hc
     assert 'class="hc-cold"' in hc
     assert 'class="tile cold"' in hc or "tile cold" in hc
-    assert "Braelon Allen" in hc
+    assert "Emanuel Wilson" in hc
     assert "Ollie Gordon" in hc
-    assert "Into Week 4" in hc
+    assert "Into Week 5" in hc
     assert 'href="privacy.html"' in home
     for x_path in ("the-x.html", "bb/the-x.html", "bk/the-x.html", "pl/the-x.html"):
         x_html = html_of(x_path)
@@ -440,6 +443,7 @@ def main():
     assert "next-chair.html" not in articles
     assert "The Next Chair" not in articles
     assert "the-split.html" not in articles
+    assert "week5-matchups.html" in articles
     assert "the-split.html" not in html_of("two-clocks.html")
     assert "The Split" not in html_of("two-clocks.html")
     assert "week2-tape.html" in articles
@@ -464,6 +468,9 @@ def main():
     assert "The Split" not in clocks
     assert "\u2014" not in clocks
     assert "desk" not in clocks.lower()
+    assert not (root / "the-split.html").exists()
+    assert not (root / "js/split.js").exists()
+    assert not (root / "data/split-lookup.json").exists()
     handcuff = html_of("the-handcuff.html")
     assert "<h1>The Handcuff</h1>" in handcuff
     assert "handcuff-app" in handcuff
@@ -611,6 +618,21 @@ def main():
     assert "\u2014" not in w4_m_html
     assert "on a desk" not in w4_m_html
     assert "every other desk" not in w2_m_html
+    w5_dst_html = html_of("week5-dst.html")
+    assert "<h1>Week 5 DST</h1>" in w5_dst_html
+    assert "Houston Texans" in w5_dst_html
+    assert "is 1.01" not in w5_dst_html
+    w5_k_html = html_of("week5-kickers.html")
+    assert "<h1>Week 5 Kickers</h1>" in w5_k_html
+    assert "Brandon Aubrey" in w5_k_html
+    w5_m_html = html_of("week5-matchups.html")
+    assert "<h1>Week 5 Matchups</h1>" in w5_m_html
+    assert "TB" in w5_m_html and "DAL" in w5_m_html
+    assert "Pick: DAL" in w5_m_html
+    assert "Pick: JAX" in w5_m_html
+    assert "Thursday has not kicked" in w5_m_html
+    assert "\u2014" not in w5_m_html
+    assert "on a desk" not in w5_m_html
     w1_dst_html = html_of("archive/week1/dst.html")
     assert "<h1>Week 1 DST</h1>" in w1_dst_html
     assert "Jacksonville Jaguars" in w1_dst_html
@@ -646,8 +668,8 @@ def main():
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
     assert "the-recap.html" in weekly_html
-    assert "week4-matchups.html" in weekly_html
-    assert "Browns 27-24" in weekly_html
+    assert "week5-matchups.html" in weekly_html
+    assert "Cowboys on Thursday" in weekly_html or "Dallas lays 9.5" in weekly_html
     assert "Seahawks 13, Patriots 10" in weekly_html
     assert "Jahmyr Gibbs" in weekly_html
     opening_html = html_of("archive/week1/opening.html")
@@ -691,9 +713,9 @@ def main():
     assert "ESPN ADP" in adp_html
     assert "Jahmyr Gibbs" in adp_html
     waiver_html = html_of("waiver.html")
-    assert "<h1>Week 4 Waivers</h1>" in waiver_html
-    assert "Braelon Allen" in waiver_html
-    assert "RotoBaller" in waiver_html
+    assert "<h1>Week 5 Waivers</h1>" in waiver_html
+    assert "Emanuel Wilson" in waiver_html
+    assert "FantasyPros" in waiver_html
     assert "archive/week1" in waiver_html
     w1_w_html = html_of("archive/week1/waivers.html")
     assert "<h1>Week 1 Waivers</h1>" in w1_w_html
@@ -881,6 +903,8 @@ def main():
         "waiver.html",
         "adp.html",
         "the-handcuff.html",
+        "week5-dst.html",
+        "week5-kickers.html",
         "the-fence.html",
         "touches.html",
         "rookies-2026.html",

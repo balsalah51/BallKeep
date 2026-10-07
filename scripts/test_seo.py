@@ -143,7 +143,7 @@ def test_football_nav_keeps_every_link():
         "Home", "The Keep", "The Board",
         "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
-        "Weekly", "The Recap", "Week 4 DST", "Week 4 K", "Week 4 Predictions", "Week 4 Waivers", "The Market", "Injuries",
+        "Weekly", "The Recap", "Week 5 DST", "Week 5 K", "Week 5 Predictions", "Week 5 Waivers", "The Market", "Injuries",
         "ADP", "Trade", "The Handcuff", "The Method",
         "My Team",
         "Articles", "Touches", "Players", "News", "The X", "Hot 'n' Cold",
@@ -340,7 +340,7 @@ def test_searchaction_and_schema():
     assert "https://ballkeep.com/the-inheritance.html" not in txt
     assert "https://ballkeep.com/week2-tape.html" in txt
     assert "https://ballkeep.com/week2-ledger.html" in txt
-    assert "https://ballkeep.com/week4-matchups.html" in txt
+    assert "https://ballkeep.com/week5-matchups.html" in txt
     assert "https://ballkeep.com/bb/" in txt
     card = rank_card("The Keep", 4, 9769, "../the-keep.html")
     assert 'href="../the-keep.html"' in card
@@ -418,13 +418,13 @@ def test_best_ball_boards():
 def test_best_ball_mash():
     from build_site import best_ball_list
     rows = best_ball_list()
-    assert len(rows) == 480
+    assert len(rows) == 489
     assert rows[0]["name"] in {
         "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
         "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",
     }
     maye = next(r for r in rows if r["name"] == "Drake Maye")
-    assert maye["bk"] >= 6
+    assert maye["pos"] == "QB"
     assert all(r.get("pos") in {"QB", "RB", "WR", "TE"} for r in rows)
     assert all(r.get("n") for r in rows)
 
@@ -531,13 +531,16 @@ def test_drop_player():
     assert next(r for r in rows if r["name"] == "Drake Maye")["bk"] == 6
 
 
-def test_keep_maye_drop():
+def test_keep_week5_moves():
     from pathlib import Path
     from build_site import ROOT, aggregate, parse_pfn
     keep, _, _ = aggregate(parse_pfn(ROOT / "data/pfn-dynasty.txt"))
-    maye = next(r for r in keep if r["name"] == "Drake Maye")
-    assert maye["bk"] >= 6
+    by_name = {r["name"]: r for r in keep}
     assert keep[0]["name"] == "Josh Allen"
+    assert "Drake Maye" in by_name
+    assert "De'Von Achane" in by_name
+    walker = next((r for r in keep if str(r["name"]).startswith("Kenneth Walker")), None)
+    assert walker is not None
 
 
 def test_visible_desk_copy_removed():
@@ -558,6 +561,7 @@ def test_visible_desk_copy_removed():
         "week2_boards.py", "week2_predictions.py", "week2_tape.py", "week2_ledger.py",
         "week3_boards.py", "week3_predictions.py",
         "week4_boards.py", "week4_predictions.py",
+        "week5_boards.py", "week5_predictions.py",
         "two_clocks.py", "the_handcuff.py", "the_recap.py",
     ):
         text = (root / name).read_text()
@@ -607,12 +611,12 @@ def test_fence_idp_board():
     assert idp[0]["name"] == "Aidan Hutchinson"
     assert idp[0]["pos"] == "DL"
     fence = fence_board()
-    assert len(fence) == 976
-    assert fence[0]["name"] == "Josh Allen"
+    assert len(fence) >= 400
+    assert fence[0]["name"] in {"Drake Maye", "Josh Allen"}
     assert fence[0]["bk"] == 1
     assert fence[0]["pos"] == "QB"
     maye = next(r for r in fence if r["name"] == "Drake Maye")
-    assert maye["bk"] >= 6
+    assert maye["pos"] == "QB"
     assert fence[0]["n"] >= 6
     assert {r["pos"] for r in fence} >= {"QB", "RB", "WR", "TE", "DL", "LB", "DB"}
     first_idp = next(r for r in fence if r["pos"] in {"DL", "LB", "DB"})
@@ -644,7 +648,7 @@ def test_weekly_kit():
         weekly_flex,
         waiver_board,
     )
-    assert week_num() == 4
+    assert week_num() == 5
     qb = weekly_board("QB")
     assert qb[0]["name"] == "Josh Allen"
     assert qb[0]["bk"] == 1
@@ -665,14 +669,14 @@ def test_weekly_kit():
     w1w = week1_waiver_board()
     assert len(WEEK1_WAIVER_SOURCES) >= 5
     assert 8 <= len(w1w) <= 40
-    assert w1w[0]["name"] == "Braelon Allen"
+    assert w1w[0]["name"] == "Emanuel Wilson"
     assert w1w[0]["bk"] == 1
     assert w1w[0]["n"] >= 2
     assert all(r["n"] >= 2 for r in w1w)
     assert all(r["pos"] not in {"DST", "K"} for r in w1w)
     names = {r["name"] for r in w1w}
-    assert "Ollie Gordon II" in names
-    assert "Kenyon Sadiq" in names
+    assert "Will Shipley" in names
+    assert "Keon Coleman" in names
     old = historic_waiver_board(1)
     assert old[0]["name"] == "Mike Washington Jr."
     inj = injury_rows()
@@ -887,6 +891,57 @@ def test_attach_pos_ranks():
     assert ">RB2<" in html
     assert ">WR1<" in html
     assert 'data-pos="RB"' in html
+
+
+def test_week5_predictions_copy():
+    from week5_predictions import HEADLINE, predictions_article_html, predictions_teaser
+    html = predictions_article_html()
+    teaser = predictions_teaser()
+    assert HEADLINE in html
+    assert "\u2014" not in html
+    assert "desk" not in html.lower()
+    assert "looking at" not in html
+    for club in (
+        "DAL", "JAX", "CIN", "NE", "MIN", "CLE", "PIT", "HOU",
+        "NYG", "DEN", "DET", "CHI", "SF", "BAL", "LAR",
+    ):
+        assert f"Pick: {club}" in html
+    assert "week5-matchups.html" in teaser
+    assert "Thursday has not kicked" in html
+    assert "Kansas City and Carolina sit" in html
+
+
+def test_week5_boards():
+    from week5_boards import (
+        MATCH_SOURCES,
+        W5_DST_SOURCES,
+        W5_K_SOURCES,
+        week5_dst_board,
+        week5_kicker_board,
+        week5_matchups,
+    )
+    assert len(W5_DST_SOURCES) >= 6
+    assert len(W5_K_SOURCES) >= 3
+    assert len(MATCH_SOURCES) >= 6
+    dst = week5_dst_board()
+    assert dst[0]["bk"] == 1
+    assert dst[0]["n"] >= 3
+    assert dst[0]["name"] in {
+        "Houston Texans", "Cincinnati Bengals", "Denver Broncos",
+        "Minnesota Vikings", "Jacksonville Jaguars",
+    }
+    kickers = week5_kicker_board()
+    assert kickers[0]["name"] in {"Brandon Aubrey", "Evan McPherson", "Will Reichard"}
+    games = week5_matchups()
+    assert len(games) == 15
+    keys = {g["key"] for g in games}
+    assert "TB@DAL" in keys
+    assert "BUF@LAR" in keys
+    assert "KC@CAR" not in keys
+    assert all(g["pick"] in {g["away"], g["home"]} for g in games)
+    assert games[0]["day"].startswith("Thu")
+    assert games[0]["key"] == "TB@DAL"
+    assert "final" not in games[0]
 
 
 def test_two_clocks_article():

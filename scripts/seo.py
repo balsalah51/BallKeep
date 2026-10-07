@@ -286,9 +286,9 @@ Site: https://ballkeep.com
 - Trade calculators: https://ballkeep.com/trade.html
 - Player files: https://ballkeep.com/players/
 - Hourly NFL news: https://ballkeep.com/news.html
-- Week 4 rankings: https://ballkeep.com/weekly.html
+- Week 5 rankings: https://ballkeep.com/weekly.html
 - The Recap: https://ballkeep.com/the-recap.html
-- Week 4 predictions: https://ballkeep.com/week4-matchups.html
+- Week 5 predictions: https://ballkeep.com/week5-matchups.html
 - The Market: https://ballkeep.com/the-market.html
 - The Method: https://ballkeep.com/the-method.html
 - Articles: https://ballkeep.com/articles.html
