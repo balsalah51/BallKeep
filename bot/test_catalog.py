@@ -56,21 +56,21 @@ def main():
     assert all(any("Smith-Njigba" in n or "Jaxon" in n for n in d["names"]) for d in jsn_deals)
     assert cat.deals_for("sun god") or cat.deals_for("st brown")
     assert len(cat.deals_for("")) >= 20
-    assert len(cat.raw["keep"]) == 400
+    assert len(cat.raw["keep"]) == 571
     assert cat.raw.get("board_format") == "redraft PPR", cat.raw.get("board_format")
-    assert len(cat.raw["board"]) == 200, f"board {len(cat.raw.get('board') or [])}"
+    assert len(cat.raw["board"]) == 480, f"board {len(cat.raw.get('board') or [])}"
     assert cat.raw["board"][0]["name"] == cat.raw["ppr"][0]["name"]
-    assert 400 <= len(cat.raw.get("sf_redraft") or []) <= 500, f"sf_redraft {len(cat.raw.get('sf_redraft') or [])}"
+    assert len(cat.raw.get("sf_redraft") or []) == 596, f"sf_redraft {len(cat.raw.get('sf_redraft') or [])}"
     bb = cat.raw.get("bb_keep") or []
-    assert len(bb) == 400, f"bb keep {len(bb)}"
+    assert len(bb) == 521, f"bb keep {len(bb)}"
     assert cat.one("ohtani", sport="baseball")["name"] == "Shohei Ohtani"
     assert cat.one("caminero", sport="baseball")["name"] == "Junior Caminero"
     assert cat.one("pca", sport="baseball")["name"].startswith("Pete Crow")
-    assert len(cat.raw.get("bb_pitchers") or []) == 150
+    assert len(cat.raw.get("bb_pitchers") or []) == 301
     assert len(cat.raw.get("bb_saves") or []) == 100
     assert len(cat.raw.get("bb_svh") or []) == 100
     assert 350 <= len(cat.raw.get("bb_lineup") or []) <= 400
-    assert len(cat.raw.get("bb_redraft") or []) == 400
+    assert len(cat.raw.get("bb_redraft") or []) == 521
     assert len(cat.raw.get("bb_waivers_dynasty") or []) == 15
     assert len(cat.raw.get("bb_waivers_redraft") or []) == 50
     assert cat.raw.get("news"), "expected football BK News in the catalog"
@@ -89,11 +89,11 @@ def main():
     skenes_html = (root / "bb/players/paul-skenes.html").read_text()
     assert "Pitch chart" in skenes_html
     pitch = cat.raw.get("pl_pitch") or []
-    assert len(pitch) == 400, f"pitch {len(pitch)}"
+    assert len(pitch) == 405, f"pitch {len(pitch)}"
     assert pitch[0]["name"] == "Erling Haaland"
     assert pitch[1]["name"] == "Bruno Fernandes"
     premier = cat.raw.get("pl_premier") or []
-    assert len(premier) == 400, f"premier {len(premier)}"
+    assert len(premier) == 405, f"premier {len(premier)}"
     assert premier[0]["name"] == "Erling Haaland"
     assert premier[1]["name"] == "Bruno Fernandes"
     by_name = {r["name"]: r["bk"] for r in premier}
@@ -111,9 +111,9 @@ def main():
     assert haaland.get("full_name")
     assert haaland.get("age")
     assert cat.raw["keep"][0].get("age"), "Football The Keep needs age"
-    assert sum(1 for r in cat.raw["keep"] if r.get("age")) == 400, "Football The Keep needs age on every row"
+    assert sum(1 for r in cat.raw["keep"] if r.get("age")) == len(cat.raw["keep"]), "Football The Keep needs age on every row"
     assert cat.raw["bb_keep"][0].get("age"), "Baseball The Keep needs age"
-    assert sum(1 for r in cat.raw["bb_keep"] if r.get("age")) == 400
+    assert sum(1 for r in cat.raw["bb_keep"] if r.get("age")) == len(cat.raw["bb_keep"])
     assert cat.one("haaland", sport="soccer")["name"] == "Erling Haaland"
     assert cat.one("bruno", sport="soccer")["name"] == "Bruno Fernandes"
     assert cat.one("saka", sport="soccer")["name"] == "Bukayo Saka"
@@ -121,8 +121,8 @@ def main():
     assert cat.one("declan rice", sport="soccer")["name"] == "Declan Rice"
     assert cat.one("rice", sport="football")["name"] == "Rashee Rice"
     assert len(cat.raw.get("pl_fwd") or []) >= 40
-    assert len(cat.raw.get("pl_mid") or []) == 150
-    assert len(cat.raw.get("pl_def") or []) == 120
+    assert len(cat.raw.get("pl_mid") or []) == 190
+    assert len(cat.raw.get("pl_def") or []) == 135
     assert len(cat.raw.get("pl_gkp") or []) >= 30
     assert 400 <= len(cat.raw.get("pl_players") or []) <= 420
     tpl = cat.trade("plpitch", "Bruno Fernandes", "Erling Haaland")
@@ -139,10 +139,10 @@ def main():
     assert board0.get("yates") or board0.get("fp") or board0.get("karabell"), board0
     assert (board0.get("n") or 0) >= 10, board0
     classic = cat.raw.get("classic") or []
-    assert len(classic) == 200, f"classic {len(classic)}"
+    assert len(classic) == 480, f"classic {len(classic)}"
     assert classic[0].get("bk") == 1
     best_ball = cat.raw.get("best_ball") or []
-    assert len(best_ball) == 200, f"best_ball {len(best_ball)}"
+    assert len(best_ball) == 480, f"best_ball {len(best_ball)}"
     assert best_ball[0].get("name")
     assert best_ball[0].get("bk") == 1
     assert len(cat.raw.get("best_ball_sources") or []) == 40
@@ -160,7 +160,7 @@ def main():
     assert cat.list_for("dst")[0]["name"] == "Houston Texans"
     assert cat.list_for("kickers")[0]["name"] == "Brandon Aubrey"
     fence = cat.raw.get("fence") or []
-    assert len(fence) == 400, f"fence {len(fence)}"
+    assert len(fence) >= 400, f"fence {len(fence)}"
     assert fence[0]["name"] in {"Drake Maye", "Josh Allen"}
     assert fence[0].get("bk") == 1
     assert cat.list_for("fence")[0]["name"] == fence[0]["name"]
@@ -180,12 +180,12 @@ def main():
     assert all(r.get("path") for r in farm)
     assert cat.one("jesus made", sport="baseball")["name"] == "Jesús Made"
     bk = cat.raw.get("bk_keep") or []
-    assert len(bk) == 400, f"bk keep {len(bk)}"
+    assert len(bk) == 502, f"bk keep {len(bk)}"
     assert bk[0]["name"] == "Victor Wembanyama"
     assert cat.one("wembanyama", sport="basketball")["name"] == "Victor Wembanyama"
     assert cat.one("luka", sport="basketball")["name"] == "Luka Doncic"
     assert cat.one("jokic", sport="basketball")["name"] == "Nikola Jokic"
-    assert 200 <= len(cat.raw.get("bk_board") or []) <= 250
+    assert len(cat.raw.get("bk_board") or []) == 502
     assert len(cat.raw.get("bk_waivers_dynasty") or []) == 15
     assert len(cat.raw.get("bk_waivers_redraft") or []) == 50
     assert cat.raw["bk_keep"][0].get("age"), "BasketKeep The Keep needs age"
@@ -261,8 +261,10 @@ def main():
     assert "home-hero" in home
     assert "the-inheritance.html" not in home
     assert "next-chair.html" not in home
+    assert "the-split.html" not in home
     assert "The Inheritance" not in home
     assert "The Next Chair" not in home
+    assert "The Split" not in home
     assert "Superflex dynasty" in home
     assert "Redraft PPR" in home
     assert "Dynasty · Redraft" in home
@@ -442,6 +444,8 @@ def main():
     assert "The Next Chair" not in articles
     assert "the-split.html" not in articles
     assert "week5-matchups.html" in articles
+    assert "the-split.html" not in html_of("two-clocks.html")
+    assert "The Split" not in html_of("two-clocks.html")
     assert "week2-tape.html" in articles
     assert "The Second Sunday" in articles
     assert "week2-ledger.html" in articles
@@ -461,7 +465,7 @@ def main():
     clocks = html_of("two-clocks.html")
     assert "A room has two clocks, and most sites only wind one of them." in clocks
     assert "the-split.html" not in clocks
-    assert "trade.html" in clocks
+    assert "The Split" not in clocks
     assert "\u2014" not in clocks
     assert "desk" not in clocks.lower()
     assert not (root / "the-split.html").exists()
@@ -873,8 +877,11 @@ def main():
     assert not (root / "the-ones.html").exists()
     assert not (root / "the-inheritance.html").exists()
     assert not (root / "next-chair.html").exists()
+    assert not (root / "the-split.html").exists()
     assert not (root / "js/inherit.js").exists()
+    assert not (root / "js/split.js").exists()
     assert not (root / "data/inherit-lookup.json").exists()
+    assert not (root / "data/split-lookup.json").exists()
     assert 'href="discord.html"' not in html_of("the-keep.html")
 
     rank_pages = (

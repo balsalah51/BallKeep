@@ -10,7 +10,7 @@ from catalog import FORMULA, Catalog
 CATEGORY = "BALL KEEP DESK"
 CHANNELS = [
     ("desk", "how to search the desk and what BK Value means"),
-    ("the-keep", "superflex dynasty top 400"),
+    ("the-keep", "superflex dynasty full ranked tape"),
     ("the-board", "long proprietary aggregate"),
     ("redraft-ppr", "2026 full-PPR board"),
     ("redraft-std", "2026 standard board"),
@@ -23,14 +23,14 @@ CHANNELS = [
     ("mlb-slate", "september baseball, every club"),
     ("sources", "the 30+ super aggregate desks inside the keep"),
     ("player-files", "every football player page, plus/minus, and ranks"),
-    ("bb-keep", "baseball dynasty top 400"),
+    ("bb-keep", "baseball dynasty full ranked tape"),
     ("bb-lineup", "dynasty hitters only"),
-    ("bb-pitchers", "top 100 dynasty pitchers"),
+    ("bb-pitchers", "dynasty pitchers, the full ranked tape"),
     ("bb-bullpen", "saves and sv+h relief lists"),
     ("bb-redraft", "baseball rest-of-season board"),
     ("bb-waivers", "dynasty stashes and the longer redraft wire"),
-    ("the-premier", "premier league hybrid 400 · sleeper + every board"),
-    ("the-pitch", "premier league top 400 · sleeper bpl 2025"),
+    ("the-premier", "premier league hybrid tape · sleeper + every board"),
+    ("the-pitch", "premier league full tape · sleeper bpl 2025"),
     ("pl-attack", "fpl forwards"),
     ("pl-midfield", "fpl midfield"),
     ("pl-defence", "fpl defenders"),
@@ -120,10 +120,10 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-keep"])
     await _post_list(
         channels["the-keep"],
-        "The Keep - Superflex Dynasty Top 400",
+        "The Keep - Superflex Dynasty Full Tape",
         cat.raw["keep"],
         cat,
-        "Super Aggregate of 30+ desks. 50% long boards, 50% the rest. Top 400.",
+        "Super Aggregate of 30+ desks. 50% long boards, 50% the rest. Every name a long board ranked.",
     )
     await note("The Keep posted.")
 
@@ -306,7 +306,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-premier"])
     await _post_list(
         channels["the-premier"],
-        "PitchKeep - The Premier (hybrid 400: 50% Sleeper BPL 2025, 50% every other board)",
+        "PitchKeep - The Premier (hybrid tape: 50% Sleeper BPL 2025, 50% every other board)",
         cat.raw.get("pl_premier") or [],
         cat,
         "The Premier. 50% Sleeper, 50% the other boards. https://ballkeep.com/pl/the-premier.html",
@@ -314,7 +314,7 @@ async def publish(guild: discord.Guild, cat: Catalog, progress=None):
     await _wipe(channels["the-pitch"])
     await _post_list(
         channels["the-pitch"],
-        "PitchKeep - The Pitch (Premier League top 400, Sleeper BPL 2025)",
+        "PitchKeep - The Pitch (Premier League full tape, Sleeper BPL 2025)",
         cat.raw.get("pl_pitch") or [],
         cat,
         "Sleeper-only counting board. Purple desk at https://ballkeep.com/pl/the-pitch.html",

@@ -1475,3 +1475,31 @@ body.essay-page .opening .lede::first-letter {
 @media (max-width: 860px) {
   .inherit-clocks { grid-template-columns: 1fr; }
 }
+
+/* Longer tapes: one ink in the nav, a paper header band on the tables. */
+nav.site-nav .nav-group {
+  background: #fff;
+  border-color: var(--line);
+}
+nav.site-nav .nav-group .nav-lab { color: var(--muted); }
+nav.site-nav .nav-group a { color: var(--ink); font-weight: 700; }
+nav.site-nav .nav-group a:hover,
+nav.site-nav .nav-group a[aria-current="page"] { color: var(--red); }
+nav.site-nav .nav-group.nav-leads {
+  border-color: rgba(200, 16, 46, 0.28);
+}
+table { font-variant-numeric: tabular-nums; }
+th {
+  background: #f4f6f8;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+tbody tr:nth-child(even) td { background: rgba(16, 32, 51, 0.028); }
+tbody tr:hover td { background: rgba(200, 16, 46, 0.06); }
+.rk { color: var(--ink); }
+h1, h2 {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}

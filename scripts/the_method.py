@@ -82,7 +82,7 @@ def method_article_html() -> str:
       <p class="method-dek">{DEK}</p>
       {faces}
       <section class="method-grafs">
-        <p>Ball Keep is a house of boards. The Keep is Superflex dynasty, top 400, forty tapes. The Board is redraft PPR for this year. The Fence mixes Superflex skill names with IDP. BaseKeep, BasketKeep, and PitchKeep use the same curve in their own colors. Every list on this site can tell you who voted and how the mash was built.</p>
+        <p>Ball Keep is a house of boards. The Keep is Superflex dynasty, the full ranked tape, forty tapes. The Board is redraft PPR for this year. The Fence mixes Superflex skill names with IDP. BaseKeep, BasketKeep, and PitchKeep use the same curve in their own colors. Every list on this site can tell you who voted and how the mash was built.</p>
         <p>A Super Aggregate is a split vote. Half belongs to the long boards, the published tapes that actually go 300, 400, 500 names deep. The other half belongs to every other list that ranked that player. A short board still moves the names it printed. A name a short list never published keeps the long-core mean. That is how a 40-board mash stays honest when half the industry only ranks 80 people.</p>
         <p>On The Keep the long core is Pro Football Network, Dynasty Nerds, FantasyPros Superflex ECR, and KeepTradeCut. On The Board the long core is Field Yates, FantasyPros PPR ECR, and Eric Karabell. Weekly skill boards give half the chair to FantasyPros ECR. DST and kickers name their own long cores on the page. Each board prints the catalog at the bottom so you can walk the votes yourself.</p>
       </section>
@@ -112,7 +112,7 @@ def method_article_html() -> str:
         <p class="kicker">The house</p>
         <h2>Where each list lives.</h2>
         <div class="grid-3">
-          <a class="tile" href="the-keep.html"><h3>The Keep</h3><p>Superflex dynasty, top 400, 40 boards.</p></a>
+          <a class="tile" href="the-keep.html"><h3>The Keep</h3><p>Superflex dynasty, the full ranked tape, 40 boards.</p></a>
           <a class="tile" href="board.html"><h3>The Board</h3><p>Redraft PPR, this year, 40 boards.</p></a>
           <a class="tile" href="the-fence.html"><h3>The Fence</h3><p>Superflex plus IDP on one mixed board.</p></a>
           <a class="tile" href="the-handcuff.html"><h3>The Handcuff</h3><p>RB only. Dynasty list and redraft list.</p></a>

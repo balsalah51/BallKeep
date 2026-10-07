@@ -598,10 +598,10 @@ def load_universe():
     for i, r in enumerate(overall, 1):
         r["bk"] = i
         r["value"] = bk_value(i)
-    keep = overall[:400]
+    keep = overall
     wide = aggregate(sources, meta, min_n=1)
-    lineup = filter_group(wide, {"HIT", "UT"})[:400]
-    pitchers = filter_group(wide, {"SP", "RP", "UT"})[:150]
+    lineup = filter_group(wide, {"HIT", "UT"})
+    pitchers = filter_group(wide, {"SP", "RP", "UT"})
     rps = [r for r in wide if r.get("group") == "RP"]
     saves = list_to_rows(SAVES, rps)
     svh = list_to_rows(SVH, rps)
@@ -614,7 +614,7 @@ def load_universe():
             adj += 8
         redraft.append({**r, "avg": round(adj, 2)})
     redraft.sort(key=lambda r: r["avg"])
-    redraft = redraft[:400]
+    redraft = list(redraft)
     for i, r in enumerate(redraft, 1):
         r["bk"] = i
         r["value"] = bk_value(i)

@@ -9,7 +9,7 @@ THE KEEP - Super Aggregate (40 professional boards)
   public-outlet overlays. Unranked is skipped, never treated as 999.
   If nobody but the long boards ranked him, Super is the long-core mean.
   Eligibility: must appear on at least one long-core board. Draft picks
-  are not players. Then the top 400.
+  are not players. Then the full ranked tape.
 
 THE BOARD - Long tape
   Only the four published long boards. Equal mean, 500 deep.

@@ -161,12 +161,12 @@ def bb_nav_current(href: str, path: str) -> bool:
 BB_SEO = {
     "index.html": (
         "Fantasy Baseball Dynasty Rankings | BaseKeep",
-        "2026 dynasty baseball top 400, redraft, prospects, and BK Value. The Keep, The Diamond, The Farm, and hourly baseball news.",
+        "2026 dynasty baseball full ranked tape, redraft, prospects, and BK Value. The Keep, The Diamond, The Farm, and hourly baseball news.",
         "img/bb-hero.jpg",
     ),
     "the-keep.html": (
-        "2026 Dynasty Baseball Rankings (Top 400) | BaseKeep",
-        "Overall dynasty baseball top 400, rebuilt August 27, 2026. 40-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
+        "2026 Dynasty Baseball Rankings (Full Tape) | BaseKeep",
+        "Overall dynasty baseball full ranked tape, rebuilt August 27, 2026. 40-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
         "img/bb-logo.jpg",
     ),
     "the-lineup.html": (
@@ -191,7 +191,7 @@ BB_SEO = {
     ),
     "the-diamond.html": (
         "The Diamond - 2026 Redraft Baseball Rankings | BaseKeep",
-        "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400.",
+        "The Diamond is BaseKeep's redraft ranking. This-year baseball, the full ranked tape.",
         "img/bb-logo.jpg",
     ),
     "the-farm.html": (
@@ -201,7 +201,7 @@ BB_SEO = {
     ),
     "redraft.html": (
         "The Diamond - 2026 Redraft Baseball Rankings | BaseKeep",
-        "The Diamond is BaseKeep's redraft ranking. This-year baseball top 400.",
+        "The Diamond is BaseKeep's redraft ranking. This-year baseball, the full ranked tape.",
         "img/bb-logo.jpg",
     ),
     "trade.html": (
@@ -216,7 +216,7 @@ BB_SEO = {
     ),
     "players/index.html": (
         "MLB Dynasty Player Files | BaseKeep",
-        "The Keep top 400, one cream card each: 2026/2025 line, every board, tape.",
+        "The full Keep tape, one cream card each: 2026/2025 line, every board, tape.",
         "img/bb-logo.jpg",
     ),
     "the-x.html": (
@@ -329,7 +329,7 @@ BB_ALSO = {
 }
 
 BB_HOME_FAQ = [
-    ("What is BaseKeep?", "BaseKeep is baseball on Ball Keep. The Keep is dynasty overall top 400 from 40 boards. The Diamond is this-year redraft. The Farm is the top 100 prospects. Same BK Value curve as football."),
+    ("What is BaseKeep?", "BaseKeep is baseball on Ball Keep. The Keep is dynasty overall, the full ranked tape, from 40 boards. The Diamond is this-year redraft. The Farm is the top 100 prospects. Same BK Value curve as football."),
     ("How is The Keep ranked?", "Average of every source that ranked the player. Two of the boards run 500 names long."),
     ("Where is the MLB news?", "BK News on this board clusters IL, roster, DFA, and manager tape hourly."),
 ]
@@ -339,7 +339,7 @@ BB_FARM_FAQ = [
     ("What is arrival and path?", "Estimated arrival is the year the name is most likely to stick. Path is the cleanest route to everyday playtime: the job, the blocker, and the level in front of them."),
 ]
 BB_KEEP_FAQ = [
-    ("What is The Keep on BaseKeep?", "Dynasty baseball top 400, rebuilt August 27, 2026. 40-board aggregate including RotoGraphs and The Dynasty Guru."),
+    ("What is The Keep on BaseKeep?", "Dynasty baseball, the full ranked tape, rebuilt August 27, 2026. 40-board aggregate including RotoGraphs and The Dynasty Guru."),
     ("How does BK Value work here?", "Keep rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%."),
     ("Where are hitters and pitchers split?", "The Lineup is bats. BK's Pitchers is arms. Ohtani lives on both sides of that split."),
 ]
@@ -374,7 +374,7 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "bb/"), image=img, brand="BaseKeep", brand_url="https://ballkeep.com/bb/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=40" />
+  <link rel="stylesheet" href="{prefix}css/bb.css?v=41" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
 </head>
 <body{f' class="{esc(body_class)}"' if body_class else ""}>
@@ -454,7 +454,7 @@ def fmt_val(n):
         return ""
 
 
-def home_rank_preview(rows, media, n=8):
+def home_rank_preview(rows, media, n=16):
     items = []
     for r in rows[:n]:
         name = r.get("name") or ""
@@ -1146,7 +1146,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
                 f'<li><a href="../news/{esc(s["slug"])}.html">{esc(s.get("headline") or "Update")}</a> '
                 f'<span class="news-meta">{esc(CATEGORY_LABEL.get(s.get("category") or "", ""))} · '
                 f'{esc(news_when(s.get("updated") or s.get("published") or ""))}</span></li>'
-                for s in news_hits[:5] if s.get("slug")
+                for s in news_hits[:10] if s.get("slug")
             )
             news_block = (
                 '<p class="kicker" style="margin-top:22px">BK News</p>'
@@ -1357,7 +1357,7 @@ def write_player_pages(keep, lineup, pitchers, redraft, news_by_player=None, sav
     hub = f"""
     <p class="kicker">Player Files</p>
     <h1>The Keep, one name at a time</h1>
-    <p class="note">The Keep top 400 plus Farm names who are not on the 400. Headshot, ranks, arrival, and path. Filter the grid.</p>
+    <p class="note">The full Keep tape plus Farm names who are not on it. Headshot, ranks, arrival, and path. Filter the grid.</p>
     {hub_search_bar()}
     {flt}
     <div class="player-grid" id="bb-cards">{''.join(cards)}</div>
@@ -1675,7 +1675,7 @@ def write_baseball_site():
             if key:
                 news_by_player[key].append(story)
 
-    latest_news = stories[:5]
+    latest_news = stories[:10]
     extra_news = ""
     if latest_news:
         extra_news = (
@@ -1703,7 +1703,7 @@ def write_baseball_site():
         <header class="home-snap-head">
           <p class="kicker">The Keep</p>
           <h2>Overall dynasty</h2>
-          <p>Top 400 · {keep_n} boards</p>
+          <p>{len(keep)} names · {keep_n} boards</p>
           <a class="home-snap-link" href="the-keep.html">Full board</a>
         </header>
         {home_rank_preview(keep, media)}
@@ -1727,7 +1727,7 @@ def write_baseball_site():
     ])}
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
         ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, The Diamond."),
-        ("players/index.html", "Player Files", "Keep top 400."),
+        ("players/index.html", "Player Files", "The full Keep tape."),
     ])}
     {desk_block("tape", "Tape", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "MLB memes. Pictures on the card."),
@@ -1769,7 +1769,7 @@ def write_baseball_site():
     keep_body = f"""
     <p class="kicker">Keystone · Overall Dynasty</p>
     <h1>The Keep</h1>
-    <p class="note">Baseball top 400, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - {len(BB_KEEP_SOURCES)} boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
+    <p class="note">{len(keep)} names, rebuilt {UPDATED}. Ball Keep rank is the average of every source that ranked the player - {len(BB_KEEP_SOURCES)} boards, two of them 500 names long. Every row has a headshot and an age. BK Value uses the same decaying curve as football (12,000 at 1.01).</p>
     {rank_search_bar(flt)}
     <div class="panel">{rank_table(keep, ["RG", "TDG", "Avg", "# Boards", "BK Value"], val_cell, media=media, faces=True, show_age=True)}</div>
     {value_bars(keep, 12, "#1f6b3a", "Keep value graph")}
@@ -1784,7 +1784,7 @@ def write_baseball_site():
                 "https://ballkeep.com/bb/the-keep.html",
                 keep,
                 lambda r: f"https://ballkeep.com/bb/players/{slugify(r['name'])}.html",
-                description="Dynasty baseball top 400 from 40 boards.",
+                description="Dynasty baseball full ranked tape from 40 boards.",
             ),
             faq_jsonld(BB_KEEP_FAQ),
         ],

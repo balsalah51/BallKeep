@@ -279,7 +279,7 @@ def llms_txt() -> str:
 Site: https://ballkeep.com
 
 ## Football (Ball Keep)
-- Superflex dynasty top 400: https://ballkeep.com/the-keep.html
+- Superflex dynasty full ranked tape: https://ballkeep.com/the-keep.html
 - Redraft PPR: https://ballkeep.com/board.html
 - Best Ball: https://ballkeep.com/best-ball.html
 - Superflex + IDP: https://ballkeep.com/the-fence.html
@@ -300,12 +300,12 @@ Site: https://ballkeep.com
 - Week 1 archive: https://ballkeep.com/archive/week1/
 
 ## Baseball (BaseKeep)
-- Dynasty top 400: https://ballkeep.com/bb/
+- Dynasty full ranked tape: https://ballkeep.com/bb/
 - The Farm prospects: https://ballkeep.com/bb/the-farm.html
 - News: https://ballkeep.com/bb/news.html
 
 ## Basketball (BasketKeep)
-- Dynasty top 400: https://ballkeep.com/bk/
+- Dynasty full ranked tape: https://ballkeep.com/bk/
 - News: https://ballkeep.com/bk/news.html
 
 ## Premier League (PitchKeep)
@@ -898,7 +898,7 @@ def related_players_html(
             if r.get(id_key) not in shown and _team0(r.get(team_key) or "") == team
         ]
         cands.sort(key=lambda r: abs(_rank_int(r, rank_key) - crk))
-        teammates = cands[:5]
+        teammates = cands[:10]
         for r in teammates:
             if r.get(id_key):
                 shown.add(r.get(id_key))
@@ -912,7 +912,7 @@ def related_players_html(
             if r.get(id_key) not in shown and _pos0(r.get(pos_key) or "") == pos
         ]
         cands.sort(key=lambda r: abs(_rank_int(r, rank_key) - crk))
-        same = cands[:5]
+        same = cands[:10]
         if same:
             sections.append((pos_label, same))
 

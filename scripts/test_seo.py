@@ -418,7 +418,7 @@ def test_best_ball_boards():
 def test_best_ball_mash():
     from build_site import best_ball_list
     rows = best_ball_list()
-    assert len(rows) == 200
+    assert len(rows) == 480
     assert rows[0]["name"] in {
         "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
         "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",
@@ -607,11 +607,11 @@ def test_fence_idp_board():
     assert len(FENCE_SOURCES) == 20
     assert len(FENCE_MIXED_SOURCES) == 10
     idp = idp_only_board()
-    assert len(idp) == 200
+    assert len(idp) == 330
     assert idp[0]["name"] == "Aidan Hutchinson"
     assert idp[0]["pos"] == "DL"
     fence = fence_board()
-    assert len(fence) == 400
+    assert len(fence) >= 400
     assert fence[0]["name"] in {"Drake Maye", "Josh Allen"}
     assert fence[0]["bk"] == 1
     assert fence[0]["pos"] == "QB"
@@ -952,7 +952,7 @@ def test_two_clocks_article():
     assert "desk" not in html.lower()
     assert "looking at" not in html
     assert "the-split.html" not in html
-    assert "trade.html" in html
+    assert "The Split" not in html
     assert "2026" in html
     assert "two-clocks.html" in clocks_teaser()
     assert "A closing that sounds like a person" not in html

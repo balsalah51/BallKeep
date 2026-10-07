@@ -1,4 +1,4 @@
-"""Two Clocks: the essay that belongs with The Keep and The Board."""
+"""Two Clocks: Keep years against Board Sundays."""
 from __future__ import annotations
 
 from seo import (
@@ -11,8 +11,8 @@ from seo import (
 HEADLINE = "A room has two clocks, and most sites only wind one of them."
 DEK = (
     "Dynasty money and Sunday money live in the same name and almost never "
-    "agree. The Keep and The Board put both clocks on the table, and Trade "
-    "lets you add the names you actually roster."
+    "agree. The Keep holds the years. The Board holds Sunday. A room has to "
+    "say which year it is actually trying to win."
 )
 PUBLISHED = "2026-09-24T18:00:00Z"
 OG_IMAGE = "img/players/drake-maye.jpg"
@@ -35,7 +35,7 @@ def clocks_teaser():
       <div>
         <p class="k">Articles · Two Clocks · Thursday, Sep 24</p>
         <h2>A room has two clocks. Most sites wind one.</h2>
-        <p>Keep money and Board money on the same name, then a window year for the room you actually roster.</p>
+        <p>Keep money and Board money on the same name. A room has to say which year it is trying to win.</p>
       </div>
     </a>
     """
@@ -47,7 +47,7 @@ def clocks_article_html() -> str:
       <p class="opening-kicker">Articles · Two Clocks · Thursday, September 24, 2026</p>
       <h1>{HEADLINE}</h1>
       <p class="dek">{DEK}</p>
-      <p class="byline">Ball Keep · Filed Thursday while Week 3 was still a card and both clocks were still warm</p>
+      <p class="byline">Ball Keep · Filed Thursday while Week 3 was still a card</p>
 
       <div class="photo-row" aria-label="Faces from both clocks">
         {_shot("drake-maye", "jpg", "Drake Maye")}
@@ -67,7 +67,7 @@ def clocks_article_html() -> str:
 
       <h2>What a Sunday name costs you in years</h2>
       <p>A Sunday name is a player The Board still loves while The Keep is already walking away, which is Derrick Henry for two summers now and Travis Kelce since the first grey hair in the highlight and McCaffrey on the weeks he looks like himself, with a different price on the weeks the cart is in the tunnel. You start those names in 2026 because they still touch the ball in December, and you stop pretending they are a 2028 roster because the body will not sign that contract for you. A rebuilder who offers a late first for a Sunday name is paying you in years for a year you already own, and a contender who offers a young receiver and a 2027 second for a Sunday back who still plays sixty snaps is doing the same trade from the other side of the table, which is only a gift when your roster is already loud in December and you can afford to collect the later clock.</p>
-      <p>The Keep and The Board print that gap as two ranks sitting next to each other, and when Keep rank sits well behind Board rank the name is a Sunday even when the two lists refuse to use the same language. The Board might call him RB2 and The Keep might have him outside the top forty, and both of those chairs can be honest on the same Thursday because one of them is counting this season and the other is counting the ones after it. The plus sign is the argument you used to have to make with your hands.</p>
+      <p>That gap is a plus number, Keep rank minus Board rank, and when the plus number is fat the name is a Sunday even when the two lists refuse to use the same language. The Board might call him RB2 and The Keep might have him outside the top forty, and both of those chairs can be honest on the same Thursday because one of them is counting this season and the other is counting the ones after it. The plus sign is the argument you used to have to make with your hands.</p>
 
       <figure>
         <div class="photo-pair">
@@ -78,7 +78,7 @@ def clocks_article_html() -> str:
       </figure>
 
       <h2>What a years name costs you on Sunday</h2>
-      <p>A years name is a player The Keep still pays while The Board has already started to shrug, which was Maye after the ugly opener and is becoming Tetairoa McMillan now that Carolina hung 34 and Sunday has begun to catch the name the long boards were already carrying. Ashton Jeanty and Jeremiyah Love live here on purpose. You hold them through a quiet September because the clock you bought was 2028, and you sit them on a weekly board that has already found a veteran with a better script this week, and that sitting is the tax a dynasty room agreed to pay when it spent a first on a birthday instead of a snap count. The people who refuse the tax start selling years for a stream, and those are the deals Trade is built to catch while the chat is still congratulating itself.</p>
+      <p>A years name is a player The Keep still pays while The Board has already started to shrug, which was Maye after the ugly opener and is becoming Tetairoa McMillan now that Carolina hung 34 and Sunday has begun to catch the name the long boards were already carrying. Ashton Jeanty and Jeremiyah Love live here on purpose. You hold them through a quiet September because the clock you bought was 2028, and you sit them on a weekly board that has already found a veteran with a better script this week, and that sitting is the tax a dynasty room agreed to pay when it spent a first on a birthday instead of a snap count. The people who refuse the tax start selling years for a stream, and those are the deals a room regrets while the chat is still congratulating itself.</p>
       <p>The minus gap is the years sign, Keep rank better than Board rank, and you need both chairs in front of you or you will trade the wrong one. QB2 on The Keep next to QB8 on The Board is a Superflex sentence about a passer you are supposed to keep through the ugly weeks. RB4 on The Keep next to RB18 on The Board is a rebuild sentence about a back the Sunday rooms have already replaced. The two numbers together are the thing a person can say at a table without flipping between tabs.</p>
 
       <h2>The window year is the sentence a room writes</h2>
@@ -91,16 +91,16 @@ def clocks_article_html() -> str:
         {_shot("brock-bowers", "jpg", "Brock Bowers")}
         {_shot("caleb-williams", "jpg", "Caleb Williams")}
       </div>
-      <p class="photo-cap">Maye, Jeanty, Bowers, Williams. A sample 2028 room if you want to see the later clock light up. A 2026 room looks like a December roster, and you can add both on Trade.</p>
+      <p class="photo-cap">Maye, Jeanty, Bowers, Williams. A 2028 room, if the later clock is the one you meant to buy. A 2026 room looks like a December roster: the names that still touch the ball this year, and almost nobody younger.</p>
 
       <h2>How to use it on a Thursday</h2>
-      <p>Go to <a href="trade.html">Trade</a>, search the names you actually start, and let Keep money and Board money sit next to each other before you send a name out of the room. A room full of Board darlings that was about to trade McCaffrey for a 2027 first and a dart is a club trying to win this season, and you were about to sell the season. A room full of Keep darlings that was about to spend a first on a 29-year-old tight end because he scored twice is the same warning from the other direction. The lucky middle is the room that still has years and still has a chance, which is also the dangerous middle, because the chat can talk it into either one before Thursday is over.</p>
-      <p>The Keep and The Board are the public argument, sorted by the names the two clocks disagree on the most, and they will move when the Super Aggregate rebuilds because Thursday is a fine day to admit that a week just ended and another one is already asking for a start list. The chairs stay on the names. RB2 on The Board next to RB14 on The Keep is a sentence you can say at a table without counting on your fingers.</p>
+      <p>Open <a href="the-keep.html">The Keep</a> and <a href="board.html">The Board</a> on the names you actually start, and let the two totals sit next to the year before you send a name out of the room. A roster that was about to trade McCaffrey for a 2027 first and a dart is a 2026 club trying to win this season, and selling the season is the mistake. A first you were about to spend on a 29-year-old tight end because he scored twice is the same warning from the other direction, a 2028 room paying Sunday prices. The middle is the lucky room and also the dangerous room, because that is when a club still has years and still has a chance and the chat can talk it into either one before Thursday is over.</p>
+      <p>The chairs stay on the names. RB2 on The Board next to RB14 on The Keep is a sentence you can say at a table without counting on your fingers. The lists move when The Keep and The Board rebuild, because the Super Aggregate is alive and Thursday is a fine day to admit that a week just ended and another one is already asking for a start list.</p>
 
       <h2>The year you already knew</h2>
-      <p>I keep a private list of deals that only looked fair on one clock: the Maye sale after three picks, the Henry buy after a 44-yard race, the first-round pick that turned into a tight end who will be 31 when the pick would have been a player. Those deals all had a number and they were missing a year. The Keep and The Board are the pages that print the two years. Trade is the page that adds them. This essay is the reminder that you already knew the year when you sat still long enough, and that a website owes you the sitting instead of another single price pretending to be the whole sport.</p>
+      <p>I keep a private list of deals that only looked fair on one clock: the Maye sale after three picks, the Henry buy after a 44-yard race, the first-round pick that turned into a tight end who will be 31 when the pick would have been a player. Those deals all had a number and they were missing a year. This essay is the reminder that you already knew the year when you sat still long enough, and that a website owes you the sitting instead of another single price pretending to be the whole sport.</p>
       <p>The Keep and The Board still hold the mash, Weekly still holds the stream, and The Method still has the address if a rank needs a letter. This page is for the manager who is tired of translating dynasty into redraft in his head while the chat is already moving, which is every manager I have ever liked.</p>
-      <p class="sources">The clocks are The Keep Super Aggregate and The Board Super Aggregate, rebuilt September 24. Rank 1 is 12,000 BK Value on each list. Add the names on <a href="trade.html">Trade</a>. The long-term argument still lives on <a href="the-long-game.html">The Long Game</a>. Week 2 still has a full tape on <a href="week2-tape.html">The Second Sunday</a>.</p>
+      <p class="sources">The clocks are The Keep Super Aggregate and The Board Super Aggregate, rebuilt September 24. Rank 1 is 12,000 BK Value on each list. The long-term argument still lives on <a href="the-long-game.html">The Long Game</a>. Week 2 still has a full tape on <a href="week2-tape.html">The Second Sunday</a>.</p>
     </article>
     """
 
