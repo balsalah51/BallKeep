@@ -16,8 +16,9 @@ from aggregate_protocol import apply_rank_drops, blend_maps, remap, super_avg  #
 from bk_curve import bk_value  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-FENCE_N = 200
-FENCE_MIXED_N = 400
+# Safety ceilings above the real IDP and mixed tapes.
+FENCE_N = 2000
+FENCE_MIXED_N = 2000
 IDP_POS = {"DL", "LB", "DB", "DE", "DT", "CB", "S"}
 
 IDP_LONG = (

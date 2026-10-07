@@ -194,11 +194,12 @@ def display_name(e):
 
 
 POS = {1: "GKP", 2: "DEF", 3: "MID", 4: "FWD"}
-PITCH_N = 400
-FWD_N = 100
-MID_N = 150
-DEF_N = 120
-GKP_N = 50
+# Safety ceilings above the scored Premier League tape.
+PITCH_N = 2000
+FWD_N = 2000
+MID_N = 2000
+DEF_N = 2000
+GKP_N = 2000
 
 
 def sleeper_bpl_points(p) -> float:

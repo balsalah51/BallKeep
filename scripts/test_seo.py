@@ -418,7 +418,7 @@ def test_best_ball_boards():
 def test_best_ball_mash():
     from build_site import best_ball_list
     rows = best_ball_list()
-    assert len(rows) == 200
+    assert len(rows) == 480
     assert rows[0]["name"] in {
         "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
         "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",
@@ -603,11 +603,11 @@ def test_fence_idp_board():
     assert len(FENCE_SOURCES) == 20
     assert len(FENCE_MIXED_SOURCES) == 10
     idp = idp_only_board()
-    assert len(idp) == 200
+    assert len(idp) == 330
     assert idp[0]["name"] == "Aidan Hutchinson"
     assert idp[0]["pos"] == "DL"
     fence = fence_board()
-    assert len(fence) == 400
+    assert len(fence) == 976
     assert fence[0]["name"] == "Josh Allen"
     assert fence[0]["bk"] == 1
     assert fence[0]["pos"] == "QB"
@@ -1059,7 +1059,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=75" in doc
+    assert "css/site.css?v=76" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
 

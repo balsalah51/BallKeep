@@ -1127,7 +1127,7 @@ def redraft_board(keep):
         scored.append((adj, r))
     scored.sort(key=lambda x: (x[0], x[1]["name"]))
     out = []
-    for i, (_s, r) in enumerate(scored[:250], 1):
+    for i, (_s, r) in enumerate(scored, 1):
         row = dict(r)
         row["bk"] = i
         row["value"] = bk_value(i)
@@ -1265,7 +1265,7 @@ PICKS = [
 def load_universe():
     meta, order = unique_universe()
     sources = build_sources(meta, order)
-    keep = aggregate(sources, meta, min_n=1)[:400]
+    keep = aggregate(sources, meta, min_n=1)
     guards = filter_group(keep, {"G"})
     wings = filter_group(keep, {"F"})
     bigs = filter_group(keep, {"C"})
