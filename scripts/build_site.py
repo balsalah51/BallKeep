@@ -953,7 +953,7 @@ NAV_GROUPS = [
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 76
+CSS_VER = 77
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -2950,9 +2950,9 @@ def render_player_pages(profiles):
         {chip_html}
       </div>
     </div>
+    {usage_html(p["name"], p.get("pos") or "")}
     {ff_facts(p, college, is_rook)}
     {ff_rank_cards(p)}
-    {usage_html(p["name"])}
     {take_html("The tape", copy.get("grafs") or [], limit=2)}
     {plusminus_html(plus, minus)}
     {rank_spread_graph(p.get("ranks") or {}, fill="#c8102e")}
@@ -3020,7 +3020,7 @@ def render_player_pages(profiles):
     hub = f"""
     <p class="kicker">Depth Chart · {UPDATED}</p>
     <h1>Player Pages</h1>
-    <p class="note">The full Keep tape, The Board (redraft PPR), Superflex redraft, 2026 rookies, and Hot 'n' Cold. Ranks, board dump, tape. Filter by name or position.</p>
+    <p class="note">The full Keep tape, The Board (redraft PPR), Superflex redraft, 2026 rookies, and Hot 'n' Cold. Ranks, yearly and game-by-game stats, board dump, tape. Filter by name or position.</p>
     {hub_search_bar()}
     <p class="note">Position</p>
     <div class="filters" id="hub-pos"><button type="button" class="active" data-pos="all">All</button>
