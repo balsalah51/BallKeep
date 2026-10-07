@@ -261,8 +261,10 @@ def main():
     assert "home-hero" in home
     assert "the-inheritance.html" not in home
     assert "next-chair.html" not in home
+    assert "the-split.html" not in home
     assert "The Inheritance" not in home
     assert "The Next Chair" not in home
+    assert "The Split" not in home
     assert "Superflex dynasty" in home
     assert "Redraft PPR" in home
     assert "Dynasty · Redraft" in home
@@ -356,8 +358,8 @@ def main():
     assert "the-x.html" in tape
     assert "the-fence.html" not in tape
     assert 'href="trade.html"' in tools
-    assert "the-split.html" in tools
-    assert "The Split" in tools
+    assert "the-split.html" not in tools
+    assert "The Split" not in tools
     assert "the-inheritance.html" not in tools
     assert "The Inheritance" not in tools
     assert "the-handcuff.html" in tools
@@ -437,7 +439,9 @@ def main():
     assert "Two Clocks" in articles
     assert "next-chair.html" not in articles
     assert "The Next Chair" not in articles
-    assert "the-split.html" in articles or "the-split.html" in html_of("two-clocks.html")
+    assert "the-split.html" not in articles
+    assert "the-split.html" not in html_of("two-clocks.html")
+    assert "The Split" not in html_of("two-clocks.html")
     assert "week2-tape.html" in articles
     assert "The Second Sunday" in articles
     assert "week2-ledger.html" in articles
@@ -456,16 +460,10 @@ def main():
     assert "desk" not in ledger.lower()
     clocks = html_of("two-clocks.html")
     assert "A room has two clocks, and most sites only wind one of them." in clocks
-    assert "the-split.html" in clocks
+    assert "the-split.html" not in clocks
+    assert "The Split" not in clocks
     assert "\u2014" not in clocks
     assert "desk" not in clocks.lower()
-    split = html_of("the-split.html")
-    assert "<h1>The Split</h1>" in split
-    assert "split-app" in split
-    assert "js/split.js" in split
-    assert "Keep chair" in split
-    assert "Window" in split
-    assert "\u2014" not in split
     handcuff = html_of("the-handcuff.html")
     assert "<h1>The Handcuff</h1>" in handcuff
     assert "handcuff-app" in handcuff
@@ -857,8 +855,11 @@ def main():
     assert not (root / "the-ones.html").exists()
     assert not (root / "the-inheritance.html").exists()
     assert not (root / "next-chair.html").exists()
+    assert not (root / "the-split.html").exists()
     assert not (root / "js/inherit.js").exists()
+    assert not (root / "js/split.js").exists()
     assert not (root / "data/inherit-lookup.json").exists()
+    assert not (root / "data/split-lookup.json").exists()
     assert 'href="discord.html"' not in html_of("the-keep.html")
 
     rank_pages = (
@@ -879,7 +880,6 @@ def main():
         "weekly-qb.html",
         "waiver.html",
         "adp.html",
-        "the-split.html",
         "the-handcuff.html",
         "the-fence.html",
         "touches.html",
