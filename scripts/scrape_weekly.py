@@ -309,9 +309,11 @@ def _usage_from_sleeper(players, stats) -> dict:
             "rush_att": st.get("rush_att"),
             "rush_yd": st.get("rush_yd"),
             "rush_td": st.get("rush_td"),
+            "pass_cmp": st.get("pass_cmp"),
             "pass_att": st.get("pass_att"),
             "pass_yd": st.get("pass_yd"),
             "pass_td": st.get("pass_td"),
+            "pass_int": st.get("pass_int"),
             "pts_ppr": st.get("pts_ppr"),
         }
     return out
@@ -387,6 +389,137 @@ def scrape_sleeper_usage(week: int) -> None:
         r["rank"] = i
     print(f"  sleeper/rotowire proj n={len(uniq)} top={[r['name'] for r in uniq[:3]]}")
     dump("rw-proj", {"week": week, "source": "RotoWire via Sleeper", "players": uniq})
+    scrape_past_seasons(players)
+    scrape_game_logs(players, 2026)
+
+
+COUNT_KEYS = (
+    "gp", "gs", "off_snp", "tm_off_snp",
+    "rec_tgt", "rec", "rec_yd", "rec_td",
+    "rush_att", "rush_yd", "rush_td",
+    "pass_cmp", "pass_att", "pass_yd", "pass_td", "pass_int",
+    "pts_ppr",
+)
+
+
+def _count(st, key):
+    v = (st or {}).get(key)
+    if v is None:
+        return None
+    try:
+        n = float(v)
+    except (TypeError, ValueError):
+        return None
+    if key == "pts_ppr":
+        return round(n, 1)
+    if n == int(n):
+        return int(n)
+    return round(n, 1)
+
+
+def _played(st) -> bool:
+    if not isinstance(st, dict):
+        return False
+    for key in ("off_snp", "rush_att", "rec_tgt", "pass_att"):
+        try:
+            if float(st.get(key) or 0) > 0:
+                return True
+        except (TypeError, ValueError):
+            continue
+    return False
+
+
+def scrape_past_seasons(players, seasons=(2023, 2024)) -> None:
+    """Season totals for the yearly table. 2025 and 2026 are written above."""
+    for season in seasons:
+        url = f"https://api.sleeper.app/v1/stats/nfl/regular/{season}"
+        print(f"fetch sleeper season {season}")
+        try:
+            stats = fetch_json(url)
+        except Exception as exc:
+            print(f"  skip season {season}: {type(exc).__name__}: {exc}")
+            continue
+        built = _usage_from_sleeper(players, stats)
+        if not built:
+            print(f"  season {season} empty, left the file alone")
+            continue
+        print(f"  season {season} n={len(built)}")
+        dump(f"usage-{season}", {"season": season, "players": built})
+
+
+def scrape_game_logs(players, season: int = 2026, last_week: int | None = None) -> None:
+    """Week-by-week regular-season lines for player pages."""
+    if last_week is None:
+        try:
+            state = fetch_json("https://api.sleeper.app/v1/state/nfl")
+            last_week = int(state.get("week") or current_week())
+        except Exception as exc:
+            print(f"  sleeper state skipped: {type(exc).__name__}: {exc}")
+            last_week = current_week()
+    last_week = min(18, max(1, int(last_week)))
+    week_stats = {}
+    weeks = []
+    for week in range(1, last_week + 1):
+        url = f"https://api.sleeper.app/v1/stats/nfl/regular/{season}/{week}"
+        print(f"fetch sleeper week {season}/{week}")
+        try:
+            stats = fetch_json(url)
+        except Exception as exc:
+            print(f"  skip week {week}: {type(exc).__name__}: {exc}")
+            break
+        played = 0
+        for pid, st in (stats or {}).items():
+            if str(pid).isdigit() and _played(st):
+                played += 1
+        print(f"  week {week} played={played}")
+        # Sleeper rolls the week before that slate has a box score.
+        if played < 80:
+            continue
+        weeks.append(week)
+        week_stats[week] = stats
+    if not weeks:
+        print("  gamelog skipped, no played weeks")
+        return
+    out = {}
+    for pid, p in (players or {}).items():
+        if not isinstance(p, dict):
+            continue
+        pos = p.get("position") or ""
+        if pos not in {"QB", "RB", "WR", "TE"}:
+            continue
+        name = p.get("full_name") or ""
+        if not name:
+            continue
+        games = []
+        for week in weeks:
+            st = (week_stats.get(week) or {}).get(pid) or {}
+            if not _played(st):
+                continue
+            off = _count(st, "off_snp")
+            tm = _count(st, "tm_off_snp")
+            row = {"week": week}
+            for key in COUNT_KEYS:
+                val = _count(st, key)
+                if val is not None:
+                    row[key] = val
+            if off and tm:
+                row["snap_pct"] = round(100.0 * off / tm, 1)
+            games.append(row)
+        if not games:
+            continue
+        out[name] = {
+            "name": name,
+            "pos": pos,
+            "team": _team(p.get("team") or ""),
+            "games": games,
+        }
+    print(f"  gamelog {season} players={len(out)} weeks={weeks}")
+    dump(f"gamelog-{season}", {
+        "season": season,
+        "through_week": weeks[-1],
+        "weeks": weeks,
+        "players": out,
+    })
 
 
 def scrape_espn_adp() -> None:

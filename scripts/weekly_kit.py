@@ -468,6 +468,105 @@ def usage_index() -> dict:
     return out
 
 
+_SEASON_INDEX: dict[int, dict] = {}
+_GAMELOG = None
+_OPP = None
+
+YEARLY_SEASONS = (2026, 2025, 2024, 2023)
+
+
+def _players_by_norm(stem: str) -> dict:
+    data = _load(stem)
+    out = {}
+    for raw, row in (data.get("players") or {}).items():
+        if isinstance(row, dict):
+            out[_norm(raw)] = row
+    return out
+
+
+def season_usage(season: int, name: str) -> dict | None:
+    if season not in _SEASON_INDEX:
+        _SEASON_INDEX[season] = _players_by_norm(f"usage-{season}")
+    return _SEASON_INDEX[season].get(_norm(name))
+
+
+def yearly_usage(name: str) -> list[tuple[int, dict]]:
+    rows = []
+    for season in YEARLY_SEASONS:
+        row = season_usage(season, name)
+        if row:
+            rows.append((season, row))
+    return rows
+
+
+def gamelog_bundle() -> dict:
+    global _GAMELOG
+    if _GAMELOG is None:
+        data = _load("gamelog-2026")
+        players = {}
+        for raw, row in (data.get("players") or {}).items():
+            if isinstance(row, dict):
+                players[_norm(raw)] = row
+        _GAMELOG = {
+            "season": int(data.get("season") or 2026),
+            "through_week": int(data.get("through_week") or 0),
+            "players": players,
+        }
+    return _GAMELOG
+
+
+def gamelog_for(name: str) -> dict | None:
+    return gamelog_bundle()["players"].get(_norm(name))
+
+
+def _schedule_opponents() -> dict:
+    """(week, team abbr) -> (ha, opp abbr). ha is '@' or 'vs'."""
+    global _OPP
+    if _OPP is not None:
+        return _OPP
+    name_to_abbr = {name: abbr for name, abbr in DST_TEAMS}
+    opp = {}
+    path = ROOT / "data" / "nfl-schedule.txt"
+    week = None
+    if path.exists():
+        for line in path.read_text(errors="replace").splitlines():
+            wm = re.match(r"WEEK\s+(\d+)", line.strip(), re.I)
+            if wm:
+                week = int(wm.group(1))
+                continue
+            gm = re.match(r"\|\s*(.+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|", line)
+            if not gm or week is None:
+                continue
+            matchup = gm.group(1).strip()
+            if matchup in ("Matchup", "TBD") or "---" in matchup:
+                continue
+            mm = re.match(r"(.+?)\s+(at|vs)\s+(.+?)(?:\s+\((.+)\))?$", matchup)
+            if not mm:
+                continue
+            left, right = mm.group(1).strip(), mm.group(3).strip()
+            away, home = name_to_abbr.get(left), name_to_abbr.get(right)
+            if not away or not home:
+                continue
+            opp[(week, away)] = ("@", home)
+            opp[(week, home)] = ("vs", away)
+    _OPP = opp
+    return opp
+
+
+def opponent_for(team: str, week: int) -> tuple[str, str]:
+    """('@', 'PIT'), ('vs', 'NO'), or ('', 'BYE') when the club is off."""
+    team = (team or "").upper()
+    if not team or not week:
+        return "", ""
+    found = _schedule_opponents().get((int(week), team))
+    if found:
+        return found
+    # A known club with no game that week is on bye. Unknown clubs stay blank.
+    if team in {abbr for _, abbr in DST_TEAMS}:
+        return "", "BYE"
+    return "", ""
+
+
 def sos_rows(nfl_games: list, week: int | None = None) -> list:
     """Remaining schedule vs our season DST board. Higher avg = easier (weaker fantasy DST)."""
     week = week or week_num()

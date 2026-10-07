@@ -1059,9 +1059,44 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=76" in doc
+    assert "css/site.css?v=77" in doc
     assert "the-method.html" in html
     assert "Read The Method" in html
+
+
+def test_player_counting_stats():
+    from weekly_kit import opponent_for, season_usage
+    from weekly_pages import usage_html
+
+    html = usage_html("Bijan Robinson", "RB")
+    assert 'id="player-stats"' in html
+    assert ">Yearly<" in html
+    assert "Game by game" in html
+    for label in ("Yards", "Touches", "Catches", "Targets", "TDs", "Snap %"):
+        assert f"<small>{label}</small>" in html
+    row = season_usage(2026, "Bijan Robinson")
+    assert row
+    yards = int(round(float(row.get("rush_yd") or 0) + float(row.get("rec_yd") or 0)))
+    touches = int(round(float(row.get("rush_att") or 0) + float(row.get("rec") or 0)))
+    assert f"{yards:,}" in html
+    assert f"{touches:,}" in html
+    assert ">2026<" in html and ">2025<" in html
+    assert "@ PIT" in html
+    assert opponent_for("ATL", 1) == ("@", "PIT")
+
+    qb = usage_html("Josh Allen", "QB")
+    assert "Pass yds" in qb
+    assert ">INT<" in qb
+    assert "Game by game" in qb
+    allen = season_usage(2026, "Josh Allen")
+    assert allen and allen.get("pass_yd")
+    assert f"{int(round(float(allen['pass_yd']))):,}" in qb
+
+    page = Path(__file__).resolve().parents[1] / "players" / "bijan-robinson.html"
+    doc = page.read_text()
+    assert 'id="player-stats"' in doc
+    assert doc.find("player-hero") < doc.find('id="player-stats"') < doc.find("rank-grid")
+    assert ">Yearly<" in doc and "Game by game" in doc
 
 
 if __name__ == "__main__":
