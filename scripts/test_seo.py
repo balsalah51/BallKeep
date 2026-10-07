@@ -418,7 +418,7 @@ def test_best_ball_boards():
 def test_best_ball_mash():
     from build_site import best_ball_list
     rows = best_ball_list()
-    assert len(rows) == 480
+    assert len(rows) == 489
     assert rows[0]["name"] in {
         "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
         "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",

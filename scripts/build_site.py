@@ -1456,7 +1456,7 @@ FB_SEO = {
     ),
     "the-fence.html": (
         "2026 Superflex IDP Rankings | The Fence | Ball Keep",
-        "Mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. Josh Allen opens. Hutchinson is first IDP.",
+        "Mixed Superflex + IDP dynasty board. Glossery mixed 725 plus Keep and IDP stitches. The mash opens the board. Hutchinson is first IDP.",
         "img/logo.jpg",
     ),
     "the-method.html": (
@@ -4272,7 +4272,7 @@ def main():
     fence_body = f"""
     <p class="kicker">Dynasty Superflex + IDP · Super Aggregate · {len(FENCE_MIXED_SOURCES)} boards</p>
     <h1>The Fence</h1>
-    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed board that ranked the name. Josh Allen opens the board. Aidan Hutchinson is the first IDP. IDP names (DL, LB, DB) are marked in red so they stand out while you scroll. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
+    <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed board that ranked the name. {fence[0]["name"]} opens the board. Aidan Hutchinson is the first IDP. IDP names (DL, LB, DB) are marked in red so they stand out while you scroll. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
     {rank_search_bar(fence_chips)}
     <div class="panel">{rank_table(fence, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(fence, 12, "#c8102e", "Fence value graph")}

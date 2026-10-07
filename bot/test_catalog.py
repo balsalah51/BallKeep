@@ -56,11 +56,11 @@ def main():
     assert all(any("Smith-Njigba" in n or "Jaxon" in n for n in d["names"]) for d in jsn_deals)
     assert cat.deals_for("sun god") or cat.deals_for("st brown")
     assert len(cat.deals_for("")) >= 20
-    assert len(cat.raw["keep"]) == 571
+    assert len(cat.raw["keep"]) == 572
     assert cat.raw.get("board_format") == "redraft PPR", cat.raw.get("board_format")
-    assert len(cat.raw["board"]) == 480, f"board {len(cat.raw.get('board') or [])}"
+    assert len(cat.raw["board"]) == 489, f"board {len(cat.raw.get('board') or [])}"
     assert cat.raw["board"][0]["name"] == cat.raw["ppr"][0]["name"]
-    assert len(cat.raw.get("sf_redraft") or []) == 596, f"sf_redraft {len(cat.raw.get('sf_redraft') or [])}"
+    assert len(cat.raw.get("sf_redraft") or []) == 600, f"sf_redraft {len(cat.raw.get('sf_redraft') or [])}"
     bb = cat.raw.get("bb_keep") or []
     assert len(bb) == 521, f"bb keep {len(bb)}"
     assert cat.one("ohtani", sport="baseball")["name"] == "Shohei Ohtani"
@@ -139,10 +139,10 @@ def main():
     assert board0.get("yates") or board0.get("fp") or board0.get("karabell"), board0
     assert (board0.get("n") or 0) >= 10, board0
     classic = cat.raw.get("classic") or []
-    assert len(classic) == 480, f"classic {len(classic)}"
+    assert len(classic) == 489, f"classic {len(classic)}"
     assert classic[0].get("bk") == 1
     best_ball = cat.raw.get("best_ball") or []
-    assert len(best_ball) == 480, f"best_ball {len(best_ball)}"
+    assert len(best_ball) == 489, f"best_ball {len(best_ball)}"
     assert best_ball[0].get("name")
     assert best_ball[0].get("bk") == 1
     assert len(cat.raw.get("best_ball_sources") or []) == 40
