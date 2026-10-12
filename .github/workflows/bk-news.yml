@@ -6,9 +6,7 @@ name: BK News hourly
 # conflicts on every open PR.
 
 on:
-  schedule:
-    # 12 minutes past every hour — cheap RSS + a rotating player slice.
-    - cron: "12 * * * *"
+  # Hourly cron is disabled. This workflow runs only when started by hand.
   workflow_dispatch:
     inputs:
       sport:
