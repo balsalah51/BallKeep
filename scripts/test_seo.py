@@ -418,7 +418,7 @@ def test_best_ball_boards():
 def test_best_ball_mash():
     from build_site import best_ball_list
     rows = best_ball_list()
-    assert len(rows) == 480
+    assert len(rows) == 489
     assert rows[0]["name"] in {
         "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
         "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",
@@ -643,7 +643,7 @@ def test_fence_idp_board():
     assert idp[0]["name"] == "Aidan Hutchinson"
     assert idp[0]["pos"] == "DL"
     fence = fence_board()
-    assert len(fence) == 976
+    assert len(fence) == 897
     assert fence[0]["name"] == "Josh Allen"
     assert fence[0]["bk"] == 1
     assert fence[0]["pos"] == "QB"
@@ -680,7 +680,7 @@ def test_weekly_kit():
         weekly_flex,
         waiver_board,
     )
-    assert week_num() == 4
+    assert week_num() == 5
     qb = weekly_board("QB")
     assert qb[0]["name"] == "Josh Allen"
     assert qb[0]["bk"] == 1

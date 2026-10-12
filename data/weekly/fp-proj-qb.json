@@ -1,65 +1,347 @@
 {
-  "week": 4,
+  "week": 5,
   "players": [
     {
       "name": "Josh Allen",
       "team": "BUF",
-      "fpts": 22.9,
+      "fpts": 21.0,
       "rank": 1
     },
     {
-      "name": "Lamar Jackson",
-      "team": "BAL",
-      "fpts": 21.0,
+      "name": "Dak Prescott",
+      "team": "DAL",
+      "fpts": 20.6,
       "rank": 2
     },
     {
-      "name": "Patrick Mahomes II",
-      "team": "KC",
-      "fpts": 19.7,
+      "name": "Jared Goff",
+      "team": "DET",
+      "fpts": 20.3,
       "rank": 3
     },
     {
-      "name": "Trevor Lawrence",
-      "team": "JAX",
-      "fpts": 19.5,
+      "name": "Matthew Stafford",
+      "team": "LAR",
+      "fpts": 19.8,
       "rank": 4
     },
     {
       "name": "Joe Burrow",
       "team": "CIN",
-      "fpts": 19.2,
+      "fpts": 19.5,
       "rank": 5
     },
     {
-      "name": "Tyler Shough",
-      "team": "NO",
-      "fpts": 19.2,
-      "rank": 6
-    },
-    {
-      "name": "Brock Purdy",
-      "team": "SF",
+      "name": "Jacoby Brissett",
+      "team": "ARI",
       "fpts": 19.1,
-      "rank": 7
-    },
-    {
-      "name": "Bryce Young",
-      "team": "CAR",
-      "fpts": 18.8,
-      "rank": 8
-    },
-    {
-      "name": "Kyler Murray",
-      "team": "MIN",
-      "fpts": 18.4,
-      "rank": 9
+      "rank": 6
     },
     {
       "name": "Drake Maye",
       "team": "NE",
-      "fpts": 18.2,
+      "fpts": 18.7,
+      "rank": 7
+    },
+    {
+      "name": "Trevor Lawrence",
+      "team": "JAX",
+      "fpts": 18.3,
+      "rank": 8
+    },
+    {
+      "name": "Brock Purdy",
+      "team": "SF",
+      "fpts": 18.0,
+      "rank": 9
+    },
+    {
+      "name": "Jayden Daniels",
+      "team": "WAS",
+      "fpts": 17.6,
       "rank": 10
+    },
+    {
+      "name": "Bo Nix",
+      "team": "DEN",
+      "fpts": 17.3,
+      "rank": 11
+    },
+    {
+      "name": "Jordan Love",
+      "team": "GB",
+      "fpts": 17.0,
+      "rank": 12
+    },
+    {
+      "name": "C.J. Stroud",
+      "team": "HOU",
+      "fpts": 16.7,
+      "rank": 13
+    },
+    {
+      "name": "Tyler Shough",
+      "team": "NO",
+      "fpts": 16.4,
+      "rank": 14
+    },
+    {
+      "name": "Kyler Murray",
+      "team": "MIN",
+      "fpts": 16.2,
+      "rank": 15
+    },
+    {
+      "name": "Sam Darnold",
+      "team": "SEA",
+      "fpts": 16.0,
+      "rank": 16
+    },
+    {
+      "name": "Jalen Hurts",
+      "team": "PHI",
+      "fpts": 15.9,
+      "rank": 17
+    },
+    {
+      "name": "Aaron Rodgers",
+      "team": "PIT",
+      "fpts": 15.8,
+      "rank": 18
+    },
+    {
+      "name": "Tyson Bagent",
+      "team": "CHI",
+      "fpts": 15.7,
+      "rank": 19
+    },
+    {
+      "name": "Deshaun Watson",
+      "team": "CLE",
+      "fpts": 15.5,
+      "rank": 20
+    },
+    {
+      "name": "Jalon Daniels",
+      "team": "TB",
+      "fpts": 15.4,
+      "rank": 21
+    },
+    {
+      "name": "Kirk Cousins",
+      "team": "LV",
+      "fpts": 15.2,
+      "rank": 22
+    },
+    {
+      "name": "Justin Herbert",
+      "team": "LAC",
+      "fpts": 15.0,
+      "rank": 23
+    },
+    {
+      "name": "Jameis Winston",
+      "team": "NYG",
+      "fpts": 14.9,
+      "rank": 24
+    },
+    {
+      "name": "Michael Penix Jr.",
+      "team": "ATL",
+      "fpts": 14.7,
+      "rank": 25
+    },
+    {
+      "name": "Geno Smith",
+      "team": "NYJ",
+      "fpts": 14.5,
+      "rank": 26
+    },
+    {
+      "name": "Tyler Huntley",
+      "team": "BAL",
+      "fpts": 14.2,
+      "rank": 27
+    },
+    {
+      "name": "Malik Willis",
+      "team": "MIA",
+      "fpts": 13.9,
+      "rank": 28
+    },
+    {
+      "name": "Daniel Jones",
+      "team": "IND",
+      "fpts": 13.6,
+      "rank": 29
+    },
+    {
+      "name": "Cam Ward",
+      "team": "TEN",
+      "fpts": 13.3,
+      "rank": 30
+    },
+    {
+      "name": "Case Keenum",
+      "team": "CHI",
+      "fpts": 1.0,
+      "rank": 31
+    },
+    {
+      "name": "Shedeur Sanders",
+      "team": "CLE",
+      "fpts": 0.9,
+      "rank": 32
+    },
+    {
+      "name": "Carson Wentz",
+      "team": "MIN",
+      "fpts": 0.8,
+      "rank": 33
+    },
+    {
+      "name": "Fernando Mendoza",
+      "team": "LV",
+      "fpts": 0.8,
+      "rank": 34
+    },
+    {
+      "name": "Drew Lock",
+      "team": "SEA",
+      "fpts": 0.7,
+      "rank": 35
+    },
+    {
+      "name": "Cade Klubnik",
+      "team": "NYJ",
+      "fpts": 0.6,
+      "rank": 36
+    },
+    {
+      "name": "Mac Jones",
+      "team": "SF",
+      "fpts": 0.6,
+      "rank": 37
+    },
+    {
+      "name": "Anthony Richardson Sr.",
+      "team": "IND",
+      "fpts": 0.5,
+      "rank": 38
+    },
+    {
+      "name": "Athan Kaliakmanis",
+      "team": "WAS",
+      "fpts": 0.5,
+      "rank": 39
+    },
+    {
+      "name": "Jarrett Stidham",
+      "team": "DEN",
+      "fpts": 0.5,
+      "rank": 40
+    },
+    {
+      "name": "Kyle McCord",
+      "team": "MIA",
+      "fpts": 0.5,
+      "rank": 41
+    },
+    {
+      "name": "Ty Simpson",
+      "team": "LAR",
+      "fpts": 0.5,
+      "rank": 42
+    },
+    {
+      "name": "Davis Mills",
+      "team": "HOU",
+      "fpts": 0.4,
+      "rank": 43
+    },
+    {
+      "name": "J.J. McCarthy",
+      "team": "NYG",
+      "fpts": 0.4,
+      "rank": 44
+    },
+    {
+      "name": "Joe Flacco",
+      "team": "CIN",
+      "fpts": 0.4,
+      "rank": 45
+    },
+    {
+      "name": "Joshua Dobbs",
+      "team": "DET",
+      "fpts": 0.4,
+      "rank": 46
+    },
+    {
+      "name": "Mason Rudolph",
+      "team": "PIT",
+      "fpts": 0.4,
+      "rank": 47
+    },
+    {
+      "name": "Mitchell Trubisky",
+      "team": "TEN",
+      "fpts": 0.4,
+      "rank": 48
+    },
+    {
+      "name": "Sam Howell",
+      "team": "DAL",
+      "fpts": 0.4,
+      "rank": 49
+    },
+    {
+      "name": "Spencer Rattler",
+      "team": "NO",
+      "fpts": 0.4,
+      "rank": 50
+    },
+    {
+      "name": "Tua Tagovailoa",
+      "team": "ATL",
+      "fpts": 0.4,
+      "rank": 51
+    },
+    {
+      "name": "Tyrod Taylor",
+      "team": "GB",
+      "fpts": 0.4,
+      "rank": 52
+    },
+    {
+      "name": "Gardner Minshew II",
+      "team": "ARI",
+      "fpts": 0.3,
+      "rank": 53
+    },
+    {
+      "name": "Tommy DeVito",
+      "team": "NE",
+      "fpts": 0.3,
+      "rank": 54
+    },
+    {
+      "name": "Jimmy Garoppolo",
+      "team": "LAR",
+      "fpts": 0.2,
+      "rank": 55
+    },
+    {
+      "name": "Andy Dalton",
+      "team": "FA",
+      "fpts": 0.1,
+      "rank": 56
+    },
+    {
+      "name": "Tanner McKee",
+      "team": "PHI",
+      "fpts": 0.0,
+      "rank": 57
     }
   ]
 }
