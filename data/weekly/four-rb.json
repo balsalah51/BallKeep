@@ -1,68 +1,75 @@
 {
-  "week": 4,
+  "week": 5,
   "players": [
     {
       "name": "Jahmyr Gibbs",
       "rank": 1,
       "team": "DET",
-      "opp": "@CAR",
-      "sos": 30
+      "opp": "@ARI",
+      "sos": 2
     },
     {
       "name": "Bijan Robinson",
       "rank": 2,
       "team": "ATL",
-      "opp": "@NO",
-      "sos": 7
-    },
-    {
-      "name": "Jonathan Taylor",
-      "rank": 3,
-      "team": "IND",
-      "opp": "@WAS",
-      "sos": 5
-    },
-    {
-      "name": "Christian McCaffrey",
-      "rank": 4,
-      "team": "SF",
-      "opp": "DEN",
-      "sos": 22
-    },
-    {
-      "name": "Kenneth Walker",
-      "rank": 5,
-      "team": "KC",
-      "opp": "@LV",
-      "sos": 16
-    },
-    {
-      "name": "Derrick Henry",
-      "rank": 6,
-      "team": "BAL",
-      "opp": "TEN",
-      "sos": 29
+      "opp": "BAL",
+      "sos": 10
     },
     {
       "name": "Jaylen Warren",
-      "rank": 7,
+      "rank": 3,
       "team": "PIT",
-      "opp": "@CLE",
-      "sos": 6
+      "opp": "IND",
+      "sos": 19
     },
     {
-      "name": "Chase Brown",
-      "rank": 8,
-      "team": "CIN",
-      "opp": "JAX",
+      "name": "Jonathan Taylor",
+      "rank": 4,
+      "team": "IND",
+      "opp": "@PIT",
+      "sos": 22
+    },
+    {
+      "name": "D'Andre Swift",
+      "rank": 5,
+      "team": "CHI",
+      "opp": "@GB",
+      "sos": 32
+    },
+    {
+      "name": "Christian McCaffrey",
+      "rank": 6,
+      "team": "SF",
+      "opp": "@SEA",
       "sos": 18
     },
     {
-      "name": "James Cook",
+      "name": "Kyren Williams",
+      "rank": 7,
+      "team": "LAR",
+      "opp": "BUF",
+      "sos": 29
+    },
+    {
+      "name": "Javonte Williams",
+      "rank": 8,
+      "team": "DAL",
+      "opp": "TB",
+      "sos": 14
+    },
+    {
+      "name": "Chase Brown",
+      "rank": 9,
+      "team": "CIN",
+      "opp": "@MIA",
+      "sos": 30
+    },
+    {
+      "name": "Aaron Jones",
       "rank": 10,
-      "team": "BUF",
-      "opp": "NE",
-      "sos": 25
+      "team": "MIN",
+      "opp": "@NO",
+      "sos": 28
     }
   ]
 }

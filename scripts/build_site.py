@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "October 3, 2026"
-LASTMOD = "2026-10-03"
+UPDATED = "October 12, 2026"
+LASTMOD = "2026-10-12"
 # Safety ceilings above the real tapes. Each published list is every
 # name a long board ranked, which is shorter than these caps.
 KEEP_N = 2000
@@ -1302,8 +1302,8 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "weekly.html": (
-        "Week 4 Fantasy Football Rankings 2026 | Ball Keep",
-        "Week 4 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Oct 3), RotoWire, and 4for4.",
+        "Week 5 Fantasy Football Rankings 2026 | Ball Keep",
+        "Week 5 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Oct 11), FantasyPros projections, and 4for4.",
         "img/logo.jpg",
     ),
     "the-recap.html": (
@@ -1317,23 +1317,23 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "weekly-qb.html": (
-        "Week 4 Fantasy Football QB Rankings 2026 | Ball Keep",
-        "Week 4 quarterback Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 5 Fantasy Football QB Rankings 2026 | Ball Keep",
+        "Week 5 quarterback Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-rb.html": (
-        "Week 4 Fantasy Football RB Rankings 2026 | Ball Keep",
-        "Week 4 running back Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 5 Fantasy Football RB Rankings 2026 | Ball Keep",
+        "Week 5 running back Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-wr.html": (
-        "Week 4 Fantasy Football WR Rankings 2026 | Ball Keep",
-        "Week 4 receiver Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 5 Fantasy Football WR Rankings 2026 | Ball Keep",
+        "Week 5 receiver Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-te.html": (
-        "Week 4 Fantasy Football TE Rankings 2026 | Ball Keep",
-        "Week 4 tight end Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 5 Fantasy Football TE Rankings 2026 | Ball Keep",
+        "Week 5 tight end Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "waiver.html": (
@@ -1534,7 +1534,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Every name a long board ranked, from 40 public boards, rebuilt October 3, 2026 from the live public lists."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Every name a long board ranked, from 40 public boards, rebuilt October 12, 2026 from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
     ("How many boards rank each name?", "At least 10. A two-board average is a coin flip. Short lists stay short for names they already ranked. Thinner names pick up the next ranks those same boards would have given them."),
@@ -3709,7 +3709,7 @@ def main():
     ppr_body = f"""
     <p class="kicker">2026 Redraft · PPR Super Aggregate · {len(PPR_SOURCES)} boards</p>
     <h1>The Board</h1>
-    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {len(ppr)} names. Super Aggregate of {len(PPR_SOURCES)} boards: 50% Yates, FantasyPros PPR ECR, and Karabell, 50% every other board that ranked the name, including Derek Brown and 4for4. Kickers and DST are omitted so this stays a skill-player draft sheet. Proj is this week's RotoWire PPR points. ESPN ADP sits next to the rank. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
+    <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {len(ppr)} names. Super Aggregate of {len(PPR_SOURCES)} boards: 50% Yates, FantasyPros PPR ECR, and Karabell, 50% every other board that ranked the name, including Derek Brown and 4for4. Kickers and DST are omitted so this stays a skill-player draft sheet. Proj is this week's FantasyPros points. ESPN ADP sits next to the rank. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
     {rank_search_bar(board_chips)}
     <div class="panel">{rank_table(ppr, ["Super", "Boards", "Yates", "FP ECR", "Karabell", "Proj", "ESPN ADP", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
