@@ -1,75 +1,68 @@
 {
-  "week": 5,
+  "week": 6,
   "players": [
     {
-      "name": "Jahmyr Gibbs",
-      "rank": 1,
-      "team": "DET",
-      "opp": "@ARI",
-      "sos": 2
-    },
-    {
       "name": "Bijan Robinson",
-      "rank": 2,
+      "rank": 1,
       "team": "ATL",
-      "opp": "BAL",
-      "sos": 10
-    },
-    {
-      "name": "Jaylen Warren",
-      "rank": 3,
-      "team": "PIT",
-      "opp": "IND",
-      "sos": 19
-    },
-    {
-      "name": "Jonathan Taylor",
-      "rank": 4,
-      "team": "IND",
-      "opp": "@PIT",
-      "sos": 22
-    },
-    {
-      "name": "D'Andre Swift",
-      "rank": 5,
-      "team": "CHI",
-      "opp": "@GB",
-      "sos": 32
+      "opp": "CHI",
+      "sos": 23
     },
     {
       "name": "Christian McCaffrey",
-      "rank": 6,
+      "rank": 2,
       "team": "SF",
-      "opp": "@SEA",
-      "sos": 18
+      "opp": "WAS",
+      "sos": 6
+    },
+    {
+      "name": "Jonathan Taylor",
+      "rank": 3,
+      "team": "IND",
+      "opp": "TEN",
+      "sos": 20
+    },
+    {
+      "name": "Kenneth Walker",
+      "rank": 4,
+      "team": "KC",
+      "opp": "LAC",
+      "sos": 24
     },
     {
       "name": "Kyren Williams",
-      "rank": 7,
+      "rank": 5,
       "team": "LAR",
-      "opp": "BUF",
-      "sos": 29
+      "opp": "ARI",
+      "sos": 10
+    },
+    {
+      "name": "James Cook",
+      "rank": 6,
+      "team": "BUF",
+      "opp": "@LV",
+      "sos": 21
+    },
+    {
+      "name": "Derrick Henry",
+      "rank": 7,
+      "team": "BAL",
+      "opp": "@CLE",
+      "sos": 3
     },
     {
       "name": "Javonte Williams",
       "rank": 8,
       "team": "DAL",
-      "opp": "TB",
-      "sos": 14
+      "opp": "@GB",
+      "sos": 29
     },
     {
-      "name": "Chase Brown",
+      "name": "Jaylen Warren",
       "rank": 9,
-      "team": "CIN",
-      "opp": "@MIA",
-      "sos": 30
-    },
-    {
-      "name": "Aaron Jones",
-      "rank": 10,
-      "team": "MIN",
-      "opp": "@NO",
-      "sos": 28
+      "team": "PIT",
+      "opp": "@TB",
+      "sos": 8
     }
   ]
 }

@@ -1,61 +1,68 @@
 {
-  "week": 5,
+  "week": 6,
   "players": [
     {
       "name": "Puka Nacua",
       "rank": 1,
       "team": "LAR",
-      "opp": "BUF",
+      "opp": "ARI",
       "sos": 31
     },
     {
       "name": "Jaxon Smith-Njigba",
       "rank": 2,
       "team": "SEA",
-      "opp": "SF",
-      "sos": 13
-    },
-    {
-      "name": "CeeDee Lamb",
-      "rank": 3,
-      "team": "DAL",
-      "opp": "TB",
-      "sos": 4
+      "opp": "@DEN",
+      "sos": 2
     },
     {
       "name": "Drake London",
-      "rank": 5,
+      "rank": 3,
       "team": "ATL",
-      "opp": "BAL",
-      "sos": 21
+      "opp": "CHI",
+      "sos": 13
+    },
+    {
+      "name": "Christian Watson",
+      "rank": 4,
+      "team": "GB",
+      "opp": "DAL",
+      "sos": 26
+    },
+    {
+      "name": "Mike Evans",
+      "rank": 5,
+      "team": "SF",
+      "opp": "WAS",
+      "sos": 22
+    },
+    {
+      "name": "CeeDee Lamb",
+      "rank": 6,
+      "team": "DAL",
+      "opp": "@GB",
+      "sos": 19
     },
     {
       "name": "Chris Olave",
-      "rank": 6,
+      "rank": 7,
       "team": "NO",
-      "opp": "MIN",
-      "sos": 16
+      "opp": "@NYG",
+      "sos": 12
     },
     {
-      "name": "Michael Wilson",
+      "name": "Davante Adams",
       "rank": 8,
-      "team": "ARI",
-      "opp": "DET",
-      "sos": 29
+      "team": "LAR",
+      "opp": "ARI",
+      "sos": 31
     },
     {
-      "name": "Ja'Marr Chase",
-      "rank": 9,
-      "team": "CIN",
-      "opp": "@MIA",
-      "sos": 1
-    },
-    {
-      "name": "Garrett Wilson",
+      "name": "Matthew Golden",
       "rank": 10,
-      "team": "NYJ",
-      "opp": "CLE",
-      "sos": 28
+      "team": "GB",
+      "opp": "DAL",
+      "sos": 26
     }
   ]
 }

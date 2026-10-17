@@ -329,14 +329,18 @@ def main():
     assert "week3-kickers.html" not in ros_st
     assert "week4-dst.html" not in ros_st
     assert "week4-kickers.html" not in ros_st
+    assert "week5-dst.html" not in ros_st
+    assert "week6-dst.html" not in ros_st
     assert "weekly.html" in week1
     assert "the-recap.html" in week1
-    assert "week4-dst.html" in week1
-    assert "week4-kickers.html" in week1
-    assert "week4-matchups.html" in week1
+    assert "week6-dst.html" in week1
+    assert "week6-kickers.html" in week1
+    assert "week6-matchups.html" in week1
+    assert "week4-dst.html" not in week1
+    assert "week5-dst.html" not in week1
     assert "week2-dst.html" not in week1
     assert "waiver.html" in week1
-    assert "Week 4 Waivers" in week1
+    assert "Week 6 Waivers" in week1
     assert "the-market.html" in week1
     assert "start-sit.html" not in week1
     assert "weekly-check.html" not in week1
@@ -402,9 +406,9 @@ def main():
     assert "\u2014" not in hc
     assert 'class="hc-cold"' in hc
     assert 'class="tile cold"' in hc or "tile cold" in hc
-    assert "Braelon Allen" in hc
-    assert "Ollie Gordon" in hc
-    assert "Into Week 4" in hc
+    assert "Germie Bernard" in hc
+    assert "Dameon Pierce" in hc
+    assert "Into Week 6" in hc
     assert 'href="privacy.html"' in home
     for x_path in ("the-x.html", "bb/the-x.html", "bk/the-x.html", "pl/the-x.html"):
         x_html = html_of(x_path)
@@ -442,6 +446,8 @@ def main():
     assert "the-split.html" not in articles
     assert "the-split.html" not in html_of("two-clocks.html")
     assert "The Split" not in html_of("two-clocks.html")
+    assert "week6-matchups.html" in articles
+    assert "Week 6 Predictions" in articles
     assert "week2-tape.html" in articles
     assert "The Second Sunday" in articles
     assert "week2-ledger.html" in articles
@@ -607,9 +613,36 @@ def main():
     assert "Pick: MIN" in w4_m_html
     assert "Steelers at Browns" in w4_m_html or "Browns 27-24" in w4_m_html
     assert "CLE 27-24" in w4_m_html or "27-24" in w4_m_html
-    assert "Thursday is in" in w4_m_html
+    assert "finished" in w4_m_html.lower() or "The mash closed 11-5" in w4_m_html
+    assert "CLE 27-24" in w4_m_html or "27-24" in w4_m_html
     assert "\u2014" not in w4_m_html
     assert "on a desk" not in w4_m_html
+    w5_dst_html = html_of("week5-dst.html")
+    assert "<h1>Week 5 DST</h1>" in w5_dst_html
+    assert "is 1.01" not in w5_dst_html
+    w5_k_html = html_of("week5-kickers.html")
+    assert "<h1>Week 5 Kickers</h1>" in w5_k_html
+    w5_m_html = html_of("week5-matchups.html")
+    assert "<h1>Week 5 Matchups</h1>" in w5_m_html
+    assert "TB" in w5_m_html and "DAL" in w5_m_html
+    assert "24-16" in w5_m_html
+    assert "10-4-1" in w5_m_html
+    assert "\u2014" not in w5_m_html
+    assert "on a desk" not in w5_m_html
+    w6_dst_html = html_of("week6-dst.html")
+    assert "<h1>Week 6 DST</h1>" in w6_dst_html
+    assert "is 1.01" not in w6_dst_html
+    w6_k_html = html_of("week6-kickers.html")
+    assert "<h1>Week 6 Kickers</h1>" in w6_k_html
+    w6_m_html = html_of("week6-matchups.html")
+    assert "<h1>Week 6 Matchups</h1>" in w6_m_html
+    assert "SEA" in w6_m_html and "DEN" in w6_m_html
+    assert "Pick: JAX" in w6_m_html
+    assert "Pick: SF" in w6_m_html
+    assert "DEN 17-14" in w6_m_html or "17-14" in w6_m_html
+    assert "Thursday is in" in w6_m_html
+    assert "\u2014" not in w6_m_html
+    assert "on a desk" not in w6_m_html
     assert "every other desk" not in w2_m_html
     w1_dst_html = html_of("archive/week1/dst.html")
     assert "<h1>Week 1 DST</h1>" in w1_dst_html
@@ -646,8 +679,8 @@ def main():
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
     assert "the-recap.html" in weekly_html
-    assert "week4-matchups.html" in weekly_html
-    assert "Browns 27-24" in weekly_html
+    assert "week6-matchups.html" in weekly_html
+    assert "Broncos 17-14" in weekly_html
     assert "Seahawks 13, Patriots 10" in weekly_html
     assert "Jahmyr Gibbs" in weekly_html
     opening_html = html_of("archive/week1/opening.html")
@@ -691,8 +724,8 @@ def main():
     assert "ESPN ADP" in adp_html
     assert "Jahmyr Gibbs" in adp_html
     waiver_html = html_of("waiver.html")
-    assert "<h1>Week 4 Waivers</h1>" in waiver_html
-    assert "Braelon Allen" in waiver_html
+    assert "<h1>Week 6 Waivers</h1>" in waiver_html
+    assert "Germie Bernard" in waiver_html or "Dameon Pierce" in waiver_html
     assert "RotoBaller" in waiver_html
     assert "archive/week1" in waiver_html
     w1_w_html = html_of("archive/week1/waivers.html")
