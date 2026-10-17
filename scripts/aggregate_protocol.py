@@ -358,7 +358,6 @@ RANK_DROPS = (
     ("CeeDee Lamb", 2),
 )
 RANK_BUMPS = (
-    ("Drake Maye", 4),
     ("Kenneth Walker", 2),
     ("Brock Purdy", 3),
     ("Jordan Love", 3),

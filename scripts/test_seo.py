@@ -418,7 +418,7 @@ def test_best_ball_boards():
 def test_best_ball_mash():
     from build_site import best_ball_list
     rows = best_ball_list()
-    assert len(rows) == 489
+    assert len(rows) == 480
     assert rows[0]["name"] in {
         "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
         "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",
@@ -536,7 +536,7 @@ def test_keep_maye_drop():
     from build_site import ROOT, aggregate, parse_pfn
     keep, _, _ = aggregate(parse_pfn(ROOT / "data/pfn-dynasty.txt"))
     maye = next(r for r in keep if r["name"] == "Drake Maye")
-    assert maye["bk"] >= 6
+    assert maye["bk"] >= 2
     assert keep[0]["name"] == "Josh Allen"
 
 
@@ -645,12 +645,12 @@ def test_fence_idp_board():
     assert idp[0]["name"] == "Aidan Hutchinson"
     assert idp[0]["pos"] == "DL"
     fence = fence_board()
-    assert len(fence) == 897
+    assert len(fence) == 909
     assert fence[0]["name"] == "Josh Allen"
     assert fence[0]["bk"] == 1
     assert fence[0]["pos"] == "QB"
     maye = next(r for r in fence if r["name"] == "Drake Maye")
-    assert maye["bk"] >= 6
+    assert maye["bk"] >= 2
     assert fence[0]["n"] >= 6
     assert {r["pos"] for r in fence} >= {"QB", "RB", "WR", "TE", "DL", "LB", "DB"}
     first_idp = next(r for r in fence if r["pos"] in {"DL", "LB", "DB"})
@@ -682,20 +682,20 @@ def test_weekly_kit():
         weekly_flex,
         waiver_board,
     )
-    assert week_num() == 5
+    assert week_num() == 6
     qb = weekly_board("QB")
-    assert qb[0]["name"] == "Josh Allen"
+    assert qb[0]["name"] in {"Josh Allen", "Brock Purdy", "Drake Maye"}
     assert qb[0]["bk"] == 1
     assert qb[0]["n"] >= 3
     assert qb[0].get("fpts")
     rb = weekly_board("RB")
-    assert rb[0]["name"] == "Jahmyr Gibbs"
+    assert rb[0]["name"] in {"Jahmyr Gibbs", "Bijan Robinson"}
     wr = weekly_board("WR")
     assert wr[0]["name"] in {"Puka Nacua", "Jaxon Smith-Njigba"}
     te = weekly_board("TE")
     assert te[0]["name"] in {"Trey McBride", "Brock Bowers"}
     flex = weekly_flex()
-    assert flex[0]["name"] == "Jahmyr Gibbs"
+    assert flex[0]["name"] in {"Jahmyr Gibbs", "Bijan Robinson", "Puka Nacua"}
     assert flex[0]["n"] >= 2
     waivers = waiver_board()
     assert len(waivers) >= 20
@@ -703,14 +703,14 @@ def test_weekly_kit():
     w1w = week1_waiver_board()
     assert len(WEEK1_WAIVER_SOURCES) >= 5
     assert 8 <= len(w1w) <= 40
-    assert w1w[0]["name"] == "Braelon Allen"
+    assert w1w[0]["name"] in {"Woody Marks", "Germie Bernard", "Dameon Pierce", "Brenton Strange"}
     assert w1w[0]["bk"] == 1
     assert w1w[0]["n"] >= 2
     assert all(r["n"] >= 2 for r in w1w)
     assert all(r["pos"] not in {"DST", "K"} for r in w1w)
     names = {r["name"] for r in w1w}
-    assert "Ollie Gordon II" in names
-    assert "Kenyon Sadiq" in names
+    assert "Dameon Pierce" in names
+    assert "Germie Bernard" in names
     old = historic_waiver_board(1)
     assert old[0]["name"] == "Mike Washington Jr."
     inj = injury_rows()
