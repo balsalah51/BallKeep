@@ -128,7 +128,7 @@ ARTICLES = [
         "the-market.html",
         "The Market",
         "Tuesday, Sep 15",
-        "Buy low and sell high after Week 1.",
+        "Week 1 buy-low and sell-high names.",
         "Buy the names rooms punished after one ugly night. Sell the names rooms just watched in a carnival.",
         "img/players/puka-nacua.jpg",
         "Puka Nacua",

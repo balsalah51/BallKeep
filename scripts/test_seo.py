@@ -140,15 +140,15 @@ def test_grouped_nav_sections():
 def test_football_nav_keeps_every_link():
     from build_site import NAV, NAV_GROUPS, fb_header_nav, fb_footer_nav
     assert [lab for _h, lab in NAV] == [
-        "Home", "The Keep", "The Board",
-        "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
+        "Home", "Keep · Dynasty SF", "Board · Redraft PPR",
+        "Redraft Superflex", "Classic · Half-PPR", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
-        "Weekly", "The Recap", "Week 6 DST", "Week 6 K", "Week 6 Predictions", "Week 6 Waivers", "The Market", "Injuries",
-        "ADP", "Trade", "The Handcuff", "The Method",
+        "Weekly", "Week 6 DST", "Week 6 K", "Week 6 Predictions", "Week 6 Waivers", "Injuries",
+        "ADP", "Trade", "Handcuff · RB", "The Method",
         "My Team",
-        "Articles", "Touches", "Players", "News", "The X", "Hot 'n' Cold",
+        "Articles", "Week 1 Recap", "Touches", "Players", "News", "The X · Pictures", "Hot 'n' Cold", "The Market",
         "NFL", "MLB", "BPL",
-        "The Fence (IDP)",
+        "Fence · Superflex + IDP",
     ]
     keys = [k for k, _lab, _items in NAV_GROUPS]
     assert keys == ["leads", "ros", "st", "week", "tools", "mine", "tape", "slates", "fence"]
@@ -170,8 +170,8 @@ def test_football_nav_keeps_every_link():
     assert 'href="index.html">Players</a>' in nested
     foot = fb_footer_nav("the-keep.html", 0)
     assert "Home" not in foot
-    assert "The Keep</a>" not in foot
-    assert "The Board" in foot
+    assert "Keep · Dynasty SF</a>" not in foot
+    assert "Board · Redraft PPR" in foot
 
 
 def test_breadcrumbs_and_footer():
@@ -1198,7 +1198,10 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=78" in doc
+    assert "css/site.css?v=79" in doc
+    assert "home-lede" in html
+    assert "Forty public boards" in html
+    assert "Sleeper" in html
     assert "the-method.html" in html
     assert "Read The Method" in html
 

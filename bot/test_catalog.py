@@ -266,7 +266,7 @@ def main():
     assert "The Split" not in home
     assert "Superflex dynasty" in home
     assert "Redraft PPR" in home
-    assert "Dynasty · Redraft" in home
+    assert "40 boards · Superflex · PPR · Sleeper" in home
     assert "Superflex Dynasty · Superflex Redraft" not in home
     assert "Kids pay a tax" not in home
     assert "kids pay a tax" not in home
@@ -331,7 +331,7 @@ def main():
     assert "week5-dst.html" not in ros_st
     assert "week6-dst.html" not in ros_st
     assert "weekly.html" in week1
-    assert "the-recap.html" in week1
+    assert "the-recap.html" not in week1
     assert "week6-dst.html" in week1
     assert "week6-kickers.html" in week1
     assert "week6-matchups.html" in week1
@@ -340,13 +340,15 @@ def main():
     assert "week2-dst.html" not in week1
     assert "waiver.html" in week1
     assert "Week 6 Waivers" in week1
-    assert "the-market.html" in week1
+    assert "the-market.html" not in week1
     assert "start-sit.html" not in week1
     assert "weekly-check.html" not in week1
     assert "sos.html" not in week1
     assert "injuries.html" in week1
     assert "the-fence.html" not in week1
     assert "articles.html" in tape
+    assert "the-recap.html" in tape
+    assert "the-market.html" in tape
     assert "the-long-game.html" in tape
     assert "The Long Game" in tape
     assert "two-clocks.html" in tape
@@ -680,7 +682,6 @@ def main():
     assert "the-recap.html" in weekly_html
     assert "week6-matchups.html" in weekly_html
     assert "Broncos 17-14" in weekly_html
-    assert "Seahawks 13, Patriots 10" in weekly_html
     assert "Bijan Robinson" in weekly_html
     opening_html = html_of("archive/week1/opening.html")
     assert "Seahawks 13, Patriots 10" in opening_html

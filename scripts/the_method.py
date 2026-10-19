@@ -43,8 +43,8 @@ METHOD_FAQ = [
     ),
     (
         "Where do the pictures and news come from?",
-        "Player files carry ESPN headshots and 2025 tape. BK News clusters injury, "
-        "roster, and coach reports every hour from RSS, Google News, X, and YouTube.",
+        "Player files carry pictures for identification and 2025 tape. BK News clusters "
+        "injury, roster, and coach reports from RSS, Google News, X, and YouTube, with links out.",
     ),
     (
         "How do I write the site?",
@@ -100,7 +100,7 @@ def method_article_html() -> str:
       </section>
       <section class="method-grafs">
         <h2>BK Value</h2>
-        <p>Every rank becomes a number. Rank 1 is 12,000. The curve decays on purpose: the drop from 1 to 2 is larger than the drop from 50 to 51. A late first, around rank 28, holds about half of the 1.01. Rank 80 still holds about 29%. Trade math is addition. Two sides are fair when they sit within 8%.</p>
+        <p>Every rank becomes a number on that list's curve. Rank 1 is 12,000. The curve decays on purpose: the drop from 1 to 2 is larger than the drop from 50 to 51. A late first, around rank 28, holds about half of the 1.01. Rank 80 still holds about 29%. Superflex and PPR print different ranks, so the same name prices differently on each calculator. Trade math is addition. Two sides are fair when they sit within 8%.</p>
         <p>Superflex keeps quarterback price. The 1QB calculator taxes passers to 38% of that number. PPR, Classic, and Standard calculators read their own boards. Same curve. Separate chairs.</p>
         <h2>Rest of season and this week</h2>
         <p>The Keep, The Board, Redraft Superflex, The Classic, Standard, Best Ball, Rookies, Top Defenses, Top Kickers, and The Fence are rest-of-season values. Week 6 Weekly, DST, Kickers, Predictions, and Waivers are this week's stream. The Recap is the finished Week 1 essay. The Market is the buy-low and sell-high board after the opener. Finished Week 1 lists live in the archive.</p>
@@ -120,14 +120,14 @@ def method_article_html() -> str:
           <a class="tile" href="weekly.html"><h3>Weekly</h3><p>Week 6 skill start and sit.</p></a>
           <a class="tile" href="week6-matchups.html"><h3>Predictions</h3><p>A published pick on every game.</p></a>
           <a class="tile" href="league.html"><h3>My Team</h3><p>Your Sleeper league, priced on these ranks.</p></a>
-          <a class="tile" href="news.html"><h3>BK News</h3><p>Hourly injury, roster, and coach tape.</p></a>
+          <a class="tile" href="news.html"><h3>BK News</h3><p>Injury, roster, and coach tape with links out.</p></a>
           <a class="tile" href="articles.html"><h3>Articles</h3><p>The long reads, including The Long Game.</p></a>
           <a class="tile" href="discord.html"><h3>Discord</h3><p>Ranks and trades inside a server.</p></a>
         </div>
       </section>
       <section class="method-grafs">
         <h2>The other sports</h2>
-        <p>BaseKeep is dynasty baseball. BasketKeep is dynasty basketball. PitchKeep is Premier League. Each one keeps its own long core and its own palette. The rank-to-value idea stays the same so a trade in March still speaks the same language as a trade in September.</p>
+        <p>Football is the live board this fall. BaseKeep is dynasty baseball. BasketKeep is dynasty basketball. PitchKeep is Premier League. Each one keeps its own long core and its own palette. The rank-to-value idea stays the same so a trade in March still speaks the same language as a trade in September.</p>
       </section>
       <section class="method-write" id="write">
         <p class="kicker">Write</p>

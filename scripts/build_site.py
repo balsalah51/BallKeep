@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "October 17, 2026"
-LASTMOD = "2026-10-17"
+UPDATED = "October 19, 2026"
+LASTMOD = "2026-10-19"
 # Safety ceilings above the real tapes. Each published list is every
 # name a long board ranked, which is shorter than these caps.
 KEEP_N = 2000
@@ -932,58 +932,58 @@ def superflex_redraft(keep, ppr):
 NAV_GROUPS = [
     ("leads", "Boards", [
         ("index.html", "Home"),
-        ("the-keep.html", "The Keep"),
-        ("board.html", "The Board"),
+        ("the-keep.html", "Keep · Dynasty SF"),
+        ("board.html", "Board · Redraft PPR"),
     ]),
-    ("ros", "ROS", [
+    ("ros", "Season", [
         ("redraft-superflex.html", "Redraft Superflex"),
-        ("the-classic.html", "The Classic"),
+        ("the-classic.html", "Classic · Half-PPR"),
         ("redraft-standard.html", "Redraft STD"),
         ("best-ball.html", "Best Ball"),
         ("rookies-2026.html", "2026 Rookies"),
     ]),
-    ("st", "ST", [
+    ("st", "DST / K", [
         ("defenses.html", "The D (DST)"),
         ("kickers.html", "Kickers"),
     ]),
     ("week", "Week 6", [
         ("weekly.html", "Weekly"),
-        ("the-recap.html", "The Recap"),
         ("week6-dst.html", "Week 6 DST"),
         ("week6-kickers.html", "Week 6 K"),
         ("week6-matchups.html", "Week 6 Predictions"),
         ("waiver.html", "Week 6 Waivers"),
-        ("the-market.html", "The Market"),
         ("injuries.html", "Injuries"),
     ]),
     ("tools", "Tools", [
         ("adp.html", "ADP"),
         ("trade.html", "Trade"),
-        ("the-handcuff.html", "The Handcuff"),
+        ("the-handcuff.html", "Handcuff · RB"),
         ("the-method.html", "The Method"),
     ]),
     ("mine", "Yours", [
         ("league.html", "My Team"),
     ]),
-    ("tape", "Tape", [
+    ("tape", "Essays", [
         ("articles.html", "Articles"),
+        ("the-recap.html", "Week 1 Recap"),
         ("touches.html", "Touches"),
         ("players/index.html", "Players"),
         ("news.html", "News"),
-        ("the-x.html", "The X"),
+        ("the-x.html", "The X · Pictures"),
         ("hot-n-cold.html", "Hot 'n' Cold"),
+        ("the-market.html", "The Market"),
     ]),
-    ("slates", "Slates", [
+    ("slates", "Schedules", [
         ("nfl-schedule.html", "NFL"),
         ("mlb-schedule.html", "MLB"),
         ("bpl-schedule.html", "BPL"),
     ]),
-    ("fence", "Fence", [
-        ("the-fence.html", "The Fence (IDP)"),
+    ("fence", "IDP", [
+        ("the-fence.html", "Fence · Superflex + IDP"),
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 78
+CSS_VER = 79
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1220,7 +1220,7 @@ ROOKIE_SOURCES = [
 FB_SEO = {
     "index.html": (
         "Fantasy Football Superflex Dynasty Rankings | Ball Keep",
-        "2026 Superflex dynasty and redraft PPR rankings from 40 boards. BK Value trade calculator, player files, and hourly NFL news.",
+        "2026 Superflex dynasty and redraft PPR rankings from a 40-board Super Aggregate plus Sleeper. BK Value trade calculator and player files.",
         "img/hero.jpg",
     ),
     "the-keep.html": (
@@ -1290,7 +1290,7 @@ FB_SEO = {
     ),
     "news.html": (
         "NFL Injury News and Fantasy Football Wire | Ball Keep",
-        "Hourly football injury, roster, and coach reports clustered from RSS, Google News, X, and YouTube, linked to player files.",
+        "Football injury, roster, and coach reports clustered from RSS, Google News, X, and YouTube, with short snippets and links out to the original stories.",
         "img/logo.jpg",
     ),
     "players/index.html": (
@@ -1304,8 +1304,8 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "mlb-schedule.html": (
-        "MLB September Schedule - Stretch Run | Ball Keep",
-        "September baseball slate on the football boards. Filter by club. Regular season wraps Sunday, Sept. 27, 2026.",
+        "MLB Schedule - Regular Season Wrapped | Ball Keep",
+        "Regular season wrapped Sunday, Sept. 27, 2026. Last September card on the football boards. Filter by club.",
         "img/logo.jpg",
     ),
     "bpl-schedule.html": (
@@ -1576,14 +1576,14 @@ FB_SEO = {
 }
 
 HOME_FAQ = [
-    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 40 boards, the full ranked tape. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
+    ("What is Ball Keep?", "A 40-board Super Aggregate for Superflex dynasty and redraft PPR, with Sleeper so you can load your own team. The Keep is the dynasty list. The Board is this year's PPR list. BK Value prices trades on each board's ranks."),
     ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 6 boards, Weekly, and Week 6 Waivers are this week's stream."),
     ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. IDP names are marked in red."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player."),
-    ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
+    ("What is BK Value?", "Each list turns its own rank into a trade chip on the same decaying curve. Rank 1 on that list is 12,000. Superflex and PPR print different ranks, so the same name prices differently on each calculator. Fair means the two sides are within 8%."),
     ("Where is the method written down?", "The Method. Super Aggregate, BK Value, rest of season versus this week, and how to write the site."),
     ("Where are the essays?", "Articles. The Long Game is the Superflex strategy piece for the years. The Recap, Week 6 Predictions, The Market, and The Method live there too."),
-    ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
+    ("What other sports are on this site?", "Football is the live board this fall. BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
     ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Every name a long board ranked, from 40 public boards, rebuilt October 17, 2026 from the live public lists."),
@@ -1614,8 +1614,8 @@ FENCE_FAQ = [
     ("Why are some names red?", "DL, LB, and DB rows are marked in red so the IDP names stand out while you scroll."),
 ]
 NEWS_FAQ = [
-    ("Where does BK News come from?", "Hourly clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with links back to the original boards and to Keep player files."),
-    ("How often does the wire refresh?", "The scrape runs every hour. New URLs merge into the cluster; the static pages rebuild when the tape moved."),
+    ("Where does BK News come from?", "Clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with short snippets and links out to the original boards, plus Keep player files."),
+    ("How often does the wire refresh?", "This board holds the last clustered scrape, with links out, until the next rebuild."),
     ("Why do stories link to player pages?", "Named Keep, Board, and rookie files sit on the cluster so you can jump from the injury to the rank."),
 ]
 W1_DST_FAQ = [
@@ -1720,7 +1720,7 @@ FB_ALSO = {
     "players/index.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, the full ranked tape."),
         ("board.html", "The Board", "Redraft PPR."),
-        ("news.html", "BK News", "Hourly wire."),
+        ("news.html", "BK News", "Injury and roster tape."),
         ("trade.html", "Trade Calculators", "Price any name."),
     ],
     "the-x.html": [
@@ -1732,7 +1732,7 @@ FB_ALSO = {
     "nfl-schedule.html": [
         ("the-keep.html", "The Keep", "Dynasty ranks by club."),
         ("news.html", "BK News", "Injuries on the slate."),
-        ("mlb-schedule.html", "MLB Schedule", "September baseball."),
+        ("mlb-schedule.html", "MLB Schedule", "Regular season wrapped Sept. 27."),
         ("bpl-schedule.html", "BPL Schedule", "Premier League slate."),
     ],
     "mlb-schedule.html": [
@@ -1745,7 +1745,7 @@ FB_ALSO = {
         ("pl/index.html", "PitchKeep", "Premier League boards."),
         ("pl/the-premier.html", "The Premier", "The full hybrid tape."),
         ("nfl-schedule.html", "NFL Schedule", "Football slate."),
-        ("mlb-schedule.html", "MLB Schedule", "September baseball."),
+        ("mlb-schedule.html", "MLB Schedule", "Regular season wrapped Sept. 27."),
     ],
     "defenses.html": [
         ("week6-dst.html", "Week 6 DST", "This week's stream."),
@@ -1831,7 +1831,7 @@ FB_ALSO = {
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty cuffs and redraft cuffs."),
         ("weekly.html", "Weekly", "Start/sit around the report."),
         ("depth-charts.html", "Depth Charts", "Who is next up."),
-        ("news.html", "BK News", "Hourly wire."),
+        ("news.html", "BK News", "Injury and roster tape."),
         ("week6-matchups.html", "Week 6 Predictions", "A pick for every game."),
     ],
     "depth-charts.html": [
@@ -2044,7 +2044,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
         <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" width="56" height="56" />
         <div>
           <p class="brand-title">{wordmark()}</p>
-          <p>Dynasty · Redraft</p>
+          <p>40 boards · Superflex · PPR · Sleeper</p>
         </div>
       </a>
       {fb_header_nav(path, depth)}
@@ -2055,7 +2055,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
     <footer>
       <div class="footer-mast">
         <p class="footer-mark">{wordmark()}</p>
-        <p>Super Aggregates · BK Value · hourly wire</p>
+        <p>40-board Super Aggregate · BK Value · Sleeper</p>
       </div>
       <p class="footer-copy">© {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Independent of the NFL, MLB, NBA, and Premier League.</p>
       {foot}
@@ -2325,12 +2325,7 @@ def seed_player_pages():
 
 
 def home_week_faces():
-    """Faces and the recap teaser so the home week block feels like a room."""
-    from the_long_game import long_game_teaser
-    from the_recap import recap_teaser
-    from two_clocks import clocks_teaser
-    from week2_ledger import ledger_teaser
-    from week2_tape import tape_teaser
+    """Faces and the live Week 6 teaser so the home week block stays current."""
     from week6_predictions import predictions_teaser
     shots = [
         ("jaxon-smith-njigba", "jpg", "Jaxon Smith-Njigba"),
@@ -2349,11 +2344,6 @@ def home_week_faces():
     )
     return (
         predictions_teaser()
-        + clocks_teaser()
-        + tape_teaser()
-        + ledger_teaser()
-        + long_game_teaser()
-        + recap_teaser()
         + f'<div class="home-faces" aria-label="Faces from Week 6">{pics}</div>'
     )
 
@@ -2411,8 +2401,8 @@ def home_body_html(keep, board, media, stories=None):
             '<section class="desk-block tape home-wire">'
             '<div class="home-sec-head">'
             '<p class="kicker">BK News</p>'
-            "<h2>The hourly wire.</h2>"
-            '<p class="note">Injuries, roster, and coach tape clustered every hour.</p>'
+            "<h2>The clustered wire.</h2>"
+            '<p class="note">Injuries, roster, and coach tape with short snippets and links out to the original stories.</p>'
             "</div>"
             f"{news_block}"
             "</section>"
@@ -2424,6 +2414,7 @@ def home_body_html(keep, board, media, stories=None):
         {sr_h1("Fantasy Football Superflex Dynasty Rankings")}
         <p class="home-eyebrow">Updated {UPDATED} · Superflex dynasty · Redraft PPR</p>
         <p class="home-mark">{wordmark()}</p>
+        <p class="home-lede">Forty public boards mashed into one Super Aggregate, plus Sleeper so you can price the roster you already have.</p>
         <div class="home-ctas">
           <a class="cta" href="the-keep.html">The Keep</a>
           <a class="cta alt" href="board.html">The Board</a>
@@ -2463,13 +2454,11 @@ def home_body_html(keep, board, media, stories=None):
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, the full ranked tape."),
     ])}
     {desk_block("week", "Week 6", "This week's stream.", "Weekly boards, matchups, and the waiver mash after the fifth Sunday. Rest-of-season values live in the blocks above.", [
-        ("the-recap.html", "The Recap", "Sixteen scores. Chicago 59. Walker 173. Seahawks 13, Patriots 10."),
         ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
         ("week6-dst.html", "Week 6 DST", "This week's stream."),
         ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
         ("week6-matchups.html", "Week 6 Predictions", "A pick for every game, plus the full essay."),
         ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
-        ("the-market.html", "The Market", "Buy low, sell high after Week 1."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ], extra=home_week_faces())}
     {desk_block("mine", "Yours", "Put in your own team.", "Load your Sleeper league. BK Value on every roster.", [
@@ -2483,27 +2472,28 @@ def home_body_html(keep, board, media, stories=None):
         ("depth-charts.html", "Depth Charts", "32 clubs."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ])}
-    {desk_block("tape", "Tape", "The non-ranking lists.", "The essays, the market notes, the player files, and the pictures.", [
+    {desk_block("tape", "Essays", "The non-ranking lists.", "The essays, the market notes, the player files, and the pictures.", [
         ("articles.html", "Articles", "The long reads. Strategy and the week."),
+        ("the-recap.html", "Week 1 Recap", "Sixteen scores from the opener. Chicago scored 59. Walker ran for 173."),
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells into Week 6."),
-        ("the-market.html", "The Market", "Buy low, sell high."),
+        ("the-market.html", "The Market", "Week 1 buy-low and sell-high names."),
         ("players/index.html", "Player Pages", "The full Keep tape. Tape, plus/minus."),
         ("the-x.html", "The X", "Memes. Pictures on the card."),
         ("news.html", "BK News", "Injuries, roster, coaches."),
     ])}
-    {desk_block("slates", "Slates", "The schedules.", "Football, baseball, and the Premier League.", [
+    {desk_block("slates", "Schedules", "The schedules.", "Football is the live board this fall. Baseball and Premier League keep their own slates.", [
         ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
-        ("mlb-schedule.html", "MLB Schedule", "September slate."),
+        ("mlb-schedule.html", "MLB Schedule", "Regular season wrapped Sept. 27."),
         ("bpl-schedule.html", "BPL Schedule", "2026/27 Premier League."),
     ])}
     <ul class="home-proof">
       <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
       <li><strong>{board_n}</strong><span>redraft boards</span></li>
       <li><strong>{len(keep)}</strong><span>Keep names</span></li>
-      <li><strong>Hourly</strong><span>BK News</span></li>
+      <li><strong>Sleeper</strong><span>My Team</span></li>
     </ul>
     <section class="home-method" aria-label="How the Super Aggregate works">
       <p class="kicker">Method</p>
@@ -2511,7 +2501,7 @@ def home_body_html(keep, board, media, stories=None):
       <ol class="home-steps">
         <li><strong>Half the vote is the long boards.</strong> The tapes that actually go deep enough to matter.</li>
         <li><strong>Half is every other board that ranked the name.</strong> Short lists still move the names they published.</li>
-        <li><strong>Rank 1 is 12,000 BK Value.</strong> Fair is within 8%.</li>
+        <li><strong>Rank becomes a trade chip on that list's curve.</strong> Superflex and PPR print different ranks, so the same name prices differently on each calculator. Rank 1 is 12,000. Fair is within 8%.</li>
       </ol>
       <a class="cta method-cta" href="the-method.html">Read The Method</a>
     </section>
@@ -2519,7 +2509,7 @@ def home_body_html(keep, board, media, stories=None):
     <section class="home-network" aria-label="Other sports">
       <p class="kicker">The other boards</p>
       <h2>Same curve, separate palettes.</h2>
-      <p class="note">BaseKeep, BasketKeep, and PitchKeep use the same rank-to-value idea. Football stays here.</p>
+      <p class="note">Football is the live board this fall. BaseKeep, BasketKeep, and PitchKeep keep the same rank-to-value idea in their own colors.</p>
       <div class="home-network-grid">
         <a class="home-net bb" href="bb/index.html"><span>BaseKeep</span><span>Dynasty baseball. The Keep, The Diamond, The Farm.</span></a>
         <a class="home-net bk" href="bk/index.html"><span>BasketKeep</span><span>Dynasty basketball. The Keep and The Board.</span></a>
@@ -2549,7 +2539,7 @@ def render_news_pages():
             old.unlink()
 
     cards = "".join(news_card(s) for s in stories) or (
-        '<p class="note">The football wire is warming up. The hourly scrape will fill this board.</p>'
+        '<p class="note">No stories on this board yet.</p>'
     )
     chips = []
     for k, lab in (
@@ -2587,9 +2577,9 @@ def render_news_pages():
     }});
     </script>"""
     body = f"""
-    <p class="kicker">BK News · Football · Hourly wire</p>
+    <p class="kicker">BK News · Football · Clustered wire</p>
     <h1>BK News</h1>
-    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball lives on <a href="bb/news.html">BaseKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
+    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories with snippets and links out to the original articles. This board holds the last clustered scrape until the next rebuild. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. Baseball lives on <a href="bb/news.html">BaseKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{filters}</div>
     <div class="news-list" id="news-list">{cards}</div>
@@ -2635,7 +2625,7 @@ def render_news_pages():
                     "</li>"
                 )
             blocks.append(f"<h3>{esc(heading)}</h3><ul class=\"source-list\">{''.join(lis)}</ul>")
-        source_html = "".join(blocks) or "<p class=\"note\">Sources attached on the next hourly pass.</p>"
+        source_html = "".join(blocks) or "<p class=\"note\">No source links on this cluster.</p>"
         people = s.get("players") or []
         if people:
             plist = "".join(
@@ -3148,7 +3138,7 @@ def render_player_pages(profiles):
     {also_on_desk([
         ("../the-keep.html", "The Keep", "Superflex dynasty, the full ranked tape."),
         ("../board.html", "The Board", "Redraft PPR."),
-        ("../news.html", "BK News", "Hourly wire."),
+        ("../news.html", "BK News", "Injury and roster tape."),
         ("../trade.html", "Trade Calculators", "Price any name."),
     ])}
     """
@@ -3534,7 +3524,7 @@ def write_discovery_feeds():
         write(dest, rss_xml(
             title=f"{feed_title} - {brand}",
             link=hub,
-            description=f"Hourly {sport} injury, roster, and coach tape from {brand}.",
+            description=f"{sport} injury, roster, and coach tape from {brand}.",
             items=items,
             self_url=f"https://ballkeep.com/{dest}" if dest != "feed.xml" else "https://ballkeep.com/feed.xml",
         ))
@@ -3617,7 +3607,7 @@ def write_explore_page():
         ("league.html", "My Team", "Your Sleeper league."),
         ("touches.html", "Touches and Targets", "2026 targets and rushes."),
         ("players/index.html", "Player Files", "Keep 400 plus tape."),
-        ("news.html", "BK News", "Hourly football wire."),
+        ("news.html", "BK News", "Injury and roster tape."),
         ("the-x.html", "The X", "Football memes."),
         ("nfl-schedule.html", "NFL Schedule", "2026 slate."),
         ("discord.html", "Discord Bot", "Ranks in a server."),
@@ -3680,7 +3670,7 @@ def write_not_found_page():
       <div class="grid-3">
         <a class="tile" href="index.html"><h3>Ball Keep</h3><p>Superflex dynasty and redraft PPR.</p></a>
         <a class="tile" href="the-keep.html"><h3>The Keep</h3><p>Football, the full ranked tape.</p></a>
-        <a class="tile" href="news.html"><h3>BK News</h3><p>Hourly football wire.</p></a>
+        <a class="tile" href="news.html"><h3>BK News</h3><p>Injury and roster tape.</p></a>
         <a class="tile" href="bb/index.html"><h3>BaseKeep</h3><p>Dynasty baseball.</p></a>
         <a class="tile" href="bk/index.html"><h3>BasketKeep</h3><p>Dynasty basketball.</p></a>
         <a class="tile" href="pl/index.html"><h3>PitchKeep</h3><p>Premier League ranks.</p></a>
@@ -4505,9 +4495,9 @@ def main():
     mlb_abbrs = sorted({g["away"] for g in mlb_games} | {g["home"] for g in mlb_games})
     mlb_btns = "".join(f'<button type="button" data-team="{esc(a)}">{esc(a)}</button>' for a in mlb_abbrs)
     mlb_body = f"""
-    <p class="kicker">MLB · Stretch Run</p>
+    <p class="kicker">MLB · Regular season</p>
     <h1>Baseball Schedules</h1>
-    <p class="note">Today is Aug. 20, 2026 - the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027-2031 heavier than this month's box score; redraft baseball is only this month.</p>
+    <p class="note">Regular season wrapped Sunday, Sept. 27. Below is the last September card (Fantasy Nerds / league schedule). Filter by club. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027-2031; the 2026 box scores are closed.</p>
     <div class="filters" id="mlb-teams"><button type="button" class="active" data-team="all">All clubs</button>{mlb_btns}</div>
     <div class="panel table-wrap" id="mlb-games"></div>
     """
@@ -4576,7 +4566,7 @@ def main():
     <section class="panel policy">
       <p class="kicker">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="note">Last updated: August 31, 2026</p>
+      <p class="note">Last updated: October 19, 2026</p>
       <p>Ball Keep ("we," "us," or "this site") respects your privacy. This Privacy Policy explains what information we collect when you visit ballkeep.com (and its BaseKeep, BasketKeep, and PitchKeep sections), how we use it, and the choices you have.</p>
 
       <h3>Information We Collect</h3>
@@ -4600,6 +4590,7 @@ def main():
 
       <h3>News and Rankings Content</h3>
       <p>Our rankings, trade values, and news summaries aggregate publicly available information from multiple sources, which are credited at the bottom of each board or article. We do not collect personal information through this aggregation process.</p>
+      <p>Player pictures on this site are for identification on the rank boards and player files. BK News clusters public headlines into short snippets and links out to the original publishers.</p>
 
       <h3>Analytics</h3>
       <p>We may use third-party analytics services (such as Google Analytics) to understand site traffic and usage patterns. These services may collect information such as your IP address and browsing behavior on this site. This data is used in aggregate and is not used to personally identify you.</p>
