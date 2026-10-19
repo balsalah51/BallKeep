@@ -210,11 +210,11 @@
       },
       "value": 10228,
       "age": 25,
-      "pos_rank": 1,
-      "pos_label": "WR1"
+      "pos_rank": 2,
+      "pos_label": "WR2"
     },
     {
-      "bk": 3,
+      "bk": 4,
       "name": "Bijan Robinson",
       "pos": "RB",
       "team": "ATL",
@@ -271,7 +271,7 @@
       "pos_label": "RB2"
     },
     {
-      "bk": 4,
+      "bk": 5,
       "name": "Jaxon Smith-Njigba",
       "pos": "WR",
       "team": "SEA",
@@ -324,27 +324,12 @@
       },
       "value": 9409,
       "age": 24,
-      "pos_rank": 2,
-      "pos_label": "WR2"
-    },
-    {
-      "bk": 5,
-      "name": "Amon-Ra St. Brown",
-      "pos": "WR",
-      "team": "DET",
-      "ud": 4,
-      "fp": 5,
-      "espn": 7,
-      "n": 40,
-      "avg": 5.05,
-      "value": 9409,
-      "age": 26,
       "pos_rank": 3,
       "pos_label": "WR3"
     },
     {
       "bk": 6,
-      "name": "Ja'Marr Chase",
+      "name": "Amon-Ra St. Brown",
       "pos": "WR",
       "team": "DET",
       "ud": "-",
@@ -457,7 +442,7 @@
     },
     {
       "bk": 8,
-      "name": "Christian McCaffrey",
+      "name": "Jonathan Taylor",
       "pos": "RB",
       "team": "IND",
       "ud": 2,
@@ -848,8 +833,8 @@
       },
       "value": 7624,
       "age": 26,
-      "pos_rank": 9,
-      "pos_label": "WR9"
+      "pos_rank": 6,
+      "pos_label": "RB6"
     },
     {
       "bk": 15,
@@ -904,8 +889,8 @@
       },
       "value": 7492,
       "age": 25,
-      "pos_rank": 6,
-      "pos_label": "RB6"
+      "pos_rank": 7,
+      "pos_label": "RB7"
     },
     {
       "bk": 16,
@@ -1018,8 +1003,8 @@
       },
       "value": 7247,
       "age": 26,
-      "pos_rank": 7,
-      "pos_label": "RB7"
+      "pos_rank": 1,
+      "pos_label": "TE1"
     },
     {
       "bk": 18,
@@ -3149,22 +3134,7 @@
       "pos_label": "WR28"
     },
     {
-      "bk": 54,
-      "name": "Terry McLaurin",
-      "pos": "WR",
-      "team": "WAS",
-      "ud": 69,
-      "fp": 47,
-      "espn": 67,
-      "n": 39,
-      "avg": 53.82,
-      "value": 4553,
-      "age": 30,
-      "pos_rank": 26,
-      "pos_label": "WR26"
-    },
-    {
-      "bk": 55,
+      "bk": 56,
       "name": "Jameson Williams",
       "pos": "WR",
       "team": "DET",
@@ -3438,9 +3408,9 @@
         "Best Ball Contrarian": 71.0
       },
       "value": 4268,
-      "age": 28,
-      "pos_rank": 5,
-      "pos_label": "QB5"
+      "age": 27,
+      "pos_rank": 22,
+      "pos_label": "RB22"
     },
     {
       "bk": 61,
@@ -4000,8 +3970,8 @@
       "pos_label": "TE5"
     },
     {
-      "bk": 72,
-      "name": "Trevor Lawrence",
+      "bk": 71,
+      "name": "Dak Prescott",
       "pos": "QB",
       "team": "DAL",
       "ud": 68,
@@ -4108,8 +4078,8 @@
       },
       "value": 3764,
       "age": 32,
-      "pos_rank": 7,
-      "pos_label": "TE7"
+      "pos_rank": 6,
+      "pos_label": "TE6"
     },
     {
       "bk": 73,
@@ -7036,21 +7006,6 @@
       },
       "value": 2233,
       "age": 26,
-      "pos_rank": 19,
-      "pos_label": "QB19"
-    },
-    {
-      "bk": 125,
-      "name": "Jalen Coker",
-      "pos": "WR",
-      "team": "CAR",
-      "ud": "-",
-      "fp": 127,
-      "espn": 101,
-      "n": 38,
-      "avg": 119.93,
-      "value": 2233,
-      "age": 24,
       "pos_rank": 51,
       "pos_label": "WR51"
     },
@@ -7384,36 +7339,6 @@
       },
       "value": 2109,
       "age": 22,
-      "pos_rank": 53,
-      "pos_label": "WR53"
-    },
-    {
-      "bk": 130,
-      "name": "Mark Andrews",
-      "pos": "TE",
-      "team": "BAL",
-      "ud": 87,
-      "fp": 134,
-      "espn": 117,
-      "n": 39,
-      "avg": 122.99,
-      "value": 2129,
-      "age": 30,
-      "pos_rank": 16,
-      "pos_label": "TE16"
-    },
-    {
-      "bk": 131,
-      "name": "De'Zhaun Stribling",
-      "pos": "WR",
-      "team": "SF",
-      "ud": "-",
-      "fp": 121,
-      "espn": 135,
-      "n": 38,
-      "avg": 123.82,
-      "value": 2109,
-      "age": 23,
       "pos_rank": 54,
       "pos_label": "WR54"
     },
@@ -7587,7 +7512,7 @@
     },
     {
       "bk": 135,
-      "name": "Woody Marks",
+      "name": "Josh Jacobs",
       "pos": "RB",
       "team": "GB",
       "ud": "-",
@@ -7752,22 +7677,7 @@
       "pos_label": "WR56"
     },
     {
-      "bk": 140,
-      "name": "Tyjae Spears",
-      "pos": "RB",
-      "team": "TEN",
-      "ud": 166,
-      "fp": 136,
-      "espn": 142,
-      "n": 39,
-      "avg": 142.5,
-      "value": 1937,
-      "age": 25,
-      "pos_rank": 46,
-      "pos_label": "RB46"
-    },
-    {
-      "bk": 141,
+      "bk": 138,
       "name": "C.J. Stroud",
       "pos": "QB",
       "team": "HOU",
@@ -8437,8 +8347,8 @@
       "pos_label": "TE19"
     },
     {
-      "bk": 149,
-      "name": "Daniel Jones",
+      "bk": 150,
+      "name": "Malik Willis",
       "pos": "QB",
       "team": "MIA",
       "ud": "-",
@@ -8490,21 +8400,6 @@
       "age": 27,
       "pos_rank": 25,
       "pos_label": "QB25"
-    },
-    {
-      "bk": 150,
-      "name": "Zach Charbonnet",
-      "pos": "RB",
-      "team": "SEA",
-      "ud": "-",
-      "fp": 157,
-      "espn": 132,
-      "n": 38,
-      "avg": 150.68,
-      "value": 1763,
-      "age": 25,
-      "pos_rank": 48,
-      "pos_label": "RB48"
     },
     {
       "bk": 151,
@@ -8619,7 +8514,7 @@
     },
     {
       "bk": 153,
-      "name": "Chris Rodriguez Jr.",
+      "name": "Zach Charbonnet",
       "pos": "RB",
       "team": "SEA",
       "ud": "-",
@@ -10985,8 +10880,8 @@
       },
       "value": 1032,
       "age": 26,
-      "pos_rank": 69,
-      "pos_label": "RB69"
+      "pos_rank": 67,
+      "pos_label": "RB67"
     },
     {
       "bk": 209,
@@ -11120,8 +11015,8 @@
       },
       "value": 986,
       "age": 31,
-      "pos_rank": 26,
-      "pos_label": "TE26"
+      "pos_rank": 28,
+      "pos_label": "TE28"
     },
     {
       "bk": 214,
@@ -12996,21 +12891,6 @@
       "name": "Tahj Brooks",
       "pos": "RB",
       "team": "CIN",
-      "ud": 263,
-      "fp": 340,
-      "espn": 459,
-      "n": 4,
-      "avg": 326.5,
-      "value": 458,
-      "age": 25,
-      "pos_rank": 43,
-      "pos_label": "TE43"
-    },
-    {
-      "bk": 299,
-      "name": "AJ Dillon",
-      "pos": "RB",
-      "team": "CAR",
       "ud": "-",
       "fp": 311,
       "espn": 323,
@@ -15028,21 +14908,6 @@
       },
       "value": 276,
       "age": 23,
-      "pos_rank": 158,
-      "pos_label": "WR158"
-    },
-    {
-      "bk": 388,
-      "name": "Jawhar Jordan",
-      "pos": "RB",
-      "team": "HOU",
-      "ud": "-",
-      "fp": 416,
-      "espn": 500,
-      "n": 3,
-      "avg": 418.0,
-      "value": 206,
-      "age": 27,
       "pos_rank": 111,
       "pos_label": "RB111"
     },
@@ -16130,7 +15995,7 @@
       "bk": 396,
       "name": "Jerome Ford",
       "pos": "RB",
-      "team": "HOU",
+      "team": "WAS",
       "ud": "-",
       "fp": 333,
       "espn": 761,
@@ -16157,7 +16022,7 @@
       "bk": 397,
       "name": "Drew Allar",
       "pos": "QB",
-      "team": "ARI",
+      "team": "PIT",
       "ud": "-",
       "fp": 489,
       "espn": 354,
@@ -17453,9 +17318,9 @@
       "bk": 445,
       "name": "Roman Hemby",
       "pos": "RB",
-      "team": "ATL",
+      "team": "LV",
       "ud": "-",
-      "fp": 520,
+      "fp": 518,
       "espn": "-",
       "n": 10,
       "avg": 486.44,
@@ -17527,8 +17392,8 @@
       },
       "value": 123,
       "age": 24,
-      "pos_rank": 144,
-      "pos_label": "RB144"
+      "pos_rank": 142,
+      "pos_label": "RB142"
     },
     {
       "bk": 448,
@@ -18282,66 +18147,6 @@
         "DraftKings Best Ball": 473.0
       },
       "value": 96,
-      "age": 23,
-      "pos_rank": 64,
-      "pos_label": "QB64"
-    },
-    {
-      "bk": 476,
-      "name": "Kalel Mullings",
-      "pos": "RB",
-      "team": "TEN",
-      "ud": "-",
-      "fp": 480,
-      "espn": 715,
-      "n": 2,
-      "avg": 597.5,
-      "value": 95,
-      "age": 24,
-      "pos_rank": 149,
-      "pos_label": "RB149"
-    },
-    {
-      "bk": 477,
-      "name": "Lan Larison",
-      "pos": "RB",
-      "team": "NE",
-      "ud": "-",
-      "fp": 498,
-      "espn": 722,
-      "n": 2,
-      "avg": 610.0,
-      "value": 94,
-      "age": 24,
-      "pos_rank": 150,
-      "pos_label": "RB150"
-    },
-    {
-      "bk": 478,
-      "name": "Jack Endries",
-      "pos": "TE",
-      "team": "CIN",
-      "ud": 352,
-      "fp": 562,
-      "espn": 920,
-      "n": 3,
-      "avg": 611.33,
-      "value": 93,
-      "age": 22,
-      "pos_rank": 88,
-      "pos_label": "TE88"
-    },
-    {
-      "bk": 479,
-      "name": "Brittain Brown",
-      "pos": "RB",
-      "team": "CHI",
-      "ud": "-",
-      "fp": 547,
-      "espn": 679,
-      "n": 2,
-      "avg": 613.0,
-      "value": 93,
       "age": 28,
       "pos_rank": 151,
       "pos_label": "RB151"
@@ -18377,7 +18182,7 @@
       "bk": 477,
       "name": "Scotty Miller",
       "pos": "WR",
-      "team": "MIA",
+      "team": "CHI",
       "ud": "-",
       "fp": 515,
       "espn": 860,

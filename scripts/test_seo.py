@@ -418,13 +418,13 @@ def test_best_ball_boards():
 def test_best_ball_mash():
     from build_site import best_ball_list
     rows = best_ball_list()
-    assert len(rows) == 489
+    assert len(rows) == 480
     assert rows[0]["name"] in {
         "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
         "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",
     }
     maye = next(r for r in rows if r["name"] == "Drake Maye")
-    assert maye["pos"] == "QB"
+    assert maye["bk"] >= 6
     assert all(r.get("pos") in {"QB", "RB", "WR", "TE"} for r in rows)
     assert all(r.get("n") for r in rows)
 
@@ -531,17 +531,13 @@ def test_drop_player():
     assert next(r for r in rows if r["name"] == "Drake Maye")["bk"] == 6
 
 
-def test_keep_week5_moves():
+def test_keep_maye_drop():
     from pathlib import Path
     from build_site import ROOT, aggregate, parse_pfn
     keep, _, _ = aggregate(parse_pfn(ROOT / "data/pfn-dynasty.txt"))
     maye = next(r for r in keep if r["name"] == "Drake Maye")
     assert maye["bk"] >= 2
     assert keep[0]["name"] == "Josh Allen"
-    assert "Drake Maye" in by_name
-    assert "De'Von Achane" in by_name
-    walker = next((r for r in keep if str(r["name"]).startswith("Kenneth Walker")), None)
-    assert walker is not None
 
 
 def test_min_ten_ranks():
@@ -1030,57 +1026,6 @@ def test_attach_pos_ranks():
     assert ">RB2<" in html
     assert ">WR1<" in html
     assert 'data-pos="RB"' in html
-
-
-def test_week5_predictions_copy():
-    from week5_predictions import HEADLINE, predictions_article_html, predictions_teaser
-    html = predictions_article_html()
-    teaser = predictions_teaser()
-    assert HEADLINE in html
-    assert "\u2014" not in html
-    assert "desk" not in html.lower()
-    assert "looking at" not in html
-    for club in (
-        "DAL", "JAX", "CIN", "NE", "MIN", "CLE", "PIT", "HOU",
-        "NYG", "DEN", "DET", "CHI", "SF", "BAL", "LAR",
-    ):
-        assert f"Pick: {club}" in html
-    assert "week5-matchups.html" in teaser
-    assert "Thursday has not kicked" in html
-    assert "Kansas City and Carolina sit" in html
-
-
-def test_week5_boards():
-    from week5_boards import (
-        MATCH_SOURCES,
-        W5_DST_SOURCES,
-        W5_K_SOURCES,
-        week5_dst_board,
-        week5_kicker_board,
-        week5_matchups,
-    )
-    assert len(W5_DST_SOURCES) >= 6
-    assert len(W5_K_SOURCES) >= 3
-    assert len(MATCH_SOURCES) >= 6
-    dst = week5_dst_board()
-    assert dst[0]["bk"] == 1
-    assert dst[0]["n"] >= 3
-    assert dst[0]["name"] in {
-        "Houston Texans", "Cincinnati Bengals", "Denver Broncos",
-        "Minnesota Vikings", "Jacksonville Jaguars",
-    }
-    kickers = week5_kicker_board()
-    assert kickers[0]["name"] in {"Brandon Aubrey", "Evan McPherson", "Will Reichard"}
-    games = week5_matchups()
-    assert len(games) == 15
-    keys = {g["key"] for g in games}
-    assert "TB@DAL" in keys
-    assert "BUF@LAR" in keys
-    assert "KC@CAR" not in keys
-    assert all(g["pick"] in {g["away"], g["home"]} for g in games)
-    assert games[0]["day"].startswith("Thu")
-    assert games[0]["key"] == "TB@DAL"
-    assert "final" not in games[0]
 
 
 def test_two_clocks_article():

@@ -16,7 +16,7 @@
       "team": "ATL",
       "adp": 3.14,
       "espn_ppr": 2,
-      "pct_owned": 99.89,
+      "pct_owned": 99.92,
       "injury": "ACTIVE"
     },
     {
@@ -25,7 +25,7 @@
       "team": "SEA",
       "adp": 5.4,
       "espn_ppr": 6,
-      "pct_owned": 99.84,
+      "pct_owned": 99.93,
       "injury": "ACTIVE"
     },
     {
@@ -61,7 +61,7 @@
       "team": "SF",
       "adp": 9.3,
       "espn_ppr": 7,
-      "pct_owned": 99.85,
+      "pct_owned": 99.92,
       "injury": "ACTIVE"
     },
     {
@@ -79,7 +79,7 @@
       "team": "KC",
       "adp": 12.39,
       "espn_ppr": 28,
-      "pct_owned": 99.81,
+      "pct_owned": 99.84,
       "injury": "ACTIVE"
     },
     {
@@ -459,24 +459,6 @@
       "espn_ppr": 81,
       "pct_owned": 96.43,
       "injury": "ACTIVE"
-    },
-    {
-      "name": "Jaylen Waddle",
-      "pos": "WR",
-      "team": "DEN",
-      "adp": 79.33,
-      "espn_ppr": 49,
-      "pct_owned": 94.61,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "DJ Moore",
-      "pos": "WR",
-      "team": "BUF",
-      "adp": 79.8,
-      "espn_ppr": 52,
-      "pct_owned": 94.91,
-      "injury": "QUESTIONABLE"
     },
     {
       "name": "Parker Washington",
@@ -2201,7 +2183,7 @@
       "name": "Joe Flacco",
       "pos": "QB",
       "team": "CIN",
-      "adp": 169.7,
+      "adp": 169.71,
       "espn_ppr": 457,
       "pct_owned": 0.2,
       "injury": "ACTIVE"
@@ -3260,12 +3242,12 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "Olamide Zaccheaus",
-      "pos": "WR",
-      "team": "ATL",
+      "name": "Tanner Arkin",
+      "pos": "TE",
+      "team": "NE",
       "adp": 169.89,
-      "espn_ppr": 1051,
-      "pct_owned": 0.09,
+      "espn_ppr": null,
+      "pct_owned": 0.01,
       "injury": "ACTIVE"
     },
     {
@@ -3386,21 +3368,12 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "DeeJay Dallas",
-      "pos": "RB",
-      "team": "MIN",
+      "name": "Dillon Gabriel",
+      "pos": "QB",
+      "team": "CLE",
       "adp": 169.91,
-      "espn_ppr": 1815,
-      "pct_owned": 0.21,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Demarcus Robinson",
-      "pos": "WR",
-      "team": "SF",
-      "adp": 169.91,
-      "espn_ppr": 1137,
-      "pct_owned": 1.34,
+      "espn_ppr": 1404,
+      "pct_owned": 0.04,
       "injury": "INJURY_RESERVE"
     },
     {
@@ -3989,15 +3962,6 @@
       "injury": "OUT"
     },
     {
-      "name": "Tanner Koziol",
-      "pos": "TE",
-      "team": "JAX",
-      "adp": 169.94,
-      "espn_ppr": 1229,
-      "pct_owned": 0.02,
-      "injury": "ACTIVE"
-    },
-    {
       "name": "Will Howard",
       "pos": "QB",
       "team": "PIT",
@@ -4009,16 +3973,16 @@
     {
       "name": "Xazavian Valladay",
       "pos": "RB",
-      "team": "KC",
-      "adp": 169.95,
-      "espn_ppr": 2225,
+      "team": "",
+      "adp": 169.94,
+      "espn_ppr": 2217,
       "pct_owned": 0.01,
       "injury": "ACTIVE"
     },
     {
       "name": "Amar Johnson",
       "pos": "RB",
-      "team": "SEA",
+      "team": "",
       "adp": 169.95,
       "espn_ppr": 2556,
       "pct_owned": 0.02,
@@ -4079,12 +4043,12 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "CJ Daniels",
+      "name": "Devin Duvernay",
       "pos": "WR",
-      "team": "LAR",
+      "team": "ARI",
       "adp": 169.95,
-      "espn_ppr": 1432,
-      "pct_owned": 0.05,
+      "espn_ppr": 1325,
+      "pct_owned": 0.07,
       "injury": "ACTIVE"
     },
     {
@@ -4144,10 +4108,10 @@
     {
       "name": "Kurtis Rourke",
       "pos": "QB",
-      "team": "BAL",
+      "team": "SF",
       "adp": 169.95,
-      "espn_ppr": 1452,
-      "pct_owned": 0.02,
+      "espn_ppr": 1413,
+      "pct_owned": 0.01,
       "injury": "ACTIVE"
     },
     {
@@ -4191,7 +4155,7 @@
       "pos": "WR",
       "team": "",
       "adp": 169.95,
-      "espn_ppr": 2358,
+      "espn_ppr": 2558,
       "pct_owned": 0.01,
       "injury": "ACTIVE"
     },
@@ -4252,7 +4216,7 @@
     {
       "name": "Ashton Dulin",
       "pos": "WR",
-      "team": "ATL",
+      "team": "IND",
       "adp": 169.96,
       "espn_ppr": 1054,
       "pct_owned": 0.09,
@@ -4263,16 +4227,7 @@
       "pos": "QB",
       "team": "",
       "adp": 169.96,
-      "espn_ppr": 1806,
-      "pct_owned": 0.01,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Chris Blair",
-      "pos": "WR",
-      "team": "ATL",
-      "adp": 169.96,
-      "espn_ppr": 1386,
+      "espn_ppr": 1420,
       "pct_owned": 0.02,
       "injury": "ACTIVE"
     },
@@ -4666,25 +4621,16 @@
     {
       "name": "Adam Trautman",
       "pos": "TE",
-      "team": "",
-      "adp": 169.96,
-      "espn_ppr": 2550,
-      "pct_owned": 0.01,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Aaron Shampklin",
-      "pos": "RB",
-      "team": "",
+      "team": "DEN",
       "adp": 169.97,
-      "espn_ppr": 2383,
-      "pct_owned": 0.01,
+      "espn_ppr": 1026,
+      "pct_owned": 0.07,
       "injury": "ACTIVE"
     },
     {
       "name": "Athan Kaliakmanis",
       "pos": "QB",
-      "team": "",
+      "team": "WAS",
       "adp": 169.97,
       "espn_ppr": 1444,
       "pct_owned": 0.03,
@@ -4882,19 +4828,19 @@
     {
       "name": "Jimmy Horn Jr.",
       "pos": "WR",
-      "team": "WAS",
+      "team": "",
       "adp": 169.97,
       "espn_ppr": 1120,
       "pct_owned": 0.04,
       "injury": "ACTIVE"
     },
     {
-      "name": "John Samuel Shenker",
-      "pos": "TE",
-      "team": "",
+      "name": "Joe Fagnano",
+      "pos": "QB",
+      "team": "BAL",
       "adp": 169.97,
-      "espn_ppr": 2446,
-      "pct_owned": 0.01,
+      "espn_ppr": 1452,
+      "pct_owned": 0.02,
       "injury": "ACTIVE"
     },
     {
@@ -4927,7 +4873,7 @@
     {
       "name": "Ke'Shawn Williams",
       "pos": "WR",
-      "team": "LAC",
+      "team": "",
       "adp": 169.97,
       "espn_ppr": 1322,
       "pct_owned": 0.03,
@@ -4979,20 +4925,11 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "Marvin Mims Jr.",
-      "pos": "WR",
-      "team": "DEN",
-      "adp": 169.97,
-      "espn_ppr": 382,
-      "pct_owned": 0.53,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Michael Wiley",
+      "name": "Nathan Carter",
       "pos": "RB",
       "team": "",
       "adp": 169.97,
-      "espn_ppr": 2366,
+      "espn_ppr": 2507,
       "pct_owned": 0.01,
       "injury": "ACTIVE"
     },
@@ -5003,24 +4940,6 @@
       "adp": 169.97,
       "espn_ppr": 1273,
       "pct_owned": 0.07,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Myles Gaskin",
-      "pos": "RB",
-      "team": "",
-      "adp": 169.97,
-      "espn_ppr": 1718,
-      "pct_owned": 0.01,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Owen Wright",
-      "pos": "RB",
-      "team": "",
-      "adp": 169.97,
-      "espn_ppr": 2273,
-      "pct_owned": 0.01,
       "injury": "ACTIVE"
     },
     {
@@ -5393,29 +5312,11 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "Jermaine Jackson",
-      "pos": "WR",
+      "name": "John Stephens Jr.",
+      "pos": "TE",
       "team": "",
       "adp": 169.98,
-      "espn_ppr": 2449,
-      "pct_owned": 0.01,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Jimmy Garoppolo",
-      "pos": "QB",
-      "team": "",
-      "adp": 169.98,
-      "espn_ppr": 1765,
-      "pct_owned": 0.03,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Joseph Ngata",
-      "pos": "WR",
-      "team": "",
-      "adp": 169.98,
-      "espn_ppr": 2204,
+      "espn_ppr": 2362,
       "pct_owned": 0.0,
       "injury": "ACTIVE"
     },
@@ -5429,29 +5330,11 @@
       "injury": ""
     },
     {
-      "name": "Junior Bergen",
+      "name": "Joshua Cephus",
       "pos": "WR",
       "team": "",
       "adp": 169.98,
-      "espn_ppr": 2492,
-      "pct_owned": 0.01,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Justin Shorter",
-      "pos": "WR",
-      "team": "",
-      "adp": 169.98,
-      "espn_ppr": 1373,
-      "pct_owned": 0.01,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Justin Watson",
-      "pos": "WR",
-      "team": "",
-      "adp": 169.98,
-      "espn_ppr": 1599,
+      "espn_ppr": 2397,
       "pct_owned": 0.01,
       "injury": "ACTIVE"
     },
@@ -5595,7 +5478,7 @@
       "pos": "TE",
       "team": "",
       "adp": 169.98,
-      "espn_ppr": 2068,
+      "espn_ppr": 2232,
       "pct_owned": 0.0,
       "injury": "ACTIVE"
     },
@@ -5723,15 +5606,6 @@
       "adp": 169.99,
       "espn_ppr": 2195,
       "pct_owned": 0.0,
-      "injury": "QUESTIONABLE"
-    },
-    {
-      "name": "Andrew Beck",
-      "pos": "RB",
-      "team": "NYJ",
-      "adp": 169.99,
-      "espn_ppr": 1252,
-      "pct_owned": 0.03,
       "injury": "ACTIVE"
     },
     {
@@ -5807,12 +5681,12 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "Bub Means",
+      "name": "Bryce Oliver",
       "pos": "WR",
       "team": "",
       "adp": 169.99,
-      "espn_ppr": 2310,
-      "pct_owned": 0.01,
+      "espn_ppr": 2394,
+      "pct_owned": 0.0,
       "injury": "ACTIVE"
     },
     {
@@ -5876,7 +5750,7 @@
       "adp": 169.99,
       "espn_ppr": 2360,
       "pct_owned": 0.01,
-      "injury": "QUESTIONABLE"
+      "injury": "ACTIVE"
     },
     {
       "name": "Davis Mills",
@@ -6050,12 +5924,12 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "Jha'Quan Jackson",
+      "name": "Jermaine Jackson",
       "pos": "WR",
       "team": "",
       "adp": 169.99,
-      "espn_ppr": 2316,
-      "pct_owned": 0.0,
+      "espn_ppr": 2449,
+      "pct_owned": 0.01,
       "injury": "ACTIVE"
     },
     {
@@ -6086,7 +5960,7 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "Justyn Ross",
+      "name": "Junior Bergen",
       "pos": "WR",
       "team": "",
       "adp": 169.99,
@@ -6144,53 +6018,8 @@
       "pos": "QB",
       "team": "MIA",
       "adp": 169.99,
-      "espn_ppr": 2461,
-      "pct_owned": 0.01,
-      "injury": "QUESTIONABLE"
-    },
-    {
-      "name": "Kearis Jackson",
-      "pos": "WR",
-      "team": "",
-      "adp": 169.99,
-      "espn_ppr": 2216,
-      "pct_owned": 0.0,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Keleki Latu",
-      "pos": "TE",
-      "team": "BUF",
-      "adp": 169.99,
-      "espn_ppr": 1423,
-      "pct_owned": 0.01,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Kene Nwangwu",
-      "pos": "RB",
-      "team": "NYJ",
-      "adp": 169.99,
-      "espn_ppr": 408,
-      "pct_owned": 0.11,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "KhaDarel Hodge",
-      "pos": "WR",
-      "team": "",
-      "adp": 169.99,
-      "espn_ppr": 1631,
-      "pct_owned": 0.02,
-      "injury": "QUESTIONABLE"
-    },
-    {
-      "name": "Khari Blasingame",
-      "pos": "RB",
-      "team": "",
-      "adp": 169.99,
-      "espn_ppr": 1789,
-      "pct_owned": 0.01,
+      "espn_ppr": 1266,
+      "pct_owned": 0.03,
       "injury": "ACTIVE"
     },
     {
@@ -6266,15 +6095,6 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "Rodney Williams",
-      "pos": "TE",
-      "team": "",
-      "adp": 169.99,
-      "espn_ppr": 2232,
-      "pct_owned": 0.0,
-      "injury": "ACTIVE"
-    },
-    {
       "name": "Ronnie Bell",
       "pos": "WR",
       "team": "",
@@ -6306,7 +6126,7 @@
       "pos": "WR",
       "team": "",
       "adp": 169.99,
-      "espn_ppr": 1602,
+      "espn_ppr": 2231,
       "pct_owned": 0.0,
       "injury": "ACTIVE"
     },
@@ -6371,42 +6191,6 @@
       "adp": 169.99,
       "espn_ppr": 2135,
       "pct_owned": 0.0,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Tyrion Davis-Price",
-      "pos": "RB",
-      "team": "",
-      "adp": 169.99,
-      "espn_ppr": 1995,
-      "pct_owned": 0.0,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Van Jefferson",
-      "pos": "WR",
-      "team": "",
-      "adp": 169.99,
-      "espn_ppr": 1832,
-      "pct_owned": 0.02,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Velus Jones Jr.",
-      "pos": "RB",
-      "team": "SEA",
-      "adp": 169.99,
-      "espn_ppr": 1989,
-      "pct_owned": 0.02,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Will Kacmarek",
-      "pos": "TE",
-      "team": "MIA",
-      "adp": 169.99,
-      "espn_ppr": 1021,
-      "pct_owned": 0.05,
       "injury": "ACTIVE"
     },
     {
@@ -6549,8 +6333,8 @@
       "pos": "RB",
       "team": "",
       "adp": 170.0,
-      "espn_ppr": 1396,
-      "pct_owned": 0.01,
+      "espn_ppr": 1810,
+      "pct_owned": 0.0,
       "injury": "ACTIVE"
     },
     {
@@ -6614,43 +6398,7 @@
       "adp": 170.0,
       "espn_ppr": 2506,
       "pct_owned": 0.01,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "James Proche II",
-      "pos": "WR",
-      "team": "",
-      "adp": 170.0,
-      "espn_ppr": 1848,
-      "pct_owned": 0.0,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Jared Wayne",
-      "pos": "WR",
-      "team": "HOU",
-      "adp": 170.0,
-      "espn_ppr": 1399,
-      "pct_owned": 0.04,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Jared Wiley",
-      "pos": "TE",
-      "team": "KC",
-      "adp": 170.0,
-      "espn_ppr": 1391,
-      "pct_owned": 0.02,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Jarquez Hunter",
-      "pos": "RB",
-      "team": "",
-      "adp": 170.0,
-      "espn_ppr": 2459,
-      "pct_owned": 0.02,
-      "injury": "ACTIVE"
+      "injury": "QUESTIONABLE"
     },
     {
       "name": "Jack Strand",
@@ -6684,9 +6432,9 @@
       "pos": "WR",
       "team": "PHI",
       "adp": 170.0,
-      "espn_ppr": 1433,
-      "pct_owned": 0.02,
-      "injury": "OUT"
+      "espn_ppr": 1393,
+      "pct_owned": 0.01,
+      "injury": "INJURY_RESERVE"
     },
     {
       "name": "Kaden Prather",
@@ -6887,21 +6635,12 @@
       "injury": "ACTIVE"
     },
     {
-      "name": "Brett Rypien",
-      "pos": "QB",
+      "name": "Allen Lazard",
+      "pos": "WR",
       "team": "",
       "adp": 170.01,
-      "espn_ppr": 1694,
+      "espn_ppr": 1634,
       "pct_owned": 0.01,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "CJ Williams",
-      "pos": "WR",
-      "team": "JAX",
-      "adp": 170.01,
-      "espn_ppr": 1435,
-      "pct_owned": 0.02,
       "injury": "ACTIVE"
     },
     {
@@ -7213,9 +6952,9 @@
     {
       "name": "Princeton Fant",
       "pos": "TE",
-      "team": "CHI",
+      "team": "DAL",
       "adp": 170.01,
-      "espn_ppr": 1368,
+      "espn_ppr": 1383,
       "pct_owned": 0.01,
       "injury": "INJURY_RESERVE"
     },
@@ -7431,17 +7170,8 @@
       "pos": "TE",
       "team": "CAR",
       "adp": 170.02,
-      "espn_ppr": 1727,
-      "pct_owned": 0.02,
-      "injury": "ACTIVE"
-    },
-    {
-      "name": "Darrynton Evans",
-      "pos": "RB",
-      "team": "",
-      "adp": 170.02,
-      "espn_ppr": 1810,
-      "pct_owned": 0.0,
+      "espn_ppr": 1354,
+      "pct_owned": 0.01,
       "injury": "ACTIVE"
     },
     {
@@ -7652,13 +7382,13 @@
       "injury": "OUT"
     },
     {
-      "name": "Tim Patrick",
-      "pos": "WR",
-      "team": "NYJ",
+      "name": "Tim Boyle",
+      "pos": "QB",
+      "team": "",
       "adp": 170.02,
-      "espn_ppr": 1336,
-      "pct_owned": 0.02,
-      "injury": "INJURY_RESERVE"
+      "espn_ppr": 1705,
+      "pct_owned": 0.01,
+      "injury": "ACTIVE"
     },
     {
       "name": "Trent Taylor",

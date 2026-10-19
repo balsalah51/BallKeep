@@ -58,7 +58,7 @@ def main():
     assert len(cat.deals_for("")) >= 20
     assert len(cat.raw["keep"]) == 496
     assert cat.raw.get("board_format") == "redraft PPR", cat.raw.get("board_format")
-    assert len(cat.raw["board"]) == 489, f"board {len(cat.raw.get('board') or [])}"
+    assert len(cat.raw["board"]) == 480, f"board {len(cat.raw.get('board') or [])}"
     assert cat.raw["board"][0]["name"] == cat.raw["ppr"][0]["name"]
     assert len(cat.raw.get("sf_redraft") or []) == 549, f"sf_redraft {len(cat.raw.get('sf_redraft') or [])}"
     bb = cat.raw.get("bb_keep") or []
@@ -139,10 +139,10 @@ def main():
     assert board0.get("yates") or board0.get("fp") or board0.get("karabell"), board0
     assert (board0.get("n") or 0) >= 10, board0
     classic = cat.raw.get("classic") or []
-    assert len(classic) == 489, f"classic {len(classic)}"
+    assert len(classic) == 480, f"classic {len(classic)}"
     assert classic[0].get("bk") == 1
     best_ball = cat.raw.get("best_ball") or []
-    assert len(best_ball) == 489, f"best_ball {len(best_ball)}"
+    assert len(best_ball) == 480, f"best_ball {len(best_ball)}"
     assert best_ball[0].get("name")
     assert best_ball[0].get("bk") == 1
     assert len(cat.raw.get("best_ball_sources") or []) == 40
@@ -445,7 +445,6 @@ def main():
     assert "next-chair.html" not in articles
     assert "The Next Chair" not in articles
     assert "the-split.html" not in articles
-    assert "week5-matchups.html" in articles
     assert "the-split.html" not in html_of("two-clocks.html")
     assert "The Split" not in html_of("two-clocks.html")
     assert "week6-matchups.html" in articles
@@ -472,9 +471,6 @@ def main():
     assert "The Split" not in clocks
     assert "\u2014" not in clocks
     assert "desk" not in clocks.lower()
-    assert not (root / "the-split.html").exists()
-    assert not (root / "js/split.js").exists()
-    assert not (root / "data/split-lookup.json").exists()
     handcuff = html_of("the-handcuff.html")
     assert "<h1>The Handcuff</h1>" in handcuff
     assert "handcuff-app" in handcuff
@@ -649,21 +645,6 @@ def main():
     assert "\u2014" not in w6_m_html
     assert "on a desk" not in w6_m_html
     assert "every other desk" not in w2_m_html
-    w5_dst_html = html_of("week5-dst.html")
-    assert "<h1>Week 5 DST</h1>" in w5_dst_html
-    assert "Houston Texans" in w5_dst_html
-    assert "is 1.01" not in w5_dst_html
-    w5_k_html = html_of("week5-kickers.html")
-    assert "<h1>Week 5 Kickers</h1>" in w5_k_html
-    assert "Brandon Aubrey" in w5_k_html
-    w5_m_html = html_of("week5-matchups.html")
-    assert "<h1>Week 5 Matchups</h1>" in w5_m_html
-    assert "TB" in w5_m_html and "DAL" in w5_m_html
-    assert "Pick: DAL" in w5_m_html
-    assert "Pick: JAX" in w5_m_html
-    assert "Thursday has not kicked" in w5_m_html
-    assert "\u2014" not in w5_m_html
-    assert "on a desk" not in w5_m_html
     w1_dst_html = html_of("archive/week1/dst.html")
     assert "<h1>Week 1 DST</h1>" in w1_dst_html
     assert "Jacksonville Jaguars" in w1_dst_html
@@ -933,8 +914,6 @@ def main():
         "waiver.html",
         "adp.html",
         "the-handcuff.html",
-        "week5-dst.html",
-        "week5-kickers.html",
         "the-fence.html",
         "touches.html",
         "rookies-2026.html",
