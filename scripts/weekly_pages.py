@@ -10,8 +10,8 @@ from seo import (
     rank_search_bar,
 )
 from the_market import write_the_market
-from the_recap import recap_teaser, write_the_recap
-from week4_predictions import predictions_teaser
+from the_recap import write_the_recap
+from week6_predictions import predictions_teaser
 from weekly_kit import (
     ADP_SOURCES,
     DEPTH_SOURCES,
@@ -146,15 +146,14 @@ def write_weekly_pages(b, nfl, media, board_rows):
     flex_body = f"""
     <p class="kicker">{label} · skill · Flex plus positions</p>
     <h1>Weekly</h1>
-    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% every other board that ranked the name. Quarterbacks, backs, receivers, and tight ends each have their own board. {proj_blurb()} The opener lives on <a href="the-recap.html">The Recap</a>. The Week 4 card, with a pick on every line, lives on <a href="week4-matchups.html">Week 4 Predictions</a>. The finished Week 3 card sits on <a href="week3-matchups.html">Week 3 Predictions</a>.</p>
-    {recap_teaser()}
+    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% every other board that ranked the name. Quarterbacks, backs, receivers, and tight ends each have their own board. {proj_blurb()} The finished Week 1 essay lives on <a href="the-recap.html">The Recap</a>. The Week 6 card, with a pick on every line, lives on <a href="week6-matchups.html">Week 6 Predictions</a>. The finished Week 5 card sits on <a href="week5-matchups.html">Week 5 Predictions</a>.</p>
     {predictions_teaser()}
     <div class="grid-3">
       <a class="tile" href="weekly-qb.html"><h3>Week {week} QB</h3><p>{(boards['QB'] or [{'name':''}])[0]['name']} leads the quarterbacks.</p></a>
       <a class="tile" href="weekly-rb.html"><h3>Week {week} RB</h3><p>{(boards['RB'] or [{'name':''}])[0]['name']} opens the backfield.</p></a>
       <a class="tile" href="weekly-wr.html"><h3>Week {week} WR</h3><p>{(boards['WR'] or [{'name':''}])[0]['name']} sits first among receivers.</p></a>
       <a class="tile" href="weekly-te.html"><h3>Week {week} TE</h3><p>{(boards['TE'] or [{'name':''}])[0]['name']} is the top tight end.</p></a>
-      <a class="tile" href="waiver.html"><h3>Week {waiver_week()} Waivers</h3><p>Allen, Gordon, Sadiq, and the names the published lists moved.</p></a>
+      <a class="tile" href="waiver.html"><h3>Week {waiver_week()} Waivers</h3><p>Bernard, Pierce, Bourne, and the names the published lists moved.</p></a>
       <a class="tile" href="injuries.html"><h3>Injuries</h3><p>ESPN designations.</p></a>
     </div>
     {rank_search_bar(chips)}
@@ -204,7 +203,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     w_chips, w_js = pos_filter("waiver-pos")
     w_week = waiver_week()
     w_faq = [
-        ("What is this list?", f"A Week {w_week} Super Aggregate of published waiver articles after the third Sunday. A name needs two lists."),
+        ("What is this list?", f"A Week {w_week} Super Aggregate of published waiver articles after the fifth Sunday. A name needs two lists."),
         ("Is this FAAB advice?", "No dollar bids. Super Aggregate of every list that ranked the name."),
         ("Why is a drafted star missing?", "If a list did not put him on their waiver board, that list does not vote for him."),
     ]
@@ -212,7 +211,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     w_body = f"""
     <p class="kicker">2026 Week {w_week} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
     <h1>Week {w_week} Waivers</h1>
-    <p class="note">Week {w_week} waiver Super Aggregate after the third Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own boards. The finished Week 3 card lives on <a href="week3-matchups.html">Week 3 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
+    <p class="note">Week {w_week} waiver Super Aggregate after the fifth Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own boards. The finished Week 5 card lives on <a href="week5-matchups.html">Week 5 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
     {rank_search_bar(w_chips)}
     <div class="panel">{weekly_table(waivers)}</div>
     {sources_panel(WEEK1_WAIVER_SOURCES, heading="Lists in This Super Aggregate")}

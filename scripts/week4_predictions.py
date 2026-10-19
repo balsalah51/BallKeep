@@ -3,11 +3,10 @@ from __future__ import annotations
 
 from seo import article_jsonld
 
-HEADLINE = "Szmyt found 56 yards with ten seconds left in a building that was supposed to lose, and Sunday still has fifteen games left to argue with."
+HEADLINE = "Szmyt found 56 yards with ten seconds left in a building that was supposed to lose, and the rest of the card wrote fifteen more receipts including a 29-26 and a Monday that hung 45."
 DEK = (
-    "Cleveland hung 27-24 after Rodgers tied it. The mash had Pittsburgh by four votes to two. "
-    "Judkins scored. Boston went 60. Delpit picked the Hail Mary. "
-    "The rest of the slate is still Sunday and Monday."
+    "Browns 27-24. Patriots 29-26. Cowboys 34-30. Falcons 45-24. "
+    "Carolina took Sunday night. The mash closed 11-5."
 )
 PUBLISHED = "2026-10-01T02:30:00Z"
 MODIFIED = "2026-10-03T04:00:00Z"
@@ -42,9 +41,9 @@ def predictions_teaser():
     <a class="opening-teaser recap-teaser" href="week4-matchups.html">
       <img src="{OG_IMAGE}" alt="Josh Allen" width="160" height="160" />
       <div>
-        <p class="k">Week 4 · Saturday, Oct 3</p>
-        <h2>Browns 27-24. Sunday is still open.</h2>
-        <p>Cleveland 27-24. Szmyt 56. The mash took Pittsburgh on Thursday and missed. Fifteen games left.</p>
+        <p class="k">Week 4 · finished</p>
+        <h2>Browns 27-24. The mash closed 11-5.</h2>
+        <p>Cleveland 27-24. New England 29-26. Dallas 34-30. Atlanta 45-24. The mash closed 11-5.</p>
       </div>
     </a>
     """
@@ -53,16 +52,16 @@ def predictions_teaser():
 def predictions_article_html():
     return f"""
     <article class="opening recap">
-      <p class="opening-kicker">Week 4 · Thursday is in · Saturday, October 3, 2026</p>
+      <p class="opening-kicker">Week 4 · finished card · Saturday, October 17, 2026</p>
       <h2 class="pred-hed">{HEADLINE}</h2>
       <p class="dek">{DEK}</p>
-      <p class="byline">Ball Keep · Filed Thursday morning. Cleveland final Saturday. Saturday-evening rebuild. Sunday card still live.</p>
+      <p class="byline">Ball Keep · Filed Thursday before kickoff. Finals stamped Saturday. Live picks live on Week 6.</p>
 
       <div class="score-row recap-scores">
-        <div class="score-card is-final"><p class="when">Thu · Final</p><p class="result">CLE 27, PIT 24</p><p class="meta">Szmyt 56 · ten seconds · Delpit INT</p></div>
-        <div class="score-card"><p class="when">Sun · CBS</p><p class="result">NE at BUF</p><p class="meta">Allen after five turnovers and a win</p></div>
-        <div class="score-card"><p class="when">Sun · NBC</p><p class="result">DET at CAR</p><p class="meta">Gibbs on the road · Young after 18</p></div>
-        <div class="score-card"><p class="when">Mon · ESPN</p><p class="result">ATL at NO</p><p class="meta">Bijan after 194 · Shough at home</p></div>
+        <div class="score-card is-final"><p class="when">Thu · Final</p><p class="result">CLE 27, PIT 24</p><p class="meta">Szmyt 56 · mash missed Pittsburgh</p></div>
+        <div class="score-card is-final"><p class="when">Sun · Final</p><p class="result">NE 29, BUF 26</p><p class="meta">Maye in Highmark · mash missed Buffalo</p></div>
+        <div class="score-card is-final"><p class="when">Sun · Final</p><p class="result">CAR 32, DET 26</p><p class="meta">Young at home · mash missed Detroit</p></div>
+        <div class="score-card is-final"><p class="when">Mon · Final</p><p class="result">ATL 45, NO 24</p><p class="meta">Bijan after 194 · mash took Atlanta</p></div>
       </div>
 
       <div class="photo-row" aria-label="Faces from the Week 4 card">
@@ -142,9 +141,9 @@ def predictions_article_html():
       <p>Four of seven, against the number. Bender took the Saints 29-22. FanSided took the Saints. Sullivan printed Falcons 26-24 and Breech went with him, and the mash landed in Atlanta because a 194-yard Thursday still counts on a short week. Tyler Shough ranks second in passing yards and the dome will be loud on the twentieth anniversary of the first home game after the storm, which is a real sentence and also not a tackle. Bijan Robinson already has 349. Michael Penix Jr. just hung 35 in Lambeau. Start Robinson. Start Shough in Superflex. Start Olave. Sit both defenses. The number is New Orleans minus 2.5 and the votes did not care.</p>
 
       <h2>What the rooms should do with the card</h2>
-      <p>Copy the published picks in kickoff order if you came here for the list: PIT, IND, BAL, BUF, CHI, CIN, DAL, ARI, LAR, GB, MIN, KC, SEA, SF, DET, ATL. Thursday already missed. Sunday and Monday are still live. The mash is a vote, and the vote is 0-1 on the night.</p>
-      <p>The <a href="waiver.html">Week 4 waiver board</a> opens with Braelon Allen, then Ollie Gordon, Kenyon Sadiq, and Keenan Allen. Achane is done for the year and Hall is week to week, so the first two backs on the wire are the first two backs on the wire. Sadiq just went 7 for 105 and a score. Spend the leftover FAAB on the names Sunday actually moves.</p>
-      <p>The <a href="week4-dst.html">Week 4 DST board</a> leans Minnesota, Seattle, and Baltimore. Minnesota gets Willis without Achane, and Justin Jefferson is out. Seattle gets Herbert at home. Baltimore gets Ward and a Lamar who practiced fully. The <a href="week4-kickers.html">kicker board</a> still loves Brandon Aubrey and has learned to say Ka'imi Fairbairn and Tyler Loop out loud. The <a href="weekly.html">weekly skill boards</a> rebuilt this evening from FantasyPros ECR dated October 3, plus RotoWire, 4for4, and the rest of the kit. Gibbs opens the flex. Smith-Njigba opens the receivers. Bowers sits first among the tight ends after one night back.</p>
+      <p>Copy the published picks in kickoff order if you came here for the list: PIT, IND, BAL, BUF, CHI, CIN, DAL, ARI, LAR, GB, MIN, KC, SEA, SF, DET, ATL. The mash closed 11-5. Thursday missed. Buffalo missed. Cincinnati missed. Arizona missed. Detroit missed Sunday night. Live picks live on <a href="week6-matchups.html">Week 6 Predictions</a>.</p>
+      <p>The live wire now lives on the <a href="waiver.html">Week 6 waiver board</a>. Bernard, Pierce, Bourne, Strange, and Marks open that mash. The finished Week 4 stream still sits on this shelf.</p>
+      <p>The <a href="week4-dst.html">Week 4 DST board</a> leaned Minnesota, Seattle, and Baltimore. The <a href="week4-kickers.html">kicker board</a> still loved Brandon Aubrey and had learned to say Ka'imi Fairbairn and Tyler Loop out loud. The live stream lives on <a href="week6-dst.html">Week 6 DST</a> and <a href="week6-kickers.html">Week 6 Kickers</a>.</p>
 
       <div class="ramif">
         <h3>The sixteen, one more time</h3>
@@ -169,7 +168,7 @@ def predictions_article_html():
       </div>
 
       <h2>A last look, because a card this long deserves one</h2>
-      <p>I keep a private list of images from a week that now has one receipt and fifteen arguments. Szmyt holding the follow-through at 56. Boston after 60. Delpit with the ball and one second left. Allen waiting in a Highmark that already has a 24 next to a Chargers night that should have been a loss. Mahomes packing for Las Vegas with Walker already at 360. Darnold walking back into Seattle after Mariota ended the streak. Robinson packing for the dome after 194 in a building that was supposed to own Thursday. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. Spend both, then spend the wire on Allen and Gordon and Sadiq before the room remembers the names.</p>
-      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card), Tyler Sullivan at CBS Sports (Sep 30), John Breech at CBS Sports (Sep 29), Cody Williams at FanSided (Sep 29), the SportsLine model (10,000 sims), the published FanDuel and DraftKings numbers, a Week 3 winners board, and a short post-Week 3 power card. Thursday final from the published box in Cleveland. Waiver names from Justin Boone, RotoBaller, NFL.com, and FanDuel Research. Week 3 scores sit on <a href="week3-matchups.html">Week 3 Predictions</a> and <a href="week2-tape.html">The Second Sunday</a>.</p>
+      <p>I keep a private list of images from a week that now has sixteen receipts. Szmyt holding the follow-through at 56. Boston after 60. Delpit with the ball and one second left. Maye walking out of Highmark after 29-26. Mahomes packing for Las Vegas with Walker already at 360. Darnold walking back into Seattle after Mariota ended the streak. Robinson packing for the dome after 194 in a building that was supposed to own Thursday. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. The live card now lives on Week 6.</p>
+      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card), Tyler Sullivan at CBS Sports (Sep 30), John Breech at CBS Sports (Sep 29), Cody Williams at FanSided (Sep 29), the SportsLine model (10,000 sims), the published FanDuel and DraftKings numbers, a Week 3 winners board, and a short post-Week 3 power card. The Week 4 card is finished. Live picks live on <a href="week6-matchups.html">Week 6 Predictions</a>. Week 3 scores sit on <a href="week3-matchups.html">Week 3 Predictions</a> and <a href="week2-tape.html">The Second Sunday</a>.</p>
     </article>
     """

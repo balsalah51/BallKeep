@@ -11,8 +11,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "October 12, 2026"
-LASTMOD = "2026-10-12"
+UPDATED = "October 19, 2026"
+LASTMOD = "2026-10-19"
 # Safety ceilings above the real tapes. Each published list is every
 # name a long board ranked, which is shorter than these caps.
 KEEP_N = 2000
@@ -78,6 +78,28 @@ from week4_boards import (  # noqa: E402
     week4_dst_board,
     week4_kicker_board,
     week4_matchups,
+)
+from week5_boards import (  # noqa: E402
+    MATCH_SOURCES as W5_MATCH_SOURCES,
+    W5_DST_FAQ,
+    W5_DST_SOURCES,
+    W5_K_FAQ,
+    W5_K_SOURCES,
+    W5_MATCH_FAQ,
+    week5_dst_board,
+    week5_kicker_board,
+    week5_matchups,
+)
+from week6_boards import (  # noqa: E402
+    MATCH_SOURCES as W6_MATCH_SOURCES,
+    W6_DST_FAQ,
+    W6_DST_SOURCES,
+    W6_K_FAQ,
+    W6_K_SOURCES,
+    W6_MATCH_FAQ,
+    week6_dst_board,
+    week6_kicker_board,
+    week6_matchups,
 )
 from idp_board import FENCE_MIXED_SOURCES, fence_board  # noqa: E402
 from bpl_schedule import bpl_games, bpl_schedule_parts  # noqa: E402
@@ -492,28 +514,28 @@ ROOKIES = [
 ]
 
 HOT = [
-    {"name": "Braelon Allen", "pos": "RB", "team": "NYJ", "why": "Hall left Detroit with a thigh and Allen took the last two drives. Every Week 4 waiver list has him first. Chicago is Sunday. Pay the chair before the room remembers the name.", "src": "Yahoo Sports, NFL.com"},
-    {"name": "Ollie Gordon II", "pos": "RB", "team": "MIA", "why": "Achane tore the ACL. Gordon took 17 carries, a score, and 84 percent of the snaps. Second on the Week 4 waiver mash. Minnesota is a brutal first week as the feature, and the role is still the role.", "src": "FanDuel Research, RotoBaller"},
-    {"name": "Kenyon Sadiq", "pos": "TE", "team": "NYJ", "why": "Seven for 105 and a score on eight targets. Mason Taylor was out. Third on the waiver mash. Rooms that treated a 16th overall tight end like a taxi dart can still be bought.", "src": "Yahoo Sports, NFL.com"},
-    {"name": "Denzel Boston", "pos": "WR", "team": "CLE", "why": "Sixty yards on the first play of a scoring drive Thursday, then a 27-24 win. Watson found him. Rooms that added him last week just got a Thursday chapter. Buy any leftover doubt.", "src": "CBS Sports, clevelandbrowns.com"},
-    {"name": "Nico Collins", "pos": "WR", "team": "HOU", "why": "Cleared. Not on Houston's final Week 4 report. Dallas visits a pass defense that just lost in Rio. Rooms that sat him for the hamstring can still be bought before noon.", "src": "NBC Sports, NFL.com"},
-    {"name": "Puka Nacua", "pos": "WR", "team": "LAR", "why": "Hip is a full practice and no designation. Philadelphia is Sunday. Rooms that faded him after Australia already paid. Buy any leftover sit.", "src": "CBS Sports, NFL.com"},
-    {"name": "Bijan Robinson", "pos": "RB", "team": "ATL", "why": "194 and two on Thursday in Green Bay, then a Monday night in the dome. 349 through three weeks. Rooms that faded him after 72 in the 34-3 already paid. Buy any leftover doubt.", "src": "Reuters, CBS Sports"},
-    {"name": "Kenneth Walker", "pos": "RB", "team": "KC", "why": "360 rushing yards, the league lead, in a Chiefs feature. Mahomes is 3-0. Las Vegas is Sunday. Rooms that still have him as a Seahawks memory will sell the year cheap.", "src": "Sporting News"},
-    {"name": "Brock Bowers", "pos": "TE", "team": "LV", "why": "Ten for 116 and a score in the first game back. Sits first on the weekly tight end mash. Kansas City visits. Start him even if the Keep price already moved.", "src": "Sporting News, FantasyPros"},
-    {"name": "Jordan Addison", "pos": "WR", "team": "MIN", "why": "Jefferson is out. Addison is the first read against Miami. DraftKings and RotoBaller both start him as a WR3 or flex. Sunday is the week the chair opens.", "src": "DraftKings, RotoBaller"},
+    {"name": "Germie Bernard", "pos": "WR", "team": "PIT", "why": "Six for 80 on nine targets, 94 percent of the routes, Pittman on IR, Wilson out a couple of weeks. Boone put him first on the Week 6 waiver mash. Tampa Bay is Sunday. Pay the chair before the room remembers the name.", "src": "Yahoo Sports, FantasyPros"},
+    {"name": "Dameon Pierce", "pos": "RB", "team": "PHI", "why": "Barkley is a hamstring. Bigsby is on IR. Shipley is a plantar fascia. Hurts is a blood clot. Pierce took 11 carries in London and sits second on the waiver mash. Carolina visits.", "src": "Yahoo Sports, NFL.com"},
+    {"name": "Woody Marks", "pos": "RB", "team": "HOU", "why": "Montgomery left with a groin. Marks took 15 carries and four catches. Third on the NFL.com wire, first on the FFToday touch column. London is Sunday. The role is the role.", "src": "NFL.com, FFToday"},
+    {"name": "Drake Maye", "pos": "QB", "team": "NE", "why": "374 and four against Las Vegas after a month of interceptions. Rooms that still have him as the six-pick chair will sell Year 2 cheap. The Jets visit. Buy the leftover fade.", "src": "Sporting News, CBS Sports"},
+    {"name": "Brock Purdy", "pos": "QB", "team": "SF", "why": "5-0. Eight throwing scores, zero interceptions in three home games. Washington visits Monday. Rooms that faded him after the preseason will still pay a Keep quarterback cheap.", "src": "Sporting News"},
+    {"name": "Kenneth Walker", "pos": "RB", "team": "KC", "why": "The feature in a 4-0 club off a bye. Herbert is 0-5. Rooms that still have him as a Seahawks memory will sell the year cheap.", "src": "Sporting News"},
+    {"name": "Jordan Love", "pos": "QB", "team": "GB", "why": "367 in a 31-7. Dallas visits Sunday night. NFL.com has him fourth on the Week 6 waiver mash because rooms still have him as 52 percent. Buy the leftover sit.", "src": "NFL.com, CBS Sports"},
+    {"name": "Brenton Strange", "pos": "TE", "team": "JAX", "why": "26.2 percent target share the last two weeks, 14 for 163. Second on the NFL.com wire, fifth on Boone. Houston visits London. Stream him until the room remembers.", "src": "NFL.com, Yahoo Sports"},
+    {"name": "Kendrick Bourne", "pos": "WR", "team": "ARI", "why": "Harrison went to Houston. Bourne is the WR2, 5 for 70 on eight targets. Third on Boone, sixth on NFL.com. The Rams are a brutal first week in the chair, and the role is still the role.", "src": "Yahoo Sports, FantasyPros"},
+    {"name": "Jaxon Smith-Njigba", "pos": "WR", "team": "SEA", "why": "134 yards on a Thursday Seattle lost. Rooms that fade him after a short-week loss will sell a Keep receiver cheap. Buy any leftover sit.", "src": "ESPN, Sporting News"},
 ]
 COLD = [
-    {"name": "De'Von Achane", "pos": "RB", "team": "MIA", "why": "ACL, the year is over. Gordon already took the snaps. Keep rooms that still have him as a first-round chair will sell the memory. Take the years if the price is a 2027 first and sit the rest.", "src": "FanDuel Research, CBS Sports"},
-    {"name": "Baker Mayfield", "pos": "QB", "team": "TB", "why": "Dislocated thumb, two or three weeks, Jalon Daniels starts. Green Bay visits. Rooms that still have him as a locked Superflex chair will pay after any spike. Take it.", "src": "FantasyPros, CBS Sports"},
-    {"name": "Breece Hall", "pos": "RB", "team": "NYJ", "why": "Thigh in the fourth quarter at Detroit. Allen already took the last two drives and sits first on the wire. Thighs linger. Sell the starter tag if a manager still wants the name on the card.", "src": "NFL.com, Yahoo Sports"},
-    {"name": "Justin Jefferson", "pos": "WR", "team": "MIN", "why": "Ankle. Out for Miami. Addison gets the targets for one Sunday. Rooms that still have Jefferson as a locked flex will sit him anyway. Sell the week, hold the years.", "src": "CBS Sports, NFL.com"},
-    {"name": "C.J. Stroud", "pos": "QB", "team": "HOU", "why": "0-3, ten sacks, 19-17 at home after Shrader's 43-yarder. Dallas visits. Rooms drafted him like a ceiling. Three weeks have been a floor. If someone still wants the brand, let them pay Superflex money.", "src": "NBC News, Sporting News"},
-    {"name": "Drake Maye", "pos": "QB", "team": "NE", "why": "Six interceptions, one passing score, 36 points as a club. Buffalo is Sunday. Year 2 still asks for time. Flip after any spike before the room remembers the playoff tape.", "src": "CBS Sports, FantasyPros"},
-    {"name": "Jalen Hurts", "pos": "QB", "team": "PHI", "why": "Seven points at home against Keenum. No first-quarter score all year. The Rams visit on a short week. If a room still has him as a top-three Superflex chair, take the overpay.", "src": "CBS Sports, Reuters"},
-    {"name": "Justin Herbert", "pos": "QB", "team": "LAC", "why": "14.7 points a night, 0-3, four interceptions, and Seattle at home. Rooms drafted him like a ceiling. Three weeks have been a floor. If someone still wants the brand, let them pay it.", "src": "CBS Sports"},
-    {"name": "Jayden Daniels", "pos": "QB", "team": "WAS", "why": "Left elbow again. Mariota just won in Seattle. ESPN already talks about a month. Superflex rooms that just watched 1-2 will sell a Keep quarterback cheap. Pay the years, sit the month.", "src": "ESPN, FantasyPros"},
-    {"name": "DeVonta Smith", "pos": "WR", "team": "PHI", "why": "Hamstring. Out against the Rams. Brown is out too. Rooms that still have him as a locked WR2 will sit the week. Sell any leftover start hope.", "src": "CBS Sports, NFL.com"},
+    {"name": "Jalen Hurts", "pos": "QB", "team": "PHI", "why": "Blood clot. Carolina visits. Rooms that still have him as a locked Superflex chair will pay after any rumor. Take the years if the price is a first, sit the week.", "src": "Yahoo Sports, CBS Sports"},
+    {"name": "Saquon Barkley", "pos": "RB", "team": "PHI", "why": "Hamstring, week to week, and the Eagles already ran out of healthy backs. Pierce is the claim. Sell the starter tag if a manager still wants the name on the card.", "src": "NFL.com, FantasyPros"},
+    {"name": "De'Von Achane", "pos": "RB", "team": "MIA", "why": "ACL, the year is over, and Miami sits this week. Keep rooms that still have him as a first-round chair will sell the memory. Take the years if the price is a 2027 first.", "src": "FanDuel Research, CBS Sports"},
+    {"name": "Baker Mayfield", "pos": "QB", "team": "TB", "why": "Dislocated thumb. Daniels started again. Pittsburgh visits. Rooms that still have him as a locked Superflex chair will pay after any spike. Take it.", "src": "FantasyPros, CBS Sports"},
+    {"name": "Justin Herbert", "pos": "QB", "team": "LAC", "why": "0-5, an interception every week, Kansas City off a bye. Rooms drafted him like a ceiling. Five weeks have been a floor. If someone still wants the brand, let them pay Superflex money.", "src": "Sporting News, CBS Sports"},
+    {"name": "CeeDee Lamb", "pos": "WR", "team": "DAL", "why": "Quad. 56.7 percent of the snaps on Thursday. Green Bay is Sunday night. Rooms that still have him as a locked WR1 will sit the week. Sell any leftover start hope.", "src": "FantasyPros, CBS Sports"},
+    {"name": "Quinshon Judkins", "pos": "RB", "team": "CLE", "why": "Walking boot after the Jets. Baltimore visits. McLaughlin is on the wire. Sell the starter tag if a manager still wants the Thursday chapter.", "src": "Yahoo Sports, FantasyPros"},
+    {"name": "David Montgomery", "pos": "RB", "team": "HOU", "why": "Groin. Marks already took the snaps. London is Sunday. Rooms that still have him as the feature will sell after the next report. Take it.", "src": "NFL.com, FFToday"},
+    {"name": "Breece Hall", "pos": "RB", "team": "NYJ", "why": "Thigh that has already lasted two weeks. Allen has the chair. New England is Sunday. Sell the starter tag if a manager still wants the name.", "src": "NFL.com, Yahoo Sports"},
+    {"name": "Will Shipley", "pos": "RB", "team": "PHI", "why": "Plantar fascia, multiple weeks. Pierce is the claim. Rooms that paid Week 5 FAAB for him just watched the chair close. Sell the leftover hope.", "src": "FantasyPros, Yahoo Sports"},
 ]
 
 
@@ -910,58 +932,58 @@ def superflex_redraft(keep, ppr):
 NAV_GROUPS = [
     ("leads", "Boards", [
         ("index.html", "Home"),
-        ("the-keep.html", "The Keep"),
-        ("board.html", "The Board"),
+        ("the-keep.html", "Keep · Dynasty SF"),
+        ("board.html", "Board · Redraft PPR"),
     ]),
-    ("ros", "ROS", [
+    ("ros", "Season", [
         ("redraft-superflex.html", "Redraft Superflex"),
-        ("the-classic.html", "The Classic"),
+        ("the-classic.html", "Classic · Half-PPR"),
         ("redraft-standard.html", "Redraft STD"),
         ("best-ball.html", "Best Ball"),
         ("rookies-2026.html", "2026 Rookies"),
     ]),
-    ("st", "ST", [
+    ("st", "DST / K", [
         ("defenses.html", "The D (DST)"),
         ("kickers.html", "Kickers"),
     ]),
-    ("week", "Week 4", [
+    ("week", "Week 6", [
         ("weekly.html", "Weekly"),
-        ("the-recap.html", "The Recap"),
-        ("week4-dst.html", "Week 4 DST"),
-        ("week4-kickers.html", "Week 4 K"),
-        ("week4-matchups.html", "Week 4 Predictions"),
-        ("waiver.html", "Week 4 Waivers"),
-        ("the-market.html", "The Market"),
+        ("week6-dst.html", "Week 6 DST"),
+        ("week6-kickers.html", "Week 6 K"),
+        ("week6-matchups.html", "Week 6 Predictions"),
+        ("waiver.html", "Week 6 Waivers"),
         ("injuries.html", "Injuries"),
     ]),
     ("tools", "Tools", [
         ("adp.html", "ADP"),
         ("trade.html", "Trade"),
-        ("the-handcuff.html", "The Handcuff"),
+        ("the-handcuff.html", "Handcuff · RB"),
         ("the-method.html", "The Method"),
     ]),
     ("mine", "Yours", [
         ("league.html", "My Team"),
     ]),
-    ("tape", "Tape", [
+    ("tape", "Essays", [
         ("articles.html", "Articles"),
+        ("the-recap.html", "Week 1 Recap"),
         ("touches.html", "Touches"),
         ("players/index.html", "Players"),
         ("news.html", "News"),
-        ("the-x.html", "The X"),
+        ("the-x.html", "The X · Pictures"),
         ("hot-n-cold.html", "Hot 'n' Cold"),
+        ("the-market.html", "The Market"),
     ]),
-    ("slates", "Slates", [
+    ("slates", "Schedules", [
         ("nfl-schedule.html", "NFL"),
         ("mlb-schedule.html", "MLB"),
         ("bpl-schedule.html", "BPL"),
     ]),
-    ("fence", "Fence", [
-        ("the-fence.html", "The Fence (IDP)"),
+    ("fence", "IDP", [
+        ("the-fence.html", "Fence · Superflex + IDP"),
     ]),
 ]
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 77
+CSS_VER = 79
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1198,7 +1220,7 @@ ROOKIE_SOURCES = [
 FB_SEO = {
     "index.html": (
         "Fantasy Football Superflex Dynasty Rankings | Ball Keep",
-        "2026 Superflex dynasty and redraft PPR rankings from 40 boards. BK Value trade calculator, player files, and hourly NFL news.",
+        "2026 Superflex dynasty and redraft PPR rankings from a 40-board Super Aggregate plus Sleeper. BK Value trade calculator and player files.",
         "img/hero.jpg",
     ),
     "the-keep.html": (
@@ -1253,7 +1275,7 @@ FB_SEO = {
     ),
     "hot-n-cold.html": (
         "Dynasty Hot and Cold Board - Buys and Sells | Ball Keep",
-        "Ball Keep Hot 'n' Cold: into Week 4 dynasty buys and sells from ESPN, Reuters, Sports Illustrated, RotoBaller, and FantasyPros, tied to The Keep ranks.",
+        "Ball Keep Hot 'n' Cold: into Week 6 dynasty buys and sells from ESPN, Reuters, Sports Illustrated, RotoBaller, and FantasyPros, tied to The Keep ranks.",
         "img/logo.jpg",
     ),
     "trade.html": (
@@ -1268,7 +1290,7 @@ FB_SEO = {
     ),
     "news.html": (
         "NFL Injury News and Fantasy Football Wire | Ball Keep",
-        "Hourly football injury, roster, and coach reports clustered from RSS, Google News, X, and YouTube, linked to player files.",
+        "Football injury, roster, and coach reports clustered from RSS, Google News, X, and YouTube, with short snippets and links out to the original stories.",
         "img/logo.jpg",
     ),
     "players/index.html": (
@@ -1282,8 +1304,8 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "mlb-schedule.html": (
-        "MLB September Schedule - Stretch Run | Ball Keep",
-        "September baseball slate on the football boards. Filter by club. Regular season wraps Sunday, Sept. 27, 2026.",
+        "MLB Schedule - Regular Season Wrapped | Ball Keep",
+        "Regular season wrapped Sunday, Sept. 27, 2026. Last September card on the football boards. Filter by club.",
         "img/logo.jpg",
     ),
     "bpl-schedule.html": (
@@ -1302,8 +1324,8 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "weekly.html": (
-        "Week 5 Fantasy Football Rankings 2026 | Ball Keep",
-        "Week 5 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Oct 11), FantasyPros projections, and 4for4.",
+        "Week 6 Fantasy Football Rankings 2026 | Ball Keep",
+        "Week 6 skill start/sit. Flex plus QB, RB, WR, and TE Super Aggregate boards from FantasyPros ECR (updated Oct 17), FantasyPros projections, and 4for4.",
         "img/logo.jpg",
     ),
     "the-recap.html": (
@@ -1317,28 +1339,28 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "weekly-qb.html": (
-        "Week 5 Fantasy Football QB Rankings 2026 | Ball Keep",
-        "Week 5 quarterback Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 6 Fantasy Football QB Rankings 2026 | Ball Keep",
+        "Week 6 quarterback Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-rb.html": (
-        "Week 5 Fantasy Football RB Rankings 2026 | Ball Keep",
-        "Week 5 running back Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 6 Fantasy Football RB Rankings 2026 | Ball Keep",
+        "Week 6 running back Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-wr.html": (
-        "Week 5 Fantasy Football WR Rankings 2026 | Ball Keep",
-        "Week 5 receiver Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 6 Fantasy Football WR Rankings 2026 | Ball Keep",
+        "Week 6 receiver Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "weekly-te.html": (
-        "Week 5 Fantasy Football TE Rankings 2026 | Ball Keep",
-        "Week 5 tight end Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
+        "Week 6 Fantasy Football TE Rankings 2026 | Ball Keep",
+        "Week 6 tight end Super Aggregate from weekly boards. 50% FantasyPros ECR. Projected PPR points sit next to the rank.",
         "img/logo.jpg",
     ),
     "waiver.html": (
-        "Week 4 Fantasy Football Waiver Wire | Ball Keep",
-        "Week 4 consensus waivers after the third Sunday. Super Aggregate of published pickup lists. Allen, Gordon, and Sadiq lead the mash.",
+        "Week 6 Fantasy Football Waiver Wire | Ball Keep",
+        "Week 6 consensus waivers after the fifth Sunday. Super Aggregate of published pickup lists. Bernard, Pierce, and Bourne lead the mash.",
         "img/logo.jpg",
     ),
     "adp.html": (
@@ -1353,7 +1375,7 @@ FB_SEO = {
     ),
     "injuries.html": (
         "NFL Injury Report | Fantasy Football | Ball Keep",
-        "Skill-position injury designations from ESPN club tables, tied to Week 4 fantasy football boards.",
+        "Skill-position injury designations from ESPN club tables, tied to Week 6 fantasy football boards.",
         "img/logo.jpg",
     ),
     "depth-charts.html": (
@@ -1393,18 +1415,48 @@ FB_SEO = {
     ),
     "week4-dst.html": (
         "Week 4 Fantasy Football DST Rankings 2026 | Ball Keep",
-        "Week 4 team DST Super Aggregate of published weekly boards. Minnesota, Seattle, and Baltimore lead the stream.",
+        "Finished Week 4 team DST Super Aggregate of published weekly boards. Minnesota, Seattle, and Baltimore led the stream.",
         "img/logo.jpg",
     ),
     "week4-kickers.html": (
         "Week 4 Fantasy Football Kicker Rankings 2026 | Ball Keep",
-        "Week 4 kicker Super Aggregate. 50% FantasyPros ECR and RotoBaller. Aubrey, Fairbairn, and Loop lead the stream.",
+        "Finished Week 4 kicker Super Aggregate. 50% FantasyPros ECR and RotoBaller. Aubrey, Fairbairn, and Loop led the stream.",
         "img/logo.jpg",
     ),
     "week4-matchups.html": (
         "Week 4 NFL Matchups and Win Predictions 2026 | Ball Keep",
-        "Week 4 card after Thursday in Cleveland. Browns 27-24. Sunday and Monday still open.",
+        "Finished Week 4 card. Browns 27-24. Patriots 29-26. Falcons 45-24. The mash closed 11-5.",
         "img/players/josh-allen.png",
+    ),
+    "week5-dst.html": (
+        "Week 5 Fantasy Football DST Rankings 2026 | Ball Keep",
+        "Finished Week 5 team DST Super Aggregate of published weekly boards. Kansas City and Carolina were on bye.",
+        "img/logo.jpg",
+    ),
+    "week5-kickers.html": (
+        "Week 5 Fantasy Football Kicker Rankings 2026 | Ball Keep",
+        "Finished Week 5 kicker Super Aggregate. 50% FantasyPros ECR and RotoBaller. Aubrey led the stream.",
+        "img/logo.jpg",
+    ),
+    "week5-matchups.html": (
+        "Week 5 NFL Matchups and Win Predictions 2026 | Ball Keep",
+        "Finished Week 5 card. Buccaneers 24-16. Patriots 45-17. Bills 37-34. The mash closed 10-4-1.",
+        "img/players/dak-prescott.png",
+    ),
+    "week6-dst.html": (
+        "Week 6 Fantasy Football DST Rankings 2026 | Ball Keep",
+        "Week 6 team DST Super Aggregate of published weekly boards. Kansas City, New England, and Indianapolis lead the stream.",
+        "img/logo.jpg",
+    ),
+    "week6-kickers.html": (
+        "Week 6 Fantasy Football Kicker Rankings 2026 | Ball Keep",
+        "Week 6 kicker Super Aggregate. 50% FantasyPros ECR and RotoBaller. Shrader, Aubrey, and Little lead the stream.",
+        "img/logo.jpg",
+    ),
+    "week6-matchups.html": (
+        "Week 6 NFL Matchups and Win Predictions 2026 | Ball Keep",
+        "Week 6 card after Thursday in Denver. Broncos 17-14. Sunday and Monday still open.",
+        "img/players/jaxon-smith-njigba.jpg",
     ),
     "archive/week1/index.html": (
         "Week 1 Archive | Ball Keep",
@@ -1524,17 +1576,17 @@ FB_SEO = {
 }
 
 HOME_FAQ = [
-    ("What is Ball Keep?", "The Keep is Superflex Dynasty - 40 boards, the full ranked tape. The Fence is Superflex + IDP. The Board is Redraft PPR for this year. BK Value prices trades. BK News clusters the injury and roster wire every hour."),
-    ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 4 boards, Weekly, and Week 4 Waivers are this week's stream."),
+    ("What is Ball Keep?", "A 40-board Super Aggregate for Superflex dynasty and redraft PPR, with Sleeper so you can load your own team. The Keep is the dynasty list. The Board is this year's PPR list. BK Value prices trades on each board's ranks."),
+    ("Which lists are rest of season?", "The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, Top Defenses, and Top Kickers are rest-of-season values. Week 6 boards, Weekly, and Week 6 Waivers are this week's stream."),
     ("What is The Fence?", "Mixed Superflex + IDP. Glossery mixed 725 plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. IDP names are marked in red."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player."),
-    ("What is BK Value?", "Rank 1 is 12,000. The curve decays so mid-board names still trade. Fair means the two sides are within 8%."),
+    ("What is BK Value?", "Each list turns its own rank into a trade chip on the same decaying curve. Rank 1 on that list is 12,000. Superflex and PPR print different ranks, so the same name prices differently on each calculator. Fair means the two sides are within 8%."),
     ("Where is the method written down?", "The Method. Super Aggregate, BK Value, rest of season versus this week, and how to write the site."),
-    ("Where are the essays?", "Articles. The Long Game is the Superflex strategy piece for the years. The Recap, Week 4 Predictions, The Market, and The Method live there too."),
-    ("What other sports are on this site?", "BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
+    ("Where are the essays?", "Articles. The Long Game is the Superflex strategy piece for the years. The Recap, Week 6 Predictions, The Market, and The Method live there too."),
+    ("What other sports are on this site?", "Football is the live board this fall. BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Every name a long board ranked, from 40 public boards, rebuilt October 12, 2026 from the live public lists."),
+    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Every name a long board ranked, from 40 public boards, rebuilt October 17, 2026 from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
     ("How many boards rank each name?", "At least 10. A two-board average is a coin flip. Short lists stay short for names they already ranked. Thinner names pick up the next ranks those same boards would have given them."),
@@ -1562,8 +1614,8 @@ FENCE_FAQ = [
     ("Why are some names red?", "DL, LB, and DB rows are marked in red so the IDP names stand out while you scroll."),
 ]
 NEWS_FAQ = [
-    ("Where does BK News come from?", "Hourly clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with links back to the original boards and to Keep player files."),
-    ("How often does the wire refresh?", "The scrape runs every hour. New URLs merge into the cluster; the static pages rebuild when the tape moved."),
+    ("Where does BK News come from?", "Clusters from league RSS, Google News, X, and YouTube. Each story is an aggregate with short snippets and links out to the original boards, plus Keep player files."),
+    ("How often does the wire refresh?", "This board holds the last clustered scrape, with links out, until the next rebuild."),
     ("Why do stories link to player pages?", "Named Keep, Board, and rookie files sit on the cluster so you can jump from the injury to the rank."),
 ]
 W1_DST_FAQ = [
@@ -1668,7 +1720,7 @@ FB_ALSO = {
     "players/index.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, the full ranked tape."),
         ("board.html", "The Board", "Redraft PPR."),
-        ("news.html", "BK News", "Hourly wire."),
+        ("news.html", "BK News", "Injury and roster tape."),
         ("trade.html", "Trade Calculators", "Price any name."),
     ],
     "the-x.html": [
@@ -1680,7 +1732,7 @@ FB_ALSO = {
     "nfl-schedule.html": [
         ("the-keep.html", "The Keep", "Dynasty ranks by club."),
         ("news.html", "BK News", "Injuries on the slate."),
-        ("mlb-schedule.html", "MLB Schedule", "September baseball."),
+        ("mlb-schedule.html", "MLB Schedule", "Regular season wrapped Sept. 27."),
         ("bpl-schedule.html", "BPL Schedule", "Premier League slate."),
     ],
     "mlb-schedule.html": [
@@ -1693,26 +1745,26 @@ FB_ALSO = {
         ("pl/index.html", "PitchKeep", "Premier League boards."),
         ("pl/the-premier.html", "The Premier", "The full hybrid tape."),
         ("nfl-schedule.html", "NFL Schedule", "Football slate."),
-        ("mlb-schedule.html", "MLB Schedule", "September baseball."),
+        ("mlb-schedule.html", "MLB Schedule", "Regular season wrapped Sept. 27."),
     ],
     "defenses.html": [
-        ("week4-dst.html", "Week 4 DST", "This week's stream."),
+        ("week6-dst.html", "Week 6 DST", "This week's stream."),
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP names."),
         ("kickers.html", "Top Kickers", "The kicking board."),
         ("board.html", "The Board", "Skill-player PPR."),
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
     "kickers.html": [
-        ("week4-kickers.html", "Week 4 Kickers", "This week's stream."),
+        ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
         ("defenses.html", "Top Defenses", "Aggregate DST."),
         ("board.html", "The Board", "Skill-player PPR."),
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
     "weekly.html": [
         ("the-recap.html", "The Recap", "Full Week 1 essay after sixteen scores."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
         ("adp.html", "ADP", "Board vs ESPN."),
-        ("week4-dst.html", "Week 4 DST", "This week's stream."),
+        ("week6-dst.html", "Week 6 DST", "This week's stream."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "the-recap.html": [
@@ -1720,58 +1772,58 @@ FB_ALSO = {
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("weekly.html", "Weekly", "Flex plus every position."),
         ("the-market.html", "The Market", "Buy low, sell high after the opener."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, Keenan Allen."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick for every game, plus the full essay."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, Strange."),
+        ("week6-matchups.html", "Week 6 Predictions", "A pick for every game, plus the full essay."),
         ("archive/week1/index.html", "Week 1 archive", "Opening, DST, kickers, matchups, waivers."),
     ],
     "the-market.html": [
         ("articles.html", "Articles", "The long reads."),
         ("the-recap.html", "The Recap", "Full Week 1 essay and the sixteen scores."),
         ("hot-n-cold.html", "Hot 'n' Cold", "Dynasty buys and sells after the opener."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, Keenan Allen."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, Strange."),
         ("trade.html", "Trade", "Price a deal."),
         ("weekly.html", "Weekly", "This week's skill boards."),
     ],
     "weekly-qb.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
-        ("weekly-rb.html", "Week 4 RB", "Backs."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("weekly-rb.html", "Week 6 RB", "Backs."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "weekly-rb.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
-        ("weekly-wr.html", "Week 4 WR", "Receivers."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("weekly-wr.html", "Week 6 WR", "Receivers."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "weekly-wr.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
-        ("weekly-te.html", "Week 4 TE", "Tight ends."),
+        ("weekly-te.html", "Week 6 TE", "Tight ends."),
         ("adp.html", "ADP", "Board vs ESPN."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "weekly-te.html": [
         ("weekly.html", "Weekly", "Flex plus every position."),
-        ("weekly-qb.html", "Week 4 QB", "Quarterbacks."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("weekly-qb.html", "Week 6 QB", "Quarterbacks."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ],
     "waiver.html": [
         ("weekly.html", "Weekly", "Full Week N boards."),
         ("the-recap.html", "The Recap", "Why these names moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick for every game, plus the full essay."),
+        ("week6-matchups.html", "Week 6 Predictions", "A pick for every game, plus the full essay."),
     ],
     "adp.html": [
         ("board.html", "The Board", "Season PPR ranks."),
         ("weekly.html", "Weekly", "This week's skill boards."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
         ("the-classic.html", "The Classic", "Half-PPR draft check."),
     ],
     "league.html": [
         ("trade.html", "Trade Calculators", "Price a deal."),
         ("the-keep.html", "The Keep", "Superflex dynasty."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
         ("adp.html", "ADP", "Board vs ESPN."),
         ("weekly.html", "Weekly", "This week's skill boards."),
     ],
@@ -1779,80 +1831,122 @@ FB_ALSO = {
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty cuffs and redraft cuffs."),
         ("weekly.html", "Weekly", "Start/sit around the report."),
         ("depth-charts.html", "Depth Charts", "Who is next up."),
-        ("news.html", "BK News", "Hourly wire."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick for every game."),
+        ("news.html", "BK News", "Injury and roster tape."),
+        ("week6-matchups.html", "Week 6 Predictions", "A pick for every game."),
     ],
     "depth-charts.html": [
         ("the-handcuff.html", "The Handcuff", "RB only. Dynasty cuffs and redraft cuffs."),
         ("injuries.html", "Injuries", "Who is actually up."),
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("nfl-schedule.html", "NFL Schedule", "Full slate."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick for every game."),
+        ("week6-matchups.html", "Week 6 Predictions", "A pick for every game."),
     ],
     "week2-dst.html": [
-        ("week4-dst.html", "Week 4 DST", "This week's stream."),
+        ("week6-dst.html", "Week 6 DST", "This week's stream."),
         ("week2-kickers.html", "Week 2 Kickers", "Finished Week 2 card."),
         ("week2-matchups.html", "Week 2 Predictions", "Finished card, 11-5."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
         ("defenses.html", "Top Defenses", "Season-long DST."),
         ("weekly.html", "Weekly", "Skill start/sit."),
     ],
     "week2-kickers.html": [
-        ("week4-kickers.html", "Week 4 Kickers", "This week's stream."),
+        ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
         ("week2-dst.html", "Week 2 DST", "Finished Week 2 card."),
         ("week2-matchups.html", "Week 2 Predictions", "Finished card, 11-5."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("nfl-schedule.html", "NFL Schedule", "Full slate."),
     ],
     "week2-matchups.html": [
-        ("week4-matchups.html", "Week 4 Predictions", "This week's card. Thursday is in."),
+        ("week6-matchups.html", "Week 6 Predictions", "This week's card. Thursday is in."),
         ("the-recap.html", "The Recap", "The full Week 1 essay."),
         ("week2-dst.html", "Week 2 DST", "Finished Week 2 card."),
         ("week2-kickers.html", "Week 2 Kickers", "Finished Week 2 card."),
         ("weekly.html", "Weekly", "This week's skill boards."),
     ],
     "week3-dst.html": [
-        ("week4-dst.html", "Week 4 DST", "This week's stream."),
+        ("week6-dst.html", "Week 6 DST", "This week's stream."),
         ("week3-kickers.html", "Week 3 Kickers", "Finished Week 3 card."),
         ("week3-matchups.html", "Week 3 Predictions", "Finished Week 3 card."),
         ("defenses.html", "Top Defenses", "Season-long DST."),
         ("week2-dst.html", "Week 2 DST", "Finished Week 2 card."),
     ],
     "week3-kickers.html": [
-        ("week4-kickers.html", "Week 4 Kickers", "This week's stream."),
+        ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
         ("week3-dst.html", "Week 3 DST", "Finished Week 3 card."),
         ("week3-matchups.html", "Week 3 Predictions", "Finished Week 3 card."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("week2-kickers.html", "Week 2 Kickers", "Finished Week 2 card."),
     ],
     "week3-matchups.html": [
-        ("week4-matchups.html", "Week 4 Predictions", "This week's card. Thursday is in."),
+        ("week6-matchups.html", "Week 6 Predictions", "This week's card. Thursday is in."),
         ("week3-dst.html", "Week 3 DST", "Finished Week 3 card."),
         ("week3-kickers.html", "Week 3 Kickers", "Finished Week 3 card."),
         ("weekly.html", "Weekly", "This week's skill boards."),
         ("week2-matchups.html", "Week 2 Predictions", "Finished card, 11-5."),
     ],
     "week4-dst.html": [
-        ("week4-kickers.html", "Week 4 Kickers", "This week's stream."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick for every game, plus the full essay."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("week6-dst.html", "Week 6 DST", "This week's stream."),
+        ("week4-kickers.html", "Week 4 Kickers", "Finished Week 4 card."),
+        ("week4-matchups.html", "Week 4 Predictions", "Finished Week 4 card."),
+        ("week5-dst.html", "Week 5 DST", "Finished Week 5 card."),
         ("defenses.html", "Top Defenses", "Season-long DST."),
-        ("week3-dst.html", "Week 3 DST", "Finished Week 3 card."),
     ],
     "week4-kickers.html": [
-        ("week4-dst.html", "Week 4 DST", "This week's stream."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick for every game, plus the full essay."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
+        ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
+        ("week4-dst.html", "Week 4 DST", "Finished Week 4 card."),
+        ("week4-matchups.html", "Week 4 Predictions", "Finished Week 4 card."),
         ("kickers.html", "Top Kickers", "Season-long K."),
-        ("week3-kickers.html", "Week 3 Kickers", "Finished Week 3 card."),
+        ("week5-kickers.html", "Week 5 Kickers", "Finished Week 5 card."),
     ],
     "week4-matchups.html": [
-        ("week4-dst.html", "Week 4 DST", "Start/sit defenses."),
-        ("week4-kickers.html", "Week 4 Kickers", "Start/sit kickers."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
-        ("weekly.html", "Weekly", "This week's skill boards."),
+        ("week6-matchups.html", "Week 6 Predictions", "This week's card. Thursday is in."),
+        ("week4-dst.html", "Week 4 DST", "Finished Week 4 card."),
+        ("week4-kickers.html", "Week 4 Kickers", "Finished Week 4 card."),
+        ("week5-matchups.html", "Week 5 Predictions", "Finished Week 5 card."),
         ("week3-matchups.html", "Week 3 Predictions", "Finished Week 3 card."),
+    ],
+    "week5-dst.html": [
+        ("week6-dst.html", "Week 6 DST", "This week's stream."),
+        ("week5-kickers.html", "Week 5 Kickers", "Finished Week 5 card."),
+        ("week5-matchups.html", "Week 5 Predictions", "Finished Week 5 card."),
+        ("defenses.html", "Top Defenses", "Season-long DST."),
+        ("week4-dst.html", "Week 4 DST", "Finished Week 4 card."),
+    ],
+    "week5-kickers.html": [
+        ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
+        ("week5-dst.html", "Week 5 DST", "Finished Week 5 card."),
+        ("week5-matchups.html", "Week 5 Predictions", "Finished Week 5 card."),
+        ("kickers.html", "Top Kickers", "Season-long K."),
+        ("week4-kickers.html", "Week 4 Kickers", "Finished Week 4 card."),
+    ],
+    "week5-matchups.html": [
+        ("week6-matchups.html", "Week 6 Predictions", "This week's card. Thursday is in."),
+        ("week5-dst.html", "Week 5 DST", "Finished Week 5 card."),
+        ("week5-kickers.html", "Week 5 Kickers", "Finished Week 5 card."),
+        ("weekly.html", "Weekly", "This week's skill boards."),
+        ("week4-matchups.html", "Week 4 Predictions", "Finished Week 4 card."),
+    ],
+    "week6-dst.html": [
+        ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
+        ("week6-matchups.html", "Week 6 Predictions", "A pick for every game, plus the full essay."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
+        ("defenses.html", "Top Defenses", "Season-long DST."),
+        ("week5-dst.html", "Week 5 DST", "Finished Week 5 card."),
+    ],
+    "week6-kickers.html": [
+        ("week6-dst.html", "Week 6 DST", "This week's stream."),
+        ("week6-matchups.html", "Week 6 Predictions", "A pick for every game, plus the full essay."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
+        ("kickers.html", "Top Kickers", "Season-long K."),
+        ("week5-kickers.html", "Week 5 Kickers", "Finished Week 5 card."),
+    ],
+    "week6-matchups.html": [
+        ("week6-dst.html", "Week 6 DST", "Start/sit defenses."),
+        ("week6-kickers.html", "Week 6 Kickers", "Start/sit kickers."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
+        ("weekly.html", "Weekly", "This week's skill boards."),
+        ("week5-matchups.html", "Week 5 Predictions", "Finished Week 5 card."),
     ],
     "the-fence.html": [
         ("the-keep.html", "The Keep", "Superflex dynasty, the full ranked tape."),
@@ -1892,7 +1986,7 @@ FB_ALSO = {
         ("week2-ledger.html", "The Ledger", "RB2 on the lists, and what Week 2 paid."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("the-recap.html", "The Recap", "The full Week 1 essay."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick on every line. Thursday is in."),
+        ("week6-matchups.html", "Week 6 Predictions", "A pick on every line. Thursday is in."),
         ("the-market.html", "The Market", "Buy low and sell high after Week 1."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
         ("the-keep.html", "The Keep", "Superflex dynasty, the full ranked tape."),
@@ -1950,7 +2044,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
         <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" width="56" height="56" />
         <div>
           <p class="brand-title">{wordmark()}</p>
-          <p>Dynasty · Redraft</p>
+          <p>40 boards · Superflex · PPR · Sleeper</p>
         </div>
       </a>
       {fb_header_nav(path, depth)}
@@ -1961,7 +2055,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
     <footer>
       <div class="footer-mast">
         <p class="footer-mark">{wordmark()}</p>
-        <p>Super Aggregates · BK Value · hourly wire</p>
+        <p>40-board Super Aggregate · BK Value · Sleeper</p>
       </div>
       <p class="footer-copy">© {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Independent of the NFL, MLB, NBA, and Premier League.</p>
       {foot}
@@ -2231,36 +2325,26 @@ def seed_player_pages():
 
 
 def home_week_faces():
-    """Faces and the recap teaser so the home week block feels like a room."""
-    from the_long_game import long_game_teaser
-    from the_recap import recap_teaser
-    from two_clocks import clocks_teaser
-    from week2_ledger import ledger_teaser
-    from week2_tape import tape_teaser
-    from week4_predictions import predictions_teaser
+    """Faces and the live Week 6 teaser so the home week block stays current."""
+    from week6_predictions import predictions_teaser
     shots = [
-        ("josh-allen", "png", "Josh Allen"),
-        ("jahmyr-gibbs", "jpg", "Jahmyr Gibbs"),
-        ("patrick-mahomes", "png", "Patrick Mahomes"),
-        ("lamar-jackson", "png", "Lamar Jackson"),
         ("jaxon-smith-njigba", "jpg", "Jaxon Smith-Njigba"),
-        ("bijan-robinson", "jpg", "Bijan Robinson"),
         ("brock-purdy", "jpg", "Brock Purdy"),
+        ("josh-allen", "png", "Josh Allen"),
+        ("patrick-mahomes", "png", "Patrick Mahomes"),
+        ("drake-maye", "jpg", "Drake Maye"),
         ("kenneth-walker", "jpg", "Kenneth Walker"),
+        ("puka-nacua", "jpg", "Puka Nacua"),
+        ("jordan-love", "png", "Jordan Love"),
     ]
     pics = "".join(
-        f'<a href="week4-matchups.html"><img src="img/players/{slug}.{ext}" alt="{name}" '
+        f'<a href="week6-matchups.html"><img src="img/players/{slug}.{ext}" alt="{name}" '
         f'width="120" height="120" loading="lazy" /></a>'
         for slug, ext, name in shots
     )
     return (
         predictions_teaser()
-        + clocks_teaser()
-        + tape_teaser()
-        + ledger_teaser()
-        + long_game_teaser()
-        + recap_teaser()
-        + f'<div class="home-faces" aria-label="Faces from Week 4">{pics}</div>'
+        + f'<div class="home-faces" aria-label="Faces from Week 6">{pics}</div>'
     )
 
 
@@ -2317,8 +2401,8 @@ def home_body_html(keep, board, media, stories=None):
             '<section class="desk-block tape home-wire">'
             '<div class="home-sec-head">'
             '<p class="kicker">BK News</p>'
-            "<h2>The hourly wire.</h2>"
-            '<p class="note">Injuries, roster, and coach tape clustered every hour.</p>'
+            "<h2>The clustered wire.</h2>"
+            '<p class="note">Injuries, roster, and coach tape with short snippets and links out to the original stories.</p>'
             "</div>"
             f"{news_block}"
             "</section>"
@@ -2330,6 +2414,7 @@ def home_body_html(keep, board, media, stories=None):
         {sr_h1("Fantasy Football Superflex Dynasty Rankings")}
         <p class="home-eyebrow">Updated {UPDATED} · Superflex dynasty · Redraft PPR</p>
         <p class="home-mark">{wordmark()}</p>
+        <p class="home-lede">Forty public boards mashed into one Super Aggregate, plus Sleeper so you can price the roster you already have.</p>
         <div class="home-ctas">
           <a class="cta" href="the-keep.html">The Keep</a>
           <a class="cta alt" href="board.html">The Board</a>
@@ -2363,19 +2448,17 @@ def home_body_html(keep, board, media, stories=None):
         ("best-ball.html", "Best Ball", "40-board Super Aggregate. Boom weeks. Kickers and DST stay off."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
     ])}
-    {desk_block("ros-st", "More ranks", "DST, Kickers, The Fence.", "Rest-of-season values and the mixed Superflex + IDP board. Week 4 DST and Kickers sit in the Week 4 block.", [
+    {desk_block("ros-st", "More ranks", "DST, Kickers, The Fence.", "Rest-of-season values and the mixed Superflex + IDP board. Week 6 DST and Kickers sit in the Week 6 block.", [
         ("defenses.html", "The D (DST)", "Season-long team DST."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP, the full ranked tape."),
     ])}
-    {desk_block("week", "Week 4", "This week's stream.", "Weekly boards, matchups, and the waiver mash after the third Sunday. Rest-of-season values live in the blocks above.", [
-        ("the-recap.html", "The Recap", "Sixteen scores. Chicago 59. Walker 173. Seahawks 13, Patriots 10."),
+    {desk_block("week", "Week 6", "This week's stream.", "Weekly boards, matchups, and the waiver mash after the fifth Sunday. Rest-of-season values live in the blocks above.", [
         ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
-        ("week4-dst.html", "Week 4 DST", "This week's stream."),
-        ("week4-kickers.html", "Week 4 Kickers", "This week's stream."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick for every game, plus the full essay."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq, and the names Week 3 moved."),
-        ("the-market.html", "The Market", "Buy low, sell high after Week 1."),
+        ("week6-dst.html", "Week 6 DST", "This week's stream."),
+        ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
+        ("week6-matchups.html", "Week 6 Predictions", "A pick for every game, plus the full essay."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne, and the names Week 5 moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ], extra=home_week_faces())}
     {desk_block("mine", "Yours", "Put in your own team.", "Load your Sleeper league. BK Value on every roster.", [
@@ -2389,27 +2472,28 @@ def home_body_html(keep, board, media, stories=None):
         ("depth-charts.html", "Depth Charts", "32 clubs."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ])}
-    {desk_block("tape", "Tape", "The non-ranking lists.", "The essays, the market notes, the player files, and the pictures.", [
+    {desk_block("tape", "Essays", "The non-ranking lists.", "The essays, the market notes, the player files, and the pictures.", [
         ("articles.html", "Articles", "The long reads. Strategy and the week."),
+        ("the-recap.html", "Week 1 Recap", "Sixteen scores from the opener. Chicago scored 59. Walker ran for 173."),
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
-        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells into Week 4."),
-        ("the-market.html", "The Market", "Buy low, sell high."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells into Week 6."),
+        ("the-market.html", "The Market", "Week 1 buy-low and sell-high names."),
         ("players/index.html", "Player Pages", "The full Keep tape. Tape, plus/minus."),
         ("the-x.html", "The X", "Memes. Pictures on the card."),
         ("news.html", "BK News", "Injuries, roster, coaches."),
     ])}
-    {desk_block("slates", "Slates", "The schedules.", "Football, baseball, and the Premier League.", [
+    {desk_block("slates", "Schedules", "The schedules.", "Football is the live board this fall. Baseball and Premier League keep their own slates.", [
         ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
-        ("mlb-schedule.html", "MLB Schedule", "September slate."),
+        ("mlb-schedule.html", "MLB Schedule", "Regular season wrapped Sept. 27."),
         ("bpl-schedule.html", "BPL Schedule", "2026/27 Premier League."),
     ])}
     <ul class="home-proof">
       <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
       <li><strong>{board_n}</strong><span>redraft boards</span></li>
       <li><strong>{len(keep)}</strong><span>Keep names</span></li>
-      <li><strong>Hourly</strong><span>BK News</span></li>
+      <li><strong>Sleeper</strong><span>My Team</span></li>
     </ul>
     <section class="home-method" aria-label="How the Super Aggregate works">
       <p class="kicker">Method</p>
@@ -2417,7 +2501,7 @@ def home_body_html(keep, board, media, stories=None):
       <ol class="home-steps">
         <li><strong>Half the vote is the long boards.</strong> The tapes that actually go deep enough to matter.</li>
         <li><strong>Half is every other board that ranked the name.</strong> Short lists still move the names they published.</li>
-        <li><strong>Rank 1 is 12,000 BK Value.</strong> Fair is within 8%.</li>
+        <li><strong>Rank becomes a trade chip on that list's curve.</strong> Superflex and PPR print different ranks, so the same name prices differently on each calculator. Rank 1 is 12,000. Fair is within 8%.</li>
       </ol>
       <a class="cta method-cta" href="the-method.html">Read The Method</a>
     </section>
@@ -2425,7 +2509,7 @@ def home_body_html(keep, board, media, stories=None):
     <section class="home-network" aria-label="Other sports">
       <p class="kicker">The other boards</p>
       <h2>Same curve, separate palettes.</h2>
-      <p class="note">BaseKeep, BasketKeep, and PitchKeep use the same rank-to-value idea. Football stays here.</p>
+      <p class="note">Football is the live board this fall. BaseKeep, BasketKeep, and PitchKeep keep the same rank-to-value idea in their own colors.</p>
       <div class="home-network-grid">
         <a class="home-net bb" href="bb/index.html"><span>BaseKeep</span><span>Dynasty baseball. The Keep, The Diamond, The Farm.</span></a>
         <a class="home-net bk" href="bk/index.html"><span>BasketKeep</span><span>Dynasty basketball. The Keep and The Board.</span></a>
@@ -2455,7 +2539,7 @@ def render_news_pages():
             old.unlink()
 
     cards = "".join(news_card(s) for s in stories) or (
-        '<p class="note">The football wire is warming up. The hourly scrape will fill this board.</p>'
+        '<p class="note">No stories on this board yet.</p>'
     )
     chips = []
     for k, lab in (
@@ -2493,9 +2577,9 @@ def render_news_pages():
     }});
     </script>"""
     body = f"""
-    <p class="kicker">BK News · Football · Hourly wire</p>
+    <p class="kicker">BK News · Football · Clustered wire</p>
     <h1>BK News</h1>
-    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. The scrape repeats on its own every hour. Baseball lives on <a href="bb/news.html">BaseKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
+    <p class="note">Injuries, roster moves, and coach reports pulled from search and X, then clustered into short stories with snippets and links out to the original articles. This board holds the last clustered scrape until the next rebuild. Click a row for the aggregate summary, the original articles / X posts / video, and links back to every Ball Keep player page named in the tape. Baseball lives on <a href="bb/news.html">BaseKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
     <p class="note">{f"Last cluster {esc(news_when(updated))}." if updated else "Awaiting first successful pull."}</p>
     <div class="filters" id="news-filters">{filters}</div>
     <div class="news-list" id="news-list">{cards}</div>
@@ -2541,7 +2625,7 @@ def render_news_pages():
                     "</li>"
                 )
             blocks.append(f"<h3>{esc(heading)}</h3><ul class=\"source-list\">{''.join(lis)}</ul>")
-        source_html = "".join(blocks) or "<p class=\"note\">Sources attached on the next hourly pass.</p>"
+        source_html = "".join(blocks) or "<p class=\"note\">No source links on this cluster.</p>"
         people = s.get("players") or []
         if people:
             plist = "".join(
@@ -3054,7 +3138,7 @@ def render_player_pages(profiles):
     {also_on_desk([
         ("../the-keep.html", "The Keep", "Superflex dynasty, the full ranked tape."),
         ("../board.html", "The Board", "Redraft PPR."),
-        ("../news.html", "BK News", "Hourly wire."),
+        ("../news.html", "BK News", "Injury and roster tape."),
         ("../trade.html", "Trade Calculators", "Price any name."),
     ])}
     """
@@ -3440,7 +3524,7 @@ def write_discovery_feeds():
         write(dest, rss_xml(
             title=f"{feed_title} - {brand}",
             link=hub,
-            description=f"Hourly {sport} injury, roster, and coach tape from {brand}.",
+            description=f"{sport} injury, roster, and coach tape from {brand}.",
             items=items,
             self_url=f"https://ballkeep.com/{dest}" if dest != "feed.xml" else "https://ballkeep.com/feed.xml",
         ))
@@ -3497,13 +3581,19 @@ def write_explore_page():
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
         ("defenses.html", "Top DST", "Season-long DST."),
         ("kickers.html", "Top Kickers", "Season-long K."),
-        ("weekly.html", "Weekly", "Week 4 start/sit."),
+        ("weekly.html", "Weekly", "Week 6 start/sit."),
         ("the-recap.html", "The Recap", "Full Week 1 essay."),
         ("the-market.html", "The Market", "Buy low, sell high."),
-        ("week4-dst.html", "Week 4 DST", "This week's stream."),
-        ("week4-kickers.html", "Week 4 Kickers", "This week's stream."),
-        ("week4-matchups.html", "Week 4 Predictions", "A pick for every game."),
-        ("waiver.html", "Week 4 Waivers", "Allen, Gordon, Sadiq."),
+        ("week6-dst.html", "Week 6 DST", "This week's stream."),
+        ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
+        ("week6-matchups.html", "Week 6 Predictions", "A pick for every game."),
+        ("waiver.html", "Week 6 Waivers", "Bernard, Pierce, Bourne."),
+        ("week5-dst.html", "Week 5 DST", "Finished Week 5 card."),
+        ("week5-kickers.html", "Week 5 Kickers", "Finished Week 5 card."),
+        ("week5-matchups.html", "Week 5 Predictions", "Finished Week 5 card."),
+        ("week4-dst.html", "Week 4 DST", "Finished Week 4 card."),
+        ("week4-kickers.html", "Week 4 Kickers", "Finished Week 4 card."),
+        ("week4-matchups.html", "Week 4 Predictions", "Finished Week 4 card."),
         ("week3-dst.html", "Week 3 DST", "Finished Week 3 card."),
         ("week3-kickers.html", "Week 3 Kickers", "Finished Week 3 card."),
         ("week3-matchups.html", "Week 3 Predictions", "Finished Week 3 card."),
@@ -3517,7 +3607,7 @@ def write_explore_page():
         ("league.html", "My Team", "Your Sleeper league."),
         ("touches.html", "Touches and Targets", "2026 targets and rushes."),
         ("players/index.html", "Player Files", "Keep 400 plus tape."),
-        ("news.html", "BK News", "Hourly football wire."),
+        ("news.html", "BK News", "Injury and roster tape."),
         ("the-x.html", "The X", "Football memes."),
         ("nfl-schedule.html", "NFL Schedule", "2026 slate."),
         ("discord.html", "Discord Bot", "Ranks in a server."),
@@ -3580,7 +3670,7 @@ def write_not_found_page():
       <div class="grid-3">
         <a class="tile" href="index.html"><h3>Ball Keep</h3><p>Superflex dynasty and redraft PPR.</p></a>
         <a class="tile" href="the-keep.html"><h3>The Keep</h3><p>Football, the full ranked tape.</p></a>
-        <a class="tile" href="news.html"><h3>BK News</h3><p>Hourly football wire.</p></a>
+        <a class="tile" href="news.html"><h3>BK News</h3><p>Injury and roster tape.</p></a>
         <a class="tile" href="bb/index.html"><h3>BaseKeep</h3><p>Dynasty baseball.</p></a>
         <a class="tile" href="bk/index.html"><h3>BasketKeep</h3><p>Dynasty basketball.</p></a>
         <a class="tile" href="pl/index.html"><h3>PitchKeep</h3><p>Premier League ranks.</p></a>
@@ -3850,7 +3940,7 @@ def main():
     hc_body = f"""
     <p class="kicker">Market Tape · {UPDATED}</p>
     <h1>BK Hot 'n' Cold</h1>
-    <p class="note">Into Week 4. Thursday is in, Cleveland 27-24. Buy the names rooms punished after an ACL, a thumb, a thigh, or a Saturday sit. Sell the names rooms just crowned after one loud night. Pulled from the Thursday tape, ESPN, Reuters, Sports Illustrated, and NFL.com.</p>
+    <p class="note">Into Week 6. Thursday is in, Denver 17-14. Buy the names rooms punished after a hamstring, a blood clot, a groin, or a Saturday sit. Sell the names rooms just crowned after one loud night. Pulled from the Thursday tape, ESPN, Reuters, Sports Illustrated, and NFL.com.</p>
     <div class="grid">
       <div>
         <h3 class="hc-hot">Hot: Buy</h3>
@@ -3862,12 +3952,12 @@ def main():
       </div>
     </div>
     {sources_panel([
-        ("Week 3 Predictions", "week3-matchups.html", "Finished Week 3 card. Twelve one-score games."),
-        ("Week 2 Tape", "week2-tape.html", "Sixteen scores after Monday in Inglewood."),
-        ("Yahoo Sports", "https://sports.yahoo.com/fantasy/article/fantasy-football-waiver-wire-week-4-braelon-allen-ollie-gordon-ii-kenyon-sadiq-among-top-pickups-to-target-170104704.html", "Allen first on the Week 4 waiver mash."),
-        ("RotoBaller", "https://www.rotoballer.com/mid-week-waiver-wire-rankings-fantasy-football-week-4-2026/1954249", "Mariano mid-week board. Allen, Gordon, Sadiq."),
-        ("NFL.com", "https://www.nfl.com/news/2026-nfl-fantasy-football-waiver-wire-week-4-te-juwan-johnson-rb-braelon-allen-headline-targets", "Allen and Sadiq on the Week 4 pickup list."),
-        ("FanDuel Research", "https://www.fanduel.com/research/fantasy-waiver-wire-pickups-10-fantasy-football-adds-heading-into-nfl-week-4", "Gordon first after Achane."),
+        ("Week 6 Predictions", "week6-matchups.html", "This week's card. Thursday is in, Denver 17-14."),
+        ("Week 5 Predictions", "week5-matchups.html", "Finished Week 5 card. The mash closed 10-4-1."),
+        ("Yahoo Sports", "https://sports.yahoo.com/fantasy/article/fantasy-football-waiver-wire-week-6-germie-bernard-dameon-pierce-among-top-adds-140632017.html", "Bernard first on the Week 6 waiver mash."),
+        ("FantasyPros", "https://www.fantasypros.com/2026/10/fantasy-football-waiver-wire-advice-players-to-add-stash-drop-week-6-2026/", "Fitzmaurice. Miller, Pierce, Bernard, Bourne."),
+        ("NFL.com", "https://www.nfl.com/news/2026-nfl-fantasy-football-waiver-wire-week-6-rb-woody-marks-te-brenton-strange-among-targets", "Strange and Marks on the Week 6 pickup list."),
+        ("FFToday", "https://www.fftoday.com/articles/woods/26-touch-transfer-wk6.html", "Marks the rest-of-season chair after Montgomery."),
     ], heading="Boards in This Aggregate")}
     """
     write("hot-n-cold.html", board_page("Hot 'n' Cold", "hot-n-cold.html", hc_body))
@@ -4027,7 +4117,7 @@ def main():
     w3_dst_body = f"""
     <p class="kicker">2026 Week 3 · DST Super Aggregate · {len(W3_DST_SOURCES)} boards</p>
     <h1>Week 3 DST</h1>
-    <p class="note">Finished Week 3 stream. Super Aggregate of {len(W3_DST_SOURCES)} published Week 3 boards: 50% RotoBaller and NBC Sports, 50% FantasyPros, the RotoBaller streamer column, implied totals, and Week 2 form. {w3_dst_lead} led the stream. Live start/sit lives on <a href="week4-dst.html">Week 4 DST</a>.</p>
+    <p class="note">Finished Week 3 stream. Super Aggregate of {len(W3_DST_SOURCES)} published Week 3 boards: 50% RotoBaller and NBC Sports, 50% FantasyPros, the RotoBaller streamer column, implied totals, and Week 2 form. {w3_dst_lead} led the stream. Live start/sit lives on <a href="week6-dst.html">Week 6 DST</a>.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(w3_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(W3_DST_SOURCES, heading="Boards in This Super Aggregate")}
@@ -4049,7 +4139,7 @@ def main():
     w3_k_body = f"""
     <p class="kicker">2026 Week 3 · K Super Aggregate · {len(W3_K_SOURCES)} boards</p>
     <h1>Week 3 Kickers</h1>
-    <p class="note">Finished Week 3 stream. Super Aggregate of {len(W3_K_SOURCES)} published Week 3 boards: 50% FantasyPros ECR and RotoBaller, 50% Sports Illustrated and Sporting News. {w3_k_lead} sat first among the kickers. Live start/sit lives on <a href="week4-kickers.html">Week 4 Kickers</a>.</p>
+    <p class="note">Finished Week 3 stream. Super Aggregate of {len(W3_K_SOURCES)} published Week 3 boards: 50% FantasyPros ECR and RotoBaller, 50% Sports Illustrated and Sporting News. {w3_k_lead} sat first among the kickers. Live start/sit lives on <a href="week6-kickers.html">Week 6 Kickers</a>.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(w3_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(W3_K_SOURCES, heading="Boards in This Super Aggregate")}
@@ -4080,7 +4170,7 @@ def main():
             "Sporting News, CBS Sports, NFL.com, the SportsLine model, the market favorite, "
             "Week 2 winners, and a short post-Week 2 power board. Unpicked games on a board are "
             "skipped. The pick is the side with more votes. The finished Week 3 card is in. Live "
-            "picks live on <a href=\"week4-matchups.html\">Week 4 Predictions</a>. The essay under "
+            "picks live on <a href=\"week6-matchups.html\">Week 6 Predictions</a>. The essay under "
             "the table walks the finished slate in kickoff order."
         ),
         extra=w3_predictions_article_html(),
@@ -4096,7 +4186,7 @@ def main():
     w4_dst_body = f"""
     <p class="kicker">2026 Week 4 · DST Super Aggregate · {len(W4_DST_SOURCES)} boards</p>
     <h1>Week 4 DST</h1>
-    <p class="note">This week's stream. Super Aggregate of {len(W4_DST_SOURCES)} published Week 4 boards: 50% RotoBaller and Pro Football Network, 50% FantasyPros, Sporting News, NBC Sports, implied totals, and Week 3 form. {w4_dst_lead} leads the stream. The finished Week 3 board lives on <a href="week3-dst.html">Week 3 DST</a>.</p>
+    <p class="note">Finished Week 4 stream. Super Aggregate of {len(W4_DST_SOURCES)} published Week 4 boards: 50% RotoBaller and Pro Football Network, 50% FantasyPros, Sporting News, NBC Sports, implied totals, and Week 3 form. {w4_dst_lead} led the stream. Live start/sit lives on <a href="week6-dst.html">Week 6 DST</a>.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(w4_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(W4_DST_SOURCES, heading="Boards in This Super Aggregate")}
@@ -4118,7 +4208,7 @@ def main():
     w4_k_body = f"""
     <p class="kicker">2026 Week 4 · K Super Aggregate · {len(W4_K_SOURCES)} boards</p>
     <h1>Week 4 Kickers</h1>
-    <p class="note">This week's stream. Super Aggregate of {len(W4_K_SOURCES)} published Week 4 boards: 50% FantasyPros ECR and RotoBaller, 50% Sporting News and Sportzeen. {w4_k_lead} sits first among the kickers. The finished Week 3 board lives on <a href="week3-kickers.html">Week 3 Kickers</a>.</p>
+    <p class="note">Finished Week 4 stream. Super Aggregate of {len(W4_K_SOURCES)} published Week 4 boards: 50% FantasyPros ECR and RotoBaller, 50% Sporting News and Sportzeen. {w4_k_lead} sat first among the kickers. Live start/sit lives on <a href="week6-kickers.html">Week 6 Kickers</a>.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(w4_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(W4_K_SOURCES, heading="Boards in This Super Aggregate")}
@@ -4148,11 +4238,151 @@ def main():
             f"A pick for every Week 4 game, mashed from {len(W4_MATCH_SOURCES)} published sources: "
             "Sporting News, two CBS Sports cards, FanSided, the SportsLine model, the market favorite, "
             "Week 3 winners, and a short post-Week 3 power board. Unpicked games on a board are "
-            "skipped. The pick is the side with more votes. Thursday already has a final, Cleveland 27-24. "
-            "Sunday and Monday stay open. The essay under the table walks the slate in kickoff order."
+            "skipped. The pick is the side with more votes. The finished Week 4 card is in. The mash "
+            "closed 11-5. Live picks live on <a href=\"week6-matchups.html\">Week 6 Predictions</a>. "
+            "The essay under the table walks the finished slate in kickoff order."
         ),
         extra=w4_predictions_article_html(),
         extra_jsonld=W4_PREDICTION_LD,
+        body_class="opening-page recap-page",
+    )
+
+    w5_dst = week5_dst_board()
+    w5_kickers = week5_kicker_board()
+    w5_match = week5_matchups()
+    w5_dst_lead = w5_dst[0]["name"] if w5_dst else "Seattle Seahawks"
+    w5_k_lead = w5_kickers[0]["name"] if w5_kickers else "Brandon Aubrey"
+    w5_dst_body = f"""
+    <p class="kicker">2026 Week 5 · DST Super Aggregate · {len(W5_DST_SOURCES)} boards</p>
+    <h1>Week 5 DST</h1>
+    <p class="note">Finished Week 5 stream. Super Aggregate of {len(W5_DST_SOURCES)} published Week 5 boards: 50% RotoBaller and Pro Football Network, 50% FantasyPros, NBC Sports, implied totals, and Week 4 form. {w5_dst_lead} led the stream. Live start/sit lives on <a href="week6-dst.html">Week 6 DST</a>.</p>
+    {rank_search_bar()}
+    <div class="panel">{rank_table(w5_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    {sources_panel(W5_DST_SOURCES, heading="Boards in This Super Aggregate")}
+    {faq_html(W5_DST_FAQ, heading="How Week 5 DST is built.")}
+    """
+    write("week5-dst.html", board_page(
+        "Week 5 DST", "week5-dst.html", w5_dst_body,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "Week 5 2026 Fantasy Football DST Rankings",
+                "https://ballkeep.com/week5-dst.html",
+                w5_dst,
+                lambda r: "https://ballkeep.com/week5-dst.html",
+                description="Week 5 DST Super Aggregate from published weekly boards.",
+            ),
+            faq_jsonld(W5_DST_FAQ),
+        ],
+    ))
+    w5_k_body = f"""
+    <p class="kicker">2026 Week 5 · K Super Aggregate · {len(W5_K_SOURCES)} boards</p>
+    <h1>Week 5 Kickers</h1>
+    <p class="note">Finished Week 5 stream. Super Aggregate of {len(W5_K_SOURCES)} published Week 5 boards: 50% FantasyPros ECR and RotoBaller, 50% Sports Illustrated and Pro Football Network. {w5_k_lead} sat first among the kickers. Live start/sit lives on <a href="week6-kickers.html">Week 6 Kickers</a>.</p>
+    {rank_search_bar()}
+    <div class="panel">{rank_table(w5_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    {sources_panel(W5_K_SOURCES, heading="Boards in This Super Aggregate")}
+    {faq_html(W5_K_FAQ, heading="How Week 5 Kickers is built.")}
+    """
+    write("week5-kickers.html", board_page(
+        "Week 5 Kickers", "week5-kickers.html", w5_k_body,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "Week 5 2026 Fantasy Football Kicker Rankings",
+                "https://ballkeep.com/week5-kickers.html",
+                w5_kickers,
+                lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html" if slugify(r["name"]) in PLAYER_PAGES.values() else "https://ballkeep.com/week5-kickers.html",
+                description="Week 5 kicker Super Aggregate from published weekly boards.",
+            ),
+            faq_jsonld(W5_K_FAQ),
+        ],
+    ))
+    from week5_predictions import PREDICTION_LD as W5_PREDICTION_LD
+    from week5_predictions import predictions_article_html as w5_predictions_article_html
+    write_week_matchups(
+        5,
+        w5_match,
+        W5_MATCH_SOURCES,
+        W5_MATCH_FAQ,
+        (
+            f"A pick for every Week 5 game, mashed from {len(W5_MATCH_SOURCES)} published sources: "
+            "Sporting News, John Breech at CBS Sports, the Sporting News ATS card, the SportsLine model, "
+            "the market favorite, Week 4 winners, and a short post-Week 4 power board. Unpicked games on "
+            "a board are skipped. The pick is the side with more votes. The finished Week 5 card is in. "
+            "The mash closed 10-4-1. Kansas City and Carolina were on bye. Live picks live on "
+            "<a href=\"week6-matchups.html\">Week 6 Predictions</a>. The essay under the table walks "
+            "the finished slate in kickoff order."
+        ),
+        extra=w5_predictions_article_html(),
+        extra_jsonld=W5_PREDICTION_LD,
+        body_class="opening-page recap-page",
+    )
+
+    w6_dst = week6_dst_board()
+    w6_kickers = week6_kicker_board()
+    w6_match = week6_matchups()
+    w6_dst_lead = w6_dst[0]["name"] if w6_dst else "Kansas City Chiefs"
+    w6_k_lead = w6_kickers[0]["name"] if w6_kickers else "Spencer Shrader"
+    w6_dst_body = f"""
+    <p class="kicker">2026 Week 6 · DST Super Aggregate · {len(W6_DST_SOURCES)} boards</p>
+    <h1>Week 6 DST</h1>
+    <p class="note">This week's stream. Super Aggregate of {len(W6_DST_SOURCES)} published Week 6 boards: 50% RotoBaller and FantasyPros, 50% NBC Sports, Yahoo Boone, implied totals, and Week 5 form. {w6_dst_lead} leads the stream. The finished Week 5 board lives on <a href="week5-dst.html">Week 5 DST</a>.</p>
+    {rank_search_bar()}
+    <div class="panel">{rank_table(w6_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    {sources_panel(W6_DST_SOURCES, heading="Boards in This Super Aggregate")}
+    {faq_html(W6_DST_FAQ, heading="How Week 6 DST is built.")}
+    """
+    write("week6-dst.html", board_page(
+        "Week 6 DST", "week6-dst.html", w6_dst_body,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "Week 6 2026 Fantasy Football DST Rankings",
+                "https://ballkeep.com/week6-dst.html",
+                w6_dst,
+                lambda r: "https://ballkeep.com/week6-dst.html",
+                description="Week 6 DST Super Aggregate from published weekly boards.",
+            ),
+            faq_jsonld(W6_DST_FAQ),
+        ],
+    ))
+    w6_k_body = f"""
+    <p class="kicker">2026 Week 6 · K Super Aggregate · {len(W6_K_SOURCES)} boards</p>
+    <h1>Week 6 Kickers</h1>
+    <p class="note">This week's stream. Super Aggregate of {len(W6_K_SOURCES)} published Week 6 boards: 50% FantasyPros ECR and RotoBaller, 50% Pro Football Network and Yahoo Boone. {w6_k_lead} sits first among the kickers. The finished Week 5 board lives on <a href="week5-kickers.html">Week 5 Kickers</a>.</p>
+    {rank_search_bar()}
+    <div class="panel">{rank_table(w6_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    {sources_panel(W6_K_SOURCES, heading="Boards in This Super Aggregate")}
+    {faq_html(W6_K_FAQ, heading="How Week 6 Kickers is built.")}
+    """
+    write("week6-kickers.html", board_page(
+        "Week 6 Kickers", "week6-kickers.html", w6_k_body,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "Week 6 2026 Fantasy Football Kicker Rankings",
+                "https://ballkeep.com/week6-kickers.html",
+                w6_kickers,
+                lambda r: f"https://ballkeep.com/players/{slugify(r['name'])}.html" if slugify(r["name"]) in PLAYER_PAGES.values() else "https://ballkeep.com/week6-kickers.html",
+                description="Week 6 kicker Super Aggregate from published weekly boards.",
+            ),
+            faq_jsonld(W6_K_FAQ),
+        ],
+    ))
+    from week6_predictions import PREDICTION_LD as W6_PREDICTION_LD
+    from week6_predictions import predictions_article_html as w6_predictions_article_html
+    write_week_matchups(
+        6,
+        w6_match,
+        W6_MATCH_SOURCES,
+        W6_MATCH_FAQ,
+        (
+            f"A pick for every Week 6 game, mashed from {len(W6_MATCH_SOURCES)} published sources: "
+            "Sporting News, two CBS Sports cards, the CBS Sports expert table, the market favorite, "
+            "Week 5 winners, and a short post-Week 5 power board. Unpicked games on a board are "
+            "skipped. The pick is the side with more votes. Thursday already has a final, Denver 17-14. "
+            "Sunday and Monday stay open. Cincinnati, Detroit, Miami, and Minnesota are on bye. The essay "
+            "under the table walks the slate in kickoff order."
+        ),
+        extra=w6_predictions_article_html(),
+        extra_jsonld=W6_PREDICTION_LD,
         body_class="opening-page recap-page",
     )
     w1_pack = write_week1_archive(sys.modules[__name__], media)
@@ -4265,9 +4495,9 @@ def main():
     mlb_abbrs = sorted({g["away"] for g in mlb_games} | {g["home"] for g in mlb_games})
     mlb_btns = "".join(f'<button type="button" data-team="{esc(a)}">{esc(a)}</button>' for a in mlb_abbrs)
     mlb_body = f"""
-    <p class="kicker">MLB · Stretch Run</p>
+    <p class="kicker">MLB · Regular season</p>
     <h1>Baseball Schedules</h1>
-    <p class="note">Today is Aug. 20, 2026 - the regular season wraps Sunday, Sept. 27. Below is the full September slate (Fantasy Nerds / league schedule). Filter by club for that team's remaining games. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027-2031 heavier than this month's box score; redraft baseball is only this month.</p>
+    <p class="note">Regular season wrapped Sunday, Sept. 27. Below is the last September card (Fantasy Nerds / league schedule). Filter by club. For the live daily tick, use ESPN's MLB scoreboard. Dynasty baseball prices 2027-2031; the 2026 box scores are closed.</p>
     <div class="filters" id="mlb-teams"><button type="button" class="active" data-team="all">All clubs</button>{mlb_btns}</div>
     <div class="panel table-wrap" id="mlb-games"></div>
     """
@@ -4336,7 +4566,7 @@ def main():
     <section class="panel policy">
       <p class="kicker">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="note">Last updated: August 31, 2026</p>
+      <p class="note">Last updated: October 19, 2026</p>
       <p>Ball Keep ("we," "us," or "this site") respects your privacy. This Privacy Policy explains what information we collect when you visit ballkeep.com (and its BaseKeep, BasketKeep, and PitchKeep sections), how we use it, and the choices you have.</p>
 
       <h3>Information We Collect</h3>
@@ -4360,6 +4590,7 @@ def main():
 
       <h3>News and Rankings Content</h3>
       <p>Our rankings, trade values, and news summaries aggregate publicly available information from multiple sources, which are credited at the bottom of each board or article. We do not collect personal information through this aggregation process.</p>
+      <p>Player pictures on this site are for identification on the rank boards and player files. BK News clusters public headlines into short snippets and links out to the original publishers.</p>
 
       <h3>Analytics</h3>
       <p>We may use third-party analytics services (such as Google Analytics) to understand site traffic and usage patterns. These services may collect information such as your IP address and browsing behavior on this site. This data is used in aggregate and is not used to personally identify you.</p>
@@ -4446,6 +4677,12 @@ def main():
         "https://ballkeep.com/week4-dst.html",
         "https://ballkeep.com/week4-kickers.html",
         "https://ballkeep.com/week4-matchups.html",
+        "https://ballkeep.com/week5-dst.html",
+        "https://ballkeep.com/week5-kickers.html",
+        "https://ballkeep.com/week5-matchups.html",
+        "https://ballkeep.com/week6-dst.html",
+        "https://ballkeep.com/week6-kickers.html",
+        "https://ballkeep.com/week6-matchups.html",
         "https://ballkeep.com/archive/week1/",
         "https://ballkeep.com/archive/week1/opening.html",
         "https://ballkeep.com/archive/week1/dst.html",

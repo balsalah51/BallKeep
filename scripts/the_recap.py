@@ -47,9 +47,9 @@ def recap_teaser():
     <a class="opening-teaser recap-teaser" href="the-recap.html">
       <img src="{OG_IMAGE}" alt="Caleb Williams" width="160" height="160" />
       <div>
-        <p class="k">The Recap · Tuesday, Sep 15</p>
-        <h2>Seahawks 13, Patriots 10. Chicago 59. Walker 173.</h2>
-        <p>Sixteen scores are in. Read the whole week, then spend the wire on Coker, Black, and the names the tape actually moved.</p>
+        <p class="k">Week 1 Recap · Tuesday, Sep 15</p>
+        <h2>Week 1 recap: Bears 59, Walker 173 rushing, Seahawks 13-10.</h2>
+        <p>Sixteen scores from the opener. Read the full essay, then spend the wire on Coker, Black, and the names the tape moved.</p>
       </div>
     </a>
     """

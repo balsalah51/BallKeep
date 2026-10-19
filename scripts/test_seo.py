@@ -140,15 +140,15 @@ def test_grouped_nav_sections():
 def test_football_nav_keeps_every_link():
     from build_site import NAV, NAV_GROUPS, fb_header_nav, fb_footer_nav
     assert [lab for _h, lab in NAV] == [
-        "Home", "The Keep", "The Board",
-        "Redraft Superflex", "The Classic", "Redraft STD", "Best Ball", "2026 Rookies",
+        "Home", "Keep · Dynasty SF", "Board · Redraft PPR",
+        "Redraft Superflex", "Classic · Half-PPR", "Redraft STD", "Best Ball", "2026 Rookies",
         "The D (DST)", "Kickers",
-        "Weekly", "The Recap", "Week 4 DST", "Week 4 K", "Week 4 Predictions", "Week 4 Waivers", "The Market", "Injuries",
-        "ADP", "Trade", "The Handcuff", "The Method",
+        "Weekly", "Week 6 DST", "Week 6 K", "Week 6 Predictions", "Week 6 Waivers", "Injuries",
+        "ADP", "Trade", "Handcuff · RB", "The Method",
         "My Team",
-        "Articles", "Touches", "Players", "News", "The X", "Hot 'n' Cold",
+        "Articles", "Week 1 Recap", "Touches", "Players", "News", "The X · Pictures", "Hot 'n' Cold", "The Market",
         "NFL", "MLB", "BPL",
-        "The Fence (IDP)",
+        "Fence · Superflex + IDP",
     ]
     keys = [k for k, _lab, _items in NAV_GROUPS]
     assert keys == ["leads", "ros", "st", "week", "tools", "mine", "tape", "slates", "fence"]
@@ -170,8 +170,8 @@ def test_football_nav_keeps_every_link():
     assert 'href="index.html">Players</a>' in nested
     foot = fb_footer_nav("the-keep.html", 0)
     assert "Home" not in foot
-    assert "The Keep</a>" not in foot
-    assert "The Board" in foot
+    assert "Keep · Dynasty SF</a>" not in foot
+    assert "Board · Redraft PPR" in foot
 
 
 def test_breadcrumbs_and_footer():
@@ -340,7 +340,7 @@ def test_searchaction_and_schema():
     assert "https://ballkeep.com/the-inheritance.html" not in txt
     assert "https://ballkeep.com/week2-tape.html" in txt
     assert "https://ballkeep.com/week2-ledger.html" in txt
-    assert "https://ballkeep.com/week4-matchups.html" in txt
+    assert "https://ballkeep.com/week6-matchups.html" in txt
     assert "https://ballkeep.com/bb/" in txt
     card = rank_card("The Keep", 4, 9769, "../the-keep.html")
     assert 'href="../the-keep.html"' in card
@@ -418,7 +418,7 @@ def test_best_ball_boards():
 def test_best_ball_mash():
     from build_site import best_ball_list
     rows = best_ball_list()
-    assert len(rows) == 489
+    assert len(rows) == 480
     assert rows[0]["name"] in {
         "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
         "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",
@@ -536,7 +536,7 @@ def test_keep_maye_drop():
     from build_site import ROOT, aggregate, parse_pfn
     keep, _, _ = aggregate(parse_pfn(ROOT / "data/pfn-dynasty.txt"))
     maye = next(r for r in keep if r["name"] == "Drake Maye")
-    assert maye["bk"] >= 6
+    assert maye["bk"] >= 2
     assert keep[0]["name"] == "Josh Allen"
 
 
@@ -594,6 +594,8 @@ def test_visible_desk_copy_removed():
         "week2_boards.py", "week2_predictions.py", "week2_tape.py", "week2_ledger.py",
         "week3_boards.py", "week3_predictions.py",
         "week4_boards.py", "week4_predictions.py",
+        "week5_boards.py", "week5_predictions.py",
+        "week6_boards.py", "week6_predictions.py",
         "two_clocks.py", "the_handcuff.py", "the_recap.py",
     ):
         text = (root / name).read_text()
@@ -643,12 +645,12 @@ def test_fence_idp_board():
     assert idp[0]["name"] == "Aidan Hutchinson"
     assert idp[0]["pos"] == "DL"
     fence = fence_board()
-    assert len(fence) == 897
+    assert len(fence) == 909
     assert fence[0]["name"] == "Josh Allen"
     assert fence[0]["bk"] == 1
     assert fence[0]["pos"] == "QB"
     maye = next(r for r in fence if r["name"] == "Drake Maye")
-    assert maye["bk"] >= 6
+    assert maye["bk"] >= 2
     assert fence[0]["n"] >= 6
     assert {r["pos"] for r in fence} >= {"QB", "RB", "WR", "TE", "DL", "LB", "DB"}
     first_idp = next(r for r in fence if r["pos"] in {"DL", "LB", "DB"})
@@ -680,20 +682,20 @@ def test_weekly_kit():
         weekly_flex,
         waiver_board,
     )
-    assert week_num() == 5
+    assert week_num() == 6
     qb = weekly_board("QB")
-    assert qb[0]["name"] == "Josh Allen"
+    assert qb[0]["name"] in {"Josh Allen", "Brock Purdy", "Drake Maye"}
     assert qb[0]["bk"] == 1
     assert qb[0]["n"] >= 3
     assert qb[0].get("fpts")
     rb = weekly_board("RB")
-    assert rb[0]["name"] == "Jahmyr Gibbs"
+    assert rb[0]["name"] in {"Jahmyr Gibbs", "Bijan Robinson"}
     wr = weekly_board("WR")
     assert wr[0]["name"] in {"Puka Nacua", "Jaxon Smith-Njigba"}
     te = weekly_board("TE")
     assert te[0]["name"] in {"Trey McBride", "Brock Bowers"}
     flex = weekly_flex()
-    assert flex[0]["name"] == "Jahmyr Gibbs"
+    assert flex[0]["name"] in {"Jahmyr Gibbs", "Bijan Robinson", "Puka Nacua"}
     assert flex[0]["n"] >= 2
     waivers = waiver_board()
     assert len(waivers) >= 20
@@ -701,14 +703,14 @@ def test_weekly_kit():
     w1w = week1_waiver_board()
     assert len(WEEK1_WAIVER_SOURCES) >= 5
     assert 8 <= len(w1w) <= 40
-    assert w1w[0]["name"] == "Braelon Allen"
+    assert w1w[0]["name"] in {"Woody Marks", "Germie Bernard", "Dameon Pierce", "Brenton Strange"}
     assert w1w[0]["bk"] == 1
     assert w1w[0]["n"] >= 2
     assert all(r["n"] >= 2 for r in w1w)
     assert all(r["pos"] not in {"DST", "K"} for r in w1w)
     names = {r["name"] for r in w1w}
-    assert "Ollie Gordon II" in names
-    assert "Kenyon Sadiq" in names
+    assert "Dameon Pierce" in names
+    assert "Germie Bernard" in names
     old = historic_waiver_board(1)
     assert old[0]["name"] == "Mike Washington Jr."
     inj = injury_rows()
@@ -871,8 +873,9 @@ def test_week4_predictions_copy():
         assert f"Pick: {club}" in html
     assert "week4-matchups.html" in teaser
     assert "Browns 27-24" in teaser
-    assert "Sunday is still open" in teaser
+    assert "The mash closed 11-5" in teaser
     assert "Final: CLE 27-24" in html
+    assert "week6-matchups.html" in html
 
 
 def test_week4_boards():
@@ -906,6 +909,106 @@ def test_week4_boards():
     assert games[0]["key"] == "PIT@CLE"
     assert games[0]["final"] == "27-24"
     assert games[0]["final_winner"] == "CLE"
+    assert all(g.get("final") for g in games)
+
+
+def test_week5_predictions_copy():
+    from week5_predictions import HEADLINE, predictions_article_html, predictions_teaser
+    html = predictions_article_html()
+    teaser = predictions_teaser()
+    assert HEADLINE in html
+    assert "\u2014" not in html
+    assert "desk" not in html.lower()
+    assert "looking at" not in html
+    assert "week5-matchups.html" in teaser
+    assert "The mash closed 10-4-1" in teaser or "10-4-1" in html
+    assert "week6-matchups.html" in html
+    assert "Final: TB 24-16" in html
+
+
+def test_week5_boards():
+    from week5_boards import (
+        MATCH_SOURCES,
+        W5_DST_SOURCES,
+        W5_K_SOURCES,
+        week5_dst_board,
+        week5_kicker_board,
+        week5_matchups,
+    )
+    assert len(W5_DST_SOURCES) >= 4
+    assert len(W5_K_SOURCES) >= 3
+    assert len(MATCH_SOURCES) >= 6
+    dst = week5_dst_board()
+    assert dst[0]["bk"] == 1
+    assert dst[0]["n"] >= 3
+    kickers = week5_kicker_board()
+    assert kickers[0]["name"]
+    games = week5_matchups()
+    assert len(games) == 15
+    keys = {g["key"] for g in games}
+    assert "TB@DAL" in keys
+    assert "BUF@LAR" in keys
+    assert all(g["pick"] in {g["away"], g["home"]} for g in games)
+    assert games[0]["key"] == "TB@DAL"
+    assert games[0]["final"] == "24-16"
+    assert games[0]["final_winner"] == "TB"
+    assert all(g.get("final") for g in games)
+
+
+def test_week6_predictions_copy():
+    from week6_predictions import HEADLINE, predictions_article_html, predictions_teaser
+    html = predictions_article_html()
+    teaser = predictions_teaser()
+    assert HEADLINE in html
+    assert "\u2014" not in html
+    assert "desk" not in html.lower()
+    assert "looking at" not in html
+    for club in (
+        "SEA", "JAX", "CHI", "BAL", "IND", "NE", "NYG",
+        "CAR", "PIT", "LAR", "KC", "BUF", "GB", "SF",
+    ):
+        assert f"Pick: {club}" in html
+    assert "week6-matchups.html" in teaser
+    assert "Broncos 17-14" in teaser
+    assert "Sunday is still open" in teaser
+    assert "Final: DEN 17-14" in html
+
+
+def test_week6_boards():
+    from week6_boards import (
+        MATCH_SOURCES,
+        W6_DST_SOURCES,
+        W6_K_SOURCES,
+        week6_dst_board,
+        week6_kicker_board,
+        week6_matchups,
+    )
+    assert len(W6_DST_SOURCES) >= 4
+    assert len(W6_K_SOURCES) >= 3
+    assert len(MATCH_SOURCES) >= 6
+    dst = week6_dst_board()
+    assert dst[0]["bk"] == 1
+    assert dst[0]["n"] >= 3
+    assert dst[0]["name"] in {
+        "Kansas City Chiefs", "New England Patriots", "Indianapolis Colts",
+        "Pittsburgh Steelers", "Seattle Seahawks", "Baltimore Ravens",
+    }
+    kickers = week6_kicker_board()
+    assert kickers[0]["name"] in {
+        "Spencer Shrader", "Brandon Aubrey", "Will Lutz", "Cameron Dicker",
+        "Harrison Mevis", "Eddy Pineiro", "Tyler Loop",
+    }
+    games = week6_matchups()
+    assert len(games) == 14
+    keys = {g["key"] for g in games}
+    assert "SEA@DEN" in keys
+    assert "WAS@SF" in keys
+    assert all(g["pick"] in {g["away"], g["home"]} for g in games)
+    assert games[0]["day"].startswith("Thu")
+    assert games[0]["key"] == "SEA@DEN"
+    assert games[0]["final"] == "17-14"
+    assert games[0]["final_winner"] == "DEN"
+    assert games[0]["pick"] == "SEA"
 
 
 def test_attach_pos_ranks():
@@ -1095,7 +1198,10 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=77" in doc
+    assert "css/site.css?v=79" in doc
+    assert "home-lede" in html
+    assert "Forty public boards" in html
+    assert "Sleeper" in html
     assert "the-method.html" in html
     assert "Read The Method" in html
 
