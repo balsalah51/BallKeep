@@ -20,17 +20,29 @@ from week4_predictions import DEK as W4_DEK
 from week4_predictions import HEADLINE as W4_HEAD
 from week5_predictions import DEK as W5_DEK
 from week5_predictions import HEADLINE as W5_HEAD
+from week6_predictions import DEK as W6_DEK
+from week6_predictions import HEADLINE as W6_HEAD
 
 ARTICLES = [
     (
+        "week6-matchups.html",
+        "Week 6 Predictions",
+        "Saturday, Oct 17",
+        W6_HEAD,
+        W6_DEK,
+        "img/players/jaxon-smith-njigba.jpg",
+        "Jaxon Smith-Njigba",
+        True,
+    ),
+    (
         "week5-matchups.html",
         "Week 5 Predictions",
-        "Wednesday, Oct 7",
+        "Saturday, Oct 17",
         W5_HEAD,
         W5_DEK,
         "img/players/dak-prescott.png",
         "Dak Prescott",
-        True,
+        False,
     ),
     (
         "week4-matchups.html",
@@ -116,7 +128,7 @@ ARTICLES = [
         "the-market.html",
         "The Market",
         "Tuesday, Sep 15",
-        "Buy low and sell high after Week 1.",
+        "Week 1 buy-low and sell-high names.",
         "Buy the names rooms punished after one ugly night. Sell the names rooms just watched in a carnival.",
         "img/players/puka-nacua.jpg",
         "Puka Nacua",

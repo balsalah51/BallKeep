@@ -114,6 +114,11 @@ def fp_ecr(html: str, label: str) -> dict:
         rk = int(p.get("rank_ecr") or 0)
         if not rk:
             continue
+        fpts = p.get("r2p_pts")
+        try:
+            fpts = float(fpts) if fpts not in (None, "") else None
+        except (TypeError, ValueError):
+            fpts = None
         players.append({
             "name": p.get("player_name") or "",
             "team": _team(p.get("player_team_id") or ""),
@@ -127,6 +132,7 @@ def fp_ecr(html: str, label: str) -> dict:
             "opp_id": _team(p.get("player_opponent_id") or ""),
             "bye": p.get("player_bye_week"),
             "pos_rank": p.get("pos_rank") or "",
+            "fpts": fpts,
         })
     print(f"  {label} ECR n={len(players)} week={data.get('week')} experts={data.get('total_experts')} updated={data.get('last_updated')}")
     return {
@@ -171,31 +177,53 @@ def parse_proj_table(html: str) -> list:
     return rows
 
 
+def proj_from_ecr(payload: dict) -> list:
+    """Rank the ECR dump by FantasyPros projected points (r2p_pts)."""
+    rows = []
+    for p in payload.get("players") or []:
+        fpts = p.get("fpts")
+        name = p.get("name") or ""
+        if not name or fpts is None:
+            continue
+        rows.append({"name": name, "team": p.get("team") or "", "fpts": fpts})
+    rows.sort(key=lambda r: (-r["fpts"], r["name"]))
+    for i, r in enumerate(rows, 1):
+        r["rank"] = i
+    return rows
+
+
 def scrape_fp_weekly(week: int) -> None:
     for pos in POS:
-        url = f"https://www.fantasypros.com/nfl/rankings/{pos}.php"
+        url = f"https://www.fantasypros.com/nfl/rankings/{pos}.php?week={week}"
         print(f"fetch fp ecr {pos} {url}")
         try:
             html = fetch(url)
-            dump(f"fp-ecr-{pos}", fp_ecr(html, pos.upper()))
+            payload = fp_ecr(html, pos.upper())
+            dump(f"fp-ecr-{pos}", payload)
         except Exception as exc:
             print(f"  skip {pos}: {type(exc).__name__}: {exc}")
-    url = "https://www.fantasypros.com/nfl/rankings/ppr-flex.php"
+            payload = None
+        url = f"https://www.fantasypros.com/nfl/projections/{pos}.php?week={week}"
+        print(f"fetch fp proj {pos} {url}")
+        try:
+            rows = parse_proj_table(fetch(url))
+        except Exception as exc:
+            print(f"  skip proj {pos}: {type(exc).__name__}: {exc}")
+            rows = []
+        pointed = proj_from_ecr(payload or {})
+        if len(pointed) > len(rows):
+            rows = pointed
+            print(f"  {pos} proj from ECR points n={len(rows)} top={[r['name'] for r in rows[:3]]}")
+        else:
+            print(f"  {pos} proj n={len(rows)} top={[r['name'] for r in rows[:3]]}")
+        if rows:
+            dump(f"fp-proj-{pos}", {"week": week, "players": rows})
+    url = f"https://www.fantasypros.com/nfl/rankings/ppr-flex.php?week={week}"
     print(f"fetch fp ecr flex {url}")
     try:
         dump("fp-ecr-flex", fp_ecr(fetch(url), "FLEX"))
     except Exception as exc:
         print(f"  skip flex: {type(exc).__name__}: {exc}")
-
-    for pos in POS:
-        url = f"https://www.fantasypros.com/nfl/projections/{pos}.php?week={week}"
-        print(f"fetch fp proj {pos} {url}")
-        try:
-            rows = parse_proj_table(fetch(url))
-            print(f"  {pos} proj n={len(rows)} top={[r['name'] for r in rows[:3]]}")
-            dump(f"fp-proj-{pos}", {"week": week, "players": rows})
-        except Exception as exc:
-            print(f"  skip proj {pos}: {type(exc).__name__}: {exc}")
 
 
 def scrape_fourfor4(week: int) -> None:
@@ -309,9 +337,11 @@ def _usage_from_sleeper(players, stats) -> dict:
             "rush_att": st.get("rush_att"),
             "rush_yd": st.get("rush_yd"),
             "rush_td": st.get("rush_td"),
+            "pass_cmp": st.get("pass_cmp"),
             "pass_att": st.get("pass_att"),
             "pass_yd": st.get("pass_yd"),
             "pass_td": st.get("pass_td"),
+            "pass_int": st.get("pass_int"),
             "pts_ppr": st.get("pts_ppr"),
         }
     return out
@@ -359,34 +389,180 @@ def scrape_sleeper_usage(week: int) -> None:
     for row in projs or []:
         st = row.get("stats") or {}
         pts = st.get("pts_ppr")
-        if pts is None:
-            continue
         pl = row.get("player") or {}
         name = (pl.get("full_name") or f"{pl.get('first_name') or ''} {pl.get('last_name') or ''}").strip()
         pos = pl.get("position") or ""
         if not name or pos not in {"QB", "RB", "WR", "TE"}:
+            continue
+        adp = st.get("adp_dd_ppr") or st.get("adp_ppr")
+        try:
+            if adp is not None and float(adp) >= 400:
+                adp = None
+        except (TypeError, ValueError):
+            adp = None
+        if pts is None and adp is None:
             continue
         proj_rows.append({
             "name": name,
             "pos": pos,
             "team": _team(row.get("team") or pl.get("team") or ""),
             "opp": _team(row.get("opponent") or ""),
-            "fpts": round(float(pts), 2),
-            "adp": st.get("adp_dd_ppr") or st.get("adp_ppr"),
+            "fpts": round(float(pts), 2) if pts is not None else None,
+            "adp": adp,
         })
-    # one row per name (first / only company)
+    # one row per name (first / only company). Rank only names that have points.
+    # ADP-only rows stay in the file so the ADP table still has a Sleeper number.
     seen = set()
     uniq = []
-    for r in sorted(proj_rows, key=lambda x: (-x["fpts"], x["name"])):
+    for r in sorted(proj_rows, key=lambda x: (x["fpts"] is None, -(x["fpts"] or 0), x["name"])):
         k = r["name"].lower()
         if k in seen:
             continue
         seen.add(k)
         uniq.append(r)
-    for i, r in enumerate(uniq, 1):
-        r["rank"] = i
-    print(f"  sleeper/rotowire proj n={len(uniq)} top={[r['name'] for r in uniq[:3]]}")
+    rank = 0
+    pointed = 0
+    for r in uniq:
+        if r.get("fpts") is None:
+            r["rank"] = 0
+            continue
+        rank += 1
+        pointed += 1
+        r["rank"] = rank
+    top = [r["name"] for r in uniq if r.get("rank")][:3]
+    print(f"  sleeper/rotowire proj n={pointed} adp={len(uniq)} top={top}")
     dump("rw-proj", {"week": week, "source": "RotoWire via Sleeper", "players": uniq})
+    scrape_past_seasons(players)
+    scrape_game_logs(players, 2026)
+
+
+COUNT_KEYS = (
+    "gp", "gs", "off_snp", "tm_off_snp",
+    "rec_tgt", "rec", "rec_yd", "rec_td",
+    "rush_att", "rush_yd", "rush_td",
+    "pass_cmp", "pass_att", "pass_yd", "pass_td", "pass_int",
+    "pts_ppr",
+)
+
+
+def _count(st, key):
+    v = (st or {}).get(key)
+    if v is None:
+        return None
+    try:
+        n = float(v)
+    except (TypeError, ValueError):
+        return None
+    if key == "pts_ppr":
+        return round(n, 1)
+    if n == int(n):
+        return int(n)
+    return round(n, 1)
+
+
+def _played(st) -> bool:
+    if not isinstance(st, dict):
+        return False
+    for key in ("off_snp", "rush_att", "rec_tgt", "pass_att"):
+        try:
+            if float(st.get(key) or 0) > 0:
+                return True
+        except (TypeError, ValueError):
+            continue
+    return False
+
+
+def scrape_past_seasons(players, seasons=(2023, 2024)) -> None:
+    """Season totals for the yearly table. 2025 and 2026 are written above."""
+    for season in seasons:
+        url = f"https://api.sleeper.app/v1/stats/nfl/regular/{season}"
+        print(f"fetch sleeper season {season}")
+        try:
+            stats = fetch_json(url)
+        except Exception as exc:
+            print(f"  skip season {season}: {type(exc).__name__}: {exc}")
+            continue
+        built = _usage_from_sleeper(players, stats)
+        if not built:
+            print(f"  season {season} empty, left the file alone")
+            continue
+        print(f"  season {season} n={len(built)}")
+        dump(f"usage-{season}", {"season": season, "players": built})
+
+
+def scrape_game_logs(players, season: int = 2026, last_week: int | None = None) -> None:
+    """Week-by-week regular-season lines for player pages."""
+    if last_week is None:
+        try:
+            state = fetch_json("https://api.sleeper.app/v1/state/nfl")
+            last_week = int(state.get("week") or current_week())
+        except Exception as exc:
+            print(f"  sleeper state skipped: {type(exc).__name__}: {exc}")
+            last_week = current_week()
+    last_week = min(18, max(1, int(last_week)))
+    week_stats = {}
+    weeks = []
+    for week in range(1, last_week + 1):
+        url = f"https://api.sleeper.app/v1/stats/nfl/regular/{season}/{week}"
+        print(f"fetch sleeper week {season}/{week}")
+        try:
+            stats = fetch_json(url)
+        except Exception as exc:
+            print(f"  skip week {week}: {type(exc).__name__}: {exc}")
+            break
+        played = 0
+        for pid, st in (stats or {}).items():
+            if str(pid).isdigit() and _played(st):
+                played += 1
+        print(f"  week {week} played={played}")
+        # Sleeper rolls the week before that slate has a box score.
+        if played < 80:
+            continue
+        weeks.append(week)
+        week_stats[week] = stats
+    if not weeks:
+        print("  gamelog skipped, no played weeks")
+        return
+    out = {}
+    for pid, p in (players or {}).items():
+        if not isinstance(p, dict):
+            continue
+        pos = p.get("position") or ""
+        if pos not in {"QB", "RB", "WR", "TE"}:
+            continue
+        name = p.get("full_name") or ""
+        if not name:
+            continue
+        games = []
+        for week in weeks:
+            st = (week_stats.get(week) or {}).get(pid) or {}
+            if not _played(st):
+                continue
+            off = _count(st, "off_snp")
+            tm = _count(st, "tm_off_snp")
+            row = {"week": week}
+            for key in COUNT_KEYS:
+                val = _count(st, key)
+                if val is not None:
+                    row[key] = val
+            if off and tm:
+                row["snap_pct"] = round(100.0 * off / tm, 1)
+            games.append(row)
+        if not games:
+            continue
+        out[name] = {
+            "name": name,
+            "pos": pos,
+            "team": _team(p.get("team") or ""),
+            "games": games,
+        }
+    print(f"  gamelog {season} players={len(out)} weeks={weeks}")
+    dump(f"gamelog-{season}", {
+        "season": season,
+        "through_week": weeks[-1],
+        "weeks": weeks,
+        "players": out,
+    })
 
 
 def scrape_espn_adp() -> None:

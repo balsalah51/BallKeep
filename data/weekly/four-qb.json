@@ -1,75 +1,75 @@
 {
-  "week": 5,
+  "week": 6,
   "players": [
     {
       "name": "Josh Allen",
       "rank": 1,
       "team": "BUF",
-      "opp": "@LAR",
-      "sos": 9
-    },
-    {
-      "name": "Dak Prescott",
-      "rank": 2,
-      "team": "DAL",
-      "opp": "TB",
-      "sos": 12
-    },
-    {
-      "name": "Jayden Daniels",
-      "rank": 3,
-      "team": "WAS",
-      "opp": "NYG",
-      "sos": 17
-    },
-    {
-      "name": "Jared Goff",
-      "rank": 4,
-      "team": "DET",
-      "opp": "@ARI",
-      "sos": 28
-    },
-    {
-      "name": "Matthew Stafford",
-      "rank": 5,
-      "team": "LAR",
-      "opp": "BUF",
+      "opp": "@LV",
       "sos": 30
     },
     {
-      "name": "Drake Maye",
-      "rank": 6,
-      "team": "NE",
-      "opp": "LV",
-      "sos": 21
-    },
-    {
-      "name": "Joe Burrow",
-      "rank": 7,
-      "team": "CIN",
-      "opp": "@MIA",
-      "sos": 8
-    },
-    {
       "name": "Brock Purdy",
-      "rank": 8,
+      "rank": 2,
       "team": "SF",
-      "opp": "@SEA",
+      "opp": "WAS",
+      "sos": 32
+    },
+    {
+      "name": "Matthew Stafford",
+      "rank": 3,
+      "team": "LAR",
+      "opp": "ARI",
+      "sos": 28
+    },
+    {
+      "name": "Drake Maye",
+      "rank": 4,
+      "team": "NE",
+      "opp": "NYJ",
+      "sos": 4
+    },
+    {
+      "name": "Jordan Love",
+      "rank": 5,
+      "team": "GB",
+      "opp": "DAL",
+      "sos": 27
+    },
+    {
+      "name": "Dak Prescott",
+      "rank": 6,
+      "team": "DAL",
+      "opp": "@GB",
+      "sos": 16
+    },
+    {
+      "name": "Caleb Williams",
+      "rank": 7,
+      "team": "CHI",
+      "opp": "@ATL",
+      "sos": 17
+    },
+    {
+      "name": "Jayden Daniels",
+      "rank": 8,
+      "team": "WAS",
+      "opp": "@SF",
+      "sos": 10
+    },
+    {
+      "name": "Patrick Mahomes",
+      "rank": 9,
+      "team": "KC",
+      "opp": "LAC",
       "sos": 5
     },
     {
       "name": "Tyler Shough",
-      "rank": 9,
-      "team": "NO",
-      "opp": "MIN",
-      "sos": 3
-    },
-    {
-      "name": "Jacoby Brissett",
       "rank": 10,
-      "team": "ARI",
-      "opp": "DET",
-      "sos": 31
+      "team": "NO",
+      "opp": "@NYG",
+      "sos": 22
     }
   ]
 }

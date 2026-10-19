@@ -3,14 +3,14 @@ from __future__ import annotations
 
 from seo import article_jsonld
 
-HEADLINE = "Dallas is laying nine and a half on a Thursday against a second-start rookie, and the rest of the card still has two 4-0 clubs and a Monday that wants to be a Super Bowl preview."
+HEADLINE = "Irving ran 165 through a building that was supposed to win by nine, and the rest of the card wrote fourteen more receipts including a 27-27 and a Monday that went to overtime."
 DEK = (
-    "Buccaneers at Cowboys opens Prime. London has the Eagles at the Jaguars. "
-    "San Francisco and Minnesota are still unbeaten. Kansas City and Carolina sit. "
-    "Thursday has not kicked."
+    "Buccaneers 24-16. Jaguars 19-17. Patriots 45-17. Packers 31-7. "
+    "Bills 37-34 in overtime. Kansas City and Carolina sat. "
+    "The mash closed 10-4-1."
 )
 PUBLISHED = "2026-10-07T02:30:00Z"
-MODIFIED = "2026-10-07T02:30:00Z"
+MODIFIED = "2026-10-17T21:30:00Z"
 OG_IMAGE = "img/players/dak-prescott.png"
 
 PREDICTION_LD = [
@@ -42,9 +42,9 @@ def predictions_teaser():
     <a class="opening-teaser recap-teaser" href="week5-matchups.html">
       <img src="{OG_IMAGE}" alt="Dak Prescott" width="160" height="160" />
       <div>
-        <p class="k">Week 5 · Wednesday, Oct 7</p>
-        <h2>Cowboys on Thursday. Two 4-0 clubs still live.</h2>
-        <p>Dallas lays 9.5 against Daniels. San Francisco visits Seattle. Bills at Rams on Monday. Kansas City and Carolina sit.</p>
+        <p class="k">Week 5 · finished</p>
+        <h2>Buccaneers 24-16. The mash missed Thursday.</h2>
+        <p>Tampa Bay 24-16. Jacksonville 19-17. New England 45-17. Buffalo 37-34. The mash closed 10-4-1.</p>
       </div>
     </a>
     """
@@ -53,16 +53,16 @@ def predictions_teaser():
 def predictions_article_html():
     return f"""
     <article class="opening recap">
-      <p class="opening-kicker">Week 5 · Thursday still open · Wednesday, October 7, 2026</p>
+      <p class="opening-kicker">Week 5 · finished card · Saturday, October 17, 2026</p>
       <h2 class="pred-hed">{HEADLINE}</h2>
       <p class="dek">{DEK}</p>
-      <p class="byline">Ball Keep · Filed Wednesday morning. Thursday card still live. Sunday and Monday still live.</p>
+      <p class="byline">Ball Keep · Filed Wednesday before kickoff. Finals stamped Saturday. Live picks live on Week 6.</p>
 
       <div class="score-row recap-scores">
-        <div class="score-card"><p class="when">Thu · Prime</p><p class="result">TB at DAL</p><p class="meta">Daniels, second start · Dallas 9.5</p></div>
-        <div class="score-card"><p class="when">Sun · FOX</p><p class="result">SF at SEA</p><p class="meta">Purdy 4-0 · Macdonald at home</p></div>
-        <div class="score-card"><p class="when">Sun · NBC</p><p class="result">BAL at ATL</p><p class="meta">Jackson ankle · Penix at home</p></div>
-        <div class="score-card"><p class="when">Mon · ESPN</p><p class="result">BUF at LAR</p><p class="meta">Allen after 29-26 · Stafford at home</p></div>
+        <div class="score-card is-final"><p class="when">Thu · Final</p><p class="result">TB 24, DAL 16</p><p class="meta">Irving 165 · mash missed Dallas</p></div>
+        <div class="score-card is-final"><p class="when">Sun · Final</p><p class="result">NE 45, LV 17</p><p class="meta">Maye 374, four scores</p></div>
+        <div class="score-card is-final"><p class="when">Sun · Final</p><p class="result">GB 31, CHI 7</p><p class="meta">Love 367 · mash missed Chicago</p></div>
+        <div class="score-card is-final"><p class="when">Mon · Final</p><p class="result">BUF 37, LAR 34</p><p class="meta">OT · mash missed the Rams</p></div>
       </div>
 
       <div class="photo-row" aria-label="Faces from the Week 5 card">
@@ -77,9 +77,9 @@ def predictions_article_html():
       </div>
       <p class="photo-cap">Prescott on Thursday. Purdy on the road in Seattle. Allen on Monday. Gibbs in Arizona. Smith-Njigba at home. Robinson after 145. Jackson on an ankle. Walker already has 537 and a bye.</p>
 
-      <p class="lede">A prediction page that only prints a table starts to feel like a filing cabinet, and a prediction page that also prints the argument starts to feel like a room you can sit in on a Wednesday while Thursday is still a rumor and two clubs are already packing for a bye. The mash above already voted. Week 4 already wrote sixteen receipts, including a Thursday the mash missed in Cleveland and a Monday that hung 45 in the dome. What follows is the walk through fifteen games in kickoff order, using the published cards from Bill Bender at Sporting News, John Breech at CBS Sports, Vinnie Iyer at Sporting News, the SportsLine model, the market, and the tape we just watched, with a side on every game and the winners copied at the bottom of the table for anyone who wants the list without the sentences.</p>
+      <p class="lede">A prediction page that only prints a table starts to feel like a filing cabinet, and a prediction page that also prints the argument starts to feel like a room you can sit in after the card has closed and the next Sunday is already asking for a new mash. The mash above already voted. The receipts are in: Tampa Bay 24-16 on a Thursday the mash missed, Jacksonville 19-17 in London, New England 45-17, Green Bay 31-7, a 27-27 in Washington, and Buffalo 37-34 in overtime on a Monday the mash gave to the Rams. The mash closed 10-4-1. What follows is the walk through fifteen games in kickoff order, using the published cards from Bill Bender at Sporting News, John Breech at CBS Sports, Vinnie Iyer at Sporting News, the SportsLine model, the market, and the tape we just watched, with a side on every game and the winners copied at the bottom of the table for anyone who wants the list without the sentences.</p>
 
-      <h2>Thursday: Tampa Bay at Dallas. Pick: DAL</h2>
+      <h2>Thursday: Tampa Bay at Dallas. Pick: DAL. Final: TB 24-16</h2>
       <p>Five of five among the boards that printed a side. Bender 31-19. Breech 27-17. Iyer 34-17 and still laid the nine and a half. The market is Dallas minus 9.5 in a building that just hung 34 in Houston, and Jalon Daniels is making a second start after 148 yards, one score, and two picks in a 17-14 loss that needed a 58-yarder from Trey Smack to end. I am taking Dallas with them on Wednesday morning because a short week still has CeeDee Lamb on it after 17 catches and 189 yards, and a rookie who just saw Green Bay does not get a softer Thursday for the second one.</p>
       <p>Fantasy rooms already know what to do with a night like that. Start Lamb. Start Aubrey, who still sits first on every kicker board we mashed. Stream Dallas's defense if you still have a hole and you already spent the week watching Daniels throw it to the other color. Sit Tampa Bay unless Bucky Irving is already in the lineup and you have no other back. The waiver board has already moved on to Wilson and Shipley, and Sunday still has fourteen games left to move it again.</p>
 
@@ -159,6 +159,6 @@ def predictions_article_html():
 
       <h2>A last look, because a card this long deserves one</h2>
       <p>I keep a private list of images from a week that still has no receipt and fifteen arguments. Lamb after 189 in Houston. Daniels taking a second snap on a Thursday that already has a 9.5 next to it. Purdy packing for a building that has held Shanahan under 20. Wilson after 21 carries and two scores, waiting on a claim. Allen walking out of Highmark after 29-26 with a Monday still on the calendar. Robinson after 145 in a dome that just hung 45. Walker already at 537 and sitting with the rest of Kansas City. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. Spend both, then spend the wire on Wilson and Shipley before the room remembers the names.</p>
-      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card), John Breech at CBS Sports (Oct 6), Vinnie Iyer at Sporting News (ATS card with SU winners), the SportsLine model (10,000 sims), the published FanDuel and DraftKings numbers, a Week 4 winners board, and a short post-Week 4 power card. Thursday has not kicked. Waiver names from Justin Boone, FantasyPros, NFL.com, and FanDuel Research. Week 4 scores sit on <a href="week4-matchups.html">Week 4 Predictions</a>.</p>
+      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card), John Breech at CBS Sports (Oct 6), Vinnie Iyer at Sporting News (ATS card with SU winners), the SportsLine model (10,000 sims), the published FanDuel and DraftKings numbers, a Week 4 winners board, and a short post-Week 4 power card. The Week 5 card is finished. Live picks live on <a href="week6-matchups.html">Week 6 Predictions</a>. Waiver names from Justin Boone, FantasyPros, NFL.com, and FanDuel Research. Week 4 scores sit on <a href="week4-matchups.html">Week 4 Predictions</a>.</p>
     </article>
     """

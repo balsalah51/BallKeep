@@ -306,8 +306,24 @@ MATCH_SOURCES = [
 ]
 
 
-# Thursday has not kicked. Sunday and Monday stay open.
-WEEK5_FINALS = {}
+# The Week 5 card is finished. Football Database / PFR.
+WEEK5_FINALS = {
+    "TB@DAL": {"score": "24-16", "winner": "TB", "day": "Thu Final"},
+    "PHI@JAX": {"score": "19-17", "winner": "JAX", "day": "Sun Final"},
+    "HOU@TEN": {"score": "26-3", "winner": "HOU", "day": "Sun Final"},
+    "MIN@NO": {"score": "23-13", "winner": "MIN", "day": "Sun Final"},
+    "CLE@NYJ": {"score": "17-12", "winner": "NYJ", "day": "Sun Final"},
+    "CIN@MIA": {"score": "31-24", "winner": "CIN", "day": "Sun Final"},
+    "LV@NE": {"score": "45-17", "winner": "NE", "day": "Sun Final"},
+    "IND@PIT": {"score": "34-22", "winner": "PIT", "day": "Sun Final"},
+    "NYG@WAS": {"score": "27-27", "winner": "TIE", "day": "Sun Final"},
+    "CHI@GB": {"score": "31-7", "winner": "GB", "day": "Sun Final"},
+    "DEN@LAC": {"score": "23-17", "winner": "DEN", "day": "Sun Final"},
+    "SF@SEA": {"score": "32-29", "winner": "SF", "day": "Sun Final"},
+    "DET@ARI": {"score": "45-21", "winner": "DET", "day": "Sun Final"},
+    "BAL@ATL": {"score": "30-23", "winner": "BAL", "day": "Sun Night Final"},
+    "BUF@LAR": {"score": "37-34", "winner": "BUF", "day": "Mon Final"},
+}
 
 
 def week5_matchups():
@@ -364,5 +380,5 @@ W5_K_FAQ = [
 W5_MATCH_FAQ = [
     ("How are the win picks built?", "Published Week 5 cards: Sporting News, John Breech at CBS Sports, the Sporting News ATS card, the SportsLine model, the market favorite, Week 4 winners, and a short post-Week 4 power board. Unpicked games on a board are skipped."),
     ("Is this a win chance?", "Away and Home are raw vote counts. The pick is the side with more published votes."),
-    ("Is this a bet slip?", "It is a mash of public picks and the market. Thursday has not kicked. Sunday and Monday stay open. Kansas City and Carolina are on bye."),
+    ("Is this a bet slip?", "It is a mash of public picks and the market. The Week 5 card is finished. Kansas City and Carolina were on bye."),
 ]

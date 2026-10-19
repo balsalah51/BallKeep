@@ -1,75 +1,75 @@
 {
-  "week": 5,
+  "week": 6,
   "players": [
     {
       "name": "Brock Bowers",
       "rank": 1,
       "team": "LV",
-      "opp": "@NE",
-      "sos": 1
+      "opp": "BUF",
+      "sos": 13
     },
     {
       "name": "Trey McBride",
       "rank": 2,
       "team": "ARI",
-      "opp": "DET",
-      "sos": 32
+      "opp": "@LAR",
+      "sos": 1
     },
     {
       "name": "George Kittle",
       "rank": 3,
       "team": "SF",
-      "opp": "@SEA",
-      "sos": 16
+      "opp": "WAS",
+      "sos": 31
     },
     {
       "name": "Isaiah Likely",
       "rank": 4,
       "team": "NYG",
-      "opp": "@WAS",
-      "sos": 31
+      "opp": "NO",
+      "sos": 16
     },
     {
       "name": "Tyler Warren",
       "rank": 5,
       "team": "IND",
-      "opp": "@PIT",
-      "sos": 14
+      "opp": "TEN",
+      "sos": 7
     },
     {
-      "name": "T.J. Hockenson",
+      "name": "Travis Kelce",
       "rank": 6,
-      "team": "MIN",
-      "opp": "@NO",
-      "sos": 22
-    },
-    {
-      "name": "Dalton Kincaid",
-      "rank": 7,
-      "team": "BUF",
-      "opp": "@LAR",
-      "sos": 3
-    },
-    {
-      "name": "Sam LaPorta",
-      "rank": 8,
-      "team": "DET",
-      "opp": "@ARI",
-      "sos": 29
-    },
-    {
-      "name": "Juwan Johnson",
-      "rank": 9,
-      "team": "NO",
-      "opp": "MIN",
-      "sos": 19
+      "team": "KC",
+      "opp": "LAC",
+      "sos": 2
     },
     {
       "name": "Tucker Kraft",
-      "rank": 10,
+      "rank": 7,
       "team": "GB",
-      "opp": "CHI",
-      "sos": 4
+      "opp": "DAL",
+      "sos": 24
+    },
+    {
+      "name": "Dalton Kincaid",
+      "rank": 8,
+      "team": "BUF",
+      "opp": "@LV",
+      "sos": 28
+    },
+    {
+      "name": "Harold Fannin",
+      "rank": 9,
+      "team": "CLE",
+      "opp": "BAL",
+      "sos": 19
+    },
+    {
+      "name": "Juwan Johnson",
+      "rank": 10,
+      "team": "NO",
+      "opp": "@NYG",
+      "sos": 18
     }
   ]
 }

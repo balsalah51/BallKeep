@@ -329,7 +329,7 @@ MATCH_SOURCES = [
 ]
 
 
-# Finished Week 4 card. Every final is in.
+# The Week 4 card is finished. Football Database / PFR.
 WEEK4_FINALS = {
     "PIT@CLE": {"score": "27-24", "winner": "CLE", "day": "Thu Final"},
     "IND@WAS": {"score": "30-13", "winner": "IND", "day": "Sun Final"},
@@ -345,7 +345,7 @@ WEEK4_FINALS = {
     "KC@LV": {"score": "30-27", "winner": "KC", "day": "Sun Final"},
     "LAC@SEA": {"score": "30-23", "winner": "SEA", "day": "Sun Final"},
     "DEN@SF": {"score": "24-14", "winner": "SF", "day": "Sun Final"},
-    "DET@CAR": {"score": "32-26", "winner": "CAR", "day": "Sun Final"},
+    "DET@CAR": {"score": "32-26", "winner": "CAR", "day": "Sun Night Final"},
     "ATL@NO": {"score": "45-24", "winner": "ATL", "day": "Mon Final"},
 }
 
@@ -404,5 +404,5 @@ W4_K_FAQ = [
 W4_MATCH_FAQ = [
     ("How are the win picks built?", "Published Week 4 cards: Sporting News, two CBS Sports cards, FanSided, the SportsLine model, the market favorite, Week 3 winners, and a short post-Week 3 power board. Unpicked games on a board are skipped."),
     ("Is this a win chance?", "Away and Home are raw vote counts. The pick is the side with more published votes."),
-    ("Is this a bet slip?", "It is a mash of public picks and the market. The finished Week 4 card is in. Live picks live on Week 5 Predictions."),
+    ("Is this a bet slip?", "It is a mash of public picks and the market. The Week 4 card is finished. The mash closed 11-5."),
 ]

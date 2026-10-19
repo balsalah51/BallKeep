@@ -637,6 +637,18 @@ a.x-card p { margin: 0 12px 12px; color: var(--muted); font-size: 13px; }
 .sit-card { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
 .sit-card h3 { margin: 0 0 6px; }
 .usage h3 { margin: 0 0 8px; }
+.player-stats { margin: 0 0 18px; }
+.player-stats h2 { margin: 0 0 4px; font-size: 26px; letter-spacing: -0.03em; }
+.player-stats h3 { margin: 18px 0 8px; }
+.stat-facts { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.stat-facts .fact strong { font-size: 20px; letter-spacing: -0.02em; }
+table.stat-log { font-size: 14px; }
+table.stat-log th, table.stat-log td {
+  padding: 8px 8px; text-align: right; white-space: nowrap;
+}
+table.stat-log th:nth-child(-n+2), table.stat-log td:nth-child(-n+2) { text-align: left; }
+table.stat-log tr.total td { font-weight: 800; border-top: 2px solid var(--line); }
+table.stat-log tr.bye td, table.stat-log tr.dnp td { color: var(--muted); }
 .video-wrap {
   position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
   border-radius: 16px; border: 1px solid var(--line); box-shadow: var(--shadow); background: #000;
@@ -1030,6 +1042,7 @@ small.wire { color: var(--red); font-weight: 800; letter-spacing: 0.04em; text-t
   nav.site-nav { justify-content: flex-start; flex: 1 1 auto; width: 100%; }
   .grid, .grid-3, .plusminus, .player-hero, .sit-pick { grid-template-columns: 1fr; }
   .player-grid, .facts, .rank-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .hero { min-height: 180px; background-size: cover; background-position: center top; }
   .hero.masthead { height: 120px; min-height: 120px; max-height: 120px; }
   .hero-card { padding: 22px 16px 18px; }

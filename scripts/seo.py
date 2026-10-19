@@ -274,7 +274,7 @@ def howto_jsonld(name: str, description: str, steps: list, url: str = "") -> dic
 
 def llms_txt() -> str:
     return """# Ball Keep
-> Fantasy rankings for NFL, MLB, NBA, and Premier League. Super Aggregates, BK Value trade calculators, player files, and hourly news.
+> Fantasy rankings for NFL, MLB, NBA, and Premier League. 40-board Super Aggregates, BK Value trade calculators, player files, and Sleeper.
 
 Site: https://ballkeep.com
 
@@ -285,10 +285,10 @@ Site: https://ballkeep.com
 - Superflex + IDP: https://ballkeep.com/the-fence.html
 - Trade calculators: https://ballkeep.com/trade.html
 - Player files: https://ballkeep.com/players/
-- Hourly NFL news: https://ballkeep.com/news.html
-- Week 5 rankings: https://ballkeep.com/weekly.html
+- NFL news: https://ballkeep.com/news.html
+- Week 6 rankings: https://ballkeep.com/weekly.html
 - The Recap: https://ballkeep.com/the-recap.html
-- Week 5 predictions: https://ballkeep.com/week5-matchups.html
+- Week 6 predictions: https://ballkeep.com/week6-matchups.html
 - The Market: https://ballkeep.com/the-market.html
 - The Method: https://ballkeep.com/the-method.html
 - Articles: https://ballkeep.com/articles.html

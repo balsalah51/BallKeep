@@ -99,6 +99,8 @@ def _info_bank() -> dict:
         if name and len(name) > len(cur.get("name") or ""):
             cur["name"] = name
 
+    for row in (_load("rw-proj").get("players") or []):
+        touch(row.get("name"), pos=row.get("pos"), team=row.get("team"), opp=row.get("opp"), fpts=row.get("fpts"), adp=row.get("adp"))
     for pos in ("qb", "rb", "wr", "te", "flex"):
         for row in (_load(f"fp-ecr-{pos}").get("players") or []):
             touch(
@@ -107,9 +109,8 @@ def _info_bank() -> dict:
                 team=row.get("team"),
                 opp=row.get("opp") or row.get("opp_id"),
                 owned=row.get("owned"),
+                fpts=row.get("fpts"),
             )
-    for row in (_load("rw-proj").get("players") or []):
-        touch(row.get("name"), pos=row.get("pos"), team=row.get("team"), opp=row.get("opp"), fpts=row.get("fpts"), adp=row.get("adp"))
     for pos in ("qb", "rb", "wr", "te"):
         for row in (_load(f"fp-proj-{pos}").get("players") or []):
             touch(row.get("name"), team=row.get("team"), fpts_fp=row.get("fpts"), pos=pos.upper())
@@ -136,15 +137,37 @@ def weekly_maps(pos: str) -> dict:
     return {k: v for k, v in maps.items() if v}
 
 
+def _rw_has_points() -> bool:
+    return any(r.get("fpts") for r in (_load("rw-proj").get("players") or []))
+
+
+def proj_blurb() -> str:
+    if _rw_has_points():
+        return "Proj is RotoWire PPR points."
+    return "Proj is FantasyPros projected points. RotoWire had no skill points on this week's feed."
+
+
 def weekly_sources(pos: str) -> list:
     week = week_num()
     pos = pos.lower()
-    return [
-        ("FantasyPros ECR", f"https://www.fantasypros.com/nfl/rankings/{pos}.php", f"Week {week} expert consensus."),
-        ("RotoWire projections", "https://www.rotowire.com/football/", f"Week {week} PPR points via Sleeper. Ranked by projected points."),
-        ("FantasyPros projections", f"https://www.fantasypros.com/nfl/projections/{pos}.php?week={week}", "Public projection table. Partial board."),
-        ("4for4", f"https://www.4for4.com/fantasy-football-rankings/{pos}/2026/week{week}", "Public top of the weekly board. Partial board."),
+    src = [
+        ("FantasyPros ECR", f"https://www.fantasypros.com/nfl/rankings/{pos}.php?week={week}", f"Week {week} expert consensus."),
     ]
+    if _rw_has_points():
+        src.append(("RotoWire projections", "https://www.rotowire.com/football/", f"Week {week} PPR points via Sleeper. Ranked by projected points."))
+    if (_load(f"fp-proj-{pos}").get("players") or []):
+        src.append((
+            "FantasyPros projections",
+            f"https://www.fantasypros.com/nfl/projections/{pos}.php?week={week}",
+            f"Week {week} projected points. Ranked by those points.",
+        ))
+    if (_load(f"four-{pos}").get("players") or []):
+        src.append((
+            "4for4",
+            f"https://www.4for4.com/fantasy-football-rankings/{pos}/2026/week{week}",
+            "Public top of the weekly board. Partial board.",
+        ))
+    return src
 
 
 def _mash(maps: dict, bank: dict, pos: str | None = None, cap: int | None = None, long_core=None, editorial: bool = True) -> list:
@@ -190,10 +213,27 @@ def weekly_board(pos: str, cap: int | None = None) -> list:
     return _mash(weekly_maps(pos), _info_bank(), pos=pos, cap=cap)
 
 
+def _fp_flex_proj_map() -> dict:
+    scored = []
+    for pos in ("rb", "wr", "te"):
+        for row in (_load(f"fp-proj-{pos}").get("players") or []):
+            name = row.get("name") or ""
+            fpts = row.get("fpts")
+            if name and fpts:
+                scored.append((_norm(name), float(fpts)))
+    scored.sort(key=lambda kv: (-kv[1], kv[0]))
+    return {key: i for i, (key, _pts) in enumerate(scored, 1)}
+
+
 def weekly_flex(cap: int = 150) -> list:
     maps = {
         "FantasyPros Flex ECR": _rank_map("fp-ecr-flex"),
-        "RotoWire projections": {
+    }
+    proj = _fp_flex_proj_map()
+    if proj:
+        maps["FantasyPros projections"] = proj
+    if _rw_has_points():
+        maps["RotoWire projections"] = {
             k: i
             for i, (k, _) in enumerate(
                 sorted(
@@ -206,15 +246,29 @@ def weekly_flex(cap: int = 150) -> list:
                 ),
                 1,
             )
-        },
-    }
+        }
     return _mash(maps, _info_bank(), cap=cap, long_core=("FantasyPros Flex ECR",))
 
 
-WEEKLY_FLEX_SOURCES = [
-    ("FantasyPros Flex ECR", "https://www.fantasypros.com/nfl/rankings/ppr-flex.php", "Week N PPR flex consensus."),
-    ("RotoWire projections", "https://www.rotowire.com/football/", "RB/WR/TE ranked by Week N PPR points."),
-]
+def weekly_flex_sources() -> list:
+    week = week_num()
+    src = [(
+        "FantasyPros Flex ECR",
+        f"https://www.fantasypros.com/nfl/rankings/ppr-flex.php?week={week}",
+        f"Week {week} PPR flex consensus.",
+    )]
+    if _fp_flex_proj_map():
+        src.append((
+            "FantasyPros projections",
+            f"https://www.fantasypros.com/nfl/projections/rb.php?week={week}",
+            f"Week {week} RB/WR/TE projected points, ranked across the flex.",
+        ))
+    if _rw_has_points():
+        src.append(("RotoWire projections", "https://www.rotowire.com/football/", "RB/WR/TE ranked by Week N PPR points."))
+    return src
+
+
+WEEKLY_FLEX_SOURCES = weekly_flex_sources()
 
 
 def adp_rows(board_rows: list) -> list:
@@ -309,7 +363,28 @@ def _waiver_payload() -> dict:
     path = WEEKLY / f"week{week}_waiver_sources.json"
     if path.exists():
         return json.loads(path.read_text())
+    # The skill week can move before a new waiver article set is in.
+    # Keep the latest published waiver mash instead of Week 1.
+    best = None
+    best_week = -1
+    for candidate in WEEKLY.glob("week*_waiver_sources.json"):
+        found = re.search(r"week(\d+)_waiver_sources", candidate.name)
+        if not found:
+            continue
+        n = int(found.group(1))
+        if n > best_week:
+            best_week = n
+            best = candidate
+    if best is not None:
+        return json.loads(best.read_text())
     return _week1_waiver_payload()
+
+
+def waiver_week() -> int:
+    try:
+        return int(_waiver_payload().get("week") or week_num())
+    except (TypeError, ValueError):
+        return week_num()
 
 
 def _maps_from_payload(payload: dict) -> dict:
@@ -466,6 +541,105 @@ def usage_index() -> dict:
     for raw, row in (data.get("players") or {}).items():
         out[_norm(raw)] = row
     return out
+
+
+_SEASON_INDEX: dict[int, dict] = {}
+_GAMELOG = None
+_OPP = None
+
+YEARLY_SEASONS = (2026, 2025, 2024, 2023)
+
+
+def _players_by_norm(stem: str) -> dict:
+    data = _load(stem)
+    out = {}
+    for raw, row in (data.get("players") or {}).items():
+        if isinstance(row, dict):
+            out[_norm(raw)] = row
+    return out
+
+
+def season_usage(season: int, name: str) -> dict | None:
+    if season not in _SEASON_INDEX:
+        _SEASON_INDEX[season] = _players_by_norm(f"usage-{season}")
+    return _SEASON_INDEX[season].get(_norm(name))
+
+
+def yearly_usage(name: str) -> list[tuple[int, dict]]:
+    rows = []
+    for season in YEARLY_SEASONS:
+        row = season_usage(season, name)
+        if row:
+            rows.append((season, row))
+    return rows
+
+
+def gamelog_bundle() -> dict:
+    global _GAMELOG
+    if _GAMELOG is None:
+        data = _load("gamelog-2026")
+        players = {}
+        for raw, row in (data.get("players") or {}).items():
+            if isinstance(row, dict):
+                players[_norm(raw)] = row
+        _GAMELOG = {
+            "season": int(data.get("season") or 2026),
+            "through_week": int(data.get("through_week") or 0),
+            "players": players,
+        }
+    return _GAMELOG
+
+
+def gamelog_for(name: str) -> dict | None:
+    return gamelog_bundle()["players"].get(_norm(name))
+
+
+def _schedule_opponents() -> dict:
+    """(week, team abbr) -> (ha, opp abbr). ha is '@' or 'vs'."""
+    global _OPP
+    if _OPP is not None:
+        return _OPP
+    name_to_abbr = {name: abbr for name, abbr in DST_TEAMS}
+    opp = {}
+    path = ROOT / "data" / "nfl-schedule.txt"
+    week = None
+    if path.exists():
+        for line in path.read_text(errors="replace").splitlines():
+            wm = re.match(r"WEEK\s+(\d+)", line.strip(), re.I)
+            if wm:
+                week = int(wm.group(1))
+                continue
+            gm = re.match(r"\|\s*(.+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|", line)
+            if not gm or week is None:
+                continue
+            matchup = gm.group(1).strip()
+            if matchup in ("Matchup", "TBD") or "---" in matchup:
+                continue
+            mm = re.match(r"(.+?)\s+(at|vs)\s+(.+?)(?:\s+\((.+)\))?$", matchup)
+            if not mm:
+                continue
+            left, right = mm.group(1).strip(), mm.group(3).strip()
+            away, home = name_to_abbr.get(left), name_to_abbr.get(right)
+            if not away or not home:
+                continue
+            opp[(week, away)] = ("@", home)
+            opp[(week, home)] = ("vs", away)
+    _OPP = opp
+    return opp
+
+
+def opponent_for(team: str, week: int) -> tuple[str, str]:
+    """('@', 'PIT'), ('vs', 'NO'), or ('', 'BYE') when the club is off."""
+    team = (team or "").upper()
+    if not team or not week:
+        return "", ""
+    found = _schedule_opponents().get((int(week), team))
+    if found:
+        return found
+    # A known club with no game that week is on bye. Unknown clubs stay blank.
+    if team in {abbr for _, abbr in DST_TEAMS}:
+        return "", "BYE"
+    return "", ""
 
 
 def sos_rows(nfl_games: list, week: int | None = None) -> list:

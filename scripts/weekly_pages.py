@@ -10,8 +10,8 @@ from seo import (
     rank_search_bar,
 )
 from the_market import write_the_market
-from the_recap import recap_teaser, write_the_recap
-from week5_predictions import predictions_teaser
+from the_recap import write_the_recap
+from week6_predictions import predictions_teaser
 from weekly_kit import (
     ADP_SOURCES,
     DEPTH_SOURCES,
@@ -22,8 +22,13 @@ from weekly_kit import (
     depth_rows,
     injury_rows,
     meta,
-    usage_for,
+    gamelog_bundle,
+    gamelog_for,
+    opponent_for,
+    proj_blurb,
+    waiver_week,
     week_num,
+    yearly_usage,
     week1_waiver_board,
     weekly_board,
     weekly_flex,
@@ -69,8 +74,8 @@ def _esc(s):
 
 
 WEEKLY_FAQ = [
-    ("How is the weekly board built?", "Super Aggregate of every Week N board that ranked the name: 50% FantasyPros ECR, 50% RotoWire projections, FantasyPros projections, and 4for4."),
-    ("What is the Proj column?", "RotoWire PPR points for this week, via Sleeper. Blank means that model skipped the name."),
+    ("How is the weekly board built?", "Super Aggregate of every Week N board that ranked the name: 50% FantasyPros ECR, 50% every other board that ranked the name. That is FantasyPros projected points, 4for4, and RotoWire when that feed has points."),
+    ("What is the Proj column?", "FantasyPros projected points for this week when RotoWire's feed has no skill points. RotoWire PPR points, via Sleeper, when that feed publishes them. Blank means both skipped the name."),
     ("When does this refresh?", "A Monday and Tuesday job re-scrapes the public boards and rebuilds the pages."),
 ]
 
@@ -117,7 +122,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
         body = f"""
     <p class="kicker">{label} · {pos} · {len(src)} boards</p>
     <h1>Week {week} {pos}</h1>
-    <p class="note">This week's stream, not the season-long Board. Super Aggregate of {len(src)} published Week {week} boards. 50% FantasyPros ECR, 50% every other board that ranked the name. {chairs.get(pos, lead + ' sits first.')} Proj is RotoWire PPR points.</p>
+    <p class="note">This week's stream, not the season-long Board. Super Aggregate of {len(src)} published Week {week} boards. 50% FantasyPros ECR, 50% every other board that ranked the name. {chairs.get(pos, lead + ' sits first.')} {proj_blurb()}</p>
     {rank_search_bar()}
     <div class="panel">{weekly_table(rows)}</div>
     {sources_panel(src, heading="Boards in This Super Aggregate")}
@@ -141,15 +146,14 @@ def write_weekly_pages(b, nfl, media, board_rows):
     flex_body = f"""
     <p class="kicker">{label} · skill · Flex plus positions</p>
     <h1>Weekly</h1>
-    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% RotoWire projections. Quarterbacks, backs, receivers, and tight ends each have their own board. Proj is RotoWire PPR points. The opener lives on <a href="the-recap.html">The Recap</a>. The Week 5 card, with a pick on every line, lives on <a href="week5-matchups.html">Week 5 Predictions</a>. The finished Week 4 card sits on <a href="week4-matchups.html">Week 4 Predictions</a>.</p>
-    {recap_teaser()}
+    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% every other board that ranked the name. Quarterbacks, backs, receivers, and tight ends each have their own board. {proj_blurb()} The finished Week 1 essay lives on <a href="the-recap.html">The Recap</a>. The Week 6 card, with a pick on every line, lives on <a href="week6-matchups.html">Week 6 Predictions</a>. The finished Week 5 card sits on <a href="week5-matchups.html">Week 5 Predictions</a>.</p>
     {predictions_teaser()}
     <div class="grid-3">
       <a class="tile" href="weekly-qb.html"><h3>Week {week} QB</h3><p>{(boards['QB'] or [{'name':''}])[0]['name']} leads the quarterbacks.</p></a>
       <a class="tile" href="weekly-rb.html"><h3>Week {week} RB</h3><p>{(boards['RB'] or [{'name':''}])[0]['name']} opens the backfield.</p></a>
       <a class="tile" href="weekly-wr.html"><h3>Week {week} WR</h3><p>{(boards['WR'] or [{'name':''}])[0]['name']} sits first among receivers.</p></a>
       <a class="tile" href="weekly-te.html"><h3>Week {week} TE</h3><p>{(boards['TE'] or [{'name':''}])[0]['name']} is the top tight end.</p></a>
-      <a class="tile" href="waiver.html"><h3>Week {week} Waivers</h3><p>Wilson, Shipley, Coleman, and the names Week 4 moved.</p></a>
+      <a class="tile" href="waiver.html"><h3>Week {waiver_week()} Waivers</h3><p>Bernard, Pierce, Bourne, and the names the published lists moved.</p></a>
       <a class="tile" href="injuries.html"><h3>Injuries</h3><p>ESPN designations.</p></a>
     </div>
     {rank_search_bar(chips)}
@@ -197,22 +201,23 @@ def write_weekly_pages(b, nfl, media, board_rows):
 
     # --- Week N consensus waivers ---
     w_chips, w_js = pos_filter("waiver-pos")
+    w_week = waiver_week()
     w_faq = [
-        ("What is this list?", f"A Week {week} Super Aggregate of published waiver articles after the fourth Sunday. A name needs two lists."),
+        ("What is this list?", f"A Week {w_week} Super Aggregate of published waiver articles after the fifth Sunday. A name needs two lists."),
         ("Is this FAAB advice?", "No dollar bids. Super Aggregate of every list that ranked the name."),
         ("Why is a drafted star missing?", "If a list did not put him on their waiver board, that list does not vote for him."),
     ]
     w_lead = waivers[0]["name"] if waivers else ""
     w_body = f"""
-    <p class="kicker">{label} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
-    <h1>Week {week} Waivers</h1>
-    <p class="note">Week {week} waiver Super Aggregate after the fourth Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own Week {week} boards. The finished Week 4 card lives on <a href="week4-matchups.html">Week 4 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
+    <p class="kicker">2026 Week {w_week} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
+    <h1>Week {w_week} Waivers</h1>
+    <p class="note">Week {w_week} waiver Super Aggregate after the fifth Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own boards. The finished Week 5 card lives on <a href="week5-matchups.html">Week 5 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
     {rank_search_bar(w_chips)}
     <div class="panel">{weekly_table(waivers)}</div>
     {sources_panel(WEEK1_WAIVER_SOURCES, heading="Lists in This Super Aggregate")}
-    {faq_html(w_faq, heading=f"How Week {week} Waivers is built.")}
+    {faq_html(w_faq, heading=f"How Week {w_week} Waivers is built.")}
     """
-    write("waiver.html", board_page(f"Week {week} Waivers", "waiver.html", w_body, w_js, extra_jsonld=[faq_jsonld(w_faq)]))
+    write("waiver.html", board_page(f"Week {w_week} Waivers", "waiver.html", w_body, w_js, extra_jsonld=[faq_jsonld(w_faq)]))
 
     # --- injuries ---
     def inj_extra(r):
@@ -276,38 +281,280 @@ def write_weekly_pages(b, nfl, media, board_rows):
     }
 
 
-def usage_html(name: str) -> str:
-    row = usage_for(name)
+def _stat_num(row, key) -> float:
     if not row:
+        return 0.0
+    val = row.get(key)
+    if val in (None, ""):
+        return 0.0
+    try:
+        return float(val)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _fmt_int(val) -> str:
+    if val is None:
+        return "—"
+    return f"{int(round(float(val))):,}"
+
+
+def _fmt_pct(val) -> str:
+    if val is None:
+        return "—"
+    return f"{float(val):.1f}%"
+
+
+def _fmt_pts(val) -> str:
+    if val is None:
+        return "—"
+    return f"{float(val):.1f}"
+
+
+def _snap_pct(row) -> float | None:
+    if not row:
+        return None
+    stored = row.get("snap_pct")
+    if stored not in (None, ""):
+        try:
+            return float(stored)
+        except (TypeError, ValueError):
+            pass
+    off = _stat_num(row, "off_snp")
+    tm = _stat_num(row, "tm_off_snp")
+    if off and tm:
+        return round(100.0 * off / tm, 1)
+    return None
+
+
+def _line(row, qb: bool) -> dict:
+    rush_att = _stat_num(row, "rush_att")
+    rush_yd = _stat_num(row, "rush_yd")
+    rush_td = _stat_num(row, "rush_td")
+    rec = _stat_num(row, "rec")
+    rec_yd = _stat_num(row, "rec_yd")
+    rec_td = _stat_num(row, "rec_td")
+    tgt = _stat_num(row, "rec_tgt")
+    pass_yd = _stat_num(row, "pass_yd")
+    pass_td = _stat_num(row, "pass_td")
+    touches = rush_att + rec
+    if qb:
+        yards = pass_yd
+        tds = pass_td + rush_td
+    else:
+        yards = rush_yd + rec_yd
+        tds = rush_td + rec_td
+    catch = round(100.0 * rec / tgt, 1) if tgt else None
+    ypt = round(yards / touches, 1) if touches and not qb else None
+    return {
+        "gp": _stat_num(row, "gp"),
+        "snap": _snap_pct(row),
+        "touches": touches,
+        "tgt": tgt,
+        "rec": rec,
+        "yards": yards,
+        "tds": tds,
+        "rush_att": rush_att,
+        "rush_yd": rush_yd,
+        "rush_td": rush_td,
+        "rec_yd": rec_yd,
+        "pass_cmp": _stat_num(row, "pass_cmp"),
+        "pass_att": _stat_num(row, "pass_att"),
+        "pass_yd": pass_yd,
+        "pass_td": pass_td,
+        "pass_int": _stat_num(row, "pass_int"),
+        "catch": catch,
+        "ypt": ypt,
+        "ppr": 0.0 if row.get("pts_ppr") in (None, "") else row.get("pts_ppr"),
+        "off_snp": _stat_num(row, "off_snp"),
+        "tm_off_snp": _stat_num(row, "tm_off_snp"),
+    }
+
+
+def _fact(label: str, text: str) -> str:
+    return f'<div class="fact"><small>{_esc(label)}</small><strong>{text}</strong></div>'
+
+
+def _th(labels: list[str]) -> str:
+    return "<tr>" + "".join(f"<th scope=\"col\">{_esc(lab)}</th>" for lab in labels) + "</tr>"
+
+
+def _tds(vals: list[str], kind: str = "") -> str:
+    cls = f' class="{kind}"' if kind else ""
+    return f"<tr{cls}>" + "".join(f"<td>{v}</td>" for v in vals) + "</tr>"
+
+
+def usage_html(name: str, pos: str = "") -> str:
+    """Yearly totals and the 2026 game log, shown at the top of a player page."""
+    seasons = yearly_usage(name)
+    log = gamelog_for(name) or {}
+    games = list(log.get("games") or [])
+    if not seasons and not games:
         return ""
-    def cell(lab, val, fmt=None):
-        if val in (None, ""):
-            return ""
-        if fmt == "pct":
-            txt = f"{val:.1f}%"
-        elif fmt == "pts":
-            txt = f"{val:.1f}"
-        elif isinstance(val, float) and val == int(val):
-            txt = str(int(val))
-        else:
-            txt = str(val)
-        return f'<div class="fact"><small>{lab}</small><strong>{txt}</strong></div>'
-    bits = [
-        cell("2025 snaps", row.get("off_snp")),
-        cell("Snap %", row.get("snap_pct"), "pct"),
-        cell("Targets", row.get("rec_tgt")),
-        cell("Catches", row.get("rec")),
-        cell("Rush att", row.get("rush_att")),
-        cell("PPR pts", row.get("pts_ppr"), "pts"),
-        cell("Games", row.get("gp")),
-    ]
-    bits = [x for x in bits if x]
-    if not bits:
-        return ""
+
+    bundle = gamelog_bundle()
+    through = int(bundle.get("through_week") or 0)
+    season_now = int(bundle.get("season") or 2026)
+    by_year = {year: row for year, row in seasons}
+    sample = by_year.get(season_now) or (seasons[0][1] if seasons else {})
+    pos_u = (pos or log.get("pos") or (sample or {}).get("pos") or "").upper()
+    qb = pos_u.startswith("QB")
+    team = (log.get("team") or (by_year.get(season_now) or {}).get("team") or "").upper()
+
+    headline_row = by_year.get(season_now)
+    headline_year = season_now if headline_row else (seasons[0][0] if seasons else season_now)
+    if not headline_row and seasons:
+        headline_row = seasons[0][1]
+    if not headline_row and games:
+        headline_row = _sum_games(games)
+
+    line = _line(headline_row or {}, qb)
+    if qb:
+        facts = [
+            _fact("Pass yds", _fmt_int(line["pass_yd"])),
+            _fact("Touches", _fmt_int(line["touches"])),
+            _fact("Catches", _fmt_int(line["rec"])),
+            _fact("Targets", _fmt_int(line["tgt"])),
+            _fact("TDs", _fmt_int(line["tds"])),
+            _fact("Snap %", _fmt_pct(line["snap"])),
+            _fact("Cmp", _fmt_int(line["pass_cmp"])),
+            _fact("Att", _fmt_int(line["pass_att"])),
+            _fact("INT", _fmt_int(line["pass_int"])),
+            _fact("Rush yds", _fmt_int(line["rush_yd"])),
+            _fact("PPR", _fmt_pts(line["ppr"])),
+            _fact("Games", _fmt_int(line["gp"] if headline_row and headline_row.get("gp") not in (None, "") else len(games))),
+        ]
+        head = ["Year", "G", "Snap %", "Cmp", "Att", "Pass yds", "Pass TD", "INT", "Rush", "RuYd", "RuTD", "PPR"]
+        ghead = ["Wk", "Opp", "Snap %", "Cmp", "Att", "Pass yds", "Pass TD", "INT", "Rush", "RuYd", "RuTD", "PPR"]
+    else:
+        facts = [
+            _fact("Yards", _fmt_int(line["yards"])),
+            _fact("Touches", _fmt_int(line["touches"])),
+            _fact("Catches", _fmt_int(line["rec"])),
+            _fact("Targets", _fmt_int(line["tgt"])),
+            _fact("TDs", _fmt_int(line["tds"])),
+            _fact("Snap %", _fmt_pct(line["snap"])),
+            _fact("Rush yds", _fmt_int(line["rush_yd"])),
+            _fact("Rec yds", _fmt_int(line["rec_yd"])),
+            _fact("Catch %", _fmt_pct(line["catch"])),
+            _fact("Yds/touch", "—" if line["ypt"] is None else f"{line['ypt']:.1f}"),
+            _fact("PPR", _fmt_pts(line["ppr"])),
+            _fact("Games", _fmt_int(line["gp"] if headline_row and headline_row.get("gp") not in (None, "") else len(games))),
+        ]
+        head = ["Year", "G", "Snap %", "Touches", "Tgt", "Rec", "Yds", "TD", "Rush", "RuYd", "ReYd", "PPR"]
+        ghead = ["Wk", "Opp", "Snap %", "Touches", "Tgt", "Rec", "Yds", "TD", "Rush", "RuYd", "ReYd", "PPR"]
+
+    if headline_year == season_now and through:
+        kicker = f"{headline_year} · through Week {through}"
+    else:
+        kicker = f"{headline_year} season"
+    missing_now = ""
+    if headline_year != season_now:
+        missing_now = f'<p class="note">No {season_now} regular-season line yet.</p>'
+
+    year_rows = []
+    for year, row in seasons:
+        year_rows.append(_tds([str(year)] + _count_cells(_line(row, qb), qb, games=True)))
+    yearly = ""
+    if year_rows:
+        yearly = (
+            "<h3>Yearly</h3>"
+            '<div class="table-wrap"><table class="stat-log">'
+            f"<thead>{_th(head)}</thead><tbody>{''.join(year_rows)}</tbody></table></div>"
+        )
+
+    game_rows = []
+    played_rows = []
+    by_week = {int(g.get("week") or 0): g for g in games}
+    weeks = list(range(1, through + 1)) if through else sorted(by_week)
+    for week in weeks:
+        raw = by_week.get(week)
+        ha, opp = opponent_for(team, week) if team else ("", "")
+        opp_txt = f"{ha} {opp}".strip() if opp and opp != "BYE" else (opp or "—")
+        if raw:
+            played_rows.append(raw)
+            if opp == "BYE":
+                opp_txt = "—"
+            game_rows.append(_tds([str(week), _esc(opp_txt)] + _count_cells(_line(raw, qb), qb, games=False)))
+        elif opp == "BYE":
+            game_rows.append(_tds([str(week), "BYE"] + ["—"] * (len(ghead) - 2), "bye"))
+        elif team:
+            game_rows.append(_tds([str(week), _esc(opp_txt or "—")] + ["—"] * (len(ghead) - 2), "dnp"))
+    game_html = ""
+    if game_rows:
+        total = _sum_games(played_rows) if played_rows else None
+        foot = ""
+        if total:
+            foot = "<tfoot>" + _tds(["", "Total"] + _count_cells(_line(total, qb), qb, games=False), "total") + "</tfoot>"
+        game_html = (
+            f"<h3>Game by game · {season_now}</h3>"
+            '<div class="table-wrap"><table class="stat-log">'
+            f"<thead>{_th(ghead)}</thead><tbody>{''.join(game_rows)}</tbody>{foot}</table></div>"
+        )
+
+    if qb:
+        note = "Regular-season line from Sleeper. Touches are carries plus catches. TDs are passing plus rushing. Snap % is offensive snaps divided by team offensive snaps."
+    else:
+        note = "Regular-season line from Sleeper. Touches are carries plus catches. Yards are rushing plus receiving. Snap % is offensive snaps divided by team offensive snaps."
     return (
-        '<section class="panel usage">'
-        '<p class="kicker">2025 usage</p>'
-        "<h3>Snaps and targets</h3>"
-        f'<div class="facts">{"".join(bits)}</div>'
+        '<section class="panel player-stats" id="player-stats">'
+        f'<p class="kicker">{_esc(kicker)}</p>'
+        "<h2>Counting stats</h2>"
+        f"{missing_now}"
+        f'<div class="facts stat-facts">{"".join(facts)}</div>'
+        f"{yearly}{game_html}"
+        f'<p class="note">{note}</p>'
         "</section>"
     )
+
+
+def _count_cells(line: dict, qb: bool, games: bool) -> list[str]:
+    g = _fmt_int(line["gp"]) if games else None
+    snap = _fmt_pct(line["snap"])
+    ppr = _fmt_pts(line["ppr"])
+    if qb:
+        body = [
+            _fmt_int(line["pass_cmp"]),
+            _fmt_int(line["pass_att"]),
+            _fmt_int(line["pass_yd"]),
+            _fmt_int(line["pass_td"]),
+            _fmt_int(line["pass_int"]),
+            _fmt_int(line["rush_att"]),
+            _fmt_int(line["rush_yd"]),
+            _fmt_int(line["rush_td"]),
+            ppr,
+        ]
+    else:
+        body = [
+            _fmt_int(line["touches"]),
+            _fmt_int(line["tgt"]),
+            _fmt_int(line["rec"]),
+            _fmt_int(line["yards"]),
+            _fmt_int(line["tds"]),
+            _fmt_int(line["rush_att"]),
+            _fmt_int(line["rush_yd"]),
+            _fmt_int(line["rec_yd"]),
+            ppr,
+        ]
+    if games:
+        return [g, snap, *body]
+    return [snap, *body]
+
+
+def _sum_games(games: list[dict]) -> dict:
+    keys = (
+        "gp", "off_snp", "tm_off_snp", "rec_tgt", "rec", "rec_yd", "rec_td",
+        "rush_att", "rush_yd", "rush_td", "pass_cmp", "pass_att", "pass_yd",
+        "pass_td", "pass_int", "pts_ppr",
+    )
+    out = {k: 0.0 for k in keys}
+    out["gp"] = float(len(games))
+    for g in games:
+        for k in keys:
+            if k == "gp":
+                continue
+            out[k] += _stat_num(g, k)
+    if out["off_snp"] and out["tm_off_snp"]:
+        out["snap_pct"] = round(100.0 * out["off_snp"] / out["tm_off_snp"], 1)
+    out["pts_ppr"] = round(out["pts_ppr"], 1)
+    return out
