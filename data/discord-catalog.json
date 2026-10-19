@@ -1,5 +1,5 @@
 {
-  "updated": "October 17, 2026",
+  "updated": "October 19, 2026",
   "site": "https://ballkeep.com",
   "algorithm": "value = round(12000 * exp(-0.0085 * (rank-1)) / rank**0.13). 1QB multiplies QB value by 0.38. Picks map to equivalent ranks on that curve.",
   "sources": [
