@@ -2508,7 +2508,7 @@ def today_pack():
     names = [r.get("name") or "" for r in (week1_waiver_board() or [])[:4] if r.get("name")]
     waiver_line = ", ".join(names) if names else ""
     if waiver_line and ww != w:
-        waiver_line = f"Week {ww} mash: {waiver_line}"
+        waiver_line = f"No Week {w} list filed. Last published is Week {ww}: {waiver_line}"
     rank = {}
     for pos in ("QB", "RB", "WR", "TE"):
         for r in weekly_board(pos):
