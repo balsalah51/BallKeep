@@ -2466,10 +2466,11 @@ def home_week_faces():
     )
 
 
-def home_today_html(waiver_names, injured_names):
+def home_today_html(waiver_line, injured_names, hurt_map=None):
     w = live_week()
-    waivers = ", ".join(waiver_names[:4]) if waiver_names else "Waiver mash on the waiver board."
+    waivers = waiver_line or "Waiver mash on the waiver board."
     hurts = ", ".join(injured_names[:4]) if injured_names else "ESPN designations on Injuries."
+    hurt_json = json.dumps(hurt_map or {}, separators=(",", ":"))
     return f"""
     <section class="home-today" id="today" aria-label="Today">
       <p class="kicker">Today · {week_label(w)}</p>
@@ -2486,13 +2487,75 @@ def home_today_html(waiver_names, injured_names):
       </form>
       <div class="today-grid">
         <a class="tile" href="league.html"><h3>My Team</h3><p>Sleeper roster with BK Value on every name.</p></a>
-        <a class="tile" href="injuries.html"><h3>Injuries</h3><p>{esc(hurts)}</p></a>
+        <a class="tile" href="injuries.html"><h3>Injuries</h3><p id="today-injuries">{esc(hurts)}</p></a>
         <a class="tile" href="waiver.html"><h3>Waivers</h3><p>{esc(waivers)}</p></a>
         <a class="tile" href="trade.html"><h3>Trade</h3><p>Six calculators. Fair is within 8%.</p></a>
       </div>
       <p class="note" id="today-hits" hidden></p>
+      <script type="application/json" id="today-hurt">{hurt_json}</script>
     </section>
     """
+
+
+def today_pack():
+    """Waiver line, fantasy-relevant injuries, and a Sleeper-id map for the saved roster."""
+    from weekly_kit import injury_rows, waiver_week, week1_waiver_board, weekly_board
+    w = live_week()
+    ww = waiver_week()
+    names = [r.get("name") or "" for r in (week1_waiver_board() or [])[:4] if r.get("name")]
+    waiver_line = ", ".join(names) if names else ""
+    if waiver_line and ww != w:
+        waiver_line = f"Week {ww} mash: {waiver_line}"
+    rank = {}
+    for pos in ("QB", "RB", "WR", "TE"):
+        for r in weekly_board(pos):
+            rank.setdefault(norm_name(r.get("name") or ""), r.get("bk") or 999)
+    keep_rank = {}
+    keep_path = ROOT / "data" / "the-keep.json"
+    if keep_path.exists():
+        try:
+            keep_doc = json.loads(keep_path.read_text())
+        except json.JSONDecodeError:
+            keep_doc = {}
+        for i, p in enumerate(keep_doc.get("players") or [], 1):
+            keep_rank.setdefault(norm_name(p.get("name") or ""), p.get("bk") or i)
+    media_path = ROOT / "data" / "player_media.json"
+    by_key = {}
+    if media_path.exists():
+        try:
+            media = json.loads(media_path.read_text())
+        except json.JSONDecodeError:
+            media = {}
+        for rec in (media or {}).values():
+            sid = str(rec.get("sleeper_id") or "")
+            key = norm_name(rec.get("name") or rec.get("key") or "")
+            if sid and key:
+                by_key[key] = sid
+    order = {"Out": 0, "Doubtful": 1, "Questionable": 2}
+    relevant = []
+    hurt_map = {}
+    for row in injury_rows() or []:
+        status = row.get("status") or ""
+        if status not in order:
+            continue
+        key = norm_name(row.get("name") or "")
+        sid = by_key.get(key)
+        if not sid or (key not in rank and key not in keep_rank):
+            continue
+        label = f"{row['name']} ({status})"
+        hurt_map[sid] = label
+        relevant.append((order[status], min(rank.get(key, 999), keep_rank.get(key, 999)), label))
+    relevant.sort()
+    # The map has to cover the whole remembered roster, not just the four names on the tile.
+    for row in injury_rows() or []:
+        status = row.get("status") or ""
+        if status not in order:
+            continue
+        key = norm_name(row.get("name") or "")
+        sid = by_key.get(key)
+        if sid and sid not in hurt_map:
+            hurt_map[sid] = f"{row['name']} ({status})"
+    return waiver_line, [label for _, _, label in relevant[:4]], hurt_map
 
 
 def home_rank_preview(rows, media, n=16):
@@ -2568,19 +2631,11 @@ def home_body_html(keep, board, media, stories=None):
     keep_n = len(KEEP_SOURCES)
     board_n = len(PPR_SOURCES)
     w = live_week()
-    today = home_today_html([], [])
     try:
-        from weekly_kit import week1_waiver_board, injury_rows
-        waiver_names = [r.get("name") or "" for r in (week1_waiver_board() or [])[:6] if r.get("name")]
-        hurt = []
-        for row in (injury_rows() or [])[:12]:
-            name = row.get("name") or ""
-            des = row.get("designation") or row.get("status") or ""
-            if name and des:
-                hurt.append(f"{name} ({des})")
-        today = home_today_html(waiver_names, hurt)
+        waiver_line, hurt, hurt_map = today_pack()
+        today = home_today_html(waiver_line, hurt, hurt_map)
     except Exception:
-        pass
+        today = home_today_html("", [])
     news_block = home_news_html(stories)
     wire = ""
     if news_block:
@@ -2723,7 +2778,7 @@ def home_body_html(keep, board, media, stories=None):
 def write_home_page(keep, board, media, stories=None):
     write("index.html", page(
         "Home", "index.html", home_body_html(keep, board, media, stories),
-        extra_js='<script src="js/today.js" defer></script>',
+        extra_js=f'<script src="js/today.js?v={CSS_VER}" defer></script>',
         extra_jsonld=[website_jsonld("Ball Keep"), faq_jsonld(HOME_FAQ)],
         modified=LASTMOD,
         body_class="home",

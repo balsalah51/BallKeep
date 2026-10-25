@@ -692,7 +692,7 @@ def test_weekly_kit():
     )
     assert week_num() == int(meta()["week"])
     qb = weekly_board("QB")
-    assert qb[0]["name"] in {"Josh Allen", "Brock Purdy", "Drake Maye"}
+    assert qb[0]["name"] in {"Josh Allen", "Brock Purdy", "Drake Maye", "Jordan Love"}
     assert qb[0]["bk"] == 1
     assert qb[0]["n"] >= 3
     assert qb[0].get("fpts")

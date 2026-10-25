@@ -77,16 +77,48 @@
       .catch(function (err) { note(err.message || "Sleeper lookup failed."); });
   });
 
-  if (!known || !hits) return;
-  fetch(SLEEPER + "/league/" + encodeURIComponent(known) + "/rosters")
-    .then(function (r) { return r.ok ? r.json() : []; })
-    .then(function (rosters) {
-      const n = (rosters || []).reduce(function (acc, row) {
+  function applyHurt(ids) {
+    const tile = document.getElementById("today-injuries");
+    const node = document.getElementById("today-hurt");
+    if (!tile || !node || !ids.length) return;
+    let map;
+    try { map = JSON.parse(node.textContent || "{}"); } catch (e) { return; }
+    const hits = [];
+    ids.forEach(function (id) {
+      if (map[id]) hits.push(map[id]);
+    });
+    tile.textContent = hits.length
+      ? hits.slice(0, 4).join(", ")
+      : "Nobody on this roster is on the injury list.";
+  }
+
+  if (!known) return;
+  const userPromise = knownUser
+    ? fetch(SLEEPER + "/user/" + encodeURIComponent(knownUser)).then(function (r) { return r.ok ? r.json() : null; })
+    : Promise.resolve(null);
+  const rosterPromise = fetch(SLEEPER + "/league/" + encodeURIComponent(known) + "/rosters")
+    .then(function (r) { return r.ok ? r.json() : []; });
+  Promise.all([userPromise, rosterPromise])
+    .then(function (pair) {
+      const user = pair[0];
+      const rosters = pair[1] || [];
+      let mine = [];
+      if (user && user.user_id) {
+        const uid = String(user.user_id);
+        rosters.forEach(function (row) {
+          const owners = [String(row.owner_id || "")].concat((row.co_owners || []).map(String));
+          if (owners.indexOf(uid) === -1) return;
+          (row.players || []).forEach(function (id) { mine.push(String(id)); });
+        });
+      }
+      const n = mine.length || rosters.reduce(function (acc, row) {
         return acc + ((row.players || []).length);
       }, 0);
-      if (!n) return;
-      const who = knownUser ? knownUser + " · " : "";
-      note(who + "Remembered league loaded " + n + " rostered names. Open My Team to price them.");
+      if (n && hits) {
+        const who = knownUser ? knownUser + " · " : "";
+        note(who + "Remembered league loaded " + n + " rostered names. Open My Team to price them.");
+      }
+      applyHurt(mine);
     })
     .catch(function () {});
 })();
