@@ -297,7 +297,7 @@ PL_ALSO = {
 PL_HOME_FAQ = [
     ("What is PitchKeep?", "PitchKeep is Premier League on Ball Keep. The Premier is a 2026/27 hybrid 400 from 25 published lists. The Pitch is last season's Sleeper BPL points. Same BK Value curve."),
     ("Premier vs Pitch?", "The Premier is who the boards ranked for 2026/27. The Pitch is who scored on Sleeper last season. Use Premier for drafts, Pitch for the counting-stat tape."),
-    ("Where is the soccer news?", "PK News clusters injury, transfer, and manager tape hourly, with links back to PitchKeep player files."),
+    ("Where is the soccer news?", "PK News clusters injury, transfer, and manager tape. The banner on the news page says when the last scrape landed."),
 ]
 PL_PREMIER_FAQ = [
     ("What is The Premier?", "The full ranked tape from 25 published 2026/27 pro lists plus official FPL metrics. Half Sleeper BPL 2025, half the boards."),
@@ -1287,7 +1287,7 @@ def write_pitch_site():
       <div class="home-hero-media" aria-hidden="true"></div>
       <div class="home-hero-copy">
         {sr_h1("Fantasy Premier League Rankings")}
-        <p class="home-eyebrow">Updated {UPDATED} · Hybrid · Sleeper</p>
+        <p class="home-eyebrow">Ranks {UPDATED} · 2026/27 season</p>
         <p class="home-mark">{wordmark()}</p>
         <div class="home-ctas">
           <a class="cta" href="the-premier.html">The Premier</a>

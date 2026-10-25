@@ -1,5 +1,5 @@
 {
-  "updated": "October 19, 2026",
+  "updated": "October 25, 2026",
   "site": "https://ballkeep.com",
   "algorithm": "value = round(12000 * exp(-0.0085 * (rank-1)) / rank**0.13). 1QB multiplies QB value by 0.38. Picks map to equivalent ranks on that curve.",
   "sources": [
@@ -20357,7 +20357,7 @@
     {
       "name": "Marquez Valdes-Scantling",
       "pos": "WR",
-      "team": "LAC",
+      "team": "PIT",
       "bk": 448,
       "avg": 483.5,
       "n": 10,
@@ -20578,7 +20578,7 @@
     {
       "name": "Kevin Austin Jr.",
       "pos": "WR",
-      "team": "NO",
+      "team": "",
       "bk": 465,
       "avg": 501.72,
       "n": 10,
@@ -26599,7 +26599,7 @@
     {
       "name": "Marquez Valdes-Scantling",
       "pos": "WR",
-      "team": "LAC",
+      "team": "PIT",
       "bk": 448,
       "avg": 483.5,
       "n": 10,
@@ -26820,7 +26820,7 @@
     {
       "name": "Kevin Austin Jr.",
       "pos": "WR",
-      "team": "NO",
+      "team": "",
       "bk": 465,
       "avg": 501.72,
       "n": 10,
@@ -32409,7 +32409,7 @@
     {
       "name": "Marquez Valdes-Scantling",
       "pos": "WR",
-      "team": "LAC",
+      "team": "PIT",
       "bk": 490,
       "avg": 443.8,
       "n": 1,
@@ -32695,7 +32695,7 @@
     {
       "name": "Kevin Austin Jr.",
       "pos": "WR",
-      "team": "NO",
+      "team": "",
       "bk": 516,
       "avg": 468.8,
       "n": 1,
@@ -37112,7 +37112,7 @@
     {
       "name": "Marquez Valdes-Scantling",
       "pos": "WR",
-      "team": "LAC",
+      "team": "PIT",
       "bk": 450,
       "avg": 486.5,
       "n": 10,
@@ -37274,7 +37274,7 @@
     {
       "name": "Kevin Austin Jr.",
       "pos": "WR",
-      "team": "NO",
+      "team": "",
       "bk": 468,
       "avg": 504.72,
       "n": 10,
@@ -41434,7 +41434,7 @@
     {
       "name": "Marquez Valdes-Scantling",
       "pos": "WR",
-      "team": "LAC",
+      "team": "PIT",
       "bk": 450,
       "avg": 485.0,
       "n": 10,
@@ -41578,7 +41578,7 @@
     {
       "name": "Kevin Austin Jr.",
       "pos": "WR",
-      "team": "NO",
+      "team": "",
       "bk": 466,
       "avg": 503.22,
       "n": 10,
@@ -47163,7 +47163,7 @@
     {
       "name": "Kevin Austin Jr.",
       "pos": "WR",
-      "team": "NO",
+      "team": "",
       "bk": 455,
       "avg": 515.62,
       "n": 10,
@@ -47343,7 +47343,7 @@
     {
       "name": "Marquez Valdes-Scantling",
       "pos": "WR",
-      "team": "LAC",
+      "team": "PIT",
       "bk": 470,
       "avg": 550.62,
       "n": 10,
@@ -102448,7 +102448,7 @@
       "slug": "marquez-valdes-scantling",
       "name": "Marquez Valdes-Scantling",
       "pos": "WR",
-      "team": "LAC",
+      "team": "PIT",
       "age": 31,
       "full_name": "Marquez Valdes-Scantling",
       "lists": {
@@ -103042,7 +103042,7 @@
       "slug": "kevin-austin",
       "name": "Kevin Austin Jr.",
       "pos": "WR",
-      "team": "NO",
+      "team": "",
       "age": 26,
       "full_name": "Kevin Austin Jr.",
       "lists": {

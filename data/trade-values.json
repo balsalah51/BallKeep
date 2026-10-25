@@ -1,5 +1,5 @@
 {
-  "updated": "October 19, 2026",
+  "updated": "October 25, 2026",
   "algorithm": "value = round(12000 * exp(-0.0085 * (rank-1)) / rank**0.13). 1QB multiplies QB value by 0.38. Picks map to equivalent ranks on that curve.",
   "modes": {
     "sf": {
@@ -8995,7 +8995,7 @@
           "id": "marquez-valdes-scantling",
           "name": "Marquez Valdes-Scantling",
           "pos": "WR",
-          "team": "LAC",
+          "team": "PIT",
           "rank": 490,
           "value": 84,
           "href": "players/marquez-valdes-scantling.html"
@@ -9229,7 +9229,7 @@
           "id": "kevin-austin",
           "name": "Kevin Austin Jr.",
           "pos": "WR",
-          "team": "NO",
+          "team": "",
           "rank": 516,
           "value": 67,
           "href": "players/kevin-austin.html"
@@ -18149,7 +18149,7 @@
           "id": "marquez-valdes-scantling",
           "name": "Marquez Valdes-Scantling",
           "pos": "WR",
-          "team": "LAC",
+          "team": "PIT",
           "rank": 448,
           "value": 121,
           "href": "players/marquez-valdes-scantling.html"
@@ -18302,7 +18302,7 @@
           "id": "kevin-austin",
           "name": "Kevin Austin Jr.",
           "pos": "WR",
-          "team": "NO",
+          "team": "",
           "rank": 465,
           "value": 105,
           "href": "players/kevin-austin.html"
@@ -22496,7 +22496,7 @@
           "id": "marquez-valdes-scantling",
           "name": "Marquez Valdes-Scantling",
           "pos": "WR",
-          "team": "LAC",
+          "team": "PIT",
           "rank": 450,
           "value": 119,
           "href": "players/marquez-valdes-scantling.html"
@@ -22640,7 +22640,7 @@
           "id": "kevin-austin",
           "name": "Kevin Austin Jr.",
           "pos": "WR",
-          "team": "NO",
+          "team": "",
           "rank": 466,
           "value": 104,
           "href": "players/kevin-austin.html"
@@ -26825,7 +26825,7 @@
           "id": "marquez-valdes-scantling",
           "name": "Marquez Valdes-Scantling",
           "pos": "WR",
-          "team": "LAC",
+          "team": "PIT",
           "rank": 450,
           "value": 119,
           "href": "players/marquez-valdes-scantling.html"
@@ -26987,7 +26987,7 @@
           "id": "kevin-austin",
           "name": "Kevin Austin Jr.",
           "pos": "WR",
-          "team": "NO",
+          "team": "",
           "rank": 468,
           "value": 102,
           "href": "players/kevin-austin.html"

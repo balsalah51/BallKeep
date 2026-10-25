@@ -2369,11 +2369,17 @@ def home_week_faces():
         ("kenneth-walker", "jpg", "Kenneth Walker"),
         ("jordan-love", "png", "Jordan Love"),
     ]
-    pics = "".join(
-        f'<a href="{href}"><img src="img/players/{slug}.{ext}" alt="{name}" '
-        f'width="120" height="120" loading="lazy" /></a>'
-        for slug, ext, name in shots
-    )
+    pics = []
+    for slug, ext, name in shots:
+        jpg = f"img/players/{slug}.{ext}"
+        webp = f"img/players/{slug}.webp"
+        img = (
+            f'<img src="{jpg}" alt="{name}" width="120" height="120" loading="lazy" />'
+        )
+        if (ROOT / webp).exists():
+            img = f'<picture><source type="image/webp" srcset="{webp}" />{img}</picture>'
+        pics.append(f'<a href="{href}">{img}</a>')
+    pics = "".join(pics)
     return (
         predictions_teaser()
         + f'<div class="home-faces" aria-label="Faces from {week_label(w)}">{pics}</div>'

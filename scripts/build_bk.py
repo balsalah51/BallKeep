@@ -290,7 +290,7 @@ BK_ALSO = {
 BK_HOME_FAQ = [
     ("What is BasketKeep?", "BasketKeep is basketball on Ball Keep. The Keep is dynasty basketball, the full ranked tape, from 18 boards. The Board is this-year redraft. BK Value uses the same 12,000 curve as football."),
     ("How is The Keep ranked?", "Average of every source that ranked the player."),
-    ("Where is the NBA news?", "BK News on this board clusters injury, roster, and coach tape hourly, with links back to Keep player files."),
+    ("Where is the NBA news?", "BK News on this board clusters injury, roster, and coach tape. The banner on the news page says when the last scrape landed."),
 ]
 BK_KEEP_FAQ = [
     ("What is The Keep on BasketKeep?", "Dynasty basketball, the full ranked tape, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board."),
@@ -983,7 +983,7 @@ def write_basket_site():
       <div class="home-hero-media" aria-hidden="true"></div>
       <div class="home-hero-copy">
         {sr_h1("Fantasy Basketball Dynasty Rankings")}
-        <p class="home-eyebrow">Updated {UPDATED} · Dynasty · Redraft</p>
+        <p class="home-eyebrow">Ranks {UPDATED} · 2026-27 season is on</p>
         <p class="home-mark">{wordmark()}</p>
         <div class="home-ctas">
           <a class="cta" href="the-keep.html">The Keep</a>

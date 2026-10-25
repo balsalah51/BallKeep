@@ -285,8 +285,10 @@ def main():
     nav_start = home.find("<nav")
     header_nav = home[nav_start:home.find("</nav>", nav_start)]
     assert 'href="recent-trades.html"' not in header_nav
-    assert "The D (DST)" in home
-    assert "The Fence (IDP)" in home
+    assert "The D · DST" in home
+    assert "The Fence · Superflex + IDP" in home
+    assert 'id="today"' in home
+    assert "home-today" in home
     ros_skill_at = home.find('class="desk-block ros-skill"')
     ros_st_at = home.find('class="desk-block ros-st"')
     week1_at = home.find('class="desk-block week"')
@@ -317,7 +319,7 @@ def main():
     assert "rookies-2026.html" in ros_skill
     assert "defenses.html" in ros_st
     assert "kickers.html" in ros_st
-    assert "The D (DST)" in ros_st
+    assert "The D · DST" in ros_st
     assert "Top Kickers" in ros_st
     assert "Rest-of-season values" in ros_st
     assert "week1-dst.html" not in ros_st
@@ -332,14 +334,15 @@ def main():
     assert "week6-dst.html" not in ros_st
     assert "weekly.html" in week1
     assert "the-recap.html" not in week1
-    assert "week6-dst.html" in week1
-    assert "week6-kickers.html" in week1
-    assert "week6-matchups.html" in week1
+    assert "week7-dst.html" in week1
+    assert "week7-kickers.html" in week1
+    assert "week7-matchups.html" in week1
+    assert "week6-dst.html" not in week1
     assert "week4-dst.html" not in week1
     assert "week5-dst.html" not in week1
     assert "week2-dst.html" not in week1
     assert "waiver.html" in week1
-    assert "Week 6 Waivers" in week1
+    assert "Waivers" in week1
     assert "the-market.html" not in week1
     assert "start-sit.html" not in week1
     assert "weekly-check.html" not in week1
@@ -386,7 +389,7 @@ def main():
     assert "week1-matchups.html" not in slates
     assert "weekly-check.html" not in slates
     assert "the-fence.html" in ros_st
-    assert "The Fence (IDP)" in ros_st
+    assert "The Fence · Superflex + IDP" in ros_st
     assert "the-fence.html" not in main
     assert "the-fence.html" not in ros_skill
     assert "the-fence.html" not in slates
@@ -447,6 +450,8 @@ def main():
     assert "the-split.html" not in articles
     assert "the-split.html" not in html_of("two-clocks.html")
     assert "The Split" not in html_of("two-clocks.html")
+    assert "week7-matchups.html" in articles
+    assert "Week 7 Predictions" in articles
     assert "week6-matchups.html" in articles
     assert "Week 6 Predictions" in articles
     assert "week2-tape.html" in articles
@@ -680,8 +685,9 @@ def main():
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
     assert "the-recap.html" in weekly_html
+    assert "week7-matchups.html" in weekly_html
     assert "week6-matchups.html" in weekly_html
-    assert "Broncos 17-14" in weekly_html
+    assert "Last scrape is Week 6" in weekly_html
     assert "Bijan Robinson" in weekly_html
     opening_html = html_of("archive/week1/opening.html")
     assert "Seahawks 13, Patriots 10" in opening_html

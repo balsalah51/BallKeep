@@ -331,7 +331,7 @@ BB_ALSO = {
 BB_HOME_FAQ = [
     ("What is BaseKeep?", "BaseKeep is baseball on Ball Keep. The Keep is dynasty overall, the full ranked tape, from 40 boards. The Diamond is this-year redraft. The Farm is the top 100 prospects. Same BK Value curve as football."),
     ("How is The Keep ranked?", "Average of every source that ranked the player. Two of the boards run 500 names long."),
-    ("Where is the MLB news?", "BK News on this board clusters IL, roster, DFA, and manager tape hourly."),
+    ("Where is the MLB news?", "BK News on this board clusters IL, roster, DFA, and manager tape. The banner on the news page says when the last scrape landed."),
 ]
 BB_FARM_FAQ = [
     ("What is The Farm?", "BaseKeep's top 100 prospects. Five boards: MLB Pipeline in-season 100, Baseball America August 100, ESPN Kiley McDaniel, Sports Illustrated midseason 50, and FanGraphs The Board."),
@@ -1690,7 +1690,7 @@ def write_baseball_site():
       <div class="home-hero-media" aria-hidden="true"></div>
       <div class="home-hero-copy">
         {sr_h1("Fantasy Baseball Dynasty Rankings")}
-        <p class="home-eyebrow">Updated {UPDATED} · Dynasty · Redraft</p>
+        <p class="home-eyebrow">Ranks {UPDATED} · Regular season wrapped Sept. 27</p>
         <p class="home-mark">{wordmark()}</p>
         <div class="home-ctas">
           <a class="cta" href="the-keep.html">The Keep</a>
