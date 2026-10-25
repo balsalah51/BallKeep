@@ -1,6 +1,7 @@
 """Week 5 predictions essay: a pick for every game, written in kickoff order."""
 from __future__ import annotations
 
+from nfl_week import week_href, week_label
 from seo import article_jsonld
 
 HEADLINE = "Irving ran 165 through a building that was supposed to win by nine, and the rest of the card wrote fourteen more receipts including a 27-27 and a Monday that went to overtime."
@@ -159,6 +160,6 @@ def predictions_article_html():
 
       <h2>A last look, because a card this long deserves one</h2>
       <p>I keep a private list of images from a week that still has no receipt and fifteen arguments. Lamb after 189 in Houston. Daniels taking a second snap on a Thursday that already has a 9.5 next to it. Purdy packing for a building that has held Shanahan under 20. Wilson after 21 carries and two scores, waiting on a claim. Allen walking out of Highmark after 29-26 with a Monday still on the calendar. Robinson after 145 in a dome that just hung 45. Walker already at 537 and sitting with the rest of Kansas City. Those pictures are why this page is crowded. The table at the top is the vote. The essay is the argument. Spend both, then spend the wire on Wilson and Shipley before the room remembers the names.</p>
-      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card), John Breech at CBS Sports (Oct 6), Vinnie Iyer at Sporting News (ATS card with SU winners), the SportsLine model (10,000 sims), the published FanDuel and DraftKings numbers, a Week 4 winners board, and a short post-Week 4 power card. The Week 5 card is finished. Live picks live on <a href="week6-matchups.html">Week 6 Predictions</a>. Waiver names from Justin Boone, FantasyPros, NFL.com, and FanDuel Research. Week 4 scores sit on <a href="week4-matchups.html">Week 4 Predictions</a>.</p>
+      <p class="sources">Picks drawn from Bill Bender at Sporting News (full SU card), John Breech at CBS Sports (Oct 6), Vinnie Iyer at Sporting News (ATS card with SU winners), the SportsLine model (10,000 sims), the published FanDuel and DraftKings numbers, a Week 4 winners board, and a short post-Week 4 power card. The Week 5 card is finished. Live picks live on <a href="{week_href('matchups')}">{week_label()} Predictions</a>. Waiver names from Justin Boone, FantasyPros, NFL.com, and FanDuel Research. Week 4 scores sit on <a href="week4-matchups.html">Week 4 Predictions</a>.</p>
     </article>
     """

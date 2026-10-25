@@ -52,9 +52,12 @@ def week7_matchups():
 
 
 def predictions_teaser():
-    return """
-    <a class="opening-teaser" href="week7-matchups.html">
-      <img src="img/players/drake-maye.jpg" alt="Drake Maye" width="160" height="160" />
+    from nfl_week import week_href
+    href = week_href("matchups", 7)
+    return f"""
+    <a class="opening-teaser" href="{href}">
+      <picture><source type="image/webp" srcset="img/players/drake-maye.webp" />
+      <img src="img/players/drake-maye.jpg" alt="Drake Maye" width="160" height="160" loading="lazy" /></picture>
       <div>
         <p class="k">Week 7 · Sunday, Oct 25</p>
         <h2>Fourteen games. Thursday already played. No invented picks.</h2>

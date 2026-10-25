@@ -1,14 +1,11 @@
-name: BK News hourly
+name: BK News
 
-# Story HTML rotates every hour. Rebuild news hubs and feeds only, then
-# commit those paths — never git add -A. A full site rebuild was rewriting
-# ranking pages and leftover story files, which produced modify/delete
-# conflicts on every open PR.
+# News HTML is committed on a short allow-list. A full site rebuild is the
+# daily job. Cron is UTC. Every 3 hours through the season.
 
 on:
   schedule:
-    # Every 6 hours. Hourly HTML churn was fighting open ranking PRs.
-    - cron: "17 */6 * * *"
+    - cron: "20 */3 * * *"
   workflow_dispatch:
     inputs:
       sport:
@@ -24,8 +21,8 @@ on:
           - basketball
 
 concurrency:
-  group: bk-news
-  cancel-in-progress: true
+  group: ballkeep-publish
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -44,47 +41,21 @@ jobs:
         run: python3 scripts/test_news.py
 
       - name: Scrape wires
-        id: scrape
-        continue-on-error: true
-        run: |
-          set +e
-          python3 scripts/news_scrape.py --sport "${{ github.event.inputs.sport || 'all' }}"
-          code=$?
-          echo "scrape_exit=$code" >> "$GITHUB_OUTPUT"
-          if [ "$code" -ne 0 ]; then
-            echo "::error::news_scrape.py exited $code"
-            echo "news_scrape failed ($code)" >> "$GITHUB_STEP_SUMMARY"
-            exit $code
-          fi
-          echo "news_scrape ok" >> "$GITHUB_STEP_SUMMARY"
+        run: python3 scripts/news_scrape.py --sport "${{ github.event.inputs.sport || 'all' }}"
+
+      - name: Fail if the football wire is stale
+        run: python3 scripts/check_freshness.py --ranks-hours 240 --news-hours 26 --news-required
 
       - name: Pull The X tape
-        continue-on-error: true
         run: python3 scripts/x_tape.py --sport all
 
       - name: Rebuild news pages only
-        if: steps.scrape.outcome == 'success'
         run: python3 scripts/build_site.py --news-only
-
-      - name: Catalog smoke test
-        continue-on-error: true
-        run: |
-          set +e
-          python3 bot/test_catalog.py
-          code=$?
-          if [ "$code" -ne 0 ]; then
-            echo "::warning::catalog smoke failed ($code); news commit still proceeds"
-            echo "catalog smoke failed ($code)" >> "$GITHUB_STEP_SUMMARY"
-            exit 0
-          fi
 
       - name: Commit news files only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Never git add -A. Ranking boards and player files stay off this
-          # hourly commit so open PRs do not inherit modify/delete conflicts
-          # when stories rotate.
           git add \
             data/news \
             data/x-tape \

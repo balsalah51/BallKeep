@@ -29,7 +29,7 @@ STOP = {
 }
 
 INJURY_RE = re.compile(
-    r"\b(injur(?:y|ies|ed)|questionable|doubtful|out for|dnp|limited|"
+    r"\b(injur(?:y|ies|ed)|questionable(?!\s+(?:replay|call|catch|penalty|ruling|flag))|doubtful|out for|dnp|limited|"
     r"hamstring|ankle|knee|concussion|calf|groin|shoulder|wrist|acl|"
     r"achilles|protocol|illness|rest day|inactive|active/inactive|"
     r"injured reserve|\bir\b|pup|designated to return|"
@@ -37,7 +37,7 @@ INJURY_RE = re.compile(
     re.I,
 )
 ROSTER_RE = re.compile(
-    r"\b(waiv(?:e|ed|es)|cut|released|signs?|signed|signing|claimed|activated|roster|"
+    r"\b(waiv(?:e|ed|es)|cut|released|signs?|signed|signing|claimed|activat(?:e[sd]?|ion)|roster|"
     r"practice squad|elevat(?:e|ed)|designated|returned to|added to|"
     r"dropped|re-sign(?:ed)?|contract|extension|"
     r"dfa|designated for assignment|optioned|called up|recalled|"
@@ -62,6 +62,11 @@ PRACTICE_RE = re.compile(
     re.I,
 )
 CAMP_RE = re.compile(r"\b(training camp|preseason|otak?s|camp battle|padded practice)\b", re.I)
+COLLEGE_LEAK_RE = re.compile(
+    r"\b(college football|ncaa|heisman|sarkisian|arch manning|"
+    r"south carolina|tennessee football|sec football)\b",
+    re.I,
+)
 JUNK_X_RE = re.compile(
     r"(read more:\s*)?(https?://)?t\.co/\S+|#\w+",
     re.I,
@@ -422,7 +427,15 @@ GENERIC_LONG = {
 }
 
 
+def _week_nums(title: str) -> set[int]:
+    return {int(n) for n in re.findall(r"\bweek\s+(\d{1,2})\b", title or "", flags=re.I)}
+
+
 def _same_cluster(a: dict, b: dict, hours: float) -> bool:
+    weeks_a = _week_nums(a.get("title") or "")
+    weeks_b = _week_nums(b.get("title") or "")
+    if weeks_a and weeks_b and weeks_a.isdisjoint(weeks_b):
+        return False
     ta, tb = tokens(a.get("title") or ""), tokens(b.get("title") or "")
     ja = jaccard(ta, tb)
     long_hit = {t for t in (ta & tb) if len(t) >= 7 and t not in GENERIC_LONG}
@@ -496,8 +509,8 @@ def summarize(items: list[dict], players: list[dict]) -> tuple[str, str]:
     summary = (lead + " " + extra).strip() + attrib
     summary = re.sub(r"\s+", " ", summary).strip()
     blurb = snippets[0]
-    if len(blurb) > 180:
-        blurb = blurb[:177].rsplit(" ", 1)[0] + "…"
+    if len(blurb) > 140:
+        blurb = blurb[:137].rsplit(" ", 1)[0] + "…"
     return blurb, summary
 
 
@@ -546,10 +559,13 @@ def merge_story(existing: dict | None, items: list[dict], sport: str) -> dict:
                 seen_p.add(p["key"])
                 players.append(p)
 
-    cats = [it.get("category") or "wire" for it in items]
-    if existing and existing.get("category"):
-        cats.insert(0, existing["category"])
-    category = next((c for c in ("injury", "trade", "roster", "coach", "practice") if c in cats), cats[0] if cats else "wire")
+    headline_for_cat = pick_headline(items) if items else (existing or {}).get("headline") or ""
+    category = categorize(headline_for_cat)
+    if category == "wire":
+        votes = [categorize(it.get("title") or "") for it in items]
+        votes = [v for v in votes if v != "wire"]
+        if votes:
+            category = max(set(votes), key=votes.count)
 
     sources = list(existing.get("sources") or []) if existing else []
     seen_u = {s.get("url") for s in sources}
@@ -563,7 +579,7 @@ def merge_story(existing: dict | None, items: list[dict], sport: str) -> dict:
             "url": url,
             "publisher": it.get("publisher") or publisher_from_url(url),
             "kind": source_kind(url, it.get("title") or "", it.get("publisher") or ""),
-            "snippet": strip_tags(it.get("summary") or "")[:280],
+            "snippet": strip_tags(it.get("summary") or "")[:160],
             "published": it.get("published") or "",
         })
 
@@ -639,10 +655,20 @@ def story_score(story: dict) -> float:
     return (nsrc * 1.2 + nplay * 4 + cat) * recency
 
 
+def _plain_x_title(title: str) -> str:
+    t = re.sub(r"https?://\S+|t\.co/\S+", " ", title or "", flags=re.I)
+    t = re.sub(r"#\w+", " ", t)
+    t = re.sub(r"read more:?", " ", t, flags=re.I)
+    t = re.sub(r"[^\w\s]", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
 def is_junk_cluster(story: dict) -> bool:
     title = (story.get("headline") or "").strip()
     blurb = (story.get("blurb") or "").strip()
     if JUNK_X_CORE_RE.search(title) and len(title) < 90:
+        return True
+    if re.search(r"t\.co/|read more", title, re.I) and len(_plain_x_title(title)) < 28:
         return True
     stripped = re.sub(r"(#\w+\s*)+", "", title).strip()
     if len(stripped) < 12:
@@ -708,12 +734,15 @@ def is_publishable(story: dict) -> bool:
         return False
     if is_junk_cluster(story):
         return False
-    blob = f"{title} {story.get('blurb') or ''}".lower()
+    blob = f"{title} {story.get('blurb') or ''}"
+    low = blob.lower()
     if story.get("sport") == "football":
-        if re.search(r"\b(mlb|baseball)\b", blob) and not re.search(r"\bnfl\b", blob):
+        if re.search(r"\b(mlb|baseball)\b", low) and not re.search(r"\bnfl\b", low):
+            return False
+        if COLLEGE_LEAK_RE.search(blob) and not re.search(r"\bnfl\b", low):
             return False
     if story.get("sport") == "baseball":
-        if ("nfl" in blob and "mlb" not in blob) or NFL_LEAK_RE.search(blob):
+        if ("nfl" in low and "mlb" not in low) or NFL_LEAK_RE.search(blob):
             return False
     if "article" in kinds or "video" in kinds:
         return True
@@ -722,7 +751,29 @@ def is_publishable(story: dict) -> bool:
     return False
 
 
+def stories_for_board(sport: str, root: Path | None = None) -> list[dict]:
+    """Publishable, in-week stories with unique slugs. Empty when the wire is old."""
+    rows = []
+    for s in load_news_stories(sport, root):
+        s = dict(s)
+        s["sport"] = s.get("sport") or sport
+        rows.append(s)
+    return prune_stories(rows)
+
+
+def align_category(story: dict) -> dict:
+    """The displayed headline wins. A stored tag is not a default."""
+    s = dict(story)
+    title = s.get("headline") or ""
+    guessed = categorize(title)
+    if guessed == "wire":
+        guessed = categorize(title, s.get("blurb") or "")
+    s["category"] = guessed
+    return s
+
+
 def prune_stories(stories: list[dict], keep: int = 60) -> list[dict]:
+    stories = [align_category(s) for s in stories]
     stories = [s for s in stories if is_publishable(s) and is_fresh_story(s)]
     stories = sorted(
         stories,

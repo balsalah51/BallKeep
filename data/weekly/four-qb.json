@@ -1,75 +1,75 @@
 {
-  "week": 6,
+  "week": 7,
   "players": [
     {
-      "name": "Josh Allen",
+      "name": "Jordan Love",
       "rank": 1,
-      "team": "BUF",
-      "opp": "@LV",
-      "sos": 30
+      "team": "GB",
+      "opp": "@DET",
+      "sos": 32
     },
     {
       "name": "Brock Purdy",
       "rank": 2,
       "team": "SF",
-      "opp": "WAS",
-      "sos": 32
-    },
-    {
-      "name": "Matthew Stafford",
-      "rank": 3,
-      "team": "LAR",
-      "opp": "ARI",
-      "sos": 28
-    },
-    {
-      "name": "Drake Maye",
-      "rank": 4,
-      "team": "NE",
-      "opp": "NYJ",
-      "sos": 4
-    },
-    {
-      "name": "Jordan Love",
-      "rank": 5,
-      "team": "GB",
-      "opp": "DAL",
-      "sos": 27
-    },
-    {
-      "name": "Dak Prescott",
-      "rank": 6,
-      "team": "DAL",
-      "opp": "@GB",
+      "opp": "@ATL",
       "sos": 16
     },
     {
-      "name": "Caleb Williams",
-      "rank": 7,
-      "team": "CHI",
-      "opp": "@ATL",
-      "sos": 17
-    },
-    {
-      "name": "Jayden Daniels",
-      "rank": 8,
-      "team": "WAS",
-      "opp": "@SF",
+      "name": "Jared Goff",
+      "rank": 3,
+      "team": "DET",
+      "opp": "GB",
       "sos": 10
     },
     {
-      "name": "Patrick Mahomes",
-      "rank": 9,
-      "team": "KC",
-      "opp": "LAC",
-      "sos": 5
+      "name": "Caleb Williams",
+      "rank": 4,
+      "team": "CHI",
+      "opp": "NE",
+      "sos": 2
     },
     {
-      "name": "Tyler Shough",
+      "name": "Drake Maye",
+      "rank": 5,
+      "team": "NE",
+      "opp": "@CHI",
+      "sos": 25
+    },
+    {
+      "name": "Joe Burrow",
+      "rank": 6,
+      "team": "CIN",
+      "opp": "@BAL",
+      "sos": 20
+    },
+    {
+      "name": "C.J. Stroud",
+      "rank": 7,
+      "team": "HOU",
+      "opp": "NYG",
+      "sos": 28
+    },
+    {
+      "name": "Dak Prescott",
+      "rank": 8,
+      "team": "DAL",
+      "opp": "@PHI",
+      "sos": 23
+    },
+    {
+      "name": "Bryce Young",
+      "rank": 9,
+      "team": "CAR",
+      "opp": "TB",
+      "sos": 7
+    },
+    {
+      "name": "Matthew Stafford",
       "rank": 10,
-      "team": "NO",
-      "opp": "@NYG",
-      "sos": 22
+      "team": "LAR",
+      "opp": "@LV",
+      "sos": 26
     }
   ]
 }

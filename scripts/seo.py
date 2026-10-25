@@ -273,7 +273,8 @@ def howto_jsonld(name: str, description: str, steps: list, url: str = "") -> dic
 
 
 def llms_txt() -> str:
-    return """# Ball Keep
+    from nfl_week import week_href, week_label
+    text = """# Ball Keep
 > Fantasy rankings for NFL, MLB, NBA, and Premier League. 40-board Super Aggregates, BK Value trade calculators, player files, and Sleeper.
 
 Site: https://ballkeep.com
@@ -288,7 +289,7 @@ Site: https://ballkeep.com
 - NFL news: https://ballkeep.com/news.html
 - Weekly rankings: https://ballkeep.com/weekly.html
 - The Recap: https://ballkeep.com/the-recap.html
-- Week 7 predictions: https://ballkeep.com/week7-matchups.html
+- {week_label()} predictions: https://ballkeep.com/{week_href("matchups")}
 - Week 6 predictions: https://ballkeep.com/week6-matchups.html
 - The Market: https://ballkeep.com/the-market.html
 - The Method: https://ballkeep.com/the-method.html
@@ -320,6 +321,10 @@ Site: https://ballkeep.com
 - News sitemap: https://ballkeep.com/sitemap-news.xml
 - HTML site map: https://ballkeep.com/explore.html
 """
+    return text.replace(
+        "- {week_label()} predictions: https://ballkeep.com/{week_href(\"matchups\")}",
+        f"- {week_label()} predictions: https://ballkeep.com/{week_href('matchups')}",
+    )
 
 
 def grafs_html(kicker: str, grafs, limit: int = 2) -> str:
@@ -763,11 +768,19 @@ def also_on_desk(
     )
 
 
+def _nav_item(item) -> tuple[str, str, str]:
+    href = item[0] if item else ""
+    text = item[1] if len(item) > 1 else ""
+    sub = item[2] if len(item) > 2 else ""
+    return href, text, sub
+
+
 def flatten_nav_groups(groups: list) -> list:
-    """groups: [(key, label, [(href, text), ...]), ...] -> flat [(href, text), ...]"""
+    """groups: [(key, label, [(href, text[, subtitle]), ...]), ...] -> flat [(href, text), ...]"""
     out = []
     for _key, _lab, items in groups or []:
-        for href, text in items or []:
+        for item in items or []:
+            href, text, _sub = _nav_item(item)
             if href and text:
                 out.append((href, text))
     return out
@@ -782,18 +795,21 @@ def grouped_nav(
     skip_current: bool = False,
     nav_class: str = "site-nav",
     aria_label: str = "Site",
+    limit_per_group: int | None = None,
 ) -> str:
     """Render header/footer nav as color-coded category groups.
 
-    groups: [(key, label, [(href, text), ...]), ...]
+    groups: [(key, label, [(href, text[, subtitle]), ...]), ...]
     href_fn(href) -> resolved href
     is_current(href) -> bool
+    limit_per_group: footer copies stay short. None keeps every link.
     """
     blocks = []
     for key, lab, items in groups or []:
         links = []
         here = False
-        for href, text in items or []:
+        for item in items or []:
+            href, text, sub = _nav_item(item)
             if not href or not text:
                 continue
             if skip_home and text == "Home":
@@ -805,7 +821,12 @@ def grouped_nav(
             if on:
                 here = True
             cur = ' aria-current="page"' if on else ""
-            links.append(f'<a href="{esc(resolved)}"{cur}>{esc(text)}</a>')
+            label = esc(text)
+            if sub:
+                label += f'<small class="nav-sub">{esc(sub)}</small>'
+            links.append(f'<a href="{esc(resolved)}"{cur}>{label}</a>')
+        if limit_per_group:
+            links = links[:limit_per_group]
         if not links:
             continue
         cls = f"nav-group nav-{esc(key)}"

@@ -139,17 +139,20 @@ def test_grouped_nav_sections():
 
 def test_football_nav_keeps_every_link():
     from build_site import NAV, NAV_GROUPS, fb_header_nav, fb_footer_nav
+    from nfl_week import week_href, week_label
+    w = week_label()
     assert [lab for _h, lab in NAV] == [
         "Home", "Keep · Dynasty SF", "Board · Redraft PPR",
         "Classic · Half-PPR", "Redraft Superflex",
-        "The D · DST", "Kickers", "Fence · Superflex + IDP",
-        "Weekly", "Week 7 DST", "Week 7 K", "Week 7 Predictions", "Waivers", "Injuries",
-        "Trade", "Handcuff · RB handcuffs", "ADP", "Method",
+        "The D", "Kickers", "The Fence",
+        "Weekly", f"{w} DST", f"{w} K", f"{w} Predictions", "Waivers", "Injuries",
+        "Trade", "The Handcuff", "ADP", "Method",
         "My Team",
-        "Articles", "News", "The X · Memes", "Touches", "Players", "Hot 'n' Cold",
+        "Articles", "News", "The X", "Touches", "Players", "Hot 'n' Cold",
         "Week 1 Recap", "Week 1 Market",
         "NFL", "MLB", "BPL", "BaseKeep", "BasketKeep", "PitchKeep",
     ]
+    assert week_href("dst") == "week-dst.html"
     keys = [k for k, _lab, _items in NAV_GROUPS]
     assert keys == ["rankings", "week", "tools", "mine", "reading", "sports"]
     header = fb_header_nav("weekly.html", 0)
@@ -163,6 +166,9 @@ def test_football_nav_keeps_every_link():
     assert "<summary>Menu</summary>" in header
     assert 'class="site-nav nav-wide"' in header
     assert header.count("nav-wide") == 1
+    assert header.count('href="the-keep.html"') == 1
+    assert 'class="nav-sub"' in header
+    assert "Team defenses" in header
     arts = fb_header_nav("the-long-game.html", 0)
     assert 'aria-current="page">Articles</a>' in arts
     assert 'class="nav-group nav-reading is-here"' in arts
@@ -677,15 +683,16 @@ def test_weekly_kit():
         depth_rows,
         historic_waiver_board,
         injury_rows,
+        meta,
         week_num,
         week1_waiver_board,
         weekly_board,
         weekly_flex,
         waiver_board,
     )
-    assert week_num() == 6
+    assert week_num() == int(meta()["week"])
     qb = weekly_board("QB")
-    assert qb[0]["name"] in {"Josh Allen", "Brock Purdy", "Drake Maye"}
+    assert qb[0]["name"] in {"Josh Allen", "Brock Purdy", "Drake Maye", "Jordan Love"}
     assert qb[0]["bk"] == 1
     assert qb[0]["n"] >= 3
     assert qb[0].get("fpts")
@@ -876,7 +883,8 @@ def test_week4_predictions_copy():
     assert "Browns 27-24" in teaser
     assert "The mash closed 11-5" in teaser
     assert "Final: CLE 27-24" in html
-    assert "week6-matchups.html" in html
+    from nfl_week import week_href
+    assert week_href("matchups") in html
 
 
 def test_week4_boards():
@@ -923,7 +931,8 @@ def test_week5_predictions_copy():
     assert "looking at" not in html
     assert "week5-matchups.html" in teaser
     assert "The mash closed 10-4-1" in teaser or "10-4-1" in html
-    assert "week6-matchups.html" in html
+    from nfl_week import week_href
+    assert week_href("matchups") in html
     assert "Final: TB 24-16" in html
 
 
@@ -1199,7 +1208,10 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=80" in doc
+    assert "css/site.css?v=82" in doc
+    assert 'id="today"' in html
+    assert "week-dst.html" in html
+    assert 'href="/"' in doc
     assert "home-lede" in html
     assert "Forty public boards" in html
     assert "Sleeper" in html

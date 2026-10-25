@@ -7,14 +7,16 @@ import json
 import re
 import sys
 from collections import OrderedDict, defaultdict
-from datetime import date
 from pathlib import Path
 
 from nfl_week import (
     football_nav_groups,
     hours_ago,
     live_week,
+    numbered_week_href,
+    ranks_are_stale,
     stamp_updated,
+    today_et,
     week_href,
     week_label,
 )
@@ -174,7 +176,7 @@ from seo import (  # noqa: E402
     video_jsonld,
     website_jsonld,
 )
-from news_algo import CATEGORY_LABEL, load_news_stories, news_when, uniquify_slugs  # noqa: E402
+from news_algo import CATEGORY_LABEL, load_news_stories, news_when, stories_for_board, uniquify_slugs  # noqa: E402
 from x_tape import cards_html as x_cards  # noqa: E402
 from player_copy import get_copy  # noqa: E402
 from recent_trades import enrich_deals  # noqa: E402
@@ -948,7 +950,7 @@ def superflex_redraft(keep, ppr):
 
 NAV_GROUPS = football_nav_groups()
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 80
+CSS_VER = 82
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -984,8 +986,8 @@ def fb_is_current(href: str, path: str) -> bool:
     ) or (href == "articles.html" and articles_here)
 
 
-def fb_site_nav(path: str, depth: int, *, nav_class: str = "site-nav", skip_home: bool = False, skip_current: bool = False) -> str:
-    """One nav renderer. Header, drawer, and footer all call this."""
+def fb_site_nav(path: str, depth: int, *, nav_class: str = "site-nav", skip_home: bool = False, skip_current: bool = False, limit_per_group: int | None = None) -> str:
+    """One nav renderer. Header and footer both call this."""
     return grouped_nav(
         NAV_GROUPS,
         lambda href: nav_href(href, depth),
@@ -994,14 +996,14 @@ def fb_site_nav(path: str, depth: int, *, nav_class: str = "site-nav", skip_home
         skip_current=skip_current,
         nav_class=nav_class,
         aria_label="Ball Keep" if "footer" not in nav_class else "On this board",
+        limit_per_group=limit_per_group,
     )
 
 
 def fb_header_nav(path: str, depth: int) -> str:
-    inner = fb_site_nav(path, depth)
-    wide = inner.replace('class="site-nav"', 'class="site-nav nav-wide"', 1)
+    """One copy of the nav. Desktop shows it open. Mobile keeps it in the drawer."""
+    inner = fb_site_nav(path, depth, nav_class="site-nav nav-wide")
     return (
-        f"{wide}"
         f'<details class="nav-drawer">'
         f"<summary>Menu</summary>"
         f"{inner}"
@@ -1010,12 +1012,14 @@ def fb_header_nav(path: str, depth: int) -> str:
 
 
 def fb_footer_nav(path: str, depth: int) -> str:
+    """Short footer. The header already lists every link."""
     return fb_site_nav(
         path,
         depth,
         nav_class="footer-nav site-nav",
         skip_home=True,
         skip_current=True,
+        limit_per_group=2,
     )
 
 
@@ -1124,6 +1128,21 @@ def face_src(r, media, depth=0):
     return asset(img, depth)
 
 
+def face_picture(src: str, alt: str, depth: int = 0, klass: str = "face", w: int = 48, h: int = 48, lazy: bool = True) -> str:
+    """WebP when the file exists, with the original jpg/png as the fallback."""
+    raw = (src or "img/logo.jpg").lstrip("/")
+    webp = re.sub(r"\.(jpe?g|png)$", ".webp", raw, flags=re.I)
+    cls = f' class="{klass}"' if klass else ""
+    loading = ' loading="lazy"' if lazy else ""
+    img = (
+        f'<img{cls} src="{esc(asset(raw, depth))}" alt="{esc(alt)}" '
+        f'width="{w}" height="{h}"{loading} />'
+    )
+    if webp != raw and (ROOT / webp).exists():
+        return f'<picture><source type="image/webp" srcset="{esc(asset(webp, depth))}" />{img}</picture>'
+    return img
+
+
 def wordmark():
     return (
         '<span class="word-ball" style="color:#1788c2">BALL</span> '
@@ -1137,7 +1156,7 @@ def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ba
         f'<section class="hero masthead" aria-label="{esc(kicker)}">'
         f'<div class="hero-card">'
         f'<div class="mast-row">'
-        f'<img class="mast-mark" src="{esc(logo)}" alt="{esc(alt)}" />'
+        f'{face_picture(logo, alt, klass="mast-mark", w=64, h=64)}'
         f'<div class="mast-copy">'
         f"{sr_h1(sr_title) if sr_title else ''}"
         f'<p class="mast-kicker">{esc(kicker)}</p>'
@@ -1557,7 +1576,7 @@ FB_SEO = {
 HOME_FAQ = [
     ("What is Ball Keep?", "A 40-board Super Aggregate for Superflex dynasty and redraft PPR, with Sleeper so you can load your own team. The Keep is the dynasty list. The Board is this year's PPR list. BK Value prices trades on each board's ranks."),
     ("Which lists are rest of season?", f"The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, Top Defenses, and Top Kickers are rest-of-season values. {week_label()} boards, Weekly, and Waivers are this week's stream."),
-    ("What is The Fence?", "Mixed Superflex + IDP. Dynasty Nerds Glossery Mixed (725 names) plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. IDP names are marked in red."),
+    ("What is The Fence?", "Mixed Superflex + IDP. Dynasty Nerds spells its mixed board Glossery Mixed (their spelling, 725 names) plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. IDP names are marked in red."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player."),
     ("What is BK Value?", "Each list turns its own rank into a trade chip on the same decaying curve. Rank 1 on that list is 12,000. Superflex and PPR print different ranks, so the same name prices differently on each calculator. Fair means the two sides are within 8%."),
     ("Where is the method written down?", "The Method. Super Aggregate, BK Value, rest of season versus this week, and how to write the site."),
@@ -2043,6 +2062,16 @@ FB_ALSO["week7-matchups.html"] = [
     (week_href("kickers"), f"{week_label()} Kickers", "Official slate."),
     ("weekly.html", "Weekly", "Skill start/sit."),
 ]
+if live_week() == 7:
+    for _old, _new in (
+        ("week7-dst.html", week_href("dst")),
+        ("week7-kickers.html", week_href("kickers")),
+        ("week7-matchups.html", week_href("matchups")),
+    ):
+        if _old in FB_SEO:
+            FB_SEO[_new] = FB_SEO[_old]
+        if _old in FB_ALSO:
+            FB_ALSO[_new] = FB_ALSO[_old]
 
 
 def page(title, path, body, extra_js="", depth=0, description=None, image=None, doc_title=None,
@@ -2068,7 +2097,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{nav_href("index.html", depth)}">
-        <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" width="56" height="56" />
+        {face_picture("img/logo.jpg", "Ball Keep circular logo", depth=depth, klass="", w=56, h=56, lazy=False)}
         <div>
           <p class="brand-title">{wordmark()}</p>
           <p>40 boards · Superflex · PPR · Sleeper</p>
@@ -2084,7 +2113,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
         <p class="footer-mark">{wordmark()}</p>
         <p>40-board Super Aggregate · BK Value · Sleeper</p>
       </div>
-      <p class="footer-copy">© {date.today().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Independent of the NFL, MLB, NBA, and Premier League.</p>
+      <p class="footer-copy">© {today_et().year} Ball Keep · ballkeep.com · Rankings aggregated {UPDATED}. Sources listed at the bottom of each board. Independent of the NFL, MLB, NBA, and Premier League.</p>
       {foot}
       {legal_links(depth)}
       {sports_footer("fb", depth)}
@@ -2110,7 +2139,7 @@ def board_page(title, path, body, extra_js="", extra_jsonld=None, body_class="")
         path,
         body + extra,
         extra_js,
-        crumbs=breadcrumbs([("Ball Keep", "index.html"), (title, None)]),
+        crumbs=breadcrumbs([("Ball Keep", "/"), (title, None)]),
         extra_jsonld=ld,
         schema_type="CollectionPage",
         body_class=body_class,
@@ -2151,10 +2180,7 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
         )
         face = ""
         if faces:
-            face = (
-                f'<img class="face" src="{esc(face_src(r, media, depth))}" '
-                f'alt="{esc(face_alt(r.get("name")))}" width="48" height="48" loading="lazy" />'
-            )
+            face = face_picture(face_src(r, media, 0), face_alt(r.get("name")), depth)
         off = '<span class="draft-off">Crossed off</span>' if draft_check else ""
         stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{off}{age_span}{meta}</span>'
         mark = ""
@@ -2263,9 +2289,65 @@ def matchup_table(rows):
     )
 
 
+def redirect_page(target: str, href: str | None = None) -> str:
+    """GitHub Pages cannot send a 301. Meta refresh plus canonical keeps the old URL."""
+    safe = target.lstrip("/")
+    link = href or safe
+    url = f"https://ballkeep.com/{safe}"
+    return (
+        "<!doctype html>\n<html lang=\"en\">\n<head>\n"
+        "  <meta charset=\"utf-8\" />\n"
+        "  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n"
+        f"  <title>Moved | Ball Keep</title>\n"
+        f"  <link rel=\"canonical\" href=\"{url}\" />\n"
+        f"  <meta http-equiv=\"refresh\" content=\"0; url={link}\" />\n"
+        "  <meta name=\"robots\" content=\"noindex, follow\" />\n"
+        "</head>\n<body>\n"
+        f"  <p>This page moved to <a href=\"{link}\">{safe}</a>.</p>\n"
+        "</body>\n</html>\n"
+    )
+
+
+def publish_week_file(week: int, kind: str, html_doc: str) -> str:
+    """Live week is the stable URL. Its weekN file is a redirect stub.
+
+    Earlier weeks stay as full pages at weekN-*.html so the archive does not 404.
+    """
+    numbered = numbered_week_href(kind, week)
+    if week != live_week():
+        write(numbered, html_doc)
+        return numbered
+    stable = week_href(kind)
+    write(stable, html_doc)
+    if numbered != stable:
+        write(numbered, redirect_page(stable))
+    return stable
+
+
+def write_unbuilt_live_pages(built_week: int) -> None:
+    """When the calendar moves past the last hand-built slate, the stable URL must follow."""
+    w = live_week()
+    if w == built_week:
+        return
+    nouns = (("dst", "DST"), ("kickers", "Kickers"), ("matchups", "Predictions"))
+    for kind, noun in nouns:
+        path = week_href(kind)
+        body = f"""
+        <p class="kicker">{week_label(w)} · Official slate</p>
+        <h1>{week_label(w)} {noun}</h1>
+        <p class="note">Published {week_label(w)} cards are not in this rebuild yet.
+        The last hand-built stream is <a href="{numbered_week_href(kind, built_week)}">Week {built_week} {noun}</a>.
+        Weekly skill boards are on <a href="weekly.html">Weekly</a>.</p>
+        """
+        write(path, board_page(f"{week_label(w)} {noun}", path, body, doc_title=f"{week_label(w)} {noun} | Ball Keep"))
+        numbered = numbered_week_href(kind, w)
+        if numbered != path:
+            write(numbered, redirect_page(path))
+
+
 def write_week_matchups(week, rows, sources, faq, note, heading="Boards in This Aggregate", extra="", extra_jsonld=None, body_class=""):
-    """Week N matchup page. Copy at the bottom ships with matchup_table."""
-    path = f"week{week}-matchups.html"
+    """Week N matchup page. The live week also gets a stable URL and a numbered stub."""
+    path = week_href("matchups") if week == live_week() else f"week{week}-matchups.html"
     body = f"""
     <p class="kicker">2026 Week {week} · Matchups · {len(sources)} sources</p>
     <h1>Week {week} Matchups</h1>
@@ -2279,11 +2361,12 @@ def write_week_matchups(week, rows, sources, faq, note, heading="Boards in This 
     for blob in extra_jsonld or []:
         if blob:
             ld.append(blob)
-    write(path, board_page(
+    html_doc = board_page(
         f"Week {week} Matchups", path, body,
         extra_jsonld=ld,
         body_class=body_class,
-    ))
+    )
+    publish_week_file(week, "matchups", html_doc)
     return path
 
 
@@ -2386,31 +2469,96 @@ def home_week_faces():
     )
 
 
-def home_today_html(waiver_names, injured_names):
+def home_today_html(waiver_line, injured_names, hurt_map=None):
     w = live_week()
-    waivers = ", ".join(waiver_names[:4]) if waiver_names else "Week 7 waiver mash."
+    waivers = waiver_line or "Waiver mash on the waiver board."
     hurts = ", ".join(injured_names[:4]) if injured_names else "ESPN designations on Injuries."
+    hurt_json = json.dumps(hurt_map or {}, separators=(",", ":"))
     return f"""
     <section class="home-today" id="today" aria-label="Today">
       <p class="kicker">Today · {week_label(w)}</p>
       <h2>Your board first.</h2>
       <form class="today-form" id="today-form">
-        <label for="today-sleeper">Sleeper league ID</label>
+        <div class="today-fields">
+          <label for="today-user">Sleeper username<input id="today-user" name="user" type="text" autocomplete="username" placeholder="username" /></label>
+          <label for="today-sleeper">League ID<input id="today-sleeper" name="sleeper" type="text" inputmode="numeric" autocomplete="off" placeholder="18-digit league ID" /></label>
+        </div>
         <div class="today-row">
-          <input id="today-sleeper" name="sleeper" type="text" inputmode="numeric" autocomplete="off" placeholder="18-digit league ID" />
           <button type="submit" class="cta">Open My Team</button>
         </div>
-        <p class="note">Saved on this browser. The ID never leaves your machine except to Sleeper.</p>
+        <p class="note">Saved on this browser. Username and league ID stay on this machine except when the page asks Sleeper.</p>
       </form>
       <div class="today-grid">
         <a class="tile" href="league.html"><h3>My Team</h3><p>Sleeper roster with BK Value on every name.</p></a>
-        <a class="tile" href="injuries.html"><h3>Injuries</h3><p>{esc(hurts)}</p></a>
+        <a class="tile" href="injuries.html"><h3>Injuries</h3><p id="today-injuries">{esc(hurts)}</p></a>
         <a class="tile" href="waiver.html"><h3>Waivers</h3><p>{esc(waivers)}</p></a>
         <a class="tile" href="trade.html"><h3>Trade</h3><p>Six calculators. Fair is within 8%.</p></a>
       </div>
       <p class="note" id="today-hits" hidden></p>
+      <script type="application/json" id="today-hurt">{hurt_json}</script>
     </section>
     """
+
+
+def today_pack():
+    """Waiver line, fantasy-relevant injuries, and a Sleeper-id map for the saved roster."""
+    from weekly_kit import injury_rows, waiver_week, week1_waiver_board, weekly_board
+    w = live_week()
+    ww = waiver_week()
+    names = [r.get("name") or "" for r in (week1_waiver_board() or [])[:4] if r.get("name")]
+    waiver_line = ", ".join(names) if names else ""
+    if waiver_line and ww != w:
+        waiver_line = f"Week {ww} mash: {waiver_line}"
+    rank = {}
+    for pos in ("QB", "RB", "WR", "TE"):
+        for r in weekly_board(pos):
+            rank.setdefault(norm_name(r.get("name") or ""), r.get("bk") or 999)
+    keep_rank = {}
+    keep_path = ROOT / "data" / "the-keep.json"
+    if keep_path.exists():
+        try:
+            keep_doc = json.loads(keep_path.read_text())
+        except json.JSONDecodeError:
+            keep_doc = {}
+        for i, p in enumerate(keep_doc.get("players") or [], 1):
+            keep_rank.setdefault(norm_name(p.get("name") or ""), p.get("bk") or i)
+    media_path = ROOT / "data" / "player_media.json"
+    by_key = {}
+    if media_path.exists():
+        try:
+            media = json.loads(media_path.read_text())
+        except json.JSONDecodeError:
+            media = {}
+        for rec in (media or {}).values():
+            sid = str(rec.get("sleeper_id") or "")
+            key = norm_name(rec.get("name") or rec.get("key") or "")
+            if sid and key:
+                by_key[key] = sid
+    order = {"Out": 0, "Doubtful": 1, "Questionable": 2}
+    relevant = []
+    hurt_map = {}
+    for row in injury_rows() or []:
+        status = row.get("status") or ""
+        if status not in order:
+            continue
+        key = norm_name(row.get("name") or "")
+        sid = by_key.get(key)
+        if not sid or (key not in rank and key not in keep_rank):
+            continue
+        label = f"{row['name']} ({status})"
+        hurt_map[sid] = label
+        relevant.append((order[status], min(rank.get(key, 999), keep_rank.get(key, 999)), label))
+    relevant.sort()
+    # The map has to cover the whole remembered roster, not just the four names on the tile.
+    for row in injury_rows() or []:
+        status = row.get("status") or ""
+        if status not in order:
+            continue
+        key = norm_name(row.get("name") or "")
+        sid = by_key.get(key)
+        if sid and sid not in hurt_map:
+            hurt_map[sid] = f"{row['name']} ({status})"
+    return waiver_line, [label for _, _, label in relevant[:4]], hurt_map
 
 
 def home_rank_preview(rows, media, n=16):
@@ -2422,10 +2570,7 @@ def home_rank_preview(rows, media, n=16):
         pos = r.get("pos") or ""
         team = r.get("team") or ""
         val = fmt_val(r["value"]) if r.get("value") not in (None, "") else ""
-        face = (
-            f'<img class="face" src="{esc(face_src(r, media))}" '
-            f'alt="{esc(face_alt(name))}" width="48" height="48" loading="lazy" />'
-        )
+        face = face_picture(face_src(r, media, 0), face_alt(name))
         name_html = (
             f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
             if href else f"<strong>{esc(name)}</strong>"
@@ -2455,24 +2600,45 @@ def home_news_html(stories):
     )
 
 
+def sister_card(href: str, klass: str, name: str, blurb: str, news_stem: str, season_note: str) -> str:
+    """Flag sister homepages whose rank stamp or news file is behind."""
+    stamp = ""
+    page = ROOT / href
+    if page.exists():
+        m = re.search(r'class="home-eyebrow">([^<]+)', page.read_text(errors="ignore"))
+        if m:
+            stamp = re.sub(r"\s+", " ", m.group(1)).strip()
+    news_bit = ""
+    news_path = ROOT / "data" / "news" / f"{news_stem}.json"
+    if news_path.exists():
+        try:
+            updated = json.loads(news_path.read_text()).get("updated") or ""
+        except json.JSONDecodeError:
+            updated = ""
+        hrs = hours_ago(updated)
+        if hrs is not None and hrs >= 24:
+            news_bit = f"News last moved {int(round(hrs))} hours ago."
+    bits = [blurb, season_note]
+    if stamp:
+        bits.append(stamp + ".")
+    if news_bit:
+        bits.append(news_bit)
+    return (
+        f'<a class="home-net {klass}" href="{href}"><span>{esc(name)}</span>'
+        f"<span>{esc(' '.join(bits))}</span></a>"
+    )
+
+
 def home_body_html(keep, board, media, stories=None):
     stories = stories or []
     keep_n = len(KEEP_SOURCES)
     board_n = len(PPR_SOURCES)
     w = live_week()
-    today = home_today_html([], [])
     try:
-        from weekly_kit import week1_waiver_board, injury_rows
-        waiver_names = [r.get("name") or "" for r in (week1_waiver_board() or [])[:6] if r.get("name")]
-        hurt = []
-        for row in (injury_rows() or [])[:12]:
-            name = row.get("name") or ""
-            des = row.get("designation") or row.get("status") or ""
-            if name and des:
-                hurt.append(f"{name} ({des})")
-        today = home_today_html(waiver_names, hurt)
+        waiver_line, hurt, hurt_map = today_pack()
+        today = home_today_html(waiver_line, hurt, hurt_map)
     except Exception:
-        pass
+        today = home_today_html("", [])
     news_block = home_news_html(stories)
     wire = ""
     if news_block:
@@ -2486,12 +2652,21 @@ def home_body_html(keep, board, media, stories=None):
             f"{news_block}"
             "</section>"
         )
+    stale = ""
+    if ranks_are_stale():
+        stale = (
+            f'<p class="news-stale" role="status">Rankings last scraped {UPDATED}. '
+            f"That is more than four days old.</p>"
+        )
     return f"""
+    <div class="home-top">
+    {today}
     <section class="home-hero" aria-label="Football rankings">
       <div class="home-hero-media" aria-hidden="true"></div>
       <div class="home-hero-copy">
         {sr_h1("Fantasy Football Superflex Dynasty Rankings")}
         <p class="home-eyebrow">Updated {UPDATED} · Superflex dynasty · Redraft PPR</p>
+        {stale}
         <p class="home-mark">{wordmark()}</p>
         <p class="home-lede">Forty public boards mashed into one Super Aggregate, plus Sleeper so you can price the roster you already have.</p>
         <div class="home-ctas">
@@ -2500,7 +2675,7 @@ def home_body_html(keep, board, media, stories=None):
         </div>
       </div>
     </section>
-    {today}
+    </div>
     <section class="home-snapshot" aria-label="Top of the boards">
       <article class="home-snap keep">
         <header class="home-snap-head">
@@ -2552,17 +2727,20 @@ def home_body_html(keep, board, media, stories=None):
         ("depth-charts.html", "Depth Charts", "32 clubs."),
         ("the-method.html", "The Method", "How the Super Aggregate is built."),
     ])}
-    {desk_block("tape", "Essays", "The non-ranking lists.", "The essays, the market notes, the player files, and the pictures.", [
+    {desk_block("tape", "Essays", "The non-ranking lists.", "The essays, the player files, and the pictures.", [
         ("articles.html", "Articles", "The long reads. Strategy and the week."),
-        ("the-recap.html", "Week 1 Recap", "Sixteen scores from the opener. Chicago scored 59. Walker ran for 173."),
         ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
         ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
         ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
-        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells into Week 6."),
-        ("the-market.html", "The Market", "Week 1 buy-low and sell-high names."),
         ("players/index.html", "Player Pages", "The full Keep tape. Tape, plus/minus."),
         ("the-x.html", "The X", "Memes. Pictures on the card."),
         ("news.html", "BK News", "Injuries, roster, coaches."),
+    ])}
+    {desk_block("archive", "Archive", "Earlier weeks.", "Finished notes. The week is in the title so they are not this week's stream.", [
+        ("the-recap.html", "Week 1 Recap", "Sixteen scores from the opener. Chicago scored 59. Walker ran for 173."),
+        ("the-market.html", "Week 1 Market", "Week 1 buy-low and sell-high names."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells into Week 6."),
+        ("archive/week1/index.html", "Week 1 archive", "Opening, DST, kickers, matchups, waivers."),
     ])}
     {desk_block("slates", "Schedules", "The schedules.", "Football is the live board this fall. Baseball and Premier League keep their own slates.", [
         ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
@@ -2591,9 +2769,9 @@ def home_body_html(keep, board, media, stories=None):
       <h2>Same curve, separate palettes.</h2>
       <p class="note">Football is the live board this fall. BaseKeep, BasketKeep, and PitchKeep keep the same rank-to-value idea in their own colors.</p>
       <div class="home-network-grid">
-        <a class="home-net bb" href="bb/index.html"><span>BaseKeep</span><span>Dynasty baseball. The Keep, The Diamond, The Farm.</span></a>
-        <a class="home-net bk" href="bk/index.html"><span>BasketKeep</span><span>Dynasty basketball. The Keep and The Board.</span></a>
-        <a class="home-net pl" href="pl/index.html"><span>PitchKeep</span><span>Premier League. The Premier and The Pitch.</span></a>
+        {sister_card("bb/index.html", "bb", "BaseKeep", "Dynasty baseball. The Keep, The Diamond, The Farm.", "baseball", "MLB regular season wrapped Sept 27. Dynasty ranks are an offseason tape.")}
+        {sister_card("bk/index.html", "bk", "BasketKeep", "Dynasty basketball. The Keep and The Board.", "basketball", "The 2026-27 NBA season is on. August ranks are from before it.")}
+        {sister_card("pl/index.html", "pl", "PitchKeep", "Premier League. The Premier and The Pitch.", "soccer", "2026/27 is underway. The Pitch is last season's Sleeper scoring, labeled 2025.")}
       </div>
     </section>
     {faq_html(HOME_FAQ, heading="How Ball Keep works.")}
@@ -2603,7 +2781,7 @@ def home_body_html(keep, board, media, stories=None):
 def write_home_page(keep, board, media, stories=None):
     write("index.html", page(
         "Home", "index.html", home_body_html(keep, board, media, stories),
-        extra_js='<script src="js/today.js" defer></script>',
+        extra_js=f'<script src="js/today.js?v={CSS_VER}" defer></script>',
         extra_jsonld=[website_jsonld("Ball Keep"), faq_jsonld(HOME_FAQ)],
         modified=LASTMOD,
         body_class="home",
@@ -2631,7 +2809,7 @@ def news_freshness_banner(updated: str) -> str:
 
 def render_news_pages():
     """Football BK News hub + story files. Baseball lives on BaseKeep."""
-    stories = uniquify_slugs(load_news_stories("football"))
+    stories = stories_for_board("football")
     doc_updated = ""
     news_doc = ROOT / "data" / "news" / "football.json"
     if news_doc.exists():
@@ -2643,7 +2821,7 @@ def render_news_pages():
     keep = {f"{s['slug']}.html" for s in stories if s.get("slug")}
     for old in (ROOT / "news").glob("*.html"):
         if old.name not in keep:
-            old.unlink()
+            old.write_text(redirect_page("news.html", href="../news.html"))
 
     cards = "".join(news_card(s) for s in stories) or (
         '<p class="note">No stories on this board yet.</p>'
@@ -2686,7 +2864,7 @@ def render_news_pages():
     body = f"""
     <p class="kicker">BK News · Football · Clustered wire</p>
     <h1>BK News</h1>
-    <p class="note">Injuries, roster, coach, trade, and practice reports clustered from RSS, Google News, X, and YouTube. Short snippets, links out to the original stories. Baseball lives on <a href="bb/news.html">BaseKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
+    <p class="note">Injuries, roster, coach, trade, practice, and the wire. Short snippets with links out to the original stories. The banner is the clock. If it says stale, this is the last good pull, not a live wire. Baseball lives on <a href="bb/news.html">BaseKeep</a>. Basketball lives on <a href="bk/news.html">BasketKeep</a>.</p>
     {news_freshness_banner(updated)}
     <div class="filters" id="news-filters">{filters}</div>
     <div class="news-list" id="news-list">{cards}</div>
@@ -2695,7 +2873,7 @@ def render_news_pages():
     """
     write("news.html", page(
         "BK News", "news.html", body, extra,
-        crumbs=breadcrumbs([("Ball Keep", "index.html"), ("BK News", None)]),
+        crumbs=breadcrumbs([("Ball Keep", "/"), ("BK News", None)]),
         extra_jsonld=[
             breadcrumb_jsonld([
                 ("Ball Keep", "https://ballkeep.com/"),
@@ -2775,7 +2953,7 @@ def render_news_pages():
                 description=story_desc,
                 image="img/logo.jpg",
                 crumbs=breadcrumbs([
-                    ("Ball Keep", "../index.html"),
+                    ("Ball Keep", "/"),
                     ("BK News", "../news.html"),
                     (s.get("headline") or "Update", None),
                 ]),
@@ -3090,7 +3268,7 @@ def render_player_pages(profiles):
     out_dir = ROOT / "players"
     out_dir.mkdir(parents=True, exist_ok=True)
     news_by_player = defaultdict(list)
-    for story in load_news_stories("football"):
+    for story in stories_for_board("football"):
         for pl in story.get("players") or []:
             key = pl.get("key") or norm_name(pl.get("name") or "")
             if key:
@@ -3120,11 +3298,13 @@ def render_player_pages(profiles):
                 chips.append(f'<span class="chip{cls}">{esc(label)} #{p["lists"][key]}</span>')
         chip_html = f'<div class="chips">{"".join(chips)}</div>' if chips else ""
 
-        photo = ""
-        if img:
-            photo = f'<img src="{asset(img, 1)}" alt="{esc(face_alt(p["name"]))}" />'
-        else:
-            photo = f'<img src="{asset("img/logo.jpg", 1)}" alt="{esc(card_alt(p["name"]))}" />'
+        photo = face_picture(
+            img or "img/logo.jpg",
+            face_alt(p["name"]) if img else card_alt(p["name"]),
+            depth=1,
+            w=160,
+            h=160,
+        )
 
         video = ""
         if yt:
@@ -3207,7 +3387,7 @@ def render_player_pages(profiles):
                 description=seo_desc,
                 image=img or "img/logo.jpg",
                 crumbs=breadcrumbs([
-                    ("Ball Keep", "../index.html"),
+                    ("Ball Keep", "/"),
                     ("Players", "index.html"),
                     (p["name"], None),
                 ]),
@@ -3217,17 +3397,17 @@ def render_player_pages(profiles):
         )
         keep_html.add(f"{p['slug']}.html")
 
-        thumb = asset(img, 1) if img else asset("img/logo.jpg", 1)
+        thumb = face_picture(img or "img/logo.jpg", face_alt(p["name"]), depth=1, w=96, h=96)
         cards.append(
             f'<a class="tile player-card" href="{p["slug"]}.html" data-pos="{esc(p.get("pos") or "")}" data-name="{esc((p.get("name") or "").lower())}">'
-            f'<img src="{thumb}" alt="{esc(face_alt(p["name"]))}" />'
+            f"{thumb}"
             f'<h3>{esc(p["name"])}</h3>'
             f'<p class="note">{esc(p["pos"])} {esc(p["team"])}</p></a>'
         )
 
     for old in out_dir.glob("*.html"):
-        if old.name not in keep_html:
-            old.unlink()
+        if old.name not in keep_html and old.name != "index.html":
+            old.write_text(redirect_page("players/index.html", href="index.html"))
 
     hub = f"""
     <p class="kicker">Depth Chart · {UPDATED}</p>
@@ -3252,7 +3432,7 @@ def render_player_pages(profiles):
     hub_js = hub_search_js()
     write("players/index.html", page(
         "Players", "players/index.html", hub, hub_js, depth=1,
-        crumbs=breadcrumbs([("Ball Keep", "../index.html"), ("Players", None)]),
+        crumbs=breadcrumbs([("Ball Keep", "/"), ("Players", None)]),
         extra_jsonld=[breadcrumb_jsonld([
             ("Ball Keep", "https://ballkeep.com/"),
             ("Players", "https://ballkeep.com/players/"),
@@ -3763,7 +3943,7 @@ def write_explore_page():
     """
     write("explore.html", page(
         "Site map", "explore.html", body,
-        crumbs=breadcrumbs([("Ball Keep", "index.html"), ("Site map", None)]),
+        crumbs=breadcrumbs([("Ball Keep", "/"), ("Site map", None)]),
         extra_jsonld=[breadcrumb_jsonld([
             ("Ball Keep", "https://ballkeep.com/"),
             ("Site map", "https://ballkeep.com/explore.html"),
@@ -3846,7 +4026,7 @@ def main():
     write_recent_trades_page(deals)
 
     # HOME
-    write_home_page(keep, board, media, load_news_stories("football")[:10])
+    write_home_page(keep, board, media, stories_for_board("football")[:8])
 
     # THE KEEP
     def src_td(r, name):
@@ -4504,8 +4684,9 @@ def main():
     <p class="note">Published Week 7 defense boards are not on this rebuild. Season-long D lives on <a href="defenses.html">The D</a>. The finished Week 6 stream sits on <a href="week6-dst.html">Week 6 DST</a>.</p>
     {faq_html(W7_DST_FAQ, heading="How Week 7 DST is built.")}
     """
-    write("week7-dst.html", board_page(
-        "Week 7 DST", "week7-dst.html", w7_dst_body,
+    w7_dst_path = week_href("dst") if live_week() == 7 else "week7-dst.html"
+    publish_week_file(7, "dst", board_page(
+        "Week 7 DST", w7_dst_path, w7_dst_body,
         extra_jsonld=[faq_jsonld(W7_DST_FAQ)],
     ))
     w7_k_body = f"""
@@ -4514,8 +4695,9 @@ def main():
     <p class="note">Published Week 7 kicker boards are not on this rebuild. Season-long K lives on <a href="kickers.html">Top Kickers</a>. The finished Week 6 stream sits on <a href="week6-kickers.html">Week 6 Kickers</a>.</p>
     {faq_html(W7_K_FAQ, heading="How Week 7 Kickers is built.")}
     """
-    write("week7-kickers.html", board_page(
-        "Week 7 Kickers", "week7-kickers.html", w7_k_body,
+    w7_k_path = week_href("kickers") if live_week() == 7 else "week7-kickers.html"
+    publish_week_file(7, "kickers", board_page(
+        "Week 7 Kickers", w7_k_path, w7_k_body,
         extra_jsonld=[faq_jsonld(W7_K_FAQ)],
     ))
     write_week_matchups(
@@ -4531,6 +4713,7 @@ def main():
         ),
         heading="Boards in This Aggregate",
     )
+    write_unbuilt_live_pages(7)
     w1_pack = write_week1_archive(sys.modules[__name__], media)
     w1_dst = w1_pack["dst"]
     w1_kickers = w1_pack["kickers"]
@@ -4829,6 +5012,9 @@ def main():
         "https://ballkeep.com/week6-dst.html",
         "https://ballkeep.com/week6-kickers.html",
         "https://ballkeep.com/week6-matchups.html",
+        "https://ballkeep.com/week-dst.html",
+        "https://ballkeep.com/week-kickers.html",
+        "https://ballkeep.com/week-matchups.html",
         "https://ballkeep.com/week7-dst.html",
         "https://ballkeep.com/week7-kickers.html",
         "https://ballkeep.com/week7-matchups.html",
@@ -4929,7 +5115,7 @@ def write_discord_catalog(keep, board, ppr, std, rook_rows, profiles, nfl, mlb_g
             "url": f"https://ballkeep.com/players/{p['slug']}.html",
         })
     news_pack = []
-    for s in load_news_stories("football"):
+    for s in stories_for_board("football"):
         news_pack.append({
             "headline": s.get("headline"),
             "slug": s.get("slug"),
@@ -5178,7 +5364,7 @@ def render_home_only():
     keep = json.loads(keep_path.read_text()).get("players") or [] if keep_path.exists() else []
     board = json.loads(board_path.read_text()).get("players") or [] if board_path.exists() else []
     seed_player_pages()
-    write_home_page(keep, board, load_player_media(), load_news_stories("football")[:10])
+    write_home_page(keep, board, load_player_media(), stories_for_board("football")[:8])
     print(f"wrote index.html keep={len(keep)} board={len(board)}")
 
 

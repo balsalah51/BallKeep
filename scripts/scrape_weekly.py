@@ -183,14 +183,20 @@ def proj_from_ecr(payload: dict) -> list:
     return rows
 
 
-def scrape_fp_weekly(week: int) -> None:
+def scrape_fp_weekly(week: int) -> int:
+    ok = 0
     for pos in POS:
         url = f"https://www.fantasypros.com/nfl/rankings/{pos}.php?week={week}"
         print(f"fetch fp ecr {pos} {url}")
         try:
             html = fetch(url)
             payload = fp_ecr(html, pos.upper())
-            dump(f"fp-ecr-{pos}", payload)
+            if payload.get("players"):
+                dump(f"fp-ecr-{pos}", payload)
+                ok += 1
+            else:
+                print(f"  empty ecr {pos}")
+                payload = None
         except Exception as exc:
             print(f"  skip {pos}: {type(exc).__name__}: {exc}")
             payload = None
@@ -215,6 +221,7 @@ def scrape_fp_weekly(week: int) -> None:
         dump("fp-ecr-flex", fp_ecr(fetch(url), "FLEX"))
     except Exception as exc:
         print(f"  skip flex: {type(exc).__name__}: {exc}")
+    return ok
 
 
 def scrape_fourfor4(week: int) -> None:
@@ -291,6 +298,9 @@ def scrape_fp_stats() -> None:
                     rec[lab.lower().replace(" ", "_").replace("%", "pct").replace("/", "_")] = val
             players.append(rec)
         print(f"  stats {pos} n={len(players)}")
+        if not players:
+            print(f"  keep existing fp-stats-{pos}; empty parse is not a refresh")
+            continue
         dump(f"fp-stats-{pos}", {"season": 2025, "players": players})
 
 
@@ -599,13 +609,13 @@ def scrape_espn_adp() -> None:
     dump("espn-adp", {"season": 2026, "players": rows})
 
 
-def scrape_espn_injuries() -> None:
+def scrape_espn_injuries() -> int:
     print("fetch espn injuries")
     try:
         html = fetch("https://www.espn.com/nfl/injuries")
     except Exception as exc:
         print(f"  skip: {type(exc).__name__}: {exc}")
-        return
+        return 0
     rows = []
     team = ""
     for block in re.split(r'<div class="Table__Title">', html)[1:]:
@@ -628,7 +638,9 @@ def scrape_espn_injuries() -> None:
                 "note": desc[:280],
             })
     print(f"  injuries n={len(rows)}")
-    dump("injuries", {"updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "players": rows})
+    if rows:
+        dump("injuries", {"updated": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "players": rows})
+    return len(rows)
 
 
 def write_meta(week: int) -> None:
@@ -646,13 +658,16 @@ def main() -> int:
     if len(sys.argv) > 1 and sys.argv[1].isdigit():
         week = int(sys.argv[1])
     print(f"weekly scrape week={week}")
-    write_meta(week)
-    scrape_fp_weekly(week)
+    fp_ok = scrape_fp_weekly(week)
     scrape_fourfor4(week)
     scrape_fp_stats()
     scrape_sleeper_usage(week)
     scrape_espn_adp()
-    scrape_espn_injuries()
+    inj_n = scrape_espn_injuries()
+    if fp_ok < 4 or inj_n < 10:
+        print(f"fatal incomplete weekly scrape fp={fp_ok}/4 injuries={inj_n}")
+        return 1
+    write_meta(week)
     return 0
 
 

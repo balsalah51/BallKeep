@@ -1,12 +1,13 @@
 {
   "season": 2026,
-  "through_week": 5,
+  "through_week": 6,
   "weeks": [
     1,
     2,
     3,
     4,
-    5
+    5,
+    6
   ],
   "players": {
     "Parker Washington": {
@@ -78,6 +79,18 @@
           "rec_td": 2,
           "pts_ppr": 30.4,
           "snap_pct": 81.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 52,
+          "tm_off_snp": 71,
+          "rec_tgt": 11,
+          "rec": 4,
+          "rec_yd": 64,
+          "pts_ppr": 10.4,
+          "snap_pct": 73.2
         }
       ]
     },
@@ -151,6 +164,18 @@
           "rec_yd": 9,
           "pts_ppr": 2.9,
           "snap_pct": 56.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 69,
+          "tm_off_snp": 78,
+          "rec_tgt": 18,
+          "rec": 9,
+          "rec_yd": 70,
+          "pts_ppr": 16.0,
+          "snap_pct": 88.5
         }
       ]
     },
@@ -228,6 +253,20 @@
           "rush_td": 1,
           "pts_ppr": 31.5,
           "snap_pct": 54.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 63,
+          "tm_off_snp": 74,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 3,
+          "rush_att": 19,
+          "rush_yd": 46,
+          "pts_ppr": 6.9,
+          "snap_pct": 85.1
         }
       ]
     },
@@ -285,6 +324,18 @@
           "rec_yd": 19,
           "pts_ppr": 4.9,
           "snap_pct": 80.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 39,
+          "tm_off_snp": 62,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 69,
+          "pts_ppr": 10.9,
+          "snap_pct": 62.9
         }
       ]
     },
@@ -336,6 +387,13 @@
           "rec_yd": 9,
           "pts_ppr": -0.1,
           "snap_pct": 43.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 15,
+          "tm_off_snp": 62,
+          "snap_pct": 24.2
         }
       ]
     },
@@ -400,6 +458,17 @@
           "rec_yd": 38,
           "pts_ppr": 6.8,
           "snap_pct": 59.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 26,
+          "tm_off_snp": 63,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 16,
+          "pts_ppr": 3.6,
+          "snap_pct": 41.3
         }
       ]
     },
@@ -474,6 +543,20 @@
           "rush_yd": 33,
           "pts_ppr": 4.9,
           "snap_pct": 29.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 34,
+          "tm_off_snp": 68,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 21,
+          "rush_att": 7,
+          "rush_yd": 18,
+          "pts_ppr": 7.9,
+          "snap_pct": 50.0
         }
       ]
     },
@@ -518,6 +601,20 @@
           "tm_off_snp": 68,
           "rec_tgt": 1,
           "snap_pct": 20.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 39,
+          "tm_off_snp": 62,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 14,
+          "rush_att": 9,
+          "rush_yd": 41,
+          "pts_ppr": 9.5,
+          "snap_pct": 62.9
         }
       ]
     },
@@ -568,6 +665,15 @@
           "rec_td": 1,
           "pts_ppr": 8.9,
           "snap_pct": 59.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 37,
+          "tm_off_snp": 57,
+          "rec_tgt": 2,
+          "snap_pct": 64.9
         }
       ]
     },
@@ -630,6 +736,18 @@
           "tm_off_snp": 67,
           "rec_tgt": 1,
           "snap_pct": 58.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 33,
+          "tm_off_snp": 68,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 17,
+          "pts_ppr": 4.7,
+          "snap_pct": 48.5
         }
       ]
     },
@@ -673,11 +791,18 @@
           "off_snp": 2,
           "tm_off_snp": 64,
           "snap_pct": 3.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 3,
+          "tm_off_snp": 57,
+          "snap_pct": 5.3
         }
       ]
     },
-    "Kyle Pitts": {
-      "name": "Kyle Pitts",
+    "Kyle Pitts Sr.": {
+      "name": "Kyle Pitts Sr.",
       "pos": "TE",
       "team": "ATL",
       "games": [
@@ -737,13 +862,26 @@
           "rec_td": 1,
           "pts_ppr": 15.2,
           "snap_pct": 67.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 43,
+          "tm_off_snp": 55,
+          "rec_tgt": 7,
+          "rec": 5,
+          "rec_yd": 60,
+          "rec_td": 2,
+          "pts_ppr": 23.0,
+          "snap_pct": 78.2
         }
       ]
     },
     "E.J. Jenkins": {
       "name": "E.J. Jenkins",
       "pos": "TE",
-      "team": "PHI",
+      "team": "",
       "games": [
         {
           "week": 1,
@@ -781,6 +919,13 @@
           "off_snp": 12,
           "tm_off_snp": 62,
           "snap_pct": 19.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 4,
+          "tm_off_snp": 64,
+          "snap_pct": 6.2
         }
       ]
     },
@@ -832,6 +977,19 @@
           "rec_yd": 14,
           "pts_ppr": 3.4,
           "snap_pct": 42.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 31,
+          "tm_off_snp": 83,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 1,
+          "rec_td": 1,
+          "pts_ppr": 7.1,
+          "snap_pct": 37.3
         }
       ]
     },
@@ -891,11 +1049,18 @@
           "rec_yd": 32,
           "pts_ppr": 5.2,
           "snap_pct": 92.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 25,
+          "tm_off_snp": 79,
+          "snap_pct": 31.6
         }
       ]
     },
-    "Pierre Strong": {
-      "name": "Pierre Strong",
+    "Pierre Strong Jr.": {
+      "name": "Pierre Strong Jr.",
       "pos": "RB",
       "team": "GB",
       "games": [
@@ -911,6 +1076,19 @@
           "rush_yd": 7,
           "pts_ppr": 4.8,
           "snap_pct": 41.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 41,
+          "tm_off_snp": 75,
+          "rec_tgt": 6,
+          "rec": 5,
+          "rec_yd": 39,
+          "rush_att": 11,
+          "rush_yd": 28,
+          "pts_ppr": 11.7,
+          "snap_pct": 54.7
         }
       ]
     },
@@ -1005,6 +1183,22 @@
         }
       ]
     },
+    "Audric Estime": {
+      "name": "Audric Estime",
+      "pos": "RB",
+      "team": "CLE",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "tm_off_snp": 62,
+          "rush_att": 9,
+          "rush_yd": 19,
+          "rush_td": 1,
+          "pts_ppr": 7.9
+        }
+      ]
+    },
     "Dak Prescott": {
       "name": "Dak Prescott",
       "pos": "QB",
@@ -1084,6 +1278,22 @@
           "pass_int": 2,
           "pts_ppr": 14.6,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 78,
+          "tm_off_snp": 78,
+          "rush_att": 2,
+          "rush_yd": 7,
+          "pass_cmp": 34,
+          "pass_att": 54,
+          "pass_yd": 258,
+          "pass_td": 1,
+          "pass_int": 2,
+          "pts_ppr": 13.0,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -1148,6 +1358,17 @@
           "rec_yd": 31,
           "pts_ppr": 6.1,
           "snap_pct": 67.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 45,
+          "tm_off_snp": 67,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 50,
+          "pts_ppr": 8.0,
+          "snap_pct": 67.2
         }
       ]
     },
@@ -1230,6 +1451,19 @@
           "pass_td": 3,
           "pts_ppr": 27.3,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 58,
+          "tm_off_snp": 58,
+          "pass_cmp": 25,
+          "pass_att": 33,
+          "pass_yd": 222,
+          "pass_td": 2,
+          "pts_ppr": 16.9,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -1294,6 +1528,19 @@
           "rec_yd": 80,
           "pts_ppr": 11.0,
           "snap_pct": 68.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 41,
+          "tm_off_snp": 68,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 34,
+          "rec_td": 1,
+          "pts_ppr": 13.4,
+          "snap_pct": 60.3
         }
       ]
     },
@@ -1344,6 +1591,18 @@
           "rec_yd": 17,
           "pts_ppr": 3.7,
           "snap_pct": 68.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 39,
+          "tm_off_snp": 61,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 53,
+          "pts_ppr": 8.3,
+          "snap_pct": 63.9
         }
       ]
     },
@@ -1413,6 +1672,17 @@
           "rush_yd": 73,
           "pts_ppr": 9.8,
           "snap_pct": 46.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 24,
+          "tm_off_snp": 57,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 9,
+          "pts_ppr": 3.9,
+          "snap_pct": 42.1
         }
       ]
     },
@@ -1477,11 +1747,24 @@
           "rec_yd": 19,
           "pts_ppr": 3.9,
           "snap_pct": 79.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 68,
+          "tm_off_snp": 77,
+          "rec_tgt": 7,
+          "rec": 6,
+          "rec_yd": 65,
+          "rec_td": 1,
+          "pts_ppr": 18.5,
+          "snap_pct": 88.3
         }
       ]
     },
-    "James Cook": {
-      "name": "James Cook",
+    "James Cook III": {
+      "name": "James Cook III",
       "pos": "RB",
       "team": "BUF",
       "games": [
@@ -1556,6 +1839,21 @@
           "rush_td": 2,
           "pts_ppr": 22.8,
           "snap_pct": 62.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 45,
+          "tm_off_snp": 68,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 58,
+          "rush_att": 22,
+          "rush_yd": 95,
+          "rush_td": 1,
+          "pts_ppr": 24.3,
+          "snap_pct": 66.2
         }
       ]
     },
@@ -1624,11 +1922,24 @@
           "rec_yd": 54,
           "pts_ppr": 7.4,
           "snap_pct": 65.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 47,
+          "tm_off_snp": 55,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 87,
+          "rec_td": 1,
+          "pts_ppr": 17.7,
+          "snap_pct": 85.5
         }
       ]
     },
-    "Efton Chism": {
-      "name": "Efton Chism",
+    "Efton Chism III": {
+      "name": "Efton Chism III",
       "pos": "WR",
       "team": "NE",
       "games": [
@@ -1683,6 +1994,14 @@
           "rush_yd": 2,
           "pts_ppr": 10.9,
           "snap_pct": 76.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 42,
+          "tm_off_snp": 68,
+          "rec_tgt": 1,
+          "snap_pct": 61.8
         }
       ]
     },
@@ -1790,6 +2109,21 @@
           "rush_yd": 18,
           "pts_ppr": 3.0,
           "snap_pct": 59.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 46,
+          "tm_off_snp": 67,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 30,
+          "rec_td": 1,
+          "rush_att": 7,
+          "rush_yd": 27,
+          "pts_ppr": 15.7,
+          "snap_pct": 68.7
         }
       ]
     },
@@ -1932,6 +2266,21 @@
           "pass_int": 2,
           "pts_ppr": 10.3,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 85,
+          "tm_off_snp": 85,
+          "rush_att": 2,
+          "rush_yd": 19,
+          "pass_cmp": 27,
+          "pass_att": 51,
+          "pass_yd": 278,
+          "pass_int": 2,
+          "pts_ppr": 13.0,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -1946,13 +2295,24 @@
           "off_snp": 1,
           "tm_off_snp": 67,
           "snap_pct": 1.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 20,
+          "tm_off_snp": 77,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 66,
+          "pts_ppr": 6.6,
+          "snap_pct": 26.0
         }
       ]
     },
     "Andy Dalton": {
       "name": "Andy Dalton",
       "pos": "QB",
-      "team": "",
+      "team": "ATL",
       "games": [
         {
           "week": 3,
@@ -2102,6 +2462,18 @@
           "rush_td": 1,
           "pts_ppr": 11.5,
           "snap_pct": 38.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 5,
+          "tm_off_snp": 66,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": -1,
+          "rush_att": 1,
+          "pts_ppr": 0.9,
+          "snap_pct": 7.6
         }
       ]
     },
@@ -2137,6 +2509,13 @@
           "off_snp": 3,
           "tm_off_snp": 70,
           "snap_pct": 4.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 1,
+          "tm_off_snp": 62,
+          "snap_pct": 1.6
         }
       ]
     },
@@ -2204,6 +2583,18 @@
           "rec_yd": 25,
           "pts_ppr": 5.5,
           "snap_pct": 91.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 74,
+          "tm_off_snp": 74,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -2331,6 +2722,19 @@
           "rush_td": 1,
           "pts_ppr": 12.6,
           "snap_pct": 41.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 25,
+          "tm_off_snp": 68,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 19,
+          "rush_att": 7,
+          "rush_yd": 21,
+          "pts_ppr": 7.0,
+          "snap_pct": 36.8
         }
       ]
     },
@@ -2381,6 +2785,18 @@
           "rec_yd": 26,
           "pts_ppr": 4.6,
           "snap_pct": 25.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 23,
+          "tm_off_snp": 57,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 44,
+          "rec_td": 1,
+          "pts_ppr": 14.4,
+          "snap_pct": 40.4
         }
       ]
     },
@@ -2500,6 +2916,18 @@
           "rush_yd": 16,
           "pts_ppr": 22.8,
           "snap_pct": 84.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 78,
+          "tm_off_snp": 85,
+          "rec_tgt": 16,
+          "rec": 12,
+          "rec_yd": 134,
+          "pts_ppr": 25.4,
+          "snap_pct": 91.8
         }
       ]
     },
@@ -2552,6 +2980,19 @@
           "rush_yd": 8,
           "pts_ppr": 2.7,
           "snap_pct": 14.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 8,
+          "tm_off_snp": 62,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 10,
+          "rush_att": 7,
+          "rush_yd": 16,
+          "pts_ppr": 3.6,
+          "snap_pct": 12.9
         }
       ]
     },
@@ -2624,6 +3065,18 @@
           "rush_yd": 9,
           "pts_ppr": 4.8,
           "snap_pct": 64.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 39,
+          "tm_off_snp": 60,
+          "rec_tgt": 7,
+          "rec": 4,
+          "rec_yd": 24,
+          "pts_ppr": 6.4,
+          "snap_pct": 65.0
         }
       ]
     },
@@ -2672,6 +3125,13 @@
           "tm_off_snp": 69,
           "rec_tgt": 1,
           "snap_pct": 8.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 10,
+          "tm_off_snp": 77,
+          "snap_pct": 13.0
         }
       ]
     },
@@ -2724,6 +3184,17 @@
           "rec_td": 1,
           "pts_ppr": 7.7,
           "snap_pct": 40.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 32,
+          "tm_off_snp": 62,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 13,
+          "pts_ppr": 2.3,
+          "snap_pct": 51.6
         }
       ]
     },
@@ -2809,6 +3280,22 @@
           "pass_yd": 267,
           "pts_ppr": 11.1,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 83,
+          "tm_off_snp": 83,
+          "rush_att": 3,
+          "rush_yd": 30,
+          "pass_cmp": 22,
+          "pass_att": 42,
+          "pass_yd": 269,
+          "pass_td": 1,
+          "pass_int": 2,
+          "pts_ppr": 15.8,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -2863,6 +3350,18 @@
           "rec_yd": 57,
           "pts_ppr": 10.7,
           "snap_pct": 57.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 39,
+          "tm_off_snp": 68,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 11,
+          "pts_ppr": 2.1,
+          "snap_pct": 57.4
         }
       ]
     },
@@ -2985,6 +3484,19 @@
           "rush_yd": 22,
           "pts_ppr": 4.8,
           "snap_pct": 16.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 16,
+          "tm_off_snp": 68,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 9,
+          "rush_att": 7,
+          "rush_yd": 31,
+          "pts_ppr": 3.0,
+          "snap_pct": 23.5
         }
       ]
     },
@@ -3140,6 +3652,21 @@
           "rush_td": 1,
           "pts_ppr": 17.3,
           "snap_pct": 58.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 45,
+          "tm_off_snp": 77,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 26,
+          "rush_att": 16,
+          "rush_yd": 44,
+          "rush_td": 2,
+          "pts_ppr": 23.0,
+          "snap_pct": 58.4
         }
       ]
     },
@@ -3219,6 +3746,22 @@
           "pass_td": 1,
           "pts_ppr": 10.0,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 62,
+          "tm_off_snp": 62,
+          "rush_att": 2,
+          "rush_yd": -1,
+          "pass_cmp": 20,
+          "pass_att": 30,
+          "pass_yd": 252,
+          "pass_td": 1,
+          "pass_int": 1,
+          "pts_ppr": 13.0,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -3277,6 +3820,16 @@
           "rush_yd": 52,
           "pts_ppr": 4.9,
           "snap_pct": 20.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 12,
+          "tm_off_snp": 68,
+          "rush_att": 11,
+          "rush_yd": 57,
+          "pts_ppr": 5.7,
+          "snap_pct": 17.6
         }
       ]
     },
@@ -3328,6 +3881,19 @@
           "rush_yd": 9,
           "pts_ppr": 0.9,
           "snap_pct": 25.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 31,
+          "tm_off_snp": 77,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 19,
+          "rush_att": 4,
+          "rush_yd": 14,
+          "pts_ppr": 4.3,
+          "snap_pct": 40.3
         }
       ]
     },
@@ -3463,6 +4029,17 @@
           "tm_off_snp": 71,
           "rec_tgt": 2,
           "snap_pct": 33.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 8,
+          "tm_off_snp": 68,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 17,
+          "pts_ppr": 2.7,
+          "snap_pct": 11.8
         }
       ]
     },
@@ -3515,8 +4092,8 @@
         }
       ]
     },
-    "Brian Robinson": {
-      "name": "Brian Robinson",
+    "Brian Robinson Jr.": {
+      "name": "Brian Robinson Jr.",
       "pos": "RB",
       "team": "ATL",
       "games": [
@@ -3578,6 +4155,19 @@
           "rush_yd": 16,
           "pts_ppr": 1.6,
           "snap_pct": 21.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 10,
+          "tm_off_snp": 55,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 9,
+          "rush_att": 2,
+          "rush_yd": 1,
+          "pts_ppr": 3.0,
+          "snap_pct": 18.2
         }
       ]
     },
@@ -3666,6 +4256,18 @@
           "rec_yd": 40,
           "pts_ppr": 5.0,
           "snap_pct": 98.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 74,
+          "tm_off_snp": 77,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 39,
+          "pts_ppr": 6.9,
+          "snap_pct": 96.1
         }
       ]
     },
@@ -3737,6 +4339,18 @@
           "pass_yd": 7,
           "pts_ppr": 7.3,
           "snap_pct": 83.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 66,
+          "tm_off_snp": 72,
+          "rec_tgt": 7,
+          "rec": 4,
+          "rec_yd": 32,
+          "pts_ppr": 7.2,
+          "snap_pct": 91.7
         }
       ]
     },
@@ -3818,6 +4432,23 @@
           "pass_td": 2,
           "pts_ppr": 25.3,
           "snap_pct": 96.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 75,
+          "tm_off_snp": 75,
+          "rush_att": 4,
+          "rush_yd": 12,
+          "rush_td": 1,
+          "pass_cmp": 23,
+          "pass_att": 41,
+          "pass_yd": 276,
+          "pass_td": 1,
+          "pass_int": 1,
+          "pts_ppr": 21.2,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -3857,8 +4488,8 @@
         }
       ]
     },
-    "John Metchie": {
-      "name": "John Metchie",
+    "John Metchie III": {
+      "name": "John Metchie III",
       "pos": "WR",
       "team": "CAR",
       "games": [
@@ -3892,11 +4523,22 @@
           "rec_yd": 37,
           "pts_ppr": 6.7,
           "snap_pct": 37.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 27,
+          "tm_off_snp": 79,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 24,
+          "pts_ppr": 4.4,
+          "snap_pct": 34.2
         }
       ]
     },
-    "Erick All": {
-      "name": "Erick All",
+    "Erick All Jr.": {
+      "name": "Erick All Jr.",
       "pos": "TE",
       "team": "CIN",
       "games": [
@@ -4040,6 +4682,18 @@
           "rush_yd": -2,
           "pts_ppr": 3.4,
           "snap_pct": 68.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 36,
+          "tm_off_snp": 77,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 18,
+          "pts_ppr": 3.8,
+          "snap_pct": 46.8
         }
       ]
     },
@@ -4078,7 +4732,7 @@
     "Cooper Rush": {
       "name": "Cooper Rush",
       "pos": "QB",
-      "team": "ATL",
+      "team": "",
       "games": [
         {
           "week": 1,
@@ -4111,8 +4765,8 @@
         }
       ]
     },
-    "Chris Godwin": {
-      "name": "Chris Godwin",
+    "Chris Godwin Jr.": {
+      "name": "Chris Godwin Jr.",
       "pos": "WR",
       "team": "TB",
       "games": [
@@ -4179,6 +4833,17 @@
           "rush_yd": 3,
           "pts_ppr": 7.0,
           "snap_pct": 87.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 68,
+          "tm_off_snp": 74,
+          "rec_tgt": 8,
+          "rec": 4,
+          "rec_yd": 37,
+          "pts_ppr": 7.7,
+          "snap_pct": 91.9
         }
       ]
     },
@@ -4291,6 +4956,17 @@
           "rec_yd": 6,
           "pts_ppr": 1.6,
           "snap_pct": 70.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 47,
+          "tm_off_snp": 68,
+          "rec_tgt": 1,
+          "rec": 1,
+          "pts_ppr": 1.0,
+          "snap_pct": 69.1
         }
       ]
     },
@@ -4320,6 +4996,13 @@
           "tm_off_snp": 73,
           "pts_ppr": 1.0,
           "snap_pct": 4.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 6,
+          "tm_off_snp": 72,
+          "snap_pct": 8.3
         }
       ]
     },
@@ -4342,6 +5025,24 @@
           "pass_int": 1,
           "pts_ppr": 12.0,
           "snap_pct": 84.4
+        }
+      ]
+    },
+    "Will Mallory": {
+      "name": "Will Mallory",
+      "pos": "TE",
+      "team": "IND",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 43,
+          "tm_off_snp": 83,
+          "rec_tgt": 6,
+          "rec": 2,
+          "rec_yd": 20,
+          "pts_ppr": 4.0,
+          "snap_pct": 51.8
         }
       ]
     },
@@ -4423,6 +5124,20 @@
           "pass_td": 1,
           "pts_ppr": 13.7,
           "snap_pct": 83.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 66,
+          "tm_off_snp": 66,
+          "pass_cmp": 23,
+          "pass_att": 41,
+          "pass_yd": 313,
+          "pass_td": 2,
+          "pass_int": 1,
+          "pts_ppr": 19.5,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -4491,6 +5206,17 @@
           "rec_yd": 19,
           "pts_ppr": 4.9,
           "snap_pct": 83.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 42,
+          "tm_off_snp": 78,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 13,
+          "pts_ppr": 3.3,
+          "snap_pct": 53.8
         }
       ]
     },
@@ -4540,6 +5266,13 @@
           "tm_off_snp": 60,
           "rec_tgt": 1,
           "snap_pct": 60.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 30,
+          "tm_off_snp": 62,
+          "snap_pct": 48.4
         }
       ]
     },
@@ -4630,6 +5363,13 @@
           "off_snp": 6,
           "tm_off_snp": 63,
           "snap_pct": 9.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 2,
+          "tm_off_snp": 85,
+          "snap_pct": 2.4
         }
       ]
     },
@@ -4699,6 +5439,19 @@
           "rec_td": 2,
           "pts_ppr": 32.4,
           "snap_pct": 79.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 70,
+          "tm_off_snp": 77,
+          "rec_tgt": 11,
+          "rec": 6,
+          "rec_yd": 99,
+          "rec_td": 1,
+          "pts_ppr": 23.9,
+          "snap_pct": 90.9
         }
       ]
     },
@@ -4767,6 +5520,21 @@
           "pass_yd": 225,
           "pass_td": 2,
           "pts_ppr": 17.0,
+          "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 61,
+          "tm_off_snp": 61,
+          "rush_att": 5,
+          "rush_yd": 16,
+          "pass_cmp": 23,
+          "pass_att": 30,
+          "pass_yd": 272,
+          "pass_int": 1,
+          "pts_ppr": 11.5,
           "snap_pct": 100.0
         }
       ]
@@ -4869,6 +5637,16 @@
           "rush_yd": 3,
           "pts_ppr": 2.9,
           "snap_pct": 61.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 9,
+          "tm_off_snp": 62,
+          "rush_att": 1,
+          "rush_yd": 4,
+          "pts_ppr": 0.4,
+          "snap_pct": 14.5
         }
       ]
     },
@@ -5015,6 +5793,17 @@
           "rec_yd": 2,
           "pts_ppr": 1.2,
           "snap_pct": 37.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 33,
+          "tm_off_snp": 67,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 6,
+          "pts_ppr": 1.6,
+          "snap_pct": 49.3
         }
       ]
     },
@@ -5136,6 +5925,35 @@
           "pass_int": 1,
           "pts_ppr": 11.2,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 68,
+          "tm_off_snp": 68,
+          "rush_att": 5,
+          "rush_yd": 26,
+          "pass_cmp": 22,
+          "pass_att": 37,
+          "pass_yd": 204,
+          "pass_int": 1,
+          "pts_ppr": 9.8,
+          "snap_pct": 100.0
+        }
+      ]
+    },
+    "Malik Turner": {
+      "name": "Malik Turner",
+      "pos": "WR",
+      "team": "SF",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 3,
+          "tm_off_snp": 62,
+          "snap_pct": 4.8
         }
       ]
     },
@@ -5277,6 +6095,24 @@
         }
       ]
     },
+    "Pharaoh Brown": {
+      "name": "Pharaoh Brown",
+      "pos": "TE",
+      "team": "IND",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 4,
+          "tm_off_snp": 83,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 7,
+          "pts_ppr": 1.7,
+          "snap_pct": 4.8
+        }
+      ]
+    },
     "Jacob Saylors": {
       "name": "Jacob Saylors",
       "pos": "RB",
@@ -5330,6 +6166,13 @@
           "off_snp": 5,
           "tm_off_snp": 64,
           "snap_pct": 7.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 3,
+          "tm_off_snp": 55,
+          "snap_pct": 5.5
         }
       ]
     },
@@ -5395,6 +6238,18 @@
           "rec_td": 2,
           "pts_ppr": 22.5,
           "snap_pct": 49.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 40,
+          "tm_off_snp": 68,
+          "rec_tgt": 8,
+          "rec": 7,
+          "rec_yd": 86,
+          "rec_td": 1,
+          "pts_ppr": 19.6,
+          "snap_pct": 58.8
         }
       ]
     },
@@ -5443,6 +6298,17 @@
           "off_snp": 19,
           "tm_off_snp": 84,
           "snap_pct": 22.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 42,
+          "tm_off_snp": 66,
+          "rec_tgt": 4,
+          "rec": 1,
+          "rec_yd": 9,
+          "pts_ppr": 1.9,
+          "snap_pct": 63.6
         }
       ]
     },
@@ -5491,8 +6357,8 @@
         }
       ]
     },
-    "Luther Burden": {
-      "name": "Luther Burden",
+    "Luther Burden III": {
+      "name": "Luther Burden III",
       "pos": "WR",
       "team": "CHI",
       "games": [
@@ -5563,6 +6429,17 @@
           "rush_yd": 2,
           "pts_ppr": 8.9,
           "snap_pct": 76.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 30,
+          "tm_off_snp": 77,
+          "rec_tgt": 8,
+          "rec": 8,
+          "rec_yd": 95,
+          "pts_ppr": 17.5,
+          "snap_pct": 39.0
         }
       ]
     },
@@ -5631,6 +6508,18 @@
           "rec_yd": 63,
           "pts_ppr": 11.3,
           "snap_pct": 83.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 40,
+          "tm_off_snp": 64,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 24,
+          "pts_ppr": 4.4,
+          "snap_pct": 62.5
         }
       ]
     },
@@ -5750,6 +6639,23 @@
         }
       ]
     },
+    "Jeremy McNichols": {
+      "name": "Jeremy McNichols",
+      "pos": "RB",
+      "team": "WAS",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 12,
+          "tm_off_snp": 67,
+          "rush_att": 5,
+          "rush_yd": 13,
+          "pts_ppr": 1.3,
+          "snap_pct": 17.9
+        }
+      ]
+    },
     "Davante Adams": {
       "name": "Davante Adams",
       "pos": "WR",
@@ -5816,6 +6722,17 @@
           "rec_td": 2,
           "pts_ppr": 22.1,
           "snap_pct": 73.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 43,
+          "tm_off_snp": 58,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 39,
+          "pts_ppr": 6.9,
+          "snap_pct": 74.1
         }
       ]
     },
@@ -5898,11 +6815,27 @@
           "pass_td": 3,
           "pts_ppr": 22.0,
           "snap_pct": 96.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 79,
+          "tm_off_snp": 79,
+          "rush_att": 1,
+          "rush_yd": -1,
+          "pass_cmp": 33,
+          "pass_att": 49,
+          "pass_yd": 253,
+          "pass_td": 2,
+          "pass_int": 1,
+          "pts_ppr": 17.0,
+          "snap_pct": 100.0
         }
       ]
     },
-    "Deebo Samuel": {
-      "name": "Deebo Samuel",
+    "Deebo Samuel Sr.": {
+      "name": "Deebo Samuel Sr.",
       "pos": "WR",
       "team": "SF",
       "games": [
@@ -6043,6 +6976,18 @@
           "rec_yd": 68,
           "pts_ppr": 13.8,
           "snap_pct": 80.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 54,
+          "tm_off_snp": 71,
+          "rec_tgt": 7,
+          "rec": 5,
+          "rec_yd": 44,
+          "pts_ppr": 9.4,
+          "snap_pct": 76.1
         }
       ]
     },
@@ -6126,6 +7071,22 @@
           "pass_int": 2,
           "pts_ppr": 1.8,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 70,
+          "tm_off_snp": 72,
+          "rush_att": 5,
+          "rush_yd": 32,
+          "rush_td": 1,
+          "pass_cmp": 16,
+          "pass_att": 30,
+          "pass_yd": 144,
+          "pass_td": 3,
+          "pts_ppr": 27.0,
+          "snap_pct": 97.2
         }
       ]
     },
@@ -6254,6 +7215,13 @@
           "off_snp": 23,
           "tm_off_snp": 70,
           "snap_pct": 32.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 14,
+          "tm_off_snp": 62,
+          "snap_pct": 22.6
         }
       ]
     },
@@ -6457,6 +7425,17 @@
           "rec_yd": 3,
           "pts_ppr": 0.3,
           "snap_pct": 18.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 22,
+          "tm_off_snp": 62,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 12,
+          "pts_ppr": 2.2,
+          "snap_pct": 35.5
         }
       ]
     },
@@ -6563,6 +7542,18 @@
           "rec_td": 2,
           "pts_ppr": 32.3,
           "snap_pct": 80.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 66,
+          "tm_off_snp": 75,
+          "rec_tgt": 8,
+          "rec": 3,
+          "rec_yd": 64,
+          "pts_ppr": 9.4,
+          "snap_pct": 88.0
         }
       ]
     },
@@ -6700,6 +7691,18 @@
           "rec_yd": 37,
           "pts_ppr": 5.7,
           "snap_pct": 84.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 53,
+          "tm_off_snp": 71,
+          "rec_tgt": 10,
+          "rec": 5,
+          "rec_yd": 83,
+          "pts_ppr": 13.3,
+          "snap_pct": 74.6
         }
       ]
     },
@@ -6844,6 +7847,18 @@
           "rec_yd": 83,
           "pts_ppr": 13.3,
           "snap_pct": 67.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 48,
+          "tm_off_snp": 58,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 22,
+          "pts_ppr": 4.2,
+          "snap_pct": 82.8
         }
       ]
     },
@@ -6917,6 +7932,19 @@
           "rush_td": 1,
           "pts_ppr": 17.2,
           "snap_pct": 88.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 64,
+          "tm_off_snp": 74,
+          "rec_tgt": 16,
+          "rec": 7,
+          "rec_yd": 48,
+          "rec_td": 1,
+          "pts_ppr": 17.8,
+          "snap_pct": 86.5
         }
       ]
     },
@@ -6964,6 +7992,20 @@
           "rec_yd": 56,
           "pts_ppr": 10.6,
           "snap_pct": 71.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 46,
+          "tm_off_snp": 63,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 74,
+          "rush_att": 1,
+          "rush_yd": 5,
+          "pts_ppr": 10.9,
+          "snap_pct": 73.0
         }
       ]
     },
@@ -7048,6 +8090,21 @@
           "pass_yd": 329,
           "pass_td": 2,
           "pts_ppr": 21.5,
+          "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 79,
+          "tm_off_snp": 79,
+          "rush_att": 3,
+          "rush_yd": 6,
+          "pass_cmp": 20,
+          "pass_att": 39,
+          "pass_yd": 281,
+          "pass_td": 2,
+          "pts_ppr": 19.8,
           "snap_pct": 100.0
         }
       ]
@@ -7150,6 +8207,21 @@
         }
       ]
     },
+    "Luke McCaffrey": {
+      "name": "Luke McCaffrey",
+      "pos": "WR",
+      "team": "WAS",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 8,
+          "tm_off_snp": 67,
+          "rec_tgt": 1,
+          "snap_pct": 11.9
+        }
+      ]
+    },
     "Caleb Douglas": {
       "name": "Caleb Douglas",
       "pos": "WR",
@@ -7212,6 +8284,19 @@
           "rush_yd": 22,
           "pts_ppr": 6.4,
           "snap_pct": 25.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 21,
+          "tm_off_snp": 79,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 9,
+          "rush_att": 7,
+          "rush_yd": 40,
+          "pts_ppr": 7.9,
+          "snap_pct": 26.6
         }
       ]
     },
@@ -7310,6 +8395,21 @@
           "pass_td": 2,
           "pts_ppr": 24.0,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 57,
+          "tm_off_snp": 57,
+          "rush_att": 5,
+          "rush_yd": 28,
+          "pass_cmp": 19,
+          "pass_att": 31,
+          "pass_yd": 165,
+          "pass_td": 1,
+          "pts_ppr": 13.4,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -7378,6 +8478,18 @@
           "rec_td": 1,
           "pts_ppr": 28.0,
           "snap_pct": 88.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 69,
+          "tm_off_snp": 78,
+          "rec_tgt": 11,
+          "rec": 6,
+          "rec_yd": 73,
+          "pts_ppr": 13.3,
+          "snap_pct": 88.5
         }
       ]
     },
@@ -7429,6 +8541,18 @@
           "rec_yd": 26,
           "pts_ppr": 4.6,
           "snap_pct": 72.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 37,
+          "tm_off_snp": 67,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 66,
+          "pts_ppr": 10.6,
+          "snap_pct": 55.2
         }
       ]
     },
@@ -7484,6 +8608,19 @@
           "rec_yd": 12,
           "pts_ppr": 5.2,
           "snap_pct": 50.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 54,
+          "tm_off_snp": 79,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 46,
+          "rec_td": 2,
+          "pts_ppr": 20.6,
+          "snap_pct": 68.4
         }
       ]
     },
@@ -7556,6 +8693,18 @@
           "rush_yd": 2,
           "pts_ppr": 11.6,
           "snap_pct": 77.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 58,
+          "tm_off_snp": 75,
+          "rec_tgt": 8,
+          "rec": 5,
+          "rec_yd": 37,
+          "pts_ppr": 8.7,
+          "snap_pct": 77.3
         }
       ]
     },
@@ -7686,6 +8835,20 @@
           "rush_td": 1,
           "pts_ppr": 18.6,
           "snap_pct": 85.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 54,
+          "tm_off_snp": 62,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 26,
+          "rush_att": 17,
+          "rush_yd": 78,
+          "pts_ppr": 12.4,
+          "snap_pct": 87.1
         }
       ]
     },
@@ -7715,6 +8878,17 @@
           "off_snp": 12,
           "tm_off_snp": 62,
           "snap_pct": 19.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 8,
+          "tm_off_snp": 64,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4,
+          "snap_pct": 12.5
         }
       ]
     },
@@ -7785,6 +8959,18 @@
           "rec_td": 1,
           "pts_ppr": 23.4,
           "snap_pct": 92.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 61,
+          "tm_off_snp": 62,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 44,
+          "pts_ppr": 8.4,
+          "snap_pct": 98.4
         }
       ]
     },
@@ -7818,6 +9004,19 @@
           "rush_yd": -1,
           "pts_ppr": 2.4,
           "snap_pct": 9.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 7,
+          "tm_off_snp": 67,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 4,
+          "rush_att": 1,
+          "rush_yd": 3,
+          "pts_ppr": 2.7,
+          "snap_pct": 10.4
         }
       ]
     },
@@ -7888,6 +9087,18 @@
           "rush_yd": 11,
           "pts_ppr": 5.9,
           "snap_pct": 34.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 17,
+          "tm_off_snp": 68,
+          "rec_tgt": 1,
+          "rush_att": 2,
+          "rush_yd": 4,
+          "pts_ppr": 0.4,
+          "snap_pct": 25.0
         }
       ]
     },
@@ -7994,6 +9205,13 @@
           "off_snp": 13,
           "tm_off_snp": 64,
           "snap_pct": 20.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 2,
+          "tm_off_snp": 55,
+          "snap_pct": 3.6
         }
       ]
     },
@@ -8072,6 +9290,19 @@
           "rec_yd": 20,
           "pts_ppr": 4.0,
           "snap_pct": 48.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 39,
+          "tm_off_snp": 71,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 8,
+          "rec_td": 1,
+          "pts_ppr": 8.8,
+          "snap_pct": 54.9
         }
       ]
     },
@@ -8131,6 +9362,16 @@
           "rush_yd": 6,
           "pts_ppr": 1.1,
           "snap_pct": 11.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 4,
+          "tm_off_snp": 60,
+          "rush_att": 1,
+          "rush_yd": 6,
+          "pts_ppr": 0.6,
+          "snap_pct": 6.7
         }
       ]
     },
@@ -8200,6 +9441,20 @@
           "rush_td": 1,
           "pts_ppr": 16.2,
           "snap_pct": 26.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 16,
+          "tm_off_snp": 58,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 18,
+          "rec_td": 1,
+          "rush_att": 9,
+          "rush_yd": 42,
+          "pts_ppr": 14.0,
+          "snap_pct": 27.6
         }
       ]
     },
@@ -8263,6 +9518,15 @@
           "rec_yd": 5,
           "pts_ppr": 1.5,
           "snap_pct": 44.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 22,
+          "tm_off_snp": 46,
+          "rec_tgt": 2,
+          "snap_pct": 47.8
         }
       ]
     },
@@ -8289,6 +9553,14 @@
           "rec_yd": 8,
           "pts_ppr": 1.8,
           "snap_pct": 22.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 17,
+          "tm_off_snp": 60,
+          "snap_pct": 28.3
         }
       ]
     },
@@ -8339,6 +9611,16 @@
           "rush_yd": 26,
           "pts_ppr": 2.6,
           "snap_pct": 14.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 4,
+          "tm_off_snp": 75,
+          "rush_att": 1,
+          "rush_yd": -2,
+          "pts_ppr": -0.2,
+          "snap_pct": 5.3
         }
       ]
     },
@@ -8369,6 +9651,13 @@
           "tm_off_snp": 74,
           "rec_tgt": 1,
           "snap_pct": 9.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 3,
+          "tm_off_snp": 72,
+          "snap_pct": 4.2
         }
       ]
     },
@@ -8441,6 +9730,20 @@
           "rush_yd": 62,
           "pts_ppr": 12.5,
           "snap_pct": 84.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 49,
+          "tm_off_snp": 63,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 25,
+          "rush_att": 15,
+          "rush_yd": 56,
+          "pts_ppr": 10.1,
+          "snap_pct": 77.8
         }
       ]
     },
@@ -8511,6 +9814,18 @@
           "rec_td": 1,
           "pts_ppr": 26.3,
           "snap_pct": 63.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 25,
+          "tm_off_snp": 62,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 94,
+          "pts_ppr": 12.4,
+          "snap_pct": 40.3
         }
       ]
     },
@@ -8627,11 +9942,25 @@
           "rush_yd": 7,
           "pts_ppr": 3.6,
           "snap_pct": 43.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 40,
+          "tm_off_snp": 72,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 10,
+          "rush_att": 18,
+          "rush_yd": 38,
+          "pts_ppr": 5.8,
+          "snap_pct": 55.6
         }
       ]
     },
-    "Jimmy Horn": {
-      "name": "Jimmy Horn",
+    "Jimmy Horn Jr.": {
+      "name": "Jimmy Horn Jr.",
       "pos": "WR",
       "team": "CLE",
       "games": [
@@ -8697,11 +10026,25 @@
           "rush_yd": 7,
           "pts_ppr": 0.7,
           "snap_pct": 37.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 24,
+          "tm_off_snp": 60,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 31,
+          "rush_att": 6,
+          "rush_yd": 25,
+          "rush_td": 1,
+          "pts_ppr": 14.6,
+          "snap_pct": 40.0
         }
       ]
     },
-    "Velus Jones": {
-      "name": "Velus Jones",
+    "Velus Jones Jr.": {
+      "name": "Velus Jones Jr.",
       "pos": "WR",
       "team": "SEA",
       "games": [
@@ -8711,6 +10054,19 @@
           "off_snp": 2,
           "tm_off_snp": 60,
           "snap_pct": 3.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 9,
+          "tm_off_snp": 85,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": -1,
+          "rush_att": 4,
+          "rush_yd": 20,
+          "pts_ppr": 2.9,
+          "snap_pct": 10.6
         }
       ]
     },
@@ -8754,6 +10110,27 @@
           "rec_yd": 10,
           "pts_ppr": 2.0,
           "snap_pct": 30.3
+        }
+      ]
+    },
+    "Savion Williams": {
+      "name": "Savion Williams",
+      "pos": "WR",
+      "team": "GB",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 40,
+          "tm_off_snp": 75,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 32,
+          "rush_att": 2,
+          "rush_yd": 9,
+          "pts_ppr": 8.1,
+          "snap_pct": 53.3
         }
       ]
     },
@@ -8829,6 +10206,16 @@
           "rush_yd": 16,
           "pts_ppr": 2.9,
           "snap_pct": 26.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 19,
+          "tm_off_snp": 83,
+          "rush_att": 4,
+          "rush_yd": 27,
+          "pts_ppr": 2.7,
+          "snap_pct": 22.9
         }
       ]
     },
@@ -8866,6 +10253,18 @@
           "rec_yd": 26,
           "pts_ppr": 4.6,
           "snap_pct": 92.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 43,
+          "tm_off_snp": 62,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 15,
+          "pts_ppr": 2.5,
+          "snap_pct": 69.4
         }
       ]
     },
@@ -8916,6 +10315,13 @@
           "off_snp": 23,
           "tm_off_snp": 62,
           "snap_pct": 37.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 18,
+          "tm_off_snp": 67,
+          "snap_pct": 26.9
         }
       ]
     },
@@ -8997,6 +10403,20 @@
           "rush_yd": 102,
           "pts_ppr": 21.0,
           "snap_pct": 55.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 33,
+          "tm_off_snp": 57,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 2,
+          "rush_att": 17,
+          "rush_yd": 58,
+          "pts_ppr": 5.0,
+          "snap_pct": 57.9
         }
       ]
     },
@@ -9080,6 +10500,22 @@
           "pass_yd": 170,
           "pass_int": 1,
           "pts_ppr": 6.0,
+          "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 46,
+          "tm_off_snp": 46,
+          "rush_att": 3,
+          "rush_yd": 7,
+          "pass_cmp": 11,
+          "pass_att": 22,
+          "pass_yd": 102,
+          "pass_td": 1,
+          "pass_int": 1,
+          "pts_ppr": 7.8,
           "snap_pct": 100.0
         }
       ]
@@ -9176,6 +10612,18 @@
           "rush_yd": 9,
           "pts_ppr": 37.7,
           "snap_pct": 85.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 52,
+          "tm_off_snp": 58,
+          "rec_tgt": 7,
+          "rec": 6,
+          "rec_yd": 80,
+          "pts_ppr": 14.0,
+          "snap_pct": 89.7
         }
       ]
     },
@@ -9249,6 +10697,13 @@
           "off_snp": 3,
           "tm_off_snp": 64,
           "snap_pct": 4.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 5,
+          "tm_off_snp": 68,
+          "snap_pct": 7.4
         }
       ]
     },
@@ -9279,6 +10734,13 @@
           "off_snp": 16,
           "tm_off_snp": 68,
           "snap_pct": 23.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 7,
+          "tm_off_snp": 62,
+          "snap_pct": 11.3
         }
       ]
     },
@@ -9337,6 +10799,15 @@
           "rec_yd": 33,
           "pts_ppr": 5.3,
           "snap_pct": 55.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 28,
+          "tm_off_snp": 46,
+          "rec_tgt": 2,
+          "snap_pct": 60.9
         }
       ]
     },
@@ -9387,6 +10858,13 @@
           "off_snp": 13,
           "tm_off_snp": 60,
           "snap_pct": 21.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 1,
+          "tm_off_snp": 62,
+          "snap_pct": 1.6
         }
       ]
     },
@@ -9483,6 +10961,19 @@
           "rec_yd": 12,
           "pts_ppr": 3.2,
           "snap_pct": 63.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 56,
+          "tm_off_snp": 79,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 25,
+          "rec_td": 1,
+          "pts_ppr": 12.5,
+          "snap_pct": 70.9
         }
       ]
     },
@@ -9612,6 +11103,13 @@
           "rec_yd": 28,
           "pts_ppr": 5.8,
           "snap_pct": 17.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 8,
+          "tm_off_snp": 46,
+          "snap_pct": 17.4
         }
       ]
     },
@@ -9663,6 +11161,18 @@
           "rec_yd": 26,
           "pts_ppr": 5.6,
           "snap_pct": 43.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 52,
+          "tm_off_snp": 68,
+          "rec_tgt": 10,
+          "rec": 3,
+          "rec_yd": 27,
+          "pts_ppr": 5.7,
+          "snap_pct": 76.5
         }
       ]
     },
@@ -9744,6 +11254,21 @@
           "rush_td": 1,
           "pts_ppr": 17.3,
           "snap_pct": 81.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 53,
+          "tm_off_snp": 62,
+          "rec_tgt": 10,
+          "rec": 9,
+          "rec_yd": 53,
+          "rush_att": 16,
+          "rush_yd": 64,
+          "rush_td": 2,
+          "pts_ppr": 30.7,
+          "snap_pct": 85.5
         }
       ]
     },
@@ -9897,6 +11422,18 @@
           "rush_yd": 52,
           "pts_ppr": 5.2,
           "snap_pct": 47.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 35,
+          "tm_off_snp": 46,
+          "rec_tgt": 1,
+          "rush_att": 19,
+          "rush_yd": 76,
+          "pts_ppr": 7.6,
+          "snap_pct": 76.1
         }
       ]
     },
@@ -9967,6 +11504,17 @@
           "rush_yd": 7,
           "pts_ppr": 5.1,
           "snap_pct": 41.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 49,
+          "tm_off_snp": 85,
+          "rush_att": 5,
+          "rush_yd": 20,
+          "rush_td": 1,
+          "pts_ppr": 8.0,
+          "snap_pct": 57.6
         }
       ]
     },
@@ -10094,6 +11642,19 @@
           "rush_yd": -6,
           "pts_ppr": 7.5,
           "snap_pct": 75.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 46,
+          "tm_off_snp": 66,
+          "rec_tgt": 7,
+          "rec": 5,
+          "rec_yd": 97,
+          "rec_td": 2,
+          "pts_ppr": 26.7,
+          "snap_pct": 69.7
         }
       ]
     },
@@ -10164,6 +11725,18 @@
           "rec_td": 1,
           "pts_ppr": 21.6,
           "snap_pct": 90.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 70,
+          "tm_off_snp": 72,
+          "rec_tgt": 9,
+          "rec": 7,
+          "rec_yd": 53,
+          "pts_ppr": 12.3,
+          "snap_pct": 97.2
         }
       ]
     },
@@ -10260,6 +11833,13 @@
           "off_snp": 2,
           "tm_off_snp": 72,
           "snap_pct": 2.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 9,
+          "tm_off_snp": 71,
+          "snap_pct": 12.7
         }
       ]
     },
@@ -10358,6 +11938,19 @@
           "rec_td": 1,
           "pts_ppr": 13.4,
           "snap_pct": 64.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 52,
+          "tm_off_snp": 68,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 48,
+          "rec_td": 1,
+          "pts_ppr": 14.8,
+          "snap_pct": 76.5
         }
       ]
     },
@@ -10440,6 +12033,22 @@
           "pass_td": 2,
           "pass_int": 1,
           "pts_ppr": 22.7,
+          "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 71,
+          "tm_off_snp": 71,
+          "rush_att": 3,
+          "rush_yd": 11,
+          "pass_cmp": 24,
+          "pass_att": 41,
+          "pass_yd": 306,
+          "pass_td": 4,
+          "pass_int": 1,
+          "pts_ppr": 28.3,
           "snap_pct": 100.0
         }
       ]
@@ -10538,6 +12147,18 @@
           "rec_yd": 55,
           "pts_ppr": 9.5,
           "snap_pct": 48.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 31,
+          "tm_off_snp": 60,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 13,
+          "pts_ppr": 3.3,
+          "snap_pct": 51.7
         }
       ]
     },
@@ -10658,6 +12279,13 @@
           "off_snp": 13,
           "tm_off_snp": 89,
           "snap_pct": 14.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 12,
+          "tm_off_snp": 77,
+          "snap_pct": 15.6
         }
       ]
     },
@@ -10678,6 +12306,14 @@
           "rec_td": 2,
           "pts_ppr": 15.5,
           "snap_pct": 41.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 30,
+          "tm_off_snp": 72,
+          "snap_pct": 41.7
         }
       ]
     },
@@ -10695,6 +12331,21 @@
           "rush_yd": 2,
           "pts_ppr": 0.2,
           "snap_pct": 5.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 31,
+          "tm_off_snp": 77,
+          "rush_att": 2,
+          "rush_yd": 26,
+          "pass_cmp": 11,
+          "pass_att": 21,
+          "pass_yd": 243,
+          "pass_td": 1,
+          "pass_int": 1,
+          "pts_ppr": 17.3,
+          "snap_pct": 40.3
         }
       ]
     },
@@ -10765,6 +12416,19 @@
           "rec_yd": 23,
           "pts_ppr": 4.3,
           "snap_pct": 46.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 39,
+          "tm_off_snp": 85,
+          "rec_tgt": 8,
+          "rec": 5,
+          "rec_yd": 66,
+          "rush_att": 1,
+          "rush_yd": 2,
+          "pts_ppr": 11.8,
+          "snap_pct": 45.9
         }
       ]
     },
@@ -10830,6 +12494,18 @@
           "rec_yd": 20,
           "pts_ppr": 4.0,
           "snap_pct": 71.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 72,
+          "tm_off_snp": 77,
+          "rec_tgt": 8,
+          "rec": 2,
+          "rec_yd": 19,
+          "pts_ppr": 3.9,
+          "snap_pct": 93.5
         }
       ]
     },
@@ -10886,6 +12562,15 @@
           "off_snp": 21,
           "tm_off_snp": 64,
           "snap_pct": 32.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 30,
+          "tm_off_snp": 55,
+          "rec_tgt": 4,
+          "snap_pct": 54.5
         }
       ]
     },
@@ -10964,6 +12649,21 @@
           "rush_yd": 27,
           "pts_ppr": 10.7,
           "snap_pct": 53.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 38,
+          "tm_off_snp": 66,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 36,
+          "rush_att": 10,
+          "rush_yd": 22,
+          "rush_td": 1,
+          "pts_ppr": 15.8,
+          "snap_pct": 57.6
         }
       ]
     },
@@ -11015,6 +12715,13 @@
           "rec_yd": 20,
           "pts_ppr": 4.0,
           "snap_pct": 20.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 15,
+          "tm_off_snp": 78,
+          "snap_pct": 19.2
         }
       ]
     },
@@ -11066,11 +12773,23 @@
           "rec_yd": 8,
           "pts_ppr": 1.8,
           "snap_pct": 61.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 43,
+          "tm_off_snp": 79,
+          "rec_tgt": 1,
+          "rush_att": 1,
+          "rush_yd": 1,
+          "pts_ppr": 0.1,
+          "snap_pct": 54.4
         }
       ]
     },
-    "Chris Rodriguez": {
-      "name": "Chris Rodriguez",
+    "Chris Rodriguez Jr.": {
+      "name": "Chris Rodriguez Jr.",
       "pos": "RB",
       "team": "JAX",
       "games": [
@@ -11128,6 +12847,17 @@
           "rush_yd": 5,
           "pts_ppr": 2.1,
           "snap_pct": 12.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 21,
+          "tm_off_snp": 71,
+          "rec_tgt": 1,
+          "rush_att": 11,
+          "rush_yd": 55,
+          "pts_ppr": 5.5,
+          "snap_pct": 29.6
         }
       ]
     },
@@ -11194,6 +12924,17 @@
           "rush_yd": 13,
           "pts_ppr": 3.0,
           "snap_pct": 42.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 24,
+          "tm_off_snp": 72,
+          "rec_tgt": 1,
+          "rush_att": 6,
+          "rush_yd": 39,
+          "pts_ppr": 1.9,
+          "snap_pct": 33.3
         }
       ]
     },
@@ -11293,6 +13034,18 @@
           "rec_yd": 38,
           "pts_ppr": 9.8,
           "snap_pct": 69.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 52,
+          "tm_off_snp": 64,
+          "rec_tgt": 8,
+          "rec": 6,
+          "rec_yd": 61,
+          "pts_ppr": 12.1,
+          "snap_pct": 81.2
         }
       ]
     },
@@ -11354,6 +13107,19 @@
           "rush_yd": 16,
           "pts_ppr": 1.6,
           "snap_pct": 18.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 14,
+          "tm_off_snp": 62,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 3,
+          "rush_att": 8,
+          "rush_yd": 34,
+          "pts_ppr": 4.7,
+          "snap_pct": 22.6
         }
       ]
     },
@@ -11372,8 +13138,8 @@
         }
       ]
     },
-    "Ollie Gordon": {
-      "name": "Ollie Gordon",
+    "Ollie Gordon II": {
+      "name": "Ollie Gordon II",
       "pos": "RB",
       "team": "MIA",
       "games": [
@@ -11478,6 +13244,13 @@
           "off_snp": 5,
           "tm_off_snp": 60,
           "snap_pct": 8.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 8,
+          "tm_off_snp": 79,
+          "snap_pct": 10.1
         }
       ]
     },
@@ -11531,6 +13304,33 @@
           "tm_off_snp": 63,
           "pts_ppr": 1.0,
           "snap_pct": 34.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 16,
+          "tm_off_snp": 85,
+          "rec_tgt": 1,
+          "snap_pct": 18.8
+        }
+      ]
+    },
+    "Andrew Armstrong": {
+      "name": "Andrew Armstrong",
+      "pos": "WR",
+      "team": "KC",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 42,
+          "tm_off_snp": 61,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 13,
+          "pts_ppr": 2.3,
+          "snap_pct": 68.9
         }
       ]
     },
@@ -11622,8 +13422,8 @@
         }
       ]
     },
-    "Tyrone Tracy": {
-      "name": "Tyrone Tracy",
+    "Tyrone Tracy Jr.": {
+      "name": "Tyrone Tracy Jr.",
       "pos": "RB",
       "team": "NYG",
       "games": [
@@ -11676,6 +13476,21 @@
           "rush_yd": 6,
           "pts_ppr": 5.1,
           "snap_pct": 19.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 29,
+          "tm_off_snp": 77,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 27,
+          "rec_td": 1,
+          "rush_att": 6,
+          "rush_yd": 18,
+          "rush_td": 1,
+          "pts_ppr": 18.5,
+          "snap_pct": 37.7
         }
       ]
     },
@@ -11798,8 +13613,8 @@
         }
       ]
     },
-    "Marvin Mims": {
-      "name": "Marvin Mims",
+    "Marvin Mims Jr.": {
+      "name": "Marvin Mims Jr.",
       "pos": "WR",
       "team": "DEN",
       "games": [
@@ -11834,11 +13649,22 @@
           "rush_yd": 3,
           "pts_ppr": 2.9,
           "snap_pct": 19.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 16,
+          "tm_off_snp": 60,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 13,
+          "pts_ppr": 3.3,
+          "snap_pct": 26.7
         }
       ]
     },
-    "Michael Penix": {
-      "name": "Michael Penix",
+    "Michael Penix Jr.": {
+      "name": "Michael Penix Jr.",
       "pos": "QB",
       "team": "ATL",
       "games": [
@@ -11887,6 +13713,21 @@
           "pass_td": 1,
           "pts_ppr": 14.4,
           "snap_pct": 95.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 55,
+          "tm_off_snp": 55,
+          "rush_att": 1,
+          "rush_yd": 1,
+          "pass_cmp": 19,
+          "pass_att": 33,
+          "pass_yd": 225,
+          "pass_td": 3,
+          "pts_ppr": 23.1,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -11952,6 +13793,19 @@
           "rec_yd": 6,
           "pts_ppr": 1.6,
           "snap_pct": 76.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 34,
+          "tm_off_snp": 46,
+          "rec_tgt": 7,
+          "rec": 6,
+          "rec_yd": 70,
+          "rec_td": 1,
+          "pts_ppr": 19.0,
+          "snap_pct": 73.9
         }
       ]
     },
@@ -12074,6 +13928,17 @@
           "rec_yd": 16,
           "pts_ppr": 3.6,
           "snap_pct": 62.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 31,
+          "tm_off_snp": 60,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 2,
+          "pts_ppr": 1.2,
+          "snap_pct": 51.7
         }
       ]
     },
@@ -12095,6 +13960,14 @@
           "off_snp": 7,
           "tm_off_snp": 67,
           "snap_pct": 10.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 10,
+          "tm_off_snp": 85,
+          "snap_pct": 11.8
         }
       ]
     },
@@ -12221,6 +14094,13 @@
           "off_snp": 30,
           "tm_off_snp": 62,
           "snap_pct": 48.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 33,
+          "tm_off_snp": 60,
+          "snap_pct": 55.0
         }
       ]
     },
@@ -12301,6 +14181,20 @@
           "rush_yd": 86,
           "pts_ppr": 15.8,
           "snap_pct": 81.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 43,
+          "tm_off_snp": 55,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": -8,
+          "rush_att": 9,
+          "rush_yd": 61,
+          "pts_ppr": 7.3,
+          "snap_pct": 78.2
         }
       ]
     },
@@ -12345,6 +14239,19 @@
           "rec_yd": 65,
           "pts_ppr": 12.5,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 42,
+          "tm_off_snp": 64,
+          "rec_tgt": 14,
+          "rec": 7,
+          "rec_yd": 75,
+          "rec_td": 1,
+          "pts_ppr": 20.5,
+          "snap_pct": 65.6
         }
       ]
     },
@@ -12403,6 +14310,18 @@
           "off_snp": 3,
           "tm_off_snp": 60,
           "snap_pct": 5.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 11,
+          "tm_off_snp": 78,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 9,
+          "rush_att": 2,
+          "pts_ppr": 1.9,
+          "snap_pct": 14.1
         }
       ]
     },
@@ -12482,6 +14401,21 @@
           "rush_yd": 72,
           "pts_ppr": 11.6,
           "snap_pct": 68.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 41,
+          "tm_off_snp": 71,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 48,
+          "rec_td": 2,
+          "rush_att": 12,
+          "rush_yd": 39,
+          "pts_ppr": 24.7,
+          "snap_pct": 57.7
         }
       ]
     },
@@ -12544,6 +14478,14 @@
           "rec_yd": 44,
           "pts_ppr": 6.4,
           "snap_pct": 61.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 14,
+          "tm_off_snp": 66,
+          "rec_tgt": 2,
+          "snap_pct": 21.2
         }
       ]
     },
@@ -12615,6 +14557,18 @@
           "rec_yd": 118,
           "pts_ppr": 18.8,
           "snap_pct": 98.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 55,
+          "tm_off_snp": 55,
+          "rec_tgt": 10,
+          "rec": 4,
+          "rec_yd": 62,
+          "pts_ppr": 12.2,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -12684,6 +14638,18 @@
           "rec_td": 1,
           "pts_ppr": 29.1,
           "snap_pct": 89.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 66,
+          "tm_off_snp": 77,
+          "rec_tgt": 15,
+          "rec": 12,
+          "rec_yd": 165,
+          "pts_ppr": 28.5,
+          "snap_pct": 85.7
         }
       ]
     },
@@ -12807,8 +14773,23 @@
         }
       ]
     },
-    "Stetson Bennett": {
-      "name": "Stetson Bennett",
+    "Thomas Fidone II": {
+      "name": "Thomas Fidone II",
+      "pos": "TE",
+      "team": "NYG",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 29,
+          "tm_off_snp": 77,
+          "snap_pct": 37.7
+        }
+      ]
+    },
+    "Stetson Bennett IV": {
+      "name": "Stetson Bennett IV",
       "pos": "QB",
       "team": "LAR",
       "games": [
@@ -12964,6 +14945,18 @@
           "rec_yd": 70,
           "pts_ppr": 11.0,
           "snap_pct": 75.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 51,
+          "tm_off_snp": 61,
+          "rec_tgt": 7,
+          "rec": 7,
+          "rec_yd": 73,
+          "pts_ppr": 14.3,
+          "snap_pct": 83.6
         }
       ]
     },
@@ -13051,6 +15044,14 @@
           "rec_yd": 5,
           "pts_ppr": 1.5,
           "snap_pct": 37.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 24,
+          "tm_off_snp": 74,
+          "snap_pct": 32.4
         }
       ]
     },
@@ -13113,6 +15114,15 @@
           "rec_yd": 24,
           "pts_ppr": 4.4,
           "snap_pct": 50.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 18,
+          "tm_off_snp": 58,
+          "rush_att": 1,
+          "snap_pct": 31.0
         }
       ]
     },
@@ -13193,6 +15203,17 @@
           "rec_yd": 17,
           "pts_ppr": 2.7,
           "snap_pct": 52.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 28,
+          "tm_off_snp": 46,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 3,
+          "pts_ppr": 1.3,
+          "snap_pct": 60.9
         }
       ]
     },
@@ -13242,6 +15263,13 @@
           "off_snp": 21,
           "tm_off_snp": 61,
           "snap_pct": 34.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 25,
+          "tm_off_snp": 75,
+          "snap_pct": 33.3
         }
       ]
     },
@@ -13297,6 +15325,17 @@
           "off_snp": 13,
           "tm_off_snp": 68,
           "snap_pct": 19.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 17,
+          "tm_off_snp": 62,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 8,
+          "pts_ppr": 1.8,
+          "snap_pct": 27.4
         }
       ]
     },
@@ -13526,6 +15565,17 @@
           "rec_yd": 15,
           "pts_ppr": 3.5,
           "snap_pct": 81.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 72,
+          "tm_off_snp": 85,
+          "rec_tgt": 10,
+          "rec": 5,
+          "rec_yd": 50,
+          "pts_ppr": 10.0,
+          "snap_pct": 84.7
         }
       ]
     },
@@ -13589,6 +15639,17 @@
           "off_snp": 10,
           "tm_off_snp": 66,
           "snap_pct": 15.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 5,
+          "tm_off_snp": 63,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": -1,
+          "pts_ppr": 0.9,
+          "snap_pct": 7.9
         }
       ]
     },
@@ -13655,6 +15716,19 @@
           "rec_yd": 8,
           "pts_ppr": 2.8,
           "snap_pct": 39.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 39,
+          "tm_off_snp": 63,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 7,
+          "rec_td": 2,
+          "pts_ppr": 14.7,
+          "snap_pct": 61.9
         }
       ]
     },
@@ -13717,6 +15791,16 @@
           "off_snp": 10,
           "tm_off_snp": 67,
           "snap_pct": 14.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 5,
+          "tm_off_snp": 68,
+          "rush_att": 1,
+          "rush_yd": 4,
+          "pts_ppr": 0.4,
+          "snap_pct": 7.4
         }
       ]
     },
@@ -13738,6 +15822,13 @@
           "off_snp": 4,
           "tm_off_snp": 66,
           "snap_pct": 6.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 4,
+          "tm_off_snp": 79,
+          "snap_pct": 5.1
         }
       ]
     },
@@ -13820,6 +15911,13 @@
           "off_snp": 1,
           "tm_off_snp": 45,
           "snap_pct": 2.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 4,
+          "tm_off_snp": 72,
+          "snap_pct": 5.6
         }
       ]
     },
@@ -13882,6 +15980,17 @@
           "rec_yd": 14,
           "pts_ppr": 3.4,
           "snap_pct": 65.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 28,
+          "tm_off_snp": 77,
+          "rec_tgt": 2,
+          "rush_att": 1,
+          "rush_yd": 20,
+          "pts_ppr": 2.0,
+          "snap_pct": 36.4
         }
       ]
     },
@@ -13952,11 +16061,24 @@
           "rec_yd": 24,
           "pts_ppr": 7.4,
           "snap_pct": 91.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 55,
+          "tm_off_snp": 62,
+          "rec_tgt": 8,
+          "rec": 5,
+          "rec_yd": 69,
+          "rec_td": 1,
+          "pts_ppr": 17.9,
+          "snap_pct": 88.7
         }
       ]
     },
-    "Marvin Harrison": {
-      "name": "Marvin Harrison",
+    "Marvin Harrison Jr.": {
+      "name": "Marvin Harrison Jr.",
       "pos": "WR",
       "team": "HOU",
       "games": [
@@ -14005,6 +16127,17 @@
           "rec_td": 1,
           "pts_ppr": 8.2,
           "snap_pct": 65.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 12,
+          "tm_off_snp": 63,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 34,
+          "pts_ppr": 6.4,
+          "snap_pct": 19.0
         }
       ]
     },
@@ -14040,6 +16173,14 @@
           "off_snp": 4,
           "tm_off_snp": 75,
           "snap_pct": 5.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 18,
+          "tm_off_snp": 68,
+          "snap_pct": 26.5
         }
       ]
     },
@@ -14104,6 +16245,22 @@
           "pass_td": 3,
           "pts_ppr": 25.7,
           "snap_pct": 94.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 46,
+          "tm_off_snp": 77,
+          "rush_att": 3,
+          "rush_yd": 4,
+          "pass_cmp": 14,
+          "pass_att": 26,
+          "pass_yd": 152,
+          "pass_td": 1,
+          "pass_int": 2,
+          "pts_ppr": 8.5,
+          "snap_pct": 59.7
         }
       ]
     },
@@ -14158,6 +16315,18 @@
           "rec_yd": 45,
           "pts_ppr": 9.5,
           "snap_pct": 45.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 59,
+          "tm_off_snp": 83,
+          "rec_tgt": 11,
+          "rec": 8,
+          "rec_yd": 82,
+          "pts_ppr": 16.2,
+          "snap_pct": 71.1
         }
       ]
     },
@@ -14172,6 +16341,14 @@
           "off_snp": 19,
           "tm_off_snp": 76,
           "snap_pct": 25.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 23,
+          "tm_off_snp": 57,
+          "snap_pct": 40.4
         }
       ]
     },
@@ -14273,6 +16450,30 @@
           "rec_yd": 43,
           "pts_ppr": 7.3,
           "snap_pct": 30.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 36,
+          "tm_off_snp": 71,
+          "snap_pct": 50.7
+        }
+      ]
+    },
+    "Trevor Etienne": {
+      "name": "Trevor Etienne",
+      "pos": "RB",
+      "team": "CAR",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 3,
+          "tm_off_snp": 79,
+          "rush_att": 1,
+          "rush_yd": -1,
+          "pts_ppr": -0.1,
+          "snap_pct": 3.8
         }
       ]
     },
@@ -14398,6 +16599,21 @@
           "pass_int": 1,
           "pts_ppr": 17.2,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 62,
+          "tm_off_snp": 62,
+          "rush_att": 5,
+          "rush_yd": 28,
+          "pass_cmp": 21,
+          "pass_att": 29,
+          "pass_yd": 264,
+          "pass_td": 1,
+          "pts_ppr": 17.4,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -14457,6 +16673,17 @@
           "rec_yd": 15,
           "pts_ppr": 3.5,
           "snap_pct": 18.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 19,
+          "tm_off_snp": 55,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 9,
+          "pts_ppr": 0.9,
+          "snap_pct": 34.5
         }
       ]
     },
@@ -14594,6 +16821,19 @@
           "tm_off_snp": 45,
           "rec_tgt": 3,
           "snap_pct": 42.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 36,
+          "tm_off_snp": 72,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 9,
+          "rec_td": 1,
+          "pts_ppr": 8.9,
+          "snap_pct": 50.0
         }
       ]
     },
@@ -14648,6 +16888,18 @@
           "tm_off_snp": 60,
           "rec_tgt": 2,
           "snap_pct": 33.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 36,
+          "tm_off_snp": 78,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 35,
+          "pts_ppr": 7.5,
+          "snap_pct": 46.2
         }
       ]
     },
@@ -14759,6 +17011,18 @@
           "off_snp": 22,
           "tm_off_snp": 60,
           "snap_pct": 36.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 47,
+          "tm_off_snp": 62,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 22,
+          "pts_ppr": 3.2,
+          "snap_pct": 75.8
         }
       ]
     },
@@ -14852,11 +17116,19 @@
           "off_snp": 13,
           "tm_off_snp": 60,
           "snap_pct": 21.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 13,
+          "tm_off_snp": 66,
+          "snap_pct": 19.7
         }
       ]
     },
-    "Kenneth Walker": {
-      "name": "Kenneth Walker",
+    "Kenneth Walker III": {
+      "name": "Kenneth Walker III",
       "pos": "RB",
       "team": "KC",
       "games": [
@@ -14920,6 +17192,21 @@
           "rush_td": 2,
           "pts_ppr": 30.9,
           "snap_pct": 75.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 45,
+          "tm_off_snp": 61,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 11,
+          "rush_att": 19,
+          "rush_yd": 128,
+          "rush_td": 2,
+          "pts_ppr": 27.9,
+          "snap_pct": 73.8
         }
       ]
     },
@@ -14986,11 +17273,23 @@
           "rec_yd": 7,
           "pts_ppr": 3.7,
           "snap_pct": 70.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 49,
+          "tm_off_snp": 68,
+          "rec_tgt": 8,
+          "rec": 7,
+          "rec_yd": 38,
+          "pts_ppr": 10.8,
+          "snap_pct": 72.1
         }
       ]
     },
-    "Odell Beckham": {
-      "name": "Odell Beckham",
+    "Odell Beckham Jr.": {
+      "name": "Odell Beckham Jr.",
       "pos": "WR",
       "team": "MIN",
       "games": [
@@ -15119,6 +17418,17 @@
           "tm_off_snp": 60,
           "rec_tgt": 1,
           "snap_pct": 8.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 9,
+          "tm_off_snp": 61,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 27,
+          "pts_ppr": 4.7,
+          "snap_pct": 14.8
         }
       ]
     },
@@ -15175,6 +17485,31 @@
           "off_snp": 6,
           "tm_off_snp": 82,
           "snap_pct": 7.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 27,
+          "tm_off_snp": 58,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 15,
+          "pts_ppr": 3.5,
+          "snap_pct": 46.6
+        }
+      ]
+    },
+    "Anthony Tyus III": {
+      "name": "Anthony Tyus III",
+      "pos": "RB",
+      "team": "CAR",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 2,
+          "tm_off_snp": 79,
+          "snap_pct": 2.5
         }
       ]
     },
@@ -15195,6 +17530,21 @@
           "rush_yd": 14,
           "pts_ppr": 3.2,
           "snap_pct": 77.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 61,
+          "tm_off_snp": 64,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 15,
+          "rush_att": 12,
+          "rush_yd": 35,
+          "rush_td": 1,
+          "pts_ppr": 15.0,
+          "snap_pct": 95.3
         }
       ]
     },
@@ -15270,6 +17620,18 @@
           "rush_td": 2,
           "pts_ppr": 16.7,
           "snap_pct": 44.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 30,
+          "tm_off_snp": 75,
+          "rec_tgt": 1,
+          "rush_att": 8,
+          "rush_yd": 10,
+          "pts_ppr": 1.0,
+          "snap_pct": 40.0
         }
       ]
     },
@@ -15412,6 +17774,18 @@
           "rush_yd": 1,
           "pts_ppr": 15.2,
           "snap_pct": 45.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 31,
+          "tm_off_snp": 63,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 107,
+          "rec_td": 1,
+          "pts_ppr": 20.7,
+          "snap_pct": 49.2
         }
       ]
     },
@@ -15524,6 +17898,18 @@
           "rec_yd": 8,
           "pts_ppr": 1.8,
           "snap_pct": 42.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 57,
+          "tm_off_snp": 77,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 3,
+          "pts_ppr": 2.3,
+          "snap_pct": 74.0
         }
       ]
     },
@@ -15580,11 +17966,23 @@
           "rec_td": 2,
           "pts_ppr": 45.2,
           "snap_pct": 89.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 60,
+          "tm_off_snp": 79,
+          "rec_tgt": 9,
+          "rec": 6,
+          "rec_yd": 86,
+          "pts_ppr": 14.6,
+          "snap_pct": 75.9
         }
       ]
     },
-    "Omar Cooper": {
-      "name": "Omar Cooper",
+    "Omar Cooper Jr.": {
+      "name": "Omar Cooper Jr.",
       "pos": "WR",
       "team": "NYJ",
       "games": [
@@ -15599,6 +17997,19 @@
           "rec_yd": 30,
           "pts_ppr": 4.0,
           "snap_pct": 7.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 51,
+          "tm_off_snp": 62,
+          "rec_tgt": 7,
+          "rec": 6,
+          "rec_yd": 103,
+          "rec_td": 1,
+          "pts_ppr": 22.3,
+          "snap_pct": 82.3
         }
       ]
     },
@@ -15703,6 +18114,20 @@
           "pass_td": 1,
           "pts_ppr": 7.9,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 60,
+          "tm_off_snp": 60,
+          "rush_att": 4,
+          "rush_yd": 2,
+          "pass_cmp": 17,
+          "pass_att": 27,
+          "pass_yd": 107,
+          "pts_ppr": 4.5,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -15758,6 +18183,18 @@
           "rec_yd": 35,
           "pts_ppr": 8.5,
           "snap_pct": 65.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 41,
+          "tm_off_snp": 67,
+          "rec_tgt": 7,
+          "rec": 6,
+          "rec_yd": 44,
+          "rec_td": 1,
+          "pts_ppr": 16.4,
+          "snap_pct": 61.2
         }
       ]
     },
@@ -15832,11 +18269,24 @@
           "rush_yd": 18,
           "pts_ppr": 5.8,
           "snap_pct": 36.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 11,
+          "tm_off_snp": 74,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 7,
+          "rush_att": 2,
+          "rush_yd": 17,
+          "pts_ppr": 3.4,
+          "snap_pct": 14.9
         }
       ]
     },
-    "Travis Etienne": {
-      "name": "Travis Etienne",
+    "Travis Etienne Jr.": {
+      "name": "Travis Etienne Jr.",
       "pos": "RB",
       "team": "NO",
       "games": [
@@ -16053,6 +18503,19 @@
           "rush_att": 2,
           "pts_ppr": 9.8,
           "snap_pct": 54.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 11,
+          "tm_off_snp": 46,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 7,
+          "rush_att": 1,
+          "rush_yd": 1,
+          "pts_ppr": 1.8,
+          "snap_pct": 23.9
         }
       ]
     },
@@ -16166,6 +18629,17 @@
           "rush_yd": -5,
           "pts_ppr": -0.5,
           "snap_pct": 4.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 19,
+          "tm_off_snp": 72,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 5,
+          "pts_ppr": 1.5,
+          "snap_pct": 26.4
         }
       ]
     },
@@ -16220,11 +18694,24 @@
           "rec_yd": 10,
           "pts_ppr": 2.0,
           "snap_pct": 26.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 18,
+          "tm_off_snp": 61,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 18,
+          "rush_att": 3,
+          "rush_yd": 6,
+          "pts_ppr": 4.4,
+          "snap_pct": 29.5
         }
       ]
     },
-    "Brian Thomas": {
-      "name": "Brian Thomas",
+    "Brian Thomas Jr.": {
+      "name": "Brian Thomas Jr.",
       "pos": "WR",
       "team": "JAX",
       "games": [
@@ -16283,6 +18770,14 @@
           "tm_off_snp": 72,
           "rec_tgt": 3,
           "snap_pct": 51.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 15,
+          "tm_off_snp": 71,
+          "rec_tgt": 2,
+          "snap_pct": 21.1
         }
       ]
     },
@@ -16415,11 +18910,22 @@
           "rec_td": 1,
           "pts_ppr": 15.1,
           "snap_pct": 85.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 39,
+          "tm_off_snp": 64,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 9,
+          "pts_ppr": 1.9,
+          "snap_pct": 60.9
         }
       ]
     },
-    "Carlos Washington": {
-      "name": "Carlos Washington",
+    "Carlos Washington Jr.": {
+      "name": "Carlos Washington Jr.",
       "pos": "RB",
       "team": "MIA",
       "games": [
@@ -16506,6 +19012,18 @@
           "off_snp": 11,
           "tm_off_snp": 63,
           "snap_pct": 17.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 39,
+          "tm_off_snp": 85,
+          "rec_tgt": 5,
+          "rec": 1,
+          "rec_yd": 13,
+          "pts_ppr": 2.3,
+          "snap_pct": 45.9
         }
       ]
     },
@@ -16528,6 +19046,17 @@
           "off_snp": 1,
           "tm_off_snp": 75,
           "snap_pct": 1.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 2,
+          "tm_off_snp": 79,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 27,
+          "pts_ppr": 3.7,
+          "snap_pct": 2.5
         }
       ]
     },
@@ -16593,6 +19122,25 @@
           "pass_td": 1,
           "pts_ppr": 13.9,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 74,
+          "tm_off_snp": 74,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": -3,
+          "rush_att": 4,
+          "rush_yd": 39,
+          "pass_cmp": 22,
+          "pass_att": 43,
+          "pass_yd": 164,
+          "pass_td": 1,
+          "pass_int": 2,
+          "pts_ppr": 13.2,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -16645,6 +19193,17 @@
           "tm_off_snp": 70,
           "rec_tgt": 1,
           "snap_pct": 35.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 13,
+          "tm_off_snp": 62,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 9,
+          "pts_ppr": 1.9,
+          "snap_pct": 21.0
         }
       ]
     },
@@ -16663,6 +19222,13 @@
           "rec_yd": 29,
           "pts_ppr": 4.9,
           "snap_pct": 17.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 3,
+          "tm_off_snp": 72,
+          "snap_pct": 4.2
         }
       ]
     },
@@ -16714,6 +19280,13 @@
           "rec_yd": 13,
           "pts_ppr": 2.3,
           "snap_pct": 65.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 16,
+          "tm_off_snp": 55,
+          "snap_pct": 29.1
         }
       ]
     },
@@ -16778,6 +19351,13 @@
           "tm_off_snp": 63,
           "rec_tgt": 1,
           "snap_pct": 71.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 33,
+          "tm_off_snp": 46,
+          "snap_pct": 71.7
         }
       ]
     },
@@ -16842,6 +19422,14 @@
           "rec_yd": 62,
           "pts_ppr": 11.2,
           "snap_pct": 80.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 17,
+          "tm_off_snp": 57,
+          "rec_tgt": 1,
+          "snap_pct": 29.8
         }
       ]
     },
@@ -16898,11 +19486,23 @@
           "rec_yd": 62,
           "pts_ppr": 12.2,
           "snap_pct": 58.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 7,
+          "tm_off_snp": 67,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 27,
+          "pts_ppr": 3.7,
+          "snap_pct": 10.4
         }
       ]
     },
-    "Aaron Jones": {
-      "name": "Aaron Jones",
+    "Aaron Jones Sr.": {
+      "name": "Aaron Jones Sr.",
       "pos": "RB",
       "team": "MIN",
       "games": [
@@ -17088,6 +19688,17 @@
           "rec_yd": 18,
           "pts_ppr": 3.8,
           "snap_pct": 36.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 59,
+          "tm_off_snp": 79,
+          "rec_tgt": 13,
+          "rec": 6,
+          "rec_yd": 97,
+          "pts_ppr": 15.7,
+          "snap_pct": 74.7
         }
       ]
     },
@@ -17148,6 +19759,17 @@
           "rec_yd": 70,
           "pts_ppr": 12.0,
           "snap_pct": 49.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 41,
+          "tm_off_snp": 72,
+          "rec_tgt": 8,
+          "rec": 5,
+          "rec_yd": 47,
+          "pts_ppr": 9.7,
+          "snap_pct": 56.9
         }
       ]
     },
@@ -17186,6 +19808,18 @@
           "rec_yd": 24,
           "pts_ppr": 5.4,
           "snap_pct": 58.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 34,
+          "tm_off_snp": 62,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 33,
+          "pts_ppr": 7.3,
+          "snap_pct": 54.8
         }
       ]
     },
@@ -17261,6 +19895,13 @@
           "rush_yd": 59,
           "pts_ppr": 7.1,
           "snap_pct": 62.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 6,
+          "tm_off_snp": 77,
+          "snap_pct": 7.8
         }
       ]
     },
@@ -17328,6 +19969,18 @@
           "rec_yd": 65,
           "pts_ppr": 10.5,
           "snap_pct": 40.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 34,
+          "tm_off_snp": 63,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 10,
+          "pts_ppr": 3.0,
+          "snap_pct": 54.0
         }
       ]
     },
@@ -17435,6 +20088,13 @@
           "off_snp": 11,
           "tm_off_snp": 82,
           "snap_pct": 13.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 8,
+          "tm_off_snp": 58,
+          "snap_pct": 13.8
         }
       ]
     },
@@ -17491,6 +20151,13 @@
           "rec_yd": 9,
           "pts_ppr": 1.9,
           "snap_pct": 40.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 14,
+          "tm_off_snp": 66,
+          "snap_pct": 21.2
         }
       ]
     },
@@ -17589,6 +20256,17 @@
           "rush_yd": 11,
           "pts_ppr": 3.2,
           "snap_pct": 21.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 10,
+          "tm_off_snp": 77,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 25,
+          "pts_ppr": 5.5,
+          "snap_pct": 13.0
         }
       ]
     },
@@ -17659,6 +20337,18 @@
           "rec_yd": 20,
           "pts_ppr": 5.0,
           "snap_pct": 95.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 79,
+          "tm_off_snp": 85,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 16,
+          "pts_ppr": 4.6,
+          "snap_pct": 92.9
         }
       ]
     },
@@ -17714,6 +20404,19 @@
           "rush_td": 1,
           "pts_ppr": 9.0,
           "snap_pct": 31.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 32,
+          "tm_off_snp": 72,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rush_att": 20,
+          "rush_yd": 70,
+          "pts_ppr": 9.0,
+          "snap_pct": 44.4
         }
       ]
     },
@@ -17763,6 +20466,17 @@
           "rec_yd": 3,
           "pts_ppr": 1.3,
           "snap_pct": 59.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 17,
+          "tm_off_snp": 68,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 37,
+          "pts_ppr": 4.7,
+          "snap_pct": 25.0
         }
       ]
     },
@@ -17842,6 +20556,17 @@
           "rush_td": 1,
           "pts_ppr": 17.5,
           "snap_pct": 70.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 41,
+          "tm_off_snp": 68,
+          "rush_att": 14,
+          "rush_yd": 36,
+          "pts_ppr": 3.6,
+          "snap_pct": 60.3
         }
       ]
     },
@@ -17898,6 +20623,17 @@
           "rec_td": 1,
           "pts_ppr": 18.1,
           "snap_pct": 36.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 25,
+          "tm_off_snp": 68,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 12,
+          "pts_ppr": 2.2,
+          "snap_pct": 36.8
         }
       ]
     },
@@ -17979,6 +20715,20 @@
           "rush_td": 1,
           "pts_ppr": 19.6,
           "snap_pct": 73.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 42,
+          "tm_off_snp": 58,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 17,
+          "rush_att": 10,
+          "rush_yd": 50,
+          "pts_ppr": 9.7,
+          "snap_pct": 72.4
         }
       ]
     },
@@ -18041,6 +20791,18 @@
           "rec_yd": 16,
           "pts_ppr": 2.6,
           "snap_pct": 82.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 2,
+          "tm_off_snp": 68,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 42,
+          "rec_td": 1,
+          "pts_ppr": 11.2,
+          "snap_pct": 2.9
         }
       ]
     },
@@ -18152,6 +20914,18 @@
           "rush_yd": 1,
           "pts_ppr": 21.5,
           "snap_pct": 68.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 57,
+          "tm_off_snp": 79,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 11,
+          "pts_ppr": 3.1,
+          "snap_pct": 72.2
         }
       ]
     },
@@ -18202,6 +20976,13 @@
           "off_snp": 11,
           "tm_off_snp": 60,
           "snap_pct": 18.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 6,
+          "tm_off_snp": 66,
+          "snap_pct": 9.1
         }
       ]
     },
@@ -18232,8 +21013,8 @@
         }
       ]
     },
-    "Theo Wease": {
-      "name": "Theo Wease",
+    "Theo Wease Jr.": {
+      "name": "Theo Wease Jr.",
       "pos": "WR",
       "team": "LAC",
       "games": [
@@ -18247,6 +21028,17 @@
           "rec_yd": 16,
           "pts_ppr": 2.6,
           "snap_pct": 64.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 32,
+          "tm_off_snp": 68,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 21,
+          "pts_ppr": 4.1,
+          "snap_pct": 47.1
         }
       ]
     },
@@ -18283,6 +21075,13 @@
           "off_snp": 10,
           "tm_off_snp": 61,
           "snap_pct": 16.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 17,
+          "tm_off_snp": 75,
+          "snap_pct": 22.7
         }
       ]
     },
@@ -18512,6 +21311,34 @@
           "rush_td": 1,
           "pts_ppr": 36.8,
           "snap_pct": 86.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 59,
+          "tm_off_snp": 79,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 28,
+          "rush_att": 14,
+          "rush_yd": 50,
+          "pts_ppr": 9.8,
+          "snap_pct": 74.7
+        }
+      ]
+    },
+    "Spencer Rattler": {
+      "name": "Spencer Rattler",
+      "pos": "QB",
+      "team": "NO",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 2,
+          "tm_off_snp": 72,
+          "snap_pct": 2.8
         }
       ]
     },
@@ -18538,6 +21365,21 @@
           "rec_yd": 64,
           "pts_ppr": 8.4,
           "snap_pct": 50.0
+        }
+      ]
+    },
+    "Carson Steele": {
+      "name": "Carson Steele",
+      "pos": "RB",
+      "team": "",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4
         }
       ]
     },
@@ -18604,11 +21446,24 @@
           "rec_td": 1,
           "pts_ppr": 7.7,
           "snap_pct": 70.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 58,
+          "tm_off_snp": 68,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 59,
+          "rec_td": 1,
+          "pts_ppr": 15.9,
+          "snap_pct": 85.3
         }
       ]
     },
-    "Frank Gore": {
-      "name": "Frank Gore",
+    "Frank Gore Jr.": {
+      "name": "Frank Gore Jr.",
       "pos": "RB",
       "team": "BUF",
       "games": [
@@ -18656,6 +21511,13 @@
           "off_snp": 6,
           "tm_off_snp": 72,
           "snap_pct": 8.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 11,
+          "tm_off_snp": 71,
+          "snap_pct": 15.5
         }
       ]
     },
@@ -18697,6 +21559,13 @@
           "off_snp": 8,
           "tm_off_snp": 60,
           "snap_pct": 13.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 10,
+          "tm_off_snp": 61,
+          "snap_pct": 16.4
         }
       ]
     },
@@ -18749,6 +21618,14 @@
           "rec_yd": 7,
           "pts_ppr": 1.7,
           "snap_pct": 66.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 42,
+          "tm_off_snp": 72,
+          "rec_tgt": 1,
+          "snap_pct": 58.3
         }
       ]
     },
@@ -18909,6 +21786,13 @@
           "rec_yd": 20,
           "pts_ppr": 5.0,
           "snap_pct": 49.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 18,
+          "tm_off_snp": 75,
+          "snap_pct": 24.0
         }
       ]
     },
@@ -18993,6 +21877,13 @@
           "tm_off_snp": 63,
           "rec_tgt": 1,
           "snap_pct": 31.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 5,
+          "tm_off_snp": 85,
+          "snap_pct": 5.9
         }
       ]
     },
@@ -19060,6 +21951,18 @@
           "rec_yd": 28,
           "pts_ppr": 4.8,
           "snap_pct": 72.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 41,
+          "tm_off_snp": 57,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4,
+          "snap_pct": 71.9
         }
       ]
     },
@@ -19088,6 +21991,17 @@
           "off_snp": 14,
           "tm_off_snp": 70,
           "snap_pct": 20.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 10,
+          "tm_off_snp": 62,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 12,
+          "pts_ppr": 2.2,
+          "snap_pct": 16.1
         }
       ]
     },
@@ -19140,6 +22054,13 @@
           "tm_off_snp": 62,
           "pts_ppr": 1.0,
           "snap_pct": 1.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 5,
+          "tm_off_snp": 67,
+          "snap_pct": 7.5
         }
       ]
     },
@@ -19196,6 +22117,17 @@
           "off_snp": 10,
           "tm_off_snp": 64,
           "snap_pct": 15.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 7,
+          "tm_off_snp": 55,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 6,
+          "pts_ppr": 1.6,
+          "snap_pct": 12.7
         }
       ]
     },
@@ -19255,6 +22187,27 @@
           "rush_yd": -11,
           "pts_ppr": 18.8,
           "snap_pct": 88.7
+        }
+      ]
+    },
+    "Tanner McKee": {
+      "name": "Tanner McKee",
+      "pos": "QB",
+      "team": "PHI",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 64,
+          "tm_off_snp": 64,
+          "rush_att": 1,
+          "pass_cmp": 26,
+          "pass_att": 45,
+          "pass_yd": 215,
+          "pass_td": 1,
+          "pts_ppr": 12.6,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -19356,6 +22309,17 @@
           "rush_yd": -4,
           "pts_ppr": 5.0,
           "snap_pct": 74.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 56,
+          "tm_off_snp": 68,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 57,
+          "pts_ppr": 6.7,
+          "snap_pct": 82.4
         }
       ]
     },
@@ -19437,6 +22401,13 @@
           "rec_yd": 74,
           "pts_ppr": 10.4,
           "snap_pct": 72.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 9,
+          "tm_off_snp": 62,
+          "snap_pct": 14.5
         }
       ]
     },
@@ -19479,6 +22450,13 @@
           "off_snp": 5,
           "tm_off_snp": 60,
           "snap_pct": 8.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 1,
+          "tm_off_snp": 79,
+          "snap_pct": 1.3
         }
       ]
     },
@@ -19545,6 +22523,13 @@
           "rec_td": 1,
           "pts_ppr": 7.7,
           "snap_pct": 17.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 9,
+          "tm_off_snp": 68,
+          "snap_pct": 13.2
         }
       ]
     },
@@ -19606,6 +22591,19 @@
           "rush_yd": 4,
           "pts_ppr": 14.4,
           "snap_pct": 91.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 74,
+          "tm_off_snp": 79,
+          "rec_tgt": 12,
+          "rec": 11,
+          "rec_yd": 87,
+          "rec_td": 1,
+          "pts_ppr": 25.7,
+          "snap_pct": 93.7
         }
       ]
     },
@@ -19691,11 +22689,24 @@
           "rec_yd": 46,
           "pts_ppr": 8.6,
           "snap_pct": 91.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 42,
+          "tm_off_snp": 72,
+          "rec_tgt": 7,
+          "rec": 4,
+          "rec_yd": 43,
+          "rec_td": 1,
+          "pts_ppr": 14.3,
+          "snap_pct": 58.3
         }
       ]
     },
-    "Mike Washington": {
-      "name": "Mike Washington",
+    "Mike Washington Jr.": {
+      "name": "Mike Washington Jr.",
       "pos": "RB",
       "team": "LV",
       "games": [
@@ -19756,13 +22767,26 @@
           "rush_yd": 5,
           "pts_ppr": 2.0,
           "snap_pct": 8.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 23,
+          "tm_off_snp": 66,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 7,
+          "rush_att": 9,
+          "rush_yd": 43,
+          "pts_ppr": 6.0,
+          "snap_pct": 34.8
         }
       ]
     },
     "Chris Myarick": {
       "name": "Chris Myarick",
       "pos": "TE",
-      "team": "LV",
+      "team": "",
       "games": [
         {
           "week": 1,
@@ -19869,6 +22893,21 @@
           "pass_int": 1,
           "pts_ppr": 31.5,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 68,
+          "tm_off_snp": 68,
+          "rush_att": 5,
+          "rush_yd": 1,
+          "pass_cmp": 23,
+          "pass_att": 33,
+          "pass_yd": 255,
+          "pass_td": 2,
+          "pts_ppr": 18.3,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -19959,6 +22998,34 @@
           "rec_yd": 47,
           "pts_ppr": 7.7,
           "snap_pct": 84.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 71,
+          "tm_off_snp": 83,
+          "rec_tgt": 8,
+          "rec": 4,
+          "rec_yd": 40,
+          "rush_att": 1,
+          "rush_yd": 7,
+          "pts_ppr": 8.7,
+          "snap_pct": 85.5
+        }
+      ]
+    },
+    "Anthony Gould": {
+      "name": "Anthony Gould",
+      "pos": "WR",
+      "team": "IND",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 1,
+          "tm_off_snp": 83,
+          "snap_pct": 1.2
         }
       ]
     },
@@ -20020,6 +23087,13 @@
           "off_snp": 1,
           "tm_off_snp": 64,
           "snap_pct": 1.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 4,
+          "tm_off_snp": 46,
+          "snap_pct": 8.7
         }
       ]
     },
@@ -20062,11 +23136,24 @@
           "rec_yd": 72,
           "pts_ppr": 11.2,
           "snap_pct": 21.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 12,
+          "tm_off_snp": 68,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 24,
+          "rush_att": 1,
+          "rush_yd": 3,
+          "pts_ppr": 4.7,
+          "snap_pct": 17.6
         }
       ]
     },
-    "LeQuint Allen": {
-      "name": "LeQuint Allen",
+    "LeQuint Allen Jr.": {
+      "name": "LeQuint Allen Jr.",
       "pos": "RB",
       "team": "JAX",
       "games": [
@@ -20110,6 +23197,16 @@
           "tm_off_snp": 72,
           "rec_tgt": 2,
           "snap_pct": 18.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 8,
+          "tm_off_snp": 71,
+          "rush_att": 1,
+          "rush_yd": 1,
+          "pts_ppr": 0.1,
+          "snap_pct": 11.3
         }
       ]
     },
@@ -20170,6 +23267,19 @@
           "rush_yd": 13,
           "pts_ppr": 14.6,
           "snap_pct": 81.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 50,
+          "tm_off_snp": 57,
+          "rec_tgt": 11,
+          "rec": 6,
+          "rec_yd": 66,
+          "rush_att": 1,
+          "rush_yd": 1,
+          "pts_ppr": 12.7,
+          "snap_pct": 87.7
         }
       ]
     },
@@ -20234,8 +23344,8 @@
         }
       ]
     },
-    "Harold Fannin": {
-      "name": "Harold Fannin",
+    "Harold Fannin Jr.": {
+      "name": "Harold Fannin Jr.",
       "pos": "TE",
       "team": "CLE",
       "games": [
@@ -20297,13 +23407,25 @@
           "rec_yd": 4,
           "pts_ppr": 1.4,
           "snap_pct": 92.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 56,
+          "tm_off_snp": 62,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 9,
+          "pts_ppr": 1.9,
+          "snap_pct": 90.3
         }
       ]
     },
     "Ryan Miller": {
       "name": "Ryan Miller",
       "pos": "WR",
-      "team": "",
+      "team": "NE",
       "games": [
         {
           "week": 2,
@@ -20388,6 +23510,13 @@
           "off_snp": 21,
           "tm_off_snp": 61,
           "snap_pct": 34.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 9,
+          "tm_off_snp": 75,
+          "snap_pct": 12.0
         }
       ]
     },
@@ -20458,6 +23587,18 @@
           "rec_td": 1,
           "pts_ppr": 13.6,
           "snap_pct": 91.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 58,
+          "tm_off_snp": 62,
+          "rec_tgt": 5,
+          "rec": 1,
+          "rec_yd": 15,
+          "pts_ppr": 2.5,
+          "snap_pct": 93.5
         }
       ]
     },
@@ -20524,6 +23665,18 @@
           "rec_yd": 53,
           "pts_ppr": 11.3,
           "snap_pct": 74.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 27,
+          "tm_off_snp": 46,
+          "rec_tgt": 7,
+          "rec": 3,
+          "rec_yd": 22,
+          "pts_ppr": 5.2,
+          "snap_pct": 58.7
         }
       ]
     },
@@ -20613,6 +23766,17 @@
           "rec_yd": 11,
           "pts_ppr": 2.1,
           "snap_pct": 39.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 31,
+          "tm_off_snp": 57,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 40,
+          "pts_ppr": 8.0,
+          "snap_pct": 54.4
         }
       ]
     },
@@ -20663,6 +23827,13 @@
           "rec_yd": 4,
           "pts_ppr": 1.4,
           "snap_pct": 26.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 30,
+          "tm_off_snp": 83,
+          "snap_pct": 36.1
         }
       ]
     },
@@ -20788,6 +23959,18 @@
           "rec_td": 1,
           "pts_ppr": 9.8,
           "snap_pct": 80.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 46,
+          "tm_off_snp": 60,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 19,
+          "pts_ppr": 3.9,
+          "snap_pct": 76.7
         }
       ]
     },
@@ -20822,6 +24005,19 @@
           "rush_yd": 8,
           "pts_ppr": 0.8,
           "snap_pct": 8.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 32,
+          "tm_off_snp": 72,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 18,
+          "rush_att": 15,
+          "rush_yd": 80,
+          "pts_ppr": 11.8,
+          "snap_pct": 44.4
         }
       ]
     },
@@ -20889,6 +24085,21 @@
           "rush_td": 2,
           "pts_ppr": 25.9,
           "snap_pct": 84.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 74,
+          "tm_off_snp": 79,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 1,
+          "rush_att": 28,
+          "rush_yd": 120,
+          "rush_td": 1,
+          "pts_ppr": 19.1,
+          "snap_pct": 93.7
         }
       ]
     },
@@ -20957,6 +24168,18 @@
           "rec_yd": 26,
           "pts_ppr": 6.6,
           "snap_pct": 95.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 66,
+          "tm_off_snp": 72,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 42,
+          "pts_ppr": 7.2,
+          "snap_pct": 91.7
         }
       ]
     },
@@ -20972,6 +24195,14 @@
           "tm_off_snp": 64,
           "rec_tgt": 2,
           "snap_pct": 60.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 30,
+          "tm_off_snp": 68,
+          "rec_tgt": 1,
+          "snap_pct": 44.1
         }
       ]
     },
@@ -21011,6 +24242,18 @@
           "rec_yd": 37,
           "pts_ppr": 4.7,
           "snap_pct": 76.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 45,
+          "tm_off_snp": 68,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 20,
+          "pts_ppr": 5.0,
+          "snap_pct": 66.2
         }
       ]
     },
@@ -21057,7 +24300,7 @@
     "Kevin Austin": {
       "name": "Kevin Austin",
       "pos": "WR",
-      "team": "NO",
+      "team": "",
       "games": [
         {
           "week": 1,
@@ -21096,7 +24339,7 @@
     "Najee Harris": {
       "name": "Najee Harris",
       "pos": "RB",
-      "team": "NYG",
+      "team": "",
       "games": [
         {
           "week": 2,
@@ -21140,6 +24383,14 @@
           "rush_yd": 9,
           "pts_ppr": 2.4,
           "snap_pct": 18.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 4,
+          "rush_yd": 2,
+          "pts_ppr": 0.2
         }
       ]
     },
@@ -21208,6 +24459,18 @@
           "rec_yd": 2,
           "pts_ppr": 1.2,
           "snap_pct": 65.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 52,
+          "tm_off_snp": 66,
+          "rec_tgt": 9,
+          "rec": 7,
+          "rec_yd": 95,
+          "pts_ppr": 16.5,
+          "snap_pct": 78.8
         }
       ]
     },
@@ -21262,6 +24525,20 @@
           "rush_yd": 6,
           "pts_ppr": 9.0,
           "snap_pct": 39.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 31,
+          "tm_off_snp": 77,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 34,
+          "rush_att": 13,
+          "rush_yd": 51,
+          "rush_td": 1,
+          "pts_ppr": 14.5,
+          "snap_pct": 40.3
         }
       ]
     },
@@ -21324,6 +24601,18 @@
           "rec_yd": 34,
           "pts_ppr": 5.4,
           "snap_pct": 80.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 77,
+          "tm_off_snp": 83,
+          "rec_tgt": 5,
+          "rec": 2,
+          "rec_yd": 21,
+          "pts_ppr": 4.1,
+          "snap_pct": 92.8
         }
       ]
     },
@@ -21362,6 +24651,21 @@
           "pass_int": 1,
           "pts_ppr": 8.7,
           "snap_pct": 86.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 77,
+          "tm_off_snp": 77,
+          "rush_att": 4,
+          "rush_yd": 3,
+          "pass_cmp": 30,
+          "pass_att": 36,
+          "pass_yd": 305,
+          "pass_td": 1,
+          "pts_ppr": 16.5,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -21519,6 +24823,49 @@
           "rush_yd": 12,
           "pts_ppr": 2.6,
           "snap_pct": 26.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 19,
+          "tm_off_snp": 72,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 35,
+          "rec_td": 1,
+          "rush_att": 7,
+          "rush_yd": 34,
+          "pts_ppr": 14.9,
+          "snap_pct": 26.4
+        }
+      ]
+    },
+    "Brandon Johnson": {
+      "name": "Brandon Johnson",
+      "pos": "WR",
+      "team": "PIT",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 3,
+          "tm_off_snp": 79,
+          "snap_pct": 3.8
+        }
+      ]
+    },
+    "Nikko Remigio": {
+      "name": "Nikko Remigio",
+      "pos": "WR",
+      "team": "KC",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 2,
+          "tm_off_snp": 61,
+          "pts_ppr": -2.0,
+          "snap_pct": 3.3
         }
       ]
     },
@@ -21561,6 +24908,18 @@
           "off_snp": 4,
           "tm_off_snp": 72,
           "snap_pct": 5.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 4,
+          "tm_off_snp": 74,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 21,
+          "pts_ppr": 3.1,
+          "snap_pct": 5.4
         }
       ]
     },
@@ -21603,6 +24962,17 @@
           "off_snp": 17,
           "tm_off_snp": 45,
           "snap_pct": 37.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 31,
+          "tm_off_snp": 72,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 10,
+          "pts_ppr": 4.0,
+          "snap_pct": 43.1
         }
       ]
     },
@@ -21668,6 +25038,19 @@
           "rec_yd": 90,
           "pts_ppr": 12.0,
           "snap_pct": 68.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 68,
+          "tm_off_snp": 78,
+          "rec_tgt": 9,
+          "rec": 7,
+          "rec_yd": 40,
+          "rec_td": 1,
+          "pts_ppr": 17.0,
+          "snap_pct": 87.2
         }
       ]
     },
@@ -21723,6 +25106,13 @@
           "rec_yd": 9,
           "pts_ppr": 1.9,
           "snap_pct": 8.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 9,
+          "tm_off_snp": 78,
+          "snap_pct": 11.5
         }
       ]
     },
@@ -21792,6 +25182,18 @@
           "rush_td": 1,
           "pts_ppr": 13.2,
           "snap_pct": 58.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 27,
+          "tm_off_snp": 85,
+          "rec_tgt": 1,
+          "rush_att": 14,
+          "rush_yd": 52,
+          "pts_ppr": 5.2,
+          "snap_pct": 31.8
         }
       ]
     },
@@ -21881,6 +25283,21 @@
           "pass_int": 1,
           "pts_ppr": 26.3,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 72,
+          "tm_off_snp": 72,
+          "rush_att": 2,
+          "rush_yd": 2,
+          "pass_cmp": 24,
+          "pass_att": 35,
+          "pass_yd": 218,
+          "pass_int": 1,
+          "pts_ppr": 7.9,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -21963,6 +25380,22 @@
           "pass_td": 1,
           "pts_ppr": 20.9,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 63,
+          "tm_off_snp": 63,
+          "rush_att": 1,
+          "rush_yd": 5,
+          "pass_cmp": 24,
+          "pass_att": 34,
+          "pass_yd": 312,
+          "pass_td": 3,
+          "pass_int": 1,
+          "pts_ppr": 24.0,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -22021,6 +25454,18 @@
           "rec_yd": 57,
           "pts_ppr": 8.7,
           "snap_pct": 53.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 32,
+          "tm_off_snp": 72,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 28,
+          "pts_ppr": 5.8,
+          "snap_pct": 44.4
         }
       ]
     },
@@ -22186,6 +25631,13 @@
           "off_snp": 19,
           "tm_off_snp": 62,
           "snap_pct": 30.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 22,
+          "tm_off_snp": 60,
+          "snap_pct": 36.7
         }
       ]
     },
@@ -22325,6 +25777,18 @@
           "rec_yd": 15,
           "pts_ppr": 3.5,
           "snap_pct": 83.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 40,
+          "tm_off_snp": 61,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 53,
+          "pts_ppr": 9.3,
+          "snap_pct": 65.6
         }
       ]
     },
@@ -22409,6 +25873,20 @@
           "pass_td": 1,
           "pts_ppr": 12.2,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 63,
+          "tm_off_snp": 62,
+          "rush_att": 8,
+          "rush_yd": 29,
+          "pass_cmp": 16,
+          "pass_att": 26,
+          "pass_yd": 164,
+          "pts_ppr": 9.5,
+          "snap_pct": 101.6
         }
       ]
     },
@@ -22480,6 +25958,34 @@
           "rec_yd": 6,
           "pts_ppr": 1.6,
           "snap_pct": 26.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 8,
+          "tm_off_snp": 66,
+          "snap_pct": 12.1
+        }
+      ]
+    },
+    "Jawhar Jordan": {
+      "name": "Jawhar Jordan",
+      "pos": "RB",
+      "team": "HOU",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 14,
+          "tm_off_snp": 63,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 7,
+          "rush_att": 6,
+          "rush_yd": 43,
+          "rush_td": 1,
+          "pts_ppr": 12.0,
+          "snap_pct": 22.2
         }
       ]
     },
@@ -22534,6 +26040,15 @@
           "rec_yd": 36,
           "pts_ppr": 6.6,
           "snap_pct": 53.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 36,
+          "tm_off_snp": 79,
+          "rec_tgt": 2,
+          "snap_pct": 45.6
         }
       ]
     },
@@ -22581,6 +26096,17 @@
           "rec_yd": 16,
           "pts_ppr": 3.6,
           "snap_pct": 53.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 38,
+          "tm_off_snp": 72,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 30,
+          "pts_ppr": 5.0,
+          "snap_pct": 52.8
         }
       ]
     },
@@ -22624,6 +26150,37 @@
           "rec_yd": 60,
           "pts_ppr": 10.0,
           "snap_pct": 71.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 51,
+          "tm_off_snp": 67,
+          "rec_tgt": 7,
+          "rec": 7,
+          "rec_yd": 69,
+          "pts_ppr": 13.9,
+          "snap_pct": 76.1
+        }
+      ]
+    },
+    "KeAndre Lambert-Smith": {
+      "name": "KeAndre Lambert-Smith",
+      "pos": "WR",
+      "team": "LAC",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 59,
+          "tm_off_snp": 68,
+          "rec_tgt": 9,
+          "rec": 5,
+          "rec_yd": 32,
+          "pts_ppr": 6.2,
+          "snap_pct": 86.8
         }
       ]
     },
@@ -22712,13 +26269,20 @@
           "off_snp": 8,
           "tm_off_snp": 61,
           "snap_pct": 13.1
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 4,
+          "tm_off_snp": 75,
+          "snap_pct": 5.3
         }
       ]
     },
     "Marquez Valdes-Scantling": {
       "name": "Marquez Valdes-Scantling",
       "pos": "WR",
-      "team": "LAC",
+      "team": "PIT",
       "games": [
         {
           "week": 3,
@@ -22775,8 +26339,8 @@
         }
       ]
     },
-    "Ted Hurst": {
-      "name": "Ted Hurst",
+    "Ted Hurst III": {
+      "name": "Ted Hurst III",
       "pos": "WR",
       "team": "TB",
       "games": [
@@ -22834,6 +26398,17 @@
           "off_snp": 33,
           "tm_off_snp": 72,
           "snap_pct": 45.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 37,
+          "tm_off_snp": 74,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 40,
+          "pts_ppr": 7.0,
+          "snap_pct": 50.0
         }
       ]
     },
@@ -22848,6 +26423,13 @@
           "off_snp": 16,
           "tm_off_snp": 60,
           "snap_pct": 26.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 41,
+          "tm_off_snp": 79,
+          "snap_pct": 51.9
         }
       ]
     },
@@ -22925,6 +26507,17 @@
           "tm_off_snp": 62,
           "rec_tgt": 1,
           "snap_pct": 32.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 19,
+          "tm_off_snp": 64,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4,
+          "snap_pct": 29.7
         }
       ]
     },
@@ -22988,6 +26581,18 @@
           "rec_td": 1,
           "pts_ppr": 23.0,
           "snap_pct": 70.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 65,
+          "tm_off_snp": 66,
+          "rec_tgt": 9,
+          "rec": 4,
+          "rec_yd": 70,
+          "pts_ppr": 11.0,
+          "snap_pct": 98.5
         }
       ]
     },
@@ -23040,6 +26645,21 @@
           "pass_yd": 199,
           "pts_ppr": 32.3,
           "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 67,
+          "tm_off_snp": 67,
+          "rush_att": 4,
+          "rush_yd": 10,
+          "pass_cmp": 29,
+          "pass_att": 40,
+          "pass_yd": 300,
+          "pass_td": 2,
+          "pts_ppr": 21.0,
+          "snap_pct": 100.0
         }
       ]
     },
@@ -23057,8 +26677,8 @@
         }
       ]
     },
-    "Kevin Coleman": {
-      "name": "Kevin Coleman",
+    "Kevin Coleman Jr.": {
+      "name": "Kevin Coleman Jr.",
       "pos": "WR",
       "team": "MIA",
       "games": [
@@ -23164,6 +26784,13 @@
           "off_snp": 5,
           "tm_off_snp": 69,
           "snap_pct": 7.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 24,
+          "tm_off_snp": 77,
+          "snap_pct": 31.2
         }
       ]
     },
@@ -23229,6 +26856,17 @@
           "rec_yd": 30,
           "pts_ppr": 6.0,
           "snap_pct": 51.5
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 25,
+          "tm_off_snp": 63,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 33,
+          "pts_ppr": 7.3,
+          "snap_pct": 39.7
         }
       ]
     },
@@ -23345,6 +26983,13 @@
           "off_snp": 28,
           "tm_off_snp": 64,
           "snap_pct": 43.8
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 25,
+          "tm_off_snp": 68,
+          "snap_pct": 36.8
         }
       ]
     },
@@ -23366,6 +27011,20 @@
           "pass_int": 1,
           "pts_ppr": 1.0,
           "snap_pct": 42.0
+        }
+      ]
+    },
+    "Justin Watson": {
+      "name": "Justin Watson",
+      "pos": "WR",
+      "team": "KC",
+      "games": [
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 1,
+          "tm_off_snp": 61,
+          "snap_pct": 1.6
         }
       ]
     },
@@ -23510,8 +27169,8 @@
         }
       ]
     },
-    "KC Concepcion": {
-      "name": "KC Concepcion",
+    "KC Concepcion Jr.": {
+      "name": "KC Concepcion Jr.",
       "pos": "WR",
       "team": "CLE",
       "games": [
@@ -23577,6 +27236,20 @@
           "rec_yd": 5,
           "pts_ppr": 1.5,
           "snap_pct": 16.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 51,
+          "tm_off_snp": 62,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 37,
+          "rush_att": 2,
+          "rush_yd": 2,
+          "pts_ppr": 7.9,
+          "snap_pct": 82.3
         }
       ]
     },
@@ -23725,8 +27398,8 @@
         }
       ]
     },
-    "Michael Pittman": {
-      "name": "Michael Pittman",
+    "Michael Pittman Jr.": {
+      "name": "Michael Pittman Jr.",
       "pos": "WR",
       "team": "PIT",
       "games": [
@@ -23822,6 +27495,19 @@
           "rush_yd": 2,
           "pts_ppr": 4.3,
           "snap_pct": 15.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 9,
+          "tm_off_snp": 68,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 5,
+          "rush_att": 1,
+          "rush_yd": 4,
+          "pts_ppr": 1.9,
+          "snap_pct": 13.2
         }
       ]
     },
@@ -23888,6 +27574,15 @@
           "rec_yd": 16,
           "pts_ppr": 5.6,
           "snap_pct": 64.4
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 42,
+          "tm_off_snp": 72,
+          "rec_tgt": 2,
+          "snap_pct": 58.3
         }
       ]
     },
@@ -23953,6 +27648,17 @@
           "rec_yd": 64,
           "pts_ppr": 7.4,
           "snap_pct": 38.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 25,
+          "tm_off_snp": 74,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 7,
+          "pts_ppr": 2.7,
+          "snap_pct": 33.8
         }
       ]
     },
@@ -24046,6 +27752,18 @@
           "rush_yd": 11,
           "pts_ppr": 5.3,
           "snap_pct": 91.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 75,
+          "tm_off_snp": 79,
+          "rec_tgt": 15,
+          "rec": 11,
+          "rec_yd": 93,
+          "pts_ppr": 20.3,
+          "snap_pct": 94.9
         }
       ]
     },
@@ -24155,6 +27873,18 @@
           "rec_yd": 1,
           "pts_ppr": 1.1,
           "snap_pct": 45.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 25,
+          "tm_off_snp": 67,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4,
+          "snap_pct": 37.3
         }
       ]
     },
@@ -24198,6 +27928,19 @@
           "tm_off_snp": 71,
           "rec_tgt": 2,
           "snap_pct": 9.9
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 15,
+          "tm_off_snp": 83,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 41,
+          "rush_att": 1,
+          "rush_yd": 7,
+          "pts_ppr": 6.8,
+          "snap_pct": 18.1
         }
       ]
     },
@@ -24297,6 +28040,21 @@
           "rush_td": 1,
           "pts_ppr": 15.4,
           "snap_pct": 51.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 31,
+          "tm_off_snp": 60,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 5,
+          "rush_att": 17,
+          "rush_yd": 41,
+          "rush_td": 1,
+          "pts_ppr": 13.6,
+          "snap_pct": 51.7
         }
       ]
     },
@@ -24377,6 +28135,21 @@
           "rush_yd": 45,
           "pts_ppr": 11.2,
           "snap_pct": 73.2
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 65,
+          "tm_off_snp": 83,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 57,
+          "rush_att": 21,
+          "rush_yd": 94,
+          "rush_td": 1,
+          "pts_ppr": 21.1,
+          "snap_pct": 78.3
         }
       ]
     },
@@ -24461,6 +28234,21 @@
           "pass_yd": 374,
           "pass_td": 4,
           "pts_ppr": 39.5,
+          "snap_pct": 100.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 68,
+          "tm_off_snp": 68,
+          "rush_att": 4,
+          "rush_yd": 24,
+          "pass_cmp": 18,
+          "pass_att": 32,
+          "pass_yd": 235,
+          "pass_td": 3,
+          "pts_ppr": 23.8,
           "snap_pct": 100.0
         }
       ]
@@ -24597,6 +28385,21 @@
           "rush_td": 1,
           "pts_ppr": 14.2,
           "snap_pct": 85.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 57,
+          "tm_off_snp": 78,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 9,
+          "rush_att": 11,
+          "rush_yd": 41,
+          "rush_td": 1,
+          "pts_ppr": 13.0,
+          "snap_pct": 73.1
         }
       ]
     },
@@ -24649,6 +28452,16 @@
           "off_snp": 13,
           "tm_off_snp": 66,
           "snap_pct": 19.7
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 13,
+          "tm_off_snp": 63,
+          "rush_att": 2,
+          "rush_yd": 5,
+          "pts_ppr": 0.5,
+          "snap_pct": 20.6
         }
       ]
     },
@@ -24753,6 +28566,19 @@
           "rec_yd": 3,
           "pts_ppr": 1.3,
           "snap_pct": 64.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 36,
+          "tm_off_snp": 58,
+          "rec_tgt": 6,
+          "rec": 5,
+          "rec_yd": 31,
+          "rec_td": 1,
+          "pts_ppr": 14.1,
+          "snap_pct": 62.1
         }
       ]
     },
@@ -24818,6 +28644,18 @@
           "rec_yd": 43,
           "pts_ppr": 9.3,
           "snap_pct": 80.6
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 52,
+          "tm_off_snp": 64,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 19,
+          "pts_ppr": 4.9,
+          "snap_pct": 81.2
         }
       ]
     },
@@ -24856,6 +28694,17 @@
           "tm_off_snp": 60,
           "rec_tgt": 2,
           "snap_pct": 63.3
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "off_snp": 45,
+          "tm_off_snp": 61,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 24,
+          "pts_ppr": 4.4,
+          "snap_pct": 73.8
         }
       ]
     },
@@ -24926,6 +28775,19 @@
           "rec_yd": 123,
           "pts_ppr": 20.3,
           "snap_pct": 77.0
+        },
+        {
+          "week": 6,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 63,
+          "tm_off_snp": 75,
+          "rec_tgt": 13,
+          "rec": 6,
+          "rec_yd": 104,
+          "rec_td": 1,
+          "pts_ppr": 22.4,
+          "snap_pct": 84.0
         }
       ]
     }

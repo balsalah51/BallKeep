@@ -13,6 +13,8 @@ from news_algo import (  # noqa: E402
     cluster_items,
     is_fresh_story,
     is_junk_cluster,
+    is_publishable,
+    prune_stories,
     jaccard,
     match_players,
     merge_story,
@@ -246,12 +248,44 @@ def test_rematch_fills_baseball_players():
     assert out[0]["players"][0]["slug"] == "aaron-judge"
 
 
+def test_week_numbers_do_not_share_a_cluster():
+    a = {
+        "title": "Week 14 injury report: Mahomes limited",
+        "category": "injury",
+        "players": [{"key": "patrick mahomes"}],
+        "published": "2025-12-01T12:00:00Z",
+    }
+    b = {
+        "title": "Week 16 injury report: Mahomes out",
+        "category": "injury",
+        "players": [{"key": "patrick mahomes"}],
+        "published": "2025-12-15T12:00:00Z",
+    }
+    assert len(cluster_items([a, b])) == 2
+
+
+def test_signing_is_not_injury_even_if_tagged_injury():
+    items = [{
+        "title": "Jets sign a veteran tackle - ESPN",
+        "url": "https://www.espn.com/nfl/story/_/id/2",
+        "summary": "New York added a lineman. He had a calf injury in camp.",
+        "published": "Wed, 21 Oct 2026 12:00:00 GMT",
+        "publisher": "ESPN",
+        "category": "injury",
+        "players": [],
+    }]
+    story = merge_story(None, items, "football")
+    assert story["category"] == "roster"
+    assert categorize("Five thoughts from the weekend slate") == "wire"
+
+
 def test_unique_slugs_and_junk():
     a = {"headline": "Same vague update about the league", "category": "wire", "id": "one", "sources": [{"url": "https://a.test/1"}]}
     b = {"headline": "Same vague update about the league", "category": "wire", "id": "two", "sources": [{"url": "https://b.test/2"}]}
     out = uniquify_slugs([a, b])
     assert out[0]["slug"] != out[1]["slug"]
     assert is_junk_cluster({"headline": "Read More: t.co/abc123 #NFL #Fantasy", "blurb": "t.co/abc123"})
+    assert is_junk_cluster({"headline": "NFL injury roundup! Read More: https://t.co/XSnJLD0Yld #NFL", "blurb": ""})
     assert not is_junk_cluster({"headline": "Christian McCaffrey listed questionable vs the Rams", "blurb": "Calf strain."})
     assert trim_headline("One two three four five six seven eight nine ten eleven twelve extra words here that go long", 40).endswith("…")
     assert " " not in trim_headline("Wordboundarycutneededhere withoutspacesatallxxxxxxxxxxxxxxxxxxxxxxxx", 20).rstrip("…")[-1:] or True
@@ -263,6 +297,66 @@ def test_unique_slugs_and_junk():
         "published": "2025-12-20T12:00:00Z",
     }
     assert not is_fresh_story(old)
+
+
+def test_board_uses_the_headline_and_drops_college():
+    fresh = "2026-10-25T12:00:00Z"
+    rows = [
+        {
+            "sport": "football",
+            "headline": "Vikings Injury Report: Justin Jefferson questionable",
+            "blurb": "Listed as questionable with a hamstring.",
+            "category": "roster",
+            "updated": fresh,
+            "published": fresh,
+            "sources": [{"kind": "article", "url": "https://www.espn.com/nfl/story/1", "title": "Vikings"}],
+        },
+        {
+            "sport": "football",
+            "headline": "Texas football coach Steve Sarkisian evaluates the offense",
+            "blurb": "Arch Manning and the college football notes.",
+            "category": "coach",
+            "updated": fresh,
+            "published": fresh,
+            "sources": [{"kind": "article", "url": "https://www.espn.com/college/story/1", "title": "Sarkisian"}],
+        },
+    ]
+    assert not is_publishable(rows[1])
+    rows.append({
+        "sport": "football",
+        "headline": "South Carolina players listed on injury report vs Tennessee football",
+        "blurb": "Tennessee at South Carolina football updated injury report",
+        "category": "injury",
+        "updated": fresh,
+        "published": fresh,
+        "sources": [{"kind": "article", "url": "https://sports.yahoo.com/college/1", "title": "USC"}],
+    })
+    rows.append({
+        "sport": "football",
+        "headline": "Packers activate Savion Williams and place Skyy Moore on injured reserve",
+        "blurb": "Green Bay roster move.",
+        "category": "injury",
+        "updated": fresh,
+        "published": fresh,
+        "sources": [{"kind": "article", "url": "https://www.espn.com/nfl/story/2", "title": "Packers"}],
+    })
+    rows.append({
+        "sport": "football",
+        "headline": "Quick-hit thoughts around the Patriots and the rest of the slate",
+        "blurb": "Millimeters make the difference in turnover differential.",
+        "category": "injury",
+        "updated": fresh,
+        "published": fresh,
+        "sources": [{"kind": "article", "url": "https://www.espn.com/nfl/story/3", "title": "Notes"}],
+    })
+    out = prune_stories(rows)
+    by_head = {s["headline"]: s["category"] for s in out}
+    assert "Texas football coach Steve Sarkisian evaluates the offense" not in by_head
+    assert "South Carolina players listed on injury report vs Tennessee football" not in by_head
+    assert by_head["Vikings Injury Report: Justin Jefferson questionable"] == "injury"
+    assert by_head["Packers activate Savion Williams and place Skyy Moore on injured reserve"] == "roster"
+    assert by_head["Quick-hit thoughts around the Patriots and the rest of the slate"] == "wire"
+    assert categorize("Saints benefit from a questionable replay review") == "wire"
 
 
 def test_news_only_helper_exists():
