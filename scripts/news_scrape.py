@@ -474,6 +474,18 @@ def run(sport: str, fetch: Fetcher = default_fetch, sleep_s: float = 0.35) -> di
 
     print(f"BK News scrape: {sport}")
     fresh = collect_sport(sport, roster, state, fetch, sleep_s=sleep_s)
+    if sport == "football" and not fresh:
+        from news_algo import parse_dt
+        prev_dt = parse_dt(prev_doc.get("updated") or "")
+        age_h = None
+        if prev_dt:
+            age_h = (utcnow() - prev_dt).total_seconds() / 3600.0
+        if age_h is None or age_h >= 24:
+            raise RuntimeError(
+                "football news scrape returned no items and the saved wire is older than 24 hours"
+            )
+        print("no new football items; keeping the previous wire")
+        return prev_doc
     stories = rematch_stories(fold_into_stories(sport, fresh, previous), index)
     doc = {
         "sport": sport,

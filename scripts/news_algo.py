@@ -422,7 +422,15 @@ GENERIC_LONG = {
 }
 
 
+def _week_nums(title: str) -> set[int]:
+    return {int(n) for n in re.findall(r"\bweek\s+(\d{1,2})\b", title or "", flags=re.I)}
+
+
 def _same_cluster(a: dict, b: dict, hours: float) -> bool:
+    weeks_a = _week_nums(a.get("title") or "")
+    weeks_b = _week_nums(b.get("title") or "")
+    if weeks_a and weeks_b and weeks_a.isdisjoint(weeks_b):
+        return False
     ta, tb = tokens(a.get("title") or ""), tokens(b.get("title") or "")
     ja = jaccard(ta, tb)
     long_hit = {t for t in (ta & tb) if len(t) >= 7 and t not in GENERIC_LONG}
@@ -496,8 +504,8 @@ def summarize(items: list[dict], players: list[dict]) -> tuple[str, str]:
     summary = (lead + " " + extra).strip() + attrib
     summary = re.sub(r"\s+", " ", summary).strip()
     blurb = snippets[0]
-    if len(blurb) > 180:
-        blurb = blurb[:177].rsplit(" ", 1)[0] + "…"
+    if len(blurb) > 140:
+        blurb = blurb[:137].rsplit(" ", 1)[0] + "…"
     return blurb, summary
 
 
@@ -546,10 +554,13 @@ def merge_story(existing: dict | None, items: list[dict], sport: str) -> dict:
                 seen_p.add(p["key"])
                 players.append(p)
 
-    cats = [it.get("category") or "wire" for it in items]
-    if existing and existing.get("category"):
-        cats.insert(0, existing["category"])
-    category = next((c for c in ("injury", "trade", "roster", "coach", "practice") if c in cats), cats[0] if cats else "wire")
+    headline_for_cat = pick_headline(items) if items else (existing or {}).get("headline") or ""
+    category = categorize(headline_for_cat)
+    if category == "wire":
+        votes = [categorize(it.get("title") or "") for it in items]
+        votes = [v for v in votes if v != "wire"]
+        if votes:
+            category = max(set(votes), key=votes.count)
 
     sources = list(existing.get("sources") or []) if existing else []
     seen_u = {s.get("url") for s in sources}
@@ -563,7 +574,7 @@ def merge_story(existing: dict | None, items: list[dict], sport: str) -> dict:
             "url": url,
             "publisher": it.get("publisher") or publisher_from_url(url),
             "kind": source_kind(url, it.get("title") or "", it.get("publisher") or ""),
-            "snippet": strip_tags(it.get("summary") or "")[:280],
+            "snippet": strip_tags(it.get("summary") or "")[:160],
             "published": it.get("published") or "",
         })
 
@@ -720,6 +731,16 @@ def is_publishable(story: dict) -> bool:
     if story.get("players") and story.get("category") in {"injury", "roster", "coach", "trade", "practice"}:
         return True
     return False
+
+
+def stories_for_board(sport: str, root: Path | None = None) -> list[dict]:
+    """Publishable, in-week stories with unique slugs. Empty when the wire is old."""
+    rows = []
+    for s in load_news_stories(sport, root):
+        s = dict(s)
+        s["sport"] = s.get("sport") or sport
+        rows.append(s)
+    return prune_stories(rows)
 
 
 def prune_stories(stories: list[dict], keep: int = 60) -> list[dict]:

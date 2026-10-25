@@ -246,6 +246,37 @@ def test_rematch_fills_baseball_players():
     assert out[0]["players"][0]["slug"] == "aaron-judge"
 
 
+def test_week_numbers_do_not_share_a_cluster():
+    a = {
+        "title": "Week 14 injury report: Mahomes limited",
+        "category": "injury",
+        "players": [{"key": "patrick mahomes"}],
+        "published": "2025-12-01T12:00:00Z",
+    }
+    b = {
+        "title": "Week 16 injury report: Mahomes out",
+        "category": "injury",
+        "players": [{"key": "patrick mahomes"}],
+        "published": "2025-12-15T12:00:00Z",
+    }
+    assert len(cluster_items([a, b])) == 2
+
+
+def test_signing_is_not_injury_even_if_tagged_injury():
+    items = [{
+        "title": "Jets sign a veteran tackle - ESPN",
+        "url": "https://www.espn.com/nfl/story/_/id/2",
+        "summary": "New York added a lineman. He had a calf injury in camp.",
+        "published": "Wed, 21 Oct 2026 12:00:00 GMT",
+        "publisher": "ESPN",
+        "category": "injury",
+        "players": [],
+    }]
+    story = merge_story(None, items, "football")
+    assert story["category"] == "roster"
+    assert categorize("Five thoughts from the weekend slate") == "wire"
+
+
 def test_unique_slugs_and_junk():
     a = {"headline": "Same vague update about the league", "category": "wire", "id": "one", "sources": [{"url": "https://a.test/1"}]}
     b = {"headline": "Same vague update about the league", "category": "wire", "id": "two", "sources": [{"url": "https://b.test/2"}]}
