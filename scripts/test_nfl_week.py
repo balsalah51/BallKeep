@@ -12,6 +12,7 @@ from zoneinfo import ZoneInfo
 from nfl_week import (
     WEEK_SHIFT,
     current_week,
+    football_nav_groups,
     hours_ago,
     is_in_current_week,
     live_week,
@@ -116,6 +117,48 @@ def test_tuesday_scrape_matches_the_nav():
     assert resolve_scrape_week(["scrape_weekly.py", "4"], tue) == 4
     daily = Path(__file__).resolve().parents[1] / ".github" / "workflows" / "daily-rebuild.yml"
     assert "--if-behind" in daily.read_text()
+
+
+def test_nav_links_the_stable_week_urls():
+    """The live slate in the nav is week-*.html. weekN-*.html is a redirect stub."""
+    groups = football_nav_groups()
+    week = next(items for key, _label, items in groups if key == "week")
+    hrefs = [item[0] for item in week]
+    assert hrefs == [
+        "weekly.html",
+        "week-dst.html",
+        "week-kickers.html",
+        "week-matchups.html",
+        "waiver.html",
+        "injuries.html",
+    ]
+    root = Path(__file__).resolve().parents[1]
+    live = live_week()
+    banned = (
+        f"week{live}-dst.html",
+        f"week{live}-kickers.html",
+        f"week{live}-matchups.html",
+    )
+    home = (root / "index.html").read_text()
+    stream_at = home.find('class="desk-block week"')
+    mine_at = home.find('class="desk-block mine"')
+    stream = home[stream_at:mine_at]
+    assert 'href="week-dst.html"' in stream
+    assert 'href="week-kickers.html"' in stream
+    assert 'href="week-matchups.html"' in stream
+    assert "This week" in stream
+    for name in banned:
+        assert f'href="{name}"' not in home
+        assert f'href="../{name}"' not in home
+        stub = root / name
+        assert stub.exists()
+        body = stub.read_text()
+        assert 'http-equiv="refresh"' in body
+        assert f"week-{name.split('-', 1)[1]}" in body
+        assert f'href="{name}"' not in body
+    sitemap = (root / "sitemap.xml").read_text()
+    for name in banned:
+        assert name not in sitemap
 
 
 def test_jobs_do_not_pin_the_live_week():
@@ -227,6 +270,7 @@ if __name__ == "__main__":
     test_news_cutoff()
     test_stamp_uses_data_timestamp()
     test_tuesday_scrape_matches_the_nav()
+    test_nav_links_the_stable_week_urls()
     test_jobs_do_not_pin_the_live_week()
     test_ranks_job_uses_a_mocked_week()
     test_failure_alert_names_the_scheduled_jobs()

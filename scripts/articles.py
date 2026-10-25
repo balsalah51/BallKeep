@@ -1,7 +1,7 @@
 """Articles hub: Ball Keep essays in one list."""
 from __future__ import annotations
 
-from nfl_week import live_week, week_href, week_label
+from nfl_week import week_href
 from seo import also_on_desk, breadcrumb_jsonld, breadcrumbs, esc
 from the_long_game import DEK as LONG_DEK
 from the_long_game import HEADLINE as LONG_HEAD
@@ -26,8 +26,8 @@ from week6_predictions import HEADLINE as W6_HEAD
 
 ARTICLES = [
     (
-        week_href("matchups") if live_week() == 7 else "week7-matchups.html",
-        f"{week_label()} Predictions" if live_week() == 7 else "Week 7 Predictions",
+        week_href("matchups", 7),
+        "Week 7 Predictions",
         "Sunday, Oct 25",
         "Fourteen games. Thursday already played. No invented picks.",
         "The official Week 7 slate is on the board. Mash picks land when the published cards are in.",

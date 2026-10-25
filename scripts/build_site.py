@@ -2710,9 +2710,9 @@ def home_body_html(keep, board, media, stories=None):
     ])}
     {desk_block("week", week_label(w), "This week's stream.", "Weekly boards, the official slate, and the waiver mash. Rest-of-season values live in the blocks above.", [
         ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
-        (week_href("dst", w), f"{week_label(w)} DST", "This week's stream."),
-        (week_href("kickers", w), f"{week_label(w)} Kickers", "This week's stream."),
-        (week_href("matchups", w), f"{week_label(w)} Predictions", "Official slate. Mash picks land when the published cards are in."),
+        (week_href("dst"), f"{week_label(w)} DST", "This week's stream."),
+        (week_href("kickers"), f"{week_label(w)} Kickers", "This week's stream."),
+        (week_href("matchups"), f"{week_label(w)} Predictions", "Official slate. Mash picks land when the published cards are in."),
         ("waiver.html", "Waivers", "The names the boards moved."),
         ("injuries.html", "Injuries", "ESPN designations."),
     ], extra=home_week_faces())}
@@ -5015,9 +5015,6 @@ def main():
         "https://ballkeep.com/week-dst.html",
         "https://ballkeep.com/week-kickers.html",
         "https://ballkeep.com/week-matchups.html",
-        "https://ballkeep.com/week7-dst.html",
-        "https://ballkeep.com/week7-kickers.html",
-        "https://ballkeep.com/week7-matchups.html",
         "https://ballkeep.com/archive/week1/",
         "https://ballkeep.com/archive/week1/opening.html",
         "https://ballkeep.com/archive/week1/dst.html",

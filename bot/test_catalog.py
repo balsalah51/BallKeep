@@ -334,9 +334,12 @@ def main():
     assert "week6-dst.html" not in ros_st
     assert "weekly.html" in week1
     assert "the-recap.html" not in week1
-    assert "week7-dst.html" in week1
-    assert "week7-kickers.html" in week1
-    assert "week7-matchups.html" in week1
+    assert "week-dst.html" in week1
+    assert "week-kickers.html" in week1
+    assert "week-matchups.html" in week1
+    assert "week7-dst.html" not in week1
+    assert "week7-kickers.html" not in week1
+    assert "week7-matchups.html" not in week1
     assert "week6-dst.html" not in week1
     assert "week4-dst.html" not in week1
     assert "week5-dst.html" not in week1
@@ -450,7 +453,8 @@ def main():
     assert "the-split.html" not in articles
     assert "the-split.html" not in html_of("two-clocks.html")
     assert "The Split" not in html_of("two-clocks.html")
-    assert "week7-matchups.html" in articles
+    assert "week-matchups.html" in articles
+    assert "week7-matchups.html" not in articles
     assert "Week 7 Predictions" in articles
     assert "week6-matchups.html" in articles
     assert "Week 6 Predictions" in articles
@@ -685,7 +689,8 @@ def main():
     weekly_html = html_of("weekly.html")
     assert "<h1>Weekly</h1>" in weekly_html
     assert "the-recap.html" in weekly_html
-    assert "week7-matchups.html" in weekly_html
+    assert "week-matchups.html" in weekly_html
+    assert "week7-matchups.html" not in weekly_html
     assert "week6-matchups.html" in weekly_html
     assert "Last scrape is Week 6" in weekly_html
     assert "Bijan Robinson" in weekly_html
