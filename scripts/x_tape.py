@@ -124,7 +124,16 @@ def save_image(raw: bytes, dest: Path) -> bool:
         im.save(dest, "JPEG", quality=82, optimize=True)
     except Exception:
         dest.write_bytes(raw)
-    if is_usable_image_file(dest):
+    if dest.exists() and dest.stat().st_size > 500_000:
+        try:
+            from PIL import Image
+            im = Image.open(dest).convert("RGB")
+            im.thumbnail((700, 700))
+            im.save(dest, "JPEG", quality=60, optimize=True)
+        except Exception:
+            dest.unlink(missing_ok=True)
+            return False
+    if is_usable_image_file(dest) and dest.stat().st_size <= 500_000:
         return True
     dest.unlink(missing_ok=True)
     return False
@@ -495,11 +504,36 @@ def cards_html(sport: str, depth: int = 0, esc=None) -> str:
     return f'<div class="x-grid">{"".join(bits)}</div>'
 
 
+def shrink_oversized(limit: int = 500_000) -> int:
+    """Recompress X-tape JPEGs that were saved as the raw download."""
+    n = 0
+    for dest in sorted(IMG.rglob("*.jpg")):
+        if dest.stat().st_size <= limit:
+            continue
+        try:
+            from PIL import Image
+            im = Image.open(dest).convert("RGB")
+            im.thumbnail((900, 900))
+            im.save(dest, "JPEG", quality=70, optimize=True)
+            if dest.stat().st_size > limit:
+                im.thumbnail((700, 700))
+                im.save(dest, "JPEG", quality=60, optimize=True)
+            n += 1
+        except Exception as exc:
+            print(f"skip {dest}: {exc}")
+    print(f"shrunk {n}")
+    return n
+
+
 def main():
     import argparse
     ap = argparse.ArgumentParser(description="Pull The X meme tape")
     ap.add_argument("--sport", choices=("football", "baseball", "soccer", "basketball", "all"), default="all")
+    ap.add_argument("--shrink", action="store_true", help="Recompress oversized files already on disk")
     args = ap.parse_args()
+    if args.shrink:
+        shrink_oversized()
+        return
     sports = ["football", "baseball", "soccer", "basketball"] if args.sport == "all" else [args.sport]
     for sport in sports:
         scrape_sport(sport)
