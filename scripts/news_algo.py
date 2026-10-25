@@ -431,20 +431,94 @@ def _week_nums(title: str) -> set[int]:
     return {int(n) for n in re.findall(r"\bweek\s+(\d{1,2})\b", title or "", flags=re.I)}
 
 
+_SURNAME_STOP = {
+    "today", "playing", "week", "injury", "update", "updates", "report",
+    "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday",
+    "latest", "status", "fantasy", "football", "night", "morning",
+    "impact", "betting", "final", "more", "game", "call", "faces",
+    "cardinals", "falcons", "ravens", "bills", "panthers", "bears", "bengals",
+    "browns", "cowboys", "broncos", "lions", "packers", "texans", "colts",
+    "jaguars", "chiefs", "raiders", "chargers", "rams", "dolphins", "vikings",
+    "patriots", "saints", "giants", "jets", "eagles", "steelers", "seahawks",
+    "buccaneers", "titans", "commanders",
+}
+
+
+def person_surnames(title: str) -> set[str]:
+    """Last token of a two-word name, plus Mc/Mac names that are not [A-Z][a-z]+."""
+    words = re.findall(r"\b[A-Z][a-z]+\b", title or "")
+    out = set()
+    for prev, last in zip(words, words[1:]):
+        key = last.lower().strip(".")
+        if len(key) < 3 or key in _SURNAME_STOP or prev.lower() in _SURNAME_STOP:
+            continue
+        out.add(key)
+    for mc in re.findall(r"\b((?:Mc|Mac)[A-Z][a-z]+)\b", title or ""):
+        out.add(mc.lower())
+    return out
+
+
+def _title_has_surname(title: str, names: set[str]) -> bool:
+    low = title or ""
+    return any(re.search(rf"\b{re.escape(name)}\b", low, flags=re.I) for name in names)
+
+
+def focus_story(story: dict) -> dict:
+    """Drop sources that are a different player's story than the headline.
+
+    A Jeremiyah Love headline that mostly cites Bo Nix is retitled to the
+    name the sources actually share.
+    """
+    s = dict(story)
+    sources = list(s.get("sources") or [])
+    names = person_surnames(s.get("headline") or "")
+    if not names or len(sources) < 2:
+        return s
+    kept = [src for src in sources if _title_has_surname(src.get("title") or "", names)]
+    if len(kept) * 2 >= len(sources):
+        s["sources"] = kept
+        return s
+    counts: dict[str, int] = {}
+    for src in sources:
+        for name in person_surnames(src.get("title") or ""):
+            counts[name] = counts.get(name, 0) + 1
+    if not counts:
+        s["sources"] = kept or sources
+        return s
+    best = max(counts, key=counts.get)
+    matching = [src for src in sources if _title_has_surname(src.get("title") or "", {best})]
+    if not matching:
+        s["sources"] = kept or sources
+        return s
+    s["headline"] = trim_headline(split_google_title(matching[0].get("title") or "")[0])
+    s["sources"] = matching
+    s["blurb"] = (matching[0].get("snippet") or s.get("blurb") or "")[:140]
+    return s
+
+
 def _same_cluster(a: dict, b: dict, hours: float) -> bool:
     weeks_a = _week_nums(a.get("title") or "")
     weeks_b = _week_nums(b.get("title") or "")
     if weeks_a and weeks_b and weeks_a.isdisjoint(weeks_b):
         return False
+    names_a = person_surnames(a.get("title") or "")
+    names_b = person_surnames(b.get("title") or "")
     ta, tb = tokens(a.get("title") or ""), tokens(b.get("title") or "")
+    keys_a = {p["key"] for p in a.get("players") or []}
+    keys_b = {p["key"] for p in b.get("players") or []}
+    shared_long = {t for t in (ta & tb) if len(t) >= 6}
+    if (
+        names_a and names_b and names_a.isdisjoint(names_b)
+        and not (keys_a & keys_b)
+        and not shared_long
+    ):
+        return False
     ja = jaccard(ta, tb)
     long_hit = {t for t in (ta & tb) if len(t) >= 7 and t not in GENERIC_LONG}
     if ja >= 0.45:
         return True
     if ja >= 0.22 and long_hit:
         return True
-    keys_a = {p["key"] for p in a.get("players") or []}
-    keys_b = {p["key"] for p in b.get("players") or []}
     if (
         keys_a and keys_b and (keys_a & keys_b)
         and len(keys_a) <= 3 and len(keys_b) <= 3
@@ -773,7 +847,7 @@ def align_category(story: dict) -> dict:
 
 
 def prune_stories(stories: list[dict], keep: int = 60) -> list[dict]:
-    stories = [align_category(s) for s in stories]
+    stories = [align_category(focus_story(s)) for s in stories]
     stories = [s for s in stories if is_publishable(s) and is_fresh_story(s)]
     stories = sorted(
         stories,

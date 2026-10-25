@@ -157,7 +157,23 @@ def is_in_current_week(value: str | None, week: int | None = None) -> bool:
 
 
 def football_nav_groups(week: int | None = None) -> list:
+    """Header and footer.
+
+    The live slate is week-dst.html, week-kickers.html, and week-matchups.html.
+    weekN-*.html for that same week is only a redirect for old bookmarks, so
+    the nav never links there.
+    """
     w = week or live_week()
+    if w == live_week():
+        dst, kickers, matchups = (
+            STABLE_WEEK["dst"],
+            STABLE_WEEK["kickers"],
+            STABLE_WEEK["matchups"],
+        )
+    else:
+        dst = numbered_week_href("dst", w)
+        kickers = numbered_week_href("kickers", w)
+        matchups = numbered_week_href("matchups", w)
     return [
         ("rankings", "Rankings", [
             ("index.html", "Home"),
@@ -171,9 +187,9 @@ def football_nav_groups(week: int | None = None) -> list:
         ]),
         ("week", "This Week", [
             ("weekly.html", "Weekly"),
-            (week_href("dst", w), f"{week_label(w)} DST"),
-            (week_href("kickers", w), f"{week_label(w)} K"),
-            (week_href("matchups", w), f"{week_label(w)} Predictions"),
+            (dst, f"{week_label(w)} DST"),
+            (kickers, f"{week_label(w)} K"),
+            (matchups, f"{week_label(w)} Predictions"),
             ("waiver.html", "Waivers"),
             ("injuries.html", "Injuries"),
         ]),

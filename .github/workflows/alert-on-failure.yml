@@ -1,0 +1,84 @@
+name: Alert when a scheduled job fails
+
+# Opens a GitHub issue assigned to the repository owner when BK News, the
+# Monday/Tuesday ranks job, or the daily rebuild fails. That includes a
+# stale-data exit from scripts/check_freshness.py. GitHub emails the
+# assignee. There is no Discord or Slack webhook in this repo.
+#
+# Test: Actions → Alert when a scheduled job fails → Run workflow.
+# That opens "Test: Ball Keep failure alert". Close it when the mail arrives.
+
+on:
+  workflow_run:
+    workflows:
+      - "BK News"
+      - "Weekly check (Monday and Tuesday)"
+      - "Daily site rebuild"
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  issues: write
+
+jobs:
+  alert:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open or update the failure issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const test = context.eventName === "workflow_dispatch";
+            const run = context.payload.workflow_run || {};
+            const workflow = test ? "manual test" : (run.name || "scheduled job");
+            const title = test
+              ? "Test: Ball Keep failure alert"
+              : `Ball Keep job failed: ${workflow}`;
+            const runUrl = run.html_url || `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions`;
+            const body = test
+              ? [
+                  "This is a test of the scheduled-job alert. Close it.",
+                  "",
+                  "A real failure of BK News, the Monday/Tuesday ranks job, or the daily rebuild opens an issue with this same label and assigns the repository owner. A stale-data failure is a failed run of `scripts/check_freshness.py`, so it uses this path too.",
+                  "",
+                  "To test again: Actions, Alert when a scheduled job fails, Run workflow.",
+                ].join("\n")
+              : [
+                  `\`${workflow}\` finished with **${run.conclusion}**.`,
+                  run.head_sha ? `\nCommit: \`${run.head_sha}\`` : "",
+                  "",
+                  `Run: ${runUrl}`,
+                  "",
+                  "The ranks job and the news job used to fail for days without a ping. This issue is the ping. A freshness check that exits 1 is a failed run of `scripts/check_freshness.py`, so a stale wire or a stale scrape opens one of these too.",
+                  "",
+                  "Close this after the next green run.",
+                ].join("\n");
+            const { owner, repo } = context.repo;
+            try {
+              await github.rest.issues.createLabel({
+                owner, repo, name: "ops-alert", color: "b60205",
+                description: "Scheduled Ball Keep job failed or data is stale",
+              });
+            } catch (err) {
+              if (err.status !== 422) throw err;
+            }
+            const existing = await github.rest.issues.listForRepo({
+              owner, repo, state: "open", labels: "ops-alert", per_page: 50,
+            });
+            const prior = existing.data.find((issue) => issue.title === title);
+            if (prior) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: prior.number, body,
+              });
+              core.notice(`Commented on #${prior.number}`);
+              return;
+            }
+            const created = await github.rest.issues.create({
+              owner, repo, title, body, labels: ["ops-alert"],
+              assignees: [owner],
+            });
+            core.notice(`Opened #${created.data.number}`);

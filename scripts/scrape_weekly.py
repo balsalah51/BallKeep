@@ -643,6 +643,35 @@ def scrape_espn_injuries() -> int:
     return len(rows)
 
 
+def resolve_scrape_week(argv: list[str] | None = None, today=None) -> int:
+    """Week stamped into meta.json. Blank means the Eastern calendar week.
+
+    Tuesday is still the week that opened the previous Wednesday, so a
+    Tuesday run stamps the same number the nav is showing. An explicit
+    numeric argument is the manual override used by workflow_dispatch.
+    """
+    argv = list(sys.argv if argv is None else argv)
+    if len(argv) > 1 and str(argv[1]).isdigit():
+        return int(argv[1])
+    return current_week(today)
+
+
+def meta_week() -> int | None:
+    path = OUT / "meta.json"
+    if not path.exists():
+        return None
+    try:
+        return int(json.loads(path.read_text()).get("week"))
+    except (TypeError, ValueError, json.JSONDecodeError):
+        return None
+
+
+def calendar_is_ahead(today=None) -> bool:
+    """True when meta.json is missing or not the Eastern calendar week."""
+    stamped = meta_week()
+    return stamped is None or stamped != current_week(today)
+
+
 def write_meta(week: int) -> None:
     dump("meta", {
         "season": 2026,
@@ -653,10 +682,13 @@ def write_meta(week: int) -> None:
     })
 
 
-def main() -> int:
-    week = current_week()
-    if len(sys.argv) > 1 and sys.argv[1].isdigit():
-        week = int(sys.argv[1])
+def run_ranks(week: int) -> int:
+    """Pull one week's ranks and stamp meta.json with that week.
+
+    An empty FantasyPros board or a thin injury wire exits 1 and leaves
+    the previous stamp in place. The week argument is the only week this
+    run is allowed to write.
+    """
     print(f"weekly scrape week={week}")
     fp_ok = scrape_fp_weekly(week)
     scrape_fourfor4(week)
@@ -669,6 +701,15 @@ def main() -> int:
         return 1
     write_meta(week)
     return 0
+
+
+def main() -> int:
+    if len(sys.argv) > 1 and sys.argv[1] == "--if-behind":
+        if not calendar_is_ahead():
+            print(f"calendar week {current_week()} matches meta; scrape skipped")
+            return 0
+        print(f"meta week {meta_week()} lags calendar week {current_week()}")
+    return run_ranks(resolve_scrape_week())
 
 
 if __name__ == "__main__":

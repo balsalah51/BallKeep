@@ -14,6 +14,8 @@ from news_algo import (  # noqa: E402
     is_fresh_story,
     is_junk_cluster,
     is_publishable,
+    focus_story,
+    person_surnames,
     prune_stories,
     jaccard,
     match_players,
@@ -357,6 +359,33 @@ def test_board_uses_the_headline_and_drops_college():
     assert by_head["Packers activate Savion Williams and place Skyy Moore on injured reserve"] == "roster"
     assert by_head["Quick-hit thoughts around the Patriots and the rest of the slate"] == "wire"
     assert categorize("Saints benefit from a questionable replay review") == "wire"
+
+
+def test_love_and_nix_do_not_share_a_story():
+    assert "love" in person_surnames("Is Jeremiyah Love Playing Today?")
+    assert "nix" not in person_surnames("Is Jeremiyah Love Playing Today?")
+    assert "nix" in person_surnames("Broncos' Bo Nix throws for a TD")
+    a = {"title": "Is Jeremiyah Love Playing Today?", "category": "injury", "players": [], "published": "2026-10-25T12:00:00Z"}
+    b = {"title": "Bo Nix says the ankle injury is manageable", "category": "injury", "players": [], "published": "2026-10-25T12:00:00Z"}
+    assert len(cluster_items([a, b])) == 2
+    story = {
+        "sport": "football",
+        "headline": "Is Jeremiyah Love Playing Today? (Injury Update for Broncos vs. Cardinals)",
+        "blurb": "Ankle.",
+        "category": "injury",
+        "updated": "2026-10-25T15:00:00Z",
+        "published": "2026-10-25T15:00:00Z",
+        "sources": [
+            {"kind": "article", "url": "https://www.espn.com/nfl/story/nix", "title": "Broncos Bo Nix throws for a TD in return from an ankle injury"},
+            {"kind": "article", "url": "https://www.nfl.com/nix", "title": "Bo Nix says the ankle injury is not the problem"},
+            {"kind": "article", "url": "https://www.espn.com/nfl/story/love", "title": "Jeremiyah Love remains out for the Cardinals"},
+        ],
+    }
+    focused = focus_story(story)
+    blob = " ".join(src["title"] for src in focused["sources"])
+    assert "Love" not in blob or "Nix" not in blob
+    assert "Nix" in focused["headline"] or "Love" in focused["headline"]
+    assert not ("Love" in focused["headline"] and "Nix" in blob)
 
 
 def test_news_only_helper_exists():

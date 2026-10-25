@@ -216,10 +216,13 @@ def write_weekly_pages(b, nfl, media, board_rows):
         ("Why is a drafted star missing?", "If a list did not put him on their waiver board, that list does not vote for him."),
     ]
     w_lead = waivers[0]["name"] if waivers else ""
+    w_lag = ""
+    if w_week != live:
+        w_lag = f" The calendar is {week_label(live)}. This page stays Week {w_week} until a Week {live} article set is filed."
     w_body = f"""
     <p class="kicker">2026 Week {w_week} · consensus waivers · {len(WEEK1_WAIVER_SOURCES)} lists</p>
     <h1>Week {w_week} Waivers</h1>
-    <p class="note">Week {w_week} waiver Super Aggregate after the fifth Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash. Kickers and team DST stay on their own boards. The finished Week 5 card lives on <a href="week5-matchups.html">Week 5 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
+    <p class="note">Week {w_week} waiver Super Aggregate after the fifth Sunday. {len(WEEK1_WAIVER_SOURCES)} published pickup lists. {w_lead} leads the mash.{w_lag} Kickers and team DST stay on their own boards. The finished Week 5 card lives on <a href="week5-matchups.html">Week 5 Predictions</a>. Finished Week 1 boards sit in the <a href="archive/week1/index.html">Week 1 archive</a>.</p>
     {rank_search_bar(w_chips)}
     <div class="panel">{weekly_table(waivers)}</div>
     {sources_panel(WEEK1_WAIVER_SOURCES, heading="Lists in This Super Aggregate")}
