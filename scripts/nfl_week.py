@@ -1,46 +1,81 @@
 """Single source of truth for the live NFL week.
 
-Calendar week is derived from the 2026 kickoff Thursday. Live nav, home
-cards, and news recency all read this module. Existing weekN-*.html URLs
-stay on disk as finished cards.
+Calendar week is derived from the 2026 kickoff Thursday. The week rolls
+Wednesday morning in America/New_York: the offset is +1. An offset of +3
+rolls Monday and was the bug. Live nav, home cards, and news recency all
+read this module. Current-week pages use stable filenames (week-dst.html).
+Finished weeks stay at weekN-*.html.
 """
 from __future__ import annotations
 
+import json
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 SEASON = 2026
 KICKOFF = date(2026, 9, 10)
 META = ROOT / "data" / "weekly" / "meta.json"
+ET = ZoneInfo("America/New_York")
+# +1 rolls the week on Wednesday. +3 rolls it on Monday.
+WEEK_SHIFT = 1
+
+STABLE_WEEK = {
+    "dst": "week-dst.html",
+    "kickers": "week-kickers.html",
+    "matchups": "week-matchups.html",
+}
 
 
-def current_week(today: date | None = None) -> int:
-    """NFL-style week. Rolls Wednesday. Clamped 1-18."""
-    today = today or date.today()
+def today_et(today: date | datetime | None = None) -> date:
+    """Calendar date in America/New_York. GitHub Actions clocks are UTC."""
+    if today is None:
+        return datetime.now(ET).date()
+    if isinstance(today, datetime):
+        if today.tzinfo is None:
+            today = today.replace(tzinfo=timezone.utc)
+        return today.astimezone(ET).date()
+    return today
+
+
+def current_week(today: date | datetime | None = None) -> int:
+    """NFL week. Rolls Wednesday in America/New_York. Clamped 1-18."""
+    today = today_et(today)
     if today < KICKOFF:
         return 1
-    week = 1 + ((today - KICKOFF).days + 3) // 7
+    week = 1 + ((today - KICKOFF).days + WEEK_SHIFT) // 7
     return min(18, max(1, week))
 
 
-def live_week(today: date | None = None) -> int:
+def live_week(today: date | datetime | None = None) -> int:
     """Date is the source of truth, not a stale meta.json."""
     return current_week(today)
 
 
-def week_start(week: int | None = None, today: date | None = None) -> date:
+def week_start(week: int | None = None, today: date | datetime | None = None) -> date:
     """Wednesday that opens this NFL week."""
     w = week or live_week(today)
     return KICKOFF + timedelta(days=(w - 1) * 7 - 1)
 
 
-def week_href(kind: str, week: int | None = None) -> str:
-    w = week or live_week()
+def numbered_week_href(kind: str, week: int) -> str:
     return {
-        "dst": f"week{w}-dst.html",
-        "kickers": f"week{w}-kickers.html",
-        "matchups": f"week{w}-matchups.html",
+        "dst": f"week{week}-dst.html",
+        "kickers": f"week{week}-kickers.html",
+        "matchups": f"week{week}-matchups.html",
+    }[kind]
+
+
+def week_href(kind: str, week: int | None = None, today: date | datetime | None = None) -> str:
+    """Stable URL for the live week. Older weeks keep weekN-*.html."""
+    live = live_week(today)
+    w = live if week is None else week
+    if kind in STABLE_WEEK and w == live:
+        return STABLE_WEEK[kind]
+    if kind in STABLE_WEEK:
+        return numbered_week_href(kind, w)
+    return {
         "weekly": "weekly.html",
         "waiver": "waiver.html",
         "injuries": "injuries.html",
@@ -57,11 +92,32 @@ MONTHS = (
 )
 
 
+def ranks_scraped_iso() -> str | None:
+    if not META.exists():
+        return None
+    try:
+        return json.loads(META.read_text()).get("scraped") or None
+    except json.JSONDecodeError:
+        return None
+
+
 def stamp_updated(scraped: str | None = None) -> tuple[str, str]:
-    """Human UPDATED and ISO LASTMOD from this build's clock."""
-    now = datetime.now(timezone.utc)
-    human = f"{MONTHS[now.month - 1]} {now.day}, {now.year}"
-    return human, now.strftime("%Y-%m-%d")
+    """Human date and ISO date from a real scrape timestamp, in Eastern time.
+
+    Pass scraped= to override. The default reads data/weekly/meta.json.
+    """
+    raw = ranks_scraped_iso() if scraped is None else scraped
+    dt = parse_scraped(raw) if raw else None
+    if dt is None:
+        dt = datetime.now(ET)
+    local = dt.astimezone(ET)
+    human = f"{MONTHS[local.month - 1]} {local.day}, {local.year}"
+    return human, local.strftime("%Y-%m-%d")
+
+
+def ranks_are_stale(max_hours: float = 96, now: datetime | None = None) -> bool:
+    hours = hours_ago(ranks_scraped_iso(), now)
+    return hours is None or hours > max_hours
 
 
 def parse_scraped(value: str | None) -> datetime | None:
@@ -82,11 +138,13 @@ def hours_ago(value: str | None, now: datetime | None = None) -> float | None:
     if not dt:
         return None
     now = now or datetime.now(timezone.utc)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=timezone.utc)
     return max(0.0, (now - dt).total_seconds() / 3600.0)
 
 
-def news_cutoff(week: int | None = None, today: date | None = None) -> datetime:
-    """Drop items older than the Wednesday that opened this week, minus one day."""
+def news_cutoff(week: int | None = None, today: date | datetime | None = None) -> datetime:
+    """Drop items older than the Tuesday before the Wednesday that opened this week."""
     start = week_start(week, today) - timedelta(days=1)
     return datetime(start.year, start.month, start.day, tzinfo=timezone.utc)
 
@@ -107,21 +165,21 @@ def football_nav_groups(week: int | None = None) -> list:
             ("board.html", "Board · Redraft PPR"),
             ("the-classic.html", "Classic · Half-PPR"),
             ("redraft-superflex.html", "Redraft Superflex"),
-            ("defenses.html", "The D · DST"),
+            ("defenses.html", "The D", "Team defenses"),
             ("kickers.html", "Kickers"),
-            ("the-fence.html", "Fence · Superflex + IDP"),
+            ("the-fence.html", "The Fence", "Superflex and IDP"),
         ]),
         ("week", "This Week", [
             ("weekly.html", "Weekly"),
-            (f"week{w}-dst.html", f"Week {w} DST"),
-            (f"week{w}-kickers.html", f"Week {w} K"),
-            (f"week{w}-matchups.html", f"Week {w} Predictions"),
+            (week_href("dst", w), f"{week_label(w)} DST"),
+            (week_href("kickers", w), f"{week_label(w)} K"),
+            (week_href("matchups", w), f"{week_label(w)} Predictions"),
             ("waiver.html", "Waivers"),
             ("injuries.html", "Injuries"),
         ]),
         ("tools", "Tools", [
             ("trade.html", "Trade"),
-            ("the-handcuff.html", "Handcuff · RB handcuffs"),
+            ("the-handcuff.html", "The Handcuff", "Running back backups"),
             ("adp.html", "ADP"),
             ("the-method.html", "Method"),
         ]),
@@ -131,7 +189,7 @@ def football_nav_groups(week: int | None = None) -> list:
         ("reading", "Reading", [
             ("articles.html", "Articles"),
             ("news.html", "News"),
-            ("the-x.html", "The X · Memes"),
+            ("the-x.html", "The X", "Memes"),
             ("touches.html", "Touches"),
             ("players/index.html", "Players"),
             ("hot-n-cold.html", "Hot 'n' Cold"),
