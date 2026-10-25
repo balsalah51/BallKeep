@@ -2,9 +2,10 @@ name: Daily site rebuild
 
 # Cron is UTC. 05:15 UTC is after midnight in America/New_York both before
 # and after daylight time ends (1:15 AM EDT, 12:15 AM EST). The NFL week
-# rolls at Wednesday 00:00 Eastern, so this rebuild ships the new label
-# without a manual deploy. Stamps come from data timestamps, so a quiet
-# day produces no commit.
+# rolls at Wednesday 00:00 Eastern. This job scrapes only when meta.json
+# is behind that calendar week, then rebuilds. From Wednesday 00:00 until
+# this run, the published nav can still say yesterday's week. After it,
+# the nav and the stamped week match. A later quiet day produces no commit.
 
 on:
   schedule:
@@ -30,6 +31,9 @@ jobs:
 
       - name: Week tests
         run: python3 scripts/test_nfl_week.py
+
+      - name: Scrape if the calendar week is ahead of meta.json
+        run: python3 scripts/scrape_weekly.py --if-behind
 
       - name: Rebuild site
         run: python3 scripts/build_site.py
