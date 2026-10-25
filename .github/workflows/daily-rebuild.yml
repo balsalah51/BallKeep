@@ -1,0 +1,50 @@
+name: Daily site rebuild
+
+# Cron is UTC. 05:15 UTC is after midnight in America/New_York both before
+# and after daylight time ends (1:15 AM EDT, 12:15 AM EST). The NFL week
+# rolls at Wednesday 00:00 Eastern, so this rebuild ships the new label
+# without a manual deploy. Stamps come from data timestamps, so a quiet
+# day produces no commit.
+
+on:
+  schedule:
+    - cron: "15 5 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: ballkeep-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Week tests
+        run: python3 scripts/test_nfl_week.py
+
+      - name: Rebuild site
+        run: python3 scripts/build_site.py
+
+      - name: Commit rebuilt pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No site changes"
+            exit 0
+          fi
+          git commit -m "Daily rebuild ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push
+
+      - name: Fail if ranks or news are stale
+        run: python3 scripts/check_freshness.py --ranks-hours 96 --news-hours 30
