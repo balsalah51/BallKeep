@@ -12,7 +12,7 @@ import unicodedata
 from pathlib import Path
 
 from bk_curve import bk_value
-from scrape_weekly import current_week
+from nfl_week import current_week, live_week
 from special_teams import DST_TEAMS, dst_board
 from aggregate_protocol import apply_rank_drops, super_avg
 
@@ -63,7 +63,11 @@ def meta() -> dict:
 
 
 def week_num() -> int:
-    return int(meta().get("week") or 1)
+    """Scraped week from meta.json. Nav uses live_week() from the calendar."""
+    try:
+        return int((_load("meta") or {}).get("week") or live_week())
+    except (TypeError, ValueError):
+        return live_week()
 
 
 def _rank_map(stem: str, pos: str | None = None, rerank: bool = False) -> dict:

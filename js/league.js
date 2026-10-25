@@ -1,8 +1,16 @@
 (function () {
   const SLEEPER = "https://api.sleeper.app/v1";
+  const KEY = "bk-sleeper-league";
   const form = document.getElementById("league-form");
   const app = document.getElementById("league-app");
   if (!form || !app) return;
+
+  function savedLeague() {
+    try { return localStorage.getItem(KEY) || ""; } catch (e) { return ""; }
+  }
+  function rememberLeague(id) {
+    try { if (id) localStorage.setItem(KEY, id); } catch (e) {}
+  }
 
   const state = {
     lookup: null,
@@ -452,6 +460,7 @@
       };
     });
     paint();
+    rememberLeague(id);
     history.replaceState(null, "", "league.html?sleeper=" + encodeURIComponent(id));
   }
 
@@ -493,11 +502,18 @@
   });
 
   const params = new URLSearchParams(location.search);
+  const remembered = savedLeague();
+  if (!params.get("sleeper") && remembered) {
+    document.getElementById("sleeper-id").value = remembered;
+  }
   loadLookup().then(function () {
     if (params.get("demo")) applyDemo();
     else if (params.get("sleeper")) {
       document.getElementById("sleeper-id").value = params.get("sleeper");
       return loadSleeper(params.get("sleeper"));
+    } else if (remembered) {
+      document.getElementById("sleeper-id").value = remembered;
+      return loadSleeper(remembered);
     }
   }).catch(function () {});
 })();

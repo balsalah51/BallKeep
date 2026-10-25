@@ -15,12 +15,11 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
+from nfl_week import KICKOFF, current_week  # noqa: F401
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "weekly"
 UA = "Mozilla/5.0 (compatible; BallKeep/1.0; +https://ballkeep.com)"
-
-# 2026 regular season Week 1 kickoff (Thu).
-KICKOFF = date(2026, 9, 10)
 
 POS = ("qb", "rb", "wr", "te")
 TEAM_ALIAS = {
@@ -36,14 +35,6 @@ ESPN_TEAM = {
     21: "PHI", 22: "ARI", 23: "PIT", 24: "LAC", 25: "SF", 26: "SEA",
     27: "TB", 28: "WAS", 29: "CAR", 30: "JAX", 33: "BAL", 34: "HOU",
 }
-
-
-def current_week(today: date | None = None) -> int:
-    today = today or date.today()
-    if today < KICKOFF:
-        return 1
-    week = 1 + ((today - KICKOFF).days + 3) // 7
-    return min(18, max(1, week))
 
 
 def _team(code: str) -> str:
