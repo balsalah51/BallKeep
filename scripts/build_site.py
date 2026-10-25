@@ -950,7 +950,7 @@ def superflex_redraft(keep, ppr):
 
 NAV_GROUPS = football_nav_groups()
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 81
+CSS_VER = 82
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1128,13 +1128,15 @@ def face_src(r, media, depth=0):
     return asset(img, depth)
 
 
-def face_picture(src: str, alt: str, depth: int = 0, klass: str = "face", w: int = 48, h: int = 48) -> str:
+def face_picture(src: str, alt: str, depth: int = 0, klass: str = "face", w: int = 48, h: int = 48, lazy: bool = True) -> str:
     """WebP when the file exists, with the original jpg/png as the fallback."""
     raw = (src or "img/logo.jpg").lstrip("/")
     webp = re.sub(r"\.(jpe?g|png)$", ".webp", raw, flags=re.I)
+    cls = f' class="{klass}"' if klass else ""
+    loading = ' loading="lazy"' if lazy else ""
     img = (
-        f'<img class="{klass}" src="{esc(asset(raw, depth))}" alt="{esc(alt)}" '
-        f'width="{w}" height="{h}" loading="lazy" />'
+        f'<img{cls} src="{esc(asset(raw, depth))}" alt="{esc(alt)}" '
+        f'width="{w}" height="{h}"{loading} />'
     )
     if webp != raw and (ROOT / webp).exists():
         return f'<picture><source type="image/webp" srcset="{esc(asset(webp, depth))}" />{img}</picture>'
@@ -1154,7 +1156,7 @@ def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ba
         f'<section class="hero masthead" aria-label="{esc(kicker)}">'
         f'<div class="hero-card">'
         f'<div class="mast-row">'
-        f'<img class="mast-mark" src="{esc(logo)}" alt="{esc(alt)}" />'
+        f'{face_picture(logo, alt, klass="mast-mark", w=64, h=64)}'
         f'<div class="mast-copy">'
         f"{sr_h1(sr_title) if sr_title else ''}"
         f'<p class="mast-kicker">{esc(kicker)}</p>'
@@ -2095,7 +2097,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{nav_href("index.html", depth)}">
-        <img src="{asset("img/logo.jpg", depth)}" alt="Ball Keep circular logo" width="56" height="56" />
+        {face_picture("img/logo.jpg", "Ball Keep circular logo", depth=depth, klass="", w=56, h=56, lazy=False)}
         <div>
           <p class="brand-title">{wordmark()}</p>
           <p>40 boards · Superflex · PPR · Sleeper</p>
@@ -2287,9 +2289,10 @@ def matchup_table(rows):
     )
 
 
-def redirect_page(target: str) -> str:
+def redirect_page(target: str, href: str | None = None) -> str:
     """GitHub Pages cannot send a 301. Meta refresh plus canonical keeps the old URL."""
     safe = target.lstrip("/")
+    link = href or safe
     url = f"https://ballkeep.com/{safe}"
     return (
         "<!doctype html>\n<html lang=\"en\">\n<head>\n"
@@ -2297,10 +2300,10 @@ def redirect_page(target: str) -> str:
         "  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n"
         f"  <title>Moved | Ball Keep</title>\n"
         f"  <link rel=\"canonical\" href=\"{url}\" />\n"
-        f"  <meta http-equiv=\"refresh\" content=\"0; url={safe}\" />\n"
+        f"  <meta http-equiv=\"refresh\" content=\"0; url={link}\" />\n"
         "  <meta name=\"robots\" content=\"noindex, follow\" />\n"
         "</head>\n<body>\n"
-        f"  <p>This page moved to <a href=\"{safe}\">{safe}</a>.</p>\n"
+        f"  <p>This page moved to <a href=\"{link}\">{safe}</a>.</p>\n"
         "</body>\n</html>\n"
     )
 
@@ -2818,7 +2821,7 @@ def render_news_pages():
     keep = {f"{s['slug']}.html" for s in stories if s.get("slug")}
     for old in (ROOT / "news").glob("*.html"):
         if old.name not in keep:
-            old.unlink()
+            old.write_text(redirect_page("news.html", href="../news.html"))
 
     cards = "".join(news_card(s) for s in stories) or (
         '<p class="note">No stories on this board yet.</p>'
@@ -3295,11 +3298,13 @@ def render_player_pages(profiles):
                 chips.append(f'<span class="chip{cls}">{esc(label)} #{p["lists"][key]}</span>')
         chip_html = f'<div class="chips">{"".join(chips)}</div>' if chips else ""
 
-        photo = ""
-        if img:
-            photo = f'<img src="{asset(img, 1)}" alt="{esc(face_alt(p["name"]))}" />'
-        else:
-            photo = f'<img src="{asset("img/logo.jpg", 1)}" alt="{esc(card_alt(p["name"]))}" />'
+        photo = face_picture(
+            img or "img/logo.jpg",
+            face_alt(p["name"]) if img else card_alt(p["name"]),
+            depth=1,
+            w=160,
+            h=160,
+        )
 
         video = ""
         if yt:
@@ -3392,17 +3397,17 @@ def render_player_pages(profiles):
         )
         keep_html.add(f"{p['slug']}.html")
 
-        thumb = asset(img, 1) if img else asset("img/logo.jpg", 1)
+        thumb = face_picture(img or "img/logo.jpg", face_alt(p["name"]), depth=1, w=96, h=96)
         cards.append(
             f'<a class="tile player-card" href="{p["slug"]}.html" data-pos="{esc(p.get("pos") or "")}" data-name="{esc((p.get("name") or "").lower())}">'
-            f'<img src="{thumb}" alt="{esc(face_alt(p["name"]))}" />'
+            f"{thumb}"
             f'<h3>{esc(p["name"])}</h3>'
             f'<p class="note">{esc(p["pos"])} {esc(p["team"])}</p></a>'
         )
 
     for old in out_dir.glob("*.html"):
-        if old.name not in keep_html:
-            old.unlink()
+        if old.name not in keep_html and old.name != "index.html":
+            old.write_text(redirect_page("players/index.html", href="index.html"))
 
     hub = f"""
     <p class="kicker">Depth Chart · {UPDATED}</p>

@@ -1208,7 +1208,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=81" in doc
+    assert "css/site.css?v=82" in doc
     assert 'id="today"' in html
     assert "week-dst.html" in html
     assert 'href="/"' in doc

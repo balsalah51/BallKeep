@@ -1150,7 +1150,10 @@ body.home .home-hero-media {
   position: absolute; inset: 0; z-index: -1;
   background:
     linear-gradient(180deg, rgba(8, 18, 30, 0.28) 0%, rgba(8, 18, 30, 0.52) 42%, rgba(8, 18, 30, 0.92) 100%),
-    url("../img/hero.jpg") center/cover no-repeat;
+    image-set(
+      url("../img/hero.webp") type("image/webp"),
+      url("../img/hero.jpg") type("image/jpeg")
+    ) center/cover no-repeat;
 }
 body.home .home-hero-copy {
   padding: 22px 26px 20px; max-width: 46rem;
