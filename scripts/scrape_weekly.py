@@ -298,6 +298,9 @@ def scrape_fp_stats() -> None:
                     rec[lab.lower().replace(" ", "_").replace("%", "pct").replace("/", "_")] = val
             players.append(rec)
         print(f"  stats {pos} n={len(players)}")
+        if not players:
+            print(f"  keep existing fp-stats-{pos}; empty parse is not a refresh")
+            continue
         dump(f"fp-stats-{pos}", {"season": 2025, "players": players})
 
 
