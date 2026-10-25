@@ -504,8 +504,23 @@ def main():
         sports = ["football", "baseball"]
     else:
         sports = [args.sport]
+    NEWS_DIR.mkdir(parents=True, exist_ok=True)
+    failed = []
     for sport in sports:
-        run(sport, sleep_s=args.sleep)
+        try:
+            run(sport, sleep_s=args.sleep)
+        except Exception as exc:
+            failed.append((sport, str(exc)))
+            print(f"BK News scrape failed: {sport}: {exc}", file=sys.stderr)
+    log = {
+        "at": iso(utcnow()),
+        "sports": sports,
+        "failed": [{"sport": s, "error": e} for s, e in failed],
+        "ok": not failed,
+    }
+    save_json(NEWS_DIR / "last-run.json", log)
+    if failed:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

@@ -37,7 +37,7 @@ INJURY_RE = re.compile(
     re.I,
 )
 ROSTER_RE = re.compile(
-    r"\b(waiv(?:e|ed|es)|cut|released|signed|claimed|activated|roster|"
+    r"\b(waiv(?:e|ed|es)|cut|released|signs?|signed|signing|claimed|activated|roster|"
     r"practice squad|elevat(?:e|ed)|designated|returned to|added to|"
     r"dropped|re-sign(?:ed)?|contract|extension|"
     r"dfa|designated for assignment|optioned|called up|recalled|"
@@ -50,12 +50,28 @@ COACH_RE = re.compile(
     r"scheme|play-caller|coordinator|manager|skipper)\b",
     re.I,
 )
-TRADE_RE = re.compile(r"\b(trade[ds]?|dealt|acquired|sent to|in exchange|transfer[s]?|loaned)\b", re.I)
-PRACTICE_RE = re.compile(
-    r"\b(practice|walkthrough|training camp|padded|walk-through|full go|"
-    r"did not practice|returned to practice)\b",
+TRADE_RE = re.compile(
+    r"\b(trade[ds]?|dealt|acquired|sent to|in exchange|transfer[s]?|loaned|"
+    r"trade rumor|buy low|sell high|buy/sell)\b",
     re.I,
 )
+PRACTICE_RE = re.compile(
+    r"\b(practice|walkthrough|padded|walk-through|full go|"
+    r"did not practice|returned to practice|limited participant|"
+    r"full participant|dnp report)\b",
+    re.I,
+)
+CAMP_RE = re.compile(r"\b(training camp|preseason|otak?s|camp battle|padded practice)\b", re.I)
+JUNK_X_RE = re.compile(
+    r"(read more:\s*)?(https?://)?t\.co/\S+|#\w+",
+    re.I,
+)
+JUNK_X_CORE_RE = re.compile(
+    r"^(read more:\s*)?(https?://)?(t\.co/\S+|\S*twitter\.com/\S+|\S*x\.com/\S+)",
+    re.I,
+)
+PRIOR_SEASON_RE = re.compile(r"\b(2023|2024|2025)\b")
+OLD_WEEK_RE = re.compile(r"\bweek\s+(1[0-8]|[89])\b", re.I)
 
 AMBIGUOUS_LAST = {
     "williams", "brown", "jones", "johnson", "smith", "davis", "moore",
@@ -153,18 +169,25 @@ def jaccard(a: set[str], b: set[str]) -> float:
     return len(a & b) / len(a | b)
 
 
-def categorize(text: str) -> str:
-    blob = text or ""
-    if INJURY_RE.search(blob):
-        return "injury"
-    if TRADE_RE.search(blob):
-        return "trade"
-    if ROSTER_RE.search(blob):
-        return "roster"
-    if COACH_RE.search(blob):
-        return "coach"
-    if PRACTICE_RE.search(blob):
-        return "practice"
+def categorize(text: str, body: str = "") -> str:
+    """Title first. Signings and practice-squad moves are roster, not injury."""
+    title = text or ""
+    body = body or ""
+    if CAMP_RE.search(title) and not INJURY_RE.search(title) and not ROSTER_RE.search(title):
+        return "wire"
+    checks = (
+        (TRADE_RE, "trade"),
+        (ROSTER_RE, "roster"),
+        (COACH_RE, "coach"),
+        (PRACTICE_RE, "practice"),
+        (INJURY_RE, "injury"),
+    )
+    for fn, cat in checks:
+        if fn.search(title):
+            return cat
+    for fn, cat in checks:
+        if fn.search(body):
+            return cat
     return "wire"
 
 
@@ -374,9 +397,9 @@ def cluster_items(items: list[dict], hours: float = 36.0) -> list[list[dict]]:
     for item in items:
         placed = False
         for group in groups:
-            if len(group) >= 12:
+            if len(group) >= 8:
                 ja = jaccard(tokens(item.get("title") or ""), tokens(group[0].get("title") or ""))
-                if ja < 0.38:
+                if ja < 0.45:
                     continue
             if _same_cluster(item, group[0], hours):
                 group.append(item)
@@ -402,9 +425,9 @@ GENERIC_LONG = {
 def _same_cluster(a: dict, b: dict, hours: float) -> bool:
     ta, tb = tokens(a.get("title") or ""), tokens(b.get("title") or "")
     ja = jaccard(ta, tb)
-    if ja >= 0.38:
-        return True
     long_hit = {t for t in (ta & tb) if len(t) >= 7 and t not in GENERIC_LONG}
+    if ja >= 0.45:
+        return True
     if ja >= 0.22 and long_hit:
         return True
     keys_a = {p["key"] for p in a.get("players") or []}
@@ -414,6 +437,7 @@ def _same_cluster(a: dict, b: dict, hours: float) -> bool:
         and len(keys_a) <= 3 and len(keys_b) <= 3
         and a.get("category") == b.get("category")
         and a.get("category") not in {"wire", None}
+        and (long_hit or ja >= 0.2)
     ):
         da, db = parse_dt(a.get("published")), parse_dt(b.get("published"))
         if da and db and abs((da - db).total_seconds()) <= hours * 3600:
@@ -495,9 +519,16 @@ def pick_headline(items: list[dict]) -> str:
         scored.append((kind_bonus + length_score, head))
     scored.sort(reverse=True)
     headline = scored[0][1] if scored else "Update"
-    if len(headline) > 140:
-        headline = headline[:137].rsplit(" ", 1)[0] + "…"
+    headline = trim_headline(headline)
     return headline
+
+
+def trim_headline(headline: str, limit: int = 110) -> str:
+    head = (headline or "").strip()
+    if len(head) <= limit:
+        return head
+    cut = head[:limit].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return (cut or head[:limit]) + "…"
 
 
 def merge_story(existing: dict | None, items: list[dict], sport: str) -> dict:
@@ -560,7 +591,14 @@ def merge_story(existing: dict | None, items: list[dict], sport: str) -> dict:
         if old_p and (not published or old_p < published):
             published = old_p
 
-    slug = (existing or {}).get("slug") or story_slug(headline, category, sport)
+    extra = "|".join(
+        x for x in (
+            sport,
+            (players[0].get("key") if players else ""),
+            (sources[0].get("url") if sources else ""),
+        ) if x
+    )
+    slug = (existing or {}).get("slug") or story_slug(headline, category, extra)
     return {
         "id": (existing or {}).get("id") or slug,
         "slug": slug,
@@ -601,6 +639,65 @@ def story_score(story: dict) -> float:
     return (nsrc * 1.2 + nplay * 4 + cat) * recency
 
 
+def is_junk_cluster(story: dict) -> bool:
+    title = (story.get("headline") or "").strip()
+    blurb = (story.get("blurb") or "").strip()
+    if JUNK_X_CORE_RE.search(title) and len(title) < 90:
+        return True
+    stripped = re.sub(r"(#\w+\s*)+", "", title).strip()
+    if len(stripped) < 12:
+        return True
+    if JUNK_X_CORE_RE.search(blurb) and len(re.sub(r"[#\s]", "", blurb)) < 40:
+        return True
+    return False
+
+
+def is_fresh_story(story: dict, max_hours: float = 168.0) -> bool:
+    when = story.get("updated") or story.get("published")
+    dt = parse_dt(when)
+    if not dt:
+        return False
+    hours = max(0.0, (utcnow() - dt).total_seconds() / 3600.0)
+    if hours > max_hours:
+        return False
+    blob = f"{story.get('headline') or ''} {story.get('blurb') or ''}"
+    if CAMP_RE.search(blob) and not INJURY_RE.search(blob):
+        return False
+    if PRIOR_SEASON_RE.search(blob) and "2026" not in blob:
+        return False
+    if (story.get("sport") or "") == "football":
+        try:
+            from nfl_week import is_in_current_week, live_week
+            if not is_in_current_week(when):
+                return False
+            m = OLD_WEEK_RE.search(blob)
+            if m and abs(int(m.group(1)) - live_week()) >= 3:
+                return False
+        except Exception:
+            pass
+    return True
+
+
+def uniquify_slugs(stories: list[dict]) -> list[dict]:
+    seen: set[str] = set()
+    out = []
+    for i, s in enumerate(stories):
+        s = dict(s)
+        extra = s.get("id") or ""
+        srcs = s.get("sources") or []
+        if srcs:
+            extra = extra or (srcs[0].get("url") or "")
+        extra = extra or (s.get("updated") or str(i))
+        slug = s.get("slug") or story_slug(s.get("headline") or "", s.get("category") or "wire", extra)
+        if slug in seen:
+            slug = story_slug(s.get("headline") or "", s.get("category") or "wire", extra + f"|{i}")
+        seen.add(slug)
+        s["slug"] = slug
+        s["id"] = s.get("id") or slug
+        out.append(s)
+    return out
+
+
 def is_publishable(story: dict) -> bool:
     sources = story.get("sources") or []
     kinds = {s.get("kind") for s in sources}
@@ -608,6 +705,8 @@ def is_publishable(story: dict) -> bool:
     if title in {"Update", ""} or len(title) < 18:
         return False
     if re.search(r"call/?text\s*->", title, re.I):
+        return False
+    if is_junk_cluster(story):
         return False
     blob = f"{title} {story.get('blurb') or ''}".lower()
     if story.get("sport") == "football":
@@ -624,13 +723,13 @@ def is_publishable(story: dict) -> bool:
 
 
 def prune_stories(stories: list[dict], keep: int = 60) -> list[dict]:
-    stories = [s for s in stories if is_publishable(s)]
+    stories = [s for s in stories if is_publishable(s) and is_fresh_story(s)]
     stories = sorted(
         stories,
         key=lambda s: (story_score(s), s.get("updated") or s.get("published") or ""),
         reverse=True,
     )
-    return stories[:keep]
+    return uniquify_slugs(stories[:keep])
 
 
 def prune_seen(seen: dict, keep: int = 4000) -> dict:

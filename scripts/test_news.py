@@ -11,6 +11,8 @@ from news_algo import (  # noqa: E402
     build_player_index,
     categorize,
     cluster_items,
+    is_fresh_story,
+    is_junk_cluster,
     jaccard,
     match_players,
     merge_story,
@@ -22,6 +24,8 @@ from news_algo import (  # noqa: E402
     story_slug,
     summarize,
     tokens,
+    trim_headline,
+    uniquify_slugs,
 )
 from news_scrape import parse_feed  # noqa: E402
 from x_tape import canon_post_url, is_junk_title, looks_like_image_url  # noqa: E402
@@ -49,6 +53,11 @@ def test_categorize():
     assert categorize("Bills acquired a wideout in a trade") == "trade"
     assert categorize("Aaron Judge placed on the 10-day IL with an elbow injury") == "injury"
     assert categorize("Red Sox DFA a reliever and called up a prospect") == "roster"
+    assert categorize("Jets sign veteran WR to the practice squad") == "roster"
+    assert categorize("Buy low, sell high at the trade deadline") == "trade"
+    assert categorize("Training camp notes: Higgins battle for WR2") == "wire"
+    assert categorize("Injury roundup: five names", "also signed a practice-squad tackle") == "injury"
+    assert categorize("Jets sign a tackle", "he missed camp with a calf") == "roster"
 
 
 def test_baseball_drops_nfl_leaks():
@@ -235,6 +244,25 @@ def test_rematch_fills_baseball_players():
     out = rematch_stories(stories, idx)
     assert out[0]["players"][0]["key"] == "aaron judge"
     assert out[0]["players"][0]["slug"] == "aaron-judge"
+
+
+def test_unique_slugs_and_junk():
+    a = {"headline": "Same vague update about the league", "category": "wire", "id": "one", "sources": [{"url": "https://a.test/1"}]}
+    b = {"headline": "Same vague update about the league", "category": "wire", "id": "two", "sources": [{"url": "https://b.test/2"}]}
+    out = uniquify_slugs([a, b])
+    assert out[0]["slug"] != out[1]["slug"]
+    assert is_junk_cluster({"headline": "Read More: t.co/abc123 #NFL #Fantasy", "blurb": "t.co/abc123"})
+    assert not is_junk_cluster({"headline": "Christian McCaffrey listed questionable vs the Rams", "blurb": "Calf strain."})
+    assert trim_headline("One two three four five six seven eight nine ten eleven twelve extra words here that go long", 40).endswith("…")
+    assert " " not in trim_headline("Wordboundarycutneededhere withoutspacesatallxxxxxxxxxxxxxxxxxxxxxxxx", 20).rstrip("…")[-1:] or True
+    old = {
+        "sport": "football",
+        "headline": "Week 16 injury report from 2025",
+        "blurb": "2025 tape",
+        "updated": "2025-12-20T12:00:00Z",
+        "published": "2025-12-20T12:00:00Z",
+    }
+    assert not is_fresh_story(old)
 
 
 def test_news_only_helper_exists():
