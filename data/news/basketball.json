@@ -1,8 +1,246 @@
 {
   "sport": "basketball",
-  "updated": "2026-10-25T20:57:30Z",
-  "fresh": 483,
+  "updated": "2026-10-25T23:20:54Z",
+  "fresh": 671,
   "stories": [
+    {
+      "id": "pistons-lose-200m-man-duren-least-two-weeks-9f90b35e",
+      "slug": "pistons-lose-200m-man-duren-least-two-weeks-9f90b35e",
+      "sport": "basketball",
+      "headline": "Will Ausar Thompson bets be refunded after injury during Pistons vs. Heat on Friday 10/23/26?",
+      "blurb": "Will Ace Bailey bets be refunded after injury during Jazz vs.",
+      "summary": "Will Ace Bailey bets be refunded after injury during Jazz vs. Will LaMelo Ball bets be refunded after injury during Hornets vs. Pistons center Jalen Duren, who signed a five-year extension earlier this month, will be out at least two weeks with a right hamstring strain. Aggregated from DraftKings Network, ESPN NBA, Yahoo Sports, NBC Sports, The New York Times and 4 more.",
+      "category": "injury",
+      "published": "2023-10-03T07:00:00Z",
+      "updated": "2026-10-25T22:07:31Z",
+      "players": [
+        {
+          "key": "ace bailey",
+          "name": "Ace Bailey",
+          "slug": "ace-bailey",
+          "pos": "SF",
+          "team": "UTA"
+        },
+        {
+          "key": "lamelo ball",
+          "name": "LaMelo Ball",
+          "slug": "lamelo-ball",
+          "pos": "PG",
+          "team": "CHA"
+        },
+        {
+          "key": "ausar thompson",
+          "name": "Ausar Thompson",
+          "slug": "ausar-thompson",
+          "pos": "SF",
+          "team": "DET"
+        },
+        {
+          "key": "jalen duren",
+          "name": "Jalen Duren",
+          "slug": "jalen-duren",
+          "pos": "C",
+          "team": "DET"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Pistons lose $200M man Duren for at least two weeks with hamstring strain",
+          "url": "https://www.espn.com/nba/story/_/id/50277066/pistons-jalen-duren-hamstring-strain-least-2-weeks",
+          "publisher": "ESPN NBA",
+          "kind": "article",
+          "snippet": "Pistons center Jalen Duren, who signed a five-year extension earlier this month, will be out at least two weeks with a right hamstring strain.",
+          "published": "Sun, 25 Oct 2026 11:44:52 EST"
+        },
+        {
+          "title": "Pistons C Jalen Duren strains hamstring, will be re-evaluated in 2 weeks",
+          "url": "https://sports.yahoo.com/nba/article/pistons-c-jalen-duren-strains-hamstring-will-be-re-evaluated-in-2-weeks-151826591.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "If he misses two weeks, Duren is expected to be out for Detroit's next six games.",
+          "published": "Sun, 25 Oct 2026 15:18:26 +0000"
+        },
+        {
+          "title": "Pistons' center Jalen Duren suffers right hamstring strain, out at least two weeks",
+          "url": "https://sports.yahoo.com/articles/pistons-center-jalen-duren-suffers-155201197.html",
+          "publisher": "NBC Sports",
+          "kind": "article",
+          "snippet": "Duren is the anchor in the middle for the Pistons on both ends of the court.",
+          "published": "Sun, 25 Oct 2026 15:52:01 +0000"
+        },
+        {
+          "title": "Jalen Duren (hamstring) out at least 2 weeks; Ausar Thompson questionable vs. 76ers",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQzdIcDBiVktlSkZnMVhKejRDMnQySHJHdERjeFFybElZVlRzQXdXSlFwUXNXREdZVkE1UGlIcDIxS3JqaS1EUklJcEpkWUd5eVpOMFdsYTdxWTRDMjlsWHFycGdtMFhITmpFWHNneXlGX1dGODhEaDE5WmVPUTBXTExlWXNzUWdMZ29Hc1JpQUZ4MmFKQ3d4VzEwbGY?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Jalen Duren (hamstring) out at least 2 weeks; Ausar Thompson questionable vs. 76ers The New York Times",
+          "published": "Sat, 24 Oct 2026 21:01:00 GMT"
+        },
+        {
+          "title": "Pistons lose Jalen Duren, Ausar Thompson but ride depth, 3-pointers past Heat",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxON0lQOGh0Y295b0kzUWkweVhuWlExOUFRYWh0U3h1NjAtYkpLNUp2TVZVaHU2RVM0MnJPeFIyMVRlU2tTSWxSVmIyY2lNLVdaeF9IY1E4YXZfM0NGc1ByOGZPaHB4d3l2SjhnOGd4S1hXdlhJaXJRanRkSDBhN01hSlVLVjU3RDNQUmt6dnJKSQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Pistons lose Jalen Duren, Ausar Thompson but ride depth, 3-pointers past Heat The New York Times",
+          "published": "Sat, 24 Oct 2026 21:03:57 GMT"
+        },
+        {
+          "title": "What happened to Ausar Thompson? Live injury updates for Pistons vs. Heat on Friday 10/23/26",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVDhuTFN4UmJ4ODVVSDVLQWdXTldCWFVEeHVsS0ozTm9ibWtQUkh1Z0xPczhGSDRnUGxFRjIyNlRNWFVwS0ZKZkNMRU02c3dQbm5SbG9XZTRkRFRYOEdCQmdhWWsyVHFVTjZMd2RacnBmclNoZ0dkNDRON2JDM3BNSTVfQkR4clhFTFNQNkRVVmtya2Y4ZmRaNzc5UDhrNlE3eVlSSXk2OS1iZV9sZXVvSGRvU2VRSkRsVXU0TWN5blk3Z3hTTkFWYjJWS09FWERS?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "What happened to Ausar Thompson? Live injury updates for Pistons vs. Heat on Friday 10/23/26 DraftKings Network",
+          "published": "Sat, 24 Oct 2026 01:54:53 GMT"
+        },
+        {
+          "title": "Will Ausar Thompson bets be refunded after injury during Pistons vs. Heat on Friday 10/23/26?",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQT3dMM3dzQlFkVlZyVFBpWHJ4RlBiZ3lWczBYNjVWNEJDSEFlMkxfMDU4bm5ESlhUM2w4ZXdxQmhtRlVoVXhmVm5GMEMtcXNBc1FfRjhCcXZoSzVNdUlnaEN5ckVYQzVHcVBfaTVDZ2tuX3AxbzN5QURnRTAwc29zZXdWZUU1RDJvdjRTV1J6eHc4aUwtN0JrZUp4ZHRXci16RW95XzNOZkdDNURFTGsyTV93TGJKSWZlLVk5emdRQlNWSWw5cFNwZlNLamcyUE95YWc?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Will Ausar Thompson bets be refunded after injury during Pistons vs. Heat on Friday 10/23/26? DraftKings Network",
+          "published": "Sat, 24 Oct 2026 03:24:25 GMT"
+        },
+        {
+          "title": "Ausar Thompson injury update: Pistons wing slips and exits in pain",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZVhlU3hXajhNSnJhdHhKNUdZSHJhNS03V1RVTlE0dnd0NEJnSkhDLUtZVWQwRlJZejJLMDBxUDlkdkk0ak96WU9QanE1dFFXdWU4QWgtNmFsQTRUcGQyS1FEZlplZk5yWm5TWmswRDUxdW1QUkkwQkV5VVkzNWM1N2lHUmpTZDNNZlBN?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Ausar Thompson injury update: Pistons wing slips and exits in pain Yahoo Sports",
+          "published": "Sat, 24 Oct 2026 02:04:00 GMT"
+        },
+        {
+          "title": "Pistons Could Have a Bigger Problem if Ausar Thompson Is Out",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMTBmVE00SnJodkFQOEtwdXRlMlpacG1tRkNTZm5ZU2Rkc3cyVkVrYnBxZlRZaXNaTVZmclhFNENVS1pyeHZ0Y3lYSkZDeHVDN1VuNlpzYkNzUXVXeU51UEhySlhtdW9OVjZCTjltTXFOZ1pzc0gwdDlxdmM2VXFLX0hIYVh1NUh6VzFIUEVoaUF3VnptczJBak1DVW9sX2V1WTMzUkN4eloyQQ?oc=5",
+          "publisher": "Heavy.com",
+          "kind": "article",
+          "snippet": "Pistons Could Have a Bigger Problem if Ausar Thompson Is Out Heavy.com",
+          "published": "Sat, 24 Oct 2026 08:56:09 GMT"
+        },
+        {
+          "title": "Is Pistons rookie Ausar Thompson a starter? Don’t rule it out",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWTVhcXlIMWRPR1JyYUNNVjJSYVdlLVVOVzZSUDZScXlhWGJSQ2dab1Bwbk9GSU5yZmpOM3l3YVdMZnIxVUN0Q21vQ1V0RTNQV2ZFdTRzTTN6dWhIZFQwWHAySzZpQkxZU1laeFhiTXlHYjk5OXBXWS1RSFF5V09ia3hUMldZU1VBZkdj?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Is Pistons rookie Ausar Thompson a starter? Don’t rule it out The New York Times",
+          "published": "Tue, 03 Oct 2023 07:00:00 GMT"
+        },
+        {
+          "title": "Pistons C Jalen Duren out at least two weeks with hamstring strain",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9wUF9MYUpSazZROEVzbGZja2NVWmc4ZzI2TXQyNi1Bb25CdVVPQk1jeHFUYURVQ1dicThOQk4yT3dLSzljR25GNEc2RVZPajJZYW8wM3Q2Y0xpbGJNNVhnWGw3RXVxd2VTT1JsSVVQakpnaERWYXpjODNHdkRxQQ?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Pistons C Jalen Duren out at least two weeks with hamstring strain ESPN",
+          "published": "Sun, 25 Oct 2026 15:02:12 GMT"
+        },
+        {
+          "title": "Jalen Duren injury update: Pistons All-Star will miss time with hamstring injury",
+          "url": "https://sports.yahoo.com/articles/jalen-duren-injury-pistons-star-185534981.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "Pistons big man depth will be tested without their All-Star",
+          "published": "Sun, 25 Oct 2026 18:55:34 +0000"
+        },
+        {
+          "title": "Ausar Thompson Injury: Ruled out vs. Philadelphia",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZlRSOGNvQU1aekpMa2VCTUd3UHA3eVU5bm40TlFXdGNoYXFESTltMTctX0E5SFgzM0hCTW9jVS1hQlg3ZDhXTEk4aUpRQjlra0J4cmo0dGt1b0tpalVhYnJTODhqbEIyTWtYMUhVUFpGTC1HamM2TU1hYUFGeFROVjB6Y1FweUNKc2pnbnpEWjUyOXlfTUFDbjdNSjNReWJMQmc?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Ausar Thompson Injury: Ruled out vs. Philadelphia RotoWire",
+          "published": "Sun, 25 Oct 2026 22:07:31 GMT"
+        },
+        {
+          "title": "Will Ace Bailey bets be refunded after injury during Jazz vs. Pistons on Friday 12/26/25?",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdFJqeWFQbzRuWkVFVWgzWVExeWZPLWJnMHRqTWJmeXYtOHplUE5ZTTZjb01Ja25mRDZrNEEtT3R3UEp6NDQ1ZF8xeTNCTGJLZHFIejdJbHhCdXVyaXhMZ0tfQ19SMnFoclVCRDFjcVAwQm1vVDFHc0NlLS1FZElZbDF0T0lzWHpRVW9seFZtY09GZDd3U0VHclFMZnhZakgxcnFDcnZnUkZEdEczYVMyR0dabDNKRDBXUlJSLWV3ci1WZkptV0UxTDB4MDk?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Will Ace Bailey bets be refunded after injury during Jazz vs. Pistons on Friday 12/26/25? DraftKings Network",
+          "published": "Fri, 26 Dec 2025 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "embiid-walker-sixers-pistons-finish-back-back-9951aa98",
+      "slug": "embiid-walker-sixers-pistons-finish-back-back-9951aa98",
+      "sport": "basketball",
+      "headline": "Embiid, Edgecombe and Walker out for Sixers vs. Pistons to finish back-to-back",
+      "blurb": "The Sixers will be down Joel Embiid, VJ Edgecombe and Jabari Walker on Sunday night.",
+      "summary": "The Sixers will be down Joel Embiid, VJ Edgecombe and Jabari Walker on Sunday night. VJ Edgecombe Injury: Out Sunday RotoWire Are LeBron James, Joel Embiid playing tonight? Aggregated from NBC Sports Philadelphia, RotoWire, Yahoo Sports.",
+      "category": "injury",
+      "published": "2026-10-25T14:32:08Z",
+      "updated": "2026-10-25T22:50:30Z",
+      "players": [
+        {
+          "key": "jabari walker",
+          "name": "Jabari Walker",
+          "slug": "jabari-walker",
+          "pos": "PF",
+          "team": "POR"
+        },
+        {
+          "key": "vj edgecombe",
+          "name": "Vj Edgecombe",
+          "slug": "vj-edgecombe",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "joel embiid",
+          "name": "Joel Embiid",
+          "slug": "joel-embiid",
+          "pos": "C",
+          "team": "PHI"
+        },
+        {
+          "key": "lebron james",
+          "name": "LeBron James",
+          "slug": "lebron-james",
+          "pos": "SF",
+          "team": "LAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Embiid and Walker out for Sixers vs. Pistons to finish back-to-back",
+          "url": "https://sports.yahoo.com/articles/embiid-walker-sixers-vs-pistons-143208619.html",
+          "publisher": "NBC Sports Philadelphia",
+          "kind": "article",
+          "snippet": "The Sixers will be down Joel Embiid and Jabari Walker on Sunday night.",
+          "published": "Sun, 25 Oct 2026 14:32:08 +0000"
+        },
+        {
+          "title": "Embiid, Edgecombe and Walker out for Sixers vs. Pistons to finish back-to-back",
+          "url": "https://sports.yahoo.com/articles/embiid-edgecombe-walker-sixers-vs-143208198.html",
+          "publisher": "NBC Sports Philadelphia",
+          "kind": "article",
+          "snippet": "The Sixers will be down Joel Embiid, VJ Edgecombe and Jabari Walker on Sunday night.",
+          "published": "Sun, 25 Oct 2026 14:32:08 +0000"
+        },
+        {
+          "title": "VJ Edgecombe Injury: Out Sunday",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQckN5NWFDdlA3aUx4c25xRFdCTkhucFBTQ2FoYlBsSTFvU3paM3VYZDZrS0VleHlWZjcxS0lQZWh0OXZteTdZXzVuYTg3bVJoZW9mZVdfU19sbmxSMnM4bVRJU2tUSi1UZkJRUkRTUDA5Z1NXUFNwU3R3OEktV3BISi1fWGV0MHE2M2U4?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "VJ Edgecombe Injury: Out Sunday RotoWire",
+          "published": "Sun, 25 Oct 2026 22:50:30 GMT"
+        },
+        {
+          "title": "Are LeBron James, Joel Embiid playing tonight? 76ers vs. Pistons injury report",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV1FWU3paLTZTX0tjRWFNMGc3Ym1FZ0V0b1c2d0ozdnBwaXBVbS1xNjZ3YzNUYUZFWHJ1Nk41bkhVVWRXZk5RQmZleV9hTDZmWFh4ZEFWQmdHQTVuSldWZXZTa2o1NVVxaHctbDhSLTdIeWZXaWpyazZUVl9SZEdrRFFHLU1ISE9S?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Are LeBron James, Joel Embiid playing tonight? 76ers vs. Pistons injury report Yahoo Sports",
+          "published": "Sun, 25 Oct 2026 19:34:35 GMT"
+        },
+        {
+          "title": "VJ Edgecombe Injury: Questionable Sunday",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbjQtdWpEdS1yakZFUndRVUxpc3B2NUd0eHZiNWhaRXppRWNfZFlnaGJua3RvYlczSGVmdWNhNzExVHZ3OTd5VkI3OUlJelM5ZE9VX2ZHZV9jOGNyWUFjMEtyOUZhaHZKM1RHV1ZHV0Etcm5Hc283Sl9qYXNBaTlCeXBvcVlpZXA3VW0zRFhtQmNYbmphRUNZ?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "VJ Edgecombe Injury: Questionable Sunday RotoWire",
+          "published": "Sun, 25 Oct 2026 21:08:18 GMT"
+        }
+      ]
+    },
     {
       "id": "jalen-duren-made-himself-clear-i-want-detroit-5e0dfbcf",
       "slug": "jalen-duren-made-himself-clear-i-want-detroit-5e0dfbcf",
@@ -261,123 +499,6 @@
       ]
     },
     {
-      "id": "pistons-lose-200m-man-duren-least-two-weeks-9f90b35e",
-      "slug": "pistons-lose-200m-man-duren-least-two-weeks-9f90b35e",
-      "sport": "basketball",
-      "headline": "Will Ausar Thompson bets be refunded after injury during Pistons vs. Heat on Friday 10/23/26?",
-      "blurb": "Pistons C Jalen Duren out at least two weeks with hamstring strain ESPN",
-      "summary": "Pistons C Jalen Duren out at least two weeks with hamstring strain ESPN Pistons center Jalen Duren, who signed a five-year extension earlier this month, will be out at least two weeks with a right hamstring strain. If he misses two weeks, Duren is expected to be out for Detroit's next six games. Aggregated from ESPN, ESPN NBA, Yahoo Sports, NBC Sports, RotoWire and 4 more.",
-      "category": "injury",
-      "published": "2023-10-03T07:00:00Z",
-      "updated": "2026-10-25T16:44:52Z",
-      "players": [
-        {
-          "key": "jalen duren",
-          "name": "Jalen Duren",
-          "slug": "jalen-duren",
-          "pos": "C",
-          "team": "DET"
-        },
-        {
-          "key": "ausar thompson",
-          "name": "Ausar Thompson",
-          "slug": "ausar-thompson",
-          "pos": "SF",
-          "team": "DET"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Pistons lose $200M man Duren for at least two weeks with hamstring strain",
-          "url": "https://www.espn.com/nba/story/_/id/50277066/pistons-jalen-duren-hamstring-strain-least-2-weeks",
-          "publisher": "ESPN NBA",
-          "kind": "article",
-          "snippet": "Pistons center Jalen Duren, who signed a five-year extension earlier this month, will be out at least two weeks with a right hamstring strain.",
-          "published": "Sun, 25 Oct 2026 11:44:52 EST"
-        },
-        {
-          "title": "Pistons C Jalen Duren strains hamstring, will be re-evaluated in 2 weeks",
-          "url": "https://sports.yahoo.com/nba/article/pistons-c-jalen-duren-strains-hamstring-will-be-re-evaluated-in-2-weeks-151826591.html",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "If he misses two weeks, Duren is expected to be out for Detroit's next six games.",
-          "published": "Sun, 25 Oct 2026 15:18:26 +0000"
-        },
-        {
-          "title": "Pistons' center Jalen Duren suffers right hamstring strain, out at least two weeks",
-          "url": "https://sports.yahoo.com/articles/pistons-center-jalen-duren-suffers-155201197.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Duren is the anchor in the middle for the Pistons on both ends of the court.",
-          "published": "Sun, 25 Oct 2026 15:52:01 +0000"
-        },
-        {
-          "title": "Jalen Duren (hamstring) out at least 2 weeks; Ausar Thompson questionable vs. 76ers",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQzdIcDBiVktlSkZnMVhKejRDMnQySHJHdERjeFFybElZVlRzQXdXSlFwUXNXREdZVkE1UGlIcDIxS3JqaS1EUklJcEpkWUd5eVpOMFdsYTdxWTRDMjlsWHFycGdtMFhITmpFWHNneXlGX1dGODhEaDE5WmVPUTBXTExlWXNzUWdMZ29Hc1JpQUZ4MmFKQ3d4VzEwbGY?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Jalen Duren (hamstring) out at least 2 weeks; Ausar Thompson questionable vs. 76ers The New York Times",
-          "published": "Sat, 24 Oct 2026 21:01:00 GMT"
-        },
-        {
-          "title": "Pistons lose Jalen Duren, Ausar Thompson but ride depth, 3-pointers past Heat",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxON0lQOGh0Y295b0kzUWkweVhuWlExOUFRYWh0U3h1NjAtYkpLNUp2TVZVaHU2RVM0MnJPeFIyMVRlU2tTSWxSVmIyY2lNLVdaeF9IY1E4YXZfM0NGc1ByOGZPaHB4d3l2SjhnOGd4S1hXdlhJaXJRanRkSDBhN01hSlVLVjU3RDNQUmt6dnJKSQ?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Pistons lose Jalen Duren, Ausar Thompson but ride depth, 3-pointers past Heat The New York Times",
-          "published": "Sat, 24 Oct 2026 21:03:57 GMT"
-        },
-        {
-          "title": "What happened to Ausar Thompson? Live injury updates for Pistons vs. Heat on Friday 10/23/26",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVDhuTFN4UmJ4ODVVSDVLQWdXTldCWFVEeHVsS0ozTm9ibWtQUkh1Z0xPczhGSDRnUGxFRjIyNlRNWFVwS0ZKZkNMRU02c3dQbm5SbG9XZTRkRFRYOEdCQmdhWWsyVHFVTjZMd2RacnBmclNoZ0dkNDRON2JDM3BNSTVfQkR4clhFTFNQNkRVVmtya2Y4ZmRaNzc5UDhrNlE3eVlSSXk2OS1iZV9sZXVvSGRvU2VRSkRsVXU0TWN5blk3Z3hTTkFWYjJWS09FWERS?oc=5",
-          "publisher": "DraftKings Network",
-          "kind": "article",
-          "snippet": "What happened to Ausar Thompson? Live injury updates for Pistons vs. Heat on Friday 10/23/26 DraftKings Network",
-          "published": "Sat, 24 Oct 2026 01:54:53 GMT"
-        },
-        {
-          "title": "Will Ausar Thompson bets be refunded after injury during Pistons vs. Heat on Friday 10/23/26?",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQT3dMM3dzQlFkVlZyVFBpWHJ4RlBiZ3lWczBYNjVWNEJDSEFlMkxfMDU4bm5ESlhUM2w4ZXdxQmhtRlVoVXhmVm5GMEMtcXNBc1FfRjhCcXZoSzVNdUlnaEN5ckVYQzVHcVBfaTVDZ2tuX3AxbzN5QURnRTAwc29zZXdWZUU1RDJvdjRTV1J6eHc4aUwtN0JrZUp4ZHRXci16RW95XzNOZkdDNURFTGsyTV93TGJKSWZlLVk5emdRQlNWSWw5cFNwZlNLamcyUE95YWc?oc=5",
-          "publisher": "DraftKings Network",
-          "kind": "article",
-          "snippet": "Will Ausar Thompson bets be refunded after injury during Pistons vs. Heat on Friday 10/23/26? DraftKings Network",
-          "published": "Sat, 24 Oct 2026 03:24:25 GMT"
-        },
-        {
-          "title": "Ausar Thompson injury update: Pistons wing slips and exits in pain",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQZVhlU3hXajhNSnJhdHhKNUdZSHJhNS03V1RVTlE0dnd0NEJnSkhDLUtZVWQwRlJZejJLMDBxUDlkdkk0ak96WU9QanE1dFFXdWU4QWgtNmFsQTRUcGQyS1FEZlplZk5yWm5TWmswRDUxdW1QUkkwQkV5VVkzNWM1N2lHUmpTZDNNZlBN?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Ausar Thompson injury update: Pistons wing slips and exits in pain Yahoo Sports",
-          "published": "Sat, 24 Oct 2026 02:04:00 GMT"
-        },
-        {
-          "title": "Pistons Could Have a Bigger Problem if Ausar Thompson Is Out",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMTBmVE00SnJodkFQOEtwdXRlMlpacG1tRkNTZm5ZU2Rkc3cyVkVrYnBxZlRZaXNaTVZmclhFNENVS1pyeHZ0Y3lYSkZDeHVDN1VuNlpzYkNzUXVXeU51UEhySlhtdW9OVjZCTjltTXFOZ1pzc0gwdDlxdmM2VXFLX0hIYVh1NUh6VzFIUEVoaUF3VnptczJBak1DVW9sX2V1WTMzUkN4eloyQQ?oc=5",
-          "publisher": "Heavy.com",
-          "kind": "article",
-          "snippet": "Pistons Could Have a Bigger Problem if Ausar Thompson Is Out Heavy.com",
-          "published": "Sat, 24 Oct 2026 08:56:09 GMT"
-        },
-        {
-          "title": "Is Pistons rookie Ausar Thompson a starter? Don’t rule it out",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWTVhcXlIMWRPR1JyYUNNVjJSYVdlLVVOVzZSUDZScXlhWGJSQ2dab1Bwbk9GSU5yZmpOM3l3YVdMZnIxVUN0Q21vQ1V0RTNQV2ZFdTRzTTN6dWhIZFQwWHAySzZpQkxZU1laeFhiTXlHYjk5OXBXWS1RSFF5V09ia3hUMldZU1VBZkdj?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Is Pistons rookie Ausar Thompson a starter? Don’t rule it out The New York Times",
-          "published": "Tue, 03 Oct 2023 07:00:00 GMT"
-        },
-        {
-          "title": "Pistons C Jalen Duren out at least two weeks with hamstring strain",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9wUF9MYUpSazZROEVzbGZja2NVWmc4ZzI2TXQyNi1Bb25CdVVPQk1jeHFUYURVQ1dicThOQk4yT3dLSzljR25GNEc2RVZPajJZYW8wM3Q2Y0xpbGJNNVhnWGw3RXVxd2VTT1JsSVVQakpnaERWYXpjODNHdkRxQQ?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Pistons C Jalen Duren out at least two weeks with hamstring strain ESPN",
-          "published": "Sun, 25 Oct 2026 15:02:12 GMT"
-        }
-      ]
-    },
-    {
       "id": "jaylen-brown-responds-jayson-tatum-s-no-beef-0c2b96d2",
       "slug": "jaylen-brown-responds-jayson-tatum-s-no-beef-0c2b96d2",
       "sport": "basketball",
@@ -470,14 +591,192 @@
       ]
     },
     {
+      "id": "jalen-brunson-headlines-today-s-injury-saturday-december-944a5e4a",
+      "slug": "jalen-brunson-headlines-today-s-injury-saturday-december-944a5e4a",
+      "sport": "basketball",
+      "headline": "Jalen Brunson Headlines Today’s NBA Injury Report: Saturday, December 7",
+      "blurb": "Bam Adebayo Headlines Today’s NBA Injury Report: Friday 12/26/25 DraftKings Network",
+      "summary": "Bam Adebayo Headlines Today’s NBA Injury Report: Friday 12/26/25 DraftKings Network FanDuel Bet Protect Enacted After Bam Adebayo Injury on 11/5/25 FanDuel Bam Adebayo will miss time with injury, but how much? Aggregated from DraftKings Network, FanDuel, Sports Illustrated.",
+      "category": "injury",
+      "published": "2024-12-07T08:00:00Z",
+      "updated": "2026-10-25T03:11:15Z",
+      "players": [
+        {
+          "key": "bam adebayo",
+          "name": "Bam Adebayo",
+          "slug": "bam-adebayo",
+          "pos": "C",
+          "team": "MIA"
+        },
+        {
+          "key": "luka doncic",
+          "name": "Luka Doncic",
+          "slug": "luka-doncic",
+          "pos": "PG",
+          "team": "LAL"
+        },
+        {
+          "key": "lebron james",
+          "name": "LeBron James",
+          "slug": "lebron-james",
+          "pos": "SF",
+          "team": "LAL"
+        },
+        {
+          "key": "deaaron fox",
+          "name": "De'Aaron Fox",
+          "slug": "de-aaron-fox",
+          "pos": "PG",
+          "team": "SAS"
+        },
+        {
+          "key": "alperen sengun",
+          "name": "Alperen Sengun",
+          "slug": "alperen-sengun",
+          "pos": "C",
+          "team": "HOU"
+        },
+        {
+          "key": "jalen brunson",
+          "name": "Jalen Brunson",
+          "slug": "jalen-brunson",
+          "pos": "PG",
+          "team": "NYK"
+        },
+        {
+          "key": "ausar thompson",
+          "name": "Ausar Thompson",
+          "slug": "ausar-thompson",
+          "pos": "SF",
+          "team": "DET"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jalen Brunson Headlines Today’s NBA Injury Report: Saturday, December 7",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMDI1dl9MU3NtckU0YnBGejBkUkpZZFBOYzhDMGlqM1A5MU9kUkdvcElLUGExSnFENEYtaldYVW5aT04td1ktblF2R3A3QWVERVRUc0dHY1UtS3NPU1BMUGR1MDJJNlZoa1p3cHQ3UDNUNG5OaklUYjN4czFUQV9sR0ktN2hWRVdEMTNTSXlhTExyRGhuQ1FtOTEzemFzTE5Nem5hNnc4OVJPTklrZHRlb0wyX2Zhdw?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Jalen Brunson Headlines Today’s NBA Injury Report: Saturday, December 7 DraftKings Network",
+          "published": "Sat, 07 Dec 2024 08:00:00 GMT"
+        },
+        {
+          "title": "Ausar Thompson Headlines Today’s NBA Injury Report: Sunday 10/25/26",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbVJSclZkZ3BtaWU3cHNYV0g3MC1IX0tmMkFxREU2bmNxSXlsd0tqamdEa3hVWDk3eW1GaHl3UlhEbFE5SWswelhzemhudjlKWnNUOWRWQkNUSjRJb1gzNFV2aF9PbmFzSUpXa0J1S1dQQmFlbGlLNDd0bnl2OWpXV29SQkZBNHpkbE4tdUplRjJpRnFDbEUxM0ZISVN1a05QM0U0MVZ5cFdpa3M2UG1z?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Ausar Thompson Headlines Today’s NBA Injury Report: Sunday 10/25/26 DraftKings Network",
+          "published": "Sun, 25 Oct 2026 03:11:15 GMT"
+        },
+        {
+          "title": "Luka Doncic Headlines Today’s NBA Injury Report: Sunday 10/26/25",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZjMxMERCenlWWXhTYk1qSE5QQ29QcThQMGxOempCakx1dWgzaFFiRUlhSUhKemE2aDV4LXVqWlFkY3E3aW9ldGV1TW5OQkJDUW5QUTZnVzhPX0NpbEhLMVZCdjk5SU5CWGFLclRaQzV1ay1TQ2hWOFBRdjBqb0FxVU5JczBmS05lOWlFU3Fzem1mZk1uOXlZNU1CQWdVcFFqLWNKTjVqYUtzYWM?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Luka Doncic Headlines Today’s NBA Injury Report: Sunday 10/26/25 DraftKings Network",
+          "published": "Sun, 26 Oct 2025 07:00:00 GMT"
+        },
+        {
+          "title": "LeBron James Headlines Today’s NBA Injury Report: Saturday 10/24/26",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYThYa0k3d0cyNl83LVdBdkR2dzhJbFRpTF9HTGRlb0k5MWxvYUZxV3dHT0hhYTM2TkU3NWl5elNEUmphSm1nS2lKOV9oQ0tlNnFKNzF5eHgtY2Z6YzFXTmpYN3Boc3ZqcV9vckxPd2J2ZmlBSVVaYmotaFhOTUxxbVJ3a25odVBnRHBqNVFrTHNGbDBTem53S1VjSG5iQ01abHVEVmp0VXZIXzRpYjRB?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "LeBron James Headlines Today’s NBA Injury Report: Saturday 10/24/26 DraftKings Network",
+          "published": "Sat, 24 Oct 2026 03:46:20 GMT"
+        },
+        {
+          "title": "De’Aaron Fox Headlines Today’s NBA Injury Report: Friday 5/22/26",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMUF6YmhGeVEwQkswTVUzQzdjblpuTERBX0tPRjcyLVB2SW1xNlRwSUN5VFZiSy1YTGt1Y0RCWTdQRVY1Z1dRX0E3MWV1bmljUEhUajR4Yk9DcFUzSWx2NVFSZThVck9xUHNvSFNBcGNFV2dUSzRKU1BZSkQxUmdxdDZNNzdYU0VjODh6Q1REc3YwMF9sUl9QMEJJb2M2ckFtOEtyc3Q2UEVITFpX?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "De’Aaron Fox Headlines Today’s NBA Injury Report: Friday 5/22/26 DraftKings Network",
+          "published": "Fri, 22 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Alperen Sengun Headlines Today’s NBA Injury Report: Monday 3/16/26",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPN1ZJV05idkJmamlGY2VpM1g3aGxoQlNhZTI0VVFCWGpzSVMtV3N3Z3VIa0NRaEYwV3hlQ0xpWG5yTnA5eUlaOFRhc0d5Z1NYSGdrZFVwQ0xzS0lHSXJFVGoxU1pTNEZwTzRlb3d6bF8yV1h6ZUM5X3RfeDc5aXE1allMcTJ3cUJpcHMtbGlraUlJbjg0djdpRlhGT1RGNVlpM2xZdGFYRHJoYnlkd0E?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Alperen Sengun Headlines Today’s NBA Injury Report: Monday 3/16/26 DraftKings Network",
+          "published": "Mon, 16 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Bam Adebayo Headlines Today’s NBA Injury Report: Friday 12/26/25",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPU1lPM1prcEkxTUpMUFJfcE42Tnl3eFVyTUFrUmctQXpWeFE0ekVwV0FBejZ6T2tHSWpNajBNSmNFcWpNZmdrUFFTRDRWeHNWRDZIY1dFSDVVWkZxSDdYTkFEckdGVkFuV0VnTzhCeHFWbHZkVDFmbmZJZWdYTm4zRUszV3dnQUs4MUFxU1pOYjd2VnFNXzZNNzlaSUpheFFRTElSM3MyY0dmREE?oc=5",
+          "publisher": "DraftKings Network",
+          "kind": "article",
+          "snippet": "Bam Adebayo Headlines Today’s NBA Injury Report: Friday 12/26/25 DraftKings Network",
+          "published": "Sat, 27 Dec 2025 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "injury-sun-oct-25-official-1-15-pm-49a4f7ed",
+      "slug": "injury-sun-oct-25-official-1-15-pm-49a4f7ed",
+      "sport": "basketball",
+      "headline": "NBA Injury Report, Sun. Oct. 25 🏀 Official NBA report, 1:15 PM ET Lakers @ Jazz, 5 ET LAL: Cameron Carr, Adou…",
+      "blurb": "25 🏀 Official NBA report, 1:15 PM ET Lakers @ Jazz, 5 ET LAL: Cameron Carr, Adou Thiero OUT UTA: Jusuf Nurkic OUT Pacers @ Nets, 6 ET…",
+      "summary": "25 🏀 Official NBA report, 1:15 PM ET Lakers @ Jazz, 5 ET LAL: Cameron Carr, Adou Thiero OUT UTA: Jusuf Nurkic OUT Pacers @ Nets, 6 ET IND: Johnny Furphy, T.J. McConnell, Ben Sheppard OUT BKN: Tyler Bilodeau, Mikel Br X McConnell, Ben Sheppard OUT BKN: Tyler Bilodeau, Mikel Br Aggregated from X, Google News.",
+      "category": "injury",
+      "published": "2026-10-25T18:06:36Z",
+      "updated": "2026-10-25T18:06:36Z",
+      "players": [
+        {
+          "key": "t j mcconnell",
+          "name": "T.J. McConnell",
+          "slug": "t-j-mcconnell",
+          "pos": "PG",
+          "team": "IND"
+        },
+        {
+          "key": "johnny furphy",
+          "name": "Johnny Furphy",
+          "slug": "johnny-furphy",
+          "pos": "SF",
+          "team": "IND"
+        },
+        {
+          "key": "jusuf nurkic",
+          "name": "Jusuf Nurkic",
+          "slug": "jusuf-nurkic",
+          "pos": "C",
+          "team": "PHX"
+        },
+        {
+          "key": "ben sheppard",
+          "name": "Ben Sheppard",
+          "slug": "ben-sheppard",
+          "pos": "SG",
+          "team": "IND"
+        },
+        {
+          "key": "adou thiero",
+          "name": "Adou Thiero",
+          "slug": "adou-thiero",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "NBA Injury Report, Sun. Oct. 25 🏀 Official NBA report, 1:15 PM ET Lakers @ Jazz, 5 ET LAL: Cameron Carr, Adou Thiero OUT UTA: Jusuf Nurkic OUT Pacers @ Nets, 6 ET IND: Johnny Furphy, T.J. McConnell, Ben Sheppard OUT BKN: Tyler Bilodeau, Mikel Br - X",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9fUV9OWVRPa0RPR1p1U0I1Znk4dFFveUdzMm5HZUhiVHoyNjB1dU01MXhJZXhVaHFOTUpYT3pDWnF5ck9YYUdFWVBNWnpOck9xdkJoRjhYV1JtWXJlbXc?oc=5",
+          "publisher": "X",
+          "kind": "article",
+          "snippet": "NBA Injury Report, Sun. Oct. 25 🏀 Official NBA report, 1:15 PM ET Lakers @ Jazz, 5 ET LAL: Cameron Carr, Adou Thiero OUT UTA: Jusuf Nurkic OUT Pacers @ Nets, 6 ",
+          "published": "Sun, 25 Oct 2026 18:06:36 GMT"
+        }
+      ]
+    },
+    {
       "id": "alperen-sengun-playing-tonight-injury-betting-impact-warriors-cc3d7b2b",
       "slug": "alperen-sengun-playing-tonight-injury-betting-impact-warriors-cc3d7b2b",
       "sport": "basketball",
       "headline": "Alperen Sengun injury: Rockets star has Grade 3 sprained ankle, to miss rest of season, per report",
-      "blurb": "Rockets Announce Alperen Sengun Injury Update After Leaving Mavericks Game Yahoo Sports",
-      "summary": "Rockets Announce Alperen Sengun Injury Update After Leaving Mavericks Game Yahoo Sports Alperen Sengun, Jalen Johnson land on NBA injury report with Rockets, Hawks on back-to-backs Yahoo Sports Rockets Get Mixed Injury News on Alperen Sengun, Amen Thompson Ahead of Warriors Game Athlon Sports Aggregated from Yahoo Sports, Athlon Sports, Sports Illustrated, heavy.com, CBS Sports and 3 more.",
+      "blurb": "Final Injury Report for Rockets-Kings, Will Alperen Sengun, Tari Eason Play?",
+      "summary": "Final Injury Report for Rockets-Kings, Will Alperen Sengun, Tari Eason Play? What teams did Alperen Sengun play for? Is Alperen Sengun playing tonight? Aggregated from Athlon Sports, Sportskeeda, Yahoo Sports, Sports Illustrated, heavy.com and 5 more.",
       "category": "injury",
-      "published": "2024-03-13T07:00:00Z",
+      "published": "2024-03-10T08:00:00Z",
       "updated": "2026-10-24T20:19:55Z",
       "players": [
         {
@@ -486,6 +785,20 @@
           "slug": "alperen-sengun",
           "pos": "C",
           "team": "HOU"
+        },
+        {
+          "key": "tari eason",
+          "name": "Tari Eason",
+          "slug": "tari-eason",
+          "pos": "PF",
+          "team": "HOU"
+        },
+        {
+          "key": "shai gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "slug": "shai-gilgeous-alexander",
+          "pos": "PG",
+          "team": "OKC"
         },
         {
           "key": "jalen johnson",
@@ -611,111 +924,62 @@
           "kind": "article",
           "snippet": "Alperen Sengun Injury Update: Saturday 3/21/26 vs. Heat DraftKings Network",
           "published": "Sat, 21 Mar 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "jalen-brunson-headlines-today-s-injury-saturday-december-944a5e4a",
-      "slug": "jalen-brunson-headlines-today-s-injury-saturday-december-944a5e4a",
-      "sport": "basketball",
-      "headline": "Jalen Brunson Headlines Today’s NBA Injury Report: Saturday, December 7",
-      "blurb": "Luka Doncic Headlines Today’s NBA Injury Report: Sunday 10/26/25 DraftKings Network",
-      "summary": "Luka Doncic Headlines Today’s NBA Injury Report: Sunday 10/26/25 DraftKings Network LeBron James Headlines Today’s NBA Injury Report: Saturday 10/24/26 DraftKings Network De’Aaron Fox Headlines Today’s NBA Injury Report: Friday 5/22/26 DraftKings Network Board reading of DraftKings Network.",
-      "category": "injury",
-      "published": "2024-12-07T08:00:00Z",
-      "updated": "2026-10-25T03:11:15Z",
-      "players": [
-        {
-          "key": "luka doncic",
-          "name": "Luka Doncic",
-          "slug": "luka-doncic",
-          "pos": "PG",
-          "team": "LAL"
         },
         {
-          "key": "lebron james",
-          "name": "LeBron James",
-          "slug": "lebron-james",
-          "pos": "SF",
-          "team": "LAL"
-        },
-        {
-          "key": "deaaron fox",
-          "name": "De'Aaron Fox",
-          "slug": "de-aaron-fox",
-          "pos": "PG",
-          "team": "SAS"
-        },
-        {
-          "key": "alperen sengun",
-          "name": "Alperen Sengun",
-          "slug": "alperen-sengun",
-          "pos": "C",
-          "team": "HOU"
-        },
-        {
-          "key": "jalen brunson",
-          "name": "Jalen Brunson",
-          "slug": "jalen-brunson",
-          "pos": "PG",
-          "team": "NYK"
-        },
-        {
-          "key": "ausar thompson",
-          "name": "Ausar Thompson",
-          "slug": "ausar-thompson",
-          "pos": "SF",
-          "team": "DET"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jalen Brunson Headlines Today’s NBA Injury Report: Saturday, December 7",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMDI1dl9MU3NtckU0YnBGejBkUkpZZFBOYzhDMGlqM1A5MU9kUkdvcElLUGExSnFENEYtaldYVW5aT04td1ktblF2R3A3QWVERVRUc0dHY1UtS3NPU1BMUGR1MDJJNlZoa1p3cHQ3UDNUNG5OaklUYjN4czFUQV9sR0ktN2hWRVdEMTNTSXlhTExyRGhuQ1FtOTEzemFzTE5Nem5hNnc4OVJPTklrZHRlb0wyX2Zhdw?oc=5",
-          "publisher": "DraftKings Network",
+          "title": "Rockets' Alperen Sengun Predicted to Make All-Star Team as Injury Replacement",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdko0WXh6WjJ2UnBxdzUzWGVQTldEZmYtQlNaVVJoYnBPelN0WnNyUU5oaDJzWVEwX2FFUzh2S0lfNUVzWmpCN3ZlOWFCZ3hCbTBPQ0RuVDFaMDRDN0ZYc3UwTlZHRUlsaHhNblcyOE9kWEIwUUVRemxGLW5ldnlDSC1jcjMyeUxWS1pIdVJ4SG9taE1WOVFsRnNzWnliUDBmeE1JWmotTjF3dTRPdkV5SFExTU5WYVFH?oc=5",
+          "publisher": "Sports Illustrated",
           "kind": "article",
-          "snippet": "Jalen Brunson Headlines Today’s NBA Injury Report: Saturday, December 7 DraftKings Network",
-          "published": "Sat, 07 Dec 2024 08:00:00 GMT"
+          "snippet": "Rockets' Alperen Sengun Predicted to Make All-Star Team as Injury Replacement Sports Illustrated",
+          "published": "Thu, 29 Jan 2026 08:00:00 GMT"
         },
         {
-          "title": "Ausar Thompson Headlines Today’s NBA Injury Report: Sunday 10/25/26",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbVJSclZkZ3BtaWU3cHNYV0g3MC1IX0tmMkFxREU2bmNxSXlsd0tqamdEa3hVWDk3eW1GaHl3UlhEbFE5SWswelhzemhudjlKWnNUOWRWQkNUSjRJb1gzNFV2aF9PbmFzSUpXa0J1S1dQQmFlbGlLNDd0bnl2OWpXV29SQkZBNHpkbE4tdUplRjJpRnFDbEUxM0ZISVN1a05QM0U0MVZ5cFdpa3M2UG1z?oc=5",
-          "publisher": "DraftKings Network",
+          "title": "Rockets’ Alperen Şengün to replace injured Shai Gilgeous-Alexander in NBA All-Star Game",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdVBSS2ZlRzdteGkxeDBFNERFdnd4V1I4N0xXMFU4c1RtUzI5VG9yV0M3bWVFQ1VqSkZuM2VTZ0FYNXdaXzBjNXA0V280MkNwRXRuMUNCYnllWG9CSktYejFYdE5zelc3b1Y4eHFHSERmWGExWFg0ZndCdTVLVDBYQ3JXMW04MWt0aC1mbi1qUEVOdw?oc=5",
+          "publisher": "The New York Times",
           "kind": "article",
-          "snippet": "Ausar Thompson Headlines Today’s NBA Injury Report: Sunday 10/25/26 DraftKings Network",
-          "published": "Sun, 25 Oct 2026 03:11:15 GMT"
+          "snippet": "Rockets’ Alperen Şengün to replace injured Shai Gilgeous-Alexander in NBA All-Star Game - The Athletic The New York Times",
+          "published": "Sun, 08 Feb 2026 08:00:00 GMT"
         },
         {
-          "title": "Luka Doncic Headlines Today’s NBA Injury Report: Sunday 10/26/25",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZjMxMERCenlWWXhTYk1qSE5QQ29QcThQMGxOempCakx1dWgzaFFiRUlhSUhKemE2aDV4LXVqWlFkY3E3aW9ldGV1TW5OQkJDUW5QUTZnVzhPX0NpbEhLMVZCdjk5SU5CWGFLclRaQzV1ay1TQ2hWOFBRdjBqb0FxVU5JczBmS05lOWlFU3Fzem1mZk1uOXlZNU1CQWdVcFFqLWNKTjVqYUtzYWM?oc=5",
-          "publisher": "DraftKings Network",
+          "title": "Rockets’ Alperen Şengün on growing up, Nikola Jokić comparisons and NBA All-Star candidacy",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdU12NG1PYjNJUFVkZTdqcjAtZFhVbUhFRHdQbUdmMjcxQjA5UHVNd2VLdHplcHkweDBNamt1MnI2by1yekY3UHlZcUp0YTZTV25ZVG5iQURoZlYtZUpEM0h2N3NEZlZfd1hpY2FPZkp6NDRSNGVuZ24wdVZRS1BtQ0pEaTNSekp0a2ZGMVdac1dzS2pFSmdGaTAzalh6YUY5OGRN?oc=5",
+          "publisher": "The New York Times",
           "kind": "article",
-          "snippet": "Luka Doncic Headlines Today’s NBA Injury Report: Sunday 10/26/25 DraftKings Network",
-          "published": "Sun, 26 Oct 2025 07:00:00 GMT"
+          "snippet": "Rockets’ Alperen Şengün on growing up, Nikola Jokić comparisons and NBA All-Star candidacy The New York Times",
+          "published": "Wed, 22 Jan 2025 08:00:00 GMT"
         },
         {
-          "title": "LeBron James Headlines Today’s NBA Injury Report: Saturday 10/24/26",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYThYa0k3d0cyNl83LVdBdkR2dzhJbFRpTF9HTGRlb0k5MWxvYUZxV3dHT0hhYTM2TkU3NWl5elNEUmphSm1nS2lKOV9oQ0tlNnFKNzF5eHgtY2Z6YzFXTmpYN3Boc3ZqcV9vckxPd2J2ZmlBSVVaYmotaFhOTUxxbVJ3a25odVBnRHBqNVFrTHNGbDBTem53S1VjSG5iQ01abHVEVmp0VXZIXzRpYjRB?oc=5",
-          "publisher": "DraftKings Network",
+          "title": "Final Injury Report for Rockets-Hawks: Will Alperen Sengun, Jalen Johnson Play?",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPYThzQlF1aWp1LXgwVDQzaTJYTDFuek9VR3NvTmRRTGtWcTQzWmlNNU1qUXp6cDJqUEptaklVT1BVX3R5cmxRWll5SGxqbUpxNWljSXFmMzlzd2YxazRKLUhHNmRNd1FyUHVZbGluSktrSzZQX1d0eWc4cVZ2WElpcXd4QjVwU0VfSWxRTjRPQndyTGZHNHZNM1VmNVFzcWxlUDZobUFVUXIyellwRS1qZFRZYWQ4T2lkUm9xRHRB?oc=5",
+          "publisher": "Athlon Sports",
           "kind": "article",
-          "snippet": "LeBron James Headlines Today’s NBA Injury Report: Saturday 10/24/26 DraftKings Network",
-          "published": "Sat, 24 Oct 2026 03:46:20 GMT"
+          "snippet": "Final Injury Report for Rockets-Hawks: Will Alperen Sengun, Jalen Johnson Play? Athlon Sports",
+          "published": "Thu, 29 Jan 2026 08:00:00 GMT"
         },
         {
-          "title": "De’Aaron Fox Headlines Today’s NBA Injury Report: Friday 5/22/26",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMUF6YmhGeVEwQkswTVUzQzdjblpuTERBX0tPRjcyLVB2SW1xNlRwSUN5VFZiSy1YTGt1Y0RCWTdQRVY1Z1dRX0E3MWV1bmljUEhUajR4Yk9DcFUzSWx2NVFSZThVck9xUHNvSFNBcGNFV2dUSzRKU1BZSkQxUmdxdDZNNzdYU0VjODh6Q1REc3YwMF9sUl9QMEJJb2M2ckFtOEtyc3Q2UEVITFpX?oc=5",
-          "publisher": "DraftKings Network",
+          "title": "Rockets’ Alperen Sengun taken off court in wheelchair after scary injury",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPemJEVE1aMEgzaU83eDBFaEdzZDlfdUtPVFJQNFc2cC1vSWpGNjJkczctYXdvamtaWEJDQjVseUowU2QtZmxKbTJSN2xzamxKUlZOb1RLOHVEN1BXYXd6N2dXOTZOdnE1c19yTzNwVjBpWG9IeUVUUllCaE82VExrWGIzU0NVM2x5b0M0R1VmN25oZG5tWHl3WVlLSGQ5OVFHNWNtUVVn?oc=5",
+          "publisher": "New York Post",
           "kind": "article",
-          "snippet": "De’Aaron Fox Headlines Today’s NBA Injury Report: Friday 5/22/26 DraftKings Network",
-          "published": "Fri, 22 May 2026 07:00:00 GMT"
+          "snippet": "Rockets’ Alperen Sengun taken off court in wheelchair after scary injury New York Post",
+          "published": "Sun, 10 Mar 2024 08:00:00 GMT"
         },
         {
-          "title": "Alperen Sengun Headlines Today’s NBA Injury Report: Monday 3/16/26",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPN1ZJV05idkJmamlGY2VpM1g3aGxoQlNhZTI0VVFCWGpzSVMtV3N3Z3VIa0NRaEYwV3hlQ0xpWG5yTnA5eUlaOFRhc0d5Z1NYSGdrZFVwQ0xzS0lHSXJFVGoxU1pTNEZwTzRlb3d6bF8yV1h6ZUM5X3RfeDc5aXE1allMcTJ3cUJpcHMtbGlraUlJbjg0djdpRlhGT1RGNVlpM2xZdGFYRHJoYnlkd0E?oc=5",
-          "publisher": "DraftKings Network",
+          "title": "Final Injury Report for Rockets-Kings, Will Alperen Sengun, Tari Eason Play?",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOV2o1STBhS0F3UzhrcUl0X2V3c004T1Bucm5UWnQxcE9jc0JrNHVGeDh0b2wyOUxEOE1NOFp5R290QjNoT1NLZUstSWNoZVFGY3RUMHgwQ1ZPZHJSdUUzTmVUY0xYV2F3TUxQZFllY2wwTXpxX1M3THliOTA5bUR2ekluYXd0aFIxdVRkekhkVTQ4SnZVbS1qZXFFT2lMYlRyMkVYWWg4VWRaUWxONThfZ25xQ1lkN1pNUlE?oc=5",
+          "publisher": "Athlon Sports",
           "kind": "article",
-          "snippet": "Alperen Sengun Headlines Today’s NBA Injury Report: Monday 3/16/26 DraftKings Network",
-          "published": "Mon, 16 Mar 2026 07:00:00 GMT"
+          "snippet": "Final Injury Report for Rockets-Kings, Will Alperen Sengun, Tari Eason Play? Athlon Sports",
+          "published": "Sun, 11 Jan 2026 08:00:00 GMT"
+        },
+        {
+          "title": "What teams did Alperen Sengun play for?",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE90MWxONWFsb2wxaFZjYnJodWxnOUd5V3FQdlYtaVQwZWVDVWwtbnZRX0kzRDFpN013QzItSmNneGYyTGdreUZKTWE1dmJ2Mm9pYk1OcXJDOWJSa3dRWUVLU29fTTl5LWd0bGNz?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "What teams did Alperen Sengun play for? Sportskeeda",
+          "published": "Sun, 20 Apr 2025 07:00:00 GMT"
         }
       ]
     },
@@ -781,6 +1045,142 @@
           "kind": "article",
           "snippet": "🏀 Fantasy Basketball News Updates You Need to Know • Paolo Banchero will miss at least a month due to a right high-ankle sprain • Cooper Flagg, Jalen Duren and ",
           "published": "Sun, 25 Oct 2026 14:46:49 GMT"
+        }
+      ]
+    },
+    {
+      "id": "final-injury-heat-hornets-kon-knueppel-coby-white-35df47ea",
+      "slug": "final-injury-heat-hornets-kon-knueppel-coby-white-35df47ea",
+      "sport": "basketball",
+      "headline": "NBA injury report: Is Evan Mobley playing tonight? Cleveland Cavaliers star set for timely Christmas Day",
+      "blurb": "NBA injury report: Is Evan Mobley playing tonight?",
+      "summary": "NBA injury report: Is Evan Mobley playing tonight? Cleveland Cavaliers star set for timely Christmas Day The Times of India Evan Mobley Trade Rumors Indicate Cleveland Cavaliers Could Be on Different Timeline Sports Illustrated Aggregated from The Times of India, Sports Illustrated, Athlon Sports, Sportskeeda, The New York Times.",
+      "category": "injury",
+      "published": "2021-07-29T07:00:00Z",
+      "updated": "2026-10-24T18:00:00Z",
+      "players": [
+        {
+          "key": "evan mobley",
+          "name": "Evan Mobley",
+          "slug": "evan-mobley",
+          "pos": "C",
+          "team": "CLE"
+        },
+        {
+          "key": "michael porter",
+          "name": "Michael Porter Jr.",
+          "slug": "michael-porter-jr",
+          "pos": "SF",
+          "team": "DEN"
+        },
+        {
+          "key": "donovan mitchell",
+          "name": "Donovan Mitchell",
+          "slug": "donovan-mitchell",
+          "pos": "SG",
+          "team": "CLE"
+        },
+        {
+          "key": "pascal siakam",
+          "name": "Pascal Siakam",
+          "slug": "pascal-siakam",
+          "pos": "PF",
+          "team": "IND"
+        },
+        {
+          "key": "coby white",
+          "name": "Coby White",
+          "slug": "coby-white",
+          "pos": "SG",
+          "team": "CHI"
+        },
+        {
+          "key": "isaac okoro",
+          "name": "Isaac Okoro",
+          "slug": "isaac-okoro",
+          "pos": "SF",
+          "team": "CLE"
+        },
+        {
+          "key": "kon knueppel",
+          "name": "Kon Knueppel",
+          "slug": "kon-knueppel",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Final Injury Report for Cavaliers-Hornets: Will Evan Mobley, Coby White Play?",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYU4yVk42aWF0NXU1UERaTlptNHp2ODNSaE9oMk1SbnYydy1UX2Zubkp2R3YtTk51OVY1UGZvWWd1QjNTRFZHZnJSMWViZTF3ZG5LbW90S3k2V0JfSW1HM1puRWRRNWNWeW1OQko2R3JuRVl5d3lBeEpPT3dfeTZCaGF0SXBvb0tkMlUyWGlJS3RVbmZnQV9DZVJDTkVyZWtFbVF1cU5rUmp5MUtucnZ1ZUJfVkxocHU0c2pzS0k4Q3Y?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Cavaliers-Hornets: Will Evan Mobley, Coby White Play? Athlon Sports",
+          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Cleveland Cavaliers injury report (Dec: 13): Latest on Evan Mobley and Isaac Okoro's status",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOHJTckx0blk1dVNhYmMyNWF3ZzJDdEtpX2RiSEhwYk5nLVlYTjhrVFdaZ0hqSkR6VnJ3ZE1Mc0xEM0RBWU5yNmVySjFxTVZXSVFVRUZSeUctX1EzZUF0a21sYUIzOUIxdGtIMTNON3NxeHM1OWtnNU5WSkRKeXpfa2E2Mjh5aC0yQURDUUdUUWdURGlxT2pSM1VueTl6ZzJHZGdLTTdIMlFHbm9TR0J0MUpzSFpiRFgzTEhaeE9NczNydw?oc=5",
+          "publisher": "Sportskeeda",
+          "kind": "article",
+          "snippet": "Cleveland Cavaliers injury report (Dec: 13): Latest on Evan Mobley and Isaac Okoro's status Sportskeeda",
+          "published": "Fri, 13 Dec 2024 08:00:00 GMT"
+        },
+        {
+          "title": "Evan Mobley goes to the Cleveland Cavaliers: Here’s what they’re getting",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQekJPYm4xUmpiOXc2YnVKcE51UkdJWC1hby1PdFRXbDc1Si1faXNNU2FCQl9JdE81bkhsendDcTU1UXlCNjRkeHVia2dDV2IwRW5wOV9rNjhXRFFZcEFoRTd4enFpVXhVaFVfb2JCaDQ2V2hNaF9EemxDMmZaM0lGU0QwblE2a0U0d1dLWGtiUWRuTjBxWDV0SEpBNUNWSmw3ck5vdEtVbGtGY3YyRjR1eV9xMlliNGxKYXNXQTM4QQ?oc=5",
+          "publisher": "The New York Times",
+          "kind": "article",
+          "snippet": "Evan Mobley goes to the Cleveland Cavaliers: Here’s what they’re getting The New York Times",
+          "published": "Thu, 29 Jul 2021 07:00:00 GMT"
+        },
+        {
+          "title": "NBA injury report: Is Evan Mobley playing tonight? Cleveland Cavaliers star set for timely Christmas Day",
+          "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPNGxDbC15dTJrbWk2S1ZwSU1wak41M0xDTmhiTWFWMndDdGNxYWtLTkZHVEtqNWpmUWx1VHVjcnBqQnVsMlZvSW8tQXl1YlY4M2NyYlN3TjNIN1V2Z1FabHR1X1FORTVkaThHVWhBRUc0QzdpY1BGdnB2d2tzcmdzaS1aQzRDRHJXemh3eV9jSDdWMzk4SENCcHJUUDVBcy1SNkpUc1pNZEczcHZrdXc4YzhDQXl5S0R3czV5VHNESkVGTGpsZlpubVJMSEIyYVZKWUw3dDlUdUpXbmFGYkVRVXpVamJyOFNBQ0Ffalp5Q0FqUzVlRjNnd0ZqZ3E0ZmRqbWhha09LaGxGNG1NV25jWk1raGdSbGM2eUJqejNaak1IVXloMURWQzZ0VE1JVDVZQl85OC1wSmZFd3ByOHd4RzBSMml4YTNwalA00gHQAkFVX3lxTFA1S3BpLUhLdzVwWEM2MEoxUkQ1aXI0MGFGOEVrdkdEXzhQRUVBcENGTHhVMjE5QWlZam42WW9Ga2tsMFBwdHhaMnJXVkpZdFpQSmZxdFpwSGtHWDlyMDBTbmtkV1NjUTZGQV9PLWh2N1lmNWpVLWJPQXM4WWRKMTg0Z2htMUIxaUlxNWJzczlxREhrcGdMMy1XY3JPcWZLSDYtcDdiQVozd2MtYWZNQWpwNGxQZ2dJNFlKZkFkU2hTNDVzSkN3MzQwdUZFeXJaaVVySHoyTEVhZnNaVTFIc2Z3dXFtU3V2RFNaX1RGeElMWDhoZzlXak16TzJEbXVycXRwcTBrU1pERy1jYzhmSTd1MXNnbVZMNFEwcklIaU1ZRklyVVpWMFJJTUVkMDJxNTFFTnlFMVJkTWhUb010R3ItN19CWGNUNy14bkZrWG5PWQ?oc=5",
+          "publisher": "The Times of India",
+          "kind": "article",
+          "snippet": "NBA injury report: Is Evan Mobley playing tonight? Cleveland Cavaliers star set for timely Christmas Day The Times of India",
+          "published": "Mon, 29 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Evan Mobley Trade Rumors Indicate Cleveland Cavaliers Could Be on Different Timeline",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZ0E5dTFJVC1Fc2l2Ymc4aXRkc3ZZU3FEaXZvajlrVHdraWstblFRdElfQXZzOWwtTzNUNzRzd05JdmFfT0FDX0tPaDhPYzJ5T1VmQWFhckZDQWVHS3piY3JFLWtFRlpwWnFPQmJ4cmNLVm05bjY0RE5NaHUtWF9jLVZnNy10Qk5yRXVlMGttTnl5bHhTbDgzLUNlV0swMGd1SlJDUmZRZjF6SkdJSktMSHhpeTYyUTRrc1J4dWtPUVdWdlBEdWVaZG8zd3hUX0VjckQ3WXlGSQ?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Evan Mobley Trade Rumors Indicate Cleveland Cavaliers Could Be on Different Timeline Sports Illustrated",
+          "published": "Sat, 21 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Evan Mobley latest Cleveland Cavaliers player plagued by injury bug",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQlpOUjg1MVVBRVlIcldiSkYxcFZnM0otMEwzR2ppZnRFUk43T1FQcFNJVHE5NTZ4dGN2YWh0OVh5V3U2X3B6N1dXQ3BvQ3lmbEdRWVRldGxSQmZySVJ2a3Z6Rl9qSWtpYlRVSVNOemhMV1FYTDV3WHJfeE1BbzREX1kzMHdxX3E3Y0swTm5ZdllURWhGb2ZCX2J3MzBiX0tLdWU5ZzQ0dTc5WGdzTXpkd3haaXkzc2p0QXQxYXJvSE0?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Evan Mobley latest Cleveland Cavaliers player plagued by injury bug Sports Illustrated",
+          "published": "Fri, 05 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Nets-Cavaliers: Will Michael Porter Jr., Evan Mobley Play?",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOeDdWSW50SFdvOUZNWHBHSGhycDlwel9KWTN3RHR6OVRVemZqYnN4TENPUmVkOTg0bTZBdWNmRWtQbkJZbGU5dEtsdko0T2o1TUFCMlJuSVJBV2pCZ21EM2VOU1d6RVNKdENwRGMwNmpEcjExUVdsWUFYS2ZQaDBxSk0waGNsRi1DaG9GWXVJUlNGNVV2aHRjN3lFajFnR20tTnI2RWtjSkg4bTBNRE5pelFTR3lCWWI2WEdDWEFTdktfbDJoWEE?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Nets-Cavaliers: Will Michael Porter Jr., Evan Mobley Play? Athlon Sports",
+          "published": "Thu, 19 Feb 2026 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Bulls-Cavaliers, Will Donovan Mitchell, Evan Mobley Play?",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNRURtTnJaN19POVRhcGp1UXlLNDhXWjFmYnB2R2RpelVvazM0bGxPeWZ0UVJRRDBObmxIVkZyanVVb2ZsblpPODU4MW5iNV9BQTZxSGNueHkzc1lTRl9VcFpObWhNb2pxVi1hTS1keThGX1I2QUxiSFBxeGZmb1pvem1ydnZoQzFOVWxsTWlYOW82bjZxY2tPQ1VxYzBsQ0V6aEc4bW14S2tWRXRuWl9TcXlzLTJUU0tUaGs4QU8wX3Q5a04xaVE?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Bulls-Cavaliers, Will Donovan Mitchell, Evan Mobley Play? Athlon Sports",
+          "published": "Fri, 19 Dec 2025 08:00:00 GMT"
+        },
+        {
+          "title": "Final Injury Report for Pacers-Cavaliers: Will Evan Mobley, Pascal Siakam Play?",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRUpUeE1mVVFMRVdrQldTaEhEekk3N0tpMGpQQ2MyelFaby00NmZqZEkyMU9DSTA3TGJVb2FDRTNaRkVYaDdaUWgwLWJhaUx5aUEyNWQzSTlqV1Z4UUphR2RrTllWcG5TZERpQm04WDVWS2liU3B1ajZxSUJrZ0diQUdkN3BVUmh3SGhvSVl6eTZUZGJQZHhfQ3RLU0NzeEpac2M0aGRUYldIYWd4M3h1MkJvck83Vjd1T1dKWUVvUFVFU2c?oc=5",
+          "publisher": "Athlon Sports",
+          "kind": "article",
+          "snippet": "Final Injury Report for Pacers-Cavaliers: Will Evan Mobley, Pascal Siakam Play? Athlon Sports",
+          "published": "Sun, 05 Apr 2026 07:00:00 GMT"
         }
       ]
     },
@@ -1188,73 +1588,6 @@
       ]
     },
     {
-      "id": "kyrie-irving-injury-management-downgraded-doubtful-saturday-dae04e0d",
-      "slug": "kyrie-irving-injury-management-downgraded-doubtful-saturday-dae04e0d",
-      "sport": "basketball",
-      "headline": "Kyrie Irving Injury: Iffy to play Saturday",
-      "blurb": "Kyrie Irving Injury: Iffy to play Saturday RotoWire",
-      "summary": "Kyrie Irving Injury: Downgraded to doubtful RotoWire Draymond Green Injury: Doubtful to play Saturday RotoWire Kyrie Irving Injury: Iffy to play Saturday RotoWire Aggregated from RotoWire, X.",
-      "category": "injury",
-      "published": "2026-10-24T18:26:35Z",
-      "updated": "2026-10-24T21:48:14Z",
-      "players": [
-        {
-          "key": "kyrie irving",
-          "name": "Kyrie Irving",
-          "slug": "kyrie-irving",
-          "pos": "PG",
-          "team": "DAL"
-        },
-        {
-          "key": "draymond green",
-          "name": "Draymond Green",
-          "slug": "draymond-green",
-          "pos": "PF",
-          "team": "GSW"
-        },
-        {
-          "key": "brandin podziemski",
-          "name": "Brandin Podziemski",
-          "slug": "brandin-podziemski",
-          "pos": "SG",
-          "team": "GSW"
-        },
-        {
-          "key": "al horford",
-          "name": "Al Horford",
-          "slug": "al-horford",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Kyrie Irving Injury: Iffy to play Saturday",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNXzR3WkNLUFhtdENUUVBOUXVPUncyXzdrY19ZM2o2azk5S1pIdG5QbTliYlM3aW03WmtpVUhxaXhQdW1hclBHSEVNQzRXa0x1UDdNc1hJQVBTb09sMmY5cEs1MkUySWdpT2JYX1ZRNWhLcHFOOVozcFowRzBuWjhqUzlNRVcwSUFCS1NPOVBXZjU3RlY0RHhJTUd3?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Kyrie Irving Injury: Iffy to play Saturday RotoWire",
-          "published": "Sat, 24 Oct 2026 18:26:35 GMT"
-        },
-        {
-          "title": "Kyrie Irving (injury management) downgraded to doubtful Saturday. - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9VTUZ0cjVqLWt0TzlTSVc2eS1pM1Vnc3pjbl9sbVpSY1NrN2FQRS1ZeG51a2tBM0V1NkxMQWp2eXlzLTF1OVN6ZWNSdE9VSU5DTmVxY0JId0xJcjRVSFNBMklR?oc=5",
-          "publisher": "X",
-          "kind": "article",
-          "snippet": "Kyrie Irving (injury management) downgraded to doubtful Saturday. X",
-          "published": "Sat, 24 Oct 2026 21:45:18 GMT"
-        },
-        {
-          "title": "Kyrie Irving Injury: Downgraded to doubtful",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQVE0em4xSUtoaW9TMkdjMVh6X295SEhteURKdFBWT3djZkpxUkZDa0FGYS1CVWhGLUI0N0kxUjFqSHppNlpkWnA4U0pzN19RdE1BMWNCSWxubS1UeTZtTjlzQ0RqYjlkOTFVM2tTX0hwTjdJYjduaXNOZ0VITU85aER2U2xJUkZkVkNaSm9QbWd5bnNxRFRoQzdwRQ?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Kyrie Irving Injury: Downgraded to doubtful RotoWire",
-          "published": "Sat, 24 Oct 2026 21:48:14 GMT"
-        }
-      ]
-    },
-    {
       "id": "pistons-injury-ausar-thompson-cleared-return-raptors-36b19346",
       "slug": "pistons-injury-ausar-thompson-cleared-return-raptors-36b19346",
       "sport": "basketball",
@@ -1344,6 +1677,73 @@
           "kind": "article",
           "snippet": "Watching film with Pistons rookie Ausar Thompson: How does he process the game? The New York Times",
           "published": "Mon, 11 Nov 2024 08:00:00 GMT"
+        }
+      ]
+    },
+    {
+      "id": "kyrie-irving-injury-management-downgraded-doubtful-saturday-dae04e0d",
+      "slug": "kyrie-irving-injury-management-downgraded-doubtful-saturday-dae04e0d",
+      "sport": "basketball",
+      "headline": "Kyrie Irving Injury: Iffy to play Saturday",
+      "blurb": "Kyrie Irving Injury: Iffy to play Saturday RotoWire",
+      "summary": "Kyrie Irving Injury: Downgraded to doubtful RotoWire Draymond Green Injury: Doubtful to play Saturday RotoWire Kyrie Irving Injury: Iffy to play Saturday RotoWire Aggregated from RotoWire, X.",
+      "category": "injury",
+      "published": "2026-10-24T18:26:35Z",
+      "updated": "2026-10-24T21:48:14Z",
+      "players": [
+        {
+          "key": "kyrie irving",
+          "name": "Kyrie Irving",
+          "slug": "kyrie-irving",
+          "pos": "PG",
+          "team": "DAL"
+        },
+        {
+          "key": "draymond green",
+          "name": "Draymond Green",
+          "slug": "draymond-green",
+          "pos": "PF",
+          "team": "GSW"
+        },
+        {
+          "key": "brandin podziemski",
+          "name": "Brandin Podziemski",
+          "slug": "brandin-podziemski",
+          "pos": "SG",
+          "team": "GSW"
+        },
+        {
+          "key": "al horford",
+          "name": "Al Horford",
+          "slug": "al-horford",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kyrie Irving Injury: Iffy to play Saturday",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNXzR3WkNLUFhtdENUUVBOUXVPUncyXzdrY19ZM2o2azk5S1pIdG5QbTliYlM3aW03WmtpVUhxaXhQdW1hclBHSEVNQzRXa0x1UDdNc1hJQVBTb09sMmY5cEs1MkUySWdpT2JYX1ZRNWhLcHFOOVozcFowRzBuWjhqUzlNRVcwSUFCS1NPOVBXZjU3RlY0RHhJTUd3?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Kyrie Irving Injury: Iffy to play Saturday RotoWire",
+          "published": "Sat, 24 Oct 2026 18:26:35 GMT"
+        },
+        {
+          "title": "Kyrie Irving (injury management) downgraded to doubtful Saturday. - X",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9VTUZ0cjVqLWt0TzlTSVc2eS1pM1Vnc3pjbl9sbVpSY1NrN2FQRS1ZeG51a2tBM0V1NkxMQWp2eXlzLTF1OVN6ZWNSdE9VSU5DTmVxY0JId0xJcjRVSFNBMklR?oc=5",
+          "publisher": "X",
+          "kind": "article",
+          "snippet": "Kyrie Irving (injury management) downgraded to doubtful Saturday. X",
+          "published": "Sat, 24 Oct 2026 21:45:18 GMT"
+        },
+        {
+          "title": "Kyrie Irving Injury: Downgraded to doubtful",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQVE0em4xSUtoaW9TMkdjMVh6X295SEhteURKdFBWT3djZkpxUkZDa0FGYS1CVWhGLUI0N0kxUjFqSHppNlpkWnA4U0pzN19RdE1BMWNCSWxubS1UeTZtTjlzQ0RqYjlkOTFVM2tTX0hwTjdJYjduaXNOZ0VITU85aER2U2xJUkZkVkNaSm9QbWd5bnNxRFRoQzdwRQ?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Kyrie Irving Injury: Downgraded to doubtful RotoWire",
+          "published": "Sat, 24 Oct 2026 21:48:14 GMT"
         }
       ]
     },
@@ -1469,69 +1869,47 @@
       ]
     },
     {
-      "id": "final-injury-heat-hornets-kon-knueppel-coby-white-35df47ea",
-      "slug": "final-injury-heat-hornets-kon-knueppel-coby-white-35df47ea",
+      "id": "why-isn-t-bradley-beal-playing-explaining-clippers-1727f43f",
+      "slug": "why-isn-t-bradley-beal-playing-explaining-clippers-1727f43f",
       "sport": "basketball",
-      "headline": "Cleveland Cavaliers injury report (Dec: 13): Latest on Evan Mobley and Isaac Okoro's status",
-      "blurb": "Evan Mobley goes to the Cleveland Cavaliers: Here’s what they’re getting The New York Times",
-      "summary": "Evan Mobley goes to the Cleveland Cavaliers: Here’s what they’re getting The New York Times Final Injury Report for Heat-Hornets: Will Kon Knueppel, Coby White Play? Kon Knueppel Injury: Remains out Saturday RotoWire Aggregated from The New York Times, Yahoo Sports, RotoWire, Athlon Sports, Sportskeeda.",
+      "headline": "Why Isn’t Bradley Beal Playing? Explaining Clippers Absence, Injury Return Timeline",
+      "blurb": "Thunder: Latest on Brandon Ingram and Bradley Beal Yahoo Sports",
+      "summary": "Thunder: Latest on Brandon Ingram and Bradley Beal Yahoo Sports Why Isn’t Bradley Beal Playing? Explaining Clippers Absence, Injury Return Timeline Heavy.com Aggregated from Yahoo Sports, Heavy.com.",
       "category": "injury",
-      "published": "2021-07-29T07:00:00Z",
-      "updated": "2026-10-24T18:00:00Z",
+      "published": "2026-10-25T18:30:59Z",
+      "updated": "2026-10-25T21:45:35Z",
       "players": [
         {
-          "key": "evan mobley",
-          "name": "Evan Mobley",
-          "slug": "evan-mobley",
-          "pos": "C",
-          "team": "CLE"
-        },
-        {
-          "key": "coby white",
-          "name": "Coby White",
-          "slug": "coby-white",
-          "pos": "SG",
-          "team": "CHI"
-        },
-        {
-          "key": "isaac okoro",
-          "name": "Isaac Okoro",
-          "slug": "isaac-okoro",
+          "key": "brandon ingram",
+          "name": "Brandon Ingram",
+          "slug": "brandon-ingram",
           "pos": "SF",
-          "team": "CLE"
+          "team": "TOR"
         },
         {
-          "key": "kon knueppel",
-          "name": "Kon Knueppel",
-          "slug": "kon-knueppel",
-          "pos": "",
-          "team": ""
+          "key": "bradley beal",
+          "name": "Bradley Beal",
+          "slug": "bradley-beal",
+          "pos": "SG",
+          "team": "PHX"
         }
       ],
       "sources": [
         {
-          "title": "Final Injury Report for Cavaliers-Hornets: Will Evan Mobley, Coby White Play?",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYU4yVk42aWF0NXU1UERaTlptNHp2ODNSaE9oMk1SbnYydy1UX2Zubkp2R3YtTk51OVY1UGZvWWd1QjNTRFZHZnJSMWViZTF3ZG5LbW90S3k2V0JfSW1HM1puRWRRNWNWeW1OQko2R3JuRVl5d3lBeEpPT3dfeTZCaGF0SXBvb0tkMlUyWGlJS3RVbmZnQV9DZVJDTkVyZWtFbVF1cU5rUmp5MUtucnZ1ZUJfVkxocHU0c2pzS0k4Q3Y?oc=5",
-          "publisher": "Athlon Sports",
+          "title": "Clippers Injury Report vs. Thunder: Latest on Brandon Ingram and Bradley Beal",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTXVmeWd2U2gzSWI3cXUtN1haMW9pSWNrMmZPMEZGOTRBTzc2VjlMQW43N3N5ZW5hZEdmbmM4WjNPRkdDdTZlYTd5cHZkLUpGZDdZOGJUcmdIQUF4cWJyOW5sLWpsTS1LVm0wQk9nNFZUNmlqZ2JBa1BOdy03cW1YNW12a2dDNTFGY1E?oc=5",
+          "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "Final Injury Report for Cavaliers-Hornets: Will Evan Mobley, Coby White Play? Athlon Sports",
-          "published": "Fri, 20 Feb 2026 08:00:00 GMT"
+          "snippet": "Clippers Injury Report vs. Thunder: Latest on Brandon Ingram and Bradley Beal Yahoo Sports",
+          "published": "Sun, 25 Oct 2026 18:30:59 GMT"
         },
         {
-          "title": "Cleveland Cavaliers injury report (Dec: 13): Latest on Evan Mobley and Isaac Okoro's status",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOHJTckx0blk1dVNhYmMyNWF3ZzJDdEtpX2RiSEhwYk5nLVlYTjhrVFdaZ0hqSkR6VnJ3ZE1Mc0xEM0RBWU5yNmVySjFxTVZXSVFVRUZSeUctX1EzZUF0a21sYUIzOUIxdGtIMTNON3NxeHM1OWtnNU5WSkRKeXpfa2E2Mjh5aC0yQURDUUdUUWdURGlxT2pSM1VueTl6ZzJHZGdLTTdIMlFHbm9TR0J0MUpzSFpiRFgzTEhaeE9NczNydw?oc=5",
-          "publisher": "Sportskeeda",
+          "title": "Why Isn’t Bradley Beal Playing? Explaining Clippers Absence, Injury Return Timeline",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQ1lrLXhYZ0hScEJiWDJCOXZWMGR3UlUxdFdCV1NXbnpvSWI2a2lIdE0ta1NKeVFpeGR1V0trSDhaUElOdjVRQ1N0RWtKbURKODVjM2hfQTFCVGJxbzcwT2lLX1h6WnRXbmkzcDRDMXZVaFZvcVdMQWNGdEJfckFqTEw2MDNVbGpVT3J3OVFkdFRxNE1QcGRtSm5BMmFxaUFFTGdWaTZNbGtvbkVTRi1icDdhazlaVmFMRDlzaXY2bWxfUjFQNmFuTmpJbw?oc=5",
+          "publisher": "Heavy.com",
           "kind": "article",
-          "snippet": "Cleveland Cavaliers injury report (Dec: 13): Latest on Evan Mobley and Isaac Okoro's status Sportskeeda",
-          "published": "Fri, 13 Dec 2024 08:00:00 GMT"
-        },
-        {
-          "title": "Evan Mobley goes to the Cleveland Cavaliers: Here’s what they’re getting",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQekJPYm4xUmpiOXc2YnVKcE51UkdJWC1hby1PdFRXbDc1Si1faXNNU2FCQl9JdE81bkhsendDcTU1UXlCNjRkeHVia2dDV2IwRW5wOV9rNjhXRFFZcEFoRTd4enFpVXhVaFVfb2JCaDQ2V2hNaF9EemxDMmZaM0lGU0QwblE2a0U0d1dLWGtiUWRuTjBxWDV0SEpBNUNWSmw3ck5vdEtVbGtGY3YyRjR1eV9xMlliNGxKYXNXQTM4QQ?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "Evan Mobley goes to the Cleveland Cavaliers: Here’s what they’re getting The New York Times",
-          "published": "Thu, 29 Jul 2021 07:00:00 GMT"
+          "snippet": "Why Isn’t Bradley Beal Playing? Explaining Clippers Absence, Injury Return Timeline Heavy.com",
+          "published": "Sun, 25 Oct 2026 21:45:35 GMT"
         }
       ]
     },
@@ -1678,6 +2056,190 @@
       ]
     },
     {
+      "id": "cameron-johnson-injury-day-day-ankle-sprain-c82e41e2",
+      "slug": "cameron-johnson-injury-day-day-ankle-sprain-c82e41e2",
+      "sport": "basketball",
+      "headline": "Cameron Johnson Injury: Day-to-day with ankle sprain",
+      "blurb": "Johnson (ankle) is doubtful to play Monday against the Warriors.",
+      "summary": "Cameron Johnson: Johnson (ankle) is doubtful to play Monday against the Warriors. Visit RotoWire.com for more analysis on this update. Cameron Johnson Injury: Doubtful for Monday RotoWire Aggregated from RotoWire NBA, RotoWire.",
+      "category": "injury",
+      "published": "2026-10-24T23:47:31Z",
+      "updated": "2026-10-25T22:41:19Z",
+      "players": [
+        {
+          "key": "cameron johnson",
+          "name": "Cameron Johnson",
+          "slug": "cameron-johnson",
+          "pos": "SF",
+          "team": "BKN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cameron Johnson Injury: Day-to-day with ankle sprain",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVnZyRDBfeko0Um13d0hSc1RXMmJHQTRkUWw0Z0RoYTZWRXZWbnk0MllkMWM0Y2JWVjBGdzhxWEd2eWlqWmdIdEx1UHdHaUVjVjdXTGhGc0Rlc1RScUVFNWxRZzZtVm1KeEwwZmhycXZKOW5ZWldkandtYTJWM1U3ZWtOVjNJeTdXTEUwaTJWbURKcGNoRkl4Z0dRTC1ySjlpS2VTaVZvNA?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Cameron Johnson Injury: Day-to-day with ankle sprain RotoWire",
+          "published": "Sat, 24 Oct 2026 23:47:31 GMT"
+        },
+        {
+          "title": "Cameron Johnson: Doubtful for Monday",
+          "url": "https://www.rotowire.com//basketball/player/cameron-johnson-4916",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Johnson (ankle) is doubtful to play Monday against the Warriors. Visit RotoWire.com for more analysis on this update.",
+          "published": "Sun, 25 Oct 2026 3:41:00 PM PDT"
+        },
+        {
+          "title": "Cameron Johnson Injury: Doubtful for Monday",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQkNqSmdad3dvY3RaMWwtdEpnWXVtUGdHTnNBX2tPbjR4a0o2emVLNG1Gc3EtN1V0UHd0MU9KdWlRbVVTX0szWlpzZ050WUdQWnExUTI5MzBOWjBGREdNMmlxNzUzdUpIQ1RCeE9NN0xVSlZhYW1ibHpBVkdMSlBfUHFJMFNtVVZ4MnZvUXQweS16RmVpWFVvQm1xYw?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Cameron Johnson Injury: Doubtful for Monday RotoWire",
+          "published": "Sun, 25 Oct 2026 22:41:19 GMT"
+        }
+      ]
+    },
+    {
+      "id": "status-alert-ivica-zubac-ankle-questionable-return-sunday-cc96ea95",
+      "slug": "status-alert-ivica-zubac-ankle-questionable-return-sunday-cc96ea95",
+      "sport": "basketball",
+      "headline": "Status alert: Ivica Zubac (ankle) questionable to return Sunday.",
+      "blurb": "Zubac is questionable to return to Sunday's game in Brooklyn due to a left ankle sprain, Pat Boylan of FanDuel Sports Network Indiana…",
+      "summary": "Ivica Zubac: Zubac is questionable to return to Sunday's game in Brooklyn due to a left ankle sprain, Pat Boylan of FanDuel Sports Network Indiana reports. Visit RotoWire.com for more analysis on this update. Ivica Zubac Injury: Questionable to return Sunday RotoWire Aggregated from RotoWire NBA, RotoWire, X, Google News.",
+      "category": "injury",
+      "published": "2026-10-25T22:31:36Z",
+      "updated": "2026-10-25T22:33:39Z",
+      "players": [
+        {
+          "key": "ivica zubac",
+          "name": "Ivica Zubac",
+          "slug": "ivica-zubac",
+          "pos": "C",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ivica Zubac: Questionable to return Sunday",
+          "url": "https://www.rotowire.com//basketball/player/ivica-zubac-3888",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Zubac is questionable to return to Sunday's game in Brooklyn due to a left ankle sprain, Pat Boylan of FanDuel Sports Network Indiana reports. Visit RotoWire.co",
+          "published": "Sun, 25 Oct 2026 3:34:00 PM PDT"
+        },
+        {
+          "title": "Ivica Zubac Injury: Questionable to return Sunday",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYnBWYUNIS2ZiU1pXWlJrY3VJYmJrZzRlb3RlRmhTS2xCYTNSRDFkY2V2bk9JVGtJbjBLZ0NTaTRIX1lZcGxYUF9rZm4yeU5ESy1pWHp2cW1JNTFJN0dFc3djUW95VWtfM1FzNUIzLXVGVWg2V0dqU3FYTWY1LXNRRUxpc21TYkVDZXNQcTFsaWJYREc1SHhMWmZ6VndIRWRSeVY0?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Ivica Zubac Injury: Questionable to return Sunday RotoWire",
+          "published": "Sun, 25 Oct 2026 22:33:39 GMT"
+        },
+        {
+          "title": "Status alert: Ivica Zubac (ankle) questionable to return Sunday. - X",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE45bzl0cUdMQ3RBbm5GT0J2ZE0tb2EwclJsemU4ZVZGanQzUEpYb0oxMDQzOGRWWmZheS1nb1dwVzgyd1IwY1FHRF9YbTBLdWhJdUNYdXVjT1d3VlpCSXVxeTVB?oc=5",
+          "publisher": "X",
+          "kind": "article",
+          "snippet": "Status alert: Ivica Zubac (ankle) questionable to return Sunday. X",
+          "published": "Sun, 25 Oct 2026 22:31:36 GMT"
+        }
+      ]
+    },
+    {
+      "id": "kawhi-leonard-scratched-late-timberwolves-raptors-swelling-left-ce0934c1",
+      "slug": "kawhi-leonard-scratched-late-timberwolves-raptors-swelling-left-ce0934c1",
+      "sport": "basketball",
+      "headline": "Kawhi Leonard scratched late for Timberwolves-Raptors with swelling in left knee",
+      "blurb": "The Raptors announced Leonard as a late scratch.",
+      "summary": "Kawhi Leonard: The Raptors announced Leonard as a late scratch. The swelling is not in the same knee that's required reconscructive surgery. Kawhi Leonard Injury: Not playing Sunday RotoWire Aggregated from Yahoo Sports, RotoWire, Heavy.com.",
+      "category": "injury",
+      "published": "2026-10-25T22:03:15Z",
+      "updated": "2026-10-25T22:26:03Z",
+      "players": [
+        {
+          "key": "kawhi leonard",
+          "name": "Kawhi Leonard",
+          "slug": "kawhi-leonard",
+          "pos": "SF",
+          "team": "LAC"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kawhi Leonard scratched late for Timberwolves-Raptors with swelling in left knee",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/kawhi-leonard-scratched-late-for-timberwolves-raptors-with-swelling-in-left-knee-222046019.html",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "The Raptors announced Leonard as a late scratch. The swelling is not in the same knee that's required reconscructive surgery.",
+          "published": "Sun, 25 Oct 2026 22:20:37 +0000"
+        },
+        {
+          "title": "Kawhi Leonard Injury: Not playing Sunday",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQR0JIdUdkZm1zeVExb1BhTGR2bmgxZ3ZnMmp1TEZiZXY4U0k4RG9VUHpXZkoxN2NnQW5tLUNGeUtzb25KR3Nhek92UE1EVklTVndzdXFkZnFGVGtOTmotWWhhUEtCRkFXTDk3TTZUTHNpQlNMbWpDUkNtS1ItUjJBZEg4ZVhCLW5HS3BfekFDZXcyS1p3NVhv?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Kawhi Leonard Injury: Not playing Sunday RotoWire",
+          "published": "Sun, 25 Oct 2026 22:03:15 GMT"
+        },
+        {
+          "title": "BREAKING: Toronto Raptors Make Sudden Kawhi Leonard Announcement",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSWxOZFdsSEVQNW0zVjR0STlnUEdEWWNYeHFpZkVkT3B5c0dtVmFFN19wSWgwR0xpZUY4UDJfN2o0WmFGTjR3bDd3X1ZCUHVVX1UyMVBQWW1DM1M4Sm1HbGRXYTI2eWpEcFNUbElNYllfT0hFbVhoekpSTnBvN3BreVdSTW1WTTdmOGF6RQ?oc=5",
+          "publisher": "Heavy.com",
+          "kind": "article",
+          "snippet": "BREAKING: Toronto Raptors Make Sudden Kawhi Leonard Announcement Heavy.com",
+          "published": "Sun, 25 Oct 2026 22:26:03 GMT"
+        }
+      ]
+    },
+    {
+      "id": "oso-ighodaro-injury-doubtful-monday-599c1b35",
+      "slug": "oso-ighodaro-injury-doubtful-monday-599c1b35",
+      "sport": "basketball",
+      "headline": "NBA Injury Report: Flagg, Banchero, Duren and Ighodaro",
+      "blurb": "NBA Injury Report: Flagg, Banchero, Duren and Ighodaro BVM Sports",
+      "summary": "Oso Ighodaro: NBA Injury Report: Flagg, Banchero, Duren and Ighodaro BVM Sports Ighodaro (oblique) is doubtful for Monday's matchup with the Thunder, Duane Rankin of The Arizona Republic reports. Visit RotoWire.com for more analysis on this Aggregated from BVM Sports, RotoWire NBA, RotoWire.",
+      "category": "injury",
+      "published": "2026-10-24T02:58:02Z",
+      "updated": "2026-10-25T22:25:24Z",
+      "players": [
+        {
+          "key": "oso ighodaro",
+          "name": "Oso Ighodaro",
+          "slug": "oso-ighodaro",
+          "pos": "PF",
+          "team": "PHX"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Oso Ighodaro: Doubtful for Monday",
+          "url": "https://www.rotowire.com//basketball/player/oso-ighodaro-6293",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Ighodaro (oblique) is doubtful for Monday's matchup with the Thunder, Duane Rankin of The Arizona Republic reports. Visit RotoWire.com for more analysis on this",
+          "published": "Sun, 25 Oct 2026 3:25:00 PM PDT"
+        },
+        {
+          "title": "Oso Ighodaro Injury: Doubtful for Monday",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMlBBeTBTVDE2bTljT0puRl9HZ1pXdVZCQjlyeHJJZFRYMUpSMzk5Y045MmsySnJwZTRtZHUyMjdsNXZ4M1hELWpIbjk2clpBUmp6a05ZNUNFQUV2Q0R5aWNndWpZLWs2SlNoY19wbnF2OUZrT3VUYmYxbnZmVVRKTU03STVxWWJGTTBjbzd0NGpRSGJZbHhz?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Oso Ighodaro Injury: Doubtful for Monday RotoWire",
+          "published": "Sun, 25 Oct 2026 22:25:24 GMT"
+        },
+        {
+          "title": "NBA Injury Report: Flagg, Banchero, Duren and Ighodaro",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbGFTeTF4UnJJbUtQdXVLU2Z4ZU9FMGRfdlVZUEFXMnRDVzZ4WjZlTGxQcXVFbU1pVVAxTUduekZHNUhMYm5mN3Q3a2UzSWZKUHItV1FDU2ZNYU1YOFUxV3ZKNU1ramZPa2pvT3hnQU01MmJqU2JvMlVKR2E4T3EyaUpCdXlBVnZEWFVMemFR?oc=5",
+          "publisher": "BVM Sports",
+          "kind": "article",
+          "snippet": "NBA Injury Report: Flagg, Banchero, Duren and Ighodaro BVM Sports",
+          "published": "Sat, 24 Oct 2026 02:58:02 GMT"
+        }
+      ]
+    },
+    {
       "id": "reed-sheppard-throws-first-pitch-yankees-mets-1b1ca109",
       "slug": "reed-sheppard-throws-first-pitch-yankees-mets-1b1ca109",
       "sport": "basketball",
@@ -1738,39 +2300,48 @@
       ]
     },
     {
-      "id": "embiid-walker-sixers-pistons-finish-back-back-9951aa98",
-      "slug": "embiid-walker-sixers-pistons-finish-back-back-9951aa98",
+      "id": "marcus-smart-injury-late-addition-injury-f055116d",
+      "slug": "marcus-smart-injury-late-addition-injury-f055116d",
       "sport": "basketball",
-      "headline": "Embiid and Walker out for Sixers vs. Pistons to finish back-to-back",
-      "blurb": "The Sixers will be down Joel Embiid and Jabari Walker on Sunday night.",
-      "summary": "The Sixers will be down Joel Embiid and Jabari Walker on Sunday night. Board reading of NBC Sports Philadelphia.",
+      "headline": "Marcus Smart Injury: Late addition to injury report",
+      "blurb": "Marcus Smart Injury: Iffy for Monday RotoWire",
+      "summary": "Marcus Smart Injury: Iffy for Monday RotoWire Marcus Smart Injury: Late addition to injury report RotoWire Marcus Smart (forearm) downgraded to questionable Saturday. Aggregated from RotoWire, X.",
       "category": "injury",
-      "published": "2026-10-25T14:32:08Z",
-      "updated": "2026-10-25T14:32:08Z",
+      "published": "2026-10-24T19:30:10Z",
+      "updated": "2026-10-25T21:26:40Z",
       "players": [
         {
-          "key": "jabari walker",
-          "name": "Jabari Walker",
-          "slug": "jabari-walker",
-          "pos": "PF",
-          "team": "POR"
-        },
-        {
-          "key": "joel embiid",
-          "name": "Joel Embiid",
-          "slug": "joel-embiid",
-          "pos": "C",
-          "team": "PHI"
+          "key": "marcus smart",
+          "name": "Marcus Smart",
+          "slug": "marcus-smart",
+          "pos": "",
+          "team": ""
         }
       ],
       "sources": [
         {
-          "title": "Embiid and Walker out for Sixers vs. Pistons to finish back-to-back",
-          "url": "https://sports.yahoo.com/articles/embiid-walker-sixers-vs-pistons-143208619.html",
-          "publisher": "NBC Sports Philadelphia",
+          "title": "Marcus Smart Injury: Late addition to injury report",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ2h2UTlKZWpiRnpiejVZcG12Tlg3VEY1MWRrY0xHMVhrX3cxcl9VQmV5a1ZQYWp6ZmtiR1dPd2RwVjR6dEowbGJqTndXS0VlY3lEMDVuS0I2bk1aeGNiVE12QVhScS1JWFlyNnNLMjdrUHFyQ0VwcmY5d1ItVGZacFEtQ3FxMG5FNWZSc0pObDZoZHJmUlNuTXZBZ016MDBUZ2RNZVBn?oc=5",
+          "publisher": "RotoWire",
           "kind": "article",
-          "snippet": "The Sixers will be down Joel Embiid and Jabari Walker on Sunday night.",
-          "published": "Sun, 25 Oct 2026 14:32:08 +0000"
+          "snippet": "Marcus Smart Injury: Late addition to injury report RotoWire",
+          "published": "Sat, 24 Oct 2026 19:34:50 GMT"
+        },
+        {
+          "title": "Marcus Smart (forearm) downgraded to questionable Saturday. - X",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAtWXgyNURKVkhTWWVwZ3NlVGljd1lqVUJVZFpIRWxqcnllYkFGanoxMWxULVdsUW9OR0ZENDhoOGVfRVBWYy1TWW85bldpNDZ1ejVMZDFpTTd0S3hQVzNFNjd3?oc=5",
+          "publisher": "X",
+          "kind": "article",
+          "snippet": "Marcus Smart (forearm) downgraded to questionable Saturday. X",
+          "published": "Sat, 24 Oct 2026 19:30:10 GMT"
+        },
+        {
+          "title": "Marcus Smart Injury: Iffy for Monday",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYkE2bkZ1Y2FOdWgwcTN1a3ZhNWVxQkpWMTNaOFhsOUZJcUV4bWhsUDBlQWhhYlMtazhjYWtxc2YxaURaUmFPS2lDejhscTN5X19rbllPVFhpTFJUcTRjZm9lMV9JSGt3UzVoWVNuS0hTOFRYS2x1SE9oSTdmRHdseTRtdTZFU3VCVk4xZUJMWXJ4Zw?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Marcus Smart Injury: Iffy for Monday RotoWire",
+          "published": "Sun, 25 Oct 2026 21:26:40 GMT"
         }
       ]
     },
@@ -1821,6 +2392,43 @@
       ]
     },
     {
+      "id": "lineup-alert-magic-leaning-toward-starting-jase-richardson-8e5136c1",
+      "slug": "lineup-alert-magic-leaning-toward-starting-jase-richardson-8e5136c1",
+      "sport": "basketball",
+      "headline": "Lineup alert: Magic leaning toward starting Jase Richardson for injured Paolo Banchero on Sunday, per coach…",
+      "blurb": "Lineup alert: Magic leaning toward starting Jase Richardson for injured Paolo Banchero on Sunday, per coach Sweeney.",
+      "summary": "Lineup alert: Magic leaning toward starting Jase Richardson for injured Paolo Banchero on Sunday, per coach Sweeney. Aggregated from X, Google News.",
+      "category": "coach",
+      "published": "2026-10-25T21:51:06Z",
+      "updated": "2026-10-25T21:51:06Z",
+      "players": [
+        {
+          "key": "jase richardson",
+          "name": "Jase Richardson",
+          "slug": "jase-richardson",
+          "pos": "",
+          "team": ""
+        },
+        {
+          "key": "paolo banchero",
+          "name": "Paolo Banchero",
+          "slug": "paolo-banchero",
+          "pos": "PF",
+          "team": "ORL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lineup alert: Magic leaning toward starting Jase Richardson for injured Paolo Banchero on Sunday, per coach Sweeney. (via @therealBeede) - X",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LTTJnUThHNHE2QkhNaFotZ1huNFFNNENGR3Z5ZXNIMWZhUU0tYUN4WmRsb08taGdmVTMxbnU5M1g5bmx2WXhDWGtZMXIzODZqbEJuVEtmbEpONEtVQWtxRllR?oc=5",
+          "publisher": "X",
+          "kind": "article",
+          "snippet": "Lineup alert: Magic leaning toward starting Jase Richardson for injured Paolo Banchero on Sunday, per coach Sweeney. (via @therealBeede) X",
+          "published": "Sun, 25 Oct 2026 21:51:06 GMT"
+        }
+      ]
+    },
+    {
       "id": "joel-embiid-injury-management-listed-sunday-14110747",
       "slug": "joel-embiid-injury-management-listed-sunday-14110747",
       "sport": "basketball",
@@ -1867,6 +2475,120 @@
       ]
     },
     {
+      "id": "knicks-injury-jose-alvarado-against-magic-sprained-ankle-1aedc05c",
+      "slug": "knicks-injury-jose-alvarado-against-magic-sprained-ankle-1aedc05c",
+      "sport": "basketball",
+      "headline": "Knicks Injury Tracker: Jose Alvarado out against Magic with sprained ankle",
+      "blurb": "The latest injury news and possible return dates for New York Knicks players...",
+      "summary": "Jose Alvarado: The latest injury news and possible return dates for New York Knicks players... Jose Alvarado Injury: Not playing Sunday RotoWire Aggregated from SNY, RotoWire.",
+      "category": "injury",
+      "published": "2026-10-25T21:25:58Z",
+      "updated": "2026-10-25T21:42:21Z",
+      "players": [
+        {
+          "key": "jose alvarado",
+          "name": "Jose Alvarado",
+          "slug": "jose-alvarado",
+          "pos": "PG",
+          "team": "NOP"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Knicks Injury Tracker: Jose Alvarado out against Magic with sprained ankle",
+          "url": "https://sports.yahoo.com/articles/knicks-injury-tracker-jose-alvarado-214221225.html",
+          "publisher": "SNY",
+          "kind": "article",
+          "snippet": "The latest injury news and possible return dates for New York Knicks players...",
+          "published": "Sun, 25 Oct 2026 21:42:21 +0000"
+        },
+        {
+          "title": "Jose Alvarado Injury: Not playing Sunday",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcm1qME1MSGhhZ2hFdDhJRGlvZDRCTlhWQWZVRHhMSHIyT2lQNXF4MUNzX0k2bGNOZUs5ZXhweE9LTmZKbkRhbnV0aEt5NloyOWVrdGJ0SGx5M2lMQ3I2Q0NmZ2V1NkphZVZibUs4UjNJdDAzSW5nSDJEeTY2Q1BpWXZmOWdUY2N1MjFmTEpLMUt6MkIwQS0w?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Jose Alvarado Injury: Not playing Sunday RotoWire",
+          "published": "Sun, 25 Oct 2026 21:25:58 GMT"
+        }
+      ]
+    },
+    {
+      "id": "lebron-james-headlines-5-player-76ers-injury-bucks-6cb1af94",
+      "slug": "lebron-james-headlines-5-player-76ers-injury-bucks-6cb1af94",
+      "sport": "basketball",
+      "headline": "LeBron James Headlines 5-Player 76ers Injury Report Before Bucks Showdown",
+      "blurb": "LeBron James (injury management) listed out Saturday.",
+      "summary": "LeBron James (injury management) listed out Saturday. Updated #NBA Injury report for tonight's #Sixers game vs Pistons at Xfinity Mobile Arena LeBron James not listed on injury report #DETvsPHI #ThrowTheBallUp X LeBron James Headlines 5-Player 76ers Injury Report Before Bucks Showdown Yahoo Sports Aggregated from X, Google News, Yahoo Sports.",
+      "category": "injury",
+      "published": "2026-10-24T15:33:43Z",
+      "updated": "2026-10-25T21:38:51Z",
+      "players": [
+        {
+          "key": "lebron james",
+          "name": "LeBron James",
+          "slug": "lebron-james",
+          "pos": "SF",
+          "team": "LAL"
+        }
+      ],
+      "sources": [
+        {
+          "title": "LeBron James Headlines 5-Player 76ers Injury Report Before Bucks Showdown",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZFFKU1pvaW5zaF83bWpOeVZnb0F1bEhhemdkVHp2Z3dMVWQ2NVplekFzc1FTdFhkTUN2MnphMGJ0dDAyQTkwdnluU1JvT1hWWXd2QXdYZVZmdkxOMGdKRHI4RUpfNzJ0TFcwSHJaNFMtY1ZKQXFRZGVnaDlfNDR0Z092b2hoeTA?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "LeBron James Headlines 5-Player 76ers Injury Report Before Bucks Showdown Yahoo Sports",
+          "published": "Sat, 24 Oct 2026 19:11:11 GMT"
+        },
+        {
+          "title": "LeBron James injured, ruled out ahead of matchup vs Bucks",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOXQ0dnlZQk9xcGRBU3pQbllEcjQ5eDJIcU9GYTV4b3FpcDgyLWxaMFkzY1VwWVBxMV9SZHRWZUNqai1ySExLcllZV1ZRNF9IVkpPS3NDU0c5aXhjd3dfbjlxRXAwRENtMW8xSHpNZlF0MWpsc21zcjZIcXlmZU9iM0JyUmpvNWZp?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "LeBron James injured, ruled out ahead of matchup vs Bucks Yahoo Sports",
+          "published": "Sat, 24 Oct 2026 19:10:47 GMT"
+        }
+      ]
+    },
+    {
+      "id": "aj-dybantsa-ruled-monday-6f57370a",
+      "slug": "aj-dybantsa-ruled-monday-6f57370a",
+      "sport": "basketball",
+      "headline": "AJ Dybantsa (ankle) listed out for Monday.",
+      "blurb": "AJ Dybantsa (ankle) listed out for Monday.",
+      "summary": "AJ Dybantsa (ankle) listed out for Monday. Dybantsa (ankle) has been ruled out for Monday's game against the Hornets. Visit RotoWire.com for more analysis on this update. Aggregated from X, Google News, RotoWire NBA.",
+      "category": "injury",
+      "published": "2026-10-25T20:45:15Z",
+      "updated": "2026-10-25T20:57:28Z",
+      "players": [
+        {
+          "key": "aj dybantsa",
+          "name": "AJ Dybantsa",
+          "slug": "aj-dybantsa",
+          "pos": "SF",
+          "team": "BOS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "AJ Dybantsa: Ruled out for Monday",
+          "url": "https://www.rotowire.com//basketball/player/aj-dybantsa-6925",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Dybantsa (ankle) has been ruled out for Monday's game against the Hornets. Visit RotoWire.com for more analysis on this update.",
+          "published": "Sun, 25 Oct 2026 1:53:00 PM PDT"
+        },
+        {
+          "title": "AJ Dybantsa (ankle) listed out for Monday. - X",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9VUWI2SVlJOTh6UHhWTGVxUl83R0U0bDFrbE1zX1BOSWpoZ2tOei1FUm1VRWtDN01BUEF4dnJmRDVfUkRyQnRKVWp0N1lFTWE1VlB4WnJ5aGFPSlpGVWEwSHF3?oc=5",
+          "publisher": "X",
+          "kind": "article",
+          "snippet": "AJ Dybantsa (ankle) listed out for Monday. X",
+          "published": "Sun, 25 Oct 2026 20:45:15 GMT"
+        }
+      ]
+    },
+    {
       "id": "cooper-flagg-shoulder-listed-questionable-monday-123e5056",
       "slug": "cooper-flagg-shoulder-listed-questionable-monday-123e5056",
       "sport": "basketball",
@@ -1909,8 +2631,8 @@
       "slug": "heat-predicted-trade-134m-2-time-champion-all-bbb4632a",
       "sport": "basketball",
       "headline": "Heat predicted to trade for $134M 2-time NBA champion, All-Star to pair with Giannis Antetokounmpo",
-      "blurb": "Major Giannis Antetokounmpo Trade Proposal Links Milwaukee Bucks Star To Division Rival Wisconsin Sports Heroics",
-      "summary": "Major Giannis Antetokounmpo Trade Proposal Links Milwaukee Bucks Star To Division Rival Wisconsin Sports Heroics Raptors predicted to trade for Mavericks' $118M NBA champion, All-Star to pair with Kawhi Leonard Yahoo Sports Heat predicted to trade for $134M 2-time NBA champion, All-Star to pair with Giannis Antetokounmpo Yahoo Sports Aggregated from Wisconsin Sports Heroics, Yahoo Sports, Sporting News, Sports Illustrated, ClutchPoints.",
+      "blurb": "Report: Warriors Ended Trade Deadline Bid for 2-Time All-Star to Pursue Giannis Sports Illustrated",
+      "summary": "Report: Warriors Ended Trade Deadline Bid for 2-Time All-Star to Pursue Giannis Sports Illustrated Raptors predicted to trade for Mavericks' $118M NBA champion, All-Star to pair with Kawhi Leonard Yahoo Sports Heat predicted to trade for $134M 2-time NBA champion, All-Star to pair with Giannis Antetokounmpo Yahoo Sports Aggregated from Sports Illustrated, Yahoo Sports, Wisconsin Sports Heroics.",
       "category": "trade",
       "published": "2025-12-12T08:00:00Z",
       "updated": "2026-10-24T06:18:00Z",
@@ -2004,44 +2726,134 @@
           "kind": "article",
           "snippet": "Major Giannis Antetokounmpo Trade Proposal Links Milwaukee Bucks Star To Division Rival Wisconsin Sports Heroics",
           "published": "Thu, 14 May 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Report: Warriors Ended Trade Deadline Bid for 2-Time All-Star to Pursue Giannis",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSzFhd01UZlpydnluWlpCNHNzUXBzT2ZEQ0FLYkpVWkF3YXdDdklIUTJpaE85Z3pyeGlFZ3pYT0hYNDZ2VmUzeEVIV0JGNWZ4d3RVczJnZUhKYVRMZDVzRlJBUjExeTZpQ21HZnAyMVlOU3JxZEFpMWp0NGFCRldJbWV6dHdtam1ndnlYdjdrTENYY1FCY2FKMFRVSnE5SE0zcXhuVGhyZW1SZk9QSXRrNnVVQU5xU2lpcHY3bUlDU19NWVF3U3hz?oc=5",
+          "publisher": "Sports Illustrated",
+          "kind": "article",
+          "snippet": "Report: Warriors Ended Trade Deadline Bid for 2-Time All-Star to Pursue Giannis Sports Illustrated",
+          "published": "Wed, 02 Sep 2026 07:00:00 GMT"
         }
       ]
     },
     {
-      "id": "lebron-james-headlines-5-player-76ers-injury-bucks-6cb1af94",
-      "slug": "lebron-james-headlines-5-player-76ers-injury-bucks-6cb1af94",
+      "id": "keegan-murray-won-t-play-sunday-13bddf41",
+      "slug": "keegan-murray-won-t-play-sunday-13bddf41",
       "sport": "basketball",
-      "headline": "LeBron James Headlines 5-Player 76ers Injury Report Before Bucks Showdown",
-      "blurb": "LeBron James Headlines 5-Player 76ers Injury Report Before Bucks Showdown Yahoo Sports",
-      "summary": "LeBron James News: Off injury report RotoWire LeBron James (sciatica) removed from injury report NBC Sports NBA injury report for Saturday, October 24: LeBron James questionable TalkBasket.net Aggregated from RotoWire, NBC Sports, TalkBasket.net, Yahoo Sports.",
+      "headline": "Keegan Murray: Won't play Sunday",
+      "blurb": "Murray (ankle) has been ruled out for Sunday's game against the Grizzlies.",
+      "summary": "Keegan Murray: Murray (ankle) has been ruled out for Sunday's game against the Grizzlies. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
       "category": "injury",
-      "published": "2026-10-24T15:33:43Z",
-      "updated": "2026-10-25T17:12:29Z",
+      "published": "2026-10-25T23:20:51Z",
+      "updated": "2026-10-25T23:20:51Z",
       "players": [
         {
-          "key": "lebron james",
-          "name": "LeBron James",
-          "slug": "lebron-james",
-          "pos": "SF",
-          "team": "LAL"
+          "key": "keegan murray",
+          "name": "Keegan Murray",
+          "slug": "keegan-murray",
+          "pos": "PF",
+          "team": "SAC"
         }
       ],
       "sources": [
         {
-          "title": "LeBron James Headlines 5-Player 76ers Injury Report Before Bucks Showdown",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZFFKU1pvaW5zaF83bWpOeVZnb0F1bEhhemdkVHp2Z3dMVWQ2NVplekFzc1FTdFhkTUN2MnphMGJ0dDAyQTkwdnluU1JvT1hWWXd2QXdYZVZmdkxOMGdKRHI4RUpfNzJ0TFcwSHJaNFMtY1ZKQXFRZGVnaDlfNDR0Z092b2hoeTA?oc=5",
-          "publisher": "Yahoo Sports",
+          "title": "Keegan Murray: Won't play Sunday",
+          "url": "https://www.rotowire.com//basketball/player/keegan-murray-5699",
+          "publisher": "RotoWire NBA",
           "kind": "article",
-          "snippet": "LeBron James Headlines 5-Player 76ers Injury Report Before Bucks Showdown Yahoo Sports",
-          "published": "Sat, 24 Oct 2026 19:11:11 GMT"
-        },
+          "snippet": "Murray (ankle) has been ruled out for Sunday's game against the Grizzlies. Visit RotoWire.com for more analysis on this update.",
+          "published": "Sun, 25 Oct 2026 4:04:00 PM PDT"
+        }
+      ]
+    },
+    {
+      "id": "vj-edgecombe-sunday-0aa07f7d",
+      "slug": "vj-edgecombe-sunday-0aa07f7d",
+      "sport": "basketball",
+      "headline": "VJ Edgecombe: Out Sunday",
+      "blurb": "Edgecombe (abdomen) is out for Sunday's game against the Pistons, Adam Aaronson of PhillyVoice.com reports.",
+      "summary": "Vj Edgecombe: Edgecombe (abdomen) is out for Sunday's game against the Pistons, Adam Aaronson of PhillyVoice.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
+      "category": "injury",
+      "published": "2026-10-25T23:20:51Z",
+      "updated": "2026-10-25T23:20:51Z",
+      "players": [
         {
-          "title": "LeBron James injured, ruled out ahead of matchup vs Bucks",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOXQ0dnlZQk9xcGRBU3pQbllEcjQ5eDJIcU9GYTV4b3FpcDgyLWxaMFkzY1VwWVBxMV9SZHRWZUNqai1ySExLcllZV1ZRNF9IVkpPS3NDU0c5aXhjd3dfbjlxRXAwRENtMW8xSHpNZlF0MWpsc21zcjZIcXlmZU9iM0JyUmpvNWZp?oc=5",
+          "key": "vj edgecombe",
+          "name": "Vj Edgecombe",
+          "slug": "vj-edgecombe",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "VJ Edgecombe: Out Sunday",
+          "url": "https://www.rotowire.com//basketball/player/vj-edgecombe-6550",
+          "publisher": "RotoWire NBA",
+          "kind": "article",
+          "snippet": "Edgecombe (abdomen) is out for Sunday's game against the Pistons, Adam Aaronson of PhillyVoice.com reports. Visit RotoWire.com for more analysis on this update.",
+          "published": "Sun, 25 Oct 2026 3:51:00 PM PDT"
+        }
+      ]
+    },
+    {
+      "id": "fred-vanvleet-listed-injury-28d59463",
+      "slug": "fred-vanvleet-listed-injury-28d59463",
+      "sport": "basketball",
+      "headline": "Fred VanVleet News: Not listed on injury report",
+      "blurb": "Fred VanVleet (knee) absent from injury report NBC Sports",
+      "summary": "Fred VanVleet (knee) absent from injury report NBC Sports Fred VanVleet News: Not listed on injury report RotoWire Aggregated from NBC Sports, RotoWire.",
+      "category": "injury",
+      "published": "2026-10-25T21:32:13Z",
+      "updated": "2026-10-25T22:47:45Z",
+      "players": [
+        {
+          "key": "fred vanvleet",
+          "name": "Fred VanVleet",
+          "slug": "fred-vanvleet",
+          "pos": "PG",
+          "team": "HOU"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fred VanVleet News: Not listed on injury report",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxON01CUHZxOXJHTUxBc2pMZTBRRU5jendPdDQ1MmhQb0tzZDJYNTV5WHZUY09uSWI3Zl9LRWVCenE1dEQxRmdGN2h5X3lGUWdrd09NeDhYbXJUWEY3SnBkZGxMcDhqa1VIS1cwVUxIN2hLN2RzcGdHYllNU0FhQ0wySk9YQlA4NnR6c3kzOXV5UUJHdjVsYXplUElMUGsybUw2?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Fred VanVleet News: Not listed on injury report RotoWire",
+          "published": "Sun, 25 Oct 2026 21:32:13 GMT"
+        }
+      ]
+    },
+    {
+      "id": "76ers-deny-joel-embiid-s-push-play-back-2855c5ee",
+      "slug": "76ers-deny-joel-embiid-s-push-play-back-2855c5ee",
+      "sport": "basketball",
+      "headline": "76ers deny Joel Embiid's push to play in back-to-back games, opt to rest him due to injury management vs.…",
+      "blurb": "Joel Embiid dropped a triple-double on Saturday night in the 76ers' win over the Bucks.",
+      "summary": "Joel Embiid dropped a triple-double on Saturday night in the 76ers' win over the Bucks. Board reading of Yahoo Sports.",
+      "category": "injury",
+      "published": "2026-10-25T22:46:01Z",
+      "updated": "2026-10-25T22:46:01Z",
+      "players": [
+        {
+          "key": "joel embiid",
+          "name": "Joel Embiid",
+          "slug": "joel-embiid",
+          "pos": "C",
+          "team": "PHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "76ers deny Joel Embiid's push to play in back-to-back games, opt to rest him due to injury management vs. Pistons",
+          "url": "https://sports.yahoo.com/nba/article/76ers-deny-joel-embiids-push-to-play-in-back-to-back-games-opt-to-rest-him-due-to-injury-management-vs-pistons-225440774.html",
           "publisher": "Yahoo Sports",
           "kind": "article",
-          "snippet": "LeBron James injured, ruled out ahead of matchup vs Bucks Yahoo Sports",
-          "published": "Sat, 24 Oct 2026 19:10:47 GMT"
+          "snippet": "Joel Embiid dropped a triple-double on Saturday night in the 76ers' win over the Bucks.",
+          "published": "Sun, 25 Oct 2026 22:46:01 +0000"
         }
       ]
     },
@@ -2213,32 +3025,152 @@
       ]
     },
     {
-      "id": "aj-dybantsa-ruled-monday-6f57370a",
-      "slug": "aj-dybantsa-ruled-monday-6f57370a",
+      "id": "gui-santos-injury-questionable-play-monday-c9c52eca",
+      "slug": "gui-santos-injury-questionable-play-monday-c9c52eca",
       "sport": "basketball",
-      "headline": "AJ Dybantsa: Ruled out for Monday",
-      "blurb": "Dybantsa (ankle) has been ruled out for Monday's game against the Hornets.",
-      "summary": "AJ Dybantsa: Dybantsa (ankle) has been ruled out for Monday's game against the Hornets. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
+      "headline": "Gui Santos Injury: Questionable to play Monday",
+      "blurb": "Gui Santos Injury: Questionable to play Monday RotoWire",
+      "summary": "Gui Santos Injury: Questionable to play Monday RotoWire Board reading of RotoWire.",
       "category": "injury",
-      "published": "2026-10-25T20:57:28Z",
-      "updated": "2026-10-25T20:57:28Z",
+      "published": "2026-10-25T21:22:54Z",
+      "updated": "2026-10-25T21:22:54Z",
       "players": [
         {
-          "key": "aj dybantsa",
-          "name": "AJ Dybantsa",
-          "slug": "aj-dybantsa",
+          "key": "gui santos",
+          "name": "Gui Santos",
+          "slug": "gui-santos",
           "pos": "SF",
-          "team": "BOS"
+          "team": "GSW"
         }
       ],
       "sources": [
         {
-          "title": "AJ Dybantsa: Ruled out for Monday",
-          "url": "https://www.rotowire.com//basketball/player/aj-dybantsa-6925",
-          "publisher": "RotoWire NBA",
+          "title": "Gui Santos Injury: Questionable to play Monday",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWFljeFBod012VUFLUGJTRTQwbXBVMXdTZzFOaVVuM0tvNzM0RDQwRGNuUjM0X0J4WDdFblkyc29Hc0pMNmNKLVozVEVjdmY0RkttZENDRkl6TGZDMW5HTzN2cGxPZURlV1BFWjNURW1OcHNyS1Z4ek12bHdXOUwyNHU2WHlBV2lUVDVZU3NmTVB4X0VtRTc5Qy1BNGZrbDQ?oc=5",
+          "publisher": "RotoWire",
           "kind": "article",
-          "snippet": "Dybantsa (ankle) has been ruled out for Monday's game against the Hornets. Visit RotoWire.com for more analysis on this update.",
-          "published": "Sun, 25 Oct 2026 1:53:00 PM PDT"
+          "snippet": "Gui Santos Injury: Questionable to play Monday RotoWire",
+          "published": "Sun, 25 Oct 2026 21:22:54 GMT"
+        }
+      ]
+    },
+    {
+      "id": "kon-knueppel-injury-ruled-monday-1e295e41",
+      "slug": "kon-knueppel-injury-ruled-monday-1e295e41",
+      "sport": "basketball",
+      "headline": "Kon Knueppel Injury: Ruled out for Monday",
+      "blurb": "Kon Knueppel Injury: Ruled out for Monday RotoWire",
+      "summary": "Kon Knueppel Injury: Ruled out for Monday RotoWire Board reading of RotoWire.",
+      "category": "injury",
+      "published": "2026-10-25T21:20:29Z",
+      "updated": "2026-10-25T21:20:29Z",
+      "players": [
+        {
+          "key": "kon knueppel",
+          "name": "Kon Knueppel",
+          "slug": "kon-knueppel",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kon Knueppel Injury: Ruled out for Monday",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORWVOMVZlY2RKMV9PekxJYndKM3B0ejRPd0ptcXNEdmw3VmI5SFZ4N0dXbWI3eTlqVnFFWnNoanFubHBaWC1SYmtmbGRaY1hucUVoVVY4NWNaMzhjQ1hfWHJqV0k5SGpTbmlacWtxUlIyWm1vWGZ5elIzOXNmMTdIeURrRlJCTXpSNC1sUzZvWnpVU2tJSEhmRQ?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Kon Knueppel Injury: Ruled out for Monday RotoWire",
+          "published": "Sun, 25 Oct 2026 21:20:29 GMT"
+        }
+      ]
+    },
+    {
+      "id": "al-horford-left-off-injury-30bd5cff",
+      "slug": "al-horford-left-off-injury-30bd5cff",
+      "sport": "basketball",
+      "headline": "Al Horford News: Left off injury report",
+      "blurb": "Al Horford News: Left off injury report RotoWire",
+      "summary": "Al Horford News: Left off injury report RotoWire Board reading of RotoWire.",
+      "category": "injury",
+      "published": "2026-10-25T21:15:29Z",
+      "updated": "2026-10-25T21:15:29Z",
+      "players": [
+        {
+          "key": "al horford",
+          "name": "Al Horford",
+          "slug": "al-horford",
+          "pos": "",
+          "team": ""
+        }
+      ],
+      "sources": [
+        {
+          "title": "Al Horford News: Left off injury report",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNY2xJaDdBVkVGbUxzbTQ1OTFRZXFaUEpSZEd3Zzg4c3FEOWJJSjZHR0prM2NFaGxDS2NDYkYtZlZkY1lMRzE3R05tcC1kRDA5MFZmVWdiWFFrSGlBTXJIUzAyNmxKM0lHNHVzLW4zRXYwRWk3cDRncGdjLVlkcnM3bzluYVlDak5ENHpVVlVuN3I4aEd3ZHc?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Al Horford News: Left off injury report RotoWire",
+          "published": "Sun, 25 Oct 2026 21:15:29 GMT"
+        }
+      ]
+    },
+    {
+      "id": "draymond-green-off-injury-monday-b223959f",
+      "slug": "draymond-green-off-injury-monday-b223959f",
+      "sport": "basketball",
+      "headline": "Draymond Green News: Off injury report for Monday",
+      "blurb": "Draymond Green News: Off injury report for Monday RotoWire",
+      "summary": "Draymond Green News: Off injury report for Monday RotoWire Board reading of RotoWire.",
+      "category": "injury",
+      "published": "2026-10-25T21:13:19Z",
+      "updated": "2026-10-25T21:13:19Z",
+      "players": [
+        {
+          "key": "draymond green",
+          "name": "Draymond Green",
+          "slug": "draymond-green",
+          "pos": "PF",
+          "team": "GSW"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Draymond Green News: Off injury report for Monday",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaW0xWlFkV3ByZnBza0l1LVVNN2VReEZqdUQ2RkduUDJVblBhNXJMaXVITjRvVHdFS0RiOFBuMzREYWdGc2M4UUMySlB6RUZiWGtqVmg2X2VBSXQxSGpjUlFxQ1I4RnhNQ0VxTzctSjAyU1VZb3FlMW1GNTNvaHFvd0liVUNnVnJnY0lfTUpFVG5rME1YMVgtcWJ6bDlXLVhnQU80?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Draymond Green News: Off injury report for Monday RotoWire",
+          "published": "Sun, 25 Oct 2026 21:13:19 GMT"
+        }
+      ]
+    },
+    {
+      "id": "coby-white-injury-sidelined-once-again-109bb2be",
+      "slug": "coby-white-injury-sidelined-once-again-109bb2be",
+      "sport": "basketball",
+      "headline": "Coby White Injury: Sidelined once again",
+      "blurb": "Coby White Injury: Sidelined once again RotoWire",
+      "summary": "Coby White Injury: Sidelined once again RotoWire Board reading of RotoWire.",
+      "category": "injury",
+      "published": "2026-10-25T20:59:44Z",
+      "updated": "2026-10-25T20:59:44Z",
+      "players": [
+        {
+          "key": "coby white",
+          "name": "Coby White",
+          "slug": "coby-white",
+          "pos": "SG",
+          "team": "CHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Coby White Injury: Sidelined once again",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaHRfV2N5M3BfazhhWHFlWXp1ek9lbXdXUVlUYWZfRU8yQWpIUk4xdnNzTnRjWWNJbUdUVXhrVkJzcG5EMzdNdVlzODk1U1Fwc3QtMVdXN2dHN0dIYU56bUdPal9fYnBDSE5LdS14NmdlZ0QyNFFnTmpvZDNWQlBybTRWMS1tZHloZl9aNEQ1MlctVGRsckE?oc=5",
+          "publisher": "RotoWire",
+          "kind": "article",
+          "snippet": "Coby White Injury: Sidelined once again RotoWire",
+          "published": "Sun, 25 Oct 2026 20:59:44 GMT"
         }
       ]
     },
@@ -2408,6 +3340,52 @@
       ]
     },
     {
+      "id": "minnesota-timberwolves-toronto-raptors-injury-preview-94de0169",
+      "slug": "minnesota-timberwolves-toronto-raptors-injury-preview-94de0169",
+      "sport": "basketball",
+      "headline": "Minnesota Timberwolves vs Toronto Raptors Injury Report and Game Preview",
+      "blurb": "The Cavs will welcome the surging Timberwolves to town.",
+      "summary": "The Cavs will welcome the surging Timberwolves to town. Timberwolves: How to watch, odds, and injury report Yahoo Sports Minnesota Timberwolves vs Toronto Raptors Injury Report and Game Preview Yahoo Sports Aggregated from SB Nation, Yahoo Sports, ESPN.",
+      "category": "injury",
+      "published": "2026-10-05T07:00:00Z",
+      "updated": "2026-10-25T20:01:50Z",
+      "players": [],
+      "sources": [
+        {
+          "title": "Cavs vs. Timberwolves: How to watch, odds, and injury report",
+          "url": "https://sports.yahoo.com/articles/cavs-vs-timberwolves-watch-odds-200150726.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "The Cavs will welcome the surging Timberwolves to town.",
+          "published": "Sun, 25 Oct 2026 20:01:50 +0000"
+        },
+        {
+          "title": "Cavs vs. Timberwolves: How to watch, odds, and injury report",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOeFlSMkFSNUIycU4tcVU1X1FRS2tpNU5KSkNJbWxxaXgxa2VkbUxJd2hld3BQS3BqcE1uMWduMkF5LXNadFdtY0h1Q3RPdlVpVHRvWkg3eFg1NGpscHpVYmZrOVRZS1dqVlhDcGNPZ1JfbHFMZkZiNUp2dnhoVHBJWEJVRXMzaUE?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Cavs vs. Timberwolves: How to watch, odds, and injury report Yahoo Sports",
+          "published": "Sun, 25 Oct 2026 20:01:50 GMT"
+        },
+        {
+          "title": "Minnesota Timberwolves vs Toronto Raptors Injury Report and Game Preview",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRWE5bnFUdnlta1EtN2lSU1E3cjdKUHYtS1BmUjBMRHU2eU9wTkttdGVyRU9Hb3l0TGRub0M2N2xEUkdrR3pxeEF1b3k4aW5PS0NQN1BWdVZlOWthV1FFeUNfOXhCUVByNm9TRzV1SkRITlVjbXdFWlhBMnEzY29EMm9hSkpEY0V0Wlhhalp2RExNZ2x6?oc=5",
+          "publisher": "Yahoo Sports",
+          "kind": "article",
+          "snippet": "Minnesota Timberwolves vs Toronto Raptors Injury Report and Game Preview Yahoo Sports",
+          "published": "Sun, 25 Oct 2026 17:28:10 GMT"
+        },
+        {
+          "title": "Minnesota Timberwolves Injury Status",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QM2RfekdwUzdLNWplcnpWTE9zRXhjMkZ5RHlRZXM0WVJwMUVmNUlxYmZ2Z1c0WFFHZ2k2eXJiejdzWnZFNHI5SUpZVzdmWVdIRDE5S0FMcWlROXNnd2F1aFFURzVJRm9iSXhVbEJEWEhLS05EZVpvLVpFdUI?oc=5",
+          "publisher": "ESPN",
+          "kind": "article",
+          "snippet": "Minnesota Timberwolves Injury Status ESPN",
+          "published": "Mon, 05 Oct 2026 07:00:00 GMT"
+        }
+      ]
+    },
+    {
       "id": "ausar-thompson-injury-exits-locker-room-friday-10921b48",
       "slug": "ausar-thompson-injury-exits-locker-room-friday-10921b48",
       "sport": "basketball",
@@ -2441,6 +3419,43 @@
           "kind": "article",
           "snippet": "Ausar Thompson Injury: Exits to locker room Friday RotoWire",
           "published": "Sat, 24 Oct 2026 01:46:12 GMT"
+        }
+      ]
+    },
+    {
+      "id": "jaylen-brown-confirms-no-beef-jayson-tatum-adds-7640b4af",
+      "slug": "jaylen-brown-confirms-no-beef-jayson-tatum-adds-7640b4af",
+      "sport": "basketball",
+      "headline": "Jaylen Brown confirms ‘no beef’ with Jayson Tatum, but adds, ‘he should stay ready’",
+      "blurb": "“There's no beef, but it might be a little lamb chops and some gravy,” Brown told reporters on Saturday night.",
+      "summary": "Jaylen Brown and Jayson Tatum: “There's no beef, but it might be a little lamb chops and some gravy,” Brown told reporters on Saturday night. Board reading of SB Nation.",
+      "category": "coach",
+      "published": "2026-10-25T06:54:00Z",
+      "updated": "2026-10-25T06:54:00Z",
+      "players": [
+        {
+          "key": "jaylen brown",
+          "name": "Jaylen Brown",
+          "slug": "jaylen-brown",
+          "pos": "SG",
+          "team": "BOS"
+        },
+        {
+          "key": "jayson tatum",
+          "name": "Jayson Tatum",
+          "slug": "jayson-tatum",
+          "pos": "SF",
+          "team": "BOS"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Jaylen Brown confirms ‘no beef’ with Jayson Tatum, but adds, ‘he should stay ready’",
+          "url": "https://sports.yahoo.com/articles/jaylen-brown-confirms-no-beef-065400092.html",
+          "publisher": "SB Nation",
+          "kind": "article",
+          "snippet": "“There's no beef, but it might be a little lamb chops and some gravy,” Brown told reporters on Saturday night.",
+          "published": "Sun, 25 Oct 2026 06:54:00 +0000"
         }
       ]
     },
@@ -2490,85 +3505,32 @@
       ]
     },
     {
-      "id": "minnesota-timberwolves-toronto-raptors-injury-preview-94de0169",
-      "slug": "minnesota-timberwolves-toronto-raptors-injury-preview-94de0169",
+      "id": "jalen-duren-re-evaluated-two-weeks-27240acd",
+      "slug": "jalen-duren-re-evaluated-two-weeks-27240acd",
       "sport": "basketball",
-      "headline": "Minnesota Timberwolves vs Toronto Raptors Injury Report and Game Preview",
-      "blurb": "The Cavs will welcome the surging Timberwolves to town.",
-      "summary": "The Cavs will welcome the surging Timberwolves to town. Timberwolves: How to watch, odds, and injury report Yahoo Sports Minnesota Timberwolves vs Toronto Raptors Injury Report and Game Preview Yahoo Sports Aggregated from SB Nation, Yahoo Sports, ESPN.",
+      "headline": "Jalen Duren: To be re-evaluated in two weeks",
+      "blurb": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.",
+      "summary": "Jalen Duren: Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
       "category": "injury",
-      "published": "2026-10-05T07:00:00Z",
-      "updated": "2026-10-25T20:01:50Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Cavs vs. Timberwolves: How to watch, odds, and injury report",
-          "url": "https://sports.yahoo.com/articles/cavs-vs-timberwolves-watch-odds-200150726.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Cavs will welcome the surging Timberwolves to town.",
-          "published": "Sun, 25 Oct 2026 20:01:50 +0000"
-        },
-        {
-          "title": "Cavs vs. Timberwolves: How to watch, odds, and injury report",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOeFlSMkFSNUIycU4tcVU1X1FRS2tpNU5KSkNJbWxxaXgxa2VkbUxJd2hld3BQS3BqcE1uMWduMkF5LXNadFdtY0h1Q3RPdlVpVHRvWkg3eFg1NGpscHpVYmZrOVRZS1dqVlhDcGNPZ1JfbHFMZkZiNUp2dnhoVHBJWEJVRXMzaUE?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Cavs vs. Timberwolves: How to watch, odds, and injury report Yahoo Sports",
-          "published": "Sun, 25 Oct 2026 20:01:50 GMT"
-        },
-        {
-          "title": "Minnesota Timberwolves vs Toronto Raptors Injury Report and Game Preview",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNRWE5bnFUdnlta1EtN2lSU1E3cjdKUHYtS1BmUjBMRHU2eU9wTkttdGVyRU9Hb3l0TGRub0M2N2xEUkdrR3pxeEF1b3k4aW5PS0NQN1BWdVZlOWthV1FFeUNfOXhCUVByNm9TRzV1SkRITlVjbXdFWlhBMnEzY29EMm9hSkpEY0V0Wlhhalp2RExNZ2x6?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Minnesota Timberwolves vs Toronto Raptors Injury Report and Game Preview Yahoo Sports",
-          "published": "Sun, 25 Oct 2026 17:28:10 GMT"
-        },
-        {
-          "title": "Minnesota Timberwolves Injury Status",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1QM2RfekdwUzdLNWplcnpWTE9zRXhjMkZ5RHlRZXM0WVJwMUVmNUlxYmZ2Z1c0WFFHZ2k2eXJiejdzWnZFNHI5SUpZVzdmWVdIRDE5S0FMcWlROXNnd2F1aFFURzVJRm9iSXhVbEJEWEhLS05EZVpvLVpFdUI?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Minnesota Timberwolves Injury Status ESPN",
-          "published": "Mon, 05 Oct 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "jaylen-brown-confirms-no-beef-jayson-tatum-adds-7640b4af",
-      "slug": "jaylen-brown-confirms-no-beef-jayson-tatum-adds-7640b4af",
-      "sport": "basketball",
-      "headline": "Jaylen Brown confirms ‘no beef’ with Jayson Tatum, but adds, ‘he should stay ready’",
-      "blurb": "“There's no beef, but it might be a little lamb chops and some gravy,” Brown told reporters on Saturday night.",
-      "summary": "Jaylen Brown and Jayson Tatum: “There's no beef, but it might be a little lamb chops and some gravy,” Brown told reporters on Saturday night. Board reading of SB Nation.",
-      "category": "coach",
-      "published": "2026-10-25T06:54:00Z",
-      "updated": "2026-10-25T06:54:00Z",
+      "published": "2026-10-25T16:15:55Z",
+      "updated": "2026-10-25T16:15:55Z",
       "players": [
         {
-          "key": "jaylen brown",
-          "name": "Jaylen Brown",
-          "slug": "jaylen-brown",
-          "pos": "SG",
-          "team": "BOS"
-        },
-        {
-          "key": "jayson tatum",
-          "name": "Jayson Tatum",
-          "slug": "jayson-tatum",
-          "pos": "SF",
-          "team": "BOS"
+          "key": "jalen duren",
+          "name": "Jalen Duren",
+          "slug": "jalen-duren",
+          "pos": "C",
+          "team": "DET"
         }
       ],
       "sources": [
         {
-          "title": "Jaylen Brown confirms ‘no beef’ with Jayson Tatum, but adds, ‘he should stay ready’",
-          "url": "https://sports.yahoo.com/articles/jaylen-brown-confirms-no-beef-065400092.html",
-          "publisher": "SB Nation",
+          "title": "Jalen Duren: To be re-evaluated in two weeks",
+          "url": "https://www.rotowire.com//basketball/player/jalen-duren-5703",
+          "publisher": "RotoWire NBA",
           "kind": "article",
-          "snippet": "“There's no beef, but it might be a little lamb chops and some gravy,” Brown told reporters on Saturday night.",
-          "published": "Sun, 25 Oct 2026 06:54:00 +0000"
+          "snippet": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports. Visit RotoWire.com for more analysis on this ",
+          "published": "Sun, 25 Oct 2026 7:56:00 AM PDT"
         }
       ]
     },
@@ -2614,205 +3576,6 @@
           "kind": "article",
           "snippet": "Cooper Flagg Injury: Diagnosed with left shoulder sprain RotoWire",
           "published": "Sat, 24 Oct 2026 17:52:06 GMT"
-        }
-      ]
-    },
-    {
-      "id": "jalen-duren-re-evaluated-two-weeks-27240acd",
-      "slug": "jalen-duren-re-evaluated-two-weeks-27240acd",
-      "sport": "basketball",
-      "headline": "Jalen Duren: To be re-evaluated in two weeks",
-      "blurb": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports.",
-      "summary": "Jalen Duren: Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NBA.",
-      "category": "injury",
-      "published": "2026-10-25T16:15:55Z",
-      "updated": "2026-10-25T16:15:55Z",
-      "players": [
-        {
-          "key": "jalen duren",
-          "name": "Jalen Duren",
-          "slug": "jalen-duren",
-          "pos": "C",
-          "team": "DET"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jalen Duren: To be re-evaluated in two weeks",
-          "url": "https://www.rotowire.com//basketball/player/jalen-duren-5703",
-          "publisher": "RotoWire NBA",
-          "kind": "article",
-          "snippet": "Duren will be re-evaluated in two weeks due to a right hamstring strain, Eric Vincent of ClutchPoints.com reports. Visit RotoWire.com for more analysis on this ",
-          "published": "Sun, 25 Oct 2026 7:56:00 AM PDT"
-        }
-      ]
-    },
-    {
-      "id": "final-injury-hawks-magic-anthony-black-franz-wagner-7f5a42a8",
-      "slug": "final-injury-hawks-magic-anthony-black-franz-wagner-7f5a42a8",
-      "sport": "basketball",
-      "headline": "What happened to Anthony Black? Live injury updates for Magic vs. Timberwolves on Saturday 3/7/26",
-      "blurb": "What happened to Ace Bailey?",
-      "summary": "What happened to Ace Bailey? Live injury updates for Jazz vs. Trail Blazers on Friday 3/13/26 DraftKings Network Aggregated from DraftKings Network, RotoWire, Athlon Sports, NBA.com.",
-      "category": "injury",
-      "published": "2023-04-14T14:23:37Z",
-      "updated": "2026-10-23T19:00:00Z",
-      "players": [
-        {
-          "key": "ace bailey",
-          "name": "Ace Bailey",
-          "slug": "ace-bailey",
-          "pos": "SF",
-          "team": "UTA"
-        },
-        {
-          "key": "jalen duren",
-          "name": "Jalen Duren",
-          "slug": "jalen-duren",
-          "pos": "C",
-          "team": "DET"
-        },
-        {
-          "key": "dylan harper",
-          "name": "Dylan Harper",
-          "slug": "dylan-harper",
-          "pos": "PG",
-          "team": "WAS"
-        },
-        {
-          "key": "anthony black",
-          "name": "Anthony Black",
-          "slug": "anthony-black",
-          "pos": "PG",
-          "team": "ORL"
-        },
-        {
-          "key": "anthony edwards",
-          "name": "Anthony Edwards",
-          "slug": "anthony-edwards",
-          "pos": "SG",
-          "team": "MIN"
-        },
-        {
-          "key": "franz wagner",
-          "name": "Franz Wagner",
-          "slug": "franz-wagner",
-          "pos": "SF",
-          "team": "ORL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Final Injury Report for Hawks-Magic: Will Anthony Black, Franz Wagner Play?",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNd3d6Qm5Idk1WSEgzbTNlUFJGb0xHQXdEcF92TC1iRnRpaFo3Mjd0SDZ4R1lqRm42VVNHUWpmYXg4ZGZjT1RjVW53X1gxc3VBaUsyVENTN2QxUXBfeWVnQ3otWHROZk1sSThVbExjQTIyU1RjRmdWOHlhcFR6dEFMZUxtY2hiczZxRG15WW81eU9hVi05SHlMaWttVDY3UXVmdGhqOEhPMVhjc3dUSElseUdCbXlCQQ?oc=5",
-          "publisher": "Athlon Sports",
-          "kind": "article",
-          "snippet": "Final Injury Report for Hawks-Magic: Will Anthony Black, Franz Wagner Play? Athlon Sports",
-          "published": "Wed, 21 Oct 2026 19:00:00 GMT"
-        },
-        {
-          "title": "Anthony Black Injury: Status still unclear",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQ1ctOEYxZ1pTWVYwT2lRYkNBZkJrZ2trNEJObF9jblZ5V3FRUmhhb25Ha0ZGeDJWVkFnaGlrZ204cmtCaFB5Q3A3NE1ETEpmbzhfMVM3NUU2aFpITUxWRFJPazVLbDVhcFVVbHlqTVE4OW80dmxqWXZFcTl4QUV6WGtDSlhNSUpmY3FUYnltdGRvbkU5dWxzcWNB?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Anthony Black Injury: Status still unclear RotoWire",
-          "published": "Tue, 20 Oct 2026 16:41:07 GMT"
-        },
-        {
-          "title": "Anthony Edwards Injury Update | Minnesota Timberwolves",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5vZXZUWXBxRTc2WXhkcGJNb0pMYXY0b09IMlQxUWZTRDNqd3hPb2ZKZTdEZUxQdFFDWF9SOXRaV05RbWx6cG1HMDR2RVJkaXo0cFNZR0o2ZVZiU0lqWDFMRnplUkhuOXp4aERyZHNB?oc=5",
-          "publisher": "NBA.com",
-          "kind": "article",
-          "snippet": "Anthony Edwards Injury Update | Minnesota Timberwolves NBA.com",
-          "published": "Mon, 03 Nov 2025 08:00:00 GMT"
-        },
-        {
-          "title": "Final Injury Report for Timberwolves-Magic: Will Anthony Black Play?",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSkYwWjc0RmN6emo0Y29qYk0zOTNGZXVIM1VvRnJLVEpLUGNOTXhVeUlyZmFJMWNCeWVsQXJIUHU1MkFMdDhKeWU4QldCVlk1Q045TG5IQzdMbFlCQU13X3lhZHJkRUNMWTgwMHY0R3VmLVZZNm95VVMtVkVsSkNDdVA3VVhoZWN1OXlTT2NFNDZaMGhuaHEtdHhGeGdTYnlkcGlaTkhMbHhfUThKTnc?oc=5",
-          "publisher": "Athlon Sports",
-          "kind": "article",
-          "snippet": "Final Injury Report for Timberwolves-Magic: Will Anthony Black Play? Athlon Sports",
-          "published": "Fri, 23 Oct 2026 19:00:00 GMT"
-        },
-        {
-          "title": "Anthony Black Injury: Remains on shelf",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX3RrR3VtS0drT3VGZTFySEo1RE9sRllSUWVIbTVyZWNsMEFBZ2c4V2VjNGVYZ3JWcFBGZWs1bWhkOUp4Rm9odzdaSnVUN3ZJSWZBd0hGM01TUGxxTmg3MmtiZ0ZWSFo2MUsyNHJOZTBZZkRGNlBrZ2dTZ1VXYVZ5NmdpUmZxTzJJQXRJdUpsdjJBOFNh?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Anthony Black Injury: Remains on shelf RotoWire",
-          "published": "Fri, 16 Oct 2026 21:28:29 GMT"
-        },
-        {
-          "title": "Anthony Black Injury: Still trending up",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOOHJXa082Ymp1N2tSbUo4NTNwQkdIU0RBbmR2U2xSOWw2OUdsc28tMy1wQk1keXhGSl9meW5CTlY0dkVBV2VfSXpoaXBYR0w5QkZGT2JoLVJoRmk3VmZxVTZURFhNcnBxUTZsQmN0NVl6dEQtOFU5SGRJZVFjLUl2bzNxSzJlcXRFcWFBcGVFNFkxQlc5NEE?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Anthony Black Injury: Still trending up RotoWire",
-          "published": "Fri, 23 Oct 2026 16:06:13 GMT"
-        },
-        {
-          "title": "Anthony Black Injury: Full participant in practice",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONTFCa3hJa3I2YnVIZ3hpZkxSdzFtR2M3SlVQaGxRU0JoeWd6QmVaRWhZMlBSRF9TSklBNFgyeXVYeGpFZHhuM2xxakVmMmJWMU10Yi1XXzAwdi1jaG9tY0gzakExaWNBejE0VlNLanNzdGN2VE1lT3AzZUVPLUNpenZ5UTlhakJIUkMxbnl3cDZmak9UQjRHVDA5V0lpTEVNam5Iag?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Anthony Black Injury: Full participant in practice RotoWire",
-          "published": "Sat, 10 Oct 2026 07:00:00 GMT"
-        },
-        {
-          "title": "Anthony Black NBA Stats & News",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBDNk9aelB2cWRkTU9nWTRPbHNiWXV4STJMQmVWVGFlUUwtRDRaT2FoSk5hWFFId2xxSFZ5emtEVkNOSnJydTAzdm9yRkYtVGZLdkUwbVF1dFN5MVRFTjNmZGJMOG5IYjFiczZRNERB?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Anthony Black NBA Stats & News RotoWire",
-          "published": "Fri, 14 Apr 2023 14:23:37 GMT"
-        },
-        {
-          "title": "What happened to Anthony Black? Live injury updates for Magic vs. Timberwolves on Saturday 3/7/26",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRHhWMWNia2hZMnFZbUhIOV9ZME55SXZzUW1HU19QaGYzRkx1cUpEdEJRU2FTMkIyU0VoVkZGTDBNR1NLcFNKVWxTd0JQcksxRTdtWXNmYWkzQ1FCbXF4a0p5R2RYMmZvLXp0UlpxX0pEY29xVVZJMEkzWWxaVW5IS0xrRjJKM0VhWW5qUnQyR3puLUJBcllkMnM3azZFdC05VXRXRFNDOENBUU1IMW1LZzc3YVZQUWVKeDdPM1haMFNLN2lrMnRfREdOZVFJcUZQNG5ma0hBMA?oc=5",
-          "publisher": "DraftKings Network",
-          "kind": "article",
-          "snippet": "What happened to Anthony Black? Live injury updates for Magic vs. Timberwolves on Saturday 3/7/26 DraftKings Network",
-          "published": "Sat, 07 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "What happened to Jalen Duren? Live injury updates for Pistons vs. Cavaliers on 5/15/26",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMHJtbU83dmVfejE2ZFVCZGlKRzJ3WjMwUE96N1I4OHd6SThhZXVISDZYQTVZNFZtZTRxcGkxY0J2YXV2MFNLVXE3QjdBTldEMUoxMmw4bzRZSDZZQWFGLU9Ua0lSdmxxbXRfa0V1ZnR6dTJ0bEJsUkhrLUFpMlRwcXFaT3E5czNDNTZIQ2c1UHRsU0F5dVlrVzRlUmM3VldmLWh3RVlLNFRxZGhKR1p2M3JaN2h0bllBbVVvbklIU2FYbGZEX3dweA?oc=5",
-          "publisher": "DraftKings Network",
-          "kind": "article",
-          "snippet": "What happened to Jalen Duren? Live injury updates for Pistons vs. Cavaliers on 5/15/26 DraftKings Network",
-          "published": "Fri, 15 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "What happened to Jalen Duren? Live injury updates for Pistons vs. Wizards on Thursday 2/5/26",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWFhwa0xtZmhWdG91TktnUHJZcnJteS1ZNHlPcVFacmhOR21YeWc2VFpSeWIwOUp5WHN3ZE5rM2J0V0I2SUtqSXplVTJmallPeDFpVVpUaER3RC1qeWVPS2tFUmRGaUV5ZHRfeGJCQTNTWkh6NUZUcFN3bHhRR2MyQ3Q0YlFxZ2xkQzNnTTdwTFlSSy1RMmRBTGN0YXV3S3dfY0FCWjhRdnZWWnlkVmRhZ0ZtOTFIZm1fWVBhU1RQajZoWGRCRkxweG9aeTZsZTgtWkhR?oc=5",
-          "publisher": "DraftKings Network",
-          "kind": "article",
-          "snippet": "What happened to Jalen Duren? Live injury updates for Pistons vs. Wizards on Thursday 2/5/26 DraftKings Network",
-          "published": "Thu, 05 Feb 2026 08:00:00 GMT"
-        },
-        {
-          "title": "What happened to Dylan Harper? Live injury updates for Spurs vs. Nuggets on Sunday 4/12/26",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdlVVX05xeXdjVkNPdkk1aTZ1Y09hRE1RYjVKbWJEbXdvZHFpT0duQ00tTzQ5ekE0Q2htWFRXbFU1eWVISmdEWl9zclFZT2V5bGd6dXZzRE9EVjhIa2U3czN3WGlSYjRpdlNCNktUb3E3N3NILVRWVk1SY05xcFNPdzBvMVl4QThPYjVjS05jd19US1ZudGFnbTAwemtuZUVzYUZENW5nYmVYbGo2LXJxYXdOR09NX1d4MHJEM2xvWnZjbkxlNEI1RDdxRENDZw?oc=5",
-          "publisher": "DraftKings Network",
-          "kind": "article",
-          "snippet": "What happened to Dylan Harper? Live injury updates for Spurs vs. Nuggets on Sunday 4/12/26 DraftKings Network",
-          "published": "Sun, 12 Apr 2026 07:00:00 GMT"
-        },
-        {
-          "title": "What happened to Dylan Harper? Live injury updates for Spurs vs. Thunder on Wednesday, 5/20/26",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS3gzVGdSQjAwcjM1Z1E3WjljdldueGFoSjBxbDhrazF3WjBNdlFxVmFWY1dEWHlZYzRKMi1ZRktwdlJmaWdlcWlVZ0tLeHdXRTRoOWtfQjdDRTRPUUxJTmZOazJrNG5aVnpjTXRtWldTV1dZMmNRbW5uQkxFWGM0bHJNZld3ZWtKQTc5ZV9YRlJ1ME5XalJMajdBeXRZMTk2TkgwQ1RzR1BXd0RlLTJScGJfV1JKVHFpN1p3T0dia1FwQlNMNEpwRW9pT2NjaGlqZnc?oc=5",
-          "publisher": "DraftKings Network",
-          "kind": "article",
-          "snippet": "What happened to Dylan Harper? Live injury updates for Spurs vs. Thunder on Wednesday, 5/20/26 DraftKings Network",
-          "published": "Wed, 20 May 2026 07:00:00 GMT"
-        },
-        {
-          "title": "What happened to Ace Bailey? Live injury updates for Jazz vs. Trail Blazers on Friday 3/13/26",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPdnlOTlUxT3FMbGFDMjhCVDh5ZGI4dHVSaUVqLTJDVkhBakdrazlKcDN0M0VnNE5nRF9WbUxCNFJ3QkpzeEtMLXNFOVZRT2FZaHFlUDNkSUFyZjhkeVlCNDFja0JWQ2tYd0IwUUE5Mlh2S0toUnpOMmtveHgwaEYxLUNPY1hpaGJaMGltTEw3SlEzbU0wSjRYNXc1MlhseDFZR3VXaGlXX1ZYUW9QWHd2aWo2TEdvY1dvMF9uSk1tSVZvclI5TjJ1cm05VUd4SVZWTGc?oc=5",
-          "publisher": "DraftKings Network",
-          "kind": "article",
-          "snippet": "What happened to Ace Bailey? Live injury updates for Jazz vs. Trail Blazers on Friday 3/13/26 DraftKings Network",
-          "published": "Fri, 13 Mar 2026 07:00:00 GMT"
         }
       ]
     },
@@ -2919,653 +3682,6 @@
           "kind": "article",
           "snippet": "Preview: Chicago Bulls vs. Boston Celtics: Player props, injury report and prediction | NBA Sports Mole",
           "published": "Sun, 25 Oct 2026 10:44:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "76ers-brown-claims-no-beef-tatum-hell-pr-a4c662e9",
-      "slug": "76ers-brown-claims-no-beef-tatum-hell-pr-a4c662e9",
-      "sport": "basketball",
-      "headline": "76ers' Brown claims no beef, but says Tatum has 'hell of a PR team'",
-      "blurb": "In the latest turn in the relationship between former teammates, Jaylen Brown said Jayson Tatum should \"stay ready at all times\" while…",
-      "summary": "In the latest turn in the relationship between former teammates, Jaylen Brown said Jayson Tatum should \"stay ready at all times\" while denying the two have beef. Board reading of ESPN NBA.",
-      "category": "wire",
-      "published": "2026-10-25T16:44:52Z",
-      "updated": "2026-10-25T16:44:52Z",
-      "players": [
-        {
-          "key": "jaylen brown",
-          "name": "Jaylen Brown",
-          "slug": "jaylen-brown",
-          "pos": "SG",
-          "team": "BOS"
-        },
-        {
-          "key": "jayson tatum",
-          "name": "Jayson Tatum",
-          "slug": "jayson-tatum",
-          "pos": "SF",
-          "team": "BOS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "76ers' Brown claims no beef, but says Tatum has 'hell of a PR team'",
-          "url": "https://www.espn.com/nba/story/_/id/50273329/76ers-brown-claims-no-beef-says-tatum-stay-ready-all-s",
-          "publisher": "ESPN NBA",
-          "kind": "article",
-          "snippet": "In the latest turn in the relationship between former teammates, Jaylen Brown said Jayson Tatum should \"stay ready at all times\" while denying the two have beef",
-          "published": "Sun, 25 Oct 2026 11:44:52 EST"
-        }
-      ]
-    },
-    {
-      "id": "coach-daigneault-effort-win-postgame-media-october-22-e0e61d90",
-      "slug": "coach-daigneault-effort-win-postgame-media-october-22-e0e61d90",
-      "sport": "basketball",
-      "headline": "Coach Daigneault on Team Effort and Team Win | Postgame Media | October 22, 2026",
-      "blurb": "Coach Daigneault on Team Effort and Team Win | Postgame Media | October 22, 2026 YouTube",
-      "summary": "Shai Gilgeous-Alexander: Coach Daigneault on Team Effort and Team Win | Postgame Media | October 22, 2026 YouTube Hornets vs Hawks: Coach Charles Lee Postgame Media Availability | 10/23/2026 YouTube Hornets vs Heat: Coach Charles Lee Postgame Media Availability | 10/24/2026 YouTube Board reading of YouTube.",
-      "category": "coach",
-      "published": "2026-10-23T05:40:01Z",
-      "updated": "2026-10-25T02:20:53Z",
-      "players": [
-        {
-          "key": "shai gilgeous-alexander",
-          "name": "Shai Gilgeous-Alexander",
-          "slug": "shai-gilgeous-alexander",
-          "pos": "PG",
-          "team": "OKC"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Coach Daigneault on Team Effort and Team Win | Postgame Media | October 22, 2026",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5YM1VpdlRoQ3lxR0RyU1JnMk5qZ1kxYmVNSERBb0ZhV2NjWjBMSFJKcFJfRVVrYkpDeEltUkpDaF9udU1CTnZ6YzJURHprQnFYMDhoUWFB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Coach Daigneault on Team Effort and Team Win | Postgame Media | October 22, 2026 YouTube",
-          "published": "Fri, 23 Oct 2026 05:43:52 GMT"
-        },
-        {
-          "title": "Hornets vs Hawks: Coach Charles Lee Postgame Media Availability | 10/23/2026",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5oajU4bUo5UkVFRVQtOTNtVlFDUW1mYVRWM29UTkZSTDRXSl9mUllad00xMU0zeXloeFpGZmJaUkhsbHhVRVd6dGp6X21yb0hJMTVfUWxB?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Hornets vs Hawks: Coach Charles Lee Postgame Media Availability | 10/23/2026 YouTube",
-          "published": "Sat, 24 Oct 2026 02:19:22 GMT"
-        },
-        {
-          "title": "Hornets vs Heat: Coach Charles Lee Postgame Media Availability | 10/24/2026",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE92bUduQlQ0eDJXekFtel9Nb0UySTRTZHZwZUZDcWxJdW9xWGdEV1JiVmFGUjlUbGw5WkFkMHJRWUlhQk1BSlV1RFNwSUI4c29SQ2lmT2NR?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Hornets vs Heat: Coach Charles Lee Postgame Media Availability | 10/24/2026 YouTube",
-          "published": "Sun, 25 Oct 2026 02:20:53 GMT"
-        },
-        {
-          "title": "Shai Gilgeous-Alexander on Home Opener Win | Postgame Media | October 22, 2026",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1vaGVUYTMxbWtFQUo1MGk3cVNIeFJiaWs3VUlPZmt1OWI4UVBZc2ZuWGNuc2ZQemkzZ3pVUy0xU2xrMlVuUG85ZFJKdjBOUUpnMERJd0d3?oc=5",
-          "publisher": "YouTube",
-          "kind": "video",
-          "snippet": "Shai Gilgeous-Alexander on Home Opener Win | Postgame Media | October 22, 2026 YouTube",
-          "published": "Fri, 23 Oct 2026 05:40:01 GMT"
-        }
-      ]
-    },
-    {
-      "id": "jaylen-brown-ratchets-up-jayson-tatum-drama-he-f3f30dfd",
-      "slug": "jaylen-brown-ratchets-up-jayson-tatum-drama-he-f3f30dfd",
-      "sport": "basketball",
-      "headline": "Jaylen Brown ratchets up Jayson Tatum drama: ‘He should stay ready at all times’",
-      "blurb": "Despite Jayson Tatum's efforts to cool the conversations around the Celtics star and his former teammate, Jaylen Brown had hit another…",
-      "summary": "Despite Jayson Tatum's efforts to cool the conversations around the Celtics star and his former teammate, Jaylen Brown had hit another fire by Saturday night. Board reading of NY Post Sports.",
-      "category": "wire",
-      "published": "2026-10-25T15:27:08Z",
-      "updated": "2026-10-25T15:27:08Z",
-      "players": [
-        {
-          "key": "jaylen brown",
-          "name": "Jaylen Brown",
-          "slug": "jaylen-brown",
-          "pos": "SG",
-          "team": "BOS"
-        },
-        {
-          "key": "jayson tatum",
-          "name": "Jayson Tatum",
-          "slug": "jayson-tatum",
-          "pos": "SF",
-          "team": "BOS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jaylen Brown ratchets up Jayson Tatum drama: ‘He should stay ready at all times’",
-          "url": "https://sports.yahoo.com/articles/jaylen-brown-ratchets-jayson-tatum-152708875.html",
-          "publisher": "NY Post Sports",
-          "kind": "article",
-          "snippet": "Despite Jayson Tatum's efforts to cool the conversations around the Celtics star and his former teammate, Jaylen Brown had hit another fire by Saturday night.",
-          "published": "Sun, 25 Oct 2026 15:27:08 +0000"
-        }
-      ]
-    },
-    {
-      "id": "jaylen-brown-refuses-let-jayson-tatum-lamb-chop-29d31e28",
-      "slug": "jaylen-brown-refuses-let-jayson-tatum-lamb-chop-29d31e28",
-      "sport": "basketball",
-      "headline": "Jaylen Brown refuses to let this Jayson Tatum 'lamb chop' die, and it could end up getting seriously juicy",
-      "blurb": "Brown says he has 'no beef' with former Celtics teammate Jayson Tatum, but how about a 'lamb chop?'",
-      "summary": "Jaylen Brown and Jayson Tatum: Brown says he has 'no beef' with former Celtics teammate Jayson Tatum, but how about a 'lamb chop?' Board reading of CBS NBA.",
-      "category": "wire",
-      "published": "2026-10-25T14:38:42Z",
-      "updated": "2026-10-25T14:38:42Z",
-      "players": [
-        {
-          "key": "jaylen brown",
-          "name": "Jaylen Brown",
-          "slug": "jaylen-brown",
-          "pos": "SG",
-          "team": "BOS"
-        },
-        {
-          "key": "jayson tatum",
-          "name": "Jayson Tatum",
-          "slug": "jayson-tatum",
-          "pos": "SF",
-          "team": "BOS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jaylen Brown refuses to let this Jayson Tatum 'lamb chop' die, and it could end up getting seriously juicy",
-          "url": "https://www.cbssports.com/nba/news/jaylen-brown-jayson-tatum-beef-lamb-chop-76ers-celtics/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "Brown says he has 'no beef' with former Celtics teammate Jayson Tatum, but how about a 'lamb chop?'",
-          "published": "Sun, 25 Oct 2026 14:38:42 +0000"
-        }
-      ]
-    },
-    {
-      "id": "sacramento-kings-injury-every-status-memphis-grizzlies-e755fdd2",
-      "slug": "sacramento-kings-injury-every-status-memphis-grizzlies-e755fdd2",
-      "sport": "basketball",
-      "headline": "Sacramento Kings Injury Report: Every Status vs. Memphis Grizzlies",
-      "blurb": "Sacramento Kings Injury Report: Every Status vs.",
-      "summary": "Sacramento Kings Injury Report: Every Status vs. Memphis Grizzlies Yahoo Sports Sacramento Kings Injury Status ESPN Aggregated from Yahoo Sports, ESPN.",
-      "category": "injury",
-      "published": "2019-06-06T13:54:43Z",
-      "updated": "2026-10-25T16:07:09Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Sacramento Kings Injury Report: Every Status vs. Memphis Grizzlies",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSXMtU0Z0Uzh5WG9vUHBnWnRpb0Q0UXRKVGFySVdORHZpckIyVHVIWEd4YWoyd3RyWUMtRWtVMkd1WHR3LU9CelhuRVBYaGpBd1hWbFNGM3Y1OXc3X1ZjSUs4MHJDSmVzRVI5NE0tVkJUV2xvbWlZejIwd2JqVlQxbHZUdUpkRnNsV0NJMWdB?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Sacramento Kings Injury Report: Every Status vs. Memphis Grizzlies Yahoo Sports",
-          "published": "Sun, 25 Oct 2026 16:07:09 GMT"
-        },
-        {
-          "title": "Sacramento Kings Injury Status",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBTakxXNkNhbVllN0JscGdUa3NXbGU2cm9pelUzVEsyVDcxeVpIVWRiVENUSktReWVDVVRlbzJvSG1raDNYeHd3TDlacUc1UDNYemZvbG56SUd3Tm0wNTZpa1lxaXprZFBpaTY2X0t3UUZKYlpz?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Sacramento Kings Injury Status ESPN",
-          "published": "Wed, 12 Jun 2019 03:10:05 GMT"
-        },
-        {
-          "title": "Memphis Grizzlies Injury Status",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBmMWMzY05pMXFKX3B5UmNScGF2QkRhWEktcDItUmdJVS16QmtqRzhndW1OejNpUExDLVBuVXAyY1E3em03ODAzb0RSY1dKQmdMNjZFMGI1U3ozUUNaaGJjZzIxeGpPVms1SUFoRWhReUcxV3M3ZlE?oc=5",
-          "publisher": "ESPN",
-          "kind": "article",
-          "snippet": "Memphis Grizzlies Injury Status ESPN",
-          "published": "Thu, 06 Jun 2019 13:54:43 GMT"
-        }
-      ]
-    },
-    {
-      "id": "closing-time-amen-thompson-erases-victor-wembanyama-jayson-89652116",
-      "slug": "closing-time-amen-thompson-erases-victor-wembanyama-jayson-89652116",
-      "sport": "basketball",
-      "headline": "NBA closing time: Amen Thompson erases Victor Wembanyama, Jayson Tatum daggers Knicks",
-      "blurb": "We're breaking down the best clutch performances from Friday, as three players stood out early season wins",
-      "summary": "Victor Wembanyama, Amen Thompson and Jayson Tatum: We're breaking down the best clutch performances from Friday, as three players stood out early season wins Board reading of CBS NBA.",
-      "category": "wire",
-      "published": "2026-10-24T17:20:06Z",
-      "updated": "2026-10-24T17:20:06Z",
-      "players": [
-        {
-          "key": "victor wembanyama",
-          "name": "Victor Wembanyama",
-          "slug": "victor-wembanyama",
-          "pos": "C",
-          "team": "SAS"
-        },
-        {
-          "key": "amen thompson",
-          "name": "Amen Thompson",
-          "slug": "amen-thompson",
-          "pos": "SG",
-          "team": "HOU"
-        },
-        {
-          "key": "jayson tatum",
-          "name": "Jayson Tatum",
-          "slug": "jayson-tatum",
-          "pos": "SF",
-          "team": "BOS"
-        }
-      ],
-      "sources": [
-        {
-          "title": "NBA closing time: Amen Thompson erases Victor Wembanyama, Jayson Tatum daggers Knicks",
-          "url": "https://www.cbssports.com/nba/news/nba-closing-time-amen-thompson-victor-wembanyama-jayson-tatum-knicks/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "We're breaking down the best clutch performances from Friday, as three players stood out early season wins",
-          "published": "Sat, 24 Oct 2026 17:20:06 +0000"
-        }
-      ]
-    },
-    {
-      "id": "nets-late-rally-falls-short-125-121-loss-5a35d9dd",
-      "slug": "nets-late-rally-falls-short-125-121-loss-5a35d9dd",
-      "sport": "basketball",
-      "headline": "Nets’ late rally falls short in 125-121 loss to Cavaliers",
-      "blurb": "A fourth-quarter surge wasn’t enough for the Nets to overcome early struggles in Cleveland.",
-      "summary": "Donovan Mitchell and Jarrett Allen: A fourth-quarter surge wasn’t enough for the Nets to overcome early struggles in Cleveland. Donovan Mitchell scored 22 points, Jarrett Allen added 21 points, and the Cleveland Cavaliers won their home opener, 125-121 over the Brooklyn Nets on Saturday night. Aggregated from SB Nation, SNY.",
-      "category": "wire",
-      "published": "2026-10-25T02:57:54Z",
-      "updated": "2026-10-25T03:07:18Z",
-      "players": [
-        {
-          "key": "donovan mitchell",
-          "name": "Donovan Mitchell",
-          "slug": "donovan-mitchell",
-          "pos": "SG",
-          "team": "CLE"
-        },
-        {
-          "key": "jarrett allen",
-          "name": "Jarrett Allen",
-          "slug": "jarrett-allen",
-          "pos": "C",
-          "team": "CLE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Nets’ late rally falls short in 125-121 loss to Cavaliers",
-          "url": "https://sports.yahoo.com/articles/nets-rally-falls-short-125-030718864.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "A fourth-quarter surge wasn’t enough for the Nets to overcome early struggles in Cleveland.",
-          "published": "Sun, 25 Oct 2026 03:07:18 +0000"
-        },
-        {
-          "title": "Nets' late push not enough in 125-121 loss to Cavaliers",
-          "url": "https://sports.yahoo.com/articles/nets-push-not-enough-125-025754409.html",
-          "publisher": "SNY",
-          "kind": "article",
-          "snippet": "Donovan Mitchell scored 22 points, Jarrett Allen added 21 points, and the Cleveland Cavaliers won their home opener, 125-121 over the Brooklyn Nets on Saturday ",
-          "published": "Sun, 25 Oct 2026 02:57:54 +0000"
-        }
-      ]
-    },
-    {
-      "id": "sixers-face-pistons-without-jalen-duren-chance-stay-cb040183",
-      "slug": "sixers-face-pistons-without-jalen-duren-chance-stay-cb040183",
-      "sport": "basketball",
-      "headline": "Sixers face Pistons without Jalen Duren for chance to stay undefeated",
-      "blurb": "The Sixers are set to face the Pistons without starting center Jalen Duren on Sunday with an opportunity to go 4-0 to start the season.",
-      "summary": "The Sixers are set to face the Pistons without starting center Jalen Duren on Sunday with an opportunity to go 4-0 to start the season. Detroit Pistons Make Jalen Duren Announcement Before 76ers Game Heavy.com What we’re hearing on Jalen Duren and his stalemate with the Pistons - The Athletic The New York Times Aggregated from SB Nation, Heavy.com, The New York Times.",
-      "category": "wire",
-      "published": "2026-09-11T07:00:00Z",
-      "updated": "2026-10-25T17:09:00Z",
-      "players": [
-        {
-          "key": "jalen duren",
-          "name": "Jalen Duren",
-          "slug": "jalen-duren",
-          "pos": "C",
-          "team": "DET"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Sixers face Pistons without Jalen Duren for chance to stay undefeated",
-          "url": "https://sports.yahoo.com/articles/sixers-face-pistons-without-jalen-143115457.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "The Sixers are set to face the Pistons without starting center Jalen Duren on Sunday with an opportunity to go 4-0 to start the season.",
-          "published": "Sun, 25 Oct 2026 17:09:00 +0000"
-        },
-        {
-          "title": "Detroit Pistons Make Jalen Duren Announcement Before 76ers Game",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdEd5TjE1RmxzTElESmN0YWZCb29hQnFzZ2lVRXNaR0toWDRTRXNnSTNDRTZFV1Y3LUIwUUt2YnBFYWZuQ1lQWWM2UUp3WW9pZjZGdHNXaUVuV0JiTlFORTV1b0x3eTVLU3F6VkVwUmFmUE1ETktZNkZNSHBteXpMOA?oc=5",
-          "publisher": "Heavy.com",
-          "kind": "article",
-          "snippet": "Detroit Pistons Make Jalen Duren Announcement Before 76ers Game Heavy.com",
-          "published": "Sun, 25 Oct 2026 14:54:27 GMT"
-        },
-        {
-          "title": "What we’re hearing on Jalen Duren and his stalemate with the Pistons",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOaGhJdVNqOTRGeVJiekVXcEl1ZmZ3TG1MRU94R1FtVnljajhKVTVMRHNNRDFVNHVjYzJWT2tCWHNGbVJoWkFVNmdZZGpSYnluNUVKQ2VEaUxuR3Q5NXRKVTd3QWJBdlFyZmR2LUJOalNEdzhwX0dCN08wekJGaFE1azVMcF9JazJlSTNfTThQQ2ZaR19qLXFYdWRWaDkzcVVNZm1SMXFmTzkwM1d1RWc?oc=5",
-          "publisher": "The New York Times",
-          "kind": "article",
-          "snippet": "What we’re hearing on Jalen Duren and his stalemate with the Pistons - The Athletic The New York Times",
-          "published": "Fri, 11 Sep 2026 07:00:00 GMT"
-        }
-      ]
-    },
-    {
-      "id": "jalen-duren-exits-friday-s-win-thigh-injury-eaecc3b3",
-      "slug": "jalen-duren-exits-friday-s-win-thigh-injury-eaecc3b3",
-      "sport": "basketball",
-      "headline": "Jalen Duren Exits Friday’s Win with Thigh Injury",
-      "blurb": "Jalen Duren Injury: Ruled out for Sunday RotoWire",
-      "summary": "Jalen Duren Injury: Ruled out for Sunday RotoWire Jalen Duren Exits Friday’s Win with Thigh Injury - NBA News | Fantasy Basketball RotoBaller Aggregated from RotoWire, RotoBaller.",
-      "category": "injury",
-      "published": "2026-10-24T12:15:10Z",
-      "updated": "2026-10-24T20:08:52Z",
-      "players": [
-        {
-          "key": "jalen duren",
-          "name": "Jalen Duren",
-          "slug": "jalen-duren",
-          "pos": "C",
-          "team": "DET"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jalen Duren Injury: Ruled out for Sunday",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeDZfUlVvYmE4Vnh4SUl5TzF2a296N0UtMVFCX2hzS0NpWk9yaTlkVWhxVE9IUGdoMnNQMnk4LXAtdUhVQnVNRWxCNVk1aWZzLXBkRUpla3VyLU5JOFFzUDhKSzhxOGlIWk1JU1BWTlNWWlNENUluV3k2OFBEZzZHNHFkT3Rlb1l5dkN2bldPWUwtdEhCWGZF?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Jalen Duren Injury: Ruled out for Sunday RotoWire",
-          "published": "Sat, 24 Oct 2026 20:08:52 GMT"
-        },
-        {
-          "title": "Jalen Duren Exits Friday’s Win with Thigh Injury",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORmtaSnNJZ0FBbngzTTFrT3R5NEswakZ6bXhVVlVNYjNVay1QalhwcTdTTXFPSjBGZlp2QnI5SDJZYWxrTTd4UEtrZmV3X2Q5MUczUlRkdjNvYTdlZHhQQTAtWTJ0NEJ0d19lLTZCLTFKS0xPYmJNNFBUTnNfckJmSEh3aGcza3VNRGNDb3ItS29hM3l4ZU01dERB?oc=5",
-          "publisher": "RotoBaller",
-          "kind": "article",
-          "snippet": "Jalen Duren Exits Friday’s Win with Thigh Injury - NBA News | Fantasy Basketball RotoBaller",
-          "published": "Sat, 24 Oct 2026 12:15:10 GMT"
-        }
-      ]
-    },
-    {
-      "id": "ex-player-malik-beasley-negotiating-plea-deal-department-8e663fc5",
-      "slug": "ex-player-malik-beasley-negotiating-plea-deal-department-8e663fc5",
-      "sport": "basketball",
-      "headline": "Ex-NBA player Malik Beasley negotiating plea deal with Department of Justice in illegal sports betting case",
-      "blurb": "Former NBA player Malik Beasley is negotiating a plea agreement with Department of Justice lawyers over his alleged role in a bribery…",
-      "summary": "Former NBA player Malik Beasley is negotiating a plea agreement with Department of Justice lawyers over his alleged role in a bribery and betting scheme, one of his attorneys confirmed. Beasley's lawyer confirmed he is working towards a plea deal for manipulating stats to win prop bets Beasley previously pled not guilty, but a plea deal is expected in the coming days. Aggregated from ESPN NBA, CBS NBA, NBC Sports.",
-      "category": "wire",
-      "published": "2026-10-24T15:19:47Z",
-      "updated": "2026-10-25T16:44:52Z",
-      "players": [
-        {
-          "key": "malik beasley",
-          "name": "Malik Beasley",
-          "slug": "malik-beasley",
-          "pos": "SG",
-          "team": "DET"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Ex-NBA player Beasley negotiating plea deal in gambling case",
-          "url": "https://www.espn.com/nba/story/_/id/50265720/ex-nba-player-malik-beasley-negotiating-plea-deal-gambling-case",
-          "publisher": "ESPN NBA",
-          "kind": "article",
-          "snippet": "Former NBA player Malik Beasley is negotiating a plea agreement with Department of Justice lawyers over his alleged role in a bribery and betting scheme, one of",
-          "published": "Sun, 25 Oct 2026 11:44:52 EST"
-        },
-        {
-          "title": "Ex-NBA player Malik Beasley negotiating plea deal with Department of Justice in illegal sports betting case",
-          "url": "https://www.cbssports.com/nba/news/malik-beasley-plea-deal-department-of-justice-illegal-sports-betting/",
-          "publisher": "CBS NBA",
-          "kind": "article",
-          "snippet": "Beasley's lawyer confirmed he is working towards a plea deal for manipulating stats to win prop bets",
-          "published": "Sat, 24 Oct 2026 15:19:47 +0000"
-        },
-        {
-          "title": "Former NBA star Malik Beasley negotiating plea deal over gambling charges",
-          "url": "https://sports.yahoo.com/articles/former-nba-star-malik-beasley-001511234.html",
-          "publisher": "NBC Sports",
-          "kind": "article",
-          "snippet": "Beasley previously pled not guilty, but a plea deal is expected in the coming days.",
-          "published": "Sun, 25 Oct 2026 00:15:11 +0000"
-        }
-      ]
-    },
-    {
-      "id": "indiana-pacers-announce-injury-brooklyn-nets-oct-25-2c48ad42",
-      "slug": "indiana-pacers-announce-injury-brooklyn-nets-oct-25-2c48ad42",
-      "sport": "basketball",
-      "headline": "Indiana Pacers Announce Injury Report for Brooklyn Nets Game on Oct. 25",
-      "blurb": "Nets are looking for their 1st win of the season…",
-      "summary": "Nets are looking for their 1st win of the season… Indiana Pacers Announce Injury Report for Brooklyn Nets Game on Oct. Aggregated from SB Nation, Heavy.com.",
-      "category": "injury",
-      "published": "2026-10-25T15:54:29Z",
-      "updated": "2026-10-25T17:52:54Z",
-      "players": [],
-      "sources": [
-        {
-          "title": "Nets vs. Pacers: Brooklyn returns home looking for first win",
-          "url": "https://sports.yahoo.com/articles/nets-vs-pacers-brooklyn-returns-175254385.html",
-          "publisher": "SB Nation",
-          "kind": "article",
-          "snippet": "Nets are looking for their 1st win of the season…",
-          "published": "Sun, 25 Oct 2026 17:52:54 +0000"
-        },
-        {
-          "title": "Indiana Pacers Announce Injury Report for Brooklyn Nets Game on Oct. 25",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRlVmcmlWQ0ZlRGowVm1pQzdRWUhFU1NTRVZXMmFRRXF1M2tNSTZEWE84dWh3clJ4NmVMV3g3TEJ5VTMtLU8xY1hCMWxYWktLU1lLVlhqajJrVFBoNU1zcWRJc0QxM3hSZDdPdkNfc3N5VFFHbXJNREZEZ3E1enpsMEphRHZNUlBIS1E?oc=5",
-          "publisher": "Heavy.com",
-          "kind": "article",
-          "snippet": "Indiana Pacers Announce Injury Report for Brooklyn Nets Game on Oct. 25 Heavy.com",
-          "published": "Sun, 25 Oct 2026 15:54:29 GMT"
-        }
-      ]
-    },
-    {
-      "id": "marcus-smart-injury-late-addition-injury-f055116d",
-      "slug": "marcus-smart-injury-late-addition-injury-f055116d",
-      "sport": "basketball",
-      "headline": "Marcus Smart (forearm) downgraded to questionable Saturday.",
-      "blurb": "Marcus Smart (forearm) downgraded to questionable Saturday.",
-      "summary": "Marcus Smart (forearm) downgraded to questionable Saturday. Marcus Smart Injury: Late addition to injury report RotoWire Aggregated from X, Google News, RotoWire.",
-      "category": "injury",
-      "published": "2026-10-24T19:30:10Z",
-      "updated": "2026-10-24T19:34:50Z",
-      "players": [
-        {
-          "key": "marcus smart",
-          "name": "Marcus Smart",
-          "slug": "marcus-smart",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Marcus Smart Injury: Late addition to injury report",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ2h2UTlKZWpiRnpiejVZcG12Tlg3VEY1MWRrY0xHMVhrX3cxcl9VQmV5a1ZQYWp6ZmtiR1dPd2RwVjR6dEowbGJqTndXS0VlY3lEMDVuS0I2bk1aeGNiVE12QVhScS1JWFlyNnNLMjdrUHFyQ0VwcmY5d1ItVGZacFEtQ3FxMG5FNWZSc0pObDZoZHJmUlNuTXZBZ016MDBUZ2RNZVBn?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Marcus Smart Injury: Late addition to injury report RotoWire",
-          "published": "Sat, 24 Oct 2026 19:34:50 GMT"
-        },
-        {
-          "title": "Marcus Smart (forearm) downgraded to questionable Saturday. - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAtWXgyNURKVkhTWWVwZ3NlVGljd1lqVUJVZFpIRWxqcnllYkFGanoxMWxULVdsUW9OR0ZENDhoOGVfRVBWYy1TWW85bldpNDZ1ejVMZDFpTTd0S3hQVzNFNjd3?oc=5",
-          "publisher": "X",
-          "kind": "article",
-          "snippet": "Marcus Smart (forearm) downgraded to questionable Saturday. X",
-          "published": "Sat, 24 Oct 2026 19:30:10 GMT"
-        }
-      ]
-    },
-    {
-      "id": "cedric-coward-injury-questionable-sunday-d72da6fd",
-      "slug": "cedric-coward-injury-questionable-sunday-d72da6fd",
-      "sport": "basketball",
-      "headline": "Cedric Coward Injury: Questionable for Sunday",
-      "blurb": "Cedric Coward Injury: Questionable for Sunday RotoWire",
-      "summary": "Cedric Coward Injury: Questionable for Sunday RotoWire Board reading of RotoWire.",
-      "category": "injury",
-      "published": "2026-10-25T00:12:55Z",
-      "updated": "2026-10-25T00:12:55Z",
-      "players": [
-        {
-          "key": "cedric coward",
-          "name": "Cedric Coward",
-          "slug": "cedric-coward",
-          "pos": "",
-          "team": ""
-        }
-      ],
-      "sources": [
-        {
-          "title": "Cedric Coward Injury: Questionable for Sunday",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYjF6TG94RHlDV01QOGt5dzZlN2FxQXZvdWZobF8xTjdsUXh5bmhlMk1fX2VqV2FoQjVzNDVpaGZMZ3JJQnFPOG5haUZQWXpMY05Fc1RZeWE3UHlrMy1DY0xRNzdhLWVjVmo1MlV6UTVXS2FBV0U2S2lmSXQyV3JSQV83YUdLUXYxWDA1ZHpneXJybUJzMGpKcnVzdkllQQ?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Cedric Coward Injury: Questionable for Sunday RotoWire",
-          "published": "Sun, 25 Oct 2026 00:12:55 GMT"
-        }
-      ]
-    },
-    {
-      "id": "cameron-johnson-injury-day-day-ankle-sprain-c82e41e2",
-      "slug": "cameron-johnson-injury-day-day-ankle-sprain-c82e41e2",
-      "sport": "basketball",
-      "headline": "Cameron Johnson Injury: Day-to-day with ankle sprain",
-      "blurb": "Cameron Johnson Injury: Day-to-day with ankle sprain RotoWire",
-      "summary": "Cameron Johnson Injury: Day-to-day with ankle sprain RotoWire Board reading of RotoWire.",
-      "category": "injury",
-      "published": "2026-10-24T23:47:31Z",
-      "updated": "2026-10-24T23:47:31Z",
-      "players": [
-        {
-          "key": "cameron johnson",
-          "name": "Cameron Johnson",
-          "slug": "cameron-johnson",
-          "pos": "SF",
-          "team": "BKN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Cameron Johnson Injury: Day-to-day with ankle sprain",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVnZyRDBfeko0Um13d0hSc1RXMmJHQTRkUWw0Z0RoYTZWRXZWbnk0MllkMWM0Y2JWVjBGdzhxWEd2eWlqWmdIdEx1UHdHaUVjVjdXTGhGc0Rlc1RScUVFNWxRZzZtVm1KeEwwZmhycXZKOW5ZWldkandtYTJWM1U3ZWtOVjNJeTdXTEUwaTJWbURKcGNoRkl4Z0dRTC1ySjlpS2VTaVZvNA?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Cameron Johnson Injury: Day-to-day with ankle sprain RotoWire",
-          "published": "Sat, 24 Oct 2026 23:47:31 GMT"
-        }
-      ]
-    },
-    {
-      "id": "magic-guard-anthony-black-gets-encouraging-injury-ahead-281a97b7",
-      "slug": "magic-guard-anthony-black-gets-encouraging-injury-ahead-281a97b7",
-      "sport": "basketball",
-      "headline": "Magic guard Anthony Black gets encouraging injury update ahead of Knicks matchup",
-      "blurb": "Lakers' Injury Report Brings Encouraging News Ahead of Jazz Game Sports Illustrated",
-      "summary": "Anthony Black: Lakers' Injury Report Brings Encouraging News Ahead of Jazz Game Sports Illustrated Magic guard Anthony Black gets encouraging injury update ahead of Knicks matchup Yahoo Sports Aggregated from Sports Illustrated, Yahoo Sports.",
-      "category": "injury",
-      "published": "2026-10-24T20:48:17Z",
-      "updated": "2026-10-24T23:19:20Z",
-      "players": [
-        {
-          "key": "anthony black",
-          "name": "Anthony Black",
-          "slug": "anthony-black",
-          "pos": "PG",
-          "team": "ORL"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Magic guard Anthony Black gets encouraging injury update ahead of Knicks matchup",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYXR1bFVOcTNiblRWS1o2a0ZRTEVrZFJJVWljR0YxNkxsVzJWZkJabl9Xem9GSnZ4N0ZmNTNBOEZCTFp6S2tQbEZ2Nk5pbUMwRVU3aUd2cllWbEtVbDVtc3BTalZCSkVMYzhlb1h6R05WRFVmdTFfNEtwT2cxT3NmMlBtV0dRQQ?oc=5",
-          "publisher": "Yahoo Sports",
-          "kind": "article",
-          "snippet": "Magic guard Anthony Black gets encouraging injury update ahead of Knicks matchup Yahoo Sports",
-          "published": "Sat, 24 Oct 2026 20:48:17 GMT"
-        }
-      ]
-    },
-    {
-      "id": "jake-laravia-listed-injury-9ee5ab86",
-      "slug": "jake-laravia-listed-injury-9ee5ab86",
-      "sport": "basketball",
-      "headline": "Jake LaRavia News: Not listed on injury report",
-      "blurb": "Jake LaRavia News: Not listed on injury report RotoWire",
-      "summary": "Jake LaRavia News: Not listed on injury report RotoWire Board reading of RotoWire.",
-      "category": "injury",
-      "published": "2026-10-24T23:12:51Z",
-      "updated": "2026-10-24T23:12:51Z",
-      "players": [
-        {
-          "key": "jake laravia",
-          "name": "Jake LaRavia",
-          "slug": "jake-laravia",
-          "pos": "SF",
-          "team": "MEM"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Jake LaRavia News: Not listed on injury report",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOanFvWS1ubm9HNUVtaHoxa2ViVjh6Q1FpeEtXNkpNZUFpUTExM3NCVG1tNnRYS2FCZjd6LTZ4ZVpYYmdsZVRlUGRXdHFpendrb1Y4bkdpZUFhM2dsVkRFX1I1cVFvTU1PdFdVM3dfNTF1UzZmUmpFYi1vV096a3RGQVppT05BcF9uREEwQWFsZEh5R3lCSldBSjlDZnZMaGs?oc=5",
-          "publisher": "RotoWire",
-          "kind": "article",
-          "snippet": "Jake LaRavia News: Not listed on injury report RotoWire",
-          "published": "Sat, 24 Oct 2026 23:12:51 GMT"
-        }
-      ]
-    },
-    {
-      "id": "how-lebron-less-sixers-overcame-22-rebound-deficit-fff607c1",
-      "slug": "how-lebron-less-sixers-overcame-22-rebound-deficit-fff607c1",
-      "sport": "basketball",
-      "headline": "How LeBron-less Sixers overcame a 22-rebound deficit and still won by 11",
-      "blurb": "Joel Embiid organized the offense, VJ Edgecombe attacked the glass and KCP steadied both ends as the Sixers improved to 3-0.",
-      "summary": "Joel Embiid organized the offense, VJ Edgecombe attacked the glass and KCP steadied both ends as the Sixers improved to 3-0. Board reading of NBC Sports Philadelphia.",
-      "category": "wire",
-      "published": "2026-10-25T03:09:36Z",
-      "updated": "2026-10-25T03:09:36Z",
-      "players": [
-        {
-          "key": "vj edgecombe",
-          "name": "Vj Edgecombe",
-          "slug": "vj-edgecombe",
-          "pos": "",
-          "team": ""
-        },
-        {
-          "key": "joel embiid",
-          "name": "Joel Embiid",
-          "slug": "joel-embiid",
-          "pos": "C",
-          "team": "PHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "How LeBron-less Sixers overcame a 22-rebound deficit and still won by 11",
-          "url": "https://sports.yahoo.com/articles/lebron-less-sixers-overcame-22-030936591.html",
-          "publisher": "NBC Sports Philadelphia",
-          "kind": "article",
-          "snippet": "Joel Embiid organized the offense, VJ Edgecombe attacked the glass and KCP steadied both ends as the Sixers improved to 3-0.",
-          "published": "Sun, 25 Oct 2026 03:09:36 +0000"
         }
       ]
     }
