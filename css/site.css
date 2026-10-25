@@ -67,9 +67,11 @@ nav a { color: var(--ink); text-decoration: none; font-weight: 800; font-size: 1
 nav a:hover, nav a[aria-current="page"] { color: var(--red); }
 .nav-group a[aria-current="page"] { text-decoration: underline; text-underline-offset: 3px; }
 .nav-group.is-here { box-shadow: inset 0 0 0 1px rgba(16, 32, 51, 0.06); }
-.nav-group.nav-leads { background: #fff; border-color: #edd0d4; }
-.nav-group.nav-leads .nav-lab, .nav-group.nav-leads a { color: #c8102e; }
-.nav-group.nav-leads a:hover, .nav-group.nav-leads a[aria-current="page"] { color: #8e0b20; }
+.nav-group.nav-leads, .nav-group.nav-rankings { background: #fff; border-color: #edd0d4; }
+.nav-group.nav-leads .nav-lab, .nav-group.nav-leads a,
+.nav-group.nav-rankings .nav-lab, .nav-group.nav-rankings a { color: #c8102e; }
+.nav-group.nav-leads a:hover, .nav-group.nav-leads a[aria-current="page"],
+.nav-group.nav-rankings a:hover, .nav-group.nav-rankings a[aria-current="page"] { color: #8e0b20; }
 .nav-group.nav-ros { background: #fff; border-color: var(--line); }
 .nav-group.nav-ros .nav-lab, .nav-group.nav-ros a { color: #2c4a63; }
 .nav-group.nav-ros a:hover, .nav-group.nav-ros a[aria-current="page"] { color: #102033; }
@@ -85,12 +87,16 @@ nav a:hover, nav a[aria-current="page"] { color: var(--red); }
 .nav-group.nav-mine { background: #fff; border-color: var(--line); }
 .nav-group.nav-mine .nav-lab, .nav-group.nav-mine a { color: #b86a12; }
 .nav-group.nav-mine a:hover, .nav-group.nav-mine a[aria-current="page"] { color: #8a4c0a; }
-.nav-group.nav-tape { background: #fff; border-color: var(--line); }
-.nav-group.nav-tape .nav-lab, .nav-group.nav-tape a { color: #4b5563; }
-.nav-group.nav-tape a:hover, .nav-group.nav-tape a[aria-current="page"] { color: #1f2937; }
-.nav-group.nav-slates { background: #fff; border-color: var(--line); }
-.nav-group.nav-slates .nav-lab, .nav-group.nav-slates a { color: #2b4c7e; }
-.nav-group.nav-slates a:hover, .nav-group.nav-slates a[aria-current="page"] { color: #17325c; }
+.nav-group.nav-tape, .nav-group.nav-reading { background: #fff; border-color: var(--line); }
+.nav-group.nav-tape .nav-lab, .nav-group.nav-tape a,
+.nav-group.nav-reading .nav-lab, .nav-group.nav-reading a { color: #4b5563; }
+.nav-group.nav-tape a:hover, .nav-group.nav-tape a[aria-current="page"],
+.nav-group.nav-reading a:hover, .nav-group.nav-reading a[aria-current="page"] { color: #1f2937; }
+.nav-group.nav-slates, .nav-group.nav-sports { background: #fff; border-color: var(--line); }
+.nav-group.nav-slates .nav-lab, .nav-group.nav-slates a,
+.nav-group.nav-sports .nav-lab, .nav-group.nav-sports a { color: #2b4c7e; }
+.nav-group.nav-slates a:hover, .nav-group.nav-slates a[aria-current="page"],
+.nav-group.nav-sports a:hover, .nav-group.nav-sports a[aria-current="page"] { color: #17325c; }
 .nav-group.nav-fence { background: #fff; border-color: var(--line); }
 .nav-group.nav-fence .nav-lab, .nav-group.nav-fence a { color: #8e0b20; }
 .nav-group.nav-fence a:hover, .nav-group.nav-fence a[aria-current="page"] { color: #5c0715; }
@@ -1201,6 +1207,22 @@ body.home .home-proof span {
   display: block; margin-top: 2px; color: var(--muted);
   font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
 }
+body.home .home-today {
+  margin: 0 0 16px; padding: 18px 20px 16px;
+  background: #fff; border: 1px solid var(--line); border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+body.home .home-today h2 { margin: 0 0 10px; }
+body.home .today-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+body.home .today-row input {
+  flex: 1 1 180px; min-width: 0; padding: 10px 12px;
+  border: 1px solid var(--line); border-radius: 10px; font: inherit;
+}
+body.home .today-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 14px; }
+@media (max-width: 800px) {
+  body.home .today-grid { grid-template-columns: 1fr 1fr; }
+  body.home .home-snapshot { grid-template-columns: 1fr; }
+}
 body.home .home-snapshot {
   display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 8px;
 }
@@ -1516,3 +1538,8 @@ h1, h2 {
   font-weight: 650;
   letter-spacing: -0.02em;
 }
+.news-fresh, .news-stale {
+  margin: 12px 0 16px; padding: 10px 14px; border-radius: 10px; font-weight: 700;
+}
+.news-fresh { background: #e8f6ee; color: #14532d; }
+.news-stale { background: #fde8e8; color: #7f1d1d; border: 1px solid #f2b8b8; }

@@ -141,18 +141,19 @@ def test_football_nav_keeps_every_link():
     from build_site import NAV, NAV_GROUPS, fb_header_nav, fb_footer_nav
     assert [lab for _h, lab in NAV] == [
         "Home", "Keep · Dynasty SF", "Board · Redraft PPR",
-        "Redraft Superflex", "Classic · Half-PPR", "Redraft STD", "Best Ball", "2026 Rookies",
-        "The D (DST)", "Kickers",
-        "Weekly", "Week 6 DST", "Week 6 K", "Week 6 Predictions", "Week 6 Waivers", "Injuries",
-        "ADP", "Trade", "Handcuff · RB", "The Method",
+        "Classic · Half-PPR", "Redraft Superflex",
+        "The D · DST", "Kickers", "Fence · Superflex + IDP",
+        "Weekly", "Week 7 DST", "Week 7 K", "Week 7 Predictions", "Waivers", "Injuries",
+        "Trade", "Handcuff · RB handcuffs", "ADP", "Method",
         "My Team",
-        "Articles", "Week 1 Recap", "Touches", "Players", "News", "The X · Pictures", "Hot 'n' Cold", "The Market",
-        "NFL", "MLB", "BPL",
-        "Fence · Superflex + IDP",
+        "Articles", "News", "The X · Memes", "Touches", "Players", "Hot 'n' Cold",
+        "Week 1 Recap", "Week 1 Market",
+        "NFL", "MLB", "BPL", "BaseKeep", "BasketKeep", "PitchKeep",
     ]
     keys = [k for k, _lab, _items in NAV_GROUPS]
-    assert keys == ["leads", "ros", "st", "week", "tools", "mine", "tape", "slates", "fence"]
+    assert keys == ["rankings", "week", "tools", "mine", "reading", "sports"]
     header = fb_header_nav("weekly.html", 0)
+    assert 'href="/">Home</a>' in header
     assert 'aria-current="page">Weekly</a>' in header
     assert 'class="nav-group nav-week is-here"' in header
     assert "nav-lab" in header
@@ -164,7 +165,7 @@ def test_football_nav_keeps_every_link():
     assert header.count("nav-wide") == 1
     arts = fb_header_nav("the-long-game.html", 0)
     assert 'aria-current="page">Articles</a>' in arts
-    assert 'class="nav-group nav-tape is-here"' in arts
+    assert 'class="nav-group nav-reading is-here"' in arts
     nested = fb_header_nav("players/zay-flowers.html", 1)
     assert 'href="../the-keep.html"' in nested
     assert 'href="index.html">Players</a>' in nested
@@ -1198,7 +1199,7 @@ def test_home_page_markup():
     assert "every other desk" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=79" in doc
+    assert "css/site.css?v=80" in doc
     assert "home-lede" in html
     assert "Forty public boards" in html
     assert "Sleeper" in html

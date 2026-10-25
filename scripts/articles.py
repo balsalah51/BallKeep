@@ -25,6 +25,16 @@ from week6_predictions import HEADLINE as W6_HEAD
 
 ARTICLES = [
     (
+        "week7-matchups.html",
+        "Week 7 Predictions",
+        "Sunday, Oct 25",
+        "Fourteen games. Thursday already played. No invented picks.",
+        "The official Week 7 slate is on the board. Mash picks land when the published cards are in.",
+        "img/players/drake-maye.jpg",
+        "Drake Maye",
+        True,
+    ),
+    (
         "week6-matchups.html",
         "Week 6 Predictions",
         "Saturday, Oct 17",
@@ -32,7 +42,7 @@ ARTICLES = [
         W6_DEK,
         "img/players/jaxon-smith-njigba.jpg",
         "Jaxon Smith-Njigba",
-        True,
+        False,
     ),
     (
         "week5-matchups.html",

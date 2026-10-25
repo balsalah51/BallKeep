@@ -11,7 +11,8 @@ from seo import (
 )
 from the_market import write_the_market
 from the_recap import write_the_recap
-from week6_predictions import predictions_teaser
+from nfl_week import live_week, week_href, week_label
+from week7_boards import predictions_teaser
 from weekly_kit import (
     ADP_SOURCES,
     DEPTH_SOURCES,
@@ -91,6 +92,13 @@ def write_weekly_pages(b, nfl, media, board_rows):
 
     week = week_num()
     label = _week_label()
+    live = live_week()
+    scrape_note = ""
+    if week != live:
+        scrape_note = (
+            f' <strong>Last scrape is Week {week}.</strong> The calendar is '
+            f'<a href="{week_href("matchups", live)}">{week_label(live)}</a>.'
+        )
     flex = weekly_flex()
     boards = {pos: weekly_board(pos) for pos in ("QB", "RB", "WR", "TE")}
     adp = adp_rows(board_rows)
@@ -146,7 +154,7 @@ def write_weekly_pages(b, nfl, media, board_rows):
     flex_body = f"""
     <p class="kicker">{label} · skill · Flex plus positions</p>
     <h1>Weekly</h1>
-    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% every other board that ranked the name. Quarterbacks, backs, receivers, and tight ends each have their own board. {proj_blurb()} The finished Week 1 essay lives on <a href="the-recap.html">The Recap</a>. The Week 6 card, with a pick on every line, lives on <a href="week6-matchups.html">Week 6 Predictions</a>. The finished Week 5 card sits on <a href="week5-matchups.html">Week 5 Predictions</a>.</p>
+    <p class="note">Week {week} stream. Super Aggregate PPR flex (RB/WR/TE): 50% FantasyPros Flex ECR, 50% every other board that ranked the name. Quarterbacks, backs, receivers, and tight ends each have their own board. {proj_blurb()}{scrape_note} The finished Week 1 essay lives on <a href="the-recap.html">The Recap</a>. The live slate lives on <a href="{week_href('matchups', live)}">{week_label(live)} Predictions</a>. The finished Week 6 card sits on <a href="week6-matchups.html">Week 6 Predictions</a>.</p>
     {predictions_teaser()}
     <div class="grid-3">
       <a class="tile" href="weekly-qb.html"><h3>Week {week} QB</h3><p>{(boards['QB'] or [{'name':''}])[0]['name']} leads the quarterbacks.</p></a>
