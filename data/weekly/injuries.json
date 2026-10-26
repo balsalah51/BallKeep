@@ -1,60 +1,53 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "players": [
     {
-      "name": "Budda Baker",
-      "pos": "S",
-      "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 25: Baker (groin) is listed as questionable but expected to play against the Broncos on Sunday, Ian Rapoport of NFL Network reports."
-    },
-    {
-      "name": "Jon Gaines II",
-      "pos": "G",
+      "name": "Max Melton",
+      "pos": "CB",
       "team_name": "",
       "status": "Out",
-      "note": "Oct 23: Gaines (knee) has been ruled out ahead of Sunday's game against the Broncos, Darren Urban of the Cardinals' official site reports."
+      "note": "Oct 25: Melton (knee) is inactive for Sunday's game against the Broncos, Darren Urban of the Cardinals' official site reports."
+    },
+    {
+      "name": "Carson Beck",
+      "pos": "QB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: Beck (back) is inactive but will serve as the emergency third quarterback against the Broncos on Sunday, Darren Urban of the Cardinals' official site reports."
     },
     {
       "name": "Andrew Wingard",
       "pos": "S",
       "team_name": "",
       "status": "Out",
-      "note": "Oct 23: Wingard (knee) has been ruled out for Sunday's game against the Broncos, Darren Urban of the Cardinals' official site reports."
+      "note": ""
     },
     {
-      "name": "Max Melton",
-      "pos": "CB",
-      "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 23: Melton (knee) is questionable for Sunday's game against the Broncos, Darren Urban of the Cardinals' official site reports."
-    },
-    {
-      "name": "Carson Beck",
-      "pos": "QB",
-      "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 23: Beck (back) is questionable for Sunday's game against the Broncos, Darren Urban of the Cardinals' official site reports."
-    },
-    {
-      "name": "Walter Nolen III",
-      "pos": "DT",
+      "name": "Albert Reese IV",
+      "pos": "OT",
       "team_name": "",
       "status": "Out",
-      "note": "Oct 23: Nolen (ankle) has been ruled out ahead of Sunday's game against the Broncos, Darren Urban of the Cardinals' official site reports."
+      "note": ""
     },
     {
       "name": "Jeremiyah Love",
       "pos": "RB",
       "team_name": "",
       "status": "Out",
-      "note": "Oct 23: Head coach Mike LaFleur said Friday that Love (ankle) won't play Sunday against the Broncos, Darren Urban of the Cardinals' official site reports."
+      "note": ""
     },
     {
-      "name": "Darius Robinson",
-      "pos": "DE",
+      "name": "Walter Nolen III",
+      "pos": "DT",
       "team_name": "",
-      "status": "Questionable",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Jon Gaines II",
+      "pos": "G",
+      "team_name": "",
+      "status": "Out",
       "note": ""
     },
     {
@@ -142,6 +135,13 @@
       "note": ""
     },
     {
+      "name": "Avieon Terrell",
+      "pos": "CB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: Terrell (back/illness) is inactive against the 49ers on Sunday, Tori McElhaney of the Falcons' official site reports."
+    },
+    {
       "name": "Jack Strand",
       "pos": "QB",
       "team_name": "",
@@ -182,13 +182,6 @@
       "team_name": "",
       "status": "Out",
       "note": ""
-    },
-    {
-      "name": "Avieon Terrell",
-      "pos": "CB",
-      "team_name": "",
-      "status": "Out",
-      "note": "Oct 24: Terrell (back) is now recovering from an illness ahead of Sunday's game against the 49ers, Tori McElhaney of the Falcons' official site reports."
     },
     {
       "name": "Michael Jerrell",
@@ -254,11 +247,25 @@
       "note": "Aug 31: The Falcons moved Thompson (undisclosed) to the reserve/non-football injury list Sunday, Will McFadden of the team's official site reports."
     },
     {
+      "name": "Jalon Walker",
+      "pos": "LB",
+      "team_name": "",
+      "status": "Injured Reserve",
+      "note": ""
+    },
+    {
       "name": "DeAngelo Malone",
       "pos": "LB",
       "team_name": "",
       "status": "Out",
       "note": "Aug 4: The Falcons placed Malone (undisclosed) on the reserve/PUP list Tuesday, Will McFadden of the team's official site reports."
+    },
+    {
+      "name": "Olaivavega Ioane",
+      "pos": "G",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Ioane (knee) has been ruled out for the remainder of Sunday's game against the Bengals."
     },
     {
       "name": "Broderick Washington Jr.",
@@ -412,6 +419,13 @@
       "pos": "DT",
       "team_name": "",
       "status": "Injured Reserve",
+      "note": ""
+    },
+    {
+      "name": "Taylor Moton",
+      "pos": "OT",
+      "team_name": "",
+      "status": "Doubtful",
       "note": ""
     },
     {
@@ -674,6 +688,20 @@
       "note": ""
     },
     {
+      "name": "Kyle Dugger",
+      "pos": "S",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Dugger (quadriceps) has been ruled out for the remainder of Sunday's game against the Ravens."
+    },
+    {
+      "name": "Erick All Jr.",
+      "pos": "TE",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: All (knee) has been ruled out for the rest of Sunday's game against the Ravens."
+    },
+    {
       "name": "Shemar Stewart",
       "pos": "DE",
       "team_name": "",
@@ -751,18 +779,32 @@
       "note": "Aug 31: The Bengals placed Taylor (undisclosed) on injured reserve Sunday with a designation to return, Geoff Hobson of the team's official site reports."
     },
     {
-      "name": "Audric Estime",
-      "pos": "RB",
+      "name": "Tytus Howard",
+      "pos": "OT",
       "team_name": "",
-      "status": "Out",
-      "note": "Oct 25: Estime (coach's decision) is inactive for Sunday's game against the Titans."
+      "status": "Questionable",
+      "note": "Oct 25: Howard is being evaluated for a possible concussion and is questionable to return to Sunday's game against the Titans."
+    },
+    {
+      "name": "Myles Harden",
+      "pos": "CB",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Harden (hamstring) is questionable to return to Sunday's game against the Titans, Daniel Oyefusi of ESPN.com reports."
     },
     {
       "name": "Taylen Green",
       "pos": "QB",
       "team_name": "",
       "status": "Out",
-      "note": ""
+      "note": "Oct 25: Green (coach's decision) is inactive but will serve as the emergency third quarterback Sunday against the Titans, Kelsey Russo of the Browns' official site reports."
+    },
+    {
+      "name": "Audric Estime",
+      "pos": "RB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: Estime (coach's decision) is inactive for Sunday's game against the Titans."
     },
     {
       "name": "Mike Hall Jr.",
@@ -863,18 +905,25 @@
       "note": ""
     },
     {
-      "name": "Drew Shelton",
-      "pos": "OT",
+      "name": "P.J. Locke",
+      "pos": "S",
       "team_name": "",
-      "status": "Out",
-      "note": "Oct 24: Shelton (hamstring) has been ruled out for Monday's game against Philadelphia, Adam Caplan of SiriusXM NFL Radio reports."
+      "status": "Injured Reserve",
+      "note": "Oct 25: Locke (foot) has been downgraded from questionable to out for Monday's game against the Eagles."
     },
     {
       "name": "Marist Liufau",
       "pos": "LB",
       "team_name": "",
       "status": "Injured Reserve",
-      "note": "Oct 24: Liufau (forearm) is listed as questionable for Monday's game against the Eagles, Adam Caplan of SiriusXM NFL Radio reports."
+      "note": "Oct 25: Liufau (forearm) has been downgraded from questionable to out ahead of Monday night's game against the Eagles."
+    },
+    {
+      "name": "Drew Shelton",
+      "pos": "OT",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 24: Shelton (hamstring) has been ruled out for Monday's game against Philadelphia, Adam Caplan of SiriusXM NFL Radio reports."
     },
     {
       "name": "Dee Winters",
@@ -889,13 +938,6 @@
       "team_name": "",
       "status": "Out",
       "note": "Oct 24: Turpin (ribs) has been ruled out for Monday's game against the Eagles, Adam Caplan of SiriusXM NFL Radio reports."
-    },
-    {
-      "name": "P.J. Locke",
-      "pos": "S",
-      "team_name": "",
-      "status": "Injured Reserve",
-      "note": "Oct 23: The Cowboys opened Locke's (foot) 21-day practice window Friday, Tommy Yarrish of the team's official site reports."
     },
     {
       "name": "Jonathan Bullard",
@@ -954,11 +996,67 @@
       "note": ""
     },
     {
+      "name": "Jaylen Waddle",
+      "pos": "WR",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Waddle didn't return to Sunday's 30-16 win over the Cardinals due to a chest injury, Parker Gabriel of the Denver Post reports."
+    },
+    {
+      "name": "Zach Allen",
+      "pos": "DE",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Allen suffered a hamstring injury in Sunday's 30-16 win over the Cardinals, Zac Stevens of TheDNVR.com reports."
+    },
+    {
+      "name": "Sam Ehlinger",
+      "pos": "QB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: Ehlinger (coach's decision) is inactive but will serve as the emergency third quarterback in Sunday's game against the Cardinals, Aric DiLalla of the Broncos' official site reports."
+    },
+    {
       "name": "Pat Surtain II",
       "pos": "CB",
       "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 25: Surtain (ankle) isn't likely to play Sunday at Arizona, Ian Rapoport of NFL Network reports."
+      "status": "Out",
+      "note": "Oct 25: Surtain (ankle) is inactive for Sunday's game against the Cardinals, Aric DiLalla of the Broncos' official site reports."
+    },
+    {
+      "name": "Tyler Onyedim",
+      "pos": "DT",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Talanoa Hufanga",
+      "pos": "S",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Jordan Jackson",
+      "pos": "DT",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Dallen Bentley",
+      "pos": "TE",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Kage Casey",
+      "pos": "OT",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
     },
     {
       "name": "Tyler Badie",
@@ -973,20 +1071,6 @@
       "team_name": "",
       "status": "Injured Reserve",
       "note": "Oct 24: The Broncos placed Elliss (ankle) on injured reserve Saturday, Aric DiLalla of the team's official site reports."
-    },
-    {
-      "name": "Jonah Coleman",
-      "pos": "RB",
-      "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 24: The Broncos activated Coleman (ankle) from injured reserve Saturday but continue to list him as questionable for Sunday's game against the Cardinals, Aric DiLalla of the team's official site reports."
-    },
-    {
-      "name": "Talanoa Hufanga",
-      "pos": "S",
-      "team_name": "",
-      "status": "Out",
-      "note": "Oct 23: Hufanga (ankle) has been ruled out for Sunday's game against the Cardinals."
     },
     {
       "name": "Pat Bryant",
@@ -1035,6 +1119,48 @@
       "pos": "C",
       "team_name": "",
       "status": "Injured Reserve",
+      "note": ""
+    },
+    {
+      "name": "Ennis Rakestraw Jr.",
+      "pos": "CB",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Rakestraw exited Sunday's game against the Packers with an ankle injury and is questionable to return."
+    },
+    {
+      "name": "Mekhi Wingo",
+      "pos": "DT",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Seth McLaughlin",
+      "pos": "C",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Jackson Meeks",
+      "pos": "WR",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Ahmed Hassanein",
+      "pos": "DE",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Bishop Fitzgerald",
+      "pos": "S",
+      "team_name": "",
+      "status": "Out",
       "note": ""
     },
     {
@@ -1115,32 +1241,60 @@
       "note": "Jun 17: The Lions placed Law (knee) on the reserve/injured list Wednesday."
     },
     {
-      "name": "Jordon Riley",
-      "pos": "DT",
-      "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 24: The Packers activated Riley (Achilles) from the active/PUP list Saturday."
-    },
-    {
-      "name": "Aaron Banks",
+      "name": "Sean Rhyan",
       "pos": "G",
       "team_name": "",
       "status": "Questionable",
-      "note": "Oct 23: Banks (knee/toe) is listed as questionable for Sunday's game against the Lions, Wes Hodkiewicz of the Packers' official site reports."
+      "note": "Oct 25: Rhyan (ankle) has been ruled out for the remainder of Sunday's matchup with the Lions."
     },
     {
-      "name": "Bo Melton",
-      "pos": "WR",
+      "name": "Jacob Monk",
+      "pos": "C",
       "team_name": "",
       "status": "Questionable",
-      "note": "Oct 23: Melton (back) is questionable for Sunday's game against the Lions, Wes Hodkiewicz of the Packers' official site reports."
+      "note": "Oct 25: Monk (quadriceps) is questionable to return to Sunday's game against the Lions."
+    },
+    {
+      "name": "Kaleb Johnson",
+      "pos": "RB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: Johnson (coach's decision) is inactive for Sunday's game against the Lions."
+    },
+    {
+      "name": "Benjamin St-Juste",
+      "pos": "CB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: St-Juste (hamstring) is inactive for Sunday's game against the Lions."
+    },
+    {
+      "name": "Kevin Zeitler",
+      "pos": "G",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
     },
     {
       "name": "Zaire Franklin",
       "pos": "LB",
       "team_name": "",
       "status": "Out",
-      "note": "Oct 23: Franklin (shin) has been ruled out ahead of Sunday's game against the Lions, Weston Hodkiewicz of the Packers' official site reports."
+      "note": ""
+    },
+    {
+      "name": "Donovan Jennings",
+      "pos": "G",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Jager Burton",
+      "pos": "C",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
     },
     {
       "name": "Luke Musgrave",
@@ -1148,13 +1302,6 @@
       "team_name": "",
       "status": "Out",
       "note": "Oct 22: Packers head coach Matt Lafleur said Thursday it's \"tough to say\" whether Musgrave (neck) plays this season, Weston Hodkiewicz of the Packers' official site reports."
-    },
-    {
-      "name": "Benjamin St-Juste",
-      "pos": "CB",
-      "team_name": "",
-      "status": "Questionable",
-      "note": ""
     },
     {
       "name": "Micah Parsons",
@@ -1239,6 +1386,13 @@
       "team_name": "",
       "status": "Injured Reserve",
       "note": ""
+    },
+    {
+      "name": "Jaylin Noel",
+      "pos": "WR",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Noel (toe) was seen in a walking boot after Sunday's 27-21 overtime loss to the Giants, DJ Bien-Aime of ESPN.com reports."
     },
     {
       "name": "Nate Thomas",
@@ -1372,6 +1526,13 @@
       "team_name": "",
       "status": "Injured Reserve",
       "note": ""
+    },
+    {
+      "name": "Justin Walley",
+      "pos": "CB",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Walley (undisclosed) is questionable to return to Sunday's game against the Vikings."
     },
     {
       "name": "Bryce Boettcher",
@@ -1556,6 +1717,41 @@
       "note": ""
     },
     {
+      "name": "Garrett Nussmeier",
+      "pos": "QB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: Nussmeier (coach's decision) is inactive as the emergency third quarterback for Sunday night's game against the Seahawks."
+    },
+    {
+      "name": "Jack Pyburn",
+      "pos": "LB",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Rashee Rice",
+      "pos": "WR",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Ben VanSumeren",
+      "pos": "FB",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Jadon Canady",
+      "pos": "CB",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
       "name": "Jaylon Moore",
       "pos": "OT",
       "team_name": "",
@@ -1563,25 +1759,11 @@
       "note": "Oct 25: Moore (concussion) has been ruled out for Sunday's game against the Seahawks."
     },
     {
-      "name": "L'Jarius Sneed",
-      "pos": "CB",
-      "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 24: Sneed (knee) did not fly to Seattle with the Chiefs due to personal reasons but remains questionable for Sunday night's contest."
-    },
-    {
       "name": "Brashard Smith",
       "pos": "RB",
       "team_name": "",
       "status": "Injured Reserve",
       "note": "Oct 24: The Chiefs placed Smith (hamstring) on injured reserve Saturday."
-    },
-    {
-      "name": "Rashee Rice",
-      "pos": "WR",
-      "team_name": "",
-      "status": "Out",
-      "note": "Oct 23: Rice (hamstring/knee) was not present during the portion of Friday's practice open to the media, Pete Sweeney of The Kansas City Star reports."
     },
     {
       "name": "Josh Simmons",
@@ -1640,25 +1822,67 @@
       "note": "Jul 28: The Chiefs placed Gyllenborg (knee) on injured reserve Tuesday, Matt Derrick of ChiefsDigest.com reports."
     },
     {
+      "name": "Patrick Johnson",
+      "pos": "DE",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Johnson (stinger/neck) is questionable to return to Sunday's contest against the Rams."
+    },
+    {
+      "name": "Aidan O'Connell",
+      "pos": "QB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: O'Connell (coach's decision) is inactive but will serve as the Raiders' emergency third quarterback against the Rams on Sunday."
+    },
+    {
+      "name": "Cian Slone",
+      "pos": "DE",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Dalton Johnson",
+      "pos": "S",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Jonah Laulu",
+      "pos": "DT",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Tristin McCollum",
+      "pos": "S",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Thomas Booker IV",
+      "pos": "DT",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Bryce Cabeldue",
+      "pos": "G",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
       "name": "Carter Runyon",
       "pos": "TE",
       "team_name": "",
       "status": "Injured Reserve",
       "note": "Oct 25: The Raiders have ruled out Runyon (foot) for Sunday's game against the Rams."
-    },
-    {
-      "name": "Mike Washington Jr.",
-      "pos": "RB",
-      "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 25: Washington (foot/back) is considered a game-time decision for Sunday's contest against the Rams, Jeremy Fowler of ESPN reports."
-    },
-    {
-      "name": "Quay Walker",
-      "pos": "LB",
-      "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 24: Walker (chest) is listed as questionable for Sunday's game against the Rams, Ryan McFadden of ESPN.com reports."
     },
     {
       "name": "Dont'e Thornton Jr.",
@@ -1836,25 +2060,46 @@
       "note": "Aug 23: The Chargers placed Biadasz (knee) on injured reserve Sunday."
     },
     {
-      "name": "Puka Nacua",
-      "pos": "WR",
-      "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 25: The Rams are optimistic that Nacua (calf), who is listed as questionable for Week 7, will play in Sunday's game at Las Vegas, Adam Schefter of ESPN reports."
-    },
-    {
       "name": "Trent McDuffie",
       "pos": "CB",
       "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 23: McDuffie (groin) is listed as questionable for Sunday's game against the Raiders, Sarah Barshop of ESPN.com reports."
+      "status": "Out",
+      "note": "Oct 25: McDuffie (groin) is inactive for Sunday's game against the Raiders, Sarah Barshop of ESPN.com reports."
+    },
+    {
+      "name": "Ty Simpson",
+      "pos": "QB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: Simpson (coach's decision) is inactive but will serve as the Rams' emergency third quarterback against the Raiders on Sunday, Sarah Barshop of ESPN.com reports."
+    },
+    {
+      "name": "Keagen Trost",
+      "pos": "OT",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Bill Murray",
+      "pos": "G",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Max Klare",
+      "pos": "TE",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
     },
     {
       "name": "Nate Landman",
       "pos": "LB",
       "team_name": "",
       "status": "Out",
-      "note": "Oct 23: Landman (concussion) has been ruled out for Sunday's game against the Raiders, Gary Klein of the Los Angeles Times reports."
+      "note": ""
     },
     {
       "name": "Myles Garrett",
@@ -1934,6 +2179,20 @@
       "note": "Jun 4: The Rams placed Walls (undisclosed) on their injured reserve list Thursday, Cameron DaSilva of USA Today reports."
     },
     {
+      "name": "Jaylen Wright",
+      "pos": "RB",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Wright (quadriceps) left Sunday's game against the Jets and did not return to the contest."
+    },
+    {
+      "name": "Robert Beal Jr.",
+      "pos": "DE",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: Beal (hamstring) is inactive for Sunday's game against the Jets."
+    },
+    {
       "name": "Willie Gay Jr.",
       "pos": "LB",
       "team_name": "",
@@ -1957,13 +2216,6 @@
     {
       "name": "Chukwuebuka Godrick",
       "pos": "OT",
-      "team_name": "",
-      "status": "Out",
-      "note": ""
-    },
-    {
-      "name": "Robert Beal Jr.",
-      "pos": "DE",
       "team_name": "",
       "status": "Out",
       "note": ""
@@ -2023,6 +2275,13 @@
       "team_name": "",
       "status": "Injured Reserve",
       "note": ""
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "pos": "RB",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Head coach Kevin O'Connell said Jones aggravated a previous knee injury during Sunday's 16-10 win against the Colts, Ben Goessling of the Minnesota Star Tribune reports."
     },
     {
       "name": "Max Brosmer",
@@ -2252,8 +2511,8 @@
       "name": "CJ Donaldson",
       "pos": "RB",
       "team_name": "",
-      "status": "Out",
-      "note": "Oct 25: Donaldson (shoulder) has been ruled out for the rest of Sunday's game against the Steelers in Paris, Jeff Nowak of The Big 870 New Orleans reports."
+      "status": "Questionable",
+      "note": "Oct 25: Donaldson (shoulder) is questionable to return to Sunday's game against the Steelers in Paris."
     },
     {
       "name": "Treyton Welch",
@@ -2380,6 +2639,20 @@
       "team_name": "",
       "status": "Out",
       "note": "May 13: New Orleans placed Saldiveri (knee) on its reserve/physically unable to perform list Tuesday."
+    },
+    {
+      "name": "Cam Skattebo",
+      "pos": "RB",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Skattebo told Dan Graziano of ESPN after Sunday's 27-21 overtime win at Houston that he \"felt something in his hamstring\" during his final carry of the game."
+    },
+    {
+      "name": "Tyrone Tracy Jr.",
+      "pos": "RB",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Tracy left Sunday's game at Houston due to a hamstring injury, Jordan Raanan of ESPN.com reports."
     },
     {
       "name": "Jake Haener",
@@ -2513,6 +2786,13 @@
       "team_name": "",
       "status": "Injured Reserve",
       "note": "May 14: Dixon tore his Achilles on Wednesday and was placed on injured reserve Thursday, Dan Salomone of the Giants' official site reports."
+    },
+    {
+      "name": "T'Vondre Sweat",
+      "pos": "DT",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Sweat (knee) has been ruled out for the remainder of Sunday's game against the Dolphins."
     },
     {
       "name": "Dylan Parham",
@@ -3047,39 +3327,74 @@
       "note": "May 28: San Francisco placed Forrest (undisclosed) on its injured reserve list Thursday."
     },
     {
-      "name": "Nick Emmanwori",
-      "pos": "S",
+      "name": "Charles Cross",
+      "pos": "OT",
       "team_name": "",
       "status": "Questionable",
-      "note": "Oct 25: The Seahawks expect that Emmanwori (hip) will play against the Chiefs on Sunday, Ian Rapoport of NFL Network reports."
+      "note": "Oct 25: Cross exited Sunday night's game against the Chiefs with an ankle injury and did not return."
     },
     {
-      "name": "Uchenna Nwosu",
-      "pos": "LB",
+      "name": "Velus Jones Jr.",
+      "pos": "RB",
       "team_name": "",
       "status": "Questionable",
-      "note": "Oct 25: Ian Rapoport of NFL Network reports that Nwosu (hip) is expected to be cleared to play against the Chiefs on Sunday."
+      "note": "Oct 25: Jones (hamstring) has been ruled out for the remainder of Sunday night's contest against the Chiefs."
+    },
+    {
+      "name": "Rashid Shaheed",
+      "pos": "WR",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Shaheed (knee) won't return to Sunday's game against the Chiefs."
+    },
+    {
+      "name": "Connor O'Toole",
+      "pos": "LB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: O'Toole (hamstring) is inactive for Sunday night's game against the Chiefs."
+    },
+    {
+      "name": "Drew Lock",
+      "pos": "QB",
+      "team_name": "",
+      "status": "Out",
+      "note": "Oct 25: Lock (elbow) is inactive but serving as the Seahawks' emergency third quarterback for Sunday night's contest against the Chiefs, Curtis Crabtree of Fox 13 Seattle reports."
+    },
+    {
+      "name": "Beau Stephens",
+      "pos": "G",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
     },
     {
       "name": "Chazz Surratt",
       "pos": "LB",
       "team_name": "",
       "status": "Out",
-      "note": "Oct 23: Surratt (calf) has been ruled out ahead of Sunday's game against the Chiefs, John Boyle of the Seahawks' official site reports."
+      "note": ""
     },
     {
       "name": "Drake Thomas",
       "pos": "LB",
       "team_name": "",
       "status": "Out",
-      "note": "Oct 23: Thomas (ankle) has been ruled out ahead of Sunday's game against the Chiefs, John Boyle of the Seahawks' official site reports."
+      "note": ""
     },
     {
-      "name": "Drew Lock",
-      "pos": "QB",
+      "name": "Robert Henry Jr.",
+      "pos": "RB",
       "team_name": "",
-      "status": "Questionable",
-      "note": "Oct 23: Lock (elbow) is listed as questionable ahead of Sunday's game against the Chiefs, John Boyle of the Seahawks' official site reports."
+      "status": "Out",
+      "note": ""
+    },
+    {
+      "name": "Zach Charbonnet",
+      "pos": "RB",
+      "team_name": "",
+      "status": "Out",
+      "note": ""
     },
     {
       "name": "Elijah Arroyo",
@@ -3087,27 +3402,6 @@
       "team_name": "",
       "status": "Injured Reserve",
       "note": "Oct 23: Head coach Mike Macdonald told reporters Friday that Arroyo (shoulder) underwent surgery and will likely be out for the rest of the season, Curtis Crabtree of Fox 13 Seattle reports."
-    },
-    {
-      "name": "Zach Charbonnet",
-      "pos": "RB",
-      "team_name": "",
-      "status": "Out",
-      "note": "Oct 23: Head coach Mike Macdonald said Friday that Charbonnet (knee) has been ruled out for Sunday's game versus the Chiefs, Curtis Crabtree of Fox 13 Seattle reports."
-    },
-    {
-      "name": "DeMarcus Lawrence",
-      "pos": "LB",
-      "team_name": "",
-      "status": "Questionable",
-      "note": ""
-    },
-    {
-      "name": "Connor O'Toole",
-      "pos": "LB",
-      "team_name": "",
-      "status": "Questionable",
-      "note": ""
     },
     {
       "name": "Jadarian Price",
@@ -3227,6 +3521,13 @@
       "team_name": "",
       "status": "Injured Reserve",
       "note": "Aug 31: Kamara (knee) reverted to the Buccaneers' injured reserve list Monday, per the NFL's transaction log."
+    },
+    {
+      "name": "Tommy Townsend",
+      "pos": "P",
+      "team_name": "",
+      "status": "Questionable",
+      "note": "Oct 25: Townsend (knee) is questionable to return to Sunday's game against the Browns."
     },
     {
       "name": "Nicholas Singleton",

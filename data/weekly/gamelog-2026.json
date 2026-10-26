@@ -1,13 +1,14 @@
 {
   "season": 2026,
-  "through_week": 6,
+  "through_week": 7,
   "weeks": [
     1,
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
   ],
   "players": {
     "Parker Washington": {
@@ -267,6 +268,18 @@
           "rush_yd": 46,
           "pts_ppr": 6.9,
           "snap_pct": 85.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 4,
+          "rush_att": 24,
+          "rush_yd": 106,
+          "rush_td": 2,
+          "pts_ppr": 24.0
         }
       ]
     },
@@ -336,6 +349,14 @@
           "rec_yd": 69,
           "pts_ppr": 10.9,
           "snap_pct": 62.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 21,
+          "pts_ppr": 6.1
         }
       ]
     },
@@ -394,6 +415,16 @@
           "off_snp": 15,
           "tm_off_snp": 62,
           "snap_pct": 24.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 38,
+          "rush_att": 1,
+          "rush_yd": 10,
+          "pts_ppr": 7.8
         }
       ]
     },
@@ -469,6 +500,14 @@
           "rec_yd": 16,
           "pts_ppr": 3.6,
           "snap_pct": 41.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 25,
+          "pts_ppr": 3.5
         }
       ]
     },
@@ -798,6 +837,14 @@
           "off_snp": 3,
           "tm_off_snp": 57,
           "snap_pct": 5.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 15,
+          "pts_ppr": 2.5
         }
       ]
     },
@@ -875,6 +922,16 @@
           "rec_td": 2,
           "pts_ppr": 23.0,
           "snap_pct": 78.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 5,
+          "rec_yd": 22,
+          "rec_td": 1,
+          "pts_ppr": 13.2
         }
       ]
     },
@@ -990,6 +1047,12 @@
           "rec_td": 1,
           "pts_ppr": 7.1,
           "snap_pct": 37.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2
         }
       ]
     },
@@ -1056,6 +1119,11 @@
           "off_snp": 25,
           "tm_off_snp": 79,
           "snap_pct": 31.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -1464,6 +1532,19 @@
           "pass_td": 2,
           "pts_ppr": 16.9,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 3,
+          "rush_yd": -3,
+          "pass_cmp": 23,
+          "pass_att": 29,
+          "pass_yd": 195,
+          "pass_td": 3,
+          "pass_int": 1,
+          "pts_ppr": 18.5
         }
       ]
     },
@@ -1603,6 +1684,14 @@
           "rec_yd": 53,
           "pts_ppr": 8.3,
           "snap_pct": 63.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 44,
+          "pts_ppr": 7.4
         }
       ]
     },
@@ -1683,6 +1772,16 @@
           "rec_yd": 9,
           "pts_ppr": 3.9,
           "snap_pct": 42.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 26,
+          "rush_att": 3,
+          "rush_yd": 7,
+          "pts_ppr": 6.3
         }
       ]
     },
@@ -1760,6 +1859,19 @@
           "rec_td": 1,
           "pts_ppr": 18.5,
           "snap_pct": 88.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 58,
+          "tm_off_snp": 69,
+          "rec_tgt": 12,
+          "rec": 7,
+          "rec_yd": 69,
+          "rec_td": 1,
+          "pts_ppr": 19.9,
+          "snap_pct": 84.1
         }
       ]
     },
@@ -1935,6 +2047,14 @@
           "rec_td": 1,
           "pts_ppr": 17.7,
           "snap_pct": 85.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 6,
+          "pts_ppr": 1.6
         }
       ]
     },
@@ -2002,6 +2122,17 @@
           "tm_off_snp": 68,
           "rec_tgt": 1,
           "snap_pct": 61.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 34,
+          "tm_off_snp": 54,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 16,
+          "pts_ppr": 2.6,
+          "snap_pct": 63.0
         }
       ]
     },
@@ -2049,6 +2180,14 @@
           "tm_off_snp": 71,
           "rec_tgt": 1,
           "snap_pct": 69.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 34,
+          "pts_ppr": 5.4
         }
       ]
     },
@@ -2199,6 +2338,17 @@
           "rush_yd": 18,
           "pts_ppr": 12.1,
           "snap_pct": 80.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 27,
+          "rush_att": 2,
+          "rush_yd": 8,
+          "pts_ppr": 6.5
         }
       ]
     },
@@ -2281,6 +2431,19 @@
           "pass_int": 2,
           "pts_ppr": 13.0,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 2,
+          "rush_yd": 17,
+          "pass_cmp": 20,
+          "pass_att": 28,
+          "pass_yd": 257,
+          "pass_td": 1,
+          "pass_int": 1,
+          "pts_ppr": 15.0
         }
       ]
     },
@@ -2516,6 +2679,13 @@
           "off_snp": 1,
           "tm_off_snp": 62,
           "snap_pct": 1.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 1,
+          "rush_yd": -1,
+          "pts_ppr": -0.1
         }
       ]
     },
@@ -2595,6 +2765,12 @@
           "rec_yd": 4,
           "pts_ppr": 1.4,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -2797,6 +2973,15 @@
           "rec_td": 1,
           "pts_ppr": 14.4,
           "snap_pct": 40.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 35,
+          "pts_ppr": 5.5
         }
       ]
     },
@@ -2811,6 +2996,23 @@
           "off_snp": 1,
           "tm_off_snp": 60,
           "snap_pct": 1.7
+        }
+      ]
+    },
+    "Khalil Herbert": {
+      "name": "Khalil Herbert",
+      "pos": "RB",
+      "team": "ATL",
+      "games": [
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 19,
+          "rush_att": 2,
+          "rush_yd": 9,
+          "pts_ppr": 3.8
         }
       ]
     },
@@ -2928,6 +3130,17 @@
           "rec_yd": 134,
           "pts_ppr": 25.4,
           "snap_pct": 91.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 12,
+          "rec": 9,
+          "rec_yd": 150,
+          "rec_td": 1,
+          "rush_att": 2,
+          "rush_yd": 13,
+          "pts_ppr": 31.3
         }
       ]
     },
@@ -2993,6 +3206,16 @@
           "rush_yd": 16,
           "pts_ppr": 3.6,
           "snap_pct": 12.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 49,
+          "rush_att": 1,
+          "rush_yd": 5,
+          "pts_ppr": 8.4
         }
       ]
     },
@@ -3077,6 +3300,15 @@
           "rec_yd": 24,
           "pts_ppr": 6.4,
           "snap_pct": 65.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 4,
+          "rec_yd": 48,
+          "pts_ppr": 8.8
         }
       ]
     },
@@ -3132,6 +3364,13 @@
           "off_snp": 10,
           "tm_off_snp": 77,
           "snap_pct": 13.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 3,
+          "tm_off_snp": 69,
+          "snap_pct": 4.3
         }
       ]
     },
@@ -3195,6 +3434,15 @@
           "rec_yd": 13,
           "pts_ppr": 2.3,
           "snap_pct": 51.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 13,
+          "pts_ppr": 2.3
         }
       ]
     },
@@ -3296,6 +3544,18 @@
           "pass_int": 2,
           "pts_ppr": 15.8,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 4,
+          "rush_yd": 13,
+          "pass_cmp": 13,
+          "pass_att": 22,
+          "pass_yd": 108,
+          "pass_int": 1,
+          "pts_ppr": 4.6
         }
       ]
     },
@@ -3362,6 +3622,18 @@
           "rec_yd": 11,
           "pts_ppr": 2.1,
           "snap_pct": 57.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 29,
+          "tm_off_snp": 54,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 56,
+          "rec_td": 1,
+          "pts_ppr": 14.6,
+          "snap_pct": 53.7
         }
       ]
     },
@@ -3429,6 +3701,16 @@
           "rec_yd": 7,
           "pts_ppr": 1.7,
           "snap_pct": 2.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 35,
+          "rec_td": 1,
+          "pts_ppr": 13.5
         }
       ]
     },
@@ -3497,6 +3779,19 @@
           "rush_yd": 31,
           "pts_ppr": 3.0,
           "snap_pct": 23.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 13,
+          "tm_off_snp": 54,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 14,
+          "rush_att": 3,
+          "rush_yd": 9,
+          "pts_ppr": 4.3,
+          "snap_pct": 24.1
         }
       ]
     },
@@ -3573,6 +3868,14 @@
           "tm_off_snp": 66,
           "rec_tgt": 2,
           "snap_pct": 39.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 10,
+          "pts_ppr": 2.0
         }
       ]
     },
@@ -3667,6 +3970,21 @@
           "rush_td": 2,
           "pts_ppr": 23.0,
           "snap_pct": 58.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 59,
+          "tm_off_snp": 69,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 12,
+          "rush_att": 22,
+          "rush_yd": 78,
+          "rush_td": 1,
+          "pts_ppr": 19.0,
+          "snap_pct": 85.5
         }
       ]
     },
@@ -3762,6 +4080,18 @@
           "pass_int": 1,
           "pts_ppr": 13.0,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 2,
+          "pass_cmp": 23,
+          "pass_att": 30,
+          "pass_yd": 287,
+          "pass_td": 3,
+          "pass_int": 1,
+          "pts_ppr": 24.5
         }
       ]
     },
@@ -3830,6 +4160,16 @@
           "rush_yd": 57,
           "pts_ppr": 5.7,
           "snap_pct": 17.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 6,
+          "tm_off_snp": 54,
+          "rush_att": 4,
+          "rush_yd": 13,
+          "pts_ppr": 1.3,
+          "snap_pct": 11.1
         }
       ]
     },
@@ -3894,6 +4234,17 @@
           "rush_yd": 14,
           "pts_ppr": 4.3,
           "snap_pct": 40.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 14,
+          "rush_att": 5,
+          "rush_yd": 41,
+          "rush_td": 1,
+          "pts_ppr": 14.5
         }
       ]
     },
@@ -4268,6 +4619,18 @@
           "rec_yd": 39,
           "pts_ppr": 6.9,
           "snap_pct": 96.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 65,
+          "tm_off_snp": 69,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 69,
+          "pts_ppr": 10.9,
+          "snap_pct": 94.2
         }
       ]
     },
@@ -4351,6 +4714,17 @@
           "rec_yd": 32,
           "pts_ppr": 7.2,
           "snap_pct": 91.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 8,
+          "rec": 4,
+          "rec_yd": 55,
+          "rush_att": 2,
+          "rush_yd": 11,
+          "pts_ppr": 10.6
         }
       ]
     },
@@ -4449,6 +4823,17 @@
           "pass_int": 1,
           "pts_ppr": 21.2,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "pass_cmp": 27,
+          "pass_att": 45,
+          "pass_yd": 274,
+          "pass_td": 2,
+          "pass_int": 1,
+          "pts_ppr": 18.0
         }
       ]
     },
@@ -4534,6 +4919,14 @@
           "rec_yd": 24,
           "pts_ppr": 4.4,
           "snap_pct": 34.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 20,
+          "pts_ppr": 4.0
         }
       ]
     },
@@ -4585,6 +4978,14 @@
           "rec_yd": 25,
           "pts_ppr": 5.5,
           "snap_pct": 52.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 26,
+          "pts_ppr": 5.6
         }
       ]
     },
@@ -4694,6 +5095,15 @@
           "rec_yd": 18,
           "pts_ppr": 3.8,
           "snap_pct": 46.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 48,
+          "tm_off_snp": 69,
+          "rec_tgt": 2,
+          "snap_pct": 69.6
         }
       ]
     },
@@ -4844,6 +5254,15 @@
           "rec_yd": 37,
           "pts_ppr": 7.7,
           "snap_pct": 91.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 27,
+          "pts_ppr": 6.7
         }
       ]
     },
@@ -4887,6 +5306,11 @@
           "off_snp": 20,
           "tm_off_snp": 71,
           "snap_pct": 28.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -5043,6 +5467,12 @@
           "rec_yd": 20,
           "pts_ppr": 4.0,
           "snap_pct": 51.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3
         }
       ]
     },
@@ -5138,6 +5568,18 @@
           "pass_int": 1,
           "pts_ppr": 19.5,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 3,
+          "rush_yd": 6,
+          "pass_cmp": 26,
+          "pass_att": 44,
+          "pass_yd": 295,
+          "pass_td": 2,
+          "pts_ppr": 20.4
         }
       ]
     },
@@ -5273,6 +5715,14 @@
           "off_snp": 30,
           "tm_off_snp": 62,
           "snap_pct": 48.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 14,
+          "pts_ppr": 2.4
         }
       ]
     },
@@ -5452,6 +5902,15 @@
           "rec_td": 1,
           "pts_ppr": 23.9,
           "snap_pct": 90.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 12,
+          "pts_ppr": 3.2
         }
       ]
     },
@@ -5536,6 +5995,18 @@
           "pass_int": 1,
           "pts_ppr": 11.5,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 2,
+          "rush_yd": 14,
+          "pass_cmp": 19,
+          "pass_att": 33,
+          "pass_yd": 165,
+          "pass_int": 1,
+          "pts_ppr": 7.0
         }
       ]
     },
@@ -5733,6 +6204,16 @@
           "rec_td": 1,
           "pts_ppr": 19.7,
           "snap_pct": 89.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 5,
+          "rec_yd": 62,
+          "rec_td": 1,
+          "pts_ppr": 17.2
         }
       ]
     },
@@ -6022,6 +6503,16 @@
           "rec_yd": 22,
           "pts_ppr": 4.2,
           "snap_pct": 69.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 6,
+          "rec_yd": 148,
+          "rec_td": 1,
+          "pts_ppr": 26.8
         }
       ]
     },
@@ -6092,6 +6583,15 @@
           "rec_td": 1,
           "pts_ppr": 19.8,
           "snap_pct": 89.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 18,
+          "pts_ppr": 2.8
         }
       ]
     },
@@ -6173,6 +6673,15 @@
           "off_snp": 3,
           "tm_off_snp": 55,
           "snap_pct": 5.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 2,
+          "rec_td": 1,
+          "pts_ppr": 8.2
         }
       ]
     },
@@ -6250,6 +6759,18 @@
           "rec_td": 1,
           "pts_ppr": 19.6,
           "snap_pct": 58.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 35,
+          "tm_off_snp": 54,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 23,
+          "pts_ppr": 5.3,
+          "snap_pct": 64.8
         }
       ]
     },
@@ -6309,6 +6830,15 @@
           "rec_yd": 9,
           "pts_ppr": 1.9,
           "snap_pct": 63.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 2,
+          "rec_yd": 14,
+          "pts_ppr": 3.4
         }
       ]
     },
@@ -6440,6 +6970,21 @@
           "rec_yd": 95,
           "pts_ppr": 17.5,
           "snap_pct": 39.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 42,
+          "tm_off_snp": 69,
+          "rec_tgt": 4,
+          "rec": 4,
+          "rec_yd": 130,
+          "rec_td": 1,
+          "rush_att": 1,
+          "rush_yd": 7,
+          "pts_ppr": 23.7,
+          "snap_pct": 60.9
         }
       ]
     },
@@ -6831,6 +7376,18 @@
           "pass_int": 1,
           "pts_ppr": 17.0,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 3,
+          "rush_yd": 6,
+          "pass_cmp": 19,
+          "pass_att": 30,
+          "pass_yd": 212,
+          "pass_td": 1,
+          "pts_ppr": 13.1
         }
       ]
     },
@@ -7087,6 +7644,19 @@
           "pass_td": 3,
           "pts_ppr": 27.0,
           "snap_pct": 97.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 3,
+          "rush_yd": 7,
+          "pass_cmp": 30,
+          "pass_att": 38,
+          "pass_yd": 278,
+          "pass_td": 1,
+          "pass_int": 1,
+          "pts_ppr": 14.8
         }
       ]
     },
@@ -7158,6 +7728,18 @@
           "pass_int": 1,
           "pts_ppr": 12.3,
           "snap_pct": 94.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 1,
+          "rush_yd": 1,
+          "pass_cmp": 7,
+          "pass_att": 11,
+          "pass_yd": 64,
+          "pass_td": 1,
+          "pts_ppr": 6.7
         }
       ]
     },
@@ -7360,6 +7942,11 @@
           "rec_yd": 12,
           "pts_ppr": 3.2,
           "snap_pct": 29.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2
         }
       ]
     },
@@ -7436,6 +8023,14 @@
           "rec_yd": 12,
           "pts_ppr": 2.2,
           "snap_pct": 35.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 6,
+          "pts_ppr": 1.6
         }
       ]
     },
@@ -7471,6 +8066,31 @@
           "rush_yd": 18,
           "pts_ppr": 1.8,
           "snap_pct": 9.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 7,
+          "rush_yd": 52,
+          "rush_td": 1,
+          "pts_ppr": 11.2
+        }
+      ]
+    },
+    "Michael Carter": {
+      "name": "Michael Carter",
+      "pos": "RB",
+      "team": "TEN",
+      "games": [
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 7,
+          "rush_att": 3,
+          "rush_yd": 7,
+          "pts_ppr": 2.4
         }
       ]
     },
@@ -7554,6 +8174,15 @@
           "rec_yd": 64,
           "pts_ppr": 9.4,
           "snap_pct": 88.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 8,
+          "rec": 5,
+          "rec_yd": 57,
+          "pts_ppr": 10.7
         }
       ]
     },
@@ -7788,6 +8417,14 @@
           "rec_yd": 33,
           "pts_ppr": 8.3,
           "snap_pct": 62.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 17,
+          "pts_ppr": 2.7
         }
       ]
     },
@@ -7859,6 +8496,14 @@
           "rec_yd": 22,
           "pts_ppr": 4.2,
           "snap_pct": 82.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 14,
+          "pts_ppr": 3.4
         }
       ]
     },
@@ -8006,6 +8651,15 @@
           "rush_yd": 5,
           "pts_ppr": 10.9,
           "snap_pct": 73.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 2,
+          "rec_yd": 6,
+          "pts_ppr": 2.6
         }
       ]
     },
@@ -8106,6 +8760,19 @@
           "pass_td": 2,
           "pts_ppr": 19.8,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 1,
+          "rush_yd": 9,
+          "pass_cmp": 14,
+          "pass_att": 27,
+          "pass_yd": 163,
+          "pass_td": 1,
+          "pass_int": 2,
+          "pts_ppr": 7.4
         }
       ]
     },
@@ -8204,6 +8871,14 @@
           "rush_td": 1,
           "pts_ppr": 11.9,
           "snap_pct": 44.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rush_att": 15,
+          "rush_yd": 68,
+          "pts_ppr": 6.8
         }
       ]
     },
@@ -8250,6 +8925,16 @@
           "rec_yd": 19,
           "pts_ppr": 3.9,
           "snap_pct": 86.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 70,
+          "rec_td": 2,
+          "pts_ppr": 21.0
         }
       ]
     },
@@ -8297,6 +8982,16 @@
           "rush_yd": 40,
           "pts_ppr": 7.9,
           "snap_pct": 26.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 6,
+          "rec": 6,
+          "rec_yd": 45,
+          "rush_att": 9,
+          "rush_yd": 41,
+          "pts_ppr": 14.6
         }
       ]
     },
@@ -8410,6 +9105,19 @@
           "pass_td": 1,
           "pts_ppr": 13.4,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 3,
+          "rush_yd": 12,
+          "pass_cmp": 23,
+          "pass_att": 34,
+          "pass_yd": 298,
+          "pass_td": 1,
+          "pass_int": 1,
+          "pts_ppr": 16.1
         }
       ]
     },
@@ -8621,6 +9329,15 @@
           "rec_td": 2,
           "pts_ppr": 20.6,
           "snap_pct": 68.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 8,
+          "pts_ppr": 1.8
         }
       ]
     },
@@ -8705,6 +9422,16 @@
           "rec_yd": 37,
           "pts_ppr": 8.7,
           "snap_pct": 77.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 48,
+          "rec_td": 1,
+          "pts_ppr": 14.8
         }
       ]
     },
@@ -8849,6 +9576,17 @@
           "rush_yd": 78,
           "pts_ppr": 12.4,
           "snap_pct": 87.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 6,
+          "rec_yd": 30,
+          "rush_att": 17,
+          "rush_yd": 104,
+          "pts_ppr": 19.4
         }
       ]
     },
@@ -8971,6 +9709,15 @@
           "rec_yd": 44,
           "pts_ppr": 8.4,
           "snap_pct": 98.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 26,
+          "pts_ppr": 4.6
         }
       ]
     },
@@ -9158,6 +9905,14 @@
           "rush_yd": 26,
           "pts_ppr": 2.6,
           "snap_pct": 71.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 25,
+          "pts_ppr": 5.5
         }
       ]
     },
@@ -9212,6 +9967,11 @@
           "off_snp": 2,
           "tm_off_snp": 55,
           "snap_pct": 3.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -9233,6 +9993,13 @@
           "off_snp": 1,
           "tm_off_snp": 60,
           "snap_pct": 1.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 3,
+          "rush_yd": 6,
+          "pts_ppr": 0.6
         }
       ]
     },
@@ -9455,6 +10222,17 @@
           "rush_yd": 42,
           "pts_ppr": 14.0,
           "snap_pct": 27.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 8,
+          "rush_att": 17,
+          "rush_yd": 93,
+          "rush_td": 1,
+          "pts_ppr": 17.1
         }
       ]
     },
@@ -9527,6 +10305,14 @@
           "tm_off_snp": 46,
           "rec_tgt": 2,
           "snap_pct": 47.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4
         }
       ]
     },
@@ -9561,6 +10347,14 @@
           "off_snp": 17,
           "tm_off_snp": 60,
           "snap_pct": 28.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 5,
+          "pts_ppr": 1.5
         }
       ]
     },
@@ -9744,6 +10538,17 @@
           "rush_yd": 56,
           "pts_ppr": 10.1,
           "snap_pct": 77.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 15,
+          "rush_att": 19,
+          "rush_yd": 66,
+          "pts_ppr": 9.1
         }
       ]
     },
@@ -9956,6 +10761,17 @@
           "rush_yd": 38,
           "pts_ppr": 5.8,
           "snap_pct": 55.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 30,
+          "rush_att": 8,
+          "rush_yd": 19,
+          "pts_ppr": 7.9
         }
       ]
     },
@@ -10040,6 +10856,18 @@
           "rush_td": 1,
           "pts_ppr": 14.6,
           "snap_pct": 40.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 54,
+          "rec_td": 1,
+          "rush_att": 3,
+          "rush_yd": 6,
+          "pts_ppr": 14.0
         }
       ]
     },
@@ -10067,6 +10895,13 @@
           "rush_yd": 20,
           "pts_ppr": 2.9,
           "snap_pct": 10.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 5,
+          "rush_yd": 8,
+          "pts_ppr": 0.8
         }
       ]
     },
@@ -10131,6 +10966,17 @@
           "rush_yd": 9,
           "pts_ppr": 8.1,
           "snap_pct": 53.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 47,
+          "rush_att": 2,
+          "rush_yd": 4,
+          "pts_ppr": 8.1
         }
       ]
     },
@@ -10216,6 +11062,16 @@
           "rush_yd": 27,
           "pts_ppr": 2.7,
           "snap_pct": 22.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 2,
+          "rush_att": 11,
+          "rush_yd": 46,
+          "pts_ppr": 5.8
         }
       ]
     },
@@ -10417,6 +11273,17 @@
           "rush_yd": 58,
           "pts_ppr": 5.0,
           "snap_pct": 57.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 4,
+          "rush_att": 17,
+          "rush_yd": 45,
+          "pts_ppr": 5.9
         }
       ]
     },
@@ -10517,6 +11384,18 @@
           "pass_int": 1,
           "pts_ppr": 7.8,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 2,
+          "rush_yd": 5,
+          "pass_cmp": 20,
+          "pass_att": 31,
+          "pass_yd": 181,
+          "pass_int": 1,
+          "pts_ppr": 6.7
         }
       ]
     },
@@ -10563,6 +11442,11 @@
           "rec_yd": 27,
           "pts_ppr": 4.7,
           "snap_pct": 66.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -10624,6 +11508,18 @@
           "rec_yd": 80,
           "pts_ppr": 14.0,
           "snap_pct": 89.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 10,
+          "rec": 8,
+          "rec_yd": 68,
+          "rec_td": 1,
+          "rush_att": 2,
+          "rush_yd": 10,
+          "pts_ppr": 21.8
         }
       ]
     },
@@ -10893,6 +11789,16 @@
           "rush_yd": -4,
           "pts_ppr": -0.4,
           "snap_pct": 6.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 1,
+          "rush_yd": 15,
+          "pass_cmp": 3,
+          "pass_att": 4,
+          "pass_yd": 47,
+          "pts_ppr": 3.4
         }
       ]
     },
@@ -10974,6 +11880,16 @@
           "rec_td": 1,
           "pts_ppr": 12.5,
           "snap_pct": 70.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 4,
+          "rec_td": 1,
+          "pts_ppr": 7.4
         }
       ]
     },
@@ -11173,6 +12089,18 @@
           "rec_yd": 27,
           "pts_ppr": 5.7,
           "snap_pct": 76.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 49,
+          "tm_off_snp": 54,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 48,
+          "pts_ppr": 7.8,
+          "snap_pct": 90.7
         }
       ]
     },
@@ -11269,6 +12197,18 @@
           "rush_td": 2,
           "pts_ppr": 30.7,
           "snap_pct": 85.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 6,
+          "rec_yd": 61,
+          "rush_att": 7,
+          "rush_yd": 39,
+          "rush_td": 1,
+          "pts_ppr": 22.0
         }
       ]
     },
@@ -11434,6 +12374,18 @@
           "rush_yd": 76,
           "pts_ppr": 7.6,
           "snap_pct": 76.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 26,
+          "rush_att": 25,
+          "rush_yd": 129,
+          "rush_td": 3,
+          "pts_ppr": 36.5
         }
       ]
     },
@@ -11515,6 +12467,16 @@
           "rush_td": 1,
           "pts_ppr": 8.0,
           "snap_pct": 57.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 12,
+          "rush_att": 5,
+          "rush_yd": 11,
+          "pts_ppr": 3.3
         }
       ]
     },
@@ -11655,6 +12617,16 @@
           "rec_td": 2,
           "pts_ppr": 26.7,
           "snap_pct": 69.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 12,
+          "rec": 5,
+          "rec_yd": 103,
+          "rec_td": 1,
+          "pts_ppr": 21.3
         }
       ]
     },
@@ -11737,6 +12709,16 @@
           "rec_yd": 53,
           "pts_ppr": 12.3,
           "snap_pct": 97.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 13,
+          "rec": 10,
+          "rec_yd": 111,
+          "rec_td": 1,
+          "pts_ppr": 27.1
         }
       ]
     },
@@ -11951,6 +12933,18 @@
           "rec_td": 1,
           "pts_ppr": 14.8,
           "snap_pct": 76.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 41,
+          "tm_off_snp": 54,
+          "rec_tgt": 7,
+          "rec": 7,
+          "rec_yd": 71,
+          "pts_ppr": 14.1,
+          "snap_pct": 75.9
         }
       ]
     },
@@ -12159,6 +13153,14 @@
           "rec_yd": 13,
           "pts_ppr": 3.3,
           "snap_pct": 51.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 2,
+          "pts_ppr": 1.2
         }
       ]
     },
@@ -12346,6 +13348,17 @@
           "pass_int": 1,
           "pts_ppr": 17.3,
           "snap_pct": 40.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 1,
+          "rush_yd": 1,
+          "pass_cmp": 20,
+          "pass_att": 28,
+          "pass_yd": 252,
+          "pts_ppr": 10.2
         }
       ]
     },
@@ -12429,6 +13442,14 @@
           "rush_yd": 2,
           "pts_ppr": 11.8,
           "snap_pct": 45.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 1,
+          "pts_ppr": 2.1
         }
       ]
     },
@@ -12506,6 +13527,15 @@
           "rec_yd": 19,
           "pts_ppr": 3.9,
           "snap_pct": 93.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 83,
+          "pts_ppr": 12.3
         }
       ]
     },
@@ -12664,6 +13694,18 @@
           "rush_td": 1,
           "pts_ppr": 15.8,
           "snap_pct": 57.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 8,
+          "rec": 8,
+          "rec_yd": 61,
+          "rec_td": 1,
+          "rush_att": 8,
+          "rush_yd": 15,
+          "pts_ppr": 21.6
         }
       ]
     },
@@ -12785,6 +13827,15 @@
           "rush_yd": 1,
           "pts_ppr": 0.1,
           "snap_pct": 54.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 39,
+          "pts_ppr": 5.9
         }
       ]
     },
@@ -13120,6 +14171,17 @@
           "rush_yd": 34,
           "pts_ppr": 4.7,
           "snap_pct": 22.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": -4,
+          "rush_att": 12,
+          "rush_yd": 63,
+          "rush_td": 1,
+          "pts_ppr": 10.9
         }
       ]
     },
@@ -13198,6 +14260,17 @@
           "rush_td": 1,
           "pts_ppr": 14.8,
           "snap_pct": 65.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rush_att": 25,
+          "rush_yd": 103,
+          "rush_td": 1,
+          "pts_ppr": 17.3
         }
       ]
     },
@@ -13312,6 +14385,14 @@
           "tm_off_snp": 85,
           "rec_tgt": 1,
           "snap_pct": 18.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 17,
+          "pts_ppr": 2.7
         }
       ]
     },
@@ -13331,6 +14412,14 @@
           "rec_yd": 13,
           "pts_ppr": 2.3,
           "snap_pct": 68.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 3,
+          "pts_ppr": 1.3
         }
       ]
     },
@@ -13359,6 +14448,14 @@
           "off_snp": 8,
           "tm_off_snp": 66,
           "snap_pct": 12.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4
         }
       ]
     },
@@ -13491,6 +14588,17 @@
           "rush_td": 1,
           "pts_ppr": 18.5,
           "snap_pct": 37.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 2,
+          "rush_att": 6,
+          "rush_yd": 15,
+          "rush_td": 1,
+          "pts_ppr": 8.7
         }
       ]
     },
@@ -13660,6 +14768,16 @@
           "rec_yd": 13,
           "pts_ppr": 3.3,
           "snap_pct": 26.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 53,
+          "rush_att": 1,
+          "rush_yd": 3,
+          "pts_ppr": 7.6
         }
       ]
     },
@@ -13728,6 +14846,18 @@
           "pass_td": 3,
           "pts_ppr": 23.1,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 5,
+          "rush_yd": -1,
+          "pass_cmp": 25,
+          "pass_att": 34,
+          "pass_yd": 213,
+          "pass_td": 3,
+          "pts_ppr": 20.4
         }
       ]
     },
@@ -13806,6 +14936,15 @@
           "rec_td": 1,
           "pts_ppr": 19.0,
           "snap_pct": 73.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 5,
+          "rec_yd": 69,
+          "pts_ppr": 9.9
         }
       ]
     },
@@ -13869,6 +15008,15 @@
           "rec_td": 1,
           "pts_ppr": 7.4,
           "snap_pct": 44.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 6,
+          "rec_td": 1,
+          "pts_ppr": 7.6
         }
       ]
     },
@@ -13939,6 +15087,11 @@
           "rec_yd": 2,
           "pts_ppr": 1.2,
           "snap_pct": 51.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2
         }
       ]
     },
@@ -14101,6 +15254,12 @@
           "off_snp": 33,
           "tm_off_snp": 60,
           "snap_pct": 55.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -14195,6 +15354,17 @@
           "rush_yd": 61,
           "pts_ppr": 7.3,
           "snap_pct": 78.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 5,
+          "rec_yd": 59,
+          "rush_att": 20,
+          "rush_yd": 63,
+          "pts_ppr": 17.2
         }
       ]
     },
@@ -14486,6 +15656,14 @@
           "tm_off_snp": 66,
           "rec_tgt": 2,
           "snap_pct": 21.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4
         }
       ]
     },
@@ -14569,6 +15747,16 @@
           "rec_yd": 62,
           "pts_ppr": 12.2,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 10,
+          "rec": 7,
+          "rec_yd": 66,
+          "rec_td": 1,
+          "pts_ppr": 19.6
         }
       ]
     },
@@ -14650,6 +15838,15 @@
           "rec_yd": 165,
           "pts_ppr": 28.5,
           "snap_pct": 85.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 9,
+          "rec": 7,
+          "rec_yd": 111,
+          "pts_ppr": 18.1
         }
       ]
     },
@@ -14785,6 +15982,14 @@
           "off_snp": 29,
           "tm_off_snp": 77,
           "snap_pct": 37.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 29,
+          "pts_ppr": 3.9
         }
       ]
     },
@@ -14890,6 +16095,18 @@
           "pass_td": 4,
           "pts_ppr": 24.6,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 2,
+          "rush_yd": 12,
+          "pass_cmp": 22,
+          "pass_att": 30,
+          "pass_yd": 292,
+          "pass_td": 4,
+          "pts_ppr": 28.9
         }
       ]
     },
@@ -14957,6 +16174,14 @@
           "rec_yd": 73,
           "pts_ppr": 14.3,
           "snap_pct": 83.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 11,
+          "pts_ppr": 4.1
         }
       ]
     },
@@ -15123,6 +16348,15 @@
           "tm_off_snp": 58,
           "rush_att": 1,
           "snap_pct": 31.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 20,
+          "rec_td": 2,
+          "pts_ppr": 18.0
         }
       ]
     },
@@ -15214,6 +16448,15 @@
           "rec_yd": 3,
           "pts_ppr": 1.3,
           "snap_pct": 60.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 3,
+          "rec_yd": 44,
+          "pts_ppr": 7.4
         }
       ]
     },
@@ -15270,6 +16513,11 @@
           "off_snp": 25,
           "tm_off_snp": 75,
           "snap_pct": 33.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -15419,6 +16667,17 @@
           "rush_td": 2,
           "pts_ppr": 37.7,
           "snap_pct": 69.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 6,
+          "rec": 5,
+          "rec_yd": 27,
+          "rush_att": 29,
+          "rush_yd": 116,
+          "pts_ppr": 17.3
         }
       ]
     },
@@ -15500,6 +16759,18 @@
           "pass_td": 3,
           "pts_ppr": 28.9,
           "snap_pct": 95.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 2,
+          "rush_yd": -1,
+          "pass_cmp": 22,
+          "pass_att": 32,
+          "pass_yd": 303,
+          "pass_td": 2,
+          "pts_ppr": 18.0
         }
       ]
     },
@@ -15576,6 +16847,14 @@
           "rec_yd": 50,
           "pts_ppr": 10.0,
           "snap_pct": 84.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 20,
+          "pts_ppr": 4.0
         }
       ]
     },
@@ -15743,6 +17022,11 @@
           "off_snp": 1,
           "tm_off_snp": 66,
           "snap_pct": 1.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -15897,6 +17181,16 @@
           "rec_td": 2,
           "pts_ppr": 18.7,
           "snap_pct": 89.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 9,
+          "rec": 5,
+          "rec_yd": 91,
+          "rec_td": 2,
+          "pts_ppr": 26.1
         }
       ]
     },
@@ -15991,6 +17285,16 @@
           "rush_yd": 20,
           "pts_ppr": 2.0,
           "snap_pct": 36.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 4,
+          "rush_att": 1,
+          "rush_yd": 3,
+          "pts_ppr": 1.7
         }
       ]
     },
@@ -16074,6 +17378,15 @@
           "rec_td": 1,
           "pts_ppr": 17.9,
           "snap_pct": 88.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 10,
+          "rec": 8,
+          "rec_yd": 88,
+          "pts_ppr": 14.8
         }
       ]
     },
@@ -16138,6 +17451,15 @@
           "rec_yd": 34,
           "pts_ppr": 6.4,
           "snap_pct": 19.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 4,
+          "rec": 1,
+          "rec_yd": 6,
+          "rec_td": 1,
+          "pts_ppr": 7.6
         }
       ]
     },
@@ -16181,6 +17503,13 @@
           "off_snp": 18,
           "tm_off_snp": 68,
           "snap_pct": 26.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 4,
+          "tm_off_snp": 54,
+          "snap_pct": 7.4
         }
       ]
     },
@@ -16261,6 +17590,14 @@
           "pass_int": 2,
           "pts_ppr": 8.5,
           "snap_pct": 59.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 4,
+          "rush_yd": 4,
+          "rush_td": 1,
+          "pts_ppr": 6.4
         }
       ]
     },
@@ -16327,6 +17664,14 @@
           "rec_yd": 82,
           "pts_ppr": 16.2,
           "snap_pct": 71.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 31,
+          "pts_ppr": 6.1
         }
       ]
     },
@@ -16474,6 +17819,16 @@
           "rush_yd": -1,
           "pts_ppr": -0.1,
           "snap_pct": 3.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 17,
+          "rush_att": 6,
+          "rush_yd": 8,
+          "pts_ppr": 4.5
         }
       ]
     },
@@ -16614,6 +17969,19 @@
           "pass_td": 1,
           "pts_ppr": 17.4,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 2,
+          "rush_yd": 5,
+          "pass_cmp": 27,
+          "pass_att": 40,
+          "pass_yd": 288,
+          "pass_td": 1,
+          "pass_int": 2,
+          "pts_ppr": 14.0
         }
       ]
     },
@@ -16684,6 +18052,16 @@
           "rec_yd": 9,
           "pts_ppr": 0.9,
           "snap_pct": 34.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 9,
+          "rush_att": 1,
+          "rush_yd": 8,
+          "pts_ppr": 2.7
         }
       ]
     },
@@ -16834,6 +18212,14 @@
           "rec_td": 1,
           "pts_ppr": 8.9,
           "snap_pct": 50.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 12,
+          "pts_ppr": 3.2
         }
       ]
     },
@@ -16978,6 +18364,18 @@
           "rush_yd": 44,
           "pts_ppr": 8.0,
           "snap_pct": 52.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 8,
+          "rush_att": 17,
+          "rush_yd": 96,
+          "rush_td": 2,
+          "pts_ppr": 23.4
         }
       ]
     },
@@ -17023,6 +18421,15 @@
           "rec_yd": 22,
           "pts_ppr": 3.2,
           "snap_pct": 75.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 56,
+          "pts_ppr": 8.6
         }
       ]
     },
@@ -17124,6 +18531,14 @@
           "off_snp": 13,
           "tm_off_snp": 66,
           "snap_pct": 19.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 13,
+          "pts_ppr": 2.3
         }
       ]
     },
@@ -17207,6 +18622,16 @@
           "rush_td": 2,
           "pts_ppr": 27.9,
           "snap_pct": 73.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 21,
+          "rush_att": 14,
+          "rush_yd": 36,
+          "pts_ppr": 9.7
         }
       ]
     },
@@ -17381,6 +18806,17 @@
           "rec_yd": 69,
           "pts_ppr": 12.9,
           "snap_pct": 86.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 11,
+          "rec": 9,
+          "rec_yd": 153,
+          "rush_att": 1,
+          "rush_yd": -1,
+          "pts_ppr": 24.2
         }
       ]
     },
@@ -17429,6 +18865,14 @@
           "rec_yd": 27,
           "pts_ppr": 4.7,
           "snap_pct": 14.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 18,
+          "pts_ppr": 2.8
         }
       ]
     },
@@ -17496,6 +18940,15 @@
           "rec_yd": 15,
           "pts_ppr": 3.5,
           "snap_pct": 46.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 15,
+          "pts_ppr": 2.5
         }
       ]
     },
@@ -17510,6 +18963,14 @@
           "off_snp": 2,
           "tm_off_snp": 79,
           "snap_pct": 2.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 3,
+          "rush_yd": 23,
+          "rush_td": 1,
+          "pts_ppr": 8.3
         }
       ]
     },
@@ -17632,6 +19093,16 @@
           "rush_yd": 10,
           "pts_ppr": 1.0,
           "snap_pct": 40.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 15,
+          "rush_att": 6,
+          "rush_yd": 20,
+          "pts_ppr": 5.5
         }
       ]
     },
@@ -17703,6 +19174,14 @@
           "rush_yd": 68,
           "pts_ppr": 15.8,
           "snap_pct": 50.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 4,
+          "rush_yd": 16,
+          "rush_td": 1,
+          "pts_ppr": 7.6
         }
       ]
     },
@@ -17786,6 +19265,14 @@
           "rec_td": 1,
           "pts_ppr": 20.7,
           "snap_pct": 49.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": -3,
+          "pts_ppr": 1.7
         }
       ]
     },
@@ -17910,6 +19397,17 @@
           "rec_yd": 3,
           "pts_ppr": 2.3,
           "snap_pct": 74.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 38,
+          "tm_off_snp": 69,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 28,
+          "pts_ppr": 5.8,
+          "snap_pct": 55.1
         }
       ]
     },
@@ -17978,6 +19476,14 @@
           "rec_yd": 86,
           "pts_ppr": 14.6,
           "snap_pct": 75.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 40,
+          "pts_ppr": 8.0
         }
       ]
     },
@@ -18010,6 +19516,16 @@
           "rec_td": 1,
           "pts_ppr": 22.3,
           "snap_pct": 82.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 5,
+          "rec_yd": 115,
+          "rec_td": 1,
+          "pts_ppr": 22.5
         }
       ]
     },
@@ -18128,6 +19644,19 @@
           "pass_yd": 107,
           "pts_ppr": 4.5,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 7,
+          "rush_yd": 74,
+          "rush_td": 1,
+          "pass_cmp": 15,
+          "pass_att": 29,
+          "pass_yd": 222,
+          "pass_td": 1,
+          "pts_ppr": 26.3
         }
       ]
     },
@@ -18282,6 +19811,13 @@
           "rush_yd": 17,
           "pts_ppr": 3.4,
           "snap_pct": 14.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 14,
+          "rush_yd": 88,
+          "pts_ppr": 8.8
         }
       ]
     },
@@ -18387,6 +19923,16 @@
           "rec_yd": 5,
           "pts_ppr": 1.5,
           "snap_pct": 52.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 24,
+          "rec_td": 1,
+          "pts_ppr": 10.4
         }
       ]
     },
@@ -18519,6 +20065,20 @@
         }
       ]
     },
+    "Rasheen Ali": {
+      "name": "Rasheen Ali",
+      "pos": "RB",
+      "team": "BAL",
+      "games": [
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 4,
+          "rush_yd": 19,
+          "pts_ppr": 1.9
+        }
+      ]
+    },
     "Kyle Monangai": {
       "name": "Kyle Monangai",
       "pos": "RB",
@@ -18640,6 +20200,15 @@
           "rec_yd": 5,
           "pts_ppr": 1.5,
           "snap_pct": 26.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 57,
+          "pts_ppr": 8.7
         }
       ]
     },
@@ -18707,6 +20276,14 @@
           "rush_yd": 6,
           "pts_ppr": 4.4,
           "snap_pct": 29.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 17,
+          "pts_ppr": 3.7
         }
       ]
     },
@@ -19024,6 +20601,28 @@
           "rec_yd": 13,
           "pts_ppr": 2.3,
           "snap_pct": 45.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1
+        }
+      ]
+    },
+    "Dylan Sampson": {
+      "name": "Dylan Sampson",
+      "pos": "RB",
+      "team": "CLE",
+      "games": [
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 32,
+          "rush_att": 6,
+          "rush_yd": 45,
+          "pts_ppr": 10.7
         }
       ]
     },
@@ -19057,6 +20656,12 @@
           "rec_yd": 27,
           "pts_ppr": 3.7,
           "snap_pct": 2.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "pts_ppr": -2.0
         }
       ]
     },
@@ -19141,6 +20746,13 @@
           "pass_int": 2,
           "pts_ppr": 13.2,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 2,
+          "rush_yd": -3,
+          "pts_ppr": -0.3
         }
       ]
     },
@@ -19204,6 +20816,15 @@
           "rec_yd": 9,
           "pts_ppr": 1.9,
           "snap_pct": 21.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": -1,
+          "pts_ppr": 0.9
         }
       ]
     },
@@ -19287,6 +20908,17 @@
           "off_snp": 16,
           "tm_off_snp": 55,
           "snap_pct": 29.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 9,
+          "rush_att": 1,
+          "rush_yd": 3,
+          "pts_ppr": 2.2
         }
       ]
     },
@@ -19358,6 +20990,15 @@
           "off_snp": 33,
           "tm_off_snp": 46,
           "snap_pct": 71.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 24,
+          "pts_ppr": 5.4
         }
       ]
     },
@@ -19430,6 +21071,15 @@
           "tm_off_snp": 57,
           "rec_tgt": 1,
           "snap_pct": 29.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 33,
+          "pts_ppr": 5.3
         }
       ]
     },
@@ -19572,6 +21222,16 @@
           "rush_td": 1,
           "pts_ppr": 18.7,
           "snap_pct": 87.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rush_att": 8,
+          "rush_yd": 26,
+          "pts_ppr": 3.6
         }
       ]
     },
@@ -19699,6 +21359,15 @@
           "rec_yd": 97,
           "pts_ppr": 15.7,
           "snap_pct": 74.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 4,
+          "rec": 1,
+          "rec_yd": 9,
+          "pts_ppr": 1.9
         }
       ]
     },
@@ -19770,6 +21439,14 @@
           "rec_yd": 47,
           "pts_ppr": 9.7,
           "snap_pct": 56.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 9,
+          "pts_ppr": 3.9
         }
       ]
     },
@@ -19820,6 +21497,15 @@
           "rec_yd": 33,
           "pts_ppr": 7.3,
           "snap_pct": 54.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 6,
+          "rec": 5,
+          "rec_yd": 62,
+          "rec_td": 2,
+          "pts_ppr": 25.2
         }
       ]
     },
@@ -19902,6 +21588,18 @@
           "off_snp": 6,
           "tm_off_snp": 77,
           "snap_pct": 7.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": -3,
+          "rush_att": 17,
+          "rush_yd": 124,
+          "rush_td": 1,
+          "pts_ppr": 19.1
         }
       ]
     },
@@ -19981,6 +21679,17 @@
           "rec_yd": 10,
           "pts_ppr": 3.0,
           "snap_pct": 54.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 6,
+          "rec": 3,
+          "rec_yd": 17,
+          "rec_td": 1,
+          "rush_att": 2,
+          "rush_yd": 12,
+          "pts_ppr": 11.9
         }
       ]
     },
@@ -20158,6 +21867,14 @@
           "off_snp": 14,
           "tm_off_snp": 66,
           "snap_pct": 21.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 8,
+          "pts_ppr": 1.8
         }
       ]
     },
@@ -20267,6 +21984,13 @@
           "rec_yd": 25,
           "pts_ppr": 5.5,
           "snap_pct": 13.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 5,
+          "tm_off_snp": 69,
+          "snap_pct": 7.2
         }
       ]
     },
@@ -20349,6 +22073,16 @@
           "rec_yd": 16,
           "pts_ppr": 4.6,
           "snap_pct": 92.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 42,
+          "rush_att": 3,
+          "rush_yd": 4,
+          "pts_ppr": 8.6
         }
       ]
     },
@@ -20417,6 +22151,16 @@
           "rush_yd": 70,
           "pts_ppr": 9.0,
           "snap_pct": 44.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 22,
+          "rush_att": 8,
+          "rush_yd": 6,
+          "pts_ppr": 5.8
         }
       ]
     },
@@ -20567,6 +22311,21 @@
           "rush_yd": 36,
           "pts_ppr": 3.6,
           "snap_pct": 60.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 37,
+          "tm_off_snp": 54,
+          "rec_tgt": 5,
+          "rec": 5,
+          "rec_yd": 93,
+          "rec_td": 1,
+          "rush_att": 6,
+          "rush_yd": 22,
+          "pts_ppr": 22.5,
+          "snap_pct": 68.5
         }
       ]
     },
@@ -20634,6 +22393,15 @@
           "rec_yd": 12,
           "pts_ppr": 2.2,
           "snap_pct": 36.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 21,
+          "tm_off_snp": 54,
+          "rec_tgt": 1,
+          "snap_pct": 38.9
         }
       ]
     },
@@ -20729,6 +22497,18 @@
           "rush_yd": 50,
           "pts_ppr": 9.7,
           "snap_pct": 72.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 22,
+          "rush_att": 16,
+          "rush_yd": 99,
+          "rush_td": 1,
+          "pts_ppr": 18.1
         }
       ]
     },
@@ -20926,6 +22706,15 @@
           "rec_yd": 11,
           "pts_ppr": 3.1,
           "snap_pct": 72.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 20,
+          "pts_ppr": 4.0
         }
       ]
     },
@@ -21166,6 +22955,19 @@
           "pass_int": 2,
           "pts_ppr": 20.9,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 8,
+          "rush_yd": 37,
+          "rush_td": 1,
+          "pass_cmp": 14,
+          "pass_att": 21,
+          "pass_yd": 208,
+          "pass_td": 2,
+          "pts_ppr": 26.0
         }
       ]
     },
@@ -21233,6 +23035,13 @@
           "rush_yd": 11,
           "pts_ppr": 1.1,
           "snap_pct": 34.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 1,
+          "rush_yd": 5,
+          "pts_ppr": 0.5
         }
       ]
     },
@@ -21325,6 +23134,17 @@
           "rush_yd": 50,
           "pts_ppr": 9.8,
           "snap_pct": 74.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 36,
+          "rush_att": 18,
+          "rush_yd": 101,
+          "pts_ppr": 16.7
         }
       ]
     },
@@ -21626,6 +23446,15 @@
           "tm_off_snp": 72,
           "rec_tgt": 1,
           "snap_pct": 58.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 11,
+          "pts_ppr": 3.1
         }
       ]
     },
@@ -21733,6 +23562,17 @@
           "rush_yd": 39,
           "pts_ppr": 7.0,
           "snap_pct": 60.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 19,
+          "rush_att": 11,
+          "rush_yd": 39,
+          "pts_ppr": 9.8
         }
       ]
     },
@@ -21793,6 +23633,14 @@
           "off_snp": 18,
           "tm_off_snp": 75,
           "snap_pct": 24.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 4,
+          "pts_ppr": 1.4
         }
       ]
     },
@@ -21963,6 +23811,14 @@
           "rec_yd": 4,
           "pts_ppr": 1.4,
           "snap_pct": 71.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 4,
+          "rec": 3,
+          "rec_yd": 23,
+          "pts_ppr": 5.3
         }
       ]
     },
@@ -22128,6 +23984,15 @@
           "rec_yd": 6,
           "pts_ppr": 1.6,
           "snap_pct": 12.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 21,
+          "pts_ppr": 4.1
         }
       ]
     },
@@ -22187,6 +24052,15 @@
           "rush_yd": -11,
           "pts_ppr": 18.8,
           "snap_pct": 88.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 4,
+          "rec_yd": 44,
+          "pts_ppr": 8.4
         }
       ]
     },
@@ -22488,6 +24362,12 @@
           "rec_yd": 63,
           "pts_ppr": 12.3,
           "snap_pct": 82.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3
         }
       ]
     },
@@ -22604,6 +24484,15 @@
           "rec_td": 1,
           "pts_ppr": 25.7,
           "snap_pct": 93.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 27,
+          "pts_ppr": 5.7
         }
       ]
     },
@@ -22621,6 +24510,16 @@
           "rush_yd": 15,
           "pts_ppr": 1.5,
           "snap_pct": 15.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 11,
+          "rush_att": 1,
+          "rush_yd": 6,
+          "pts_ppr": 2.7
         }
       ]
     },
@@ -22702,6 +24601,15 @@
           "rec_td": 1,
           "pts_ppr": 14.3,
           "snap_pct": 58.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 10,
+          "rec": 6,
+          "rec_yd": 56,
+          "pts_ppr": 11.6
         }
       ]
     },
@@ -22780,6 +24688,14 @@
           "rush_yd": 43,
           "pts_ppr": 6.0,
           "snap_pct": 34.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rush_att": 6,
+          "rush_yd": 27,
+          "pts_ppr": 2.7
         }
       ]
     },
@@ -23012,6 +24928,15 @@
           "rush_yd": 7,
           "pts_ppr": 8.7,
           "snap_pct": 85.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 4,
+          "rec": 2,
+          "rec_yd": 18,
+          "pts_ppr": 3.8
         }
       ]
     },
@@ -23280,6 +25205,16 @@
           "rush_yd": 1,
           "pts_ppr": 12.7,
           "snap_pct": 87.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 11,
+          "rec": 8,
+          "rec_yd": 137,
+          "rec_td": 1,
+          "pts_ppr": 27.7
         }
       ]
     },
@@ -23341,6 +25276,14 @@
           "rec_yd": 37,
           "pts_ppr": 9.7,
           "snap_pct": 74.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 5,
+          "rec": 5,
+          "rec_yd": 86,
+          "pts_ppr": 13.6
         }
       ]
     },
@@ -23419,6 +25362,15 @@
           "rec_yd": 9,
           "pts_ppr": 1.9,
           "snap_pct": 90.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 9,
+          "rec": 6,
+          "rec_yd": 91,
+          "pts_ppr": 13.1
         }
       ]
     },
@@ -23517,6 +25469,14 @@
           "off_snp": 9,
           "tm_off_snp": 75,
           "snap_pct": 12.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 9,
+          "pts_ppr": 1.9
         }
       ]
     },
@@ -23599,6 +25559,15 @@
           "rec_yd": 15,
           "pts_ppr": 2.5,
           "snap_pct": 93.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 8,
+          "rec": 3,
+          "rec_yd": 27,
+          "pts_ppr": 5.7
         }
       ]
     },
@@ -23677,6 +25646,15 @@
           "rec_yd": 22,
           "pts_ppr": 5.2,
           "snap_pct": 58.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 6,
+          "rec": 4,
+          "rec_yd": 7,
+          "pts_ppr": 4.7
         }
       ]
     },
@@ -23705,6 +25683,16 @@
           "rush_td": 1,
           "pts_ppr": 14.8,
           "snap_pct": 40.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 15,
+          "rush_att": 9,
+          "rush_yd": 54,
+          "pts_ppr": 8.9
         }
       ]
     },
@@ -23777,6 +25765,14 @@
           "rec_yd": 40,
           "pts_ppr": 8.0,
           "snap_pct": 54.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 25,
+          "pts_ppr": 5.5
         }
       ]
     },
@@ -23834,6 +25830,15 @@
           "off_snp": 30,
           "tm_off_snp": 83,
           "snap_pct": 36.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 12,
+          "pts_ppr": 3.2
         }
       ]
     },
@@ -23971,6 +25976,15 @@
           "rec_yd": 19,
           "pts_ppr": 3.9,
           "snap_pct": 76.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 45,
+          "pts_ppr": 7.5
         }
       ]
     },
@@ -24018,6 +26032,16 @@
           "rush_yd": 80,
           "pts_ppr": 11.8,
           "snap_pct": 44.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 5,
+          "rec": 3,
+          "rec_yd": 15,
+          "rush_att": 7,
+          "rush_yd": 48,
+          "pts_ppr": 9.3
         }
       ]
     },
@@ -24100,6 +26124,17 @@
           "rush_td": 1,
           "pts_ppr": 19.1,
           "snap_pct": 93.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 4,
+          "rec_yd": 27,
+          "rush_att": 7,
+          "rush_yd": 33,
+          "pts_ppr": 10.0
         }
       ]
     },
@@ -24180,6 +26215,16 @@
           "rec_yd": 42,
           "pts_ppr": 7.2,
           "snap_pct": 91.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 5,
+          "rec": 5,
+          "rec_yd": 54,
+          "rec_td": 1,
+          "pts_ppr": 16.4
         }
       ]
     },
@@ -24471,6 +26516,15 @@
           "rec_yd": 95,
           "pts_ppr": 16.5,
           "snap_pct": 78.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 32,
+          "pts_ppr": 6.2
         }
       ]
     },
@@ -24539,6 +26593,16 @@
           "rush_td": 1,
           "pts_ppr": 14.5,
           "snap_pct": 40.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 10,
+          "tm_off_snp": 69,
+          "rush_att": 2,
+          "rush_yd": 13,
+          "pts_ppr": 1.3,
+          "snap_pct": 14.5
         }
       ]
     },
@@ -24613,6 +26677,14 @@
           "rec_yd": 21,
           "pts_ppr": 4.1,
           "snap_pct": 92.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 19,
+          "pts_ppr": 3.9
         }
       ]
     },
@@ -24665,6 +26737,21 @@
           "pass_yd": 305,
           "pass_td": 1,
           "pts_ppr": 16.5,
+          "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 69,
+          "tm_off_snp": 69,
+          "rush_att": 5,
+          "rush_yd": 18,
+          "pass_cmp": 22,
+          "pass_att": 33,
+          "pass_yd": 308,
+          "pass_td": 2,
+          "pts_ppr": 22.1,
           "snap_pct": 100.0
         }
       ]
@@ -24837,6 +26924,17 @@
           "rush_yd": 34,
           "pts_ppr": 14.9,
           "snap_pct": 26.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 7,
+          "rec_yd": 57,
+          "rush_att": 6,
+          "rush_yd": 5,
+          "pts_ppr": 13.2
         }
       ]
     },
@@ -24973,6 +27071,14 @@
           "rec_yd": 10,
           "pts_ppr": 4.0,
           "snap_pct": 43.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 2,
+          "pts_ppr": 1.2
         }
       ]
     },
@@ -25194,6 +27300,17 @@
           "rush_yd": 52,
           "pts_ppr": 5.2,
           "snap_pct": 31.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 15,
+          "rush_att": 24,
+          "rush_yd": 100,
+          "rush_td": 1,
+          "pts_ppr": 18.5
         }
       ]
     },
@@ -25298,6 +27415,18 @@
           "pass_int": 1,
           "pts_ppr": 7.9,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 7,
+          "rush_yd": 16,
+          "pass_cmp": 27,
+          "pass_att": 48,
+          "pass_yd": 272,
+          "pass_td": 1,
+          "pts_ppr": 16.5
         }
       ]
     },
@@ -25396,6 +27525,18 @@
           "pass_int": 1,
           "pts_ppr": 24.0,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 2,
+          "rush_yd": 4,
+          "pass_cmp": 17,
+          "pass_att": 28,
+          "pass_yd": 153,
+          "pass_td": 2,
+          "pts_ppr": 16.5
         }
       ]
     },
@@ -25466,6 +27607,15 @@
           "rec_yd": 28,
           "pts_ppr": 5.8,
           "snap_pct": 44.4
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 3,
+          "rec_yd": 17,
+          "pts_ppr": 4.7
         }
       ]
     },
@@ -25641,6 +27791,23 @@
         }
       ]
     },
+    "Tank Dell": {
+      "name": "Tank Dell",
+      "pos": "WR",
+      "team": "HOU",
+      "games": [
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 43,
+          "rush_att": 1,
+          "rush_yd": 2,
+          "pts_ppr": 5.5
+        }
+      ]
+    },
     "Marcus Mariota": {
       "name": "Marcus Mariota",
       "pos": "QB",
@@ -25789,6 +27956,14 @@
           "rec_yd": 53,
           "pts_ppr": 9.3,
           "snap_pct": 65.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 8,
+          "rec": 4,
+          "rec_yd": 44,
+          "pts_ppr": 8.4
         }
       ]
     },
@@ -25887,6 +28062,19 @@
           "pass_yd": 164,
           "pts_ppr": 9.5,
           "snap_pct": 101.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 3,
+          "rush_yd": 19,
+          "rush_td": 1,
+          "pass_cmp": 25,
+          "pass_att": 36,
+          "pass_yd": 308,
+          "pass_int": 1,
+          "pts_ppr": 19.2
         }
       ]
     },
@@ -25965,6 +28153,11 @@
           "off_snp": 8,
           "tm_off_snp": 66,
           "snap_pct": 12.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -26049,6 +28242,16 @@
           "tm_off_snp": 79,
           "rec_tgt": 2,
           "snap_pct": 45.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 1,
+          "rec_yd": 50,
+          "rec_td": 1,
+          "pts_ppr": 12.0
         }
       ]
     },
@@ -26107,6 +28310,14 @@
           "rec_yd": 30,
           "pts_ppr": 5.0,
           "snap_pct": 52.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 6,
+          "rec": 1,
+          "rec_yd": 35,
+          "pts_ppr": 4.5
         }
       ]
     },
@@ -26409,6 +28620,12 @@
           "rec_yd": 40,
           "pts_ppr": 7.0,
           "snap_pct": 50.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -26430,6 +28647,14 @@
           "off_snp": 41,
           "tm_off_snp": 79,
           "snap_pct": 51.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 24,
+          "pts_ppr": 4.4
         }
       ]
     },
@@ -26451,6 +28676,25 @@
           "off_snp": 1,
           "tm_off_snp": 64,
           "snap_pct": 1.6
+        }
+      ]
+    },
+    "Josh Jacobs": {
+      "name": "Josh Jacobs",
+      "pos": "RB",
+      "team": "GB",
+      "games": [
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 7,
+          "rec": 5,
+          "rec_yd": 55,
+          "rec_td": 1,
+          "rush_att": 11,
+          "rush_yd": 36,
+          "pts_ppr": 20.1
         }
       ]
     },
@@ -26593,6 +28837,15 @@
           "rec_yd": 70,
           "pts_ppr": 11.0,
           "snap_pct": 98.5
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 8,
+          "rec": 6,
+          "rec_yd": 73,
+          "pts_ppr": 13.3
         }
       ]
     },
@@ -26730,6 +28983,11 @@
           "rec_td": 1,
           "pts_ppr": 12.0,
           "snap_pct": 63.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1
         }
       ]
     },
@@ -26791,6 +29049,13 @@
           "off_snp": 24,
           "tm_off_snp": 77,
           "snap_pct": 31.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "off_snp": 14,
+          "tm_off_snp": 69,
+          "snap_pct": 20.3
         }
       ]
     },
@@ -26867,6 +29132,15 @@
           "rec_yd": 33,
           "pts_ppr": 7.3,
           "snap_pct": 39.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 6,
+          "rec": 5,
+          "rec_yd": 45,
+          "pts_ppr": 9.5
         }
       ]
     },
@@ -26915,6 +29189,14 @@
           "rush_yd": 11,
           "pts_ppr": 1.1,
           "snap_pct": 13.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rush_att": 6,
+          "rush_yd": 8,
+          "pts_ppr": 0.8
         }
       ]
     },
@@ -27025,6 +29307,14 @@
           "off_snp": 1,
           "tm_off_snp": 61,
           "snap_pct": 1.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 7,
+          "pts_ppr": 1.7
         }
       ]
     },
@@ -27080,6 +29370,17 @@
           "rush_yd": -1,
           "pts_ppr": 9.1,
           "snap_pct": 96.2
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 20,
+          "rush_att": 1,
+          "rush_yd": 3,
+          "pts_ppr": 4.3
         }
       ]
     },
@@ -27250,6 +29551,17 @@
           "rush_yd": 2,
           "pts_ppr": 7.9,
           "snap_pct": 82.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 10,
+          "rec": 8,
+          "rec_yd": 129,
+          "rush_att": 3,
+          "rush_yd": 23,
+          "pts_ppr": 23.2
         }
       ]
     },
@@ -27317,6 +29629,18 @@
           "pass_td": 1,
           "pts_ppr": 18.3,
           "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rush_att": 5,
+          "rush_yd": 39,
+          "pass_cmp": 14,
+          "pass_att": 24,
+          "pass_yd": 150,
+          "pass_td": 1,
+          "pts_ppr": 13.9
         }
       ]
     },
@@ -27395,6 +29719,15 @@
           "off_snp": 13,
           "tm_off_snp": 65,
           "snap_pct": 20.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 7,
+          "pts_ppr": 1.7
         }
       ]
     },
@@ -27583,6 +29916,14 @@
           "tm_off_snp": 72,
           "rec_tgt": 2,
           "snap_pct": 58.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 3,
+          "rec": 1,
+          "rec_yd": 7,
+          "pts_ppr": 1.7
         }
       ]
     },
@@ -27659,6 +30000,18 @@
           "rec_yd": 7,
           "pts_ppr": 2.7,
           "snap_pct": 33.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 2,
+          "rec": 2,
+          "rec_yd": 33,
+          "rec_td": 1,
+          "rush_att": 1,
+          "rush_yd": 14,
+          "pts_ppr": 12.7
         }
       ]
     },
@@ -27764,6 +30117,15 @@
           "rec_yd": 93,
           "pts_ppr": 20.3,
           "snap_pct": 94.9
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 6,
+          "rec": 2,
+          "rec_yd": 56,
+          "pts_ppr": 7.6
         }
       ]
     },
@@ -27941,6 +30303,14 @@
           "rush_yd": 7,
           "pts_ppr": 6.8,
           "snap_pct": 18.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": 11,
+          "pts_ppr": 2.1
         }
       ]
     },
@@ -28055,6 +30425,14 @@
           "rush_td": 1,
           "pts_ppr": 13.6,
           "snap_pct": 51.7
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rush_att": 6,
+          "rush_yd": 23,
+          "rush_td": 1,
+          "pts_ppr": 8.3
         }
       ]
     },
@@ -28150,6 +30528,18 @@
           "rush_td": 1,
           "pts_ppr": 21.1,
           "snap_pct": 78.3
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rec_yd": 15,
+          "rush_att": 18,
+          "rush_yd": 95,
+          "rush_td": 1,
+          "pts_ppr": 19.0
         }
       ]
     },
@@ -28249,6 +30639,23 @@
           "pass_yd": 235,
           "pass_td": 3,
           "pts_ppr": 23.8,
+          "snap_pct": 100.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "off_snp": 54,
+          "tm_off_snp": 54,
+          "rush_att": 4,
+          "rush_yd": 26,
+          "rush_td": 1,
+          "pass_cmp": 24,
+          "pass_att": 31,
+          "pass_yd": 321,
+          "pass_td": 2,
+          "pass_int": 1,
+          "pts_ppr": 28.4,
           "snap_pct": 100.0
         }
       ]
@@ -28462,6 +30869,15 @@
           "rush_yd": 5,
           "pts_ppr": 0.5,
           "snap_pct": 20.6
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 1,
+          "rec": 1,
+          "rec_yd": -1,
+          "rush_att": 1,
+          "pts_ppr": 2.9
         }
       ]
     },
@@ -28579,6 +30995,15 @@
           "rec_td": 1,
           "pts_ppr": 14.1,
           "snap_pct": 62.1
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 6,
+          "rec": 5,
+          "rec_yd": 48,
+          "pts_ppr": 9.8
         }
       ]
     },
@@ -28705,6 +31130,11 @@
           "rec_yd": 24,
           "pts_ppr": 4.4,
           "snap_pct": 73.8
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "rec_tgt": 2
         }
       ]
     },
@@ -28788,6 +31218,15 @@
           "rec_td": 1,
           "pts_ppr": 22.4,
           "snap_pct": 84.0
+        },
+        {
+          "week": 7,
+          "gp": 1,
+          "gs": 1,
+          "rec_tgt": 12,
+          "rec": 6,
+          "rec_yd": 39,
+          "pts_ppr": 9.9
         }
       ]
     }
