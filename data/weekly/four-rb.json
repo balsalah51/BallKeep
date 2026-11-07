@@ -1,75 +1,61 @@
 {
-  "week": 7,
+  "week": 9,
   "players": [
     {
       "name": "Jahmyr Gibbs",
       "rank": 1,
       "team": "DET",
-      "opp": "GB",
+      "opp": "@MIA",
       "sos": 29
     },
     {
       "name": "Bijan Robinson",
       "rank": 2,
       "team": "ATL",
-      "opp": "SF",
-      "sos": 11
+      "opp": "CIN",
+      "sos": 8
     },
     {
       "name": "Christian McCaffrey",
       "rank": 3,
       "team": "SF",
-      "opp": "@ATL",
-      "sos": 16
+      "opp": "LV",
+      "sos": 27
     },
     {
       "name": "Kenneth Walker",
       "rank": 4,
       "team": "KC",
-      "opp": "@SEA",
-      "sos": 25
-    },
-    {
-      "name": "Kyren Williams",
-      "rank": 5,
-      "team": "LAR",
-      "opp": "@LV",
-      "sos": 22
-    },
-    {
-      "name": "Derrick Henry",
-      "rank": 6,
-      "team": "BAL",
-      "opp": "CIN",
-      "sos": 15
-    },
-    {
-      "name": "Jonathan Taylor",
-      "rank": 7,
-      "team": "IND",
-      "opp": "@MIN",
-      "sos": 3
-    },
-    {
-      "name": "Braelon Allen",
-      "rank": 8,
-      "team": "NYJ",
-      "opp": "MIA",
-      "sos": 31
-    },
-    {
-      "name": "Jaylen Warren",
-      "rank": 9,
-      "team": "PIT",
-      "opp": "@NO",
-      "sos": 32
+      "opp": "NYJ",
+      "sos": 21
     },
     {
       "name": "D'Andre Swift",
-      "rank": 10,
+      "rank": 5,
       "team": "CHI",
-      "opp": "NE",
-      "sos": 17
+      "opp": "TB",
+      "sos": 1
+    },
+    {
+      "name": "Javonte Williams",
+      "rank": 6,
+      "team": "DAL",
+      "opp": "@IND",
+      "sos": 28
+    },
+    {
+      "name": "James Cook",
+      "rank": 7,
+      "team": "BUF",
+      "opp": "@MIN",
+      "sos": 4
+    },
+    {
+      "name": "Kyren Williams",
+      "rank": 8,
+      "team": "LAR",
+      "opp": "@WAS",
+      "sos": 9
     }
   ]
 }

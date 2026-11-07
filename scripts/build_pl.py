@@ -12,7 +12,8 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 27, 2026"
+from datetime import date as _date
+UPDATED = _date.today().strftime("%B %-d, %Y")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from pl_data import PL_SOURCES, bk_value, load_universe  # noqa: E402

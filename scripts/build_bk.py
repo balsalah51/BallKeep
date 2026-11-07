@@ -12,7 +12,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 27, 2026"
+from datetime import date as _date
+UPDATED = _date.today().strftime("%B %-d, %Y")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from bk_cats import plus_minus as bk_plus_minus  # noqa: E402
@@ -158,7 +159,7 @@ BK_SEO = {
     ),
     "the-keep.html": (
         "2026 Dynasty Basketball Rankings (Full Tape) | BasketKeep",
-        "Dynasty basketball full ranked tape, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board. BK Value starts at 12,000.",
+        f"Dynasty basketball full ranked tape, rebuilt {UPDATED}. 18-board aggregate. Wembanyama opens the board. BK Value starts at 12,000.",
         "img/bk-logo.jpg",
     ),
     "board.html": (
@@ -293,7 +294,7 @@ BK_HOME_FAQ = [
     ("Where is the NBA news?", "BK News on this board clusters injury, roster, and coach tape. The banner on the news page says when the last scrape landed."),
 ]
 BK_KEEP_FAQ = [
-    ("What is The Keep on BasketKeep?", "Dynasty basketball, the full ranked tape, rebuilt August 27, 2026. 18-board aggregate. Wembanyama opens the board."),
+    ("What is The Keep on BasketKeep?", f"Dynasty basketball, the full ranked tape, rebuilt {UPDATED}. 18-board aggregate. Wembanyama opens the board."),
     ("How does BK Value work here?", "Keep rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%. The Keep calculator uses this board."),
     ("What is The Board?", "This-year basketball redraft. Use it for 2026-27 startups. The Keep is dynasty."),
 ]

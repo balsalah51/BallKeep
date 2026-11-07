@@ -1,75 +1,75 @@
 {
-  "week": 7,
+  "week": 9,
   "players": [
     {
-      "name": "Jordan Love",
+      "name": "Josh Allen",
       "rank": 1,
-      "team": "GB",
-      "opp": "@DET",
-      "sos": 32
+      "team": "BUF",
+      "opp": "@MIN",
+      "sos": 1
     },
     {
       "name": "Brock Purdy",
       "rank": 2,
       "team": "SF",
-      "opp": "@ATL",
-      "sos": 16
-    },
-    {
-      "name": "Jared Goff",
-      "rank": 3,
-      "team": "DET",
-      "opp": "GB",
-      "sos": 10
-    },
-    {
-      "name": "Caleb Williams",
-      "rank": 4,
-      "team": "CHI",
-      "opp": "NE",
-      "sos": 2
-    },
-    {
-      "name": "Drake Maye",
-      "rank": 5,
-      "team": "NE",
-      "opp": "@CHI",
-      "sos": 25
+      "opp": "LV",
+      "sos": 26
     },
     {
       "name": "Joe Burrow",
-      "rank": 6,
+      "rank": 3,
       "team": "CIN",
-      "opp": "@BAL",
-      "sos": 20
+      "opp": "@ATL",
+      "sos": 11
     },
     {
-      "name": "C.J. Stroud",
-      "rank": 7,
-      "team": "HOU",
-      "opp": "NYG",
-      "sos": 28
+      "name": "Patrick Mahomes",
+      "rank": 4,
+      "team": "KC",
+      "opp": "NYJ",
+      "sos": 17
+    },
+    {
+      "name": "Caleb Williams",
+      "rank": 5,
+      "team": "CHI",
+      "opp": "TB",
+      "sos": 3
     },
     {
       "name": "Dak Prescott",
-      "rank": 8,
+      "rank": 6,
       "team": "DAL",
-      "opp": "@PHI",
-      "sos": 23
+      "opp": "@IND",
+      "sos": 21
     },
     {
-      "name": "Bryce Young",
+      "name": "Jayden Daniels",
+      "rank": 7,
+      "team": "WAS",
+      "opp": "LAR",
+      "sos": 10
+    },
+    {
+      "name": "Drake Maye",
+      "rank": 8,
+      "team": "NE",
+      "opp": "GB",
+      "sos": 6
+    },
+    {
+      "name": "Jared Goff",
       "rank": 9,
-      "team": "CAR",
-      "opp": "TB",
-      "sos": 7
+      "team": "DET",
+      "opp": "@MIA",
+      "sos": 20
     },
     {
-      "name": "Matthew Stafford",
+      "name": "Trevor Lawrence",
       "rank": 10,
-      "team": "LAR",
-      "opp": "@LV",
-      "sos": 26
+      "team": "JAX",
+      "opp": "@BAL",
+      "sos": 22
     }
   ]
 }
