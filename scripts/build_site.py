@@ -120,6 +120,24 @@ from week7_boards import (  # noqa: E402
     W7_MATCH_SOURCES,
     week7_matchups,
 )
+from week8_boards import (  # noqa: E402
+    W8_DST_FAQ,
+    W8_DST_SOURCES,
+    W8_K_FAQ,
+    W8_K_SOURCES,
+    W8_MATCH_FAQ,
+    W8_MATCH_SOURCES,
+    week8_matchups,
+)
+from week9_boards import (  # noqa: E402
+    W9_DST_FAQ,
+    W9_DST_SOURCES,
+    W9_K_FAQ,
+    W9_K_SOURCES,
+    W9_MATCH_FAQ,
+    W9_MATCH_SOURCES,
+    week9_matchups,
+)
 from idp_board import FENCE_MIXED_SOURCES, fence_board  # noqa: E402
 from bpl_schedule import bpl_games, bpl_schedule_parts  # noqa: E402
 from aggregate_protocol import (  # noqa: E402
@@ -2021,12 +2039,17 @@ def _point_also_to_live(items):
     lab = week_label(w)
     out = []
     for href, title, blurb in items:
-        if href == "week6-dst.html":
+        if href in ("week6-dst.html", "week7-dst.html", "week8-dst.html", "week9-dst.html"):
             href, title = week_href("dst", w), f"{lab} DST"
-        elif href == "week6-kickers.html":
+            blurb = "Official slate."
+        elif href in ("week6-kickers.html", "week7-kickers.html", "week8-kickers.html", "week9-kickers.html"):
             href, title = week_href("kickers", w), f"{lab} Kickers"
-        elif href == "week6-matchups.html":
+            blurb = "Official slate."
+        elif href in ("week6-matchups.html", "week7-matchups.html", "week8-matchups.html", "week9-matchups.html"):
             href, title = week_href("matchups", w), f"{lab} Predictions"
+            blurb = "This week's card."
+        elif href == "waiver.html" and "Week 6 Waivers" in title:
+            title = f"{lab} Waivers"
         out.append((href, title, blurb))
     return out
 
@@ -2040,6 +2063,12 @@ for _also_path in (
     "week3-dst.html", "week3-kickers.html", "week3-matchups.html",
     "week4-dst.html", "week4-kickers.html", "week4-matchups.html",
     "week5-dst.html", "week5-kickers.html", "week5-matchups.html",
+    "week6-dst.html", "week6-kickers.html", "week6-matchups.html",
+    "week7-dst.html", "week7-kickers.html", "week7-matchups.html",
+    "week8-dst.html", "week8-kickers.html", "week8-matchups.html",
+    "week9-dst.html", "week9-kickers.html", "week9-matchups.html",
+    "the-recap.html", "the-market.html", "waiver.html",
+    "weekly-qb.html", "weekly-rb.html", "weekly-wr.html", "weekly-te.html",
 ):
     if _also_path in FB_ALSO:
         FB_ALSO[_also_path] = _point_also_to_live(FB_ALSO[_also_path])
@@ -2062,16 +2091,53 @@ FB_ALSO["week7-matchups.html"] = [
     (week_href("kickers"), f"{week_label()} Kickers", "Official slate."),
     ("weekly.html", "Weekly", "Skill start/sit."),
 ]
-if live_week() == 7:
-    for _old, _new in (
-        ("week7-dst.html", week_href("dst")),
-        ("week7-kickers.html", week_href("kickers")),
-        ("week7-matchups.html", week_href("matchups")),
-    ):
-        if _old in FB_SEO:
-            FB_SEO[_new] = FB_SEO[_old]
-        if _old in FB_ALSO:
-            FB_ALSO[_new] = FB_ALSO[_old]
+FB_ALSO["week8-dst.html"] = [
+    ("week7-dst.html", "Week 7 DST", "Finished slate."),
+    (week_href("kickers"), f"{week_label()} Kickers", "Official slate."),
+    (week_href("matchups"), f"{week_label()} Predictions", "Official slate."),
+    ("defenses.html", "Top Defenses", "Season-long DST."),
+]
+FB_ALSO["week8-kickers.html"] = [
+    ("week7-kickers.html", "Week 7 Kickers", "Finished slate."),
+    (week_href("dst"), f"{week_label()} DST", "Official slate."),
+    (week_href("matchups"), f"{week_label()} Predictions", "Official slate."),
+    ("kickers.html", "Top Kickers", "Season-long K."),
+]
+FB_ALSO["week8-matchups.html"] = [
+    ("week7-matchups.html", "Week 7 Predictions", "Finished slate."),
+    (week_href("dst"), f"{week_label()} DST", "Official slate."),
+    (week_href("kickers"), f"{week_label()} Kickers", "Official slate."),
+    ("weekly.html", "Weekly", "Skill start/sit."),
+]
+FB_ALSO["week9-dst.html"] = [
+    ("week8-dst.html", "Week 8 DST", "Finished slate."),
+    (week_href("kickers"), f"{week_label()} Kickers", "Official slate."),
+    (week_href("matchups"), f"{week_label()} Predictions", "Official slate."),
+    ("defenses.html", "Top Defenses", "Season-long DST."),
+]
+FB_ALSO["week9-kickers.html"] = [
+    ("week8-kickers.html", "Week 8 Kickers", "Finished slate."),
+    (week_href("dst"), f"{week_label()} DST", "Official slate."),
+    (week_href("matchups"), f"{week_label()} Predictions", "Official slate."),
+    ("kickers.html", "Top Kickers", "Season-long K."),
+]
+FB_ALSO["week9-matchups.html"] = [
+    ("week8-matchups.html", "Week 8 Predictions", "Finished slate."),
+    (week_href("dst"), f"{week_label()} DST", "Official slate."),
+    (week_href("kickers"), f"{week_label()} Kickers", "Official slate."),
+    ("weekly.html", "Weekly", "Skill start/sit."),
+]
+for _live_wk, _prev_wk in ((7, 6), (8, 7), (9, 8)):
+    if live_week() == _live_wk:
+        for _old, _new in (
+            (f"week{_live_wk}-dst.html", week_href("dst")),
+            (f"week{_live_wk}-kickers.html", week_href("kickers")),
+            (f"week{_live_wk}-matchups.html", week_href("matchups")),
+        ):
+            if _old in FB_SEO:
+                FB_SEO[_new] = FB_SEO[_old]
+            if _old in FB_ALSO:
+                FB_ALSO[_new] = FB_ALSO[_old]
 
 
 def page(title, path, body, extra_js="", depth=0, description=None, image=None, doc_title=None,
@@ -4684,9 +4750,8 @@ def main():
     <p class="note">Published Week 7 defense boards are not on this rebuild. Season-long D lives on <a href="defenses.html">The D</a>. The finished Week 6 stream sits on <a href="week6-dst.html">Week 6 DST</a>.</p>
     {faq_html(W7_DST_FAQ, heading="How Week 7 DST is built.")}
     """
-    w7_dst_path = week_href("dst") if live_week() == 7 else "week7-dst.html"
     publish_week_file(7, "dst", board_page(
-        "Week 7 DST", w7_dst_path, w7_dst_body,
+        "Week 7 DST", "week7-dst.html", w7_dst_body,
         extra_jsonld=[faq_jsonld(W7_DST_FAQ)],
     ))
     w7_k_body = f"""
@@ -4695,9 +4760,8 @@ def main():
     <p class="note">Published Week 7 kicker boards are not on this rebuild. Season-long K lives on <a href="kickers.html">Top Kickers</a>. The finished Week 6 stream sits on <a href="week6-kickers.html">Week 6 Kickers</a>.</p>
     {faq_html(W7_K_FAQ, heading="How Week 7 Kickers is built.")}
     """
-    w7_k_path = week_href("kickers") if live_week() == 7 else "week7-kickers.html"
     publish_week_file(7, "kickers", board_page(
-        "Week 7 Kickers", w7_k_path, w7_k_body,
+        "Week 7 Kickers", "week7-kickers.html", w7_k_body,
         extra_jsonld=[faq_jsonld(W7_K_FAQ)],
     ))
     write_week_matchups(
@@ -4713,7 +4777,77 @@ def main():
         ),
         heading="Boards in This Aggregate",
     )
-    write_unbuilt_live_pages(7)
+
+    w8_match = week8_matchups()
+    w8_dst_body = f"""
+    <p class="kicker">2026 Week 8 · Official slate</p>
+    <h1>Week 8 DST</h1>
+    <p class="note">Published Week 8 defense boards are not on this rebuild. Season-long D lives on <a href="defenses.html">The D</a>. The finished Week 7 slate sits on <a href="week7-dst.html">Week 7 DST</a>.</p>
+    {faq_html(W8_DST_FAQ, heading="How Week 8 DST is built.")}
+    """
+    publish_week_file(8, "dst", board_page(
+        "Week 8 DST", "week8-dst.html", w8_dst_body,
+        extra_jsonld=[faq_jsonld(W8_DST_FAQ)],
+    ))
+    w8_k_body = f"""
+    <p class="kicker">2026 Week 8 · Official slate</p>
+    <h1>Week 8 Kickers</h1>
+    <p class="note">Published Week 8 kicker boards are not on this rebuild. Season-long K lives on <a href="kickers.html">Top Kickers</a>. The finished Week 7 slate sits on <a href="week7-kickers.html">Week 7 Kickers</a>.</p>
+    {faq_html(W8_K_FAQ, heading="How Week 8 Kickers is built.")}
+    """
+    publish_week_file(8, "kickers", board_page(
+        "Week 8 Kickers", "week8-kickers.html", w8_k_body,
+        extra_jsonld=[faq_jsonld(W8_K_FAQ)],
+    ))
+    write_week_matchups(
+        8,
+        w8_match,
+        W8_MATCH_SOURCES,
+        W8_MATCH_FAQ,
+        (
+            "Official Week 8 slate. Thursday was Carolina at Green Bay. Sunday night is Philadelphia "
+            "at Washington. Monday is Chicago at Seattle. Houston, New Orleans, the Giants, and "
+            f"San Francisco are on bye. The finished Week 7 card lives on "
+            f"<a href=\"week7-matchups.html\">Week 7 Predictions</a>."
+        ),
+        heading="Boards in This Aggregate",
+    )
+
+    w9_match = week9_matchups()
+    w9_dst_body = f"""
+    <p class="kicker">2026 Week 9 · Official slate</p>
+    <h1>Week 9 DST</h1>
+    <p class="note">Published Week 9 defense boards are not on this rebuild. Season-long D lives on <a href="defenses.html">The D</a>. The finished Week 8 slate sits on <a href="week8-dst.html">Week 8 DST</a>.</p>
+    {faq_html(W9_DST_FAQ, heading="How Week 9 DST is built.")}
+    """
+    publish_week_file(9, "dst", board_page(
+        "Week 9 DST", week_href("dst") if live_week() == 9 else "week9-dst.html", w9_dst_body,
+        extra_jsonld=[faq_jsonld(W9_DST_FAQ)],
+    ))
+    w9_k_body = f"""
+    <p class="kicker">2026 Week 9 · Official slate</p>
+    <h1>Week 9 Kickers</h1>
+    <p class="note">Published Week 9 kicker boards are not on this rebuild. Season-long K lives on <a href="kickers.html">Top Kickers</a>. The finished Week 8 slate sits on <a href="week8-kickers.html">Week 8 Kickers</a>.</p>
+    {faq_html(W9_K_FAQ, heading="How Week 9 Kickers is built.")}
+    """
+    publish_week_file(9, "kickers", board_page(
+        "Week 9 Kickers", week_href("kickers") if live_week() == 9 else "week9-kickers.html", w9_k_body,
+        extra_jsonld=[faq_jsonld(W9_K_FAQ)],
+    ))
+    write_week_matchups(
+        9,
+        w9_match,
+        W9_MATCH_SOURCES,
+        W9_MATCH_FAQ,
+        (
+            "Official Week 9 slate. Thursday was Jacksonville at Baltimore. Sunday features "
+            "Cincinnati vs. Atlanta in Madrid. Monday is Buffalo at Minnesota. Pittsburgh and Tennessee "
+            f"are on bye. The finished Week 8 card lives on "
+            f"<a href=\"week8-matchups.html\">Week 8 Predictions</a>."
+        ),
+        heading="Boards in This Aggregate",
+    )
+    write_unbuilt_live_pages(9)
     w1_pack = write_week1_archive(sys.modules[__name__], media)
     w1_dst = w1_pack["dst"]
     w1_kickers = w1_pack["kickers"]
@@ -5012,6 +5146,15 @@ def main():
         "https://ballkeep.com/week6-dst.html",
         "https://ballkeep.com/week6-kickers.html",
         "https://ballkeep.com/week6-matchups.html",
+        "https://ballkeep.com/week7-dst.html",
+        "https://ballkeep.com/week7-kickers.html",
+        "https://ballkeep.com/week7-matchups.html",
+        "https://ballkeep.com/week8-dst.html",
+        "https://ballkeep.com/week8-kickers.html",
+        "https://ballkeep.com/week8-matchups.html",
+        "https://ballkeep.com/week9-dst.html",
+        "https://ballkeep.com/week9-kickers.html",
+        "https://ballkeep.com/week9-matchups.html",
         "https://ballkeep.com/week-dst.html",
         "https://ballkeep.com/week-kickers.html",
         "https://ballkeep.com/week-matchups.html",

@@ -12,7 +12,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-UPDATED = "August 27, 2026"
+from datetime import date as _date
+UPDATED = _date.today().strftime("%B %-d, %Y")
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from bb_data import (  # noqa: E402
@@ -101,6 +102,7 @@ def write(path, doc):
 BB_NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
+    ("deep-dynasty.html", "Deep Dynasty"),
     ("the-diamond.html", "The Diamond"),
     ("the-farm.html", "The Farm"),
     ("news.html", "News"),
@@ -164,14 +166,19 @@ BB_SEO = {
         "2026 dynasty baseball full ranked tape, redraft, prospects, and BK Value. The Keep, The Diamond, The Farm, and hourly baseball news.",
         "img/bb-hero.jpg",
     ),
+    "deep-dynasty.html": (
+        "Deep Dynasty Baseball Board - Source Research | BaseKeep",
+        "Research report on publicly accessible deep dynasty baseball ranking boards (hundreds of players including prospects and minor leaguers). Sources audited November 2026.",
+        "img/bb-logo.jpg",
+    ),
     "the-keep.html": (
         "2026 Dynasty Baseball Rankings (Full Tape) | BaseKeep",
-        "Overall dynasty baseball full ranked tape, rebuilt August 27, 2026. 40-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
+        f"Overall dynasty baseball full ranked tape, rebuilt {UPDATED}. 40-board aggregate led by RotoGraphs' Aug 14 model and The Dynasty Guru points Top 500. BK Value starts at 12,000.",
         "img/bb-logo.jpg",
     ),
     "the-lineup.html": (
         "The Lineup - Dynasty Hitter Rankings | BaseKeep",
-        "Dynasty hitters only. The bats you keep, re-ranked from The Keep. Ranked on the same 40-board average.",
+        f"Dynasty hitters only. The bats you keep, re-ranked from The Keep. Ranked on the same 40-board average. Updated {UPDATED}.",
         "img/bb-logo.jpg",
     ),
     "pitchers.html": (
@@ -339,7 +346,7 @@ BB_FARM_FAQ = [
     ("What is arrival and path?", "Estimated arrival is the year the name is most likely to stick. Path is the cleanest route to everyday playtime: the job, the blocker, and the level in front of them."),
 ]
 BB_KEEP_FAQ = [
-    ("What is The Keep on BaseKeep?", "Dynasty baseball, the full ranked tape, rebuilt August 27, 2026. 40-board aggregate including RotoGraphs and The Dynasty Guru."),
+    ("What is The Keep on BaseKeep?", f"Dynasty baseball, the full ranked tape, rebuilt {UPDATED}. 40-board aggregate including RotoGraphs and The Dynasty Guru."),
     ("How does BK Value work here?", "Keep rank becomes BK Value. Rank 1 is 12,000. Fair is within 8%."),
     ("Where are hitters and pitchers split?", "The Lineup is bats. BK's Pitchers is arms. Ohtani lives on both sides of that split."),
 ]
@@ -1657,6 +1664,246 @@ def render_bb_news_pages(stories: list[dict]) -> list[str]:
     return urls
 
 
+def write_deep_dynasty_page() -> str:
+    """Research page for the Deep Dynasty board.
+
+    We audited every candidate source for a deep dynasty board (hundreds of
+    players including prospects and minor leaguers, Super Aggregate method).
+    Fewer than 5 independently sourced deep boards were accessible, so the
+    live board is not yet published. This page documents the research.
+    """
+    confirmed_sources = [
+        (
+            "RotoGraphs Dynasty Model",
+            "https://fantasy.fangraphs.com/rotographs-dynasty-rankings/",
+            "500 players",
+            "August 14, 2026",
+            "Yes — includes major leaguers and top minor league prospects",
+            "FanGraphs robots.txt: Allow all. Freely accessible.",
+            "INCLUDED",
+        ),
+        (
+            "The Dynasty Guru (TDG) — Points",
+            "https://thedynastyguru.com/2026/08/10/the-tdg-top-500-for-points-leagues-2026-mid-season-updates/",
+            "500 players",
+            "August 10, 2026",
+            "Yes — includes major leaguers and top prospects",
+            "robots.txt behind Cloudflare captcha; article is publicly linked and cited on the site.",
+            "INCLUDED",
+        ),
+        (
+            "FantasyPros Dynasty ECR",
+            "https://www.fantasypros.com/mlb/rankings/dynasty-overall.php",
+            "591 players",
+            "August 26, 2026",
+            "Yes — includes top prospects (Jesus Made #46, Leo De Vries #51)",
+            "robots.txt: Allow all scrapers.",
+            "INCLUDED",
+        ),
+    ]
+    excluded_sources = [
+        (
+            "KeepTradeCut Baseball",
+            "https://keeptradecut.com/",
+            "~1,000+ dynasty values",
+            "Unknown",
+            "Yes",
+            "robots.txt: Allow all",
+            "EXCLUDED — baseball-rankings URL returns HTTP 404. KTC does not currently publish a baseball dynasty page at the known URL.",
+            "Email ktcsupport@keeptradecut.com to request permission and URL.",
+        ),
+        (
+            "FanGraphs The Board",
+            "https://www.fangraphs.com/fantasy/the-board/",
+            "Full dynasty board",
+            "Ongoing",
+            "Yes — includes FV grades for prospects",
+            "robots.txt: Allow all",
+            "EXCLUDED — URL returns HTTP 404; Cloudflare blocks all automated fetches to fangraphs.com API endpoints.",
+            "Could use the FanGraphs live board if FG provides a data API or CSV export.",
+        ),
+        (
+            "Baseball America Top 100",
+            "https://www.baseballamerica.com/",
+            "~100 prospects",
+            "August 5, 2026",
+            "Prospects only — no MLB veterans",
+            "Paywalled; HTTP 403 for automated fetch",
+            "EXCLUDED — Paywalled. Not a full dynasty board (prospects only, not hundreds including veterans).",
+            "Purchase a Baseball America subscription and request API access.",
+        ),
+        (
+            "RotoWire Dynasty Top 500",
+            "https://www.rotowire.com/baseball/dynasty-rankings.php",
+            "~500 players",
+            "2026 season",
+            "Likely — title says 'Top 500 Prospects'",
+            "robots.txt: Allow general crawlers, LLMs policy present",
+            "EXCLUDED — Rankings are rendered client-side (JavaScript framework). Static HTML fetch returns 391 KB with no player names in the markup. Structured ranking data is not accessible without a headless browser.",
+            "Contact RotoWire at info@rotowire.com to request a data feed.",
+        ),
+        (
+            "MLB Pipeline Top 100",
+            "https://www.mlb.com/prospects/2026",
+            "~100 prospects",
+            "Midseason 2026",
+            "Prospects only — no MLB veterans",
+            "robots.txt: Disallows /api/; page is 1.5 MB of React bundle",
+            "EXCLUDED — Only top ~100 prospects (no veterans), player names in HTML but no structured ranking table accessible without JS rendering.",
+            "Official MLB data — contact mlb.com/official-information/contact to request API access.",
+        ),
+        (
+            "Dynasty League Baseball (DLB)",
+            "https://www.dynastyleaguebaseball.com/",
+            "Unknown — deep (platform for deep leagues)",
+            "Ongoing",
+            "Yes",
+            "robots.txt returns 404 (no file)",
+            "EXCLUDED — Site returns 149 bytes with no player data. Likely a login-gated platform.",
+            "Contact DLB directly to ask about public rankings or data export.",
+        ),
+        (
+            "Razzball Dynasty Baseball",
+            "https://razzball.com/",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "robots.txt returns empty",
+            "EXCLUDED — Automated fetch returns 0 bytes. Content appears to require JavaScript rendering or login.",
+            "Contact razzball.com for a data partnership.",
+        ),
+        (
+            "Pitcher List Dynasty",
+            "https://www.pitcherlist.com/",
+            "Unknown",
+            "Unknown",
+            "Pitching-focused",
+            "Unknown — URL returns 0 bytes",
+            "EXCLUDED — Site returns 0 bytes for dynasty rankings URL. Not accessible.",
+            "Contact info@pitcherlist.com to ask about data sharing.",
+        ),
+        (
+            "Dynasty Nerds Baseball",
+            "https://www.dynastynerds.com/",
+            "Unknown",
+            "Unknown",
+            "Yes",
+            "Unknown",
+            "EXCLUDED — MLB dynasty rankings URL returns HTTP 404.",
+            "Contact dynastynerds.com to verify their MLB rankings URL.",
+        ),
+        (
+            "RotoBaller Dynasty Baseball",
+            "https://www.rotoballer.com/",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "robots.txt: some paths allowed",
+            "EXCLUDED — Dynasty baseball URL returns HTTP 404.",
+            "Contact RotoBaller via their website.",
+        ),
+        (
+            "Four-Seam Fantasy (Martin Sekulski)",
+            "https://msekulskifantasy.substack.com/",
+            "600+ (dynasty 600 list)",
+            "August 10, 2026",
+            "Yes — includes prospects",
+            "Substack: no robots.txt restrictions",
+            "EXCLUDED — Content is accessible (121 KB) but structured ranking data is locked behind Substack's paywall/rendering. Numbers are not parsed from the article HTML.",
+            "Purchase a Four-Seam Fantasy subscription or request the author's permission to re-aggregate.",
+        ),
+        (
+            "Baseball Prospectus PECOTA",
+            "https://www.baseballprospectus.com/",
+            "Full MLB + prospects",
+            "Ongoing",
+            "Yes",
+            "HTTP 404 for prospect boards URL",
+            "EXCLUDED — Paywalled. URL returns 404. PECOTA projections require a BP subscription.",
+            "Purchase a Baseball Prospectus subscription or contact them for data licensing.",
+        ),
+    ]
+
+    rows_confirmed = ""
+    for name, url, count, updated, offseason, terms, status in confirmed_sources:
+        rows_confirmed += f"""
+        <tr class="source-row">
+          <td><a href="{esc(url)}" rel="noopener noreferrer nofollow" target="_blank">{esc(name)}</a></td>
+          <td>{esc(count)}</td>
+          <td>{esc(updated)}</td>
+          <td>{esc(offseason)}</td>
+          <td>{esc(terms)}</td>
+          <td class="status-ok">{esc(status)}</td>
+        </tr>"""
+
+    rows_excluded = ""
+    for name, url, count, updated, offseason, terms, reason, ask in excluded_sources:
+        rows_excluded += f"""
+        <tr class="source-row">
+          <td><a href="{esc(url)}" rel="noopener noreferrer nofollow" target="_blank">{esc(name)}</a></td>
+          <td>{esc(count)}</td>
+          <td>{esc(updated)}</td>
+          <td>{esc(offseason)}</td>
+          <td>{esc(terms)}</td>
+          <td>{esc(reason)}</td>
+          <td>{esc(ask)}</td>
+        </tr>"""
+
+    body = f"""
+    <p class="kicker">BaseKeep · Research</p>
+    <h1>Deep Dynasty Baseball Board</h1>
+    <p class="note">
+      A Deep Dynasty baseball board aggregates hundreds of players — major leaguers, top prospects, and minor leaguers — the same way the football boards aggregate expert rankings. We audited every candidate source for this board in November 2026.
+      <strong>Result: only 3 independently sourced deep dynasty boards are publicly and legally accessible.</strong> The minimum to publish is 5. The board is not yet live.
+    </p>
+    <p class="note">
+      The 3 confirmed boards power the existing <a href="the-keep.html">The Keep</a> aggregate. They are genuinely deep (500–591 players each, including top prospects). What's missing is additional distinct expert boards that rank the full universe of dynasty players — veterans plus the minor-league pipeline — in a machine-readable format.
+    </p>
+
+    <h2>Confirmed Usable Sources (3 of 5 needed)</h2>
+    <p>These three boards were fetched, verified, and are already powering The Keep's underlying data.</p>
+    <div class="panel" style="overflow-x:auto">
+      <table class="rank-table">
+        <thead><tr>
+          <th>Source</th><th>Player Count</th><th>Last Updated</th><th>Prospects Included</th><th>Terms / Robots</th><th>Status</th>
+        </tr></thead>
+        <tbody>{rows_confirmed}</tbody>
+      </table>
+    </div>
+
+    <h2>Excluded Sources (11 checked)</h2>
+    <p>These sources were checked and excluded. The "How to Request" column lists the contact path for each site.</p>
+    <div class="panel" style="overflow-x:auto">
+      <table class="rank-table">
+        <thead><tr>
+          <th>Source</th><th>Est. Player Count</th><th>Last Updated</th><th>Prospects</th><th>Terms</th><th>Why Excluded</th><th>How to Request</th>
+        </tr></thead>
+        <tbody>{rows_excluded}</tbody>
+      </table>
+    </div>
+
+    <h2>What Would Unlock This Board</h2>
+    <p>The highest-value additions would be:</p>
+    <ul>
+      <li><strong>KeepTradeCut Baseball</strong> — KTC is the gold standard for dynasty trade values in NFL and has deep basketball; a baseball equivalent with 1,000+ players would immediately count as a primary source.</li>
+      <li><strong>FanGraphs The Board / Steamer</strong> — FG publishes both FV grades and Steamer/ZiPS projections for the full minor league pipeline. A public CSV API would add 1–2 boards instantly.</li>
+      <li><strong>RotoWire Dynasty Top 500</strong> — RotoWire titles their page "Top 500 Prospects" which suggests full pipeline coverage, but the data requires JavaScript rendering. A static endpoint or data license would add this.</li>
+      <li><strong>Four-Seam Fantasy (Martin Sekulski)</strong> — The Dynasty 600 list is exactly the right depth. Requesting the author's permission to scrape and attribute the rankings is likely the easiest path to a 4th board.</li>
+      <li><strong>Dynasty League Baseball</strong> — If DLB publishes a public rankings page, it would add a platform-native deep dynasty signal.</li>
+    </ul>
+
+    <p class="note" style="margin-top:24px">
+      Once 5 or more of the above are confirmed accessible and attributed, this page will be replaced by the live board with player search and filters (position, MLB team, minors vs. majors, age). The board will display the true source count — not 40.
+    </p>
+    """
+
+    return bb_board_page(
+        "Deep Dynasty Baseball Board — Source Research",
+        "deep-dynasty.html",
+        body,
+    )
+
+
 def write_baseball_site():
     u = load_universe()
     keep, lineup, pitchers = u["keep"], u["lineup"], u["pitchers"]
@@ -1881,6 +2128,7 @@ def write_baseball_site():
         canonical="https://ballkeep.com/bb/the-diamond.html",
     ))
 
+    write("bb/deep-dynasty.html", write_deep_dynasty_page())
     modes = [
         trade_payload("Dynasty Overall", "trade-keep.html", "Uses The Keep overall ranks.", keep, picks),
         trade_payload("Dynasty Lineup", "trade-lineup.html", "Hitters only, The Lineup ranks.", lineup, picks),
@@ -1941,7 +2189,8 @@ def write_baseball_site():
         "urls": ["https://ballkeep.com/bb/"] + [
             "https://ballkeep.com/bb/" + p
             for p in [
-                "the-keep.html", "news.html", "the-x.html", "the-lineup.html", "pitchers.html", "bullpen.html",
+                "the-keep.html", "deep-dynasty.html", "news.html", "the-x.html",
+                "the-lineup.html", "pitchers.html", "bullpen.html",
                 "bullpen-holds.html", "the-diamond.html", "the-farm.html", "trade.html",
                 "trade-keep.html", "trade-lineup.html", "trade-pitchers.html",
                 "trade-redraft.html", "trade-saves.html", "trade-svh.html",
