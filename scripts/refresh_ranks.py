@@ -244,7 +244,7 @@ def write_pfn_txt(rows: list[dict]) -> None:
     for r in rows:
         prev = old.get(r["name"].lower(), {})
         team = r["team"] or prev.get("team") or "FA"
-        age = prev.get("age") or 24
+        age = prev.get("age") or ""
         pos_rank = ""
         lines.append(
             f"| {r['rank']} | {r['name']} | {r['pos']} | {team} | {age} | {pos_rank} |  |  |"

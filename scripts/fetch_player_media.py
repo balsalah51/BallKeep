@@ -76,9 +76,15 @@ def norm_name(name: str) -> str:
         "de zhaun stribling": "dezhaun stribling",
         "kc concepcion": "kc concepcion",
         "d j moore": "dj moore",
-        "chigoziem okonkwo": "chig okonkwo",
+        "dj moore": "dj moore",
+        "chigoziem okonkwo": "chigoziem okonkwo",
+        "chig okonkwo": "chigoziem okonkwo",
+        "kenny gainwell": "kenneth gainwell",
+        "kenneth gainwell": "kenneth gainwell",
         "hollywood brown": "marquise brown",
         "matthew hibner": "matt hibner",
+        "gabriel davis": "gabe davis",
+        "gabe davis": "gabe davis",
     }
     return aliases.get(n, n)
 
@@ -88,7 +94,7 @@ def age_from_sleeper(p) -> str | int:
     if birth:
         try:
             y, m, d = [int(x) for x in str(birth)[:10].split("-")]
-            today = date(2026, 8, 21)
+            today = date.today()
             return today.year - y - ((today.month, today.day) < (m, d))
         except Exception:
             pass

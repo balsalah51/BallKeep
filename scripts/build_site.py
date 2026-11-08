@@ -194,7 +194,16 @@ from seo import (  # noqa: E402
     video_jsonld,
     website_jsonld,
 )
-from news_algo import CATEGORY_LABEL, load_news_stories, news_when, stories_for_board, uniquify_slugs  # noqa: E402
+from news_algo import (  # noqa: E402
+    CATEGORY_LABEL,
+    clean_news_blurb,
+    load_news_stories,
+    news_ago,
+    news_when,
+    stories_for_board,
+    story_wire_time,
+    uniquify_slugs,
+)
 from x_tape import cards_html as x_cards  # noqa: E402
 from player_copy import get_copy  # noqa: E402
 from recent_trades import enrich_deals  # noqa: E402
@@ -276,6 +285,15 @@ def norm_name(name: str) -> str:
         "deebo samuel sr": "deebo samuel",
         "aaron jones sr": "aaron jones",
         "matthew hibner": "matt hibner",
+        "d j moore": "dj moore",
+        "dj moore": "dj moore",
+        "chig okonkwo": "chigoziem okonkwo",
+        "chigoziem okonkwo": "chigoziem okonkwo",
+        "kenny gainwell": "kenneth gainwell",
+        "kenneth gainwell": "kenneth gainwell",
+        "hollywood brown": "marquise brown",
+        "gabriel davis": "gabe davis",
+        "gabe davis": "gabe davis",
     }
     return aliases.get(n, n)
 
@@ -606,6 +624,8 @@ def attach_pos_ranks(rows, overwrite=True):
 
 def pos_span(row):
     pos = (row.get("pos") if isinstance(row, dict) else row) or ""
+    if not pos:
+        return ""
     if isinstance(row, dict):
         label = row.get("pos_label") or (f"{pos}{row['pos_rank']}" if row.get("pos_rank") else pos)
     else:
@@ -672,8 +692,30 @@ def _fill_display_names(rows, pfn_rows, fp_sf, dn_sf, ktc_sf):
         r["name"] = info.get("name") or r.get("name") or bank_map.get(r["key"]) or r["key"].title()
         r["pos"] = r.get("pos") or info.get("pos") or ""
         r["team"] = r.get("team") or info.get("team") or ""
-        r["age"] = r.get("age") or info.get("age") or ""
+        if r.get("age") in (None, ""):
+            r["age"] = info.get("age") or ""
     return [r for r in rows if not r.get("drop")]
+
+
+def dedupe_rows(rows):
+    """Collapse punctuation/nickname aliases onto one row. Keep the better rank."""
+    by = OrderedDict()
+    collisions = []
+    for r in rows:
+        k = r.get("key") or norm_name(r.get("name") or "")
+        if not k:
+            continue
+        r["key"] = k
+        if k in by:
+            prev = by[k]
+            collisions.append((prev.get("name"), r.get("name"), k))
+            if (r.get("bk") or 9999) < (prev.get("bk") or 9999):
+                by[k] = r
+        else:
+            by[k] = r
+    if collisions:
+        print(f"  deduped {len(collisions)} name collisions")
+    return list(by.values())
 
 
 def aggregate(pfn_rows):
@@ -750,12 +792,9 @@ def skill_identity(name, pfn_meta):
 
 
 def publish_aged(rows):
-    """Keep every ranked name that has an age, then renumber the tape."""
-    kept = [r for r in rows if r.get("age") not in (None, "")]
-    for i, r in enumerate(kept, 1):
-        r["bk"] = i
-    attach_values(kept)
-    return kept
+    """Keep every ranked name. Unknown age stays blank — never a guessed 24."""
+    attach_values(rows)
+    return rows
 
 
 def redraft_lists():
@@ -968,7 +1007,7 @@ def superflex_redraft(keep, ppr):
 
 NAV_GROUPS = football_nav_groups()
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 82
+CSS_VER = 90
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -1004,7 +1043,7 @@ def fb_is_current(href: str, path: str) -> bool:
     ) or (href == "articles.html" and articles_here)
 
 
-def fb_site_nav(path: str, depth: int, *, nav_class: str = "site-nav", skip_home: bool = False, skip_current: bool = False, limit_per_group: int | None = None) -> str:
+def fb_site_nav(path: str, depth: int, *, nav_class: str = "site-nav", skip_home: bool = False, skip_current: bool = False, limit_per_group: int | None = None, as_dropdown: bool = False) -> str:
     """One nav renderer. Header and footer both call this."""
     return grouped_nav(
         NAV_GROUPS,
@@ -1015,13 +1054,20 @@ def fb_site_nav(path: str, depth: int, *, nav_class: str = "site-nav", skip_home
         nav_class=nav_class,
         aria_label="Ball Keep" if "footer" not in nav_class else "On this board",
         limit_per_group=limit_per_group,
+        as_dropdown=as_dropdown,
     )
 
 
 def fb_header_nav(path: str, depth: int) -> str:
-    """One copy of the nav. Desktop shows it open. Mobile keeps it in the drawer."""
-    inner = fb_site_nav(path, depth, nav_class="site-nav nav-wide")
+    """Five dropdowns, a player search, and a theme toggle. Drawer on small screens."""
+    inner = fb_site_nav(path, depth, nav_class="site-nav nav-wide", as_dropdown=True)
+    search_action = nav_href("players/index.html", depth)
     return (
+        f'<form class="head-search" action="{esc(search_action)}" method="get" role="search">'
+        f'<label class="sr-only" for="head-q">Search players</label>'
+        f'<input id="head-q" type="search" name="q" placeholder="Search players" aria-label="Search players" autocomplete="off" />'
+        f"</form>"
+        f'<button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">Light</button>'
         f'<details class="nav-drawer">'
         f"<summary>Menu</summary>"
         f"{inner}"
@@ -1118,47 +1164,105 @@ def load_age_bank():
 
 def apply_media_ages(rows, media, extra=None):
     extra = extra or {}
+    sl_bank = sleeper_bank()
     for r in rows:
         key = r.get("key") or norm_name(r.get("name") or "")
         info = media.get(key) or {}
-        if r.get("age") in (None, ""):
+        sl = sl_bank.get(key) or {}
+        if sl.get("pos") and sl.get("pos") not in SKILL_POS:
+            sl = {}
+        age = sl.get("age")
+        if age in (None, ""):
             age = info.get("age")
-            if age in (None, ""):
-                age = extra.get(key)
-            if age not in (None, ""):
+        if age in (None, ""):
+            age = extra.get(key)
+        if age not in (None, ""):
+            try:
+                r["age"] = int(age)
+            except (TypeError, ValueError):
                 r["age"] = age
-        if not r.get("pos") and info.get("pos"):
-            r["pos"] = info["pos"]
-        if not r.get("team") and info.get("team"):
-            r["team"] = info["team"]
-        sl = sleeper_bank().get(key) or {}
-        if not r.get("pos") and (sl.get("pos") or "") in SKILL_POS:
+        else:
+            r["age"] = ""
+        if sl.get("pos") in SKILL_POS:
             r["pos"] = sl["pos"]
-        if not r.get("team") and sl.get("team"):
-            r["team"] = sl["team"]
-        if r.get("age") in (None, "") and sl.get("age") not in (None, ""):
-            r["age"] = sl["age"]
+        elif info.get("pos") and not r.get("pos"):
+            r["pos"] = info["pos"]
+        team = (sl.get("team") or info.get("team") or r.get("team") or "").strip()
+        r["team"] = "" if team in {"", "FA", "None"} else team
+
+
+POS_AVATAR = {
+    "QB": "#c8102e",
+    "RB": "#16a34a",
+    "WR": "#2563eb",
+    "TE": "#ea580c",
+    "K": "#64748b",
+    "DST": "#64748b",
+    "DL": "#c8102e",
+    "LB": "#c8102e",
+    "DB": "#c8102e",
+}
+
+
+def player_initials(name: str) -> str:
+    parts = [p for p in re.split(r"\s+", (name or "").strip()) if p and p.lower() not in {"jr", "sr", "ii", "iii", "iv"}]
+    if not parts:
+        return "?"
+    if len(parts) == 1:
+        return parts[0][:2].upper()
+    return (parts[0][0] + parts[-1][0]).upper()
+
+
+def avatar_svg(name: str, pos: str = "", size: int = 40, klass: str = "face face-fallback") -> str:
+    color = POS_AVATAR.get((pos or "").split("/")[0], "#475569")
+    ini = esc(player_initials(name))
+    cls = f' class="{klass}"' if klass else ""
+    return (
+        f'<svg{cls} width="{size}" height="{size}" viewBox="0 0 40 40" role="img" '
+        f'aria-label="{esc(name)}">'
+        f'<circle cx="20" cy="20" r="20" fill="{color}"/>'
+        f'<text x="20" y="22" text-anchor="middle" dominant-baseline="middle" '
+        f'fill="#fff" font-size="14" font-weight="700" font-family="Inter, system-ui, sans-serif">{ini}</text>'
+        f"</svg>"
+    )
+
+
+def real_headshot_path(r, media) -> str:
+    key = r.get("key") or norm_name(r.get("name") or "")
+    img = ((media.get(key) or {}).get("image") or "").lstrip("/")
+    if not img or "logo" in Path(img).name.lower():
+        return ""
+    if (ROOT / img).exists():
+        return img
+    webp = re.sub(r"\.(jpe?g|png)$", ".webp", img, flags=re.I)
+    if webp != img and (ROOT / webp).exists():
+        return webp
+    return ""
 
 
 def face_src(r, media, depth=0):
-    key = r.get("key") or norm_name(r.get("name") or "")
-    img = (media.get(key) or {}).get("image") or "img/logo.jpg"
+    img = real_headshot_path(r, media)
+    if not img:
+        return ""
     return asset(img, depth)
 
 
-def face_picture(src: str, alt: str, depth: int = 0, klass: str = "face", w: int = 48, h: int = 48, lazy: bool = True) -> str:
-    """WebP when the file exists, with the original jpg/png as the fallback."""
-    raw = (src or "img/logo.jpg").lstrip("/")
+def face_picture(src: str, alt: str, depth: int = 0, klass: str = "face", w: int = 40, h: int = 40, lazy: bool = True, pos: str = "", allow_logo: bool = False) -> str:
+    """Real headshot as 96x96 webp, or a generated initials avatar. Never the site logo on a row."""
+    raw = (src or "").lstrip("/")
+    is_logo = bool(raw) and "logo" in Path(raw).name.lower()
+    if not raw or (is_logo and not allow_logo) or not (ROOT / raw.split("?")[0]).exists():
+        return avatar_svg(alt.replace(" headshot", "").replace(" circular logo", ""), pos, size=w, klass=klass or "face")
     webp = re.sub(r"\.(jpe?g|png)$", ".webp", raw, flags=re.I)
-    cls = f' class="{klass}"' if klass else ""
+    pos0 = (pos or "").split("/")[0]
+    ring = f" pos-{esc(pos0)}" if pos0 else ""
+    cls = f' class="{klass}{ring}"' if klass else (f' class="{ring.strip()}"' if ring else "")
     loading = ' loading="lazy"' if lazy else ""
-    img = (
-        f'<img{cls} src="{esc(asset(raw, depth))}" alt="{esc(alt)}" '
-        f'width="{w}" height="{h}"{loading} />'
+    use_src = webp if webp != raw and (ROOT / webp).exists() else raw
+    return (
+        f'<img{cls} src="{esc(asset(use_src, depth))}" alt="{esc(alt)}" '
+        f'width="{w}" height="{h}"{loading} decoding="async" />'
     )
-    if webp != raw and (ROOT / webp).exists():
-        return f'<picture><source type="image/webp" srcset="{esc(asset(webp, depth))}" />{img}</picture>'
-    return img
 
 
 def wordmark():
@@ -1174,7 +1278,7 @@ def masthead(kicker, mark, sub, url="ballkeep.com", logo="img/logo.jpg", alt="Ba
         f'<section class="hero masthead" aria-label="{esc(kicker)}">'
         f'<div class="hero-card">'
         f'<div class="mast-row">'
-        f'{face_picture(logo, alt, klass="mast-mark", w=64, h=64)}'
+        f'{face_picture(logo, alt, klass="mast-mark", w=64, h=64, allow_logo=True)}'
         f'<div class="mast-copy">'
         f"{sr_h1(sr_title) if sr_title else ''}"
         f'<p class="mast-kicker">{esc(kicker)}</p>'
@@ -1219,6 +1323,11 @@ ROOKIE_SOURCES = [
 
 
 FB_SEO = {
+    "more.html": (
+        "More | Ball Keep",
+        "The rest of Ball Keep: redraft boards, weekly stream, calculators, essays, and the other sports.",
+        "img/logo.jpg",
+    ),
     "index.html": (
         "Fantasy Football Superflex Dynasty Rankings | Ball Keep",
         "2026 Superflex dynasty and redraft PPR rankings from a 40-board Super Aggregate plus Sleeper. BK Value trade calculator and player files.",
@@ -1226,7 +1335,7 @@ FB_SEO = {
     ),
     "the-keep.html": (
         "2026 Superflex Dynasty Rankings (Full Tape) | Ball Keep",
-        "Superflex dynasty full ranked tape from 40 boards, rebuilt September 25, 2026. Rank 1 is 12,000 BK Value.",
+        f"Superflex dynasty full ranked tape from 40 boards, rebuilt {UPDATED}. Rank 1 is 12,000 BK Value.",
         "img/logo.jpg",
     ),
     "board.html": (
@@ -1602,7 +1711,7 @@ HOME_FAQ = [
     ("What other sports are on this site?", "Football is the live board this fall. BaseKeep is baseball, BasketKeep is basketball, PitchKeep is Premier League. Same rank-to-value idea, separate palettes."),
 ]
 KEEP_FAQ = [
-    ("What is The Keep?", "Ball Keep's Superflex Dynasty Super Aggregate. Every name a long board ranked, from 40 public boards, rebuilt October 17, 2026 from the live public lists."),
+    ("What is The Keep?", f"Ball Keep's Superflex Dynasty Super Aggregate. Every name a long board ranked, from 40 public boards, rebuilt {UPDATED} from the live public lists."),
     ("How is a Superflex rank different from redraft PPR?", "The Keep prices a second quarterback slot and a long window. The Board next door is this-year Redraft PPR - one QB, a point per catch."),
     ("How does BK Value work on this list?", "The Keep rank becomes BK Value. Rank 1 is 12,000. Ranks 40-80 still sit around 44% and 29% of the 1.01. The Superflex calculator uses this board."),
     ("How many boards rank each name?", "At least 10. A two-board average is a coin flip. Short lists stay short for names they already ranked. Thinner names pick up the next ranks those same boards would have given them."),
@@ -2158,15 +2267,18 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
   <link rel="stylesheet" href="{asset("css/site.css", depth)}?v={CSS_VER}" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
+  <script>
+  (function(){{try{{var t=localStorage.getItem("bk-theme");document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark");}}catch(e){{document.documentElement.setAttribute("data-theme","dark");}}}})();
+  </script>
 </head>
 <body{body_attr}>
   <div class="wrap">
     <header class="site">
       <a class="brand" href="{nav_href("index.html", depth)}">
-        {face_picture("img/logo.jpg", "Ball Keep circular logo", depth=depth, klass="", w=56, h=56, lazy=False)}
+        {face_picture("img/logo.jpg", "Ball Keep circular logo", depth=depth, klass="", w=56, h=56, lazy=False, allow_logo=True)}
         <div>
           <p class="brand-title">{wordmark()}</p>
-          <p>40 boards · Superflex · PPR · Sleeper</p>
+          <p>Superflex · PPR · Sleeper</p>
         </div>
       </a>
       {fb_header_nav(path, depth)}
@@ -2185,6 +2297,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
       {sports_footer("fb", depth)}
     </footer>
   </div>
+    <script src="{asset("js/theme.js", depth)}?v={CSS_VER}" defer></script>
     {extra_js}
 </body>
 </html>
@@ -2200,6 +2313,9 @@ def board_page(title, path, body, extra_js="", extra_jsonld=None, body_class="")
     for blob in extra_jsonld or []:
         if blob:
             ld.append(blob)
+    board_tag = f'<script src="js/board.js?v={CSS_VER}" defer></script>'
+    if "js/board.js" not in (extra_js or ""):
+        extra_js = (extra_js or "") + board_tag
     return page(
         title,
         path,
@@ -2214,41 +2330,54 @@ def board_page(title, path, body, extra_js="", extra_jsonld=None, body_class="")
 
 def _rank_th(label):
     cls = ""
+    src_labels = {
+        "Avg", "Boards", "PFN", "KTC", "Yates", "FP ECR", "Karabell", "Proj",
+        "ESPN ADP", "UD ADP", "FP", "PFF", "Dealer", "Note", "Adj. Score",
+        "Keep SF", "PPR", "Score", "Super", "RG", "TDG", "# Boards",
+    }
     if label == "BK Value":
         cls = "c-val"
     elif label == "£":
         cls = "c-price"
     elif label == "Age":
         cls = "c-age"
-    elif label not in ("BK", "PK", "Player", "Pos", "Team", "Club", "Game", "Day", "Pick"):
+    elif label == "Pos/Team":
+        cls = "c-pos-team"
+    elif label in src_labels:
+        cls = "src-col"
+        if label == "Avg":
+            return '<th class="src-col" title="Mean of boards that ranked this name, not the Super Aggregate rank">Avg</th>'
+    elif label not in ("BK", "PK", "Player", "Pos", "Team", "Club", "Game", "Day", "Pick", "Pos/Team", "Status", "Note", "Behind", "Cuff rank", "Starter rank", "Cuff value", "Starter value", "Read", "QB", "RB", "WR", "TE", "Board", "Delta"):
         cls = "desk-only"
     attr = f' class="{cls}"' if cls else ""
     return f"<th{attr}>{esc(label)}</th>"
 
 
-def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, faces=False, show_age=False, draft_check=False, overwrite_pos=True):
+def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, faces=False, show_age=False, draft_check=False, overwrite_pos=True, paginate=False):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
     attach_pos_ranks(rows, overwrite=overwrite_pos)
-    cols = ["BK", "Player", "Pos", "Team"]
+    cols = ["BK", "Player", "Pos/Team"]
+    if show_age:
+        cols.append("Age")
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
+    missing_shots = 0
     for r in rows:
         pos = r.get("pos") or ""
         team = r.get("team") or ""
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
-        age_label = f"age {age_txt}" if show_age and age_txt else ""
-        age_span = f'<span class="age-desc">{esc(age_label)}</span>' if age_label else ""
-        meta = (
-            f'<div class="row-meta">{pos_span(r)}'
-            f" · {esc(team)}</div>"
-        )
+        pos_team = f"{pos_span(r)}" + (f'<span class="team-tag">{esc(team)}</span>' if team else "")
+        meta = f'<div class="row-meta">{pos_span(r)}' + (f" · {esc(team)}" if team else "") + "</div>"
         face = ""
         if faces:
-            face = face_picture(face_src(r, media, 0), face_alt(r.get("name")), depth)
+            shot = real_headshot_path(r, media)
+            if not shot:
+                missing_shots += 1
+            face = face_picture(shot, face_alt(r.get("name")), depth, pos=pos, w=40, h=40)
         off = '<span class="draft-off">Crossed off</span>' if draft_check else ""
-        stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{off}{age_span}{meta}</span>'
+        stack = f'<span class="name-stack">{player_anchor(r["name"], depth)}{off}{meta}</span>'
         mark = ""
         if draft_check:
             nm = r.get("name") or "player"
@@ -2259,23 +2388,66 @@ def rank_table(rows, extra_headers=None, extra_cells=None, depth=0, media=None, 
             )
         dn = rank_search_key(r.get("name"), pos, team)
         row_cls = ' class="idp-row"' if pos in {"DL", "LB", "DB"} else ""
+        avg = r.get("avg")
+        age_cell = f'<td class="c-age">{esc(age_txt)}</td>' if show_age else ""
         body.append(
-            f'<tr{row_cls} data-pos="{esc(pos)}" data-name="{dn}">'
+            f'<tr{row_cls} data-pos="{esc(pos)}" data-name="{dn}" '
+            f'data-rank="{esc(r.get("bk") or "")}" data-age="{esc(age_txt)}" '
+            f'data-val="{esc(r.get("value") or "")}" data-avg="{esc(avg or "")}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name">{mark}{face}{stack}</td>'
-            f'<td class="c-pos">{pos_span(r)}</td>'
-            f'<td class="c-team">{esc(team)}</td>'
+            f'<td class="c-name"><div class="name-cell">{mark}{face}{stack}</div></td>'
+            f'<td class="c-pos-team">{pos_team}</td>'
+            f"{age_cell}"
             f"{extra_cells(r)}"
             "</tr>"
         )
-    bits = ["rank-table"]
+    bits = ["rank-table", "compact"]
     if faces:
         bits.append("faces")
     if draft_check:
         bits.append("has-draft")
+    if paginate:
+        bits.append("paged")
+    extra = ""
+    if rows:
+        try:
+            extra = extra_cells(rows[0]) or ""
+        except Exception:
+            extra = ""
+    has_src = "src-col" in extra or any(h in {
+        "Avg", "Boards", "PFN", "KTC", "Yates", "FP ECR", "Karabell", "Proj",
+        "ESPN ADP", "UD ADP", "FP", "PFF", "Dealer", "Adj. Score", "Keep SF",
+        "PPR", "Score", "Super", "RG", "TDG", "# Boards",
+    } for h in extra_headers)
+    tools = ""
+    if paginate or has_src:
+        src_btn = (
+            '<button type="button" class="board-sources" aria-pressed="false">Show sources</button>'
+            if has_src else ""
+        )
+        tools = (
+            f'<div class="board-tools">'
+            f'<div class="density" role="group" aria-label="Row density">'
+            f'<button type="button" data-density="compact" class="active">Compact</button>'
+            f'<button type="button" data-density="comfortable">Comfortable</button>'
+            f"</div>"
+            f"{src_btn}"
+            f'<p class="board-count" role="status"></p>'
+            f"</div>"
+        )
+    more = (
+        '<p class="board-empty" hidden>No players match that search.</p>'
+        '<button type="button" class="board-more cta">Load more</button>'
+        if paginate else
+        '<p class="board-empty" hidden>No players match that search.</p>'
+    )
+    if missing_shots and faces:
+        print(f"  headshots missing {missing_shots}/{len(rows)}")
     return (
+        f"{tools}"
         f'<div class="table-wrap"><table class="{" ".join(bits)}">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
+        f"{more}"
     )
 
 
@@ -2334,10 +2506,10 @@ def matchup_table(rows):
             f'<td class="c-name"><strong>{esc(game)}</strong>'
             f'<div class="row-meta">{esc(meta)}</div></td>'
             f'<td class="c-team">{esc(r.get("day") or "")}</td>'
-            f'<td class="desk-only">{esc(r.get("spread") or "")}</td>'
+            f'<td class="src-col">{esc(r.get("spread") or "")}</td>'
             f'<td class="c-pick"><strong>{esc(pick_cell)}</strong></td>'
-            f'<td class="desk-only">{away} {r.get("away_n", 0)}</td>'
-            f'<td class="desk-only">{home} {r.get("home_n", 0)}</td>'
+            f'<td class="src-col">{away} {r.get("away_n", 0)}</td>'
+            f'<td class="src-col">{home} {r.get("home_n", 0)}</td>'
             f'<td class="c-val val">{r.get("n", "")}</td>'
             "</tr>"
         )
@@ -2463,24 +2635,25 @@ def news_card(story: dict, depth: int = 0, featured: bool = False) -> str:
     cat = story.get("category") or "wire"
     label = CATEGORY_LABEL.get(cat, cat.title())
     href = f"{'../' * depth}news/{esc(story['slug'])}.html"
+    sources = story.get("sources") or []
     players = " ".join(
         f'<span class="chip">{esc(p.get("name") or "")}</span>'
-        for p in (story.get("players") or [])[:6]
+        for p in (story.get("players") or [])[:3]
     )
-    nsrc = len(story.get("sources") or [])
-    kinds = {s.get("kind") for s in story.get("sources") or []}
-    bits = [f"{nsrc} source" + ("s" if nsrc != 1 else "")]
-    if "x" in kinds:
-        bits.append("X")
-    if "video" in kinds:
-        bits.append("video")
-    klass = "news-item tile" + (" is-lead" if featured else "")
+    pub = ""
+    for src in sources:
+        if src.get("publisher"):
+            pub = src["publisher"]
+            break
+    when = news_ago(story_wire_time(story)) or news_when(story_wire_time(story) or story.get("published") or "")
+    blurb = clean_news_blurb(story.get("blurb") or "", sources)
+    klass = "news-item tile compact-news" + (" is-lead" if featured else "")
     return (
         f'<a class="{klass}" href="{href}">'
-        f'<div class="news-meta"><span class="kind {esc(cat)}">{esc(label)}</span> '
-        f'{esc(news_when(story.get("updated") or story.get("published") or ""))} · {esc(" · ".join(bits))}</div>'
         f'<h3>{esc(story.get("headline") or "Update")}</h3>'
-        f'<p>{esc(story.get("blurb") or "")}</p>'
+        f'<div class="news-meta"><span class="news-source">{esc(pub or label)}</span>'
+        f'<time>{esc(when)}</time></div>'
+        f'{f"<p>{esc(blurb)}</p>" if blurb else ""}'
         f'<div class="news-players">{players}</div>'
         f"</a>"
     )
@@ -2554,12 +2727,7 @@ def home_today_html(waiver_line, injured_names, hurt_map=None):
         </div>
         <p class="note">Saved on this browser. Username and league ID stay on this machine except when the page asks Sleeper.</p>
       </form>
-      <div class="today-grid">
-        <a class="tile" href="league.html"><h3>My Team</h3><p>Sleeper roster with BK Value on every name.</p></a>
-        <a class="tile" href="injuries.html"><h3>Injuries</h3><p id="today-injuries">{esc(hurts)}</p></a>
-        <a class="tile" href="waiver.html"><h3>Waivers</h3><p>{esc(waivers)}</p></a>
-        <a class="tile" href="trade.html"><h3>Trade</h3><p>Six calculators. Fair is within 8%.</p></a>
-      </div>
+      <p id="today-injuries" class="sr-only">{esc(hurts)}</p>
       <p class="note" id="today-hits" hidden></p>
       <script type="application/json" id="today-hurt">{hurt_json}</script>
     </section>
@@ -2627,7 +2795,7 @@ def today_pack():
     return waiver_line, [label for _, _, label in relevant[:4]], hurt_map
 
 
-def home_rank_preview(rows, media, n=16):
+def home_rank_preview(rows, media, n=10):
     attach_pos_ranks(rows)
     items = []
     for r in rows[:n]:
@@ -2636,7 +2804,7 @@ def home_rank_preview(rows, media, n=16):
         pos = r.get("pos") or ""
         team = r.get("team") or ""
         val = fmt_val(r["value"]) if r.get("value") not in (None, "") else ""
-        face = face_picture(face_src(r, media, 0), face_alt(name))
+        face = face_picture(real_headshot_path(r, media), face_alt(name), pos=pos, w=40, h=40)
         name_html = (
             f'<a class="player-link" href="{esc(href)}"><strong>{esc(name)}</strong></a>'
             if href else f"<strong>{esc(name)}</strong>"
@@ -2657,12 +2825,10 @@ def home_rank_preview(rows, media, n=16):
 def home_news_html(stories):
     if not stories:
         return ""
-    lead = news_card(stories[0], featured=True)
-    rest = "".join(news_card(s) for s in stories[1:])
-    rest_box = f'<div class="news-list">{rest}</div>' if rest else ""
+    cards = "".join(news_card(s) for s in stories[:8])
     return (
-        f'<div class="home-wire-layout">{lead}{rest_box}</div>'
-        '<p class="note home-wire-more"><a href="news.html">All BK News</a></p>'
+        f'<div class="news-list news-compact">{cards}</div>'
+        '<p class="note home-wire-more"><a href="news.html">All news</a></p>'
     )
 
 
@@ -2683,7 +2849,7 @@ def sister_card(href: str, klass: str, name: str, blurb: str, news_stem: str, se
             updated = ""
         hrs = hours_ago(updated)
         if hrs is not None and hrs >= 24:
-            news_bit = f"News last moved {int(round(hrs))} hours ago."
+            news_bit = ""
     bits = [blurb, season_note]
     if stamp:
         bits.append(stamp + ".")
@@ -2695,14 +2861,91 @@ def sister_card(href: str, klass: str, name: str, blurb: str, news_stem: str, se
     )
 
 
+def home_this_week_block():
+    """Only tiles whose data matches the live week. No placeholder copy."""
+    from weekly_kit import injury_rows
+    w = live_week()
+    tiles = []
+    meta_week = None
+    try:
+        meta_week = json.loads((ROOT / "data/weekly/meta.json").read_text()).get("week")
+    except Exception:
+        meta_week = None
+    if meta_week == w:
+        tiles.append(("weekly.html", "Weekly", "QB, RB, WR, TE, flex."))
+    try:
+        if injury_rows():
+            tiles.append(("injuries.html", "Injuries", "ESPN designations."))
+    except Exception:
+        pass
+    if not tiles:
+        return ""
+    return desk_block("week", week_label(w), "This week.", "Live data only.", tiles)
+
+
+def more_body_html():
+    w = live_week()
+    return f"""
+    <p class="kicker">The rest of the site</p>
+    <h1>More</h1>
+    <p class="note">Everything that used to sit on Home.</p>
+    {desk_block("ros-skill", "Rest of season", "Skill boards.", "Rest-of-season redraft and rookies.", [
+        ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
+        ("the-classic.html", "The Classic", "Half-PPR, this year."),
+        ("redraft-standard.html", "Redraft Standard", "No reception point."),
+        ("best-ball.html", "Best Ball", "Boom weeks. Kickers and DST stay off."),
+        ("rookies-2026.html", "2026 Rookies", "Drafted class."),
+        ("defenses.html", "The D · DST", "Season-long team DST."),
+        ("kickers.html", "Top Kickers", "Season-long K."),
+        ("the-fence.html", "The Fence", "Superflex + IDP."),
+    ])}
+    {desk_block("week", week_label(w), "This week's stream.", "Weekly boards and the official slate.", [
+        ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
+        (week_href("dst"), f"{week_label(w)} DST", "This week's stream."),
+        (week_href("kickers"), f"{week_label(w)} Kickers", "This week's stream."),
+        (week_href("matchups"), f"{week_label(w)} Predictions", "Official slate."),
+        ("waiver.html", "Waivers", "Last published waiver mash."),
+        ("injuries.html", "Injuries", "ESPN designations."),
+    ])}
+    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, ADP, depth charts.", [
+        ("the-handcuff.html", "The Handcuff", "RB backups."),
+        ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
+        ("adp.html", "ADP", "The Board vs ESPN."),
+        ("depth-charts.html", "Depth Charts", "32 clubs."),
+        ("the-method.html", "The Method", "How the Super Aggregate is built."),
+        ("league.html", "My Team", "Sleeper league."),
+    ])}
+    {desk_block("tape", "Reading", "Essays and files.", "The long reads and player pages.", [
+        ("articles.html", "Articles", "Strategy and the week."),
+        ("two-clocks.html", "Two Clocks", "A room has two clocks."),
+        ("the-long-game.html", "The Long Game", "Hold the years."),
+        ("touches.html", "Touches and Targets", "Targets, rushes, receptions."),
+        ("players/index.html", "Player Pages", "The full Keep tape."),
+        ("the-x.html", "The X", "Memes."),
+        ("news.html", "News", "Injuries, roster, coaches."),
+        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells."),
+        ("the-recap.html", "Week 1 Recap", "Opener scores."),
+        ("the-market.html", "Week 1 Market", "Week 1 names."),
+        ("archive/week1/index.html", "Week 1 archive", "Opening week files."),
+    ])}
+    {desk_block("slates", "Schedules", "The schedules.", "NFL, MLB, Premier League.", [
+        ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
+        ("mlb-schedule.html", "MLB Schedule", "Regular season wrapped Sept. 27."),
+        ("bpl-schedule.html", "BPL Schedule", "2026/27 Premier League."),
+        ("bb/index.html", "BaseKeep", "Dynasty baseball."),
+        ("bk/index.html", "BasketKeep", "Dynasty basketball."),
+        ("pl/index.html", "PitchKeep", "Premier League ranks."),
+    ])}
+    """
+
+
 def home_body_html(keep, board, media, stories=None):
     stories = stories or []
     keep_n = len(KEEP_SOURCES)
     board_n = len(PPR_SOURCES)
-    w = live_week()
     try:
-        waiver_line, hurt, hurt_map = today_pack()
-        today = home_today_html(waiver_line, hurt, hurt_map)
+        _, hurt, hurt_map = today_pack()
+        today = home_today_html("", hurt, hurt_map)
     except Exception:
         today = home_today_html("", [])
     news_block = home_news_html(stories)
@@ -2710,138 +2953,40 @@ def home_body_html(keep, board, media, stories=None):
     if news_block:
         wire = (
             '<section class="desk-block tape home-wire">'
-            '<div class="home-sec-head">'
-            '<p class="kicker">BK News</p>'
-            "<h2>The clustered wire.</h2>"
-            '<p class="note">Injuries, roster, and coach tape with short snippets and links out to the original stories.</p>'
-            "</div>"
+            '<p class="kicker">News</p>'
+            "<h2>The wire.</h2>"
             f"{news_block}"
             "</section>"
         )
-    stale = ""
-    if ranks_are_stale():
-        stale = (
-            f'<p class="news-stale" role="status">Rankings last scraped {UPDATED}. '
-            f"That is more than four days old.</p>"
-        )
+    this_week = home_this_week_block()
     return f"""
-    <div class="home-top">
+    {sr_h1("Fantasy Football Superflex Dynasty Rankings")}
     {today}
-    <section class="home-hero" aria-label="Football rankings">
-      <div class="home-hero-media" aria-hidden="true"></div>
-      <div class="home-hero-copy">
-        {sr_h1("Fantasy Football Superflex Dynasty Rankings")}
-        <p class="home-eyebrow">Updated {UPDATED} · Superflex dynasty · Redraft PPR</p>
-        {stale}
-        <p class="home-mark">{wordmark()}</p>
-        <p class="home-lede">Forty public boards mashed into one Super Aggregate, plus Sleeper so you can price the roster you already have.</p>
-        <div class="home-ctas">
-          <a class="cta" href="the-keep.html">The Keep</a>
-          <a class="cta alt" href="board.html">The Board</a>
-        </div>
-      </div>
-    </section>
-    </div>
     <section class="home-snapshot" aria-label="Top of the boards">
       <article class="home-snap keep">
         <header class="home-snap-head">
           <p class="kicker">The Keep</p>
           <h2>Superflex dynasty</h2>
-          <p>{len(keep)} names · {keep_n} boards · rest of season</p>
+          <p>Top 10 · {keep_n} boards · {UPDATED}</p>
           <a class="home-snap-link" href="the-keep.html">Full board</a>
         </header>
-        {home_rank_preview(keep, media)}
+        {home_rank_preview(keep, media, 10)}
       </article>
       <article class="home-snap board">
         <header class="home-snap-head">
           <p class="kicker">The Board</p>
           <h2>Redraft PPR</h2>
-          <p>This year · 1QB · {board_n} boards</p>
+          <p>Top 10 · {board_n} boards</p>
           <a class="home-snap-link" href="board.html">Full board</a>
         </header>
-        {home_rank_preview(board, media)}
+        {home_rank_preview(board, media, 10)}
       </article>
     </section>
-    {desk_block("ros-skill", "Rest of season", "Skill boards.", "Rest-of-season redraft and rookies. Not this week's stream.", [
-        ("redraft-superflex.html", "Redraft Superflex", "Two-QB, this year."),
-        ("the-classic.html", "The Classic", "Half-PPR, this year."),
-        ("redraft-standard.html", "Redraft Standard", "No reception point."),
-        ("best-ball.html", "Best Ball", "40-board Super Aggregate. Boom weeks. Kickers and DST stay off."),
-        ("rookies-2026.html", "2026 Rookies", "Drafted class."),
-    ])}
-    {desk_block("ros-st", "More ranks", "DST, Kickers, The Fence.", f"Rest-of-season values and the mixed Superflex + IDP board. {week_label(w)} DST and Kickers sit in This Week.", [
-        ("defenses.html", "The D · DST", "Season-long team DST."),
-        ("kickers.html", "Top Kickers", "Season-long K."),
-        ("the-fence.html", "The Fence · Superflex + IDP", "Superflex + IDP, the full ranked tape."),
-    ])}
-    {desk_block("week", week_label(w), "This week's stream.", "Weekly boards, the official slate, and the waiver mash. Rest-of-season values live in the blocks above.", [
-        ("weekly.html", "Weekly", "QB, RB, WR, TE, flex."),
-        (week_href("dst"), f"{week_label(w)} DST", "This week's stream."),
-        (week_href("kickers"), f"{week_label(w)} Kickers", "This week's stream."),
-        (week_href("matchups"), f"{week_label(w)} Predictions", "Official slate. Mash picks land when the published cards are in."),
-        ("waiver.html", "Waivers", "The names the boards moved."),
-        ("injuries.html", "Injuries", "ESPN designations."),
-    ], extra=home_week_faces())}
-    {desk_block("mine", "Yours", "Put in your own team.", "Load your Sleeper league. BK Value on every roster.", [
-        ("league.html", "My Team", "Your Sleeper league. Power rankings and leftover values."),
-        ("the-handcuff.html", "The Handcuff", "RB only. Dynasty cuffs and redraft cuffs."),
-    ])}
-    {desk_block("tools", "Tools", "Calculators and files.", "Price a deal, read the cuff, ADP vs The Board, and depth charts.", [
-        ("the-handcuff.html", "The Handcuff", "RB only. Keep list and Board list."),
-        ("trade.html", "Trade Calculators", "Keep, Board, Classic, 1QB, PPR, Standard."),
-        ("adp.html", "ADP", "The Board vs ESPN."),
-        ("depth-charts.html", "Depth Charts", "32 clubs."),
-        ("the-method.html", "The Method", "How the Super Aggregate is built."),
-    ])}
-    {desk_block("tape", "Essays", "The non-ranking lists.", "The essays, the player files, and the pictures.", [
-        ("articles.html", "Articles", "The long reads. Strategy and the week."),
-        ("two-clocks.html", "Two Clocks", "A room has two clocks. Most sites wind one."),
-        ("the-long-game.html", "The Long Game", "Hold the years when the week is shouting."),
-        ("touches.html", "Touches and Targets", "2026 targets, rushes, receptions, TDs."),
-        ("players/index.html", "Player Pages", "The full Keep tape. Tape, plus/minus."),
-        ("the-x.html", "The X", "Memes. Pictures on the card."),
-        ("news.html", "BK News", "Injuries, roster, coaches."),
-    ])}
-    {desk_block("archive", "Archive", "Earlier weeks.", "Finished notes. The week is in the title so they are not this week's stream.", [
-        ("the-recap.html", "Week 1 Recap", "Sixteen scores from the opener. Chicago scored 59. Walker ran for 173."),
-        ("the-market.html", "Week 1 Market", "Week 1 buy-low and sell-high names."),
-        ("hot-n-cold.html", "Hot 'n' Cold", "Buys and sells into Week 6."),
-        ("archive/week1/index.html", "Week 1 archive", "Opening, DST, kickers, matchups, waivers."),
-    ])}
-    {desk_block("slates", "Schedules", "The schedules.", "Football is the live board this fall. Baseball and Premier League keep their own slates.", [
-        ("nfl-schedule.html", "NFL Schedule", "2026 week-by-week."),
-        ("mlb-schedule.html", "MLB Schedule", "Regular season wrapped Sept. 27."),
-        ("bpl-schedule.html", "BPL Schedule", "2026/27 Premier League."),
-    ])}
-    <ul class="home-proof">
-      <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
-      <li><strong>{board_n}</strong><span>redraft boards</span></li>
-      <li><strong>{len(keep)}</strong><span>Keep names</span></li>
-      <li><strong>Sleeper</strong><span>My Team</span></li>
-    </ul>
-    <section class="home-method" aria-label="How the Super Aggregate works">
-      <p class="kicker">Method</p>
-      <h2>How the Super Aggregate works.</h2>
-      <ol class="home-steps">
-        <li><strong>Half the vote is the long boards.</strong> The tapes that actually go deep enough to matter.</li>
-        <li><strong>Half is every other board that ranked the name.</strong> Short lists still move the names they published.</li>
-        <li><strong>Rank becomes a trade chip on that list's curve.</strong> Superflex and PPR print different ranks, so the same name prices differently on each calculator. Rank 1 is 12,000. Fair is within 8%.</li>
-      </ol>
-      <a class="cta method-cta" href="the-method.html">Read The Method</a>
-    </section>
+    {this_week}
     {wire}
-    <section class="home-network" aria-label="Other sports">
-      <p class="kicker">The other boards</p>
-      <h2>Same curve, separate palettes.</h2>
-      <p class="note">Football is the live board this fall. BaseKeep, BasketKeep, and PitchKeep keep the same rank-to-value idea in their own colors.</p>
-      <div class="home-network-grid">
-        {sister_card("bb/index.html", "bb", "BaseKeep", "Dynasty baseball. The Keep, The Diamond, The Farm.", "baseball", "MLB regular season wrapped Sept 27. Dynasty ranks are an offseason tape.")}
-        {sister_card("bk/index.html", "bk", "BasketKeep", "Dynasty basketball. The Keep and The Board.", "basketball", "The 2026-27 NBA season is on. August ranks are from before it.")}
-        {sister_card("pl/index.html", "pl", "PitchKeep", "Premier League. The Premier and The Pitch.", "soccer", "2026/27 is underway. The Pitch is last season's Sleeper scoring, labeled 2025.")}
-      </div>
-    </section>
-    {faq_html(HOME_FAQ, heading="How Ball Keep works.")}
+    <p class="note"><a href="more.html">More of the site</a></p>
     """
+
 
 
 def write_home_page(keep, board, media, stories=None):
@@ -2851,6 +2996,14 @@ def write_home_page(keep, board, media, stories=None):
         extra_jsonld=[website_jsonld("Ball Keep"), faq_jsonld(HOME_FAQ)],
         modified=LASTMOD,
         body_class="home",
+    ))
+    write("more.html", page(
+        "More", "more.html", more_body_html(),
+        crumbs=breadcrumbs([("Ball Keep", "/"), ("More", None)]),
+        extra_jsonld=[breadcrumb_jsonld([
+            ("Ball Keep", "https://ballkeep.com/"),
+            ("More", "https://ballkeep.com/more.html"),
+        ])],
     ))
 
 
@@ -4050,8 +4203,8 @@ def main():
     ages = load_age_bank()
     apply_media_ages(keep, media, ages)
     apply_media_ages(long_board, media, ages)
-    keep = publish_aged(keep)
-    long_board = publish_aged(long_board)
+    keep = publish_aged(dedupe_rows(keep))
+    long_board = publish_aged(dedupe_rows(long_board))
     apply_media_ages(ppr, media, ages)
     apply_media_ages(std, media, ages)
     apply_media_ages(classic, media, ages)
@@ -4097,12 +4250,12 @@ def main():
     # THE KEEP
     def src_td(r, name):
         v = (r.get("ranks") or {}).get(name)
-        return f'<td class="desk-only">{v if v not in (None, "") else "-"}</td>'
+        return f'<td class="src-col">{v if v not in (None, "") else "—"}</td>'
 
     def keep_extra(r):
         return (
-            f'<td class="desk-only">{r["avg"]}</td>'
-            + f'<td class="desk-only">{r["n"]}</td>'
+            f'<td class="src-col">{r["avg"]}</td>'
+            + f'<td class="src-col">{r["n"]}</td>'
             + src_td(r, "PFN (Katz/Soppe)")
             + src_td(r, "KeepTradeCut SF")
             +             f'<td class="c-val val">{fmt_val(r["value"])}</td>'
@@ -4111,9 +4264,9 @@ def main():
     keep_body = f"""
     <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} boards</p>
     <h1>The Keep</h1>
-    <p class="note">This is the big one. Superflex Dynasty. {len(keep)} names. {len(KEEP_SOURCES)} boards. Half the vote is the four long boards, half is everyone else. Every name is on at least 10 boards. The Board next door is Redraft PPR - this year, one quarterback, a point per catch.</p>
+    <p class="note">This is the big one. Superflex Dynasty. {len(keep)} names. {len(KEEP_SOURCES)} boards. Half the vote is the four long boards, half is everyone else. Every name is on at least 10 boards. Avg is the mean of boards that ranked the name — it is not the Super Aggregate rank in BK. The Board next door is Redraft PPR - this year, one quarterback, a point per catch. Rebuilt {UPDATED}.</p>
     {rank_search_bar(keep_chips)}
-    <div class="panel">{rank_table(keep, ["Super", "Boards", "PFN", "KTC", "BK Value"], keep_extra, media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(keep, ["Avg", "Boards", "PFN", "KTC", "BK Value"], keep_extra, media=media, faces=True, show_age=True, paginate=True)}</div>
     {value_bars(keep, 12, "#c8102e", "Keep value graph")}
     {sources_panel(KEEP_SOURCES)}
     {faq_html(KEEP_FAQ, heading="How The Keep is built.")}
@@ -4142,13 +4295,13 @@ def main():
         fpts_txt = f"{float(fpts):.1f}" if isinstance(fpts, (int, float)) else ""
         adp_txt = f"{float(adp):.1f}" if isinstance(adp, (int, float)) else ""
         return (
-            f'<td class="desk-only">{r["avg"]}</td>'
-            f'<td class="desk-only">{r["n"]}</td>'
-            f'<td class="desk-only">{r["yates"]}</td>'
-            f'<td class="desk-only">{r["fp"]}</td>'
-            f'<td class="desk-only">{r["karabell"]}</td>'
+            f'<td class="src-col">{r["avg"]}</td>'
+            f'<td class="src-col">{r["n"]}</td>'
+            f'<td class="src-col">{r["yates"]}</td>'
+            f'<td class="src-col">{r["fp"]}</td>'
+            f'<td class="src-col">{r["karabell"]}</td>'
             f'<td class="c-val val">{fpts_txt}</td>'
-            f'<td class="desk-only">{adp_txt}</td>'
+            f'<td class="src-col">{adp_txt}</td>'
             f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
     board_chips, board_js = pos_filter("board-pos")
@@ -4157,7 +4310,7 @@ def main():
     <h1>The Board</h1>
     <p class="note">This is the redraft PPR list. Full-PPR, 1QB, {len(ppr)} names. Super Aggregate of {len(PPR_SOURCES)} boards: 50% Yates, FantasyPros PPR ECR, and Karabell, 50% every other board that ranked the name, including Derek Brown and 4for4. Kickers and DST are omitted so this stays a skill-player draft sheet. Proj is this week's FantasyPros points. ESPN ADP sits next to the rank. BK Value uses this list's rank on the same curve as dynasty. Sort by position with the chips.</p>
     {rank_search_bar(board_chips)}
-    <div class="panel">{rank_table(ppr, ["Super", "Boards", "Yates", "FP ECR", "Karabell", "Proj", "ESPN ADP", "BK Value"], ppr_extra, media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(ppr, ["Avg", "Boards", "Yates", "FP ECR", "Karabell", "Proj", "ESPN ADP", "BK Value"], ppr_extra, media=media, faces=True, show_age=True, paginate=True)}</div>
     {value_bars(ppr, 12, "#c8102e", "Board value graph")}
     {sources_panel(PPR_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(BOARD_FAQ, heading="How The Board is built.")}
@@ -4191,7 +4344,7 @@ def main():
     <h1>Redraft Standard</h1>
     <p class="note">Standard (no extra point per catch) is a different sport than PPR. We start from the PPR Super Aggregate above, then apply Ball Keep positional taxes used across major STD vs PPR deltas: running backs −4.5 ranks, receivers +3, tight ends +2, quarterbacks +0.5. Result: Bijan / Gibbs / CMC / Henry / Taylor climb; Chase / Puka / JSN still go early but not as automatic 1.01s. Sort by position with the chips.</p>
     {rank_search_bar(std_chips)}
-    <div class="panel">{rank_table(std, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(std, ["Adj. Score", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(std, 12, "#c8102e", "Standard value graph")}
     {sources_panel(PPR_SOURCES + [("Ball Keep Standard Tax", "", "RB −4.5 ranks, WR +3, TE +2, QB +0.5 applied to the PPR Super Aggregate.")], heading="Boards in This Super Aggregate")}
     """
@@ -4204,7 +4357,7 @@ def main():
     <h1>The Classic</h1>
     <p class="note">Half-PPR is the format most rooms actually run. We start from the same PPR Super Aggregate as The Board, then apply half the Standard tax: running backs −2.25 ranks, receivers +1.5, tight ends +1, quarterbacks +0.25. RBs climb versus full PPR. Chase and Puka still go early, just not as automatic 1.01s. The Board next door is full PPR. Standard is zero. Sort by position with the chips. Check a name when they are off the board in your room. Crossed-off names stay on the list until you refresh.</p>
     {rank_search_bar(classic_chips)}
-    <div class="panel">{rank_table(classic, ["Adj. Score", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True, draft_check=True)}</div>
+    <div class="panel">{rank_table(classic, ["Adj. Score", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True, draft_check=True)}</div>
     {value_bars(classic, 12, "#c8102e", "Classic value graph")}
     {sources_panel(PPR_SOURCES + [("Ball Keep Half-PPR Tax", "", "RB −2.25 ranks, WR +1.5, TE +1, QB +0.25 applied to the PPR Super Aggregate.")], heading="Boards in This Super Aggregate")}
     """
@@ -4228,7 +4381,7 @@ def main():
     <h1>Best Ball</h1>
     <p class="note">Best ball pays boom weeks. Receivers and late quarterbacks move more than they do on The Board. Super Aggregate of {len(BEST_BALL_SOURCES)} boards: 50% Underdog ADP, FantasyPros PPR ECR, and ESPN ADP, 50% every other board that ranked the name. Full-PPR, 1QB, {len(best_ball)} skill players. Kickers and DST stay off. Check a name when they are off the board in your room. Crossed-off names stay on the list until you refresh.</p>
     {rank_search_bar(bb_chips)}
-    <div class="panel">{rank_table(best_ball, ["Super", "Boards", "UD ADP", "FP ECR", "ESPN ADP", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="desk-only">{r["ud"]}</td><td class="desk-only">{r["fp"]}</td><td class="desk-only">{r["espn"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True, draft_check=True)}</div>
+    <div class="panel">{rank_table(best_ball, ["Super", "Boards", "UD ADP", "FP ECR", "ESPN ADP", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="src-col">{r["ud"]}</td><td class="src-col">{r["fp"]}</td><td class="src-col">{r["espn"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True, draft_check=True)}</div>
     {value_bars(best_ball, 12, "#c8102e", "Best Ball value graph")}
     {sources_panel(BEST_BALL_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(BEST_BALL_FAQ, heading="How Best Ball is built.")}
@@ -4270,7 +4423,7 @@ def main():
     <h1>Notable Drafted Rookies</h1>
     <p class="note">Superflex rookie Super Aggregate. FantasyPros Superflex Rookie ECR is the long-core half. Dynasty Dealer (13-analyst team board, July 30) and PFF's Superflex rookie column (Love / Mendoza / Tate locked 1-2-3) are the extras. BK Value uses this rookie-board rank on the same curve as The Keep. The note is startup / rookie-draft language, not salary-cap dollars.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(rook_rows, ["Super", "Dealer", "FP", "PFF", "BK Value", "Note"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["dd"]}</td><td class="desk-only">{r["fp"]}</td><td class="desk-only">{r["pff"]}</td><td class="c-val val">{fmt_val(r["value"])}</td><td class="note desk-only">{esc(r["blurb"])}</td>')}</div>
+    <div class="panel">{rank_table(rook_rows, ["Super", "Dealer", "FP", "PFF", "BK Value", "Note"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["dd"]}</td><td class="src-col">{r["fp"]}</td><td class="src-col">{r["pff"]}</td><td class="c-val val">{fmt_val(r["value"])}</td><td class="note desk-only">{esc(r["blurb"])}</td>')}</div>
     {value_bars(rook_rows, 12, "#c8102e", "Rookie value graph")}
     {sources_panel(ROOKIE_SOURCES, heading="Boards in This Super Aggregate")}
     """
@@ -4325,17 +4478,17 @@ def main():
             + src_td(r, "Dynasty Nerds")
             + src_td(r, "FantasyPros ECR")
             + src_td(r, "KeepTradeCut SF")
-            + f'<td class="desk-only">{r["avg"]}</td>'
-            + f'<td class="desk-only">{r["n"]}</td>'
+            + f'<td class="src-col">{r["avg"]}</td>'
+            + f'<td class="src-col">{r["n"]}</td>'
             + f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
     def board_redraft_extra(r):
         keep_r = r.get("keep") or "-"
         ppr_r = r.get("ppr") or "-"
         return (
-            f'<td class="desk-only">{keep_r}</td>'
-            f'<td class="desk-only">{ppr_r}</td>'
-            f'<td class="desk-only">{r["avg"]}</td>'
+            f'<td class="src-col">{keep_r}</td>'
+            f'<td class="src-col">{ppr_r}</td>'
+            f'<td class="src-col">{r["avg"]}</td>'
             f'<td class="c-val val">{fmt_val(r["value"])}</td>'
         )
     sf_chips, sf_js = pos_filter("sf-pos")
@@ -4361,7 +4514,7 @@ def main():
     <h1>Top Defenses</h1>
     <p class="note">Rest of season values, not this week's stream. The skill boards skip kickers and DST. DST Super Aggregate of nine boards: 50% FantasyPros ECR, NBC Sports, and STACKED, 50% Derek Brown, Andrew Erickson, Pat Fitzmaurice, Draft Sharks, CBS (top 10, Aug 30), and Field Yates (Sep 5). Houston leads the board. Seattle and Denver sit right behind. Sort with Find a player.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    <div class="panel">{rank_table(dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(DST_SOURCES, heading="Boards in This Super Aggregate")}
     """
     write("defenses.html", board_page(
@@ -4381,7 +4534,7 @@ def main():
     <h1>Top Kickers</h1>
     <p class="note">Rest of season values, not this week's stream. Kicker Super Aggregate of six boards: 50% FantasyPros ECR, Draft Sharks (Aug 31), and RotoWire (Aug 27), 50% Derek Brown, Pat Fitzmaurice, and Field Yates (Sep 5). Aubrey leads. Fairbairn and Dicker follow. Trey Smack (GB) is on the list. Sort with Find a player.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    <div class="panel">{rank_table(kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(K_SOURCES, heading="Boards in This Super Aggregate")}
     """
     write("kickers.html", board_page(
@@ -4407,7 +4560,7 @@ def main():
     <h1>Week 2 DST</h1>
     <p class="note">This week's stream. Super Aggregate of {len(W2_DST_SOURCES)} published Week 2 boards: 50% RotoBaller and Pro Football Network, 50% ESPN, 4for4, Roto Street Journal, implied totals, and Week 1 form. {w2_dst_lead} leads the stream. The finished Week 1 board lives in the <a href="archive/week1/dst.html">archive</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w2_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    <div class="panel">{rank_table(w2_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(W2_DST_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W2_DST_FAQ, heading="How Week 2 DST is built.")}
     """
@@ -4429,7 +4582,7 @@ def main():
     <h1>Week 2 Kickers</h1>
     <p class="note">This week's stream. Super Aggregate of {len(W2_K_SOURCES)} published Week 2 boards: 50% FantasyPros ECR and RotoBaller, 50% the FantasyPros matchup table. {w2_k_lead} sits first among the kickers. The finished Week 1 board lives in the <a href="archive/week1/kickers.html">archive</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w2_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    <div class="panel">{rank_table(w2_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(W2_K_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W2_K_FAQ, heading="How Week 2 Kickers is built.")}
     """
@@ -4475,7 +4628,7 @@ def main():
     <h1>Week 3 DST</h1>
     <p class="note">Finished Week 3 stream. Super Aggregate of {len(W3_DST_SOURCES)} published Week 3 boards: 50% RotoBaller and NBC Sports, 50% FantasyPros, the RotoBaller streamer column, implied totals, and Week 2 form. {w3_dst_lead} led the stream. Live start/sit lives on <a href="{week_href('dst')}">{week_label()} DST</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w3_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    <div class="panel">{rank_table(w3_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(W3_DST_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W3_DST_FAQ, heading="How Week 3 DST is built.")}
     """
@@ -4497,7 +4650,7 @@ def main():
     <h1>Week 3 Kickers</h1>
     <p class="note">Finished Week 3 stream. Super Aggregate of {len(W3_K_SOURCES)} published Week 3 boards: 50% FantasyPros ECR and RotoBaller, 50% Sports Illustrated and Sporting News. {w3_k_lead} sat first among the kickers. Live start/sit lives on <a href="{week_href('kickers')}">{week_label()} Kickers</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w3_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    <div class="panel">{rank_table(w3_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(W3_K_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W3_K_FAQ, heading="How Week 3 Kickers is built.")}
     """
@@ -4544,7 +4697,7 @@ def main():
     <h1>Week 4 DST</h1>
     <p class="note">Finished Week 4 stream. Super Aggregate of {len(W4_DST_SOURCES)} published Week 4 boards: 50% RotoBaller and Pro Football Network, 50% FantasyPros, Sporting News, NBC Sports, implied totals, and Week 3 form. {w4_dst_lead} led the stream. Live start/sit lives on <a href="{week_href('dst')}">{week_label()} DST</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w4_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    <div class="panel">{rank_table(w4_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(W4_DST_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W4_DST_FAQ, heading="How Week 4 DST is built.")}
     """
@@ -4566,7 +4719,7 @@ def main():
     <h1>Week 4 Kickers</h1>
     <p class="note">Finished Week 4 stream. Super Aggregate of {len(W4_K_SOURCES)} published Week 4 boards: 50% FantasyPros ECR and RotoBaller, 50% Sporting News and Sportzeen. {w4_k_lead} sat first among the kickers. Live start/sit lives on <a href="{week_href('kickers')}">{week_label()} Kickers</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w4_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    <div class="panel">{rank_table(w4_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(W4_K_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W4_K_FAQ, heading="How Week 4 Kickers is built.")}
     """
@@ -4613,7 +4766,7 @@ def main():
     <h1>Week 5 DST</h1>
     <p class="note">Finished Week 5 stream. Super Aggregate of {len(W5_DST_SOURCES)} published Week 5 boards: 50% RotoBaller and Pro Football Network, 50% FantasyPros, NBC Sports, implied totals, and Week 4 form. {w5_dst_lead} led the stream. Live start/sit lives on <a href="{week_href('dst')}">{week_label()} DST</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w5_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    <div class="panel">{rank_table(w5_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(W5_DST_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W5_DST_FAQ, heading="How Week 5 DST is built.")}
     """
@@ -4635,7 +4788,7 @@ def main():
     <h1>Week 5 Kickers</h1>
     <p class="note">Finished Week 5 stream. Super Aggregate of {len(W5_K_SOURCES)} published Week 5 boards: 50% FantasyPros ECR and RotoBaller, 50% Sports Illustrated and Pro Football Network. {w5_k_lead} sat first among the kickers. Live start/sit lives on <a href="{week_href('kickers')}">{week_label()} Kickers</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w5_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    <div class="panel">{rank_table(w5_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(W5_K_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W5_K_FAQ, heading="How Week 5 Kickers is built.")}
     """
@@ -4683,7 +4836,7 @@ def main():
     <h1>Week 6 DST</h1>
     <p class="note">Finished Week 6 stream. Super Aggregate of {len(W6_DST_SOURCES)} published Week 6 boards: 50% RotoBaller and FantasyPros, 50% NBC Sports, Yahoo Boone, implied totals, and Week 5 form. {w6_dst_lead} led the stream. Live start/sit lives on <a href="{week_href('dst')}">{week_label()} DST</a>. The finished Week 5 board lives on <a href="week5-dst.html">Week 5 DST</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w6_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    <div class="panel">{rank_table(w6_dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(W6_DST_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W6_DST_FAQ, heading="How Week 6 DST is built.")}
     """
@@ -4705,7 +4858,7 @@ def main():
     <h1>Week 6 Kickers</h1>
     <p class="note">Finished Week 6 stream. Super Aggregate of {len(W6_K_SOURCES)} published Week 6 boards: 50% FantasyPros ECR and RotoBaller, 50% Pro Football Network and Yahoo Boone. {w6_k_lead} sat first among the kickers. Live start/sit lives on <a href="{week_href('kickers')}">{week_label()} Kickers</a>. The finished Week 5 board lives on <a href="week5-kickers.html">Week 5 Kickers</a>.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(w6_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
+    <div class="panel">{rank_table(w6_kickers, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True)}</div>
     {sources_panel(W6_K_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(W6_K_FAQ, heading="How Week 6 Kickers is built.")}
     """
@@ -4866,7 +5019,7 @@ def main():
     <h1>The Fence</h1>
     <p class="note">This is mixed Superflex + IDP. Top {len(fence)} names. Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed board that ranked the name. Josh Allen opens the board. Aidan Hutchinson is the first IDP. IDP names (DL, LB, DB) are marked in red so they stand out while you scroll. The Keep next door is skill players only. Top Defenses is team DST. Sort by position with the chips.</p>
     {rank_search_bar(fence_chips)}
-    <div class="panel">{rank_table(fence, ["Super", "Boards", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="desk-only">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(fence, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(fence, 12, "#c8102e", "Fence value graph")}
     {sources_panel(FENCE_MIXED_SOURCES, heading="Boards in This Super Aggregate")}
     {faq_html(FENCE_FAQ, heading="How The Fence is built.")}
@@ -5096,6 +5249,7 @@ def main():
         "https://ballkeep.com/two-clocks.html",
         "https://ballkeep.com/the-handcuff.html",
         "https://ballkeep.com/the-keep.html",
+        "https://ballkeep.com/more.html",
         "https://ballkeep.com/news.html",
         "https://ballkeep.com/the-x.html",
         "https://ballkeep.com/trade.html",

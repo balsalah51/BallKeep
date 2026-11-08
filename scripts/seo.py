@@ -6,7 +6,7 @@ import json
 import re
 
 SITE = "https://ballkeep.com"
-FONT_HREF = "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;600;700&display=swap"
+FONT_HREF = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
 ADSENSE_CLIENT = "ca-pub-1074015774205047"
 ADSENSE_CERT = "f08c47fec0942fa0"
 
@@ -70,11 +70,12 @@ def sport_pills(here: str, depth: int = 0) -> str:
 
 
 def sports_top(here: str, depth: int = 0) -> str:
-    return f'<div class="sports-top">{sport_pills(here, depth)}</div>'
+    """Other Sports lives in the header nav once. No second pill strip."""
+    return ""
 
 
 def sports_footer(here: str, depth: int = 0) -> str:
-    return f"<div>{sport_pills(here, depth)}</div>"
+    return ""
 
 
 def legal_links(depth: int = 0) -> str:
@@ -796,6 +797,7 @@ def grouped_nav(
     nav_class: str = "site-nav",
     aria_label: str = "Site",
     limit_per_group: int | None = None,
+    as_dropdown: bool = False,
 ) -> str:
     """Render header/footer nav as color-coded category groups.
 
@@ -803,11 +805,13 @@ def grouped_nav(
     href_fn(href) -> resolved href
     is_current(href) -> bool
     limit_per_group: footer copies stay short. None keeps every link.
+    as_dropdown: header collapses each group behind its label.
     """
     blocks = []
     for key, lab, items in groups or []:
         links = []
         here = False
+        first_href = ""
         for item in items or []:
             href, text, sub = _nav_item(item)
             if not href or not text:
@@ -820,6 +824,8 @@ def grouped_nav(
                 continue
             if on:
                 here = True
+            if not first_href:
+                first_href = resolved
             cur = ' aria-current="page"' if on else ""
             label = esc(text)
             if sub:
@@ -832,6 +838,17 @@ def grouped_nav(
         cls = f"nav-group nav-{esc(key)}"
         if here:
             cls += " is-here"
+        if as_dropdown:
+            if len(links) == 1:
+                blocks.append(
+                    f'<div class="{cls}"><a class="nav-top" href="{esc(first_href)}">{esc(lab)}</a></div>'
+                )
+            else:
+                blocks.append(
+                    f'<details class="{cls}"><summary class="nav-top">{esc(lab)}</summary>'
+                    f'<div class="nav-drop">{"".join(links)}</div></details>'
+                )
+            continue
         lab_html = f'<span class="nav-lab" aria-hidden="true">{esc(lab)}</span>' if lab else ""
         blocks.append(
             f'<div class="{cls}" role="group" aria-label="{esc(lab or key)}">{lab_html}{"".join(links)}</div>'
@@ -1287,6 +1304,7 @@ def rank_search_js() -> str:
     }
   });
   document.addEventListener("click", function (e) {
+    if (window.__bkBoard) return;
     var b = e.target.closest(".rank-bar .filters button");
     if (!b) return;
     var box = b.closest(".filters");
@@ -1302,6 +1320,13 @@ def rank_search_js() -> str:
 
 def rank_search_bar(filters: str = "") -> str:
     """Player search plus optional position chips above a ranking table."""
+    sorts = (
+        '<div class="sort-bar" role="group" aria-label="Sort">'
+        '<button type="button" data-sort="rank">Rank</button>'
+        '<button type="button" data-sort="age">Age</button>'
+        '<button type="button" data-sort="val">BK Value</button>'
+        "</div>"
+    )
     return (
         '<div class="rank-bar">'
         '<p class="rank-search">'
@@ -1309,6 +1334,7 @@ def rank_search_bar(filters: str = "") -> str:
         'aria-label="Find a player" autocomplete="off" spellcheck="false">'
         "</p>"
         f"{filters}"
+        f"{sorts}"
         "</div>"
         + rank_search_js()
     )

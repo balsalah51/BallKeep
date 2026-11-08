@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&amp;family=Source+Serif+4:opsz,wght@8..60,500;600;700&amp;display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" />
   <link rel="apple-touch-icon" href="https://ballkeep.com/img/bk-logo.jpg" />
   <link rel="alternate" type="application/rss+xml" title="BasketKeep News" href="https://ballkeep.com/bk/feed.xml" />
   <meta property="og:type" content="website" />
@@ -47,13 +47,13 @@
       </a>
       <nav><a href="index.html">Home</a><a href="the-keep.html">The Keep</a><a href="board.html" aria-current="page">The Board</a><a href="news.html">News</a><a href="the-x.html">The X</a><a href="guards.html">Guards</a><a href="wings.html">Wings</a><a href="bigs.html">Bigs</a><a href="rookies.html">Rookies</a><a href="trade.html">Trade</a><a href="waivers-dynasty.html">Dynasty Wire</a><a href="waivers-redraft.html">Redraft Wire</a><a href="players/index.html">Players</a></nav>
     </header>
-    <div class="sports-top"><a class="sport-switch fb" href="../index.html">BallKeep</a><a class="sport-switch bb" href="../bb/index.html">BaseKeep</a><a class="sport-switch pl" href="../pl/index.html">PitchKeep</a></div>
+    
     <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">BasketKeep</a></li><li aria-current="page">The Board</li></ol></nav>
     
     <p class="kicker">Redraft · this year</p>
     <h1>The Board</h1>
     <p class="note">The Board is redraft - 508 names, this season only. Use this list for 2026-27 startups. The Keep is dynasty.</p>
-    <div class="rank-bar"><p class="rank-search"><input type="search" class="rank-search-input" placeholder="Find a player" aria-label="Find a player" autocomplete="off" spellcheck="false"></p></div><script>
+    <div class="rank-bar"><p class="rank-search"><input type="search" class="rank-search-input" placeholder="Find a player" aria-label="Find a player" autocomplete="off" spellcheck="false"></p><div class="sort-bar" role="group" aria-label="Sort"><button type="button" data-sort="rank">Rank</button><button type="button" data-sort="age">Age</button><button type="button" data-sort="val">BK Value</button></div></div><script>
 (function () {
   function needle() {
     var inp = document.querySelector(".rank-search-input");
@@ -83,6 +83,7 @@
     }
   });
   document.addEventListener("click", function (e) {
+    if (window.__bkBoard) return;
     var b = e.target.closest(".rank-bar .filters button");
     if (!b) return;
     var box = b.closest(".filters");
@@ -98,10 +99,10 @@
     <section class="panel graph"><p class="kicker">Board value graph</p><h3>BK Value, top 12</h3><p class="note">Rank 1 is 12,000. The curve decays so mid-board names still trade, they just do not trade like 1.01.</p><div class="bar-chart" role="img" aria-label="BK Value, top 12"><div class="bar-row"><span class="bar-lab">#1 Nikola Jokic</span><div class="bar-track"><span class="bar-fill" style="width:100%;background:#1a1208"></span></div><span class="bar-val">12,000</span></div><div class="bar-row"><span class="bar-lab">#2 Shai Gilgeous-Alexander</span><div class="bar-track"><span class="bar-fill" style="width:91%;background:#1a1208"></span></div><span class="bar-val">10,873</span></div><div class="bar-row"><span class="bar-lab">#3 Giannis Antetokounmpo</span><div class="bar-track"><span class="bar-fill" style="width:85%;background:#1a1208"></span></div><span class="bar-val">10,228</span></div><div class="bar-row"><span class="bar-lab">#4 Luka Doncic</span><div class="bar-track"><span class="bar-fill" style="width:81%;background:#1a1208"></span></div><span class="bar-val">9,769</span></div><div class="bar-row"><span class="bar-lab">#5 Anthony Edwards</span><div class="bar-track"><span class="bar-fill" style="width:78%;background:#1a1208"></span></div><span class="bar-val">9,409</span></div><div class="bar-row"><span class="bar-lab">#6 Jalen Brunson</span><div class="bar-track"><span class="bar-fill" style="width:76%;background:#1a1208"></span></div><span class="bar-val">9,111</span></div><div class="bar-row"><span class="bar-lab">#7 Cade Cunningham</span><div class="bar-track"><span class="bar-fill" style="width:74%;background:#1a1208"></span></div><span class="bar-val">8,855</span></div><div class="bar-row"><span class="bar-lab">#8 Franz Wagner</span><div class="bar-track"><span class="bar-fill" style="width:72%;background:#1a1208"></span></div><span class="bar-val">8,629</span></div><div class="bar-row"><span class="bar-lab">#9 Chet Holmgren</span><div class="bar-track"><span class="bar-fill" style="width:70%;background:#1a1208"></span></div><span class="bar-val">8,426</span></div><div class="bar-row"><span class="bar-lab">#10 Jalen Williams</span><div class="bar-track"><span class="bar-fill" style="width:69%;background:#1a1208"></span></div><span class="bar-val">8,241</span></div><div class="bar-row"><span class="bar-lab">#11 Tyrese Maxey</span><div class="bar-track"><span class="bar-fill" style="width:67%;background:#1a1208"></span></div><span class="bar-val">8,070</span></div><div class="bar-row"><span class="bar-lab">#12 Victor Wembanyama</span><div class="bar-track"><span class="bar-fill" style="width:66%;background:#1a1208"></span></div><span class="bar-val">7,912</span></div></div></section>
     <section class="related related-boards" aria-label="Also on this board"><p class="kicker">Also on this board</p><h2>Keep going.</h2><div class="grid-3"><a class="tile" href="the-keep.html"><h3>The Keep</h3><p>Dynasty 400.</p></a><a class="tile" href="trade-board.html"><h3>Board Calculator</h3><p>Redraft values.</p></a><a class="tile" href="players/index.html"><h3>Player Files</h3><p>Keep files.</p></a><a class="tile" href="news.html"><h3>BK News</h3><p>Injury tape.</p></a></div></section>
     <footer>
-      © 2026 BasketKeep · ballkeep.com/bk · Rankings aggregated November 7, 2026. Not affiliated with the NBA.
+      © 2026 BasketKeep · ballkeep.com/bk · Rankings aggregated November 8, 2026. Not affiliated with the NBA.
       <nav class="footer-nav" aria-label="On this board"><a href="the-keep.html">The Keep</a><a href="news.html">News</a><a href="the-x.html">The X</a><a href="guards.html">Guards</a><a href="wings.html">Wings</a><a href="bigs.html">Bigs</a><a href="rookies.html">Rookies</a><a href="trade.html">Trade</a><a href="waivers-dynasty.html">Dynasty Wire</a><a href="waivers-redraft.html">Redraft Wire</a><a href="players/index.html">Players</a></nav>
       <p class="legal-links"><a href="../articles.html">Articles</a> · <a href="../the-method.html">The Method</a> · <a href="../explore.html">Site map</a> · <a href="../privacy.html">Privacy Policy</a></p>
-      <div><a class="sport-switch fb" href="../index.html">BallKeep</a><a class="sport-switch bb" href="../bb/index.html">BaseKeep</a><a class="sport-switch pl" href="../pl/index.html">PitchKeep</a></div>
+      
     </footer>
   </div>
   
