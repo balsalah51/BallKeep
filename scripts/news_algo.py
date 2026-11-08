@@ -251,6 +251,56 @@ def news_when(iso_s: str) -> str:
     return dt.strftime("%b %d, %Y · %H:%M UTC")
 
 
+def story_wire_time(story: dict) -> str:
+    """Original article time from sources. Never the scrape/cluster stamp."""
+    cands = []
+    for src in story.get("sources") or []:
+        dt = parse_dt(src.get("published") or "")
+        if dt and dt.year >= 2025:
+            cands.append(dt)
+    story_pub = parse_dt(story.get("published") or "")
+    if story_pub and story_pub.year >= 2025:
+        cands.append(story_pub)
+    if not cands:
+        return ""
+    return iso(max(cands))
+
+
+def news_ago(iso_s: str, now: datetime | None = None) -> str:
+    dt = parse_dt(iso_s)
+    if not dt:
+        return ""
+    now = now or datetime.now(timezone.utc)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=timezone.utc)
+    secs = max(0, int((now - dt).total_seconds()))
+    if secs < 3600:
+        mins = max(1, secs // 60)
+        return f"{mins}m ago"
+    hours = secs // 3600
+    if hours < 24:
+        return f"{hours}h ago"
+    days = hours // 24
+    if days < 14:
+        return f"{days}d ago"
+    return dt.strftime("%b %-d")
+
+
+def clean_news_blurb(text: str, sources: list | None = None) -> str:
+    t = re.sub(r"\s+", " ", (text or "")).strip()
+    pubs = []
+    for src in sources or []:
+        pub = (src.get("publisher") or "").strip()
+        if pub:
+            pubs.append(pub)
+    pubs.sort(key=len, reverse=True)
+    for pub in pubs:
+        if t.endswith(pub):
+            t = t[: -len(pub)].strip(" -–—·|")
+    t = re.sub(r"\s+[-–—|]\s+[A-Z][A-Za-z0-9 .&]{2,30}$", "", t).strip()
+    return t
+
+
 def rematch_stories(stories: list[dict], index: dict) -> list[dict]:
     """Fill player links on existing clusters once a Keep roster is available."""
     if not index or not index.get("names"):

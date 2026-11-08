@@ -971,7 +971,16 @@ def write_basket_site():
 
     latest_news = stories[:10]
     extra_news = ""
-    if latest_news:
+    news_updated = ""
+    news_path = ROOT / "data" / "news" / "basketball.json"
+    if news_path.exists():
+        try:
+            news_updated = json.loads(news_path.read_text()).get("updated") or ""
+        except json.JSONDecodeError:
+            news_updated = ""
+    from nfl_week import hours_ago as _hours_ago
+    news_hrs = _hours_ago(news_updated)
+    if latest_news and news_hrs is not None and news_hrs < 24:
         extra_news = (
             '<div class="news-list">'
             + "".join(bk_news_card(s) for s in latest_news)

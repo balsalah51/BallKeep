@@ -507,7 +507,7 @@ def run(sport: str, fetch: Fetcher = default_fetch, sleep_s: float = 0.35) -> di
 
 def main():
     ap = argparse.ArgumentParser(description="Scrape BK News wires into data/news/")
-    ap.add_argument("--sport", choices=("football", "baseball", "soccer", "basketball", "both", "all"), default="both")
+    ap.add_argument("--sport", choices=("football", "baseball", "soccer", "basketball", "both", "all"), default="all")
     ap.add_argument("--sleep", type=float, default=0.35)
     args = ap.parse_args()
     if args.sport in ("all",):
