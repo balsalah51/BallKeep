@@ -2968,7 +2968,6 @@ def home_body_html(keep, board, media, stories=None):
     {sr_h1("Fantasy Football Superflex Dynasty Rankings")}
     {slim_banner("Ball Keep", UPDATED, "img/logo.jpg", "Ball Keep logo", "Superflex dynasty")}
     {outbound_pills("fb")}
-    {today}
     <section class="home-snapshot" aria-label="Top of the boards">
       <article class="home-snap keep">
         <header class="home-snap-head">
@@ -2992,6 +2991,7 @@ def home_body_html(keep, board, media, stories=None):
     {this_week}
     {wire}
     <p class="note"><a href="more.html">More of the site</a></p>
+    {today}
     """
 
 

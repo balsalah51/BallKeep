@@ -288,6 +288,8 @@ def main():
     assert 'href="recent-trades.html"' not in header_nav
     assert 'id="today"' in home
     assert "home-today" in home
+    assert home.find("home-snapshot") < home.find('id="today"')
+    assert home.find("more.html") < home.find('id="today"')
     assert "the-keep.html" in home
     assert "board.html" in home
     assert "redraft-superflex.html" in more

@@ -1203,6 +1203,9 @@ def test_home_page_markup():
     assert "css/site.css?v=94" in doc
     assert "css/chrome.css?v=94" in doc
     assert 'id="today"' in html
+    assert html.find("home-snapshot") < html.find('id="today"')
+    assert html.find("more.html") < html.find('id="today"')
+    assert "Your board first." in html
     assert 'href="/"' in doc
     assert "Sleeper" in html
     assert "KeepTradeCut" in html
