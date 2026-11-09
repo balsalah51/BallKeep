@@ -146,13 +146,13 @@ def test_football_nav_keeps_every_link():
         "Classic · Half-PPR", "Redraft Superflex",
         "The D", "Kickers", "The Fence",
         "Weekly", f"{w} DST", f"{w} K", f"{w} Predictions", "Waivers", "Injuries",
-        "Trade", "The Handcuff", "ADP", "Method", "More",
+        "Trade", "The Handcuff", "ADP", "Method",
         "My Team",
-        "BaseKeep", "BasketKeep", "PitchKeep",
+        "More", "BaseKeep", "BasketKeep", "PitchKeep", "DeepBase",
     ]
     assert week_href("dst") == "week-dst.html"
     keys = [k for k, _lab, _items in NAV_GROUPS]
-    assert keys == ["rankings", "week", "tools", "mine", "sports"]
+    assert keys == ["rankings", "week", "tools", "mine", "more"]
     header = fb_header_nav("weekly.html", 0)
     assert 'href="/">Home</a>' in header
     assert 'aria-current="page">Weekly</a>' in header
@@ -1200,11 +1200,21 @@ def test_home_page_markup():
     assert "redraft desks" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=90" in doc
+    assert "css/site.css?v=94" in doc
+    assert "css/chrome.css?v=94" in doc
     assert 'id="today"' in html
     assert 'href="/"' in doc
     assert "Sleeper" in html
+    assert "KeepTradeCut" in html
+    assert "FantasyPros" in html
+    assert "ESPN Fantasy" in html
+    assert 'rel="noopener"' in html
+    assert "slim-banner" in html
     assert "more.html" in html
+    assert 'class="sports-top"' in doc
+    assert "sport-switch fb is-here" in doc
+    assert "sport-switch db" in doc
+    assert "DeepBase" in doc
 
 
 def test_player_counting_stats():
@@ -1240,6 +1250,41 @@ def test_player_counting_stats():
     assert 'id="player-stats"' in doc
     assert doc.find("player-hero") < doc.find('id="player-stats"') < doc.find("rank-grid")
     assert ">Yearly<" in doc and "Game by game" in doc
+
+
+def test_deepbase_shared_boards():
+    from deepbase import load_boards, PAGES
+    from seo import sport_pills
+    payload = load_boards()
+    assert [p["id"] for p in PAGES] == ["deep-dynasty", "deep-farm", "majors", "lineups"]
+    by_id = payload["by_id"]
+    assert by_id["deep-dynasty"]["count"] >= 400
+    assert by_id["deep-farm"]["count"] >= 100
+    assert by_id["majors"]["count"] >= 200
+    assert by_id["lineups"]["count"] >= 100
+    farm_keys = {r["key"] for r in by_id["deep-farm"]["rows"]}
+    assert all(r["key"] not in farm_keys for r in by_id["majors"]["rows"])
+    pills = sport_pills("db", 1)
+    assert "DeepBase" in pills
+    assert "is-here" in pills
+    assert "../deepbase/index.html" in pills
+    assert 'class="sport-switch db is-here"' in pills
+    root = Path(__file__).resolve().parents[1]
+    first = by_id["deep-dynasty"]["rows"][0]["name"]
+    n = by_id["deep-dynasty"]["count"]
+    for rel in ("bb/deep-dynasty.html", "deepbase/deep-dynasty.html"):
+        doc = (root / rel).read_text()
+        assert first in doc
+        assert f"{n} names" in doc
+        assert "sport-switch db" in doc
+    bb_home = (root / "bb" / "index.html").read_text()
+    db_home = (root / "deepbase" / "index.html").read_text()
+    assert "Deep Dynasty" in bb_home and "Deep Farm" in bb_home
+    assert "Majors" in bb_home and "Lineups" in bb_home
+    assert f"<strong>{n}</strong> players" in bb_home
+    assert f"<strong>{n}</strong> players" in db_home
+    assert "Back to BaseKeep" in db_home
+    assert 'class="db-page-nav"' in db_home
 
 
 if __name__ == "__main__":

@@ -33,8 +33,10 @@ from news_algo import (  # noqa: E402
 )
 from x_tape import cards_html as x_cards  # noqa: E402
 from seo import (  # noqa: E402
+    CHROME_VER,
     also_on_desk,
     article_jsonld,
+    board_tools_html,
     breadcrumb_jsonld,
     breadcrumbs,
     canon,
@@ -42,9 +44,10 @@ from seo import (  # noqa: E402
     face_alt,
     faq_html,
     faq_jsonld,
-    footer_nav,
+    grouped_nav,
     head_tags,
     legal_links,
+    outbound_pills,
     person_jsonld,
     rank_card,
     rank_list_jsonld,
@@ -52,10 +55,13 @@ from seo import (  # noqa: E402
     rank_search_key,
     related_players_html,
     related_stories_html,
+    slim_banner,
+    sport_header_nav,
     sports_footer,
     sports_top,
     sr_h1,
     strip_em,
+    theme_boot,
     value_bars,
     website_jsonld,
     hub_search_bar,
@@ -108,6 +114,35 @@ BK_NAV = [
     ("waivers-dynasty.html", "Dynasty Wire"),
     ("waivers-redraft.html", "Redraft Wire"),
     ("players/index.html", "Players"),
+    ("more.html", "More"),
+]
+
+BK_NAV_GROUPS = [
+    ("rankings", "Rankings", [
+        ("index.html", "Home"),
+        ("the-keep.html", "The Keep"),
+        ("board.html", "The Board"),
+        ("guards.html", "Guards"),
+        ("wings.html", "Wings"),
+        ("bigs.html", "Bigs"),
+        ("rookies.html", "Rookies"),
+    ]),
+    ("week", "This Week", [
+        ("news.html", "News"),
+        ("waivers-dynasty.html", "Dynasty Wire"),
+        ("waivers-redraft.html", "Redraft Wire"),
+    ]),
+    ("tools", "Tools", [
+        ("trade.html", "Trade"),
+    ]),
+    ("mine", "My Team", [
+        ("players/index.html", "Players"),
+    ]),
+    ("more", "More", [
+        ("more.html", "More"),
+        ("the-x.html", "The X"),
+        ("../deepbase/index.html", "DeepBase"),
+    ]),
 ]
 
 
@@ -155,7 +190,12 @@ BK_SEO = {
     "index.html": (
         "Fantasy Basketball Dynasty Rankings | BasketKeep",
         "2026 dynasty basketball full ranked tape, this-year redraft, position boards, BK Value, and hourly NBA news.",
-        "img/bk-hero.jpg",
+        "img/bk-logo.jpg",
+    ),
+    "more.html": (
+        "More | BasketKeep",
+        "The rest of BasketKeep: position boards, wires, tools, The X, and the other sports.",
+        "img/bk-logo.jpg",
     ),
     "the-keep.html": (
         "2026 Dynasty Basketball Rankings (Full Tape) | BasketKeep",
@@ -312,16 +352,27 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
             crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
             robots=None, canonical=None, schema_type=None, body_class=""):
     prefix = "../" * depth
-    links = []
-    for href, label in BK_NAV:
-        cur = ' aria-current="page"' if bk_nav_current(href, path) else ""
-        target = bk_nav_target(href, path, depth)
-        links.append(f'<a href="{esc(target)}"{cur}>{esc(label)}</a>')
     packed = BK_SEO.get(path)
     full_title = doc_title or (packed[0] if packed else f"{title} | BasketKeep")
     desc = description or (packed[1] if packed else f"{title} on BasketKeep. Dynasty basketball rankings, BK Value, and BK News. Updated {UPDATED}.")
     img = image or (packed[2] if packed else "img/bk-logo.jpg")
-    foot = footer_nav([(bk_nav_target(h, path, depth), lab) for h, lab in BK_NAV], bk_nav_target(path, path, depth))
+    head_nav = sport_header_nav(
+        BK_NAV_GROUPS,
+        path,
+        lambda h: bk_nav_target(h, path, depth),
+        lambda h: bk_nav_current(h, path),
+        bk_nav_target("players/index.html", path, depth),
+    )
+    foot = grouped_nav(
+        BK_NAV_GROUPS,
+        lambda h: bk_nav_target(h, path, depth),
+        lambda h: bk_nav_current(h, path),
+        skip_home=True,
+        skip_current=True,
+        nav_class="footer-nav site-nav",
+        aria_label="On this board",
+        limit_per_group=2,
+    )
     crumb_html = crumbs or ""
     return f"""<!doctype html>
 <html lang="en">
@@ -329,8 +380,10 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "bk/"), image=img, brand="BasketKeep", brand_url="https://ballkeep.com/bk/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
-  <link rel="stylesheet" href="{prefix}css/bk.css?v=40" />
+  <link rel="stylesheet" href="{prefix}css/bk.css?v={CHROME_VER}" />
+  <link rel="stylesheet" href="{prefix}css/chrome.css?v={CHROME_VER}" />
   <link rel="icon" href="{prefix}img/bk-logo.jpg" />
+  {theme_boot()}
 </head>
 <body{f' class="{esc(body_class)}"' if body_class else ""}>
   <div class="wrap">
@@ -342,18 +395,22 @@ def bk_page(title, path, body, extra_js="", depth=1, description=None, image=Non
           <p>Dynasty · Redraft · Hardwood</p>
         </div>
       </a>
-      <nav>{''.join(links)}</nav>
+      {sports_top("bk", depth)}
+      {head_nav}
     </header>
-    {sports_top("bk", depth)}
     {crumb_html}
     {body}
     <footer>
-      © {date.today().year} BasketKeep · ballkeep.com/bk · Rankings aggregated {UPDATED}. Not affiliated with the NBA.
-      {foot}
+      <div class="footer-mast">
+        <p class="footer-mark">{wordmark()}</p>
+        <p>© {date.today().year} BasketKeep · ballkeep.com/bk · Rankings aggregated {UPDATED}. Not affiliated with the NBA.</p>
+      </div>
+      <div class="footer-cols">{foot}</div>
       {legal_links(depth)}
       {sports_footer("bk", depth)}
     </footer>
   </div>
+  <script src="{prefix}js/theme.js?v={CHROME_VER}" defer></script>
   {extra_js}
 </body>
 </html>
@@ -370,6 +427,10 @@ def bk_board_page(title, path, body, extra_js="", depth=1, extra_jsonld=None):
     for blob in extra_jsonld or []:
         if blob:
             ld.append(blob)
+    prefix = "../" * depth
+    board_tag = f'<script src="{prefix}js/board.js?v={CHROME_VER}" defer></script>'
+    if "js/board.js" not in (extra_js or ""):
+        extra_js = (extra_js or "") + board_tag
     return bk_page(
         title, path, body + extra, extra_js, depth=depth,
         crumbs=breadcrumbs([("BasketKeep", home), (title, None)]),
@@ -384,8 +445,10 @@ def _rank_th(label):
         cls = "c-val"
     elif label == "Age":
         cls = "c-age"
+    elif label == "Pos/Team":
+        cls = "c-pos-team"
     elif label not in ("BK", "Player", "Pos", "Team"):
-        cls = "desk-only"
+        cls = "src-col"
     attr = f' class="{cls}"' if cls else ""
     return f"<th{attr}>{esc(label)}</th>"
 
@@ -394,42 +457,54 @@ def rank_table(rows, extra_headers=None, extra_cells=None, show_age=True, media=
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
-    cols = ["BK", "Player", "Pos", "Team"]
+    cols = ["BK", "Player", "Pos/Team"]
+    if show_age:
+        cols.append("Age")
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
         pos = r.get("pos") or ""
         team = r.get("team") or ""
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
-        age_label = f"age {age_txt}" if show_age and age_txt else ""
-        age_span = f'<span class="age-desc">{esc(age_label)}</span>' if age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
             f" · {esc(team)}</div>"
+        )
+        pos_team = (
+            f'<span class="pos {esc(pos)}">{esc(pos)}</span>'
+            + (f'<span class="team-tag">{esc(team)}</span>' if team else "")
         )
         href = f"players/{slugify(r['name'])}.html"
         name = f'<a class="player-link" href="{href}"><strong>{esc(r["name"])}</strong></a>'
         face = ""
         if faces:
             face = (
-                f'<img class="face" src="{esc(face_src(r, media, depth))}" '
-                f'alt="{esc(face_alt(r.get("name")))}" loading="lazy" />'
+                f'<img class="face pos-{esc(pos)}" src="{esc(face_src(r, media, depth))}" '
+                f'alt="{esc(face_alt(r.get("name")))}" width="40" height="40" loading="lazy" />'
             )
-        stack = f'<span class="name-stack">{name}{age_span}{meta}</span>'
+        stack = f'<span class="name-stack">{name}{meta}</span>'
         dn = rank_search_key(r.get("name"), pos, team, r.get("group"))
+        age_cell = f'<td class="c-age">{esc(age_txt)}</td>' if show_age else ""
         body.append(
-            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or "")}" data-name="{dn}">'
+            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or "")}" data-name="{dn}" '
+            f'data-rank="{esc(r.get("bk") or "")}" data-age="{esc(age_txt)}" data-val="{esc(r.get("value") or "")}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name">{face}{stack}</td>'
-            f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
-            f'<td class="c-team">{esc(team)}</td>'
+            f'<td class="c-name"><div class="name-cell">{face}{stack}</div></td>'
+            f'<td class="c-pos-team">{pos_team}</td>'
+            f"{age_cell}"
             f"{extra_cells(r)}"
             "</tr>"
         )
-    cls = "rank-table faces" if faces else "rank-table"
+    has_src = any(h not in ("BK Value", "Age") for h in extra_headers)
+    tools = board_tools_html(has_src)
+    bits = ["rank-table", "compact"]
+    if faces:
+        bits.append("faces")
     return (
-        f'<div class="table-wrap"><table class="{cls}">'
+        f"{tools}"
+        f'<div class="table-wrap"><table class="{" ".join(bits)}">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
+        f'<p class="board-empty" hidden>No players match that search.</p>'
     )
 
 
@@ -501,8 +576,8 @@ def player_image(r, media):
 
 def val_cell(r):
     return (
-        f'<td class="desk-only">{r.get("avg", "-")}</td>'
-        f'<td class="desk-only">{r.get("n", "-")}</td>'
+        f'<td class="src-col">{r.get("avg", "-")}</td>'
+        f'<td class="src-col">{r.get("n", "-")}</td>'
         f'<td class="c-val val">{fmt_val(r.get("value"))}</td>'
     )
 
@@ -989,38 +1064,46 @@ def write_basket_site():
         )
     keep_n = len(BK_SOURCES)
     home = f"""
-    <section class="home-hero" aria-label="Basketball rankings">
-      <div class="home-hero-media" aria-hidden="true"></div>
-      <div class="home-hero-copy">
-        {sr_h1("Fantasy Basketball Dynasty Rankings")}
-        <p class="home-eyebrow">Ranks {UPDATED} · 2026-27 season is on</p>
-        <p class="home-mark">{wordmark()}</p>
-        <div class="home-ctas">
-          <a class="cta" href="the-keep.html">The Keep</a>
-          <a class="cta alt" href="board.html">The Board</a>
-        </div>
-      </div>
-    </section>
+    {sr_h1("Fantasy Basketball Dynasty Rankings")}
+    {slim_banner("BasketKeep", UPDATED, "../img/bk-logo.jpg", "BasketKeep logo", "Dynasty basketball")}
+    {outbound_pills("bk")}
+    <p class="note"><a href="players/index.html">My Team · Player files</a></p>
     <section class="home-snapshot" aria-label="Top of the boards">
       <article class="home-snap keep">
         <header class="home-snap-head">
           <p class="kicker">The Keep</p>
           <h2>Dynasty basketball</h2>
-          <p>Top {len(keep)} · {keep_n} boards</p>
+          <p>Top 10 · {keep_n} boards · {UPDATED}</p>
           <a class="home-snap-link" href="the-keep.html">Full board</a>
         </header>
-        {home_rank_preview(keep, media)}
+        {home_rank_preview(keep, media, 10)}
       </article>
       <article class="home-snap board">
         <header class="home-snap-head">
           <p class="kicker">The Board</p>
           <h2>Redraft basketball</h2>
-          <p>This year only</p>
+          <p>Top 10 · this year only</p>
           <a class="home-snap-link" href="board.html">Full board</a>
         </header>
-        {home_rank_preview(board, media)}
+        {home_rank_preview(board, media, 10)}
       </article>
     </section>
+    <section class="desk-block tape home-wire">
+      <p class="kicker">News</p>
+      <h2>The wire.</h2>
+      {extra_news or '<p class="note">News lands when published.</p>'}
+    </section>
+    <p class="note"><a href="more.html">More of the site</a></p>
+    """
+    write("bk/index.html", bk_page(
+        "Home", "index.html", home,
+        extra_jsonld=[website_jsonld("BasketKeep", "https://ballkeep.com/bk/"), faq_jsonld(BK_HOME_FAQ)],
+        body_class="home",
+    ))
+    more = f"""
+    <p class="kicker">The rest of the site</p>
+    <h1>More</h1>
+    <p class="note">Everything that used to sit on Home.</p>
     {desk_block("lists", "More ranks", "Positions, rookies, and the wires.", "Guards, wings, bigs, and the stash boards.", [
         ("guards.html", "Guards", "PG and SG, Keep-ranked."),
         ("wings.html", "Wings", "SF and PF."),
@@ -1036,7 +1119,7 @@ def write_basket_site():
     {desk_block("tape", "Tape", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "NBA memes. Pictures on the card."),
         ("news.html", "BK News", "Injuries, roster, coaches."),
-    ], extra_news)}
+    ])}
     <ul class="home-proof">
       <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
       <li><strong>{len(keep)}</strong><span>Keep names</span></li>
@@ -1063,11 +1146,7 @@ def write_basket_site():
     </section>
     {faq_html(BK_HOME_FAQ, heading="How BasketKeep works.")}
     """
-    write("bk/index.html", bk_page(
-        "Home", "index.html", home,
-        extra_jsonld=[website_jsonld("BasketKeep", "https://ballkeep.com/bk/"), faq_jsonld(BK_HOME_FAQ)],
-        body_class="home",
-    ))
+    write("bk/more.html", bk_page("More", "more.html", more))
 
     flt, js = filter_js(["G", "F", "C", "PG", "SG", "SF", "PF"])
     keep_body = f"""
@@ -1222,7 +1301,7 @@ def write_basket_site():
         "urls": ["https://ballkeep.com/bk/"] + [
             "https://ballkeep.com/bk/" + p
             for p in [
-                "the-keep.html", "board.html", "news.html", "the-x.html",
+                "the-keep.html", "board.html", "news.html", "the-x.html", "more.html",
                 "guards.html", "wings.html", "bigs.html", "rookies.html",
                 "trade.html", "trade-keep.html", "trade-board.html",
                 "waivers-dynasty.html", "waivers-redraft.html", "players/",

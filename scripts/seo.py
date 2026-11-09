@@ -7,6 +7,7 @@ import re
 
 SITE = "https://ballkeep.com"
 FONT_HREF = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+CHROME_VER = 94
 ADSENSE_CLIENT = "ca-pub-1074015774205047"
 ADSENSE_CERT = "f08c47fec0942fa0"
 
@@ -47,6 +48,15 @@ BRANDS = {
         "rss": f"{SITE}/pl/feed.xml",
         "sport": "Soccer",
     },
+    "DeepBase": {
+        "url": f"{SITE}/deepbase/",
+        "logo": "img/bb-logo.jpg",
+        "theme": "#0d9488",
+        "sameAs": ["https://github.com/balsalah51/BallKeep"],
+        "rss_title": "BaseKeep News",
+        "rss": f"{SITE}/bb/feed.xml",
+        "sport": "Baseball",
+    },
 }
 
 SPORT_LINKS = [
@@ -54,28 +64,144 @@ SPORT_LINKS = [
     ("bb", "bb/", "BaseKeep"),
     ("bk", "bk/", "BasketKeep"),
     ("pl", "pl/", "PitchKeep"),
+    ("db", "deepbase/", "DeepBase"),
 ]
+
+OUTBOUND_LINKS = {
+    "fb": [
+        ("Sleeper", "https://sleeper.com"),
+        ("KeepTradeCut", "https://keeptradecut.com"),
+        ("FantasyPros", "https://www.fantasypros.com/nfl/"),
+        ("ESPN Fantasy", "https://fantasy.espn.com/football/"),
+    ],
+    "bb": [
+        ("FanGraphs", "https://www.fangraphs.com"),
+        ("MLB.com", "https://www.mlb.com"),
+        ("FantasyPros", "https://www.fantasypros.com/mlb/"),
+        ("ESPN Fantasy", "https://fantasy.espn.com/baseball/"),
+    ],
+    "bk": [
+        ("Hashtag Basketball", "https://hashtagbasketball.com"),
+        ("Basketball-Reference", "https://www.basketball-reference.com"),
+        ("FantasyPros", "https://www.fantasypros.com/nba/"),
+        ("ESPN Fantasy", "https://fantasy.espn.com/basketball/"),
+    ],
+    "pl": [
+        ("FPL", "https://fantasy.premierleague.com"),
+        ("Premier League", "https://www.premierleague.com"),
+        ("FF Scout", "https://www.fantasyfootballscout.co.uk"),
+        ("ESPN Soccer", "https://www.espn.com/soccer/"),
+    ],
+}
 
 
 def sport_pills(here: str, depth: int = 0) -> str:
-    """Clickable sport-switch pills, same look in the header strip and the footer."""
+    """All four sports as pills. The current site is marked, not omitted."""
     prefix = "../" * depth
     bits = []
     for key, folder, label in SPORT_LINKS:
-        if key == here:
-            continue
         href = f"{prefix}{folder}index.html" if folder else f"{prefix}index.html"
-        bits.append(f'<a class="sport-switch {key}" href="{href}">{label}</a>')
+        here_cls = " is-here" if key == here else ""
+        cur = ' aria-current="page"' if key == here else ""
+        bits.append(f'<a class="sport-switch {key}{here_cls}" href="{href}"{cur}>{label}</a>')
     return "".join(bits)
 
 
 def sports_top(here: str, depth: int = 0) -> str:
-    """Other Sports lives in the header nav once. No second pill strip."""
-    return ""
+    return (
+        f'<nav class="sports-top" aria-label="Ball Keep sports">'
+        f"{sport_pills(here, depth)}"
+        f"</nav>"
+    )
 
 
 def sports_footer(here: str, depth: int = 0) -> str:
-    return ""
+    return (
+        f'<nav class="sports-footer" aria-label="Ball Keep sports">'
+        f"{sport_pills(here, depth)}"
+        f"</nav>"
+    )
+
+
+def outbound_pills(here: str) -> str:
+    items = OUTBOUND_LINKS.get(here) or []
+    if not items:
+        return ""
+    bits = []
+    for label, url in items:
+        bits.append(
+            f'<a class="out-pill" href="{esc(url)}" target="_blank" rel="noopener">{esc(label)}</a>'
+        )
+    return f'<nav class="out-pills" aria-label="Other fantasy sites">{"".join(bits)}</nav>'
+
+
+def slim_banner(title: str, updated: str, logo_src: str, logo_alt: str, kicker: str = "") -> str:
+    kick = f'<p class="kicker">{esc(kicker)}</p>' if kicker else ""
+    return (
+        f'<section class="slim-banner" aria-label="{esc(title)}">'
+        f'<img src="{esc(logo_src)}" alt="{esc(logo_alt)}" width="48" height="48" />'
+        f"<div>{kick}<h2>{esc(title)}</h2>"
+        f'<p class="slim-updated">Updated {esc(updated)}</p></div>'
+        f"</section>"
+    )
+
+
+def theme_boot() -> str:
+    return (
+        "<script>\n"
+        "  (function(){try{var t=localStorage.getItem(\"bk-theme\");"
+        "document.documentElement.setAttribute(\"data-theme\",t===\"light\"?\"light\":\"dark\");}"
+        "catch(e){document.documentElement.setAttribute(\"data-theme\",\"dark\");}})();\n"
+        "</script>"
+    )
+
+
+def theme_toggle_btn() -> str:
+    return '<button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">Light</button>'
+
+
+def head_search_form(action: str) -> str:
+    return (
+        f'<form class="head-search" action="{esc(action)}" method="get" role="search">'
+        f'<label class="sr-only" for="head-q">Search players</label>'
+        f'<input id="head-q" type="search" name="q" placeholder="Search players" '
+        f'aria-label="Search players" autocomplete="off" />'
+        f"</form>"
+        f"{theme_toggle_btn()}"
+    )
+
+
+def sport_header_nav(groups, path, href_fn, is_current, search_action: str) -> str:
+    inner = grouped_nav(
+        groups,
+        href_fn,
+        is_current,
+        nav_class="site-nav nav-wide",
+        as_dropdown=True,
+    )
+    return (
+        f"{head_search_form(search_action)}"
+        f'<details class="nav-drawer">'
+        f"<summary>Menu</summary>"
+        f"{inner}"
+        f"</details>"
+    )
+
+
+def board_tools_html(has_src: bool = True) -> str:
+    src = (
+        '<button type="button" class="board-sources" aria-pressed="false">Show sources</button>'
+        if has_src else ""
+    )
+    return (
+        '<div class="board-tools">'
+        '<div class="density" role="group" aria-label="Row density">'
+        '<button type="button" data-density="compact" class="active">Compact</button>'
+        '<button type="button" data-density="comfortable">Comfortable</button>'
+        f"</div>{src}"
+        '<p class="board-count" role="status"></p>'
+        "</div>"
+    )
 
 
 def legal_links(depth: int = 0) -> str:
@@ -388,6 +514,7 @@ SEARCH_TEMPLATES = {
     "BasketKeep": f"{SITE}/bk/players/index.html?q={{search_term_string}}",
     "BaseKeep": f"{SITE}/bb/players/index.html?q={{search_term_string}}",
     "PitchKeep": f"{SITE}/pl/players/index.html?q={{search_term_string}}",
+    "DeepBase": f"{SITE}/bb/players/index.html?q={{search_term_string}}",
 }
 
 
