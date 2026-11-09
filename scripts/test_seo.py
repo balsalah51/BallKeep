@@ -1200,8 +1200,8 @@ def test_home_page_markup():
     assert "redraft desks" not in html
     doc = page("Home", "index.html", html, body_class="home")
     assert '<body class="home">' in doc
-    assert "css/site.css?v=94" in doc
-    assert "css/chrome.css?v=94" in doc
+    assert "css/site.css?v=95" in doc
+    assert "css/chrome.css?v=95" in doc
     assert 'id="today"' in html
     assert html.find("home-snapshot") < html.find('id="today"')
     assert html.find("more.html") < html.find('id="today"')
@@ -1257,16 +1257,42 @@ def test_player_counting_stats():
 
 def test_deepbase_shared_boards():
     from deepbase import load_boards, PAGES
+    from mlb_deep import FARM_AB_MAX, FARM_IP_MAX, is_farm_eligible, is_majors_eligible
     from seo import sport_pills
     payload = load_boards()
     assert [p["id"] for p in PAGES] == ["deep-dynasty", "deep-farm", "majors", "lineups"]
     by_id = payload["by_id"]
-    assert by_id["deep-dynasty"]["count"] >= 400
-    assert by_id["deep-farm"]["count"] >= 100
-    assert by_id["majors"]["count"] >= 200
-    assert by_id["lineups"]["count"] >= 100
+    assert by_id["deep-dynasty"]["count"] >= 600
+    assert by_id["deep-farm"]["count"] >= 500
+    assert by_id["majors"]["count"] >= 650
+    assert by_id["lineups"].get("team_count") == 30
     farm_keys = {r["key"] for r in by_id["deep-farm"]["rows"]}
-    assert all(r["key"] not in farm_keys for r in by_id["majors"]["rows"])
+    maj_keys = {r["key"] for r in by_id["majors"]["rows"]}
+    assert farm_keys.isdisjoint(maj_keys)
+    for r in by_id["deep-farm"]["rows"]:
+        if r.get("matched"):
+            assert is_farm_eligible(r.get("ab") or 0, r.get("ip") or 0), r.get("name")
+    for r in by_id["majors"]["rows"]:
+        assert is_majors_eligible(r.get("ab") or 0, r.get("ip") or 0), r.get("name")
+    ohtani = next(r for r in by_id["majors"]["rows"] if "ohtani" in r["name"].lower())
+    assert ohtani["key"] not in farm_keys
+    grads = [
+        "Max Clark", "Roman Anthony", "Kristian Campbell", "JJ Wetherholt",
+        "Coby Mayo", "Carson Benge", "Sal Stewart", "Jordan Lawlar",
+        "Cole Young", "Jac Caglianone", "Colson Montgomery",
+    ]
+    farm_names = {r["name"] for r in by_id["deep-farm"]["rows"]}
+    lookup = {r["name"]: r for r in by_id["deep-farm"]["rows"] + by_id["majors"]["rows"]}
+    for name in grads:
+        rec = lookup.get(name)
+        if rec and not is_farm_eligible(rec.get("ab") or 0, rec.get("ip") or 0):
+            assert name not in farm_names, name
+    assert by_id["deep-dynasty"]["rows"][0]["value"] == 12000
+    assert any(r.get("bk_model") for r in by_id["majors"]["rows"])
+    blocks = payload["lineup_blocks"]
+    assert len(blocks) == 30
+    assert [b["name"] for b in blocks] == sorted(b["name"] for b in blocks)
+    assert all(len(b.get("hitters") or []) == 9 for b in blocks)
     pills = sport_pills("db", 1)
     assert "DeepBase" in pills
     assert "is-here" in pills
@@ -1278,8 +1304,24 @@ def test_deepbase_shared_boards():
     for rel in ("bb/deep-dynasty.html", "deepbase/deep-dynasty.html"):
         doc = (root / rel).read_text()
         assert first in doc
-        assert f"{n} names" in doc
+        assert f"{n} players" in doc
         assert "sport-switch db" in doc
+        assert 'data-show-all="1"' in doc
+        assert "<img class=\"face" not in doc
+        assert ">AB<" in doc and ">IP<" in doc
+        assert "142-game" not in doc
+        assert "BaseKeep" not in doc.split("<tbody>", 1)[-1].split("</tbody>", 1)[0]
+        assert "DeepBase" not in doc.split("<tbody>", 1)[-1].split("</tbody>", 1)[0]
+    farm_doc = (root / "deepbase" / "deep-farm.html").read_text()
+    assert "<img class=\"face" not in farm_doc
+    assert f'{by_id["deep-farm"]["count"]} players' in farm_doc
+    lu = (root / "deepbase" / "lineups.html").read_text()
+    assert "Jump to team" in lu
+    assert "lineup-team" in lu
+    assert "BK projection" in lu
+    assert "Shohei Ohtani" in lu
+    assert "<img class=\"face" not in lu
+    assert "hitter-ranking" not in lu.lower()
     bb_home = (root / "bb" / "index.html").read_text()
     db_home = (root / "deepbase" / "index.html").read_text()
     assert "Deep Dynasty" in bb_home and "Deep Farm" in bb_home
@@ -1288,6 +1330,9 @@ def test_deepbase_shared_boards():
     assert f"<strong>{n}</strong> players" in db_home
     assert "Back to BaseKeep" in db_home
     assert 'class="db-page-nav"' in db_home
+    unmatched = payload["unmatched"]
+    assert isinstance(unmatched, list)
+    _ = FARM_AB_MAX, FARM_IP_MAX
 
 
 if __name__ == "__main__":

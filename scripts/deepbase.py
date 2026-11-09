@@ -13,12 +13,20 @@ from bb_data import (  # noqa: E402
     aggregate,
     as_map,
     build_meta,
-    filter_group,
     load_fp_dynasty,
     load_raw,
 )
-from bb_prospects import FARM_SOURCES, load_farm  # noqa: E402
+from bb_prospects import FARM_SOURCES  # noqa: E402
 from bk_curve import bk_value  # noqa: E402
+from mlb_deep import (  # noqa: E402
+    FARM_AB_MAX,
+    FARM_IP_MAX,
+    build_lineups,
+    build_universe,
+    fetch_all,
+    is_farm_eligible,
+    is_majors_eligible,
+)
 from seo import (  # noqa: E402
     CHROME_VER,
     breadcrumb_jsonld,
@@ -49,6 +57,10 @@ DEEP_SOURCES = [
     ("RotoGraphs Dynasty Model", "https://fantasy.fangraphs.com/rotographs-dynasty-rankings/", "Top 500 discounted-dollar model."),
     ("The Dynasty Guru - Points", "https://thedynastyguru.com/2026/08/10/the-tdg-top-500-for-points-leagues-2026-mid-season-updates/", "Mid-season Top 500."),
     ("FantasyPros Dynasty ECR", "https://www.fantasypros.com/mlb/rankings/dynasty-overall.php", "Keeper and dynasty expert consensus."),
+    ("BK model", "", "3-year weighted 5/4/3 MLB production. Fills remaining Majors spots; labeled BK model."),
+]
+DEEP_FARM_SOURCES = FARM_SOURCES + [
+    ("MLB Pipeline team top 30s", "https://www.mlb.com/prospects", "Public Pipeline top 30 for each of the 30 clubs."),
 ]
 
 PAGES = [
@@ -67,8 +79,8 @@ PAGES = [
         "file": "deep-farm.html",
         "title": "Deep Farm",
         "nav": "Deep Farm",
-        "kicker": "Prospects past the top 100",
-        "blurb": "Every ranked prospect on the five farm lists, not just the top 100.",
+        "kicker": "130 AB and 50 IP or fewer",
+        "blurb": "Prospects who have not crossed 130 career MLB at-bats or 50 innings. Pipeline team top 30s plus the public farm lists.",
         "seo_title": "Deep Farm MLB Prospect Rankings | DeepBase",
         "seo_desc": "Deep MLB prospect rankings beyond the top 100. Pipeline, Baseball America, ESPN, SI, and FanGraphs.",
     },
@@ -77,8 +89,8 @@ PAGES = [
         "file": "majors.html",
         "title": "Majors",
         "nav": "Majors",
-        "kicker": "Big-league dynasty only",
-        "blurb": "Dynasty ranks with the farm stripped out. Everyday majors, no kids.",
+        "kicker": "More than 130 AB or 50 IP",
+        "blurb": "Dynasty names who have crossed the farm cutoff, plus other active MLB players filled by the BK model.",
         "seo_title": "MLB Majors Dynasty Rankings | DeepBase",
         "seo_desc": "Dynasty baseball rankings for major-league names only. Prospects live on Deep Farm.",
     },
@@ -87,10 +99,10 @@ PAGES = [
         "file": "lineups.html",
         "title": "Lineups",
         "nav": "Lineups",
-        "kicker": "Everyday bats",
-        "blurb": "Who starts. Hitters only, ranked for a standard mixed-league lineup.",
-        "seo_title": "Fantasy Baseball Lineup Rankings | DeepBase",
-        "seo_desc": "Everyday hitter rankings for fantasy lineups. Catcher through outfield, majors only.",
+        "kicker": "2027 projected nines",
+        "blurb": "All 30 clubs, alphabetical. Most likely 2027 batting order with BK projections.",
+        "seo_title": "2027 MLB Projected Lineups | DeepBase",
+        "seo_desc": "Projected 2027 starting lineups for all 30 MLB teams. Batting order, age, BK dynasty score, Marcel projections.",
     },
 ]
 
@@ -130,22 +142,26 @@ def load_boards() -> dict:
         "TDG Points": as_map(tdg),
         "FantasyPros Dynasty ECR": load_fp_dynasty(),
     }
-    dynasty = aggregate(sources, meta, min_n=1)
-    farm = load_farm(limit=400)
-    farm_keys = {r["key"] for r in farm}
-    majors = rerank([r for r in dynasty if r.get("key") not in farm_keys])
-    lineups = filter_group(majors, {"HIT", "UT"})
+    raw_dynasty = aggregate(sources, meta, min_n=1)
+    cache = fetch_all()
+    uni = build_universe(raw_dynasty, cache)
+    dynasty, farm, majors = uni["dynasty"], uni["farm"], uni["majors"]
+    lineup_blocks = build_lineups(dynasty, cache)
     by_id = {
         "deep-dynasty": dynasty,
         "deep-farm": farm,
         "majors": majors,
-        "lineups": lineups,
+        "lineups": lineup_blocks,
     }
     pages = []
     for spec in PAGES:
         rec = dict(spec)
         rec["rows"] = by_id[spec["id"]]
-        rec["count"] = len(rec["rows"])
+        if spec["id"] == "lineups":
+            rec["count"] = sum(len(b.get("hitters") or []) for b in lineup_blocks)
+            rec["team_count"] = len(lineup_blocks)
+        else:
+            rec["count"] = len(rec["rows"])
         pages.append(rec)
     return {
         "pages": pages,
@@ -154,8 +170,22 @@ def load_boards() -> dict:
         "farm_n": len(farm),
         "dynasty_n": len(dynasty),
         "majors_n": len(majors),
-        "lineups_n": len(lineups),
+        "lineups_n": pages[-1]["count"],
+        "unmatched": uni["unmatched"],
+        "shortfalls": uni["shortfalls"],
+        "lineup_blocks": lineup_blocks,
     }
+
+
+def _ab_ip_cells(r):
+    ab = r.get("ab")
+    ip = r.get("ip")
+    ab_txt = "-" if ab in (None, "") else str(int(ab))
+    if ip in (None, ""):
+        ip_txt = "-"
+    else:
+        ip_txt = f"{float(ip):.1f}".rstrip("0").rstrip(".")
+    return f'<td class="c-ab">{esc(ab_txt)}</td><td class="c-ip">{esc(ip_txt)}</td>'
 
 
 def deep_cell(r):
@@ -164,64 +194,154 @@ def deep_cell(r):
     tdg = ranks.get("TDG Points")
     fp = ranks.get("FantasyPros Dynasty ECR")
     return (
-        f'<td class="src-col">{rg if rg not in (None, "") else "-"}</td>'
-        f'<td class="src-col">{tdg if tdg not in (None, "") else "-"}</td>'
-        f'<td class="src-col">{fp if fp not in (None, "") else "-"}</td>'
-        f'<td class="src-col">{r.get("avg", "-")}</td>'
-        f'<td class="src-col">{r.get("n", "-")}</td>'
-        f'<td class="c-val val">{int(r.get("value") or 0):,}</td>'
+        _ab_ip_cells(r)
+        + f'<td class="src-col">{rg if rg not in (None, "") else "-"}</td>'
+        + f'<td class="src-col">{tdg if tdg not in (None, "") else "-"}</td>'
+        + f'<td class="src-col">{fp if fp not in (None, "") else "-"}</td>'
+        + f'<td class="src-col">{r.get("avg", "-")}</td>'
+        + f'<td class="src-col">{r.get("n", "-")}</td>'
+        + f'<td class="c-val val">{int(r.get("value") or 0):,}</td>'
     )
 
 
 def farm_cell(r):
     ranks = r.get("ranks") or {}
-    games = r.get("mlb_g")
-    games_txt = "0" if games in (None, "") else str(games)
+    pipe = r.get("pipeline_team_rank") or ranks.get("MLB Pipeline") or "-"
     return (
         f'<td class="desk-only">{esc(r.get("level") or "")}</td>'
-        f'<td class="desk-only">{esc(games_txt)}</td>'
-        f'<td class="c-eta">{esc(r.get("eta") or "")}</td>'
-        f'<td class="c-path path-note">{esc(r.get("path") or "")}</td>'
-        f'<td class="src-col">{ranks.get("MLB Pipeline") or "-"}</td>'
-        f'<td class="src-col">{ranks.get("Baseball America") or "-"}</td>'
-        f'<td class="src-col">{ranks.get("ESPN") or "-"}</td>'
-        f'<td class="src-col">{r.get("n") or 0}</td>'
-        f'<td class="c-val val">{int(r.get("value") or 0):,}</td>'
+        + _ab_ip_cells(r)
+        + f'<td class="c-eta">{esc(r.get("eta") or "")}</td>'
+        + f'<td class="c-path path-note">{esc(r.get("path") or "")}</td>'
+        + f'<td class="src-col">{esc(pipe)}</td>'
+        + f'<td class="src-col">{ranks.get("Baseball America") or "-"}</td>'
+        + f'<td class="src-col">{ranks.get("ESPN") or "-"}</td>'
+        + f'<td class="src-col">{r.get("n") or 0}</td>'
+        + f'<td class="c-val val">{int(r.get("value") or 0):,}</td>'
     )
 
 
-DEEP_HEADERS = ["RG", "TDG", "FP ECR", "Avg", "# Boards", "BK Value"]
-FARM_HEADERS = ["Level", "MLB G", "Arrival", "Path", "Pipeline", "BA", "ESPN", "Boards", "BK Value"]
+DEEP_HEADERS = ["AB", "IP", "RG", "TDG", "FP ECR", "Avg", "# Boards", "BK Value"]
+FARM_HEADERS = ["Level", "AB", "IP", "Arrival", "Path", "Pipeline", "BA", "ESPN", "Boards", "BK Value"]
 
 DEEPBASE_FAQ = [
-    ("What is DeepBase?", "Four baseball boards that go deeper than The Keep and The Diamond: the full dynasty tape, the full farm, majors only, and everyday lineups."),
-    ("How is Deep Dynasty built?", "RotoGraphs, The Dynasty Guru, and FantasyPros Dynasty ECR. Every name those three ranked. Unranked boards are skipped, never treated as 999."),
-    ("How is Deep Farm different from The Farm?", "The Farm is the top 100. Deep Farm keeps every prospect those five lists ranked."),
+    ("What is DeepBase?", "Four baseball boards that go deeper than The Keep and The Diamond: the full dynasty tape, the full farm, majors only, and 2027 projected lineups."),
+    ("Who is a farm name?", f"Career regular-season MLB hitting at-bats of {FARM_AB_MAX} or fewer AND pitching innings of {int(FARM_IP_MAX)} or fewer. A two-way player must clear both. Stats from the MLB Stats API through 2026."),
+    ("Who is a major-league name?", f"More than {FARM_AB_MAX} career AB or more than {int(FARM_IP_MAX)} career IP. Ohtani and other two-way names sit here. Unmatched IDs are withheld, not guessed onto Majors."),
+    ("How is Deep Dynasty built?", "RotoGraphs, The Dynasty Guru, and FantasyPros Dynasty ECR, then every eligible farm and majors name. BK Value uses the same rank-1 = 12,000 curve."),
 ]
 
 
-def sources_html(farm=False):
-    rows = FARM_SOURCES if farm else DEEP_SOURCES
+def sources_html(farm=False, majors=False):
+    rows = DEEP_FARM_SOURCES if farm else DEEP_SOURCES
+    if majors:
+        heading = "Majors boards"
+    elif farm:
+        heading = "Prospect boards"
+    else:
+        heading = "Deep dynasty boards"
     lis = "".join(
         f"<li><a href=\"{esc(u)}\">{esc(n)}</a> - {esc(note)}</li>" if u else f"<li><strong>{esc(n)}</strong> - {esc(note)}</li>"
         for n, u, note in rows
     )
-    heading = "Prospect boards" if farm else "Deep dynasty boards"
     return (
         f'<section class="sources-box panel"><p class="kicker">Sources</p>'
         f"<h3>{esc(heading)}</h3><ol>{lis}</ol></section>"
     )
 
 
+def _pos_filters():
+    btns = "".join(
+        f'<button type="button" data-pos="{g}">{g}</button>'
+        for g in ("HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B")
+    )
+    return (
+        '<div class="filters" id="posf">'
+        '<button type="button" class="active" data-pos="all">All</button>'
+        f"{btns}</div>"
+    )
+
+
 def board_body(page: dict, table_html: str, *, home_href: str, brand: str) -> str:
     is_farm = page["id"] == "deep-farm"
+    is_majors = page["id"] == "majors"
+    n = page["count"]
+    src = sources_html(farm=is_farm, majors=is_majors) if page["id"] != "lineups" else ""
     return f"""
     {sr_h1(page["seo_title"].split("|")[0].strip())}
     {slim_banner(page["title"], UPDATED, "../img/bb-logo.jpg", f"{brand} logo", page["kicker"])}
-    <p class="note">{esc(page["blurb"])} {page["count"]} names. Rebuilt {UPDATED}. <a href="{esc(home_href)}">{esc(brand)} home</a>.</p>
-    {rank_search_bar()}
+    <p class="note">{esc(page["blurb"])} <strong>{n} players</strong>. Rebuilt {UPDATED}. <a href="{esc(home_href)}">{esc(brand)} home</a>.</p>
+    {rank_search_bar(_pos_filters())}
     <div class="panel">{table_html}</div>
-    {sources_html(farm=is_farm)}
+    {src}
+    {faq_html(DEEPBASE_FAQ, heading="How DeepBase works.")}
+    """
+
+
+def _fmt_proj(v, kind="int"):
+    if v in (None, ""):
+        return "—"
+    if kind == "obp":
+        return f"{float(v):.3f}".lstrip("0") if float(v) < 1 else f"{float(v):.3f}"
+    return str(int(round(v)))
+
+
+def lineup_body(blocks: list, *, home_href: str, brand: str) -> str:
+    options = "".join(
+        f'<option value="team-{esc(b["abbr"])}">{esc(b["name"])}</option>' for b in blocks
+    )
+    sections = []
+    for b in blocks:
+        rows = []
+        for h in b.get("hitters") or []:
+            proj = h.get("proj") or {}
+            fa = ' <span class="lineup-fa">FA</span>' if h.get("fa") else ""
+            alt = h.get("alt") or {}
+            alt_html = ""
+            if alt.get("name"):
+                alt_html = (
+                    f'<span class="lineup-alt">Possible alternate: {esc(alt["name"])}'
+                    f' — {esc(alt.get("reason") or "playing-time split")}.</span>'
+                )
+            val = h.get("value")
+            val_txt = f"{int(val):,}" if val not in (None, "") else "—"
+            rows.append(
+                "<tr>"
+                f'<td>{h.get("slot") or ""}</td>'
+                f'<td>{esc(h.get("pos") or "")}</td>'
+                f'<td><strong>{esc(h.get("name") or "")}</strong>{fa}{alt_html}</td>'
+                f'<td>{esc(h.get("age") or "—")}</td>'
+                f'<td>{esc(val_txt)}</td>'
+                f'<td>{_fmt_proj(proj.get("ab"))}</td>'
+                f'<td>{_fmt_proj(proj.get("obp"), "obp")}</td>'
+                f'<td>{_fmt_proj(proj.get("hr"))}</td>'
+                f'<td>{_fmt_proj(proj.get("rbi"))}</td>'
+                f'<td>{_fmt_proj(proj.get("sb"))}</td>'
+                "</tr>"
+            )
+        sections.append(
+            f'<details class="lineup-team" id="team-{esc(b["abbr"])}" open>'
+            f'<summary>{esc(b["name"])}</summary>'
+            '<table class="lineup-table">'
+            "<caption>AB / OBP / HR / RBI / SB are BK projection.</caption>"
+            "<thead><tr>"
+            "<th>#</th><th>Pos</th><th>Hitter</th><th>Age</th><th>BK</th>"
+            "<th>AB</th><th>OBP</th><th>HR</th><th>RBI</th><th>SB</th>"
+            "</tr></thead><tbody>"
+            + "".join(rows)
+            + "</tbody></table></details>"
+        )
+    jump = (
+        '<label class="lineup-jump">Jump to team '
+        f'<select onchange="var v=this.value; if(v) location.hash=v">'
+        f'<option value="">All 30</option>{options}</select></label>'
+    )
+    return f"""
+    {sr_h1("2027 MLB Projected Lineups")}
+    {slim_banner("Lineups", UPDATED, "../img/bb-logo.jpg", f"{brand} logo", "2027 projected nines")}
+    <p class="note">Most likely 2027 starting nine for every club, in batting order. Built from 2026 MLB Stats API lineups, rosters, and fielding games. Counting stats are <strong>BK projection</strong> (Marcel 5/4/3, regressed, age-adjusted). Blank means not enough MLB hitting to back a number. Last updated {UPDATED}. <a href="{esc(home_href)}">{esc(brand)} home</a>.</p>
+    <p class="proj-note">Free agents stay on last year’s club marked FA until they sign. Where a spot is up in the air, a possible alternate sits under the name.</p>
+    {jump}
+    {''.join(sections)}
     {faq_html(DEEPBASE_FAQ, heading="How DeepBase works.")}
     """
 
@@ -234,7 +354,7 @@ def landing_body(payload: dict) -> str:
             f'<p class="kicker">{esc(p["kicker"])}</p>'
             f'<h3>{esc(p["title"])}</h3>'
             f'<p>{esc(p["blurb"])}</p>'
-            f'<p class="deepbase-count"><strong>{p["count"]}</strong> players</p>'
+            f'<p class="deepbase-count"><strong>{p["count"] if p["id"] != "lineups" else p.get("team_count") or 30}</strong> {"teams" if p["id"]=="lineups" else "players"}</p>'
             "</a>"
         )
     return f"""
@@ -349,42 +469,60 @@ def write_deepbase_copy(payload, table_fn, board_js: str):
     (dest / "index.html").write_text(landing)
     urls = ["https://ballkeep.com/deepbase/", "https://ballkeep.com/deepbase/index.html"]
     for page in payload["pages"]:
-        farm = page["id"] == "deep-farm"
-        table = table_fn(
-            page["rows"],
-            FARM_HEADERS if farm else DEEP_HEADERS,
-            farm_cell if farm else deep_cell,
-            player_prefix="../bb/",
-            media=None,
-            faces=True,
-            show_age=True,
-            depth=1,
-        )
-        body = board_body(page, table, home_href="index.html", brand="DeepBase")
-        extra_js = board_js
+        if page["id"] == "lineups":
+            body = lineup_body(payload.get("lineup_blocks") or page["rows"], home_href="index.html", brand="DeepBase")
+            extra_js = ""
+        else:
+            farm = page["id"] == "deep-farm"
+            table = table_fn(
+                page["rows"],
+                FARM_HEADERS if farm else DEEP_HEADERS,
+                farm_cell if farm else deep_cell,
+                player_prefix="../bb/",
+                media=None,
+                faces=False,
+                show_age=True,
+                depth=1,
+                show_all=True,
+            )
+            body = board_body(page, table, home_href="index.html", brand="DeepBase")
+            extra_js = board_js
         doc = db_page(
             page["title"],
             page["file"],
             body,
             extra_js=extra_js,
-            extra_jsonld=[
-                breadcrumb_jsonld([
-                    ("DeepBase", "https://ballkeep.com/deepbase/"),
-                    (page["title"], canon(page["file"], "deepbase/")),
-                ]),
-                rank_list_jsonld(
-                    page["seo_title"],
-                    canon(page["file"], "deepbase/"),
-                    page["rows"],
-                    lambda r: f"https://ballkeep.com/bb/players/{_slug(r.get('name'))}.html",
-                    description=page["seo_desc"],
-                ),
-                faq_jsonld(DEEPBASE_FAQ),
-            ],
+            extra_jsonld=_page_jsonld(page),
         )
         (dest / page["file"]).write_text(doc)
         urls.append(f"https://ballkeep.com/deepbase/{page['file']}")
     return urls
+
+
+def _page_jsonld(page: dict) -> list:
+    bits = [
+        breadcrumb_jsonld([
+            ("DeepBase", "https://ballkeep.com/deepbase/"),
+            (page["title"], canon(page["file"], "deepbase/")),
+        ]),
+        faq_jsonld(DEEPBASE_FAQ),
+    ]
+    rows = page.get("rows") or []
+    if page["id"] == "lineups":
+        flat = []
+        for block in rows:
+            for h in block.get("hitters") or []:
+                flat.append(h)
+        rows = flat
+    if rows and rows[0].get("name"):
+        bits.insert(1, rank_list_jsonld(
+            page["seo_title"],
+            canon(page["file"], "deepbase/"),
+            rows,
+            lambda r: f"https://ballkeep.com/bb/players/{_slug(r.get('name'))}.html",
+            description=page["seo_desc"],
+        ))
+    return bits
 
 
 def _slug(name: str) -> str:

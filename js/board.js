@@ -3,6 +3,14 @@
   var PAGE = 50;
   var shown = PAGE;
 
+  function showAll() {
+    var t = table();
+    return !!(t && t.getAttribute("data-show-all") === "1");
+  }
+  function pageSize() {
+    return showAll() ? 1e9 : PAGE;
+  }
+
   function wrap() {
     return document.querySelector(".table-wrap:has(table.rank-table)") ||
       document.querySelector(".table-wrap");
@@ -55,7 +63,7 @@
         return;
       }
       matched += 1;
-      if (matched <= shown) {
+      if (matched <= shown || showAll()) {
         tr.hidden = false;
         tr.classList.add("is-shown");
         vis += 1;
@@ -67,17 +75,17 @@
     var empty = emptyEl();
     if (empty) empty.hidden = matched !== 0;
     var more = moreBtn();
-    if (more) more.hidden = matched <= shown;
+    if (more) more.hidden = showAll() || matched <= shown;
     var count = countEl();
     if (count) {
       count.textContent = matched
-        ? vis + " of " + matched + " players"
+        ? (showAll() ? matched + " players" : vis + " of " + matched + " players")
         : "No matching players";
     }
   }
 
   window.applyRankFilter = function () {
-    shown = PAGE;
+    shown = pageSize();
     paint();
   };
 
@@ -96,7 +104,7 @@
       return;
     }
     if (e.target.closest(".board-more")) {
-      shown += PAGE;
+      shown += pageSize() === 1e9 ? 1e9 : PAGE;
       paint();
       return;
     }
