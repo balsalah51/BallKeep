@@ -100,9 +100,9 @@ PAGES = [
         "title": "Lineups",
         "nav": "Lineups",
         "kicker": "2027 projected nines",
-        "blurb": "All 30 clubs, alphabetical. Most likely 2027 batting order with BK projections.",
+        "blurb": "All 30 clubs, alphabetical. FanGraphs Roster Resource 2027 batting order with Depth Charts projections.",
         "seo_title": "2027 MLB Projected Lineups | DeepBase",
-        "seo_desc": "Projected 2027 starting lineups for all 30 MLB teams. Batting order, age, BK dynasty score, Marcel projections.",
+        "seo_desc": "Projected 2027 starting lineups for all 30 MLB teams from FanGraphs Roster Resource. Batting order, age, BK dynasty score, FanGraphs Depth Charts projections.",
     },
 ]
 
@@ -228,6 +228,7 @@ DEEPBASE_FAQ = [
     ("Who is a farm name?", f"Career regular-season MLB hitting at-bats of {FARM_AB_MAX} or fewer AND pitching innings of {int(FARM_IP_MAX)} or fewer. A two-way player must clear both. Stats from the MLB Stats API through 2026."),
     ("Who is a major-league name?", f"More than {FARM_AB_MAX} career AB or more than {int(FARM_IP_MAX)} career IP. Ohtani and other two-way names sit here. Unmatched IDs are withheld, not guessed onto Majors."),
     ("How is Deep Dynasty built?", "RotoGraphs, The Dynasty Guru, and FantasyPros Dynasty ECR, then every eligible farm and majors name. BK Value uses the same rank-1 = 12,000 curve."),
+    ("Where do the lineups come from?", "FanGraphs Roster Resource projected starting nines, in batting order. Counting stats are FanGraphs Depth Charts 2027 projections. A blank means FanGraphs did not publish that number. Bench names are FanGraphs depth-chart backups, not guesses."),
 ]
 
 
@@ -322,7 +323,7 @@ def lineup_body(blocks: list, *, home_href: str, brand: str) -> str:
             f'<details class="lineup-team" id="team-{esc(b["abbr"])}" open>'
             f'<summary>{esc(b["name"])}</summary>'
             '<table class="lineup-table">'
-            "<caption>AB / OBP / HR / RBI / SB are BK projection.</caption>"
+            "<caption>AB / OBP / HR / RBI / SB are FanGraphs Depth Charts 2027 projections.</caption>"
             "<thead><tr>"
             "<th>#</th><th>Pos</th><th>Hitter</th><th>Age</th><th>BK</th>"
             "<th>AB</th><th>OBP</th><th>HR</th><th>RBI</th><th>SB</th>"
@@ -338,8 +339,8 @@ def lineup_body(blocks: list, *, home_href: str, brand: str) -> str:
     return f"""
     {sr_h1("2027 MLB Projected Lineups")}
     {slim_banner("Lineups", UPDATED, "../img/bb-logo.jpg", f"{brand} logo", "2027 projected nines")}
-    <p class="note">Most likely 2027 starting nine for every club, in batting order. Built from 2026 MLB Stats API lineups, rosters, and fielding games. Counting stats are <strong>BK projection</strong> (Marcel 5/4/3, regressed, age-adjusted). Blank means not enough MLB hitting to back a number. Last updated {UPDATED}. <a href="{esc(home_href)}">{esc(brand)} home</a>.</p>
-    <p class="proj-note">Free agents stay on last year’s club marked FA until they sign. Where a spot is up in the air, a possible alternate sits under the name.</p>
+    <p class="note">Most likely 2027 starting nine for every club, in batting order, from <strong>FanGraphs Roster Resource</strong>. Counting stats are <strong>FanGraphs Depth Charts</strong> 2027 projections. Blank means FanGraphs did not publish that number. Last updated {UPDATED}. <a href="{esc(home_href)}">{esc(brand)} home</a>.</p>
+    <p class="proj-note">Every name is on that club’s current FanGraphs depth chart and projected to start. Possible alternates are FanGraphs bench players at the same spot, not guesses.</p>
     {jump}
     {''.join(sections)}
     {faq_html(DEEPBASE_FAQ, heading="How DeepBase works.")}

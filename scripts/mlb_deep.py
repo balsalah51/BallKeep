@@ -50,6 +50,40 @@ POS_ORDER = ["C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH"]
 FIELD_POS = {"C": "C", "1B": "1B", "2B": "2B", "3B": "3B", "SS": "SS",
              "LF": "LF", "CF": "CF", "RF": "RF", "OF": "LF"}
 
+# FanGraphs Roster Resource team ids (depth-charts/roster?teamid=).
+FG_TEAMS = {
+    1: ("LAA", "Los Angeles Angels"),
+    2: ("BAL", "Baltimore Orioles"),
+    3: ("BOS", "Boston Red Sox"),
+    4: ("CWS", "Chicago White Sox"),
+    5: ("CLE", "Cleveland Guardians"),
+    6: ("DET", "Detroit Tigers"),
+    7: ("KC", "Kansas City Royals"),
+    8: ("MIN", "Minnesota Twins"),
+    9: ("NYY", "New York Yankees"),
+    10: ("ATH", "Athletics"),
+    11: ("SEA", "Seattle Mariners"),
+    12: ("TB", "Tampa Bay Rays"),
+    13: ("TEX", "Texas Rangers"),
+    14: ("TOR", "Toronto Blue Jays"),
+    15: ("ARI", "Arizona Diamondbacks"),
+    16: ("ATL", "Atlanta Braves"),
+    17: ("CHC", "Chicago Cubs"),
+    18: ("CIN", "Cincinnati Reds"),
+    19: ("COL", "Colorado Rockies"),
+    20: ("MIA", "Miami Marlins"),
+    21: ("HOU", "Houston Astros"),
+    22: ("LAD", "Los Angeles Dodgers"),
+    23: ("MIL", "Milwaukee Brewers"),
+    24: ("WSH", "Washington Nationals"),
+    25: ("NYM", "New York Mets"),
+    26: ("PHI", "Philadelphia Phillies"),
+    27: ("PIT", "Pittsburgh Pirates"),
+    28: ("STL", "St. Louis Cardinals"),
+    29: ("SD", "San Diego Padres"),
+    30: ("SF", "San Francisco Giants"),
+}
+
 
 def get_json(url, timeout=60, retries=3):
     last = None
@@ -369,6 +403,105 @@ def fetch_rosters(teams, season=2026):
     return out
 
 
+def _slim_fg_player(row: dict) -> dict:
+    pid = row.get("mlbamid") or row.get("mlbamid1")
+    try:
+        pid = int(pid) if pid not in (None, "", 0, "0") else None
+    except (TypeError, ValueError):
+        pid = None
+    war = row.get("proj_WAR")
+    try:
+        war = float(war) if war not in (None, "") else None
+    except (TypeError, ValueError):
+        war = None
+    return {
+        "slot": int(row.get("role") or 0) if str(row.get("role") or "").isdigit() else row.get("role"),
+        "pos": row.get("position") or "",
+        "name": re.sub(r"\s*\([^)]+\)\s*$", "", row.get("player") or row.get("playerNameDisplay") or "").strip(),
+        "mlb_id": pid,
+        "age": row.get("age") or "",
+        "war": war,
+        "pt": row.get("proj_PT"),
+        "roster40": row.get("roster40") or "",
+        "hr": row.get("proj_bat_HR"),
+        "obp": row.get("proj_bat_OBP"),
+        "sb": row.get("proj_bat_SB"),
+        "notes": row.get("notes") or "",
+    }
+
+
+def fetch_fg_depth_charts() -> dict:
+    """Current FanGraphs Roster Resource projected starting nines."""
+    teams = {}
+    for tid, (abbr, name) in FG_TEAMS.items():
+        rows = get_json(f"https://www.fangraphs.com/api/depth-charts/roster?teamid={tid}")
+        sl = [_slim_fg_player(r) for r in rows if r.get("type") == "mlb-sl"]
+        sl = [r for r in sl if r.get("name")]
+        sl.sort(key=lambda r: int(r["slot"]) if str(r.get("slot") or "").isdigit() else 99)
+        bench = [_slim_fg_player(r) for r in rows if r.get("type") == "mlb-bn"]
+        bench = [r for r in bench if r.get("name")]
+        teams[abbr] = {"id": tid, "abbr": abbr, "name": name, "starters": sl[:9], "bench": bench}
+        print("  fangraphs", abbr, len(sl), "starters")
+        time.sleep(0.12)
+    return teams
+
+
+def fetch_fg_projections() -> dict:
+    """FanGraphs Depth Charts batting projections (playing-time + value)."""
+    rows = get_json(
+        "https://www.fangraphs.com/api/projections?type=fangraphsdc&stats=bat&pos=all&team=0&players=0&lg=all"
+    )
+    out = {}
+    for r in rows or []:
+        pid = r.get("xMLBAMID")
+        if not pid:
+            continue
+        team = r.get("Team") or ""
+        if team in (None, "", "null"):
+            continue
+        def _n(key):
+            v = r.get(key)
+            try:
+                return None if v in (None, "") else float(v)
+            except (TypeError, ValueError):
+                return None
+        out[str(int(pid))] = {
+            "name": r.get("PlayerName") or "",
+            "team": TEAM_FIX.get(team, team),
+            "ab": _n("AB"),
+            "pa": _n("PA"),
+            "obp": _n("OBP"),
+            "hr": _n("HR"),
+            "rbi": _n("RBI"),
+            "sb": _n("SB"),
+            "war": _n("WAR"),
+        }
+    print("  fangraphs dc", len(out))
+    return out
+
+
+def fetch_fangraphs(cache: dict | None = None, force: bool = False) -> dict:
+    cache = cache if cache is not None else load_cache()
+    fg = cache.get("fangraphs") or {}
+    if (
+        not force
+        and fg.get("fetched") == date.today().isoformat()
+        and fg.get("teams")
+        and fg.get("projections")
+    ):
+        return cache
+    print("fetching FanGraphs depth charts + Depth Charts projections")
+    teams = fetch_fg_depth_charts()
+    projections = fetch_fg_projections()
+    cache["fangraphs"] = {
+        "fetched": date.today().isoformat(),
+        "teams": teams,
+        "projections": projections,
+    }
+    save_cache(cache)
+    return cache
+
+
 def _upgrade_cache(cache: dict) -> dict:
     """Fill gaps in an existing cache without a full refetch."""
     changed = False
@@ -394,7 +527,7 @@ def _upgrade_cache(cache: dict) -> dict:
         print("  free agents", len(cache["free_agents"]), "(upgrade)")
     if changed:
         save_cache(cache)
-    return cache
+    return fetch_fangraphs(cache)
 
 
 def fetch_all(force: bool = False) -> dict:
@@ -479,7 +612,7 @@ def fetch_all(force: bool = False) -> dict:
     }
     save_cache(doc)
     print("cached", CACHE)
-    return doc
+    return fetch_fangraphs(doc, force=True)
 
 
 def media_ids() -> dict:
@@ -898,296 +1031,135 @@ def build_universe(dynasty_rows, cache: dict) -> dict:
     }
 
 
-def fa_ids(cache: dict) -> set:
-    return {int(r["mlb_id"]) for r in cache.get("free_agents") or [] if not r.get("signed")}
+def _fg_pos_family(pos: str) -> str:
+    p = (pos or "").upper()
+    if p == "C" or p.startswith("C/"):
+        return "C"
+    if p in {"LF", "CF", "RF", "OF"} or p.startswith("OF") or "/LF" in p or "/CF" in p or "/RF" in p:
+        return "OF"
+    if p in {"1B", "2B", "3B", "SS", "INF"} or p.startswith("INF"):
+        return "INF"
+    if p == "DH":
+        return "DH"
+    return p
 
 
-def _player_positions(cache: dict) -> dict:
-    field = defaultdict(lambda: Counter())
-    for row in cache.get("fielding") or []:
-        pos = row.get("pos") or ""
-        if pos in {"P", "TWP"}:
-            continue
-        field[row["mlb_id"]][pos] += row.get("g") or 0
-    return field
-
-
-def projected_nines(cache: dict) -> dict:
-    """Most likely 2027 nine: unique 2026 batting-order regulars, unique positions."""
-    slot_counts = defaultdict(lambda: defaultdict(Counter))
-    pos_seen = defaultdict(lambda: defaultdict(Counter))
-    appear = defaultdict(Counter)
-    name_of = {}
-    for _day, teams in (cache.get("lineups") or {}).items():
-        for abbr, order in teams.items():
-            for i, p in enumerate(order[:9]):
-                pid = p["mlb_id"]
-                slot_counts[abbr][i][pid] += 1
-                appear[abbr][pid] += 1
-                name_of[pid] = p.get("name") or name_of.get(pid)
-                pos = p.get("pos") or ""
-                if pos:
-                    pos_seen[abbr][pid][pos] += 1
-    field = _player_positions(cache)
-    people = cache.get("people") or {}
-    roster = cache.get("rosters") or {}
-    hit = ((cache.get("seasons") or {}).get("2026") or {}).get("hit") or {}
+def _fg_proj(pid, cache, depth_row) -> dict:
+    """FanGraphs Depth Charts 2027 batting line. Blank if FanGraphs has no number."""
+    st = ((cache.get("fangraphs") or {}).get("projections") or {}).get(str(pid) if pid else "") or {}
     out = {}
-    for abbr, slots in slot_counts.items():
-        ranked_players = appear[abbr].most_common()
-        top = [pid for pid, _n in ranked_players[:9]]
-        used = set(top)
-        nine = [None] * 9
-        alts = [None] * 9
-        taken_slots = set()
-        for pid in top:
-            best_slot, best_n = None, -1
-            for i in range(9):
-                if i in taken_slots:
-                    continue
-                c = slots[i][pid]
-                if c > best_n:
-                    best_n, best_slot = c, i
-            if best_slot is None:
-                for i in range(9):
-                    if i not in taken_slots:
-                        best_slot = i
-                        break
-            if best_slot is None:
-                continue
-            taken_slots.add(best_slot)
-            nine[best_slot] = (pid, appear[abbr][pid])
-        for i in range(9):
-            if nine[i]:
-                continue
-            pid = None
-            for cand, _n in ranked_players:
-                if cand not in used:
-                    pid = cand
-                    break
-            if pid is None:
-                pool = []
-                for rid in roster.get(abbr) or []:
-                    if rid in used:
-                        continue
-                    person = people.get(str(rid)) or {}
-                    pos = (person.get("pos") or "").upper()
-                    if pos in {"RHP", "LHP", "P", "SP", "RP"}:
-                        continue
-                    st = hit.get(str(rid)) or {}
-                    pool.append((int(st.get("pa") or st.get("ab") or 0), rid))
-                pool.sort(reverse=True)
-                pid = pool[0][1] if pool else None
-            if pid is None:
-                continue
-            used.add(pid)
-            nine[i] = (pid, appear[abbr].get(pid) or 0)
-        for i, pick in enumerate(nine):
-            if not pick:
-                continue
-            starter_n = pick[1]
-            for pid, n in slots[i].most_common():
-                if pid in used:
-                    continue
-                if n >= 3 and n >= max(3, int(starter_n * 0.5)):
-                    alts[i] = ("platoon / playing-time split in 2026 lineups", (pid, n))
-                    break
 
-        pids = [pick[0] for pick in nine if pick]
-        pos_of = {}
-        taken = set()
-        def score(pid, pos):
-            return pos_seen[abbr][pid][pos] * 10 + field[pid][pos]
-        for pos in POS_ORDER:
-            if pos == "DH":
-                continue
-            best, best_n = None, -1
-            for pid in pids:
-                if pid in taken:
-                    continue
-                n = score(pid, pos)
-                if n > best_n:
-                    best, best_n = pid, n
-            if best is not None and best_n > 0:
-                pos_of[best] = pos
-                taken.add(best)
-        leftover = [pid for pid in pids if pid not in taken]
-        need = [p for p in POS_ORDER if p not in pos_of.values()]
-        for pid in leftover:
-            best, best_n = None, -1
-            for pos in need:
-                n = score(pid, pos)
-                if pos == "DH":
-                    n += 1
-                if n > best_n:
-                    best, best_n = pos, n
-            pos_of[pid] = best or "DH"
-            if best in need:
-                need.remove(best)
-        rows = []
-        for i, pick in enumerate(nine):
-            if not pick:
-                continue
-            pid, starts = pick
-            person = people.get(str(pid)) or {}
-            rec = {
-                "slot": i + 1,
-                "mlb_id": pid,
-                "name": name_of.get(pid) or person.get("name") or "",
-                "pos": pos_of.get(pid) or "DH",
-                "team": abbr,
-                "starts": starts,
-            }
-            alt_info = alts[i]
-            if alt_info:
-                reason, (apid, ast) = alt_info
-                if apid in used:
-                    alt_info = None
-                else:
-                    ap = people.get(str(apid)) or {}
-                    rec["alt"] = {
-                        "mlb_id": apid,
-                        "name": name_of.get(apid) or ap.get("name") or "",
-                        "starts": ast,
-                        "reason": reason,
-                    }
-            rows.append(rec)
-        _repair_glove(abbr, rows, used, field, pos_seen, people, roster, hit, name_of)
-        out[abbr] = rows
+    def ri(v):
+        if v in (None, ""):
+            return None
+        try:
+            return int(round(float(v)))
+        except (TypeError, ValueError):
+            return None
+
+    def rf(v):
+        if v in (None, ""):
+            return None
+        try:
+            return round(float(v), 3)
+        except (TypeError, ValueError):
+            return None
+
+    if st:
+        out["ab"] = ri(st.get("ab"))
+        out["obp"] = rf(st.get("obp"))
+        out["hr"] = ri(st.get("hr"))
+        out["rbi"] = ri(st.get("rbi"))
+        out["sb"] = ri(st.get("sb"))
+        return {k: v for k, v in out.items() if v is not None}
+    # Depth-chart rates are FanGraphs; do not invent AB/RBI from playing time.
+    obp = rf(depth_row.get("obp"))
+    hr = ri(depth_row.get("hr"))
+    sb = ri(depth_row.get("sb"))
+    if obp is not None:
+        out["obp"] = obp
+    if hr is not None:
+        out["hr"] = hr
+    if sb is not None:
+        out["sb"] = sb
     return out
 
 
-def _repair_glove(abbr, rows, used, field, pos_seen, people, roster, hit, name_of):
-    """If a required infield/catcher has zero games there, swap in a roster glove."""
-    def score(pid, pos):
-        return pos_seen[abbr][pid][pos] * 10 + field[pid][pos]
-    for rec in rows:
-        pos = rec.get("pos") or ""
-        if pos not in {"C", "1B", "2B", "3B", "SS"}:
-            continue
-        if score(rec["mlb_id"], pos) > 0:
-            continue
-        best = None
-        for rid in roster.get(abbr) or []:
-            if rid in used:
-                continue
-            n = score(rid, pos)
-            person = people.get(str(rid)) or {}
-            ppos = (person.get("pos") or "").upper()
-            if n <= 0 and ppos != pos:
-                continue
-            pa = int((hit.get(str(rid)) or {}).get("pa") or 0)
-            cand = (n, pa, rid)
-            if not best or cand > best:
-                best = cand
-        if not best or (best[0] <= 0 and best[1] <= 0):
-            continue
-        rid = best[2]
-        old_name, old_id = rec["name"], rec["mlb_id"]
-        person = people.get(str(rid)) or {}
-        rec["mlb_id"] = rid
-        rec["name"] = name_of.get(rid) or person.get("name") or ""
-        rec["starts"] = 0
-        if not rec.get("alt"):
-            rec["alt"] = {
-                "name": old_name,
-                "mlb_id": old_id,
-                "reason": "playing-time split in 2026 lineups",
-            }
-        used.discard(old_id)
-        used.add(rid)
+def _bench_alt(starter, bench, used_ids):
+    fam = _fg_pos_family(starter.get("pos") or "")
+    ranked = sorted(bench, key=lambda b: -(b.get("war") or 0))
 
-
-def _add_prospect_alts(abbr, nine, cache):
-    people = cache.get("people") or {}
-    used = {r["mlb_id"] for r in nine}
-    alts_used = {(r.get("alt") or {}).get("mlb_id") for r in nine}
-    prospects = [p for p in cache.get("prospects") or [] if p.get("team") == abbr]
-    prospects.sort(key=lambda p: int(p.get("rank") or 99))
-    added = 0
-    for p in prospects:
-        if added >= 2:
-            break
-        pid = p["mlb_id"]
-        if pid in used or pid in alts_used:
-            continue
-        person = people.get(str(pid)) or {}
-        pos = (person.get("pos") or "").upper()
-        if pos in {"RHP", "LHP", "P", "SP", "RP"} or pos.endswith("HP"):
-            continue
-        ab, ip = career_for(pid, cache)
-        if not is_farm_eligible(ab, ip):
-            continue
-        if int(p.get("rank") or 99) > 4:
-            break
-        target = None
-        for rec in nine:
-            if rec.get("alt"):
+    def take(predicate):
+        for b in ranked:
+            pid = b.get("mlb_id")
+            if not b.get("name") or (pid and pid in used_ids):
                 continue
-            rec_pos = (rec.get("pos") or "").upper()
-            if rec_pos == pos or (pos in {"LF", "CF", "RF", "OF"} and rec_pos in {"LF", "CF", "RF", "DH", "OF"}):
-                target = rec
-                break
-        if not target:
-            continue
-        target["alt"] = {
-            "mlb_id": pid,
-            "name": person.get("name") or "",
-            "reason": "prospect arrival in 2027",
-        }
-        alts_used.add(pid)
-        added += 1
+            if predicate(_fg_pos_family(b.get("pos") or "")):
+                return {
+                    "name": b["name"],
+                    "mlb_id": pid,
+                    "reason": "FanGraphs depth-chart bench",
+                }
+        return None
+
+    hit = take(lambda bf: bf == fam)
+    if hit:
+        return hit
+    if fam == "DH":
+        return take(lambda bf: bf == "OF")
+    return None
 
 
 def build_lineups(dynasty_rows, cache: dict) -> list:
-    value_map = {r["key"]: r.get("value") for r in dynasty_rows}
-    rank_map = {r["key"]: r.get("bk") for r in dynasty_rows}
-    by_team_lineups = projected_nines(cache)
-    unsigned_fa = fa_ids(cache)
-    teams = cache.get("teams") or mlb_teams()
+    """Projected 2027 nines from FanGraphs Roster Resource + Depth Charts value."""
+    cache = fetch_fangraphs(cache)
+    fg = cache.get("fangraphs") or {}
+    teams = fg.get("teams") or {}
+    value_by_key = {r["key"]: r.get("value") for r in dynasty_rows}
+    value_by_id = {r.get("mlb_id"): r.get("value") for r in dynasty_rows if r.get("mlb_id")}
+    rank_by_key = {r["key"]: r.get("bk") for r in dynasty_rows}
+    people = cache.get("people") or {}
     blocks = []
-    for t in sorted(teams, key=lambda x: x["name"]):
-        abbr = t["abbr"]
-        rows = list(by_team_lineups.get(abbr) or [])
-        _add_prospect_alts(abbr, rows, cache)
+    for abbr, meta in sorted(teams.items(), key=lambda kv: kv[1].get("name") or ""):
+        starters = list(meta.get("starters") or [])
+        bench = list(meta.get("bench") or [])
+        used = {s.get("mlb_id") for s in starters if s.get("mlb_id")}
         hitters = []
-        for rec in rows:
-            pid = rec["mlb_id"]
-            person = (cache.get("people") or {}).get(str(pid)) or {}
+        for rec in starters:
+            pid = rec.get("mlb_id")
+            person = people.get(str(pid) or "") or {}
             name = rec.get("name") or person.get("name") or ""
+            name = re.sub(r"\s*\([^)]+\)\s*$", "", name).strip()
+            if not name:
+                continue
             key = bb_norm(name)
             age = season_age(person.get("birth") or "", 2027)
             if age == "":
                 try:
-                    age = int(person.get("age") or 0) + 1 or ""
+                    age = int(float(rec.get("age") or person.get("age") or 0)) or ""
                 except (TypeError, ValueError):
                     age = ""
-            proj = marcel_hit(pid, cache, age if isinstance(age, int) else 27)
-            fa = pid in unsigned_fa
-            alt = rec.get("alt")
-            if fa and not alt:
-                alt = {"name": "", "reason": "free agent"}
-            elif fa and alt and "free agent" not in (alt.get("reason") or "").lower():
-                alt = dict(alt)
-                alt["reason"] = "free agent; " + (alt.get("reason") or "replacement candidate")
-            if alt and not alt.get("name") and alt.get("reason") == "free agent":
-                alt = None  # FA badge on the starter is enough when no replacement is named
+            proj = _fg_proj(pid, cache, rec)
+            alt = _bench_alt(rec, bench, used)
+            if alt and alt.get("mlb_id"):
+                used.add(alt["mlb_id"])
             hitters.append({
-                "slot": rec["slot"],
+                "slot": rec.get("slot") or len(hitters) + 1,
                 "name": name,
                 "key": key,
                 "pos": rec.get("pos") or person.get("pos") or "",
                 "age": age,
-                "value": value_map.get(key),
-                "bk": rank_map.get(key),
+                "value": value_by_id.get(pid) if pid in value_by_id else value_by_key.get(key),
+                "bk": rank_by_key.get(key),
                 "proj": proj,
-                "fa": fa,
+                "fa": False,
                 "alt": alt,
                 "mlb_id": pid,
+                "war": rec.get("war"),
             })
         blocks.append({
             "abbr": abbr,
-            "name": t["name"],
+            "name": meta.get("name") or abbr,
             "hitters": hitters,
         })
     return blocks
@@ -1200,5 +1172,7 @@ if __name__ == "__main__":
     ap.add_argument("--force", action="store_true")
     args = ap.parse_args()
     doc = fetch_all(force=args.force or args.fetch or not CACHE.exists())
+    fg = doc.get("fangraphs") or {}
     print("teams", len(doc.get("teams") or []), "career", len(doc.get("career") or []),
-          "prospects", len(doc.get("prospects") or []), "people", len(doc.get("people") or []))
+          "prospects", len(doc.get("prospects") or []), "people", len(doc.get("people") or []),
+          "fg teams", len(fg.get("teams") or []), "fg proj", len(fg.get("projections") or []))

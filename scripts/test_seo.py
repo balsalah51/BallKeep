@@ -1293,6 +1293,19 @@ def test_deepbase_shared_boards():
     assert len(blocks) == 30
     assert [b["name"] for b in blocks] == sorted(b["name"] for b in blocks)
     assert all(len(b.get("hitters") or []) == 9 for b in blocks)
+    seen_ids = []
+    for b in blocks:
+        ids = [h.get("mlb_id") for h in b["hitters"] if h.get("mlb_id")]
+        assert len(ids) == len(set(ids)), b["name"]
+        seen_ids.extend(ids)
+    assert len(seen_ids) == len(set(seen_ids))
+    dodgers = next(b for b in blocks if b["abbr"] == "LAD")
+    assert dodgers["hitters"][0]["name"] == "Shohei Ohtani"
+    assert dodgers["hitters"][0]["pos"] == "DH"
+    yankees = next(b for b in blocks if b["abbr"] == "NYY")
+    assert any(h["name"] == "Aaron Judge" for h in yankees["hitters"])
+    ari = next(b for b in blocks if b["abbr"] == "ARI")
+    assert not any(h["name"] == "Ildemaro Vargas" for h in ari["hitters"])
     pills = sport_pills("db", 1)
     assert "DeepBase" in pills
     assert "is-here" in pills
@@ -1318,8 +1331,9 @@ def test_deepbase_shared_boards():
     lu = (root / "deepbase" / "lineups.html").read_text()
     assert "Jump to team" in lu
     assert "lineup-team" in lu
-    assert "BK projection" in lu
+    assert "FanGraphs" in lu
     assert "Shohei Ohtani" in lu
+    assert "FanGraphs Depth Charts" in lu
     assert "<img class=\"face" not in lu
     assert "hitter-ranking" not in lu.lower()
     bb_home = (root / "bb" / "index.html").read_text()
