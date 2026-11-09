@@ -187,6 +187,9 @@ from seo import (  # noqa: E402
     sitemap_xml,
     sports_footer,
     sports_top,
+    outbound_pills,
+    slim_banner,
+    CHROME_VER,
     sr_h1,
     strip_em,
     strip_em_tree,
@@ -1007,7 +1010,7 @@ def superflex_redraft(keep, ppr):
 
 NAV_GROUPS = football_nav_groups()
 NAV = flatten_nav_groups(NAV_GROUPS)
-CSS_VER = 90
+CSS_VER = CHROME_VER
 
 PLAYER_PAGES = {}  # key -> slug
 
@@ -2266,6 +2269,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path), image=img, brand="Ball Keep", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
   <link rel="stylesheet" href="{asset("css/site.css", depth)}?v={CSS_VER}" />
+  <link rel="stylesheet" href="{asset("css/chrome.css", depth)}?v={CSS_VER}" />
   <link rel="icon" href="{asset("img/logo.jpg", depth)}" />
   <script>
   (function(){{try{{var t=localStorage.getItem("bk-theme");document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark");}}catch(e){{document.documentElement.setAttribute("data-theme","dark");}}}})();
@@ -2281,9 +2285,9 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
           <p>Superflex · PPR · Sleeper</p>
         </div>
       </a>
+      {sports_top("fb", depth)}
       {fb_header_nav(path, depth)}
     </header>
-    {sports_top("fb", depth)}
     {crumb_html}
     {body}
     <footer>
@@ -2935,6 +2939,7 @@ def more_body_html():
         ("bb/index.html", "BaseKeep", "Dynasty baseball."),
         ("bk/index.html", "BasketKeep", "Dynasty basketball."),
         ("pl/index.html", "PitchKeep", "Premier League ranks."),
+        ("deepbase/index.html", "DeepBase", "Deep Dynasty, Deep Farm, Majors, Lineups."),
     ])}
     """
 
@@ -2961,6 +2966,8 @@ def home_body_html(keep, board, media, stories=None):
     this_week = home_this_week_block()
     return f"""
     {sr_h1("Fantasy Football Superflex Dynasty Rankings")}
+    {slim_banner("Ball Keep", UPDATED, "img/logo.jpg", "Ball Keep logo", "Superflex dynasty")}
+    {outbound_pills("fb")}
     {today}
     <section class="home-snapshot" aria-label="Top of the boards">
       <article class="home-snap keep">
@@ -5250,6 +5257,11 @@ def main():
         "https://ballkeep.com/the-handcuff.html",
         "https://ballkeep.com/the-keep.html",
         "https://ballkeep.com/more.html",
+        "https://ballkeep.com/deepbase/",
+        "https://ballkeep.com/deepbase/deep-dynasty.html",
+        "https://ballkeep.com/deepbase/deep-farm.html",
+        "https://ballkeep.com/deepbase/majors.html",
+        "https://ballkeep.com/deepbase/lineups.html",
         "https://ballkeep.com/news.html",
         "https://ballkeep.com/the-x.html",
         "https://ballkeep.com/trade.html",

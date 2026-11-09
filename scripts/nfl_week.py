@@ -198,14 +198,15 @@ def football_nav_groups(week: int | None = None) -> list:
             ("the-handcuff.html", "The Handcuff", "Running back backups"),
             ("adp.html", "ADP"),
             ("the-method.html", "Method"),
-            ("more.html", "More"),
         ]),
         ("mine", "My Team", [
             ("league.html", "My Team"),
         ]),
-        ("sports", "Other Sports", [
+        ("more", "More", [
+            ("more.html", "More"),
             ("bb/index.html", "BaseKeep"),
             ("bk/index.html", "BasketKeep"),
             ("pl/index.html", "PitchKeep"),
+            ("deepbase/index.html", "DeepBase"),
         ]),
     ]

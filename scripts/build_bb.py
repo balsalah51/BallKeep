@@ -26,6 +26,16 @@ from bb_data import (  # noqa: E402
     load_universe,
 )
 from bb_prospects import FARM_SOURCES, load_farm  # noqa: E402
+from deepbase import (  # noqa: E402
+    DEEP_HEADERS,
+    DEEPBASE_FAQ,
+    FARM_HEADERS,
+    board_body,
+    deep_cell,
+    farm_cell,
+    load_boards as load_deepbase_boards,
+    write_deepbase_copy,
+)
 from news_algo import (  # noqa: E402
     CATEGORY_LABEL,
     build_player_index,
@@ -35,8 +45,10 @@ from news_algo import (  # noqa: E402
 )
 from x_tape import cards_html as x_cards  # noqa: E402
 from seo import (  # noqa: E402
+    CHROME_VER,
     also_on_desk,
     article_jsonld,
+    board_tools_html,
     breadcrumb_jsonld,
     breadcrumbs,
     canon,
@@ -47,8 +59,10 @@ from seo import (  # noqa: E402
     faq_jsonld,
     footer_nav,
     grafs_html,
+    grouped_nav,
     head_tags,
     legal_links,
+    outbound_pills,
     person_jsonld,
     rank_card,
     rank_list_jsonld,
@@ -57,10 +71,13 @@ from seo import (  # noqa: E402
     rank_spread_graph,
     related_players_html,
     related_stories_html,
+    slim_banner,
+    sport_header_nav,
     sports_footer,
     sports_top,
     sr_h1,
     strip_em,
+    theme_boot,
     value_bars,
     website_jsonld,
     hub_search_bar,
@@ -103,6 +120,10 @@ BB_NAV = [
     ("index.html", "Home"),
     ("the-keep.html", "The Keep"),
     ("the-diamond.html", "The Diamond"),
+    ("deep-dynasty.html", "Deep Dynasty"),
+    ("deep-farm.html", "Deep Farm"),
+    ("majors.html", "Majors"),
+    ("lineups.html", "Lineups"),
     ("the-farm.html", "The Farm"),
     ("news.html", "News"),
     ("the-x.html", "The X"),
@@ -112,6 +133,38 @@ BB_NAV = [
     ("bullpen-holds.html", "SV + Holds"),
     ("trade.html", "Trade"),
     ("players/index.html", "Players"),
+    ("more.html", "More"),
+]
+
+BB_NAV_GROUPS = [
+    ("rankings", "Rankings", [
+        ("index.html", "Home"),
+        ("the-keep.html", "The Keep"),
+        ("the-diamond.html", "The Diamond"),
+        ("deep-dynasty.html", "Deep Dynasty"),
+        ("deep-farm.html", "Deep Farm"),
+        ("majors.html", "Majors"),
+        ("lineups.html", "Lineups"),
+        ("the-farm.html", "The Farm"),
+        ("the-lineup.html", "The Lineup"),
+        ("pitchers.html", "Pitchers"),
+    ]),
+    ("week", "This Week", [
+        ("news.html", "News"),
+    ]),
+    ("tools", "Tools", [
+        ("trade.html", "Trade"),
+        ("bullpen.html", "Bullpen SV"),
+        ("bullpen-holds.html", "SV + Holds"),
+    ]),
+    ("mine", "My Team", [
+        ("players/index.html", "Players"),
+    ]),
+    ("more", "More", [
+        ("more.html", "More"),
+        ("the-x.html", "The X"),
+        ("../deepbase/index.html", "DeepBase"),
+    ]),
 ]
 
 
@@ -163,9 +216,34 @@ BB_SEO = {
     "index.html": (
         "Fantasy Baseball Dynasty Rankings | BaseKeep",
         "2026 dynasty baseball full ranked tape, redraft, prospects, and BK Value. The Keep, The Diamond, The Farm, and hourly baseball news.",
-        "img/bb-hero.jpg",
+        "img/bb-logo.jpg",
+    ),
+    "more.html": (
+        "More | BaseKeep",
+        "The rest of BaseKeep: position boards, tools, The X, method, and the other sports.",
+        "img/bb-logo.jpg",
     ),
     "deep-dynasty.html": (
+        "Deep Dynasty Baseball Rankings | BaseKeep",
+        "Deep dynasty baseball full tape: major leaguers and prospects from RotoGraphs, The Dynasty Guru, and FantasyPros.",
+        "img/bb-logo.jpg",
+    ),
+    "deep-farm.html": (
+        "Deep Farm MLB Prospect Rankings | BaseKeep",
+        "Deep MLB prospect rankings beyond the top 100. Pipeline, Baseball America, ESPN, SI, and FanGraphs.",
+        "img/bb-logo.jpg",
+    ),
+    "majors.html": (
+        "MLB Majors Dynasty Rankings | BaseKeep",
+        "Dynasty baseball rankings for major-league names only. Prospects live on Deep Farm.",
+        "img/bb-logo.jpg",
+    ),
+    "lineups.html": (
+        "Fantasy Baseball Lineup Rankings | BaseKeep",
+        "Everyday hitter rankings for fantasy lineups. Catcher through outfield, majors only.",
+        "img/bb-logo.jpg",
+    ),
+    "deep-dynasty-research.html": (
         "Deep Dynasty Baseball Board - Source Research | BaseKeep",
         "Research report on publicly accessible deep dynasty baseball ranking boards (hundreds of players including prospects and minor leaguers). Sources audited November 2026.",
         "img/bb-logo.jpg",
@@ -363,16 +441,27 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
             crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
             robots=None, canonical=None, schema_type=None, body_class=""):
     prefix = "../" * depth
-    links = []
-    for href, label in BB_NAV:
-        cur = ' aria-current="page"' if bb_nav_current(href, path) else ""
-        target = bb_nav_target(href, path, depth)
-        links.append(f'<a href="{esc(target)}"{cur}>{esc(label)}</a>')
     packed = BB_SEO.get(path)
     full_title = doc_title or (packed[0] if packed else f"{title} | BaseKeep")
     desc = description or (packed[1] if packed else f"{title} on BaseKeep. Dynasty baseball rankings, BK Value, and BK News. Updated {UPDATED}.")
     img = image or (packed[2] if packed else "img/bb-logo.jpg")
-    foot = footer_nav([(bb_nav_target(h, path, depth), lab) for h, lab in BB_NAV], bb_nav_target(path, path, depth))
+    head_nav = sport_header_nav(
+        BB_NAV_GROUPS,
+        path,
+        lambda h: bb_nav_target(h, path, depth),
+        lambda h: bb_nav_current(h, path),
+        bb_nav_target("players/index.html", path, depth),
+    )
+    foot = grouped_nav(
+        BB_NAV_GROUPS,
+        lambda h: bb_nav_target(h, path, depth),
+        lambda h: bb_nav_current(h, path),
+        skip_home=True,
+        skip_current=True,
+        nav_class="footer-nav site-nav",
+        aria_label="On this board",
+        limit_per_group=2,
+    )
     crumb_html = crumbs or ""
     return f"""<!doctype html>
 <html lang="en">
@@ -380,8 +469,10 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "bb/"), image=img, brand="BaseKeep", brand_url="https://ballkeep.com/bb/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
-  <link rel="stylesheet" href="{prefix}css/bb.css?v=41" />
+  <link rel="stylesheet" href="{prefix}css/bb.css?v={CHROME_VER}" />
+  <link rel="stylesheet" href="{prefix}css/chrome.css?v={CHROME_VER}" />
   <link rel="icon" href="{prefix}img/bb-logo.jpg" />
+  {theme_boot()}
 </head>
 <body{f' class="{esc(body_class)}"' if body_class else ""}>
   <div class="wrap">
@@ -393,18 +484,22 @@ def bb_page(title, path, body, extra_js="", depth=1, description=None, image=Non
           <p>The Keep · The Diamond · The Farm</p>
         </div>
       </a>
-      <nav>{''.join(links)}</nav>
+      {sports_top("bb", depth)}
+      {head_nav}
     </header>
-    {sports_top("bb", depth)}
     {crumb_html}
     {body}
     <footer>
-      © {date.today().year} BaseKeep · ballkeep.com/bb · Rankings aggregated {UPDATED}. Not affiliated with MLB.
-      {foot}
+      <div class="footer-mast">
+        <p class="footer-mark">{wordmark()}</p>
+        <p>© {date.today().year} BaseKeep · ballkeep.com/bb · Rankings aggregated {UPDATED}. Not affiliated with MLB.</p>
+      </div>
+      <div class="footer-cols">{foot}</div>
       {legal_links(depth)}
       {sports_footer("bb", depth)}
     </footer>
   </div>
+  <script src="{prefix}js/theme.js?v={CHROME_VER}" defer></script>
   {extra_js}
 </body>
 </html>
@@ -421,6 +516,10 @@ def bb_board_page(title, path, body, extra_js="", depth=1, extra_jsonld=None):
     for blob in extra_jsonld or []:
         if blob:
             ld.append(blob)
+    prefix = "../" * depth
+    board_tag = f'<script src="{prefix}js/board.js?v={CHROME_VER}" defer></script>'
+    if "js/board.js" not in (extra_js or ""):
+        extra_js = (extra_js or "") + board_tag
     return bb_page(
         title, path, body + extra, extra_js, depth=depth,
         crumbs=breadcrumbs([("BaseKeep", home), (title, None)]),
@@ -431,6 +530,7 @@ def bb_board_page(title, path, body, extra_js="", depth=1, extra_jsonld=None):
 
 def _rank_th(label):
     cls = ""
+    src = {"RG", "TDG", "FP ECR", "Avg", "# Boards", "Adj.", "Pipeline", "Boards", "BA", "ESPN"}
     if label == "BK Value":
         cls = "c-val"
     elif label == "Age":
@@ -439,7 +539,11 @@ def _rank_th(label):
         cls = "c-eta"
     elif label == "Path":
         cls = "c-path"
-    elif label not in ("BK", "Player", "Pos", "Team"):
+    elif label == "Pos/Team":
+        cls = "c-pos-team"
+    elif label in src:
+        cls = "src-col"
+    elif label not in ("BK", "Player", "Pos", "Team", "Level", "MLB G"):
         cls = "desk-only"
     attr = f' class="{cls}"' if cls else ""
     return f"<th{attr}>{esc(label)}</th>"
@@ -493,7 +597,9 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
-    cols = ["BK", "Player", "Pos", "Team"]
+    cols = ["BK", "Player", "Pos/Team"]
+    if show_age:
+        cols.append("Age")
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
@@ -505,33 +611,46 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
         if show_age and not age_txt:
             age_txt = str((media.get(r.get("key") or "") or {}).get("age") or "")
-        age_label = f"age {age_txt}" if show_age and age_txt else ""
-        age_span = f'<span class="age-desc">{esc(age_label)}</span>' if age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos0)}">{esc(pos)}</span>'
             f" · {esc(team)}</div>"
         )
+        pos_team = (
+            f'<span class="pos {esc(pos0)}">{esc(pos)}</span>'
+            + (f'<span class="team-tag">{esc(team)}</span>' if team else "")
+        )
         face = ""
         if faces:
-            face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="{esc(face_alt(r.get("name")))}" loading="lazy" />'
+            face = (
+                f'<img class="face pos-{esc(pos0)}" src="{esc(face_src(r, media, depth))}" '
+                f'alt="{esc(face_alt(r.get("name")))}" width="40" height="40" loading="lazy" />'
+            )
         stack = (
             f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
-            f'<strong>{esc(r["name"])}</strong></a>{age_span}{meta}</span>'
+            f'<strong>{esc(r["name"])}</strong></a>{meta}</span>'
         )
         dn = rank_search_key(r.get("name"), pos, team, r.get("group"))
+        age_cell = f'<td class="c-age">{esc(age_txt)}</td>' if show_age else ""
         body.append(
-            f'<tr data-pos="{esc(pos0)}" data-group="{esc(r.get("group") or "")}" data-name="{dn}">'
+            f'<tr data-pos="{esc(pos0)}" data-group="{esc(r.get("group") or "")}" data-name="{dn}" '
+            f'data-rank="{esc(r.get("bk") or "")}" data-age="{esc(age_txt)}" data-val="{esc(r.get("value") or "")}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name">{face}{stack}</td>'
-            f'<td class="c-pos"><span class="pos {esc(pos0)}">{esc(pos)}</span></td>'
-            f'<td class="c-team">{esc(team)}</td>'
+            f'<td class="c-name"><div class="name-cell">{face}{stack}</div></td>'
+            f'<td class="c-pos-team">{pos_team}</td>'
+            f"{age_cell}"
             f"{extra_cells(r)}"
             "</tr>"
         )
-    cls = "rank-table faces" if faces else "rank-table"
+    has_src = any(h in {"RG", "TDG", "Avg", "# Boards", "Adj.", "Pipeline", "Boards"} for h in extra_headers)
+    tools = board_tools_html(has_src)
+    bits = ["rank-table", "compact"]
+    if faces:
+        bits.append("faces")
     return (
-        f'<div class="table-wrap"><table class="{cls}">'
+        f"{tools}"
+        f'<div class="table-wrap"><table class="{" ".join(bits)}">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
+        f'<p class="board-empty" hidden>No players match that search.</p>'
     )
 
 
@@ -558,10 +677,10 @@ def val_cell(r):
     rg = ranks.get("RotoGraphs Model")
     tdg = ranks.get("TDG Points")
     return (
-        f'<td class="desk-only">{rg if rg not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{tdg if tdg not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r["avg"]}</td>'
-        f'<td class="desk-only">{r["n"]}</td>'
+        f'<td class="src-col">{rg if rg not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{tdg if tdg not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r["avg"]}</td>'
+        f'<td class="src-col">{r["n"]}</td>'
         f'<td class="c-val val">{int(r["value"]):,}</td>'
     )
 
@@ -993,8 +1112,8 @@ def farm_extra(r):
         f'<td class="desk-only">{esc(games_txt)}</td>'
         f'<td class="c-eta">{esc(r.get("eta") or "")}</td>'
         f'<td class="c-path path-note">{esc(r.get("path") or "")}</td>'
-        f'<td class="desk-only">{pipe if pipe not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("n") or 0}</td>'
+        f'<td class="src-col">{pipe if pipe not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("n") or 0}</td>'
         f'<td class="c-val val">{int(r.get("value") or 0):,}</td>'
     )
 
@@ -1892,13 +2011,13 @@ def write_deep_dynasty_page() -> str:
     </ul>
 
     <p class="note" style="margin-top:24px">
-      Once 5 or more of the above are confirmed accessible and attributed, this page will be replaced by the live board with player search and filters (position, MLB team, minors vs. majors, age). The board will display the true source count — not 40.
+      The live board now uses the 3 confirmed deep lists. Open <a href="deep-dynasty.html">Deep Dynasty</a> for the ranked tape.
     </p>
     """
 
     return bb_board_page(
-        "Deep Dynasty Baseball Board — Source Research",
-        "deep-dynasty.html",
+        "Deep Dynasty Baseball Board - Source Research",
+        "deep-dynasty-research.html",
         body,
     )
 
@@ -1931,39 +2050,59 @@ def write_baseball_site():
             '<p class="note" style="margin-top:12px"><a href="news.html">All BK News</a></p>'
         )
     keep_n = 3
+    deep = load_deepbase_boards()
     home = f"""
-    <section class="home-hero" aria-label="Baseball rankings">
-      <div class="home-hero-media" aria-hidden="true"></div>
-      <div class="home-hero-copy">
-        {sr_h1("Fantasy Baseball Dynasty Rankings")}
-        <p class="home-eyebrow">Ranks {UPDATED} · Regular season wrapped Sept. 27</p>
-        <p class="home-mark">{wordmark()}</p>
-        <div class="home-ctas">
-          <a class="cta" href="the-keep.html">The Keep</a>
-          <a class="cta alt" href="the-diamond.html">The Diamond</a>
-        </div>
-      </div>
-    </section>
+    {sr_h1("Fantasy Baseball Dynasty Rankings")}
+    {slim_banner("BaseKeep", UPDATED, "../img/bb-logo.jpg", "BaseKeep logo", "Dynasty baseball")}
+    {outbound_pills("bb")}
+    <p class="note"><a href="players/index.html">My Team · Player files</a></p>
     <section class="home-snapshot" aria-label="Top of the boards">
       <article class="home-snap keep">
         <header class="home-snap-head">
           <p class="kicker">The Keep</p>
           <h2>Overall dynasty</h2>
-          <p>{len(keep)} names · {keep_n} boards</p>
+          <p>Top 10 · {keep_n} boards · {UPDATED}</p>
           <a class="home-snap-link" href="the-keep.html">Full board</a>
         </header>
-        {home_rank_preview(keep, media)}
+        {home_rank_preview(keep, media, 10)}
       </article>
       <article class="home-snap board">
         <header class="home-snap-head">
           <p class="kicker">The Diamond</p>
           <h2>Redraft ranking</h2>
-          <p>This year only</p>
+          <p>Top 10 · this year only</p>
           <a class="home-snap-link" href="the-diamond.html">Full board</a>
         </header>
-        {home_rank_preview(redraft, media)}
+        {home_rank_preview(redraft, media, 10)}
       </article>
     </section>
+    <section class="home-snapshot deepbase-grid" aria-label="DeepBase boards">
+      {"".join(
+        f'<article><a class="tile deepbase-card" href="{esc(p["file"])}">'
+        f'<p class="kicker">{esc(p["kicker"])}</p>'
+        f'<h3>{esc(p["title"])}</h3>'
+        f'<p>{esc(p["blurb"])}</p>'
+        f'<p class="deepbase-count"><strong>{p["count"]}</strong> players</p>'
+        f"</a></article>"
+        for p in deep["pages"]
+      )}
+    </section>
+    <section class="desk-block tape home-wire">
+      <p class="kicker">News</p>
+      <h2>The wire.</h2>
+      {extra_news or '<p class="note">News lands when published.</p>'}
+    </section>
+    <p class="note"><a href="more.html">More of the site</a></p>
+    """
+    write("bb/index.html", bb_page(
+        "Home", "index.html", home,
+        extra_jsonld=[website_jsonld("BaseKeep", "https://ballkeep.com/bb/"), faq_jsonld(BB_HOME_FAQ)],
+        body_class="home",
+    ))
+    more = f"""
+    <p class="kicker">The rest of the site</p>
+    <h1>More</h1>
+    <p class="note">Everything that used to sit on Home.</p>
     {desk_block("lists", "More ranks", "Lineup, arms, and the Farm.", "Hitters, pitchers, prospects, and the bullpen.", [
         ("the-lineup.html", "The Lineup", "Hitters only."),
         ("pitchers.html", "BK's Pitchers", "Top 150 arms."),
@@ -1974,11 +2113,17 @@ def write_baseball_site():
     {desk_block("tools", "Tools", "Calculators and files.", "Price a deal or open a player file.", [
         ("trade.html", "Trade Calculators", "Keep, Lineup, Pitchers, The Diamond."),
         ("players/index.html", "Player Files", "The full Keep tape."),
+        ("deep-dynasty.html", "Deep Dynasty", "Full tape, majors and farm."),
+        ("deep-farm.html", "Deep Farm", "Prospects past the top 100."),
+        ("majors.html", "Majors", "Big-league dynasty only."),
+        ("lineups.html", "Lineups", "Everyday bats."),
+        ("deep-dynasty-research.html", "Deep Dynasty research", "Source audit."),
+        ("../deepbase/index.html", "DeepBase", "The four deep boards."),
     ])}
     {desk_block("tape", "Tape", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "MLB memes. Pictures on the card."),
         ("news.html", "BK News", "IL, roster, managers."),
-    ], extra_news)}
+    ])}
     <ul class="home-proof">
       <li><strong>{keep_n}</strong><span>dynasty boards</span></li>
       <li><strong>400</strong><span>Keep names</span></li>
@@ -2005,11 +2150,7 @@ def write_baseball_site():
     </section>
     {faq_html(BB_HOME_FAQ, heading="How BaseKeep works.")}
     """
-    write("bb/index.html", bb_page(
-        "Home", "index.html", home,
-        extra_jsonld=[website_jsonld("BaseKeep", "https://ballkeep.com/bb/"), faq_jsonld(BB_HOME_FAQ)],
-        body_class="home",
-    ))
+    write("bb/more.html", bb_page("More", "more.html", more))
 
     flt, js = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
     keep_body = f"""
@@ -2082,7 +2223,7 @@ def write_baseball_site():
     <h1>The Diamond</h1>
     <p class="note">This is the redraft list. One-year baseball, {len(redraft)} names. Use this board for 2026 rest-of-season and redraft startups.</p>
     {rank_search_bar(rd_flt)}
-    <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td class="desk-only">{r["avg"]}</td><td class="c-val val">{int(r["value"]):,}</td>', media=media, faces=True, show_age=True)}</div>
+    <div class="panel">{rank_table(redraft, ["Adj.", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="c-val val">{int(r["value"]):,}</td>', media=media, faces=True, show_age=True)}</div>
     {value_bars(redraft, 12, "#1f6b3a", "The Diamond value graph")}
     {sources_panel()}
     """
@@ -2127,7 +2268,31 @@ def write_baseball_site():
         canonical="https://ballkeep.com/bb/the-diamond.html",
     ))
 
-    write("bb/deep-dynasty.html", write_deep_dynasty_page())
+    write("bb/deep-dynasty-research.html", write_deep_dynasty_page())
+    flt_deep, js_deep = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
+    for page in deep["pages"]:
+        farmish = page["id"] == "deep-farm"
+        table = rank_table(
+            page["rows"],
+            FARM_HEADERS if farmish else DEEP_HEADERS,
+            farm_cell if farmish else deep_cell,
+            media=media,
+            faces=True,
+            show_age=True,
+        )
+        body = board_body(page, table, home_href="index.html", brand="BaseKeep")
+        write(f"bb/{page['file']}", bb_board_page(
+            page["title"],
+            page["file"],
+            body,
+            js_deep,
+            extra_jsonld=[faq_jsonld(DEEPBASE_FAQ)],
+        ))
+    db_urls = write_deepbase_copy(
+        deep,
+        rank_table,
+        f'<script src="../js/board.js?v={CHROME_VER}" defer></script>',
+    )
     modes = [
         trade_payload("Dynasty Overall", "trade-keep.html", "Uses The Keep overall ranks.", keep, picks),
         trade_payload("Dynasty Lineup", "trade-lineup.html", "Hitters only, The Lineup ranks.", lineup, picks),
@@ -2188,14 +2353,16 @@ def write_baseball_site():
         "urls": ["https://ballkeep.com/bb/"] + [
             "https://ballkeep.com/bb/" + p
             for p in [
-                "the-keep.html", "news.html", "the-x.html",
+                "the-keep.html", "news.html", "the-x.html", "more.html",
+                "deep-dynasty.html", "deep-farm.html", "majors.html", "lineups.html",
+                "deep-dynasty-research.html",
                 "the-lineup.html", "pitchers.html", "bullpen.html",
                 "bullpen-holds.html", "the-diamond.html", "the-farm.html", "trade.html",
                 "trade-keep.html", "trade-lineup.html", "trade-pitchers.html",
                 "trade-redraft.html", "trade-saves.html", "trade-svh.html",
                 "players/",
             ]
-        ] + news_urls + player_urls,
+        ] + news_urls + player_urls + db_urls,
         "n_keep": len(keep),
         "n_players": len(keep),
         "n_saves": len(saves),

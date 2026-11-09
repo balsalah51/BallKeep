@@ -28,8 +28,10 @@ from news_algo import (  # noqa: E402
 )
 from x_tape import cards_html as x_cards  # noqa: E402
 from seo import (  # noqa: E402
+    CHROME_VER,
     also_on_desk,
     article_jsonld,
+    board_tools_html,
     breadcrumb_jsonld,
     breadcrumbs,
     canon,
@@ -38,9 +40,10 @@ from seo import (  # noqa: E402
     face_alt,
     faq_html,
     faq_jsonld,
-    footer_nav,
+    grouped_nav,
     head_tags,
     legal_links,
+    outbound_pills,
     person_jsonld,
     rank_card,
     rank_list_jsonld,
@@ -49,10 +52,13 @@ from seo import (  # noqa: E402
     rank_spread_graph,
     related_players_html,
     related_stories_html,
+    slim_banner,
+    sport_header_nav,
     sports_footer,
     sports_top,
     sr_h1,
     strip_em,
+    theme_boot,
     value_bars,
     video_jsonld,
     website_jsonld,
@@ -105,6 +111,34 @@ PL_NAV = [
     ("trade.html", "Trade"),
     ("players/index.html", "Players"),
     ("schedule.html", "Schedule"),
+    ("more.html", "More"),
+]
+
+PL_NAV_GROUPS = [
+    ("rankings", "Rankings", [
+        ("index.html", "Home"),
+        ("the-premier.html", "The Premier"),
+        ("the-pitch.html", "The Pitch"),
+        ("attack.html", "Attack"),
+        ("midfield.html", "Midfield"),
+        ("defence.html", "Defence"),
+        ("keepers.html", "Keepers"),
+    ]),
+    ("week", "This Week", [
+        ("news.html", "News"),
+        ("schedule.html", "Schedule"),
+    ]),
+    ("tools", "Tools", [
+        ("trade.html", "Trade"),
+    ]),
+    ("mine", "My Team", [
+        ("players/index.html", "Players"),
+    ]),
+    ("more", "More", [
+        ("more.html", "More"),
+        ("the-x.html", "The X"),
+        ("../deepbase/index.html", "DeepBase"),
+    ]),
 ]
 
 
@@ -135,7 +169,12 @@ PL_SEO = {
     "index.html": (
         "Fantasy Premier League Rankings | PitchKeep",
         "2026/27 Premier League rankings from 25 pro lists. The Premier is the hybrid 400. The Pitch is Sleeper BPL 2025. Haaland is #1.",
-        "img/pl-hero.jpg",
+        "img/pl-logo.jpg",
+    ),
+    "more.html": (
+        "More | PitchKeep",
+        "The rest of PitchKeep: position boards, schedule, tools, The X, and the other sports.",
+        "img/pl-logo.jpg",
     ),
     "the-premier.html": (
         "Fantasy Premier League Rankings (Full Tape) | PitchKeep",
@@ -324,23 +363,39 @@ def pl_nav_target(href: str, path: str, depth: int) -> str:
     return href
 
 
+def pl_nav_current(href: str, path: str) -> bool:
+    if href == path:
+        return True
+    if href == "news.html" and (path == "news.html" or path.startswith("news/")):
+        return True
+    return False
+
+
 def pl_page(title, path, body, extra_js="", depth=1, description=None, image=None, doc_title=None,
             crumbs=None, extra_jsonld=None, og_type="website", published=None, modified=None,
             robots=None, canonical=None, schema_type=None, body_class=""):
     prefix = "../" * depth
-    links = []
-    for href, label in PL_NAV:
-        cur = ' aria-current="page"' if (
-            href == path
-            or (href == "news.html" and (path == "news.html" or path.startswith("news/")))
-        ) else ""
-        target = pl_nav_target(href, path, depth)
-        links.append(f'<a href="{esc(target)}"{cur}>{esc(label)}</a>')
     packed = PL_SEO.get(path)
     full_title = doc_title or (packed[0] if packed else f"{title} | PitchKeep")
     desc = description or (packed[1] if packed else f"{title} on PitchKeep. Premier League rankings on Sleeper BPL 2025 points. Updated {UPDATED}.")
     img = image or (packed[2] if packed else "img/pl-logo.jpg")
-    foot = footer_nav([(pl_nav_target(h, path, depth), lab) for h, lab in PL_NAV], pl_nav_target(path, path, depth))
+    head_nav = sport_header_nav(
+        PL_NAV_GROUPS,
+        path,
+        lambda h: pl_nav_target(h, path, depth),
+        lambda h: pl_nav_current(h, path),
+        pl_nav_target("players/index.html", path, depth),
+    )
+    foot = grouped_nav(
+        PL_NAV_GROUPS,
+        lambda h: pl_nav_target(h, path, depth),
+        lambda h: pl_nav_current(h, path),
+        skip_home=True,
+        skip_current=True,
+        nav_class="footer-nav site-nav",
+        aria_label="On this board",
+        limit_per_group=2,
+    )
     crumb_html = crumbs or ""
     return f"""<!doctype html>
 <html lang="en">
@@ -348,8 +403,10 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 {head_tags(title=full_title, description=desc, canonical=canonical or canon(path, "pl/"), image=img, brand="PitchKeep", brand_url="https://ballkeep.com/pl/", extra_jsonld=extra_jsonld, og_type=og_type, published=published, modified=modified, robots=robots, schema_type=schema_type)}
-  <link rel="stylesheet" href="{prefix}css/pl.css?v=41" />
+  <link rel="stylesheet" href="{prefix}css/pl.css?v={CHROME_VER}" />
+  <link rel="stylesheet" href="{prefix}css/chrome.css?v={CHROME_VER}" />
   <link rel="icon" href="{prefix}img/pl-logo.jpg" />
+  {theme_boot()}
 </head>
 <body{f' class="{esc(body_class)}"' if body_class else ""}>
   <div class="wrap">
@@ -361,18 +418,22 @@ def pl_page(title, path, body, extra_js="", depth=1, description=None, image=Non
           <p>Premier League ranks</p>
         </div>
       </a>
-      <nav>{''.join(links)}</nav>
+      {sports_top("pl", depth)}
+      {head_nav}
     </header>
-    {sports_top("pl", depth)}
     {crumb_html}
     {body}
     <footer>
-      © {date.today().year} PitchKeep · ballkeep.com/pl · Rankings aggregated {UPDATED}. Not affiliated with the Premier League or FPL.
-      {foot}
+      <div class="footer-mast">
+        <p class="footer-mark">{wordmark()}</p>
+        <p>© {date.today().year} PitchKeep · ballkeep.com/pl · Rankings aggregated {UPDATED}. Not affiliated with the Premier League or FPL.</p>
+      </div>
+      <div class="footer-cols">{foot}</div>
       {legal_links(depth)}
       {sports_footer("pl", depth)}
     </footer>
   </div>
+  <script src="{prefix}js/theme.js?v={CHROME_VER}" defer></script>
   {extra_js}
 </body>
 </html>
@@ -389,6 +450,10 @@ def pl_board_page(title, path, body, extra_js="", depth=1, extra_jsonld=None):
     for blob in extra_jsonld or []:
         if blob:
             ld.append(blob)
+    prefix = "../" * depth
+    board_tag = f'<script src="{prefix}js/board.js?v={CHROME_VER}" defer></script>'
+    if "js/board.js" not in (extra_js or ""):
+        extra_js = (extra_js or "") + board_tag
     return pl_page(
         title, path, body + extra, extra_js, depth=depth,
         crumbs=breadcrumbs([("PitchKeep", home), (title, None)]),
@@ -405,8 +470,10 @@ def _rank_th(label):
         cls = "c-price"
     elif label == "Age":
         cls = "c-age"
+    elif label in ("Pos/Team", "Pos/Club"):
+        cls = "c-pos-team"
     elif label not in ("PK", "Player", "Pos", "Club"):
-        cls = "desk-only"
+        cls = "src-col"
     attr = f' class="{cls}"' if cls else ""
     return f"<th{attr}>{esc(label)}</th>"
 
@@ -459,7 +526,9 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
-    cols = ["PK", "Player", "Pos", "Club"]
+    cols = ["PK", "Player", "Pos/Club"]
+    if show_age:
+        cols.append("Age")
     head = "".join(_rank_th(h) for h in cols + extra_headers)
     body = []
     for r in rows:
@@ -471,44 +540,57 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
         href = f"{player_prefix}players/{slug}.html"
         price_bit = f" · £{price}" if price not in (None, "") else ""
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
-        age_label = f"age {age_txt}" if show_age and age_txt else ""
-        age_span = f'<span class="age-desc">{esc(age_label)}</span>' if age_label else ""
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos)}">{esc(pos)}</span>'
             f" · {esc(team)}{esc(price_bit)}</div>"
         )
+        pos_team = (
+            f'<span class="pos {esc(pos)}">{esc(pos)}</span>'
+            + (f'<span class="team-tag">{esc(team)}</span>' if team else "")
+        )
         face = ""
         if faces:
-            face = f'<img class="face" src="{esc(face_src(r, media, depth))}" alt="{esc(face_alt(label))}" loading="lazy" />'
+            face = (
+                f'<img class="face pos-{esc(pos)}" src="{esc(face_src(r, media, depth))}" '
+                f'alt="{esc(face_alt(label))}" width="40" height="40" loading="lazy" />'
+            )
         stack = (
             f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
-            f"<strong>{esc(label)}</strong></a>{age_span}{meta}</span>"
+            f"<strong>{esc(label)}</strong></a>{meta}</span>"
         )
         dn = rank_search_key(r.get("name"), label, pos, team)
+        age_cell = f'<td class="c-age">{esc(age_txt)}</td>' if show_age else ""
         body.append(
-            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or pos)}" data-name="{dn}">'
+            f'<tr data-pos="{esc(pos)}" data-group="{esc(r.get("group") or pos)}" data-name="{dn}" '
+            f'data-rank="{esc(r.get("bk") or "")}" data-age="{esc(age_txt)}" data-val="{esc(r.get("value") or "")}">'
             f'<td class="rk c-rank">{r.get("bk","")}</td>'
-            f'<td class="c-name">{face}{stack}</td>'
-            f'<td class="c-pos"><span class="pos {esc(pos)}">{esc(pos)}</span></td>'
-            f'<td class="c-team">{esc(team)}</td>'
+            f'<td class="c-name"><div class="name-cell">{face}{stack}</div></td>'
+            f'<td class="c-pos-team">{pos_team}</td>'
+            f"{age_cell}"
             f"{extra_cells(r)}</tr>"
         )
-    cls = "rank-table faces" if faces else "rank-table"
+    has_src = any(h not in ("BK Value", "Age", "£") for h in extra_headers)
+    tools = board_tools_html(has_src)
+    bits = ["rank-table", "compact"]
+    if faces:
+        bits.append("faces")
     return (
-        f'<div class="table-wrap"><table class="{cls}">'
+        f"{tools}"
+        f'<div class="table-wrap"><table class="{" ".join(bits)}">'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
+        f'<p class="board-empty" hidden>No players match that search.</p>'
     )
 
 
 def val_cell(r):
     return (
-        f'<td class="desk-only">{r.get("sleeper_pts") if r.get("sleeper_pts") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("pts") if r.get("pts") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("gls") if r.get("gls") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("ast") if r.get("ast") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("minutes") if r.get("minutes") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("cs") if r.get("cs") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("tackles") if r.get("tackles") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("sleeper_pts") if r.get("sleeper_pts") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("pts") if r.get("pts") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("gls") if r.get("gls") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("ast") if r.get("ast") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("minutes") if r.get("minutes") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("cs") if r.get("cs") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("tackles") if r.get("tackles") not in (None, "") else "-"}</td>'
         f'<td class="c-price">£{r.get("price") or "-"}</td>'
         f'<td class="c-val val">{int(r.get("value") or 0):,}</td>'
     )
@@ -516,14 +598,14 @@ def val_cell(r):
 
 def premier_cell(r):
     return (
-        f'<td class="desk-only">{r.get("premier_score") if r.get("premier_score") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("sleeper_rank") if r.get("sleeper_rank") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("consensus") if r.get("consensus") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("sleeper_pts") if r.get("sleeper_pts") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("pts") if r.get("pts") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("gls") if r.get("gls") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("ast") if r.get("ast") not in (None, "") else "-"}</td>'
-        f'<td class="desk-only">{r.get("n") if r.get("n") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("premier_score") if r.get("premier_score") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("sleeper_rank") if r.get("sleeper_rank") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("consensus") if r.get("consensus") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("sleeper_pts") if r.get("sleeper_pts") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("pts") if r.get("pts") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("gls") if r.get("gls") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("ast") if r.get("ast") not in (None, "") else "-"}</td>'
+        f'<td class="src-col">{r.get("n") if r.get("n") not in (None, "") else "-"}</td>'
         f'<td class="c-price">£{r.get("price") or "-"}</td>'
         f'<td class="c-val val">{int(r.get("value") or 0):,}</td>'
     )
@@ -1293,38 +1375,46 @@ def write_pitch_site():
         )
     premier_n = 25
     home = f"""
-    <section class="home-hero" aria-label="Premier League rankings">
-      <div class="home-hero-media" aria-hidden="true"></div>
-      <div class="home-hero-copy">
-        {sr_h1("Fantasy Premier League Rankings")}
-        <p class="home-eyebrow">Ranks {UPDATED} · 2026/27 season</p>
-        <p class="home-mark">{wordmark()}</p>
-        <div class="home-ctas">
-          <a class="cta" href="the-premier.html">The Premier</a>
-          <a class="cta alt" href="the-pitch.html">The Pitch</a>
-        </div>
-      </div>
-    </section>
+    {sr_h1("Fantasy Premier League Rankings")}
+    {slim_banner("PitchKeep", UPDATED, "../img/pl-logo.jpg", "PitchKeep logo", "Premier League ranks")}
+    {outbound_pills("pl")}
+    <p class="note"><a href="players/index.html">My Team · Player files</a></p>
     <section class="home-snapshot" aria-label="Top of the boards">
       <article class="home-snap keep">
         <header class="home-snap-head">
           <p class="kicker">The Premier</p>
           <h2>Full tape</h2>
-          <p>{len(premier)} names · {premier_n} lists · 2026/27</p>
+          <p>Top 10 · {premier_n} lists · {UPDATED}</p>
           <a class="home-snap-link" href="the-premier.html">Full board</a>
         </header>
-        {home_rank_preview(premier, media)}
+        {home_rank_preview(premier, media, 10)}
       </article>
       <article class="home-snap board">
         <header class="home-snap-head">
           <p class="kicker">The Pitch</p>
           <h2>Sleeper BPL 2025</h2>
-          <p>This scoring · last season's line</p>
+          <p>Top 10 · this scoring</p>
           <a class="home-snap-link" href="the-pitch.html">Full board</a>
         </header>
-        {home_rank_preview(pitch, media)}
+        {home_rank_preview(pitch, media, 10)}
       </article>
     </section>
+    <section class="desk-block tape home-wire">
+      <p class="kicker">News</p>
+      <h2>The wire.</h2>
+      {extra_news or '<p class="note">News lands when published.</p>'}
+    </section>
+    <p class="note"><a href="more.html">More of the site</a></p>
+    """
+    write("pl/index.html", pl_page(
+        "Home", "index.html", home,
+        extra_jsonld=[website_jsonld("PitchKeep", "https://ballkeep.com/pl/"), faq_jsonld(PL_HOME_FAQ)],
+        body_class="home",
+    ))
+    more = f"""
+    <p class="kicker">The rest of the site</p>
+    <h1>More</h1>
+    <p class="note">Everything that used to sit on Home.</p>
     {desk_block("lists", "More ranks", "The position boards.", "Forwards, mids, defenders, keepers. Sleeper-ranked.", [
         ("attack.html", "Attack", "Forwards."),
         ("midfield.html", "Midfield", "Mids."),
@@ -1341,7 +1431,7 @@ def write_pitch_site():
     {desk_block("tape", "Tape", "News and The X.", "Memes and the wire.", [
         ("the-x.html", "The X", "PL memes. Pictures on the card."),
         ("news.html", "PK News", "Injuries, transfers, managers."),
-    ], extra_news)}
+    ])}
     <ul class="home-proof">
       <li><strong>{premier_n}</strong><span>published lists</span></li>
       <li><strong>400</strong><span>Premier names</span></li>
@@ -1368,11 +1458,7 @@ def write_pitch_site():
     </section>
     {faq_html(PL_HOME_FAQ, heading="How PitchKeep works.")}
     """
-    write("pl/index.html", pl_page(
-        "Home", "index.html", home,
-        extra_jsonld=[website_jsonld("PitchKeep", "https://ballkeep.com/pl/"), faq_jsonld(PL_HOME_FAQ)],
-        body_class="home",
-    ))
+    write("pl/more.html", pl_page("More", "more.html", more))
 
     flt, js = filter_js(["FWD", "MID", "DEF", "GKP"])
     premier_body = f"""
@@ -1485,7 +1571,7 @@ def write_pitch_site():
         "urls": ["https://ballkeep.com/pl/"] + [
             "https://ballkeep.com/pl/" + p
             for p in [
-                "the-premier.html", "the-pitch.html", "news.html", "the-x.html",
+                "the-premier.html", "the-pitch.html", "news.html", "the-x.html", "more.html",
                 "schedule.html",
                 "attack.html", "midfield.html",
                 "defence.html", "keepers.html", "trade.html", "trade-premier.html",
