@@ -33,6 +33,7 @@ from deepbase import (  # noqa: E402
     board_body,
     deep_cell,
     farm_cell,
+    lineup_body,
     load_boards as load_deepbase_boards,
     write_deepbase_copy,
 )
@@ -543,6 +544,8 @@ def _rank_th(label):
         cls = "c-pos-team"
     elif label in src:
         cls = "src-col"
+    elif label in ("AB", "IP"):
+        cls = "c-ab" if label == "AB" else "c-ip"
     elif label not in ("BK", "Player", "Pos", "Team", "Level", "MLB G"):
         cls = "desk-only"
     attr = f' class="{cls}"' if cls else ""
@@ -593,7 +596,7 @@ def home_rank_preview(rows, media, n=16):
     return f'<ol class="home-rank-list">{"".join(items)}</ol>'
 
 
-def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", media=None, faces=False, show_age=False, depth=1):
+def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", media=None, faces=False, show_age=False, depth=1, show_all=False):
     extra_headers = extra_headers or []
     extra_cells = extra_cells or (lambda r: "")
     media = media or {}
@@ -611,9 +614,17 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
         age_txt = str(r["age"]) if r.get("age") not in (None, "") else ""
         if show_age and not age_txt:
             age_txt = str((media.get(r.get("key") or "") or {}).get("age") or "")
+        extra_meta = ""
+        if r.get("ab") not in (None, "") or r.get("ip") not in (None, ""):
+            ip_v = r.get("ip")
+            if ip_v in (None, ""):
+                ip_txt = "0"
+            else:
+                ip_txt = f"{float(ip_v):.1f}".rstrip("0").rstrip(".")
+            extra_meta = f" · {int(r.get('ab') or 0)} AB · {esc(ip_txt)} IP"
         meta = (
             f'<div class="row-meta"><span class="pos {esc(pos0)}">{esc(pos)}</span>'
-            f" · {esc(team)}</div>"
+            f" · {esc(team)}{extra_meta}</div>"
         )
         pos_team = (
             f'<span class="pos {esc(pos0)}">{esc(pos)}</span>'
@@ -625,9 +636,12 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
                 f'<img class="face pos-{esc(pos0)}" src="{esc(face_src(r, media, depth))}" '
                 f'alt="{esc(face_alt(r.get("name")))}" width="40" height="40" loading="lazy" />'
             )
+        tag = ""
+        if r.get("bk_model"):
+            tag = '<span class="src-tag">BK model</span>'
         stack = (
             f'<span class="name-stack"><a class="player-link" href="{esc(href)}">'
-            f'<strong>{esc(r["name"])}</strong></a>{meta}</span>'
+            f'<strong>{esc(r["name"])}</strong></a>{tag}{meta}</span>'
         )
         dn = rank_search_key(r.get("name"), pos, team, r.get("group"))
         age_cell = f'<td class="c-age">{esc(age_txt)}</td>' if show_age else ""
@@ -646,9 +660,12 @@ def rank_table(rows, extra_headers=None, extra_cells=None, player_prefix="", med
     bits = ["rank-table", "compact"]
     if faces:
         bits.append("faces")
+    else:
+        bits.append("noface")
+    show_attr = ' data-show-all="1"' if show_all else ""
     return (
         f"{tools}"
-        f'<div class="table-wrap"><table class="{" ".join(bits)}">'
+        f'<div class="table-wrap"><table class="{" ".join(bits)}"{show_attr}>'
         f"<thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table></div>"
         f'<p class="board-empty" hidden>No players match that search.</p>'
     )
@@ -2271,21 +2288,27 @@ def write_baseball_site():
     write("bb/deep-dynasty-research.html", write_deep_dynasty_page())
     flt_deep, js_deep = filter_js(["HIT", "SP", "RP", "UT", "C", "SS", "OF", "1B", "2B", "3B"])
     for page in deep["pages"]:
-        farmish = page["id"] == "deep-farm"
-        table = rank_table(
-            page["rows"],
-            FARM_HEADERS if farmish else DEEP_HEADERS,
-            farm_cell if farmish else deep_cell,
-            media=media,
-            faces=True,
-            show_age=True,
-        )
-        body = board_body(page, table, home_href="index.html", brand="BaseKeep")
+        if page["id"] == "lineups":
+            body = lineup_body(deep.get("lineup_blocks") or page["rows"], home_href="index.html", brand="BaseKeep")
+            extra = ""
+        else:
+            farmish = page["id"] == "deep-farm"
+            table = rank_table(
+                page["rows"],
+                FARM_HEADERS if farmish else DEEP_HEADERS,
+                farm_cell if farmish else deep_cell,
+                media=None,
+                faces=False,
+                show_age=True,
+                show_all=True,
+            )
+            body = board_body(page, table, home_href="index.html", brand="BaseKeep")
+            extra = js_deep
         write(f"bb/{page['file']}", bb_board_page(
             page["title"],
             page["file"],
             body,
-            js_deep,
+            extra,
             extra_jsonld=[faq_jsonld(DEEPBASE_FAQ)],
         ))
     db_urls = write_deepbase_copy(

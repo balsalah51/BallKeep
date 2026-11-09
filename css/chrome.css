@@ -297,4 +297,49 @@ table.rank-table thead th, table.rank-table td { background: var(--white); color
   table.rank-table .src-col { display: none !important; }
   table.rank-table.show-sources .src-col { display: none !important; }
   table.rank-table .name-stack .row-meta { display: none; }
+  table.rank-table.noface tbody tr {
+    grid-template-columns: 2.6rem minmax(0, 1fr) auto;
+  }
+  table.rank-table.noface .c-rank { grid-column: 1; grid-row: 1 / span 2; }
+  table.rank-table.noface .c-name { grid-column: 2; grid-row: 1; }
+  table.rank-table.noface .c-pos-team, table.rank-table.noface .row-meta,
+  table.rank-table.noface .c-pos, table.rank-table.noface .c-team { grid-column: 2; grid-row: 2; }
+  table.rank-table.noface .c-val { grid-column: 3; grid-row: 1 / span 2; }
+  table.rank-table .c-ab, table.rank-table .c-ip,
+  table.rank-table .c-eta, table.rank-table .c-path { display: none; }
+}
+
+.src-tag {
+  display: inline-block; margin-left: 8px; padding: 1px 8px;
+  border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.04em;
+  background: color-mix(in srgb, #0d9488 18%, transparent); color: #0d9488;
+}
+.lineup-jump { margin: 12px 0; }
+.lineup-jump select {
+  min-height: 44px; padding: 0 12px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--white); color: var(--ink); font: inherit;
+}
+.lineup-team {
+  margin: 0 0 12px; border: 1px solid var(--line); border-radius: 14px;
+  background: var(--white); padding: 0 16px 12px;
+}
+.lineup-team > summary {
+  cursor: pointer; list-style: none; padding: 14px 0; font-weight: 800; font-size: 18px;
+}
+.lineup-team > summary::-webkit-details-marker { display: none; }
+.lineup-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.lineup-table caption {
+  caption-side: bottom; color: var(--muted); font-size: 12px; text-align: left; padding-top: 8px;
+}
+.lineup-table th, .lineup-table td {
+  text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top;
+}
+.lineup-table th { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.lineup-alt { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; }
+.lineup-fa { color: #d97706; font-weight: 700; font-size: 11px; margin-left: 6px; }
+.proj-note { color: var(--muted); font-size: 13px; }
+@media (max-width: 860px) {
+  .lineup-table thead { display: none; }
+  .lineup-table, .lineup-table tbody, .lineup-table tr, .lineup-table td { display: block; width: 100%; }
+  .lineup-table tr { padding: 10px 0; border-bottom: 1px solid var(--line); }
 }

@@ -7,7 +7,7 @@ import re
 
 SITE = "https://ballkeep.com"
 FONT_HREF = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-CHROME_VER = 94
+CHROME_VER = 95
 ADSENSE_CLIENT = "ca-pub-1074015774205047"
 ADSENSE_CERT = "f08c47fec0942fa0"
 
