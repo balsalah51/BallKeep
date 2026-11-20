@@ -302,7 +302,9 @@ def test_unique_slugs_and_junk():
 
 
 def test_board_uses_the_headline_and_drops_college():
-    fresh = "2026-10-25T12:00:00Z"
+    # Must stay inside is_fresh_story's 7-day window relative to now.
+    from datetime import datetime, timezone
+    fresh = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     rows = [
         {
             "sport": "football",

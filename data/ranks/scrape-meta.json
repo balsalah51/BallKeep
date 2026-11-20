@@ -1,0 +1,110 @@
+{
+  "scraped": "2026-11-20T20:17Z",
+  "max_age_days": 10,
+  "sources": {
+    "fp-dynasty-sf": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "publisher_updated": "11/19"
+    },
+    "fp-ppr": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "publisher_updated": "11/20",
+      "kind": "ros"
+    },
+    "fp-rookies": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "publisher_updated": "9/07"
+    },
+    "ktc-sf": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z"
+    },
+    "dn-sf": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z"
+    },
+    "pfn": {
+      "ok": false,
+      "scraped": null,
+      "reason": "empty parse / js shell"
+    },
+    "karabell-sf": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 200
+    },
+    "karabell-flex": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 163
+    },
+    "yates-ppr": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 140
+    },
+    "clay-dynasty": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 240
+    },
+    "nbc-ppr": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 200
+    },
+    "ds-sf": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 25
+    },
+    "ds-ppr": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 25
+    },
+    "fbg-ppr": {
+      "ok": false,
+      "scraped": null,
+      "reason": "short parse n=51"
+    },
+    "fp-brown-sf": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 12
+    },
+    "fp-erickson-sf": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 12
+    },
+    "fp-fitz-sf": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 12
+    },
+    "fp-brown-ppr": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 12
+    },
+    "fp-erickson-ppr": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 12
+    },
+    "fp-fitz-ppr": {
+      "ok": true,
+      "scraped": "2026-11-20T20:17Z",
+      "n": 12
+    },
+    "rotowire-sf": {
+      "ok": false,
+      "scraped": null,
+      "reason": "no public list newer than August 2026"
+    }
+  }
+}

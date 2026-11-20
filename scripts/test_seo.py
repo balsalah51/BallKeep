@@ -423,10 +423,12 @@ def test_best_ball_boards():
 def test_best_ball_mash():
     from build_site import best_ball_list
     rows = best_ball_list()
-    assert len(rows) >= 480
+    # In-season spine is FantasyPros ROS PPR (~400), not the draft cheatsheet.
+    assert len(rows) >= 300
     assert rows[0]["name"] in {
         "Ja'Marr Chase", "Jahmyr Gibbs", "Puka Nacua", "Bijan Robinson",
         "Jaxon Smith-Njigba", "Amon-Ra St. Brown", "Christian McCaffrey",
+        "Kenneth Walker",
     }
     maye = next(r for r in rows if r["name"] == "Drake Maye")
     assert maye["bk"] >= 6
@@ -575,10 +577,11 @@ def test_min_ten_ranks():
     allen = next(p for p in profiles if p["name"] == "Josh Allen")
     assert allen["keep_n"] == 40
     assert "PFN (Katz/Soppe)" in allen["ranks"]
-    browning = next(p for p in profiles if p["name"] == "Jake Browning")
-    assert "The Keep" not in browning["lists"]
-    assert browning["keep_n"] >= 10
-    assert len(browning["ranks"]) >= 10
+    # Board-only depth name (not on The Keep). ROS tape, not draft cheatsheet.
+    deep = next(p for p in profiles if p["name"] == "Devin Duvernay")
+    assert "The Keep" not in deep["lists"]
+    assert deep["keep_n"] >= 10
+    assert len(deep["ranks"]) >= 10
 
 
 def test_visible_desk_copy_removed():
@@ -690,18 +693,24 @@ def test_weekly_kit():
     )
     assert week_num() == int(meta()["week"])
     qb = weekly_board("QB")
-    assert qb[0]["name"] in {"Josh Allen", "Brock Purdy", "Drake Maye", "Jordan Love"}
+    assert qb[0]["name"] in {
+        "Josh Allen", "Brock Purdy", "Drake Maye", "Jordan Love", "Joe Burrow", "Dak Prescott",
+    }
     assert qb[0]["bk"] == 1
     assert qb[0]["n"] >= 3
     assert qb[0].get("fpts")
     rb = weekly_board("RB")
-    assert rb[0]["name"] in {"Jahmyr Gibbs", "Bijan Robinson"}
+    assert rb[0]["name"] in {"Jahmyr Gibbs", "Bijan Robinson", "James Cook", "James Cook III", "Christian McCaffrey"}
     wr = weekly_board("WR")
-    assert wr[0]["name"] in {"Puka Nacua", "Jaxon Smith-Njigba"}
+    assert wr[0]["name"] in {
+        "Puka Nacua", "Jaxon Smith-Njigba", "Ja'Marr Chase", "Tee Higgins", "Amon-Ra St. Brown",
+    }
     te = weekly_board("TE")
-    assert te[0]["name"] in {"Trey McBride", "Brock Bowers"}
+    assert te[0]["name"] in {"Trey McBride", "Brock Bowers", "George Kittle", "Isaiah Likely"}
     flex = weekly_flex()
-    assert flex[0]["name"] in {"Jahmyr Gibbs", "Bijan Robinson", "Puka Nacua"}
+    assert flex[0]["name"] in {
+        "Jahmyr Gibbs", "Bijan Robinson", "Puka Nacua", "Ja'Marr Chase", "James Cook", "James Cook III",
+    }
     assert flex[0]["n"] >= 2
     waivers = waiver_board()
     assert len(waivers) >= 20

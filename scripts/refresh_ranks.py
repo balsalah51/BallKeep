@@ -11,6 +11,7 @@ board actually published.
 """
 from __future__ import annotations
 
+from datetime import datetime, timezone
 from html import unescape
 import json
 import re
@@ -20,12 +21,14 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 RANK_DIR = ROOT / "data" / "ranks"
+META_WEEKLY = ROOT / "data" / "weekly" / "meta.json"
 UA = "Mozilla/5.0 (compatible; BallKeep/1.0; +https://ballkeep.com)"
 
 URLS = {
     "pfn": "https://www.profootballnetwork.com/dynasty-fantasy-football-rankings/",
     "fp_sf": "https://www.fantasypros.com/nfl/rankings/dynasty-superflex.php",
-    "fp_ppr": "https://www.fantasypros.com/nfl/rankings/ppr-cheatsheets.php",
+    # Rest-of-season PPR (in-season). Draft cheatsheets stop updating after Week 1.
+    "fp_ppr": "https://www.fantasypros.com/nfl/rankings/ros-ppr-overall.php",
     "fp_rook": "https://www.fantasypros.com/nfl/rankings/dynasty-rookies-superflex.php",
     "fp_bb": "https://www.fantasypros.com/mlb/rankings/dynasty-overall.php",
     "fp_nba": "https://www.fantasypros.com/nba/rankings/dynasty-overall.php",
@@ -41,6 +44,9 @@ URLS = {
     "fp_sf_experts": "https://www.fantasypros.com/nfl/fantasy-football-rankings/dynasty-superflex.php",
     "fp_ppr_experts": "https://www.fantasypros.com/nfl/fantasy-football-rankings/ppr-overall.php",
 }
+
+# Boards older than this are skipped at aggregate time (see build_site.aggregate).
+MAX_AGE_DAYS = 10
 
 
 def fetch(url: str) -> str:
@@ -441,9 +447,45 @@ def parse_fp_expert_cols(html: str, labels: list[str]) -> dict[str, dict[str, in
     return boards
 
 
+def _fp_updated(html: str) -> str:
+    data = extract_js_assign(html, "ecrData") or {}
+    return str(data.get("last_updated") or "")
+
+
+def _stamp_weekly_meta(scraped: str) -> None:
+    META_WEEKLY.parent.mkdir(parents=True, exist_ok=True)
+    meta = {}
+    if META_WEEKLY.exists():
+        try:
+            meta = json.loads(META_WEEKLY.read_text())
+        except json.JSONDecodeError:
+            meta = {}
+    meta["scraped"] = scraped
+    meta.setdefault("season", 2026)
+    meta.setdefault("kickoff", "2026-09-10")
+    meta.setdefault("note", "Rank refresh stamps scraped so The Keep / Board rebuilds are fresh.")
+    META_WEEKLY.write_text(json.dumps(meta, indent=2) + "\n")
+    print(f"  stamped {META_WEEKLY} scraped={scraped}")
+
+
+def write_scrape_meta(sources: dict, scraped: str) -> None:
+    """Record which football boards landed and how old their publisher stamp is."""
+    RANK_DIR.mkdir(parents=True, exist_ok=True)
+    dest = RANK_DIR / "scrape-meta.json"
+    doc = {
+        "scraped": scraped,
+        "max_age_days": MAX_AGE_DAYS,
+        "sources": sources,
+    }
+    dest.write_text(json.dumps(doc, indent=2) + "\n")
+    print(f"  wrote {dest}")
+
+
 def main() -> int:
     RANK_DIR.mkdir(parents=True, exist_ok=True)
+    scraped = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     pages = {}
+    landed: dict[str, dict] = {}
     for key, url in URLS.items():
         print(f"fetch {key}")
         try:
@@ -451,12 +493,24 @@ def main() -> int:
         except Exception as exc:
             print(f"  skip {key}: {type(exc).__name__}: {exc}")
 
+    def mark(stem: str, ok: bool, **extra):
+        landed[stem] = {"ok": ok, "scraped": scraped if ok else None, **extra}
+
     if "fp_sf" in pages:
-        dump_names("fp-dynasty-sf", fp_names(pages["fp_sf"]))
+        updated = _fp_updated(pages["fp_sf"])
+        names = fp_names(pages["fp_sf"])
+        dump_names("fp-dynasty-sf", names)
+        mark("fp-dynasty-sf", bool(names), publisher_updated=updated)
     if "fp_ppr" in pages:
-        dump_names("fp-ppr", fp_names(pages["fp_ppr"]))
+        updated = _fp_updated(pages["fp_ppr"])
+        names = fp_names(pages["fp_ppr"])
+        dump_names("fp-ppr", names)
+        mark("fp-ppr", bool(names), publisher_updated=updated, kind="ros")
     if "fp_rook" in pages:
-        dump_names("fp-rookies", fp_names(pages["fp_rook"]))
+        updated = _fp_updated(pages["fp_rook"])
+        names = fp_names(pages["fp_rook"])
+        dump_names("fp-rookies", names)
+        mark("fp-rookies", bool(names), publisher_updated=updated)
     if "fp_bb" in pages:
         dump_names("fp-bb-dynasty", fp_names(pages["fp_bb"]))
     if "fp_nba" in pages:
@@ -466,30 +520,44 @@ def main() -> int:
             rows = ktc_rows(pages["ktc"])
             if rows:
                 dump_names("ktc-sf", rows)
+                mark("ktc-sf", True)
             else:
                 print("  keep existing KTC tape (parser got 0 rows)")
+                mark("ktc-sf", False, reason="empty parse")
         except Exception as exc:
             print(f"  keep existing KTC tape: {type(exc).__name__}: {exc}")
+            mark("ktc-sf", False, reason=str(exc))
     if "dn" in pages:
-        dump_names("dn-sf", dn_names(pages["dn"]))
+        names = dn_names(pages["dn"])
+        dump_names("dn-sf", names)
+        mark("dn-sf", bool(names))
     if "pfn" in pages:
         pfn_rows = parse_pfn(pages["pfn"])
         if pfn_rows:
             write_pfn_txt(pfn_rows)
+            mark("pfn", True, n=len(pfn_rows))
         else:
-            print("  keep existing PFN tape (parser got 0 rows)")
+            # Interactive PFN board is a JS shell now. Do not reuse a months-old
+            # tape in a fresh Super Aggregate — mark it unavailable.
+            print("  PFN tape unavailable (parser got 0 rows); excluding from fresh aggregate")
+            mark("pfn", False, reason="empty parse / js shell")
+    else:
+        mark("pfn", False, reason="fetch failed")
     if "karabell" in pages:
         sf, flex = parse_karabell(pages["karabell"])
         if len(sf) >= 150:
             dump_names("karabell-sf", sf)
+            mark("karabell-sf", True, n=len(sf))
         if len(flex) >= 120:
             dump_names("karabell-flex", flex)
+            mark("karabell-flex", True, n=len(flex))
     if "yates" in pages:
         skill, kickers, dst = parse_yates(pages["yates"])
         if len(skill) >= 100:
             dest = RANK_DIR / "yates-ppr.json"
             dest.write_text(json.dumps(skill, indent=2) + "\n")
             print(f"  wrote {dest} ({len(skill)})")
+            mark("yates-ppr", True, n=len(skill))
         if kickers:
             dump_names("yates-k", kickers)
         if dst:
@@ -498,22 +566,30 @@ def main() -> int:
         clay = parse_clay(pages["clay"])
         if len(clay) >= 200:
             dump_names("clay-dynasty", clay)
+            mark("clay-dynasty", True, n=len(clay))
     if "nbc" in pages:
         nbc = parse_nbc(pages["nbc"])
         if len(nbc) >= 150:
             dump_names("nbc-ppr", nbc)
+            mark("nbc-ppr", True, n=len(nbc))
     if "ds_sf" in pages:
         names = parse_draftsharks(pages["ds_sf"])
         if names:
             dump_names("ds-sf", names)
+            mark("ds-sf", True, n=len(names))
     if "ds_ppr" in pages:
         names = parse_draftsharks(pages["ds_ppr"])
         if names:
             dump_names("ds-ppr", names)
+            mark("ds-ppr", True, n=len(names))
     if "fbg" in pages:
         names = parse_fbg(pages["fbg"])
         if len(names) >= 150:
             dump_names("fbg-ppr", names)
+            mark("fbg-ppr", True, n=len(names))
+        else:
+            print(f"  Footballguys too short ({len(names)}); leaving prior tape unmarked")
+            mark("fbg-ppr", False, reason=f"short parse n={len(names)}")
     experts = ("Derek Brown", "Andrew Erickson", "Pat Fitzmaurice")
     stems = {"Derek Brown": "fp-brown", "Andrew Erickson": "fp-erickson", "Pat Fitzmaurice": "fp-fitz"}
     if "fp_sf_experts" in pages:
@@ -521,11 +597,17 @@ def main() -> int:
         for label, board in boards.items():
             if board:
                 dump_map(f"{stems[label]}-sf", board)
+                mark(f"{stems[label]}-sf", True, n=len(board))
     if "fp_ppr_experts" in pages:
         boards = parse_fp_expert_cols(pages["fp_ppr_experts"], list(experts))
         for label, board in boards.items():
             if board:
                 dump_map(f"{stems[label]}-ppr", board)
+                mark(f"{stems[label]}-ppr", True, n=len(board))
+    # August RotoWire fallback is older than MAX_AGE_DAYS — never mark it fresh.
+    mark("rotowire-sf", False, reason="no public list newer than August 2026")
+    write_scrape_meta(landed, scraped)
+    _stamp_weekly_meta(scraped)
     return 0
 
 

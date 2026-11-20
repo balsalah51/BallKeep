@@ -1,75 +1,75 @@
 {
-  "week": 9,
+  "week": 11,
   "players": [
     {
       "name": "Josh Allen",
       "rank": 1,
       "team": "BUF",
-      "opp": "@MIN",
-      "sos": 1
-    },
-    {
-      "name": "Brock Purdy",
-      "rank": 2,
-      "team": "SF",
-      "opp": "LV",
-      "sos": 26
+      "opp": "MIA",
+      "sos": 10
     },
     {
       "name": "Joe Burrow",
-      "rank": 3,
+      "rank": 2,
       "team": "CIN",
-      "opp": "@ATL",
-      "sos": 11
+      "opp": "@WAS",
+      "sos": 28
     },
     {
-      "name": "Patrick Mahomes",
+      "name": "Dak Prescott",
+      "rank": 3,
+      "team": "DAL",
+      "opp": "TEN",
+      "sos": 26
+    },
+    {
+      "name": "Jayden Daniels",
       "rank": 4,
-      "team": "KC",
-      "opp": "NYJ",
-      "sos": 17
+      "team": "WAS",
+      "opp": "CIN",
+      "sos": 27
     },
     {
       "name": "Caleb Williams",
       "rank": 5,
       "team": "CHI",
-      "opp": "TB",
-      "sos": 3
-    },
-    {
-      "name": "Dak Prescott",
-      "rank": 6,
-      "team": "DAL",
-      "opp": "@IND",
+      "opp": "NO",
       "sos": 21
     },
     {
-      "name": "Jayden Daniels",
-      "rank": 7,
-      "team": "WAS",
-      "opp": "LAR",
-      "sos": 10
-    },
-    {
-      "name": "Drake Maye",
-      "rank": 8,
-      "team": "NE",
-      "opp": "GB",
-      "sos": 6
-    },
-    {
-      "name": "Jared Goff",
-      "rank": 9,
-      "team": "DET",
-      "opp": "@MIA",
+      "name": "C.J. Stroud",
+      "rank": 6,
+      "team": "HOU",
+      "opp": "IND",
       "sos": 20
     },
     {
+      "name": "Patrick Mahomes",
+      "rank": 7,
+      "team": "KC",
+      "opp": "ARI",
+      "sos": 31
+    },
+    {
+      "name": "Brock Purdy",
+      "rank": 8,
+      "team": "SF",
+      "opp": "MIN",
+      "sos": 1
+    },
+    {
       "name": "Trevor Lawrence",
-      "rank": 10,
+      "rank": 9,
       "team": "JAX",
-      "opp": "@BAL",
-      "sos": 22
+      "opp": "@NYG",
+      "sos": 24
+    },
+    {
+      "name": "Jared Goff",
+      "rank": 10,
+      "team": "DET",
+      "opp": "TB",
+      "sos": 3
     }
   ]
 }
