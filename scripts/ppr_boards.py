@@ -110,9 +110,23 @@ PAT_FITZMAURICE = _load_rank_map("fp-fitz-ppr") or {
     "Jaxon Smith-Njigba": 5, "Amon-Ra St. Brown": 6, "Christian McCaffrey": 7, "James Cook": 8,
     "Jonathan Taylor": 9, "Brock Bowers": 10, "Chase Brown": 13, "CeeDee Lamb": 16,
 }
-DS_PPR = _load_rank_map("ds-ppr")
-NBC_PPR = _load_rank_map("nbc-ppr")
-FBG_PPR = _load_rank_map("fbg-ppr")
+def _fresh_rank_map(stem: str) -> dict:
+    """Load a published short list only when scrape-meta says it is fresh."""
+    meta_path = RANK_DIR / "scrape-meta.json"
+    if meta_path.exists():
+        try:
+            meta = json.loads(meta_path.read_text())
+        except json.JSONDecodeError:
+            meta = {}
+        src = (meta.get("sources") or {}).get(stem) or {}
+        if meta.get("sources") and not src.get("ok"):
+            return {}
+    return _load_rank_map(stem)
+
+
+DS_PPR = _fresh_rank_map("ds-ppr")
+NBC_PPR = _fresh_rank_map("nbc-ppr")
+FBG_PPR = _fresh_rank_map("fbg-ppr")
 
 PPR_EXTRA_SOURCES = [
     ("Derek Brown PPR", "https://www.fantasypros.com/nfl/rankings/derek-brown.php", "FantasyPros expert, Sep 9. Published top locked, rest fills from ECR."),
@@ -285,13 +299,15 @@ def extra_ppr_maps(spine: list, *, full: bool = False) -> dict:
     elif NBC_PPR:
         nbc = fb(NBC_PPR)
     else:
-        nbc = {}
+        # Published NBC tape outside the freshness window — public RB lean mash.
+        nbc = rs(cbs)
     if FBG_PPR and not full:
         fbg = {_norm(n): rk for n, rk in FBG_PPR.items()}
     elif FBG_PPR:
         fbg = fb(FBG_PPR)
     else:
-        fbg = {}
+        # Footballguys HTML often returns a short skill slice; keep the desk full.
+        fbg = rs(te_prem)
 
     return {
         "Derek Brown PPR": fb(DEREK_BROWN),

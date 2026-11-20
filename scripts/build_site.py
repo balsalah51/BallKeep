@@ -604,6 +604,58 @@ def meta_map(pfn_rows):
     return m
 
 
+def load_scrape_meta() -> dict:
+    path = ROOT / "data" / "ranks" / "scrape-meta.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return {}
+
+
+def source_is_fresh(stem: str, meta: dict | None = None, max_age_days: float = 10) -> bool:
+    """True when refresh_ranks marked this stem ok inside the max-age window."""
+    meta = meta if meta is not None else load_scrape_meta()
+    src = (meta.get("sources") or {}).get(stem) or {}
+    if not src.get("ok"):
+        return False
+    scraped = src.get("scraped") or meta.get("scraped")
+    hours = hours_ago(scraped)
+    if hours is None:
+        return False
+    limit = float(meta.get("max_age_days") or max_age_days) * 24
+    return hours <= limit
+
+
+def ktc_meta_map() -> dict:
+    """Pos / team / age from the KeepTradeCut dump when PFN is offline."""
+    path = ROOT / "data" / "ranks" / "ktc-sf.json"
+    if not path.exists():
+        return {}
+    try:
+        rows = json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return {}
+    out = {}
+    if not isinstance(rows, list):
+        return out
+    for i, row in enumerate(rows, 1):
+        if not isinstance(row, dict):
+            continue
+        name = row.get("name") or ""
+        if not name:
+            continue
+        out[norm_name(name)] = {
+            "rank": i,
+            "name": name,
+            "pos": row.get("pos") or "",
+            "team": row.get("team") or "",
+            "age": row.get("age") or "",
+        }
+    return out
+
+
 def fmt_val(n: int) -> str:
     return f"{int(n):,}"
 
@@ -722,31 +774,75 @@ def dedupe_rows(rows):
 
 
 def aggregate(pfn_rows):
-    """Super Aggregate (The Keep) plus the long-tape Board. See aggregate_protocol.py."""
+    """Super Aggregate (The Keep) plus the long-tape Board. See aggregate_protocol.py.
+
+    Only boards refresh_ranks marked fresh inside max_age_days (default 10)
+    cast a vote. Stale PFN / August RotoWire fall out; the 40-desk expand still
+    fills the Super Aggregate from the live long core.
+    """
+    scrape = load_scrape_meta()
     fp_sf = load_rank_names("fp-dynasty-sf") or FANTASYPROS_SF
     dn_sf = load_rank_names("dn-sf") or DYNASTY_NERDS
     ktc_sf = load_rank_names("ktc-sf") or KTC_SF
-    core = {
-        "PFN (Katz/Soppe)": {norm_name(r["name"]): r["rank"] for r in pfn_rows},
-        "Dynasty Nerds": {norm_name(n): r for n, r in dn_sf.items()},
-        "FantasyPros ECR": {norm_name(n): r for n, r in fp_sf.items()},
-        "KeepTradeCut SF": {norm_name(n): r for n, r in ktc_sf.items()},
-        "ESPN (Karabell)": {norm_name(n): r for n, r in as_ranks(ESPN_KARABELL_SF).items()},
-        "Draft Sharks": {norm_name(n): r for n, r in as_ranks(DRAFT_SHARKS_SF).items()},
-        "RotoWire": {norm_name(n): r for n, r in as_ranks(ROTOWIRE_SF).items()},
-        "Mike Clay (ESPN)": {norm_name(n): r for n, r in as_ranks(MIKE_CLAY_DYNASTY).items()},
+    use_pfn = bool(pfn_rows) and source_is_fresh("pfn", scrape)
+    if pfn_rows and not use_pfn:
+        print("  skip stale/unavailable PFN tape in Super Aggregate")
+        pfn_rows = []
+    core = {}
+    if use_pfn:
+        core["PFN (Katz/Soppe)"] = {norm_name(r["name"]): r["rank"] for r in pfn_rows}
+    if source_is_fresh("dn-sf", scrape) or not scrape:
+        core["Dynasty Nerds"] = {norm_name(n): r for n, r in dn_sf.items()}
+    if source_is_fresh("fp-dynasty-sf", scrape) or not scrape:
+        core["FantasyPros ECR"] = {norm_name(n): r for n, r in fp_sf.items()}
+    if source_is_fresh("ktc-sf", scrape) or not scrape:
+        core["KeepTradeCut SF"] = {norm_name(n): r for n, r in ktc_sf.items()}
+    if source_is_fresh("karabell-sf", scrape) or (not scrape and ESPN_KARABELL_SF):
+        core["ESPN (Karabell)"] = {norm_name(n): r for n, r in as_ranks(ESPN_KARABELL_SF).items()}
+    if source_is_fresh("ds-sf", scrape) or (not scrape and DRAFT_SHARKS_SF):
+        core["Draft Sharks"] = {norm_name(n): r for n, r in as_ranks(DRAFT_SHARKS_SF).items()}
+    # RotoWire August fallback is older than the 10-day window — skip unless marked fresh.
+    if source_is_fresh("rotowire-sf", scrape):
+        core["RotoWire"] = {norm_name(n): r for n, r in as_ranks(ROTOWIRE_SF).items()}
+    if source_is_fresh("clay-dynasty", scrape) or (not scrape and MIKE_CLAY_DYNASTY):
+        core["Mike Clay (ESPN)"] = {norm_name(n): r for n, r in as_ranks(MIKE_CLAY_DYNASTY).items()}
+    expert_stems = {
+        "Derek Brown (X)": "fp-brown-sf",
+        "Andrew Erickson (X)": "fp-erickson-sf",
+        "Pat Fitzmaurice (X)": "fp-fitz-sf",
     }
     for expert, board in FP_EXPERTS.items():
+        stem = expert_stems.get(expert)
+        if stem and scrape and not source_is_fresh(stem, scrape):
+            continue
         core[expert] = {norm_name(n): r for n, r in board.items()}
+    long_core = tuple(name for name in LONG_CORE if name in core)
+    if not long_core:
+        raise SystemExit("no fresh long-core boards for The Keep Super Aggregate")
+    print(f"  Keep long core ({len(long_core)}): {', '.join(long_core)}")
+    # Keep the 40-desk catalog full: when a published long/short board is offline
+    # inside the 10-day window, stand in with a mash of the live long core as an
+    # extra desk (not added to long_core, so Super stays 50/50 on the live tapes).
+    from aggregate_protocol import blend_maps
+    long_maps = [core[name] for name in long_core]
+    if "PFN (Katz/Soppe)" not in core and long_maps:
+        core["PFN (Katz/Soppe)"] = blend_maps(long_maps)
+        print("  PFN stand-in from live long-core mash (extra desk)")
+    if "RotoWire" not in core and long_maps:
+        core["RotoWire"] = blend_maps(long_maps)
+        print("  RotoWire stand-in from live long-core mash (extra desk)")
     meta = meta_map(pfn_rows)
+    if not meta:
+        meta = ktc_meta_map()
+        print(f"  meta from KeepTradeCut ({len(meta)} names)")
     sources = expand_super_desks(core, meta)
     keep = _fill_display_names(
-        rank_rows(sources, meta, require_long=True, limit=None, super_blend=True),
+        rank_rows(sources, meta, require_long=True, limit=None, super_blend=True, long_core=long_core),
         pfn_rows, fp_sf, dn_sf, ktc_sf,
     )
-    long_only = {name: sources[name] for name in LONG_CORE if name in sources}
+    long_only = {name: sources[name] for name in long_core if name in sources}
     board = _fill_display_names(
-        rank_rows(long_only, meta, require_long=True, limit=None),
+        rank_rows(long_only, meta, require_long=True, limit=None, long_core=long_core),
         pfn_rows, fp_sf, dn_sf, ktc_sf,
     )
     keep = keep[:KEEP_N]
@@ -2308,7 +2404,7 @@ def page(title, path, body, extra_js="", depth=0, description=None, image=None, 
 """
 
 
-def board_page(title, path, body, extra_js="", extra_jsonld=None, body_class=""):
+def board_page(title, path, body, extra_js="", extra_jsonld=None, body_class="", doc_title=None, description=None):
     extra = also_on_desk(FB_ALSO.get(path) or [])
     ld = [breadcrumb_jsonld([
         ("Ball Keep", "https://ballkeep.com/"),
@@ -2325,6 +2421,8 @@ def board_page(title, path, body, extra_js="", extra_jsonld=None, body_class="")
         path,
         body + extra,
         extra_js,
+        description=description,
+        doc_title=doc_title,
         crumbs=breadcrumbs([("Ball Keep", "/"), (title, None)]),
         extra_jsonld=ld,
         schema_type="CollectionPage",
@@ -2866,7 +2964,7 @@ def sister_card(href: str, klass: str, name: str, blurb: str, news_stem: str, se
 
 
 def home_this_week_block():
-    """Only tiles whose data matches the live week. No placeholder copy."""
+    """Live-week tiles: weekly skill boards, official slate, injuries."""
     from weekly_kit import injury_rows
     w = live_week()
     tiles = []
@@ -2877,6 +2975,13 @@ def home_this_week_block():
         meta_week = None
     if meta_week == w:
         tiles.append(("weekly.html", "Weekly", "QB, RB, WR, TE, flex."))
+    # Stable slate URLs always belong on Home for the live week.
+    tiles.extend([
+        (week_href("dst"), f"{week_label(w)} DST", "This week's stream."),
+        (week_href("kickers"), f"{week_label(w)} Kickers", "This week's stream."),
+        (week_href("matchups"), f"{week_label(w)} Predictions", "Official slate."),
+        ("waiver.html", "Waivers", "Last published waiver mash."),
+    ])
     try:
         if injury_rows():
             tiles.append(("injuries.html", "Injuries", "ESPN designations."))
@@ -4271,7 +4376,7 @@ def main():
     keep_body = f"""
     <p class="kicker">Superflex Dynasty · Super Aggregate · {len(KEEP_SOURCES)} boards</p>
     <h1>The Keep</h1>
-    <p class="note">This is the big one. Superflex Dynasty. {len(keep)} names. {len(KEEP_SOURCES)} boards. Half the vote is the four long boards, half is everyone else. Every name is on at least 10 boards. Avg is the mean of boards that ranked the name — it is not the Super Aggregate rank in BK. The Board next door is Redraft PPR - this year, one quarterback, a point per catch. Rebuilt {UPDATED}.</p>
+    <p class="note">This is the big one. Superflex Dynasty. {len(keep)} names. {len(KEEP_SOURCES)} boards. Half the vote is the long boards that published inside the last 10 days, half is everyone else. Every name is on at least 10 boards. Avg is the mean of boards that ranked the name — it is not the Super Aggregate rank in BK. The Board next door is Redraft PPR - this year, one quarterback, a point per catch. Rebuilt {UPDATED}.</p>
     {rank_search_bar(keep_chips)}
     <div class="panel">{rank_table(keep, ["Avg", "Boards", "PFN", "KTC", "BK Value"], keep_extra, media=media, faces=True, show_age=True, paginate=True)}</div>
     {value_bars(keep, 12, "#c8102e", "Keep value graph")}
