@@ -5473,22 +5473,22 @@
           "href": "players/chris-olave.html"
         },
         {
-          "id": "nico-collins",
-          "name": "Nico Collins",
-          "pos": "WR",
-          "team": "HOU",
-          "rank": 24,
-          "value": 6529,
-          "href": "players/nico-collins.html"
-        },
-        {
           "id": "malik-nabers",
           "name": "Malik Nabers",
           "pos": "WR",
           "team": "NYG",
+          "rank": 24,
+          "value": 6529,
+          "href": "players/malik-nabers.html"
+        },
+        {
+          "id": "nico-collins",
+          "name": "Nico Collins",
+          "pos": "WR",
+          "team": "HOU",
           "rank": 25,
           "value": 6440,
-          "href": "players/malik-nabers.html"
+          "href": "players/nico-collins.html"
         },
         {
           "id": "brock-bowers",
@@ -7786,22 +7786,22 @@
           "href": "players/efton-chism.html"
         },
         {
-          "id": "tyson-bagent",
-          "name": "Tyson Bagent",
-          "pos": "QB",
-          "team": "CHI",
-          "rank": 281,
-          "value": 534,
-          "href": "players/tyson-bagent.html"
-        },
-        {
           "id": "darius-cooper",
           "name": "Darius Cooper",
           "pos": "WR",
           "team": "PHI",
+          "rank": 281,
+          "value": 534,
+          "href": "players/darius-cooper.html"
+        },
+        {
+          "id": "tyson-bagent",
+          "name": "Tyson Bagent",
+          "pos": "QB",
+          "team": "CHI",
           "rank": 282,
           "value": 529,
-          "href": "players/darius-cooper.html"
+          "href": "players/tyson-bagent.html"
         },
         {
           "id": "tory-horton",
@@ -7831,22 +7831,22 @@
           "href": "players/george-holani.html"
         },
         {
-          "id": "will-shipley",
-          "name": "Will Shipley",
-          "pos": "RB",
-          "team": "PHI",
-          "rank": 286,
-          "value": 510,
-          "href": "players/will-shipley.html"
-        },
-        {
           "id": "savion-williams",
           "name": "Savion Williams",
           "pos": "WR",
           "team": "GB",
+          "rank": 286,
+          "value": 510,
+          "href": "players/savion-williams.html"
+        },
+        {
+          "id": "will-shipley",
+          "name": "Will Shipley",
+          "pos": "RB",
+          "team": "PHI",
           "rank": 287,
           "value": 506,
-          "href": "players/savion-williams.html"
+          "href": "players/will-shipley.html"
         },
         {
           "id": "kendre-miller",
@@ -8761,7 +8761,7 @@
           "id": "pierre-strong",
           "name": "Pierre Strong Jr.",
           "pos": "RB",
-          "team": "",
+          "team": "GB",
           "rank": 389,
           "value": 204,
           "href": "players/pierre-strong.html"
@@ -10162,12 +10162,21 @@
           "href": "players/mark-fletcher.html"
         },
         {
+          "id": "juju-smith-schuster",
+          "name": "JuJu Smith-Schuster",
+          "pos": "WR",
+          "team": "",
+          "rank": 545,
+          "value": 52,
+          "href": "players/juju-smith-schuster.html"
+        },
+        {
           "id": "julian-hill",
           "name": "Julian Hill",
           "pos": "TE",
           "team": "NE",
-          "rank": 545,
-          "value": 52,
+          "rank": 546,
+          "value": 51,
           "href": "players/julian-hill.html"
         },
         {
@@ -10175,18 +10184,9 @@
           "name": "Dane Key",
           "pos": "WR",
           "team": "DEN",
-          "rank": 546,
-          "value": 51,
-          "href": "players/dane-key.html"
-        },
-        {
-          "id": "juju-smith-schuster",
-          "name": "JuJu Smith-Schuster",
-          "pos": "WR",
-          "team": "",
           "rank": 547,
           "value": 51,
-          "href": "players/juju-smith-schuster.html"
+          "href": "players/dane-key.html"
         },
         {
           "id": "damien-martinez",
@@ -18968,7 +18968,7 @@
           "id": "pierre-strong",
           "name": "Pierre Strong Jr.",
           "pos": "RB",
-          "team": "",
+          "team": "GB",
           "rank": 363,
           "value": 257,
           "href": "players/pierre-strong.html"
@@ -22253,7 +22253,7 @@
           "id": "pierre-strong",
           "name": "Pierre Strong Jr.",
           "pos": "RB",
-          "team": "",
+          "team": "GB",
           "rank": 361,
           "value": 262,
           "href": "players/pierre-strong.html"
@@ -25529,7 +25529,7 @@
           "id": "pierre-strong",
           "name": "Pierre Strong Jr.",
           "pos": "RB",
-          "team": "",
+          "team": "GB",
           "rank": 358,
           "value": 269,
           "href": "players/pierre-strong.html"
