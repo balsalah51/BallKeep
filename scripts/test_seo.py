@@ -144,7 +144,7 @@ def test_football_nav_keeps_every_link():
     assert [lab for _h, lab in NAV] == [
         "Home", "Keep · Dynasty SF", "Board · Redraft PPR",
         "Classic · Half-PPR", "Redraft Superflex",
-        "The D", "Kickers", "The Fence",
+        "The D", "ROS Defenses", "Kickers", "The Fence",
         "Weekly", f"{w} DST", f"{w} K", f"{w} Predictions", "Waivers", "Injuries",
         "Trade", "The Handcuff", "ADP", "Method",
         "My Team",
@@ -167,7 +167,9 @@ def test_football_nav_keeps_every_link():
     assert header.count("nav-wide") == 1
     assert header.count('href="the-keep.html"') == 1
     assert 'class="nav-sub"' in header
-    assert "Team defenses" in header
+    assert "Season projections" in header
+    assert "Rest of season" in header
+    assert 'href="ros-defenses.html"' in header
     arts = fb_header_nav("the-long-game.html", 0)
     assert "More" in arts
     nested = fb_header_nav("players/zay-flowers.html", 1)
@@ -632,12 +634,21 @@ def test_super_avg():
 
 
 def test_dst_and_kicker_boards():
-    from special_teams import dst_board, kicker_board
+    from special_teams import dst_board, kicker_board, ros_dst_board
     dst = dst_board()
     assert len(dst) == 32
     assert dst[0]["name"] == "Houston Texans"
     assert dst[0]["bk"] == 1
-    assert dst[0]["n"] >= 5
+    assert dst[0]["n"] >= 2
+    assert dst[0].get("proj") is not None
+    ros = ros_dst_board()
+    assert len(ros) == 32
+    assert ros[0]["bk"] == 1
+    assert ros[0]["n"] >= 3
+    assert ros[0]["name"] in {
+        "Minnesota Vikings", "Houston Texans", "Seattle Seahawks",
+        "Denver Broncos", "Jacksonville Jaguars", "Pittsburgh Steelers",
+    }
     kickers = kicker_board()
     assert len(kickers) == 25
     assert kickers[0]["name"] == "Brandon Aubrey"

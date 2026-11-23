@@ -46,7 +46,14 @@ from best_ball_boards import (  # noqa: E402
     load_espn_ranks,
     load_ud_ranks,
 )
-from special_teams import DST_SOURCES, K_SOURCES, dst_board, kicker_board  # noqa: E402
+from special_teams import (  # noqa: E402
+    DST_ROS_SOURCES,
+    DST_SOURCES,
+    K_SOURCES,
+    dst_board,
+    kicker_board,
+    ros_dst_board,
+)
 from week1_boards import (  # noqa: E402
     MATCH_SOURCES as W1_MATCH_SOURCES,
     W1_DST_SOURCES,
@@ -1523,8 +1530,13 @@ FB_SEO = {
         "img/logo.jpg",
     ),
     "defenses.html": (
-        "2026 Fantasy Football DST Rankings | Ball Keep",
-        "DST Super Aggregate. 50% FantasyPros, NBC, and STACKED, 50% every other board that ranked the club. Houston leads.",
+        "2026 Fantasy Football DST Season Projections | Ball Keep",
+        "DST season projections Mega Aggregate. 50% FantasyPros and ESPN, 50% RotoWire. Projected season points sit next to the rank.",
+        "img/logo.jpg",
+    ),
+    "ros-defenses.html": (
+        "2026 Fantasy Football Rest of Season DST Rankings | Ball Keep",
+        "Rest-of-season DST Super Aggregate. 50% FantasyPros ROS ECR, 50% every other ROS board that ranked the club.",
         "img/logo.jpg",
     ),
     "kickers.html": (
@@ -1801,7 +1813,7 @@ FB_SEO = {
 
 HOME_FAQ = [
     ("What is Ball Keep?", "A 40-board Super Aggregate for Superflex dynasty and redraft PPR, with Sleeper so you can load your own team. The Keep is the dynasty list. The Board is this year's PPR list. BK Value prices trades on each board's ranks."),
-    ("Which lists are rest of season?", f"The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, Top Defenses, and Top Kickers are rest-of-season values. {week_label()} boards, Weekly, and Waivers are this week's stream."),
+    ("Which lists are rest of season?", f"The Keep, The Board, Superflex, Classic, Standard, Best Ball, Rookies, ROS Defenses, and Top Kickers are rest-of-season values. The D is season projections. {week_label()} boards, Weekly, and Waivers are this week's stream."),
     ("What is The Fence?", "Mixed Superflex + IDP. Dynasty Nerds spells its mixed board Glossery Mixed (their spelling, 725 names) plus Keep skill ranks and the 20-market IDP mean, stitched the way IDP startups actually draft. IDP names are marked in red."),
     ("How is The Keep ranked?", "Half the vote is the four long Superflex boards. Half is every other board that ranked the player."),
     ("What is BK Value?", "Each list turns its own rank into a trade chip on the same decaying curve. Rank 1 on that list is 12,000. Superflex and PPR print different ranks, so the same name prices differently on each calculator. Fair means the two sides are within 8%."),
@@ -1834,7 +1846,7 @@ TRADE_FAQ = [
 FENCE_FAQ = [
     ("What is The Fence?", "Ball Keep's mixed Superflex + IDP dynasty Super Aggregate. Every mixed name the long boards ranked, skill and IDP on one board. The board IDP startups actually draft from."),
     ("How is the rank built?", "Super Aggregate: 50% Glossery Mixed, the consensus stitch, The Keep, and Fence IDP, 50% every other mixed board that ranked the name."),
-    ("How is this different from The Keep and Top Defenses?", "The Keep is Superflex skill players only. Top Defenses is team DST. The Fence is the combined board: QB, RB, WR, TE, DL, LB, DB."),
+    ("How is this different from The Keep and Top Defenses?", "The Keep is Superflex skill players only. The D is team DST season projections. ROS Defenses is rest-of-season team DST. The Fence is the combined board: QB, RB, WR, TE, DL, LB, DB."),
     ("Why are some names red?", "DL, LB, and DB rows are marked in red so the IDP names stand out while you scroll."),
 ]
 NEWS_FAQ = [
@@ -1843,7 +1855,7 @@ NEWS_FAQ = [
     ("Why do stories link to player pages?", "Named Keep, Board, and rookie files sit on the cluster so you can jump from the injury to the rank."),
 ]
 W1_DST_FAQ = [
-    ("What is Week 1 DST?", "A weekly start/sit board, not the season-long Top Defenses list. Super Aggregate of 16 published Week 1 boards. 50% FantasyPros ECR and Draft Sharks consensus."),
+    ("What is Week 1 DST?", "A weekly start/sit board, not The D season projections or ROS Defenses. Super Aggregate of 16 published Week 1 boards. 50% FantasyPros ECR and Draft Sharks consensus."),
     ("Who leads the stream?", "Jacksonville against Cleveland. Most weekly boards have the Jaguars first."),
 ]
 W1_K_FAQ = [
@@ -1972,15 +1984,23 @@ FB_ALSO = {
         ("mlb-schedule.html", "MLB Schedule", "Regular season wrapped Sept. 27."),
     ],
     "defenses.html": [
-        ("week6-dst.html", "Week 6 DST", "This week's stream."),
+        ("ros-defenses.html", "ROS Defenses", "Rest-of-season rankings."),
+        (week_href("dst"), f"{week_label()} DST", "This week's stream."),
         ("the-fence.html", "The Fence (IDP)", "Superflex + IDP names."),
+        ("kickers.html", "Top Kickers", "The kicking board."),
+        ("board.html", "The Board", "Skill-player PPR."),
+    ],
+    "ros-defenses.html": [
+        ("defenses.html", "The D", "Season projections."),
+        (week_href("dst"), f"{week_label()} DST", "This week's stream."),
         ("kickers.html", "Top Kickers", "The kicking board."),
         ("board.html", "The Board", "Skill-player PPR."),
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
     "kickers.html": [
-        ("week6-kickers.html", "Week 6 Kickers", "This week's stream."),
-        ("defenses.html", "Top Defenses", "Aggregate DST."),
+        (week_href("kickers"), f"{week_label()} Kickers", "This week's stream."),
+        ("defenses.html", "The D", "Season projections."),
+        ("ros-defenses.html", "ROS Defenses", "Rest-of-season rankings."),
         ("board.html", "The Board", "Skill-player PPR."),
         ("nfl-schedule.html", "NFL Schedule", "Matchups by week."),
     ],
@@ -2263,7 +2283,7 @@ def _point_also_to_live(items):
 
 
 for _also_path in (
-    "defenses.html", "kickers.html", "weekly.html", "waiver.html",
+    "defenses.html", "ros-defenses.html", "kickers.html", "weekly.html", "waiver.html",
     "injuries.html", "depth-charts.html", "adp.html", "league.html",
     "weekly-qb.html", "weekly-rb.html", "weekly-wr.html", "weekly-te.html",
     "articles.html",
@@ -3004,7 +3024,8 @@ def more_body_html():
         ("redraft-standard.html", "Redraft Standard", "No reception point."),
         ("best-ball.html", "Best Ball", "Boom weeks. Kickers and DST stay off."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
-        ("defenses.html", "The D · DST", "Season-long team DST."),
+        ("defenses.html", "The D · DST", "Season projections."),
+        ("ros-defenses.html", "ROS Defenses", "Rest-of-season rankings."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("the-fence.html", "The Fence", "Superflex + IDP."),
     ])}
@@ -4197,7 +4218,8 @@ def write_explore_page():
         ("best-ball.html", "Best Ball", "40-board boom-week list."),
         ("the-fence.html", "The Fence", "Superflex + IDP."),
         ("rookies-2026.html", "2026 Rookies", "Drafted class."),
-        ("defenses.html", "Top DST", "Season-long DST."),
+        ("defenses.html", "The D", "Season projections."),
+        ("ros-defenses.html", "ROS Defenses", "Rest-of-season rankings."),
         ("kickers.html", "Top Kickers", "Season-long K."),
         ("weekly.html", "Weekly", f"{week_label()} start/sit."),
         ("the-recap.html", "The Recap", "Full Week 1 essay."),
@@ -4619,25 +4641,50 @@ def main():
     write("redraft-superflex.html", board_page("Redraft Superflex", "redraft-superflex.html", sf_body, sf_js))
 
     dst = dst_board()
+    ros_dst = ros_dst_board()
     kickers = kicker_board()
     fence = fence_board()
+    dst_lead = dst[0]["name"] if dst else "Houston Texans"
+    ros_lead = ros_dst[0]["name"] if ros_dst else "Minnesota Vikings"
+    n_season = len(DST_SOURCES)
+    n_ros = len([s for s in DST_ROS_SOURCES if True])
     dst_body = f"""
-    <p class="kicker">2026 Redraft · DST Super Aggregate</p>
+    <p class="kicker">2026 Redraft · DST season projections Mega Aggregate</p>
     <h1>Top Defenses</h1>
-    <p class="note">Rest of season values, not this week's stream. The skill boards skip kickers and DST. DST Super Aggregate of nine boards: 50% FantasyPros ECR, NBC Sports, and STACKED, 50% Derek Brown, Andrew Erickson, Pat Fitzmaurice, Draft Sharks, CBS (top 10, Aug 30), and Field Yates (Sep 5). Houston leads the board. Seattle and Denver sit right behind. Sort with Find a player.</p>
+    <p class="note">Full-season projected points, not this week's stream and not rest-of-season rankings. Mega Aggregate of {n_season} projection boards: 50% FantasyPros and ESPN, 50% RotoWire via Sleeper. {dst_lead} leads. Proj is the mean of the season points those boards published. For the rest of the fantasy season, use <a href="ros-defenses.html">ROS Defenses</a>. Sort with Find a player.</p>
     {rank_search_bar()}
-    <div class="panel">{rank_table(dst, ["Super", "Boards", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
-    {sources_panel(DST_SOURCES, heading="Boards in This Super Aggregate")}
+    <div class="panel">{rank_table(dst, ["Super", "Boards", "Proj", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="src-col">{("" if r.get("proj") is None else f"{r["proj"]:.1f}")}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    {sources_panel(DST_SOURCES, heading="Boards in This Mega Aggregate")}
     """
     write("defenses.html", board_page(
         "Top Defenses", "defenses.html", dst_body,
         extra_jsonld=[
             rank_list_jsonld(
-                "2026 Fantasy Football DST Rankings",
+                "2026 Fantasy Football DST Season Projections",
                 "https://ballkeep.com/defenses.html",
                 dst,
                 lambda r: "https://ballkeep.com/defenses.html",
-                description="Aggregate redraft DST Super Aggregate.",
+                description="Season projections Mega Aggregate for team DST.",
+            ),
+        ],
+    ))
+    ros_dst_body = f"""
+    <p class="kicker">2026 Redraft · Rest of season DST Super Aggregate</p>
+    <h1>ROS Defenses</h1>
+    <p class="note">Rest of the fantasy season only. Not this week's stream and not full-season projections. Super Aggregate of {n_ros} ROS boards: 50% FantasyPros ROS ECR, 50% every other ROS board that ranked the club. {ros_lead} leads. Proj is remaining projected points when a feed published them. Season projections live on <a href="defenses.html">The D</a>. Sort with Find a player.</p>
+    {rank_search_bar()}
+    <div class="panel">{rank_table(ros_dst, ["Super", "Boards", "Proj", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="src-col">{("" if r.get("proj") is None else f"{r["proj"]:.1f}")}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
+    {sources_panel(DST_ROS_SOURCES, heading="Boards in This Super Aggregate")}
+    """
+    write("ros-defenses.html", board_page(
+        "ROS Defenses", "ros-defenses.html", ros_dst_body,
+        extra_jsonld=[
+            rank_list_jsonld(
+                "2026 Fantasy Football Rest of Season DST Rankings",
+                "https://ballkeep.com/ros-defenses.html",
+                ros_dst,
+                lambda r: "https://ballkeep.com/ros-defenses.html",
+                description="Rest-of-season DST Super Aggregate.",
             ),
         ],
     ))
@@ -5389,6 +5436,7 @@ def main():
         "https://ballkeep.com/mlb-schedule.html",
         "https://ballkeep.com/bpl-schedule.html",
         "https://ballkeep.com/defenses.html",
+        "https://ballkeep.com/ros-defenses.html",
         "https://ballkeep.com/kickers.html",
         "https://ballkeep.com/weekly.html",
         "https://ballkeep.com/the-recap.html",

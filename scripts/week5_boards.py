@@ -371,7 +371,7 @@ def week5_matchups():
 
 W5_DST_FAQ = [
     ("How is Week 5 DST built?", "Super Aggregate of published Week 5 defense boards. 50% RotoBaller and Pro Football Network, 50% FantasyPros, NBC Sports, implied totals, and Week 4 form."),
-    ("Is this Top Defenses?", "Top Defenses is rest of season. This board is only Week 5."),
+    ("Is this Top Defenses?", "The D is season projections and ROS Defenses is rest of season. This board is only Week 5."),
 ]
 W5_K_FAQ = [
     ("How is Week 5 Kickers built?", "Super Aggregate of RotoBaller, Sports Illustrated, Pro Football Network, and FantasyPros ECR."),

@@ -337,7 +337,7 @@ def week6_matchups():
 
 W6_DST_FAQ = [
     ("How is Week 6 DST built?", "Super Aggregate of published Week 6 defense boards. 50% RotoBaller and FantasyPros, 50% NBC Sports, Yahoo Boone, implied totals, and Week 5 form."),
-    ("Is this Top Defenses?", "Top Defenses is rest of season. This board is only Week 6."),
+    ("Is this Top Defenses?", "The D is season projections and ROS Defenses is rest of season. This board is only Week 6."),
 ]
 W6_K_FAQ = [
     ("How is Week 6 Kickers built?", "Super Aggregate of FantasyPros ECR, RotoBaller, Pro Football Network, and Yahoo Boone."),

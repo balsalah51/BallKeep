@@ -606,6 +606,19 @@ def main() -> int:
                 mark(f"{stems[label]}-ppr", True, n=len(board))
     # August RotoWire fallback is older than MAX_AGE_DAYS — never mark it fresh.
     mark("rotowire-sf", False, reason="no public list newer than August 2026")
+    try:
+        from scrape_dst import main as scrape_dst_main
+        print("DST season projections + ROS rankings")
+        if scrape_dst_main() == 0:
+            mark("dst-season-proj", True)
+            mark("dst-ros", True)
+        else:
+            mark("dst-season-proj", False, reason="scrape_dst failed")
+            mark("dst-ros", False, reason="scrape_dst failed")
+    except Exception as exc:
+        print(f"  DST scrape skipped: {type(exc).__name__}: {exc}")
+        mark("dst-season-proj", False, reason=str(exc))
+        mark("dst-ros", False, reason=str(exc))
     write_scrape_meta(landed, scraped)
     _stamp_weekly_meta(scraped)
     return 0

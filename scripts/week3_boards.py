@@ -355,7 +355,7 @@ def week3_matchups():
 
 W3_DST_FAQ = [
     ("How is Week 3 DST built?", "Super Aggregate of published Week 3 defense boards. 50% RotoBaller and NBC Sports, 50% FantasyPros, the RotoBaller streamer column, implied totals, and Week 2 form."),
-    ("Is this Top Defenses?", "No. Top Defenses is rest of season. This board is only Week 3."),
+    ("Is this Top Defenses?", "No. The D is season projections and ROS Defenses is rest of season. This board is only Week 3."),
 ]
 W3_K_FAQ = [
     ("How is Week 3 Kickers built?", "Super Aggregate of RotoBaller, Sports Illustrated, Sporting News, and FantasyPros ECR."),

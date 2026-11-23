@@ -13,7 +13,7 @@ from pathlib import Path
 
 from bk_curve import bk_value
 from nfl_week import current_week, live_week
-from special_teams import DST_TEAMS, dst_board
+from special_teams import DST_TEAMS, ros_dst_board
 from aggregate_protocol import apply_rank_drops, super_avg
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -647,9 +647,9 @@ def opponent_for(team: str, week: int) -> tuple[str, str]:
 
 
 def sos_rows(nfl_games: list, week: int | None = None) -> list:
-    """Remaining schedule vs our season DST board. Higher avg = easier (weaker fantasy DST)."""
+    """Remaining schedule vs our ROS DST board. Higher avg = easier (weaker fantasy DST)."""
     week = week or week_num()
-    dst = {r["team"]: r["bk"] for r in dst_board()}
+    dst = {r["team"]: r["bk"] for r in ros_dst_board()}
     remaining = {}
     this_week = {}
     for g in nfl_games:
@@ -691,7 +691,7 @@ def sos_rows(nfl_games: list, week: int | None = None) -> list:
 
 
 SOS_SOURCES = [
-    ("Season DST board", "https://ballkeep.com/defenses.html", "Remaining opponents scored by our nine-board DST Super Aggregate. Higher average means easier leftover clubs."),
+    ("ROS DST board", "https://ballkeep.com/ros-defenses.html", "Remaining opponents scored by our rest-of-season DST Super Aggregate. Higher average means easier leftover clubs."),
     ("2026 NFL schedule", "https://ballkeep.com/nfl-schedule.html", "Weeks still in front of each club."),
 ]
 

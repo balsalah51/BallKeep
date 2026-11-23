@@ -344,7 +344,7 @@ def week2_matchups():
 
 W2_DST_FAQ = [
     ("How is Week 2 DST built?", "Super Aggregate of published Week 2 defense boards. 50% RotoBaller and Pro Football Network, 50% ESPN, 4for4, Roto Street Journal, implied totals, and Week 1 form."),
-    ("Is this Top Defenses?", "No. Top Defenses is rest of season. This board is only Week 2."),
+    ("Is this Top Defenses?", "No. The D is season projections and ROS Defenses is rest of season. This board is only Week 2."),
 ]
 W2_K_FAQ = [
     ("How is Week 2 Kickers built?", "Super Aggregate of RotoBaller, the FantasyPros matchup table, and FantasyPros ECR."),
