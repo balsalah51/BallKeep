@@ -1,7 +1,373 @@
 {
   "source": "FantasyPros ROS expert boards",
-  "scraped": "2026-11-23T20:14Z",
+  "scraped": "2026-11-23T21:01Z",
   "boards": {
+    "Derek Brown": [
+      {
+        "name": "Houston Texans",
+        "team": "HOU",
+        "rank": 1
+      },
+      {
+        "name": "Los Angeles Rams",
+        "team": "LAR",
+        "rank": 2
+      },
+      {
+        "name": "Denver Broncos",
+        "team": "DEN",
+        "rank": 3
+      },
+      {
+        "name": "Seattle Seahawks",
+        "team": "SEA",
+        "rank": 4
+      },
+      {
+        "name": "Philadelphia Eagles",
+        "team": "PHI",
+        "rank": 5
+      },
+      {
+        "name": "Pittsburgh Steelers",
+        "team": "PIT",
+        "rank": 6
+      },
+      {
+        "name": "Cincinnati Bengals",
+        "team": "CIN",
+        "rank": 7
+      },
+      {
+        "name": "Dallas Cowboys",
+        "team": "DAL",
+        "rank": 8
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "team": "JAX",
+        "rank": 9
+      },
+      {
+        "name": "Indianapolis Colts",
+        "team": "IND",
+        "rank": 10
+      },
+      {
+        "name": "New England Patriots",
+        "team": "NE",
+        "rank": 11
+      },
+      {
+        "name": "Baltimore Ravens",
+        "team": "BAL",
+        "rank": 12
+      },
+      {
+        "name": "Kansas City Chiefs",
+        "team": "KC",
+        "rank": 13
+      },
+      {
+        "name": "Cleveland Browns",
+        "team": "CLE",
+        "rank": 14
+      },
+      {
+        "name": "New Orleans Saints",
+        "team": "NO",
+        "rank": 15
+      },
+      {
+        "name": "Minnesota Vikings",
+        "team": "MIN",
+        "rank": 16
+      },
+      {
+        "name": "Detroit Lions",
+        "team": "DET",
+        "rank": 17
+      },
+      {
+        "name": "Carolina Panthers",
+        "team": "CAR",
+        "rank": 18
+      },
+      {
+        "name": "Los Angeles Chargers",
+        "team": "LAC",
+        "rank": 19
+      },
+      {
+        "name": "Buffalo Bills",
+        "team": "BUF",
+        "rank": 20
+      }
+    ],
+    "Andrew Erickson": [
+      {
+        "name": "Houston Texans",
+        "team": "HOU",
+        "rank": 1
+      },
+      {
+        "name": "Seattle Seahawks",
+        "team": "SEA",
+        "rank": 2
+      },
+      {
+        "name": "Los Angeles Rams",
+        "team": "LAR",
+        "rank": 3
+      },
+      {
+        "name": "Los Angeles Chargers",
+        "team": "LAC",
+        "rank": 4
+      },
+      {
+        "name": "Philadelphia Eagles",
+        "team": "PHI",
+        "rank": 5
+      },
+      {
+        "name": "Denver Broncos",
+        "team": "DEN",
+        "rank": 6
+      },
+      {
+        "name": "Baltimore Ravens",
+        "team": "BAL",
+        "rank": 7
+      },
+      {
+        "name": "Detroit Lions",
+        "team": "DET",
+        "rank": 8
+      },
+      {
+        "name": "Minnesota Vikings",
+        "team": "MIN",
+        "rank": 9
+      },
+      {
+        "name": "Kansas City Chiefs",
+        "team": "KC",
+        "rank": 10
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "team": "JAX",
+        "rank": 11
+      },
+      {
+        "name": "Pittsburgh Steelers",
+        "team": "PIT",
+        "rank": 12
+      },
+      {
+        "name": "Tennessee Titans",
+        "team": "TEN",
+        "rank": 13
+      },
+      {
+        "name": "San Francisco 49ers",
+        "team": "SF",
+        "rank": 14
+      },
+      {
+        "name": "New England Patriots",
+        "team": "NE",
+        "rank": 15
+      },
+      {
+        "name": "Green Bay Packers",
+        "team": "GB",
+        "rank": 16
+      },
+      {
+        "name": "Buffalo Bills",
+        "team": "BUF",
+        "rank": 17
+      },
+      {
+        "name": "Dallas Cowboys",
+        "team": "DAL",
+        "rank": 18
+      },
+      {
+        "name": "Las Vegas Raiders",
+        "team": "LV",
+        "rank": 19
+      },
+      {
+        "name": "Atlanta Falcons",
+        "team": "ATL",
+        "rank": 20
+      }
+    ],
+    "Kyle Yates": [
+      {
+        "name": "Seattle Seahawks",
+        "team": "SEA",
+        "rank": 1
+      },
+      {
+        "name": "Minnesota Vikings",
+        "team": "MIN",
+        "rank": 2
+      },
+      {
+        "name": "Denver Broncos",
+        "team": "DEN",
+        "rank": 3
+      },
+      {
+        "name": "Houston Texans",
+        "team": "HOU",
+        "rank": 4
+      },
+      {
+        "name": "Los Angeles Rams",
+        "team": "LAR",
+        "rank": 5
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "team": "JAX",
+        "rank": 6
+      },
+      {
+        "name": "Kansas City Chiefs",
+        "team": "KC",
+        "rank": 7
+      },
+      {
+        "name": "Pittsburgh Steelers",
+        "team": "PIT",
+        "rank": 8
+      },
+      {
+        "name": "New England Patriots",
+        "team": "NE",
+        "rank": 9
+      },
+      {
+        "name": "Baltimore Ravens",
+        "team": "BAL",
+        "rank": 10
+      },
+      {
+        "name": "Philadelphia Eagles",
+        "team": "PHI",
+        "rank": 11
+      },
+      {
+        "name": "San Francisco 49ers",
+        "team": "SF",
+        "rank": 12
+      },
+      {
+        "name": "Buffalo Bills",
+        "team": "BUF",
+        "rank": 13
+      },
+      {
+        "name": "Cincinnati Bengals",
+        "team": "CIN",
+        "rank": 14
+      },
+      {
+        "name": "Cleveland Browns",
+        "team": "CLE",
+        "rank": 15
+      },
+      {
+        "name": "Los Angeles Chargers",
+        "team": "LAC",
+        "rank": 16
+      },
+      {
+        "name": "Green Bay Packers",
+        "team": "GB",
+        "rank": 17
+      },
+      {
+        "name": "New Orleans Saints",
+        "team": "NO",
+        "rank": 18
+      },
+      {
+        "name": "Detroit Lions",
+        "team": "DET",
+        "rank": 19
+      },
+      {
+        "name": "Indianapolis Colts",
+        "team": "IND",
+        "rank": 20
+      },
+      {
+        "name": "Dallas Cowboys",
+        "team": "DAL",
+        "rank": 21
+      },
+      {
+        "name": "Tampa Bay Buccaneers",
+        "team": "TB",
+        "rank": 22
+      },
+      {
+        "name": "Tennessee Titans",
+        "team": "TEN",
+        "rank": 23
+      },
+      {
+        "name": "Chicago Bears",
+        "team": "CHI",
+        "rank": 24
+      },
+      {
+        "name": "New York Giants",
+        "team": "NYG",
+        "rank": 25
+      },
+      {
+        "name": "Carolina Panthers",
+        "team": "CAR",
+        "rank": 26
+      },
+      {
+        "name": "Las Vegas Raiders",
+        "team": "LV",
+        "rank": 27
+      },
+      {
+        "name": "Washington Commanders",
+        "team": "WAS",
+        "rank": 28
+      },
+      {
+        "name": "Atlanta Falcons",
+        "team": "ATL",
+        "rank": 29
+      },
+      {
+        "name": "New York Jets",
+        "team": "NYJ",
+        "rank": 30
+      },
+      {
+        "name": "Arizona Cardinals",
+        "team": "ARI",
+        "rank": 31
+      },
+      {
+        "name": "Miami Dolphins",
+        "team": "MIA",
+        "rank": 32
+      }
+    ],
     "Pat Fitzmaurice": [
       {
         "name": "Minnesota Vikings",
@@ -480,6 +846,330 @@
       {
         "name": "Indianapolis Colts",
         "team": "IND",
+        "rank": 31
+      },
+      {
+        "name": "Arizona Cardinals",
+        "team": "ARI",
+        "rank": 32
+      }
+    ],
+    "Tal Malachovsky": [
+      {
+        "name": "Minnesota Vikings",
+        "team": "MIN",
+        "rank": 1
+      },
+      {
+        "name": "Denver Broncos",
+        "team": "DEN",
+        "rank": 2
+      },
+      {
+        "name": "Cincinnati Bengals",
+        "team": "CIN",
+        "rank": 3
+      },
+      {
+        "name": "Tampa Bay Buccaneers",
+        "team": "TB",
+        "rank": 4
+      },
+      {
+        "name": "Seattle Seahawks",
+        "team": "SEA",
+        "rank": 5
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "team": "JAX",
+        "rank": 6
+      },
+      {
+        "name": "Pittsburgh Steelers",
+        "team": "PIT",
+        "rank": 7
+      },
+      {
+        "name": "New York Jets",
+        "team": "NYJ",
+        "rank": 8
+      },
+      {
+        "name": "San Francisco 49ers",
+        "team": "SF",
+        "rank": 9
+      },
+      {
+        "name": "Atlanta Falcons",
+        "team": "ATL",
+        "rank": 10
+      },
+      {
+        "name": "Green Bay Packers",
+        "team": "GB",
+        "rank": 11
+      },
+      {
+        "name": "Kansas City Chiefs",
+        "team": "KC",
+        "rank": 12
+      },
+      {
+        "name": "Cleveland Browns",
+        "team": "CLE",
+        "rank": 13
+      },
+      {
+        "name": "Los Angeles Chargers",
+        "team": "LAC",
+        "rank": 14
+      },
+      {
+        "name": "Las Vegas Raiders",
+        "team": "LV",
+        "rank": 15
+      },
+      {
+        "name": "Houston Texans",
+        "team": "HOU",
+        "rank": 16
+      },
+      {
+        "name": "Chicago Bears",
+        "team": "CHI",
+        "rank": 17
+      },
+      {
+        "name": "Los Angeles Rams",
+        "team": "LAR",
+        "rank": 18
+      },
+      {
+        "name": "Baltimore Ravens",
+        "team": "BAL",
+        "rank": 19
+      },
+      {
+        "name": "Detroit Lions",
+        "team": "DET",
+        "rank": 20
+      },
+      {
+        "name": "New Orleans Saints",
+        "team": "NO",
+        "rank": 21
+      },
+      {
+        "name": "Carolina Panthers",
+        "team": "CAR",
+        "rank": 22
+      },
+      {
+        "name": "New England Patriots",
+        "team": "NE",
+        "rank": 23
+      },
+      {
+        "name": "Miami Dolphins",
+        "team": "MIA",
+        "rank": 24
+      },
+      {
+        "name": "New York Giants",
+        "team": "NYG",
+        "rank": 25
+      },
+      {
+        "name": "Indianapolis Colts",
+        "team": "IND",
+        "rank": 26
+      },
+      {
+        "name": "Washington Commanders",
+        "team": "WAS",
+        "rank": 27
+      },
+      {
+        "name": "Buffalo Bills",
+        "team": "BUF",
+        "rank": 28
+      },
+      {
+        "name": "Arizona Cardinals",
+        "team": "ARI",
+        "rank": 29
+      },
+      {
+        "name": "Tennessee Titans",
+        "team": "TEN",
+        "rank": 30
+      },
+      {
+        "name": "Dallas Cowboys",
+        "team": "DAL",
+        "rank": 31
+      },
+      {
+        "name": "Philadelphia Eagles",
+        "team": "PHI",
+        "rank": 32
+      }
+    ],
+    "James Emrick-Wilson": [
+      {
+        "name": "Seattle Seahawks",
+        "team": "SEA",
+        "rank": 1
+      },
+      {
+        "name": "Minnesota Vikings",
+        "team": "MIN",
+        "rank": 2
+      },
+      {
+        "name": "Jacksonville Jaguars",
+        "team": "JAX",
+        "rank": 3
+      },
+      {
+        "name": "Denver Broncos",
+        "team": "DEN",
+        "rank": 4
+      },
+      {
+        "name": "Houston Texans",
+        "team": "HOU",
+        "rank": 5
+      },
+      {
+        "name": "Pittsburgh Steelers",
+        "team": "PIT",
+        "rank": 6
+      },
+      {
+        "name": "Green Bay Packers",
+        "team": "GB",
+        "rank": 7
+      },
+      {
+        "name": "Kansas City Chiefs",
+        "team": "KC",
+        "rank": 8
+      },
+      {
+        "name": "Los Angeles Rams",
+        "team": "LAR",
+        "rank": 9
+      },
+      {
+        "name": "Chicago Bears",
+        "team": "CHI",
+        "rank": 10
+      },
+      {
+        "name": "San Francisco 49ers",
+        "team": "SF",
+        "rank": 11
+      },
+      {
+        "name": "New England Patriots",
+        "team": "NE",
+        "rank": 12
+      },
+      {
+        "name": "Baltimore Ravens",
+        "team": "BAL",
+        "rank": 13
+      },
+      {
+        "name": "Buffalo Bills",
+        "team": "BUF",
+        "rank": 14
+      },
+      {
+        "name": "Tampa Bay Buccaneers",
+        "team": "TB",
+        "rank": 15
+      },
+      {
+        "name": "Cleveland Browns",
+        "team": "CLE",
+        "rank": 16
+      },
+      {
+        "name": "Cincinnati Bengals",
+        "team": "CIN",
+        "rank": 17
+      },
+      {
+        "name": "Detroit Lions",
+        "team": "DET",
+        "rank": 18
+      },
+      {
+        "name": "New Orleans Saints",
+        "team": "NO",
+        "rank": 19
+      },
+      {
+        "name": "New York Giants",
+        "team": "NYG",
+        "rank": 20
+      },
+      {
+        "name": "Los Angeles Chargers",
+        "team": "LAC",
+        "rank": 21
+      },
+      {
+        "name": "Carolina Panthers",
+        "team": "CAR",
+        "rank": 22
+      },
+      {
+        "name": "Washington Commanders",
+        "team": "WAS",
+        "rank": 23
+      },
+      {
+        "name": "Philadelphia Eagles",
+        "team": "PHI",
+        "rank": 24
+      },
+      {
+        "name": "Las Vegas Raiders",
+        "team": "LV",
+        "rank": 25
+      },
+      {
+        "name": "Atlanta Falcons",
+        "team": "ATL",
+        "rank": 26
+      },
+      {
+        "name": "New York Jets",
+        "team": "NYJ",
+        "rank": 27
+      },
+      {
+        "name": "Dallas Cowboys",
+        "team": "DAL",
+        "rank": 28
+      },
+      {
+        "name": "Tennessee Titans",
+        "team": "TEN",
+        "rank": 29
+      },
+      {
+        "name": "Indianapolis Colts",
+        "team": "IND",
+        "rank": 30
+      },
+      {
+        "name": "Miami Dolphins",
+        "team": "MIA",
         "rank": 31
       },
       {

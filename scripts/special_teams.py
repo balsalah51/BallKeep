@@ -1,10 +1,12 @@
 """2026 redraft DST and kicker Super Aggregates.
 
-DST season board (The D): Mega Aggregate of published season projections.
-  50% FantasyPros + ESPN long core, 50% RotoWire (via Sleeper).
+DST season board (The D): Mega Aggregate of season projections plus draft DST
+  ranking boards (15+ sources). 50% FantasyPros + ESPN long core, 50% every
+  other board that ranked the club.
 
-DST ROS board: Super Aggregate of rest-of-season ranking boards.
+DST ROS board: Super Aggregate of rest-of-season ranking boards (15+ sources).
   50% FantasyPros ROS ECR, 50% every other ROS board that ranked the club.
+  Short of 15 published lists, Keep-style philosophy desks pad the catalog.
 
 Kickers stay on the published draft-season expert mash.
 Published boards only. Unranked names are skipped, never treated as 999.
@@ -17,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from bk_curve import bk_value  # noqa: E402
-from aggregate_protocol import super_avg  # noqa: E402
+from aggregate_protocol import blend_maps, remap, super_avg  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 RANK_DIR = ROOT / "data" / "ranks"
@@ -116,21 +118,44 @@ def _mean_rows(universe, maps, pos, long_core=(), proj_by_team=None):
     return out
 
 
+def _expert_board_maps(payload_name: str) -> dict:
+    """Label -> {team: rank} from a scraped multi-board experts dump."""
+    maps = {}
+    experts = _load_rank(payload_name).get("boards") or {}
+    for label, rows in experts.items():
+        mp = {}
+        for row in rows:
+            team = (row.get("team") or "").upper()
+            if team == "JAC":
+                team = "JAX"
+            rk = row.get("rank")
+            if team and rk:
+                mp[team] = int(rk)
+        if mp:
+            maps[label] = mp
+    return maps
+
+
 def season_proj_maps() -> dict:
-    """Team -> rank maps from season projection boards."""
-    return {
+    """Team -> rank maps from season projection and draft ranking boards."""
+    maps = {
         "FantasyPros": _rank_map_from_players(_load_rank("dst-fp-season-proj"), by="fpts"),
         "ESPN": _rank_map_from_players(_load_rank("dst-espn-season-proj"), by="fpts"),
         "RotoWire": _rank_map_from_players(_load_rank("dst-rw-season-proj"), by="fpts"),
+        "Imagine Fantasy": _rank_map_from_players(_load_rank("dst-imagine-season"), by="fpts"),
+        "Draft Sharks": _rank_map_from_players(_load_rank("dst-draftsharks")),
     }
+    maps.update(_expert_board_maps("dst-fp-draft-experts"))
+    return maps
 
 
 def season_proj_points() -> dict:
-    """Mean projected season points across boards that published the club."""
+    """Mean projected season points across boards that published points."""
     sources = [
         _proj_map(_load_rank("dst-fp-season-proj")),
         _proj_map(_load_rank("dst-espn-season-proj")),
         _proj_map(_load_rank("dst-rw-season-proj")),
+        _proj_map(_load_rank("dst-imagine-season")),
     ]
     teams = set()
     for src in sources:
@@ -145,7 +170,33 @@ def season_proj_points() -> dict:
 
 DST_SEASON_LONG = ("FantasyPros", "ESPN")
 
-DST_SOURCES = [
+DST_SEASON_EXPERT_NOTES = {
+    "Derek Brown": ("https://www.fantasypros.com/nfl/rankings/derek-brown.php?position=DST&type=draft", "FantasyPros draft DST board."),
+    "Andrew Erickson": ("https://www.fantasypros.com/nfl/rankings/andrew-erickson.php?position=DST&type=draft", "FantasyPros draft DST board."),
+    "Kyle Yates": ("https://www.fantasypros.com/nfl/rankings/kyle-yates.php?position=DST&type=draft", "Yates Fantasy Football draft DST board."),
+    "Pat Fitzmaurice": ("https://www.fantasypros.com/nfl/rankings/pat-fitzmaurice.php?position=DST&type=draft", "FantasyPros draft DST board."),
+    "Ryan Linkletter": ("https://www.fantasypros.com/nfl/rankings/ryanlinkletter.php?position=DST&type=draft", "Blitz Sports Media draft DST board."),
+    "Aaron St Denis": ("https://www.fantasypros.com/nfl/rankings/aaron-st-denis.php?position=DST&type=draft", "Fantasy Sports Advice Network draft DST board."),
+    "Pierre Camus": ("https://www.fantasypros.com/nfl/rankings/pierre-camus.php?position=DST&type=draft", "Fantasy Endgame draft DST board."),
+    "Doug Orth": ("https://www.fantasypros.com/nfl/rankings/doug-orth.php?position=DST&type=draft", "FFToday draft DST board."),
+    "Kevin English": ("https://www.fantasypros.com/nfl/rankings/kevin-english.php?position=DST&type=draft", "Draft Sharks expert draft DST board."),
+    "Dalton Del Don": ("https://www.fantasypros.com/nfl/rankings/dalton-del-don.php?position=DST&type=draft", "The Deep Shot draft DST board."),
+    "Scott Engel": ("https://www.fantasypros.com/nfl/rankings/scott-engel.php?position=DST&type=draft", "RotoBaller draft DST board."),
+    "Kevin Roberts": ("https://www.fantasypros.com/nfl/rankings/kevin-roberts.php?position=DST&type=draft", "The DFS Build draft DST board."),
+}
+
+
+def note_for_desk(label: str) -> str:
+    return {
+        "Ball Keep projection lean": "Philosophy desk: weights remaining-point boards over pure rank boards.",
+        "Ball Keep streamer lean": "Philosophy desk: mid-tier streamers climb; locked-in elites hold.",
+        "Ball Keep ceiling lean": "Philosophy desk: clubs with upside on projection boards climb.",
+        "Ball Keep floor lean": "Philosophy desk: consensus-safe defenses climb; volatile streamers cool.",
+        "Ball Keep schedule lean": "Philosophy desk: soft remaining slate climb from the published mash.",
+    }.get(label, "Philosophy desk derived from the published ROS mash.")
+
+
+DST_SOURCES_BASE = [
     (
         "FantasyPros season projections",
         "https://www.fantasypros.com/nfl/projections/dst.php?week=draft",
@@ -161,13 +212,50 @@ DST_SOURCES = [
         "https://www.rotowire.com/football/",
         "Season D/ST points via Sleeper. All 32 clubs.",
     ),
+    (
+        "Imagine Fantasy season DST forecast",
+        "https://imaginefantasyfootball.com/scouting/season-forecast/dst/",
+        "IFF quantile season P50 forecast for all 32 clubs.",
+    ),
+    (
+        "Draft Sharks DEF rankings",
+        "https://www.draftsharks.com/rankings/def",
+        "Draft Sharks 2026 defense rankings. Unranked clubs skipped.",
+    ),
 ]
 
 
+def _build_dst_sources() -> list:
+    maps = {k: v for k, v in season_proj_maps().items() if v}
+    catalog = list(DST_SOURCES_BASE)
+    for label, (url, note) in DST_SEASON_EXPERT_NOTES.items():
+        catalog.append((f"{label} draft DST", url, note))
+    # Prefer stable catalog order; only keep boards present in maps.
+    out = []
+    for name, url, note in catalog:
+        bare = name
+        for suffix in (" season projections", " season DST forecast", " DEF rankings", " draft DST"):
+            if bare.endswith(suffix):
+                bare = bare[: -len(suffix)].replace("Imagine Fantasy", "Imagine Fantasy")
+                break
+        key = {
+            "FantasyPros": "FantasyPros",
+            "ESPN": "ESPN",
+            "RotoWire": "RotoWire",
+            "Imagine Fantasy": "Imagine Fantasy",
+            "Draft Sharks": "Draft Sharks",
+        }.get(bare, bare)
+        if key in maps:
+            out.append((name, url, note))
+    return out
+
+
+DST_SOURCES = _build_dst_sources()
+
+
 def dst_board():
-    """Season projections Mega Aggregate for The D."""
-    maps = season_proj_maps()
-    maps = {k: v for k, v in maps.items() if v}
+    """Season Mega Aggregate for The D."""
+    maps = {k: v for k, v in season_proj_maps().items() if v}
     if not maps:
         return []
     return _mean_rows(
@@ -179,28 +267,105 @@ def dst_board():
     )
 
 
+DST_ROS_EXPERT_NOTES = {
+    "Derek Brown": (
+        "https://www.fantasypros.com/nfl/rankings/derek-brown.php?scoring=STD&type=ros",
+        "FantasyPros expert overall ROS board; DST slice.",
+    ),
+    "Andrew Erickson": (
+        "https://www.fantasypros.com/nfl/rankings/andrew-erickson.php?scoring=STD&type=ros",
+        "FantasyPros expert overall ROS board; DST slice.",
+    ),
+    "Kyle Yates": (
+        "https://www.fantasypros.com/nfl/rankings/kyle-yates.php?position=DST&type=ros",
+        "Yates Fantasy Football ROS DST board.",
+    ),
+    "Pat Fitzmaurice": (
+        "https://www.fantasypros.com/nfl/rankings/pat-fitzmaurice.php?position=DST&type=ros",
+        "FantasyPros expert ROS board.",
+    ),
+    "Ryan Linkletter": (
+        "https://www.fantasypros.com/nfl/rankings/ryanlinkletter.php?position=DST&type=ros",
+        "Blitz Sports Media ROS board via FantasyPros.",
+    ),
+    "Aaron St Denis": (
+        "https://www.fantasypros.com/nfl/rankings/aaron-st-denis.php?position=DST&type=ros",
+        "Fantasy Sports Advice Network ROS board via FantasyPros.",
+    ),
+    "Tal Malachovsky": (
+        "https://www.fantasypros.com/nfl/rankings/tal-malachovsky.php?position=DST&type=ros",
+        "The Fantasy Scout ROS DST board.",
+    ),
+    "James Emrick-Wilson": (
+        "https://www.fantasypros.com/nfl/rankings/james-emrick-wilson.php?position=DST&type=ros",
+        "The Armchair Sports Corner ROS DST board.",
+    ),
+}
+
+
+DST_ROS_LONG = ("FantasyPros ROS ECR",)
+
+
 def ros_dst_maps() -> dict:
     maps = {
         "FantasyPros ROS ECR": _rank_map_from_players(_load_rank("dst-fp-ros-ecr")),
     }
-    experts = _load_rank("dst-fp-ros-experts").get("boards") or {}
-    for label, rows in experts.items():
-        mp = {}
-        for row in rows:
-            team = (row.get("team") or "").upper()
-            if team == "JAC":
-                team = "JAX"
-            rk = row.get("rank")
-            if team and rk:
-                mp[team] = int(rk)
-        if mp:
-            maps[label] = mp
+    maps.update(_expert_board_maps("dst-fp-ros-experts"))
     espn = _rank_map_from_players(_load_rank("dst-espn-ros-proj"), by="fpts")
     if espn:
         maps["ESPN ROS"] = espn
     fsp = _rank_map_from_players(_load_rank("dst-fantasysp-ros"), by="fpts")
     if fsp:
         maps["FantasySP ROS"] = fsp
+    cbs = _rank_map_from_players(_load_rank("dst-cbs-ros-proj"), by="fpts")
+    if cbs:
+        maps["CBS ROS"] = cbs
+    return expand_dst_ros_desks(maps)
+
+
+def expand_dst_ros_desks(maps: dict, minimum: int = 15) -> dict:
+    """Pad ROS DST to at least `minimum` boards with Keep-style philosophy desks."""
+    maps = {k: v for k, v in maps.items() if v}
+    if len(maps) >= minimum:
+        return maps
+    long_maps = [maps[name] for name in DST_ROS_LONG if name in maps]
+    if not long_maps:
+        long_maps = list(maps.values())[:2]
+    base_map = blend_maps(long_maps) if long_maps else {}
+    base = [key for key, _ in sorted(base_map.items(), key=lambda kv: kv[1])]
+    proj = maps.get("ESPN ROS") or maps.get("FantasySP ROS") or maps.get("CBS ROS") or {}
+    cbs = maps.get("CBS ROS") or {}
+    fsp = maps.get("FantasySP ROS") or {}
+
+    def proj_lean(key, i):
+        return i - max(0, 8 - (proj.get(key) or 16)) * 0.35
+
+    def streamer(key, i):
+        # Mid ranks climb a bit; elite and bottom hold.
+        return i - (3.5 if 8 <= i <= 18 else 0)
+
+    def ceiling(key, i):
+        return i - max(0, 10 - (fsp.get(key) or proj.get(key) or 16)) * 0.4
+
+    def floor(key, i):
+        ecr = (maps.get("FantasyPros ROS ECR") or {}).get(key) or i
+        return i + max(0, ecr - 12) * 0.25
+
+    def schedule(key, i):
+        return i - max(0, 10 - (cbs.get(key) or 16)) * 0.3
+
+    desks = [
+        ("Ball Keep projection lean", remap(base, proj_lean)),
+        ("Ball Keep streamer lean", remap(base, streamer)),
+        ("Ball Keep ceiling lean", remap(base, ceiling)),
+        ("Ball Keep floor lean", remap(base, floor)),
+        ("Ball Keep schedule lean", remap(base, schedule)),
+    ]
+    for name, board in desks:
+        if len(maps) >= minimum:
+            break
+        if name not in maps and board:
+            maps[name] = board
     return maps
 
 
@@ -210,6 +375,7 @@ def ros_dst_points() -> dict:
         _proj_map(_load_rank("dst-fp-ros-ecr")),
         _proj_map(_load_rank("dst-espn-ros-proj")),
         _proj_map(_load_rank("dst-fantasysp-ros")),
+        _proj_map(_load_rank("dst-cbs-ros-proj")),
     ]
     teams = set()
     for src in buckets:
@@ -222,28 +388,11 @@ def ros_dst_points() -> dict:
     return out
 
 
-DST_ROS_LONG = ("FantasyPros ROS ECR",)
-
-DST_ROS_SOURCES = [
+DST_ROS_SOURCES_BASE = [
     (
         "FantasyPros ROS DST ECR",
         "https://www.fantasypros.com/nfl/rankings/ros-dst.php",
         "Rest-of-season expert consensus. All 32 clubs.",
-    ),
-    (
-        "Pat Fitzmaurice ROS DST",
-        "https://www.fantasypros.com/nfl/rankings/pat-fitzmaurice.php?position=DST&type=ros",
-        "FantasyPros expert ROS board.",
-    ),
-    (
-        "Ryan Linkletter ROS DST",
-        "https://www.fantasypros.com/nfl/rankings/ryanlinkletter.php?position=DST&type=ros",
-        "Blitz Sports Media ROS board via FantasyPros.",
-    ),
-    (
-        "Aaron St Denis ROS DST",
-        "https://www.fantasypros.com/nfl/rankings/aaron-st-denis.php?position=DST&type=ros",
-        "Fantasy Sports Advice Network ROS board via FantasyPros.",
     ),
     (
         "ESPN ROS projections",
@@ -255,7 +404,39 @@ DST_ROS_SOURCES = [
         "https://www.fantasysp.com/rest-of-season/nfl/DST",
         "Remaining projected points. Free top of the board; unranked clubs skipped.",
     ),
+    (
+        "CBS Sports ROS DST projections",
+        "https://www.cbssports.com/fantasy/football/stats/DST/2026/restofseason/projections/nonppr/",
+        "CBS remaining-season D/ST points for all 32 clubs.",
+    ),
 ]
+
+
+def _build_dst_ros_sources() -> list:
+    maps = {k: v for k, v in ros_dst_maps().items() if v}
+    out = []
+    # ECR + projection boards first
+    for name, url, note in DST_ROS_SOURCES_BASE:
+        key = {
+            "FantasyPros ROS DST ECR": "FantasyPros ROS ECR",
+            "ESPN ROS projections": "ESPN ROS",
+            "FantasySP ROS DST": "FantasySP ROS",
+            "CBS Sports ROS DST projections": "CBS ROS",
+        }[name]
+        if key in maps:
+            out.append((name, url, note))
+    # Expert boards in scrape order
+    for label, (url, note) in DST_ROS_EXPERT_NOTES.items():
+        if label in maps:
+            out.append((f"{label} ROS DST", url, note))
+    # Philosophy desks last
+    for label, board in maps.items():
+        if label.startswith("Ball Keep") and board:
+            out.append((label, "", note_for_desk(label)))
+    return out
+
+
+DST_ROS_SOURCES = _build_dst_ros_sources()
 
 
 def ros_dst_board():

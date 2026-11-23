@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Scrape season DST projections and rest-of-season DST rankings.
+"""Scrape season DST projections/rankings and rest-of-season DST rankings.
 
-Season projections mega aggregate (The D):
-  FantasyPros consensus season points, ESPN season points, RotoWire via Sleeper.
+Season Mega Aggregate (The D):
+  FantasyPros / ESPN / RotoWire season points, Imagine Fantasy P50 forecast,
+  Draft Sharks DEF rankings, and FantasyPros draft DST expert boards.
 
-Rest-of-season rankings (ROS Defenses):
-  FantasyPros ROS ECR plus free expert boards and FantasySP remaining points.
+Rest-of-season Super Aggregate (ROS Defenses):
+  FantasyPros ROS ECR, free expert ROS boards (DST page or overall STD slice),
+  ESPN remaining points, FantasySP remaining points, CBS ROS projections.
 """
 from __future__ import annotations
 
@@ -44,10 +46,33 @@ NAME_TO_TEAM = {
     "Tennessee Titans": "TEN", "Washington Commanders": "WAS",
 }
 
-ROS_EXPERTS = [
+# Draft / season-long DST expert boards (FantasyPros type=draft).
+DRAFT_EXPERTS = [
+    ("Derek Brown", "derek-brown"),
+    ("Andrew Erickson", "andrew-erickson"),
+    ("Kyle Yates", "kyle-yates"),
     ("Pat Fitzmaurice", "pat-fitzmaurice"),
     ("Ryan Linkletter", "ryanlinkletter"),
     ("Aaron St Denis", "aaron-st-denis"),
+    ("Pierre Camus", "pierre-camus"),
+    ("Doug Orth", "doug-orth"),
+    ("Kevin English", "kevin-english"),
+    ("Dalton Del Don", "dalton-del-don"),
+    ("Scott Engel", "scott-engel"),
+    ("Kevin Roberts", "kevin-roberts"),
+]
+
+# Rest-of-season expert boards. mode=dst uses the DST ROS page;
+# mode=overall pulls DST ranks from the overall STD ROS page when DST is paywalled.
+ROS_EXPERTS = [
+    ("Derek Brown", "derek-brown", "overall"),
+    ("Andrew Erickson", "andrew-erickson", "overall"),
+    ("Kyle Yates", "kyle-yates", "dst"),
+    ("Pat Fitzmaurice", "pat-fitzmaurice", "dst"),
+    ("Ryan Linkletter", "ryanlinkletter", "dst"),
+    ("Aaron St Denis", "aaron-st-denis", "dst"),
+    ("Tal Malachovsky", "tal-malachovsky", "dst"),
+    ("James Emrick-Wilson", "james-emrick-wilson", "dst"),
 ]
 
 
@@ -79,6 +104,10 @@ def dump(name: str, payload: dict) -> None:
 def _team(code: str) -> str:
     c = (code or "").upper().strip()
     return {"JAC": "JAX", "LA": "LAR", "WSH": "WAS", "WAS": "WAS"}.get(c, c)
+
+
+def _now() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
 
 
 def extract_js_assign(text: str, var: str):
@@ -201,7 +230,7 @@ def scrape_fp_season_proj() -> dict:
         "source": "FantasyPros season projections",
         "url": url,
         "updated": updated,
-        "scraped": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+        "scraped": _now(),
         "players": rows,
     }
 
@@ -234,8 +263,6 @@ def scrape_espn_season_proj() -> dict:
                 continue
             if st.get("statSourceId") != 1:
                 continue
-            # split 2 = full-season projection; split 0 = projected season total
-            # that still moves with the calendar (use as remaining when lower).
             split = st.get("statSplitTypeId")
             total = st.get("appliedTotal")
             if total is None:
@@ -266,13 +293,13 @@ def scrape_espn_season_proj() -> dict:
     dump("dst-espn-ros-proj", {
         "source": "ESPN rest-of-season DST projections",
         "url": "https://fantasy.espn.com/football/players/projections",
-        "scraped": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+        "scraped": _now(),
         "players": ros_rows,
     })
     return {
         "source": "ESPN season projections",
         "url": "https://fantasy.espn.com/football/players/projections",
-        "scraped": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+        "scraped": _now(),
         "players": rows,
     }
 
@@ -300,8 +327,112 @@ def scrape_rw_season_proj() -> dict:
     return {
         "source": "RotoWire season projections via Sleeper",
         "url": "https://www.rotowire.com/football/",
-        "scraped": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+        "scraped": _now(),
         "players": rows,
+    }
+
+
+def scrape_imagine_season() -> dict:
+    url = "https://imaginefantasyfootball.com/scouting/season-forecast/dst/"
+    print(f"fetch Imagine Fantasy season DST {url}")
+    html = fetch(url)
+    text = unescape(re.sub(r"<script[\s\S]*?</script>", "", html))
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    rows = []
+    for name, team in NAME_TO_TEAM.items():
+        m = re.search(
+            re.escape(name) + r" D/ST.*?(\d+)\s+P50\s+(\d+)\s+FLR\s+(\d+)\s+CEIL",
+            text,
+        )
+        if not m:
+            continue
+        rows.append({
+            "name": name,
+            "team": team,
+            "fpts": float(m.group(1)),
+            "flr": int(m.group(2)),
+            "ceil": int(m.group(3)),
+        })
+    rows.sort(key=lambda r: (-r["fpts"], r["team"]))
+    for i, r in enumerate(rows, 1):
+        r["rank"] = i
+    print(f"  Imagine season n={len(rows)} top={[r['team'] for r in rows[:3]]}")
+    return {
+        "source": "Imagine Fantasy season DST forecast",
+        "url": url,
+        "scraped": _now(),
+        "players": rows,
+    }
+
+
+def scrape_draftsharks_dst() -> dict:
+    url = "https://www.draftsharks.com/rankings/def"
+    print(f"fetch Draft Sharks DEF {url}")
+    html = fetch(url)
+    rows = []
+    for m in re.finditer(
+        r'"name":"((?:Arizona|Atlanta|Baltimore|Buffalo|Carolina|Chicago|Cincinnati|'
+        r"Cleveland|Dallas|Denver|Detroit|Green Bay|Houston|Indianapolis|Jacksonville|"
+        r"Kansas City|Las Vegas|Los Angeles|Miami|Minnesota|New England|New Orleans|"
+        r"New York|Philadelphia|Pittsburgh|San Francisco|Seattle|Tampa Bay|Tennessee|"
+        r'Washington)[^"]*)".*?ranked #(\d+) overall in our 2026 Fantasy Football Defense Rankings',
+        html,
+    ):
+        name = m.group(1)
+        team = NAME_TO_TEAM.get(name)
+        if not team:
+            # Chargers / Rams / Jets / Giants short forms
+            for full, abbr in NAME_TO_TEAM.items():
+                if name in full or full.startswith(name):
+                    team = abbr
+                    name = full
+                    break
+        if not team:
+            continue
+        rows.append({"name": name, "team": team, "rank": int(m.group(2))})
+    # Dedupe keep best (lowest) rank
+    best = {}
+    for r in rows:
+        prev = best.get(r["team"])
+        if prev is None or r["rank"] < prev["rank"]:
+            best[r["team"]] = r
+    rows = sorted(best.values(), key=lambda r: r["rank"])
+    print(f"  Draft Sharks n={len(rows)} top={[r['team'] for r in rows[:3]]}")
+    return {
+        "source": "Draft Sharks DEF rankings",
+        "url": url,
+        "scraped": _now(),
+        "players": rows,
+    }
+
+
+def scrape_fp_draft_experts() -> dict:
+    boards = {}
+    for label, slug in DRAFT_EXPERTS:
+        url = f"https://www.fantasypros.com/nfl/rankings/{slug}.php?position=DST&type=draft"
+        print(f"fetch FP draft expert {label}")
+        try:
+            html = fetch(url)
+        except (HTTPError, URLError) as exc:
+            print(f"  skip {label}: {type(exc).__name__}: {exc}")
+            continue
+        title = (re.search(r"<title>([^<]+)", html) or [None, ""])[1]
+        if "Draft" not in title and "draft" not in title.lower():
+            # Fitzmaurice default draft page sometimes omits Draft in title
+            if label != "Pat Fitzmaurice":
+                print(f"  skip {label}: not a draft board ({title[:60]})")
+                continue
+        rows = parse_expert_dst_table(html)
+        if len(rows) < 12:
+            print(f"  skip {label}: thin board n={len(rows)}")
+            continue
+        boards[label] = rows
+        print(f"  {label} n={len(rows)} top={[r['team'] for r in rows[:3]]}")
+    return {
+        "source": "FantasyPros draft DST expert boards",
+        "scraped": _now(),
+        "boards": boards,
     }
 
 
@@ -337,7 +468,7 @@ def scrape_fp_ros_ecr() -> dict:
         "url": url,
         "updated": ecr.get("last_updated"),
         "experts": ecr.get("total_experts"),
-        "scraped": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+        "scraped": _now(),
         "players": players,
     }
 
@@ -357,11 +488,26 @@ def parse_expert_dst_table(html: str) -> list[dict]:
     return rows
 
 
+def parse_overall_dst_ranks(html: str) -> list[dict]:
+    """Pull DST ranks embedded in an overall STD ROS expert page."""
+    rows = []
+    for name, team in NAME_TO_TEAM.items():
+        m = re.search(re.escape(name) + r".{0,300}?DST(\d+)", html, re.S)
+        if not m:
+            continue
+        rows.append({"name": name, "team": team, "rank": int(m.group(1))})
+    rows.sort(key=lambda r: r["rank"])
+    return rows
+
+
 def scrape_fp_ros_experts() -> dict:
     boards = {}
-    for label, slug in ROS_EXPERTS:
-        url = f"https://www.fantasypros.com/nfl/rankings/{slug}.php?position=DST&type=ros"
-        print(f"fetch FP ROS expert {label}")
+    for label, slug, mode in ROS_EXPERTS:
+        if mode == "dst":
+            url = f"https://www.fantasypros.com/nfl/rankings/{slug}.php?position=DST&type=ros"
+        else:
+            url = f"https://www.fantasypros.com/nfl/rankings/{slug}.php?scoring=STD&type=ros"
+        print(f"fetch FP ROS expert {label} ({mode})")
         try:
             html = fetch(url)
         except (HTTPError, URLError) as exc:
@@ -371,15 +517,28 @@ def scrape_fp_ros_experts() -> dict:
         if "Rest of Season" not in title and "ROS" not in title:
             print(f"  skip {label}: not an ROS board ({title[:60]})")
             continue
-        rows = parse_expert_dst_table(html)
-        if len(rows) < 16:
+        if mode == "dst":
+            rows = parse_expert_dst_table(html)
+            if len(rows) < 16:
+                # Fall back to overall STD page
+                url2 = f"https://www.fantasypros.com/nfl/rankings/{slug}.php?scoring=STD&type=ros"
+                try:
+                    html2 = fetch(url2)
+                except (HTTPError, URLError):
+                    html2 = ""
+                rows = parse_overall_dst_ranks(html2) if html2 else []
+        else:
+            rows = parse_overall_dst_ranks(html)
+            if len(rows) < 12:
+                rows = parse_expert_dst_table(html)
+        if len(rows) < 12:
             print(f"  skip {label}: thin board n={len(rows)}")
             continue
         boards[label] = rows
         print(f"  {label} n={len(rows)} top={[r['team'] for r in rows[:3]]}")
     return {
         "source": "FantasyPros ROS expert boards",
-        "scraped": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+        "scraped": _now(),
         "boards": boards,
     }
 
@@ -407,7 +566,45 @@ def scrape_fantasysp_ros() -> dict:
         "source": "FantasySP ROS DST projections",
         "url": url,
         "updated": "Nov 23, 2026",
-        "scraped": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+        "scraped": _now(),
+        "players": rows,
+    }
+
+
+def scrape_cbs_ros_proj() -> dict:
+    url = "https://www.cbssports.com/fantasy/football/stats/DST/2026/restofseason/projections/nonppr/"
+    print(f"fetch CBS ROS DST proj {url}")
+    html = fetch(url)
+    seen = {}
+    for m in re.finditer(
+        r'/nfl/teams/([A-Z]{2,3})/[^"]*" class="">([^<]+)</a>.*?</tr>',
+        html,
+        re.S,
+    ):
+        team = _team(m.group(1))
+        nums = [
+            float(x)
+            for x in re.findall(r"TableBase-bodyTd--number[^>]*>\s*([\d.]+)", m.group(0))
+        ]
+        if len(nums) < 2:
+            continue
+        # Last number is FPTS/G; second-to-last is remaining FPTS total.
+        fpts = nums[-2]
+        if team in seen:
+            continue
+        seen[team] = {
+            "name": NAME_TO_TEAM.get(team) or m.group(2),
+            "team": team,
+            "fpts": round(fpts, 2),
+        }
+    rows = sorted(seen.values(), key=lambda r: (-r["fpts"], r["team"]))
+    for i, r in enumerate(rows, 1):
+        r["rank"] = i
+    print(f"  CBS ROS n={len(rows)} top={[r['team'] for r in rows[:3]]}")
+    return {
+        "source": "CBS Sports ROS DST projections",
+        "url": url,
+        "scraped": _now(),
         "players": rows,
     }
 
@@ -417,9 +614,13 @@ def main() -> int:
         dump("dst-fp-season-proj", scrape_fp_season_proj())
         dump("dst-espn-season-proj", scrape_espn_season_proj())
         dump("dst-rw-season-proj", scrape_rw_season_proj())
+        dump("dst-imagine-season", scrape_imagine_season())
+        dump("dst-draftsharks", scrape_draftsharks_dst())
+        dump("dst-fp-draft-experts", scrape_fp_draft_experts())
         dump("dst-fp-ros-ecr", scrape_fp_ros_ecr())
         dump("dst-fp-ros-experts", scrape_fp_ros_experts())
         dump("dst-fantasysp-ros", scrape_fantasysp_ros())
+        dump("dst-cbs-ros-proj", scrape_cbs_ros_proj())
     except (HTTPError, URLError, json.JSONDecodeError) as exc:
         print("fatal", type(exc).__name__, exc)
         return 1

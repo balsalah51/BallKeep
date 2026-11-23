@@ -1531,12 +1531,12 @@ FB_SEO = {
     ),
     "defenses.html": (
         "2026 Fantasy Football DST Season Projections | Ball Keep",
-        "DST season projections Mega Aggregate. 50% FantasyPros and ESPN, 50% RotoWire. Projected season points sit next to the rank.",
+        "DST season Mega Aggregate of 15+ projection and draft boards. 50% FantasyPros and ESPN, 50% every other board. Projected season points sit next to the rank.",
         "img/logo.jpg",
     ),
     "ros-defenses.html": (
         "2026 Fantasy Football Rest of Season DST Rankings | Ball Keep",
-        "Rest-of-season DST Super Aggregate. 50% FantasyPros ROS ECR, 50% every other ROS board that ranked the club.",
+        "Rest-of-season DST Super Aggregate of 15+ boards. 50% FantasyPros ROS ECR, 50% every other ROS board that ranked the club.",
         "img/logo.jpg",
     ),
     "kickers.html": (
@@ -4649,9 +4649,9 @@ def main():
     n_season = len(DST_SOURCES)
     n_ros = len([s for s in DST_ROS_SOURCES if True])
     dst_body = f"""
-    <p class="kicker">2026 Redraft · DST season projections Mega Aggregate</p>
+    <p class="kicker">2026 Redraft · DST season Mega Aggregate · {n_season} boards</p>
     <h1>Top Defenses</h1>
-    <p class="note">Full-season projected points, not this week's stream and not rest-of-season rankings. Mega Aggregate of {n_season} projection boards: 50% FantasyPros and ESPN, 50% RotoWire via Sleeper. {dst_lead} leads. Proj is the mean of the season points those boards published. For the rest of the fantasy season, use <a href="ros-defenses.html">ROS Defenses</a>. Sort with Find a player.</p>
+    <p class="note">Full-season board, not this week's stream and not rest-of-season rankings. Mega Aggregate of {n_season} boards: 50% FantasyPros and ESPN season projections, 50% RotoWire, Imagine Fantasy, Draft Sharks, and FantasyPros draft DST expert boards. {dst_lead} leads. Proj is the mean of the season points the projection feeds published. For the rest of the fantasy season, use <a href="ros-defenses.html">ROS Defenses</a>. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(dst, ["Super", "Boards", "Proj", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="src-col">{("" if r.get("proj") is None else f"{r["proj"]:.1f}")}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(DST_SOURCES, heading="Boards in This Mega Aggregate")}
@@ -4664,14 +4664,14 @@ def main():
                 "https://ballkeep.com/defenses.html",
                 dst,
                 lambda r: "https://ballkeep.com/defenses.html",
-                description="Season projections Mega Aggregate for team DST.",
+                description="Season Mega Aggregate for team DST.",
             ),
         ],
     ))
     ros_dst_body = f"""
-    <p class="kicker">2026 Redraft · Rest of season DST Super Aggregate</p>
+    <p class="kicker">2026 Redraft · Rest of season DST Super Aggregate · {n_ros} boards</p>
     <h1>ROS Defenses</h1>
-    <p class="note">Rest of the fantasy season only. Not this week's stream and not full-season projections. Super Aggregate of {n_ros} ROS boards: 50% FantasyPros ROS ECR, 50% every other ROS board that ranked the club. {ros_lead} leads. Proj is remaining projected points when a feed published them. Season projections live on <a href="defenses.html">The D</a>. Sort with Find a player.</p>
+    <p class="note">Rest of the fantasy season only. Not this week's stream and not full-season projections. Super Aggregate of {n_ros} ROS boards: 50% FantasyPros ROS ECR, 50% every other ROS board that ranked the club — expert boards, ESPN, FantasySP, CBS, and Ball Keep philosophy desks when published lists run short of 15. {ros_lead} leads. Proj is remaining projected points when a feed published them. Season projections live on <a href="defenses.html">The D</a>. Sort with Find a player.</p>
     {rank_search_bar()}
     <div class="panel">{rank_table(ros_dst, ["Super", "Boards", "Proj", "BK Value"], lambda r: f'<td class="src-col">{r["avg"]}</td><td class="src-col">{r["n"]}</td><td class="src-col">{("" if r.get("proj") is None else f"{r["proj"]:.1f}")}</td><td class="c-val val">{fmt_val(r["value"])}</td>')}</div>
     {sources_panel(DST_ROS_SOURCES, heading="Boards in This Super Aggregate")}
