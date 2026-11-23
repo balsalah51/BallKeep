@@ -634,17 +634,31 @@ def test_super_avg():
 
 
 def test_dst_and_kicker_boards():
-    from special_teams import dst_board, kicker_board, ros_dst_board
+    from special_teams import (
+        DST_ROS_SOURCES,
+        DST_SOURCES,
+        dst_board,
+        kicker_board,
+        ros_dst_board,
+        ros_dst_maps,
+        season_proj_maps,
+    )
+    season_maps = {k: v for k, v in season_proj_maps().items() if v}
+    ros_maps = {k: v for k, v in ros_dst_maps().items() if v}
+    assert len(season_maps) >= 15
+    assert len(DST_SOURCES) >= 15
+    assert len(ros_maps) >= 15
+    assert len(DST_ROS_SOURCES) >= 15
     dst = dst_board()
     assert len(dst) == 32
     assert dst[0]["name"] == "Houston Texans"
     assert dst[0]["bk"] == 1
-    assert dst[0]["n"] >= 2
+    assert dst[0]["n"] >= 10
     assert dst[0].get("proj") is not None
     ros = ros_dst_board()
     assert len(ros) == 32
     assert ros[0]["bk"] == 1
-    assert ros[0]["n"] >= 3
+    assert ros[0]["n"] >= 10
     assert ros[0]["name"] in {
         "Minnesota Vikings", "Houston Texans", "Seattle Seahawks",
         "Denver Broncos", "Jacksonville Jaguars", "Pittsburgh Steelers",
