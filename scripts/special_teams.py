@@ -1,10 +1,17 @@
 """2026 redraft DST and kicker Super Aggregates.
 
+DST season board (The D): Mega Aggregate of published season projections.
+  50% FantasyPros + ESPN long core, 50% RotoWire (via Sleeper).
+
+DST ROS board: Super Aggregate of rest-of-season ranking boards.
+  50% FantasyPros ROS ECR, 50% every other ROS board that ranked the club.
+
+Kickers stay on the published draft-season expert mash.
 Published boards only. Unranked names are skipped, never treated as 999.
-50% long-core mean, 50% every other board that ranked the name.
 """
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
@@ -12,6 +19,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from bk_curve import bk_value  # noqa: E402
 from aggregate_protocol import super_avg  # noqa: E402
 
+ROOT = Path(__file__).resolve().parents[1]
+RANK_DIR = ROOT / "data" / "ranks"
 
 # Full team names match the football schedule board. FantasyPros writes JAC; we use JAX.
 DST_TEAMS = [
@@ -28,69 +37,240 @@ DST_TEAMS = [
     ("Tennessee Titans", "TEN"), ("Washington Commanders", "WAS"),
 ]
 
-# FantasyPros DST ECR, Aug 2026 draft article (32 clubs).
-FP_DST = {
-    "HOU": 1, "DEN": 2, "LAR": 3, "SEA": 4, "PHI": 5, "NE": 6, "PIT": 7, "MIN": 8,
-    "JAX": 9, "LAC": 10, "BAL": 11, "KC": 12, "GB": 13, "DET": 14, "BUF": 15, "CLE": 16,
-    "NO": 17, "IND": 18, "SF": 19, "ATL": 20, "CHI": 21, "DAL": 22, "NYG": 23, "TB": 24,
-    "CAR": 25, "TEN": 26, "CIN": 27, "WAS": 28, "MIA": 29, "LV": 30, "NYJ": 31, "ARI": 32,
-}
-# FantasyPros experts, Aug 12-27. Top 12 published; rest skipped.
-BROWN_DST = {
-    "HOU": 1, "LAR": 2, "DEN": 3, "SEA": 4, "PHI": 5, "PIT": 6, "JAX": 9, "NE": 11,
-    "BAL": 12, "MIN": 16, "DET": 17, "LAC": 19,
-}
-ERICKSON_DST = {
-    "HOU": 1, "SEA": 2, "LAR": 3, "LAC": 4, "PHI": 5, "DEN": 6, "BAL": 7, "DET": 8,
-    "MIN": 9, "JAX": 11, "PIT": 12, "NE": 15,
-}
-FITZ_DST = {
-    "SEA": 1, "HOU": 2, "DEN": 3, "LAR": 4, "PHI": 5, "MIN": 6, "JAX": 7, "NE": 8,
-    "LAC": 9, "PIT": 11, "DET": 13, "BAL": 16,
-}
-# NBC Sports tiered DST, Aug 19.
-NBC_DST = {
-    "SEA": 1, "DEN": 2, "HOU": 3, "LAC": 4, "LAR": 5, "MIN": 6, "JAX": 7, "NE": 8,
-    "PHI": 9, "BAL": 10, "PIT": 11, "BUF": 12, "DET": 13, "CLE": 14, "NO": 15, "KC": 16,
-    "GB": 17, "ATL": 18, "TB": 19, "SF": 20, "CHI": 21, "IND": 22, "NYG": 23, "MIA": 24,
-    "LV": 25, "CAR": 26, "TEN": 27, "DAL": 28, "CIN": 29, "NYJ": 30, "WAS": 31, "ARI": 32,
-}
-# STACKED 2026 DST, updated Aug 31. Full 32. https://www.stackedfantasy.com/nfl/draft-guide/dst
-STACKED_DST = {
-    "HOU": 1, "DEN": 2, "LAR": 3, "SEA": 4, "PHI": 5, "NE": 6, "JAX": 7, "PIT": 8,
-    "BAL": 9, "LAC": 10, "MIN": 11, "GB": 12, "KC": 13, "CLE": 14, "DET": 15, "BUF": 16,
-    "SF": 17, "NO": 18, "DAL": 19, "IND": 20, "ATL": 21, "CAR": 22, "CHI": 23, "CIN": 24,
-    "NYG": 25, "TB": 26, "TEN": 27, "MIA": 28, "WAS": 29, "NYJ": 30, "ARI": 31, "LV": 32,
-}
-# Draft Sharks 2026 DST. Partial board: skip unranked. https://www.draftsharks.com/rankings/def
-DS_DST = {
-    "HOU": 1, "DEN": 2, "SEA": 3, "GB": 4, "BAL": 5, "PIT": 6, "MIN": 7, "NE": 8,
-    "PHI": 9, "LAR": 10, "DET": 11, "NYG": 12, "LAC": 13, "JAX": 14, "CHI": 15, "BUF": 16,
-    "CLE": 17, "IND": 21, "NO": 23,
-}
-# CBS via 4for4, top 10 published Aug 30. https://www.4for4.com/fantasy-football-rankings/cbs/def/2026
-CBS_DST = {
-    "LAR": 1, "HOU": 2, "SEA": 3, "DEN": 4, "PIT": 5,
-    "JAX": 6, "MIN": 7, "NE": 8, "BAL": 9, "PHI": 10,
-}
-# Field Yates overall PPR, refreshed Sep 5. DST slice only.
-# https://www.espn.com/fantasy/football/story/_/id/48711830
-YATES_DST = {
-    "HOU": 1, "DEN": 2, "SEA": 3, "LAR": 4, "PIT": 5,
-    "LAC": 6, "NE": 7, "MIN": 8, "PHI": 9, "GB": 10,
-}
+TEAM_NAME = {abbr: name for name, abbr in DST_TEAMS}
+
+
+def _load_rank(name: str) -> dict:
+    path = RANK_DIR / f"{name}.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text())
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def _rank_map_from_players(payload: dict, *, by: str = "rank") -> dict:
+    out = {}
+    for row in payload.get("players") or []:
+        team = (row.get("team") or "").upper()
+        if team == "JAC":
+            team = "JAX"
+        if not team:
+            continue
+        if by == "fpts":
+            fpts = row.get("fpts")
+            if fpts is None:
+                continue
+            out[team] = float(fpts)
+        else:
+            rk = row.get("rank")
+            if not rk:
+                continue
+            out[team] = int(rk)
+    if by == "fpts":
+        ordered = sorted(out.items(), key=lambda kv: (-kv[1], kv[0]))
+        return {team: i for i, (team, _) in enumerate(ordered, 1)}
+    return out
+
+
+def _proj_map(payload: dict) -> dict:
+    out = {}
+    for row in payload.get("players") or []:
+        team = (row.get("team") or "").upper()
+        if team == "JAC":
+            team = "JAX"
+        fpts = row.get("fpts")
+        if not team or fpts is None:
+            continue
+        out[team] = float(fpts)
+    return out
+
+
+def _mean_rows(universe, maps, pos, long_core=(), proj_by_team=None):
+    rows = []
+    for name, team in universe:
+        shown = {}
+        for label, mp in maps.items():
+            rk = mp.get(team) if pos == "DST" else mp.get(name)
+            if rk:
+                shown[label] = int(rk)
+        if not shown:
+            continue
+        avg = super_avg(shown, long_core) if long_core else round(sum(shown.values()) / len(shown), 2)
+        row = {
+            "name": name,
+            "pos": pos,
+            "team": team,
+            "n": len(shown),
+            "avg": avg,
+            "ranks": shown,
+        }
+        if proj_by_team and team in proj_by_team:
+            row["proj"] = round(proj_by_team[team], 1)
+        rows.append(row)
+    rows.sort(key=lambda r: (r["avg"], r["name"]))
+    out = []
+    for i, r in enumerate(rows, 1):
+        out.append({**r, "bk": i, "value": bk_value(i)})
+    return out
+
+
+def season_proj_maps() -> dict:
+    """Team -> rank maps from season projection boards."""
+    return {
+        "FantasyPros": _rank_map_from_players(_load_rank("dst-fp-season-proj"), by="fpts"),
+        "ESPN": _rank_map_from_players(_load_rank("dst-espn-season-proj"), by="fpts"),
+        "RotoWire": _rank_map_from_players(_load_rank("dst-rw-season-proj"), by="fpts"),
+    }
+
+
+def season_proj_points() -> dict:
+    """Mean projected season points across boards that published the club."""
+    sources = [
+        _proj_map(_load_rank("dst-fp-season-proj")),
+        _proj_map(_load_rank("dst-espn-season-proj")),
+        _proj_map(_load_rank("dst-rw-season-proj")),
+    ]
+    teams = set()
+    for src in sources:
+        teams.update(src)
+    out = {}
+    for team in teams:
+        vals = [src[team] for src in sources if team in src]
+        if vals:
+            out[team] = sum(vals) / len(vals)
+    return out
+
+
+DST_SEASON_LONG = ("FantasyPros", "ESPN")
 
 DST_SOURCES = [
-    ("FantasyPros DST ECR", "https://www.fantasypros.com/2026/08/fantasy-football-draft-rankings-targets-defenses-d-st-picks/", "Expert consensus, Aug 2026. All 32 clubs."),
-    ("NBC Sports DST", "https://www.nbcsports.com/fantasy/football/news/2026-fantasy-football-tiered-defense-dst-rankings-and-strategy", "Matthew Harris tiers, Aug 19. Seattle first, Houston third."),
-    ("Derek Brown DST", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dst.php", "FantasyPros expert, Aug 12. Houston and the Rams up."),
-    ("Andrew Erickson DST", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dst.php", "FantasyPros expert, Aug 27. Chargers inside the 5."),
-    ("Pat Fitzmaurice DST", "https://www.fantasypros.com/nfl/fantasy-football-rankings/dst.php", "FantasyPros expert, July 1. Seattle first."),
-    ("STACKED DST", "https://www.stackedfantasy.com/nfl/draft-guide/dst", "Full 32, updated Aug 31. Houston first."),
-    ("Draft Sharks DST", "https://www.draftsharks.com/rankings/def", "Partial board, Aug 31. Unranked clubs skipped."),
-    ("CBS DST", "https://www.4for4.com/fantasy-football-rankings/cbs/def/2026", "Top 10 published Aug 30 via 4for4. Rams first."),
-    ("Field Yates DST", "https://www.espn.com/fantasy/football/story/_/id/48711830", "PPR overall slice, Sep 5. Houston first. Unranked clubs skipped."),
+    (
+        "FantasyPros season projections",
+        "https://www.fantasypros.com/nfl/projections/dst.php?week=draft",
+        "Consensus 2026 season DST points. Free top of the board; unranked clubs skipped.",
+    ),
+    (
+        "ESPN season projections",
+        "https://fantasy.espn.com/football/players/projections",
+        "ESPN default-league season D/ST points for all 32 clubs.",
+    ),
+    (
+        "RotoWire season projections",
+        "https://www.rotowire.com/football/",
+        "Season D/ST points via Sleeper. All 32 clubs.",
+    ),
 ]
+
+
+def dst_board():
+    """Season projections Mega Aggregate for The D."""
+    maps = season_proj_maps()
+    maps = {k: v for k, v in maps.items() if v}
+    if not maps:
+        return []
+    return _mean_rows(
+        DST_TEAMS,
+        maps,
+        "DST",
+        long_core=tuple(name for name in DST_SEASON_LONG if name in maps),
+        proj_by_team=season_proj_points(),
+    )
+
+
+def ros_dst_maps() -> dict:
+    maps = {
+        "FantasyPros ROS ECR": _rank_map_from_players(_load_rank("dst-fp-ros-ecr")),
+    }
+    experts = _load_rank("dst-fp-ros-experts").get("boards") or {}
+    for label, rows in experts.items():
+        mp = {}
+        for row in rows:
+            team = (row.get("team") or "").upper()
+            if team == "JAC":
+                team = "JAX"
+            rk = row.get("rank")
+            if team and rk:
+                mp[team] = int(rk)
+        if mp:
+            maps[label] = mp
+    espn = _rank_map_from_players(_load_rank("dst-espn-ros-proj"), by="fpts")
+    if espn:
+        maps["ESPN ROS"] = espn
+    fsp = _rank_map_from_players(_load_rank("dst-fantasysp-ros"), by="fpts")
+    if fsp:
+        maps["FantasySP ROS"] = fsp
+    return maps
+
+
+def ros_dst_points() -> dict:
+    """Remaining projected points when a ROS feed publishes them."""
+    buckets = [
+        _proj_map(_load_rank("dst-fp-ros-ecr")),
+        _proj_map(_load_rank("dst-espn-ros-proj")),
+        _proj_map(_load_rank("dst-fantasysp-ros")),
+    ]
+    teams = set()
+    for src in buckets:
+        teams.update(src)
+    out = {}
+    for team in teams:
+        vals = [src[team] for src in buckets if team in src]
+        if vals:
+            out[team] = sum(vals) / len(vals)
+    return out
+
+
+DST_ROS_LONG = ("FantasyPros ROS ECR",)
+
+DST_ROS_SOURCES = [
+    (
+        "FantasyPros ROS DST ECR",
+        "https://www.fantasypros.com/nfl/rankings/ros-dst.php",
+        "Rest-of-season expert consensus. All 32 clubs.",
+    ),
+    (
+        "Pat Fitzmaurice ROS DST",
+        "https://www.fantasypros.com/nfl/rankings/pat-fitzmaurice.php?position=DST&type=ros",
+        "FantasyPros expert ROS board.",
+    ),
+    (
+        "Ryan Linkletter ROS DST",
+        "https://www.fantasypros.com/nfl/rankings/ryanlinkletter.php?position=DST&type=ros",
+        "Blitz Sports Media ROS board via FantasyPros.",
+    ),
+    (
+        "Aaron St Denis ROS DST",
+        "https://www.fantasypros.com/nfl/rankings/aaron-st-denis.php?position=DST&type=ros",
+        "Fantasy Sports Advice Network ROS board via FantasyPros.",
+    ),
+    (
+        "ESPN ROS projections",
+        "https://fantasy.espn.com/football/players/projections",
+        "ESPN remaining-season D/ST points for all 32 clubs.",
+    ),
+    (
+        "FantasySP ROS DST",
+        "https://www.fantasysp.com/rest-of-season/nfl/DST",
+        "Remaining projected points. Free top of the board; unranked clubs skipped.",
+    ),
+]
+
+
+def ros_dst_board():
+    """Rest-of-season DST Super Aggregate."""
+    maps = {k: v for k, v in ros_dst_maps().items() if v}
+    if not maps:
+        return []
+    return _mean_rows(
+        DST_TEAMS,
+        maps,
+        "DST",
+        long_core=tuple(name for name in DST_ROS_LONG if name in maps),
+        proj_by_team=ros_dst_points(),
+    )
+
 
 KICKERS = [
     ("Brandon Aubrey", "DAL"), ("Ka'imi Fairbairn", "HOU"), ("Cameron Dicker", "LAC"),
@@ -124,7 +304,6 @@ FITZ_K = {
     "Chase McLaughlin": 9, "Cairo Santos": 10, "Andy Borregales": 11, "Evan McPherson": 12,
 }
 # Draft Sharks 2026 K, updated Aug 31. Skip unnamed NYG/CAR/WAS slots.
-# https://www.draftsharks.com/rankings/pk
 DS_K = {
     "Brandon Aubrey": 1, "Cameron Dicker": 2, "Ka'imi Fairbairn": 3, "Cam Little": 4,
     "Eddy Pineiro": 5, "Cairo Santos": 6, "Evan McPherson": 7, "Jason Myers": 8,
@@ -134,7 +313,6 @@ DS_K = {
     "Charlie Smyth": 23, "Blake Grupe": 25,
 }
 # RotoWire Jerry Donabedian, Aug 27. Skip 15 (Carlson vs Smyth). Grupe not Shrader.
-# https://www.rotowire.com/football/article/2026-fantasy-football-rankings-kickers-85924
 RW_K = {
     "Brandon Aubrey": 1, "Cameron Dicker": 2, "Ka'imi Fairbairn": 3, "Jason Myers": 4,
     "Cam Little": 5, "Will Reichard": 6, "Jake Bates": 7, "Harrison Mevis": 8,
@@ -158,49 +336,7 @@ K_SOURCES = [
     ("Field Yates K", "https://www.espn.com/fantasy/football/story/_/id/48711830", "PPR overall slice, Sep 5. Aubrey first, Dicker second."),
 ]
 
-
-def _mean_rows(universe, maps, pos, long_core=()):
-    rows = []
-    for name, team in universe:
-        shown = {}
-        for label, mp in maps.items():
-            rk = mp.get(team) if pos == "DST" else mp.get(name)
-            if rk:
-                shown[label] = int(rk)
-        if not shown:
-            continue
-        avg = super_avg(shown, long_core) if long_core else round(sum(shown.values()) / len(shown), 2)
-        rows.append({
-            "name": name,
-            "pos": pos,
-            "team": team,
-            "n": len(shown),
-            "avg": avg,
-            "ranks": shown,
-        })
-    rows.sort(key=lambda r: (r["avg"], r["name"]))
-    out = []
-    for i, r in enumerate(rows, 1):
-        out.append({**r, "bk": i, "value": bk_value(i)})
-    return out
-
-
-DST_LONG = ("fp", "nbc", "stacked")
 K_LONG = ("fp", "ds", "rw")
-
-
-def dst_board():
-    return _mean_rows(DST_TEAMS, {
-        "fp": FP_DST,
-        "nbc": NBC_DST,
-        "brown": BROWN_DST,
-        "erickson": ERICKSON_DST,
-        "fitz": FITZ_DST,
-        "stacked": STACKED_DST,
-        "ds": DS_DST,
-        "cbs": CBS_DST,
-        "yates": YATES_DST,
-    }, "DST", long_core=DST_LONG)
 
 
 def kicker_board():

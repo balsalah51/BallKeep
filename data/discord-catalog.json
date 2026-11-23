@@ -43240,7 +43240,7 @@
       "team": "HOU",
       "bk": 1,
       "avg": 1.5,
-      "n": 9,
+      "n": 3,
       "value": 12000
     },
     {
@@ -43248,8 +43248,8 @@
       "pos": "DST",
       "team": "DEN",
       "bk": 2,
-      "avg": 2.67,
-      "n": 9,
+      "avg": 3.5,
+      "n": 3,
       "value": 10873
     },
     {
@@ -43257,8 +43257,8 @@
       "pos": "DST",
       "team": "SEA",
       "bk": 3,
-      "avg": 2.83,
-      "n": 9,
+      "avg": 4.0,
+      "n": 3,
       "value": 10228
     },
     {
@@ -43266,26 +43266,26 @@
       "pos": "DST",
       "team": "LAR",
       "bk": 4,
-      "avg": 3.83,
-      "n": 9,
+      "avg": 4.5,
+      "n": 3,
       "value": 9769
+    },
+    {
+      "name": "Baltimore Ravens",
+      "pos": "DST",
+      "team": "BAL",
+      "bk": 5,
+      "avg": 5.0,
+      "n": 2,
+      "value": 9409
     },
     {
       "name": "Philadelphia Eagles",
       "pos": "DST",
       "team": "PHI",
-      "bk": 5,
-      "avg": 6.75,
-      "n": 9,
-      "value": 9409
-    },
-    {
-      "name": "New England Patriots",
-      "pos": "DST",
-      "team": "NE",
       "bk": 6,
-      "avg": 8.08,
-      "n": 9,
+      "avg": 5.0,
+      "n": 2,
       "value": 9111
     },
     {
@@ -43293,233 +43293,233 @@
       "pos": "DST",
       "team": "PIT",
       "bk": 7,
-      "avg": 8.08,
-      "n": 9,
+      "avg": 7.25,
+      "n": 3,
       "value": 8855
-    },
-    {
-      "name": "Jacksonville Jaguars",
-      "pos": "DST",
-      "team": "JAX",
-      "bk": 8,
-      "avg": 8.53,
-      "n": 8,
-      "value": 8629
     },
     {
       "name": "Minnesota Vikings",
       "pos": "DST",
       "team": "MIN",
-      "bk": 9,
-      "avg": 8.58,
-      "n": 9,
-      "value": 8426
-    },
-    {
-      "name": "Los Angeles Chargers",
-      "pos": "DST",
-      "team": "LAC",
-      "bk": 10,
-      "avg": 9.1,
-      "n": 8,
-      "value": 8241
-    },
-    {
-      "name": "Baltimore Ravens",
-      "pos": "DST",
-      "team": "BAL",
-      "bk": 11,
-      "avg": 9.9,
-      "n": 8,
-      "value": 8070
-    },
-    {
-      "name": "Green Bay Packers",
-      "pos": "DST",
-      "team": "GB",
-      "bk": 12,
-      "avg": 10.5,
-      "n": 5,
-      "value": 7912
+      "bk": 8,
+      "avg": 7.5,
+      "n": 3,
+      "value": 8629
     },
     {
       "name": "Detroit Lions",
       "pos": "DST",
       "team": "DET",
-      "bk": 13,
-      "avg": 13.12,
-      "n": 7,
-      "value": 7764
+      "bk": 9,
+      "avg": 7.75,
+      "n": 3,
+      "value": 8426
+    },
+    {
+      "name": "New England Patriots",
+      "pos": "DST",
+      "team": "NE",
+      "bk": 10,
+      "avg": 9.0,
+      "n": 2,
+      "value": 8241
     },
     {
       "name": "Kansas City Chiefs",
       "pos": "DST",
       "team": "KC",
-      "bk": 14,
-      "avg": 13.67,
+      "bk": 11,
+      "avg": 9.5,
+      "n": 2,
+      "value": 8070
+    },
+    {
+      "name": "Los Angeles Chargers",
+      "pos": "DST",
+      "team": "LAC",
+      "bk": 12,
+      "avg": 12.75,
       "n": 3,
-      "value": 7624
+      "value": 7912
     },
     {
-      "name": "Buffalo Bills",
+      "name": "Jacksonville Jaguars",
       "pos": "DST",
-      "team": "BUF",
-      "bk": 15,
-      "avg": 15.17,
-      "n": 4,
-      "value": 7492
-    },
-    {
-      "name": "Cleveland Browns",
-      "pos": "DST",
-      "team": "CLE",
-      "bk": 16,
-      "avg": 15.83,
-      "n": 4,
-      "value": 7367
+      "team": "JAX",
+      "bk": 13,
+      "avg": 13.0,
+      "n": 2,
+      "value": 7764
     },
     {
       "name": "New York Giants",
       "pos": "DST",
       "team": "NYG",
-      "bk": 17,
-      "avg": 17.83,
-      "n": 4,
-      "value": 7247
-    },
-    {
-      "name": "Chicago Bears",
-      "pos": "DST",
-      "team": "CHI",
-      "bk": 18,
-      "avg": 18.33,
-      "n": 4,
-      "value": 7132
+      "bk": 14,
+      "avg": 15.5,
+      "n": 2,
+      "value": 7624
     },
     {
       "name": "San Francisco 49ers",
       "pos": "DST",
       "team": "SF",
-      "bk": 19,
-      "avg": 18.67,
-      "n": 3,
-      "value": 7023
-    },
-    {
-      "name": "Atlanta Falcons",
-      "pos": "DST",
-      "team": "ATL",
-      "bk": 20,
-      "avg": 19.67,
-      "n": 3,
-      "value": 6917
-    },
-    {
-      "name": "New Orleans Saints",
-      "pos": "DST",
-      "team": "NO",
-      "bk": 21,
-      "avg": 19.83,
-      "n": 4,
-      "value": 6815
-    },
-    {
-      "name": "Indianapolis Colts",
-      "pos": "DST",
-      "team": "IND",
-      "bk": 22,
-      "avg": 20.5,
-      "n": 4,
-      "value": 6717
+      "bk": 15,
+      "avg": 16.0,
+      "n": 2,
+      "value": 7492
     },
     {
       "name": "Dallas Cowboys",
       "pos": "DST",
       "team": "DAL",
-      "bk": 23,
-      "avg": 23.0,
+      "bk": 16,
+      "avg": 17.5,
+      "n": 2,
+      "value": 7367
+    },
+    {
+      "name": "Buffalo Bills",
+      "pos": "DST",
+      "team": "BUF",
+      "bk": 17,
+      "avg": 18.0,
       "n": 3,
-      "value": 6621
+      "value": 7247
     },
     {
       "name": "Tampa Bay Buccaneers",
       "pos": "DST",
       "team": "TB",
-      "bk": 24,
-      "avg": 23.0,
-      "n": 3,
-      "value": 6529
+      "bk": 18,
+      "avg": 18.0,
+      "n": 2,
+      "value": 7132
     },
     {
-      "name": "Carolina Panthers",
+      "name": "Green Bay Packers",
       "pos": "DST",
-      "team": "CAR",
-      "bk": 25,
-      "avg": 24.33,
+      "team": "GB",
+      "bk": 19,
+      "avg": 18.5,
+      "n": 2,
+      "value": 7023
+    },
+    {
+      "name": "Indianapolis Colts",
+      "pos": "DST",
+      "team": "IND",
+      "bk": 20,
+      "avg": 20.0,
+      "n": 2,
+      "value": 6917
+    },
+    {
+      "name": "Atlanta Falcons",
+      "pos": "DST",
+      "team": "ATL",
+      "bk": 21,
+      "avg": 20.75,
       "n": 3,
-      "value": 6440
+      "value": 6815
+    },
+    {
+      "name": "Chicago Bears",
+      "pos": "DST",
+      "team": "CHI",
+      "bk": 22,
+      "avg": 21.0,
+      "n": 2,
+      "value": 6717
     },
     {
       "name": "Cincinnati Bengals",
       "pos": "DST",
       "team": "CIN",
-      "bk": 26,
-      "avg": 26.67,
-      "n": 3,
-      "value": 6353
+      "bk": 23,
+      "avg": 22.0,
+      "n": 2,
+      "value": 6621
     },
     {
-      "name": "Tennessee Titans",
+      "name": "New Orleans Saints",
       "pos": "DST",
-      "team": "TEN",
-      "bk": 27,
-      "avg": 26.67,
-      "n": 3,
-      "value": 6268
+      "team": "NO",
+      "bk": 24,
+      "avg": 22.0,
+      "n": 2,
+      "value": 6529
     },
     {
-      "name": "Miami Dolphins",
+      "name": "Cleveland Browns",
       "pos": "DST",
-      "team": "MIA",
-      "bk": 28,
-      "avg": 27.0,
-      "n": 3,
-      "value": 6186
-    },
-    {
-      "name": "Las Vegas Raiders",
-      "pos": "DST",
-      "team": "LV",
-      "bk": 29,
-      "avg": 29.0,
-      "n": 3,
-      "value": 6105
-    },
-    {
-      "name": "Washington Commanders",
-      "pos": "DST",
-      "team": "WAS",
-      "bk": 30,
-      "avg": 29.33,
-      "n": 3,
-      "value": 6027
+      "team": "CLE",
+      "bk": 25,
+      "avg": 22.5,
+      "n": 2,
+      "value": 6440
     },
     {
       "name": "New York Jets",
       "pos": "DST",
       "team": "NYJ",
-      "bk": 31,
-      "avg": 30.33,
-      "n": 3,
-      "value": 5951
+      "bk": 26,
+      "avg": 24.0,
+      "n": 2,
+      "value": 6353
+    },
+    {
+      "name": "Carolina Panthers",
+      "pos": "DST",
+      "team": "CAR",
+      "bk": 27,
+      "avg": 25.5,
+      "n": 2,
+      "value": 6268
+    },
+    {
+      "name": "Tennessee Titans",
+      "pos": "DST",
+      "team": "TEN",
+      "bk": 28,
+      "avg": 26.0,
+      "n": 2,
+      "value": 6186
+    },
+    {
+      "name": "Washington Commanders",
+      "pos": "DST",
+      "team": "WAS",
+      "bk": 29,
+      "avg": 26.0,
+      "n": 2,
+      "value": 6105
+    },
+    {
+      "name": "Las Vegas Raiders",
+      "pos": "DST",
+      "team": "LV",
+      "bk": 30,
+      "avg": 28.5,
+      "n": 2,
+      "value": 6027
     },
     {
       "name": "Arizona Cardinals",
       "pos": "DST",
       "team": "ARI",
+      "bk": 31,
+      "avg": 29.5,
+      "n": 2,
+      "value": 5951
+    },
+    {
+      "name": "Miami Dolphins",
+      "pos": "DST",
+      "team": "MIA",
       "bk": 32,
-      "avg": 31.67,
-      "n": 3,
+      "avg": 32.0,
+      "n": 2,
       "value": 5876
     }
   ],
@@ -109966,6 +109966,87 @@
       ]
     },
     {
+      "headline": "Colts keep RB Jonathan Taylor at NFL trade deadline, reportedly turned down offers of second-round picks",
+      "slug": "trade-offers-colts-did-accept-rb-jonathan-taylor-73a2cb58",
+      "blurb": "Why didn't the Colts trade Daniel Jones?",
+      "summary": "Why didn't the Colts trade Daniel Jones? Taking a look at Indy's head-scratching decision after waiving QB. Daniel Jones release shows full extent of Colts' trade deadline fumble USA Today Aggregated from USA TODAY Sports, USA Today, X, NFL.com, NBC Sports and 2 more.",
+      "category": "trade",
+      "updated": "2026-11-23T11:07:20Z",
+      "url": "https://ballkeep.com/news/trade-offers-colts-did-accept-rb-jonathan-taylor-73a2cb58.html",
+      "players": [
+        {
+          "key": "daniel jones",
+          "name": "Daniel Jones",
+          "slug": "daniel-jones",
+          "pos": "QB",
+          "team": "IND"
+        },
+        {
+          "key": "jonathan taylor",
+          "name": "Jonathan Taylor",
+          "slug": "jonathan-taylor",
+          "pos": "RB",
+          "team": "IND"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Trade offers the #Colts did not accept: \u2022 RB Jonathan Taylor for a 2nd and more. \u2022 DT Grover Stewart for a 4th and 6th \u2022 QB Daniel Jones and a conditional 5th for a 4th. - X",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBlbEJ5OEszOWRpcW5ocW1MVWhLMk1HaEp5eFZjTExMUnh1MUlUdmlQTURMSDIzZ092SFl4Snp3ZjZsRFJrRW82N0tMcWgzU3YtWWV4TEh5S1J3WndndFRDUjdOWnB1QQ?oc=5",
+          "kind": "article",
+          "publisher": "X"
+        },
+        {
+          "title": "Ian Rapoport on possibility if Colts to trade Jonathan Taylor | 'GMFB'",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQmVYRVlOckZxT25maGNzam9BR2pPRG56dkJCaFRIQnhSdjZEeGJIeEJYUnNCblYyTVd3NzE3SDF3TkpFeW84dVVfczI4UkRReFdjYUNvblVLS00zVW9NZ0JfYnl3ZDZqa241ZUMzZUVRRHQ1eG1qeEFwQmVOQTV3LVZ2MHYxMVo5TTNJdXdXN3pCdnVJ?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        },
+        {
+          "title": "Why didn't the Colts trade Jonathan Taylor? RB spared in Indy's fire sale",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSTl5cGJ2WTVVbWFObEhZMTlnRE5oVzUtQnNFTEZqd1dIQmgzWUpMQ00wTkJoNGktZFhhdTNEbFVYUkFhNzZLd0JhS2psRmM3ZXJhRHRSdGNJd1BsR290YXhwR3FQTUloaGJzU3dRc2g2Z1pWelFfZTBRR2VyYXJnWmZnRVUtODRWMWNuVzJkNXF6dUhfM1g0VWhXeGsxTVoyZm9ZVUtNSGRlcE8zV1VDQ1Bmbk9HUkJt?oc=5",
+          "kind": "article",
+          "publisher": "USA Today"
+        },
+        {
+          "title": "Colts will take calculated risk, if Jonathan Taylor plays today",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSnpna1l5WDZvUW9QRlpySEZjbEhsTE95emlNMEc1Q1J0eFZjZEhSdDVZTjB1aUFwdHBaNkxDUzlISVZXd21PYzREaDJrR3BzbWdlSnRQRkxabEZRYWJSX0dfTGlFTlhtdUxCOUtpVVJwVjgxZW9FYnlsUU1wNXFNTEZFRmN1bno1N05ScEVtdjVYT0NjRzJYZDdKejV2RGUzdkJJUU9nbTRpSFV3WHpzUHMwMVRoMVYtU1FOU2NMNjJYZw?oc=5",
+          "kind": "article",
+          "publisher": "NBC Sports"
+        },
+        {
+          "title": "Colts keep RB Jonathan Taylor at NFL trade deadline, reportedly turned down offers of second-round picks",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOc1BycU44NmlXWFFVZmYxdUFBVUdINWtFR3BDMHZ6cFkyQ0lpVDdDaHYybHg0X0EwcktONTlUdTN3QXA3X1lrNk1fdkhqMjFicWRDUS10QmdoTElILTgzODlPT2M5M0J5THRzUDlCaVMyeXlOOExkQWFSZWEzR2R3LVhsdjM3eFdOU2lxNzBFMVY5TEg2NXh2UURMdkxGaVV4enJFcUJUQkR5R0lNRVl2bFJMTHNyeWx3Xy1QN1J5SDVGejV5MWx0X2tudm1CcjdjcFJDUG9xWQ?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Jonathan Taylor & Caden Curry | Colts vs. Cowboys, Locker Talk Week 9",
+          "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNWHlqZGk2VkZqSVowZnVVSTNHY0hodTAwbVRvQnp3N2FrZXRZSnpINEpweDkxWklwRVhzY2UtY3VuNFZEMUNla3VyTlBpWWx0dlZ4ZkFBZS1FQ2RmODFLVmlORTktbzVNZDdSYmdrU0V6U2tOQmJvWUhKSzZxalR0QkNYWF90WGtxQ2RlZkw1ZlZwSm5FTXUwQ2lneVRHbDlLOVlNQlp2WDh2M3R4RDJLcWc0TDlBSzUyb0dzLUhLVUs2QTNCMlZCUXIzWEpNTW1OUXBGV3dKMGJEVDBkLVBZeXlpQldRUTRzV0M2VE5NaFplYmVZemowSzRTSlBnREk1UzJMN29UNWlKS3VUWGhLS0oyOWRIcHNfSF9OUFRaVnpIQXZHM1hJRDA5MV9UUFd4MWJOWVF2a2hQYlRw?oc=5",
+          "kind": "article",
+          "publisher": "Colts.com"
+        },
+        {
+          "title": "Giants pull their Jonathan Taylor offer in latest NFL trade deadline twist",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZjVMMUdsOHdfRTVkOWJYNHEzYkdyUlZCTENtLXlLVHdfS0o1T1NTMWRFZkF3dWxKeVNWZ3ZHa2lSQlZ4T0VrRHdZd0c0QkRMcW5INmQ0ejZkMHhDSG5CZURtOXAyVHRQN1pFczlCMUZsSXp3eGx4d2t2RHVfNEdsc0VKYXUzOENzM0E?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Colts announce RB Jonathan Taylor (ankle) will return to practice on Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdjF4b3JHb3hKOUZFdTg2eVlVVW1hRnRHM2RTRjNNeUxvWkUyX2N5ZHVMeTRJUkZZUjYwNjVST1ViY19KUUotNzVwUXdlVnIxOE5aSVlzX18yQTVLeUdxbjNMV0x4dWEza3NDWFRpeGM1WEpsNzgxYWt1d2p5Skh0Y2s5azNtWGxWTG5RT0VORUM4WmhTdXpycTJ0RWhSTnBm?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        },
+        {
+          "title": "Colts RB Jonathan Taylor (ankle) 'definitely feeling better this week'",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTTJoXzgxa0lMSHl4T1hiaTdTWkRSQ0kzVHVUcU0wajJRc3h1N3RMOFhJY0EyaWlBXzV2V2ZwRlJTZ1UzdDJaaG4zZXRtUHUzXzduYUQzTV8zejdmYkJCSnR3T1ltQUtkYkM3Rm1NMjQ5a3FjWlhSUkF1S1lSbU9OaXg0RVNWMTFCekFGY1M0U2NWZXF2UVE?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        }
+      ]
+    },
+    {
       "headline": "Colts reportedly received trade offer from Ravens for Daniel Jones, who was released 10 days after NFL\u2026",
       "slug": "live-colts-release-daniel-jones-anthony-richardson-sr-6c75446f",
       "blurb": "Indianapolis reportedly rejected a trade offer from Baltimore at the deadline, only to release its $88 million quarterback two weeks later",
@@ -110141,87 +110222,6 @@
           "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNTVNXUk1EUHdXT09UNnllUWIySGs2bklVWTlhNUhvSHNvVURJN1JfTGZFRTY4T25sTXNKcUUzNDZ2R2c2c1VwU3E4Z2EtMk5mbjdveGpfUGJ6bWZJVEg2WHRscC1XVzZ2UTRPc01jRTFzM0V4VHY4ZjViSnJBXzZkUWNOT1BIanR5SzJnbHU5ZS10NWZ4S0lVZXB4Z3BwV2V2LUl2S09LTXF3dTBlNWNhNFlPNWU5bXFZeVhjN3llZ1VIQWxjWk94ZHlxODYtYVB4VXVEMzlMTVJGUDd6Z1BMdG02VEFUVmpidmx0bEJDR1NrRGpX?oc=5",
           "kind": "article",
           "publisher": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "headline": "Colts keep RB Jonathan Taylor at NFL trade deadline, reportedly turned down offers of second-round picks",
-      "slug": "trade-offers-colts-did-accept-rb-jonathan-taylor-73a2cb58",
-      "blurb": "Why didn't the Colts trade Daniel Jones?",
-      "summary": "Why didn't the Colts trade Daniel Jones? Taking a look at Indy's head-scratching decision after waiving QB. Daniel Jones release shows full extent of Colts' trade deadline fumble USA Today Aggregated from USA TODAY Sports, USA Today, X, NFL.com, NBC Sports and 2 more.",
-      "category": "trade",
-      "updated": "2026-11-23T11:07:20Z",
-      "url": "https://ballkeep.com/news/trade-offers-colts-did-accept-rb-jonathan-taylor-73a2cb58.html",
-      "players": [
-        {
-          "key": "daniel jones",
-          "name": "Daniel Jones",
-          "slug": "daniel-jones",
-          "pos": "QB",
-          "team": "IND"
-        },
-        {
-          "key": "jonathan taylor",
-          "name": "Jonathan Taylor",
-          "slug": "jonathan-taylor",
-          "pos": "RB",
-          "team": "IND"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Trade offers the #Colts did not accept: \u2022 RB Jonathan Taylor for a 2nd and more. \u2022 DT Grover Stewart for a 4th and 6th \u2022 QB Daniel Jones and a conditional 5th for a 4th. - X",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBlbEJ5OEszOWRpcW5ocW1MVWhLMk1HaEp5eFZjTExMUnh1MUlUdmlQTURMSDIzZ092SFl4Snp3ZjZsRFJrRW82N0tMcWgzU3YtWWV4TEh5S1J3WndndFRDUjdOWnB1QQ?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        },
-        {
-          "title": "Ian Rapoport on possibility if Colts to trade Jonathan Taylor | 'GMFB'",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQmVYRVlOckZxT25maGNzam9BR2pPRG56dkJCaFRIQnhSdjZEeGJIeEJYUnNCblYyTVd3NzE3SDF3TkpFeW84dVVfczI4UkRReFdjYUNvblVLS00zVW9NZ0JfYnl3ZDZqa241ZUMzZUVRRHQ1eG1qeEFwQmVOQTV3LVZ2MHYxMVo5TTNJdXdXN3pCdnVJ?oc=5",
-          "kind": "article",
-          "publisher": "NFL.com"
-        },
-        {
-          "title": "Why didn't the Colts trade Jonathan Taylor? RB spared in Indy's fire sale",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSTl5cGJ2WTVVbWFObEhZMTlnRE5oVzUtQnNFTEZqd1dIQmgzWUpMQ00wTkJoNGktZFhhdTNEbFVYUkFhNzZLd0JhS2psRmM3ZXJhRHRSdGNJd1BsR290YXhwR3FQTUloaGJzU3dRc2g2Z1pWelFfZTBRR2VyYXJnWmZnRVUtODRWMWNuVzJkNXF6dUhfM1g0VWhXeGsxTVoyZm9ZVUtNSGRlcE8zV1VDQ1Bmbk9HUkJt?oc=5",
-          "kind": "article",
-          "publisher": "USA Today"
-        },
-        {
-          "title": "Colts will take calculated risk, if Jonathan Taylor plays today",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSnpna1l5WDZvUW9QRlpySEZjbEhsTE95emlNMEc1Q1J0eFZjZEhSdDVZTjB1aUFwdHBaNkxDUzlISVZXd21PYzREaDJrR3BzbWdlSnRQRkxabEZRYWJSX0dfTGlFTlhtdUxCOUtpVVJwVjgxZW9FYnlsUU1wNXFNTEZFRmN1bno1N05ScEVtdjVYT0NjRzJYZDdKejV2RGUzdkJJUU9nbTRpSFV3WHpzUHMwMVRoMVYtU1FOU2NMNjJYZw?oc=5",
-          "kind": "article",
-          "publisher": "NBC Sports"
-        },
-        {
-          "title": "Colts keep RB Jonathan Taylor at NFL trade deadline, reportedly turned down offers of second-round picks",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOc1BycU44NmlXWFFVZmYxdUFBVUdINWtFR3BDMHZ6cFkyQ0lpVDdDaHYybHg0X0EwcktONTlUdTN3QXA3X1lrNk1fdkhqMjFicWRDUS10QmdoTElILTgzODlPT2M5M0J5THRzUDlCaVMyeXlOOExkQWFSZWEzR2R3LVhsdjM3eFdOU2lxNzBFMVY5TEg2NXh2UURMdkxGaVV4enJFcUJUQkR5R0lNRVl2bFJMTHNyeWx3Xy1QN1J5SDVGejV5MWx0X2tudm1CcjdjcFJDUG9xWQ?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Jonathan Taylor & Caden Curry | Colts vs. Cowboys, Locker Talk Week 9",
-          "url": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNWHlqZGk2VkZqSVowZnVVSTNHY0hodTAwbVRvQnp3N2FrZXRZSnpINEpweDkxWklwRVhzY2UtY3VuNFZEMUNla3VyTlBpWWx0dlZ4ZkFBZS1FQ2RmODFLVmlORTktbzVNZDdSYmdrU0V6U2tOQmJvWUhKSzZxalR0QkNYWF90WGtxQ2RlZkw1ZlZwSm5FTXUwQ2lneVRHbDlLOVlNQlp2WDh2M3R4RDJLcWc0TDlBSzUyb0dzLUhLVUs2QTNCMlZCUXIzWEpNTW1OUXBGV3dKMGJEVDBkLVBZeXlpQldRUTRzV0M2VE5NaFplYmVZemowSzRTSlBnREk1UzJMN29UNWlKS3VUWGhLS0oyOWRIcHNfSF9OUFRaVnpIQXZHM1hJRDA5MV9UUFd4MWJOWVF2a2hQYlRw?oc=5",
-          "kind": "article",
-          "publisher": "Colts.com"
-        },
-        {
-          "title": "Giants pull their Jonathan Taylor offer in latest NFL trade deadline twist",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZjVMMUdsOHdfRTVkOWJYNHEzYkdyUlZCTENtLXlLVHdfS0o1T1NTMWRFZkF3dWxKeVNWZ3ZHa2lSQlZ4T0VrRHdZd0c0QkRMcW5INmQ0ejZkMHhDSG5CZURtOXAyVHRQN1pFczlCMUZsSXp3eGx4d2t2RHVfNEdsc0VKYXUzOENzM0E?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Colts announce RB Jonathan Taylor (ankle) will return to practice on Wednesday",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdjF4b3JHb3hKOUZFdTg2eVlVVW1hRnRHM2RTRjNNeUxvWkUyX2N5ZHVMeTRJUkZZUjYwNjVST1ViY19KUUotNzVwUXdlVnIxOE5aSVlzX18yQTVLeUdxbjNMV0x4dWEza3NDWFRpeGM1WEpsNzgxYWt1d2p5Skh0Y2s5azNtWGxWTG5RT0VORUM4WmhTdXpycTJ0RWhSTnBm?oc=5",
-          "kind": "article",
-          "publisher": "NFL.com"
-        },
-        {
-          "title": "Colts RB Jonathan Taylor (ankle) 'definitely feeling better this week'",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTTJoXzgxa0lMSHl4T1hiaTdTWkRSQ0kzVHVUcU0wajJRc3h1N3RMOFhJY0EyaWlBXzV2V2ZwRlJTZ1UzdDJaaG4zZXRtUHUzXzduYUQzTV8zejdmYkJCSnR3T1ltQUtkYkM3Rm1NMjQ5a3FjWlhSUkF1S1lSbU9OaXg0RVNWMTFCekFGY1M0U2NWZXF2UVE?oc=5",
-          "kind": "article",
-          "publisher": "NFL.com"
         }
       ]
     },
@@ -111723,131 +111723,6 @@
       ]
     },
     {
-      "headline": "NFL news roundup: Cowboys place DaRon Bland (ankle) on IR; Steelers activate Roman Wilson",
-      "slug": "steelers-activate-wr-roman-wilson-off-ir-eagles-9f79b792",
-      "blurb": "Among NFL transactions: Activated *Panthers CB Mike Jackson *Steelers WR Roman Wilson Placed on IR *Eagles WR Dontayvion Wicks *Eagles\u2026",
-      "summary": "Among NFL transactions: Activated *Panthers CB Mike Jackson *Steelers WR Roman Wilson Placed on IR *Eagles WR Dontayvion Wicks *Eagles LB Zack Baun *Titans RB Tyjae Spears *Lions C Cade Mays Designated to return to practice *Rams DT Kobie T X The Steelers have activated wide receiver Roman Wilson from injured reserve ahead of Sunday's game against the Eagles. Wide receiver Roman Wilson will be back in the Steelers' lineup for Sunday's game against the Eagles. Aggregated from X, Google News, ESPN NFL, ProFootball Talk on NBC Sports, SB Nation and 6 more.",
-      "category": "roster",
-      "updated": "2026-11-22T01:07:58Z",
-      "url": "https://ballkeep.com/news/steelers-activate-wr-roman-wilson-off-ir-eagles-9f79b792.html",
-      "players": [
-        {
-          "key": "dontayvion wicks",
-          "name": "Dontayvion Wicks",
-          "slug": "dontayvion-wicks",
-          "pos": "WR",
-          "team": "PHI"
-        },
-        {
-          "key": "tyjae spears",
-          "name": "Tyjae Spears",
-          "slug": "tyjae-spears",
-          "pos": "RB",
-          "team": "TEN"
-        },
-        {
-          "key": "roman wilson",
-          "name": "Roman Wilson",
-          "slug": "roman-wilson",
-          "pos": "WR",
-          "team": "PIT"
-        },
-        {
-          "key": "michael pittman",
-          "name": "Michael Pittman",
-          "slug": "michael-pittman",
-          "pos": "WR",
-          "team": "PIT"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Steelers activate WR Wilson off IR for Eagles game",
-          "url": "https://www.espn.com/nfl/story/_/id/50552701/sources-steelers-activate-wr-roman-wilson-ir-eagles-game",
-          "kind": "article",
-          "publisher": "ESPN NFL"
-        },
-        {
-          "title": "Steelers activate WR Roman Wilson",
-          "url": "https://sports.yahoo.com/articles/steelers-activate-wr-roman-wilson-210058510.html",
-          "kind": "article",
-          "publisher": "ProFootball Talk on NBC Sports"
-        },
-        {
-          "title": "Steelers activate WR Roman Wilson ahead of Eagles matchup",
-          "url": "https://sports.yahoo.com/articles/steelers-activate-wr-roman-wilson-201249844.html",
-          "kind": "article",
-          "publisher": "SB Nation"
-        },
-        {
-          "title": "Steelers activate WR Roman Wilson",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/steelers-activate-wr-roman-wilson",
-          "kind": "article",
-          "publisher": "PFT feed"
-        },
-        {
-          "title": "NFL news roundup: Cowboys place DaRon Bland (ankle) on IR; Steelers activate Roman Wilson",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNY2xJdjV0clhJdXlydk9uYlpOcHlpU2ZUTEhPTjJOdXFVU0FGNnhOeUNqLTZkcS04cXBYYTZoRFRNMkRlZ25QUGZIbTh0WVhaSFhtUC1xZUdDUTEySWVVd3RNaGY0aXdaRXRvUmoybVhkQVVjYmR0eERWLVVZbTZmRUMxNS1lVnc3OEFEZw?oc=5",
-          "kind": "article",
-          "publisher": "NFL.com"
-        },
-        {
-          "title": "Steelers activate WR Roman Wilson off IR for Eagles game",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNR1RtQl9hQUtseXVoWWJHLTJLN1pyZG9QazVJcFhsdVRtSFRsajdlQkppYUVzV3RwaUxvMWg0SFAyWVFiTVYxRTBlUGJldmxqeFMtVG1mWW44NkhzNmVRek05Mm1TSGdRSlNwYk5ma0F5X1BQODRsOFJ5Mkoxd0lQUnNYaGxqR3M5aVJHRUhGaUVPU0tETktXTDMtQl91TlFaYUVB?oc=5",
-          "kind": "article",
-          "publisher": "ESPN"
-        },
-        {
-          "title": "Steelers activate WR Roman Wilson from IR ahead of Eagles game",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY2ExRkx6blJJa0RDNVVaM1NzbjE0R3Znd01GX1JyZTdQMlphOUMtQVBXbWp1MTNuUHVSNVBOc3MxYTNEWlY5bDJUSUtHVnRTQ0l4YnQ2TFB5U0RWM1MzSGNXYkxBMnlCeV9fREZicFp0eERFRndYbFJNVzlQNFBjMmZ1cHRZLTRsWkE?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Steelers activate WR Roman Wilson off IR for Eagles game #Steelers #NFL https://t.co/oh7a5KqKHR - X",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBfNTJsMWd6Y1o1LUU2RVZpNW9uNHJ4NUYwT0FYNHFQUGxFYWhpbjFQN054WnMzSHVTOU50WTNUMXR1d19tUS1VZ0w1Und2VXQxa181UzM0S2xLU25yVi1tdHRPcUE?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        },
-        {
-          "title": "Roman Wilson activated from Injured Reserve",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMHhhTXFPMFRpOEpueGljWHBoZExQTFgtbFhFcWwzbHNQQ2J0TmhXeTZtS3F6c2NJbE5OZklINnpWbEpJb3gwYUU4VkQ4dmpRUzlEOG9pTVQ3cExXcG9LVkREVnpycHRwb0IzOWdCcnQyZzYzX2RKVEFTczhJZHhydWloV3Judw?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Roman Wilson Set to Come Off Injured Reserve",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSHRLc2FBanhjYjUwaHpJOGxFMDh2TjdJbWx4SXVjM0s2ZmJCR1hIQXZsVUtSQmFQTFR2bTQtdnNxNFcxYzdnamZiUm05Q3hJX0xOY1FuMFZhNTdDMENiU0hKckg3UzEwSVlqNWkxd21zcVhuWXZuTHJKeEEyRUdqZ1czWnZqRHpybm0teWFQYXkwOXEtLUE?oc=5",
-          "kind": "article",
-          "publisher": "RotoBaller"
-        },
-        {
-          "title": "Roman Wilson Injury: Activated from IR",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTE1IU3NubXV5LXB0cEhRNTI2NTVmYlQxUjdITW1hb2dDQUdOMXR1QVlvRDN4STd2YjJ4OS02SXpBYlp3UUdfdnp5Qm1PQ1FJTVdsZ2FEbko5czV6cV9Hdk02a3pNSzYxVHFuQ3l0Rm9IaEZtWWhXN01GaTJ0ZFNUMnZadmRkcEYxX0wtVDZ6UDlxZw?oc=5",
-          "kind": "article",
-          "publisher": "RotoWire"
-        },
-        {
-          "title": "Roman Wilson (hand) officially activated from IR. Michael Pittman Jr. (foot) officially not activated. - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBVNzZEeVdlVkk0NkllSDVCWExFdUFVODNnTlZadmZ4RzZHT3ZNWTRkNGhmZFF4SEtTb1JtQ0VkeVdjTlJ2OFdPNHJ1R2lHZ3JoNEtTOG5zUnVFQmpRdHdzLTB3?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        },
-        {
-          "title": "The Steelers have activated WR Roman Wilson from the Reserve/Injured List to the Active Roster, elevated WR Max Hurleman and OL Doug Nester to the Active/Inactive Roster and signed LB KJ Henry to the Active Roster. #Steelers #NFL - X",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBtNTRLeVdNOFhxR1Y4RzN6ZWpUUmVzSVVycDhOTzJmSWZXR1dvcHNjSXpXS3FQM2N2N3VnVXJaTE1Hb3RWaVFLVkZHU0U1aDg2TnYyNnNONy1ZWm5laXBQOXlqYk8?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        },
-        {
-          "title": "Among NFL transactions: Activated *Panthers CB Mike Jackson *Steelers WR Roman Wilson Placed on IR *Eagles WR Dontayvion Wicks *Eagles LB Zack Baun *Titans RB Tyjae Spears *Lions C Cade Mays Designated to return to practice *Rams DT Kobie T - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhclE0aTRrZ3lac1VsanZVRzVzUDBJV241bm9vRl96SjM5Q3dYVGt0MUlTcUhuVFpYMk8yV3dFUVd2OGEwcXZFZ1BQSFUzMks3RzJlRUc5QThtNXZBUWFJZUFR?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        }
-      ]
-    },
-    {
       "headline": "Major Alec Pierce Injury Update Revealed in New NFL Rumors After Daniel Jones Cut by Colts",
       "slug": "major-alec-pierce-injury-revealed-new-rumors-daniel-d09839d7",
       "blurb": "The Colts are the WORST-run franchise in the NFL.",
@@ -112040,6 +111915,131 @@
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPREx4N3h3aWRTYWREZDhsOGp0T0VSdEJtM3dNalFJZktoM2Q1SVRLaFhvY1kzLXJSR2l1aldoMkYybnVNYk41V0JtM0gyVlBPSlRHTFlCRXlWaUNtWTlmdG14WEdUVTAtM25OY1ZhaFo3TTNYT3ZoT0lteXpYdFU0SF9neU1vTDQ0LTgxd2szaw?oc=5",
           "kind": "article",
           "publisher": "Fantasy Footballers Podcast"
+        }
+      ]
+    },
+    {
+      "headline": "NFL news roundup: Cowboys place DaRon Bland (ankle) on IR; Steelers activate Roman Wilson",
+      "slug": "steelers-activate-wr-roman-wilson-off-ir-eagles-9f79b792",
+      "blurb": "Among NFL transactions: Activated *Panthers CB Mike Jackson *Steelers WR Roman Wilson Placed on IR *Eagles WR Dontayvion Wicks *Eagles\u2026",
+      "summary": "Among NFL transactions: Activated *Panthers CB Mike Jackson *Steelers WR Roman Wilson Placed on IR *Eagles WR Dontayvion Wicks *Eagles LB Zack Baun *Titans RB Tyjae Spears *Lions C Cade Mays Designated to return to practice *Rams DT Kobie T X The Steelers have activated wide receiver Roman Wilson from injured reserve ahead of Sunday's game against the Eagles. Wide receiver Roman Wilson will be back in the Steelers' lineup for Sunday's game against the Eagles. Aggregated from X, Google News, ESPN NFL, ProFootball Talk on NBC Sports, SB Nation and 6 more.",
+      "category": "roster",
+      "updated": "2026-11-22T01:07:58Z",
+      "url": "https://ballkeep.com/news/steelers-activate-wr-roman-wilson-off-ir-eagles-9f79b792.html",
+      "players": [
+        {
+          "key": "dontayvion wicks",
+          "name": "Dontayvion Wicks",
+          "slug": "dontayvion-wicks",
+          "pos": "WR",
+          "team": "PHI"
+        },
+        {
+          "key": "tyjae spears",
+          "name": "Tyjae Spears",
+          "slug": "tyjae-spears",
+          "pos": "RB",
+          "team": "TEN"
+        },
+        {
+          "key": "roman wilson",
+          "name": "Roman Wilson",
+          "slug": "roman-wilson",
+          "pos": "WR",
+          "team": "PIT"
+        },
+        {
+          "key": "michael pittman",
+          "name": "Michael Pittman",
+          "slug": "michael-pittman",
+          "pos": "WR",
+          "team": "PIT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Steelers activate WR Wilson off IR for Eagles game",
+          "url": "https://www.espn.com/nfl/story/_/id/50552701/sources-steelers-activate-wr-roman-wilson-ir-eagles-game",
+          "kind": "article",
+          "publisher": "ESPN NFL"
+        },
+        {
+          "title": "Steelers activate WR Roman Wilson",
+          "url": "https://sports.yahoo.com/articles/steelers-activate-wr-roman-wilson-210058510.html",
+          "kind": "article",
+          "publisher": "ProFootball Talk on NBC Sports"
+        },
+        {
+          "title": "Steelers activate WR Roman Wilson ahead of Eagles matchup",
+          "url": "https://sports.yahoo.com/articles/steelers-activate-wr-roman-wilson-201249844.html",
+          "kind": "article",
+          "publisher": "SB Nation"
+        },
+        {
+          "title": "Steelers activate WR Roman Wilson",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/steelers-activate-wr-roman-wilson",
+          "kind": "article",
+          "publisher": "PFT feed"
+        },
+        {
+          "title": "NFL news roundup: Cowboys place DaRon Bland (ankle) on IR; Steelers activate Roman Wilson",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNY2xJdjV0clhJdXlydk9uYlpOcHlpU2ZUTEhPTjJOdXFVU0FGNnhOeUNqLTZkcS04cXBYYTZoRFRNMkRlZ25QUGZIbTh0WVhaSFhtUC1xZUdDUTEySWVVd3RNaGY0aXdaRXRvUmoybVhkQVVjYmR0eERWLVVZbTZmRUMxNS1lVnc3OEFEZw?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        },
+        {
+          "title": "Steelers activate WR Roman Wilson off IR for Eagles game",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNR1RtQl9hQUtseXVoWWJHLTJLN1pyZG9QazVJcFhsdVRtSFRsajdlQkppYUVzV3RwaUxvMWg0SFAyWVFiTVYxRTBlUGJldmxqeFMtVG1mWW44NkhzNmVRek05Mm1TSGdRSlNwYk5ma0F5X1BQODRsOFJ5Mkoxd0lQUnNYaGxqR3M5aVJHRUhGaUVPU0tETktXTDMtQl91TlFaYUVB?oc=5",
+          "kind": "article",
+          "publisher": "ESPN"
+        },
+        {
+          "title": "Steelers activate WR Roman Wilson from IR ahead of Eagles game",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY2ExRkx6blJJa0RDNVVaM1NzbjE0R3Znd01GX1JyZTdQMlphOUMtQVBXbWp1MTNuUHVSNVBOc3MxYTNEWlY5bDJUSUtHVnRTQ0l4YnQ2TFB5U0RWM1MzSGNXYkxBMnlCeV9fREZicFp0eERFRndYbFJNVzlQNFBjMmZ1cHRZLTRsWkE?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Steelers activate WR Roman Wilson off IR for Eagles game #Steelers #NFL https://t.co/oh7a5KqKHR - X",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBfNTJsMWd6Y1o1LUU2RVZpNW9uNHJ4NUYwT0FYNHFQUGxFYWhpbjFQN054WnMzSHVTOU50WTNUMXR1d19tUS1VZ0w1Und2VXQxa181UzM0S2xLU25yVi1tdHRPcUE?oc=5",
+          "kind": "article",
+          "publisher": "X"
+        },
+        {
+          "title": "Roman Wilson activated from Injured Reserve",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMHhhTXFPMFRpOEpueGljWHBoZExQTFgtbFhFcWwzbHNQQ2J0TmhXeTZtS3F6c2NJbE5OZklINnpWbEpJb3gwYUU4VkQ4dmpRUzlEOG9pTVQ3cExXcG9LVkREVnpycHRwb0IzOWdCcnQyZzYzX2RKVEFTczhJZHhydWloV3Judw?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Roman Wilson Set to Come Off Injured Reserve",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSHRLc2FBanhjYjUwaHpJOGxFMDh2TjdJbWx4SXVjM0s2ZmJCR1hIQXZsVUtSQmFQTFR2bTQtdnNxNFcxYzdnamZiUm05Q3hJX0xOY1FuMFZhNTdDMENiU0hKckg3UzEwSVlqNWkxd21zcVhuWXZuTHJKeEEyRUdqZ1czWnZqRHpybm0teWFQYXkwOXEtLUE?oc=5",
+          "kind": "article",
+          "publisher": "RotoBaller"
+        },
+        {
+          "title": "Roman Wilson Injury: Activated from IR",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTE1IU3NubXV5LXB0cEhRNTI2NTVmYlQxUjdITW1hb2dDQUdOMXR1QVlvRDN4STd2YjJ4OS02SXpBYlp3UUdfdnp5Qm1PQ1FJTVdsZ2FEbko5czV6cV9Hdk02a3pNSzYxVHFuQ3l0Rm9IaEZtWWhXN01GaTJ0ZFNUMnZadmRkcEYxX0wtVDZ6UDlxZw?oc=5",
+          "kind": "article",
+          "publisher": "RotoWire"
+        },
+        {
+          "title": "Roman Wilson (hand) officially activated from IR. Michael Pittman Jr. (foot) officially not activated. - X",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBVNzZEeVdlVkk0NkllSDVCWExFdUFVODNnTlZadmZ4RzZHT3ZNWTRkNGhmZFF4SEtTb1JtQ0VkeVdjTlJ2OFdPNHJ1R2lHZ3JoNEtTOG5zUnVFQmpRdHdzLTB3?oc=5",
+          "kind": "article",
+          "publisher": "X"
+        },
+        {
+          "title": "The Steelers have activated WR Roman Wilson from the Reserve/Injured List to the Active Roster, elevated WR Max Hurleman and OL Doug Nester to the Active/Inactive Roster and signed LB KJ Henry to the Active Roster. #Steelers #NFL - X",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBtNTRLeVdNOFhxR1Y4RzN6ZWpUUmVzSVVycDhOTzJmSWZXR1dvcHNjSXpXS3FQM2N2N3VnVXJaTE1Hb3RWaVFLVkZHU0U1aDg2TnYyNnNONy1ZWm5laXBQOXlqYk8?oc=5",
+          "kind": "article",
+          "publisher": "X"
+        },
+        {
+          "title": "Among NFL transactions: Activated *Panthers CB Mike Jackson *Steelers WR Roman Wilson Placed on IR *Eagles WR Dontayvion Wicks *Eagles LB Zack Baun *Titans RB Tyjae Spears *Lions C Cade Mays Designated to return to practice *Rams DT Kobie T - X",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBhclE0aTRrZ3lac1VsanZVRzVzUDBJV241bm9vRl96SjM5Q3dYVGt0MUlTcUhuVFpYMk8yV3dFUVd2OGEwcXZFZ1BQSFUzMks3RzJlRUc5QThtNXZBUWFJZUFR?oc=5",
+          "kind": "article",
+          "publisher": "X"
         }
       ]
     },
@@ -112250,6 +112250,72 @@
       ]
     },
     {
+      "headline": "Eagles injury update: Offensive reinforcements return after bye week",
+      "slug": "eagles-injury-offensive-reinforcements-return-bye-1883d286",
+      "blurb": "Both DeVonta Smith and Dontayvion Wicks returned to Eagles practice on Wednesday after the bye week.",
+      "summary": "Both DeVonta Smith and Dontayvion Wicks returned to Eagles practice on Wednesday after the bye week. Board reading of NBC Sports Philadelphia.",
+      "category": "injury",
+      "updated": "2026-11-23T07:00:00Z",
+      "url": "https://ballkeep.com/news/eagles-injury-offensive-reinforcements-return-bye-1883d286.html",
+      "players": [
+        {
+          "key": "dontayvion wicks",
+          "name": "Dontayvion Wicks",
+          "slug": "dontayvion-wicks",
+          "pos": "WR",
+          "team": "PHI"
+        },
+        {
+          "key": "devonta smith",
+          "name": "DeVonta Smith",
+          "slug": "devonta-smith",
+          "pos": "WR",
+          "team": "PHI"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Eagles injury update: Offensive reinforcements return after bye week",
+          "url": "https://sports.yahoo.com/articles/eagles-injury-offensive-reinforcements-return-154934840.html",
+          "kind": "article",
+          "publisher": "NBC Sports Philadelphia"
+        }
+      ]
+    },
+    {
+      "headline": "Steelers gave DK Metcalf $150 million, traded George Pickens. Now they're paying for both decisions",
+      "slug": "steelers-gave-dk-metcalf-150-million-traded-george-51cc94ed",
+      "blurb": "The Steelers wanted a more dependable receiver; instead, Metcalf has delivered disappointing production and familiar distractions.",
+      "summary": "George Pickens and DK Metcalf: The Steelers wanted a more dependable receiver; instead, Metcalf has delivered disappointing production and familiar distractions. Board reading of CBS NFL.",
+      "category": "trade",
+      "updated": "2026-11-23T11:00:48Z",
+      "url": "https://ballkeep.com/news/steelers-gave-dk-metcalf-150-million-traded-george-51cc94ed.html",
+      "players": [
+        {
+          "key": "george pickens",
+          "name": "George Pickens",
+          "slug": "george-pickens",
+          "pos": "WR",
+          "team": "DAL"
+        },
+        {
+          "key": "dk metcalf",
+          "name": "DK Metcalf",
+          "slug": "dk-metcalf",
+          "pos": "WR",
+          "team": "PIT"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Steelers gave DK Metcalf $150 million, traded George Pickens. Now they're paying for both decisions",
+          "url": "https://www.cbssports.com/nfl/news/why-steelers-regretting-dk-metcalf-150-million-contract-trading-george-pickens/",
+          "kind": "article",
+          "publisher": "CBS NFL"
+        }
+      ]
+    },
+    {
       "headline": "Titans' Carnell Tate expected to face Cowboys after 2 games out, NFL Network reports",
       "slug": "titans-carnell-tate-full-practice-questionable-sunday-cc92f6b6",
       "blurb": "Tennessee Titans' Dealt Bad News From Carnell Tate Yahoo Sports",
@@ -112378,68 +112444,149 @@
       ]
     },
     {
-      "headline": "Eagles injury update: Offensive reinforcements return after bye week",
-      "slug": "eagles-injury-offensive-reinforcements-return-bye-1883d286",
-      "blurb": "Both DeVonta Smith and Dontayvion Wicks returned to Eagles practice on Wednesday after the bye week.",
-      "summary": "Both DeVonta Smith and Dontayvion Wicks returned to Eagles practice on Wednesday after the bye week. Board reading of NBC Sports Philadelphia.",
-      "category": "injury",
-      "updated": "2026-11-23T07:00:00Z",
-      "url": "https://ballkeep.com/news/eagles-injury-offensive-reinforcements-return-bye-1883d286.html",
+      "headline": "John Harbaugh on Giants' 'real football win' over Jaguars, Cam Skattebo, Abdul Carter's big game",
+      "slug": "john-harbaugh-giants-real-win-jaguars-cam-skattebo-850b5c3d",
+      "blurb": "John Harbaugh on Giants' 'real football win' over Jaguars, Cam Skattebo, Abdul Carter's big game YouTube",
+      "summary": "John Harbaugh on Giants' 'real football win' over Jaguars, Cam Skattebo, Abdul Carter's big game YouTube Postgame Interviews: John Harbaugh, Abdul Carter, Malik Nabers, Cam Skattebo, J.J. Board reading of YouTube.",
+      "category": "wire",
+      "updated": "2026-11-23T03:51:16Z",
+      "url": "https://ballkeep.com/news/john-harbaugh-giants-real-win-jaguars-cam-skattebo-850b5c3d.html",
       "players": [
         {
-          "key": "dontayvion wicks",
-          "name": "Dontayvion Wicks",
-          "slug": "dontayvion-wicks",
-          "pos": "WR",
-          "team": "PHI"
+          "key": "cam skattebo",
+          "name": "Cam Skattebo",
+          "slug": "cam-skattebo",
+          "pos": "RB",
+          "team": "NYG"
         },
         {
-          "key": "devonta smith",
-          "name": "DeVonta Smith",
-          "slug": "devonta-smith",
+          "key": "malik nabers",
+          "name": "Malik Nabers",
+          "slug": "malik-nabers",
           "pos": "WR",
-          "team": "PHI"
+          "team": "NYG"
+        },
+        {
+          "key": "j j mccarthy",
+          "name": "J.J. McCarthy",
+          "slug": "j-j-mccarthy",
+          "pos": "QB",
+          "team": "NYG"
         }
       ],
       "sources": [
         {
-          "title": "Eagles injury update: Offensive reinforcements return after bye week",
-          "url": "https://sports.yahoo.com/articles/eagles-injury-offensive-reinforcements-return-154934840.html",
-          "kind": "article",
-          "publisher": "NBC Sports Philadelphia"
+          "title": "John Harbaugh on Giants' 'real football win' over Jaguars, Cam Skattebo, Abdul Carter's big game",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEQTlHbF9MdGhQUUpJMzV2RzZhTE1TN2YxWVk0TEZVd3RnRHQ4WmljQ2c1SzZfNmZCOUxEYXg0ellOUHJVdEpRVmxoMDM5R3p5cG5oQld3?oc=5",
+          "kind": "video",
+          "publisher": "YouTube"
+        },
+        {
+          "title": "Postgame Interviews: John Harbaugh, Abdul Carter, Malik Nabers, Cam Skattebo, J.J. McCarthy",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5pRjJUM3dOQXI3LWdWdy14M2VKY005eWZpeE5yQVNHQkxHSGxfY3J5X3JDeFVnVjh0aG80ZXlKOHpfZnFldk1IR0d4NnVyVlFRc3ExaFBB?oc=5",
+          "kind": "video",
+          "publisher": "YouTube"
         }
       ]
     },
     {
-      "headline": "Steelers gave DK Metcalf $150 million, traded George Pickens. Now they're paying for both decisions",
-      "slug": "steelers-gave-dk-metcalf-150-million-traded-george-51cc94ed",
-      "blurb": "The Steelers wanted a more dependable receiver; instead, Metcalf has delivered disappointing production and familiar distractions.",
-      "summary": "George Pickens and DK Metcalf: The Steelers wanted a more dependable receiver; instead, Metcalf has delivered disappointing production and familiar distractions. Board reading of CBS NFL.",
-      "category": "trade",
-      "updated": "2026-11-23T11:00:48Z",
-      "url": "https://ballkeep.com/news/steelers-gave-dk-metcalf-150-million-traded-george-51cc94ed.html",
+      "headline": "Will Ladd McConkey play today? Injury update, fantasy advice for Chargers WR in Week 11",
+      "slug": "ladd-mcconkey-play-today-injury-advice-chargers-wr-0c72bc3f",
+      "blurb": "Final Injury Report for Jets-Chargers: Will Geno Smith, Ladd McConkey Play?",
+      "summary": "Final Injury Report for Jets-Chargers: Will Geno Smith, Ladd McConkey Play? Ladd McConkey Injury Update: Chargers WR\u2019s Week 11 Status Revealed Yahoo Sports Will Ladd McConkey play today? Board reading of Yahoo Sports.",
+      "category": "injury",
+      "updated": "2026-11-22T19:27:30Z",
+      "url": "https://ballkeep.com/news/ladd-mcconkey-play-today-injury-advice-chargers-wr-0c72bc3f.html",
       "players": [
         {
-          "key": "george pickens",
-          "name": "George Pickens",
-          "slug": "george-pickens",
+          "key": "ladd mcconkey",
+          "name": "Ladd McConkey",
+          "slug": "ladd-mcconkey",
           "pos": "WR",
-          "team": "DAL"
+          "team": "LAC"
         },
         {
-          "key": "dk metcalf",
-          "name": "DK Metcalf",
-          "slug": "dk-metcalf",
-          "pos": "WR",
-          "team": "PIT"
+          "key": "geno smith",
+          "name": "Geno Smith",
+          "slug": "geno-smith",
+          "pos": "QB",
+          "team": "NYJ"
         }
       ],
       "sources": [
         {
-          "title": "Steelers gave DK Metcalf $150 million, traded George Pickens. Now they're paying for both decisions",
-          "url": "https://www.cbssports.com/nfl/news/why-steelers-regretting-dk-metcalf-150-million-contract-trading-george-pickens/",
+          "title": "Final Injury Report for Jets-Chargers: Will Geno Smith, Ladd McConkey Play?",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRWw1RlgtNWtjdXVGaXdqX3ZIaWVERWNkV2t3VC1iRHRwWGs0cmE0OG1TMGpMXzJ0SVRKaHNFOC1IOVhObHRsZ21ROERsRlU4WkZBWXZmczQxNllCYWxJc2RDTFFwVHBIZVdTaElUbWJmTnRhcDh4c0FIVXlNc0s5ZndJeVVUZWJET3c?oc=5",
           "kind": "article",
-          "publisher": "CBS NFL"
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Ladd McConkey Injury Update: Chargers WR\u2019s Week 11 Status Revealed",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPakYxOFhWMVB4X2thaklUdDdKN1phQ0ZGODJTWENKMUhtQWtIbmZYVGVrbnc1SXZET25yc2ZMVXlYSDhPUjg4X1RxdXJVZGxXZlNRQ0Q4dXQ5cE4yYzViem1nOTRkX2EyejMySjlUTm1nVUJCcXhDdnlyb3pkVkVvNzVKNmVUZkh2?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Will Ladd McConkey play today? Injury update, fantasy advice for Chargers WR in Week 11",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOENEUzNCcXZVaWdob01WOEdYM2dZOXFhSTdOX2tiN25lcWIzNXZwbllNdVdvZG9LWkJyX1JnUm5sZmFIWE1xSWY0TktGQkZHci1TZkdnbThSMWEyU1FWam5JbmFvemlXS1RBM1c5RXJ0N2cwZTNCbDcwa2VGTm1HR0xpaWdPcEk?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "headline": "Sources: Mayfield dealing with plantar fasciitis, determined to keep playing",
+      "slug": "mayfield-dealing-plantar-fasciitis-determined-keep-playing-438666c5",
+      "blurb": "Baker Mayfield Injury Update: Buccaneers QB\u2019s Week 11 Status Revealed Yahoo Sports",
+      "summary": "Baker Mayfield Injury Update: Buccaneers QB\u2019s Week 11 Status Revealed Yahoo Sports Baker Mayfield is dealing with a painful case of plantar fasciitis, sources told NFL Network, an injury that the Bucs QB is determined to play through. Mayfield was listed as questionable due to a foot injury. Aggregated from Yahoo Sports, ESPN NFL, PFT feed, NFLTradeRumors.co, X.",
+      "category": "injury",
+      "updated": "2026-11-22T18:55:39Z",
+      "url": "https://ballkeep.com/news/mayfield-dealing-plantar-fasciitis-determined-keep-playing-438666c5.html",
+      "players": [
+        {
+          "key": "baker mayfield",
+          "name": "Baker Mayfield",
+          "slug": "baker-mayfield",
+          "pos": "QB",
+          "team": "TB"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Sources: Mayfield dealing with plantar fasciitis, determined to keep playing",
+          "url": "https://www.espn.com/nfl/story/_/id/50550285/sources-buccaneers-qb-baker-mayfield-plantar-fasciitis",
+          "kind": "article",
+          "publisher": "ESPN NFL"
+        },
+        {
+          "title": "Baker Mayfield is officially active against the Lions",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/baker-mayfield-is-officially-active-against-the-lions",
+          "kind": "article",
+          "publisher": "PFT feed"
+        },
+        {
+          "title": "Report: Baker Mayfield dealing with plantar fasciitis",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-baker-mayfield-dealing-with-plantar-fasciitis",
+          "kind": "article",
+          "publisher": "PFT feed"
+        },
+        {
+          "title": "Baker Mayfield Playing Through Plantar Fasciitis",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUS1FWU9WdHlKZGpWX21mX1pBRlh2ODl5SjB4RmhyaUc4VGZsRUhHekplR0RfV01XOWVVQzZfM3luaXFheDBKaS01WUJDXzVMajVmUlRSRDU5MUVaRnZRLWlLYWdQVnVmcXFicm4ydk4tTHJ2cVdHUkNHdUlITng1VA?oc=5",
+          "kind": "article",
+          "publisher": "NFLTradeRumors.co"
+        },
+        {
+          "title": "#Bucs starting QB Baker Mayfield will play today against the #Lions, per me and @MikeGarafolo, fighting off a foot injury that had him in a walking boot for several days. - X",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DbEJKOHdXaDNjV0hQaEdwOVBkeUthTEFhdkZNQ2VCcHJkWXk1QWRwckp4MDJBdmdMZU81cDFraGt3OTdPOXBzSGpWM1dmY2gwNVJwams2MmtVZENvc1E?oc=5",
+          "kind": "article",
+          "publisher": "X"
+        },
+        {
+          "title": "Baker Mayfield Injury Update: Buccaneers QB\u2019s Week 11 Status Revealed",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRF9PcHBMOUtVQnM4X1k5VEVRVmhUQVJsVy1LUURPN3M3OWlmbU5FNFJrbVVWUjIxTFN3SkNMTjhkSUphcmdWNEFsOFY5akpDWmdKbDZOSmdJTWV5Q2RiNkFmRTBqSGI1TzVVLWk2bDZVdHdzS3B6Vm1Cbm5hZnBaSlB5TjFuY2VEVm9HTQ?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
         }
       ]
     },
@@ -112604,153 +112751,6 @@
       ]
     },
     {
-      "headline": "John Harbaugh on Giants' 'real football win' over Jaguars, Cam Skattebo, Abdul Carter's big game",
-      "slug": "john-harbaugh-giants-real-win-jaguars-cam-skattebo-850b5c3d",
-      "blurb": "John Harbaugh on Giants' 'real football win' over Jaguars, Cam Skattebo, Abdul Carter's big game YouTube",
-      "summary": "John Harbaugh on Giants' 'real football win' over Jaguars, Cam Skattebo, Abdul Carter's big game YouTube Postgame Interviews: John Harbaugh, Abdul Carter, Malik Nabers, Cam Skattebo, J.J. Board reading of YouTube.",
-      "category": "wire",
-      "updated": "2026-11-23T03:51:16Z",
-      "url": "https://ballkeep.com/news/john-harbaugh-giants-real-win-jaguars-cam-skattebo-850b5c3d.html",
-      "players": [
-        {
-          "key": "cam skattebo",
-          "name": "Cam Skattebo",
-          "slug": "cam-skattebo",
-          "pos": "RB",
-          "team": "NYG"
-        },
-        {
-          "key": "malik nabers",
-          "name": "Malik Nabers",
-          "slug": "malik-nabers",
-          "pos": "WR",
-          "team": "NYG"
-        },
-        {
-          "key": "j j mccarthy",
-          "name": "J.J. McCarthy",
-          "slug": "j-j-mccarthy",
-          "pos": "QB",
-          "team": "NYG"
-        }
-      ],
-      "sources": [
-        {
-          "title": "John Harbaugh on Giants' 'real football win' over Jaguars, Cam Skattebo, Abdul Carter's big game",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEQTlHbF9MdGhQUUpJMzV2RzZhTE1TN2YxWVk0TEZVd3RnRHQ4WmljQ2c1SzZfNmZCOUxEYXg0ellOUHJVdEpRVmxoMDM5R3p5cG5oQld3?oc=5",
-          "kind": "video",
-          "publisher": "YouTube"
-        },
-        {
-          "title": "Postgame Interviews: John Harbaugh, Abdul Carter, Malik Nabers, Cam Skattebo, J.J. McCarthy",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5pRjJUM3dOQXI3LWdWdy14M2VKY005eWZpeE5yQVNHQkxHSGxfY3J5X3JDeFVnVjh0aG80ZXlKOHpfZnFldk1IR0d4NnVyVlFRc3ExaFBB?oc=5",
-          "kind": "video",
-          "publisher": "YouTube"
-        }
-      ]
-    },
-    {
-      "headline": "Will Ladd McConkey play today? Injury update, fantasy advice for Chargers WR in Week 11",
-      "slug": "ladd-mcconkey-play-today-injury-advice-chargers-wr-0c72bc3f",
-      "blurb": "Final Injury Report for Jets-Chargers: Will Geno Smith, Ladd McConkey Play?",
-      "summary": "Final Injury Report for Jets-Chargers: Will Geno Smith, Ladd McConkey Play? Ladd McConkey Injury Update: Chargers WR\u2019s Week 11 Status Revealed Yahoo Sports Will Ladd McConkey play today? Board reading of Yahoo Sports.",
-      "category": "injury",
-      "updated": "2026-11-22T19:27:30Z",
-      "url": "https://ballkeep.com/news/ladd-mcconkey-play-today-injury-advice-chargers-wr-0c72bc3f.html",
-      "players": [
-        {
-          "key": "ladd mcconkey",
-          "name": "Ladd McConkey",
-          "slug": "ladd-mcconkey",
-          "pos": "WR",
-          "team": "LAC"
-        },
-        {
-          "key": "geno smith",
-          "name": "Geno Smith",
-          "slug": "geno-smith",
-          "pos": "QB",
-          "team": "NYJ"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Final Injury Report for Jets-Chargers: Will Geno Smith, Ladd McConkey Play?",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRWw1RlgtNWtjdXVGaXdqX3ZIaWVERWNkV2t3VC1iRHRwWGs0cmE0OG1TMGpMXzJ0SVRKaHNFOC1IOVhObHRsZ21ROERsRlU4WkZBWXZmczQxNllCYWxJc2RDTFFwVHBIZVdTaElUbWJmTnRhcDh4c0FIVXlNc0s5ZndJeVVUZWJET3c?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Ladd McConkey Injury Update: Chargers WR\u2019s Week 11 Status Revealed",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPakYxOFhWMVB4X2thaklUdDdKN1phQ0ZGODJTWENKMUhtQWtIbmZYVGVrbnc1SXZET25yc2ZMVXlYSDhPUjg4X1RxdXJVZGxXZlNRQ0Q4dXQ5cE4yYzViem1nOTRkX2EyejMySjlUTm1nVUJCcXhDdnlyb3pkVkVvNzVKNmVUZkh2?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Will Ladd McConkey play today? Injury update, fantasy advice for Chargers WR in Week 11",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQOENEUzNCcXZVaWdob01WOEdYM2dZOXFhSTdOX2tiN25lcWIzNXZwbllNdVdvZG9LWkJyX1JnUm5sZmFIWE1xSWY0TktGQkZHci1TZkdnbThSMWEyU1FWam5JbmFvemlXS1RBM1c5RXJ0N2cwZTNCbDcwa2VGTm1HR0xpaWdPcEk?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "headline": "Sources: Mayfield dealing with plantar fasciitis, determined to keep playing",
-      "slug": "mayfield-dealing-plantar-fasciitis-determined-keep-playing-438666c5",
-      "blurb": "Baker Mayfield Injury Update: Buccaneers QB\u2019s Week 11 Status Revealed Yahoo Sports",
-      "summary": "Baker Mayfield Injury Update: Buccaneers QB\u2019s Week 11 Status Revealed Yahoo Sports Baker Mayfield is dealing with a painful case of plantar fasciitis, sources told NFL Network, an injury that the Bucs QB is determined to play through. Mayfield was listed as questionable due to a foot injury. Aggregated from Yahoo Sports, ESPN NFL, PFT feed, NFLTradeRumors.co, X.",
-      "category": "injury",
-      "updated": "2026-11-22T18:55:39Z",
-      "url": "https://ballkeep.com/news/mayfield-dealing-plantar-fasciitis-determined-keep-playing-438666c5.html",
-      "players": [
-        {
-          "key": "baker mayfield",
-          "name": "Baker Mayfield",
-          "slug": "baker-mayfield",
-          "pos": "QB",
-          "team": "TB"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Sources: Mayfield dealing with plantar fasciitis, determined to keep playing",
-          "url": "https://www.espn.com/nfl/story/_/id/50550285/sources-buccaneers-qb-baker-mayfield-plantar-fasciitis",
-          "kind": "article",
-          "publisher": "ESPN NFL"
-        },
-        {
-          "title": "Baker Mayfield is officially active against the Lions",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/baker-mayfield-is-officially-active-against-the-lions",
-          "kind": "article",
-          "publisher": "PFT feed"
-        },
-        {
-          "title": "Report: Baker Mayfield dealing with plantar fasciitis",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-baker-mayfield-dealing-with-plantar-fasciitis",
-          "kind": "article",
-          "publisher": "PFT feed"
-        },
-        {
-          "title": "Baker Mayfield Playing Through Plantar Fasciitis",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUS1FWU9WdHlKZGpWX21mX1pBRlh2ODl5SjB4RmhyaUc4VGZsRUhHekplR0RfV01XOWVVQzZfM3luaXFheDBKaS01WUJDXzVMajVmUlRSRDU5MUVaRnZRLWlLYWdQVnVmcXFicm4ydk4tTHJ2cVdHUkNHdUlITng1VA?oc=5",
-          "kind": "article",
-          "publisher": "NFLTradeRumors.co"
-        },
-        {
-          "title": "#Bucs starting QB Baker Mayfield will play today against the #Lions, per me and @MikeGarafolo, fighting off a foot injury that had him in a walking boot for several days. - X",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DbEJKOHdXaDNjV0hQaEdwOVBkeUthTEFhdkZNQ2VCcHJkWXk1QWRwckp4MDJBdmdMZU81cDFraGt3OTdPOXBzSGpWM1dmY2gwNVJwams2MmtVZENvc1E?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        },
-        {
-          "title": "Baker Mayfield Injury Update: Buccaneers QB\u2019s Week 11 Status Revealed",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRF9PcHBMOUtVQnM4X1k5VEVRVmhUQVJsVy1LUURPN3M3OWlmbU5FNFJrbVVWUjIxTFN3SkNMTjhkSUphcmdWNEFsOFY5akpDWmdKbDZOSmdJTWV5Q2RiNkFmRTBqSGI1TzVVLWk2bDZVdHdzS3B6Vm1Cbm5hZnBaSlB5TjFuY2VEVm9HTQ?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        }
-      ]
-    },
-    {
       "headline": "Jaguars lose third challenge on Parker Washington play that sure looked like a TD catch",
       "slug": "jaguars-lose-third-challenge-parker-washington-play-sure-f23bca4c",
       "blurb": "The Jaguars appeared to cut into the Giants' lead in the fourth quarter of their Week 11 game, but a controversial call negated the score.",
@@ -112795,6 +112795,38 @@
         {
           "title": "Officials deny Jaguars TD on sensational catch by Parker Washington",
           "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/officials-deny-jaguars-td-on-sensational-catch-by-parker-washington",
+          "kind": "article",
+          "publisher": "PFT feed"
+        }
+      ]
+    },
+    {
+      "headline": "Cam Skattebo flips: Giants RB celebrates game-clinching drive with backflip days after retiring it",
+      "slug": "cam-skattebo-flips-giants-rb-celebrates-clinching-drive-10aed609",
+      "blurb": "Skattebo said he'd retire his celebration in the wake of Aidan Hutchinson's injury",
+      "summary": "Cam Skattebo: Skattebo said he'd retire his celebration in the wake of Aidan Hutchinson's injury Cam Skattebo said during the week that he was retiring his celebratory backflip because he didn't want to risk a similar injury to the one suffered by Lions defensive end Aidan Hutchinson in Week 10, but the retirement proved to be a very brief one. Aggregated from CBS NFL, PFT feed.",
+      "category": "injury",
+      "updated": "2026-11-23T11:48:55Z",
+      "url": "https://ballkeep.com/news/cam-skattebo-flips-giants-rb-celebrates-clinching-drive-10aed609.html",
+      "players": [
+        {
+          "key": "cam skattebo",
+          "name": "Cam Skattebo",
+          "slug": "cam-skattebo",
+          "pos": "RB",
+          "team": "NYG"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Cam Skattebo flips: Giants RB celebrates game-clinching drive with backflip days after retiring it",
+          "url": "https://www.cbssports.com/nfl/news/cam-skattebo-giants-celebrates-game-clinching-drive-with-backflip/",
+          "kind": "article",
+          "publisher": "CBS NFL"
+        },
+        {
+          "title": "Cam Skattebo on unretiring the backflip: When energy calls for it, it calls for it",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-on-unretiring-the-backflip-when-energy-calls-for-it-it-calls-for-it",
           "kind": "article",
           "publisher": "PFT feed"
         }
@@ -112887,34 +112919,44 @@
       ]
     },
     {
-      "headline": "Cam Skattebo flips: Giants RB celebrates game-clinching drive with backflip days after retiring it",
-      "slug": "cam-skattebo-flips-giants-rb-celebrates-clinching-drive-10aed609",
-      "blurb": "Skattebo said he'd retire his celebration in the wake of Aidan Hutchinson's injury",
-      "summary": "Cam Skattebo: Skattebo said he'd retire his celebration in the wake of Aidan Hutchinson's injury Cam Skattebo said during the week that he was retiring his celebratory backflip because he didn't want to risk a similar injury to the one suffered by Lions defensive end Aidan Hutchinson in Week 10, but the retirement proved to be a very brief one. Aggregated from CBS NFL, PFT feed.",
+      "headline": "49ers lose right tackle Colton McKivitz for season with fractured, dislocated ankle",
+      "slug": "49ers-lose-right-tackle-colton-mckivitz-fractured-dislocated-9cc8f304",
+      "blurb": "The 49ers lost starting right tackle Colton McKivitz for the season on Sunday night with a serious ankle injury.",
+      "summary": "The 49ers lost starting right tackle Colton McKivitz for the season on Sunday night with a serious ankle injury. 49ers' Colton McKivitz suffers season-ending ankle injury ESPN 49ers OT Colton McKivitz Suffers Gruesome Ankle Injury vs. Aggregated from PFT feed, ESPN, Yahoo Sports, NFLTradeRumors.co, X and 1 more.",
       "category": "injury",
-      "updated": "2026-11-23T11:48:55Z",
-      "url": "https://ballkeep.com/news/cam-skattebo-flips-giants-rb-celebrates-clinching-drive-10aed609.html",
-      "players": [
-        {
-          "key": "cam skattebo",
-          "name": "Cam Skattebo",
-          "slug": "cam-skattebo",
-          "pos": "RB",
-          "team": "NYG"
-        }
-      ],
+      "updated": "2026-11-23T08:56:19Z",
+      "url": "https://ballkeep.com/news/49ers-lose-right-tackle-colton-mckivitz-fractured-dislocated-9cc8f304.html",
+      "players": [],
       "sources": [
         {
-          "title": "Cam Skattebo flips: Giants RB celebrates game-clinching drive with backflip days after retiring it",
-          "url": "https://www.cbssports.com/nfl/news/cam-skattebo-giants-celebrates-game-clinching-drive-with-backflip/",
-          "kind": "article",
-          "publisher": "CBS NFL"
-        },
-        {
-          "title": "Cam Skattebo on unretiring the backflip: When energy calls for it, it calls for it",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-on-unretiring-the-backflip-when-energy-calls-for-it-it-calls-for-it",
+          "title": "49ers lose right tackle Colton McKivitz for season with fractured, dislocated ankle",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-lose-right-tackle-colton-mckivitz-for-season-with-fractured-dislocated-ankle",
           "kind": "article",
           "publisher": "PFT feed"
+        },
+        {
+          "title": "49ers' Colton McKivitz suffers season-ending ankle injury",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQzI1bXl1anVYZEZSb0ROd0w0Sjc2Smp6eU1ENGZNX243eFFoWDdJYXloX3hXR0pCY210ZG1XWV9hTU10UFlzaGdtLTBWODBZX0xNcG9oWkV2TGJIWFl5aE1ISUpXVjBNWkdMdXhRWmRSZExrbm1JdWRUWmd0MmctWFhTTVhpdHpkZmhxWGRjS05uNldNZExKa2tlYlV0S3JwWmREMnFqLUtNMmc?oc=5",
+          "kind": "article",
+          "publisher": "ESPN"
+        },
+        {
+          "title": "49ers OT Colton McKivitz Suffers Gruesome Ankle Injury vs. Vikings",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSVQ5Q1lONmQ4OU55Zi1xQ0FQRGpHWjZERTJoXzdiMXVVbE1wTnVCM2FaOF9TdTlRV0lFR0hGRGhkN2RvZF9DYXEwUHplQVlENGtkUjJGTXdWLUF6NVRjSk9Hd1RyN0xNenE2dl9tRFlGMGxLeUZTb1A1bUhpLW5GTHhDRkp2UHdI?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "49ers RT Colton McKivitz Carted Off With Aircast",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOakFTQnZnX21IdlRBaUYzZmFNUk1xWWlpSzVhUHFLRV9sM0JzOUtTSXktSkJjNk01MWh5M1Boekx2dEZUVEx4UlJZSEMzQ1FPWmltZ2N4NVU0MUN4a2hXLUctTVJ1aFNQYlJwTGRCbFRTUjJYMlNYOVowNWpTQUJTNDBn?oc=5",
+          "kind": "article",
+          "publisher": "NFLTradeRumors.co"
+        },
+        {
+          "title": "Colton McKivitz just snapped his ankle and Trent Williams knows it. \ud83d\ude4f #49ers #NFL - X",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5acHlzcWJTNnBKZHlWQkRZeGZQelNFSTNzYkhpVTJCQ0FPTmZzTENwWnRlWjQ3YVdrbmlFQmd2MzRnTkRCOUVKcUZTOThmOWxMNW5aNzY3VFRRQkRjRTJLUEhvckI?oc=5",
+          "kind": "article",
+          "publisher": "X"
         }
       ]
     },
@@ -113002,6 +113044,103 @@
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeTNweHI3YnRnVndDQ0o0b2M1bnN5dzNiMmtxQkFPNlRVSWNyS1QtMkNMcEc2TXNVOFoxY2RTTng5TzBvMWhuVUxMNFJVd2o2NUV4VHFoTVJkUXd4djlBc3FJSXVROTF2ODdCNEZGT0gxSUJhdTV5SkpPbENXbUt4NmxhZHp0ZDYwMlpHdXU2UWN6Y1RCOXRUdWxrWXI5U2NqNFNDVmdiMFFiSDRiaDZFb2pWU2pWX1E?oc=5",
           "kind": "article",
           "publisher": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "headline": "T.J. Hockenson: Six receptions in return",
+      "slug": "t-j-hockenson-six-receptions-return-abaf3d97",
+      "blurb": "Hockenson (wrist) caught six of seven targets for 55 yards in Sunday's 35-10 loss to the 49ers.",
+      "summary": "T.J. Hockenson: Hockenson (wrist) caught six of seven targets for 55 yards in Sunday's 35-10 loss to the 49ers. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NFL.",
+      "category": "injury",
+      "updated": "2026-11-23T12:59:33Z",
+      "url": "https://ballkeep.com/news/t-j-hockenson-six-receptions-return-abaf3d97.html",
+      "players": [
+        {
+          "key": "t j hockenson",
+          "name": "T.J. Hockenson",
+          "slug": "t-j-hockenson",
+          "pos": "TE",
+          "team": "MIN"
+        }
+      ],
+      "sources": [
+        {
+          "title": "T.J. Hockenson: Six receptions in return",
+          "url": "https://www.rotowire.com//football/player/tj-hockenson-13610",
+          "kind": "article",
+          "publisher": "RotoWire NFL"
+        }
+      ]
+    },
+    {
+      "headline": "Mike Vrabel confirms A.J. Brown\u2019s status for the Chargers game",
+      "slug": "mike-vrabel-confirms-j-brown-s-status-chargers-7b0a35b4",
+      "blurb": "The Patriots wide receiver is dealing with a hamstring injury.",
+      "summary": "A.J. Brown: The Patriots wide receiver is dealing with a hamstring injury. Board reading of SB Nation.",
+      "category": "injury",
+      "updated": "2026-11-23T12:36:27Z",
+      "url": "https://ballkeep.com/news/mike-vrabel-confirms-j-brown-s-status-chargers-7b0a35b4.html",
+      "players": [
+        {
+          "key": "a j brown",
+          "name": "A.J. Brown",
+          "slug": "a-j-brown",
+          "pos": "WR",
+          "team": "NE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mike Vrabel confirms A.J. Brown\u2019s status for the Chargers game",
+          "url": "https://sports.yahoo.com/articles/mike-vrabel-confirms-j-brown-123627666.html",
+          "kind": "article",
+          "publisher": "SB Nation"
+        }
+      ]
+    },
+    {
+      "headline": "Patriots Could Sign Daniel Jones for Very Doable Sum Amid Drake Maye Injury",
+      "slug": "patriots-could-sign-daniel-jones-very-doable-sum-37224935",
+      "blurb": "From @NFLGameDay Morning: The #Patriots lost QB Drake Maye for at least six weeks and possibly longer; Plus, former #Colts QB Daniel\u2026",
+      "summary": "From @NFLGameDay Morning: The #Patriots lost QB Drake Maye for at least six weeks and possibly longer; Plus, former #Colts QB Daniel Jones is expected to wait to sign -- in the event there is a QB injury from a playoff-ready team. Patriots Could Sign Daniel Jones for Very Doable Sum Amid Drake Maye Injury Yahoo Sports Patriots should take flyer on Daniel Jones amid Drake Maye injury news Yahoo Sports Aggregated from X, Google News, Yahoo Sports.",
+      "category": "roster",
+      "updated": "2026-11-22T15:19:57Z",
+      "url": "https://ballkeep.com/news/patriots-could-sign-daniel-jones-very-doable-sum-37224935.html",
+      "players": [
+        {
+          "key": "daniel jones",
+          "name": "Daniel Jones",
+          "slug": "daniel-jones",
+          "pos": "QB",
+          "team": "IND"
+        },
+        {
+          "key": "drake maye",
+          "name": "Drake Maye",
+          "slug": "drake-maye",
+          "pos": "QB",
+          "team": "NE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Patriots Could Sign Daniel Jones for Very Doable Sum Amid Drake Maye Injury",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSkhyRGNGbzFYZnlhbUc5SkFzTi1QSGFNYlJCUGd3THl3emtxc2dsb0FuLUNPOUlZMTJCZEtBdnJoNmNKOWpEZ2l6WlVfWTduTFJNclJ0X0ZaaWlydTRDUkNEdWFLbEFpcWJMVVQ1cTZFUWZGMmtVTFFKSmlkVEZDWVNtUEhhb09O?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Patriots should take flyer on Daniel Jones amid Drake Maye injury news",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLU9PckU3Y3J6MlotbDBqNmZBMm90aXkyMVI5WkQ2WDhYZ05ISXBXRTR4LUNZUE9GbngwR0cxSnBhNkJvT1ZOUVdfNzdfdFBiMEZkTUNuX3hCd0NCWjJqYzBjS0VtbVdpSnhaOFFGTFplTnQ0anY0WmVuMERUTVpwM045LTlabW5J?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "From @NFLGameDay Morning: The #Patriots lost QB Drake Maye for at least six weeks and possibly longer; Plus, former #Colts QB Daniel Jones is expected to wait to sign -- in the event there is a QB injury from a playoff-ready team. - X",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5feEwtOVd6Wk4wM0hDVWNSLWZQUWN5SElTbE0zUXVhSHFBSjNYam05MTdBUFd1Q1BKR2dqQzk2NjdrTUpCM0tvc0VpdUFTcFVVOElHM0stZ1VoUzZTV1E?oc=5",
+          "kind": "article",
+          "publisher": "X"
         }
       ]
     },
@@ -113162,408 +113301,35 @@
       ]
     },
     {
-      "headline": "NFL news roundup: Patriots' Drake Maye has fractured fibula; Raiders' Brock Bowers questionable",
-      "slug": "drake-maye-injury-patriots-qb-fractured-fibula-no-44bd1bbe",
-      "blurb": "Patriots QB Drake Maye has fractured fibula, sources say ESPN",
-      "summary": "Patriots QB Drake Maye has fractured fibula, sources say ESPN Drake Maye Injury Update: Patriots QB Has Fractured Fibula, No Surgery Needed Fantasy Alarm Brown, Drake Maye IR Dilemma: Report Yahoo Sports Aggregated from ESPN, Fantasy Alarm, Yahoo Sports, NFL.com, CBS Sports and 2 more.",
-      "category": "injury",
-      "updated": "2026-11-21T15:17:30Z",
-      "url": "https://ballkeep.com/news/drake-maye-injury-patriots-qb-fractured-fibula-no-44bd1bbe.html",
+      "headline": "Brock Purdy caps first drive with TD pass to George Kittle, 49ers lead 7-0",
+      "slug": "brock-purdy-caps-first-drive-td-pass-george-a112c8ac",
+      "blurb": "Much was made about the matchup between 49ers head coach Kyle Shanahan and Vikings defensive coordinator Brian Flores in advance of\u2026",
+      "summary": "George Kittle and Brock Purdy: Much was made about the matchup between 49ers head coach Kyle Shanahan and Vikings defensive coordinator Brian Flores in advance of Sunday night's matchup between San Francisco and Minnesota. Board reading of PFT feed.",
+      "category": "coach",
+      "updated": "2026-11-23T01:33:58Z",
+      "url": "https://ballkeep.com/news/brock-purdy-caps-first-drive-td-pass-george-a112c8ac.html",
       "players": [
         {
-          "key": "drake maye",
-          "name": "Drake Maye",
-          "slug": "drake-maye",
-          "pos": "QB",
-          "team": "NE"
-        },
-        {
-          "key": "brock bowers",
-          "name": "Brock Bowers",
-          "slug": "brock-bowers",
+          "key": "george kittle",
+          "name": "George Kittle",
+          "slug": "george-kittle",
           "pos": "TE",
-          "team": "LV"
+          "team": "SF"
         },
         {
-          "key": "tommy devito",
-          "name": "Tommy DeVito",
-          "slug": "tommy-devito",
+          "key": "brock purdy",
+          "name": "Brock Purdy",
+          "slug": "brock-purdy",
           "pos": "QB",
-          "team": "NE"
-        },
-        {
-          "key": "a j brown",
-          "name": "A.J. Brown",
-          "slug": "a-j-brown",
-          "pos": "WR",
-          "team": "NE"
+          "team": "SF"
         }
       ],
       "sources": [
         {
-          "title": "Drake Maye Injury Update: Patriots QB Has Fractured Fibula, No Surgery Needed",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbXRLMXlZcWdwRDRZemptZDktZmVYckdHZmtvdnJYUW1maGFCQmpVUDhxeFhRb3M2Q3NIUmNmT2ppX0NFcGhZRjhGakVXQ1FDbkE4SnlVUF9uS3VCdUNLNjFBaHJHNzY2TjdPLVQtMGdwWEdRWmtGQkRuYko0cW41TEVpTVotaGE4S1Zzb1Flc3RaRTV4eWtnYkI3cmlTZVFlQXNPSmtFdw?oc=5",
-          "kind": "article",
-          "publisher": "Fantasy Alarm"
-        },
-        {
-          "title": "Patriots Face \u2018Rare\u2019 A.J. Brown, Drake Maye IR Dilemma: Report",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLUxlaW12RE5LRkhoU1o5VzgzamZPajhHSlBmR1UxR1B3Tm85SlZrdFdmc0ZWSVNIcVNMOXVGdUFFT3l6eU5SZmNSSFN4NTRIZHdCbHh5aWVCdEN3RWVkeU15WHFwVDdlYmNnSVBEajE1b3hmcEJ5N0R6OEFfUWNwMA?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "NFL news roundup: Patriots' Drake Maye has fractured fibula; Raiders' Brock Bowers questionable",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYjYzM3ExVDh2R2lDU1FwQVhFS0l2NnBnWDNheE9HWjdYeU5FWUc2LXFsTTRhTklFZmlaZ0lWU2xOLUhOTjVRdWc1WTFmVXZWQ2JrTUNiMTVWWHlDTGozYmRmSjFTSkxqVlZUQzhxVWdiSlktdkJEZjFFNzBYWFM5MUdZcFB4Y1FYSGc?oc=5",
-          "kind": "article",
-          "publisher": "NFL.com"
-        },
-        {
-          "title": "Drake Maye ankle injury: Is the Patriots' season over? Can Tommy DeVito step up?",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQV1JuZU1renFxREMtRVdsdHBoNjZuNmVwdy1pNm43SzhLZXdIV0pGREdJT050ek93ZFU5LXcxcUxhVEZOVGhEQkZMdVRtb2s4WUZQV2MxRmRoOS03TEdHcDFFNU5kQk12M1hHUmMwSGNLdUtLZnB2VlJQMUJjakxkdVdjOGxRSkxnOEs0aUpXR3dKOEpUUzZtWmJSZnU?oc=5",
-          "kind": "article",
-          "publisher": "ESPN"
-        },
-        {
-          "title": "Drake Maye has fractured right fibula, will not require surgery, per report",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVWh6Z2pGSGZvVVd2UWVibkZtUElybEpqMjFLQTJWdnozOUlOSHlCVllxY1hwTWlxZ2hYVG9oTG8xSnp5bGlReUs1cThfYnJlcGhHRkhwbnFYdHBJUFJ3Z0xvb1JFRDJ3MURaekZXLXVWOVUtOHJvU3YwMGR3TTFWZk9WTVUwalRhYno5VXplendtaFNqbVZfV3BVcXhrQk01T0FYc2pKVDVvWnA4UkE?oc=5",
-          "kind": "article",
-          "publisher": "CBS Sports"
-        },
-        {
-          "title": "Patriots\u2019 Drake Maye Draws Concern From NFL Scout Before Injury Confirmation",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMG9sZ3FtbmVxV3V2SHIwZXR3b2ZVeGdIZlFta0g4WUxLX0s5RjY1R1ptQjlyS2hfLWpDejRFd1Q1X21ieDZRQ1NUQnRwMF9ibjgtYTVzRng2XzBVeFNVVlBKSi0xd2JzWVN1RDdTRXVzMUxNaFA2LWFVdHdTR1RvcXNHRkFGMG1CTUE?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Patriots QB Drake Maye reportedly has fractured right fibula, could return later this season",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOYVpwUjNqMGY2V21yZU1HY0t4YU1ma09WSUJTMFhDdkN3U2VUVkJpMmhoWkk5cER6NGJaU0lZa3FNN2F5S1NlbC05VlJacVNUT00wUmdvVS1xMVRKRVNMazhiOUZVanoyOUpmbzVtWlNkTno3ZG01NE53WEVmUmtWOF8xWDQ4MEoyVnEzNnpYSG1HcE0tbkpNYUViOUJGbG9ZMUp2NFFNWDJKVnhCQzN5ZFh5TlhZaUlUc1hkMzQzdXVBUlgtcmd5YjB3X2pBZWg1U29UT1R1U0NDSERld281azdsNUt3b3ppU0E5bXVR?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Drake Maye reportedly suffered fractured fibula against Lions",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcTdpMWg5S1loOU91aVgxNVk0c3U3NnBwOWh4dTNIbjJwLTY1RXBsWEdSclBFczlDVmxHc2RrenRtLWdzTTZWZzBrQWFxRWgyb2c0REN5NzNSQlRmUWlfUTY4SDRWcUlOUGoxdG1ydWN0c1BHYWNzTXlkanA1aUlxc1d6MV9ZUXhiUzhBYUUxYTJiRTM5QWJYc0hzcmZIUGZLVFJzUFphRDdJdnd5eGZuQ01GUnF5OEZlX1ZDckFhRFA4M2tiUEE?oc=5",
-          "kind": "article",
-          "publisher": "Pats Pulpit"
-        },
-        {
-          "title": "Drake Maye has fractured fibula, Patriots QB could miss rest of season: Source",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOFp3RlRSWXRkVFZvQkVTbUdHcXhrcGRMLUl4bXprTXhYVk5iX3o4SXVEc3UyN1l5T0JISjgtS1JtM1U2dUhCcmhYZ25udUhUZmdyN1B2R0lpakRhelJlZVA0a2lFUXlpLWZpRDE3MFhxb21vS0lUUG9uRWdkWTcwRlVubTNlYXE1RFpxNGdIaXpPaWZQNWdldGpiemtXQW42LWlpVw?oc=5",
-          "kind": "article",
-          "publisher": "The New York Times"
-        },
-        {
-          "title": "Latest Drake Maye Injury Update Spells Bad News for Patriots' Playoff Hopes",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWW1oUTNzdHlUekZ0Ri1QN2xZdkVJSDYzV2xjWDIxcTNXQzBfVWc4aUN1cm44SmlFeE1nVU5QR0hyUW1EXzZUYTVnLUtmUkszMTVMTFZEcXBLLW9lT2lvWVpBM0h0U3VVc2lPVDVuVFh1bzVRbW94b1dVYUd4eDU5Q05TVnJLQ00?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Drake Maye fractures fibula, but avoids Patriots\u2019 worst-case scenario",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOX01nNWp0VW8ySjBxR0YwQU40SlZvRnExUmtpZ1FaT2lFa0ZMek00UUwzemZkRTQyR2ZXbjdGNUFMd18xWjlacFNnWW5QZm9RSHFLQk0xNDBYbHU1R1oybVI2by1GcVc5alRaUE9TSWY4cVVZYXE1VTJ1RjRKNXZBbTY2Z3R2UEYyZVhJ?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Patriots QB Drake Maye has fractured fibula, sources say",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRVE4VUpLa1JRQWU0MDRZYzZDUTNESmpZb3p1NllYUlhDd21EWk5WZ1BicnpQb0JZSU5IRk1jTkhMaVFnaVlGTWtsRk1uOU8tdlRScDVDeFZXdmlCSHVpVm96Mmx0bnZ1RmphT1ctZjVwVGduYTh2UFVGTWdhRFlGNU5SZ25xN3oteFJRaU9ZMmFsb3Q3bWpNUi1KSTY?oc=5",
-          "kind": "article",
-          "publisher": "ESPN"
-        }
-      ]
-    },
-    {
-      "headline": "Patriots Could Sign Daniel Jones for Very Doable Sum Amid Drake Maye Injury",
-      "slug": "patriots-could-sign-daniel-jones-very-doable-sum-37224935",
-      "blurb": "From @NFLGameDay Morning: The #Patriots lost QB Drake Maye for at least six weeks and possibly longer; Plus, former #Colts QB Daniel\u2026",
-      "summary": "From @NFLGameDay Morning: The #Patriots lost QB Drake Maye for at least six weeks and possibly longer; Plus, former #Colts QB Daniel Jones is expected to wait to sign -- in the event there is a QB injury from a playoff-ready team. Patriots Could Sign Daniel Jones for Very Doable Sum Amid Drake Maye Injury Yahoo Sports Patriots should take flyer on Daniel Jones amid Drake Maye injury news Yahoo Sports Aggregated from X, Google News, Yahoo Sports.",
-      "category": "roster",
-      "updated": "2026-11-22T15:19:57Z",
-      "url": "https://ballkeep.com/news/patriots-could-sign-daniel-jones-very-doable-sum-37224935.html",
-      "players": [
-        {
-          "key": "daniel jones",
-          "name": "Daniel Jones",
-          "slug": "daniel-jones",
-          "pos": "QB",
-          "team": "IND"
-        },
-        {
-          "key": "drake maye",
-          "name": "Drake Maye",
-          "slug": "drake-maye",
-          "pos": "QB",
-          "team": "NE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Patriots Could Sign Daniel Jones for Very Doable Sum Amid Drake Maye Injury",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSkhyRGNGbzFYZnlhbUc5SkFzTi1QSGFNYlJCUGd3THl3emtxc2dsb0FuLUNPOUlZMTJCZEtBdnJoNmNKOWpEZ2l6WlVfWTduTFJNclJ0X0ZaaWlydTRDUkNEdWFLbEFpcWJMVVQ1cTZFUWZGMmtVTFFKSmlkVEZDWVNtUEhhb09O?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Patriots should take flyer on Daniel Jones amid Drake Maye injury news",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNLU9PckU3Y3J6MlotbDBqNmZBMm90aXkyMVI5WkQ2WDhYZ05ISXBXRTR4LUNZUE9GbngwR0cxSnBhNkJvT1ZOUVdfNzdfdFBiMEZkTUNuX3hCd0NCWjJqYzBjS0VtbVdpSnhaOFFGTFplTnQ0anY0WmVuMERUTVpwM045LTlabW5J?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "From @NFLGameDay Morning: The #Patriots lost QB Drake Maye for at least six weeks and possibly longer; Plus, former #Colts QB Daniel Jones is expected to wait to sign -- in the event there is a QB injury from a playoff-ready team. - X",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5feEwtOVd6Wk4wM0hDVWNSLWZQUWN5SElTbE0zUXVhSHFBSjNYam05MTdBUFd1Q1BKR2dqQzk2NjdrTUpCM0tvc0VpdUFTcFVVOElHM0stZ1VoUzZTV1E?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        }
-      ]
-    },
-    {
-      "headline": "49ers lose right tackle Colton McKivitz for season with fractured, dislocated ankle",
-      "slug": "49ers-lose-right-tackle-colton-mckivitz-fractured-dislocated-9cc8f304",
-      "blurb": "The 49ers lost starting right tackle Colton McKivitz for the season on Sunday night with a serious ankle injury.",
-      "summary": "The 49ers lost starting right tackle Colton McKivitz for the season on Sunday night with a serious ankle injury. 49ers' Colton McKivitz suffers season-ending ankle injury ESPN 49ers OT Colton McKivitz Suffers Gruesome Ankle Injury vs. Aggregated from PFT feed, ESPN, Yahoo Sports, NFLTradeRumors.co, X and 1 more.",
-      "category": "injury",
-      "updated": "2026-11-23T08:56:19Z",
-      "url": "https://ballkeep.com/news/49ers-lose-right-tackle-colton-mckivitz-fractured-dislocated-9cc8f304.html",
-      "players": [],
-      "sources": [
-        {
-          "title": "49ers lose right tackle Colton McKivitz for season with fractured, dislocated ankle",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-lose-right-tackle-colton-mckivitz-for-season-with-fractured-dislocated-ankle",
+          "title": "Brock Purdy caps first drive with TD pass to George Kittle, 49ers lead 7-0",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-purdy-caps-first-drive-with-td-pass-to-george-kittle-49ers-lead-7-0",
           "kind": "article",
           "publisher": "PFT feed"
-        },
-        {
-          "title": "49ers' Colton McKivitz suffers season-ending ankle injury",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQzI1bXl1anVYZEZSb0ROd0w0Sjc2Smp6eU1ENGZNX243eFFoWDdJYXloX3hXR0pCY210ZG1XWV9hTU10UFlzaGdtLTBWODBZX0xNcG9oWkV2TGJIWFl5aE1ISUpXVjBNWkdMdXhRWmRSZExrbm1JdWRUWmd0MmctWFhTTVhpdHpkZmhxWGRjS05uNldNZExKa2tlYlV0S3JwWmREMnFqLUtNMmc?oc=5",
-          "kind": "article",
-          "publisher": "ESPN"
-        },
-        {
-          "title": "49ers OT Colton McKivitz Suffers Gruesome Ankle Injury vs. Vikings",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSVQ5Q1lONmQ4OU55Zi1xQ0FQRGpHWjZERTJoXzdiMXVVbE1wTnVCM2FaOF9TdTlRV0lFR0hGRGhkN2RvZF9DYXEwUHplQVlENGtkUjJGTXdWLUF6NVRjSk9Hd1RyN0xNenE2dl9tRFlGMGxLeUZTb1A1bUhpLW5GTHhDRkp2UHdI?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "49ers RT Colton McKivitz Carted Off With Aircast",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOakFTQnZnX21IdlRBaUYzZmFNUk1xWWlpSzVhUHFLRV9sM0JzOUtTSXktSkJjNk01MWh5M1Boekx2dEZUVEx4UlJZSEMzQ1FPWmltZ2N4NVU0MUN4a2hXLUctTVJ1aFNQYlJwTGRCbFRTUjJYMlNYOVowNWpTQUJTNDBn?oc=5",
-          "kind": "article",
-          "publisher": "NFLTradeRumors.co"
-        },
-        {
-          "title": "Colton McKivitz just snapped his ankle and Trent Williams knows it. \ud83d\ude4f #49ers #NFL - X",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5acHlzcWJTNnBKZHlWQkRZeGZQelNFSTNzYkhpVTJCQ0FPTmZzTENwWnRlWjQ3YVdrbmlFQmd2MzRnTkRCOUVKcUZTOThmOWxMNW5aNzY3VFRRQkRjRTJLUEhvckI?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        }
-      ]
-    },
-    {
-      "headline": "T.J. Hockenson: Six receptions in return",
-      "slug": "t-j-hockenson-six-receptions-return-abaf3d97",
-      "blurb": "Hockenson (wrist) caught six of seven targets for 55 yards in Sunday's 35-10 loss to the 49ers.",
-      "summary": "T.J. Hockenson: Hockenson (wrist) caught six of seven targets for 55 yards in Sunday's 35-10 loss to the 49ers. Visit RotoWire.com for more analysis on this update. Board reading of RotoWire NFL.",
-      "category": "injury",
-      "updated": "2026-11-23T12:59:33Z",
-      "url": "https://ballkeep.com/news/t-j-hockenson-six-receptions-return-abaf3d97.html",
-      "players": [
-        {
-          "key": "t j hockenson",
-          "name": "T.J. Hockenson",
-          "slug": "t-j-hockenson",
-          "pos": "TE",
-          "team": "MIN"
-        }
-      ],
-      "sources": [
-        {
-          "title": "T.J. Hockenson: Six receptions in return",
-          "url": "https://www.rotowire.com//football/player/tj-hockenson-13610",
-          "kind": "article",
-          "publisher": "RotoWire NFL"
-        }
-      ]
-    },
-    {
-      "headline": "Mike Vrabel confirms A.J. Brown\u2019s status for the Chargers game",
-      "slug": "mike-vrabel-confirms-j-brown-s-status-chargers-7b0a35b4",
-      "blurb": "The Patriots wide receiver is dealing with a hamstring injury.",
-      "summary": "A.J. Brown: The Patriots wide receiver is dealing with a hamstring injury. Board reading of SB Nation.",
-      "category": "injury",
-      "updated": "2026-11-23T12:36:27Z",
-      "url": "https://ballkeep.com/news/mike-vrabel-confirms-j-brown-s-status-chargers-7b0a35b4.html",
-      "players": [
-        {
-          "key": "a j brown",
-          "name": "A.J. Brown",
-          "slug": "a-j-brown",
-          "pos": "WR",
-          "team": "NE"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Mike Vrabel confirms A.J. Brown\u2019s status for the Chargers game",
-          "url": "https://sports.yahoo.com/articles/mike-vrabel-confirms-j-brown-123627666.html",
-          "kind": "article",
-          "publisher": "SB Nation"
-        }
-      ]
-    },
-    {
-      "headline": "Jaguars Week 11 injury report vs. Giants: Bhayshul Tuten injuries leave Jacksonville backfield in question?",
-      "slug": "bhayshul-tuten-ankle-foot-listed-injury-11-ryanohalloran-0e474a36",
-      "blurb": "Will Jaguars RB Bhayshul Tuten play in Week 11 vs.",
-      "summary": "Will Jaguars RB Bhayshul Tuten play in Week 11 vs. Jaguars game status: Bhayshul Tuten returns to practice on Friday The Florida Times-Union Jaguars RBs Bhayshul Tuten, Chris Rodriguez were limited in practice Wednesday NBC Sports Aggregated from Yahoo Sports, The Florida Times-Union, NBC Sports, Fantasy Footballers Podcast, ProFootball Talk on NBC Sports and 6 more.",
-      "category": "injury",
-      "updated": "2026-11-21T17:33:35Z",
-      "url": "https://ballkeep.com/news/bhayshul-tuten-ankle-foot-listed-injury-11-ryanohalloran-0e474a36.html",
-      "players": [
-        {
-          "key": "bhayshul tuten",
-          "name": "Bhayshul Tuten",
-          "slug": "bhayshul-tuten",
-          "pos": "RB",
-          "team": "JAX"
-        },
-        {
-          "key": "chris rodriguez",
-          "name": "Chris Rodriguez",
-          "slug": "chris-rodriguez",
-          "pos": "RB",
-          "team": "JAX"
-        },
-        {
-          "key": "geno smith",
-          "name": "Geno Smith",
-          "slug": "geno-smith",
-          "pos": "QB",
-          "team": "NYJ"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Bhayshul Tuten returns to practice, has no injury designation for Sunday",
-          "url": "https://sports.yahoo.com/articles/bhayshul-tuten-returns-practice-no-211647705.html",
-          "kind": "article",
-          "publisher": "ProFootball Talk on NBC Sports"
-        },
-        {
-          "title": "Bhayshul Tuten returns to practice, has no injury designation for Sunday",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bhayshul-tuten-returns-to-practice-has-no-injury-designation-for-sunday",
-          "kind": "article",
-          "publisher": "PFT feed"
-        },
-        {
-          "title": "Bhayshul Tuten (ankle/foot) off injury report for Jags-Giants https://t.co/44F4EXplYg - X",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xOG5XMWttbmlMQzZyM25weGduQ0Zka1ljX3RtOUZ2MzhyODVBZzBpUGUxamt5QWZ1OUVXRXU5MjdaZ1ZYdXVwOEtwUnhTT2ZzTEF4SllTaHUzNmpKYkJ4OENLTQ?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        },
-        {
-          "title": "Bhayshul Tuten (ankle, foot) not listed on injury report for Week 11, per @ryanohalloran. - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1QenJTbzliT1U2UndITWRodHZpRFdzN3lPQ0oxa1hwMDNPTzhHZm5wNFBUU2FqYkZSQUo3ZkNNY0pyUGVRaGtKNzNWLXZ1eUhnT0lQRlNwdW1DbTZ1VXlZaEN3?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        },
-        {
-          "title": "#Jaguars ruled out Robert Hainsey & BJ Green (21 Day Window to Return) vs #Giants \ud83d\udea8 No designation for Bhayshul Tuten \ud83d\udea8 Danny Striggow (concussion) & Matt Dickerson (neck) are Questionable Cole Van Lanen did pop up as Limited on Injury Report tod - X",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ZZ3BGX2pKUFpTOUs1TjFDOVRrNndsN0tDMWM0Zl93eldwOFFsb29Sc3JhUzR3RXM2bkgxaGRabUdoZmdpVkFOYTZTNkYzc0JsV3dFME9TMHR6OXBNMFF2bkR3?oc=5",
-          "kind": "article",
-          "publisher": "X"
-        },
-        {
-          "title": "Jaguars Week 11 injury report vs. Giants: Bhayshul Tuten injuries leave Jacksonville backfield in question?",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZmd3QjFSR0JadnB2U3J1UVZJNG0zSl9aa3J6N2F4LUZHLXhhdXdTbW5RcGU3a29tTkZpQl9TaTFjT1paRWZ1VFkwTFN5a0g1RVVHcEVpaGg5S0R4RkRWUVoxRm1OTkRpX0xmQ05EX0VpcTFTTzRNLXJBYWNfSnFEZWw4VUE?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Bhayshul Tuten Injury Update Raises Concerns for Week 11 Fantasy Outlook",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbFhTMzNmRkdDT1ZKazJoSVN1ZWx6RkpPdWFwXzRaMl9rVUE4MkVXUWpHOW92U1huZHdxSF9MTmpweVh0Vjk1MEVqZkV3bFk0VzBObDlSUWwyOHdXMktTcDZRNV85OGV4XzhMMmJqVHc3NWdjeFhDQl9vUzVudDFZSFAtOVdJb2dRaGhaaEl1VzNMXzFzbTlnZXBKVTdRWWZDU1laaEx0NjZfNzQ4dFBjTHRiSQ?oc=5",
-          "kind": "article",
-          "publisher": "Sports Illustrated"
-        },
-        {
-          "title": "Jaguars-Giants Injury Report: A Healthy Bhayshul Tuten Now Holds the Key to Week 11 Clash",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObk8zd0dlZGxHNThfOXFyblF3UjRmQVphWVhaOTJjXzFoWTVqQlpIXzh1M0JTTWR0RnhCVWxXMzBLSUlFZDcxZU1IRkFsSGt4N1JET3AySDZZdVRCbkZjdTdmOGxyU05IZlRSNHRFNkFKUi1uaTFyRExxOGJOUkkybEpaOGVJZFhOdUl6TWZvRkE2U1daWm5YWnBVLW16SldhRUExWlU5ZzNQWURQdXV3N2VSNkdBYTZ4RlNNd2gzVFlsREFPTE1GSg?oc=5",
-          "kind": "article",
-          "publisher": "Sports Illustrated"
-        },
-        {
-          "title": "Bhayshul Tuten Injury Update: Is Jaguars RB Playing This Week vs. Giants?",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUUpyc2tXc3hXeGdkdk9hRXFCZ1hmM1d0ZXpmZGIxRVBNSmRlaVRwNDBtZzNTMktmN0dfMHprdmcwVlpmaHNFZmtxWDVqLXdXMUV2UldMR01Xc0FzQzRmYm9Ub2d5ZlBDbVl1TDVwNng5cWV1eDNWdEZTaEY3akMwcnYwMDJlUlhGWVF4NTJMQmNqbEJzUl81eUxIU3ZJVUNham5JZlhnazR4Uk15UkFXYnNlNDU?oc=5",
-          "kind": "article",
-          "publisher": "PrizePicks"
-        },
-        {
-          "title": "Bhayshul Tuten (ankle/foot) downgraded to non-participant Thursday",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeHYtMzdGWURMaXE2RXBwSnBQRWVnYXVsVnNRbk1FbGxlYVRRY0Z4NEZrNHROQm9QR1pCMnZwQWJLbTZBbmh5M1pTSkd2R1VHWi0wQWJRLUhKNXBmN0x3LVVvUmRMaTJDLW1SbnlTRE9GM2dsdG42S0MxWmR5SThWdFNjZVNwNnhyR25JVUNmX3VQUWU2bEs1S3hMdVAweFlGVFlPbzA4VExTM2VtUEpLM9IBtgFBVV95cUxNNWxEVENTX29OVzdxZEVoa0VDU1FWUm1UajdkOGg4VW5SZUExdUJibzVHMl9GSlZJUzBmdWVOTFlPTzVOY0s4dHozZEMwWXRJWDJ0NXZIUzY4QWVPME5fazJHdjNrNk1TS21YSVEyLXk3OG91TGpmTUVLNzd1MjZNNUJKM1hCNWQ1T1h5eVJQaEdLWGkzX0hGMGpEMFNXM0t0QW9XTWlXLWVCZUJhWUp3WHBqckpudw?oc=5",
-          "kind": "article",
-          "publisher": "FantasyPros"
-        },
-        {
-          "title": "Jaguars Get Bhayshul Tuten Injury Update Before Giants Game",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVTVMbWRiLXoybEZVT2pJUk0xR0JhNF90WVo2QXAweWV0cEtnVjJIakE3aDhUZ1NILXRyaC1DM3BtY0E2MF9sOFJZMl9mYUE5a0ZOSHRtMENMX21DX0w4Vy1ybTVsUC1tUEJsVUNENDgxWldoYWJMVnhPVGRGaFotcDV5c3F3MUE1NGs5RXVOU25MOXZlN0E?oc=5",
-          "kind": "article",
-          "publisher": "Heavy.com"
-        },
-        {
-          "title": "Will Jaguars RB Bhayshul Tuten play in Week 11 vs. Giants?",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQTA5QktiY1l3bnNPNjFxeFY4OUNBQ2pfZWtBZElQT3lqNWRoLUNrSldEeVo3c2twVmpqNHVQZ0xqUXYzTndkX0U4cGxpcEJiay1UVnd5X0VfT3J5VGhySUVleHplVFJrckRJZ0tud2R5U1RYWjd3UkFVNmdOVXoxeG1VTkwxZw?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Jaguars game status: Bhayshul Tuten returns to practice on Friday",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSVhQWG5XRjlTRUlmNzZJaGx1bHFkMk5vOUd0VTJjbnRlM0FJcFUwRjRSeTNoZDZQRDVkVVNWSTdDUHBVaHlaLUtOUVhTS2tFZXU1WDVPbS1zdUMxWV91VldGUE1PcTJWR0hUUVFubW5JSDZXTnREWWdIRC1FUnVkUEVucE14VUo3U19NeEhCQjk4cDlVYjAzbEFFUnhOSXN2bHV1LTlkdUltVXV0aGhZS3QxcVozTjJ5OTZ0NXFPN01oLUZrS2Q4?oc=5",
-          "kind": "article",
-          "publisher": "The Florida Times-Union"
-        },
-        {
-          "title": "Jaguars RBs Bhayshul Tuten, Chris Rodriguez were limited in practice Wednesday",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNUdLclZsTl9OVm5lT1dXMXlrdUR1bzd2SVZjajFjZmdENVI1Um1Pdl85WWhoU0w3RVhiSk1DY29zWWJmRi12d3o0em9jaWdlbzZqd1RHalZEelZENXFFSkVvUE0zM0hhYzlIaTZ6TS1vc2l3MDVpSVMxeUlncndBWmdpbkI5WXh3MlRIWWU2Nmk1eUVHWDJSZ1drR1dadmRPZmJ2RHd2NTBuTlBDWFk1bUFsR0RIQm81T0pSbjhoUUJkNUptRlRCRVVaRllxWGxsRGFkZWR3?oc=5",
-          "kind": "article",
-          "publisher": "NBC Sports"
-        },
-        {
-          "title": "Bhayshul Tuten a limited participant Wednesday",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTW5VNnFXaVpfSnNqMU5Zd2NQbHk4NGhka2RZUGN0dDlqcXhFZDlGZHR4bjlERldsbGI2cFVzb0RTYmpyX21ENy1xN2NVNm8tc212SHVQd203LTdGV0ladEhlbVNtMWR6SFhpMTVocU1FZFZYdlNwUloxSE9JUDJfc2d0MHBPU2xsOF9NcXMxbzMwN1FRY21RTw?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
-        },
-        {
-          "title": "Bhayshul Tuten Works off to side at practice",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR1E1Yk42S3c4UWRWZDdTaXZ4eV95VXZUcWdiQmlMVElyamRsNEhSQ0RsY3hObnZ2dWRzVklVc2Nfd0FrXzdLRWMxSmgxbE1XT25LYVJZczJwWDkyNGxqczZQZTlSRmU4MnAtQUxTNmhZSk1PblIzVW9hZXFWQUFxZUxJMFJTdTlEeVBJSGtaWmRVaW5kaTRPQWVSYw?oc=5",
-          "kind": "article",
-          "publisher": "Fantasy Footballers Podcast"
-        },
-        {
-          "title": "Bhayshul Tuten Logs limited practice Wednesday",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOenhGRmdLMTU1ZW9Ia2FhazVIMmIyWEpFZ3ZTZTBVSVR1dWNiM3UxYjV5UTRDRHJTcjI4WXlTdlJUOTlBZ0VHdmJ6X1dRekFfV0JNX2F2c3hKX0ZzZU5uSE1qYkpTR1pNVmJVWWplT2FUci1PanpsUHRNNEFCbHpvaG8ySHFYSUxjM2Joc1QxNERiTy1Tb2lkVjQwcmN0dw?oc=5",
-          "kind": "article",
-          "publisher": "Fantasy Footballers Podcast"
-        },
-        {
-          "title": "Bhayshul Tuten Could do some running Friday",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZTEwU01MZVNjclJnN0RCY3RockhUcEJNTzdtWE1ubkJSWVgxOXpDYmdycUhSUE04T1BQX3UwMlpDSlZ1RkZHeUdJeFdZcTNQOGRMbWxWV0RCbTZJRURFN0dKWVVJdmhWeW16bTdCdjN1SzdraWhkd25mNWJSWGFBNW9Ya2R4bUZQc21TVnhuVE5wQ1pYdGhxQndR?oc=5",
-          "kind": "article",
-          "publisher": "Fantasy Footballers Podcast"
-        },
-        {
-          "title": "Bhayshul Tuten Sidelined for practice Thursday",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdnV3VmRFd25Wa2FwVFhYV0pWRC1aaTRNb0JqU0ZVNGZiZDFGSUF6LVJJTjQ3ZDhramdUV3NNdWhmUkRZVFUwbl9tRHY0SGc5VTdDYmlFcHQ5TFlGeFNoa29XSW1SUjhFb1k1akxNbFE4VWdUVkhGX3dVcDJfbXhNb0NzRVVJS0xSeXQzUE41c0Ryd2UwUGNWbDVnbVBWUQ?oc=5",
-          "kind": "article",
-          "publisher": "Fantasy Footballers Podcast"
-        },
-        {
-          "title": "Bhayshul Tuten injury update: Will Jaguars RB play vs. Titans?",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWWNGTVhNTU5qM0VkcjlScmZGaHNtYzNNMk5iRm9LeDZldXJTc2VFZmZNSFI3UENjcjlqNjZ2Q1NuZnVRczZMQnRxQUJpQUVKbFk5QVAzYlB0UHpjb29mOW9JbkEwLWV0VkVHR21HSXZIeWdDYTRSX1lJWFVqeWladG5QbFNxMDFu?oc=5",
-          "kind": "article",
-          "publisher": "Yahoo Sports"
         }
       ]
     },
@@ -113608,39 +113374,6 @@
           "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUEdISDVnbnpfYm5aOEhGQk4tazNVSU1vNERWeTJhSjZobTVvMHF0dkhnVjZTb2tvbUkwRW9GSG9mb1RrMHhaVU50MnNfNWNlMTdaWWUxUzBmT2xfcUZPeDNtZzJ4MWRnSWxxQjRJQ3BNMjE3QXRXT3hhRUdlY3FtdG9R?oc=5",
           "kind": "article",
           "publisher": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "headline": "Brock Purdy caps first drive with TD pass to George Kittle, 49ers lead 7-0",
-      "slug": "brock-purdy-caps-first-drive-td-pass-george-a112c8ac",
-      "blurb": "Much was made about the matchup between 49ers head coach Kyle Shanahan and Vikings defensive coordinator Brian Flores in advance of\u2026",
-      "summary": "George Kittle and Brock Purdy: Much was made about the matchup between 49ers head coach Kyle Shanahan and Vikings defensive coordinator Brian Flores in advance of Sunday night's matchup between San Francisco and Minnesota. Board reading of PFT feed.",
-      "category": "coach",
-      "updated": "2026-11-23T01:33:58Z",
-      "url": "https://ballkeep.com/news/brock-purdy-caps-first-drive-td-pass-george-a112c8ac.html",
-      "players": [
-        {
-          "key": "george kittle",
-          "name": "George Kittle",
-          "slug": "george-kittle",
-          "pos": "TE",
-          "team": "SF"
-        },
-        {
-          "key": "brock purdy",
-          "name": "Brock Purdy",
-          "slug": "brock-purdy",
-          "pos": "QB",
-          "team": "SF"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Brock Purdy caps first drive with TD pass to George Kittle, 49ers lead 7-0",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-purdy-caps-first-drive-with-td-pass-to-george-kittle-49ers-lead-7-0",
-          "kind": "article",
-          "publisher": "PFT feed"
         }
       ]
     },
@@ -113806,6 +113539,71 @@
       ]
     },
     {
+      "headline": "Mike Evans TD and Parker Washington non-TD raise more questions about NFL catch rules",
+      "slug": "mike-evans-td-parker-washington-non-td-raise-1f8ef150",
+      "blurb": "Two big plays on Sunday renewed questions about what is and is not a catch in the NFL.",
+      "summary": "Parker Washington and Mike Evans: Two big plays on Sunday renewed questions about what is and is not a catch in the NFL. Board reading of PFT feed.",
+      "category": "wire",
+      "updated": "2026-11-23T12:47:29Z",
+      "url": "https://ballkeep.com/news/mike-evans-td-parker-washington-non-td-raise-1f8ef150.html",
+      "players": [
+        {
+          "key": "parker washington",
+          "name": "Parker Washington",
+          "slug": "parker-washington",
+          "pos": "WR",
+          "team": "JAX"
+        },
+        {
+          "key": "mike evans",
+          "name": "Mike Evans",
+          "slug": "mike-evans",
+          "pos": "WR",
+          "team": "SF"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Mike Evans TD and Parker Washington non-TD raise more questions about NFL catch rules",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mike-evans-td-and-parker-washington-non-td-raise-more-questions-about-nfl-catch-rules",
+          "kind": "article",
+          "publisher": "PFT feed"
+        }
+      ]
+    },
+    {
+      "headline": "Rams release 1st injury report for Week 12",
+      "slug": "rams-release-1st-injury-12-084dbe22",
+      "blurb": "It seems highly unlikely that WR Davante Adams will be suiting up against his former team",
+      "summary": "It seems highly unlikely that WR Davante Adams will be suiting up against his former team Rams release 1st injury report for Week 12 Yahoo Sports Aggregated from SB Nation, Yahoo Sports.",
+      "category": "injury",
+      "updated": "2026-11-23T01:06:48Z",
+      "url": "https://ballkeep.com/news/rams-release-1st-injury-12-084dbe22.html",
+      "players": [
+        {
+          "key": "davante adams",
+          "name": "Davante Adams",
+          "slug": "davante-adams",
+          "pos": "WR",
+          "team": "LAR"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Rams release 1st injury report for Week 12",
+          "url": "https://sports.yahoo.com/articles/rams-release-1st-injury-report-010648932.html",
+          "kind": "article",
+          "publisher": "SB Nation"
+        },
+        {
+          "title": "Rams release 1st injury report for Week 12",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSkpQdVVTMXhLNE80Sk1UNHhlZWotS3Eyb2NfVUVLVEIyN1pZRVU1dGliSWt0RnVNYTQ0enVnNmlaMEFJNlRWeFBscXJMTHlLaVh6eDhjR05kWDZHM1pWVk9OYWlMaTJ0OVEzOWZtZFJFQkZCNmMxc0xZVkJPdTh5d19YTmlHdw?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        }
+      ]
+    },
+    {
       "headline": "Titans\u2019 Cam Ward will be jumping with joy after latest Carnell Tate injury update ahead of Cowboys clash",
       "slug": "titans-cam-ward-jumping-joy-carnell-tate-injury-866b1dee",
       "blurb": "Titans get Carnell Tate, key rookies back at practice ahead of Cowboys game, and Cam Ward has a clear message for them A to Z Sports",
@@ -113857,6 +113655,38 @@
       ]
     },
     {
+      "headline": "49ers Week 11 injury report vs. Vikings: Mike Evans nearing return for San Francisco",
+      "slug": "49ers-11-injury-vikings-mike-evans-nearing-return-90ea8ca9",
+      "blurb": "Join our live chat for SNF during Vikings vs.",
+      "summary": "Mike Evans: Join our live chat for SNF during Vikings vs. 49ers Week 11 injury report vs. Vikings: Mike Evans nearing return for San Francisco Yahoo Sports Aggregated from SB Nation, Yahoo Sports.",
+      "category": "injury",
+      "updated": "2026-11-23T00:30:00Z",
+      "url": "https://ballkeep.com/news/49ers-11-injury-vikings-mike-evans-nearing-return-90ea8ca9.html",
+      "players": [
+        {
+          "key": "mike evans",
+          "name": "Mike Evans",
+          "slug": "mike-evans",
+          "pos": "WR",
+          "team": "SF"
+        }
+      ],
+      "sources": [
+        {
+          "title": "SNF live chat: Minnesota Vikings vs. San Francisco 49ers",
+          "url": "https://sports.yahoo.com/articles/snf-live-chat-minnesota-vikings-003000533.html",
+          "kind": "article",
+          "publisher": "SB Nation"
+        },
+        {
+          "title": "49ers Week 11 injury report vs. Vikings: Mike Evans nearing return for San Francisco",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaE90bGx3SnhHaHpKV2JWTWlxQzlOUGdSR2FvTjNaTzU1Y3h4Qld1bTI1ekoyOFVxbmJKUEhzai1ZX3pGLS05OHlMbElUdFVqVnVsSXplSnZ5eWRjeWZ2eEdYNVpzWUxzLUNKUnBFUkZyZmQzVmFzeVRGRjhUcFNXU1R3?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        }
+      ]
+    },
+    {
       "headline": "Fantasy Football Wide Receiver Rankings Week 3: Drake London Is Back, And Davante Adams' Value Hinges On Puka\u2026",
       "slug": "nflgameday-morning-rams-wr-puka-nacua-while-davante-39d83ef1",
       "blurb": "Fantasy Football Wide Receiver Rankings Week 3: Drake London Is Back, And Davante Adams' Value Hinges On Puka Nacua Yahoo Sports",
@@ -113903,178 +113733,299 @@
       ]
     },
     {
-      "headline": "Rams release 1st injury report for Week 12",
-      "slug": "rams-release-1st-injury-12-084dbe22",
-      "blurb": "It seems highly unlikely that WR Davante Adams will be suiting up against his former team",
-      "summary": "It seems highly unlikely that WR Davante Adams will be suiting up against his former team Rams release 1st injury report for Week 12 Yahoo Sports Aggregated from SB Nation, Yahoo Sports.",
+      "headline": "NFL news roundup: Patriots' Drake Maye has fractured fibula; Raiders' Brock Bowers questionable",
+      "slug": "drake-maye-injury-patriots-qb-fractured-fibula-no-44bd1bbe",
+      "blurb": "Patriots QB Drake Maye has fractured fibula, sources say ESPN",
+      "summary": "Patriots QB Drake Maye has fractured fibula, sources say ESPN Drake Maye Injury Update: Patriots QB Has Fractured Fibula, No Surgery Needed Fantasy Alarm Brown, Drake Maye IR Dilemma: Report Yahoo Sports Aggregated from ESPN, Fantasy Alarm, Yahoo Sports, NFL.com, CBS Sports and 2 more.",
       "category": "injury",
-      "updated": "2026-11-23T01:06:48Z",
-      "url": "https://ballkeep.com/news/rams-release-1st-injury-12-084dbe22.html",
+      "updated": "2026-11-21T15:17:30Z",
+      "url": "https://ballkeep.com/news/drake-maye-injury-patriots-qb-fractured-fibula-no-44bd1bbe.html",
       "players": [
         {
-          "key": "davante adams",
-          "name": "Davante Adams",
-          "slug": "davante-adams",
+          "key": "drake maye",
+          "name": "Drake Maye",
+          "slug": "drake-maye",
+          "pos": "QB",
+          "team": "NE"
+        },
+        {
+          "key": "brock bowers",
+          "name": "Brock Bowers",
+          "slug": "brock-bowers",
+          "pos": "TE",
+          "team": "LV"
+        },
+        {
+          "key": "tommy devito",
+          "name": "Tommy DeVito",
+          "slug": "tommy-devito",
+          "pos": "QB",
+          "team": "NE"
+        },
+        {
+          "key": "a j brown",
+          "name": "A.J. Brown",
+          "slug": "a-j-brown",
           "pos": "WR",
+          "team": "NE"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Drake Maye Injury Update: Patriots QB Has Fractured Fibula, No Surgery Needed",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbXRLMXlZcWdwRDRZemptZDktZmVYckdHZmtvdnJYUW1maGFCQmpVUDhxeFhRb3M2Q3NIUmNmT2ppX0NFcGhZRjhGakVXQ1FDbkE4SnlVUF9uS3VCdUNLNjFBaHJHNzY2TjdPLVQtMGdwWEdRWmtGQkRuYko0cW41TEVpTVotaGE4S1Zzb1Flc3RaRTV4eWtnYkI3cmlTZVFlQXNPSmtFdw?oc=5",
+          "kind": "article",
+          "publisher": "Fantasy Alarm"
+        },
+        {
+          "title": "Patriots Face \u2018Rare\u2019 A.J. Brown, Drake Maye IR Dilemma: Report",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLUxlaW12RE5LRkhoU1o5VzgzamZPajhHSlBmR1UxR1B3Tm85SlZrdFdmc0ZWSVNIcVNMOXVGdUFFT3l6eU5SZmNSSFN4NTRIZHdCbHh5aWVCdEN3RWVkeU15WHFwVDdlYmNnSVBEajE1b3hmcEJ5N0R6OEFfUWNwMA?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "NFL news roundup: Patriots' Drake Maye has fractured fibula; Raiders' Brock Bowers questionable",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYjYzM3ExVDh2R2lDU1FwQVhFS0l2NnBnWDNheE9HWjdYeU5FWUc2LXFsTTRhTklFZmlaZ0lWU2xOLUhOTjVRdWc1WTFmVXZWQ2JrTUNiMTVWWHlDTGozYmRmSjFTSkxqVlZUQzhxVWdiSlktdkJEZjFFNzBYWFM5MUdZcFB4Y1FYSGc?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        },
+        {
+          "title": "Drake Maye ankle injury: Is the Patriots' season over? Can Tommy DeVito step up?",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQV1JuZU1renFxREMtRVdsdHBoNjZuNmVwdy1pNm43SzhLZXdIV0pGREdJT050ek93ZFU5LXcxcUxhVEZOVGhEQkZMdVRtb2s4WUZQV2MxRmRoOS03TEdHcDFFNU5kQk12M1hHUmMwSGNLdUtLZnB2VlJQMUJjakxkdVdjOGxRSkxnOEs0aUpXR3dKOEpUUzZtWmJSZnU?oc=5",
+          "kind": "article",
+          "publisher": "ESPN"
+        },
+        {
+          "title": "Drake Maye has fractured right fibula, will not require surgery, per report",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVWh6Z2pGSGZvVVd2UWVibkZtUElybEpqMjFLQTJWdnozOUlOSHlCVllxY1hwTWlxZ2hYVG9oTG8xSnp5bGlReUs1cThfYnJlcGhHRkhwbnFYdHBJUFJ3Z0xvb1JFRDJ3MURaekZXLXVWOVUtOHJvU3YwMGR3TTFWZk9WTVUwalRhYno5VXplendtaFNqbVZfV3BVcXhrQk01T0FYc2pKVDVvWnA4UkE?oc=5",
+          "kind": "article",
+          "publisher": "CBS Sports"
+        },
+        {
+          "title": "Patriots\u2019 Drake Maye Draws Concern From NFL Scout Before Injury Confirmation",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMG9sZ3FtbmVxV3V2SHIwZXR3b2ZVeGdIZlFta0g4WUxLX0s5RjY1R1ptQjlyS2hfLWpDejRFd1Q1X21ieDZRQ1NUQnRwMF9ibjgtYTVzRng2XzBVeFNVVlBKSi0xd2JzWVN1RDdTRXVzMUxNaFA2LWFVdHdTR1RvcXNHRkFGMG1CTUE?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Patriots QB Drake Maye reportedly has fractured right fibula, could return later this season",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOYVpwUjNqMGY2V21yZU1HY0t4YU1ma09WSUJTMFhDdkN3U2VUVkJpMmhoWkk5cER6NGJaU0lZa3FNN2F5S1NlbC05VlJacVNUT00wUmdvVS1xMVRKRVNMazhiOUZVanoyOUpmbzVtWlNkTno3ZG01NE53WEVmUmtWOF8xWDQ4MEoyVnEzNnpYSG1HcE0tbkpNYUViOUJGbG9ZMUp2NFFNWDJKVnhCQzN5ZFh5TlhZaUlUc1hkMzQzdXVBUlgtcmd5YjB3X2pBZWg1U29UT1R1U0NDSERld281azdsNUt3b3ppU0E5bXVR?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Drake Maye reportedly suffered fractured fibula against Lions",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPcTdpMWg5S1loOU91aVgxNVk0c3U3NnBwOWh4dTNIbjJwLTY1RXBsWEdSclBFczlDVmxHc2RrenRtLWdzTTZWZzBrQWFxRWgyb2c0REN5NzNSQlRmUWlfUTY4SDRWcUlOUGoxdG1ydWN0c1BHYWNzTXlkanA1aUlxc1d6MV9ZUXhiUzhBYUUxYTJiRTM5QWJYc0hzcmZIUGZLVFJzUFphRDdJdnd5eGZuQ01GUnF5OEZlX1ZDckFhRFA4M2tiUEE?oc=5",
+          "kind": "article",
+          "publisher": "Pats Pulpit"
+        },
+        {
+          "title": "Drake Maye has fractured fibula, Patriots QB could miss rest of season: Source",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQOFp3RlRSWXRkVFZvQkVTbUdHcXhrcGRMLUl4bXprTXhYVk5iX3o4SXVEc3UyN1l5T0JISjgtS1JtM1U2dUhCcmhYZ25udUhUZmdyN1B2R0lpakRhelJlZVA0a2lFUXlpLWZpRDE3MFhxb21vS0lUUG9uRWdkWTcwRlVubTNlYXE1RFpxNGdIaXpPaWZQNWdldGpiemtXQW42LWlpVw?oc=5",
+          "kind": "article",
+          "publisher": "The New York Times"
+        },
+        {
+          "title": "Latest Drake Maye Injury Update Spells Bad News for Patriots' Playoff Hopes",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWW1oUTNzdHlUekZ0Ri1QN2xZdkVJSDYzV2xjWDIxcTNXQzBfVWc4aUN1cm44SmlFeE1nVU5QR0hyUW1EXzZUYTVnLUtmUkszMTVMTFZEcXBLLW9lT2lvWVpBM0h0U3VVc2lPVDVuVFh1bzVRbW94b1dVYUd4eDU5Q05TVnJLQ00?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Drake Maye fractures fibula, but avoids Patriots\u2019 worst-case scenario",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOX01nNWp0VW8ySjBxR0YwQU40SlZvRnExUmtpZ1FaT2lFa0ZMek00UUwzemZkRTQyR2ZXbjdGNUFMd18xWjlacFNnWW5QZm9RSHFLQk0xNDBYbHU1R1oybVI2by1GcVc5alRaUE9TSWY4cVVZYXE1VTJ1RjRKNXZBbTY2Z3R2UEYyZVhJ?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Patriots QB Drake Maye has fractured fibula, sources say",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRVE4VUpLa1JRQWU0MDRZYzZDUTNESmpZb3p1NllYUlhDd21EWk5WZ1BicnpQb0JZSU5IRk1jTkhMaVFnaVlGTWtsRk1uOU8tdlRScDVDeFZXdmlCSHVpVm96Mmx0bnZ1RmphT1ctZjVwVGduYTh2UFVGTWdhRFlGNU5SZ25xN3oteFJRaU9ZMmFsb3Q3bWpNUi1KSTY?oc=5",
+          "kind": "article",
+          "publisher": "ESPN"
+        }
+      ]
+    },
+    {
+      "headline": "Kyren Williams Injury Update: Rams RB\u2019s Week 12 Status Revealed",
+      "slug": "kyren-williams-injury-rams-rb-s-12-status-3e04d3c4",
+      "blurb": "Kyren Williams Injury Update: Rams RB\u2019s Week 12 Status Revealed Yahoo Sports",
+      "summary": "Kyren Williams Injury Update: Rams RB\u2019s Week 12 Status Revealed Yahoo Sports Kyren Williams Limited at practice Fantasy Footballers Podcast Aggregated from Yahoo Sports, Fantasy Footballers Podcast.",
+      "category": "injury",
+      "updated": "2026-11-22T23:53:45Z",
+      "url": "https://ballkeep.com/news/kyren-williams-injury-rams-rb-s-12-status-3e04d3c4.html",
+      "players": [
+        {
+          "key": "kyren williams",
+          "name": "Kyren Williams",
+          "slug": "kyren-williams",
+          "pos": "RB",
           "team": "LAR"
         }
       ],
       "sources": [
         {
-          "title": "Rams release 1st injury report for Week 12",
-          "url": "https://sports.yahoo.com/articles/rams-release-1st-injury-report-010648932.html",
-          "kind": "article",
-          "publisher": "SB Nation"
-        },
-        {
-          "title": "Rams release 1st injury report for Week 12",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSkpQdVVTMXhLNE80Sk1UNHhlZWotS3Eyb2NfVUVLVEIyN1pZRVU1dGliSWt0RnVNYTQ0enVnNmlaMEFJNlRWeFBscXJMTHlLaVh6eDhjR05kWDZHM1pWVk9OYWlMaTJ0OVEzOWZtZFJFQkZCNmMxc0xZVkJPdTh5d19YTmlHdw?oc=5",
+          "title": "Kyren Williams Injury Update: Rams RB\u2019s Week 12 Status Revealed",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLWVyOWpuSVN1QnJMS3JkN2w1UzgzX19MR1NDU2Y4S1l5MHcwclVaQVN0c0F6WlAxUHB4ajRRTjlBd2hqcWUxakJYdUhQRGZyUjh2NExtRlV2MWhPNkNKaENSZ2N0ajNvRUV0Z2I0T3E5SzUwRGZJRnBfZ3ByaEZ1SEhlQnI?oc=5",
           "kind": "article",
           "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Kyren Williams Limited at practice",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTjZJWXdFeXlOMjBsaFNWMVpxcWZIbHA2Mm03X1g2Z1BQMS1KSFlXRnk0RndqYVdOLTI5TTdJR0pVUjNnSllfUWVqOG9PYjZ5UUxIaFI2OC1ZTE1IUjdQNGpKZGJRSEVKSUtaTkptX2FoOE14elFuV05ZbHZMS29jdXNnazdRLWRXX3BIelRn?oc=5",
+          "kind": "article",
+          "publisher": "Fantasy Footballers Podcast"
         }
       ]
     },
     {
-      "headline": "Mike Evans TD and Parker Washington non-TD raise more questions about NFL catch rules",
-      "slug": "mike-evans-td-parker-washington-non-td-raise-1f8ef150",
-      "blurb": "Two big plays on Sunday renewed questions about what is and is not a catch in the NFL.",
-      "summary": "Parker Washington and Mike Evans: Two big plays on Sunday renewed questions about what is and is not a catch in the NFL. Board reading of PFT feed.",
-      "category": "wire",
-      "updated": "2026-11-23T12:47:29Z",
-      "url": "https://ballkeep.com/news/mike-evans-td-parker-washington-non-td-raise-1f8ef150.html",
+      "headline": "Jaguars Week 11 injury report vs. Giants: Bhayshul Tuten injuries leave Jacksonville backfield in question?",
+      "slug": "bhayshul-tuten-ankle-foot-listed-injury-11-ryanohalloran-0e474a36",
+      "blurb": "Will Jaguars RB Bhayshul Tuten play in Week 11 vs.",
+      "summary": "Will Jaguars RB Bhayshul Tuten play in Week 11 vs. Jaguars game status: Bhayshul Tuten returns to practice on Friday The Florida Times-Union Jaguars RBs Bhayshul Tuten, Chris Rodriguez were limited in practice Wednesday NBC Sports Aggregated from Yahoo Sports, The Florida Times-Union, NBC Sports, Fantasy Footballers Podcast, ProFootball Talk on NBC Sports and 6 more.",
+      "category": "injury",
+      "updated": "2026-11-21T17:33:35Z",
+      "url": "https://ballkeep.com/news/bhayshul-tuten-ankle-foot-listed-injury-11-ryanohalloran-0e474a36.html",
       "players": [
         {
-          "key": "parker washington",
-          "name": "Parker Washington",
-          "slug": "parker-washington",
-          "pos": "WR",
+          "key": "bhayshul tuten",
+          "name": "Bhayshul Tuten",
+          "slug": "bhayshul-tuten",
+          "pos": "RB",
           "team": "JAX"
         },
         {
-          "key": "mike evans",
-          "name": "Mike Evans",
-          "slug": "mike-evans",
-          "pos": "WR",
-          "team": "SF"
+          "key": "chris rodriguez",
+          "name": "Chris Rodriguez",
+          "slug": "chris-rodriguez",
+          "pos": "RB",
+          "team": "JAX"
+        },
+        {
+          "key": "geno smith",
+          "name": "Geno Smith",
+          "slug": "geno-smith",
+          "pos": "QB",
+          "team": "NYJ"
         }
       ],
       "sources": [
         {
-          "title": "Mike Evans TD and Parker Washington non-TD raise more questions about NFL catch rules",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mike-evans-td-and-parker-washington-non-td-raise-more-questions-about-nfl-catch-rules",
+          "title": "Bhayshul Tuten returns to practice, has no injury designation for Sunday",
+          "url": "https://sports.yahoo.com/articles/bhayshul-tuten-returns-practice-no-211647705.html",
+          "kind": "article",
+          "publisher": "ProFootball Talk on NBC Sports"
+        },
+        {
+          "title": "Bhayshul Tuten returns to practice, has no injury designation for Sunday",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/bhayshul-tuten-returns-to-practice-has-no-injury-designation-for-sunday",
           "kind": "article",
           "publisher": "PFT feed"
-        }
-      ]
-    },
-    {
-      "headline": "Texans WR Nico Collins (hamstring) activated from injured reserve, remains questionable vs. Lions",
-      "slug": "texans-wr-nico-collins-hamstring-activated-injured-reserve-282f45a8",
-      "blurb": "Texans WR Nico Collins injured his hamstring at Wednesday's practice | 'The NFL Report' NFL.com",
-      "summary": "Texans WR Nico Collins injured his hamstring at Wednesday's practice | 'The NFL Report' NFL.com Source - Texans' Nico Collins (hamstring) uncertain for Week 2 ESPN Nico Collins in danger of missing Week 2 after injuring his hamstring at practice Yahoo Sports Aggregated from NFL.com, ESPN, Yahoo Sports, RotoBaller.",
-      "category": "roster",
-      "updated": "2026-11-21T21:24:00Z",
-      "url": "https://ballkeep.com/news/texans-wr-nico-collins-hamstring-activated-injured-reserve-282f45a8.html",
-      "players": [
-        {
-          "key": "nico collins",
-          "name": "Nico Collins",
-          "slug": "nico-collins",
-          "pos": "WR",
-          "team": "HOU"
         },
         {
-          "key": "will shipley",
-          "name": "Will Shipley",
-          "slug": "will-shipley",
-          "pos": "RB",
-          "team": "PHI"
-        }
-      ],
-      "sources": [
-        {
-          "title": "Texans WR Nico Collins (hamstring) activated from injured reserve, remains questionable vs. Lions",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM080emhkcUJnSFpjWXJvZ1VWYlZrVDYxUjJUUHh0RG1FYUE1OV9TOGxnbW50dHN0RHdqblZQQlR0RzdtUzNwZVkxUk52WVJSeUQxVFBNYmdRRDRIbXh0X1VHaHlGdGFWTEh0OUNFZHNUTmhjRFNBanJpSlczWk9TV3VuRTJNVUhVUllBeEJsOE9BNVVXbzhwU2xTRUFHblpXeEhMVmU3TjdlNlBLTnQxVHp4aEM2MWdNemc?oc=5",
+          "title": "Bhayshul Tuten (ankle/foot) off injury report for Jags-Giants https://t.co/44F4EXplYg - X",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8xOG5XMWttbmlMQzZyM25weGduQ0Zka1ljX3RtOUZ2MzhyODVBZzBpUGUxamt5QWZ1OUVXRXU5MjdaZ1ZYdXVwOEtwUnhTT2ZzTEF4SllTaHUzNmpKYkJ4OENLTQ?oc=5",
           "kind": "article",
-          "publisher": "NFL.com"
+          "publisher": "X"
         },
         {
-          "title": "Texans WR Nico Collins injured his hamstring at Wednesday's practice | 'The NFL Report'",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYTg0MGxPNHRhdVNWVC01TUtJYlF3ajU2dUhZRUc1U2trMThCT2xUUDJHc0pRNXBXSnQ5TUlvcGlpcVVyOUJqSkZEVTY4WFg4WlVtcDk1bjA4dHJ3dWFVNDluMC1xbGYxYk1rSDQyZnpWUGZKbkRlZm9wY0tKMGYyWHBTT1pkSjdEUFA4YnJTM2ZzZHNMNFU2aF81MUxzSVUtTjZqejhBODFRcWdoLUF3?oc=5",
+          "title": "Bhayshul Tuten (ankle, foot) not listed on injury report for Week 11, per @ryanohalloran. - X",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1QenJTbzliT1U2UndITWRodHZpRFdzN3lPQ0oxa1hwMDNPTzhHZm5wNFBUU2FqYkZSQUo3ZkNNY0pyUGVRaGtKNzNWLXZ1eUhnT0lQRlNwdW1DbTZ1VXlZaEN3?oc=5",
           "kind": "article",
-          "publisher": "NFL.com"
+          "publisher": "X"
         },
         {
-          "title": "Source - Texans' Nico Collins (hamstring) uncertain for Week 2",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPT24zS0pjZXJBQmkyTVpVVHhwZWZSbldEWEtHMVB4alRueVJZVkVvSS12UjRTeml2M2U0SzVObXpuQXNiSVJqVGhQODlUS01ScXpRN3B2TUJzdlNlWTJrMURmQmljempjS1d4SXYwcjdsaEY4bXdpaEFGVmUzU2h6TGh5ZVNSSHhFZEFydThFcjBHNlBjVzlFZWNkOW5ZWVE?oc=5",
+          "title": "#Jaguars ruled out Robert Hainsey & BJ Green (21 Day Window to Return) vs #Giants \ud83d\udea8 No designation for Bhayshul Tuten \ud83d\udea8 Danny Striggow (concussion) & Matt Dickerson (neck) are Questionable Cole Van Lanen did pop up as Limited on Injury Report tod - X",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ZZ3BGX2pKUFpTOUs1TjFDOVRrNndsN0tDMWM0Zl93eldwOFFsb29Sc3JhUzR3RXM2bkgxaGRabUdoZmdpVkFOYTZTNkYzc0JsV3dFME9TMHR6OXBNMFF2bkR3?oc=5",
           "kind": "article",
-          "publisher": "ESPN"
+          "publisher": "X"
         },
         {
-          "title": "Nico Collins in danger of missing Week 2 after injuring his hamstring at practice",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMV9yNzhCeTVGZWZTVHRQYW5qc0prUWRlNkpfMjhHREtGTVZGTlBwOU5UaHl0Z3R1RFFpQzE4bHkxMVBzNjFsdlhGTHByOUVsY055Q01lbUtkU1FSbFJiYk43TUZTOHRtbnIwc3RHVWhILWZJbVU2RUMtLVFmSnk5bWV0Uks2WVZKV3c0dFRtQTlVR096TERvcXN3bFZDSGI2QnlabHFDa0FfV2ZyaU1vc0JDbng5Q1I4NGlhOVFvS3V0ZTBnWXFNSTVuUkxaZw?oc=5",
+          "title": "Jaguars Week 11 injury report vs. Giants: Bhayshul Tuten injuries leave Jacksonville backfield in question?",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZmd3QjFSR0JadnB2U3J1UVZJNG0zSl9aa3J6N2F4LUZHLXhhdXdTbW5RcGU3a29tTkZpQl9TaTFjT1paRWZ1VFkwTFN5a0g1RVVHcEVpaGg5S0R4RkRWUVoxRm1OTkRpX0xmQ05EX0VpcTFTTzRNLXJBYWNfSnFEZWw4VUE?oc=5",
           "kind": "article",
           "publisher": "Yahoo Sports"
         },
         {
-          "title": "Texans lose Nico Collins to concussion in win over Steelers",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMWNiVWZKVjUxRHd0eGVhZl91MC1xXzJTcDY2NEZmYmx1U3lsZHZGcFYzWldGRUJIUmQxMnk3TVdDcWpYRmV1LUpFSWJCeUV2MUk4R2pzblZZekxSS1Uxa0Q2eUFUcWtoN25JUjNZNE42S0Rtck1HS1RPLVJ5bGlUb3MxNXU0aFlBbWFFSE1zYWp2bGs?oc=5",
+          "title": "Bhayshul Tuten Injury Update Raises Concerns for Week 11 Fantasy Outlook",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbFhTMzNmRkdDT1ZKazJoSVN1ZWx6RkpPdWFwXzRaMl9rVUE4MkVXUWpHOW92U1huZHdxSF9MTmpweVh0Vjk1MEVqZkV3bFk0VzBObDlSUWwyOHdXMktTcDZRNV85OGV4XzhMMmJqVHc3NWdjeFhDQl9vUzVudDFZSFAtOVdJb2dRaGhaaEl1VzNMXzFzbTlnZXBKVTdRWWZDU1laaEx0NjZfNzQ4dFBjTHRiSQ?oc=5",
           "kind": "article",
-          "publisher": "ESPN"
+          "publisher": "Sports Illustrated"
         },
         {
-          "title": "Texans WR Nico Collins (hamstring) placed on injured reserve, will miss at least four games",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYTZOTThqUE0ybWg1TGpRRnA1NGh4eVhnampZTUR3VzZUVXJRc05lb3BDazU3RHFaakU1RC1qUk1reEtOZV9SV3dkbHNTaG16QUtzTUtVcGlvNkJDTUM0cktSTTUxUWh3bXFwT0lRSDFaaFNZNGcxSTBVX181bmVCaWVqV3h2Z3kxSFRiaEh1dkNpUERtUkpsbkc4WnFWcDl0TTV1aG00Q0pOd0UtN25yNlFaWQ?oc=5",
+          "title": "Jaguars-Giants Injury Report: A Healthy Bhayshul Tuten Now Holds the Key to Week 11 Clash",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObk8zd0dlZGxHNThfOXFyblF3UjRmQVphWVhaOTJjXzFoWTVqQlpIXzh1M0JTTWR0RnhCVWxXMzBLSUlFZDcxZU1IRkFsSGt4N1JET3AySDZZdVRCbkZjdTdmOGxyU05IZlRSNHRFNkFKUi1uaTFyRExxOGJOUkkybEpaOGVJZFhOdUl6TWZvRkE2U1daWm5YWnBVLW16SldhRUExWlU5ZzNQWURQdXV3N2VSNkdBYTZ4RlNNd2gzVFlsREFPTE1GSg?oc=5",
           "kind": "article",
-          "publisher": "NFL.com"
+          "publisher": "Sports Illustrated"
         },
         {
-          "title": "Texans wide receiver Nico Collins week to week after injuring hamstring vs. Bills",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUzYyMHF0V2licmx1Q0VHUlAxNk96UXNUTU12MDZPWHRCZ2hmUW5xX1NrT0Z3amdZc3JzUU55M0xCMk9uMUxubWZtelJfeER5YWs1ZE93bFcyQkpsNXkwUHlqajZlTkVhbHpramJRMGJCOHptZHQzZWgteG9TUnRBZjl4WFg0dHNxQ0RkRlU0OTlCNXREdGdXUkVPZU42cDZacnhKYjdyOXM?oc=5",
+          "title": "Bhayshul Tuten Injury Update: Is Jaguars RB Playing This Week vs. Giants?",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUUpyc2tXc3hXeGdkdk9hRXFCZ1hmM1d0ZXpmZGIxRVBNSmRlaVRwNDBtZzNTMktmN0dfMHprdmcwVlpmaHNFZmtxWDVqLXdXMUV2UldMR01Xc0FzQzRmYm9Ub2d5ZlBDbVl1TDVwNng5cWV1eDNWdEZTaEY3akMwcnYwMDJlUlhGWVF4NTJMQmNqbEJzUl81eUxIU3ZJVUNham5JZlhnazR4Uk15UkFXYnNlNDU?oc=5",
           "kind": "article",
-          "publisher": "NFL.com"
+          "publisher": "PrizePicks"
         },
         {
-          "title": "Texans WR Nico Collins (calf) ruled out vs. Bengals",
-          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE83bTU1MUZQM3RXc2QxZDhKS0dSWjJ3TERIQ1p3UUU3Nk1FakxfQzRfMnUzQ3FIUG5Zb3B3d1BXeGVEUkRVNUl6ajVaWV85RDVSRUY1aGN3cnpJX3hyZDRBVDVheWUybjB2NEdHNDlqSk8weGpRQjBockRTRm0tQQ?oc=5",
+          "title": "Bhayshul Tuten (ankle/foot) downgraded to non-participant Thursday",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeHYtMzdGWURMaXE2RXBwSnBQRWVnYXVsVnNRbk1FbGxlYVRRY0Z4NEZrNHROQm9QR1pCMnZwQWJLbTZBbmh5M1pTSkd2R1VHWi0wQWJRLUhKNXBmN0x3LVVvUmRMaTJDLW1SbnlTRE9GM2dsdG42S0MxWmR5SThWdFNjZVNwNnhyR25JVUNmX3VQUWU2bEs1S3hMdVAweFlGVFlPbzA4VExTM2VtUEpLM9IBtgFBVV95cUxNNWxEVENTX29OVzdxZEVoa0VDU1FWUm1UajdkOGg4VW5SZUExdUJibzVHMl9GSlZJUzBmdWVOTFlPTzVOY0s4dHozZEMwWXRJWDJ0NXZIUzY4QWVPME5fazJHdjNrNk1TS21YSVEyLXk3OG91TGpmTUVLNzd1MjZNNUJKM1hCNWQ1T1h5eVJQaEdLWGkzX0hGMGpEMFNXM0t0QW9XTWlXLWVCZUJhWUp3WHBqckpudw?oc=5",
           "kind": "article",
-          "publisher": "NFL.com"
+          "publisher": "FantasyPros"
         },
         {
-          "title": "How the Texans plan to navigate the loss of WR Nico Collins",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPc1VNUjIxc1pVbEktSTktaXRPczAyTGRuLVFMTGJNeWk4T2tTRWlkNTg3MlBpV0hPZEtNQW1xYlhUME5QRVBCVXQ0RkVlYWtOV1FfbG9odEV4MmszVWlwUGZjSXNna1h2YkFlN3h5U0ZXU1lUdDVmZkZKcGN0TDJiV1VoM19lMDRoZTdyeWt4Qk9Fa3N3cFpqcnVIY0FyOVhuMEd4bnpGUGxHc0V6?oc=5",
+          "title": "Jaguars Get Bhayshul Tuten Injury Update Before Giants Game",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVTVMbWRiLXoybEZVT2pJUk0xR0JhNF90WVo2QXAweWV0cEtnVjJIakE3aDhUZ1NILXRyaC1DM3BtY0E2MF9sOFJZMl9mYUE5a0ZOSHRtMENMX21DX0w4Vy1ybTVsUC1tUEJsVUNENDgxWldoYWJMVnhPVGRGaFotcDV5c3F3MUE1NGs5RXVOU25MOXZlN0E?oc=5",
           "kind": "article",
-          "publisher": "ESPN"
-        }
-      ]
-    },
-    {
-      "headline": "49ers Week 11 injury report vs. Vikings: Mike Evans nearing return for San Francisco",
-      "slug": "49ers-11-injury-vikings-mike-evans-nearing-return-90ea8ca9",
-      "blurb": "Join our live chat for SNF during Vikings vs.",
-      "summary": "Mike Evans: Join our live chat for SNF during Vikings vs. 49ers Week 11 injury report vs. Vikings: Mike Evans nearing return for San Francisco Yahoo Sports Aggregated from SB Nation, Yahoo Sports.",
-      "category": "injury",
-      "updated": "2026-11-23T00:30:00Z",
-      "url": "https://ballkeep.com/news/49ers-11-injury-vikings-mike-evans-nearing-return-90ea8ca9.html",
-      "players": [
-        {
-          "key": "mike evans",
-          "name": "Mike Evans",
-          "slug": "mike-evans",
-          "pos": "WR",
-          "team": "SF"
-        }
-      ],
-      "sources": [
-        {
-          "title": "SNF live chat: Minnesota Vikings vs. San Francisco 49ers",
-          "url": "https://sports.yahoo.com/articles/snf-live-chat-minnesota-vikings-003000533.html",
-          "kind": "article",
-          "publisher": "SB Nation"
+          "publisher": "Heavy.com"
         },
         {
-          "title": "49ers Week 11 injury report vs. Vikings: Mike Evans nearing return for San Francisco",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaE90bGx3SnhHaHpKV2JWTWlxQzlOUGdSR2FvTjNaTzU1Y3h4Qld1bTI1ekoyOFVxbmJKUEhzai1ZX3pGLS05OHlMbElUdFVqVnVsSXplSnZ5eWRjeWZ2eEdYNVpzWUxzLUNKUnBFUkZyZmQzVmFzeVRGRjhUcFNXU1R3?oc=5",
+          "title": "Will Jaguars RB Bhayshul Tuten play in Week 11 vs. Giants?",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQQTA5QktiY1l3bnNPNjFxeFY4OUNBQ2pfZWtBZElQT3lqNWRoLUNrSldEeVo3c2twVmpqNHVQZ0xqUXYzTndkX0U4cGxpcEJiay1UVnd5X0VfT3J5VGhySUVleHplVFJrckRJZ0tud2R5U1RYWjd3UkFVNmdOVXoxeG1VTkwxZw?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Jaguars game status: Bhayshul Tuten returns to practice on Friday",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSVhQWG5XRjlTRUlmNzZJaGx1bHFkMk5vOUd0VTJjbnRlM0FJcFUwRjRSeTNoZDZQRDVkVVNWSTdDUHBVaHlaLUtOUVhTS2tFZXU1WDVPbS1zdUMxWV91VldGUE1PcTJWR0hUUVFubW5JSDZXTnREWWdIRC1FUnVkUEVucE14VUo3U19NeEhCQjk4cDlVYjAzbEFFUnhOSXN2bHV1LTlkdUltVXV0aGhZS3QxcVozTjJ5OTZ0NXFPN01oLUZrS2Q4?oc=5",
+          "kind": "article",
+          "publisher": "The Florida Times-Union"
+        },
+        {
+          "title": "Jaguars RBs Bhayshul Tuten, Chris Rodriguez were limited in practice Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNUdLclZsTl9OVm5lT1dXMXlrdUR1bzd2SVZjajFjZmdENVI1Um1Pdl85WWhoU0w3RVhiSk1DY29zWWJmRi12d3o0em9jaWdlbzZqd1RHalZEelZENXFFSkVvUE0zM0hhYzlIaTZ6TS1vc2l3MDVpSVMxeUlncndBWmdpbkI5WXh3MlRIWWU2Nmk1eUVHWDJSZ1drR1dadmRPZmJ2RHd2NTBuTlBDWFk1bUFsR0RIQm81T0pSbjhoUUJkNUptRlRCRVVaRllxWGxsRGFkZWR3?oc=5",
+          "kind": "article",
+          "publisher": "NBC Sports"
+        },
+        {
+          "title": "Bhayshul Tuten a limited participant Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTW5VNnFXaVpfSnNqMU5Zd2NQbHk4NGhka2RZUGN0dDlqcXhFZDlGZHR4bjlERldsbGI2cFVzb0RTYmpyX21ENy1xN2NVNm8tc212SHVQd203LTdGV0ladEhlbVNtMWR6SFhpMTVocU1FZFZYdlNwUloxSE9JUDJfc2d0MHBPU2xsOF9NcXMxbzMwN1FRY21RTw?oc=5",
+          "kind": "article",
+          "publisher": "Yahoo Sports"
+        },
+        {
+          "title": "Bhayshul Tuten Works off to side at practice",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR1E1Yk42S3c4UWRWZDdTaXZ4eV95VXZUcWdiQmlMVElyamRsNEhSQ0RsY3hObnZ2dWRzVklVc2Nfd0FrXzdLRWMxSmgxbE1XT25LYVJZczJwWDkyNGxqczZQZTlSRmU4MnAtQUxTNmhZSk1PblIzVW9hZXFWQUFxZUxJMFJTdTlEeVBJSGtaWmRVaW5kaTRPQWVSYw?oc=5",
+          "kind": "article",
+          "publisher": "Fantasy Footballers Podcast"
+        },
+        {
+          "title": "Bhayshul Tuten Logs limited practice Wednesday",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOenhGRmdLMTU1ZW9Ia2FhazVIMmIyWEpFZ3ZTZTBVSVR1dWNiM3UxYjV5UTRDRHJTcjI4WXlTdlJUOTlBZ0VHdmJ6X1dRekFfV0JNX2F2c3hKX0ZzZU5uSE1qYkpTR1pNVmJVWWplT2FUci1PanpsUHRNNEFCbHpvaG8ySHFYSUxjM2Joc1QxNERiTy1Tb2lkVjQwcmN0dw?oc=5",
+          "kind": "article",
+          "publisher": "Fantasy Footballers Podcast"
+        },
+        {
+          "title": "Bhayshul Tuten Could do some running Friday",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZTEwU01MZVNjclJnN0RCY3RockhUcEJNTzdtWE1ubkJSWVgxOXpDYmdycUhSUE04T1BQX3UwMlpDSlZ1RkZHeUdJeFdZcTNQOGRMbWxWV0RCbTZJRURFN0dKWVVJdmhWeW16bTdCdjN1SzdraWhkd25mNWJSWGFBNW9Ya2R4bUZQc21TVnhuVE5wQ1pYdGhxQndR?oc=5",
+          "kind": "article",
+          "publisher": "Fantasy Footballers Podcast"
+        },
+        {
+          "title": "Bhayshul Tuten Sidelined for practice Thursday",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdnV3VmRFd25Wa2FwVFhYV0pWRC1aaTRNb0JqU0ZVNGZiZDFGSUF6LVJJTjQ3ZDhramdUV3NNdWhmUkRZVFUwbl9tRHY0SGc5VTdDYmlFcHQ5TFlGeFNoa29XSW1SUjhFb1k1akxNbFE4VWdUVkhGX3dVcDJfbXhNb0NzRVVJS0xSeXQzUE41c0Ryd2UwUGNWbDVnbVBWUQ?oc=5",
+          "kind": "article",
+          "publisher": "Fantasy Footballers Podcast"
+        },
+        {
+          "title": "Bhayshul Tuten injury update: Will Jaguars RB play vs. Titans?",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWWNGTVhNTU5qM0VkcjlScmZGaHNtYzNNMk5iRm9LeDZldXJTc2VFZmZNSFI3UENjcjlqNjZ2Q1NuZnVRczZMQnRxQUJpQUVKbFk5QVAzYlB0UHpjb29mOW9JbkEwLWV0VkVHR21HSXZIeWdDYTRSX1lJWFVqeWladG5QbFNxMDFu?oc=5",
           "kind": "article",
           "publisher": "Yahoo Sports"
         }
@@ -114197,34 +114148,83 @@
       ]
     },
     {
-      "headline": "Kyren Williams Injury Update: Rams RB\u2019s Week 12 Status Revealed",
-      "slug": "kyren-williams-injury-rams-rb-s-12-status-3e04d3c4",
-      "blurb": "Kyren Williams Injury Update: Rams RB\u2019s Week 12 Status Revealed Yahoo Sports",
-      "summary": "Kyren Williams Injury Update: Rams RB\u2019s Week 12 Status Revealed Yahoo Sports Kyren Williams Limited at practice Fantasy Footballers Podcast Aggregated from Yahoo Sports, Fantasy Footballers Podcast.",
-      "category": "injury",
-      "updated": "2026-11-22T23:53:45Z",
-      "url": "https://ballkeep.com/news/kyren-williams-injury-rams-rb-s-12-status-3e04d3c4.html",
+      "headline": "Texans WR Nico Collins (hamstring) activated from injured reserve, remains questionable vs. Lions",
+      "slug": "texans-wr-nico-collins-hamstring-activated-injured-reserve-282f45a8",
+      "blurb": "Texans WR Nico Collins injured his hamstring at Wednesday's practice | 'The NFL Report' NFL.com",
+      "summary": "Texans WR Nico Collins injured his hamstring at Wednesday's practice | 'The NFL Report' NFL.com Source - Texans' Nico Collins (hamstring) uncertain for Week 2 ESPN Nico Collins in danger of missing Week 2 after injuring his hamstring at practice Yahoo Sports Aggregated from NFL.com, ESPN, Yahoo Sports, RotoBaller.",
+      "category": "roster",
+      "updated": "2026-11-21T21:24:00Z",
+      "url": "https://ballkeep.com/news/texans-wr-nico-collins-hamstring-activated-injured-reserve-282f45a8.html",
       "players": [
         {
-          "key": "kyren williams",
-          "name": "Kyren Williams",
-          "slug": "kyren-williams",
+          "key": "nico collins",
+          "name": "Nico Collins",
+          "slug": "nico-collins",
+          "pos": "WR",
+          "team": "HOU"
+        },
+        {
+          "key": "will shipley",
+          "name": "Will Shipley",
+          "slug": "will-shipley",
           "pos": "RB",
-          "team": "LAR"
+          "team": "PHI"
         }
       ],
       "sources": [
         {
-          "title": "Kyren Williams Injury Update: Rams RB\u2019s Week 12 Status Revealed",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLWVyOWpuSVN1QnJMS3JkN2w1UzgzX19MR1NDU2Y4S1l5MHcwclVaQVN0c0F6WlAxUHB4ajRRTjlBd2hqcWUxakJYdUhQRGZyUjh2NExtRlV2MWhPNkNKaENSZ2N0ajNvRUV0Z2I0T3E5SzUwRGZJRnBfZ3ByaEZ1SEhlQnI?oc=5",
+          "title": "Texans WR Nico Collins (hamstring) activated from injured reserve, remains questionable vs. Lions",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQM080emhkcUJnSFpjWXJvZ1VWYlZrVDYxUjJUUHh0RG1FYUE1OV9TOGxnbW50dHN0RHdqblZQQlR0RzdtUzNwZVkxUk52WVJSeUQxVFBNYmdRRDRIbXh0X1VHaHlGdGFWTEh0OUNFZHNUTmhjRFNBanJpSlczWk9TV3VuRTJNVUhVUllBeEJsOE9BNVVXbzhwU2xTRUFHblpXeEhMVmU3TjdlNlBLTnQxVHp4aEM2MWdNemc?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        },
+        {
+          "title": "Texans WR Nico Collins injured his hamstring at Wednesday's practice | 'The NFL Report'",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYTg0MGxPNHRhdVNWVC01TUtJYlF3ajU2dUhZRUc1U2trMThCT2xUUDJHc0pRNXBXSnQ5TUlvcGlpcVVyOUJqSkZEVTY4WFg4WlVtcDk1bjA4dHJ3dWFVNDluMC1xbGYxYk1rSDQyZnpWUGZKbkRlZm9wY0tKMGYyWHBTT1pkSjdEUFA4YnJTM2ZzZHNMNFU2aF81MUxzSVUtTjZqejhBODFRcWdoLUF3?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        },
+        {
+          "title": "Source - Texans' Nico Collins (hamstring) uncertain for Week 2",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPT24zS0pjZXJBQmkyTVpVVHhwZWZSbldEWEtHMVB4alRueVJZVkVvSS12UjRTeml2M2U0SzVObXpuQXNiSVJqVGhQODlUS01ScXpRN3B2TUJzdlNlWTJrMURmQmljempjS1d4SXYwcjdsaEY4bXdpaEFGVmUzU2h6TGh5ZVNSSHhFZEFydThFcjBHNlBjVzlFZWNkOW5ZWVE?oc=5",
+          "kind": "article",
+          "publisher": "ESPN"
+        },
+        {
+          "title": "Nico Collins in danger of missing Week 2 after injuring his hamstring at practice",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOMV9yNzhCeTVGZWZTVHRQYW5qc0prUWRlNkpfMjhHREtGTVZGTlBwOU5UaHl0Z3R1RFFpQzE4bHkxMVBzNjFsdlhGTHByOUVsY055Q01lbUtkU1FSbFJiYk43TUZTOHRtbnIwc3RHVWhILWZJbVU2RUMtLVFmSnk5bWV0Uks2WVZKV3c0dFRtQTlVR096TERvcXN3bFZDSGI2QnlabHFDa0FfV2ZyaU1vc0JDbng5Q1I4NGlhOVFvS3V0ZTBnWXFNSTVuUkxaZw?oc=5",
           "kind": "article",
           "publisher": "Yahoo Sports"
         },
         {
-          "title": "Kyren Williams Limited at practice",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTjZJWXdFeXlOMjBsaFNWMVpxcWZIbHA2Mm03X1g2Z1BQMS1KSFlXRnk0RndqYVdOLTI5TTdJR0pVUjNnSllfUWVqOG9PYjZ5UUxIaFI2OC1ZTE1IUjdQNGpKZGJRSEVKSUtaTkptX2FoOE14elFuV05ZbHZMS29jdXNnazdRLWRXX3BIelRn?oc=5",
+          "title": "Texans lose Nico Collins to concussion in win over Steelers",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMWNiVWZKVjUxRHd0eGVhZl91MC1xXzJTcDY2NEZmYmx1U3lsZHZGcFYzWldGRUJIUmQxMnk3TVdDcWpYRmV1LUpFSWJCeUV2MUk4R2pzblZZekxSS1Uxa0Q2eUFUcWtoN25JUjNZNE42S0Rtck1HS1RPLVJ5bGlUb3MxNXU0aFlBbWFFSE1zYWp2bGs?oc=5",
           "kind": "article",
-          "publisher": "Fantasy Footballers Podcast"
+          "publisher": "ESPN"
+        },
+        {
+          "title": "Texans WR Nico Collins (hamstring) placed on injured reserve, will miss at least four games",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYTZOTThqUE0ybWg1TGpRRnA1NGh4eVhnampZTUR3VzZUVXJRc05lb3BDazU3RHFaakU1RC1qUk1reEtOZV9SV3dkbHNTaG16QUtzTUtVcGlvNkJDTUM0cktSTTUxUWh3bXFwT0lRSDFaaFNZNGcxSTBVX181bmVCaWVqV3h2Z3kxSFRiaEh1dkNpUERtUkpsbkc4WnFWcDl0TTV1aG00Q0pOd0UtN25yNlFaWQ?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        },
+        {
+          "title": "Texans wide receiver Nico Collins week to week after injuring hamstring vs. Bills",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUzYyMHF0V2licmx1Q0VHUlAxNk96UXNUTU12MDZPWHRCZ2hmUW5xX1NrT0Z3amdZc3JzUU55M0xCMk9uMUxubWZtelJfeER5YWs1ZE93bFcyQkpsNXkwUHlqajZlTkVhbHpramJRMGJCOHptZHQzZWgteG9TUnRBZjl4WFg0dHNxQ0RkRlU0OTlCNXREdGdXUkVPZU42cDZacnhKYjdyOXM?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        },
+        {
+          "title": "Texans WR Nico Collins (calf) ruled out vs. Bengals",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE83bTU1MUZQM3RXc2QxZDhKS0dSWjJ3TERIQ1p3UUU3Nk1FakxfQzRfMnUzQ3FIUG5Zb3B3d1BXeGVEUkRVNUl6ajVaWV85RDVSRUY1aGN3cnpJX3hyZDRBVDVheWUybjB2NEdHNDlqSk8weGpRQjBockRTRm0tQQ?oc=5",
+          "kind": "article",
+          "publisher": "NFL.com"
+        },
+        {
+          "title": "How the Texans plan to navigate the loss of WR Nico Collins",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPc1VNUjIxc1pVbEktSTktaXRPczAyTGRuLVFMTGJNeWk4T2tTRWlkNTg3MlBpV0hPZEtNQW1xYlhUME5QRVBCVXQ0RkVlYWtOV1FfbG9odEV4MmszVWlwUGZjSXNna1h2YkFlN3h5U0ZXU1lUdDVmZkZKcGN0TDJiV1VoM19lMDRoZTdyeWt4Qk9Fa3N3cFpqcnVIY0FyOVhuMEd4bnpGUGxHc0V6?oc=5",
+          "kind": "article",
+          "publisher": "ESPN"
         }
       ]
     },
