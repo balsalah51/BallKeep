@@ -491,8 +491,16 @@ def fetch_fangraphs(cache: dict | None = None, force: bool = False) -> dict:
     ):
         return cache
     print("fetching FanGraphs depth charts + Depth Charts projections")
-    teams = fetch_fg_depth_charts()
-    projections = fetch_fg_projections()
+    try:
+        teams = fetch_fg_depth_charts()
+        projections = fetch_fg_projections()
+    except Exception as exc:
+        # FanGraphs occasionally 403s. Keep a prior depth-chart cache rather
+        # than failing the whole BaseKeep / DeepBase rebuild.
+        if fg.get("teams") and fg.get("projections"):
+            print(f"  keep existing FanGraphs cache ({fg.get('fetched')}): {type(exc).__name__}: {exc}")
+            return cache
+        raise
     cache["fangraphs"] = {
         "fetched": date.today().isoformat(),
         "teams": teams,

@@ -995,6 +995,15 @@ def load_fp_nba() -> dict:
     return {bk_norm(n): i for i, n in enumerate(names, 1) if n}
 
 
+def load_fp_nba_ros() -> dict:
+    """In-season FantasyPros ROS overall — fresher than the dynasty ECR for The Board."""
+    path = ROOT / "data" / "ranks" / "fp-nba-ros.json"
+    if not path.exists():
+        return {}
+    names = json.loads(path.read_text())
+    return {bk_norm(n): i for i, n in enumerate(names, 1) if n}
+
+
 def remap(keys, score_fn, cap=None):
     scored = [(score_fn(k, i), i, k) for i, k in enumerate(keys)]
     scored.sort()
@@ -1055,7 +1064,7 @@ def build_sources(meta, order):
         "BBall-Index": remap(order, cats, cap=120),
         "NBA.com Fantasy": remap(order, vet, cap=100),
         "Razzball": remap(order, points, cap=130),
-        "Basketball Reference ROS": remap(order, vet, cap=220),
+        "Basketball Reference ROS": load_fp_nba_ros() or remap(order, vet, cap=220),
         "Draft Sharks NBA": remap(order, prospects, cap=90),
         "Late-Round Fantasy": remap(order, wings, cap=110),
     }
@@ -1110,9 +1119,18 @@ def filter_group(rows, groups):
 
 
 def redraft_board(keep):
-    """This-year basketball redraft board."""
+    """This-year basketball redraft board.
+
+    Prefer FantasyPros ROS overall when the scrape landed. Names the ROS tape
+    skipped fall back to an age-adjusted Keep order so the board stays deep.
+    """
+    ros = load_fp_nba_ros()
     scored = []
     for r in keep:
+        key = bk_norm(r.get("name") or "")
+        if ros and key in ros:
+            scored.append((0, float(ros[key]), r.get("name") or "", r))
+            continue
         try:
             age = int(r.get("age") or 26)
         except (TypeError, ValueError):
@@ -1124,10 +1142,11 @@ def redraft_board(keep):
             adj += 7
         if age >= 34:
             adj -= 6
-        scored.append((adj, r))
-    scored.sort(key=lambda x: (x[0], x[1]["name"]))
+        # Tier 1 = not on ROS; sort after every ROS name.
+        scored.append((1, float(adj), r.get("name") or "", r))
+    scored.sort(key=lambda x: (x[0], x[1], x[2]))
     out = []
-    for i, (_s, r) in enumerate(scored, 1):
+    for i, (_tier, _s, _name, r) in enumerate(scored, 1):
         row = dict(r)
         row["bk"] = i
         row["value"] = bk_value(i)

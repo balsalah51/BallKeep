@@ -90,11 +90,13 @@ def main():
     skenes_html = (root / "bb/players/paul-skenes.html").read_text()
     assert "Pitch chart" in skenes_html
     pitch = cat.raw.get("pl_pitch") or []
-    assert len(pitch) == 405, f"pitch {len(pitch)}"
-    assert pitch[0]["name"] == "Erling Haaland"
-    assert pitch[1]["name"] == "Bruno Fernandes"
+    assert len(pitch) == 461, f"pitch {len(pitch)}"
+    # The Pitch is live Sleeper BPL scoring on current FPL counting stats
+    # (mid-season 2026/27 favors high-save GKPs until attackers pile goals).
+    assert pitch[0]["name"] == "Konstantinos Tzolakis"
+    assert pitch[1]["name"] == "James Trafford"
     premier = cat.raw.get("pl_premier") or []
-    assert len(premier) == 405, f"premier {len(premier)}"
+    assert len(premier) == 461, f"premier {len(premier)}"
     assert premier[0]["name"] == "Erling Haaland"
     assert premier[1]["name"] == "Bruno Fernandes"
     by_name = {r["name"]: r["bk"] for r in premier}
@@ -123,10 +125,10 @@ def main():
     assert cat.one("declan rice", sport="soccer")["name"] == "Declan Rice"
     assert cat.one("rice", sport="football")["name"] == "Rashee Rice"
     assert len(cat.raw.get("pl_fwd") or []) >= 40
-    assert len(cat.raw.get("pl_mid") or []) == 190
-    assert len(cat.raw.get("pl_def") or []) == 135
-    assert len(cat.raw.get("pl_gkp") or []) >= 30
-    assert 400 <= len(cat.raw.get("pl_players") or []) <= 420
+    assert len(cat.raw.get("pl_mid") or []) == 221
+    assert len(cat.raw.get("pl_def") or []) == 161
+    assert len(cat.raw.get("pl_gkp") or []) >= 20
+    assert 450 <= len(cat.raw.get("pl_players") or []) <= 480
     tpl = cat.trade("plpitch", "Bruno Fernandes", "Erling Haaland")
     assert tpl["label"] in {"Fair Trade", "Side A Wins", "Side B Wins"}
     tprem = cat.trade("plpremier", "Bruno Fernandes", "Erling Haaland")

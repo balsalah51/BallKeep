@@ -1,233 +1,233 @@
 {
   "source": "FantasyPros ROS DST ECR",
   "url": "https://www.fantasypros.com/nfl/rankings/ros-dst.php",
-  "updated": "11/23",
-  "experts": 13,
-  "scraped": "2026-11-23T21:01Z",
+  "updated": "11/26",
+  "experts": 11,
+  "scraped": "2026-11-27T00:12Z",
   "players": [
     {
       "name": "Minnesota Vikings",
       "team": "MIN",
       "rank": 1,
-      "ave": "1.18",
-      "fpts": 56.8
+      "ave": "1.33",
+      "fpts": 49.7
     },
     {
       "name": "Seattle Seahawks",
       "team": "SEA",
       "rank": 2,
-      "ave": "3.00",
-      "fpts": 55.2
+      "ave": "3.44",
+      "fpts": 48.3
     },
     {
       "name": "Denver Broncos",
       "team": "DEN",
       "rank": 3,
-      "ave": "4.36",
-      "fpts": 52.8
+      "ave": "3.56",
+      "fpts": 46.2
     },
     {
       "name": "Jacksonville Jaguars",
       "team": "JAX",
       "rank": 4,
-      "ave": "4.73",
-      "fpts": 52.8
+      "ave": "6.00",
+      "fpts": 46.2
     },
     {
       "name": "Pittsburgh Steelers",
       "team": "PIT",
       "rank": 5,
-      "ave": "6.27",
-      "fpts": 52.0
+      "ave": "7.11",
+      "fpts": 45.5
     },
     {
       "name": "Kansas City Chiefs",
       "team": "KC",
       "rank": 6,
-      "ave": "7.18",
-      "fpts": 51.2
-    },
-    {
-      "name": "Houston Texans",
-      "team": "HOU",
-      "rank": 7,
-      "ave": "8.09",
-      "fpts": 51.2
+      "ave": "8.00",
+      "fpts": 44.8
     },
     {
       "name": "San Francisco 49ers",
       "team": "SF",
+      "rank": 7,
+      "ave": "8.67",
+      "fpts": 44.8
+    },
+    {
+      "name": "Houston Texans",
+      "team": "HOU",
       "rank": 8,
-      "ave": "9.82",
-      "fpts": 50.4
+      "ave": "9.33",
+      "fpts": 44.1
     },
     {
       "name": "Tampa Bay Buccaneers",
       "team": "TB",
       "rank": 9,
-      "ave": "10.45",
-      "fpts": 50.4
-    },
-    {
-      "name": "Green Bay Packers",
-      "team": "GB",
-      "rank": 10,
-      "ave": "11.00",
-      "fpts": 49.6
-    },
-    {
-      "name": "Los Angeles Rams",
-      "team": "LAR",
-      "rank": 11,
-      "ave": "11.91",
-      "fpts": 48.0
-    },
-    {
-      "name": "Cleveland Browns",
-      "team": "CLE",
-      "rank": 12,
-      "ave": "12.45",
-      "fpts": 48.0
+      "ave": "9.89",
+      "fpts": 44.1
     },
     {
       "name": "Cincinnati Bengals",
       "team": "CIN",
-      "rank": 13,
-      "ave": "14.09",
-      "fpts": 47.2
+      "rank": 10,
+      "ave": "10.78",
+      "fpts": 43.4
+    },
+    {
+      "name": "Cleveland Browns",
+      "team": "CLE",
+      "rank": 11,
+      "ave": "11.67",
+      "fpts": 42.0
+    },
+    {
+      "name": "Green Bay Packers",
+      "team": "GB",
+      "rank": 12,
+      "ave": "14.11",
+      "fpts": 42.0
     },
     {
       "name": "New England Patriots",
       "team": "NE",
+      "rank": 13,
+      "ave": "14.33",
+      "fpts": 41.3
+    },
+    {
+      "name": "Los Angeles Rams",
+      "team": "LAR",
       "rank": 14,
-      "ave": "14.45",
-      "fpts": 47.2
-    },
-    {
-      "name": "Baltimore Ravens",
-      "team": "BAL",
-      "rank": 15,
-      "ave": "15.73",
-      "fpts": 47.2
-    },
-    {
-      "name": "Buffalo Bills",
-      "team": "BUF",
-      "rank": 16,
-      "ave": "15.91",
-      "fpts": 47.2
+      "ave": "14.56",
+      "fpts": 41.3
     },
     {
       "name": "Chicago Bears",
       "team": "CHI",
-      "rank": 17,
-      "ave": "16.00",
-      "fpts": 46.4
+      "rank": 15,
+      "ave": "15.44",
+      "fpts": 41.3
     },
     {
-      "name": "Detroit Lions",
-      "team": "DET",
+      "name": "Baltimore Ravens",
+      "team": "BAL",
+      "rank": 16,
+      "ave": "16.44",
+      "fpts": 41.3
+    },
+    {
+      "name": "Buffalo Bills",
+      "team": "BUF",
+      "rank": 17,
+      "ave": "19.11",
+      "fpts": 40.6
+    },
+    {
+      "name": "Atlanta Falcons",
+      "team": "ATL",
       "rank": 18,
-      "ave": "18.00",
-      "fpts": 46.4
+      "ave": "19.44",
+      "fpts": 40.6
     },
     {
       "name": "New York Jets",
       "team": "NYJ",
       "rank": 19,
-      "ave": "20.55",
-      "fpts": 45.6
+      "ave": "19.44",
+      "fpts": 39.9
     },
     {
-      "name": "New Orleans Saints",
-      "team": "NO",
+      "name": "New York Giants",
+      "team": "NYG",
       "rank": 20,
-      "ave": "21.00",
-      "fpts": 44.8
+      "ave": "19.78",
+      "fpts": 39.2
     },
     {
-      "name": "Philadelphia Eagles",
-      "team": "PHI",
+      "name": "Detroit Lions",
+      "team": "DET",
       "rank": 21,
-      "ave": "21.64",
-      "fpts": 44.8
+      "ave": "19.89",
+      "fpts": 39.2
     },
     {
       "name": "Los Angeles Chargers",
       "team": "LAC",
       "rank": 22,
-      "ave": "21.64",
-      "fpts": 44.8
+      "ave": "19.50",
+      "fpts": 39.2
     },
     {
-      "name": "New York Giants",
-      "team": "NYG",
+      "name": "Philadelphia Eagles",
+      "team": "PHI",
       "rank": 23,
-      "ave": "21.73",
-      "fpts": 44.0
-    },
-    {
-      "name": "Atlanta Falcons",
-      "team": "ATL",
-      "rank": 24,
-      "ave": "21.82",
-      "fpts": 44.0
-    },
-    {
-      "name": "Carolina Panthers",
-      "team": "CAR",
-      "rank": 25,
-      "ave": "23.64",
-      "fpts": 43.2
+      "ave": "21.89",
+      "fpts": 38.5
     },
     {
       "name": "Las Vegas Raiders",
       "team": "LV",
-      "rank": 26,
-      "ave": "24.00",
-      "fpts": 43.2
+      "rank": 24,
+      "ave": "23.56",
+      "fpts": 38.5
+    },
+    {
+      "name": "New Orleans Saints",
+      "team": "NO",
+      "rank": 25,
+      "ave": "23.56",
+      "fpts": 37.8
     },
     {
       "name": "Washington Commanders",
       "team": "WAS",
-      "rank": 27,
-      "ave": "25.55",
-      "fpts": 42.4
-    },
-    {
-      "name": "Dallas Cowboys",
-      "team": "DAL",
-      "rank": 28,
-      "ave": "26.45",
-      "fpts": 42.4
-    },
-    {
-      "name": "Tennessee Titans",
-      "team": "TEN",
-      "rank": 29,
-      "ave": "27.27",
-      "fpts": 42.4
+      "rank": 26,
+      "ave": "25.00",
+      "fpts": 37.8
     },
     {
       "name": "Indianapolis Colts",
       "team": "IND",
-      "rank": 30,
-      "ave": "28.18",
-      "fpts": 41.6
+      "rank": 27,
+      "ave": "25.44",
+      "fpts": 37.1
     },
     {
-      "name": "Arizona Cardinals",
-      "team": "ARI",
-      "rank": 31,
-      "ave": "30.18",
-      "fpts": 40.8
+      "name": "Carolina Panthers",
+      "team": "CAR",
+      "rank": 28,
+      "ave": "25.78",
+      "fpts": 37.1
+    },
+    {
+      "name": "Dallas Cowboys",
+      "team": "DAL",
+      "rank": 29,
+      "ave": "27.44",
+      "fpts": 37.1
     },
     {
       "name": "Miami Dolphins",
       "team": "MIA",
+      "rank": 30,
+      "ave": "29.89",
+      "fpts": 36.4
+    },
+    {
+      "name": "Tennessee Titans",
+      "team": "TEN",
+      "rank": 31,
+      "ave": "30.33",
+      "fpts": 35.7
+    },
+    {
+      "name": "Arizona Cardinals",
+      "team": "ARI",
       "rank": 32,
-      "ave": "30.36",
-      "fpts": 40.0
+      "ave": "30.25",
+      "fpts": 35.0
     }
   ]
 }

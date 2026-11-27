@@ -1,10 +1,10 @@
-"""PitchKeep ranking sources - August 27, 2026.
+"""PitchKeep ranking sources - November 27, 2026.
 
-The Pitch is a Sleeper BPL 2025 points board. Default Sleeper soccer
+The Pitch is a Sleeper BPL points board. Default Sleeper soccer
 scoring (support.sleeper.com/en/articles/9702800-scoring-system) applied
-to 2025/26 Premier League counting stats from the official FPL dump.
+to current Premier League counting stats from the official FPL dump.
 
-The Premier is the third PitchKeep list: 50% Sleeper BPL 2025 rank,
+The Premier is the hybrid PitchKeep list: 50% Sleeper BPL rank,
 50% consensus of every other board (official FPL metrics plus 25
 published 2026/27 pro lists). Unranked names are skipped - never 999.
 """

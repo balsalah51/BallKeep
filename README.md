@@ -88,13 +88,15 @@ python3 scripts/build_site.py
 
 Scheduled runs need **Settings → Actions → General → Workflow permissions → Read and write** so the hourly job can push refreshed pages to the GitHub Pages branch.
 
-Football rankings last aggregated November 20, 2026 from FantasyPros (dynasty Superflex Nov 19, rest-of-season PPR Nov 20), Dynasty Nerds, KeepTradeCut, ESPN (Eric Karabell Superflex + Flex, Field Yates, Mike Clay), Draft Sharks, NBC Sports, and X ranks from Derek Brown, Andrew Erickson, and Pat Fitzmaurice. Only boards scraped inside the last 10 days cast a vote; the PFN interactive board is offline so a long-core mash stands in as an extra desk. The Keep and The Board stay 40-desk Super Aggregates.
+Football rankings last aggregated November 27, 2026 from FantasyPros (dynasty Superflex Nov 25, rest-of-season PPR Nov 26), Dynasty Nerds, KeepTradeCut (player-pool API), ESPN (Eric Karabell Superflex + Flex, Field Yates, Mike Clay), Draft Sharks, NBC Sports, DST season/ROS scrapes, and X ranks from Derek Brown, Andrew Erickson, and Pat Fitzmaurice. Only boards scraped inside the last 10 days cast a vote; the PFN interactive board is offline so a long-core mash stands in as an extra desk. The Keep and The Board stay 40-desk Super Aggregates. Weekly boards are Week 12.
 
-Baseball rankings last aggregated August 27, 2026 from RotoGraphs (Aug 14 model), The Dynasty Guru points Top 500 (Aug 10), plus compiled slices of FantasyPros (dynasty ECR Aug 26), ESPN, Razzball, Pitcher List, RotoWire, CBS, NFBC, Ottoneu, BP, The Athletic, DLB, Dynasty Dugout, Fantasy Baseballers, FanGraphs The Board, Baseball America, MLB Pipeline, Mastersball, Four-Seam/Sekulski, Yahoo, ATC ROS, and Enos Slaughter. Closer charts: FantasyPros Aug 20 + ESPN reliever depth.
+Baseball rankings last rebuilt November 27, 2026 from RotoGraphs (Aug 14 model), The Dynasty Guru points Top 500 (Aug 10), plus compiled slices of FantasyPros (dynasty ECR Aug 26), ESPN, Razzball, Pitcher List, RotoWire, CBS, NFBC, Ottoneu, BP, The Athletic, DLB, Dynasty Dugout, Fantasy Baseballers, FanGraphs The Board, Baseball America, MLB Pipeline, Mastersball, Four-Seam/Sekulski, Yahoo, ATC ROS, and Enos Slaughter. Offseason long boards; FantasyPros dynasty ECR refreshed on scrape.
+
+Basketball rankings last rebuilt November 27, 2026. The Keep uses FantasyPros dynasty ECR (Oct 28) plus compiled desks. The Board prefers FantasyPros ROS overall (Nov 25) for in-season order.
 
 Unranked names are skipped in the mean - never treated as 999.
 
-Premier League rankings last aggregated August 27, 2026 from 25 published 2026/27 pro lists (RotoWire FPL 400, RotoWire Fantrax/Sleeper 400, RotoWire GW1, The Athletic PL 50, ESPN PL 50, The Independent, Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, Fantasy Football Hub, BBC Sport) plus official FPL price / EP / ownership. Last-season Sleeper scoring is The Pitch, not a veto on The Premier.
+Premier League rankings last rebuilt November 27, 2026 from live FPL bootstrap (GW11) plus 25 published 2026/27 pro lists (RotoWire FPL 400, RotoWire Fantrax/Sleeper 400, RotoWire GW1, The Athletic PL 50, ESPN PL 50, The Independent, Premier League Scout, Fantasy Football Fix, Yahoo, Football Faithful, Fantasy Football Hub, BBC Sport). Sleeper BPL scoring on current FPL counting stats powers The Pitch.
 
 ## Discord bot
 The bot reads `data/discord-catalog.json` (emitted by the rebuild). Setup: [bot/README.md](bot/README.md).

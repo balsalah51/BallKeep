@@ -1,75 +1,75 @@
 {
-  "week": 11,
+  "week": 12,
   "players": [
     {
-      "name": "Josh Allen",
-      "rank": 1,
-      "team": "BUF",
-      "opp": "MIA",
-      "sos": 10
-    },
-    {
       "name": "Joe Burrow",
-      "rank": 2,
+      "rank": 1,
       "team": "CIN",
-      "opp": "@WAS",
-      "sos": 28
-    },
-    {
-      "name": "Dak Prescott",
-      "rank": 3,
-      "team": "DAL",
-      "opp": "TEN",
-      "sos": 26
-    },
-    {
-      "name": "Jayden Daniels",
-      "rank": 4,
-      "team": "WAS",
-      "opp": "CIN",
-      "sos": 27
-    },
-    {
-      "name": "Caleb Williams",
-      "rank": 5,
-      "team": "CHI",
       "opp": "NO",
-      "sos": 21
-    },
-    {
-      "name": "C.J. Stroud",
-      "rank": 6,
-      "team": "HOU",
-      "opp": "IND",
-      "sos": 20
-    },
-    {
-      "name": "Patrick Mahomes",
-      "rank": 7,
-      "team": "KC",
-      "opp": "ARI",
-      "sos": 31
-    },
-    {
-      "name": "Brock Purdy",
-      "rank": 8,
-      "team": "SF",
-      "opp": "MIN",
-      "sos": 1
+      "sos": 23
     },
     {
       "name": "Trevor Lawrence",
-      "rank": 9,
+      "rank": 2,
       "team": "JAX",
-      "opp": "@NYG",
-      "sos": 24
+      "opp": "TEN",
+      "sos": 32
+    },
+    {
+      "name": "Caleb Williams",
+      "rank": 3,
+      "team": "CHI",
+      "opp": "@DET",
+      "sos": 31
+    },
+    {
+      "name": "Josh Allen",
+      "rank": 4,
+      "team": "BUF",
+      "opp": "KC",
+      "sos": 14
+    },
+    {
+      "name": "Dak Prescott",
+      "rank": 5,
+      "team": "DAL",
+      "opp": "PHI",
+      "sos": 21
+    },
+    {
+      "name": "Jayden Daniels",
+      "rank": 6,
+      "team": "WAS",
+      "opp": "@ARI",
+      "sos": 29
+    },
+    {
+      "name": "C.J. Stroud",
+      "rank": 7,
+      "team": "HOU",
+      "opp": "BAL",
+      "sos": 17
     },
     {
       "name": "Jared Goff",
-      "rank": 10,
+      "rank": 8,
       "team": "DET",
-      "opp": "TB",
-      "sos": 3
+      "opp": "CHI",
+      "sos": 19
+    },
+    {
+      "name": "Jordan Love",
+      "rank": 9,
+      "team": "GB",
+      "opp": "@LAR",
+      "sos": 4
+    },
+    {
+      "name": "Brock Purdy",
+      "rank": 10,
+      "team": "SF",
+      "opp": "SEA",
+      "sos": 2
     }
   ]
 }

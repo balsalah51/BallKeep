@@ -136,10 +136,34 @@ def fp_names(html: str) -> list[str]:
     return names
 
 
-def ktc_rows(html: str) -> list[dict]:
-    arr = extract_json_script(html, "ktc-players") or extract_js_assign(html, "playersArray") or []
+def ktc_players_version(html: str) -> str:
+    m = re.search(r"""playersVersion\s*=\s*['"]([^'"]+)['"]""", html)
+    return m.group(1) if m else ""
+
+
+def ktc_pool_from_api(version: str) -> list[dict]:
+    """KTC moved the full pool off the HTML page into a versioned JSON endpoint."""
+    if not version:
+        return []
+    url = f"https://keeptradecut.com/dynasty-rankings/player-pool?v={version}&sr=2"
+    req = Request(
+        url,
+        headers={
+            "User-Agent": UA,
+            "Accept": "application/json",
+            "Referer": "https://keeptradecut.com/dynasty-rankings",
+        },
+    )
+    with urlopen(req, timeout=60) as resp:
+        data = json.loads(resp.read().decode("utf-8", errors="replace"))
+    return data if isinstance(data, list) else []
+
+
+def ktc_rows_from_pool(arr: list) -> list[dict]:
     scored = []
-    for p in arr:
+    for p in arr or []:
+        if not isinstance(p, dict):
+            continue
         sf = p.get("superflexValues") or {}
         rank = sf.get("rank")
         if not rank:
@@ -167,6 +191,20 @@ def ktc_rows(html: str) -> list[dict]:
         rows.append(row)
     print(f"  KeepTradeCut Superflex n={len(rows)} top={[r['name'] for r in rows[:5]]}")
     return rows
+
+
+def ktc_rows(html: str) -> list[dict]:
+    """Prefer the versioned player-pool API; fall back to any inline tape."""
+    version = ktc_players_version(html)
+    try:
+        pool = ktc_pool_from_api(version)
+        rows = ktc_rows_from_pool(pool)
+        if rows:
+            return rows
+    except Exception as exc:
+        print(f"  KTC pool API skip: {type(exc).__name__}: {exc}")
+    arr = extract_json_script(html, "ktc-players") or extract_js_assign(html, "playersArray") or []
+    return ktc_rows_from_pool(arr)
 
 
 def ktc_names(html: str) -> list[str]:
