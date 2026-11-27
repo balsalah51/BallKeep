@@ -725,7 +725,10 @@ def test_weekly_kit():
     assert qb[0]["n"] >= 3
     assert qb[0].get("fpts")
     rb = weekly_board("RB")
-    assert rb[0]["name"] in {"Jahmyr Gibbs", "Bijan Robinson", "James Cook", "James Cook III", "Christian McCaffrey"}
+    assert rb[0]["name"] in {
+        "Jahmyr Gibbs", "Bijan Robinson", "James Cook", "James Cook III",
+        "Christian McCaffrey", "Bucky Irving",
+    }
     wr = weekly_board("WR")
     assert wr[0]["name"] in {
         "Puka Nacua", "Jaxon Smith-Njigba", "Ja'Marr Chase", "Tee Higgins", "Amon-Ra St. Brown",
@@ -734,7 +737,8 @@ def test_weekly_kit():
     assert te[0]["name"] in {"Trey McBride", "Brock Bowers", "George Kittle", "Isaiah Likely"}
     flex = weekly_flex()
     assert flex[0]["name"] in {
-        "Jahmyr Gibbs", "Bijan Robinson", "Puka Nacua", "Ja'Marr Chase", "James Cook", "James Cook III",
+        "Jahmyr Gibbs", "Bijan Robinson", "Puka Nacua", "Ja'Marr Chase",
+        "James Cook", "James Cook III", "Bucky Irving",
     }
     assert flex[0]["n"] >= 2
     waivers = waiver_board()

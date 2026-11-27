@@ -522,8 +522,20 @@ def main() -> int:
                 dump_names("ktc-sf", rows)
                 mark("ktc-sf", True)
             else:
-                print("  keep existing KTC tape (parser got 0 rows)")
-                mark("ktc-sf", False, reason="empty parse")
+                prior = RANK_DIR / "ktc-sf.json"
+                prior_n = 0
+                if prior.exists():
+                    try:
+                        prior_rows = json.loads(prior.read_text())
+                        prior_n = len(prior_rows) if isinstance(prior_rows, list) else 0
+                    except (OSError, json.JSONDecodeError):
+                        prior_n = 0
+                if prior_n >= 200:
+                    print(f"  keep existing KTC tape (parser got 0 rows; prior n={prior_n})")
+                    mark("ktc-sf", True, n=prior_n, note="kept prior tape; live parse empty")
+                else:
+                    print("  keep existing KTC tape (parser got 0 rows)")
+                    mark("ktc-sf", False, reason="empty parse")
         except Exception as exc:
             print(f"  keep existing KTC tape: {type(exc).__name__}: {exc}")
             mark("ktc-sf", False, reason=str(exc))
