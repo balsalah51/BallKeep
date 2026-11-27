@@ -1,635 +1,719 @@
 {
-  "week": 11,
+  "week": 12,
   "players": [
     {
       "name": "Jahmyr Gibbs",
       "team": "DET",
-      "fpts": 18.8,
+      "fpts": 21.2,
       "rank": 1
     },
     {
-      "name": "James Cook III",
-      "team": "BUF",
-      "fpts": 18.1,
+      "name": "Bijan Robinson",
+      "team": "ATL",
+      "fpts": 16.6,
       "rank": 2
-    },
-    {
-      "name": "Chuba Hubbard",
-      "team": "CAR",
-      "fpts": 17.8,
-      "rank": 3
-    },
-    {
-      "name": "Christian McCaffrey",
-      "team": "SF",
-      "fpts": 16.0,
-      "rank": 4
-    },
-    {
-      "name": "Javonte Williams",
-      "team": "DAL",
-      "fpts": 15.8,
-      "rank": 5
-    },
-    {
-      "name": "Emmett Johnson",
-      "team": "KC",
-      "fpts": 15.4,
-      "rank": 6
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "team": "JAX",
-      "fpts": 14.7,
-      "rank": 7
-    },
-    {
-      "name": "D'Andre Swift",
-      "team": "CHI",
-      "fpts": 14.6,
-      "rank": 8
-    },
-    {
-      "name": "Tony Pollard",
-      "team": "TEN",
-      "fpts": 14.0,
-      "rank": 9
-    },
-    {
-      "name": "Jonah Coleman",
-      "team": "DEN",
-      "fpts": 13.8,
-      "rank": 10
-    },
-    {
-      "name": "Derrick Henry",
-      "team": "BAL",
-      "fpts": 13.6,
-      "rank": 11
-    },
-    {
-      "name": "Jaylen Warren",
-      "team": "PIT",
-      "fpts": 13.1,
-      "rank": 12
     },
     {
       "name": "Bucky Irving",
       "team": "TB",
-      "fpts": 12.6,
-      "rank": 13
+      "fpts": 15.1,
+      "rank": 3
     },
     {
-      "name": "Chase Brown",
-      "team": "CIN",
-      "fpts": 12.2,
-      "rank": 14
+      "name": "Emmett Johnson",
+      "team": "KC",
+      "fpts": 14.5,
+      "rank": 4
     },
     {
-      "name": "Jonathan Taylor",
-      "team": "IND",
-      "fpts": 11.7,
-      "rank": 15
+      "name": "James Cook III",
+      "team": "BUF",
+      "fpts": 14.0,
+      "rank": 5
+    },
+    {
+      "name": "Christian McCaffrey",
+      "team": "SF",
+      "fpts": 13.5,
+      "rank": 6
+    },
+    {
+      "name": "Javonte Williams",
+      "team": "DAL",
+      "fpts": 13.4,
+      "rank": 7
+    },
+    {
+      "name": "Chuba Hubbard",
+      "team": "CAR",
+      "fpts": 13.3,
+      "rank": 8
+    },
+    {
+      "name": "Jonah Coleman",
+      "team": "DEN",
+      "fpts": 13.3,
+      "rank": 9
     },
     {
       "name": "Cam Skattebo",
       "team": "NYG",
-      "fpts": 11.4,
+      "fpts": 13.2,
+      "rank": 10
+    },
+    {
+      "name": "Kyren Williams",
+      "team": "LAR",
+      "fpts": 13.2,
+      "rank": 11
+    },
+    {
+      "name": "Derrick Henry",
+      "team": "BAL",
+      "fpts": 13.0,
+      "rank": 12
+    },
+    {
+      "name": "Chase Brown",
+      "team": "CIN",
+      "fpts": 12.6,
+      "rank": 13
+    },
+    {
+      "name": "Saquon Barkley",
+      "team": "PHI",
+      "fpts": 12.5,
+      "rank": 14
+    },
+    {
+      "name": "D'Andre Swift",
+      "team": "CHI",
+      "fpts": 12.3,
+      "rank": 15
+    },
+    {
+      "name": "Blake Corum",
+      "team": "LAR",
+      "fpts": 11.7,
       "rank": 16
     },
     {
-      "name": "David Montgomery",
-      "team": "HOU",
-      "fpts": 11.1,
+      "name": "Tony Pollard",
+      "team": "TEN",
+      "fpts": 11.7,
       "rank": 17
     },
     {
       "name": "Breece Hall",
       "team": "NYJ",
-      "fpts": 10.9,
+      "fpts": 11.6,
       "rank": 18
+    },
+    {
+      "name": "Jonathan Taylor",
+      "team": "IND",
+      "fpts": 11.6,
+      "rank": 19
+    },
+    {
+      "name": "Jaylen Warren",
+      "team": "PIT",
+      "fpts": 11.5,
+      "rank": 20
     },
     {
       "name": "Ollie Gordon II",
       "team": "MIA",
-      "fpts": 10.5,
-      "rank": 19
-    },
-    {
-      "name": "Saquon Barkley",
-      "team": "PHI",
-      "fpts": 9.9,
-      "rank": 20
-    },
-    {
-      "name": "Omarion Hampton",
-      "team": "LAC",
-      "fpts": 9.6,
+      "fpts": 11.3,
       "rank": 21
     },
     {
       "name": "Ashton Jeanty",
       "team": "LV",
-      "fpts": 9.1,
+      "fpts": 10.7,
       "rank": 22
     },
     {
-      "name": "Kyle Monangai",
-      "team": "CHI",
-      "fpts": 8.1,
+      "name": "Quinshon Judkins",
+      "team": "CLE",
+      "fpts": 10.6,
       "rank": 23
     },
     {
-      "name": "Jordan Mason",
-      "team": "MIN",
-      "fpts": 7.7,
+      "name": "Omarion Hampton",
+      "team": "LAC",
+      "fpts": 10.5,
       "rank": 24
-    },
-    {
-      "name": "Rico Dowdle",
-      "team": "PIT",
-      "fpts": 7.0,
-      "rank": 25
-    },
-    {
-      "name": "Braelon Allen",
-      "team": "NYJ",
-      "fpts": 6.9,
-      "rank": 26
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "team": "MIN",
-      "fpts": 6.8,
-      "rank": 27
-    },
-    {
-      "name": "Rachaad White",
-      "team": "WAS",
-      "fpts": 6.6,
-      "rank": 28
-    },
-    {
-      "name": "Travis Etienne Jr.",
-      "team": "NO",
-      "fpts": 6.6,
-      "rank": 29
-    },
-    {
-      "name": "Tyler Allgeier",
-      "team": "ARI",
-      "fpts": 6.5,
-      "rank": 30
-    },
-    {
-      "name": "Kaelon Black",
-      "team": "SF",
-      "fpts": 6.4,
-      "rank": 31
     },
     {
       "name": "Chris Rodriguez Jr.",
       "team": "JAX",
-      "fpts": 6.3,
-      "rank": 32
+      "fpts": 10.3,
+      "rank": 25
     },
     {
-      "name": "Seth McGowan",
-      "team": "IND",
-      "fpts": 6.3,
-      "rank": 33
-    },
-    {
-      "name": "J.K. Dobbins",
-      "team": "DEN",
-      "fpts": 6.1,
-      "rank": 34
-    },
-    {
-      "name": "Alvin Kamara",
-      "team": "NO",
-      "fpts": 5.9,
-      "rank": 35
-    },
-    {
-      "name": "Austin Ekeler",
-      "team": "WAS",
-      "fpts": 5.9,
-      "rank": 36
-    },
-    {
-      "name": "Kenny Gainwell",
-      "team": "TB",
-      "fpts": 5.9,
-      "rank": 37
-    },
-    {
-      "name": "Samaje Perine",
-      "team": "CIN",
-      "fpts": 5.9,
-      "rank": 38
-    },
-    {
-      "name": "Justice Hill",
-      "team": "BAL",
-      "fpts": 5.4,
-      "rank": 39
-    },
-    {
-      "name": "Mike Washington Jr.",
-      "team": "LV",
-      "fpts": 5.4,
-      "rank": 40
-    },
-    {
-      "name": "Bam Knight",
-      "team": "ARI",
-      "fpts": 5.3,
-      "rank": 41
-    },
-    {
-      "name": "Kimani Vidal",
-      "team": "LAC",
-      "fpts": 5.1,
-      "rank": 42
-    },
-    {
-      "name": "Emari Demercado",
-      "team": "HOU",
-      "fpts": 5.0,
-      "rank": 43
-    },
-    {
-      "name": "Keaton Mitchell",
-      "team": "LAC",
-      "fpts": 4.7,
-      "rank": 44
-    },
-    {
-      "name": "Audric Estime",
-      "team": "NO",
-      "fpts": 4.5,
-      "rank": 45
-    },
-    {
-      "name": "Tyjae Spears",
-      "team": "TEN",
-      "fpts": 4.5,
-      "rank": 46
-    },
-    {
-      "name": "Devin Singletary",
-      "team": "NYG",
-      "fpts": 4.2,
-      "rank": 47
-    },
-    {
-      "name": "Sione Vaki",
-      "team": "DET",
-      "fpts": 3.9,
-      "rank": 48
-    },
-    {
-      "name": "Ty Johnson",
-      "team": "BUF",
-      "fpts": 3.9,
-      "rank": 49
-    },
-    {
-      "name": "Ray Davis",
-      "team": "BUF",
-      "fpts": 3.4,
-      "rank": 50
-    },
-    {
-      "name": "Elijah Mitchell",
-      "team": "PHI",
-      "fpts": 3.2,
-      "rank": 51
-    },
-    {
-      "name": "Jaylen Wright",
-      "team": "MIA",
-      "fpts": 3.1,
-      "rank": 52
+      "name": "Zach Charbonnet",
+      "team": "SEA",
+      "fpts": 10.2,
+      "rank": 26
     },
     {
       "name": "Jacory Croskey-Merritt",
       "team": "WAS",
-      "fpts": 2.9,
+      "fpts": 9.5,
+      "rank": 27
+    },
+    {
+      "name": "David Montgomery",
+      "team": "HOU",
+      "fpts": 9.3,
+      "rank": 28
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "team": "NE",
+      "fpts": 8.8,
+      "rank": 29
+    },
+    {
+      "name": "Travis Etienne Jr.",
+      "team": "NO",
+      "fpts": 8.7,
+      "rank": 30
+    },
+    {
+      "name": "Braelon Allen",
+      "team": "NYJ",
+      "fpts": 8.4,
+      "rank": 31
+    },
+    {
+      "name": "Jordan Mason",
+      "team": "MIN",
+      "fpts": 8.4,
+      "rank": 32
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "team": "MIN",
+      "fpts": 8.1,
+      "rank": 33
+    },
+    {
+      "name": "Kyle Monangai",
+      "team": "CHI",
+      "fpts": 7.9,
+      "rank": 34
+    },
+    {
+      "name": "Jadarian Price",
+      "team": "SEA",
+      "fpts": 7.1,
+      "rank": 35
+    },
+    {
+      "name": "Rico Dowdle",
+      "team": "PIT",
+      "fpts": 7.1,
+      "rank": 36
+    },
+    {
+      "name": "Samaje Perine",
+      "team": "CIN",
+      "fpts": 7.1,
+      "rank": 37
+    },
+    {
+      "name": "Kenny Gainwell",
+      "team": "TB",
+      "fpts": 7.0,
+      "rank": 38
+    },
+    {
+      "name": "Tyler Allgeier",
+      "team": "ARI",
+      "fpts": 6.9,
+      "rank": 39
+    },
+    {
+      "name": "Justice Hill",
+      "team": "BAL",
+      "fpts": 6.8,
+      "rank": 40
+    },
+    {
+      "name": "Woody Marks",
+      "team": "HOU",
+      "fpts": 6.6,
+      "rank": 41
+    },
+    {
+      "name": "Dylan Sampson",
+      "team": "CLE",
+      "fpts": 6.5,
+      "rank": 42
+    },
+    {
+      "name": "Kaleb Johnson",
+      "team": "GB",
+      "fpts": 6.5,
+      "rank": 43
+    },
+    {
+      "name": "Alvin Kamara",
+      "team": "NO",
+      "fpts": 6.1,
+      "rank": 44
+    },
+    {
+      "name": "Kaelon Black",
+      "team": "SF",
+      "fpts": 5.8,
+      "rank": 45
+    },
+    {
+      "name": "Mike Washington Jr.",
+      "team": "LV",
+      "fpts": 5.7,
+      "rank": 46
+    },
+    {
+      "name": "Bam Knight",
+      "team": "ARI",
+      "fpts": 5.4,
+      "rank": 47
+    },
+    {
+      "name": "Austin Ekeler",
+      "team": "WAS",
+      "fpts": 5.3,
+      "rank": 48
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "team": "JAX",
+      "fpts": 5.3,
+      "rank": 49
+    },
+    {
+      "name": "Corey Kiner",
+      "team": "NE",
+      "fpts": 5.0,
+      "rank": 50
+    },
+    {
+      "name": "Kimani Vidal",
+      "team": "LAC",
+      "fpts": 4.7,
+      "rank": 51
+    },
+    {
+      "name": "MarShawn Lloyd",
+      "team": "GB",
+      "fpts": 4.0,
+      "rank": 52
+    },
+    {
+      "name": "Rachaad White",
+      "team": "WAS",
+      "fpts": 3.9,
       "rank": 53
     },
     {
-      "name": "Jonathon Brooks",
-      "team": "CAR",
-      "fpts": 2.8,
+      "name": "Keaton Mitchell",
+      "team": "LAC",
+      "fpts": 3.8,
       "rank": 54
     },
     {
-      "name": "Israel Abanikanda",
-      "team": "DAL",
-      "fpts": 2.6,
+      "name": "Sione Vaki",
+      "team": "DET",
+      "fpts": 3.8,
       "rank": 55
     },
     {
-      "name": "Kaytron Allen",
-      "team": "MIA",
-      "fpts": 1.8,
+      "name": "Ty Johnson",
+      "team": "BUF",
+      "fpts": 3.8,
       "rank": 56
+    },
+    {
+      "name": "Will Shipley",
+      "team": "PHI",
+      "fpts": 3.7,
+      "rank": 57
+    },
+    {
+      "name": "Devin Singletary",
+      "team": "NYG",
+      "fpts": 3.6,
+      "rank": 58
+    },
+    {
+      "name": "Jaylen Wright",
+      "team": "MIA",
+      "fpts": 3.6,
+      "rank": 59
+    },
+    {
+      "name": "Chris Brooks",
+      "team": "GB",
+      "fpts": 3.4,
+      "rank": 60
+    },
+    {
+      "name": "DJ Giddens",
+      "team": "IND",
+      "fpts": 3.2,
+      "rank": 61
+    },
+    {
+      "name": "Ray Davis",
+      "team": "BUF",
+      "fpts": 3.1,
+      "rank": 62
+    },
+    {
+      "name": "Emari Demercado",
+      "team": "HOU",
+      "fpts": 2.9,
+      "rank": 63
+    },
+    {
+      "name": "Michael Carter",
+      "team": "TEN",
+      "fpts": 2.7,
+      "rank": 64
     },
     {
       "name": "Trevor Etienne",
       "team": "CAR",
-      "fpts": 1.8,
-      "rank": 57
-    },
-    {
-      "name": "Hunter Luepke",
-      "team": "DAL",
-      "fpts": 1.7,
-      "rank": 58
-    },
-    {
-      "name": "Kyle Juszczyk",
-      "team": "SF",
-      "fpts": 1.5,
-      "rank": 59
-    },
-    {
-      "name": "Sean Tucker",
-      "team": "TB",
-      "fpts": 1.0,
-      "rank": 60
-    },
-    {
-      "name": "Isaiah Davis",
-      "team": "NYJ",
-      "fpts": 0.9,
-      "rank": 61
+      "fpts": 2.6,
+      "rank": 65
     },
     {
       "name": "LeQuint Allen Jr.",
       "team": "JAX",
-      "fpts": 0.9,
-      "rank": 62
+      "fpts": 2.4,
+      "rank": 66
     },
     {
-      "name": "Dare Ogunbowale",
-      "team": "HOU",
+      "name": "Jashaun Corbin",
+      "team": "DAL",
+      "fpts": 2.0,
+      "rank": 67
+    },
+    {
+      "name": "CJ Donaldson",
+      "team": "NO",
+      "fpts": 1.8,
+      "rank": 68
+    },
+    {
+      "name": "Kyle Juszczyk",
+      "team": "SF",
+      "fpts": 1.7,
+      "rank": 69
+    },
+    {
+      "name": "Khalil Herbert",
+      "team": "ATL",
+      "fpts": 1.6,
+      "rank": 70
+    },
+    {
+      "name": "Lan Larison",
+      "team": "NE",
+      "fpts": 1.2,
+      "rank": 71
+    },
+    {
+      "name": "Kaytron Allen",
+      "team": "MIA",
+      "fpts": 1.0,
+      "rank": 72
+    },
+    {
+      "name": "Hunter Luepke",
+      "team": "DAL",
+      "fpts": 0.9,
+      "rank": 73
+    },
+    {
+      "name": "Ameer Abdullah",
+      "team": "JAX",
       "fpts": 0.8,
-      "rank": 63
+      "rank": 74
+    },
+    {
+      "name": "Audric Estime",
+      "team": "NO",
+      "fpts": 0.8,
+      "rank": 75
+    },
+    {
+      "name": "DeeJay Dallas",
+      "team": "MIN",
+      "fpts": 0.8,
+      "rank": 76
     },
     {
       "name": "Dylan Laube",
       "team": "LV",
       "fpts": 0.8,
-      "rank": 64
+      "rank": 77
     },
     {
-      "name": "Nate Carter",
+      "name": "Isaiah Davis",
+      "team": "NYJ",
+      "fpts": 0.8,
+      "rank": 78
+    },
+    {
+      "name": "Jaydn Ott",
       "team": "KC",
       "fpts": 0.8,
-      "rank": 65
+      "rank": 79
     },
     {
-      "name": "DeeJay Dallas",
-      "team": "MIN",
-      "fpts": 0.7,
-      "rank": 66
+      "name": "Jonathon Brooks",
+      "team": "CAR",
+      "fpts": 0.8,
+      "rank": 80
     },
     {
       "name": "Jordan James",
       "team": "SF",
-      "fpts": 0.7,
-      "rank": 67
-    },
-    {
-      "name": "Tahj Brooks",
-      "team": "CIN",
-      "fpts": 0.7,
-      "rank": 68
-    },
-    {
-      "name": "Ameer Abdullah",
-      "team": "JAX",
-      "fpts": 0.6,
-      "rank": 69
-    },
-    {
-      "name": "Kendre Miller",
-      "team": "DAL",
-      "fpts": 0.6,
-      "rank": 70
-    },
-    {
-      "name": "Rasheen Ali",
-      "team": "BAL",
-      "fpts": 0.6,
-      "rank": 71
-    },
-    {
-      "name": "DJ Giddens",
-      "team": "IND",
-      "fpts": 0.5,
-      "rank": 72
-    },
-    {
-      "name": "Jaydon Blue",
-      "team": "PHI",
-      "fpts": 0.5,
-      "rank": 73
-    },
-    {
-      "name": "Lew Nichols III",
-      "team": "PIT",
-      "fpts": 0.5,
-      "rank": 74
-    },
-    {
-      "name": "Roschon Johnson",
-      "team": "CHI",
-      "fpts": 0.5,
-      "rank": 75
+      "fpts": 0.8,
+      "rank": 81
     },
     {
       "name": "Salvon Ahmed",
       "team": "CHI",
-      "fpts": 0.5,
-      "rank": 76
+      "fpts": 0.8,
+      "rank": 82
     },
     {
-      "name": "Will Shipley",
+      "name": "Sean Tucker",
+      "team": "TB",
+      "fpts": 0.8,
+      "rank": 83
+    },
+    {
+      "name": "Cody Schrader",
+      "team": "DEN",
+      "fpts": 0.7,
+      "rank": 84
+    },
+    {
+      "name": "Elijah Mitchell",
       "team": "PHI",
+      "fpts": 0.6,
+      "rank": 85
+    },
+    {
+      "name": "Emanuel Wilson",
+      "team": "SEA",
       "fpts": 0.5,
-      "rank": 77
+      "rank": 86
+    },
+    {
+      "name": "Jaleel McLaughlin",
+      "team": "CLE",
+      "fpts": 0.5,
+      "rank": 87
+    },
+    {
+      "name": "Kendre Miller",
+      "team": "DAL",
+      "fpts": 0.5,
+      "rank": 88
+    },
+    {
+      "name": "Rasheen Ali",
+      "team": "BAL",
+      "fpts": 0.5,
+      "rank": 89
+    },
+    {
+      "name": "Seth McGowan",
+      "team": "IND",
+      "fpts": 0.5,
+      "rank": 90
+    },
+    {
+      "name": "Tahj Brooks",
+      "team": "CIN",
+      "fpts": 0.5,
+      "rank": 91
     },
     {
       "name": "Adam Prentice",
       "team": "DEN",
       "fpts": 0.4,
-      "rank": 78
+      "rank": 92
     },
     {
       "name": "Evan Hull",
       "team": "ARI",
       "fpts": 0.4,
-      "rank": 79
+      "rank": 93
     },
     {
-      "name": "Gregory Desrosiers Jr.",
-      "team": "NYG",
+      "name": "Israel Abanikanda",
+      "team": "DAL",
       "fpts": 0.4,
-      "rank": 80
+      "rank": 94
     },
     {
-      "name": "Robert Henry Jr.",
-      "team": "WAS",
+      "name": "Lew Nichols III",
+      "team": "PIT",
       "fpts": 0.4,
-      "rank": 81
+      "rank": 95
     },
     {
-      "name": "Adam Randall",
-      "team": "BAL",
+      "name": "Nate Carter",
+      "team": "KC",
+      "fpts": 0.4,
+      "rank": 96
+    },
+    {
+      "name": "Tyler Badie",
+      "team": "DEN",
+      "fpts": 0.4,
+      "rank": 97
+    },
+    {
+      "name": "Dare Ogunbowale",
+      "team": "FA",
       "fpts": 0.3,
-      "rank": 82
+      "rank": 98
     },
     {
       "name": "Jacob Saylors",
       "team": "DET",
       "fpts": 0.3,
-      "rank": 83
+      "rank": 99
     },
     {
-      "name": "James Conner",
-      "team": "ARI",
+      "name": "Jaydon Blue",
+      "team": "PHI",
       "fpts": 0.3,
-      "rank": 84
-    },
-    {
-      "name": "Julius Chestnut",
-      "team": "TEN",
-      "fpts": 0.3,
-      "rank": 85
-    },
-    {
-      "name": "Max Bredeson",
-      "team": "MIN",
-      "fpts": 0.3,
-      "rank": 86
-    },
-    {
-      "name": "Nicholas Singleton",
-      "team": "TEN",
-      "fpts": 0.3,
-      "rank": 87
+      "rank": 100
     },
     {
       "name": "Patrick Ricard",
       "team": "NYG",
       "fpts": 0.3,
-      "rank": 88
+      "rank": 101
     },
     {
-      "name": "AJ Dillon",
-      "team": "CAR",
-      "fpts": 0.2,
-      "rank": 89
+      "name": "Reggie Gilliam",
+      "team": "NE",
+      "fpts": 0.3,
+      "rank": 102
     },
     {
-      "name": "Andrew Beck",
-      "team": "NYJ",
-      "fpts": 0.2,
-      "rank": 90
+      "name": "Ronnie Rivers",
+      "team": "LAR",
+      "fpts": 0.3,
+      "rank": 103
     },
     {
-      "name": "Cody Schrader",
-      "team": "DEN",
+      "name": "Julius Chestnut",
+      "team": "TEN",
       "fpts": 0.2,
-      "rank": 91
-    },
-    {
-      "name": "Jaydn Ott",
-      "team": "KC",
-      "fpts": 0.2,
-      "rank": 92
+      "rank": 104
     },
     {
       "name": "Travis Homer",
       "team": "PIT",
       "fpts": 0.2,
-      "rank": 93
+      "rank": 105
     },
     {
-      "name": "Kene Nwangwu",
+      "name": "AJ Dillon",
+      "team": "CAR",
+      "fpts": 0.0,
+      "rank": 106
+    },
+    {
+      "name": "Adam Randall",
+      "team": "BAL",
+      "fpts": 0.0,
+      "rank": 107
+    },
+    {
+      "name": "Andrew Beck",
       "team": "NYJ",
-      "fpts": 0.1,
-      "rank": 94
-    },
-    {
-      "name": "Michael Carter",
-      "team": "TEN",
-      "fpts": 0.1,
-      "rank": 95
-    },
-    {
-      "name": "Zamir White",
-      "team": "NO",
-      "fpts": 0.1,
-      "rank": 96
+      "fpts": 0.0,
+      "rank": 108
     },
     {
       "name": "Anthony Tyus III",
       "team": "CAR",
       "fpts": 0.0,
-      "rank": 97
+      "rank": 109
     },
     {
-      "name": "CJ Donaldson",
-      "team": "NO",
+      "name": "Gregory Desrosiers Jr.",
+      "team": "NYG",
       "fpts": 0.0,
-      "rank": 98
+      "rank": 110
     },
     {
-      "name": "Eli Heidenreich",
-      "team": "PIT",
-      "fpts": 0.0,
-      "rank": 99
-    },
-    {
-      "name": "Isiah Pacheco",
-      "team": "DET",
-      "fpts": 0.0,
-      "rank": 100
-    },
-    {
-      "name": "Jawhar Jordan",
-      "team": "HOU",
-      "fpts": 0.0,
-      "rank": 101
-    },
-    {
-      "name": "Jerome Ford",
+      "name": "James Conner",
       "team": "ARI",
       "fpts": 0.0,
-      "rank": 102
+      "rank": 111
     },
     {
-      "name": "Kalel Mullings",
+      "name": "Kene Nwangwu",
+      "team": "NYJ",
+      "fpts": 0.0,
+      "rank": 112
+    },
+    {
+      "name": "Max Bredeson",
+      "team": "MIN",
+      "fpts": 0.0,
+      "rank": 113
+    },
+    {
+      "name": "Nicholas Singleton",
       "team": "TEN",
       "fpts": 0.0,
-      "rank": 103
+      "rank": 114
     },
     {
       "name": "Phil Mafah",
       "team": "NYG",
       "fpts": 0.0,
-      "rank": 104
+      "rank": 115
     },
     {
-      "name": "Tank Bigsby",
-      "team": "PHI",
+      "name": "Pierre Strong Jr.",
+      "team": "GB",
       "fpts": 0.0,
-      "rank": 105
+      "rank": 116
+    },
+    {
+      "name": "Raheim Sanders",
+      "team": "CLE",
+      "fpts": 0.0,
+      "rank": 117
+    },
+    {
+      "name": "Robert Henry Jr.",
+      "team": "WAS",
+      "fpts": 0.0,
+      "rank": 118
+    },
+    {
+      "name": "Zamir White",
+      "team": "NO",
+      "fpts": 0.0,
+      "rank": 119
     }
   ]
 }

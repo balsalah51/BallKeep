@@ -1,61 +1,68 @@
 {
-  "week": 11,
+  "week": 12,
   "players": [
     {
-      "name": "Ja'Marr Chase",
+      "name": "CeeDee Lamb",
       "rank": 1,
-      "team": "CIN",
-      "opp": "@WAS",
-      "sos": 15
+      "team": "DAL",
+      "opp": "PHI",
+      "sos": 25
     },
     {
-      "name": "CeeDee Lamb",
+      "name": "Ja'Marr Chase",
       "rank": 2,
-      "team": "DAL",
-      "opp": "TEN",
-      "sos": 32
+      "team": "CIN",
+      "opp": "NO",
+      "sos": 20
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "rank": 3,
+      "team": "SEA",
+      "opp": "@SF",
+      "sos": 28
     },
     {
       "name": "Justin Jefferson",
-      "rank": 3,
-      "team": "MIN",
-      "opp": "@SF",
-      "sos": 22
-    },
-    {
-      "name": "Tee Higgins",
       "rank": 5,
-      "team": "CIN",
-      "opp": "@WAS",
-      "sos": 15
+      "team": "MIN",
+      "opp": "ATL",
+      "sos": 26
     },
     {
-      "name": "George Pickens",
+      "name": "Parker Washington",
       "rank": 6,
-      "team": "DAL",
+      "team": "JAX",
       "opp": "TEN",
       "sos": 32
     },
     {
-      "name": "Zay Flowers",
+      "name": "Matthew Golden",
+      "rank": 7,
+      "team": "GB",
+      "opp": "@LAR",
+      "sos": 8
+    },
+    {
+      "name": "George Pickens",
       "rank": 8,
-      "team": "BAL",
-      "opp": "@CAR",
-      "sos": 11
+      "team": "DAL",
+      "opp": "PHI",
+      "sos": 25
     },
     {
-      "name": "Malik Nabers",
+      "name": "Christian Watson",
       "rank": 9,
-      "team": "NYG",
-      "opp": "JAX",
-      "sos": 17
+      "team": "GB",
+      "opp": "@LAR",
+      "sos": 8
     },
     {
-      "name": "Garrett Wilson",
+      "name": "Chris Olave",
       "rank": 10,
-      "team": "NYJ",
-      "opp": "@LAC",
-      "sos": 29
+      "team": "NO",
+      "opp": "@CIN",
+      "sos": 18
     }
   ]
 }

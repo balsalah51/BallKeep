@@ -491,8 +491,14 @@ def fetch_fangraphs(cache: dict | None = None, force: bool = False) -> dict:
     ):
         return cache
     print("fetching FanGraphs depth charts + Depth Charts projections")
-    teams = fetch_fg_depth_charts()
-    projections = fetch_fg_projections()
+    try:
+        teams = fetch_fg_depth_charts()
+        projections = fetch_fg_projections()
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
+        if fg.get("teams") and fg.get("projections"):
+            print(f"  keep prior FanGraphs tape ({type(exc).__name__}: {exc})")
+            return cache
+        raise
     cache["fangraphs"] = {
         "fetched": date.today().isoformat(),
         "teams": teams,
